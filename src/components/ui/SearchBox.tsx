@@ -1,19 +1,21 @@
 import { Search } from "lucide-react";
+import type { ComponentProps } from "react";
 
-interface SearchBoxProps {
+interface SearchBoxProps extends Omit<ComponentProps<"input">, "value" | "onChange"> {
   value: string;
   onChange: (value: string) => void;
   placeholder: string;
   label?: string;
 }
 
-export function SearchBox({ value, onChange, placeholder, label = "খুঁজুন" }: SearchBoxProps) {
+export function SearchBox({ value, onChange, placeholder, label = "খুঁজুন", ...inputProps }: SearchBoxProps) {
   return (
     <label className="flex h-12 items-center gap-2 rounded-xl border border-line bg-surface px-3 focus-within:border-brand">
       <Search size={18} className="shrink-0 text-dim" aria-hidden="true" />
       <span className="sr-only">{label}</span>
       <input
         type="search"
+        {...inputProps}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}

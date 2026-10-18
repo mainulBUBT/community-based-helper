@@ -62,10 +62,10 @@ function phoneOf(phones) {
 
 function websiteOf(websites) {
   const usable = (url) => {
-    const host = url.match(/^https?:\/\/([^/?#:]+)/i)?.[1];
+    const host = url.match(/^https?:\/\/([^/?#:]+)/)?.[1];
     return host && !BLOCKED_HOST.test(host) && url.length <= 200;
   };
-  return websites?.find(usable) ?? null;
+  return websites?.map((url) => url.replace(/^https?:/i, (scheme) => scheme.toLowerCase())).find(usable) ?? null;
 }
 
 function descriptionOf(row, category) {

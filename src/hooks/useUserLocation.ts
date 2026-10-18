@@ -26,12 +26,18 @@ function locate(silent = false, focus = false) {
   }
   navigator.geolocation.getCurrentPosition(
     ({ coords }) => {
+      if (silent && !locationStore.get().isDefault) return;
       locationStore.set({ lat: coords.latitude, lng: coords.longitude, label: "আপনার অবস্থান", isDefault: false });
       if (focus) focusMap();
     },
     () => fail("লোকেশন পাওয়া যায়নি — অনুমতি দেওয়া আছে কিনা দেখুন"),
     { timeout: 10_000, maximumAge: 300_000 },
   );
+}
+
+function chooseLocation({ lat, lng, label }: LatLng & { label: string }) {
+  locationStore.set({ lat, lng, label, isDefault: false });
+  focusMap();
 }
 
 export function useLocateOnOpen() {
@@ -48,7 +54,7 @@ export function useUserLocation() {
     focusMap();
     locate(false, true);
   };
-  return { location, showMyLocation };
+  return { location, showMyLocation, chooseLocation };
 }
 
 export function useMapFocus() {

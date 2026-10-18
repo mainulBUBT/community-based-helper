@@ -63,6 +63,9 @@
     outline: 2px solid var(--color-brand);
     outline-offset: 2px;
   }
+  :root:has(dialog[open]) {
+    overflow: hidden;
+  }
 }
 
 .leaflet-container {
