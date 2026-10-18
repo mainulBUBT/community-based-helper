@@ -1,5 +1,5 @@
 import { APP } from "@/config/app";
-import type { Place } from "@/types/place";
+import type { Place, PlaceSource } from "@/types/place";
 import { toBnDigits } from "./bangla";
 
 export type TrustLevel = "confirmed" | "disputed" | "new" | "unverified" | "stale";
@@ -12,6 +12,8 @@ export interface Trust {
 
 const DAY_MS = 86_400_000;
 
+const IMPORTED_FROM: Partial<Record<PlaceSource, string>> = { osm: "OpenStreetMap", overture: "Overture Maps" };
+
 export function daysSince(iso: string | null, now = Date.now()): number | null {
   return iso ? Math.max(0, Math.floor((now - Date.parse(iso)) / DAY_MS)) : null;
 }
@@ -20,8 +22,9 @@ export function trustOf(place: Pick<Place, "status" | "verifiedAt" | "source">):
   if (place.status === "disputed") {
     return { level: "disputed", label: "দ্বিমত আছে", detail: "দ্বিমত আছে — কেউ কেউ তথ্য ভুল বলেছেন" };
   }
-  if (place.status === "new" && place.source === "osm") {
-    return { level: "unverified", label: "যাচাই হয়নি", detail: "OpenStreetMap থেকে নেওয়া — এখনো কেউ যাচাই করেনি" };
+  const importedFrom = IMPORTED_FROM[place.source];
+  if (place.status === "new" && importedFrom) {
+    return { level: "unverified", label: "যাচাই হয়নি", detail: `${importedFrom} থেকে নেওয়া — এখনো কেউ যাচাই করেনি` };
   }
   if (place.status === "new") return { level: "new", label: "নতুন যোগ", detail: "নতুন যোগ — এখনো যাচাই হয়নি" };
   const days = daysSince(place.verifiedAt);

@@ -2,7 +2,7 @@ export type PlaceStatus = "new" | "confirmed" | "disputed";
 
 export type PlaceKind = "place" | "market" | "shop";
 
-export type PlaceSource = "community" | "osm";
+export type PlaceSource = "community" | "osm" | "overture";
 
 export interface LatLng {
   lat: number;
