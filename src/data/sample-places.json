@@ -1,0 +1,487 @@
+[
+  {
+    "id": "laj",
+    "name": "লাজ ফার্মা — ধানমন্ডি শাখা",
+    "category": "pharma",
+    "area": "ধানমন্ডি",
+    "lat": 23.7468,
+    "lng": 90.3763,
+    "phone": "01712-445566",
+    "open24h": false,
+    "hours": [
+      [
+        480,
+        120
+      ]
+    ],
+    "verifiedDaysAgo": 2,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "ibs",
+    "name": "ইবনে সিনা ডায়াগনস্টিক সেন্টার",
+    "category": "diag",
+    "area": "ধানমন্ডি",
+    "lat": 23.7489,
+    "lng": 90.3748,
+    "phone": "01713-006644",
+    "open24h": true,
+    "hours": [],
+    "verifiedDaysAgo": 5,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "dmc",
+    "name": "ঢাকা মেডিকেল কলেজ ইমার্জেন্সি",
+    "category": "hosp",
+    "area": "বকশীবাজার",
+    "lat": 23.7276,
+    "lng": 90.3986,
+    "phone": "02-55661900",
+    "open24h": true,
+    "hours": [],
+    "verifiedDaysAgo": 0,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "padma",
+    "name": "পদ্মা ফুয়েল স্টেশন",
+    "category": "fuel",
+    "area": "মিরপুর রোড",
+    "lat": 23.7756,
+    "lng": 90.3632,
+    "phone": "01711-908070",
+    "open24h": false,
+    "hours": [
+      [
+        360,
+        1380
+      ]
+    ],
+    "verifiedDaysAgo": 21,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "dbbl",
+    "name": "ডাচ্-বাংলা এটিএম — রাপা প্লাজা",
+    "category": "atm",
+    "area": "ধানমন্ডি",
+    "lat": 23.7459,
+    "lng": 90.3745,
+    "phone": "16236",
+    "open24h": true,
+    "hours": [],
+    "verifiedDaysAgo": 14,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "gth",
+    "name": "গুলশান থানা",
+    "category": "thana",
+    "area": "গুলশান",
+    "lat": 23.7925,
+    "lng": 90.4078,
+    "phone": "02-9891234",
+    "open24h": true,
+    "hours": [],
+    "verifiedDaysAgo": 31,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "qtum",
+    "name": "কোয়ান্টাম ফাউন্ডেশন ব্লাড ব্যাংক",
+    "category": "blood",
+    "area": "ফার্মগেট",
+    "lat": 23.7588,
+    "lng": 90.3891,
+    "phone": "01714-663344",
+    "open24h": false,
+    "hours": [
+      [
+        540,
+        1260
+      ]
+    ],
+    "verifiedDaysAgo": 4,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "adda",
+    "name": "রাতের আড্ডা রেস্টুরেন্ট",
+    "category": "food",
+    "area": "বনানী",
+    "lat": 23.793,
+    "lng": 90.405,
+    "phone": "01755-223344",
+    "open24h": false,
+    "hours": [
+      [
+        1020,
+        180
+      ]
+    ],
+    "verifiedDaysAgo": 6,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "fsd",
+    "name": "ফায়ার সার্ভিস — আজমপুর",
+    "category": "fire",
+    "area": "নীলক্ষেত",
+    "lat": 23.7387,
+    "lng": 90.3969,
+    "phone": "102",
+    "open24h": true,
+    "hours": [],
+    "verifiedDaysAgo": 45,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "mech",
+    "name": "মেকানিক পয়েন্ট — সাতমসজিদ রোড",
+    "category": "mech",
+    "area": "মোহাম্মদপুর",
+    "lat": 23.7596,
+    "lng": 90.3586,
+    "phone": "01815-778899",
+    "open24h": false,
+    "hours": [
+      [
+        540,
+        1380
+      ]
+    ],
+    "verifiedDaysAgo": 120,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "ans",
+    "name": "ইমার্জেন্সি অ্যাম্বুলেন্স — ফার্মগেট",
+    "category": "amb",
+    "area": "ফার্মগেট",
+    "lat": 23.7587,
+    "lng": 90.3899,
+    "phone": "01700-112233",
+    "open24h": true,
+    "hours": [],
+    "verifiedDaysAgo": 1,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "vet",
+    "name": "পশু সেবা ক্লিনিক",
+    "category": "vet",
+    "area": "মোহাম্মদপুর",
+    "lat": 23.7554,
+    "lng": 90.3566,
+    "phone": "01677-554433",
+    "open24h": false,
+    "hours": [
+      [
+        600,
+        1200
+      ]
+    ],
+    "verifiedDaysAgo": 9,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "kbaz",
+    "name": "কারওয়ান বাজার — পাইকারি সবজি মার্কেট",
+    "category": "wholesale",
+    "area": "কারওয়ান বাজার",
+    "lat": 23.7829,
+    "lng": 90.4001,
+    "phone": "01812-340341",
+    "open24h": false,
+    "hours": [
+      [
+        180,
+        720
+      ]
+    ],
+    "verifiedDaysAgo": 12,
+    "kind": "market",
+    "purposes": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "bang",
+    "name": "বাংগা বাজার — পাইকারি মার্কেট",
+    "category": "wholesale",
+    "area": "বাংগা বাজার",
+    "lat": 23.7116,
+    "lng": 90.4046,
+    "phone": "01711-627272",
+    "open24h": false,
+    "hours": [
+      [
+        300,
+        1080
+      ]
+    ],
+    "verifiedDaysAgo": 18,
+    "kind": "market",
+    "purposes": []
+  },
+  {
+    "id": "chak",
+    "name": "চকবাজার — কমদামি পাইকারি মার্কেট",
+    "category": "cheap",
+    "area": "চকবাজার",
+    "lat": 23.7087,
+    "lng": 90.4019,
+    "phone": "01712-500500",
+    "open24h": false,
+    "hours": [
+      [
+        480,
+        1140
+      ]
+    ],
+    "verifiedDaysAgo": 9,
+    "kind": "market",
+    "purposes": []
+  },
+  {
+    "id": "newm",
+    "name": "নিউ মার্কেট — কমদামি কাপড় ও জুতা",
+    "category": "cheap",
+    "area": "নিউ মার্কেট",
+    "lat": 23.7348,
+    "lng": 90.3846,
+    "phone": "02-9674321",
+    "open24h": false,
+    "hours": [
+      [
+        480,
+        1200
+      ]
+    ],
+    "verifiedDaysAgo": 15,
+    "kind": "market",
+    "purposes": [
+      "clothes",
+      "shoes"
+    ]
+  },
+  {
+    "id": "htjt",
+    "name": "সিটি কর্পোরেশন পাবলিক টয়লেট — হাতিরঝিল",
+    "category": "toilet",
+    "area": "হাতিরঝিল",
+    "lat": 23.7536,
+    "lng": 90.3996,
+    "phone": "02-55083333",
+    "open24h": false,
+    "hours": [
+      [
+        360,
+        1320
+      ]
+    ],
+    "verifiedDaysAgo": 7,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "nlmt",
+    "name": "পাবলিক টয়লেট — নিউ মার্কেট গেট",
+    "category": "toilet",
+    "area": "নিউ মার্কেট",
+    "lat": 23.7341,
+    "lng": 90.3853,
+    "phone": "01700-998877",
+    "open24h": false,
+    "hours": [
+      [
+        360,
+        1320
+      ]
+    ],
+    "verifiedDaysAgo": 3,
+    "kind": "place",
+    "purposes": []
+  },
+  {
+    "id": "janani-fashion",
+    "name": "জননী ফ্যাশন",
+    "category": "cheap",
+    "kind": "shop",
+    "parent": "newm",
+    "area": null,
+    "floor": "২য় তলা",
+    "unit": "১৪২",
+    "lat": 23.7348,
+    "lng": 90.3846,
+    "phone": "01700-000101",
+    "open24h": false,
+    "hours": [
+      [
+        600,
+        1200
+      ]
+    ],
+    "closedOn": [
+      2
+    ],
+    "purposes": [
+      "clothes"
+    ],
+    "status": "confirmed",
+    "verifiedDaysAgo": 6
+  },
+  {
+    "id": "madina-shoe",
+    "name": "মদিনা সু স্টোর",
+    "category": "cheap",
+    "kind": "shop",
+    "parent": "newm",
+    "area": null,
+    "floor": "নিচতলা",
+    "unit": "৩৮",
+    "lat": 23.7348,
+    "lng": 90.3846,
+    "phone": "01700-000102",
+    "open24h": false,
+    "hours": [
+      [
+        600,
+        1200
+      ]
+    ],
+    "closedOn": [
+      2
+    ],
+    "purposes": [
+      "shoes"
+    ],
+    "status": "confirmed",
+    "verifiedDaysAgo": 12
+  },
+  {
+    "id": "bhai-bhai-bag",
+    "name": "ভাই ভাই ব্যাগ হাউস",
+    "category": "cheap",
+    "kind": "shop",
+    "parent": "newm",
+    "area": null,
+    "floor": "নিচতলা",
+    "unit": "৭৫",
+    "lat": 23.7348,
+    "lng": 90.3846,
+    "phone": "01700-000103",
+    "open24h": false,
+    "hours": [
+      [
+        600,
+        1200
+      ]
+    ],
+    "closedOn": [
+      2
+    ],
+    "purposes": [
+      "bags"
+    ],
+    "status": "confirmed",
+    "verifiedDaysAgo": 20
+  },
+  {
+    "id": "bismillah-cloth",
+    "name": "বিসমিল্লাহ ক্লথ স্টোর",
+    "category": "cheap",
+    "kind": "shop",
+    "parent": "newm",
+    "area": null,
+    "floor": "১ম তলা",
+    "unit": "৯",
+    "lat": 23.7348,
+    "lng": 90.3846,
+    "phone": "01700-000104",
+    "open24h": false,
+    "hours": [
+      [
+        600,
+        1200
+      ]
+    ],
+    "closedOn": [
+      2
+    ],
+    "purposes": [
+      "clothes"
+    ],
+    "status": "disputed",
+    "verifiedDaysAgo": 9
+  },
+  {
+    "id": "riya-cosmetics",
+    "name": "রিয়া কসমেটিকস",
+    "category": "cheap",
+    "kind": "shop",
+    "parent": "newm",
+    "area": null,
+    "floor": "২য় তলা",
+    "unit": "১৯০",
+    "lat": 23.7348,
+    "lng": 90.3846,
+    "phone": "01700-000105",
+    "open24h": false,
+    "hours": [
+      [
+        600,
+        1200
+      ]
+    ],
+    "closedOn": [
+      2
+    ],
+    "purposes": [
+      "cosmetics"
+    ],
+    "status": "new",
+    "verifiedDaysAgo": null
+  },
+  {
+    "id": "allahr-dan",
+    "name": "আল্লাহর দান ক্রোকারিজ",
+    "category": "cheap",
+    "kind": "shop",
+    "parent": "newm",
+    "area": null,
+    "floor": "পেছনের গেট",
+    "unit": "২১০",
+    "lat": 23.7348,
+    "lng": 90.3846,
+    "phone": "01700-000106",
+    "open24h": false,
+    "hours": [
+      [
+        660,
+        1200
+      ]
+    ],
+    "closedOn": [
+      2
+    ],
+    "purposes": [
+      "household"
+    ],
+    "status": "confirmed",
+    "verifiedDaysAgo": 25
+  }
+]

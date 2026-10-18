@@ -13,7 +13,7 @@ A community-verified, mobile-first, Bangla-language directory that answers one s
 |---|---|
 | **মূল প্রতিশ্রুতি** | প্রতিটি এন্ট্রি ফোনে যাচাই করা, যাচাই-তারিখসহ — "এখন খোলা" ফিল্টার ডিফল্ট ON |
 | **ক্যাটাগরি** | ১৫টি — ফার্মেসি, হাসপাতাল ইমার্জেন্সি, ২৪ঘ ডায়াগনস্টিক, ফুয়েল/CNG, এটিএম, অ্যাম্বুলেন্স, রক্তের ব্যাংক, ফায়ার সার্ভিস, থানা/পুলিশ, ভেটেরিনারি, রেস্টুরেন্ট, মেকানিক, কমদামি বাজার, পাইকারি বাজার, পাবলিক টয়লেট |
-| **বর্তমান অবস্থা** | v0.1 — এক-ফাইল HTML প্রোটোটাইপ, ১৮টি নমুনা এন্ট্রি (ঢাকা) |
+| **বর্তমান অবস্থা** | v0.2 — Next.js + Supabase কোডবেস (ব্রাউজ, ম্যাপ, সেভ, কপি); ১৮টি নমুনা এন্ট্রি (ঢাকা) |
 | **লক্ষ্য** | লঞ্চে ৩০০+ ফোন-যাচাইকৃত এন্ট্রি (ঢাকা), পরে চট্টগ্রাম-সিলেট → সারা দেশ |
 
 ## ফিচার (এই প্রোটোটাইপে)
@@ -30,26 +30,48 @@ A community-verified, mobile-first, Bangla-language directory that answers one s
 
 ## চালানোর নিয়ম / Run
 
-কোনো বিল্ড-স্টেপ নেই — ফাইলটা ব্রাউজারে খুললেই চলে:
-
 ```bash
-# অপশন ১: সরাসরি index.html ডাবল-ক্লিক
-# অপশন ২ (রেকমেন্ডেড):
-python3 -m http.server 8000
-# তারপর ব্রাউজারে: http://localhost:8000
+npm install
+npm run dev          # http://localhost:3000
 ```
 
-> টাইল-সার্ভার ছাড়া বাইরের কোনো নির্ভরতা নেই; Leaflet ও আইকন CDN থেকে আসে।
+`.env.local` ফাঁকা থাকলে অ্যাপ `src/data/`-এর নমুনা ডেটায় চলে। Supabase যুক্ত করতে:
+
+1. Supabase-এ প্রজেক্ট খুলে SQL Editor-এ চালান: `supabase/migrations/20261018000000_init.sql`, তারপর `supabase/seed.sql`
+2. `.env.example` কপি করে `.env.local` বানান, URL আর publishable key বসান
+
+| কমান্ড | কাজ |
+|---|---|
+| `npm run build` | স্ট্যাটিক এক্সপোর্ট → `out/` (Cloudflare Pages / Netlify / Vercel — যেকোনো স্ট্যাটিক হোস্ট) |
+| `npm run typecheck` · `npm run lint` | টাইপ ও লিন্ট চেক |
+| `npm run seed:sql` | `src/data/*.json` থেকে `supabase/seed.sql` বানায় |
+
+পুরনো v0.1 প্রোটোটাইপ: `prototype/index.html`
 
 ## রিপো স্ট্রাকচার
 
 ```
-├── index.html            # পুরো অ্যাপ (HTML + CSS + JS এক ফাইলে)
-├── docs/
-│   └── PROJECT_NOTES.md  # প্রজেক্টের কোর তথ্য — সমস্যা-বিশ্লেষণ, ডেটা-কৌশল, রোডম্যাপ, খরচ, ঝুঁকি
-├── LICENSE
-└── .gitignore
+src/
+├── app/            # রুট: হোম, category, place, saved — page.tsx (সার্ভার) + *View.tsx (ক্লায়েন্ট)
+├── components/
+│   ├── ui/         # বারবার ব্যবহারের ছোট অংশ — বাটন, সার্চ, চিপ, টোস্ট
+│   ├── layout/     # AppShell (রেল/বটম-নেভ), SplitView (তালিকা + ম্যাপ)
+│   ├── map/        # Leaflet + OSM ম্যাপ
+│   ├── place/      # জায়গার সারি, তথ্য-তালিকা, বিস্তারিত
+│   ├── market/     # বাজার → ভেতরের মার্কেট → দোকান, "কিসের জন্য" গণনা
+│   └── category/   # বিভাগের গ্রিড ও চিপ
+├── hooks/          # usePlaces, useSaved, useUserLocation, useClock, useTheme
+├── services/       # ডেটা আনা (Supabase বা নমুনা ডেটা)
+├── lib/            # Supabase ক্লায়েন্ট, স্টোর, টোস্ট, কপি/শেয়ার, থিম
+├── utils/          # বিশুদ্ধ ফাংশন — দূরত্ব, খোলার সময়, যাচাই, জায়গার গাছ, কিসের জন্য
+├── config/         # অ্যাপের নাম/সেটিং, ১৫টি বিভাগ, "কিসের জন্য" তালিকা
+├── data/           # নমুনা ডেটা (JSON) — সিডের একমাত্র উৎস
+└── types/
+supabase/           # migrations (টেবিল + RLS) ও seed.sql
+scripts/            # build-seed.mjs
 ```
+
+নিজস্ব সার্ভার নেই: সব নিয়ম (কে কী লিখতে পারবে) Supabase-এর RLS-এ, তাই অ্যাপটা যেকোনো স্ট্যাটিক হোস্টে চলে — Cloudflare ব্লক হলে Vercel/Netlify-তে সরানো সহজ।
 
 ## কোর ডেটা-কৌশল (পরিকল্পিত)
 

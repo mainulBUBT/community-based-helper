@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+@theme {
+  --color-page: light-dark(#f5f7f6, #0e1417);
+  --color-rail: light-dark(#ebf0ee, #0b1114);
+  --color-surface: light-dark(#ffffff, #151d21);
+  --color-surface-2: light-dark(#e9eeec, #1c262b);
+  --color-line: light-dark(#cfd8d5, #28343b);
+  --color-line-soft: light-dark(#e1e7e5, #202b31);
+  --color-ink: light-dark(#13201c, #e6ecea);
+  --color-ink-2: light-dark(#3d4c48, #b9c4c1);
+  --color-dim: light-dark(#56655f, #97a6a2);
+  --color-faint: light-dark(#6b7a75, #7a8985);
+  --color-brand: light-dark(#0b6e58, #3fc1a3);
+  --color-brand-hover: light-dark(#085846, #7dd9c2);
+  --color-brand-ink: light-dark(#ffffff, #052a21);
+  --color-warn: light-dark(#8a5800, #f2c66b);
+  --color-me: light-dark(#2160d8, #60a5fa);
+  --color-danger: light-dark(#c62f33, #d13438);
+  --color-danger-soft: light-dark(#b42318, #f2a3a4);
+  --color-map: light-dark(#e8ecea, #0b1316);
+}
+
+:root {
+  color-scheme: light dark;
+  --map-filter: none;
+  --dark-map-filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.9) saturate(0.5);
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --map-filter: var(--dark-map-filter);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --map-filter: var(--dark-map-filter);
+  }
+}
+
+@theme {
+  --animate-toast-in: toast-in 200ms ease-out;
+
+  @keyframes toast-in {
+    from {
+      opacity: 0;
+      translate: 0 8px;
+    }
+  }
+}
+
+@theme inline {
+  --font-sans: var(--font-body), sans-serif;
+  --font-display: var(--font-heading), serif;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-page font-sans text-ink antialiased;
+    font-synthesis: none;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
+}
+
+.leaflet-container {
+  background: var(--color-map);
+  font-family: inherit;
+}
+.leaflet-tile-pane {
+  filter: var(--map-filter);
+}
+.leaflet-bar a,
+.leaflet-bar a:hover {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border-color: var(--color-line);
+}
+.leaflet-control-attribution.leaflet-control {
+  background: color-mix(in srgb, var(--color-page) 85%, transparent);
+  color: var(--color-dim);
+}
+.leaflet-control-attribution a {
+  color: var(--color-ink-2);
+}
+
+.pin {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid rgb(255 255 255 / 0.92);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+.pin-open {
+  background: var(--color-brand);
+  color: var(--color-brand-ink);
+}
+.pin-closed {
+  background: var(--color-surface-2);
+  color: var(--color-dim);
+  border-color: var(--color-faint);
+}
+.pin-selected {
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--color-brand) 35%, transparent), 0 4px 14px rgb(0 0 0 / 0.45);
+}
+.me-dot {
+  display: block;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: var(--color-me);
+  border: 3px solid #dbeafe;
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--color-me) 25%, transparent);
+}
+
+::view-transition-old(.nav-forward) {
+  --slide-offset: -60px;
+  animation:
+    150ms ease-in both fade reverse,
+    400ms ease-in-out both slide reverse;
+}
+::view-transition-new(.nav-forward) {
+  --slide-offset: 60px;
+  animation:
+    210ms ease-out 150ms both fade,
+    400ms ease-in-out both slide;
+}
+::view-transition-old(.nav-back) {
+  --slide-offset: 60px;
+  animation:
+    150ms ease-in both fade reverse,
+    400ms ease-in-out both slide reverse;
+}
+::view-transition-new(.nav-back) {
+  --slide-offset: -60px;
+  animation:
+    210ms ease-out 150ms both fade,
+    400ms ease-in-out both slide;
+}
+::view-transition-old(.page-fade) {
+  animation: 120ms ease-in both fade reverse;
+}
+::view-transition-new(.page-fade) {
+  animation: 180ms ease-out 80ms both fade;
+}
+
+::view-transition-group(app-rail),
+::view-transition-group(app-tabbar) {
+  animation: none;
+  z-index: 100;
+}
+::view-transition-old(app-rail),
+::view-transition-old(app-tabbar) {
+  display: none;
+}
+::view-transition-new(app-rail),
+::view-transition-new(app-tabbar) {
+  animation: none;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes slide {
+  from {
+    translate: var(--slide-offset);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+  .animate-toast-in {
+    animation: none;
+  }
+}

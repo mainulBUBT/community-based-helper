@@ -7,11 +7,14 @@ Thumbs.db
 .idea/
 *.swp
 
-# Node (ভবিষ্যৎ Next.js স্টেপের জন্য)
+# Node / Next.js
 node_modules/
 .next/
 out/
+*.tsbuildinfo
+next-env.d.ts
 
 # Env
-.env
-.env.local
+.env*
+!.env.example
+docs/PROJECT_NOTES.md

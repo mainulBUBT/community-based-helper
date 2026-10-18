@@ -1,0 +1,26 @@
+[
+  {
+    "id": "vegetables",
+    "name": "সবজি"
+  },
+  {
+    "id": "clothes",
+    "name": "কাপড়"
+  },
+  {
+    "id": "shoes",
+    "name": "জুতা"
+  },
+  {
+    "id": "bags",
+    "name": "ব্যাগ"
+  },
+  {
+    "id": "cosmetics",
+    "name": "প্রসাধনী"
+  },
+  {
+    "id": "household",
+    "name": "ঘরের জিনিস"
+  }
+]

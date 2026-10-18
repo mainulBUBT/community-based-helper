@@ -1,0 +1,92 @@
+[
+  {
+    "id": "pharma",
+    "name": "ফার্মেসি",
+    "short": "ফার্মেসি",
+    "isMarket": false
+  },
+  {
+    "id": "hosp",
+    "name": "হাসপাতাল ইমার্জেন্সি",
+    "short": "হাসপাতাল",
+    "isMarket": false
+  },
+  {
+    "id": "diag",
+    "name": "২৪ঘ ডায়াগনস্টিক",
+    "short": "ডায়াগনস্টিক",
+    "isMarket": false
+  },
+  {
+    "id": "fuel",
+    "name": "ফুয়েল / CNG",
+    "short": "ফুয়েল",
+    "isMarket": false
+  },
+  {
+    "id": "atm",
+    "name": "এটিএম বুথ",
+    "short": "এটিএম",
+    "isMarket": false
+  },
+  {
+    "id": "amb",
+    "name": "অ্যাম্বুলেন্স",
+    "short": "অ্যাম্বুলেন্স",
+    "isMarket": false
+  },
+  {
+    "id": "blood",
+    "name": "রক্তের ব্যাংক",
+    "short": "রক্ত",
+    "isMarket": false
+  },
+  {
+    "id": "fire",
+    "name": "ফায়ার সার্ভিস",
+    "short": "ফায়ার",
+    "isMarket": false
+  },
+  {
+    "id": "thana",
+    "name": "থানা / পুলিশ",
+    "short": "থানা",
+    "isMarket": false
+  },
+  {
+    "id": "vet",
+    "name": "ভেটেরিনারি",
+    "short": "ভেট",
+    "isMarket": false
+  },
+  {
+    "id": "food",
+    "name": "রেস্টুরেন্ট",
+    "short": "রেস্টুরেন্ট",
+    "isMarket": false
+  },
+  {
+    "id": "mech",
+    "name": "গাড়ি/বাইক মেকানিক",
+    "short": "মেকানিক",
+    "isMarket": false
+  },
+  {
+    "id": "cheap",
+    "name": "কম দামের বাজার",
+    "short": "কমদামি",
+    "isMarket": true
+  },
+  {
+    "id": "wholesale",
+    "name": "পাইকারি বাজার",
+    "short": "পাইকারি",
+    "isMarket": true
+  },
+  {
+    "id": "toilet",
+    "name": "পাবলিক টয়লেট",
+    "short": "টয়লেট",
+    "isMarket": false
+  }
+]
