@@ -14,6 +14,11 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 
+# Deploy tools
+.wrangler/
+supabase/.temp/
+supabase/.branches/
+
 # Env
 .env*
 !.env.example

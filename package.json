@@ -8,7 +8,10 @@
     "start": "npx serve out",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "seed:sql": "node scripts/build-seed.mjs"
+    "seed:sql": "node scripts/build-seed.mjs",
+    "deploy": "bash scripts/deploy.sh",
+    "db:new": "supabase migration new",
+    "db:push": "supabase db push"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.118.0",
@@ -27,7 +30,9 @@
     "@types/react-dom": "^19.3.0",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.4.2",
+    "supabase": "^2.121.0",
     "tailwindcss": "^4.3.3",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "wrangler": "^4.151.1"
   }
 }

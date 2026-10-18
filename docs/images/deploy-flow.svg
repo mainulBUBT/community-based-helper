@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" font-family="'Noto Sans Bengali', 'Hind Siliguri', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10z" fill="#3d4c48"/>
+    </marker>
+  </defs>
+  <rect width="960" height="340" rx="16" fill="#f5f7f6"/>
+
+  <g>
+    <rect x="24" y="125" width="196" height="90" rx="14" fill="#ffffff" stroke="#cfd8d5" stroke-width="1.5"/>
+    <text x="122" y="162" text-anchor="middle" font-size="17" font-weight="700" fill="#13201c">আপনার কম্পিউটার</text>
+    <text x="122" y="188" text-anchor="middle" font-size="13" fill="#56655f">কোড · migration · .env.local</text>
+  </g>
+
+  <g>
+    <rect x="276" y="115" width="220" height="110" rx="14" fill="#0b6e58"/>
+    <text x="386" y="150" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">npm run deploy</text>
+    <text x="386" y="176" text-anchor="middle" font-size="13" fill="#d7efe8">১ চেক → ২ migration</text>
+    <text x="386" y="198" text-anchor="middle" font-size="13" fill="#d7efe8">৩ build → ৪ আপলোড</text>
+  </g>
+
+  <g>
+    <rect x="566" y="40" width="210" height="84" rx="14" fill="#ffffff" stroke="#cfd8d5" stroke-width="1.5"/>
+    <text x="671" y="76" text-anchor="middle" font-size="17" font-weight="700" fill="#13201c">Supabase</text>
+    <text x="671" y="101" text-anchor="middle" font-size="13" fill="#56655f">ডেটাবেস · RLS · লগইন</text>
+  </g>
+
+  <g>
+    <rect x="566" y="216" width="210" height="84" rx="14" fill="#ffffff" stroke="#cfd8d5" stroke-width="1.5"/>
+    <text x="671" y="252" text-anchor="middle" font-size="17" font-weight="700" fill="#13201c">Cloudflare Pages</text>
+    <text x="671" y="277" text-anchor="middle" font-size="13" fill="#56655f">সাইট (out/ ফোল্ডার)</text>
+  </g>
+
+  <g>
+    <rect x="826" y="128" width="112" height="84" rx="14" fill="#ffffff" stroke="#cfd8d5" stroke-width="1.5"/>
+    <text x="882" y="164" text-anchor="middle" font-size="16" font-weight="700" fill="#13201c">ব্যবহারকারী</text>
+    <text x="882" y="189" text-anchor="middle" font-size="13" fill="#56655f">ফোন · ব্রাউজার</text>
+  </g>
+
+  <g fill="none" stroke="#3d4c48" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M220 170h50"/>
+    <path d="M496 150C530 150 530 82 560 82"/>
+    <path d="M496 190C530 190 530 258 560 258"/>
+  </g>
+  <g fill="none" stroke="#56655f" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow)">
+    <path d="M776 258C806 258 800 200 822 196"/>
+    <path d="M776 82C806 82 800 140 822 144"/>
+  </g>
+  <text x="524" y="98" text-anchor="end" font-size="12" fill="#56655f">migration</text>
+  <text x="528" y="254" text-anchor="end" font-size="12" fill="#56655f">out/</text>
+  <text x="782" y="290" font-size="12" fill="#56655f">পাতা</text>
+  <text x="782" y="66" font-size="12" fill="#56655f">ডেটা</text>
+</svg>

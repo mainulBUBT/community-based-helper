@@ -35,15 +35,14 @@ npm install
 npm run dev          # http://localhost:3000
 ```
 
-`.env.local` ফাঁকা থাকলে অ্যাপ `src/data/`-এর নমুনা ডেটায় চলে। Supabase যুক্ত করতে:
-
-1. Supabase-এ প্রজেক্ট খুলে SQL Editor-এ চালান: `supabase/migrations/20261018000000_init.sql`, তারপর `supabase/seed.sql`
-2. `.env.example` কপি করে `.env.local` বানান, URL আর publishable key বসান
+`.env.local` ফাঁকা থাকলে অ্যাপ `src/data/`-এর নমুনা ডেটায় চলে। Supabase যুক্ত করা আর Cloudflare-এ তোলার পুরো ধাপ: **[docs/DEPLOY.md](docs/DEPLOY.md)**
 
 | কমান্ড | কাজ |
 |---|---|
 | `npm run build` | স্ট্যাটিক এক্সপোর্ট → `out/` (Cloudflare Pages / Netlify / Vercel — যেকোনো স্ট্যাটিক হোস্ট) |
 | `npm run typecheck` · `npm run lint` | টাইপ ও লিন্ট চেক |
+| `npm run deploy` | চেক → Supabase migration → build → Cloudflare Pages আপলোড |
+| `npm run db:new -- <নাম>` | নতুন ডেটাবেস migration ফাইল |
 | `npm run seed:sql` | `src/data/*.json` থেকে `supabase/seed.sql` বানায় |
 
 পুরনো v0.1 প্রোটোটাইপ: `prototype/index.html`
@@ -67,8 +66,9 @@ src/
 ├── config/         # অ্যাপের নাম/সেটিং, ১৫টি বিভাগ, "কিসের জন্য" তালিকা
 ├── data/           # নমুনা ডেটা (JSON) — সিডের একমাত্র উৎস
 └── types/
-supabase/           # migrations (টেবিল + RLS) ও seed.sql
-scripts/            # build-seed.mjs
+supabase/           # migrations (টেবিল + RLS), seed.sql, config.toml
+scripts/            # build-seed.mjs, deploy.sh
+docs/               # DEPLOY.md — প্রথমবার সেটআপ ও প্রতিবার আপডেট
 ```
 
 নিজস্ব সার্ভার নেই: সব নিয়ম (কে কী লিখতে পারবে) Supabase-এর RLS-এ, তাই অ্যাপটা যেকোনো স্ট্যাটিক হোস্টে চলে — Cloudflare ব্লক হলে Vercel/Netlify-তে সরানো সহজ।
