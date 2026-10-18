@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PROJECT="${PAGES_PROJECT:-community-based-helper}"
+PROJECT="${PAGES_PROJECT:-pothghat}"
 BRANCH="$(git branch --show-current)"
 
 step() { printf '\n\033[1m› %s\033[0m\n' "$1"; }

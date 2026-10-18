@@ -64,10 +64,10 @@ npm run deploy
 
 ```bash
 npx wrangler login
-npx wrangler pages project create community-based-helper --production-branch main
+npx wrangler pages project create pothghat --production-branch main
 ```
 
-প্রথম কমান্ড ব্রাউজারে Cloudflare লগইন খোলে। দ্বিতীয়টা project বানায় — সাইটের ঠিকানা হবে `https://community-based-helper.pages.dev` (নামটা কারো নেওয়া থাকলে Cloudflare শেষে কিছু অক্ষর যোগ করে)।
+প্রথম কমান্ড ব্রাউজারে Cloudflare লগইন খোলে। দ্বিতীয়টা project বানায় — সাইটের ঠিকানা হবে `https://pothghat.pages.dev` (নামটা কারো নেওয়া থাকলে Cloudflare শেষে কিছু অক্ষর যোগ করে)।
 
 > অন্য নাম চাইলে project বানানোর সময় সেই নাম দিন, আর deploy-এর সময় `PAGES_PROJECT=<নাম> npm run deploy`।
 

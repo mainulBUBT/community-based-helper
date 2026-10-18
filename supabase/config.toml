@@ -1,4 +1,4 @@
-project_id = "community-based-helper"
+project_id = "pothghat"
 
 [db.seed]
 enabled = true
