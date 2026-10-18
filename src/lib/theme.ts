@@ -23,12 +23,8 @@ export function subscribeTheme(onChange: () => void) {
 }
 
 export function setTheme(theme: Theme) {
-  const apply = () => {
-    document.documentElement.dataset.theme = theme;
-    window.dispatchEvent(new Event(CHANGE_EVENT));
-  };
-  if (document.startViewTransition && document.visibilityState === "visible") document.startViewTransition(apply);
-  else apply();
+  document.documentElement.dataset.theme = theme;
+  window.dispatchEvent(new Event(CHANGE_EVENT));
   try {
     localStorage.setItem(STORAGE_KEY, theme);
   } catch {}
