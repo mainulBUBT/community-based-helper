@@ -20,7 +20,7 @@ export function matchesQuery(place: Place, query: string): boolean {
   const q = query.trim().toLowerCase();
   if (!q) return true;
   const category = getCategory(place.categoryId);
-  return includesQuery([place.name, place.area, category?.name, category?.short, ...purposeNames(place)], q);
+  return includesQuery([place.name, place.description, place.area, category?.name, category?.short, ...purposeNames(place)], q);
 }
 
 export function searchPlaces(places: Place[], tree: PlaceTree, query: string): Place[] {
@@ -41,6 +41,7 @@ export function placeSummary(place: Place, ancestors: Place[] = []): string {
   const category = getCategory(place.categoryId);
   return [
     place.name,
+    place.description,
     [category?.name, whereLabel(place, ancestors)].filter(Boolean).join(" · "),
     `খোলার সময়: ${hoursLabel(place)}`,
     place.phone && `ফোন: ${place.phone}`,

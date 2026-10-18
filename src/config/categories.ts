@@ -11,12 +11,12 @@ import {
   Shield,
   Siren,
   Tag,
-  Toilet,
   Utensils,
   Warehouse,
   Wrench,
   type LucideIcon,
 } from "lucide-react";
+import { WcIcon } from "@/components/icons/WcIcon";
 import data from "@/data/categories.json";
 
 export interface Category {
@@ -42,7 +42,7 @@ const ICONS: Record<string, LucideIcon> = {
   mech: Wrench,
   cheap: Tag,
   wholesale: Warehouse,
-  toilet: Toilet,
+  toilet: WcIcon,
 };
 
 export const CATEGORIES: Category[] = data.map((c) => ({ ...c, icon: ICONS[c.id] ?? MapPin }));

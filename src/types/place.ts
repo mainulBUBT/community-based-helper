@@ -2,6 +2,8 @@ export type PlaceStatus = "new" | "confirmed" | "disputed";
 
 export type PlaceKind = "place" | "market" | "shop";
 
+export type PlaceSource = "community" | "osm";
+
 export interface LatLng {
   lat: number;
   lng: number;
@@ -21,6 +23,7 @@ export interface PlacePurpose {
 export interface Place extends LatLng {
   id: string;
   name: string;
+  description: string;
   kind: PlaceKind;
   categoryId: string;
   parentId: string | null;
@@ -33,6 +36,8 @@ export interface Place extends LatLng {
   purposes: PlacePurpose[];
   status: PlaceStatus;
   verifiedAt: string | null;
+  source: PlaceSource;
+  sourceRef: string | null;
 }
 
 export type NearbyPlace = Place & { distanceKm: number };

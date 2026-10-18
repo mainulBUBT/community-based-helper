@@ -76,6 +76,7 @@ export function CategoryView() {
     >
       <AsyncContent loading={loading} error={error}>
         <PlaceList
+          key={`${category.id}:${activePurpose}`}
           places={list}
           clock={clock}
           empty="এই বিভাগে এখনো কিছু যোগ হয়নি।"

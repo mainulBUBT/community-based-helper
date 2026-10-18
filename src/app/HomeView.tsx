@@ -6,7 +6,6 @@ import { SplitView } from "@/components/layout/SplitView";
 import { PlaceMap } from "@/components/map/PlaceMap";
 import { PlaceList } from "@/components/place/PlaceList";
 import { LocationButton } from "@/components/ui/LocationButton";
-import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { AsyncContent } from "@/components/ui/Notice";
 import { SearchBox } from "@/components/ui/SearchBox";
 import { Section } from "@/components/ui/Section";
@@ -37,13 +36,11 @@ export function HomeView() {
   return (
     <SplitView
       header={
-        <header className="flex flex-col gap-3 px-4 pb-3 pt-5">
-          <div className="flex items-center justify-between gap-3">
-            <h1 className="font-display text-[28px] leading-none">{APP.name}</h1>
-            <div className="flex items-center gap-1">
-              <LocationButton />
-              <ThemeToggle className="size-10 lg:hidden" />
-            </div>
+        <header className="flex flex-col gap-3 px-4 pb-3 pt-3 lg:pt-5">
+          <h1 className="sr-only">{`${APP.name} — ${APP.tagline}`}</h1>
+          <div className="hidden items-center justify-between gap-3 lg:flex">
+            <span className="font-display text-[28px] leading-none">{APP.name}</span>
+            <LocationButton />
           </div>
           <SearchBox value={query} onChange={setQuery} placeholder="ফার্মেসি, জুতা, সবজি, এলাকা…" />
         </header>

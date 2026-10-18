@@ -18,25 +18,17 @@
   --color-me: light-dark(#2160d8, #60a5fa);
   --color-danger: light-dark(#c62f33, #d13438);
   --color-danger-soft: light-dark(#b42318, #f2a3a4);
-  --color-map: light-dark(#e8ecea, #0b1316);
+  --color-map: #0b1316;
 }
 
 :root {
   color-scheme: light dark;
-  --map-filter: none;
-  --dark-map-filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.9) saturate(0.5);
 }
 :root[data-theme="light"] {
   color-scheme: light;
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --map-filter: var(--dark-map-filter);
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --map-filter: var(--dark-map-filter);
-  }
 }
 
 @theme {
@@ -78,7 +70,7 @@
   font-family: inherit;
 }
 .leaflet-tile-pane {
-  filter: var(--map-filter);
+  filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.9) saturate(0.5);
 }
 .leaflet-bar a,
 .leaflet-bar a:hover {
@@ -87,11 +79,15 @@
   border-color: var(--color-line);
 }
 .leaflet-control-attribution.leaflet-control {
-  background: color-mix(in srgb, var(--color-page) 85%, transparent);
-  color: var(--color-dim);
+  padding: 0 5px;
+  background: rgb(11 19 22 / 0.6);
+  color: #97a6a2;
+  font-size: 10px;
+  line-height: 16px;
 }
 .leaflet-control-attribution a {
-  color: var(--color-ink-2);
+  color: #b9c4c1;
+  text-decoration: none;
 }
 
 .pin {
@@ -116,6 +112,46 @@
 }
 .pin-selected {
   box-shadow: 0 0 0 5px color-mix(in srgb, var(--color-brand) 35%, transparent), 0 4px 14px rgb(0 0 0 / 0.45);
+}
+.cluster {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid rgb(255 255 255 / 0.92);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.35);
+}
+.cluster::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: 50%;
+  background: inherit;
+  border: 2px solid rgb(255 255 255 / 0.92);
+  opacity: 0.55;
+  transform: translate(5px, -5px);
+}
+.cluster-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  border-radius: 11px;
+  border: 2px solid var(--color-page);
+  background: var(--color-ink);
+  color: var(--color-page);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
 }
 .me-dot {
   display: block;
@@ -160,15 +196,18 @@
 }
 
 ::view-transition-group(app-rail),
+::view-transition-group(app-topbar),
 ::view-transition-group(app-tabbar) {
   animation: none;
   z-index: 100;
 }
 ::view-transition-old(app-rail),
+::view-transition-old(app-topbar),
 ::view-transition-old(app-tabbar) {
   display: none;
 }
 ::view-transition-new(app-rail),
+::view-transition-new(app-topbar),
 ::view-transition-new(app-tabbar) {
   animation: none;
 }

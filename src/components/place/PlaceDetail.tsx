@@ -6,7 +6,6 @@ import { MarketDirectory } from "@/components/market/MarketDirectory";
 import { PlaceMap } from "@/components/map/PlaceMap";
 import { ActionButton } from "@/components/ui/ActionButton";
 import { BackLink } from "@/components/ui/BackLink";
-import { CategoryIcon } from "@/components/ui/CategoryIcon";
 import { getCategory } from "@/config/categories";
 import { useClock } from "@/hooks/useClock";
 import { useSaved } from "@/hooks/useSaved";
@@ -21,7 +20,7 @@ import { ancestorsOf, type PlaceTree } from "@/utils/place-tree";
 import { purposeNames } from "@/utils/purposes";
 import { verifiedAgo } from "@/utils/trust";
 import { FactList, type Fact } from "./FactList";
-import { TrustBadge } from "./TrustBadge";
+import { PlaceIcon } from "./PlaceIcon";
 
 export function PlaceDetail({ place, tree }: { place: Place; tree: PlaceTree }) {
   const clock = useClock();
@@ -54,14 +53,12 @@ export function PlaceDetail({ place, tree }: { place: Place; tree: PlaceTree }) 
             <BackLink href={categoryPath(place.categoryId)} label={category?.name ?? "ফিরে যান"} />
           )}
           <div className="flex items-start gap-3">
-            <CategoryIcon categoryId={place.categoryId} tone={open.isOpen ? "open" : "closed"} size={48} />
+            <PlaceIcon place={place} isOpen={open.isOpen} size={48} />
             <div className="flex min-w-0 flex-col gap-1">
               <p className="text-sm text-dim">{[category?.name, ...ancestors.map((a) => a.name)].filter(Boolean).join(" › ")}</p>
               <h1 className="font-display text-[26px] leading-tight">{place.name}</h1>
-              <p className="flex flex-wrap items-center gap-2 text-[15px]">
-                <span className={open.isOpen ? "text-brand" : "text-dim"}>{open.label}</span>
-                <TrustBadge place={place} />
-              </p>
+              {place.description && <p className="text-[15px] text-ink-2">{place.description}</p>}
+              <p className={`text-[15px] ${open.isOpen ? "text-brand" : "text-dim"}`}>{open.label}</p>
             </div>
           </div>
           <div className="flex gap-2">

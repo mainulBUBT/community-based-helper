@@ -1,14 +1,16 @@
-import samplePlaces from "@/data/sample-places.json";
 import { supabase } from "@/lib/supabase";
-import type { Place, PlaceKind, PlaceStatus } from "@/types/place";
+import type { Place, PlaceKind, PlaceSource, PlaceStatus } from "@/types/place";
+
+const PAGE_SIZE = 1000;
 
 const COLUMNS =
-  "id, name, kind, category_id, parent_id, area, floor, unit, lat, lng, phone, open_24h, status, verified_at, " +
-  "opening_hours(weekday, opens_min, closes_min), place_purposes(purpose_id)";
+  "id, name, description, kind, category_id, parent_id, area, floor, unit, lat, lng, phone, open_24h, status, " +
+  "verified_at, source, source_ref, opening_hours(weekday, opens_min, closes_min), place_purposes(purpose_id)";
 
 interface PlaceRow {
   id: string;
   name: string;
+  description: string | null;
   kind: PlaceKind;
   category_id: string;
   parent_id: string | null;
@@ -21,6 +23,8 @@ interface PlaceRow {
   open_24h: boolean;
   status: PlaceStatus;
   verified_at: string | null;
+  source: PlaceSource;
+  source_ref: string | null;
   opening_hours: { weekday: number; opens_min: number; closes_min: number }[];
   place_purposes: { purpose_id: string }[];
 }
@@ -31,33 +35,11 @@ interface ConfirmationRow {
   confirmed: number;
 }
 
-interface SamplePlace {
-  id: string;
-  name: string;
-  kind: PlaceKind;
-  category: string;
-  parent?: string;
-  area: string | null;
-  floor?: string;
-  unit?: string;
-  lat: number;
-  lng: number;
-  phone: string | null;
-  open24h: boolean;
-  hours: number[][];
-  closedOn?: number[];
-  purposes: string[];
-  status?: PlaceStatus;
-  verifiedDaysAgo: number | null;
-}
-
-const DAY_MS = 86_400_000;
-const WEEK = [0, 1, 2, 3, 4, 5, 6];
-
 function fromRow(row: PlaceRow, confirmations: Map<string, number>): Place {
   return {
     id: row.id,
     name: row.name,
+    description: row.description ?? "",
     kind: row.kind,
     categoryId: row.category_id,
     parentId: row.parent_id,
@@ -75,43 +57,34 @@ function fromRow(row: PlaceRow, confirmations: Map<string, number>): Place {
     })),
     status: row.status,
     verifiedAt: row.verified_at,
-  };
-}
-
-function fromSample(item: SamplePlace): Place {
-  return {
-    id: item.id,
-    name: item.name,
-    kind: item.kind,
-    categoryId: item.category,
-    parentId: item.parent ?? null,
-    area: item.area ?? "",
-    floor: item.floor ?? null,
-    unit: item.unit ?? null,
-    lat: item.lat,
-    lng: item.lng,
-    phone: item.phone,
-    open24h: item.open24h,
-    hours: WEEK.filter((day) => !item.closedOn?.includes(day)).flatMap((weekday) =>
-      item.hours.map(([opens, closes]) => ({ weekday, opens, closes })),
-    ),
-    purposes: item.purposes.map((id) => ({ id, confirmed: 0 })),
-    status: item.status ?? "confirmed",
-    verifiedAt: item.verifiedDaysAgo == null ? null : new Date(Date.now() - item.verifiedDaysAgo * DAY_MS).toISOString(),
+    source: row.source,
+    sourceRef: row.source_ref,
   };
 }
 
 export async function fetchPlaces(): Promise<Place[]> {
-  if (!supabase) return (samplePlaces as SamplePlace[]).map(fromSample);
+  if (!supabase) throw new Error("Supabase কনফিগার করা নেই — .env.local দেখুন");
+  const db = supabase;
 
-  const [places, votes] = await Promise.all([
-    supabase.from("places").select(COLUMNS).returns<PlaceRow[]>(),
-    supabase.rpc("purpose_confirmations"),
-  ]);
-  if (places.error) throw places.error;
+  const { count, error } = await db.from("places").select("id", { count: "exact", head: true });
+  if (error) throw error;
+
+  const pages = Array.from({ length: Math.ceil((count ?? 0) / PAGE_SIZE) }, (_, i) =>
+    db
+      .from("places")
+      .select(COLUMNS)
+      .order("id")
+      .range(i * PAGE_SIZE, (i + 1) * PAGE_SIZE - 1)
+      .returns<PlaceRow[]>(),
+  );
+  const [votes, ...results] = await Promise.all([db.rpc("purpose_confirmations"), ...pages]);
   if (votes.error) throw votes.error;
 
-  const rows = (votes.data ?? []) as ConfirmationRow[];
-  const confirmations = new Map(rows.map((v) => [`${v.place_id}:${v.purpose_id}`, Number(v.confirmed)]));
-  return places.data.map((row) => fromRow(row, confirmations));
+  const confirmations = new Map(
+    ((votes.data ?? []) as ConfirmationRow[]).map((v) => [`${v.place_id}:${v.purpose_id}`, Number(v.confirmed)]),
+  );
+  return results.flatMap((page) => {
+    if (page.error) throw page.error;
+    return page.data.map((row) => fromRow(row, confirmations));
+  });
 }

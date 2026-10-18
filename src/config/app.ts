@@ -8,7 +8,8 @@ export const APP = {
   defaultLocation: { lat: 23.7473, lng: 90.3753, label: "ধানমন্ডি ২৭" },
   map: {
     tileUrl: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> অবদানকারীগণ',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     zoom: 14,
   },
+  listPageSize: 30,
 } as const;

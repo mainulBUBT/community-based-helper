@@ -13,18 +13,22 @@ export interface UserLocation extends LatLng {
 
 const DEFAULT_LOCATION: UserLocation = { ...APP.defaultLocation, isDefault: true };
 const locationStore = createStore(DEFAULT_LOCATION);
+const focusStore = createStore(0);
+const focusMap = () => focusStore.set(focusStore.get() + 1);
 
 let askedOnOpen = false;
 
-function locate(silent = false) {
+function locate(silent = false, focus = false) {
   const fail = (message: string) => !silent && showToast(message);
   if (!navigator.geolocation) {
     fail("এই ব্রাউজারে লোকেশন পাওয়া যায় না");
     return;
   }
   navigator.geolocation.getCurrentPosition(
-    ({ coords }) =>
-      locationStore.set({ lat: coords.latitude, lng: coords.longitude, label: "আপনার অবস্থান", isDefault: false }),
+    ({ coords }) => {
+      locationStore.set({ lat: coords.latitude, lng: coords.longitude, label: "আপনার অবস্থান", isDefault: false });
+      if (focus) focusMap();
+    },
     () => fail("লোকেশন পাওয়া যায়নি — অনুমতি দেওয়া আছে কিনা দেখুন"),
     { timeout: 10_000, maximumAge: 300_000 },
   );
@@ -40,5 +44,13 @@ export function useLocateOnOpen() {
 
 export function useUserLocation() {
   const location = useSyncExternalStore(locationStore.subscribe, locationStore.get, () => DEFAULT_LOCATION);
-  return { location, locate: () => locate() };
+  const showMyLocation = () => {
+    focusMap();
+    locate(false, true);
+  };
+  return { location, showMyLocation };
+}
+
+export function useMapFocus() {
+  return useSyncExternalStore(focusStore.subscribe, focusStore.get, () => 0);
 }
