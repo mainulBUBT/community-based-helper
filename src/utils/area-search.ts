@@ -8,6 +8,7 @@ const MAX_HITS = 8;
 export interface IndexedArea {
   area: Area;
   names: string[][];
+  container: boolean;
 }
 
 interface Candidate {
@@ -28,7 +29,11 @@ export function tokenize(text: string) {
 }
 
 export const indexAreas = (areas: Area[]): IndexedArea[] =>
-  areas.map((area) => ({ area, names: [tokenize(area.name), tokenize(area.en ?? "")] }));
+  areas.map((area) => ({
+    area,
+    names: [tokenize(area.name), tokenize(area.en ?? "")],
+    container: area.kind === "suburb",
+  }));
 
 function score(query: string[], tokens: string[]) {
   let partial = 0;
@@ -42,7 +47,8 @@ function score(query: string[], tokens: string[]) {
 
 const bestScore = (query: string[], entry: IndexedArea) => Math.min(...entry.names.map((tokens) => score(query, tokens)));
 
-const sameTokens = (a: string[], b: string[]) => a.length === b.length && a.every((token, i) => token === b[i]);
+const contains = (parent: IndexedArea, context: string[]) =>
+  parent.container && parent.names.some((tokens) => context.every((word) => tokens.includes(word)));
 
 function splits(query: string[]) {
   return query.slice(1).flatMap((_, i) => [
@@ -58,7 +64,7 @@ function directMatches(index: IndexedArea[], query: string[]): Candidate[] {
 function contextMatches(index: IndexedArea[], query: string[]): Candidate[] {
   return splits(query).flatMap(({ context, rest }) =>
     index
-      .filter((parent) => parent.names.some((tokens) => sameTokens(tokens, context)))
+      .filter((parent) => contains(parent, context))
       .flatMap((parent) =>
         index
           .filter((entry) => entry !== parent)
@@ -76,7 +82,7 @@ const byRank = (a: Candidate, b: Candidate) =>
 function toHit({ entry: { area }, parent }: Candidate): AreaHit {
   const detail = parent
     ? [area.en, parent.en].filter(Boolean).join(", ")
-    : [area.en, area.near && `${area.near}-এর কাছে`].filter(Boolean).join(" · ");
+    : [area.en, area.near && `কাছে: ${area.near}`].filter(Boolean).join(" · ");
   return {
     key: `${area.name}:${area.lat}:${area.lng}`,
     label: parent ? `${area.name}, ${parent.name}` : area.name,

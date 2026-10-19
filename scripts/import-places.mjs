@@ -1,4 +1,5 @@
 import { readFile, writeFile } from "node:fs/promises";
+import { areaList, areasJson } from "./places/areas.mjs";
 import { nearestArea } from "./places/geo.mjs";
 import { mergePlaces } from "./places/merge.mjs";
 import { fetchOverpass, osmPlaces } from "./places/osm.mjs";
@@ -25,6 +26,10 @@ const header = [
   ...overture.licenses.map((license) => `  ${license}`),
 ];
 await writeFile(new URL("../supabase/seed.sql", import.meta.url), seedSql({ header, categories, purposes, places }));
+
+const areas = areaList(elements);
+await writeFile(new URL("../src/data/areas.json", import.meta.url), areasJson(areas));
+console.log(`src/data/areas.json: ${areas.length} areas`);
 
 const filledOsm = merged.filled.filter((f) => f.target.source === "osm");
 const count = (list, category) => list.filter((p) => p.category === category).length;

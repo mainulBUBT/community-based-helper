@@ -11,11 +11,14 @@ import { AreaOption } from "./AreaOption";
 
 function statusText(term: string, localCount: number, online: OnlineSearch | null) {
   if (!term) return "এলাকার নাম লিখুন — বাংলা বা ইংরেজিতে";
-  if (localCount) return `${toBnDigits(localCount)}টি এলাকা মিলেছে`;
-  if (!online) return "তালিকায় মেলেনি — অনলাইনে খুঁজে দেখুন";
-  if (online.status === "loading") return "OpenStreetMap-এ খোঁজা হচ্ছে…";
-  if (online.status === "error") return "খোঁজা যায়নি — ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করুন";
-  return online.hits.length ? `${toBnDigits(online.hits.length)}টি জায়গা পাওয়া গেছে` : "কিছু পাওয়া যায়নি — অন্য নামে খুঁজে দেখুন";
+  if (online?.status === "loading") return "OpenStreetMap-এ খোঁজা হচ্ছে…";
+  if (online?.status === "error") return "অনলাইনে খোঁজা যায়নি — ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করুন";
+  if (online) {
+    return online.hits.length
+      ? `অনলাইনে ${toBnDigits(online.hits.length)}টি জায়গা পাওয়া গেছে`
+      : "অনলাইনেও কিছু পাওয়া যায়নি — অন্য নামে খুঁজে দেখুন";
+  }
+  return localCount ? `${toBnDigits(localCount)}টি এলাকা মিলেছে` : "তালিকায় মেলেনি — অনলাইনে খুঁজে দেখুন";
 }
 
 function moveFocus(event: KeyboardEvent<HTMLFormElement>, input: HTMLInputElement | null) {
@@ -99,24 +102,33 @@ export function AreaPicker({ onClose }: { onClose: () => void }) {
             </li>
           ))}
         </ul>
-        {term && !local.length && online?.status !== "done" && (
+        {term && online?.status !== "done" && (
           <button
-            type="submit"
+            type="button"
+            onClick={searchOnline}
             disabled={online?.status === "loading"}
-            className="h-11 rounded-xl bg-brand px-4 text-sm font-semibold text-brand-ink transition-colors hover:bg-brand-hover disabled:opacity-60"
+            className={`h-11 rounded-xl px-4 text-sm font-semibold transition-colors disabled:opacity-60 ${
+              local.length ? "border border-line text-ink-2 hover:bg-surface-2 hover:text-ink" : "bg-brand text-brand-ink hover:bg-brand-hover"
+            }`}
           >
             অনলাইনে খুঁজুন
           </button>
         )}
-        {online && (
-          <p className="text-xs text-faint">
-            খোঁজ: <a href="https://nominatim.org/" target="_blank" rel="noreferrer" className="underline">Nominatim</a> · ডেটা ©{" "}
-            <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer" className="underline">
-              OpenStreetMap
-            </a>{" "}
-            contributors
-          </p>
-        )}
+        <p className="text-xs text-faint">
+          এলাকার ডেটা ©{" "}
+          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer" className="underline">
+            OpenStreetMap
+          </a>{" "}
+          contributors
+          {online && (
+            <>
+              {" "}· অনলাইন খোঁজ:{" "}
+              <a href="https://nominatim.org/" target="_blank" rel="noreferrer" className="underline">
+                Nominatim
+              </a>
+            </>
+          )}
+        </p>
       </form>
     </dialog>
   );

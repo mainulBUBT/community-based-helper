@@ -43,7 +43,7 @@ npm run dev          # http://localhost:3000
 | `npm run typecheck` · `npm run lint` | টাইপ ও লিন্ট চেক |
 | `npm run deploy` | চেক → Supabase migration → build → Cloudflare Pages আপলোড |
 | `npm run db:new -- <নাম>` | নতুন ডেটাবেস migration ফাইল |
-| `npm run data:places` | OpenStreetMap + Overture Maps থেকে ঢাকার জায়গা এনে, একই জায়গা একবার রেখে `supabase/seed.sql` বানায় |
+| `npm run data:places` | OpenStreetMap + Overture Maps থেকে ঢাকার জায়গা এনে, একই জায়গা একবার রেখে `supabase/seed.sql` বানায়; OSM-এর এলাকার নাম দিয়ে `src/data/areas.json` (অবস্থান বাছাইয়ের খোঁজ) |
 
 পুরনো v0.1 প্রোটোটাইপ: `prototype/index.html`
 

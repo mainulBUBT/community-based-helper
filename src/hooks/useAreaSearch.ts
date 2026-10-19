@@ -21,7 +21,7 @@ export function useAreaSearch(query: string) {
   const online = search?.query === term ? search : null;
 
   async function searchOnline() {
-    if (!term || local.length || (online && online.status !== "error")) return;
+    if (!term || (online && online.status !== "error")) return;
     const settle = (next: OnlineSearch) => setSearch((current) => (current?.query === term ? next : current));
     setSearch({ query: term, status: "loading", hits: [] });
     try {
@@ -31,5 +31,5 @@ export function useAreaSearch(query: string) {
     }
   }
 
-  return { term, local, online, hits: local.length ? local : (online?.hits ?? []), searchOnline };
+  return { term, local, online, hits: [...local, ...(online?.hits ?? [])], searchOnline };
 }
