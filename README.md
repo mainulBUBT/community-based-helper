@@ -13,7 +13,7 @@ A community-verified, mobile-first, Bangla-language directory that answers one s
 |---|---|
 | **মূল প্রতিশ্রুতি** | প্রতিটি এন্ট্রি ফোনে যাচাই করা, যাচাই-তারিখসহ — "এখন খোলা" ফিল্টার ডিফল্ট ON |
 | **ক্যাটাগরি** | ১৫টি — ফার্মেসি, হাসপাতাল ইমার্জেন্সি, ২৪ঘ ডায়াগনস্টিক, ফুয়েল/CNG, এটিএম, অ্যাম্বুলেন্স, রক্তের ব্যাংক, ফায়ার সার্ভিস, থানা/পুলিশ, ভেটেরিনারি, রেস্টুরেন্ট, মেকানিক, কমদামি বাজার, পাইকারি বাজার, পাবলিক টয়লেট |
-| **বর্তমান অবস্থা** | v0.2 — Next.js + Supabase, live: [pothghat.pages.dev](https://pothghat.pages.dev); ঢাকার ~৫,৯০০ জায়গা OpenStreetMap থেকে (যাচাই বাকি) |
+| **বর্তমান অবস্থা** | v0.2 — Next.js + Supabase, live: [pothghat.pages.dev](https://pothghat.pages.dev); ঢাকার ~১০,৯০০ জায়গা OpenStreetMap ও Overture Maps থেকে (যাচাই বাকি) |
 | **লক্ষ্য** | লঞ্চে ৩০০+ ফোন-যাচাইকৃত এন্ট্রি (ঢাকা), পরে চট্টগ্রাম-সিলেট → সারা দেশ |
 
 ## ফিচার (এই প্রোটোটাইপে)
@@ -43,7 +43,7 @@ npm run dev          # http://localhost:3000
 | `npm run typecheck` · `npm run lint` | টাইপ ও লিন্ট চেক |
 | `npm run deploy` | চেক → Supabase migration → build → Cloudflare Pages আপলোড |
 | `npm run db:new -- <নাম>` | নতুন ডেটাবেস migration ফাইল |
-| `npm run data:osm` | OpenStreetMap থেকে ঢাকার জায়গা এনে `supabase/seed.sql` বানায় |
+| `npm run data:places` | OpenStreetMap + Overture Maps থেকে ঢাকার জায়গা এনে, একই জায়গা একবার রেখে `supabase/seed.sql` বানায় |
 
 পুরনো v0.1 প্রোটোটাইপ: `prototype/index.html`
 
@@ -67,7 +67,7 @@ src/
 ├── data/           # ১৫টি বিভাগ ও "কিসের জন্য" তালিকা (JSON)
 └── types/
 supabase/           # migrations (টেবিল + RLS), seed.sql, config.toml
-scripts/            # import-osm.mjs (OSM → seed.sql), deploy.sh
+scripts/            # import-places.mjs + places/ (OSM + Overture → seed.sql), deploy.sh
 docs/               # DEPLOY.md — প্রথমবার সেটআপ ও প্রতিবার আপডেট
 ```
 
@@ -104,7 +104,15 @@ Next.js (React) + Tailwind · Cloudflare Pages (আনলিমিটেড ব�
 
 ## ডেটার উৎস
 
-জায়গার তালিকা © [OpenStreetMap](https://www.openstreetmap.org/copyright) অবদানকারীগণ, ODbL লাইসেন্সে। OSM থেকে আনা সব জায়গা "যাচাই হয়নি" — কমিউনিটি বা ফোন-যাচাইয়ের পরে "নিশ্চিত" হয়। পুরনো প্রোটোটাইপের (`prototype/index.html`) এন্ট্রিগুলো ছিল নমুনা, সেগুলো আর ব্যবহার হয় না।
+| উৎস | লাইসেন্স |
+|---|---|
+| © [OpenStreetMap](https://www.openstreetmap.org/copyright) অবদানকারীগণ | ODbL 1.0 |
+| [Overture Maps](https://docs.overturemaps.org/attribution/) Places — © Overture Maps Foundation | CDLA-Permissive-2.0 |
+| ↳ ভেতরের উৎস: Meta, Microsoft | CDLA-Permissive-2.0 |
+| ↳ ভেতরের উৎস: Foursquare OS Places | Apache-2.0 |
+| ↳ ভেতরের উৎস: AllThePlaces | CC0-1.0 |
+
+একই জায়গা দুই উৎসে থাকলে OSM-এর সারিটা থাকে, Overture থেকে শুধু না-থাকা ফোন/ওয়েবসাইট যোগ হয়। কোন release আর কোন উৎস এসেছে তা `supabase/seed.sql`-এর মাথায় লেখা থাকে। Google Maps-এর ডেটা নেওয়া হয় না — তাদের শর্তে জমিয়ে রাখা নিষেধ। OSM বা Overture থেকে আনা সব জায়গা "যাচাই হয়নি" — কমিউনিটি বা ফোন-যাচাইয়ের পরে "নিশ্চিত" হয়। পুরনো প্রোটোটাইপের (`prototype/index.html`) এন্ট্রিগুলো ছিল নমুনা, সেগুলো আর ব্যবহার হয় না।
 
 ## License
 
