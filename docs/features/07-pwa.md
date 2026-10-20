@@ -1,0 +1,16 @@
+# ০৭ PWA
+
+**অবস্থা:** 🟡 আংশিক (কোড শেষ, আসল ফোনে ইনস্টল করে দেখা হয়নি)
+
+## যা আছে
+
+- `src/app/manifest.ts`: নাম, রং, আইকন (192, 512, maskable), শর্টকাট (খুঁজুন, সেভ করা)।
+- `public/sw.js`: `_next/static` আর আইকন cache থেকে দেয়। পেজ নেটওয়ার্ক থেকে আনে, না পেলে cache, তাও না থাকলে `/offline/`। `/admin` কখনো cache হয় না।
+- `src/components/layout/ServiceWorker.tsx`: শুধু production build এ service worker চালু করে।
+- হেডারে "অ্যাপ নামান" বোতাম, ব্রাউজার অনুমতি দিলে তবেই দেখায় (`src/hooks/useInstallPrompt.ts`)।
+
+## যা বাকি
+
+- [ ] deploy করার পর Android Chrome আর iPhone Safari তে ইনস্টল করে দেখা।
+- [ ] নতুন ভার্সন এলে "আপডেট আছে, রিফ্রেশ করুন" জানানো।
+- [ ] Web push দিয়ে "দাম কমেছে" নোটিফিকেশন।

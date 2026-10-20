@@ -1,91 +1,161 @@
 "use client";
 
-import { Bookmark, House, MapPin, Phone, type LucideIcon } from "lucide-react";
+import { Bookmark, Download, House, Laptop, Megaphone, Search, Smartphone, Store, Watch, type LucideIcon } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import type { ReactNode } from "react";
-import { LocationButton } from "@/components/ui/LocationButton";
-import { ThemeToggle } from "@/components/ui/ThemeToggle";
-import { APP } from "@/config/app";
-import { useLocateOnOpen } from "@/hooks/useUserLocation";
-import { toBnDigits } from "@/utils/bangla";
+import { usePathname, useSearchParams } from "next/navigation";
+import { Suspense, useEffect, type ReactNode } from "react";
+import { BrandMark } from "@/components/layout/BrandMark";
+import { LanguageButton, ThemeButton } from "@/components/layout/PreferenceButtons";
+import { SiteFooter } from "@/components/layout/SiteFooter";
+import { SearchBox } from "@/components/search/SearchBox";
+import { useI18n } from "@/hooks/useI18n";
+import { useInstallPrompt } from "@/hooks/useInstallPrompt";
+import type { Messages } from "@/i18n/bn";
+import { trackView } from "@/services/analytics";
+import type { SiteSettings } from "@/types/admin";
+import type { Category } from "@/types/catalog";
 
-const NAV: { href: string; label: string; icon: LucideIcon }[] = [
-  { href: "/", label: "হোম", icon: House },
-  { href: "/saved/", label: "সেভ করা", icon: Bookmark },
+const NAV: { href: string; key: keyof Messages["nav"]; icon: LucideIcon }[] = [
+  { href: "/", key: "home", icon: House },
+  { href: "/search/", key: "search", icon: Search },
+  { href: "/sellers/", key: "sellers", icon: Store },
+  { href: "/saved/", key: "saved", icon: Bookmark },
+];
+
+const CATEGORY_LINKS: { id: Category; icon: LucideIcon }[] = [
+  { id: "mobile", icon: Smartphone },
+  { id: "apple", icon: Laptop },
+  { id: "watch", icon: Watch },
 ];
 
 const trimSlash = (path: string) => path.replace(/\/+$/, "") || "/";
 
-function NavItems() {
-  const pathname = trimSlash(usePathname());
-  return NAV.map(({ href, label, icon: Icon }) => {
-    const active = trimSlash(href) === pathname;
-    return (
-      <Link
-        key={href}
-        href={href}
-        aria-current={active ? "page" : undefined}
-        className={`flex flex-1 flex-col items-center justify-center gap-1 text-xs font-medium transition-colors lg:size-14 lg:flex-none lg:rounded-xl ${
-          active ? "text-brand lg:bg-brand/12" : "text-dim hover:text-ink"
-        }`}
-      >
-        <Icon size={22} aria-hidden="true" />
-        {label}
-      </Link>
-    );
-  });
-}
-
-function EmergencyCall() {
+function InstallButton() {
+  const { t } = useI18n();
+  const { canInstall, install } = useInstallPrompt();
+  if (!canInstall) return null;
   return (
-    <a
-      href={`tel:${APP.emergencyNumber}`}
-      aria-label={`জরুরি সেবা — ${APP.emergencyNumber}-এ কল করুন`}
-      className="flex flex-1 flex-col items-center justify-center gap-1 text-xs font-semibold text-danger-soft lg:size-14 lg:flex-none lg:rounded-xl lg:bg-danger lg:text-white"
-    >
-      <Phone size={20} aria-hidden="true" />
-      {toBnDigits(APP.emergencyNumber)}
-    </a>
+    <button type="button" onClick={install} className="flex h-10 items-center gap-2 rounded-lg bg-gold px-3 text-sm font-bold text-gold-ink">
+      <Download size={17} aria-hidden="true" />
+      <span className="hidden sm:inline">{t.common.install}</span>
+    </button>
   );
 }
 
-export function AppShell({ children }: { children: ReactNode }) {
-  useLocateOnOpen();
+function Announcement({ settings }: { settings: SiteSettings }) {
+  const { lang } = useI18n();
+  const text = lang === "en" ? settings.announcementEn || settings.announcement : settings.announcement || settings.announcementEn;
+  if (!text) return null;
+  const body = (
+    <span className="flex items-center justify-center gap-2">
+      <Megaphone size={15} aria-hidden="true" />
+      {text}
+    </span>
+  );
   return (
-    <>
-      <nav aria-label="প্রধান মেনু" style={{ viewTransitionName: "app-rail" }} className="fixed inset-y-0 left-0 z-[1001] hidden w-[76px] flex-col items-center gap-2 border-r border-line-soft bg-rail py-4 lg:flex">
-        <Link href="/" aria-label={APP.name} className="mb-3 flex size-11 items-center justify-center rounded-xl bg-brand text-brand-ink">
-          <MapPin size={22} aria-hidden="true" />
-        </Link>
-        <NavItems />
-        <span className="flex-1" />
-        <LocationButton variant="rail" />
-        <ThemeToggle className="size-12" />
-        <EmergencyCall />
-      </nav>
+    <div className="bg-gold px-4 py-2 text-center text-[13px] font-semibold text-gold-ink">
+      {settings.announcementLink ? (
+        <a href={settings.announcementLink} className="underline-offset-2 hover:underline">
+          {body}
+        </a>
+      ) : (
+        body
+      )}
+    </div>
+  );
+}
 
-      <header
-        style={{ viewTransitionName: "app-topbar" }}
-        className="sticky top-0 z-[1001] flex h-14 items-center gap-2 border-b border-line-soft bg-rail/95 px-4 backdrop-blur lg:hidden"
-      >
-        <Link href="/" className="flex shrink-0 items-center gap-2 font-display text-xl">
-          <span className="flex size-8 items-center justify-center rounded-lg bg-brand text-brand-ink">
-            <MapPin size={17} aria-hidden="true" />
-          </span>
-          {APP.name}
+function CategoryStrip() {
+  const { t } = useI18n();
+  const params = useSearchParams();
+  const pathname = trimSlash(usePathname());
+  const current = pathname === "/search" ? params.get("category") : null;
+  return (
+    <nav aria-label={t.home.categoryEyebrow} className="bg-bar text-bar-ink">
+      <div className="no-scrollbar mx-auto flex h-11 max-w-6xl items-center gap-1 overflow-x-auto px-4">
+        {CATEGORY_LINKS.map(({ id, icon: Icon }) => (
+          <Link
+            key={id}
+            href={`/search/?category=${id}`}
+            aria-current={current === id ? "page" : undefined}
+            className={`flex h-8 shrink-0 items-center gap-2 rounded-md px-3 text-sm font-semibold ${current === id ? "bg-white/20" : "hover:bg-white/10"}`}
+          >
+            <Icon size={16} aria-hidden="true" />
+            {t.category[id].label}
+          </Link>
+        ))}
+        <span className="mx-2 h-5 w-px shrink-0 bg-white/25" />
+        <Link href="/search/?sort=drop" className="flex h-8 shrink-0 items-center rounded-md px-3 text-sm font-semibold hover:bg-white/10">
+          {t.home.drops}
         </Link>
-        <span className="flex-1" />
-        <LocationButton />
-        <ThemeToggle className="size-10" />
+        <Link href="/sellers/" className="flex h-8 shrink-0 items-center rounded-md px-3 text-sm font-semibold hover:bg-white/10">
+          {t.nav.sellers}
+        </Link>
+      </div>
+    </nav>
+  );
+}
+
+export function AppShell({ settings, children }: { settings: SiteSettings; children: ReactNode }) {
+  const pathname = usePathname();
+  const current = trimSlash(pathname);
+  const { t } = useI18n();
+  const isActive = (href: string) => (trimSlash(href) === "/" ? current === "/" : current.startsWith(trimSlash(href)));
+  const showSearch = !current.startsWith("/search");
+
+  useEffect(() => trackView(pathname), [pathname]);
+
+  return (
+    <div className="flex min-h-dvh flex-col">
+      <Announcement settings={settings} />
+      <header className="sticky top-0 z-40 shadow-sm">
+        <div className="border-b border-line-soft bg-surface">
+          <div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4">
+            <Link href="/" className="flex shrink-0 items-center gap-2 text-xl font-bold tracking-tight text-ink">
+              <BrandMark size={32} />
+              {settings.name}
+            </Link>
+            <div className="hidden max-w-xl flex-1 md:block">{showSearch && <SearchBox />}</div>
+            <span className="flex-1 md:hidden" />
+            <div className="flex items-center gap-2">
+              <InstallButton />
+              <Link href="/saved/" aria-label={t.nav.saved} className="hidden size-10 items-center justify-center rounded-lg border border-line text-ink hover:border-brand md:flex">
+                <Bookmark size={18} aria-hidden="true" />
+              </Link>
+              <LanguageButton />
+              <ThemeButton />
+            </div>
+          </div>
+          {showSearch && (
+            <div className="px-4 pb-3 md:hidden">
+              <SearchBox />
+            </div>
+          )}
+        </div>
+        <Suspense fallback={<div className="h-11 bg-bar" />}>
+          <CategoryStrip />
+        </Suspense>
       </header>
 
-      <main className="pb-[72px] lg:pb-0 lg:pl-[76px]">{children}</main>
+      <main className="mx-auto w-full max-w-6xl flex-1 px-4 pt-5 pb-24 md:pb-0">{children}</main>
+      <SiteFooter settings={settings} />
 
-      <nav aria-label="প্রধান মেনু" style={{ viewTransitionName: "app-tabbar" }} className="fixed inset-x-0 bottom-0 z-[1001] flex h-16 border-t border-line-soft bg-rail/95 backdrop-blur lg:hidden">
-        <NavItems />
-        <EmergencyCall />
+      <nav aria-label={t.nav.menu} className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 border-t border-line bg-surface pb-[env(safe-area-inset-bottom)] md:hidden">
+        {NAV.map(({ href, key, icon: Icon }) => {
+          const active = isActive(href);
+          return (
+            <Link
+              key={href}
+              href={href}
+              aria-current={active ? "page" : undefined}
+              className={`flex h-16 flex-col items-center justify-center gap-1 text-[11px] font-semibold ${active ? "text-brand" : "text-dim"}`}
+            >
+              <Icon size={21} aria-hidden="true" />
+              {t.nav[key]}
+            </Link>
+          );
+        })}
       </nav>
-    </>
+    </div>
   );
 }

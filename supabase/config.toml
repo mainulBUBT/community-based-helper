@@ -1,5 +1,5 @@
-project_id = "pothghat"
+project_id = "sashroy"
 
 [db.seed]
-enabled = true
+enabled = false
 sql_paths = ["./seed.sql"]

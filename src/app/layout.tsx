@@ -1,38 +1,48 @@
 import type { Metadata, Viewport } from "next";
-import { Noto_Sans_Bengali, Tiro_Bangla } from "next/font/google";
+import { Hind_Siliguri } from "next/font/google";
 import type { ReactNode } from "react";
-import { AppShell } from "@/components/layout/AppShell";
+import { ServiceWorker } from "@/components/layout/ServiceWorker";
 import { Toaster } from "@/components/ui/Toaster";
-import { APP } from "@/config/app";
-import { themeInitScript } from "@/lib/theme";
-import "leaflet/dist/leaflet.css";
+import { SITE_URL } from "@/config/site";
+import { preferencesInitScript } from "@/lib/preferences";
+import { getSiteSettings } from "@/services/catalog";
 import "./globals.css";
 
-const body = Noto_Sans_Bengali({ subsets: ["bengali", "latin"], variable: "--font-body", display: "swap" });
-const heading = Tiro_Bangla({ weight: "400", subsets: ["bengali", "latin"], variable: "--font-heading", display: "swap" });
+const body = Hind_Siliguri({ weight: ["400", "500", "600", "700"], subsets: ["bengali", "latin"], variable: "--font-body", display: "swap" });
 
-export const metadata: Metadata = {
-  title: { default: APP.name, template: `%s · ${APP.name}` },
-  description: APP.tagline,
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const settings = await getSiteSettings();
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: { default: settings.seoTitle, template: `%s | ${settings.name}` },
+    description: settings.seoDescription,
+    applicationName: settings.name,
+    appleWebApp: { capable: true, title: settings.name, statusBarStyle: "default" },
+    openGraph: { type: "website", siteName: settings.name, locale: "bn_BD", title: settings.seoTitle, description: settings.seoDescription },
+    icons: { icon: "/icons/icon.svg", apple: "/icons/icon-192.png" },
+  };
+}
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f5f7f6" },
-    { media: "(prefers-color-scheme: dark)", color: "#0e1417" },
-  ],
-  colorScheme: "light dark",
+  themeColor: "#f5f5f2",
+  colorScheme: "light",
+  viewportFit: "cover",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
+  const { cloudflareAnalyticsToken } = await getSiteSettings();
   return (
-    <html lang="bn" className={`${body.variable} ${heading.variable}`} suppressHydrationWarning>
+    <html lang="bn" className={body.variable} suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <script dangerouslySetInnerHTML={{ __html: preferencesInitScript }} />
       </head>
       <body>
-        <AppShell>{children}</AppShell>
+        {children}
         <Toaster />
+        <ServiceWorker />
+        {cloudflareAnalyticsToken && (
+          <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token: cloudflareAnalyticsToken })} />
+        )}
       </body>
     </html>
   );

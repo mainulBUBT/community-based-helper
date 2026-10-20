@@ -1,119 +1,57 @@
-# পথঘাট (Pothghat)
+# সাশ্রয়
 
-> **"এখানে যা দেখছেন, সেটা এখন খোলা।"**
-> জরুরি ও প্রয়োজনীয় জায়গাগুলোর (ফার্মেসি, হাসপাতাল, ফুয়েল, এটিএম, রক্ত, বাজার…) কমিউনিটি-ভেরিফায়েড ডিরেক্টরি — মোবাইল-ফার্স্ট, সম্পূর্ণ বাংলায়।
+বাংলাদেশের দোকানগুলোতে মোবাইল, Apple আর স্মার্টওয়াচের দাম পাশাপাশি দেখার সাইট। অ্যাডমিন প্যানেল একই Next.js অ্যাপে `/admin` এ।
 
-A community-verified, mobile-first, Bangla-language directory that answers one simple question at any hour: **"এখন কী খোলা?"** (What is open right now?)
-
----
-
-## এক নজরে / At a glance
-
-| | |
-|---|---|
-| **মূল প্রতিশ্রুতি** | প্রতিটি এন্ট্রি ফোনে যাচাই করা, যাচাই-তারিখসহ — "এখন খোলা" ফিল্টার ডিফল্ট ON |
-| **ক্যাটাগরি** | ১৫টি — ফার্মেসি, হাসপাতাল ইমার্জেন্সি, ২৪ঘ ডায়াগনস্টিক, ফুয়েল/CNG, এটিএম, অ্যাম্বুলেন্স, রক্তের ব্যাংক, ফায়ার সার্ভিস, থানা/পুলিশ, ভেটেরিনারি, রেস্টুরেন্ট, মেকানিক, কমদামি বাজার, পাইকারি বাজার, পাবলিক টয়লেট |
-| **বর্তমান অবস্থা** | v0.2 — Next.js + Supabase, live: [pothghat.pages.dev](https://pothghat.pages.dev); ঢাকার ~১০,৯০০ জায়গা OpenStreetMap ও Overture Maps থেকে (যাচাই বাকি) |
-| **লক্ষ্য** | লঞ্চে ৩০০+ ফোন-যাচাইকৃত এন্ট্রি (ঢাকা), পরে চট্টগ্রাম-সিলেট → সারা দেশ |
-
-## ফিচার (এই প্রোটোটাইপে)
-
-- **লাইভ ম্যাপ** — Leaflet + একাধিক টাইল-সার্ভার ফলব্যাক (OSM → OSM France → Esri → Wikimedia); ব্লক/ডাউন হলে অটো-স্যুইচ, সব ফেল করলে পরিষ্কার বার্তা
-- **অর্থবহ ম্যাপ-আইকন** — প্রতিটি মার্কার ক্যাটাগরি-আইকনসহ রঙিন; বন্ধ = ঝাপসা, নির্বাচিত = অ্যাম্বার রিং
-- **"এখন খোলা"** — `opening_hours` থেকে লাইভ হিসাব (রাত ২টা পর্যন্ত মানে সত্যিই ২টা পর্যন্ত), বন্ধ হলে কখন খুলবে তাও দেখায়
-- **কাছের আগে** — আপনার GPS (বা ডেমো লোকেশন) থেকে দূরত্ব হিসাব করে তালিকা সাজানো; "নতুন যাচাই" সাজানোও আছে
-- **কল-ফার্স্ট** — সত্যিকারের `tel:` লিংক; **দিক** — গুগল ম্যাপে আসল রুট + ম্যাপে ডেমো রুট-দাগা
-- **কমিউনিটি রিপোর্ট** — "বন্ধ দেখাচ্ছে?" → ৪৮ ঘণ্টায় রি-ভেরিফিকেশন স্ট্যাটাস
-- **যাচাই-তারিখ প্রতিটি এন্ট্রিতে** — ৩ মাস+ যাচাইহীন হলে "যাচাই দরকার" সতর্ক-ব্যাজ
-- **শেয়ার** — Web Share API (ক্লিপবোর্ড ফলব্যাক)
-- ডার্ক UI, Hind Siliguri ফন্টে সম্পূর্ণ বাংলা, মোবাইল বটম-ট্যাব + ডেস্কটপ split-view, PWA-রেডি সিঙ্গেল ফাইল
-
-## চালানোর নিয়ম / Run
+## চালানো
 
 ```bash
 npm install
-npm run dev          # http://localhost:3000
+npm run dev
 ```
 
-অ্যাপ চালাতে `.env.local`-এ Supabase-এর URL আর publishable key লাগে। Supabase যুক্ত করা, ডেটা আনা আর Cloudflare-এ তোলার পুরো ধাপ: **[docs/DEPLOY.md](docs/DEPLOY.md)**
+`.env.local` না থাকলে অ্যাপ `src/data/sample.ts` এর নমুনা ডেটায় চলে, অ্যাডমিন লগইন ছাড়াই খোলে।
 
-| কমান্ড | কাজ |
+## Supabase যুক্ত করা
+
+1. নতুন Supabase প্রজেক্ট খুলে `npx supabase link --project-ref <ref>`
+2. `npm run db:push` দিয়ে `supabase/migrations` চালান
+3. Authentication থেকে অ্যাডমিন ইউজার বানিয়ে SQL Editor এ: `insert into admins (user_id) values ('<user id>');`
+4. `.env.example` দেখে `.env.local` এ URL, publishable key আর সাইটের ঠিকানা দিন
+
+## ফোল্ডার
+
+| ফোল্ডার | কী থাকে |
 |---|---|
-| `npm run build` | স্ট্যাটিক এক্সপোর্ট → `out/` (Cloudflare Pages / Netlify / Vercel — যেকোনো স্ট্যাটিক হোস্ট) |
-| `npm run typecheck` · `npm run lint` | টাইপ ও লিন্ট চেক |
-| `npm run deploy` | চেক → Supabase migration → build → Cloudflare Pages আপলোড |
-| `npm run db:new -- <নাম>` | নতুন ডেটাবেস migration ফাইল |
-| `npm run data:places` | OpenStreetMap + Overture Maps থেকে ঢাকার জায়গা এনে, একই জায়গা একবার রেখে `supabase/seed.sql` বানায়; OSM-এর এলাকার নাম দিয়ে `src/data/areas.json` (অবস্থান বাছাইয়ের খোঁজ) |
+| `src/app/(site)` | ইউজারের পেজ: হোম, খোঁজা, পণ্য, বিক্রেতা, সেভ করা |
+| `src/app/admin` | অ্যাডমিন পেজ |
+| `src/components/{ui,layout,product,seller,forms,admin}` | UI কম্পোনেন্ট |
+| `src/services` | ডেটা আনা আর সেভ করা (`admin/` এ অ্যাডমিনের কাজ) |
+| `src/hooks`, `src/lib`, `src/utils` | হুক, side-effect হেল্পার, pure ফাংশন |
+| `src/config`, `src/types`, `src/data` | সেটিংস, টাইপ, নমুনা ডেটা |
+| `supabase/migrations` | টেবিল, RLS আর ফাংশন |
+| `public/sw.js`, `src/app/manifest.ts` | PWA |
 
-পুরনো v0.1 প্রোটোটাইপ: `prototype/index.html`
+## SEO
 
-## রিপো স্ট্রাকচার
+`npm run build` প্রতিটা পণ্য আর বিক্রেতার আলাদা HTML পেজ, `sitemap.xml` আর `robots.txt` বানায়। নতুন পণ্য সাইটে আসে পরের build এ। ডোমেইন বদলালে `NEXT_PUBLIC_SITE_URL` বদলে আবার build দিন।
 
-```
-src/
-├── app/            # রুট: হোম, category, place, saved — page.tsx (সার্ভার) + *View.tsx (ক্লায়েন্ট)
-├── components/
-│   ├── ui/         # বারবার ব্যবহারের ছোট অংশ — বাটন, সার্চ, চিপ, টোস্ট
-│   ├── layout/     # AppShell (রেল/বটম-নেভ), SplitView (তালিকা + ম্যাপ)
-│   ├── map/        # Leaflet + OSM ম্যাপ
-│   ├── place/      # জায়গার সারি, তথ্য-তালিকা, বিস্তারিত
-│   ├── market/     # বাজার → ভেতরের মার্কেট → দোকান, "কিসের জন্য" গণনা
-│   └── category/   # বিভাগের গ্রিড ও চিপ
-├── hooks/          # usePlaces, useSaved, useUserLocation, useClock, useTheme
-├── services/       # Supabase থেকে ডেটা আনা
-├── lib/            # Supabase ক্লায়েন্ট, স্টোর, টোস্ট, কপি/শেয়ার, থিম
-├── utils/          # বিশুদ্ধ ফাংশন — দূরত্ব, খোলার সময়, যাচাই, জায়গার গাছ, কিসের জন্য
-├── config/         # অ্যাপের নাম/সেটিং, ১৫টি বিভাগ, "কিসের জন্য" তালিকা
-├── data/           # ১৫টি বিভাগ ও "কিসের জন্য" তালিকা (JSON)
-└── types/
-supabase/           # migrations (টেবিল + RLS), seed.sql, config.toml
-scripts/            # import-places.mjs + places/ (OSM + Overture → seed.sql), deploy.sh
-docs/               # DEPLOY.md — প্রথমবার সেটআপ ও প্রতিবার আপডেট
-```
+## দাম আনার worker (`workers/`)
 
-নিজস্ব সার্ভার নেই: সব নিয়ম (কে কী লিখতে পারবে) Supabase-এর RLS-এ, তাই অ্যাপটা যেকোনো স্ট্যাটিক হোস্টে চলে — Cloudflare ব্লক হলে Vercel/Netlify-তে সরানো সহজ।
+GitHub Actions এ চলে: `prices` (প্রতি ৩ ঘণ্টায়), `js-stores` আর `discover` (Playwright লাগে), `promos`, `rebuild`। প্রতিটা run `jobs` আর `job_runs` এ লেখে; অ্যাডমিন থেকে কাজ বন্ধ রাখা যায়। দোকানের robots.txt মানা হয়, প্রতি দোকানে একসাথে ২টার বেশি request যায় না, 403 বা bot-challenge পেলে সেই দোকান ওই run এ বাদ পড়ে।
 
-## কোর ডেটা-কৌশল (পরিকল্পিত)
+GitHub → Settings → Secrets and variables → Actions এ দিন:
 
-1. **সিড** — OpenStreetMap/Overpass + DGDA (লাইসেন্সড ফার্মেসি) + DGHS HRIS (হাসপাতাল/ডায়াগনস্টিক) + পেট্রোল পাম্প তালিকা — সব ফ্রি উৎস
-2. **ফোন-যাচাই** — প্রতিটি "রাতে খোলা" এন্ট্রিতে কল করে নিশ্চিত করা; যাচাই-তারিখ সংরক্ষণ
-3. **কমিউনিটি সাবমিশন** — মডারেশন কিউ + প্রকাশের আগে ফোন ভেরিফিকেশন
-4. **রিপোর্ট-লুপ** — "বন্ধ/ভুল" রিপোর্টে ৪৮ ঘণ্টায় রি-ভেরিফিকেশন; ৩ মাস যাচাইহীন = "পুরনো"
-
-## গাইডিং নীতি
-
-- মুক্ত ডেটা কখনো পেইংওয়ালে যাবে না
-- বিজ্ঞাপন কখনো সার্চ-ফলাফলের সত্যতা প্রভাবিত করবে না (স্পনসর্ড সবসময় লেবেলড)
-- বিশ্বাসই একমাত্র সম্পদ
-
-## রোডম্যাপ
-
-| ফেজ | সময় | মূল কাজ |
-|---|---|---|
-| ০. ডেটা সিড | সপ্তাহ ১–৩ | OSM+DGDA একত্রীকরণ; ঢাকার রাতের ফার্মেসি ফোন-যাচাই → ৩০০+ এন্ট্রি |
-| ১. MVP | সপ্তাহ ৪–৬ | এই UI-ই Next.js-এ; Cloudflare Pages-এ পাবলিক বিটা |
-| ২. কমিউনিটি | মাস ২–৩ | লগইন, সাবমিশন কিউ, মডারেটর প্যানেল (Supabase) |
-| ৩. আয় | মাস ৪+ | ফিচার্ড লিস্টিং পাইলট |
-| ৪. সম্প্রসারণ | মাস ৬+ | চট্টগ্রাম-সিলেট → জেলাশহর |
-
-বিস্তারিত: [`docs/PROJECT_NOTES.md`](docs/PROJECT_NOTES.md)
-
-## টেক (পরিকল্পিত স্ট্যাক)
-
-Next.js (React) + Tailwind · Cloudflare Pages (আনলিমিটেড ব্যান্ডউইথ) · Supabase (Postgres + Auth) · Leaflet · বছর-১ মোট খরচ ≈ ৳১,৮০০ (ডোমেইন + কলচার্জ)
-
-## ডেটার উৎস
-
-| উৎস | লাইসেন্স |
+| নাম | কোথা থেকে |
 |---|---|
-| © [OpenStreetMap](https://www.openstreetmap.org/copyright) অবদানকারীগণ | ODbL 1.0 |
-| [Overture Maps](https://docs.overturemaps.org/attribution/) Places — © Overture Maps Foundation | CDLA-Permissive-2.0 |
-| ↳ ভেতরের উৎস: Meta, Microsoft | CDLA-Permissive-2.0 |
-| ↳ ভেতরের উৎস: Foursquare OS Places | Apache-2.0 |
-| ↳ ভেতরের উৎস: AllThePlaces | CC0-1.0 |
+| `SUPABASE_URL` | Supabase → Project Settings → API → Project URL |
+| `SUPABASE_SERVICE_KEY` | একই জায়গার service_role / secret key (শুধু এখানে, কখনো `.env.local` বা ব্রাউজারে না) |
+| `SUPABASE_PUBLISHABLE_KEY` | publishable key, শুধু `rebuild` এর জন্য |
+| `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` | ঐচ্ছিক; থাকলে `rebuild` Cloudflare Pages এ deploy করে |
 
-একই জায়গা দুই উৎসে থাকলে OSM-এর সারিটা থাকে, Overture থেকে শুধু না-থাকা ফোন/ওয়েবসাইট যোগ হয়। কোন release আর কোন উৎস এসেছে তা `supabase/seed.sql`-এর মাথায় লেখা থাকে। Google Maps-এর ডেটা নেওয়া হয় না — তাদের শর্তে জমিয়ে রাখা নিষেধ। OSM বা Overture থেকে আনা সব জায়গা "যাচাই হয়নি" — কমিউনিটি বা ফোন-যাচাইয়ের পরে "নিশ্চিত" হয়। পুরনো প্রোটোটাইপের (`prototype/index.html`) এন্ট্রিগুলো ছিল নমুনা, সেগুলো আর ব্যবহার হয় না।
+LLM key, Telegram bot token আর alert chat id অ্যাডমিন → সেটিংস থেকে `private_settings` এ রাখা হয়। অ্যাডমিনের "এখনই চালাও" বোতামে সাথে সাথে চালাতে চাইলে SQL Editor এ একটা fine-grained GitHub token (Actions: write) দিন:
 
-## License
+```sql
+update private_settings set value = value || '{"github": {"repo": "<owner>/<repo>", "token": "<token>"}}';
+```
 
-[MIT](LICENSE) © 2026 mainulBUBT
+না দিলে অনুরোধটা পরের নির্ধারিত run এ চলে। লোকালি পরীক্ষা: `npm run worker:dry` প্রতি দোকানের একটা পণ্যের দাম দেখায়, ডেটাবেস লাগে না।
