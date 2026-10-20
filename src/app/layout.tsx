@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Hind_Siliguri } from "next/font/google";
+import Script from "next/script";
 import type { ReactNode } from "react";
 import { ServiceWorker } from "@/components/layout/ServiceWorker";
 import { Toaster } from "@/components/ui/Toaster";
@@ -33,15 +34,13 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const { cloudflareAnalyticsToken } = await getSiteSettings();
   return (
     <html lang="bn" className={body.variable} suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: preferencesInitScript }} />
-      </head>
       <body>
+        <script dangerouslySetInnerHTML={{ __html: preferencesInitScript }} />
         {children}
         <Toaster />
         <ServiceWorker />
         {cloudflareAnalyticsToken && (
-          <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token: cloudflareAnalyticsToken })} />
+          <Script id="cloudflare-analytics" strategy="afterInteractive" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token: cloudflareAnalyticsToken })} />
         )}
       </body>
     </html>

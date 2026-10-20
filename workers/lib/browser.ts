@@ -8,7 +8,10 @@ let browser: Promise<Browser> | null = null;
 
 export async function render(target: string, waitFor?: string): Promise<string> {
   const url = await assertAllowed(target);
-  browser ??= chromium.launch();
+  browser ??= chromium.launch().catch((error) => {
+    browser = null;
+    throw error;
+  });
   const context = await (await browser).newContext({ userAgent: USER_AGENT });
   try {
     return await limited(url.host, async () => {
@@ -32,6 +35,12 @@ export async function render(target: string, waitFor?: string): Promise<string> 
 }
 
 export async function closeBrowser() {
-  if (browser) await (await browser).close();
+  const current = browser;
   browser = null;
+  if (!current) return;
+  try {
+    await (await current).close();
+  } catch {
+    // বন্ধ করতে ব্যর্থ হলেও রান থামানোর দরকার নেই
+  }
 }

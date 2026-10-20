@@ -1,6 +1,6 @@
-# সাশ্রয়: প্রজেক্ট ইনডেক্স
+# দরদাম: প্রজেক্ট ইনডেক্স
 
-বাংলাদেশের দোকানগুলোতে মোবাইল, Apple (iPhone, MacBook, iPad) আর স্মার্টওয়াচের দাম পাশাপাশি দেখানোর PWA। নাম "সাশ্রয়" আপাতত, পরে বদলাতে পারে।
+বাংলাদেশের দোকানগুলোতে মোবাইল, Apple (iPhone, MacBook, iPad) আর স্মার্টওয়াচের দাম পাশাপাশি দেখানোর PWA। নাম "দরদাম" আপাতত, পরে বদলাতে পারে।
 
 এই ফোল্ডার মানুষ আর AI এজেন্ট দুজনের জন্য। কাজ শুরুর আগে এই ফাইল, তারপর যে ফিচারে কাজ করবেন তার ফাইল পড়ুন। কাজ শেষে সেই ফাইলের টাস্ক টিক দিন আর নিচের ট্র্যাকারে স্ট্যাটাস বদলান।
 
@@ -14,7 +14,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 2. ⬜ প্রজেক্ট খোলার পর migration চালানো, `.env.local` এ key বসানো, মালিককে অ্যাডমিন বানানো। দেখুন [auth](features/10-auth.md)
 3. ⬜ worker গুলো আসল ডেটাবেসে একবার চালিয়ে দেখা। দেখুন [workers](features/12-workers-cron.md)
 4. ⬜ Cloudflare Pages এ নতুন প্রজেক্টে deploy। দেখুন [deploy](features/16-deploy.md)
-5. ⬜ `/about/` পেজ বানানো। worker এর user-agent এ এর লিংক দেওয়া আছে।
+5. ✅ `/about/` পেজ — হয়েছে (`/about/` বাংলা, `/en/about/` English), worker এর user-agent এর লিংক এখন কাজ করে।
 6. ⬜ কিছুই commit করা হয়নি। মালিক অনুমতি দিলে `main` এ commit।
 
 ## ফিচার ট্র্যাকার
@@ -26,7 +26,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | 3 | খোঁজা আর ফিল্টার | ✅ | [03-search](features/03-search.md) |
 | 4 | বিক্রেতা, ফোন নম্বর, যাচাই ব্যাজ | ✅ | [04-sellers](features/04-sellers.md) |
 | 5 | ক্রেতার পাঠানো দাম | 🟡 | [05-price-reports](features/05-price-reports.md) |
-| 6 | বাংলা/English আর লাইট/ডার্ক | 🟡 | [06-i18n-theme](features/06-i18n-theme.md) |
+| 6 | বাংলা/English আর লাইট/ডার্ক | ✅ | [06-i18n-theme](features/06-i18n-theme.md) |
 | 7 | PWA (অ্যাপ নামানো, অফলাইন) | 🟡 | [07-pwa](features/07-pwa.md) |
 | 8 | SEO | 🟡 | [08-seo](features/08-seo.md) |
 | 9 | অ্যাডমিন প্যানেল | ✅ | [09-admin-panel](features/09-admin-panel.md) |

@@ -16,7 +16,10 @@ export async function saveSeller(seller: Seller) {
   const isNew = !seller.id;
   if (!supabase) {
     if (isNew) sampleSellers.push({ ...seller, id: `s${Date.now()}` });
-    else sampleSellers.splice(sampleSellers.findIndex((s) => s.id === seller.id), 1, seller);
+    else {
+      const i = sampleSellers.findIndex((s) => s.id === seller.id);
+      if (i >= 0) sampleSellers.splice(i, 1, seller);
+    }
   } else {
     const row = fromSeller(seller);
     const { error } = isNew
@@ -29,8 +32,10 @@ export async function saveSeller(seller: Seller) {
 }
 
 export async function deleteSeller(seller: Seller) {
-  if (!supabase) sampleSellers.splice(sampleSellers.findIndex((s) => s.id === seller.id), 1);
-  else {
+  if (!supabase) {
+    const i = sampleSellers.findIndex((s) => s.id === seller.id);
+    if (i >= 0) sampleSellers.splice(i, 1);
+  } else {
     const { error } = await supabase.from("sellers").delete().eq("id", seller.id);
     if (error) throw error;
   }

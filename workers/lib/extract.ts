@@ -1,4 +1,4 @@
-import { visibleText } from "./html";
+import { metaContent, visibleText } from "./html";
 import { askJson, llmReady } from "./llm";
 import { structuredQuote, toTaka, type Quote } from "./price";
 
@@ -22,5 +22,7 @@ async function fromLlm(html: string): Promise<Quote | null> {
 }
 
 export async function quoteFrom(html: string, own?: (html: string) => Quote | null, useLlm = true): Promise<Quote | null> {
-  return own?.(html) ?? structuredQuote(html) ?? (useLlm ? await fromLlm(html) : null);
+  const quote = own?.(html) ?? structuredQuote(html) ?? (useLlm ? await fromLlm(html) : null);
+  if (quote && !quote.image) quote.image = metaContent(html, "og:image");
+  return quote;
 }

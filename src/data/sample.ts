@@ -12,6 +12,7 @@ export const sampleProducts: Product[] = [
       { id: "p1v1", label: "6GB / 128GB", officialPrice: 39999 },
       { id: "p1v2", label: "8GB / 128GB", officialPrice: 43499 },
     ],
+    images: ["https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A17-5G-Black-6759.jpg"],
   },
   {
     id: "p2", slug: "redmi-note-17-4g", name: "Redmi Note 17 4G", brand: "Xiaomi", category: "mobile", releaseYear: 2026, popularity: 91,
@@ -19,6 +20,7 @@ export const sampleProducts: Product[] = [
       { id: "p2v1", label: "8GB / 128GB", officialPrice: 32999 },
       { id: "p2v2", label: "8GB / 256GB", officialPrice: 36999 },
     ],
+    images: ["https://adminapi.applegadgetsbd.com/storage/media/large/Redmi-Note-17-4G3-7938.jpg"],
   },
   {
     id: "p3", slug: "redmi-17-4g", name: "Redmi 17 4G", brand: "Xiaomi", category: "mobile", releaseYear: 2026, popularity: 74,
@@ -30,6 +32,7 @@ export const sampleProducts: Product[] = [
       { id: "p4v1", label: "128GB", officialPrice: null },
       { id: "p4v2", label: "256GB", officialPrice: null },
     ],
+    images: ["https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-17-Sage-8941.jpg"],
   },
   {
     id: "p5", slug: "macbook-neo-13", name: "MacBook Neo 13\"", brand: "Apple", category: "apple", releaseYear: 2026, popularity: 82,
@@ -41,14 +44,17 @@ export const sampleProducts: Product[] = [
   {
     id: "p6", slug: "macbook-air-13-m5", name: "MacBook Air 13\" M5", brand: "Apple", category: "apple", releaseYear: 2026, popularity: 70,
     variants: [{ id: "p6v1", label: "16GB / 512GB", officialPrice: null }],
+    images: ["https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Air-M4-13-Inch-3050.png"],
   },
   {
     id: "p7", slug: "apple-watch-se-44mm", name: "Watch SE 44mm", brand: "Apple", category: "watch", releaseYear: 2025, popularity: 66,
     variants: [{ id: "p7v1", label: "GPS", officialPrice: null }],
+    images: ["https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-SE-3-3403.png"],
   },
   {
     id: "p8", slug: "galaxy-watch-8-44mm", name: "Galaxy Watch8 44mm", brand: "Samsung", category: "watch", releaseYear: 2025, popularity: 58,
     variants: [{ id: "p8v1", label: "Bluetooth", officialPrice: 38999 }],
+    images: ["https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-Watch8-6094.png"],
   },
 ];
 
@@ -66,39 +72,58 @@ type OfferSeed = [string, string, string, Offer["condition"], number, number | n
 
 const offerSeeds: OfferSeed[] = [
   ["o1", "p1v1", "s2", "official", 39999, 41499, true, 2, "site"],
-  ["o2", "p1v1", "s1", "official", 40500, null, true, 3, "site"],
-  ["o3", "p1v1", "s4", "official", 40999, null, true, 5, "site"],
+  ["o2", "p1v1", "s1", "official", 38000, null, true, 3, "site"],
+  ["o3", "p1v1", "s4", "official", 36499, null, true, 5, "site"],
   ["o4", "p1v1", "s5", "official", 41200, null, null, 48, "seller"],
   ["o5", "p1v1", "s6", "unofficial", 33500, null, null, 26, "seller"],
   ["o6", "p1v2", "s2", "official", 43499, null, true, 2, "site"],
-  ["o7", "p1v2", "s1", "official", 43900, null, false, 3, "site"],
+  ["o7", "p1v2", "s1", "official", 41500, null, true, 3, "site"],
   ["o8", "p1v2", "s3", "official", 44500, null, true, 6, "site"],
-  ["o9", "p2v1", "s1", "official", 32999, 33999, true, 4, "site"],
+  ["o9", "p2v1", "s1", "official", 32999, null, true, 4, "site"],
   ["o10", "p2v1", "s4", "official", 33499, null, true, 7, "site"],
   ["o11", "p2v2", "s1", "official", 36999, null, true, 4, "site"],
   ["o12", "p3v1", "s1", "official", 22999, null, true, 4, "site"],
   ["o13", "p3v1", "s2", "official", 23499, null, true, 9, "site"],
-  ["o14", "p4v1", "s3", "official", 152000, null, true, 5, "site"],
+  ["o14", "p4v1", "s3", "official", 109999, 113000, true, 5, "site"],
   ["o15", "p4v1", "s5", "unofficial", 142000, null, null, 20, "seller", "USA"],
   ["o16", "p4v1", "s7", "unofficial", 139500, null, null, 30, "user", "USA"],
-  ["o17", "p4v2", "s3", "official", 172000, null, true, 5, "site"],
+  ["o17", "p4v2", "s3", "official", 129999, null, true, 5, "site"],
   ["o18", "p5v1", "s3", "official", 97500, 99500, true, 8, "site"],
   ["o19", "p5v1", "s1", "official", 97000, null, true, 6, "site"],
   ["o20", "p5v2", "s1", "official", 112000, null, true, 6, "site"],
-  ["o21", "p6v1", "s3", "official", 154000, null, true, 8, "site"],
+  ["o21", "p6v1", "s3", "official", 150999, 164999, true, 8, "site"],
   ["o22", "p6v1", "s5", "unofficial", 146500, null, null, 40, "seller", "USA"],
   ["o23", "p7v1", "s5", "unofficial", 31500, null, null, 22, "seller"],
-  ["o24", "p7v1", "s3", "official", 34900, null, true, 10, "site"],
+  ["o24", "p7v1", "s3", "official", 31500, null, true, 10, "site"],
   ["o25", "p8v1", "s2", "official", 38999, null, true, 3, "site"],
-  ["o26", "p8v1", "s4", "official", 37999, 38999, true, 5, "site"],
+  ["o26", "p8v1", "s4", "official", 23999, null, true, 5, "site"],
 ];
+
+// নমুনা offer গুলোর সরাসরি পণ্য-লিংক (দোকান:পণ্য) — না থাকলে দোকানের হোমপেজ
+const DIRECT_URL: Record<string, string> = {
+  "s1:p1": "https://www.startech.com.bd/samsung-galaxy-a17-5g",
+  "s1:p2": "https://www.startech.com.bd/redmi-note-17-4g",
+  "s1:p4": "https://www.startech.com.bd/iphone-17",
+  "s1:p8": "https://www.startech.com.bd/samsung-galaxy-watch8",
+  "s3:p1": "https://www.applegadgetsbd.com/product/galaxy-a17-5g",
+  "s3:p2": "https://www.applegadgetsbd.com/product/redmi-note-17-4g",
+  "s3:p4": "https://www.applegadgetsbd.com/product/iphone-17",
+  "s3:p6": "https://www.applegadgetsbd.com/product/macbook-air-m5",
+  "s3:p7": "https://www.applegadgetsbd.com/product/apple-watch-se-3",
+  "s4:p1": "https://gadgetandgear.com/product/galaxy-a17-5g",
+  "s3:p8": "https://www.applegadgetsbd.com/product/galaxy-watch8",
+  "s4:p4": "https://gadgetandgear.com/product/iphone-17",
+  "s4:p7": "https://gadgetandgear.com/product/apple-watch-se-3",
+  "s4:p8": "https://gadgetandgear.com/product/galaxy-watch-8",
+  "s4:p1v2": "https://gadgetandgear.com/product/galaxy-a17-5g-8gb-128gb",
+};
 
 export const sampleOffers: Offer[] = offerSeeds.map(([id, variantId, sellerId, condition, price, oldPrice, inStock, hours, source, region]) => {
   const seller = sampleSellers.find((s) => s.id === sellerId);
   return {
     id, variantId, sellerId, condition, price, oldPrice, inStock, source,
     region: region ?? null,
-    url: seller?.website ?? null,
+    url: DIRECT_URL[`${sellerId}:${variantId}`] ?? DIRECT_URL[`${sellerId}:${variantId.split("v")[0]}`] ?? seller?.website ?? null,
     published: true,
     checkedAt: ago(hours),
   };

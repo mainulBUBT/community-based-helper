@@ -7,50 +7,50 @@ import { Toggle } from "@/components/admin/Toggle";
 import { Badge } from "@/components/ui/Badge";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
+import { useAdminAction } from "@/hooks/useAdminAction";
+import { useAdminI18n } from "@/hooks/useI18n";
 import { showToast } from "@/lib/toast";
 import { listJobs, requestJobRun, setJobEnabled } from "@/services/admin/jobs";
 import { loadPrivateSettings, savePrivateSettings, testLlm } from "@/services/admin/settings";
 import type { PrivateSettings } from "@/types/admin";
-import { timeAgo } from "@/utils/format";
 
 function JobsPanel() {
+  const { t, ago } = useAdminI18n();
+  const { busy, run } = useAdminAction();
   const { data, loading, reload } = useAsync(listJobs, []);
   if (loading || !data) return <ListSkeleton rows={3} />;
   return (
-    <Panel title="নিয়মিত কাজ">
+    <Panel title={t.admin.jobs.regularJobs}>
       <ul className="divide-y divide-line-soft">
         {data.map((job) => (
           <li key={job.id} className="flex flex-wrap items-center gap-4 px-5 py-4">
             <Toggle
-              label={`${job.name} চালু`}
+              label={t.admin.jobs.enabledAria(job.name)}
               checked={job.enabled}
+              disabled={busy}
               onChange={async (enabled) => {
-                await setJobEnabled(job, enabled);
-                showToast(enabled ? "কাজটা চালু হলো" : "কাজটা থামানো হলো");
-                reload();
+                if (await run(() => setJobEnabled(job, enabled), enabled ? t.admin.jobs.enabledToast : t.admin.jobs.disabledToast)) reload();
               }}
             />
             <div className="flex min-w-0 flex-1 flex-col gap-1">
               <p className="flex flex-wrap items-center gap-2 font-semibold">
                 {job.name}
-                {job.lastStatus === "failed" && <Badge tone="brand">শেষবার ব্যর্থ</Badge>}
+                {job.lastStatus === "failed" && <Badge tone="brand">{t.admin.jobs.lastFailed}</Badge>}
               </p>
               <p className="text-[13px] text-dim">
-                {job.runner} এ, {job.schedule}। {job.lastRunAt ? `শেষ চলেছে ${timeAgo(job.lastRunAt)}` : "এখনো চলেনি"}
+                {t.admin.jobs.runsOn(job.runner, job.schedule)} {job.lastRunAt ? t.admin.jobs.lastRan(ago(job.lastRunAt)) : t.admin.jobs.neverRan}
                 {job.lastMessage ? `: ${job.lastMessage}` : ""}
               </p>
             </div>
             <button
               type="button"
-              disabled={!job.enabled || Boolean(job.runRequestedAt)}
+              disabled={!job.enabled || Boolean(job.runRequestedAt) || busy}
               onClick={async () => {
-                await requestJobRun(job);
-                showToast("পরের সুযোগেই চালানো হবে");
-                reload();
+                if (await run(() => requestJobRun(job), t.admin.jobs.runQueuedToast)) reload();
               }}
               className={secondaryButton}
             >
-              {job.runRequestedAt ? "চালানোর অপেক্ষায়" : "এখনই চালান"}
+              {job.runRequestedAt ? t.admin.jobs.runQueued : t.admin.jobs.runNow}
             </button>
           </li>
         ))}
@@ -60,6 +60,7 @@ function JobsPanel() {
 }
 
 function SettingsForm({ initial }: { initial: PrivateSettings }) {
+  const { t } = useAdminI18n();
   const [busy, setBusy] = useState(false);
   const [testResult, setTestResult] = useState("");
 
@@ -77,10 +78,10 @@ function SettingsForm({ initial }: { initial: PrivateSettings }) {
     event.preventDefault();
     setBusy(true);
     try {
-      await savePrivateSettings(read(event.currentTarget), "AI ও সতর্কবার্তা");
-      showToast("সেভ হলো");
+      await savePrivateSettings(read(event.currentTarget), t.admin.jobs.auditSection);
+      showToast(t.admin.common.saved);
     } catch {
-      showToast("সেভ করা গেল না");
+      showToast(t.admin.common.saveFailed);
     } finally {
       setBusy(false);
     }
@@ -88,50 +89,51 @@ function SettingsForm({ initial }: { initial: PrivateSettings }) {
 
   async function onTest(form: HTMLFormElement | null) {
     if (!form) return;
-    setTestResult("পরীক্ষা চলছে…");
+    setTestResult(t.admin.jobs.testing);
     try {
       const reply = await testLlm(read(form).llm);
-      setTestResult(`কাজ করছে। উত্তর এসেছে: ${reply}`);
+      setTestResult(t.admin.jobs.testOk(reply));
     } catch (error) {
-      setTestResult(`কাজ করছে না: ${(error as Error).message}`);
+      setTestResult(t.admin.jobs.testFailed((error as Error).message));
     }
   }
 
   return (
     <form onSubmit={onSubmit} className="flex flex-col gap-6">
-      <Panel title="AI (OpenAI-compatible)">
+      <Panel title={t.admin.jobs.aiTitle}>
         <div className="grid gap-4 p-5 md:grid-cols-2">
           <div className="md:col-span-2">
-            <Field label="Base URL" name="baseUrl" type="url" defaultValue={initial.llm.baseUrl} required hint="Gemini, Groq, OpenRouter, Cloudflare Workers AI বা Ollama, যেটার /v1 ঠিকানা দেবেন" />
+            <Field label={t.admin.jobs.baseUrl} name="baseUrl" type="url" defaultValue={initial.llm.baseUrl} required hint={t.admin.jobs.baseUrlHint} />
           </div>
-          <Field label="মডেল" name="model" defaultValue={initial.llm.model} required />
-          <Field label="API key" name="apiKey" type="password" autoComplete="off" defaultValue={initial.llm.apiKey ?? ""} />
+          <Field label={t.admin.jobs.model} name="model" defaultValue={initial.llm.model} required />
+          <Field label={t.admin.jobs.apiKey} name="apiKey" type="password" autoComplete="off" defaultValue={initial.llm.apiKey ?? ""} />
           <div className="flex flex-wrap items-center gap-3 md:col-span-2">
             <button type="button" onClick={(e) => onTest(e.currentTarget.form)} className={secondaryButton}>
-              সংযোগ পরীক্ষা করুন
+              {t.admin.jobs.testConnection}
             </button>
             {testResult && <p className="text-sm">{testResult}</p>}
           </div>
         </div>
       </Panel>
-      <Panel title="Telegram সতর্কবার্তা">
+      <Panel title={t.admin.jobs.telegramTitle}>
         <div className="grid gap-4 p-5 md:grid-cols-2">
-          <Field label="Bot token" name="telegramBotToken" type="password" autoComplete="off" defaultValue={initial.telegramBotToken ?? ""} />
-          <Field label="কোন chat এ যাবে (chat id)" name="alertChatId" defaultValue={initial.alertChatId ?? ""} />
+          <Field label={t.admin.jobs.botToken} name="telegramBotToken" type="password" autoComplete="off" defaultValue={initial.telegramBotToken ?? ""} />
+          <Field label={t.admin.jobs.chatId} name="alertChatId" defaultValue={initial.alertChatId ?? ""} />
         </div>
       </Panel>
       <button type="submit" disabled={busy} className={`${primaryButton} self-start`}>
-        সেভ করুন
+        {t.admin.common.save}
       </button>
     </form>
   );
 }
 
 export default function JobsAdminPage() {
+  const { t } = useAdminI18n();
   const { data } = useAsync(loadPrivateSettings, []);
   return (
     <>
-      <PageTitle title="কাজ ও AI" />
+      <PageTitle title={t.admin.jobs.title} />
       <div className="flex flex-col gap-6">
         <JobsPanel />
         {data ? <SettingsForm initial={data} /> : <ListSkeleton rows={2} />}

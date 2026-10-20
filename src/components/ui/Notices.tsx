@@ -15,10 +15,10 @@ export function OfflineNotice() {
 }
 
 export function NotFoundNotice() {
-  const { t } = useI18n();
+  const { t, prefix } = useI18n();
   return (
     <EmptyState icon={SearchX} title={t.notFound.title}>
-      <Link href="/" className="flex h-11 items-center rounded-md bg-brand px-5 font-bold text-brand-ink">
+      <Link href={`${prefix}/`} className="flex h-11 items-center rounded-md bg-brand px-5 font-bold text-brand-ink">
         {t.notFound.cta}
       </Link>
     </EmptyState>

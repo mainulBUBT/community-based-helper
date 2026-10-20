@@ -35,9 +35,11 @@ export function SellersView({ initial }: { initial: Seller[] }) {
           </Chip>
         ))}
       </div>
-      <div className="grid divide-y divide-line-soft overflow-hidden rounded-md bg-surface shadow-sm ring-1 ring-line-soft md:grid-cols-2 md:divide-y-0">
+      <div className="grid gap-3 md:grid-cols-2">
         {sellers.map((seller) => (
-          <SellerCard key={seller.id} seller={seller} />
+          <div key={seller.id} className="overflow-hidden rounded-md bg-surface shadow-sm ring-1 ring-line-soft">
+            <SellerCard seller={seller} />
+          </div>
         ))}
       </div>
     </div>

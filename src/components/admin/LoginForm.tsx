@@ -2,17 +2,14 @@
 
 import { useState, type FormEvent } from "react";
 import { BrandMark } from "@/components/layout/BrandMark";
+import { useAdminI18n } from "@/hooks/useI18n";
 import { isDemo, sendPasswordReset, signIn, updatePassword } from "@/services/admin/auth";
 import { Field } from "./Field";
 
 type Mode = "login" | "forgot" | "reset";
 
-const MESSAGES: Record<string, string> = {
-  "not-admin": "এই অ্যাকাউন্টের অ্যাডমিন অনুমতি নেই",
-  invalid: "ইমেইল বা পাসওয়ার্ড মেলেনি",
-};
-
 export function LoginForm({ onDone, recovering = false }: { onDone: () => void; recovering?: boolean }) {
+  const { t } = useAdminI18n();
   const [mode, setMode] = useState<Mode>(recovering ? "reset" : "login");
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
@@ -32,7 +29,7 @@ export function LoginForm({ onDone, recovering = false }: { onDone: () => void; 
         onDone();
       } else if (mode === "forgot") {
         await sendPasswordReset(email);
-        setNotice("ইমেইলে পাসওয়ার্ড বদলানোর লিংক পাঠানো হয়েছে।");
+        setNotice(t.admin.login.resetSent);
       } else {
         if (password.length < 8) throw new Error("short");
         await updatePassword(password);
@@ -40,14 +37,19 @@ export function LoginForm({ onDone, recovering = false }: { onDone: () => void; 
       }
     } catch (e) {
       const code = (e as Error).message;
-      setError(code === "short" ? "পাসওয়ার্ড অন্তত ৮ অক্ষরের দিন" : (MESSAGES[code] ?? (mode === "login" ? MESSAGES.invalid : "কাজটা হলো না, আবার চেষ্টা করুন")));
+      const MESSAGES: Record<string, string> = {
+        "not-admin": t.admin.login.notAdmin,
+        invalid: t.admin.login.invalid,
+        short: t.admin.login.shortPassword,
+      };
+      setError(MESSAGES[code] ?? (mode === "login" ? t.admin.login.invalid : t.admin.login.failed));
     } finally {
       setBusy(false);
     }
   }
 
-  const title = { login: "অ্যাডমিন লগইন", forgot: "পাসওয়ার্ড ভুলে গেছেন", reset: "নতুন পাসওয়ার্ড দিন" }[mode];
-  const submit = { login: "ঢুকুন", forgot: "লিংক পাঠান", reset: "পাসওয়ার্ড সেভ করুন" }[mode];
+  const title = { login: t.admin.login.title, forgot: t.admin.login.forgotTitle, reset: t.admin.login.resetTitle }[mode];
+  const submit = { login: t.admin.login.enter, forgot: t.admin.login.sendLink, reset: t.admin.login.savePassword }[mode];
 
   return (
     <main className="flex min-h-dvh items-center justify-center p-4">
@@ -56,10 +58,10 @@ export function LoginForm({ onDone, recovering = false }: { onDone: () => void; 
           <BrandMark />
           <h1 className="text-xl font-bold">{title}</h1>
         </div>
-        {mode !== "reset" && <Field label="ইমেইল" name="email" type="email" autoComplete="username" required />}
+        {mode !== "reset" && <Field label={t.admin.login.email} name="email" type="email" autoComplete="username" required />}
         {mode !== "forgot" && (
           <Field
-            label={mode === "reset" ? "নতুন পাসওয়ার্ড" : "পাসওয়ার্ড"}
+            label={mode === "reset" ? t.admin.login.newPassword : t.admin.login.password}
             name="password"
             type="password"
             autoComplete={mode === "reset" ? "new-password" : "current-password"}
@@ -77,19 +79,19 @@ export function LoginForm({ onDone, recovering = false }: { onDone: () => void; 
           </p>
         )}
         <button type="submit" disabled={busy} className="h-12 rounded-xl bg-brand font-bold text-brand-ink disabled:opacity-60">
-          {busy ? "একটু অপেক্ষা…" : submit}
+          {busy ? t.admin.login.busy : submit}
         </button>
         {mode === "login" && !isDemo && (
           <button type="button" onClick={() => setMode("forgot")} className="self-start text-sm font-semibold text-brand">
-            পাসওয়ার্ড ভুলে গেছেন?
+            {t.admin.login.forgotLink}
           </button>
         )}
         {mode === "forgot" && (
           <button type="button" onClick={() => setMode("login")} className="self-start text-sm font-semibold text-brand">
-            লগইনে ফিরুন
+            {t.admin.login.backToLogin}
           </button>
         )}
-        {isDemo && <p className="text-[13px] text-dim">ডেটাবেস যুক্ত না থাকায় ডেমো মোড চলছে। লগইনের তথ্য .env.example ফাইলে আছে।</p>}
+        {isDemo && <p className="text-[13px] text-dim">{t.admin.login.demoNote}</p>}
       </form>
     </main>
   );

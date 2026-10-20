@@ -22,6 +22,7 @@ export const toProduct = (row: Row): Product => ({
   variants: ((row.variants as Row[] | undefined) ?? [])
     .sort((a, b) => Number(a.position ?? 0) - Number(b.position ?? 0))
     .map(toVariant),
+  images: (row.images as string[] | undefined) ?? [],
 });
 
 export const toSeller = (row: Row): Seller => ({

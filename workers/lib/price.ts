@@ -5,7 +5,15 @@ export interface Quote {
   oldPrice: number | null;
   inStock: boolean | null;
   title: string | null;
+  image?: string | null;
   via: string;
+}
+
+function imageOf(value: unknown): string | null {
+  if (typeof value === "string") return value || null;
+  if (Array.isArray(value)) return imageOf(value[0]);
+  if (value && typeof value === "object") return imageOf((value as Record<string, unknown>).url);
+  return null;
 }
 
 export function toTaka(value: unknown): number | null {
@@ -58,6 +66,7 @@ function fromJsonLd(html: string): Quote | null {
         oldPrice: oldPrice && oldPrice > price ? oldPrice : null,
         inStock: stock(offer.availability),
         title: typeof product.name === "string" ? product.name : null,
+        image: imageOf(product.image),
         via: "json-ld",
       };
     }
@@ -79,5 +88,7 @@ function fromOpenGraph(html: string): Quote | null {
 }
 
 export function structuredQuote(html: string): Quote | null {
-  return fromJsonLd(html) ?? fromItemprop(html) ?? fromOpenGraph(html);
+  const quote = fromJsonLd(html) ?? fromItemprop(html) ?? fromOpenGraph(html);
+  if (quote && !quote.image) quote.image = metaContent(html, "og:image");
+  return quote;
 }

@@ -6,14 +6,14 @@
 
 ## পরিকল্পনা
 
-- Cloudflare Pages এ **নতুন** প্রজেক্ট (নাম `sashroy`)। পুরনো `pothghat` প্রজেক্টে deploy করবেন না।
-- `npm run build` এর `out/` ফোল্ডার upload: `npx wrangler pages deploy out --project-name sashroy`।
+- Cloudflare Pages এ **নতুন** প্রজেক্ট (নাম `dordam`)। পুরনো `pothghat` প্রজেক্টে deploy করবেন না।
+- `npm run build` এর `out/` ফোল্ডার upload: `npx wrangler pages deploy out --project-name dordam`।
 - worker এর `rebuild` job প্রতি রাতে build করে deploy করতে পারে (GitHub secret এ Cloudflare token থাকলে)।
 
 ## ধাপ
 
 1. [ ] ডেটাবেস চালু ([database](11-database.md))।
-2. [ ] `.env.local` এ `NEXT_PUBLIC_SITE_URL=https://sashroy.pages.dev`।
+2. [ ] `.env.local` এ `NEXT_PUBLIC_SITE_URL=https://dordam.app`।
 3. [ ] মালিকের অনুমতি নিয়ে প্রথম deploy।
 4. [ ] Supabase Auth এ Site URL বসানো।
 5. [ ] ডোমেইন কিনলে: Cloudflare Pages এ custom domain, `NEXT_PUBLIC_SITE_URL` বদল, আবার build আর deploy, Google Search Console এ sitemap।

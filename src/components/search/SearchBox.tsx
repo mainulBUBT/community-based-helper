@@ -21,7 +21,7 @@ interface SearchBoxProps {
 
 export function SearchBox({ defaultValue = "", variant = "bar", onSearch }: SearchBoxProps) {
   const router = useRouter();
-  const { t } = useI18n();
+  const { t, prefix } = useI18n();
   const listId = useId();
   const [text, setText] = useState(defaultValue);
   const [open, setOpen] = useState(false);
@@ -48,7 +48,7 @@ export function SearchBox({ defaultValue = "", variant = "bar", onSearch }: Sear
     rememberSearch(value);
     setOpen(false);
     if (onSearch) onSearch(value.trim());
-    else router.push(`/search/${value.trim() ? `?q=${encodeURIComponent(value.trim())}` : ""}`);
+    else router.push(`${prefix}/search/${value.trim() ? `?q=${encodeURIComponent(value.trim())}` : ""}`);
   }
 
   function choose(option: Option) {
@@ -59,7 +59,7 @@ export function SearchBox({ defaultValue = "", variant = "bar", onSearch }: Sear
     }
     rememberSearch(query);
     setOpen(false);
-    router.push(`/product/${option.summary.product.slug}/`);
+    router.push(`${prefix}/product/${option.summary.product.slug}/`);
   }
 
   function onKeyDown(event: KeyboardEvent<HTMLInputElement>) {

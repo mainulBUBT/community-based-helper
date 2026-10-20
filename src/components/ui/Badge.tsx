@@ -8,6 +8,10 @@ const TONES = {
   solid: "bg-gold text-gold-ink",
 };
 
-export function Badge({ tone = "neutral", children }: { tone?: keyof typeof TONES; children: ReactNode }) {
-  return <span className={`inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-xs font-semibold ${TONES[tone]}`}>{children}</span>;
+export function Badge({ tone = "neutral", title, children }: { tone?: keyof typeof TONES; title?: string; children: ReactNode }) {
+  return (
+    <span title={title} className={`inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-xs font-semibold ${TONES[tone]}`}>
+      {children}
+    </span>
+  );
 }

@@ -8,12 +8,12 @@ import { Toggle } from "@/components/admin/Toggle";
 import { Badge } from "@/components/ui/Badge";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
-import { showToast } from "@/lib/toast";
+import { useAdminAction } from "@/hooks/useAdminAction";
+import { useAdminI18n } from "@/hooks/useI18n";
 import { deletePromo, listAllPromos, savePromo } from "@/services/admin/offers";
 import { listAllSellers } from "@/services/admin/sellers";
 import type { Promo, Seller } from "@/types/catalog";
 
-const KINDS = ["কার্ড", "bKash", "Nagad", "কিস্তি", "কুপন", "উপহার", "অন্যান্য"];
 const iconButton = "flex size-10 items-center justify-center rounded-xl border border-line text-dim hover:border-brand hover:text-brand";
 
 async function loadData() {
@@ -22,51 +22,56 @@ async function loadData() {
 }
 
 function PromoForm({ promo, sellers, onClose }: { promo: Promo; sellers: Seller[]; onClose: (saved: boolean) => void }) {
+  const { t } = useAdminI18n();
+  const { busy, run } = useAdminAction();
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     const value = (name: string) => String(form.get(name) ?? "").trim() || null;
-    await savePromo({
-      ...promo,
-      sellerId: String(form.get("seller")),
-      kind: String(form.get("kind")),
-      text: value("text") ?? "",
-      scope: value("scope"),
-      endsOn: value("endsOn"),
-      active: form.get("active") === "on",
-    });
-    showToast("অফার সেভ হলো");
-    onClose(true);
+    const saved = await run(
+      () =>
+        savePromo({
+          ...promo,
+          sellerId: String(form.get("seller")),
+          kind: String(form.get("kind")),
+          text: value("text") ?? "",
+          scope: value("scope"),
+          endsOn: value("endsOn"),
+          active: form.get("active") === "on",
+        }),
+      t.admin.offers.saved,
+    );
+    if (saved) onClose(true);
   }
   return (
     <form onSubmit={onSubmit} className="grid gap-4 p-5 md:grid-cols-2">
       <div className="md:col-span-2">
-        <Field label="অফারের লেখা" name="text" defaultValue={promo.text} required placeholder="যেমন City Bank কার্ডে ১০% টাকা ফেরত" />
+        <Field label={t.admin.offers.text} name="text" defaultValue={promo.text} required placeholder={t.admin.offers.textPlaceholder} />
       </div>
-      <Select label="বিক্রেতা" name="seller" defaultValue={promo.sellerId || sellers[0]?.id}>
+      <Select label={t.admin.offers.seller} name="seller" defaultValue={promo.sellerId || sellers[0]?.id}>
         {sellers.map((s) => (
           <option key={s.id} value={s.id}>
             {s.name}
           </option>
         ))}
       </Select>
-      <Select label="ধরন" name="kind" defaultValue={promo.kind || KINDS[0]}>
-        {KINDS.map((k) => (
+      <Select label={t.admin.offers.kind} name="kind" defaultValue={promo.kind || t.admin.offers.kinds[0]}>
+        {t.admin.offers.kinds.map((k) => (
           <option key={k}>{k}</option>
         ))}
       </Select>
-      <Field label="কোথায় খাটে" name="scope" defaultValue={promo.scope ?? ""} placeholder="যেমন সব মোবাইলে" />
-      <Field label="শেষ তারিখ" name="endsOn" type="date" defaultValue={promo.endsOn ?? ""} />
+      <Field label={t.admin.offers.scope} name="scope" defaultValue={promo.scope ?? ""} placeholder={t.admin.offers.scopePlaceholder} />
+      <Field label={t.admin.offers.endsOn} name="endsOn" type="date" defaultValue={promo.endsOn ?? ""} />
       <label className="flex items-center gap-3 text-sm font-semibold">
         <input type="checkbox" name="active" defaultChecked={promo.active} className="size-5 accent-[#1f2f55]" />
-        এখনই সাইটে দেখান
+        {t.admin.offers.showNow}
       </label>
       <div className="flex gap-2 md:col-span-2">
-        <button type="submit" className={primaryButton}>
-          সেভ করুন
+        <button type="submit" disabled={busy} className={primaryButton}>
+          {t.admin.common.save}
         </button>
         <button type="button" onClick={() => onClose(false)} className={secondaryButton}>
-          বাতিল
+          {t.admin.common.cancel}
         </button>
       </div>
     </form>
@@ -76,6 +81,8 @@ function PromoForm({ promo, sellers, onClose }: { promo: Promo; sellers: Seller[
 const EMPTY: Promo = { id: "", sellerId: "", kind: "", text: "", scope: null, endsOn: null, active: true };
 
 export default function OffersAdminPage() {
+  const { t } = useAdminI18n();
+  const { busy, run } = useAdminAction();
   const { data, loading, reload } = useAsync(loadData, []);
   const [editing, setEditing] = useState<Promo | null>(null);
   if (loading || !data) return <ListSkeleton />;
@@ -84,17 +91,17 @@ export default function OffersAdminPage() {
   return (
     <>
       <PageTitle
-        title="অফার"
-        subtitle="চালু অফারগুলো পণ্যের পেজে দামের নিচে আর বিক্রেতার পেজে দেখায়।"
+        title={t.admin.offers.title}
+        subtitle={t.admin.offers.subtitle}
         action={
           <button type="button" onClick={() => setEditing(EMPTY)} className={primaryButton}>
-            নতুন অফার
+            {t.admin.offers.new}
           </button>
         }
       />
       {editing && (
         <div className="mb-6">
-          <Panel title={editing.id ? "অফার সম্পাদনা" : "নতুন অফার"}>
+          <Panel title={editing.id ? t.admin.offers.editTitle : t.admin.offers.newTitle}>
             <PromoForm
               key={editing.id || "new"}
               promo={editing}
@@ -114,33 +121,30 @@ export default function OffersAdminPage() {
               <div className="flex min-w-0 flex-1 flex-col gap-1.5">
                 <p className="font-semibold">{promo.text}</p>
                 <p className="text-[13px] text-dim">
-                  {[names.get(promo.sellerId), promo.scope, promo.endsOn ? `${promo.endsOn} পর্যন্ত` : "শেষ তারিখ লেখা নেই"].filter(Boolean).join(", ")}
+                  {[names.get(promo.sellerId), promo.scope, promo.endsOn ? t.admin.offers.until(promo.endsOn) : t.admin.offers.noEndDate].filter(Boolean).join(", ")}
                 </p>
                 <span>
                   <Badge>{promo.kind}</Badge>
                 </span>
               </div>
               <Toggle
-                label={`${promo.text} চালু`}
+                label={`${promo.text} ${t.admin.offers.title}`}
                 checked={promo.active}
+                disabled={busy}
                 onChange={async (active) => {
-                  await savePromo({ ...promo, active });
-                  showToast(active ? "অফার চালু হলো" : "অফার বন্ধ হলো");
-                  reload();
+                  if (await run(() => savePromo({ ...promo, active }), active ? t.admin.offers.activeOn : t.admin.offers.activeOff)) reload();
                 }}
               />
-              <button type="button" aria-label="সম্পাদনা" onClick={() => setEditing(promo)} className={iconButton}>
+              <button type="button" aria-label={t.admin.common.edit} onClick={() => setEditing(promo)} className={iconButton}>
                 <Pencil size={16} aria-hidden="true" />
               </button>
               <button
                 type="button"
-                aria-label="মুছুন"
+                aria-label={t.admin.common.delete}
                 className={iconButton}
                 onClick={async () => {
-                  if (!confirm("অফারটা মুছে ফেলবেন?")) return;
-                  await deletePromo(promo);
-                  showToast("মুছে ফেলা হলো");
-                  reload();
+                  if (!confirm(t.admin.offers.confirmDelete)) return;
+                  if (await run(() => deletePromo(promo), t.admin.common.deleted)) reload();
                 }}
               >
                 <Trash2 size={16} aria-hidden="true" />

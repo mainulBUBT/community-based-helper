@@ -1,8 +1,11 @@
 "use client";
 
 import { Moon, Sun } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useSyncExternalStore } from "react";
 import { useI18n } from "@/hooks/useI18n";
+import { toBnPath } from "@/lib/en-meta";
 import { setTheme, themeStore, type ThemeChoice } from "@/lib/preferences";
 
 
@@ -21,7 +24,15 @@ export function ThemeButton() {
 }
 
 export function LanguageButton() {
-  const { lang, t, setLang } = useI18n();
+  const { lang, t, setLang, prefix } = useI18n();
+  const pathname = usePathname();
+  if (prefix) {
+    return (
+      <Link href={toBnPath(pathname)} aria-label={t.common.languageLabel} lang="bn" className={`${button} w-auto px-3 text-sm font-bold`}>
+        {t.common.language}
+      </Link>
+    );
+  }
   return (
     <button
       type="button"

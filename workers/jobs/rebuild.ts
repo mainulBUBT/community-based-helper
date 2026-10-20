@@ -16,6 +16,6 @@ export async function rebuild(): Promise<string> {
   if (error) throw error;
   await sh("npm", ["run", "build"]);
   if (!process.env.CLOUDFLARE_API_TOKEN) return `${count(products ?? 0, "পণ্যের পেজ")} বানানো হয়েছে, deploy করা হয়নি (Cloudflare token নেই)`;
-  await sh("npx", ["wrangler", "pages", "deploy", "out", `--project-name=${process.env.CLOUDFLARE_PAGES_PROJECT || "sashroy"}`, "--branch=main"]);
+  await sh("npx", ["wrangler", "pages", "deploy", "out", `--project-name=${process.env.CLOUDFLARE_PAGES_PROJECT || "dordam"}`, "--branch=main"]);
   return `${count(products ?? 0, "পণ্যের পেজ")} বানিয়ে deploy হয়েছে`;
 }

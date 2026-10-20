@@ -11,7 +11,7 @@ import { useSaved } from "@/hooks/useSaved";
 import { listSummaries } from "@/services/catalog";
 
 export function SavedView() {
-  const { t } = useI18n();
+  const { t, prefix } = useI18n();
   const { slugs } = useSaved();
   const { data, loading } = useAsync(listSummaries, []);
   const saved = slugs.map((slug) => data?.find((s) => s.product.slug === slug)).filter((s) => s !== undefined);
@@ -24,7 +24,7 @@ export function SavedView() {
       ) : saved.length === 0 ? (
         <EmptyState icon={Bookmark} title={t.saved.empty}>
           <p className="max-w-xs text-sm text-dim">{t.saved.hint}</p>
-          <Link href="/search/" className="mt-1 flex h-11 items-center rounded-md bg-brand px-5 font-bold text-brand-ink">
+          <Link href={`${prefix}/search/`} className="mt-1 flex h-11 items-center rounded-md bg-brand px-5 font-bold text-brand-ink">
             {t.saved.cta}
           </Link>
         </EmptyState>

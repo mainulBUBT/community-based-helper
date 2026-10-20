@@ -36,6 +36,7 @@ export interface AuditEntry {
 
 export interface SiteSettings {
   name: string;
+  nameEn: string;
   tagline: string;
   phone: string | null;
   email: string | null;

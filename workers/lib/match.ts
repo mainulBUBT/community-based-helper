@@ -16,11 +16,13 @@ export type Match =
 
 const MODIFIERS = new Set(["pro", "max", "plus", "ultra", "mini", "lite", "fe", "fold", "flip", "edge", "air", "neo", "se", "prime", "power", "turbo", "4g", "5g"]);
 const ACCESSORIES = /\b(for|case|cover|protector|glass|film|charger|adapter|cable|strap|skin|holder|stand|pouch|sleeve|lens|tempered|magsafe|airtag|earbuds?|headphones?|keyboard|mouse|pencil|dock|hub|refurbished|used)\b/;
-const SIZE = /^\d+(gb|tb|mm)$/;
+export const SIZE = /^\d+(gb|tb|mm)$/;
+const COLORS = new Set(["black", "white", "blue", "green", "red", "purple", "pink", "gold", "silver", "graphite", "sage", "tan", "orange", "yellow", "gray", "grey", "midnight", "starlight", "titanium", "cream", "lavender", "mint", "cyan"]);
 
 export function tokens(text: string): string[] {
   const prepared = text
     .toLowerCase()
+    .replace(/(\d+)\s*(?:gb|tb)?\s*\+\s*(\d+)\s*(?:gb|tb)?/g, "$1gb $2gb")
     .replace(/\+/g, " plus ")
     .replace(/(\d+)\s*(?:gb)?\s*\/\s*(\d+)\s*(gb|tb)/g, "$1gb $2$3")
     .replace(/(\d+)\s*(gb|tb|mm)\b/g, " $1$2 ");
@@ -42,12 +44,19 @@ function sizes(list: Iterable<string>) {
   return [...list].filter((t) => SIZE.test(t));
 }
 
+function colors(list: Iterable<string>) {
+  return [...list].filter((t) => COLORS.has(t));
+}
+
 function variantFits(listing: Set<string>, variant: CatalogVariant): "yes" | "no" | "maybe" {
   const own = tokens(variant.label);
   const listingSizes = sizes(listing);
   const ownSizes = sizes(own);
   if (listingSizes.some((s) => s.endsWith("mm") && ownSizes.some((o) => o.endsWith("mm")) && !ownSizes.includes(s))) return "no";
   if (ownSizes.some((s) => !listing.has(s))) return listingSizes.length ? "no" : "maybe";
+  const listingColors = colors(listing);
+  const ownColors = colors(own);
+  if (ownColors.some((c) => !listing.has(c))) return listingColors.length ? "no" : "maybe";
   return own.every((t) => listing.has(t)) ? "yes" : "maybe";
 }
 

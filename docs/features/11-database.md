@@ -8,7 +8,7 @@
 
 **সমাধান (মালিক করবেন):**
 - Terminal এ `npx supabase login` চালিয়ে আবার লগইন, তারপর এজেন্ট প্রজেক্ট খুলবে। অথবা
-- supabase.com এ নিজে প্রজেক্ট খুলে (নাম `sashroy`, অঞ্চল Singapore) project ref দেওয়া।
+- supabase.com এ নিজে প্রজেক্ট খুলে (নাম `dordam`, অঞ্চল Singapore) project ref দেওয়া।
 
 DB পাসওয়ার্ড বানিয়ে `.env.local` এ `SUPABASE_DB_PASSWORD` হিসেবে রাখা আছে, প্রজেক্ট খোলার সময় এটাই ব্যবহার করা যাবে। `.env.local` git এ যায় না।
 
@@ -53,5 +53,6 @@ DB পাসওয়ার্ড বানিয়ে `.env.local` এ `SUPABA
 ## যা বাকি
 
 - [ ] ⛔ প্রজেক্ট খোলা আর ওপরের ধাপ।
+- [x] `products` এ `images text[]` কলামের নতুন migration (`npm run db:new`) — পণ্যের পেজের গ্যালারির জন্য। ফাইল তৈরি (`20261020181436_product-images.sql`), worker ও ছবি বের করে এতে জমায় (সর্বোচ্চ ৪টা); প্রজেক্ট খুলে push করতে হবে।
 - [ ] ফ্রি tier এ ৭ দিন কাজ না হলে প্রজেক্ট থেমে যায়। worker নিয়মিত চললে সমস্যা নেই।
 - [ ] backup: ফ্রি tier এ নিজে থেকে হয় না, মাঝে মাঝে `supabase db dump`।

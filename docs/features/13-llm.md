@@ -9,6 +9,7 @@
 - সেটিংস `private_settings.value.llm` এ, শুধু অ্যাডমিন পড়তে পারে।
 - worker এ `workers/lib/llm.ts`: listing কোন পণ্যের সাথে মেলে (`lib/match.ts`, `lib/judge.ts`), পেজের লেখা থেকে দাম বের করা (`lib/extract.ts`)।
 - ডিফল্ট: Gemini ফ্রি tier, `gemini-2.5-flash`।
+- ডেটাবেস ছাড়া পরীক্ষা: `.env.local` এ `LLM_BASE_URL`, `LLM_MODEL`, `LLM_API_KEY` দিলে worker সেগুলো পড়ে (DB থাকলে অ্যাডমিনের সেটিংস জেতে)। `npm run worker:dry` এর শেষ অংশে বিচারপতি পরীক্ষা চলে।
 
 ## যা বাকি
 

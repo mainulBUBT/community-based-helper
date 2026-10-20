@@ -4,10 +4,11 @@ import { ChevronRight, ExternalLink, Megaphone, Phone, Share2, Store } from "luc
 import Link from "next/link";
 import { useState } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
-import { OfferCard } from "@/components/product/OfferCard";
+import { OffersTable } from "@/components/product/OffersTable";
 import { PriceChart } from "@/components/product/PriceChart";
-import { ProductIcon } from "@/components/product/ProductIcon";
+import { ProductGallery } from "@/components/product/ProductGallery";
 import { SaveButton } from "@/components/product/SaveButton";
+import { SellerLogo } from "@/components/seller/SellerLogo";
 import { VerifiedBadge } from "@/components/seller/VerifiedBadge";
 import { Chip } from "@/components/ui/Chip";
 import { EmptyState } from "@/components/ui/EmptyState";
@@ -42,7 +43,7 @@ function BuyButton({ offer, className = "" }: { offer: OfferView; className?: st
 }
 
 export function ProductView({ initial }: { initial: ProductDetail }) {
-  const { t, num, ago } = useI18n();
+  const { t, num, ago, prefix } = useI18n();
   const { data } = useAsync(() => getProductDetail(initial.product.slug), [initial.product.slug], initial);
   const { product, offers, history } = data ?? initial;
   const [variantId, setVariantId] = useState(product.variants[0]?.id);
@@ -50,42 +51,42 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
 
   const variantOffers = offers.filter((o) => o.variantId === variant?.id);
   const conditions = CONDITIONS.filter((c) => variantOffers.some((o) => o.condition === c));
-  const [chosen, setChosen] = useState<Condition>("official");
-  const condition = conditions.includes(chosen) ? chosen : (conditions[0] ?? "official");
-  const shown = variantOffers.filter((o) => o.condition === condition);
+  const [chosen, setChosen] = useState<Condition | "all">("all");
+  const condition: Condition | "all" = chosen === "all" || conditions.includes(chosen) ? chosen : "all";
+  const shown = (condition === "all" ? variantOffers : variantOffers.filter((o) => o.condition === condition)).slice().sort((a, b) => a.price - b.price);
   const best = shown[0];
   const fullName = `${product.brand} ${product.name}`;
 
   return (
-    <div className="flex flex-col gap-5 pb-20 md:pb-0">
+    <div className="flex flex-col gap-5 pb-36 md:pb-0">
       <nav aria-label="breadcrumb" className="flex flex-wrap items-center gap-1 text-sm text-dim">
-        <Link href="/" className="hover:text-brand">
+        <Link href={`${prefix}/`} className="hover:text-brand">
           {t.nav.home}
         </Link>
         <ChevronRight size={14} aria-hidden="true" />
-        <Link href={`/search/?category=${product.category}`} className="hover:text-brand">
+        <Link href={`${prefix}/search/?category=${product.category}`} className="hover:text-brand">
           {t.category[product.category].label}
         </Link>
         <ChevronRight size={14} aria-hidden="true" />
-        <Link href={`/search/?brand=${encodeURIComponent(product.brand)}`} className="hover:text-brand">
+        <Link href={`${prefix}/search/?brand=${encodeURIComponent(product.brand)}`} className="hover:text-brand">
           {product.brand}
         </Link>
       </nav>
 
-      <div className="grid gap-5 rounded-lg bg-surface p-4 shadow-sm ring-1 ring-line-soft md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:p-6">
-        <div className="relative flex aspect-[16/9] items-center justify-center rounded-md bg-surface-2 md:aspect-square">
-          <ProductIcon product={product} size="lg" plain />
-          <div className="absolute top-3 right-3 flex gap-2">
+      <div className="grid gap-5 rounded-lg bg-surface p-4 shadow-sm ring-1 ring-line md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:p-6">
+        <div className="relative flex flex-col gap-3">
+          <div className="absolute top-3 right-3 z-10 flex gap-2">
             <button type="button" aria-label={t.common.share} onClick={() => sharePage(fullName, t.common)} className="flex size-11 items-center justify-center rounded-lg border border-line bg-surface text-dim hover:text-brand">
               <Share2 size={19} aria-hidden="true" />
             </button>
             <SaveButton slug={product.slug} />
           </div>
+          <ProductGallery product={product} />
         </div>
 
         <div className="flex flex-col gap-5">
           <div className="flex flex-col gap-1">
-            <Link href={`/search/?brand=${encodeURIComponent(product.brand)}`} className="text-sm font-semibold text-brand">
+            <Link href={`${prefix}/search/?brand=${encodeURIComponent(product.brand)}`} className="text-sm font-semibold text-brand">
               {product.brand}
             </Link>
             <h1 className="text-2xl leading-tight font-bold md:text-3xl">{product.name}</h1>
@@ -100,10 +101,11 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
                 {best.oldPrice && best.oldPrice > best.price && <span className="text-dim line-through">{formatTaka(best.oldPrice)}</span>}
               </div>
               <span className="flex flex-wrap items-center gap-2 text-sm">
+                <SellerLogo seller={best.seller} size={20} />
                 {t.product.bestAt(best.seller.name, ago(best.checkedAt))}
                 <VerifiedBadge verified={best.seller.verified} />
               </span>
-              {variant?.officialPrice && condition === "official" && <span className="text-sm text-dim">{t.product.officialPrice(product.brand, formatTaka(variant.officialPrice))}</span>}
+              {variant?.officialPrice && shown.length > 0 && shown.every((o) => o.condition === "official") && <span className="text-sm text-dim">{t.product.officialPrice(product.brand, formatTaka(variant.officialPrice))}</span>}
             </div>
           ) : (
             <EmptyState icon={Store} title={t.product.noOffers} />
@@ -126,16 +128,19 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
             <div className="flex flex-col gap-2">
               <span className="text-sm font-semibold">{t.product.condition}</span>
               <div className="flex flex-wrap gap-2">
+                <Chip selected={condition === "all"} onClick={() => setChosen("all")}>
+                  {t.search.all} ({num(variantOffers.length)})
+                </Chip>
                 {conditions.map((c) => (
                   <Chip key={c} selected={c === condition} onClick={() => setChosen(c)}>
-                    {t.condition[c]}
+                    {t.condition[c]} ({num(variantOffers.filter((o) => o.condition === c).length)})
                   </Chip>
                 ))}
               </div>
             </div>
           )}
 
-          {condition === "unofficial" && <p className="rounded-lg bg-gold-soft px-3 py-2 text-sm font-semibold text-gold-text">{t.product.unofficialWarning}</p>}
+          {shown.some((o) => o.condition === "unofficial") && <p className="rounded-lg bg-gold-soft px-3 py-2 text-sm font-semibold text-gold-text">{t.product.unofficialWarning}</p>}
 
           {best && (
             <div className="hidden flex-wrap gap-3 md:flex">
@@ -151,15 +156,42 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
       {shown.length > 0 && (
         <section id="stores" className="flex scroll-mt-32 flex-col gap-3">
           <h2 className="text-lg font-bold md:text-xl">{t.product.byStore}</h2>
-          <div className="grid gap-3 md:grid-cols-2">
-            {shown.map((offer, i) => (
-              <OfferCard key={offer.id} offer={offer} best={i === 0} />
-            ))}
-          </div>
+          <OffersTable offers={shown} />
         </section>
       )}
 
-      <section className="flex flex-col gap-3 rounded-lg bg-surface p-4 shadow-sm ring-1 ring-line-soft md:p-6">
+      <section className="flex flex-col gap-4 rounded-lg bg-surface p-4 shadow-sm ring-1 ring-line md:p-6">
+        <h2 className="text-base font-bold">{t.product.specs}</h2>
+        <dl className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
+          <div className="flex flex-col gap-0.5">
+            <dt className="text-[13px] text-dim">{t.product.specBrand}</dt>
+            <dd className="font-semibold">{product.brand}</dd>
+          </div>
+          <div className="flex flex-col gap-0.5">
+            <dt className="text-[13px] text-dim">{t.product.specCategory}</dt>
+            <dd className="font-semibold">{t.category[product.category].label}</dd>
+          </div>
+          <div className="flex flex-col gap-0.5">
+            <dt className="text-[13px] text-dim">{t.product.specRelease}</dt>
+            <dd className="font-semibold">{product.releaseYear ? t.product.model(num(product.releaseYear)) : t.product.none}</dd>
+          </div>
+          <div className="flex flex-col gap-0.5">
+            <dt className="text-[13px] text-dim">{t.product.variant}</dt>
+            <dd className="font-semibold">{t.product.variants(num(product.variants.length))}</dd>
+          </div>
+        </dl>
+        <div className="flex flex-col gap-2.5 border-t border-line-soft pt-4">
+          <span className="text-[13px] font-semibold text-dim">{t.product.specOfficial}</span>
+          {product.variants.map((v) => (
+            <div key={v.id} className="flex items-baseline justify-between gap-3 text-[15px]">
+              <span>{v.label}</span>
+              <span className="font-bold">{v.officialPrice ? formatTaka(v.officialPrice) : t.product.none}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="flex flex-col gap-3 rounded-lg bg-surface p-4 shadow-sm ring-1 ring-line md:p-6">
         <h2 className="text-base font-bold">{t.product.history}</h2>
         <PriceChart history={history.filter((p) => shown.some((o) => o.id === p.offerId))} />
       </section>

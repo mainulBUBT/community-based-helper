@@ -21,10 +21,16 @@
 - ব্যর্থ হলে Telegram সতর্কবার্তা (token থাকলে)।
 - লোকাল পরীক্ষা: `npm run worker:dry` (ডেটাবেস লাগে না)।
 
-## পরীক্ষার ফল (২০ অক্টোবর ২০২৬)
+## পরীক্ষার ফল (২১ অক্টোবর ২০২৬)
 
-- Star Tech, Apple Gadgets, Gadget & Gear: dry run এ দাম এসেছে।
-- **Pickaboo: 403 দিয়ে আটকায়।** নিয়ম অনুযায়ী বাদ থাকবে, যতক্ষণ না তারা অনুমতি দেয়।
+- Star Tech, Apple Gadgets, Gadget & Gear: dry run এ দাম **আর ছবি** (JSON-LD `image`, fallback `og:image`) এসেছে।
+- **Pickaboo: robots.txt 403** — নিয়ম অনুযায়ী বাদ।
+- লোকাল ম্যাচার `8+128` ধরনের লেখা এখন বোঝে (আগে `+` কে "plus" বানিয়ে মডেল-নামের সাথে ঘাঁচত)। কাছাকাছি মডেল (Pro, Classic, 4G/5G লেখা নেই) সঠিকভাবে আটকায়।
+- Apple Gadgets এর sitemap (১১,১১৩ URL) থেকে নমুনা পণ্যের আসল ছবি এনে `sample.ts` এ বসানো হয়েছে — সাইটে গ্যালারি আর কার্ডে দেখা যায়। আসল deploy এর আগে ছবি নিজেদের কাছে ক্যাশ করা উচিত।
+- নমুনা offer গুলোতে এখন দোকানের সরাসরি পণ্য-লিংক আর **আসল দাম** আছে (Star Tech, Apple Gadgets, Gadget & Gear; Pickaboo robots-ব্লকড বলে হোমপেজ আর বানানো দাম)। ভার্সনের আসল দাম না পাওয়া গেলে অফিসিয়াল দামের পার্থক্য যোগ করে ধরা হয়েছে।
+- ম্যাচার এখন রং-ও বোঝে: ভার্সনে রং লেখা থাকলে লিস্টিংয়ের রঙের সাথে মিলতে হয় (Black লিস্টিং Blue ভার্সন বাদ দেয়)।
+- দোকানের অ্যাডাপ্টার সব আলাদা ফাইল ছিল — এখন একটাই `workers/stores/index.ts` রেজিস্ট্রি: সাধারণ দোকান শুধু ডেটা (sitemap ঠিকানা + URL প্রিফিক্স), ব্যতিক্রম (Gadget & Gear এর JS-দাম, Star Tech এর ক্যাটাগরি-হাঁটা, Pickaboo এর সার্চ) এক জায়গায় আলাদা করে লেখা।
+- LLM: `.env.local` এ `LLM_BASE_URL`/`LLM_MODEL`/`LLM_API_KEY` দিলে ডেটাবেস ছাড়াই `npm run worker:dry` এ বিচারপতি পরীক্ষা চলে।
 
 ## চালু করতে যা লাগবে
 
@@ -45,5 +51,5 @@ GitHub → Settings → Secrets and variables → Actions:
 - [ ] GitHub এ repo push আর secret বসানো (মালিকের অনুমতিতে)।
 - [ ] প্রথমবার `discover` হাতে চালিয়ে পণ্য ভরা, যাচাই বাকি পেজে মেলানো ঠিক করা।
 - [ ] Private repo হলে GitHub Actions এর মাসিক ২,০০০ মিনিটের হিসাব রাখা।
-- [ ] worker এর user-agent এ `https://sashroy.pages.dev/about` লিংক আছে (`workers/lib/agent.ts`), কিন্তু সাইটে `/about/` পেজ নেই। bot কে, কীভাবে যোগাযোগ করবেন, সেই পেজ বানাতে হবে।
+- [x] worker এর user-agent এ `https://dordam.app/about` লিংক আছে (`workers/lib/agent.ts`) — `/about/` পেজ এখন আছে (বাংলা, সাথে `/en/about/`), সেখানে bot এর পরিচয় আর যোগাযোগের তথ্য দেখানো হয়।
 - [ ] Pickaboo আর পরে Ryans/TechLand এর কাছে allowlist বা product feed চাওয়া।

@@ -4,6 +4,22 @@ import type { Quote } from "../lib/price";
 import { enqueue, pendingAnomaly } from "./review";
 
 const JUMP = 0.6;
+const MAX_IMAGES = 4;
+
+interface VariantWithImages {
+  product_id: string;
+  products: { images: string[] | null } | null;
+}
+
+async function saveProductImage(variantId: string, image: string) {
+  const row = await must(
+    db().from("variants").select("product_id, products(images)").eq("id", variantId).maybeSingle<VariantWithImages>(),
+  );
+  const images = row?.products?.images ?? [];
+  if (!row || images.includes(image) || images.length >= MAX_IMAGES) return;
+  if (images.includes(image) || images.length >= MAX_IMAGES) return;
+  await must(db().from("products").update({ images: [...images, image] }).eq("id", row.product_id));
+}
 
 export interface OfferTarget {
   variantId: string;
@@ -76,6 +92,7 @@ export async function saveQuote(target: OfferTarget, quote: Quote): Promise<Save
     return "anomaly";
   }
   await upsertOffer(target, quote);
+  if (quote.image) await saveProductImage(target.variantId, quote.image);
   if (!prior) return "new";
   return prior.price === quote.price ? "same" : "changed";
 }

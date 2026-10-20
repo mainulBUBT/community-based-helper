@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SELLER_KIND_LABEL } from "@/config/site";
+import { toEnPath } from "@/lib/en-meta";
 import { getSellerDetail, loadCatalog } from "@/services/catalog";
 import { SellerView } from "./SellerView";
 
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${seller.name}${where}`,
     description: `${seller.name} (${SELLER_KIND_LABEL[seller.kind]}${where}) এ কোন পণ্য কত দামে পাওয়া যায়, দেখুন।`,
-    alternates: { canonical: `/seller/${seller.id}/` },
+    alternates: { canonical: `/seller/${seller.id}/`, languages: { bn: `/seller/${seller.id}/`, en: toEnPath(`/seller/${seller.id}/`) } },
   };
 }
 

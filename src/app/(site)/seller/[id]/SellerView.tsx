@@ -15,19 +15,21 @@ import { formatTaka } from "@/utils/format";
 type Detail = NonNullable<Awaited<ReturnType<typeof getSellerDetail>>>;
 
 export function SellerView({ initial }: { initial: Detail }) {
-  const { t, ago } = useI18n();
+  const { t, ago, prefix } = useI18n();
   const { data } = useAsync(() => getSellerDetail(initial.seller.id), [initial.seller.id], initial);
   const { seller, listings, promos } = data ?? initial;
 
   return (
-    <div className="mx-auto flex max-w-3xl flex-col gap-5">
+    <div className="flex flex-col gap-5">
       <PageHeader />
 
       <section className="flex flex-col gap-4 rounded-lg border border-line-soft bg-surface p-5">
         <div className="flex flex-col gap-2">
-          <h1 className="text-2xl font-bold">{seller.name}</h1>
-          <div className="flex flex-wrap gap-1.5">
+          <h1 className="flex flex-wrap items-center gap-2 text-2xl font-bold">
+            {seller.name}
             <VerifiedBadge verified={seller.verified} />
+          </h1>
+          <div className="flex flex-wrap gap-1.5">
             <Badge>{t.sellerKind[seller.kind]}</Badge>
             {seller.area && <Badge>{seller.area}</Badge>}
           </div>
@@ -57,7 +59,7 @@ export function SellerView({ initial }: { initial: Detail }) {
         <h2 className="text-lg font-bold">{t.seller.listings}</h2>
         <div className="divide-y divide-line-soft overflow-hidden rounded-lg border border-line-soft bg-surface">
           {listings.map(({ offer, product, variant }) => (
-            <Link key={offer.id} href={`/product/${product.slug}/`} className="flex items-center gap-3 px-4 py-3 hover:bg-surface-2/60">
+            <Link key={offer.id} href={`${prefix}/product/${product.slug}/`} className="flex items-center gap-3 px-4 py-3 hover:bg-surface-2/60">
               <ProductIcon product={product} size="sm" />
               <span className="flex min-w-0 flex-1 flex-col">
                 <span className="truncate font-semibold">

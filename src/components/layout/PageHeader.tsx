@@ -7,13 +7,13 @@ import { useI18n } from "@/hooks/useI18n";
 
 export function PageHeader({ title, actions }: { title?: string; actions?: ReactNode }) {
   const router = useRouter();
-  const { t } = useI18n();
+  const { t, prefix } = useI18n();
   return (
     <div className="mb-3 flex items-center gap-2">
       <button
         type="button"
         aria-label={t.common.back}
-        onClick={() => (history.length > 1 ? router.back() : router.push("/"))}
+        onClick={() => (history.length > 1 ? router.back() : router.push(`${prefix}/`))}
         className="-ml-2 flex size-11 items-center justify-center rounded-md hover:bg-surface-2"
       >
         <ChevronLeft size={24} aria-hidden="true" />

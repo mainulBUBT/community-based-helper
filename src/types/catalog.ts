@@ -18,6 +18,7 @@ export interface Product {
   releaseYear: number | null;
   popularity: number;
   variants: Variant[];
+  images?: string[];
 }
 
 export interface Seller {

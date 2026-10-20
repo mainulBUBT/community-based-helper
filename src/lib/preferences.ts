@@ -4,9 +4,10 @@ export type Lang = "bn" | "en";
 export type ThemeChoice = "light" | "dark";
 
 const LANG_KEY = "lang";
+const ADMIN_LANG_KEY = "adminLang";
 const THEME_KEY = "theme";
 
-export const preferencesInitScript = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="dark")document.documentElement.dataset.theme=t;var l=localStorage.getItem("${LANG_KEY}");if(l==="en")document.documentElement.lang="en"}catch(e){}`;
+export const preferencesInitScript = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="dark")document.documentElement.dataset.theme=t;if(/^\\/en(\\/|$)/.test(location.pathname))document.documentElement.lang="en";else{var l=localStorage.getItem("${LANG_KEY}");if(l==="en")document.documentElement.lang="en"}}catch(e){}`;
 
 function read<T extends string>(key: string, allowed: readonly T[], fallback: T): T {
   if (typeof window === "undefined") return fallback;
@@ -25,11 +26,18 @@ function persist(key: string, value: string) {
 }
 
 export const langStore = createStore<Lang>(read(LANG_KEY, ["bn", "en"], "bn"));
+export const adminLangStore = createStore<Lang>(read(ADMIN_LANG_KEY, ["bn", "en"], "en"));
 export const themeStore = createStore<ThemeChoice>(read(THEME_KEY, ["light", "dark"], "light"));
 
 export function setLang(lang: Lang) {
   langStore.set(lang);
   persist(LANG_KEY, lang);
+  document.documentElement.lang = lang;
+}
+
+export function setAdminLang(lang: Lang) {
+  adminLangStore.set(lang);
+  persist(ADMIN_LANG_KEY, lang);
   document.documentElement.lang = lang;
 }
 

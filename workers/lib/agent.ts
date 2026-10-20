@@ -1,2 +1,2 @@
-export const BOT_NAME = "SashroyBot";
-export const USER_AGENT = `${BOT_NAME}/1.0 (+https://sashroy.pages.dev/about; price comparison)`;
+export const BOT_NAME = "DordamBot";
+export const USER_AGENT = `${BOT_NAME}/1.0 (+https://dordam.app/about; price comparison)`;

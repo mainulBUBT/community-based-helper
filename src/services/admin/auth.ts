@@ -1,8 +1,8 @@
 import { supabase } from "@/lib/supabase";
 
 const DEMO_KEY = "demo-admin";
-const DEMO_EMAIL = process.env.NEXT_PUBLIC_DEMO_ADMIN_EMAIL ?? "admin@sashroy.test";
-const DEMO_PASSWORD = process.env.NEXT_PUBLIC_DEMO_ADMIN_PASSWORD ?? "sashroy-demo";
+const DEMO_EMAIL = process.env.NEXT_PUBLIC_DEMO_ADMIN_EMAIL ?? "admin@dordam.test";
+const DEMO_PASSWORD = process.env.NEXT_PUBLIC_DEMO_ADMIN_PASSWORD ?? "dordam-demo";
 
 export const isDemo = !supabase;
 

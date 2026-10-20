@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SITE_URL } from "@/config/site";
+import { toEnPath } from "@/lib/en-meta";
 import { getProductDetail, getSiteSettings, loadCatalog } from "@/services/catalog";
 import { formatTaka } from "@/utils/format";
 import { ProductView } from "./ProductView";
@@ -26,7 +27,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `${product.brand} ${product.name} এখন ${formatTaka(lowest)} থেকে পাওয়া যাচ্ছে। ${offers.length}টা দোকানের দাম পাশাপাশি দেখুন।`
     : `${product.brand} ${product.name} এর দাম বাংলাদেশের দোকানগুলোতে কত, দেখুন।`;
   const url = `/product/${product.slug}/`;
-  return { title, description, alternates: { canonical: url }, openGraph: { title, description, url } };
+  return {
+    title,
+    description,
+    alternates: { canonical: url, languages: { bn: url, en: toEnPath(url) } },
+    openGraph: { title, description, url },
+  };
 }
 
 export default async function ProductPage({ params }: Props) {

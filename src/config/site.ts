@@ -1,16 +1,17 @@
 import type { Category, Condition, SellerKind } from "@/types/catalog";
 import type { SiteSettings } from "@/types/admin";
 
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://sashroy.pages.dev").replace(/\/+$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://dordam.app").replace(/\/+$/, "");
 
 export const DEFAULT_SETTINGS: SiteSettings = {
-  name: "সাশ্রয়",
+  name: "দরদাম",
+  nameEn: "Dordam",
   tagline: "মোবাইল, Apple আর স্মার্টওয়াচের দাম এক জায়গায়",
   phone: null,
   email: null,
   facebook: null,
   logoUrl: null,
-  seoTitle: "সাশ্রয়: মোবাইল আর গ্যাজেটের দাম তুলনা",
+  seoTitle: "দরদাম: মোবাইল আর গ্যাজেটের দাম তুলনা",
   seoDescription: "বাংলাদেশের দোকানগুলোতে মোবাইল, iPhone, MacBook আর স্মার্টওয়াচের দাম পাশাপাশি দেখুন।",
   cloudflareAnalyticsToken: null,
   heroTitle: "কোন দোকানে কত দাম, এক নজরে দেখুন",

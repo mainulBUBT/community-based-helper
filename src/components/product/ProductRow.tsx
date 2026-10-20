@@ -8,11 +8,11 @@ import { formatTaka } from "@/utils/format";
 import { ProductIcon } from "./ProductIcon";
 
 export function ProductRow({ summary }: { summary: ProductSummary }) {
-  const { t, num } = useI18n();
+  const { t, num, prefix } = useI18n();
   const { product, lowest, sellerCount, drop } = summary;
   const details = [product.variants.length > 1 ? t.product.variants(num(product.variants.length)) : null, t.product.stores(num(sellerCount))];
   return (
-    <Link href={`/product/${product.slug}/`} className="group flex items-center gap-3 px-4 py-3 transition-colors hover:bg-surface-2">
+    <Link href={`${prefix}/product/${product.slug}/`} className="group flex items-center gap-3 px-4 py-3 transition-colors hover:bg-surface-2">
       <ProductIcon product={product} size="sm" />
       <span className="flex min-w-0 flex-1 flex-col gap-0.5">
         <span className="text-xs text-dim">{product.brand}</span>

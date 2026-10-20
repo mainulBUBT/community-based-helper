@@ -6,12 +6,13 @@ import { VisitorChart } from "@/components/admin/VisitorChart";
 import { Chip } from "@/components/ui/Chip";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
+import { useAdminI18n } from "@/hooks/useI18n";
 import { loadDayStats, loadTopPages } from "@/services/admin/stats";
-import { toBnDigits } from "@/utils/format";
 
 const RANGES = [7, 30, 90];
 
 export default function VisitorsPage() {
+  const { t, num } = useAdminI18n();
   const [days, setDays] = useState(30);
   const { data, loading } = useAsync(async () => {
     const [stats, pages] = await Promise.all([loadDayStats(days), loadTopPages(days)]);
@@ -23,12 +24,12 @@ export default function VisitorsPage() {
   return (
     <>
       <PageTitle
-        title="ভিজিটর"
+        title={t.admin.visitors.title}
         action={
           <div className="flex gap-2">
             {RANGES.map((range) => (
               <Chip key={range} selected={days === range} onClick={() => setDays(range)}>
-                {toBnDigits(range)} দিন
+                {t.admin.visitors.days(num(range))}
               </Chip>
             ))}
           </div>
@@ -39,23 +40,23 @@ export default function VisitorsPage() {
       ) : (
         <div className="flex flex-col gap-6">
           <div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
-            <StatCard label="মোট পেজ ভিউ" value={toBnDigits(totals.views.toLocaleString("en-IN"))} />
-            <StatCard label="দৈনিক ভিজিটরের যোগফল" value={toBnDigits(totals.visitors.toLocaleString("en-IN"))} />
-            <StatCard label="দিনে গড় ভিজিটর" value={toBnDigits(Math.round(totals.visitors / Math.max(1, data.stats.length)))} tone="brand" />
+            <StatCard label={t.admin.visitors.totalViews} value={num(totals.views.toLocaleString("en-IN"))} />
+            <StatCard label={t.admin.visitors.totalVisitors} value={num(totals.visitors.toLocaleString("en-IN"))} />
+            <StatCard label={t.admin.visitors.avgVisitors} value={num(Math.round(totals.visitors / Math.max(1, data.stats.length)))} tone="brand" />
           </div>
-          <Panel title="দিন অনুযায়ী">
+          <Panel title={t.admin.visitors.byDay}>
             <div className="p-5">
               <VisitorChart stats={data.stats} />
             </div>
           </Panel>
-          <Panel title="কোন পেজ বেশি দেখা হয়েছে">
+          <Panel title={t.admin.visitors.topPages}>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[480px] text-left text-[15px]">
                 <thead className="text-[13px] text-dim">
                   <tr>
-                    <th className="px-5 py-3 font-semibold">পেজ</th>
-                    <th className="px-3 py-3 font-semibold">ভিউ</th>
-                    <th className="px-5 py-3 font-semibold">ভিজিটর</th>
+                    <th className="px-5 py-3 font-semibold">{t.admin.visitors.colPage}</th>
+                    <th className="px-3 py-3 font-semibold">{t.admin.visitors.colViews}</th>
+                    <th className="px-5 py-3 font-semibold">{t.admin.visitors.colVisitors}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-line-soft">
@@ -66,8 +67,8 @@ export default function VisitorsPage() {
                           {page.path}
                         </a>
                       </td>
-                      <td className="px-3 py-3">{toBnDigits(page.views)}</td>
-                      <td className="px-5 py-3">{toBnDigits(page.visitors)}</td>
+                      <td className="px-3 py-3">{num(page.views)}</td>
+                      <td className="px-5 py-3">{num(page.visitors)}</td>
                     </tr>
                   ))}
                 </tbody>

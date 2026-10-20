@@ -7,7 +7,8 @@ export async function logAction(action: string, detail: Record<string, unknown>)
     sampleAudit.unshift({ id: Date.now(), action, detail, createdAt: new Date().toISOString() });
     return;
   }
-  await supabase.from("audit_log").insert({ action, detail });
+  const { error } = await supabase.from("audit_log").insert({ action, detail });
+  if (error) throw error;
 }
 
 export async function listAudit(limit = 100) {

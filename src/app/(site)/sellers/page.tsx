@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { toEnPath } from "@/lib/en-meta";
 import { listSellers } from "@/services/catalog";
 import { SellersView } from "./SellersView";
 
 export const metadata: Metadata = {
   title: "বিক্রেতা",
   description: "অনলাইন দোকান, মার্কেটের দোকান আর ফেসবুক গ্রুপের বিক্রেতাদের তালিকা, কারা যাচাই করা।",
+  alternates: { canonical: "/sellers/", languages: { bn: "/sellers/", en: toEnPath("/sellers/") } },
 };
 
 export default async function SellersPage() {
