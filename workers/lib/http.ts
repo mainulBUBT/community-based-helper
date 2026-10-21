@@ -8,6 +8,9 @@ const blocked = new Map<string, StoreBlocked>();
 
 const CHALLENGE = /cf-chl|challenge-platform|just a moment\.\.\.|attention required|captcha|access denied/i;
 
+// নিজের পরিচয় একই থাকে; সাধারণ ভাষা/এনকোডিং header না থাকলে কিছু দোকানের Cloudflare অনুরোধ আটকায়
+const HEADERS = { "user-agent": USER_AGENT, "accept-language": "en-US,en;q=0.9,bn;q=0.8", "accept-encoding": "gzip, deflate, br" };
+
 const MAX_REDIRECTS = 5;
 const MAX_BODY = 3 * 1024 * 1024;
 
@@ -20,7 +23,7 @@ async function rawGet(url: URL): Promise<Response> {
     const target = current;
     const res = await limited(target.host, () =>
       fetch(target, {
-        headers: { "user-agent": USER_AGENT, accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" },
+        headers: { ...HEADERS, accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" },
         redirect: "manual",
         signal: AbortSignal.timeout(30_000),
       }),
@@ -93,7 +96,7 @@ export async function postForm(target: string | URL, form: Record<string, string
   const res = await limited(url.host, () =>
     fetch(url, {
       method: "POST",
-      headers: { "user-agent": USER_AGENT, "content-type": "application/x-www-form-urlencoded" },
+      headers: { ...HEADERS, "content-type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(form),
       redirect: "manual",
       signal: AbortSignal.timeout(30_000),
