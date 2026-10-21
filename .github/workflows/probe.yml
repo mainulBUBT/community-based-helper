@@ -1,0 +1,41 @@
+name: probe
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: |
+          cat > probe.mjs <<'EOF'
+          const UA = "DordamBot/1.0 (+https://dordam.app/about; price comparison)";
+          const urls = [
+            "https://www.sumashtech.com/robots.txt",
+            "https://www.sumashtech.com/product/iphone-18-pro",
+            "https://gadgetbreeze.com.bd/robots.txt",
+            "https://kryinternational.com/robots.txt",
+            "https://kryinternational.com/products/iphone-18-pro",
+            "https://gadgetandgear.com/robots.txt",
+            "https://gadgetandgear.com/product/iphone-18-pro",
+          ];
+          const variants = {
+            current: { "user-agent": UA, accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" },
+            fuller: { "user-agent": UA, accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "accept-language": "en-US,en;q=0.9,bn;q=0.8", "accept-encoding": "gzip, deflate, br" },
+          };
+          const ip = await fetch("https://api.ipify.org").then((r) => r.text()).catch(() => "?");
+          console.log("runner ip", ip);
+          for (const url of urls) for (const [name, headers] of Object.entries(variants)) {
+            try {
+              const res = await fetch(url, { headers, redirect: "manual" });
+              const body = await res.text();
+              const h = (k) => res.headers.get(k) ?? "-";
+              const title = /<title[^>]*>([^<]{0,80})/i.exec(body)?.[1] ?? body.slice(0, 80).replace(/\s+/g, " ");
+              console.log([res.status, name, url, "server=" + h("server"), "cf-mitigated=" + h("cf-mitigated"), "cf-ray=" + (h("cf-ray") !== "-"), "via=" + h("via"), "|", title].join(" "));
+            } catch (e) {
+              console.log("ERR", name, url, String(e));
+            }
+          }
+          EOF
+          node probe.mjs
