@@ -117,44 +117,33 @@
    শেষে `https://<নাম>.pages.dev` এ সাইট চলে আসবে।
 3. এরপর প্রতি রাতে GitHub এর `rebuild` নিজেই build আর deploy করবে। হাতে চালাতে চাইলে Actions → rebuild → Run workflow।
 
-## ধাপ ৫: ডোমেইন (ডোমেইন যেখানে কেনা সেখানেই থাকবে)
+## ধাপ ৫: ডোমেইন
 
-ডোমেইনের nameserver Cloudflare এ আনা হবে না, DNS থাকবে ডোমেইন বিক্রেতার কাছে (Namecheap, GoDaddy, Porkbun…)। এই অবস্থায় Cloudflare Pages শুধু **subdomain** নিতে পারে, তাই মূল সাইট চলবে **`www.dordam.app`** এ।
+ডোমেইন `dordam.app` এর nameserver Cloudflare এ আনা হয়েছে, তাই মূল ঠিকানা **`https://dordam.app`** (www ছাড়া); `www.dordam.app` নিজে থেকে `dordam.app` এ যায়। ৫.১ হয়ে গেছে; **৫.২ না করলে SEO লিংক পুরনো `dordam.pages.dev` ঠিকানাতেই থাকে।**
 
-**৫.১ Pages এ www যোগ**
+**৫.১ Pages এ ডোমেইন যোগ** (হয়ে গেছে; নতুন ডোমেইন লাগলে একইভাবে)
 
-1. Cloudflare → Workers & Pages → `dordam` → **Custom domains** → **Set up a custom domain** → `www.dordam.app` → Continue।
-2. Cloudflare একটা CNAME দেখাবে। ডোমেইন বিক্রেতার DNS প্যানেলে বসান:
+1. ডোমেইন বিক্রেতার প্যানেলে nameserver বদলে Cloudflare এর দেওয়া দুটো বসান (Cloudflare → Add a site → ডোমেইন → Free plan → যে nameserver দেখাবে)।
+2. Cloudflare → Workers & Pages → `dordam` → **Custom domains** → **Set up a custom domain** → `dordam.app`। DNS Cloudflare এ থাকায় রেকর্ড নিজে বসে। একইভাবে `www.dordam.app` ও যোগ করুন, অথবা Rules → Redirect Rules এ `www` → `dordam.app`।
+3. কয়েক মিনিটে "Active" দেখায়, SSL নিজে থেকে আসে।
 
-   | Type | Host / Name | Value / Target | TTL |
-   |---|---|---|---|
-   | CNAME | `www` | `dordam.pages.dev` | Auto |
+**৫.২ সাইটকে নতুন ঠিকানা জানানো** (canonical, sitemap আর robots.txt এর ঠিকানা build এর সময় এখান থেকে বসে)
 
-3. কয়েক মিনিট থেকে কয়েক ঘণ্টায় Pages এ "Active" দেখাবে। SSL নিজে থেকে আসে।
+1. GitHub → Settings → Secrets and variables → Actions → **Variables** ট্যাব (Secret নয়; workflow `vars.SITE_URL` পড়ে): `SITE_URL = https://dordam.app`। লোকালে `.env.local` এ `NEXT_PUBLIC_SITE_URL=https://dordam.app` (আছে)।
+2. Actions → `rebuild` → Run workflow। Variable বদলের পর rebuild না দিলে live সাইট পুরনো ঠিকানাই দেখাবে।
+3. Supabase → Authentication → URL Configuration: Site URL `https://dordam.app`, Redirect URLs এ `https://dordam.app/admin/` (repo র `supabase/config.toml` এ একই আছে)।
+4. Turnstile widget (ধাপ ৮) এর ডোমেইন তালিকায় `dordam.app` যোগ করুন।
 
-**৫.২ www ছাড়া `dordam.app`** (যেকোনো একটা)
+**৫.৩ যাচাই**
 
-- **ALIAS / ANAME থাকলে:** বিক্রেতার প্যানেলে Host `@`, Type `ALIAS` (বা `ANAME`), Value `dordam.pages.dev`। তারপর Pages এ `dordam.app` ও custom domain হিসেবে যোগ করুন। Cloudflare এটা আনুষ্ঠানিকভাবে সমর্থন করে না, তবে সাধারণত কাজ করে; Active না হলে পরের উপায়।
-- **Redirect:** বিক্রেতার **URL Forwarding** এ `dordam.app` → `https://www.dordam.app` (301)। `.app` ডোমেইন শুধু https এ খোলে, তাই forwarding এ **HTTPS সমর্থন** থাকতে হবে; না থাকলে মূল ডোমেইন খুলবে না।
-- কোনোটাই না হলে শুধু `www.dordam.app` ব্যবহার করুন, সব জায়গায় (কার্ড, Facebook) এই ঠিকানাই লিখুন।
-
-**৫.৩ সাইটকে নতুন ঠিকানা জানানো**
-
-1. GitHub → Settings → Secrets and variables → Actions: `NEXT_PUBLIC_SITE_URL = https://www.dordam.app`। লোকালে `.env.local` এও একই।
-2. Actions → `rebuild` → Run workflow, যাতে sitemap, canonical আর SEO লিংক নতুন ঠিকানায় যায়।
-3. Supabase → Authentication → URL Configuration: Site URL `https://www.dordam.app`, Redirect URL `https://www.dordam.app/admin/`।
-4. Turnstile widget (ধাপ ৮) এর ডোমেইন তালিকায় `www.dordam.app` যোগ করুন।
-5. **কোডে বদল লাগবে (এজেন্টকে বলুন):** worker এর bot নিজের পরিচয়ে `https://dordam.app/about` দেয় (`workers/lib/agent.ts`, আর `DordamBot` লেখা অন্য জায়গা)। মূল ডোমেইন না খুললে এটা `https://www.dordam.app/about` করতে হবে। `src/config/site.ts` এর ডিফল্ট `SITE_URL` ও একই ঠিকানায় আনুন।
-
-**৫.৪ যাচাই**
-
-- `https://www.dordam.app` আর (ধাপ ৫.২ করলে) `https://dordam.app` দুটোই খোলে এবং একটা অন্যটায় যায়।
-- `https://www.dordam.app/sitemap.xml` খুলে দেখুন লিংকগুলো নতুন ঠিকানায়।
-- `https://www.dordam.app/admin/` এ লগইন আর "পাসওয়ার্ড ভুলে গেছেন" মেইলের লিংক ঠিক ঠিকানায় যায়।
+- `https://dordam.app` খোলে, `https://www.dordam.app` → `https://dordam.app` এ যায়।
+- `https://dordam.app/robots.txt` আর `https://dordam.app/sitemap.xml` এ সব লিংক `https://dordam.app/...` (পুরনো `dordam.pages.dev` নয়)। পেজের source এ `<link rel="canonical">` ও তাই।
+- `https://dordam.app/admin/` এ লগইন আর "পাসওয়ার্ড ভুলে গেছেন" মেইলের লিংক `dordam.app` এ যায়।
+- `dordam.pages.dev` খোলা থাকলে ক্ষতি নেই: canonical `dordam.app` দেখায়, তাই Google মূল ঠিকানাই নেবে।
 
 ## ধাপ ৬: SEO আর ভিজিটর
 
-1. Google Search Console → Add property → **URL prefix** → `https://www.dordam.app/` → HTML ফাইল বা meta tag দিয়ে যাচাই (DNS প্যানেলে TXT বসাতে পারলে "Domain" property ও চলে) → Sitemaps এ `sitemap.xml` জমা দিন।
+1. Google Search Console → Add property → **Domain** → `dordam.app` → যে TXT রেকর্ড দেবে সেটা Cloudflare → DNS এ বসান → Verify → Sitemaps এ `https://dordam.app/sitemap.xml` জমা দিন। (ধাপ ৫.২ এর rebuild এর পরে করুন, নয়তো sitemap এ পুরনো ঠিকানা যাবে।)
 2. (ঐচ্ছিক) Cloudflare → Web Analytics → সাইট যোগ → যে token দেবে সেটা অ্যাডমিন → সেটিংস → "ভিজিটর গোনা" তে বসান। নিজেদের ভিজিটর হিসাব এটা ছাড়াও চলে।
 3. অ্যাডমিন → সেটিংস থেকে সাইটের নাম, SEO শিরোনাম আর বর্ণনা, যোগাযোগের তথ্য দিন। পরের build এ সব পেজে বসবে।
 

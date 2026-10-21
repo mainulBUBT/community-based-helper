@@ -5,6 +5,6 @@ enabled = true
 sql_paths = ["./seed.sql"]
 
 [auth]
-site_url = "https://dordam.pages.dev"
-additional_redirect_urls = ["https://dordam.pages.dev/admin/", "https://dordam.app/admin/", "http://localhost:3100/admin/"]
+site_url = "https://dordam.app"
+additional_redirect_urls = ["https://dordam.app/admin/", "https://www.dordam.app/admin/", "https://dordam.pages.dev/admin/", "http://localhost:3100/admin/"]
 enable_signup = false

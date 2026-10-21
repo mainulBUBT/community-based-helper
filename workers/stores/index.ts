@@ -3,7 +3,7 @@ import { decode, stripTags } from "../lib/html";
 import { getText } from "../lib/http";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import { appleGadgetsVariants, dazzleVariants, gadgetAndGearVariants, kryVariants, startechVariants, sumashVariants, wooVariants } from "./parsers";
+import { appleGadgetsVariants, dazzleVariants, gadgetAndGearVariants, kryVariants, maczenVariants, startechVariants, sumashVariants, wooVariants } from "./parsers";
 import type { Condition, Listing, Store } from "./types";
 
 const site = (url: string) => new URL(url).host.replace(/^www\./, "");
@@ -26,6 +26,7 @@ function sitemapStore(config: {
   sample: string;
   sitemap: string;
   path: string;
+  match?: RegExp; // path এর নিচে ক্যাটাগরি পাতাও থাকলে, শুধু পণ্যের পাতা চেনার নিয়ম
   condition: Condition;
   promoUrl?: string;
   variants?: Store["variants"];
@@ -38,7 +39,8 @@ function sitemapStore(config: {
       const urls = await sitemapUrls(config.sitemap);
       return urls.flatMap((url) => {
         const { pathname } = new URL(url);
-        return site(url) === site(config.origin) && pathname.startsWith(config.path) ? [slugListing(`${config.origin}${pathname}`)] : [];
+        const product = pathname.startsWith(config.path) && (!config.match || config.match.test(pathname));
+        return site(url) === site(config.origin) && product ? [slugListing(`${config.origin}${pathname}`)] : [];
       });
     },
   };
@@ -210,6 +212,17 @@ export const stores: Store[] = [
     variants: kryVariants,
   }),
   dazzle,
+  sitemapStore({
+    id: "maczen",
+    name: "MacZen BD",
+    origin: "https://www.maczenbd.com",
+    sample: "https://www.maczenbd.com/products/macbook/15-inch-macbook-air-m5",
+    sitemap: "https://www.maczenbd.com/sitemap.xml",
+    path: "/products/",
+    match: /^\/products\/[^/]+\/[^/]+$/,
+    condition: "unofficial",
+    variants: maczenVariants,
+  }),
   sitemapStore({
     id: "diamu",
     name: "Diamu",

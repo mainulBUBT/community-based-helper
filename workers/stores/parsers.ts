@@ -124,6 +124,38 @@ export function kryVariants(html: string): ShopVariant[] {
   });
 }
 
+// MacZen BD (Next.js RSC): দাম তিন জায়গায় — iPhone এ combinationPrices [{sim, storage, price}], Mac এ
+// specPriceMap {"প্রসেসর||স্টোরেজ": [{country, priceDelta, priceType}]}, নয়তো পণ্যের একটাই "price"।
+// CALL_FOR_PRICE বাদ; eSIM-only ভার্সন মানে USA।
+export function maczenVariants(html: string): ShopVariant[] {
+  const text = unescaped(html);
+  const at = (key: string): unknown => {
+    const i = text.indexOf(`"${key}":`);
+    const start = i + key.length + 3;
+    return i >= 0 && (text[start] === "{" || text[start] === "[") ? jsonAt(text, start) : null;
+  };
+  const inStock = text.includes("schema.org/InStock") ? true : null;
+  const priced = (row: Json, price: unknown, attributes: [unknown, unknown][]) =>
+    row.priceType === "CALL_FOR_PRICE" ? [] : variant(attributes, price, null, row.priceType === "PRE_ORDER" ? null : inStock);
+
+  const combos = at("combinationPrices");
+  if (Array.isArray(combos) && combos.length) {
+    return combos.filter(isObject).flatMap((row) => {
+      const region = row.country ?? (row.sim === "eSim" ? "USA" : null);
+      return priced(row, row.price, [["ram", row.ram], ["storage", row.storage], ["size", row.size], ["region", region]]);
+    });
+  }
+  const spec = at("specPriceMap");
+  if (isObject(spec) && Object.keys(spec).length) {
+    return Object.entries(spec).flatMap(([key, rows]) => {
+      const options: [unknown, unknown][] = key.split("||").map((part, i) => [i === 0 ? "processor" : "storage", part]);
+      return (Array.isArray(rows) ? rows.filter(isObject) : []).flatMap((row) => priced(row, row.priceDelta, [...options, ["region", row.country]]));
+    });
+  }
+  const base = /"price":(\d+),"optionGroups"/.exec(text)?.[1];
+  return base ? variant([], base, null, inStock) : [];
+}
+
 export function appleGadgetsVariants(html: string): ShopVariant[] {
   const price = (v: Json) => (Array.isArray(v.prices) && isObject(v.prices[0]) ? v.prices[0] : null);
   const rows = objectsAt(html, /\{"id":\d+,"product_id":\d+,"attribute_data":/g).filter((v) => price(v) && Array.isArray(v.values));

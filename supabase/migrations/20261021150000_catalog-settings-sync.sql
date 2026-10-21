@@ -19,12 +19,12 @@ on conflict (slug) do update set parent = excluded.parent;
 
 -- new settings keys get defaults; anything the admin already saved wins
 update site_settings set value = jsonb_build_object(
-  'tagline', 'বাংলাদেশের সব দোকানের দাম, পাশাপাশি এক জায়গায়',
-  'taglineEn', 'Prices from shops across Bangladesh, side by side',
-  'seoTitle', 'দরদাম — আগে দাম যাচাই, তারপর স্মার্ট কেনা',
-  'seoDescription', 'বাংলাদেশের সব দোকানের দাম পাশাপাশি দেখুন, কোথায় সবচেয়ে কম তা কেনার আগেই জেনে নিন।',
-  'seoTitleEn', 'Dordam — Compare first, buy smart',
-  'seoDescriptionEn', 'See prices from shops across Bangladesh side by side, and find the lowest before you buy.',
+  'tagline', 'বাংলাদেশের সব দোকানের দাম মিলিয়ে দেখুন, কেনার আগেই জানুন কোথায় সবচেয়ে কম।',
+  'taglineEn', 'Compare prices from shops across Bangladesh and know where it''s cheapest before you buy.',
+  'seoTitle', 'দরদাম – কম দাম কোথায়? এক ক্লিকে বাংলাদেশের সব দোকান',
+  'seoDescription', 'বাংলাদেশের দোকানগুলো থেকে একই পণ্যের দাম পাশাপাশি দেখুন — মোবাইল, ল্যাপটপ, গ্যাজেট থেকে শুরু করে আরও অনেক কিছু। কেনার আগে যাচাই করুন কোথায় সবচেয়ে কম।',
+  'seoTitleEn', 'Dordam – Compare Prices in Bangladesh: Mobiles, Laptops & More',
+  'seoDescriptionEn', 'See the same product''s price from shops across Bangladesh side by side — mobiles, laptops, gadgets and more. Check where it''s cheapest before you buy.',
   'aboutWho', 'দরদাম একটা স্বাধীন দাম-তুলনার সাইট। আমরা কোনো দোকান নই, কিছু বিক্রিও করি না, কোনো দোকানের হয়ে কাজও করি না।',
   'aboutWhoEn', 'Dordam is an independent price comparison site. We''re not a shop, we don''t sell anything, and we don''t work for any shop.',
   'aboutWhat', 'বাংলাদেশের দোকানগুলো থেকে একই পণ্যের দাম জোগাড় করে পাশাপাশি দেখাই, যাতে কেনার আগে যাচাই করে সবচেয়ে ভালো দামে কিনতে পারেন।',
@@ -36,10 +36,16 @@ update site_settings set value = jsonb_build_object(
   )
 ) || value;
 
--- the old seed's gadget-only wording, if the admin never changed it
-update site_settings set value = value || jsonb_build_object('seoTitle', 'দরদাম — আগে দাম যাচাই, তারপর স্মার্ট কেনা')
-where value->>'seoTitle' = 'দরদাম: মোবাইল আর গ্যাজেটের দাম তুলনা';
-update site_settings set value = value || jsonb_build_object('tagline', 'বাংলাদেশের সব দোকানের দাম, পাশাপাশি এক জায়গায়')
-where value->>'tagline' in ('মোবাইল, Apple আর স্মার্টওয়াচের দাম এক জায়গায়', 'মোবাইল, ল্যাপটপ, ট্যাবলেট আর স্মার্টওয়াচের দাম এক জায়গায়');
-update site_settings set value = value || jsonb_build_object('seoDescription', 'বাংলাদেশের সব দোকানের দাম পাশাপাশি দেখুন, কোথায় সবচেয়ে কম তা কেনার আগেই জেনে নিন।')
-where value->>'seoDescription' = 'বাংলাদেশের দোকানগুলোতে মোবাইল, iPhone, MacBook আর স্মার্টওয়াচের দাম পাশাপাশি দেখুন।';
+-- earlier seeds' wording, if the admin never changed it
+update site_settings set value = value || jsonb_build_object('seoTitle', 'দরদাম – কম দাম কোথায়? এক ক্লিকে বাংলাদেশের সব দোকান')
+where value->>'seoTitle' in ('দরদাম: মোবাইল আর গ্যাজেটের দাম তুলনা', 'দরদাম — আগে দাম যাচাই, তারপর স্মার্ট কেনা');
+update site_settings set value = value || jsonb_build_object('tagline', 'বাংলাদেশের সব দোকানের দাম মিলিয়ে দেখুন, কেনার আগেই জানুন কোথায় সবচেয়ে কম।')
+where value->>'tagline' in ('মোবাইল, Apple আর স্মার্টওয়াচের দাম এক জায়গায়', 'মোবাইল, ল্যাপটপ, ট্যাবলেট আর স্মার্টওয়াচের দাম এক জায়গায়', 'বাংলাদেশের সব দোকানের দাম, পাশাপাশি এক জায়গায়');
+update site_settings set value = value || jsonb_build_object('taglineEn', 'Compare prices from shops across Bangladesh and know where it''s cheapest before you buy.')
+where value->>'taglineEn' = 'Prices from shops across Bangladesh, side by side';
+update site_settings set value = value || jsonb_build_object('seoDescription', 'বাংলাদেশের দোকানগুলো থেকে একই পণ্যের দাম পাশাপাশি দেখুন — মোবাইল, ল্যাপটপ, গ্যাজেট থেকে শুরু করে আরও অনেক কিছু। কেনার আগে যাচাই করুন কোথায় সবচেয়ে কম।')
+where value->>'seoDescription' in ('বাংলাদেশের দোকানগুলোতে মোবাইল, iPhone, MacBook আর স্মার্টওয়াচের দাম পাশাপাশি দেখুন।', 'বাংলাদেশের সব দোকানের দাম পাশাপাশি দেখুন, কোথায় সবচেয়ে কম তা কেনার আগেই জেনে নিন।');
+update site_settings set value = value || jsonb_build_object('seoTitleEn', 'Dordam – Compare Prices in Bangladesh: Mobiles, Laptops & More')
+where value->>'seoTitleEn' = 'Dordam — Compare first, buy smart';
+update site_settings set value = value || jsonb_build_object('seoDescriptionEn', 'See the same product''s price from shops across Bangladesh side by side — mobiles, laptops, gadgets and more. Check where it''s cheapest before you buy.')
+where value->>'seoDescriptionEn' = 'See prices from shops across Bangladesh side by side, and find the lowest before you buy.';

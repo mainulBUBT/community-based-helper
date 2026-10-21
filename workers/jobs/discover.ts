@@ -123,6 +123,9 @@ export async function discover(): Promise<string> {
   const known = await knownOfferUrls();
   const reviewed = await reviewedUrls();
   const wanted = new Set(targets.map((p) => p.id));
+  const everything = new Set(catalog.map((p) => p.id));
+  const host = (url: string) => new URL(url).host.replace(/^www\./, "");
+  const knownHosts = new Set([...known].flatMap((url) => { try { return [host(url)]; } catch { return []; } }));
   const official = new Map(catalog.flatMap((p) => p.variants.map((v) => [v.id, v.officialPrice] as const)));
   const tally: Tally = { added: 0, review: 0, odd: 0, failed: 0 };
   const outOfTime = deadline(40);
@@ -133,18 +136,22 @@ export async function discover(): Promise<string> {
       const seller = sellers.get(store.id);
       if (!seller) return notes.push(`${store.name}: বিক্রেতা তালিকায় নেই`);
       const shop: Shop = { store, seller, slots, official, tally };
+      // নতুন দোকান (এখনো একটাও দাম নেই): হাতে চালালেও পুরো ক্যাটালগ খোঁজা হয়, রাতের run এর অপেক্ষা লাগে না
+      const whole = !knownHosts.has(host(store.origin));
+      const storeTargets = whole ? catalog : targets;
+      const storeWanted = whole ? everything : wanted;
       try {
-        const listings = (await store.discover(targets)).flatMap((listing) => {
+        const listings = (await store.discover(storeTargets)).flatMap((listing) => {
           const products = reviewed.has(listing.url) ? [] : findProducts(listing.title, catalog);
           const done = known.has(listing.url) && products.every((p) => !fresh.has(p.id));
-          return products.some((p) => wanted.has(p.id)) && !done ? [{ listing, products }] : [];
+          return products.some((p) => storeWanted.has(p.id)) && !done ? [{ listing, products }] : [];
         });
         await pool(
           listings,
           2,
           async ({ listing, products }) => {
             try {
-              await handle(shop, listing, products, (p) => wanted.has(p.id));
+              await handle(shop, listing, products, (p) => storeWanted.has(p.id));
             } catch (error) {
               if (error instanceof StoreBlocked) throw error;
               if (!(error instanceof NotFound) && !(error instanceof Disallowed)) tally.failed++;

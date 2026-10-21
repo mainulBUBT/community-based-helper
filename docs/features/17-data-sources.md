@@ -14,6 +14,7 @@
 | Dazzle | product sitemap (শুধু সাম্প্রতিক) + ব্র্যান্ডের সাব-ক্যাটাগরি | Next.js payload | ✅ |
 | Diamu | WooCommerce sitemap | WooCommerce ভার্সন JSON | ✅ |
 | Executive Machines | WooCommerce sitemap | WooCommerce (ভার্সন JSON বা এক দাম) | ✅ |
+| MacZen BD | sitemap (`/products/<ক্যাটাগরি>/<পণ্য>`) | Next.js payload: iPhone এ `combinationPrices` (sim + storage), Mac এ `specPriceMap` (প্রসেসর/RAM + স্টোরেজ), নয়তো এক দাম; PRE_ORDER স্টক অজানা, CALL_FOR_PRICE বাদ | ✅ |
 | Motion View | sitemap | JSON-LD | ✅ |
 | Gadget Breeze | WooCommerce sitemap | WooCommerce | ✅ |
 | Pickaboo | `/search-result/<নাম>` HTML | | ⛔ worker কে 403 দেয় |
@@ -40,6 +41,7 @@
 | Sumash Tech | sumashtech.com | সব | অফিসিয়াল আর ইন্টারন্যাশনাল আলাদা পাতায়; কাটা দাম অনেক সময় ফোলানো |
 | Kry International | kryinternational.com | মোবাইল | আনঅফিসিয়াল ভার্সনে দেশের কোড (India, Global…) |
 | Dazzle | dazzle.com.bd | মোবাইল, ঘড়ি, অডিও | বেশিরভাগ আনঅফিসিয়াল, কম দামের রেফারেন্স; MRP ফোলানো |
+| MacZen BD | maczenbd.com | Apple (Mac, iPhone, iPad, Watch, AirPods), কিছু Samsung/Surface | Apple-কেন্দ্রিক, Mac এর সব RAM/স্টোরেজ কনফিগারেশন আলাদা দামে; eSIM-only iPhone মানে USA; নিজেদের "MacZen Care" ওয়ারেন্টি, তাই আনঅফিসিয়াল ধরা |
 | Diamu | diamu.com.bd | মোবাইল, ঘড়ি, অডিও | আনঅফিসিয়াল, কম কভারেজ |
 | Executive Machines | executivemachines.com | Mac | Apple Authorised Reseller, দামি কনফিগও আছে, দাম সাধারণত বেশি |
 | Motion View | motionview.com.bd | ঘড়ি, অডিও | Amazfit এর অনুমোদিত পরিবেশক |

@@ -1,4 +1,5 @@
 import { all, db } from "../lib/db";
+import { aiRead } from "../lib/ai-page";
 import { Disallowed, NotFound, StoreBlocked, message } from "../lib/errors";
 import { groupBy, pool } from "../lib/pool";
 import { candidates, single } from "../lib/variants";
@@ -39,7 +40,7 @@ export async function refreshPrices(): Promise<string> {
       .range(from, to),
   );
   const rows = offers.filter((row) => row.source === "site" || row.sellers?.kind === "website");
-  const tally = { checked: 0, changed: 0, anomaly: 0, unmatched: 0, failed: 0, blocked: 0 };
+  const tally = { checked: 0, changed: 0, anomaly: 0, unmatched: 0, failed: 0, blocked: 0, ai: 0 };
   const outOfTime = deadline(25);
   const errors: string[] = [];
   const unmatched: string[] = [];
@@ -77,7 +78,37 @@ export async function refreshPrices(): Promise<string> {
             if (error instanceof NotFound) {
               await markGone(group.map((row) => row.id));
               tally.checked += group.length;
-            } else if (error instanceof StoreBlocked || error instanceof Disallowed) {
+            } else if (error instanceof StoreBlocked) {
+              // দোকান GitHub-এর IP আটকালে Gemini-র url_context (Google-এর সার্ভার) দিয়ে পড়ার চেষ্টা;
+              // না পড়া গেলে আগের মতো বাদ। পড়া ফলও নিচের একই যাচাই আর সীমার ভেতর দিয়ে যায়।
+              const page = await aiRead(url);
+              if (!page) {
+                tally.blocked += group.length;
+                return;
+              }
+              tally.ai += group.length;
+              try {
+                for (const row of group) {
+                  const siblings = row.variants?.products?.variants.map((v) => v.label) ?? [];
+                  const target = { product: row.variants?.products?.name ?? "", label: row.variants?.label ?? "", siblings, condition: row.condition, price: row.price, key: row.variant_key };
+                  const found = single(candidates(page.offers, target, group.length === 1));
+                  if (!found) {
+                    tally.unmatched++;
+                    unmatched.push(`${label(row)} (${row.sellers?.name ?? store.name})`);
+                    continue;
+                  }
+                  const sellerName = row.sellers?.name ?? store.name;
+                  const result = await refreshOffer({ id: row.id, variantId: row.variant_id, sellerId: row.seller_id, url, price: row.price, productLabel: label(row), sellerName }, found);
+                  tally.checked++;
+                  if (result === "changed") tally.changed++;
+                  if (result === "anomaly") tally.anomaly++;
+                }
+                await saveProductImage(group[0].variant_id, page.image);
+              } catch (inner) {
+                tally.failed += group.length;
+                errors.push(message(inner));
+              }
+            } else if (error instanceof Disallowed) {
               tally.blocked += group.length;
             } else {
               tally.failed += group.length;
@@ -98,6 +129,7 @@ export async function refreshPrices(): Promise<string> {
     tally.unmatched ? `${count(tally.unmatched, "ভার্সন পাতায় মেলেনি")}: ${unmatched.slice(0, 5).join(", ")}` : "",
     tally.failed ? `${count(tally.failed, "ব্যর্থ")}: ${errors.slice(0, 3).join("; ")}` : "",
     tally.blocked ? `${count(tally.blocked, "দাম")} দোকান আটকে রাখায় বাদ` : "",
+    tally.ai ? `${count(tally.ai, "দাম")} AI পড়া পাতা থেকে` : "",
     skipped > 0 ? `${count(skipped, "সময়ে কুলায়নি, পরের বার")}` : "",
     applied ? `${count(applied, "অনুমোদিত")} বসানো হয়েছে` : "",
   ]

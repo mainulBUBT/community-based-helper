@@ -62,9 +62,16 @@ GitHub → Settings → Secrets and variables → Actions:
 
 ### GitHub থেকে চারটা দোকান আটকে যায় (২১ অক্টোবর ২০২৬)
 
-আসল ডেটাবেসে প্রথম run: GitHub থেকে ২৯৫টা দাম আপডেট হয়, ২৫০টা বাদ যায়। Sumash Tech আর Gadget Breeze ডেটা-সেন্টারের আইপিকে Cloudflare এর "Just a moment..." challenge দেয় (robots.txt পর্যন্ত)। Kry International আর Gadget & Gear একটা-দুটো অনুরোধ ছাড়ে, পরে আবার challenge দেয়। `Accept-Language`/`Accept-Encoding` header যোগ করেও পুরো run এ কাজ হয়নি। প্রক্সি বা নকল ব্রাউজার দিয়ে পার হওয়া নিয়মের বাইরে।
+Sumash Tech আর Gadget Breeze GitHub এর datacenter IP কে Cloudflare এর "Just a moment..." challenge দেয় (robots.txt পর্যন্ত); Kry International আর Gadget & Gear কিছু অনুরোধ ছাড়ে, কিছু আটকায়। ব্লকটা IP-ভিত্তিক — ক্লাউডের যেকোনো সার্ভার একই শ্রেণির IP, তাই সরাসরি আনার রাস্তা নেই। GitHub এর schedule আগের মতোই চলে; বাকি ছয়টা দোকানের দাম ওখান থেকেই আসে।
 
-বাংলাদেশের সাধারণ ইন্টারনেট থেকে চারটাই খোলে: মালিকের Mac থেকে `./scripts/local-worker.sh prices` ৫৪৫টা দামই আপডেট করে, ২ মিনিটে (key থাকে `~/.config/dordam/worker.env` এ)। স্থায়ী সমাধানের পথ: বাসার সবসময় চালু যন্ত্রে GitHub self-hosted runner, অথবা দোকানগুলোর কাছে bot এর allowlist চাওয়া।
+**চলমান ব্যবস্থা — AI দিয়ে পড়া (`workers/lib/ai-page.ts`):** `prices` এ কোনো দোকান আটকে দিলে worker সেই লিংকটা Gemini-র `url_context` টুলকে দেয়; পাতাটা তখন Google-এর নিজের সার্ভার পড়ে (দোকানগুলো Google কে আটকায় না)। AI যা দাম দেয় তা আগের মতোই যাচাই হয়: ভার্সন মেলানো, অফিসিয়াল দামের ৪০%–২.৫ গুণ সীমা, সন্দেহ হলে অ্যাডমিনের যাচাইয়ে। না পড়তে পারলে আগের মতো "দোকান আটকে রাখায় বাদ"। বার্তায় "N টা দাম AI পড়া পাতা থেকে" দেখায়।
+
+- পরীক্ষার ফল (২১ অক্টোবর ২০২৬, `npm run worker:ai-check`): **Sumash Tech, Gadget Breeze, Gadget & Gear পড়া যায়** (ভার্সন, দাম, কাটা দাম, স্টক সহ)। **Kry International Google-এর fetcher-কেও আটকায়** (`URL_RETRIEVAL_STATUS_ERROR`), ওদের দাম GitHub থেকে যতটুকু সরাসরি আসে ততটুকুই; বাকিটার জন্য allowlist চাওয়া বা Telegram bot।
+- লাগে: অ্যাডমিন → কাজ ও AI তে **Gemini-র** key, base URL `https://generativelanguage.googleapis.com/v1beta/openai/` (url_context শুধু Gemini তে আছে; অন্য OpenAI-compatible সার্ভিস দিলে এই পথ চলে না, বাকি সব চলে)।
+- এক run এ সর্বোচ্চ ১২০ বার AI পড়া (`AI_READ_LIMIT` env এ বদলানো যায়), ফ্রি কোটা বাঁচাতে।
+- DB ছাড়া পরীক্ষা: `.env.local` এ `LLM_API_KEY` বসিয়ে `npm run worker:ai-check` (তিনটা ব্লক হওয়া দোকানের নমুনা পাতা পড়ে দেখায়), বা `npm run worker:ai-check <url>`।
+
+স্থায়ী বিকল্প (পরে): দোকানগুলোর কাছে `DordamBot` (+https://dordam.app/about) এর allowlist চাওয়া, আর Telegram bot ([15-telegram-bot](15-telegram-bot.md)) যাতে দোকান নিজেই দাম পাঠায়।
 
 ## যা বাকি
 
