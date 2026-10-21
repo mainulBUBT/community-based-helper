@@ -49,9 +49,9 @@ DB পাসওয়ার্ড বানিয়ে `.env.local` এ `SUPABA
 `20261020130000_workers.sql`: `pg_net`, শুরুর ৪টা দোকান, job এর সময়সূচি, "এখনই চালান" চাপলে GitHub workflow চালু করার trigger।
 
 `20261021054639_product-details.sql`:
-- `categories` টেবিল (`slug`, বাংলা/English নাম, `icon`, `variant_axes`, `position`, `active`)। শুরুতে mobile, laptop, tablet, watch। নতুন ভাগ (টিভি, হেডফোন…) শুধু একটা সারি যোগ করলেই হয়; কোড বদলাতে হয় না।
+- `categories` টেবিল (`slug`, বাংলা/English নাম, `icon`, `parent` (মূল ভাগের ভাগ), `variant_axes`, `position`, `active`)। শুরুতে mobile, laptop, tablet, watch। নতুন ভাগ (টিভি, হেডফোন…) শুধু একটা সারি যোগ করলেই হয়; কোড বদলাতে হয় না। `slug` বদলানো যায় না (ট্রিগারে আটকানো)।
 - `products.category` এখন `categories.slug` এর foreign key (পুরনো enum বাদ, `apple` → `mobile`)। Apple আলাদা ভাগ নয়, ব্র্যান্ড; মেনুতে `?brand=Apple` লিংক।
-- `variants.attributes` (jsonb, যেমন `{"chip":"M5","ram":"16GB","storage":"512GB"}`) আর `sku`। কোন ঘরগুলো লাগবে তা ভাগের `variant_axes` ঠিক করে (চাবি: chip, ram, storage, size, connectivity, edition)। `label` থাকে, worker এখনো ওটা দিয়ে মেলায়।
+- `variants.attributes` (jsonb, যেমন `{"chip":"M5","ram":"16GB","storage":"512GB"}`) আর `sku`। কোন ঘরগুলো লাগবে তা ভাগের `variant_axes` ঠিক করে (চাবি: chip, ram, storage, size, connectivity, edition, color, gpu, cpu, resolution, battery, capacity)। `label` থাকে, worker এখনো ওটা দিয়ে মেলায়।
 - পণ্যে `colors`, `regions`, `description`, `description_en`, `specs` (jsonb array: `[{group, items:[{label, value}]}]`), `specs_source` (তথ্যসূত্রের লিংক)।
 - `offers.color` (কোনো দোকান নির্দিষ্ট রঙের দাম দিলে)।
 

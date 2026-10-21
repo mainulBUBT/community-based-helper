@@ -22,6 +22,7 @@ export async function saveCategory(category: CategoryInfo, isNew: boolean) {
       name: category.name,
       name_en: category.nameEn,
       icon: category.icon,
+      parent: category.parent ?? null,
       variant_axes: category.axes,
       position: category.position,
       active: category.active,
@@ -40,8 +41,16 @@ export async function countProducts(slug: string) {
   return count ?? 0;
 }
 
+export async function countChildren(slug: string) {
+  if (!supabase) return sampleCategories.filter((c) => c.parent === slug).length;
+  const { count, error } = await supabase.from("categories").select("slug", { count: "exact", head: true }).eq("parent", slug);
+  if (error) throw error;
+  return count ?? 0;
+}
+
 export async function deleteCategory(category: CategoryInfo) {
   if ((await countProducts(category.slug)) > 0) throw new Error("category has products");
+  if ((await countChildren(category.slug)) > 0) throw new Error("category has children");
   if (!supabase) sampleCategories.splice(sampleCategories.findIndex((c) => c.slug === category.slug), 1);
   else {
     const { error } = await supabase.from("categories").delete().eq("slug", category.slug);

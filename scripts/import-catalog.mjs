@@ -5,7 +5,7 @@ import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const DIR = "data/catalog";
-const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color"];
+const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color", "gpu", "cpu", "resolution", "battery", "capacity"];
 const DEFAULT_CATEGORY = { mobile: "mobile", watch: "watch" };
 
 const slugify = (text) =>

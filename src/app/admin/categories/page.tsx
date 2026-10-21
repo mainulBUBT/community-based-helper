@@ -2,28 +2,42 @@
 
 import { useState, type FormEvent } from "react";
 import { Field, Select } from "@/components/admin/Field";
+import { IconPicker } from "@/components/admin/IconPicker";
+import { LangTabs } from "@/components/admin/LangTabs";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { Toggle } from "@/components/admin/Toggle";
-import { CATEGORY_ICON_NAMES, CategoryIcon } from "@/components/product/CategoryIcon";
+import { CategoryIcon } from "@/components/product/CategoryIcon";
 import { ErrorNotice } from "@/components/ui/ErrorNotice";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
 import { useAdminI18n } from "@/hooks/useI18n";
 import { showToast } from "@/lib/toast";
-import { countProducts, deleteCategory, listAllCategories, saveCategory } from "@/services/admin/categories";
+import { countChildren, countProducts, deleteCategory, listAllCategories, saveCategory } from "@/services/admin/categories";
 import { AXES, type Axis, type CategoryInfo } from "@/types/catalog";
 
 async function loadData() {
   const categories = await listAllCategories();
-  const counts = await Promise.all(categories.map((c) => countProducts(c.slug)));
-  return categories.map((category, i) => ({ category, products: counts[i] }));
+  const products = await Promise.all(categories.map((c) => countProducts(c.slug)));
+  const children = await Promise.all(categories.map((c) => countChildren(c.slug)));
+  return categories.map((category, i) => ({ category, products: products[i], children: children[i] }));
 }
 
-function CategoryForm({ category, isNew, onClose }: { category: CategoryInfo; isNew: boolean; onClose: (saved: boolean) => void }) {
+function CategoryForm({
+  category,
+  isNew,
+  topLevel,
+  onClose,
+}: {
+  category: CategoryInfo;
+  isNew: boolean;
+  topLevel: CategoryInfo[];
+  onClose: (saved: boolean) => void;
+}) {
   const { t } = useAdminI18n();
   const { busy, run } = useAdminAction();
   const [axes, setAxes] = useState<Axis[]>(category.axes);
+  const [parent, setParent] = useState<string>(category.parent ?? "");
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -39,6 +53,7 @@ function CategoryForm({ category, isNew, onClose }: { category: CategoryInfo; is
       nameEn: String(form.get("nameEn")).trim(),
       icon: String(form.get("icon")),
       axes: AXES.filter((axis) => axes.includes(axis)),
+      parent: parent || null,
       position: Number(form.get("position")) || 0,
       active: category.active,
     };
@@ -48,16 +63,31 @@ function CategoryForm({ category, isNew, onClose }: { category: CategoryInfo; is
   return (
     <form onSubmit={onSubmit} className="grid gap-4 p-5 md:grid-cols-3">
       <Field label={t.admin.categories.slug} name="slug" defaultValue={category.slug} required disabled={!isNew} hint={t.admin.categories.slugHint} placeholder="headphones" />
-      <Field label={t.admin.categories.name} name="name" defaultValue={category.name} required />
-      <Field label={t.admin.categories.nameEn} name="nameEn" defaultValue={category.nameEn} required />
-      <Select label={t.admin.categories.icon} name="icon" defaultValue={category.icon}>
-        {CATEGORY_ICON_NAMES.map((icon) => (
-          <option key={icon} value={icon}>
-            {icon}
-          </option>
-        ))}
+      <Select label={t.admin.categories.parent} value={parent} onChange={(e) => setParent(e.target.value)}>
+        <option value="">{t.admin.categories.parentNone}</option>
+        {topLevel
+          .filter((c) => c.slug !== category.slug)
+          .map((c) => (
+            <option key={c.slug} value={c.slug}>
+              {c.nameEn}
+            </option>
+          ))}
       </Select>
       <Field label={t.admin.categories.position} name="position" type="number" defaultValue={category.position} />
+      <div className="md:col-span-3">
+        <LangTabs
+          className="flex flex-col gap-4"
+          en={
+            <Field label={t.admin.categories.nameEn} name="nameEn" defaultValue={category.nameEn} required />
+          }
+          bn={
+            <Field label={t.admin.categories.name} name="name" defaultValue={category.name} required />
+          }
+        />
+      </div>
+      <div className="md:col-span-3">
+        <IconPicker name="icon" defaultValue={category.icon} />
+      </div>
       <fieldset className="flex flex-col gap-2 md:col-span-3">
         <legend className="mb-1.5 text-sm font-semibold">{t.admin.categories.axes}</legend>
         <div className="flex flex-wrap gap-2">
@@ -98,7 +128,9 @@ export default function CategoriesPage() {
     setEditing(null);
     if (saved) reload();
   };
-  const blank: CategoryInfo = { slug: "", name: "", nameEn: "", icon: "smartphone", axes: [], position: data.length + 1, active: true };
+  const topLevel = data.filter(({ category }) => !category.parent).map(({ category }) => category);
+  const parentOf = (slug: string | null | undefined) => (slug ? (data.find(({ category }) => category.slug === slug)?.category.nameEn ?? slug) : "");
+  const blank: CategoryInfo = { slug: "", name: "", nameEn: "", icon: "package", axes: [], parent: null, position: data.length + 1, active: true };
 
   return (
     <>
@@ -114,7 +146,7 @@ export default function CategoriesPage() {
       <div className="flex flex-col gap-6">
         {editing && (
           <Panel title={editing.isNew ? t.admin.categories.new : t.admin.categories.editTitle(editing.category.nameEn)}>
-            <CategoryForm key={editing.category.slug || "new"} category={editing.category} isNew={editing.isNew} onClose={close} />
+            <CategoryForm key={editing.category.slug || "new"} category={editing.category} isNew={editing.isNew} topLevel={topLevel} onClose={close} />
           </Panel>
         )}
         <Panel title={t.admin.categories.all(num(data.length))}>
@@ -123,6 +155,7 @@ export default function CategoriesPage() {
               <thead className="text-[13px] text-dim">
                 <tr>
                   <th className="px-5 py-3 font-semibold">{t.admin.products.colCategory}</th>
+                  <th className="px-3 py-3 font-semibold">{t.admin.categories.parent}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.axes}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.products}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.active}</th>
@@ -130,7 +163,7 @@ export default function CategoriesPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-line-soft">
-                {data.map(({ category, products }) => (
+                {data.map(({ category, products, children }) => (
                   <tr key={category.slug}>
                     <td className="px-5 py-3">
                       <span className="flex items-center gap-3">
@@ -143,6 +176,7 @@ export default function CategoriesPage() {
                         </span>
                       </span>
                     </td>
+                    <td className="px-3 py-3 text-[13px] text-dim">{parentOf(category.parent) || "—"}</td>
                     <td className="px-3 py-3 text-[13px] text-dim">{category.axes.map((axis) => t.axis[axis]).join(", ") || "—"}</td>
                     <td className="px-3 py-3">{num(products)}</td>
                     <td className="px-3 py-3">
@@ -162,8 +196,8 @@ export default function CategoriesPage() {
                         </button>
                         <button
                           type="button"
-                          disabled={busy || products > 0}
-                          title={products > 0 ? t.admin.categories.hasProducts : undefined}
+                          disabled={busy || products > 0 || children > 0}
+                          title={products > 0 ? t.admin.categories.hasProducts : children > 0 ? t.admin.categories.hasChildren : undefined}
                           onClick={async () => {
                             if (!confirm(t.admin.categories.confirmDelete(category.nameEn))) return;
                             if (await run(() => deleteCategory(category), t.admin.common.deleted)) reload();

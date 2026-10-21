@@ -17,12 +17,24 @@ export function parseVariantLabel(label: string, axes: readonly Axis[]): Variant
   const attributes: VariantAttributes = {};
   if (axes.includes("storage") && sizes.length) attributes.storage = sizes.at(-1);
   if (axes.includes("ram") && sizes.length > 1) attributes.ram = sizes[0];
-  if (axes.includes("size")) attributes.size = label.match(/\d+\s*mm/i)?.[0].replace(/\s/g, "");
-  if (axes.includes("connectivity")) attributes.connectivity = label.match(/GPS\s*\+\s*Cellular|Cellular|GPS|Bluetooth|LTE|Wi-?Fi/i)?.[0];
+  if (axes.includes("size")) attributes.size = label.match(/\d+(?:\.\d+)?\s*(mm|inch|in|")/i)?.[0].replace(/\s/g, "");
+  if (axes.includes("connectivity")) attributes.connectivity = label.match(/GPS\s*\+\s*Cellular|Cellular|GPS|Bluetooth|LTE|Wi-?Fi|4G|5G/i)?.[0];
   if (axes.includes("chip")) attributes.chip = label.match(/\b(M\d+(?:\s?(?:Pro|Max))?|A\d+\s?Pro|Snapdragon[\w\s]*|Core\s+i\d|Ryzen\s+\d)\b/i)?.[0];
+  if (axes.includes("gpu")) attributes.gpu = label.match(/\d+C\s*GPU|\d+\s*-?\s*core\s*GPU/i)?.[0];
+  if (axes.includes("cpu")) attributes.cpu = label.match(/\d+C\s*CPU|\d+\s*-?\s*core\s*CPU/i)?.[0];
+  if (axes.includes("resolution")) attributes.resolution = label.match(/\b(8K|4K|UHD|FHD|QHD|HD)\b/i)?.[0].toUpperCase();
+  if (axes.includes("battery")) attributes.battery = label.match(/\d+\s*mAh/i)?.[0].replace(/\s/g, "");
+  if (axes.includes("capacity")) attributes.capacity = label.match(/\d+(?:\.\d+)?\s*(?:L|litre|liter|kg|KG)\b/i)?.[0].replace(/\s/g, "");
   return Object.fromEntries(Object.entries(attributes).filter(([, v]) => v)) as VariantAttributes;
 }
 
+const numericValue = (value: string) => {
+  const num = Number.parseFloat(value.replace(",", "."));
+  return Number.isNaN(num) ? 0 : num;
+};
+
 export function sortAxisValues(axis: Axis, values: string[]) {
-  return axis === "ram" || axis === "storage" ? values.sort((a, b) => sizeInGb(a) - sizeInGb(b)) : values.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+  if (axis === "ram" || axis === "storage") return values.sort((a, b) => sizeInGb(a) - sizeInGb(b));
+  if (axis === "battery" || axis === "capacity") return values.sort((a, b) => numericValue(a) - numericValue(b));
+  return values.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 }
