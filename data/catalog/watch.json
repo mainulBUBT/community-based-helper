@@ -1,0 +1,597 @@
+{
+  "category": "watch",
+  "sites": [
+    {
+      "name": "Star Tech",
+      "website": "https://www.startech.com.bd",
+      "note": "Widest smartwatch range with clean product images and spec tables (used as specsSource). Shows one cash price before size is chosen (base/smaller size). Apple and Samsung watches listed with 'No Warranty' (import); Huawei/Amazfit/Xiaomi carry official warranty."
+    },
+    {
+      "name": "Gadget & Gear",
+      "website": "https://gadgetandgear.com",
+      "note": "Apple authorized reseller; per-size/colour SKU prices and stock in page data. Apple Watch with 1-year official warranty; Galaxy Watch8 marked 'No warranty'; Huawei/Amazfit official 6/12 months."
+    },
+    {
+      "name": "Apple Gadgets",
+      "website": "https://www.applegadgetsbd.com",
+      "note": "Per-variant prices (size, colour, GPS/Cellular) with compare-at prices; mostly import stock for Apple/Samsung, warranty variants (N/A vs 6 months) for Huawei."
+    },
+    {
+      "name": "Sumash Tech",
+      "website": "https://www.sumashtech.com",
+      "note": "Per-variant prices and stock in page data; Apple/Samsung watches are imports with 7-day replacement warranty (is_official=false)."
+    },
+    {
+      "name": "Diamu",
+      "website": "https://diamu.com.bd",
+      "note": "WooCommerce store with per-size variant prices; good for Samsung/Huawei/Xiaomi; Apple listing is GPS + Cellular. No warranty stated for Apple/Samsung (treated as import)."
+    },
+    {
+      "name": "Motion View",
+      "website": "https://motionview.com.bd",
+      "note": "Authorized distributor for Amazfit (1-year brand warranty); also Haylou/Kospet/Oraimo. Little Apple/Samsung/Huawei watch stock."
+    },
+    {
+      "name": "Dazzle",
+      "website": "https://dazzle.com.bd",
+      "note": "Import gadget shop; useful extra source for Huawei Watch Fit 4; Redmi Watch 6 Active still unpriced there."
+    },
+    {
+      "name": "Gadget Breeze",
+      "website": "https://gadgetbreeze.com.bd",
+      "note": "Small gadget shop; only extra source found for Redmi Watch 6 Active (no warranty stated)."
+    }
+  ],
+  "products": [
+    {
+      "brand": "Apple",
+      "name": "Watch Series 11",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "42mm GPS",
+          "attributes": {
+            "size": "42mm",
+            "connectivity": "GPS"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "46mm GPS",
+          "attributes": {
+            "size": "46mm",
+            "connectivity": "GPS"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "42mm GPS + Cellular",
+          "attributes": {
+            "size": "42mm",
+            "connectivity": "GPS + Cellular"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "46mm GPS + Cellular",
+          "attributes": {
+            "size": "46mm",
+            "connectivity": "GPS + Cellular"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Jet Black",
+        "Silver",
+        "Rose Gold",
+        "Space Gray"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/smart-watch/apple/watch-series-11/watch-series-11-jet-black-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/smart-watch/apple/watch-series-11/watch-series-11-rose-gold-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/smart-watch/apple/watch-series-11/watch-series-11-silver-purple-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/apple-watch-series-11",
+      "offers": [
+        {
+          "variant": "42mm GPS",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-watch-series-11",
+          "price": 41300,
+          "oldPrice": 44999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "42mm GPS",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/apple-watch-series-11",
+          "price": 46999,
+          "oldPrice": 50999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "46mm GPS",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/apple-watch-series-11",
+          "price": 50999,
+          "oldPrice": 54999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "42mm GPS",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/apple-watch-series-11",
+          "price": 41499,
+          "oldPrice": 47999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "46mm GPS",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/apple-watch-series-11",
+          "price": 45499,
+          "oldPrice": 51999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "42mm GPS",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/apple-watch-series-11",
+          "price": 42999,
+          "oldPrice": 60000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "46mm GPS",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/apple-watch-series-11",
+          "price": 46999,
+          "oldPrice": 62000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "42mm GPS + Cellular",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/apple-watch-series-11/",
+          "price": 48990,
+          "oldPrice": 50000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "46mm GPS + Cellular",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/apple-watch-series-11/",
+          "price": 46900,
+          "oldPrice": 55000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Watch8",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "40mm Bluetooth",
+          "attributes": {
+            "size": "40mm",
+            "connectivity": "Bluetooth"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "44mm Bluetooth",
+          "attributes": {
+            "size": "44mm",
+            "connectivity": "Bluetooth"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Graphite",
+        "Silver"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/smart-watch/samsung/galaxy-watch8/galaxy-watch8-001-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/smart-watch/samsung/galaxy-watch8/galaxy-watch8-002-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-watch8",
+      "offers": [
+        {
+          "variant": "40mm Bluetooth",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/samsung-galaxy-watch8",
+          "price": 23900,
+          "oldPrice": 25999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "40mm Bluetooth",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-watch-8",
+          "price": 23999,
+          "oldPrice": 25499,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "44mm Bluetooth",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-watch-8",
+          "price": 25999,
+          "oldPrice": 27499,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "40mm Bluetooth",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-watch8",
+          "price": 23999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "44mm Bluetooth",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-watch8",
+          "price": 25499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "40mm Bluetooth",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-watch-8",
+          "price": 24499,
+          "oldPrice": 29999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "44mm Bluetooth",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-watch-8",
+          "price": 24499,
+          "oldPrice": 31999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "40mm Bluetooth",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/galaxy-watch-8/",
+          "price": 25500,
+          "oldPrice": 29990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "44mm Bluetooth",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/galaxy-watch-8/",
+          "price": 26500,
+          "oldPrice": 31000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Amazfit",
+      "name": "Active 2 Premium",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "Square",
+          "attributes": {
+            "size": "1.75\" square",
+            "connectivity": "Bluetooth"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "Round",
+          "attributes": {
+            "size": "1.32\" round",
+            "connectivity": "Bluetooth"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Black"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/smartwatch/amazfit/active-2/amazfit-active-2-2-500x500.webp",
+        "https://motionview.s3.amazonaws.com/images/products/profile/17814158178.Amazfit-Active-2-Square-gallery-01.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/amazfit-active-2-premium-version",
+      "offers": [
+        {
+          "variant": "Square",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/amazfit-active-2-premium-version",
+          "price": 14789,
+          "oldPrice": 16999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Square",
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/amazfit-active-2-square-smartwatch-premium-edition",
+          "price": 16999,
+          "oldPrice": 17499,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Square",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/amazfit-active-2-premium-version",
+          "price": 16999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Round",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/amazfit-active-2-premium-version",
+          "price": 16999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Square",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/amazfit-active-2-smart-watch-premium-version",
+          "price": 15000,
+          "oldPrice": 17499,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Round",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/amazfit-active-2-smart-watch-premium-version",
+          "price": 15500,
+          "oldPrice": 17499,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Square",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/amazfit-active-2-premium-edition-square-smart-watch",
+          "price": 12999,
+          "oldPrice": 17499,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Round",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/amazfit-active-2-premium-edition-round-smartwatch",
+          "price": 14999,
+          "oldPrice": 17000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Huawei",
+      "name": "Watch Fit 4",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "1.82\" Bluetooth",
+          "attributes": {
+            "size": "1.82\"",
+            "connectivity": "Bluetooth"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Black",
+        "Purple",
+        "Gray",
+        "White"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/smart-watch/huawei/watch-fit-4/watch-fit-4-04-500x500.webp",
+        "https://diamu.com.bd/wp-content/uploads/2025/07/Huawei-Watch-Fit-4-price-in-Bangladesh.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/huawei-watch-fit-4",
+      "offers": [
+        {
+          "variant": "1.82\" Bluetooth",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/huawei-watch-fit-4",
+          "price": 15500,
+          "oldPrice": 16999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "1.82\" Bluetooth",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/huawei-watch-fit-4/",
+          "price": 15990,
+          "oldPrice": 18000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "1.82\" Bluetooth",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/huawei-watch-fit-4",
+          "price": 13990,
+          "oldPrice": 24990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "1.82\" Bluetooth",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/huawei-watch-fit-4-smart-watch",
+          "price": 15999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "1.82\" Bluetooth",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/huawei-watch-fit-4",
+          "price": 17000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "1.82\" Bluetooth",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/huawei-watch-fit-4",
+          "price": 13700,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi Watch 6 Active",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "1.85\" Bluetooth",
+          "attributes": {
+            "size": "1.85\"",
+            "connectivity": "Bluetooth"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Midnight Black",
+        "Sunset Orange",
+        "Matte Silver"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/smart-watch/xiaomi/redmi-watch-6-active/redmi-watch-6-active-black-001-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/smart-watch/xiaomi/redmi-watch-6-active/redmi-watch-6-active-orange-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/smart-watch/xiaomi/redmi-watch-6-active/redmi-watch-6-active-silver-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/redmi-watch-6-active",
+      "offers": [
+        {
+          "variant": "1.85\" Bluetooth",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/redmi-watch-6-active",
+          "price": 7299,
+          "oldPrice": 7999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "1.85\" Bluetooth",
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-redmi-watch-6-active/",
+          "price": 5490,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    }
+  ]
+}

@@ -15,3 +15,13 @@ export async function must<T>(query: PromiseLike<{ data: T; error: unknown }>): 
   if (error) throw error instanceof Error ? error : new Error(JSON.stringify(error));
   return data;
 }
+
+// Supabase একবারে ১০০০ সারির বেশি দেয় না
+export async function all<T>(page: (from: number, to: number) => PromiseLike<{ data: unknown; error: unknown }>, size = 1000): Promise<T[]> {
+  const rows: T[] = [];
+  for (let from = 0; ; from += size) {
+    const batch = ((await must(page(from, from + size - 1))) ?? []) as T[];
+    rows.push(...batch);
+    if (batch.length < size) return rows;
+  }
+}

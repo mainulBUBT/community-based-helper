@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Hind_Siliguri } from "next/font/google";
+import { Inter, Noto_Sans_Bengali } from "next/font/google";
 import Script from "next/script";
 import type { ReactNode } from "react";
 import { ServiceWorker } from "@/components/layout/ServiceWorker";
@@ -9,7 +9,8 @@ import { preferencesInitScript } from "@/lib/preferences";
 import { getSiteSettings } from "@/services/catalog";
 import "./globals.css";
 
-const body = Hind_Siliguri({ weight: ["400", "500", "600", "700"], subsets: ["bengali", "latin"], variable: "--font-body", display: "swap" });
+const latin = Inter({ subsets: ["latin"], variable: "--font-latin", display: "swap" });
+const bengali = Noto_Sans_Bengali({ subsets: ["bengali"], variable: "--font-bengali", display: "swap" });
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
@@ -25,7 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export const viewport: Viewport = {
-  themeColor: "#f5f5f2",
+  themeColor: "#f6f7f9",
   colorScheme: "light",
   viewportFit: "cover",
 };
@@ -33,7 +34,7 @@ export const viewport: Viewport = {
 export default async function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   const { cloudflareAnalyticsToken } = await getSiteSettings();
   return (
-    <html lang="bn" className={body.variable} suppressHydrationWarning>
+    <html lang="bn" className={`${latin.variable} ${bengali.variable}`} suppressHydrationWarning>
       <body>
         <script dangerouslySetInnerHTML={{ __html: preferencesInitScript }} />
         {children}

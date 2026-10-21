@@ -223,15 +223,28 @@ create trigger offers_price_history after insert or update of price on offers
   for each row execute function record_price();
 
 insert into site_settings (value) values (jsonb_build_object(
-  'name', 'সাশ্রয়',
-  'tagline', 'মোবাইল, Apple আর স্মার্টওয়াচের দাম এক জায়গায়',
+  'name', 'দরদাম',
+  'nameEn', 'Dordam',
+  'tagline', 'বাংলাদেশের সব দোকানের দাম, পাশাপাশি এক জায়গায়',
+  'taglineEn', 'Prices from shops across Bangladesh, side by side',
   'phone', null,
   'email', null,
   'facebook', null,
   'logoUrl', null,
-  'seoTitle', 'সাশ্রয়: মোবাইল আর গ্যাজেটের দাম তুলনা',
-  'seoDescription', 'বাংলাদেশের দোকানগুলোতে মোবাইল, iPhone, MacBook আর স্মার্টওয়াচের দাম পাশাপাশি দেখুন।',
-  'cloudflareAnalyticsToken', null
+  'seoTitle', 'দরদাম — আগে দাম যাচাই, তারপর স্মার্ট কেনা',
+  'seoDescription', 'বাংলাদেশের সব দোকানের দাম পাশাপাশি দেখুন, কোথায় সবচেয়ে কম তা কেনার আগেই জেনে নিন।',
+  'seoTitleEn', 'Dordam — Compare first, buy smart',
+  'seoDescriptionEn', 'See prices from shops across Bangladesh side by side, and find the lowest before you buy.',
+  'cloudflareAnalyticsToken', null,
+  'aboutWho', 'দরদাম একটা স্বাধীন দাম-তুলনার সাইট। আমরা কোনো দোকান নই, কিছু বিক্রিও করি না, কোনো দোকানের হয়ে কাজও করি না।',
+  'aboutWhoEn', 'Dordam is an independent price comparison site. We''re not a shop, we don''t sell anything, and we don''t work for any shop.',
+  'aboutWhat', 'বাংলাদেশের দোকানগুলো থেকে একই পণ্যের দাম জোগাড় করে পাশাপাশি দেখাই, যাতে কেনার আগে যাচাই করে সবচেয়ে ভালো দামে কিনতে পারেন।',
+  'aboutWhatEn', 'We gather prices for the same product from shops across Bangladesh and show them side by side, so you can check before you buy and pay the best price.',
+  'regionNotes', jsonb_build_array(
+    jsonb_build_object('region', 'USA', 'note', 'USA ভার্সনের iPhone এ শুধু eSIM, ফিজিক্যাল সিম কার্ড লাগানো যায় না।', 'noteEn', 'US iPhones are eSIM-only; there''s no physical SIM slot.'),
+    jsonb_build_object('region', 'Japan', 'note', 'Japan ভার্সনে ক্যামেরার শাটারের শব্দ বন্ধ করা যায় না।', 'noteEn', 'Japanese models play a camera shutter sound that can''t be turned off.'),
+    jsonb_build_object('region', 'Global', 'note', 'আন্তর্জাতিক ভার্সন। ব্র্যান্ডের নয়, শুধু দোকানের ওয়ারেন্টি থাকে।', 'noteEn', 'International version. Only the shop''s warranty applies, not the brand''s.')
+  )
 ));
 
 insert into private_settings (value) values (jsonb_build_object(

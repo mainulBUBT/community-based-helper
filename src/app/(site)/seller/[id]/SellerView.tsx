@@ -25,7 +25,7 @@ export function SellerView({ initial }: { initial: Detail }) {
 
       <section className="flex flex-col gap-4 rounded-lg border border-line-soft bg-surface p-5">
         <div className="flex flex-col gap-2">
-          <h1 className="flex flex-wrap items-center gap-2 text-2xl font-bold">
+          <h1 className="flex flex-wrap items-center gap-2 text-xl font-bold md:text-2xl">
             {seller.name}
             <VerifiedBadge verified={seller.verified} />
           </h1>

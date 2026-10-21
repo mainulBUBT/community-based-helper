@@ -7,13 +7,14 @@ export async function applyApproved(): Promise<number> {
   const items = await approvedUnapplied();
   for (const { id, kind, payload } of items) {
     const price = toTaka(kind === "anomaly" ? payload.to : payload.price);
-    if (price && payload.variantId && payload.sellerId) {
+    const oldPrice = toTaka(payload.oldPrice);
+    if (price && kind === "anomaly" && payload.offerId) {
+      await must(db().from("offers").update({ price, old_price: oldPrice, checked_at: new Date().toISOString() }).eq("id", payload.offerId));
+    } else if (price && payload.variantId && payload.sellerId) {
       await upsertOffer(
-        { variantId: payload.variantId, sellerId: payload.sellerId, url: payload.url, productLabel: "", sellerName: "" },
-        { price, oldPrice: toTaka(payload.oldPrice), inStock: payload.inStock ? payload.inStock === "true" : null },
+        { variantId: payload.variantId, sellerId: payload.sellerId, condition: payload.condition || "official", url: payload.url },
+        { price, oldPrice, inStock: payload.inStock ? payload.inStock === "true" : null, key: payload.variantKey || undefined, region: payload.region || null },
       );
-    } else if (price && payload.offerId) {
-      await must(db().from("offers").update({ price, checked_at: new Date().toISOString() }).eq("id", payload.offerId));
     }
     await markApplied(id);
   }

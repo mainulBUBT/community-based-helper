@@ -16,7 +16,19 @@ const FIELDS = [
   { name: "link", hint: "linkHint", required: false },
 ] as const;
 
-export function SubmitPriceDialog({ product, trigger }: { product?: string; trigger: (open: () => void) => ReactNode }) {
+export interface FixedProduct {
+  name: string;
+  productId: string;
+  variantId?: string;
+}
+
+interface SubmitPriceDialogProps {
+  product?: string;
+  fixed?: FixedProduct;
+  trigger: (open: () => void) => ReactNode;
+}
+
+export function SubmitPriceDialog({ product, fixed, trigger }: SubmitPriceDialogProps) {
   const { t } = useI18n();
   const dialog = useRef<HTMLDialogElement>(null);
   const [sending, setSending] = useState(false);
@@ -62,17 +74,33 @@ export function SubmitPriceDialog({ product, trigger }: { product?: string; trig
               <X size={20} aria-hidden="true" />
             </button>
           </div>
-          {FIELDS.map((f) => (
+          {fixed && (
+            <div className="flex flex-col gap-1.5 text-sm font-semibold">
+              {t.report.product}
+              <p className="flex min-h-12 items-center rounded-md border border-line bg-surface-2 px-3 text-base font-medium text-ink">{fixed.name}</p>
+              <input type="hidden" name="product" value={fixed.name} />
+              <input type="hidden" name="productId" value={fixed.productId} />
+              {fixed.variantId && <input type="hidden" name="variantId" value={fixed.variantId} />}
+            </div>
+          )}
+          {FIELDS.filter((f) => !(fixed && f.name === "product")).map((f) => (
             <label key={f.name} className="flex flex-col gap-1.5 text-sm font-semibold">
               {t.report[f.name]}
-              <input
-                name={f.name}
-                required={f.required}
-                placeholder={t.report[f.hint]}
-                inputMode={"inputMode" in f ? f.inputMode : undefined}
-                defaultValue={f.name === "product" ? product : undefined}
-                className={field}
-              />
+              <span className="relative">
+                {f.name === "price" && (
+                  <span aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-3 flex items-center text-lg font-semibold text-dim">
+                    ৳
+                  </span>
+                )}
+                <input
+                  name={f.name}
+                  required={f.required}
+                  placeholder={t.report[f.hint]}
+                  inputMode={"inputMode" in f ? f.inputMode : undefined}
+                  defaultValue={f.name === "product" ? product : undefined}
+                  className={`${field} ${f.name === "price" ? "pl-8" : ""}`}
+                />
+              </span>
             </label>
           ))}
           <button type="submit" disabled={sending} className="flex h-12 items-center justify-center gap-2 rounded-md bg-brand font-bold text-brand-ink disabled:opacity-60">

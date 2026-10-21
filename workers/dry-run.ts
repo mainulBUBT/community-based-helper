@@ -3,7 +3,7 @@ import { message } from "./lib/errors";
 import { judge } from "./lib/judge";
 import { llmReady } from "./lib/llm";
 import { matchListing, type CatalogProduct } from "./lib/match";
-import { readQuote } from "./stores/page";
+import { readPage } from "./stores/page";
 import { stores } from "./stores";
 
 const CATALOG: CatalogProduct[] = [
@@ -18,7 +18,7 @@ const CATALOG: CatalogProduct[] = [
     ],
   },
   { id: "p2", name: "Redmi Note 17 4G", brand: "Xiaomi", variants: [{ id: "p2v1", label: "8GB / 128GB" }, { id: "p2v2", label: "8GB / 256GB" }] },
-  { id: "p4", name: "iPhone 17", brand: "Apple", variants: [{ id: "p4v1", label: "128GB" }, { id: "p4v2", label: "256GB" }] },
+  { id: "p4", name: "iPhone 17", brand: "Apple", variants: [{ id: "p4v1", label: "8GB / 256GB" }, { id: "p4v2", label: "8GB / 512GB" }] },
 ];
 
 const LISTINGS = [
@@ -29,17 +29,16 @@ const LISTINGS = [
 ];
 
 async function testStores() {
-  console.log("-- দোকান থেকে দাম আর ছবি --");
+  console.log("-- দোকান থেকে ভার্সনের দাম আর ছবি --");
   for (const store of stores) {
     try {
-      const quote = await readQuote(store, store.sample, false);
-      const parts = quote
-        ? [`৳${quote.price}`, quote.oldPrice ? `(was ৳${quote.oldPrice})` : null, `via ${quote.via}`, quote.image ? `img ✓ ${quote.image.slice(0, 70)}` : "img ✗"]
-        : ["no price found"]
-            ;
-      console.log(`${store.name.padEnd(14)} ${parts.filter(Boolean).join("  ")}`);
+      const page = await readPage(store, store.sample, false);
+      const parts = page
+        ? [page.offers.map((o) => `${o.label || "—"} ৳${o.price}`).join(", "), page.image ? "img ✓" : "img ✗"]
+        : ["no price found"];
+      console.log(`${store.name.padEnd(18)} ${parts.join("  ")}`);
     } catch (error) {
-      console.log(`${store.name.padEnd(14)} skipped: ${message(error)}`);
+      console.log(`${store.name.padEnd(18)} skipped: ${message(error)}`);
     }
   }
 }

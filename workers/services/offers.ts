@@ -1,6 +1,6 @@
 import { bn } from "../lib/bn";
-import { db, must } from "../lib/db";
-import type { Quote } from "../lib/price";
+import { all, db, must } from "../lib/db";
+import type { PageOffer } from "../lib/variants";
 import { enqueue, pendingAnomaly } from "./review";
 
 const JUMP = 0.6;
@@ -11,44 +11,64 @@ interface VariantWithImages {
   products: { images: string[] | null } | null;
 }
 
-async function saveProductImage(variantId: string, image: string) {
+export async function saveProductImage(variantId: string, image: string | null) {
+  if (!image || !/^https:\/\/[^\s"'<>]+$/i.test(image) || image.length > 1000) return;
   const row = await must(
     db().from("variants").select("product_id, products(images)").eq("id", variantId).maybeSingle<VariantWithImages>(),
   );
   const images = row?.products?.images ?? [];
   if (!row || images.includes(image) || images.length >= MAX_IMAGES) return;
-  if (images.includes(image) || images.length >= MAX_IMAGES) return;
   await must(db().from("products").update({ images: [...images, image] }).eq("id", row.product_id));
 }
 
-export interface OfferTarget {
+export interface TrackedOffer {
+  id: string;
   variantId: string;
   sellerId: string;
   url: string;
+  price: number;
   productLabel: string;
   sellerName: string;
 }
 
-export type SaveResult = "new" | "changed" | "same" | "anomaly";
+export type SaveResult = "changed" | "same" | "anomaly";
 
-interface ExistingOffer {
-  id: string;
-  price: number;
-}
-
-async function existing(target: OfferTarget): Promise<ExistingOffer | null> {
-  return must(
+export async function refreshOffer(offer: TrackedOffer, found: PageOffer): Promise<SaveResult> {
+  const checked = { variant_key: found.key, checked_at: new Date().toISOString() };
+  if (Math.abs(found.price - offer.price) / offer.price > JUMP) {
+    if (!(await pendingAnomaly(offer.id))) {
+      const change = Math.round(((found.price - offer.price) / offer.price) * 100);
+      await enqueue("anomaly", {
+        offerId: offer.id,
+        url: offer.url,
+        product: offer.productLabel,
+        seller: offer.sellerName,
+        from: String(offer.price),
+        to: String(found.price),
+        oldPrice: found.oldPrice ? String(found.oldPrice) : "",
+        reason: `দাম ${bn(Math.abs(change))}% ${change > 0 ? "বেড়েছে" : "কমেছে"}, একবারে এতটা বদল সাধারণত হয় না`,
+      });
+    }
+    await must(db().from("offers").update(checked).eq("id", offer.id));
+    return "anomaly";
+  }
+  await must(
     db()
       .from("offers")
-      .select("id, price")
-      .eq("variant_id", target.variantId)
-      .eq("seller_id", target.sellerId)
-      .eq("condition", "official")
-      .maybeSingle(),
+      .update({ ...checked, price: found.price, old_price: found.oldPrice, in_stock: found.inStock, ...(found.region ? { region: found.region } : {}) })
+      .eq("id", offer.id),
   );
+  return found.price === offer.price ? "same" : "changed";
 }
 
-export async function upsertOffer(target: OfferTarget, quote: Pick<Quote, "price" | "oldPrice" | "inStock">) {
+export interface NewOffer {
+  variantId: string;
+  sellerId: string;
+  condition: string;
+  url: string;
+}
+
+export async function upsertOffer(target: NewOffer, found: Pick<PageOffer, "price" | "oldPrice" | "inStock"> & Partial<Pick<PageOffer, "key" | "region">>) {
   await must(
     db()
       .from("offers")
@@ -56,11 +76,13 @@ export async function upsertOffer(target: OfferTarget, quote: Pick<Quote, "price
         {
           variant_id: target.variantId,
           seller_id: target.sellerId,
-          condition: "official",
-          price: quote.price,
-          old_price: quote.oldPrice,
-          in_stock: quote.inStock,
+          condition: target.condition,
+          region: found.region ?? null,
+          price: found.price,
+          old_price: found.oldPrice,
+          in_stock: found.inStock,
           url: target.url,
+          variant_key: found.key ?? null,
           source: "site",
           published: true,
           checked_at: new Date().toISOString(),
@@ -70,38 +92,20 @@ export async function upsertOffer(target: OfferTarget, quote: Pick<Quote, "price
   );
 }
 
-export async function saveQuote(target: OfferTarget, quote: Quote): Promise<SaveResult> {
-  const prior = await existing(target);
-  if (prior && Math.abs(quote.price - prior.price) / prior.price > JUMP) {
-    if (!(await pendingAnomaly(prior.id))) {
-      const change = Math.round(((quote.price - prior.price) / prior.price) * 100);
-      await enqueue("anomaly", {
-        offerId: prior.id,
-        variantId: target.variantId,
-        sellerId: target.sellerId,
-        url: target.url,
-        product: target.productLabel,
-        seller: target.sellerName,
-        from: String(prior.price),
-        to: String(quote.price),
-        oldPrice: quote.oldPrice ? String(quote.oldPrice) : "",
-        reason: `দাম ${bn(Math.abs(change))}% ${change > 0 ? "বেড়েছে" : "কমেছে"}, একবারে এতটা বদল সাধারণত হয় না`,
-      });
-    }
-    await must(db().from("offers").update({ checked_at: new Date().toISOString() }).eq("id", prior.id));
-    return "anomaly";
-  }
-  await upsertOffer(target, quote);
-  if (quote.image) await saveProductImage(target.variantId, quote.image);
-  if (!prior) return "new";
-  return prior.price === quote.price ? "same" : "changed";
-}
-
-export async function markGone(offerId: string) {
-  await must(db().from("offers").update({ in_stock: false, checked_at: new Date().toISOString() }).eq("id", offerId));
+export async function markGone(offerIds: string[]) {
+  await must(db().from("offers").update({ in_stock: false, checked_at: new Date().toISOString() }).in("id", offerIds));
 }
 
 export async function knownOfferUrls(): Promise<Set<string>> {
-  const rows = await must(db().from("offers").select("url").not("url", "is", null));
-  return new Set((rows as { url: string }[]).map((r) => r.url));
+  const rows = await all<{ url: string }>((from, to) => db().from("offers").select("url").not("url", "is", null).range(from, to));
+  return new Set(rows.map((r) => r.url));
 }
+
+export async function offerSlots(): Promise<Set<string>> {
+  const rows = await all<{ variant_id: string; seller_id: string; condition: string }>((from, to) =>
+    db().from("offers").select("variant_id, seller_id, condition").range(from, to),
+  );
+  return new Set(rows.map((r) => slot(r.variant_id, r.seller_id, r.condition)));
+}
+
+export const slot = (variantId: string, sellerId: string, condition: string) => `${variantId}|${sellerId}|${condition}`;

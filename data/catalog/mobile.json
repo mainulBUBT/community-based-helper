@@ -1,0 +1,1845 @@
+{
+  "category": "mobile",
+  "sites": [
+    {
+      "name": "Star Tech",
+      "website": "https://www.startech.com.bd",
+      "note": "Large official-warranty retailer; every phone page has a full spec table, regular vs discounted price, stock status and per-variant prices (variant price loaded by the page's own variation request). Best specsSource. Official stock only; sometimes undercuts official MRP."
+    },
+    {
+      "name": "Gadget & Gear",
+      "website": "https://gadgetandgear.com",
+      "note": "Authorised/official retailer chain; one URL per RAM/storage variant with JSON-LD price and stock, regular price exposed in page data. Prices track official MRP. Official stock only."
+    },
+    {
+      "name": "Sumash Tech",
+      "website": "https://www.sumashtech.com",
+      "note": "Sells both official ('-official' URLs) and unofficial/international stock as separate pages; per-variant price, discount and stock quantity in page data. Good for official vs grey comparison."
+    },
+    {
+      "name": "Kry International",
+      "website": "https://kryinternational.com",
+      "note": "Big official + unofficial catalogue with separate '-official' pages; unofficial variants carry a region code (IND, GLOBAL, Vietnam, Malaysia). Per-variant price and stock in page data. One page returned a transient 502 and succeeded on retry."
+    },
+    {
+      "name": "Apple Gadgets",
+      "website": "https://www.applegadgetsbd.com",
+      "note": "Official ('-official' URLs) and unofficial stock; full per-variant price, compare price and status (in-stock / pre-order / online-order) in page data. Unofficial pages do not state region, so condition there is inferred from the separate official listing and price gap."
+    },
+    {
+      "name": "Dazzle",
+      "website": "https://dazzle.com.bd",
+      "note": "Mostly unofficial/grey imports (variant names state Global/China) plus some official listings; good cheap-end reference. MRP shown is often inflated, so oldPrice there is the site's MRP, not the official price."
+    },
+    {
+      "name": "Diamu",
+      "website": "https://diamu.com.bd",
+      "note": "WooCommerce shop with unofficial stock; per-variant prices in page data. Thin coverage and many current models out of stock (Y31d, Realme 15 Pro, A17 5G were out of stock with no price)."
+    },
+    {
+      "name": "Mobile Dokan",
+      "website": "https://www.mobiledokan.co",
+      "note": "Price/spec information site, not a shop. Used only as a reference for official BD MRP and release dates; no offers recorded from it."
+    }
+  ],
+  "products": [
+    {
+      "brand": "Samsung",
+      "name": "Galaxy A07",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "4GB / 64GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "64GB"
+          },
+          "officialPrice": 20999
+        },
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 29199
+        }
+      ],
+      "colors": [
+        "Black",
+        "Dark Green",
+        "Light Violet"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-a07/galaxy-a07-black-official-02-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-a07/galaxy-a07-green-official-03-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-a07/galaxy-a07-light-violet-official-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-a07",
+      "offers": [
+        {
+          "variant": "4GB / 64GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/samsung-galaxy-a07",
+          "price": 21500,
+          "oldPrice": 22199,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/samsung-galaxy-a07",
+          "price": 20999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a07-official",
+          "price": 20999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a07-official",
+          "price": 20999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a07-official",
+          "price": 21999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a07",
+          "price": 17999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/samsung-galaxy-a07",
+          "price": 33100,
+          "oldPrice": 33799,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/samsung-galaxy-a07-6gb-128gb",
+          "price": 29199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a07-official",
+          "price": 29199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a07-official",
+          "price": 29199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a07-official",
+          "price": 29499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy A17 5G",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 39999
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 40199
+        }
+      ],
+      "colors": [
+        "Black",
+        "Blue",
+        "Grey"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-a17-5g/galaxy-a17-black-official-01-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-a17-5g/galaxy-a17-bllue-official-03-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-a17-5g/galaxy-a17-grey-official-02-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-a17-5g",
+      "offers": [
+        {
+          "variant": "6GB / 128GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/samsung-galaxy-a17-5g",
+          "price": 38000,
+          "oldPrice": 39999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-a17-5g",
+          "price": 38999,
+          "oldPrice": 39999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a17-5g-official",
+          "price": 38999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a17-5g-official",
+          "price": 38999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a17-5g-official",
+          "price": 38999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a17-5g",
+          "price": 27999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a17-5g",
+          "price": 26090,
+          "oldPrice": 34990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/samsung-galaxy-a17-5g-8gb-256gb",
+          "price": 40199,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a17-5g-official",
+          "price": 40199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a17-5g-official",
+          "price": 40199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a17-5g-official",
+          "price": 40199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a17-5g",
+          "price": 34299,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a17-5g",
+          "price": 33499,
+          "oldPrice": 38000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a17-5g",
+          "price": 33999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a17-5g",
+          "price": 31890,
+          "oldPrice": 33990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy A57 5G",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 79999
+        },
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 88199
+        }
+      ],
+      "colors": [
+        "Awesome Navy",
+        "Awesome Lilac",
+        "Awesome Icyblue",
+        "Awesome Gray"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-a57/galaxy-a57-awesome-navy-official-02-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-a57/galaxy-a57-awesome-lilac-official-03-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-a57/galaxy-a57-awesome-icyblue-official-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-a57",
+      "offers": [
+        {
+          "variant": "8GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/samsung-galaxy-a57",
+          "price": 76000,
+          "oldPrice": 79400,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-a57-5g",
+          "price": 79999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a57-official",
+          "price": 79999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a57-official",
+          "price": 79999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a57-5g-official",
+          "price": 79999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a57-5g",
+          "price": 50799,
+          "oldPrice": 51999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a57",
+          "price": 50999,
+          "oldPrice": 57000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a57",
+          "price": 51999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Vietnam",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/samsung-galaxy-a57",
+          "price": 83800,
+          "oldPrice": 87200,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-a57-5g-12gb-256gb",
+          "price": 88199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a57-official",
+          "price": 88199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a57-official",
+          "price": 88199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a57-5g-official",
+          "price": 88199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a57-5g",
+          "price": 56499,
+          "oldPrice": 58500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a57",
+          "price": 56999,
+          "oldPrice": 62000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a57",
+          "price": 56999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Malaysia",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/galaxy-a57/",
+          "price": 57500,
+          "oldPrice": 59000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi 17",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "4GB / 128GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 23999
+        },
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 26999
+        }
+      ],
+      "colors": [
+        "Black",
+        "Deep Blue",
+        "Oak Green",
+        "Lotus Purple"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/xiaomi/redmi-17/redmi-17-black-01-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/xiaomi/redmi-17/redmi-17-blue-01-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/xiaomi/redmi-17/redmi-17-green-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/redmi-17",
+      "offers": [
+        {
+          "variant": "4GB / 128GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/redmi-17",
+          "price": 22999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/redmi-17",
+          "price": 23999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/redmi-17-official",
+          "price": 23999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/redmi-17-official",
+          "price": 23999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/redmi-17-official",
+          "price": 23399,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/redmi-17-official-price-in-bangladesh",
+          "price": 22790,
+          "oldPrice": 23990,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/redmi-17-int",
+          "price": 22499,
+          "oldPrice": null,
+          "inStock": null,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/redmi-17-4g",
+          "price": 22499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/redmi-17",
+          "price": 24999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/redmi-17-6gb-128gb",
+          "price": 26999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/redmi-17-official",
+          "price": 26999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/redmi-17-official",
+          "price": 26999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/redmi-17-official",
+          "price": 26499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/redmi-17-official-price-in-bangladesh",
+          "price": 25690,
+          "oldPrice": 26990,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/redmi-17-int",
+          "price": 24499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/redmi-17-4g",
+          "price": 24499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi Note 17 4G",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 32999
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 36999
+        }
+      ],
+      "colors": [
+        "Black",
+        "Sky Teal",
+        "Celestial Purple"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/xiaomi/redmi-note-17-4g/redmi-note-17-4g-black-official-03-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/xiaomi/redmi-note-17-4g/redmi-note-17-4g-sky-teal-official-02-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/xiaomi/redmi-note-17-4g/redmi-note-17-4g-celestial-purple-official-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/redmi-note-17-4g",
+      "offers": [
+        {
+          "variant": "6GB / 128GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/redmi-note-17-4g",
+          "price": 32999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/redmi-note-17",
+          "price": 32999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/redmi-note-17-4g-official",
+          "price": 32999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/redmi-note-17-4g",
+          "price": 29999,
+          "oldPrice": 34999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/redmi-note-17-4g",
+          "price": 27499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/redmi-note-17-4g",
+          "price": 27299,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/redmi-note-17-4g",
+          "price": 25990,
+          "oldPrice": 37990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/redmi-note-17-4g",
+          "price": 36999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/redmi-note-17-8gb-256gb",
+          "price": 36999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/redmi-note-17-4g-official",
+          "price": 36999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/redmi-note-17-4g",
+          "price": 32999,
+          "oldPrice": 39999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/redmi-note-17-4g",
+          "price": 30999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/redmi-note-17-4g",
+          "price": 30799,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/redmi-note-17-4g",
+          "price": 29990,
+          "oldPrice": 39990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi Note 17 Pro 5G",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 54999
+        }
+      ],
+      "colors": [
+        "Black",
+        "Blue",
+        "Purple"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/xiaomi/redmi-note-17-pro-5g/redmi-note-17-pro-5g-sky-blue-official-01-500x500.webp",
+        "https://assets.gadgetandgear.com/upload/media/xiaomi-redmi/redmi-note-17-pro-5g-black.jpeg"
+      ],
+      "specsSource": "https://www.startech.com.bd/redmi-note-17-pro-5g",
+      "offers": [
+        {
+          "variant": "8GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/redmi-note-17-pro-5g",
+          "price": 54999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/redmi-note-17-pro-5g",
+          "price": 54999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/redmi-note-17-pro-5g-official",
+          "price": 54999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/redmi-note-17-pro-5g-price-in-bangladesh",
+          "price": 39990,
+          "oldPrice": 45990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Realme",
+      "name": "C100",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 27999
+        },
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 29999
+        }
+      ],
+      "colors": [
+        "Endurance Brown",
+        "Victory Purple",
+        "Glory White"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/realme/c100/c100-brown-02-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/realme/c100/c100-purple-01-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/realme/c100/c100-white-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/realme-c100",
+      "offers": [
+        {
+          "variant": "6GB / 128GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/realme-c100",
+          "price": 26400,
+          "oldPrice": 27999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/realme-c100",
+          "price": 27999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/realme-c100-official",
+          "price": 27999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/realme-c100-official",
+          "price": 27999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/realme-c100-official",
+          "price": 27499,
+          "oldPrice": 27999,
+          "inStock": null,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/realme-c100-official-price-in-bangladesh",
+          "price": 26690,
+          "oldPrice": 27999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/realme-c100",
+          "price": 28400,
+          "oldPrice": 29999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/realme-c100-8gb-128gb",
+          "price": 29999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/realme-c100-official",
+          "price": 29999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/realme-c100-official",
+          "price": 29999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/realme-c100-official",
+          "price": 29499,
+          "oldPrice": 29999,
+          "inStock": null,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/realme-c100-official-price-in-bangladesh",
+          "price": 28490,
+          "oldPrice": 29999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Realme",
+      "name": "15 Pro 5G",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 59999
+        }
+      ],
+      "colors": [
+        "Flowing Silver",
+        "Velvet Green",
+        "Silk Purple"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/realme/realme-15-pro/realme-15-pro-flowing-silver-official-02-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/realme/realme-15-pro/realme-15-pro-velvet-green-official-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/realme-15-pro",
+      "offers": [
+        {
+          "variant": "12GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/realme-15-pro",
+          "price": 59999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/realme-15-pro-5g",
+          "price": 59999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/realme-15-pro-5g-official",
+          "price": 59999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/realme-15-pro-official",
+          "price": 59999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/realme-15-pro-5g-official",
+          "price": 57999,
+          "oldPrice": 59999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/realme-15-pro",
+          "price": 47999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "International",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/realme-15-pro",
+          "price": 48499,
+          "oldPrice": 49500,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "name": "A6",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 29999
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 36999
+        }
+      ],
+      "colors": [
+        "Sapphire Blue",
+        "Aurora Gold"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/oppo/a6-/oppo-a6-sapphire-blue-official-02-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/oppo/a6-/oppo-a6-aurora-gold-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/oppo-a6",
+      "offers": [
+        {
+          "variant": "6GB / 128GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/oppo-a6",
+          "price": 27500,
+          "oldPrice": 28999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/oppo-a6-6gb-128gb",
+          "price": 29999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/oppo-a6-official",
+          "price": 29999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/oppo-a6-official",
+          "price": 29999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/oppo-a6-official",
+          "price": 28999,
+          "oldPrice": 29999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/oppo-a6",
+          "price": 35500,
+          "oldPrice": 36999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/oppo-a6-8gb-256gb",
+          "price": 36999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/oppo-a6-official",
+          "price": 36999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/oppo-a6-official",
+          "price": 36999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/oppo-a6-official",
+          "price": 35999,
+          "oldPrice": 36999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "name": "Reno15 F 5G",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 59999
+        }
+      ],
+      "colors": [
+        "Aurora Blue",
+        "Twilight Blue"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/oppo/reno15-f-5g/reno15-f-5g-aurora-blue-official-02-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/oppo/reno15-f-5g/reno15-f-5g-twilight-blue-official-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/oppo-reno15-f-5g",
+      "offers": [
+        {
+          "variant": "8GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/oppo-reno15-f-5g",
+          "price": 57550,
+          "oldPrice": 59999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/oppo-reno15-f-5g",
+          "price": 59999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/oppo-reno15-f-official",
+          "price": 59999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Vivo",
+      "name": "Y31d",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "4GB / 128GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 27499
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 36999
+        }
+      ],
+      "colors": [
+        "Festive Red",
+        "Starlight Grey",
+        "Glow White"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/vivo/y31d/y31d-star-light-grey-official-01-500x500.webp",
+        "https://assets.gadgetandgear.com/upload/media/Vivo%20Y31d%20(8/256GB)/vivo-y31d-8gb-256gb-10.jpeg"
+      ],
+      "specsSource": "https://www.startech.com.bd/vivo-y31d",
+      "offers": [
+        {
+          "variant": "4GB / 128GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/vivo-y31d",
+          "price": 26000,
+          "oldPrice": 27499,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/vivo-y31d-4gb-128gb",
+          "price": 27499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/vivo-y31d-official",
+          "price": 27499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/vivo-y31d-official",
+          "price": 27499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/vivo-y31d",
+          "price": 35500,
+          "oldPrice": 36999,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/vivo-y31d-8gb-256gb",
+          "price": 36999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/vivo-y31d-official",
+          "price": 36999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/vivo-y31d-official",
+          "price": 36999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Vivo",
+      "name": "V70 FE 5G",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 53999
+        },
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 62999
+        }
+      ],
+      "colors": [
+        "Ocean Blue",
+        "Muse Purple"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/vivo/v70-fe/v70-fe-ocean-blue-official-01-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/mobile/vivo/v70-fe/v70-fe-purple-official-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/vivo-v70-fe",
+      "offers": [
+        {
+          "variant": "8GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/vivo-v70-fe",
+          "price": 50200,
+          "oldPrice": 56999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/vivo-v70-fe-5g",
+          "price": 53999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/vivo-v70-fe-official",
+          "price": 53999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/vivo-v70-fe-official",
+          "price": 53999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/vivo-v70-fe",
+          "price": 48800,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/vivo-v70-fe",
+          "price": 49999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/vivo-v70-fe",
+          "price": 42499,
+          "oldPrice": 52000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/vivo-v70-fe",
+          "price": 59200,
+          "oldPrice": 65999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/vivo-v70-fe-5g-12gb-256gb",
+          "price": 62999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/vivo-v70-fe-official",
+          "price": 62999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    }
+  ]
+}

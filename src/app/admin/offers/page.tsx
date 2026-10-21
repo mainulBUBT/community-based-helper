@@ -63,7 +63,7 @@ function PromoForm({ promo, sellers, onClose }: { promo: Promo; sellers: Seller[
       <Field label={t.admin.offers.scope} name="scope" defaultValue={promo.scope ?? ""} placeholder={t.admin.offers.scopePlaceholder} />
       <Field label={t.admin.offers.endsOn} name="endsOn" type="date" defaultValue={promo.endsOn ?? ""} />
       <label className="flex items-center gap-3 text-sm font-semibold">
-        <input type="checkbox" name="active" defaultChecked={promo.active} className="size-5 accent-[#1f2f55]" />
+        <input type="checkbox" name="active" defaultChecked={promo.active} className="size-5 accent-[var(--color-brand)]" />
         {t.admin.offers.showNow}
       </label>
       <div className="flex gap-2 md:col-span-2">

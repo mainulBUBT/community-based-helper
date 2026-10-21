@@ -7,7 +7,7 @@ const LANG_KEY = "lang";
 const ADMIN_LANG_KEY = "adminLang";
 const THEME_KEY = "theme";
 
-export const preferencesInitScript = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="dark")document.documentElement.dataset.theme=t;if(/^\\/en(\\/|$)/.test(location.pathname))document.documentElement.lang="en";else{var l=localStorage.getItem("${LANG_KEY}");if(l==="en")document.documentElement.lang="en"}}catch(e){}`;
+export const preferencesInitScript = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="dark")document.documentElement.dataset.theme=t;var p=location.pathname;if(/^\\/en(\\/|$)/.test(p))document.documentElement.lang="en";else if(localStorage.getItem("${LANG_KEY}")==="en"&&/^\\/($|about|search|sellers|saved|product\\/|seller\\/)/.test(p))location.replace("/en"+(p==="/"?"/":p)+location.search+location.hash)}catch(e){}`;
 
 function read<T extends string>(key: string, allowed: readonly T[], fallback: T): T {
   if (typeof window === "undefined") return fallback;

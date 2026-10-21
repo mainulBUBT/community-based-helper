@@ -14,13 +14,13 @@ export async function currentAdmin() {
   return isAdmin ? { email: data.user.email ?? "" } : null;
 }
 
-export async function signIn(email: string, password: string) {
+export async function signIn(email: string, password: string, captchaToken?: string) {
   if (!supabase) {
     if (email.trim().toLowerCase() !== DEMO_EMAIL || password !== DEMO_PASSWORD) throw new Error("invalid");
     sessionStorage.setItem(DEMO_KEY, "1");
     return;
   }
-  const { error } = await supabase.auth.signInWithPassword({ email, password });
+  const { error } = await supabase.auth.signInWithPassword({ email, password, options: { captchaToken } });
   if (error) throw error;
   const { data: isAdmin } = await supabase.rpc("is_admin");
   if (!isAdmin) {
@@ -34,9 +34,9 @@ export async function signOut() {
   await supabase?.auth.signOut();
 }
 
-export async function sendPasswordReset(email: string) {
+export async function sendPasswordReset(email: string, captchaToken?: string) {
   if (!supabase) throw new Error("demo");
-  const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: `${location.origin}/admin/` });
+  const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: `${location.origin}/admin/`, captchaToken });
   if (error) throw error;
 }
 

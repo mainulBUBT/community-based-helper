@@ -21,7 +21,7 @@ export function SellersView({ initial }: { initial: Seller[] }) {
 
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">{t.seller.title}</h1>
+      <h1 className="text-xl font-bold md:text-2xl">{t.seller.title}</h1>
       <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4">
         <Chip selected={filter === "all"} onClick={() => setFilter("all")}>
           {t.search.all}

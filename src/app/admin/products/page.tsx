@@ -2,22 +2,30 @@
 
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { Field, Select, TextArea } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
+import { Pagination, paginate } from "@/components/ui/Pagination";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
+import { categoryName } from "@/hooks/useCategories";
+import { useAdminCategories } from "@/hooks/useAdminCategories";
 import { useAdminI18n } from "@/hooks/useI18n";
 import { showToast } from "@/lib/toast";
 import { saveManualOffer } from "@/services/admin/offers";
 import { createProduct } from "@/services/admin/products";
 import { listAllSellers } from "@/services/admin/sellers";
 import { listSummaries } from "@/services/catalog";
-import type { Category, Condition } from "@/types/catalog";
+import type { Condition, VariantAttributes } from "@/types/catalog";
+import { matchesQuery } from "@/utils/catalog";
 import { formatTaka } from "@/utils/format";
+import { variantLabel } from "@/utils/variants";
+
+const PAGE_SIZE = 20;
 
 async function loadData() {
-  const [summaries, sellers] = await Promise.all([listSummaries(), listAllSellers()]);
+  const [summaries, sellers] = await Promise.all([listSummaries(true), listAllSellers()]);
   return { summaries, sellers };
 }
 
@@ -29,8 +37,15 @@ function parseVariants(text: string) {
     .map(([label, price]) => ({ label, officialPrice: price ? Number(price.replace(/\D/g, "")) || null : null }));
 }
 
-function ProductForm({ onDone }: { onDone: () => void }) {
-  const { t } = useAdminI18n();
+const EXAMPLE: VariantAttributes = { chip: "M5", ram: "8GB", storage: "256GB", size: "44mm", connectivity: "GPS", edition: "Pro", color: "Black" };
+
+function ProductForm() {
+  const { t, lang } = useAdminI18n();
+  const router = useRouter();
+  const { categories } = useAdminCategories();
+  const [category, setCategory] = useState("");
+  const axes = categories.find((c) => c.slug === (category || categories[0]?.slug))?.axes ?? [];
+  const example = `${variantLabel(EXAMPLE, axes) || "Standard"} | 99999`;
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
@@ -40,15 +55,15 @@ function ProductForm({ onDone }: { onDone: () => void }) {
       return;
     }
     try {
-      await createProduct({
+      const id = await createProduct({
         brand: String(form.get("brand")).trim(),
         name: String(form.get("name")).trim(),
-        category: form.get("category") as Category,
+        category: String(form.get("category")),
         releaseYear: Number(form.get("year")) || null,
         variants,
       });
       showToast(t.admin.products.added);
-      onDone();
+      router.push(`/admin/products/edit/?id=${id}`);
     } catch {
       showToast(t.admin.products.addFailed);
     }
@@ -58,17 +73,18 @@ function ProductForm({ onDone }: { onDone: () => void }) {
     <form onSubmit={onSubmit} className="grid gap-4 p-5 md:grid-cols-2">
       <Field label={t.admin.products.brand} name="brand" required placeholder="Samsung" />
       <Field label={t.admin.products.model} name="name" required placeholder="Galaxy A17 5G" />
-      <Select label={t.admin.products.category} name="category" defaultValue="mobile">
-        {(Object.keys(t.category) as Category[]).map((id) => (
-          <option key={id} value={id}>
-            {t.category[id].label}
+      <Select label={t.admin.products.category} name="category" value={category || categories[0]?.slug} onChange={(e) => setCategory(e.target.value)}>
+        {categories.map((c) => (
+          <option key={c.slug} value={c.slug}>
+            {categoryName(c, lang)}
           </option>
         ))}
       </Select>
       <Field label={t.admin.products.year} name="year" type="number" placeholder="2026" />
       <div className="md:col-span-2">
-        <TextArea label={t.admin.products.variants} name="variants" required placeholder={"6GB / 128GB | 39999\n8GB / 128GB | 43499"} hint={t.admin.products.variantsHint} />
+        <TextArea label={t.admin.products.variants} name="variants" required placeholder={example} hint={`${t.admin.products.variantsHint} ${t.admin.products.variantsExample(example)}`} />
       </div>
+      <p className="text-sm text-dim md:col-span-2">{t.admin.products.afterAdd}</p>
       <button type="submit" className={`${primaryButton} justify-self-start`}>
         {t.admin.products.add}
       </button>
@@ -135,7 +151,12 @@ function ManualPriceForm({ data, onDone }: { data: Awaited<ReturnType<typeof loa
           </option>
         ))}
       </Select>
-      <Field label={t.admin.products.region} name="region" placeholder={t.admin.products.regionPlaceholder} />
+      <Field label={t.admin.products.region} name="region" placeholder={t.admin.products.regionPlaceholder} list="product-regions" key={`region-${productId}`} />
+      <datalist id="product-regions">
+        {(product?.regions ?? []).map((r) => (
+          <option key={r} value={r} />
+        ))}
+      </datalist>
       <Field label={t.admin.products.price} name="price" inputMode="numeric" required />
       <div className="md:col-span-2">
         <Field label={t.admin.products.url} name="url" type="url" placeholder="https://" />
@@ -148,10 +169,21 @@ function ManualPriceForm({ data, onDone }: { data: Awaited<ReturnType<typeof loa
 }
 
 export default function ProductsAdminPage() {
-  const { t, num } = useAdminI18n();
+  const { t, num, lang } = useAdminI18n();
+  const { categories } = useAdminCategories();
   const { data, loading, reload } = useAsync(loadData, []);
   const [adding, setAdding] = useState(false);
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState("");
+  const [page, setPage] = useState(1);
   if (loading || !data) return <ListSkeleton />;
+
+  const filtered = data.summaries.filter(({ product }) => (!category || product.category === category) && (!query.trim() || matchesQuery(product, query.trim())));
+  const paged = paginate(filtered, page, PAGE_SIZE);
+  const categoryLabel = (slug: string) => {
+    const c = categories.find((x) => x.slug === slug);
+    return c ? categoryName(c, lang) : slug;
+  };
 
   return (
     <>
@@ -166,23 +198,49 @@ export default function ProductsAdminPage() {
       <div className="flex flex-col gap-6">
         {adding && (
           <Panel title={t.admin.products.newTitle}>
-            <ProductForm
-              onDone={() => {
-                setAdding(false);
-                reload();
-              }}
-            />
+            <ProductForm />
           </Panel>
         )}
         <Panel title={t.admin.products.manualTitle}>
           <ManualPriceForm data={data} onDone={reload} />
         </Panel>
         <Panel title={t.admin.products.all(num(data.summaries.length))}>
+          <div className="flex flex-wrap gap-3 border-b border-line-soft p-4">
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => {
+                setQuery(e.target.value);
+                setPage(1);
+              }}
+              placeholder={t.admin.products.searchPlaceholder}
+              aria-label={t.admin.products.searchPlaceholder}
+              className="h-10 min-w-56 flex-1 rounded-lg border border-line bg-surface px-3 text-sm outline-none focus:border-brand"
+            />
+            <select
+              value={category}
+              onChange={(e) => {
+                setCategory(e.target.value);
+                setPage(1);
+              }}
+              aria-label={t.admin.products.colCategory}
+              className="h-10 rounded-lg border border-line bg-surface px-2 text-sm"
+            >
+              <option value="">{t.admin.products.allCategories}</option>
+              {categories.map((c) => (
+                <option key={c.slug} value={c.slug}>
+                  {categoryName(c, lang)}
+                </option>
+              ))}
+            </select>
+          </div>
+          {filtered.length === 0 && <p className="px-5 py-4 text-dim">{t.admin.products.noMatch}</p>}
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[640px] text-left text-[15px]">
+            <table className="w-full min-w-[720px] text-left text-[15px]">
               <thead className="text-[13px] text-dim">
                 <tr>
                   <th className="px-5 py-3 font-semibold">{t.admin.products.colProduct}</th>
+                  <th className="px-3 py-3 font-semibold">{t.admin.products.colCategory}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.products.colVariants}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.products.colStores}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.products.colLowest}</th>
@@ -190,13 +248,14 @@ export default function ProductsAdminPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-line-soft">
-                {data.summaries.map(({ product, lowest, sellerCount }) => (
+                {paged.items.map(({ product, lowest, sellerCount }) => (
                   <tr key={product.id}>
                     <td className="px-5 py-3">
                       <Link href={`/admin/products/edit/?id=${product.id}`} className="font-semibold hover:text-brand">
                         {product.brand} {product.name}
                       </Link>
                     </td>
+                    <td className="px-3 py-3 text-[13px]">{categoryLabel(product.category)}</td>
                     <td className="px-3 py-3 text-[13px] text-dim">{product.variants.map((v) => v.label).join(", ")}</td>
                     <td className="px-3 py-3">{num(sellerCount)}</td>
                     <td className="px-3 py-3 font-semibold">{lowest ? formatTaka(lowest) : t.admin.products.none}</td>
@@ -222,6 +281,11 @@ export default function ProductsAdminPage() {
               </tbody>
             </table>
           </div>
+          {paged.pages > 1 && (
+            <div className="border-t border-line-soft p-4">
+              <Pagination page={paged.page} pages={paged.pages} onChange={setPage} labels={t.common.pager} format={num} />
+            </div>
+          )}
         </Panel>
       </div>
     </>

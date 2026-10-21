@@ -1,33 +1,46 @@
 @import "tailwindcss";
 
 @theme {
-  --color-page: light-dark(#f5f5f2, #0f1115);
+  --color-page: light-dark(#f6f7f9, #0f1115);
   --color-surface: light-dark(#ffffff, #171a20);
-  --color-surface-2: light-dark(#f3f2ee, #1f232b);
-  --color-line: light-dark(#e2e0da, #2c313b);
-  --color-line-soft: light-dark(#ecebe6, #23272f);
-  --color-ink: light-dark(#1a1d24, #ecedef);
-  --color-dim: light-dark(#5d616d, #a3a8b4);
-  --color-faint: light-dark(#8e929c, #737884);
-  --color-brand: light-dark(#1f2f55, #a9bde6);
-  --color-brand-hover: light-dark(#15213d, #c7d5f0);
-  --color-brand-ink: light-dark(#ffffff, #0f1830);
-  --color-brand-soft: light-dark(#eef1f7, #1c2436);
-  --color-brand-text: light-dark(#1f2f55, #c7d5f0);
-  --color-gold: light-dark(#9a6b1f, #d4a24c);
-  --color-gold-ink: light-dark(#ffffff, #1a1406);
-  --color-gold-soft: light-dark(#f8f0e1, #2b2416);
-  --color-gold-text: light-dark(#7a5416, #e3c285);
-  --color-ok: light-dark(#2f7a55, #79cfa0);
-  --color-ok-soft: light-dark(#e9f3ed, #16271e);
+  --color-surface-2: light-dark(#f3f4f6, #1f232b);
+  --color-line: light-dark(#e3e5e9, #2c313b);
+  --color-line-soft: light-dark(#eef0f3, #23272f);
+  --color-ink: light-dark(#111827, #eceef2);
+  --color-dim: light-dark(#5b6170, #a3a8b4);
+  --color-faint: light-dark(#8b909b, #737884);
+  --color-brand: light-dark(#0f766e, #4fd1c5);
+  --color-brand-hover: light-dark(#0b5e57, #81e6d9);
+  --color-brand-ink: light-dark(#ffffff, #042f2c);
+  --color-brand-soft: light-dark(#e6f4f1, #0f2a28);
+  --color-brand-text: light-dark(#0f766e, #81e6d9);
+  --color-cta: light-dark(#e11d48, #fb7185);
+  --color-cta-hover: light-dark(#be123c, #fda4af);
+  --color-cta-ink: light-dark(#ffffff, #2a0610);
+  --color-gold: light-dark(#d97706, #fbbf24);
+  --color-gold-ink: light-dark(#ffffff, #1f1200);
+  --color-gold-soft: light-dark(#fef3c7, #2e2410);
+  --color-gold-text: light-dark(#b45309, #fcd34d);
+  --color-sale: light-dark(#d92d20, #f97066);
+  --color-sale-soft: light-dark(#fef3f2, #3a1714);
+  --color-ok: light-dark(#067647, #75e0a7);
+  --color-ok-soft: light-dark(#ecfdf3, #12291d);
+  --color-verified: light-dark(#1d6ff2, #4f9bff);
   --color-danger: light-dark(#b42318, #f2a3a4);
-  --color-bar: light-dark(#1f2f55, #151c2e);
+  --color-bar: light-dark(#0f766e, #0b3b38);
   --color-bar-ink: #ffffff;
-  --color-hero: light-dark(#1f2f55, #151c2e);
+  --color-hero: light-dark(#134e4a, #0b2a28);
+}
+
+@utility page-container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1290px;
+  padding-inline: 1rem;
 }
 
 @theme inline {
-  --font-sans: var(--font-body), system-ui, sans-serif;
+  --font-sans: var(--font-latin), var(--font-bengali), system-ui, sans-serif;
 }
 
 @theme {
@@ -83,5 +96,14 @@
   }
   dialog::backdrop {
     background: rgb(0 0 0 / 0.45);
+  }
+}
+
+@keyframes nav-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
   }
 }

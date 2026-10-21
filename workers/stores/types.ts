@@ -1,3 +1,4 @@
+import type { CatalogProduct } from "../lib/match";
 import type { Quote } from "../lib/price";
 
 export interface Listing {
@@ -5,6 +6,17 @@ export interface Listing {
   url: string;
   price: number | null;
   oldPrice: number | null;
+}
+
+export type Condition = "official" | "unofficial";
+
+// পাতার একটা ভার্সন: options এ স্টোরেজ/RAM/সাইজ/কানেক্টিভিটি, রং বাদ; region আলাদা কারণ দাম তুলনায় সবচেয়ে কমটা নেওয়া হয়
+export interface ShopVariant {
+  options: string[];
+  region: string | null;
+  price: number;
+  oldPrice: number | null;
+  inStock: boolean | null;
 }
 
 export interface Store {
@@ -15,6 +27,8 @@ export interface Store {
   priceSelector?: string;
   sample: string;
   promoUrl: string | null;
+  condition: Condition;
   parse?: (html: string) => Quote | null;
-  discover: (names: string[]) => Promise<Listing[]>;
+  variants?: (html: string, url: string) => ShopVariant[] | Promise<ShopVariant[]>;
+  discover: (products: Pick<CatalogProduct, "name" | "brand">[]) => Promise<Listing[]>;
 }

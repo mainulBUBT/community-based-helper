@@ -1,0 +1,3495 @@
+{
+ "category": "apple",
+ "sites": [
+  {
+   "name": "Star Tech",
+   "website": "https://www.startech.com.bd",
+   "note": "iPhones sold with BTRC-approved one-year Apple warranty (official); iPads with '1 Year international warranty' (unofficial). Per-storage cash price via the product page's own variation request; struck price used as oldPrice. iPhone 17e and iPhone Duo pages show 'To be announced' (no offer). Used as specsSource."
+  },
+  {
+   "name": "Gadget & Gear",
+   "website": "https://gadgetandgear.com",
+   "note": "Apple authorised reseller, 1-year official + 1-year extended warranty. Cash price = discountedPrice in page data (the SSR text shows the EMI/regular price, recorded as oldPrice). iPhone Duo 'Coming Soon' with no price; several iPads Stock Out."
+  },
+  {
+   "name": "Apple Gadgets",
+   "website": "https://www.applegadgetsbd.com",
+   "note": "Unofficial imports; per-variant price/compare price/status with region options (JP/UAE eSIM, USA eSIM, AUS SIM+eSIM, HK). 'Just Active' (activated) units and nano-texture iPad options excluded. iPhone Duo is pre-order only."
+  },
+  {
+   "name": "Sumash Tech",
+   "website": "https://www.sumashtech.com",
+   "note": "Separate '-official' pages (official) and international pages (region per variant). Official pages carry no discount (price = MRP). iPhone Duo listing only shows a 10,000 booking amount, skipped."
+  },
+  {
+   "name": "Kry International",
+   "website": "https://kryinternational.com",
+   "note": "Unofficial pages with region per variant (USA, JAPAN, AUS, GLOBAL, Hong Kong, Singapore, Canada, UK, IND) plus '-official' pages. iPhone Duo listing is a 20,000 booking price, skipped."
+  },
+  {
+   "name": "Executive Machines",
+   "website": "https://executivemachines.com",
+   "note": "Apple Authorised Reseller, one page per storage, official warranty; widest official coverage incl. iPhone Duo and 2TB models; iPad mini and some iPad configs not listed."
+  },
+  {
+   "name": "Diamu",
+   "website": "https://diamu.com.bd",
+   "note": "WooCommerce, unofficial, per-variant region prices. iPhone Duo is pre-order (256GB variant priced same as 1TB, looked like a data error, skipped). iPad mini page out of stock with no variant price."
+  },
+  {
+   "name": "Dazzle",
+   "website": "https://dazzle.com.bd",
+   "note": "Unofficial regional variants (JP/MEA, SG/AUS/TH, USA, HK/CH) in page data; only active, non-TBA variants used. MRP shown is inflated. Some variant data looks wrong (17 Pro Max 2TB cheaper than 1TB) and was skipped. iPhone Duo is a 10,000 booking only; no 17e/16e prices."
+  }
+ ],
+ "products": [
+  {
+   "brand": "Apple",
+   "name": "iPhone 18 Pro",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 274999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": 319999
+    },
+    {
+     "label": "1TB",
+     "attributes": {
+      "storage": "1TB"
+     },
+     "officialPrice": 409999
+    },
+    {
+     "label": "2TB",
+     "attributes": {
+      "storage": "2TB"
+     },
+     "officialPrice": 539999
+    }
+   ],
+   "colors": [
+    "Black",
+    "Silver",
+    "Glacier",
+    "Burgundy"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-18-pro/18-pro-black-official-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-18-pro/18-pro-glacier-official-03-500x500.webp",
+    "https://assets.gadgetandgear.com/upload/media/apple/iphone-18-pro-silver.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-18-pro",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-18-pro-price-in-bangladesh",
+     "price": 160990,
+     "oldPrice": 235990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan/Middle East",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-18-pro",
+     "price": 175999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-18-pro",
+     "price": 176999,
+     "oldPrice": 186000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro",
+     "price": 177499,
+     "oldPrice": 204999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-18-pro/",
+     "price": 182999,
+     "oldPrice": 192000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-18-pro",
+     "price": 274999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-18-pro",
+     "price": 274999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro-official",
+     "price": 274999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-18-pro-256-gb/",
+     "price": 274999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-18-pro",
+     "price": 212999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Hong Kong",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-18-pro-price-in-bangladesh",
+     "price": 214990,
+     "oldPrice": 310990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Singapore/Australia/Thailand",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro",
+     "price": 214999,
+     "oldPrice": 249999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-18-pro",
+     "price": 218999,
+     "oldPrice": 221999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-18-pro/",
+     "price": 219990,
+     "oldPrice": 220990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-18-pro",
+     "price": 319999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-18-pro",
+     "price": 319999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro-official",
+     "price": 319999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-18-pro-512-gb/",
+     "price": 319999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-18-pro",
+     "price": 409999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro-official",
+     "price": 409999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-18-pro-1-tb/",
+     "price": 409999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-18-pro",
+     "price": 539999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-18-pro",
+     "price": 539999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro-official",
+     "price": 539999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-18-pro-2-tb/",
+     "price": 539999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 18 Pro Max",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 299999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": 339999
+    },
+    {
+     "label": "1TB",
+     "attributes": {
+      "storage": "1TB"
+     },
+     "officialPrice": 429999
+    },
+    {
+     "label": "2TB",
+     "attributes": {
+      "storage": "2TB"
+     },
+     "officialPrice": 549999
+    }
+   ],
+   "colors": [
+    "Black",
+    "Silver",
+    "Glacier",
+    "Burgundy"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-18-pro-max/18-pro-max-silver-official-02-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-18-pro-max/18-pro-max-burgundy-official-04-500x500.webp",
+    "https://assets.gadgetandgear.com/upload/media/apple/iphone-18-pro-max-burgundy.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-18-pro-max",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-18-pro-max-price-in-bangladesh",
+     "price": 182990,
+     "oldPrice": 299990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan/Middle East",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-18-pro-max",
+     "price": 186499,
+     "oldPrice": 191000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro-max",
+     "price": 186999,
+     "oldPrice": 204999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-18-pro-max/",
+     "price": 187499,
+     "oldPrice": 205000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-18-pro-max",
+     "price": 199999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-18-pro-max",
+     "price": 273000,
+     "oldPrice": 299999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-18-pro-max",
+     "price": 299999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro-max-official",
+     "price": 299999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-18-pro-max-256-gb/",
+     "price": 299999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro-max",
+     "price": 229999,
+     "oldPrice": 259999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-18-pro-max-price-in-bangladesh",
+     "price": 234990,
+     "oldPrice": 301990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Singapore/Australia/Thailand",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-18-pro-max",
+     "price": 235999,
+     "oldPrice": 250000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Hong Kong",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-18-pro-max",
+     "price": 237999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Hong Kong",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-18-pro-max/",
+     "price": 243990,
+     "oldPrice": 245000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Hong Kong",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-18-pro-max",
+     "price": 313000,
+     "oldPrice": 339999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-18-pro-max",
+     "price": 339999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro-max-official",
+     "price": 339999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-18-pro-max-512-gb/",
+     "price": 339999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-18-pro-max",
+     "price": 289999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Hong Kong",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro-max",
+     "price": 299999,
+     "oldPrice": 349999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Hong Kong",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-18-pro-max",
+     "price": 403000,
+     "oldPrice": 429999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-18-pro-max",
+     "price": 429999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro-max-official",
+     "price": 429999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-18-pro-max-1-tb/",
+     "price": 429999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-18-pro-max",
+     "price": 523000,
+     "oldPrice": 549999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-18-pro-max",
+     "price": 549999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-18-pro-max-official",
+     "price": 549999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-18-pro-max-2-tb/",
+     "price": 549999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone Duo",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "1TB",
+     "attributes": {
+      "storage": "1TB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "2TB",
+     "attributes": {
+      "storage": "2TB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Night Sky",
+    "Star White"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-duo/iphone-duo-night-sky-official-03-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-duo/iphone-duo-night-sky-official-02-500x500.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iphone-duo-night-sky-1252.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-duo",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-duo",
+     "price": 329999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-duo-256-gb/",
+     "price": 449999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-duo",
+     "price": 364999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-duo/",
+     "price": 364999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-duo-512-gb/",
+     "price": 499999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-duo",
+     "price": 429999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-duo/",
+     "price": 429999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-duo-1-tb/",
+     "price": 599999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-duo",
+     "price": 519999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-duo/",
+     "price": 519999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-duo-2-tb/",
+     "price": 719999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 17 Pro Max",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 249999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": 289999
+    },
+    {
+     "label": "1TB",
+     "attributes": {
+      "storage": "1TB"
+     },
+     "officialPrice": 319999
+    },
+    {
+     "label": "2TB",
+     "attributes": {
+      "storage": "2TB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Cosmic Orange",
+    "Deep Blue",
+    "Silver"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-17-pro-max/iphone-17-pro-max-cosmic-orange-official-03-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-17-pro-max/iphone-17-pro-max-silver-official-01-500x500.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2646/iPhone_17_Pro_Max_-_Cosmic_Orange.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-17-pro-max",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-17-pro-max-price-in-bangladesh",
+     "price": 149990,
+     "oldPrice": 214990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan/Middle East",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-17-pro-max",
+     "price": 153499,
+     "oldPrice": 159999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro-max",
+     "price": 156499,
+     "oldPrice": 160000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-17-pro-max/",
+     "price": 156499,
+     "oldPrice": 175000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro-max",
+     "price": 156999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-17-pro-max",
+     "price": 195000,
+     "oldPrice": 249999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-17-pro-max",
+     "price": 199999,
+     "oldPrice": 214999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17-pro-max-256-gb/",
+     "price": 199999,
+     "oldPrice": 249999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro-max-official",
+     "price": 249999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro-max-official",
+     "price": 249999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-17-pro-max",
+     "price": 181999,
+     "oldPrice": 188500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro-max",
+     "price": 184999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-17-pro-max-price-in-bangladesh",
+     "price": 186990,
+     "oldPrice": 216990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan/Middle East",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro-max",
+     "price": 189999,
+     "oldPrice": 195000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-17-pro-max/",
+     "price": 194999,
+     "oldPrice": 215000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-17-pro-max",
+     "price": 228600,
+     "oldPrice": 283599,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-17-pro-max",
+     "price": 237999,
+     "oldPrice": 254999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17-pro-max-512-gb/",
+     "price": 237999,
+     "oldPrice": 289999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro-max-official",
+     "price": 289999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro-max-official",
+     "price": 289999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-17-pro-max-price-in-bangladesh",
+     "price": 206990,
+     "oldPrice": 279900,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan/Middle East",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro-max",
+     "price": 207999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro-max",
+     "price": 214999,
+     "oldPrice": 280000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-17-pro-max",
+     "price": 218000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-17-pro-max/",
+     "price": 219000,
+     "oldPrice": 255000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17-pro-max-1-tb/",
+     "price": 264499,
+     "oldPrice": 319999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-17-pro-max",
+     "price": 270499,
+     "oldPrice": 288999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro-max-official",
+     "price": 319999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro-max-official",
+     "price": 319999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro-max",
+     "price": 229999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro-max",
+     "price": 239999,
+     "oldPrice": 349999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-17-pro-max",
+     "price": 259999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-17-pro-max/",
+     "price": 260999,
+     "oldPrice": 280000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17-pro-max-2-tb/",
+     "price": 335999,
+     "oldPrice": 379999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro-max-official",
+     "price": 349999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "2TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro-max-official",
+     "price": 349999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 17 Pro",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 229999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": 269999
+    },
+    {
+     "label": "1TB",
+     "attributes": {
+      "storage": "1TB"
+     },
+     "officialPrice": 299999
+    }
+   ],
+   "colors": [
+    "Cosmic Orange",
+    "Deep Blue",
+    "Silver"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-17-pro/iphone-17-pro-silver-official-01-500x500.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-17-Pro-Deep-Blue-5525.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2644/iPhone_17_Pro_-_Cosmic_Orange.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-17-pro",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-17-pro",
+     "price": 143499,
+     "oldPrice": 147500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan/UAE",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-17-pro/",
+     "price": 144499,
+     "oldPrice": 159000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-17-pro-price-in-bangladesh",
+     "price": 146990,
+     "oldPrice": 179990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan/Middle East",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro",
+     "price": 146999,
+     "oldPrice": 151999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro",
+     "price": 147999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-17-pro",
+     "price": 181499,
+     "oldPrice": 192999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17-pro-256-gb/",
+     "price": 181499,
+     "oldPrice": 229999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-17-pro",
+     "price": 182500,
+     "oldPrice": 229999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro-official",
+     "price": 229999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro-official",
+     "price": 229999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-17-pro",
+     "price": 189500,
+     "oldPrice": 198000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan/UAE",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro",
+     "price": 190999,
+     "oldPrice": 260000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-17-pro-price-in-bangladesh",
+     "price": 191990,
+     "oldPrice": 241990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Singapore/Australia/Thailand",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro",
+     "price": 192999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-17-pro/",
+     "price": 193999,
+     "oldPrice": 205000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-17-pro",
+     "price": 218499,
+     "oldPrice": 234999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17-pro-512-gb/",
+     "price": 218499,
+     "oldPrice": 269999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro-official",
+     "price": 269999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro-official",
+     "price": 269999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-17-pro-price-in-bangladesh",
+     "price": 203990,
+     "oldPrice": 255990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-17-pro",
+     "price": 225000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-17-pro/",
+     "price": 226000,
+     "oldPrice": 230000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-17-pro",
+     "price": 257999,
+     "oldPrice": 275999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17-pro-1-tb/",
+     "price": 261000,
+     "oldPrice": 299999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-pro-official",
+     "price": 299999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-pro-official",
+     "price": 299999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone Air",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 209999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": 249999
+    },
+    {
+     "label": "1TB",
+     "attributes": {
+      "storage": "1TB"
+     },
+     "officialPrice": 279999
+    }
+   ],
+   "colors": [
+    "Sky Blue",
+    "Light Gold",
+    "Cloud White",
+    "Space Black"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-air/iphone-air-sky-blue-official-04-500x500.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iphone-air-sky-blue-1775.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2645/iPhone_Air_-_Light_Gold.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-air",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-air-price-in-bangladesh",
+     "price": 112990,
+     "oldPrice": 164990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-air",
+     "price": 112999,
+     "oldPrice": 140000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-air/",
+     "price": 114999,
+     "oldPrice": 146990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "UAE",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-air",
+     "price": 116499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan/UAE",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-air",
+     "price": 116999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-air",
+     "price": 164999,
+     "oldPrice": 189999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17-air-256-gb/",
+     "price": 164999,
+     "oldPrice": 209999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-air",
+     "price": 166500,
+     "oldPrice": 209999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-air-official",
+     "price": 209999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-air-official",
+     "price": 209999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-air",
+     "price": 145000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-air/",
+     "price": 146000,
+     "oldPrice": 150000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17-air-512-gb/",
+     "price": 224999,
+     "oldPrice": 249999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-air-official",
+     "price": 249999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-air-official",
+     "price": 249999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17-air-1-tb/",
+     "price": 251999,
+     "oldPrice": 279999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-air-official",
+     "price": 279999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-air-official",
+     "price": 279999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 17",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 179999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": 219999
+    }
+   ],
+   "colors": [
+    "Black",
+    "White",
+    "Mist Blue",
+    "Sage",
+    "Lavender"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-17/iphone-17-mist-blue-official-03-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-17/iphone-17-black-official-05-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-17/iphone-17-sage-official-04-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-17",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17",
+     "price": 115999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Canada",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-17",
+     "price": 117499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17",
+     "price": 117999,
+     "oldPrice": 129999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-17/",
+     "price": 118499,
+     "oldPrice": 121000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-17-price-in-bangladesh",
+     "price": 119990,
+     "oldPrice": 130990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan/Middle East",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-17",
+     "price": 140000,
+     "oldPrice": 179999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-17",
+     "price": 154999,
+     "oldPrice": 169999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17-256-gb/",
+     "price": 154999,
+     "oldPrice": 179999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-official",
+     "price": 179999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-official",
+     "price": 179999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-17",
+     "price": 121000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-17/",
+     "price": 122000,
+     "oldPrice": 125000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17-512-gb/",
+     "price": 197999,
+     "oldPrice": 219999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17-official",
+     "price": 219999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17-official",
+     "price": 219999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 17e",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 124999
+    }
+   ],
+   "colors": [
+    "Black",
+    "White",
+    "Soft Pink"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-17e/iphone-17e-black-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-17e/iphone-17e-white-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/apple/iphone-17e/iphone-17e-soft-pink-01-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-17e",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-17e",
+     "price": 77500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-17e",
+     "price": 79999,
+     "oldPrice": 88000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-17e",
+     "price": 84999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-17e",
+     "price": 114999,
+     "oldPrice": 124999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-17e-256-gb/",
+     "price": 114999,
+     "oldPrice": 124999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 16",
+   "category": "mobile",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "128GB",
+     "attributes": {
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Black",
+    "White",
+    "Pink",
+    "Teal",
+    "Ultramarine"
+   ],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iphone-16-black-3872.png",
+    "https://assets.gadgetandgear.com/upload/media/iphone-16-128gb-black.jpeg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1050/iphone_16_Black.webp"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-16",
+     "price": 85000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-16/",
+     "price": 86000,
+     "oldPrice": 90000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-16",
+     "price": 95999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Canada",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-16",
+     "price": 99990,
+     "oldPrice": 128990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Hong Kong/China",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-16",
+     "price": 99999,
+     "oldPrice": 110000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Japan",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-16",
+     "price": 129999,
+     "oldPrice": 139999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-16",
+     "price": 111000,
+     "oldPrice": 118000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Singapore",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-16/",
+     "price": 112000,
+     "oldPrice": 119000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Singapore",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-16-256gb",
+     "price": 189999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPad 11-inch (A16)",
+   "category": "tablet",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "128GB Wi-Fi",
+     "attributes": {
+      "storage": "128GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "128GB Wi-Fi + Cellular",
+     "attributes": {
+      "storage": "128GB",
+      "connectivity": "Wi-Fi + Cellular"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "256GB Wi-Fi",
+     "attributes": {
+      "storage": "256GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "256GB Wi-Fi + Cellular",
+     "attributes": {
+      "storage": "256GB",
+      "connectivity": "Wi-Fi + Cellular"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "512GB Wi-Fi",
+     "attributes": {
+      "storage": "512GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Blue",
+    "Pink",
+    "Silver",
+    "Yellow"
+   ],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/ipad/ipad-11-inch-wifi-a16-11th-generation-256gb-blue.jpeg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1875/iPad_11th_Gen_Blue.webp",
+    "https://www.startech.com.bd/image/cache/catalog/tablet/apple/ipad-11th-gen-2025/apple-ipad-11th-gen-blue-04-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/apple-ipad-11-inch-11th-gen",
+   "offers": [
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-11th-gen",
+     "price": 53999,
+     "oldPrice": 56999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/ipad-11th-gen-2025",
+     "price": 54499,
+     "oldPrice": 60000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/apple-ipad-11-inch-11th-gen",
+     "price": 54500,
+     "oldPrice": 56500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/ipad-11th-generation",
+     "price": 55999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/apple-ipad-11-inch/",
+     "price": 56490,
+     "oldPrice": 59000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-11-inch-wifi-a16-11th-gen",
+     "price": 59999,
+     "oldPrice": 64999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/ipad-2025-11th-gen-11-inch-wifi-128gb/",
+     "price": 62900,
+     "oldPrice": 66900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi + Cellular",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/apple-ipad-11-inch-11th-gen",
+     "price": 59500,
+     "oldPrice": 61500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi + Cellular",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-11th-gen",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi + Cellular",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/ipad-11th-gen-2025",
+     "price": 61999,
+     "oldPrice": 65000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi + Cellular",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/ipad-11th-generation",
+     "price": 61999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-11th-gen",
+     "price": 68999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/ipad-11th-gen-2025",
+     "price": 69999,
+     "oldPrice": 80000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/ipad-11th-generation",
+     "price": 69999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/apple-ipad-11-inch/",
+     "price": 70490,
+     "oldPrice": 79000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-11-inch-wifi-a16-11th-gen-256gb",
+     "price": 74999,
+     "oldPrice": 81999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/apple-ipad-11-inch-11th-gen",
+     "price": 75500,
+     "oldPrice": 77500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/ipad-2025-11th-gen-11-inch-wifi-256gb/",
+     "price": 76900,
+     "oldPrice": 81900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi + Cellular",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-11th-gen",
+     "price": 91999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB Wi-Fi",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/ipad-2025-11th-gen-11inch-wifi-512gb/",
+     "price": 109900,
+     "oldPrice": 122900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPad mini (A17 Pro)",
+   "category": "tablet",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "128GB Wi-Fi",
+     "attributes": {
+      "storage": "128GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "128GB Wi-Fi + Cellular",
+     "attributes": {
+      "storage": "128GB",
+      "connectivity": "Wi-Fi + Cellular"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "256GB Wi-Fi",
+     "attributes": {
+      "storage": "256GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Blue",
+    "Purple",
+    "Space Gray",
+    "Starlight"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/tablet-pc/apple/ipad-mini-7/ipad-mini-7-purple-01-500x500.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iPad-mini-2024-Space-Gray-7980_jpg-1205.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1453/iPad_Mini_7_Space_Grey.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/apple-ipad-mini-7",
+   "offers": [
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/ipad-mini-7",
+     "price": 58499,
+     "oldPrice": 66000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-mini-7-wifi-128gb",
+     "price": 69999,
+     "oldPrice": 74999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/apple-ipad-mini-7",
+     "price": 73500,
+     "oldPrice": 77500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-mini-7",
+     "price": 73500,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/ipad-mini-7",
+     "price": 79999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi + Cellular",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-mini-7-wifi-plus-cellular",
+     "price": 89999,
+     "oldPrice": 99999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi + Cellular",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/ipad-mini-7",
+     "price": 91999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/ipad-mini-7",
+     "price": 67499,
+     "oldPrice": 80000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-mini-7",
+     "price": 76000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-mini-7-wifi-256gb",
+     "price": 79999,
+     "oldPrice": 86999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPad Air 11-inch (M4)",
+   "category": "tablet",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "128GB Wi-Fi",
+     "attributes": {
+      "storage": "128GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "128GB Wi-Fi + Cellular",
+     "attributes": {
+      "storage": "128GB",
+      "connectivity": "Wi-Fi + Cellular"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "256GB Wi-Fi",
+     "attributes": {
+      "storage": "256GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "256GB Wi-Fi + Cellular",
+     "attributes": {
+      "storage": "256GB",
+      "connectivity": "Wi-Fi + Cellular"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Blue",
+    "Purple",
+    "Space Gray",
+    "Starlight"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/tablet/apple/ipad-air-m4/ipad-air-m4-11inch-blue-04-500x500.webp",
+    "https://assets.gadgetandgear.com/upload/media/apple/ipad-air-11-inch-wifi-m4-chip-space-grey.jpeg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3485/Blue_3.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/ipad-air-m4",
+   "offers": [
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/ipad-air-m4-11",
+     "price": 88499,
+     "oldPrice": 94000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-air-m4",
+     "price": 88999,
+     "oldPrice": 95999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/ipad-air-m4",
+     "price": 90000,
+     "oldPrice": 93500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/ipad-air-m4-11-inch",
+     "price": 93999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-air-11-inch-wifi-m4-chip",
+     "price": 102999,
+     "oldPrice": 110999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi + Cellular",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/ipad-air-m4-11-inch",
+     "price": 107999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi + Cellular",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-air-11-inch-cellular-m4-chip",
+     "price": 119999,
+     "oldPrice": 129999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi + Cellular",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/ipad-air-2026-11-inch-m4-chip-wifi-cellular-128-gb/",
+     "price": 128900,
+     "oldPrice": 139900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-air-m4",
+     "price": 109999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/ipad-air-m4-11",
+     "price": 113999,
+     "oldPrice": 115999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-air-11-inch-wifi-m4-chip-256gb",
+     "price": 116999,
+     "oldPrice": 125999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/ipad-air-2026-11-inch-m4-chip-wifi-256-gb/",
+     "price": 118900,
+     "oldPrice": 121900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi + Cellular",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/ipad-air-2026-11-inch-m4-chip-wifi-cellular-256-gb/",
+     "price": 153900,
+     "oldPrice": 155900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPad Air 13-inch (M4)",
+   "category": "tablet",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "128GB Wi-Fi",
+     "attributes": {
+      "storage": "128GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "128GB Wi-Fi + Cellular",
+     "attributes": {
+      "storage": "128GB",
+      "connectivity": "Wi-Fi + Cellular"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "256GB Wi-Fi",
+     "attributes": {
+      "storage": "256GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Blue",
+    "Purple",
+    "Space Gray",
+    "Starlight"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/tablet/apple/ipad-air-m4-13-inch/ipad-air-m4-13-inch-space-gray-11-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/tablet/apple/ipad-air-m4-13-inch/ipad-air-m4-13-inch-blue-04-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/ipad-air-m4-13-inch",
+   "offers": [
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-air-m4",
+     "price": 114999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/ipad-air-m4-13-inch",
+     "price": 115490,
+     "oldPrice": 119500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-air-13-inch-wifi-m4-chip",
+     "price": 133999,
+     "oldPrice": 146999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi + Cellular",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/ipad-air-2026-13-inch-m4-chip-wifi-cellular-128-gb/",
+     "price": 154900,
+     "oldPrice": 169900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "128GB Wi-Fi + Cellular",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-air-13-inch-cellular-m4-chip",
+     "price": 164999,
+     "oldPrice": 179999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-air-13-inch-wifi-m4-chip-256gb",
+     "price": 149999,
+     "oldPrice": 164999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/ipad-air-2026-13-inch-m4-chip-wifi-256-gb/",
+     "price": 162900,
+     "oldPrice": 175900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPad Pro 11-inch (M5)",
+   "category": "tablet",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "256GB Wi-Fi",
+     "attributes": {
+      "storage": "256GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "256GB Wi-Fi + Cellular",
+     "attributes": {
+      "storage": "256GB",
+      "connectivity": "Wi-Fi + Cellular"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "512GB Wi-Fi",
+     "attributes": {
+      "storage": "512GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Space Black",
+    "Silver"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/tablet/apple/ipad-pro-m5/11-inch/ipad-pro-m5-11inch-space-black-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/tablet/apple/ipad-pro-m5/11-inch/ipad-pro-m5-11inch-silver-02-500x500.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2810/iPad_Pro_M5_-_Silver.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/ipad-pro-m5",
+   "offers": [
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-pro-m5-2025",
+     "price": 143999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/ipad-pro-m5",
+     "price": 144000,
+     "oldPrice": 155000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/ipad-pro-m5-11-2025",
+     "price": 144999,
+     "oldPrice": 160000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/ipad-pro-m5-11-inch",
+     "price": 149999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/ipad-pro-m5/",
+     "price": 150990,
+     "oldPrice": 155000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/ipad-pro-2025-11inch-m5-chip-wifi-256gb/",
+     "price": 173900,
+     "oldPrice": 179900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-pro-11-inch-wifi-m5-chip",
+     "price": 174999,
+     "oldPrice": 189999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi + Cellular",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-pro-m5-2025",
+     "price": 158999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi + Cellular",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/ipad-pro-m5-11-2025",
+     "price": 159999,
+     "oldPrice": 170000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi + Cellular",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/ipad-pro-m5-cellular",
+     "price": 168500,
+     "oldPrice": 175000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB Wi-Fi",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/ipad-pro-m5",
+     "price": 171000,
+     "oldPrice": 182000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-pro-m5-2025",
+     "price": 172500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-pro-11-inch-m5-chip-512gb",
+     "price": 194999,
+     "oldPrice": 209999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB Wi-Fi",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/ipad-pro-2025-11inch-m5-chip-wifi-512gb/",
+     "price": 202900,
+     "oldPrice": 209900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPad Pro 13-inch (M5)",
+   "category": "tablet",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "256GB Wi-Fi",
+     "attributes": {
+      "storage": "256GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "256GB Wi-Fi + Cellular",
+     "attributes": {
+      "storage": "256GB",
+      "connectivity": "Wi-Fi + Cellular"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "512GB Wi-Fi",
+     "attributes": {
+      "storage": "512GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "512GB Wi-Fi + Cellular",
+     "attributes": {
+      "storage": "512GB",
+      "connectivity": "Wi-Fi + Cellular"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Space Black",
+    "Silver"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/tablet/apple/ipad-pro-m5/13-inch/ipad-pro-m5-13inch-space-black-1-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/tablet/apple/ipad-pro-m5/13-inch/ipad-pro-m5-13inch-silver-1-500x500.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2811/iPad_Pro_M5_-_Silver.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/ipad-pro-m5-13-inch",
+   "offers": [
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-pro-m5-2025",
+     "price": 167999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/ipad-pro-m5-13-inch",
+     "price": 167999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/apple-ipad-pro-m5/",
+     "price": 169990,
+     "oldPrice": 173000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/ipad-pro-m5-13-2025",
+     "price": 169999,
+     "oldPrice": 180000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/ipad-pro-m5-13-inch",
+     "price": 172000,
+     "oldPrice": 178500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/ipad-pro-13-inch-m5-chip",
+     "price": 214999,
+     "oldPrice": 229999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/ipad-pro-2026-13-inch-m5-chip-wifi-256-gb/",
+     "price": 215900,
+     "oldPrice": 229900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi + Cellular",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/ipad-pro-m5-2025",
+     "price": 169999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi + Cellular",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/ipad-pro-m5-13-2025",
+     "price": 174999,
+     "oldPrice": 190000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "256GB Wi-Fi + Cellular",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/ipad-pro-m5-13-inch-cellular",
+     "price": 182000,
+     "oldPrice": 185000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB Wi-Fi",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/ipad-pro-m5-13-inch",
+     "price": 207000,
+     "oldPrice": 213500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB Wi-Fi",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/ipad-pro-2026-13-inch-m5-chip-wifi-512-gb/",
+     "price": 254900,
+     "oldPrice": 264900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB Wi-Fi + Cellular",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/ipad-pro-m5-13-2025",
+     "price": 199999,
+     "oldPrice": 240000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "512GB Wi-Fi + Cellular",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/ipad-pro-m5-13-inch-cellular",
+     "price": 212000,
+     "oldPrice": 215000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-21"
+    }
+   ]
+  }
+ ]
+}

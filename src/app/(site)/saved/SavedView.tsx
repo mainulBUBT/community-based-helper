@@ -18,7 +18,7 @@ export function SavedView() {
 
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">{t.saved.title}</h1>
+      <h1 className="text-xl font-bold md:text-2xl">{t.saved.title}</h1>
       {loading ? (
         <ListSkeleton rows={3} />
       ) : saved.length === 0 ? (

@@ -1,4 +1,5 @@
-const CACHE = "sashroy-v1";
+const CACHE = "dordam-v2";
+const cacheable = (response) => response.ok && response.type === "basic";
 const SHELL = ["/", "/search/", "/saved/", "/offline/"];
 
 self.addEventListener("install", (event) => {
@@ -25,8 +26,10 @@ self.addEventListener("fetch", (event) => {
         (hit) =>
           hit ??
           fetch(request).then((response) => {
-            const copy = response.clone();
-            caches.open(CACHE).then((cache) => cache.put(request, copy));
+            if (cacheable(response)) {
+              const copy = response.clone();
+              caches.open(CACHE).then((cache) => cache.put(request, copy));
+            }
             return response;
           }),
       ),
@@ -38,8 +41,10 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(request)
         .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE).then((cache) => cache.put(request, copy));
+          if (cacheable(response)) {
+            const copy = response.clone();
+            caches.open(CACHE).then((cache) => cache.put(request, copy));
+          }
           return response;
         })
         .catch(() => caches.match(request).then((hit) => hit ?? caches.match("/offline/"))),

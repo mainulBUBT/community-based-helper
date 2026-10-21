@@ -44,7 +44,7 @@ export async function testLlm({ baseUrl, model, apiKey }: PrivateSettings["llm"]
   const response = await fetch(`${baseUrl.replace(/\/+$/, "")}/chat/completions`, {
     method: "POST",
     headers: { "content-type": "application/json", authorization: `Bearer ${apiKey ?? ""}` },
-    body: JSON.stringify({ model, messages: [{ role: "user", content: "Reply with: ok" }], max_tokens: 5 }),
+    body: JSON.stringify({ model, messages: [{ role: "user", content: "Reply with: ok" }] }),
   });
   if (!response.ok) throw new Error(`${response.status} ${await response.text()}`.slice(0, 200));
   const body = await response.json();

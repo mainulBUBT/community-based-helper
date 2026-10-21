@@ -10,12 +10,14 @@
 
 Supabase, Cloudflare আর ডোমেইনে চালু করার পুরো ধাপ: **[setup-guide.md](setup-guide.md)**
 
-1. ⛔ **Supabase প্রজেক্ট খোলা।** CLI দিয়ে নতুন প্রজেক্ট খুলতে গেলে "Forbidden" আসে। এই মেশিনের CLI টোকেন সম্ভবত শুধু পুরনো পথঘাট প্রজেক্টের জন্য। মালিককে `npx supabase login` আবার চালাতে হবে, অথবা supabase.com থেকে নিজে প্রজেক্ট খুলে ref দিতে হবে। বিস্তারিত: [database](features/11-database.md)
-2. ⬜ প্রজেক্ট খোলার পর migration চালানো, `.env.local` এ key বসানো, মালিককে অ্যাডমিন বানানো। দেখুন [auth](features/10-auth.md)
-3. ⬜ worker গুলো আসল ডেটাবেসে একবার চালিয়ে দেখা। দেখুন [workers](features/12-workers-cron.md)
-4. ⬜ Cloudflare Pages এ নতুন প্রজেক্টে deploy। দেখুন [deploy](features/16-deploy.md)
-5. ✅ `/about/` পেজ — হয়েছে (`/about/` বাংলা, `/en/about/` English), worker এর user-agent এর লিংক এখন কাজ করে।
-6. ⬜ কিছুই commit করা হয়নি। মালিক অনুমতি দিলে `main` এ commit।
+নতুন পণ্য বা দোকান যোগের নিয়ম: **[adding-products.md](adding-products.md)**
+
+1. ✅ **Supabase প্রজেক্ট** `fwcmpzdsbdbslollqxjk` খোলা, ৬টা migration চলেছে, `seed.sql` চালানো হয়েছে (`npx supabase db push --include-seed`)।
+2. ⬜ নিজেকে অ্যাডমিন বানানো, Authentication এর সেটিং আর Turnstile secret। দেখুন [setup-guide](setup-guide.md) ধাপ ১ আর ৮।
+3. 🟡 GitHub secret/variable বসানো চলছে; Cloudflare Pages প্রজেক্ট `dordam` খোলা হয়েছে।
+4. ⬜ Actions → `rebuild` দিয়ে প্রথম deploy (`https://dordam.pages.dev`)।
+5. ⬜ অ্যাডমিনে AI সেটিংস, তারপর `prices` আর `discover` একবার হাতে চালিয়ে বার্তা দেখা। দেখুন [workers](features/12-workers-cron.md)
+6. ✅ `/about/` পেজ (`/about/` বাংলা, `/en/about/` English)।
 
 ## ফিচার ট্র্যাকার
 
@@ -38,6 +40,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | 15 | দোকানের জন্য Telegram bot | ⬜ | [15-telegram-bot](features/15-telegram-bot.md) |
 | 16 | Deploy আর ডোমেইন | ⬜ | [16-deploy](features/16-deploy.md) |
 | 17 | ডেটার উৎস আর নিয়ম | ✅ সিদ্ধান্ত | [17-data-sources](features/17-data-sources.md) |
+| 18 | নিরাপত্তা | 🟡 ড্যাশবোর্ড সেটিং বাকি | [18-security](features/18-security.md) |
 
 ## পুরো প্ল্যান সংক্ষেপে
 
@@ -45,7 +48,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 - **ক্যাটাগরি:** মোবাইল, Apple, স্মার্টওয়াচ।
 - **দোকান:** Star Tech, Pickaboo, Apple Gadgets, Gadget & Gear। এর বাইরে Telegram bot আর ক্রেতার পাঠানো দাম।
 - **বাদ:** Daraz (তাদের Terms এ দাম সংগ্রহ নিষেধ), Ryans আর TechLand (bot protection), Facebook scrape। bot protection ফাঁকি দেওয়ার কোড লেখা হবে না।
-- **সব ফ্রি:** Next.js static export, Cloudflare Pages, Supabase ফ্রি tier, GitHub Actions, Gemini ফ্রি tier।
+- **সব ফ্রি:** Next.js static export, Cloudflare Pages, Supabase ফ্রি tier, GitHub Actions; AI এর জন্য মালিকের নিজের OpenAI-compatible সাবস্ক্রিপশন।
 - **আয় (পরে):** Star Tech affiliate (৫%), দোকানের "verified listing"।
 
 ## স্ট্যাক
@@ -86,4 +89,5 @@ Supabase যুক্ত না থাকলে পুরো অ্যাপ `sr
 | নতুন migration | `npm run db:new <নাম>` |
 | migration চালানো | `npm run db:push` |
 | worker পরীক্ষা (DB ছাড়া) | `npm run worker:dry` |
+| সব দাম সিঙ্ক হয় কি না (DB ছাড়া) | `npm run worker:check` |
 | worker চালানো | `npm run worker <job>` |

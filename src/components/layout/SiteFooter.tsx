@@ -3,32 +3,32 @@
 import { Globe, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
+import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
 import type { SiteSettings } from "@/types/admin";
-import type { Category } from "@/types/catalog";
 import { BrandMark } from "./BrandMark";
 
-const CATEGORIES: Category[] = ["mobile", "apple", "watch"];
 const link = "text-sm text-white/75 hover:text-white";
 
 export function SiteFooter({ settings }: { settings: SiteSettings }) {
   const { t, num, lang, prefix } = useI18n();
+  const { categories } = useCategories();
   const siteName = lang === "en" && settings.nameEn ? settings.nameEn : settings.name;
   return (
     <footer className="mt-12 hidden bg-hero text-white md:block">
-      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="page-container grid gap-8 py-10 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-3">
           <Link href={`${prefix}/`} className="flex items-center gap-2 text-xl font-bold">
             <BrandMark size={32} inverted />
             {siteName}
           </Link>
-          <p className="text-sm text-white/75">{settings.tagline}</p>
+          <p className="text-sm text-white/75">{(lang === "en" ? settings.taglineEn : settings.tagline) || t.footer.tagline}</p>
         </div>
         <nav aria-label={t.footer.categories} className="flex flex-col gap-2">
           <span className="mb-1 text-sm font-bold">{t.footer.categories}</span>
-          {CATEGORIES.map((id) => (
-            <Link key={id} href={`${prefix}/search/?category=${id}`} className={link}>
-              {t.category[id].label}
+          {categories.map((c) => (
+            <Link key={c.slug} href={`${prefix}/search/?category=${c.slug}`} className={link}>
+              {lang === "en" ? c.nameEn : c.name}
             </Link>
           ))}
         </nav>
@@ -79,7 +79,7 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
         )}
       </div>
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-7xl px-4 py-4 text-xs text-white/60">{t.footer.rights(siteName, num(new Date().getFullYear()))}</p>
+        <p className="page-container py-4 text-xs text-white/60">{t.footer.rights(siteName, num(new Date().getFullYear()))}</p>
       </div>
     </footer>
   );

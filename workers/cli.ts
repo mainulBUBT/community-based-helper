@@ -6,8 +6,7 @@ import { rebuild } from "./jobs/rebuild";
 import { runJob, type JobId } from "./jobs/run";
 
 const jobs: Record<JobId, () => Promise<string>> = {
-  prices: refreshPrices(false),
-  "js-stores": refreshPrices(true),
+  prices: refreshPrices,
   discover,
   promos: readPromos,
   rebuild,

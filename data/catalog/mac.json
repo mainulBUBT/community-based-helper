@@ -1,0 +1,1594 @@
+{
+  "category": "mac",
+  "sites": [
+    {
+      "name": "Star Tech",
+      "website": "https://www.startech.com.bd",
+      "note": "Largest BD computer retailer; covers every current Mac line incl. Neo, M6 mini, M5 Max Studio. Sells imported units with '1 Year international warranty' (claims ~40 days), so marked unofficial. Prices shown are cash-discount prices; struck price used as oldPrice. Variant prices read by selecting options on the page. Mac mini M6 / Mac Studio pages carry an '(Inactive)' label in the title but show price and In Stock."
+    },
+    {
+      "name": "Gadget & Gear",
+      "website": "https://gadgetandgear.com",
+      "note": "Apple Authorised Reseller with official Bangladesh warranty; one page per config; many Pro/iMac configs currently Stock Out."
+    },
+    {
+      "name": "Apple Gadgets",
+      "website": "https://www.applegadgetsbd.com",
+      "note": "Apple-focused importer (unofficial); per-variant prices with Regular vs CN region options (Regular used); often cheapest; many higher configs pre-order only."
+    },
+    {
+      "name": "Sumash Tech",
+      "website": "https://www.sumashtech.com",
+      "note": "Unofficial importer ('1 Year Apple International Warranty'); good on Air/Neo/iMac; shows inflated strike-through prices; most Pro/Max configs are booking-only without a price."
+    },
+    {
+      "name": "Executive Machines",
+      "website": "https://executivemachines.com",
+      "note": "Apple Authorised Reseller & service provider (official); widest official config coverage incl. M5 Max and Mac Studio; usually highest prices."
+    }
+  ],
+  "products": [
+    {
+      "brand": "Apple",
+      "name": "MacBook Neo",
+      "category": "laptop",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "A18 Pro 8GB / 256GB",
+          "attributes": {
+            "chip": "A18 Pro",
+            "ram": "8GB",
+            "storage": "256GB",
+            "cpu": "6-core",
+            "gpu": "5-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "A18 Pro 8GB / 512GB",
+          "attributes": {
+            "chip": "A18 Pro",
+            "ram": "8GB",
+            "storage": "512GB",
+            "cpu": "6-core",
+            "gpu": "5-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Silver",
+        "Blush",
+        "Citrus",
+        "Indigo"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3467/MacBook_Neo_-_Blush.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3467/MacBook_Neo_-_Citrus.webp",
+        "https://executivemachines.com/wp-content/uploads/2026/04/MacBook-Neo-2026-Silver.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/macbook-neo",
+      "offers": [
+        {
+          "variant": "A18 Pro 8GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/macbook-neo",
+          "price": 97000,
+          "oldPrice": 99000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "A18 Pro 8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-neo",
+          "price": 99999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "A18 Pro 8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-neo",
+          "price": 86999,
+          "oldPrice": 88999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "A18 Pro 8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-neo",
+          "price": 87499,
+          "oldPrice": 96000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "A18 Pro 8GB / 256GB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-neo-13inch2026-a18-pro-chip-6core-cpu-5core-gpu-ram-8gb-ssd-256gb/",
+          "price": 96999,
+          "oldPrice": 110900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "A18 Pro 8GB / 512GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/macbook-neo-512gb",
+          "price": 112000,
+          "oldPrice": 115000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "A18 Pro 8GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-neo-8gb-512gb",
+          "price": 112999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "A18 Pro 8GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-neo",
+          "price": 102999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "A18 Pro 8GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-neo",
+          "price": 101499,
+          "oldPrice": 113000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "A18 Pro 8GB / 512GB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-neo-13inch2026-a18-pro-chip-6core-cpu-5core-gpu-ram-8gb-ssd-512gb/",
+          "price": 111999,
+          "oldPrice": 127900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "name": "MacBook Air 13\" M5",
+      "category": "laptop",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "M5 8-core GPU 16GB / 512GB",
+          "attributes": {
+            "chip": "M5",
+            "ram": "16GB",
+            "storage": "512GB",
+            "cpu": "10-core",
+            "gpu": "8-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M5 10-core GPU 16GB / 1TB",
+          "attributes": {
+            "chip": "M5",
+            "ram": "16GB",
+            "storage": "1TB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M5 10-core GPU 24GB / 1TB",
+          "attributes": {
+            "chip": "M5",
+            "ram": "24GB",
+            "storage": "1TB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Sky Blue",
+        "Silver",
+        "Starlight",
+        "Midnight"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3462/MacBook_Air_M5_-_Midnight.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3462/MacBook_Air_M5_-_Silver.webp",
+        "https://executivemachines.com/wp-content/uploads/2026/04/MacBook-Air-SkyBlue_2026.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/apple-macbook-air-m5-13-inch",
+      "offers": [
+        {
+          "variant": "M5 8-core GPU 16GB / 512GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-macbook-air-m5-13-inch",
+          "price": 161500,
+          "oldPrice": 175000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 8-core GPU 16GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-m5-13-inch",
+          "price": 165999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 8-core GPU 16GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m5",
+          "price": 150999,
+          "oldPrice": 164999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 8-core GPU 16GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m5-136",
+          "price": 156999,
+          "oldPrice": 230000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 8-core GPU 16GB / 512GB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-air-13inch2026-m5-chip-10core-cpu-8core-gpu-ram-16gb-ssd-512gb/",
+          "price": 179999,
+          "oldPrice": 204900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 10-core GPU 16GB / 1TB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-macbook-air-m5-13-inch-10-core-gpu",
+          "price": 215000,
+          "oldPrice": 225000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 10-core GPU 16GB / 1TB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-m5-13-inch-16gb-1tb",
+          "price": 210999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 10-core GPU 16GB / 1TB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m5",
+          "price": 203499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 10-core GPU 16GB / 1TB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m5-136",
+          "price": 204999,
+          "oldPrice": 280000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 10-core GPU 16GB / 1TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-air-13-inch-2026-m5-chip-10-core-cpu-10-core-gpu-ram-16-gb-ssd-1tb/",
+          "price": 221999,
+          "oldPrice": 249900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 10-core GPU 24GB / 1TB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-macbook-air-m5-13-inch-10-core-gpu",
+          "price": 240000,
+          "oldPrice": 250000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 10-core GPU 24GB / 1TB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-m5-13-inch-24gb-1tb",
+          "price": 249999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 10-core GPU 24GB / 1TB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m5",
+          "price": 234999,
+          "oldPrice": 237999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 10-core GPU 24GB / 1TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-air-13-inch-2026-m5-chip-10-core-cpu-10-core-gpu-ram-24-gb-ssd-1tb/",
+          "price": 244900,
+          "oldPrice": 269900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "name": "MacBook Air 15\" M5",
+      "category": "laptop",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "M5 16GB / 512GB",
+          "attributes": {
+            "chip": "M5",
+            "ram": "16GB",
+            "storage": "512GB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M5 16GB / 1TB",
+          "attributes": {
+            "chip": "M5",
+            "ram": "16GB",
+            "storage": "1TB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M5 24GB / 1TB",
+          "attributes": {
+            "chip": "M5",
+            "ram": "24GB",
+            "storage": "1TB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Sky Blue",
+        "Silver",
+        "Starlight",
+        "Midnight"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3549/MacBook_Air_M5_-_Midnight.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3549/MacBook_Air_M5_-_Silver.webp",
+        "https://assets.gadgetandgear.com/upload/media/apple/macbook-air-m5-15-inch-starlight.jpeg"
+      ],
+      "specsSource": "https://www.startech.com.bd/apple-macbook-air-m5-15-inch",
+      "offers": [
+        {
+          "variant": "M5 16GB / 512GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-macbook-air-m5-15-inch",
+          "price": 215000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-m5-15-inch",
+          "price": 199999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m5-15-inch",
+          "price": 195999,
+          "oldPrice": 199999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m5-15",
+          "price": 199999,
+          "oldPrice": 260000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 512GB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-air-15inch2026-m5-chip-10core-cpu-10core-gpu-ram-16gb-ssd-512gb/",
+          "price": 207999,
+          "oldPrice": 234900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 1TB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-macbook-air-m5-15-inch",
+          "price": 240000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 1TB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-m5-15-inch-16gb-1tb",
+          "price": 244999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 1TB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m5-15-inch",
+          "price": 231999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 1TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-air-15inch2026-m5-chip-10core-cpu-10core-gpu-ram-16gb-ssd-1tb/",
+          "price": 249999,
+          "oldPrice": 279900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 24GB / 1TB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-m5-15-inch-24gb-1tb",
+          "price": 269999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 24GB / 1TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-air-15inch2026-m5-chip-10core-cpu-10core-gpu-ram-24gb-ssd-1tb/",
+          "price": 269900,
+          "oldPrice": 294900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "name": "MacBook Pro 14\" M5",
+      "category": "laptop",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "M5 16GB / 512GB",
+          "attributes": {
+            "chip": "M5",
+            "ram": "16GB",
+            "storage": "512GB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M5 16GB / 1TB",
+          "attributes": {
+            "chip": "M5",
+            "ram": "16GB",
+            "storage": "1TB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M5 24GB / 1TB",
+          "attributes": {
+            "chip": "M5",
+            "ram": "24GB",
+            "storage": "1TB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Space Black",
+        "Silver"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2925/MacBook_Pro_14_M5_-_Space_Black.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2925/MacBook_Pro_14_M5_-_Silver.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/apple-macbook-pro-m5",
+      "offers": [
+        {
+          "variant": "M5 16GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-pro-14-inch-m5-chip",
+          "price": 249999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-pro-m5-14-inch-16gb512gb-10-core-cpu-10-core-gpu",
+          "price": 242999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-pro-m5-14",
+          "price": 229999,
+          "oldPrice": 234999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 1TB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-macbook-pro-m5",
+          "price": 267000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 1TB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-pro-14-inch-m5-chip-16gb-1tb",
+          "price": 314999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 1TB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-pro-m5-14-inch-161tb-10-core-cpu-10-core-gpu",
+          "price": 260999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 1TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-pro-14inch2025-m5-chip-10core-cpu-10core-gpu-ram-16gb-ssd-1tb/",
+          "price": 305900,
+          "oldPrice": 339900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 24GB / 1TB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-macbook-pro-m5",
+          "price": 295000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 24GB / 1TB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-pro-14-inch-m5-chip-24gb-1tb",
+          "price": 314999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 24GB / 1TB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-pro-m5-14-inch-24gb1tb-10-core-cpu-10-core-gpu",
+          "price": 275999,
+          "oldPrice": 281999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 24GB / 1TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-pro-14inch2025-m5-chip-10core-cpu-10core-gpu-ram-24gb-ssd-1tb/",
+          "price": 345900,
+          "oldPrice": 359900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "name": "MacBook Pro 14\" M5 Pro",
+      "category": "laptop",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "M5 Pro 15C CPU/16C GPU 24GB / 1TB",
+          "attributes": {
+            "chip": "M5 Pro",
+            "ram": "24GB",
+            "storage": "1TB",
+            "cpu": "15-core",
+            "gpu": "16-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M5 Pro 18C CPU/20C GPU 24GB / 2TB",
+          "attributes": {
+            "chip": "M5 Pro",
+            "ram": "24GB",
+            "storage": "2TB",
+            "cpu": "18-core",
+            "gpu": "20-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Space Black",
+        "Silver"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3463/MacBook_Pro_M5_-_Space_Black.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3463/MacBook_Pro_M5_-_Silver.webp",
+        "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro-m5/macbook-pro-m5-silver-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/apple-macbook-pro-m5-pro",
+      "offers": [
+        {
+          "variant": "M5 Pro 15C CPU/16C GPU 24GB / 1TB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-macbook-pro-m5-pro",
+          "price": 355000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 15C CPU/16C GPU 24GB / 1TB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-pro-m5-pro-chip-14-inch",
+          "price": 359999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 15C CPU/16C GPU 24GB / 1TB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-pro-m5-pro-14-inch-241tb-15-core-cpu-16-core-gpu",
+          "price": 314999,
+          "oldPrice": 318999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 15C CPU/16C GPU 24GB / 1TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-pro-14-inch-2026-m5-pro-chip-15-core-cpu-16-core-gpu-ram-24-gb-ssd-1-tb/",
+          "price": 385900,
+          "oldPrice": 389900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 18C CPU/20C GPU 24GB / 2TB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-pro-14-inch-m5-pro-chip-24gb-2tb-18c-cpu-20c-gpu",
+          "price": 439999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 18C CPU/20C GPU 24GB / 2TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-pro-14-inch-2026-m5-pro-chip-18-core-cpu-20-core-gpu-ram-24-gb-ssd-2-tb/",
+          "price": 459900,
+          "oldPrice": 499900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "name": "MacBook Pro 14\" M5 Max",
+      "category": "laptop",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "M5 Max 18C CPU/32C GPU 36GB / 2TB",
+          "attributes": {
+            "chip": "M5 Max",
+            "ram": "36GB",
+            "storage": "2TB",
+            "cpu": "18-core",
+            "gpu": "32-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Space Black",
+        "Silver"
+      ],
+      "images": [
+        "https://assets.gadgetandgear.com/upload/media/apple/macbook-pro-m5-pro-chip-14-inch-1.jpeg",
+        "https://assets.gadgetandgear.com/upload/media/apple/macbook-pro-m5-pro-chip-14-inch-2.jpeg"
+      ],
+      "specsSource": null,
+      "offers": [
+        {
+          "variant": "M5 Max 18C CPU/32C GPU 36GB / 2TB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-pro-m5-max-14-inch",
+          "price": 579999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Max 18C CPU/32C GPU 36GB / 2TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-pro-14-inch-2026-m5-max-chip-18-core-cpu-32-core-gpu-ram-36-gb-ssd-2-tb/",
+          "price": 595900,
+          "oldPrice": 629900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "name": "MacBook Pro 16\" M5 Pro",
+      "category": "laptop",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "M5 Pro 18C CPU/20C GPU 24GB / 1TB",
+          "attributes": {
+            "chip": "M5 Pro",
+            "ram": "24GB",
+            "storage": "1TB",
+            "cpu": "18-core",
+            "gpu": "20-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M5 Pro 18C CPU/20C GPU 48GB / 1TB",
+          "attributes": {
+            "chip": "M5 Pro",
+            "ram": "48GB",
+            "storage": "1TB",
+            "cpu": "18-core",
+            "gpu": "20-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Space Black",
+        "Silver"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3482/MacBook_Pro_M5_-_Space_Black.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3482/MacBook_Pro_M5_-_Silver.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/apple-macbook-pro-m5-pro-16-inch",
+      "offers": [
+        {
+          "variant": "M5 Pro 18C CPU/20C GPU 24GB / 1TB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-macbook-pro-m5-pro-16-inch",
+          "price": 425000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 18C CPU/20C GPU 24GB / 1TB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-pro-16-inch-m5-pro-chip-24gb-1tb",
+          "price": 424999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 18C CPU/20C GPU 24GB / 1TB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-pro-m5-pro-16-inch-241tb-18-core-cpu-20-core-gpu",
+          "price": 351999,
+          "oldPrice": 359999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 18C CPU/20C GPU 24GB / 1TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-pro-16-inch-2026-m5-pro-chip-18-core-cpu-20-core-gpu-ram-24-gb-ssd-1-tb/",
+          "price": 424900,
+          "oldPrice": 454900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 18C CPU/20C GPU 48GB / 1TB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-pro-16-inch-m5-pro-chip",
+          "price": 484999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 18C CPU/20C GPU 48GB / 1TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-pro-16-inch-2026-m5-pro-chip-18-core-cpu-20-core-gpu-ram-48-gb-ssd-1-tb/",
+          "price": 484900,
+          "oldPrice": 524900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "name": "MacBook Pro 16\" M5 Max",
+      "category": "laptop",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "M5 Max 18C CPU/32C GPU 36GB / 2TB",
+          "attributes": {
+            "chip": "M5 Max",
+            "ram": "36GB",
+            "storage": "2TB",
+            "cpu": "18-core",
+            "gpu": "32-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M5 Max 18C CPU/40C GPU 48GB / 2TB",
+          "attributes": {
+            "chip": "M5 Max",
+            "ram": "48GB",
+            "storage": "2TB",
+            "cpu": "18-core",
+            "gpu": "40-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Space Black",
+        "Silver"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3483/MacBook_Pro_M5_-_Space_Black.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3483/MacBook_Pro_M5_-_Silver.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/apple-macbook-pro-m5-max-16-inch",
+      "offers": [
+        {
+          "variant": "M5 Max 18C CPU/32C GPU 36GB / 2TB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-macbook-pro-m5-max-16-inch",
+          "price": 565000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Max 18C CPU/32C GPU 36GB / 2TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-pro-16-inch-2026-m5-max-chip-18-core-cpu-32-core-gpu-ram-36-gb-ssd-2-tb/",
+          "price": 619900,
+          "oldPrice": 639900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Max 18C CPU/40C GPU 48GB / 2TB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-macbook-pro-m5-max-16-inch-40-core-gpu",
+          "price": 730000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Max 18C CPU/40C GPU 48GB / 2TB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-pro-16-inch-m5-max-chip",
+          "price": 679999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Max 18C CPU/40C GPU 48GB / 2TB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/macbook-pro-16-inch-2026-m5-max-chip-18-core-cpu-40-core-gpu-ram-48-gb-ssd-2-tb/",
+          "price": 699900,
+          "oldPrice": 724900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "name": "iMac 24\" M4",
+      "category": "desktop",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "M4 8C GPU 16GB / 256GB",
+          "attributes": {
+            "chip": "M4",
+            "ram": "16GB",
+            "storage": "256GB",
+            "cpu": "8-core",
+            "gpu": "8-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M4 10C GPU 16GB / 512GB",
+          "attributes": {
+            "chip": "M4",
+            "ram": "16GB",
+            "storage": "512GB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M4 10C GPU 24GB / 512GB",
+          "attributes": {
+            "chip": "M4",
+            "ram": "24GB",
+            "storage": "512GB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Blue",
+        "Purple",
+        "Pink",
+        "Orange",
+        "Yellow",
+        "Green",
+        "Silver"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/all-in-one-pc/apple/imac-m4/silver/imac-m4-silver-01-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/all-in-one-pc/apple/imac-m4/blue/imac-m4-blue-500x500.webp",
+        "https://executivemachines.com/wp-content/uploads/2024/12/Imac-Blue-2025.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/apple-imac-m4-256gb-ssd-24-inch-all-in-one-pc",
+      "offers": [
+        {
+          "variant": "M4 8C GPU 16GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-imac-m4-256gb-ssd-24-inch-all-in-one-pc",
+          "price": 265000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M4 8C GPU 16GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/apple-imac-24-inch-m4-chip-16gb-256gb",
+          "price": 199999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M4 8C GPU 16GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/imac-24-inch-2024-m4-chip-8-core-cpu-8-core-gpu-16256gb",
+          "price": 245000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M4 8C GPU 16GB / 256GB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/imac-24inch-2025-m4-chip-8core-cpu-8core-gpu-ram-16gb-ssd-256gb/",
+          "price": 244900,
+          "oldPrice": 279900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M4 10C GPU 16GB / 512GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-imac-m4-512gb-ssd-24-inch-aio-pc",
+          "price": 350000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M4 10C GPU 16GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/apple-imac-24-inch-m4-chip-16gb-512gb",
+          "price": 264999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M4 10C GPU 16GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/imac-24-inch-2024-m4-chip-10-core-cpu-10-core-gpu-16512gb",
+          "price": 314999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M4 10C GPU 16GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/imac-24-m4-2024",
+          "price": 319999,
+          "oldPrice": 339999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M4 10C GPU 24GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/apple-imac-24-inch-m4-chip-24gb-512gb",
+          "price": 309999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M4 10C GPU 24GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/imac-24-inch-2024-m4-chip-10-core-cpu-10-core-gpu-24512gb",
+          "price": 287000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M4 10C GPU 24GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/imac-24-m4-2024",
+          "price": 359999,
+          "oldPrice": 364999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "name": "Mac mini M6",
+      "category": "desktop",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "M6 16GB / 256GB",
+          "attributes": {
+            "chip": "M6",
+            "ram": "16GB",
+            "storage": "256GB",
+            "cpu": "12-core",
+            "gpu": "12-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M6 16GB / 512GB",
+          "attributes": {
+            "chip": "M6",
+            "ram": "16GB",
+            "storage": "512GB",
+            "cpu": "12-core",
+            "gpu": "12-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M6 24GB / 512GB",
+          "attributes": {
+            "chip": "M6",
+            "ram": "24GB",
+            "storage": "512GB",
+            "cpu": "12-core",
+            "gpu": "12-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Silver"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Mac-mini-M6-12-Core-CPU-12-Core-GPU-7535.png",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Mac-mini-M6-12-Core-CPU-12-Core-GPUd-2527.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/apple-mac-mini-m6",
+      "offers": [
+        {
+          "variant": "M6 16GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-mac-mini-m6",
+          "price": 132000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M6 16GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/apple-mac-mini-m6-chip",
+          "price": 124999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M6 16GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/apple-mac-mini-m6-12-core-cpu-12-core-gpu",
+          "price": 122499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M6 16GB / 256GB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/mac-mini-2026-m6-chip-12core-cpu-12core-gpu-ram-16gb-ssd-256gb/",
+          "price": 144000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M6 16GB / 512GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-mac-mini-m6",
+          "price": 173000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M6 16GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/apple-mac-mini-m6-chip-16gb-512gb",
+          "price": 159999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M6 16GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/apple-mac-mini-m6-12-core-cpu-12-core-gpu",
+          "price": 151999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M6 16GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/mac-mini-m6",
+          "price": 169999,
+          "oldPrice": 190000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M6 16GB / 512GB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/mac-mini-2026-m6-chip-12core-cpu-12core-gpu-ram-16gb-ssd-512gb/",
+          "price": 176000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M6 24GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/apple-mac-mini-m6-chip-24gb-512gb",
+          "price": 199999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M6 24GB / 512GB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/mac-mini-2026-m6-chip-12core-cpu-12core-gpu-ram-24gb-ssd-512gb/",
+          "price": 208000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "name": "Mac mini M5 Pro",
+      "category": "desktop",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "M5 Pro 15C CPU/16C GPU 24GB / 512GB",
+          "attributes": {
+            "chip": "M5 Pro",
+            "ram": "24GB",
+            "storage": "512GB",
+            "cpu": "15-core",
+            "gpu": "16-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Silver"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Mac-mini-M5-Pro-15-Core-CPU-16-Core-GPU-1471.png",
+        "https://executivemachines.com/wp-content/uploads/2024/12/Mac-Mini-2025.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/apple-mac-mini-m5-pro",
+      "offers": [
+        {
+          "variant": "M5 Pro 15C CPU/16C GPU 24GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/apple-mac-mini-m5-pro-chip",
+          "price": 259999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 15C CPU/16C GPU 24GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/apple-mac-mini-m5-pro-15-core-cpu-16-core-gpu",
+          "price": 248999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 15C CPU/16C GPU 24GB / 512GB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/mac-mini-2026-m5-pro-chip-15core-cpu-16core-gpu-ram-24gb-ssd-512gb/",
+          "price": 272000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "name": "Mac Studio M5 Max",
+      "category": "desktop",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "M5 Max 18C CPU/32C GPU 36GB / 512GB",
+          "attributes": {
+            "chip": "M5 Max",
+            "ram": "36GB",
+            "storage": "512GB",
+            "cpu": "18-core",
+            "gpu": "32-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Silver"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Mac-Studio-M5-Max-18-Core-CPU-32-Core-GPU-7514.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4675/Mac_Studio_5.webp",
+        "https://executivemachines.com/wp-content/uploads/2024/12/Mac-Studio-2025.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/apple-mac-studio-m5-max",
+      "offers": [
+        {
+          "variant": "M5 Max 18C CPU/32C GPU 36GB / 512GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/apple-mac-studio-m5-max",
+          "price": 435000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Max 18C CPU/32C GPU 36GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/mac-studio-m5-max-chip",
+          "price": 399999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Max 18C CPU/32C GPU 36GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/mac-studio-m5-max-18c-32g",
+          "price": 429999,
+          "oldPrice": 479999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Max 18C CPU/32C GPU 36GB / 512GB",
+          "site": "Executive Machines",
+          "url": "https://executivemachines.com/product/mac-studio-2026-m5-max-chip-18core-cpu-32core-gpu-ram-36gb-ssd-512gb/",
+          "price": 450000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    }
+  ]
+}

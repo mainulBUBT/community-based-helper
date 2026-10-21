@@ -1,0 +1,7500 @@
+{
+ "https://www.startech.com.bd/apple-airpods-pro-3": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Connection Type",
+     "value": "Wireless"
+    },
+    {
+     "label": "Microphone",
+     "value": "Dual beamforming microphones Inward-facing microphone"
+    },
+    {
+     "label": "Duration",
+     "value": "AirPods Pro 3 Up to 8 hours of listening time on a single charge with Active Noise Cancellation enabled (up to 7.5 hours with Spatial Audio and Head Tracking enabled) Up to 6.5 hours of listening time on a single charge with heart rate sensing during workouts Up to 10 hours of listening time on a single charge in Transparency using the Hearing Aid feature AirPods Pro 3 with MagSafe Charging Case (USB‑C) Up to 24 hours of listening time with Active Noise Cancellation enabled 5 minutes in the case provides around 1 hour of listening time"
+    },
+    {
+     "label": "Others",
+     "value": "Custom high dynamic range amplifier Active Noise Cancellation Adaptive Audio Transparency mode Conversation Awareness Voice Isolation Personalized Volume Loud Sound Reduction Personalized Spatial Audio with dynamic head tracking Adaptive EQ Studio-quality audio recording Vent system for pressure equalization Hearing Health: Hearing Test, Hearing Aid, Automatic Conversation Boost when using Hearing Aid feature, Hearing Protection Live Translation: Live Translation for communicating across languages Sensors: Dual beamforming microphones, Inward-facing microphone, Skin-detect sensor, Motion-detecting accelerometer, Speech-detecting accelerometer, Heart rate sensor for workouts, Touch control Chip: Apple H2 headphone chip, Apple U2 chip in MagSafe Charging Case (USB‑C) Dust, sweat, and water resistant (IP57): AirPods Pro and charging case Charging Case: Works with MagSafe charger, Apple Watch charger, Qi‑certified chargers, or USB‑C connector, Includes a speaker for use with Find My Touch Controls: Press once to play or pause media Press once to answer a call or mute or unmute Press once for camera remote Press twice to end a call Press twice to skip forward Press three times to skip back Press and hold to switch between listening modes Swipe up or down to adjust volume Say just “Siri” or “Hey Siri” to do things like play a song, make a call, or get directions Siri interactions Accessibility: Accessibility features help people with disabilities get the most out of their AirPods Pro. Features include: Hearing Test Hearing Aid Automatic Conversation Boost when using Hearing Aid feature Hearing Protection Live Listen audio Headphone levels Headphone Accommodations System Requirements: iPhone models with the latest version of iOS iPad models with the latest version of iPadOS Apple Watch models with the latest version of watchOS Mac models with the latest version of macOS Apple TV models with the latest version of tvOS Apple Vision Pro with the latest version of visionOS AirPods can be used as wireless Bluetooth headphones with Apple devices using earlier software and with non‑Apple devices, but functionality may be limited."
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Connector",
+     "value": "Bluetooth 5.3 wireless technology"
+    },
+    {
+     "label": "Drivers",
+     "value": "Custom high-excursion Apple driver"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Buds: Height: 1.22 inches (30.9 mm) Width: 0.76 inch (19.2 mm) Depth: 1.06 inches (27.0 mm) Case: Height: 1.86 inches (47.2 mm) Width: 2.45 inches (62.2 mm) Depth: 0.86 inch (21.8 mm)"
+    },
+    {
+     "label": "Weight",
+     "value": "Buds Weight: 0.20 ounce (5.55 grams) Case Weight: 1.55 ounces (43.99 grams)"
+    },
+    {
+     "label": "Color",
+     "value": "White"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/samsung-galaxy-buds-3-pro-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Frequency",
+     "value": "24bit / 96kHz)"
+    },
+    {
+     "label": "Signal/Noise",
+     "value": "Active Noise Cancellation: Yes"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth 5.4"
+    },
+    {
+     "label": "Microphone",
+     "value": "3 mics (All High-SNR Mics) + VPU (DNN + Personalized Beamforming)"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery Capacity (Earbud): 53mAh Battery Capacity (Case): 515mAh"
+    },
+    {
+     "label": "Duration",
+     "value": "Play Time (Total): Up to 7.0/30hr(ANC Off) / Up to 6.0/26hr(ANC On) Talk Time (Total): 20H / 22H (ANC off)"
+    },
+    {
+     "label": "Others",
+     "value": "Adaptive Noise Control SmartThings Find 9: Yes Auto Switch: Yes Compatibility: Android: Galaxy Wearable app, iOS: Bluetooth Bluetooth Profiles: A2DP,AVRCP,HFP,PBP,TMAP"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Drivers",
+     "value": "Speaker: 2-way Woofer + Tweeter"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Earbud: 1mm x 19.8mm x 33.2mm (W x H x D) Case: 9mm x 48.7mm x 24.4mm (W x H x D)"
+    },
+    {
+     "label": "Weight",
+     "value": "878g"
+    },
+    {
+     "label": "Color",
+     "value": "Silver"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/sony-wf-1000xm6-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Frequency",
+     "value": "20 Hz - 20,000 Hz (44.1 kHz sampling), 20 Hz - 40,000 Hz (LDAC 96 kHz sampling 990 kbps)"
+    },
+    {
+     "label": "Signal/Noise",
+     "value": "Noise Cancelling AMBIENT SOUND MODE QUICK ATTENTION"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Microphone",
+     "value": "Noise sensing microphones"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery Charge Method USB charge / Wireless charge (with case)"
+    },
+    {
+     "label": "Duration",
+     "value": "BATTERY LIFE (CONTINUOUS COMMUNICATION TIME) Max. 5 hrs (NC ON) / Max. 5.5 hrs (NC OFF) General Features (Active Headphones) Max. 8 hrs (NC ON) / Max. 12 hrs (NC OFF)"
+    },
+    {
+     "label": "Others",
+     "value": "WATERPROOF: IPX4 Profile: A2DP, AVRCP, HFP, HSP, TMAP, CSIP, MCP, VCP, CCP Supported Audio Format(s): SBC, AAC, LDAC, LC3 Supported Content Protection: SCMS-T"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Drivers",
+     "value": "8.4 mm"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Approx. 61.6 x 41.1 x 26.5 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "Approx. 47 g"
+    },
+    {
+     "label": "Color",
+     "value": "Black Platinum Silver"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/anker-soundcore-p40i-anc-tws-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Connection Type",
+     "value": "Wireless"
+    },
+    {
+     "label": "Microphone",
+     "value": "6 Mics with AI"
+    },
+    {
+     "label": "Duration",
+     "value": "Playtime (Single/With Case): 12H/60H"
+    },
+    {
+     "label": "Others",
+     "value": "Active Noise Cancellation: Adaptive ANC Sound: Big Bass Playtime (Single/With Case): 12H/60H Fast Charging: 10M = 5H Wireless Charging: Support Waterproof: IPX5 Design: In-Ear Customized Sound: HearID Control: Touch Control Multipoint Connection: Support"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Drivers",
+     "value": "11mm"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/cmf-buds-2": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Frequency",
+     "value": "5200 Hz"
+    },
+    {
+     "label": "Signal/Noise",
+     "value": "Up to 48 dB"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth 5.4, Dual Connection"
+    },
+    {
+     "label": "Microphone",
+     "value": "6 HD Microphones With Clear Voice Technology 3.0 Wind Noise Reduction 3.0"
+    },
+    {
+     "label": "Battery",
+     "value": "Rechargeable li-ion battery Earbud: 53 mAh Case: 460 mAh"
+    },
+    {
+     "label": "Duration",
+     "value": "Fast charging: Full charge with type-C wire: charge for 4 hours with buds only and 7.5 hours with case Full charge with charging case: 10 min charge for 2.4 hours with buds only and 4 hours with case Playback: ANC off: 55 hours with case and 13.5 hours with buds only ANC on: 32 hours with case and 7.5 hours with buds only Talk time: ANC off: 35 hours with case and 8.5 hours with buds only ANC on: 30 hours with case and 7 hours with buds only Charging time: Full Charge: 93 mins Earbuds in Case: 62 mins"
+    },
+    {
+     "label": "Others",
+     "value": "Environmental Adaptive ANC Transparency mode IP55 buds IPX2 case Google Fast Pair Microsoft Swift Pair In-ear detection LED charging status Low lag mode With Nothing Phone less than 110 ms under Game Mode Find my earbuds Touch Controls: Double tap: Skip forward, answer/hang up calls Triple tap: Skip back, reject calls Tap & hold: Switch between Active Noise Cancellation and Transparency Mode"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Drivers",
+     "value": "Drivers: Custom 11 mm dynamic Diaphragm: PMI (Polymethacrylimide) + PU (Polyurethane) Audio codec: AAC, SBC Features: Dirac Opteo, Spatial Audio Effect, Ultra Bass Technology, Custom EQ, Tuning by Nothing and Dirac"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Earbud: 33.4 x 20.6 x 22.8 mm Charging case: 53.3 x 53.3 x 23 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "Earbud: 4.5 g Charging case: 41.5g"
+    },
+    {
+     "label": "Color",
+     "value": "Dark Grey, , Light Green, Orange"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/sony-wh-1000xm6-headphone": [
+  {
+   "group": "Technical Specification",
+   "items": [
+    {
+     "label": "Driver Magnet",
+     "value": "Neodymium"
+    },
+    {
+     "label": "Frequency Range",
+     "value": "4 Hz - 40,000 Hz (JEITA) (Active Operation) 20 Hz-20,000 Hz(44.1 kHz sampling) 20 Hz-40,000 Hz(LDAC 96 kHz sampling 990 kbps) (Bluetooth Communication)"
+    },
+    {
+     "label": "Impedance",
+     "value": "48 ohm (1 kHz) (when connecting via the headphone cable with the unit turned on), 16 ohm (1 kHz) (when connecting via the headphone cable with the unit turned off)"
+    },
+    {
+     "label": "Sensitivity",
+     "value": "102 dB (1 kHz) / mW (when connecting via the headphone cable with the unit turned on), 100 dB (1 kHz) / mW (when connecting via the headphone cable with the unit turned off)"
+    },
+    {
+     "label": "Input Jack",
+     "value": "Gold-plated L-shaped stereo mini plug"
+    },
+    {
+     "label": "Driver Diameter",
+     "value": "30 mm"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth Version 5.3"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Max. 30 hours(NC ON), Max. 40 hours(NC OFF) (continuous music playback time) Max. 24 hours(NC ON), Max. 28 hours(NC OFF) (CONTINUOUS COMMUNICATION TIME)"
+    },
+    {
+     "label": "Others",
+     "value": "Personal NC Optimizer: Adaptive NC Optimizer Quick Attention: Yes Ambient Sound Mode - Normal: Yes Passive Operation: Yes Ambient Sound Mode: Yes"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Weight",
+     "value": "Approx. 254 g"
+    },
+    {
+     "label": "Color",
+     "value": "Black Midnight Blue Platinum Silver"
+    },
+    {
+     "label": "Cable Length",
+     "value": "Approx. 1.2 m"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/sony-wh-ch720n-wireless-headphone": [
+  {
+   "group": "Technical Specification",
+   "items": [
+    {
+     "label": "Frequency Range",
+     "value": "7 Hz - 20 000 Hz (JEITA) Frequency Response(bluetooth® Communication): 20 Hz - 20,000 Hz (Sampling frequency 44.1 kHz)"
+    },
+    {
+     "label": "Impedance",
+     "value": "325 ohms (1 kHz) (when connecting via the headphone cable with the unit turned on), 31 ohms (1 kHz) (when connecting via the headphone cable with the unit turned off)"
+    },
+    {
+     "label": "Sensitivity",
+     "value": "108 dB / mW (when connecting via the headphone cable with the unit turned on) , 99 dB / mW (when connecting via the headphone cable with the unit turned off)"
+    },
+    {
+     "label": "Input Jack",
+     "value": "Stereo Mini Jack"
+    },
+    {
+     "label": "Driver Diameter",
+     "value": "Dynamic 30 mm"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth Version 5.2"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Battery Life (Continuous Music Playback Time): Max. 35 hrs (NC ON), Max. 50 hrs (NC OFF) Battery Life(continuous Communication Time): Max. 35 hrs (NC ON), Max. 40 hrs (NC OFF)"
+    },
+    {
+     "label": "Others",
+     "value": "Volume Control: Yes Effective Range: 10m Frequency Range: 2.4GHz band (2.4000GHz-2.4835GHz) Profile: A2DP, AVRCP, HFP, HSP Supported Audio Format(s): SBC, AAC Supported Content Protection: SCMS-T"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Weight",
+     "value": "Approx. 192 g"
+    },
+    {
+     "label": "Color",
+     "value": "Black, White, Blue, Pink"
+    },
+    {
+     "label": "Cable Length",
+     "value": "approx. 1.2 m"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/jbl-tune-770nc-wireless-headphone": [
+  {
+   "group": "Technical Specification",
+   "items": [
+    {
+     "label": "Frequency Range",
+     "value": "20Hz-20KHz"
+    },
+    {
+     "label": "Impedance",
+     "value": "32ohms"
+    },
+    {
+     "label": "Sensitivity",
+     "value": "100 dB"
+    },
+    {
+     "label": "Driver Diameter",
+     "value": "40mm"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth version 5.3"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Charging time (hours from empty): 2 Maximum music play time with ANC off (hours): 70 Maximum music play time with ANC on (hours): 44 Maximum talk time (hours): 39 Maximum play time (hours): 70 Charging: Type-C"
+    },
+    {
+     "label": "Others",
+     "value": "Foldable 1 Built-in Microphone Detachable Cable Hands Free Call JBL Pure Bass Sound Multi-Point Connection"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Weight",
+     "value": "232 g"
+    },
+    {
+     "label": "Color",
+     "value": "Black Blue"
+    },
+    {
+     "label": "Cable Length",
+     "value": "Charging Cable Length (m): 1.2"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/anker-soundcore-space-one-headphone": [
+  {
+   "group": "Technical Specification",
+   "items": [
+    {
+     "label": "Frequency Range",
+     "value": "20Hz-20KHz"
+    },
+    {
+     "label": "Input Jack",
+     "value": "AUX Connectivity"
+    },
+    {
+     "label": "Driver Diameter",
+     "value": "40mm Triple Composite Dynamic Driver"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Up to 60 Hours w/o ANC, 40 Hours with ANC"
+    },
+    {
+     "label": "Others",
+     "value": "Hi-Res Wireless, LDAC Codec, Soundcore App, Adaptive ANC"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Weight",
+     "value": "265g (9.35 oz)"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "System Requirements",
+     "value": "Android, iOS, PC"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-watch-series-11": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "Always‑On Retina display with wide‑angle OLEDs and LTPO3 Ion‑X front glass with 2x scratch resistance (aluminum cases) Sapphire front crystal (titanium cases) Up to 2000 nits peak brightness 1 nit minimum brightness 326 pixels per inch"
+    },
+    {
+     "label": "Processor",
+     "value": "S10 chip with 64‑bit dual-core processor 4‑core Neural Engine"
+    },
+    {
+     "label": "Memory",
+     "value": "64GB capacity"
+    },
+    {
+     "label": "Battery",
+     "value": "All‑day battery life, up to 24 hours of normal use Up to 38 hours in Low Power Mode Built‑in rechargeable lithium‑ion battery Fast‑charge capable Up to 80% charge in about 30 minutes 15 minutes for up to 8 hours of normal use 5 minutes for up to 8 hours of sleep tracking"
+    },
+    {
+     "label": "Connectivity",
+     "value": "L1 GPS, GLONASS, Galileo, QZSS, and BeiDou Wi-Fi 4 (802.11n) Support for 2.4GHz and 5GHz Wi-Fi networks Bluetooth 5.3 Second-generation Ultra Wideband chip Apple Pay GymKit Support for Apple Watch For Your Kids International roaming"
+    },
+    {
+     "label": "Material",
+     "value": "Aluminium"
+    },
+    {
+     "label": "Sensor",
+     "value": "Electrical heart sensor Third‑generation optical heart sensor Blood oxygen sensor Temperature sensor Compass Always‑on altimeter High‑g accelerometer High dynamic range gyroscope Ambient light sensor Depth gauge to 6 meters Water temperature sensor"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Blood Oxygen app ECG app Cycle Tracking app with retrospective ovulation estimates Heart Rate app High and low heart rate notifications Irregular rhythm notifications Medications app Mindfulness app with state of mind tracking Noise app Sleep app including sleep stages Sleep score Sleep apnea notifications Hypertension notifications Audio: Speaker, Microphone, Media playback Safety: Emergency SOS International emergency calling Crash Detection Fall Detection Noise monitoring Backtrack"
+    },
+    {
+     "label": "OS",
+     "value": "watchOS"
+    },
+    {
+     "label": "Others",
+     "value": "Controls: Digital Crown with haptic feedback, Side button, Double tap and wrist flick gestures, Siri with on‑device processing Built‑in accessibility features supporting vision, mobility, hearing, and cognitive disabilities."
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Jet Black (Aluminum case)"
+    },
+    {
+     "label": "Dimension",
+     "value": "46 mm: Height: 46mm Width: 39mm Depth: 9.7mm 42 mm: Height: 42mm Width: 36mm Depth: 9.7mm"
+    },
+    {
+     "label": "Weight",
+     "value": "46 mm: Weight (aluminum, GPS): 37.8 grams Weight (aluminum, GPS + Cellular): 36.9 grams Weight (titanium): 43.1 grams Fits 140–245mm wrists 44 mm: Weight (aluminum, GPS): 30.3 grams Weight (aluminum, GPS + Cellular): 29.7 grams Weight (titanium): 34.6 grams Fits 130–200mm wrists"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/samsung-galaxy-watch8": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.47\" Super AMOLED (480 x 480) Always On Display, ~327 ppi density Protection: Sapphire crystal"
+    },
+    {
+     "label": "Processor",
+     "value": "Chipset: Exynos W1000 (3 nm) CPU: Penta-core GPU: Mali-G68"
+    },
+    {
+     "label": "Memory",
+     "value": "RAM 2GB ROM 32GB"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery Capacity: 325 mAh (40mm), 435 (44mm) Up to 30 hrs (AOD On) 10W wireless Charging"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Wi-Fi 802.11 a/b/g/n, dual-band Bluetooth 5.3, A2DP, LE GPS (L1+L5), GLONASS, GALILEO, BDS NFC"
+    },
+    {
+     "label": "Material",
+     "value": "Armor Aluminum"
+    },
+    {
+     "label": "Sensor",
+     "value": "Accelerometer, gyro, heart rate, barometer, altimeter, compass, SpO2, temperature (skin), BioActive"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "5ATM/ IP68/ MIL-STD-810H Mic., Speaker, Motor, Touch Bezel"
+    },
+    {
+     "label": "OS",
+     "value": "Android Wear OS 6, One UI 8 Watch"
+    },
+    {
+     "label": "Others",
+     "value": "Health Energy Score Sleep Apnea Bedtime Guidance High Stress Alert Running Coach Personalized Heart Rate Zone Personalized Functional Threshold Power AGEs Index Vascular Load ECG Irregular Heart Rhythm Notification Antioxidant Index Body Composition Cycle Tracking Google Gemini"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Graphite, Silver"
+    },
+    {
+     "label": "Dimension",
+     "value": "46 x 43.7 x 8.6 mm (1.81 x 1.72 x 0.34 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "34 g (44mm), 30 g (40mm) (1.06 oz)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/amazfit-active-2-premium-version": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "Material: AMOLED Size: 1.75\" (Square), 1.32\" (Round) Resolution: 390*450 PPI: 341 Glass: Sapphire crystal—durable and scratch-resistant Brightness: Up to 2,000 nits peak"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery Capacity: 260 mAh (rated value) Charging Method: Magnetic charging base Theoretical Charging Duration: Approx. 2 hours Battery Usage: Typical Usage Scenario Battery Life: Up to 10 days Battery Saver Mode Battery Life: Up to 19 days Heavy Usage Scenario Battery Life: Up to 5 days Continuous GPS Usage: Up to 21 hours"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.2 BLE"
+    },
+    {
+     "label": "Material",
+     "value": "Premium leather (20 mm quick-release) + silicone sport band included Stainless steel bezel + fiber-reinforced polymer case"
+    },
+    {
+     "label": "Sensor",
+     "value": "Health: BioTracker™ 6.0 PPG biometric sensor Movement: Acceleration Gyroscope Geomagnetic Barometric altimeter Ambient light Temperature Positioning: 5 satellite positioning systems Circularly-polarized antenna technology"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Water Resistance: 5 ATM (swim-proof)"
+    },
+    {
+     "label": "OS",
+     "value": "Android 7.0 and above, iOS 14.0 and above"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Zepp App"
+    },
+    {
+     "label": "Others",
+     "value": "Sports Modes: 160+"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black Sport Silicone"
+    },
+    {
+     "label": "Dimension",
+     "value": "Without sensor base: 43.9x43.9x9.9mm"
+    },
+    {
+     "label": "Weight",
+     "value": "(without strap): Premium version: 31.65g; Standard version: 29.5g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/huawei-watch-fit-4": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.82 inches AMOLED 480 × 408 pixels, PPI 347 2000-nit Peak Brightness"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery Life: The 10-day maximum battery life The 7-day typical battery life The 4-day battery life with AOD enabled"
+    },
+    {
+     "label": "Connectivity",
+     "value": "2.4 GHz, Bluetooth 5.2 supporting BR and BLE"
+    },
+    {
+     "label": "Material",
+     "value": "Aluminum alloy"
+    },
+    {
+     "label": "Sensor",
+     "value": "Accelerometer sensor Gyroscope sensor Magnetometer sensor Ambient light sensor Optical heart rate sensor Barometer sensor"
+    },
+    {
+     "label": "OS",
+     "value": "Android 8.0 or later iOS 13.0 or later"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Watch: 43.0 × 38.0 × 9.5 mm Wrist Size: 120-190 mm (Purple) 130-210 mm (Grey, White and Black)"
+    },
+    {
+     "label": "Weight",
+     "value": "Approximately 27 g (without the strap)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/redmi-watch-6-active": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.85\" Square AMOLED display Up to 1200nits peak brightness Always On Display (AOD) Resolution: (390 × 450) pixels, 322 PPI 71.2% Screen to Body Ratio"
+    },
+    {
+     "label": "Battery",
+     "value": "Capacity: 470mAh Light Usage: Up to 18 days Normal Usage: Up to 12 days Heavy Usage: Up to 6 days"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Sensor",
+     "value": "Heart rate sensor (with blood oxygen sensor) | Accelerometer"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Microphone: supported Speaker: supported Supports Bluetooth Calling"
+    },
+    {
+     "label": "OS",
+     "value": "Xiaomi HyperOS, Compatibility: Android 8.0 and above, iOS 14.0 and above"
+    },
+    {
+     "label": "Water Resistant",
+     "value": "IP68 water resistant"
+    },
+    {
+     "label": "Others",
+     "value": "140+ Sports modes"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Midnight Black, Matte Silver, Sunset Orange"
+    },
+    {
+     "label": "Dimension",
+     "value": "44.5mm x 39.4mm x 9.9mm Strap Length: 135–205mm"
+    },
+    {
+     "label": "Weight",
+     "value": "26g (without inbox strap)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/macbook-neo": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Apple"
+    },
+    {
+     "label": "Processor Model",
+     "value": "A18 Pro chip"
+    },
+    {
+     "label": "Processor Core",
+     "value": "6‑core CPU with 2 performance cores and 4 efficiency cores"
+    },
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine 60GB/s memory bandwidth"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Apple A18 Pro chip"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "13.0-inch (diagonal)"
+    },
+    {
+     "label": "Display Type",
+     "value": "Liquid Retina display LED-backlit display with IPS technology"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "2408-by-1506 native resolution at 219 pixels per inch"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "500 nits brightness Support for 1 billion colors sRGB color"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "Unified memory"
+    },
+    {
+     "label": "Removable",
+     "value": "Non-Removable"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "256GB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "5‑core GPU ProRes encode and decode engine AV1 decode"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Magic Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "78 (ANSI) or 79 (ISO) keys including 12 full-height function keys"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Multi-Touch trackpad for precise cursor control and support for gestures"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "1080p FaceTime HD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "Dual-speaker sound system"
+    },
+    {
+     "label": "Microphone",
+     "value": "Dual-mic array with directional beamforming"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Voice Isolation and Wide Spectrum microphone modes for enhanced voice clarity in audio and video calls"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "One USB 3 (USB-C) port with support for: Charging, DisplayPort, USB 3 (up to 10Gb/s) One USB 2 (USB-C) port with support for: Charging, USB 2 (up to 480Mb/s)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "3.5 mm headphone jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "N/A"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6E (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "lithium‑ion battery"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "36.5‑watt"
+    },
+    {
+     "label": "Backup Time (Approx)",
+     "value": "Up to 16 hours video streaming Up to 11 hours wireless web"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "20W USB-C Power Adapter"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "Height: 0.50 inch (1.27 cm) Width: 11.71 inches (29.75 cm) Depth: 8.12 inches (20.64 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "2.7 pounds (1.23 kg)"
+    },
+    {
+     "label": "Body Material",
+     "value": "MacBook Neo is made with 60% recycled content, including: 90% recycled aluminum 100% recycled cobalt and 95% recycled lithium in the battery 100% recycled rare earth elements in all magnets 100% recycled gold plating and tin solder in all Apple-designed printed circuit boards 100% recycled copper in multiple printed circuit boards 80% recycled steel in the battery tray, keyboard link bars, and speaker"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-macbook-air-m5-13-inch": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Apple"
+    },
+    {
+     "label": "Processor Model",
+     "value": "M5 chip"
+    },
+    {
+     "label": "Processor Core",
+     "value": "10-core CPU with 4 super cores and 6 efficiency cores"
+    },
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine 153GB/s memory bandwidth"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Apple M5"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "13.6-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "Liquid Retina display"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "2560 x 1664"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60 Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "2560-by-1664 native resolution at 224 pixels per inch 500 nits brightness Support for 1 billion colors Wide color (P3) True Tone technology"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "Unified memory"
+    },
+    {
+     "label": "Removable",
+     "value": "Non-Removable"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "8‑core GPU Neural Accelerators Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted-T arrangement"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "1080p FaceTime HD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "Four-speaker sound system"
+    },
+    {
+     "label": "Microphone",
+     "value": "Three-mic array"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Supported formats include AAC, MP3, Apple Lossless, FLAC, Dolby Digital, Dolby Digital Plus, and Dolby Atmos"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "2 x Thunderbolt 4 (USB Type-C)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "3.5 mm headphone jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 7 (802.11be)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Touch ID"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Lithium‑polymer"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "53.8 Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "40W USB-C Power Adapter"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Midnight"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Height: 0.44 inch (1.13 cm) Width: 11.97 inches (30.41 cm) Depth: 8.46 inches (21.5 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "2.7 pounds (1.23 kg)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-macbook-air-m5-15-inch": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Apple"
+    },
+    {
+     "label": "Processor Model",
+     "value": "M5 chip"
+    },
+    {
+     "label": "Processor Core",
+     "value": "10-core CPU with 4 super cores and 6 efficiency cores"
+    },
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine 153GB/s memory bandwidth"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Apple M5"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "15.3-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "Liquid Retina display"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "2880 x1864"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60 Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "2880-by-1864 native resolution at 224 pixels per inch 500 nits brightness Support for 1 billion colors Wide color (P3) True Tone technology"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "Unified memory"
+    },
+    {
+     "label": "Removable",
+     "value": "Non-Removable"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB/ 1TB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "10‑core GPU Neural Accelerators Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted-T arrangement"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "1080p FaceTime HD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "Four-speaker sound system"
+    },
+    {
+     "label": "Microphone",
+     "value": "Three-mic array"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Supported formats include AAC, MP3, Apple Lossless, FLAC, Dolby Digital, Dolby Digital Plus, and Dolby Atmos"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "2 x Thunderbolt 4 (USB Type-C)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "3.5 mm headphone jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 7 (802.11be)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Touch ID"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Lithium‑polymer"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "66.5 Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "40W USB-C Power Adapter"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "Height: 0.45 inch (1.15 cm) Width: 13.40 inches (34.04 cm) Depth: 9.35 inches (23.76 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "3.3 pounds (1.51 kg)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-macbook-pro-m5": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Apple"
+    },
+    {
+     "label": "Processor Model",
+     "value": "M5 chip"
+    },
+    {
+     "label": "Processor Core",
+     "value": "10 Core CPU with 4 performance cores and 6 efficiency cores 16-core Neural Engine 153GB/s memory bandwidth"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "14.2-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "Liquid Retina XDR Display"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "3024×1964"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology for adaptive refresh rates up to 120Hz Fixed refresh rates: 47.95Hz, 48.00Hz, 50.00Hz, 59.94Hz, 60.00Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "XDR (Extreme Dynamic Range) 1,000,000:1 contrast ratio XDR brightness: 1000 nits sustained full-screen, 1600 nits peak2 (HDR content only) SDR brightness: up to 1000 nits (outdoor) Color 1 billion colors Wide color (P3) True Tone technology"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB/ 24GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "Unified memory"
+    },
+    {
+     "label": "Removable",
+     "value": "Non-Removable"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB/ 1TB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "10-core GPU Neural Accelerators Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted‑T arrangement Touch ID Ambient light sensor"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "12MP Center Stage camera with support for Desk View 1080p HD video recording Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "High-fidelity six-speaker sound system with force-cancelling woofers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Studio-quality three-mic array with high signal-to-noise ratio and directional beamforming 3.5 mm headphone jack with advanced support for high-impedance headphones"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Wide stereo sound Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using AirPods (3rd generation), AirPods 4, AirPods Pro, AirPods Pro 2, and AirPods Max"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "1x SDXC card slot"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "3 x Thunderbolt 4/ USB 4 ports"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "3.5 mm headphone jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6E (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Touch ID"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Lithium‑polymer"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "72.4 Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "70W USB-C Power Adapter (MagSafe 3)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Space Black, Silver"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Height: 0.61 inch (1.55 cm) Width: 12.31 inches (31.26 cm) Depth: 8.71 inches (22.12 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "3.4 pounds (1.55 kg)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-macbook-pro-m5-pro": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Apple"
+    },
+    {
+     "label": "Processor Model",
+     "value": "M5 Pro chip"
+    },
+    {
+     "label": "Processor Core",
+     "value": "15-core CPU with 5 super cores and 10 performance cores"
+    },
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine 307GB/s memory bandwidth"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Apple M5 Pro"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "14.2-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "Liquid Retina XDR Display"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "3024×1964"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology for adaptive refresh rates up to 120Hz Fixed refresh rates: 47.95Hz, 48.00Hz, 50.00Hz, 59.94Hz, 60.00Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "XDR (Extreme Dynamic Range) 1,000,000:1 contrast ratio XDR brightness: 1000 nits sustained full-screen, 1600 nits peak2 (HDR content only) SDR brightness: up to 1000 nits (outdoor) Color 1 billion colors Wide color (P3) True Tone technology"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "24GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "Unified memory"
+    },
+    {
+     "label": "Removable",
+     "value": "Non-Removable"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "1TB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "16-core GPU Neural Accelerators Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted‑T arrangement Touch ID Ambient light sensor"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "12MP Center Stage camera with support for Desk View 1080p HD video recording Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "High-fidelity six-speaker sound system with force-cancelling woofers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Studio-quality three-mic array with high signal-to-noise ratio and directional beamforming 3.5 mm headphone jack with advanced support for high-impedance headphones"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Wide stereo sound Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using AirPods (3rd generation), AirPods 4, AirPods Pro, AirPods Pro 2, and AirPods Max"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "1x SDXC card slot"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "3 x Thunderbolt 5 (USB-C)/ USB 4"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "3.5 mm headphone jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 7 (802.11be)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6.0"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Touch ID"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Lithium‑polymer"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "72.4 Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "70W USB-C Power Adapter (MagSafe 3)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Space Black, Silver"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Height: 0.61 inch (1.55 cm) Width: 12.31 inches (31.26 cm) Depth: 8.71 inches (22.12 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "3.5 pounds (1.60 kg)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-macbook-pro-m5-pro-16-inch": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Apple"
+    },
+    {
+     "label": "Processor Model",
+     "value": "M5 Pro chip"
+    },
+    {
+     "label": "Processor Core",
+     "value": "18-core CPU with 6 super cores and 12 performance cores"
+    },
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine 307GB/s memory bandwidth"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Apple M5 Pro"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "16.2-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "Liquid Retina XDR Display"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "3456×2234"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology for adaptive refresh rates up to 120Hz Fixed refresh rates: 47.95Hz, 48.00Hz, 50.00Hz, 59.94Hz, 60.00Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "XDR (Extreme Dynamic Range) 1,000,000:1 contrast ratio XDR brightness: 1000 nits sustained full-screen, 1600 nits peak2 (HDR content only) SDR brightness: up to 1000 nits (outdoor) Color 1 billion colors Wide color (P3) True Tone technology"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "24GB/64GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "Unified memory"
+    },
+    {
+     "label": "Removable",
+     "value": "Non-Removable"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "1TB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "16-core GPU Neural Accelerators Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted‑T arrangement Touch ID Ambient light sensor"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "12MP Center Stage camera with support for Desk View 1080p HD video recording Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "High-fidelity six-speaker sound system with force-cancelling woofers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Studio-quality three-mic array with high signal-to-noise ratio and directional beamforming 3.5 mm headphone jack with advanced support for high-impedance headphones"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Wide stereo sound Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using AirPods (3rd generation), AirPods 4, AirPods Pro, AirPods Pro 2, and AirPods Max"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "1x SDXC card slot"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "3 x Thunderbolt 5 (USB-C)/ USB 4"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "3.5 mm headphone jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 7 (802.11be)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6.0"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Touch ID"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Lithium‑polymer"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "100 Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "140W USB-C Power Adapter (MagSafe 3)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Space Black, Silver"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Height: 0.66 inch (1.68 cm) Width: 14.01 inches (35.57 cm) Depth: 9.77 inches (24.81 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "4.7 pounds (2.14 kg)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-macbook-pro-m5-max-16-inch": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Apple"
+    },
+    {
+     "label": "Processor Model",
+     "value": "M5 Pro chip"
+    },
+    {
+     "label": "Processor Core",
+     "value": "18-core CPU with 6 super cores and 12 performance cores"
+    },
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine 460GB/s memory bandwidth"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Apple M5 Pro"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "16.2-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "Liquid Retina XDR Display"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "3456×2234"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology for adaptive refresh rates up to 120Hz Fixed refresh rates: 47.95Hz, 48.00Hz, 50.00Hz, 59.94Hz, 60.00Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "XDR (Extreme Dynamic Range) 1,000,000:1 contrast ratio XDR brightness: 1000 nits sustained full-screen, 1600 nits peak2 (HDR content only) SDR brightness: up to 1000 nits (outdoor) Color 1 billion colors Wide color (P3) True Tone technology"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "36GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "Unified memory"
+    },
+    {
+     "label": "Removable",
+     "value": "Non-Removable"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "2TB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "32-core GPU Neural Accelerators Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted‑T arrangement Touch ID Ambient light sensor"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "12MP Center Stage camera with support for Desk View 1080p HD video recording Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "High-fidelity six-speaker sound system with force-cancelling woofers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Studio-quality three-mic array with high signal-to-noise ratio and directional beamforming 3.5 mm headphone jack with advanced support for high-impedance headphones"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Wide stereo sound Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using AirPods (3rd generation), AirPods 4, AirPods Pro, AirPods Pro 2, and AirPods Max"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "1x SDXC card slot"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "3 x Thunderbolt 5 (USB-C)/ USB 4"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "3.5 mm headphone jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 7 (802.11be)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6.0"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Touch ID"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Lithium‑polymer"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "100 Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "140W USB-C Power Adapter (MagSafe 3)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Space Black, Silver"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Height: 0.66 inch (1.68 cm) Width: 14.01 inches (35.57 cm) Depth: 9.77 inches (24.81 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "4.7 pounds (2.15 kg)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-imac-m4-256gb-ssd-24-inch-all-in-one-pc": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "Apple M4 8-Core CPU ( 4 performance cores and 4 efficiency cores), 16-Core Neural Engine"
+    },
+    {
+     "label": "RAM",
+     "value": "16GB RAM"
+    },
+    {
+     "label": "Graphics Card",
+     "value": "Apple Integrated 10-core GPU"
+    },
+    {
+     "label": "Storage",
+     "value": "256GB SSD"
+    },
+    {
+     "label": "Monitor",
+     "value": "24-inch 4.5K Retina display 4480-by-2520 resolution at 218 pixels per inch with support for 1 billion colors 500 nits brightness Wide color (P3) True Tone technology"
+    },
+    {
+     "label": "Camera",
+     "value": "12MP Center Stage camera with support for Desk View 1080p FaceTime HD camera"
+    },
+    {
+     "label": "Network & Wireless Connectivity",
+     "value": "Gigabit Ethernet Wi-Fi 6E (802.11ax) Bluetooth 5.3 wireless technology"
+    },
+    {
+     "label": "Operating System",
+     "value": "MacOS"
+    },
+    {
+     "label": "Others",
+     "value": "120GB/s memory bandwidth"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Keyboard",
+     "value": "Magic Keyboard with Touch ID"
+    },
+    {
+     "label": "Mouse",
+     "value": "Magic Mouse"
+    },
+    {
+     "label": "External I/O Ports",
+     "value": "2 x Thunderbolt 4 (up to 40Gb/s) USB 4 (up to 40Gb/s) USB 3.1 Gen 2 (up to 10Gb/s) 1 x 3.5 mm headphone jack with advanced support for high-impedance headphones"
+    }
+   ]
+  },
+  {
+   "group": "Physical Details",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Width : 21.5 inches (54.7 cm) Height: 18.1 inches (46.1 cm) Basement Width: 5.8 inches (14.7 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "9.74 pounds (4.42 kg)5"
+    },
+    {
+     "label": "Color",
+     "value": "Blue, Purple, Green, Silver"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-mac-mini-m6": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "Apple M6 chip 12‑core CPU with 2 super cores, 4 performance cores, and 6 efficiency cores Dual 16-core Neural Engine 153GB/s memory bandwidth"
+    },
+    {
+     "label": "RAM",
+     "value": "16GB unified memory"
+    },
+    {
+     "label": "Graphics Card",
+     "value": "12-core GPU Neural Accelerators Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "Storage",
+     "value": "256GB SSD"
+    },
+    {
+     "label": "Monitor",
+     "value": "Supports up to three external displays using Thunderbolt and HDMI ports. Three displays: Two displays up to a native resolution of 6K at 60Hz or 4K at 165Hz, plus a third display up to 5K at 60Hz over Thunderbolt or 4K at 60Hz over HDMI Up to two displays: One display up to a native resolution of 8K at 60Hz or 5K at 120Hz or 4K at 240Hz, plus a second display up to 5K at 60Hz over Thunderbolt or 4K at 60Hz over HDMI Supports up to two external displays over a single Thunderbolt port Thunderbolt 4 (USB-C) ports support native DisplayPort 1.4 speeds Supports variable refresh rate (VRR), HDR, and multichannel audio"
+    },
+    {
+     "label": "Audio",
+     "value": "Built-in speaker 3.5 mm headphone jack with advanced support for high-impedance headphones HDMI port supports multichannel audio output Supported formats include AAC, MP3, Apple Lossless, FLAC, Dolby Digital, Dolby Digital Plus, and Dolby Atmos"
+    },
+    {
+     "label": "Power Supply",
+     "value": "Maximum continuous power: 155W"
+    },
+    {
+     "label": "Network & Wireless Connectivity",
+     "value": "Wireless: Apple N1 wireless networking chip Wi‑Fi 7 (802.11be)3 Bluetooth 6 Thread networking technology Ethernet: 100/1000/2500BASE-T Multi-Gigabit Ethernet (RJ-45 connector) Configurable to 10Gb Ethernet (Nbase-T Ethernet with support for 1Gb, 2.5Gb, 5Gb, and 10Gb Ethernet using RJ-45 connector)"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "External I/O Ports",
+     "value": "2 x USB Type-C (up to 10 Gbps) 1 x HDMI Output 1 x 3.5 mm Headphone/Line Output 3 x Thunderbolt 4 (USB Type-C) (Supports up to 40 Gbps) 1 x 2.5 Gb Ethernet port"
+    }
+   ]
+  },
+  {
+   "group": "Physical Details",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Height: 5.0cm Width: 12.7cm Depth: 12.7cm"
+    },
+    {
+     "label": "Weight",
+     "value": "0.67kg"
+    },
+    {
+     "label": "Color",
+     "value": "Silver"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-mac-mini-m5-pro": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "15-core CPU with 5 super cores and 10 performance cores 16-core Neural Engine 307GB/s memory bandwidth"
+    },
+    {
+     "label": "RAM",
+     "value": "24GB unified memory"
+    },
+    {
+     "label": "Graphics Card",
+     "value": "16-core GPU Neural Accelerators Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB SSD"
+    },
+    {
+     "label": "Monitor",
+     "value": "Supports up to three external displays over any combination of Thunderbolt and HDMI ports: Three displays up to a native resolution of 6K at 60Hz or 4K at 165Hz Up to two displays: One display up to a native resolution of 8K at 60Hz or 5K at 120Hz or 4K at 240Hz, plus a second display up to 5K at 120Hz or 4K at 200Hz Supports up to three external displays over a single Thunderbolt port Thunderbolt 5 (USB-C) ports support native DisplayPort 2.1 speeds Supports variable refresh rate (VRR), HDR, and multichannel audio"
+    },
+    {
+     "label": "Audio",
+     "value": "Built-in speaker 3.5 mm headphone jack with advanced support for high-impedance headphones HDMI port supports multichannel audio output Supported formats include AAC, MP3, Apple Lossless, FLAC, Dolby Digital, Dolby Digital Plus, and Dolby Atmos"
+    },
+    {
+     "label": "Power Supply",
+     "value": "Maximum continuous power: 155W"
+    },
+    {
+     "label": "Network & Wireless Connectivity",
+     "value": "Wireless: Apple N1 wireless networking chip Wi‑Fi 7 (802.11be)3 Bluetooth 6 Thread networking technology Ethernet: 100/1000/2500BASE-T Multi-Gigabit Ethernet (RJ-45 connector) Configurable to 10Gb Ethernet (Nbase-T Ethernet with support for 1Gb, 2.5Gb, 5Gb, and 10Gb Ethernet using RJ-45 connector)"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "External I/O Ports",
+     "value": "2 x USB Type-C (up to 10 Gbps) 1 x HDMI Output 1 x 3.5 mm Headphone/Line Output 3 x Thunderbolt 5 (up to 120Gb/s) 1 x 2.5 Gb Ethernet port"
+    }
+   ]
+  },
+  {
+   "group": "Physical Details",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Height: 5.0cm Width: 12.7cm Depth: 12.7cm"
+    },
+    {
+     "label": "Weight",
+     "value": "0.73 Kg"
+    },
+    {
+     "label": "Color",
+     "value": "Silver"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-mac-studio-m5-max": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "18-core CPU with 6 super cores and 12 performance cores 16-core Neural Engine 460GB/s memory bandwidth"
+    },
+    {
+     "label": "RAM",
+     "value": "32GB unified memory"
+    },
+    {
+     "label": "Graphics Card",
+     "value": "32-core GPU Neural Accelerators Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB SSD"
+    },
+    {
+     "label": "Monitor",
+     "value": "Supports up to five external displays over any combination of Thunderbolt and HDMI ports: Five displays: Four displays up to a native resolution of 6K at 60Hz or 4K at 165Hz, plus a fifth display with up to 5K at 60Hz over HDMI. Up to three displays: Two displays up to a native resolution of 8K at 60Hz or 5K at 120Hz or 4K at 240Hz, plus a third display with up to 5K at 60Hz over HDMI. Supports up to four external displays over a single Thunderbolt port. Thunderbolt 5 (USB-C) ports support native DisplayPort 2.1 speeds. Supports variable refresh rate (VRR), HDR and multi-channel audio."
+    },
+    {
+     "label": "Audio",
+     "value": "Built-in speaker 3.5 mm headphone jack with advanced support for high-impedance headphones HDMI port supports multichannel audio output"
+    },
+    {
+     "label": "Power Supply",
+     "value": "Line voltage: 100V to 240V AC Frequency: 50Hz to 60Hz, single phase Maximum continuous power: 480W"
+    },
+    {
+     "label": "Network & Wireless Connectivity",
+     "value": "Apple N1 wireless networking chip Wi‑Fi 7 (802.11be)2 Bluetooth 6 Thread networking technology Ethernet 10Gb Ethernet (Nbase-T Ethernet with support for 1Gb, 2.5Gb, 5Gb and 10Gb Ethernet using RJ‑45 connector)"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "External I/O Ports",
+     "value": "Four Thunderbolt 5 (USB‑C) ports with support for: Thunderbolt 5 (up to 120Gb/s) USB 4 (up to 120Gb/s) USB 3 (up to 10Gb/s) DisplayPort 2.1 Two USB 3 (USB‑A) ports (up to 5Gb/s) HDMI 2.1 port 10Gb Ethernet 3.5mm headphone jack On front (M5 Max): Two USB‑C ports (up to 10Gb/s) SDXC card slot (UHS-II)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Details",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Height: 9.50cm Width: 19.70cm Depth: 19.70cm"
+    },
+    {
+     "label": "Weight",
+     "value": "2.74kg"
+    },
+    {
+     "label": "Color",
+     "value": "Silver"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/samsung-galaxy-a07": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.7\""
+    },
+    {
+     "label": "Type",
+     "value": "PLS LCD"
+    },
+    {
+     "label": "Resolution",
+     "value": "720 x 1600 (HD+)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "90Hz"
+    },
+    {
+     "label": "Features",
+     "value": "(~83.6% screen-to-body ratio) 20:9 ratio (~262 ppi density)"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Mediatek Helio G99 (6 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-Core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "(2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
+    },
+    {
+     "label": "GPU",
+     "value": "Mali-G57 MC2"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "4GB/6GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "64GB/128GB"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC (dedicated slot)"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, (wide), 1/2.76\", 0.64µm, PDAF 2 MP, f/2.4, (depth)"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080p@30/60fps"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "8 MP, f/2.0, (wide), 1/4.0\", 1.12µm"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash"
+    },
+    {
+     "label": "Video Recording",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual Nano SIM"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "5.3, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GLONASS, GALILEO, BDS"
+    },
+    {
+     "label": "NFC",
+     "value": "No"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5mm"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 15"
+    },
+    {
+     "label": "Upgradable",
+     "value": "up to 6 major Android upgrades"
+    },
+    {
+     "label": "Custom UI",
+     "value": "One UI 7"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Side-mounted"
+    },
+    {
+     "label": "Sensors",
+     "value": "Accelerometer, proximity"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP54"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Lithium-polymer 5000 mAh (non-removable)"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "25W Wired Fast Charging"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "167.4 x 77.4 x 7.6 mm (6.59 x 3.05 x 0.30 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "184 g (6.49 oz)"
+    },
+    {
+     "label": "Colors",
+     "value": "Gray, Light Violet, Dark Green"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/samsung-galaxy-a17-5g": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.7 inches"
+    },
+    {
+     "label": "Type",
+     "value": "Super AMOLED"
+    },
+    {
+     "label": "Resolution",
+     "value": "1080 x 2340 pixels"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "90Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "800 nits (HBM)"
+    },
+    {
+     "label": "Protection",
+     "value": "Corning Gorilla Glass Victus, Mohs level 5"
+    },
+    {
+     "label": "Features",
+     "value": "110.2 cm2 (~86.0% screen-to-body ratio) 19.5:9 ratio (~385 ppi density)"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Exynos 1330 (5 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "2x2.4 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55"
+    },
+    {
+     "label": "GPU",
+     "value": "Mali-G68 MP2"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "6GB, 8GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "128GB"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC (uses shared SIM slot)"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, (wide), 1/2.76\", 0.64µm, AF, OIS 5 MP, f/2.2, (ultrawide), 1/5.0\", 1.12µm 2 MP, f/2.4, (macro)"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash, panorama, HDR"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080p@30fps, gyro-EIS"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "13 MP, f/2.0, (wide), 1/3.1\", 1.12µm"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080p@30fps"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Loudspeaker"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Nano-SIM + Nano-SIM"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GALILEO, GLONASS, BDS, QZSS"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5mm Jack"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 15"
+    },
+    {
+     "label": "Upgradable",
+     "value": "up to 6 major Android upgrades"
+    },
+    {
+     "label": "Custom UI",
+     "value": "One UI 7"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Side-Mounted"
+    },
+    {
+     "label": "Sensors",
+     "value": "Accelerometer, gyro, proximity, compass"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP54 dust protected and water resistant (water splashes)"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "5000 mAh, non-removable"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "25W Supported"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "164.4 x 77.9 x 7.5 mm (6.47 x 3.07 x 0.30 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "192 g (6.77 oz)"
+    },
+    {
+     "label": "Colors",
+     "value": "Black, Gray, Blue"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/samsung-galaxy-a57": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.7\""
+    },
+    {
+     "label": "Type",
+     "value": "Super AMOLED"
+    },
+    {
+     "label": "Resolution",
+     "value": "1080 x 2340 (FHD+)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "1200 nits (HBM), 1900 nits (peak)"
+    },
+    {
+     "label": "Protection",
+     "value": "Corning Gorilla Glass Victus+"
+    },
+    {
+     "label": "Features",
+     "value": "110.2 cm2 (~88.8% screen-to-body ratio) 19.5:9 ratio (~385 ppi density)"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Exynos 1680 (4 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-Core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "1x2.9 GHz Cortex-720 & 4x2.6 GHz Cortex-720 & 3x1.95 GHz Cortex-520"
+    },
+    {
+     "label": "GPU",
+     "value": "Xclipse 550"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB/ 12GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "128GB/ 256GB"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, (wide), 1/1.56\", 1.0µm, PDAF, OIS 12 MP, f/2.2, 123˚ (ultrawide), 1/3.06\", 1.12µm 5 MP, f/2.4, (macro)"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash, panorama, HDR"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@30fps, 1080p@30/60fps, gyro-EIS"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "12 MP, f/2.2, (wide), 1/3.2\", 1.12µm"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@30fps, 1080p@30fps, 10-bit HDR"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Stereo Speakers"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Hybrid Dual Nano SIM"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "6.0, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, Glonass, Beidou, Galileo, QZSS"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 16 (up to 6 major Android upgrades)"
+    },
+    {
+     "label": "Custom UI",
+     "value": "One UI 8.5"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Under Display, Optical"
+    },
+    {
+     "label": "Sensors",
+     "value": "accelerometer, gyro, compass, Virtual Proximity Sensing"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68 dust/water resistant"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Lithium-polymer 5000 mAh (non-removable)"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "45W Fast Charging"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "161.5 x 76.8 x 6.9 mm (6.36 x 3.02 x 0.27 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "179 g (6.31 oz)"
+    },
+    {
+     "label": "Colors",
+     "value": "Awesome Lilac, Awesome Icyblue, Awesome Navy"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/redmi-17": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.9 inches, 114.9 cm2 (~86.2% screen-to-body ratio)"
+    },
+    {
+     "label": "Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Resolution",
+     "value": "HD+ (720 x 1600 pixels)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Mediatek Helio G91 Ultra (12 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55"
+    },
+    {
+     "label": "GPU",
+     "value": "Mali-G52 MC2"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "4GB/ 6GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "128GB/ 256GB"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC (uses shared SIM slot)"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, (wide), PDAF Auxiliary lens"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash, HDR"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080p@30fps"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "8 MP, f/2.0, (wide)"
+    },
+    {
+     "label": "Features",
+     "value": "HDR"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080p@30fps"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Loud Speaker"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Hybrid Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GLONASS, GALILEO, BDS"
+    },
+    {
+     "label": "NFC",
+     "value": "N/A"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 16"
+    },
+    {
+     "label": "Custom UI",
+     "value": "HyperOS 3"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Fingerprint (side-mounted)"
+    },
+    {
+     "label": "Sensors",
+     "value": "accelerometer, compass, Virtual proximity sensing"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP65 dust tight and water resistant (low pressure water jets)"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Si/C Li-Ion 7500 mAh"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "45W wired"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "170.1 x 78.4 x 8.8 mm (6.70 x 3.09 x 0.35 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "232 g (8.18 oz)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/redmi-note-17-4g": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.99 inches"
+    },
+    {
+     "label": "Type",
+     "value": "AMOLED"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD+ (1080 x 2396 pixels)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "700 nits (typ), 1200 nits (HBM), 1800 nits (peak)"
+    },
+    {
+     "label": "Protection",
+     "value": "Corning Gorilla Glass 7i"
+    },
+    {
+     "label": "Features",
+     "value": "Screen to Body Ratio: ~88.4% ~375 ppi density"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Qualcomm SM6225-AF Snapdragon 6s 4G Gen 2 (6 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "4x2.9 GHz Cortex-A73 & 4x1.9 GHz Cortex-A53"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno 610"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "6GB / 8GB LPDDR4X"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "128GB/ 256GB UFS2.2"
+    },
+    {
+     "label": "Card Slot",
+     "value": "Expandable storage up to 2TB"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, 26mm (wide), 1/2.76\", 0.64µm, PDAF"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash, HDR, panorama"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080p @ 30fps 720p @ 30fps 720p Slow Motion @ 120fps"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "16 MP, f/2.5, (wide), 1/3.0\""
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080p at 30fps"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Dual speakers with Dolby Atmos"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "SIM 1 + Hybrid (SIM or microSD) Dual standby"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.0, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GLONASS, BDS, GALILEO"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes (NFC availability may vary between markets)"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "OTG",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 16"
+    },
+    {
+     "label": "Custom UI",
+     "value": "Xiaomi HyperOS 3"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Fingerprint (under display, optical)"
+    },
+    {
+     "label": "Sensors",
+     "value": "Virtual Proximity sensor Ambient light sensor, Accelerometer, Electronic compass, IR blaster"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP65 dust and splash resistant"
+    },
+    {
+     "label": "Other Features",
+     "value": "AI Erase Pro, AI Sky, AI Image Expansion"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "7700mAh"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "45W turbo charging"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "169.7 x 79.1 x 8.5 mm (6.68 x 3.11 x 0.33 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "224 g (7.90 oz)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/redmi-note-17-pro-5g": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.83 inches"
+    },
+    {
+     "label": "Type",
+     "value": "AMOLED"
+    },
+    {
+     "label": "Resolution",
+     "value": "1.5K (2772 × 1280)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "3500 nits (UHBM), 1800 nits (HBM), 1060 nits (typical)"
+    },
+    {
+     "label": "Protection",
+     "value": "Corning Gorilla Glass Victus 2"
+    },
+    {
+     "label": "Features",
+     "value": "3840Hz PWM dimming HDR10+ Dolby Vision Color depth: 12bit Contrast ratio: 8000000:1 DCI- P3 wide color gamut 447 PPI"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Qualcomm SM6435-AA Snapdragon 6s Gen 4 (4 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "4x2.4 GHz Cortex-A78 & 4x1.8 GHz Cortex-A55"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno 710"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB LPDDR4X"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "256GB UFS3.1"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, 26mm (wide), 1/2.76\", 0.64µm, PDAF, OIS 8 MP, f/2.2, 15mm, 120˚ (ultrawide), 1/4.0\", 1.12µm"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash, HDR, panorama"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@30fps, 1080p@30/60fps, gyro-EIS, OIS"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "16 MP, f/2.4, (wide), 1.0µm"
+    },
+    {
+     "label": "Features",
+     "value": "HDR, panorama"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080p@30fps"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Dual speakers"
+    },
+    {
+     "label": "Audio Features",
+     "value": ".Dolby Atmos | Hi-Res"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.1 A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GLONASS, BDS, GALILEO"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "OTG",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 16"
+    },
+    {
+     "label": "Custom UI",
+     "value": "Xiaomi HyperOS 3"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Fingerprint (under display, optical)"
+    },
+    {
+     "label": "Sensors",
+     "value": "Ultrasonic Proximity Sensor‌ Ambient light sensor Accelerometer Electronic compass IR blaster Gyroscope"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP66/IP68/IP69/IP69K"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "8340mAh(typ) Silicon-Carbon Battery"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "67W HyperCharge Supports 22.5W wired reverse charging"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "163.5 x 78.3 x 8.6 mm (6.44 x 3.08 x 0.34 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "223 g (7.87 oz)"
+    },
+    {
+     "label": "Colors",
+     "value": "Black Satin Orange Purple Sky Blue"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/realme-c100": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.8 inches"
+    },
+    {
+     "label": "Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Resolution",
+     "value": "HD+ 1570 × 720 Pixels"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "Brightness HBM: 1200nit(Typical)"
+    },
+    {
+     "label": "Protection",
+     "value": "Panda-168"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "MediaTek Helio G92 Max"
+    },
+    {
+     "label": "CPU Type",
+     "value": "8-core"
+    },
+    {
+     "label": "GPU",
+     "value": "ARM Mali G52"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "6GB/ 8GB LPDDR4X"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "128GB eMMC5.1"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "Wide angle: 50MP; f/1.8; FOV 75°; 5P lens; AF Supported"
+    },
+    {
+     "label": "Features",
+     "value": "Shooting Mode Rear: Photo, Video, Portrait, Night, Panorama, Movie, SLO-MO, Dual-view video, TIME-LAPSE, HI-RES, PRO, Text Scanner, TILT-SHIFT, Street，Google Lens, Underwater"
+    },
+    {
+     "label": "Video Recording",
+     "value": "720P video: 30 fps 1080P video: 30 fps 1080P TIME-LAPSE: 30 fps 720P SLO-MO video: 120 fps Supports Cinematic video shooting Supports Dual-view video shooting Supports video zoom shooting: 10× digital zoom"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "8MP; f/2.0; FOV 80°; 4P lens"
+    },
+    {
+     "label": "Video Recording",
+     "value": "720P video: 30 fps 1080P EIS/OIS video: 30 fps(with Retouch on) Supports Dual-view video shooting"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Loudspeaker"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 5 (802.11ac) Supported"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "GPS",
+     "value": "Beidou, GPS, GLONASS, Galileo, QZSS"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "OTG",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 16"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Side-mounted"
+    },
+    {
+     "label": "Sensors",
+     "value": "Proximity sensor, Ambient light sensor, E-compass, Accelerometer, Side fingerprint sensor"
+    },
+    {
+     "label": "Other Features",
+     "value": "Drop resistant up to 2m"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Si/C Li-Ion 8000mAh (Typical) 7780mAh (Rated)"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "Max. 45 W SUPERVOOC SUPERVOOC 45W, PPS 45W, PD 13.5W, Reverse charging BC1.2 10W"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "166.5 x 78.2 x 8.6 mm (6.56 x 3.08 x 0.34 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "219 g (7.72 oz)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Glass front, plastic frame, plastic back"
+    },
+    {
+     "label": "Colors",
+     "value": "Glory White Victory Purple Endurance Brown"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/realme-15-pro": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.8 inches, 112.8 cm2 (~91.2% screen-to-body ratio)"
+    },
+    {
+     "label": "Type",
+     "value": "OLED"
+    },
+    {
+     "label": "Resolution",
+     "value": "1280 x 2800 pixels, 19.5:9 ratio (~453 ppi density)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "144Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "1800 nits (HBM), 6500 nits (peak)"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Qualcomm Snapdragon 7 Gen 4 (4 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "1x2.8 GHz Cortex-720 & 4x2.4 GHz Cortex-720 & 3x1.8 GHz Cortex-520"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno 722"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "12GB LPDDR4X (Up to 12GB+14GB Dynamic RAM)"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "256GB UFS 3.1"
+    },
+    {
+     "label": "Card Slot",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, 24mm (wide), 1/1.56\", 1.0µm, multi-directional PDAF, OIS 50 MP, f/2.0, 16mm, 116˚ (ultrawide), 1/2.88\", 0.61µm"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash, HDR, panorama"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@30/60fps, 1080p@30/60/120fps, gyro-EIS, OIS"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/2.4, 23mm (wide), 1/2.88\", 0.61µm"
+    },
+    {
+     "label": "Features",
+     "value": "Panorama"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@30fps, 1080p@30fps"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Dual Stereo Speakers"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GLONASS, GALILEO, BDS"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 15"
+    },
+    {
+     "label": "Upgradable",
+     "value": "up to 3 major Android upgrades"
+    },
+    {
+     "label": "Custom UI",
+     "value": "Realme UI 6.0"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "under display, optical"
+    },
+    {
+     "label": "Sensors",
+     "value": "accelerometer, gyro, proximity, compass"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 2m for 30 min)"
+    },
+    {
+     "label": "Other Features",
+     "value": "MIL-STD-810H compliant * does not guarantee ruggedness or use in extreme conditions"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Li-Ion 7000 mAh, non-removable"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "80W wired, 50% in 25 min"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "162.3 x 76.2 x 7.7 mm (6.39 x 3.00 x 0.30 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "187 g (6.60 oz)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Glass front (Gorilla Glass 7i), aluminum frame, fiberglass back or silicone polymer (eco leather) back"
+    },
+    {
+     "label": "Colors",
+     "value": "Flowing Silver Velvet Green"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oppo-a6": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.75 inches"
+    },
+    {
+     "label": "Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "HD+ (1570 × 720) Pixels"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "Normal brightness: 800nits (Typical) HBM: 1125nits (Typical)"
+    },
+    {
+     "label": "Features",
+     "value": "16.7 million colours (8-bit), 256 PPI"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Qualcomm Snapdragon 685 Mobile Platform"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno 610@1.26GHz"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB LPDDR4X"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "128GB UFS 2.2"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "Wide angle: 50MP; f/1.8; FOV 76°; 5P lens; AF supported Monochrome: 2MP; f/2.4; FOV 89°; 3P lens"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash, HDR, panorama"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080P video: 30fps 720P video: 30fps 720P SLO-MO video: 120fps, except 4G RAM 1080P TIME-LAPSE: 30fps Supports Dual-view video shooting, except 4G RAM Supports video zoom shooting: up to 10x digital zoom"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "8MP; f/2.0; FOV 80°; 4P lens"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080P video: 30fps 720P video: 30fps 1080P TIME-LAPSE: 30fps Supports Dual-view video shooting, except 4G RAM"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 5 (802.11ac) supported"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.0 Bluetooth Audio Codec: SBC, AAC, aptX"
+    },
+    {
+     "label": "GPS",
+     "value": "Beidou, GPS, GLONASS, Galileo, QZSS"
+    },
+    {
+     "label": "USB",
+     "value": "Type-C 2.0"
+    },
+    {
+     "label": "OTG",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 15"
+    },
+    {
+     "label": "Custom UI",
+     "value": "ColorOS 15.0"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Yes, Side fingerprint"
+    },
+    {
+     "label": "Sensors",
+     "value": "Proximity sensor Ambient light sensor E-compass Accelerometer"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP69, Ultimate Water & Dust Resistance"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "7000 mAh, non-removable"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "45W SUPERVOOC Compatible with: 33W and below SUPERVOOCTM, 33W PPS, 15W VOOCTM, 13.5W PD, 13.5W QC"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "166.61 x 78.51 x 8.61 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "about 215g"
+    },
+    {
+     "label": "Colors",
+     "value": "Sapphire Blue Aurora Gold"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oppo-reno15-f-5g": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.57 inches"
+    },
+    {
+     "label": "Type",
+     "value": "AMOLED"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD + (1080 x 2372)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "600 nits (typ), 1400 nits (HBM)"
+    },
+    {
+     "label": "Protection",
+     "value": "Corning Gorilla Glass+, Mohs level 5"
+    },
+    {
+     "label": "Features",
+     "value": "1.07 billion colours (10-bit) 397 PPI Standard Mode: 100% DCI-P3 Natural Mode: 100% DCI-P3"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Qualcomm SM6450 Snapdragon 6 Gen 1 (4 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "4x2.2 GHz Cortex-A78 & 4x1.8 GHz Cortex-A55"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno 710"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB LPDDR4X"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "256GB UFS 3.1"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "Ultra-wide angle: 8MP; f/2.2; FOV 112°; 5P lens Wide angle: 50MP; f/1.8; FOV 79°; 5P lens; AF supported; Supports 2-axis OIS Macro: 2MP; f/2.4; FOV 89°; 3P lens"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash, HDR, panorama"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K video: 30fps 1080P video: 60fps, 30fps (with Retouch on) 720P video: 60fps, 30fps 4K EIS/OIS video: 30fps 1080P EIS/OIS video: 60fps, 30fps (with Retouch on) 720P EIS/OIS video: 60fps, 30fps 1080P SLO-MO video: 120fps 720P SLO-MO video: 240fps, 120fps 1080P TIME-LAPSE: 30fps Supports Dual-view video shooting Supports video zoom shooting"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "50MP; f/2.0; FOV 100°; 5P lens; AF supported"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K video: 30fps 1080P video: 30fps (with Retouch on) 720P video: 30fps 4K EIS video: 30fps 1080P EIS video: 30fps (with Retouch on) 720P EIS video: 30fps 1080P TIME-LAPSE: 30fps Supports Dual-view video shooting Supports video zoom shooting"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "stereo speakers"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Codec: SBC, AAC, LDAC, aptX, aptX HD"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "5.1 A2DP, LE, aptX HD"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GLONASS, GALILEO, BDS, QZSS"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Type-C 2.0"
+    },
+    {
+     "label": "OTG",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 16"
+    },
+    {
+     "label": "Custom UI",
+     "value": "ColorOS 16.0"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Yes (Under display)"
+    },
+    {
+     "label": "Sensors",
+     "value": "Proximity sensor Ambient light sensor Color temperature sensor E-compass Accelerometer Gyroscope"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68/IP69"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "7000mAh/27.44Wh (Typical)"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "80W SUPERVOOC"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Thickness: about 8.14mm (Twilight Blue) about 8.27mm (Aurora Blue)"
+    },
+    {
+     "label": "Weight",
+     "value": "about 195g (Twilight Blue) about 202g (Aurora Blue)"
+    },
+    {
+     "label": "Colors",
+     "value": "Twilight Blue, Aurora Blue"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/vivo-y31d": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.75-inch"
+    },
+    {
+     "label": "Type",
+     "value": "LCD (IPS)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1570 × 720 (HD+)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "Up to 120 Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "1250 nits (HBM)"
+    },
+    {
+     "label": "Features",
+     "value": "111.4 cm2 (~85.3% screen-to-body ratio) ~256 ppi density"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Qualcomm Snapdragon 6s 4G Gen 2"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "4x2.9 GHz Cortex-A73 & 4x1.9 GHz Cortex-A53"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "6GB/8GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "128GB, 256GB"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, (wide), PDAF 2 MP, f/2.4, (depth)"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080p@30fps"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "8 MP, f/2.05 , (wide)"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080p@30fps"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "5.1, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GALILEO, GLONASS, BDS, QZSS"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5mm"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 16"
+    },
+    {
+     "label": "Custom UI",
+     "value": "OriginOS 6"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Side-mounted"
+    },
+    {
+     "label": "Sensors",
+     "value": "Accelerometer Ambient Light Sensor E-compass Proximity Sensor Gyroscope Infrared blaster"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68 & IP69"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Li-ion battery 7200 mAh (non-removable)"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "44W Fast Charging"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "166.64 × 78.43 × 8.39 mm (Grey) 166.64 × 78.43 × 8.49 mm (Gold)"
+    },
+    {
+     "label": "Weight",
+     "value": "219g"
+    },
+    {
+     "label": "Colors",
+     "value": "Feather Gold Starlight Grey"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/vivo-v70-fe": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.83 inches, 113.1 cm2 (~90.7% screen-to-body ratio)"
+    },
+    {
+     "label": "Type",
+     "value": "AMOLED"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD+ (1260 x 2800 pixels) ((~449 ppi density)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "1900 nits (HBM)"
+    },
+    {
+     "label": "Protection",
+     "value": "Mohs level 4"
+    },
+    {
+     "label": "Features",
+     "value": "1B colors HDR10+"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Mediatek Dimensity 7360 Turbo (4 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "4x2.5 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55"
+    },
+    {
+     "label": "GPU",
+     "value": "Mali-G615 MC2"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB/12GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "256GB UFS 3.1"
+    },
+    {
+     "label": "Card Slot",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "200 MP, f/1.9, 24mm (wide), 1/1.56\", PDAF, OIS 8 MP, f/2.2, 120˚ (ultrawide), 1/4.0\""
+    },
+    {
+     "label": "Features",
+     "value": "Ring-LED flash, panorama, HDR"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@30fps, 1080p@30fps, gyro-EIS, OIS"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "32 MP, f/2.2, 22mm (wide), 1/3.1\", 0.7µm"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@30fps, 1080p@30fps"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Loudspeaker"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Stereo Speakers"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "5G, 4G, 3G, 2G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GALILEO, GLONASS, QZSS, BDS, NavIC"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 16"
+    },
+    {
+     "label": "Upgradable",
+     "value": "Up to 4 Major Android Upgrades"
+    },
+    {
+     "label": "Custom UI",
+     "value": "OriginOS 6"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Fingerprint (Under display, ultrasonic)"
+    },
+    {
+     "label": "Sensors",
+     "value": "Accelerometer, Gyro, Proximity, Compass"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 120 min)"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Si/C Li-Ion 7000 mAh"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "90W wired Reverse wired Bypass charging"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "163.7 x 76.2 x 7.6 mm (6.44 x 3.00 x 0.30 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "200 g (7.05 oz)"
+    },
+    {
+     "label": "Colors",
+     "value": "Muse Purple, Ocean Blue"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/iphone-18-pro": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.3-inch (~89.4% screen-to-body ratio)"
+    },
+    {
+     "label": "Type",
+     "value": "LTPO Super Retina XDR OLED"
+    },
+    {
+     "label": "Resolution",
+     "value": "1206 x 2622 px , (~460 ppi density)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "up to 120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "1000 nits (typ), 1600 nits (HBM), 3000 nits (peak)"
+    },
+    {
+     "label": "Protection",
+     "value": "Ceramic Shield 2,"
+    },
+    {
+     "label": "Features",
+     "value": "Dynamic Island Always-On display HDR display True Tone display Wide color display (P3) Haptic Touch Siri AI"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "A20 Pro (2 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Hexa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "2x GHz + 4x GHz"
+    },
+    {
+     "label": "GPU",
+     "value": "Apple GPU (7-core graphics)"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "12GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "256GB, 512GB, 1TB, 2TB NVMe"
+    },
+    {
+     "label": "Card Slot",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "48 MP, f/1.5-4.0, 24mm (wide), 1/1.28\", 1.22µm, dual pixel PDAF, sensor-shift OIS (gen2) 48 MP, f/2.8, 100mm (periscope telephoto), 1/2.55\", 0.7µm, PDAF, 3D sensor‑shift OIS, 4x optical zoom 48 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 0.7µm, PDAF TOF 3D LiDAR scanner (depth)"
+    },
+    {
+     "label": "Features",
+     "value": "Dual-LED dual-tone flash, HDR (photo/panorama)"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60/100/120fps, 1080p@25/30/60/120/240fps, 10-bit HDR, Dolby Vision HDR (up to 120fps), ProRes, ProRes RAW (up to 120fps), Apple Log 2, 3D (spatial) video/audio, stereo sound rec."
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "18 MP multi-aspect, f/1.9, 20mm (ultrawide), PDAF SL 3D, (depth/biometrics sensor)"
+    },
+    {
+     "label": "Features",
+     "value": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec., ProRes RAW, Apple Log 2"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Stereo Speaker"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Nano-SIM + eSIM + eSIM (max 2 at a time; International) eSIM + eSIM (8 or more, max 2 at a time; USA) Nano-SIM + Nano-SIM (China)"
+    },
+    {
+     "label": "Network",
+     "value": "5G, 4G, 3G, 2G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, hotspot"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6.0, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS (L1+L5), GLONASS, GALILEO, BDS, QZSS, NavIC"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 3.2 Gen 2, DisplayPort"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "iOS 27"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Sensors",
+     "value": "Face ID, accelerometer, gyro, proximity, compass, barometer Ultra Wideband (UWB) support (gen2 chip) Emergency SOS, Messages and Find My via satellite Enabled by TrueDepth technology in the Center Stage front camera LiDAR Scanner High dynamic range gyro High-g accelerometer Proximity sensor Dual ambient light sensors Barometer Crash Detection Roadside Assistance via satellite"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)"
+    },
+    {
+     "label": "Other Features",
+     "value": "Apple Pay (Visa, MasterCard, AMEX certified)"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Built-in rechargeable lithium‑ion battery Li-Ion 4056 mAh - Nano SIM model* Li-Ion 4288 mAh - eSIM only model"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "Wired, PD3.2, AVS, 50% in 15 min 25W wireless MagSafe/Qi2, 50% in 30 min (15W - China) 4.5W reverse wired"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "150 x 71.9 x 8.8 mm (5.91 x 2.83 x 0.35 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "211 g"
+    },
+    {
+     "label": "Body Material",
+     "value": "Glass front (Ceramic Shield 2), aluminum alloy frame, aluminum alloy back/ glass back (Ceramic Shield)"
+    },
+    {
+     "label": "Colors",
+     "value": "Burgundy, Black, Glacier, Silver"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/iphone-18-pro-max": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.9-inch (~90.7% screen-to-body ratio)"
+    },
+    {
+     "label": "Type",
+     "value": "LTPO Super Retina XDR OLED"
+    },
+    {
+     "label": "Resolution",
+     "value": "1320 x 2868 px , (~460 ppi density)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "up to 120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "1000 nits (typ), 1600 nits (HBM), 3000 nits (peak)"
+    },
+    {
+     "label": "Protection",
+     "value": "Ceramic Shield 2"
+    },
+    {
+     "label": "Features",
+     "value": "Dynamic Island Always-On display HDR display True Tone display Wide color display (P3) Haptic Touch Siri AI"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "A20 Pro (2 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Hexa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "2x GHz + 4x GHz"
+    },
+    {
+     "label": "GPU",
+     "value": "Apple GPU (7-core graphics)"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "12GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "256GB, 512GB, 1TB, 2TB NVMe"
+    },
+    {
+     "label": "Card Slot",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "48 MP, f/1.6-4.0, 24mm (wide), 1/1.28\", 1.22µm, dual pixel PDAF, sensor-shift OIS 48 MP, f/2.8, 100mm (periscope telephoto), 1/2.55\", 0.7µm, PDAF, 3D sensor‑shift OIS, 4x optical zoom 48 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 0.7µm, PDAF TOF 3D LiDAR scanner (depth)"
+    },
+    {
+     "label": "Features",
+     "value": "Dual-LED dual-tone flash, HDR (photo/panorama)"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60/100/120fps, 1080p@25/30/60/120/240fps, 10-bit HDR, Dolby Vision HDR (up to 120fps), ProRes, ProRes RAW (up to 120fps), Apple Log 2, 3D (spatial) video/audio, stereo sound rec."
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "18 MP multi-aspect, f/1.9, 20mm (ultrawide), PDAF SL 3D, (depth/biometrics sensor)"
+    },
+    {
+     "label": "Features",
+     "value": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec., ProRes RAW, Apple Log 2"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Stereo Speaker"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Nano-SIM + eSIM + eSIM (max 2 at a time; International) eSIM + eSIM (8 or more, max 2 at a time; USA) Nano-SIM + Nano-SIM (China)"
+    },
+    {
+     "label": "Network",
+     "value": "5G, 4G, 3G, 2G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, hotspot"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6.0, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS (L1+L5), GLONASS, GALILEO, BDS, QZSS, NavIC"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 3.2 Gen 2, DisplayPort"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "iOS 27"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Sensors",
+     "value": "Face ID, accelerometer, gyro, proximity, compass, barometer Ultra Wideband (UWB) support (gen2 chip) Emergency SOS, Messages and Find My via satellite Enabled by TrueDepth technology in the Center Stage front camera LiDAR Scanner High dynamic range gyro High-g accelerometer Proximity sensor Dual ambient light sensors Barometer Crash Detection Roadside Assistance via satellite"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)"
+    },
+    {
+     "label": "Other Features",
+     "value": "Apple Pay (Visa, MasterCard, AMEX certified)"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Built-in rechargeable lithium‑ion battery Li-Ion 5391 mAh - Nano SIM model Li-Ion 5567 mAh - eSIM only model"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "Wired, PD3.2, 50% in 20 min 25W wireless (MagSafe), 50% in 30 min 15W wireless (MagSafe) - China only 25W wireless (Qi2) 4.5W reverse wired"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "163.4 x 78 x 8.8 mm (6.43 x 3.07 x 0.35 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "249g"
+    },
+    {
+     "label": "Body Material",
+     "value": "Glass front (Ceramic Shield 2), aluminum alloy frame, aluminum alloy back/ glass back (Ceramic Shield)"
+    },
+    {
+     "label": "Colors",
+     "value": "Burgundy, Black, Glacier, Silver"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/iphone-duo": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "7.6-inch (~90.4% screen-to-body ratio) 5.4-inch Outer Display"
+    },
+    {
+     "label": "Type",
+     "value": "LTPO Super Retina XDR OLED"
+    },
+    {
+     "label": "Resolution",
+     "value": "1878 x 2670 px , (~460 ppi density)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "up to 120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "1000 nits (typ), 1600 nits (HBM), 3000 nits (peak)"
+    },
+    {
+     "label": "Protection",
+     "value": "Ceramic Shield 2"
+    },
+    {
+     "label": "Features",
+     "value": "Dynamic Island Always-On display HDR display True Tone display Wide color display (P3) Haptic Touch Siri AI"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "A20 Pro (2 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Hexa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "2x GHz + 4x GHz"
+    },
+    {
+     "label": "GPU",
+     "value": "Apple GPU (7-core graphics)"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "12GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "256GB, 512GB, 1TB, 2TB NVMe"
+    },
+    {
+     "label": "Card Slot",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "48 MP, f/1.6, 26mm (wide), 1/1.28\", 1.22µm, PDAF, sensor-shift OIS (gen2) 48 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 0.7µm, PDAF"
+    },
+    {
+     "label": "Features",
+     "value": "Dual-LED dual-tone flash, HDR (photo/panorama)"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60/100/120fps, 1080p@25/30/60/120/240fps, 10-bit HDR, Dolby Vision HDR (up to 120fps), ProRes, 3D (spatial) video/audio, stereo sound rec."
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "12 MP multi-aspect, f/2.2, (wide), AF"
+    },
+    {
+     "label": "Features",
+     "value": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec., ProRes RAW, Apple Log 2"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Stereo Speaker"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Nano-SIM + eSIM + eSIM (max 2 at a time; International) eSIM + eSIM (8 or more, max 2 at a time; USA) Nano-SIM + Nano-SIM (China)"
+    },
+    {
+     "label": "Network",
+     "value": "5G, 4G, 3G, 2G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, hotspot"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6.0, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS (L1+L5), GLONASS, GALILEO, BDS, QZSS, NavIC"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 3.2 Gen 2, DisplayPort"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "iOS 27"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Sensors",
+     "value": "Face ID, accelerometer, gyro, proximity, compass, barometer Ultra Wideband (UWB) support (gen2 chip) Emergency SOS, Messages and Find My via satellite Enabled by TrueDepth technology in the Center Stage front camera LiDAR Scanner High dynamic range gyro High-g accelerometer Proximity sensor Dual ambient light sensors Barometer Crash Detection Roadside Assistance via satellite"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)"
+    },
+    {
+     "label": "Other Features",
+     "value": "Apple Pay (Visa, MasterCard, AMEX certified)"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Built-in rechargeable lithium‑ion battery"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "Wired, PD3.2, AVS, 50% in 20 min 25W wireless MagSafe/Qi2, 50% in 30 min"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Unfolded: 117.8 x 164.6 x 5.2 mm Folded: 117.8 x 84.1 x 11.3 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "254 g"
+    },
+    {
+     "label": "Body Material",
+     "value": "Glass front (Ceramic Shield 2), aluminum alloy frame, aluminum alloy back/ glass back (Ceramic Shield)"
+    },
+    {
+     "label": "Colors",
+     "value": "Night Sky, Star White"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/iphone-17-pro-max": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.9-inch (diagonal)"
+    },
+    {
+     "label": "Type",
+     "value": "Super Retina XDR display All-screen OLED display"
+    },
+    {
+     "label": "Resolution",
+     "value": "2868-by-1320-pixel resolution at 460 ppi"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology with adaptive refresh rates up to 120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "1000 nits max brightness (typical) 1600 nits peak brightness (HDR) 3000 nits peak brightness (outdoor) 1 nit minimum brightness"
+    },
+    {
+     "label": "Protection",
+     "value": "Ceramic Shield 2 front, 3x better scratch resistance"
+    },
+    {
+     "label": "Features",
+     "value": "Dynamic Island Always-On display HDR display 2,000,000:1 contrast ratio (typical) True Tone display Wide color display (P3) Haptic Touch"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "A19 Pro chip (3 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "6-core CPU with 2 performance and 4 efficiency cores 16-core Neural Engine Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "GPU",
+     "value": "6-core GPU with Neural Accelerators"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "12GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "256GB, 512GB, 1TB, 2TB NVMe"
+    },
+    {
+     "label": "Card Slot",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "48 MP, f/1.6, 24mm (wide), 1/1.28\", 1.22µm, dual pixel PDAF, sensor-shift OIS 48 MP, f/2.8, 100mm (periscope telephoto), 1/2.55\", 0.7µm, PDAF, 3D sensor‑shift OIS, 4x optical zoom 48 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 0.7µm, PDAF TOF 3D LiDAR scanner (depth)"
+    },
+    {
+     "label": "Features",
+     "value": "Dual-LED dual-tone flash, HDR (photo/panorama) Adaptive True Tone flash Photonic Engine Deep Fusion Smart HDR 5 for photos Next-generation portraits with Focus and Depth Control Portrait Lighting with six effects Night mode Latest-generation Photographic Styles Macro photography Spatial photos ProRAW"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60/100/120fps, 1080p@25/30/60/120/240fps, 10-bit HDR, Dolby Vision HDR (up to 60fps), ProRes, ProRes RAW, Apple Log 2, 3D (spatial) video/audio, stereo sound rec. 4K Dolby Vision video recording up to 120 fps (Fusion Main), up to 60 fps (Fusion Ultra Wide, Fusion Telephoto) Cinematic mode for recording videos with shallow depth of field (up to 4K Dolby Vision at 30 fps) Dual Capture (up to 4K Dolby Vision at 30 fps) Action mode (up to 2.8K Dolby Vision at 60 fps) Spatial video recording at 1080p at 30 fps ProRes video recording up to 4K at 120 fps with external recording ProRes RAW Academy Color Encoding System Apple Log 2 video recording Genlock support Macro video recording, including slo‑mo and time‑lapse Slo‑mo video support for 1080p up to 240 fps and 4K Dolby Vision up to 120 fps (Fusion Main) QuickTake video (up to 4K at 60 fps in Dolby Vision HDR) Second-generation sensor-shift optical image stabilization (Fusion Main) 3D sensor-shift optical image stabilization (Fusion Telephoto) Spatial Audio and stereo recording Studio-quality four-mic array Wind noise reduction Audio Mix"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "18 MP multi-aspect, f/1.9, (wide), PDAF, OIS SL 3D, (depth/biometrics sensor)"
+    },
+    {
+     "label": "Features",
+     "value": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec., ProRes RAW, Apple Log 2 Center Stage for photos Dual Capture Center Stage for video calls Ultra-stabilized video Photonic Engine Deep Fusion Smart HDR 5 for photos Next-generation portraits with Focus and Depth Control Night mode Latest-generation Photographic Styles"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS 4K Dolby Vision video recording up to 60 fps Cinematic mode up to 4K Dolby Vision at 30 fps ProRes video recording up to 4K at 60 fps with external recording Slo-mo video support for 1080p at 120 fps QuickTake video (up to 4K at 60 fps in Dolby Vision HDR) Cinematic video stabilization (4K, 1080p, and 720p)"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Stereo Speaker"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Nano-SIM + eSIM + eSIM (max 2 at a time; International) eSIM + eSIM (8 or more, max 2 at a time; USA) Nano-SIM + Nano-SIM (China)"
+    },
+    {
+     "label": "Network",
+     "value": "5G, 4G, 3G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, hotspot"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6.0, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS (L1+L5), GLONASS, GALILEO, BDS, QZSS, NavIC"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 3.2 Gen 2, DisplayPort"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "iOS 26"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Sensors",
+     "value": "Face ID, accelerometer, gyro, proximity, compass, barometer Ultra Wideband (UWB) support (gen2 chip) Emergency SOS, Messages and Find My via satellite Enabled by TrueDepth technology in the Center Stage front camera LiDAR Scanner High dynamic range gyro High-g accelerometer Proximity sensor Dual ambient light sensors Barometer Crash Detection Roadside Assistance via satellite"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)"
+    },
+    {
+     "label": "Other Features",
+     "value": "Apple Pay (Visa, MasterCard, AMEX certified)"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Built-in rechargeable lithium‑ion battery Li-Ion 4832 mAh - Nano SIM model Li-Ion 5088 mAh - eSIM only model"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "Wired, PD2.0, 50% in 20 min 25W wireless (MagSafe), 50% in 30 min 15W wireless (MagSafe) - China only 25W wireless (Qi2) 4.5W reverse wired"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "163.4 x 78 x 8.8 mm (6.43 x 3.07 x 0.35 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "233 g (8.22 oz)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Glass front (Ceramic Shield 2), aluminum alloy frame, aluminum alloy back/ glass back (Ceramic Shield)"
+    },
+    {
+     "label": "Colors",
+     "value": "Silver Cosmic Orange Deep Blue"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/iphone-17-pro": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.3-inch (diagonal)"
+    },
+    {
+     "label": "Type",
+     "value": "Super Retina XDR display All-screen OLED display"
+    },
+    {
+     "label": "Resolution",
+     "value": "2622-by-1206-pixel resolution at 460 ppi"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "1000 nits max brightness (typical) 1600 nits peak brightness (HDR) 3000 nits peak brightness (outdoor) 1 nit minimum brightness"
+    },
+    {
+     "label": "Protection",
+     "value": "Ceramic Shield 2 front, 3x better scratch resistance"
+    },
+    {
+     "label": "Features",
+     "value": "Dynamic Island Always-On display HDR display 2,000,000:1 contrast ratio (typical) True Tone display Wide color display (P3) Haptic Touch"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "A19 Pro chip (3 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "6-core CPU with 2 performance and 4 efficiency cores 16-core Neural Engine Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "GPU",
+     "value": "6-core GPU with Neural Accelerators"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "12GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "256GB, 512GB, 1TB NVMe"
+    },
+    {
+     "label": "Card Slot",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "48 MP, f/1.6, 24mm (wide), 1/1.28\", 1.22µm, dual pixel PDAF, sensor-shift OIS 48 MP, f/2.8, 100mm (periscope telephoto), 1/2.55\", 0.7µm, PDAF, 3D sensor‑shift OIS, 4x optical zoom 48 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 0.7µm, PDAF TOF 3D LiDAR scanner (depth)"
+    },
+    {
+     "label": "Features",
+     "value": "Dual-LED dual-tone flash, HDR (photo/panorama) Adaptive True Tone flash Photonic Engine Deep Fusion Smart HDR 5 for photos Next-generation portraits with Focus and Depth Control Portrait Lighting with six effects Night mode Latest-generation Photographic Styles Macro photography Spatial photos ProRAW"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60/100/120fps, 1080p@25/30/60/120/240fps, 10-bit HDR, Dolby Vision HDR (up to 60fps), ProRes, ProRes RAW, Apple Log 2, 3D (spatial) video/audio, stereo sound rec. 4K Dolby Vision video recording up to 120 fps (Fusion Main), up to 60 fps (Fusion Ultra Wide, Fusion Telephoto) Cinematic mode for recording videos with shallow depth of field (up to 4K Dolby Vision at 30 fps) Dual Capture (up to 4K Dolby Vision at 30 fps) Action mode (up to 2.8K Dolby Vision at 60 fps) Spatial video recording at 1080p at 30 fps ProRes video recording up to 4K at 120 fps with external recording ProRes RAW Academy Color Encoding System Apple Log 2 video recording Genlock support Macro video recording, including slo‑mo and time‑lapse Slo‑mo video support for 1080p up to 240 fps and 4K Dolby Vision up to 120 fps (Fusion Main) QuickTake video (up to 4K at 60 fps in Dolby Vision HDR) Second-generation sensor-shift optical image stabilization (Fusion Main) 3D sensor-shift optical image stabilization (Fusion Telephoto) Spatial Audio and stereo recording Studio-quality four-mic array Wind noise reduction Audio Mix"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "18 MP multi-aspect, f/1.9, (wide), PDAF, OIS SL 3D, (depth/biometrics sensor)"
+    },
+    {
+     "label": "Features",
+     "value": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec., ProRes RAW, Apple Log 2 Center Stage for photos Dual Capture Center Stage for video calls Ultra-stabilized video Photonic Engine Deep Fusion Smart HDR 5 for photos Next-generation portraits with Focus and Depth Control Night mode Latest-generation Photographic Styles"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS 4K Dolby Vision video recording up to 60 fps Cinematic mode up to 4K Dolby Vision at 30 fps ProRes video recording up to 4K at 60 fps with external recording Slo-mo video support for 1080p at 120 fps QuickTake video (up to 4K at 60 fps in Dolby Vision HDR) Cinematic video stabilization (4K, 1080p, and 720p)"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Stereo Speaker"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Nano-SIM + eSIM + eSIM (max 2 at a time; International) eSIM + eSIM (8 or more, max 2 at a time; USA) Nano-SIM + Nano-SIM (China)"
+    },
+    {
+     "label": "Network",
+     "value": "5G, 4G, 3G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, hotspot"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6.0, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS (L1+L5), GLONASS, GALILEO, BDS, QZSS, NavIC"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 3.2 Gen 2, DisplayPort"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "iOS 26"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Sensors",
+     "value": "Face ID, accelerometer, gyro, proximity, compass, barometer Ultra Wideband (UWB) support (gen2 chip) Emergency SOS, Messages and Find My via satellite Enabled by TrueDepth technology in the Center Stage front camera LiDAR Scanner High dynamic range gyro High-g accelerometer Proximity sensor Dual ambient light sensors Barometer Crash Detection Roadside Assistance via satellite"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)"
+    },
+    {
+     "label": "Other Features",
+     "value": "Apple Pay (Visa, MasterCard, AMEX certified)"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Built-in rechargeable lithium‑ion battery Li-Ion 3988 mAh - Nano SIM model Li-Ion 4252 mAh - eSIM only model"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "Wired, PD2.0, 50% in 20 min 25W wireless (MagSafe), 50% in 30 min 15W wireless (MagSafe) - China only 25W wireless (Qi2) 4.5W reverse wired"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "150 x 71.9 x 8.8 mm (5.91 x 2.83 x 0.35 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "206 g (7.27 oz)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Glass front (Ceramic Shield 2), aluminum alloy frame, aluminum alloy back/ glass back (Ceramic Shield)"
+    },
+    {
+     "label": "Colors",
+     "value": "Silver Cosmic Orange Deep Blue"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/iphone-air": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.5-inch (diagonal)"
+    },
+    {
+     "label": "Type",
+     "value": "Super Retina XDR display All-screen OLED display"
+    },
+    {
+     "label": "Resolution",
+     "value": "2736-by-1260-pixel resolution at 460 ppi"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology with adaptive refresh rates up to 120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "1000 nits max brightness (typical) 1600 nits peak brightness (HDR) 3000 nits peak brightness (outdoor) 1 nit minimum brightness"
+    },
+    {
+     "label": "Protection",
+     "value": "Ceramic Shield 2 front, 3x better scratch resistance"
+    },
+    {
+     "label": "Features",
+     "value": "Dynamic Island Always-On display HDR display 2,000,000:1 contrast ratio (typical) True Tone display Wide color display (P3) Haptic Touch"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "A19 Pro chip (3 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "6-core CPU with 2 performance and 4 efficiency cores 16-core Neural Engine Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "GPU",
+     "value": "5-core GPU with Neural Accelerators"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "256GB, 512GB, 1TB"
+    },
+    {
+     "label": "Card Slot",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "48 MP, f/1.6, 26mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, sensor-shift OIS"
+    },
+    {
+     "label": "Features",
+     "value": "Dual-LED dual-tone flash, HDR (photo/panorama) Sensor-shift optical image stabilization 1x, 2x optical zoom options True Tone flash Photonic Engine Deep Fusion Smart HDR 5 for photos Next-generation portraits with Focus and Depth Control Portrait Lighting with six effects Night mode Latest-generation Photographic Styles"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps, HDR, Dolby Vision HDR (up to 60fps), stereo sound rec. 4K Dolby Vision video recording up to 60 fps Dual Capture (up to 4K Dolby Vision at 30 fps) Action mode (up to 2.8K Dolby Vision at 60 fps) Slo‑mo video support up to 1080p at 240 fps QuickTake video (up to 4K at 60 fps in Dolby Vision HDR) Sensor-shift optical image stabilization Spatial Audio and stereo recording Wind noise reduction Audio Mix"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "18 MP multi-aspect, f/1.9, (wide), PDAF, OIS SL 3D, (depth/biometrics sensor)"
+    },
+    {
+     "label": "Features",
+     "value": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec. Center Stage for photos Dual Capture Center Stage for video calls Ultra-stabilized video Photonic Engine Deep Fusion Smart HDR 5 for photos Next-generation portraits with Focus and Depth Control Night mode Latest-generation Photographic Styles"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS 4K Dolby Vision video recording up to 60 fps Slo-mo video support for 1080p at 120 fps QuickTake video (up to 4K at 60 fps in Dolby Vision HDR) Cinematic video stabilization (4K, 1080p, and 720p)"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Stereo Speaker"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "eSIM + eSIM (8 or more, max 2 at a time)"
+    },
+    {
+     "label": "Network",
+     "value": "5G, 4G, 3G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, hotspot"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6.0, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GALILEO, GLONASS, QZSS, BDS, NavIC"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0, DisplayPort"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "iOS 26"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Sensors",
+     "value": "Face ID, accelerometer, gyro, proximity, compass, barometer Ultra Wideband (UWB) support (gen2 chip) Emergency SOS, Messages and Find My via satellite High dynamic range gyro High-g accelerometer Proximity sensor Dual ambient light sensors Barometer Crash Detection Roadside Assistance via satellite"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)"
+    },
+    {
+     "label": "Other Features",
+     "value": "Apple Pay (Visa, MasterCard, AMEX certified)"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Built-in rechargeable lithium‑ion battery Li-Ion 3149 mAh"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "Wired, PD2.0, 50% in 30 min 20W wireless (MagSafe), 50% in 30 min 20W wireless (Qi2) 4.5W reverse wired"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "156.2 x 74.7 x 5.6 mm (6.15 x 2.94 x 0.22 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "165 g (5.82 oz)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Glass front (Ceramic Shield 2), titanium frame (grade 5), glass back (Ceramic Shield)"
+    },
+    {
+     "label": "Colors",
+     "value": "Space Black, Cloud White, Light Gold, Sky Blue"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/iphone-17": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.3-inch (diagonal)"
+    },
+    {
+     "label": "Type",
+     "value": "Super Retina XDR display All-screen OLED display"
+    },
+    {
+     "label": "Resolution",
+     "value": "2622-by-1206-pixel resolution at 460 ppi"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology with adaptive refresh rates up to 120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "1000 nits max brightness (typical) 1600 nits peak brightness (HDR) 3000 nits peak brightness (outdoor) 1 nit minimum brightness"
+    },
+    {
+     "label": "Protection",
+     "value": "Ceramic Shield 2 front, 3x better scratch resistanc"
+    },
+    {
+     "label": "Features",
+     "value": "Dynamic Island Always-On display HDR display 2,000,000:1 contrast ratio (typical) True Tone display Wide color display (P3) Haptic Touch"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "A19 chip (3 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "6-core CPU with 2 performance and 4 efficiency cores 16-core Neural Engine Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "GPU",
+     "value": "5-core GPU with Neural Accelerators"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "256GB, 512GB"
+    },
+    {
+     "label": "Card Slot",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "48 MP, f/1.6, 26mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, sensor-shift OIS 48 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 0.7µm, PDAF"
+    },
+    {
+     "label": "Features",
+     "value": "Dual-LED dual-tone flash, HDR (photo/panorama) Sensor-shift optical image stabilization (Fusion Main) .5x, 1x, 2x optical zoom options True Tone flash Photonic Engine Deep Fusion Smart HDR 5 for photos Next-generation portraits with Focus and Depth Control Portrait Lighting with six effects Night mode Latest-generation Photographic Styles Macro photography Spatial photos"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps, HDR, Dolby Vision HDR (up to 60fps), stereo sound rec. 4K Dolby Vision video recording up to 60 fps Cinematic mode for recording videos with shallow depth of field (up to 4K Dolby Vision at 30 fps) Dual Capture (up to 4K Dolby Vision at 30 fps) Action mode (up to 2.8K Dolby Vision at 60 fps) Spatial video recording at 1080p at 30 fps Macro video recording, including slo‑mo and time‑lapse Slo‑mo video support up to 1080p at 240 fps QuickTake video (up to 4K at 60 fps in Dolby Vision HDR) Sensor-shift optical image stabilization (Fusion Main) Spatial Audio and stereo recording Wind noise reduction Audio Mix"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "18 MP multi-aspect, f/1.9, (wide), PDAF, OIS SL 3D, (depth/biometrics sensor)"
+    },
+    {
+     "label": "Features",
+     "value": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec. Center Stage for photos Dual Capture Center Stage for video calls Ultra-stabilized video Photonic Engine Deep Fusion Smart HDR 5 for photos Next-generation portraits with Focus and Depth Control Night mode Latest-generation Photographic Styles"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS 4K Dolby Vision video recording up to 60 fps Cinematic mode up to 4K Dolby Vision at 30 fps Slo-mo video support for 1080p at 120 fps QuickTake video (up to 4K at 60 fps in Dolby Vision HDR) Cinematic video stabilization (4K, 1080p, and 720p)"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Stereo Speaker"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Nano-SIM + eSIM + eSIM (max 2 at a time; International) eSIM + eSIM (8 or more, max 2 at a time; USA) Nano-SIM + Nano-SIM (China)"
+    },
+    {
+     "label": "Network",
+     "value": "5G, 4G, 3G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac/6/7, tri-band, hotspot"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6.0, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GLONASS, GALILEO, BDS, QZSS, NavIC"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0, DisplayPort"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "iOS 26"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Sensors",
+     "value": "Face ID, accelerometer, gyro, proximity, compass, barometer Ultra Wideband (UWB) support (gen2 chip) Emergency SOS, Messages and Find My via satellite High dynamic range gyro High-g accelerometer Proximity sensor Dual ambient light sensors Barometer Crash Detection Roadside Assistance via satellite"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)"
+    },
+    {
+     "label": "Other Features",
+     "value": "Apple Pay (Visa, MasterCard, AMEX certified)"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Built-in rechargeable lithium‑ion battery Li-Ion 3692 mAh"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "Wired, PD2.0, 50% in 20 min 25W wireless (MagSafe), 50% in 30 min 15W wireless (MagSafe) - China only 25W wireless (Qi2) 4.5W reverse wired"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "149.6 x 71.5 x 8 mm (5.89 x 2.81 x 0.31 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "177 g (6.24 oz)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Glass front (Ceramic Shield 2), aluminum frame, glass back"
+    },
+    {
+     "label": "Colors",
+     "value": "Black, White, Mist Blue, Sage, Lavender"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/iphone-17e": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.1 inches, 90.2 cm2 (~86.0% screen-to-body ratio)"
+    },
+    {
+     "label": "Type",
+     "value": "Super Retina XDR OLED"
+    },
+    {
+     "label": "Resolution",
+     "value": "1170 x 2532 pixels, 19.5:9 ratio (~460 ppi density)"
+    },
+    {
+     "label": "Brightness",
+     "value": "2,000,000:1 contrast ratio (typical) 800 nits max brightness (typical) 1200 nits peak brightness (HDR)"
+    },
+    {
+     "label": "Protection",
+     "value": "Ceramic Shield 2 Anti-reflective coating"
+    },
+    {
+     "label": "Features",
+     "value": "HDR display True Tone Wide color (P3) Haptic Touch"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "A19 chip (3 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "6‑core CPU with 2 performance and 4 efficiency cores 16‑core Neural Engine Hardware-accelerated ray tracing"
+    },
+    {
+     "label": "GPU",
+     "value": "4‑core GPU with Neural Accelerators"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "256GB, 512GB"
+    },
+    {
+     "label": "Card Slot",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "48 MP, f/1.6, 26mm (wide), 1/2.55\", 0.7µm, PDAF, OIS"
+    },
+    {
+     "label": "Features",
+     "value": "Dual-LED dual-tone flash, HDR, panorama, 3D (spatial) audio"
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps, Dolby Vision HDR, OIS, stereo sound rec."
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "12 MP, f/1.9, 23mm (wide), 1/3.6\", 1.0µm, PDAF SL 3D, (depth/biometrics sensor)"
+    },
+    {
+     "label": "Features",
+     "value": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec."
+    },
+    {
+     "label": "Video Recording",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, Dolby Vision HDR"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Stereo Speaker"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Nano-SIM + eSIM + eSIM (max 2 at a time; International) eSIM + eSIM (8 or more, max 2 at a time; USA) Nano-SIM + Nano-SIM (China)"
+    },
+    {
+     "label": "Network",
+     "value": "5G, 4G, 3G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, hotspot"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GLONASS, GALILEO, BDS, QZSS, NavIC"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "iOS 26.3"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Sensors",
+     "value": "Face ID, accelerometer, gyro, proximity, compass, barometer Emergency SOS, Messages and Find My via satellite"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Built-in rechargeable lithium‑ion battery Li-Ion 4005 mAh"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "Wired, 50% in 30 min 15W wireless MagSafe/Qi2"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "146.7 x 71.5 x 7.8 mm (5.78 x 2.81 x 0.31 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "169 g (5.96 oz)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Glass front (Ceramic Shield 2), glass back, aluminum frame"
+    },
+    {
+     "label": "Colors",
+     "value": "Black, White, Soft Pink"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-ipad-11-inch-11th-gen": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "LED backlit Multi‑Touch display with IPS technology"
+    },
+    {
+     "label": "Size",
+     "value": "11-inch"
+    },
+    {
+     "label": "Resolution",
+     "value": "2360 x 1640"
+    },
+    {
+     "label": "Processor",
+     "value": "A16 chip 5-core CPU 4-core GPU 16-core Neural Engine"
+    },
+    {
+     "label": "Storage",
+     "value": "128GB/ 256GB"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Wi-Fi"
+    },
+    {
+     "label": "Operating System",
+     "value": "iPadOS 18"
+    },
+    {
+     "label": "Audio",
+     "value": "Landscape stereo speakers Dual microphones for calls, video recording, and audio recording"
+    }
+   ]
+  },
+  {
+   "group": "Physical Spec",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "9.79 x 7.07 x 0.28\" / 24.87 x 17.96 x 0.71 cm"
+    },
+    {
+     "label": "Weight",
+     "value": "1.05 lb / 476 g"
+    },
+    {
+     "label": "SIM",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Camera",
+   "items": [
+    {
+     "label": "Rear",
+     "value": "12MP Wide camera, ƒ/1.8 aperture Digital zoom up to 5x Five-element lens Autofocus with Focus Pixels Panorama (up to 63MP) Smart HDR 3 Photo geotagging Auto image stabilization Burst mode Image formats captured: HEIF and JPEG"
+    },
+    {
+     "label": "Front",
+     "value": "Landscape 12MP Ultra Wide camera, 122° field of view ƒ/2.4 aperture Smart HDR 3 1080p HD video recording at 25 fps, 30 fps, or 60 fps Time‑lapse video with stabilization Extended dynamic range for video up to 30 fps Cinematic video stabilization (1080p and 720p) Lens correction Retina Flash Auto image stabilization Burst mode"
+    },
+    {
+     "label": "Video",
+     "value": "4K video recording at 24 fps, 25 fps, 30 fps, or 60 fps 1080p HD video recording at 25 fps, 30 fps, or 60 fps 720p HD video recording at 30 fps or 60 fps Slo‑mo video support for 1080p at 120 fps or 240 fps Time-lapse video with stabilization Extended dynamic range for video up to 30 fps Video image stabilization Cinematic video stabilization (1080p and 720p) Continuous autofocus video Playback zoom Video formats captured: HEVC and H.264"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Lithium‑polymer"
+    },
+    {
+     "label": "Capacity",
+     "value": "28.6‐watt‐hour"
+    },
+    {
+     "label": "Charging",
+     "value": "Charging via power adapter or USB-C to computer system"
+    }
+   ]
+  },
+  {
+   "group": "Special Features",
+   "items": [
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.2"
+    },
+    {
+     "label": "GPS",
+     "value": "Digital compass Wi-Fi iBeacon microlocation"
+    },
+    {
+     "label": "Sensors",
+     "value": "Touch ID Three‐axis gyro Accelerometer Barometer Ambient light sensor"
+    },
+    {
+     "label": "USB",
+     "value": "USB-C port with support for: Charging DisplayPort USB 2.0 (up to 480 Mb/s)"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 6 (802.11ax) with 2x2 MIMO; speeds up to 1.2 Gbps Simultaneous dual band"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-ipad-mini-7": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "LED backlit Multi-Touch display with IPS technology Wide color (P3) True Tone Fingerprint-resistant oleophobic coating Fully laminated Antireflective coating 500 nits brightness Supports Apple Pencil Pro Supports Apple Pencil (USB‑C) Apple Pencil hover"
+    },
+    {
+     "label": "Size",
+     "value": "8.3-inch"
+    },
+    {
+     "label": "Resolution",
+     "value": "2266-by-1488 resolution at 326 ppi"
+    },
+    {
+     "label": "Processor",
+     "value": "A17 Pro chip 6-core CPU with 2 performance cores and 4 efficiency cores 5-core GPU 16-core Neural Engine"
+    },
+    {
+     "label": "RAM",
+     "value": "8GB"
+    },
+    {
+     "label": "Storage",
+     "value": "128GB"
+    },
+    {
+     "label": "Connectivity",
+     "value": "WiFi Only"
+    },
+    {
+     "label": "Operating System",
+     "value": "iPadOS 18"
+    },
+    {
+     "label": "Audio",
+     "value": "FaceTime audio Dual microphones for calls, video recording, and audio recording"
+    }
+   ]
+  },
+  {
+   "group": "Physical Spec",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "195.4 x 134.8 x 6.3 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "0.65 pound (293 grams)"
+    },
+    {
+     "label": "Color",
+     "value": "Blue, Purple"
+    }
+   ]
+  },
+  {
+   "group": "Camera",
+   "items": [
+    {
+     "label": "Rear",
+     "value": "12MP Wide camera, ƒ/1.8 aperture Digital zoom up to 5x Five‑element lens True Tone flash Autofocus with Focus Pixels Panorama (up to 63MP) Smart HDR 4 Wide color capture for photos and Live Photos Advanced red-eye correction Photo geotagging Auto image stabilization Burst mode Image formats captured: HEIF and JPEG"
+    },
+    {
+     "label": "Front",
+     "value": "12MP Center Stage camera ƒ/2.4 aperture Smart HDR 4 1080p HD video recording at 25 fps, 30 fps, or 60 fps Time‑lapse video with stabilization Extended dynamic range for video up to 30 fps Cinematic video stabilization (1080p and 720p) Wide color capture for photos and Live Photos Lens correction Retina Flash with True Tone Auto image stabilization Burst mode"
+    },
+    {
+     "label": "Video",
+     "value": "4K video recording at 24 fps, 25 fps, 30 fps, or 60 fps 1080p HD video recording at 25 fps, 30 fps, or 60 fps 720p HD video recording at 30 fps True Tone flash Slo‑mo video support for 1080p at 120 fps or 240 fps Time‑lapse video with stabilization Extended dynamic range for video up to 30 fps Cinematic video stabilization (4K, 1080p, and 720p) Continuous autofocus video Playback zoom Video formats recorded: HEVC and H.264"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Lithium-polymer battery"
+    },
+    {
+     "label": "Capacity",
+     "value": "Built-in 19.3-watt-hour rechargeable lithium-polymer battery"
+    }
+   ]
+  },
+  {
+   "group": "Special Features",
+   "items": [
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Sensors",
+     "value": "Touch ID Three-axis gyro Accelerometer Barometer Ambient light sensor"
+    },
+    {
+     "label": "USB",
+     "value": "USB-C"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi‑Fi 6E (802.11ax) with 2x2 MIMO Simultaneous dual band"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/ipad-air-m4": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "Liquid Retina display LED backlit Multi‑Touch display with IPS technology Wide color (P3) True Tone Fingerprint-resistant oleophobic coating Fully laminated Antireflective coating 500 nits brightness Supports Apple Pencil Pro Supports Apple Pencil (USB‑C) Apple Pencil hover"
+    },
+    {
+     "label": "Size",
+     "value": "11-inch"
+    },
+    {
+     "label": "Resolution",
+     "value": "2360-by-1640-pixel resolution at 264 ppi"
+    },
+    {
+     "label": "Processor",
+     "value": "Apple M4 chip 8-core CPU with 3 performance cores and 5 efficiency cores 9-core GPU Hardware-accelerated ray tracing 16-core Neural Engine 120GB/s memory bandwidth Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW Video decode engine Video encode engine ProRes encode and decode engine AV1 decode"
+    },
+    {
+     "label": "RAM",
+     "value": "12GB"
+    },
+    {
+     "label": "Storage",
+     "value": "128GB"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Only Wi-Fi"
+    },
+    {
+     "label": "Operating System",
+     "value": "iPadOS 26"
+    },
+    {
+     "label": "Audio",
+     "value": "Landscape stereo speakers"
+    }
+   ]
+  },
+  {
+   "group": "Physical Spec",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "247.6 x 178.5 x 6.1 mm (9.75 x 7.03 x 0.24 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "465 g"
+    }
+   ]
+  },
+  {
+   "group": "Camera",
+   "items": [
+    {
+     "label": "Rear",
+     "value": "12MP Wide camera, ƒ/1.8 aperture Digital zoom up to 5x Five-element lens Panorama (up to 63MP) Sapphire crystal lens cover Autofocus with Focus Pixels Smart HDR 4 Wide color capture for photos and Live Photos Photo geotagging Auto image stabilization Burst mode Image formats captured: HEIF and JPEG"
+    },
+    {
+     "label": "Front",
+     "value": "Landscape 12MP Center Stage camera ƒ/2.0 aperture Smart HDR 4 1080p HD video recording at 25 fps, 30 fps, or 60 fps Time‑lapse video with stabilization Extended dynamic range for video up to 30 fps Cinematic video stabilization (1080p and 720p) Wide color capture for photos and Live Photos Lens correction Retina Flash with True Tone Auto image stabilization Burst mode"
+    },
+    {
+     "label": "Video",
+     "value": "4K video recording at 24 fps, 25 fps, 30 fps, or 60 fps 1080p HD video recording at 25 fps, 30 fps, or 60 fps 720p HD video recording at 30 fps Slo‑mo video support for 1080p at 120 fps or 240 fps Time‑lapse video with stabilization Extended dynamic range for video up to 30 fps Cinematic video stabilization (4K, 1080p, and 720p) Continuous autofocus video Playback zoom Video formats captured: HEVC and H.264"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Built‐in rechargeable lithium‑polymer battery"
+    },
+    {
+     "label": "Capacity",
+     "value": "28.93‐watt-hour"
+    },
+    {
+     "label": "Charging",
+     "value": "Charging via power adapter or USB‑C to computer system"
+    }
+   ]
+  },
+  {
+   "group": "Special Features",
+   "items": [
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6"
+    },
+    {
+     "label": "GPS",
+     "value": "Digital compass Wi‑Fi iBeacon microlocation GPS/GNSS Cellular"
+    },
+    {
+     "label": "Sensors",
+     "value": "Touch ID Three‐axis gyro Accelerometer Barometer Ambient light sensor"
+    },
+    {
+     "label": "USB",
+     "value": "USB-C"
+    },
+    {
+     "label": "WLAN",
+     "value": "Apple N1 wireless networking chip Wi-Fi 7 (802.11be) with 2x2 MIMO Simultaneous dual band Thread networking technology"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/ipad-air-m4-13-inch": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "Liquid Retina display LED backlit Multi‑Touch display with IPS technology Wide color (P3) True Tone Fingerprint-resistant oleophobic coating Fully laminated Antireflective coating 500 nits brightness Supports Apple Pencil Pro Supports Apple Pencil (USB‑C) Apple Pencil hover"
+    },
+    {
+     "label": "Size",
+     "value": "13-inch"
+    },
+    {
+     "label": "Resolution",
+     "value": "2732-by-2048-pixel resolution at 264 ppi"
+    },
+    {
+     "label": "Processor",
+     "value": "Apple M4 chip 8-core CPU with 3 performance cores and 5 efficiency cores 9-core GPU Hardware-accelerated ray tracing 16-core Neural Engine 120GB/s memory bandwidth Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW Video decode engine Video encode engine ProRes encode and decode engine AV1 decode"
+    },
+    {
+     "label": "RAM",
+     "value": "12GB unified memory"
+    },
+    {
+     "label": "Storage",
+     "value": "128GB"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Wi-Fi"
+    },
+    {
+     "label": "Operating System",
+     "value": "iPadOS 26"
+    },
+    {
+     "label": "Audio",
+     "value": "Landscape stereo speakers"
+    }
+   ]
+  },
+  {
+   "group": "Physical Spec",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "280.6 x 214.9 x 6.1 mm (9.75 x 7.03 x 0.24 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "1.36 pounds (616 grams)"
+    },
+    {
+     "label": "SIM",
+     "value": "eSIM"
+    },
+    {
+     "label": "Color",
+     "value": "Space Gray, Blue, Purple, Starlight"
+    }
+   ]
+  },
+  {
+   "group": "Camera",
+   "items": [
+    {
+     "label": "Rear",
+     "value": "12MP Wide camera, ƒ/1.8 aperture Digital zoom up to 5x Five-element lens Panorama (up to 63MP) Sapphire crystal lens cover Autofocus with Focus Pixels Smart HDR 4 Wide color capture for photos and Live Photos Photo geotagging Auto image stabilization Burst mode Image formats captured: HEIF and JPEG"
+    },
+    {
+     "label": "Front",
+     "value": "Landscape 12MP Center Stage camera ƒ/2.0 aperture Smart HDR 4 1080p HD video recording at 25 fps, 30 fps, or 60 fps Time‑lapse video with stabilization Extended dynamic range for video up to 30 fps Cinematic video stabilization (1080p and 720p) Wide color capture for photos and Live Photos Lens correction Retina Flash with True Tone Auto image stabilization Burst mode"
+    },
+    {
+     "label": "Video",
+     "value": "4K video recording at 24 fps, 25 fps, 30 fps, or 60 fps 1080p HD video recording at 25 fps, 30 fps, or 60 fps 720p HD video recording at 30 fps Slo‑mo video support for 1080p at 120 fps or 240 fps Time‑lapse video with stabilization Extended dynamic range for video up to 30 fps Cinematic video stabilization (4K, 1080p, and 720p) Continuous autofocus video Playback zoom Video formats captured: HEVC and H.264"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Built‐in rechargeable lithium‑polymer battery"
+    },
+    {
+     "label": "Capacity",
+     "value": "36.59‐watt-hour"
+    },
+    {
+     "label": "Charging",
+     "value": "Charging via power adapter or USB‑C to computer system"
+    }
+   ]
+  },
+  {
+   "group": "Special Features",
+   "items": [
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6"
+    },
+    {
+     "label": "GPS",
+     "value": "Digital compass Wi‑Fi iBeacon microlocation GPS/GNSS Cellular"
+    },
+    {
+     "label": "Sensors",
+     "value": "Touch ID Three‐axis gyro Accelerometer Barometer Ambient light sensor"
+    },
+    {
+     "label": "USB",
+     "value": "USB-C"
+    },
+    {
+     "label": "WLAN",
+     "value": "Apple N1 wireless networking chip Wi-Fi 7 (802.11be) with 2x2 MIMO Simultaneous dual band Thread networking technology"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/ipad-pro-m5": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "Ultra Retina XDR display Tandem OLED3 2420-by-1668-pixel resolution at 264 ppi ProMotion technology with adaptive refresh rates from 10Hz to 120Hz Wide color (P3) True Tone Fingerprint-resistant oleophobic coating Fully laminated Antireflective coating Nano-texture display glass option on 1TB and 2TB models SDR brightness: 1000 nits max XDR brightness: 1000 nits max full screen, 1600 nits peak (HDR content only) 2,000,000:1 contrast ratio Supports Apple Pencil Pro Supports Apple Pencil (USB‑C) Apple Pencil hover"
+    },
+    {
+     "label": "Size",
+     "value": "11 inch"
+    },
+    {
+     "label": "Resolution",
+     "value": "2420-by-1668-pixel resolution at 264 ppi"
+    },
+    {
+     "label": "Processor",
+     "value": "9-core CPU with 3 performance cores and 6 efficiency cores 10-core GPU Neural Accelerators Hardware-accelerated ray tracing 16-core Neural Engine 153GB/s memory bandwidth Hardware-accelerated 8K H.264, HEVC, ProRes, and ProRes RAW Video decode engine Video encode engine ProRes encode and decode engine AV1 decode"
+    },
+    {
+     "label": "RAM",
+     "value": "12GB"
+    },
+    {
+     "label": "Storage",
+     "value": "256GB, 512GB"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Only Wi-Fi"
+    },
+    {
+     "label": "Operating System",
+     "value": "iPadOS 26"
+    },
+    {
+     "label": "Audio",
+     "value": "Four speaker audio Studio-quality four-mic array for calls, video recording, and audio recording"
+    }
+   ]
+  },
+  {
+   "group": "Physical Spec",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "Height: 249.7 mm Width: 177.5 mm Depth: 5.3 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "0.98 pound (444 grams)"
+    },
+    {
+     "label": "SIM",
+     "value": "N/A"
+    },
+    {
+     "label": "Color",
+     "value": "Space Gray, Silver"
+    }
+   ]
+  },
+  {
+   "group": "Camera",
+   "items": [
+    {
+     "label": "Rear",
+     "value": "12MP Wide camera, ƒ/1.8 aperture Digital zoom up to 5x Five‑element lens Adaptive True Tone flash Panorama (up to 63MP) Sapphire crystal lens cover Autofocus with Focus Pixels Smart HDR 4 Wide color capture for photos and Live Photos Advanced red-eye correction Photo geotagging Auto image stabilization Burst mode Image formats captured: HEIF and JPEG"
+    },
+    {
+     "label": "Front",
+     "value": "Landscape 12MP Center Stage camera ƒ/2.0 aperture Portrait mode with advanced bokeh and Depth Control Portrait Lighting with six effects (Natural, Studio, Contour, Stage, Stage Mono, High‑Key Mono) Animoji and Memoji Smart HDR 4 1080p HD video recording at 25 fps, 30 fps, or 60 fps Time‑lapse video with stabilization Extended dynamic range for video up to 30 fps Cinematic video stabilization (1080p and 720p) Wide color capture for photos and Live Photos Lens correction Retina Flash with True Tone Auto image stabilization Burst mode"
+    },
+    {
+     "label": "Video",
+     "value": "4K video recording at 24 fps, 25 fps, 30 fps, or 60 fps 1080p HD video recording at 25 fps, 30 fps, or 60 fps 720p HD video recording at 30 fps ProRes video recording up to 4K at 30 fps (1080p at 30 fps for 256GB storage) Audio zoom Adaptive True Tone flash Slo‑mo video support for 1080p at 120 fps or 240 fps Time‑lapse video with stabilization Extended dynamic range for video up to 30 fps Cinematic video stabilization (4K, 1080p, and 720p) Continuous autofocus video Playback zoom Video formats recorded: HEVC and H.264 Stereo recording"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Built-in rechargeable lithium-polymer battery"
+    },
+    {
+     "label": "Capacity",
+     "value": "31.29-watt-hour Up to 10 hours of surfing the web on Wi-Fi or watching video"
+    },
+    {
+     "label": "Charging",
+     "value": "Charging via power adapter or USB-C to computer system"
+    }
+   ]
+  },
+  {
+   "group": "Special Features",
+   "items": [
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6"
+    },
+    {
+     "label": "GPS",
+     "value": "Digital compass Wi-Fi iBeacon microlocation"
+    },
+    {
+     "label": "Sensors",
+     "value": "Face ID LiDAR Scanner Three-axis gyro Accelerometer Barometer Ambient light sensors"
+    },
+    {
+     "label": "USB",
+     "value": "Thunderbolt / USB 4 port with support for: Charging DisplayPort Thunderbolt 3 (up to 40Gb/s) USB 4 (up to 40Gb/s) USB 3 (up to 10Gb/s)"
+    },
+    {
+     "label": "WLAN",
+     "value": "Apple N1 wireless networking chip Wi‑Fi 7 (802.11be) with 2x2 MIMO6 Simultaneous dual band Thread networking technology"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/ipad-pro-m5-13-inch": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "Ultra Retina XDR display Tandem OLED ProMotion technology with adaptive refresh rates from 10Hz to 120Hz Wide color (P3) True Tone Fingerprint-resistant oleophobic coating Fully laminated Antireflective coating Nano-texture display glass option on 1TB and 2TB models SDR brightness: 1000 nits max XDR brightness: 1000 nits max full screen, 1600 nits peak (HDR content only) 1 nit minimum brightness 2,000,000:1 contrast ratio Supports Apple Pencil Pro Supports Apple Pencil (USB‑C) Apple Pencil hover"
+    },
+    {
+     "label": "Size",
+     "value": "13 inch"
+    },
+    {
+     "label": "Resolution",
+     "value": "2752-by-2064-pixel resolution at 264 ppi"
+    },
+    {
+     "label": "Processor",
+     "value": "9-core CPU with 3 performance cores and 6 efficiency cores 10-core GPU Neural Accelerators Hardware-accelerated ray tracing 16-core Neural Engine 153GB/s memory bandwidth Hardware-accelerated 8K H.264, HEVC, ProRes, and ProRes RAW Video decode engine Video encode engine ProRes encode and decode engine AV1 decode"
+    },
+    {
+     "label": "RAM",
+     "value": "12GB"
+    },
+    {
+     "label": "Storage",
+     "value": "256GB, 512GB"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Only Wi-Fi"
+    },
+    {
+     "label": "Operating System",
+     "value": "iPadOS 26"
+    },
+    {
+     "label": "Audio",
+     "value": "Four speaker audio Studio-quality four-mic array for calls, video recording, and audio recording"
+    }
+   ]
+  },
+  {
+   "group": "Physical Spec",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "Height: 281.6 mm Width: 215.5 mm Depth: 5.1 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "1.28 pounds (579 grams)"
+    },
+    {
+     "label": "SIM",
+     "value": "N/A"
+    },
+    {
+     "label": "Color",
+     "value": "Space Gray, Silver"
+    }
+   ]
+  },
+  {
+   "group": "Camera",
+   "items": [
+    {
+     "label": "Rear",
+     "value": "12MP Wide camera, ƒ/1.8 aperture Digital zoom up to 5x Five‑element lens Adaptive True Tone flash Panorama (up to 63MP) Sapphire crystal lens cover Autofocus with Focus Pixels Smart HDR 4 Wide color capture for photos and Live Photos Advanced red-eye correction Photo geotagging Auto image stabilization Burst mode Image formats captured: HEIF and JPEG"
+    },
+    {
+     "label": "Front",
+     "value": "Landscape 12MP Center Stage camera ƒ/2.0 aperture Portrait mode with advanced bokeh and Depth Control Portrait Lighting with six effects (Natural, Studio, Contour, Stage, Stage Mono, High‑Key Mono) Animoji and Memoji Smart HDR 4 1080p HD video recording at 25 fps, 30 fps, or 60 fps Time‑lapse video with stabilization Extended dynamic range for video up to 30 fps Cinematic video stabilization (1080p and 720p) Wide color capture for photos and Live Photos Lens correction Retina Flash with True Tone Auto image stabilization Burst mode"
+    },
+    {
+     "label": "Video",
+     "value": "4K video recording at 24 fps, 25 fps, 30 fps, or 60 fps 1080p HD video recording at 25 fps, 30 fps, or 60 fps 720p HD video recording at 30 fps ProRes video recording up to 4K at 30 fps (1080p at 30 fps for 256GB storage) Audio zoom Adaptive True Tone flash Slo‑mo video support for 1080p at 120 fps or 240 fps Time‑lapse video with stabilization Extended dynamic range for video up to 30 fps Cinematic video stabilization (4K, 1080p, and 720p) Continuous autofocus video Playback zoom Video formats recorded: HEVC and H.264 Stereo recording"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Built-in rechargeable lithium-polymer battery"
+    },
+    {
+     "label": "Capacity",
+     "value": "31.29-watt-hour Up to 10 hours of surfing the web on Wi-Fi or watching video"
+    },
+    {
+     "label": "Charging",
+     "value": "Charging via power adapter or USB-C to computer system"
+    }
+   ]
+  },
+  {
+   "group": "Special Features",
+   "items": [
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6"
+    },
+    {
+     "label": "GPS",
+     "value": "Digital compass Wi-Fi iBeacon microlocation"
+    },
+    {
+     "label": "Sensors",
+     "value": "Face ID LiDAR Scanner Three-axis gyro Accelerometer Barometer Ambient light sensors"
+    },
+    {
+     "label": "USB",
+     "value": "Thunderbolt / USB 4 port with support for: Charging DisplayPort Thunderbolt 3 (up to 40Gb/s) USB 4 (up to 40Gb/s) USB 3 (up to 10Gb/s)"
+    },
+    {
+     "label": "WLAN",
+     "value": "Apple N1 wireless networking chip Wi‑Fi 7 (802.11be) with 2x2 MIMO6 Simultaneous dual band Thread networking technology"
+    }
+   ]
+  }
+ ]
+}

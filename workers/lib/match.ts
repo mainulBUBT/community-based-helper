@@ -15,13 +15,17 @@ export type Match =
   | { kind: "ambiguous"; product: CatalogProduct; variants: CatalogVariant[] };
 
 const MODIFIERS = new Set(["pro", "max", "plus", "ultra", "mini", "lite", "fe", "fold", "flip", "edge", "air", "neo", "se", "prime", "power", "turbo", "4g", "5g"]);
-const ACCESSORIES = /\b(for|case|cover|protector|glass|film|charger|adapter|cable|strap|skin|holder|stand|pouch|sleeve|lens|tempered|magsafe|airtag|earbuds?|headphones?|keyboard|mouse|pencil|dock|hub|refurbished|used)\b/;
+const ACCESSORIES = /\b(for|case|cover|protector|glass|film|charger|adapter|cable|strap|skin|holder|stand|pouch|sleeve|lens|tempered|magsafe|airtag|keyboard|mouse|pencil|dock|hub|shockproof|bumper|airbag|privacy|holster|wallet|refurbished|used)\b/;
+const INCH = /(\d{1,2}(?:\.\d{1,2})?)\s*(?:["”]|''|-?\s*inch)/i;
+const CHIP = /\b(m\d|a1\d)(?:[\s-]+(pro|max|ultra))?\b/i;
 export const SIZE = /^\d+(gb|tb|mm)$/;
 const COLORS = new Set(["black", "white", "blue", "green", "red", "purple", "pink", "gold", "silver", "graphite", "sage", "tan", "orange", "yellow", "gray", "grey", "midnight", "starlight", "titanium", "cream", "lavender", "mint", "cyan"]);
 
 export function tokens(text: string): string[] {
   const prepared = text
     .toLowerCase()
+    .replace(/\bwi[\s-]?fi\b/g, "wifi")
+    .replace(/\b(wifi|gps)\s*(?:\+|plus|and|&)\s*(?:cellular|cell|lte)\b/g, "$1 cellular")
     .replace(/(\d+)\s*(?:gb|tb)?\s*\+\s*(\d+)\s*(?:gb|tb)?/g, "$1gb $2gb")
     .replace(/\+/g, " plus ")
     .replace(/(\d+)\s*(?:gb)?\s*\/\s*(\d+)\s*(gb|tb)/g, "$1gb $2$3")
@@ -32,12 +36,39 @@ export function tokens(text: string): string[] {
     .flatMap((t) => (SIZE.test(t) ? [t] : t.split(/(?<=[a-z])(?=\d)|(?<=\d)(?=[a-z]{2,})/)));
 }
 
-function productFits(listing: Set<string>, product: CatalogProduct): boolean {
-  const name = tokens(product.name);
-  const brand = new Set(tokens(product.brand));
-  if (!name.every((t) => listing.has(t))) return false;
-  const own = new Set([...name, ...brand]);
-  return ![...listing].some((t) => MODIFIERS.has(t) && !own.has(t));
+export function inch(text: string): number | null {
+  const size = INCH.exec(text)?.[1];
+  return size ? Math.floor(Number(size)) : null;
+}
+
+export function chip(text: string): string | null {
+  const found = CHIP.exec(text);
+  return found ? `${found[1]} ${found[2] ?? ""}`.trim().toLowerCase() : null;
+}
+
+export function sameSpec(a: string, b: string): boolean {
+  return [inch, chip].every((read) => {
+    const x = read(a);
+    const y = read(b);
+    return x === null || y === null || x === y;
+  });
+}
+
+// ইঞ্চি আর বন্ধনীর চিপ নামের অংশ হলেও দোকানের লিংকে প্রায়ই থাকে না, তাই এগুলো বাধ্যতামূলক নয়, শুধু অমিল হলে বাদ
+function productFits(title: string, listing: Set<string>, product: CatalogProduct): boolean {
+  const required = tokens(product.name.replace(INCH, " ").replace(/\([^)]*\)/g, " "));
+  if (!required.every((t) => listing.has(t))) return false;
+  const own = new Set([product.name, product.brand, ...product.variants.map((v) => v.label)].flatMap(tokens));
+  if ([...listing].some((t) => MODIFIERS.has(t) && !own.has(t))) return false;
+  return sameSpec(title, product.name);
+}
+
+export function findProducts(title: string, catalog: CatalogProduct[]): CatalogProduct[] {
+  if (isAccessory(title)) return [];
+  const listing = new Set(tokens(title));
+  const fit = catalog.filter((p) => productFits(title, listing, p));
+  const best = Math.max(...fit.map((p) => tokens(p.name).length));
+  return fit.filter((p) => tokens(p.name).length === best);
 }
 
 function sizes(list: Iterable<string>) {
@@ -65,15 +96,15 @@ export function isAccessory(title: string): boolean {
 }
 
 export function matchListing(title: string, catalog: CatalogProduct[]): Match | null {
-  if (isAccessory(title)) return null;
-  const listing = new Set(tokens(title));
-  const products = catalog
-    .filter((p) => productFits(listing, p))
-    .sort((a, b) => tokens(b.name).length - tokens(a.name).length);
-  const product = products[0];
+  const products = findProducts(title, catalog);
+  const product = products.length === 1 ? products[0] : null;
   if (!product || product.variants.length === 0) return null;
+  const listing = new Set(tokens(title));
   const verdicts = product.variants.map((v) => ({ v, fit: variantFits(listing, v) }));
-  const yes = verdicts.filter((x) => x.fit === "yes");
+  // "128GB Wi-Fi" আর "128GB Wi-Fi + Cellular" দুটোই মিললে বেশি নির্দিষ্টটা
+  const fits = verdicts.filter((x) => x.fit === "yes");
+  const most = Math.max(...fits.map((x) => tokens(x.v.label).length));
+  const yes = fits.filter((x) => tokens(x.v.label).length === most);
   const maybe = verdicts.filter((x) => x.fit === "maybe");
   if (yes.length === 1) return { kind: "sure", product, variant: yes[0].v };
   if (yes.length === 0 && maybe.length === 1 && product.variants.length === 1) return { kind: "sure", product, variant: maybe[0].v };

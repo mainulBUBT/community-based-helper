@@ -3,6 +3,7 @@
 import {
   Activity,
   Bot,
+  Boxes,
   ClipboardCheck,
   LayoutDashboard,
   LogOut,
@@ -19,11 +20,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { BrandMark } from "@/components/layout/BrandMark";
-import { ListSkeleton } from "@/components/ui/Skeleton";
+import { Spinner } from "@/components/ui/Spinner";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminI18n } from "@/hooks/useI18n";
 import type { Messages } from "@/i18n/bn";
 import { currentAdmin, onPasswordRecovery, signOut } from "@/services/admin/auth";
+import { ConfirmDialog } from "./ConfirmDialog";
 import { LanguageButton } from "./LanguageButton";
 import { LoginForm } from "./LoginForm";
 
@@ -33,6 +35,7 @@ const NAV: { href: string; key: NavKey; icon: LucideIcon }[] = [
   { href: "/admin/", key: "dashboard", icon: LayoutDashboard },
   { href: "/admin/review/", key: "review", icon: ClipboardCheck },
   { href: "/admin/sellers/", key: "sellers", icon: Store },
+  { href: "/admin/categories/", key: "categories", icon: Boxes },
   { href: "/admin/products/", key: "products", icon: Package },
   { href: "/admin/offers/", key: "offers", icon: Tag },
   { href: "/admin/jobs/", key: "jobs", icon: Bot },
@@ -69,23 +72,43 @@ function NavList({ onNavigate }: { onNavigate?: () => void }) {
   );
 }
 
+function LogoutButton({ onSignedOut, className, iconOnly = false }: { onSignedOut: () => void; className: string; iconOnly?: boolean }) {
+  const { t } = useAdminI18n();
+  const [asking, setAsking] = useState(false);
+  const [busy, setBusy] = useState(false);
+  return (
+    <>
+      <button type="button" aria-label={iconOnly ? t.admin.logout : undefined} onClick={() => setAsking(true)} className={className}>
+        <LogOut size={iconOnly ? 18 : 16} aria-hidden="true" />
+        {!iconOnly && t.admin.logout}
+      </button>
+      <ConfirmDialog
+        open={asking}
+        title={t.admin.logoutConfirm}
+        body={t.admin.logoutConfirmBody}
+        confirmLabel={t.admin.logout}
+        cancelLabel={t.admin.common.cancel}
+        busy={busy}
+        onCancel={() => setAsking(false)}
+        onConfirm={async () => {
+          setBusy(true);
+          await signOut();
+          setBusy(false);
+          setAsking(false);
+          onSignedOut();
+        }}
+      />
+    </>
+  );
+}
+
 function UserBlock({ email, onSignedOut }: { email: string; onSignedOut: () => void }) {
   const { t } = useAdminI18n();
   return (
     <div className="flex flex-col gap-2 border-t border-white/10 px-2 pt-3 text-sm text-[#d0d5dd]">
       <LanguageButton />
       <span className="truncate">{email}</span>
-      <button
-        type="button"
-        onClick={async () => {
-          await signOut();
-          onSignedOut();
-        }}
-        className="flex items-center gap-2 self-start font-semibold text-white hover:underline"
-      >
-        <LogOut size={16} aria-hidden="true" />
-        {t.admin.logout}
-      </button>
+      <LogoutButton onSignedOut={onSignedOut} className="flex items-center gap-2 self-start font-semibold text-white hover:underline" />
     </div>
   );
 }
@@ -118,8 +141,8 @@ export function AdminShell({ children }: { children: ReactNode }) {
 
   if (loading) {
     return (
-      <div className="mx-auto max-w-md p-8">
-        <ListSkeleton rows={3} />
+      <div className="flex min-h-dvh items-center justify-center text-brand">
+        <Spinner size={32} label={t.admin.loading} />
       </div>
     );
   }
@@ -146,17 +169,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
           <span className="text-lg font-bold">{t.admin.title}</span>
         </div>
         <span className="flex-1" />
-        <button
-          type="button"
-          aria-label={t.admin.logout}
-          onClick={async () => {
-            await signOut();
-            reload();
-          }}
-          className={iconButton}
-        >
-          <LogOut size={18} aria-hidden="true" />
-        </button>
+        <LogoutButton onSignedOut={reload} className={iconButton} iconOnly />
       </header>
 
       {open && (

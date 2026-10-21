@@ -21,7 +21,7 @@
                └──────────────▲───────────────┘
                               │ service key দিয়ে লেখে
                ┌──────────────┴───────────────┐
-               │ GitHub Actions (workers/)      │  প্রতি ৩ ঘণ্টায় দাম আনে,
+               │ GitHub Actions (workers/)      │  প্রতি ৬ ঘণ্টায় দাম আনে,
                │                                │  প্রতি রাতে সাইট নতুন করে build করে
                └──────────────┬───────────────┘
                               │ rebuild শেষে deploy
@@ -49,7 +49,8 @@
    npx supabase link --project-ref <ref>
    npm run db:push
    ```
-   দুটো migration চলবে: সব টেবিল, নিয়ম, শুরুর ৪টা দোকান আর cron এর তালিকা।
+   চারটা migration চলবে: সব টেবিল, নিয়ম, ক্যাটাগরি, নিরাপত্তা, শুরুর দোকান আর cron এর তালিকা।
+   তারপর আসল পণ্য আর দাম ঢোকাতে Supabase ড্যাশবোর্ডের SQL Editor এ `supabase/seed.sql` এর পুরোটা চালান (দুবার চালালেও কিছু দুবার ঢোকে না)।
 4. Settings → API থেকে তিনটা জিনিস নিন:
    - **Project URL**
    - **Publishable key** (আগে নাম ছিল anon key): এটা সাইটে যাবে, প্রকাশ্য হলেও সমস্যা নেই
@@ -132,11 +133,19 @@
 
 ## ধাপ ৭: AI আর সতর্কবার্তা
 
-1. aistudio.google.com থেকে Gemini API key বানান (ফ্রি)।
-2. অ্যাডমিন → কাজ ও AI → Base URL, মডেল আর key দিয়ে সেভ।
+1. যে OpenAI-compatible সার্ভিস ব্যবহার করবেন তার Base URL (যেমন `https://api.openai.com/v1`), মডেলের নাম আর API key নিন।
+2. অ্যাডমিন → কাজ ও AI → Base URL, মডেল আর key দিয়ে সেভ, তারপর "সংযোগ পরীক্ষা"।
 3. (ঐচ্ছিক) Telegram এ @BotFather দিয়ে bot বানিয়ে token, আর নিজের chat id একই পাতায় দিন। কোনো কাজ ব্যর্থ হলে সেখানে বার্তা যাবে।
 
 ---
+
+## ধাপ ৮: অ্যাডমিন লগইনে captcha (Cloudflare Turnstile, ফ্রি)
+
+1. Cloudflare → Turnstile → Add widget। ডোমেইন: আপনার ডোমেইন আর `localhost`, মোড Managed।
+2. Site key: GitHub → Settings → Secrets and variables → Actions → **Variables** এ `TURNSTILE_SITE_KEY`; লোকালে `.env.local` এ `NEXT_PUBLIC_TURNSTILE_SITE_KEY`।
+3. Secret key: Supabase → Authentication → Attack Protection → Enable Captcha → Cloudflare Turnstile → secret বসিয়ে সেভ। টোকেন Supabase নিজেই যাচাই করে, আলাদা সার্ভার লাগে না।
+4. দুটো একসাথে দিন: Supabase এ captcha চালু কিন্তু site key ছাড়া build হলে কেউ লগইন করতে পারবে না; উল্টোটা হলে বক্স দেখাবে কিন্তু যাচাই হবে না।
+5. পরের build এর পরে লগইন আর "পাসওয়ার্ড ভুলে গেছেন" দুটোই একবার চালিয়ে দেখুন।
 
 ## কোন key কোথায় থাকে
 
@@ -146,7 +155,7 @@
 | Service / secret key | শুধু GitHub secret | **হ্যাঁ**, কখনো `.env.local` বা কোডে নয় |
 | DB password | `.env.local` | হ্যাঁ |
 | Cloudflare API token | GitHub secret | হ্যাঁ |
-| Gemini key, Telegram token, GitHub token | Supabase `private_settings` (শুধু অ্যাডমিন পড়তে পারে) | হ্যাঁ |
+| AI key, Telegram token, GitHub token | Supabase `private_settings` (শুধু অ্যাডমিন পড়তে পারে) | হ্যাঁ |
 
 ## খরচ আর সীমা (সব ফ্রি)
 
@@ -155,7 +164,7 @@
 | Cloudflare Pages | সীমাহীন ভিজিটর, মাসে ৫০০ build | build GitHub এ হয়, তাই Pages এর build কোটা লাগে না |
 | Supabase | ৫০০MB ডেটাবেস, ৫০,০০০ মাসিক ইউজার | ৭ দিন কোনো কাজ না হলে প্রজেক্ট থামে, worker চললে হবে না |
 | GitHub Actions | public এ সীমাহীন, private এ মাসে ২,০০০ মিনিট | private হলে `prices` কম ঘন ঘন চালান |
-| Gemini | দৈনিক ফ্রি কোটা | AI শুধু নতুন পণ্য মেলাতে লাগে |
+| AI (OpenAI-compatible) | নিজের সাবস্ক্রিপশন | AI শুধু অস্পষ্ট পাতা মেলাতে লাগে, রাতে কয়েকটা অনুরোধ |
 
 ## সমস্যা হলে
 

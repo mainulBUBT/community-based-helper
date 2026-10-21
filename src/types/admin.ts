@@ -34,16 +34,25 @@ export interface AuditEntry {
   createdAt: string;
 }
 
+export interface RegionNote {
+  region: string;
+  note: string;
+  noteEn: string;
+}
+
 export interface SiteSettings {
   name: string;
   nameEn: string;
   tagline: string;
+  taglineEn: string;
   phone: string | null;
   email: string | null;
   facebook: string | null;
   logoUrl: string | null;
   seoTitle: string;
   seoDescription: string;
+  seoTitleEn: string;
+  seoDescriptionEn: string;
   cloudflareAnalyticsToken: string | null;
   heroTitle: string;
   heroTitleEn: string;
@@ -51,6 +60,11 @@ export interface SiteSettings {
   announcement: string | null;
   announcementEn: string | null;
   announcementLink: string | null;
+  regionNotes: RegionNote[];
+  aboutWho: string;
+  aboutWhoEn: string;
+  aboutWhat: string;
+  aboutWhatEn: string;
 }
 
 export interface PrivateSettings {

@@ -37,7 +37,7 @@ npm run dev
 
 ## দাম আনার worker (`workers/`)
 
-GitHub Actions এ চলে: `prices` (প্রতি ৩ ঘণ্টায়), `js-stores` আর `discover` (Playwright লাগে), `promos`, `rebuild`। প্রতিটা run `jobs` আর `job_runs` এ লেখে; অ্যাডমিন থেকে কাজ বন্ধ রাখা যায়। দোকানের robots.txt মানা হয়, প্রতি দোকানে একসাথে ২টার বেশি request যায় না, 403 বা bot-challenge পেলে সেই দোকান ওই run এ বাদ পড়ে।
+GitHub Actions এ চলে: `prices` (প্রতি ৬ ঘণ্টায়, ১০টা দোকানের সব দাম), `discover` (নতুন পণ্য বা ভার্সন যোগ হলেই, আর প্রতি রাতে), `promos`, `rebuild`। নতুন পণ্য যোগের নিয়ম: [docs/adding-products.md](docs/adding-products.md)। প্রতিটা run `jobs` আর `job_runs` এ লেখে; অ্যাডমিন থেকে কাজ বন্ধ রাখা যায়। দোকানের robots.txt মানা হয়, প্রতি দোকানে একসাথে ২টার বেশি request যায় না, 403 বা bot-challenge পেলে সেই দোকান ওই run এ বাদ পড়ে।
 
 GitHub → Settings → Secrets and variables → Actions এ দিন:
 

@@ -25,6 +25,7 @@ export default function VisitorsPage() {
     <>
       <PageTitle
         title={t.admin.visitors.title}
+        subtitle={t.admin.visitors.howCounted}
         action={
           <div className="flex gap-2">
             {RANGES.map((range) => (

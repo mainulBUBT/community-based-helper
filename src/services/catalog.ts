@@ -1,12 +1,14 @@
 import { DEFAULT_SETTINGS } from "@/config/site";
-import { sampleHistory, sampleOffers, sampleProducts, samplePromos, sampleSellers, sampleSettings } from "@/data/sample";
+import { sampleHistory, sampleOffers, sampleProducts, samplePromos, sampleSellers, sampleSettings, sampleCategories } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
 import type { SiteSettings } from "@/types/admin";
-import type { Offer, OfferView, PricePoint, Product, ProductDetail, ProductSummary, Promo, Seller } from "@/types/catalog";
+import type { CategoryInfo, Offer, OfferView, PricePoint, Product, ProductDetail, ProductSummary, Promo, Seller } from "@/types/catalog";
 import { byPrice } from "@/utils/catalog";
-import { toOffer, toPricePoint, toProduct, toPromo, toSeller } from "./mappers";
+import { toCategory, toOffer, toPricePoint, toProduct, toPromo, toSeller } from "./mappers";
+import { safeUrl } from "@/utils/url";
 
 interface Catalog {
+  categories: CategoryInfo[];
   products: Product[];
   sellers: Seller[];
   offers: Offer[];
@@ -16,21 +18,24 @@ interface Catalog {
 async function fetchCatalog(): Promise<Catalog> {
   if (!supabase) {
     return {
+      categories: sampleCategories.filter((c) => c.active),
       products: sampleProducts,
       sellers: sampleSellers.filter((s) => s.active),
       offers: sampleOffers.filter((o) => o.published),
       promos: samplePromos.filter((p) => p.active),
     };
   }
-  const [products, sellers, offers, promos] = await Promise.all([
+  const [categories, products, sellers, offers, promos] = await Promise.all([
+    supabase.from("categories").select("*").order("position"),
     supabase.from("products").select("*, variants(*)").order("popularity", { ascending: false }),
     supabase.from("sellers").select("*"),
     supabase.from("offers").select("*"),
     supabase.from("promos").select("*"),
   ]);
-  const error = products.error ?? sellers.error ?? offers.error ?? promos.error;
+  const error = categories.error ?? products.error ?? sellers.error ?? offers.error ?? promos.error;
   if (error) throw error;
   return {
+    categories: (categories.data ?? []).map(toCategory).filter((c) => c.active),
     products: (products.data ?? []).map(toProduct),
     sellers: (sellers.data ?? []).map(toSeller),
     offers: (offers.data ?? []).map(toOffer),
@@ -62,21 +67,31 @@ function summarize(catalog: Catalog, product: Product): ProductSummary {
   const offers = catalog.offers.filter((o) => variantIds.has(o.variantId));
   const official = offers.filter((o) => o.condition === "official");
   const priced = official.length ? official : offers;
-  const lowest = priced.length ? Math.min(...priced.map((o) => o.price)) : null;
+  const best = priced.length ? priced.reduce((a, b) => (b.price < a.price ? b : a)) : null;
+  const lowest = best?.price ?? null;
+  const listPrice = best ? product.variants.find((v) => v.id === best.variantId)?.officialPrice : null;
+  const reference = Math.max(best?.oldPrice ?? 0, listPrice ?? 0);
   const drops = offers.filter((o) => o.oldPrice && o.oldPrice > o.price).map((o) => o.oldPrice! - o.price);
   return {
     product,
     lowest,
     lowestAny: offers.length ? Math.min(...offers.map((o) => o.price)) : null,
+    compareAt: lowest && reference > lowest ? reference : null,
     inStock: offers.some((o) => o.inStock !== false),
     sellerCount: new Set(offers.map((o) => o.sellerId)).size,
     drop: drops.length ? Math.max(...drops) : null,
   };
 }
 
-export async function listSummaries() {
+export async function listSummaries(includeHidden = false) {
   const catalog = await loadCatalog();
-  return catalog.products.map((product) => summarize(catalog, product));
+  const visible = new Set(catalog.categories.map((c) => c.slug));
+  return catalog.products.filter((p) => includeHidden || visible.has(p.category)).map((product) => summarize(catalog, product));
+}
+
+export async function listCategories() {
+  const catalog = await loadCatalog();
+  return catalog.categories;
 }
 
 export async function listSellers() {
@@ -98,7 +113,8 @@ export async function getProductDetail(slug: string): Promise<ProductDetail | nu
   if (!product) return null;
   const variantIds = new Set(product.variants.map((v) => v.id));
   const offers = viewOffers(catalog, catalog.offers.filter((o) => variantIds.has(o.variantId)));
-  return { product, offers, history: await loadHistory(offers.map((o) => o.id)) };
+  const category = catalog.categories.find((c) => c.slug === product.category) ?? null;
+  return { product, category, offers, history: await loadHistory(offers.map((o) => o.id)) };
 }
 
 export async function getSellerDetail(id: string) {
@@ -116,7 +132,13 @@ export async function getSellerDetail(id: string) {
 export async function getSiteSettings(): Promise<SiteSettings> {
   if (!supabase) return { ...sampleSettings };
   const { data } = await supabase.from("site_settings").select("value").maybeSingle();
-  return { ...DEFAULT_SETTINGS, ...(data?.value as Partial<SiteSettings> | undefined) };
+  const settings: SiteSettings = { ...DEFAULT_SETTINGS, ...(data?.value as Partial<SiteSettings> | undefined) };
+  return {
+    ...settings,
+    logoUrl: safeUrl(settings.logoUrl),
+    facebook: safeUrl(settings.facebook),
+    announcementLink: safeUrl(settings.announcementLink, { relative: true }),
+  };
 }
 
 export async function submitPrice(payload: Record<string, string>) {

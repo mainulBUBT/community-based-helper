@@ -4,11 +4,13 @@ import { enMeta } from "@/lib/en-meta";
 import { getSiteSettings, listSellers, listSummaries } from "@/services/catalog";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const settings = await getSiteSettings();
   return enMeta({
-    title: "Mobile & Gadget Prices in Bangladesh",
-    description: "Compare mobile, iPhone, MacBook and smartwatch prices from shops across Bangladesh, side by side.",
+    title: settings.seoTitleEn,
+    description: settings.seoDescriptionEn,
     path: "/en/",
-    settings: await getSiteSettings(),
+    settings,
+    absolute: true,
   });
 }
 

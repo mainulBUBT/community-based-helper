@@ -53,7 +53,7 @@ export default function LogsPage() {
             {tab === "runs"
               ? data.runs.map((run) => (
                   <li key={run.id} className="flex items-start gap-3 px-5 py-3">
-                    <Badge tone={run.status === "failed" ? "brand" : "ok"}>{run.status === "failed" ? t.admin.logs.failed : t.admin.logs.ok}</Badge>
+                    <Badge tone={run.status === "failed" ? "brand" : run.status === "running" ? "neutral" : "ok"}>{run.status === "failed" ? t.admin.logs.failed : run.status === "running" ? t.admin.logs.running : t.admin.logs.ok}</Badge>
                     <div className="flex min-w-0 flex-1 flex-col">
                       <span className="font-semibold">{data.jobNames.get(run.jobId) ?? run.jobId}</span>
                       <span className="text-[13px] text-dim">{run.message}</span>

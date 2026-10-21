@@ -2,7 +2,7 @@
 
 import { useSyncExternalStore } from "react";
 import { useLocaleOverride } from "@/lib/locale";
-import { adminLangStore, langStore, setAdminLang, setLang, type Lang } from "@/lib/preferences";
+import { adminLangStore, setAdminLang, setLang, type Lang } from "@/lib/preferences";
 import { bn } from "@/i18n/bn";
 import { en } from "@/i18n/en";
 import { toBnDigits } from "@/utils/format";
@@ -28,8 +28,7 @@ function build(lang: Lang, set: (lang: Lang) => void, prefix = "") {
 
 export function useI18n() {
   const forced = useLocaleOverride();
-  const stored = useSyncExternalStore(langStore.subscribe, langStore.get, (): Lang => "bn");
-  return build(forced ?? stored, setLang, forced === "en" ? "/en" : "");
+  return build(forced ?? "bn", setLang, forced === "en" ? "/en" : "");
 }
 
 export function useAdminI18n() {

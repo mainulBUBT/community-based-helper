@@ -25,10 +25,10 @@ export function Field({ label, hint, ...input }: Labelled & InputHTMLAttributes<
   );
 }
 
-export function TextArea({ label, hint, ...input }: Labelled & TextareaHTMLAttributes<HTMLTextAreaElement>) {
+export function TextArea({ label, hint, className = "", ...input }: Labelled & TextareaHTMLAttributes<HTMLTextAreaElement>) {
   return (
     <Wrap label={label} hint={hint}>
-      <textarea {...input} className={`${control} min-h-24 py-2.5`} />
+      <textarea {...input} className={`${control} min-h-24 py-2.5 ${className}`} />
     </Wrap>
   );
 }

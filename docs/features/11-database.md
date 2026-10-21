@@ -48,7 +48,34 @@ DB পাসওয়ার্ড বানিয়ে `.env.local` এ `SUPABA
 
 `20261020130000_workers.sql`: `pg_net`, শুরুর ৪টা দোকান, job এর সময়সূচি, "এখনই চালান" চাপলে GitHub workflow চালু করার trigger।
 
+`20261021054639_product-details.sql`:
+- `categories` টেবিল (`slug`, বাংলা/English নাম, `icon`, `variant_axes`, `position`, `active`)। শুরুতে mobile, laptop, tablet, watch। নতুন ভাগ (টিভি, হেডফোন…) শুধু একটা সারি যোগ করলেই হয়; কোড বদলাতে হয় না।
+- `products.category` এখন `categories.slug` এর foreign key (পুরনো enum বাদ, `apple` → `mobile`)। Apple আলাদা ভাগ নয়, ব্র্যান্ড; মেনুতে `?brand=Apple` লিংক।
+- `variants.attributes` (jsonb, যেমন `{"chip":"M5","ram":"16GB","storage":"512GB"}`) আর `sku`। কোন ঘরগুলো লাগবে তা ভাগের `variant_axes` ঠিক করে (চাবি: chip, ram, storage, size, connectivity, edition)। `label` থাকে, worker এখনো ওটা দিয়ে মেলায়।
+- পণ্যে `colors`, `regions`, `description`, `description_en`, `specs` (jsonb array: `[{group, items:[{label, value}]}]`), `specs_source` (তথ্যসূত্রের লিংক)।
+- `offers.color` (কোনো দোকান নির্দিষ্ট রঙের দাম দিলে)।
+
 ফাংশন: `is_admin()`, `visitor_stats(days)`, `top_pages(days, max_rows)`।
+
+## কোনটার সাথে কোনটার সম্পর্ক
+
+```
+categories (slug, variant_axes)
+   └─< products (category → categories.slug)
+          └─< variants (product_id, attributes: chip/ram/storage/size/connectivity/edition/color)
+                 └─< offers (variant_id, seller_id, condition, region, price, source, published)
+                        └─< price_history (offer_id, trigger দিয়ে)
+sellers ─< offers
+sellers ─< promos (seller_id; কার্ড/bKash অফার, দোকানের সব দামে খাটে)
+review_queue: payload এ productId/variantId/offerId (submission, match, anomaly)
+```
+
+- **দাম কোথায় বসে:** সবসময় `offers` এ, একটা ভার্সন + একটা বিক্রেতা + condition এ একটাই সারি (`variant_id, seller_id, condition` unique)। একই দোকানের official আর unofficial দাম আলাদা সারি।
+- **রং/RAM/স্টোরেজে দাম আলাদা হলে:** প্রতিটা মিলের আলাদা `variant`। দাম একই হলে রং শুধু `products.colors` এ।
+- **কোন দেশের ভার্সন:** unofficial দামের জন্য `offers.region`; পণ্যে কোন কোন দেশের পাওয়া যায় তা `products.regions` (পরামর্শ হিসেবে)।
+- **অফিসিয়াল দাম:** ব্র্যান্ডের নির্ধারিত দাম `variants.official_price`, দোকানের দাম না।
+- **কে বসাল:** `offers.source` = site (worker সাইট থেকে), seller, user (অ্যাডমিন যাচাই করে বসানো ক্রেতার দাম), admin।
+- **মুছলে:** পণ্য মুছলে তার ভার্সন, দাম, দামের ইতিহাস মুছে যায় (cascade)। ক্যাটাগরিতে পণ্য থাকলে মোছা যায় না।
 
 ## যা বাকি
 

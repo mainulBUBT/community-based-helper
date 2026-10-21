@@ -1,19 +1,21 @@
 import { sampleOffers, sampleProducts } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
-import type { Category, Product, Variant } from "@/types/catalog";
+import type { Product, Variant } from "@/types/catalog";
 import { slugify } from "@/utils/format";
-import { loadCatalog } from "../catalog";
+import { parseVariantLabel } from "@/utils/variants";
+import { listCategories, loadCatalog } from "../catalog";
 import { logAction } from "./audit";
 
 export interface NewProduct {
   brand: string;
   name: string;
-  category: Category;
+  category: string;
   releaseYear: number | null;
   variants: { label: string; officialPrice: number | null }[];
 }
 
-export type ProductFields = Pick<Product, "brand" | "name" | "category" | "releaseYear" | "popularity">;
+export type ProductFields = Pick<Product, "brand" | "name" | "category" | "releaseYear" | "popularity"> &
+  Required<Pick<Product, "images" | "colors" | "regions" | "description" | "descriptionEn" | "specs" | "specsSource">>;
 
 async function refresh(action: string, detail: Record<string, unknown>) {
   await loadCatalog(true);
@@ -22,11 +24,13 @@ async function refresh(action: string, detail: Record<string, unknown>) {
 
 export async function createProduct(input: NewProduct) {
   const slug = slugify(`${input.brand} ${input.name}`);
+  const axes = (await listCategories()).find((c) => c.slug === input.category)?.axes ?? [];
+  const variants = input.variants.map((v) => ({ ...v, attributes: parseVariantLabel(v.label, axes) }));
+  let id = `p${Date.now()}`;
   if (!supabase) {
-    const id = `p${Date.now()}`;
     sampleProducts.push({
       id, slug, name: input.name, brand: input.brand, category: input.category, releaseYear: input.releaseYear, popularity: 0,
-      variants: input.variants.map((v, i) => ({ id: `${id}v${i}`, ...v })),
+      variants: variants.map((v, i) => ({ id: `${id}v${i}`, ...v })),
     });
   } else {
     const { data, error } = await supabase
@@ -35,11 +39,13 @@ export async function createProduct(input: NewProduct) {
       .select("id")
       .single();
     if (error) throw error;
-    const rows = input.variants.map((v, position) => ({ product_id: data.id, label: v.label, official_price: v.officialPrice, position }));
+    id = String(data.id);
+    const rows = variants.map((v, position) => ({ product_id: data.id, label: v.label, attributes: v.attributes, official_price: v.officialPrice, position }));
     const { error: variantError } = await supabase.from("variants").insert(rows);
     if (variantError) throw variantError;
   }
   await refresh("product.create", { name: `${input.brand} ${input.name}` });
+  return id;
 }
 
 export async function updateProduct(product: Product, fields: ProductFields) {
@@ -47,7 +53,20 @@ export async function updateProduct(product: Product, fields: ProductFields) {
   else {
     const { error } = await supabase
       .from("products")
-      .update({ brand: fields.brand, name: fields.name, category: fields.category, release_year: fields.releaseYear, popularity: fields.popularity })
+      .update({
+        brand: fields.brand,
+        name: fields.name,
+        category: fields.category,
+        release_year: fields.releaseYear,
+        popularity: fields.popularity,
+        images: fields.images,
+        colors: fields.colors,
+        regions: fields.regions,
+        description: fields.description,
+        description_en: fields.descriptionEn,
+        specs: fields.specs,
+        specs_source: fields.specsSource,
+      })
       .eq("id", product.id);
     if (error) throw error;
   }
@@ -73,7 +92,7 @@ export async function saveVariant(product: Product, variant: Variant) {
     if (isNew) target.variants.push({ ...variant, id: `${product.id}v${Date.now()}` });
     else Object.assign(target.variants.find((v) => v.id === variant.id)!, variant);
   } else {
-    const row = { label: variant.label, official_price: variant.officialPrice };
+    const row = { label: variant.label, attributes: variant.attributes, sku: variant.sku ?? null, official_price: variant.officialPrice };
     const { error } = isNew
       ? await supabase.from("variants").insert({ ...row, product_id: product.id, position: product.variants.length })
       : await supabase.from("variants").update(row).eq("id", variant.id);

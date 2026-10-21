@@ -1,12 +1,39 @@
-export type Category = "mobile" | "apple" | "watch";
+export type Category = string;
 export type SellerKind = "website" | "shop" | "group";
 export type Condition = "official" | "unofficial" | "used";
 export type OfferSource = "site" | "seller" | "user" | "admin";
 
+export const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color"] as const;
+export type Axis = (typeof AXES)[number];
+export type VariantAttributes = Partial<Record<Axis, string>>;
+
+export interface CategoryInfo {
+  slug: Category;
+  name: string;
+  nameEn: string;
+  icon: string;
+  axes: Axis[];
+  parent?: Category | null;
+  position: number;
+  active: boolean;
+}
+
+export interface SpecItem {
+  label: string;
+  value: string;
+}
+
+export interface SpecGroup {
+  group: string;
+  items: SpecItem[];
+}
+
 export interface Variant {
   id: string;
   label: string;
+  attributes: VariantAttributes;
   officialPrice: number | null;
+  sku?: string | null;
 }
 
 export interface Product {
@@ -19,6 +46,12 @@ export interface Product {
   popularity: number;
   variants: Variant[];
   images?: string[];
+  colors?: string[];
+  regions?: string[];
+  description?: string | null;
+  descriptionEn?: string | null;
+  specs?: SpecGroup[];
+  specsSource?: string | null;
 }
 
 export interface Seller {
@@ -74,6 +107,7 @@ export interface ProductSummary {
   product: Product;
   lowest: number | null;
   lowestAny: number | null;
+  compareAt: number | null;
   inStock: boolean;
   sellerCount: number;
   drop: number | null;
@@ -81,6 +115,7 @@ export interface ProductSummary {
 
 export interface ProductDetail {
   product: Product;
+  category: CategoryInfo | null;
   offers: OfferView[];
   history: PricePoint[];
 }

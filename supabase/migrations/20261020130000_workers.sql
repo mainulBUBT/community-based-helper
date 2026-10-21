@@ -36,7 +36,7 @@ begin
     headers := jsonb_build_object(
       'Authorization', 'Bearer ' || (github ->> 'token'),
       'Accept', 'application/vnd.github+json',
-      'User-Agent', 'sashroy'
+      'User-Agent', 'DordamBot'
     ),
     body := jsonb_build_object('ref', coalesce(github ->> 'ref', 'main'))
   );

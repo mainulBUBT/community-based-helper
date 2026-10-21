@@ -1,5 +1,6 @@
 import type { AuditEntry, Job, JobRun, ReviewItem } from "@/types/admin";
-import type { Offer, PricePoint, Product, Promo, Seller, Variant } from "@/types/catalog";
+import type { CategoryInfo, Offer, PricePoint, Product, Promo, Seller, SpecGroup, Variant, VariantAttributes } from "@/types/catalog";
+import { safeUrl } from "@/utils/url";
 
 type Row = Record<string, unknown>;
 
@@ -8,7 +9,20 @@ const str = (value: unknown) => (value == null ? null : String(value));
 export const toVariant = (row: Row): Variant => ({
   id: String(row.id),
   label: String(row.label),
+  attributes: (row.attributes as VariantAttributes | undefined) ?? {},
   officialPrice: (row.official_price as number | null) ?? null,
+  sku: str(row.sku),
+});
+
+export const toCategory = (row: Row): CategoryInfo => ({
+  slug: String(row.slug),
+  name: String(row.name),
+  nameEn: String(row.name_en),
+  icon: String(row.icon ?? "package"),
+  axes: (row.variant_axes as CategoryInfo["axes"] | undefined) ?? [],
+  parent: str(row.parent),
+  position: Number(row.position ?? 0),
+  active: Boolean(row.active),
 });
 
 export const toProduct = (row: Row): Product => ({
@@ -22,17 +36,23 @@ export const toProduct = (row: Row): Product => ({
   variants: ((row.variants as Row[] | undefined) ?? [])
     .sort((a, b) => Number(a.position ?? 0) - Number(b.position ?? 0))
     .map(toVariant),
-  images: (row.images as string[] | undefined) ?? [],
+  images: ((row.images as string[] | undefined) ?? []).map((src) => safeUrl(src)).filter((src): src is string => Boolean(src)),
+  colors: (row.colors as string[] | undefined) ?? [],
+  regions: (row.regions as string[] | undefined) ?? [],
+  description: str(row.description),
+  descriptionEn: str(row.description_en),
+  specs: Array.isArray(row.specs) ? (row.specs as SpecGroup[]) : [],
+  specsSource: safeUrl(row.specs_source),
 });
 
 export const toSeller = (row: Row): Seller => ({
   id: String(row.id),
   name: String(row.name),
   kind: row.kind as Seller["kind"],
-  website: str(row.website),
+  website: safeUrl(row.website),
   phone: str(row.phone),
   whatsapp: str(row.whatsapp),
-  facebook: str(row.facebook),
+  facebook: safeUrl(row.facebook),
   area: str(row.area),
   verified: Boolean(row.verified),
   active: Boolean(row.active),
@@ -59,7 +79,7 @@ export const toOffer = (row: Row): Offer => ({
   price: Number(row.price),
   oldPrice: (row.old_price as number | null) ?? null,
   inStock: (row.in_stock as boolean | null) ?? null,
-  url: str(row.url),
+  url: safeUrl(row.url),
   source: row.source as Offer["source"],
   published: Boolean(row.published),
   checkedAt: String(row.checked_at),

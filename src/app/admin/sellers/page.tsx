@@ -74,7 +74,7 @@ function SellerForm({ seller, onClose }: { seller: Seller; onClose: (saved: bool
       <Field label={t.admin.sellers.facebook} name="facebook" type="url" defaultValue={seller.facebook ?? ""} />
       <Field label={t.admin.sellers.area} name="area" defaultValue={seller.area ?? ""} placeholder={t.admin.sellers.areaPlaceholder} />
       <label className="flex items-center gap-3 self-end pb-2 text-sm font-semibold">
-        <input type="checkbox" name="verified" defaultChecked={seller.verified} className="size-5 accent-[#1f2f55]" />
+        <input type="checkbox" name="verified" defaultChecked={seller.verified} className="size-5 accent-[var(--color-brand)]" />
         {t.admin.sellers.verified}
       </label>
       <div className="flex gap-2 md:col-span-2">

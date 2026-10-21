@@ -1,69 +1,63 @@
+import { StoreBlocked } from "../lib/errors";
 import { decode, stripTags } from "../lib/html";
 import { getText } from "../lib/http";
-import { toTaka, type Quote } from "../lib/price";
+import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import type { Listing, Store } from "./types";
+import { appleGadgetsVariants, dazzleVariants, gadgetAndGearVariants, kryVariants, startechVariants, sumashVariants, wooVariants } from "./parsers";
+import type { Condition, Listing, Store } from "./types";
 
-function slugListing(url: string): Listing {
+const site = (url: string) => new URL(url).host.replace(/^www\./, "");
+
+export function slugTitle(url: string): string {
   const slug = new URL(url).pathname.split("/").filter(Boolean).pop() ?? "";
-  return { title: decodeURIComponent(slug).replace(/[-_]+/g, " "), url, price: null, oldPrice: null };
+  return decodeURIComponent(slug).replace(/[-_]+/g, " ");
 }
 
-// সাধারণ দোকান: product sitemap থেকে listing, দাম পাতা থেকে নিজে থেকেই (JSON-LD/itemprop/og)।
-// নতুন দোকান যোগ করতে শুধু নিচের টেবিলে একটা এন্ট্রি লাগে।
-function sitemapStore(config: { id: string; name: string; origin: string; sample: string; sitemap: string; prefix: string; promoUrl?: string }): Store {
+function slugListing(url: string): Listing {
+  return { title: slugTitle(url), url, price: null, oldPrice: null };
+}
+
+// সাধারণ দোকান: product sitemap থেকে listing, ভার্সনের দাম parser থেকে, না থাকলে JSON-LD/itemprop/og।
+// নতুন দোকান যোগ করতে নিচের তালিকায় একটা এন্ট্রি লাগে।
+function sitemapStore(config: {
+  id: string;
+  name: string;
+  origin: string;
+  sample: string;
+  sitemap: string;
+  path: string;
+  condition: Condition;
+  promoUrl?: string;
+  variants?: Store["variants"];
+}): Store {
   return {
     ...config,
     promoUrl: config.promoUrl ?? null,
     rendered: false,
     async discover() {
       const urls = await sitemapUrls(config.sitemap);
-      return urls.filter((url) => url.startsWith(config.prefix)).map(slugListing);
+      return urls.flatMap((url) => {
+        const { pathname } = new URL(url);
+        return site(url) === site(config.origin) && pathname.startsWith(config.path) ? [slugListing(`${config.origin}${pathname}`)] : [];
+      });
     },
   };
 }
 
-const applegadgets = sitemapStore({
-  id: "applegadgets",
-  name: "Apple Gadgets",
-  origin: "https://www.applegadgetsbd.com",
-  sample: "https://www.applegadgetsbd.com/product/iphone-17-pro-max",
-  sitemap: "https://www.applegadgetsbd.com/product/sitemap.xml",
-  prefix: "https://www.applegadgetsbd.com/product/",
-});
-
-// --- ব্যতিক্রম ---
-
-// Gadget & Gear: দাম JavaScript-এ বসে, তাই Playwright আর নিজস্ব পার্সার
-function parseGadgetAndGear(html: string): Quote | null {
-  const top = /<p[^>]*class="[^"]*Top-module[^"]*__price[^"]*"[^>]*>([\s\S]*?)<\/p>/.exec(html)?.[1];
-  if (!top) return null;
-  const amounts = [...stripTags(top).matchAll(/Tk\.?\s*([\d,]+)/gi)].map(([, n]) => toTaka(n)).filter((n): n is number => n != null);
-  if (amounts.length === 0) return null;
-  const price = Math.min(...amounts);
-  const oldPrice = Math.max(...amounts);
-  const name = /<h1[^>]*>([\s\S]*?)<\/h1>/.exec(html)?.[1];
-  return { price, oldPrice: oldPrice > price ? oldPrice : null, inStock: null, title: name ? stripTags(name) : null, via: "gadgetandgear" };
-}
-
-const gadgetandgear: Store = {
-  ...sitemapStore({
-    id: "gadgetandgear",
-    name: "Gadget & Gear",
-    origin: "https://gadgetandgear.com",
-    sample: "https://gadgetandgear.com/product/galaxy-a57-5g-12gb-256gb",
-    sitemap: "https://gadgetandgear.com/sitemap.xml",
-    prefix: "https://gadgetandgear.com/product/",
-    promoUrl: "https://gadgetandgear.com/offers",
-  }),
-  rendered: true,
-  priceSelector: "[class*='Top-module'][class*='__price']",
-  parse: parseGadgetAndGear,
-};
-
 // Star Tech: product sitemap নেই, ক্যাটাগরি পেজ পাতা ধরে ঘুরে listing
 const STARTECH = "https://www.startech.com.bd";
-const STARTECH_CATEGORIES = ["/mobile-phone", "/apple-macbook", "/apple-ipad", "/apple-smart-watch", "/gadget/smart-watch"];
+const STARTECH_CATEGORIES = [
+  "/mobile-phone",
+  "/apple-ipad",
+  "/tablet-pc",
+  "/apple-macbook",
+  "/apple-imac",
+  "/apple-mac-mini",
+  "/apple-mac-studio",
+  "/gadget/smart-watch",
+  "/earbuds",
+  "/accessories/headphone",
+];
 
 function parseStartechListings(html: string): Listing[] {
   return html.split('class="p-item"').slice(1).flatMap((block) => {
@@ -81,8 +75,10 @@ const startech: Store = {
   name: "Star Tech",
   origin: STARTECH,
   rendered: false,
+  condition: "official",
   sample: `${STARTECH}/iphone-18-pro`,
   promoUrl: `${STARTECH}/information/offer`,
+  variants: startechVariants,
   async discover() {
     const all: Listing[] = [];
     for (const path of STARTECH_CATEGORIES) {
@@ -93,7 +89,50 @@ const startech: Store = {
         all.push(...fresh);
       }
     }
-    return all.filter((item, i) => all.findIndex((other) => other.url === item.url) === i);
+    return all;
+  },
+};
+
+// Dazzle: product sitemap এ শুধু সাম্প্রতিক পণ্য, তাই ক্যাটালগের ব্র্যান্ডের সাব-ক্যাটাগরি (যেমন phones/iphone) থেকেও
+const DAZZLE = "https://dazzle.com.bd";
+const APPLE_LINES = /iphone|ipad|mac|apple|airpod/;
+
+function brandCategory(url: string, brands: Set<string>): boolean {
+  const [root, , leaf] = new URL(url).pathname.split("/").filter(Boolean);
+  if (root !== "categories" || !leaf) return false;
+  return [...brands].some((brand) => leaf.includes(brand) || (brand === "apple" && APPLE_LINES.test(leaf)));
+}
+
+const dazzleSitemap = sitemapStore({
+  id: "dazzle",
+  name: "Dazzle",
+  origin: DAZZLE,
+  sample: `${DAZZLE}/product/iphone-18-pro-price-in-bangladesh`,
+  sitemap: `${DAZZLE}/products/sitemap.xml`,
+  path: "/product/",
+  condition: "unofficial",
+  variants: dazzleVariants,
+});
+
+const dazzle: Store = {
+  ...dazzleSitemap,
+  async discover(products) {
+    const urls = new Set((await dazzleSitemap.discover(products)).map((l) => l.url));
+    const brands = new Set(products.flatMap((p) => p.brand.toLowerCase().split(/\s+/)).filter((w) => w.length > 2));
+    const categories = (await sitemapUrls(`${DAZZLE}/categories/sitemap.xml`)).filter((url) => brandCategory(url, brands));
+    for (const category of categories) {
+      for (let page = 1, pages = 1; page <= Math.min(pages, 30); page++) {
+        const html = await getText(`${category}${page > 1 ? `?page=${page}` : ""}`)
+          .then((text) => text.replace(/\\"/g, '"'))
+          .catch((error) => {
+            if (error instanceof StoreBlocked) throw error;
+            return "";
+          });
+        pages = Number(/"totalPages":(\d+)/.exec(html)?.[1] ?? pages);
+        for (const [, slug] of html.matchAll(/"productSlug":"([^"]+)"/g)) urls.add(`${DAZZLE}/product/${slug}`);
+      }
+    }
+    return [...urls].map(slugListing);
   },
 };
 
@@ -116,18 +155,114 @@ const pickaboo: Store = {
   name: "Pickaboo",
   origin: PICKABOO,
   rendered: false,
+  condition: "official",
   sample: `${PICKABOO}/product-detail/apple-iphone-17`,
   promoUrl: null,
-  async discover(names) {
+  async discover(products) {
     const lists: Listing[] = [];
-    for (const name of names) lists.push(...parsePickabooListings(await getText(`${PICKABOO}/search-result/${encodeURIComponent(name)}`)));
+    for (const { name } of products) lists.push(...parsePickabooListings(await getText(`${PICKABOO}/search-result/${encodeURIComponent(name)}`)));
     return lists;
   },
 };
 
-export const stores: Store[] = [startech, pickaboo, applegadgets, gadgetandgear];
+export const stores: Store[] = [
+  startech,
+  pickaboo,
+  sitemapStore({
+    id: "applegadgets",
+    name: "Apple Gadgets",
+    origin: "https://www.applegadgetsbd.com",
+    sample: "https://www.applegadgetsbd.com/product/iphone-18-pro",
+    sitemap: "https://www.applegadgetsbd.com/product/sitemap.xml",
+    path: "/product/",
+    condition: "unofficial",
+    variants: appleGadgetsVariants,
+  }),
+  sitemapStore({
+    id: "gadgetandgear",
+    name: "Gadget & Gear",
+    origin: "https://gadgetandgear.com",
+    sample: "https://gadgetandgear.com/product/iphone-18-pro",
+    sitemap: "https://gadgetandgear.com/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+    promoUrl: "https://gadgetandgear.com/offers",
+    variants: gadgetAndGearVariants,
+  }),
+  sitemapStore({
+    id: "sumashtech",
+    name: "Sumash Tech",
+    origin: "https://www.sumashtech.com",
+    sample: "https://www.sumashtech.com/product/iphone-18-pro",
+    sitemap: "https://www.sumashtech.com/__sitemap__/product.xml",
+    path: "/product/",
+    condition: "unofficial",
+    variants: sumashVariants,
+  }),
+  sitemapStore({
+    id: "kry",
+    name: "Kry International",
+    origin: "https://kryinternational.com",
+    sample: "https://kryinternational.com/products/iphone-18-pro",
+    sitemap: "https://kryinternational.com/sitemap.xml",
+    path: "/products/",
+    condition: "unofficial",
+    variants: kryVariants,
+  }),
+  dazzle,
+  sitemapStore({
+    id: "diamu",
+    name: "Diamu",
+    origin: "https://diamu.com.bd",
+    sample: "https://diamu.com.bd/product/iphone-18-pro/",
+    sitemap: "https://diamu.com.bd/sitemap_index.xml",
+    path: "/product/",
+    condition: "unofficial",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "executivemachines",
+    name: "Executive Machines",
+    origin: "https://executivemachines.com",
+    sample: "https://executivemachines.com/product/iphone-18-pro-256-gb/",
+    sitemap: "https://executivemachines.com/sitemap_index.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "motionview",
+    name: "Motion View",
+    origin: "https://motionview.com.bd",
+    sample: "https://motionview.com.bd/product/amazfit-active-2-square-smartwatch-premium-edition",
+    sitemap: "https://motionview.com.bd/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+  }),
+  sitemapStore({
+    id: "gadgetbreeze",
+    name: "Gadget Breeze",
+    origin: "https://gadgetbreeze.com.bd",
+    sample: "https://gadgetbreeze.com.bd/product/xiaomi-redmi-watch-6-active/",
+    sitemap: "https://gadgetbreeze.com.bd/sitemap_index.xml",
+    path: "/product/",
+    condition: "unofficial",
+    variants: wooVariants,
+  }),
+];
 
-export function storeFor(url: string): Store | undefined {
-  const host = new URL(url).host.replace(/^www\./, "");
-  return stores.find((store) => new URL(store.origin).host.replace(/^www\./, "") === host);
+// তালিকায় না থাকা দোকানের পুরনো দামও বাদ যায় না: JSON-LD/itemprop/og দিয়ে চেষ্টা
+function genericStore(url: string): Store {
+  const { origin } = new URL(url);
+  return { id: site(url), name: site(url), origin, rendered: false, condition: "official", sample: url, promoUrl: null, variants: wooVariants, discover: async () => [] };
+}
+
+export function storeFor(url: string): Store {
+  return stores.find((store) => site(store.origin) === site(url)) ?? genericStore(url);
+}
+
+export function conditionOf(store: Store, text: string): Condition {
+  if (/\b(unofficial|intl|international)\b/i.test(text)) return "unofficial";
+  if (/\bofficial\b/i.test(text)) return "official";
+  return store.condition;
 }

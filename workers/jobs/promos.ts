@@ -7,8 +7,10 @@ import { pageHtml } from "../stores/page";
 import { stores } from "../stores";
 import { blockedNote, count } from "./summary";
 
+const PROMO_KINDS = new Set(["discount", "cashback", "emi", "gift", "bundle", "other"]);
+
 const SYSTEM =
-  "You read the offers page of a Bangladeshi gadget shop. Reply with JSON {\"promos\": [{\"kind\": \"discount\"|\"cashback\"|\"emi\"|\"gift\"|\"bundle\"|\"other\", \"text\": short Bangla sentence, \"scope\": what it applies to or null, \"endsOn\": \"YYYY-MM-DD\"|null}]}. Only include offers for mobiles, Apple products or smartwatches that are clearly current. Empty list if none.";
+  "You read the offers page of a Bangladeshi gadget shop. Reply with JSON {\"promos\": [{\"kind\": \"discount\"|\"cashback\"|\"emi\"|\"gift\"|\"bundle\"|\"other\", \"text\": short Bangla sentence, \"scope\": what it applies to or null, \"endsOn\": \"YYYY-MM-DD\"|null}]}. Only include offers for phones, laptops, tablets or smartwatches that are clearly current. Empty list if none.";
 
 interface Promo {
   kind: string;
@@ -38,9 +40,9 @@ export async function readPromos(): Promise<string> {
           .insert(
             fresh.map((p) => ({
               seller_id: seller.id,
-              kind: p.kind || "other",
-              text: p.text,
-              scope: p.scope || null,
+              kind: PROMO_KINDS.has(p.kind ?? "") ? p.kind : "other",
+              text: String(p.text).slice(0, 300),
+              scope: p.scope ? String(p.scope).slice(0, 120) : null,
               ends_on: /^\d{4}-\d{2}-\d{2}$/.test(p.endsOn ?? "") ? p.endsOn : null,
               active: false,
             })),

@@ -1,12 +1,15 @@
 import type { ReactNode } from "react";
 import { AppShell } from "@/components/layout/AppShell";
 import { LocaleProvider } from "@/lib/locale";
-import { getSiteSettings } from "@/services/catalog";
+import { getSiteSettings, listCategories } from "@/services/catalog";
 
 export default async function EnLayout({ children }: { children: ReactNode }) {
+  const [settings, categories] = await Promise.all([getSiteSettings(), listCategories()]);
   return (
     <LocaleProvider lang="en">
-      <AppShell settings={await getSiteSettings()}>{children}</AppShell>
+      <AppShell settings={settings} categories={categories}>
+        {children}
+      </AppShell>
     </LocaleProvider>
   );
 }

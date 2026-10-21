@@ -1,6 +1,6 @@
 import { sampleOffers, samplePromos } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
-import type { Condition, Offer, Promo } from "@/types/catalog";
+import type { Condition, Offer, OfferSource, Promo } from "@/types/catalog";
 import { loadCatalog } from "../catalog";
 import { toOffer, toPromo } from "../mappers";
 import { logAction } from "./audit";
@@ -12,6 +12,7 @@ export interface ManualOffer {
   region: string | null;
   price: number;
   url: string | null;
+  source?: OfferSource;
 }
 
 async function refresh(action: string, detail: Record<string, unknown>) {
@@ -21,10 +22,11 @@ async function refresh(action: string, detail: Record<string, unknown>) {
 
 export async function saveManualOffer(input: ManualOffer) {
   const checkedAt = new Date().toISOString();
+  const { source = "admin", ...fields } = input;
   if (!supabase) {
     const existing = sampleOffers.find((o) => o.variantId === input.variantId && o.sellerId === input.sellerId && o.condition === input.condition);
-    if (existing) Object.assign(existing, { oldPrice: existing.price, price: input.price, checkedAt, url: input.url, region: input.region });
-    else sampleOffers.push({ ...input, id: `o${Date.now()}`, oldPrice: null, inStock: null, source: "admin", published: true, checkedAt });
+    if (existing) Object.assign(existing, { oldPrice: existing.price, price: input.price, checkedAt, url: input.url, region: input.region, source });
+    else sampleOffers.push({ ...fields, id: `o${Date.now()}`, oldPrice: null, inStock: null, source, published: true, checkedAt });
   } else {
     const { error } = await supabase.from("offers").upsert(
       {
@@ -34,7 +36,7 @@ export async function saveManualOffer(input: ManualOffer) {
         region: input.region,
         price: input.price,
         url: input.url,
-        source: "admin",
+        source,
         checked_at: checkedAt,
       },
       { onConflict: "variant_id,seller_id,condition" },
@@ -51,7 +53,7 @@ export async function listOffersFor(variantIds: string[]): Promise<Offer[]> {
   return data.map(toOffer);
 }
 
-export async function updateOffer(offer: Offer, patch: Partial<Pick<Offer, "price" | "inStock" | "published" | "url">>) {
+export async function updateOffer(offer: Offer, patch: Partial<Pick<Offer, "price" | "inStock" | "published" | "url" | "region">>) {
   if (!supabase) Object.assign(sampleOffers.find((o) => o.id === offer.id)!, patch);
   else {
     const row: Record<string, unknown> = {};
@@ -59,6 +61,7 @@ export async function updateOffer(offer: Offer, patch: Partial<Pick<Offer, "pric
     if (patch.inStock !== undefined) row.in_stock = patch.inStock;
     if (patch.published !== undefined) row.published = patch.published;
     if (patch.url !== undefined) row.url = patch.url;
+    if (patch.region !== undefined) row.region = patch.region;
     const { error } = await supabase.from("offers").update(row).eq("id", offer.id);
     if (error) throw error;
   }

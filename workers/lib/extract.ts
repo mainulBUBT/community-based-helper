@@ -16,7 +16,7 @@ async function fromLlm(html: string): Promise<Quote | null> {
     price,
     oldPrice: oldPrice && oldPrice > price ? oldPrice : null,
     inStock: typeof answer.inStock === "boolean" ? answer.inStock : null,
-    title: typeof answer.title === "string" ? answer.title : null,
+    title: typeof answer.title === "string" ? answer.title.slice(0, 200) : null,
     via: "llm",
   };
 }

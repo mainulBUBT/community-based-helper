@@ -2,9 +2,12 @@
 
 import { useState, type FormEvent } from "react";
 import { BrandMark } from "@/components/layout/BrandMark";
+import { Spinner } from "@/components/ui/Spinner";
 import { useAdminI18n } from "@/hooks/useI18n";
 import { isDemo, sendPasswordReset, signIn, updatePassword } from "@/services/admin/auth";
+import { TURNSTILE_SITE_KEY } from "@/lib/turnstile";
 import { Field } from "./Field";
+import { Turnstile } from "./Turnstile";
 
 type Mode = "login" | "forgot" | "reset";
 
@@ -14,6 +17,9 @@ export function LoginForm({ onDone, recovering = false }: { onDone: () => void; 
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
   const [busy, setBusy] = useState(false);
+  const [captcha, setCaptcha] = useState<string | null>(null);
+  const [attempt, setAttempt] = useState(0);
+  const needsCaptcha = Boolean(TURNSTILE_SITE_KEY) && mode !== "reset";
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -25,10 +31,10 @@ export function LoginForm({ onDone, recovering = false }: { onDone: () => void; 
     setNotice("");
     try {
       if (mode === "login") {
-        await signIn(email, password);
+        await signIn(email, password, captcha ?? undefined);
         onDone();
       } else if (mode === "forgot") {
-        await sendPasswordReset(email);
+        await sendPasswordReset(email, captcha ?? undefined);
         setNotice(t.admin.login.resetSent);
       } else {
         if (password.length < 8) throw new Error("short");
@@ -42,9 +48,11 @@ export function LoginForm({ onDone, recovering = false }: { onDone: () => void; 
         invalid: t.admin.login.invalid,
         short: t.admin.login.shortPassword,
       };
-      setError(MESSAGES[code] ?? (mode === "login" ? t.admin.login.invalid : t.admin.login.failed));
+      const fallback = /captcha/i.test(code) ? t.admin.login.captchaFailed : mode === "login" ? t.admin.login.invalid : t.admin.login.failed;
+      setError(MESSAGES[code] ?? fallback);
     } finally {
       setBusy(false);
+      if (needsCaptcha) setAttempt((n) => n + 1);
     }
   }
 
@@ -68,6 +76,7 @@ export function LoginForm({ onDone, recovering = false }: { onDone: () => void; 
             required
           />
         )}
+        {needsCaptcha && <Turnstile action={`admin-${mode}`} resetKey={attempt} onToken={setCaptcha} />}
         {error && (
           <p role="alert" className="text-sm font-semibold text-danger">
             {error}
@@ -78,8 +87,13 @@ export function LoginForm({ onDone, recovering = false }: { onDone: () => void; 
             {notice}
           </p>
         )}
-        <button type="submit" disabled={busy} className="h-12 rounded-xl bg-brand font-bold text-brand-ink disabled:opacity-60">
-          {busy ? t.admin.login.busy : submit}
+        <button
+          type="submit"
+          disabled={busy || (needsCaptcha && !captcha)}
+          className="flex h-12 items-center justify-center gap-2 rounded-xl bg-brand font-bold text-brand-ink disabled:opacity-60"
+        >
+          {busy && <Spinner size={18} />}
+          {busy ? t.admin.login.busy : needsCaptcha && !captcha ? t.admin.login.checkingHuman : submit}
         </button>
         {mode === "login" && !isDemo && (
           <button type="button" onClick={() => setMode("forgot")} className="self-start text-sm font-semibold text-brand">

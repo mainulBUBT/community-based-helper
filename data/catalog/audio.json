@@ -1,0 +1,703 @@
+{
+  "category": "audio",
+  "sites": [
+    {
+      "name": "Star Tech",
+      "website": "https://www.startech.com.bd",
+      "note": "Clean server-rendered cash price, struck price and Status; marks official warranty. Several hot items (AirPods Pro 3, P40i, CMF Buds 2) currently 'To be announced / Out of Stock'. Best specsSource."
+    },
+    {
+      "name": "Gadget & Gear",
+      "website": "https://gadgetandgear.com",
+      "note": "Sony-Rangs launch partner, official Apple warranty listings. Embedded JSON has per-colour SKUs with discountedPrice (cash) vs price; stock-out items show TBA (no price) so skipped."
+    },
+    {
+      "name": "Apple Gadgets",
+      "website": "https://www.applegadgetsbd.com",
+      "note": "Wide audio range, cash price plus struck price and availability on page; warranty usually not stated as official, treated as unofficial."
+    },
+    {
+      "name": "Sumash Tech",
+      "website": "https://www.sumashtech.com",
+      "note": "Cash price and struck price; stock in 'Condition' field. Apple/Samsung buds carry 7-day shop warranty (import)."
+    },
+    {
+      "name": "Dazzle",
+      "website": "https://dazzle.com.bd",
+      "note": "Offer/Regular price in page; mostly Dazzle's own parts warranty. Some URLs mismatch content (CMF Buds 2 URL shows Buds Pro 2; Tune 770NC page empty) - skipped. Two live WH-1000XM6 pages (39,999 and 40,990); used the 39,999 one."
+    },
+    {
+      "name": "Diamu",
+      "website": "https://diamu.com.bd",
+      "note": "WooCommerce; variation JSON gives prices. Stock says contact; JSON-LD InStock. Space One sold with/without 18-month warranty (8,990 vs 7,990; recorded the with-warranty one)."
+    },
+    {
+      "name": "Motion View",
+      "website": "https://motionview.com.bd",
+      "note": "Official brand-warranty retailer (JBL, CMF); used to fill CMF Buds 2 and JBL Tune 770NC."
+    }
+  ],
+  "products": [
+    {
+      "brand": "Apple",
+      "name": "AirPods Pro 3",
+      "category": "earbuds",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "White"
+      ],
+      "images": [
+        "https://assets.gadgetandgear.com/upload/media/airpods-pro-3-1411.jpeg",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/AirPods-Pro-3-8576.png",
+        "https://www.startech.com.bd/image/cache/catalog/earbuds/apple/airpods-pro-3/airpods-pro-3-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/apple-airpods-pro-3",
+      "offers": [
+        {
+          "variant": "Standard",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/airpods-pro-3",
+          "price": 28999,
+          "oldPrice": 30999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/airpods-pro-3",
+          "price": 25999,
+          "oldPrice": 28000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/airpods-pro-3",
+          "price": 26499,
+          "oldPrice": 30999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/apple-airpods-pro-3-price-in-bangladesh",
+          "price": 25990,
+          "oldPrice": 41990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Buds3 Pro",
+      "category": "earbuds",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Silver",
+        "White"
+      ],
+      "images": [
+        "https://assets.gadgetandgear.com/upload/media/galaxy-buds3-pro-silver.jpeg",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-Buds3-Proaa-3136.png",
+        "https://www.startech.com.bd/image/cache/catalog/earbuds/samsung/galaxy-buds-3-pro/galaxy-buds3-pro-022-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-buds-3-pro-earbuds",
+      "offers": [
+        {
+          "variant": "Standard",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/samsung-galaxy-buds-3-pro-earbuds",
+          "price": 15344,
+          "oldPrice": 16499,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-buds3-pro",
+          "price": 15500,
+          "oldPrice": 16500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-buds-3-pro",
+          "price": 13999,
+          "oldPrice": 23000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/samsung-galaxy-buds-3-pro/",
+          "price": 16200,
+          "oldPrice": 29990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-buds-3-pro",
+          "price": 16990,
+          "oldPrice": 27990,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Sony",
+      "name": "WF-1000XM6",
+      "category": "earbuds",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Black",
+        "Platinum Silver"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/earbuds/sony/wf-1000xm6/wf-1000xm6-01-1200x630.webp",
+        "https://assets.gadgetandgear.com/upload/media/sony/sony-wf-1000xm6-nc-earbuds-black.jpeg",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Sony-WF-1000XM6-NC-TWS-Earbuds-2813.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/sony-wf-1000xm6-earbuds",
+      "offers": [
+        {
+          "variant": "Standard",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/sony-wf-1000xm6-earbuds",
+          "price": 42299,
+          "oldPrice": 46999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/sony-wf-1000xm6-nc-earbuds",
+          "price": 37999,
+          "oldPrice": 41999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/sony-wf-1000xm6-nc-tws-earbuds",
+          "price": 38999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/sony-wf-1000xm6",
+          "price": 42900,
+          "oldPrice": 63900,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/sony-wf-1000xm6-wireless-noise-cancelling-earbuds-price-in-bangladesh",
+          "price": 44390,
+          "oldPrice": 56990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Anker",
+      "name": "Soundcore P40i",
+      "category": "earbuds",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Black",
+        "Navy Blue",
+        "White",
+        "Purple"
+      ],
+      "images": [
+        "https://assets.gadgetandgear.com/upload/media/anker-soundcore-p40i-anc-true-wireless-earbuds.jpeg",
+        "https://www.startech.com.bd/image/cache/catalog/earbuds/anker/soundcore-p40i/soundcore-p40i-featured-image-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Anker-Soundcore-P40i-True-Wireless-Earbudsaax-8857.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/anker-soundcore-p40i-anc-tws-earbuds",
+      "offers": [
+        {
+          "variant": "Standard",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/anker-soundcore-p40i",
+          "price": 4449,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/anker-soundcore-p40i-anc-earbuds-price-in-bangladesh",
+          "price": 4490,
+          "oldPrice": 4990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/anker-soundcore-p40i-true-wireless-earbuds",
+          "price": 4000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/anker-soundcore-p40i-anc-earbuds",
+          "price": 4199,
+          "oldPrice": 6000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/anker-soundcore-p40i-earbuds/",
+          "price": 3990,
+          "oldPrice": 4190,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "CMF by Nothing",
+      "name": "Buds 2",
+      "category": "earbuds",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Dark Grey",
+        "Light Green",
+        "Orange"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/earbuds/cmf/buds-2/buds-2-05-1200x630.webp",
+        "https://assets.gadgetandgear.com/upload/media/Nothing%20CMF%20Buds%202%20ANC%20Earbuds/nothing-cmf-buds-2-earbuds.jpeg",
+        "https://motionview.s3.amazonaws.com/images/products/profile/176387726116.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/cmf-buds-2",
+      "offers": [
+        {
+          "variant": "Standard",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/cmf-buds-2",
+          "price": 3999,
+          "oldPrice": 4500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/cmf-buds-2-by-nothing/",
+          "price": 3990,
+          "oldPrice": 5990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/nothing-buds-2-anc-tws-earbuds",
+          "price": 4999,
+          "oldPrice": 6899,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Sony",
+      "name": "WH-1000XM6",
+      "category": "headphones",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Black",
+        "Platinum Silver",
+        "Midnight Blue",
+        "Sand Stone"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/headphone/sony/wh-1000xm6/wh-1000xm6-black-1200x630.webp",
+        "https://assets.gadgetandgear.com/upload/media/sony-wh-1000xm6-wirerless-headphones-blue-2893.jpeg",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Sony-WH-1000XM6-Wireless-Noise-Cancelling-Headphonesdfdf-5852.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/sony-wh-1000xm6-headphone",
+      "offers": [
+        {
+          "variant": "Standard",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/sony-wh-1000xm6-headphone",
+          "price": 42499,
+          "oldPrice": 43000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/sony-wh-1000xm6-noise-canceling-wireless-headphones",
+          "price": 39999,
+          "oldPrice": 43999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/sony-wh-1000xm6-wireless-noise-cancelling-headphones",
+          "price": 41999,
+          "oldPrice": 44900,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/sony-wh-1000xm6-wireless-noise-cancelling-headphones-price-in-bangladesh",
+          "price": 39999,
+          "oldPrice": 45999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/sony-wh-1000xm6-headphones/",
+          "price": 39000,
+          "oldPrice": 54900,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Sony",
+      "name": "WH-CH720N",
+      "category": "headphones",
+      "releaseYear": 2023,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Black",
+        "Blue",
+        "White",
+        "Pink"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/headphone/sony/wh-ch720n/wh-ch720n-02-1200x630.webp",
+        "https://assets.gadgetandgear.com/upload/media/sony/sony-wh-ch720n-wireless-headphone-black.jpeg",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Sony-WH-CH720N-Overhead-Headphone-01-7827.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/sony-wh-ch720n-wireless-headphone",
+      "offers": [
+        {
+          "variant": "Standard",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/sony-wh-ch720n-wireless-headphone",
+          "price": 14900,
+          "oldPrice": 19900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/sony-wh-ch720n-overhead-headphone-price-in-bangladesh",
+          "price": 14290,
+          "oldPrice": 16990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/sony-wh-ch720n-overhead-headphone",
+          "price": 10700,
+          "oldPrice": 12999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/sony-wh-ch720n-overhead-headphone/",
+          "price": 13900,
+          "oldPrice": 15000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "JBL",
+      "name": "Tune 770NC",
+      "category": "headphones",
+      "releaseYear": 2023,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Black",
+        "Blue",
+        "White",
+        "Purple"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/headphone/jbl/tune-770nc/tune-770nc-01-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/JBL-Tune-770NC-122-4459.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/jbl-tune-770nc-wireless-headphone",
+      "offers": [
+        {
+          "variant": "Standard",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/jbl-tune-770nc-wireless-headphone",
+          "price": 8599,
+          "oldPrice": 9500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/jbl-tune-770nc-wireless-over-ear-anc-headphones",
+          "price": 7199,
+          "oldPrice": 8150,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/jbl-tune-770nc-wireless-over-ear-anc-headphone",
+          "price": 10699,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Anker",
+      "name": "Soundcore Space One",
+      "category": "headphones",
+      "releaseYear": 2023,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Jet Black",
+        "Sky Blue",
+        "Latte Cream"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/headphone/anker/space-one/space-one-jet-black-1200x630.webp",
+        "https://assets.gadgetandgear.com/upload/media/anker-soundcore-space-one-anc-headphone492.jpeg"
+      ],
+      "specsSource": "https://www.startech.com.bd/anker-soundcore-space-one-headphone",
+      "offers": [
+        {
+          "variant": "Standard",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/anker-soundcore-space-one-headphone",
+          "price": 7499,
+          "oldPrice": 8999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/anker-soundcore-space-one-anc-headphone",
+          "price": 8449,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/anker-soundcore-space-one-anc-headphones-price-in-bangladesh",
+          "price": 7790,
+          "oldPrice": 8500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/anker-soundcore-space-one/",
+          "price": 8990,
+          "oldPrice": 9990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "Standard",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/anker-space-one-active-noise-cancelling-headphones",
+          "price": 7699,
+          "oldPrice": 8500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-21"
+        }
+      ]
+    }
+  ]
+}

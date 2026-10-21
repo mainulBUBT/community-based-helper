@@ -1,16 +1,18 @@
 "use client";
 
-import { ExternalLink, Trash2 } from "lucide-react";
+import { CheckCircle2, Circle, ExternalLink, Trash2 } from "lucide-react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState, type FormEvent } from "react";
-import { Field, Select } from "@/components/admin/Field";
+import { Field, Select, TextArea } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { Toggle } from "@/components/admin/Toggle";
 import { ErrorNotice } from "@/components/ui/ErrorNotice";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
+import { categoryName } from "@/hooks/useCategories";
+import { useAdminCategories } from "@/hooks/useAdminCategories";
 import { useAdminI18n } from "@/hooks/useI18n";
 import type { Messages } from "@/i18n/bn";
 import { showToast } from "@/lib/toast";
@@ -18,8 +20,10 @@ import { deleteOffer, listOffersFor, updateOffer } from "@/services/admin/offers
 import { deleteProduct, deleteVariant, saveVariant, updateProduct } from "@/services/admin/products";
 import { listAllSellers } from "@/services/admin/sellers";
 import { loadCatalog } from "@/services/catalog";
-import type { Category, Offer, Product, Variant } from "@/types/catalog";
+import type { Axis, Offer, Product, Variant, VariantAttributes } from "@/types/catalog";
 import { telLink } from "@/utils/format";
+import { specsToText, textToSpecs } from "@/utils/specs";
+import { variantLabel } from "@/utils/variants";
 
 const iconButton = "flex size-10 items-center justify-center rounded-xl border border-line text-dim hover:border-brand hover:text-brand";
 const toPrice = (value: FormDataEntryValue | null) => Number(String(value ?? "").replace(/\D/g, "")) || null;
@@ -31,46 +35,117 @@ async function loadEditor(id: string) {
   return { product, offers, sellers: new Map(sellers.map((s) => [s.id, s])) };
 }
 
+const splitList = (value: FormDataEntryValue | null, separator: RegExp) =>
+  String(value ?? "")
+    .split(separator)
+    .map((item) => item.trim())
+    .filter(Boolean);
+
 function DetailsForm({ product, onSaved }: { product: Product; onSaved: () => void }) {
-  const { t } = useAdminI18n();
+  const { t, lang } = useAdminI18n();
+  const { categories } = useAdminCategories();
   const { busy, run } = useAdminAction();
+  const [images, setImages] = useState((product.images ?? []).join("\n"));
+  const previews = images.split("\n").map((line) => line.trim()).filter(Boolean);
+
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
+    const text = (name: string) => String(form.get(name) ?? "").trim() || null;
     const saved = await run(
       () =>
         updateProduct(product, {
           brand: String(form.get("brand")).trim(),
           name: String(form.get("name")).trim(),
-          category: form.get("category") as Category,
+          category: String(form.get("category")),
           releaseYear: Number(form.get("year")) || null,
           popularity: Number(form.get("popularity")) || 0,
+          images: previews,
+          colors: splitList(form.get("colors"), /,/),
+          regions: splitList(form.get("regions"), /,/),
+          description: text("description"),
+          descriptionEn: text("descriptionEn"),
+          specs: textToSpecs(String(form.get("specs") ?? "")),
+          specsSource: text("specsSource"),
         }),
       t.admin.common.saved,
     );
     if (saved) onSaved();
   }
+
   return (
-    <form onSubmit={onSubmit} className="grid gap-4 p-5 md:grid-cols-3">
-      <Field label={t.admin.products.brand} name="brand" defaultValue={product.brand} required />
-      <Field label={t.admin.products.model} name="name" defaultValue={product.name} required />
-      <Select label={t.admin.products.category} name="category" defaultValue={product.category}>
-        {(Object.keys(t.category) as Category[]).map((id) => (
-          <option key={id} value={id}>
-            {t.category[id].label}
-          </option>
-        ))}
-      </Select>
-      <Field label={t.admin.products.year} name="year" type="number" defaultValue={product.releaseYear ?? ""} />
-      <Field label={t.admin.editor.popularity} name="popularity" type="number" min={0} max={100} defaultValue={product.popularity} hint={t.admin.editor.popularityHint} />
-      <button type="submit" disabled={busy} className={`${primaryButton} self-end`}>
-        {t.admin.common.save}
-      </button>
+    <form onSubmit={onSubmit} className="flex flex-col gap-6">
+      <Panel title={t.admin.editor.detailsTitle}>
+        <div className="grid gap-4 p-5 md:grid-cols-3">
+          <Field label={t.admin.products.brand} name="brand" defaultValue={product.brand} required />
+          <Field label={t.admin.products.model} name="name" defaultValue={product.name} required />
+          <Select label={t.admin.products.category} name="category" defaultValue={product.category}>
+            {categories.map((c) => (
+              <option key={c.slug} value={c.slug}>
+                {categoryName(c, lang)}
+              </option>
+            ))}
+          </Select>
+          <Field label={t.admin.products.year} name="year" type="number" defaultValue={product.releaseYear ?? ""} />
+          <Field label={t.admin.editor.popularity} name="popularity" type="number" min={0} max={100} defaultValue={product.popularity} hint={t.admin.editor.popularityHint} />
+        </div>
+      </Panel>
+
+      <Panel title={t.admin.editor.mediaTitle}>
+        <div className="flex flex-col gap-4 p-5">
+          <TextArea label={t.admin.editor.images} value={images} onChange={(e) => setImages(e.target.value)} hint={t.admin.editor.imagesHint} placeholder="https://" rows={4} />
+          {previews.length > 0 && (
+            <div className="flex flex-wrap gap-3">
+              {previews.map((src, i) => (
+                <span key={src + i} className={`flex size-20 items-center justify-center overflow-hidden rounded-lg border bg-white p-1.5 ${i === 0 ? "border-brand" : "border-line"}`}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={src} alt="" className="size-full object-contain" />
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+      </Panel>
+
+      <Panel title={t.admin.editor.varietyTitle}>
+        <div className="grid gap-4 p-5 md:grid-cols-2">
+          <Field label={t.admin.editor.colors} name="colors" defaultValue={(product.colors ?? []).join(", ")} hint={t.admin.editor.colorsHint} />
+          <Field label={t.admin.editor.regions} name="regions" defaultValue={(product.regions ?? []).join(", ")} hint={t.admin.editor.regionsHint} />
+        </div>
+      </Panel>
+
+      <Panel title={t.admin.editor.specsTitle}>
+        <div className="flex flex-col gap-4 p-5">
+          <TextArea
+            label={t.admin.editor.specsField}
+            name="specs"
+            defaultValue={specsToText(product.specs ?? [])}
+            hint={t.admin.editor.specsHint}
+            placeholder={"Display\nSize | 6.3 inch\nType | OLED\n\nBattery\nCapacity | 5000mAh"}
+            rows={16}
+            className="font-mono text-[13px]"
+          />
+          <Field label={t.admin.editor.specsSource} name="specsSource" type="url" defaultValue={product.specsSource ?? ""} hint={t.admin.editor.specsSourceHint} placeholder="https://" />
+        </div>
+      </Panel>
+
+      <Panel title={t.admin.editor.descriptionTitle}>
+        <div className="grid gap-4 p-5 lg:grid-cols-2">
+          <TextArea label={t.admin.editor.description} name="description" defaultValue={product.description ?? ""} rows={5} />
+          <TextArea label={t.admin.editor.descriptionEn} name="descriptionEn" defaultValue={product.descriptionEn ?? ""} rows={5} />
+        </div>
+      </Panel>
+
+      <div className="sticky bottom-0 z-10 -mx-4 flex justify-end border-t border-line bg-page/95 px-4 py-3 backdrop-blur md:-mx-8 md:px-8">
+        <button type="submit" disabled={busy} className={primaryButton}>
+          {t.admin.common.save}
+        </button>
+      </div>
     </form>
   );
 }
 
-function VariantRow({ product, variant, onChange }: { product: Product; variant: Variant; onChange: () => void }) {
+function VariantRow({ product, variant, axes, onChange }: { product: Product; variant: Variant; axes: Axis[]; onChange: () => void }) {
   const { t } = useAdminI18n();
   const { busy, run } = useAdminAction();
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
@@ -78,7 +153,13 @@ function VariantRow({ product, variant, onChange }: { product: Product; variant:
     const el = event.currentTarget;
     const form = new FormData(el);
     const saved = await run(
-      () => saveVariant(product, { ...variant, label: String(form.get("label")).trim(), officialPrice: toPrice(form.get("price")) }),
+      () => {
+        const attributes: VariantAttributes = Object.fromEntries(axes.map((axis) => [axis, String(form.get(axis) ?? "").trim()]).filter(([, value]) => value));
+        const label = String(form.get("label") ?? "").trim() || variantLabel(attributes, axes);
+        if (!label) throw new Error("label");
+        const sku = String(form.get("sku") ?? "").trim() || null;
+        return saveVariant(product, { ...variant, label, attributes, sku, officialPrice: toPrice(form.get("price")) });
+      },
       variant.id ? t.admin.editor.variantSaved : t.admin.editor.variantAdded,
     );
     if (!saved) return;
@@ -87,8 +168,16 @@ function VariantRow({ product, variant, onChange }: { product: Product; variant:
   }
   return (
     <form onSubmit={onSubmit} className="flex flex-wrap items-end gap-3 px-5 py-3">
+      {axes.map((axis) => (
+        <div key={axis} className="w-32">
+          <Field label={t.axis[axis]} name={axis} defaultValue={variant.attributes[axis] ?? ""} />
+        </div>
+      ))}
       <div className="min-w-48 flex-1">
-        <Field label={t.admin.editor.variantLabel} name="label" defaultValue={variant.label} required />
+        <Field label={t.admin.editor.variantLabel} name="label" defaultValue={variant.label} required={!axes.length} placeholder={axes.length ? t.admin.editor.variantLabelAuto : undefined} />
+      </div>
+      <div className="w-32">
+        <Field label={t.admin.editor.sku} name="sku" defaultValue={variant.sku ?? ""} />
       </div>
       <div className="w-40">
         <Field label={t.admin.editor.officialPrice} name="price" inputMode="numeric" defaultValue={variant.officialPrice ?? ""} />
@@ -119,6 +208,7 @@ function OfferRow({ offer, seller, phone, website, onChange }: { offer: Offer; s
   const { busy, run } = useAdminAction();
   const [price, setPrice] = useState(String(offer.price));
   const [url, setUrl] = useState(offer.url ?? "");
+  const [region, setRegion] = useState(offer.region ?? "");
   return (
     <tr>
       <td className="px-5 py-3">
@@ -155,6 +245,21 @@ function OfferRow({ offer, seller, phone, website, onChange }: { offer: Offer; s
             }}
             className="h-9 w-full min-w-40 max-w-56 rounded-lg border border-line bg-surface px-2 text-[13px] outline-none focus:border-brand"
           />
+          <label className="flex items-center gap-2 text-[13px] text-dim">
+            {t.admin.products.region}
+            <input
+              value={region}
+              list="offer-regions"
+              placeholder={t.admin.products.regionPlaceholder}
+              onChange={(e) => setRegion(e.target.value)}
+              onBlur={async () => {
+                const next = region.trim() || null;
+                if (next === offer.region) return;
+                if (await run(() => updateOffer(offer, { region: next }), t.admin.editor.offerUpdated)) onChange();
+              }}
+              className="h-8 w-28 rounded-lg border border-line bg-surface px-2 text-[13px] text-ink outline-none focus:border-brand"
+            />
+          </label>
           {!offer.url &&
             (phone ? (
               <a href={telLink(phone)} className="text-[13px] font-semibold text-brand">
@@ -235,6 +340,7 @@ function OfferRow({ offer, seller, phone, website, onChange }: { offer: Offer; s
 
 export function ProductEditor() {
   const { t } = useAdminI18n();
+  const { categories } = useAdminCategories();
   const { run } = useAdminAction();
   const id = useSearchParams().get("id") ?? "";
   const router = useRouter();
@@ -250,6 +356,8 @@ export function ProductEditor() {
     );
   }
   const { product, offers, sellers } = data;
+  const categoryAxes = categories.find((c) => c.slug === product.category)?.axes ?? [];
+  const axes: Axis[] = categoryAxes.includes("color") ? categoryAxes : [...categoryAxes, "color"];
 
   return (
     <>
@@ -273,17 +381,36 @@ export function ProductEditor() {
           </div>
         }
       />
+      <datalist id="offer-regions">
+        {[...new Set([...(product.regions ?? []), ...offers.map((o) => o.region).filter((r): r is string => Boolean(r)), "USA", "Japan", "Singapore", "Hong Kong", "Australia", "UAE", "India", "Global"])].map((r) => (
+          <option key={r} value={r} />
+        ))}
+      </datalist>
       <div className="flex flex-col gap-6">
-        <Panel title={t.admin.editor.detailsTitle}>
-          <DetailsForm key={product.id + product.name} product={product} onSaved={reload} />
+        <Panel title={t.admin.editor.checklist}>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 px-5 py-4 text-sm">
+            {[
+              { key: "images", done: Boolean(product.images?.length) },
+              { key: "specs", done: Boolean(product.specs?.length) },
+              { key: "description", done: Boolean(product.description || product.descriptionEn) },
+              { key: "officialPrice", done: product.variants.some((v) => v.officialPrice) },
+              { key: "offers", done: offers.length > 0 },
+            ].map(({ key, done }) => (
+              <li key={key} className={`flex items-center gap-1.5 ${done ? "text-ok" : "text-dim"}`}>
+                {done ? <CheckCircle2 size={16} aria-hidden="true" /> : <Circle size={16} aria-hidden="true" />}
+                {t.admin.editor.checks[key as keyof typeof t.admin.editor.checks]}
+              </li>
+            ))}
+          </ul>
         </Panel>
+        <DetailsForm key={product.id + product.name} product={product} onSaved={reload} />
 
         <Panel title={t.admin.editor.variantsTitle}>
           <div className="divide-y divide-line-soft">
             {product.variants.map((variant) => (
-              <VariantRow key={variant.id} product={product} variant={variant} onChange={reload} />
+              <VariantRow key={variant.id} product={product} variant={variant} axes={axes} onChange={reload} />
             ))}
-            <VariantRow product={product} variant={{ id: "", label: "", officialPrice: null }} onChange={reload} />
+            <VariantRow product={product} variant={{ id: "", label: "", attributes: {}, officialPrice: null }} axes={axes} onChange={reload} />
           </div>
         </Panel>
 
