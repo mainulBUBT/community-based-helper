@@ -28,12 +28,10 @@ function OfferRow({ offer, best }: { offer: OfferView; best: boolean }) {
             </Link>
             <VerifiedBadge verified={seller.verified} />
           </span>
-          {offer.condition !== "official" && (
-            <Badge tone="gold">
-              {t.condition[offer.condition]}
-              {offer.region ? ` (${offer.region})` : ""}
-            </Badge>
-          )}
+          <Badge tone={offer.condition === "official" ? "ok" : offer.condition === "unofficial" ? "gold" : "neutral"}>
+            {t.condition[offer.condition]}
+            {offer.region ? ` (${offer.region})` : ""}
+          </Badge>
         </span>
       </div>
 

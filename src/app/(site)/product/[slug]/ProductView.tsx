@@ -201,7 +201,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
 
   const variantOffers = offers.filter((o) => o.variantId === variant?.id);
   const conditions = CONDITIONS.filter((c) => variantOffers.some((o) => o.condition === c));
-  const [chosen, setChosen] = useState<Condition | "all">(() => (offers.some((o) => o.condition === "official") ? "official" : "all"));
+  const [chosen, setChosen] = useState<Condition | "all">("all");
   const condition: Condition | "all" = chosen === "all" || conditions.includes(chosen) ? chosen : "all";
   const { data: settings } = useAsync(getSiteSettings, []);
   const regions = [...new Set(variantOffers.map((o) => o.region).filter((r): r is string => Boolean(r)))].sort();
@@ -210,7 +210,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
   const regionNote = region ? settings?.regionNotes.find((n) => n.region.toLowerCase() === region.toLowerCase()) : undefined;
   const shown = variantOffers
     .filter((o) => (region ? o.region === region : condition === "all" || o.condition === condition))
-    .sort((a, b) => a.price - b.price);
+    .sort((a, b) => a.price - b.price || (a.condition === b.condition ? 0 : a.condition === "official" ? -1 : b.condition === "official" ? 1 : 0));
   const best = shown[0];
   const fullName = `${product.brand} ${product.name}`;
 
