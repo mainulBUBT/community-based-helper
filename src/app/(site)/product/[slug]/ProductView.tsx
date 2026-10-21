@@ -4,6 +4,7 @@ import { Check, ChevronDown, ChevronRight, Clock, ExternalLink, Globe, Megaphone
 import Link from "next/link";
 import { useState, type ReactNode } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
+import { AlternativeCard } from "@/components/product/AlternativeCard";
 import { OffersTable } from "@/components/product/OffersTable";
 import { PriceChart } from "@/components/product/PriceChart";
 import { ProductGallery } from "@/components/product/ProductGallery";
@@ -193,11 +194,12 @@ function SpecsPanel({ specs, source }: { specs: SpecGroup[]; source?: string | n
 export function ProductView({ initial }: { initial: ProductDetail }) {
   const { lang, t, num, ago, prefix } = useI18n();
   const { data } = useAsync(() => getProductDetail(initial.product.slug), [initial.product.slug], initial);
-  const { product, offers, history, category } = data ?? initial;
+  const { product, offers, history, category, alternatives } = data ?? initial;
   const { name: categoryName } = useCategories();
   const categoryLabel = category ? (lang === "en" ? category.nameEn : category.name) : categoryName(product.category);
   const [variantId, setVariantId] = useState(product.variants[0]?.id);
   const variant = product.variants.find((v) => v.id === variantId) ?? product.variants[0];
+  const cheaper = alternatives[variant?.id ?? ""] ?? [];
 
   const variantOffers = offers.filter((o) => o.variantId === variant?.id);
   const conditions = CONDITIONS.filter((c) => variantOffers.some((o) => o.condition === c));
@@ -396,6 +398,16 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
       {shown.length > 0 && (
         <Panel title={t.product.allPrices} subtitle={product.variants.length > 1 ? variantName : undefined} id="stores">
           <OffersTable offers={shown} />
+        </Panel>
+      )}
+
+      {cheaper.length > 0 && (
+        <Panel title={t.product.cheaperTitle} subtitle={t.product.cheaperSub} id="cheaper">
+          <div className="grid grid-cols-2 gap-3 p-4 sm:grid-cols-3 md:grid-cols-4 md:p-5">
+            {cheaper.map((alternative) => (
+              <AlternativeCard key={alternative.summary.product.id} alternative={alternative} />
+            ))}
+          </div>
         </Panel>
       )}
 

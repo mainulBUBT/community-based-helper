@@ -113,9 +113,21 @@ export interface ProductSummary {
   drop: number | null;
 }
 
+export interface Alternative {
+  summary: ProductSummary;
+  variantId: string;
+  specLabel: string;
+  sameSpec: boolean;
+  price: number;
+  saving: number;
+  condition: Condition;
+  stores: number;
+}
+
 export interface ProductDetail {
   product: Product;
   category: CategoryInfo | null;
   offers: OfferView[];
   history: PricePoint[];
+  alternatives: Record<string, Alternative[]>;
 }

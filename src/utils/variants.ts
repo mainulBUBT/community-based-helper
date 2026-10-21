@@ -28,7 +28,7 @@ export function parseVariantLabel(label: string, axes: readonly Axis[]): Variant
   return Object.fromEntries(Object.entries(attributes).filter(([, v]) => v)) as VariantAttributes;
 }
 
-const numericValue = (value: string) => {
+export const numericValue = (value: string) => {
   const num = Number.parseFloat(value.replace(",", "."));
   return Number.isNaN(num) ? 0 : num;
 };

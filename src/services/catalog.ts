@@ -2,7 +2,8 @@ import { DEFAULT_SETTINGS } from "@/config/site";
 import { sampleHistory, sampleOffers, sampleProducts, samplePromos, sampleSellers, sampleSettings, sampleCategories } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
 import type { SiteSettings } from "@/types/admin";
-import type { CategoryInfo, Offer, OfferView, PricePoint, Product, ProductDetail, ProductSummary, Promo, Seller } from "@/types/catalog";
+import type { Alternative, CategoryInfo, Offer, OfferView, PricePoint, Product, ProductDetail, ProductSummary, Promo, Seller } from "@/types/catalog";
+import { findCheaperAlternatives } from "@/utils/alternatives";
 import { byPrice } from "@/utils/catalog";
 import { toCategory, toOffer, toPricePoint, toProduct, toPromo, toSeller } from "./mappers";
 import { safeUrl } from "@/utils/url";
@@ -71,15 +72,15 @@ function summarize(catalog: Catalog, product: Product): ProductSummary {
   const lowest = best?.price ?? null;
   const listPrice = best ? product.variants.find((v) => v.id === best.variantId)?.officialPrice : null;
   const reference = Math.max(best?.oldPrice ?? 0, listPrice ?? 0);
-  const drops = offers.filter((o) => o.oldPrice && o.oldPrice > o.price).map((o) => o.oldPrice! - o.price);
+  const compareAt = lowest && reference > lowest ? reference : null;
   return {
     product,
     lowest,
     lowestAny: offers.length ? Math.min(...offers.map((o) => o.price)) : null,
-    compareAt: lowest && reference > lowest ? reference : null,
+    compareAt,
     inStock: offers.some((o) => o.inStock !== false),
     sellerCount: new Set(offers.map((o) => o.sellerId)).size,
-    drop: drops.length ? Math.max(...drops) : null,
+    drop: compareAt && lowest ? compareAt - lowest : null,
   };
 }
 
@@ -107,6 +108,34 @@ async function loadHistory(offerIds: string[]): Promise<PricePoint[]> {
   return data.map(toPricePoint);
 }
 
+function buildAlternatives(catalog: Catalog, product: Product, category: CategoryInfo | null): Record<string, Alternative[]> {
+  const axes = category?.axes ?? [];
+  const offersByVariant = new Map<string, Offer[]>();
+  for (const offer of catalog.offers) {
+    const list = offersByVariant.get(offer.variantId);
+    if (list) list.push(offer);
+    else offersByVariant.set(offer.variantId, [offer]);
+  }
+  const candidates = catalog.products
+    .filter((p) => p.category === product.category && p.id !== product.id)
+    .map((p) => ({
+      product: p,
+      summary: summarize(catalog, p),
+      offers: p.variants.flatMap((v) => offersByVariant.get(v.id) ?? []),
+    }));
+  const result: Record<string, Alternative[]> = {};
+  for (const variant of product.variants) {
+    result[variant.id] = findCheaperAlternatives({
+      current: product,
+      currentVariant: variant,
+      currentOffers: offersByVariant.get(variant.id) ?? [],
+      candidates,
+      axes,
+    });
+  }
+  return result;
+}
+
 export async function getProductDetail(slug: string): Promise<ProductDetail | null> {
   const catalog = await loadCatalog();
   const product = catalog.products.find((p) => p.slug === slug);
@@ -114,7 +143,8 @@ export async function getProductDetail(slug: string): Promise<ProductDetail | nu
   const variantIds = new Set(product.variants.map((v) => v.id));
   const offers = viewOffers(catalog, catalog.offers.filter((o) => variantIds.has(o.variantId)));
   const category = catalog.categories.find((c) => c.slug === product.category) ?? null;
-  return { product, category, offers, history: await loadHistory(offers.map((o) => o.id)) };
+  const alternatives = buildAlternatives(catalog, product, category);
+  return { product, category, offers, history: await loadHistory(offers.map((o) => o.id)), alternatives };
 }
 
 export async function getSellerDetail(id: string) {

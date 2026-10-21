@@ -31,7 +31,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | # | ফিচার | অবস্থা | ফাইল |
 |---|---|---|---|
 | 1 | ডিজাইন সিস্টেম (রং, কম্পোনেন্ট) | ✅ | [01-design-system](features/01-design-system.md) |
-| 2 | ইউজার পেজ (হোম, পণ্য, বিক্রেতা, সেভ) | ✅ | [02-user-pages](features/02-user-pages.md) |
+| 2 | ইউজার পেজ (হোম, পণ্য, বিক্রেতা, সেভ) | ✅ ডিল ফিড আর "একই ধরনের আরও সস্তা" যোগ হয়েছে | [02-user-pages](features/02-user-pages.md) |
 | 3 | খোঁজা আর ফিল্টার | ✅ | [03-search](features/03-search.md) |
 | 4 | বিক্রেতা, ফোন নম্বর, যাচাই ব্যাজ | ✅ | [04-sellers](features/04-sellers.md) |
 | 5 | ক্রেতার পাঠানো দাম | 🟡 | [05-price-reports](features/05-price-reports.md) |

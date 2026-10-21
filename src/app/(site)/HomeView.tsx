@@ -103,11 +103,11 @@ function BrandMarquee({ brands }: { brands: string[] }) {
   );
 }
 
-function DenseGrid({ items }: { items: ProductSummary[] }) {
+function DenseGrid({ items, deal }: { items: ProductSummary[]; deal?: boolean }) {
   return (
     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
       {items.map((summary) => (
-        <ProductCard key={summary.product.id} summary={summary} />
+        <ProductCard key={summary.product.id} summary={summary} deal={deal ? summary.drop : null} />
       ))}
     </div>
   );
@@ -305,6 +305,26 @@ function SpotlightShelf({ summaries }: { summaries: ProductSummary[] }) {
   );
 }
 
+function DealsShelf({ deals }: { deals: ProductSummary[] }) {
+  const { t, num, prefix } = useI18n();
+  if (!deals.length) return null;
+
+  return (
+    <Shelf>
+      <div className="flex flex-col gap-1">
+        <span className="text-xs font-semibold tracking-wider text-gold-text uppercase">{t.home.dropsEyebrow}</span>
+        <SectionHeader
+          title={t.home.drops}
+          subtitle={t.home.dropsSub}
+          href={`${prefix}/search/?sort=drop`}
+          linkLabel={t.home.seeAllIn(num(deals.length))}
+        />
+      </div>
+      <DenseGrid items={deals.slice(0, 6)} deal />
+    </Shelf>
+  );
+}
+
 function CategoryRows({ summaries }: { summaries: ProductSummary[] }) {
   const { t, num, lang, prefix } = useI18n();
   const { top, family } = useCategories();
@@ -337,8 +357,7 @@ export function HomeView({ initial }: { initial: HomeData }) {
 
   const drops = summaries
     .filter((s) => s.drop)
-    .sort((a, b) => (b.drop ?? 0) - (a.drop ?? 0))
-    .slice(0, 5);
+    .sort((a, b) => (b.drop ?? 0) - (a.drop ?? 0));
   const brands = [...new Set(summaries.map((s) => s.product.brand))];
   const trusted = [...sellers]
     .sort((a, b) => Number(b.verified) - Number(a.verified))
@@ -381,7 +400,7 @@ export function HomeView({ initial }: { initial: HomeData }) {
             href={`${prefix}/search/?sort=drop`}
             icon={TrendingDown}
             title={t.home.drops}
-            body={t.search.count(num(drops.length))}
+            body={t.home.dropsCount(num(drops.length))}
           />
           <HighlightTile
             href={`${prefix}/sellers/`}
@@ -395,6 +414,8 @@ export function HomeView({ initial }: { initial: HomeData }) {
       </div>
 
       <CategoryTiles summaries={summaries} />
+
+      <DealsShelf deals={drops} />
 
       <SpotlightShelf summaries={summaries} />
 

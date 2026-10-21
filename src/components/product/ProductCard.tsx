@@ -8,7 +8,7 @@ import type { ProductSummary } from "@/types/catalog";
 import { formatTaka } from "@/utils/format";
 import { ProductIcon } from "./ProductIcon";
 
-export function ProductCard({ summary }: { summary: ProductSummary }) {
+export function ProductCard({ summary, deal }: { summary: ProductSummary; deal?: number | null }) {
   const { t, num, prefix } = useI18n();
   const { product, lowest, compareAt, inStock, sellerCount } = summary;
   const photo = product.images?.[0];
@@ -17,7 +17,11 @@ export function ProductCard({ summary }: { summary: ProductSummary }) {
   return (
     <article className="group relative flex h-full flex-col overflow-hidden rounded-lg border border-line bg-surface transition-[border-color,box-shadow] hover:border-brand/30 hover:shadow-[0_8px_24px_-12px_rgb(17_24_39/0.25)]">
       <div className="relative flex aspect-square items-center justify-center bg-white">
-        {off > 0 && <span className="absolute top-2 left-2 z-10 rounded bg-sale px-1.5 py-0.5 text-[11px] font-semibold text-white">−{num(off)}%</span>}
+        {deal ? (
+          <span className="absolute top-2 left-2 z-10 rounded bg-gold px-1.5 py-0.5 text-[11px] font-semibold text-gold-ink">−{formatTaka(deal)}</span>
+        ) : off > 0 ? (
+          <span className="absolute top-2 left-2 z-10 rounded bg-sale px-1.5 py-0.5 text-[11px] font-semibold text-white">−{num(off)}%</span>
+        ) : null}
         <span className="absolute top-2 right-2 z-10 opacity-100 transition-opacity md:opacity-0 md:group-hover:opacity-100 md:focus-within:opacity-100">
           <SaveButton slug={product.slug} compact />
         </span>
