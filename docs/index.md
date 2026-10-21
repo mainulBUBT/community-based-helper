@@ -1,6 +1,6 @@
 # দরদাম: প্রজেক্ট ইনডেক্স
 
-বাংলাদেশের দোকানগুলোতে মোবাইল, Apple (iPhone, MacBook, iPad) আর স্মার্টওয়াচের দাম পাশাপাশি দেখানোর PWA। নাম "দরদাম" আপাতত, পরে বদলাতে পারে।
+বাংলাদেশের দোকানগুলো থেকে একই পণ্যের দাম পাশাপাশি দেখানোর PWA। নাম **দরদাম** (Dordam), slogan "আগে দাম যাচাই, তারপর স্মার্ট কেনা"। এখন মোবাইল, ল্যাপটপ, ট্যাবলেট, ডেস্কটপ, স্মার্টওয়াচ আর অডিও; পরে অন্য পণ্যও আসবে।
 
 এই ফোল্ডার মানুষ আর AI এজেন্ট দুজনের জন্য। কাজ শুরুর আগে এই ফাইল, তারপর যে ফিচারে কাজ করবেন তার ফাইল পড়ুন। কাজ শেষে সেই ফাইলের টাস্ক টিক দিন আর নিচের ট্র্যাকারে স্ট্যাটাস বদলান।
 
@@ -13,11 +13,17 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 নতুন পণ্য বা দোকান যোগের নিয়ম: **[adding-products.md](adding-products.md)**
 
 1. ✅ **Supabase প্রজেক্ট** `fwcmpzdsbdbslollqxjk` খোলা, ৬টা migration চলেছে, `seed.sql` চালানো হয়েছে (`npx supabase db push --include-seed`)।
+1a. ⬜ নতুন migration `20261021150000_catalog-settings-sync.sql` চালানো (`npm run db:push`): ক্যাটাগরির ভেতরের ভাগ (`parent`), ডেস্কটপ/অডিও/ইয়ারবাড/হেডফোন, আর নতুন সেটিংস (English slogan, About লেখা, দেশের নোট)। আগের migration ফাইলে এগুলো পরে যোগ হয়েছিল, তাই আগে push হয়ে থাকলে ডেটাবেসে নেই; এই migration নিরাপদে দুটোই সামলায়। তারপর `supabase/seed.sql` আবার চালান (SQL Editor এ, বা `npx supabase db push --include-seed`): এখন এতে ৫৩টা পণ্য আর ৫৪৫টা দাম (iPhone, iPad, Mac, অডিও সহ); আগে থেকে যা আছে তা দুবার ঢোকে না।
 2. ⬜ নিজেকে অ্যাডমিন বানানো, Authentication এর সেটিং আর Turnstile secret। দেখুন [setup-guide](setup-guide.md) ধাপ ১ আর ৮।
 3. 🟡 GitHub secret/variable বসানো চলছে; Cloudflare Pages প্রজেক্ট `dordam` খোলা হয়েছে।
 4. ⬜ Actions → `rebuild` দিয়ে প্রথম deploy (`https://dordam.pages.dev`)।
 5. ⬜ অ্যাডমিনে AI সেটিংস, তারপর `prices` আর `discover` একবার হাতে চালিয়ে বার্তা দেখা। দেখুন [workers](features/12-workers-cron.md)
-6. ✅ `/about/` পেজ (`/about/` বাংলা, `/en/about/` English)।
+6. ⬜ **ডোমেইন** (DNS বিক্রেতার কাছেই থাকবে): Pages এ `www.dordam.app` যোগ, বিক্রেতার DNS এ CNAME `www` → `dordam.pages.dev`; www ছাড়া `dordam.app` এর জন্য ALIAS বা HTTPS forwarding। দেখুন [setup-guide ধাপ ৫](setup-guide.md)।
+7. ⬜ ডোমেইন চালুর পর `NEXT_PUBLIC_SITE_URL = https://www.dordam.app` (GitHub secret), আবার `rebuild`; Supabase Auth এর Site/Redirect URL আর Turnstile এর ডোমেইনে নতুন ঠিকানা।
+8. ⬜ মূল ডোমেইন না খুললে bot এর পরিচয়ের লিংক (`workers/lib/agent.ts`) আর `src/config/site.ts` এর `SITE_URL` www এ আনা (এজেন্টকে বলুন)।
+9. ⬜ Google Search Console এ সাইট যোগ আর `sitemap.xml` জমা।
+10. ⬜ অ্যাডমিন → সেটিংস: যোগাযোগের ইমেইল/ফোন, About পাতার লেখা, দেশের নোট মিলিয়ে নেওয়া। অ্যাডমিন → পণ্য: দোকানের দামে দেশের নাম এক রকম করা (যেমন "Japan/Middle East" → "Japan")।
+11. ✅ `/about/` পেজ (`/about/` বাংলা, `/en/about/` English), সব লেখা অ্যাডমিন থেকে বদলানো যায়।
 
 ## ফিচার ট্র্যাকার
 
@@ -38,16 +44,16 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | 13 | AI (OpenAI-compatible LLM) | 🟡 | [13-llm](features/13-llm.md) |
 | 14 | ভিজিটর গোনা আর লগ | 🟡 | [14-analytics-logs](features/14-analytics-logs.md) |
 | 15 | দোকানের জন্য Telegram bot | ⬜ | [15-telegram-bot](features/15-telegram-bot.md) |
-| 16 | Deploy আর ডোমেইন | ⬜ | [16-deploy](features/16-deploy.md) |
+| 16 | Deploy আর ডোমেইন | 🟡 Pages প্রজেক্ট খোলা, deploy আর ডোমেইন বাকি | [16-deploy](features/16-deploy.md) |
 | 17 | ডেটার উৎস আর নিয়ম | ✅ সিদ্ধান্ত | [17-data-sources](features/17-data-sources.md) |
 | 18 | নিরাপত্তা | 🟡 ড্যাশবোর্ড সেটিং বাকি | [18-security](features/18-security.md) |
 
 ## পুরো প্ল্যান সংক্ষেপে
 
 - **কী:** একই পণ্যের দাম কয়েকটা দোকান থেকে এনে পাশাপাশি দেখানো। যে দোকানের ওয়েবসাইট নেই (মার্কেটের দোকান, ফেসবুক গ্রুপ), তাদের ফোন নম্বর আর "যাচাই করা / যাচাই হয়নি" ব্যাজ দেখানো।
-- **ক্যাটাগরি:** মোবাইল, Apple, স্মার্টওয়াচ।
-- **দোকান:** Star Tech, Pickaboo, Apple Gadgets, Gadget & Gear। এর বাইরে Telegram bot আর ক্রেতার পাঠানো দাম।
-- **বাদ:** Daraz (তাদের Terms এ দাম সংগ্রহ নিষেধ), Ryans আর TechLand (bot protection), Facebook scrape। bot protection ফাঁকি দেওয়ার কোড লেখা হবে না।
+- **ক্যাটাগরি:** অ্যাডমিন থেকে বানানো যায় (`categories` টেবিল, ভেতরে ভাগও)। এখন মোবাইল, ল্যাপটপ, ট্যাবলেট, ডেস্কটপ, স্মার্টওয়াচ, অডিও (ইয়ারবাড, হেডফোন)। Apple আলাদা ভাগ নয়, ব্র্যান্ড।
+- **দোকান:** Star Tech, Gadget & Gear, Apple Gadgets, Sumash Tech, Kry International, Executive Machines, Motion View, Dazzle, Diamu, Gadget Breeze (কোনটা কীসের জন্য: [data-sources](features/17-data-sources.md))। এর বাইরে ক্রেতার পাঠানো দাম আর (পরে) Telegram bot। Pickaboo আর GadStyle আমাদের bot আটকায়, তাই বাদ।
+- **বাদ:** Daraz (তাদের Terms এ দাম সংগ্রহ নিষেধ), Ryans আর TechLand, Facebook scrape। bot protection ফাঁকি দেওয়ার কোড লেখা হবে না, robots.txt মানা হয়।
 - **সব ফ্রি:** Next.js static export, Cloudflare Pages, Supabase ফ্রি tier, GitHub Actions; AI এর জন্য মালিকের নিজের OpenAI-compatible সাবস্ক্রিপশন।
 - **আয় (পরে):** Star Tech affiliate (৫%), দোকানের "verified listing"।
 
@@ -56,10 +62,10 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | অংশ | কী |
 |---|---|
 | ফ্রন্টএন্ড | Next.js 16 (App Router, `output: "export"`), React 19, Tailwind 4, lucide-react |
-| ডেটা | Supabase (Postgres + Auth + RLS), ব্রাউজার থেকে সরাসরি `@supabase/supabase-js` |
+| ডেটা | Supabase (Postgres + Auth + RLS), ব্রাউজার থেকে সরাসরি `@supabase/supabase-js`; শুরুর আসল পণ্য আর দাম `data/catalog/*.json` থেকে `supabase/seed.sql` |
 | worker | `workers/` (Node + tsx), GitHub Actions এ চলে |
 | AI | যেকোনো OpenAI-compatible API, ঠিকানা আর key অ্যাডমিন সেটিংসে |
-| হোস্টিং | Cloudflare Pages (static `out/` ফোল্ডার) |
+| হোস্টিং | Cloudflare Pages (static `out/` ফোল্ডার), ডোমেইন `www.dordam.app` (DNS বিক্রেতার কাছে) |
 
 Supabase যুক্ত না থাকলে পুরো অ্যাপ `src/data/sample.ts` এর নমুনা ডেটায় চলে, অ্যাডমিন "ডেমো মোডে" খোলে।
 
@@ -91,3 +97,5 @@ Supabase যুক্ত না থাকলে পুরো অ্যাপ `sr
 | worker পরীক্ষা (DB ছাড়া) | `npm run worker:dry` |
 | সব দাম সিঙ্ক হয় কি না (DB ছাড়া) | `npm run worker:check` |
 | worker চালানো | `npm run worker <job>` |
+| আসল ডেটার স্পেস আনা | `npm run catalog:specs` |
+| আসল ডেটা থেকে নমুনা আর seed বানানো | `npm run catalog:build` |

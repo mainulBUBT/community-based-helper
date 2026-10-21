@@ -1,6 +1,6 @@
 # ১৬ Deploy আর ডোমেইন
 
-**অবস্থা:** ⬜ শুরু হয়নি
+**অবস্থা:** 🟡 Pages প্রজেক্ট খোলা, deploy আর ডোমেইন বাকি
 
 পুরো ধাপে ধাপে নির্দেশনা: [setup-guide.md](../setup-guide.md)। মালিকের ডোমেইন আছে।
 
@@ -12,12 +12,16 @@
 
 ## ধাপ
 
-1. [ ] ডেটাবেস চালু ([database](11-database.md))।
-2. [ ] `.env.local` এ `NEXT_PUBLIC_SITE_URL=https://dordam.app`।
-3. [ ] মালিকের অনুমতি নিয়ে প্রথম deploy।
-4. [ ] Supabase Auth এ Site URL বসানো।
-5. [ ] ডোমেইন কিনলে: Cloudflare Pages এ custom domain, `NEXT_PUBLIC_SITE_URL` বদল, আবার build আর deploy, Google Search Console এ sitemap।
-6. [ ] বিকল্প হোস্ট (Vercel বা Netlify) রাখা, যদি বাংলাদেশে Cloudflare আটকায়। ডোমেইন থাকলে DNS বদলেই সরানো যাবে।
+1. [x] ডেটাবেস চালু ([database](11-database.md))।
+2. [x] Cloudflare Pages প্রজেক্ট `dordam` খোলা।
+3. [ ] প্রথম deploy (Actions → `rebuild`), `https://dordam.pages.dev` এ সাইট দেখা।
+4. [ ] ডোমেইন: DNS বিক্রেতার কাছেই থাকবে, তাই মূল সাইট `www.dordam.app` (CNAME → `dordam.pages.dev`)। পুরো ধাপ [setup-guide ধাপ ৫](../setup-guide.md)।
+5. [ ] `dordam.app` (www ছাড়া): ALIAS রেকর্ড, নয়তো HTTPS forwarding দিয়ে www এ পাঠানো।
+6. [ ] `NEXT_PUBLIC_SITE_URL = https://www.dordam.app` (GitHub secret, `.env.local`), আবার build।
+7. [ ] Supabase Auth Site URL / Redirect URL, Turnstile এর ডোমেইন তালিকা।
+8. [ ] মূল ডোমেইন না খুললে bot এর পরিচয়ের লিংক (`workers/lib/agent.ts`) আর `src/config/site.ts` এর ডিফল্ট `SITE_URL` www এ আনা।
+9. [ ] Google Search Console (URL prefix property) আর sitemap জমা।
+10. [ ] বিকল্প হোস্ট (Vercel বা Netlify) রাখা, যদি বাংলাদেশে Cloudflare আটকায়। DNS বিক্রেতার কাছে থাকায় শুধু CNAME বদলালেই সরানো যাবে।
 
 ## মনে রাখার বিষয়
 
