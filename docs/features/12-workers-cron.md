@@ -60,6 +60,12 @@ GitHub → Settings → Secrets and variables → Actions:
 
 অ্যাডমিনের "এখনই চালান" সাথে সাথে কাজ করাতে `private_settings` এ GitHub token (README তে SQL আছে)। না দিলে পরের নির্ধারিত সময়ে চলে।
 
+### GitHub থেকে চারটা দোকান আটকে যায় (২১ অক্টোবর ২০২৬)
+
+আসল ডেটাবেসে প্রথম run: GitHub থেকে ২৯৫টা দাম আপডেট হয়, ২৫০টা বাদ যায়। Sumash Tech আর Gadget Breeze ডেটা-সেন্টারের আইপিকে Cloudflare এর "Just a moment..." challenge দেয় (robots.txt পর্যন্ত)। Kry International আর Gadget & Gear একটা-দুটো অনুরোধ ছাড়ে, পরে আবার challenge দেয়। `Accept-Language`/`Accept-Encoding` header যোগ করেও পুরো run এ কাজ হয়নি। প্রক্সি বা নকল ব্রাউজার দিয়ে পার হওয়া নিয়মের বাইরে।
+
+বাংলাদেশের সাধারণ ইন্টারনেট থেকে চারটাই খোলে: মালিকের Mac থেকে `./scripts/local-worker.sh prices` ৫৪৫টা দামই আপডেট করে, ২ মিনিটে (key থাকে `~/.config/dordam/worker.env` এ)। স্থায়ী সমাধানের পথ: বাসার সবসময় চালু যন্ত্রে GitHub self-hosted runner, অথবা দোকানগুলোর কাছে bot এর allowlist চাওয়া।
+
 ## যা বাকি
 
 - [ ] ⛔ ডেটাবেস ([database](11-database.md))।
