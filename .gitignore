@@ -24,3 +24,6 @@ supabase/.branches/
 !.env.example
 docs/PROJECT_NOTES.md
 .commandcode/
+
+# বেক করা ক্যাটালগ (build এ তৈরি হয়)
+public/data/catalog/

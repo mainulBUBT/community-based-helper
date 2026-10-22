@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { toEnPath } from "@/lib/en-meta";
-import { getSiteSettings, listSellers, listSummaries } from "@/services/catalog";
+import { getSiteSettings, listSellers, listSummaries } from "@/services/catalog.server";
 import { HomeView } from "./HomeView";
 
 export async function generateMetadata(): Promise<Metadata> {

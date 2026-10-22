@@ -14,7 +14,7 @@ import { useAdminI18n } from "@/hooks/useI18n";
 import { saveManualOffer } from "@/services/admin/offers";
 import { listPendingReview, resolveReview } from "@/services/admin/review";
 import { listAllSellers, saveSeller } from "@/services/admin/sellers";
-import { loadCatalog } from "@/services/catalog";
+import { loadCatalog } from "@/services/catalog-live";
 import type { ReviewItem } from "@/types/admin";
 import type { Condition, Product, Seller } from "@/types/catalog";
 import { formatTaka } from "@/utils/format";

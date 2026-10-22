@@ -6,7 +6,7 @@ import { ServiceWorker } from "@/components/layout/ServiceWorker";
 import { Toaster } from "@/components/ui/Toaster";
 import { SITE_URL } from "@/config/site";
 import { preferencesInitScript } from "@/lib/preferences";
-import { getSiteSettings } from "@/services/catalog";
+import { getSiteSettings } from "@/services/catalog.server";
 import "./globals.css";
 
 const latin = Inter({ subsets: ["latin"], variable: "--font-latin", display: "swap" });

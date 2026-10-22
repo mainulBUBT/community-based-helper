@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/config/site";
-import { loadCatalog } from "@/services/catalog";
+import { loadCatalog } from "@/services/catalog.server";
 
 export const dynamic = "force-static";
 

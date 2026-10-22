@@ -17,7 +17,7 @@ import { useAsync } from "@/hooks/useAsync";
 import { useAdminI18n } from "@/hooks/useI18n";
 import { showToast } from "@/lib/toast";
 import { loadSiteSettings, saveSiteSettings } from "@/services/admin/settings";
-import { loadCatalog } from "@/services/catalog";
+import { loadCatalog } from "@/services/catalog-live";
 import type { RegionNote, SiteSettings } from "@/types/admin";
 
 async function loadRegions() {

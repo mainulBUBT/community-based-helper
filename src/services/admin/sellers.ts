@@ -1,7 +1,7 @@
 import { sampleSellers } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
 import type { Seller } from "@/types/catalog";
-import { loadCatalog } from "../catalog";
+import { loadCatalog } from "../catalog-live";
 import { fromSeller, toSeller } from "../mappers";
 import { logAction } from "./audit";
 

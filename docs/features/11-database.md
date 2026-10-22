@@ -80,6 +80,7 @@ review_queue: payload এ productId/variantId/offerId (submission, match, anomal
 ## যা বাকি
 
 - [ ] ⛔ প্রজেক্ট খোলা আর ওপরের ধাপ।
+- [x] সাইটের ডেটা এখন build এ বেক হয় (২৩ অক্টোবর ২০২৬): `npm run build`/`dev` এর আগে `scripts/build-data.ts` Supabase থেকে পুরো ক্যাটালগ এনে `public/data/catalog/` এ ভাগে ভাগে লেখে (publishable key, তাই RLS-ছাঁকা ডেটাই যায় — অপ্রকাশিত/মেয়াদোত্তীর্ণ দাম ঢোকে না)। সাইটের পেজ আর ভিজিটর এই JSON পড়ে — Supabase এর ৫ GB egress ভিজিটরের ওপর আর নির্ভর করে না। অ্যাডমিন লাইভ Supabase পড়ে (`catalog-live.ts`), লেখা (page_views, review_queue) আগের মতোই। সাইটে দেখা দাম = শেষ rebuild এর; rebuild এখন প্রতি ৬ ঘণ্টায়, `prices` এর ৩০ মিনিট পরে।
 - [x] `products` এ `images text[]` কলামের নতুন migration (`npm run db:new`) — পণ্যের পেজের গ্যালারির জন্য। ফাইল তৈরি (`20261020181436_product-images.sql`), worker ও ছবি বের করে এতে জমায় (সর্বোচ্চ ৪টা); প্রজেক্ট খুলে push করতে হবে।
 - [ ] ফ্রি tier এ ৭ দিন কাজ না হলে প্রজেক্ট থেমে যায়। worker নিয়মিত চললে সমস্যা নেই।
 - [ ] backup: ফ্রি tier এ নিজে থেকে হয় না, মাঝে মাঝে `supabase db dump`।

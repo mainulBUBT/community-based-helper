@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { SellerView } from "@/app/(site)/seller/[id]/SellerView";
 import { en } from "@/i18n/en";
 import { enMeta } from "@/lib/en-meta";
-import { getSellerDetail, getSiteSettings, loadCatalog } from "@/services/catalog";
+import { getSellerDetail, getSiteSettings, loadCatalog } from "@/services/catalog.server";
 
 interface Props {
   params: Promise<{ id: string }>;

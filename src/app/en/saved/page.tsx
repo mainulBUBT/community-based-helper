@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SavedView } from "@/app/(site)/saved/SavedView";
 import { enMeta } from "@/lib/en-meta";
-import { getSiteSettings } from "@/services/catalog";
+import { getSiteSettings } from "@/services/catalog.server";
 
 export async function generateMetadata(): Promise<Metadata> {
   return enMeta({

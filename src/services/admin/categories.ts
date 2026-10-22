@@ -1,7 +1,7 @@
 import { sampleCategories, sampleProducts } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
 import type { CategoryInfo } from "@/types/catalog";
-import { loadCatalog } from "../catalog";
+import { loadCatalog } from "../catalog-live";
 import { toCategory } from "../mappers";
 import { logAction } from "./audit";
 

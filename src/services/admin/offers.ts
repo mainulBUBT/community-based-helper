@@ -1,7 +1,7 @@
 import { sampleOffers, samplePromos } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
 import type { Condition, Offer, OfferSource, Promo } from "@/types/catalog";
-import { loadCatalog } from "../catalog";
+import { loadCatalog } from "../catalog-live";
 import { toOffer, toPromo } from "../mappers";
 import { logAction } from "./audit";
 

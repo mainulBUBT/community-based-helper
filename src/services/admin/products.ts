@@ -3,7 +3,7 @@ import { supabase } from "@/lib/supabase";
 import type { Product, Variant } from "@/types/catalog";
 import { slugify } from "@/utils/format";
 import { parseVariantLabel } from "@/utils/variants";
-import { listCategories, loadCatalog } from "../catalog";
+import { listCategories, loadCatalog } from "../catalog-live";
 import { logAction } from "./audit";
 
 export interface NewProduct {

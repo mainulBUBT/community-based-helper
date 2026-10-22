@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { ProductView } from "@/app/(site)/product/[slug]/ProductView";
 import { SITE_URL } from "@/config/site";
 import { enMeta } from "@/lib/en-meta";
-import { getProductDetail, getSiteSettings, loadCatalog } from "@/services/catalog";
+import { getProductDetail, getSiteSettings, loadCatalog } from "@/services/catalog.server";
 import { formatTaka } from "@/utils/format";
 
 interface Props {

@@ -15,7 +15,10 @@
     "worker:check": "tsx workers/check.ts",
     "worker:ai-check": "AI_READ_VERBOSE=1 node --env-file-if-exists=.env.local --import tsx workers/ai-check.ts",
     "catalog:specs": "node scripts/fetch-specs.mjs",
-    "catalog:build": "node scripts/import-catalog.mjs"
+    "catalog:build": "node scripts/import-catalog.mjs",
+    "build:data": "node --env-file-if-exists=.env.local --import tsx scripts/build-data.ts",
+    "prebuild": "npm run build:data",
+    "predev": "npm run build:data"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.118.0",

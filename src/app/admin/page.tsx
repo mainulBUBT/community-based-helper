@@ -11,7 +11,7 @@ import { listJobs } from "@/services/admin/jobs";
 import { listPendingReview } from "@/services/admin/review";
 import { listAllSellers } from "@/services/admin/sellers";
 import { loadPrivateSettings } from "@/services/admin/settings";
-import { listSummaries } from "@/services/catalog";
+import { listSummaries } from "@/services/catalog-live";
 import { loadDayStats } from "@/services/admin/stats";
 
 async function loadDashboard() {

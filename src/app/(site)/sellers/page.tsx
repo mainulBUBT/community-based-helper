@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { toEnPath } from "@/lib/en-meta";
-import { listSellers } from "@/services/catalog";
+import { listSellers } from "@/services/catalog.server";
 import { SellersView } from "./SellersView";
 
 export const metadata: Metadata = {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SELLER_KIND_LABEL } from "@/config/site";
 import { toEnPath } from "@/lib/en-meta";
-import { getSellerDetail, loadCatalog } from "@/services/catalog";
+import { getSellerDetail, loadCatalog } from "@/services/catalog.server";
 import { SellerView } from "./SellerView";
 
 interface Props {

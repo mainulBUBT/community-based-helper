@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SITE_URL } from "@/config/site";
 import { toEnPath } from "@/lib/en-meta";
-import { getProductDetail, getSiteSettings, loadCatalog } from "@/services/catalog";
+import { getProductDetail, getSiteSettings, loadCatalog } from "@/services/catalog.server";
 import { formatTaka } from "@/utils/format";
 import { ProductView } from "./ProductView";
 

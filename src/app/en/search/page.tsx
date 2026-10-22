@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { SearchView } from "@/app/(site)/search/SearchView";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { enMeta } from "@/lib/en-meta";
-import { getSiteSettings } from "@/services/catalog";
+import { getSiteSettings } from "@/services/catalog.server";
 
 export async function generateMetadata(): Promise<Metadata> {
   return enMeta({

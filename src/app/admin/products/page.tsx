@@ -16,7 +16,7 @@ import { showToast } from "@/lib/toast";
 import { saveManualOffer } from "@/services/admin/offers";
 import { createProduct } from "@/services/admin/products";
 import { listAllSellers } from "@/services/admin/sellers";
-import { listSummaries } from "@/services/catalog";
+import { listSummaries } from "@/services/catalog-live";
 import type { Condition, VariantAttributes } from "@/types/catalog";
 import { matchesQuery } from "@/utils/catalog";
 import { formatTaka } from "@/utils/format";

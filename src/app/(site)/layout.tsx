@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { AppShell } from "@/components/layout/AppShell";
-import { getSiteSettings, listCategories } from "@/services/catalog";
+import { getSiteSettings, listCategories } from "@/services/catalog.server";
 
 export default async function SiteLayout({ children }: { children: ReactNode }) {
   const [settings, categories] = await Promise.all([getSiteSettings(), listCategories()]);

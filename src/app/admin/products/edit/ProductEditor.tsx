@@ -19,7 +19,7 @@ import { showToast } from "@/lib/toast";
 import { deleteOffer, listOffersFor, updateOffer } from "@/services/admin/offers";
 import { deleteProduct, deleteVariant, saveVariant, updateProduct } from "@/services/admin/products";
 import { listAllSellers } from "@/services/admin/sellers";
-import { loadCatalog } from "@/services/catalog";
+import { loadCatalog } from "@/services/catalog-live";
 import type { Axis, Offer, Product, Variant, VariantAttributes } from "@/types/catalog";
 import { telLink } from "@/utils/format";
 import { specsToText, textToSpecs } from "@/utils/specs";
