@@ -76,7 +76,9 @@ async function fromSample(): Promise<Raw> {
 async function main() {
   const url = process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.SUPABASE_PUBLISHABLE_KEY ?? process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
-  const raw = url && key ? await fromSupabase(createClient(url, key, { auth: { persistSession: false } })) : await fromSample();
+  const live = Boolean(url && key);
+  if (!live) console.warn("⚠️  Supabase যুক্ত নেই — নমুনা ডেটায় বেক হচ্ছে, লাইভ নয়! (.env.local এ NEXT_PUBLIC_SUPABASE_URL আর PUBLISHABLE_KEY দিন)");
+  const raw = live ? await fromSupabase(createClient(url!, key!, { auth: { persistSession: false } })) : await fromSample();
 
   // ভ্যারিয়েন্ট আর অফারকে পণ্যের ভাগ অনুযায়ী ফাইলে ভাগ করা — বড় ক্যাটালগে এক ফাইল হালকা থাকে
   const variantCategory = new Map<string, string>();
@@ -126,7 +128,7 @@ async function main() {
     await writeFile(path.join(OUT, `${slug}.json`), JSON.stringify(data));
   }
   const offers = raw.offers.length;
-  console.log(`বেক হলো: ${raw.products.length} পণ্য, ${offers} দাম, ${chunks.size} ভাগ → public/data/catalog/`);
+  console.log(`${live ? "লাইভ Supabase" : "নমুনা ডেটা"} থেকে বেক হলো: ${raw.products.length} পণ্য, ${offers} দাম, ${chunks.size} ভাগ → public/data/catalog/`);
 }
 
 main().catch((error) => {
