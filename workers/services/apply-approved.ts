@@ -9,7 +9,7 @@ export async function applyApproved(): Promise<number> {
     const price = toTaka(kind === "anomaly" ? payload.to : payload.price);
     const oldPrice = toTaka(payload.oldPrice);
     if (price && kind === "anomaly" && payload.offerId) {
-      await must(db().from("offers").update({ price, old_price: oldPrice, checked_at: new Date().toISOString() }).eq("id", payload.offerId));
+      await must(db().from("offers").update({ price, old_price: oldPrice, checked_at: new Date().toISOString(), published: true }).eq("id", payload.offerId));
     } else if (price && payload.variantId && payload.sellerId) {
       await upsertOffer(
         { variantId: payload.variantId, sellerId: payload.sellerId, condition: payload.condition || "official", url: payload.url },

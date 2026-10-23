@@ -55,7 +55,8 @@ export async function refreshOffer(offer: TrackedOffer, found: PageOffer): Promi
         reason: `দাম ${bn(Math.abs(change))}% ${change > 0 ? "বেড়েছে" : "কমেছে"}, একবারে এতটা বদল সাধারণত হয় না`,
       });
     }
-    await must(db().from("offers").update(checked).eq("id", offer.id));
+    // এতটা লাফানো দাম সাইটে দেখাবে না — যাচাই শেষে অনুমোদন/প্রত্যাখ্যান অনুযায়ী ফিরবে
+    await must(db().from("offers").update({ ...checked, published: false }).eq("id", offer.id));
     return "anomaly";
   }
   await must(

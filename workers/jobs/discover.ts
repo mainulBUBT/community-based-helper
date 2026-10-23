@@ -60,7 +60,7 @@ async function save(shop: Shop, spot: Spot) {
   if (!claim(shop, spot)) return;
   // অফিসিয়াল দাম না থাকলে অন্য দোকানের দামই ভরসা — দূরের অংক (কটন-বাডসের ৳৩২০ হারের) সরাসরি ঢুকতে দেওয়া হয় না
   const known = shop.prices.get(spot.variant.id);
-  if (known && known.length >= 2) {
+  if (known && known.length >= 1) {
     const mid = median(known);
     if (spot.offer.price < mid * PRICE_RANGE[0] || spot.offer.price > mid * PRICE_RANGE[1]) {
       await review(shop, spot, "অন্য দোকানের দামের সাথে অনেক দূরে — ভুল পণ্য বা ভুল পড়া হতে পারে", 60);
