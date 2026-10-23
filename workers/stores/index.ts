@@ -262,6 +262,54 @@ export const stores: Store[] = [
     condition: "unofficial",
     variants: wooVariants,
   }),
+  sitemapStore({
+    id: "mcsolution",
+    name: "MC Solution",
+    origin: "https://mcsolution.com.bd",
+    sample: "https://mcsolution.com.bd/vivobook-pro-15-oled-n6506mv/",
+    sitemap: "https://mcsolution.com.bd/sitemap_index.xml",
+    path: "/", // পণ্যের slug মূল ডোমেনেই — ফিল্টার আসলে sitemap ফাইলই (product-sitemap)
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "istockbd",
+    name: "iStockBD",
+    origin: "https://istockbd.com",
+    sample: "https://istockbd.com/products/new-apple-ipad-pro-2020-11-2020",
+    sitemap: "https://istockbd.com/sitemap.xml",
+    path: "/products/",
+    condition: "unofficial",
+  }),
+  sitemapStore({
+    id: "pcbstore",
+    name: "PCB Store",
+    origin: "https://pcbstore.com.bd",
+    sample: "https://pcbstore.com.bd/product/pcb-blaak-v2-mouse-pad",
+    sitemap: "https://pcbstore.com.bd/sitemap.xml",
+    path: "/product/",
+    condition: "unofficial",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "custommacbd",
+    name: "CustomMacBD",
+    origin: "https://custommacbd.com",
+    sample: "https://custommacbd.com/products/magic-mouse-2",
+    sitemap: "https://custommacbd.com/sitemap.xml",
+    path: "/products/",
+    condition: "unofficial",
+  }),
+  sitemapStore({
+    id: "maccity",
+    name: "MacCity",
+    origin: "https://maccity.com.bd",
+    sample: "https://maccity.com.bd/apple-magic-keyboard-for-ipad-pro-11-inch-m4/",
+    sitemap: "https://maccity.com.bd/sitemap.xml",
+    path: "/", // এখানেও slug মূল ডোমেনে
+    condition: "unofficial",
+    variants: wooVariants,
+  }),
 ];
 
 // তালিকায় না থাকা দোকানের পুরনো দামও বাদ যায় না: JSON-LD/itemprop/og দিয়ে চেষ্টা
