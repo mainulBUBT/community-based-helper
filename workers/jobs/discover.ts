@@ -131,6 +131,7 @@ export async function discover(): Promise<string> {
   const outOfTime = deadline(40);
   const notes: string[] = [];
 
+  const STORE_TIMEOUT_MS = 8 * 60 * 1000;
   await Promise.all(
     stores.map(async (store) => {
       const seller = sellers.get(store.id);
@@ -140,28 +141,41 @@ export async function discover(): Promise<string> {
       const whole = !knownHosts.has(host(store.origin));
       const storeTargets = whole ? catalog : targets;
       const storeWanted = whole ? everything : wanted;
-      try {
-        const listings = (await store.discover(storeTargets)).flatMap((listing) => {
-          const products = reviewed.has(listing.url) ? [] : findProducts(listing.title, catalog);
-          const done = known.has(listing.url) && products.every((p) => !fresh.has(p.id));
-          return products.some((p) => storeWanted.has(p.id)) && !done ? [{ listing, products }] : [];
-        });
-        await pool(
-          listings,
-          2,
-          async ({ listing, products }) => {
-            try {
-              await handle(shop, listing, products, (p) => storeWanted.has(p.id));
-            } catch (error) {
-              if (error instanceof StoreBlocked) throw error;
-              if (!(error instanceof NotFound) && !(error instanceof Disallowed)) tally.failed++;
-            }
-          },
-          outOfTime,
-        );
-      } catch (error) {
-        if (!(error instanceof StoreBlocked)) notes.push(`${store.name}: ${message(error)}`);
-      }
+      const runStore = async () => {
+        try {
+          const listings = (await store.discover(storeTargets)).flatMap((listing) => {
+            const products = reviewed.has(listing.url) ? [] : findProducts(listing.title, catalog);
+            const done = known.has(listing.url) && products.every((p) => !fresh.has(p.id));
+            return products.some((p) => storeWanted.has(p.id)) && !done ? [{ listing, products }] : [];
+          });
+          await pool(
+            listings,
+            2,
+            async ({ listing, products }) => {
+              try {
+                await handle(shop, listing, products, (p) => storeWanted.has(p.id));
+              } catch (error) {
+                if (error instanceof StoreBlocked) throw error;
+                if (!(error instanceof NotFound) && !(error instanceof Disallowed)) tally.failed++;
+              }
+            },
+            outOfTime,
+          );
+        } catch (error) {
+          if (error instanceof StoreBlocked) notes.push(`${store.name}: blocked (${message(error)})`);
+          else notes.push(`${store.name}: ${message(error)}`);
+        }
+      };
+      // একটা দোকান আটকে গেলেও বাকিরা চলবে — per-store timeout
+      await Promise.race([
+        runStore(),
+        new Promise<void>((resolve) => {
+          setTimeout(() => {
+            notes.push(`${store.name}: timeout ${STORE_TIMEOUT_MS / 60000}m, skipped`);
+            resolve();
+          }, STORE_TIMEOUT_MS);
+        }),
+      ]);
     }),
   );
 

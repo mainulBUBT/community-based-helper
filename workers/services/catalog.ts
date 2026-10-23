@@ -10,6 +10,7 @@ interface Row {
   id: string;
   name: string;
   brand: string;
+  category: string | null;
   discover_requested_at: string;
   discovered_at: string | null;
   variants: { id: string; label: string; position: number; official_price: number | null }[];
@@ -17,12 +18,13 @@ interface Row {
 
 export async function loadCatalog(): Promise<CatalogEntry[]> {
   const rows = await all<Row>((from, to) =>
-    db().from("products").select("id, name, brand, discover_requested_at, discovered_at, variants(id, label, position, official_price)").order("id").range(from, to),
+    db().from("products").select("id, name, brand, category, discover_requested_at, discovered_at, variants(id, label, position, official_price)").order("id").range(from, to),
   );
   return rows.map((p) => ({
     id: p.id,
     name: p.name,
     brand: p.brand,
+    category: p.category,
     pending: !p.discovered_at || p.discovered_at < p.discover_requested_at,
     variants: [...p.variants].sort((a, b) => a.position - b.position).map(({ id, label, official_price }) => ({ id, label, officialPrice: official_price })),
   }));

@@ -75,7 +75,9 @@ function fromJsonLd(html: string): Quote | null {
 }
 
 function fromItemprop(html: string): Quote | null {
-  const price = toTaka(metaContent(html, "price") ?? /itemprop=["']price["'][^>]*>([^<]+)/i.exec(html)?.[1]);
+  const priceTag = /itemprop=["']price["'][^>]*/i.exec(html)?.[0];
+  const content = priceTag && /content=["']([^"']+)/i.exec(priceTag)?.[1];
+  const price = toTaka(content ?? metaContent(html, "price") ?? /itemprop=["']price["'][^>]*>([^<]+)/i.exec(html)?.[1]);
   if (!price) return null;
   const availability = /itemprop=["']availability["'][^>]*(?:href|content)=["']([^"']+)/i.exec(html)?.[1];
   return { price, oldPrice: null, inStock: stock(availability), title: null, via: "itemprop" };
