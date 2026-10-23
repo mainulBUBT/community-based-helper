@@ -17,19 +17,50 @@
 | MacZen BD | sitemap (`/products/<ক্যাটাগরি>/<পণ্য>`) | Next.js payload: iPhone এ `combinationPrices` (sim + storage), Mac এ `specPriceMap` (প্রসেসর/RAM + স্টোরেজ), নয়তো এক দাম; PRE_ORDER স্টক অজানা, CALL_FOR_PRICE বাদ | ✅ |
 | Motion View | sitemap | JSON-LD | ✅ |
 | Gadget Breeze | WooCommerce sitemap | WooCommerce | ✅ |
+| Shajgoj | product sitemap (`shop.shajgoj.com`) | JSON-LD | ✅ |
+| Arogga | product sitemap | JSON-LD | ✅ |
+| Chaldal | manual product links | `itemprop="price"` / availability | ✅ |
+| স্কিনকেয়ারের বাকি দোকান | manual product links | JSON-LD (WooCommerce/Next.js) | ✅ |
 | Pickaboo | `/search-result/<নাম>` HTML | | ⛔ worker কে 403 দেয় |
 | Telegram এর দোকান | দোকান নিজে পাঠায় | ⬜ [telegram](15-telegram-bot.md) |
 | ক্রেতা | "দাম জানান" | 🟡 [price reports](05-price-reports.md) |
 
 ## আসল ডেটা (২০২৬-১০-২১ এ জোগাড়)
 
-৫৩টা পণ্য, ১১৫টা ভার্সন, ১০টা দোকান থেকে ৫৪৫টা দাম, সব পাতায় গিয়ে নিজে দেখা (কোনো দাম আন্দাজ করা নয়)। প্রতিটা পণ্য অন্তত ৩টা দোকানে, শুধু MacBook Pro 14" M5 Max আর Redmi Watch 6 Active ২টায় (নতুন বা দামি, আর কেউ দাম দেয়নি)।
+৫৩টা টেক পণ্য, ১১৫টা ভার্সন, ১০টা দোকান থেকে ৫৪৫টা দাম, সব পাতায় গিয়ে নিজে দেখা (কোনো দাম আন্দাজ করা নয়)। প্রতিটা পণ্য অন্তত ৩টা দোকানে, শুধু MacBook Pro 14" M5 Max আর Redmi Watch 6 Active ২টায় (নতুন বা দামি, আর কেউ দাম দেয়নি)। পরে চার্জার/ফ্যান/মনিটর/পাওয়ার ব্যাংক আর স্কিনকেয়ার যোগ হয়ে ডেটাবেসে এখন ৯৬টা পণ্য, ৯১১টা দাম, ১৩টা ক্যাটাগরি।
 
 - মোবাইল: Samsung, Xiaomi, Vivo, Realme, Oppo (StatCounter বাংলাদেশ, আগস্ট ২০২৬), প্রতিটার ২-৩টা চলতি মডেল; আর Apple: iPhone 18 Pro/Pro Max, iPhone Duo, 17 Pro/Pro Max, Air, 17, 17e, 16।
 - ট্যাবলেট: iPad 11" (A16), iPad mini (A17 Pro), iPad Air 11"/13" M4, iPad Pro 11"/13" M5 (স্টোরেজ আর Wi-Fi/Cellular ধরে ভার্সন)।
 - Mac: MacBook Neo, Air 13"/15" M5, Pro 14"/16" (M5, M5 Pro, M5 Max), iMac M4, Mac mini (M6, M5 Pro), Mac Studio M5 Max।
 - স্মার্টওয়াচ: Apple Watch Series 11, Galaxy Watch8, Amazfit Active 2 Premium, Huawei Watch Fit 4, Redmi Watch 6 Active।
 - অডিও: AirPods Pro 3, Galaxy Buds3 Pro, Sony WF-1000XM6, Soundcore P40i, CMF Buds 2 (ইয়ারবাড); Sony WH-1000XM6, WH-CH720N, JBL Tune 770NC, Soundcore Space One (হেডফোন)।
+
+### স্কিনকেয়ার (২৩ অক্টোবর ২০২৬)
+
+১২টা পণ্য, ১টা করে সাইজ ভার্সন, ১৬টা দোকান থেকে ৪৭টা দাম। নাম, সাইজ, দাম আর স্টক প্রতিটা পাতায় গিয়ে দেখা হয়েছে:
+
+- ক্লিনজার: Simple Refreshing Facial Wash 150ml, CeraVe Hydrating Cleanser 236ml
+- ময়েশ্চারাইজার: CeraVe Moisturizing Cream 56ml, Deconstruct Oil-Free Moisturizer 50g
+- সিরাম/এসেন্স: The Ordinary Niacinamide 10% + Zinc 1% 30ml, COSRX Advanced Snail 96 Mucin Power Essence 100ml, Dot & Key 10% Vitamin C + E + 5% Niacinamide 30ml, The Derma Co 10% Niacinamide 30ml
+- সানস্ক্রিন: Beauty of Joseon Relief Sun Rice + Probiotics SPF50+ PA++++ 50ml, Dot & Key Watermelon Cooling Sunscreen SPF50+ PA++++ 80g
+- হেয়ার সিরাম: Streax Vitariche Gloss 115ml, Livon Hair Serum 100ml
+
+| দোকান | সাইট | কেন |
+|---|---|---|
+| Shajgoj | shop.shajgoj.com | সবচেয়ে বড় কসমেটিক্স ক্যাটালগ, JSON-LD-এ দাম/স্টক ঠিক; product sitemap আছে |
+| Arogga | arogga.com | ক্লিনজার/সিরাম/স্কিনকেয়ারে প্রতিযোগিতামূলক দাম, JSON-LD |
+| Chaldal | chaldal.com | CeraVe-র দাম ভালো, কিন্তু JSON-LD নেই; `itemprop` থেকে দাম পড়া হয়। CeraVe 236ml পেজ এখন OutOfStock |
+| BanglaShoppers | banglashoppers.com | Livon/Streax-এ ভালো দাম |
+| MedEasy, EmartWay, Beauty Line, Emart, Aromyeo, Korean Care, Skincare Shop, Cosmetics Corner, IndianMartBD, Beprincess, Color World, Glowella | — | ব্র্যান্ডভেদে কম দাম; ম্যানুয়াল লিংক, `prices` generic JSON-LD দিয়ে আপডেট করে |
+
+সিদ্ধান্ত:
+
+- Beauty of Joseon-এ classic Rice + Probiotics 50ml ব্যবহার করা হয়েছে। Shajgoj/Arogga-তে classic 50ml নেই (10ml বা Rice + Niacinamide 50ml আছে), তাই Beauty Line, Emart, Aromyeo, Korean Care থেকে দাম।
+- CeraVe Cream-এ 56ml ভার্সন, কিন্তু Arogga-র 57g পেজকে একই ভার্সনে ধরা হয়েছে (56ml ≈ 57g)।
+- Streax-এর Shajgoj URL-এ `100ml` লেখা থাকলেও পেজের সাইজ 115ml, তাই 115ml ভার্সনে রাখা হয়েছে।
+- ePharma বাদ: JSON-LD-এ MRP/লিস্ট প্রাইস থাকে, discounted দাম নয়; worker ভুল দাম বসাতে পারে।
+- Rokomari বাদ: robots.txt search engine ছাড়া অন্য crawler-কে admin@rokomari.com-এ অনুমতি চাইতে বলে; অনুমতি ছাড়া যোগ করা হয়নি।
+- Beauty Hub/Shajrup বাদ: নির্ভরযোগ্য JSON-LD/দামের markup নেই বা JS-rendered।
 
 কোন দোকান কীসের জন্য ভালো:
 

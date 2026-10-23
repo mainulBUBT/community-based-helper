@@ -6,7 +6,7 @@ import { join } from "node:path";
 
 const DIR = "data/catalog";
 const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color", "gpu", "cpu", "resolution", "battery", "capacity"];
-const DEFAULT_CATEGORY = { mobile: "mobile", watch: "watch" };
+const DEFAULT_CATEGORY = { mobile: "mobile", watch: "watch", skincare: "skincare" };
 
 const slugify = (text) =>
   text

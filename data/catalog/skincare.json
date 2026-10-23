@@ -1,0 +1,778 @@
+{
+  "category": "skincare",
+  "sites": [
+    {
+      "name": "Shajgoj",
+      "website": "https://shop.shajgoj.com",
+      "note": "Authorised beauty retailer with brand-wise skincare catalogue; prices are server-rendered and the page shows the current selling price. Product pages live under shop.shajgoj.com/product/."
+    },
+    {
+      "name": "Arogga",
+      "website": "https://www.arogga.com",
+      "note": "Online pharmacy and beauty marketplace; product pages carry JSON-LD price and stock, and usually a higher list price to show the discount."
+    },
+    {
+      "name": "BanglaShoppers",
+      "website": "https://www.banglashoppers.com",
+      "note": "Magento store with regular/special prices on the product page; useful for imported CeraVe, Simple and Dot & Key stock."
+    },
+    {
+      "name": "MedEasy",
+      "website": "https://medeasy.health",
+      "note": "Health and personal-care marketplace; shows MRP and best price, JSON-LD stock. Delivery inside and outside Dhaka."
+    },
+    {
+      "name": "Chaldal",
+      "website": "https://chaldal.com",
+      "note": "Grocery and personal-care delivery; product price is in the page's itemprop/embedded data rather than JSON-LD."
+    },
+    {
+      "name": "EmartWay Skincare",
+      "website": "https://www.emartwayskincare.com.bd",
+      "note": "Skincare-only shop with current price and stock in page data; strong on CeraVe trial sizes."
+    },
+    {
+      "name": "Beauty Line",
+      "website": "https://beautyline.com.bd",
+      "note": "Korean and imported skincare shop; product page lists the selling price and the struck-through list price."
+    },
+    {
+      "name": "Emart",
+      "website": "https://e-mart.com.bd",
+      "note": "Imported skincare shop; WooCommerce product pages with JSON-LD price and stock."
+    },
+    {
+      "name": "Aromyeo",
+      "website": "https://aromyeo.com",
+      "note": "K-beauty shop; product pages include current price, old price and stock in JSON-LD."
+    },
+    {
+      "name": "Korean Care BD",
+      "website": "https://kcarebd.com",
+      "note": "Korean skincare shop; WooCommerce product pages with JSON-LD price and stock."
+    },
+    {
+      "name": "Skincare Shop",
+      "website": "https://skincareshop.com.bd",
+      "note": "Imported haircare and skincare shop; WooCommerce product pages with regular/sale prices."
+    },
+    {
+      "name": "Cosmetics Corner",
+      "website": "https://www.cosmeticscorner.com.bd",
+      "note": "Cosmetics shop with WooCommerce product pages and regular/sale prices."
+    },
+    {
+      "name": "IndianMartBD",
+      "website": "https://indianmartbd.com",
+      "note": "Indian imported skincare shop; product page shows the current price and old price."
+    },
+    {
+      "name": "Beprincess BD",
+      "website": "https://beprincessbd.com",
+      "note": "Skincare and cosmetics shop; WooCommerce product pages with current and old prices."
+    },
+    {
+      "name": "Color World",
+      "website": "https://colorworld.com.bd",
+      "note": "Beauty shop in Bashundhara City; WooCommerce product pages with current and old prices."
+    },
+    {
+      "name": "Glowella",
+      "website": "https://glowellabd.com",
+      "note": "Skincare shop; WooCommerce product pages with current and old prices."
+    }
+  ],
+  "products": [
+    {
+      "brand": "Simple",
+      "name": "Refreshing Facial Wash 150ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "150ml",
+          "attributes": {
+            "capacity": "150ml"
+          },
+          "officialPrice": 950
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2025/04/simple-kind-to-skin-refreshing-facial-wash-gel-150-ml-poland-2.jpg",
+        "https://bk.shajgoj.com/storage/2025/04/simple-kind-to-skin-refreshing-facial-wash-gel-150-ml-poland-1.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "150ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/simple-kind-to-skin-refreshing-facial-wash-gel-150-ml-poland",
+          "price": 699,
+          "oldPrice": 950,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "150ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/42155/simple-kind-to-skin-refreshing-facial-wash-with-vitamin-b5-e-150ml-official",
+          "price": 760,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "150ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/simple-refreshing-facial-wash-gel-150ml.html",
+          "price": 599,
+          "oldPrice": 950,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "150ml",
+          "site": "MedEasy",
+          "url": "https://medeasy.health/medicines/simple-refreshing-facial-wash-150ml",
+          "price": 748,
+          "oldPrice": 1100,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "brand": "CeraVe",
+      "name": "Hydrating Cleanser 236ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "236ml",
+          "attributes": {
+            "capacity": "236ml"
+          },
+          "officialPrice": 3350
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2019/12/CERAVEHYDRATINGCLEANSER236ML.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "236ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/cerave-hydrating-cleanser-for-normal-to-dry-skin",
+          "price": 2710,
+          "oldPrice": 3900,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "236ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/51397/cerave-hydrating-cleanser-for-normal-to-dry-skin-236ml",
+          "price": 2948,
+          "oldPrice": 3350,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "236ml",
+          "site": "Chaldal",
+          "url": "https://chaldal.com/cerave-hydrating-cleanser-236-ml",
+          "price": 2519,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "236ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/cerave-hydrating-cleanser-for-normal-to-dry-skin-236ml.html",
+          "price": 2150,
+          "oldPrice": 2650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "brand": "CeraVe",
+      "name": "Moisturizing Cream 56ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "56ml",
+          "attributes": {
+            "capacity": "56ml"
+          },
+          "officialPrice": 1550
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2025/11/cerave-moisturizing-cream-for-normal-to-dry-skin-1.jpg",
+        "https://bk.shajgoj.com/storage/2021/11/Cerave-Moisturizing-Cream-For-Normal-To-Dry-Skin2.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "56ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/cerave-moisturizing-cream-for-normal-to-dry-skin-2",
+          "price": 1249,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "56ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/95670/cerave-moisturizing-cream-for-normal-to-dry-skin-57g",
+          "price": 1755,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "56ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/cerave-moisturizing-cream-for-normal-to-dry-skin-56ml.html",
+          "price": 1350,
+          "oldPrice": 1550,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "56ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/cerave-moisturizing-cream-56ml",
+          "price": 1152,
+          "oldPrice": 1280,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "brand": "The Ordinary",
+      "name": "Niacinamide 10% + Zinc 1% Serum 30ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "30ml",
+          "attributes": {
+            "capacity": "30ml"
+          },
+          "officialPrice": 1409
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2026/05/4559.jpg",
+        "https://bk.shajgoj.com/storage/2025/05/3592.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "30ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/the-ordinary-niacinamide-10-zinc1",
+          "price": 1099,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "30ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/41485/the-ordinary-niacinamide-10-zinc1-serum-30ml",
+          "price": 1090,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "30ml",
+          "site": "MedEasy",
+          "url": "https://medeasy.health/medicines/the-ordinary-niacinamide-10-zinc-1-30ml-11",
+          "price": 1220,
+          "oldPrice": 2000,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "brand": "COSRX",
+      "name": "Advanced Snail 96 Mucin Power Essence 100ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "100ml",
+          "attributes": {
+            "capacity": "100ml"
+          },
+          "officialPrice": 1900
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2019/01/cosrx-advanced-snail96-mucin-power-essence-800.jpg",
+        "https://bk.shajgoj.com/storage/2019/01/Cosrx-Advanced-Snail-96-Mucin-Power-Essence2.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "100ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/cosrx-advanced-snail-96-mucin-power-essence",
+          "price": 1949,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "100ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/52036/cosrx-advanced-snail-96-mucin-power-essence-100ml",
+          "price": 1850,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "100ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/cosrx-advanced-snail-96-mucin-power-essence-100ml",
+          "price": 1450,
+          "oldPrice": 1900,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "brand": "Beauty of Joseon",
+      "name": "Relief Sun Rice + Probiotics SPF50+ PA++++ 50ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "50ml",
+          "attributes": {
+            "capacity": "50ml"
+          },
+          "officialPrice": 1700
+        }
+      ],
+      "images": [
+        "https://beautyline.com.bd/legacy-uploads/2025/01/Beauty-of-Joseon-Sunscreen-Rice-Probiotics-SPF-50-PA-50ml-1.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "50ml",
+          "site": "Beauty Line",
+          "url": "https://beautyline.com.bd/product/beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml",
+          "price": 1250,
+          "oldPrice": 1700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "50ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/beauty-of-joseon-sunscreen-rice-probiotics-spf-50-50ml",
+          "price": 1390,
+          "oldPrice": 1600,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "50ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/beauty-of-joseon-relief-sun-rice-probiotics-50ml",
+          "price": 1550,
+          "oldPrice": 1700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "50ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml/",
+          "price": 1500,
+          "oldPrice": 1680,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "brand": "Streax",
+      "name": "Vitariche Gloss Hair Serum 115ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "115ml",
+          "attributes": {
+            "capacity": "115ml"
+          },
+          "officialPrice": null
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2021/06/Streax-Vitariche-Gloss-Hair-Serum-100ml.jpg",
+        "https://bk.shajgoj.com/storage/2021/06/Streax-Vitariche-Gloss-Hair-Serum-100ml2.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "115ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/streax-vitariche-gloss-hair-serum-100ml",
+          "price": 325,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "115ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/53399/streax-professional-vitariche-gloss-hair-serum-115ml",
+          "price": 344,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "115ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/streax-vitariche-gloss-hair-serum-115ml/",
+          "price": 580,
+          "oldPrice": 700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "115ml",
+          "site": "Cosmetics Corner",
+          "url": "https://www.cosmeticscorner.com.bd/streax-vitariche-gloss-hair-serum-115ml/",
+          "price": 490,
+          "oldPrice": 580,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "brand": "Livon",
+      "name": "Hair Serum 100ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "100ml",
+          "attributes": {
+            "capacity": "100ml"
+          },
+          "officialPrice": 540
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2026/09/livon-anti-frizz-serum-100ml.jpg",
+        "https://bk.shajgoj.com/storage/2019/03/Livon-Serum-Hair-Essentials-Vitamin-E-2.png"
+      ],
+      "offers": [
+        {
+          "variant": "100ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/livon-anti-frizz-serum-100ml",
+          "price": 299,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "100ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/67736/livon-hair-serum-100ml",
+          "price": 389,
+          "oldPrice": 540,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "100ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/livon-anti-frizz-serum-for-all-hair-types-100ml/",
+          "price": 590,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "100ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/livon-anti-frizz-serum-for-all-hair-types-100-ml.html",
+          "price": 620,
+          "oldPrice": 750,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "brand": "Dot & Key",
+      "name": "10% Vitamin C + E + 5% Niacinamide Serum 30ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "30ml",
+          "attributes": {
+            "capacity": "30ml"
+          },
+          "officialPrice": 1300
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2024/08/dot-key-10-vitamin-ce-5-niacinamide-serum7.jpg",
+        "https://bk.shajgoj.com/storage/2024/08/dot-key-10-vitamin-ce-5-niacinamide-serum.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "30ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/dot-key-10-vitamin-ce-5-niacinamide-serum",
+          "price": 1225,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "30ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/73189/dot-and-key-10-vitamin-c-e-super-bright-face-serum-with-5-niacinamide-with-blood-orange-pumpkin-30ml",
+          "price": 1050,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "30ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/dot-key-vitamin-c-e-face-serum-30ml",
+          "price": 1100,
+          "oldPrice": 1300,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "30ml",
+          "site": "IndianMartBD",
+          "url": "https://indianmartbd.com/product/dot-key-vitamin-c-brightening-serum-bangladesh/",
+          "price": 800,
+          "oldPrice": 1100,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "30ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/dot-key-10-vitamin-c-e-super-bright-face-serum-30ml.html",
+          "price": 1450,
+          "oldPrice": 1750,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "brand": "The Derma Co",
+      "name": "10% Niacinamide Face Serum for Acne Marks 30ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "30ml",
+          "attributes": {
+            "capacity": "30ml"
+          },
+          "officialPrice": 1350
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2025/08/the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml-1.jpg",
+        "https://bk.shajgoj.com/storage/2025/08/the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml-2.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "30ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/the-derma-co-10-niacinamide-face-serum-for-acne-marks",
+          "price": 1399,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "30ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/52420/the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml",
+          "price": 995,
+          "oldPrice": 1350,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "30ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml",
+          "price": 1105,
+          "oldPrice": 1300,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "30ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/the-derma-co-10-niacinamide-serum-30ml/",
+          "price": 1190,
+          "oldPrice": 1400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "brand": "Deconstruct",
+      "name": "Oil-Free Moisturizer 50g",
+      "popular": true,
+      "variants": [
+        {
+          "label": "50g",
+          "attributes": {
+            "capacity": "50g"
+          },
+          "officialPrice": 1300
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2025/12/deconstruct-oil-free-moisturizer-non-comedogenic-3-nmf-complex-02-panthenol-6.jpg",
+        "https://bk.shajgoj.com/storage/2025/12/deconstruct-oil-free-moisturizer-non-comedogenic-3-nmf-complex-02-panthenol-5.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "50g",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/deconstruct-oil-free-moisturizer-non-comedogenic-3-nmf-complex-02-panthenol",
+          "price": 799,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "50g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/84864/deconstruct-oil-free-moisturizer-for-oily-skin-3-nmf-complex-0-2-panthenol-50g",
+          "price": 725,
+          "oldPrice": 1300,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "50g",
+          "site": "MedEasy",
+          "url": "https://medeasy.health/medicines/deconstruct-oil-free-moisturizer-50g",
+          "price": 690,
+          "oldPrice": 1200,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "50g",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/deconstruct-oil-free-moisturizer-50g/",
+          "price": 650,
+          "oldPrice": 950,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "brand": "Dot & Key",
+      "name": "Watermelon Cooling Sunscreen SPF50+ PA++++ 80g",
+      "popular": true,
+      "variants": [
+        {
+          "label": "80g",
+          "attributes": {
+            "capacity": "80g"
+          },
+          "officialPrice": 1500
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2026/04/31955-6.jpg",
+        "https://bk.shajgoj.com/storage/2026/04/31955-2.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "80g",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/dot-key-watermelon-cooling-sunscreen-spf-50-pa",
+          "price": 999,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "80g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/66237/dot-key-watermelon-cooling-sunscreen-spf-50-pa-with-hyaluronic-acid-80g",
+          "price": 1080,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "80g",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/dot-key-watermelon-cooling-sunscreen-spf-50-pa-80gm/",
+          "price": 999,
+          "oldPrice": 1500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "80g",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/dot-key-watermelon-cooling-sunscreen-spf-50-pa-80gm/",
+          "price": 950,
+          "oldPrice": 1250,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-23"
+        }
+      ]
+    }
+  ]
+}
