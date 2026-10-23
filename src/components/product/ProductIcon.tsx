@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import { Laptop, Smartphone, Tablet, Watch } from "lucide-react";
+import { Laptop, Smartphone, Sparkles, Tablet, Watch } from "lucide-react";
 import type { Product } from "@/types/catalog";
 
-const ICONS = { mobile: Smartphone, laptop: Laptop, tablet: Tablet, watch: Watch };
+const ICONS = { mobile: Smartphone, laptop: Laptop, tablet: Tablet, watch: Watch, skincare: Sparkles };
 
 const iconKind = (product: Product): keyof typeof ICONS => (product.category in ICONS ? (product.category as keyof typeof ICONS) : "mobile");
 

@@ -71,8 +71,71 @@ function buildAlternatives(catalog: Catalog, product: Product, category: Categor
   return result;
 }
 
+export interface ComparePick {
+  summary: ProductSummary;
+  offers: OfferView[];
+  variantLabel: string;
+}
+
 export type CatalogLoader = (fresh?: boolean) => Promise<Catalog>;
 export type HistoryLoader = (offerIds: string[]) => Promise<PricePoint[]>;
+
+// হোম পেজের "লাইভ তুলনা" কার্ডের জন্য: একই ভ্যারিয়েন্ট, দোকান সবচেয়ে বেশি যেখানে আছে।
+export function pickComparisons(catalog: Catalog, limit = 6): ComparePick[] {
+  const sellers = new Map(catalog.sellers.map((s) => [s.id, s]));
+  const variantOwner = new Map<string, string>();
+  for (const product of catalog.products) {
+    for (const variant of product.variants) variantOwner.set(variant.id, product.id);
+  }
+
+  // ভ্যারিয়েন্ট অনুযায়ী দোকান আলাদা করি — ভিন্ন ভ্যারিয়েন্টের দাম তুলনা করা ঠিক নয়।
+  const byVariant = new Map<string, Map<string, Offer>>();
+  for (const offer of catalog.offers) {
+    if (!sellers.has(offer.sellerId)) continue;
+    if (!variantOwner.has(offer.variantId)) continue;
+    let perSeller = byVariant.get(offer.variantId);
+    if (!perSeller) {
+      perSeller = new Map();
+      byVariant.set(offer.variantId, perSeller);
+    }
+    const kept = perSeller.get(offer.sellerId);
+    if (!kept || offer.price < kept.price) perSeller.set(offer.sellerId, offer);
+  }
+
+  const groups = [...byVariant.entries()]
+    .filter(([, perSeller]) => perSeller.size > 1)
+    .map(([variantId, perSeller]) => {
+      const productId = variantOwner.get(variantId)!;
+      const product = catalog.products.find((p) => p.id === productId)!;
+      const offers = [...perSeller.values()];
+      return { variantId, product, offers: viewOffers(catalog, offers) };
+    });
+
+  // একই পণ্যের একাধিক ভ্যারিয়েন্ট থাকলে সবচেয়ে বেশি দোকানের ভ্যারিয়েন্টটাই রাখি।
+  const byProduct = new Map<string, (typeof groups)[number]>();
+  for (const group of groups) {
+    const kept = byProduct.get(group.product.id);
+    if (!kept || group.offers.length > kept.offers.length) byProduct.set(group.product.id, group);
+  }
+
+  return [...byProduct.values()]
+    .map((group) => ({
+      summary: summarize(catalog, group.product),
+      offers: group.offers.slice(0, 4),
+      variantLabel:
+        group.product.variants.find((v) => v.id === group.variantId)?.label ?? "",
+    }))
+    .filter((pick) => pick.offers.length > 1 && pick.summary.lowest)
+    .sort((a, b) => b.offers.length - a.offers.length)
+    .slice(0, limit);
+}
+
+// প্রতি লোডে ভিন্ন একটা পণ্য দেখাতে। সার্ভারে চলে, তাই রেন্ডারের পিওরিটি নিয়ম ভাঙে না।
+export function pickOneComparison(catalog: Catalog): ComparePick | null {
+  const picks = pickComparisons(catalog, 6);
+  if (!picks.length) return null;
+  return picks[Math.floor(Math.random() * picks.length)];
+}
 
 // একই API সব উৎসের জন্য: বেক করা JSON (সাইট) আর লাইভ Supabase (অ্যাডমিন) দুটোই এখান থেকে বানে।
 export function makeService(load: CatalogLoader, loadHistory: HistoryLoader = () => Promise.resolve([])) {
@@ -84,6 +147,7 @@ export function makeService(load: CatalogLoader, loadHistory: HistoryLoader = ()
 
   const listCategories = () => load().then((catalog) => catalog.categories);
   const listSellers = () => load().then((catalog) => catalog.sellers);
+  const listComparisons = () => load().then((catalog) => pickOneComparison(catalog));
 
   const getProductDetail = async (slug: string): Promise<ProductDetail | null> => {
     const catalog = await load();
@@ -108,5 +172,5 @@ export function makeService(load: CatalogLoader, loadHistory: HistoryLoader = ()
     return { seller, listings, promos: catalog.promos.filter((p) => p.sellerId === id) };
   };
 
-  return { loadCatalog: load, listSummaries, listCategories, listSellers, getProductDetail, getSellerDetail };
+  return { loadCatalog: load, listSummaries, listCategories, listSellers, listComparisons, getProductDetail, getSellerDetail };
 }

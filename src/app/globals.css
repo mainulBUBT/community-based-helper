@@ -30,6 +30,20 @@
   --color-bar: light-dark(#0f766e, #0b3b38);
   --color-bar-ink: #ffffff;
   --color-hero: light-dark(#134e4a, #0b2a28);
+  --color-accent: light-dark(#c2410c, #fb923c);
+  --color-accent-soft: light-dark(#fff1e7, #331c0c);
+  --color-hero-ink: #ffffff;
+
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 14px;
+
+  --shadow-soft: 0 1px 2px rgb(13 26 30 / 0.05);
+  --shadow-lift: 0 2px 4px rgb(13 26 30 / 0.04), 0 8px 20px -12px rgb(13 26 30 / 0.12);
+  --shadow-pop: 0 4px 8px rgb(13 26 30 / 0.05), 0 20px 44px -24px rgb(13 26 30 / 0.22);
+  --shadow-hero: 0 24px 60px -32px rgb(13 26 30 / 0.38);
 }
 
 @utility page-container {
@@ -46,7 +60,7 @@
 @theme {
   --animate-toast-in: toast-in 200ms ease-out;
   --animate-fade-in: fade-in 220ms ease-out;
-  --animate-marquee: marquee 28s linear infinite;
+  --animate-marquee: marquee 60s linear infinite;
 
   @keyframes toast-in {
     from {
@@ -96,6 +110,17 @@
   }
   dialog::backdrop {
     background: rgb(0 0 0 / 0.45);
+  }
+}
+
+/* Home brand strip: slow continuous slide, pauses on hover, off for reduced motion. */
+.brand-marquee {
+  animation: marquee 180s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
   }
 }
 

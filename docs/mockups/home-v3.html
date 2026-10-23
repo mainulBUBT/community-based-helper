@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>দরদাম — হোম (v4 mockup)</title>
+<style>
+  /* ── design tokens ──────────────────────────────────────── */
+  :root{
+    --bg:#f6f8f9; --card:#fff; --card-2:#fbfcfc;
+    --line:#e6eaec; --line-2:#f0f3f4;
+    --ink:#0d1a1e; --ink-2:#3c4a51; --muted:#69767d; --faint:#96a1a7;
+    --brand:#0d7268; --brand-deep:#0a5b53; --brand-tint:#e8f4f1; --brand-line:#cfe5e0;
+    --accent:#c2410c; --gold:#b45309; --gold-tint:#fef6e7;
+    --ok:#0a7c4a; --blue:#1d6ff2; --blue-tint:#eef4ff;
+    --r-xs:6px; --r-sm:8px; --r-md:10px; --r-lg:12px; --r-xl:14px;
+    --sh-1:0 1px 2px rgb(13 26 30 / .05);
+    --sh-2:0 2px 4px rgb(13 26 30 / .04), 0 8px 20px -12px rgb(13 26 30 / .12);
+    --sh-3:0 4px 8px rgb(13 26 30 / .05), 0 20px 44px -24px rgb(13 26 30 / .22);
+    --sh-pop:0 24px 60px -32px rgb(13 26 30 / .38);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:"Noto Sans Bengali","Inter",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;cursor:pointer}
+  .num{font-family:Inter,system-ui,sans-serif;font-feature-settings:"tnum";letter-spacing:-.01em}
+  .wrap{width:min(1280px,calc(100% - 48px));margin-inline:auto}
+
+  /* ── header ─────────────────────────────────────────────── */
+  header{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+  .head{min-height:72px;display:flex;align-items:center;gap:26px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:23px;letter-spacing:-.5px;white-space:nowrap}
+  .logo svg{width:36px;height:36px;flex:0 0 36px}
+  .search{flex:0 1 430px;height:44px;border:1px solid var(--line);border-radius:var(--r-md);display:flex;overflow:hidden;background:var(--card-2);transition:border-color .15s,box-shadow .15s,background .15s}
+  .search:focus-within{border-color:var(--brand);background:#fff;box-shadow:0 0 0 3px var(--brand-tint)}
+  .search .q{flex:1;display:flex;align-items:center;gap:10px;padding:0 14px;color:var(--faint);font-size:14px;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .search .btn{width:100px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:600;font-size:14px;flex:0 0 100px;transition:background .15s}
+  .search .btn:hover{background:var(--brand-deep)}
+  nav{margin-left:auto;display:flex;align-items:center;gap:24px;font-size:14px;font-weight:600;color:var(--ink-2)}
+  nav a{position:relative;padding:25px 0 23px}
+  nav a:hover{color:var(--brand)}
+  nav .active{color:var(--brand)}
+  nav .active:after{content:"";position:absolute;left:0;right:0;bottom:15px;height:2px;border-radius:2px;background:var(--brand)}
+  .chev{color:var(--faint);font-size:9px;margin-left:4px;position:relative;top:-1px}
+  .hbtn{height:40px;min-width:40px;padding:0 12px;border:1px solid var(--line);border-radius:var(--r-sm);display:inline-flex;align-items:center;justify-content:center;gap:7px;color:var(--ink-2);background:var(--card);font-size:13px;font-weight:600;transition:border-color .15s,color .15s}
+  .hbtn:hover{border-color:var(--brand);color:var(--brand)}
+
+  main{padding:28px 0 64px;display:flex;flex-direction:column;gap:28px}
+
+  /* ── hero ───────────────────────────────────────────────── */
+  .hero{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:20px}
+  .hero-main{
+    position:relative;overflow:hidden;border-radius:var(--r-xl);color:#fff;padding:44px 44px 40px;min-height:376px;
+    display:flex;flex-direction:column;justify-content:space-between;gap:26px;
+    background:linear-gradient(128deg,#063c37 0%,#0a5f57 48%,#11786e 100%);
+    box-shadow:var(--sh-pop);
+  }
+  .hero-main:before{
+    content:"";position:absolute;inset:0;opacity:.09;
+    background-image:linear-gradient(rgb(255 255 255/.4) 1px,transparent 1px),linear-gradient(90deg,rgb(255 255 255/.4) 1px,transparent 1px);
+    background-size:52px 52px;mask-image:linear-gradient(115deg,black,transparent 66%);
+  }
+  .hero-main:after{
+    content:"";position:absolute;right:-150px;top:-150px;width:440px;height:440px;border-radius:50%;
+    background:radial-gradient(circle at 32% 32%, rgb(64 216 194 / .26), transparent 62%);
+  }
+  .hero-copy{position:relative;z-index:2;max-width:560px}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:0 0 0 0;font-size:12.5px;font-weight:500;color:rgb(255 255 255/.72);margin-bottom:20px}
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:#5fe3c9;box-shadow:0 0 0 3px rgb(95 227 201 / .18)}
+  h1{font-size:clamp(30px,3.3vw,43px);line-height:1.16;letter-spacing:-1.2px;font-weight:700;max-width:15ch}
+  .sub{margin-top:16px;font-size:15.5px;line-height:1.72;color:rgb(255 255 255/.74);max-width:46ch}
+  .hero-actions{display:flex;align-items:center;gap:12px;margin-top:28px;flex-wrap:wrap}
+  .primary{height:46px;padding:0 22px;border-radius:var(--r-md);background:#fff;color:#064b44;font-weight:700;font-size:14.5px;display:inline-flex;align-items:center;gap:8px;box-shadow:0 10px 24px -14px rgb(0 0 0 / .55);transition:transform .15s}
+  .primary:hover{transform:translateY(-1px)}
+  .secondary{height:46px;padding:0 20px;border-radius:var(--r-md);border:1px solid rgb(255 255 255/.26);color:#fff;font-weight:600;font-size:14.5px;display:inline-flex;align-items:center;gap:8px;transition:background .15s}
+  .secondary:hover{background:rgb(255 255 255 / .10)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;position:relative;z-index:2}
+  .chip{height:34px;padding:0 12px;border-radius:var(--r-xs);border:1px solid rgb(255 255 255/.16);background:rgb(255 255 255/.05);font-size:12.5px;color:rgb(255 255 255/.80);display:inline-flex;align-items:center;transition:background .15s,border-color .15s}
+  .chip:hover{background:rgb(255 255 255 /.11);border-color:rgb(255 255 255 /.28)}
+  .chip b{color:#fff;font-weight:600}
+
+  /* compare card */
+  .compare{background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);padding:22px;display:flex;flex-direction:column;box-shadow:var(--sh-2)}
+  .compare-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px}
+  .tag-live{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:700;color:var(--brand);background:var(--brand-tint);border:1px solid var(--brand-line);border-radius:var(--r-xs);padding:5px 9px}
+  .tag-live i{width:6px;height:6px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px var(--ok-tint);display:block}
+  .save{font-size:12px;font-weight:700;color:var(--gold);background:var(--gold-tint);border-radius:var(--r-xs);padding:6px 10px}
+  .prodrow{display:flex;gap:16px;align-items:center}
+  .prodimg{width:88px;height:88px;border-radius:var(--r-md);background:linear-gradient(150deg,#f8fafb,#eef2f3);border:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;flex:0 0 88px;overflow:hidden}
+  .prodimg img{width:78px;height:78px;object-fit:contain}
+  .pbrand{font-size:10px;font-weight:700;letter-spacing:1.1px;color:var(--faint);text-transform:uppercase}
+  .pname{font-size:16.5px;font-weight:700;line-height:1.32;margin-top:3px;letter-spacing:-.2px}
+  .price{display:flex;align-items:baseline;gap:9px;margin-top:8px;flex-wrap:wrap}
+  .price .now{font-size:26px;font-weight:700;letter-spacing:-.8px}
+  .price .old{font-size:12.5px;color:var(--faint);text-decoration:line-through}
+  .shops{margin-top:18px;border-top:1px solid var(--line-2);padding-top:6px;display:flex;flex-direction:column}
+  .shop{display:flex;align-items:center;gap:11px;height:40px;font-size:13px;border-radius:var(--r-xs);padding:0 6px;transition:background .15s}
+  .shop:hover{background:var(--card-2)}
+  .slogo{width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:800;font-family:Inter,sans-serif;color:#fff;flex:0 0 24px}
+  .shop .nm{flex:1;color:var(--ink-2);font-weight:500}
+  .shop .pr{font-weight:700;font-family:Inter,sans-serif;font-size:13px}
+  .shop.best .nm,.shop.best .pr{color:var(--brand);font-weight:600}
+  .bestdot{width:5px;height:5px;border-radius:50%;background:var(--brand);flex:0 0 5px}
+  .compare-foot{margin-top:auto;padding-top:14px;border-top:1px solid var(--line-2);display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12px;color:var(--muted)}
+  .compare-foot a{color:var(--brand);font-weight:700;white-space:nowrap}
+
+  /* ── sections ───────────────────────────────────────────── */
+  .section{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh-1)}
+  .sec-inner{padding:26px 28px}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:20px;flex-wrap:wrap}
+  .sec-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:10.5px;font-weight:700;letter-spacing:1.3px;color:var(--accent);text-transform:uppercase;margin-bottom:7px}
+  .sec-eyebrow:before{content:"";width:14px;height:2px;border-radius:2px;background:var(--accent)}
+  .sec-title{margin:0;font-size:22px;line-height:1.25;letter-spacing:-.5px;font-weight:700}
+  .sec-sub{margin:6px 0 0;font-size:13px;color:var(--muted)}
+  .sec-link{font-size:13px;font-weight:700;color:var(--brand);white-space:nowrap;display:inline-flex;align-items:center;gap:5px;padding:6px 0;transition:gap .15s}
+  .sec-link:hover{gap:9px}
+  .tabs{display:flex;gap:4px;margin-bottom:22px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{padding:8px 14px;border-radius:var(--r-xs);font-size:13px;font-weight:600;color:var(--muted);background:transparent;border:1px solid transparent;white-space:nowrap;transition:all .15s}
+  .tabs button:hover{color:var(--brand);background:var(--brand-tint)}
+  .tabs button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+  /* ── product card ────────────────────────────────────────── */
+  /* image ≈ 60% of card height, 1:1 ratio, object-fit contain (product photos) */
+  .grid-deals{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+  .grid-best{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;display:flex;flex-direction:column;position:relative;transition:border-color .16s,box-shadow .16s,transform .16s}
+  .pcard:hover{border-color:var(--brand-line);box-shadow:var(--sh-2);transform:translateY(-2px)}
+  .pimg{background:#fff;display:flex;align-items:center;justify-content:center;padding:16px;border-bottom:1px solid var(--line-2);position:relative;aspect-ratio:1/1}
+  .grid-best .pimg{padding:12px}
+  .pimg img{max-width:100%;max-height:100%;object-fit:contain;mix-blend-mode:multiply;transition:transform .3s ease}
+  .pcard:hover .pimg img{transform:scale(1.04)}
+  .pbody{padding:12px 13px 13px;display:flex;flex-direction:column;flex:1;min-height:0}
+  .pbrand{font-size:9.5px;font-weight:700;letter-spacing:1px;color:var(--faint);text-transform:uppercase}
+  .pname{font-size:12.5px;font-weight:600;line-height:1.42;margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:35px;letter-spacing:-.1px}
+  .grid-best .pname{font-size:11.5px;min-height:32px}
+  .pprice{display:flex;align-items:baseline;gap:7px;margin-top:8px;flex-wrap:wrap}
+  .pprice b{font-family:Inter,sans-serif;font-size:15.5px;font-weight:700;letter-spacing:-.3px}
+  .grid-best .pprice b{font-size:13.5px}
+  .pprice s{font-size:11px;color:var(--faint)}
+  .pmeta{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);margin-top:auto;padding-top:9px}
+  .pmeta i{width:5px;height:5px;background:var(--ok);border-radius:50%;display:block;flex:0 0 5px}
+  .badge{position:absolute;top:10px;left:10px;z-index:3;background:var(--accent);color:#fff;font-family:Inter,sans-serif;font-size:10px;font-weight:700;padding:5px 7px;border-radius:6px;letter-spacing:.2px;box-shadow:0 2px 6px rgb(0 0 0 / .12)}
+  .badge.gold{background:var(--gold)}
+  .pcat{position:absolute;top:10px;left:10px;z-index:3;font-size:9.5px;font-weight:700;color:var(--brand);background:rgb(232 244 241 / .96);border:1px solid var(--brand-line);border-radius:6px;padding:4px 7px}
+
+  /* ── bottom ─────────────────────────────────────────────── */
+  .bottom{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:20px}
+  .seller-list{display:flex;flex-direction:column}
+  .seller{display:flex;align-items:center;gap:14px;padding:13px 4px;border-bottom:1px solid var(--line-2)}
+  .seller:last-child{border-bottom:0}
+  .seller .av{width:38px;height:38px;border-radius:var(--r-sm);background:var(--brand-tint);color:var(--brand);display:flex;align-items:center;justify-content:center;font-weight:800;font-family:Inter,sans-serif;font-size:11px;flex:0 0 38px}
+  .seller .meta{min-width:0;flex:1;display:flex;flex-direction:column}
+  .seller .nm{font-size:14px;font-weight:600;letter-spacing:-.1px}
+  .seller .sub{font-size:11.5px;color:var(--faint);margin-top:1px}
+  .seller .vf{font-size:10.5px;font-weight:700;color:var(--blue);background:var(--blue-tint);padding:4px 9px;border-radius:var(--r-xs);white-space:nowrap;flex:0 0 auto}
+  .cta{border-radius:var(--r-lg);padding:30px;background:linear-gradient(150deg,#0a544d,#0d7268 62%,#12857a);color:#fff;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;position:relative;overflow:hidden;box-shadow:var(--sh-3)}
+  .cta:before{content:"";position:absolute;right:-70px;bottom:-70px;width:230px;height:230px;border-radius:50%;border:34px solid rgb(255 255 255 / .07)}
+  .cta .mic{width:46px;height:46px;border-radius:var(--r-md);background:#ffc857;color:#5a3400;display:flex;align-items:center;justify-content:center;margin-bottom:18px;box-shadow:0 8px 20px -10px rgb(0 0 0 / .5)}
+  .cta h3{font-size:21px;line-height:1.32;font-weight:700;letter-spacing:-.3px}
+  .cta p{margin:8px 0 20px;font-size:13px;line-height:1.68;color:rgb(255 255 255 / .72);max-width:34ch}
+  .cta a{height:40px;padding:0 18px;border-radius:var(--r-sm);background:#fff;color:#064b44;display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;box-shadow:0 8px 18px -12px rgb(0 0 0 / .6);transition:transform .15s}
+  .cta a:hover{transform:translateY(-1px)}
+
+  /* ── footer ─────────────────────────────────────────────── */
+  .site-footer{margin-top:36px;background:#063b36;color:#fff}
+  .footer-grid{display:grid;grid-template-columns:2fr 1.3fr 1fr 1.1fr;gap:48px;padding:52px 0 40px}
+  .f-brand .logo{font-size:22px}
+  .f-brand .logo svg{width:36px;height:36px}
+  .f-brand p{margin:16px 0 0;max-width:320px;font-size:13px;line-height:1.8;color:rgb(255 255 255 / .62)}
+  .f-col h4{margin:0 0 16px;font-size:12.5px;font-weight:700;letter-spacing:.3px;color:#fff}
+  .f-links{display:flex;flex-direction:column;gap:10px;font-size:13px;color:rgb(255 255 255 / .60)}
+  .f-links a:hover{color:#fff}
+  .f-cats{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
+  .f-contact a{display:flex;align-items:center;gap:9px}
+  .f-contact svg{width:15px;height:15px;flex:0 0 15px;opacity:.7}
+  .footer-bottom{border-top:1px solid rgb(255 255 255 / .10)}
+  .footer-bottom .wrap{padding:16px 0;font-size:11.5px;color:rgb(255 255 255 / .42)}
+
+  /* ── responsive ─────────────────────────────────────────── */
+  @media(max-width:1180px){
+    .grid-deals{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .grid-best{grid-template-columns:repeat(4,minmax(0,1fr))}
+    nav{gap:20px}
+  }
+  @media(max-width:980px){
+    .wrap{width:calc(100% - 36px)}
+    .head{flex-wrap:wrap;padding:14px 0;gap:14px}
+    .search{order:3;flex:1 1 100%}
+    nav{display:none}
+    .hero{grid-template-columns:1fr}
+    .hero-main{min-height:340px;padding:34px 30px}
+    .bottom{grid-template-columns:1fr}
+    .footer-grid{grid-template-columns:1.5fr 1.2fr 1fr;gap:32px}
+    .f-brand{grid-column:1/-1}
+  }
+  @media(max-width:640px){
+    .wrap{width:calc(100% - 24px)}
+    main{padding:16px 0 44px;gap:16px}
+    .head{min-height:0;padding:11px 0 12px;gap:11px}
+    .logo{font-size:20px;gap:8px}
+    .logo svg{width:32px;height:32px;flex:0 0 32px}
+    .search{height:42px}
+    .search .q{font-size:12.5px;padding:0 12px}
+    .search .btn{width:88px;flex-basis:88px;font-size:13px}
+    .catbar{top:64px}
+    .catbar .wrap{height:46px}
+    .catbar a{height:32px;font-size:12.5px;padding:0 11px}
+    .hero{gap:12px}
+    .hero-main{min-height:0;padding:26px 22px;border-radius:var(--r-lg)}
+    .eyebrow{font-size:11px;padding:5px 10px;margin-bottom:14px}
+    h1{font-size:28px;letter-spacing:-.7px}
+    .sub{font-size:13.5px;line-height:1.68;margin-top:12px}
+    .hero-actions{margin-top:20px;gap:9px}
+    .primary,.secondary{height:42px;font-size:13px;padding:0 15px}
+    .chips{margin-top:16px;gap:6px}
+    .chip{height:31px;font-size:11.5px;padding:0 11px}
+    .compare{padding:18px;border-radius:var(--r-lg)}
+    .compare-top{margin-bottom:14px}
+    .tag-live,.save{font-size:11px;padding:4px 8px}
+    .prodimg{width:72px;height:72px;flex-basis:72px;border-radius:var(--r-sm)}
+    .prodimg img{width:64px;height:64px}
+    .pname{font-size:15px}
+    .price .now{font-size:23px}
+    .shops{margin-top:14px;padding-top:4px}
+    .shop{height:36px;font-size:12px}
+    .compare-foot{font-size:11px;padding-top:12px}
+    .sec-inner{padding:18px 16px}
+    .sec-head{margin-bottom:16px;gap:10px}
+    .sec-eyebrow{font-size:9.5px;margin-bottom:5px}
+    .sec-title{font-size:19px}
+    .sec-sub{font-size:12px}
+    .sec-link{font-size:12px}
+    .tabs{margin-bottom:16px;gap:3px}
+    .tabs button{font-size:12px;padding:6px 11px}
+    .grid-deals{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .grid-best{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .grid-deals .pimg{height:148px;padding:12px}
+    .grid-best .pimg{height:116px;padding:9px}
+    .pbody{padding:10px 11px 11px}
+    .pbrand{font-size:8.5px}
+    .pname{font-size:12px;min-height:33px}
+    .grid-best .pname{font-size:11px;min-height:30px}
+    .pprice b{font-size:14.5px}
+    .grid-best .pprice b{font-size:13px}
+    .pmeta{font-size:10.5px;padding-top:8px}
+    .badge{font-size:9px;padding:4px 6px;top:8px;left:8px}
+    .pcat{font-size:8.5px;padding:3px 6px;top:8px;left:8px}
+    .bottom{gap:12px}
+    .seller{padding:11px 2px;gap:11px}
+    .seller .av{width:34px;height:34px;flex-basis:34px}
+    .seller .nm{font-size:13px}
+    .cta{padding:24px;border-radius:var(--r-lg)}
+    .cta h3{font-size:18.5px}
+    .site-footer{margin-top:20px}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:28px 20px;padding:34px 0 28px}
+    .f-brand{grid-column:1/-1}
+    .f-brand p{max-width:none;font-size:12px}
+    .f-col:nth-child(2){grid-column:1/-1}
+    .f-cats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 16px}
+    .f-links{font-size:12px;gap:8px}
+    .footer-bottom .wrap{padding:13px 0;font-size:10.5px;line-height:1.6}
+  }
+  @media(max-width:380px){
+    .grid-deals,.grid-best{grid-template-columns:1fr}
+    .grid-deals .pimg{height:184px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <a class="logo" href="#">
+      <svg viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="112" fill="#0d7268"/><path d="M395 271 271 395a32 32 0 0 1-45 0L117 286V117h169l109 109a32 32 0 0 1 0 45z" fill="none" stroke="#fff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/><circle cx="190" cy="190" r="30" fill="#f43f5e"/></svg>
+      দরদাম
+    </a>
+    <div class="search">
+      <div class="q">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        কী খুঁজছেন? যেমন iPhone 17
+      </div>
+      <div class="btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        খুঁজুন
+      </div>
+    </div>
+    <nav>
+      <a class="active" href="#">হোম</a>
+      <a href="#">ক্যাটাগরি <span class="chev">▾</span></a>
+      <a href="#">ব্র্যান্ড <span class="chev">▾</span></a>
+      <a href="#">দাম কমেছে</a>
+      <a href="#">বিক্রেতা</a>
+    </nav>
+    <span class="hbtn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 4h12v17l-6-3-6 3z"/></svg></span>
+    <span class="hbtn">English</span>
+    <span class="hbtn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg></span>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- hero -->
+  <div class="hero">
+    <section class="hero-main">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> বাংলাদেশের সব দোকানের দাম, এক জায়গায়</span>
+        <h1>কোন দোকানে কত দাম, এক নজরে দেখুন</h1>
+        <p class="sub">দাম তুলনা করুন, দোকান বদলান, আর কেনার আগেই জেনে নিন আসল সেভিংস কত।</p>
+        <div class="hero-actions">
+          <a class="primary" href="#">দাম তুলনা করুন
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="secondary" href="#">আজকের সেরা ডিল</a>
+        </div>
+      </div>
+      <div class="chips">
+        <span class="chip"><b>iPhone 17 Pro</b></span>
+        <span class="chip"><b>Galaxy A17</b></span>
+        <span class="chip"><b>Redmi Note 17</b></span>
+        <span class="chip"><b>MacBook Air</b></span>
+        <span class="chip"><b>স্কিনকেয়ার</b></span>
+      </div>
+    </section>
+
+    <aside class="compare">
+      <div class="compare-top">
+        <span class="tag-live"><i></i> লাইভ তুলনা</span>
+        <span class="save">৳৬৫,০০০ সেভ</span>
+      </div>
+      <div class="prodrow">
+        <div class="prodimg"><img id="cmp-img" src="iphone.webp" alt=""></div>
+        <div>
+          <div class="pbrand" id="cmp-brand">Apple</div>
+          <div class="pname" id="cmp-name">iPhone 17 Pro Max 256GB</div>
+          <div class="price"><span class="now num" id="cmp-now">৳১,৪৯,৯৯০</span><span class="old num" id="cmp-old">৳২,১৪,৯৯০</span></div>
+        </div>
+      </div>
+      <div class="shops" id="cmp-shops"></div>
+      <div class="compare-foot"><span id="cmp-count">১০টা দোকানে পাওয়া যায়</span><a href="#">সব দাম →</a></div>
+    </aside>
+  </div>
+
+  <!-- deals -->
+  <section class="section">
+    <div class="sec-inner">
+      <div class="sec-head">
+        <div>
+          <div class="sec-eyebrow">আজকের দাম</div>
+          <h2 class="sec-title">আজ যেগুলোর দাম কমল</h2>
+          <p class="sec-sub">যেসব পণ্যের দাম কমেছে, সবচেয়ে বেশি কমার সাথে</p>
+        </div>
+        <a class="sec-link" href="#">সব ৮টা দেখুন
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="tabs">
+        <button class="on">সব</button><button>মোবাইল</button><button>ল্যাপটপ</button><button>অডিও</button><button>স্কিনকেয়ার</button>
+      </div>
+      <div class="grid-deals">
+        <a class="pcard" href="#">
+          <span class="badge">৳৬৫,০০০ কমেছে</span>
+          <div class="pimg"><img src="iphone.webp" alt=""></div>
+          <div class="pbody">
+            <div class="pbrand">Apple</div>
+            <div class="pname">iPhone 17 Pro Max 256GB</div>
+            <div class="pprice"><b class="num">৳১,৪৯,৯৯০</b><s class="num">৳২,১৪,৯৯০</s></div>
+            <div class="pmeta"><i></i> ১০টা দোকানে</div>
+          </div>
+        </a>
+        <a class="pcard" href="#">
+          <span class="badge">৳১,৪১,৭১৪ কমেছে</span>
+          <div class="pimg"><img src="macbook.webp" alt=""></div>
+          <div class="pbody">
+            <div class="pbrand">Apple</div>
+            <div class="pname">MacBook Pro 16" M5 Max</div>
+            <div class="pprice"><b class="num">৳৫,৫৫,০০০</b><s class="num">৳৬,৯৬,৭১৪</s></div>
+            <div class="pmeta"><i></i> ৪টা দোকানে</div>
+          </div>
+        </a>
+        <a class="pcard" href="#">
+          <span class="badge gold">২৬% কম</span>
+          <div class="pimg"><img src="cerave.jpg" alt=""></div>
+          <div class="pbody">
+            <div class="pbrand">CeraVe</div>
+            <div class="pname">Hydrating Cleanser 236ml</div>
+            <div class="pprice"><b class="num">৳২,১৫০</b><s class="num">৳২,৬৫০</s></div>
+            <div class="pmeta"><i></i> ৪টা দোকানে</div>
+          </div>
+        </a>
+        <a class="pcard" href="#">
+          <span class="badge">৳১৫,৯০০ কমেছে</span>
+          <div class="pimg"><img src="sony.webp" alt=""></div>
+          <div class="pbody">
+            <div class="pbrand">Sony</div>
+            <div class="pname">WH-1000XM6</div>
+            <div class="pprice"><b class="num">৳৩৯,০০০</b><s class="num">৳৫৪,৯০০</s></div>
+            <div class="pmeta"><i></i> ৭টা দোকানে</div>
+          </div>
+        </a>
+        <a class="pcard" href="#">
+          <span class="badge">৳১২,০০০ কমেছে</span>
+          <div class="pimg"><img src="redmi.webp" alt=""></div>
+          <div class="pbody">
+            <div class="pbrand">Xiaomi</div>
+            <div class="pname">Redmi Note 17 4G</div>
+            <div class="pprice"><b class="num">৳২৫,৯৯০</b><s class="num">৳৩৭,৯৯০</s></div>
+            <div class="pmeta"><i></i> ৬টা দোকানে</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- best per category -->
+  <section class="section">
+    <div class="sec-inner">
+      <div class="sec-head">
+        <div>
+          <div class="sec-eyebrow">ক্যাটাগরি ধরে</div>
+          <h2 class="sec-title">সেরা মোবাইল</h2>
+          <p class="sec-sub">প্রতিটা ক্যাটাগরির সবচেয়ে জনপ্রিয় পণ্য, এক নজরে</p>
+        </div>
+        <a class="sec-link" href="#">সব পণ্য
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="grid-best">
+        <a class="pcard" href="#"><span class="pcat">মোবাইল</span><div class="pimg"><img src="iphone.webp" alt=""></div><div class="pbody"><div class="pbrand">Apple</div><div class="pname">iPhone 17 Pro</div><div class="pprice"><b class="num">৳১,৪৩,৪৯৯</b></div><div class="pmeta"><i></i> ৯টা দোকানে</div></div></a>
+        <a class="pcard" href="#"><span class="pcat">ল্যাপটপ</span><div class="pimg"><img src="macbook.webp" alt=""></div><div class="pbody"><div class="pbrand">Apple</div><div class="pname">MacBook Neo</div><div class="pprice"><b class="num">৳৮৪,৯৯৯</b></div><div class="pmeta"><i></i> ১০টা দোকানে</div></div></a>
+        <a class="pcard" href="#"><span class="pcat">ট্যাবলেট</span><div class="pimg"><img src="ipad.webp" alt=""></div><div class="pbody"><div class="pbrand">Apple</div><div class="pname">iPad Pro 13" (M5)</div><div class="pprice"><b class="num">৳১,৬৩,৯৯০</b></div><div class="pmeta"><i></i> ১১টা দোকানে</div></div></a>
+        <a class="pcard" href="#"><span class="pcat">ডেস্কটপ</span><div class="pimg"><img src="macmini.png" alt=""></div><div class="pbody"><div class="pbrand">Apple</div><div class="pname">Mac mini M6</div><div class="pprice"><b class="num">৳১,০৯,৯৯০</b></div><div class="pmeta"><i></i> ৯টা দোকানে</div></div></a>
+        <a class="pcard" href="#"><span class="pcat">স্মার্টওয়াচ</span><div class="pimg"><img src="amazfit.webp" alt=""></div><div class="pbody"><div class="pbrand">Amazfit</div><div class="pname">Active 2 Premium</div><div class="pprice"><b class="num">৳১২,৯৯৯</b></div><div class="pmeta"><i></i> ৬টা দোকানে</div></div></a>
+        <a class="pcard" href="#"><span class="pcat">ইয়ারবাড</span><div class="pimg"><img src="soundcore.jpg" alt=""></div><div class="pbody"><div class="pbrand">Anker</div><div class="pname">Soundcore P40i</div><div class="pprice"><b class="num">৳৩,৬৬০</b></div><div class="pmeta"><i></i> ৮টা দোকানে</div></div></a>
+        <a class="pcard" href="#"><span class="pcat">হেডফোন</span><div class="pimg"><img src="sony.webp" alt=""></div><div class="pbody"><div class="pbrand">Sony</div><div class="pname">WH-1000XM6</div><div class="pprice"><b class="num">৳৩৯,০০০</b></div><div class="pmeta"><i></i> ৭টা দোকানে</div></div></a>
+        <a class="pcard" href="#"><span class="pcat">স্কিনকেয়ার</span><div class="pimg"><img src="dotkey.jpg" alt=""></div><div class="pbody"><div class="pbrand">Dot &amp; Key</div><div class="pname">Vitamin C Serum 30ml</div><div class="pprice"><b class="num">৳৮০০</b></div><div class="pmeta"><i></i> ৫টা দোকানে</div></div></a>
+        <a class="pcard" href="#"><span class="pcat">পাওয়ার ব্যাংক</span><div class="pimg"><img src="ugreen-pb.webp" alt=""></div><div class="pbody"><div class="pbrand">Ugreen</div><div class="pname">PB503 5000mAh 20W</div><div class="pprice"><b class="num">৳৩,১১২</b></div><div class="pmeta"><i></i> ১টা দোকানে</div></div></a>
+        <a class="pcard" href="#"><span class="pcat">মনিটর</span><div class="pimg"><img src="pcpower-monitor.webp" alt=""></div><div class="pbody"><div class="pbrand">PC Power</div><div class="pname">21.45" IPS FHD 120Hz</div><div class="pprice"><b class="num">৳৮,৫০০</b></div><div class="pmeta"><i></i> ১টা দোকানে</div></div></a>
+        <a class="pcard" href="#"><span class="pcat">চার্জার</span><div class="pimg"><img src="ugreen-charger.webp" alt=""></div><div class="pbody"><div class="pbrand">Ugreen</div><div class="pname">X517 25W Type-C GaN</div><div class="pprice"><b class="num">৳৯৯০</b></div><div class="pmeta"><i></i> ২টা দোকানে</div></div></a>
+        <a class="pcard" href="#"><span class="pcat">ফ্যান</span><div class="pimg"><img src="hoco-fan.jpg" alt=""></div><div class="pbody"><div class="pbrand">Hoco</div><div class="pname">HX607 Slim Desktop Fan</div><div class="pprice"><b class="num">৳৯২৬</b></div><div class="pmeta"><i></i> ২টা দোকানে</div></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- bottom -->
+  <div class="bottom">
+    <section class="section">
+      <div class="sec-inner" style="padding:24px 26px">
+        <div class="sec-head" style="margin-bottom:6px">
+          <div>
+            <h2 class="sec-title" style="font-size:19px">যাচাই করা দোকান</h2>
+            <p class="sec-sub">দাম আর স্টক যাদের সাইট থেকে সরাসরি দেখা হয়</p>
+          </div>
+          <a class="sec-link" href="#">সব দেখুন
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="seller-list">
+          <div class="seller"><span class="av">ST</span><span class="meta"><span class="nm">Star Tech</span><span class="sub">৭৫টা পণ্য</span></span><span class="vf">যাচাই করা</span></div>
+          <div class="seller"><span class="av">GG</span><span class="meta"><span class="nm">Gadget &amp; Gear</span><span class="sub">৫২টা পণ্য</span></span><span class="vf">যাচাই করা</span></div>
+          <div class="seller"><span class="av">AG</span><span class="meta"><span class="nm">Apple Gadgets</span><span class="sub">৪৯টা পণ্য</span></span><span class="vf">যাচাই করা</span></div>
+          <div class="seller"><span class="av">KR</span><span class="meta"><span class="nm">Kry International</span><span class="sub">৪৫টা পণ্য</span></span><span class="vf">যাচাই করা</span></div>
+          <div class="seller"><span class="av">SM</span><span class="meta"><span class="nm">Sumash Tech</span><span class="sub">৪৩টা পণ্য</span></span><span class="vf">যাচাই করা</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <span class="mic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="m3 11 18-8-8 18-2.5-7.5z"/></svg></span>
+      <h3>কোথাও কম দামে দেখেছেন?</h3>
+      <p>আপনার দেখা দামটা জানান। আমরা যাচাই করে সাইটে যোগ করব।</p>
+      <a href="#">দাম জানান
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="f-brand">
+      <a class="logo" href="#">
+        <svg viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="112" fill="#0d7268"/><path d="M395 271 271 395a32 32 0 0 1-45 0L117 286V117h169l109 109a32 32 0 0 1 0 45z" fill="none" stroke="#fff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/><circle cx="190" cy="190" r="30" fill="#f43f5e"/></svg>
+        দরদাম
+      </a>
+      <p>বাংলাদেশের সব দোকানের দাম মিলিয়ে দেখুন, কেনার আগেই জানুন কোথায় সবচেয়ে কম।</p>
+    </div>
+    <div class="f-col">
+      <h4>ক্যাটাগরি</h4>
+      <div class="f-links f-cats">
+        <a href="#">মোবাইল</a><a href="#">ল্যাপটপ</a><a href="#">ট্যাবলেট</a><a href="#">ডেস্কটপ</a>
+        <a href="#">স্মার্টওয়াচ</a><a href="#">অডিও</a><a href="#">ইয়ারবাড</a><a href="#">হেডফোন</a>
+        <a href="#">স্কিনকেয়ার</a><a href="#">পাওয়ার ব্যাংক</a><a href="#">মনিটর</a><a href="#">চার্জার</a>
+      </div>
+    </div>
+    <div class="f-col">
+      <h4>ঘুরে দেখুন</h4>
+      <div class="f-links">
+        <a href="#">দাম কমেছে</a><a href="#">বিক্রেতা</a><a href="#">সংরক্ষিত</a><a href="#">আমাদের সম্পর্কে</a><a href="#">কম দাম জানান</a>
+      </div>
+    </div>
+    <div class="f-col f-contact">
+      <h4>যোগাযোগ</h4>
+      <div class="f-links">
+        <a href="tel:+8801673303919"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+880 1673 303919</a>
+        <a href="mailto:mainulverse@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>mainulverse@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">© ২০২৬ দরদাম। দাম দোকানভেদে বদলাতে পারে, কেনার আগে দোকানে মিলিয়ে নিন।</div>
+  </div>
+</footer>
+
+<script>
+  // লাইভ তুলনা কার্ড — প্রতি লোডে একটা random পণ্য বেছে নেয়
+  const COMPARE = [
+    {
+      brand: "Apple", name: "iPhone 17 Pro Max 256GB", img: "iphone.webp",
+      now: "৳১,৪৯,৯৯০", old: "৳২,১৪,৯৯০", save: "৳৬৫,০০০ সেভ", count: "১০টা দোকানে পাওয়া যায়",
+      shops: [
+        { logo: "Da", bg: "#f59e0b", name: "Dazzle", price: "৳১,৪৯,৯৯০", best: true },
+        { logo: "AG", bg: "#2563eb", name: "Apple Gadgets", price: "৳১,৫৩,৪৯৯" },
+        { logo: "MZ", bg: "#7c3aed", name: "MacZen BD", price: "৳১,৫৪,৪৯৯" }
+      ]
+    },
+    {
+      brand: "Apple", name: "MacBook Pro 16\" M5 Max", img: "macbook.webp",
+      now: "৳৫,৫৫,০০০", old: "৳৬,৯৬,৭১৪", save: "৳১,৪১,৭১৪ সেভ", count: "৪টা দোকানে পাওয়া যায়",
+      shops: [
+        { logo: "ST", bg: "#0d7268", name: "Star Tech", price: "৳৫,৫৫,০০০", best: true },
+        { logo: "SM", bg: "#e11d48", name: "Sumash Tech", price: "৳৫,৬৯,৯০০" },
+        { logo: "KR", bg: "#0891b2", name: "Kry International", price: "৳৫,৭৪,০০০" }
+      ]
+    },
+    {
+      brand: "Xiaomi", name: "Redmi Note 17 4G", img: "redmi.webp",
+      now: "৳২৫,৯৯০", old: "৳৩৭,৯৯০", save: "৳১২,০০০ সেভ", count: "৬টা দোকানে পাওয়া যায়",
+      shops: [
+        { logo: "ST", bg: "#0d7268", name: "Star Tech", price: "৳২৫,৯৯০", best: true },
+        { logo: "GG", bg: "#f59e0b", name: "Gadget & Gear", price: "৳২৬,৯৯০" },
+        { logo: "SM", bg: "#e11d48", name: "Sumash Tech", price: "৳২৭,৫০০" }
+      ]
+    },
+    {
+      brand: "Sony", name: "WH-1000XM6", img: "sony.webp",
+      now: "৳৩৯,০০০", old: "৳৫৪,৯০০", save: "৳১৫,৯০০ সেভ", count: "৭টা দোকানে পাওয়া যায়",
+      shops: [
+        { logo: "ST", bg: "#0d7268", name: "Star Tech", price: "৳৩৯,০০০", best: true },
+        { logo: "GG", bg: "#f59e0b", name: "Gadget & Gear", price: "৳৪০,৫০০" },
+        { logo: "EM", bg: "#8b5cf6", name: "Emart", price: "৳৪২,০০০" }
+      ]
+    },
+    {
+      brand: "CeraVe", name: "Hydrating Cleanser 236ml", img: "cerave.jpg",
+      now: "৳২,১৫০", old: "৳২,৬৫০", save: "২৬% কম", count: "৪টা দোকানে পাওয়া যায়",
+      shops: [
+        { logo: "SJ", bg: "#db2777", name: "Shajgoj", price: "৳২,১৫০", best: true },
+        { logo: "AR", bg: "#16a34a", name: "Arogga", price: "৳২,২৫০" },
+        { logo: "CB", bg: "#ca8a04", name: "Cosmetics Corner", price: "৳২,৩০০" }
+      ]
+    },
+    {
+      brand: "Anker", name: "Soundcore P40i", img: "soundcore.jpg",
+      now: "৳৩,৬৬০", old: "৳৪,২০০", save: "৳৫৪০ সেভ", count: "৮টা দোকানে পাওয়া যায়",
+      shops: [
+        { logo: "ST", bg: "#0d7268", name: "Star Tech", price: "৳৩,৬৬০", best: true },
+        { logo: "GG", bg: "#f59e0b", name: "Gadget & Gear", price: "৳৩,৭৯০" },
+        { logo: "KR", bg: "#0891b2", name: "Kry International", price: "৳৩,৯৫০" }
+      ]
+    },
+    {
+      brand: "Ugreen", name: "PB503 5000mAh 20W", img: "ugreen-pb.webp",
+      now: "৳৩,১১২", old: "৳৩,৯০০", save: "৳৭৮৮ সেভ", count: "১টা দোকানে পাওয়া যায়",
+      shops: [
+        { logo: "ST", bg: "#0d7268", name: "Star Tech", price: "৳৩,১১২", best: true }
+      ]
+    }
+  ];
+
+  (function () {
+    const pick = COMPARE[Math.floor(Math.random() * COMPARE.length)];
+    document.getElementById("cmp-img").src = pick.img;
+    document.getElementById("cmp-brand").textContent = pick.brand;
+    document.getElementById("cmp-name").textContent = pick.name;
+    document.getElementById("cmp-now").textContent = pick.now;
+    document.getElementById("cmp-old").textContent = pick.old;
+    document.querySelector(".compare .save").textContent = pick.save;
+    document.getElementById("cmp-count").textContent = pick.count;
+    document.getElementById("cmp-shops").innerHTML = pick.shops
+      .map((s, i) => `<div class="shop${s.best ? " best" : ""}">
+        <span class="slogo" style="background:${s.bg}">${s.logo}</span>
+        <span class="nm">${s.name}</span>
+        <span class="pr num">${s.price}</span>
+        ${s.best ? '<span class="bestdot"></span>' : ""}
+      </div>`)
+      .join("");
+  })();
+</script>
+</body>
+</html>

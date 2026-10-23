@@ -1,47 +1,12 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
 import { Badge } from "@/components/ui/Badge";
 import { useI18n } from "@/hooks/useI18n";
 import type { Alternative } from "@/types/catalog";
-import { formatTaka } from "@/utils/format";
-import { ProductIcon } from "./ProductIcon";
+import { ProductCard } from "./ProductCard";
 
 export function AlternativeCard({ alternative }: { alternative: Alternative }) {
-  const { t, num, prefix } = useI18n();
-  const { summary, specLabel, sameSpec, price, saving, condition, stores } = alternative;
-  const { product } = summary;
-  const photo = product.images?.[0];
-
-  return (
-    <article className="group relative flex h-full flex-col overflow-hidden rounded-lg border border-line bg-surface transition-[border-color,box-shadow] hover:border-brand/30 hover:shadow-[0_8px_24px_-12px_rgb(17_24_39/0.25)]">
-      <div className="relative flex aspect-square items-center justify-center bg-white">
-        {photo ? (
-          <img src={photo} alt={`${product.brand} ${product.name}`} loading="lazy" className="size-full object-contain p-4 transition-transform duration-300 group-hover:scale-[1.03]" />
-        ) : (
-          <ProductIcon product={product} size="lg" plain />
-        )}
-      </div>
-
-      <div className="flex flex-1 flex-col gap-1.5 border-t border-line-soft p-3">
-        <span className="text-[11px] font-semibold tracking-wider text-faint uppercase">{product.brand}</span>
-        <Link href={`${prefix}/product/${product.slug}/`} className="line-clamp-2 min-h-[2.5rem] text-sm leading-5 font-medium text-ink after:absolute after:inset-0 hover:text-brand">
-          {product.name}
-        </Link>
-        <span className="w-fit">
-          {specLabel ? <Badge tone="neutral">{specLabel}</Badge> : <Badge tone="neutral">{t.product.similarType}</Badge>}
-        </span>
-        <div className="mt-1 flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-          <span className="text-base font-bold tracking-tight text-ink">{formatTaka(price)}</span>
-          {sameSpec && <span className="text-xs font-semibold text-ok">{t.product.cheaperBy(formatTaka(saving))}</span>}
-        </div>
-        <div className="mt-auto flex min-w-0 items-center gap-1.5 pt-2 text-xs whitespace-nowrap text-dim">
-          <span className="size-1.5 shrink-0 rounded-full bg-ok" aria-hidden="true" />
-          <span className="truncate">{t.product.stores(num(stores))}</span>
-          {condition !== "official" && <Badge tone="gold">{t.condition[condition]}</Badge>}
-        </div>
-      </div>
-    </article>
-  );
+  const { t } = useI18n();
+  const label = alternative.specLabel || t.product.similarType;
+  return <ProductCard summary={alternative.summary} badge={<Badge tone="neutral">{label}</Badge>} />;
 }

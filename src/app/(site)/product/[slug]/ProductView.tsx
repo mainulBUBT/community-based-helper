@@ -34,7 +34,7 @@ const imageFor = (images: string[], color?: string) => {
 function BuyButton({ offer, className = "" }: { offer: OfferView; className?: string }) {
   const { t } = useI18n();
   const link = offer.url ?? offer.seller.website;
-  const base = `flex h-12 items-center justify-center gap-2 rounded-md bg-cta px-6 text-[15px] font-semibold text-cta-ink transition-colors hover:bg-cta-hover ${className}`;
+  const base = `flex h-11 items-center justify-center gap-2 rounded-md bg-cta px-5 text-[15px] font-semibold text-cta-ink transition-colors hover:bg-cta-hover ${className}`;
   if (link) {
     return (
       <a href={link} target="_blank" rel="noopener nofollow" className={base}>
@@ -214,6 +214,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
     .filter((o) => (region ? o.region === region : condition === "all" || o.condition === condition))
     .sort((a, b) => a.price - b.price || (a.condition === b.condition ? 0 : a.condition === "official" ? -1 : b.condition === "official" ? 1 : 0));
   const best = shown[0];
+  const samePriceCount = best ? shown.filter((o) => o.price === best.price).length : 0;
   const fullName = `${product.brand} ${product.name}`;
 
   const official = variant?.officialPrice ?? null;
@@ -233,7 +234,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
   const lastChecked = shown.reduce((a, o) => (o.checkedAt > a ? o.checkedAt : a), best?.checkedAt ?? "");
 
   return (
-    <div className="flex flex-col gap-5 pb-[calc(5rem+env(safe-area-inset-bottom))] md:pb-0">
+    <div className="flex flex-col gap-4 pb-[calc(5rem+env(safe-area-inset-bottom))] md:pb-0">
       <nav aria-label="breadcrumb" className="flex flex-wrap items-center gap-1 text-[13px] text-dim">
         <Link href={`${prefix}/`} className="hover:text-brand">
           {t.nav.home}
@@ -250,16 +251,16 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
         <span className="truncate text-ink">{product.name}</span>
       </nav>
 
-      <div className="grid grid-cols-[minmax(0,1fr)] gap-6 rounded-lg border border-line bg-surface p-4 md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] md:gap-10 md:p-8">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-4 rounded-lg border border-line bg-surface p-4 md:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] md:gap-7 md:p-6">
         <ProductGallery key={variant?.attributes.color} product={product} start={imageFor(product.images ?? [], variant?.attributes.color)} />
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4">
           <div className="flex items-start justify-between gap-3">
             <div className="flex min-w-0 flex-col gap-1">
               <Link href={`${prefix}/search/?brand=${encodeURIComponent(product.brand)}`} className="text-xs font-semibold tracking-wider text-brand uppercase hover:underline">
                 {product.brand}
               </Link>
-              <h1 className="text-[22px] leading-tight font-semibold tracking-tight text-ink md:text-[26px]">{product.name}</h1>
+              <h1 className="text-[20px] leading-tight font-semibold tracking-tight text-ink md:text-[24px]">{product.name}</h1>
             </div>
             <div className="flex shrink-0 gap-2">
               <button
@@ -275,7 +276,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
           </div>
 
           {highlights.length > 0 && (
-            <ul className="grid gap-x-4 gap-y-1.5 text-sm text-ink sm:grid-cols-2">
+            <ul className="grid gap-x-4 gap-y-1 text-[13px] text-ink sm:grid-cols-2">
               {highlights.map((h) => (
                 <li key={h.key} className="flex min-w-0 items-center gap-2">
                   <Check size={15} className="shrink-0 text-ok" aria-hidden="true" />
@@ -289,10 +290,10 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
           )}
 
           {best ? (
-            <div className="flex flex-col gap-2.5 border-y border-line-soft py-5">
+            <div className="flex flex-col gap-2 border-y border-line-soft py-4">
               <span className="text-[13px] font-medium text-dim">{t.product.lowestLabel}</span>
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                <span className="text-[28px] leading-none font-bold tracking-tight text-ink md:text-[30px]">{formatTaka(best.price)}</span>
+                <span className="text-[24px] leading-none font-bold tracking-tight text-ink md:text-[28px]">{formatTaka(best.price)}</span>
                 {off > 0 && (
                   <>
                     <span className="text-base text-faint line-through">{formatTaka(reference)}</span>
@@ -311,6 +312,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
                   </span>
                 )}
               </div>
+              {samePriceCount > 1 && <span className="text-[13px] font-medium text-ok">{t.product.samePriceMore(num(samePriceCount - 1))}</span>}
             </div>
           ) : (
             <EmptyState icon={Store} title={t.product.noOffers} />
@@ -382,7 +384,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
             <div className="flex flex-col gap-3">
               <div className="hidden gap-3 md:flex">
                 <BuyButton offer={best} className="flex-1" />
-                <a href="#stores" className="flex h-12 flex-1 items-center justify-center rounded-md border border-line bg-surface text-[15px] font-semibold text-ink transition-colors hover:border-dim">
+                <a href="#stores" className="flex h-11 flex-1 items-center justify-center rounded-md border border-line bg-surface text-[15px] font-semibold text-ink transition-colors hover:border-dim">
                   {t.product.compare(num(shown.length))}
                 </a>
               </div>
@@ -403,7 +405,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
 
       {cheaper.length > 0 && (
         <Panel title={t.product.cheaperTitle} subtitle={t.product.cheaperSub} id="cheaper">
-          <div className="grid grid-cols-2 gap-3 p-4 sm:grid-cols-3 md:grid-cols-4 md:p-5">
+          <div className="grid grid-cols-2 gap-3 p-4 sm:grid-cols-3 md:grid-cols-4 md:p-5 lg:grid-cols-6">
             {cheaper.map((alternative) => (
               <AlternativeCard key={alternative.summary.product.id} alternative={alternative} />
             ))}

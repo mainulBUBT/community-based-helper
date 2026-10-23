@@ -77,10 +77,11 @@ function OfferRow({ offer, best }: { offer: OfferView; best: boolean }) {
 }
 
 export function OffersTable({ offers }: { offers: OfferView[] }) {
+  const lowest = offers.length ? Math.min(...offers.map((offer) => offer.price)) : null;
   return (
     <ul className="divide-y divide-line-soft">
-      {offers.map((offer, i) => (
-        <OfferRow key={offer.id} offer={offer} best={i === 0} />
+      {offers.map((offer) => (
+        <OfferRow key={offer.id} offer={offer} best={offer.price === lowest} />
       ))}
     </ul>
   );

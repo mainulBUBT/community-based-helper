@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Apple,
   Bookmark,
   Download,
   House,
@@ -23,6 +22,7 @@ import {
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { CategoryIcon } from "@/components/product/CategoryIcon";
 import { SearchBox } from "@/components/search/SearchBox";
+import { BrandIcon } from "@/components/ui/BrandIcon";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
 import { useInstallPrompt } from "@/hooks/useInstallPrompt";
@@ -132,7 +132,7 @@ function CategoryStrip() {
           aria-current={appleActive ? "page" : undefined}
           className={`flex h-8 shrink-0 items-center gap-2 rounded-md px-3 text-sm font-semibold ${appleActive ? "bg-white/20" : "hover:bg-white/10"}`}
         >
-          <Apple size={16} aria-hidden="true" />
+          <BrandIcon brand="Apple" size={16} />
           Apple
         </Link>
         <span className="mx-2 h-5 w-px shrink-0 bg-white/25" />

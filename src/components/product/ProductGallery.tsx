@@ -132,12 +132,12 @@ export function ProductGallery({ product, start = 0 }: { product: Product; start
   }
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-2">
       <div
         onMouseMove={current ? moveLens : undefined}
         onMouseLeave={() => setLens(null)}
         {...(canHover ? {} : handlers)}
-        className={`group relative aspect-[4/3] touch-pan-y overflow-hidden rounded-lg border border-line-soft bg-white select-none md:aspect-square ${current && canHover ? "cursor-zoom-in" : ""}`}
+        className={`group relative aspect-[16/11] touch-pan-y overflow-hidden rounded-lg border border-line-soft bg-white select-none md:aspect-[4/3] ${current && canHover ? "cursor-zoom-in" : ""}`}
       >
         {current ? (
           <div
@@ -152,7 +152,7 @@ export function ProductGallery({ product, start = 0 }: { product: Product; start
                   draggable={false}
                   loading={i === active ? "eager" : "lazy"}
                   style={i === active && lens ? { transform: `scale(${ZOOM})`, transformOrigin: `${lens.x}% ${lens.y}%` } : undefined}
-                  className="size-full object-contain p-6 transition-transform duration-150 ease-out md:p-10"
+                  className="size-full object-contain p-4 transition-transform duration-150 ease-out md:p-6"
                 />
               </div>
             ))}
@@ -206,7 +206,7 @@ export function ProductGallery({ product, start = 0 }: { product: Product; start
               <span key={src} className={`h-1.5 rounded-full transition-all ${i === active ? "w-5 bg-brand" : "w-1.5 bg-line"}`} />
             ))}
           </div>
-          <div className="hidden flex-wrap gap-2 md:flex">
+          <div className="hidden flex-wrap gap-1.5 md:flex">
             {images.map((src, i) => (
               <button
                 key={src}
@@ -215,11 +215,11 @@ export function ProductGallery({ product, start = 0 }: { product: Product; start
                 onMouseEnter={() => setActive(i)}
                 aria-label={`${t.product.galleryShot} ${num(i + 1)}`}
                 aria-current={i === active}
-                className={`flex size-16 shrink-0 items-center justify-center rounded-md bg-white ring-1 transition-shadow ${
+                className={`flex size-14 shrink-0 items-center justify-center rounded-md bg-white ring-1 transition-shadow ${
                   i === active ? "ring-2 ring-brand" : "ring-line hover:ring-brand/60"
                 }`}
               >
-                <img src={src} alt="" className="size-full object-contain p-1.5" />
+                <img src={src} alt="" className="size-full object-contain p-1" />
               </button>
             ))}
           </div>

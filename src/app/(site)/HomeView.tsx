@@ -2,16 +2,14 @@
 "use client";
 
 import {
-  BadgeCheck,
-  ChevronRight,
+  ArrowRight,
   Megaphone,
-  TrendingDown,
-  type LucideIcon,
 } from "lucide-react";
 import Link from "next/link";
 import { useState, type ReactNode } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
 import { CategoryIcon } from "@/components/product/CategoryIcon";
+import { CompareCard } from "@/components/product/CompareCard";
 import { ProductCard } from "@/components/product/ProductCard";
 import { ProductIcon } from "@/components/product/ProductIcon";
 import { SellerCard } from "@/components/seller/SellerCard";
@@ -21,9 +19,11 @@ import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
 import {
   getSiteSettings,
+  listComparisons,
   listSellers,
   listSummaries,
 } from "@/services/catalog";
+import type { ComparePick } from "@/services/catalog-core";
 import type { SiteSettings } from "@/types/admin";
 import type { CategoryInfo, ProductSummary, Seller } from "@/types/catalog";
 import { formatTaka } from "@/utils/format";
@@ -32,15 +32,17 @@ interface HomeData {
   summaries: ProductSummary[];
   sellers: Seller[];
   settings: SiteSettings;
+  comparison: ComparePick | null;
 }
 
 async function loadHome(): Promise<HomeData> {
-  const [summaries, sellers, settings] = await Promise.all([
+  const [summaries, sellers, settings, comparison] = await Promise.all([
     listSummaries(),
     listSellers(),
     getSiteSettings(),
+    listComparisons(),
   ]);
-  return { summaries, sellers, settings };
+  return { summaries, sellers, settings, comparison };
 }
 
 const byPopularity = (a: ProductSummary, b: ProductSummary) =>
@@ -94,7 +96,7 @@ function BrandMarquee({ brands }: { brands: string[] }) {
   const loop = [...brands, ...brands, ...brands, ...brands];
   return (
     <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
-      <div className="flex w-max gap-3 animate-marquee hover:[animation-play-state:paused] motion-reduce:animate-none">
+      <div className="brand-marquee flex w-max gap-3">
         {loop.map((brand, i) => (
           <BrandTile key={`${brand}-${i}`} brand={brand} />
         ))}
@@ -103,47 +105,12 @@ function BrandMarquee({ brands }: { brands: string[] }) {
   );
 }
 
-function DenseGrid({ items, deal }: { items: ProductSummary[]; deal?: boolean }) {
+function SectionEyebrow({ children }: { children: ReactNode }) {
   return (
-    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-      {items.map((summary) => (
-        <ProductCard key={summary.product.id} summary={summary} deal={deal ? summary.drop : null} />
-      ))}
-    </div>
-  );
-}
-
-function HighlightTile({
-  href,
-  icon: Icon,
-  title,
-  body,
-}: {
-  href: string;
-  icon: LucideIcon;
-  title: string;
-  body: string;
-}) {
-  return (
-    <Link
-      href={href}
-      className="group flex flex-1 flex-col items-start gap-3 rounded-lg bg-surface p-4 shadow-sm ring-1 ring-line-soft transition-shadow hover:shadow-md sm:flex-row sm:items-center md:p-5"
-    >
-      <span className="flex size-10 shrink-0 items-center justify-center rounded-md bg-gold-soft text-gold-text md:size-12">
-        <Icon size={22} aria-hidden="true" />
-      </span>
-      <span className="flex min-w-0 flex-1 flex-col gap-0.5">
-        <span className="text-[15px] leading-snug font-bold group-hover:text-brand">
-          {title}
-        </span>
-        <span className="text-[13px] text-dim">{body}</span>
-      </span>
-      <ChevronRight
-        size={18}
-        className="hidden text-faint sm:block"
-        aria-hidden="true"
-      />
-    </Link>
+    <span className="flex items-center gap-2 text-[10.5px] font-bold tracking-[1.3px] text-accent uppercase">
+      <span className="h-0.5 w-3.5 rounded-full bg-accent" aria-hidden="true" />
+      {children}
+    </span>
   );
 }
 
@@ -202,6 +169,111 @@ function CategoryTiles({ summaries }: { summaries: ProductSummary[] }) {
         ))}
       </section>
     </>
+  );
+}
+
+function DealsShelf({ deals }: { deals: ProductSummary[] }) {
+  const { t, num, lang, prefix } = useI18n();
+  const { top, family } = useCategories();
+  const [active, setActive] = useState<string>("");
+  if (!deals.length) return null;
+
+  const tabs = top.filter((c) =>
+    deals.some((s) => family(c.slug).includes(s.product.category)),
+  );
+  const filtered = active
+    ? deals.filter((s) => family(active).includes(s.product.category))
+    : deals;
+
+  return (
+    <Shelf>
+      <div className="flex flex-col gap-3">
+        <SectionEyebrow>{t.home.dropsEyebrow}</SectionEyebrow>
+        <SectionHeader
+          title={t.home.drops}
+          subtitle={t.home.dropsSub}
+          href={`${prefix}/search/?sort=drop`}
+          linkLabel={t.home.seeAllIn(num(deals.length))}
+        />
+        <div
+          role="tablist"
+          aria-label={t.home.dropsByCategory}
+          className="no-scrollbar flex gap-1.5 overflow-x-auto"
+        >
+          <button
+            type="button"
+            role="tab"
+            aria-selected={active === ""}
+            onClick={() => setActive("")}
+            className={`shrink-0 rounded-xs px-3 py-2 text-[13px] font-semibold transition-colors ${active === "" ? "bg-brand text-brand-ink" : "text-dim hover:bg-brand-soft hover:text-brand"}`}
+          >
+            {t.home.allCategories}
+          </button>
+          {tabs.map((c) => (
+            <button
+              key={c.slug}
+              type="button"
+              role="tab"
+              aria-selected={active === c.slug}
+              onClick={() => setActive(c.slug)}
+              className={`flex shrink-0 items-center gap-1.5 rounded-xs px-3 py-2 text-[13px] font-semibold transition-colors ${active === c.slug ? "bg-brand text-brand-ink" : "text-dim hover:bg-brand-soft hover:text-brand"}`}
+            >
+              <CategoryIcon name={c.icon} size={14} />
+              {lang === "en" ? c.nameEn : c.name}
+            </button>
+          ))}
+        </div>
+      </div>
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+        {filtered.slice(0, 5).map((summary) => (
+          <ProductCard key={summary.product.id} summary={summary} deal={summary.drop} />
+        ))}
+      </div>
+    </Shelf>
+  );
+}
+
+function BestPerCategoryShelf({ summaries }: { summaries: ProductSummary[] }) {
+  const { t, lang, prefix } = useI18n();
+  const { top, family } = useCategories();
+
+  const picks = top
+    .map((c) => {
+      const items = summaries.filter((s) => family(c.slug).includes(s.product.category));
+      const best = [...items].sort(
+        (a, b) =>
+          b.product.popularity +
+          b.sellerCount * 5 -
+          (a.product.popularity + a.sellerCount * 5),
+      )[0];
+      return best ? { category: c, summary: best } : null;
+    })
+    .filter((x): x is { category: CategoryInfo; summary: ProductSummary } => x !== null);
+
+  if (!picks.length) return null;
+
+  return (
+    <Shelf>
+      <div className="flex flex-col gap-3">
+        <SectionEyebrow>{t.home.categoryEyebrow}</SectionEyebrow>
+        <SectionHeader
+          title={t.home.bestPerCategory}
+          subtitle={t.home.bestPerCategorySub}
+          href={`${prefix}/search/`}
+          linkLabel={t.home.allProducts}
+        />
+      </div>
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+        {picks.map(({ category, summary }) => (
+          <ProductCard
+            key={category.slug}
+            summary={summary}
+            category={lang === "en" ? category.nameEn : category.name}
+            compact
+          />
+        ))}
+      </div>
+    </Shelf>
   );
 }
 
@@ -305,26 +377,6 @@ function SpotlightShelf({ summaries }: { summaries: ProductSummary[] }) {
   );
 }
 
-function DealsShelf({ deals }: { deals: ProductSummary[] }) {
-  const { t, num, prefix } = useI18n();
-  if (!deals.length) return null;
-
-  return (
-    <Shelf>
-      <div className="flex flex-col gap-1">
-        <span className="text-xs font-semibold tracking-wider text-gold-text uppercase">{t.home.dropsEyebrow}</span>
-        <SectionHeader
-          title={t.home.drops}
-          subtitle={t.home.dropsSub}
-          href={`${prefix}/search/?sort=drop`}
-          linkLabel={t.home.seeAllIn(num(deals.length))}
-        />
-      </div>
-      <DenseGrid items={deals.slice(0, 6)} deal />
-    </Shelf>
-  );
-}
-
 function CategoryRows({ summaries }: { summaries: ProductSummary[] }) {
   const { t, num, lang, prefix } = useI18n();
   const { top, family } = useCategories();
@@ -342,7 +394,11 @@ function CategoryRows({ summaries }: { summaries: ProductSummary[] }) {
               href={`${prefix}/search/?category=${c.slug}`}
               linkLabel={t.home.seeAllIn(num(items.length))}
             />
-            <DenseGrid items={items.slice(0, 6)} />
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+              {items.slice(0, 6).map((summary) => (
+                <ProductCard key={summary.product.id} summary={summary} />
+              ))}
+            </div>
           </Shelf>
         );
       })}
@@ -351,9 +407,9 @@ function CategoryRows({ summaries }: { summaries: ProductSummary[] }) {
 }
 
 export function HomeView({ initial }: { initial: HomeData }) {
-  const { lang, t, num, prefix } = useI18n();
+  const { lang, t, prefix } = useI18n();
   const { data } = useAsync(loadHome, [], initial);
-  const { summaries, sellers, settings } = data ?? initial;
+  const { summaries, sellers, settings, comparison } = data ?? initial;
 
   const drops = summaries
     .filter((s) => s.drop)
@@ -365,57 +421,65 @@ export function HomeView({ initial }: { initial: HomeData }) {
   const heroTitle =
     (lang === "en" ? settings.heroTitleEn : settings.heroTitle) ||
     t.home.heroTitle;
+  const heroSub =
+    (lang === "en" ? settings.taglineEn : settings.tagline) ||
+    t.home.heroSub;
 
   return (
     <div className="flex flex-col gap-6 md:gap-8">
-      <div className="grid gap-4 lg:grid-cols-[2fr_1fr]">
-        <section className="relative flex flex-col justify-between gap-5 overflow-hidden rounded-lg bg-hero p-5 text-white md:gap-8 md:p-10">
+      <div className="grid gap-4 lg:grid-cols-[minmax(0,1.55fr)_minmax(0,1fr)]">
+        <section className="relative flex flex-col justify-between gap-6 overflow-hidden rounded-xl bg-hero p-6 text-white shadow-hero md:p-10">
           <span
             aria-hidden="true"
             className="pointer-events-none absolute -top-24 -right-24 size-72 rounded-full border-[40px] border-white/5"
           />
-          <div className="relative flex flex-col gap-3">
-            <h1 className="max-w-xl text-xl leading-snug font-bold md:text-[32px] md:leading-tight">
+          <div className="relative flex flex-col gap-4">
+            <span className="inline-flex w-fit items-center gap-2 text-[12.5px] font-medium text-white/70">
+              <span className="size-1.5 rounded-full bg-[#5fe3c9] shadow-[0_0_0_3px_rgb(95_227_201/0.18)]" aria-hidden="true" />
+              {t.home.heroEyebrow}
+            </span>
+            <h1 className="max-w-xl text-2xl leading-[1.18] font-bold tracking-tight md:text-[40px] md:leading-[1.16]">
               {heroTitle}
             </h1>
-            <p className="max-w-lg text-sm text-white/80 md:text-base">
-              {(lang === "en" ? settings.taglineEn : settings.tagline) ||
-                t.footer.tagline}
+            <p className="max-w-[46ch] text-sm leading-relaxed text-white/75 md:text-[15.5px]">
+              {heroSub}
             </p>
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+              <Link
+                href={`${prefix}/search/`}
+                className="inline-flex h-11 items-center gap-2 rounded-md bg-white px-5 text-[14px] font-bold text-brand shadow-[0_10px_24px_-14px_rgb(0_0_0/0.55)] transition-transform hover:-translate-y-px md:h-[46px] md:text-[14.5px]"
+              >
+                {t.home.heroPrimary}
+                <ArrowRight size={16} aria-hidden="true" />
+              </Link>
+              <Link
+                href={`${prefix}/search/?sort=drop`}
+                className="inline-flex h-11 items-center rounded-md border border-white/25 px-5 text-[14px] font-semibold text-white transition-colors hover:bg-white/10 md:h-[46px] md:text-[14.5px]"
+              >
+                {t.home.heroSecondary}
+              </Link>
+            </div>
           </div>
           <div className="relative flex flex-wrap gap-2">
             {settings.quickSearches.map((q, i) => (
               <Link
                 key={q}
                 href={`${prefix}/search/?q=${encodeURIComponent(q)}`}
-                className={`${i > 2 ? "hidden md:inline-flex" : ""} rounded-full border border-white/25 px-3 py-1.5 text-[13px] font-semibold text-white hover:bg-white hover:text-brand md:px-4 md:py-2 md:text-sm`}
+                className={`${i > 2 ? "hidden md:inline-flex" : ""} inline-flex h-8 items-center rounded-xs border border-white/15 bg-white/5 px-3 text-[12.5px] font-semibold text-white/80 transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white md:h-[34px] md:px-3.5`}
               >
                 {q}
               </Link>
             ))}
           </div>
         </section>
-        <div className="hidden gap-3 md:grid md:grid-cols-2 lg:grid-cols-1 lg:gap-4">
-          <HighlightTile
-            href={`${prefix}/search/?sort=drop`}
-            icon={TrendingDown}
-            title={t.home.drops}
-            body={t.home.dropsCount(num(drops.length))}
-          />
-          <HighlightTile
-            href={`${prefix}/sellers/`}
-            icon={BadgeCheck}
-            title={t.home.sellersSub}
-            body={t.home.verifiedCount(
-              num(sellers.filter((s) => s.verified).length),
-            )}
-          />
-        </div>
+        <CompareCard pick={comparison} />
       </div>
 
       <CategoryTiles summaries={summaries} />
 
       <DealsShelf deals={drops} />
+
+      <BestPerCategoryShelf summaries={summaries} />
 
       <SpotlightShelf summaries={summaries} />
 

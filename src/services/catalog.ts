@@ -75,7 +75,7 @@ export async function submitPrice(payload: Record<string, string>) {
   if (error) throw error;
 }
 
-export const { loadCatalog, listSummaries, listCategories, listSellers, getProductDetail, getSellerDetail } = makeService(
+export const { loadCatalog, listSummaries, listCategories, listSellers, listComparisons, getProductDetail, getSellerDetail } = makeService(
   fetchCatalog,
   loadHistory,
 );

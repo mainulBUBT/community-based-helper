@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { HomeView } from "@/app/(site)/HomeView";
 import { enMeta } from "@/lib/en-meta";
-import { getSiteSettings, listSellers, listSummaries } from "@/services/catalog.server";
+import { getSiteSettings, listComparisons, listSellers, listSummaries } from "@/services/catalog.server";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
@@ -15,6 +15,11 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function EnHomePage() {
-  const [summaries, sellers, settings] = await Promise.all([listSummaries(), listSellers(), getSiteSettings()]);
-  return <HomeView initial={{ summaries, sellers, settings }} />;
+  const [summaries, sellers, settings, comparison] = await Promise.all([
+    listSummaries(),
+    listSellers(),
+    getSiteSettings(),
+    listComparisons(),
+  ]);
+  return <HomeView initial={{ summaries, sellers, settings, comparison }} />;
 }
