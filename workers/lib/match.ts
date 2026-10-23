@@ -7,6 +7,7 @@ export interface CatalogProduct {
   id: string;
   name: string;
   brand: string;
+  category?: string | null;
   variants: CatalogVariant[];
 }
 
@@ -63,10 +64,13 @@ function productFits(title: string, listing: Set<string>, product: CatalogProduc
   return sameSpec(title, product.name);
 }
 
+// চার্জার-ফ্যান এখন নিজেরাই ক্যাটাগরি — ওদের লিস্টিং accessory-ফাঁদ নয়
+const GADGET_CATEGORIES = new Set(["charger", "fan"]);
+
 export function findProducts(title: string, catalog: CatalogProduct[]): CatalogProduct[] {
-  if (isAccessory(title)) return [];
+  const accessory = isAccessory(title);
   const listing = new Set(tokens(title));
-  const fit = catalog.filter((p) => productFits(title, listing, p));
+  const fit = catalog.filter((p) => !(accessory && !GADGET_CATEGORIES.has(p.category ?? "")) && productFits(title, listing, p));
   const best = Math.max(...fit.map((p) => tokens(p.name).length));
   return fit.filter((p) => tokens(p.name).length === best);
 }

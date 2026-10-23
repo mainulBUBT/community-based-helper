@@ -59,6 +59,10 @@ const STARTECH_CATEGORIES = [
   "/gadget/smart-watch",
   "/earbuds",
   "/accessories/headphone",
+  "/power-bank",
+  "/monitor",
+  "/mobile-phone-charger-adapter",
+  "/charger-fan",
 ];
 
 function parseStartechListings(html: string): Listing[] {
@@ -170,6 +174,24 @@ const pickaboo: Store = {
 export const stores: Store[] = [
   startech,
   pickaboo,
+  sitemapStore({
+    id: "shajgoj",
+    name: "Shajgoj",
+    origin: "https://shop.shajgoj.com",
+    sample: "https://shop.shajgoj.com/product/cerave-hydrating-cleanser-for-normal-to-dry-skin",
+    sitemap: "https://shop.shajgoj.com/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+  }),
+  sitemapStore({
+    id: "arogga",
+    name: "Arogga",
+    origin: "https://www.arogga.com",
+    sample: "https://www.arogga.com/product/51397/cerave-hydrating-cleanser-for-normal-to-dry-skin-236ml",
+    sitemap: "https://www.arogga.com/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+  }),
   sitemapStore({
     id: "applegadgets",
     name: "Apple Gadgets",
