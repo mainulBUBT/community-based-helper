@@ -35,7 +35,7 @@ async function gemini(url: string): Promise<string> {
           role: "user",
           parts: [
             {
-              text: `Open ${url} with the url_context tool. It is a product page of a Bangladeshi gadget shop. Reply with JSON only: {"title": product name or null, "image": main product image URL or null, "rows": [{"label": variant/option text exactly as shown (like "8GB/256GB", "45mm") or null when the page has a single variant, "price": current selling price in Bangladeshi taka as a number without commas, "oldPrice": struck-through original price as a number or null, "inStock": true|false|null, "region": version/region wording like "USA", "Japan", "Global" or null}]}. Include every variant listed on the page. If you could not read the page, reply {"rows": []}.`,
+              text: `Open ${url} with the url_context tool. It is a product page of a Bangladeshi gadget shop. Reply with JSON only: {"title": product name or null, "image": main product image URL or null, "rows": [{"label": variant/option text exactly as shown (like "8GB/256GB", "45mm") or null when the page has a single variant, "price": current selling price in Bangladeshi taka as a number without commas (never a booking/deposit/pre-order advance amount — if the page only shows a booking amount for a costlier product, omit that row), "oldPrice": struck-through original price as a number or null, "inStock": true|false|null, "region": version/region wording like "USA", "Japan", "Global" or null}]}. Include every variant listed on the page. If you could not read the page, reply {"rows": []}.`,
             },
           ],
         },

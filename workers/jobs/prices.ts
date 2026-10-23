@@ -40,7 +40,7 @@ export async function refreshPrices(): Promise<string> {
       .range(from, to),
   );
   const rows = offers.filter((row) => row.source === "site" || row.sellers?.kind === "website");
-  const tally = { checked: 0, changed: 0, anomaly: 0, unmatched: 0, failed: 0, blocked: 0, ai: 0 };
+  const tally = { checked: 0, changed: 0, anomaly: 0, unmatched: 0, failed: 0, blocked: 0, ai: 0, booking: 0 };
   const outOfTime = deadline(25);
   const errors: string[] = [];
   const unmatched: string[] = [];
@@ -72,6 +72,7 @@ export async function refreshPrices(): Promise<string> {
               tally.checked++;
               if (result === "changed") tally.changed++;
               if (result === "anomaly") tally.anomaly++;
+              if (result === "booking") tally.booking++;
             }
             await saveProductImage(group[0].variant_id, page.image);
           } catch (error) {
@@ -102,6 +103,7 @@ export async function refreshPrices(): Promise<string> {
                   tally.checked++;
                   if (result === "changed") tally.changed++;
                   if (result === "anomaly") tally.anomaly++;
+                  if (result === "booking") tally.booking++;
                 }
                 await saveProductImage(group[0].variant_id, page.image);
               } catch (inner) {
@@ -126,6 +128,7 @@ export async function refreshPrices(): Promise<string> {
   return [
     `${count(tally.checked, "দেখেছে")}, ${count(tally.changed, "দাম বদলেছে")}`,
     tally.anomaly ? `${count(tally.anomaly, "সন্দেহজনক")} যাচাইয়ে` : "",
+    tally.booking ? `${count(tally.booking, "বুকিং বা কিস্তির অংক মনে হয়েছে — আগের দামই রাখা হয়েছে")}` : "",
     tally.unmatched ? `${count(tally.unmatched, "ভার্সন পাতায় মেলেনি")}: ${unmatched.slice(0, 5).join(", ")}` : "",
     tally.failed ? `${count(tally.failed, "ব্যর্থ")}: ${errors.slice(0, 3).join("; ")}` : "",
     tally.blocked ? `${count(tally.blocked, "দাম")} দোকান আটকে রাখায় বাদ` : "",

@@ -4,6 +4,8 @@ import type { PageOffer } from "../lib/variants";
 import { enqueue, pendingAnomaly } from "./review";
 
 const JUMP = 0.6;
+// আসল দামের ২০%-এরও কম অংক সাধারণত বুকিং বা কিস্তির টাকা, দাম নয় — আগের দামই থাকে
+const DEPOSIT = 0.2;
 const MAX_IMAGES = 4;
 
 interface VariantWithImages {
@@ -31,10 +33,14 @@ export interface TrackedOffer {
   sellerName: string;
 }
 
-export type SaveResult = "changed" | "same" | "anomaly";
+export type SaveResult = "changed" | "same" | "anomaly" | "booking";
 
 export async function refreshOffer(offer: TrackedOffer, found: PageOffer): Promise<SaveResult> {
   const checked = { variant_key: found.key, checked_at: new Date().toISOString() };
+  if (found.price <= offer.price * DEPOSIT) {
+    await must(db().from("offers").update(checked).eq("id", offer.id));
+    return "booking";
+  }
   if (Math.abs(found.price - offer.price) / offer.price > JUMP) {
     if (!(await pendingAnomaly(offer.id))) {
       const change = Math.round(((found.price - offer.price) / offer.price) * 100);
