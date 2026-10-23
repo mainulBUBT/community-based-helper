@@ -34,11 +34,11 @@
   --color-accent-soft: light-dark(#fff1e7, #331c0c);
   --color-hero-ink: #ffffff;
 
-  --radius-xs: 6px;
-  --radius-sm: 8px;
-  --radius-md: 10px;
-  --radius-lg: 12px;
-  --radius-xl: 14px;
+  --radius-xs: 4px;
+  --radius-sm: 5px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
 
   --shadow-soft: 0 1px 2px rgb(13 26 30 / 0.05);
   --shadow-lift: 0 2px 4px rgb(13 26 30 / 0.04), 0 8px 20px -12px rgb(13 26 30 / 0.12);
@@ -114,6 +114,10 @@
 }
 
 /* Home brand strip: slow continuous slide, pauses on hover, off for reduced motion. */
+/* No fade mask here: the mask would clip the tile borders at the strip edges. */
+.brand-marquee-space {
+  padding-block: 4px;
+}
 .brand-marquee {
   animation: marquee 180s linear infinite;
   &:hover {

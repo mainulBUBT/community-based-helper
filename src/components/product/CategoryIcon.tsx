@@ -64,6 +64,7 @@ import {
   Tv,
   Usb,
   Utensils,
+  LayoutGrid,
   WashingMachine,
   Watch,
   Wrench,
@@ -143,6 +144,11 @@ const ICONS: Record<string, LucideIcon> = {
 };
 
 export const CATEGORY_ICON_NAMES = Object.keys(ICONS);
+
+/** "All categories" / "every category" card icon (no dedicated category slug). */
+export function AllCategoriesIcon(props: LucideProps) {
+  return <LayoutGrid aria-hidden="true" {...props} />;
+}
 
 export function CategoryIcon({ name, ...props }: { name: string } & LucideProps) {
   const Icon = ICONS[name] ?? Package;

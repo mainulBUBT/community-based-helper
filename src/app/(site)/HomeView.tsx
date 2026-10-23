@@ -8,7 +8,7 @@ import {
 import Link from "next/link";
 import { useState, type ReactNode } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
-import { CategoryIcon } from "@/components/product/CategoryIcon";
+import { AllCategoriesIcon, CategoryIcon } from "@/components/product/CategoryIcon";
 import { CompareCard } from "@/components/product/CompareCard";
 import { ProductCard } from "@/components/product/ProductCard";
 import { ProductIcon } from "@/components/product/ProductIcon";
@@ -95,7 +95,7 @@ function BrandTile({ brand }: { brand: string }) {
 function BrandMarquee({ brands }: { brands: string[] }) {
   const loop = [...brands, ...brands, ...brands, ...brands];
   return (
-    <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+    <div className="brand-marquee-space overflow-hidden">
       <div className="brand-marquee flex w-max gap-3">
         {loop.map((brand, i) => (
           <BrandTile key={`${brand}-${i}`} brand={brand} />
@@ -117,73 +117,59 @@ function SectionEyebrow({ children }: { children: ReactNode }) {
 function CategoryTiles({ summaries }: { summaries: ProductSummary[] }) {
   const { t, num, lang, prefix } = useI18n();
   const { top, family } = useCategories();
-  const shown = top.filter((c) =>
-    summaries.some((s) => family(c.slug).includes(s.product.category)),
-  );
+  const shown = top
+    .filter((c) =>
+      summaries.some((s) => family(c.slug).includes(s.product.category)),
+    )
+    .map((c) => ({
+      c,
+      count: summaries.filter((s) =>
+        family(c.slug).includes(s.product.category),
+      ).length,
+    }));
   return (
-    <>
-      <nav
-        aria-label={t.home.categoryEyebrow}
-        className="grid grid-cols-3 gap-2 rounded-lg bg-surface p-3 shadow-sm ring-1 ring-line-soft md:hidden"
+    <nav
+      aria-label={t.home.categoryEyebrow}
+      className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4"
+    >
+      {shown.map(({ c, count }) => (
+        <Link
+          key={c.slug}
+          href={`${prefix}/search/?category=${c.slug}`}
+          className="flex w-24 shrink-0 flex-col items-center gap-1.5 rounded-lg bg-surface px-2 py-3 text-center shadow-sm ring-1 ring-line-soft"
+        >
+          <span className="flex size-11 items-center justify-center rounded-full bg-brand-soft text-brand">
+            <CategoryIcon name={c.icon} size={20} />
+          </span>
+          <span className="text-[13px] leading-tight font-semibold">
+            {lang === "en" ? c.nameEn : c.name}
+          </span>
+          <span className="text-[11px] font-bold text-dim">
+            {t.home.models(num(count))}
+          </span>
+        </Link>
+      ))}
+      <Link
+        href={`${prefix}/search/`}
+        className="flex w-24 shrink-0 flex-col items-center justify-center gap-1.5 rounded-lg bg-surface px-2 py-3 text-center shadow-sm ring-1 ring-line-soft"
       >
-        {shown.map((c) => (
-          <Link
-            key={c.slug}
-            href={`${prefix}/search/?category=${c.slug}`}
-            className="flex flex-col items-center gap-1.5 rounded-md py-2 text-center active:bg-surface-2"
-          >
-            <span className="flex size-11 items-center justify-center rounded-full bg-brand-soft text-brand">
-              <CategoryIcon name={c.icon} size={20} />
-            </span>
-            <span className="text-[13px] leading-tight font-semibold">
-              {lang === "en" ? c.nameEn : c.name}
-            </span>
-          </Link>
-        ))}
-      </nav>
-      <section className="hidden gap-3 md:grid md:grid-cols-3 xl:grid-cols-6">
-        {shown.map((c) => (
-          <Link
-            key={c.slug}
-            href={`${prefix}/search/?category=${c.slug}`}
-            className="group flex min-w-0 items-center gap-3 rounded-lg bg-surface p-3 shadow-sm ring-1 ring-line-soft transition-shadow hover:shadow-md md:p-4"
-          >
-            <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand md:size-11">
-              <CategoryIcon name={c.icon} size={20} />
-            </span>
-            <span className="flex min-w-0 flex-col">
-              <span className="truncate text-sm font-bold group-hover:text-brand md:text-[15px]">
-                {lang === "en" ? c.nameEn : c.name}
-              </span>
-              <span className="truncate text-xs text-dim">
-                {t.home.models(
-                  num(
-                    summaries.filter((s) =>
-                      family(c.slug).includes(s.product.category),
-                    ).length,
-                  ),
-                )}
-              </span>
-            </span>
-          </Link>
-        ))}
-      </section>
-    </>
+        <span className="flex size-11 items-center justify-center rounded-full bg-surface-2 text-dim">
+          <AllCategoriesIcon size={20} />
+        </span>
+        <span className="text-[13px] leading-tight font-semibold">
+          {t.home.allCategories}
+        </span>
+        <span className="text-[11px] font-bold text-dim">
+          {t.home.models(num(summaries.length))}
+        </span>
+      </Link>
+    </nav>
   );
 }
 
 function DealsShelf({ deals }: { deals: ProductSummary[] }) {
-  const { t, num, lang, prefix } = useI18n();
-  const { top, family } = useCategories();
-  const [active, setActive] = useState<string>("");
+  const { t, num, prefix } = useI18n();
   if (!deals.length) return null;
-
-  const tabs = top.filter((c) =>
-    deals.some((s) => family(c.slug).includes(s.product.category)),
-  );
-  const filtered = active
-    ? deals.filter((s) => family(active).includes(s.product.category))
-    : deals;
 
   return (
     <Shelf>
@@ -195,82 +181,10 @@ function DealsShelf({ deals }: { deals: ProductSummary[] }) {
           href={`${prefix}/search/?sort=drop`}
           linkLabel={t.home.seeAllIn(num(deals.length))}
         />
-        <div
-          role="tablist"
-          aria-label={t.home.dropsByCategory}
-          className="no-scrollbar flex gap-1.5 overflow-x-auto"
-        >
-          <button
-            type="button"
-            role="tab"
-            aria-selected={active === ""}
-            onClick={() => setActive("")}
-            className={`shrink-0 rounded-xs px-3 py-2 text-[13px] font-semibold transition-colors ${active === "" ? "bg-brand text-brand-ink" : "text-dim hover:bg-brand-soft hover:text-brand"}`}
-          >
-            {t.home.allCategories}
-          </button>
-          {tabs.map((c) => (
-            <button
-              key={c.slug}
-              type="button"
-              role="tab"
-              aria-selected={active === c.slug}
-              onClick={() => setActive(c.slug)}
-              className={`flex shrink-0 items-center gap-1.5 rounded-xs px-3 py-2 text-[13px] font-semibold transition-colors ${active === c.slug ? "bg-brand text-brand-ink" : "text-dim hover:bg-brand-soft hover:text-brand"}`}
-            >
-              <CategoryIcon name={c.icon} size={14} />
-              {lang === "en" ? c.nameEn : c.name}
-            </button>
-          ))}
-        </div>
       </div>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-        {filtered.slice(0, 5).map((summary) => (
+        {deals.slice(0, 5).map((summary) => (
           <ProductCard key={summary.product.id} summary={summary} deal={summary.drop} />
-        ))}
-      </div>
-    </Shelf>
-  );
-}
-
-function BestPerCategoryShelf({ summaries }: { summaries: ProductSummary[] }) {
-  const { t, lang, prefix } = useI18n();
-  const { top, family } = useCategories();
-
-  const picks = top
-    .map((c) => {
-      const items = summaries.filter((s) => family(c.slug).includes(s.product.category));
-      const best = [...items].sort(
-        (a, b) =>
-          b.product.popularity +
-          b.sellerCount * 5 -
-          (a.product.popularity + a.sellerCount * 5),
-      )[0];
-      return best ? { category: c, summary: best } : null;
-    })
-    .filter((x): x is { category: CategoryInfo; summary: ProductSummary } => x !== null);
-
-  if (!picks.length) return null;
-
-  return (
-    <Shelf>
-      <div className="flex flex-col gap-3">
-        <SectionEyebrow>{t.home.categoryEyebrow}</SectionEyebrow>
-        <SectionHeader
-          title={t.home.bestPerCategory}
-          subtitle={t.home.bestPerCategorySub}
-          href={`${prefix}/search/`}
-          linkLabel={t.home.allProducts}
-        />
-      </div>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-        {picks.map(({ category, summary }) => (
-          <ProductCard
-            key={category.slug}
-            summary={summary}
-            category={lang === "en" ? category.nameEn : category.name}
-            compact
-          />
         ))}
       </div>
     </Shelf>
@@ -302,20 +216,16 @@ function SpotlightShelf({ summaries }: { summaries: ProductSummary[] }) {
 
   return (
     <section className="flex flex-col gap-5 rounded-lg bg-surface p-4 shadow-sm ring-1 ring-line-soft md:p-6">
-      <div className="flex flex-wrap items-end justify-between gap-3">
-        <div className="flex flex-col gap-1">
-          <span className="text-xs font-semibold tracking-wider text-gold-text uppercase">
-            {t.home.spotlightEyebrow} · {label(current)}
-          </span>
-          <h2 className="text-lg font-bold md:text-xl">{t.home.spotlight}</h2>
-          <span className="text-sm text-dim">{t.home.spotlightSub}</span>
-        </div>
-        <Link
+      <div className="flex flex-col gap-3">
+        <SectionEyebrow>
+          {t.home.spotlightEyebrow} · {label(current)}
+        </SectionEyebrow>
+        <SectionHeader
+          title={t.home.spotlight}
+          subtitle={t.home.spotlightSub}
           href={`${prefix}/search/?category=${current.slug}`}
-          className="text-sm font-semibold text-brand hover:underline"
-        >
-          {t.home.seeAllIn(num(items.length))} →
-        </Link>
+          linkLabel={t.home.seeAllIn(num(items.length))}
+        />
       </div>
       <div className="grid grid-cols-3 gap-2 md:flex md:flex-wrap">
         {withProducts.map((c) => (
@@ -444,17 +354,17 @@ export function HomeView({ initial }: { initial: HomeData }) {
             <p className="max-w-[46ch] text-sm leading-relaxed text-white/75 md:text-[15.5px]">
               {heroSub}
             </p>
-            <div className="mt-2 flex flex-wrap items-center gap-3">
+            <div className="mt-2 flex flex-wrap items-center gap-2.5">
               <Link
                 href={`${prefix}/search/`}
-                className="inline-flex h-11 items-center gap-2 rounded-md bg-white px-5 text-[14px] font-bold text-brand shadow-[0_10px_24px_-14px_rgb(0_0_0/0.55)] transition-transform hover:-translate-y-px md:h-[46px] md:text-[14.5px]"
+                className="inline-flex h-11 shrink-0 items-center gap-2 rounded-md bg-white px-4 text-[13.5px] font-bold text-brand shadow-[0_10px_24px_-14px_rgb(0_0_0/0.55)] transition-transform hover:-translate-y-px md:h-[46px] md:px-5 md:text-[14.5px]"
               >
                 {t.home.heroPrimary}
                 <ArrowRight size={16} aria-hidden="true" />
               </Link>
               <Link
                 href={`${prefix}/search/?sort=drop`}
-                className="inline-flex h-11 items-center rounded-md border border-white/25 px-5 text-[14px] font-semibold text-white transition-colors hover:bg-white/10 md:h-[46px] md:text-[14.5px]"
+                className="inline-flex h-11 shrink-0 items-center rounded-md border border-white/25 px-4 text-[13.5px] font-semibold text-white transition-colors hover:bg-white/10 md:h-[46px] md:px-5 md:text-[14.5px]"
               >
                 {t.home.heroSecondary}
               </Link>
@@ -478,8 +388,6 @@ export function HomeView({ initial }: { initial: HomeData }) {
       <CategoryTiles summaries={summaries} />
 
       <DealsShelf deals={drops} />
-
-      <BestPerCategoryShelf summaries={summaries} />
 
       <SpotlightShelf summaries={summaries} />
 
@@ -505,19 +413,35 @@ export function HomeView({ initial }: { initial: HomeData }) {
           </div>
         </Shelf>
 
-        <section className="flex flex-col items-start justify-center gap-4 rounded-lg bg-gold-soft p-6 ring-1 ring-gold/20">
-          <span className="flex size-12 items-center justify-center rounded-md bg-gold text-gold-ink">
+        <section className="relative flex flex-col items-start justify-center gap-4 overflow-hidden rounded-lg bg-gold-soft p-6 ring-1 ring-gold/25 md:p-8">
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute -top-16 -right-16 size-48 rounded-full border-[30px] border-gold/10"
+          />
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute -bottom-20 -left-12 size-44 rounded-full bg-gold/10"
+          />
+          <span className="relative flex size-12 items-center justify-center rounded-lg bg-gradient-to-br from-gold to-gold/75 text-gold-ink shadow-[0_12px_28px_-14px_rgb(217_119_6/0.75)]">
             <Megaphone size={22} aria-hidden="true" />
           </span>
-          <p className="text-lg font-bold">{t.home.reportTitle}</p>
+          <div className="relative flex flex-col gap-1.5">
+            <p className="text-xl leading-snug font-bold tracking-tight">{t.home.reportTitle}</p>
+            <p className="text-sm leading-relaxed text-dim">{t.home.reportSub}</p>
+          </div>
           <SubmitPriceDialog
             trigger={(open) => (
               <button
                 type="button"
                 onClick={open}
-                className="h-11 rounded-lg bg-brand px-5 font-bold text-brand-ink hover:bg-brand-hover"
+                className="group relative inline-flex h-11 items-center gap-2 rounded-lg bg-brand px-5 font-bold text-brand-ink shadow-[0_12px_28px_-14px_rgb(15_118_110/0.7)] transition-colors hover:bg-brand-hover"
               >
                 {t.home.reportCta}
+                <ArrowRight
+                  size={16}
+                  aria-hidden="true"
+                  className="transition-transform group-hover:translate-x-0.5"
+                />
               </button>
             )}
           />
