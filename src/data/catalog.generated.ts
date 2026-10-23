@@ -111,6 +111,18 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
+  "id": "binarylogic.com.bd",
+  "name": "Binary Logic",
+  "kind": "website",
+  "website": "https://www.binarylogic.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
   "id": "shop.shajgoj.com",
   "name": "Shajgoj",
   "kind": "website",
@@ -4239,6 +4251,240 @@ export const catalogProducts: Product[] = [
    }
   ],
   "specsSource": "https://www.startech.com.bd/anker-soundcore-space-one-headphone"
+ },
+ {
+  "id": "lenovo-loq-15ahp9",
+  "slug": "lenovo-loq-15ahp9",
+  "name": "LOQ 15AHP9",
+  "brand": "Lenovo",
+  "category": "laptop",
+  "releaseYear": 2024,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "lenovo-loq-15ahp9~v1",
+    "label": "Ryzen 7 7445HS RTX 3050 16GB / 512GB",
+    "attributes": {
+     "chip": "Ryzen 7 7445HS",
+     "ram": "16GB",
+     "storage": "512GB",
+     "gpu": "RTX 3050 6GB"
+    },
+    "officialPrice": 134999
+   },
+   {
+    "id": "lenovo-loq-15ahp9~v2",
+    "label": "Ryzen 7 7445HS RTX 4050 16GB / 512GB",
+    "attributes": {
+     "chip": "Ryzen 7 7445HS",
+     "ram": "16GB",
+     "storage": "512GB",
+     "gpu": "RTX 4050 6GB"
+    },
+    "officialPrice": 144999
+   }
+  ],
+  "images": [
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-LOQ-15AHP9-AMD-Ryzen-7-7445HS-NVIDIA-GeForce-RTX-3050-With-6GB-Graphics-15.6-FHD-Gaming-Laptop-1-1409.png",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-LOQ-15AHP9-AMD-Ryzen-7-7445HS-NVIDIA-GeForce-RTX-4050-With-6GB-Graphics-15.6-FHD-Gaming-Laptop-4474.png"
+  ],
+  "colors": [
+   "Luna Grey"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://www.applegadgetsbd.com/product/lenovo-loq-15ahp9-amd-ryzen-7-7445hs-3050-gaming-laptop"
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-15abr8",
+  "slug": "lenovo-ideapad-slim-3-15abr8",
+  "name": "IdeaPad Slim 3 15ABR8",
+  "brand": "Lenovo",
+  "category": "laptop",
+  "releaseYear": 2023,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "lenovo-ideapad-slim-3-15abr8~v1",
+    "label": "Ryzen 5 5625U 16GB / 512GB",
+    "attributes": {
+     "chip": "Ryzen 5 5625U",
+     "ram": "16GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 84000
+   },
+   {
+    "id": "lenovo-ideapad-slim-3-15abr8~v2",
+    "label": "Ryzen 5 5625U 8GB / 512GB",
+    "attributes": {
+     "chip": "Ryzen 5 5625U",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 71000
+   },
+   {
+    "id": "lenovo-ideapad-slim-3-15abr8~v3",
+    "label": "Ryzen 7 5825U 16GB / 512GB",
+    "attributes": {
+     "chip": "Ryzen 7 5825U",
+     "ram": "16GB",
+     "storage": "512GB"
+    },
+    "officialPrice": null
+   }
+  ],
+  "images": [
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-IdeaPad-Slim-3-15ABR8-AMD-Ryzen-7-5825U-AMD-Radeon-Graphics-15.6-Laptop-6404.jpg"
+  ],
+  "colors": [
+   "Abyss Blue"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://www.startech.com.bd/lenovo-ideapad-slim-3-15abr8-5625u-laptop"
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-14irh10",
+  "slug": "lenovo-ideapad-slim-3-14irh10",
+  "name": "IdeaPad Slim 3 14IRH10",
+  "brand": "Lenovo",
+  "category": "laptop",
+  "releaseYear": 2025,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "lenovo-ideapad-slim-3-14irh10~v1",
+    "label": "Core i5-13420H 16GB / 512GB",
+    "attributes": {
+     "chip": "Core i5-13420H",
+     "ram": "16GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 93000
+   },
+   {
+    "id": "lenovo-ideapad-slim-3-14irh10~v2",
+    "label": "Core i5-13420H 16GB / 1TB",
+    "attributes": {
+     "chip": "Core i5-13420H",
+     "ram": "16GB",
+     "storage": "1TB"
+    },
+    "officialPrice": 105500
+   }
+  ],
+  "images": [
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-IdeaPad-Slim-3-14IRH10-Intel-Core-i5-13420H-14-WUXGA-Laptop-1-5071.jpg",
+   "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3-14irh10/ideapad-slim-3-14irh10-05-500x500.webp"
+  ],
+  "colors": [
+   "Abyss Blue"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://www.startech.com.bd/lenovo-ideapad-slim-3-14irh10-1tb-ssd-laptop-with-freedos"
+ },
+ {
+  "id": "hp-15-fd0180nia",
+  "slug": "hp-15-fd0180nia",
+  "name": "15-fd0180nia",
+  "brand": "HP",
+  "category": "laptop",
+  "releaseYear": 2023,
+  "popularity": 66,
+  "variants": [
+   {
+    "id": "hp-15-fd0180nia~v1",
+    "label": "Core i3 1315U 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i3 1315U",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 63999
+   }
+  ],
+  "images": [
+   "https://adminapi.applegadgetsbd.com/storage/media/large/HP-FD0180nia-Intel-Core-i3-1315U-Intel-UHD-Graphics-15.6-FHD-Lapotopzgg-7171.png"
+  ],
+  "colors": [
+   "Natural Silver"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://www.applegadgetsbd.com/product/hp-15-fd0180nia-intel-core-i3-1315u-fhd-laptop"
+ },
+ {
+  "id": "dell-pro-15-essential",
+  "slug": "dell-pro-15-essential",
+  "name": "Pro 15 Essential",
+  "brand": "Dell",
+  "category": "laptop",
+  "releaseYear": 2024,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "dell-pro-15-essential~v1",
+    "label": "Core 3 100U 8GB / 512GB",
+    "attributes": {
+     "chip": "Core 3 100U",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 71000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/laptop/dell/pro-15-essential-pv15250/pro-15-essential-pv15250-01-500x500.webp"
+  ],
+  "colors": [
+   "Carbon"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://www.startech.com.bd/dell-pro-15-essential-pv15250-laptop"
+ },
+ {
+  "id": "hp-250r-g10",
+  "slug": "hp-250r-g10",
+  "name": "250R G10",
+  "brand": "HP",
+  "category": "laptop",
+  "releaseYear": 2025,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "hp-250r-g10~v1",
+    "label": "Core 3 100U 8GB / 512GB",
+    "attributes": {
+     "chip": "Core 3 100U",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 99900
+   },
+   {
+    "id": "hp-250r-g10~v2",
+    "label": "Core 5 120U 16GB / 512GB",
+    "attributes": {
+     "chip": "Core 5 120U",
+     "ram": "16GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 84999
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/240r-g10-dark-ash/240r-g10-dark-ash-01-500x500.webp"
+  ],
+  "colors": [
+   "Dark Ash"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://www.startech.com.bd/hp-250r-g10-core-3-100u-laptop"
  },
  {
   "id": "apple-macbook-neo",
@@ -17622,6 +17868,258 @@ export const catalogOffers: Offer[] = [
  },
  {
   "id": "o291",
+  "variantId": "lenovo-loq-15ahp9~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 133990,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/lenovo-loq-15ahp9-amd-ryzen-7-7445hs-3050-gaming-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o292",
+  "variantId": "lenovo-loq-15ahp9~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "official",
+  "region": null,
+  "price": 134999,
+  "oldPrice": 145999,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/lenovo-loq-15ahp9-ryzen-7-7445hs-rtx-3050-156-144hz-gaming-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o293",
+  "variantId": "lenovo-loq-15ahp9~v2",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 143990,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/lenovo-loq-15ahp9-amd-ryzen-7-7445hs-gaming-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o294",
+  "variantId": "lenovo-loq-15ahp9~v2",
+  "sellerId": "sumashtech.com",
+  "condition": "official",
+  "region": null,
+  "price": 144999,
+  "oldPrice": 164999,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/lenovo-loq-15ahp9-ryzen-7-7445hs-rtx-4050-156-144hz-gaming-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o295",
+  "variantId": "lenovo-ideapad-slim-3-15abr8~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 84000,
+  "oldPrice": 90060,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/lenovo-ideapad-slim-3-15abr8-5625u-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o296",
+  "variantId": "lenovo-ideapad-slim-3-15abr8~v2",
+  "sellerId": "binarylogic.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 71000,
+  "oldPrice": 78900,
+  "inStock": false,
+  "url": "https://www.binarylogic.com.bd/lenovo-ip-slim-3-15abr8-ryzen-5-156-fhd-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o297",
+  "variantId": "lenovo-ideapad-slim-3-15abr8~v3",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 82999,
+  "oldPrice": 96500,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/lenovo-ideapad-slim-3-15abr8-amd-ryzen-7-5825u-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o298",
+  "variantId": "lenovo-ideapad-slim-3-14irh10~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 77500,
+  "oldPrice": 84000,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/lenovo-ideapad-slim-3-14irh10-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o299",
+  "variantId": "lenovo-ideapad-slim-3-14irh10~v1",
+  "sellerId": "binarylogic.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 93000,
+  "oldPrice": 103400,
+  "inStock": true,
+  "url": "https://www.binarylogic.com.bd/lenovo-ideapad-slim-3-14irh10-core-i5-13th-gen",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o300",
+  "variantId": "lenovo-ideapad-slim-3-14irh10~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 105500,
+  "oldPrice": 112840,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/lenovo-ideapad-slim-3-14irh10-1tb-ssd-laptop-with-freedos",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o301",
+  "variantId": "hp-15-fd0180nia~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 66500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/hp-15-fd0180nia-intel-core-i3-1315u-fhd-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o302",
+  "variantId": "hp-15-fd0180nia~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "official",
+  "region": null,
+  "price": 63999,
+  "oldPrice": 69000,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/hp-laptop-15-fd0180nia",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o303",
+  "variantId": "dell-pro-15-essential~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 71000,
+  "oldPrice": 86500,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/dell-pro-15-essential-pv15250-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o304",
+  "variantId": "dell-pro-15-essential~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "official",
+  "region": null,
+  "price": 67499,
+  "oldPrice": 87500,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/dell-pro-15-essential-pv15250-core-3-100u-8gb-ram-512gb-ssd-156-120hz-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o305",
+  "variantId": "dell-pro-15-essential~v1",
+  "sellerId": "binarylogic.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 65000,
+  "oldPrice": 72300,
+  "inStock": true,
+  "url": "https://www.binarylogic.com.bd/laptop-dell-pro-15-essential-core-3-100u",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o306",
+  "variantId": "hp-250r-g10~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 99900,
+  "oldPrice": 106150,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/hp-250r-g10-core-3-100u-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o307",
+  "variantId": "hp-250r-g10~v1",
+  "sellerId": "binarylogic.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 65000,
+  "oldPrice": 72300,
+  "inStock": true,
+  "url": "https://www.binarylogic.com.bd/hp-250r-g10-intel-core-3-100u-business-laptop-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o308",
+  "variantId": "hp-250r-g10~v2",
+  "sellerId": "sumashtech.com",
+  "condition": "official",
+  "region": null,
+  "price": 84999,
+  "oldPrice": 87999,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/hp-250r-g10-core-5-120u-16gb",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o309",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -17635,7 +18133,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o292",
+  "id": "o310",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -17649,7 +18147,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o293",
+  "id": "o311",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -17663,7 +18161,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o294",
+  "id": "o312",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -17677,7 +18175,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o295",
+  "id": "o313",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -17691,7 +18189,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o296",
+  "id": "o314",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -17705,7 +18203,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o297",
+  "id": "o315",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -17719,7 +18217,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o298",
+  "id": "o316",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -17733,7 +18231,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o299",
+  "id": "o317",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -17747,7 +18245,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o300",
+  "id": "o318",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -17761,7 +18259,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o301",
+  "id": "o319",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -17775,7 +18273,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o302",
+  "id": "o320",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -17789,7 +18287,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o303",
+  "id": "o321",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -17803,7 +18301,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o304",
+  "id": "o322",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -17817,7 +18315,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o305",
+  "id": "o323",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -17831,7 +18329,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o306",
+  "id": "o324",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -17845,7 +18343,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o307",
+  "id": "o325",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -17859,7 +18357,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o308",
+  "id": "o326",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -17873,7 +18371,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o309",
+  "id": "o327",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -17887,7 +18385,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o310",
+  "id": "o328",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -17901,7 +18399,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o311",
+  "id": "o329",
   "variantId": "apple-macbook-air-13-m5~v3",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -17915,7 +18413,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o312",
+  "id": "o330",
   "variantId": "apple-macbook-air-13-m5~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -17929,7 +18427,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o313",
+  "id": "o331",
   "variantId": "apple-macbook-air-13-m5~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -17943,7 +18441,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o314",
+  "id": "o332",
   "variantId": "apple-macbook-air-13-m5~v3",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -17957,7 +18455,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o315",
+  "id": "o333",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -17971,7 +18469,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o316",
+  "id": "o334",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -17985,7 +18483,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o317",
+  "id": "o335",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -17999,7 +18497,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o318",
+  "id": "o336",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -18013,7 +18511,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o319",
+  "id": "o337",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18027,7 +18525,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o320",
+  "id": "o338",
   "variantId": "apple-macbook-air-15-m5~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -18041,7 +18539,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o321",
+  "id": "o339",
   "variantId": "apple-macbook-air-15-m5~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18055,7 +18553,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o322",
+  "id": "o340",
   "variantId": "apple-macbook-air-15-m5~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -18069,7 +18567,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o323",
+  "id": "o341",
   "variantId": "apple-macbook-air-15-m5~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18083,7 +18581,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o324",
+  "id": "o342",
   "variantId": "apple-macbook-air-15-m5~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18097,7 +18595,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o325",
+  "id": "o343",
   "variantId": "apple-macbook-air-15-m5~v3",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18111,7 +18609,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o326",
+  "id": "o344",
   "variantId": "apple-macbook-pro-14-m5~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18125,7 +18623,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o327",
+  "id": "o345",
   "variantId": "apple-macbook-pro-14-m5~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -18139,7 +18637,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o328",
+  "id": "o346",
   "variantId": "apple-macbook-pro-14-m5~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -18153,7 +18651,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o329",
+  "id": "o347",
   "variantId": "apple-macbook-pro-14-m5~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -18167,7 +18665,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o330",
+  "id": "o348",
   "variantId": "apple-macbook-pro-14-m5~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18181,7 +18679,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o331",
+  "id": "o349",
   "variantId": "apple-macbook-pro-14-m5~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -18195,7 +18693,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o332",
+  "id": "o350",
   "variantId": "apple-macbook-pro-14-m5~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18209,7 +18707,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o333",
+  "id": "o351",
   "variantId": "apple-macbook-pro-14-m5~v3",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -18223,7 +18721,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o334",
+  "id": "o352",
   "variantId": "apple-macbook-pro-14-m5~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18237,7 +18735,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o335",
+  "id": "o353",
   "variantId": "apple-macbook-pro-14-m5~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -18251,7 +18749,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o336",
+  "id": "o354",
   "variantId": "apple-macbook-pro-14-m5~v3",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18265,7 +18763,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o337",
+  "id": "o355",
   "variantId": "apple-macbook-pro-14-m5-pro~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -18279,7 +18777,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o338",
+  "id": "o356",
   "variantId": "apple-macbook-pro-14-m5-pro~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18293,7 +18791,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o339",
+  "id": "o357",
   "variantId": "apple-macbook-pro-14-m5-pro~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -18307,7 +18805,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o340",
+  "id": "o358",
   "variantId": "apple-macbook-pro-14-m5-pro~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18321,7 +18819,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o341",
+  "id": "o359",
   "variantId": "apple-macbook-pro-14-m5-pro~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18335,7 +18833,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o342",
+  "id": "o360",
   "variantId": "apple-macbook-pro-14-m5-pro~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18349,7 +18847,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o343",
+  "id": "o361",
   "variantId": "apple-macbook-pro-14-m5-max~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18363,7 +18861,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o344",
+  "id": "o362",
   "variantId": "apple-macbook-pro-14-m5-max~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18377,7 +18875,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o345",
+  "id": "o363",
   "variantId": "apple-macbook-pro-16-m5-pro~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -18391,7 +18889,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o346",
+  "id": "o364",
   "variantId": "apple-macbook-pro-16-m5-pro~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18405,7 +18903,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o347",
+  "id": "o365",
   "variantId": "apple-macbook-pro-16-m5-pro~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -18419,7 +18917,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o348",
+  "id": "o366",
   "variantId": "apple-macbook-pro-16-m5-pro~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18433,7 +18931,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o349",
+  "id": "o367",
   "variantId": "apple-macbook-pro-16-m5-pro~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18447,7 +18945,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o350",
+  "id": "o368",
   "variantId": "apple-macbook-pro-16-m5-pro~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18461,7 +18959,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o351",
+  "id": "o369",
   "variantId": "apple-macbook-pro-16-m5-max~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -18475,7 +18973,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o352",
+  "id": "o370",
   "variantId": "apple-macbook-pro-16-m5-max~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18489,7 +18987,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o353",
+  "id": "o371",
   "variantId": "apple-macbook-pro-16-m5-max~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -18503,7 +19001,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o354",
+  "id": "o372",
   "variantId": "apple-macbook-pro-16-m5-max~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18517,7 +19015,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o355",
+  "id": "o373",
   "variantId": "apple-macbook-pro-16-m5-max~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18531,7 +19029,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o356",
+  "id": "o374",
   "variantId": "apple-imac-24-m4~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -18545,7 +19043,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o357",
+  "id": "o375",
   "variantId": "apple-imac-24-m4~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18559,7 +19057,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o358",
+  "id": "o376",
   "variantId": "apple-imac-24-m4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -18573,7 +19071,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o359",
+  "id": "o377",
   "variantId": "apple-imac-24-m4~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18587,7 +19085,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o360",
+  "id": "o378",
   "variantId": "apple-imac-24-m4~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -18601,7 +19099,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o361",
+  "id": "o379",
   "variantId": "apple-imac-24-m4~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18615,7 +19113,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o362",
+  "id": "o380",
   "variantId": "apple-imac-24-m4~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -18629,7 +19127,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o363",
+  "id": "o381",
   "variantId": "apple-imac-24-m4~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -18643,7 +19141,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o364",
+  "id": "o382",
   "variantId": "apple-imac-24-m4~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18657,7 +19155,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o365",
+  "id": "o383",
   "variantId": "apple-imac-24-m4~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -18671,7 +19169,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o366",
+  "id": "o384",
   "variantId": "apple-imac-24-m4~v3",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -18685,7 +19183,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o367",
+  "id": "o385",
   "variantId": "apple-mac-mini-m6~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -18699,7 +19197,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o368",
+  "id": "o386",
   "variantId": "apple-mac-mini-m6~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18713,7 +19211,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o369",
+  "id": "o387",
   "variantId": "apple-mac-mini-m6~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -18727,7 +19225,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o370",
+  "id": "o388",
   "variantId": "apple-mac-mini-m6~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18741,7 +19239,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o371",
+  "id": "o389",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -18755,7 +19253,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o372",
+  "id": "o390",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18769,7 +19267,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o373",
+  "id": "o391",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -18783,7 +19281,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o374",
+  "id": "o392",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -18797,7 +19295,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o375",
+  "id": "o393",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18811,7 +19309,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o376",
+  "id": "o394",
   "variantId": "apple-mac-mini-m6~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18825,7 +19323,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o377",
+  "id": "o395",
   "variantId": "apple-mac-mini-m6~v3",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18839,7 +19337,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o378",
+  "id": "o396",
   "variantId": "apple-mac-mini-m5-pro~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18853,7 +19351,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o379",
+  "id": "o397",
   "variantId": "apple-mac-mini-m5-pro~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -18867,7 +19365,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o380",
+  "id": "o398",
   "variantId": "apple-mac-mini-m5-pro~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18881,7 +19379,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o381",
+  "id": "o399",
   "variantId": "apple-mac-studio-m5-max~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -18895,7 +19393,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o382",
+  "id": "o400",
   "variantId": "apple-mac-studio-m5-max~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18909,7 +19407,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o383",
+  "id": "o401",
   "variantId": "apple-mac-studio-m5-max~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -18923,7 +19421,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o384",
+  "id": "o402",
   "variantId": "apple-mac-studio-m5-max~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -18937,7 +19435,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o385",
+  "id": "o403",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -18951,7 +19449,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o386",
+  "id": "o404",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -18965,7 +19463,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o387",
+  "id": "o405",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -18979,7 +19477,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o388",
+  "id": "o406",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -18993,7 +19491,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o389",
+  "id": "o407",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -19007,7 +19505,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o390",
+  "id": "o408",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -19021,7 +19519,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o391",
+  "id": "o409",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -19035,7 +19533,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o392",
+  "id": "o410",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -19049,7 +19547,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o393",
+  "id": "o411",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -19063,7 +19561,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o394",
+  "id": "o412",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -19077,7 +19575,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o395",
+  "id": "o413",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -19091,7 +19589,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o396",
+  "id": "o414",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -19105,7 +19603,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o397",
+  "id": "o415",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -19119,7 +19617,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o398",
+  "id": "o416",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -19133,7 +19631,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o399",
+  "id": "o417",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -19147,7 +19645,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o400",
+  "id": "o418",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -19161,7 +19659,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o401",
+  "id": "o419",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -19175,7 +19673,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o402",
+  "id": "o420",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -19189,7 +19687,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o403",
+  "id": "o421",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -19203,7 +19701,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o404",
+  "id": "o422",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -19217,7 +19715,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o405",
+  "id": "o423",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -19231,7 +19729,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o406",
+  "id": "o424",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -19245,7 +19743,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o407",
+  "id": "o425",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -19259,7 +19757,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o408",
+  "id": "o426",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -19273,7 +19771,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o409",
+  "id": "o427",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -19287,7 +19785,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o410",
+  "id": "o428",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -19301,7 +19799,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o411",
+  "id": "o429",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -19315,7 +19813,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o412",
+  "id": "o430",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -19329,7 +19827,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o413",
+  "id": "o431",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -19343,7 +19841,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o414",
+  "id": "o432",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -19357,7 +19855,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o415",
+  "id": "o433",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -19371,7 +19869,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o416",
+  "id": "o434",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -19385,7 +19883,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o417",
+  "id": "o435",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -19399,7 +19897,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o418",
+  "id": "o436",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -19413,7 +19911,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o419",
+  "id": "o437",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -19427,7 +19925,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o420",
+  "id": "o438",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -19441,7 +19939,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o421",
+  "id": "o439",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -19455,7 +19953,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o422",
+  "id": "o440",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -19469,7 +19967,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o423",
+  "id": "o441",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -19483,7 +19981,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o424",
+  "id": "o442",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -19497,7 +19995,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o425",
+  "id": "o443",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -19511,7 +20009,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o426",
+  "id": "o444",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -19525,7 +20023,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o427",
+  "id": "o445",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -19539,7 +20037,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o428",
+  "id": "o446",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -19553,7 +20051,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o429",
+  "id": "o447",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -19567,7 +20065,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o430",
+  "id": "o448",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -19581,7 +20079,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o431",
+  "id": "o449",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -19595,7 +20093,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o432",
+  "id": "o450",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -19609,7 +20107,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o433",
+  "id": "o451",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -19623,7 +20121,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o434",
+  "id": "o452",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -19637,7 +20135,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o435",
+  "id": "o453",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -19651,7 +20149,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o436",
+  "id": "o454",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -19665,7 +20163,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o437",
+  "id": "o455",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -19679,7 +20177,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o438",
+  "id": "o456",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -19693,7 +20191,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o439",
+  "id": "o457",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -19707,7 +20205,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o440",
+  "id": "o458",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -19721,7 +20219,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o441",
+  "id": "o459",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -19735,7 +20233,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o442",
+  "id": "o460",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -19749,7 +20247,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o443",
+  "id": "o461",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -19763,7 +20261,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o444",
+  "id": "o462",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -19777,7 +20275,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o445",
+  "id": "o463",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -19791,7 +20289,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o446",
+  "id": "o464",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -19805,7 +20303,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o447",
+  "id": "o465",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -19819,7 +20317,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o448",
+  "id": "o466",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -19833,7 +20331,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o449",
+  "id": "o467",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -19847,7 +20345,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o450",
+  "id": "o468",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -19861,7 +20359,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o451",
+  "id": "o469",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -19875,7 +20373,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o452",
+  "id": "o470",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -19889,7 +20387,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o453",
+  "id": "o471",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -19903,7 +20401,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o454",
+  "id": "o472",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -19917,7 +20415,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o455",
+  "id": "o473",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -19931,7 +20429,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o456",
+  "id": "o474",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -19945,7 +20443,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o457",
+  "id": "o475",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -19959,7 +20457,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o458",
+  "id": "o476",
   "variantId": "xiaomi-redmi-note-17-pro-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -19973,7 +20471,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o459",
+  "id": "o477",
   "variantId": "xiaomi-redmi-note-17-pro-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -19987,7 +20485,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o460",
+  "id": "o478",
   "variantId": "xiaomi-redmi-note-17-pro-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -20001,7 +20499,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o461",
+  "id": "o479",
   "variantId": "xiaomi-redmi-note-17-pro-5g~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -20015,7 +20513,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o462",
+  "id": "o480",
   "variantId": "realme-c100~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -20029,7 +20527,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o463",
+  "id": "o481",
   "variantId": "realme-c100~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -20043,7 +20541,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o464",
+  "id": "o482",
   "variantId": "realme-c100~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20057,7 +20555,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o465",
+  "id": "o483",
   "variantId": "realme-c100~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -20071,7 +20569,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o466",
+  "id": "o484",
   "variantId": "realme-c100~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -20085,7 +20583,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o467",
+  "id": "o485",
   "variantId": "realme-c100~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -20099,7 +20597,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o468",
+  "id": "o486",
   "variantId": "realme-c100~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -20113,7 +20611,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o469",
+  "id": "o487",
   "variantId": "realme-c100~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -20127,7 +20625,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o470",
+  "id": "o488",
   "variantId": "realme-c100~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20141,7 +20639,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o471",
+  "id": "o489",
   "variantId": "realme-c100~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -20155,7 +20653,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o472",
+  "id": "o490",
   "variantId": "realme-c100~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -20169,7 +20667,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o473",
+  "id": "o491",
   "variantId": "realme-c100~v2",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -20183,7 +20681,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o474",
+  "id": "o492",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -20197,7 +20695,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o475",
+  "id": "o493",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -20211,7 +20709,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o476",
+  "id": "o494",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20225,7 +20723,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o477",
+  "id": "o495",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -20239,7 +20737,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o478",
+  "id": "o496",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -20253,7 +20751,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o479",
+  "id": "o497",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -20267,7 +20765,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o480",
+  "id": "o498",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -20281,7 +20779,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o481",
+  "id": "o499",
   "variantId": "oppo-a6~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -20295,7 +20793,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o482",
+  "id": "o500",
   "variantId": "oppo-a6~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -20309,7 +20807,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o483",
+  "id": "o501",
   "variantId": "oppo-a6~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20323,7 +20821,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o484",
+  "id": "o502",
   "variantId": "oppo-a6~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -20337,7 +20835,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o485",
+  "id": "o503",
   "variantId": "oppo-a6~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -20351,7 +20849,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o486",
+  "id": "o504",
   "variantId": "oppo-a6~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -20365,7 +20863,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o487",
+  "id": "o505",
   "variantId": "oppo-a6~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -20379,7 +20877,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o488",
+  "id": "o506",
   "variantId": "oppo-a6~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20393,7 +20891,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o489",
+  "id": "o507",
   "variantId": "oppo-a6~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -20407,7 +20905,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o490",
+  "id": "o508",
   "variantId": "oppo-a6~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -20421,7 +20919,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o491",
+  "id": "o509",
   "variantId": "oppo-reno15-f-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -20435,7 +20933,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o492",
+  "id": "o510",
   "variantId": "oppo-reno15-f-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -20449,7 +20947,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o493",
+  "id": "o511",
   "variantId": "oppo-reno15-f-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -20463,7 +20961,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o494",
+  "id": "o512",
   "variantId": "vivo-y31d~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -20477,7 +20975,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o495",
+  "id": "o513",
   "variantId": "vivo-y31d~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -20491,7 +20989,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o496",
+  "id": "o514",
   "variantId": "vivo-y31d~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20505,7 +21003,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o497",
+  "id": "o515",
   "variantId": "vivo-y31d~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -20519,7 +21017,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o498",
+  "id": "o516",
   "variantId": "vivo-y31d~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -20533,7 +21031,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o499",
+  "id": "o517",
   "variantId": "vivo-y31d~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -20547,7 +21045,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o500",
+  "id": "o518",
   "variantId": "vivo-y31d~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20561,7 +21059,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o501",
+  "id": "o519",
   "variantId": "vivo-y31d~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -20575,7 +21073,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o502",
+  "id": "o520",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -20589,7 +21087,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o503",
+  "id": "o521",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -20603,7 +21101,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o504",
+  "id": "o522",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20617,7 +21115,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o505",
+  "id": "o523",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -20631,7 +21129,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o506",
+  "id": "o524",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -20645,7 +21143,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o507",
+  "id": "o525",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -20659,7 +21157,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o508",
+  "id": "o526",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -20673,7 +21171,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o509",
+  "id": "o527",
   "variantId": "vivo-v70-fe-5g~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -20687,7 +21185,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o510",
+  "id": "o528",
   "variantId": "vivo-v70-fe-5g~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -20701,7 +21199,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o511",
+  "id": "o529",
   "variantId": "vivo-v70-fe-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20715,7 +21213,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o512",
+  "id": "o530",
   "variantId": "oneplus-nord-ce5-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20729,7 +21227,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o513",
+  "id": "o531",
   "variantId": "oneplus-nord-4~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20743,7 +21241,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o514",
+  "id": "o532",
   "variantId": "oneplus-nord-ce4-lite-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20757,7 +21255,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o515",
+  "id": "o533",
   "variantId": "google-pixel-8a~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -20771,7 +21269,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o516",
+  "id": "o534",
   "variantId": "realme-14-pro-5g~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -20785,7 +21283,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o517",
+  "id": "o535",
   "variantId": "realme-14-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20799,7 +21297,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o518",
+  "id": "o536",
   "variantId": "huawei-nova-y74~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -20813,7 +21311,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o519",
+  "id": "o537",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -20827,7 +21325,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o520",
+  "id": "o538",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -20841,7 +21339,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o521",
+  "id": "o539",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -20855,7 +21353,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o522",
+  "id": "o540",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -20869,7 +21367,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o523",
+  "id": "o541",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -20883,7 +21381,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o524",
+  "id": "o542",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -20897,7 +21395,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o525",
+  "id": "o543",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "chaldal.com",
   "condition": "official",
@@ -20911,7 +21409,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o526",
+  "id": "o544",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -20925,7 +21423,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o527",
+  "id": "o545",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -20939,7 +21437,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o528",
+  "id": "o546",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -20953,7 +21451,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o529",
+  "id": "o547",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -20967,7 +21465,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o530",
+  "id": "o548",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -20981,7 +21479,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o531",
+  "id": "o549",
   "variantId": "the-ordinary-niacinamide-10-zinc-1-serum-30ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -20995,7 +21493,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o532",
+  "id": "o550",
   "variantId": "the-ordinary-niacinamide-10-zinc-1-serum-30ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21009,7 +21507,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o533",
+  "id": "o551",
   "variantId": "the-ordinary-niacinamide-10-zinc-1-serum-30ml~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -21023,7 +21521,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o534",
+  "id": "o552",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21037,7 +21535,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o535",
+  "id": "o553",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21051,7 +21549,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o536",
+  "id": "o554",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -21065,7 +21563,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o537",
+  "id": "o555",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "beautyline.com.bd",
   "condition": "official",
@@ -21079,7 +21577,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o538",
+  "id": "o556",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -21093,7 +21591,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o539",
+  "id": "o557",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -21107,7 +21605,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o540",
+  "id": "o558",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -21121,7 +21619,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o541",
+  "id": "o559",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21135,7 +21633,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o542",
+  "id": "o560",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21149,7 +21647,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o543",
+  "id": "o561",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -21163,7 +21661,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o544",
+  "id": "o562",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "cosmeticscorner.com.bd",
   "condition": "official",
@@ -21177,7 +21675,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o545",
+  "id": "o563",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21191,7 +21689,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o546",
+  "id": "o564",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21205,7 +21703,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o547",
+  "id": "o565",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -21219,7 +21717,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o548",
+  "id": "o566",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -21233,7 +21731,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o549",
+  "id": "o567",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21247,7 +21745,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o550",
+  "id": "o568",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21261,7 +21759,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o551",
+  "id": "o569",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -21275,7 +21773,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o552",
+  "id": "o570",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "indianmartbd.com",
   "condition": "official",
@@ -21289,7 +21787,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o553",
+  "id": "o571",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -21303,7 +21801,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o554",
+  "id": "o572",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21317,7 +21815,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o555",
+  "id": "o573",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21331,7 +21829,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o556",
+  "id": "o574",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -21345,7 +21843,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o557",
+  "id": "o575",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -21359,7 +21857,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o558",
+  "id": "o576",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21373,7 +21871,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o559",
+  "id": "o577",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21387,7 +21885,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o560",
+  "id": "o578",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -21401,7 +21899,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o561",
+  "id": "o579",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -21415,7 +21913,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o562",
+  "id": "o580",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21429,7 +21927,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o563",
+  "id": "o581",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21443,7 +21941,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o564",
+  "id": "o582",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -21457,7 +21955,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o565",
+  "id": "o583",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -21471,7 +21969,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o566",
+  "id": "o584",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -21485,7 +21983,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o567",
+  "id": "o585",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -21499,7 +21997,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o568",
+  "id": "o586",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -21513,7 +22011,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o569",
+  "id": "o587",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -21527,7 +22025,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o570",
+  "id": "o588",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -21541,7 +22039,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o571",
+  "id": "o589",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -21555,7 +22053,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o572",
+  "id": "o590",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -21569,7 +22067,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o573",
+  "id": "o591",
   "variantId": "apple-watch-series-11~v3",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -21583,7 +22081,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o574",
+  "id": "o592",
   "variantId": "apple-watch-series-11~v4",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -21597,7 +22095,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o575",
+  "id": "o593",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -21611,7 +22109,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o576",
+  "id": "o594",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "unofficial",
@@ -21625,7 +22123,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o577",
+  "id": "o595",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "unofficial",
@@ -21639,7 +22137,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o578",
+  "id": "o596",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -21653,7 +22151,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o579",
+  "id": "o597",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -21667,7 +22165,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o580",
+  "id": "o598",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -21681,7 +22179,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o581",
+  "id": "o599",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -21695,7 +22193,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o582",
+  "id": "o600",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -21709,7 +22207,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o583",
+  "id": "o601",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -21723,7 +22221,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o584",
+  "id": "o602",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -21737,7 +22235,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o585",
+  "id": "o603",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -21751,7 +22249,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o586",
+  "id": "o604",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -21765,7 +22263,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o587",
+  "id": "o605",
   "variantId": "amazfit-active-2-premium~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -21779,7 +22277,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o588",
+  "id": "o606",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -21793,7 +22291,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o589",
+  "id": "o607",
   "variantId": "amazfit-active-2-premium~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -21807,7 +22305,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o590",
+  "id": "o608",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -21821,7 +22319,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o591",
+  "id": "o609",
   "variantId": "amazfit-active-2-premium~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -21835,7 +22333,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o592",
+  "id": "o610",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -21849,7 +22347,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o593",
+  "id": "o611",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "diamu.com.bd",
   "condition": "official",
@@ -21863,7 +22361,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o594",
+  "id": "o612",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -21877,7 +22375,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o595",
+  "id": "o613",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -21891,7 +22389,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o596",
+  "id": "o614",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -21905,7 +22403,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o597",
+  "id": "o615",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -21919,7 +22417,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o598",
+  "id": "o616",
   "variantId": "xiaomi-redmi-watch-6-active~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -21933,7 +22431,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o599",
+  "id": "o617",
   "variantId": "xiaomi-redmi-watch-6-active~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",

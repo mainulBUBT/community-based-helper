@@ -1,0 +1,431 @@
+{
+  "category": "laptop",
+  "sites": [
+    {
+      "name": "Star Tech",
+      "website": "https://www.startech.com.bd",
+      "note": "Largest BD computer retailer; server-rendered cash price, struck regular price and stock label; 2-year official warranty on these models. Used for specsSource too."
+    },
+    {
+      "name": "Apple Gadgets",
+      "website": "https://www.applegadgetsbd.com",
+      "note": "Cash price plus struck price and availability on page; importer channel with 1-year shop warranty, treated unofficial. Often cheapest."
+    },
+    {
+      "name": "Sumash Tech",
+      "website": "https://www.sumashtech.com",
+      "note": "Cash price plus struck price; states 1 year parts & 2 years service warranty, treated official. Big promo strikethroughs."
+    },
+    {
+      "name": "Binary Logic",
+      "website": "https://www.binarylogic.com.bd",
+      "note": "Authorized channel, OpenCart like Star Tech; cash price plus struck regular price, JSON-LD InStock; 2-year official warranty. 15ABR8 Ryzen 5 8GB unit currently out of stock."
+    }
+  ],
+  "products": [
+    {
+      "brand": "Lenovo",
+      "name": "LOQ 15AHP9",
+      "category": "laptop",
+      "releaseYear": 2024,
+      "popular": true,
+      "variants": [
+        {
+          "label": "Ryzen 7 7445HS RTX 3050 16GB / 512GB",
+          "attributes": {
+            "chip": "Ryzen 7 7445HS",
+            "ram": "16GB",
+            "storage": "512GB",
+            "gpu": "RTX 3050 6GB"
+          },
+          "officialPrice": 134999
+        },
+        {
+          "label": "Ryzen 7 7445HS RTX 4050 16GB / 512GB",
+          "attributes": {
+            "chip": "Ryzen 7 7445HS",
+            "ram": "16GB",
+            "storage": "512GB",
+            "gpu": "RTX 4050 6GB"
+          },
+          "officialPrice": 144999
+        }
+      ],
+      "colors": [
+        "Luna Grey"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-LOQ-15AHP9-AMD-Ryzen-7-7445HS-NVIDIA-GeForce-RTX-3050-With-6GB-Graphics-15.6-FHD-Gaming-Laptop-1-1409.png",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-LOQ-15AHP9-AMD-Ryzen-7-7445HS-NVIDIA-GeForce-RTX-4050-With-6GB-Graphics-15.6-FHD-Gaming-Laptop-4474.png"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/lenovo-loq-15ahp9-amd-ryzen-7-7445hs-3050-gaming-laptop",
+      "offers": [
+        {
+          "variant": "Ryzen 7 7445HS RTX 3050 16GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/lenovo-loq-15ahp9-amd-ryzen-7-7445hs-3050-gaming-laptop",
+          "price": 133990,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "Ryzen 7 7445HS RTX 3050 16GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/lenovo-loq-15ahp9-ryzen-7-7445hs-rtx-3050-156-144hz-gaming-laptop",
+          "price": 134999,
+          "oldPrice": 145999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "Ryzen 7 7445HS RTX 4050 16GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/lenovo-loq-15ahp9-amd-ryzen-7-7445hs-gaming-laptop",
+          "price": 143990,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "Ryzen 7 7445HS RTX 4050 16GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/lenovo-loq-15ahp9-ryzen-7-7445hs-rtx-4050-156-144hz-gaming-laptop",
+          "price": 144999,
+          "oldPrice": 164999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Lenovo",
+      "name": "IdeaPad Slim 3 15ABR8",
+      "category": "laptop",
+      "releaseYear": 2023,
+      "variants": [
+        {
+          "label": "Ryzen 5 5625U 16GB / 512GB",
+          "attributes": {
+            "chip": "Ryzen 5 5625U",
+            "ram": "16GB",
+            "storage": "512GB"
+          },
+          "officialPrice": 84000
+        },
+        {
+          "label": "Ryzen 5 5625U 8GB / 512GB",
+          "attributes": {
+            "chip": "Ryzen 5 5625U",
+            "ram": "8GB",
+            "storage": "512GB"
+          },
+          "officialPrice": 71000
+        },
+        {
+          "label": "Ryzen 7 5825U 16GB / 512GB",
+          "attributes": {
+            "chip": "Ryzen 7 5825U",
+            "ram": "16GB",
+            "storage": "512GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Abyss Blue"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-IdeaPad-Slim-3-15ABR8-AMD-Ryzen-7-5825U-AMD-Radeon-Graphics-15.6-Laptop-6404.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/lenovo-ideapad-slim-3-15abr8-5625u-laptop",
+      "offers": [
+        {
+          "variant": "Ryzen 5 5625U 16GB / 512GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/lenovo-ideapad-slim-3-15abr8-5625u-laptop",
+          "price": 84000,
+          "oldPrice": 90060,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "Ryzen 5 5625U 8GB / 512GB",
+          "site": "Binary Logic",
+          "url": "https://www.binarylogic.com.bd/lenovo-ip-slim-3-15abr8-ryzen-5-156-fhd-laptop",
+          "price": 71000,
+          "oldPrice": 78900,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "Ryzen 7 5825U 16GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/lenovo-ideapad-slim-3-15abr8-amd-ryzen-7-5825u-laptop",
+          "price": 82999,
+          "oldPrice": 96500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Lenovo",
+      "name": "IdeaPad Slim 3 14IRH10",
+      "category": "laptop",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "Core i5-13420H 16GB / 512GB",
+          "attributes": {
+            "chip": "Core i5-13420H",
+            "ram": "16GB",
+            "storage": "512GB"
+          },
+          "officialPrice": 93000
+        },
+        {
+          "label": "Core i5-13420H 16GB / 1TB",
+          "attributes": {
+            "chip": "Core i5-13420H",
+            "ram": "16GB",
+            "storage": "1TB"
+          },
+          "officialPrice": 105500
+        }
+      ],
+      "colors": [
+        "Abyss Blue"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-IdeaPad-Slim-3-14IRH10-Intel-Core-i5-13420H-14-WUXGA-Laptop-1-5071.jpg",
+        "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3-14irh10/ideapad-slim-3-14irh10-05-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/lenovo-ideapad-slim-3-14irh10-1tb-ssd-laptop-with-freedos",
+      "offers": [
+        {
+          "variant": "Core i5-13420H 16GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/lenovo-ideapad-slim-3-14irh10-laptop",
+          "price": 77500,
+          "oldPrice": 84000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "Core i5-13420H 16GB / 512GB",
+          "site": "Binary Logic",
+          "url": "https://www.binarylogic.com.bd/lenovo-ideapad-slim-3-14irh10-core-i5-13th-gen",
+          "price": 93000,
+          "oldPrice": 103400,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "Core i5-13420H 16GB / 1TB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/lenovo-ideapad-slim-3-14irh10-1tb-ssd-laptop-with-freedos",
+          "price": 105500,
+          "oldPrice": 112840,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "HP",
+      "name": "15-fd0180nia",
+      "category": "laptop",
+      "releaseYear": 2023,
+      "variants": [
+        {
+          "label": "Core i3 1315U 8GB / 512GB",
+          "attributes": {
+            "chip": "Core i3 1315U",
+            "ram": "8GB",
+            "storage": "512GB"
+          },
+          "officialPrice": 63999
+        }
+      ],
+      "colors": [
+        "Natural Silver"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/HP-FD0180nia-Intel-Core-i3-1315U-Intel-UHD-Graphics-15.6-FHD-Lapotopzgg-7171.png"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/hp-15-fd0180nia-intel-core-i3-1315u-fhd-laptop",
+      "offers": [
+        {
+          "variant": "Core i3 1315U 8GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/hp-15-fd0180nia-intel-core-i3-1315u-fhd-laptop",
+          "price": 66500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "Core i3 1315U 8GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/hp-laptop-15-fd0180nia",
+          "price": 63999,
+          "oldPrice": 69000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Dell",
+      "name": "Pro 15 Essential",
+      "category": "laptop",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "Core 3 100U 8GB / 512GB",
+          "attributes": {
+            "chip": "Core 3 100U",
+            "ram": "8GB",
+            "storage": "512GB"
+          },
+          "officialPrice": 71000
+        }
+      ],
+      "colors": [
+        "Carbon"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/laptop/dell/pro-15-essential-pv15250/pro-15-essential-pv15250-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/dell-pro-15-essential-pv15250-laptop",
+      "offers": [
+        {
+          "variant": "Core 3 100U 8GB / 512GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/dell-pro-15-essential-pv15250-laptop",
+          "price": 71000,
+          "oldPrice": 86500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "Core 3 100U 8GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/dell-pro-15-essential-pv15250-core-3-100u-8gb-ram-512gb-ssd-156-120hz-laptop",
+          "price": 67499,
+          "oldPrice": 87500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "Core 3 100U 8GB / 512GB",
+          "site": "Binary Logic",
+          "url": "https://www.binarylogic.com.bd/laptop-dell-pro-15-essential-core-3-100u",
+          "price": 65000,
+          "oldPrice": 72300,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "HP",
+      "name": "250R G10",
+      "category": "laptop",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "Core 3 100U 8GB / 512GB",
+          "attributes": {
+            "chip": "Core 3 100U",
+            "ram": "8GB",
+            "storage": "512GB"
+          },
+          "officialPrice": 99900
+        },
+        {
+          "label": "Core 5 120U 16GB / 512GB",
+          "attributes": {
+            "chip": "Core 5 120U",
+            "ram": "16GB",
+            "storage": "512GB"
+          },
+          "officialPrice": 84999
+        }
+      ],
+      "colors": [
+        "Dark Ash"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/240r-g10-dark-ash/240r-g10-dark-ash-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/hp-250r-g10-core-3-100u-laptop",
+      "offers": [
+        {
+          "variant": "Core 3 100U 8GB / 512GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/hp-250r-g10-core-3-100u-laptop",
+          "price": 99900,
+          "oldPrice": 106150,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "Core 3 100U 8GB / 512GB",
+          "site": "Binary Logic",
+          "url": "https://www.binarylogic.com.bd/hp-250r-g10-intel-core-3-100u-business-laptop-pc",
+          "price": 65000,
+          "oldPrice": 72300,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "Core 5 120U 16GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/hp-250r-g10-core-5-120u-16gb",
+          "price": 84999,
+          "oldPrice": 87999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    }
+  ]
+}

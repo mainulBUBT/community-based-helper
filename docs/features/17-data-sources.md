@@ -62,6 +62,14 @@
 - Rokomari বাদ: robots.txt search engine ছাড়া অন্য crawler-কে admin@rokomari.com-এ অনুমতি চাইতে বলে; অনুমতি ছাড়া যোগ করা হয়নি।
 - Beauty Hub/Shajrup বাদ: নির্ভরযোগ্য JSON-LD/দামের markup নেই বা JS-rendered।
 
+### Windows ল্যাপটপ (২৪ অক্টোবর ২০২৬)
+
+৬টা পণ্য, ১১টা ভার্সন, ৪টা দোকান থেকে ১৮টা দাম; গেমিং (Lenovo LOQ 15AHP9 — RTX 3050/4050) আর অফিস (IdeaPad Slim 3 15ABR8/14IRH10, HP 15-fd0180nia, Dell Pro 15 Essential, HP 250R G10) দুই ধরনেরই। প্রতিটা পাতায় গিয়ে CPU/RAM/SSD/দাম মিলিয়ে দেখা, `worker:check`-এ ১৮টাই ঠিক ধরা পড়ে (০ মেলেনি, ০ ব্যর্থ)।
+
+- Binary Logic নতুন দোকান হিসেবে যোগ হলো (binarylogic.com.bd; robots.txt খোলা, OpenCart — Star Tech-এর মতোই পার্স হয়, ২ বছরের অফিসিয়াল ওয়ারেন্টি)।
+- HP 15-fd0215dx বাদ: Apple Gadgets আর Sumash একই SKU-তে আলাদা CPU দেখায় (i5-1334U বনাম Core 5 120U) — কোনটা আসল বলা যায় না।
+- LOQ 15AHP9 ২টা দোকানে, বাকিগুলো ২-৩টায়; `discover` এখন চালু, সময়ের সাথে আরও দোকান যুক্ত হবে।
+
 কোন দোকান কীসের জন্য ভালো:
 
 | দোকান | সাইট | যে ভাগে | কেন |

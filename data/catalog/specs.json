@@ -11061,5 +11061,1083 @@
     }
    ]
   }
+ ],
+ "https://www.startech.com.bd/lenovo-ideapad-slim-3-15abr8-5625u-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "AMD"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Ryzen 5 5625U"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Up to 4.3GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "6"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "12"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "L1 Cache: 256KB L2 Cache: 3MB L3 Cache: 16MB"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "AMD SoC Platform"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "15.6 Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "FHD (1920×1080)"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Display Features",
+     "value": "300nits Anti-glare"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR4"
+    },
+    {
+     "label": "Removable",
+     "value": "not upgradable"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "3200MHz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "1"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "16GB"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 2242 PCIe 4.0x4 NVMe"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB SSD"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "AMD Radeon Graphics"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Non-Backlit, English (EU)"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "Buttonless Mylar® surface multi-touch touchpad, supports Precision TouchPad (PTP), 69 x 104 mm (2.72 x 4.09 inches)"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "720p Webcam"
+    },
+    {
+     "label": "Speaker",
+     "value": "1.5W x2 Stereo"
+    },
+    {
+     "label": "Microphone",
+     "value": "2x Array"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Dolby Audio"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "SD Card Reader"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 1.4"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "2x USB 3.2 Gen 1"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB-C 3.2 Gen 1 (support data transfer, Power Delivery and DisplayPort 1.2)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x Headphone / microphone combo jack (3.5mm)"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "N/A"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6, 11ax 2x2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.2"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    },
+    {
+     "label": "Security Chip",
+     "value": "FW TPM 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Integrated"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "47Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "65W round tip (3-pin)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Abyss Blue"
+    },
+    {
+     "label": "Dimensions",
+     "value": "359.3 x 235 x 17.9 mm (14.15 x 9.25 x 0.70 inches)"
+    },
+    {
+     "label": "Weight",
+     "value": "Starting at 1.62 kg (3.57 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "PC-ABS (Top), PC-ABS (Bottom)"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "MIL-STD-810H military test passed (21 test items)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/lenovo-ideapad-slim-3-14irh10-1tb-ssd-laptop-with-freedos": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core i5-13420H"
+    },
+    {
+     "label": "Generation",
+     "value": "13th Generation"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "P-core 2.1 / 4.6GHz, E-core 1.5 / 3.4GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "8 (4 Performance cores, 4 Efficient cores)"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "12"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "12MB"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Intel SoC Platform"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "14\""
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "WUXGA (1920x1200)"
+    },
+    {
+     "label": "Display Features",
+     "value": "300nits Anti-glare, 45% NTSC"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB (8GB Soldered DDR5-4800 + 8GB SO-DIMM DDR5-4800)"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "4800 MHz"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "Up to 24GB (8GB soldered + 16GB SO-DIMM) DDR5-4800 offering"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 2242 PCIe 4.0x4 NVMe SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "1TB"
+    },
+    {
+     "label": "Extra M.2 Slot",
+     "value": "Yes"
+    },
+    {
+     "label": "Supported SSD Type",
+     "value": "Up to two drives, 2x M.2 SSD"
+    },
+    {
+     "label": "Storage Upgrade",
+     "value": "Up to 1TB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "Intel UHD Graphics"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Non-backlit, English (EU)"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad (PTP), 75 x 120 mm (2.95 x 4.72 inches)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "HD 720p with Privacy Shutter"
+    },
+    {
+     "label": "Speaker",
+     "value": "Stereo speakers, 2W x2"
+    },
+    {
+     "label": "Microphone",
+     "value": "2x, Array Microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Optimized with Dolby Audio"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "SD Card Reader"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 1.4"
+    },
+    {
+     "label": "USB 2 Port",
+     "value": "2x USB-A (USB 5Gbps / USB 3.2 Gen 1)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB-C (USB 5Gbps / USB 3.2 Gen 1), with USB PD 3.0 and DisplayPort 1.2"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x Headphone / microphone combo jack (3.5mm)"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "N/A"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6, 802.11ax"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.2"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Firmware TPM 2.0 Enabled"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "FreeDOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Integrated"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "50Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "65W Round Tip (3-pin)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Luna Grey"
+    },
+    {
+     "label": "Dimensions",
+     "value": "314.4 x 222.1 x 16.9-17.9 mm (12.38 x 8.74 x 0.67-0.70 inches)"
+    },
+    {
+     "label": "Weight",
+     "value": "Starting at 1.39 kg (3.06 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Aluminium (Top), PC-ABS (Bottom)"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "MIL-STD-810H military test passed (21 test items) TÜV Rheinland Low Blue Light (Software Solution) Green Certifications: ENERGY STAR 8.0 EPEAT Silver Registered ErP Lot 6 ErP Lot 26 RoHS compliant"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/dell-pro-15-essential-pv15250-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core 3 100U"
+    },
+    {
+     "label": "Generation",
+     "value": "Intel Core processors (Series 1)"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "up to 4.7 GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "6 (2P + 4E)"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "8"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "10 MB Intel Smart Cache"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Intel SoC Platform"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "15.6\""
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "FHD"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "N/A"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "WVA, IPS, Anti-Glare, 250 nits"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "4400 MHz"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 PCIe NVMe SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "Intel UHD Graphics"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "English US non-backlit keyboard"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Precision touchpad"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "720p at 30 fps HD RGB camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "2 tuned speakers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Single integrated microphone"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "1x SD-card slot"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1 HDMI 1.4 port"
+    },
+    {
+     "label": "USB 2 Port",
+     "value": "1 USB 2.0 (480 Mbps) port"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "1 USB 3.2 Gen 1 Type-A (5 Gbps) port"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1 USB 3.2 Gen 1 (5 Gbps) Type-C® data only port (only for computers with 13th Gen Intel® Core™ processors) 1 USB 3.2 Gen 1 (5 Gbps) Type-C® port with displayport 1.4 and power Delivery (only for computers with aluminum chassis)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1 Universal Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "N/A"
+    },
+    {
+     "label": "WiFi",
+     "value": "Realtek Wi-Fi 6 RTL8852BE, 2x2, 802.11ax, MU-MIMO"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth wireless card"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Free Dos"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "3-Cell Battery"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "41WHr (Integrated)"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "65 Watt AC adapter"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Carbon Black"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Height (rear): 0.75 in. (18.99 mm) Height (front): 0.67 in. (16.96 mm) Width: 14.11 in. (358.50 mm) Depth: 9.28 in. (235.56 mm)"
+    },
+    {
+     "label": "Weight",
+     "value": "Weight (maximum): 4.19 lb (1.90 kg)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Carbon Fiber"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/hp-250r-g10-core-3-100u-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core 3-100U"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Up to 4.7 GHz with Intel Turbo Boost Technology"
+    },
+    {
+     "label": "Processor Core",
+     "value": "6"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "8"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "10 MB L3 cache"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Intel integrated SoC"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "15.6-Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "FHD (1920 x 1080)"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "N/A"
+    },
+    {
+     "label": "Display Features",
+     "value": "micro-edge, anti-glare, 300 nits, 62.5% sRGB"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB (1 x 8GB)"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Removable",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5200Mhz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "PCIe NVMe M.2 SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "Intel Iris X Graphics"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Full-size keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "Full-size, soft gray keyboard with numeric keypad"
+    },
+    {
+     "label": "TouchPad",
+     "value": "HP Imagepad; Precision Touchpad support"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "HP True Vision 1080p FHD camera with temporal noise reduction"
+    },
+    {
+     "label": "Speaker",
+     "value": "Dual speakers"
+    },
+    {
+     "label": "Microphone",
+     "value": "integrated dual array digital microphones"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Mic mute key"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 1.4b"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "2x USB Type-A 5Gbps signaling rate"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB Type-C 5Gbps signaling rate (supports data transfer only and does not support charging or external monitors)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x headphone/microphone combo"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Realtek Wi-Fi 6 (2×2)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4 Wireless Card"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Trusted Platform Module (Firmware TPM) support"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "FreeDOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "3-cell, Li-ion polymer"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "41 Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "45 W Smart AC power adapter"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Dark Ash"
+    },
+    {
+     "label": "Dimensions",
+     "value": "35.98 x 23.6 x 1.86 cm"
+    },
+    {
+     "label": "Weight",
+     "value": "1.59 kg"
+    },
+    {
+     "label": "Part Number / MPN",
+     "value": "D4GQ3PT"
+    }
+   ]
+  }
  ]
 }
