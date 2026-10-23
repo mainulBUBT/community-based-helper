@@ -32,7 +32,7 @@ async function fetchCatalog(): Promise<Catalog> {
     categories: (categories.data ?? []).map(toCategory).filter((c) => c.active),
     products: (products.data ?? []).map(toProduct),
     sellers: (sellers.data ?? []).map(toSeller),
-    offers: (offers.data ?? []).map(toOffer),
+    offers: (offers.data ?? []).map(toOffer).filter((o) => o.published),
     promos: (promos.data ?? []).map(toPromo),
   };
 }

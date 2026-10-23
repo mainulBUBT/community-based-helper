@@ -55,12 +55,24 @@ export function sameSpec(a: string, b: string): boolean {
   });
 }
 
+const BRAND_STOP = new Set(["by", "and", "the", "&", "co"]);
+
+export function brandTokens(brand: string): string[] {
+  return tokens(brand).filter((t) => !BRAND_STOP.has(t));
+}
+
 // ইঞ্চি আর বন্ধনীর চিপ নামের অংশ হলেও দোকানের লিংকে প্রায়ই থাকে না, তাই এগুলো বাধ্যতামূলক নয়, শুধু অমিল হলে বাদ
-function productFits(title: string, listing: Set<string>, product: CatalogProduct): boolean {
+function productFits(title: string, listing: Set<string>, product: CatalogProduct, rivals: Set<string>): boolean {
   const required = tokens(product.name.replace(INCH, " ").replace(/\([^)]*\)/g, " "));
   if (!required.every((t) => listing.has(t))) return false;
-  const own = new Set([product.name, product.brand, ...product.variants.map((v) => v.label)].flatMap(tokens));
-  if ([...listing].some((t) => MODIFIERS.has(t) && !own.has(t))) return false;
+  const own = brandTokens(product.brand);
+  const hasBrand = own.length > 0 && own.some((t) => listing.has(t));
+  // লিস্টিংয়ে অন্য ব্র্যান্ডের নাম থাকলে পাতাটা ওঁদেরই — "Realme Buds 2" এই "Buds 2" নয়
+  if (!hasBrand && own.length > 0 && [...listing].some((t) => rivals.has(t))) return false;
+  // ছোট নাম ("Buds 2") কটন-বাডস পর্যন্ত মিলে ফেলে — ব্র্যান্ডের নাম পাতায় থাকতেই হবে
+  if (own.length > 0 && required.length <= 2 && !hasBrand) return false;
+  const labels = new Set([product.name, product.brand, ...product.variants.map((v) => v.label)].flatMap(tokens));
+  if ([...listing].some((t) => MODIFIERS.has(t) && !labels.has(t))) return false;
   return sameSpec(title, product.name);
 }
 
@@ -70,7 +82,13 @@ const GADGET_CATEGORIES = new Set(["charger", "fan"]);
 export function findProducts(title: string, catalog: CatalogProduct[]): CatalogProduct[] {
   const accessory = isAccessory(title);
   const listing = new Set(tokens(title));
-  const fit = catalog.filter((p) => !(accessory && !GADGET_CATEGORIES.has(p.category ?? "")) && productFits(title, listing, p));
+  const brands = new Map(catalog.map((p) => [p.brand, brandTokens(p.brand)]));
+  const fit = catalog.filter((p) => {
+    if (accessory && !GADGET_CATEGORIES.has(p.category ?? "")) return false;
+    const own = brands.get(p.brand) ?? [];
+    const rivals = new Set([...brands.values()].flat().filter((t) => !own.includes(t)));
+    return productFits(title, listing, p, rivals);
+  });
   const best = Math.max(...fit.map((p) => tokens(p.name).length));
   return fit.filter((p) => tokens(p.name).length === best);
 }

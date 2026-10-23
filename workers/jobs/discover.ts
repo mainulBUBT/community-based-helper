@@ -5,7 +5,7 @@ import { findProducts, sameSpec, type CatalogProduct, type CatalogVariant } from
 import { pool } from "../lib/pool";
 import { place, single, type PageOffer } from "../lib/variants";
 import { loadCatalog, markDiscovered } from "../services/catalog";
-import { knownOfferUrls, offerSlots, saveProductImage, slot, upsertOffer } from "../services/offers";
+import { knownOfferUrls, offerSlots, saveProductImage, slot, upsertOffer, variantPrices } from "../services/offers";
 import { enqueue, reviewedUrls } from "../services/review";
 import { sellersByStore, type SellerRef } from "../services/sellers";
 import { readPage } from "../stores/page";
@@ -31,6 +31,7 @@ interface Shop {
   seller: SellerRef;
   slots: Set<string>;
   official: Map<string, number | null>;
+  prices: Map<string, number[]>;
   tally: Tally;
 }
 
@@ -57,9 +58,24 @@ function claim(shop: Shop, spot: Spot): boolean {
 
 async function save(shop: Shop, spot: Spot) {
   if (!claim(shop, spot)) return;
+  // অফিসিয়াল দাম না থাকলে অন্য দোকানের দামই ভরসা — দূরের অংক (কটন-বাডসের ৳৩২০ হারের) সরাসরি ঢুকতে দেওয়া হয় না
+  const known = shop.prices.get(spot.variant.id);
+  if (known && known.length >= 2) {
+    const mid = median(known);
+    if (spot.offer.price < mid * PRICE_RANGE[0] || spot.offer.price > mid * PRICE_RANGE[1]) {
+      await review(shop, spot, "অন্য দোকানের দামের সাথে অনেক দূরে — ভুল পণ্য বা ভুল পড়া হতে পারে", 60);
+      return;
+    }
+  }
   await upsertOffer({ variantId: spot.variant.id, sellerId: shop.seller.id, condition: spot.condition, url: spot.listing.url }, spot.offer);
   shop.tally.added++;
 }
+
+const median = (xs: number[]) => {
+  const sorted = [...xs].sort((a, b) => a - b);
+  const mid = sorted.length >> 1;
+  return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+};
 
 async function review(shop: Shop, spot: Spot, reason: string, confidence: number) {
   if (!claim(shop, spot)) return;
@@ -120,6 +136,7 @@ export async function discover(): Promise<string> {
   const fresh = new Set(pending.map((p) => p.id));
   const sellers = await sellersByStore(stores);
   const slots = await offerSlots();
+  const prices = await variantPrices();
   const known = await knownOfferUrls();
   const reviewed = await reviewedUrls();
   const wanted = new Set(targets.map((p) => p.id));
@@ -136,7 +153,7 @@ export async function discover(): Promise<string> {
     stores.map(async (store) => {
       const seller = sellers.get(store.id);
       if (!seller) return notes.push(`${store.name}: বিক্রেতা তালিকায় নেই`);
-      const shop: Shop = { store, seller, slots, official, tally };
+      const shop: Shop = { store, seller, slots, official, prices, tally };
       // নতুন দোকান (এখনো একটাও দাম নেই): হাতে চালালেও পুরো ক্যাটালগ খোঁজা হয়, রাতের run এর অপেক্ষা লাগে না
       const whole = !knownHosts.has(host(store.origin));
       const storeTargets = whole ? catalog : targets;

@@ -114,4 +114,18 @@ export async function offerSlots(): Promise<Set<string>> {
   return new Set(rows.map((r) => slot(r.variant_id, r.seller_id, r.condition)));
 }
 
+// প্রতি ভ্যারিয়েন্টে এখনো পরিচিত দামগুলো — নতুন দোকানের দাম এর সাথে মিলিয়ে দেখা হয়
+export async function variantPrices(): Promise<Map<string, number[]>> {
+  const rows = await all<{ variant_id: string; price: number }>((from, to) =>
+    db().from("offers").select("variant_id, price").range(from, to),
+  );
+  const map = new Map<string, number[]>();
+  for (const row of rows) {
+    const list = map.get(row.variant_id);
+    if (list) list.push(row.price);
+    else map.set(row.variant_id, [row.price]);
+  }
+  return map;
+}
+
 export const slot = (variantId: string, sellerId: string, condition: string) => `${variantId}|${sellerId}|${condition}`;

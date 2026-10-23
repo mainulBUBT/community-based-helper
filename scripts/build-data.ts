@@ -50,7 +50,7 @@ async function fromSupabase(db: SupabaseClient): Promise<Raw> {
     categories: categories.map(toCategory),
     products: productRows.map(toProduct),
     sellers: sellers.map(toSeller),
-    offers: offerRows.map(toOffer),
+    offers: offerRows.map(toOffer).filter((o) => o.published),
     promos: promos.map(toPromo),
     history: historyRows.map(toPricePoint),
     settings: {
@@ -66,7 +66,7 @@ async function fromSample(): Promise<Raw> {
     categories: s.sampleCategories,
     products: s.sampleProducts,
     sellers: s.sampleSellers,
-    offers: s.sampleOffers,
+    offers: s.sampleOffers.filter((o) => o.published),
     promos: s.samplePromos,
     history: s.sampleHistory,
     settings: { ...s.sampleSettings },
