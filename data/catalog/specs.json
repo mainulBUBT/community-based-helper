@@ -7496,5 +7496,3570 @@
     }
    ]
   }
+ ],
+ "https://www.mobiledokan.com/mobile/oneplus-nord-ce5": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "OnePlus"
+    },
+    {
+     "label": "Model",
+     "value": "Nord CE5"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "09 July 2025"
+    },
+    {
+     "label": "Status",
+     "value": "Available"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android"
+    },
+    {
+     "label": "OS Version",
+     "value": "v15"
+    },
+    {
+     "label": "User Interface",
+     "value": "ColorOS 15.0"
+    },
+    {
+     "label": "Chipset",
+     "value": "Mediatek Dimensity 8350 Apex"
+    },
+    {
+     "label": "CPU",
+     "value": "Octa-core (1x3.35 GHz Cortex-A715 & 3x3.20 GHz Cortex-A715 & 4x2.20 GHz Cortex-A510)"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8 Cores"
+    },
+    {
+     "label": "Architecture",
+     "value": "64 bit"
+    },
+    {
+     "label": "Fabrication",
+     "value": "4 nm"
+    },
+    {
+     "label": "GPU",
+     "value": "Mali G615-MC6"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "Fluid AMOLED"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.77 inches (17.2 cm)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1080x2392 px (FHD+)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "19.9:9"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "387 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "89.7%"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "Mohs level 5"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "Brightness",
+     "value": "1430 nits"
+    },
+    {
+     "label": "HDR 10 / HDR + support",
+     "value": "HDR 10+"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Dual"
+    },
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, Wide Angle, Primary Camera, 8 MP, f/2.2, Ultra-Wide Angle Camera"
+    },
+    {
+     "label": "Sensor",
+     "value": "Sony LYT-600"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Contrast Detection autofocus, Phase Detection autofocus"
+    },
+    {
+     "label": "OIS",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "LED Flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8150 x 6150 Pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "20 x Digital Zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.8"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Touch to focus, Dual Video Recording, Slow Motion"
+    },
+    {
+     "label": "Video Recording",
+     "value": "3840x2160, 1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "60 fps, 480 fps"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "16 MP, f/2.4, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Sensor",
+     "value": "Sony IMX480"
+    },
+    {
+     "label": "Flash",
+     "value": "Screen flash"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Fixed Focus"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080, 1280x720"
+    },
+    {
+     "label": "Video FPS",
+     "value": "60 fps, 30 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.4"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "163.58 mm"
+    },
+    {
+     "label": "Width",
+     "value": "76.02 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "8.27 mm (Marble Mist) Or 8.17 mm (Black Infinity)"
+    },
+    {
+     "label": "Weight",
+     "value": "199 grams"
+    },
+    {
+     "label": "Colors",
+     "value": "Marble Mist, Black Infinity"
+    },
+    {
+     "label": "Waterproof",
+     "value": "Splash proof"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP65"
+    },
+    {
+     "label": "Ruggedness",
+     "value": "Dust proof"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Ion (Lithium Ion)"
+    },
+    {
+     "label": "Capacity",
+     "value": "7100 mAh"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "80W wired"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "256 GB"
+    },
+    {
+     "label": "Storage Type",
+     "value": "UFS 3.1"
+    },
+    {
+     "label": "Expandable Memory",
+     "value": "Up to 1 TB"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "LPDDR5X"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: Nano"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE, 5G"
+    },
+    {
+     "label": "SAR Value",
+     "value": "Head: 1.199 W/kg, Body: 0.907 W/kg"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 6 (802.11 a/b/g/n/ac/ax) 5GHz, MIMO"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v5.4"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Infrared",
+     "value": "Yes"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "On-screen"
+    },
+    {
+     "label": "Finger Sensor Type",
+     "value": "Optical"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Video",
+     "value": "4K@30/60fps (HDR), 1080p@30/60/120/480fps, 720p@960fps, gyro-EIS, OIS"
+    },
+    {
+     "label": "Document Reader",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "China"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, gyro, proximity, compass"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.com/mobile/oneplus-nord-4": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "OnePlus"
+    },
+    {
+     "label": "Model",
+     "value": "Nord 4"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "08 August 2024"
+    },
+    {
+     "label": "Status",
+     "value": "Available"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android"
+    },
+    {
+     "label": "OS Version",
+     "value": "v14"
+    },
+    {
+     "label": "User Interface",
+     "value": "OxygenOS 14.1"
+    },
+    {
+     "label": "Chipset",
+     "value": "Qualcomm Snapdragon 7 Plus Gen 3"
+    },
+    {
+     "label": "CPU",
+     "value": "Octa-core (1x2.8 GHz Cortex-X4 & 4x2.6 GHz Cortex-A720 & 3x1.9 GHz Cortex-A520)"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8 Cores"
+    },
+    {
+     "label": "Architecture",
+     "value": "64 bit"
+    },
+    {
+     "label": "Fabrication",
+     "value": "4 nm"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno 732"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "Fluid AMOLED"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.74 inches, (109.7 cm2)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1240x2772 px (FHD+)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "20:9"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "450 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "90.0%"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "Gorilla Glass"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "Brightness",
+     "value": "2150 nits"
+    },
+    {
+     "label": "HDR 10 / HDR + support",
+     "value": "HDR 10+"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Dual"
+    },
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, Wide Angle, Primary Camera, 8 MP, f/2.2, Ultra-Wide Angle, Camera"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Yes"
+    },
+    {
+     "label": "OIS",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "LED Flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8150 x 6150 Pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "20 x Digital Zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR) Macro Mode"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.8"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Filters, Touch to focus, Dual Video Recording, Slo-motion, Ultra Steady Video, Bokeh portrait video"
+    },
+    {
+     "label": "Video Recording",
+     "value": "3840x2160, 1920x1080, 1280x720"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps, 120 fps, 240 fps"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "16 MP, f/2.4, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Fixed Focus"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080, 1280x720"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.4"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "162.6 mm"
+    },
+    {
+     "label": "Width",
+     "value": "75 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "8 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "199.5 grams"
+    },
+    {
+     "label": "Build",
+     "value": "Glass front, aluminum back, aluminum frame"
+    },
+    {
+     "label": "Colors",
+     "value": "Obsidian Midnight, Mercurial Silver, Oasis Green"
+    },
+    {
+     "label": "Waterproof",
+     "value": "Splash proof"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP65"
+    },
+    {
+     "label": "Ruggedness",
+     "value": "Dust proof"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Poly (Lithium Polymer)"
+    },
+    {
+     "label": "Capacity",
+     "value": "5500 mAh"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "100W wired, 1-100% in 26 min (advertised)"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "128 GB"
+    },
+    {
+     "label": "Storage Type",
+     "value": "UFS 4.0"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "LPDDR5X"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: Nano"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE, 5G"
+    },
+    {
+     "label": "SAR Value",
+     "value": "Head: 1.18 W/kg, Body: 1.06 W/kg"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 6E (802.11 a/b/g/n/ac/ax) 5GHz 6GHz, MIMO"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v5.4"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Infrared",
+     "value": "Yes"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "On-screen"
+    },
+    {
+     "label": "Finger Sensor Type",
+     "value": "Optical"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Video",
+     "value": "4K@30/60fps, 1080p@30/60/120fps, gyro-EIS"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "China"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, gyro, proximity, compass"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.com/mobile/oneplus-nord-ce4-lite": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "OnePlus"
+    },
+    {
+     "label": "Model",
+     "value": "Nord CE4 Lite"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "02 July 2024"
+    },
+    {
+     "label": "Status",
+     "value": "Available"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android"
+    },
+    {
+     "label": "OS Version",
+     "value": "v14"
+    },
+    {
+     "label": "User Interface",
+     "value": "Oxygen OS"
+    },
+    {
+     "label": "Chipset",
+     "value": "Qualcomm SM6375 Snapdragon 695 5G"
+    },
+    {
+     "label": "CPU",
+     "value": "Octa core (2.2 GHz, Dual core, Kryo 660 + 1.7 GHz, Hexa Core, Kryo 660)"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8 Cores"
+    },
+    {
+     "label": "Architecture",
+     "value": "64 bit"
+    },
+    {
+     "label": "Fabrication",
+     "value": "6 nm"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno 619"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "AMOLED"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.67 inches (16.94 cm)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1080x2400 px (FHD+)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "20:9"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "395 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "87.2%"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "Gorilla Glass"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "Brightness",
+     "value": "2100 nits"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Dual"
+    },
+    {
+     "label": "Resolution",
+     "value": "50 MP f/1.8, Wide Angle, Primary Camera, 2 MP f/2.4, Depth Camera"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Phase Detection autofocus, Continuous autofocus"
+    },
+    {
+     "label": "OIS",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "LED Flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8150 x 6150 Pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "10 x Digital Zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.8"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Touch to focus, Dual Video Recording"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080, 1280x720"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "16 MP f/2.4, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Flash",
+     "value": "Screen flash"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080, 1280x720"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.4"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "162.9 mm"
+    },
+    {
+     "label": "Width",
+     "value": "75.6 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "8.1 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "191 grams"
+    },
+    {
+     "label": "Build",
+     "value": "Back: Plastic"
+    },
+    {
+     "label": "Colors",
+     "value": "Super Silver, Mega Blue"
+    },
+    {
+     "label": "Waterproof",
+     "value": "Splash proof"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP54"
+    },
+    {
+     "label": "Ruggedness",
+     "value": "Dust proof"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Poly (Lithium Polymer)"
+    },
+    {
+     "label": "Capacity",
+     "value": "5110 mAh"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "Super VOOC, 80W: 100 % in 52 minutes"
+    },
+    {
+     "label": "Reverse Charging",
+     "value": "5W reverse wired"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "256 GB"
+    },
+    {
+     "label": "Storage Type",
+     "value": "UFS 2.2"
+    },
+    {
+     "label": "Expandable Memory",
+     "value": "Up to 2 TB"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "LPDDR4X"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: Nano"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE, 5G"
+    },
+    {
+     "label": "SAR Value",
+     "value": "Head: 1.174 W/kg, Body: 0.801 W/kg"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 5 (802.11 a/b/g/n/ac) 5GHz"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v5.1"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "On-screen"
+    },
+    {
+     "label": "Finger Sensor Type",
+     "value": "Optical"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5 mm"
+    },
+    {
+     "label": "Video",
+     "value": "1080p@30fps, gyro-EIS"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "China"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, gyro, proximity, compass"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.com/mobile/google-pixel-8a": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "Google"
+    },
+    {
+     "label": "Model",
+     "value": "Pixel 8a"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "14 May 2024"
+    },
+    {
+     "label": "Status",
+     "value": "Available"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android"
+    },
+    {
+     "label": "OS Version",
+     "value": "v14"
+    },
+    {
+     "label": "Chipset",
+     "value": "Google Tensor G3"
+    },
+    {
+     "label": "CPU",
+     "value": "Nona-core (1x3.0 GHz Cortex-X3 & 4x2.45 GHz Cortex-A715 & 4x2.15 GHz Cortex-A510)"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "9 Cores"
+    },
+    {
+     "label": "Architecture",
+     "value": "64 bit"
+    },
+    {
+     "label": "Fabrication",
+     "value": "4 nm"
+    },
+    {
+     "label": "GPU",
+     "value": "Immortalis-G715s MC10"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "OLED"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.1 inches (15.49 cm)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1080x2400 px (FHD+)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "20:9"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "431 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "81.24 %"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "Corning Gorilla Glass v3"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "Brightness",
+     "value": "2000 nits"
+    },
+    {
+     "label": "HDR 10 / HDR + support",
+     "value": "HDR"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Dual"
+    },
+    {
+     "label": "Resolution",
+     "value": "64 MP f/1.9, Wide Angle (80° field-of-view), Primary Camera, 13 MP f/2.2, Ultra-Wide Angle Camera"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Phase Detection autofocus, Motion Autofocus autofocus"
+    },
+    {
+     "label": "OIS",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "Dual-LED flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8000 x 6000 Pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "Digital Zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.9"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Touch to focus"
+    },
+    {
+     "label": "Video Recording",
+     "value": "3840x2160, 1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "13 MP f/2.2, Ultra-Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Fixed Focus"
+    },
+    {
+     "label": "Video Recording",
+     "value": "3840x2160, 1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.2"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "152.1 mm"
+    },
+    {
+     "label": "Width",
+     "value": "72.7 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "8.9 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "189 grams"
+    },
+    {
+     "label": "Build",
+     "value": "Back: Plastic"
+    },
+    {
+     "label": "Colors",
+     "value": "Obsidian, Porcelain, Bay, Aloe"
+    },
+    {
+     "label": "Waterproof",
+     "value": "Water resistant (up to 30 minutes in a depth of 1 meter)"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP67"
+    },
+    {
+     "label": "Ruggedness",
+     "value": "Dust Proof"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Poly (Lithium Polymer)"
+    },
+    {
+     "label": "Capacity",
+     "value": "4492 mAh"
+    },
+    {
+     "label": "Wireless Charging",
+     "value": "Yes"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "Fast, 18W"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 3.2"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "128 GB"
+    },
+    {
+     "label": "Storage Type",
+     "value": "UFS 3.1"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "LPDDR5X"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: eSIM"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE, 5G"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 6E (802.11 a/b/g/n/ac/ax) 5GHz 6GHz, MIMO"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v5.3"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "On-screen"
+    },
+    {
+     "label": "Finger Sensor Type",
+     "value": "Optical"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Video",
+     "value": "4K@30/60fps, 1080p@30/60/120/240fps, OIS"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "US"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, gyro, proximity, compass, barometer"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.com/mobile/realme-14-pro-plus": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "Realme"
+    },
+    {
+     "label": "Model",
+     "value": "14 Pro Plus"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "16 January 2025"
+    },
+    {
+     "label": "Status",
+     "value": "Available"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android"
+    },
+    {
+     "label": "OS Version",
+     "value": "v15"
+    },
+    {
+     "label": "User Interface",
+     "value": "Realme UI 6.0"
+    },
+    {
+     "label": "Chipset",
+     "value": "Qualcomm SM7635 Snapdragon 7s Gen 3"
+    },
+    {
+     "label": "CPU",
+     "value": "Octa-core (1x2.5 GHz Cortex-A720 & 3x2.4 GHz Cortex-A720 & 4x1.8 GHz Cortex-A520)"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8 Cores"
+    },
+    {
+     "label": "Architecture",
+     "value": "64 bit"
+    },
+    {
+     "label": "Fabrication",
+     "value": "4 nm"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno 710 (940 MHz)"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "AMOLED"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.83 inches (17.35 cm)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1272x2800 px (FHD+)"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "450 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "89.7%"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "Corning Gorilla Glass 7i"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "Brightness",
+     "value": "1500 nits"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Triple"
+    },
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, Wide Angle, Primary Camera, 50 MP, f/2.7, Periscope Telephoto Camera , 8 MP, f/2.2, Ultra-Wide Angle Camera"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Yes"
+    },
+    {
+     "label": "OIS",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "Triple-LED flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8150 x 6150 Pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "3x optical zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.8"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Touch to focus"
+    },
+    {
+     "label": "Video Recording",
+     "value": "3840x2160, 1920x1080, 1280x720"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps, 120 fps, 240 fps"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "32 MP, f/2.0, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Video Recording",
+     "value": "3840x2160, 1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.0"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "163.5 mm"
+    },
+    {
+     "label": "Width",
+     "value": "77.3 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "8 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "194 g or 196 grams"
+    },
+    {
+     "label": "Build",
+     "value": "Glass front (Gorilla Glass 7i), plastic frame, plastic back"
+    },
+    {
+     "label": "Colors",
+     "value": "Pearl White, Suede Gray, Bikaner Purple"
+    },
+    {
+     "label": "Waterproof",
+     "value": "Water resistant (up to 1.5m for 60 min)"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68/IP69"
+    },
+    {
+     "label": "Ruggedness",
+     "value": "Dust proof"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Ion (Lithium Ion)"
+    },
+    {
+     "label": "Capacity",
+     "value": "6000 mAh"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "80W wired, 50% in 24 min"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "256 GB"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: Nano"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE, 5G"
+    },
+    {
+     "label": "SAR Value",
+     "value": "Head: 1.19 W/kg, Body: 1.19 W/kg"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 6E (802.11 a/b/g/n/ac/ax) 5GHz 6GHz, MIMO"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v5.4"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "On-screen"
+    },
+    {
+     "label": "Finger Sensor Type",
+     "value": "Optical"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Video",
+     "value": "4K@30fps, 1080p@30/60/120fps, gyro-EIS, OIS"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "China"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, gyro, proximity, compass"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.com/mobile/realme-c75": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "Realme"
+    },
+    {
+     "label": "Model",
+     "value": "C75"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "15 December 2024"
+    },
+    {
+     "label": "Status",
+     "value": "Available"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android"
+    },
+    {
+     "label": "OS Version",
+     "value": "v14"
+    },
+    {
+     "label": "User Interface",
+     "value": "Realme UI 5.0"
+    },
+    {
+     "label": "Chipset",
+     "value": "Mediatek Helio G92 Max"
+    },
+    {
+     "label": "CPU",
+     "value": "Octa-core 2.0 GHz"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8 Cores"
+    },
+    {
+     "label": "Architecture",
+     "value": "64 bit"
+    },
+    {
+     "label": "Fabrication",
+     "value": "12nm"
+    },
+    {
+     "label": "GPU",
+     "value": "Arm Mali-G52 MC2"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.72 inches (17.07 cm)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1080x2400 px (FHD+)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "20:9"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "392 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "86.3%"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "ArmorShell Glass"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "Brightness",
+     "value": "690 nits"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "90 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Dual"
+    },
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, Wide Angle, Primary Camera, Secondary Unspecified Camera"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "LED Flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8150 x 6150 Pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "Digital Zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.8"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Touch to focus"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "8 MP, f/2.0, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.0"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "165.7 mm"
+    },
+    {
+     "label": "Width",
+     "value": "76.2 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "8 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "196 grams"
+    },
+    {
+     "label": "Colors",
+     "value": "Gold, Black"
+    },
+    {
+     "label": "Waterproof",
+     "value": "Water resistant (up to 1.5m for 30 min)"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP69"
+    },
+    {
+     "label": "Ruggedness",
+     "value": "Dust proof"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Poly (Lithium Polymer)"
+    },
+    {
+     "label": "Capacity",
+     "value": "6000 mAh"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "45W wired"
+    },
+    {
+     "label": "Reverse Charging",
+     "value": "Yes"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "128 GB"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: Nano"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 5 (802.11 a/b/g/n/ac) 5GHz"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v5.0"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "Side-mounted"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Video",
+     "value": "1080p@30fps"
+    },
+    {
+     "label": "Document Reader",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "China"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, gyro, proximity, compass"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.com/mobile/huawei-nova-y73": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "Huawei"
+    },
+    {
+     "label": "Model",
+     "value": "Nova Y73"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "Not announced yet"
+    },
+    {
+     "label": "Status",
+     "value": "Rumored"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android"
+    },
+    {
+     "label": "OS Version",
+     "value": "v12"
+    },
+    {
+     "label": "User Interface",
+     "value": "EMUI 15"
+    },
+    {
+     "label": "Chipset",
+     "value": "Kirin 710A"
+    },
+    {
+     "label": "CPU",
+     "value": "Octa-core (4x2.0 GHz Cortex-A73 & 4x1.7 GHz Cortex-A53)"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8 Cores"
+    },
+    {
+     "label": "Architecture",
+     "value": "64 bit"
+    },
+    {
+     "label": "Fabrication",
+     "value": "14 nm"
+    },
+    {
+     "label": "GPU",
+     "value": "Mali-G51 MP4"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.67 inches (16.94 cm)"
+    },
+    {
+     "label": "Resolution",
+     "value": "720x1604 px (HD+)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "20:9"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "264 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "84.3%"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "Aluminosilicate Glass"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "Brightness",
+     "value": "1000 nits"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "90 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "LED Flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8150 x 6150 Pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "Digital Zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.8"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Touch to focus"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "8 MP, f/2.0, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.0"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "166 mm"
+    },
+    {
+     "label": "Width",
+     "value": "76.6 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "8.3 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "203 or 206 grams"
+    },
+    {
+     "label": "Colors",
+     "value": "Light Blue, Black"
+    },
+    {
+     "label": "Waterproof",
+     "value": "Splash proof"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP64"
+    },
+    {
+     "label": "Ruggedness",
+     "value": "Dust proof"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Ion (Lithium Ion)"
+    },
+    {
+     "label": "Capacity",
+     "value": "6620 mAh"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "40W wired"
+    },
+    {
+     "label": "Reverse Charging",
+     "value": "5W reverse wired"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "128 GB"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: Nano"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 5 (802.11 a/b/g/n/ac) 5GHz"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v5.1"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Infrared",
+     "value": "Yes"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "Side-mounted"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Video",
+     "value": "1080p@30fps"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "China"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, proximity, compass"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.com/mobile/huawei-nova-y74": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "Huawei"
+    },
+    {
+     "label": "Model",
+     "value": "Nova Y74"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "08 June 2026"
+    },
+    {
+     "label": "Status",
+     "value": "Available"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "EMUI"
+    },
+    {
+     "label": "OS Version",
+     "value": "v12"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.67 inches (16.94 cm)"
+    },
+    {
+     "label": "Resolution",
+     "value": "720x1604 px (HD+)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "20:9"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "264 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "84.3%"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "Gorilla Glass"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "Brightness",
+     "value": "850 nits"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "90 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "LED Flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8192 × 6144 pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "Digital Zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.8"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Touch to focus"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "8 MP, f/2.0, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.0"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "166.05 mm"
+    },
+    {
+     "label": "Width",
+     "value": "76.58 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "8.32 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "210 grams"
+    },
+    {
+     "label": "Build",
+     "value": "Back: Plastic"
+    },
+    {
+     "label": "Colors",
+     "value": "Black, Blue"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Ion (Lithium Ion)"
+    },
+    {
+     "label": "Capacity",
+     "value": "6620 mAh"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "40W wired, 53% in 30 min"
+    },
+    {
+     "label": "Reverse Charging",
+     "value": "5W reverse wired"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "256 GB"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: Nano"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 5 (802.11 a/b/g/n/ac)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v5.1"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "Side-mounted"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Video",
+     "value": "1080p@30fps"
+    },
+    {
+     "label": "Document Reader",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "China"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, gyro, proximity, compass"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.com/mobile/huawei-nova-13": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "Huawei"
+    },
+    {
+     "label": "Model",
+     "value": "Nova 13"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "Exp. 25 October 2024"
+    },
+    {
+     "label": "Status",
+     "value": "Upcoming"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "HarmonyOS"
+    },
+    {
+     "label": "OS Version",
+     "value": "v4.2"
+    },
+    {
+     "label": "Chipset",
+     "value": "Kirin 8000"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "OLED"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.7 inches (17.02 cm)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1084x2412 px (FHD+)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "20:9"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "395 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "89.1%"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "Aluminosilicate glass"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "HDR 10 / HDR + support",
+     "value": "HDR"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Dual"
+    },
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.9, Wide Angle, Primary Camera, 8 MP, f/2.2, Ultra-Wide Angle Camera"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "LED Flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8150 x 6150 Pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "Digital Zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.9"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Touch to focus"
+    },
+    {
+     "label": "Video Recording",
+     "value": "3840x2160, 1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "60 MP, f/2.4, Ultra-Wide Angle Camera"
+    },
+    {
+     "label": "Video Recording",
+     "value": "3840x2160, 1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.4"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "161.4 mm"
+    },
+    {
+     "label": "Width",
+     "value": "75.3 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "7 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "195 grams"
+    },
+    {
+     "label": "Colors",
+     "value": "Black, White, Purple, Green"
+    },
+    {
+     "label": "Waterproof",
+     "value": "Splash proof"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Poly (Lithium Polymer)"
+    },
+    {
+     "label": "Capacity",
+     "value": "5000 mAh"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "100W wired, 3-50% in 10 min (advertised)"
+    },
+    {
+     "label": "Reverse Charging",
+     "value": "5W reverse wired"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "256 GB"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "12 GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "LPDDR4X"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: Nano"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE, 5G"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 6 (802.11 a/b/g/n/ac/ax) 5GHz, MIMO"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v5.2"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Infrared",
+     "value": "Yes"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "On-screen"
+    },
+    {
+     "label": "Finger Sensor Type",
+     "value": "Optical"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Dolby Atmos"
+    },
+    {
+     "label": "Video",
+     "value": "4K, 1080p, gyro-EIS"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "China"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, gyro, compass, color spectrum, BDS Satellite Calling and Message Virtual proximity sensing"
+    }
+   ]
+  }
  ]
 }

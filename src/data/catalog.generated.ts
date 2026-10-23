@@ -111,6 +111,198 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
+  "id": "shop.shajgoj.com",
+  "name": "Shajgoj",
+  "kind": "website",
+  "website": "https://shop.shajgoj.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "arogga.com",
+  "name": "Arogga",
+  "kind": "website",
+  "website": "https://www.arogga.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "banglashoppers.com",
+  "name": "BanglaShoppers",
+  "kind": "website",
+  "website": "https://www.banglashoppers.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "medeasy.health",
+  "name": "MedEasy",
+  "kind": "website",
+  "website": "https://medeasy.health/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "chaldal.com",
+  "name": "Chaldal",
+  "kind": "website",
+  "website": "https://chaldal.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "emartwayskincare.com.bd",
+  "name": "EmartWay Skincare",
+  "kind": "website",
+  "website": "https://www.emartwayskincare.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "beautyline.com.bd",
+  "name": "Beauty Line",
+  "kind": "website",
+  "website": "https://beautyline.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "e-mart.com.bd",
+  "name": "Emart",
+  "kind": "website",
+  "website": "https://e-mart.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "aromyeo.com",
+  "name": "Aromyeo",
+  "kind": "website",
+  "website": "https://aromyeo.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "kcarebd.com",
+  "name": "Korean Care BD",
+  "kind": "website",
+  "website": "https://kcarebd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "skincareshop.com.bd",
+  "name": "Skincare Shop",
+  "kind": "website",
+  "website": "https://skincareshop.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "cosmeticscorner.com.bd",
+  "name": "Cosmetics Corner",
+  "kind": "website",
+  "website": "https://www.cosmeticscorner.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "indianmartbd.com",
+  "name": "IndianMartBD",
+  "kind": "website",
+  "website": "https://indianmartbd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "beprincessbd.com",
+  "name": "Beprincess BD",
+  "kind": "website",
+  "website": "https://beprincessbd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "colorworld.com.bd",
+  "name": "Color World",
+  "kind": "website",
+  "website": "https://colorworld.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "glowellabd.com",
+  "name": "Glowella",
+  "kind": "website",
+  "website": "https://glowellabd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
   "id": "gadgetbreeze.com.bd",
   "name": "Gadget Breeze",
   "kind": "website",
@@ -4063,7 +4255,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "A18 Pro",
      "ram": "8GB",
-     "storage": "256GB"
+     "storage": "256GB",
+     "cpu": "6-core",
+     "gpu": "5-core"
     },
     "officialPrice": null
    },
@@ -4073,7 +4267,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "A18 Pro",
      "ram": "8GB",
-     "storage": "512GB"
+     "storage": "512GB",
+     "cpu": "6-core",
+     "gpu": "5-core"
     },
     "officialPrice": null
    }
@@ -4343,7 +4539,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5",
      "ram": "16GB",
-     "storage": "512GB"
+     "storage": "512GB",
+     "cpu": "10-core",
+     "gpu": "8-core"
     },
     "officialPrice": null
    },
@@ -4353,7 +4551,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5",
      "ram": "16GB",
-     "storage": "1TB"
+     "storage": "1TB",
+     "cpu": "10-core",
+     "gpu": "10-core"
     },
     "officialPrice": null
    },
@@ -4363,7 +4563,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5",
      "ram": "24GB",
-     "storage": "1TB"
+     "storage": "1TB",
+     "cpu": "10-core",
+     "gpu": "10-core"
     },
     "officialPrice": null
    }
@@ -4625,7 +4827,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5",
      "ram": "16GB",
-     "storage": "512GB"
+     "storage": "512GB",
+     "cpu": "10-core",
+     "gpu": "10-core"
     },
     "officialPrice": null
    },
@@ -4635,7 +4839,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5",
      "ram": "16GB",
-     "storage": "1TB"
+     "storage": "1TB",
+     "cpu": "10-core",
+     "gpu": "10-core"
     },
     "officialPrice": null
    },
@@ -4645,7 +4851,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5",
      "ram": "24GB",
-     "storage": "1TB"
+     "storage": "1TB",
+     "cpu": "10-core",
+     "gpu": "10-core"
     },
     "officialPrice": null
    }
@@ -4903,7 +5111,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5",
      "ram": "16GB",
-     "storage": "512GB"
+     "storage": "512GB",
+     "cpu": "10-core",
+     "gpu": "10-core"
     },
     "officialPrice": null
    },
@@ -4913,7 +5123,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5",
      "ram": "16GB",
-     "storage": "1TB"
+     "storage": "1TB",
+     "cpu": "10-core",
+     "gpu": "10-core"
     },
     "officialPrice": null
    },
@@ -4923,7 +5135,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5",
      "ram": "24GB",
-     "storage": "1TB"
+     "storage": "1TB",
+     "cpu": "10-core",
+     "gpu": "10-core"
     },
     "officialPrice": null
    }
@@ -5169,7 +5383,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5 Pro",
      "ram": "24GB",
-     "storage": "1TB"
+     "storage": "1TB",
+     "cpu": "15-core",
+     "gpu": "16-core"
     },
     "officialPrice": null
    },
@@ -5179,7 +5395,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5 Pro",
      "ram": "24GB",
-     "storage": "2TB"
+     "storage": "2TB",
+     "cpu": "18-core",
+     "gpu": "20-core"
     },
     "officialPrice": null
    }
@@ -5439,7 +5657,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5 Max",
      "ram": "36GB",
-     "storage": "2TB"
+     "storage": "2TB",
+     "cpu": "18-core",
+     "gpu": "32-core"
     },
     "officialPrice": null
    }
@@ -5471,7 +5691,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5 Pro",
      "ram": "24GB",
-     "storage": "1TB"
+     "storage": "1TB",
+     "cpu": "18-core",
+     "gpu": "20-core"
     },
     "officialPrice": null
    },
@@ -5481,7 +5703,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5 Pro",
      "ram": "48GB",
-     "storage": "1TB"
+     "storage": "1TB",
+     "cpu": "18-core",
+     "gpu": "20-core"
     },
     "officialPrice": null
    }
@@ -5740,7 +5964,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5 Max",
      "ram": "36GB",
-     "storage": "2TB"
+     "storage": "2TB",
+     "cpu": "18-core",
+     "gpu": "32-core"
     },
     "officialPrice": null
    },
@@ -5750,7 +5976,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5 Max",
      "ram": "48GB",
-     "storage": "2TB"
+     "storage": "2TB",
+     "cpu": "18-core",
+     "gpu": "40-core"
     },
     "officialPrice": null
    }
@@ -6009,7 +6237,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M4",
      "ram": "16GB",
-     "storage": "256GB"
+     "storage": "256GB",
+     "cpu": "8-core",
+     "gpu": "8-core"
     },
     "officialPrice": null
    },
@@ -6019,7 +6249,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M4",
      "ram": "16GB",
-     "storage": "512GB"
+     "storage": "512GB",
+     "cpu": "10-core",
+     "gpu": "10-core"
     },
     "officialPrice": null
    },
@@ -6029,7 +6261,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M4",
      "ram": "24GB",
-     "storage": "512GB"
+     "storage": "512GB",
+     "cpu": "10-core",
+     "gpu": "10-core"
     },
     "officialPrice": null
    }
@@ -6143,7 +6377,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M6",
      "ram": "16GB",
-     "storage": "256GB"
+     "storage": "256GB",
+     "cpu": "12-core",
+     "gpu": "12-core"
     },
     "officialPrice": null
    },
@@ -6153,7 +6389,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M6",
      "ram": "16GB",
-     "storage": "512GB"
+     "storage": "512GB",
+     "cpu": "12-core",
+     "gpu": "12-core"
     },
     "officialPrice": null
    },
@@ -6163,7 +6401,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M6",
      "ram": "24GB",
-     "storage": "512GB"
+     "storage": "512GB",
+     "cpu": "12-core",
+     "gpu": "12-core"
     },
     "officialPrice": null
    }
@@ -6262,7 +6502,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5 Pro",
      "ram": "24GB",
-     "storage": "512GB"
+     "storage": "512GB",
+     "cpu": "15-core",
+     "gpu": "16-core"
     },
     "officialPrice": null
    }
@@ -6361,7 +6603,9 @@ export const catalogProducts: Product[] = [
     "attributes": {
      "chip": "M5 Max",
      "ram": "36GB",
-     "storage": "512GB"
+     "storage": "512GB",
+     "cpu": "18-core",
+     "gpu": "32-core"
     },
     "officialPrice": null
    }
@@ -9406,6 +9650,3423 @@ export const catalogProducts: Product[] = [
    }
   ],
   "specsSource": "https://www.startech.com.bd/vivo-v70-fe"
+ },
+ {
+  "id": "oneplus-nord-ce5-5g",
+  "slug": "oneplus-nord-ce5-5g",
+  "name": "Nord CE5 5G",
+  "brand": "OnePlus",
+  "category": "mobile",
+  "releaseYear": 2025,
+  "popularity": 58,
+  "variants": [
+   {
+    "id": "oneplus-nord-ce5-5g~v1",
+    "label": "8GB / 256GB",
+    "attributes": {
+     "ram": "8GB",
+     "storage": "256GB"
+    },
+    "officialPrice": 35999
+   },
+   {
+    "id": "oneplus-nord-ce5-5g~v2",
+    "label": "12GB / 256GB",
+    "attributes": {
+     "ram": "12GB",
+     "storage": "256GB"
+    },
+    "officialPrice": 44999
+   }
+  ],
+  "images": [
+   "https://www.mobiledokan.com/media/oneplus-nord-ce5-marble-mist-official-image.webp"
+  ],
+  "colors": [
+   "Black Infinity",
+   "Marble Mist"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General",
+    "items": [
+     {
+      "label": "Brand",
+      "value": "OnePlus"
+     },
+     {
+      "label": "Model",
+      "value": "Nord CE5"
+     },
+     {
+      "label": "Device Type",
+      "value": "Smartphone"
+     },
+     {
+      "label": "Release Date",
+      "value": "09 July 2025"
+     },
+     {
+      "label": "Status",
+      "value": "Available"
+     }
+    ]
+   },
+   {
+    "group": "Hardware & Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "Android"
+     },
+     {
+      "label": "OS Version",
+      "value": "v15"
+     },
+     {
+      "label": "User Interface",
+      "value": "ColorOS 15.0"
+     },
+     {
+      "label": "Chipset",
+      "value": "Mediatek Dimensity 8350 Apex"
+     },
+     {
+      "label": "CPU",
+      "value": "Octa-core (1x3.35 GHz Cortex-A715 & 3x3.20 GHz Cortex-A715 & 4x2.20 GHz Cortex-A510)"
+     },
+     {
+      "label": "CPU Cores",
+      "value": "8 Cores"
+     },
+     {
+      "label": "Architecture",
+      "value": "64 bit"
+     },
+     {
+      "label": "Fabrication",
+      "value": "4 nm"
+     },
+     {
+      "label": "GPU",
+      "value": "Mali G615-MC6"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Type",
+      "value": "Fluid AMOLED"
+     },
+     {
+      "label": "Screen Size",
+      "value": "6.77 inches (17.2 cm)"
+     },
+     {
+      "label": "Resolution",
+      "value": "1080x2392 px (FHD+)"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "19.9:9"
+     },
+     {
+      "label": "Pixel Density",
+      "value": "387 ppi"
+     },
+     {
+      "label": "Screen to Body Ratio",
+      "value": "89.7%"
+     },
+     {
+      "label": "Screen Protection",
+      "value": "Mohs level 5"
+     },
+     {
+      "label": "Bezel-less Display",
+      "value": "Yes with punch-hole display"
+     },
+     {
+      "label": "Touch Screen",
+      "value": "Capacitive Touchscreen, Multi-touch"
+     },
+     {
+      "label": "Brightness",
+      "value": "1430 nits"
+     },
+     {
+      "label": "HDR 10 / HDR + support",
+      "value": "HDR 10+"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "120 Hz"
+     },
+     {
+      "label": "Notch",
+      "value": "Punch-hole"
+     }
+    ]
+   },
+   {
+    "group": "Cameras",
+    "items": [
+     {
+      "label": "Camera Setup",
+      "value": "Dual"
+     },
+     {
+      "label": "Resolution",
+      "value": "50 MP, f/1.8, Wide Angle, Primary Camera, 8 MP, f/2.2, Ultra-Wide Angle Camera"
+     },
+     {
+      "label": "Sensor",
+      "value": "Sony LYT-600"
+     },
+     {
+      "label": "Autofocus",
+      "value": "Contrast Detection autofocus, Phase Detection autofocus"
+     },
+     {
+      "label": "OIS",
+      "value": "Yes"
+     },
+     {
+      "label": "Flash",
+      "value": "LED Flash"
+     },
+     {
+      "label": "Image Resolution",
+      "value": "8150 x 6150 Pixels"
+     },
+     {
+      "label": "Settings",
+      "value": "Exposure compensation, ISO control"
+     },
+     {
+      "label": "Zoom",
+      "value": "20 x Digital Zoom"
+     },
+     {
+      "label": "Shooting Modes",
+      "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/1.8"
+     },
+     {
+      "label": "Camera Features",
+      "value": "Auto Flash, Face detection, Touch to focus, Dual Video Recording, Slow Motion"
+     },
+     {
+      "label": "Video Recording",
+      "value": "3840x2160, 1920x1080"
+     },
+     {
+      "label": "Video FPS",
+      "value": "60 fps, 480 fps"
+     },
+     {
+      "label": "Camera Setup",
+      "value": "Single"
+     },
+     {
+      "label": "Resolution",
+      "value": "16 MP, f/2.4, Wide Angle, Primary Camera"
+     },
+     {
+      "label": "Sensor",
+      "value": "Sony IMX480"
+     },
+     {
+      "label": "Flash",
+      "value": "Screen flash"
+     },
+     {
+      "label": "Camera Features",
+      "value": "Fixed Focus"
+     },
+     {
+      "label": "Video Recording",
+      "value": "1920x1080, 1280x720"
+     },
+     {
+      "label": "Video FPS",
+      "value": "60 fps, 30 fps"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/2.4"
+     }
+    ]
+   },
+   {
+    "group": "Design",
+    "items": [
+     {
+      "label": "Height",
+      "value": "163.58 mm"
+     },
+     {
+      "label": "Width",
+      "value": "76.02 mm"
+     },
+     {
+      "label": "Thickness",
+      "value": "8.27 mm (Marble Mist) Or 8.17 mm (Black Infinity)"
+     },
+     {
+      "label": "Weight",
+      "value": "199 grams"
+     },
+     {
+      "label": "Colors",
+      "value": "Marble Mist, Black Infinity"
+     },
+     {
+      "label": "Waterproof",
+      "value": "Splash proof"
+     },
+     {
+      "label": "IP Rating",
+      "value": "IP65"
+     },
+     {
+      "label": "Ruggedness",
+      "value": "Dust proof"
+     }
+    ]
+   },
+   {
+    "group": "Battery",
+    "items": [
+     {
+      "label": "Battery type",
+      "value": "Li-Ion (Lithium Ion)"
+     },
+     {
+      "label": "Capacity",
+      "value": "7100 mAh"
+     },
+     {
+      "label": "Quick Charging",
+      "value": "80W wired"
+     },
+     {
+      "label": "Placement",
+      "value": "Non-removable"
+     },
+     {
+      "label": "USB Type-C",
+      "value": "USB Type-C 2.0"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "Internal Storage",
+      "value": "256 GB"
+     },
+     {
+      "label": "Storage Type",
+      "value": "UFS 3.1"
+     },
+     {
+      "label": "Expandable Memory",
+      "value": "Up to 1 TB"
+     },
+     {
+      "label": "USB OTG",
+      "value": "Yes"
+     },
+     {
+      "label": "RAM",
+      "value": "8 GB"
+     },
+     {
+      "label": "RAM Type",
+      "value": "LPDDR5X"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "Network",
+      "value": "2G, 3G, 4G, 5G"
+     },
+     {
+      "label": "SIM Slot",
+      "value": "Dual SIM, GSM+GSM"
+     },
+     {
+      "label": "SIM Size",
+      "value": "SIM1: Nano, SIM2: Nano"
+     },
+     {
+      "label": "EDGE",
+      "value": "Available"
+     },
+     {
+      "label": "GPRS",
+      "value": "Available"
+     },
+     {
+      "label": "VoLTE",
+      "value": "Yes"
+     },
+     {
+      "label": "Speed",
+      "value": "HSPA, LTE, 5G"
+     },
+     {
+      "label": "SAR Value",
+      "value": "Head: 1.199 W/kg, Body: 0.907 W/kg"
+     },
+     {
+      "label": "WLAN",
+      "value": "Wi-Fi 6 (802.11 a/b/g/n/ac/ax) 5GHz, MIMO"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "v5.4"
+     },
+     {
+      "label": "GPS",
+      "value": "Yes with A-GPS, Glonass"
+     },
+     {
+      "label": "Infrared",
+      "value": "Yes"
+     },
+     {
+      "label": "Wi-fi Hotspot",
+      "value": "Yes"
+     },
+     {
+      "label": "NFC",
+      "value": "Yes"
+     },
+     {
+      "label": "USB",
+      "value": "Mass storage device, USB charging"
+     }
+    ]
+   },
+   {
+    "group": "Sensors & security",
+    "items": [
+     {
+      "label": "Light Sensor",
+      "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+     },
+     {
+      "label": "Fingerprint Sensor",
+      "value": "Yes"
+     },
+     {
+      "label": "Finger Sensor Position",
+      "value": "On-screen"
+     },
+     {
+      "label": "Finger Sensor Type",
+      "value": "Optical"
+     },
+     {
+      "label": "Face Unlock",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Multimedia",
+    "items": [
+     {
+      "label": "Loudspeaker",
+      "value": "Yes"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "USB Type-C"
+     },
+     {
+      "label": "Video",
+      "value": "4K@30/60fps (HDR), 1080p@30/60/120/480fps, 720p@960fps, gyro-EIS, OIS"
+     },
+     {
+      "label": "Document Reader",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "More",
+    "items": [
+     {
+      "label": "Made By",
+      "value": "China"
+     },
+     {
+      "label": "Features",
+      "value": "Accelerometer, gyro, proximity, compass"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.mobiledokan.com/mobile/oneplus-nord-ce5"
+ },
+ {
+  "id": "oneplus-nord-4",
+  "slug": "oneplus-nord-4",
+  "name": "Nord 4",
+  "brand": "OnePlus",
+  "category": "mobile",
+  "releaseYear": 2024,
+  "popularity": 58,
+  "variants": [
+   {
+    "id": "oneplus-nord-4~v1",
+    "label": "8GB / 128GB",
+    "attributes": {
+     "ram": "8GB",
+     "storage": "128GB"
+    },
+    "officialPrice": null
+   },
+   {
+    "id": "oneplus-nord-4~v2",
+    "label": "12GB / 256GB",
+    "attributes": {
+     "ram": "12GB",
+     "storage": "256GB"
+    },
+    "officialPrice": 43499
+   }
+  ],
+  "images": [
+   "https://www.mobiledokan.com/media/oneplus-nord-4-mercurial-silver-official-image_2.webp"
+  ],
+  "colors": [
+   "Obsidian Midnight"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General",
+    "items": [
+     {
+      "label": "Brand",
+      "value": "OnePlus"
+     },
+     {
+      "label": "Model",
+      "value": "Nord 4"
+     },
+     {
+      "label": "Device Type",
+      "value": "Smartphone"
+     },
+     {
+      "label": "Release Date",
+      "value": "08 August 2024"
+     },
+     {
+      "label": "Status",
+      "value": "Available"
+     }
+    ]
+   },
+   {
+    "group": "Hardware & Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "Android"
+     },
+     {
+      "label": "OS Version",
+      "value": "v14"
+     },
+     {
+      "label": "User Interface",
+      "value": "OxygenOS 14.1"
+     },
+     {
+      "label": "Chipset",
+      "value": "Qualcomm Snapdragon 7 Plus Gen 3"
+     },
+     {
+      "label": "CPU",
+      "value": "Octa-core (1x2.8 GHz Cortex-X4 & 4x2.6 GHz Cortex-A720 & 3x1.9 GHz Cortex-A520)"
+     },
+     {
+      "label": "CPU Cores",
+      "value": "8 Cores"
+     },
+     {
+      "label": "Architecture",
+      "value": "64 bit"
+     },
+     {
+      "label": "Fabrication",
+      "value": "4 nm"
+     },
+     {
+      "label": "GPU",
+      "value": "Adreno 732"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Type",
+      "value": "Fluid AMOLED"
+     },
+     {
+      "label": "Screen Size",
+      "value": "6.74 inches, (109.7 cm2)"
+     },
+     {
+      "label": "Resolution",
+      "value": "1240x2772 px (FHD+)"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "20:9"
+     },
+     {
+      "label": "Pixel Density",
+      "value": "450 ppi"
+     },
+     {
+      "label": "Screen to Body Ratio",
+      "value": "90.0%"
+     },
+     {
+      "label": "Screen Protection",
+      "value": "Gorilla Glass"
+     },
+     {
+      "label": "Bezel-less Display",
+      "value": "Yes with punch-hole display"
+     },
+     {
+      "label": "Touch Screen",
+      "value": "Capacitive Touchscreen, Multi-touch"
+     },
+     {
+      "label": "Brightness",
+      "value": "2150 nits"
+     },
+     {
+      "label": "HDR 10 / HDR + support",
+      "value": "HDR 10+"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "120 Hz"
+     },
+     {
+      "label": "Notch",
+      "value": "Punch-hole"
+     }
+    ]
+   },
+   {
+    "group": "Cameras",
+    "items": [
+     {
+      "label": "Camera Setup",
+      "value": "Dual"
+     },
+     {
+      "label": "Resolution",
+      "value": "50 MP, f/1.8, Wide Angle, Primary Camera, 8 MP, f/2.2, Ultra-Wide Angle, Camera"
+     },
+     {
+      "label": "Autofocus",
+      "value": "Yes"
+     },
+     {
+      "label": "OIS",
+      "value": "Yes"
+     },
+     {
+      "label": "Flash",
+      "value": "LED Flash"
+     },
+     {
+      "label": "Image Resolution",
+      "value": "8150 x 6150 Pixels"
+     },
+     {
+      "label": "Settings",
+      "value": "Exposure compensation, ISO control"
+     },
+     {
+      "label": "Zoom",
+      "value": "20 x Digital Zoom"
+     },
+     {
+      "label": "Shooting Modes",
+      "value": "Continuous Shooting, High Dynamic Range mode (HDR) Macro Mode"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/1.8"
+     },
+     {
+      "label": "Camera Features",
+      "value": "Auto Flash, Face detection, Filters, Touch to focus, Dual Video Recording, Slo-motion, Ultra Steady Video, Bokeh portrait video"
+     },
+     {
+      "label": "Video Recording",
+      "value": "3840x2160, 1920x1080, 1280x720"
+     },
+     {
+      "label": "Video FPS",
+      "value": "30 fps, 120 fps, 240 fps"
+     },
+     {
+      "label": "Camera Setup",
+      "value": "Single"
+     },
+     {
+      "label": "Resolution",
+      "value": "16 MP, f/2.4, Wide Angle, Primary Camera"
+     },
+     {
+      "label": "Camera Features",
+      "value": "Fixed Focus"
+     },
+     {
+      "label": "Video Recording",
+      "value": "1920x1080, 1280x720"
+     },
+     {
+      "label": "Video FPS",
+      "value": "30 fps"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/2.4"
+     }
+    ]
+   },
+   {
+    "group": "Design",
+    "items": [
+     {
+      "label": "Height",
+      "value": "162.6 mm"
+     },
+     {
+      "label": "Width",
+      "value": "75 mm"
+     },
+     {
+      "label": "Thickness",
+      "value": "8 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "199.5 grams"
+     },
+     {
+      "label": "Build",
+      "value": "Glass front, aluminum back, aluminum frame"
+     },
+     {
+      "label": "Colors",
+      "value": "Obsidian Midnight, Mercurial Silver, Oasis Green"
+     },
+     {
+      "label": "Waterproof",
+      "value": "Splash proof"
+     },
+     {
+      "label": "IP Rating",
+      "value": "IP65"
+     },
+     {
+      "label": "Ruggedness",
+      "value": "Dust proof"
+     }
+    ]
+   },
+   {
+    "group": "Battery",
+    "items": [
+     {
+      "label": "Battery type",
+      "value": "Li-Poly (Lithium Polymer)"
+     },
+     {
+      "label": "Capacity",
+      "value": "5500 mAh"
+     },
+     {
+      "label": "Quick Charging",
+      "value": "100W wired, 1-100% in 26 min (advertised)"
+     },
+     {
+      "label": "Placement",
+      "value": "Non-removable"
+     },
+     {
+      "label": "USB Type-C",
+      "value": "USB Type-C 2.0"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "Internal Storage",
+      "value": "128 GB"
+     },
+     {
+      "label": "Storage Type",
+      "value": "UFS 4.0"
+     },
+     {
+      "label": "USB OTG",
+      "value": "Yes"
+     },
+     {
+      "label": "RAM",
+      "value": "8 GB"
+     },
+     {
+      "label": "RAM Type",
+      "value": "LPDDR5X"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "Network",
+      "value": "2G, 3G, 4G, 5G"
+     },
+     {
+      "label": "SIM Slot",
+      "value": "Dual SIM, GSM+GSM"
+     },
+     {
+      "label": "SIM Size",
+      "value": "SIM1: Nano, SIM2: Nano"
+     },
+     {
+      "label": "EDGE",
+      "value": "Available"
+     },
+     {
+      "label": "GPRS",
+      "value": "Available"
+     },
+     {
+      "label": "VoLTE",
+      "value": "Yes"
+     },
+     {
+      "label": "Speed",
+      "value": "HSPA, LTE, 5G"
+     },
+     {
+      "label": "SAR Value",
+      "value": "Head: 1.18 W/kg, Body: 1.06 W/kg"
+     },
+     {
+      "label": "WLAN",
+      "value": "Wi-Fi 6E (802.11 a/b/g/n/ac/ax) 5GHz 6GHz, MIMO"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "v5.4"
+     },
+     {
+      "label": "GPS",
+      "value": "Yes with A-GPS, Glonass"
+     },
+     {
+      "label": "Infrared",
+      "value": "Yes"
+     },
+     {
+      "label": "Wi-fi Hotspot",
+      "value": "Yes"
+     },
+     {
+      "label": "NFC",
+      "value": "Yes"
+     },
+     {
+      "label": "USB",
+      "value": "Mass storage device, USB charging"
+     }
+    ]
+   },
+   {
+    "group": "Sensors & security",
+    "items": [
+     {
+      "label": "Light Sensor",
+      "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+     },
+     {
+      "label": "Fingerprint Sensor",
+      "value": "Yes"
+     },
+     {
+      "label": "Finger Sensor Position",
+      "value": "On-screen"
+     },
+     {
+      "label": "Finger Sensor Type",
+      "value": "Optical"
+     },
+     {
+      "label": "Face Unlock",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Multimedia",
+    "items": [
+     {
+      "label": "Loudspeaker",
+      "value": "Yes"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "USB Type-C"
+     },
+     {
+      "label": "Video",
+      "value": "4K@30/60fps, 1080p@30/60/120fps, gyro-EIS"
+     }
+    ]
+   },
+   {
+    "group": "More",
+    "items": [
+     {
+      "label": "Made By",
+      "value": "China"
+     },
+     {
+      "label": "Features",
+      "value": "Accelerometer, gyro, proximity, compass"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.mobiledokan.com/mobile/oneplus-nord-4"
+ },
+ {
+  "id": "oneplus-nord-ce4-lite-5g",
+  "slug": "oneplus-nord-ce4-lite-5g",
+  "name": "Nord CE4 Lite 5G",
+  "brand": "OnePlus",
+  "category": "mobile",
+  "releaseYear": 2024,
+  "popularity": 58,
+  "variants": [
+   {
+    "id": "oneplus-nord-ce4-lite-5g~v1",
+    "label": "8GB / 256GB",
+    "attributes": {
+     "ram": "8GB",
+     "storage": "256GB"
+    },
+    "officialPrice": 27999
+   }
+  ],
+  "images": [
+   "https://www.mobiledokan.com/media/oneplus-nord-ce4-lite-mega-blue-official-image.webp"
+  ],
+  "colors": [
+   "Super Silver",
+   "Mist Green"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General",
+    "items": [
+     {
+      "label": "Brand",
+      "value": "OnePlus"
+     },
+     {
+      "label": "Model",
+      "value": "Nord CE4 Lite"
+     },
+     {
+      "label": "Device Type",
+      "value": "Smartphone"
+     },
+     {
+      "label": "Release Date",
+      "value": "02 July 2024"
+     },
+     {
+      "label": "Status",
+      "value": "Available"
+     }
+    ]
+   },
+   {
+    "group": "Hardware & Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "Android"
+     },
+     {
+      "label": "OS Version",
+      "value": "v14"
+     },
+     {
+      "label": "User Interface",
+      "value": "Oxygen OS"
+     },
+     {
+      "label": "Chipset",
+      "value": "Qualcomm SM6375 Snapdragon 695 5G"
+     },
+     {
+      "label": "CPU",
+      "value": "Octa core (2.2 GHz, Dual core, Kryo 660 + 1.7 GHz, Hexa Core, Kryo 660)"
+     },
+     {
+      "label": "CPU Cores",
+      "value": "8 Cores"
+     },
+     {
+      "label": "Architecture",
+      "value": "64 bit"
+     },
+     {
+      "label": "Fabrication",
+      "value": "6 nm"
+     },
+     {
+      "label": "GPU",
+      "value": "Adreno 619"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Type",
+      "value": "AMOLED"
+     },
+     {
+      "label": "Screen Size",
+      "value": "6.67 inches (16.94 cm)"
+     },
+     {
+      "label": "Resolution",
+      "value": "1080x2400 px (FHD+)"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "20:9"
+     },
+     {
+      "label": "Pixel Density",
+      "value": "395 ppi"
+     },
+     {
+      "label": "Screen to Body Ratio",
+      "value": "87.2%"
+     },
+     {
+      "label": "Screen Protection",
+      "value": "Gorilla Glass"
+     },
+     {
+      "label": "Bezel-less Display",
+      "value": "Yes with punch-hole display"
+     },
+     {
+      "label": "Touch Screen",
+      "value": "Capacitive Touchscreen, Multi-touch"
+     },
+     {
+      "label": "Brightness",
+      "value": "2100 nits"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "120 Hz"
+     },
+     {
+      "label": "Notch",
+      "value": "Punch-hole"
+     }
+    ]
+   },
+   {
+    "group": "Cameras",
+    "items": [
+     {
+      "label": "Camera Setup",
+      "value": "Dual"
+     },
+     {
+      "label": "Resolution",
+      "value": "50 MP f/1.8, Wide Angle, Primary Camera, 2 MP f/2.4, Depth Camera"
+     },
+     {
+      "label": "Autofocus",
+      "value": "Phase Detection autofocus, Continuous autofocus"
+     },
+     {
+      "label": "OIS",
+      "value": "Yes"
+     },
+     {
+      "label": "Flash",
+      "value": "LED Flash"
+     },
+     {
+      "label": "Image Resolution",
+      "value": "8150 x 6150 Pixels"
+     },
+     {
+      "label": "Settings",
+      "value": "Exposure compensation, ISO control"
+     },
+     {
+      "label": "Zoom",
+      "value": "10 x Digital Zoom"
+     },
+     {
+      "label": "Shooting Modes",
+      "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/1.8"
+     },
+     {
+      "label": "Camera Features",
+      "value": "Auto Flash, Face detection, Touch to focus, Dual Video Recording"
+     },
+     {
+      "label": "Video Recording",
+      "value": "1920x1080, 1280x720"
+     },
+     {
+      "label": "Video FPS",
+      "value": "30 fps"
+     },
+     {
+      "label": "Camera Setup",
+      "value": "Single"
+     },
+     {
+      "label": "Resolution",
+      "value": "16 MP f/2.4, Wide Angle, Primary Camera"
+     },
+     {
+      "label": "Flash",
+      "value": "Screen flash"
+     },
+     {
+      "label": "Video Recording",
+      "value": "1920x1080, 1280x720"
+     },
+     {
+      "label": "Video FPS",
+      "value": "30 fps"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/2.4"
+     }
+    ]
+   },
+   {
+    "group": "Design",
+    "items": [
+     {
+      "label": "Height",
+      "value": "162.9 mm"
+     },
+     {
+      "label": "Width",
+      "value": "75.6 mm"
+     },
+     {
+      "label": "Thickness",
+      "value": "8.1 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "191 grams"
+     },
+     {
+      "label": "Build",
+      "value": "Back: Plastic"
+     },
+     {
+      "label": "Colors",
+      "value": "Super Silver, Mega Blue"
+     },
+     {
+      "label": "Waterproof",
+      "value": "Splash proof"
+     },
+     {
+      "label": "IP Rating",
+      "value": "IP54"
+     },
+     {
+      "label": "Ruggedness",
+      "value": "Dust proof"
+     }
+    ]
+   },
+   {
+    "group": "Battery",
+    "items": [
+     {
+      "label": "Battery type",
+      "value": "Li-Poly (Lithium Polymer)"
+     },
+     {
+      "label": "Capacity",
+      "value": "5110 mAh"
+     },
+     {
+      "label": "Quick Charging",
+      "value": "Super VOOC, 80W: 100 % in 52 minutes"
+     },
+     {
+      "label": "Reverse Charging",
+      "value": "5W reverse wired"
+     },
+     {
+      "label": "Placement",
+      "value": "Non-removable"
+     },
+     {
+      "label": "USB Type-C",
+      "value": "USB Type-C 2.0"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "Internal Storage",
+      "value": "256 GB"
+     },
+     {
+      "label": "Storage Type",
+      "value": "UFS 2.2"
+     },
+     {
+      "label": "Expandable Memory",
+      "value": "Up to 2 TB"
+     },
+     {
+      "label": "USB OTG",
+      "value": "Yes"
+     },
+     {
+      "label": "RAM",
+      "value": "8 GB"
+     },
+     {
+      "label": "RAM Type",
+      "value": "LPDDR4X"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "Network",
+      "value": "2G, 3G, 4G, 5G"
+     },
+     {
+      "label": "SIM Slot",
+      "value": "Dual SIM, GSM+GSM"
+     },
+     {
+      "label": "SIM Size",
+      "value": "SIM1: Nano, SIM2: Nano"
+     },
+     {
+      "label": "EDGE",
+      "value": "Available"
+     },
+     {
+      "label": "GPRS",
+      "value": "Available"
+     },
+     {
+      "label": "VoLTE",
+      "value": "Yes"
+     },
+     {
+      "label": "Speed",
+      "value": "HSPA, LTE, 5G"
+     },
+     {
+      "label": "SAR Value",
+      "value": "Head: 1.174 W/kg, Body: 0.801 W/kg"
+     },
+     {
+      "label": "WLAN",
+      "value": "Wi-Fi 5 (802.11 a/b/g/n/ac) 5GHz"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "v5.1"
+     },
+     {
+      "label": "GPS",
+      "value": "Yes with A-GPS, Glonass"
+     },
+     {
+      "label": "Wi-fi Hotspot",
+      "value": "Yes"
+     },
+     {
+      "label": "NFC",
+      "value": "Yes"
+     },
+     {
+      "label": "USB",
+      "value": "Mass storage device, USB charging"
+     }
+    ]
+   },
+   {
+    "group": "Sensors & security",
+    "items": [
+     {
+      "label": "Light Sensor",
+      "value": "Light sensor, Proximity sensor, Accelerometer, Compass"
+     },
+     {
+      "label": "Fingerprint Sensor",
+      "value": "Yes"
+     },
+     {
+      "label": "Finger Sensor Position",
+      "value": "On-screen"
+     },
+     {
+      "label": "Finger Sensor Type",
+      "value": "Optical"
+     },
+     {
+      "label": "Face Unlock",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Multimedia",
+    "items": [
+     {
+      "label": "Loudspeaker",
+      "value": "Yes"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "3.5 mm"
+     },
+     {
+      "label": "Video",
+      "value": "1080p@30fps, gyro-EIS"
+     }
+    ]
+   },
+   {
+    "group": "More",
+    "items": [
+     {
+      "label": "Made By",
+      "value": "China"
+     },
+     {
+      "label": "Features",
+      "value": "Accelerometer, gyro, proximity, compass"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.mobiledokan.com/mobile/oneplus-nord-ce4-lite"
+ },
+ {
+  "id": "google-pixel-8a",
+  "slug": "google-pixel-8a",
+  "name": "Pixel 8a",
+  "brand": "Google",
+  "category": "mobile",
+  "releaseYear": 2024,
+  "popularity": 58,
+  "variants": [
+   {
+    "id": "google-pixel-8a~v1",
+    "label": "8GB / 128GB",
+    "attributes": {
+     "ram": "8GB",
+     "storage": "128GB"
+    },
+    "officialPrice": 49999
+   },
+   {
+    "id": "google-pixel-8a~v2",
+    "label": "8GB / 256GB",
+    "attributes": {
+     "ram": "8GB",
+     "storage": "256GB"
+    },
+    "officialPrice": 54990
+   }
+  ],
+  "images": [
+   "https://www.mobiledokan.com/media/google-pixel-8a-aloe-official-image.webp"
+  ],
+  "colors": [
+   "Obsidian",
+   "Porcelain",
+   "Bay",
+   "Aloe"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General",
+    "items": [
+     {
+      "label": "Brand",
+      "value": "Google"
+     },
+     {
+      "label": "Model",
+      "value": "Pixel 8a"
+     },
+     {
+      "label": "Device Type",
+      "value": "Smartphone"
+     },
+     {
+      "label": "Release Date",
+      "value": "14 May 2024"
+     },
+     {
+      "label": "Status",
+      "value": "Available"
+     }
+    ]
+   },
+   {
+    "group": "Hardware & Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "Android"
+     },
+     {
+      "label": "OS Version",
+      "value": "v14"
+     },
+     {
+      "label": "Chipset",
+      "value": "Google Tensor G3"
+     },
+     {
+      "label": "CPU",
+      "value": "Nona-core (1x3.0 GHz Cortex-X3 & 4x2.45 GHz Cortex-A715 & 4x2.15 GHz Cortex-A510)"
+     },
+     {
+      "label": "CPU Cores",
+      "value": "9 Cores"
+     },
+     {
+      "label": "Architecture",
+      "value": "64 bit"
+     },
+     {
+      "label": "Fabrication",
+      "value": "4 nm"
+     },
+     {
+      "label": "GPU",
+      "value": "Immortalis-G715s MC10"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Type",
+      "value": "OLED"
+     },
+     {
+      "label": "Screen Size",
+      "value": "6.1 inches (15.49 cm)"
+     },
+     {
+      "label": "Resolution",
+      "value": "1080x2400 px (FHD+)"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "20:9"
+     },
+     {
+      "label": "Pixel Density",
+      "value": "431 ppi"
+     },
+     {
+      "label": "Screen to Body Ratio",
+      "value": "81.24 %"
+     },
+     {
+      "label": "Screen Protection",
+      "value": "Corning Gorilla Glass v3"
+     },
+     {
+      "label": "Bezel-less Display",
+      "value": "Yes with punch-hole display"
+     },
+     {
+      "label": "Touch Screen",
+      "value": "Capacitive Touchscreen, Multi-touch"
+     },
+     {
+      "label": "Brightness",
+      "value": "2000 nits"
+     },
+     {
+      "label": "HDR 10 / HDR + support",
+      "value": "HDR"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "120 Hz"
+     },
+     {
+      "label": "Notch",
+      "value": "Punch-hole"
+     }
+    ]
+   },
+   {
+    "group": "Cameras",
+    "items": [
+     {
+      "label": "Camera Setup",
+      "value": "Dual"
+     },
+     {
+      "label": "Resolution",
+      "value": "64 MP f/1.9, Wide Angle (80° field-of-view), Primary Camera, 13 MP f/2.2, Ultra-Wide Angle Camera"
+     },
+     {
+      "label": "Autofocus",
+      "value": "Phase Detection autofocus, Motion Autofocus autofocus"
+     },
+     {
+      "label": "OIS",
+      "value": "Yes"
+     },
+     {
+      "label": "Flash",
+      "value": "Dual-LED flash"
+     },
+     {
+      "label": "Image Resolution",
+      "value": "8000 x 6000 Pixels"
+     },
+     {
+      "label": "Settings",
+      "value": "Exposure compensation, ISO control"
+     },
+     {
+      "label": "Zoom",
+      "value": "Digital Zoom"
+     },
+     {
+      "label": "Shooting Modes",
+      "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/1.9"
+     },
+     {
+      "label": "Camera Features",
+      "value": "Auto Flash, Face detection, Touch to focus"
+     },
+     {
+      "label": "Video Recording",
+      "value": "3840x2160, 1920x1080"
+     },
+     {
+      "label": "Video FPS",
+      "value": "30 fps"
+     },
+     {
+      "label": "Camera Setup",
+      "value": "Single"
+     },
+     {
+      "label": "Resolution",
+      "value": "13 MP f/2.2, Ultra-Wide Angle, Primary Camera"
+     },
+     {
+      "label": "Camera Features",
+      "value": "Fixed Focus"
+     },
+     {
+      "label": "Video Recording",
+      "value": "3840x2160, 1920x1080"
+     },
+     {
+      "label": "Video FPS",
+      "value": "30 fps"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/2.2"
+     }
+    ]
+   },
+   {
+    "group": "Design",
+    "items": [
+     {
+      "label": "Height",
+      "value": "152.1 mm"
+     },
+     {
+      "label": "Width",
+      "value": "72.7 mm"
+     },
+     {
+      "label": "Thickness",
+      "value": "8.9 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "189 grams"
+     },
+     {
+      "label": "Build",
+      "value": "Back: Plastic"
+     },
+     {
+      "label": "Colors",
+      "value": "Obsidian, Porcelain, Bay, Aloe"
+     },
+     {
+      "label": "Waterproof",
+      "value": "Water resistant (up to 30 minutes in a depth of 1 meter)"
+     },
+     {
+      "label": "IP Rating",
+      "value": "IP67"
+     },
+     {
+      "label": "Ruggedness",
+      "value": "Dust Proof"
+     }
+    ]
+   },
+   {
+    "group": "Battery",
+    "items": [
+     {
+      "label": "Battery type",
+      "value": "Li-Poly (Lithium Polymer)"
+     },
+     {
+      "label": "Capacity",
+      "value": "4492 mAh"
+     },
+     {
+      "label": "Wireless Charging",
+      "value": "Yes"
+     },
+     {
+      "label": "Quick Charging",
+      "value": "Fast, 18W"
+     },
+     {
+      "label": "Placement",
+      "value": "Non-removable"
+     },
+     {
+      "label": "USB Type-C",
+      "value": "USB Type-C 3.2"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "Internal Storage",
+      "value": "128 GB"
+     },
+     {
+      "label": "Storage Type",
+      "value": "UFS 3.1"
+     },
+     {
+      "label": "USB OTG",
+      "value": "Yes"
+     },
+     {
+      "label": "RAM",
+      "value": "8 GB"
+     },
+     {
+      "label": "RAM Type",
+      "value": "LPDDR5X"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "Network",
+      "value": "2G, 3G, 4G, 5G"
+     },
+     {
+      "label": "SIM Slot",
+      "value": "Dual SIM, GSM+GSM"
+     },
+     {
+      "label": "SIM Size",
+      "value": "SIM1: Nano, SIM2: eSIM"
+     },
+     {
+      "label": "EDGE",
+      "value": "Available"
+     },
+     {
+      "label": "GPRS",
+      "value": "Available"
+     },
+     {
+      "label": "VoLTE",
+      "value": "Yes"
+     },
+     {
+      "label": "Speed",
+      "value": "HSPA, LTE, 5G"
+     },
+     {
+      "label": "WLAN",
+      "value": "Wi-Fi 6E (802.11 a/b/g/n/ac/ax) 5GHz 6GHz, MIMO"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "v5.3"
+     },
+     {
+      "label": "GPS",
+      "value": "Yes with A-GPS, Glonass"
+     },
+     {
+      "label": "Wi-fi Hotspot",
+      "value": "Yes"
+     },
+     {
+      "label": "NFC",
+      "value": "Yes"
+     },
+     {
+      "label": "USB",
+      "value": "Mass storage device, USB charging"
+     }
+    ]
+   },
+   {
+    "group": "Sensors & security",
+    "items": [
+     {
+      "label": "Light Sensor",
+      "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+     },
+     {
+      "label": "Fingerprint Sensor",
+      "value": "Yes"
+     },
+     {
+      "label": "Finger Sensor Position",
+      "value": "On-screen"
+     },
+     {
+      "label": "Finger Sensor Type",
+      "value": "Optical"
+     },
+     {
+      "label": "Face Unlock",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Multimedia",
+    "items": [
+     {
+      "label": "Loudspeaker",
+      "value": "Yes"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "USB Type-C"
+     },
+     {
+      "label": "Video",
+      "value": "4K@30/60fps, 1080p@30/60/120/240fps, OIS"
+     }
+    ]
+   },
+   {
+    "group": "More",
+    "items": [
+     {
+      "label": "Made By",
+      "value": "US"
+     },
+     {
+      "label": "Features",
+      "value": "Accelerometer, gyro, proximity, compass, barometer"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.mobiledokan.com/mobile/google-pixel-8a"
+ },
+ {
+  "id": "realme-14-pro-5g",
+  "slug": "realme-14-pro-5g",
+  "name": "14 Pro+ 5G",
+  "brand": "Realme",
+  "category": "mobile",
+  "releaseYear": 2025,
+  "popularity": 58,
+  "variants": [
+   {
+    "id": "realme-14-pro-5g~v1",
+    "label": "8GB / 256GB",
+    "attributes": {
+     "ram": "8GB",
+     "storage": "256GB"
+    },
+    "officialPrice": 47499
+   },
+   {
+    "id": "realme-14-pro-5g~v2",
+    "label": "12GB / 256GB",
+    "attributes": {
+     "ram": "12GB",
+     "storage": "256GB"
+    },
+    "officialPrice": 49999
+   }
+  ],
+  "images": [
+   "https://www.mobiledokan.com/media/realme-14-pro-plus-gilded-white-official-image.webp"
+  ],
+  "colors": [
+   "Silver",
+   "Suede Grey"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General",
+    "items": [
+     {
+      "label": "Brand",
+      "value": "Realme"
+     },
+     {
+      "label": "Model",
+      "value": "14 Pro Plus"
+     },
+     {
+      "label": "Device Type",
+      "value": "Smartphone"
+     },
+     {
+      "label": "Release Date",
+      "value": "16 January 2025"
+     },
+     {
+      "label": "Status",
+      "value": "Available"
+     }
+    ]
+   },
+   {
+    "group": "Hardware & Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "Android"
+     },
+     {
+      "label": "OS Version",
+      "value": "v15"
+     },
+     {
+      "label": "User Interface",
+      "value": "Realme UI 6.0"
+     },
+     {
+      "label": "Chipset",
+      "value": "Qualcomm SM7635 Snapdragon 7s Gen 3"
+     },
+     {
+      "label": "CPU",
+      "value": "Octa-core (1x2.5 GHz Cortex-A720 & 3x2.4 GHz Cortex-A720 & 4x1.8 GHz Cortex-A520)"
+     },
+     {
+      "label": "CPU Cores",
+      "value": "8 Cores"
+     },
+     {
+      "label": "Architecture",
+      "value": "64 bit"
+     },
+     {
+      "label": "Fabrication",
+      "value": "4 nm"
+     },
+     {
+      "label": "GPU",
+      "value": "Adreno 710 (940 MHz)"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Type",
+      "value": "AMOLED"
+     },
+     {
+      "label": "Screen Size",
+      "value": "6.83 inches (17.35 cm)"
+     },
+     {
+      "label": "Resolution",
+      "value": "1272x2800 px (FHD+)"
+     },
+     {
+      "label": "Pixel Density",
+      "value": "450 ppi"
+     },
+     {
+      "label": "Screen to Body Ratio",
+      "value": "89.7%"
+     },
+     {
+      "label": "Screen Protection",
+      "value": "Corning Gorilla Glass 7i"
+     },
+     {
+      "label": "Bezel-less Display",
+      "value": "Yes with punch-hole display"
+     },
+     {
+      "label": "Touch Screen",
+      "value": "Capacitive Touchscreen, Multi-touch"
+     },
+     {
+      "label": "Brightness",
+      "value": "1500 nits"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "120 Hz"
+     },
+     {
+      "label": "Notch",
+      "value": "Punch-hole"
+     }
+    ]
+   },
+   {
+    "group": "Cameras",
+    "items": [
+     {
+      "label": "Camera Setup",
+      "value": "Triple"
+     },
+     {
+      "label": "Resolution",
+      "value": "50 MP, f/1.8, Wide Angle, Primary Camera, 50 MP, f/2.7, Periscope Telephoto Camera , 8 MP, f/2.2, Ultra-Wide Angle Camera"
+     },
+     {
+      "label": "Autofocus",
+      "value": "Yes"
+     },
+     {
+      "label": "OIS",
+      "value": "Yes"
+     },
+     {
+      "label": "Flash",
+      "value": "Triple-LED flash"
+     },
+     {
+      "label": "Image Resolution",
+      "value": "8150 x 6150 Pixels"
+     },
+     {
+      "label": "Settings",
+      "value": "Exposure compensation, ISO control"
+     },
+     {
+      "label": "Zoom",
+      "value": "3x optical zoom"
+     },
+     {
+      "label": "Shooting Modes",
+      "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/1.8"
+     },
+     {
+      "label": "Camera Features",
+      "value": "Auto Flash, Face detection, Touch to focus"
+     },
+     {
+      "label": "Video Recording",
+      "value": "3840x2160, 1920x1080, 1280x720"
+     },
+     {
+      "label": "Video FPS",
+      "value": "30 fps, 120 fps, 240 fps"
+     },
+     {
+      "label": "Camera Setup",
+      "value": "Single"
+     },
+     {
+      "label": "Resolution",
+      "value": "32 MP, f/2.0, Wide Angle, Primary Camera"
+     },
+     {
+      "label": "Video Recording",
+      "value": "3840x2160, 1920x1080"
+     },
+     {
+      "label": "Video FPS",
+      "value": "30 fps"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/2.0"
+     }
+    ]
+   },
+   {
+    "group": "Design",
+    "items": [
+     {
+      "label": "Height",
+      "value": "163.5 mm"
+     },
+     {
+      "label": "Width",
+      "value": "77.3 mm"
+     },
+     {
+      "label": "Thickness",
+      "value": "8 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "194 g or 196 grams"
+     },
+     {
+      "label": "Build",
+      "value": "Glass front (Gorilla Glass 7i), plastic frame, plastic back"
+     },
+     {
+      "label": "Colors",
+      "value": "Pearl White, Suede Gray, Bikaner Purple"
+     },
+     {
+      "label": "Waterproof",
+      "value": "Water resistant (up to 1.5m for 60 min)"
+     },
+     {
+      "label": "IP Rating",
+      "value": "IP68/IP69"
+     },
+     {
+      "label": "Ruggedness",
+      "value": "Dust proof"
+     }
+    ]
+   },
+   {
+    "group": "Battery",
+    "items": [
+     {
+      "label": "Battery type",
+      "value": "Li-Ion (Lithium Ion)"
+     },
+     {
+      "label": "Capacity",
+      "value": "6000 mAh"
+     },
+     {
+      "label": "Quick Charging",
+      "value": "80W wired, 50% in 24 min"
+     },
+     {
+      "label": "Placement",
+      "value": "Non-removable"
+     },
+     {
+      "label": "USB Type-C",
+      "value": "USB Type-C 2.0"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "Internal Storage",
+      "value": "256 GB"
+     },
+     {
+      "label": "USB OTG",
+      "value": "Yes"
+     },
+     {
+      "label": "RAM",
+      "value": "8 GB"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "Network",
+      "value": "2G, 3G, 4G, 5G"
+     },
+     {
+      "label": "SIM Slot",
+      "value": "Dual SIM, GSM+GSM"
+     },
+     {
+      "label": "SIM Size",
+      "value": "SIM1: Nano, SIM2: Nano"
+     },
+     {
+      "label": "EDGE",
+      "value": "Available"
+     },
+     {
+      "label": "GPRS",
+      "value": "Available"
+     },
+     {
+      "label": "VoLTE",
+      "value": "Yes"
+     },
+     {
+      "label": "Speed",
+      "value": "HSPA, LTE, 5G"
+     },
+     {
+      "label": "SAR Value",
+      "value": "Head: 1.19 W/kg, Body: 1.19 W/kg"
+     },
+     {
+      "label": "WLAN",
+      "value": "Wi-Fi 6E (802.11 a/b/g/n/ac/ax) 5GHz 6GHz, MIMO"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "v5.4"
+     },
+     {
+      "label": "GPS",
+      "value": "Yes with A-GPS, Glonass"
+     },
+     {
+      "label": "Wi-fi Hotspot",
+      "value": "Yes"
+     },
+     {
+      "label": "NFC",
+      "value": "Yes"
+     },
+     {
+      "label": "USB",
+      "value": "Mass storage device, USB charging"
+     }
+    ]
+   },
+   {
+    "group": "Sensors & security",
+    "items": [
+     {
+      "label": "Light Sensor",
+      "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+     },
+     {
+      "label": "Fingerprint Sensor",
+      "value": "Yes"
+     },
+     {
+      "label": "Finger Sensor Position",
+      "value": "On-screen"
+     },
+     {
+      "label": "Finger Sensor Type",
+      "value": "Optical"
+     },
+     {
+      "label": "Face Unlock",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Multimedia",
+    "items": [
+     {
+      "label": "Loudspeaker",
+      "value": "Yes"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "USB Type-C"
+     },
+     {
+      "label": "Video",
+      "value": "4K@30fps, 1080p@30/60/120fps, gyro-EIS, OIS"
+     }
+    ]
+   },
+   {
+    "group": "More",
+    "items": [
+     {
+      "label": "Made By",
+      "value": "China"
+     },
+     {
+      "label": "Features",
+      "value": "Accelerometer, gyro, proximity, compass"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.mobiledokan.com/mobile/realme-14-pro-plus"
+ },
+ {
+  "id": "realme-14-5g",
+  "slug": "realme-14-5g",
+  "name": "14 5G",
+  "brand": "Realme",
+  "category": "mobile",
+  "releaseYear": 2025,
+  "popularity": 58,
+  "variants": [
+   {
+    "id": "realme-14-5g~v1",
+    "label": "8GB / 256GB",
+    "attributes": {
+     "ram": "8GB",
+     "storage": "256GB"
+    },
+    "officialPrice": 39099
+   },
+   {
+    "id": "realme-14-5g~v2",
+    "label": "12GB / 256GB",
+    "attributes": {
+     "ram": "12GB",
+     "storage": "256GB"
+    },
+    "officialPrice": 41999
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2158/realme_14t.webp"
+  ],
+  "colors": [
+   "Speed Silver",
+   "Storm Knight"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://www.realme.com/global/realme-14-5g"
+ },
+ {
+  "id": "realme-c75",
+  "slug": "realme-c75",
+  "name": "C75",
+  "brand": "Realme",
+  "category": "mobile",
+  "releaseYear": 2024,
+  "popularity": 50,
+  "variants": [
+   {
+    "id": "realme-c75~v1",
+    "label": "8GB / 128GB",
+    "attributes": {
+     "ram": "8GB",
+     "storage": "128GB"
+    },
+    "officialPrice": 19999
+   },
+   {
+    "id": "realme-c75~v2",
+    "label": "8GB / 256GB",
+    "attributes": {
+     "ram": "8GB",
+     "storage": "256GB"
+    },
+    "officialPrice": 22999
+   }
+  ],
+  "images": [
+   "https://www.mobiledokan.com/media/realme-c75-gold-official-image_1.webp"
+  ],
+  "colors": [
+   "Storm Black",
+   "Lightning Gold"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General",
+    "items": [
+     {
+      "label": "Brand",
+      "value": "Realme"
+     },
+     {
+      "label": "Model",
+      "value": "C75"
+     },
+     {
+      "label": "Device Type",
+      "value": "Smartphone"
+     },
+     {
+      "label": "Release Date",
+      "value": "15 December 2024"
+     },
+     {
+      "label": "Status",
+      "value": "Available"
+     }
+    ]
+   },
+   {
+    "group": "Hardware & Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "Android"
+     },
+     {
+      "label": "OS Version",
+      "value": "v14"
+     },
+     {
+      "label": "User Interface",
+      "value": "Realme UI 5.0"
+     },
+     {
+      "label": "Chipset",
+      "value": "Mediatek Helio G92 Max"
+     },
+     {
+      "label": "CPU",
+      "value": "Octa-core 2.0 GHz"
+     },
+     {
+      "label": "CPU Cores",
+      "value": "8 Cores"
+     },
+     {
+      "label": "Architecture",
+      "value": "64 bit"
+     },
+     {
+      "label": "Fabrication",
+      "value": "12nm"
+     },
+     {
+      "label": "GPU",
+      "value": "Arm Mali-G52 MC2"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Type",
+      "value": "IPS LCD"
+     },
+     {
+      "label": "Screen Size",
+      "value": "6.72 inches (17.07 cm)"
+     },
+     {
+      "label": "Resolution",
+      "value": "1080x2400 px (FHD+)"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "20:9"
+     },
+     {
+      "label": "Pixel Density",
+      "value": "392 ppi"
+     },
+     {
+      "label": "Screen to Body Ratio",
+      "value": "86.3%"
+     },
+     {
+      "label": "Screen Protection",
+      "value": "ArmorShell Glass"
+     },
+     {
+      "label": "Bezel-less Display",
+      "value": "Yes with punch-hole display"
+     },
+     {
+      "label": "Touch Screen",
+      "value": "Capacitive Touchscreen, Multi-touch"
+     },
+     {
+      "label": "Brightness",
+      "value": "690 nits"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "90 Hz"
+     },
+     {
+      "label": "Notch",
+      "value": "Punch-hole"
+     }
+    ]
+   },
+   {
+    "group": "Cameras",
+    "items": [
+     {
+      "label": "Camera Setup",
+      "value": "Dual"
+     },
+     {
+      "label": "Resolution",
+      "value": "50 MP, f/1.8, Wide Angle, Primary Camera, Secondary Unspecified Camera"
+     },
+     {
+      "label": "Autofocus",
+      "value": "Yes"
+     },
+     {
+      "label": "Flash",
+      "value": "LED Flash"
+     },
+     {
+      "label": "Image Resolution",
+      "value": "8150 x 6150 Pixels"
+     },
+     {
+      "label": "Settings",
+      "value": "Exposure compensation, ISO control"
+     },
+     {
+      "label": "Zoom",
+      "value": "Digital Zoom"
+     },
+     {
+      "label": "Shooting Modes",
+      "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/1.8"
+     },
+     {
+      "label": "Camera Features",
+      "value": "Auto Flash, Face detection, Touch to focus"
+     },
+     {
+      "label": "Video Recording",
+      "value": "1920x1080"
+     },
+     {
+      "label": "Video FPS",
+      "value": "30 fps"
+     },
+     {
+      "label": "Camera Setup",
+      "value": "Single"
+     },
+     {
+      "label": "Resolution",
+      "value": "8 MP, f/2.0, Wide Angle, Primary Camera"
+     },
+     {
+      "label": "Video Recording",
+      "value": "1920x1080"
+     },
+     {
+      "label": "Video FPS",
+      "value": "30 fps"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/2.0"
+     }
+    ]
+   },
+   {
+    "group": "Design",
+    "items": [
+     {
+      "label": "Height",
+      "value": "165.7 mm"
+     },
+     {
+      "label": "Width",
+      "value": "76.2 mm"
+     },
+     {
+      "label": "Thickness",
+      "value": "8 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "196 grams"
+     },
+     {
+      "label": "Colors",
+      "value": "Gold, Black"
+     },
+     {
+      "label": "Waterproof",
+      "value": "Water resistant (up to 1.5m for 30 min)"
+     },
+     {
+      "label": "IP Rating",
+      "value": "IP69"
+     },
+     {
+      "label": "Ruggedness",
+      "value": "Dust proof"
+     }
+    ]
+   },
+   {
+    "group": "Battery",
+    "items": [
+     {
+      "label": "Battery type",
+      "value": "Li-Poly (Lithium Polymer)"
+     },
+     {
+      "label": "Capacity",
+      "value": "6000 mAh"
+     },
+     {
+      "label": "Quick Charging",
+      "value": "45W wired"
+     },
+     {
+      "label": "Reverse Charging",
+      "value": "Yes"
+     },
+     {
+      "label": "Placement",
+      "value": "Non-removable"
+     },
+     {
+      "label": "USB Type-C",
+      "value": "USB Type-C 2.0"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "Internal Storage",
+      "value": "128 GB"
+     },
+     {
+      "label": "USB OTG",
+      "value": "Yes"
+     },
+     {
+      "label": "RAM",
+      "value": "8 GB"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "Network",
+      "value": "2G, 3G, 4G"
+     },
+     {
+      "label": "SIM Slot",
+      "value": "Dual SIM, GSM+GSM"
+     },
+     {
+      "label": "SIM Size",
+      "value": "SIM1: Nano, SIM2: Nano"
+     },
+     {
+      "label": "EDGE",
+      "value": "Available"
+     },
+     {
+      "label": "GPRS",
+      "value": "Available"
+     },
+     {
+      "label": "VoLTE",
+      "value": "Yes"
+     },
+     {
+      "label": "Speed",
+      "value": "HSPA, LTE"
+     },
+     {
+      "label": "WLAN",
+      "value": "Wi-Fi 5 (802.11 a/b/g/n/ac) 5GHz"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "v5.0"
+     },
+     {
+      "label": "GPS",
+      "value": "Yes with A-GPS, Glonass"
+     },
+     {
+      "label": "Wi-fi Hotspot",
+      "value": "Yes"
+     },
+     {
+      "label": "USB",
+      "value": "Mass storage device, USB charging"
+     }
+    ]
+   },
+   {
+    "group": "Sensors & security",
+    "items": [
+     {
+      "label": "Light Sensor",
+      "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+     },
+     {
+      "label": "Fingerprint Sensor",
+      "value": "Yes"
+     },
+     {
+      "label": "Finger Sensor Position",
+      "value": "Side-mounted"
+     },
+     {
+      "label": "Face Unlock",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Multimedia",
+    "items": [
+     {
+      "label": "Loudspeaker",
+      "value": "Yes"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "USB Type-C"
+     },
+     {
+      "label": "Video",
+      "value": "1080p@30fps"
+     },
+     {
+      "label": "Document Reader",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "More",
+    "items": [
+     {
+      "label": "Made By",
+      "value": "China"
+     },
+     {
+      "label": "Features",
+      "value": "Accelerometer, gyro, proximity, compass"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.mobiledokan.com/mobile/realme-c75"
+ },
+ {
+  "id": "huawei-nova-y74",
+  "slug": "huawei-nova-y74",
+  "name": "nova Y74",
+  "brand": "Huawei",
+  "category": "mobile",
+  "releaseYear": 2025,
+  "popularity": 58,
+  "variants": [
+   {
+    "id": "huawei-nova-y74~v1",
+    "label": "8GB / 256GB",
+    "attributes": {
+     "ram": "8GB",
+     "storage": "256GB"
+    },
+    "officialPrice": 29999
+   }
+  ],
+  "images": [
+   "https://www.mobiledokan.com/media/huawei-nova-y74-blue-official-image.webp"
+  ],
+  "colors": [
+   "Blue",
+   "Black"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General",
+    "items": [
+     {
+      "label": "Brand",
+      "value": "Huawei"
+     },
+     {
+      "label": "Model",
+      "value": "Nova Y74"
+     },
+     {
+      "label": "Device Type",
+      "value": "Smartphone"
+     },
+     {
+      "label": "Release Date",
+      "value": "08 June 2026"
+     },
+     {
+      "label": "Status",
+      "value": "Available"
+     }
+    ]
+   },
+   {
+    "group": "Hardware & Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "EMUI"
+     },
+     {
+      "label": "OS Version",
+      "value": "v12"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Type",
+      "value": "IPS LCD"
+     },
+     {
+      "label": "Screen Size",
+      "value": "6.67 inches (16.94 cm)"
+     },
+     {
+      "label": "Resolution",
+      "value": "720x1604 px (HD+)"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "20:9"
+     },
+     {
+      "label": "Pixel Density",
+      "value": "264 ppi"
+     },
+     {
+      "label": "Screen to Body Ratio",
+      "value": "84.3%"
+     },
+     {
+      "label": "Screen Protection",
+      "value": "Gorilla Glass"
+     },
+     {
+      "label": "Bezel-less Display",
+      "value": "Yes with punch-hole display"
+     },
+     {
+      "label": "Touch Screen",
+      "value": "Capacitive Touchscreen, Multi-touch"
+     },
+     {
+      "label": "Brightness",
+      "value": "850 nits"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "90 Hz"
+     },
+     {
+      "label": "Notch",
+      "value": "Punch-hole"
+     }
+    ]
+   },
+   {
+    "group": "Cameras",
+    "items": [
+     {
+      "label": "Camera Setup",
+      "value": "Single"
+     },
+     {
+      "label": "Resolution",
+      "value": "50 MP, f/1.8, Wide Angle, Primary Camera"
+     },
+     {
+      "label": "Autofocus",
+      "value": "Yes"
+     },
+     {
+      "label": "Flash",
+      "value": "LED Flash"
+     },
+     {
+      "label": "Image Resolution",
+      "value": "8192 × 6144 pixels"
+     },
+     {
+      "label": "Settings",
+      "value": "Exposure compensation, ISO control"
+     },
+     {
+      "label": "Zoom",
+      "value": "Digital Zoom"
+     },
+     {
+      "label": "Shooting Modes",
+      "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/1.8"
+     },
+     {
+      "label": "Camera Features",
+      "value": "Auto Flash, Face detection, Touch to focus"
+     },
+     {
+      "label": "Video Recording",
+      "value": "1920x1080"
+     },
+     {
+      "label": "Video FPS",
+      "value": "30 fps"
+     },
+     {
+      "label": "Camera Setup",
+      "value": "Single"
+     },
+     {
+      "label": "Resolution",
+      "value": "8 MP, f/2.0, Wide Angle, Primary Camera"
+     },
+     {
+      "label": "Video Recording",
+      "value": "1920x1080"
+     },
+     {
+      "label": "Video FPS",
+      "value": "30 fps"
+     },
+     {
+      "label": "Aperture",
+      "value": "f/2.0"
+     }
+    ]
+   },
+   {
+    "group": "Design",
+    "items": [
+     {
+      "label": "Height",
+      "value": "166.05 mm"
+     },
+     {
+      "label": "Width",
+      "value": "76.58 mm"
+     },
+     {
+      "label": "Thickness",
+      "value": "8.32 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "210 grams"
+     },
+     {
+      "label": "Build",
+      "value": "Back: Plastic"
+     },
+     {
+      "label": "Colors",
+      "value": "Black, Blue"
+     }
+    ]
+   },
+   {
+    "group": "Battery",
+    "items": [
+     {
+      "label": "Battery type",
+      "value": "Li-Ion (Lithium Ion)"
+     },
+     {
+      "label": "Capacity",
+      "value": "6620 mAh"
+     },
+     {
+      "label": "Quick Charging",
+      "value": "40W wired, 53% in 30 min"
+     },
+     {
+      "label": "Reverse Charging",
+      "value": "5W reverse wired"
+     },
+     {
+      "label": "Placement",
+      "value": "Non-removable"
+     },
+     {
+      "label": "USB Type-C",
+      "value": "USB Type-C 2.0"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "Internal Storage",
+      "value": "256 GB"
+     },
+     {
+      "label": "USB OTG",
+      "value": "Yes"
+     },
+     {
+      "label": "RAM",
+      "value": "8 GB"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "Network",
+      "value": "2G, 3G, 4G"
+     },
+     {
+      "label": "SIM Slot",
+      "value": "Dual SIM, GSM+GSM"
+     },
+     {
+      "label": "SIM Size",
+      "value": "SIM1: Nano, SIM2: Nano"
+     },
+     {
+      "label": "EDGE",
+      "value": "Available"
+     },
+     {
+      "label": "GPRS",
+      "value": "Available"
+     },
+     {
+      "label": "VoLTE",
+      "value": "Yes"
+     },
+     {
+      "label": "Speed",
+      "value": "HSPA, LTE"
+     },
+     {
+      "label": "WLAN",
+      "value": "Wi-Fi 5 (802.11 a/b/g/n/ac)"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "v5.1"
+     },
+     {
+      "label": "GPS",
+      "value": "Yes with A-GPS, Glonass"
+     },
+     {
+      "label": "Wi-fi Hotspot",
+      "value": "Yes"
+     },
+     {
+      "label": "NFC",
+      "value": "Yes"
+     },
+     {
+      "label": "USB",
+      "value": "Mass storage device, USB charging"
+     }
+    ]
+   },
+   {
+    "group": "Sensors & security",
+    "items": [
+     {
+      "label": "Light Sensor",
+      "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+     },
+     {
+      "label": "Fingerprint Sensor",
+      "value": "Yes"
+     },
+     {
+      "label": "Finger Sensor Position",
+      "value": "Side-mounted"
+     },
+     {
+      "label": "Face Unlock",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Multimedia",
+    "items": [
+     {
+      "label": "Loudspeaker",
+      "value": "Yes"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "USB Type-C"
+     },
+     {
+      "label": "Video",
+      "value": "1080p@30fps"
+     },
+     {
+      "label": "Document Reader",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "More",
+    "items": [
+     {
+      "label": "Made By",
+      "value": "China"
+     },
+     {
+      "label": "Features",
+      "value": "Accelerometer, gyro, proximity, compass"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.mobiledokan.com/mobile/huawei-nova-y74"
+ },
+ {
+  "id": "simple-refreshing-facial-wash-150ml",
+  "slug": "simple-refreshing-facial-wash-150ml",
+  "name": "Refreshing Facial Wash 150ml",
+  "brand": "Simple",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "simple-refreshing-facial-wash-150ml~v1",
+    "label": "150ml",
+    "attributes": {
+     "capacity": "150ml"
+    },
+    "officialPrice": 950
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2025/04/simple-kind-to-skin-refreshing-facial-wash-gel-150-ml-poland-2.jpg",
+   "https://bk.shajgoj.com/storage/2025/04/simple-kind-to-skin-refreshing-facial-wash-gel-150-ml-poland-1.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "cerave-hydrating-cleanser-236ml",
+  "slug": "cerave-hydrating-cleanser-236ml",
+  "name": "Hydrating Cleanser 236ml",
+  "brand": "CeraVe",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "cerave-hydrating-cleanser-236ml~v1",
+    "label": "236ml",
+    "attributes": {
+     "capacity": "236ml"
+    },
+    "officialPrice": 3350
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2019/12/CERAVEHYDRATINGCLEANSER236ML.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "cerave-moisturizing-cream-56ml",
+  "slug": "cerave-moisturizing-cream-56ml",
+  "name": "Moisturizing Cream 56ml",
+  "brand": "CeraVe",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "cerave-moisturizing-cream-56ml~v1",
+    "label": "56ml",
+    "attributes": {
+     "capacity": "56ml"
+    },
+    "officialPrice": 1550
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2025/11/cerave-moisturizing-cream-for-normal-to-dry-skin-1.jpg",
+   "https://bk.shajgoj.com/storage/2021/11/Cerave-Moisturizing-Cream-For-Normal-To-Dry-Skin2.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "the-ordinary-niacinamide-10-zinc-1-serum-30ml",
+  "slug": "the-ordinary-niacinamide-10-zinc-1-serum-30ml",
+  "name": "Niacinamide 10% + Zinc 1% Serum 30ml",
+  "brand": "The Ordinary",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "the-ordinary-niacinamide-10-zinc-1-serum-30ml~v1",
+    "label": "30ml",
+    "attributes": {
+     "capacity": "30ml"
+    },
+    "officialPrice": 1409
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2026/05/4559.jpg",
+   "https://bk.shajgoj.com/storage/2025/05/3592.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "cosrx-advanced-snail-96-mucin-power-essence-100ml",
+  "slug": "cosrx-advanced-snail-96-mucin-power-essence-100ml",
+  "name": "Advanced Snail 96 Mucin Power Essence 100ml",
+  "brand": "COSRX",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
+    "label": "100ml",
+    "attributes": {
+     "capacity": "100ml"
+    },
+    "officialPrice": 1900
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2019/01/cosrx-advanced-snail96-mucin-power-essence-800.jpg",
+   "https://bk.shajgoj.com/storage/2019/01/Cosrx-Advanced-Snail-96-Mucin-Power-Essence2.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml",
+  "slug": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml",
+  "name": "Relief Sun Rice + Probiotics SPF50+ PA++++ 50ml",
+  "brand": "Beauty of Joseon",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
+    "label": "50ml",
+    "attributes": {
+     "capacity": "50ml"
+    },
+    "officialPrice": 1700
+   }
+  ],
+  "images": [
+   "https://beautyline.com.bd/legacy-uploads/2025/01/Beauty-of-Joseon-Sunscreen-Rice-Probiotics-SPF-50-PA-50ml-1.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "streax-vitariche-gloss-hair-serum-115ml",
+  "slug": "streax-vitariche-gloss-hair-serum-115ml",
+  "name": "Vitariche Gloss Hair Serum 115ml",
+  "brand": "Streax",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "streax-vitariche-gloss-hair-serum-115ml~v1",
+    "label": "115ml",
+    "attributes": {
+     "capacity": "115ml"
+    },
+    "officialPrice": null
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2021/06/Streax-Vitariche-Gloss-Hair-Serum-100ml.jpg",
+   "https://bk.shajgoj.com/storage/2021/06/Streax-Vitariche-Gloss-Hair-Serum-100ml2.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "livon-hair-serum-100ml",
+  "slug": "livon-hair-serum-100ml",
+  "name": "Hair Serum 100ml",
+  "brand": "Livon",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "livon-hair-serum-100ml~v1",
+    "label": "100ml",
+    "attributes": {
+     "capacity": "100ml"
+    },
+    "officialPrice": 540
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2026/09/livon-anti-frizz-serum-100ml.jpg",
+   "https://bk.shajgoj.com/storage/2019/03/Livon-Serum-Hair-Essentials-Vitamin-E-2.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml",
+  "slug": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml",
+  "name": "10% Vitamin C + E + 5% Niacinamide Serum 30ml",
+  "brand": "Dot & Key",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
+    "label": "30ml",
+    "attributes": {
+     "capacity": "30ml"
+    },
+    "officialPrice": 1300
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2024/08/dot-key-10-vitamin-ce-5-niacinamide-serum7.jpg",
+   "https://bk.shajgoj.com/storage/2024/08/dot-key-10-vitamin-ce-5-niacinamide-serum.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml",
+  "slug": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml",
+  "name": "10% Niacinamide Face Serum for Acne Marks 30ml",
+  "brand": "The Derma Co",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
+    "label": "30ml",
+    "attributes": {
+     "capacity": "30ml"
+    },
+    "officialPrice": 1350
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2025/08/the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml-1.jpg",
+   "https://bk.shajgoj.com/storage/2025/08/the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml-2.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "deconstruct-oil-free-moisturizer-50g",
+  "slug": "deconstruct-oil-free-moisturizer-50g",
+  "name": "Oil-Free Moisturizer 50g",
+  "brand": "Deconstruct",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "deconstruct-oil-free-moisturizer-50g~v1",
+    "label": "50g",
+    "attributes": {
+     "capacity": "50g"
+    },
+    "officialPrice": 1300
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2025/12/deconstruct-oil-free-moisturizer-non-comedogenic-3-nmf-complex-02-panthenol-6.jpg",
+   "https://bk.shajgoj.com/storage/2025/12/deconstruct-oil-free-moisturizer-non-comedogenic-3-nmf-complex-02-panthenol-5.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g",
+  "slug": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g",
+  "name": "Watermelon Cooling Sunscreen SPF50+ PA++++ 80g",
+  "brand": "Dot & Key",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
+    "label": "80g",
+    "attributes": {
+     "capacity": "80g"
+    },
+    "officialPrice": 1500
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2026/04/31955-6.jpg",
+   "https://bk.shajgoj.com/storage/2026/04/31955-2.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
  },
  {
   "id": "apple-watch-series-11",
@@ -17055,6 +20716,762 @@ export const catalogOffers: Offer[] = [
  },
  {
   "id": "o512",
+  "variantId": "oneplus-nord-ce5-5g~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "official",
+  "region": null,
+  "price": 42999,
+  "oldPrice": 45999,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/oneplus-nord-ce5-official",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o513",
+  "variantId": "oneplus-nord-4~v2",
+  "sellerId": "sumashtech.com",
+  "condition": "official",
+  "region": null,
+  "price": 43499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/oneplus-nord-4",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o514",
+  "variantId": "oneplus-nord-ce4-lite-5g~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "official",
+  "region": null,
+  "price": 27999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/oneplus-nord-ce4-lite-5g-official",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o515",
+  "variantId": "google-pixel-8a~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 46490,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dazzle.com.bd/product/google-pixel-8a",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o516",
+  "variantId": "realme-14-pro-5g~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 32990,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dazzle.com.bd/product/realme-14-pro-plus-5g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o517",
+  "variantId": "realme-14-5g~v2",
+  "sellerId": "sumashtech.com",
+  "condition": "official",
+  "region": null,
+  "price": 41999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/realme-14-5g-official",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o518",
+  "variantId": "huawei-nova-y74~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "official",
+  "region": null,
+  "price": 29999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/huawei-nova-y74",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o519",
+  "variantId": "simple-refreshing-facial-wash-150ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 699,
+  "oldPrice": 950,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/simple-kind-to-skin-refreshing-facial-wash-gel-150-ml-poland",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o520",
+  "variantId": "simple-refreshing-facial-wash-150ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 760,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/42155/simple-kind-to-skin-refreshing-facial-wash-with-vitamin-b5-e-150ml-official",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o521",
+  "variantId": "simple-refreshing-facial-wash-150ml~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 599,
+  "oldPrice": 950,
+  "inStock": true,
+  "url": "https://www.banglashoppers.com/simple-refreshing-facial-wash-gel-150ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o522",
+  "variantId": "simple-refreshing-facial-wash-150ml~v1",
+  "sellerId": "medeasy.health",
+  "condition": "official",
+  "region": null,
+  "price": 748,
+  "oldPrice": 1100,
+  "inStock": true,
+  "url": "https://medeasy.health/medicines/simple-refreshing-facial-wash-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o523",
+  "variantId": "cerave-hydrating-cleanser-236ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 2710,
+  "oldPrice": 3900,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/cerave-hydrating-cleanser-for-normal-to-dry-skin",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o524",
+  "variantId": "cerave-hydrating-cleanser-236ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 2948,
+  "oldPrice": 3350,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/51397/cerave-hydrating-cleanser-for-normal-to-dry-skin-236ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o525",
+  "variantId": "cerave-hydrating-cleanser-236ml~v1",
+  "sellerId": "chaldal.com",
+  "condition": "official",
+  "region": null,
+  "price": 2519,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://chaldal.com/cerave-hydrating-cleanser-236-ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o526",
+  "variantId": "cerave-hydrating-cleanser-236ml~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 2150,
+  "oldPrice": 2650,
+  "inStock": true,
+  "url": "https://www.banglashoppers.com/cerave-hydrating-cleanser-for-normal-to-dry-skin-236ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o527",
+  "variantId": "cerave-moisturizing-cream-56ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1249,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/cerave-moisturizing-cream-for-normal-to-dry-skin-2",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o528",
+  "variantId": "cerave-moisturizing-cream-56ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1755,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/95670/cerave-moisturizing-cream-for-normal-to-dry-skin-57g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o529",
+  "variantId": "cerave-moisturizing-cream-56ml~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 1350,
+  "oldPrice": 1550,
+  "inStock": true,
+  "url": "https://www.banglashoppers.com/cerave-moisturizing-cream-for-normal-to-dry-skin-56ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o530",
+  "variantId": "cerave-moisturizing-cream-56ml~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1152,
+  "oldPrice": 1280,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/cerave-moisturizing-cream-56ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o531",
+  "variantId": "the-ordinary-niacinamide-10-zinc-1-serum-30ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1099,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/the-ordinary-niacinamide-10-zinc1",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o532",
+  "variantId": "the-ordinary-niacinamide-10-zinc-1-serum-30ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1090,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/41485/the-ordinary-niacinamide-10-zinc1-serum-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o533",
+  "variantId": "the-ordinary-niacinamide-10-zinc-1-serum-30ml~v1",
+  "sellerId": "medeasy.health",
+  "condition": "official",
+  "region": null,
+  "price": 1220,
+  "oldPrice": 2000,
+  "inStock": true,
+  "url": "https://medeasy.health/medicines/the-ordinary-niacinamide-10-zinc-1-30ml-11",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o534",
+  "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1949,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/cosrx-advanced-snail-96-mucin-power-essence",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o535",
+  "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1850,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/52036/cosrx-advanced-snail-96-mucin-power-essence-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o536",
+  "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1450,
+  "oldPrice": 1900,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/cosrx-advanced-snail-96-mucin-power-essence-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o537",
+  "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
+  "sellerId": "beautyline.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1250,
+  "oldPrice": 1700,
+  "inStock": true,
+  "url": "https://beautyline.com.bd/product/beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o538",
+  "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1390,
+  "oldPrice": 1600,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/beauty-of-joseon-sunscreen-rice-probiotics-spf-50-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o539",
+  "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1550,
+  "oldPrice": 1700,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/beauty-of-joseon-relief-sun-rice-probiotics-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o540",
+  "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1500,
+  "oldPrice": 1680,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o541",
+  "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 325,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/streax-vitariche-gloss-hair-serum-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o542",
+  "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 344,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/53399/streax-professional-vitariche-gloss-hair-serum-115ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o543",
+  "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 580,
+  "oldPrice": 700,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/streax-vitariche-gloss-hair-serum-115ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o544",
+  "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
+  "sellerId": "cosmeticscorner.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 490,
+  "oldPrice": 580,
+  "inStock": true,
+  "url": "https://www.cosmeticscorner.com.bd/streax-vitariche-gloss-hair-serum-115ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o545",
+  "variantId": "livon-hair-serum-100ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 299,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/livon-anti-frizz-serum-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o546",
+  "variantId": "livon-hair-serum-100ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 389,
+  "oldPrice": 540,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/67736/livon-hair-serum-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o547",
+  "variantId": "livon-hair-serum-100ml~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 590,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/livon-anti-frizz-serum-for-all-hair-types-100ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o548",
+  "variantId": "livon-hair-serum-100ml~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 620,
+  "oldPrice": 750,
+  "inStock": true,
+  "url": "https://www.banglashoppers.com/livon-anti-frizz-serum-for-all-hair-types-100-ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o549",
+  "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1225,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/dot-key-10-vitamin-ce-5-niacinamide-serum",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o550",
+  "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1050,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/73189/dot-and-key-10-vitamin-c-e-super-bright-face-serum-with-5-niacinamide-with-blood-orange-pumpkin-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o551",
+  "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1100,
+  "oldPrice": 1300,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/dot-key-vitamin-c-e-face-serum-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o552",
+  "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
+  "sellerId": "indianmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 800,
+  "oldPrice": 1100,
+  "inStock": true,
+  "url": "https://indianmartbd.com/product/dot-key-vitamin-c-brightening-serum-bangladesh/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o553",
+  "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 1450,
+  "oldPrice": 1750,
+  "inStock": true,
+  "url": "https://www.banglashoppers.com/dot-key-10-vitamin-c-e-super-bright-face-serum-30ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o554",
+  "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1399,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/the-derma-co-10-niacinamide-face-serum-for-acne-marks",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o555",
+  "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 995,
+  "oldPrice": 1350,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/52420/the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o556",
+  "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1105,
+  "oldPrice": 1300,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o557",
+  "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1190,
+  "oldPrice": 1400,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/the-derma-co-10-niacinamide-serum-30ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o558",
+  "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 799,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/deconstruct-oil-free-moisturizer-non-comedogenic-3-nmf-complex-02-panthenol",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o559",
+  "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 725,
+  "oldPrice": 1300,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/84864/deconstruct-oil-free-moisturizer-for-oily-skin-3-nmf-complex-0-2-panthenol-50g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o560",
+  "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
+  "sellerId": "medeasy.health",
+  "condition": "official",
+  "region": null,
+  "price": 690,
+  "oldPrice": 1200,
+  "inStock": true,
+  "url": "https://medeasy.health/medicines/deconstruct-oil-free-moisturizer-50g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o561",
+  "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": 950,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/deconstruct-oil-free-moisturizer-50g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o562",
+  "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/dot-key-watermelon-cooling-sunscreen-spf-50-pa",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o563",
+  "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1080,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/66237/dot-key-watermelon-cooling-sunscreen-spf-50-pa-with-hyaluronic-acid-80g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o564",
+  "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 999,
+  "oldPrice": 1500,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/dot-key-watermelon-cooling-sunscreen-spf-50-pa-80gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o565",
+  "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 950,
+  "oldPrice": 1250,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/dot-key-watermelon-cooling-sunscreen-spf-50-pa-80gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-23T03:00:00.000Z"
+ },
+ {
+  "id": "o566",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -17068,7 +21485,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o513",
+  "id": "o567",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -17082,7 +21499,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o514",
+  "id": "o568",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -17096,7 +21513,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o515",
+  "id": "o569",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -17110,7 +21527,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o516",
+  "id": "o570",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -17124,7 +21541,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o517",
+  "id": "o571",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -17138,7 +21555,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o518",
+  "id": "o572",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -17152,7 +21569,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o519",
+  "id": "o573",
   "variantId": "apple-watch-series-11~v3",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -17166,7 +21583,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o520",
+  "id": "o574",
   "variantId": "apple-watch-series-11~v4",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -17180,7 +21597,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o521",
+  "id": "o575",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -17194,7 +21611,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o522",
+  "id": "o576",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "unofficial",
@@ -17208,7 +21625,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o523",
+  "id": "o577",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "unofficial",
@@ -17222,7 +21639,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o524",
+  "id": "o578",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -17236,7 +21653,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o525",
+  "id": "o579",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -17250,7 +21667,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o526",
+  "id": "o580",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -17264,7 +21681,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o527",
+  "id": "o581",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -17278,7 +21695,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o528",
+  "id": "o582",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -17292,7 +21709,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o529",
+  "id": "o583",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -17306,7 +21723,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o530",
+  "id": "o584",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -17320,7 +21737,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o531",
+  "id": "o585",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -17334,7 +21751,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o532",
+  "id": "o586",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -17348,7 +21765,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o533",
+  "id": "o587",
   "variantId": "amazfit-active-2-premium~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -17362,7 +21779,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o534",
+  "id": "o588",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -17376,7 +21793,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o535",
+  "id": "o589",
   "variantId": "amazfit-active-2-premium~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -17390,7 +21807,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o536",
+  "id": "o590",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -17404,7 +21821,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o537",
+  "id": "o591",
   "variantId": "amazfit-active-2-premium~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -17418,7 +21835,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o538",
+  "id": "o592",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -17432,7 +21849,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o539",
+  "id": "o593",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "diamu.com.bd",
   "condition": "official",
@@ -17446,7 +21863,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o540",
+  "id": "o594",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -17460,7 +21877,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o541",
+  "id": "o595",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -17474,7 +21891,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o542",
+  "id": "o596",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -17488,7 +21905,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o543",
+  "id": "o597",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -17502,7 +21919,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o544",
+  "id": "o598",
   "variantId": "xiaomi-redmi-watch-6-active~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -17516,7 +21933,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o545",
+  "id": "o599",
   "variantId": "xiaomi-redmi-watch-6-active~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",

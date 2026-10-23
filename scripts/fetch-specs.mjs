@@ -39,9 +39,11 @@ const cache = (() => {
 })();
 
 const urls = new Set();
+const isMobiledokan = (url) => /^https:\/\/(www\.)?mobiledokan\.(com|co)\//.test(url);
 for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json") && f !== "specs.json")) {
   for (const product of JSON.parse(readFileSync(join(DIR, file), "utf8")).products ?? []) {
-    if (product.specsSource && /^https:\/\/www\.startech\.com\.bd\//.test(product.specsSource)) urls.add(product.specsSource);
+    const src = product.specsSource;
+    if (src && (/^https:\/\/www\.startech\.com\.bd\//.test(src) || isMobiledokan(src))) urls.add(src);
   }
 }
 
@@ -52,9 +54,27 @@ for (const url of urls) {
     console.log(`skip ${url}: HTTP ${res.status}`);
     continue;
   }
-  cache[url] = parse(await res.text());
+  cache[url] = (isMobiledokan(url) ? parseMobiledokan : parse)(await res.text());
   console.log(`${cache[url].length} groups  ${url}`);
   await new Promise((resolve) => setTimeout(resolve, 1000));
+}
+
+function parseMobiledokan(page) {
+  const groups = [];
+  const parts = page.matchAll(/<h[2-6][^>]*>([\s\S]*?)<\/h[2-6]>|<table[^>]*spec-grp-tbl[^>]*>([\s\S]*?)<\/table>/g);
+  for (const [, heading, table] of parts) {
+    if (heading !== undefined) {
+      const name = clean(heading);
+      if (name && (!groups.length || groups.at(-1).group !== name)) groups.push({ group: name, items: [] });
+    } else if (groups.length) {
+      for (const [, row] of table.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)) {
+        const cells = [...row.matchAll(/<th[^>]*>([\s\S]*?)<\/th>|<td[^>]*>([\s\S]*?)<\/td>/g)]
+          .map((c) => clean(c[1] ?? c[2])).filter(Boolean);
+        if (cells.length >= 2) groups.at(-1).items.push({ label: cells[0], value: cells.slice(1).join(" ") });
+      }
+    }
+  }
+  return groups.filter((g) => g.items.length && !/^warranty/i.test(g.group));
 }
 
 writeFileSync(CACHE, `${JSON.stringify(cache, null, 1)}\n`);
