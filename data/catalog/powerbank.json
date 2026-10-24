@@ -1,0 +1,504 @@
+{
+  "category": "powerbank",
+  "sites": [
+    {
+      "name": "Star Tech",
+      "website": "https://www.startech.com.bd",
+      "note": "Power bank ক্যাটাগরি পেজ থেকে oraimo/baseus/anker ব্র্যান্ড-লিস্টিং; প্রোডাক্ট পেজে cash price, struck price, In Stock আর স্পেক-টেবিল (specsSource-এর জন্য সবচেয়ে পরিষ্কার)।"
+    },
+    {
+      "name": "Gadget Breeze",
+      "website": "https://gadgetbreeze.com.bd",
+      "note": "WooCommerce; oraimo-র বড় স্টক। /?s=<name>&post_type=product সার্চে দাম-সহ লিস্টিং; দাম প্রোডাক্ট পেজে যাচাই করা।"
+    },
+    {
+      "name": "Motion View",
+      "website": "https://motionview.com.bd",
+      "note": "oraimo-র অফিসিয়াল রিটেইলার; /tags/oraimo-power-bank পাতায় মডেল-কোড সহ দাম আর স্টক (Stock out লেখা গুলো বাদ)।"
+    },
+    {
+      "name": "Apple Gadgets",
+      "website": "https://www.applegadgetsbd.com",
+      "note": "Baseus/Anker Zolo সিরিজ ভালো স্টকে; /category/power-bank ক্যাটাগরি পেজ থেকে দাম, প্রোডাক্ট পেজে cash price আর availability যাচাই।"
+    },
+    {
+      "name": "Gadget & Gear",
+      "website": "https://gadgetandgear.com",
+      "note": "Anker Zolo A110E-এর অফিসিয়াল লিস্টিং; /category/power-bank পেজ থেকে দাম।"
+    }
+  ],
+  "products": [
+    {
+      "brand": "Oraimo",
+      "name": "Toast OPB-7100Q 10000mAh Power Bank",
+      "category": "powerbank",
+      "releaseYear": 2023,
+      "variants": [
+        {
+          "label": "10000mAh",
+          "attributes": {
+            "capacity": "10000mAh"
+          },
+          "officialPrice": 1565
+        }
+      ],
+      "colors": [
+        "Black"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/opb-7100q-10000mah/opb-7100q-10000mah-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/oraimo-toast-opb-7100q-10000mah-power-bank",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/oraimo-toast-opb-7100q-10000mah-power-bank",
+          "price": 1350,
+          "oldPrice": 1552,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "10000mAh"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/oraimo-opb-7100q-toast-22-5-byte-power/",
+          "price": 1500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "10000mAh"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/oraimo-toast-10000mah-power-bank-opb-7100q",
+          "price": 1599,
+          "oldPrice": 1999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "10000mAh"
+        }
+      ]
+    },
+    {
+      "brand": "Oraimo",
+      "name": "PowerNova L11 10000mAh Power Bank",
+      "category": "powerbank",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "10000mAh",
+          "attributes": {
+            "capacity": "10000mAh"
+          },
+          "officialPrice": 2365
+        }
+      ],
+      "colors": [
+        "Black",
+        "Blue"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/powernova-l11/powernova-l11-01-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/powernova-l11/powernova-l11-blue-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/powernova-l11/powernova-l11-02-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/oraimo-powernova-l11-10000mah-power-bank",
+      "offers": [
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/oraimo-powernova-l11-10000mah-225w-power-bank",
+          "price": 1999,
+          "oldPrice": 2390,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "10000mAh"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/oraimo-powernova-l11-10000mah-22-5w/",
+          "price": 2080,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "10000mAh"
+        },
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/oraimo-powernova-l11-10000mah-power-bank",
+          "price": 2150,
+          "oldPrice": 2365,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "10000mAh"
+        }
+      ]
+    },
+    {
+      "brand": "Oraimo",
+      "name": "PowerNova Q21 20000mAh Power Bank",
+      "category": "powerbank",
+      "releaseYear": 2024,
+      "popular": true,
+      "variants": [
+        {
+          "label": "20000mAh",
+          "attributes": {
+            "capacity": "20000mAh"
+          },
+          "officialPrice": 2222
+        }
+      ],
+      "colors": [
+        "Black"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/powernova-q21/powernova-q21-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/oraimo-powernova-q21-power-bank",
+      "offers": [
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/oraimo-powernova-q21-20000mah-power-bank/",
+          "price": 1899,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "20000mAh"
+        },
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/oraimo-powernova-q21-power-bank",
+          "price": 2020,
+          "oldPrice": 2161,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "20000mAh"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/oraimo-powernova-q21-20000mah-225w-power-bank",
+          "price": 2099,
+          "oldPrice": 2899,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "20000mAh"
+        }
+      ]
+    },
+    {
+      "brand": "Baseus",
+      "name": "Extreme PPJP312 20000mAh Power Bank",
+      "category": "powerbank",
+      "releaseYear": 2023,
+      "variants": [
+        {
+          "label": "20000mAh",
+          "attributes": {
+            "capacity": "20000mAh"
+          },
+          "officialPrice": 2508
+        }
+      ],
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/extreme-ppjp312/extreme-ppjp312-03-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/extreme-ppjp312/extreme-ppjp312-white-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/extreme-ppjp312/extreme-ppjp312-02-500x500.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Baseus-Lipow-PPJP312-22.5W--Fast-Charging-Power-Bank-with-Dual-Cable---20000mAhdfhs-7618.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/baseus-extreme-ppjp312-20000mah-power-bank",
+      "offers": [
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/baseus-lipow-ppjp312-22-5w-fast-charging-power-bank",
+          "price": 2200,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "20000mAh"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/baseus-ppjp312-20000mah-22-5w-fast-charging-power-bank-with-built-in-dual-cables/",
+          "price": 2270,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "20000mAh"
+        },
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/baseus-extreme-ppjp312-20000mah-power-bank",
+          "price": 2322,
+          "oldPrice": 2622,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "20000mAh"
+        }
+      ]
+    },
+    {
+      "brand": "Anker",
+      "name": "Zolo A110E 20000mAh Power Bank",
+      "category": "powerbank",
+      "releaseYear": 2024,
+      "popular": true,
+      "variants": [
+        {
+          "label": "20000mAh",
+          "attributes": {
+            "capacity": "20000mAh"
+          },
+          "officialPrice": 4900
+        }
+      ],
+      "colors": [
+        "Black"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/anker/a110eh11/zolo-01-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/anker/a110eh11/zolo-02-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/anker/a110eh11/zolo-03-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/anker-zolo-20000mah-power-bank",
+      "offers": [
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/anker-zolo-a110e-fast-charging-power-bank",
+          "price": 3300,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "20000mAh"
+        },
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/anker-zolo-20000mah-power-bank",
+          "price": 4390,
+          "oldPrice": 4900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "20000mAh"
+        },
+        {
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/anker-zolo-a110e-20000mah-power-bank",
+          "price": 4499,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "20000mAh"
+        }
+      ]
+    },
+    {
+      "brand": "Baseus",
+      "name": "Adaman PPADM20S 20000mAh Power Bank",
+      "category": "powerbank",
+      "releaseYear": 2022,
+      "variants": [
+        {
+          "label": "20000mAh",
+          "attributes": {
+            "capacity": "20000mAh"
+          },
+          "officialPrice": 2408
+        }
+      ],
+      "colors": [
+        "Black"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/adaman/adaman-01-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/adaman/adaman-02-500x500.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/4319-94922.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/baseus-adaman-22-5w-20000mah-fast-charging-power-bank",
+      "offers": [
+        {
+          "variant": "20000mAh",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/baseus-adaman-22-5w-20000mah-fast-charging-power-bank",
+          "price": 2099,
+          "oldPrice": 2750,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "20000mAh",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/baseus-adaman-metal-digital-display-quick-charge-power-bank-225w",
+          "price": 2100,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "20000mAh",
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/baseus-adaman-22-5w/",
+          "price": 1950,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Oraimo",
+      "name": "Slice Link Pro 10000mAh Power Bank",
+      "category": "powerbank",
+      "releaseYear": 2023,
+      "variants": [
+        {
+          "label": "10000mAh",
+          "attributes": {
+            "capacity": "10000mAh"
+          },
+          "officialPrice": 2200
+        }
+      ],
+      "colors": [
+        "Grey"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/slice-link-pro/slice-link-pro-01-500x500.webp",
+        "https://www.startech.com.bd/image/catalog/power-bank/oraimo/slice-link-pro/slice-link-pro-02.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/oraimo-slice-link-pro-10000mah-power-bank",
+      "offers": [
+        {
+          "variant": "10000mAh",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/oraimo-slice-link-pro-10000mah-225w-power-bank-opb-p7101",
+          "price": 1899,
+          "oldPrice": 2200,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "10000mAh",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/oraimo-slice-link-pro-opb-p7101-power-bank/",
+          "price": 1990,
+          "oldPrice": 2500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "10000mAh",
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/oraimo-slice-link-pro-10000mah-225w-power-bank-opb-p7101",
+          "price": 1995,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Oraimo",
+      "name": "MagPower 15 10000mAh Wireless Power Bank",
+      "category": "powerbank",
+      "releaseYear": 2023,
+      "variants": [
+        {
+          "label": "10000mAh",
+          "attributes": {
+            "capacity": "10000mAh"
+          },
+          "officialPrice": 2790
+        }
+      ],
+      "colors": [
+        "Black",
+        "Gold"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/magpower-15/magpower-15-01-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/magpower-15/magpower-15-opb-7102w-gold-500x500.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Oraimo-OPB-7102W-Magnetic-Wireless-Power-Bank-10000mAh-6217.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/oraimo-magpower-15-10000mah-wireless-power-bank",
+      "offers": [
+        {
+          "variant": "10000mAh",
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/oraimo-magpower-15-magnetic-wireless-power-bank",
+          "price": 2399,
+          "oldPrice": 2999,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "10000mAh",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/oraimo-magpower-15-10000mah-wireless-power-bank",
+          "price": 2570,
+          "oldPrice": 2790,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "10000mAh",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/oraimo-opb-7102w-magnetic-wireless-power-bank",
+          "price": 2700,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "10000mAh",
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/oraimo-magpower-15-10000mah-wireless/",
+          "price": 2740,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    }
+  ]
+}

@@ -83,10 +83,50 @@
 | MacZen BD | maczenbd.com | Apple (Mac, iPhone, iPad, Watch, AirPods), কিছু Samsung/Surface | Apple-কেন্দ্রিক, Mac এর সব RAM/স্টোরেজ কনফিগারেশন আলাদা দামে; eSIM-only iPhone মানে USA; নিজেদের "MacZen Care" ওয়ারেন্টি, তাই আনঅফিসিয়াল ধরা |
 | Diamu | diamu.com.bd | মোবাইল, ঘড়ি, অডিও | আনঅফিসিয়াল, কম কভারেজ |
 | Executive Machines | executivemachines.com | Mac | Apple Authorised Reseller, দামি কনফিগও আছে, দাম সাধারণত বেশি |
-| Motion View | motionview.com.bd | ঘড়ি, অডিও | Amazfit এর অনুমোদিত পরিবেশক |
-| Gadget Breeze | gadgetbreeze.com.bd | ঘড়ি | ছোট দোকান, Redmi Watch 6 Active এর জন্য |
+| Motion View | motionview.com.bd | ঘড়ি, অডিও, পাওয়ার ব্যাংক | Amazfit এর অনুমোদিত পরিবেশক; oraimo পাওয়ার ব্যাংকের অফিসিয়াল রিটেইলার |
+| Gadget Breeze | gadgetbreeze.com.bd | ঘড়ি, পাওয়ার ব্যাংক | ছোট দোকান; Redmi Watch 6 Active আর oraimo-র বড় স্টক |
+| Three's | threesbd.com | স্নিকার্স | WooCommerce; ১:১ রেপ্লিকা স্নিকার্স, পেজে নিজেরাই ঘোষণা করে |
+| Splayd | splayd.com.bd | স্নিকার্স | Shopify; টাইটেলে "1:1" খোলাখুলি |
+| Ragen | ragenbd.com | স্নিকার্স | Shopify (উত্তরা); "(1:1) grade"/"OEM" লেখা থাকে |
+| DOB Skateshop | dob.com.bd | স্নিকার্স | WooCommerce, crawl-delay 5 মানতে হবে; Q&A-তে "OEM grade replica" |
+| Sneaker Zone | sneakerzonebd.com | স্নিকার্স | Shopify; DOB-র সহ-প্রতিষ্ঠান (একই মালিকানা) |
+| Trek N Tread | trekntread.com | স্নিকার্স | Laravel/Inertia; দাম পাতার embedded data-তে, worker-এ আলাদা parser |
+| SneakersBD Official | sneakersbdofficial.com | স্নিকার্স | `product:price:amount` মেটা থেকে দাম পার্স হয় |
+| Global Brand | globalbrand.com.bd | চার্জার, মনিটর | LG/Asus/Lenovo-র ডিস্ট্রিবিউটর (OpenCart); পাতার JSON-LD-তে দাম |
+| MC Solution | mcsolution.com.bd | ল্যাপটপ, মনিটর | WooCommerce; অফিসিয়াল ওয়ারেন্টির দোকান |
+| PCB Store | pcbstore.com.bd | মনিটর | গেমিং/PC দোকান (Next.js); পাতার JSON ডেটায় দাম, প্রায়ই Stock out |
 
 বাদ পড়েছে: Pickaboo, GadStyle, Gadget N Music (403 দেয়), Gadget Studio BD (robots.txt এ বন্ধ), Computer Source (timeout)। Mobile Dokan দোকান না, শুধু অফিসিয়াল দাম মেলাতে দেখা হয়েছে।
+
+### পাওয়ার ব্যাংক (২৪ অক্টোবর ২০২৬)
+
+৮টা পণ্য, ৮টা ভার্সন, ৭টা দোকান থেকে ২৫টা দাম; প্রতিটা পণ্য অন্তত ৩টা দোকানে (ইন-স্টক না থাকলেও দাম-সহ Stock out লিস্টিং দেখানো হয়েছে, `inStock: false`), প্রতিটা পাতায় গিয়ে মডেল-কোড মিলিয়ে দেখা, `worker:check`-এ সব ঠিক (০ মেলেনি, ০ ব্যর্থ)।
+
+- Oraimo Toast OPB-7100Q 10000mAh, PowerNova L11 (OPB-7103C) 10000mAh, PowerNova Q21 (OPB-7200Q) 20000mAh, Slice Link Pro (OPB-P7101) 10000mAh, MagPower 15 (OPB-7102W) 10000mAh ওয়্যারলেস, Baseus Extreme PPJP312 আর Adaman PPADM20S 20000mAh, Anker Zolo A110E (A110EH11) 20000mAh।
+- Slice Link Pro-তে Star Tech-এর পাতা "To be announced" (দাম নেই), তাই ওদের লিস্টিং নেই; Sumash-Diamu ইন-স্টক, Motion View Stock out।
+- Motion View oraimo-র অফিসিয়াল রিটেইলার (`/tags/oraimo-power-bank` পাতায় মডেল-কোড সহ দাম); Gadget Breeze-এ oraimo-র বড় স্টক; Baseus/Anker-এ Apple Gadgets আর Gadget & Gear।
+- DB-র আগের Ugreen PB503/528/568/570 আর Anker Zolo 25000 এখনো ১টা দোকানে; `discover` চালু থাকলে সময়ের সাথে বাড়বে।
+- অফিসিয়াল দাম হিসেবে Star Tech-এর Regular price ধরা হয়েছে (Toast ৳১,৫৬৫, L11 ৳২,৩৬৫, Q21 ৳২,২২২, PPJP312 ৳২,৫০৮, A110E ৳৪,৯০০)।
+
+### স্নিকার্স (২৪ অক্টোবর ২০২৬)
+
+২০টা পণ্য (স্নিকার্স + শুজ + রানিং শুজ মিলিয়ে), ৭০টা দাম, ৭টা দোকান; প্রতিটা পণ্য অন্তত ৩টা দোকানে (দাম-সহ Stock out লিস্টিংও গোনা, দামহীন পাতা বাদ), প্রতিটা পাতায় গিয়ে দেখা, `worker:check`-এ ৭০টাই ঠিক (০ মেলেনি, ০ ব্যর্থ)।
+
+- **গুরুত্বপূর্ণ:** BD-র অনলাইন স্নিকার্স মার্কেটের এই অংশটা ইমপোর্টেড ১:১ কপি — দোকানগুলো নিজেরাই পেজে লেখে ("1:1 Replica made in Vietnam", "OEM grade replica")। তাই পণ্যের নামেই "1:1 Copy" রাখা হয়েছে আর condition সব `unofficial`; আসল Nike/Adidas অফিসিয়াল রিটেইল BD অনলাইনে ৩ দোকানে মেলে না (Bata/Apex/Lotto নিজেদের ব্র্যান্ড একচেটিয়া)। অফিসিয়াল দাম = দোকানগুলোর Regular price (৪০%-২৫০% sanity পাস)।
+- পণ্য (২০): Air Force 1, Samba OG, Samba Vegan, Onitsuka Tiger Mexico 66 ও Tokuten, Converse Chuck 70 ও Chuck Taylor All Star High, Jordan 1 Low ও Retro High, Jordan 4 Retro, Nike SB Dunk Low, New Balance 9060 ও 530, Puma Speedcat OG, Adidas Gazelle Indoor, Vans Knu Skool, Adidas Adizero Evo SL, Adios Pro Evo 1, Adios Pro 4, Campus 00s।
+- নতুন দোকান (এই ধাপে): Trek N Tread (Laravel/Inertia; দাম পাতার embedded data-তে — `"variation_price"`/`"variation_discounted_price"` — worker-এ আলাদা parser), SneakersBD Official (Laravel; `product:price:amount` মেটা থেকে generic og-ফলব্যাক পার্স করে)। আগের ৫: Three's (Woo), Splayd (Shopify), Ragen (Shopify), DOB Skateshop (Woo, crawl-delay 5), Sneaker Zone (Shopify) — সবার robots.txt যাচাই করা। Sneaker Zone আর DOB একই মালিকানার সহ-প্রতিষ্ঠান এবং একই ক্যাটালগ (মিরর); দাম আলাদা হয় বলে দুটোকে আলাদা দোকান হিসেবেই দেখানো হচ্ছে।
+- Adios Pro 4-এ Ragen-এর লিস্টিংটা আসলে Y-3 Adios Pro 4 (Adidas-এর Y-3 লাইন) — নোট হিসেবে রাখা হয়েছে।
+- বাদ: ERRUM BD (ওয়েবসাইট নেই, শুধু ফেসবুক), Zapatos (নিজেদের ব্র্যান্ড, মডেল মেলে না), Kick'n GO (সাইট নামে না), Bata/Apex/Lotto (একচেটিয়া ব্র্যান্ড); মাত্র ২ দোকানে মেলা মডেলও (Air Max 90/97, Dunk Low, Superstar, Old Skool…) বাদ।
+
+### মনিটর (২৪ অক্টোবর ২০২৬)
+
+মিড-হাই বাজেটের ৬টা নতুন পণ্য (৳২৮,৫০০–৮১,০০০), ১৮টা দাম, ৪টা দোকান; প্রতিটা পণ্য ৩টা দোকানে (দাম-সহ Stock out গোনা হয়েছে, "Call For Price" পাতা বাদ), প্রতিটা পাতায় গিয়ে দেখা, `worker:check`-এ ১৮টাই ঠিক (০ মেলেনি, ০ ব্যর্থ)।
+
+- পণ্য: Asus ProArt PA279CV 27" 4K (Star Tech ৳৬৩,০০০ · PCB Store ৳৬৭,০০০ Stock out · MC Solution ৳৯৫,৫০০), LG 34U650A-B 34" UltraWide (Star Tech ৳৮১,০০০ · PCB ৳৮৪,০০০ Stock out · Global Brand ৳৮৫,০০০), Asus ROG Strix XG27ACMES 27" QHD 255Hz (Star Tech ৳৩৯,৩০০ · PCB ৳৪৬,০০০ SO · Global Brand ৳৪০,০০০ SO), Asus ProArt PA278QGV (Star Tech ৳৪৫,৮০০ · PCB ৳৫০,০০০ SO · GB ৳৪৬,০০০ SO), Asus ProArt PA248QFV Gen2 24.1" (Star Tech ৳৩৩,০০০ · PCB ৳৩৪,৯৯০ SO · GB ৳৩৪,০০০ SO), LG 24U631A-B 23.8" (Star Tech ৳২৮,৫০০ · PCB ৳২৯,২০০ SO · GB ৳৩০,৫০০)।
+- নতুন দোকান (এই ধাপে): Global Brand (LG/Asus/Lenovo-র ডিস্ট্রিবিউটর, OpenCart, robots খোলা, অফিসিয়াল), MC Solution (WooCommerce, অফিসিয়াল), PCB Store (গেমিং/PC দোকান, Next.js সাইট; কনফিগ অনুযায়ী আনঅফিসিয়াল)। সবার robots.txt যাচাই করা।
+- Global Brand-এর পাতায় sale দেখালেও JSON-LD-তে regular দাম থাকে; worker JSON-LD-ই পড়ে, তাই সেই দামই রাখা হয়েছে (যেমন 34U650A: পাতায় ৳৭১,০০০ sale, JSON-LD/সিঙ্ক ৳৮৫,০০০)।
+- বাদ: PCB Store-এ ProArt PA27JCV আর ViewSonic VX3418C-2K "Call For Price" (দাম নেই), ROG Strix XG27ACMEG-এর regular ভার্সন PCB-তে নেই (শুধু Hatsune Miku Edition — আলাদা SKU), GB-তে XG27ACMES-W (সাদা)-র দাম ৳০। এতে ২ দোকানে নেমে যাওয়া মডেলগুলো নেওয়া হয়নি।
+- অফিসিয়াল দাম = Star Tech-এর regular price (PA279CV ৳৬৪,০০০, 34U650A ৳৮৫,০০০, XG27ACMES ৳৪৭,০০০, PA278QGV ৳৪৯,০০০, PA248QFV ৳৪৫,০০০, 24U631A ৳২৯,৩০০); সব অফার ৭৩%–১৪৯% — sanity পাস।
 
 ### কীভাবে ঢোকানো হলো
 
@@ -95,6 +135,15 @@
 3. `npm run catalog:build`: `src/data/catalog.generated.ts` (Supabase ছাড়া চালালে সাইট এটা দেখায়) আর `supabase/seed.sql` (Supabase এ migration এর পরে একবার চালান) বানায়।
 
 দামের ইতিহাস বানানো হয়নি; শুধু আজকের দাম আছে, তাই চার্ট কয়েক দিন দাম জমার পরে দেখাবে। নমুনা অফার (কার্ড/bKash) সরানো হয়েছে কারণ সেগুলো আসল ছিল না।
+
+### স্পেক ব্যাকফিল (২৪ অক্টোবর ২০২৬)
+
+১১০টা পণ্যে স্পেক খালি ছিল। যাচাই করে ৫৮টাতে স্পেক ভরা হলো (ডিবিতে সরাসরি UPDATE — seed insert-only, পুরনো রো আপডেট করে না):
+
+- **উৎস:** পণ্য নিজেই Star Tech-এ বিক্রি হলে তার অফার URL-ই স্পেক পাতা (৪৭টা); Motion View ৪টা (মনিটর), AppleGadgets ২টা (LOQ 15AHP9, HP 15 fd0180nia — `fetch-specs.mjs` এদের পার্স করে না, হাতে `specs.json`-এ ঢোকানো), MobileDokan ১টা (iPhone 16, `aps-specs-table` ফরম্যাট)। সব পাতার টাইটেল + স্পেক-ভ্যালু দিয়ে মিল যাচাই করা (যেমন Haylou Watch 4-এর স্পেকেই GPS লেখা, Redmi Monitor 27-এ "Maximum Refresh Rate: 75 Hz")।
+- **রিপোর দিক:** watch.json-এর ২১টা ঘড়িতে `specsSource` যোগ হয়েছে; `catalog:specs` → `catalog:build` → ডিবি UPDATE।
+- **এখনো স্পেক-শূন্য ৫২টা:** স্কিনকেয়ার ২৯ আর স্নিকার্স ২০ (এই ক্যাটাগরিতে স্পেক-টেবিলই নেই), MacBook Pro 14 M5 Max (Star Tech-এ শুধু 16″ M5 Max আছে, ভুল সাইজের স্পেক দেওয়া যাবে না), Anker Zolo 25000mAh (Star Tech-এ নেই), realme 14 5G (realme.com-এর পাতা JS-নির্ভর, পার্স হয় না)।
+- **খেয়াল:** ডিবিতে ২৯টা পণ্য (চার্জার ৬, ফ্যান ৬, ইয়ারবাডস ৫, পাওয়ারব্যাংক ৫, মনিটর ৬, iPhone 16, Redmi Watch 6 Lite, WEOFly ২) আছে যাদের `data/catalog/*.json`-এ কোনো এন্ট্রি নেই — সেগুলো আগে সরাসরি ডিবিতে ঢোকানো হয়েছিল। ক্যাটালগ ফাইলই একমাত্র উৎস, তাই এদের পরে একটা ব্যাচ ফাইলে ফেরানো উচিত।
 
 ## যা নেওয়া হবে না, আর কেন
 

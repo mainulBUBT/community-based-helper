@@ -27,3 +27,6 @@ docs/PROJECT_NOTES.md
 
 # বেক করা ক্যাটালগ (build এ তৈরি হয়)
 public/data/catalog/
+
+# Local tool state
+.tiermux/

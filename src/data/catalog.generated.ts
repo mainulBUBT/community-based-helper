@@ -123,6 +123,54 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
+  "id": "pcbstore.com.bd",
+  "name": "PCB Store",
+  "kind": "website",
+  "website": "https://pcbstore.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "globalbrand.com.bd",
+  "name": "Global Brand",
+  "kind": "website",
+  "website": "https://www.globalbrand.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "mcsolution.com.bd",
+  "name": "MC Solution",
+  "kind": "website",
+  "website": "https://mcsolution.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "gadgetbreeze.com.bd",
+  "name": "Gadget Breeze",
+  "kind": "website",
+  "website": "https://gadgetbreeze.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
   "id": "shop.shajgoj.com",
   "name": "Shajgoj",
   "kind": "website",
@@ -315,10 +363,106 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
-  "id": "gadgetbreeze.com.bd",
-  "name": "Gadget Breeze",
+  "id": "threesbd.com",
+  "name": "Three's",
   "kind": "website",
-  "website": "https://gadgetbreeze.com.bd/",
+  "website": "https://threesbd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "splayd.com.bd",
+  "name": "Splayd",
+  "kind": "website",
+  "website": "https://splayd.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "ragenbd.com",
+  "name": "Ragen",
+  "kind": "website",
+  "website": "https://ragenbd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "dob.com.bd",
+  "name": "DOB Skateshop",
+  "kind": "website",
+  "website": "https://dob.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "sneakerzonebd.com",
+  "name": "Sneaker Zone",
+  "kind": "website",
+  "website": "https://sneakerzonebd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "trekntread.com",
+  "name": "Trek N Tread",
+  "kind": "website",
+  "website": "https://trekntread.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "sneakersbdofficial.com",
+  "name": "SneakersBD Official",
+  "kind": "website",
+  "website": "https://www.sneakersbdofficial.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "selltech.com.bd",
+  "name": "Sell Tech",
+  "kind": "website",
+  "website": "https://www.selltech.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "genten.com.bd",
+  "name": "Genten",
+  "kind": "website",
+  "website": "https://genten.com.bd/",
   "phone": null,
   "whatsapp": null,
   "facebook": null,
@@ -4292,7 +4436,65 @@ export const catalogProducts: Product[] = [
    "Luna Grey"
   ],
   "regions": [],
-  "specs": [],
+  "specs": [
+   {
+    "group": "Specification",
+    "items": [
+     {
+      "label": "Brand",
+      "value": "Lenovo"
+     },
+     {
+      "label": "Processor",
+      "value": "Brand: AMD | Model: Ryzen 7 7445HS | Frequency: Up to 4.7GHz | Cores: 6 | Threads: 12 | CPU Cache: 16MB L3 Cache"
+     },
+     {
+      "label": "Keyboard & Touchpad",
+      "value": "Keyboard Type: White Backlit, English | Touchpad: Yes"
+     },
+     {
+      "label": "Network & Connectivity",
+      "value": "Wi-Fi: Wi-Fi 6, 802.11ax 2×2 | Bluetooth: Bluetooth 5.2"
+     },
+     {
+      "label": "Body",
+      "value": "Dimensions: 14.17 × 10.19 × 0.86-0.94 inches | Weight: Starting at 2.38kg"
+     },
+     {
+      "label": "Model",
+      "value": "LOQ 15AHP9"
+     },
+     {
+      "label": "Graphics",
+      "value": "Model: NVIDIA GeForce RTX 3050 | Memory: 6GB | Type: Dedicated GDDR6"
+     },
+     {
+      "label": "Display",
+      "value": "Size: 15.6 inches | Type: IPS | Resolution: FHD (1920 × 1080) | Features: 300 nits, Anti-glare, 100% sRGB, G-SYNC | Refresh Rate: 144Hz"
+     },
+     {
+      "label": "Ports",
+      "value": "USB: 3 × USB-A (USB 5Gbps / USB 3.2 Gen 1), 1 × USB-C (USB 10Gbps / USB 3.2 Gen 2) | HDMI: 1 × HDMI 2.1 | Ethernet: 1 × RJ-45 (100/1000M) | Headphone Jack: 1 × 3.5mm headphone/microphone combo jack | Power: 170W Slim Tip (3-pin)"
+     },
+     {
+      "label": "Power",
+      "value": "Type: Li-ion | Capacity: 60Wh | Adapter Type: 170W Slim Tip"
+     },
+     {
+      "label": "Storage",
+      "value": "Capacity: 512GB | Type: M.2 2242 PCIe 4.0 × 4 NVMe SSD"
+     },
+     {
+      "label": "Memory",
+      "value": "Capacity: 16GB | Type: DDR5 SODIMM | Bus Speed: 5600MHz"
+     },
+     {
+      "label": "Other Features / Info",
+      "value": "Body Material: Luna Grey | Military Grade Certified: MIL-STD-810H Certified"
+     }
+    ]
+   }
+  ],
   "specsSource": "https://www.applegadgetsbd.com/product/lenovo-loq-15ahp9-amd-ryzen-7-7445hs-3050-gaming-laptop"
  },
  {
@@ -4342,7 +4544,283 @@ export const catalogProducts: Product[] = [
    "Abyss Blue"
   ],
   "regions": [],
-  "specs": [],
+  "specs": [
+   {
+    "group": "Processor",
+    "items": [
+     {
+      "label": "Processor Brand",
+      "value": "AMD"
+     },
+     {
+      "label": "Processor Model",
+      "value": "Ryzen 5 5625U"
+     },
+     {
+      "label": "Processor Frequency",
+      "value": "Up to 4.3GHz"
+     },
+     {
+      "label": "Processor Core",
+      "value": "6"
+     },
+     {
+      "label": "Processor Thread",
+      "value": "12"
+     },
+     {
+      "label": "CPU Cache",
+      "value": "L1 Cache: 256KB L2 Cache: 3MB L3 Cache: 16MB"
+     }
+    ]
+   },
+   {
+    "group": "Chipset",
+    "items": [
+     {
+      "label": "Chipset Model",
+      "value": "AMD SoC Platform"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "15.6 Inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Display Resolution",
+      "value": "FHD (1920×1080)"
+     },
+     {
+      "label": "Touch Screen",
+      "value": "No"
+     },
+     {
+      "label": "Display Features",
+      "value": "300nits Anti-glare"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "RAM",
+      "value": "16GB"
+     },
+     {
+      "label": "RAM Type",
+      "value": "DDR4"
+     },
+     {
+      "label": "Removable",
+      "value": "not upgradable"
+     },
+     {
+      "label": "Bus Speed",
+      "value": "3200MHz"
+     },
+     {
+      "label": "Total RAM Slot",
+      "value": "1"
+     },
+     {
+      "label": "Max RAM Capacity",
+      "value": "16GB"
+     }
+    ]
+   },
+   {
+    "group": "Storage",
+    "items": [
+     {
+      "label": "Storage Type",
+      "value": "M.2 2242 PCIe 4.0x4 NVMe"
+     },
+     {
+      "label": "Storage Capacity",
+      "value": "512GB SSD"
+     }
+    ]
+   },
+   {
+    "group": "Graphics",
+    "items": [
+     {
+      "label": "Graphics Model",
+      "value": "AMD Radeon Graphics"
+     },
+     {
+      "label": "Graphics Memory",
+      "value": "Shared"
+     },
+     {
+      "label": "Graphics Type",
+      "value": "Integrated"
+     }
+    ]
+   },
+   {
+    "group": "Keyboard & TouchPad",
+    "items": [
+     {
+      "label": "Keyboard Type",
+      "value": "Non-Backlit, English (EU)"
+     },
+     {
+      "label": "Keyboard Features",
+      "value": "Buttonless Mylar® surface multi-touch touchpad, supports Precision TouchPad (PTP), 69 x 104 mm (2.72 x 4.09 inches)"
+     },
+     {
+      "label": "TouchPad",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Camera & Audio",
+    "items": [
+     {
+      "label": "WebCam",
+      "value": "720p Webcam"
+     },
+     {
+      "label": "Speaker",
+      "value": "1.5W x2 Stereo"
+     },
+     {
+      "label": "Microphone",
+      "value": "2x Array"
+     },
+     {
+      "label": "Audio Features",
+      "value": "Dolby Audio"
+     }
+    ]
+   },
+   {
+    "group": "Ports & Slots",
+    "items": [
+     {
+      "label": "Optical Drive",
+      "value": "N/A"
+     },
+     {
+      "label": "Card Reader",
+      "value": "SD Card Reader"
+     },
+     {
+      "label": "HDMI Port",
+      "value": "1x HDMI 1.4"
+     },
+     {
+      "label": "USB 3 Port",
+      "value": "2x USB 3.2 Gen 1"
+     },
+     {
+      "label": "USB Type-C / Thunderbolt Port",
+      "value": "1x USB-C 3.2 Gen 1 (support data transfer, Power Delivery and DisplayPort 1.2)"
+     },
+     {
+      "label": "Headphone & Microphone Port",
+      "value": "1x Headphone / microphone combo jack (3.5mm)"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "LAN",
+      "value": "N/A"
+     },
+     {
+      "label": "WiFi",
+      "value": "Wi-Fi 6, 11ax 2x2"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "Bluetooth 5.2"
+     }
+    ]
+   },
+   {
+    "group": "Security",
+    "items": [
+     {
+      "label": "Camera Privacy Shutter",
+      "value": "Yes"
+     },
+     {
+      "label": "Security Chip",
+      "value": "FW TPM 2.0"
+     }
+    ]
+   },
+   {
+    "group": "Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "Windows 11"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Battery Type",
+      "value": "Integrated"
+     },
+     {
+      "label": "Battery Capacity",
+      "value": "47Wh"
+     },
+     {
+      "label": "Adapter Type",
+      "value": "65W round tip (3-pin)"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Abyss Blue"
+     },
+     {
+      "label": "Dimensions",
+      "value": "359.3 x 235 x 17.9 mm (14.15 x 9.25 x 0.70 inches)"
+     },
+     {
+      "label": "Weight",
+      "value": "Starting at 1.62 kg (3.57 lbs)"
+     },
+     {
+      "label": "Body Material",
+      "value": "PC-ABS (Top), PC-ABS (Bottom)"
+     }
+    ]
+   },
+   {
+    "group": "Other Features",
+    "items": [
+     {
+      "label": "Other Features",
+      "value": "MIL-STD-810H military test passed (21 test items)"
+     }
+    ]
+   }
+  ],
   "specsSource": "https://www.startech.com.bd/lenovo-ideapad-slim-3-15abr8-5625u-laptop"
  },
  {
@@ -4383,7 +4861,287 @@ export const catalogProducts: Product[] = [
    "Abyss Blue"
   ],
   "regions": [],
-  "specs": [],
+  "specs": [
+   {
+    "group": "Processor",
+    "items": [
+     {
+      "label": "Processor Brand",
+      "value": "Intel"
+     },
+     {
+      "label": "Processor Model",
+      "value": "Core i5-13420H"
+     },
+     {
+      "label": "Generation",
+      "value": "13th Generation"
+     },
+     {
+      "label": "Processor Frequency",
+      "value": "P-core 2.1 / 4.6GHz, E-core 1.5 / 3.4GHz"
+     },
+     {
+      "label": "Processor Core",
+      "value": "8 (4 Performance cores, 4 Efficient cores)"
+     },
+     {
+      "label": "Processor Thread",
+      "value": "12"
+     },
+     {
+      "label": "CPU Cache",
+      "value": "12MB"
+     }
+    ]
+   },
+   {
+    "group": "Chipset",
+    "items": [
+     {
+      "label": "Chipset Model",
+      "value": "Intel SoC Platform"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "14\""
+     },
+     {
+      "label": "Display Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Display Resolution",
+      "value": "WUXGA (1920x1200)"
+     },
+     {
+      "label": "Display Features",
+      "value": "300nits Anti-glare, 45% NTSC"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "RAM",
+      "value": "16GB (8GB Soldered DDR5-4800 + 8GB SO-DIMM DDR5-4800)"
+     },
+     {
+      "label": "RAM Type",
+      "value": "DDR5"
+     },
+     {
+      "label": "Bus Speed",
+      "value": "4800 MHz"
+     },
+     {
+      "label": "Max RAM Capacity",
+      "value": "Up to 24GB (8GB soldered + 16GB SO-DIMM) DDR5-4800 offering"
+     }
+    ]
+   },
+   {
+    "group": "Storage",
+    "items": [
+     {
+      "label": "Storage Type",
+      "value": "M.2 2242 PCIe 4.0x4 NVMe SSD"
+     },
+     {
+      "label": "Storage Capacity",
+      "value": "1TB"
+     },
+     {
+      "label": "Extra M.2 Slot",
+      "value": "Yes"
+     },
+     {
+      "label": "Supported SSD Type",
+      "value": "Up to two drives, 2x M.2 SSD"
+     },
+     {
+      "label": "Storage Upgrade",
+      "value": "Up to 1TB"
+     }
+    ]
+   },
+   {
+    "group": "Graphics",
+    "items": [
+     {
+      "label": "Graphics Model",
+      "value": "Intel UHD Graphics"
+     },
+     {
+      "label": "Graphics Memory",
+      "value": "Shared"
+     },
+     {
+      "label": "Graphics Type",
+      "value": "Integrated"
+     }
+    ]
+   },
+   {
+    "group": "Keyboard & TouchPad",
+    "items": [
+     {
+      "label": "Keyboard Type",
+      "value": "Non-backlit, English (EU)"
+     },
+     {
+      "label": "TouchPad",
+      "value": "Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad (PTP), 75 x 120 mm (2.95 x 4.72 inches)"
+     }
+    ]
+   },
+   {
+    "group": "Camera & Audio",
+    "items": [
+     {
+      "label": "WebCam",
+      "value": "HD 720p with Privacy Shutter"
+     },
+     {
+      "label": "Speaker",
+      "value": "Stereo speakers, 2W x2"
+     },
+     {
+      "label": "Microphone",
+      "value": "2x, Array Microphone"
+     },
+     {
+      "label": "Audio Features",
+      "value": "Optimized with Dolby Audio"
+     }
+    ]
+   },
+   {
+    "group": "Ports & Slots",
+    "items": [
+     {
+      "label": "Optical Drive",
+      "value": "N/A"
+     },
+     {
+      "label": "Card Reader",
+      "value": "SD Card Reader"
+     },
+     {
+      "label": "HDMI Port",
+      "value": "1x HDMI 1.4"
+     },
+     {
+      "label": "USB 2 Port",
+      "value": "2x USB-A (USB 5Gbps / USB 3.2 Gen 1)"
+     },
+     {
+      "label": "USB Type-C / Thunderbolt Port",
+      "value": "1x USB-C (USB 5Gbps / USB 3.2 Gen 1), with USB PD 3.0 and DisplayPort 1.2"
+     },
+     {
+      "label": "Headphone & Microphone Port",
+      "value": "1x Headphone / microphone combo jack (3.5mm)"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "LAN",
+      "value": "N/A"
+     },
+     {
+      "label": "WiFi",
+      "value": "Wi-Fi 6, 802.11ax"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "Bluetooth 5.2"
+     }
+    ]
+   },
+   {
+    "group": "Security",
+    "items": [
+     {
+      "label": "Fingerprint Sensor",
+      "value": "N/A"
+     },
+     {
+      "label": "Camera Privacy Shutter",
+      "value": "Yes"
+     },
+     {
+      "label": "Security Chip",
+      "value": "Firmware TPM 2.0 Enabled"
+     }
+    ]
+   },
+   {
+    "group": "Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "FreeDOS"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Battery Type",
+      "value": "Integrated"
+     },
+     {
+      "label": "Battery Capacity",
+      "value": "50Wh"
+     },
+     {
+      "label": "Adapter Type",
+      "value": "65W Round Tip (3-pin)"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Luna Grey"
+     },
+     {
+      "label": "Dimensions",
+      "value": "314.4 x 222.1 x 16.9-17.9 mm (12.38 x 8.74 x 0.67-0.70 inches)"
+     },
+     {
+      "label": "Weight",
+      "value": "Starting at 1.39 kg (3.06 lbs)"
+     },
+     {
+      "label": "Body Material",
+      "value": "Aluminium (Top), PC-ABS (Bottom)"
+     }
+    ]
+   },
+   {
+    "group": "Other Features",
+    "items": [
+     {
+      "label": "Other Features",
+      "value": "MIL-STD-810H military test passed (21 test items) TÜV Rheinland Low Blue Light (Software Solution) Green Certifications: ENERGY STAR 8.0 EPEAT Silver Registered ErP Lot 6 ErP Lot 26 RoHS compliant"
+     }
+    ]
+   }
+  ],
   "specsSource": "https://www.startech.com.bd/lenovo-ideapad-slim-3-14irh10-1tb-ssd-laptop-with-freedos"
  },
  {
@@ -4413,7 +5171,69 @@ export const catalogProducts: Product[] = [
    "Natural Silver"
   ],
   "regions": [],
-  "specs": [],
+  "specs": [
+   {
+    "group": "Specification",
+    "items": [
+     {
+      "label": "Brand",
+      "value": "HP"
+     },
+     {
+      "label": "Processor",
+      "value": "Brand: Intel | Model: Core i3-1315U (13th Gen) | Frequency: up to 4.5GHz | Cores: 6 | Threads: 8 | CPU Cache: 10MB"
+     },
+     {
+      "label": "Keyboard & Touchpad",
+      "value": "Keyboard Type: Full-size, Backlit keyboard | TouchPad: Yes"
+     },
+     {
+      "label": "Network & Connectivity",
+      "value": "Wi-Fi 6 | Bluetooth 5.4"
+     },
+     {
+      "label": "Model",
+      "value": "15-FD0180nia"
+     },
+     {
+      "label": "Graphics",
+      "value": "Model: Intel UHD Graphics | Memory: Shared | Type: Integrated"
+     },
+     {
+      "label": "Display",
+      "value": "Size: 15.6 Inch | Type: VA | Resolution: FHD (1920x1080)"
+     },
+     {
+      "label": "Ports",
+      "value": "USB: 2x USB Type-A (5Gbps), 1x USB Type-C (5Gbps) | HDMI: 1x HDMI 1.4 | Headphone Jack: 1x headphone/microphone combo"
+     },
+     {
+      "label": "Camera",
+      "value": "720p HD camera"
+     },
+     {
+      "label": "Power",
+      "value": "Type: 3-cell Li-ion | Capacity: 41Wh | Adapter Type: 45W"
+     },
+     {
+      "label": "Storage",
+      "value": "Capacity: 512GB | Type: M.2 NVMe PCIe SSD"
+     },
+     {
+      "label": "Memory",
+      "value": "Capacity: 8GB | Type: DDR4 | Bus Speed: 3200MHz"
+     },
+     {
+      "label": "Audio",
+      "value": "Dual speakers, dual array microphones"
+     },
+     {
+      "label": "Other Features / Info",
+      "value": "Military Grade Certified: US MIL-STD 810H"
+     }
+    ]
+   }
+  ],
   "specsSource": "https://www.applegadgetsbd.com/product/hp-15-fd0180nia-intel-core-i3-1315u-fhd-laptop"
  },
  {
@@ -4443,7 +5263,266 @@ export const catalogProducts: Product[] = [
    "Carbon"
   ],
   "regions": [],
-  "specs": [],
+  "specs": [
+   {
+    "group": "Processor",
+    "items": [
+     {
+      "label": "Processor Brand",
+      "value": "Intel"
+     },
+     {
+      "label": "Processor Model",
+      "value": "Core 3 100U"
+     },
+     {
+      "label": "Generation",
+      "value": "Intel Core processors (Series 1)"
+     },
+     {
+      "label": "Processor Frequency",
+      "value": "up to 4.7 GHz"
+     },
+     {
+      "label": "Processor Core",
+      "value": "6 (2P + 4E)"
+     },
+     {
+      "label": "Processor Thread",
+      "value": "8"
+     },
+     {
+      "label": "CPU Cache",
+      "value": "10 MB Intel Smart Cache"
+     }
+    ]
+   },
+   {
+    "group": "Chipset",
+    "items": [
+     {
+      "label": "Chipset Model",
+      "value": "Intel SoC Platform"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "15.6\""
+     },
+     {
+      "label": "Display Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Display Resolution",
+      "value": "FHD"
+     },
+     {
+      "label": "Touch Screen",
+      "value": "N/A"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "120Hz"
+     },
+     {
+      "label": "Display Features",
+      "value": "WVA, IPS, Anti-Glare, 250 nits"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "RAM",
+      "value": "8GB"
+     },
+     {
+      "label": "RAM Type",
+      "value": "DDR5"
+     },
+     {
+      "label": "Bus Speed",
+      "value": "4400 MHz"
+     }
+    ]
+   },
+   {
+    "group": "Storage",
+    "items": [
+     {
+      "label": "Storage Type",
+      "value": "M.2 PCIe NVMe SSD"
+     },
+     {
+      "label": "Storage Capacity",
+      "value": "512GB"
+     }
+    ]
+   },
+   {
+    "group": "Graphics",
+    "items": [
+     {
+      "label": "Graphics Model",
+      "value": "Intel UHD Graphics"
+     },
+     {
+      "label": "Graphics Memory",
+      "value": "Shared"
+     },
+     {
+      "label": "Graphics Type",
+      "value": "Integrated"
+     }
+    ]
+   },
+   {
+    "group": "Keyboard & TouchPad",
+    "items": [
+     {
+      "label": "Keyboard Type",
+      "value": "English US non-backlit keyboard"
+     },
+     {
+      "label": "TouchPad",
+      "value": "Precision touchpad"
+     }
+    ]
+   },
+   {
+    "group": "Camera & Audio",
+    "items": [
+     {
+      "label": "WebCam",
+      "value": "720p at 30 fps HD RGB camera"
+     },
+     {
+      "label": "Speaker",
+      "value": "2 tuned speakers"
+     },
+     {
+      "label": "Microphone",
+      "value": "Single integrated microphone"
+     }
+    ]
+   },
+   {
+    "group": "Ports & Slots",
+    "items": [
+     {
+      "label": "Optical Drive",
+      "value": "N/A"
+     },
+     {
+      "label": "Card Reader",
+      "value": "1x SD-card slot"
+     },
+     {
+      "label": "HDMI Port",
+      "value": "1 HDMI 1.4 port"
+     },
+     {
+      "label": "USB 2 Port",
+      "value": "1 USB 2.0 (480 Mbps) port"
+     },
+     {
+      "label": "USB 3 Port",
+      "value": "1 USB 3.2 Gen 1 Type-A (5 Gbps) port"
+     },
+     {
+      "label": "USB Type-C / Thunderbolt Port",
+      "value": "1 USB 3.2 Gen 1 (5 Gbps) Type-C® data only port (only for computers with 13th Gen Intel® Core™ processors) 1 USB 3.2 Gen 1 (5 Gbps) Type-C® port with displayport 1.4 and power Delivery (only for computers with aluminum chassis)"
+     },
+     {
+      "label": "Headphone & Microphone Port",
+      "value": "1 Universal Audio Jack"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "LAN",
+      "value": "N/A"
+     },
+     {
+      "label": "WiFi",
+      "value": "Realtek Wi-Fi 6 RTL8852BE, 2x2, 802.11ax, MU-MIMO"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "Bluetooth wireless card"
+     }
+    ]
+   },
+   {
+    "group": "Security",
+    "items": [
+     {
+      "label": "Fingerprint Sensor",
+      "value": "N/A"
+     },
+     {
+      "label": "Camera Privacy Shutter",
+      "value": "N/A"
+     }
+    ]
+   },
+   {
+    "group": "Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "Free Dos"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Battery Type",
+      "value": "3-Cell Battery"
+     },
+     {
+      "label": "Battery Capacity",
+      "value": "41WHr (Integrated)"
+     },
+     {
+      "label": "Adapter Type",
+      "value": "65 Watt AC adapter"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Carbon Black"
+     },
+     {
+      "label": "Dimensions",
+      "value": "Height (rear): 0.75 in. (18.99 mm) Height (front): 0.67 in. (16.96 mm) Width: 14.11 in. (358.50 mm) Depth: 9.28 in. (235.56 mm)"
+     },
+     {
+      "label": "Weight",
+      "value": "Weight (maximum): 4.19 lb (1.90 kg)"
+     },
+     {
+      "label": "Body Material",
+      "value": "Carbon Fiber"
+     }
+    ]
+   }
+  ],
   "specsSource": "https://www.startech.com.bd/dell-pro-15-essential-pv15250-laptop"
  },
  {
@@ -4483,7 +5562,266 @@ export const catalogProducts: Product[] = [
    "Dark Ash"
   ],
   "regions": [],
-  "specs": [],
+  "specs": [
+   {
+    "group": "Processor",
+    "items": [
+     {
+      "label": "Processor Brand",
+      "value": "Intel"
+     },
+     {
+      "label": "Processor Model",
+      "value": "Core 3-100U"
+     },
+     {
+      "label": "Processor Frequency",
+      "value": "Up to 4.7 GHz with Intel Turbo Boost Technology"
+     },
+     {
+      "label": "Processor Core",
+      "value": "6"
+     },
+     {
+      "label": "Processor Thread",
+      "value": "8"
+     },
+     {
+      "label": "CPU Cache",
+      "value": "10 MB L3 cache"
+     }
+    ]
+   },
+   {
+    "group": "Chipset",
+    "items": [
+     {
+      "label": "Chipset Model",
+      "value": "Intel integrated SoC"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "15.6-Inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Display Resolution",
+      "value": "FHD (1920 x 1080)"
+     },
+     {
+      "label": "Touch Screen",
+      "value": "N/A"
+     },
+     {
+      "label": "Display Features",
+      "value": "micro-edge, anti-glare, 300 nits, 62.5% sRGB"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "RAM",
+      "value": "8GB (1 x 8GB)"
+     },
+     {
+      "label": "RAM Type",
+      "value": "DDR5"
+     },
+     {
+      "label": "Removable",
+      "value": "Yes"
+     },
+     {
+      "label": "Bus Speed",
+      "value": "5200Mhz"
+     },
+     {
+      "label": "Total RAM Slot",
+      "value": "2"
+     }
+    ]
+   },
+   {
+    "group": "Storage",
+    "items": [
+     {
+      "label": "Storage Type",
+      "value": "PCIe NVMe M.2 SSD"
+     },
+     {
+      "label": "Storage Capacity",
+      "value": "512GB"
+     }
+    ]
+   },
+   {
+    "group": "Graphics",
+    "items": [
+     {
+      "label": "Graphics Model",
+      "value": "Intel Iris X Graphics"
+     },
+     {
+      "label": "Graphics Memory",
+      "value": "Shared"
+     },
+     {
+      "label": "Graphics Type",
+      "value": "Integrated"
+     }
+    ]
+   },
+   {
+    "group": "Keyboard & TouchPad",
+    "items": [
+     {
+      "label": "Keyboard Type",
+      "value": "Full-size keyboard"
+     },
+     {
+      "label": "Keyboard Features",
+      "value": "Full-size, soft gray keyboard with numeric keypad"
+     },
+     {
+      "label": "TouchPad",
+      "value": "HP Imagepad; Precision Touchpad support"
+     }
+    ]
+   },
+   {
+    "group": "Camera & Audio",
+    "items": [
+     {
+      "label": "WebCam",
+      "value": "HP True Vision 1080p FHD camera with temporal noise reduction"
+     },
+     {
+      "label": "Speaker",
+      "value": "Dual speakers"
+     },
+     {
+      "label": "Microphone",
+      "value": "integrated dual array digital microphones"
+     },
+     {
+      "label": "Audio Features",
+      "value": "Mic mute key"
+     }
+    ]
+   },
+   {
+    "group": "Ports & Slots",
+    "items": [
+     {
+      "label": "Card Reader",
+      "value": "N/A"
+     },
+     {
+      "label": "HDMI Port",
+      "value": "1x HDMI 1.4b"
+     },
+     {
+      "label": "USB 3 Port",
+      "value": "2x USB Type-A 5Gbps signaling rate"
+     },
+     {
+      "label": "USB Type-C / Thunderbolt Port",
+      "value": "1x USB Type-C 5Gbps signaling rate (supports data transfer only and does not support charging or external monitors)"
+     },
+     {
+      "label": "Headphone & Microphone Port",
+      "value": "1x headphone/microphone combo"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "WiFi",
+      "value": "Realtek Wi-Fi 6 (2×2)"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "Bluetooth 5.4 Wireless Card"
+     }
+    ]
+   },
+   {
+    "group": "Security",
+    "items": [
+     {
+      "label": "Fingerprint Sensor",
+      "value": "N/A"
+     },
+     {
+      "label": "Camera Privacy Shutter",
+      "value": "Yes"
+     },
+     {
+      "label": "Security Chip",
+      "value": "Trusted Platform Module (Firmware TPM) support"
+     }
+    ]
+   },
+   {
+    "group": "Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "FreeDOS"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Battery Type",
+      "value": "3-cell, Li-ion polymer"
+     },
+     {
+      "label": "Battery Capacity",
+      "value": "41 Wh"
+     },
+     {
+      "label": "Adapter Type",
+      "value": "45 W Smart AC power adapter"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Dark Ash"
+     },
+     {
+      "label": "Dimensions",
+      "value": "35.98 x 23.6 x 1.86 cm"
+     },
+     {
+      "label": "Weight",
+      "value": "1.59 kg"
+     },
+     {
+      "label": "Part Number / MPN",
+      "value": "D4GQ3PT"
+     }
+    ]
+   }
+  ],
   "specsSource": "https://www.startech.com.bd/hp-250r-g10-core-3-100u-laptop"
  },
  {
@@ -12993,6 +14331,1891 @@ export const catalogProducts: Product[] = [
   "specsSource": "https://www.mobiledokan.com/mobile/huawei-nova-y74"
  },
  {
+  "id": "asus-proart-display-pa279cv-27-inch-4k",
+  "slug": "asus-proart-display-pa279cv-27-inch-4k",
+  "name": "ProArt Display PA279CV 27-inch 4K",
+  "brand": "Asus",
+  "category": "monitor",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "asus-proart-display-pa279cv-27-inch-4k~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 64000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/asus/proart-display-pa279cv/proart-display-pa279cv-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "27 inches"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "4K UHD (3840 x 2160)"
+     },
+     {
+      "label": "Pixels Per Inch (PPI)",
+      "value": "163"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.155mm"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178°/ 178°"
+     },
+     {
+      "label": "Brightness",
+      "value": "Brightness (Typ.): 350cd/㎡"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1000:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "60Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "1073.7M (10 bit)"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "Color Space (sRGB) : 100%"
+     },
+     {
+      "label": "Response Time",
+      "value": "5ms (GTG)"
+     },
+     {
+      "label": "HDR",
+      "value": "HDR10"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     },
+     {
+      "label": "Others Features",
+      "value": "Display Viewing Area (H x V) : 596.74 x 335.66 mm"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Color Temperature Selection",
+      "value": "Yes (5 modes)"
+     },
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     },
+     {
+      "label": "G-Sync Support",
+      "value": "Yes"
+     },
+     {
+      "label": "Free Sync Support",
+      "value": "Yes"
+     },
+     {
+      "label": "HDCP",
+      "value": "Yes, 2.2"
+     },
+     {
+      "label": "Camera (Built In)",
+      "value": "Color Accuracy: △E< 2 ProArt Palette: Yes QuickFit: Yes PIP / PBP Technology: Yes"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "Yes"
+     },
+     {
+      "label": "Speaker Details",
+      "value": "2Wx2"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "Display Port",
+      "value": "DisplayPort 1.2 x1"
+     },
+     {
+      "label": "HDMI",
+      "value": "HDMI 2.0 x2"
+     },
+     {
+      "label": "USB Port(s)",
+      "value": "4x USB 3.2 Gen 1 Type-A"
+     },
+     {
+      "label": "USB Type-C",
+      "value": "USB-C x 1 (DP Alt Mode)"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "Yes"
+     },
+     {
+      "label": "Others",
+      "value": "USB-C Power Delivery: 65W"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "Yes (+35° ~ -5°)"
+     },
+     {
+      "label": "Swivel",
+      "value": "Yes (+45° ~ -45°)"
+     },
+     {
+      "label": "Pivot",
+      "value": "Yes (+90° ~ -90°)"
+     },
+     {
+      "label": "Height Adjustment",
+      "value": "0~150mm"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100x100mm"
+     },
+     {
+      "label": "Security Locker",
+      "value": "Kensington Lock"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Phys. Dimension (W x H x D) : 61.40 x 52.35 x 22.78 cm (24.17\" x 20.61\" x 8.97\") Phys. Dimension without Stand (W x H x D) : 61.40 x 36.99 x 5.99 cm (24.17\" x 14.56\" x 2.36\") Box Dimension (W x H x D) : 68.00 x 51.60 x 16.10 cm (26.77\" x 20.31\" x 6.34\")"
+     },
+     {
+      "label": "Weight",
+      "value": "Net Weight: 8.6 kg (18.96 lbs) Net Weight without Stand: 5.7 kg (12.57 lbs) Gross Weight: 11.2 kg (24.69 lbs)"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "Power Consumption: < 32W Power Saving Mode: < 0.5W Power Off Mode: 0W (hard switch)"
+     },
+     {
+      "label": "Voltage",
+      "value": "100-240V, 50/60Hz"
+     },
+     {
+      "label": "Others",
+      "value": "Signal Frequency: Digital Signal Frequency : 29~160 KHz (H) / 40~60 Hz (V) Certificate: TÜV Flicker-free TÜV Low Blue Light Calman Verified Mac Compliance"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/asus-proart-display-pa279cv-monitor"
+ },
+ {
+  "id": "lg-34u650a-b-34-inch-ultrawide-wqhd-curved",
+  "slug": "lg-34u650a-b-34-inch-ultrawide-wqhd-curved",
+  "name": "34U650A-B 34-inch UltraWide WQHD Curved",
+  "brand": "LG",
+  "category": "monitor",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "lg-34u650a-b-34-inch-ultrawide-wqhd-curved~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 85000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/lg-monitor/34u650a-b/34u650a-b-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "34\""
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "WQHD (3440 x 1440)"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.2325 x 0.2325"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "21:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178˚(R/L), 178˚(U/D)"
+     },
+     {
+      "label": "Brightness",
+      "value": "300cd (Typ.)/240cd (Min.)"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1000:1 (Min.), 700:1 (Typ.)"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "100Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "1.07B"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "sRGB 99% (CIE1931)"
+     },
+     {
+      "label": "Response Time",
+      "value": "5ms (GtG at Faster)"
+     },
+     {
+      "label": "HDR",
+      "value": "HDR10"
+     },
+     {
+      "label": "Curvature",
+      "value": "3800R"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     },
+     {
+      "label": "Free Sync Support",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "Yes"
+     },
+     {
+      "label": "Speaker Output",
+      "value": "7W x 2"
+     },
+     {
+      "label": "Microphone (Built In)",
+      "value": "No"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "Display Port",
+      "value": "Yes"
+     },
+     {
+      "label": "HDMI",
+      "value": "Yes"
+     },
+     {
+      "label": "USB Port(s)",
+      "value": "1 x USB-A (3ea/ver3.2 Gen1)"
+     },
+     {
+      "label": "USB Type-C",
+      "value": "1 x USB-C(1ea/ver3.2 Gen1) 96W Power Delivery"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "Yes"
+     },
+     {
+      "label": "D-Sub",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "Yes"
+     },
+     {
+      "label": "Swivel",
+      "value": "Yes"
+     },
+     {
+      "label": "Height Adjustment",
+      "value": "Yes"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100 x 100 mm"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "with Stand: mm 816.7 x 535.2 x 230.0 (Up) 816.7 x 385.2 x 267.5 (Down) without Stand: mm 816.7 x 364.4 x 83.6"
+     },
+     {
+      "label": "Weight",
+      "value": "With Stand Weight: 10.1 kg Without Stand Weight: 7.3 kg"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Type",
+      "value": "External Power"
+     },
+     {
+      "label": "Power Consumption",
+      "value": "Power Consumption (Sleep Mode): Less than 0.5W Power Consumption (DC Off.): Less than 0.3W"
+     },
+     {
+      "label": "Voltage",
+      "value": "100-240 Vac, 50/60 Hz"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/lg-34u650a-b-monitor"
+ },
+ {
+  "id": "asus-rog-strix-xg27acmes-27-inch-qhd-255hz",
+  "slug": "asus-rog-strix-xg27acmes-27-inch-qhd-255hz",
+  "name": "ROG Strix XG27ACMES 27-inch QHD 255Hz",
+  "brand": "Asus",
+  "category": "monitor",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "asus-rog-strix-xg27acmes-27-inch-qhd-255hz~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 47000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/asus/rog-strix-xg27acmes/rog-strix-xg27acmes-1200x630.webp"
+  ],
+  "colors": [
+   "Black"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "27-inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "Fast IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "2K QHD (2560x1440)"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.233mm"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "(CR≧10, H/V) : 178°/ 178°"
+     },
+     {
+      "label": "Brightness",
+      "value": "400 cd/㎡(HDR, Peak) 350cd/㎡(Typ.)"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1300:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "255Hz OC (Above 144Hz)"
+     },
+     {
+      "label": "Color Support",
+      "value": "1073.7M (10 bit)"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "Color Space (sRGB): 133% Color Space (DCI-P3): 97%"
+     },
+     {
+      "label": "Response Time",
+      "value": "1ms(GTG), 0.3ms(min.)"
+     },
+     {
+      "label": "HDR",
+      "value": "HDR10"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     },
+     {
+      "label": "Others Features",
+      "value": "VESA AdaptiveSync Display 255Hz VESA DisplayHDR 400 AMD FreeSync Premium G-SYNC Compatible FSC MIX GameVisual GamePlus A.I. Assistant Technology: AI Visual A.I. Assistant Technology: Dynamic Crosshair A.I. Assistant Technology: Dynamic Shadow Boost Color Adjustment: 6-axis adjustment (R,G,B,C,M,Y) Gamma Adjustment: Yes (Support Gamma 1.8/2.0/2.2/2.4/2.6)"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Color Temperature Selection",
+      "value": "Yes (8 modes)"
+     },
+     {
+      "label": "Flicker Free",
+      "value": "TÜV Flicker-free"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "TÜV Low Blue Light"
+     },
+     {
+      "label": "G-Sync Support",
+      "value": "Yes"
+     },
+     {
+      "label": "Free Sync Support",
+      "value": "AMD FreeSync Premium"
+     },
+     {
+      "label": "HDCP",
+      "value": "2.3"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "N/A"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "Display Port",
+      "value": "DisplayPort 1.4 x 1 (HBR3)"
+     },
+     {
+      "label": "HDMI",
+      "value": "HDMI(v2.1) x 1 (FRL)"
+     },
+     {
+      "label": "USB Type-C",
+      "value": "USB-C x 1 (DP Alt Mode)"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "Yes (+20° ~ -5°)"
+     },
+     {
+      "label": "Swivel",
+      "value": "Yes (+45° ~ -45°)"
+     },
+     {
+      "label": "Pivot",
+      "value": "Yes (+90° ~ -90°)"
+     },
+     {
+      "label": "Height Adjustment",
+      "value": "0~110mm"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100x100mm"
+     },
+     {
+      "label": "Security Locker",
+      "value": "Kensington Lock"
+     },
+     {
+      "label": "Others",
+      "value": "1/4\" Tripod Socket: Yes"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Phys. Dimension (W x H x D): 61.48 x 50.34 x 18.87 cm (24.20\" x 19.82\" x 7.43\") Phys. Dimension without Stand (W x H x D): 61.48 x 36.71 x 6.30 cm (24.20\" x 14.45\" x 2.48\") Box Dimension (W x H x D): 84.00 x 18.6 x 51.5 cm (33.07\" x 7.32\" x 20.28\")"
+     },
+     {
+      "label": "Weight",
+      "value": "Net Weight: 5.96 kg (13.14 lbs) Net Weight without Stand: 3.87 kg (8.53 lbs) Gross Weight: 8.36 kg (18.43 lbs)"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "Power Consumption: <21W* Power Saving Mode: <0.5W Power Off Mode: <0.3W"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/asus-rog-strix-xg27acmes-monitor"
+ },
+ {
+  "id": "asus-proart-display-pa278qgv-27-inch-qhd",
+  "slug": "asus-proart-display-pa278qgv-27-inch-qhd",
+  "name": "ProArt Display PA278QGV 27-inch QHD",
+  "brand": "Asus",
+  "category": "monitor",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "asus-proart-display-pa278qgv-27-inch-qhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 49000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/asus/proart-display-pa278qgv/proart-display-pa278qgv-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "27 Inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "2K QHD (2560 x 1440)"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.233mm"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178°(H)/178°(V)"
+     },
+     {
+      "label": "Brightness",
+      "value": "Brightness (HDR, Peak) : 350 cd/㎡ Brightness (Typ.) : 350cd/㎡"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "Contrast Ratio (Max) : 3000:1 Contrast Ratio (Typ.) : 1500:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "120Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "1073.7M (10 bit)"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "100% sRGB"
+     },
+     {
+      "label": "Response Time",
+      "value": "5ms (GTG)"
+     },
+     {
+      "label": "HDR",
+      "value": "HDR10"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     },
+     {
+      "label": "Others Features",
+      "value": "Display Viewing Area (H x V) : 596.74 x 335.67 mm"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Color Temperature Selection",
+      "value": "Yes (9300K, 6500K, 5500K, 5000K, DCI-P3, M Model)"
+     },
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     },
+     {
+      "label": "Free Sync Support",
+      "value": "Yes"
+     },
+     {
+      "label": "HDCP",
+      "value": "Yes"
+     },
+     {
+      "label": "Others",
+      "value": "Trace Free Technology: Yes ProArt Preset: Native ProArt Preset: sRGB ProArt Preset: Adobe RGB ProArt Preset: P3 ProArt Preset: DICOM ProArt Preset: Rec.709 ProArt Preset: HDR ProArt Preset: User mode1 ProArt Preset: User mode2 Color Adjustment: RGB Tuning (Gain / Offset) Gamma Adjustment: Yes (Support Gamma 1.8/2.0/2.2/2.4/2.6) Color Accuracy: △E< 2 ProArt Palette: Yes QuickFit Plus: Yes PIP / PBP Technology: Yes HDCP: Yes, 1.4 VRR Technology: Yes (Adaptive-Sync) DisplayWidget: Yes, DisplayWidget Center Low Blue Light: Yes Multiple HDR Mode: Yes ASUS Power Sync: Yes"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "Yes"
+     },
+     {
+      "label": "Speaker Details",
+      "value": "2Wx2"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "Display Port",
+      "value": "DisplayPort 1.4 x 1"
+     },
+     {
+      "label": "HDMI",
+      "value": "HDMI(v2.1) x 1 (TMDS)"
+     },
+     {
+      "label": "USB Port(s)",
+      "value": "USB Hub: 4x USB 3.2 Gen 1 Type-A"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "Yes (+23° ~ -5°)"
+     },
+     {
+      "label": "Swivel",
+      "value": "Yes (+30° ~ -30°)"
+     },
+     {
+      "label": "Pivot",
+      "value": "Yes (+90° ~ -90°)"
+     },
+     {
+      "label": "Height Adjustment",
+      "value": "0~130mm"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100x100mm"
+     },
+     {
+      "label": "Security Locker",
+      "value": "Kensington Lock"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Phys. Dimension (W x H x D): 61.22 x 53.61 x 19.04 cm (24.10\" x 21.11\" x 7.50\") Phys. Dimension without Stand (W x H x D): 61.22 x 36.29 x 4.69 cm (24.10\" x 14.29\" x 1.85\")"
+     },
+     {
+      "label": "Weight",
+      "value": "Net Weight: 6.4 kg (14.11 lbs) Net Weight without Stand: 4.7 kg (10.36 lbs) Gross Weight: 9.3 kg (20.50 lbs)"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "Power Consumption: <16.94W Power Saving Mode: <0.5W Power Off Mode: 0W (hard switch)"
+     },
+     {
+      "label": "Voltage",
+      "value": "100-240V, 50/60Hz"
+     },
+     {
+      "label": "Others",
+      "value": "Certificate Energy Star EPEAT Gold TCO Certified TÜV Flicker-free TÜV Low Blue Light Calman Verified FSC MIX"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/asus-proart-display-pa278qgv-monitor"
+ },
+ {
+  "id": "asus-proart-display-pa248qfv-24-1-inch-wuxga",
+  "slug": "asus-proart-display-pa248qfv-24-1-inch-wuxga",
+  "name": "ProArt Display PA248QFV 24.1-inch WUXGA",
+  "brand": "Asus",
+  "category": "monitor",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "asus-proart-display-pa248qfv-24-1-inch-wuxga~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 45000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/asus/proart-display-pa248qv-gen2-pa248qfv/proart-display-pa248qv-gen2-pa248qfv-07-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "24.1 Inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "WUXGA (1920 x 1200)"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.270mm"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:10"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "(CR≧10, H/V) : 178°/ 178°"
+     },
+     {
+      "label": "Brightness",
+      "value": "Brightness (HDR, Peak) : 350 cd/㎡ Brightness (Typ.) : 350cd/㎡"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "Contrast Ratio (Max) : 3000:1 Contrast Ratio (Typ.) : 1500:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "100Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "16.7M"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "100% sRGB"
+     },
+     {
+      "label": "Response Time",
+      "value": "5ms (GTG)"
+     },
+     {
+      "label": "HDR",
+      "value": "HDR10"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Color Temperature Selection",
+      "value": "Yes (9300K, 6500K, 5500K, 5000K, DCI-P3, M Model)"
+     },
+     {
+      "label": "Flicker Free",
+      "value": "TÜV Flicker-free"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "TÜV Low Blue Light"
+     },
+     {
+      "label": "G-Sync Support",
+      "value": "Yes"
+     },
+     {
+      "label": "Free Sync Support",
+      "value": "Yes"
+     },
+     {
+      "label": "HDCP",
+      "value": "Yes, 1.4"
+     },
+     {
+      "label": "Others",
+      "value": "Trace Free Technology : Yes ProArt Preset : User mode2 User mode1 HDR Rec.709 P3 sRGB Native Color Adjustment : RGB Tuning (Gain / Offset) Gamma Adjustment : Yes (Support Gamma 1.8/2.0/2.2/2.4/2.6) Auto Rotation:Yes, supported by DisplayWidget Center Color Accuracy : △E< 2 ProArt Palette : Yes QuickFit Plus : Yes HDCP : Yes, 1.4 VRR Technology : Yes (Adaptive-Sync) DisplayWidget : Yes, DisplayWidget Center Low Blue Light : Yes Multiple HDR Mode : Yes ASUS Power Sync : Yes"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "Yes"
+     },
+     {
+      "label": "Speaker Details",
+      "value": "2Wx2"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "Display Port",
+      "value": "DisplayPort 1.2 x 1"
+     },
+     {
+      "label": "HDMI",
+      "value": "HDMI(v2.1) x 1 (TMDS)"
+     },
+     {
+      "label": "USB Port(s)",
+      "value": "USB Hub : 4x USB 3.2 Gen 1 Type-A"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "1x Earphone Jack"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "Yes (+23° ~ -5°)"
+     },
+     {
+      "label": "Swivel",
+      "value": "Yes (+30° ~ -30°)"
+     },
+     {
+      "label": "Pivot",
+      "value": "Yes (+90° ~ -90°)"
+     },
+     {
+      "label": "Height Adjustment",
+      "value": "0~130mm"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100x100mm"
+     },
+     {
+      "label": "Security Locker",
+      "value": "Kensington Lock"
+     },
+     {
+      "label": "Others",
+      "value": "Ambient Light Sensor"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Phys. Dimension (W x H x D) : 53.18 x 53.13 x 19.04 cm (20.94\" x 20.92\" x 7.50\") Phys. Dimension without Stand (W x H x D) : 53.18 x 35.00 x 3.97 cm (20.94\" x 13.78\" x 1.56\") Box Dimension (W x H x D) : 61.0 x 41.4 x 14.0 cm (24.02\" x 16.30\" x 5.51\")"
+     },
+     {
+      "label": "Weight",
+      "value": "Net Weight : 5.4 kg (11.90 lbs) Net Weight without Stand : 3.7 kg (8.16 lbs) Gross Weight : 7.9 kg (17.42 lbs)"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "Power Consumption : <11.03W Power Saving Mode : <0.5W Power Off Mode : 0W (hard switch)"
+     },
+     {
+      "label": "Voltage",
+      "value": "100-240V, 50/60Hz"
+     },
+     {
+      "label": "Others",
+      "value": "Certificate FSC MIX Calman Verified TÜV Low Blue Light TÜV Flicker-free TCO Certified EPEAT Gold Energy Star"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/asus-proart-display-pa248qv-gen2-pa248qfv-monitor"
+ },
+ {
+  "id": "lg-24u631a-b-23-8-inch-qhd",
+  "slug": "lg-24u631a-b-23-8-inch-qhd",
+  "name": "24U631A-B 23.8-inch QHD",
+  "brand": "LG",
+  "category": "monitor",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "lg-24u631a-b-23-8-inch-qhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 29300
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/lg-monitor/24u631a-b/24u631a-b-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "23.8-inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "QHD (2560 x 1440)"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.2058 x 0.2058"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178º(R/L), 178º(U/D)"
+     },
+     {
+      "label": "Brightness",
+      "value": "Brightness (Min.) [cd/m²]: 200 Brightness (Typ.) [cd/m²]: 250"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1000:1 (Typ.) 700:1 (Min.)"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "100Hz"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "sRGB 99% (CIE1931) (Typ.) sRGB 95% (CIE1931) (Min.)"
+     },
+     {
+      "label": "Response Time",
+      "value": "5ms (GTG)"
+     },
+     {
+      "label": "HDR",
+      "value": "HDR10"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "G-Sync Support",
+      "value": "Dynamic Action Sync"
+     },
+     {
+      "label": "Others",
+      "value": "LG Switch: Yes Auto Input Switch: Yes Black Stabilizer: Yes Color Weakness Mode: Yes Crosshair: Yes Dynamic Action Sync: Yes Flicker Safe: Yes HDR Effect: Yes Motion Blur Reduction Technology: Yes Reader Mode: Yes Smart Energy Saving: Yes Super Resolution+: Yes"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Microphone (Built In)",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "HDMI",
+      "value": "1x HDMI 2.0"
+     },
+     {
+      "label": "USB Type-C",
+      "value": "1 x USB Type-C (15 W Power Delivery)"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "Yes"
+     },
+     {
+      "label": "D-Sub",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "-5~20º"
+     },
+     {
+      "label": "Height Adjustment",
+      "value": "N/A"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100 x 100 (mm)"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Shipping Dimensions (WxHxD): 613 x 400 x 126 mm With Stand (WxHxD): 539.4 x 413.6 x 215 mm Without Stand (WxHxD): 539.4 x 321.3 x 45.7 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "Shipping Weight: 4.8 kg With Stand Weight: 3.6 kg Without Stand Weight: 2.8 kg"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Type",
+      "value": "External Power(Adapter)"
+     },
+     {
+      "label": "Power Consumption",
+      "value": "DC Off (Max): Less than 0.3W Power Save/Sleep Mode (Max): Less than 0.5W Power Consumption (On-Mode) 17W Power Consumption (On-Mode) (ErP) 16W"
+     },
+     {
+      "label": "Voltage",
+      "value": "100~240V (50/60Hz)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/lg-24u631a-b-monitor"
+ },
+ {
+  "id": "oraimo-toast-opb-7100q-10000mah-power-bank",
+  "slug": "oraimo-toast-opb-7100q-10000mah-power-bank",
+  "name": "Toast OPB-7100Q 10000mAh Power Bank",
+  "brand": "Oraimo",
+  "category": "powerbank",
+  "releaseYear": 2023,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "oraimo-toast-opb-7100q-10000mah-power-bank~v1",
+    "label": "10000mAh",
+    "attributes": {
+     "capacity": "10000mAh"
+    },
+    "officialPrice": 1565
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/opb-7100q-10000mah/opb-7100q-10000mah-01-500x500.webp"
+  ],
+  "colors": [
+   "Black"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Capacity",
+      "value": "10000mAh (37Wh)"
+     },
+     {
+      "label": "Input",
+      "value": "Type-C: 5V/3A, 9V/2A, 12V/1.5A Micro-USB: 5V/2A, 9V/2A, 12V/1.5A"
+     },
+     {
+      "label": "Output",
+      "value": "USB-A (1): 5V/3A, 9V/2.22A, 12V/1.67A, 10V/2.25A USB-A (2): 5V/3A, 9V/2.22A, 12V/1.67A, 10V/2.25A Type-C: 5V/3A, 9V/2.22A, 12V/1.67A, 10V/2.25A Total Output: 5V/3A (Max)"
+     },
+     {
+      "label": "Interface",
+      "value": "2 x USB Type-A port 1 x micro USB 1x USB Type-C"
+     },
+     {
+      "label": "Button",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacture Warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "12 Months Warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oraimo-toast-opb-7100q-10000mah-power-bank"
+ },
+ {
+  "id": "oraimo-powernova-l11-10000mah-power-bank",
+  "slug": "oraimo-powernova-l11-10000mah-power-bank",
+  "name": "PowerNova L11 10000mAh Power Bank",
+  "brand": "Oraimo",
+  "category": "powerbank",
+  "releaseYear": 2024,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "oraimo-powernova-l11-10000mah-power-bank~v1",
+    "label": "10000mAh",
+    "attributes": {
+     "capacity": "10000mAh"
+    },
+    "officialPrice": 2365
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/powernova-l11/powernova-l11-01-500x500.webp",
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/powernova-l11/powernova-l11-blue-500x500.webp",
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/powernova-l11/powernova-l11-02-500x500.webp"
+  ],
+  "colors": [
+   "Black",
+   "Blue"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Capacity",
+      "value": "10000mAh"
+     },
+     {
+      "label": "Input",
+      "value": "Type-C Cable: 5V-3A: 9V=2.22A; 12V-1.67A (20W Max), Type-C: 5V-3A: 9V=2.22A; 12V-1.67A (20W Max)"
+     },
+     {
+      "label": "Output",
+      "value": "Type-C Cable: 5V-3A; 9V~2.22A: 10V=2.25A: 12V~1.67A (22.5W Max), Type-C: 5V~3A; 9V-2.22A: 10V~225A; 12V~1.67A (22.5W Max), USB-A: 5V~3A: 9V~2.22A 10V-2.25A: 12V~1.67A (22.5W Max)"
+     },
+     {
+      "label": "Interface",
+      "value": "USB Type-C, USB"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black Blue"
+     }
+    ]
+   },
+   {
+    "group": "Manufacture Warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "12 Months Warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oraimo-powernova-l11-10000mah-power-bank"
+ },
+ {
+  "id": "oraimo-powernova-q21-20000mah-power-bank",
+  "slug": "oraimo-powernova-q21-20000mah-power-bank",
+  "name": "PowerNova Q21 20000mAh Power Bank",
+  "brand": "Oraimo",
+  "category": "powerbank",
+  "releaseYear": 2024,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "oraimo-powernova-q21-20000mah-power-bank~v1",
+    "label": "20000mAh",
+    "attributes": {
+     "capacity": "20000mAh"
+    },
+    "officialPrice": 2222
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/powernova-q21/powernova-q21-500x500.webp"
+  ],
+  "colors": [
+   "Black"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Capacity",
+      "value": "20000mAh"
+     },
+     {
+      "label": "Input",
+      "value": "Input 1(Type-C): 5V⎓3A; 9V⎓2.22A; 12V⎓1.67A"
+     },
+     {
+      "label": "Output",
+      "value": "Output 1/2（USB-A）：5V⎓3A,9V⎓2.22A; 12V⎓1.67A; 10V⎓2.25A Output 3(Type-C): 5V⎓3A;9V⎓2.22A; 12V⎓1.67A; 10V⎓2.25A"
+     },
+     {
+      "label": "Interface",
+      "value": "USB Type-C, Dual USB"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacture Warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "12 Months Warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oraimo-powernova-q21-power-bank"
+ },
+ {
+  "id": "baseus-extreme-ppjp312-20000mah-power-bank",
+  "slug": "baseus-extreme-ppjp312-20000mah-power-bank",
+  "name": "Extreme PPJP312 20000mAh Power Bank",
+  "brand": "Baseus",
+  "category": "powerbank",
+  "releaseYear": 2023,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "baseus-extreme-ppjp312-20000mah-power-bank~v1",
+    "label": "20000mAh",
+    "attributes": {
+     "capacity": "20000mAh"
+    },
+    "officialPrice": 2508
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/extreme-ppjp312/extreme-ppjp312-03-500x500.webp",
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/extreme-ppjp312/extreme-ppjp312-white-500x500.webp",
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/extreme-ppjp312/extreme-ppjp312-02-500x500.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Baseus-Lipow-PPJP312-22.5W--Fast-Charging-Power-Bank-with-Dual-Cable---20000mAhdfhs-7618.png"
+  ],
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Capacity",
+      "value": "20000mAh 3.7V/74Wh Lithium Polymer"
+     },
+     {
+      "label": "Input",
+      "value": "5V⎓2A; 9V⎓2A; 12V⎓1.5A 5V⎓2.4A; 9V⎓2A; 12V⎓1.5A"
+     },
+     {
+      "label": "Output",
+      "value": "USB-C Output: 5V⎓3A; 9V⎓2.22A; 12V⎓1.67A USB-A Output: 5V⎓3A USB-C Cable Output: 4.5V⎓5A; 5V⎓4.5A; 5V⎓3A; 9V⎓2A; 12V⎓1.5A iP Cable Output: 5V⎓2.4A; 9V⎓2.22A Total Output: 5V⎓3A"
+     },
+     {
+      "label": "Interface",
+      "value": "Input: USB-C / Micro USB Output: 2 × USB-A + 1 × USB-C"
+     },
+     {
+      "label": "Button",
+      "value": "Display: LED Digital Battery Indicator Power Delivery 3.0, Quick Charge 3.0 Output Power: 22.5W (Max)"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "152.2×69.6×30.7 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "435g"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Material",
+      "value": "ABS + PC Fireproof Shell"
+     }
+    ]
+   },
+   {
+    "group": "Manufacture Warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "03 Months Warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/baseus-extreme-ppjp312-20000mah-power-bank"
+ },
+ {
+  "id": "anker-zolo-a110e-20000mah-power-bank",
+  "slug": "anker-zolo-a110e-20000mah-power-bank",
+  "name": "Zolo A110E 20000mAh Power Bank",
+  "brand": "Anker",
+  "category": "powerbank",
+  "releaseYear": 2024,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "anker-zolo-a110e-20000mah-power-bank~v1",
+    "label": "20000mAh",
+    "attributes": {
+     "capacity": "20000mAh"
+    },
+    "officialPrice": 4900
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/anker/a110eh11/zolo-01-500x500.webp",
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/anker/a110eh11/zolo-02-500x500.webp",
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/anker/a110eh11/zolo-03-500x500.webp"
+  ],
+  "colors": [
+   "Black"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Capacity",
+      "value": "20,000mAh"
+     },
+     {
+      "label": "Input",
+      "value": "5V 3A / 9V 2.22A / 12V 1.66A"
+     },
+     {
+      "label": "Output",
+      "value": "5V 3A / 9V 2.22A / 10V 2.25A"
+     },
+     {
+      "label": "Interface",
+      "value": "Built-In USB-C Cable 1 x USB-C, 1 x USB-A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "14.07 × 7.17 × 2.77 cm"
+     },
+     {
+      "label": "Weight",
+      "value": "392g"
+     }
+    ]
+   },
+   {
+    "group": "Manufacture Warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "18-Months-Warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/anker-zolo-20000mah-power-bank"
+ },
+ {
+  "id": "baseus-adaman-ppadm20s-20000mah-power-bank",
+  "slug": "baseus-adaman-ppadm20s-20000mah-power-bank",
+  "name": "Adaman PPADM20S 20000mAh Power Bank",
+  "brand": "Baseus",
+  "category": "powerbank",
+  "releaseYear": 2022,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "baseus-adaman-ppadm20s-20000mah-power-bank~v1",
+    "label": "20000mAh",
+    "attributes": {
+     "capacity": "20000mAh"
+    },
+    "officialPrice": 2408
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/adaman/adaman-01-500x500.webp",
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/adaman/adaman-02-500x500.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/4319-94922.jpg"
+  ],
+  "colors": [
+   "Black"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Capacity",
+      "value": "Battery capacity: 20000mAh/3.7V 74Wh Rated capacity: 12000mAh"
+     },
+     {
+      "label": "Input",
+      "value": "iP: 5V 2A,9V 2A Max. Micro: 5V 2A,9V 2A Max. Type-C: 5V/3A 5.5V/3A（SCP） 9V/2A Max."
+     },
+     {
+      "label": "Output",
+      "value": "USB1: 4.5V 5A,5V 4.5A,5V 3A,9V 2A,12V 1.5A Max. USB2: 4.5V 5A,5V 4.5A,5V 3A,9V 2A,12V 1.5A Max. Type-C: 5V 3A,9V 2A,12V 1.5A Max. USB1+USB2: 5V 3A Max. USB1+Type-C: 5V 3A Max. USB2+Type-C: 5V 3A Max. Type-C+USB1+USB2 Total output power：5V 3A Max."
+     },
+     {
+      "label": "Interface",
+      "value": "USB, Type-C"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Balck"
+     }
+    ]
+   },
+   {
+    "group": "Manufacture Warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "3-Month Warranty (Must Claim With Box & All Accessories)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/baseus-adaman-22-5w-20000mah-fast-charging-power-bank"
+ },
+ {
+  "id": "oraimo-slice-link-pro-10000mah-power-bank",
+  "slug": "oraimo-slice-link-pro-10000mah-power-bank",
+  "name": "Slice Link Pro 10000mAh Power Bank",
+  "brand": "Oraimo",
+  "category": "powerbank",
+  "releaseYear": 2023,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "oraimo-slice-link-pro-10000mah-power-bank~v1",
+    "label": "10000mAh",
+    "attributes": {
+     "capacity": "10000mAh"
+    },
+    "officialPrice": 2200
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/slice-link-pro/slice-link-pro-01-500x500.webp",
+   "https://www.startech.com.bd/image/catalog/power-bank/oraimo/slice-link-pro/slice-link-pro-02.webp"
+  ],
+  "colors": [
+   "Grey"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Capacity",
+      "value": "10000mAh (37Wh)"
+     },
+     {
+      "label": "Input",
+      "value": "Input 1 Micro-USB: 5V/2A, 9V/2A, 12V/1.5A Input 2 Type-C: 5V/2.4A, 9V/2A, 12V/1.5A"
+     },
+     {
+      "label": "Output",
+      "value": "Output 1 USB-A: 5V/3A Output 2 Type-C port: 5V/3A, 9V/2.22A, 12V/1.67A Output 3 Micro-USB Cable: 5V/3A Output 4 Type-C Cable: 5V/3A, 9V/2A, 4.5V/5A, 5V/4.5A, 12V/1.5A Output 5 Lightning Cable: 5V/2.4A, 9V/2.22A, 12V/1.6A The total maximum output is 5V/3A."
+     },
+     {
+      "label": "Interface",
+      "value": "2 x USB Type-A Port 2x USB Type-C Port 1 x Micro USB Cable 1 x Lightning Cable 1 x Type-C Cable"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Grey"
+     }
+    ]
+   },
+   {
+    "group": "Manufacture Warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "12 Months Warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oraimo-slice-link-pro-10000mah-power-bank"
+ },
+ {
+  "id": "oraimo-magpower-15-10000mah-wireless-power-bank",
+  "slug": "oraimo-magpower-15-10000mah-wireless-power-bank",
+  "name": "MagPower 15 10000mAh Wireless Power Bank",
+  "brand": "Oraimo",
+  "category": "powerbank",
+  "releaseYear": 2023,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
+    "label": "10000mAh",
+    "attributes": {
+     "capacity": "10000mAh"
+    },
+    "officialPrice": 2790
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/magpower-15/magpower-15-01-500x500.webp",
+   "https://www.startech.com.bd/image/cache/catalog/power-bank/oraimo/magpower-15/magpower-15-opb-7102w-gold-500x500.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Oraimo-OPB-7102W-Magnetic-Wireless-Power-Bank-10000mAh-6217.png"
+  ],
+  "colors": [
+   "Black",
+   "Gold"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Capacity",
+      "value": "10000mAh (36Wh)"
+     },
+     {
+      "label": "Input",
+      "value": "(Type-C): 5V = 3A; 9V = 2.222A; 12V ==1.67A;"
+     },
+     {
+      "label": "Output",
+      "value": "(USB-A): 5V = 3A; 9V = 2.22A; 12V = 1.67A; 10V = 2.25A; (Type-C): 5V = 3A; 9V = 2.22A; 12V = 1.67A; 10V = 2.25A; Wireless Output: 5W/7.5W/10W/15W"
+     },
+     {
+      "label": "Interface",
+      "value": "2 x USB Type-C port 1 x USB Type-A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacture Warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "12 Months Warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oraimo-magpower-15-10000mah-wireless-power-bank"
+ },
+ {
   "id": "simple-refreshing-facial-wash-150ml",
   "slug": "simple-refreshing-facial-wash-150ml",
   "name": "Refreshing Facial Wash 150ml",
@@ -13073,33 +16296,6 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "the-ordinary-niacinamide-10-zinc-1-serum-30ml",
-  "slug": "the-ordinary-niacinamide-10-zinc-1-serum-30ml",
-  "name": "Niacinamide 10% + Zinc 1% Serum 30ml",
-  "brand": "The Ordinary",
-  "category": "skincare",
-  "releaseYear": null,
-  "popularity": 84,
-  "variants": [
-   {
-    "id": "the-ordinary-niacinamide-10-zinc-1-serum-30ml~v1",
-    "label": "30ml",
-    "attributes": {
-     "capacity": "30ml"
-    },
-    "officialPrice": 1409
-   }
-  ],
-  "images": [
-   "https://bk.shajgoj.com/storage/2026/05/4559.jpg",
-   "https://bk.shajgoj.com/storage/2025/05/3592.jpg"
-  ],
-  "colors": [],
-  "regions": [],
-  "specs": [],
-  "specsSource": null
- },
- {
   "id": "cosrx-advanced-snail-96-mucin-power-essence-100ml",
   "slug": "cosrx-advanced-snail-96-mucin-power-essence-100ml",
   "name": "Advanced Snail 96 Mucin Power Essence 100ml",
@@ -13133,7 +16329,7 @@ export const catalogProducts: Product[] = [
   "brand": "Beauty of Joseon",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 92,
+  "popularity": 84,
   "variants": [
    {
     "id": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
@@ -13310,6 +16506,970 @@ export const catalogProducts: Product[] = [
    "https://bk.shajgoj.com/storage/2026/04/31955-2.jpg"
   ],
   "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "the-ordinary-niacinamide-10-zinc-1-30ml",
+  "slug": "the-ordinary-niacinamide-10-zinc-1-30ml",
+  "name": "Niacinamide 10% + Zinc 1% 30ml",
+  "brand": "The Ordinary",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
+    "label": "30ml",
+    "attributes": {
+     "capacity": "30ml"
+    },
+    "officialPrice": 1799
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2026/05/4559.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "cetaphil-gentle-skin-cleanser-236ml",
+  "slug": "cetaphil-gentle-skin-cleanser-236ml",
+  "name": "Gentle Skin Cleanser 236ml",
+  "brand": "Cetaphil",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "cetaphil-gentle-skin-cleanser-236ml~v1",
+    "label": "236ml",
+    "attributes": {
+     "capacity": "236ml"
+    },
+    "officialPrice": 2100
+   }
+  ],
+  "images": [
+   "https://e-mart.com.bd/wp-content/uploads/2026/06/cetaphil-gentle-skin-cleanser-236ml-gmc-enhanced-36432.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "neutrogena-hydro-boost-water-gel-50ml",
+  "slug": "neutrogena-hydro-boost-water-gel-50ml",
+  "name": "Hydro Boost Water Gel 50ml",
+  "brand": "Neutrogena",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "neutrogena-hydro-boost-water-gel-50ml~v1",
+    "label": "50ml",
+    "attributes": {
+     "capacity": "50ml"
+    },
+    "officialPrice": 2000
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml",
+  "slug": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml",
+  "name": "AHA BHA PHA 30 Days Miracle Toner 150ml",
+  "brand": "Some By Mi",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
+    "label": "150ml",
+    "attributes": {
+     "capacity": "150ml"
+    },
+    "officialPrice": 2150
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "anua-heartleaf-77-soothing-toner-250ml",
+  "slug": "anua-heartleaf-77-soothing-toner-250ml",
+  "name": "Heartleaf 77% Soothing Toner 250ml",
+  "brand": "Anua",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "anua-heartleaf-77-soothing-toner-250ml~v1",
+    "label": "250ml",
+    "attributes": {
+     "capacity": "250ml"
+    },
+    "officialPrice": 2260
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml",
+  "slug": "torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml",
+  "name": "Dive-In Low Molecule Hyaluronic Acid Serum 50ml",
+  "brand": "Torriden",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml~v1",
+    "label": "50ml",
+    "attributes": {
+     "capacity": "50ml"
+    },
+    "officialPrice": 2200
+   }
+  ],
+  "images": [
+   "https://e-mart.com.bd/wp-content/uploads/2026/02/emart-torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "isntree-hyaluronic-acid-toner-200ml",
+  "slug": "isntree-hyaluronic-acid-toner-200ml",
+  "name": "Hyaluronic Acid Toner 200ml",
+  "brand": "Isntree",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "isntree-hyaluronic-acid-toner-200ml~v1",
+    "label": "200ml",
+    "attributes": {
+     "capacity": "200ml"
+    },
+    "officialPrice": 1800
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "cosrx-advanced-snail-92-all-in-one-cream-100g",
+  "slug": "cosrx-advanced-snail-92-all-in-one-cream-100g",
+  "name": "Advanced Snail 92 All In One Cream 100g",
+  "brand": "COSRX",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
+    "label": "100g",
+    "attributes": {
+     "capacity": "100g"
+    },
+    "officialPrice": 2500
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "klairs-supple-preparation-unscented-toner-180ml",
+  "slug": "klairs-supple-preparation-unscented-toner-180ml",
+  "name": "Supple Preparation Unscented Toner 180ml",
+  "brand": "Klairs",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "klairs-supple-preparation-unscented-toner-180ml~v1",
+    "label": "180ml",
+    "attributes": {
+     "capacity": "180ml"
+    },
+    "officialPrice": 2680
+   }
+  ],
+  "images": [
+   "https://e-mart.com.bd/wp-content/uploads/2022/04/unscented-toner.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "skin1004-madagascar-centella-ampoule-50ml",
+  "slug": "skin1004-madagascar-centella-ampoule-50ml",
+  "name": "Madagascar Centella Ampoule 50ml",
+  "brand": "SKIN1004",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 68,
+  "variants": [
+   {
+    "id": "skin1004-madagascar-centella-ampoule-50ml~v1",
+    "label": "50ml",
+    "attributes": {
+     "capacity": "50ml"
+    },
+    "officialPrice": 1450
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "round-lab-birch-juice-moisturizing-cream-80ml",
+  "slug": "round-lab-birch-juice-moisturizing-cream-80ml",
+  "name": "Birch Juice Moisturizing Cream 80ml",
+  "brand": "Round Lab",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "round-lab-birch-juice-moisturizing-cream-80ml~v1",
+    "label": "80ml",
+    "attributes": {
+     "capacity": "80ml"
+    },
+    "officialPrice": 2350
+   }
+  ],
+  "images": [
+   "https://e-mart.com.bd/wp-content/uploads/2026/04/new-round-lab-birch-juice-moisturizing-cream-80ml.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "cosrx-low-ph-good-morning-gel-cleanser-150ml",
+  "slug": "cosrx-low-ph-good-morning-gel-cleanser-150ml",
+  "name": "Low pH Good Morning Gel Cleanser 150ml",
+  "brand": "COSRX",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "cosrx-low-ph-good-morning-gel-cleanser-150ml~v1",
+    "label": "150ml",
+    "attributes": {
+     "capacity": "150ml"
+    },
+    "officialPrice": 1100
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml",
+  "slug": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml",
+  "name": "Salicylic Acid Daily Gentle Cleanser 150ml",
+  "brand": "COSRX",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
+    "label": "150ml",
+    "attributes": {
+     "capacity": "150ml"
+    },
+    "officialPrice": 1350
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "cosrx-acne-pimple-master-patch-24pcs",
+  "slug": "cosrx-acne-pimple-master-patch-24pcs",
+  "name": "Acne Pimple Master Patch 24pcs",
+  "brand": "COSRX",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "cosrx-acne-pimple-master-patch-24pcs~v1",
+    "label": "24pcs",
+    "attributes": {
+     "capacity": "24pcs"
+    },
+    "officialPrice": 440
+   }
+  ],
+  "images": [
+   "https://skincareshop.com.bd/wp-content/uploads/2021/11/Cosrx-Acne-Pimple-Master-Patch-1.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "round-lab-1025-dokdo-toner-100ml",
+  "slug": "round-lab-1025-dokdo-toner-100ml",
+  "name": "1025 Dokdo Toner 100ml",
+  "brand": "Round Lab",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "round-lab-1025-dokdo-toner-100ml~v1",
+    "label": "100ml",
+    "attributes": {
+     "capacity": "100ml"
+    },
+    "officialPrice": 1500
+   }
+  ],
+  "images": [
+   "https://e-mart.com.bd/wp-content/uploads/2024/06/emart-round-lab-1025-dokdo-toner-100ml.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "isntree-green-tea-fresh-toner-200ml",
+  "slug": "isntree-green-tea-fresh-toner-200ml",
+  "name": "Green Tea Fresh Toner 200ml",
+  "brand": "Isntree",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "isntree-green-tea-fresh-toner-200ml~v1",
+    "label": "200ml",
+    "attributes": {
+     "capacity": "200ml"
+    },
+    "officialPrice": 1900
+   }
+  ],
+  "images": [
+   "https://cdn.aromyeo.com/Products/isntree-green-tea-fresh-toner-200ml-720.avif"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "skin1004-madagascar-centella-ampoule-100ml",
+  "slug": "skin1004-madagascar-centella-ampoule-100ml",
+  "name": "Madagascar Centella Ampoule 100ml",
+  "brand": "SKIN1004",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "skin1004-madagascar-centella-ampoule-100ml~v1",
+    "label": "100ml",
+    "attributes": {
+     "capacity": "100ml"
+    },
+    "officialPrice": 2500
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "af-1-air-force-1-1-1-copy-sneakers",
+  "slug": "af-1-air-force-1-1-1-copy-sneakers",
+  "name": "Air Force 1 1:1 Copy Sneakers",
+  "brand": "AF-1",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "af-1-air-force-1-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5200
+   }
+  ],
+  "images": [
+   "https://threesbd.com/wp-content/uploads/2026/03/Nike-Airforce-1-1.png"
+  ],
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "campus-00s-campus-00s-1-1-copy-sneakers",
+  "slug": "campus-00s-campus-00s-1-1-copy-sneakers",
+  "name": "Campus 00s 1:1 Copy Sneakers",
+  "brand": "Campus 00s",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5800
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2025/01/Frame-38CAMPUS-00S-SHOES-CORE-BLACK-600x600-1.png"
+  ],
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "samba-samba-og-1-1-copy-sneakers",
+  "slug": "samba-samba-og-1-1-copy-sneakers",
+  "name": "Samba OG 1:1 Copy Sneakers",
+  "brand": "Samba",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "samba-samba-og-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5500
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2024/09/Frame-111SAMBA-OG-SHOES-Core-Black-600x600.png"
+  ],
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "samba-samba-vegan-1-1-copy-sneakers",
+  "slug": "samba-samba-vegan-1-1-copy-sneakers",
+  "name": "Samba Vegan 1:1 Copy Sneakers",
+  "brand": "Samba",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "samba-samba-vegan-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5500
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2025/09/56.webp"
+  ],
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "onitsuka-tiger-mexico-66-1-1-copy-sneakers",
+  "slug": "onitsuka-tiger-mexico-66-1-1-copy-sneakers",
+  "name": "Mexico 66 1:1 Copy Sneakers",
+  "brand": "Onitsuka Tiger",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5000
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2026/02/o_1icr3p9hc13ag18beqvg159k1sqk1m.jpeg"
+  ],
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "onitsuka-tiger-tokuten-1-1-copy-sneakers",
+  "slug": "onitsuka-tiger-tokuten-1-1-copy-sneakers",
+  "name": "Tokuten 1:1 Copy Sneakers",
+  "brand": "Onitsuka Tiger",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5000
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2026/05/o_1j7h6u7dm1sj91ab018cp4q11jfs6f.jpeg"
+  ],
+  "colors": [
+   "Cream",
+   "Brown"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "converse-chuck-70-1-1-copy-sneakers",
+  "slug": "converse-chuck-70-1-1-copy-sneakers",
+  "name": "Chuck 70 1:1 Copy Sneakers",
+  "brand": "Converse",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "converse-chuck-70-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5000
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2025/04/website-photos-16.png"
+  ],
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers",
+  "slug": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers",
+  "name": "Chuck Taylor All Star High 1:1 Copy Sneakers",
+  "brand": "Converse",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2500
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2026/07/1-1.png"
+  ],
+  "colors": [
+   "Yellow",
+   "Black"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "aj-1-jordan-1-low-1-1-copy-sneakers",
+  "slug": "aj-1-jordan-1-low-1-1-copy-sneakers",
+  "name": "Jordan 1 Low 1:1 Copy Sneakers",
+  "brand": "AJ-1",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5000
+   }
+  ],
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/0C93A3F9-9AD3-4F7C-956A-65514EB9E819.jpg?v=1777354620"
+  ],
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "aj-1-jordan-1-retro-high-1-1-copy-sneakers",
+  "slug": "aj-1-jordan-1-retro-high-1-1-copy-sneakers",
+  "name": "Jordan 1 Retro High 1:1 Copy Sneakers",
+  "brand": "AJ-1",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 6000
+   }
+  ],
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/E892DE51-F5BD-4D4B-961E-B4223A89D196.jpg?v=1765101071"
+  ],
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "aj-4-jordan-4-retro-1-1-copy-sneakers",
+  "slug": "aj-4-jordan-4-retro-1-1-copy-sneakers",
+  "name": "Jordan 4 Retro 1:1 Copy Sneakers",
+  "brand": "AJ-4",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 6500
+   }
+  ],
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/F3106833-DA2C-4DA8-A90B-256D1E49C0E7.jpg?v=1757921014"
+  ],
+  "colors": [
+   "Black",
+   "Grey"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "nike-sb-dunk-low-1-1-copy-sneakers",
+  "slug": "nike-sb-dunk-low-1-1-copy-sneakers",
+  "name": "Dunk Low 1:1 Copy Sneakers",
+  "brand": "Nike SB",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5000
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2024/10/Untitled-3.png"
+  ],
+  "colors": [
+   "White",
+   "Green"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "new-balance-9060-1-1-copy-sneakers",
+  "slug": "new-balance-9060-1-1-copy-sneakers",
+  "name": "9060 1:1 Copy Sneakers",
+  "brand": "New Balance",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "new-balance-9060-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 6000
+   }
+  ],
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/9ACC818F-6C97-4162-8E19-64520172F03D.jpg?v=1777342077"
+  ],
+  "colors": [
+   "Grey",
+   "Black"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "new-balance-530-1-1-copy-sneakers",
+  "slug": "new-balance-530-1-1-copy-sneakers",
+  "name": "530 1:1 Copy Sneakers",
+  "brand": "New Balance",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "new-balance-530-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5500
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2026/09/4_f45a7fe0-6b02-4fe6-a4ac-799ba7e300b5.webp"
+  ],
+  "colors": [
+   "Grey",
+   "White"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "puma-speedcat-og-1-1-copy-sneakers",
+  "slug": "puma-speedcat-og-1-1-copy-sneakers",
+  "name": "Speedcat OG 1:1 Copy Sneakers",
+  "brand": "Puma",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "puma-speedcat-og-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5000
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2025/01/Puma-Speedcat-OG-Sneakers-Unisex-–-Black.png"
+  ],
+  "colors": [
+   "Black",
+   "Red"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "adidas-gazelle-indoor-1-1-copy-sneakers",
+  "slug": "adidas-gazelle-indoor-1-1-copy-sneakers",
+  "name": "Gazelle Indoor 1:1 Copy Sneakers",
+  "brand": "Adidas",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 4500
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2026/08/1-7.png"
+  ],
+  "colors": [
+   "White",
+   "Ink"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "vans-knu-skool-1-1-copy-sneakers",
+  "slug": "vans-knu-skool-1-1-copy-sneakers",
+  "name": "Knu Skool 1:1 Copy Sneakers",
+  "brand": "Vans",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "vans-knu-skool-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 4300
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2026/04/o_1j7rfuitm1pqh85h1qq7sf515pj1m.jpeg"
+  ],
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "adidas-adizero-evo-sl-1-1-copy-sneakers",
+  "slug": "adidas-adizero-evo-sl-1-1-copy-sneakers",
+  "name": "Adizero Evo SL 1:1 Copy Sneakers",
+  "brand": "Adidas",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 4800
+   }
+  ],
+  "images": [
+   "https://dob.com.bd/wp-content/uploads/2026/08/Website-4.png"
+  ],
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers",
+  "slug": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers",
+  "name": "Adizero Adios Pro Evo 1 1:1 Copy Sneakers",
+  "brand": "Adidas",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 6000
+   }
+  ],
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/6A8E9CB0-B765-4DBF-AA3B-8D168B99BFA3.jpg?v=1763372458"
+  ],
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "adidas-adizero-adios-pro-4-1-1-copy-sneakers",
+  "slug": "adidas-adizero-adios-pro-4-1-1-copy-sneakers",
+  "name": "Adizero Adios Pro 4 1:1 Copy Sneakers",
+  "brand": "Adidas",
+  "category": "sneakers",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5500
+   }
+  ],
+  "images": [
+   "https://threesbd.com/wp-content/uploads/2026/09/2-2.png"
+  ],
+  "colors": [
+   "Black",
+   "White"
+  ],
   "regions": [],
   "specs": [],
   "specsSource": null
@@ -13646,7 +17806,7 @@ export const catalogProducts: Product[] = [
   "brand": "Huawei",
   "category": "watch",
   "releaseYear": 2025,
-  "popularity": 90,
+  "popularity": 98,
   "variants": [
    {
     "id": "huawei-watch-fit-4~v1",
@@ -13802,6 +17962,1898 @@ export const catalogProducts: Product[] = [
    }
   ],
   "specsSource": "https://www.startech.com.bd/redmi-watch-6-active"
+ },
+ {
+  "id": "amazfit-bip-5-unity-smart-watch",
+  "slug": "amazfit-bip-5-unity-smart-watch",
+  "name": "Bip 5 Unity Smart Watch",
+  "brand": "Amazfit",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "amazfit-bip-5-unity-smart-watch~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 6200
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.91\" TFT"
+     },
+     {
+      "label": "Battery",
+      "value": "300 mAh (rated value) Battery Life: Typical Usage Scenario Battery Life: Up to 11 days Heavy Usage Scenario Battery Life: Up to 5 days Battery Saver Mode Battery Life: Up to 26 days Charging Method: Magnetic charging cable"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth 5.2 BLE"
+     },
+     {
+      "label": "Material",
+      "value": "Stainless Steel Middle Frame"
+     },
+     {
+      "label": "OS",
+      "value": "Android 7.0 and above, iOS 14.0 and above"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "Water-resistance Grade: IP68 Touchscreen: 2.5D tempered glass + anti-fingerprint coating"
+     },
+     {
+      "label": "Sensor",
+      "value": "Health: BioTracker™ PPG biometric sensor (supports blood-oxygen) Movement: 3-axis acceleration sensor"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "Zepp App"
+     }
+    ]
+   },
+   {
+    "group": "Exterior",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "45.8x37.08x10mm"
+     },
+     {
+      "label": "Weight",
+      "value": "25g"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/amazfit-bip-5-unity-bluetooth-calling-smart-watch"
+ },
+ {
+  "id": "huawei-watch-gt-4-46mm",
+  "slug": "huawei-watch-gt-4-46mm",
+  "name": "Watch GT 4 46mm",
+  "brand": "Huawei",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "huawei-watch-gt-4-46mm~v1",
+    "label": "46mm",
+    "attributes": {
+     "size": "46mm"
+    },
+    "officialPrice": 29990
+   }
+  ],
+  "images": [
+   "https://dazzle.sgp1.cdn.digitaloceanspaces.com/18047/Untitled-design---2024-10-26T140536.234.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.43 inches AMOLED color screen 466 × 466 pixels, PPI 326"
+     },
+     {
+      "label": "Battery",
+      "value": "14-day battery life for maximum usage 8-day battery life for regular usage 4-day battery life with Always On Display enabled"
+     },
+     {
+      "label": "Connectivity",
+      "value": "NFC Supported 2.4 GHz, supports BT5.2 and BR + BLE"
+     },
+     {
+      "label": "Material",
+      "value": "Watch Case: Stainless steel Watch Strap: Black Fluoroelastomer Strap Grey Stainless Steel Strap Green Composite Strap Brown Leather Strap"
+     },
+     {
+      "label": "Sensor",
+      "value": "Accelerometer sensor Gyroscope sensor Magnetometer sensor Optical heart rate sensor Barometer sensor Temperature sensor"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "5 ATM water-resistant Bluetooth Calling Wireless charging"
+     },
+     {
+      "label": "OS",
+      "value": "Android 8.0 or later iOS 13.0 or later"
+     },
+     {
+      "label": "Others",
+      "value": "Home Button (Rotating Crown) and Side Button Speaker Microphone"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "46 mm × 46 mm × 10.9 mm Wrist Size: 140-210 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "Approximately 48 g (strap excluded)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/huawei-watch-gt-4-smart-watch"
+ },
+ {
+  "id": "samsung-galaxy-watch-8-40mm",
+  "slug": "samsung-galaxy-watch-8-40mm",
+  "name": "Galaxy Watch 8 40mm",
+  "brand": "Samsung",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "samsung-galaxy-watch-8-40mm~v1",
+    "label": "40mm",
+    "attributes": {
+     "size": "40mm"
+    },
+    "officialPrice": 25999
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/smart-watch/samsung/galaxy-watch8/galaxy-watch8-001-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.47\" Super AMOLED (480 x 480) Always On Display, ~327 ppi density Protection: Sapphire crystal"
+     },
+     {
+      "label": "Processor",
+      "value": "Chipset: Exynos W1000 (3 nm) CPU: Penta-core GPU: Mali-G68"
+     },
+     {
+      "label": "Memory",
+      "value": "RAM 2GB ROM 32GB"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery Capacity: 325 mAh (40mm), 435 (44mm) Up to 30 hrs (AOD On) 10W wireless Charging"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Wi-Fi 802.11 a/b/g/n, dual-band Bluetooth 5.3, A2DP, LE GPS (L1+L5), GLONASS, GALILEO, BDS NFC"
+     },
+     {
+      "label": "Material",
+      "value": "Armor Aluminum"
+     },
+     {
+      "label": "Sensor",
+      "value": "Accelerometer, gyro, heart rate, barometer, altimeter, compass, SpO2, temperature (skin), BioActive"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "5ATM/ IP68/ MIL-STD-810H Mic., Speaker, Motor, Touch Bezel"
+     },
+     {
+      "label": "OS",
+      "value": "Android Wear OS 6, One UI 8 Watch"
+     },
+     {
+      "label": "Others",
+      "value": "Health Energy Score Sleep Apnea Bedtime Guidance High Stress Alert Running Coach Personalized Heart Rate Zone Personalized Functional Threshold Power AGEs Index Vascular Load ECG Irregular Heart Rhythm Notification Antioxidant Index Body Composition Cycle Tracking Google Gemini"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Graphite, Silver"
+     },
+     {
+      "label": "Dimension",
+      "value": "46 x 43.7 x 8.6 mm (1.81 x 1.72 x 0.34 in)"
+     },
+     {
+      "label": "Weight",
+      "value": "34 g (44mm), 30 g (40mm) (1.06 oz)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/samsung-galaxy-watch8"
+ },
+ {
+  "id": "xiaomi-redmi-watch-5",
+  "slug": "xiaomi-redmi-watch-5",
+  "name": "Redmi Watch 5",
+  "brand": "Xiaomi",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "xiaomi-redmi-watch-5~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 13999
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/smart-watch/xiaomi/watch-5/redmi-watch-5-001-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "Resolution: 432 × 514 pixels， PPI 324 Ultra-large 2.07\" Square AMOLED display Screen-to-body ratio: 82% 60Hz refresh rate Brightness: HBM 1500 nits"
+     },
+     {
+      "label": "Memory",
+      "value": "164MB"
+     },
+     {
+      "label": "Battery",
+      "value": "Typical usage time: 24 days Capacity: 550mAh"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth 5.3"
+     },
+     {
+      "label": "OS",
+      "value": "Xiaomi HyperOS, Compatibility: only supports smartphones with Android 8.0 and above, iOS 12.0 and above"
+     },
+     {
+      "label": "Sensor",
+      "value": "Heart rate sensor (with blood oxygen sensor) | Accelerometer | Gyroscope | Ambient light sensor | Electronic compass"
+     },
+     {
+      "label": "Others",
+      "value": "Built-in GNSS: Supported Water resistance rating: 5ATM Speaker: Supported Microphone: 2 mics"
+     }
+    ]
+   },
+   {
+    "group": "Exterior",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "47.5mm × 41.1mm × 11.3mm"
+     },
+     {
+      "label": "Weight",
+      "value": "33.5g approx. (without inbox strap)"
+     },
+     {
+      "label": "Color",
+      "value": "Obsidian Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/xiaomi-redmi-watch-5-smart-watch"
+ },
+ {
+  "id": "apple-watch-se-2nd-gen",
+  "slug": "apple-watch-se-2nd-gen",
+  "name": "Watch SE 2nd Gen",
+  "brand": "Apple",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "apple-watch-se-2nd-gen~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 34999
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/smart-watch/apple/watch-se-2nd-gen/watch-se-2nd-gen-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Processor",
+      "value": "S8 SiP with 64-bit dual-core processor"
+     },
+     {
+      "label": "Display",
+      "value": "1.78 inches Retina LTPO OLED display 1000 nits brightness"
+     },
+     {
+      "label": "Memory",
+      "value": "1GB"
+     },
+     {
+      "label": "Battery",
+      "value": "All-day battery life, up to 18 hours of normal use Built-in rechargeable lithium-ion battery Up to 80% charge in about 1.5 hours"
+     },
+     {
+      "label": "Connectivity",
+      "value": "L1 GPS, GNSS, Galileo, and QZSS LTE and UMTS Wi-Fi 4 (802.11n) Bluetooth 5.3 Apple Pay GymKit Support for Apple Watch For Your Kids International roaming"
+     },
+     {
+      "label": "Material",
+      "value": "Aluminium"
+     },
+     {
+      "label": "OS",
+      "value": "watchOS"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "Water resistance: 50m (swimproof)"
+     },
+     {
+      "label": "Sensor",
+      "value": "Second-generation optical heart sensor Compass Always-on altimeter High-g accelerometer High dynamic range gyroscope Ambient light sensor"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "Apple Music, Apple Pay, Medications app, Mindfulness app, Noise app, Sleep app including sleep stages, Heart Rate app"
+     },
+     {
+      "label": "Others",
+      "value": "Hardware and Buttons: Digital Crown Microphone Side button Speaker/air vent Optical heart sensor Controls: Digital Crown with haptic feedback Side button Siri Safety: Emergency SOS International emergency calling Crash Detection4 Fall Detection Noise monitoring Backtrack Health and Wellness: High and low heart rate notifications Irregular rhythm notifications"
+     }
+    ]
+   },
+   {
+    "group": "Exterior",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "44 x 38 x 10.7 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "32.9 g"
+     },
+     {
+      "label": "Color",
+      "value": "Midnight"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/apple-watch-se-2nd-gen"
+ },
+ {
+  "id": "huawei-watch-gt-6-46mm",
+  "slug": "huawei-watch-gt-6-46mm",
+  "name": "Watch GT 6 46mm",
+  "brand": "Huawei",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "huawei-watch-gt-6-46mm~v1",
+    "label": "46mm",
+    "attributes": {
+     "size": "46mm"
+    },
+    "officialPrice": 29999
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4221/gt6_black.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.47/1.32 inch AMOLED Ultra-bright screen with 3,000 nits peak brightness"
+     },
+     {
+      "label": "Battery",
+      "value": "Up to 21/14 days Battery Life Fast-charging Up to 40/25 Hours Continuous GPS"
+     },
+     {
+      "label": "Connectivity",
+      "value": "NFC Supported Bluetooth 2.4 GHz, supports BT6.0 and BR + BLE GNSS GPS (L1 + L5 Dual-band)/GLONASS/BeiDou (B1I + B1C + B2a Tri-band)/GALILEO (E1 + E5a Dual-band)/QZSS (L1 + L5 Dual-band)/NavIC"
+     },
+     {
+      "label": "Material",
+      "value": "Stainless steel"
+     },
+     {
+      "label": "Sensor",
+      "value": "Accelerometer sensor Gyroscope sensor Magnetometer sensor Optical heart rate sensor Barometer sensor Temperature sensor Ambient light sensor"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "5 ATM & IP69 water-resistant Bluetooth Calling Wireless charging Speaker Microphone"
+     },
+     {
+      "label": "OS",
+      "value": "Android 9.0 or later iOS 13.0 or later HarmonyOS 6.0"
+     },
+     {
+      "label": "Others",
+      "value": "Home Button (Rotating Crown) and Side Button"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "46 mm × 46 mm × 10.95 mm/ 41.3 mm × 41.3 mm × 9.99 mm Wrist Size: 140-210 mm (46mm) Brown/White/Lilac: 120-180 mm (41mm) Gold: 130-190 mm (41mm) Black: 120-190 mm (41mm)"
+     },
+     {
+      "label": "Weight",
+      "value": "Approximately 51.3 g (strap excluded)/ Approximately 37.5 g (strap excluded)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/huawei-watch-gt-6"
+ },
+ {
+  "id": "xiaomi-watch-s4",
+  "slug": "xiaomi-watch-s4",
+  "name": "Watch S4",
+  "brand": "Xiaomi",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "xiaomi-watch-s4~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 19990
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.43-inch AMOLED Resolution: 466x466 pixels, 326 PPI HBM (High Brightness Mode): 1500 nits"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery: 486mAh Battery Life: Up to 15 days (typical usage) Fast Charging: 5 mins → 2 days of use Charging Type: 2-pin magnetic dock"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth 5.3"
+     },
+     {
+      "label": "Material",
+      "value": "Watch: Aluminum alloy frame Band Strap: Fluororubber strap"
+     },
+     {
+      "label": "Sensor",
+      "value": "Heart rate sensor (with blood oxygen sensor) Accelerometer Gyroscope Ambient light sensor Electronic compass Barometer sensor Hall sensor"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "Built-in GNSS: Supported GPS | Galileo | Glonass | BeiDou | QZSS Smart Features Xiaomi Smart Hub (control Xiaomi Home devices*) Remote Camera Control Find My Phone Gesture Controls (quick actions via hand movements) Compatibility: Supports smartphones with Android 8.0 and above, or iOS 14.0 and above. Speaker: Supported Microphone: 2 mics NFC: Supported *NFC availability may vary by region. DurabilityL 5ATM Water Resistance (50m depth, swim-proof) Not for diving, sauna, or high-pressure water jets"
+     },
+     {
+      "label": "OS",
+      "value": "Xiaomi HyperOS 2"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "Third-Party App Sync (Strava, Suunto, Health Connect)"
+     },
+     {
+      "label": "Others",
+      "value": "Health & Fitness 24/7 Heart Rate, SpO2, Stress, Sleep Monitoring 60-Second Health Report (quick wellness check) Breathing Exercises (relaxation, focus, sleep aid) 150+ Sports Modes (running, skiing, cycling, etc.) Running Coach & Form Analysis (vertical ratio, stride metrics) Fall Detection (Skiing Mode) – Auto-emergency call if no response"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "47.3mm x 47.3mm x 12.0mm Black strap (Adjustable strap length: 140-210mm approx.)"
+     },
+     {
+      "label": "Weight",
+      "value": "44.5g approx. (without inbox strap)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/xiaomi-watch-s4"
+ },
+ {
+  "id": "haylou-solar-lite-2",
+  "slug": "haylou-solar-lite-2",
+  "name": "Solar Lite 2",
+  "brand": "Haylou",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "haylou-solar-lite-2~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3250
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.43-inch (466 x 466 pixels) AMOLED 2.5D Curved Glass"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery capacity: 300mAh Battery life: Approx. Up to 30 days Typical Use: ~17 days (with all-day heart rate monitoring) Heavy Use: ~12 days"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth v5.4"
+     },
+     {
+      "label": "Material",
+      "value": "Frame Material: High-Gloss Polished Zinc Alloy"
+     },
+     {
+      "label": "Sensor",
+      "value": "Accelerometer, Gyroscope, Optical Heart Rate Sensor"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "1ATM Water Resistant"
+     },
+     {
+      "label": "OS",
+      "value": "Android 9.0+, iOS 13.4.0+"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "Haylou Fun"
+     },
+     {
+      "label": "Others",
+      "value": "200+ Cloud-based watch faces Sports Modes: 150+ Bluetooth Calling Notifications: Display for calls, SMS, and app alerts Voice Assistant: Access phone's AI assistant (Siri/Google Assistant)"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black, Silver"
+     },
+     {
+      "label": "Dimension",
+      "value": "51.6 x 45.5 x 9.8 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "41g (with strap)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/haylou-solar-lite-2"
+ },
+ {
+  "id": "imiki-st2-bluetooth-calling-smart-watch",
+  "slug": "imiki-st2-bluetooth-calling-smart-watch",
+  "name": "ST2 Bluetooth Calling Smart Watch",
+  "brand": "IMIKI",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "imiki-st2-bluetooth-calling-smart-watch~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2549
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.96-inch 240*296 pixels IPS Display"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery Capacity: 250mAh Battery Life: Up to 5 days battery life for normal daily use and Standby is 14 days. Charging: Up to 2 hours Charging Cable: Yes"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth"
+     },
+     {
+      "label": "Material",
+      "value": "Body Material: Metal Strap Type: Silicone or Magnetic"
+     },
+     {
+      "label": "Sensor",
+      "value": "Heart rate sensor, SpO2 sensor, 3-axis, accelerometer, PPG sensor"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "Bluetooth Calling IP68 Water Proof"
+     },
+     {
+      "label": "OS",
+      "value": "Support IOS 8.0+ and Android 4.4+"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "imiki Lite"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black, Blue, Gold"
+     },
+     {
+      "label": "Dimension",
+      "value": "49.72*40.84*12.45mm Strap Size: 22mm"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/imilab-imiki-st2-bluetooth-calling-smart-watch"
+ },
+ {
+  "id": "kospet-orb-2-smart-watch",
+  "slug": "kospet-orb-2-smart-watch",
+  "name": "ORB 2 Smart Watch",
+  "brand": "KOSPET",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "kospet-orb-2-smart-watch~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 8999
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "Size: 1.43″ Type: AMOLED Resolution: 466 × 466 pixels PPI: 461 Peak Brightness: Up to 1,000 nits Protection: Corning Gorilla Glass"
+     },
+     {
+      "label": "Memory",
+      "value": "64MB Nand Flash 8MB SRAM"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery Capacity: 500mAh Battery Type: Pure Cobalt Battery Charging Method: Magnetic Charging Cable Theoretical Charging Duration: Approx. 2 Hours Typical Usage Scenario Battery Life: 13-16 Days Heavy Usage Scenario Battery Life: 9-12 Days AOD Mode Battery Life: 4-6 Days Continuous GPS Usage Battery Life: 21-25 Hours"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth 5.3"
+     },
+     {
+      "label": "Material",
+      "value": "Body Material: Zinc Alloy Bezel + Polymer Body Case Back Material: Polymer Strap Material: Liquid Silicone"
+     },
+     {
+      "label": "Sensor",
+      "value": "Health: VC9213 4PD Acceleration Sensor, GPS, Galileo, GLONASS, BeiDou, QZSS, NavIC (IRNSS), Geomagnetic Sensor 24H Health Monitoring: Heart Rate, Blood Oxygen, Stress Level, Mood One-tap Measurement: Heart Rate, Blood Oxygen, Stress Level, Mood"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "Built-in Speaker/Microphone Dual-band six-system GPS Built-in walkie-talkie Built-in LED flashlight"
+     },
+     {
+      "label": "OS",
+      "value": "Android 7.0 and above, iOS 14.0 and above"
+     },
+     {
+      "label": "Water Resistant",
+      "value": "5 ATM & IP69 Water-resistance Grade"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "Apexmove App Syncs with Apple Health & Strava"
+     },
+     {
+      "label": "Others",
+      "value": "37 languages 160+ freestyle training modes 13 ApexMotion Sports Modes"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black, Silver"
+     },
+     {
+      "label": "Dimension",
+      "value": "48mm × 48mm × 12.7mm"
+     },
+     {
+      "label": "Weight",
+      "value": "41g (without strap)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/kospet-orb-2"
+ },
+ {
+  "id": "imiki-frame-2-pro-smart-watch",
+  "slug": "imiki-frame-2-pro-smart-watch",
+  "name": "Frame 2 Pro Smart Watch",
+  "brand": "IMIKI",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "imiki-frame-2-pro-smart-watch~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 7450
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "2.01 inches 410 x 502 pixels Edge‑to‑edge display Up to 1000 nits maximum brightness Always‑On display"
+     },
+     {
+      "label": "Battery",
+      "value": "Capacity: 400mAh 15 Days of maximum usage Up to 5 days in AOD Mode Magnetic Fast Charger to USB-B Cable Charge time: 2 hours to 100%"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth Version: BLE 5.3"
+     },
+     {
+      "label": "Material",
+      "value": "Zinc alloy / PC case"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "Heart Rate 24/7 Health Monitoring Blood Oxygen Monitoring Emotional Testing Womens Health Smart Sleep Monitoring Breathing Exercises Monitoring Message Notifications 170+ Sports Modes 5ATM Waterproof 6 Satellite Positioning Systems"
+     },
+     {
+      "label": "OS",
+      "value": "Android 5.0 or Later, iOS 9 or Later"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "Imiki Watch"
+     },
+     {
+      "label": "Others",
+      "value": "Operating Temperature Range: -4° to 140° F (-20° to 60° C)"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black, Titanium"
+     },
+     {
+      "label": "Dimension",
+      "value": "52.50 x 41.45 x 13.50mm"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/imilab-imiki-frame-2-pro-smart-watch"
+ },
+ {
+  "id": "oraimo-watch-5-lite",
+  "slug": "oraimo-watch-5-lite",
+  "name": "Watch 5 Lite",
+  "brand": "Oraimo",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "oraimo-watch-5-lite~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1820
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "2.01 TFT 240x280"
+     },
+     {
+      "label": "Battery",
+      "value": "300mAh"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth version 5.3"
+     },
+     {
+      "label": "Material",
+      "value": "ABS /PC"
+     },
+     {
+      "label": "Sensor",
+      "value": "Health Monitoring"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "Heart rate, blood oxygen, stress, sleep, women's health"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "Oraimo Health App"
+     },
+     {
+      "label": "Others",
+      "value": "100+ Sports modes AI-Generated Watch Faces 1ATM Water and Dust Resistance Bluetooth Calling Battery Capacity: 300mAh Charging Time: 3H Standby: 28 Days Playtime(Moderate Use): 7 Days"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "47×50mm 39 × 55mm 12× 0mm"
+     },
+     {
+      "label": "Weight",
+      "value": "43.6gm (With Strap) 25.7gm (Without Strap)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oraimo-watch-5-lite-smart-watch"
+ },
+ {
+  "id": "kospet-tank-t4c-smart-watch",
+  "slug": "kospet-tank-t4c-smart-watch",
+  "name": "Tank T4C Smart Watch",
+  "brand": "KOSPET",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "kospet-tank-t4c-smart-watch~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 11499
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.5\", AMOLED, (466 × 466), 438 PPI"
+     },
+     {
+      "label": "Memory",
+      "value": "1Gb Nand Flash Storage Memory: 8MB SRAM"
+     },
+     {
+      "label": "Battery",
+      "value": "Capacity: 500mAh Battery Type: Pure Cobalt Battery Charging Method: Magnetic Charging Dock Theoretical Charging Duration: Approx. 2 Hours Typical Usage Scenario Battery Life: Up to 12-15 Days Heavy Usage Scenario Battery Life: Up to 8-10 Days AOD Mode Battery Life: Up to 3-5 Days Continuous GPS Usage Battery Life: Up to 18-21 Hours"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth 5.3"
+     },
+     {
+      "label": "Material",
+      "value": "Body Material: Stainless Steel Bezel + Zinc Alloy Body"
+     },
+     {
+      "label": "Sensor",
+      "value": "Acceleration Sensor, Geomagnetic Sensor, Barometric Altimeter, Ambient Light Sensor"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "5 ATM & IP69K Water-Resistance Bluetooth Calls 170+ Sports Modes Smart Recognition"
+     },
+     {
+      "label": "OS",
+      "value": "Android 5.1 & iOS 10.0 and Above"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "KOSPET FIT"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black, Silver"
+     },
+     {
+      "label": "Dimension",
+      "value": "49.5mm×50.5mm×13.05mm"
+     },
+     {
+      "label": "Weight",
+      "value": "60.7g (Without Strap)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/kospet-tank-t4c"
+ },
+ {
+  "id": "haylou-watch-4-with-gps",
+  "slug": "haylou-watch-4-with-gps",
+  "name": "Watch 4 With GPS",
+  "brand": "Haylou",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "haylou-watch-4-with-gps~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3999
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/smart-watch/haylou/watch-4/watch-4-black-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.93\" HD TFT 2.5D curved glass"
+     },
+     {
+      "label": "Battery",
+      "value": "380mAh"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Battery Capacity: 380mAh Battery Life: Daily Use: ~7 days (typical mode) Basic Mode: Up to 15 days GPS Mode: ~24 hours Charging: Magnetic charging cable"
+     },
+     {
+      "label": "Sensor",
+      "value": "Heart rate, SpO2, stress, sleep, menstrual cycle"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "GPS Support: BDS, GPS, Galileo, GLONASS, QZSS Sync Apps: Haylou Fun, Strava"
+     },
+     {
+      "label": "OS",
+      "value": "Android 9.0+, iOS 13.0+"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "Haylou Fun"
+     },
+     {
+      "label": "Others",
+      "value": "Heart Rate Monitoring: 24/7 tracking with alerts Blood Oxygen (SpO2): Real-time monitoring Sleep Tracking: Deep, light, REM analysis Stress Monitoring: All-day stress levels Menstrual Cycle Tracking: Fertility & period logging Activity Tracking: Steps, calories, distance Sports Modes: 120+ (running, cycling, swimming*, hiking, etc.) Water Resistance: IP68 (rain & sweat-proof, not for swimming) Bluetooth Calling: Make/answer calls directly SOS Emergency Call: Quick emergency contact alert AI Voice Assistant: Voice commands for calls, weather, etc. Notifications: Calls, SMS, app alerts (WhatsApp, Facebook, etc.) Music Control: Play/pause/skip tracks Remote Camera Control: Shake to take photos Find My Phone/Watch: Anti-loss feature Watch Faces: 100+ (customizable & downloadable) View Modes: 8 layout options (list, grid, honeycomb) Widgets: Quick access to weather, health stats, etc. Games & Tools: Stopwatch, timer, calculator, flashlight Do Not Disturb Mode: Customizable settings"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "47.6 × 38.8 × 11.8 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "45g (including strap)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/haylou-watch-4"
+ },
+ {
+  "id": "oraimo-watch-6-osw-807",
+  "slug": "oraimo-watch-6-osw-807",
+  "name": "Watch 6 (OSW-807)",
+  "brand": "Oraimo",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "oraimo-watch-6-osw-807~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2900
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "2.04-inch TFT Touch Display"
+     },
+     {
+      "label": "Battery",
+      "value": "300mAh 33 Days Standby Time"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth"
+     },
+     {
+      "label": "Material",
+      "value": "Silicon"
+     },
+     {
+      "label": "Sensor",
+      "value": "Health Monitoring, Blood Monitoring, Pressure"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "24 Hour Health Monitor 100+ Sports Mode One Click Health Measurement"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "Oraimo Health App"
+     },
+     {
+      "label": "Others",
+      "value": "Oraimo AI AI-Generated Watch Faces"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Chrome"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oraimo-watch-6"
+ },
+ {
+  "id": "kospet-orb-smart-watch",
+  "slug": "kospet-orb-smart-watch",
+  "name": "ORB Smart Watch",
+  "brand": "KOSPET",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "kospet-orb-smart-watch~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5499
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "Type: 1.43\" AMOLED Resolution: 466 × 466 pixels Brightness: 1000 nits (peak) Protection: Corning® Gorilla® Glass + anti-fingerprint coating"
+     },
+     {
+      "label": "Processor",
+      "value": "Dual-core Actions MCU"
+     },
+     {
+      "label": "Battery",
+      "value": "Capacity: 350mAh Typical use: 8–12 days Standby: Up to 45 days AOD Mode: 2–3 days Charging: Magnetic dock (2–2.5 hours)"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth 5.3"
+     },
+     {
+      "label": "Material",
+      "value": "Shape: Round Material: Aluminum alloy case, fiber-reinforced polymer back Strap: Liquid silicone (22mm, skin-friendly, breathable)"
+     },
+     {
+      "label": "Sensor",
+      "value": "Accelerometer, optical heart rate, SpO₂"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "Water Resistance: IP68 (rain, sweat, splashes)"
+     },
+     {
+      "label": "OS",
+      "value": "Android 4.5+, iOS 8.0+"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "ApexMove (training plans, watch faces)"
+     },
+     {
+      "label": "Others",
+      "value": "200+ customizable options 24/7 Monitoring: Heart rate, SpO₂, sleep (REM tracking), stress Sports Modes: 8 core modes + 180+ training types Auto Detection: Walking, running, cycling, rowing, elliptical, idle"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Graphite Grey"
+     },
+     {
+      "label": "Dimension",
+      "value": "46 × 46 × 11.5 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "100g"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/kospet-orb-smartwatch"
+ },
+ {
+  "id": "kospet-tank-t3-ultra-smart-watch",
+  "slug": "kospet-tank-t3-ultra-smart-watch",
+  "name": "Tank T3 Ultra Smart Watch",
+  "brand": "KOSPET",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "kospet-tank-t3-ultra-smart-watch~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 11099
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.43\" AMOLED, 466x466 pixel"
+     },
+     {
+      "label": "Processor",
+      "value": "ATS3085L"
+     },
+     {
+      "label": "Memory",
+      "value": "256M NOR"
+     },
+     {
+      "label": "Battery",
+      "value": "470mAh Pure Cobalt Battery Daily Use: 10-15 Days, Always-On Display: 2-3 Days"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth 5.3"
+     },
+     {
+      "label": "Material",
+      "value": "Full Metal Bezel Stainless Steel Back Cover Four Buttons with Aluminum Alloy Liquid silica gel strap"
+     },
+     {
+      "label": "Sensor",
+      "value": "G-Sensor: STK8325 3-axis acceleration sensor Heart Rate Sensor: VC9202+VP60 A2, (living-body recognition & dark-skin detection)"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "Waterproof: 5 ATM & IP69K Sports Mode: 130+ Sports Modes & Smart Recognition Supports Always on Display"
+     },
+     {
+      "label": "OS",
+      "value": "Android 5.1 & iOS 11.0 and above"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "KOSPET FIT"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "52.7x54x14.6mm"
+     },
+     {
+      "label": "Weight",
+      "value": "81.8g"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/kospet-tank-t3-ultra-bluetooth-calling-smartwatch"
+ },
+ {
+  "id": "kieslect-actor-bt-calling-smart-watch",
+  "slug": "kieslect-actor-bt-calling-smart-watch",
+  "name": "Actor BT Calling Smart Watch",
+  "brand": "Kieslect",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "kieslect-actor-bt-calling-smart-watch~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 9999
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "Type: LTPO AMOLED++ (Advanced AMOLED technology) Size: 1.6 inches (world's largest in its category) Resolution: 480 x 480 pixels Brightness: 1000 nits (peak) Refresh Rate: 60 Hz Protection: High Hardness Glass"
+     },
+     {
+      "label": "Battery",
+      "value": "Capacity: 500 mAh Battery Life: Up to 15 days in typical use Charging Method: Magnetic Charging Time: Less than 2.5 hours"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth 5.3 + BLE (Bluetooth Low Energy)"
+     },
+     {
+      "label": "Material",
+      "value": "Bezel Material: Ceramic (diamond-like hardness, maintains appearance for up to 10 years) Body Material: Aluminum Crown: Metal, multifunctional (menu swiping, volume adjustment, task switching)"
+     },
+     {
+      "label": "Sensor",
+      "value": "Heart Rate, SpO2 (blood oxygen), Stress, and others"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "GPS: Advanced 6-satellite positioning system 480% increased signal strength 30% improved positioning accuracy Dual-frequency antenna with Smart Trajectory Correction algorithm Sports Modes: 150+ professional sports algorithms Heart Rate Alarm: Customizable abnormal heart rate warning Health Data: Weekly/Monthly/Annual reports Bluetooth Calling: Clear and stable Music Storage & Playback: Independent from phone, compatible with wireless earphones Customizable Watch Faces: 200+ available for download Personal Photo Upload: Ability to use personal photos as watch faces Video-Like Watch Faces: Driven by 2.5D GPU (available from Nov 2024 via OTA) Data Sharing: Compatible with Strava, Google Fit, and Apple Health Measurement Units: Adjustable between metric and imperial systems Future Applications: Music, maps, social media (available through OTA updates) Monthly OTA Upgrades: Ensuring long-term reliability and feature additions"
+     },
+     {
+      "label": "Water Resistant",
+      "value": "Compatible with both Android and iOS device"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "KIESLECT"
+     },
+     {
+      "label": "Others",
+      "value": "Single Straps: Black Silicone"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "46.5 x 46.5 x 12.2 mm"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/kieslect-actor-smart-watch"
+ },
+ {
+  "id": "oraimo-watch-nova-2r",
+  "slug": "oraimo-watch-nova-2r",
+  "name": "Watch Nova 2R",
+  "brand": "Oraimo",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "oraimo-watch-nova-2r~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5455
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.43'' AMOLED (466*466)"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery Type: Lithium polymer Battery Capacity: 300mAh Charging Time: 3 Hours Using Time: Up to 10 Days Standby Time: 35 Days"
+     },
+     {
+      "label": "Material",
+      "value": "ABS/PC/zinc alloy"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "1ATM"
+     },
+     {
+      "label": "Others",
+      "value": "AI-Generated Watch Faces, Anti-Scratch Panda Glass, Glass Oxygen & Heart Rate Monitor"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Dark Chorme"
+     },
+     {
+      "label": "Dimension",
+      "value": "46.4*46.4*10.4mm"
+     },
+     {
+      "label": "Weight",
+      "value": "65.1g"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oraimo-watch-nova-2r"
+ },
+ {
+  "id": "amazfit-bip-6",
+  "slug": "amazfit-bip-6",
+  "name": "Bip 6",
+  "brand": "Amazfit",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "amazfit-bip-6~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 10999
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.97\" AMOLED Resolution: 390 × 450 pixels Brightness: Up to 2,000 nits (peak) PPI: 302 Touchscreen: Tempered glass + anti-fingerprint coating"
+     },
+     {
+      "label": "Battery",
+      "value": "340 mAh (rated value) Battery Life: Typical Use: Up to 14 days Heavy Use: Up to 6 days Battery Saver Mode: Up to 26 days GPS Mode: Up to 32 hours"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth 5.2 BLE"
+     },
+     {
+      "label": "Material",
+      "value": "Aluminum alloy frame, fiber-reinforced polymer case 22mm liquid silicone (130-195mm wrist fit)"
+     },
+     {
+      "label": "Sensor",
+      "value": "24/7 heart rate, SpO₂, sleep tracking"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "Water-resistance Grade: 5 ATM GPS: 5 satellite systems"
+     },
+     {
+      "label": "OS",
+      "value": "Android 7.0 and above, iOS 14.0 and above"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "Zepp App"
+     },
+     {
+      "label": "Others",
+      "value": "140+ Sports Modes"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "46.3 × 40.2 × 10.45 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "27.9g"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/amazfit-bip-6-smart-watch"
+ },
+ {
+  "id": "amazfit-active-2",
+  "slug": "amazfit-active-2",
+  "name": "Active 2",
+  "brand": "Amazfit",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "amazfit-active-2~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 14999
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "Material: AMOLED Size: 1.32\" Resolution: 466*466 PPI: 353"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery Capacity: 270 mAh (rated value) Charging Method: Magnetic charging base Theoretical Charging Duration: Approx. 2 hours Battery Usage: Typical Usage Scenario Battery Life: Up to 10 days Battery Saver Mode Battery Life: Up to 19 days Heavy Usage Scenario Battery Life: Up to 5 days Continuous GPS Usage: Up to 21 hours"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth 5.2 BLE"
+     },
+     {
+      "label": "OS",
+      "value": "Android 7.0 and above, iOS 14.0 and above"
+     },
+     {
+      "label": "Sensor",
+      "value": "Health: BioTracker™ 6.0 PPG biometric sensor Movement: Acceleration Gyroscope Geomagnetic Barometric altimeter Ambient light Temperature Positioning: 5 satellite positioning systems Circularly-polarized antenna technology"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "Zepp App"
+     },
+     {
+      "label": "Others",
+      "value": "Sports Modes: 164"
+     }
+    ]
+   },
+   {
+    "group": "Exterior",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "Without sensor base: 43.9x43.9x9.9mm"
+     },
+     {
+      "label": "Weight",
+      "value": "(without strap): Premium version: 31.65g; Standard version: 29.5g"
+     },
+     {
+      "label": "Color",
+      "value": "Black Sport Silicone"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/amazfit-active-2"
+ },
+ {
+  "id": "xiaomi-watch-2",
+  "slug": "xiaomi-watch-2",
+  "name": "Watch 2",
+  "brand": "Xiaomi",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "xiaomi-watch-2~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 21999
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Processor",
+      "value": "Qualcomm Snapdragon W5+ Gen 1 Platform 4nm manufacturing process"
+     },
+     {
+      "label": "Display",
+      "value": "1.43 inch AMOLED Resolution: 466x 466 pixels, 326 PPI Brightness: up to 600 nits"
+     },
+     {
+      "label": "Memory",
+      "value": "2GB RAM 32GB storage"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery:495mAh Charging type: Magnetic charging Charging time: Approximately 45 minutes Typical use time: up to 65 hours"
+     },
+     {
+      "label": "Connectivity",
+      "value": "2.4GHz/5GHz Wi-Fi Bluetooth 5.2"
+     },
+     {
+      "label": "Material",
+      "value": "Band Strap: TPU"
+     },
+     {
+      "label": "OS",
+      "value": "Wear OS by Google"
+     },
+     {
+      "label": "Sensor",
+      "value": "Optical heart rate sensor Accelerometer sensor Gyroscope sensor Ambient light sensor Electronic compass sensor Barometer sensor"
+     },
+     {
+      "label": "Supported Apps/ Software",
+      "value": "Mi Fitness (app version 3.26.0i and above)"
+     }
+    ]
+   },
+   {
+    "group": "Exterior",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "47.5mm x 45.9mm x 11.8mm (thickness excludes heart rate sensor)"
+     },
+     {
+      "label": "Weight",
+      "value": "Weight: 36.8g (without strap)"
+     },
+     {
+      "label": "Color",
+      "value": "Silver"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/xiaomi-watch-2-amoled-bluetooth-calling-smartwatch"
+ },
+ {
+  "id": "huawei-watch-fit-3",
+  "slug": "huawei-watch-fit-3",
+  "name": "Watch Fit 3",
+  "brand": "Huawei",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "huawei-watch-fit-3~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 15490
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.82 inches AMOLED 480 × 408 pixels, PPI 347"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery Life: The 10-day maximum battery life The 7-day typical battery life The 4-day battery life with AOD enabled"
+     },
+     {
+      "label": "Connectivity",
+      "value": "2.4 GHz, Bluetooth 5.2 supporting BR and BLE"
+     },
+     {
+      "label": "Material",
+      "value": "Aluminum alloy"
+     },
+     {
+      "label": "Sensor",
+      "value": "9-axis IMU sensor (Accelerometer sensor, Gyroscope sensor, Magnetometer sensor) Optical heart rate sensor Ambient light sensor"
+     },
+     {
+      "label": "OS",
+      "value": "Android 8.0 or later iOS 13.0 or later"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "43.2 × 36.3 × 9.9 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "Approximately 26 g (without the strap)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/huawei-watch-fit-3-amoled-smartwatch"
+ },
+ {
+  "id": "samsung-galaxy-watch-7-40mm",
+  "slug": "samsung-galaxy-watch-7-40mm",
+  "name": "Galaxy Watch 7 40mm",
+  "brand": "Samsung",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "samsung-galaxy-watch-7-40mm~v1",
+    "label": "40mm",
+    "attributes": {
+     "size": "40mm"
+    },
+    "officialPrice": 20000
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Display",
+      "value": "1.3\" (37.3mm) Super AMOLED (432 x 432) - For 40mm Variant 1.5\" (37.3mm) Super AMOLED (480 x 480) - For 44mm Variant Color Depth: 16M"
+     },
+     {
+      "label": "Processor",
+      "value": "Chipset: W1000 (3 nm) CPU: Cortex-A78 1.6GHz Single-core + Cortex-A55 1.5GHz Quad-core GPU: Mali™-G68 MP2"
+     },
+     {
+      "label": "Memory",
+      "value": "RAM 2GB ROM 32GB"
+     },
+     {
+      "label": "Battery",
+      "value": "300mAh (40mm) 425mAh (44mm)"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Wi-Fi 802.11 a/b/g/n, dual-band Bluetooth 5.3, A2DP, LE Positioning GPS, GLONASS, GALILEO, BDS NFC"
+     },
+     {
+      "label": "Sensor",
+      "value": "Accelerometer, gyro, heart rate, barometer, altimeter, compass, SpO2, temperature (skin), BioActive"
+     },
+     {
+      "label": "SpecialFeatures",
+      "value": "5ATM/ IP68/ MIL-STD-810H Mic., Speaker, Motor, Touch Bezel"
+     },
+     {
+      "label": "OS",
+      "value": "Android Wear OS 5, One UI Watch 6"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "40.4 x 40.4 x 9.7 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "28.8 g"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/samsung-galaxy-watch-7-40mm-smart-watch"
+ },
+ {
+  "id": "huawei-watch-gt-7-46mm",
+  "slug": "huawei-watch-gt-7-46mm",
+  "name": "Watch GT 7 46mm",
+  "brand": "Huawei",
+  "category": "watch",
+  "releaseYear": null,
+  "popularity": 76,
+  "variants": [
+   {
+    "id": "huawei-watch-gt-7-46mm~v1",
+    "label": "46mm",
+    "attributes": {
+     "size": "46mm"
+    },
+    "officialPrice": 29999
+   }
+  ],
+  "images": [],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
  }
 ];
 
@@ -21312,6 +27364,608 @@ export const catalogOffers: Offer[] = [
  },
  {
   "id": "o537",
+  "variantId": "asus-proart-display-pa279cv-27-inch-4k~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 63000,
+  "oldPrice": 64000,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/asus-proart-display-pa279cv-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o538",
+  "variantId": "asus-proart-display-pa279cv-27-inch-4k~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 67000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/asus-proart-display-pa279cv-27-inch-ips-4k-hdr-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o539",
+  "variantId": "asus-proart-display-pa279cv-27-inch-4k~v1",
+  "sellerId": "mcsolution.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 95500,
+  "oldPrice": 101900,
+  "inStock": true,
+  "url": "https://mcsolution.com.bd/asus-proart-display-pa279cv/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o540",
+  "variantId": "lg-34u650a-b-34-inch-ultrawide-wqhd-curved~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 81000,
+  "oldPrice": 85000,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/lg-34u650a-b-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o541",
+  "variantId": "lg-34u650a-b-34-inch-ultrawide-wqhd-curved~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 84000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/lg-34u650a-b-34-100hz-ultrawide-wqhd-ips-curved-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o542",
+  "variantId": "lg-34u650a-b-34-inch-ultrawide-wqhd-curved~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 85000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/lg-34u650a-b-34-inch-wqhd-100hz-ips-ultrawide-curved-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o543",
+  "variantId": "asus-rog-strix-xg27acmes-27-inch-qhd-255hz~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 39300,
+  "oldPrice": 47000,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/asus-rog-strix-xg27acmes-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o544",
+  "variantId": "asus-rog-strix-xg27acmes-27-inch-qhd-255hz~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 46000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/asus-rog-strix-xg27acmes-27-inch-qhd-255hz-type-c-ips-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o545",
+  "variantId": "asus-rog-strix-xg27acmes-27-inch-qhd-255hz~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 40000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.globalbrand.com.bd/asus-rog-strix-xg27acmes-27-inch-usb-type-c-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o546",
+  "variantId": "asus-proart-display-pa278qgv-27-inch-qhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 45800,
+  "oldPrice": 49000,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/asus-proart-display-pa278qgv-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o547",
+  "variantId": "asus-proart-display-pa278qgv-27-inch-qhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 50000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/asus-proart-display-pa278qv-gen2-pa278qgv-27-120hz-professional-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o548",
+  "variantId": "asus-proart-display-pa278qgv-27-inch-qhd~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 46000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.globalbrand.com.bd/asus-proart-display-pa278qv-gen2-pa278qgv-27-inch-qhd-ips-professional-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o549",
+  "variantId": "asus-proart-display-pa248qfv-24-1-inch-wuxga~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 33000,
+  "oldPrice": 45000,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/asus-proart-display-pa248qv-gen2-pa248qfv-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o550",
+  "variantId": "asus-proart-display-pa248qfv-24-1-inch-wuxga~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 34990,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/asus-proart-display-pa248qv-gen2-pa248qfv-241-100hz-wuxga-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o551",
+  "variantId": "asus-proart-display-pa248qfv-24-1-inch-wuxga~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 34000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.globalbrand.com.bd/asus-proart-display-pa248qfv-24-1-inch-wuxga-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o552",
+  "variantId": "lg-24u631a-b-23-8-inch-qhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 28500,
+  "oldPrice": 29300,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/lg-24u631a-b-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o553",
+  "variantId": "lg-24u631a-b-23-8-inch-qhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 29200,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/lg-24u631a-b-238-qhd-100hz-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o554",
+  "variantId": "lg-24u631a-b-23-8-inch-qhd~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 30500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/lg-24u631a-b-24-inch-qhd-ips-100hz-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o555",
+  "variantId": "oraimo-toast-opb-7100q-10000mah-power-bank~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1350,
+  "oldPrice": 1552,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/oraimo-toast-opb-7100q-10000mah-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o556",
+  "variantId": "oraimo-toast-opb-7100q-10000mah-power-bank~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/oraimo-opb-7100q-toast-22-5-byte-power/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o557",
+  "variantId": "oraimo-toast-opb-7100q-10000mah-power-bank~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1599,
+  "oldPrice": 1999,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/oraimo-toast-10000mah-power-bank-opb-7100q",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o558",
+  "variantId": "oraimo-powernova-l11-10000mah-power-bank~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1999,
+  "oldPrice": 2390,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/oraimo-powernova-l11-10000mah-225w-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o559",
+  "variantId": "oraimo-powernova-l11-10000mah-power-bank~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2080,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/oraimo-powernova-l11-10000mah-22-5w/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o560",
+  "variantId": "oraimo-powernova-l11-10000mah-power-bank~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2150,
+  "oldPrice": 2365,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/oraimo-powernova-l11-10000mah-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o561",
+  "variantId": "oraimo-powernova-q21-20000mah-power-bank~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1899,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/oraimo-powernova-q21-20000mah-power-bank/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o562",
+  "variantId": "oraimo-powernova-q21-20000mah-power-bank~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2020,
+  "oldPrice": 2161,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/oraimo-powernova-q21-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o563",
+  "variantId": "oraimo-powernova-q21-20000mah-power-bank~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2099,
+  "oldPrice": 2899,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/oraimo-powernova-q21-20000mah-225w-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o564",
+  "variantId": "baseus-extreme-ppjp312-20000mah-power-bank~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/baseus-lipow-ppjp312-22-5w-fast-charging-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o565",
+  "variantId": "baseus-extreme-ppjp312-20000mah-power-bank~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2270,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/baseus-ppjp312-20000mah-22-5w-fast-charging-power-bank-with-built-in-dual-cables/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o566",
+  "variantId": "baseus-extreme-ppjp312-20000mah-power-bank~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2322,
+  "oldPrice": 2622,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/baseus-extreme-ppjp312-20000mah-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o567",
+  "variantId": "anker-zolo-a110e-20000mah-power-bank~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/anker-zolo-a110e-fast-charging-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o568",
+  "variantId": "anker-zolo-a110e-20000mah-power-bank~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 4390,
+  "oldPrice": 4900,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/anker-zolo-20000mah-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o569",
+  "variantId": "anker-zolo-a110e-20000mah-power-bank~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 4499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/anker-zolo-a110e-20000mah-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o570",
+  "variantId": "baseus-adaman-ppadm20s-20000mah-power-bank~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2099,
+  "oldPrice": 2750,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/baseus-adaman-22-5w-20000mah-fast-charging-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o571",
+  "variantId": "baseus-adaman-ppadm20s-20000mah-power-bank~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2100,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/baseus-adaman-metal-digital-display-quick-charge-power-bank-225w",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o572",
+  "variantId": "baseus-adaman-ppadm20s-20000mah-power-bank~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1950,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetbreeze.com.bd/product/baseus-adaman-22-5w/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o573",
+  "variantId": "oraimo-slice-link-pro-10000mah-power-bank~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1899,
+  "oldPrice": 2200,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/oraimo-slice-link-pro-10000mah-225w-power-bank-opb-p7101",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o574",
+  "variantId": "oraimo-slice-link-pro-10000mah-power-bank~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1990,
+  "oldPrice": 2500,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/oraimo-slice-link-pro-opb-p7101-power-bank/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o575",
+  "variantId": "oraimo-slice-link-pro-10000mah-power-bank~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1995,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://motionview.com.bd/product/oraimo-slice-link-pro-10000mah-225w-power-bank-opb-p7101",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o576",
+  "variantId": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2399,
+  "oldPrice": 2999,
+  "inStock": false,
+  "url": "https://motionview.com.bd/product/oraimo-magpower-15-magnetic-wireless-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o577",
+  "variantId": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2570,
+  "oldPrice": 2790,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/oraimo-magpower-15-10000mah-wireless-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o578",
+  "variantId": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2700,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.applegadgetsbd.com/product/oraimo-opb-7102w-magnetic-wireless-power-bank",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o579",
+  "variantId": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2740,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/oraimo-magpower-15-10000mah-wireless/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o580",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21325,7 +27979,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o538",
+  "id": "o581",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21339,7 +27993,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o539",
+  "id": "o582",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -21353,7 +28007,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o540",
+  "id": "o583",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -21367,7 +28021,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o541",
+  "id": "o584",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21381,7 +28035,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o542",
+  "id": "o585",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21395,7 +28049,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o543",
+  "id": "o586",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "chaldal.com",
   "condition": "official",
@@ -21409,7 +28063,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o544",
+  "id": "o587",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -21423,7 +28077,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o545",
+  "id": "o588",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21437,7 +28091,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o546",
+  "id": "o589",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21451,7 +28105,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o547",
+  "id": "o590",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -21465,7 +28119,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o548",
+  "id": "o591",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -21479,49 +28133,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o549",
-  "variantId": "the-ordinary-niacinamide-10-zinc-1-serum-30ml~v1",
-  "sellerId": "shop.shajgoj.com",
-  "condition": "official",
-  "region": null,
-  "price": 1099,
-  "oldPrice": null,
-  "inStock": true,
-  "url": "https://shop.shajgoj.com/product/the-ordinary-niacinamide-10-zinc1",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-23T03:00:00.000Z"
- },
- {
-  "id": "o550",
-  "variantId": "the-ordinary-niacinamide-10-zinc-1-serum-30ml~v1",
-  "sellerId": "arogga.com",
-  "condition": "official",
-  "region": null,
-  "price": 1090,
-  "oldPrice": null,
-  "inStock": true,
-  "url": "https://www.arogga.com/product/41485/the-ordinary-niacinamide-10-zinc1-serum-30ml",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-23T03:00:00.000Z"
- },
- {
-  "id": "o551",
-  "variantId": "the-ordinary-niacinamide-10-zinc-1-serum-30ml~v1",
-  "sellerId": "medeasy.health",
-  "condition": "official",
-  "region": null,
-  "price": 1220,
-  "oldPrice": 2000,
-  "inStock": true,
-  "url": "https://medeasy.health/medicines/the-ordinary-niacinamide-10-zinc-1-30ml-11",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-23T03:00:00.000Z"
- },
- {
-  "id": "o552",
+  "id": "o592",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21535,7 +28147,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o553",
+  "id": "o593",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21549,7 +28161,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o554",
+  "id": "o594",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -21563,21 +28175,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o555",
-  "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
-  "sellerId": "beautyline.com.bd",
-  "condition": "official",
-  "region": null,
-  "price": 1250,
-  "oldPrice": 1700,
-  "inStock": true,
-  "url": "https://beautyline.com.bd/product/beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-23T03:00:00.000Z"
- },
- {
-  "id": "o556",
+  "id": "o595",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -21591,7 +28189,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o557",
+  "id": "o596",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -21605,7 +28203,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o558",
+  "id": "o597",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -21619,7 +28217,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o559",
+  "id": "o598",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21633,7 +28231,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o560",
+  "id": "o599",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21647,7 +28245,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o561",
+  "id": "o600",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -21661,7 +28259,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o562",
+  "id": "o601",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "cosmeticscorner.com.bd",
   "condition": "official",
@@ -21675,7 +28273,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o563",
+  "id": "o602",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21689,7 +28287,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o564",
+  "id": "o603",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21703,7 +28301,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o565",
+  "id": "o604",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -21717,7 +28315,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o566",
+  "id": "o605",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -21731,7 +28329,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o567",
+  "id": "o606",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21745,7 +28343,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o568",
+  "id": "o607",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21759,7 +28357,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o569",
+  "id": "o608",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -21773,7 +28371,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o570",
+  "id": "o609",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "indianmartbd.com",
   "condition": "official",
@@ -21787,7 +28385,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o571",
+  "id": "o610",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -21801,7 +28399,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o572",
+  "id": "o611",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21815,7 +28413,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o573",
+  "id": "o612",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21829,7 +28427,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o574",
+  "id": "o613",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -21843,7 +28441,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o575",
+  "id": "o614",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -21857,7 +28455,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o576",
+  "id": "o615",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21871,7 +28469,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o577",
+  "id": "o616",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21885,7 +28483,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o578",
+  "id": "o617",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -21899,7 +28497,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o579",
+  "id": "o618",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -21913,7 +28511,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o580",
+  "id": "o619",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -21927,7 +28525,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o581",
+  "id": "o620",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -21941,7 +28539,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o582",
+  "id": "o621",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -21955,7 +28553,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o583",
+  "id": "o622",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -21969,7 +28567,1603 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o584",
+  "id": "o623",
+  "variantId": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1099,
+  "oldPrice": 1650,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/the-ordinary-niacinamide-10-zinc1",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o624",
+  "variantId": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1090,
+  "oldPrice": 1850,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/41485/the-ordinary-niacinamide-10-zinc1-serum-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o625",
+  "variantId": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
+  "sellerId": "medeasy.health",
+  "condition": "official",
+  "region": null,
+  "price": 1345,
+  "oldPrice": 1850,
+  "inStock": true,
+  "url": "https://medeasy.health/medicines/the-ordinary-niacinamide-10-zinc1-serum-30-ml-skin-care",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o626",
+  "variantId": "cetaphil-gentle-skin-cleanser-236ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1790,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/cetaphil-gentle-skin-cleanser-236ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o627",
+  "variantId": "cetaphil-gentle-skin-cleanser-236ml~v1",
+  "sellerId": "cosmeticscorner.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1880,
+  "oldPrice": 2100,
+  "inStock": true,
+  "url": "https://www.cosmeticscorner.com.bd/cetaphil-cleanser-price-in-bangladesh/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o628",
+  "variantId": "neutrogena-hydro-boost-water-gel-50ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1450,
+  "oldPrice": 2000,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/neutrogena-hydro-boost-water-gel-cream",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o629",
+  "variantId": "neutrogena-hydro-boost-water-gel-50ml~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1700,
+  "oldPrice": 1800,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/neutrogena-hydro-boost-water-gel-moisturiser-with-hyaluronic-acid-trehalose-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o630",
+  "variantId": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1700,
+  "oldPrice": 2150,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/some-by-mi-aha-bha-pha-30-days-miracle-toner",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o631",
+  "variantId": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1521,
+  "oldPrice": 1690,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/some-by-mi-aha2c-bha2c-pha-30-days-miracle-toner",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o632",
+  "variantId": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1899,
+  "oldPrice": 2600,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/some-by-mi-aha-bha-pha-30-days-miracle-toner",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o633",
+  "variantId": "anua-heartleaf-77-soothing-toner-250ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2100,
+  "oldPrice": 2400,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/anua-heartleaf-77-soothing-toner-250ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o634",
+  "variantId": "anua-heartleaf-77-soothing-toner-250ml~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1890,
+  "oldPrice": 2260,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/anua-heartleaf-77-soothing-toner-250ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o635",
+  "variantId": "torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1953,
+  "oldPrice": 2100,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o636",
+  "variantId": "torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1900,
+  "oldPrice": 2200,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o637",
+  "variantId": "isntree-hyaluronic-acid-toner-200ml~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1500,
+  "oldPrice": 1800,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/isntree-hyaluronic-acid-toner-200ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o638",
+  "variantId": "isntree-hyaluronic-acid-toner-200ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1850,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/isntree-hyaluronic-acid-toner",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o639",
+  "variantId": "isntree-hyaluronic-acid-toner-200ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1750,
+  "oldPrice": 2400,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/62409/isntree-hyaluronic-acid-toner-200ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o640",
+  "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1750,
+  "oldPrice": 2500,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/42161/cosrx-advanced-snail-92-all-in-one-cream-100g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o641",
+  "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1799,
+  "oldPrice": 2460,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/cosrx-advanced-snail-92-all-in-one-cream",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o642",
+  "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1470,
+  "oldPrice": 1700,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/cosrx-advanced-snail-92-all-in-one-cream100g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o643",
+  "variantId": "klairs-supple-preparation-unscented-toner-180ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2100,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/klairs-supple-preparation-unscented-toner-180ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o644",
+  "variantId": "klairs-supple-preparation-unscented-toner-180ml~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3250,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.emartwayskincare.com.bd/klairs-supple-preparation-unscented-toner",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o645",
+  "variantId": "klairs-supple-preparation-unscented-toner-180ml~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://kcarebd.com/products/klairs-supple-preparation-unscented-toner-180ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o646",
+  "variantId": "skin1004-madagascar-centella-ampoule-50ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1088,
+  "oldPrice": 1450,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/skin1004-madagascar-centella-ampoule-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o647",
+  "variantId": "round-lab-birch-juice-moisturizing-cream-80ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2058,
+  "oldPrice": 2350,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/round-lab-birch-juice-moisturizing-cream-80ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o648",
+  "variantId": "round-lab-birch-juice-moisturizing-cream-80ml~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 2100,
+  "oldPrice": 2500,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/round-lab-birch-juice-moisturizing-cream",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o649",
+  "variantId": "cosrx-low-ph-good-morning-gel-cleanser-150ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 950,
+  "oldPrice": 1100,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/cosrx-low-ph-good-morning-gel-cleanser-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o650",
+  "variantId": "cosrx-low-ph-good-morning-gel-cleanser-150ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1149,
+  "oldPrice": 1500,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/cosrx-low-ph-good-morning-gel-cleanser",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o651",
+  "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 950,
+  "oldPrice": 1250,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/cosrx-salicylic-acid-daily-gentle-cleanser-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o652",
+  "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1149,
+  "oldPrice": 1500,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/cosrx-salicylic-acid-daily-gentle-cleanser",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o653",
+  "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1050,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/brand/100669/cosrx",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o654",
+  "variantId": "cosrx-acne-pimple-master-patch-24pcs~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 290,
+  "oldPrice": 400,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/cosrx-acne-pimple-master-patch/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o655",
+  "variantId": "cosrx-acne-pimple-master-patch-24pcs~v1",
+  "sellerId": "medeasy.health",
+  "condition": "official",
+  "region": null,
+  "price": 374,
+  "oldPrice": 440,
+  "inStock": true,
+  "url": "https://medeasy.health/medicines/cosrx-acne-pimple-master-patch-24-ct",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o656",
+  "variantId": "round-lab-1025-dokdo-toner-100ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1400,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/round-lab-1025-dokdo-toner-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o657",
+  "variantId": "round-lab-1025-dokdo-toner-100ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1345,
+  "oldPrice": 1950,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/64835/round-lab-1025-dokdo-toner",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o658",
+  "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1540,
+  "oldPrice": 2200,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/isntree-green-tea-fresh-toner-200ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o659",
+  "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1875,
+  "oldPrice": 2400,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/isntree-green-tea-fresh-toner",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o660",
+  "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 1750,
+  "oldPrice": 1950,
+  "inStock": true,
+  "url": "https://www.banglashoppers.com/isntree-green-tea-fresh-toner-200ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o661",
+  "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1665,
+  "oldPrice": 1850,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/isntree-green-tea-fresh-toner-200ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o662",
+  "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1700,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/isntree-green-tea-fresh-toner-200ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o663",
+  "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1540,
+  "oldPrice": 2200,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/54711/isntree-green-tea-fresh-face-toner",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o664",
+  "variantId": "skin1004-madagascar-centella-ampoule-100ml~v1",
+  "sellerId": "beautyline.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1900,
+  "oldPrice": 2100,
+  "inStock": true,
+  "url": "https://beautyline.com.bd/product/skin1004-madagascar-centella-ampoule-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o665",
+  "variantId": "skin1004-madagascar-centella-ampoule-100ml~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1880,
+  "oldPrice": 2200,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/skin1004-madagascar-centella-ampoule-100ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o666",
+  "variantId": "skin1004-madagascar-centella-ampoule-100ml~v1",
+  "sellerId": "e-mart.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://e-mart.com.bd/shop/skin1004-madagascar-centella-ampoule-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o667",
+  "variantId": "af-1-air-force-1-1-1-copy-sneakers~v1",
+  "sellerId": "threesbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4500,
+  "oldPrice": 5200,
+  "inStock": true,
+  "url": "https://threesbd.com/product/nike-airforce-1-black/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o668",
+  "variantId": "af-1-air-force-1-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5000,
+  "oldPrice": 6300,
+  "inStock": true,
+  "url": "https://ragenbd.com/products/air-force-1-triple-white",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o669",
+  "variantId": "af-1-air-force-1-1-1-copy-sneakers~v1",
+  "sellerId": "splayd.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://splayd.com.bd/products/af-1-black-summit-white-gum-1-1",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o670",
+  "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4600,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/adidas-originals-campus-00s-black/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o671",
+  "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
+  "sellerId": "sneakerzonebd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4600,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://sneakerzonebd.com/products/adidas-campus-00s-black-suede",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o672",
+  "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
+  "sellerId": "splayd.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://splayd.com.bd/products/adidas-campus-00s-black-white",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o673",
+  "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3500,
+  "oldPrice": 6500,
+  "inStock": false,
+  "url": "https://ragenbd.com/products/adidas-campus-00s",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o674",
+  "variantId": "samba-samba-og-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3900,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/adidas-samba-og-shoes-cloud-white-core-black/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o675",
+  "variantId": "samba-samba-og-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ragenbd.com/products/adidas-samba-began-white",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o676",
+  "variantId": "samba-samba-og-1-1-copy-sneakers~v1",
+  "sellerId": "splayd.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://splayd.com.bd/products/samba-og-night-navy-cream",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o677",
+  "variantId": "samba-samba-vegan-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3600,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/adidas-samba-vegan-og/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o678",
+  "variantId": "samba-samba-vegan-1-1-copy-sneakers~v1",
+  "sellerId": "sneakerzonebd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://sneakerzonebd.com/products/adidas-samba-vegan-og-copy",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o679",
+  "variantId": "samba-samba-vegan-1-1-copy-sneakers~v1",
+  "sellerId": "splayd.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5950,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://splayd.com.bd/products/samba-og-black-white-gum-1-1",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o680",
+  "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/onitsuka-tiger-mexico-66-black-white/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o681",
+  "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
+  "sellerId": "sneakerzonebd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://sneakerzonebd.com/products/onitsuka-tiger-mexico-66-black-white",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o682",
+  "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ragenbd.com/products/onitsuka-tiger-mexico-66-black-yellow",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o683",
+  "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
+  "sellerId": "sneakersbdofficial.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sneakersbdofficial.com/product/show/onitsuka-tiger-mexico-66-black-white-oem-black-1246",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o684",
+  "variantId": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/onitsuka-tiger-tokuten-birch-iron-navy/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o685",
+  "variantId": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ragenbd.com/products/onitsuka-tiger-tokuten-cream-brown",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o686",
+  "variantId": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
+  "sellerId": "sneakersbdofficial.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sneakersbdofficial.com/product/show/onitsuka-tiger-tokuten-shoes-white-burgundy-grey-11-maroon-1234",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o687",
+  "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/converse-chuck-70-high-top-black/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o688",
+  "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
+  "sellerId": "sneakerzonebd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3900,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://sneakerzonebd.com/products/converse-chuck-70-high-top-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o689",
+  "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ragenbd.com/products/converse-chuck-70-canvas-garnet",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o690",
+  "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
+  "sellerId": "sneakersbdofficial.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sneakersbdofficial.com/product/show/converse-chuck-taylor-all-star-70-hi-maroon-11-maroon-1202",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o691",
+  "variantId": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/converse-all-star-high-top-yellow/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o692",
+  "variantId": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
+  "sellerId": "sneakerzonebd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://sneakerzonebd.com/products/converse-all-star-high-top-yellow",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o693",
+  "variantId": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
+  "sellerId": "trekntread.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1650,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://trekntread.com/products/all-star-converse-chuck-taylor-high-top-black-white",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o694",
+  "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
+  "sellerId": "splayd.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5950,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://splayd.com.bd/products/j-1-low-panda-1-1-new",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o695",
+  "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
+  "sellerId": "sneakersbdofficial.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sneakersbdofficial.com/product/show/jordan-1-low-panda-oem-black-white-1016",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o696",
+  "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 6500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ragenbd.com/products/air-jordan-1-retro-low-year-of-the-snake",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o697",
+  "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
+  "sellerId": "trekntread.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2090,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://trekntread.com/products/nike-air-jordan-1-unc-university-north-carolina-blue-white-low-top-mens-sneakers-bd",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o698",
+  "variantId": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
+  "sellerId": "splayd.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 8750,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://splayd.com.bd/products/jordan-1-high-chicago-lost-found-1-1",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o699",
+  "variantId": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
+  "sellerId": "sneakersbdofficial.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sneakersbdofficial.com/product/show/jordan-1-retro-high-mocha-oem-dark-mocha-1230",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o700",
+  "variantId": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3800,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://ragenbd.com/products/aj1-retro-high-tokyo-bio-oem-grade",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o701",
+  "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
+  "sellerId": "splayd.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 8450,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://splayd.com.bd/products/jordan-4-white-thunder-1-2",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o702",
+  "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 6500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ragenbd.com/products/aj-4-fear",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o703",
+  "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
+  "sellerId": "trekntread.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4790,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://trekntread.com/products/648-air-jordan-4-color-camo-grey-low-neck-grade-oem-superior",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o704",
+  "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
+  "sellerId": "sneakersbdofficial.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sneakersbdofficial.com/product/show/jordan-4-retro-military-black-oem-white-black-1228",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o705",
+  "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/nike-sb-dunk-low-verdy-visty/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o706",
+  "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
+  "sellerId": "sneakerzonebd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://sneakerzonebd.com/products/nike-sb-dunk-low-verdy-visty",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o707",
+  "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
+  "sellerId": "splayd.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 6950,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://splayd.com.bd/products/sb-dunks-otomo-katsuhiro-bear-1-1",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o708",
+  "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
+  "sellerId": "sneakersbdofficial.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sneakersbdofficial.com/product/show/nike-sb-dunk-low-jarritos-oem-white-green-orange-1198",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o709",
+  "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 6000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ragenbd.com/products/new-balance-9060-black-cement-dry-lime",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o710",
+  "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
+  "sellerId": "splayd.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 6200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://splayd.com.bd/products/nb-9060-grey-jet-black-1-1",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o711",
+  "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
+  "sellerId": "trekntread.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2990,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://trekntread.com/products/654-new-balance-9060-color-ash-grey-low-neck-grade-oem-superior",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o712",
+  "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
+  "sellerId": "sneakersbdofficial.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 6500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sneakersbdofficial.com/product/show/new-balance-9060-black-grey-11-black-grey-1063",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o713",
+  "variantId": "new-balance-530-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4600,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/new-balance-530-grey/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o714",
+  "variantId": "new-balance-530-1-1-copy-sneakers~v1",
+  "sellerId": "sneakerzonebd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4600,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://sneakerzonebd.com/products/new-balance-530-grey",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o715",
+  "variantId": "new-balance-530-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 6600,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ragenbd.com/products/new-balance-530",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o716",
+  "variantId": "new-balance-530-1-1-copy-sneakers~v1",
+  "sellerId": "trekntread.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2990,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://trekntread.com/products/new-balance-mens-530-white-sky-blue-silver-casual-running-shoes-online-bd",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o717",
+  "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/puma-speedcat-og-sneakers-unisex-black/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o718",
+  "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
+  "sellerId": "sneakerzonebd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://sneakerzonebd.com/products/puma-speedcat-og-sneakers-unisex-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o719",
+  "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ragenbd.com/products/puma-speed-cat-lux-chocolate-gum",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o720",
+  "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
+  "sellerId": "trekntread.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3590,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://trekntread.com/products/471-puma-speed-cat-sneaker-color-red-low-neck-grade-oem-superior",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o721",
+  "variantId": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/adidas-gazelle-indoor-white-preloved-ink/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o722",
+  "variantId": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
+  "sellerId": "sneakerzonebd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://sneakerzonebd.com/products/adidas-gazelle-indoor-white-preloved-ink",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o723",
+  "variantId": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
+  "sellerId": "sneakersbdofficial.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sneakersbdofficial.com/product/show/adidas-gazelle-indoor-dark-grey-white-11-ashgray-1236",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o724",
+  "variantId": "vans-knu-skool-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/vans-knu-skool-shoe/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o725",
+  "variantId": "vans-knu-skool-1-1-copy-sneakers~v1",
+  "sellerId": "sneakerzonebd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://sneakerzonebd.com/products/vans-knu-skool-shoe",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o726",
+  "variantId": "vans-knu-skool-1-1-copy-sneakers~v1",
+  "sellerId": "sneakersbdofficial.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sneakersbdofficial.com/product/show/vans-knu-skool-black-white-oem-black-white-1128",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o727",
+  "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
+  "sellerId": "threesbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://threesbd.com/product/adidas-adizero-evo-sl-atr/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o728",
+  "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
+  "sellerId": "dob.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://dob.com.bd/product/adizero-evo-sl-white-running-shoes/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o729",
+  "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
+  "sellerId": "splayd.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4950,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://splayd.com.bd/products/adizero-evo-sl-mississippi-state",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o730",
+  "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
+  "sellerId": "sneakersbdofficial.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sneakersbdofficial.com/product/show/adidas-adizero-evo-sl-black-white-oem-black-white-1062",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o731",
+  "variantId": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 6800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ragenbd.com/products/adizero-adios-pro-evo-1-white-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o732",
+  "variantId": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
+  "sellerId": "splayd.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5950,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://splayd.com.bd/products/adizero-adios-pro-evo-1-white-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o733",
+  "variantId": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
+  "sellerId": "trekntread.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4790,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://trekntread.com/products/674-adizero-adios-pro-evo-1-light-blue-grade-11",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o734",
+  "variantId": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
+  "sellerId": "threesbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://threesbd.com/product/adidas-adizero-adios-pro-4/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o735",
+  "variantId": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
+  "sellerId": "splayd.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://splayd.com.bd/products/adizero-adios-pro-4-off-white-scarlet",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o736",
+  "variantId": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
+  "sellerId": "ragenbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 6500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ragenbd.com/products/y-3-adios-pro-4-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o737",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -21983,7 +30177,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o585",
+  "id": "o738",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -21997,7 +30191,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o586",
+  "id": "o739",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -22011,7 +30205,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o587",
+  "id": "o740",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -22025,7 +30219,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o588",
+  "id": "o741",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -22039,7 +30233,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o589",
+  "id": "o742",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -22053,7 +30247,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o590",
+  "id": "o743",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -22067,7 +30261,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o591",
+  "id": "o744",
   "variantId": "apple-watch-series-11~v3",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -22081,7 +30275,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o592",
+  "id": "o745",
   "variantId": "apple-watch-series-11~v4",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -22095,7 +30289,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o593",
+  "id": "o746",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -22109,7 +30303,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o594",
+  "id": "o747",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "unofficial",
@@ -22123,7 +30317,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o595",
+  "id": "o748",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "unofficial",
@@ -22137,7 +30331,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o596",
+  "id": "o749",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -22151,7 +30345,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o597",
+  "id": "o750",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -22165,7 +30359,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o598",
+  "id": "o751",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -22179,7 +30373,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o599",
+  "id": "o752",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -22193,7 +30387,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o600",
+  "id": "o753",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -22207,7 +30401,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o601",
+  "id": "o754",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -22221,7 +30415,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o602",
+  "id": "o755",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -22235,7 +30429,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o603",
+  "id": "o756",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -22249,7 +30443,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o604",
+  "id": "o757",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -22263,21 +30457,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o605",
-  "variantId": "amazfit-active-2-premium~v2",
-  "sellerId": "gadgetandgear.com",
-  "condition": "official",
-  "region": null,
-  "price": 16999,
-  "oldPrice": null,
-  "inStock": false,
-  "url": "https://gadgetandgear.com/product/amazfit-active-2-premium-version",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-21T03:00:00.000Z"
- },
- {
-  "id": "o606",
+  "id": "o758",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -22291,21 +30471,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o607",
-  "variantId": "amazfit-active-2-premium~v2",
-  "sellerId": "applegadgetsbd.com",
-  "condition": "official",
-  "region": null,
-  "price": 15500,
-  "oldPrice": 17499,
-  "inStock": false,
-  "url": "https://www.applegadgetsbd.com/product/amazfit-active-2-smart-watch-premium-version",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-21T03:00:00.000Z"
- },
- {
-  "id": "o608",
+  "id": "o759",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -22319,21 +30485,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o609",
-  "variantId": "amazfit-active-2-premium~v2",
-  "sellerId": "sumashtech.com",
-  "condition": "unofficial",
-  "region": null,
-  "price": 14999,
-  "oldPrice": 17000,
-  "inStock": false,
-  "url": "https://www.sumashtech.com/product/amazfit-active-2-premium-edition-round-smartwatch",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-21T03:00:00.000Z"
- },
- {
-  "id": "o610",
+  "id": "o760",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -22347,7 +30499,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o611",
+  "id": "o761",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "diamu.com.bd",
   "condition": "official",
@@ -22361,7 +30513,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o612",
+  "id": "o762",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -22375,7 +30527,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o613",
+  "id": "o763",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -22389,7 +30541,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o614",
+  "id": "o764",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -22403,7 +30555,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o615",
+  "id": "o765",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -22417,7 +30569,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o616",
+  "id": "o766",
+  "variantId": "huawei-watch-fit-4~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 16990,
+  "oldPrice": 18689,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/huawei-watch-fit-4",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o767",
   "variantId": "xiaomi-redmi-watch-6-active~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -22431,7 +30597,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o617",
+  "id": "o768",
   "variantId": "xiaomi-redmi-watch-6-active~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -22443,5 +30609,999 @@ export const catalogOffers: Offer[] = [
   "source": "site",
   "published": true,
   "checkedAt": "2026-10-21T03:00:00.000Z"
+ },
+ {
+  "id": "o769",
+  "variantId": "amazfit-bip-5-unity-smart-watch~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5490,
+  "oldPrice": 12490,
+  "inStock": false,
+  "url": "https://dazzle.com.bd/product/amazfit-bip-5-unity-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o770",
+  "variantId": "amazfit-bip-5-unity-smart-watch~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5499,
+  "oldPrice": 6200,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/amazfit-bip-5-unity-calling-smartwatch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o771",
+  "variantId": "amazfit-bip-5-unity-smart-watch~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 5430,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/amazfit-bip-5-unity-bluetooth-calling-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o772",
+  "variantId": "huawei-watch-gt-4-46mm~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 23990,
+  "oldPrice": 29990,
+  "inStock": true,
+  "url": "https://dazzle.com.bd/product/huawei-watch-gt-4",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o773",
+  "variantId": "huawei-watch-gt-4-46mm~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 27999,
+  "oldPrice": 29000,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/huawei-watch-gt-4-46mm",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o774",
+  "variantId": "samsung-galaxy-watch-8-40mm~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 23900,
+  "oldPrice": 25999,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/samsung-galaxy-watch8",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o775",
+  "variantId": "samsung-galaxy-watch-8-40mm~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 25999,
+  "oldPrice": 27499,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/galaxy-watch-8",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o776",
+  "variantId": "samsung-galaxy-watch-8-40mm~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 24499,
+  "oldPrice": 29999,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/galaxy-watch-8",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o777",
+  "variantId": "xiaomi-redmi-watch-5~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 11450,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/xiaomi-redmi-watch-5-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o778",
+  "variantId": "xiaomi-redmi-watch-5~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 11890,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/xiaomi-redmi-watch-5/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o779",
+  "variantId": "xiaomi-redmi-watch-5~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 10999,
+  "oldPrice": 12500,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/redmi-watch-5",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o780",
+  "variantId": "apple-watch-se-2nd-gen~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 32499,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/apple-watch-se-2nd-gen",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o781",
+  "variantId": "apple-watch-se-2nd-gen~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 33999,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetandgear.com/product/apple-watch-se-2nd-gen-gps-44mm-midnight",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o782",
+  "variantId": "apple-watch-se-2nd-gen~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 29990,
+  "oldPrice": 42990,
+  "inStock": true,
+  "url": "https://dazzle.com.bd/product/apple-watch-se-2nd-gen-gps-44mm",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o783",
+  "variantId": "huawei-watch-gt-6-46mm~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 23999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/huawei-watch-gt-6-46mm",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o784",
+  "variantId": "huawei-watch-gt-6-46mm~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 29999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/huawei-watch-gt-6",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o785",
+  "variantId": "huawei-watch-gt-6-46mm~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 28300,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/huawei-watch-gt-6",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o786",
+  "variantId": "xiaomi-watch-s4~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 14990,
+  "oldPrice": 19590,
+  "inStock": true,
+  "url": "https://dazzle.com.bd/product/xiaomi-watch-s4",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o787",
+  "variantId": "xiaomi-watch-s4~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 17499,
+  "oldPrice": 20999,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/xiaomi-watch-s4-bluetooth-calling-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o788",
+  "variantId": "xiaomi-watch-s4~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 16900,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/xiaomi-watch-s4",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o789",
+  "variantId": "haylou-solar-lite-2~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2860,
+  "oldPrice": 3250,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/haylou-solar-lite-2",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o790",
+  "variantId": "haylou-solar-lite-2~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2999,
+  "oldPrice": 3699,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/haylou-solar-lite-2-bluetooth-calling-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o791",
+  "variantId": "imiki-st2-bluetooth-calling-smart-watch~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2340,
+  "oldPrice": 2549,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/imilab-imiki-st2-bluetooth-calling-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o792",
+  "variantId": "imiki-st2-bluetooth-calling-smart-watch~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2499,
+  "oldPrice": 2999,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/imiki-st2-bluetooth-calling-smartwatch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o793",
+  "variantId": "kospet-orb-2-smart-watch~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 6749,
+  "oldPrice": 8999,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/kospet-orb-2",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o794",
+  "variantId": "kospet-orb-2-smart-watch~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 6999,
+  "oldPrice": 10499,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/kospet-orb-2-bluetooth-calling-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o795",
+  "variantId": "imiki-frame-2-pro-smart-watch~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5499,
+  "oldPrice": 7450,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/imiki-frame-2-pro-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o796",
+  "variantId": "imiki-frame-2-pro-smart-watch~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 7299,
+  "oldPrice": 7450,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/imiki-frame-2-pro-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o797",
+  "variantId": "oraimo-watch-5-lite~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1640,
+  "oldPrice": 1755,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/oraimo-watch-5-lite-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o798",
+  "variantId": "oraimo-watch-5-lite~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1599,
+  "oldPrice": 1820,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/oraimo-watch-5-lite-bluetooth-calling-smart-watch-osw-804",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o799",
+  "variantId": "kospet-tank-t4c-smart-watch~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 10900,
+  "oldPrice": 11499,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/kospet-tank-t4c",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o800",
+  "variantId": "kospet-tank-t4c-smart-watch~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 9499,
+  "oldPrice": 12999,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/kospet-tank-t4c-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o801",
+  "variantId": "kospet-tank-t4c-smart-watch~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 11999,
+  "oldPrice": 12999,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/kospet-tank-t4c-smartwatch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o802",
+  "variantId": "haylou-watch-4-with-gps~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3392,
+  "oldPrice": 3899,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/haylou-watch-4",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o803",
+  "variantId": "haylou-watch-4-with-gps~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3499,
+  "oldPrice": 3999,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/haylou-watch-4-bluetooth-calling-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o804",
+  "variantId": "haylou-watch-4-with-gps~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3290,
+  "oldPrice": 4490,
+  "inStock": true,
+  "url": "https://dazzle.com.bd/product/haylou-watch-4",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o805",
+  "variantId": "haylou-watch-4-with-gps~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3350,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/haylou-watch-4-smart-watch/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o806",
+  "variantId": "oraimo-watch-6-osw-807~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2570,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/oraimo-watch-6",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o807",
+  "variantId": "oraimo-watch-6-osw-807~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2599,
+  "oldPrice": 2900,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/oraimo-watch-6-bluetooth-calling-smart-watch-osw-807",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o808",
+  "variantId": "kospet-orb-smart-watch~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 4729,
+  "oldPrice": 5499,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/kospet-orb-smartwatch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o809",
+  "variantId": "kospet-orb-smart-watch~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4490,
+  "oldPrice": 6000,
+  "inStock": true,
+  "url": "https://dazzle.com.bd/product/kospet-orb-smartwatch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o810",
+  "variantId": "kospet-orb-smart-watch~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 5499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/kospet-orb-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o811",
+  "variantId": "kospet-tank-t3-ultra-smart-watch~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 8690,
+  "oldPrice": 11099,
+  "inStock": true,
+  "url": "https://dazzle.com.bd/product/kospet-tank-t3-ultra-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o812",
+  "variantId": "kospet-tank-t3-ultra-smart-watch~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 9499,
+  "oldPrice": 10000,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/kospet-tank-t3-ultra-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o813",
+  "variantId": "kospet-tank-t3-ultra-smart-watch~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 9299,
+  "oldPrice": 10499,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/kospet-tank-t3-ultra-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o814",
+  "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 8680,
+  "oldPrice": 9499,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/kieslect-actor-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o815",
+  "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 7990,
+  "oldPrice": 9990,
+  "inStock": true,
+  "url": "https://dazzle.com.bd/product/kieslect-actor-smartwatch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o816",
+  "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 9390,
+  "oldPrice": 9999,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/kieslect-actor-bluetooth-calling-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o817",
+  "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 5999,
+  "oldPrice": 9999,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/kieslect-actor-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o818",
+  "variantId": "oraimo-watch-nova-2r~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 4650,
+  "oldPrice": 5099,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/oraimo-watch-nova-2r",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o819",
+  "variantId": "oraimo-watch-nova-2r~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4499,
+  "oldPrice": 5455,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/oraimo-watch-nova-2r-amoled-smart-watch-osw-834",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o820",
+  "variantId": "oraimo-watch-nova-2r~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 5450,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/oraimo-watch-nova-2r-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o821",
+  "variantId": "amazfit-bip-6~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 10300,
+  "oldPrice": 10999,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/amazfit-bip-6-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o822",
+  "variantId": "amazfit-bip-6~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 10390,
+  "oldPrice": 14390,
+  "inStock": false,
+  "url": "https://dazzle.com.bd/product/amazfit-bip-6-bt-calling-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o823",
+  "variantId": "amazfit-bip-6~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 10499,
+  "oldPrice": 11500,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/amazfit-bip-6-bluetooth-calling-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o824",
+  "variantId": "amazfit-active-2~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 11350,
+  "oldPrice": 14999,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/amazfit-active-2",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o825",
+  "variantId": "amazfit-active-2~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 12499,
+  "oldPrice": 14000,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/amazfit-active-2-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o826",
+  "variantId": "amazfit-active-2~v1",
+  "sellerId": "genten.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 12999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://genten.com.bd/amazfit-active-2-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o827",
+  "variantId": "xiaomi-watch-2~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 17999,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/xiaomi-watch-2-amoled-bluetooth-calling-smartwatch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o828",
+  "variantId": "xiaomi-watch-2~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 15990,
+  "oldPrice": 21989,
+  "inStock": true,
+  "url": "https://dazzle.com.bd/product/xiaomi-watch-2",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o829",
+  "variantId": "xiaomi-watch-2~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 16499,
+  "oldPrice": 22001,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/xiaomi-watch-2",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o830",
+  "variantId": "xiaomi-watch-2~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 17299,
+  "oldPrice": 21999,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/xiaomi-watch-2-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o831",
+  "variantId": "huawei-watch-fit-3~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 10992,
+  "oldPrice": 15490,
+  "inStock": true,
+  "url": "https://dazzle.com.bd/product/huawei-watch-fit-3",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o832",
+  "variantId": "huawei-watch-fit-3~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 15999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/huawei-watch-fit-3",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o833",
+  "variantId": "huawei-watch-fit-3~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 13900,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/huawei-watch-fit-3-amoled-smartwatch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o834",
+  "variantId": "huawei-watch-fit-3~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 13690,
+  "oldPrice": 15500,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/huawei-watch-fit-3/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o835",
+  "variantId": "samsung-galaxy-watch-7-40mm~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 19400,
+  "oldPrice": 20999,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/samsung-galaxy-watch-7-40mm-smart-watch",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o836",
+  "variantId": "samsung-galaxy-watch-7-40mm~v1",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 17990,
+  "oldPrice": 39990,
+  "inStock": false,
+  "url": "https://dazzle.com.bd/product/galaxy-watch-7",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o837",
+  "variantId": "samsung-galaxy-watch-7-40mm~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 20499,
+  "oldPrice": 24000,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/galaxy-watch-7",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o838",
+  "variantId": "huawei-watch-gt-7-46mm~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 29000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/huawei-watch-gt-7",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o839",
+  "variantId": "huawei-watch-gt-7-46mm~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 29999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/huawei-watch-gt-7",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-24T03:00:00.000Z"
  }
 ];

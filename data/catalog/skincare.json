@@ -259,54 +259,6 @@
       ]
     },
     {
-      "brand": "The Ordinary",
-      "name": "Niacinamide 10% + Zinc 1% Serum 30ml",
-      "popular": true,
-      "variants": [
-        {
-          "label": "30ml",
-          "attributes": {
-            "capacity": "30ml"
-          },
-          "officialPrice": 1409
-        }
-      ],
-      "images": [
-        "https://bk.shajgoj.com/storage/2026/05/4559.jpg",
-        "https://bk.shajgoj.com/storage/2025/05/3592.jpg"
-      ],
-      "offers": [
-        {
-          "variant": "30ml",
-          "site": "Shajgoj",
-          "url": "https://shop.shajgoj.com/product/the-ordinary-niacinamide-10-zinc1",
-          "price": 1099,
-          "inStock": true,
-          "condition": "official",
-          "checkedAt": "2026-10-23"
-        },
-        {
-          "variant": "30ml",
-          "site": "Arogga",
-          "url": "https://www.arogga.com/product/41485/the-ordinary-niacinamide-10-zinc1-serum-30ml",
-          "price": 1090,
-          "inStock": true,
-          "condition": "official",
-          "checkedAt": "2026-10-23"
-        },
-        {
-          "variant": "30ml",
-          "site": "MedEasy",
-          "url": "https://medeasy.health/medicines/the-ordinary-niacinamide-10-zinc-1-30ml-11",
-          "price": 1220,
-          "oldPrice": 2000,
-          "inStock": true,
-          "condition": "official",
-          "checkedAt": "2026-10-23"
-        }
-      ]
-    },
-    {
       "brand": "COSRX",
       "name": "Advanced Snail 96 Mucin Power Essence 100ml",
       "popular": true,
@@ -371,16 +323,6 @@
         "https://beautyline.com.bd/legacy-uploads/2025/01/Beauty-of-Joseon-Sunscreen-Rice-Probiotics-SPF-50-PA-50ml-1.jpg"
       ],
       "offers": [
-        {
-          "variant": "50ml",
-          "site": "Beauty Line",
-          "url": "https://beautyline.com.bd/product/beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml",
-          "price": 1250,
-          "oldPrice": 1700,
-          "inStock": true,
-          "condition": "official",
-          "checkedAt": "2026-10-23"
-        },
         {
           "variant": "50ml",
           "site": "Emart",
@@ -771,6 +713,751 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "brand": "The Ordinary",
+      "name": "Niacinamide 10% + Zinc 1% 30ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "30ml",
+          "attributes": {
+            "capacity": "30ml"
+          },
+          "officialPrice": 1799
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2026/05/4559.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "30ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/the-ordinary-niacinamide-10-zinc1",
+          "price": 1099,
+          "oldPrice": 1650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "30ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/41485/the-ordinary-niacinamide-10-zinc1-serum-30ml",
+          "price": 1090,
+          "oldPrice": 1850,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "30ml",
+          "site": "MedEasy",
+          "url": "https://medeasy.health/medicines/the-ordinary-niacinamide-10-zinc1-serum-30-ml-skin-care",
+          "price": 1345,
+          "oldPrice": 1850,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Cetaphil",
+      "name": "Gentle Skin Cleanser 236ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "236ml",
+          "attributes": {
+            "capacity": "236ml"
+          },
+          "officialPrice": 2100
+        }
+      ],
+      "images": [
+        "https://e-mart.com.bd/wp-content/uploads/2026/06/cetaphil-gentle-skin-cleanser-236ml-gmc-enhanced-36432.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "236ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/cetaphil-gentle-skin-cleanser-236ml",
+          "price": 1790,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "236ml",
+          "site": "Cosmetics Corner",
+          "url": "https://www.cosmeticscorner.com.bd/cetaphil-cleanser-price-in-bangladesh/",
+          "price": 1880,
+          "oldPrice": 2100,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Neutrogena",
+      "name": "Hydro Boost Water Gel 50ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "50ml",
+          "attributes": {
+            "capacity": "50ml"
+          },
+          "officialPrice": 2000
+        }
+      ],
+      "images": [],
+      "offers": [
+        {
+          "variant": "50ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/neutrogena-hydro-boost-water-gel-cream",
+          "price": 1450,
+          "oldPrice": 2000,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "50ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/neutrogena-hydro-boost-water-gel-moisturiser-with-hyaluronic-acid-trehalose-50ml/",
+          "price": 1700,
+          "oldPrice": 1800,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Some By Mi",
+      "name": "AHA BHA PHA 30 Days Miracle Toner 150ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "150ml",
+          "attributes": {
+            "capacity": "150ml"
+          },
+          "officialPrice": 2150
+        }
+      ],
+      "images": [],
+      "offers": [
+        {
+          "variant": "150ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/some-by-mi-aha-bha-pha-30-days-miracle-toner",
+          "price": 1700,
+          "oldPrice": 2150,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "150ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/some-by-mi-aha2c-bha2c-pha-30-days-miracle-toner",
+          "price": 1521,
+          "oldPrice": 1690,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "150ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/some-by-mi-aha-bha-pha-30-days-miracle-toner",
+          "price": 1899,
+          "oldPrice": 2600,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Anua",
+      "name": "Heartleaf 77% Soothing Toner 250ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "250ml",
+          "attributes": {
+            "capacity": "250ml"
+          },
+          "officialPrice": 2260
+        }
+      ],
+      "images": [],
+      "offers": [
+        {
+          "variant": "250ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/anua-heartleaf-77-soothing-toner-250ml",
+          "price": 2100,
+          "oldPrice": 2400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "250ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/anua-heartleaf-77-soothing-toner-250ml",
+          "price": 1890,
+          "oldPrice": 2260,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Torriden",
+      "name": "Dive-In Low Molecule Hyaluronic Acid Serum 50ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "50ml",
+          "attributes": {
+            "capacity": "50ml"
+          },
+          "officialPrice": 2200
+        }
+      ],
+      "images": [
+        "https://e-mart.com.bd/wp-content/uploads/2026/02/emart-torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "50ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml",
+          "price": 1953,
+          "oldPrice": 2100,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "50ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml",
+          "price": 1900,
+          "oldPrice": 2200,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Isntree",
+      "name": "Hyaluronic Acid Toner 200ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "200ml",
+          "attributes": {
+            "capacity": "200ml"
+          },
+          "officialPrice": 1800
+        }
+      ],
+      "images": [],
+      "offers": [
+        {
+          "variant": "200ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/isntree-hyaluronic-acid-toner-200ml",
+          "price": 1500,
+          "oldPrice": 1800,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "200ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/isntree-hyaluronic-acid-toner",
+          "price": 1850,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "200ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/62409/isntree-hyaluronic-acid-toner-200ml",
+          "price": 1750,
+          "oldPrice": 2400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "COSRX",
+      "name": "Advanced Snail 92 All In One Cream 100g",
+      "popular": true,
+      "variants": [
+        {
+          "label": "100g",
+          "attributes": {
+            "capacity": "100g"
+          },
+          "officialPrice": 2500
+        }
+      ],
+      "images": [],
+      "offers": [
+        {
+          "variant": "100g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/42161/cosrx-advanced-snail-92-all-in-one-cream-100g",
+          "price": 1750,
+          "oldPrice": 2500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "100g",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/cosrx-advanced-snail-92-all-in-one-cream",
+          "price": 1799,
+          "oldPrice": 2460,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "100g",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/cosrx-advanced-snail-92-all-in-one-cream100g",
+          "price": 1470,
+          "oldPrice": 1700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Klairs",
+      "name": "Supple Preparation Unscented Toner 180ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "180ml",
+          "attributes": {
+            "capacity": "180ml"
+          },
+          "officialPrice": 2680
+        }
+      ],
+      "images": [
+        "https://e-mart.com.bd/wp-content/uploads/2022/04/unscented-toner.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "180ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/klairs-supple-preparation-unscented-toner-180ml",
+          "price": 2100,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "180ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/klairs-supple-preparation-unscented-toner",
+          "price": 3250,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "180ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/klairs-supple-preparation-unscented-toner-180ml/",
+          "price": 2000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "SKIN1004",
+      "name": "Madagascar Centella Ampoule 50ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "50ml",
+          "attributes": {
+            "capacity": "50ml"
+          },
+          "officialPrice": 1450
+        }
+      ],
+      "images": [],
+      "offers": [
+        {
+          "variant": "50ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/skin1004-madagascar-centella-ampoule-50ml",
+          "price": 1088,
+          "oldPrice": 1450,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Round Lab",
+      "name": "Birch Juice Moisturizing Cream 80ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "80ml",
+          "attributes": {
+            "capacity": "80ml"
+          },
+          "officialPrice": 2350
+        }
+      ],
+      "images": [
+        "https://e-mart.com.bd/wp-content/uploads/2026/04/new-round-lab-birch-juice-moisturizing-cream-80ml.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "80ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/round-lab-birch-juice-moisturizing-cream-80ml",
+          "price": 2058,
+          "oldPrice": 2350,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "80ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/round-lab-birch-juice-moisturizing-cream",
+          "price": 2100,
+          "oldPrice": 2500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "COSRX",
+      "name": "Low pH Good Morning Gel Cleanser 150ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "150ml",
+          "attributes": {
+            "capacity": "150ml"
+          },
+          "officialPrice": 1100
+        }
+      ],
+      "images": [],
+      "offers": [
+        {
+          "variant": "150ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/cosrx-low-ph-good-morning-gel-cleanser-150ml",
+          "price": 950,
+          "oldPrice": 1100,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "150ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/cosrx-low-ph-good-morning-gel-cleanser",
+          "price": 1149,
+          "oldPrice": 1500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "COSRX",
+      "name": "Salicylic Acid Daily Gentle Cleanser 150ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "150ml",
+          "attributes": {
+            "capacity": "150ml"
+          },
+          "officialPrice": 1350
+        }
+      ],
+      "images": [],
+      "offers": [
+        {
+          "variant": "150ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/cosrx-salicylic-acid-daily-gentle-cleanser-150ml",
+          "price": 950,
+          "oldPrice": 1250,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "150ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/cosrx-salicylic-acid-daily-gentle-cleanser",
+          "price": 1149,
+          "oldPrice": 1500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "150ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/brand/100669/cosrx",
+          "price": 1050,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "COSRX",
+      "name": "Acne Pimple Master Patch 24pcs",
+      "popular": true,
+      "variants": [
+        {
+          "label": "24pcs",
+          "attributes": {
+            "capacity": "24pcs"
+          },
+          "officialPrice": 440
+        }
+      ],
+      "images": [
+        "https://skincareshop.com.bd/wp-content/uploads/2021/11/Cosrx-Acne-Pimple-Master-Patch-1.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "24pcs",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/cosrx-acne-pimple-master-patch/",
+          "price": 290,
+          "oldPrice": 400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "24pcs",
+          "site": "MedEasy",
+          "url": "https://medeasy.health/medicines/cosrx-acne-pimple-master-patch-24-ct",
+          "price": 374,
+          "oldPrice": 440,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Round Lab",
+      "name": "1025 Dokdo Toner 100ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "100ml",
+          "attributes": {
+            "capacity": "100ml"
+          },
+          "officialPrice": 1500
+        }
+      ],
+      "images": [
+        "https://e-mart.com.bd/wp-content/uploads/2024/06/emart-round-lab-1025-dokdo-toner-100ml.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "100ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/round-lab-1025-dokdo-toner-100ml",
+          "price": 1400,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "100ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/64835/round-lab-1025-dokdo-toner",
+          "price": 1345,
+          "oldPrice": 1950,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Isntree",
+      "name": "Green Tea Fresh Toner 200ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "200ml",
+          "attributes": {
+            "capacity": "200ml"
+          },
+          "officialPrice": 1900
+        }
+      ],
+      "images": [
+        "https://cdn.aromyeo.com/Products/isntree-green-tea-fresh-toner-200ml-720.avif"
+      ],
+      "offers": [
+        {
+          "variant": "200ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/isntree-green-tea-fresh-toner-200ml",
+          "price": 1540,
+          "oldPrice": 2200,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "200ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/isntree-green-tea-fresh-toner",
+          "price": 1875,
+          "oldPrice": 2400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "200ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/isntree-green-tea-fresh-toner-200ml.html",
+          "price": 1750,
+          "oldPrice": 1950,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "200ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/isntree-green-tea-fresh-toner-200ml",
+          "price": 1665,
+          "oldPrice": 1850,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "200ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/isntree-green-tea-fresh-toner-200ml",
+          "price": 1700,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "200ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/54711/isntree-green-tea-fresh-face-toner",
+          "price": 1540,
+          "oldPrice": 2200,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "SKIN1004",
+      "name": "Madagascar Centella Ampoule 100ml",
+      "popular": true,
+      "variants": [
+        {
+          "label": "100ml",
+          "attributes": {
+            "capacity": "100ml"
+          },
+          "officialPrice": 2500
+        }
+      ],
+      "images": [],
+      "offers": [
+        {
+          "variant": "100ml",
+          "site": "Beauty Line",
+          "url": "https://beautyline.com.bd/product/skin1004-madagascar-centella-ampoule-100ml",
+          "price": 1900,
+          "oldPrice": 2100,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "100ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/skin1004-madagascar-centella-ampoule-100ml/",
+          "price": 1880,
+          "oldPrice": 2200,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "100ml",
+          "site": "Emart",
+          "url": "https://e-mart.com.bd/shop/skin1004-madagascar-centella-ampoule-100ml",
+          "price": 2500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-24"
         }
       ]
     }

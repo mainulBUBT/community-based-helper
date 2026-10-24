@@ -12139,5 +12139,4857 @@
     }
    ]
   }
+ ],
+ "https://www.startech.com.bd/oraimo-toast-opb-7100q-10000mah-power-bank": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "10000mAh (37Wh)"
+    },
+    {
+     "label": "Input",
+     "value": "Type-C: 5V/3A, 9V/2A, 12V/1.5A Micro-USB: 5V/2A, 9V/2A, 12V/1.5A"
+    },
+    {
+     "label": "Output",
+     "value": "USB-A (1): 5V/3A, 9V/2.22A, 12V/1.67A, 10V/2.25A USB-A (2): 5V/3A, 9V/2.22A, 12V/1.67A, 10V/2.25A Type-C: 5V/3A, 9V/2.22A, 12V/1.67A, 10V/2.25A Total Output: 5V/3A (Max)"
+    },
+    {
+     "label": "Interface",
+     "value": "2 x USB Type-A port 1 x micro USB 1x USB Type-C"
+    },
+    {
+     "label": "Button",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  },
+  {
+   "group": "Manufacture Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "12 Months Warranty"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-powernova-l11-10000mah-power-bank": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "10000mAh"
+    },
+    {
+     "label": "Input",
+     "value": "Type-C Cable: 5V-3A: 9V=2.22A; 12V-1.67A (20W Max), Type-C: 5V-3A: 9V=2.22A; 12V-1.67A (20W Max)"
+    },
+    {
+     "label": "Output",
+     "value": "Type-C Cable: 5V-3A; 9V~2.22A: 10V=2.25A: 12V~1.67A (22.5W Max), Type-C: 5V~3A; 9V-2.22A: 10V~225A; 12V~1.67A (22.5W Max), USB-A: 5V~3A: 9V~2.22A 10V-2.25A: 12V~1.67A (22.5W Max)"
+    },
+    {
+     "label": "Interface",
+     "value": "USB Type-C, USB"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black Blue"
+    }
+   ]
+  },
+  {
+   "group": "Manufacture Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "12 Months Warranty"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-powernova-q21-power-bank": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "20000mAh"
+    },
+    {
+     "label": "Input",
+     "value": "Input 1(Type-C): 5V⎓3A; 9V⎓2.22A; 12V⎓1.67A"
+    },
+    {
+     "label": "Output",
+     "value": "Output 1/2（USB-A）：5V⎓3A,9V⎓2.22A; 12V⎓1.67A; 10V⎓2.25A Output 3(Type-C): 5V⎓3A;9V⎓2.22A; 12V⎓1.67A; 10V⎓2.25A"
+    },
+    {
+     "label": "Interface",
+     "value": "USB Type-C, Dual USB"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  },
+  {
+   "group": "Manufacture Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "12 Months Warranty"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/baseus-extreme-ppjp312-20000mah-power-bank": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "20000mAh 3.7V/74Wh Lithium Polymer"
+    },
+    {
+     "label": "Input",
+     "value": "5V⎓2A; 9V⎓2A; 12V⎓1.5A 5V⎓2.4A; 9V⎓2A; 12V⎓1.5A"
+    },
+    {
+     "label": "Output",
+     "value": "USB-C Output: 5V⎓3A; 9V⎓2.22A; 12V⎓1.67A USB-A Output: 5V⎓3A USB-C Cable Output: 4.5V⎓5A; 5V⎓4.5A; 5V⎓3A; 9V⎓2A; 12V⎓1.5A iP Cable Output: 5V⎓2.4A; 9V⎓2.22A Total Output: 5V⎓3A"
+    },
+    {
+     "label": "Interface",
+     "value": "Input: USB-C / Micro USB Output: 2 × USB-A + 1 × USB-C"
+    },
+    {
+     "label": "Button",
+     "value": "Display: LED Digital Battery Indicator Power Delivery 3.0, Quick Charge 3.0 Output Power: 22.5W (Max)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "152.2×69.6×30.7 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "435g"
+    },
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Material",
+     "value": "ABS + PC Fireproof Shell"
+    }
+   ]
+  },
+  {
+   "group": "Manufacture Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "03 Months Warranty"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/anker-zolo-20000mah-power-bank": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "20,000mAh"
+    },
+    {
+     "label": "Input",
+     "value": "5V 3A / 9V 2.22A / 12V 1.66A"
+    },
+    {
+     "label": "Output",
+     "value": "5V 3A / 9V 2.22A / 10V 2.25A"
+    },
+    {
+     "label": "Interface",
+     "value": "Built-In USB-C Cable 1 x USB-C, 1 x USB-A"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "14.07 × 7.17 × 2.77 cm"
+    },
+    {
+     "label": "Weight",
+     "value": "392g"
+    }
+   ]
+  },
+  {
+   "group": "Manufacture Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "18-Months-Warranty"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/baseus-adaman-22-5w-20000mah-fast-charging-power-bank": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "Battery capacity: 20000mAh/3.7V 74Wh Rated capacity: 12000mAh"
+    },
+    {
+     "label": "Input",
+     "value": "iP: 5V 2A,9V 2A Max. Micro: 5V 2A,9V 2A Max. Type-C: 5V/3A 5.5V/3A（SCP） 9V/2A Max."
+    },
+    {
+     "label": "Output",
+     "value": "USB1: 4.5V 5A,5V 4.5A,5V 3A,9V 2A,12V 1.5A Max. USB2: 4.5V 5A,5V 4.5A,5V 3A,9V 2A,12V 1.5A Max. Type-C: 5V 3A,9V 2A,12V 1.5A Max. USB1+USB2: 5V 3A Max. USB1+Type-C: 5V 3A Max. USB2+Type-C: 5V 3A Max. Type-C+USB1+USB2 Total output power：5V 3A Max."
+    },
+    {
+     "label": "Interface",
+     "value": "USB, Type-C"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Balck"
+    }
+   ]
+  },
+  {
+   "group": "Manufacture Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "3-Month Warranty (Must Claim With Box & All Accessories)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-slice-link-pro-10000mah-power-bank": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "10000mAh (37Wh)"
+    },
+    {
+     "label": "Input",
+     "value": "Input 1 Micro-USB: 5V/2A, 9V/2A, 12V/1.5A Input 2 Type-C: 5V/2.4A, 9V/2A, 12V/1.5A"
+    },
+    {
+     "label": "Output",
+     "value": "Output 1 USB-A: 5V/3A Output 2 Type-C port: 5V/3A, 9V/2.22A, 12V/1.67A Output 3 Micro-USB Cable: 5V/3A Output 4 Type-C Cable: 5V/3A, 9V/2A, 4.5V/5A, 5V/4.5A, 12V/1.5A Output 5 Lightning Cable: 5V/2.4A, 9V/2.22A, 12V/1.6A The total maximum output is 5V/3A."
+    },
+    {
+     "label": "Interface",
+     "value": "2 x USB Type-A Port 2x USB Type-C Port 1 x Micro USB Cable 1 x Lightning Cable 1 x Type-C Cable"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Grey"
+    }
+   ]
+  },
+  {
+   "group": "Manufacture Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "12 Months Warranty"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-magpower-15-10000mah-wireless-power-bank": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "10000mAh (36Wh)"
+    },
+    {
+     "label": "Input",
+     "value": "(Type-C): 5V = 3A; 9V = 2.222A; 12V ==1.67A;"
+    },
+    {
+     "label": "Output",
+     "value": "(USB-A): 5V = 3A; 9V = 2.22A; 12V = 1.67A; 10V = 2.25A; (Type-C): 5V = 3A; 9V = 2.22A; 12V = 1.67A; 10V = 2.25A; Wireless Output: 5W/7.5W/10W/15W"
+    },
+    {
+     "label": "Interface",
+     "value": "2 x USB Type-C port 1 x USB Type-A"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  },
+  {
+   "group": "Manufacture Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "12 Months Warranty"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-proart-display-pa279cv-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "27 inches"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "4K UHD (3840 x 2160)"
+    },
+    {
+     "label": "Pixels Per Inch (PPI)",
+     "value": "163"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.155mm"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178°/ 178°"
+    },
+    {
+     "label": "Brightness",
+     "value": "Brightness (Typ.): 350cd/㎡"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "1073.7M (10 bit)"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "Color Space (sRGB) : 100%"
+    },
+    {
+     "label": "Response Time",
+     "value": "5ms (GTG)"
+    },
+    {
+     "label": "HDR",
+     "value": "HDR10"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    },
+    {
+     "label": "Others Features",
+     "value": "Display Viewing Area (H x V) : 596.74 x 335.66 mm"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Color Temperature Selection",
+     "value": "Yes (5 modes)"
+    },
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    },
+    {
+     "label": "G-Sync Support",
+     "value": "Yes"
+    },
+    {
+     "label": "Free Sync Support",
+     "value": "Yes"
+    },
+    {
+     "label": "HDCP",
+     "value": "Yes, 2.2"
+    },
+    {
+     "label": "Camera (Built In)",
+     "value": "Color Accuracy: △E< 2 ProArt Palette: Yes QuickFit: Yes PIP / PBP Technology: Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "Yes"
+    },
+    {
+     "label": "Speaker Details",
+     "value": "2Wx2"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Display Port",
+     "value": "DisplayPort 1.2 x1"
+    },
+    {
+     "label": "HDMI",
+     "value": "HDMI 2.0 x2"
+    },
+    {
+     "label": "USB Port(s)",
+     "value": "4x USB 3.2 Gen 1 Type-A"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB-C x 1 (DP Alt Mode)"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "Yes"
+    },
+    {
+     "label": "Others",
+     "value": "USB-C Power Delivery: 65W"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "Yes (+35° ~ -5°)"
+    },
+    {
+     "label": "Swivel",
+     "value": "Yes (+45° ~ -45°)"
+    },
+    {
+     "label": "Pivot",
+     "value": "Yes (+90° ~ -90°)"
+    },
+    {
+     "label": "Height Adjustment",
+     "value": "0~150mm"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100x100mm"
+    },
+    {
+     "label": "Security Locker",
+     "value": "Kensington Lock"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Phys. Dimension (W x H x D) : 61.40 x 52.35 x 22.78 cm (24.17\" x 20.61\" x 8.97\") Phys. Dimension without Stand (W x H x D) : 61.40 x 36.99 x 5.99 cm (24.17\" x 14.56\" x 2.36\") Box Dimension (W x H x D) : 68.00 x 51.60 x 16.10 cm (26.77\" x 20.31\" x 6.34\")"
+    },
+    {
+     "label": "Weight",
+     "value": "Net Weight: 8.6 kg (18.96 lbs) Net Weight without Stand: 5.7 kg (12.57 lbs) Gross Weight: 11.2 kg (24.69 lbs)"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "Power Consumption: < 32W Power Saving Mode: < 0.5W Power Off Mode: 0W (hard switch)"
+    },
+    {
+     "label": "Voltage",
+     "value": "100-240V, 50/60Hz"
+    },
+    {
+     "label": "Others",
+     "value": "Signal Frequency: Digital Signal Frequency : 29~160 KHz (H) / 40~60 Hz (V) Certificate: TÜV Flicker-free TÜV Low Blue Light Calman Verified Mac Compliance"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/lg-34u650a-b-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "34\""
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "WQHD (3440 x 1440)"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.2325 x 0.2325"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "21:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178˚(R/L), 178˚(U/D)"
+    },
+    {
+     "label": "Brightness",
+     "value": "300cd (Typ.)/240cd (Min.)"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000:1 (Min.), 700:1 (Typ.)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "100Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "1.07B"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "sRGB 99% (CIE1931)"
+    },
+    {
+     "label": "Response Time",
+     "value": "5ms (GtG at Faster)"
+    },
+    {
+     "label": "HDR",
+     "value": "HDR10"
+    },
+    {
+     "label": "Curvature",
+     "value": "3800R"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    },
+    {
+     "label": "Free Sync Support",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "Yes"
+    },
+    {
+     "label": "Speaker Output",
+     "value": "7W x 2"
+    },
+    {
+     "label": "Microphone (Built In)",
+     "value": "No"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Display Port",
+     "value": "Yes"
+    },
+    {
+     "label": "HDMI",
+     "value": "Yes"
+    },
+    {
+     "label": "USB Port(s)",
+     "value": "1 x USB-A (3ea/ver3.2 Gen1)"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "1 x USB-C(1ea/ver3.2 Gen1) 96W Power Delivery"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "Yes"
+    },
+    {
+     "label": "D-Sub",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "Yes"
+    },
+    {
+     "label": "Swivel",
+     "value": "Yes"
+    },
+    {
+     "label": "Height Adjustment",
+     "value": "Yes"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100 x 100 mm"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "with Stand: mm 816.7 x 535.2 x 230.0 (Up) 816.7 x 385.2 x 267.5 (Down) without Stand: mm 816.7 x 364.4 x 83.6"
+    },
+    {
+     "label": "Weight",
+     "value": "With Stand Weight: 10.1 kg Without Stand Weight: 7.3 kg"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "External Power"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "Power Consumption (Sleep Mode): Less than 0.5W Power Consumption (DC Off.): Less than 0.3W"
+    },
+    {
+     "label": "Voltage",
+     "value": "100-240 Vac, 50/60 Hz"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-rog-strix-xg27acmes-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "27-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "Fast IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "2K QHD (2560x1440)"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.233mm"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "(CR≧10, H/V) : 178°/ 178°"
+    },
+    {
+     "label": "Brightness",
+     "value": "400 cd/㎡(HDR, Peak) 350cd/㎡(Typ.)"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1300:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "255Hz OC (Above 144Hz)"
+    },
+    {
+     "label": "Color Support",
+     "value": "1073.7M (10 bit)"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "Color Space (sRGB): 133% Color Space (DCI-P3): 97%"
+    },
+    {
+     "label": "Response Time",
+     "value": "1ms(GTG), 0.3ms(min.)"
+    },
+    {
+     "label": "HDR",
+     "value": "HDR10"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    },
+    {
+     "label": "Others Features",
+     "value": "VESA AdaptiveSync Display 255Hz VESA DisplayHDR 400 AMD FreeSync Premium G-SYNC Compatible FSC MIX GameVisual GamePlus A.I. Assistant Technology: AI Visual A.I. Assistant Technology: Dynamic Crosshair A.I. Assistant Technology: Dynamic Shadow Boost Color Adjustment: 6-axis adjustment (R,G,B,C,M,Y) Gamma Adjustment: Yes (Support Gamma 1.8/2.0/2.2/2.4/2.6)"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Color Temperature Selection",
+     "value": "Yes (8 modes)"
+    },
+    {
+     "label": "Flicker Free",
+     "value": "TÜV Flicker-free"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "TÜV Low Blue Light"
+    },
+    {
+     "label": "G-Sync Support",
+     "value": "Yes"
+    },
+    {
+     "label": "Free Sync Support",
+     "value": "AMD FreeSync Premium"
+    },
+    {
+     "label": "HDCP",
+     "value": "2.3"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Display Port",
+     "value": "DisplayPort 1.4 x 1 (HBR3)"
+    },
+    {
+     "label": "HDMI",
+     "value": "HDMI(v2.1) x 1 (FRL)"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB-C x 1 (DP Alt Mode)"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "Yes (+20° ~ -5°)"
+    },
+    {
+     "label": "Swivel",
+     "value": "Yes (+45° ~ -45°)"
+    },
+    {
+     "label": "Pivot",
+     "value": "Yes (+90° ~ -90°)"
+    },
+    {
+     "label": "Height Adjustment",
+     "value": "0~110mm"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100x100mm"
+    },
+    {
+     "label": "Security Locker",
+     "value": "Kensington Lock"
+    },
+    {
+     "label": "Others",
+     "value": "1/4\" Tripod Socket: Yes"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Phys. Dimension (W x H x D): 61.48 x 50.34 x 18.87 cm (24.20\" x 19.82\" x 7.43\") Phys. Dimension without Stand (W x H x D): 61.48 x 36.71 x 6.30 cm (24.20\" x 14.45\" x 2.48\") Box Dimension (W x H x D): 84.00 x 18.6 x 51.5 cm (33.07\" x 7.32\" x 20.28\")"
+    },
+    {
+     "label": "Weight",
+     "value": "Net Weight: 5.96 kg (13.14 lbs) Net Weight without Stand: 3.87 kg (8.53 lbs) Gross Weight: 8.36 kg (18.43 lbs)"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "Power Consumption: <21W* Power Saving Mode: <0.5W Power Off Mode: <0.3W"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-proart-display-pa278qgv-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "27 Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "2K QHD (2560 x 1440)"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.233mm"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178°(H)/178°(V)"
+    },
+    {
+     "label": "Brightness",
+     "value": "Brightness (HDR, Peak) : 350 cd/㎡ Brightness (Typ.) : 350cd/㎡"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "Contrast Ratio (Max) : 3000:1 Contrast Ratio (Typ.) : 1500:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "1073.7M (10 bit)"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "100% sRGB"
+    },
+    {
+     "label": "Response Time",
+     "value": "5ms (GTG)"
+    },
+    {
+     "label": "HDR",
+     "value": "HDR10"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    },
+    {
+     "label": "Others Features",
+     "value": "Display Viewing Area (H x V) : 596.74 x 335.67 mm"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Color Temperature Selection",
+     "value": "Yes (9300K, 6500K, 5500K, 5000K, DCI-P3, M Model)"
+    },
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    },
+    {
+     "label": "Free Sync Support",
+     "value": "Yes"
+    },
+    {
+     "label": "HDCP",
+     "value": "Yes"
+    },
+    {
+     "label": "Others",
+     "value": "Trace Free Technology: Yes ProArt Preset: Native ProArt Preset: sRGB ProArt Preset: Adobe RGB ProArt Preset: P3 ProArt Preset: DICOM ProArt Preset: Rec.709 ProArt Preset: HDR ProArt Preset: User mode1 ProArt Preset: User mode2 Color Adjustment: RGB Tuning (Gain / Offset) Gamma Adjustment: Yes (Support Gamma 1.8/2.0/2.2/2.4/2.6) Color Accuracy: △E< 2 ProArt Palette: Yes QuickFit Plus: Yes PIP / PBP Technology: Yes HDCP: Yes, 1.4 VRR Technology: Yes (Adaptive-Sync) DisplayWidget: Yes, DisplayWidget Center Low Blue Light: Yes Multiple HDR Mode: Yes ASUS Power Sync: Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "Yes"
+    },
+    {
+     "label": "Speaker Details",
+     "value": "2Wx2"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Display Port",
+     "value": "DisplayPort 1.4 x 1"
+    },
+    {
+     "label": "HDMI",
+     "value": "HDMI(v2.1) x 1 (TMDS)"
+    },
+    {
+     "label": "USB Port(s)",
+     "value": "USB Hub: 4x USB 3.2 Gen 1 Type-A"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "Yes (+23° ~ -5°)"
+    },
+    {
+     "label": "Swivel",
+     "value": "Yes (+30° ~ -30°)"
+    },
+    {
+     "label": "Pivot",
+     "value": "Yes (+90° ~ -90°)"
+    },
+    {
+     "label": "Height Adjustment",
+     "value": "0~130mm"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100x100mm"
+    },
+    {
+     "label": "Security Locker",
+     "value": "Kensington Lock"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Phys. Dimension (W x H x D): 61.22 x 53.61 x 19.04 cm (24.10\" x 21.11\" x 7.50\") Phys. Dimension without Stand (W x H x D): 61.22 x 36.29 x 4.69 cm (24.10\" x 14.29\" x 1.85\")"
+    },
+    {
+     "label": "Weight",
+     "value": "Net Weight: 6.4 kg (14.11 lbs) Net Weight without Stand: 4.7 kg (10.36 lbs) Gross Weight: 9.3 kg (20.50 lbs)"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "Power Consumption: <16.94W Power Saving Mode: <0.5W Power Off Mode: 0W (hard switch)"
+    },
+    {
+     "label": "Voltage",
+     "value": "100-240V, 50/60Hz"
+    },
+    {
+     "label": "Others",
+     "value": "Certificate Energy Star EPEAT Gold TCO Certified TÜV Flicker-free TÜV Low Blue Light Calman Verified FSC MIX"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-proart-display-pa248qv-gen2-pa248qfv-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "24.1 Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "WUXGA (1920 x 1200)"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.270mm"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:10"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "(CR≧10, H/V) : 178°/ 178°"
+    },
+    {
+     "label": "Brightness",
+     "value": "Brightness (HDR, Peak) : 350 cd/㎡ Brightness (Typ.) : 350cd/㎡"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "Contrast Ratio (Max) : 3000:1 Contrast Ratio (Typ.) : 1500:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "100Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "16.7M"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "100% sRGB"
+    },
+    {
+     "label": "Response Time",
+     "value": "5ms (GTG)"
+    },
+    {
+     "label": "HDR",
+     "value": "HDR10"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Color Temperature Selection",
+     "value": "Yes (9300K, 6500K, 5500K, 5000K, DCI-P3, M Model)"
+    },
+    {
+     "label": "Flicker Free",
+     "value": "TÜV Flicker-free"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "TÜV Low Blue Light"
+    },
+    {
+     "label": "G-Sync Support",
+     "value": "Yes"
+    },
+    {
+     "label": "Free Sync Support",
+     "value": "Yes"
+    },
+    {
+     "label": "HDCP",
+     "value": "Yes, 1.4"
+    },
+    {
+     "label": "Others",
+     "value": "Trace Free Technology : Yes ProArt Preset : User mode2 User mode1 HDR Rec.709 P3 sRGB Native Color Adjustment : RGB Tuning (Gain / Offset) Gamma Adjustment : Yes (Support Gamma 1.8/2.0/2.2/2.4/2.6) Auto Rotation:Yes, supported by DisplayWidget Center Color Accuracy : △E< 2 ProArt Palette : Yes QuickFit Plus : Yes HDCP : Yes, 1.4 VRR Technology : Yes (Adaptive-Sync) DisplayWidget : Yes, DisplayWidget Center Low Blue Light : Yes Multiple HDR Mode : Yes ASUS Power Sync : Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "Yes"
+    },
+    {
+     "label": "Speaker Details",
+     "value": "2Wx2"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Display Port",
+     "value": "DisplayPort 1.2 x 1"
+    },
+    {
+     "label": "HDMI",
+     "value": "HDMI(v2.1) x 1 (TMDS)"
+    },
+    {
+     "label": "USB Port(s)",
+     "value": "USB Hub : 4x USB 3.2 Gen 1 Type-A"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "1x Earphone Jack"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "Yes (+23° ~ -5°)"
+    },
+    {
+     "label": "Swivel",
+     "value": "Yes (+30° ~ -30°)"
+    },
+    {
+     "label": "Pivot",
+     "value": "Yes (+90° ~ -90°)"
+    },
+    {
+     "label": "Height Adjustment",
+     "value": "0~130mm"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100x100mm"
+    },
+    {
+     "label": "Security Locker",
+     "value": "Kensington Lock"
+    },
+    {
+     "label": "Others",
+     "value": "Ambient Light Sensor"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Phys. Dimension (W x H x D) : 53.18 x 53.13 x 19.04 cm (20.94\" x 20.92\" x 7.50\") Phys. Dimension without Stand (W x H x D) : 53.18 x 35.00 x 3.97 cm (20.94\" x 13.78\" x 1.56\") Box Dimension (W x H x D) : 61.0 x 41.4 x 14.0 cm (24.02\" x 16.30\" x 5.51\")"
+    },
+    {
+     "label": "Weight",
+     "value": "Net Weight : 5.4 kg (11.90 lbs) Net Weight without Stand : 3.7 kg (8.16 lbs) Gross Weight : 7.9 kg (17.42 lbs)"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "Power Consumption : <11.03W Power Saving Mode : <0.5W Power Off Mode : 0W (hard switch)"
+    },
+    {
+     "label": "Voltage",
+     "value": "100-240V, 50/60Hz"
+    },
+    {
+     "label": "Others",
+     "value": "Certificate FSC MIX Calman Verified TÜV Low Blue Light TÜV Flicker-free TCO Certified EPEAT Gold Energy Star"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/lg-24u631a-b-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "23.8-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "QHD (2560 x 1440)"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.2058 x 0.2058"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178º(R/L), 178º(U/D)"
+    },
+    {
+     "label": "Brightness",
+     "value": "Brightness (Min.) [cd/m²]: 200 Brightness (Typ.) [cd/m²]: 250"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000:1 (Typ.) 700:1 (Min.)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "100Hz"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "sRGB 99% (CIE1931) (Typ.) sRGB 95% (CIE1931) (Min.)"
+    },
+    {
+     "label": "Response Time",
+     "value": "5ms (GTG)"
+    },
+    {
+     "label": "HDR",
+     "value": "HDR10"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "G-Sync Support",
+     "value": "Dynamic Action Sync"
+    },
+    {
+     "label": "Others",
+     "value": "LG Switch: Yes Auto Input Switch: Yes Black Stabilizer: Yes Color Weakness Mode: Yes Crosshair: Yes Dynamic Action Sync: Yes Flicker Safe: Yes HDR Effect: Yes Motion Blur Reduction Technology: Yes Reader Mode: Yes Smart Energy Saving: Yes Super Resolution+: Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Microphone (Built In)",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "1x HDMI 2.0"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "1 x USB Type-C (15 W Power Delivery)"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "Yes"
+    },
+    {
+     "label": "D-Sub",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "-5~20º"
+    },
+    {
+     "label": "Height Adjustment",
+     "value": "N/A"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100 x 100 (mm)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Shipping Dimensions (WxHxD): 613 x 400 x 126 mm With Stand (WxHxD): 539.4 x 413.6 x 215 mm Without Stand (WxHxD): 539.4 x 321.3 x 45.7 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "Shipping Weight: 4.8 kg With Stand Weight: 3.6 kg Without Stand Weight: 2.8 kg"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "External Power(Adapter)"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "DC Off (Max): Less than 0.3W Power Save/Sleep Mode (Max): Less than 0.5W Power Consumption (On-Mode) 17W Power Consumption (On-Mode) (ErP) 16W"
+    },
+    {
+     "label": "Voltage",
+     "value": "100~240V (50/60Hz)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/amazfit-bip-5-unity-bluetooth-calling-smart-watch": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.91\" TFT"
+    },
+    {
+     "label": "Battery",
+     "value": "300 mAh (rated value) Battery Life: Typical Usage Scenario Battery Life: Up to 11 days Heavy Usage Scenario Battery Life: Up to 5 days Battery Saver Mode Battery Life: Up to 26 days Charging Method: Magnetic charging cable"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.2 BLE"
+    },
+    {
+     "label": "Material",
+     "value": "Stainless Steel Middle Frame"
+    },
+    {
+     "label": "OS",
+     "value": "Android 7.0 and above, iOS 14.0 and above"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Water-resistance Grade: IP68 Touchscreen: 2.5D tempered glass + anti-fingerprint coating"
+    },
+    {
+     "label": "Sensor",
+     "value": "Health: BioTracker™ PPG biometric sensor (supports blood-oxygen) Movement: 3-axis acceleration sensor"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Zepp App"
+    }
+   ]
+  },
+  {
+   "group": "Exterior",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "45.8x37.08x10mm"
+    },
+    {
+     "label": "Weight",
+     "value": "25g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/amazfit-bip-6-smart-watch": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.97\" AMOLED Resolution: 390 × 450 pixels Brightness: Up to 2,000 nits (peak) PPI: 302 Touchscreen: Tempered glass + anti-fingerprint coating"
+    },
+    {
+     "label": "Battery",
+     "value": "340 mAh (rated value) Battery Life: Typical Use: Up to 14 days Heavy Use: Up to 6 days Battery Saver Mode: Up to 26 days GPS Mode: Up to 32 hours"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.2 BLE"
+    },
+    {
+     "label": "Material",
+     "value": "Aluminum alloy frame, fiber-reinforced polymer case 22mm liquid silicone (130-195mm wrist fit)"
+    },
+    {
+     "label": "Sensor",
+     "value": "24/7 heart rate, SpO₂, sleep tracking"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Water-resistance Grade: 5 ATM GPS: 5 satellite systems"
+    },
+    {
+     "label": "OS",
+     "value": "Android 7.0 and above, iOS 14.0 and above"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Zepp App"
+    },
+    {
+     "label": "Others",
+     "value": "140+ Sports Modes"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "46.3 × 40.2 × 10.45 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "27.9g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-watch-se-2nd-gen": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "S8 SiP with 64-bit dual-core processor"
+    },
+    {
+     "label": "Display",
+     "value": "1.78 inches Retina LTPO OLED display 1000 nits brightness"
+    },
+    {
+     "label": "Memory",
+     "value": "1GB"
+    },
+    {
+     "label": "Battery",
+     "value": "All-day battery life, up to 18 hours of normal use Built-in rechargeable lithium-ion battery Up to 80% charge in about 1.5 hours"
+    },
+    {
+     "label": "Connectivity",
+     "value": "L1 GPS, GNSS, Galileo, and QZSS LTE and UMTS Wi-Fi 4 (802.11n) Bluetooth 5.3 Apple Pay GymKit Support for Apple Watch For Your Kids International roaming"
+    },
+    {
+     "label": "Material",
+     "value": "Aluminium"
+    },
+    {
+     "label": "OS",
+     "value": "watchOS"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Water resistance: 50m (swimproof)"
+    },
+    {
+     "label": "Sensor",
+     "value": "Second-generation optical heart sensor Compass Always-on altimeter High-g accelerometer High dynamic range gyroscope Ambient light sensor"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Apple Music, Apple Pay, Medications app, Mindfulness app, Noise app, Sleep app including sleep stages, Heart Rate app"
+    },
+    {
+     "label": "Others",
+     "value": "Hardware and Buttons: Digital Crown Microphone Side button Speaker/air vent Optical heart sensor Controls: Digital Crown with haptic feedback Side button Siri Safety: Emergency SOS International emergency calling Crash Detection4 Fall Detection Noise monitoring Backtrack Health and Wellness: High and low heart rate notifications Irregular rhythm notifications"
+    }
+   ]
+  },
+  {
+   "group": "Exterior",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "44 x 38 x 10.7 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "32.9 g"
+    },
+    {
+     "label": "Color",
+     "value": "Midnight"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/haylou-solar-lite-2": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.43-inch (466 x 466 pixels) AMOLED 2.5D Curved Glass"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery capacity: 300mAh Battery life: Approx. Up to 30 days Typical Use: ~17 days (with all-day heart rate monitoring) Heavy Use: ~12 days"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth v5.4"
+    },
+    {
+     "label": "Material",
+     "value": "Frame Material: High-Gloss Polished Zinc Alloy"
+    },
+    {
+     "label": "Sensor",
+     "value": "Accelerometer, Gyroscope, Optical Heart Rate Sensor"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "1ATM Water Resistant"
+    },
+    {
+     "label": "OS",
+     "value": "Android 9.0+, iOS 13.4.0+"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Haylou Fun"
+    },
+    {
+     "label": "Others",
+     "value": "200+ Cloud-based watch faces Sports Modes: 150+ Bluetooth Calling Notifications: Display for calls, SMS, and app alerts Voice Assistant: Access phone's AI assistant (Siri/Google Assistant)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black, Silver"
+    },
+    {
+     "label": "Dimension",
+     "value": "51.6 x 45.5 x 9.8 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "41g (with strap)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/haylou-watch-4": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.93\" HD TFT 2.5D curved glass"
+    },
+    {
+     "label": "Battery",
+     "value": "380mAh"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Battery Capacity: 380mAh Battery Life: Daily Use: ~7 days (typical mode) Basic Mode: Up to 15 days GPS Mode: ~24 hours Charging: Magnetic charging cable"
+    },
+    {
+     "label": "Sensor",
+     "value": "Heart rate, SpO2, stress, sleep, menstrual cycle"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "GPS Support: BDS, GPS, Galileo, GLONASS, QZSS Sync Apps: Haylou Fun, Strava"
+    },
+    {
+     "label": "OS",
+     "value": "Android 9.0+, iOS 13.0+"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Haylou Fun"
+    },
+    {
+     "label": "Others",
+     "value": "Heart Rate Monitoring: 24/7 tracking with alerts Blood Oxygen (SpO2): Real-time monitoring Sleep Tracking: Deep, light, REM analysis Stress Monitoring: All-day stress levels Menstrual Cycle Tracking: Fertility & period logging Activity Tracking: Steps, calories, distance Sports Modes: 120+ (running, cycling, swimming*, hiking, etc.) Water Resistance: IP68 (rain & sweat-proof, not for swimming) Bluetooth Calling: Make/answer calls directly SOS Emergency Call: Quick emergency contact alert AI Voice Assistant: Voice commands for calls, weather, etc. Notifications: Calls, SMS, app alerts (WhatsApp, Facebook, etc.) Music Control: Play/pause/skip tracks Remote Camera Control: Shake to take photos Find My Phone/Watch: Anti-loss feature Watch Faces: 100+ (customizable & downloadable) View Modes: 8 layout options (list, grid, honeycomb) Widgets: Quick access to weather, health stats, etc. Games & Tools: Stopwatch, timer, calculator, flashlight Do Not Disturb Mode: Customizable settings"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "47.6 × 38.8 × 11.8 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "45g (including strap)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/huawei-watch-fit-3-amoled-smartwatch": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.82 inches AMOLED 480 × 408 pixels, PPI 347"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery Life: The 10-day maximum battery life The 7-day typical battery life The 4-day battery life with AOD enabled"
+    },
+    {
+     "label": "Connectivity",
+     "value": "2.4 GHz, Bluetooth 5.2 supporting BR and BLE"
+    },
+    {
+     "label": "Material",
+     "value": "Aluminum alloy"
+    },
+    {
+     "label": "Sensor",
+     "value": "9-axis IMU sensor (Accelerometer sensor, Gyroscope sensor, Magnetometer sensor) Optical heart rate sensor Ambient light sensor"
+    },
+    {
+     "label": "OS",
+     "value": "Android 8.0 or later iOS 13.0 or later"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "43.2 × 36.3 × 9.9 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "Approximately 26 g (without the strap)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/huawei-watch-gt-4-smart-watch": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.43 inches AMOLED color screen 466 × 466 pixels, PPI 326"
+    },
+    {
+     "label": "Battery",
+     "value": "14-day battery life for maximum usage 8-day battery life for regular usage 4-day battery life with Always On Display enabled"
+    },
+    {
+     "label": "Connectivity",
+     "value": "NFC Supported 2.4 GHz, supports BT5.2 and BR + BLE"
+    },
+    {
+     "label": "Material",
+     "value": "Watch Case: Stainless steel Watch Strap: Black Fluoroelastomer Strap Grey Stainless Steel Strap Green Composite Strap Brown Leather Strap"
+    },
+    {
+     "label": "Sensor",
+     "value": "Accelerometer sensor Gyroscope sensor Magnetometer sensor Optical heart rate sensor Barometer sensor Temperature sensor"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "5 ATM water-resistant Bluetooth Calling Wireless charging"
+    },
+    {
+     "label": "OS",
+     "value": "Android 8.0 or later iOS 13.0 or later"
+    },
+    {
+     "label": "Others",
+     "value": "Home Button (Rotating Crown) and Side Button Speaker Microphone"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "46 mm × 46 mm × 10.9 mm Wrist Size: 140-210 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "Approximately 48 g (strap excluded)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/huawei-watch-gt-6": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.47/1.32 inch AMOLED Ultra-bright screen with 3,000 nits peak brightness"
+    },
+    {
+     "label": "Battery",
+     "value": "Up to 21/14 days Battery Life Fast-charging Up to 40/25 Hours Continuous GPS"
+    },
+    {
+     "label": "Connectivity",
+     "value": "NFC Supported Bluetooth 2.4 GHz, supports BT6.0 and BR + BLE GNSS GPS (L1 + L5 Dual-band)/GLONASS/BeiDou (B1I + B1C + B2a Tri-band)/GALILEO (E1 + E5a Dual-band)/QZSS (L1 + L5 Dual-band)/NavIC"
+    },
+    {
+     "label": "Material",
+     "value": "Stainless steel"
+    },
+    {
+     "label": "Sensor",
+     "value": "Accelerometer sensor Gyroscope sensor Magnetometer sensor Optical heart rate sensor Barometer sensor Temperature sensor Ambient light sensor"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "5 ATM & IP69 water-resistant Bluetooth Calling Wireless charging Speaker Microphone"
+    },
+    {
+     "label": "OS",
+     "value": "Android 9.0 or later iOS 13.0 or later HarmonyOS 6.0"
+    },
+    {
+     "label": "Others",
+     "value": "Home Button (Rotating Crown) and Side Button"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "46 mm × 46 mm × 10.95 mm/ 41.3 mm × 41.3 mm × 9.99 mm Wrist Size: 140-210 mm (46mm) Brown/White/Lilac: 120-180 mm (41mm) Gold: 130-190 mm (41mm) Black: 120-190 mm (41mm)"
+    },
+    {
+     "label": "Weight",
+     "value": "Approximately 51.3 g (strap excluded)/ Approximately 37.5 g (strap excluded)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/imilab-imiki-frame-2-pro-smart-watch": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "2.01 inches 410 x 502 pixels Edge‑to‑edge display Up to 1000 nits maximum brightness Always‑On display"
+    },
+    {
+     "label": "Battery",
+     "value": "Capacity: 400mAh 15 Days of maximum usage Up to 5 days in AOD Mode Magnetic Fast Charger to USB-B Cable Charge time: 2 hours to 100%"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth Version: BLE 5.3"
+    },
+    {
+     "label": "Material",
+     "value": "Zinc alloy / PC case"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Heart Rate 24/7 Health Monitoring Blood Oxygen Monitoring Emotional Testing Womens Health Smart Sleep Monitoring Breathing Exercises Monitoring Message Notifications 170+ Sports Modes 5ATM Waterproof 6 Satellite Positioning Systems"
+    },
+    {
+     "label": "OS",
+     "value": "Android 5.0 or Later, iOS 9 or Later"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Imiki Watch"
+    },
+    {
+     "label": "Others",
+     "value": "Operating Temperature Range: -4° to 140° F (-20° to 60° C)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black, Titanium"
+    },
+    {
+     "label": "Dimension",
+     "value": "52.50 x 41.45 x 13.50mm"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/imilab-imiki-st2-bluetooth-calling-smart-watch": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.96-inch 240*296 pixels IPS Display"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery Capacity: 250mAh Battery Life: Up to 5 days battery life for normal daily use and Standby is 14 days. Charging: Up to 2 hours Charging Cable: Yes"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth"
+    },
+    {
+     "label": "Material",
+     "value": "Body Material: Metal Strap Type: Silicone or Magnetic"
+    },
+    {
+     "label": "Sensor",
+     "value": "Heart rate sensor, SpO2 sensor, 3-axis, accelerometer, PPG sensor"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Bluetooth Calling IP68 Water Proof"
+    },
+    {
+     "label": "OS",
+     "value": "Support IOS 8.0+ and Android 4.4+"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "imiki Lite"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black, Blue, Gold"
+    },
+    {
+     "label": "Dimension",
+     "value": "49.72*40.84*12.45mm Strap Size: 22mm"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/kieslect-actor-smart-watch": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "Type: LTPO AMOLED++ (Advanced AMOLED technology) Size: 1.6 inches (world's largest in its category) Resolution: 480 x 480 pixels Brightness: 1000 nits (peak) Refresh Rate: 60 Hz Protection: High Hardness Glass"
+    },
+    {
+     "label": "Battery",
+     "value": "Capacity: 500 mAh Battery Life: Up to 15 days in typical use Charging Method: Magnetic Charging Time: Less than 2.5 hours"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.3 + BLE (Bluetooth Low Energy)"
+    },
+    {
+     "label": "Material",
+     "value": "Bezel Material: Ceramic (diamond-like hardness, maintains appearance for up to 10 years) Body Material: Aluminum Crown: Metal, multifunctional (menu swiping, volume adjustment, task switching)"
+    },
+    {
+     "label": "Sensor",
+     "value": "Heart Rate, SpO2 (blood oxygen), Stress, and others"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "GPS: Advanced 6-satellite positioning system 480% increased signal strength 30% improved positioning accuracy Dual-frequency antenna with Smart Trajectory Correction algorithm Sports Modes: 150+ professional sports algorithms Heart Rate Alarm: Customizable abnormal heart rate warning Health Data: Weekly/Monthly/Annual reports Bluetooth Calling: Clear and stable Music Storage & Playback: Independent from phone, compatible with wireless earphones Customizable Watch Faces: 200+ available for download Personal Photo Upload: Ability to use personal photos as watch faces Video-Like Watch Faces: Driven by 2.5D GPU (available from Nov 2024 via OTA) Data Sharing: Compatible with Strava, Google Fit, and Apple Health Measurement Units: Adjustable between metric and imperial systems Future Applications: Music, maps, social media (available through OTA updates) Monthly OTA Upgrades: Ensuring long-term reliability and feature additions"
+    },
+    {
+     "label": "Water Resistant",
+     "value": "Compatible with both Android and iOS device"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "KIESLECT"
+    },
+    {
+     "label": "Others",
+     "value": "Single Straps: Black Silicone"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "46.5 x 46.5 x 12.2 mm"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/kospet-orb-2": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "Size: 1.43″ Type: AMOLED Resolution: 466 × 466 pixels PPI: 461 Peak Brightness: Up to 1,000 nits Protection: Corning Gorilla Glass"
+    },
+    {
+     "label": "Memory",
+     "value": "64MB Nand Flash 8MB SRAM"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery Capacity: 500mAh Battery Type: Pure Cobalt Battery Charging Method: Magnetic Charging Cable Theoretical Charging Duration: Approx. 2 Hours Typical Usage Scenario Battery Life: 13-16 Days Heavy Usage Scenario Battery Life: 9-12 Days AOD Mode Battery Life: 4-6 Days Continuous GPS Usage Battery Life: 21-25 Hours"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Material",
+     "value": "Body Material: Zinc Alloy Bezel + Polymer Body Case Back Material: Polymer Strap Material: Liquid Silicone"
+    },
+    {
+     "label": "Sensor",
+     "value": "Health: VC9213 4PD Acceleration Sensor, GPS, Galileo, GLONASS, BeiDou, QZSS, NavIC (IRNSS), Geomagnetic Sensor 24H Health Monitoring: Heart Rate, Blood Oxygen, Stress Level, Mood One-tap Measurement: Heart Rate, Blood Oxygen, Stress Level, Mood"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Built-in Speaker/Microphone Dual-band six-system GPS Built-in walkie-talkie Built-in LED flashlight"
+    },
+    {
+     "label": "OS",
+     "value": "Android 7.0 and above, iOS 14.0 and above"
+    },
+    {
+     "label": "Water Resistant",
+     "value": "5 ATM & IP69 Water-resistance Grade"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Apexmove App Syncs with Apple Health & Strava"
+    },
+    {
+     "label": "Others",
+     "value": "37 languages 160+ freestyle training modes 13 ApexMotion Sports Modes"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black, Silver"
+    },
+    {
+     "label": "Dimension",
+     "value": "48mm × 48mm × 12.7mm"
+    },
+    {
+     "label": "Weight",
+     "value": "41g (without strap)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/kospet-orb-smartwatch": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "Type: 1.43\" AMOLED Resolution: 466 × 466 pixels Brightness: 1000 nits (peak) Protection: Corning® Gorilla® Glass + anti-fingerprint coating"
+    },
+    {
+     "label": "Processor",
+     "value": "Dual-core Actions MCU"
+    },
+    {
+     "label": "Battery",
+     "value": "Capacity: 350mAh Typical use: 8–12 days Standby: Up to 45 days AOD Mode: 2–3 days Charging: Magnetic dock (2–2.5 hours)"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Material",
+     "value": "Shape: Round Material: Aluminum alloy case, fiber-reinforced polymer back Strap: Liquid silicone (22mm, skin-friendly, breathable)"
+    },
+    {
+     "label": "Sensor",
+     "value": "Accelerometer, optical heart rate, SpO₂"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Water Resistance: IP68 (rain, sweat, splashes)"
+    },
+    {
+     "label": "OS",
+     "value": "Android 4.5+, iOS 8.0+"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "ApexMove (training plans, watch faces)"
+    },
+    {
+     "label": "Others",
+     "value": "200+ customizable options 24/7 Monitoring: Heart rate, SpO₂, sleep (REM tracking), stress Sports Modes: 8 core modes + 180+ training types Auto Detection: Walking, running, cycling, rowing, elliptical, idle"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Graphite Grey"
+    },
+    {
+     "label": "Dimension",
+     "value": "46 × 46 × 11.5 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "100g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/kospet-tank-t3-ultra-bluetooth-calling-smartwatch": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.43\" AMOLED, 466x466 pixel"
+    },
+    {
+     "label": "Processor",
+     "value": "ATS3085L"
+    },
+    {
+     "label": "Memory",
+     "value": "256M NOR"
+    },
+    {
+     "label": "Battery",
+     "value": "470mAh Pure Cobalt Battery Daily Use: 10-15 Days, Always-On Display: 2-3 Days"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Material",
+     "value": "Full Metal Bezel Stainless Steel Back Cover Four Buttons with Aluminum Alloy Liquid silica gel strap"
+    },
+    {
+     "label": "Sensor",
+     "value": "G-Sensor: STK8325 3-axis acceleration sensor Heart Rate Sensor: VC9202+VP60 A2, (living-body recognition & dark-skin detection)"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Waterproof: 5 ATM & IP69K Sports Mode: 130+ Sports Modes & Smart Recognition Supports Always on Display"
+    },
+    {
+     "label": "OS",
+     "value": "Android 5.1 & iOS 11.0 and above"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "KOSPET FIT"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "52.7x54x14.6mm"
+    },
+    {
+     "label": "Weight",
+     "value": "81.8g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/kospet-tank-t4c": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.5\", AMOLED, (466 × 466), 438 PPI"
+    },
+    {
+     "label": "Memory",
+     "value": "1Gb Nand Flash Storage Memory: 8MB SRAM"
+    },
+    {
+     "label": "Battery",
+     "value": "Capacity: 500mAh Battery Type: Pure Cobalt Battery Charging Method: Magnetic Charging Dock Theoretical Charging Duration: Approx. 2 Hours Typical Usage Scenario Battery Life: Up to 12-15 Days Heavy Usage Scenario Battery Life: Up to 8-10 Days AOD Mode Battery Life: Up to 3-5 Days Continuous GPS Usage Battery Life: Up to 18-21 Hours"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Material",
+     "value": "Body Material: Stainless Steel Bezel + Zinc Alloy Body"
+    },
+    {
+     "label": "Sensor",
+     "value": "Acceleration Sensor, Geomagnetic Sensor, Barometric Altimeter, Ambient Light Sensor"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "5 ATM & IP69K Water-Resistance Bluetooth Calls 170+ Sports Modes Smart Recognition"
+    },
+    {
+     "label": "OS",
+     "value": "Android 5.1 & iOS 10.0 and Above"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "KOSPET FIT"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black, Silver"
+    },
+    {
+     "label": "Dimension",
+     "value": "49.5mm×50.5mm×13.05mm"
+    },
+    {
+     "label": "Weight",
+     "value": "60.7g (Without Strap)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-watch-5-lite-smart-watch": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "2.01 TFT 240x280"
+    },
+    {
+     "label": "Battery",
+     "value": "300mAh"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth version 5.3"
+    },
+    {
+     "label": "Material",
+     "value": "ABS /PC"
+    },
+    {
+     "label": "Sensor",
+     "value": "Health Monitoring"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Heart rate, blood oxygen, stress, sleep, women's health"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Oraimo Health App"
+    },
+    {
+     "label": "Others",
+     "value": "100+ Sports modes AI-Generated Watch Faces 1ATM Water and Dust Resistance Bluetooth Calling Battery Capacity: 300mAh Charging Time: 3H Standby: 28 Days Playtime(Moderate Use): 7 Days"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "47×50mm 39 × 55mm 12× 0mm"
+    },
+    {
+     "label": "Weight",
+     "value": "43.6gm (With Strap) 25.7gm (Without Strap)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-watch-6": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "2.04-inch TFT Touch Display"
+    },
+    {
+     "label": "Battery",
+     "value": "300mAh 33 Days Standby Time"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth"
+    },
+    {
+     "label": "Material",
+     "value": "Silicon"
+    },
+    {
+     "label": "Sensor",
+     "value": "Health Monitoring, Blood Monitoring, Pressure"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "24 Hour Health Monitor 100+ Sports Mode One Click Health Measurement"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Oraimo Health App"
+    },
+    {
+     "label": "Others",
+     "value": "Oraimo AI AI-Generated Watch Faces"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Chrome"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-watch-nova-2r": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.43'' AMOLED (466*466)"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery Type: Lithium polymer Battery Capacity: 300mAh Charging Time: 3 Hours Using Time: Up to 10 Days Standby Time: 35 Days"
+    },
+    {
+     "label": "Material",
+     "value": "ABS/PC/zinc alloy"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "1ATM"
+    },
+    {
+     "label": "Others",
+     "value": "AI-Generated Watch Faces, Anti-Scratch Panda Glass, Glass Oxygen & Heart Rate Monitor"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Dark Chorme"
+    },
+    {
+     "label": "Dimension",
+     "value": "46.4*46.4*10.4mm"
+    },
+    {
+     "label": "Weight",
+     "value": "65.1g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/redmi-watch-6-lite": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.96\" Square AMOLED display Up to 1500nits peak brightness Always On Display (AOD) Resolution: (410 × 502) pixels, 332PPI 73.2% Screen to Body Ratio"
+    },
+    {
+     "label": "Battery",
+     "value": "Capacity: 470mAh Light Usage: Up to 18 days Normal Usage: Up to 12 days Heavy Usage: Up to 6 days"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Sensor",
+     "value": "Heart rate sensor (with blood oxygen sensor) Accelerometer Gyroscope Ambient light sensor Electronic compass"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Microphone: supported Speaker: supported Supports Bluetooth Calling Built-in GNSS: Supported"
+    },
+    {
+     "label": "OS",
+     "value": "Xiaomi HyperOS, Compatibility: Android 8.0 and above, iOS 14.0 and above"
+    },
+    {
+     "label": "Water Resistant",
+     "value": "5 ATM water resistant"
+    },
+    {
+     "label": "Others",
+     "value": "150+ Sports modes"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black, Steel Gray"
+    },
+    {
+     "label": "Dimension",
+     "value": "47.1mm x 39.6mm x 9.9mm TPU strap Length: 135–205mm"
+    },
+    {
+     "label": "Weight",
+     "value": "27.8g (without inbox strap)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/weofly-active-3-smart-watch": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.82-inch IPS HD screen Resolution: 320x382px Brightness: 600 nits"
+    },
+    {
+     "label": "Battery",
+     "value": "350mAh Battery Life: Up to 7 Days Charging Time - 2 Hours"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Material",
+     "value": "ABS+PC"
+    },
+    {
+     "label": "OS",
+     "value": "Weofly Fit"
+    },
+    {
+     "label": "Water Resistant",
+     "value": "IP68/1ATM"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Weofly Fit app"
+    },
+    {
+     "label": "Others",
+     "value": "Heart Rate, Blood Oxygen, Sleep, Stress, Breathe Practise"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "45 x 38 x 10.8mm"
+    },
+    {
+     "label": "Weight",
+     "value": "36g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/weofly-conquer-3-smart-watch": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.43-inch AMOLED screen Resolution: 466x466px Brightness: 650 nit Touchscreen: Panda High-Hardness Glass"
+    },
+    {
+     "label": "Battery",
+     "value": "550mAh Battery Life: Up to 15 Days/ Heavvy Use-7 Days Charging Time - 2.5 Hours"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Material",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Sensor",
+     "value": "Health VC9213-4PD sensor, GPS, Galileo, GLONASS, BeiDou, QZSS, Geomagnetic Sensor, Barometric, Altimeter"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Military-Grade Quality 5 ATM Waterproof 178+ Sports Modes, 100+ Watch Faces 24/7 Health Monitoring, iOS 9.0+ / Android 4.4+ Compatibility, Bluetooth call Health & Wellness Monitoring Heart Rate Blood Oxygen Stress Level Mood/Emotion Heart Rat Blood Oxygen (SpO₂) Stress Level Mood/Emotion Yes Sleep Stages (including REM) Naps Sleep Schedule Abnormally High & Low Heart Rate Menstrual Cycle Tracking Breathing Exercise Outdoor Features GPS Positioning Flashlight Compass Barometric Altimeter Altitude Calibration Route Records Route Deviation Reminders Route Back Offline Maps Real-time Navigation Training Features 24-Hr Activity Tracking (Calories, Steps, Distance) Smart Recognition: Cycling，Walking, Running, Elliptical machine, Rowing machine"
+    },
+    {
+     "label": "OS",
+     "value": "Weofly Fit"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Weofly Fit app"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black, Silver"
+    },
+    {
+     "label": "Dimension",
+     "value": "47.5 x 47.5 x 13.7mm"
+    },
+    {
+     "label": "Weight",
+     "value": "74g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-redmi-watch-5-smart-watch": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "Resolution: 432 × 514 pixels， PPI 324 Ultra-large 2.07\" Square AMOLED display Screen-to-body ratio: 82% 60Hz refresh rate Brightness: HBM 1500 nits"
+    },
+    {
+     "label": "Memory",
+     "value": "164MB"
+    },
+    {
+     "label": "Battery",
+     "value": "Typical usage time: 24 days Capacity: 550mAh"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "OS",
+     "value": "Xiaomi HyperOS, Compatibility: only supports smartphones with Android 8.0 and above, iOS 12.0 and above"
+    },
+    {
+     "label": "Sensor",
+     "value": "Heart rate sensor (with blood oxygen sensor) | Accelerometer | Gyroscope | Ambient light sensor | Electronic compass"
+    },
+    {
+     "label": "Others",
+     "value": "Built-in GNSS: Supported Water resistance rating: 5ATM Speaker: Supported Microphone: 2 mics"
+    }
+   ]
+  },
+  {
+   "group": "Exterior",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "47.5mm × 41.1mm × 11.3mm"
+    },
+    {
+     "label": "Weight",
+     "value": "33.5g approx. (without inbox strap)"
+    },
+    {
+     "label": "Color",
+     "value": "Obsidian Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-watch-s4": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.43-inch AMOLED Resolution: 466x466 pixels, 326 PPI HBM (High Brightness Mode): 1500 nits"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery: 486mAh Battery Life: Up to 15 days (typical usage) Fast Charging: 5 mins → 2 days of use Charging Type: 2-pin magnetic dock"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Material",
+     "value": "Watch: Aluminum alloy frame Band Strap: Fluororubber strap"
+    },
+    {
+     "label": "Sensor",
+     "value": "Heart rate sensor (with blood oxygen sensor) Accelerometer Gyroscope Ambient light sensor Electronic compass Barometer sensor Hall sensor"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "Built-in GNSS: Supported GPS | Galileo | Glonass | BeiDou | QZSS Smart Features Xiaomi Smart Hub (control Xiaomi Home devices*) Remote Camera Control Find My Phone Gesture Controls (quick actions via hand movements) Compatibility: Supports smartphones with Android 8.0 and above, or iOS 14.0 and above. Speaker: Supported Microphone: 2 mics NFC: Supported *NFC availability may vary by region. DurabilityL 5ATM Water Resistance (50m depth, swim-proof) Not for diving, sauna, or high-pressure water jets"
+    },
+    {
+     "label": "OS",
+     "value": "Xiaomi HyperOS 2"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Third-Party App Sync (Strava, Suunto, Health Connect)"
+    },
+    {
+     "label": "Others",
+     "value": "Health & Fitness 24/7 Heart Rate, SpO2, Stress, Sleep Monitoring 60-Second Health Report (quick wellness check) Breathing Exercises (relaxation, focus, sleep aid) 150+ Sports Modes (running, skiing, cycling, etc.) Running Coach & Form Analysis (vertical ratio, stride metrics) Fall Detection (Skiing Mode) – Auto-emergency call if no response"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "47.3mm x 47.3mm x 12.0mm Black strap (Adjustable strap length: 140-210mm approx.)"
+    },
+    {
+     "label": "Weight",
+     "value": "44.5g approx. (without inbox strap)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/anker-soundcore-sport-x20-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Signal/Noise",
+     "value": "ANC Support"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Microphone",
+     "value": "6 Built in Mics"
+    },
+    {
+     "label": "Duration",
+     "value": "Total Playback: 7H/ 28H (With Case) in ANC Mode"
+    },
+    {
+     "label": "Others",
+     "value": "Water Resistance: IP68 rating (splash-proof) Android and IOS App Support"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Connector",
+     "value": "Type-C"
+    },
+    {
+     "label": "Drivers",
+     "value": "11mm"
+    },
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/edifier-comfo-bass-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Frequency",
+     "value": "20Hz - 20kHz"
+    },
+    {
+     "label": "Sound level/Sensitivity",
+     "value": "94 ± 3dB(A)"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth V6.1"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in microphone"
+    },
+    {
+     "label": "Duration",
+     "value": "Up to 22 hours playback Time Fast Charging"
+    },
+    {
+     "label": "Others",
+     "value": "EDIFIER ConneX APP Multilingual Voice Assistant 21-Language Voice Translation Bluetooth Protocol: A2DP, AVRCP, HFP Supported Audio Coding: AAC (MPEG-2), SBC"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Connector",
+     "value": "Type-C Charging"
+    },
+    {
+     "label": "Drivers",
+     "value": "12mm High-Hxcursion Dynamic Driver"
+    },
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/edifier-x2-pro-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Frequency",
+     "value": "20Hz - 20kHz"
+    },
+    {
+     "label": "Sound level/Sensitivity",
+     "value": "94 ± 3dB(A)"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth V6"
+    },
+    {
+     "label": "Microphone",
+     "value": "ANC Dual-Mic Beamforming Technology"
+    },
+    {
+     "label": "Duration",
+     "value": "Up to 49 Hours of Total Listening Time ANC OFF: about 13 + 36 = 49H ANC ON: about 11.5 + 32.5 = 44H"
+    },
+    {
+     "label": "Others",
+     "value": "EDIFIER ConneX APP Supported Audio Coding: SBC 50ms Low Latency 4 expert presets"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Connector",
+     "value": "Type-C Charging"
+    },
+    {
+     "label": "Drivers",
+     "value": "11mm Titanium Dynamic Driver"
+    },
+    {
+     "label": "Color",
+     "value": "Black, White"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/havit-tw969-lite-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Frequency",
+     "value": "20 Hz – 20 kHz"
+    },
+    {
+     "label": "Impedance",
+     "value": "32Ω"
+    },
+    {
+     "label": "Sound level/Sensitivity",
+     "value": "102±3dB"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth V5.4"
+    },
+    {
+     "label": "Microphone",
+     "value": "Yes"
+    },
+    {
+     "label": "Battery",
+     "value": "Earbuds Battery: 40mAh Charging Case Battery: 300mAh"
+    },
+    {
+     "label": "Duration",
+     "value": "Play Time: 7h(60% Vol.) Talk time: 4h(60% Vol.) Buds Charging Time: 1.5h Case Charging Time: 1.5h"
+    },
+    {
+     "label": "Others",
+     "value": "Chip: AB5696 Profiles Supported: a2dp 1.3\\avctp 1.4\\avdtp 1.3\\ avrcp 1.5\\ hfp 1.5 \\spp 1.0 Audio code: AAC SBC Wireless Working Range: 10m (without obstacles)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Drivers",
+     "value": "8mm"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Charging Case Dimension: 73 x 32 x 28 mm Buds Dimension: 19.5 x 18.6 x 23.3mm"
+    },
+    {
+     "label": "Weight",
+     "value": "Buds Net Weight: 3.7g Charging case Net Weight: 27g"
+    },
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/havit-tw986-pro-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Frequency",
+     "value": "20Hz-20kHz"
+    },
+    {
+     "label": "Impedance",
+     "value": "32Ω"
+    },
+    {
+     "label": "Sound level/Sensitivity",
+     "value": "94±3dB 1kHz"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Wireless"
+    },
+    {
+     "label": "Microphone",
+     "value": "Yes"
+    },
+    {
+     "label": "Battery",
+     "value": "Earbuds Battery: 40mAh x 2 Charging Case Battery: 400mAh"
+    },
+    {
+     "label": "Duration",
+     "value": "Play Time: 9H(60% Vol. with ANC OFF) Buds Charging Time: 1.5H Case Charging Time: 1.5H USB Port: Type-C"
+    },
+    {
+     "label": "Others",
+     "value": "Chip: AB5736F Profiles supported: a2dp / avctp / avdtp / avrcp / hfp"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Connector",
+     "value": "Bluetooth: V6"
+    },
+    {
+     "label": "Drivers",
+     "value": "Φ13mm x 2"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Charging Case Dimension: 67 x 50.4 x 24.6mm Buds Dimension: 21.7 x 31.7 x 24.7mm"
+    },
+    {
+     "label": "Weight",
+     "value": "Buds Net Weight: 3.9g X 2 Charging Net Weight: 35.8g"
+    },
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/anker-100w-3-port-usb-charger": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Input Interface",
+     "value": "100–240V~, 50/60Hz, 2.3A max"
+    },
+    {
+     "label": "Output Interface",
+     "value": "2x USB-C: 5 V DC at 3 A (15 W) / 9 V DC at 3 A (27 W) / 15 V DC at 3 A (45 W) / 20 V DC at 5 A (100 W) 1x USB-A: 5 V DC at 3 A (15 W) / 9 VDC at 2 A (18 W) / 12 VDC at 1.5 A (18 W) / 33 A"
+    },
+    {
+     "label": "Others",
+     "value": "USA (Type A) via Foldable/Retractable Plug ActiveShield 4.0 Temperature Monitoring Integrated Smart Display with Touch Control (power, voltage, temperature, usage time) Advanced GaN Technology Compatibility Laptops: MacBook Pro/Air, Windows USB-C laptops, Chromebook Tablets: iPad Pro, iPad Air, Android tablets Smartphones: iPhone, Samsung Galaxy, Google Pixel, and other USB-powered phones Accessories: Power banks, earbuds, smartwatches, portable gaming devices"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Silver, Dark Gray"
+    },
+    {
+     "label": "Dimension",
+     "value": "6.91 x 5.51 x 3.4 cm"
+    },
+    {
+     "label": "Weight",
+     "value": "211.77 g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-hypergan-701-70w-adapter-with-cable": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Input Interface",
+     "value": "100-240V～ 50/60Hz 1.5A Max"
+    },
+    {
+     "label": "Output Interface",
+     "value": "Type-C1 & C2: 5V⎓3.0A, 9V⎓3.0A, 15V⎓3.0A, 20V⎓3.5A 70W Max USB-A1: 5V⎓3.0A, 9V⎓2.0A, 10V⎓2.25A, 12V⎓1.5A 22.5W Max Type-C1 & Type-C2: 45W+15W 60W Max Type-C1 & USB-A1: 45W+15W 60W Max Type-C2 & USB-A1: 5V⎓3.0A 15W Max Type-C1 Type-C2 USB-A1: 45W+15W 60W Max"
+    },
+    {
+     "label": "Power Supply",
+     "value": "70W Max"
+    },
+    {
+     "label": "Others",
+     "value": "Covering Xiaomi HyperCharge, Transsion TFCP PD3.0 & QC4.0+ Compatible AniFast Intelligent Charging Technology 3-Way Thermal Control Up to 25% Lower Fast-Charging Temperature 9-Layer Safety Protection 100W E-Mark Cable Included"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "White"
+    },
+    {
+     "label": "Cable Length",
+     "value": "1m"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/ugreen-nexode-air-x860-65w-gan-charger": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Input Interface",
+     "value": "100-240V"
+    },
+    {
+     "label": "Output Interface",
+     "value": "1 x Type-C"
+    },
+    {
+     "label": "Power Supply",
+     "value": "65W Max"
+    },
+    {
+     "label": "Others",
+     "value": "Advance GaN Technology 9 Layer Safety Protection"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/ugreen-nexode-cd333-300w-gan-charger": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Input Interface",
+     "value": "100-240V 50/60Hz 4.0A Max"
+    },
+    {
+     "label": "Output Interface",
+     "value": "4 x Type-C, 1 x USB-A Type-C1: 140W Max 5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/3.25A, 28V/5A Type-C2/C3: 100W Max (each) 5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/5A Type-C4: 45W Max 5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/2.25A Type-A: 22.5W Max 5V/3A, 9V/3A, 10V/2.25A, 12V/1.5A"
+    },
+    {
+     "label": "Others",
+     "value": "Advance GaN Technology Built-in protection against overcurrent, overvoltage, short circuits, and overheating ensures safe operation. Supports PD3.1, PD3.0, QC5.0, QC4+, QC3.0, PPS, SCP, FCP, AFC"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/ugreen-nexode-cd359-30w-gan-charger": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Input Interface",
+     "value": "100-240V 50/60Hz 4.0A Max"
+    },
+    {
+     "label": "Output Interface",
+     "value": "1 x Type-C"
+    },
+    {
+     "label": "Others",
+     "value": "Advance GaN Technology"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/ugreen-x517-25w-type-c-charger-us": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Input Interface",
+     "value": "100-240V, 50/60Hz"
+    },
+    {
+     "label": "Output Interface",
+     "value": "5V, 3A"
+    },
+    {
+     "label": "Power Supply",
+     "value": "25W USB-C"
+    },
+    {
+     "label": "Others",
+     "value": "GaN Fast Charger Output: 1 Fast charging standard: Fast Charge, Fast Charge 2.0, Power Delivery, Quick Charge, Quick Charge 2.0, Quick Charge 3.0 Connection connector: USB Type-C Plug: US"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/ugreen-pb503-power-bank": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "5000mAh (18Wh)"
+    },
+    {
+     "label": "Input",
+     "value": "Type-C1 / Type-C2: 5V⎓3A / 9V⎓2.22A / 12V⎓1.67A (20W Max)"
+    },
+    {
+     "label": "Output",
+     "value": "Type-C1 / Type-C2: 5V⎓3A / 9V⎓2.22A / 12V⎓1.67A / 10V⎓2.25A (22.5W Max)"
+    },
+    {
+     "label": "Interface",
+     "value": "2x Type-C, Built-in Type-C Connector"
+    },
+    {
+     "label": "Display",
+     "value": "LED Battery Level Indicator"
+    },
+    {
+     "label": "Fast Charging Protocol",
+     "value": "PD 3.0 / PD 2.0, QC 3.0 / QC 2.0, SCP / FCP Apple 5V⎓2.4A BC1.2"
+    },
+    {
+     "label": "Others",
+     "value": "Two-way fast input & output"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "79 × 38 × 26 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "110g"
+    },
+    {
+     "label": "Color",
+     "value": "Gray"
+    },
+    {
+     "label": "Material",
+     "value": "PC + ABS"
+    }
+   ]
+  },
+  {
+   "group": "Manufacture Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "01 year"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/ugreen-pb528-power-bank": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "20000mAh (74Wh)"
+    },
+    {
+     "label": "Input",
+     "value": "Type-C Cable Input: 5V⎓3A / 9V⎓3A / 12V⎓2.5A / 15V⎓2A Type-C Port Input: 5V⎓3A / 9V⎓3A / 12V⎓2.5A / 15V⎓2A"
+    },
+    {
+     "label": "Output",
+     "value": "Type-C1 Cable Output: Up to 30W Type-C2 Cable Output: Up to 30W Type-C3 Port Output: Up to 30W USB-A Output: Up to 22.5W Type-C Output: 10V⎓2.25A / 5V⎓3A / 9V⎓3A / 12V⎓2.5A / 15V⎓2A USB-A Output: 10V⎓2.25A / 5V⎓3A / 9V⎓2A / 12V⎓1.5A Total Output: 5V⎓3A Max"
+    },
+    {
+     "label": "Interface",
+     "value": "USB Type-A, USB Type-C with Built-in Cable"
+    },
+    {
+     "label": "Display",
+     "value": "Yes"
+    },
+    {
+     "label": "Fast Charging Protocol",
+     "value": "Multiple fast-charging protocols: PD, PPS, SCP & UFCS"
+    },
+    {
+     "label": "Others",
+     "value": "Fast Charging: Yes Charging Technology: Power Delivery (PD)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "156 × 73.4 × 29.8mm"
+    },
+    {
+     "label": "Weight",
+     "value": "486g"
+    },
+    {
+     "label": "Color",
+     "value": "Gray"
+    },
+    {
+     "label": "Material",
+     "value": "PC + ABS"
+    }
+   ]
+  },
+  {
+   "group": "Manufacture Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "01 year"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/ugreen-pb568-power-bank": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "10000mAh"
+    },
+    {
+     "label": "Input",
+     "value": "Type-C Cable/Type-C Input：5V⎓3A/9V⎓3A/12V⎓2.5A/15V⎓2A"
+    },
+    {
+     "label": "Output",
+     "value": "Type-C Cable/Type-C Output 10V⎓2.25A/5V⎓3A/9V⎓3A/12V⎓2.5A/15V⎓2A"
+    },
+    {
+     "label": "Interface",
+     "value": "1x Type-C, Durable Type-C Cable, Qi2 Wireless Charging MagSafe Compatible"
+    },
+    {
+     "label": "Protection",
+     "value": "Multi Layer Protaction"
+    },
+    {
+     "label": "Others",
+     "value": "Wireless Charging: Qi2, up to 15W Type-C Charging: Up to 30W (PD) Battery Type: Polymer Lithium-ion Battery Built-in Stand"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Gray"
+    }
+   ]
+  },
+  {
+   "group": "Manufacture Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "01 year"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/ugreen-pb570-power-bank": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "10000mAh (39.2Wh 7.84V)"
+    },
+    {
+     "label": "Input",
+     "value": "Type-C Input / Cable Input: 5V⎓3A / 9V⎓3A / 12V⎓2.5A / 15V⎓2A (30W Max)"
+    },
+    {
+     "label": "Output",
+     "value": "Type-C Output / Cable Output: 10V⎓2.25A / 5V⎓3A / 9V⎓3A / 12V⎓2.5A / 15V⎓2A (30W Max)"
+    },
+    {
+     "label": "Interface",
+     "value": "1x Type-C, Durable Type-C Cable, Qi2 Wireless Charging"
+    },
+    {
+     "label": "Protection",
+     "value": "Over Voltage Protection Over Heat Protection Short Circuit Protection"
+    },
+    {
+     "label": "Others",
+     "value": "Rated Capacity: 6250mAh (TYP 5V 3A) Total Output: 5V⎓2A + 5W Cell Charging Limited Voltage: 4.53V⎓ Special feature: MagSafe Compatible, Fast Charging, Wireless Charging Smart Temperature Controle Wireless MagSafe Qi2 15W Up to 30W Wired Charging MagFlow Air 100% Airline-Approved for Safe Flights 13.9mm Ultra-Slim Build Sleek Aluminum Alloy Body"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Gray"
+    },
+    {
+     "label": "Material",
+     "value": "Aluminum Alloy"
+    }
+   ]
+  },
+  {
+   "group": "Manufacture Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "01 year"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/aecooly-th01-tower-01-tower-fan": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Fan Type",
+     "value": "Portable Wall-Mounted Tower Fan"
+    },
+    {
+     "label": "Motor Type",
+     "value": "Brushless motor"
+    },
+    {
+     "label": "Speed (RPM)",
+     "value": "1750RPM"
+    },
+    {
+     "label": "Air Volume",
+     "value": "Up to 20 ft/s"
+    },
+    {
+     "label": "Modes",
+     "value": "100 Adjustable Speed Levels"
+    },
+    {
+     "label": "Others",
+     "value": "Oscillation 60° Automatic / 360° Manual Cooling Coverage Whole Room Air Circulation Control Remote Control + Touchscreen Timer 1–12 Hours Programmable Installation Wall Mount Design"
+    }
+   ]
+  },
+  {
+   "group": "Additional Information",
+   "items": [
+    {
+     "label": "Remote Control",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Power Supply",
+   "items": [
+    {
+     "label": "Battery",
+     "value": "8000mAh Li-ion"
+    },
+    {
+     "label": "Battery Duration",
+     "value": "Up to 20 Hours on Low Speed"
+    },
+    {
+     "label": "Charging Time",
+     "value": "3.5 Hours"
+    },
+    {
+     "label": "Charging Interface",
+     "value": "USB Type-C (Fast Charging Support)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Material",
+     "value": "ABS + PC Durable Premium Body"
+    },
+    {
+     "label": "Dimension",
+     "value": "300 × 113.5 × 141 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "1050 g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/hoco-hx607-slim-desktop-fan": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Fan Type",
+     "value": "Desktop Charger Fan"
+    },
+    {
+     "label": "Motor Type",
+     "value": "High-Speed Brushless Motor"
+    },
+    {
+     "label": "Modes",
+     "value": "1-100 Speed Modes"
+    },
+    {
+     "label": "Others",
+     "value": "Adjustable airflow control Quiet cooling performance Portable and foldable design Dual mounting usage Battery-powered operation Power Consumption: 2.5W"
+    }
+   ]
+  },
+  {
+   "group": "Additional Information",
+   "items": [
+    {
+     "label": "Others",
+     "value": "Ultra-thin body 180° foldable Desktop & wall mount support"
+    }
+   ]
+  },
+  {
+   "group": "Power Supply",
+   "items": [
+    {
+     "label": "Battery",
+     "value": "2000mAh"
+    },
+    {
+     "label": "Battery Duration",
+     "value": "Approx. 3 hours 20 minutes – 10 hours"
+    },
+    {
+     "label": "Charging Time",
+     "value": "Approx. 3 hours"
+    },
+    {
+     "label": "Charging Interface",
+     "value": "USB Type-C"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Material",
+     "value": "Aluminium Body"
+    },
+    {
+     "label": "Dimension",
+     "value": "164 × 134 × 39 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "230g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/hoco-hx608-3-in-1-clip-fan": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Fan Type",
+     "value": "Automatic Rotating Clip Fan"
+    },
+    {
+     "label": "Motor Type",
+     "value": "High-Speed Brushless Motor"
+    },
+    {
+     "label": "Modes",
+     "value": "Adjustable Speed Modes"
+    }
+   ]
+  },
+  {
+   "group": "Additional Information",
+   "items": [
+    {
+     "label": "Others",
+     "value": "Rotation: Automatic Rotating Airflow with Oscillation Installation: Clip, Table Stand, Wall Mount"
+    }
+   ]
+  },
+  {
+   "group": "Power Supply",
+   "items": [
+    {
+     "label": "Battery",
+     "value": "3600mAh"
+    },
+    {
+     "label": "Charging Interface",
+     "value": "USB"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Material",
+     "value": "Durable ABS Construction"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/warmac-107-16-inch-charger-fan": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Fan Type",
+     "value": "AC/DC Charger Fan"
+    },
+    {
+     "label": "Fan Size",
+     "value": "16-inch"
+    },
+    {
+     "label": "Number of Blades",
+     "value": "5 blades"
+    },
+    {
+     "label": "Modes",
+     "value": "9-speed mode"
+    }
+   ]
+  },
+  {
+   "group": "Additional Information",
+   "items": [
+    {
+     "label": "Remote Control",
+     "value": "Yes"
+    },
+    {
+     "label": "Light",
+     "value": "6 LED night lights"
+    }
+   ]
+  },
+  {
+   "group": "Power Supply",
+   "items": [
+    {
+     "label": "Operating Voltage",
+     "value": "AC 110-240V, 50/60Hz"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "White"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-solove-f12-desktop-fan": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Power",
+     "value": "Rated Power Output: 24 Watts Built-in 9000mAh Battery"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Type-C interface"
+    },
+    {
+     "label": "Others",
+     "value": "Up to 6-speed levels Automatic Oscillation: Up to 120-degree horizontal rotation 180-degree fully adjustable manual vertical pitch hinge"
+    }
+   ]
+  },
+  {
+   "group": "Physical Description",
+   "items": [
+    {
+     "label": "Weight",
+     "value": "Approximately 1.85 kg."
+    },
+    {
+     "label": "Dimensions",
+     "value": "Adjusts from 690 mm up to 804 mm in height"
+    },
+    {
+     "label": "Materials",
+     "value": "ABS+PC"
+    }
+   ]
+  },
+  {
+   "group": "Manufacturing Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "3 Months Warranty"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xundd-xdot-063-multi-functional-clip-fan": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Power",
+     "value": "Built-in 6000mAhBattery Voltage: 5V USB Tyoe-C Charging Interface"
+    },
+    {
+     "label": "Operating Interface",
+     "value": "Fan+trotating+Light"
+    },
+    {
+     "label": "Others",
+     "value": "Speed Modes: 3 Levels Rotation: No rotational movement Fan blade diameter: 4.7inch 12cm Able To Stand And Clamp Extra Large 14cm Wind Surface Up And Down Retractable Night Warming Lamp Function. Combining coolness and lighting"
+    }
+   ]
+  },
+  {
+   "group": "Physical Description",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Beige"
+    },
+    {
+     "label": "Dimensions",
+     "value": "4.7inch 12cm"
+    },
+    {
+     "label": "Materials",
+     "value": "Material:ABS/PP/aluminumalloy/electronic components"
+    }
+   ]
+  },
+  {
+   "group": "Manufacturing Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "No Warranty"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/lg-27u411b-b-27-inch-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "27-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD (1920 x 1080)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178º(R/L), 178º(U/D)"
+    },
+    {
+     "label": "Brightness",
+     "value": "250 nits"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1500:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "144Hz"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "sRGB 99% (CIE1931)"
+    },
+    {
+     "label": "Response Time",
+     "value": "1ms MBR, 5ms (GtG at Faster)"
+    },
+    {
+     "label": "HDR",
+     "value": "HDR10"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "G-Sync Support",
+     "value": "Dynamic Action Sync"
+    },
+    {
+     "label": "Free Sync Support",
+     "value": "Yes, (AMD FreeSync Premium)"
+    },
+    {
+     "label": "Others",
+     "value": "LG Switch App: Yes Auto Input Switch: Yes Black Stabilizer: Yes Color Weakness Mode: Yes Crosshair: Yes Dynamic Action Sync: Yes Flicker Safe: Yes HDR Effect: Yes Motion Blur Reduction Technology: Yes Reader Mode: Yes Smart Energy Saving: Yes Super Resolution+: Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Microphone (Built In)",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "1x HDMI 2.0"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "Yes"
+    },
+    {
+     "label": "D-Sub",
+     "value": "1 x D-Sub (VGA)"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "Yes"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100 x 100 (mm)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Without Stand (WxHxD): 611.5 x 357.8 X 38.5 mm With Stand (WxHxD): 611.5 x 452.4 x 220 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "With Stand Weight: 3.9kg"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "External Power(Adapter)"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "DC Off (Max): Less than 0.3W Power Save/Sleep Mode (Max): Less than 0.5W"
+    },
+    {
+     "label": "Voltage",
+     "value": "100~240V (50/60Hz)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/pc-power-pcgmx22f120b-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "21.45\""
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD (1920×1080)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:09"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178°(H)/178°(V)"
+    },
+    {
+     "label": "Brightness",
+     "value": "250 nits"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz (max)"
+    },
+    {
+     "label": "Color Support",
+     "value": "16.7M"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "95% sRGB"
+    },
+    {
+     "label": "Response Time",
+     "value": "6.5ms GTG"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "VGA",
+     "value": "VGA×1"
+    },
+    {
+     "label": "HDMI",
+     "value": "HDMI×1"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Height Adjustment",
+     "value": "n/a"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "DC 12V"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "20W"
+    }
+   ]
+  }
+ ],
+ "https://motionview.com.bd/product/redmi-desktop-monitor-1a-238-full-hd": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Screen Size",
+     "value": "23.8-Inch"
+    },
+    {
+     "label": "Resolution",
+     "value": "Full HD (1920 x 1080)"
+    },
+    {
+     "label": "Brightness",
+     "value": "250cd/m"
+    },
+    {
+     "label": "Response Time",
+     "value": "6ms (GTG)"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "Vertical Viewing Angle: 178°"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000:1"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60HZ"
+    },
+    {
+     "label": "Connectivity:",
+     "value": "HDMI Interface"
+    },
+    {
+     "label": "Power Type",
+     "value": "100 - 240 VAC 50/60 Hz"
+    }
+   ]
+  }
+ ],
+ "https://motionview.com.bd/product/xiaomi-curved-gaming-monitor-34-144hz-34401440pixel": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Screen Size",
+     "value": "34 Inch"
+    },
+    {
+     "label": "Resolution",
+     "value": "WQHD (3440 × 1440)"
+    },
+    {
+     "label": "Brightness",
+     "value": "300 cd/m²"
+    },
+    {
+     "label": "Response Time",
+     "value": "4ms (GTG)"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "3000:1 (TYP)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "21:9"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "144Hz"
+    },
+    {
+     "label": "Connectivity:",
+     "value": "2x HDMI, 2 Display Ports, Audio Jack"
+    },
+    {
+     "label": "Physical Dimension",
+     "value": "1 x monitor 1 x base 1 x bracket 1 x power cord 1 x DP signal line 1 x base screw 4 x wall stud 4 x wall hanging screws 1 x instruction manual"
+    }
+   ]
+  }
+ ],
+ "https://motionview.com.bd/product/xiaomi-monitor-27-165hz-qhd-25601440p": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Screen Size",
+     "value": "27 inches"
+    },
+    {
+     "label": "Resolution",
+     "value": "2560×1440"
+    },
+    {
+     "label": "Brightness",
+     "value": "400cd/m2 (TYP)"
+    },
+    {
+     "label": "Response Time",
+     "value": "1 ms (IMBC), 4ms (GTG)"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178 degrees ultra-wide viewing angles"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000:1 (TYP)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16: 9"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "165hz refresh rate"
+    },
+    {
+     "label": "Connectivity:",
+     "value": "HDMI 1 * HDMI 2.0,Display Port 1 * DP 1.4,USB Port(s) 1 * USB IN & 1 * USB 3.0"
+    },
+    {
+     "label": "Power Type",
+     "value": "75W Max"
+    },
+    {
+     "label": "Physical Dimension",
+     "value": "609.44 (L) X 200.00 (W) X 461.25 (H) mm"
+    }
+   ]
+  }
+ ],
+ "https://motionview.com.bd/product/xiaomi-redmi-monitor-27-75hz-full-hd-ips-panel": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Screen Size",
+     "value": "27 inches"
+    },
+    {
+     "label": "Resolution",
+     "value": "2560×1440"
+    },
+    {
+     "label": "Brightness",
+     "value": "400cd/m2 (TYP)"
+    },
+    {
+     "label": "Response Time",
+     "value": "1 ms (IMBC), 4ms (GTG)"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178 degrees ultra-wide viewing angles"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000: 1"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16: 9"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "Maximum Refresh Rate: 75 Hz, Recommended Refresh Rate: 60 Hz"
+    },
+    {
+     "label": "Connectivity:",
+     "value": "HDMI HDMI 1.4 x1, VGA & Audio Jack"
+    },
+    {
+     "label": "Power Type",
+     "value": "35W(TYP), 75W Max."
+    }
+   ]
+  }
+ ],
+ "https://www.applegadgetsbd.com/product/lenovo-loq-15ahp9-amd-ryzen-7-7445hs-3050-gaming-laptop": [
+  {
+   "group": "Specification",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "Lenovo"
+    },
+    {
+     "label": "Processor",
+     "value": "Brand: AMD | Model: Ryzen 7 7445HS | Frequency: Up to 4.7GHz | Cores: 6 | Threads: 12 | CPU Cache: 16MB L3 Cache"
+    },
+    {
+     "label": "Keyboard & Touchpad",
+     "value": "Keyboard Type: White Backlit, English | Touchpad: Yes"
+    },
+    {
+     "label": "Network & Connectivity",
+     "value": "Wi-Fi: Wi-Fi 6, 802.11ax 2×2 | Bluetooth: Bluetooth 5.2"
+    },
+    {
+     "label": "Body",
+     "value": "Dimensions: 14.17 × 10.19 × 0.86-0.94 inches | Weight: Starting at 2.38kg"
+    },
+    {
+     "label": "Model",
+     "value": "LOQ 15AHP9"
+    },
+    {
+     "label": "Graphics",
+     "value": "Model: NVIDIA GeForce RTX 3050 | Memory: 6GB | Type: Dedicated GDDR6"
+    },
+    {
+     "label": "Display",
+     "value": "Size: 15.6 inches | Type: IPS | Resolution: FHD (1920 × 1080) | Features: 300 nits, Anti-glare, 100% sRGB, G-SYNC | Refresh Rate: 144Hz"
+    },
+    {
+     "label": "Ports",
+     "value": "USB: 3 × USB-A (USB 5Gbps / USB 3.2 Gen 1), 1 × USB-C (USB 10Gbps / USB 3.2 Gen 2) | HDMI: 1 × HDMI 2.1 | Ethernet: 1 × RJ-45 (100/1000M) | Headphone Jack: 1 × 3.5mm headphone/microphone combo jack | Power: 170W Slim Tip (3-pin)"
+    },
+    {
+     "label": "Power",
+     "value": "Type: Li-ion | Capacity: 60Wh | Adapter Type: 170W Slim Tip"
+    },
+    {
+     "label": "Storage",
+     "value": "Capacity: 512GB | Type: M.2 2242 PCIe 4.0 × 4 NVMe SSD"
+    },
+    {
+     "label": "Memory",
+     "value": "Capacity: 16GB | Type: DDR5 SODIMM | Bus Speed: 5600MHz"
+    },
+    {
+     "label": "Other Features / Info",
+     "value": "Body Material: Luna Grey | Military Grade Certified: MIL-STD-810H Certified"
+    }
+   ]
+  }
+ ],
+ "https://www.applegadgetsbd.com/product/hp-15-fd0180nia-intel-core-i3-1315u-fhd-laptop": [
+  {
+   "group": "Specification",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "HP"
+    },
+    {
+     "label": "Processor",
+     "value": "Brand: Intel | Model: Core i3-1315U (13th Gen) | Frequency: up to 4.5GHz | Cores: 6 | Threads: 8 | CPU Cache: 10MB"
+    },
+    {
+     "label": "Keyboard & Touchpad",
+     "value": "Keyboard Type: Full-size, Backlit keyboard | TouchPad: Yes"
+    },
+    {
+     "label": "Network & Connectivity",
+     "value": "Wi-Fi 6 | Bluetooth 5.4"
+    },
+    {
+     "label": "Model",
+     "value": "15-FD0180nia"
+    },
+    {
+     "label": "Graphics",
+     "value": "Model: Intel UHD Graphics | Memory: Shared | Type: Integrated"
+    },
+    {
+     "label": "Display",
+     "value": "Size: 15.6 Inch | Type: VA | Resolution: FHD (1920x1080)"
+    },
+    {
+     "label": "Ports",
+     "value": "USB: 2x USB Type-A (5Gbps), 1x USB Type-C (5Gbps) | HDMI: 1x HDMI 1.4 | Headphone Jack: 1x headphone/microphone combo"
+    },
+    {
+     "label": "Camera",
+     "value": "720p HD camera"
+    },
+    {
+     "label": "Power",
+     "value": "Type: 3-cell Li-ion | Capacity: 41Wh | Adapter Type: 45W"
+    },
+    {
+     "label": "Storage",
+     "value": "Capacity: 512GB | Type: M.2 NVMe PCIe SSD"
+    },
+    {
+     "label": "Memory",
+     "value": "Capacity: 8GB | Type: DDR4 | Bus Speed: 3200MHz"
+    },
+    {
+     "label": "Audio",
+     "value": "Dual speakers, dual array microphones"
+    },
+    {
+     "label": "Other Features / Info",
+     "value": "Military Grade Certified: US MIL-STD 810H"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.co/product/apple-iphone-16/": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "Apple"
+    },
+    {
+     "label": "Model",
+     "value": "iPhone 16"
+    },
+    {
+     "label": "Device",
+     "value": "Smartphones"
+    },
+    {
+     "label": "Added",
+     "value": "September 9, 2024"
+    },
+    {
+     "label": "Updated",
+     "value": "April 25, 2026"
+    }
+   ]
+  },
+  {
+   "group": "Prices",
+   "items": [
+    {
+     "label": "Official",
+     "value": "128GB ৳1,19,999 / 256GB ৳1,44,999"
+    },
+    {
+     "label": "Unofficial",
+     "value": "128GB AUS ৳93,000 / 128GB SG ৳95,000 / 128GB UAE ৳1,07,000 / 256GB AUS ৳1,16,000 / 256GB IND ৳1,17,000 / 256GB SG ৳1,22,000"
+    },
+    {
+     "label": "Global price",
+     "value": "$829.99 / €949.00 / £799.00 / ₹109,900"
+    }
+   ]
+  },
+  {
+   "group": "Launch",
+   "items": [
+    {
+     "label": "Announced",
+     "value": "2024, September 09"
+    },
+    {
+     "label": "Status",
+     "value": "Available. Released 2024, September 20"
+    }
+   ]
+  },
+  {
+   "group": "Network",
+   "items": [
+    {
+     "label": "Technology",
+     "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+    },
+    {
+     "label": "2G bands",
+     "value": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM) CDMA 800 / 1900"
+    },
+    {
+     "label": "3G bands",
+     "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100 CDMA2000 1xEV-DO"
+    },
+    {
+     "label": "4G bands",
+     "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 32, 34, 38, 39, 40, 41, 42, 48, 53, 66 - A3287 1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 17, 18, 19, 20, 25, 26, 28, 29, 30, 32, 34, 38, 39, 40, 41, 42, 48, 53, 66, 71 - A3081 1, 2, 3, 4, 5, 7, 8, 11, 12, 13, 14, 17, 18, 19, 20, 21, 25, 26, 28, 29, 30, 32, 34, 38, 39, 40, 41, 42, 48, 53, 66, 71 - A3286 1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 32, 34, 38, 39, 40, 41, 42, 48, 66 - A3288"
+    },
+    {
+     "label": "5G bands",
+     "value": "1, 2, 3, 5, 7, 8, 12, 20, 25, 26, 28, 30, 38, 40, 41, 48, 53, 66, 70, 75, 76, 77, 78, 79 SA/NSA/Sub6 - A3287 1, 2, 3, 5, 7, 8, 12, 14, 20, 25, 26, 28, 29, 30, 38, 40, 41, 48, 53, 66, 70, 71, 75, 76, 77, 78, 79, 258, 260, 261 SA/NSA/Sub6/mmWave - A3081 1, 2, 3, 5, 7, 8, 12, 14, 20, 25, 26, 28, 29, 30, 38, 40, 41, 48, 53, 66, 70, 71, 75, 76, 77, 78, 79 SA/NSA/Sub6 - A3286 1, 2, 3, 5, 7, 8, 12, 20, 25, 26, 28, 30, 38, 40, 41, 48, 66, 70, 75, 76, 77, 78, 79 SA/NSA/Sub6 - A3288"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE, 5G, EV-DO Rev.A 3.1 Mbps"
+    },
+    {
+     "label": "GPRS",
+     "value": "Yes"
+    },
+    {
+     "label": "EDGE",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Body",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "147.6 x 71.6 x 7.8 mm (5.81 x 2.82 x 0.31 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "170 g (6.00 oz)"
+    },
+    {
+     "label": "Build",
+     "value": "Glass front (Corning-made glass), glass back (Corning-made glass), aluminum frame"
+    },
+    {
+     "label": "SIM",
+     "value": "Nano-SIM and eSIM - International"
+    },
+    {
+     "label": "Others",
+     "value": "Dual eSIM with multiple numbers - USA Dual SIM (Nano-SIM, dual stand-by) - China IP68 dust/water resistant (up to 6m for 30 min) Apple Pay (Visa, MasterCard, AMEX certified)"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Super Retina XDR OLED, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)"
+    },
+    {
+     "label": "Size",
+     "value": "6.1 inches, 91.7 cm2 (~86.8% screen-to-body ratio)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1179 x 2556 pixels, 19.5:9 ratio (~460 ppi density)"
+    },
+    {
+     "label": "Protection",
+     "value": "Ceramic Shield glass (2024 gen)"
+    }
+   ]
+  },
+  {
+   "group": "Platform",
+   "items": [
+    {
+     "label": "OS",
+     "value": "iOS 18"
+    },
+    {
+     "label": "Chipset",
+     "value": "Apple A18 (3 nm)"
+    },
+    {
+     "label": "CPU",
+     "value": "Hexa-core"
+    },
+    {
+     "label": "GPU",
+     "value": "Apple GPU (5-core graphics)"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Card slot",
+     "value": "No"
+    },
+    {
+     "label": "Internal",
+     "value": "128/256/512 GB NVMe"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB"
+    },
+    {
+     "label": "Variant",
+     "value": "8GB 128GB / 8GB 256GB / 8GB 512GB"
+    }
+   ]
+  },
+  {
+   "group": "Main camera",
+   "items": [
+    {
+     "label": "Dual",
+     "value": "48 MP, f/1.6, 26mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, sensor-shift OIS 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 0.7µm, dual pixel PDAF"
+    },
+    {
+     "label": "Features",
+     "value": "Dual-LED dual-tone flash, HDR (photo/panorama)"
+    },
+    {
+     "label": "Video",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps, HDR, Dolby Vision HDR (up to 60fps), stereo sound rec."
+    }
+   ]
+  },
+  {
+   "group": "Selfie camera",
+   "items": [
+    {
+     "label": "Single",
+     "value": "12 MP, f/1.9, 23mm (wide), 1/3.6\", PDAF SL 3D, (depth/biometrics sensor)"
+    },
+    {
+     "label": "Features",
+     "value": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec."
+    },
+    {
+     "label": "Video",
+     "value": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS"
+    }
+   ]
+  },
+  {
+   "group": "Sound",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes, with stereo speakers"
+    },
+    {
+     "label": "3.5mm jack",
+     "value": "No"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac/6/7, dual-band, hotspot"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "5.3, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GLONASS, GALILEO, BDS, QZSS"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "FM radio",
+     "value": "No"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0, DisplayPort"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Sensors",
+     "value": "Face ID, accelerometer, gyro, proximity, compass, barometer Ultra Wideband (UWB) support (gen2 chip) Emergency SOS, Messages and Find My via satellite"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Non-removable Li-Ion"
+    },
+    {
+     "label": "Capacity",
+     "value": "3561 mAh"
+    },
+    {
+     "label": "Charging",
+     "value": "Wired, PD2.0, 50% in 30 min (advertised) 25W wireless (MagSafe), 15W wireless (China only) 15W wireless (Qi2) 4.5W reverse wired"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made by",
+     "value": "US"
+    },
+    {
+     "label": "Color",
+     "value": "Black, White, Pink, Teal, Ultramarine"
+    },
+    {
+     "label": "Models",
+     "value": "A3287, A3081, A3286, A3288, iPhone17,3"
+    },
+    {
+     "label": "Model",
+     "value": "Apple iPhone 16"
+    },
+    {
+     "label": "Price",
+     "value": "BDT. 1,19,999"
+    },
+    {
+     "label": "Display",
+     "value": "6.1&#8243; 1179&#215;2556 pixels"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB"
+    },
+    {
+     "label": "ROM",
+     "value": "128/256/512 GB"
+    },
+    {
+     "label": "Released",
+     "value": "2024 September"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/amazfit-active-2": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "Material: AMOLED Size: 1.32\" Resolution: 466*466 PPI: 353"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery Capacity: 270 mAh (rated value) Charging Method: Magnetic charging base Theoretical Charging Duration: Approx. 2 hours Battery Usage: Typical Usage Scenario Battery Life: Up to 10 days Battery Saver Mode Battery Life: Up to 19 days Heavy Usage Scenario Battery Life: Up to 5 days Continuous GPS Usage: Up to 21 hours"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.2 BLE"
+    },
+    {
+     "label": "OS",
+     "value": "Android 7.0 and above, iOS 14.0 and above"
+    },
+    {
+     "label": "Sensor",
+     "value": "Health: BioTracker™ 6.0 PPG biometric sensor Movement: Acceleration Gyroscope Geomagnetic Barometric altimeter Ambient light Temperature Positioning: 5 satellite positioning systems Circularly-polarized antenna technology"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Zepp App"
+    },
+    {
+     "label": "Others",
+     "value": "Sports Modes: 164"
+    }
+   ]
+  },
+  {
+   "group": "Exterior",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Without sensor base: 43.9x43.9x9.9mm"
+    },
+    {
+     "label": "Weight",
+     "value": "(without strap): Premium version: 31.65g; Standard version: 29.5g"
+    },
+    {
+     "label": "Color",
+     "value": "Black Sport Silicone"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/samsung-galaxy-watch-7-40mm-smart-watch": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.3\" (37.3mm) Super AMOLED (432 x 432) - For 40mm Variant 1.5\" (37.3mm) Super AMOLED (480 x 480) - For 44mm Variant Color Depth: 16M"
+    },
+    {
+     "label": "Processor",
+     "value": "Chipset: W1000 (3 nm) CPU: Cortex-A78 1.6GHz Single-core + Cortex-A55 1.5GHz Quad-core GPU: Mali™-G68 MP2"
+    },
+    {
+     "label": "Memory",
+     "value": "RAM 2GB ROM 32GB"
+    },
+    {
+     "label": "Battery",
+     "value": "300mAh (40mm) 425mAh (44mm)"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Wi-Fi 802.11 a/b/g/n, dual-band Bluetooth 5.3, A2DP, LE Positioning GPS, GLONASS, GALILEO, BDS NFC"
+    },
+    {
+     "label": "Sensor",
+     "value": "Accelerometer, gyro, heart rate, barometer, altimeter, compass, SpO2, temperature (skin), BioActive"
+    },
+    {
+     "label": "SpecialFeatures",
+     "value": "5ATM/ IP68/ MIL-STD-810H Mic., Speaker, Motor, Touch Bezel"
+    },
+    {
+     "label": "OS",
+     "value": "Android Wear OS 5, One UI Watch 6"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "40.4 x 40.4 x 9.7 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "28.8 g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-watch-2-amoled-bluetooth-calling-smartwatch": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "Qualcomm Snapdragon W5+ Gen 1 Platform 4nm manufacturing process"
+    },
+    {
+     "label": "Display",
+     "value": "1.43 inch AMOLED Resolution: 466x 466 pixels, 326 PPI Brightness: up to 600 nits"
+    },
+    {
+     "label": "Memory",
+     "value": "2GB RAM 32GB storage"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery:495mAh Charging type: Magnetic charging Charging time: Approximately 45 minutes Typical use time: up to 65 hours"
+    },
+    {
+     "label": "Connectivity",
+     "value": "2.4GHz/5GHz Wi-Fi Bluetooth 5.2"
+    },
+    {
+     "label": "Material",
+     "value": "Band Strap: TPU"
+    },
+    {
+     "label": "OS",
+     "value": "Wear OS by Google"
+    },
+    {
+     "label": "Sensor",
+     "value": "Optical heart rate sensor Accelerometer sensor Gyroscope sensor Ambient light sensor Electronic compass sensor Barometer sensor"
+    },
+    {
+     "label": "Supported Apps/ Software",
+     "value": "Mi Fitness (app version 3.26.0i and above)"
+    }
+   ]
+  },
+  {
+   "group": "Exterior",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "47.5mm x 45.9mm x 11.8mm (thickness excludes heart rate sensor)"
+    },
+    {
+     "label": "Weight",
+     "value": "Weight: 36.8g (without strap)"
+    },
+    {
+     "label": "Color",
+     "value": "Silver"
+    }
+   ]
+  }
  ]
 }

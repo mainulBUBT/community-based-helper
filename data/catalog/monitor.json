@@ -1,0 +1,347 @@
+{
+  "category": "monitor",
+  "sites": [
+    {
+      "name": "Star Tech",
+      "website": "https://www.startech.com.bd",
+      "note": "অফিসিয়াল স্টক, প্রতিটা পাতায় দাম-স্টক মেটা (product:availability) আছে; সব পাতা ভেতর থেকে যাচাই করা (২৪ অক্টোবর ২০২৬)।"
+    },
+    {
+      "name": "PCB Store",
+      "website": "https://pcbstore.com.bd",
+      "note": "গেমিং/PC দোকান, robots খোলা; পাতার JSON ডেটায় দাম। এই ছয়টা মনিটরে ওদের পাতা Out of stock দেখালেও দাম লেখা আছে — দামসহ Stock out হিসেবে রাখা হয়েছে।"
+    },
+    {
+      "name": "Global Brand",
+      "website": "https://www.globalbrand.com.bd",
+      "note": "LG/Asus/Lenovo ডিস্ট্রিবিউটর (OpenCart), robots খোলা; পাতার JSON-LD-তে দাম-স্টক। সাইটের sale দেখালেও worker JSON-LD-র regular দাম পড়ে, তাই সেটাই রাখা হয়েছে।"
+    },
+    {
+      "name": "MC Solution",
+      "website": "https://mcsolution.com.bd",
+      "note": "WooCommerce, robots খোলা; দাম পাতার JSON-LD/ভ্যারিয়েশন ডেটায়।"
+    }
+  ],
+  "products": [
+    {
+      "brand": "Asus",
+      "name": "ProArt Display PA279CV 27-inch 4K",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 64000
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/asus/proart-display-pa279cv/proart-display-pa279cv-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/asus-proart-display-pa279cv-monitor",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/asus-proart-display-pa279cv-monitor",
+          "price": 63000,
+          "oldPrice": 64000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/asus-proart-display-pa279cv-27-inch-ips-4k-hdr-monitor",
+          "price": 67000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        },
+        {
+          "site": "MC Solution",
+          "url": "https://mcsolution.com.bd/asus-proart-display-pa279cv/",
+          "price": 95500,
+          "oldPrice": 101900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "LG",
+      "name": "34U650A-B 34-inch UltraWide WQHD Curved",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 85000
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/lg-monitor/34u650a-b/34u650a-b-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/lg-34u650a-b-monitor",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/lg-34u650a-b-monitor",
+          "price": 81000,
+          "oldPrice": 85000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/lg-34u650a-b-34-100hz-ultrawide-wqhd-ips-curved-monitor",
+          "price": 84000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/lg-34u650a-b-34-inch-wqhd-100hz-ips-ultrawide-curved-monitor",
+          "price": 85000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Asus",
+      "name": "ROG Strix XG27ACMES 27-inch QHD 255Hz",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 47000
+        }
+      ],
+      "colors": [
+        "Black"
+      ],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/asus/rog-strix-xg27acmes/rog-strix-xg27acmes-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/asus-rog-strix-xg27acmes-monitor",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/asus-rog-strix-xg27acmes-monitor",
+          "price": 39300,
+          "oldPrice": 47000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/asus-rog-strix-xg27acmes-27-inch-qhd-255hz-type-c-ips-gaming-monitor",
+          "price": 46000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/asus-rog-strix-xg27acmes-27-inch-usb-type-c-gaming-monitor",
+          "price": 40000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Asus",
+      "name": "ProArt Display PA278QGV 27-inch QHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 49000
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/asus/proart-display-pa278qgv/proart-display-pa278qgv-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/asus-proart-display-pa278qgv-monitor",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/asus-proart-display-pa278qgv-monitor",
+          "price": 45800,
+          "oldPrice": 49000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/asus-proart-display-pa278qv-gen2-pa278qgv-27-120hz-professional-monitor",
+          "price": 50000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/asus-proart-display-pa278qv-gen2-pa278qgv-27-inch-qhd-ips-professional-monitor",
+          "price": 46000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Asus",
+      "name": "ProArt Display PA248QFV 24.1-inch WUXGA",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 45000
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/asus/proart-display-pa248qv-gen2-pa248qfv/proart-display-pa248qv-gen2-pa248qfv-07-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/asus-proart-display-pa248qv-gen2-pa248qfv-monitor",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/asus-proart-display-pa248qv-gen2-pa248qfv-monitor",
+          "price": 33000,
+          "oldPrice": 45000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/asus-proart-display-pa248qv-gen2-pa248qfv-241-100hz-wuxga-ips-monitor",
+          "price": 34990,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/asus-proart-display-pa248qfv-24-1-inch-wuxga-ips-monitor",
+          "price": 34000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "LG",
+      "name": "24U631A-B 23.8-inch QHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 29300
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/lg-monitor/24u631a-b/24u631a-b-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/lg-24u631a-b-monitor",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/lg-24u631a-b-monitor",
+          "price": 28500,
+          "oldPrice": 29300,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/lg-24u631a-b-238-qhd-100hz-ips-monitor",
+          "price": 29200,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/lg-24u631a-b-24-inch-qhd-ips-100hz-monitor",
+          "price": 30500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-24",
+          "variant": "Standard"
+        }
+      ]
+    }
+  ]
+}

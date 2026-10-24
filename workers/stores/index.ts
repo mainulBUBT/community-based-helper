@@ -171,6 +171,44 @@ const pickaboo: Store = {
   },
 };
 
+// Trek N Tread: Laravel (Inertia) — সাইটম্যাপ নেই, প্রোডাক্ট পাতার দাম embedded data-page JSON-এ (এনকোডেড &quot;);
+// product.variation_price = মূল দাম, variation_discounted_price = ছাড়ের দাম। ক্যাটালগ পাতা (?page=1..12)-তে সব পণ্য।
+const TREK = "https://trekntread.com";
+
+const trekntread: Store = {
+  id: "trekntread",
+  name: "Trek N Tread",
+  origin: TREK,
+  rendered: false,
+  condition: "unofficial",
+  sample: `${TREK}/products/673-adidas-samba-color-white-green-low-neck-grade-oem`,
+  promoUrl: null,
+  parse(html) {
+    const m = /"variation_price":(\d+),"variation_discounted_price":(\d+),"variations"/.exec(html.replace(/&quot;/g, '"'));
+    const full = m ? Number(m[1]) : 0;
+    const sale = m ? Number(m[2]) : 0;
+    const price = sale > 0 ? sale : full > 0 ? full : null;
+    if (!price) return null;
+    return { price, oldPrice: full > sale ? full : null, inStock: true, title: null, via: "trek-data-page" };
+  },
+  async discover() {
+    const all: Listing[] = [];
+    for (let page = 1; page <= 12; page++) {
+      const text = await getText(`${TREK}?page=${page}`).then((html) => html.replace(/&quot;/g, '"')).catch(() => "");
+      for (const m of text.matchAll(/"title":"((?:[^"\\]|\\.)*)","slug":"([a-z0-9-]+)","type":"1"/g)) {
+        let name = m[1];
+        try {
+          name = JSON.parse(`"${m[1]}"`) as string;
+        } catch {
+          // টাইটেল ডিকোড না হলে কাঁচাটাই
+        }
+        all.push({ title: name, url: `${TREK}/products/${m[2]}`, price: null, oldPrice: null });
+      }
+    }
+    return all;
+  },
+};
+
 export const stores: Store[] = [
   startech,
   pickaboo,
@@ -323,13 +361,84 @@ export const stores: Store[] = [
     condition: "unofficial",
   }),
   sitemapStore({
-    id: "maccity",
-    name: "MacCity",
-    origin: "https://maccity.com.bd",
-    sample: "https://maccity.com.bd/apple-magic-keyboard-for-ipad-pro-11-inch-m4/",
-    sitemap: "https://maccity.com.bd/sitemap.xml",
-    path: "/", // এখানেও slug মূল ডোমেনে
-    condition: "unofficial",
+    id: "globalbrand",
+    name: "Global Brand",
+    origin: "https://www.globalbrand.com.bd",
+    sample: "https://www.globalbrand.com.bd/ugreen-x512-55556-20w-usb-c-gan-fast-charger-eu",
+    sitemap: "https://www.globalbrand.com.bd/sitemap.xml",
+    path: "/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "emartway",
+    name: "EmartWay Skincare",
+    origin: "https://www.emartwayskincare.com.bd",
+    sample: "https://www.emartwayskincare.com.bd/cerave-moisturizing-cream-56ml",
+    sitemap: "https://www.emartwayskincare.com.bd/sitemap.xml",
+    path: "/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "koreancare",
+    name: "Korean Care BD",
+    origin: "https://kcarebd.com",
+    sample: "https://kcarebd.com/products/aestura-derma-uv365-barrier-hydro-mineral-sunscreen-20ml/",
+    sitemap: "https://kcarebd.com/sitemap.xml",
+    path: "/products/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "skincareshop",
+    name: "Skincare Shop",
+    origin: "https://skincareshop.com.bd",
+    sample: "https://skincareshop.com.bd/product/the-body-shop-shea-shower-cream-250ml/",
+    sitemap: "https://skincareshop.com.bd/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "indianmartbd",
+    name: "IndianMartBD",
+    origin: "https://indianmartbd.com",
+    sample: "https://indianmartbd.com/product/minimalist-vitamin-c-face-serum-bangladesh/",
+    sitemap: "https://indianmartbd.com/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "colorworld",
+    name: "Color World",
+    origin: "https://colorworld.com.bd",
+    sample: "https://colorworld.com.bd/product/vaseline-lip-therapy-cocoa-butter-0-25-oz-7g/",
+    sitemap: "https://colorworld.com.bd/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "glowella",
+    name: "Glowella",
+    origin: "https://glowellabd.com",
+    sample: "https://glowellabd.com/product/axis-y-new-skin-resolution-gel-mask-100ml/",
+    sitemap: "https://glowellabd.com/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  trekntread,
+  sitemapStore({
+    id: "selltech",
+    name: "Sell Tech",
+    origin: "https://www.selltech.com.bd",
+    sample: "https://www.selltech.com.bd/",
+    sitemap: "https://www.selltech.com.bd/sitemaps/product-sitemap.xml",
+    path: "/",
+    condition: "official",
     variants: wooVariants,
   }),
 ];
