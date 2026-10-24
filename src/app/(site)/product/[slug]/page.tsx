@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `${product.brand} ${product.name} এর দাম`;
   const lowest = offers[0]?.price;
   const description = lowest
-    ? `${product.brand} ${product.name} এখন ${formatTaka(lowest)} থেকে পাওয়া যাচ্ছে। ${offers.length}টা দোকানের দাম পাশাপাশি দেখুন।`
+    ? `${product.brand} ${product.name} এখন ${formatTaka(lowest, "bn")} থেকে পাওয়া যাচ্ছে। ${offers.length}টা দোকানের দাম পাশাপাশি দেখুন।`
     : `${product.brand} ${product.name} এর দাম বাংলাদেশের দোকানগুলোতে কত, দেখুন।`;
   const url = `/product/${product.slug}/`;
   return {

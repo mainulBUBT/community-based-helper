@@ -154,7 +154,7 @@ export function CategoryMenu() {
                             <ProductIcon product={product} size="sm" plain />
                             <span className="flex min-w-0 flex-col">
                               <span className="truncate text-sm font-semibold">{product.name}</span>
-                              {lowest && <span className="text-xs text-dim">{formatTaka(lowest)}</span>}
+                              {lowest && <span className="text-xs text-dim">{formatTaka(lowest, lang)}</span>}
                             </span>
                           </Link>
                         </li>

@@ -10,7 +10,7 @@ import type { OfferView } from "@/types/catalog";
 import { formatTaka, telLink } from "@/utils/format";
 
 function OfferRow({ offer, best }: { offer: OfferView; best: boolean }) {
-  const { t, ago, prefix } = useI18n();
+  const { t, ago, lang, prefix } = useI18n();
   const { seller } = offer;
   const link = offer.url ?? seller.website;
   const stock = offer.inStock === null ? t.stock.unknown : offer.inStock ? t.stock.yes : t.stock.no;
@@ -53,8 +53,8 @@ function OfferRow({ offer, best }: { offer: OfferView; best: boolean }) {
 
       <span className="col-start-2 row-start-1 flex flex-col items-end md:row-span-2 md:self-center">
         {best && <span className="text-[11px] font-semibold text-ok">{t.product.cheapest}</span>}
-        <span className="text-[17px] leading-tight font-bold tracking-tight text-ink md:text-lg">{formatTaka(offer.price)}</span>
-        {offer.oldPrice && offer.oldPrice > offer.price && <span className="text-xs text-faint line-through">{formatTaka(offer.oldPrice)}</span>}
+        <span className="text-[17px] leading-tight font-bold tracking-tight text-ink md:text-lg">{formatTaka(offer.price, lang)}</span>
+        {offer.oldPrice && offer.oldPrice > offer.price && <span className="text-xs text-faint line-through">{formatTaka(offer.oldPrice, lang)}</span>}
       </span>
 
       <div className="col-start-2 row-start-2 justify-self-end md:col-start-3 md:row-span-2 md:row-start-1 md:self-center">

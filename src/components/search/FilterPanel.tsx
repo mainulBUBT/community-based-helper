@@ -51,7 +51,7 @@ function Check({ checked, onChange, children }: { checked: boolean; onChange: ()
 }
 
 function Budget({ filters, facets, update }: { filters: Filters; facets: Facets; update: (patch: Patch) => void }) {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const [low, setLow] = useState(filters.min ?? facets.priceFloor);
   const [high, setHigh] = useState(filters.max ?? facets.priceCeil);
 
@@ -105,7 +105,7 @@ function Budget({ filters, facets, update }: { filters: Filters; facets: Facets;
             <span className="text-[11px] text-dim">{label}</span>
             <input
               inputMode="numeric"
-              value={formatTaka(value)}
+              value={formatTaka(value, lang)}
               onChange={(e) => set(Number(e.target.value.replace(/\D/g, "")) || 0)}
               className="w-full bg-transparent text-sm font-semibold outline-none"
             />
@@ -117,7 +117,7 @@ function Budget({ filters, facets, update }: { filters: Filters; facets: Facets;
 }
 
 export function FilterPanel({ filters, facets, update }: { filters: Filters; facets: Facets; update: (patch: Patch) => void }) {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const { top, childrenOf, name } = useCategories();
   const slugs = top.flatMap((c) => [{ slug: c.slug, child: false }, ...childrenOf(c.slug).map((x) => ({ slug: x.slug, child: true }))]);
   const resetAxes = Object.fromEntries(facets.axes.map(({ axis }) => [axis, null]));

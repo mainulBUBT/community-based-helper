@@ -15,10 +15,11 @@ interface ProductCardProps {
   badge?: ReactNode;
   category?: string;
   compact?: boolean;
+  loading?: "lazy" | "eager";
 }
 
-export function ProductCard({ summary, deal, badge, category, compact }: ProductCardProps) {
-  const { t, num, prefix } = useI18n();
+export function ProductCard({ summary, deal, badge, category, compact, loading = "lazy" }: ProductCardProps) {
+  const { t, num, prefix, lang } = useI18n();
   const { product, lowest, compareAt, inStock, sellerCount } = summary;
   const photo = product.images?.[0];
   const off = lowest && compareAt ? Math.round(((compareAt - lowest) / compareAt) * 100) : 0;
@@ -28,7 +29,7 @@ export function ProductCard({ summary, deal, badge, category, compact }: Product
       <div className="relative flex aspect-square items-center justify-center bg-white p-4">
         {deal ? (
           <span className="absolute top-2.5 left-2.5 z-10 rounded-xs bg-gold px-1.5 py-0.5 text-[10px] font-bold text-gold-ink">
-            {t.home.droppedBy(formatTaka(deal).replace("৳", ""))}
+            {t.home.droppedBy(formatTaka(deal, lang).replace("৳", ""))}
           </span>
         ) : off > 0 ? (
           <span className="absolute top-2.5 left-2.5 z-10 rounded-xs bg-sale px-1.5 py-0.5 text-[10px] font-bold text-white">
@@ -45,7 +46,7 @@ export function ProductCard({ summary, deal, badge, category, compact }: Product
         </span>
         {badge && <span className="absolute bottom-2.5 left-2.5 z-10 max-w-[calc(100%-1.25rem)] overflow-hidden">{badge}</span>}
         {photo ? (
-          <img src={photo} alt={`${product.brand} ${product.name}`} loading="lazy" className="size-full object-contain transition-transform duration-300 group-hover:scale-[1.04]" />
+          <img src={photo} alt={`${product.brand} ${product.name}`} loading={loading} className="size-full object-contain transition-transform duration-300 group-hover:scale-[1.04]" />
         ) : (
           <ProductIcon product={product} size="lg" plain />
         )}
@@ -61,10 +62,10 @@ export function ProductCard({ summary, deal, badge, category, compact }: Product
         </Link>
         <div className="mt-2 flex flex-wrap items-baseline gap-x-2">
           <span className={`font-bold tracking-tight text-ink ${compact ? "text-[13.5px]" : "text-base"}`}>
-            {lowest ? formatTaka(lowest) : t.product.noPrice}
+            {lowest ? formatTaka(lowest, lang) : t.product.noPrice}
           </span>
           {compareAt && (
-            <span className="text-[11px] text-faint line-through">{formatTaka(compareAt)}</span>
+            <span className="text-[11px] text-faint line-through">{formatTaka(compareAt, lang)}</span>
           )}
         </div>
         <div className="mt-auto flex min-w-0 items-center gap-1.5 pt-2 text-[11px] whitespace-nowrap text-dim" title={inStock ? t.stock.yes : t.stock.unknown}>

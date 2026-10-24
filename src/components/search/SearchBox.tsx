@@ -21,7 +21,7 @@ interface SearchBoxProps {
 
 export function SearchBox({ defaultValue = "", variant = "bar", onSearch }: SearchBoxProps) {
   const router = useRouter();
-  const { t, prefix } = useI18n();
+  const { t, lang, prefix } = useI18n();
   const listId = useId();
   const [text, setText] = useState(defaultValue);
   const [open, setOpen] = useState(false);
@@ -133,7 +133,7 @@ export function SearchBox({ defaultValue = "", variant = "bar", onSearch }: Sear
                   <span className="min-w-0 flex-1 truncate font-semibold">
                     {option.summary.product.brand} {option.summary.product.name}
                   </span>
-                  {option.summary.lowest && <span className="text-sm font-bold">{formatTaka(option.summary.lowest)}</span>}
+                  {option.summary.lowest && <span className="text-sm font-bold">{formatTaka(option.summary.lowest, lang)}</span>}
                 </>
               ) : (
                 <>

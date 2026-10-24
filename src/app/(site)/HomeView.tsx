@@ -6,13 +6,14 @@ import {
   Megaphone,
 } from "lucide-react";
 import Link from "next/link";
-import { useState, type ReactNode } from "react";
+import { useState, useEffect, useRef, useMemo, type ReactNode } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
 import { AllCategoriesIcon, CategoryIcon } from "@/components/product/CategoryIcon";
 import { CompareCard } from "@/components/product/CompareCard";
 import { ProductCard } from "@/components/product/ProductCard";
 import { ProductIcon } from "@/components/product/ProductIcon";
 import { SellerCard } from "@/components/seller/SellerCard";
+import { BrandIcon } from "@/components/ui/BrandIcon";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { useAsync } from "@/hooks/useAsync";
 import { useCategories } from "@/hooks/useCategories";
@@ -56,37 +57,14 @@ function Shelf({ children }: { children: ReactNode }) {
   );
 }
 
-const BRAND_DOMAIN: Record<string, string> = {
-  Samsung: "samsung.com",
-  Xiaomi: "xiaomi.com",
-  Apple: "apple.com",
-};
-
-const brandDomain = (brand: string) =>
-  BRAND_DOMAIN[brand] ?? `${brand.toLowerCase().replace(/[^a-z0-9]/g, "")}.com`;
-
 function BrandTile({ brand }: { brand: string }) {
-  const [failed, setFailed] = useState(false);
   const { prefix } = useI18n();
   return (
     <Link
       href={`${prefix}/search/?brand=${encodeURIComponent(brand)}`}
       className="group flex h-14 w-40 shrink-0 items-center justify-center gap-2.5 rounded-md border border-line bg-surface text-[15px] font-bold tracking-tight text-dim transition-colors hover:border-brand hover:text-brand"
     >
-      {failed ? (
-        <span className="flex size-6 items-center justify-center rounded-sm bg-brand-soft text-xs font-bold text-brand">
-          {brand.slice(0, 1)}
-        </span>
-      ) : (
-        <img
-          src={`https://www.google.com/s2/favicons?domain=${brandDomain(brand)}&sz=64`}
-          alt=""
-          width={24}
-          height={24}
-          onError={() => setFailed(true)}
-          className="size-6 object-contain"
-        />
-      )}
+      <BrandIcon brand={brand} size={24} className="size-6" />
       {brand}
     </Link>
   );
@@ -167,9 +145,96 @@ function CategoryTiles({ summaries }: { summaries: ProductSummary[] }) {
   );
 }
 
-function DealsShelf({ deals }: { deals: ProductSummary[] }) {
+function mixProducts(items: ProductSummary[]): ProductSummary[] {
+  const groups = new Map<string, ProductSummary[]>();
+  for (const it of items) {
+    const key = it.product.category;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key)!.push(it);
+  }
+  const buckets = [...groups.values()];
+  const out: ProductSummary[] = [];
+  let remaining = items.length;
+  while (remaining > 0) {
+    for (const b of buckets) {
+      if (b.length) {
+        out.push(b.shift()!);
+        remaining--;
+      }
+    }
+  }
+  return out;
+}
+
+function DealsShelf({
+  deals,
+  interval,
+}: {
+  deals: ProductSummary[];
+  interval: number;
+}) {
   const { t, num, prefix } = useI18n();
-  if (!deals.length) return null;
+  const items = useMemo(() => mixProducts(deals).slice(0, 25), [deals]);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [step, setStep] = useState(0);
+  const [index, setIndex] = useState(0);
+  const [transition, setTransition] = useState(true);
+  const [paused, setPaused] = useState(false);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    const measure = () => {
+      if (track.children.length < 2) return;
+      const first = track.children[0] as HTMLElement;
+      const second = track.children[1] as HTMLElement;
+      const newStep = second.offsetLeft - first.offsetLeft;
+      if (newStep > 0) setStep(newStep);
+    };
+    measure();
+    // Re-measure when images load (lazy/eager) and on resize
+    const ro = new ResizeObserver(measure);
+    ro.observe(track);
+    const imgs = track.querySelectorAll("img");
+    const onLoad = () => measure();
+    imgs.forEach((img) => img.addEventListener("load", onLoad));
+    window.addEventListener("resize", measure);
+    return () => {
+      ro.disconnect();
+      imgs.forEach((img) => img.removeEventListener("load", onLoad));
+      window.removeEventListener("resize", measure);
+    };
+  }, [items]);
+
+  useEffect(() => {
+    if (!items.length || paused) return;
+    const id = setInterval(() => {
+      setIndex((i) => (i + 1 >= items.length ? i : i + 1));
+    }, Math.max(1000, interval * 1000));
+    return () => clearInterval(id);
+  }, [items, paused, interval]);
+
+  // When the last real item is at the left edge, jump back to 0 (no transition)
+  useEffect(() => {
+    if (index < items.length - 1) return;
+    const id = setTimeout(() => {
+      setTransition(false);
+      setIndex(0);
+      requestAnimationFrame(() => setTransition(true));
+    }, 500);
+    return () => clearTimeout(id);
+  }, [index, items.length]);
+
+  // Duplicate enough items so the viewport never runs out of cards while the
+  // last real item slides into view (max 5 visible at lg).
+  const looped = useMemo(() => {
+    if (!items.length) return [];
+    const out = [...items];
+    while (out.length < items.length + 4) out.push(...items);
+    return out;
+  }, [items]);
+
+  if (!items.length) return null;
 
   return (
     <Shelf>
@@ -182,10 +247,28 @@ function DealsShelf({ deals }: { deals: ProductSummary[] }) {
           linkLabel={t.home.seeAllIn(num(deals.length))}
         />
       </div>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-        {deals.slice(0, 5).map((summary) => (
-          <ProductCard key={summary.product.id} summary={summary} deal={summary.drop} />
-        ))}
+      <div
+        className="overflow-hidden"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
+        <div
+          ref={trackRef}
+          className="flex gap-3"
+          style={{
+            transform: `translateX(-${index * step}px)`,
+            transition: transition ? "transform 500ms ease" : "none",
+          }}
+        >
+          {looped.map((summary, i) => (
+            <div
+              key={`${summary.product.id}-${i}`}
+              className="w-1/2 shrink-0 sm:w-1/3 lg:w-1/5"
+            >
+              <ProductCard key={summary.product.id} summary={summary} deal={summary.drop} loading="eager" />
+            </div>
+          ))}
+        </div>
       </div>
     </Shelf>
   );
@@ -275,7 +358,7 @@ function SpotlightShelf({ summaries }: { summaries: ProductSummary[] }) {
                     {t.home.bestPrice}
                   </span>
                   <span className="text-base font-bold tracking-tight">
-                    {formatTaka(lowest)}
+                    {formatTaka(lowest, lang)}
                   </span>
                 </span>
               )}
@@ -324,6 +407,11 @@ export function HomeView({ initial }: { initial: HomeData }) {
   const drops = summaries
     .filter((s) => s.drop)
     .sort((a, b) => (b.drop ?? 0) - (a.drop ?? 0));
+  // Fill the carousel: drops first, then popular non-drop products
+  const nonDrops = summaries
+    .filter((s) => !s.drop)
+    .sort(byPopularity);
+  const carouselItems = [...drops, ...nonDrops].slice(0, 25);
   const brands = [...new Set(summaries.map((s) => s.product.brand))];
   const trusted = [...sellers]
     .sort((a, b) => Number(b.verified) - Number(a.verified))
@@ -334,19 +422,22 @@ export function HomeView({ initial }: { initial: HomeData }) {
   const heroSub =
     (lang === "en" ? settings.taglineEn : settings.tagline) ||
     t.home.heroSub;
+  const heroEyebrow =
+    (lang === "en" ? settings.heroEyebrowEn : settings.heroEyebrow) ||
+    t.home.heroEyebrow;
 
   return (
     <div className="flex flex-col gap-6 md:gap-8">
       <div className="grid gap-4 lg:grid-cols-[minmax(0,1.55fr)_minmax(0,1fr)]">
-        <section className="relative flex flex-col justify-between gap-6 overflow-hidden rounded-xl bg-hero p-6 text-white shadow-hero md:p-10">
+        <section className="relative flex flex-col justify-between gap-5 overflow-hidden rounded-xl bg-hero p-5 text-white shadow-hero md:p-8">
           <span
             aria-hidden="true"
             className="pointer-events-none absolute -top-24 -right-24 size-72 rounded-full border-[40px] border-white/5"
           />
-          <div className="relative flex flex-col gap-4">
+          <div className="relative flex flex-col gap-3.5">
             <span className="inline-flex w-fit items-center gap-2 text-[12.5px] font-medium text-white/70">
               <span className="size-1.5 rounded-full bg-[#5fe3c9] shadow-[0_0_0_3px_rgb(95_227_201/0.18)]" aria-hidden="true" />
-              {t.home.heroEyebrow}
+              {heroEyebrow}
             </span>
             <h1 className="max-w-xl text-2xl leading-[1.18] font-bold tracking-tight md:text-[40px] md:leading-[1.16]">
               {heroTitle}
@@ -354,7 +445,7 @@ export function HomeView({ initial }: { initial: HomeData }) {
             <p className="max-w-[46ch] text-sm leading-relaxed text-white/75 md:text-[15.5px]">
               {heroSub}
             </p>
-            <div className="mt-2 flex flex-wrap items-center gap-2.5">
+            <div className="mt-1 flex flex-wrap items-center gap-2.5">
               <Link
                 href={`${prefix}/search/`}
                 className="inline-flex h-11 shrink-0 items-center gap-2 rounded-md bg-white px-4 text-[13.5px] font-bold text-brand shadow-[0_10px_24px_-14px_rgb(0_0_0/0.55)] transition-transform hover:-translate-y-px md:h-[46px] md:px-5 md:text-[14.5px]"
@@ -387,31 +478,37 @@ export function HomeView({ initial }: { initial: HomeData }) {
 
       <CategoryTiles summaries={summaries} />
 
-      <DealsShelf deals={drops} />
+      {(settings.showDrops ?? true) && (
+        <DealsShelf deals={carouselItems} interval={settings.dropsInterval ?? 4} />
+      )}
 
-      <SpotlightShelf summaries={summaries} />
+      {(settings.showSpotlight ?? true) && <SpotlightShelf summaries={summaries} />}
 
-      <CategoryRows summaries={summaries} />
+      {(settings.showCategoryRows ?? true) && <CategoryRows summaries={summaries} />}
 
-      <Shelf>
-        <SectionHeader title={t.home.brands} />
-        <BrandMarquee brands={brands} />
-      </Shelf>
+      {(settings.showBrands ?? true) && (
+        <Shelf>
+          <SectionHeader title={t.home.brands} />
+          <BrandMarquee brands={brands} />
+        </Shelf>
+      )}
 
       <div className="grid gap-6 lg:grid-cols-[1.6fr_1fr]">
-        <Shelf>
-          <SectionHeader
-            title={t.home.sellers}
-            subtitle={t.home.sellersSub}
-            href={`${prefix}/sellers/`}
-            linkLabel={t.common.seeAll}
-          />
-          <div className="-mx-4 divide-y divide-line-soft md:-mx-6">
-            {trusted.map((seller) => (
-              <SellerCard key={seller.id} seller={seller} />
-            ))}
-          </div>
-        </Shelf>
+        {(settings.showSellers ?? true) && (
+          <Shelf>
+            <SectionHeader
+              title={t.home.sellers}
+              subtitle={t.home.sellersSub}
+              href={`${prefix}/sellers/`}
+              linkLabel={t.common.seeAll}
+            />
+            <div className="-mx-4 divide-y divide-line-soft md:-mx-6">
+              {trusted.map((seller) => (
+                <SellerCard key={seller.id} seller={seller} />
+              ))}
+            </div>
+          </Shelf>
+        )}
 
         <section className="relative flex flex-col items-start justify-center gap-4 overflow-hidden rounded-lg bg-gold-soft p-6 ring-1 ring-gold/25 md:p-8">
           <span

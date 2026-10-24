@@ -78,7 +78,7 @@ export function SearchView() {
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
-  const { t, num: n, prefix } = useI18n();
+  const { t, num: n, prefix, lang } = useI18n();
   const { find, name, family } = useCategories();
   const { data, error, loading, reload } = useAsync(listSummaries, []);
   const [drawer, setDrawer] = useState(false);
@@ -120,7 +120,7 @@ export function SearchView() {
   const active: { label: string; patch: Record<string, string | null> }[] = [
     ...filters.brands.map((b) => ({ label: b, patch: { brand: filters.brands.filter((x) => x !== b).join(",") || null } })),
     ...(filters.min !== null || filters.max !== null
-      ? [{ label: `${formatTaka(filters.min ?? facets.priceFloor)} – ${formatTaka(filters.max ?? facets.priceCeil)}`, patch: { min: null, max: null } }]
+      ? [{ label: `${formatTaka(filters.min ?? facets.priceFloor, lang)} – ${formatTaka(filters.max ?? facets.priceCeil, lang)}`, patch: { min: null, max: null } }]
       : []),
     ...(filters.inStock ? [{ label: t.search.inStock, patch: { stock: null } }] : []),
     ...(filters.unofficial ? [{ label: t.search.unofficialToo, patch: { unofficial: null } }] : []),

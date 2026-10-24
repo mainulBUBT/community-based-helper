@@ -3,6 +3,7 @@
 import { Plus, Trash2 } from "lucide-react";
 import { useState, type FormEvent } from "react";
 import { Field, TextArea } from "@/components/admin/Field";
+import { Toggle } from "@/components/admin/Toggle";
 import { LangSwitch, LangTabs, type Lang } from "@/components/admin/LangTabs";
 import {
   PageTitle,
@@ -128,6 +129,12 @@ function SettingsForm({ initial }: { initial: SiteSettings }) {
   const [regionNotes, setRegionNotes] = useState<RegionNote[]>(
     initial.regionNotes,
   );
+  const [showDrops, setShowDrops] = useState(initial.showDrops);
+  const [showSpotlight, setShowSpotlight] = useState(initial.showSpotlight);
+  const [showCategoryRows, setShowCategoryRows] = useState(initial.showCategoryRows);
+  const [showBrands, setShowBrands] = useState(initial.showBrands);
+  const [showSellers, setShowSellers] = useState(initial.showSellers);
+  const [dropsInterval, setDropsInterval] = useState(initial.dropsInterval);
   const [seoDescriptionEn, setSeoDescriptionEn] = useState(
     initial.seoDescriptionEn,
   );
@@ -155,10 +162,18 @@ function SettingsForm({ initial }: { initial: SiteSettings }) {
           cloudflareAnalyticsToken: value("cloudflareAnalyticsToken"),
           heroTitle: value("heroTitle") ?? initial.heroTitle,
           heroTitleEn: value("heroTitleEn") ?? initial.heroTitleEn,
+          heroEyebrow: value("heroEyebrow") ?? "",
+          heroEyebrowEn: value("heroEyebrowEn") ?? "",
           quickSearches: String(data.get("quickSearches") ?? "")
             .split(",")
             .map((q) => q.trim())
             .filter(Boolean),
+          showDrops,
+          showSpotlight,
+          showCategoryRows,
+          showBrands,
+          showSellers,
+          dropsInterval: Number(dropsInterval) || initial.dropsInterval,
           announcement: value("announcement"),
           announcementEn: value("announcementEn"),
           announcementLink: value("announcementLink"),
@@ -272,6 +287,11 @@ function SettingsForm({ initial }: { initial: SiteSettings }) {
               en={
                 <>
                   <Field
+                    label={t.admin.settings.heroEyebrowEn}
+                    name="heroEyebrowEn"
+                    defaultValue={initial.heroEyebrowEn}
+                  />
+                  <Field
                     label={t.admin.settings.heroTitleEn}
                     name="heroTitleEn"
                     defaultValue={initial.heroTitleEn}
@@ -286,6 +306,11 @@ function SettingsForm({ initial }: { initial: SiteSettings }) {
               }
               bn={
                 <>
+                  <Field
+                    label={t.admin.settings.heroEyebrowBn}
+                    name="heroEyebrow"
+                    defaultValue={initial.heroEyebrow}
+                  />
                   <Field
                     label={t.admin.settings.heroTitleBn}
                     name="heroTitle"
@@ -307,6 +332,35 @@ function SettingsForm({ initial }: { initial: SiteSettings }) {
               name="quickSearches"
               defaultValue={initial.quickSearches.join(", ")}
               hint={t.admin.settings.quickSearchesHint}
+            />
+          </div>
+          <div className="md:col-span-2 flex flex-col gap-3 rounded-lg border border-line-soft p-4">
+            <span className="text-sm font-semibold">{t.admin.settings.homeSectionsTitle}</span>
+            <div className="flex items-center justify-between">
+              <span className="text-sm">{t.admin.settings.showDrops}</span>
+              <Toggle checked={showDrops} onChange={setShowDrops} label={t.admin.settings.showDrops} />
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-sm">{t.admin.settings.showSpotlight}</span>
+              <Toggle checked={showSpotlight} onChange={setShowSpotlight} label={t.admin.settings.showSpotlight} />
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-sm">{t.admin.settings.showCategoryRows}</span>
+              <Toggle checked={showCategoryRows} onChange={setShowCategoryRows} label={t.admin.settings.showCategoryRows} />
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-sm">{t.admin.settings.showBrands}</span>
+              <Toggle checked={showBrands} onChange={setShowBrands} label={t.admin.settings.showBrands} />
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-sm">{t.admin.settings.showSellers}</span>
+              <Toggle checked={showSellers} onChange={setShowSellers} label={t.admin.settings.showSellers} />
+            </div>
+            <Field
+              label={t.admin.settings.dropsInterval}
+              type="number"
+              value={String(dropsInterval)}
+              onChange={(e) => setDropsInterval(Number(e.target.value) || initial.dropsInterval)}
             />
           </div>
           <Field

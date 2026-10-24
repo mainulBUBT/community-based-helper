@@ -28,7 +28,7 @@ function useWidth() {
 }
 
 function Change({ from, to }: { from: number; to: number }) {
-  const { t, num } = useI18n();
+  const { t, num, lang } = useI18n();
   const diff = to - from;
   if (diff === 0) {
     return (
@@ -43,7 +43,7 @@ function Change({ from, to }: { from: number; to: number }) {
   return (
     <span className={`flex items-center gap-1 text-sm font-semibold ${down ? "text-ok" : "text-sale"}`}>
       <Icon size={16} aria-hidden="true" />
-      {formatTaka(Math.abs(diff))} ({num(Math.round((Math.abs(diff) / from) * 100))}%)
+       {formatTaka(Math.abs(diff), lang)} ({num(Math.round((Math.abs(diff) / from) * 100))}%) {down ? t.product.chartDown : t.product.chartUp}
     </span>
   );
 }
@@ -86,7 +86,7 @@ export function PriceChart({ history }: { history: PricePoint[] }) {
       <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
         <div className="flex flex-col">
           <span className="text-xs font-medium text-dim">{t.product.chartNow}</span>
-          <span className="text-xl leading-tight font-bold tracking-tight text-ink">{formatTaka(last.price)}</span>
+          <span className="text-xl leading-tight font-bold tracking-tight text-ink">{formatTaka(last.price, lang)}</span>
         </div>
         <div className="flex flex-col items-end">
           <span className="text-xs font-medium text-dim">{t.product.chartChange}</span>
@@ -101,7 +101,7 @@ export function PriceChart({ history }: { history: PricePoint[] }) {
             height={H}
             className="block touch-pan-y select-none"
             role="img"
-            aria-label={t.product.chartLabel(formatTaka(first.price), formatTaka(last.price))}
+            aria-label={t.product.chartLabel(formatTaka(first.price, lang), formatTaka(last.price, lang))}
             onPointerMove={onMove}
             onPointerDown={onMove}
             onPointerLeave={() => setHover(null)}
@@ -119,10 +119,10 @@ export function PriceChart({ history }: { history: PricePoint[] }) {
               <>
                 <line x1="0" x2={width} y1={y(low)} y2={y(low)} className="stroke-ok" strokeWidth="1" strokeDasharray="4 4" />
                 <text x="2" y={y(low) + 14} className="fill-ok text-[11px] font-semibold">
-                  {t.product.chartLow} {formatTaka(low)}
+                  {t.product.chartLow} {formatTaka(low, lang)}
                 </text>
                 <text x="2" y={TOP - 3} className="fill-faint text-[11px]">
-                  {formatTaka(high)}
+                  {formatTaka(high, lang)}
                 </text>
               </>
             )}
@@ -149,7 +149,7 @@ export function PriceChart({ history }: { history: PricePoint[] }) {
             style={{ left: tipLeft }}
           >
             <span className="text-[11px] text-dim">{active.day === last.day ? t.product.today("").trim() : dateOf(active.day)}</span>
-            <span className="text-sm font-bold text-ink">{formatTaka(active.price)}</span>
+            <span className="text-sm font-bold text-ink">{formatTaka(active.price, lang)}</span>
           </div>
         )}
       </div>
@@ -157,13 +157,16 @@ export function PriceChart({ history }: { history: PricePoint[] }) {
       <div className="flex flex-wrap items-center justify-between gap-2 text-[13px]">
         {last.price === low ? (
           <span className="rounded-full bg-ok-soft px-2.5 py-1 font-semibold text-ok">{t.product.chartBestNow}</span>
+        ) : last.price === high ? (
+          <span className="rounded-full bg-sale-soft px-2.5 py-1 font-semibold text-sale">{t.product.chartAtHigh}</span>
         ) : (
-          <span className="rounded-full bg-gold-soft px-2.5 py-1 font-semibold text-gold-text">{t.product.chartAboveLow(formatTaka(last.price - low))}</span>
+          <span className="rounded-full bg-gold-soft px-2.5 py-1 font-semibold text-gold-text">{t.product.chartAboveLow(formatTaka(last.price - low, lang))}</span>
         )}
         <span className="text-dim">
-          {t.product.chartHigh} {formatTaka(high)}
+          {t.product.chartHigh} {formatTaka(high, lang)}
         </span>
       </div>
+      <p className="text-[12px] leading-snug text-dim">{t.product.chartNote}</p>
     </figure>
   );
 }

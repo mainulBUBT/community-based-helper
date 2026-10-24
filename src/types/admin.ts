@@ -56,7 +56,15 @@ export interface SiteSettings {
   cloudflareAnalyticsToken: string | null;
   heroTitle: string;
   heroTitleEn: string;
+  heroEyebrow: string;
+  heroEyebrowEn: string;
   quickSearches: string[];
+  showDrops: boolean;
+  showSpotlight: boolean;
+  showCategoryRows: boolean;
+  showBrands: boolean;
+  showSellers: boolean;
+  dropsInterval: number;
   announcement: string | null;
   announcementEn: string | null;
   announcementLink: string | null;

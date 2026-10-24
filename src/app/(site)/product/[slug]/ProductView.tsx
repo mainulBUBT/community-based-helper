@@ -80,7 +80,7 @@ function Option({ selected, muted = false, onClick, children }: { selected: bool
 }
 
 function VariantPicker({ variants, current, onPick, priceOf }: { variants: Variant[]; current: Variant; onPick: (id: string) => void; priceOf: (id: string) => number | null }) {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const axes = AXES.filter((axis) => variants.some((v) => v.attributes[axis]));
   const byAxes = axes.length > 0 && variants.every((v) => axes.some((axis) => v.attributes[axis]));
 
@@ -94,7 +94,7 @@ function VariantPicker({ variants, current, onPick, priceOf }: { variants: Varia
             return (
               <Option key={v.id} selected={v.id === current.id} onClick={() => onPick(v.id)}>
                 <span className="text-sm font-semibold">{v.label}</span>
-                {price && <span className="text-xs text-dim">{formatTaka(price)}</span>}
+                {price && <span className="text-xs text-dim">{formatTaka(price, lang)}</span>}
               </Option>
             );
           })}
@@ -130,7 +130,7 @@ function VariantPicker({ variants, current, onPick, priceOf }: { variants: Varia
                     onClick={() => onPick((exact ?? variants.find((v) => v.attributes[axis] === value))!.id)}
                   >
                     <span className="text-sm font-semibold">{value}</span>
-                    <span className="text-xs text-dim">{exact ? (price ? formatTaka(price) : "—") : t.product.unavailable}</span>
+                    <span className="text-xs text-dim">{exact ? (price ? formatTaka(price, lang) : "—") : t.product.unavailable}</span>
                   </Option>
                 );
               })}
@@ -293,10 +293,10 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
             <div className="flex flex-col gap-2 border-y border-line-soft py-4">
               <span className="text-[13px] font-medium text-dim">{t.product.lowestLabel}</span>
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                <span className="text-[24px] leading-none font-bold tracking-tight text-ink md:text-[28px]">{formatTaka(best.price)}</span>
+                <span className="text-[24px] leading-none font-bold tracking-tight text-ink md:text-[28px]">{formatTaka(best.price, lang)}</span>
                 {off > 0 && (
                   <>
-                    <span className="text-base text-faint line-through">{formatTaka(reference)}</span>
+                    <span className="text-base text-faint line-through">{formatTaka(reference, lang)}</span>
                     <span className="rounded bg-sale-soft px-1.5 py-0.5 text-xs font-semibold text-sale">{t.product.off(num(off))}</span>
                   </>
                 )}
@@ -308,7 +308,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
                 <VerifiedBadge verified={best.seller.verified} />
                 {official && official !== reference && (
                   <span className="text-dim">
-                    · {t.product.officialShort} {formatTaka(official)}
+                    · {t.product.officialShort} {formatTaka(official, lang)}
                   </span>
                 )}
               </div>
@@ -446,7 +446,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
       {best && (
         <div className="fixed inset-x-0 bottom-[calc(4rem+1px+env(safe-area-inset-bottom))] z-30 flex items-center gap-3 border-t border-line bg-surface px-4 py-2.5 shadow-[0_-4px_12px_rgb(0_0_0/0.06)] md:hidden">
           <span className="flex min-w-0 flex-1 flex-col">
-            <span className="text-lg leading-tight font-bold text-ink">{formatTaka(best.price)}</span>
+            <span className="text-lg leading-tight font-bold text-ink">{formatTaka(best.price, lang)}</span>
             <span className="truncate text-xs text-dim">{t.product.atStore(best.seller.name)}</span>
           </span>
           <BuyButton offer={best} className="h-11 px-5" />

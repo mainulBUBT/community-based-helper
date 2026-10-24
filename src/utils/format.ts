@@ -2,7 +2,8 @@ const BN_DIGITS = "০১২৩৪৫৬৭৮৯";
 
 export const toBnDigits = (value: string | number) => String(value).replace(/\d/g, (d) => BN_DIGITS[Number(d)]);
 
-export const formatTaka = (amount: number) => `৳${amount.toLocaleString("en-IN")}`;
+export const formatTaka = (amount: number, lang: "bn" | "en" = "en") =>
+  `৳${amount.toLocaleString(lang === "bn" ? "bn-BD" : "en-IN")}`;
 
 export function timeAgo(iso: string, now = Date.now()) {
   const minutes = Math.max(0, Math.round((now - new Date(iso).getTime()) / 60000));

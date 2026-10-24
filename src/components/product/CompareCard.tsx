@@ -9,7 +9,7 @@ import { formatTaka } from "@/utils/format";
 import { ProductIcon } from "./ProductIcon";
 
 export function CompareCard({ pick }: { pick: ComparePick | null }) {
-  const { t, num, prefix } = useI18n();
+  const { t, num, lang, prefix } = useI18n();
   if (!pick) return null;
   const { product, compareAt } = pick.summary;
   const photo = product.images?.[0];
@@ -27,7 +27,7 @@ export function CompareCard({ pick }: { pick: ComparePick | null }) {
         </span>
         {saving > 0 && (
           <span className="rounded-xs bg-gold-soft px-2 py-1 text-[11px] font-bold text-gold-text">
-            {offPercent > 0 ? t.home.compareOff(num(offPercent)) : t.home.compareSaved(num(saving.toLocaleString("en-IN")))}
+            {offPercent > 0 ? t.home.compareOff(num(offPercent)) : t.home.compareSaved(num(saving.toLocaleString(lang === "bn" ? "bn-BD" : "en-IN")))}
           </span>
         )}
       </div>
@@ -58,10 +58,10 @@ export function CompareCard({ pick }: { pick: ComparePick | null }) {
           )}
           <div className="mt-1.5 flex flex-wrap items-baseline gap-x-2">
             <span className="text-xl font-bold tracking-tight">
-              {formatTaka(lowestPrice)}
+              {formatTaka(lowestPrice, lang)}
             </span>
             {compareAt && (
-              <span className="text-xs text-faint line-through">{formatTaka(compareAt)}</span>
+              <span className="text-xs text-faint line-through">{formatTaka(compareAt, lang)}</span>
             )}
           </div>
         </div>
@@ -81,7 +81,7 @@ export function CompareCard({ pick }: { pick: ComparePick | null }) {
                   {offer.seller.name}
                 </span>
                 <span className={`shrink-0 text-[13px] font-bold tabular-nums ${best ? "text-brand" : ""}`}>
-                  {formatTaka(offer.price)}
+                  {formatTaka(offer.price, lang)}
                 </span>
               </Link>
             </li>
@@ -93,7 +93,7 @@ export function CompareCard({ pick }: { pick: ComparePick | null }) {
         <span className="truncate">
           {t.home.compareFound(num(pick.summary.sellerCount))}
           {highestPrice > lowestPrice && (
-            <span className="ms-1.5 text-faint">{formatTaka(highestPrice - lowestPrice)}</span>
+            <span className="ms-1.5 text-faint">{formatTaka(highestPrice - lowestPrice, lang)}</span>
           )}
         </span>
         <Link

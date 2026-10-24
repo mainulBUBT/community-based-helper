@@ -8,7 +8,7 @@ import { formatTaka } from "@/utils/format";
 import { ProductIcon } from "./ProductIcon";
 
 export function ProductRow({ summary }: { summary: ProductSummary }) {
-  const { t, num, prefix } = useI18n();
+  const { t, num, prefix, lang } = useI18n();
   const { product, lowest, sellerCount, drop } = summary;
   const details = [product.variants.length > 1 ? t.product.variants(num(product.variants.length)) : null, t.product.stores(num(sellerCount))];
   return (
@@ -20,8 +20,8 @@ export function ProductRow({ summary }: { summary: ProductSummary }) {
         <span className="text-xs text-dim">{details.filter(Boolean).join(", ")}</span>
       </span>
       <span className="flex flex-col items-end gap-1">
-        <span className="text-base font-bold">{lowest ? formatTaka(lowest) : t.product.none}</span>
-        {drop ? <span className="rounded bg-gold-soft px-1.5 text-xs font-bold text-gold-text">−{formatTaka(drop)}</span> : <span className="text-xs text-dim">{t.product.from}</span>}
+        <span className="text-base font-bold">{lowest ? formatTaka(lowest, lang) : t.product.none}</span>
+        {drop ? <span className="rounded bg-gold-soft px-1.5 text-xs font-bold text-gold-text">−{formatTaka(drop, lang)}</span> : <span className="text-xs text-dim">{t.product.from}</span>}
       </span>
       <ChevronRight size={18} className="text-faint" aria-hidden="true" />
     </Link>

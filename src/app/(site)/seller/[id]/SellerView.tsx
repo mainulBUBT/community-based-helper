@@ -15,7 +15,7 @@ import { formatTaka } from "@/utils/format";
 type Detail = NonNullable<Awaited<ReturnType<typeof getSellerDetail>>>;
 
 export function SellerView({ initial }: { initial: Detail }) {
-  const { t, ago, prefix } = useI18n();
+  const { t, ago, prefix, lang } = useI18n();
   const { data } = useAsync(() => getSellerDetail(initial.seller.id), [initial.seller.id], initial);
   const { seller, listings, promos } = data ?? initial;
 
@@ -67,7 +67,7 @@ export function SellerView({ initial }: { initial: Detail }) {
                 </span>
                 <span className="text-[13px] text-dim">{[variant.label, t.condition[offer.condition], ago(offer.checkedAt)].join(", ")}</span>
               </span>
-              <span className="font-bold">{formatTaka(offer.price)}</span>
+              <span className="font-bold">{formatTaka(offer.price, lang)}</span>
             </Link>
           ))}
         </div>
