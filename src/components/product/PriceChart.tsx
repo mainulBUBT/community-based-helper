@@ -52,7 +52,8 @@ export function PriceChart({ history }: { history: PricePoint[] }) {
   const { t, lang } = useI18n();
   const { ref, width } = useWidth();
   const [hover, setHover] = useState<number | null>(null);
-  const [now] = useState(() => Date.now());
+  // বিল্ড-টাইম আর দেখার সময় আলাদা হয় বলে now ডেটা থেকে আসে — না হলে SVG/লেবেল hydration মিসম্যাচ করে।
+  const [now] = useState(() => (history.length ? Math.max(...history.map((p) => Date.parse(p.seenAt))) : 0));
   const points = dailyLowest(history, DAYS, now);
   if (points.length < 2) return <p className="text-sm text-dim">{t.product.chartEmpty}</p>;
 
@@ -71,7 +72,7 @@ export function PriceChart({ history }: { history: PricePoint[] }) {
   const line = points.reduce((d, p, i) => (i === 0 ? `M${x(p.day)},${y(p.price)}` : `${d} H${x(p.day)} V${y(p.price)}`), "") + ` H${x(DAYS)}`;
   const area = `${line} V${base} H${x(first.day)} Z`;
   const dateOf = (day: number) =>
-    new Date(now - (DAYS - day) * DAY_MS).toLocaleDateString(lang === "bn" ? "bn-BD" : "en-GB", { day: "numeric", month: "short" });
+    new Date(now - (DAYS - day) * DAY_MS).toLocaleDateString(lang === "bn" ? "bn-BD" : "en-GB", { day: "numeric", month: "short", timeZone: "Asia/Dhaka" });
 
   const active = hover === null ? null : (points.find((p) => p.day === hover) ?? null);
   const onMove = (event: PointerEvent<SVGSVGElement>) => {
