@@ -30,6 +30,9 @@ export function sameProduct(a: { brand: string; name: string }, b: { brand: stri
 
 export const byPopularity = (a: ProductSummary, b: ProductSummary) => b.product.popularity - a.product.popularity;
 
+// স্টকে আছে বা জানা নেই আগে, "আপাতত নেই" শেষে; বাকি ক্রম আগের মতোই থাকে
+export const byStock = (a: { inStock: boolean | null }, b: { inStock: boolean | null }) => Number(b.inStock !== false) - Number(a.inStock !== false);
+
 export function toCard(summary: ProductSummary): ProductSummary {
   const { id, slug, name, brand, category, releaseYear, popularity, variants, images } = summary.product;
   return { ...summary, product: { id, slug, name, brand, category, releaseYear, popularity, variants, images: images?.slice(0, 1) } };

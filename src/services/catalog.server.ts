@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { DEFAULT_SETTINGS } from "@/config/site";
 import type { SiteSettings } from "@/types/admin";
-import { toCard } from "@/utils/catalog";
+import { byStock, toCard } from "@/utils/catalog";
 import { categoryFamily } from "@/utils/categories";
 import { brandSlug } from "@/utils/url";
 import { safeUrl } from "@/utils/url";
@@ -65,7 +65,7 @@ export async function getCategoryPage(slug: string) {
   const category = categories.find((c) => c.slug === slug);
   if (!category) return null;
   const family = new Set(categoryFamily(categories, slug));
-  const items = summaries.filter((s) => family.has(s.product.category)).sort((a, b) => b.product.popularity - a.product.popularity);
+  const items = summaries.filter((s) => family.has(s.product.category)).sort((a, b) => byStock(a, b) || b.product.popularity - a.product.popularity);
   return { category, summaries: items.map(toCard) };
 }
 
@@ -86,7 +86,7 @@ export async function listBrands() {
 
 export async function getBrandPage(slug: string) {
   const [summaries, categories] = await Promise.all([listSummaries(), listCategories()]);
-  const items = summaries.filter((s) => brandSlug(s.product.brand) === slug).sort((a, b) => b.product.popularity - a.product.popularity);
+  const items = summaries.filter((s) => brandSlug(s.product.brand) === slug).sort((a, b) => byStock(a, b) || b.product.popularity - a.product.popularity);
   if (!items.length) return null;
   const used = new Set(items.map((s) => s.product.category));
   return { brand: items[0].product.brand, summaries: items.map(toCard), categories: categories.filter((c) => used.has(c.slug)) };

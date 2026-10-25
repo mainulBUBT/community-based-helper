@@ -1,5 +1,5 @@
 import { findCheaperAlternatives } from "@/utils/alternatives";
-import { byPrice } from "@/utils/catalog";
+import { byPrice, byStock } from "@/utils/catalog";
 import type { SiteSettings } from "@/types/admin";
 import type { Alternative, CategoryInfo, Offer, OfferView, PricePoint, Product, ProductDetail, ProductSummary, Promo, Seller } from "@/types/catalog";
 
@@ -20,7 +20,7 @@ export function viewOffers(catalog: Catalog, offers: Offer[]): OfferView[] {
       seller: sellers.get(offer.sellerId)!,
       promos: catalog.promos.filter((p) => p.sellerId === offer.sellerId),
     }))
-    .sort(byPrice);
+    .sort((a, b) => byStock(a, b) || byPrice(a, b));
 }
 
 export function summarize(catalog: Catalog, product: Product): ProductSummary {
@@ -28,8 +28,11 @@ export function summarize(catalog: Catalog, product: Product): ProductSummary {
   const offers = catalog.offers.filter((o) => variantIds.has(o.variantId));
   // ওয়ারেন্টি নেই এমন ক্যাটাগরিতে (স্কিনকেয়ার, জুতা) অফিসিয়াল/আনঅফিসিয়াল ভাগ নেই, সব দামই সমান
   const warranty = catalog.categories.find((c) => c.slug === product.category)?.warranty !== false;
-  const official = warranty ? offers.filter((o) => o.condition === "official") : offers;
-  const priced = official.length ? official : offers;
+  // কার্ডের দাম স্টকে থাকা দোকান থেকে; কোথাও স্টক না থাকলে তবেই সব দোকান থেকে
+  const available = offers.filter((o) => o.inStock !== false);
+  const pool = available.length ? available : offers;
+  const official = warranty ? pool.filter((o) => o.condition === "official") : pool;
+  const priced = official.length ? official : pool;
   const best = priced.length ? priced.reduce((a, b) => (b.price < a.price ? b : a)) : null;
   const lowest = best?.price ?? null;
   const listPrice = best ? product.variants.find((v) => v.id === best.variantId)?.officialPrice : null;
@@ -38,7 +41,7 @@ export function summarize(catalog: Catalog, product: Product): ProductSummary {
   return {
     product,
     lowest,
-    lowestAny: offers.length ? Math.min(...offers.map((o) => o.price)) : null,
+    lowestAny: pool.length ? Math.min(...pool.map((o) => o.price)) : null,
     compareAt,
     inStock: offers.some((o) => o.inStock !== false),
     sellerCount: new Set(offers.map((o) => o.sellerId)).size,
@@ -178,7 +181,7 @@ export function makeService(load: CatalogLoader, loadHistory: HistoryLoader = ()
     const listings = catalog.offers
       .filter((o) => o.sellerId === id && variants.has(o.variantId))
       .map((offer) => ({ offer, ...variants.get(offer.variantId)! }))
-      .sort((a, b) => b.product.popularity - a.product.popularity);
+      .sort((a, b) => byStock(a.offer, b.offer) || b.product.popularity - a.product.popularity);
     return { seller, listings, promos: catalog.promos.filter((p) => p.sellerId === id) };
   };
 

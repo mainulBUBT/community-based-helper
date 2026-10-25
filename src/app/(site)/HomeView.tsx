@@ -14,7 +14,7 @@ import { SellerCard } from "@/components/seller/SellerCard";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { useI18n } from "@/hooks/useI18n";
 import type { HomeData } from "@/services/catalog-core";
-import { byPopularity } from "@/utils/catalog";
+import { byPopularity, byStock } from "@/utils/catalog";
 
 export function HomeView({ initial }: { initial: HomeData }) {
   const { lang, t, prefix } = useI18n();
@@ -22,11 +22,11 @@ export function HomeView({ initial }: { initial: HomeData }) {
 
   const drops = summaries
     .filter((s) => s.drop)
-    .sort((a, b) => (b.drop ?? 0) - (a.drop ?? 0));
+    .sort((a, b) => byStock(a, b) || (b.drop ?? 0) - (a.drop ?? 0));
   // Fill the carousel: drops first, then popular non-drop products
   const nonDrops = summaries
     .filter((s) => !s.drop)
-    .sort(byPopularity);
+    .sort((a, b) => byStock(a, b) || byPopularity(a, b));
   const carouselItems = [...drops, ...nonDrops].slice(0, 25);
   const brands = [...new Set(summaries.map((s) => s.product.brand))];
   const trusted = [...sellers]

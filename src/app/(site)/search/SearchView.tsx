@@ -18,7 +18,7 @@ import { useI18n } from "@/hooks/useI18n";
 import { trackView } from "@/services/analytics";
 import { listSummaries } from "@/services/catalog";
 import { AXES, type Axis, type ProductSummary } from "@/types/catalog";
-import { matchesQuery } from "@/utils/catalog";
+import { byStock, matchesQuery } from "@/utils/catalog";
 import { formatTaka } from "@/utils/format";
 import { categoryPath } from "@/utils/url";
 import { sortAxisValues } from "@/utils/variants";
@@ -124,7 +124,7 @@ export function SearchView({ category, brand, initial }: { category?: string; br
     priceFloor: prices.length ? Math.floor(Math.min(...prices) / 1000) * 1000 : 0,
     priceCeil: prices.length ? Math.ceil(Math.max(...prices) / 1000) * 1000 : 0,
   };
-  const results = summaries.filter((s) => matches(s, filters, query, familySet)).sort((a, b) => COMPARE[sort](a, b, filters.unofficial));
+  const results = summaries.filter((s) => matches(s, filters, query, familySet)).sort((a, b) => byStock(a, b) || COMPARE[sort](a, b, filters.unofficial));
   const paged = paginate(results, Number(params.get("page")) || 1, PAGE_SIZE);
   const goTo = (page: number) => {
     update({ page: page > 1 ? String(page) : null });

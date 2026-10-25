@@ -5,7 +5,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
 import type { ProductSummary } from "@/types/catalog";
-import { byPopularity } from "@/utils/catalog";
+import { byPopularity, byStock } from "@/utils/catalog";
 import { categoryPath } from "@/utils/url";
 import { Shelf } from "./Shelf";
 
@@ -17,7 +17,7 @@ export function CategoryRows({ summaries }: { summaries: ProductSummary[] }) {
       {top.map((c) => {
         const items = summaries
           .filter((s) => family(c.slug).includes(s.product.category))
-          .sort(byPopularity);
+          .sort((a, b) => byStock(a, b) || byPopularity(a, b));
         if (!items.length) return null;
         return (
           <Shelf key={c.slug}>

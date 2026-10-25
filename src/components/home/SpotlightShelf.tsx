@@ -8,6 +8,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
 import type { CategoryInfo, ProductSummary } from "@/types/catalog";
+import { byStock } from "@/utils/catalog";
 import { formatTaka } from "@/utils/format";
 import { categoryPath } from "@/utils/url";
 import { SectionEyebrow } from "./Shelf";
@@ -28,9 +29,10 @@ export function SpotlightShelf({ summaries }: { summaries: ProductSummary[] }) {
   const ranked = [...items]
     .sort(
       (a, b) =>
+        byStock(a, b) ||
         b.product.popularity +
-        b.sellerCount * 5 -
-        (a.product.popularity + a.sellerCount * 5),
+          b.sellerCount * 5 -
+          (a.product.popularity + a.sellerCount * 5),
     )
     .slice(0, 5);
   const label = (c: CategoryInfo) => (lang === "en" ? c.nameEn : c.name);

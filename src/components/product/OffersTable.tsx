@@ -43,7 +43,7 @@ function OfferRow({ offer, best, warranty }: { offer: OfferView; best: boolean; 
         <span className="flex items-center gap-1.5 text-[13px] text-dim">
           <span className={`size-1.5 shrink-0 rounded-full ${stockDot}`} aria-hidden="true" />
           <span className="truncate">
-            {stock} · {ago(offer.checkedAt)}
+            {stock}, {ago(offer.checkedAt)}
           </span>
         </span>
         {!link && seller.phone && <span className="text-[13px] font-semibold text-ink">{seller.phone}</span>}

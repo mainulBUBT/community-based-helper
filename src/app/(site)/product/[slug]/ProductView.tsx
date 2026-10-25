@@ -17,6 +17,7 @@ import { useI18n } from "@/hooks/useI18n";
 import { sharePage } from "@/lib/share";
 import type { RegionNote } from "@/types/admin";
 import { AXES, type Axis, type Condition, type OfferView, type ProductDetail, type SpecGroup, type Variant } from "@/types/catalog";
+import { byStock } from "@/utils/catalog";
 import { formatTaka, telLink } from "@/utils/format";
 import { primaryRegion } from "@/utils/region";
 import { brandPath, categoryPath, hostOf } from "@/utils/url";
@@ -211,7 +212,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   const regionNote = region ? regionNotes.find((n) => primaryRegion(n.region) === region) : undefined;
   const shown = variantOffers
     .filter((o) => (region ? primaryRegion(o.region) === region : condition === "all" || o.condition === condition))
-    .sort((a, b) => a.price - b.price || (a.condition === b.condition ? 0 : a.condition === "official" ? -1 : b.condition === "official" ? 1 : 0));
+    .sort((a, b) => byStock(a, b) || a.price - b.price || (a.condition === b.condition ? 0 : a.condition === "official" ? -1 : b.condition === "official" ? 1 : 0));
   const best = shown[0];
   const samePriceCount = best ? shown.filter((o) => o.price === best.price).length : 0;
   const fullName = `${product.brand} ${product.name}`;
@@ -220,7 +221,9 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   const reference = best ? Math.max(best.oldPrice ?? 0, best.condition === "official" || !warranty ? (official ?? 0) : 0) : 0;
   const off = best && reference > best.price ? Math.round(((reference - best.price) / reference) * 100) : 0;
   const variantLowest = (id: string) => {
-    const prices = offers.filter((o) => o.variantId === id && (condition === "all" || o.condition === condition)).map((o) => o.price);
+    const matching = offers.filter((o) => o.variantId === id && (condition === "all" || o.condition === condition));
+    const available = matching.filter((o) => o.inStock !== false);
+    const prices = (available.length ? available : matching).map((o) => o.price);
     return prices.length ? Math.min(...prices) : null;
   };
 
