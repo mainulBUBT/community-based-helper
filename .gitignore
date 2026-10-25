@@ -30,3 +30,6 @@ public/data/catalog/
 
 # Local tool state
 .tiermux/
+
+# worker এর দোকান-তালিকা আর discover এর ফল (GitHub cache/artifact এ যায়)
+.cache/

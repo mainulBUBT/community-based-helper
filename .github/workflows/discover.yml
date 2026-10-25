@@ -5,14 +5,20 @@ on:
     - cron: "0 20 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
   group: discover
   cancel-in-progress: false
 
 jobs:
-  run:
+  plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 50
+    timeout-minutes: 10
+    outputs:
+      run: ${{ steps.plan.outputs.run }}
+      stores: ${{ steps.plan.outputs.stores }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -20,7 +26,72 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run worker -- discover
+      - id: plan
+        run: npm run worker -- discover plan
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+
+  store:
+    needs: plan
+    if: needs.plan.outputs.stores != '' && needs.plan.outputs.stores != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        store: ${{ fromJSON(needs.plan.outputs.stores) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/cache/restore@v4
+        with:
+          path: .cache/listings
+          key: listings-${{ matrix.store }}-latest
+          restore-keys: listings-${{ matrix.store }}-
+      - run: npm run worker -- discover store ${{ matrix.store }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+      - if: always() && hashFiles('.cache/listings/*.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/listings
+          key: listings-${{ matrix.store }}-${{ hashFiles('.cache/listings/*.json') }}
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: discover-${{ matrix.store }}
+          path: .cache/discover/
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 1
+
+  finish:
+    needs: [plan, store]
+    if: always() && needs.plan.outputs.run != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          pattern: discover-*
+          path: .cache/discover
+          merge-multiple: true
+      - run: npm run worker -- discover finish
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          DISCOVER_RUN: ${{ needs.plan.outputs.run }}
+          DISCOVER_STORES: ${{ needs.plan.outputs.stores }}

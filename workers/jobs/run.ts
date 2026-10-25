@@ -11,19 +11,34 @@ interface JobRow {
   last_run_at: string | null;
 }
 
-export async function runJob(id: JobId, work: () => Promise<string>) {
+export interface JobRun {
+  id: number;
+  job: JobId;
+  startedAt: string;
+}
+
+export async function startJob(id: JobId): Promise<JobRun | null> {
   const job = (await must(db().from("jobs").select("name, enabled, run_requested_at, last_run_at").eq("id", id).single())) as JobRow;
   const requested = Boolean(job.run_requested_at && (!job.last_run_at || job.run_requested_at > job.last_run_at));
   const manual = process.env.GITHUB_EVENT_NAME === "workflow_dispatch";
   if (!job.enabled && !requested && !manual) {
     console.log(`${id}: paused, skipping`);
-    return;
+    return null;
   }
+
+  // আগের run কে GitHub সময় শেষে মেরে ফেললে সেটা "running" থেকে যায়
+  const stale = new Date(Date.now() - 2 * 3600_000).toISOString();
+  await must(
+    db().from("job_runs").update({ status: "failed", message: "শেষ হওয়ার আগেই থেমে গেছে (সময় শেষ)", finished_at: new Date().toISOString() }).eq("job_id", id).eq("status", "running").lt("started_at", stale),
+  );
 
   const startedAt = new Date().toISOString();
   const run = (await must(db().from("job_runs").insert({ job_id: id, status: "running", started_at: startedAt }).select("id").single())) as { id: number };
   await must(db().from("jobs").update({ last_run_at: startedAt, last_status: "running", run_requested_at: null }).eq("id", id));
+  return { id: run.id, job: id, startedAt };
+}
 
+export async function finishJob(run: JobRun, work: () => Promise<string>) {
   let status = "ok";
   let text: string;
   try {
@@ -33,10 +48,18 @@ export async function runJob(id: JobId, work: () => Promise<string>) {
     text = message(error);
     process.exitCode = 1;
   }
-  console.log(`${id}: ${status}: ${text}`);
+  console.log(`${run.job}: ${status}: ${text}`);
 
   const finishedAt = new Date().toISOString();
   await must(db().from("job_runs").update({ status, message: text, finished_at: finishedAt }).eq("id", run.id));
-  await must(db().from("jobs").update({ last_status: status, last_message: text }).eq("id", id));
-  if (status === "failed") await alert(`সাশ্রয়: "${job.name}" ব্যর্থ\n${text}`).catch((error) => console.error(message(error)));
+  await must(db().from("jobs").update({ last_status: status, last_message: text }).eq("id", run.job));
+  if (status === "failed") {
+    const { name } = (await must(db().from("jobs").select("name").eq("id", run.job).single())) as { name: string };
+    await alert(`দরদাম: "${name}" ব্যর্থ\n${text}`).catch((error) => console.error(message(error)));
+  }
+}
+
+export async function runJob(id: JobId, work: (run: JobRun) => Promise<string>) {
+  const run = await startJob(id);
+  if (run) await finishJob(run, () => work(run));
 }

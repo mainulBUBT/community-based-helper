@@ -1,11 +1,12 @@
 import { closeBrowser } from "./lib/browser";
 import { discover } from "./jobs/discover";
+import { discoverStep } from "./jobs/matrix";
 import { refreshPrices } from "./jobs/prices";
 import { readPromos } from "./jobs/promos";
 import { rebuild } from "./jobs/rebuild";
-import { runJob, type JobId } from "./jobs/run";
+import { runJob, type JobId, type JobRun } from "./jobs/run";
 
-const jobs: Record<JobId, () => Promise<string>> = {
+const jobs: Record<JobId, (run: JobRun) => Promise<string>> = {
   prices: refreshPrices,
   discover,
   promos: readPromos,
@@ -13,10 +14,11 @@ const jobs: Record<JobId, () => Promise<string>> = {
 };
 
 async function main() {
-  const id = process.argv[2] as JobId;
+  const [id, step, arg] = process.argv.slice(2) as [JobId, string | undefined, string | undefined];
   if (!(id in jobs)) throw new Error(`usage: worker <${Object.keys(jobs).join("|")}>`);
   try {
-    await runJob(id, jobs[id]);
+    if (id === "discover" && step) await discoverStep(step, arg);
+    else await runJob(id, jobs[id]);
   } finally {
     await closeBrowser();
   }

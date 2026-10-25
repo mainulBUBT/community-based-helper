@@ -30,5 +30,7 @@ export interface Store {
   condition: Condition;
   parse?: (html: string) => Quote | null;
   variants?: (html: string, url: string) => ShopVariant[] | Promise<ShopVariant[]>;
+  // listing পণ্যের উপর নির্ভর করলে: ব্র্যান্ডের ক্যাটাগরি থেকে ("brand") বা প্রতি পণ্যে সার্চ ("name"); না দিলে পুরো sitemap
+  listsBy?: "brand" | "name";
   discover: (products: Pick<CatalogProduct, "name" | "brand">[]) => Promise<Listing[]>;
 }
