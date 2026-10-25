@@ -1,8 +1,8 @@
 "use client";
 
-import { ImageIcon } from "lucide-react";
+import { ExternalLink, EyeOff, Undo2 } from "lucide-react";
 import Link from "next/link";
-import { useState, type FormEvent } from "react";
+import { useState, type FormEvent, type ReactNode } from "react";
 import { Field, Select } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { Badge } from "@/components/ui/Badge";
@@ -10,42 +10,167 @@ import { ErrorNotice } from "@/components/ui/ErrorNotice";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
-import { useAdminI18n } from "@/hooks/useI18n";
-import { saveManualOffer } from "@/services/admin/offers";
-import { listPendingReview, resolveReview } from "@/services/admin/review";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
+import { offerVariants, saveManualOffer } from "@/services/admin/offers";
+import { canUndo, listPendingReview, listRecentDecisions, resolveReview, undoReview } from "@/services/admin/review";
 import { listAllSellers, saveSeller } from "@/services/admin/sellers";
 import { loadCatalog } from "@/services/catalog-live";
 import type { ReviewItem } from "@/types/admin";
-import type { Condition, Product, Seller } from "@/types/catalog";
+import type { Condition, Offer, Product, Seller } from "@/types/catalog";
 import { formatTaka } from "@/utils/format";
 import { safeUrl } from "@/utils/url";
 
-const taka = (value?: string) => (value ? formatTaka(Number(value)) : "");
+const taka = (value?: string | number | null) => (value ? formatTaka(Number(value)) : "");
+const NEW_SELLER = "__new";
+const lower = (value?: string) => (value ?? "").toLowerCase();
 
-function Actions({ item, yes, no, onDone }: { item: ReviewItem; yes: string; no: string; onDone: () => void }) {
-  const { t } = useAdminI18n();
-  const { busy, run } = useAdminAction();
-  async function decide(approved: boolean) {
-    if (await run(() => resolveReview(item, approved), approved ? t.admin.review.approved : t.admin.review.rejected)) onDone();
-  }
+interface Context {
+  products: Product[];
+  offers: Offer[];
+  sellers: Seller[];
+  anomalyVariant: Map<string, string>;
+}
+
+async function loadReview() {
+  const [items, recent, catalog, sellers] = await Promise.all([listPendingReview(), listRecentDecisions(), loadCatalog(true), listAllSellers()]);
+  const anomalyVariant = await offerVariants(items.filter((i) => i.kind === "anomaly" && i.payload.offerId).map((i) => i.payload.offerId));
+  return { items, recent, context: { products: catalog.products, offers: catalog.offers, sellers, anomalyVariant } satisfies Context };
+}
+
+const productOf = (products: Product[], variantId?: string) => products.find((p) => p.variants.some((v) => v.id === variantId));
+
+// অফিসিয়াল দাম আর এই দোকান বাদে বাকি দোকানের দামের সীমা: পাশে রেখে বোঝা যায় নতুন অংকটা বিশ্বাসযোগ্য কিনা
+function PriceContext({ ctx, variantId, sellerId }: { ctx: Context; variantId?: string; sellerId?: string }) {
+  const { t, num } = useAdminI18n();
+  const variant = productOf(ctx.products, variantId)?.variants.find((v) => v.id === variantId);
+  const prices = ctx.offers.filter((o) => o.variantId === variantId && o.sellerId !== sellerId).map((o) => o.price);
+  const low = Math.min(...prices);
+  const high = Math.max(...prices);
   return (
-    <div className="flex flex-wrap gap-2">
-      <button type="button" disabled={busy} onClick={() => decide(true)} className={primaryButton}>
-        {yes}
+    <ul className="flex flex-col gap-0.5 text-[13px] text-dim">
+      {variant?.officialPrice && <li>{t.admin.review.official(taka(variant.officialPrice))}</li>}
+      <li>{prices.length ? t.admin.review.others(low === high ? taka(low) : `${taka(low)} – ${taka(high)}`, num(prices.length)) : t.admin.review.noOthers}</li>
+    </ul>
+  );
+}
+
+function ShopLink({ url, label }: { url?: string; label?: string }) {
+  const { t } = useAdminI18n();
+  const href = safeUrl(url);
+  if (!href) return null;
+  return (
+    <a href={href} target="_blank" rel="noopener nofollow" className="inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-brand hover:underline">
+      <ExternalLink size={14} aria-hidden="true" />
+      {label ?? t.admin.review.openShop}
+    </a>
+  );
+}
+
+function Choice({ label, hint, tone, disabled, onClick }: { label: string; hint: string; tone: "yes" | "no"; disabled: boolean; onClick: () => void }) {
+  return (
+    <div className="flex flex-col gap-1">
+      <button type="button" disabled={disabled} onClick={onClick} className={tone === "yes" ? primaryButton : secondaryButton}>
+        {label}
       </button>
-      <button type="button" disabled={busy} onClick={() => decide(false)} className={secondaryButton}>
-        {no}
-      </button>
+      <span className="max-w-64 text-xs text-dim">{hint}</span>
     </div>
   );
 }
 
-const NEW_SELLER = "__new";
-const lower = (value?: string) => (value ?? "").toLowerCase();
+function Section({ title, help, count, children }: { title: string; help: string; count: number; children: ReactNode }) {
+  const { t } = useAdminI18n();
+  return (
+    <Panel title={title}>
+      <p className="border-b border-line-soft bg-surface-2/50 px-5 py-3 text-sm text-dim">{help}</p>
+      {count === 0 ? <p className="px-5 py-4 text-dim">{t.admin.review.empty}</p> : <ul className="divide-y divide-line-soft">{children}</ul>}
+    </Panel>
+  );
+}
 
-async function loadReview() {
-  const [items, { products }, sellers] = await Promise.all([listPendingReview(), loadCatalog(true), listAllSellers()]);
-  return { items, products, sellers };
+function MatchCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context; onDone: () => void }) {
+  const { t, num, ago } = useAdminI18n();
+  const { busy, run } = useAdminAction();
+  const p = item.payload;
+  const product = productOf(ctx.products, p.variantId);
+  const [variantId, setVariantId] = useState(p.variantId);
+  const label = product?.variants.find((v) => v.id === variantId)?.label ?? "";
+
+  async function decide(approved: boolean) {
+    const patch: Record<string, string> = approved && variantId !== p.variantId ? { variantId, guess: `${product?.name ?? ""} ${label}`.trim() } : {};
+    if (await run(() => resolveReview(item, approved, patch), approved ? t.admin.review.approved : t.admin.review.rejected)) onDone();
+  }
+
+  return (
+    <li className="flex flex-col gap-4 px-5 py-4">
+      <div className="grid gap-4 md:grid-cols-2">
+        <div className="flex flex-col gap-1.5 rounded-lg border border-line-soft p-3">
+          <span className="text-xs font-semibold text-dim">{t.admin.review.shopSide}</span>
+          <p className="font-semibold">{p.listing}</p>
+          <p className="text-sm">
+            {p.seller}: <strong>{taka(p.price)}</strong>
+            {p.oldPrice && <span className="text-dim">, {t.admin.review.oldPrice(taka(p.oldPrice))}</span>}
+            {p.inStock === "false" && <span className="text-danger">, {t.admin.review.outOfStock}</span>}
+          </p>
+          <ShopLink url={p.url} />
+        </div>
+        <div className="flex flex-col gap-2 rounded-lg border border-line-soft p-3">
+          <span className="text-xs font-semibold text-dim">{t.admin.review.ourSide}</span>
+          <p className="font-semibold">{product ? `${product.brand} ${product.name}` : p.guess}</p>
+          {product && (
+            <Select label={t.admin.review.pickVariant} value={variantId} onChange={(e) => setVariantId(e.target.value)}>
+              {product.variants.map((v) => (
+                <option key={v.id} value={v.id}>
+                  {v.label}
+                </option>
+              ))}
+            </Select>
+          )}
+          <PriceContext ctx={ctx} variantId={variantId} sellerId={p.sellerId} />
+        </div>
+      </div>
+      <p className="flex flex-wrap items-center gap-2 text-[13px] text-dim">
+        {p.confidence && <Badge tone="gold">{t.admin.review.aiGuess(num(p.confidence))}</Badge>}
+        {p.reason}
+        <span className="text-faint">{t.admin.review.arrived(ago(item.createdAt))}</span>
+      </p>
+      <div className="flex flex-wrap gap-3">
+        <Choice tone="yes" label={t.admin.review.matchYes} hint={t.admin.review.matchYesHint} disabled={busy || !variantId} onClick={() => decide(true)} />
+        <Choice tone="no" label={t.admin.review.matchNo} hint={t.admin.review.matchNoHint} disabled={busy} onClick={() => decide(false)} />
+      </div>
+    </li>
+  );
+}
+
+function AnomalyCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context; onDone: () => void }) {
+  const { t, ago } = useAdminI18n();
+  const { busy, run } = useAdminAction();
+  const p = item.payload;
+  async function decide(approved: boolean) {
+    if (await run(() => resolveReview(item, approved), approved ? t.admin.review.approved : t.admin.review.rejected)) onDone();
+  }
+  return (
+    <li className="flex flex-col gap-3 px-5 py-4">
+      <div className="flex flex-wrap items-center gap-2">
+        <p className="font-semibold">
+          {p.product}, {p.seller}
+        </p>
+        <Badge tone="gold">
+          <EyeOff size={12} aria-hidden="true" className="mr-1 inline" />
+          {t.admin.review.hidden}
+        </Badge>
+      </div>
+      <p className="text-lg">{t.admin.review.changed(taka(p.from), taka(p.to))}</p>
+      <p className="text-[13px] text-dim">
+        {p.reason} <span className="text-faint">{t.admin.review.arrived(ago(item.createdAt))}</span>
+      </p>
+      <PriceContext ctx={ctx} variantId={ctx.anomalyVariant.get(p.offerId)} sellerId={ctx.offers.find((o) => o.id === p.offerId)?.sellerId} />
+      <ShopLink url={p.url} />
+      <div className="flex flex-wrap gap-3">
+        <Choice tone="yes" label={t.admin.review.anomalyYes(taka(p.to))} hint={t.admin.review.anomalyYesHint} disabled={busy} onClick={() => decide(true)} />
+        <Choice tone="no" label={t.admin.review.anomalyNo(taka(p.from))} hint={t.admin.review.anomalyNoHint} disabled={busy} onClick={() => decide(false)} />
+      </div>
+    </li>
+  );
 }
 
 function guess(payload: Record<string, string>, products: Product[], sellers: Seller[]) {
@@ -57,18 +182,17 @@ function guess(payload: Record<string, string>, products: Product[], sellers: Se
     product?.variants[0];
   const sellerText = lower(payload.seller);
   const seller = sellers.find((s) => sellerText.includes(lower(s.name)) || lower(s.name).includes(sellerText.split(",")[0].trim()));
-  const condition: Condition = /আনঅফিসিয়াল|unofficial/i.test(payload.condition ?? "") ? "unofficial" : /ব্যবহৃত|used/i.test(payload.condition ?? "") ? "used" : "official";
-  const region = payload.condition?.match(/\(([^)]+)\)/)?.[1] ?? "";
-  return { productId: product?.id ?? "", variantId: variant?.id ?? "", sellerId: seller?.id ?? NEW_SELLER, condition, region };
+  return { productId: product?.id ?? "", variantId: variant?.id ?? "", sellerId: seller?.id ?? NEW_SELLER };
 }
 
-function ApplySubmission({ item, products, sellers, onDone }: { item: ReviewItem; products: Product[]; sellers: Seller[]; onDone: () => void }) {
-  const { t } = useAdminI18n();
+function SubmissionCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context; onDone: () => void }) {
+  const { t, ago } = useAdminI18n();
   const { busy, run } = useAdminAction();
-  const initial = guess(item.payload, products, sellers);
+  const p = item.payload;
+  const initial = guess(p, ctx.products, ctx.sellers);
   const [productId, setProductId] = useState(initial.productId);
   const [sellerId, setSellerId] = useState(initial.sellerId);
-  const product = products.find((p) => p.id === productId);
+  const product = ctx.products.find((x) => x.id === productId);
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -80,166 +204,163 @@ function ApplySubmission({ item, products, sellers, onDone }: { item: ReviewItem
     const done = await run(async () => {
       const seller =
         sellerId === NEW_SELLER
-          ? await saveSeller({ id: "", name: text("sellerName") ?? item.payload.seller, kind: "shop", website: null, phone: text("phone"), whatsapp: null, facebook: null, area: null, verified: false, active: true })
+          ? await saveSeller({ id: "", name: text("sellerName") ?? p.seller, kind: "shop", website: null, phone: text("phone"), whatsapp: null, facebook: null, area: null, verified: false, active: true })
           : sellerId;
       await saveManualOffer({ variantId, sellerId: seller, condition: form.get("condition") as Condition, region: text("region"), price, url: text("url"), source: "user" });
       await resolveReview(item, true);
-    }, t.admin.review.approved);
+    }, t.admin.review.applied);
     if (done) onDone();
   }
 
-  if (!products.length) return <p className="text-sm text-dim">{t.admin.review.noProduct}</p>;
+  async function reject() {
+    if (await run(() => resolveReview(item, false), t.admin.review.rejected)) onDone();
+  }
 
   return (
-    <form onSubmit={onSubmit} className="grid gap-3 rounded-lg border border-line bg-surface-2/50 p-4 md:grid-cols-2">
-      <p className="text-sm font-semibold md:col-span-2">{t.admin.review.applyTitle}</p>
-      <Select label={t.admin.products.product} value={productId} onChange={(e) => setProductId(e.target.value)} required>
-        <option value="">—</option>
-        {products.map((p) => (
-          <option key={p.id} value={p.id}>
-            {p.brand} {p.name}
-          </option>
-        ))}
-      </Select>
-      <Select label={t.admin.products.variant} name="variant" key={productId} defaultValue={productId === initial.productId ? initial.variantId : undefined} required>
-        {product?.variants.map((v) => (
-          <option key={v.id} value={v.id}>
-            {v.label}
-          </option>
-        ))}
-      </Select>
-      <Select label={t.admin.products.seller} value={sellerId} onChange={(e) => setSellerId(e.target.value)}>
-        <option value={NEW_SELLER}>{t.admin.review.newSeller}</option>
-        {sellers.map((s) => (
-          <option key={s.id} value={s.id}>
-            {s.name}
-          </option>
-        ))}
-      </Select>
-      {sellerId === NEW_SELLER ? (
-        <Field label={t.admin.review.newSellerName} name="sellerName" defaultValue={item.payload.seller} required />
-      ) : (
-        <span className="hidden md:block" />
-      )}
-      {sellerId === NEW_SELLER && <Field label={t.admin.sellers.phone} name="phone" type="tel" defaultValue={item.payload.phone ?? ""} required />}
-      <Select label={t.admin.products.condition} name="condition" defaultValue={initial.condition}>
-        {(Object.entries(t.condition) as [Condition, string][]).map(([id, label]) => (
-          <option key={id} value={id}>
-            {label}
-          </option>
-        ))}
-      </Select>
-      <Field label={t.admin.products.region} name="region" defaultValue={initial.region} placeholder={t.admin.products.regionPlaceholder} />
-      <Field label={t.admin.products.price} name="price" inputMode="numeric" defaultValue={item.payload.price} required />
-      <Field label={t.admin.products.url} name="url" type="url" defaultValue={safeUrl(item.payload.link) ?? ""} placeholder="https://" />
-      <div className="flex flex-wrap gap-2 md:col-span-2">
-        <button type="submit" disabled={busy || !product} className={primaryButton}>
-          {t.admin.review.submissionYes}
-        </button>
-        {!product && (
-          <Link href="/admin/products/" className={secondaryButton + " inline-flex items-center"}>
-            {t.admin.review.noProduct}
-          </Link>
-        )}
+    <li className="flex flex-col gap-3 px-5 py-4">
+      <div className="flex flex-col gap-1">
+        <p className="font-semibold">
+          {p.product}: {taka(p.price)}
+        </p>
+        <p className="text-sm">
+          {p.seller}
+          {p.phone && <span className="text-dim">, {t.admin.review.phone(p.phone)}</span>}
+        </p>
+        <ShopLink url={p.link} label={t.admin.review.openSent} />
+        <p className="text-[13px] text-dim">{t.admin.review.sentBy(p.from ?? "", ago(item.createdAt))}</p>
       </div>
-    </form>
+      {!ctx.products.length ? (
+        <p className="text-sm text-dim">{t.admin.review.noProduct}</p>
+      ) : (
+        <form onSubmit={onSubmit} className="grid gap-3 rounded-lg border border-line bg-surface-2/50 p-4 md:grid-cols-2">
+          <p className="text-sm font-semibold md:col-span-2">{t.admin.review.applyTitle}</p>
+          <Select label={t.admin.products.product} value={productId} onChange={(e) => setProductId(e.target.value)} required>
+            <option value="">—</option>
+            {ctx.products.map((x) => (
+              <option key={x.id} value={x.id}>
+                {x.brand} {x.name}
+              </option>
+            ))}
+          </Select>
+          <Select label={t.admin.products.variant} name="variant" key={productId} defaultValue={productId === initial.productId ? initial.variantId : undefined} required>
+            {product?.variants.map((v) => (
+              <option key={v.id} value={v.id}>
+                {v.label}
+              </option>
+            ))}
+          </Select>
+          <Select label={t.admin.products.seller} value={sellerId} onChange={(e) => setSellerId(e.target.value)}>
+            <option value={NEW_SELLER}>{t.admin.review.newSeller}</option>
+            {ctx.sellers.map((s) => (
+              <option key={s.id} value={s.id}>
+                {s.name}
+              </option>
+            ))}
+          </Select>
+          {sellerId === NEW_SELLER ? <Field label={t.admin.review.newSellerName} name="sellerName" defaultValue={p.seller} required /> : <span className="hidden md:block" />}
+          {sellerId === NEW_SELLER && (
+            <>
+              <Field label={t.admin.sellers.phone} name="phone" type="tel" defaultValue={p.phone ?? ""} required />
+              <p className="self-center text-xs text-dim">{t.admin.review.newSellerNote}</p>
+            </>
+          )}
+          <Select label={t.admin.products.condition} name="condition" defaultValue="official">
+            {(Object.entries(t.condition) as [Condition, string][]).map(([id, text]) => (
+              <option key={id} value={id}>
+                {text}
+              </option>
+            ))}
+          </Select>
+          <Field label={t.admin.products.region} name="region" placeholder={t.admin.products.regionPlaceholder} />
+          <Field label={t.admin.products.price} name="price" inputMode="numeric" defaultValue={p.price} required />
+          <Field label={t.admin.products.url} name="url" type="url" defaultValue={safeUrl(p.link) ?? ""} placeholder="https://" />
+          <div className="flex flex-wrap gap-2 md:col-span-2">
+            <button type="submit" disabled={busy || !product} className={primaryButton}>
+              {t.admin.review.submissionYes}
+            </button>
+            <button type="button" disabled={busy} onClick={reject} className={secondaryButton}>
+              {t.admin.review.submissionNo}
+            </button>
+            {!product && (
+              <Link href="/admin/products/" className={`${secondaryButton} inline-flex items-center`}>
+                {t.admin.review.noProduct}
+              </Link>
+            )}
+          </div>
+        </form>
+      )}
+    </li>
   );
 }
 
-function RejectButton({ item, onDone }: { item: ReviewItem; onDone: () => void }) {
-  const { t } = useAdminI18n();
+function RecentDecisions({ items, onDone }: { items: ReviewItem[]; onDone: () => void }) {
+  const { t, ago } = useAdminI18n();
   const { busy, run } = useAdminAction();
+  const title = (item: ReviewItem) => item.payload.listing ?? item.payload.product ?? item.payload.seller ?? "";
   return (
-    <button type="button" disabled={busy} onClick={async () => (await run(() => resolveReview(item, false), t.admin.review.rejected)) && onDone()} className={`${secondaryButton} self-start`}>
-      {t.admin.review.submissionNo}
-    </button>
+    <Panel title={t.admin.review.recent}>
+      {items.length === 0 ? (
+        <p className="px-5 py-4 text-dim">{t.admin.review.recentEmpty}</p>
+      ) : (
+        <ul className="divide-y divide-line-soft">
+          {items.map((item) => (
+            <li key={item.id} className="flex flex-wrap items-center gap-3 px-5 py-3 text-sm">
+              <Badge tone={item.status === "approved" ? "ok" : "neutral"}>{item.status === "approved" ? t.admin.review.decidedYes : t.admin.review.decidedNo}</Badge>
+              <span className="min-w-0 flex-1 truncate">{title(item)}</span>
+              <span className="text-[13px] text-dim">{item.resolvedAt ? ago(item.resolvedAt) : ""}</span>
+              {canUndo(item) ? (
+                <button type="button" disabled={busy} onClick={async () => (await run(() => undoReview(item), t.admin.review.undone)) && onDone()} className={`${secondaryButton} inline-flex items-center gap-1.5`}>
+                  <Undo2 size={14} aria-hidden="true" />
+                  {t.admin.review.undo}
+                </button>
+              ) : (
+                <span className="text-xs text-dim">{t.admin.review.alreadyApplied}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+    </Panel>
   );
 }
 
 export default function ReviewPage() {
-  const { t, num, ago } = useAdminI18n();
-  const { data: loaded, error, loading, reload } = useAsync(loadReview, []);
+  const { t, num } = useAdminI18n();
+  const { data, error, loading, reload } = useAsync(loadReview, []);
   if (loading) return <ListSkeleton />;
-  if (error || !loaded) return <ErrorNotice onRetry={reload} />;
-  const data = loaded.items;
-
-  const matches = data.filter((i) => i.kind === "match");
-  const anomalies = data.filter((i) => i.kind === "anomaly");
-  const submissions = data.filter((i) => i.kind === "submission");
+  if (error || !data) return <ErrorNotice onRetry={reload} />;
+  const { items, recent, context } = data;
+  const of = (kind: ReviewItem["kind"]) => items.filter((i) => i.kind === kind);
+  const [matches, anomalies, submissions] = [of("match"), of("anomaly"), of("submission")];
 
   return (
     <>
-      <PageTitle title={t.admin.review.title} subtitle={t.admin.review.subtitle} />
+      <PageTitle
+        title={t.admin.review.title}
+        subtitle={t.admin.review.subtitle}
+        action={
+          <Link href="/admin/jobs/" className={`${secondaryButton} inline-flex items-center`}>
+            {t.admin.review.runNow}
+          </Link>
+        }
+      />
       <div className="flex flex-col gap-6">
-        <Panel title={t.admin.review.matches(num(matches.length))}>
-          {matches.length === 0 && <p className="px-5 py-4 text-dim">{t.admin.review.noMatches}</p>}
-          <ul className="divide-y divide-line-soft">
-            {matches.map((item) => (
-              <li key={item.id} className="grid gap-3 px-5 py-4 md:grid-cols-[1fr_1fr_auto] md:items-center">
-                <div>
-                  <p className="font-semibold">{item.payload.listing}</p>
-                  <p className="text-[13px] text-dim">{t.admin.review.atSeller(item.payload.seller, taka(item.payload.price))}</p>
-                </div>
-                <div>
-                  <p className="font-semibold">{item.payload.guess}</p>
-                  <p className="text-[13px] text-dim">{item.payload.reason}</p>
-                  <Badge tone="gold">{t.admin.review.confidence(num(item.payload.confidence))}</Badge>
-                </div>
-                <Actions item={item} yes={t.admin.review.matchYes} no={t.admin.review.matchNo} onDone={reload} />
-              </li>
-            ))}
-          </ul>
-        </Panel>
-
-        <div className="flex flex-col gap-6">
-          <Panel title={t.admin.review.anomalies(num(anomalies.length))}>
-            {anomalies.length === 0 && <p className="px-5 py-4 text-dim">{t.admin.review.empty}</p>}
-            <ul className="divide-y divide-line-soft">
-              {anomalies.map((item) => (
-                <li key={item.id} className="flex flex-col gap-2 px-5 py-4">
-                  <p className="font-semibold">
-                    {item.payload.product}, {item.payload.seller}
-                  </p>
-                  <p>
-                    <span className="text-dim line-through">{taka(item.payload.from)}</span> {t.admin.review.fromWord}{" "}
-                    <strong className="text-gold-text">{taka(item.payload.to)}</strong>
-                  </p>
-                  <p className="text-[13px] text-dim">{item.payload.reason}</p>
-                  <Actions item={item} yes={t.admin.review.anomalyYes} no={t.admin.review.anomalyNo} onDone={reload} />
-                </li>
-              ))}
-            </ul>
-          </Panel>
-
-          <Panel title={t.admin.review.submissions(num(submissions.length))}>
-            {submissions.length === 0 && <p className="px-5 py-4 text-dim">{t.admin.review.empty}</p>}
-            <ul className="divide-y divide-line-soft">
-              {submissions.map((item) => (
-                <li key={item.id} className="flex gap-4 px-5 py-4">
-                  <span className="flex size-16 shrink-0 items-center justify-center rounded-xl bg-surface-2 text-faint">
-                    <ImageIcon size={24} aria-hidden="true" />
-                  </span>
-                  <div className="flex min-w-0 flex-1 flex-col gap-1.5">
-                    <p className="font-semibold">{item.payload.seller}</p>
-                    <p className="text-sm">
-                      {item.payload.product}
-                      {item.payload.condition ? `, ${item.payload.condition}` : ""}, <strong>{taka(item.payload.price)}</strong>
-                    </p>
-                    {item.payload.phone && <p className="text-sm">{t.admin.review.phone(item.payload.phone)}</p>}
-                    {safeUrl(item.payload.link) && (
-                      <a href={safeUrl(item.payload.link)!} target="_blank" rel="noopener nofollow" className="truncate text-sm text-brand">
-                        {item.payload.link}
-                      </a>
-                    )}
-                    <p className="text-[13px] text-dim">{t.admin.review.sentBy(item.payload.from, ago(item.createdAt))}</p>
-                    <ApplySubmission item={item} products={loaded.products} sellers={loaded.sellers} onDone={reload} />
-                    <RejectButton item={item} onDone={reload} />
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </Panel>
-        </div>
+        <Section title={t.admin.review.anomalies(num(anomalies.length))} help={t.admin.review.anomaliesHelp} count={anomalies.length}>
+          {anomalies.map((item) => (
+            <AnomalyCard key={item.id} item={item} ctx={context} onDone={reload} />
+          ))}
+        </Section>
+        <Section title={t.admin.review.matches(num(matches.length))} help={t.admin.review.matchesHelp} count={matches.length}>
+          {matches.map((item) => (
+            <MatchCard key={item.id} item={item} ctx={context} onDone={reload} />
+          ))}
+        </Section>
+        <Section title={t.admin.review.submissions(num(submissions.length))} help={t.admin.review.submissionsHelp} count={submissions.length}>
+          {submissions.map((item) => (
+            <SubmissionCard key={item.id} item={item} ctx={context} onDone={reload} />
+          ))}
+        </Section>
+        <RecentDecisions items={recent} onDone={reload} />
       </div>
     </>
   );

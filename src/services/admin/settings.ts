@@ -1,7 +1,7 @@
 import { sampleSettings } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
 import type { PrivateSettings, SiteSettings } from "@/types/admin";
-import { getSiteSettings } from "../catalog";
+import { getSiteSettings } from "../catalog-live";
 import { logAction } from "./audit";
 
 const DEFAULT_PRIVATE: PrivateSettings = {
@@ -12,7 +12,12 @@ const DEFAULT_PRIVATE: PrivateSettings = {
 
 let demoPrivate: PrivateSettings = DEFAULT_PRIVATE;
 
-export const loadSiteSettings = getSiteSettings;
+const masked = (secret: string | null) => (secret ? `••••${secret.slice(-4)}` : null);
+
+// সাইট বেক করা পুরনো কপি নয়, Supabase এর এখনকার মান; নইলে সেভের পরে পুরনো মান দেখাত, আবার সেভে নতুনটা মুছে যেত
+export async function loadSiteSettings(): Promise<SiteSettings> {
+  return supabase ? getSiteSettings() : { ...sampleSettings };
+}
 
 export async function saveSiteSettings(value: SiteSettings, section: string) {
   if (!supabase) Object.assign(sampleSettings, value);
@@ -23,18 +28,24 @@ export async function saveSiteSettings(value: SiteSettings, section: string) {
   await logAction("settings.update", { section });
 }
 
+// key আর token সার্ভার থেকে শুধু ঢাকা অবস্থায় আসে (যেমন ••••a1b2); সেভে খালি রাখলে আগেরটাই থাকে
 export async function loadPrivateSettings(): Promise<PrivateSettings> {
-  if (!supabase) return demoPrivate;
-  const { data, error } = await supabase.from("private_settings").select("value").maybeSingle();
+  if (!supabase) return { ...demoPrivate, llm: { ...demoPrivate.llm, apiKey: masked(demoPrivate.llm.apiKey) }, telegramBotToken: masked(demoPrivate.telegramBotToken) };
+  const { data, error } = await supabase.rpc("private_settings_masked");
   if (error) throw error;
-  const value = (data?.value ?? {}) as Partial<PrivateSettings>;
+  const value = (data ?? {}) as Partial<PrivateSettings>;
   return { ...DEFAULT_PRIVATE, ...value, llm: { ...DEFAULT_PRIVATE.llm, ...value.llm } };
 }
 
 export async function savePrivateSettings(value: PrivateSettings, section: string) {
-  if (!supabase) demoPrivate = value;
-  else {
-    const { error } = await supabase.from("private_settings").upsert({ id: true, value });
+  if (!supabase) {
+    demoPrivate = {
+      ...value,
+      llm: { ...value.llm, apiKey: value.llm.apiKey || demoPrivate.llm.apiKey },
+      telegramBotToken: value.telegramBotToken || demoPrivate.telegramBotToken,
+    };
+  } else {
+    const { error } = await supabase.rpc("save_private_settings", { patch: value });
     if (error) throw error;
   }
   await logAction("settings.update", { section });

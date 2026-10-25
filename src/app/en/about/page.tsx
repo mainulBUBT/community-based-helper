@@ -1,17 +1,10 @@
 import type { Metadata } from "next";
 import { AboutView } from "@/app/(site)/about/AboutView";
-import { enMeta } from "@/lib/en-meta";
+import { messages, pageMeta } from "@/lib/page-meta";
 import { getSiteSettings } from "@/services/catalog.server";
 
-export async function generateMetadata(): Promise<Metadata> {
-  return enMeta({
-    title: "About Us",
-    description: "How this site works, where the prices come from, and how to reach us.",
-    path: "/en/about/",
-    settings: await getSiteSettings(),
-  });
-}
+export const generateMetadata = (): Promise<Metadata> => pageMeta({ lang: "en", path: "/about/", ...messages("en").seo.about });
 
-export default async function EnAboutPage() {
+export default async function Page() {
   return <AboutView settings={await getSiteSettings()} />;
 }

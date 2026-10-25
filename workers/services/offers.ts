@@ -1,7 +1,7 @@
 import { bn } from "../lib/bn";
 import { all, db, must } from "../lib/db";
 import type { PageOffer } from "../lib/variants";
-import { enqueue, pendingAnomaly } from "./review";
+import { closeAnomaly, enqueue, pendingAnomaly, rejectedAnomaly } from "./review";
 
 const JUMP = 0.6;
 // আসল দামের ২০%-এরও কম অংক সাধারণত বুকিং বা কিস্তির টাকা, দাম নয় — আগের দামই থাকে
@@ -31,17 +31,21 @@ export interface TrackedOffer {
   price: number;
   productLabel: string;
   sellerName: string;
+  hidden: boolean;
 }
 
 export type SaveResult = "changed" | "same" | "anomaly" | "booking";
 
 export async function refreshOffer(offer: TrackedOffer, found: PageOffer): Promise<SaveResult> {
   const checked = { variant_key: found.key, checked_at: new Date().toISOString() };
-  if (found.price <= offer.price * DEPOSIT) {
-    await must(db().from("offers").update(checked).eq("id", offer.id));
-    return "booking";
-  }
+  // বুকিংয়ের অংক আসল দাম নয়, তাই "যাচাই হয়েছে" সময়ও বদলায় না
+  if (found.price <= offer.price * DEPOSIT) return "booking";
   if (Math.abs(found.price - offer.price) / offer.price > JUMP) {
+    // অ্যাডমিন এই অংকটা আগেই ভুল বলেছেন: আগের দাম দেখানো চলুক, আবার লুকানো বা যাচাইয়ে পাঠানো নয়
+    if (await rejectedAnomaly(offer.id, found.price)) {
+      await must(db().from("offers").update(checked).eq("id", offer.id));
+      return "same";
+    }
     if (!(await pendingAnomaly(offer.id))) {
       const change = Math.round(((found.price - offer.price) / offer.price) * 100);
       await enqueue("anomaly", {
@@ -59,12 +63,21 @@ export async function refreshOffer(offer: TrackedOffer, found: PageOffer): Promi
     await must(db().from("offers").update({ ...checked, published: false }).eq("id", offer.id));
     return "anomaly";
   }
+  const hidden = offer.hidden && (await pendingAnomaly(offer.id));
   await must(
     db()
       .from("offers")
-      .update({ ...checked, price: found.price, old_price: found.oldPrice, in_stock: found.inStock, ...(found.region ? { region: found.region } : {}) })
+      .update({
+        ...checked,
+        price: found.price,
+        old_price: found.oldPrice,
+        in_stock: found.inStock,
+        ...(found.region ? { region: found.region } : {}),
+        ...(hidden ? { published: true } : {}),
+      })
       .eq("id", offer.id),
   );
+  if (hidden) await closeAnomaly(offer.id);
   return found.price === offer.price ? "same" : "changed";
 }
 
@@ -104,13 +117,13 @@ export async function markGone(offerIds: string[]) {
 }
 
 export async function knownOfferUrls(): Promise<Set<string>> {
-  const rows = await all<{ url: string }>((from, to) => db().from("offers").select("url").not("url", "is", null).range(from, to));
+  const rows = await all<{ url: string }>((from, to) => db().from("offers").select("url").not("url", "is", null).order("id").range(from, to));
   return new Set(rows.map((r) => r.url));
 }
 
 export async function offerSlots(): Promise<Set<string>> {
   const rows = await all<{ variant_id: string; seller_id: string; condition: string }>((from, to) =>
-    db().from("offers").select("variant_id, seller_id, condition").range(from, to),
+    db().from("offers").select("variant_id, seller_id, condition").order("id").range(from, to),
   );
   return new Set(rows.map((r) => slot(r.variant_id, r.seller_id, r.condition)));
 }
@@ -118,7 +131,7 @@ export async function offerSlots(): Promise<Set<string>> {
 // প্রতি ভ্যারিয়েন্টে এখনো পরিচিত দামগুলো — নতুন দোকানের দাম এর সাথে মিলিয়ে দেখা হয়
 export async function variantPrices(): Promise<Map<string, number[]>> {
   const rows = await all<{ variant_id: string; price: number }>((from, to) =>
-    db().from("offers").select("variant_id, price").range(from, to),
+    db().from("offers").select("variant_id, price").order("id").range(from, to),
   );
   const map = new Map<string, number[]>();
   for (const row of rows) {

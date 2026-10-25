@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { toEnPath } from "@/lib/en-meta";
-import { getSiteSettings, listComparisons, listSellers, listSummaries } from "@/services/catalog.server";
-import { HomeView } from "./HomeView";
+import { HomeView } from "@/app/(site)/HomeView";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { pageMeta } from "@/lib/page-meta";
+import { getHomeData } from "@/services/catalog.server";
+import { websiteData } from "@/utils/structured-data";
 
-export async function generateMetadata(): Promise<Metadata> {
-  return { alternates: { canonical: "/", languages: { bn: "/", en: toEnPath("/") } } };
-}
+export const generateMetadata = (): Promise<Metadata> => pageMeta({ lang: "bn", path: "/" });
 
-export default async function HomePage() {
-  const [summaries, sellers, settings, comparison] = await Promise.all([
-    listSummaries(),
-    listSellers(),
-    getSiteSettings(),
-    listComparisons(),
-  ]);
-  return <HomeView initial={{ summaries, sellers, settings, comparison }} />;
+export default async function Page() {
+  const home = await getHomeData();
+  const name = home.settings.name;
+  return (
+    <>
+      <JsonLd data={websiteData(name, "")} />
+      <HomeView initial={home} />
+    </>
+  );
 }

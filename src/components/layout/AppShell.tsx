@@ -31,6 +31,7 @@ import { trackView } from "@/services/analytics";
 import type { SiteSettings } from "@/types/admin";
 import { CategoriesProvider } from "@/lib/categories";
 import type { CategoryInfo } from "@/types/catalog";
+import { categoryPath } from "@/utils/url";
 
 const NAV: { href: string; key: keyof Messages["nav"]; icon: LucideIcon }[] = [
   { href: "/", key: "home", icon: House },
@@ -93,7 +94,7 @@ function CategoryStrip() {
   const { top } = useCategories();
   const params = useSearchParams();
   const pathname = trimSlash(stripEn(usePathname()));
-  const current = pathname === "/search" ? params.get("category") : null;
+  const current = pathname === "/search" ? params.get("category") : (pathname.match(/^\/category\/([^/]+)$/)?.[1] ?? null);
   const appleActive = pathname === "/search" && params.get("brand") === "Apple";
   const stripRef = useRef<HTMLDivElement>(null);
 
@@ -119,7 +120,7 @@ function CategoryStrip() {
         {top.map((c) => (
           <Link
             key={c.slug}
-            href={`${prefix}/search/?category=${c.slug}`}
+            href={categoryPath(prefix, c.slug)}
             aria-current={current === c.slug ? "page" : undefined}
             className={`flex h-8 shrink-0 items-center gap-2 rounded-md px-3 text-sm font-semibold ${current === c.slug ? "bg-white/20" : "hover:bg-white/10"}`}
           >
@@ -171,7 +172,7 @@ export function AppShell({
     trimSlash(href) === "/"
       ? current === "/"
       : current.startsWith(trimSlash(href));
-  const showSearch = !current.startsWith("/search");
+  const showSearch = !/^\/(search|category)(\/|$)/.test(current);
 
   useEffect(() => trackView(pathname), [pathname]);
 

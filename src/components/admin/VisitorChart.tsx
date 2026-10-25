@@ -1,6 +1,6 @@
 "use client";
 
-import { useAdminI18n } from "@/hooks/useI18n";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
 import type { DayStat } from "@/types/admin";
 
 export function VisitorChart({ stats }: { stats: DayStat[] }) {

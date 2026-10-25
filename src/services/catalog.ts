@@ -1,5 +1,5 @@
 import { DEFAULT_SETTINGS } from "@/config/site";
-import { supabase } from "@/lib/supabase";
+import { hasBackend, supabaseFetch } from "@/lib/supabase-rest";
 import type { CategoryInfo, Offer, PricePoint, Product, Promo, Seller } from "@/types/catalog";
 import type { SiteSettings } from "@/types/admin";
 import { makeService, type Catalog } from "./catalog-core";
@@ -33,14 +33,24 @@ async function json<T>(name: string, fresh = false): Promise<T> {
   return response.json() as Promise<T>;
 }
 
+function manifest(fresh = false) {
+  manifestP ??= json<BakedManifest>("manifest.json", fresh).catch((error) => {
+    manifestP = null;
+    throw error;
+  });
+  return manifestP;
+}
+
 async function fetchCatalog(fresh = false): Promise<Catalog> {
   if (fresh) {
     manifestP = null;
     chunksP = null;
   }
-  manifestP ??= json<BakedManifest>("manifest.json", fresh);
-  const m = await manifestP;
-  chunksP ??= Promise.all(m.categories.map((c) => json<BakedChunk>(`${c.slug}.json`, fresh)));
+  const m = await manifest(fresh);
+  chunksP ??= Promise.all(m.categories.map((c) => json<BakedChunk>(`${c.slug}.json`, fresh))).catch((error) => {
+    chunksP = null;
+    throw error;
+  });
   const baked = await chunksP;
   return {
     categories: m.categories,
@@ -58,8 +68,7 @@ async function loadHistory(offerIds: string[]): Promise<PricePoint[]> {
 }
 
 export async function getSiteSettings(): Promise<SiteSettings> {
-  manifestP ??= json<BakedManifest>("manifest.json");
-  const m = await manifestP;
+  const m = await manifest();
   return {
     ...DEFAULT_SETTINGS,
     ...m.settings,
@@ -69,10 +78,14 @@ export async function getSiteSettings(): Promise<SiteSettings> {
   };
 }
 
-export async function submitPrice(payload: Record<string, string>) {
-  if (!supabase) return;
-  const { error } = await supabase.from("review_queue").insert({ kind: "submission", payload });
-  if (error) throw error;
+export type SubmitError = "limit" | "captcha" | "failed";
+
+// জমা হয় Edge Function দিয়ে: সেখানে Turnstile যাচাই, ঘরগুলো ছাঁকা, তারপর IP ধরে সীমা (supabase/functions/submit-price)
+export async function submitPrice(payload: Record<string, string>, token: string | null): Promise<SubmitError | null> {
+  if (!hasBackend) return null;
+  const res = await supabaseFetch("/functions/v1/submit-price", { method: "POST", body: JSON.stringify({ payload, token }) });
+  if (res.ok) return null;
+  return res.status === 429 ? "limit" : res.status === 403 ? "captcha" : "failed";
 }
 
 export const { loadCatalog, listSummaries, listCategories, listSellers, listComparisons, getProductDetail, getSellerDetail } = makeService(

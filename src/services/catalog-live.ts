@@ -4,13 +4,14 @@ import type { SiteSettings } from "@/types/admin";
 import type { PricePoint } from "@/types/catalog";
 import { makeService, type Catalog } from "./catalog-core";
 import { toCategory, toOffer, toPricePoint, toProduct, toPromo, toSeller } from "./mappers";
-import { sampleCategories, sampleHistory, sampleOffers, sampleProducts, samplePromos, sampleSellers } from "@/data/sample";
+import { loadSampleCatalog, sampleCategories, samplePromos } from "@/data/sample";
 import { safeUrl } from "@/utils/url";
 
 // অ্যাডমিন প্যানেল লাইভ Supabase পড়ে — সাইট build-time বেক করা ডেটায় চলে (catalog.ts)।
 async function fetchCatalog(): Promise<Catalog> {
   if (!supabase) {
     // Supabase যুক্ত না থাকলে নমুনা ডেটায় (ডেমো মোড)।
+    const { sampleOffers, sampleProducts, sampleSellers } = await loadSampleCatalog();
     return {
       categories: sampleCategories.filter((c) => c.active),
       products: sampleProducts,
@@ -38,7 +39,7 @@ async function fetchCatalog(): Promise<Catalog> {
 }
 
 async function loadHistory(offerIds: string[]): Promise<PricePoint[]> {
-  if (!supabase) return sampleHistory.filter((p) => offerIds.includes(p.offerId));
+  if (!supabase) return (await loadSampleCatalog()).sampleHistory.filter((p) => offerIds.includes(p.offerId));
   const since = new Date(Date.now() - 31 * 86400000).toISOString();
   const { data, error } = await supabase.from("price_history").select("*").in("offer_id", offerIds).gte("seen_at", since);
   if (error) throw error;

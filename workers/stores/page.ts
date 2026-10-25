@@ -23,5 +23,7 @@ export async function readPage(store: Store, url: string, useLlm = true): Promis
   const quote = await quoteFrom(html, store.parse, useLlm);
   if (!quote) return null;
   const row = { options: [], region: null, price: quote.price, oldPrice: quote.oldPrice, inStock: quote.inStock };
-  return { offers: pageOffers([row]), title: quote.title ?? title(html), image: quote.image ?? image };
+  // AI এর দেওয়া নাম পাতার আসল শিরোনামের চেয়ে কম ভরসার, কারণ পাতার লেখা দিয়ে তাকে ভোলানো যায়
+  const name = quote.via === "llm" ? (title(html) ?? quote.title) : (quote.title ?? title(html));
+  return { offers: pageOffers([row]), title: name, image: quote.image ?? image };
 }

@@ -73,6 +73,7 @@ export function BrandIcon({
   }
 
   return (
+    // eslint-disable-next-line @next/next/no-img-element
     <img
       src={`/brands/${slug}.png`}
       alt=""

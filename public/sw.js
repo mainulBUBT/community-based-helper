@@ -1,16 +1,34 @@
-const CACHE = "dordam-v2";
-const cacheable = (response) => response.ok && response.type === "basic";
+const STATIC = "dordam-static-v3";
+const PAGES = "dordam-pages-v3";
+const LIMITS = { [STATIC]: 200, [PAGES]: 80 };
 const SHELL = ["/", "/search/", "/saved/", "/offline/"];
+const cacheable = (response) => response.ok && response.type === "basic";
+
+async function put(name, request, response) {
+  const cache = await caches.open(name);
+  await cache.put(request, response);
+  const keys = await cache.keys();
+  await Promise.all(keys.slice(0, Math.max(0, keys.length - LIMITS[name])).map((key) => cache.delete(key)));
+}
+
+function networkFirst(request, fallback) {
+  return fetch(request)
+    .then((response) => {
+      if (cacheable(response)) put(PAGES, request, response.clone());
+      return response;
+    })
+    .catch(() => caches.match(request, { ignoreSearch: true }).then((hit) => hit ?? fallback()));
+}
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(SHELL)).then(() => self.skipWaiting()));
+  event.waitUntil(caches.open(PAGES).then((cache) => cache.addAll(SHELL)).then(() => self.skipWaiting()));
 });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key))))
+      .then((keys) => Promise.all(keys.filter((key) => !(key in LIMITS)).map((key) => caches.delete(key))))
       .then(() => self.clients.claim()),
   );
 });
@@ -26,10 +44,7 @@ self.addEventListener("fetch", (event) => {
         (hit) =>
           hit ??
           fetch(request).then((response) => {
-            if (cacheable(response)) {
-              const copy = response.clone();
-              caches.open(CACHE).then((cache) => cache.put(request, copy));
-            }
+            if (cacheable(response)) put(STATIC, request, response.clone());
             return response;
           }),
       ),
@@ -37,17 +52,12 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  if (url.pathname.startsWith("/data/catalog/")) {
+    event.respondWith(networkFirst(request, () => Response.error()));
+    return;
+  }
+
   if (request.mode === "navigate") {
-    event.respondWith(
-      fetch(request)
-        .then((response) => {
-          if (cacheable(response)) {
-            const copy = response.clone();
-            caches.open(CACHE).then((cache) => cache.put(request, copy));
-          }
-          return response;
-        })
-        .catch(() => caches.match(request).then((hit) => hit ?? caches.match("/offline/"))),
-    );
+    event.respondWith(networkFirst(request, () => caches.match("/offline/")));
   }
 });

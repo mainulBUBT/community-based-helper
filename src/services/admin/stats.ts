@@ -1,6 +1,6 @@
 import { sampleDayStats, samplePageStats } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
-import type { DayStat, PageStat } from "@/types/admin";
+import type { Breakdown, DayStat, PageStat, VisitorInsights } from "@/types/admin";
 
 export async function loadDayStats(days = 30): Promise<DayStat[]> {
   if (!supabase) return sampleDayStats;
@@ -23,3 +23,35 @@ export async function loadTopPages(days = 30): Promise<PageStat[]> {
     visitors: Number(row.visitors),
   }));
 }
+
+type Row = Record<string, unknown>;
+
+const breakdown = (rows: unknown, key: string): Breakdown[] =>
+  ((rows as Row[] | null) ?? []).map((row) => ({ key: (row[key] as string | null) ?? null, views: Number(row.views ?? row.times ?? 0), visitors: Number(row.visitors ?? 0) }));
+
+const EMPTY: VisitorInsights = { visitors: 0, returning: 0, countries: [], devices: [], referrers: [], products: [], searches: [] };
+
+// শুধু পেজ খুললে হিসাব হয়, সর্বোচ্চ ৯০ দিনের
+export async function loadInsights(days = 30): Promise<VisitorInsights> {
+  if (!supabase) return EMPTY;
+  const { data, error } = await supabase.rpc("visitor_insights", { days });
+  if (error) throw error;
+  const raw = (data ?? {}) as Row;
+  return {
+    visitors: Number(raw.visitors ?? 0),
+    returning: Number(raw.returning ?? 0),
+    countries: breakdown(raw.countries, "country"),
+    devices: breakdown(raw.devices, "device"),
+    referrers: breakdown(raw.referrers, "referrer"),
+    products: ((raw.products as Row[] | null) ?? []).map((row) => ({ key: String(row.name), slug: String(row.slug), views: Number(row.views), visitors: Number(row.visitors) })),
+    searches: breakdown(raw.searches, "query").map((s) => ({ ...s, key: s.key ? safeDecode(s.key) : s.key })),
+  };
+}
+
+const safeDecode = (value: string) => {
+  try {
+    return decodeURIComponent(value.replace(/\+/g, " "));
+  } catch {
+    return value;
+  }
+};

@@ -1,19 +1,12 @@
 import { DEFAULT_CATEGORIES, DEFAULT_SETTINGS } from "@/config/site";
 import type { AuditEntry, DayStat, Job, JobRun, PageStat, ReviewItem, SiteSettings } from "@/types/admin";
-import type { CategoryInfo, Offer, PricePoint, Product, Promo, Seller } from "@/types/catalog";
-import { catalogOffers, catalogProducts, catalogSellers } from "./catalog.generated";
+import type { CategoryInfo, Promo } from "@/types/catalog";
 
 export const sampleCategories: CategoryInfo[] = DEFAULT_CATEGORIES.map((c) => ({ ...c }));
 
-export const sampleProducts: Product[] = catalogProducts.map((p) => ({ ...p, variants: p.variants.map((v) => ({ ...v })) }));
-
-export const sampleSellers: Seller[] = catalogSellers.map((s) => ({ ...s }));
-
-export const sampleOffers: Offer[] = catalogOffers.map((o) => ({ ...o }));
-
 export const samplePromos: Promo[] = [];
 
-export const sampleHistory: PricePoint[] = sampleOffers.map((offer) => ({ offerId: offer.id, price: offer.price, seenAt: offer.checkedAt }));
+export const loadSampleCatalog = () => import("./sample-catalog");
 
 export const sampleReview: ReviewItem[] = [];
 

@@ -5,6 +5,9 @@ export interface ReviewItem {
   kind: ReviewKind;
   payload: Record<string, string>;
   createdAt: string;
+  status?: "pending" | "approved" | "rejected";
+  resolvedAt?: string | null;
+  appliedAt?: string | null;
 }
 
 export interface Job {
@@ -85,6 +88,22 @@ export interface DayStat {
   day: string;
   views: number;
   visitors: number;
+}
+
+export interface Breakdown {
+  key: string | null;
+  views: number;
+  visitors: number;
+}
+
+export interface VisitorInsights {
+  visitors: number;
+  returning: number;
+  countries: Breakdown[];
+  devices: Breakdown[];
+  referrers: Breakdown[];
+  products: (Breakdown & { slug: string })[];
+  searches: Breakdown[];
 }
 
 export interface PageStat {

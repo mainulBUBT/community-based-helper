@@ -1,6 +1,6 @@
 "use client";
 
-import { useAdminI18n } from "@/hooks/useI18n";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
 
 export function LanguageButton({ className }: { className?: string }) {
   const { lang, t, setLang } = useAdminI18n();

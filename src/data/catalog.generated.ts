@@ -363,6 +363,66 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
+  "id": "ohsogo.com",
+  "name": "OHSOGO",
+  "kind": "website",
+  "website": "https://www.ohsogo.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "chardike.com",
+  "name": "Chardike",
+  "kind": "website",
+  "website": "https://chardike.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "perfectobd.com",
+  "name": "Perfecto",
+  "kind": "website",
+  "website": "https://perfectobd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "koreanmartbd.com",
+  "name": "Korean Mart BD",
+  "kind": "website",
+  "website": "https://koreanmartbd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "klassy.com.bd",
+  "name": "Klassy Missy",
+  "kind": "website",
+  "website": "https://klassy.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
   "id": "threesbd.com",
   "name": "Three's",
   "kind": "website",
@@ -10036,7 +10096,7 @@ export const catalogProducts: Product[] = [
    "Silk Purple"
   ],
   "regions": [
-   "International"
+   "Global"
   ],
   "specs": [
    {
@@ -13954,7 +14014,7 @@ export const catalogProducts: Product[] = [
   "name": "nova Y74",
   "brand": "Huawei",
   "category": "mobile",
-  "releaseYear": 2025,
+  "releaseYear": 2026,
   "popularity": 58,
   "variants": [
    {
@@ -16580,7 +16640,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 2000
    }
   ],
-  "images": [],
+  "images": [
+   "https://bk.shajgoj.com/storage/2025/10/neutrogena-hydro-boost-water-gel-new.jpg",
+   "https://skincareshop.com.bd/wp-content/uploads/2021/07/Neutrogena-Hydro-Boost-Water-Gel-Moisturiser-with-Hyaluronic-Acid-Trehalose-50ml-5.jpg"
+  ],
   "colors": [],
   "regions": [],
   "specs": [],
@@ -16604,7 +16667,11 @@ export const catalogProducts: Product[] = [
     "officialPrice": 2150
    }
   ],
-  "images": [],
+  "images": [
+   "https://cdn.aromyeo.com/Products/some-by-mi-aha-bha-pha-30-days-miracle-toner-720.avif",
+   "https://d1puc9h291tp0h.cloudfront.net/uploads/all/5Hf6VFbS1BWAeTHBaq0k7g5UHMvmXviP5G8mVnTx.jpg",
+   "https://bk.shajgoj.com/storage/2026/01/some-by-mi-aha-bha-pha-30-days-miracle-toner.jpg"
+  ],
   "colors": [],
   "regions": [],
   "specs": [],
@@ -16628,7 +16695,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 2260
    }
   ],
-  "images": [],
+  "images": [
+   "https://e-mart.com.bd/wp-content/uploads/2024/02/emart-anua-heartleaf-77-soothing-toner-250ml.jpg",
+   "https://cdn.aromyeo.com/Products/anua-heartleaf-77-soothing-toner-250ml-720.avif"
+  ],
   "colors": [],
   "regions": [],
   "specs": [],
@@ -16678,7 +16748,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 1800
    }
   ],
-  "images": [],
+  "images": [
+   "https://cdn.aromyeo.com/Products/isntree-hyaluronic-acid-toner-200ml-720.avif",
+   "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0VmFyaWFudC1wdl9pbWFnZXNcLzYyNDA5XC82MjQwOS1wcm9kdWN0LW05cDJhci5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19"
+  ],
   "colors": [],
   "regions": [],
   "specs": [],
@@ -16702,7 +16775,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 2500
    }
   ],
-  "images": [],
+  "images": [
+   "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC80MjE2MVwvNDIxNjEtZXlKaWRXTnJaWFFpT2lKaGNtOW5aMkVpTENKclpYa2lPaUpRY205a2RXTjBWbUZ5YVdGdWRDMXdkbDlwYldGblpYTmNMelF5TVRZeFhDODBNakUyTVMxbGVVcHBaRmRPY2xwWVVXbFBhVXBvWTIwNWJsb3lSV2xNUTBweVdsaHJhVTlwU25SYVYxSndXVEpzZFZwV2QzWk9SRXBqVEhwUmVVMVVXWGhNVlU1Mll6TktORXhWUm10a2JVWjFXVEpXYTB4V1RuVlpWMnh6VEZScmVVeFZSbk5pLTVjZ282cC53ZWJwIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+   "https://bk.shajgoj.com/storage/2024/12/download.jpg"
+  ],
   "colors": [],
   "regions": [],
   "specs": [],
@@ -16752,7 +16828,9 @@ export const catalogProducts: Product[] = [
     "officialPrice": 1450
    }
   ],
-  "images": [],
+  "images": [
+   "https://e-mart.com.bd/wp-content/uploads/2026/07/skin1004-madagascar-centella-ampoule55ml.jpg"
+  ],
   "colors": [],
   "regions": [],
   "specs": [],
@@ -16802,7 +16880,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 1100
    }
   ],
-  "images": [],
+  "images": [
+   "https://e-mart.com.bd/wp-content/uploads/2022/04/76759.jpg",
+   "https://bk.shajgoj.com/storage/2019/09/Low-Ph-Good-Morning-Gel-Cleanser-7423-1.jpg"
+  ],
   "colors": [],
   "regions": [],
   "specs": [],
@@ -16826,7 +16907,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 1350
    }
   ],
-  "images": [],
+  "images": [
+   "https://e-mart.com.bd/wp-content/uploads/2026/05/Cosrx-Salicylic-Acid-Daily-Gentle-Cleanser-150ml.png",
+   "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0VmFyaWFudC1wdl9pbWFnZXNcLzUxODE4XC81MTgxOC0wNC0yMDI1LTAzLTE2VDE1MzkzMy1pb2U1b3AuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjE2LCJoZWlnaHQiOjIxNiwiZml0Ijoib3V0c2lkZSJ9fX0="
+  ],
   "colors": [],
   "regions": [],
   "specs": [],
@@ -16928,7 +17012,588 @@ export const catalogProducts: Product[] = [
     "officialPrice": 2500
    }
   ],
-  "images": [],
+  "images": [
+   "https://skincareshop.com.bd/wp-content/uploads/2024/04/SKIN1004-Madagascar-Centella-Ampoule-100ml-00.jpg",
+   "https://e-mart.com.bd/wp-content/uploads/2024/03/Skin1004-Madagascar-Centella-Ampoule-100ml-1000x1000-1.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "etude-dear-darling-water-tint",
+  "slug": "etude-dear-darling-water-tint",
+  "name": "Dear Darling Water Tint",
+  "brand": "Etude",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "etude-dear-darling-water-tint~v1",
+    "label": "9g",
+    "attributes": {
+     "capacity": "9g"
+    },
+    "officialPrice": 800
+   }
+  ],
+  "images": [
+   "https://beprincessbd.com/wp-content/uploads/2024/10/136.jpg",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/ETUDEHOUSEDEARDARLINGWATERTINT05GRAPEAde9.5g8cda1d.webp",
+   "https://glowellabd.com/wp-content/uploads/2025/12/0001336_etude-house-dear-darling-water-tint-02_510.jpeg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "beauty-glazed-glazed-glow-lip-oil",
+  "slug": "beauty-glazed-glazed-glow-lip-oil",
+  "name": "Glazed Glow Lip Oil",
+  "brand": "Beauty Glazed",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "beauty-glazed-glazed-glow-lip-oil~v1",
+    "label": "4g",
+    "attributes": {
+     "capacity": "4g"
+    },
+    "officialPrice": 350
+   }
+  ],
+  "images": [
+   "https://beprincessbd.com/wp-content/uploads/2024/10/146.jpg",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/BeautyGlazedGlowLipOil-101Meet4gf40f54.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "swiss-beauty-dip-tint-lip-oil",
+  "slug": "swiss-beauty-dip-tint-lip-oil",
+  "name": "Dip Tint Lip Oil",
+  "brand": "Swiss Beauty",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "swiss-beauty-dip-tint-lip-oil~v1",
+    "label": "3ml",
+    "attributes": {
+     "capacity": "3ml"
+    },
+    "officialPrice": 380
+   }
+  ],
+  "images": [
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/SwissBeautyDipTintLipOil3ml-03Peachc8448a.webp",
+   "https://beprincessbd.com/wp-content/uploads/2024/11/62-1.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "laneige-lip-sleeping-mask-berry",
+  "slug": "laneige-lip-sleeping-mask-berry",
+  "name": "Lip Sleeping Mask Berry",
+  "brand": "Laneige",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "laneige-lip-sleeping-mask-berry~v1",
+    "label": "20g",
+    "attributes": {
+     "capacity": "20g"
+    },
+    "officialPrice": 1675
+   },
+   {
+    "id": "laneige-lip-sleeping-mask-berry~v2",
+    "label": "3g",
+    "attributes": {
+     "capacity": "3g"
+    },
+    "officialPrice": 555
+   }
+  ],
+  "images": [
+   "https://glowellabd.com/wp-content/uploads/2024/06/KM-0331-Laneige-lip-sleeping-mask-berry-20g.jpg",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Laneige_Lip_Sleeping_Mask_Berry-_20g.jpg",
+   "https://koreanmartbd.com/storage/uploads/2026/07/Laneige lip sleeping mask ex (berry) - 20g....png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "wishcare-ceramide-lip-balm-spf-50",
+  "slug": "wishcare-ceramide-lip-balm-spf-50",
+  "name": "Ceramide Lip Balm SPF 50",
+  "brand": "WishCare",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "wishcare-ceramide-lip-balm-spf-50~v1",
+    "label": "5g",
+    "attributes": {
+     "capacity": "5g"
+    },
+    "officialPrice": 600
+   }
+  ],
+  "images": [
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/WishcareCeramideLipBalmwithSPF50PANatural5gdcd020.webp",
+   "https://beprincessbd.com/wp-content/uploads/2024/11/WishCare-Ceramide-Lip-Balm-Natural-With-SPF-50-PA-5gm.jpg",
+   "https://cdn.aromyeo.com/Products/wishcare-ceramide-lip-balm-with-spf-50-pa-natural-720.avif"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "cosrx-propolis-lip-sleeping-mask",
+  "slug": "cosrx-propolis-lip-sleeping-mask",
+  "name": "Propolis Lip Sleeping Mask",
+  "brand": "COSRX",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "cosrx-propolis-lip-sleeping-mask~v1",
+    "label": "20g",
+    "attributes": {
+     "capacity": "20g"
+    },
+    "officialPrice": 1900
+   }
+  ],
+  "images": [
+   "https://cdn.aromyeo.com/Products/cosrx-propolis-lip-sleeping-mask-720.avif",
+   "https://koreanmartbd.com/storage/uploads/2026/02/cosrx-full-fit-propolis-lip-sleeping-mask-20g.jpg",
+   "https://skincareshop.com.bd/wp-content/uploads/2024/09/Cosrx-Lip-Sleep-Propolis-Lip-Sleeping-Mask-20gm-0.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "laneige-water-sleeping-mask",
+  "slug": "laneige-water-sleeping-mask",
+  "name": "Water Sleeping Mask",
+  "brand": "Laneige",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "laneige-water-sleeping-mask~v1",
+    "label": "70ml",
+    "attributes": {
+     "capacity": "70ml"
+    },
+    "officialPrice": 2500
+   },
+   {
+    "id": "laneige-water-sleeping-mask~v2",
+    "label": "15ml",
+    "attributes": {
+     "capacity": "15ml"
+    },
+    "officialPrice": 480
+   }
+  ],
+  "images": [
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Laneige-Water-Sleeping-Mask-EX--70ml.jpg",
+   "https://koreanmartbd.com/storage/uploads/2026/04/laneige-water-sleeping-mask-ex-70ml.jpg",
+   "https://cdn.aromyeo.com/Products/laneige-water-sleeping-mask-ex-70ml-720.avif"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "medicube-collagen-night-wrapping-mask",
+  "slug": "medicube-collagen-night-wrapping-mask",
+  "name": "Collagen Night Wrapping Mask",
+  "brand": "Medicube",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "medicube-collagen-night-wrapping-mask~v1",
+    "label": "75ml",
+    "attributes": {
+     "capacity": "75ml"
+    },
+    "officialPrice": 2500
+   }
+  ],
+  "images": [
+   "https://skincareshop.com.bd/wp-content/uploads/2024/10/Medicube-Collagen-Night-Wrapping-Mask-–-75ml.jpg",
+   "https://glowellabd.com/wp-content/uploads/2024/10/MedicubeCollagenNightWrappingMask75ml_FreeDelivery_SriLanka_RunRabbit_1-600x800-1.webp",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Medicube_COLLAGEN_NIGHT_WRAPPING_MASK_75ml1_1.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "beauty-of-joseon-ground-rice-and-honey-glow-mask",
+  "slug": "beauty-of-joseon-ground-rice-and-honey-glow-mask",
+  "name": "Ground Rice and Honey Glow Mask",
+  "brand": "Beauty of Joseon",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+    "label": "150ml",
+    "attributes": {
+     "capacity": "150ml"
+    },
+    "officialPrice": 2300
+   }
+  ],
+  "images": [
+   "https://skincareshop.com.bd/wp-content/uploads/2024/08/Beauty-of-Joseon-Ground-Rice-and-Honey-Glow-Mask-150ml-0.jpg",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Beauty_of_Joseon_Groun_Rice__Honey_Glow_Mask_150ml.jpg",
+   "https://glowellabd.com/wp-content/uploads/2024/09/Beauty-of-Joseon-Ground-Rice-and-Honey-Glow-Mask-sentisenti-600x600-1.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "st-ives-fresh-skin-apricot-scrub",
+  "slug": "st-ives-fresh-skin-apricot-scrub",
+  "name": "Fresh Skin Apricot Scrub",
+  "brand": "St. Ives",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "st-ives-fresh-skin-apricot-scrub~v1",
+    "label": "150ml",
+    "attributes": {
+     "capacity": "150ml"
+    },
+    "officialPrice": 850
+   }
+  ],
+  "images": [
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/St._Ives_Fresh_Skin_Apricot_Scru.webp",
+   "https://beprincessbd.com/wp-content/uploads/2025/08/16.jpg",
+   "https://skincareshop.com.bd/wp-content/uploads/2024/07/St.-Ives-Fresh-Skin-Apricot-Scrub-150ml.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "cosrx-full-fit-honey-sugar-lip-scrub",
+  "slug": "cosrx-full-fit-honey-sugar-lip-scrub",
+  "name": "Full Fit Honey Sugar Lip Scrub",
+  "brand": "COSRX",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
+    "label": "20g",
+    "attributes": {
+     "capacity": "20g"
+    },
+    "officialPrice": 1850
+   }
+  ],
+  "images": [
+   "https://cdn.aromyeo.com/Products/cosrx-full-fit-honey-sugar-lip-scrub-20g-720.avif",
+   "https://koreanmartbd.com/storage/uploads/2026/02/17-cosrx-full-fit-honey-sugar-lip-scrub-20gm.jpg",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Cosrx_Full_Fit_Honey_Sugar_Lip_Scrub_20g.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "purito-dermide-cica-barrier-sleeping-pack",
+  "slug": "purito-dermide-cica-barrier-sleeping-pack",
+  "name": "Dermide Cica Barrier Sleeping Pack",
+  "brand": "Purito",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "purito-dermide-cica-barrier-sleeping-pack~v1",
+    "label": "80ml",
+    "attributes": {
+     "capacity": "80ml"
+    },
+    "officialPrice": 1800
+   }
+  ],
+  "images": [
+   "https://koreanmartbd.com/storage/uploads/2026/02/purito-dermide-cica-barrier-sleeping-pack-80ml.jpg",
+   "https://cdn.aromyeo.com/Products/purito-dermide-cica-barrier-sleeping-pack-80ml-720.avif",
+   "https://skincareshop.com.bd/wp-content/uploads/2023/12/PURITO-Dermide-Cica-Barrier-Sleeping-Pack-80ml.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "anua-heartleaf-pore-clay-pack",
+  "slug": "anua-heartleaf-pore-clay-pack",
+  "name": "Heartleaf Pore Clay Pack",
+  "brand": "Anua",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "anua-heartleaf-pore-clay-pack~v1",
+    "label": "100ml",
+    "attributes": {
+     "capacity": "100ml"
+    },
+    "officialPrice": 1950
+   }
+  ],
+  "images": [
+   "https://cdn.aromyeo.com/Products/anua-heartleaf-pore-clay-pack-100ml-720.avif",
+   "https://glowellabd.com/wp-content/uploads/2025/11/41G0dPtxlPL-removebg-preview-2.png",
+   "https://koreanmartbd.com/storage/uploads/2026/02/anua-heartleaf-pore-clay-pack-100ml.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "cosrx-aloe-soothing-sun-cream",
+  "slug": "cosrx-aloe-soothing-sun-cream",
+  "name": "Aloe Soothing Sun Cream",
+  "brand": "COSRX",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "cosrx-aloe-soothing-sun-cream~v1",
+    "label": "50ml",
+    "attributes": {
+     "capacity": "50ml"
+    },
+    "officialPrice": 1620
+   }
+  ],
+  "images": [
+   "https://koreanmartbd.com/storage/uploads/2026/02/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml.jpg",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Cosrx-Aloe-Soothing-Sun-Cream-SPF50-PA11.jpg",
+   "https://beprincessbd.com/wp-content/uploads/2023/02/230.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "isntree-hyaluronic-acid-watery-sun-gel",
+  "slug": "isntree-hyaluronic-acid-watery-sun-gel",
+  "name": "Hyaluronic Acid Watery Sun Gel",
+  "brand": "Isntree",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+    "label": "50ml",
+    "attributes": {
+     "capacity": "50ml"
+    },
+    "officialPrice": 1725
+   },
+   {
+    "id": "isntree-hyaluronic-acid-watery-sun-gel~v2",
+    "label": "10ml",
+    "attributes": {
+     "capacity": "10ml"
+    },
+    "officialPrice": 500
+   }
+  ],
+  "images": [
+   "https://cdn.aromyeo.com/Products/isntree-hyaluronic-acid-watery-sun-gel-50ml-720.avif",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Isntree_Hyaluronic_Acid_Watery_Sun_Gel-_50ml_aaaa.webp",
+   "https://glowellabd.com/wp-content/uploads/2024/06/thumb-7IOI7ZSE66Gc7KCd7Yq419_500x500.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "skin1004-hyalu-cica-water-fit-sun-serum",
+  "slug": "skin1004-hyalu-cica-water-fit-sun-serum",
+  "name": "Hyalu-Cica Water-Fit Sun Serum",
+  "brand": "SKIN1004",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+    "label": "50ml",
+    "attributes": {
+     "capacity": "50ml"
+    },
+    "officialPrice": 1775
+   },
+   {
+    "id": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
+    "label": "100ml",
+    "attributes": {
+     "capacity": "100ml"
+    },
+    "officialPrice": 2600
+   },
+   {
+    "id": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
+    "label": "15ml",
+    "attributes": {
+     "capacity": "15ml"
+    },
+    "officialPrice": 850
+   }
+  ],
+  "images": [
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/SKIN1004MadagascarHyaluCicaWaterFitSunSerum50mld9bb9c.jpg",
+   "https://koreanmartbd.com/storage/uploads/2026/06/skin1004-madagascar-2.webp",
+   "https://glowellabd.com/wp-content/uploads/2024/06/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "beauty-of-joseon-revive-eye-serum",
+  "slug": "beauty-of-joseon-revive-eye-serum",
+  "name": "Revive Eye Serum",
+  "brand": "Beauty of Joseon",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "beauty-of-joseon-revive-eye-serum~v1",
+    "label": "30ml",
+    "attributes": {
+     "capacity": "30ml"
+    },
+    "officialPrice": 1700
+   },
+   {
+    "id": "beauty-of-joseon-revive-eye-serum~v2",
+    "label": "10ml",
+    "attributes": {
+     "capacity": "10ml"
+    },
+    "officialPrice": 650
+   }
+  ],
+  "images": [
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Beauty_of_Joseon_Revive_Eye_Serum_Ginseng__Retinal_30ml_1.webp",
+   "https://glowellabd.com/wp-content/uploads/2024/06/82-Beauty-of-Joseon-Revive-Eye-Serum-Ginseng-Retinal-30ml.jpg",
+   "https://koreanmartbd.com/storage/uploads/2026/04/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "cosrx-advanced-snail-peptide-eye-cream",
+  "slug": "cosrx-advanced-snail-peptide-eye-cream",
+  "name": "Advanced Snail Peptide Eye Cream",
+  "brand": "COSRX",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "cosrx-advanced-snail-peptide-eye-cream~v1",
+    "label": "25ml",
+    "attributes": {
+     "capacity": "25ml"
+    },
+    "officialPrice": 2100
+   }
+  ],
+  "images": [
+   "https://cdn.aromyeo.com/Products/cosrx-advanced-snail-peptide-eye-cream-25ml-720.avif",
+   "https://koreanmartbd.com/storage/uploads/2026/02/cosrx-advanced-snail-peptide-eye-cream-25ml.jpg",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Cosrx-Advanced-Snail-Peptide-Eye-Cream--25ml.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "the-ordinary-caffeine-solution-5-egcg",
+  "slug": "the-ordinary-caffeine-solution-5-egcg",
+  "name": "Caffeine Solution 5% + EGCG",
+  "brand": "The Ordinary",
+  "category": "skincare",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "the-ordinary-caffeine-solution-5-egcg~v1",
+    "label": "30ml",
+    "attributes": {
+     "capacity": "30ml"
+    },
+    "officialPrice": 2125
+   }
+  ],
+  "images": [
+   "https://koreanmartbd.com/storage/uploads/2026/07/The Ordinary Caffeine Solution 5 EGCG - 30ml.webp",
+   "https://glowellabd.com/wp-content/uploads/2025/11/rdn-caffeine-solution-5pct-egcg-30ml-600x600-1.webp",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/The_Ordinary_Caffeine_Solution_5_and_EGCG_1.jpg"
+  ],
   "colors": [],
   "regions": [],
   "specs": [],
@@ -17605,7 +18270,7 @@ export const catalogProducts: Product[] = [
   "brand": "Samsung",
   "category": "watch",
   "releaseYear": 2025,
-  "popularity": 90,
+  "popularity": 100,
   "variants": [
    {
     "id": "samsung-galaxy-watch8~v1",
@@ -17969,7 +18634,7 @@ export const catalogProducts: Product[] = [
   "name": "Bip 5 Unity Smart Watch",
   "brand": "Amazfit",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2024,
   "popularity": 84,
   "variants": [
    {
@@ -17979,7 +18644,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 6200
    }
   ],
-  "images": [],
+  "images": [
+   "https://dazzle.sgp1.cdn.digitaloceanspaces.com/25032/Amazfit-Bip-5-Unity-Smart-Watch-(2).png",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1748/Amazfit_Bip_5_Unity.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -18042,7 +18710,7 @@ export const catalogProducts: Product[] = [
   "name": "Watch GT 4 46mm",
   "brand": "Huawei",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2023,
   "popularity": 76,
   "variants": [
    {
@@ -18118,101 +18786,12 @@ export const catalogProducts: Product[] = [
   "specsSource": "https://www.startech.com.bd/huawei-watch-gt-4-smart-watch"
  },
  {
-  "id": "samsung-galaxy-watch-8-40mm",
-  "slug": "samsung-galaxy-watch-8-40mm",
-  "name": "Galaxy Watch 8 40mm",
-  "brand": "Samsung",
-  "category": "watch",
-  "releaseYear": null,
-  "popularity": 84,
-  "variants": [
-   {
-    "id": "samsung-galaxy-watch-8-40mm~v1",
-    "label": "40mm",
-    "attributes": {
-     "size": "40mm"
-    },
-    "officialPrice": 25999
-   }
-  ],
-  "images": [
-   "https://www.startech.com.bd/image/cache/catalog/smart-watch/samsung/galaxy-watch8/galaxy-watch8-001-1200x630.webp"
-  ],
-  "colors": [],
-  "regions": [],
-  "specs": [
-   {
-    "group": "General Information",
-    "items": [
-     {
-      "label": "Display",
-      "value": "1.47\" Super AMOLED (480 x 480) Always On Display, ~327 ppi density Protection: Sapphire crystal"
-     },
-     {
-      "label": "Processor",
-      "value": "Chipset: Exynos W1000 (3 nm) CPU: Penta-core GPU: Mali-G68"
-     },
-     {
-      "label": "Memory",
-      "value": "RAM 2GB ROM 32GB"
-     },
-     {
-      "label": "Battery",
-      "value": "Battery Capacity: 325 mAh (40mm), 435 (44mm) Up to 30 hrs (AOD On) 10W wireless Charging"
-     },
-     {
-      "label": "Connectivity",
-      "value": "Wi-Fi 802.11 a/b/g/n, dual-band Bluetooth 5.3, A2DP, LE GPS (L1+L5), GLONASS, GALILEO, BDS NFC"
-     },
-     {
-      "label": "Material",
-      "value": "Armor Aluminum"
-     },
-     {
-      "label": "Sensor",
-      "value": "Accelerometer, gyro, heart rate, barometer, altimeter, compass, SpO2, temperature (skin), BioActive"
-     },
-     {
-      "label": "SpecialFeatures",
-      "value": "5ATM/ IP68/ MIL-STD-810H Mic., Speaker, Motor, Touch Bezel"
-     },
-     {
-      "label": "OS",
-      "value": "Android Wear OS 6, One UI 8 Watch"
-     },
-     {
-      "label": "Others",
-      "value": "Health Energy Score Sleep Apnea Bedtime Guidance High Stress Alert Running Coach Personalized Heart Rate Zone Personalized Functional Threshold Power AGEs Index Vascular Load ECG Irregular Heart Rhythm Notification Antioxidant Index Body Composition Cycle Tracking Google Gemini"
-     }
-    ]
-   },
-   {
-    "group": "Physical Information",
-    "items": [
-     {
-      "label": "Color",
-      "value": "Graphite, Silver"
-     },
-     {
-      "label": "Dimension",
-      "value": "46 x 43.7 x 8.6 mm (1.81 x 1.72 x 0.34 in)"
-     },
-     {
-      "label": "Weight",
-      "value": "34 g (44mm), 30 g (40mm) (1.06 oz)"
-     }
-    ]
-   }
-  ],
-  "specsSource": "https://www.startech.com.bd/samsung-galaxy-watch8"
- },
- {
   "id": "xiaomi-redmi-watch-5",
   "slug": "xiaomi-redmi-watch-5",
   "name": "Redmi Watch 5",
   "brand": "Xiaomi",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2024,
   "popularity": 84,
   "variants": [
    {
@@ -18287,7 +18866,7 @@ export const catalogProducts: Product[] = [
   "name": "Watch SE 2nd Gen",
   "brand": "Apple",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2022,
   "popularity": 84,
   "variants": [
    {
@@ -18378,7 +18957,7 @@ export const catalogProducts: Product[] = [
   "name": "Watch GT 6 46mm",
   "brand": "Huawei",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2025,
   "popularity": 84,
   "variants": [
    {
@@ -18455,7 +19034,7 @@ export const catalogProducts: Product[] = [
   "name": "Watch S4",
   "brand": "Xiaomi",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2024,
   "popularity": 84,
   "variants": [
    {
@@ -18465,7 +19044,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 19990
    }
   ],
-  "images": [],
+  "images": [
+   "https://dazzle.sgp1.cdn.digitaloceanspaces.com/46535/Xiaomi-Watch-S4-price-in-Bangladesh-Silver.jpg",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2561/Xiaomi_Watch_S4_Bluetooth_Calling_Smart_Watch.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -18536,7 +19118,7 @@ export const catalogProducts: Product[] = [
   "name": "Solar Lite 2",
   "brand": "Haylou",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2026,
   "popularity": 76,
   "variants": [
    {
@@ -18546,7 +19128,9 @@ export const catalogProducts: Product[] = [
     "officialPrice": 3250
    }
   ],
-  "images": [],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3444/Haylou_Solar_Lite_2_Bluetooth_Calling_Smart_Watch_-_Black.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -18617,7 +19201,7 @@ export const catalogProducts: Product[] = [
   "name": "ST2 Bluetooth Calling Smart Watch",
   "brand": "IMIKI",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2023,
   "popularity": 76,
   "variants": [
    {
@@ -18627,7 +19211,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 2549
    }
   ],
-  "images": [],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3352/Gold_1.webp",
+   "https://www.startech.com.bd/image/cache/catalog/smart-watch/imilab/imiki-st2/imiki-st2-02-1200x630.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -18690,7 +19277,7 @@ export const catalogProducts: Product[] = [
   "name": "ORB 2 Smart Watch",
   "brand": "KOSPET",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2026,
   "popularity": 76,
   "variants": [
    {
@@ -18700,7 +19287,9 @@ export const catalogProducts: Product[] = [
     "officialPrice": 8999
    }
   ],
-  "images": [],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4376/Kospet_ORB_2_-_Black.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -18779,7 +19368,7 @@ export const catalogProducts: Product[] = [
   "name": "Frame 2 Pro Smart Watch",
   "brand": "IMIKI",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2025,
   "popularity": 76,
   "variants": [
    {
@@ -18789,7 +19378,9 @@ export const catalogProducts: Product[] = [
     "officialPrice": 7450
    }
   ],
-  "images": [],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4358/beighe.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -18852,7 +19443,7 @@ export const catalogProducts: Product[] = [
   "name": "Watch 5 Lite",
   "brand": "Oraimo",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2025,
   "popularity": 76,
   "variants": [
    {
@@ -18862,7 +19453,9 @@ export const catalogProducts: Product[] = [
     "officialPrice": 1820
    }
   ],
-  "images": [],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1876/Watch_5_Lite_black_.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -18929,7 +19522,7 @@ export const catalogProducts: Product[] = [
   "name": "Tank T4C Smart Watch",
   "brand": "KOSPET",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2026,
   "popularity": 84,
   "variants": [
    {
@@ -18939,7 +19532,9 @@ export const catalogProducts: Product[] = [
     "officialPrice": 11499
    }
   ],
-  "images": [],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4251/KOSPET_TANK_T4C_-_Black.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -19010,7 +19605,7 @@ export const catalogProducts: Product[] = [
   "name": "Watch 4 With GPS",
   "brand": "Haylou",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2025,
   "popularity": 92,
   "variants": [
    {
@@ -19089,7 +19684,7 @@ export const catalogProducts: Product[] = [
   "name": "Watch 6 (OSW-807)",
   "brand": "Oraimo",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2025,
   "popularity": 76,
   "variants": [
    {
@@ -19099,7 +19694,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 2900
    }
   ],
-  "images": [],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2319/Oraimo_Watch_6_Bluetooth_Calling_Smart_Watch.webp",
+   "https://www.startech.com.bd/image/cache/catalog/smart-watch/oraimo/watch-6/watch-6-black-05-1200x630.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -19158,7 +19756,7 @@ export const catalogProducts: Product[] = [
   "name": "ORB Smart Watch",
   "brand": "KOSPET",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2025,
   "popularity": 84,
   "variants": [
    {
@@ -19168,7 +19766,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 5499
    }
   ],
-  "images": [],
+  "images": [
+   "https://dazzle.sgp1.cdn.digitaloceanspaces.com/57676/KOSPET-Orb-Smartwatch-price-in-Bangladesh-silver.jpg",
+   "https://assets.gadgetandgear.com/upload/media/kospet-orb-smart-watch575.jpeg"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -19243,7 +19844,7 @@ export const catalogProducts: Product[] = [
   "name": "Tank T3 Ultra Smart Watch",
   "brand": "KOSPET",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2023,
   "popularity": 84,
   "variants": [
    {
@@ -19253,7 +19854,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 11099
    }
   ],
-  "images": [],
+  "images": [
+   "https://dazzle.sgp1.cdn.digitaloceanspaces.com/32368/Kospet-Tank-T3-ultra-Smart-Watch-black-silicon.png",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1097/t3_ultra_black.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -19324,7 +19928,7 @@ export const catalogProducts: Product[] = [
   "name": "Actor BT Calling Smart Watch",
   "brand": "Kieslect",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2024,
   "popularity": 92,
   "variants": [
    {
@@ -19334,7 +19938,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 9999
    }
   ],
-  "images": [],
+  "images": [
+   "https://dazzle.sgp1.cdn.digitaloceanspaces.com/42526/Kieslect-Actor-Smartwatch-Price-in-bangladesh-1.jpg",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1570/kieslect_actor.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -19401,7 +20008,7 @@ export const catalogProducts: Product[] = [
   "name": "Watch Nova 2R",
   "brand": "Oraimo",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2026,
   "popularity": 84,
   "variants": [
    {
@@ -19411,7 +20018,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 5455
    }
   ],
-  "images": [],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3805/Oraimo_Watch_Nova_2R.webp",
+   "https://assets.gadgetandgear.com/upload/media/oraimo/oraimo-watch-nova-2r-smart-watch-1780999029176.jpeg"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -19466,7 +20076,7 @@ export const catalogProducts: Product[] = [
   "name": "Bip 6",
   "brand": "Amazfit",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2025,
   "popularity": 84,
   "variants": [
    {
@@ -19476,7 +20086,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 10999
    }
   ],
-  "images": [],
+  "images": [
+   "https://dazzle.sgp1.cdn.digitaloceanspaces.com/40536/Amazfit-Bip-6-Price-in-bangladesh-black.jpg",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2041/Amazfit_bip_6_1.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -19543,7 +20156,7 @@ export const catalogProducts: Product[] = [
   "name": "Active 2",
   "brand": "Amazfit",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2025,
   "popularity": 84,
   "variants": [
    {
@@ -19553,7 +20166,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 14999
    }
   ],
-  "images": [],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1926/Active_2_Black.webp",
+   "https://www.startech.com.bd/image/cache/catalog/smartwatch/amazfit/active-2/amazfit-active-2-black-01-1200x630.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -19616,7 +20232,7 @@ export const catalogProducts: Product[] = [
   "name": "Watch 2",
   "brand": "Xiaomi",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2024,
   "popularity": 92,
   "variants": [
    {
@@ -19626,7 +20242,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 21999
    }
   ],
-  "images": [],
+  "images": [
+   "https://dazzle.sgp1.cdn.digitaloceanspaces.com/24250/xiaomi-watch-2-black-.png",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1148/Xiaomi_Watch_2_black.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -19697,7 +20316,7 @@ export const catalogProducts: Product[] = [
   "name": "Watch Fit 3",
   "brand": "Huawei",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2024,
   "popularity": 92,
   "variants": [
    {
@@ -19707,7 +20326,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 15490
    }
   ],
-  "images": [],
+  "images": [
+   "https://dazzle.sgp1.cdn.digitaloceanspaces.com/17570/Untitled-design(149).png",
+   "https://assets.gadgetandgear.com/upload/media/1723714441861852.jpeg"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -19762,7 +20384,7 @@ export const catalogProducts: Product[] = [
   "name": "Galaxy Watch 7 40mm",
   "brand": "Samsung",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2024,
   "popularity": 84,
   "variants": [
    {
@@ -19774,7 +20396,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 20000
    }
   ],
-  "images": [],
+  "images": [
+   "https://dazzle.sgp1.cdn.digitaloceanspaces.com/30765/Galaxy-Watch-7-cream.png",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1246/Galaxy_Watch_7_Green.webp"
+  ],
   "colors": [],
   "regions": [],
   "specs": [
@@ -19837,7 +20462,7 @@ export const catalogProducts: Product[] = [
   "name": "Watch GT 7 46mm",
   "brand": "Huawei",
   "category": "watch",
-  "releaseYear": null,
+  "releaseYear": 2026,
   "popularity": 76,
   "variants": [
    {
@@ -19849,7 +20474,10 @@ export const catalogProducts: Product[] = [
     "officialPrice": 29999
    }
   ],
-  "images": [],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4725/46mm.webp",
+   "https://assets.gadgetandgear.com/upload/media/huawei/huawei-watch-gt-7-black.jpeg"
+  ],
   "colors": [],
   "regions": [],
   "specs": [],
@@ -26807,7 +27435,7 @@ export const catalogOffers: Offer[] = [
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
-  "region": "International",
+  "region": "Global",
   "price": 47999,
   "oldPrice": null,
   "inStock": true,
@@ -29184,6 +29812,3156 @@ export const catalogOffers: Offer[] = [
  },
  {
   "id": "o667",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 468,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/54701/etude-dear-darling-water-tint-orange-ade-03",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o668",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 490,
+  "oldPrice": 850,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/etude-house-dear-darling-water-tint/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o669",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 499,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://chardike.com/product/etude-house-dear-darling-water-tint-05-grape-ade-95g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o670",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 505,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/etude-dear-darling-water-tint-cherry-ade-9g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o671",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 520,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/etude-dear-darling-water-tint-red-grapefruit",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o672",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 520,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/etude-dear-darling-water-tint-02-cherry-ade",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o673",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 520,
+  "oldPrice": 800,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/etude-dear-darling-water-tint",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o674",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 549,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/etude-dear-darling-water-tint-01-strawberry-ade.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o675",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 549,
+  "oldPrice": 800,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/etude-house-dear-darling-water-tint-01-strawberry-9-5g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o676",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 550,
+  "oldPrice": 750,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/etude-house-dear-darling-water-tint-02/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o677",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 550,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/etude-house-dear-darling-water-tint-ade-04-red-grapefruit-9gm",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o678",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 580,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/etude-house-dear-darling-water-tint-07-lush-prune-ade-lip-tint",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o679",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 639,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/etude-house-dear-darling-water-tint-shade-03-orange-95g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o680",
+  "variantId": "etude-dear-darling-water-tint~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": 800,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/etude-house-dear-darling-water-tint-orange-ade/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o681",
+  "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 150,
+  "oldPrice": 300,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/beauty-glazed-lip-glow-oil",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o682",
+  "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 150,
+  "oldPrice": 300,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/beauty-glazed-lip-glow-oil/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o683",
+  "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 160,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/beauty-glazed-lip-glow-oil-love-104-4g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o684",
+  "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 160,
+  "oldPrice": 400,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/beauty-glazed-glow-lip-oil-105-passion-4gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o685",
+  "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 167,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/81700/beauty-glazed-glow-lip-oil-hugging-107",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o686",
+  "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 169,
+  "oldPrice": 400,
+  "inStock": true,
+  "url": "https://chardike.com/product/beauty-glazed-glow-lip-oil-101-meet-4g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o687",
+  "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 185,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.ohsogo.com/products/beauty-glazed-glow-lip-oil-4g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o688",
+  "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 249,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/beauty-glazed-glow-lip-oil-109-cherry",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o689",
+  "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 226,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.arogga.com/product/72765/swiss-beauty-lip-oil-dip-tint-peach-03",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o690",
+  "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 249,
+  "oldPrice": 380,
+  "inStock": true,
+  "url": "https://chardike.com/product/swiss-beauty-dip-tint-lip-oil-3ml-03-peach",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o691",
+  "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 290,
+  "oldPrice": 350,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/swiss-beauty-dip-tint-lip-oil/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o692",
+  "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 330,
+  "oldPrice": 450,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/swiss-beauty-dip-tint-lip-oil",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o693",
+  "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 335,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/swiss-beauty-dip-tint-lip-oil-01-strawberry",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o694",
+  "variantId": "laneige-lip-sleeping-mask-berry~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1400,
+  "oldPrice": 1650,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/laneige-lip-sleeping-mask-berry-20g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o695",
+  "variantId": "laneige-lip-sleeping-mask-berry~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1480,
+  "oldPrice": 1700,
+  "inStock": false,
+  "url": "https://chardike.com/product/laneige-lip-sleeping-mask-berry-ex-20g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o696",
+  "variantId": "laneige-lip-sleeping-mask-berry~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1514,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://koreanmartbd.com/product/laneige-lip-sleeping-mask-ex-berry-20g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o697",
+  "variantId": "laneige-lip-sleeping-mask-berry~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1521,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.emartwayskincare.com.bd/lip-sleeping-mask-berry-laneige",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o698",
+  "variantId": "laneige-lip-sleeping-mask-berry~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1550,
+  "oldPrice": 1650,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/laneige-lip-sleeping-mask-berry-20g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o699",
+  "variantId": "laneige-lip-sleeping-mask-berry~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1585,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.ohsogo.com/products/laneige-lip-sleeping-mask-20gm-berry",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o700",
+  "variantId": "laneige-lip-sleeping-mask-berry~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 1650,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/laneige-lip-sleeping-mask-ex-berry-20g.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o701",
+  "variantId": "laneige-lip-sleeping-mask-berry~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1699,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/laneige-lip-sleeping-mask-berry-20g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o702",
+  "variantId": "laneige-lip-sleeping-mask-berry~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1700,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/laneige-lip-sleeping-mask-ex-berry-20g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o703",
+  "variantId": "laneige-lip-sleeping-mask-berry~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1780,
+  "oldPrice": 1900,
+  "inStock": false,
+  "url": "https://skincareshop.com.bd/product/laneige-lip-sleeping-mask-berry-20gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o704",
+  "variantId": "laneige-lip-sleeping-mask-berry~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1795,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://klassy.com.bd/product/LANEIGE-Lip-Sleeping-Mask-EX-BERRY-20g-z10kh",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o705",
+  "variantId": "laneige-lip-sleeping-mask-berry~v2",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 325,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://chardike.com/product/laneige-lip-sleeping-mask-berry-ex-3g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o706",
+  "variantId": "laneige-lip-sleeping-mask-berry~v2",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/laneige-lip-sleeping-mask-ex-berry-3g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o707",
+  "variantId": "laneige-lip-sleeping-mask-berry~v2",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 380,
+  "oldPrice": 460,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/laneige-lip-sleeping-mask-berry-3gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o708",
+  "variantId": "laneige-lip-sleeping-mask-berry~v2",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 399,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/laneige-lip-sleeping-mask-berry-3g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o709",
+  "variantId": "laneige-lip-sleeping-mask-berry~v2",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 400,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/laneige-lip-sleeping-mask-berry-3g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o710",
+  "variantId": "laneige-lip-sleeping-mask-berry~v2",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 450,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/laneige-lip-sleeping-mask-berry-3g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o711",
+  "variantId": "laneige-lip-sleeping-mask-berry~v2",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 522,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/laneige-lip-sleeping-mask-berry-3g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o712",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 385,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/72224/wishcare-ceramide-lip-balm-natural-with-spf-50-pa",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o713",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 400,
+  "oldPrice": 520,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/wishcare-ceramide-lip-balm-with-spf-50-pa",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o714",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 409,
+  "oldPrice": 520,
+  "inStock": true,
+  "url": "https://chardike.com/product/wishcare-ceramide-lip-balm-with-spf-50-pa-natural-5g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o715",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 410,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/wishcare-ceramide-natural-lip-balm-spf50-5g.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o716",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 430,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/wishcare-ceramide-natural-lip-balm-spf50-5g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o717",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 450,
+  "oldPrice": 600,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/wishcare-ceramide-lip-balm-natural-with-spf-50-pa-5gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o718",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 450,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/wishcare-ceramide-lip-balm-with-spf-50-pa-natural",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o719",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 468,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/wishcare-ceramide-lip-balm-natural-with-spf-50-pa",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o720",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "indianmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 480,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://indianmartbd.com/product/wishcare-ceramide-lip-balm-spf-50-bangladesh/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o721",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 480,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/wishcare-ceramide-lip-balm-with-spf-50-pa-natural",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o722",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 500,
+  "oldPrice": 600,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/wishcare-ceramide-lip-balm-with-spf50-pa/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o723",
+  "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1215,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.arogga.com/product/65360/cosrx-full-fit-propolis-lip-sleeping-mask",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o724",
+  "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/cosrx-propolis-lip-sleeping-mask",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o725",
+  "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1474,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://koreanmartbd.com/product/cosrx-full-fit-propolis-lip-sleeping-mask-20g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o726",
+  "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1580,
+  "oldPrice": 1900,
+  "inStock": false,
+  "url": "https://skincareshop.com.bd/product/cosrx-lip-sleep-propolis-lip-sleeping-mask-20gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o727",
+  "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1650,
+  "oldPrice": 1850,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/cosrx-lip-sleep-full-fit-propolis-lip-sleeping-mask-20g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o728",
+  "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1680,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/cosrx-lip-sleep-propolis-lip-sleeping-mask-20g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o729",
+  "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 1830,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/cosrx-lip-sleep-propolis-lip-sleeping-mask-20g.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o730",
+  "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1889,
+  "oldPrice": 2500,
+  "inStock": false,
+  "url": "https://chardike.com/product/cosrx-full-fit-propolis-lip-sleeping-mask-20g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o731",
+  "variantId": "laneige-water-sleeping-mask~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1950,
+  "oldPrice": 2500,
+  "inStock": false,
+  "url": "https://chardike.com/product/laneige-water-sleeping-mask-ex-70ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o732",
+  "variantId": "laneige-water-sleeping-mask~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/laneige-water-sleeping-mask-ex-70ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o733",
+  "variantId": "laneige-water-sleeping-mask~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 2300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/laneige-water-sleeping-mask-ex-70ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o734",
+  "variantId": "laneige-water-sleeping-mask~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2340,
+  "oldPrice": 2500,
+  "inStock": false,
+  "url": "https://skincareshop.com.bd/product/laneige-water-sleeping-mask-70ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o735",
+  "variantId": "laneige-water-sleeping-mask~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2350,
+  "oldPrice": 2600,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/laneige-water-sleeping-mask-ex-70ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o736",
+  "variantId": "laneige-water-sleeping-mask~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/laneige-renewal-water-sleeping-mask-ex-70ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o737",
+  "variantId": "laneige-water-sleeping-mask~v2",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 315,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.ohsogo.com/products/laneige-water-sleeping-mask-15ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o738",
+  "variantId": "laneige-water-sleeping-mask~v2",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 360,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.emartwayskincare.com.bd/laneige-water-sleeping-mask-ex-15ml-ir42a-01rfu-9fdji",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o739",
+  "variantId": "laneige-water-sleeping-mask~v2",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 380,
+  "oldPrice": 450,
+  "inStock": false,
+  "url": "https://skincareshop.com.bd/product/laneige-water-sleeping-mask-15ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o740",
+  "variantId": "laneige-water-sleeping-mask~v2",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 389,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/laneige-water-sleeping-mask-15ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o741",
+  "variantId": "laneige-water-sleeping-mask~v2",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 400,
+  "oldPrice": 500,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/laneige-water-sleeping-mask-ex-15ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o742",
+  "variantId": "laneige-water-sleeping-mask~v2",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 450,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/laneige-water-sleeping-mask-15ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o743",
+  "variantId": "laneige-water-sleeping-mask~v2",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 459,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/laneige-water-sleeping-mask-ex-15ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o744",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1880,
+  "oldPrice": 2600,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/medicube-collagen-night-wrapping-mask-75ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o745",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1892,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/74944/medicube-collagen-night-wrapping-mask-75ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o746",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1900,
+  "oldPrice": 2200,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/medicube-collagen-night-wrapping-mask-75ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o747",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1949,
+  "oldPrice": 2500,
+  "inStock": true,
+  "url": "https://chardike.com/product/medicube-collagen-night-wrapping-mask-75ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o748",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1969,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/medicube-collagen-night-wrapping-mask-75ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o749",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1975,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/medicube-collagen-night-wrapping-mask-75ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o750",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/medicube-collagen-night-wrapping-mask-75ml-tpzby",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o751",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2050,
+  "oldPrice": 2250,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/medicube-collagen-night-wrapping-mask-75ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o752",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 2090,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/medicube-collagen-night-wrapping-mask-75ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o753",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2100,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/medicube-collagen-night-wrapping-mask-75ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o754",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2115,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/medicube-collagen-night-wrapping-mask-75ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o755",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2300,
+  "oldPrice": 2850,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/medicube-collagen-night-wrapping-mask",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o756",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 2399,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/medicube-collagen-night-wrapping-mask",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o757",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1880,
+  "oldPrice": 2300,
+  "inStock": false,
+  "url": "https://skincareshop.com.bd/product/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o758",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1899,
+  "oldPrice": 2100,
+  "inStock": true,
+  "url": "https://chardike.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o759",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1900,
+  "oldPrice": 2200,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o760",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1900,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o761",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2050,
+  "oldPrice": 2400,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o762",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2050,
+  "oldPrice": 2300,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o763",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2052,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o764",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2069,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o765",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2080,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o766",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2148,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o767",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 2150,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/69554/beauty-of-joseon-ground-rice-and-honey-glow-mask",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o768",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 2499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o769",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 2650,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/beauty-of-joseon-ground-rice-and-honey-glow-mask-1580ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o770",
+  "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 725,
+  "oldPrice": 1000,
+  "inStock": true,
+  "url": "https://chardike.com/product/st-ives-fresh-skin-apricot-scrub-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o771",
+  "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 740,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/58156/st-ives-fresh-skin-apricot-scrub-made-in-poland-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o772",
+  "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 750,
+  "oldPrice": 820,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/st-ives-fresh-skin-apricot-scrub-150ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o773",
+  "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 780,
+  "oldPrice": 850,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/st-ives-fresh-skin-apricot-scrub-150ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o774",
+  "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 790,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/st-ives-fresh-skin-apricot-face-scrub-150ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o775",
+  "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1215,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.arogga.com/product/65357/cosrx-full-fit-honey-sugar-lip-scrub",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o776",
+  "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/cosrx-full-fit-honey-sugar-lip-scrub-20g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o777",
+  "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1484,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://koreanmartbd.com/product/cosrx-full-fit-honey-sugar-lip-scrub-20gm",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o778",
+  "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 1499,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/cosrx-full-fit-honey-sugar-lip-scrub-20g.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o779",
+  "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1550,
+  "oldPrice": 1600,
+  "inStock": false,
+  "url": "https://chardike.com/product/cosrx-full-fit-honey-sugar-lip-scrub-20g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o780",
+  "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1650,
+  "oldPrice": 1850,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/cosrx-full-fit-honey-sugar-lip-scrub-20g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o781",
+  "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1680,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/cosrx-full-fit-honey-sugar-lip-scrub-20g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o782",
+  "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1780,
+  "oldPrice": 1900,
+  "inStock": false,
+  "url": "https://skincareshop.com.bd/product/cosrx-full-fit-honey-sugar-lip-scrub-20gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o783",
+  "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1463,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://koreanmartbd.com/product/purito-dermide-cica-barrier-sleeping-pack-80ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o784",
+  "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/purito-dermide-cica-barrier-sleeping-pack-80ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o785",
+  "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1544,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.arogga.com/product/62403/purito-dermide-cica-barrier-sleeping-pack-with-squalane-panthenol-for-dry-sensitive-skin-types",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o786",
+  "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1580,
+  "oldPrice": 1800,
+  "inStock": false,
+  "url": "https://skincareshop.com.bd/product/purito-dermide-cica-barrier-sleeping-pack-80ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o787",
+  "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1580,
+  "oldPrice": 1750,
+  "inStock": true,
+  "url": "https://chardike.com/product/purito-dermide-cica-barrier-sleeping-pack-80ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o788",
+  "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1600,
+  "oldPrice": 1800,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/purito-dermide-cica-barrier-sleeping-pack-80ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o789",
+  "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1665,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/purito-dermide-cica-barrier-sleeping-pack-80ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o790",
+  "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1680,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/purito-dermide-cica-barrier-sleeping-pack-80ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o791",
+  "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1700,
+  "oldPrice": 2000,
+  "inStock": false,
+  "url": "https://perfectobd.com/product/purito-dermide-cica-barrier-sleeping-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o792",
+  "variantId": "anua-heartleaf-pore-clay-pack~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1480,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/anua-heartleaf-pore-clay-pack-100ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o793",
+  "variantId": "anua-heartleaf-pore-clay-pack~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/anua-heartleaf-pore-clay-pack-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o794",
+  "variantId": "anua-heartleaf-pore-clay-pack~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1550,
+  "oldPrice": 1700,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/anua-heartleaf-pore-clay-pack-100ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o795",
+  "variantId": "anua-heartleaf-pore-clay-pack~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1564,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/anua-heartleaf-pore-clay-pack-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o796",
+  "variantId": "anua-heartleaf-pore-clay-pack~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1665,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.emartwayskincare.com.bd/anua-heartleaf-pore-clay-pack-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o797",
+  "variantId": "anua-heartleaf-pore-clay-pack~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1669,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/75756/anua-heartleaf-pore-clay-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o798",
+  "variantId": "anua-heartleaf-pore-clay-pack~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1680,
+  "oldPrice": 1950,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/anua-heartleaf-pore-clay-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o799",
+  "variantId": "anua-heartleaf-pore-clay-pack~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1780,
+  "oldPrice": 2000,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/anua-heartleaf-pore-clay-pack-100ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o800",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1049,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o801",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1049,
+  "oldPrice": 1650,
+  "inStock": true,
+  "url": "https://chardike.com/product/cosrx-aloe-soothing-sun-cream-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o802",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1050,
+  "oldPrice": 1250,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/cosrx-aloe-soothing-sun-cream-spf-50-pa-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o803",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1095,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/51408/cosrx-aloe-soothing-sun-cream-spf-50-pa",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o804",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1100,
+  "oldPrice": 1400,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/cosrx-aloe-soothing-spf50-pa-sun-cream-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o805",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1150,
+  "oldPrice": 1640,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/cosrx-aloe-soothing-sun-cream-spf50-pa",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o806",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1180,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/cosrx-aloe-soothing-sun-cream-spf50-pa50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o807",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1180,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.ohsogo.com/products/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o808",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/cosrx-aloe-soothing-sun-cream-spf50-pa-plus-plus-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o809",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1220,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/cosrx-aloe-soothing-sun-cream",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o810",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1220,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/COSRX-Aloe-Soothing-Sun-Cream-SPF50-PA-50ml-169aa08",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o811",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1250,
+  "oldPrice": 1650,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o812",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 1250,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/cosrx-aloe-soothing-sun-cream-spf50-50ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o813",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1280,
+  "oldPrice": 1600,
+  "inStock": false,
+  "url": "https://skincareshop.com.bd/product/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o814",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1650,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://shop.shajgoj.com/product/cosrx-aloe-soothing-sun-cream-spf50-pa",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o815",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1350,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/isntree-hyaluronic-acid-watery-sun-gel-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o816",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1380,
+  "oldPrice": 1680,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o817",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1390,
+  "oldPrice": 1700,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o818",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1399,
+  "oldPrice": 1750,
+  "inStock": true,
+  "url": "https://chardike.com/product/isntree-hyaluronic-acid-watery-sun-gel-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o819",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1400,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o820",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1440,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/isntree-hyaluronic-acid-watery-sun-gel-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o821",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1450,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/isntree-hyaluronic-acid-watery-sun-gel-spf-50-pavva-uvb-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o822",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1529,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o823",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1540,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/Isntree-Hyaluronic-Acid-Watery-Sun-Gel-50ml-or-New-Packaging-243d9f3",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o824",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1550,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/isntree-hyaluronic-acid-watery-sun-gel-spf-50-pa-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o825",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1550,
+  "oldPrice": 1750,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/isntree-hyaluronic-acid-spf50-pa-watery-sun-gel-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o826",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1599,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/51414/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o827",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 1690,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/isntree-hyaluronic-acid-watery-sun-gel-spf50.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o828",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1799,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/isntree-hyaluronic-acid-spf50-pa-watery-sun-gel",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o829",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v2",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 280,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/isntree-hyaluronic-acid-watery-sun-gel-mini-10ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o830",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v2",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 330,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/isntree-hyaluronic-acid-watery-sun-gel-10ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o831",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v2",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 400,
+  "oldPrice": 500,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-10-ml-mini/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o832",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v2",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 504,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://koreanmartbd.com/product/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-10ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o833",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1249,
+  "oldPrice": 1900,
+  "inStock": true,
+  "url": "https://chardike.com/product/skin1004-madagascar-hyalu-cica-water-fit-sun-serum-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o834",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1349,
+  "oldPrice": 1850,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/skin1004-centella-hyalu-cica-water-fit-sun-serum-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o835",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1370,
+  "oldPrice": 1680,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/skin1004-madagascar-hyalu-cica-water-fit-sun-serum-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o836",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1393,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/skin1004-madagascar-hyalu-cica-water-fit-sun-serum-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o837",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 1399,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-spf50-50ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o838",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1400,
+  "oldPrice": 1700,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/skin1004-madagascar-hyalu-cica-water-fit-sun-serum-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o839",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1450,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.ohsogo.com/products/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o840",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1450,
+  "oldPrice": 1650,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o841",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1450,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o842",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/51240/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-spf50-pa-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o843",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1680,
+  "oldPrice": 1900,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/skin1004-hyalu-cica-water-fit-sun-serum-spf50-pa-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o844",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2200,
+  "oldPrice": 2500,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-100-ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o845",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 2250,
+  "oldPrice": 2700,
+  "inStock": true,
+  "url": "https://chardike.com/product/skin1004-madagascar-hyalu-cica-water-fit-sun-serum-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o846",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2475,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-spf50-pa-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o847",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 2500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o848",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 2500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/84830/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o849",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 2749,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o850",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": 800,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-15ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o851",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 699,
+  "oldPrice": 900,
+  "inStock": true,
+  "url": "https://chardike.com/product/skin1004-madagascar-hyalu-cica-water-fit-sun-serum-15ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o852",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 765,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-15ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o853",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-15ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o854",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 905,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-15ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o855",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1375,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.ohsogo.com/products/beauty-of-joseon-ginseng-retinal-revive-eye-serum-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o856",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1399,
+  "oldPrice": 1500,
+  "inStock": true,
+  "url": "https://chardike.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o857",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1450,
+  "oldPrice": 1700,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o858",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml-3/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o859",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1529,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o860",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 1550,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30-ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o861",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1565,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/Beauty-Of-Joseon-Revive-eye-serum--Ginseng--Retinal-30ml-Msp26",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o862",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1580,
+  "oldPrice": 1700,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o863",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1890,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o864",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 2040,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/62394/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o865",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v2",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 480,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-mini-10ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o866",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v2",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 495,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.emartwayskincare.com.bd/beauty-of-joseon-revive-eye-serum-ginseng-retinal-10ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o867",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v2",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/68187/beauty-of-joseon-revive-eye-serum-ginseng-retinal-10ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o868",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v2",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-10ml-mini/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o869",
+  "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
+  "sellerId": "kcarebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1540,
+  "oldPrice": 1680,
+  "inStock": true,
+  "url": "https://kcarebd.com/products/cosrx-advanced-snail-peptide-eye-cream-25ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o870",
+  "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1650,
+  "oldPrice": 2300,
+  "inStock": false,
+  "url": "https://perfectobd.com/product/cosrx-advanced-snail-peptide-eye-cream",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o871",
+  "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1690,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/cosrx-advanced-snail-peptide-eye-cream-25g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o872",
+  "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
+  "sellerId": "aromyeo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1700,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://aromyeo.com/products/cosrx-advanced-snail-peptide-eye-cream-25ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o873",
+  "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1719,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/cosrx-advanced-snail-peptide-eye-cream-25ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o874",
+  "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 1750,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/cosrx-advanced-snail-peptide-eye-cream-25ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o875",
+  "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1759,
+  "oldPrice": 1900,
+  "inStock": true,
+  "url": "https://chardike.com/product/cosrx-advanced-snail-peptide-eye-cream-25ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o876",
+  "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1760,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/52513/cosrx-advanced-snail-peptide-eye-cream",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o877",
+  "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1850,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.ohsogo.com/products/cosrx-advanced-snail-peptide-eye-cream-25ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o878",
+  "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1950,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/COSRX-Advanced-Snail-Peptide-Eye-Cream-25ml-vSXnr",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o879",
+  "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1980,
+  "oldPrice": 2400,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/cosrx-advanced-snail-peptide-eye-cream-25ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o880",
+  "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 2199,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://shop.shajgoj.com/product/cosrx-advanced-snail-peptide-eye-cream",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o881",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 1625,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/the-ordinary-caffeine-solution-5-egcg-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o882",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1650,
+  "oldPrice": 1850,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/the-ordinary-caffeine-solution-5-egcg-30ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o883",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "banglashoppers.com",
+  "condition": "official",
+  "region": null,
+  "price": 1675,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.banglashoppers.com/the-ordinary-caffeine-solution-5-plus-egcg-30ml.html",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o884",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "koreanmartbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1696,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://koreanmartbd.com/product/the-ordinary-caffeine-solution-5-egcg-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o885",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1700,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/ordinary-caffeine-solution-5-egcg-30ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o886",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1710,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/the-ordinary-caffeine-solution-5-egcg",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o887",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1740,
+  "oldPrice": 2800,
+  "inStock": true,
+  "url": "https://chardike.com/product/the-ordinary-caffeine-solution-5-and-egcg",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o888",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1750,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/50983/the-ordinary-caffeine-solution-5-egcg-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o889",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1850,
+  "oldPrice": 2050,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/the-ordinary-caffeine-solution-5-egcg-serum-30ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o890",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1880,
+  "oldPrice": 2200,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/the-ordinary-caffeine-solution-5-egcg-30ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o891",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2148,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/the-ordinary-caffeine-solution-5-egcg-eye-serum-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o892",
   "variantId": "af-1-air-force-1-1-1-copy-sneakers~v1",
   "sellerId": "threesbd.com",
   "condition": "unofficial",
@@ -29197,7 +32975,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o668",
+  "id": "o893",
   "variantId": "af-1-air-force-1-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -29211,7 +32989,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o669",
+  "id": "o894",
   "variantId": "af-1-air-force-1-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -29225,7 +33003,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o670",
+  "id": "o895",
   "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -29239,7 +33017,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o671",
+  "id": "o896",
   "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -29253,7 +33031,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o672",
+  "id": "o897",
   "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -29267,7 +33045,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o673",
+  "id": "o898",
   "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -29281,7 +33059,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o674",
+  "id": "o899",
   "variantId": "samba-samba-og-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -29295,7 +33073,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o675",
+  "id": "o900",
   "variantId": "samba-samba-og-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -29309,7 +33087,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o676",
+  "id": "o901",
   "variantId": "samba-samba-og-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -29323,7 +33101,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o677",
+  "id": "o902",
   "variantId": "samba-samba-vegan-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -29337,7 +33115,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o678",
+  "id": "o903",
   "variantId": "samba-samba-vegan-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -29351,7 +33129,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o679",
+  "id": "o904",
   "variantId": "samba-samba-vegan-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -29365,7 +33143,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o680",
+  "id": "o905",
   "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -29379,7 +33157,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o681",
+  "id": "o906",
   "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -29393,7 +33171,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o682",
+  "id": "o907",
   "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -29407,7 +33185,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o683",
+  "id": "o908",
   "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -29421,7 +33199,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o684",
+  "id": "o909",
   "variantId": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -29435,7 +33213,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o685",
+  "id": "o910",
   "variantId": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -29449,7 +33227,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o686",
+  "id": "o911",
   "variantId": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -29463,7 +33241,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o687",
+  "id": "o912",
   "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -29477,7 +33255,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o688",
+  "id": "o913",
   "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -29491,7 +33269,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o689",
+  "id": "o914",
   "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -29505,7 +33283,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o690",
+  "id": "o915",
   "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -29519,7 +33297,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o691",
+  "id": "o916",
   "variantId": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -29533,7 +33311,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o692",
+  "id": "o917",
   "variantId": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -29547,7 +33325,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o693",
+  "id": "o918",
   "variantId": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -29561,7 +33339,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o694",
+  "id": "o919",
   "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -29575,7 +33353,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o695",
+  "id": "o920",
   "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -29589,7 +33367,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o696",
+  "id": "o921",
   "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -29603,7 +33381,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o697",
+  "id": "o922",
   "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -29617,7 +33395,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o698",
+  "id": "o923",
   "variantId": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -29631,7 +33409,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o699",
+  "id": "o924",
   "variantId": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -29645,7 +33423,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o700",
+  "id": "o925",
   "variantId": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -29659,7 +33437,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o701",
+  "id": "o926",
   "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -29673,7 +33451,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o702",
+  "id": "o927",
   "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -29687,7 +33465,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o703",
+  "id": "o928",
   "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -29701,7 +33479,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o704",
+  "id": "o929",
   "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -29715,7 +33493,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o705",
+  "id": "o930",
   "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -29729,7 +33507,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o706",
+  "id": "o931",
   "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -29743,7 +33521,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o707",
+  "id": "o932",
   "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -29757,7 +33535,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o708",
+  "id": "o933",
   "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -29771,7 +33549,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o709",
+  "id": "o934",
   "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -29785,7 +33563,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o710",
+  "id": "o935",
   "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -29799,7 +33577,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o711",
+  "id": "o936",
   "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -29813,7 +33591,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o712",
+  "id": "o937",
   "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -29827,7 +33605,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o713",
+  "id": "o938",
   "variantId": "new-balance-530-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -29841,7 +33619,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o714",
+  "id": "o939",
   "variantId": "new-balance-530-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -29855,7 +33633,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o715",
+  "id": "o940",
   "variantId": "new-balance-530-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -29869,7 +33647,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o716",
+  "id": "o941",
   "variantId": "new-balance-530-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -29883,7 +33661,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o717",
+  "id": "o942",
   "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -29897,7 +33675,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o718",
+  "id": "o943",
   "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -29911,7 +33689,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o719",
+  "id": "o944",
   "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -29925,7 +33703,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o720",
+  "id": "o945",
   "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -29939,7 +33717,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o721",
+  "id": "o946",
   "variantId": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -29953,7 +33731,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o722",
+  "id": "o947",
   "variantId": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -29967,7 +33745,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o723",
+  "id": "o948",
   "variantId": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -29981,7 +33759,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o724",
+  "id": "o949",
   "variantId": "vans-knu-skool-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -29995,7 +33773,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o725",
+  "id": "o950",
   "variantId": "vans-knu-skool-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -30009,7 +33787,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o726",
+  "id": "o951",
   "variantId": "vans-knu-skool-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -30023,7 +33801,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o727",
+  "id": "o952",
   "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
   "sellerId": "threesbd.com",
   "condition": "unofficial",
@@ -30037,7 +33815,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o728",
+  "id": "o953",
   "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -30051,7 +33829,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o729",
+  "id": "o954",
   "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -30065,7 +33843,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o730",
+  "id": "o955",
   "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -30079,7 +33857,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o731",
+  "id": "o956",
   "variantId": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -30093,7 +33871,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o732",
+  "id": "o957",
   "variantId": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -30107,7 +33885,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o733",
+  "id": "o958",
   "variantId": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -30121,7 +33899,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o734",
+  "id": "o959",
   "variantId": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
   "sellerId": "threesbd.com",
   "condition": "unofficial",
@@ -30135,7 +33913,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o735",
+  "id": "o960",
   "variantId": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -30149,7 +33927,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o736",
+  "id": "o961",
   "variantId": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -30163,7 +33941,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o737",
+  "id": "o962",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -30177,7 +33955,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o738",
+  "id": "o963",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -30191,7 +33969,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o739",
+  "id": "o964",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -30205,7 +33983,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o740",
+  "id": "o965",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -30219,7 +33997,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o741",
+  "id": "o966",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -30233,7 +34011,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o742",
+  "id": "o967",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30247,7 +34025,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o743",
+  "id": "o968",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30261,7 +34039,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o744",
+  "id": "o969",
   "variantId": "apple-watch-series-11~v3",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -30275,7 +34053,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o745",
+  "id": "o970",
   "variantId": "apple-watch-series-11~v4",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -30289,10 +34067,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o746",
+  "id": "o971",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "startech.com.bd",
-  "condition": "unofficial",
+  "condition": "official",
   "region": null,
   "price": 23900,
   "oldPrice": 25999,
@@ -30300,13 +34078,27 @@ export const catalogOffers: Offer[] = [
   "url": "https://www.startech.com.bd/samsung-galaxy-watch8",
   "source": "site",
   "published": true,
-  "checkedAt": "2026-10-21T03:00:00.000Z"
+  "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o747",
+  "id": "o972",
+  "variantId": "samsung-galaxy-watch8~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 25400,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/samsung-galaxy-watch8",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o973",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "gadgetandgear.com",
-  "condition": "unofficial",
+  "condition": "official",
   "region": null,
   "price": 23999,
   "oldPrice": 25499,
@@ -30314,13 +34106,13 @@ export const catalogOffers: Offer[] = [
   "url": "https://gadgetandgear.com/product/galaxy-watch-8",
   "source": "site",
   "published": true,
-  "checkedAt": "2026-10-21T03:00:00.000Z"
+  "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o748",
+  "id": "o974",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "gadgetandgear.com",
-  "condition": "unofficial",
+  "condition": "official",
   "region": null,
   "price": 25999,
   "oldPrice": 27499,
@@ -30328,10 +34120,10 @@ export const catalogOffers: Offer[] = [
   "url": "https://gadgetandgear.com/product/galaxy-watch-8",
   "source": "site",
   "published": true,
-  "checkedAt": "2026-10-21T03:00:00.000Z"
+  "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o749",
+  "id": "o975",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -30342,10 +34134,10 @@ export const catalogOffers: Offer[] = [
   "url": "https://www.applegadgetsbd.com/product/galaxy-watch8",
   "source": "site",
   "published": true,
-  "checkedAt": "2026-10-21T03:00:00.000Z"
+  "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o750",
+  "id": "o976",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -30356,10 +34148,10 @@ export const catalogOffers: Offer[] = [
   "url": "https://www.applegadgetsbd.com/product/galaxy-watch8",
   "source": "site",
   "published": true,
-  "checkedAt": "2026-10-21T03:00:00.000Z"
+  "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o751",
+  "id": "o977",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30370,10 +34162,10 @@ export const catalogOffers: Offer[] = [
   "url": "https://www.sumashtech.com/product/galaxy-watch-8",
   "source": "site",
   "published": true,
-  "checkedAt": "2026-10-21T03:00:00.000Z"
+  "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o752",
+  "id": "o978",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30384,10 +34176,10 @@ export const catalogOffers: Offer[] = [
   "url": "https://www.sumashtech.com/product/galaxy-watch-8",
   "source": "site",
   "published": true,
-  "checkedAt": "2026-10-21T03:00:00.000Z"
+  "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o753",
+  "id": "o979",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -30401,7 +34193,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o754",
+  "id": "o980",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -30415,7 +34207,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o755",
+  "id": "o981",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -30429,7 +34221,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o756",
+  "id": "o982",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -30443,7 +34235,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o757",
+  "id": "o983",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -30457,7 +34249,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o758",
+  "id": "o984",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -30471,7 +34263,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o759",
+  "id": "o985",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30485,7 +34277,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o760",
+  "id": "o986",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -30499,7 +34291,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o761",
+  "id": "o987",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "diamu.com.bd",
   "condition": "official",
@@ -30513,7 +34305,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o762",
+  "id": "o988",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -30527,7 +34319,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o763",
+  "id": "o989",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -30541,7 +34333,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o764",
+  "id": "o990",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -30555,7 +34347,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o765",
+  "id": "o991",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -30569,7 +34361,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o766",
+  "id": "o992",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -30583,7 +34375,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o767",
+  "id": "o993",
   "variantId": "xiaomi-redmi-watch-6-active~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -30597,7 +34389,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o768",
+  "id": "o994",
   "variantId": "xiaomi-redmi-watch-6-active~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -30611,7 +34403,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o769",
+  "id": "o995",
   "variantId": "amazfit-bip-5-unity-smart-watch~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -30625,7 +34417,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o770",
+  "id": "o996",
   "variantId": "amazfit-bip-5-unity-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30639,7 +34431,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o771",
+  "id": "o997",
   "variantId": "amazfit-bip-5-unity-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -30653,7 +34445,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o772",
+  "id": "o998",
   "variantId": "huawei-watch-gt-4-46mm~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -30667,7 +34459,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o773",
+  "id": "o999",
   "variantId": "huawei-watch-gt-4-46mm~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30681,49 +34473,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o774",
-  "variantId": "samsung-galaxy-watch-8-40mm~v1",
-  "sellerId": "startech.com.bd",
-  "condition": "official",
-  "region": null,
-  "price": 23900,
-  "oldPrice": 25999,
-  "inStock": true,
-  "url": "https://www.startech.com.bd/samsung-galaxy-watch8",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-24T03:00:00.000Z"
- },
- {
-  "id": "o775",
-  "variantId": "samsung-galaxy-watch-8-40mm~v1",
-  "sellerId": "gadgetandgear.com",
-  "condition": "official",
-  "region": null,
-  "price": 25999,
-  "oldPrice": 27499,
-  "inStock": true,
-  "url": "https://gadgetandgear.com/product/galaxy-watch-8",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-24T03:00:00.000Z"
- },
- {
-  "id": "o776",
-  "variantId": "samsung-galaxy-watch-8-40mm~v1",
-  "sellerId": "sumashtech.com",
-  "condition": "unofficial",
-  "region": null,
-  "price": 24499,
-  "oldPrice": 29999,
-  "inStock": true,
-  "url": "https://www.sumashtech.com/product/galaxy-watch-8",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-24T03:00:00.000Z"
- },
- {
-  "id": "o777",
+  "id": "o1000",
   "variantId": "xiaomi-redmi-watch-5~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -30737,7 +34487,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o778",
+  "id": "o1001",
   "variantId": "xiaomi-redmi-watch-5~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -30751,7 +34501,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o779",
+  "id": "o1002",
   "variantId": "xiaomi-redmi-watch-5~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30765,7 +34515,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o780",
+  "id": "o1003",
   "variantId": "apple-watch-se-2nd-gen~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -30779,7 +34529,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o781",
+  "id": "o1004",
   "variantId": "apple-watch-se-2nd-gen~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -30793,7 +34543,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o782",
+  "id": "o1005",
   "variantId": "apple-watch-se-2nd-gen~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -30807,7 +34557,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o783",
+  "id": "o1006",
   "variantId": "huawei-watch-gt-6-46mm~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30821,7 +34571,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o784",
+  "id": "o1007",
   "variantId": "huawei-watch-gt-6-46mm~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -30835,7 +34585,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o785",
+  "id": "o1008",
   "variantId": "huawei-watch-gt-6-46mm~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -30849,7 +34599,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o786",
+  "id": "o1009",
   "variantId": "xiaomi-watch-s4~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -30863,7 +34613,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o787",
+  "id": "o1010",
   "variantId": "xiaomi-watch-s4~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30877,7 +34627,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o788",
+  "id": "o1011",
   "variantId": "xiaomi-watch-s4~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -30891,7 +34641,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o789",
+  "id": "o1012",
   "variantId": "haylou-solar-lite-2~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -30905,7 +34655,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o790",
+  "id": "o1013",
   "variantId": "haylou-solar-lite-2~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30919,7 +34669,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o791",
+  "id": "o1014",
   "variantId": "imiki-st2-bluetooth-calling-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -30933,7 +34683,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o792",
+  "id": "o1015",
   "variantId": "imiki-st2-bluetooth-calling-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30947,7 +34697,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o793",
+  "id": "o1016",
   "variantId": "kospet-orb-2-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -30961,7 +34711,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o794",
+  "id": "o1017",
   "variantId": "kospet-orb-2-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30975,7 +34725,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o795",
+  "id": "o1018",
   "variantId": "imiki-frame-2-pro-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -30989,7 +34739,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o796",
+  "id": "o1019",
   "variantId": "imiki-frame-2-pro-smart-watch~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -31003,7 +34753,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o797",
+  "id": "o1020",
   "variantId": "oraimo-watch-5-lite~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31017,7 +34767,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o798",
+  "id": "o1021",
   "variantId": "oraimo-watch-5-lite~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31031,7 +34781,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o799",
+  "id": "o1022",
   "variantId": "kospet-tank-t4c-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31045,7 +34795,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o800",
+  "id": "o1023",
   "variantId": "kospet-tank-t4c-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31059,7 +34809,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o801",
+  "id": "o1024",
   "variantId": "kospet-tank-t4c-smart-watch~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -31073,7 +34823,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o802",
+  "id": "o1025",
   "variantId": "haylou-watch-4-with-gps~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31087,7 +34837,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o803",
+  "id": "o1026",
   "variantId": "haylou-watch-4-with-gps~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31101,7 +34851,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o804",
+  "id": "o1027",
   "variantId": "haylou-watch-4-with-gps~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -31115,7 +34865,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o805",
+  "id": "o1028",
   "variantId": "haylou-watch-4-with-gps~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -31129,7 +34879,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o806",
+  "id": "o1029",
   "variantId": "oraimo-watch-6-osw-807~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31143,7 +34893,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o807",
+  "id": "o1030",
   "variantId": "oraimo-watch-6-osw-807~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31157,7 +34907,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o808",
+  "id": "o1031",
   "variantId": "kospet-orb-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31171,7 +34921,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o809",
+  "id": "o1032",
   "variantId": "kospet-orb-smart-watch~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -31185,7 +34935,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o810",
+  "id": "o1033",
   "variantId": "kospet-orb-smart-watch~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -31199,7 +34949,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o811",
+  "id": "o1034",
   "variantId": "kospet-tank-t3-ultra-smart-watch~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -31213,7 +34963,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o812",
+  "id": "o1035",
   "variantId": "kospet-tank-t3-ultra-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31227,7 +34977,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o813",
+  "id": "o1036",
   "variantId": "kospet-tank-t3-ultra-smart-watch~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -31241,7 +34991,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o814",
+  "id": "o1037",
   "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31255,7 +35005,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o815",
+  "id": "o1038",
   "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -31269,7 +35019,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o816",
+  "id": "o1039",
   "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31283,7 +35033,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o817",
+  "id": "o1040",
   "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -31297,7 +35047,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o818",
+  "id": "o1041",
   "variantId": "oraimo-watch-nova-2r~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31311,7 +35061,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o819",
+  "id": "o1042",
   "variantId": "oraimo-watch-nova-2r~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31325,7 +35075,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o820",
+  "id": "o1043",
   "variantId": "oraimo-watch-nova-2r~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -31339,7 +35089,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o821",
+  "id": "o1044",
   "variantId": "amazfit-bip-6~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31353,7 +35103,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o822",
+  "id": "o1045",
   "variantId": "amazfit-bip-6~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -31367,7 +35117,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o823",
+  "id": "o1046",
   "variantId": "amazfit-bip-6~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31381,7 +35131,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o824",
+  "id": "o1047",
   "variantId": "amazfit-active-2~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31395,7 +35145,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o825",
+  "id": "o1048",
   "variantId": "amazfit-active-2~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31409,7 +35159,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o826",
+  "id": "o1049",
   "variantId": "amazfit-active-2~v1",
   "sellerId": "genten.com.bd",
   "condition": "official",
@@ -31423,7 +35173,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o827",
+  "id": "o1050",
   "variantId": "xiaomi-watch-2~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31437,7 +35187,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o828",
+  "id": "o1051",
   "variantId": "xiaomi-watch-2~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -31451,7 +35201,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o829",
+  "id": "o1052",
   "variantId": "xiaomi-watch-2~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31465,7 +35215,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o830",
+  "id": "o1053",
   "variantId": "xiaomi-watch-2~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -31479,7 +35229,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o831",
+  "id": "o1054",
   "variantId": "huawei-watch-fit-3~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -31493,7 +35243,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o832",
+  "id": "o1055",
   "variantId": "huawei-watch-fit-3~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -31507,7 +35257,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o833",
+  "id": "o1056",
   "variantId": "huawei-watch-fit-3~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31521,7 +35271,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o834",
+  "id": "o1057",
   "variantId": "huawei-watch-fit-3~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -31535,7 +35285,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o835",
+  "id": "o1058",
   "variantId": "samsung-galaxy-watch-7-40mm~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31549,7 +35299,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o836",
+  "id": "o1059",
   "variantId": "samsung-galaxy-watch-7-40mm~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -31563,7 +35313,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o837",
+  "id": "o1060",
   "variantId": "samsung-galaxy-watch-7-40mm~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31577,7 +35327,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o838",
+  "id": "o1061",
   "variantId": "huawei-watch-gt-7-46mm~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31591,7 +35341,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o839",
+  "id": "o1062",
   "variantId": "huawei-watch-gt-7-46mm~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",

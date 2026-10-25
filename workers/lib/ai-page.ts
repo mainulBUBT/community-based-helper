@@ -1,4 +1,5 @@
 import type { Page } from "../stores/page";
+import { toTaka } from "./price";
 import { privateSettings } from "./settings";
 import { pageOffers } from "./variants";
 
@@ -16,11 +17,6 @@ interface AiRow {
   inStock?: boolean | null;
   region?: string | null;
 }
-
-const num = (value: unknown): number => {
-  if (typeof value === "number") return value;
-  return Number(String(value ?? "").replace(/[^\d]/g, "")) || 0;
-};
 
 async function gemini(url: string): Promise<string> {
   const { llm } = await privateSettings();
@@ -45,7 +41,7 @@ async function gemini(url: string): Promise<string> {
     }),
     signal: AbortSignal.timeout(150_000),
   });
-  if (!res.ok) throw new Error(`Gemini HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);
+  if (!res.ok) throw new Error(`Gemini HTTP ${res.status}`);
   const data = (await res.json()) as { candidates?: { content?: { parts?: { text?: string }[] }; urlContextMetadata?: unknown; url_context_metadata?: unknown }[] };
   const first = data.candidates?.[0];
   if (process.env.AI_READ_VERBOSE) console.error(`AI fetch: ${JSON.stringify(first?.urlContextMetadata ?? first?.url_context_metadata ?? null)}`);
@@ -55,18 +51,18 @@ async function gemini(url: string): Promise<string> {
 // দোকান GitHub-এর IP কে আটকে দিলে ডাকা হয়। পড়তে না পারলে null — তখন আগের মতো "দোকান আটকে রাখায় বাদ"।
 export async function aiRead(url: string): Promise<Page | null> {
   if (budget <= 0) return null;
+  budget--;
   try {
     const text = await gemini(url);
     if (process.env.AI_READ_VERBOSE) console.error(`AI উত্তর: ${text.slice(0, 300)}`);
     const json = text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1);
     const reply = JSON.parse(json) as { title?: string | null; image?: string | null; rows?: AiRow[] };
-    budget--;
     const rows = (reply.rows ?? [])
       .map((row) => ({
         options: row.label ? [String(row.label).trim()] : [],
         region: row.region ? String(row.region).trim() : null,
-        price: num(row.price),
-        oldPrice: row.oldPrice == null ? null : num(row.oldPrice) || null,
+        price: toTaka(row.price) ?? 0,
+        oldPrice: toTaka(row.oldPrice),
         inStock: row.inStock ?? null,
       }))
       .filter((row) => row.price > 0);

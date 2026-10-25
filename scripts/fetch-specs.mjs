@@ -49,12 +49,19 @@ for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json") && f !== "
 
 for (const url of urls) {
   if (cache[url]?.length) continue;
-  const res = await fetch(url, { headers: { "user-agent": UA } });
-  if (!res.ok) {
-    console.log(`skip ${url}: HTTP ${res.status}`);
+  let html;
+  try {
+    const res = await fetch(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(30_000) });
+    if (!res.ok) {
+      console.log(`skip ${url}: HTTP ${res.status}`);
+      continue;
+    }
+    html = await res.text();
+  } catch (error) {
+    console.log(`skip ${url}: ${error.message}`);
     continue;
   }
-  cache[url] = (isMobiledokan(url) ? parseMobiledokan : parse)(await res.text());
+  cache[url] = (isMobiledokan(url) ? parseMobiledokan : parse)(html);
   console.log(`${cache[url].length} groups  ${url}`);
   await new Promise((resolve) => setTimeout(resolve, 1000));
 }

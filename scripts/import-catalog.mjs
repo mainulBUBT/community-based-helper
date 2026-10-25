@@ -3,6 +3,8 @@
 // Output: src/data/catalog.generated.ts and supabase/seed.sql
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { sameProduct } from "../src/utils/catalog.ts";
+import { canonicalRegion } from "../src/utils/region.ts";
 
 const DIR = "data/catalog";
 const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color", "gpu", "cpu", "resolution", "battery", "capacity"];
@@ -16,6 +18,7 @@ const slugify = (text) =>
     .replace(/^-+|-+$/g, "");
 const hostOf = (url) => new URL(url).hostname.replace(/^www\./, "");
 const httpUrl = (url) => (typeof url === "string" && /^https?:\/\//i.test(url) ? url : null);
+const pgArray = (items) => `{${items.map((x) => `"${String(x).replace(/["\\]/g, "\\$&")}"`).join(",")}}`;
 const sql = (value) => (value === null || value === undefined ? "null" : typeof value === "number" || typeof value === "boolean" ? String(value) : `'${String(value).replace(/'/g, "''")}'`);
 
 const files = readdirSync(DIR).filter((f) => f.endsWith(".json") && f !== "specs.json");
@@ -68,7 +71,7 @@ for (const file of files) {
         variantId: variant.id,
         host,
         condition,
-        region: offer.region || null,
+        region: canonicalRegion(offer.region),
         price: offer.price,
         oldPrice: Number.isInteger(offer.oldPrice) && offer.oldPrice > offer.price ? offer.oldPrice : null,
         inStock: typeof offer.inStock === "boolean" ? offer.inStock : null,
@@ -142,7 +145,7 @@ lines.push("");
 for (const p of products) {
   const pid = `md5(${sql(`product:${p.slug}`)})::uuid`;
   lines.push(
-    `insert into products (id, slug, name, brand, category, release_year, popularity, images, colors, regions, specs, specs_source) values (${pid}, ${sql(p.slug)}, ${sql(p.name)}, ${sql(p.brand)}, ${sql(p.category)}, ${sql(p.releaseYear)}, ${p.popularity}, ${sql(`{${p.images.map((x) => `"${x}"`).join(",")}}`)}, ${sql(`{${p.colors.map((x) => `"${x}"`).join(",")}}`)}, ${sql(`{${p.regions.map((x) => `"${x}"`).join(",")}}`)}, ${sql(JSON.stringify(p.specs))}::jsonb, ${sql(p.specsSource)}) on conflict (slug) do nothing;`,
+    `insert into products (id, slug, name, brand, category, release_year, popularity, images, colors, regions, specs, specs_source) values (${pid}, ${sql(p.slug)}, ${sql(p.name)}, ${sql(p.brand)}, ${sql(p.category)}, ${sql(p.releaseYear)}, ${p.popularity}, ${sql(pgArray(p.images))}, ${sql(pgArray(p.colors))}, ${sql(pgArray(p.regions))}, ${sql(JSON.stringify(p.specs))}::jsonb, ${sql(p.specsSource)}) on conflict (slug) do nothing;`,
   );
   p.variants.forEach((v, position) => {
     lines.push(
@@ -162,4 +165,7 @@ console.log(`${products.length} products, ${products.reduce((n, p) => n + p.vari
 for (const p of products) {
   const shops = new Set(offers.filter((o) => p.variants.some((v) => v.id === o.variantId)).map((o) => o.host)).size;
   if (shops < 3) console.log(`  fewer than 3 shops: ${p.brand} ${p.name} (${shops})`);
+}
+for (const [i, a] of products.entries()) {
+  for (const b of products.slice(i + 1)) if (sameProduct(a, b)) console.log(`  SAME PRODUCT TWICE: ${a.brand} ${a.name} = ${b.brand} ${b.name}`);
 }

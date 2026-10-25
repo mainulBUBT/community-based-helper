@@ -7,6 +7,9 @@ on:
     - cron: "47 */6 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
   group: rebuild
   cancel-in-progress: false

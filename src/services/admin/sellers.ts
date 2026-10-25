@@ -1,4 +1,4 @@
-import { sampleSellers } from "@/data/sample";
+import { loadSampleCatalog } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
 import type { Seller } from "@/types/catalog";
 import { loadCatalog } from "../catalog-live";
@@ -6,7 +6,7 @@ import { fromSeller, toSeller } from "../mappers";
 import { logAction } from "./audit";
 
 export async function listAllSellers(): Promise<Seller[]> {
-  if (!supabase) return [...sampleSellers];
+  if (!supabase) return [...(await loadSampleCatalog()).sampleSellers];
   const { data, error } = await supabase.from("sellers").select("*").order("created_at");
   if (error) throw error;
   return data.map(toSeller);
@@ -16,6 +16,7 @@ export async function saveSeller(seller: Seller) {
   const isNew = !seller.id;
   let id = seller.id;
   if (!supabase) {
+    const { sampleSellers } = await loadSampleCatalog();
     if (isNew) {
       id = `s${Date.now()}`;
       sampleSellers.push({ ...seller, id });
@@ -41,6 +42,7 @@ export async function saveSeller(seller: Seller) {
 
 export async function deleteSeller(seller: Seller) {
   if (!supabase) {
+    const { sampleSellers } = await loadSampleCatalog();
     const i = sampleSellers.findIndex((s) => s.id === seller.id);
     if (i >= 0) sampleSellers.splice(i, 1);
   } else {

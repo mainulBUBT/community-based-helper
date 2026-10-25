@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import { useAdminI18n } from "@/hooks/useI18n";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { showToast } from "@/lib/toast";
 
 export function useAdminAction() {

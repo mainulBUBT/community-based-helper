@@ -6,6 +6,7 @@ import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
 import type { SiteSettings } from "@/types/admin";
+import { categoryPath } from "@/utils/url";
 import { BrandMark } from "./BrandMark";
 
 const link = "text-sm text-white/75 hover:text-white";
@@ -27,7 +28,7 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
         <nav aria-label={t.footer.categories} className="flex flex-col gap-2">
           <span className="mb-1 text-sm font-bold">{t.footer.categories}</span>
           {categories.map((c) => (
-            <Link key={c.slug} href={`${prefix}/search/?category=${c.slug}`} className={link}>
+            <Link key={c.slug} href={categoryPath(prefix, c.slug)} className={link}>
               {lang === "en" ? c.nameEn : c.name}
             </Link>
           ))}

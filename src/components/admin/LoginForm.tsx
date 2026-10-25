@@ -3,11 +3,11 @@
 import { useState, type FormEvent } from "react";
 import { BrandMark } from "@/components/layout/BrandMark";
 import { Spinner } from "@/components/ui/Spinner";
-import { useAdminI18n } from "@/hooks/useI18n";
+import { Turnstile } from "@/components/ui/Turnstile";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { isDemo, sendPasswordReset, signIn, updatePassword } from "@/services/admin/auth";
 import { TURNSTILE_SITE_KEY } from "@/lib/turnstile";
 import { Field } from "./Field";
-import { Turnstile } from "./Turnstile";
 
 type Mode = "login" | "forgot" | "reset";
 
@@ -76,7 +76,7 @@ export function LoginForm({ onDone, recovering = false }: { onDone: () => void; 
             required
           />
         )}
-        {needsCaptcha && <Turnstile action={`admin-${mode}`} resetKey={attempt} onToken={setCaptcha} />}
+        {needsCaptcha && <Turnstile action={`admin-${mode}`} resetKey={attempt} onToken={setCaptcha} labels={{ unavailable: t.admin.login.captchaUnavailable, retry: t.common.retry }} />}
         {error && (
           <p role="alert" className="text-sm font-semibold text-danger">
             {error}

@@ -2,8 +2,10 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { DEFAULT_SETTINGS } from "@/config/site";
 import type { SiteSettings } from "@/types/admin";
+import { toCard } from "@/utils/catalog";
+import { categoryFamily } from "@/utils/categories";
 import { safeUrl } from "@/utils/url";
-import { makeService, type Catalog } from "./catalog-core";
+import { makeService, type Catalog, type HomeData } from "./catalog-core";
 import type { BakedChunk, BakedManifest } from "./catalog";
 
 // build এর সময় সার্ভার-সাইড পেজগুলো একই বেক করা ফাইল সরাসরি ডিস্ক থেকে পড়ে।
@@ -50,3 +52,18 @@ export const { loadCatalog, listSummaries, listCategories, listSellers, listComp
   fetchCatalog,
   loadHistory,
 );
+
+export async function getHomeData(): Promise<HomeData> {
+  const [summaries, sellers, settings, comparison] = await Promise.all([listSummaries(), listSellers(), getSiteSettings(), listComparisons()]);
+  return { summaries: summaries.map(toCard), sellers, settings, comparison };
+}
+
+// ক্যাটাগরি পেজের স্ট্যাটিক HTML আর প্রথম রেন্ডারের জন্য: ভেতরের ভাগসহ, জনপ্রিয়তা অনুযায়ী
+export async function getCategoryPage(slug: string) {
+  const [categories, summaries] = await Promise.all([listCategories(), listSummaries()]);
+  const category = categories.find((c) => c.slug === slug);
+  if (!category) return null;
+  const family = new Set(categoryFamily(categories, slug));
+  const items = summaries.filter((s) => family.has(s.product.category)).sort((a, b) => b.product.popularity - a.product.popularity);
+  return { category, summaries: items.map(toCard) };
+}

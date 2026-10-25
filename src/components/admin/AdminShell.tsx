@@ -22,14 +22,15 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { BrandMark } from "@/components/layout/BrandMark";
 import { Spinner } from "@/components/ui/Spinner";
 import { useAsync } from "@/hooks/useAsync";
-import { useAdminI18n } from "@/hooks/useI18n";
-import type { Messages } from "@/i18n/bn";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
+import type { AdminMessages } from "@/i18n/admin-bn";
 import { currentAdmin, onPasswordRecovery, signOut } from "@/services/admin/auth";
+import { countPendingReview, REVIEW_CHANGED } from "@/services/admin/review";
 import { ConfirmDialog } from "./ConfirmDialog";
 import { LanguageButton } from "./LanguageButton";
 import { LoginForm } from "./LoginForm";
 
-type NavKey = keyof Messages["admin"]["nav"];
+type NavKey = keyof AdminMessages["nav"];
 
 const NAV: { href: string; key: NavKey; icon: LucideIcon }[] = [
   { href: "/admin/", key: "dashboard", icon: LayoutDashboard },
@@ -49,8 +50,16 @@ const trimSlash = (path: string) => path.replace(/\/+$/, "");
 const iconButton = "flex size-10 items-center justify-center rounded-xl text-[#d0d5dd] hover:bg-white/10";
 
 function NavList({ onNavigate }: { onNavigate?: () => void }) {
-  const { t } = useAdminI18n();
+  const { t, num } = useAdminI18n();
   const pathname = trimSlash(usePathname());
+  // শুধু সংখ্যা (head count), পেজ বদলালে আর সিদ্ধান্ত দিলে আবার গোনা
+  const [changes, setChanges] = useState(0);
+  useEffect(() => {
+    const bump = () => setChanges((n) => n + 1);
+    window.addEventListener(REVIEW_CHANGED, bump);
+    return () => window.removeEventListener(REVIEW_CHANGED, bump);
+  }, []);
+  const { data: pending } = useAsync(() => countPendingReview().catch(() => 0), [pathname, changes]);
   return (
     <nav aria-label={t.admin.menuLabel} className="flex flex-col gap-1">
       {NAV.map(({ href, key, icon: Icon }) => {
@@ -64,7 +73,8 @@ function NavList({ onNavigate }: { onNavigate?: () => void }) {
             className={`flex h-11 shrink-0 items-center gap-3 rounded-xl px-3 text-[15px] ${active ? "bg-white/12 font-semibold text-white" : "text-[#d0d5dd] hover:bg-white/6"}`}
           >
             <Icon size={18} aria-hidden="true" />
-            {t.admin.nav[key]}
+            <span className="flex-1">{t.admin.nav[key]}</span>
+            {key === "review" && Boolean(pending) && <span className="rounded-full bg-gold px-2 py-0.5 text-xs font-bold text-gold-ink">{num(pending ?? 0)}</span>}
           </Link>
         );
       })}
@@ -103,7 +113,6 @@ function LogoutButton({ onSignedOut, className, iconOnly = false }: { onSignedOu
 }
 
 function UserBlock({ email, onSignedOut }: { email: string; onSignedOut: () => void }) {
-  const { t } = useAdminI18n();
   return (
     <div className="flex flex-col gap-2 border-t border-white/10 px-2 pt-3 text-sm text-[#d0d5dd]">
       <LanguageButton />

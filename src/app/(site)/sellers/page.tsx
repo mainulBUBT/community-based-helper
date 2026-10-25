@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { toEnPath } from "@/lib/en-meta";
+import { SellersView } from "@/app/(site)/sellers/SellersView";
+import { messages, pageMeta } from "@/lib/page-meta";
 import { listSellers } from "@/services/catalog.server";
-import { SellersView } from "./SellersView";
 
-export const metadata: Metadata = {
-  title: "বিক্রেতা",
-  description: "অনলাইন দোকান, মার্কেটের দোকান আর ফেসবুক গ্রুপের বিক্রেতাদের তালিকা, কারা যাচাই করা।",
-  alternates: { canonical: "/sellers/", languages: { bn: "/sellers/", en: toEnPath("/sellers/") } },
-};
+export const generateMetadata = (): Promise<Metadata> => pageMeta({ lang: "bn", path: "/sellers/", ...messages("bn").seo.sellers });
 
-export default async function SellersPage() {
+export default async function Page() {
   return <SellersView initial={await listSellers()} />;
 }

@@ -6,11 +6,10 @@ import { useEffect, useState, type FormEvent } from "react";
 import { Field } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { Toggle } from "@/components/admin/Toggle";
-import { Badge } from "@/components/ui/Badge";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
-import { useAdminI18n } from "@/hooks/useI18n";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { showToast } from "@/lib/toast";
 import { listJobs, requestJobRun, setJobEnabled } from "@/services/admin/jobs";
 import { loadPrivateSettings, savePrivateSettings, testLlm } from "@/services/admin/settings";
@@ -193,9 +192,11 @@ function SettingsForm({ initial }: { initial: PrivateSettings }) {
 
   async function onTest(form: HTMLFormElement | null) {
     if (!form) return;
+    const llm = read(form).llm;
+    if (!llm.apiKey) return setTestResult(t.admin.jobs.testNeedsKey);
     setTestResult(t.admin.jobs.testing);
     try {
-      const reply = await testLlm(read(form).llm);
+      const reply = await testLlm(llm);
       setTestResult(t.admin.jobs.testOk(reply));
     } catch (error) {
       setTestResult(t.admin.jobs.testFailed((error as Error).message));
@@ -253,7 +254,13 @@ function SettingsForm({ initial }: { initial: PrivateSettings }) {
             <Field label={t.admin.jobs.baseUrl} name="baseUrl" type="url" value={baseUrl} onChange={(e) => setBaseUrl(e.target.value)} required hint={t.admin.jobs.baseUrlHint} />
           </div>
           <Field label={t.admin.jobs.model} name="model" value={model} onChange={(e) => setModel(e.target.value)} required />
-          <Field label={t.admin.jobs.apiKey} name="apiKey" type="password" autoComplete="off" defaultValue={initial.llm.apiKey ?? ""} />
+          <Field
+            label={t.admin.jobs.apiKey}
+            name="apiKey"
+            type="password"
+            autoComplete="off"
+            hint={initial.llm.apiKey ? t.admin.jobs.secretSaved(initial.llm.apiKey) : undefined}
+          />
           <div className="flex flex-wrap items-center gap-3 md:col-span-2">
             <button type="button" onClick={(e) => onTest(e.currentTarget.form)} className={secondaryButton}>
               {t.admin.jobs.testConnection}
@@ -265,7 +272,13 @@ function SettingsForm({ initial }: { initial: PrivateSettings }) {
       <Panel title={t.admin.jobs.telegramTitle}>
         <p className="border-b border-line-soft px-5 py-3 text-sm text-dim">{t.admin.jobs.telegramHint}</p>
         <div className="grid gap-4 p-5 md:grid-cols-2">
-          <Field label={t.admin.jobs.botToken} name="telegramBotToken" type="password" autoComplete="off" defaultValue={initial.telegramBotToken ?? ""} />
+          <Field
+            label={t.admin.jobs.botToken}
+            name="telegramBotToken"
+            type="password"
+            autoComplete="off"
+            hint={initial.telegramBotToken ? t.admin.jobs.secretSaved(initial.telegramBotToken) : undefined}
+          />
           <Field label={t.admin.jobs.chatId} name="alertChatId" defaultValue={initial.alertChatId ?? ""} />
         </div>
       </Panel>

@@ -3,7 +3,7 @@
 import { ChevronRight, SearchX, SlidersHorizontal, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
 import { ProductCard } from "@/components/product/ProductCard";
 import { FilterPanel, type Facets, type Filters } from "@/components/search/FilterPanel";
@@ -15,10 +15,12 @@ import { Skeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
+import { trackView } from "@/services/analytics";
 import { listSummaries } from "@/services/catalog";
 import { AXES, type Axis, type ProductSummary } from "@/types/catalog";
 import { matchesQuery } from "@/utils/catalog";
 import { formatTaka } from "@/utils/format";
+import { categoryPath } from "@/utils/url";
 import { sortAxisValues } from "@/utils/variants";
 
 const SORTS = ["popular", "cheap", "expensive", "drop"] as const;
@@ -39,9 +41,9 @@ const COMPARE: Record<Sort, (a: ProductSummary, b: ProductSummary, unofficial: b
 const axisValues = (summaries: ProductSummary[], axis: Axis) =>
   sortAxisValues(axis, [...new Set(summaries.flatMap((s) => s.product.variants.map((v) => v.attributes[axis]).filter((v): v is string => Boolean(v))))]);
 
-function readFilters(params: URLSearchParams): Filters {
+function readFilters(params: URLSearchParams, category?: string): Filters {
   return {
-    category: params.get("category"),
+    category: category ?? params.get("category"),
     brands: list(params.get("brand")),
     min: num(params.get("min")),
     max: num(params.get("max")),
@@ -74,17 +76,23 @@ function GridSkeleton() {
   );
 }
 
-export function SearchView() {
+// ক্যাটাগরি পেজে সার্ভার ওই ভাগের পণ্য দিয়ে দেয়, তখন পুরো ক্যাটালগ আর নামাতে হয় না
+export function SearchView({ category, initial }: { category?: string; initial?: ProductSummary[] }) {
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
   const { t, num: n, prefix, lang } = useI18n();
   const { find, name, family } = useCategories();
-  const { data, error, loading, reload } = useAsync(listSummaries, []);
+  const { data, error, loading, reload } = useAsync(() => (initial ? Promise.resolve(initial) : listSummaries()), [], initial ?? null);
   const [drawer, setDrawer] = useState(false);
 
   const query = params.get("q") ?? "";
-  const filters = readFilters(params);
+  const filters = readFilters(params, category);
+
+  // প্রতিটা অক্ষরে নয়, খোঁজা শেষ হলে একবার: অ্যাডমিন দেখে কী খোঁজা হচ্ছে
+  useEffect(() => {
+    if (query.trim()) trackView(`${pathname}?q=${encodeURIComponent(query.trim().toLowerCase().slice(0, 100))}`);
+  }, [pathname, query]);
   const sort = (SORTS as readonly string[]).includes(params.get("sort") ?? "") ? (params.get("sort") as Sort) : "popular";
 
   const update = useCallback(
@@ -95,9 +103,15 @@ export function SearchView() {
         if (value) search.set(key, value);
         else search.delete(key);
       }
-      router.replace(`${pathname}${search.size ? `?${search}` : ""}`, { scroll: false });
+      if (category) search.delete("category");
+      const suffix = search.size ? `?${search}` : "";
+      if (category && "category" in patch && patch.category !== category) {
+        router.push(`${patch.category ? categoryPath(prefix, patch.category) : `${prefix}/search/`}${suffix}`);
+      } else {
+        router.replace(`${pathname}${suffix}`, { scroll: false });
+      }
     },
-    [pathname, router],
+    [category, pathname, prefix, router],
   );
 
   const summaries = data ?? [];

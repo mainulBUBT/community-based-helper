@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/Badge";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
-import { useAdminI18n } from "@/hooks/useI18n";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { deletePromo, listAllPromos, savePromo } from "@/services/admin/offers";
 import { listAllSellers } from "@/services/admin/sellers";
 import type { Promo, Seller } from "@/types/catalog";

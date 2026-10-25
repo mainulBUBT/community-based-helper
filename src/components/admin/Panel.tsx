@@ -26,12 +26,13 @@ export function Panel({ title, action, children }: { title?: string; action?: Re
   );
 }
 
-export function StatCard({ label, value, tone = "ink" }: { label: string; value: ReactNode; tone?: "ink" | "gold" | "brand" }) {
+export function StatCard({ label, value, hint, tone = "ink" }: { label: string; value: ReactNode; hint?: string; tone?: "ink" | "gold" | "brand" }) {
   const color = { ink: "text-ink", gold: "text-gold-text", brand: "text-brand" }[tone];
   return (
     <div className="flex flex-col gap-1 rounded-2xl border border-line-soft bg-surface p-4">
       <span className="text-sm text-dim">{label}</span>
       <span className={`text-3xl font-bold ${color}`}>{value}</span>
+      {hint && <span className="text-xs text-faint">{hint}</span>}
     </div>
   );
 }

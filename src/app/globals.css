@@ -33,6 +33,7 @@
   --color-accent: light-dark(#c2410c, #fb923c);
   --color-accent-soft: light-dark(#fff1e7, #331c0c);
   --color-hero-ink: #ffffff;
+  --color-live: #5fe3c9;
 
   --radius-xs: 4px;
   --radius-sm: 5px;
@@ -120,7 +121,8 @@
 }
 .brand-marquee {
   animation: marquee 180s linear infinite;
-  &:hover {
+  &:hover,
+  &:focus-within {
     animation-play-state: paused;
   }
   @media (prefers-reduced-motion: reduce) {

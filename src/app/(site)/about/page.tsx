@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { toEnPath } from "@/lib/en-meta";
+import { AboutView } from "@/app/(site)/about/AboutView";
+import { messages, pageMeta } from "@/lib/page-meta";
 import { getSiteSettings } from "@/services/catalog.server";
-import { AboutView } from "./AboutView";
 
-export const metadata: Metadata = {
-  title: "আমাদের সম্পর্কে",
-  description: "এই সাইট কীভাবে কাজ করে, দাম কোথা থেকে আসে, কীভাবে যোগাযোগ করবেন।",
-  alternates: { canonical: "/about/", languages: { bn: "/about/", en: toEnPath("/about/") } },
-};
+export const generateMetadata = (): Promise<Metadata> => pageMeta({ lang: "bn", path: "/about/", ...messages("bn").seo.about });
 
-export default async function AboutPage() {
+export default async function Page() {
   return <AboutView settings={await getSiteSettings()} />;
 }

@@ -2,18 +2,20 @@
 
 import { Send, X } from "lucide-react";
 import { useEffect, useRef, useState, type FormEvent, type ReactNode } from "react";
+import { Turnstile } from "@/components/ui/Turnstile";
 import { useI18n } from "@/hooks/useI18n";
 import { showToast } from "@/lib/toast";
+import { TURNSTILE_SITE_KEY } from "@/lib/turnstile";
 import { submitPrice } from "@/services/catalog";
 
 const field = "h-12 w-full rounded-md border border-line bg-surface px-3 text-base outline-none focus:border-brand";
 
 const FIELDS = [
-  { name: "product", hint: "productHint", required: true },
-  { name: "price", hint: "priceHint", required: true, inputMode: "numeric" as const },
-  { name: "seller", hint: "sellerHint", required: true },
-  { name: "phone", hint: "phoneHint", required: false, inputMode: "tel" as const },
-  { name: "link", hint: "linkHint", required: false },
+  { name: "product", hint: "productHint", required: true, maxLength: 120 },
+  { name: "price", hint: "priceHint", required: true, maxLength: 12, inputMode: "numeric", pattern: "[0-9০-৯,]{3,12}" },
+  { name: "seller", hint: "sellerHint", required: true, maxLength: 120 },
+  { name: "phone", hint: "phoneHint", required: false, maxLength: 20, type: "tel", inputMode: "tel", pattern: "[+0-9০-৯ \\-]{6,20}" },
+  { name: "link", hint: "linkHint", required: false, maxLength: 500, type: "url", pattern: "https?://.+" },
 ] as const;
 
 export interface FixedProduct {
@@ -33,6 +35,9 @@ export function SubmitPriceDialog({ product, fixed, trigger }: SubmitPriceDialog
   const dialog = useRef<HTMLDialogElement>(null);
   const [sending, setSending] = useState(false);
   const [open, setOpen] = useState(false);
+  const [captcha, setCaptcha] = useState<string | null>(null);
+  const [attempt, setAttempt] = useState(0);
+  const needsCaptcha = Boolean(TURNSTILE_SITE_KEY);
 
   useEffect(() => {
     if (open) dialog.current?.showModal();
@@ -44,15 +49,15 @@ export function SubmitPriceDialog({ product, fixed, trigger }: SubmitPriceDialog
     const form = event.currentTarget;
     const payload = Object.fromEntries(new FormData(form)) as Record<string, string>;
     setSending(true);
-    try {
-      await submitPrice({ ...payload, from: "ক্রেতা" });
+    const error = await submitPrice({ ...payload, from: "ক্রেতা" }, captcha).catch(() => "failed" as const);
+    setSending(false);
+    setAttempt((n) => n + 1);
+    if (!error) {
       form.reset();
       setOpen(false);
       showToast(t.report.thanks);
-    } catch {
-      showToast(t.report.failed);
-    } finally {
-      setSending(false);
+    } else {
+      showToast(error === "limit" ? t.report.tooMany : error === "captcha" ? t.report.captchaFailed : t.report.failed);
     }
   }
 
@@ -96,6 +101,9 @@ export function SubmitPriceDialog({ product, fixed, trigger }: SubmitPriceDialog
                   name={f.name}
                   required={f.required}
                   placeholder={t.report[f.hint]}
+                  type={"type" in f ? f.type : "text"}
+                  maxLength={f.maxLength}
+                  pattern={"pattern" in f ? f.pattern : undefined}
                   inputMode={"inputMode" in f ? f.inputMode : undefined}
                   defaultValue={f.name === "product" ? product : undefined}
                   className={`${field} ${f.name === "price" ? "pl-8" : ""}`}
@@ -103,9 +111,16 @@ export function SubmitPriceDialog({ product, fixed, trigger }: SubmitPriceDialog
               </span>
             </label>
           ))}
-          <button type="submit" disabled={sending} className="flex h-12 items-center justify-center gap-2 rounded-md bg-brand font-bold text-brand-ink disabled:opacity-60">
+          {needsCaptcha && open && (
+            <Turnstile action="submit-price" resetKey={attempt} onToken={setCaptcha} labels={{ unavailable: t.report.captchaUnavailable, retry: t.common.retry }} />
+          )}
+          <button
+            type="submit"
+            disabled={sending || (needsCaptcha && !captcha)}
+            className="flex h-12 items-center justify-center gap-2 rounded-md bg-brand font-bold text-brand-ink disabled:opacity-60"
+          >
             <Send size={18} aria-hidden="true" />
-            {sending ? t.report.sending : t.report.send}
+            {sending ? t.report.sending : needsCaptcha && !captcha ? t.report.checking : t.report.send}
           </button>
         </form>
       </dialog>

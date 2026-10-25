@@ -151,6 +151,7 @@ export function ProductGallery({ product, start = 0 }: { product: Product; start
                   alt={i === active ? alt : ""}
                   draggable={false}
                   loading={i === active ? "eager" : "lazy"}
+                  fetchPriority={i === start ? "high" : "auto"}
                   style={i === active && lens ? { transform: `scale(${ZOOM})`, transformOrigin: `${lens.x}% ${lens.y}%` } : undefined}
                   className="size-full object-contain p-4 transition-transform duration-150 ease-out md:p-6"
                 />
@@ -219,7 +220,7 @@ export function ProductGallery({ product, start = 0 }: { product: Product; start
                   i === active ? "ring-2 ring-brand" : "ring-line hover:ring-brand/60"
                 }`}
               >
-                <img src={src} alt="" className="size-full object-contain p-1" />
+                <img src={src} alt={`${product.brand} ${product.name} ${num(i + 1)}`} loading="lazy" className="size-full object-contain p-1" />
               </button>
             ))}
           </div>

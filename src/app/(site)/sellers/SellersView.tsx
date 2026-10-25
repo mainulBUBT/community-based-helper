@@ -3,9 +3,7 @@
 import { useState } from "react";
 import { SellerCard } from "@/components/seller/SellerCard";
 import { Chip } from "@/components/ui/Chip";
-import { useAsync } from "@/hooks/useAsync";
 import { useI18n } from "@/hooks/useI18n";
-import { listSellers } from "@/services/catalog";
 import type { Seller, SellerKind } from "@/types/catalog";
 
 type Filter = "all" | "verified" | SellerKind;
@@ -15,9 +13,8 @@ const matches = (filter: Filter, seller: Seller) => filter === "all" || (filter 
 
 export function SellersView({ initial }: { initial: Seller[] }) {
   const { t } = useI18n();
-  const { data } = useAsync(listSellers, [], initial);
   const [filter, setFilter] = useState<Filter>("all");
-  const sellers = (data ?? initial).filter((s) => matches(filter, s)).sort((a, b) => Number(b.verified) - Number(a.verified));
+  const sellers = initial.filter((s) => matches(filter, s)).sort((a, b) => Number(b.verified) - Number(a.verified));
 
   return (
     <div className="flex flex-col gap-4">

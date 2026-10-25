@@ -5,6 +5,9 @@ on:
     - cron: "20 3 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
   group: promos
   cancel-in-progress: false

@@ -26,6 +26,7 @@ export function SellerLogo({ seller, size = 28 }: { seller: Seller; size?: numbe
       alt=""
       width={size}
       height={size}
+      loading="lazy"
       onError={() => setFailed(true)}
       className="shrink-0 rounded-md bg-surface object-contain ring-1 ring-line"
       style={{ width: size, height: size }}

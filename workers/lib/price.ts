@@ -17,14 +17,17 @@ function imageOf(value: unknown): string | null {
 }
 
 export function toTaka(value: unknown): number | null {
-  if (typeof value === "number") return value > 0 ? Math.round(value) : null;
+  if (typeof value === "number") return Number.isFinite(value) && value > 0 ? Math.round(value) : null;
   if (typeof value !== "string") return null;
   const ascii = value.replace(/[০-৯]/g, (d) => String("০১২৩৪৫৬৭৮৯".indexOf(d)));
   const match = /\d[\d,]*(?:\.\d+)?/.exec(ascii);
   if (!match) return null;
   const n = Math.round(Number(match[0].replace(/,/g, "")));
-  return n > 0 ? n : null;
+  return Number.isFinite(n) && n > 0 ? n : null;
 }
+
+// দাম টাকায় না হলে (USD ইত্যাদি) সেই অংক নেওয়া হয় না
+const inTaka = (currency: unknown) => currency == null || currency === "" || /^(BDT|TK|৳)$/i.test(String(currency).trim());
 
 function stock(value: unknown): boolean | null {
   if (typeof value !== "string") return null;
@@ -57,6 +60,7 @@ function fromJsonLd(html: string): Quote | null {
   for (const product of products(html)) {
     for (const raw of ([] as unknown[]).concat(product.offers ?? [])) {
       const offer = raw as Record<string, unknown>;
+      if (!inTaka(offer.priceCurrency)) continue;
       const price = toTaka(offer.price ?? offer.lowPrice);
       if (!price) continue;
       const spec = ([] as unknown[]).concat(offer.priceSpecification ?? []) as Record<string, unknown>[];
@@ -84,6 +88,7 @@ function fromItemprop(html: string): Quote | null {
 }
 
 function fromOpenGraph(html: string): Quote | null {
+  if (!inTaka(metaContent(html, "product:price:currency") ?? metaContent(html, "og:price:currency"))) return null;
   const price = toTaka(metaContent(html, "product:price:amount") ?? metaContent(html, "og:price:amount"));
   if (!price) return null;
   return { price, oldPrice: null, inStock: stock(metaContent(html, "product:availability")), title: null, via: "og" };

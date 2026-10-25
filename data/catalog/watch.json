@@ -234,9 +234,20 @@
      "price": 23900,
      "oldPrice": 25999,
      "inStock": true,
-     "condition": "unofficial",
+     "condition": "official",
      "region": null,
-     "checkedAt": "2026-10-21"
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "44mm Bluetooth",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/samsung-galaxy-watch8",
+     "price": 25400,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
     },
     {
      "variant": "40mm Bluetooth",
@@ -245,9 +256,9 @@
      "price": 23999,
      "oldPrice": 25499,
      "inStock": true,
-     "condition": "unofficial",
+     "condition": "official",
      "region": null,
-     "checkedAt": "2026-10-21"
+     "checkedAt": "2026-10-25"
     },
     {
      "variant": "44mm Bluetooth",
@@ -256,9 +267,9 @@
      "price": 25999,
      "oldPrice": 27499,
      "inStock": true,
-     "condition": "unofficial",
+     "condition": "official",
      "region": null,
-     "checkedAt": "2026-10-21"
+     "checkedAt": "2026-10-25"
     },
     {
      "variant": "40mm Bluetooth",
@@ -269,7 +280,7 @@
      "inStock": true,
      "condition": "unofficial",
      "region": null,
-     "checkedAt": "2026-10-21"
+     "checkedAt": "2026-10-25"
     },
     {
      "variant": "44mm Bluetooth",
@@ -280,7 +291,7 @@
      "inStock": true,
      "condition": "unofficial",
      "region": null,
-     "checkedAt": "2026-10-21"
+     "checkedAt": "2026-10-25"
     },
     {
      "variant": "40mm Bluetooth",
@@ -291,7 +302,7 @@
      "inStock": false,
      "condition": "unofficial",
      "region": null,
-     "checkedAt": "2026-10-21"
+     "checkedAt": "2026-10-25"
     },
     {
      "variant": "44mm Bluetooth",
@@ -302,7 +313,7 @@
      "inStock": true,
      "condition": "unofficial",
      "region": null,
-     "checkedAt": "2026-10-21"
+     "checkedAt": "2026-10-25"
     },
     {
      "variant": "40mm Bluetooth",
@@ -326,7 +337,8 @@
      "region": null,
      "checkedAt": "2026-10-21"
     }
-   ]
+   ],
+   "popular": true
   },
   {
    "brand": "Amazfit",
@@ -593,6 +605,7 @@
   {
    "brand": "Amazfit",
    "name": "Bip 5 Unity Smart Watch",
+   "releaseYear": 2024,
    "popular": true,
    "variants": [
     {
@@ -601,7 +614,10 @@
      "officialPrice": 6200
     }
    ],
-   "images": [],
+   "images": [
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/25032/Amazfit-Bip-5-Unity-Smart-Watch-(2).png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1748/Amazfit_Bip_5_Unity.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -639,6 +655,7 @@
   {
    "brand": "Huawei",
    "name": "Watch GT 4 46mm",
+   "releaseYear": 2023,
    "popular": true,
    "variants": [
     {
@@ -677,58 +694,9 @@
    "specsSource": "https://www.startech.com.bd/huawei-watch-gt-4-smart-watch"
   },
   {
-   "brand": "Samsung",
-   "name": "Galaxy Watch 8 40mm",
-   "popular": true,
-   "variants": [
-    {
-     "label": "40mm",
-     "attributes": {
-      "size": "40mm"
-     },
-     "officialPrice": 25999
-    }
-   ],
-   "images": [
-    "https://www.startech.com.bd/image/cache/catalog/smart-watch/samsung/galaxy-watch8/galaxy-watch8-001-1200x630.webp"
-   ],
-   "offers": [
-    {
-     "variant": "40mm",
-     "site": "Star Tech",
-     "url": "https://www.startech.com.bd/samsung-galaxy-watch8",
-     "price": 23900,
-     "oldPrice": 25999,
-     "inStock": true,
-     "condition": "official",
-     "checkedAt": "2026-10-24"
-    },
-    {
-     "variant": "40mm",
-     "site": "Gadget & Gear",
-     "url": "https://gadgetandgear.com/product/galaxy-watch-8",
-     "price": 25999,
-     "oldPrice": 27499,
-     "inStock": true,
-     "condition": "official",
-     "checkedAt": "2026-10-24"
-    },
-    {
-     "variant": "40mm",
-     "site": "Sumash Tech",
-     "url": "https://www.sumashtech.com/product/galaxy-watch-8",
-     "price": 24499,
-     "oldPrice": 29999,
-     "inStock": true,
-     "condition": "unofficial",
-     "checkedAt": "2026-10-24"
-    }
-   ],
-   "specsSource": "https://www.startech.com.bd/samsung-galaxy-watch8"
-  },
-  {
    "brand": "Xiaomi",
    "name": "Redmi Watch 5",
+   "releaseYear": 2024,
    "popular": true,
    "variants": [
     {
@@ -777,6 +745,7 @@
   {
    "brand": "Apple",
    "name": "Watch SE 2nd Gen",
+   "releaseYear": 2022,
    "popular": true,
    "variants": [
     {
@@ -825,6 +794,7 @@
   {
    "brand": "Huawei",
    "name": "Watch GT 6 46mm",
+   "releaseYear": 2025,
    "popular": true,
    "variants": [
     {
@@ -875,6 +845,7 @@
   {
    "brand": "Xiaomi",
    "name": "Watch S4",
+   "releaseYear": 2024,
    "popular": true,
    "variants": [
     {
@@ -883,7 +854,10 @@
      "officialPrice": 19990
     }
    ],
-   "images": [],
+   "images": [
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/46535/Xiaomi-Watch-S4-price-in-Bangladesh-Silver.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2561/Xiaomi_Watch_S4_Bluetooth_Calling_Smart_Watch.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -921,6 +895,7 @@
   {
    "brand": "Haylou",
    "name": "Solar Lite 2",
+   "releaseYear": 2026,
    "popular": true,
    "variants": [
     {
@@ -929,7 +904,9 @@
      "officialPrice": 3250
     }
    ],
-   "images": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3444/Haylou_Solar_Lite_2_Bluetooth_Calling_Smart_Watch_-_Black.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -957,6 +934,7 @@
   {
    "brand": "IMIKI",
    "name": "ST2 Bluetooth Calling Smart Watch",
+   "releaseYear": 2023,
    "popular": true,
    "variants": [
     {
@@ -965,7 +943,10 @@
      "officialPrice": 2549
     }
    ],
-   "images": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3352/Gold_1.webp",
+    "https://www.startech.com.bd/image/cache/catalog/smart-watch/imilab/imiki-st2/imiki-st2-02-1200x630.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -993,6 +974,7 @@
   {
    "brand": "KOSPET",
    "name": "ORB 2 Smart Watch",
+   "releaseYear": 2026,
    "popular": true,
    "variants": [
     {
@@ -1001,7 +983,9 @@
      "officialPrice": 8999
     }
    ],
-   "images": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4376/Kospet_ORB_2_-_Black.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1029,6 +1013,7 @@
   {
    "brand": "IMIKI",
    "name": "Frame 2 Pro Smart Watch",
+   "releaseYear": 2025,
    "popular": true,
    "variants": [
     {
@@ -1037,7 +1022,9 @@
      "officialPrice": 7450
     }
    ],
-   "images": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4358/beighe.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1065,6 +1052,7 @@
   {
    "brand": "Oraimo",
    "name": "Watch 5 Lite",
+   "releaseYear": 2025,
    "popular": true,
    "variants": [
     {
@@ -1073,7 +1061,9 @@
      "officialPrice": 1820
     }
    ],
-   "images": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1876/Watch_5_Lite_black_.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1101,6 +1091,7 @@
   {
    "brand": "KOSPET",
    "name": "Tank T4C Smart Watch",
+   "releaseYear": 2026,
    "popular": true,
    "variants": [
     {
@@ -1109,7 +1100,9 @@
      "officialPrice": 11499
     }
    ],
-   "images": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4251/KOSPET_TANK_T4C_-_Black.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1147,6 +1140,7 @@
   {
    "brand": "Haylou",
    "name": "Watch 4 With GPS",
+   "releaseYear": 2025,
    "popular": true,
    "variants": [
     {
@@ -1205,6 +1199,7 @@
   {
    "brand": "Oraimo",
    "name": "Watch 6 (OSW-807)",
+   "releaseYear": 2025,
    "popular": true,
    "variants": [
     {
@@ -1213,7 +1208,10 @@
      "officialPrice": 2900
     }
    ],
-   "images": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2319/Oraimo_Watch_6_Bluetooth_Calling_Smart_Watch.webp",
+    "https://www.startech.com.bd/image/cache/catalog/smart-watch/oraimo/watch-6/watch-6-black-05-1200x630.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1241,6 +1239,7 @@
   {
    "brand": "KOSPET",
    "name": "ORB Smart Watch",
+   "releaseYear": 2025,
    "popular": true,
    "variants": [
     {
@@ -1249,7 +1248,10 @@
      "officialPrice": 5499
     }
    ],
-   "images": [],
+   "images": [
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/57676/KOSPET-Orb-Smartwatch-price-in-Bangladesh-silver.jpg",
+    "https://assets.gadgetandgear.com/upload/media/kospet-orb-smart-watch575.jpeg"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1287,6 +1289,7 @@
   {
    "brand": "KOSPET",
    "name": "Tank T3 Ultra Smart Watch",
+   "releaseYear": 2023,
    "popular": true,
    "variants": [
     {
@@ -1295,7 +1298,10 @@
      "officialPrice": 11099
     }
    ],
-   "images": [],
+   "images": [
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/32368/Kospet-Tank-T3-ultra-Smart-Watch-black-silicon.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1097/t3_ultra_black.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1333,6 +1339,7 @@
   {
    "brand": "Kieslect",
    "name": "Actor BT Calling Smart Watch",
+   "releaseYear": 2024,
    "popular": true,
    "variants": [
     {
@@ -1341,7 +1348,10 @@
      "officialPrice": 9999
     }
    ],
-   "images": [],
+   "images": [
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/42526/Kieslect-Actor-Smartwatch-Price-in-bangladesh-1.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1570/kieslect_actor.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1389,6 +1399,7 @@
   {
    "brand": "Oraimo",
    "name": "Watch Nova 2R",
+   "releaseYear": 2026,
    "popular": true,
    "variants": [
     {
@@ -1397,7 +1408,10 @@
      "officialPrice": 5455
     }
    ],
-   "images": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3805/Oraimo_Watch_Nova_2R.webp",
+    "https://assets.gadgetandgear.com/upload/media/oraimo/oraimo-watch-nova-2r-smart-watch-1780999029176.jpeg"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1435,6 +1449,7 @@
   {
    "brand": "Amazfit",
    "name": "Bip 6",
+   "releaseYear": 2025,
    "popular": true,
    "variants": [
     {
@@ -1443,7 +1458,10 @@
      "officialPrice": 10999
     }
    ],
-   "images": [],
+   "images": [
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/40536/Amazfit-Bip-6-Price-in-bangladesh-black.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2041/Amazfit_bip_6_1.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1481,6 +1499,7 @@
   {
    "brand": "Amazfit",
    "name": "Active 2",
+   "releaseYear": 2025,
    "popular": true,
    "variants": [
     {
@@ -1489,7 +1508,10 @@
      "officialPrice": 14999
     }
    ],
-   "images": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1926/Active_2_Black.webp",
+    "https://www.startech.com.bd/image/cache/catalog/smartwatch/amazfit/active-2/amazfit-active-2-black-01-1200x630.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1527,6 +1549,7 @@
   {
    "brand": "Xiaomi",
    "name": "Watch 2",
+   "releaseYear": 2024,
    "popular": true,
    "variants": [
     {
@@ -1535,7 +1558,10 @@
      "officialPrice": 21999
     }
    ],
-   "images": [],
+   "images": [
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/24250/xiaomi-watch-2-black-.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1148/Xiaomi_Watch_2_black.webp"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1583,6 +1609,7 @@
   {
    "brand": "Huawei",
    "name": "Watch Fit 3",
+   "releaseYear": 2024,
    "popular": true,
    "variants": [
     {
@@ -1591,7 +1618,10 @@
      "officialPrice": 15490
     }
    ],
-   "images": [],
+   "images": [
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/17570/Untitled-design(149).png",
+    "https://assets.gadgetandgear.com/upload/media/1723714441861852.jpeg"
+   ],
    "offers": [
     {
      "variant": "Standard",
@@ -1639,6 +1669,7 @@
   {
    "brand": "Samsung",
    "name": "Galaxy Watch 7 40mm",
+   "releaseYear": 2024,
    "popular": true,
    "variants": [
     {
@@ -1649,7 +1680,10 @@
      "officialPrice": 20000
     }
    ],
-   "images": [],
+   "images": [
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/30765/Galaxy-Watch-7-cream.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1246/Galaxy_Watch_7_Green.webp"
+   ],
    "offers": [
     {
      "variant": "40mm",
@@ -1687,6 +1721,7 @@
   {
    "brand": "Huawei",
    "name": "Watch GT 7 46mm",
+   "releaseYear": 2026,
    "popular": true,
    "variants": [
     {
@@ -1697,7 +1732,10 @@
      "officialPrice": 29999
     }
    ],
-   "images": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4725/46mm.webp",
+    "https://assets.gadgetandgear.com/upload/media/huawei/huawei-watch-gt-7-black.jpeg"
+   ],
    "offers": [
     {
      "variant": "46mm",

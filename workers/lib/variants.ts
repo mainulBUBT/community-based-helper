@@ -1,3 +1,4 @@
+import { canonicalRegion } from "../../src/utils/region";
 import type { ShopVariant } from "../stores/types";
 import { chip, inch, matchListing, sameSpec, tokens, type CatalogProduct, type CatalogVariant } from "./match";
 
@@ -41,7 +42,7 @@ export function pageOffers(rows: ShopVariant[]): PageOffer[] {
   const best = new Map<string, PageOffer>();
   for (const row of rows) {
     const label = row.options.filter(Boolean).join(" / ");
-    const offer = { key: [...new Set(words(label))].sort().join(" "), label, price: row.price, oldPrice: row.oldPrice, inStock: row.inStock, region: row.region };
+    const offer = { key: [...new Set(words(label))].sort().join(" "), label, price: row.price, oldPrice: row.oldPrice, inStock: row.inStock, region: canonicalRegion(row.region) };
     const prior = best.get(offer.key);
     if (!prior || better(offer, prior)) best.set(offer.key, offer);
   }

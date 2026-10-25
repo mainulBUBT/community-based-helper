@@ -6,8 +6,8 @@ import { Badge } from "@/components/ui/Badge";
 import { Chip } from "@/components/ui/Chip";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
-import { useAdminI18n } from "@/hooks/useI18n";
-import type { Messages } from "@/i18n/bn";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
+import type { AdminMessages } from "@/i18n/admin-bn";
 import { listAudit } from "@/services/admin/audit";
 import { listJobs, listRuns } from "@/services/admin/jobs";
 
@@ -28,7 +28,7 @@ export default function LogsPage() {
   const { t, ago } = useAdminI18n();
   const [tab, setTab] = useState<"runs" | "audit">("runs");
   const { data, loading } = useAsync(loadLogs, []);
-  const actionLabel = (action: string) => t.admin.logs.actions[action as keyof Messages["admin"]["logs"]["actions"]] ?? action;
+  const actionLabel = (action: string) => t.admin.logs.actions[action as keyof AdminMessages["logs"]["actions"]] ?? action;
 
   return (
     <>

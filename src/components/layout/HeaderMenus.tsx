@@ -11,6 +11,7 @@ import { useI18n } from "@/hooks/useI18n";
 import { listSummaries } from "@/services/catalog";
 import type { ProductSummary } from "@/types/catalog";
 import { formatTaka } from "@/utils/format";
+import { categoryPath } from "@/utils/url";
 
 function useSummaries(enabled: boolean) {
   const [items, setItems] = useState<ProductSummary[] | null>(null);
@@ -98,7 +99,7 @@ export function CategoryMenu() {
               {top.filter((c) => !summaries.length || count(c.slug) > 0).map((c) => (
                 <li key={c.slug}>
                   <Link
-                    href={`${prefix}/search/?category=${c.slug}`}
+                    href={categoryPath(prefix, c.slug)}
                     onMouseEnter={() => setActive(c.slug)}
                     onFocus={() => setActive(c.slug)}
                     onClick={close}
@@ -115,7 +116,7 @@ export function CategoryMenu() {
             <div className="flex min-w-0 flex-col gap-4">
               <div className="flex items-center justify-between gap-3">
                 <span className="text-lg font-bold">{label(current)}</span>
-                <Link href={`${prefix}/search/?category=${current.slug}`} onClick={close} className="text-sm font-semibold text-brand hover:underline">
+                <Link href={categoryPath(prefix, current.slug)} onClick={close} className="text-sm font-semibold text-brand hover:underline">
                   {t.megaMenu.seeAll(label(current))} →
                 </Link>
               </div>
@@ -126,7 +127,7 @@ export function CategoryMenu() {
                       <span className="text-[11px] font-semibold tracking-wider text-dim uppercase">{t.megaMenu.subcategories}</span>
                       <div className="flex flex-wrap gap-2">
                         {children.map((c) => (
-                          <Link key={c.slug} href={`${prefix}/search/?category=${c.slug}`} onClick={close} className="rounded-full border border-line px-3 py-1.5 text-sm hover:border-brand hover:text-brand">
+                          <Link key={c.slug} href={categoryPath(prefix, c.slug)} onClick={close} className="rounded-full border border-line px-3 py-1.5 text-sm hover:border-brand hover:text-brand">
                             {label(c)}
                           </Link>
                         ))}
@@ -137,7 +138,7 @@ export function CategoryMenu() {
                     <span className="text-[11px] font-semibold tracking-wider text-dim uppercase">{t.megaMenu.brands}</span>
                     <div className="grid grid-cols-2 gap-x-4 gap-y-1.5 text-sm">
                       {brands.map((brand) => (
-                        <Link key={brand} href={`${prefix}/search/?category=${current.slug}&brand=${encodeURIComponent(brand)}`} onClick={close} className="text-ink hover:text-brand">
+                        <Link key={brand} href={`${categoryPath(prefix, current.slug)}?brand=${encodeURIComponent(brand)}`} onClick={close} className="text-ink hover:text-brand">
                           {brand}
                         </Link>
                       ))}

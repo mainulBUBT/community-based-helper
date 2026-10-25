@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useSyncExternalStore } from "react";
 import { useI18n } from "@/hooks/useI18n";
-import { toBnPath, toEnPath } from "@/lib/en-meta";
+import { otherLanguagePath } from "@/utils/locale-path";
 import { setLang, setTheme, themeStore, type ThemeChoice } from "@/lib/preferences";
 
 
@@ -28,7 +28,7 @@ export function LanguageButton() {
   const pathname = usePathname();
   const router = useRouter();
   const next = prefix ? "bn" : "en";
-  const href = prefix ? toBnPath(pathname) : toEnPath(pathname);
+  const href = otherLanguagePath(pathname, !prefix);
   return (
     <Link
       href={href}

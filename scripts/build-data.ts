@@ -37,12 +37,12 @@ interface Raw {
 
 async function fromSupabase(db: SupabaseClient): Promise<Raw> {
   const [categories, productRows, sellers, offerRows, promos, historyRows, settingsRow] = await Promise.all([
-    all((from, to) => db.from("categories").select("*").order("position").range(from, to)),
-    all((from, to) => db.from("products").select("*, variants(*)").order("popularity", { ascending: false }).range(from, to)),
-    all((from, to) => db.from("sellers").select("*").range(from, to)),
-    all((from, to) => db.from("offers").select("*").range(from, to)),
-    all((from, to) => db.from("promos").select("*").range(from, to)),
-    all((from, to) => db.from("price_history").select("*").gte("seen_at", SINCE).range(from, to)),
+    all((from, to) => db.from("categories").select("*").order("position").order("slug").range(from, to)),
+    all((from, to) => db.from("products").select("*, variants(*)").order("popularity", { ascending: false }).order("id").range(from, to)),
+    all((from, to) => db.from("sellers").select("*").order("id").range(from, to)),
+    all((from, to) => db.from("offers").select("*").order("id").range(from, to)),
+    all((from, to) => db.from("promos").select("*").order("id").range(from, to)),
+    all((from, to) => db.from("price_history").select("*").gte("seen_at", SINCE).order("offer_id").order("seen_at").range(from, to)),
     db.from("site_settings").select("value").maybeSingle(),
   ]);
   if (settingsRow.error) throw settingsRow.error;
@@ -62,13 +62,14 @@ async function fromSupabase(db: SupabaseClient): Promise<Raw> {
 
 async function fromSample(): Promise<Raw> {
   const s = await import("../src/data/sample");
+  const c = await s.loadSampleCatalog();
   return {
     categories: s.sampleCategories,
-    products: s.sampleProducts,
-    sellers: s.sampleSellers,
-    offers: s.sampleOffers.filter((o) => o.published),
+    products: c.sampleProducts,
+    sellers: c.sampleSellers,
+    offers: c.sampleOffers.filter((o) => o.published),
     promos: s.samplePromos,
-    history: s.sampleHistory,
+    history: c.sampleHistory,
     settings: { ...s.sampleSettings },
   };
 }
@@ -77,8 +78,12 @@ async function main() {
   const url = process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.SUPABASE_PUBLISHABLE_KEY ?? process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
   const live = Boolean(url && key);
+  if (!live && process.env.CI) throw new Error("CI তে Supabase এর URL বা PUBLISHABLE_KEY নেই, নমুনা ডেটা দিয়ে লাইভ সাইট বানানো হবে না");
   if (!live) console.warn("⚠️  Supabase যুক্ত নেই — নমুনা ডেটায় বেক হচ্ছে, লাইভ নয়! (.env.local এ NEXT_PUBLIC_SUPABASE_URL আর PUBLISHABLE_KEY দিন)");
-  const raw = live ? await fromSupabase(createClient(url!, key!, { auth: { persistSession: false } })) : await fromSample();
+  const source = live ? await fromSupabase(createClient(url!, key!, { auth: { persistSession: false } })) : await fromSample();
+  const categories = source.categories.filter((c) => c.active);
+  const shown = new Set(categories.map((c) => c.slug));
+  const raw = { ...source, categories, products: source.products.filter((p) => shown.has(p.category)) };
 
   // ভ্যারিয়েন্ট আর অফারকে পণ্যের ভাগ অনুযায়ী ফাইলে ভাগ করা — বড় ক্যাটালগে এক ফাইল হালকা থাকে
   const variantCategory = new Map<string, string>();

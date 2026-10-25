@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { SavedView } from "./SavedView";
+import { SavedView } from "@/app/(site)/saved/SavedView";
+import { messages, pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = { title: "সেভ করা", robots: { index: false } };
+export const generateMetadata = (): Promise<Metadata> => pageMeta({ lang: "bn", path: "/saved/", ...messages("bn").seo.saved, index: false });
 
-export default function SavedPage() {
+export default function Page() {
   return <SavedView />;
 }

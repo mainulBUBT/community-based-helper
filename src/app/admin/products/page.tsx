@@ -6,23 +6,41 @@ import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { Field, Select, TextArea } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
+import { Badge } from "@/components/ui/Badge";
 import { Pagination, paginate } from "@/components/ui/Pagination";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
-import { categoryName } from "@/hooks/useCategories";
+import { categoryName } from "@/utils/categories";
 import { useAdminCategories } from "@/hooks/useAdminCategories";
-import { useAdminI18n } from "@/hooks/useI18n";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { showToast } from "@/lib/toast";
 import { saveManualOffer } from "@/services/admin/offers";
-import { createProduct } from "@/services/admin/products";
+import { createProduct, DuplicateProductError } from "@/services/admin/products";
 import { listAllSellers } from "@/services/admin/sellers";
 import { listSummaries } from "@/services/catalog-live";
-import type { Condition, VariantAttributes } from "@/types/catalog";
+import type { Condition, ProductSummary, VariantAttributes } from "@/types/catalog";
 import { matchesQuery } from "@/utils/catalog";
 import { formatTaka } from "@/utils/format";
 import { variantLabel } from "@/utils/variants";
 
 const PAGE_SIZE = 20;
+const OLD_AFTER_YEARS = 3;
+
+type Issue = "hidden" | "noPrice" | "noImage" | "noYear" | "noStock" | "old";
+
+// পণ্যের কী কী কাজ বাকি: দাম, ছবি, বছর, স্টক, বা অনেক পুরনো মডেল
+function issuesOf({ product, sellerCount, inStock }: ProductSummary): Issue[] {
+  const year = new Date().getFullYear();
+  const issues: [Issue, boolean][] = [
+    ["hidden", product.active === false],
+    ["noPrice", sellerCount === 0],
+    ["noImage", !product.images?.length],
+    ["noYear", !product.releaseYear],
+    ["noStock", sellerCount > 0 && !inStock],
+    ["old", Boolean(product.releaseYear && product.releaseYear <= year - OLD_AFTER_YEARS)],
+  ];
+  return issues.filter(([, has]) => has).map(([issue]) => issue);
+}
 
 async function loadData() {
   const [summaries, sellers] = await Promise.all([listSummaries(true), listAllSellers()]);
@@ -64,8 +82,8 @@ function ProductForm() {
       });
       showToast(t.admin.products.added);
       router.push(`/admin/products/edit/?id=${id}`);
-    } catch {
-      showToast(t.admin.products.addFailed);
+    } catch (error) {
+      showToast(error instanceof DuplicateProductError ? t.admin.products.duplicate(error.existing) : t.admin.products.addFailed);
     }
   }
 
@@ -175,10 +193,16 @@ export default function ProductsAdminPage() {
   const [adding, setAdding] = useState(false);
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("");
+  const [problemsOnly, setProblemsOnly] = useState(false);
   const [page, setPage] = useState(1);
   if (loading || !data) return <ListSkeleton />;
 
-  const filtered = data.summaries.filter(({ product }) => (!category || product.category === category) && (!query.trim() || matchesQuery(product, query.trim())));
+  const filtered = data.summaries.filter(
+    (summary) =>
+      (!category || summary.product.category === category) &&
+      (!query.trim() || matchesQuery(summary.product, query.trim())) &&
+      (!problemsOnly || issuesOf(summary).some((issue) => issue !== "hidden")),
+  );
   const paged = paginate(filtered, page, PAGE_SIZE);
   const categoryLabel = (slug: string) => {
     const c = categories.find((x) => x.slug === slug);
@@ -233,6 +257,18 @@ export default function ProductsAdminPage() {
                 </option>
               ))}
             </select>
+            <select
+              value={problemsOnly ? "problems" : ""}
+              onChange={(e) => {
+                setProblemsOnly(e.target.value === "problems");
+                setPage(1);
+              }}
+              aria-label={t.admin.products.problemsOnly}
+              className="h-10 rounded-lg border border-line bg-surface px-2 text-sm"
+            >
+              <option value="">{t.admin.products.allProducts}</option>
+              <option value="problems">{t.admin.products.problemsOnly}</option>
+            </select>
           </div>
           {filtered.length === 0 && <p className="px-5 py-4 text-dim">{t.admin.products.noMatch}</p>}
           <div className="overflow-x-auto">
@@ -244,21 +280,35 @@ export default function ProductsAdminPage() {
                   <th className="px-3 py-3 font-semibold">{t.admin.products.colVariants}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.products.colStores}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.products.colLowest}</th>
+                  <th className="px-3 py-3 font-semibold">{t.admin.products.colLowestAny}</th>
                   <th className="px-5 py-3" />
                 </tr>
               </thead>
               <tbody className="divide-y divide-line-soft">
-                {paged.items.map(({ product, lowest, sellerCount }) => (
+                {paged.items.map((summary) => {
+                  const { product, lowest, lowestAny, sellerCount } = summary;
+                  const issues = issuesOf(summary);
+                  return (
                   <tr key={product.id}>
                     <td className="px-5 py-3">
                       <Link href={`/admin/products/edit/?id=${product.id}`} className="font-semibold hover:text-brand">
                         {product.brand} {product.name}
                       </Link>
+                      {issues.length > 0 && (
+                        <span className="mt-1 flex flex-wrap gap-1">
+                          {issues.map((issue) => (
+                            <Badge key={issue} tone={issue === "hidden" ? "neutral" : "gold"}>
+                              {t.admin.products.flags[issue]}
+                            </Badge>
+                          ))}
+                        </span>
+                      )}
                     </td>
                     <td className="px-3 py-3 text-[13px]">{categoryLabel(product.category)}</td>
                     <td className="px-3 py-3 text-[13px] text-dim">{product.variants.map((v) => v.label).join(", ")}</td>
                     <td className="px-3 py-3">{num(sellerCount)}</td>
                     <td className="px-3 py-3 font-semibold">{lowest ? formatTaka(lowest) : t.admin.products.none}</td>
+                    <td className="px-3 py-3">{lowestAny ? formatTaka(lowestAny) : t.admin.products.none}</td>
                     <td className="px-5 py-3 text-right">
                       <div className="flex items-center justify-end gap-2">
                         <a
@@ -277,7 +327,8 @@ export default function ProductsAdminPage() {
                       </div>
                     </td>
                   </tr>
-                ))}
+                  );
+                })}
               </tbody>
             </table>
           </div>

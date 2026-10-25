@@ -4,6 +4,7 @@ import { Bookmark } from "lucide-react";
 import Link from "next/link";
 import { ProductCard } from "@/components/product/ProductCard";
 import { EmptyState } from "@/components/ui/EmptyState";
+import { ErrorNotice } from "@/components/ui/ErrorNotice";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useI18n } from "@/hooks/useI18n";
@@ -13,7 +14,7 @@ import { listSummaries } from "@/services/catalog";
 export function SavedView() {
   const { t, prefix } = useI18n();
   const { slugs } = useSaved();
-  const { data, loading } = useAsync(listSummaries, []);
+  const { data, error, loading, reload } = useAsync(listSummaries, []);
   const saved = slugs.map((slug) => data?.find((s) => s.product.slug === slug)).filter((s) => s !== undefined);
 
   return (
@@ -21,6 +22,8 @@ export function SavedView() {
       <h1 className="text-xl font-bold md:text-2xl">{t.saved.title}</h1>
       {loading ? (
         <ListSkeleton rows={3} />
+      ) : error && !data ? (
+        <ErrorNotice onRetry={reload} />
       ) : saved.length === 0 ? (
         <EmptyState icon={Bookmark} title={t.saved.empty}>
           <p className="max-w-xs text-sm text-dim">{t.saved.hint}</p>

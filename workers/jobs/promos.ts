@@ -19,6 +19,14 @@ interface Promo {
   endsOn: string | null;
 }
 
+// AI প্রতিদিন একই অফার একটু অন্যভাবে লেখে; বিরামচিহ্ন আর বড়-ছোট হাতের অক্ষর বাদ দিয়ে মেলানো
+const sameText = (text: unknown) =>
+  String(text)
+    .slice(0, 300)
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim();
+
 export async function readPromos(): Promise<string> {
   if (!(await llmReady())) throw new Error("LLM key দেওয়া নেই, অফার পড়া যায়নি");
   const sellers = await sellersByStore(stores);
@@ -32,7 +40,12 @@ export async function readPromos(): Promise<string> {
       const text = visibleText(await pageHtml(store, store.promoUrl)).slice(0, 8000);
       const { promos = [] } = await askJson<{ promos?: Promo[] }>(SYSTEM, text);
       const existing = (await must(db().from("promos").select("text").eq("seller_id", seller.id))) as { text: string }[];
-      const fresh = promos.filter((p) => p.text && !existing.some((e) => e.text === p.text));
+      const seen = new Set(existing.map((e) => sameText(e.text)));
+      const fresh = promos.filter((p) => {
+        if (!p.text || seen.has(sameText(p.text))) return false;
+        seen.add(sameText(p.text));
+        return true;
+      });
       if (fresh.length === 0) continue;
       await must(
         db()

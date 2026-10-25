@@ -7,7 +7,7 @@ import { Toggle } from "@/components/admin/Toggle";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
-import { useAdminI18n } from "@/hooks/useI18n";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
 import type { Messages } from "@/i18n/bn";
 import { showToast } from "@/lib/toast";
 import { deleteSeller, listAllSellers, saveSeller } from "@/services/admin/sellers";

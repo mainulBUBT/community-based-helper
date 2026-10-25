@@ -10,6 +10,8 @@
 
 Supabase, Cloudflare আর ডোমেইনে চালু করার পুরো ধাপ: **[setup-guide.md](setup-guide.md)**
 
+ফ্রি সার্ভিসের সীমা আর কবে শেষ হতে পারে: **[free-tier-limits.md](free-tier-limits.md)**
+
 নতুন পণ্য বা দোকান যোগের নিয়ম: আগে **[strict-rules.md](strict-rules.md)** (কঠোর নিয়ম, বাধ্যতামূলক), তারপর **[adding-products.md](adding-products.md)** (ধাপে ধাপে)
 
 1. ✅ **Supabase প্রজেক্ট** `fwcmpzdsbdbslollqxjk` খোলা, ৬টা migration চলেছে, `seed.sql` চালানো হয়েছে (`npx supabase db push --include-seed`)।
@@ -24,6 +26,13 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 8. ⬜ Supabase → Authentication → URL Configuration: Site URL `https://dordam.app`, Redirect `https://dordam.app/admin/`। Turnstile widget এ `dordam.app` আছে ✅।
 9. ⬜ Google Search Console (Domain property `dordam.app`, Cloudflare DNS এ TXT) এ সাইট যোগ আর `sitemap.xml` জমা, ৭ এর পরে।
 10. ⬜ অ্যাডমিন → সেটিংস: যোগাযোগের ইমেইল/ফোন, About পাতার লেখা, দেশের নোট মিলিয়ে নেওয়া। অ্যাডমিন → পণ্য: দোকানের দামে দেশের নাম এক রকম করা (যেমন "Japan/Middle East" → "Japan")।
+12. ⬜ **২৫ অক্টোবরের নিরাপত্তা কাজ লাইভে নেওয়া, এই ক্রমেই** (উল্টো ক্রমে করলে দাম জানানো আর অ্যাডমিনের AI সেটিংস ভাঙবে; `main` এ push করলেই `rebuild` deploy করে, তাই git push সবার শেষে):
+    1. Cloudflare → Turnstile এর secret key দিয়ে: `npx supabase secrets set TURNSTILE_SECRET=...`
+    2. `npx supabase functions deploy submit-price` (JWT যাচাই `config.toml` এ বন্ধ, Turnstile ফাংশন নিজে দেখে)।
+    3. `npm run db:push`। "inserted before the last migration" ধরনের আপত্তি এলে `npx supabase db push --include-all` (পুরনো `20261023_add_wattage_axis.sql` নিরাপদে আবার চলতে পারে)।
+    4. SQL Editor এ GitHub token Vault এ: `select vault.create_secret('<token>', 'github_token');` তারপর `update private_settings set value = value #- '{github,token}';`। token টা শুধু এই repo র `Actions: write` scope এর fine-grained হলে ভালো।
+    5. তারপর git push (deploy)। CSP এখন শুধু `fwcmpzdsbdbslollqxjk.supabase.co` এ যেতে দেয়; Supabase এর custom domain ব্যবহার করলে `public/_headers` এ সেটা বসান।
+    6. deploy এর পর: দাম জানানো একবার পাঠিয়ে দেখা, আর `rate_limits` এ `views:ip` সারি আসছে কিনা।
 11. ✅ `/about/` পেজ (`/about/` বাংলা, `/en/about/` English), সব লেখা অ্যাডমিন থেকে বদলানো যায়।
 
 ## ফিচার ট্র্যাকার

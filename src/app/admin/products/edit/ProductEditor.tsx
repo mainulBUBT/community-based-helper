@@ -11,15 +11,15 @@ import { ErrorNotice } from "@/components/ui/ErrorNotice";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
-import { categoryName } from "@/hooks/useCategories";
+import { categoryName } from "@/utils/categories";
+import { canonicalRegion } from "@/utils/region";
 import { useAdminCategories } from "@/hooks/useAdminCategories";
-import { useAdminI18n } from "@/hooks/useI18n";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
 import type { Messages } from "@/i18n/bn";
 import { showToast } from "@/lib/toast";
 import { deleteOffer, listOffersFor, updateOffer } from "@/services/admin/offers";
-import { deleteProduct, deleteVariant, saveVariant, updateProduct } from "@/services/admin/products";
+import { deleteProduct, deleteVariant, getProduct, saveVariant, updateProduct } from "@/services/admin/products";
 import { listAllSellers } from "@/services/admin/sellers";
-import { loadCatalog } from "@/services/catalog-live";
 import type { Axis, Offer, Product, Variant, VariantAttributes } from "@/types/catalog";
 import { telLink } from "@/utils/format";
 import { specsToText, textToSpecs } from "@/utils/specs";
@@ -29,8 +29,7 @@ const iconButton = "flex size-10 items-center justify-center rounded-xl border b
 const toPrice = (value: FormDataEntryValue | null) => Number(String(value ?? "").replace(/\D/g, "")) || null;
 
 async function loadEditor(id: string) {
-  const [{ products }, sellers] = await Promise.all([loadCatalog(true), listAllSellers()]);
-  const product = products.find((p) => p.id === id) ?? null;
+  const [product, sellers] = await Promise.all([getProduct(id), listAllSellers()]);
   const offers = product ? await listOffersFor(product.variants.map((v) => v.id)) : [];
   return { product, offers, sellers: new Map(sellers.map((s) => [s.id, s])) };
 }
@@ -62,11 +61,12 @@ function DetailsForm({ product, onSaved }: { product: Product; onSaved: () => vo
           popularity: Number(form.get("popularity")) || 0,
           images: previews,
           colors: splitList(form.get("colors"), /,/),
-          regions: splitList(form.get("regions"), /,/),
+          regions: [...new Set(splitList(form.get("regions"), /,/).map(canonicalRegion).filter((r): r is string => Boolean(r)))],
           description: text("description"),
           descriptionEn: text("descriptionEn"),
           specs: textToSpecs(String(form.get("specs") ?? "")),
           specsSource: text("specsSource"),
+          active: form.get("active") === "on",
         }),
       t.admin.common.saved,
     );
@@ -88,6 +88,13 @@ function DetailsForm({ product, onSaved }: { product: Product; onSaved: () => vo
           </Select>
           <Field label={t.admin.products.year} name="year" type="number" defaultValue={product.releaseYear ?? ""} />
           <Field label={t.admin.editor.popularity} name="popularity" type="number" min={0} max={100} defaultValue={product.popularity} hint={t.admin.editor.popularityHint} />
+          <label className="flex items-start gap-3 text-sm md:col-span-3">
+            <input type="checkbox" name="active" defaultChecked={product.active !== false} className="mt-0.5 size-4 accent-[var(--color-brand)]" />
+            <span className="flex flex-col gap-0.5">
+              <span className="font-semibold">{t.admin.editor.showOnSite}</span>
+              <span className="text-xs text-dim">{t.admin.editor.showOnSiteHint}</span>
+            </span>
+          </label>
         </div>
       </Panel>
 

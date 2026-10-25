@@ -1,4 +1,4 @@
-import { sampleProducts, sampleOffers } from "@/data/sample";
+import { sampleProducts, sampleOffers } from "@/data/sample-catalog";
 
 const offersByVariant = new Map<string, typeof sampleOffers>();
 for (const offer of sampleOffers) {

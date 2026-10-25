@@ -2,8 +2,8 @@
 
 import { useSyncExternalStore } from "react";
 import { useLocaleOverride } from "@/lib/locale";
-import { adminLangStore, setAdminLang, setLang, type Lang } from "@/lib/preferences";
-import { bn } from "@/i18n/bn";
+import { setLang, type Lang } from "@/lib/preferences";
+import { bn, type Messages } from "@/i18n/bn";
 import { en } from "@/i18n/en";
 import { toBnDigits } from "@/utils/format";
 
@@ -11,8 +11,7 @@ const MESSAGES = { bn, en };
 
 const subscribeNever = () => () => {};
 
-function build(lang: Lang, set: (lang: Lang) => void, prefix = "", mounted = true) {
-  const t = MESSAGES[lang];
+export function buildI18n<T extends Messages>(t: T, lang: Lang, set: (lang: Lang) => void, prefix = "", mounted = true) {
   const num = (value: string | number) => (lang === "bn" ? toBnDigits(value) : String(value));
 
   function ago(iso: string) {
@@ -39,10 +38,6 @@ export function useI18n() {
   // স্ট্যাটিক সাইটে বিল্ড-টাইম আর দেখার সময় আলাদা — mount-এর আগে ago() নির্ধারিত তারিখ দেয়,
   // না হলে React hydration মিসম্যাচ (#418) হয়ে পেজ ক্লায়েন্টে ভেঙে যায়।
   const mounted = useSyncExternalStore(subscribeNever, () => true, () => false);
-  return build(forced ?? "bn", setLang, forced === "en" ? "/en" : "", mounted);
-}
-
-export function useAdminI18n() {
-  const lang = useSyncExternalStore(adminLangStore.subscribe, adminLangStore.get, (): Lang => "en");
-  return build(lang, setAdminLang);
+  const lang = forced ?? "bn";
+  return buildI18n(MESSAGES[lang], lang, setLang, forced === "en" ? "/en" : "", mounted);
 }

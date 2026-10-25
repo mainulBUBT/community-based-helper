@@ -8,3 +8,7 @@ sql_paths = ["./seed.sql"]
 site_url = "https://dordam.app"
 additional_redirect_urls = ["https://dordam.app/admin/", "https://www.dordam.app/admin/", "https://dordam.pages.dev/admin/", "http://localhost:3100/admin/"]
 enable_signup = false
+
+# browser calls it with the publishable key, which is not a JWT; the function checks Turnstile itself
+[functions.submit-price]
+verify_jwt = false

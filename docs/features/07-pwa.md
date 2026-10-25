@@ -5,7 +5,7 @@
 ## যা আছে
 
 - `src/app/manifest.ts`: নাম, রং, আইকন (192, 512, maskable), শর্টকাট (খুঁজুন, সেভ করা)।
-- `public/sw.js`: `_next/static` আর আইকন cache থেকে দেয়। পেজ নেটওয়ার্ক থেকে আনে, না পেলে cache, তাও না থাকলে `/offline/`। `/admin` কখনো cache হয় না।
+- `public/sw.js`: `_next/static` আর আইকন cache থেকে দেয় (সর্বোচ্চ ২০০টা)। পেজ আর `/data/catalog/*.json` নেটওয়ার্ক থেকে আনে, না পেলে cache (সর্বোচ্চ ৮০টা), পেজ তাও না পেলে `/offline/`। তাই অফলাইনেও খোঁজা আর সেভ করা চলে। `/admin` কখনো cache হয় না।
 - `src/components/layout/ServiceWorker.tsx`: শুধু production build এ service worker চালু করে।
 - হেডারে "অ্যাপ নামান" বোতাম, ব্রাউজার অনুমতি দিলে তবেই দেখায় (`src/hooks/useInstallPrompt.ts`)।
 

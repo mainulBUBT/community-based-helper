@@ -1,4 +1,4 @@
-import type { OfferView, PricePoint, Product } from "@/types/catalog";
+import type { OfferView, PricePoint, Product, ProductSummary } from "@/types/catalog";
 
 const ALIASES: Record<string, string> = {
   আইফোন: "iphone",
@@ -18,6 +18,22 @@ const ALIASES: Record<string, string> = {
 };
 
 export const byPrice = (a: { price: number }, b: { price: number }) => a.price - b.price;
+
+// বানান আর ফাঁকা জায়গা বাদে একই নাম, অথবা শুধু শেষে সাইজ বাড়তি ("Galaxy Watch8" আর "Galaxy Watch 8 40mm") মানে একই পণ্য
+const nameKey = (brand: string, name: string) => `${brand} ${name}`.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+const SIZE_TAIL = /^\d+(?:mm|gb|tb|ml|g|mah|inch|in)$/;
+
+export function sameProduct(a: { brand: string; name: string }, b: { brand: string; name: string }) {
+  const [x, y] = [nameKey(a.brand, a.name), nameKey(b.brand, b.name)].sort((p, q) => p.length - q.length);
+  return x === y || (y.startsWith(x) && SIZE_TAIL.test(y.slice(x.length)));
+}
+
+export const byPopularity = (a: ProductSummary, b: ProductSummary) => b.product.popularity - a.product.popularity;
+
+export function toCard(summary: ProductSummary): ProductSummary {
+  const { id, slug, name, brand, category, releaseYear, popularity, variants, images } = summary.product;
+  return { ...summary, product: { id, slug, name, brand, category, releaseYear, popularity, variants, images: images?.slice(0, 1) } };
+}
 
 export function lowestOffer(offers: OfferView[]) {
   return offers.filter((offer) => offer.inStock !== false).sort(byPrice)[0] ?? offers.slice().sort(byPrice)[0] ?? null;

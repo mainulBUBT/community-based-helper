@@ -1,16 +1,12 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { SearchView } from "@/app/(site)/search/SearchView";
 import { ListSkeleton } from "@/components/ui/Skeleton";
-import { toEnPath } from "@/lib/en-meta";
-import { SearchView } from "./SearchView";
+import { messages, pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  title: "দাম খুঁজুন",
-  description: "মোবাইল, iPhone, MacBook আর স্মার্টওয়াচের দাম মডেল ধরে খুঁজুন।",
-  alternates: { canonical: "/search/", languages: { bn: "/search/", en: toEnPath("/search/") } },
-};
+export const generateMetadata = (): Promise<Metadata> => pageMeta({ lang: "bn", path: "/search/", ...messages("bn").seo.search, index: false });
 
-export default function SearchPage() {
+export default function Page() {
   return (
     <Suspense fallback={<ListSkeleton />}>
       <SearchView />

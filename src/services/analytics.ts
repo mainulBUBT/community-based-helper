@@ -1,4 +1,4 @@
-import { supabase } from "@/lib/supabase";
+import { hasBackend, supabaseFetch } from "@/lib/supabase-rest";
 
 const VISITOR_KEY = "visitor-id";
 
@@ -16,11 +16,12 @@ function visitorId() {
 }
 
 export function trackView(path: string, productId?: string) {
-  if (!supabase || path.startsWith("/admin")) return;
-  void supabase.from("page_views").insert({
-    visitor: visitorId(),
-    path: path.slice(0, 300),
-    product_id: productId ?? null,
-    referrer: document.referrer ? new URL(document.referrer).hostname : null,
-  });
+  if (!hasBackend || path.startsWith("/admin")) return;
+  const referrer = document.referrer ? new URL(document.referrer).hostname : null;
+  void supabaseFetch("/rest/v1/page_views", {
+    method: "POST",
+    headers: { prefer: "return=minimal" },
+    body: JSON.stringify({ visitor: visitorId(), path: path.slice(0, 300), product_id: productId ?? null, referrer }),
+    keepalive: true,
+  }).catch(() => {});
 }

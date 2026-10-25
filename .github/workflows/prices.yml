@@ -5,6 +5,9 @@ on:
     - cron: "17 */6 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
   group: prices
   cancel-in-progress: false
