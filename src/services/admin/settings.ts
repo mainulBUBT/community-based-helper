@@ -8,7 +8,10 @@ const DEFAULT_PRIVATE: PrivateSettings = {
   llm: { baseUrl: "https://generativelanguage.googleapis.com/v1beta/openai/", model: "gemini-2.5-flash", apiKey: null },
   telegramBotToken: null,
   alertChatId: null,
+  llmKeys: {},
 };
+
+export const providerKey = (baseUrl: string) => baseUrl.trim().replace(/\/+$/, "");
 
 let demoPrivate: PrivateSettings = DEFAULT_PRIVATE;
 
@@ -30,7 +33,13 @@ export async function saveSiteSettings(value: SiteSettings, section: string) {
 
 // key আর token সার্ভার থেকে শুধু ঢাকা অবস্থায় আসে (যেমন ••••a1b2); সেভে খালি রাখলে আগেরটাই থাকে
 export async function loadPrivateSettings(): Promise<PrivateSettings> {
-  if (!supabase) return { ...demoPrivate, llm: { ...demoPrivate.llm, apiKey: masked(demoPrivate.llm.apiKey) }, telegramBotToken: masked(demoPrivate.telegramBotToken) };
+  if (!supabase)
+    return {
+      ...demoPrivate,
+      llm: { ...demoPrivate.llm, apiKey: masked(demoPrivate.llm.apiKey) },
+      telegramBotToken: masked(demoPrivate.telegramBotToken),
+      llmKeys: Object.fromEntries(Object.entries(demoPrivate.llmKeys ?? {}).map(([url, key]) => [url, masked(key)!])),
+    };
   const { data, error } = await supabase.rpc("private_settings_masked");
   if (error) throw error;
   const value = (data ?? {}) as Partial<PrivateSettings>;
@@ -39,10 +48,13 @@ export async function loadPrivateSettings(): Promise<PrivateSettings> {
 
 export async function savePrivateSettings(value: PrivateSettings, section: string) {
   if (!supabase) {
+    const base = providerKey(value.llm.baseUrl);
+    const llmKeys = { ...demoPrivate.llmKeys, ...(value.llm.apiKey && base ? { [base]: value.llm.apiKey } : {}) };
     demoPrivate = {
       ...value,
-      llm: { ...value.llm, apiKey: value.llm.apiKey || demoPrivate.llm.apiKey },
+      llm: { ...value.llm, apiKey: llmKeys[base] ?? null },
       telegramBotToken: value.telegramBotToken || demoPrivate.telegramBotToken,
+      llmKeys,
     };
   } else {
     const { error } = await supabase.rpc("save_private_settings", { patch: value });

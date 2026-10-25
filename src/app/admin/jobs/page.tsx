@@ -1,6 +1,6 @@
 "use client";
 
-import { Loader2, Sparkles } from "lucide-react";
+import { Check, Loader2, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState, type FormEvent } from "react";
 import { Field } from "@/components/admin/Field";
@@ -12,7 +12,7 @@ import { useAdminAction } from "@/hooks/useAdminAction";
 import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { showToast } from "@/lib/toast";
 import { listJobs, requestJobRun, setJobEnabled } from "@/services/admin/jobs";
-import { loadPrivateSettings, savePrivateSettings, testLlm } from "@/services/admin/settings";
+import { loadPrivateSettings, providerKey, savePrivateSettings, testLlm } from "@/services/admin/settings";
 import type { Job, PrivateSettings } from "@/types/admin";
 
 const AI_JOBS = new Set(["discover", "promos"]);
@@ -166,6 +166,7 @@ function SettingsForm({ initial, onSaved }: { initial: PrivateSettings; onSaved:
   const [baseUrl, setBaseUrl] = useState(initial.llm.baseUrl);
   const [model, setModel] = useState(initial.llm.model);
   const ready = Boolean(initial.llm.baseUrl && initial.llm.model && initial.llm.apiKey);
+  const savedKey = (url: string) => initial.llmKeys?.[providerKey(url)] ?? null;
 
   function read(form: HTMLFormElement): PrivateSettings {
     const data = new FormData(form);
@@ -233,9 +234,10 @@ function SettingsForm({ initial, onSaved }: { initial: PrivateSettings; onSaved:
                     setBaseUrl(preset.baseUrl);
                     setModel(preset.model);
                   }}
-                  className={`h-9 rounded-lg border px-3 text-sm font-semibold ${baseUrl === preset.baseUrl ? "border-brand bg-brand-soft" : "border-line hover:border-brand"}`}
+                  className={`flex h-9 items-center gap-1.5 rounded-lg border px-3 text-sm font-semibold ${baseUrl === preset.baseUrl ? "border-brand bg-brand-soft" : "border-line hover:border-brand"}`}
                 >
                   {preset.name}
+                  {savedKey(preset.baseUrl) && <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />}
                 </button>
               ))}
               <button
@@ -255,12 +257,14 @@ function SettingsForm({ initial, onSaved }: { initial: PrivateSettings; onSaved:
             <Field label={t.admin.jobs.baseUrl} name="baseUrl" type="url" value={baseUrl} onChange={(e) => setBaseUrl(e.target.value)} required hint={t.admin.jobs.baseUrlHint} />
           </div>
           <Field label={t.admin.jobs.model} name="model" value={model} onChange={(e) => setModel(e.target.value)} required />
+          {/* প্রোভাইডার বদলালে ঘর খালি হয়, আর দেখায় ওই প্রোভাইডারের নিজের সেভ করা key */}
           <Field
+            key={providerKey(baseUrl)}
             label={t.admin.jobs.apiKey}
             name="apiKey"
             type="password"
             autoComplete="off"
-            hint={initial.llm.apiKey ? t.admin.jobs.secretSaved(initial.llm.apiKey) : undefined}
+            hint={savedKey(baseUrl) ? t.admin.jobs.secretSaved(savedKey(baseUrl)!) : t.admin.jobs.noKeyForProvider}
           />
           <div className="flex flex-wrap items-center gap-3 md:col-span-2">
             <button type="button" onClick={(e) => onTest(e.currentTarget.form)} className={secondaryButton}>

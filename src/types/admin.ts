@@ -80,6 +80,8 @@ export interface SiteSettings {
 
 export interface PrivateSettings {
   llm: { baseUrl: string; model: string; apiKey: string | null };
+  // প্রতিটা প্রোভাইডারের key, Base URL ধরে (ব্রাউজারে শুধু ঢাকা রূপ আসে)
+  llmKeys?: Record<string, string>;
   telegramBotToken: string | null;
   alertChatId: string | null;
 }

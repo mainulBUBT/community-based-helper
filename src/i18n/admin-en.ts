@@ -345,6 +345,8 @@ export const adminEn: AdminMessages = {
     testFailed: (error) => `Not working: ${error}`,
     testNeedsKey: "For safety the saved key never comes back to the browser. Type the key again to test it.",
     secretSaved: (hint) => `Saved (${hint}). Leave blank to keep it, or type a new one to replace it.`,
+    noKeyForProvider: "No key saved for this provider yet. Keys from other providers aren't used here.",
+    keySaved: "Key saved",
     telegramTitle: "Telegram alerts",
     botToken: "Bot token",
     chatId: "Chat id to send to",
