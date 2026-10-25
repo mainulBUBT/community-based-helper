@@ -3,11 +3,13 @@
 import { useState } from "react";
 import { Field, Select } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
+import { ListFooter, SearchBox } from "@/components/admin/ListSearch";
 import { Toggle } from "@/components/admin/Toggle";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
 import { useAdminI18n } from "@/hooks/useAdminI18n";
+import { useListSearch } from "@/hooks/useListSearch";
 import type { Messages } from "@/i18n/bn";
 import { showToast } from "@/lib/toast";
 import { deleteSeller, listAllSellers, saveSeller } from "@/services/admin/sellers";
@@ -94,6 +96,7 @@ export default function SellersAdminPage() {
   const { busy, run } = useAdminAction();
   const { data, loading, reload } = useAsync(listAllSellers, []);
   const [editing, setEditing] = useState<Seller | null>(null);
+  const list = useListSearch(data ?? [], (s) => [s.name, s.area, s.phone, s.whatsapp, s.website, s.facebook, t.sellerKind[s.kind as keyof Messages["sellerKind"]]]);
 
   async function update(seller: Seller, patch: Partial<Seller>, message: string) {
     if (await run(() => saveSeller({ ...seller, ...patch }), message)) reload();
@@ -128,6 +131,9 @@ export default function SellersAdminPage() {
         <ListSkeleton />
       ) : (
         <Panel>
+          <div className="flex border-b border-line-soft p-4">
+            <SearchBox value={list.query} onChange={list.search} placeholder={t.admin.sellers.search} />
+          </div>
           <div className="overflow-x-auto">
             <table className="w-full min-w-[760px] text-left text-[15px]">
               <thead className="text-[13px] text-dim">
@@ -141,7 +147,7 @@ export default function SellersAdminPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-line-soft">
-                {data.map((seller) => (
+                {list.items.map((seller) => (
                   <tr key={seller.id}>
                     <td className="px-5 py-3">
                       <p className="font-semibold">{seller.name}</p>
@@ -187,6 +193,7 @@ export default function SellersAdminPage() {
               </tbody>
             </table>
           </div>
+          <ListFooter noMatch={list.noMatch} page={list.page} pages={list.pages} onPage={list.setPage} />
         </Panel>
       )}
     </>

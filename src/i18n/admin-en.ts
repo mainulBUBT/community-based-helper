@@ -56,8 +56,10 @@ export const adminEn: AdminMessages = {
     close: "Close",
     details: "Details",
     actionFailed: "Couldn't do that, please try again",
+    noMatch: "Nothing matches this search",
   },
   categories: {
+    search: "Search by name or slug",
     title: "Categories",
     subtitle: "Which products go where, and which fields each version needs",
     new: "New category",
@@ -161,6 +163,7 @@ export const adminEn: AdminMessages = {
     alreadyApplied: "Already live; change it from the product page",
   },
   sellers: {
+    search: "Search by name, area, phone or website",
     title: "Sellers",
     subtitle: "Shops and groups without a website show their phone number on the site.",
     new: "New seller",
@@ -296,6 +299,7 @@ export const adminEn: AdminMessages = {
     descriptionEn: "Description (English)",
   },
   offers: {
+    search: "Search by offer text, shop or type",
     title: "Offers",
     subtitle: "Active offers show under prices on product pages and on seller pages.",
     new: "New offer",

@@ -4,12 +4,14 @@ import { Pencil, Trash2 } from "lucide-react";
 import { useState, type FormEvent } from "react";
 import { Field, Select } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
+import { ListFooter, SearchBox } from "@/components/admin/ListSearch";
 import { Toggle } from "@/components/admin/Toggle";
 import { Badge } from "@/components/ui/Badge";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
 import { useAdminI18n } from "@/hooks/useAdminI18n";
+import { useListSearch } from "@/hooks/useListSearch";
 import { deletePromo, listAllPromos, savePromo } from "@/services/admin/offers";
 import { listAllSellers } from "@/services/admin/sellers";
 import type { Promo, Seller } from "@/types/catalog";
@@ -85,8 +87,9 @@ export default function OffersAdminPage() {
   const { busy, run } = useAdminAction();
   const { data, loading, reload } = useAsync(loadData, []);
   const [editing, setEditing] = useState<Promo | null>(null);
+  const names = new Map(data?.sellers.map((s) => [s.id, s.name]));
+  const list = useListSearch(data?.promos ?? [], (p) => [p.text, names.get(p.sellerId), p.kind, p.scope]);
   if (loading || !data) return <ListSkeleton />;
-  const names = new Map(data.sellers.map((s) => [s.id, s.name]));
 
   return (
     <>
@@ -115,8 +118,11 @@ export default function OffersAdminPage() {
         </div>
       )}
       <Panel>
+        <div className="flex border-b border-line-soft p-4">
+          <SearchBox value={list.query} onChange={list.search} placeholder={t.admin.offers.search} />
+        </div>
         <ul className="divide-y divide-line-soft">
-          {data.promos.map((promo) => (
+          {list.items.map((promo) => (
             <li key={promo.id} className="flex items-center gap-3 px-5 py-4">
               <div className="flex min-w-0 flex-1 flex-col gap-1.5">
                 <p className="font-semibold">{promo.text}</p>
@@ -152,6 +158,7 @@ export default function OffersAdminPage() {
             </li>
           ))}
         </ul>
+        <ListFooter noMatch={list.noMatch} page={list.page} pages={list.pages} onPage={list.setPage} />
       </Panel>
     </>
   );

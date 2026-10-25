@@ -5,6 +5,7 @@ import { Field, Select } from "@/components/admin/Field";
 import { IconPicker } from "@/components/admin/IconPicker";
 import { LangTabs } from "@/components/admin/LangTabs";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
+import { ListFooter, SearchBox } from "@/components/admin/ListSearch";
 import { Toggle } from "@/components/admin/Toggle";
 import { CategoryIcon } from "@/components/product/CategoryIcon";
 import { ErrorNotice } from "@/components/ui/ErrorNotice";
@@ -12,6 +13,7 @@ import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
 import { useAdminI18n } from "@/hooks/useAdminI18n";
+import { useListSearch } from "@/hooks/useListSearch";
 import { showToast } from "@/lib/toast";
 import { countChildren, countProducts, deleteCategory, listAllCategories, saveCategory } from "@/services/admin/categories";
 import { AXES, type Axis, type CategoryInfo } from "@/types/catalog";
@@ -120,6 +122,7 @@ export default function CategoriesPage() {
   const { busy, run } = useAdminAction();
   const { data, error, loading, reload } = useAsync(loadData, []);
   const [editing, setEditing] = useState<{ category: CategoryInfo; isNew: boolean } | null>(null);
+  const list = useListSearch(data ?? [], ({ category }) => [category.name, category.nameEn, category.slug, category.parent]);
 
   if (loading) return <ListSkeleton />;
   if (error || !data) return <ErrorNotice onRetry={reload} />;
@@ -150,6 +153,9 @@ export default function CategoriesPage() {
           </Panel>
         )}
         <Panel title={t.admin.categories.all(num(data.length))}>
+          <div className="flex border-b border-line-soft p-4">
+            <SearchBox value={list.query} onChange={list.search} placeholder={t.admin.categories.search} />
+          </div>
           <div className="overflow-x-auto">
             <table className="w-full min-w-[640px] text-left text-[15px]">
               <thead className="text-[13px] text-dim">
@@ -164,7 +170,7 @@ export default function CategoriesPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-line-soft">
-                {data.map(({ category, products, children }) => (
+                {list.items.map(({ category, products, children }) => (
                   <tr key={category.slug}>
                     <td className="px-5 py-3">
                       <span className="flex items-center gap-3">
@@ -224,6 +230,7 @@ export default function CategoriesPage() {
               </tbody>
             </table>
           </div>
+          <ListFooter noMatch={list.noMatch} page={list.page} pages={list.pages} onPage={list.setPage} />
         </Panel>
       </div>
     </>

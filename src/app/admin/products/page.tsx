@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { Field, Select, TextArea } from "@/components/admin/Field";
+import { SearchBox } from "@/components/admin/ListSearch";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { Badge } from "@/components/ui/Badge";
 import { Pagination, paginate } from "@/components/ui/Pagination";
@@ -230,16 +231,13 @@ export default function ProductsAdminPage() {
         </Panel>
         <Panel title={t.admin.products.all(num(data.summaries.length))}>
           <div className="flex flex-wrap gap-3 border-b border-line-soft p-4">
-            <input
-              type="search"
+            <SearchBox
               value={query}
-              onChange={(e) => {
-                setQuery(e.target.value);
+              onChange={(value) => {
+                setQuery(value);
                 setPage(1);
               }}
               placeholder={t.admin.products.searchPlaceholder}
-              aria-label={t.admin.products.searchPlaceholder}
-              className="h-10 min-w-56 flex-1 rounded-lg border border-line bg-surface px-3 text-sm outline-none focus:border-brand"
             />
             <select
               value={category}
