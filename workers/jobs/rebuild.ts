@@ -16,6 +16,9 @@ async function sh(command: string, args: string[], env: NodeJS.ProcessEnv = proc
 }
 
 export async function rebuild(): Promise<string> {
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY) {
+    throw new Error("NEXT_PUBLIC_SUPABASE_URL বা PUBLISHABLE_KEY নেই, নমুনা ডেটার সাইট deploy হবে না");
+  }
   const { count: products, error } = await db().from("products").select("id", { count: "exact", head: true });
   if (error) throw error;
   await sh("npm", ["run", "build"], buildEnv);

@@ -6,8 +6,11 @@ const DEMO_PASSWORD = process.env.NEXT_PUBLIC_DEMO_ADMIN_PASSWORD ?? "dordam-dem
 
 export const isDemo = !supabase;
 
+// নমুনা ডেটার build ভুল করে লাইভে গেলেও demo পাসওয়ার্ডে অ্যাডমিনে ঢোকা যাবে না
+const demoAllowed = () => /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+
 export async function currentAdmin() {
-  if (!supabase) return sessionStorage.getItem(DEMO_KEY) ? { email: DEMO_EMAIL } : null;
+  if (!supabase) return demoAllowed() && sessionStorage.getItem(DEMO_KEY) ? { email: DEMO_EMAIL } : null;
   const { data } = await supabase.auth.getUser();
   if (!data.user) return null;
   const { data: isAdmin } = await supabase.rpc("is_admin");
@@ -16,7 +19,7 @@ export async function currentAdmin() {
 
 export async function signIn(email: string, password: string, captchaToken?: string) {
   if (!supabase) {
-    if (email.trim().toLowerCase() !== DEMO_EMAIL || password !== DEMO_PASSWORD) throw new Error("invalid");
+    if (!demoAllowed() || email.trim().toLowerCase() !== DEMO_EMAIL || password !== DEMO_PASSWORD) throw new Error("invalid");
     sessionStorage.setItem(DEMO_KEY, "1");
     return;
   }

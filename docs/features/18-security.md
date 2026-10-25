@@ -18,6 +18,7 @@
 - **Service worker:** শুধু সফল (200) একই-সাইটের উত্তর cache করে, admin কখনো না।
 - **Worker:** শুধু http/https, আর লোকাল/private নেটওয়ার্কের ঠিকানা (127.x, 10.x, 192.168.x, 169.254.x, ::1 ইত্যাদি) প্রতিটা redirect এও আটকানো; redirect শুধু একই সাইটের ভেতরে; sitemap সর্বোচ্চ ২ ধাপ, একই সাইটের, একবারই; পেজের আকার ৩ MB পর্যন্ত, AI এর দেওয়া title/অফারের লেখা ছোট করা, ছবি শুধু `https`, অফারের ধরন নির্দিষ্ট তালিকা থেকে, AI থেকে পাওয়া অফার নিজে থেকে চালু হয় না, ৬০% এর বেশি দাম বদল যাচাইয়ে যায়।
 - **Build:** সাইট build করার সময় service key, LLM key, Cloudflare token আর VAPID private key env থেকে সরানো হয়; wrangler deploy পায় শুধু Cloudflare এর env। workflow গুলোতে `permissions: contents: read`। AI এর prompt এ পাতার লেখাকে শুধু ডেটা ধরতে বলা, AI এর error এ উত্তরের লেখা আর থাকে না।
+- **নমুনা (demo) ডেটা লাইভে যায় না:** CI তে Supabase এর URL/key না থাকলে `build-data` থেমে যায়, আর `rebuild` job নিজেও তখন build বা deploy করে না। ভুল করে নমুনার build কোথাও উঠলেও demo অ্যাডমিন লগইন (আর `demo-admin` session চিহ্ন) শুধু `localhost`/`127.0.0.1` এ চলে, আসল ডোমেইনে না। নমুনায় অ্যাডমিনে যা বদলায় তা শুধু ওই ব্রাউজারে থাকে, ডেটাবেসে যায় না।
 - **JSON-LD:** `<` escape করা, তাই পণ্যের নামে `</script>` দিয়ে কিছু ঢোকানো যায় না।
 - `npm audit --omit=dev`: ০টা সমস্যা (২০২৬-১০-২১)।
 
