@@ -82,7 +82,7 @@ begin
 end;
 $$;
 
--- worker এর জন্য: নতুন সারির শুরুর দাম বসায়, তারপর যেগুলোর দাম কমেছে আর গত ২৪ ঘণ্টায় জানানো হয়নি
+-- worker এর জন্য: নতুন সারির শুরুর দাম বসায়, তারপর যেগুলোর দাম শেষ জানানো দামের চেয়ে কমেছে
 create function due_price_alerts() returns table (endpoint text, p256dh text, auth text, lang text, product_id uuid, slug text, name text, old_price int, new_price int)
 language plpgsql security definer set search_path = '' as $$
 begin
@@ -94,7 +94,6 @@ begin
     cross join lateral (select public.alert_price(p.id) as price) n
     where n.price is not null and a.price is not null
       and n.price < a.price
-      and (a.notified_at is null or a.notified_at < now() - interval '1 day')
     order by a.endpoint, a.price - n.price desc;
 end;
 $$;
