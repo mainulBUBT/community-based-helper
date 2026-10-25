@@ -260,3 +260,21 @@ export async function startechVariants(html: string, url: string): Promise<ShopV
   }
   return rows;
 }
+
+// Chardike (Next.js): দাম __NEXT_DATA__ এর initialCoreData তে — price মূল দাম, discount_price ছাড়ের দাম
+export function chardikeVariants(html: string): ShopVariant[] {
+  const data = parse(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/.exec(html)?.[1] ?? "");
+  const core = isObject(data) && isObject(data.props) && isObject(data.props.pageProps) ? data.props.pageProps.initialCoreData : null;
+  if (!isObject(core)) return [];
+  const full = toTaka(core.price);
+  const sale = toTaka(core.discount_price);
+  return variant([], sale && full && sale < full ? sale : full, full, typeof core.stock === "number" ? core.stock > 0 : null);
+}
+
+// PerfectoBD (Next.js RSC): পাতার পণ্যটা slug দিয়ে চেনা, পাশের পণ্যের দাম নয়
+export function perfectoVariants(html: string, url: string): ShopVariant[] {
+  const slug = new URL(url).pathname.split("/").filter(Boolean).pop();
+  const product = objectsAt(html, /\{"id":\d+,"type":"product","slug":/g).find((p) => p.slug === slug);
+  if (!product) return [];
+  return variant([], product.calculable_price, product.mrp_price, typeof product.in_stock === "boolean" ? product.in_stock : null);
+}

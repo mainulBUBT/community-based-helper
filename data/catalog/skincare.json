@@ -80,6 +80,31 @@
       "name": "Glowella",
       "website": "https://glowellabd.com",
       "note": "Skincare shop; WooCommerce product pages with current and old prices."
+    },
+    {
+      "name": "OHSOGO",
+      "website": "https://www.ohsogo.com",
+      "note": "Shopify beauty and personal-care shop; product pages carry JSON-LD price and stock."
+    },
+    {
+      "name": "Chardike",
+      "website": "https://chardike.com",
+      "note": "Next.js beauty shop; price, discount price and stock come from the page's __NEXT_DATA__ (chardikeVariants)."
+    },
+    {
+      "name": "Perfecto",
+      "website": "https://perfectobd.com",
+      "note": "Next.js beauty shop; price, MRP and stock come from the product object in the page's RSC data (perfectoVariants)."
+    },
+    {
+      "name": "Korean Mart BD",
+      "website": "https://koreanmartbd.com",
+      "note": "Korean skincare shop; product pages carry JSON-LD price and stock."
+    },
+    {
+      "name": "Klassy Missy",
+      "website": "https://klassy.com.bd",
+      "note": "Next.js premium beauty shop; no product sitemap, so the worker reads the first page of each category from manifest/categories.xml. Product pages carry JSON-LD price and stock."
     }
   ],
   "products": [
@@ -817,7 +842,10 @@
           "officialPrice": 2000
         }
       ],
-      "images": [],
+      "images": [
+        "https://bk.shajgoj.com/storage/2025/10/neutrogena-hydro-boost-water-gel-new.jpg",
+        "https://skincareshop.com.bd/wp-content/uploads/2021/07/Neutrogena-Hydro-Boost-Water-Gel-Moisturiser-with-Hyaluronic-Acid-Trehalose-50ml-5.jpg"
+      ],
       "offers": [
         {
           "variant": "50ml",
@@ -854,7 +882,11 @@
           "officialPrice": 2150
         }
       ],
-      "images": [],
+      "images": [
+        "https://cdn.aromyeo.com/Products/some-by-mi-aha-bha-pha-30-days-miracle-toner-720.avif",
+        "https://d1puc9h291tp0h.cloudfront.net/uploads/all/5Hf6VFbS1BWAeTHBaq0k7g5UHMvmXviP5G8mVnTx.jpg",
+        "https://bk.shajgoj.com/storage/2026/01/some-by-mi-aha-bha-pha-30-days-miracle-toner.jpg"
+      ],
       "offers": [
         {
           "variant": "150ml",
@@ -901,7 +933,10 @@
           "officialPrice": 2260
         }
       ],
-      "images": [],
+      "images": [
+        "https://e-mart.com.bd/wp-content/uploads/2024/02/emart-anua-heartleaf-77-soothing-toner-250ml.jpg",
+        "https://cdn.aromyeo.com/Products/anua-heartleaf-77-soothing-toner-250ml-720.avif"
+      ],
       "offers": [
         {
           "variant": "250ml",
@@ -977,7 +1012,10 @@
           "officialPrice": 1800
         }
       ],
-      "images": [],
+      "images": [
+        "https://cdn.aromyeo.com/Products/isntree-hyaluronic-acid-toner-200ml-720.avif",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0VmFyaWFudC1wdl9pbWFnZXNcLzYyNDA5XC82MjQwOS1wcm9kdWN0LW05cDJhci5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19"
+      ],
       "offers": [
         {
           "variant": "200ml",
@@ -1024,7 +1062,10 @@
           "officialPrice": 2500
         }
       ],
-      "images": [],
+      "images": [
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC80MjE2MVwvNDIxNjEtZXlKaWRXTnJaWFFpT2lKaGNtOW5aMkVpTENKclpYa2lPaUpRY205a2RXTjBWbUZ5YVdGdWRDMXdkbDlwYldGblpYTmNMelF5TVRZeFhDODBNakUyTVMxbGVVcHBaRmRPY2xwWVVXbFBhVXBvWTIwNWJsb3lSV2xNUTBweVdsaHJhVTlwU25SYVYxSndXVEpzZFZwV2QzWk9SRXBqVEhwUmVVMVVXWGhNVlU1Mll6TktORXhWUm10a2JVWjFXVEpXYTB4V1RuVlpWMnh6VEZScmVVeFZSbk5pLTVjZ282cC53ZWJwIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+        "https://bk.shajgoj.com/storage/2024/12/download.jpg"
+      ],
       "offers": [
         {
           "variant": "100g",
@@ -1120,7 +1161,9 @@
           "officialPrice": 1450
         }
       ],
-      "images": [],
+      "images": [
+        "https://e-mart.com.bd/wp-content/uploads/2026/07/skin1004-madagascar-centella-ampoule55ml.jpg"
+      ],
       "offers": [
         {
           "variant": "50ml",
@@ -1186,7 +1229,10 @@
           "officialPrice": 1100
         }
       ],
-      "images": [],
+      "images": [
+        "https://e-mart.com.bd/wp-content/uploads/2022/04/76759.jpg",
+        "https://bk.shajgoj.com/storage/2019/09/Low-Ph-Good-Morning-Gel-Cleanser-7423-1.jpg"
+      ],
       "offers": [
         {
           "variant": "150ml",
@@ -1223,7 +1269,10 @@
           "officialPrice": 1350
         }
       ],
-      "images": [],
+      "images": [
+        "https://e-mart.com.bd/wp-content/uploads/2026/05/Cosrx-Salicylic-Acid-Daily-Gentle-Cleanser-150ml.png",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0VmFyaWFudC1wdl9pbWFnZXNcLzUxODE4XC81MTgxOC0wNC0yMDI1LTAzLTE2VDE1MzkzMy1pb2U1b3AuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjE2LCJoZWlnaHQiOjIxNiwiZml0Ijoib3V0c2lkZSJ9fX0="
+      ],
       "offers": [
         {
           "variant": "150ml",
@@ -1427,7 +1476,10 @@
           "officialPrice": 2500
         }
       ],
-      "images": [],
+      "images": [
+        "https://skincareshop.com.bd/wp-content/uploads/2024/04/SKIN1004-Madagascar-Centella-Ampoule-100ml-00.jpg",
+        "https://e-mart.com.bd/wp-content/uploads/2024/03/Skin1004-Madagascar-Centella-Ampoule-100ml-1000x1000-1.jpg"
+      ],
       "offers": [
         {
           "variant": "100ml",
@@ -1458,6 +1510,2558 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "brand": "Etude",
+      "name": "Dear Darling Water Tint",
+      "popular": true,
+      "variants": [
+        {
+          "label": "9g",
+          "attributes": {
+            "capacity": "9g"
+          },
+          "officialPrice": 800
+        }
+      ],
+      "images": [
+        "https://beprincessbd.com/wp-content/uploads/2024/10/136.jpg",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/ETUDEHOUSEDEARDARLINGWATERTINT05GRAPEAde9.5g8cda1d.webp",
+        "https://glowellabd.com/wp-content/uploads/2025/12/0001336_etude-house-dear-darling-water-tint-02_510.jpeg"
+      ],
+      "offers": [
+        {
+          "variant": "9g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/54701/etude-dear-darling-water-tint-orange-ade-03",
+          "price": 468,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/etude-house-dear-darling-water-tint/",
+          "price": 490,
+          "oldPrice": 850,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/etude-house-dear-darling-water-tint-05-grape-ade-95g",
+          "price": 499,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/etude-dear-darling-water-tint-cherry-ade-9g",
+          "price": 505,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/etude-dear-darling-water-tint-red-grapefruit",
+          "price": 520,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/etude-dear-darling-water-tint-02-cherry-ade",
+          "price": 520,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/etude-dear-darling-water-tint",
+          "price": 520,
+          "oldPrice": 800,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/etude-dear-darling-water-tint-01-strawberry-ade.html",
+          "price": 549,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/etude-house-dear-darling-water-tint-01-strawberry-9-5g/",
+          "price": 549,
+          "oldPrice": 800,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/etude-house-dear-darling-water-tint-02/",
+          "price": 550,
+          "oldPrice": 750,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/etude-house-dear-darling-water-tint-ade-04-red-grapefruit-9gm",
+          "price": 550,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/etude-house-dear-darling-water-tint-07-lush-prune-ade-lip-tint",
+          "price": 580,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/etude-house-dear-darling-water-tint-shade-03-orange-95g",
+          "price": 639,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "9g",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/etude-house-dear-darling-water-tint-orange-ade/",
+          "price": 650,
+          "oldPrice": 800,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "Beauty Glazed",
+      "name": "Glazed Glow Lip Oil",
+      "popular": true,
+      "variants": [
+        {
+          "label": "4g",
+          "attributes": {
+            "capacity": "4g"
+          },
+          "officialPrice": 350
+        }
+      ],
+      "images": [
+        "https://beprincessbd.com/wp-content/uploads/2024/10/146.jpg",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/BeautyGlazedGlowLipOil-101Meet4gf40f54.webp"
+      ],
+      "offers": [
+        {
+          "variant": "4g",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/beauty-glazed-lip-glow-oil",
+          "price": 150,
+          "oldPrice": 300,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "4g",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/beauty-glazed-lip-glow-oil/",
+          "price": 150,
+          "oldPrice": 300,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "4g",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/beauty-glazed-lip-glow-oil-love-104-4g",
+          "price": 160,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "4g",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/beauty-glazed-glow-lip-oil-105-passion-4gm/",
+          "price": 160,
+          "oldPrice": 400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "4g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/81700/beauty-glazed-glow-lip-oil-hugging-107",
+          "price": 167,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "4g",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/beauty-glazed-glow-lip-oil-101-meet-4g",
+          "price": 169,
+          "oldPrice": 400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "4g",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/beauty-glazed-glow-lip-oil-4g",
+          "price": 185,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "4g",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/beauty-glazed-glow-lip-oil-109-cherry",
+          "price": 249,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "Swiss Beauty",
+      "name": "Dip Tint Lip Oil",
+      "popular": true,
+      "variants": [
+        {
+          "label": "3ml",
+          "attributes": {
+            "capacity": "3ml"
+          },
+          "officialPrice": 380
+        }
+      ],
+      "images": [
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/SwissBeautyDipTintLipOil3ml-03Peachc8448a.webp",
+        "https://beprincessbd.com/wp-content/uploads/2024/11/62-1.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "3ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/72765/swiss-beauty-lip-oil-dip-tint-peach-03",
+          "price": 226,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "3ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/swiss-beauty-dip-tint-lip-oil-3ml-03-peach",
+          "price": 249,
+          "oldPrice": 380,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "3ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/swiss-beauty-dip-tint-lip-oil/",
+          "price": 290,
+          "oldPrice": 350,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "3ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/swiss-beauty-dip-tint-lip-oil",
+          "price": 330,
+          "oldPrice": 450,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "3ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/swiss-beauty-dip-tint-lip-oil-01-strawberry",
+          "price": 335,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "Laneige",
+      "name": "Lip Sleeping Mask Berry",
+      "popular": true,
+      "variants": [
+        {
+          "label": "20g",
+          "attributes": {
+            "capacity": "20g"
+          },
+          "officialPrice": 1675
+        },
+        {
+          "label": "3g",
+          "attributes": {
+            "capacity": "3g"
+          },
+          "officialPrice": 555
+        }
+      ],
+      "images": [
+        "https://glowellabd.com/wp-content/uploads/2024/06/KM-0331-Laneige-lip-sleeping-mask-berry-20g.jpg",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Laneige_Lip_Sleeping_Mask_Berry-_20g.jpg",
+        "https://koreanmartbd.com/storage/uploads/2026/07/Laneige lip sleeping mask ex (berry) - 20g....png"
+      ],
+      "offers": [
+        {
+          "variant": "20g",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/laneige-lip-sleeping-mask-berry-20g/",
+          "price": 1400,
+          "oldPrice": 1650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/laneige-lip-sleeping-mask-berry-ex-20g",
+          "price": 1480,
+          "oldPrice": 1700,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/laneige-lip-sleeping-mask-ex-berry-20g",
+          "price": 1514,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/lip-sleeping-mask-berry-laneige",
+          "price": 1521,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/laneige-lip-sleeping-mask-berry-20g/",
+          "price": 1550,
+          "oldPrice": 1650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/laneige-lip-sleeping-mask-20gm-berry",
+          "price": 1585,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/laneige-lip-sleeping-mask-ex-berry-20g.html",
+          "price": 1650,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/laneige-lip-sleeping-mask-berry-20g/",
+          "price": 1699,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/laneige-lip-sleeping-mask-ex-berry-20g",
+          "price": 1700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/laneige-lip-sleeping-mask-berry-20gm/",
+          "price": 1780,
+          "oldPrice": 1900,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/LANEIGE-Lip-Sleeping-Mask-EX-BERRY-20g-z10kh",
+          "price": 1795,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "3g",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/laneige-lip-sleeping-mask-berry-ex-3g",
+          "price": 325,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "3g",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/laneige-lip-sleeping-mask-ex-berry-3g/",
+          "price": 350,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "3g",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/laneige-lip-sleeping-mask-berry-3gm/",
+          "price": 380,
+          "oldPrice": 460,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "3g",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/laneige-lip-sleeping-mask-berry-3g",
+          "price": 399,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "3g",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/laneige-lip-sleeping-mask-berry-3g/",
+          "price": 400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "3g",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/laneige-lip-sleeping-mask-berry-3g/",
+          "price": 450,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "3g",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/laneige-lip-sleeping-mask-berry-3g",
+          "price": 522,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "WishCare",
+      "name": "Ceramide Lip Balm SPF 50",
+      "popular": true,
+      "variants": [
+        {
+          "label": "5g",
+          "attributes": {
+            "capacity": "5g"
+          },
+          "officialPrice": 600
+        }
+      ],
+      "images": [
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/WishcareCeramideLipBalmwithSPF50PANatural5gdcd020.webp",
+        "https://beprincessbd.com/wp-content/uploads/2024/11/WishCare-Ceramide-Lip-Balm-Natural-With-SPF-50-PA-5gm.jpg",
+        "https://cdn.aromyeo.com/Products/wishcare-ceramide-lip-balm-with-spf-50-pa-natural-720.avif"
+      ],
+      "offers": [
+        {
+          "variant": "5g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/72224/wishcare-ceramide-lip-balm-natural-with-spf-50-pa",
+          "price": 385,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "5g",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/wishcare-ceramide-lip-balm-with-spf-50-pa",
+          "price": 400,
+          "oldPrice": 520,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "5g",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/wishcare-ceramide-lip-balm-with-spf-50-pa-natural-5g",
+          "price": 409,
+          "oldPrice": 520,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "5g",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/wishcare-ceramide-natural-lip-balm-spf50-5g.html",
+          "price": 410,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "5g",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/wishcare-ceramide-natural-lip-balm-spf50-5g",
+          "price": 430,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "5g",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/wishcare-ceramide-lip-balm-natural-with-spf-50-pa-5gm/",
+          "price": 450,
+          "oldPrice": 600,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "5g",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/wishcare-ceramide-lip-balm-with-spf-50-pa-natural",
+          "price": 450,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "5g",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/wishcare-ceramide-lip-balm-natural-with-spf-50-pa",
+          "price": 468,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "5g",
+          "site": "IndianMartBD",
+          "url": "https://indianmartbd.com/product/wishcare-ceramide-lip-balm-spf-50-bangladesh/",
+          "price": 480,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "5g",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/wishcare-ceramide-lip-balm-with-spf-50-pa-natural",
+          "price": 480,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "5g",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/wishcare-ceramide-lip-balm-with-spf50-pa/",
+          "price": 500,
+          "oldPrice": 600,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "COSRX",
+      "name": "Propolis Lip Sleeping Mask",
+      "popular": true,
+      "variants": [
+        {
+          "label": "20g",
+          "attributes": {
+            "capacity": "20g"
+          },
+          "officialPrice": 1900
+        }
+      ],
+      "images": [
+        "https://cdn.aromyeo.com/Products/cosrx-propolis-lip-sleeping-mask-720.avif",
+        "https://koreanmartbd.com/storage/uploads/2026/02/cosrx-full-fit-propolis-lip-sleeping-mask-20g.jpg",
+        "https://skincareshop.com.bd/wp-content/uploads/2024/09/Cosrx-Lip-Sleep-Propolis-Lip-Sleeping-Mask-20gm-0.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "20g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/65360/cosrx-full-fit-propolis-lip-sleeping-mask",
+          "price": 1215,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/cosrx-propolis-lip-sleeping-mask",
+          "price": 1300,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/cosrx-full-fit-propolis-lip-sleeping-mask-20g",
+          "price": 1474,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/cosrx-lip-sleep-propolis-lip-sleeping-mask-20gm/",
+          "price": 1580,
+          "oldPrice": 1900,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/cosrx-lip-sleep-full-fit-propolis-lip-sleeping-mask-20g/",
+          "price": 1650,
+          "oldPrice": 1850,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/cosrx-lip-sleep-propolis-lip-sleeping-mask-20g/",
+          "price": 1680,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/cosrx-lip-sleep-propolis-lip-sleeping-mask-20g.html",
+          "price": 1830,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/cosrx-full-fit-propolis-lip-sleeping-mask-20g",
+          "price": 1889,
+          "oldPrice": 2500,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "Laneige",
+      "name": "Water Sleeping Mask",
+      "popular": true,
+      "variants": [
+        {
+          "label": "70ml",
+          "attributes": {
+            "capacity": "70ml"
+          },
+          "officialPrice": 2500
+        },
+        {
+          "label": "15ml",
+          "attributes": {
+            "capacity": "15ml"
+          },
+          "officialPrice": 480
+        }
+      ],
+      "images": [
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Laneige-Water-Sleeping-Mask-EX--70ml.jpg",
+        "https://koreanmartbd.com/storage/uploads/2026/04/laneige-water-sleeping-mask-ex-70ml.jpg",
+        "https://cdn.aromyeo.com/Products/laneige-water-sleeping-mask-ex-70ml-720.avif"
+      ],
+      "offers": [
+        {
+          "variant": "70ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/laneige-water-sleeping-mask-ex-70ml",
+          "price": 1950,
+          "oldPrice": 2500,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "70ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/laneige-water-sleeping-mask-ex-70ml",
+          "price": 2199,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "70ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/laneige-water-sleeping-mask-ex-70ml",
+          "price": 2300,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "70ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/laneige-water-sleeping-mask-70ml/",
+          "price": 2340,
+          "oldPrice": 2500,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "70ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/laneige-water-sleeping-mask-ex-70ml/",
+          "price": 2350,
+          "oldPrice": 2600,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "70ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/laneige-renewal-water-sleeping-mask-ex-70ml/",
+          "price": 2499,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "15ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/laneige-water-sleeping-mask-15ml",
+          "price": 315,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "15ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/laneige-water-sleeping-mask-ex-15ml-ir42a-01rfu-9fdji",
+          "price": 360,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "15ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/laneige-water-sleeping-mask-15ml/",
+          "price": 380,
+          "oldPrice": 450,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "15ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/laneige-water-sleeping-mask-15ml",
+          "price": 389,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "15ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/laneige-water-sleeping-mask-ex-15ml/",
+          "price": 400,
+          "oldPrice": 500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "15ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/laneige-water-sleeping-mask-15ml",
+          "price": 450,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "15ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/laneige-water-sleeping-mask-ex-15ml.html",
+          "price": 459,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "Medicube",
+      "name": "Collagen Night Wrapping Mask",
+      "popular": true,
+      "variants": [
+        {
+          "label": "75ml",
+          "attributes": {
+            "capacity": "75ml"
+          },
+          "officialPrice": 2500
+        }
+      ],
+      "images": [
+        "https://skincareshop.com.bd/wp-content/uploads/2024/10/Medicube-Collagen-Night-Wrapping-Mask-–-75ml.jpg",
+        "https://glowellabd.com/wp-content/uploads/2024/10/MedicubeCollagenNightWrappingMask75ml_FreeDelivery_SriLanka_RunRabbit_1-600x800-1.webp",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Medicube_COLLAGEN_NIGHT_WRAPPING_MASK_75ml1_1.webp"
+      ],
+      "offers": [
+        {
+          "variant": "75ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/medicube-collagen-night-wrapping-mask-75ml/",
+          "price": 1880,
+          "oldPrice": 2600,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/74944/medicube-collagen-night-wrapping-mask-75ml",
+          "price": 1892,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/medicube-collagen-night-wrapping-mask-75ml/",
+          "price": 1900,
+          "oldPrice": 2200,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/medicube-collagen-night-wrapping-mask-75ml",
+          "price": 1949,
+          "oldPrice": 2500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/medicube-collagen-night-wrapping-mask-75ml",
+          "price": 1969,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/medicube-collagen-night-wrapping-mask-75ml",
+          "price": 1975,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/medicube-collagen-night-wrapping-mask-75ml-tpzby",
+          "price": 2000,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/medicube-collagen-night-wrapping-mask-75ml/",
+          "price": 2050,
+          "oldPrice": 2250,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/medicube-collagen-night-wrapping-mask-75ml",
+          "price": 2090,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/medicube-collagen-night-wrapping-mask-75ml/",
+          "price": 2100,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/medicube-collagen-night-wrapping-mask-75ml",
+          "price": 2115,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/medicube-collagen-night-wrapping-mask",
+          "price": 2300,
+          "oldPrice": 2850,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/medicube-collagen-night-wrapping-mask",
+          "price": 2399,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "Beauty of Joseon",
+      "name": "Ground Rice and Honey Glow Mask",
+      "popular": true,
+      "variants": [
+        {
+          "label": "150ml",
+          "attributes": {
+            "capacity": "150ml"
+          },
+          "officialPrice": 2300
+        }
+      ],
+      "images": [
+        "https://skincareshop.com.bd/wp-content/uploads/2024/08/Beauty-of-Joseon-Ground-Rice-and-Honey-Glow-Mask-150ml-0.jpg",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Beauty_of_Joseon_Groun_Rice__Honey_Glow_Mask_150ml.jpg",
+        "https://glowellabd.com/wp-content/uploads/2024/09/Beauty-of-Joseon-Ground-Rice-and-Honey-Glow-Mask-sentisenti-600x600-1.webp"
+      ],
+      "offers": [
+        {
+          "variant": "150ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml/",
+          "price": 1880,
+          "oldPrice": 2300,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
+          "price": 1899,
+          "oldPrice": 2100,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml/",
+          "price": 1900,
+          "oldPrice": 2200,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
+          "price": 1900,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask",
+          "price": 2050,
+          "oldPrice": 2400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml/",
+          "price": 2050,
+          "oldPrice": 2300,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
+          "price": 2052,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
+          "price": 2069,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml/",
+          "price": 2080,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
+          "price": 2148,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/69554/beauty-of-joseon-ground-rice-and-honey-glow-mask",
+          "price": 2150,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask",
+          "price": 2499,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/beauty-of-joseon-ground-rice-and-honey-glow-mask-1580ml.html",
+          "price": 2650,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "St. Ives",
+      "name": "Fresh Skin Apricot Scrub",
+      "popular": true,
+      "variants": [
+        {
+          "label": "150ml",
+          "attributes": {
+            "capacity": "150ml"
+          },
+          "officialPrice": 850
+        }
+      ],
+      "images": [
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/St._Ives_Fresh_Skin_Apricot_Scru.webp",
+        "https://beprincessbd.com/wp-content/uploads/2025/08/16.jpg",
+        "https://skincareshop.com.bd/wp-content/uploads/2024/07/St.-Ives-Fresh-Skin-Apricot-Scrub-150ml.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "150ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/st-ives-fresh-skin-apricot-scrub-150ml",
+          "price": 725,
+          "oldPrice": 1000,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/58156/st-ives-fresh-skin-apricot-scrub-made-in-poland-150ml",
+          "price": 740,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/st-ives-fresh-skin-apricot-scrub-150ml/",
+          "price": 750,
+          "oldPrice": 820,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/st-ives-fresh-skin-apricot-scrub-150ml/",
+          "price": 780,
+          "oldPrice": 850,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/st-ives-fresh-skin-apricot-face-scrub-150ml.html",
+          "price": 790,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "COSRX",
+      "name": "Full Fit Honey Sugar Lip Scrub",
+      "popular": true,
+      "variants": [
+        {
+          "label": "20g",
+          "attributes": {
+            "capacity": "20g"
+          },
+          "officialPrice": 1850
+        }
+      ],
+      "images": [
+        "https://cdn.aromyeo.com/Products/cosrx-full-fit-honey-sugar-lip-scrub-20g-720.avif",
+        "https://koreanmartbd.com/storage/uploads/2026/02/17-cosrx-full-fit-honey-sugar-lip-scrub-20gm.jpg",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Cosrx_Full_Fit_Honey_Sugar_Lip_Scrub_20g.webp"
+      ],
+      "offers": [
+        {
+          "variant": "20g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/65357/cosrx-full-fit-honey-sugar-lip-scrub",
+          "price": 1215,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/cosrx-full-fit-honey-sugar-lip-scrub-20g",
+          "price": 1300,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/cosrx-full-fit-honey-sugar-lip-scrub-20gm",
+          "price": 1484,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/cosrx-full-fit-honey-sugar-lip-scrub-20g.html",
+          "price": 1499,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/cosrx-full-fit-honey-sugar-lip-scrub-20g",
+          "price": 1550,
+          "oldPrice": 1600,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/cosrx-full-fit-honey-sugar-lip-scrub-20g/",
+          "price": 1650,
+          "oldPrice": 1850,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/cosrx-full-fit-honey-sugar-lip-scrub-20g/",
+          "price": 1680,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/cosrx-full-fit-honey-sugar-lip-scrub-20gm/",
+          "price": 1780,
+          "oldPrice": 1900,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "Purito",
+      "name": "Dermide Cica Barrier Sleeping Pack",
+      "popular": true,
+      "variants": [
+        {
+          "label": "80ml",
+          "attributes": {
+            "capacity": "80ml"
+          },
+          "officialPrice": 1800
+        }
+      ],
+      "images": [
+        "https://koreanmartbd.com/storage/uploads/2026/02/purito-dermide-cica-barrier-sleeping-pack-80ml.jpg",
+        "https://cdn.aromyeo.com/Products/purito-dermide-cica-barrier-sleeping-pack-80ml-720.avif",
+        "https://skincareshop.com.bd/wp-content/uploads/2023/12/PURITO-Dermide-Cica-Barrier-Sleeping-Pack-80ml.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "80ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/purito-dermide-cica-barrier-sleeping-pack-80ml",
+          "price": 1463,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "80ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/purito-dermide-cica-barrier-sleeping-pack-80ml",
+          "price": 1500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "80ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/62403/purito-dermide-cica-barrier-sleeping-pack-with-squalane-panthenol-for-dry-sensitive-skin-types",
+          "price": 1544,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "80ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/purito-dermide-cica-barrier-sleeping-pack-80ml/",
+          "price": 1580,
+          "oldPrice": 1800,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "80ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/purito-dermide-cica-barrier-sleeping-pack-80ml",
+          "price": 1580,
+          "oldPrice": 1750,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "80ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/purito-dermide-cica-barrier-sleeping-pack-80ml/",
+          "price": 1600,
+          "oldPrice": 1800,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "80ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/purito-dermide-cica-barrier-sleeping-pack-80ml",
+          "price": 1665,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "80ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/purito-dermide-cica-barrier-sleeping-pack-80ml/",
+          "price": 1680,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "80ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/purito-dermide-cica-barrier-sleeping-pack",
+          "price": 1700,
+          "oldPrice": 2000,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "Anua",
+      "name": "Heartleaf Pore Clay Pack",
+      "popular": true,
+      "variants": [
+        {
+          "label": "100ml",
+          "attributes": {
+            "capacity": "100ml"
+          },
+          "officialPrice": 1950
+        }
+      ],
+      "images": [
+        "https://cdn.aromyeo.com/Products/anua-heartleaf-pore-clay-pack-100ml-720.avif",
+        "https://glowellabd.com/wp-content/uploads/2025/11/41G0dPtxlPL-removebg-preview-2.png",
+        "https://koreanmartbd.com/storage/uploads/2026/02/anua-heartleaf-pore-clay-pack-100ml.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "100ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/anua-heartleaf-pore-clay-pack-100ml/",
+          "price": 1480,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/anua-heartleaf-pore-clay-pack-100ml",
+          "price": 1500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/anua-heartleaf-pore-clay-pack-100ml/",
+          "price": 1550,
+          "oldPrice": 1700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/anua-heartleaf-pore-clay-pack-100ml",
+          "price": 1564,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/anua-heartleaf-pore-clay-pack-100ml",
+          "price": 1665,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/75756/anua-heartleaf-pore-clay-pack",
+          "price": 1669,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/anua-heartleaf-pore-clay-pack",
+          "price": 1680,
+          "oldPrice": 1950,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/anua-heartleaf-pore-clay-pack-100ml/",
+          "price": 1780,
+          "oldPrice": 2000,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "COSRX",
+      "name": "Aloe Soothing Sun Cream",
+      "popular": true,
+      "variants": [
+        {
+          "label": "50ml",
+          "attributes": {
+            "capacity": "50ml"
+          },
+          "officialPrice": 1620
+        }
+      ],
+      "images": [
+        "https://koreanmartbd.com/storage/uploads/2026/02/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml.jpg",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Cosrx-Aloe-Soothing-Sun-Cream-SPF50-PA11.jpg",
+        "https://beprincessbd.com/wp-content/uploads/2023/02/230.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "50ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml",
+          "price": 1049,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/cosrx-aloe-soothing-sun-cream-50ml",
+          "price": 1049,
+          "oldPrice": 1650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/cosrx-aloe-soothing-sun-cream-spf-50-pa-50ml/",
+          "price": 1050,
+          "oldPrice": 1250,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/51408/cosrx-aloe-soothing-sun-cream-spf-50-pa",
+          "price": 1095,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/cosrx-aloe-soothing-spf50-pa-sun-cream-50ml/",
+          "price": 1100,
+          "oldPrice": 1400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/cosrx-aloe-soothing-sun-cream-spf50-pa",
+          "price": 1150,
+          "oldPrice": 1640,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/cosrx-aloe-soothing-sun-cream-spf50-pa50ml/",
+          "price": 1180,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml",
+          "price": 1180,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/cosrx-aloe-soothing-sun-cream-spf50-pa-plus-plus-50ml",
+          "price": 1200,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/cosrx-aloe-soothing-sun-cream",
+          "price": 1220,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/COSRX-Aloe-Soothing-Sun-Cream-SPF50-PA-50ml-169aa08",
+          "price": 1220,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml/",
+          "price": 1250,
+          "oldPrice": 1650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/cosrx-aloe-soothing-sun-cream-spf50-50ml.html",
+          "price": 1250,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml/",
+          "price": 1280,
+          "oldPrice": 1600,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/cosrx-aloe-soothing-sun-cream-spf50-pa",
+          "price": 1650,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "Isntree",
+      "name": "Hyaluronic Acid Watery Sun Gel",
+      "popular": true,
+      "variants": [
+        {
+          "label": "50ml",
+          "attributes": {
+            "capacity": "50ml"
+          },
+          "officialPrice": 1725
+        },
+        {
+          "label": "10ml",
+          "attributes": {
+            "capacity": "10ml"
+          },
+          "officialPrice": 500
+        }
+      ],
+      "images": [
+        "https://cdn.aromyeo.com/Products/isntree-hyaluronic-acid-watery-sun-gel-50ml-720.avif",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Isntree_Hyaluronic_Acid_Watery_Sun_Gel-_50ml_aaaa.webp",
+        "https://glowellabd.com/wp-content/uploads/2024/06/thumb-7IOI7ZSE66Gc7KCd7Yq419_500x500.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "50ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/isntree-hyaluronic-acid-watery-sun-gel-50ml",
+          "price": 1350,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-50ml/",
+          "price": 1380,
+          "oldPrice": 1680,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-50ml/",
+          "price": 1390,
+          "oldPrice": 1700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/isntree-hyaluronic-acid-watery-sun-gel-50ml",
+          "price": 1399,
+          "oldPrice": 1750,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-50ml/",
+          "price": 1400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/isntree-hyaluronic-acid-watery-sun-gel-50ml",
+          "price": 1440,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/isntree-hyaluronic-acid-watery-sun-gel-spf-50-pavva-uvb-50ml/",
+          "price": 1450,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-50ml",
+          "price": 1529,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/Isntree-Hyaluronic-Acid-Watery-Sun-Gel-50ml-or-New-Packaging-243d9f3",
+          "price": 1540,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/isntree-hyaluronic-acid-watery-sun-gel-spf-50-pa-50ml",
+          "price": 1550,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/isntree-hyaluronic-acid-spf50-pa-watery-sun-gel-50ml/",
+          "price": 1550,
+          "oldPrice": 1750,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/51414/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-50ml",
+          "price": 1599,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/isntree-hyaluronic-acid-watery-sun-gel-spf50.html",
+          "price": 1690,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/isntree-hyaluronic-acid-spf50-pa-watery-sun-gel",
+          "price": 1799,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "10ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/isntree-hyaluronic-acid-watery-sun-gel-mini-10ml/",
+          "price": 280,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "10ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/isntree-hyaluronic-acid-watery-sun-gel-10ml/",
+          "price": 330,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "10ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-10-ml-mini/",
+          "price": 400,
+          "oldPrice": 500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "10ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-10ml",
+          "price": 504,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "SKIN1004",
+      "name": "Hyalu-Cica Water-Fit Sun Serum",
+      "popular": true,
+      "variants": [
+        {
+          "label": "50ml",
+          "attributes": {
+            "capacity": "50ml"
+          },
+          "officialPrice": 1775
+        },
+        {
+          "label": "100ml",
+          "attributes": {
+            "capacity": "100ml"
+          },
+          "officialPrice": 2600
+        },
+        {
+          "label": "15ml",
+          "attributes": {
+            "capacity": "15ml"
+          },
+          "officialPrice": 850
+        }
+      ],
+      "images": [
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/SKIN1004MadagascarHyaluCicaWaterFitSunSerum50mld9bb9c.jpg",
+        "https://koreanmartbd.com/storage/uploads/2026/06/skin1004-madagascar-2.webp",
+        "https://glowellabd.com/wp-content/uploads/2024/06/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "50ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/skin1004-madagascar-hyalu-cica-water-fit-sun-serum-50ml",
+          "price": 1249,
+          "oldPrice": 1900,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/skin1004-centella-hyalu-cica-water-fit-sun-serum-50ml/",
+          "price": 1349,
+          "oldPrice": 1850,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/skin1004-madagascar-hyalu-cica-water-fit-sun-serum-50ml/",
+          "price": 1370,
+          "oldPrice": 1680,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/skin1004-madagascar-hyalu-cica-water-fit-sun-serum-50ml",
+          "price": 1393,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-spf50-50ml.html",
+          "price": 1399,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/skin1004-madagascar-hyalu-cica-water-fit-sun-serum-50ml/",
+          "price": 1400,
+          "oldPrice": 1700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-50ml",
+          "price": 1450,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-50ml/",
+          "price": 1450,
+          "oldPrice": 1650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-50ml",
+          "price": 1450,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/51240/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-spf50-pa-50ml",
+          "price": 1500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/skin1004-hyalu-cica-water-fit-sun-serum-spf50-pa-50ml/",
+          "price": 1680,
+          "oldPrice": 1900,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-100-ml/",
+          "price": 2200,
+          "oldPrice": 2500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/skin1004-madagascar-hyalu-cica-water-fit-sun-serum-100ml",
+          "price": 2250,
+          "oldPrice": 2700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-spf50-pa-100ml",
+          "price": 2475,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-100ml",
+          "price": 2500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/84830/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-100ml",
+          "price": 2500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-100ml",
+          "price": 2749,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "15ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-15ml/",
+          "price": 650,
+          "oldPrice": 800,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "15ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/skin1004-madagascar-hyalu-cica-water-fit-sun-serum-15ml",
+          "price": 699,
+          "oldPrice": 900,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "15ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-15ml",
+          "price": 765,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "15ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-15ml",
+          "price": 800,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "15ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-15ml",
+          "price": 905,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "Beauty of Joseon",
+      "name": "Revive Eye Serum",
+      "popular": true,
+      "variants": [
+        {
+          "label": "30ml",
+          "attributes": {
+            "capacity": "30ml"
+          },
+          "officialPrice": 1700
+        },
+        {
+          "label": "10ml",
+          "attributes": {
+            "capacity": "10ml"
+          },
+          "officialPrice": 650
+        }
+      ],
+      "images": [
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Beauty_of_Joseon_Revive_Eye_Serum_Ginseng__Retinal_30ml_1.webp",
+        "https://glowellabd.com/wp-content/uploads/2024/06/82-Beauty-of-Joseon-Revive-Eye-Serum-Ginseng-Retinal-30ml.jpg",
+        "https://koreanmartbd.com/storage/uploads/2026/04/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "30ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/beauty-of-joseon-ginseng-retinal-revive-eye-serum-30ml",
+          "price": 1375,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml",
+          "price": 1399,
+          "oldPrice": 1500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml/",
+          "price": 1450,
+          "oldPrice": 1700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml-3/",
+          "price": 1500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml",
+          "price": 1529,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30-ml.html",
+          "price": 1550,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/Beauty-Of-Joseon-Revive-eye-serum--Ginseng--Retinal-30ml-Msp26",
+          "price": 1565,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml/",
+          "price": 1580,
+          "oldPrice": 1700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml",
+          "price": 1890,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/62394/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml",
+          "price": 2040,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "10ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-mini-10ml/",
+          "price": 480,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "10ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/beauty-of-joseon-revive-eye-serum-ginseng-retinal-10ml",
+          "price": 495,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "10ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/68187/beauty-of-joseon-revive-eye-serum-ginseng-retinal-10ml",
+          "price": 499,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "10ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-10ml-mini/",
+          "price": 500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "COSRX",
+      "name": "Advanced Snail Peptide Eye Cream",
+      "popular": true,
+      "variants": [
+        {
+          "label": "25ml",
+          "attributes": {
+            "capacity": "25ml"
+          },
+          "officialPrice": 2100
+        }
+      ],
+      "images": [
+        "https://cdn.aromyeo.com/Products/cosrx-advanced-snail-peptide-eye-cream-25ml-720.avif",
+        "https://koreanmartbd.com/storage/uploads/2026/02/cosrx-advanced-snail-peptide-eye-cream-25ml.jpg",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Cosrx-Advanced-Snail-Peptide-Eye-Cream--25ml.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "25ml",
+          "site": "Korean Care BD",
+          "url": "https://kcarebd.com/products/cosrx-advanced-snail-peptide-eye-cream-25ml/",
+          "price": 1540,
+          "oldPrice": 1680,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "25ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/cosrx-advanced-snail-peptide-eye-cream",
+          "price": 1650,
+          "oldPrice": 2300,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "25ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/cosrx-advanced-snail-peptide-eye-cream-25g",
+          "price": 1690,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "25ml",
+          "site": "Aromyeo",
+          "url": "https://aromyeo.com/products/cosrx-advanced-snail-peptide-eye-cream-25ml",
+          "price": 1700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "25ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/cosrx-advanced-snail-peptide-eye-cream-25ml",
+          "price": 1719,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "25ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/cosrx-advanced-snail-peptide-eye-cream-25ml.html",
+          "price": 1750,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "25ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/cosrx-advanced-snail-peptide-eye-cream-25ml",
+          "price": 1759,
+          "oldPrice": 1900,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "25ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/52513/cosrx-advanced-snail-peptide-eye-cream",
+          "price": 1760,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "25ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/cosrx-advanced-snail-peptide-eye-cream-25ml",
+          "price": 1850,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "25ml",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/COSRX-Advanced-Snail-Peptide-Eye-Cream-25ml-vSXnr",
+          "price": 1950,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "25ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/cosrx-advanced-snail-peptide-eye-cream-25ml/",
+          "price": 1980,
+          "oldPrice": 2400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "25ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/cosrx-advanced-snail-peptide-eye-cream",
+          "price": 2199,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "The Ordinary",
+      "name": "Caffeine Solution 5% + EGCG",
+      "popular": true,
+      "variants": [
+        {
+          "label": "30ml",
+          "attributes": {
+            "capacity": "30ml"
+          },
+          "officialPrice": 2125
+        }
+      ],
+      "images": [
+        "https://koreanmartbd.com/storage/uploads/2026/07/The Ordinary Caffeine Solution 5 EGCG - 30ml.webp",
+        "https://glowellabd.com/wp-content/uploads/2025/11/rdn-caffeine-solution-5pct-egcg-30ml-600x600-1.webp",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/The_Ordinary_Caffeine_Solution_5_and_EGCG_1.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "30ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/the-ordinary-caffeine-solution-5-egcg-30ml",
+          "price": 1625,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/the-ordinary-caffeine-solution-5-egcg-30ml/",
+          "price": 1650,
+          "oldPrice": 1850,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "BanglaShoppers",
+          "url": "https://www.banglashoppers.com/the-ordinary-caffeine-solution-5-plus-egcg-30ml.html",
+          "price": 1675,
+          "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Korean Mart BD",
+          "url": "https://koreanmartbd.com/product/the-ordinary-caffeine-solution-5-egcg-30ml",
+          "price": 1696,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/ordinary-caffeine-solution-5-egcg-30ml/",
+          "price": 1700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/the-ordinary-caffeine-solution-5-egcg",
+          "price": 1710,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/the-ordinary-caffeine-solution-5-and-egcg",
+          "price": 1740,
+          "oldPrice": 2800,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/50983/the-ordinary-caffeine-solution-5-egcg-30ml",
+          "price": 1750,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/the-ordinary-caffeine-solution-5-egcg-serum-30ml/",
+          "price": 1850,
+          "oldPrice": 2050,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/the-ordinary-caffeine-solution-5-egcg-30ml/",
+          "price": 1880,
+          "oldPrice": 2200,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/the-ordinary-caffeine-solution-5-egcg-eye-serum-30ml",
+          "price": 2148,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     }

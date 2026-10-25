@@ -3,7 +3,7 @@ import { decode, stripTags } from "../lib/html";
 import { getText } from "../lib/http";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import { appleGadgetsVariants, dazzleVariants, gadgetAndGearVariants, kryVariants, maczenVariants, startechVariants, sumashVariants, wooVariants } from "./parsers";
+import { appleGadgetsVariants, chardikeVariants, dazzleVariants, gadgetAndGearVariants, kryVariants, maczenVariants, perfectoVariants, startechVariants, sumashVariants, wooVariants } from "./parsers";
 import type { Condition, Listing, Store } from "./types";
 
 const site = (url: string) => new URL(url).host.replace(/^www\./, "");
@@ -122,6 +122,7 @@ const dazzleSitemap = sitemapStore({
 
 const dazzle: Store = {
   ...dazzleSitemap,
+  listsBy: "brand",
   async discover(products) {
     const urls = new Set((await dazzleSitemap.discover(products)).map((l) => l.url));
     const brands = new Set(products.flatMap((p) => p.brand.toLowerCase().split(/\s+/)).filter((w) => w.length > 2));
@@ -164,10 +165,38 @@ const pickaboo: Store = {
   condition: "official",
   sample: `${PICKABOO}/product-detail/apple-iphone-17`,
   promoUrl: null,
+  listsBy: "name",
   async discover(products) {
     const lists: Listing[] = [];
     for (const { name } of products) lists.push(...parsePickabooListings(await getText(`${PICKABOO}/search-result/${encodeURIComponent(name)}`)));
     return lists;
+  },
+};
+
+// Klassy Missy (Next.js): product sitemap নেই; ক্যাটাগরির তালিকা RSS এ, প্রতিটা ক্যাটাগরির প্রথম পাতায় ৩৬টা পণ্য
+// (বাকিগুলো পাতায় JS দিয়ে আসে, তাই সব পণ্য ধরা পড়ে না)
+const KLASSY = "https://klassy.com.bd";
+
+const klassy: Store = {
+  id: "klassy",
+  name: "Klassy Missy",
+  origin: KLASSY,
+  rendered: false,
+  condition: "official",
+  sample: `${KLASSY}/product/LANEIGE-Lip-Sleeping-Mask-EX-BERRY-20g-z10kh`,
+  promoUrl: null,
+  async discover() {
+    const rss = await getText(`${KLASSY}/manifest/categories.xml`);
+    const categories = new Set([...rss.matchAll(/<link>\s*(https:\/\/klassy\.com\.bd\/category\/[A-Za-z0-9-]+)\s*<\/link>/g)].map(([, url]) => url));
+    const urls = new Set<string>();
+    for (const category of categories) {
+      const html = await getText(category).catch((error) => {
+        if (error instanceof StoreBlocked) throw error;
+        return "";
+      });
+      for (const [, slug] of html.matchAll(/\/products?\/([A-Za-z0-9-]+)/g)) urls.add(`${KLASSY}/product/${slug}`);
+    }
+    return [...urls].map(slugListing);
   },
 };
 
@@ -430,6 +459,55 @@ export const stores: Store[] = [
     condition: "official",
     variants: wooVariants,
   }),
+  sitemapStore({
+    id: "ohsogo",
+    name: "OHSOGO",
+    origin: "https://www.ohsogo.com",
+    sample: "https://www.ohsogo.com/products/luminous-skin-face-serum-30ml-alpha-arbutin",
+    sitemap: "https://www.ohsogo.com/sitemap.xml",
+    path: "/products/",
+    condition: "official",
+  }),
+  sitemapStore({
+    id: "chardike",
+    name: "Chardike",
+    origin: "https://chardike.com",
+    sample: "https://chardike.com/product/laxzin-alpha-arbutin-02-with-hyaluronic-acid-serum-30ml",
+    sitemap: "https://chardike.com/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+    variants: chardikeVariants,
+  }),
+  sitemapStore({
+    id: "perfectobd",
+    name: "Perfecto",
+    origin: "https://perfectobd.com",
+    sample: "https://perfectobd.com/product/3w-clinic-fresh-collagen-sheet-mask",
+    sitemap: "https://perfectobd.com/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+    variants: perfectoVariants,
+  }),
+  sitemapStore({
+    id: "beprincess",
+    name: "Beprincess BD",
+    origin: "https://beprincessbd.com",
+    sample: "https://beprincessbd.com/product/skino-ultimate-glow-brightening-toner-100ml/",
+    sitemap: "https://beprincessbd.com/sitemap_index.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "koreanmartbd",
+    name: "Korean Mart BD",
+    origin: "https://koreanmartbd.com",
+    sample: "https://koreanmartbd.com/product/aromatica-tea-tree-pore-purifying-gel-cream-5-niacinamide-01-pha-100ml",
+    sitemap: "https://koreanmartbd.com/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+  }),
+  klassy,
   trekntread,
   sitemapStore({
     id: "selltech",

@@ -62,6 +62,41 @@
 - Rokomari বাদ: robots.txt search engine ছাড়া অন্য crawler-কে admin@rokomari.com-এ অনুমতি চাইতে বলে; অনুমতি ছাড়া যোগ করা হয়নি।
 - Beauty Hub/Shajrup বাদ: নির্ভরযোগ্য JSON-LD/দামের markup নেই বা JS-rendered।
 
+### স্কিনকেয়ার, লিপ-মাস্ক-সানস্ক্রিন-আই কেয়ার (২৫ অক্টোবর ২০২৬)
+
+১৯টা নতুন পণ্য, ২৫টা ভার্সন (সাইজ), ১৬টা দোকান থেকে ২২৫টা দাম। প্রতিটা ভার্সন অন্তত ৪টা দোকানে, বেশিরভাগ ৮-১৫টায়। বাছাই হয়েছে সব দোকানের পুরো তালিকা মিলিয়ে, যাতে শুধু বাইরের ব্র্যান্ডের চলতি পণ্য আসে, যা একাধিক দোকান বেচে। প্রতিটা পাতা worker দিয়ে পড়া (নাম, সাইজ, দাম, কাটা দাম, স্টক, ছবি), `worker:check`-এ সব ঠিক।
+
+- লিপ টিন্ট: Etude Dear Darling Water Tint 9g
+- লিপ অয়েল: Beauty Glazed Glazed Glow Lip Oil 4g, Swiss Beauty Dip Tint Lip Oil 3ml
+- লিপ বাম/লিপ মাস্ক: Laneige Lip Sleeping Mask Berry (20g, 3g), WishCare Ceramide Lip Balm SPF 50 5g, COSRX Propolis Lip Sleeping Mask 20g
+- ফেস মাস্ক: Laneige Water Sleeping Mask (70ml, 15ml), Medicube Collagen Night Wrapping Mask 75ml, Beauty of Joseon Ground Rice and Honey Glow Mask 150ml
+- স্ক্রাব: St. Ives Fresh Skin Apricot Scrub 150ml, COSRX Full Fit Honey Sugar Lip Scrub 20g
+- প্যাক: Purito Dermide Cica Barrier Sleeping Pack 80ml, Anua Heartleaf Pore Clay Pack 100ml
+- সানস্ক্রিন: COSRX Aloe Soothing Sun Cream 50ml, Isntree Hyaluronic Acid Watery Sun Gel (50ml, 10ml), SKIN1004 Hyalu-Cica Water-Fit Sun Serum (50ml, 100ml, 15ml)
+- আন্ডার আই: Beauty of Joseon Revive Eye Serum (30ml, 10ml), COSRX Advanced Snail Peptide Eye Cream 25ml, The Ordinary Caffeine Solution 5% + EGCG 30ml
+
+সিদ্ধান্ত:
+
+- এক পণ্যের কয়েকটা সাইজ এক পণ্যের ভার্সন (কঠোর নিয়ম ৯), তাই নামে সাইজ নেই। আগের স্কিনকেয়ার ব্যাচে সাইজ নামের ভেতরে ছিল, সেগুলো বদলানো হয়নি।
+- টিন্ট আর লিপ অয়েলের শেড রং, ভার্সন নয়: প্রতি দোকানে স্টকে থাকা সবচেয়ে কম দামের শেডের পাতা নেওয়া।
+- অফিসিয়াল দাম = দোকানগুলোর কাটা দামের (MRP) মাঝারি। ৪০%-আড়াই গুণের বাইরের দাম বাদ: সেগুলো ছিল mini/sachet বা সাইজ-না-লেখা পাতা (যেমন Revive Eye Serum 30ml এর ঘরে ৳৪৮০-৬০০ এর mini)।
+- Neutrogena Blackhead scrub বাদ: একই নামে Deep Clean 100g, 2% Salicylic 150ml/124ml আর Visibly Clear তিনটা আলাদা পণ্য মিশে আছে (নিয়ম ২)। Mars Love Track Lip Tint বাদ: মাত্র ৪টা দোকান। St. Ives 170g/283g আর COSRX Snail Peptide Eye Cream 5ml ২টার কম দোকানে, বাদ।
+
+নতুন দোকান (worker এ যোগ, robots.txt আর Terms দেখা):
+
+| দোকান | সাইট | listing | দাম |
+|---|---|---|---|
+| OHSOGO | ohsogo.com | Shopify product sitemap | JSON-LD |
+| Chardike | chardike.com | product sitemap | `__NEXT_DATA__` এর initialCoreData (`chardikeVariants`) |
+| Perfecto | perfectobd.com | product sitemap | RSC ডেটায় slug ধরে পণ্যের object (`perfectoVariants`) |
+| Beprincess BD | beprincessbd.com | WooCommerce sitemap | `wooVariants` (আগে শুধু হাতের লিংক ছিল, এখন worker এ) |
+| Korean Mart BD | koreanmartbd.com | product sitemap | JSON-LD |
+| Klassy Missy | klassy.com.bd | product sitemap নেই: `manifest/categories.xml` এর ১৬৪টা ক্যাটাগরির প্রথম পাতা (প্রতিটায় ৩৬টা পণ্য, বাকিটা পাতায় JS দিয়ে আসে, তাই সব পণ্য ধরা পড়ে না; একবার আনতে ~৩ মিনিট) | JSON-LD |
+
+- Klassy-র Terms এ "লিখিত অনুমতি ছাড়া সাইটের কোনো অংশ reproduce/copy/exploit নয়" ধারা আছে, Shopify দোকানগুলোর মতোই সাধারণ লেখা; দাম সংগ্রহ আলাদা করে নিষেধ করা নেই। মালিকের সিদ্ধান্তে রাখা।
+- Chardike আর Korean Mart BD এর Terms পাতা খালি বা পাওয়া যায়নি; robots.txt খোলা।
+- বাদ: The Mall BD (themallbd.com, দ্বিতীয় অনুরোধেই Cloudflare bot challenge), Bio-Xin (bioxin.com, শুধু নিজের পরিবেশনার ব্র্যান্ড বেচে, যা আর কোনো দোকানে নেই)।
+
 ### Windows ল্যাপটপ (২৪ অক্টোবর ২০২৬)
 
 ৬টা পণ্য, ১১টা ভার্সন, ৪টা দোকান থেকে ১৮টা দাম; গেমিং (Lenovo LOQ 15AHP9 — RTX 3050/4050) আর অফিস (IdeaPad Slim 3 15ABR8/14IRH10, HP 15-fd0180nia, Dell Pro 15 Essential, HP 250R G10) দুই ধরনেরই। প্রতিটা পাতায় গিয়ে CPU/RAM/SSD/দাম মিলিয়ে দেখা, `worker:check`-এ ১৮টাই ঠিক ধরা পড়ে (০ মেলেনি, ০ ব্যর্থ)।
