@@ -109,7 +109,7 @@ export const en: Messages = {
   },
   search: {
     label: "Search products",
-    placeholder: "What are you looking for? e.g. iPhone 17",
+    hintLead: "Looking for, e.g.",
     submit: "Search",
     all: "All",
     filters: "Filters",

@@ -193,7 +193,7 @@ export function AppShell({
               {siteName}
             </Link>
             <div className="hidden w-[clamp(240px,30vw,500px)] shrink-0 md:block">
-              {showSearch && <SearchBox />}
+              {showSearch && <SearchBox examples={settings.quickSearches} />}
             </div>
             <span className="flex-1" />
             <nav
@@ -236,7 +236,7 @@ export function AppShell({
           </div>
           {showSearch && (
             <div className="px-4 pb-3 md:hidden">
-              <SearchBox />
+              <SearchBox examples={settings.quickSearches} />
             </div>
           )}
           <div className="hidden md:block xl:hidden">

@@ -4,6 +4,7 @@ import { Clock, Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useId, useRef, useState, type KeyboardEvent } from "react";
 import { ProductIcon } from "@/components/product/ProductIcon";
+import { SearchHint } from "@/components/search/SearchHint";
 import { useI18n } from "@/hooks/useI18n";
 import { readRecent, rememberSearch } from "@/lib/recent-searches";
 import { listSummaries } from "@/services/catalog";
@@ -16,10 +17,11 @@ type Option = { kind: "product"; summary: ProductSummary } | { kind: "recent"; t
 interface SearchBoxProps {
   defaultValue?: string;
   variant?: "hero" | "bar";
+  examples?: string[];
   onSearch?: (query: string) => void;
 }
 
-export function SearchBox({ defaultValue = "", variant = "bar", onSearch }: SearchBoxProps) {
+export function SearchBox({ defaultValue = "", variant = "bar", examples, onSearch }: SearchBoxProps) {
   const router = useRouter();
   const { t, lang, prefix } = useI18n();
   const listId = useId();
@@ -94,28 +96,30 @@ export function SearchBox({ defaultValue = "", variant = "bar", onSearch }: Sear
         className={`flex items-center gap-2 overflow-hidden rounded-lg border-2 border-brand bg-surface pl-3 ${hero ? "h-14" : "h-11"}`}
       >
         <Search size={18} className="shrink-0 text-dim" aria-hidden="true" />
-        <input
-          ref={input}
-          type="search"
-          enterKeyHint="search"
-          role="combobox"
-          aria-label={t.search.label}
-          aria-expanded={showList}
-          aria-controls={listId}
-          aria-autocomplete="list"
-          aria-activedescendant={showList && active >= 0 ? `${listId}-${active}` : undefined}
-          value={text}
-          onChange={(e) => {
-            setText(e.target.value);
-            setActive(-1);
-            setOpen(true);
-          }}
-          onFocus={warmUp}
-          onBlur={() => setTimeout(() => setOpen(false), 120)}
-          onKeyDown={onKeyDown}
-          placeholder={t.search.placeholder}
-          className="h-full min-w-0 flex-1 bg-transparent text-base text-ink outline-none placeholder:text-dim"
-        />
+        <div className="relative h-full min-w-0 flex-1">
+          {!text && <SearchHint examples={examples} />}
+          <input
+            ref={input}
+            type="search"
+            enterKeyHint="search"
+            role="combobox"
+            aria-label={t.search.label}
+            aria-expanded={showList}
+            aria-controls={listId}
+            aria-autocomplete="list"
+            aria-activedescendant={showList && active >= 0 ? `${listId}-${active}` : undefined}
+            value={text}
+            onChange={(e) => {
+              setText(e.target.value);
+              setActive(-1);
+              setOpen(true);
+            }}
+            onFocus={warmUp}
+            onBlur={() => setTimeout(() => setOpen(false), 120)}
+            onKeyDown={onKeyDown}
+            className="h-full w-full bg-transparent text-base text-ink outline-none"
+          />
+        </div>
         <button type="submit" className={`h-full bg-brand font-bold text-brand-ink hover:bg-brand-hover ${hero ? "px-6" : "px-4 text-sm"}`}>
           {t.search.submit}
         </button>

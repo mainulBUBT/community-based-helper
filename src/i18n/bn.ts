@@ -105,7 +105,7 @@ export const bn = {
   },
   search: {
     label: "পণ্য খুঁজুন",
-    placeholder: "কী খুঁজছেন? যেমন iPhone 17",
+    hintLead: "কী খুঁজছেন? যেমন",
     submit: "খুঁজুন",
     all: "সব",
     filters: "ফিল্টার",
