@@ -4053,7 +4053,7 @@ export const catalogProducts: Product[] = [
    }
   ],
   "images": [
-   "https://pcbstore.com.bd/storage/products/xiaomi-pad-7-android-tabletmain.webp"
+   "https://pcbstore.com.bd/storage/products/xiaomi-pad-7-blue.webp"
   ],
   "colors": [],
   "regions": [],
@@ -4077,7 +4077,7 @@ export const catalogProducts: Product[] = [
    }
   ],
   "images": [
-   "https://pcbstore.com.bd/storage/products/lenovo-idea-tab-tb336zu-5g-8256gb-11-inch-display-tabletmain.webp"
+   "https://pcbstore.com.bd/storage/products/lenovo-idea-tab-tb336zu-5g-8-256gb-11-inch-display-tablet.webp"
   ],
   "colors": [],
   "regions": [],
@@ -4101,7 +4101,7 @@ export const catalogProducts: Product[] = [
    }
   ],
   "images": [
-   "https://pcbstore.com.bd/storage/products/huawei-matepad-115-inch-wifi-tabletmain.webp"
+   "https://pcbstore.com.bd/storage/products/huawei-matepad-115-inch-wifi-tablet.webp"
   ],
   "colors": [],
   "regions": [],
@@ -4958,7 +4958,7 @@ export const catalogProducts: Product[] = [
    }
   ],
   "images": [
-   "https://motionview.s3.amazonaws.com/images/products/profile/172000000000.OnePlus-Bullets-Wireless-Z2.webp"
+   "https://diamu.com.bd/wp-content/uploads/2023/10/OnePlus-Bullets-Wireless-Z2-ANC.jpg"
   ],
   "colors": [
    "Black",
@@ -23299,7 +23299,7 @@ export const catalogProducts: Product[] = [
    }
   ],
   "images": [
-   "https://beprincessbd.com/wp-content/uploads/2024/10/136.jpg",
+   "https://d1puc9h291tp0h.cloudfront.net/uploads/all/X69DhPrrEa3YiRY7rQrnPI1UuKmzQIcT46J5YBzu.webp",
    "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/ETUDEHOUSEDEARDARLINGWATERTINT05GRAPEAde9.5g8cda1d.webp",
    "https://glowellabd.com/wp-content/uploads/2025/12/0001336_etude-house-dear-darling-water-tint-02_510.jpeg"
   ],
@@ -23327,7 +23327,7 @@ export const catalogProducts: Product[] = [
    }
   ],
   "images": [
-   "https://beprincessbd.com/wp-content/uploads/2024/10/146.jpg",
+   "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/file_6a6ee5e6e5540.jpg",
    "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/BeautyGlazedGlowLipOil-101Meet4gf40f54.webp"
   ],
   "colors": [],
@@ -23355,7 +23355,7 @@ export const catalogProducts: Product[] = [
   ],
   "images": [
    "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/SwissBeautyDipTintLipOil3ml-03Peachc8448a.webp",
-   "https://beprincessbd.com/wp-content/uploads/2024/11/62-1.jpg"
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/SwissBeautyDipTintLipOil3ml-03Peachc8448a.webp"
   ],
   "colors": [],
   "regions": [],
@@ -23391,7 +23391,7 @@ export const catalogProducts: Product[] = [
   "images": [
    "https://glowellabd.com/wp-content/uploads/2024/06/KM-0331-Laneige-lip-sleeping-mask-berry-20g.jpg",
    "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Laneige_Lip_Sleeping_Mask_Berry-_20g.jpg",
-   "https://koreanmartbd.com/storage/uploads/2026/07/Laneige lip sleeping mask ex (berry) - 20g....png"
+   "https://www.ohsogo.com/cdn/shop/files/SELLEPINGMASK3.png?v=1760768157"
   ],
   "colors": [],
   "regions": [],
@@ -23418,7 +23418,7 @@ export const catalogProducts: Product[] = [
   ],
   "images": [
    "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/WishcareCeramideLipBalmwithSPF50PANatural5gdcd020.webp",
-   "https://beprincessbd.com/wp-content/uploads/2024/11/WishCare-Ceramide-Lip-Balm-Natural-With-SPF-50-PA-5gm.jpg",
+   "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(2055).jpg",
    "https://cdn.aromyeo.com/Products/wishcare-ceramide-lip-balm-with-spf-50-pa-natural-720.avif"
   ],
   "colors": [],
@@ -23566,7 +23566,7 @@ export const catalogProducts: Product[] = [
   ],
   "images": [
    "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/St._Ives_Fresh_Skin_Apricot_Scru.webp",
-   "https://beprincessbd.com/wp-content/uploads/2025/08/16.jpg",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/St._Ives_Fresh_Skin_Apricot_Scru.webp",
    "https://skincareshop.com.bd/wp-content/uploads/2024/07/St.-Ives-Fresh-Skin-Apricot-Scrub-150ml.jpg"
   ],
   "colors": [],
@@ -23679,7 +23679,7 @@ export const catalogProducts: Product[] = [
   "images": [
    "https://koreanmartbd.com/storage/uploads/2026/02/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml.jpg",
    "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Cosrx-Aloe-Soothing-Sun-Cream-SPF50-PA11.jpg",
-   "https://beprincessbd.com/wp-content/uploads/2023/02/230.jpg"
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Cosrx-Aloe-Soothing-Sun-Cream-SPF50-PA11.jpg"
   ],
   "colors": [],
   "regions": [],
@@ -23849,7 +23849,7 @@ export const catalogProducts: Product[] = [
    }
   ],
   "images": [
-   "https://koreanmartbd.com/storage/uploads/2026/07/The Ordinary Caffeine Solution 5 EGCG - 30ml.webp",
+   "https://www.banglashoppers.com/media/catalog/product/cache/69be2fa586bd11ec411a3acb2603a9bd/t/h/the_ordinary_caffeine_solution_5_plus_egcg_30ml.jpg",
    "https://glowellabd.com/wp-content/uploads/2025/11/rdn-caffeine-solution-5pct-egcg-30ml-600x600-1.webp",
    "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/The_Ordinary_Caffeine_Solution_5_and_EGCG_1.jpg"
   ],
