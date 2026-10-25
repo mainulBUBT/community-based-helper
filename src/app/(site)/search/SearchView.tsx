@@ -41,10 +41,10 @@ const COMPARE: Record<Sort, (a: ProductSummary, b: ProductSummary, unofficial: b
 const axisValues = (summaries: ProductSummary[], axis: Axis) =>
   sortAxisValues(axis, [...new Set(summaries.flatMap((s) => s.product.variants.map((v) => v.attributes[axis]).filter((v): v is string => Boolean(v))))]);
 
-function readFilters(params: URLSearchParams, category?: string): Filters {
+function readFilters(params: URLSearchParams, category?: string, brand?: string): Filters {
   return {
     category: category ?? params.get("category"),
-    brands: list(params.get("brand")),
+    brands: brand ? [brand] : list(params.get("brand")),
     min: num(params.get("min")),
     max: num(params.get("max")),
     inStock: params.get("stock") === "1",
@@ -77,7 +77,7 @@ function GridSkeleton() {
 }
 
 // ক্যাটাগরি পেজে সার্ভার ওই ভাগের পণ্য দিয়ে দেয়, তখন পুরো ক্যাটালগ আর নামাতে হয় না
-export function SearchView({ category, initial }: { category?: string; initial?: ProductSummary[] }) {
+export function SearchView({ category, brand, initial }: { category?: string; brand?: string; initial?: ProductSummary[] }) {
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
@@ -87,7 +87,7 @@ export function SearchView({ category, initial }: { category?: string; initial?:
   const [drawer, setDrawer] = useState(false);
 
   const query = params.get("q") ?? "";
-  const filters = readFilters(params, category);
+  const filters = readFilters(params, category, brand);
 
   // প্রতিটা অক্ষরে নয়, খোঁজা শেষ হলে একবার: অ্যাডমিন দেখে কী খোঁজা হচ্ছে
   useEffect(() => {
@@ -132,7 +132,7 @@ export function SearchView({ category, initial }: { category?: string; initial?:
   };
 
   const active: { label: string; patch: Record<string, string | null> }[] = [
-    ...filters.brands.map((b) => ({ label: b, patch: { brand: filters.brands.filter((x) => x !== b).join(",") || null } })),
+    ...(brand ? [] : filters.brands.map((b) => ({ label: b, patch: { brand: filters.brands.filter((x) => x !== b).join(",") || null } }))),
     ...(filters.min !== null || filters.max !== null
       ? [{ label: `${formatTaka(filters.min ?? facets.priceFloor, lang)} – ${formatTaka(filters.max ?? facets.priceCeil, lang)}`, patch: { min: null, max: null } }]
       : []),
@@ -143,7 +143,7 @@ export function SearchView({ category, initial }: { category?: string; initial?:
     ),
   ];
   const clearAll = { brand: null, min: null, max: null, stock: null, unofficial: null, ...Object.fromEntries(AXES.map((axis) => [axis, null])) };
-  const categoryTitle = filters.category ? name(filters.category) : t.search.allProducts;
+  const categoryTitle = brand ?? (filters.category ? name(filters.category) : t.search.allProducts);
   const title = query ? t.search.resultsFor(query) : categoryTitle;
 
   return (
@@ -160,7 +160,7 @@ export function SearchView({ category, initial }: { category?: string; initial?:
         <SearchBox key={query} defaultValue={query} onSearch={(q) => update({ q: q || null })} />
       </div>
 
-      {facets.brands.length > 0 && (
+      {!brand && facets.brands.length > 0 && (
         <div className="hidden flex-wrap gap-2 md:flex">
           {[null, ...facets.brands].map((b) => {
             const selected = b ? filters.brands.length === 1 && filters.brands[0] === b : !filters.brands.length;

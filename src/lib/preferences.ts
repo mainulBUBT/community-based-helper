@@ -7,7 +7,7 @@ const LANG_KEY = "lang";
 const ADMIN_LANG_KEY = "adminLang";
 const THEME_KEY = "theme";
 
-export const preferencesInitScript = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="dark")document.documentElement.dataset.theme=t;var p=location.pathname;if(/^\\/en(\\/|$)/.test(p))document.documentElement.lang="en";else if(localStorage.getItem("${LANG_KEY}")==="en"&&/^\\/($|about|search|sellers|saved|product\\/|seller\\/|category\\/)/.test(p))location.replace("/en"+(p==="/"?"/":p)+location.search+location.hash)}catch(e){}`;
+export const preferencesInitScript = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="dark")document.documentElement.dataset.theme=t;var p=location.pathname;if(/^\\/en(\\/|$)/.test(p))document.documentElement.lang="en";else if(localStorage.getItem("${LANG_KEY}")==="en"&&/^\\/($|about|search|sellers|saved|product\\/|seller\\/|category\\/|brand\\/)/.test(p))location.replace("/en"+(p==="/"?"/":p)+location.search+location.hash)}catch(e){}`;
 
 function read<T extends string>(key: string, allowed: readonly T[], fallback: T): T {
   if (typeof window === "undefined") return fallback;

@@ -19,7 +19,7 @@ import type { RegionNote } from "@/types/admin";
 import { AXES, type Axis, type Condition, type OfferView, type ProductDetail, type SpecGroup, type Variant } from "@/types/catalog";
 import { formatTaka, telLink } from "@/utils/format";
 import { primaryRegion } from "@/utils/region";
-import { categoryPath, hostOf } from "@/utils/url";
+import { brandPath, categoryPath, hostOf } from "@/utils/url";
 import { keySpecs, specHighlights } from "@/utils/specs";
 import { sortAxisValues } from "@/utils/variants";
 
@@ -231,6 +231,8 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   const variantName = variant ? AXES.filter((axis) => variant.attributes[axis]).map((axis) => `${t.axis[axis]} ${variant.attributes[axis]}`).join(", ") || variant.label : "";
   const needsNeir = product.category === "mobile" || /cellular|lte/i.test(variant?.attributes.connectivity ?? "");
   const lastChecked = shown.reduce((a, o) => (o.checkedAt > a ? o.checkedAt : a), best?.checkedAt ?? "");
+  // গত ৩০ দিনে এই ভার্সনের সবচেয়ে কম দাম (বেক করা ইতিহাস ৩১ দিনের); এখনকার দামও ধরা
+  const monthLow = Math.min(...history.filter((p) => shown.some((o) => o.id === p.offerId)).map((p) => p.price), ...shown.map((o) => o.price));
 
   return (
     <div className="flex flex-col gap-4 pb-[calc(5rem+env(safe-area-inset-bottom))] md:pb-0">
@@ -243,7 +245,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
           {categoryLabel}
         </Link>
         <ChevronRight size={13} aria-hidden="true" />
-        <Link href={`${categoryPath(prefix, product.category)}?brand=${encodeURIComponent(product.brand)}`} className="hover:text-brand">
+        <Link href={brandPath(prefix, product.brand)} className="hover:text-brand">
           {product.brand}
         </Link>
         <ChevronRight size={13} aria-hidden="true" />
@@ -256,7 +258,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
         <div className="flex flex-col gap-4">
           <div className="flex items-start justify-between gap-3">
             <div className="flex min-w-0 flex-col gap-1">
-              <Link href={`${prefix}/search/?brand=${encodeURIComponent(product.brand)}`} className="text-xs font-semibold tracking-wider text-brand uppercase hover:underline">
+              <Link href={brandPath(prefix, product.brand)} className="text-xs font-semibold tracking-wider text-brand uppercase hover:underline">
                 {product.brand}
               </Link>
               <h1 className="text-[20px] leading-tight font-semibold tracking-tight text-ink md:text-[24px]">{product.name}</h1>
@@ -391,6 +393,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
                 <Clock size={14} aria-hidden="true" />
                 {t.product.updated(ago(lastChecked))}
               </span>
+              {Number.isFinite(monthLow) && <span className="text-[13px] text-dim">{t.product.monthLow(formatTaka(monthLow, lang))}</span>}
             </div>
           )}
         </div>
@@ -416,7 +419,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
         <SpecsPanel specs={specs} source={product.specsSource} />
         <Panel title={t.product.history} id="history">
           <div className="px-5 py-4">
-            <PriceChart history={history.filter((p) => shown.some((o) => o.id === p.offerId))} />
+            <PriceChart history={history.filter((p) => shown.some((o) => o.id === p.offerId))} offers={shown} />
           </div>
         </Panel>
       </div>

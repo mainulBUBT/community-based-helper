@@ -19,3 +19,7 @@ export const hostOf = (url: string) => {
 };
 
 export const categoryPath = (prefix: string, slug: string) => `${prefix}/category/${slug}/`;
+
+export const brandSlug = (brand: string) => brand.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+export const brandPath = (prefix: string, brand: string) => `${prefix}/brand/${brandSlug(brand)}/`;

@@ -54,20 +54,43 @@ export function matchesQuery(product: Product, query: string) {
   return words.every((word) => haystack.includes(word) || compact.includes(word));
 }
 
-export function dailyLowest(history: PricePoint[], days = 30, now = Date.now()) {
+export interface DayRange {
+  day: number;
+  low: number;
+  high: number;
+  lowOfferId: string;
+  shops: number;
+}
+
+// প্রতিদিন প্রতিটা দোকানের তখনকার দাম (শেষ বদলের দাম চলতে থাকে) থেকে সেদিনের সবচেয়ে কম আর বেশি।
+// ইতিহাসে শুধু দাম বদলের দিন থাকে; কোনো দোকানের সময়সীমার ভেতরে বদল না থাকলে তার এখনকার দামই পুরো সময় ধরা হয়
+export function dailyRange(history: PricePoint[], offers: { id: string; price: number }[], days = 30, now = Date.now()): DayRange[] {
   const start = now - days * 86400000;
-  const perDay = new Map<number, number>();
+  const dayOf = (iso: string) => Math.floor((new Date(iso).getTime() - start) / 86400000);
+  const changes = new Map<string, { day: number; price: number }[]>();
   for (const point of history) {
-    const time = new Date(point.seenAt).getTime();
-    if (time < start) continue;
-    const day = Math.floor((time - start) / 86400000);
-    perDay.set(day, Math.min(perDay.get(day) ?? Infinity, point.price));
+    const list = changes.get(point.offerId) ?? [];
+    list.push({ day: Math.max(0, dayOf(point.seenAt)), price: point.price });
+    changes.set(point.offerId, list);
   }
-  const points: { day: number; price: number }[] = [];
-  let last: number | undefined;
+  const series = offers.map((offer) => {
+    const list = (changes.get(offer.id) ?? []).sort((a, b) => a.day - b.day);
+    return { id: offer.id, list: list.length ? list : [{ day: 0, price: offer.price }] };
+  });
+  const result: DayRange[] = [];
   for (let day = 0; day <= days; day++) {
-    last = perDay.get(day) ?? last;
-    if (last !== undefined) points.push({ day, price: last });
+    let low = Infinity;
+    let high = -Infinity;
+    let lowOfferId = "";
+    let shops = 0;
+    for (const { id, list } of series) {
+      const current = list.filter((c) => c.day <= day).at(-1);
+      if (!current) continue;
+      shops++;
+      if (current.price < low) [low, lowOfferId] = [current.price, id];
+      high = Math.max(high, current.price);
+    }
+    if (shops) result.push({ day, low, high, lowOfferId, shops });
   }
-  return points;
+  return result;
 }

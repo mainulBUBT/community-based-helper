@@ -3,13 +3,14 @@ import type { OfferView, Product } from "@/types/catalog";
 
 const absolute = (path: string) => new URL(path, SITE_URL).href;
 
-export function productData(product: Product, offers: OfferView[], path: string, description: string) {
+export function productData(product: Product, offers: OfferView[], path: string, description: string, alternateName: string | null = null) {
   const prices = offers.map((o) => o.price);
   return {
     "@context": "https://schema.org",
     "@type": "Product",
     name: `${product.brand} ${product.name}`,
     description: description.slice(0, 5000),
+    ...(alternateName && { alternateName }),
     brand: { "@type": "Brand", name: product.brand },
     url: absolute(path),
     ...(product.images?.length && { image: product.images.slice(0, 4).map(absolute) }),

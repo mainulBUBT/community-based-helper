@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/config/site";
-import { loadCatalog } from "@/services/catalog.server";
+import { BRAND_MIN_PRODUCTS, listBrands, loadCatalog } from "@/services/catalog.server";
+import { brandSlug } from "@/utils/url";
 import { categoryFamily } from "@/utils/categories";
 import { toEnPath } from "@/utils/locale-path";
 
@@ -12,7 +13,7 @@ const latest = (dates: string[]) => (dates.length ? dates.reduce((a, b) => (b > 
 
 // প্রতিটা পেজ দুই ভাষায় আলাদা সারি, দুটোতেই একে অপরের hreflang; lastmod হলো ওই পেজের দাম শেষ কবে যাচাই হয়েছে
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const { products, sellers, categories, offers } = await loadCatalog();
+  const [{ products, sellers, categories, offers }, brands] = await Promise.all([loadCatalog(), listBrands()]);
   const variantProduct = new Map(products.flatMap((p) => p.variants.map((v) => [v.id, p] as const)));
   const checked = new Map<string, string[]>();
   const mark = (key: string, date: string) => checked.set(key, [...(checked.get(key) ?? []), date]);
@@ -20,6 +21,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const product = variantProduct.get(offer.variantId);
     if (product) mark(`p:${product.slug}`, offer.checkedAt);
     if (product) mark(`c:${product.category}`, offer.checkedAt);
+    if (product) mark(`b:${brandSlug(product.brand)}`, offer.checkedAt);
     mark(`s:${offer.sellerId}`, offer.checkedAt);
   }
   const everything = latest(offers.map((o) => o.checkedAt));
@@ -33,6 +35,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       0.8,
       latest(categoryFamily(categories, c.slug).flatMap((slug) => checked.get(`c:${slug}`) ?? [])),
     ]),
+    ...brands
+      .filter((b) => b.count >= BRAND_MIN_PRODUCTS)
+      .map((b): [string, Frequency, number, string | undefined] => [`/brand/${b.slug}/`, "daily", 0.7, latest(checked.get(`b:${b.slug}`) ?? [])]),
     ...products.map((p): [string, Frequency, number, string | undefined] => [`/product/${p.slug}/`, "daily", 0.9, latest(checked.get(`p:${p.slug}`) ?? [])]),
     ...sellers.map((s): [string, Frequency, number, string | undefined] => [`/seller/${s.id}/`, "weekly", 0.5, latest(checked.get(`s:${s.id}`) ?? [])]),
   ];

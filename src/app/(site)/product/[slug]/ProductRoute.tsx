@@ -5,8 +5,9 @@ import { messages, pageMeta } from "@/lib/page-meta";
 import type { Lang } from "@/lib/preferences";
 import { getProductDetail, getSiteSettings, loadCatalog } from "@/services/catalog.server";
 import type { ProductDetail } from "@/types/catalog";
+import { banglaName } from "@/utils/bangla-name";
 import { categoryName } from "@/utils/categories";
-import { formatTaka } from "@/utils/format";
+import { formatTaka, toBnDigits } from "@/utils/format";
 import { breadcrumbData, productData } from "@/utils/structured-data";
 import { categoryPath } from "@/utils/url";
 import { ProductView } from "./ProductView";
@@ -17,11 +18,15 @@ export async function productParams() {
   return products.map((p) => ({ slug: p.slug }));
 }
 
+// বাংলা পেজে বাংলা উচ্চারণও থাকে, কারণ অনেকে "আইফোন ১৭ দাম" লিখে খোঁজেন
+const bnName = (product: ProductDetail["product"], lang: Lang) => (lang === "bn" ? banglaName(product.brand, product.name) : null);
+
 function describe({ product, offers }: ProductDetail, lang: Lang) {
   const { seo } = messages(lang);
   const name = `${product.brand} ${product.name}`;
   const lowest = offers[0]?.price;
-  return lowest ? seo.productFrom(name, formatTaka(lowest, lang), offers.length) : seo.productNoPrice(name);
+  const shops = new Set(offers.map((o) => o.sellerId)).size;
+  return lowest ? seo.productFrom(name, formatTaka(lowest, lang), lang === "bn" ? toBnDigits(shops) : String(shops)) : seo.productNoPrice(name);
 }
 
 export async function productMetadata(slug: string, lang: Lang): Promise<Metadata> {
@@ -30,10 +35,11 @@ export async function productMetadata(slug: string, lang: Lang): Promise<Metadat
   const { seo } = messages(lang);
   const { product } = detail;
   const name = `${product.brand} ${product.name}`;
+  const bn = bnName(product, lang);
   return pageMeta({
     lang,
     path: `/product/${product.slug}/`,
-    title: seo.productTitle(name),
+    title: bn ? seo.productBnTitle(bn, name) : seo.productTitle(name),
     shortTitle: seo.productShortTitle(name),
     description: describe(detail, lang),
     image: product.images?.[0],
@@ -56,7 +62,7 @@ export async function ProductPage({ slug, lang }: { slug: string; lang: Lang }) 
   return (
     <>
       {/* দাম না থাকলে Product ডেটা Google এর নিয়মে অসম্পূর্ণ, তখন শুধু breadcrumb */}
-      <JsonLd data={offers.length ? [productData(product, offers, path, about), breadcrumbData(crumbs)] : breadcrumbData(crumbs)} />
+      <JsonLd data={offers.length ? [productData(product, offers, path, about, bnName(product, lang)), breadcrumbData(crumbs)] : breadcrumbData(crumbs)} />
       <ProductView initial={detail} regionNotes={regionNotes} />
     </>
   );

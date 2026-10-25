@@ -4,6 +4,7 @@ import { DEFAULT_SETTINGS } from "@/config/site";
 import type { SiteSettings } from "@/types/admin";
 import { toCard } from "@/utils/catalog";
 import { categoryFamily } from "@/utils/categories";
+import { brandSlug } from "@/utils/url";
 import { safeUrl } from "@/utils/url";
 import { makeService, type Catalog, type HomeData } from "./catalog-core";
 import type { BakedChunk, BakedManifest } from "./catalog";
@@ -66,4 +67,27 @@ export async function getCategoryPage(slug: string) {
   const family = new Set(categoryFamily(categories, slug));
   const items = summaries.filter((s) => family.has(s.product.category)).sort((a, b) => b.product.popularity - a.product.popularity);
   return { category, summaries: items.map(toCard) };
+}
+
+// ব্র্যান্ড পেজ: সব ব্র্যান্ডের পেজ হয়, তবে ২টার কম পণ্য হলে Google এ তোলা হয় না (পাতলা পেজ)
+export const BRAND_MIN_PRODUCTS = 2;
+
+export async function listBrands() {
+  const summaries = await listSummaries();
+  const brands = new Map<string, { slug: string; name: string; count: number }>();
+  for (const { product } of summaries) {
+    const slug = brandSlug(product.brand);
+    const entry = brands.get(slug) ?? { slug, name: product.brand, count: 0 };
+    entry.count++;
+    brands.set(slug, entry);
+  }
+  return [...brands.values()];
+}
+
+export async function getBrandPage(slug: string) {
+  const [summaries, categories] = await Promise.all([listSummaries(), listCategories()]);
+  const items = summaries.filter((s) => brandSlug(s.product.brand) === slug).sort((a, b) => b.product.popularity - a.product.popularity);
+  if (!items.length) return null;
+  const used = new Set(items.map((s) => s.product.category));
+  return { brand: items[0].product.brand, summaries: items.map(toCard), categories: categories.filter((c) => used.has(c.slug)) };
 }
