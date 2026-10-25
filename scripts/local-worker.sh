@@ -6,4 +6,4 @@ cd "$(dirname "$0")/.."
 set -a
 . "$HOME/.config/dordam/worker.env"
 set +a
-exec ./node_modules/.bin/tsx workers/cli.ts "$1"
+exec ./node_modules/.bin/tsx workers/cli.ts "$@"
