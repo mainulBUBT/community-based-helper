@@ -20,6 +20,21 @@
    "name": "Binary Logic",
    "website": "https://www.binarylogic.com.bd",
    "note": "Authorized channel, OpenCart like Star Tech; cash price plus struck regular price, JSON-LD InStock; 2-year official warranty. 15ABR8 Ryzen 5 8GB unit currently out of stock."
+  },
+  {
+   "name": "Sell Tech",
+   "website": "https://www.selltech.com.bd",
+   "note": "OpenCart (Star Tech-এর মতো), JSON-LD-এ দাম; পাতায় HP MPN (B7PE3PT) আর Lenovo part (21M7S0NK00) লেখা থাকে — Star Tech-এর সাথে কোড মেলানোর জন্য ভালো।"
+  },
+  {
+   "name": "Global Brand",
+   "website": "https://www.globalbrand.com.bd",
+   "note": "Lenovo-র ডিস্ট্রিবিউটর; শিরোনামেই part number (21SXS0N300)। দাম ০.০০ / OutOfStock পাতা (L14 G6, X1 Carbon Gen 13) অফার নয়।"
+  },
+  {
+   "name": "Dazzle",
+   "website": "https://dazzle.com.bd",
+   "note": "RAM/স্টোরেজ অপশন সহ দাম; MRP ফোলানো, আনঅফিসিয়াল। ThinkPad E14 Gen 6 155H-এ ২য় দোকান।"
   }
  ],
  "products": [
@@ -424,6 +439,423 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-24"
+    }
+   ]
+  },
+  {
+   "brand": "HP",
+   "name": "ProBook 440 G11",
+   "category": "laptop",
+   "releaseYear": 2024,
+   "popular": true,
+   "variants": [
+    {
+     "label": "Core Ultra 5 125U 8GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 5 125U",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 118000
+    },
+    {
+     "label": "Core Ultra 5 125U 16GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 5 125U",
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 115000
+    }
+   ],
+   "colors": [
+    "Pike Silver"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/probook-440-g11/probook-440-g11-1-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/hp-probook-440-g11-laptop",
+   "offers": [
+    {
+     "variant": "Core Ultra 5 125U 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/hp-probook-440-g11-laptop",
+     "price": 118000,
+     "oldPrice": 126500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 125U 16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/hp-probook-440-g11-intel-core-ultra-5-125u-laptop",
+     "price": 115000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 125U 8GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/hp-probook-440-g11-core-ultra-5-iris-xe-graphics-14-fhd-ips-laptop",
+     "price": 101999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 125U 16GB / 512GB",
+     "site": "Binary Logic",
+     "url": "https://www.binarylogic.com.bd/hp-probook-440-g11-intel-core-ultra-5-125u-16gb-ram",
+     "price": 115000,
+     "oldPrice": 116700,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "brand": "HP",
+   "name": "ProBook 460 G11",
+   "category": "laptop",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "Core Ultra 5 125H 8GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 5 125H",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 117000
+    },
+    {
+     "label": "Core Ultra 7 155H 8GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 7 155H",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 142000
+    },
+    {
+     "label": "Core Ultra 5 125U 8GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 5 125U",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 99999
+    },
+    {
+     "label": "Core Ultra 7 155U 16GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 7 155U",
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 152000
+    }
+   ],
+   "colors": [
+    "Pike Silver"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/probook-460-g11/hp-probook-460-g11-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2148/HP_ProBook_460_16_inch_G11_Notebook.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/hp-probook-460-g11-laptop",
+   "offers": [
+    {
+     "variant": "Core Ultra 5 125H 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/hp-probook-460-g11-laptop",
+     "price": 117000,
+     "oldPrice": 124900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 125H 8GB / 512GB",
+     "site": "Sell Tech",
+     "url": "https://www.selltech.com.bd/hp-probook-460-g11-laptop",
+     "price": 124800,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 7 155H 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/hp-probook-460-g11-core-ultra-7-laptop",
+     "price": 142000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 7 155H 8GB / 512GB",
+     "site": "Sell Tech",
+     "url": "https://www.selltech.com.bd/hp-probook-460-g11-core-ultra-7-laptop",
+     "price": 149000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 125U 8GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/hp-probook-460-g11-intel-core-ultra-5-125u-laptop",
+     "price": 99999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 125U 8GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/hp-probook-460-g11-core-ultra-5-16gb-ram-512gb-ssd-16-laptop",
+     "price": 99999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 7 155U 16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/hp-probook-460-g11-laptop",
+     "price": 142900,
+     "oldPrice": 152000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 7 155U 16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/hp-probook-460-g11-core-ultra-7-16gb-ram-512gb-ssd-16-laptop",
+     "price": 124999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "brand": "Lenovo",
+   "name": "ThinkPad E14 Gen 7",
+   "category": "laptop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Core Ultra 5 225U 8GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 5 225U",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 116500
+    },
+    {
+     "label": "Core Ultra 5 225U 16GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 5 225U",
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 128500
+    },
+    {
+     "label": "Core Ultra 5 225H 16GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 5 225H",
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 139500
+    },
+    {
+     "label": "Core Ultra 7 255H 16GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 7 255H",
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 180000
+    }
+   ],
+   "colors": [
+    "Black"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/thinkpad-e14-gen-7/thinkpad-e14-gen-7-01-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/lenovo-thinkpad-e14-gen-7-laptop-black",
+   "offers": [
+    {
+     "variant": "Core Ultra 5 225U 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/lenovo-thinkpad-e14-gen-7-laptop-black",
+     "price": 116500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 225U 8GB / 512GB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/lenovo-thinkpad-e14-gen-7-21sxs0n300-core-ultra-5-225u-8gb-ram-ai-laptop",
+     "price": 116500,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 225U 16GB / 512GB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/lenovo-thinkpad-e14-gen-7-21sxs0mu00-core-ultra-5-225u-16gb-ram-ai-laptop",
+     "price": 128500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 225H 16GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/lenovo-thinkpad-e14-gen-7-core-ultra-5-225h-laptop",
+     "price": 139500,
+     "oldPrice": 143000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 7 255H 16GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/lenovo-thinkpad-e14-gen-7-core-ultra-7-laptop",
+     "price": 180000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 7 255H 16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/lenovo-thinkpad-e14-gen-7-intel-core-ultra-7-255h-wuxga-laptop",
+     "price": 162000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "brand": "Lenovo",
+   "name": "ThinkPad E14 Gen 6",
+   "category": "laptop",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "Core Ultra 5 125U 8GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 5 125U",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 107000
+    },
+    {
+     "label": "Core Ultra 5 125H 16GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 5 125H",
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 121000
+    },
+    {
+     "label": "Core Ultra 7 155H 16GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 7 155H",
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 149000
+    }
+   ],
+   "colors": [
+    "Black"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/thinkpad-e14-gen-6/thinkpad-e14-gen-6-01-1200x630.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-ThinkPad-E14-Gen-6-Intel-Core-Ultra-7-155H-Integrated-Intel-Arc-Graphics-14-WUXGA-Laptop-1888.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/lenovo-thinkpad-e14-gen-6-laptop",
+   "offers": [
+    {
+     "variant": "Core Ultra 5 125U 8GB / 512GB",
+     "site": "Sell Tech",
+     "url": "https://www.selltech.com.bd/lenovo-thinkpad-e14-gen-6-laptop",
+     "price": 107000,
+     "oldPrice": 115500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 125H 16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/lenovo-thinkpad-e14-gen-6-intel-core-ultra-wuxga-laptop",
+     "price": 121000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 7 155H 16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/lenovo-thinkpad-e14-gen-6-intel-core-ultra-7-155h-wuxga-laptop",
+     "price": 149000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 7 155H 16GB / 512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/lenovo-thinkpad-e14-gen-6-intel-core-ultra-7-155h-intel-arc-graphics-14-wuxga-display-laptop-price-in-bangladesh",
+     "price": 159990,
+     "oldPrice": 179990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
     }
    ]
   }

@@ -25,6 +25,7 @@ export function parseVariantLabel(label: string, axes: readonly Axis[]): Variant
   if (axes.includes("resolution")) attributes.resolution = label.match(/\b(8K|4K|UHD|FHD|QHD|HD)\b/i)?.[0].toUpperCase();
   if (axes.includes("battery")) attributes.battery = label.match(/\d+\s*mAh/i)?.[0].replace(/\s/g, "");
   if (axes.includes("capacity")) attributes.capacity = label.match(/\d+(?:\.\d+)?\s*(?:L|litre|liter|kg|KG)\b/i)?.[0].replace(/\s/g, "");
+  if (axes.includes("wattage")) attributes.wattage = label.match(/\d+(?:\.\d+)?\s*W\b/i)?.[0].replace(/\s/g, "").toUpperCase();
   return Object.fromEntries(Object.entries(attributes).filter(([, v]) => v)) as VariantAttributes;
 }
 
@@ -35,6 +36,6 @@ export const numericValue = (value: string) => {
 
 export function sortAxisValues(axis: Axis, values: string[]) {
   if (axis === "ram" || axis === "storage") return values.sort((a, b) => sizeInGb(a) - sizeInGb(b));
-  if (axis === "battery" || axis === "capacity") return values.sort((a, b) => numericValue(a) - numericValue(b));
+  if (axis === "battery" || axis === "capacity" || axis === "wattage") return values.sort((a, b) => numericValue(a) - numericValue(b));
   return values.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 }

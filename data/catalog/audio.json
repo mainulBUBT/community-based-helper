@@ -698,6 +698,174 @@
           "checkedAt": "2026-10-21"
         }
       ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi Buds 6 Play",
+      "category": "earbuds",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1450
+        }
+      ],
+      "colors": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/earbuds/xiaomi/redmi-buds-6-play/redmi-buds-6-play-black-001-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/xiaomi-redmi-buds-6-play-earbuds",
+      "offers": [
+        {
+          "variant": "Standard",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/xiaomi-redmi-buds-6-play-earbuds",
+          "price": 1340,
+          "oldPrice": 1450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "Standard",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/redmi-buds-6-play-anc-tws-earbuds",
+          "price": 1699,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "Standard",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/redmi-buds-6-play-earbuds/",
+          "price": 1700,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "Standard",
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/redmi-buds-6-play-tws-earbuds",
+          "price": 999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "Oraimo",
+      "name": "FreePods 4",
+      "category": "earbuds",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 4200
+        }
+      ],
+      "colors": [
+        "Black"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/584/Oraimo_FreePods_4_Active_2.webp"
+      ],
+      "specsSource": "https://www.sumashtech.com/product/oraimo-freepods-4-active-noise-cancellation-earbuds",
+      "offers": [
+        {
+          "variant": "Standard",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/oraimo-freepods-4-anc-true-wireless-earbuds",
+          "price": 2200,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "Standard",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/oraimo-freepods-4-active-noise-cancellation-earbuds",
+          "price": 4200,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "Standard",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/oraimo-freepods-4-earbuds/",
+          "price": 3890,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "brand": "OnePlus",
+      "name": "Bullets Wireless Z2 Neckband",
+      "category": "earbuds",
+      "releaseYear": 2022,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 2990
+        }
+      ],
+      "colors": [
+        "Black",
+        "Blue"
+      ],
+      "images": [
+        "https://motionview.s3.amazonaws.com/images/products/profile/172000000000.OnePlus-Bullets-Wireless-Z2.webp"
+      ],
+      "specsSource": "https://motionview.com.bd/product/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone",
+      "offers": [
+        {
+          "variant": "Standard",
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone",
+          "price": 2699,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "Standard",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/oneplus-bullets-wireless-z2-anc/",
+          "price": 2990,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25"
+        }
+      ]
     }
   ]
 }

@@ -342,6 +342,981 @@
           "variant": "Standard"
         }
       ]
+    },
+    {
+      "brand": "ViewSonic",
+      "name": "VA2214-H 22-inch FHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 10500
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/va2214-h/va2214-h-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/viewsonic-va2214-h-monitor",
+      "releaseYear": 2022,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/viewsonic-va2214-h-monitor",
+          "price": 9999,
+          "oldPrice": 10500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/viewsonic-va2214-h-22-inch-100hz-ips-fhd-monitor",
+          "price": 10200,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/viewsonic-va2214-h-22-inch-full-hd-100hz-ips-monitor",
+          "price": 10200,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/viewsonic-va2214-h-monitor",
+          "price": 10200,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "ViewSonic",
+      "name": "VA2432A-H 24-inch FHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 14200
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/va2432a-h/va2432a-h-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/viewsonic-va2432a-h-monitor",
+      "releaseYear": 2022,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/viewsonic-va2432a-h-monitor",
+          "price": 12300,
+          "oldPrice": 14200,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/viewsonic-va2432a-h-monitor",
+          "price": 12300,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/viewsonic-va2432a-h-24-inch-full-hd-120-hz-ips-monitor",
+          "price": 12300,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/viewsonic-va2432a-h-monitor",
+          "price": 12300,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Asus",
+      "name": "VZ24EHF 23.8-inch FHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 13000
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/asus/vz24ehf/vz24ehf-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/asus-vz24ehf-eye-care-gaming-monitor",
+      "releaseYear": 2022,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/asus-vz24ehf-eye-care-gaming-monitor",
+          "price": 11900,
+          "oldPrice": 13000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/asus-vz24ehf-238-100hz-fhd-eye-care-gaming-monitor",
+          "price": 12800,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/asus-vz24ehf-eye-care-24-inch-100hz-full-hd-gaming-monitor",
+          "price": 12300,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/asus-vz24ehf-eye-care-gaming-monitor",
+          "price": 12800,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Asus",
+      "name": "VP229HF 21.5-inch FHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 10800
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/asus/vp229hf/vp229hf-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/asus-vp229hf-gaming-monitor",
+      "releaseYear": 2022,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/asus-vp229hf-gaming-monitor",
+          "price": 10300,
+          "oldPrice": 10800,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/asus-vp229hf-22-inch-full-hd-100hz-1ms-eye-care-gaming-monitor",
+          "price": 13500,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/asus-vp229hf-22-inch-full-hd-100hz-1ms-eye-care-gaming-monitor",
+          "price": 10500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/asus-vp229hf-22-inch-gaming-monitor",
+          "price": 12200,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Philips",
+      "name": "22E1N1200A 21.5-inch FHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 13000
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/philips/22e1n1200a/22e1n1200a-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/philips-22e1n1200a-fhd-monitor",
+      "releaseYear": 2023,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/philips-22e1n1200a-fhd-monitor",
+          "price": 11900,
+          "oldPrice": 13000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/philips-22e1n1200aw-21-5-inch-fhd-ips-monitor",
+          "price": 12100,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/philips-22e1n1200a-21-5-inch-100hz-ips-full-hd-led-monitor",
+          "price": 13000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/philips-22e1n1200a-fhd-monitor",
+          "price": 13000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "BenQ",
+      "name": "GW2283 21.5-inch FHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 13200
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/benq/gw2283/gw2283-1200x630.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/benq-gw2283-ips-monitor",
+      "releaseYear": 2019,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/benq-gw2283-ips-monitor",
+          "price": 12000,
+          "oldPrice": 13200,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/benq-gw2283-21-5-inch-fhd-eye-care-stylish-ips-monitor",
+          "price": 13200,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/benq-gw2283-215-eye-care-ips-monitor",
+          "price": 13199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/benq-gw2283-ips-monitor",
+          "price": 12300,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "BenQ",
+      "name": "GW2291 21.5-inch FHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 12900
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/benq/gw2291/gw2291-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/benq-gw2291-monitor",
+      "releaseYear": 2023,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/benq-gw2291-monitor",
+          "price": 11000,
+          "oldPrice": 12900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/benq-gw2291-215-100hz-fhd-ips-eye-care-monitor",
+          "price": 12800,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/benq-gw2291-215-fhd-ips-monitor",
+          "price": 12799,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/benq-gw2291-monitor",
+          "price": 12000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Dahua",
+      "name": "DHI-LM22-A201YFS 21.5-inch FHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 10900
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/dahua/dhi-lm22-a201yf/dhi-lm22-a201yf-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/dahua-dhi-lm22-a201yfs-fhd-monitor",
+      "releaseYear": 2024,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/dahua-dhi-lm22-a201yfs-fhd-monitor",
+          "price": 9800,
+          "oldPrice": 10900,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/dahua-dhi-lm22-a201yfs-21-45-inch-fhd-100hz-ips-monitor",
+          "price": 9990,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/dahua-dhi-lm22-a201yfs-22-fhd-100hz-ips-monitor",
+          "price": 10799,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/dahua-dhi-lm22-a201yfs-fhd-monitor",
+          "price": 10000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Dahua",
+      "name": "DHI-LM22-A211Y 21.5-inch FHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 10800
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/dahua/dhi-lm22-a211y/dhi-lm22-a211y-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/dahua-dhi-lm22-a211y-monitor",
+      "releaseYear": 2024,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/dahua-dhi-lm22-a211y-monitor",
+          "price": 8900,
+          "oldPrice": 10800,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/dahua-dhi-lm22-a211y-2145-full-hd-120hz-ips-monitor",
+          "price": 10800,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/dahua-dhi-lm22-a211y-2145-120hz-ips-fhd-monitor",
+          "price": 10999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/dahua-dhi-lm22-a211y-monitor",
+          "price": 9000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "ViewSonic",
+      "name": "VA221A-H 22-inch FHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 11200
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/va221a-h/va221a-h-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/viewsonic-va221a-h-monitor",
+      "releaseYear": 2022,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/viewsonic-va221a-h-monitor",
+          "price": 11200,
+          "oldPrice": 11200,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/viewsonic-va221a-h-22-120hz-1ms-ips-fhd-monitor",
+          "price": 12500,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/viewsonic-va221a-h-22-fhd-ips-120hz-monitor",
+          "price": 12499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/viewsonic-va221a-h-monitor",
+          "price": 11500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "BenQ",
+      "name": "GW2491 23.8-inch FHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 15700
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/benq/gw2491/gw2491-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/benq-gw2491-monitor",
+      "releaseYear": 2024,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/benq-gw2491-monitor",
+          "price": 13500,
+          "oldPrice": 15700,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/benq-gw2491-23-8-inch-100hz-fhd-ips-monitor",
+          "price": 17500,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/benq-gw2491-238-inch-fhd-ips-100hz-monitor",
+          "price": 15999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/benq-gw2491-monitor",
+          "price": 13500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "ViewSonic",
+      "name": "VA2732 27-inch FHD",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 23800
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/va2732-mhd-3/va2732-mhd-3-001-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/viewsonic-va2732-mhd-3-monitor",
+      "releaseYear": 2023,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/viewsonic-va2732-mhd-3-monitor",
+          "price": 21500,
+          "oldPrice": 23800,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/viewsonic-va2732-mhd-3-27-inch-full-hd-100hz-ips-monitor",
+          "price": 22000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/viewsonic-va2732-mhd-3-27-inch-full-hd-100hz-ips-monitor",
+          "price": 21900,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/viewsonic-va2732-mhd-3-monitor",
+          "price": 21500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "ViewSonic",
+      "name": "VX24G30 24-inch FHD 240Hz",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 21500
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/vx24g30/vx24g30-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/viewsonic-vx24g30-gaming-monitor",
+      "releaseYear": 2024,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/viewsonic-vx24g30-gaming-monitor",
+          "price": 20000,
+          "oldPrice": 21500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/viewsonic-vx24g30-24-inch-240hz-ips-fhd-gaming-monitor",
+          "price": 21500,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/viewsonic-vx24g30-24-inch-full-hd-240hz-superclear-ips-gaming-monitor",
+          "price": 22000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/viewsonic-vx24g30-gaming-monitor",
+          "price": 21299,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "ViewSonic",
+      "name": "VA24G1 24-inch FHD 144Hz",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 14300
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/va24g1-h/va24g1-h-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/viewsonic-va24g1-h-monitor",
+      "releaseYear": 2023,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/viewsonic-va24g1-h-monitor",
+          "price": 13800,
+          "oldPrice": 14300,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/viewsonic-va24g1-h-monitor",
+          "price": 13800,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/viewsonic-va24g1-h-24-inch-full-hd-144hz-ips-monitor",
+          "price": 14300,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/viewsonic-va24g1-h-monitor",
+          "price": 13800,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Asus",
+      "name": "VG249Q5R 23.8-inch FHD 144Hz",
+      "category": "monitor",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 19000
+        }
+      ],
+      "colors": [],
+      "regions": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/monitor/asus/vg249q5r/vg249q5r-01-1200x630.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/asus-tuf-gaming-vg249q5r-24-inch-monitor",
+      "releaseYear": 2024,
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/asus-tuf-gaming-vg249q5r-24-inch-monitor",
+          "price": 20800,
+          "oldPrice": 19000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/asus-tuf-gaming-vg249q5r-24-inch-monitor",
+          "price": 21500,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Global Brand",
+          "url": "https://www.globalbrand.com.bd/asus-tuf-gaming-series-5-vg249q5r-238-inch-full-hd-gaming-monitor",
+          "price": 21000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sell Tech",
+          "url": "https://www.selltech.com.bd/asus-tuf-gaming-vg249q5r-24-inch-monitor",
+          "price": 20699,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
     }
   ]
 }

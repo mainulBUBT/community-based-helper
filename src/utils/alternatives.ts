@@ -21,7 +21,7 @@ const MIN_PRICE_RATIO = 0.25;
 
 const gap = (axis: Axis, a: string, b: string) => {
   if (axis === "ram" || axis === "storage") return sizeInGb(a) - sizeInGb(b);
-  if (axis === "capacity" || axis === "battery") return numericValue(a) - numericValue(b);
+  if (axis === "capacity" || axis === "battery" || axis === "wattage") return numericValue(a) - numericValue(b);
   return null;
 };
 

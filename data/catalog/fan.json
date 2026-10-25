@@ -1,0 +1,720 @@
+{
+  "category": "fan",
+  "sites": [
+    {
+      "name": "Star Tech",
+      "website": "https://www.startech.com.bd",
+      "note": "/charger-fan ক্যাটাগরি পেজ; প্রোডাক্ট পেজে ব্যাটারি/রানটাইম স্পেক-টেবিল (specsSource)। struck price-ই officialPrice; Stock Out পাতায় দাম থাকলে inStock false।"
+    },
+    {
+      "name": "Apple Gadgets",
+      "website": "https://www.applegadgetsbd.com",
+      "note": "ওয়ারেন্টি অপশন আলাদা দামে (N/A / 3 Months / 6 Months) — স্টকে থাকা সবচেয়ে কম দাম। Availability 'in stock' বা 'online order' দুটোতেই কেনা যায় (Add To Cart) — inStock true; শুধু দামহীন 'Pre Order' বোতাম মানে স্টকে নেই।"
+    },
+    {
+      "name": "Sumash Tech",
+      "website": "https://www.sumashtech.com",
+      "note": "/product/ পাতায় cash price, struck price আর Out of Stock লেখা।"
+    },
+    {
+      "name": "Kry International",
+      "website": "https://kryinternational.com",
+      "note": "Jisulife আর Solove দুটোরই বড় তালিকা; শিরোনামে মডেল (FA26, F5 Pro/F5p)।"
+    },
+    {
+      "name": "Diamu",
+      "website": "https://diamu.com.bd",
+      "note": "WooCommerce; Jisulife, Solove, Hoco, WiWU সবই আছে, পাতায় In/Out of stock।"
+    },
+    {
+      "name": "Motion View",
+      "website": "https://motionview.com.bd",
+      "note": "Solove-এর অফিসিয়াল রিটেইলার; F5P = F5 Pro। এখন অনেকটাই Stock Out, দাম দেখা যায়।"
+    },
+    {
+      "name": "Gadget Breeze",
+      "website": "https://gadgetbreeze.com.bd",
+      "note": "WooCommerce; Solove F5/F5 Pro, Hoco HX65/HX66, WiWU FS03।"
+    }
+  ],
+  "products": [
+    {
+      "brand": "Jisulife",
+      "name": "Life1 FA26 Portable Desk Fan",
+      "category": "fan",
+      "releaseYear": 2022,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1999
+        }
+      ],
+      "colors": [
+        "White"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/gadget/mini-fan/jisulife/life1-fa26/life1-fa26-03-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1772/fa26_white.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/JISULIFE-FA26-Portable-Ultra-Thin-Table-Fan-B-8132.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/jisulife-life1-fa26-desk-fan",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/jisulife-life1-fa26-desk-fan",
+          "price": 1890,
+          "oldPrice": 1999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/jisulife-fa26-portable-ultra-thin-table-fan",
+          "price": 2050,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/jisulife-fa26-portable-ultra-thin-table-fan",
+          "price": 1799,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/jisulife-fa26-rechargeable-ultra-thin-desktop-fan",
+          "price": 1799,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/jisulife-fa26-rechargeable-ultra-thin-desktop-fan/",
+          "price": 1790,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Jisulife",
+      "name": "FA19 Portable Rechargeable Fan",
+      "category": "fan",
+      "releaseYear": 2021,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 2650
+        }
+      ],
+      "colors": [
+        "White",
+        "Green"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/jisulife/fa19a/fa19a-04-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1932/JISULIFE_FA19_GREEN.webp",
+        "https://diamu.com.bd/wp-content/uploads/2023/06/Jisulife-FA19-USB-Portable-Rechargeable-Fan.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/jisulife-fa19-portable-fan",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/jisulife-fa19-portable-fan",
+          "price": 2450,
+          "oldPrice": 2650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/jisulife-fa19-usb-portable-desk-fan-4000mah",
+          "price": 2600,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/jisulife-fa19-usb-portable-rechargeable-fan",
+          "price": 2299,
+          "oldPrice": 2500,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/jisulife-fa19-usb-portable-rechargeable-fan/",
+          "price": 1990,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Solove F5 Desktop Stand Fan",
+      "category": "fan",
+      "releaseYear": 2021,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 2499
+        }
+      ],
+      "colors": [
+        "White",
+        "Black"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/xiaomi/solove-f5/solove-f5-white-01-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1022/f5.webp",
+        "https://images.kryinternational.com/uploads/xiaomi-solove-f5-5w-usb-desktop-fan-black.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/xiaomi-solove-f5-desktop-stand-fan",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/xiaomi-solove-f5-desktop-stand-fan",
+          "price": 2199,
+          "oldPrice": 2499,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/xiaomi-solove-f5-5w-4000mah-rechargeable-desktop-stand-fan",
+          "price": 1950,
+          "oldPrice": 2300,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/xiaomi-solove-f5",
+          "price": 2199,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/xiaomi-solove-f5-5w-usb-desktop-fan",
+          "price": 2299,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/xiaomi-solove-f5-5w-4000mah-rechargeable-desktop-stand-fan/",
+          "price": 2090,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/xiaomi-solove-desktop-stand-fan-f5-5w-4000mah",
+          "price": 2799,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-solove-f5/",
+          "price": 2250,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Solove F5 Pro Desktop Fan",
+      "category": "fan",
+      "releaseYear": 2023,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 3099
+        }
+      ],
+      "colors": [
+        "White",
+        "Green"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/xiaomi/solove-f5-pro/solove-f5-pro-20-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1935/solove_f5_pro_green.webp",
+        "https://diamu.com.bd/wp-content/uploads/2023/05/Xiaomi-Solove-F5-Pro-Smart-Fan.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/xiaomi-solove-f5-pro-desktop-stand-fan",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/xiaomi-solove-f5-pro-desktop-stand-fan",
+          "price": 2727,
+          "oldPrice": 3099,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/xiaomi-solove-f5-pro-5w-4000mah-rechargeable-desktop-stand-fan",
+          "price": 2450,
+          "oldPrice": 3200,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/xiaomi-solove-f5-pro-rechargeable-fan",
+          "price": 2749,
+          "oldPrice": 3000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/xiaomi-solove-f5-pro-f5p-smart-desktop-extendable-fan",
+          "price": 2949,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/xiaomi-solove-f5-pro-smart-fan/",
+          "price": 2490,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/xiaomi-solove-f5p-4000mah-desktop-stand-fan",
+          "price": 3499,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-solove-f5-pro/",
+          "price": 2800,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Solove F5 Pro Max Rechargeable Fan",
+      "category": "fan",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 3699
+        }
+      ],
+      "colors": [
+        "White",
+        "Black"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/appliance/charger-fan/xiaomi/solove-f5-pro-max/solove-f5-pro-max-01-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1936/F5_pro_max_Black.webp",
+        "https://diamu.com.bd/wp-content/uploads/2024/05/Xiaomi-Solove-F5-Pro-Max-Rechargeable-Fan.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/xiaomi-solove-f5-pro-max-charger-fan",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/xiaomi-solove-f5-pro-max-charger-fan",
+          "price": 3366,
+          "oldPrice": 3699,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/xiaomi-solove-f5-pro-max-rechargeable-desktop-stand-fan-10000mah",
+          "price": 3499,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/xiaomi-solove-f5-pro-max-rechargeable-desktop-fan",
+          "price": 3299,
+          "oldPrice": 3500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/solove-f5-pro-max-fan/",
+          "price": 3590,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Solove F3 Mini Clip Fan",
+      "category": "fan",
+      "releaseYear": 2021,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1450
+        }
+      ],
+      "colors": [
+        "White",
+        "Blue",
+        "Pink"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/xiaomi/solove-f3/solove-f3-01-1200x630.webp",
+        "https://images.kryinternational.com/uploads/xiaomi-solove-f3-mini-clip-fan.jpg",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Xiaomi-Solove-F3-Mini-Clip-Fan-Blue-4443.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/xiaomi-solove-f3-mini-clip-fan",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/xiaomi-solove-f3-mini-clip-fan",
+          "price": 1450,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/xiaomi-solove-f3-mini-clip-fan",
+          "price": 1500,
+          "oldPrice": 1550,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/xiaomi-solove-f3-rechargeable-mini-clip-fan",
+          "price": 1499,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/xiaomi-solove-f3-rechargeable-mini-clip-fan",
+          "price": 1490,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/xiaomi-solove-f3-rechargeable-mini-clip-fan",
+          "price": 1450,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Hoco",
+      "name": "HX65 Portable Table Fan",
+      "category": "fan",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1270
+        }
+      ],
+      "colors": [
+        "White"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/hoco/hx65/hx65-01-1200x630.webp",
+        "https://diamu.com.bd/wp-content/uploads/2025/04/Hoco-HX65-Ultra-Thin-Table-Fan-1.jpg",
+        "https://gadgetbreeze.com.bd/wp-content/uploads/2025/05/Hoco-HX65-Desktop-Fan.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/hoco-hx65-portable-table-fan",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/hoco-hx65-portable-table-fan",
+          "price": 1156,
+          "oldPrice": 1270,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/hoco-hx65-ultra-thin-table-fan",
+          "price": 1350,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/hoco-hx65-table-fan/",
+          "price": 1290,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/hoco-hx65-desktop-fan/",
+          "price": 1060,
+          "oldPrice": 1250,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Hoco",
+      "name": "HX66 Portable Table Fan",
+      "category": "fan",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 2150
+        }
+      ],
+      "colors": [
+        "White"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/hoco/hx66/hx66-01-1200x630.webp",
+        "https://diamu.com.bd/wp-content/uploads/2025/05/Hoco-HX66-Desktop-Circulation-Fan.jpg",
+        "https://gadgetbreeze.com.bd/wp-content/uploads/2025/04/Hoco-HX66-Desktop-Circulation-Fan-01.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/hoco-hx66-portable-table-fan",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/hoco-hx66-portable-table-fan",
+          "price": 2150,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/hoco-hx66-desktop-circulating-fan",
+          "price": 2500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/hoco-hx66-fan/",
+          "price": 1840,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/hoco-hx66-desktop-circulation-fan/",
+          "price": 1970,
+          "oldPrice": 1990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "WiWU",
+      "name": "FS03 2 in 1 Table Clip Fan",
+      "category": "fan",
+      "releaseYear": 2023,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1350
+        }
+      ],
+      "colors": [
+        "White",
+        "Green"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/gadget/daily-lifestyle/wiwu/fs03/fs03-white-01-1200x630.webp",
+        "https://diamu.com.bd/wp-content/uploads/2023/08/WIWU-FS03-2-in-1-Table-Clip-Fan.jpg",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/WiWU-FS03-2-in-1-TableClip-Fan-a-2488.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/wiwu-fs03-table-clip-fan",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/wiwu-fs03-table-clip-fan",
+          "price": 1215,
+          "oldPrice": 1350,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/wiwu-fs03-2-in-1-table-clip-fan",
+          "price": 1600,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/wiwu-fs03-2-in-1-table-clip-fan/",
+          "price": 1440,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/wiwu-fs03-2-in-1-table-clip-fan-360-degree-rotation/",
+          "price": 1300,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "Standard"
+        }
+      ]
+    }
+  ]
+}

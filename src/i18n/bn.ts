@@ -23,7 +23,7 @@ export const bn = {
     language: "English",
     languageLabel: "ভাষা বদলান",
   },
-  axis: { chip: "চিপ", ram: "RAM", storage: "স্টোরেজ", size: "সাইজ", connectivity: "কানেক্টিভিটি", edition: "এডিশন", color: "রং", gpu: "গ্রাফিক্স", cpu: "সিপিইউ", resolution: "রেজোলিউশন", battery: "ব্যাটারি", capacity: "ক্যাপাসিটি" },
+  axis: { chip: "চিপ", ram: "RAM", storage: "স্টোরেজ", size: "সাইজ", connectivity: "কানেক্টিভিটি", edition: "এডিশন", color: "রং", gpu: "গ্রাফিক্স", cpu: "সিপিইউ", resolution: "রেজোলিউশন", battery: "ব্যাটারি", capacity: "ক্যাপাসিটি", wattage: "ওয়াট" },
   keySpec: {
     display: "ডিসপ্লে",
     chip: "প্রসেসর",

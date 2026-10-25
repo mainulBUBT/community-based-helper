@@ -7,8 +7,8 @@ import { sameProduct } from "../src/utils/catalog.ts";
 import { canonicalRegion } from "../src/utils/region.ts";
 
 const DIR = "data/catalog";
-const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color", "gpu", "cpu", "resolution", "battery", "capacity"];
-const DEFAULT_CATEGORY = { mobile: "mobile", watch: "watch", skincare: "skincare", powerbank: "powerbank", sneakers: "sneakers", monitor: "monitor" };
+const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color", "gpu", "cpu", "resolution", "battery", "capacity", "wattage"];
+const DEFAULT_CATEGORY = { mobile: "mobile", watch: "watch", skincare: "skincare", powerbank: "powerbank", sneakers: "sneakers", monitor: "monitor", charger: "charger", fan: "fan" };
 
 const slugify = (text) =>
   text

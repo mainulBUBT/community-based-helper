@@ -21,6 +21,9 @@
 | Arogga | product sitemap | JSON-LD | ✅ |
 | Chaldal | manual product links | `itemprop="price"` / availability | ✅ |
 | স্কিনকেয়ারের বাকি দোকান | manual product links | JSON-LD (WooCommerce/Next.js) | ✅ |
+| Lira Import | product sitemap | `wooVariants` (এক দাম) | ✅ |
+| Her Happy Skin | নিজের JSON API (`her-api`) | ওই API-ই (`hhsVariants`) | ✅ |
+| Choice Legacy | product sitemap খোলা, কিন্তু পণ্যের পাতায় ~১ অনুরোধ/মিনিট রেট লিমিট | | ⛔ নিয়মে চলে না |
 | Pickaboo | `/search-result/<নাম>` HTML | | ⛔ worker কে 403 দেয় |
 | Telegram এর দোকান | দোকান নিজে পাঠায় | ⬜ [telegram](15-telegram-bot.md) |
 | ক্রেতা | "দাম জানান" | 🟡 [price reports](05-price-reports.md) |
@@ -127,9 +130,10 @@
 | Sneaker Zone | sneakerzonebd.com | স্নিকার্স | Shopify; DOB-র সহ-প্রতিষ্ঠান (একই মালিকানা) |
 | Trek N Tread | trekntread.com | স্নিকার্স | Laravel/Inertia; দাম পাতার embedded data-তে, worker-এ আলাদা parser |
 | SneakersBD Official | sneakersbdofficial.com | স্নিকার্স | `product:price:amount` মেটা থেকে দাম পার্স হয় |
-| Global Brand | globalbrand.com.bd | চার্জার, মনিটর | LG/Asus/Lenovo-র ডিস্ট্রিবিউটর (OpenCart); পাতার JSON-LD-তে দাম |
+| Global Brand | globalbrand.com.bd | চার্জার, মনিটর, ডেস্কটপ | LG/Asus/Lenovo-র ডিস্ট্রিবিউটর (OpenCart); পাতার JSON-LD-তে দাম |
 | MC Solution | mcsolution.com.bd | ল্যাপটপ, মনিটর | WooCommerce; অফিসিয়াল ওয়ারেন্টির দোকান |
-| PCB Store | pcbstore.com.bd | মনিটর | গেমিং/PC দোকান (Next.js); পাতার JSON ডেটায় দাম, প্রায়ই Stock out |
+| PCB Store | pcbstore.com.bd | মনিটর, ডেস্কটপ | গেমিং/PC দোকান (Next.js); পাতার JSON ডেটায় দাম, প্রায়ই Stock out |
+| Sell Tech | selltech.com.bd | ডেস্কটপ | OpenCart; brand PC-তে ভালো দাম, JSON-LD |
 
 বাদ পড়েছে: Pickaboo, GadStyle, Gadget N Music (403 দেয়), Gadget Studio BD (robots.txt এ বন্ধ), Computer Source (timeout)। Mobile Dokan দোকান না, শুধু অফিসিয়াল দাম মেলাতে দেখা হয়েছে।
 
@@ -162,6 +166,68 @@
 - Global Brand-এর পাতায় sale দেখালেও JSON-LD-তে regular দাম থাকে; worker JSON-LD-ই পড়ে, তাই সেই দামই রাখা হয়েছে (যেমন 34U650A: পাতায় ৳৭১,০০০ sale, JSON-LD/সিঙ্ক ৳৮৫,০০০)।
 - বাদ: PCB Store-এ ProArt PA27JCV আর ViewSonic VX3418C-2K "Call For Price" (দাম নেই), ROG Strix XG27ACMEG-এর regular ভার্সন PCB-তে নেই (শুধু Hatsune Miku Edition — আলাদা SKU), GB-তে XG27ACMES-W (সাদা)-র দাম ৳০। এতে ২ দোকানে নেমে যাওয়া মডেলগুলো নেওয়া হয়নি।
 - অফিসিয়াল দাম = Star Tech-এর regular price (PA279CV ৳৬৪,০০০, 34U650A ৳৮৫,০০০, XG27ACMES ৳৪৭,০০০, PA278QGV ৳৪৯,০০০, PA248QFV ৳৪৫,০০০, 24U631A ৳২৯,৩০০); সব অফার ৭৩%–১৪৯% — sanity পাস।
+
+### ডেস্কটপ (২৫ অক্টোবর ২০২৬)
+
+মিড-রেঞ্জ আর লো-রেঞ্জের ৫টা জনপ্রিয় Windows ব্র্যান্ড টাওয়ার, ১৭টা ভার্সন, ৬টা দোকান থেকে ২৮টা দাম; প্রতিটা পণ্য ৩-৪টা দোকানে (দাম-সহ Stock out লিস্টিংও গোনা), প্রতিটা পাতায় গিয়ে মডেল-কোড/CPU/RAM/SSD/দাম দেখা, `worker:check`-এ ২৮টাই ঠিক (০ মেলেনি, ০ ব্যর্থ)।
+
+- পণ্য: Dell OptiPlex 7020 MT (৪ দোকান: Sell Tech ৳৬৪,০০০–৯৬,০০০ · Star Tech ৳৭৫,০০০–১,১৫,০০০ · Apple Gadgets ৳৮৪,৫০০–১,১৫,০০০ · Sumash ৳৭৯,৯৯৯), Dell Tower ECT1250 (Sell Tech ৳৬০,০০০/৭৪,০০০ · Star Tech SO · Apple Gadgets), Dell Pro Tower QCT1250 (Apple Gadgets · Sumash · Star Tech Core Ultra 5 ৳১,১০,০০০), HP Pro Tower 280 G9 (Star Tech ৳১,০২,০০০–১,৩৭,০০০ · Global Brand SO ৳১,১০,০০০ · PCB Store SO ৳৪৭,০০০), Lenovo IdeaCentre 08IRH9 (Star Tech ৳৯৭,৫০০ · Global Brand ৳৯৭,৫০০ · PCB Store SO ৳৯০,৭৫০)।
+- **৫+ দোকানে কোনো ডেস্কটপ মেলেনি** — সর্বোচ্চ OptiPlex 7020-এ ৪টা; বাজারে একই ব্র্যান্ড PC মডেল এত দোকানে থাকে না। তাই কঠোর নিয়মের ন্যূনতম ৩ দোকান শর্তেই নেওয়া হয়েছে।
+- বাদ: Dell QVT1260, ThinkCentre neo 50t Gen5/Gen6, IdeaCentre Mini 01IRH10R, IdeaCentre AIO 24IRH9, Dell EC24250 AIO, HP 24-cr AIO, Acer Veriton M4690G/S2690G — সব ২ দোকানে; Apple Gadgets/Sell Tech-এর কাস্টম বিল্ড (মডেল কোড নেই); MC Solution-এর "Call for Price"; Sumash ECT1250 TBA; Global Brand-এর monitor-বান্ডেল SKU ও দামহীন পাতা; HP 290 G9 ও 400 G9 (Apple Gadgets ছাড়া কেউ নেই)।
+- অফিসিয়াল দাম = অফিসিয়াল চ্যানেলের (Star Tech/Global Brand/Sell Tech) চলতি দাম; শুধু OptiPlex-এর Core i5-13500-এর অ্যাংকর ৳৮৫,০০০ আন্তঃসীমায়িত (ও ভার্সনে শুধু আনঅফিসিয়াল Sumash-এর দাম আছে)। Star Tech-র ECT1250 i5-14400 SO দাম ৳১,০৫,০০০ বাজারের বাইরে হলেও sanity পাস (১৪২%)।
+- নতুন ক্যাটাগরি লাগেনি: DB-র `desktop`-এ iMac/Mac mini/Mac Studio আগে থেকেই ছিল; worker-এ Star Tech discover-এ `/desktops/brand-pc` যোগ হয়েছে। Sell Tech আগে থেকেই worker-এ ছিল, ডেস্কটপের দাম এবারই প্রথম।
+
+### ডেস্কটপ যোগ ২ (২৬ অক্টোবর ২০২৬)
+
+আরও ৫টা চাওয়া হলেও ৩+ দোকানের কঠোর নিয়মে বাজারে আর মাত্র ২টা পণ্য মেলে — ২টাই যোগ হলো, ৫টা ভার্সন, ৬টা দাম; দাম যাচাই ২৫ অক্টোবর রাতে, `worker:check`-এ সব ঠিক (০ মেলেনি, ০ ব্যর্থ)।
+
+- Dell **Pro Slim QCS1250** (৩ দোকান): Star Tech 16GB/512GB ৳১,১২,০০০ (ক্যাশ দাম, regular ৳১,৩২,০০০, In Stock) · Sell Tech 8GB/512GB ৳৯১,৫০০ (In Stock) · Apple Gadgets 8GB/512GB ৳১,১৬,৫০০ (আনঅফিসিয়াল)। একই মডেল দুই RAM-ভার্সনে।
+- ASUS **ExpertCenter AiO P440VAK** (৩ দোকান, সবাই 16GB/1TB ২৩.৮″): Star Tech Core 7 240H ৳১,৫২,০০০ (MPN P440VAK-BPCD780, In Stock) · Global Brand Core 5 210H ৳১,২১,০০০ (BPCD710, Stock out) · Sell Tech Core i5-13420H ৳৯৪,০০০ (regular ৳৯৯,০০০)।
+- **৩+ দোকানে আর কোনো ডেস্কটপ নেই** — বাকি প্রার্থী সবাই ২ দোকানে সীমাবদ্ধ: Dell EC24250 AIO ও Inspiron 5430 AIO (ST+Sell Tech), IdeaCentre AIO 24ILL11/27ILL11 ও 08IRR9 ও ThinkCentre neo 50t (ST+GB), Value-Top AIO (Sell Tech + ST-র সব SO), HP 24-cr (AG+ST), ASUS P440VAT/P470VAK/PM640KA (ST+GB), GB-র D700MC/D900SA (GB+PCB SO), OptiPlex 7010 ও Veriton M4690G (Sell Tech+PCB SO), MSI BZ09/PRO DP180 (আলাদা মডেল)। Lenovo 24IRH9 GB-র ৩ পাতাতেই দাম নেই; mini PC (ASUS NUC/ROG) ST+MC Solution-এ, MC-র দাম ০/Call for Price।
+- GB-র HP 280 G9 i7 (B7NZ1PT) পাতায় ৳১,১০,০০০ দেখালেও পাতায় worker-এর পড়ার মতো price-element নেই — না-মেলা অফার রাখা যায় না বলে বাদ; i5-ভার্সনের GB অফার ব্যাচ ১-এই আছে।
+- অফিসিয়াল দাম = ভার্সনপ্রতি অফিসিয়াল চ্যানেলের দাম (ST regular ৳১,৩২,০০০/৳১,৬৪,৯২০; GB ৳১,২১,০০০; Sell Tech regular ৳৯৯,০০০; 8GB QCS-এর অ্যাংকর AG-র ৳১,১৬,৫০০) — সব অফার ৭৯%–১০০%, sanity পাস। releaseYear দুটোই ২০২৫ (Dell Pro রিব্র্যান্ড, ASUS Core 200H)।
+
+### চার্জার আর চার্জার ফ্যান (২৫ অক্টোবর ২০২৬)
+
+লো থেকে মিড-রেঞ্জের ৫টা চার্জার (৳৬৩০–৩,৫৯০) আর ৯টা চার্জার ফ্যান (৳১,০৬০–৩,৫৯০), ১৪টা ভার্সন, ৮টা দোকান থেকে ৭০টা দাম (`data/catalog/charger.json`, `fan.json`)। এবারের শর্ত কড়া ছিল: **প্রতিটা পণ্য অন্তত ৪টা দোকানে** (দাম-সহ Stock out/Pre-order লিস্টিংও গোনা)। প্রার্থী বের করা হয়েছে Star Tech-এর `/mobile-phone-charger-adapter` আর `/charger-fan` পেজ + ১৫টা দোকানের product sitemap মিলিয়ে, তারপর প্রতিটা পাতা worker-এর নিজের parser দিয়ে পড়ে দাম/স্টক/ছবি আর আলাদা করে HTML-এ মডেল-কোড খোঁজা। `worker:check`-এ ৭০টাই ঠিক (০ মেলেনি, ০ ব্যর্থ)।
+
+- চার্জার (সব Anker, মডেল-কোড প্রতিটা পাতায় মিলিয়ে): Zolo 20W **A2699** (Gadget Breeze ৳৬৩০ · Kry ৳৮৯৯ · Star Tech ৳৯২০ · Gadget & Gear ৳১,০৯৯ 3-pin), Zolo 30W **A2698** (৬ দোকান ৳৮২০–১,১৯৯), Nano 45W **A2692** (৫ দোকান ৳১,৫২০–২,১৯৯), Nano 45W Smart Display **A121D** (৬ দোকান, ৭ দাম; China ভার্সন Star Tech ৳২,৫৯৯ / Gadget & Gear ৳২,৭৯০, Global ভার্সন Star Tech ৳৩,২০৩ / Gadget Breeze ৳২,৯৫০ / Motion View ৳৩,৫৯০ — অফারের `region`-এ China/Global), 25W Compact **A2656** (Star Tech ৳৯৪৬ · Gadget Breeze ৳৯৯০ · Kry ৳১,২৯৯ · Motion View SO ৳১,২৯৯)।
+- ফ্যান (মডেল নামেই): Jisulife Life1 FA26 (৫ দোকান ৳১,৭৯০–২,০৫০), Jisulife FA19 (৪, ৳১,৯৯০–২,৬০০; Star Tech ছাড়া সব SO), Xiaomi Solove F5 (৭, ৳১,৯৫০–২,৭৯৯), Solove F5 Pro = F5P (৭, ৳২,৪৫০–৩,৪৯৯), Solove F5 Pro Max 10000mAh (৪, ৳৩,২৯৯–৩,৫৯০), Solove F3 (৫, ৳১,৪৫০–১,৫০০; Star Tech/Motion View/Apple Gadgets SO), Hoco HX65 (৪, ৳১,০৬০–১,৩৫০), Hoco HX66 (৪, ৳১,৮৪০–২,৫০০), WiWU FS03 (৪, ৳১,২১৫–১,৬০০)।
+- দোকানের বিশেষত্ব: Apple Gadgets-এর কিছু পাতায় দাম থাকলেও "Pre-order" — `inStock: false`; ওয়ারেন্টি অপশন আলাদা দামে হলে (Apple Gadgets N/A/3/6 Months, Gadget Breeze 15 days/18 months) স্টকে থাকা সবচেয়ে কম দামটা। Star Tech-এর Zolo 20W/30W, 25W আর Solove F3 পাতায় স্পেক-টেবিল নেই (শুধু বুলেট), তাই `specs.json`-এ ওই ৪টা ফাঁকা; MPN বুলেটেই আছে (`A2699J11`)।
+- অফিসিয়াল দাম = Star Tech-এর কাটা (regular) দাম, মনিটরের মতোই; A121D-তে China ভার্সনের ৳২,৭৯৯। `releaseYear` ব্র্যান্ডের ঘোষণার বছর থেকে (Zolo/Nano A2692 ২০২৪, A121D ২০২৫, FA26 ২০২২, FA19 ও Solove F5/F3 ২০২১, F5 Pro ২০২৩, F5 Pro Max ২০২৪, HX65/HX66 ২০২৫, FS03 ২০২৩) — দোকানে প্রথম ওঠার তারিখ (Diamu-র upload path) এর সাথে মেলে।
+- **মডেল-কোড নিয়মে (নিয়ম ২) বাদ:** Samsung 25W PD — Star Tech-এর পাতা EP-TA2510, বাকি ৬ দোকানের কোনো পাতায় EP কোড নেই; Xiaomi 20W — Sumash/Motion View AD201, Kry MDY-20-EG, Star Tech কোডহীন; Xiaomi 33W/67W — Star Tech-এ SO বা কার-চার্জার পাতা, কোড অনিশ্চিত; Ugreen CD318/CD319 — একই মডেলের প্লাগ/রং ভেদে ৩–৬টা SKU (#15324/#15328/#90664/#90902…), দোকানভেদে আলাদা, মেলানো যায় না; Baseus Super Si 20W — শুধু Star Tech আর Apple Gadgets-এ একক চার্জার, Kry/Diamu-র পাতা কেবল-বান্ডেল। Zolo 20W-এ Apple Gadgets/Sumash (কোড নেই) আর Diamu/Motion View (পাতায় Model A2615, Motion View-এর sku আবার A2699J11 — দ্বিধা) বাদ।
+- **৪ দোকান না হওয়ায় বাদ:** Jisulife FA13R (৩, Star Tech-এ দাম নেই), Oraimo PowerCube 20/PowerGaN 351 (Star Tech + Sumash), Anker Zolo 1C/Nano II (আলাদা মডেল, ১–২ দোকান)। Jisulife FA13P (৫ দোকান কিন্তু ৳৪,৫০০+, ৪টাই SO) আর Table Fan Pro3 (৳১১,৯০০) লো-মিড নয়। Apple 20W ইচ্ছে করে বাদ — A2246 বনাম A2347 আর কপি-মার্কেট ঝুঁকি।
+- কোডে: DB-তে `wattage` অক্ষ আগেই migration-এ ছিল, অ্যাপ জানত না — `src/types/catalog.ts` AXES, `bn/en` লেবেল (ওয়াট/Wattage), `parseVariantLabel` (`20W`), `sortAxisValues`/alternatives-এ সংখ্যা-ক্রম, আর `scripts/import-catalog.mjs`-এর AXES + `DEFAULT_CATEGORY` (`charger`, `fan`) যোগ হয়েছে। ফ্যানের অক্ষ `size`, কিন্তু কোনো মডেলে সাইজভেদে দাম আলাদা নয়, তাই সব `Standard`। Star Tech discover-এ দুই ক্যাটাগরির path আগে থেকেই ছিল।
+- DB-তে আগে থেকে admin দিয়ে ঢোকানো চার্জার/ফ্যান (Ugreen X517/CD359/X860/CD333, Anker B121B, Oraimo HyperGaN 701, Hoco HX607/HX608, Solove F12, Aecooly TH01, WARMAC 107, Xundd XDOT-063) এর কোনোটার সাথে মিল নেই, ডুপ্লিকেট হয়নি।
+
+### ল্যাপটপ: ProBook 460 G11 আর ThinkPad E14 (২৫ অক্টোবর ২০২৬)
+
+৩টা পণ্য, ১১টা ভার্সন, ৬ দোকান থেকে ১৮টা দাম (`laptop.json`); প্রতিটা পাতায় CPU/RAM/SSD আর HP MPN / Lenovo part number মিলিয়ে, `worker:check`-এ ১৮টাই ঠিক (০ মেলেনি)। শুরুতে মনে হয়েছিল "CPU/RAM configuration এক নয়" বলে এগুলো যোগ করা যাবে না — আসলে নিয়ম ৩ পণ্য-স্তরে (পণ্যটা ৩ দোকানে), আর আলাদা config = আলাদা ভার্সন (IdeaPad Slim 3 15ABR8-এর মতো); নিয়ম ২ শুধু বলে এক ভার্সনের সব অফারের কোড এক হতে হবে।
+
+- **HP ProBook 460 G11** — একই নামে দুই SKU-লাইন: H-সিরিজ (Star Tech + Sell Tech, দুটোতেই একই MPN: **B7PE3PT** = Core Ultra 5 125H 8GB/512GB ৳১,১৭,০০০/১,২৪,৮০০; **B7PE4PT** = Ultra 7 155H 8GB/512GB ৳১,৪২,০০০/১,৪৯,০০০) আর U-সিরিজ (Apple Gadgets + Sumash: Ultra 5 125U 8GB/512GB দুটোতেই ৳৯৯,৯৯৯; Ultra 7 155U 16GB/512GB ৳১,৪২,৯০০/১,২৪,৯৯৯, Sumash-এ HP code A38BHET)। ৪ ভার্সন, প্রতিটা ২ দোকানে, পণ্য ৪ দোকানে। U-সিরিজে অফিসিয়াল চ্যানেল নেই, অ্যাংকর = দোকানের regular দাম (৯৯,৯৯৯; AG-র কাটা ১,৫২,০০০)। Sumash-এর 125U পাতার URL-এ "16gb" থাকলেও শিরোনাম আর Memory সারি 8GB, দামও AG-র 8GB-র সমান — 8GB ধরা।
+- **Lenovo ThinkPad E14 Gen 7** — part number ধরে: **21SXS0N300** (Ultra 5 225U 8GB/512GB) Star Tech ৳১,১৬,৫০০ + Global Brand ৳১,১৬,৫০০ (SO); **21SXS0MU00** (225U 16GB) Global Brand ৳১,২৮,৫০০; **21SXS0HA00** (225H 16GB) Star Tech ৳১,৩৯,৫০০; **21SXS0N500** (Ultra 7 255H 16GB) Star Tech ৳১,৮০,০০০ + Apple Gadgets ৳১,৬২,০০০। ৩ দোকান।
+- **Lenovo ThinkPad E14 Gen 6** — **21M7S0NK00** (Ultra 5 125U 8GB/512GB) Sell Tech ৳১,০৭,০০০ (Star Tech-এ একই part কিন্তু "To be announced", তাই শুধু specsSource); Ultra 5 125H 16GB Apple Gadgets ৳১,২১,০০০; Ultra 7 155H 16GB Apple Gadgets ৳১,৪৯,০০০ + Dazzle ৳১,৫৯,৯৯০। ৩ দোকান (Sell Tech, Apple Gadgets, Dazzle)। Sell Tech-এর 125H/155U আর Global Brand-এর 125H/Ryzen 5 পাতায় দাম নেই — বাদ।
+- **ThinkPad L14 Gen 6 যোগ করা যায়নি:** Intel (part 21S7S36800, Ultra 5 225U 16GB/512GB) Star Tech ৳১,৩৫,৫০০ আছে, Global Brand-এর একই-part পাতায় দাম ০.০০/OutOfStock (অফার নয়), MC Solution-এরটা AMD Ryzen 7 PRO 250 CTO (21S8CTO1WW) — দাম-সহ দোকান ২টা। Binary Logic-এ নেই।
+- **ThinkPad X1 Carbon Gen 12/13 যোগ করা যায়নি:** Star Tech-এর দুই পাতাই "To be announced / Out Of Stock"; Apple Gadgets-এ দামহীন "Pre Order" বোতাম; Global Brand Gen 13 (21NXS0N800, Ultra 7 255H) দাম ০.০০। দাম-সহ শুধু Dazzle (Gen 12 155U 16GB/2TB ৳২,২০,০৯০; Gen 13 Aura 258V 32GB/1TB ৳২,৮৪,৪৯০) আর MC Solution (Gen 12 165U 64GB/1TB 21KC009VMY ৳৩,১৫,০০০; Gen 13 Aura 258V 32GB/1TB ৳৩,৯৮,৯০০) — ২ দোকান, config-ও ভিন্ন। Star Tech দাম দিলে (Gen 13-এর part ওদের ও Global Brand-এ এক: 21NXS0N800) আবার দেখা যাবে। নতুন দোকান যোগ করলেও part/দাম না মিললে লাভ নেই — এটা ঠিকই ধরা হয়েছিল।
+- **Apple Gadgets-এর স্টক লেবেল:** "Availability: in stock" আর "online order" দুটোতেই Add To Cart চালু, মানে কেনা যায় — `inStock: true`। আসল pre-order হলে দাম থাকে না আর বোতামে "Pre Order" লেখা (X1 Carbon)। চার্জার ফ্যানের ৪টা AG অফার (FA26, HX65, HX66, FS03) আগে ভুলে `false` ছিল, `fan.json`-এ `true` করা হয়েছে; DB-তে ২৫ অক্টোবরের seed-এ `false` গেছে, পরের `prices` run-এ AG parser-এর মান বসবে।
+- **worker-এর একটা দুর্বলতা (ঠিক করা হয়নি):** Star Tech-এর "To be announced" পাতায় parser দাম পায় — SEO বর্ণনার "…price in Bangladesh is 107,000৳" বাক্য থেকে (E14 Gen 6-এ ১,০৭,০০০, X1 Carbon-এ ৩,৫০,০০০/৩,৭০,০০০) — আর `inStock: false` দেয়। অর্থাৎ TBA পণ্যে পুরনো দাম "Stock out" হিসেবে সিঙ্ক হতে পারে। Star Tech parser-এ "To be announced" দেখলে দাম বাদ দেওয়া উচিত।
+- **Binary Logic `workers/stores/index.ts`-এ নেই:** ২৪ অক্টোবরের নোটে "worker-এ যোগ হলো" লেখা থাকলেও entry নেই (HEAD আর working tree দুটোতেই); `laptop.json`-এর Binary Logic দামগুলো এখন `genericStore` (JSON-LD) দিয়ে পড়া হয়। দোকান-নিয়ম ৫ মতে entry যোগ করা বাকি।
+
+### স্কিনকেয়ারে নতুন দোকান (২৫ অক্টোবর ২০২৬)
+
+Lira Import আর Her Happy Skin যোগ হলো (robots.txt আর Terms দেখা); বর্তমান স্কিনকেয়ার পণ্যগুলোর সাথে মিলিয়ে ৪১টা নতুন দাম (Lira ১৬, Her Happy Skin ২৫), প্রতিটা পাতা নিজে পড়ে নাম/সাইজ/দাম/স্টক যাচাই, `worker:check`-এ সব ঠিক (০ মেলেনি)।
+
+| দোকান | সাইট | listing | দাম |
+|---|---|---|---|
+| Lira Import | liraimportltd.com | Rank Math product sitemap (`product-sitemap*.xml`, ~২,৫০০ পণ্য) | `wooVariants` (সবগুলোই product-type-simple: `<p class="price">` + instock class) |
+| Her Happy Skin | herhappyskin.com | সাইটম্যাপ নেই, পাতাও JS-এ ফাঁকা; সাইট নিজে `her-api.herhappyskin.com/hst-api` থেকে পড়ে — তালিকা `products/?name=&page=N` (৩৪৪ পণ্য), দাম-স্টক `product-details/<slug>/1453456` (`hhsVariants`) | ওই API-ই |
+
+- Her Happy Skin-এর API টা Django REST: `Accept: text/html` গেলে browsable HTML দেয়, তাই worker-এ `getText`-এর পাশে `getJson` (Accept: application/json) যোগ হয়েছে। robots.txt নেই (৪০৪), Terms লিংক মৃত — Chardike-র মতো কেস।
+- Lira Import-এ CeraVe/Cetaphil/COSRX-এর স্টক ভালো; ২৩৬/২৩৭ml একই ভার্সন ধরা হয়েছে (Arogga-র ৫৬ml≈৫৭g-এর মতো)। Beauty Glazed Glow Lip Oil #104 Love (শেড ভেদ), WishCare Natural স্টক নেই (`inStock: false`)।
+- ম্যাপ করতে গিয়ে বাদ: Lira-র Simple "Refresh Facial Wash Gel" পাতায় সাইজ নেই (নিয়ম ২); Her Happy Skin-এ Relief Sun শুধু ১০ml (Aqua-fresh আলাদা পণ্য), COSRX Snail Peptide Eye Cream শুধু ৫ml।
+- **খেয়াল (২৫ অক্টোবর):** একই রকম কড়া 429 ওই দিন OHSOGO, Ragen, Sneaker Zone আর Splayd-ও (সবই Shopify) দিচ্ছিল — আগের ব্যাচে যাদের `worker:check` পাস করেছিল। বালতি ঠান্ডা হলে এরা আবার পাস করে; কিন্তু Shopify-র দিক থেকে দিন দিন কড়া হচ্ছে বলে সাময়িকভাবে এই দোকানগুলোর কিছু পাতা "দোকান আটকে রাখায় বাদ" হতে পারে।
+
+**Choice Legacy (choicelegacy.com.bd) বাদ:** Shopify দোকান, robots.txt খোলা, নিজেদের `agents.md`-এ পণ্যের পাতা পড়ার অনুমতি আছে (`/products/<handle>`, 429 এলে Retry-After মানতে বলে)। কিন্তু পণ্যের পাতায় (HTML আর `.js` দুটোতেই) রেট লিমিট এত কড়া যে ১২ সেকেন্ড ফাঁকেও ধারাবাহিক 429 (Retry-After 60) — মোটামুটি ১ অনুরোধ/মিনিট। আমাদের ~২৯টা ম্যাপ-হওয়া URL-এ প্রতি `prices` run-এ ~১ ঘণ্টা লাগত, আর worker-এর নিয়মে 429 মানেই দোকান-ব্লক + প্রতিটা পাতা AI দিয়ে পড়া — চলে না। ওদের "Relief Sun : Rice + Niacinamide" পাতাও আমাদের Rice + Probiotics পণ্যের নয়। মালিক চাইলে দোকানের কাছে feed/UCP (`/api/ucp/mcp`) চেয়ে আবার দেখা যাবে।
 
 ### কীভাবে ঢোকানো হলো
 

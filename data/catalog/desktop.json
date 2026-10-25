@@ -1,0 +1,724 @@
+{
+ "category": "desktop",
+ "sites": [
+  {
+   "name": "Star Tech",
+   "website": "https://www.startech.com.bd",
+   "note": "Largest BD computer retailer; brand PC pages are server-rendered with cash price and stock label; official channel warranty. Used for specsSource too."
+  },
+  {
+   "name": "Sell Tech",
+   "website": "https://www.selltech.com.bd",
+   "note": "OpenCart shop, JSON-LD cash price with struck regular price; official-channel brand PC reseller (1-2 year warranty)."
+  },
+  {
+   "name": "Apple Gadgets",
+   "website": "https://www.applegadgetsbd.com",
+   "note": "Cash price plus availability JSON-LD on page; importer channel with shop warranty, treated unofficial."
+  },
+  {
+   "name": "Sumash Tech",
+   "website": "https://www.sumashtech.com",
+   "note": "Cash price with promo strikethroughs; per store config treated unofficial for brand PCs."
+  },
+  {
+   "name": "Global Brand",
+   "website": "https://www.globalbrand.com.bd",
+   "note": "Lenovo/HP authorized distributor; WooCommerce-style pages, JSON-LD price; official channel."
+  },
+  {
+   "name": "PCB Store",
+   "website": "https://pcbstore.com.bd",
+   "note": "Gaming/PC store; brand PC units currently stock-out listings kept with page price; importer channel, treated unofficial."
+  }
+ ],
+ "products": [
+  {
+   "brand": "Dell",
+   "name": "OptiPlex 7020 MT",
+   "category": "desktop",
+   "releaseYear": 2023,
+   "popular": true,
+   "variants": [
+    {
+     "label": "Core i3-14100 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i3-14100",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 75000
+    },
+    {
+     "label": "Core i5-12500 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i5-12500",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 84500
+    },
+    {
+     "label": "Core i5-13500 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i5-13500",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 85000
+    },
+    {
+     "label": "Core i5-14500 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i5-14500",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 86500
+    },
+    {
+     "label": "Core i7-12700 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i7-12700",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 96000
+    },
+    {
+     "label": "Core i7-14700 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i7-14700",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 115000
+    }
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/brand-pc/dell/optiplex-7020/optiplex-7020-01-1200x630.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Dell-Optiplex-7020-MT-12th-Gen-Intel-Core-i5-12500-Intel-UHD-770-Graphics-Brand-PC-3289.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4258/OptiPlex_7020.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/dell-optiplex-7020-core-i3-14th-gen-brand-pc",
+   "offers": [
+    {
+     "variant": "Core i3-14100 8GB / 512GB",
+     "site": "Sell Tech",
+     "url": "https://www.selltech.com.bd/dell-optiplex-7020-core-i3-14th-gen-brand-pc",
+     "price": 64000,
+     "oldPrice": 68550,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i3-14100 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/dell-optiplex-7020-core-i3-14th-gen-brand-pc",
+     "price": 75000,
+     "oldPrice": 80000,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-12500 8GB / 512GB",
+     "site": "Sell Tech",
+     "url": "https://www.selltech.com.bd/dell-optiplex-7020-core-i5-12th-gen-brand-pc",
+     "price": 72000,
+     "oldPrice": 77800,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-12500 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/dell-optiplex-7020-core-i5-12th-gen-brand-pc",
+     "price": 84500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-12500 8GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/dell-optiplex-7020-mt-intel-core-i5-12500-brand-pc",
+     "price": 84500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-13500 8GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/dell-tower-optiplex-7020-core-i5-13th-gen-brand-pc",
+     "price": 79999,
+     "oldPrice": 82000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-14500 8GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/dell-optiplex-7020-mt-intel-core-i5-14500-intel-brand-pc",
+     "price": 86500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i7-12700 8GB / 512GB",
+     "site": "Sell Tech",
+     "url": "https://www.selltech.com.bd/dell-optiplex-7020-core-i7-12th-gen-brand-pc",
+     "price": 96000,
+     "oldPrice": 103400,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i7-14700 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/dell-optiplex-tower-7020-mt-brand-pc",
+     "price": 115000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i7-14700 8GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/dell-optiplex-7020-mt-intel-core-i7-14700-brand-pc",
+     "price": 115000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "brand": "Dell",
+   "name": "Tower ECT1250",
+   "category": "desktop",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "Core i3-14100 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i3-14100",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 75000
+    },
+    {
+     "label": "Core i5-14400 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i5-14400",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 74000
+    },
+    {
+     "label": "Core i5-14500 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i5-14500",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 86500
+    }
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/brand-pc/dell/ect1250/tower-ect1250-01-1200x630.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Dell-Tower-ECT1250-14th-GEN-Intel-Core-i3--14100-Intel-UHD-Graphics-Brand-PC-b-1509.jpg",
+    "https://www.selltech.com.bd/image/cache/catalog/Dell/Dell-ECT1250-Core-i3-14th-Gen-Tower-Brand-PC-600x315w.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/dell-ect1250-core-i3-brand-pc",
+   "offers": [
+    {
+     "variant": "Core i3-14100 8GB / 512GB",
+     "site": "Sell Tech",
+     "url": "https://www.selltech.com.bd/dell-ect1250-core-i3-brand-pc",
+     "price": 60000,
+     "oldPrice": 62700,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i3-14100 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/dell-ect1250-core-i3-brand-pc",
+     "price": 75000,
+     "oldPrice": 80000,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i3-14100 8GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/dell-tower-ect1250-intel-core-i3-14100-brand-pc",
+     "price": 75000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-14400 8GB / 512GB",
+     "site": "Sell Tech",
+     "url": "https://www.selltech.com.bd/dell-ect1250-core-i5-brand-pc",
+     "price": 74000,
+     "oldPrice": 78000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-14400 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/dell-ect1250-core-i5-brand-pc",
+     "price": 105000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-14500 8GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/dell-tower-ect1250-intel-core-i5-14500-brand-pc",
+     "price": 86500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "brand": "Dell",
+   "name": "Pro Tower QCT1250",
+   "category": "desktop",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "Core i5-14500 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i5-14500",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 86500
+    },
+    {
+     "label": "Core i7-14700 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i7-14700",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 130000
+    },
+    {
+     "label": "Core Ultra 5 235 8GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 5 235",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 110000
+    }
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/brand-pc/dell/pro-tower-qct1250/pro-tower-qct1250-01-1200x630.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Dell-Tower-QCT1250-14th-GEN-Intel-Core-i5--14500-Intel-UHD-Graphics-Brand-PC-4289.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4260/QCT1250.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/dell-pro-tower-qct1250-core-ultra-5-brand-pc",
+   "offers": [
+    {
+     "variant": "Core i5-14500 8GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/dell-tower-qct1250-intel-core-i5-14500-brand-pc",
+     "price": 86500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-14500 8GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/dell-tower-qct1250-core-i5-14th-gen-brand-pc",
+     "price": 79999,
+     "oldPrice": 85000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i7-14700 8GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/dell-tower-qct1250-intel-core-i7-14700-brand-pc",
+     "price": 130000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 235 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/dell-pro-tower-qct1250-core-ultra-5-brand-pc",
+     "price": 110000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "brand": "HP",
+   "name": "Pro Tower 280 G9",
+   "category": "desktop",
+   "releaseYear": 2022,
+   "popular": true,
+   "variants": [
+    {
+     "label": "Core i3-12100 4GB / 256GB",
+     "attributes": {
+      "chip": "Core i3-12100",
+      "ram": "4GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 47000
+    },
+    {
+     "label": "Core i3-14100 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i3-14100",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 102000
+    },
+    {
+     "label": "Core i5-14500 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i5-14500",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 117000
+    },
+    {
+     "label": "Core i7-14700 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i7-14700",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 137000
+    }
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/brand-pc/hp-aio/280-pro-g9/280-pro-g9-01-1200x630.webp",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/DESKTOP/HP%20Brand%20PC/Pro%20Tower%20280%20G9%20(B7NY9PT)-2-600x600.webp",
+    "https://pcbstore.com.bd/storage/products/hp-pro-tower-280-g9-core-i3-12th-gen-4gb-ram-256gb-ssd-desktop-pc-main.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/hp-280-pro-g9-mt-core-i3-14th-gen-desktop-pc",
+   "offers": [
+    {
+     "variant": "Core i3-12100 4GB / 256GB",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/hp-pro-tower-280-g9-core-i3-12th-gen-4gb-ram-256gb-ssd-desktop-pc",
+     "price": 47000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i3-14100 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/hp-280-pro-g9-mt-core-i3-14th-gen-desktop-pc",
+     "price": 102000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-14500 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/hp-280-pro-g9-mt-core-i5-14th-gen-desktop-pc",
+     "price": 117000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-14500 8GB / 512GB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/brand-pc/hp-pro-tower-280-g9-b7ny9pt-14th-gen-core-i5-brand-pc",
+     "price": 110000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i7-14700 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/hp-pro-tower-280-g9-core-i7-14th-gen-desktop-pc",
+     "price": 137000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "brand": "Lenovo",
+   "name": "IdeaCentre 08IRH9",
+   "category": "desktop",
+   "releaseYear": 2023,
+   "variants": [
+    {
+     "label": "Core i7-13620H 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i7-13620H",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 97500
+    }
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/brand-pc/lenevo/ideacentre-08irh9/ideacentre-08irh9-01-1200x630.webp",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/DESKTOP/LENOVO/90XW006KLK-2-600x600.webp",
+    "https://pcbstore.com.bd/storage/products/lenovo-ideacentre-08irh9-core-i7-13th-gen-desktop-pc-main.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/lenovo-ideacentre-08irh9-core-i7-brand-pc",
+   "offers": [
+    {
+     "variant": "Core i7-13620H 8GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/lenovo-ideacentre-08irh9-core-i7-brand-pc",
+     "price": 97500,
+     "oldPrice": 98500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i7-13620H 8GB / 512GB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/brand-pc/lenovo-ideacentre-08irh9-90xw006klk-13th-gen-core-i7-tower-brand-pc",
+     "price": 97500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i7-13620H 8GB / 512GB",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/lenovo-ideacentre-08irh9-core-i7-13th-gen-desktop-pc",
+     "price": 90750,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "brand": "Dell",
+   "name": "Pro Slim QCS1250",
+   "category": "desktop",
+   "releaseYear": 2025,
+   "popular": true,
+   "variants": [
+    {
+     "label": "Core i5-14500 8GB / 512GB",
+     "attributes": {
+      "chip": "Core i5-14500",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 116500
+    },
+    {
+     "label": "Core i5-14500 16GB / 512GB",
+     "attributes": {
+      "chip": "Core i5-14500",
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 132000
+    }
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/brand-pc/dell/pro-slim-qcs1250/pro-slim-qcs1250-01-1200x630.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Dell-Pro-Slim-QCS1250-Core-i5-14th-Gen-Brand-PC-3405.png",
+    "https://www.selltech.com.bd/image/cache/catalog/Dell/Dell-Pro-Slim-QCS1250-Core-i5-14th-Gen-Brand-PC-500x500.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/dell-pro-slim-qcs1250-core-i5-brand-pc",
+   "offers": [
+    {
+     "variant": "Core i5-14500 16GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/dell-pro-slim-qcs1250-core-i5-brand-pc",
+     "price": 112000,
+     "oldPrice": 120000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-14500 8GB / 512GB",
+     "site": "Sell Tech",
+     "url": "https://www.selltech.com.bd/dell-pro-slim-qcs1250-8gb-brand-pc",
+     "price": 91500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-14500 8GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/dell-pro-slim-qcs1250-brand-pc",
+     "price": 116500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "brand": "ASUS",
+   "name": "ExpertCenter AiO P440VAK",
+   "category": "desktop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Core 7 240H 16GB / 1TB",
+     "attributes": {
+      "chip": "Core 7 240H",
+      "ram": "16GB",
+      "storage": "1TB"
+     },
+     "officialPrice": 164920
+    },
+    {
+     "label": "Core 5 210H 16GB / 1TB",
+     "attributes": {
+      "chip": "Core 5 210H",
+      "ram": "16GB",
+      "storage": "1TB"
+     },
+     "officialPrice": 121000
+    },
+    {
+     "label": "Core i5-13420H 16GB / 1TB",
+     "attributes": {
+      "chip": "Core i5-13420H",
+      "ram": "16GB",
+      "storage": "1TB"
+     },
+     "officialPrice": 99000
+    }
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/all-in-one-pc/asus/expertcenter-p400-aio-p470vak/expertcenter-p400-aio-p470vak-05-1200x630.webp",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/DESKTOP/ASUS/P44VAK-BPCD710-600x600.webp",
+    "https://www.selltech.com.bd/image/cache/catalog/ASUS%20ExpertCenter%20P440VAK%20Core%20i5%2013th%20Gen%2023.8%20inch%20FHD%20All-in-One%20PC-500x500.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/asus-expertcenter-p400-aio-p440vak-core-7-all-in-one-pc",
+   "offers": [
+    {
+     "variant": "Core 7 240H 16GB / 1TB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/asus-expertcenter-p400-aio-p440vak-core-7-all-in-one-pc",
+     "price": 152000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core 5 210H 16GB / 1TB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/all-in-one-pc/asus-expertcenter-aio-p440vak-bpcd710-intel-core-5-210h-pc",
+     "price": 121000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i5-13420H 16GB / 1TB",
+     "site": "Sell Tech",
+     "url": "https://www.selltech.com.bd/asus-expertcenter-p440vak-core-i5-aio-pc",
+     "price": 94000,
+     "oldPrice": 99000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-25"
+    }
+   ]
+  }
+ ]
+}

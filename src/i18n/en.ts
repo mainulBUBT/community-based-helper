@@ -27,7 +27,7 @@ export const en: Messages = {
     language: "বাংলা",
     languageLabel: "Change language",
   },
-  axis: { chip: "Chip", ram: "RAM", storage: "Storage", size: "Size", connectivity: "Connectivity", edition: "Edition", color: "Color", gpu: "Graphics", cpu: "CPU", resolution: "Resolution", battery: "Battery", capacity: "Capacity" },
+  axis: { chip: "Chip", ram: "RAM", storage: "Storage", size: "Size", connectivity: "Connectivity", edition: "Edition", color: "Color", gpu: "Graphics", cpu: "CPU", resolution: "Resolution", battery: "Battery", capacity: "Capacity", wattage: "Wattage" },
   keySpec: {
     display: "Display",
     chip: "Processor",

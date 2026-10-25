@@ -105,6 +105,16 @@
       "name": "Klassy Missy",
       "website": "https://klassy.com.bd",
       "note": "Next.js premium beauty shop; no product sitemap, so the worker reads the first page of each category from manifest/categories.xml. Product pages carry JSON-LD price and stock."
+    },
+    {
+      "name": "Lira Import",
+      "website": "https://liraimportltd.com",
+      "note": "Imported skincare and cosmetics shop; WooCommerce product pages with current and old prices (wooVariants)."
+    },
+    {
+      "name": "Her Happy Skin",
+      "website": "https://herhappyskin.com",
+      "note": "Skincare shop on a custom Next.js storefront; pages load prices client-side from the shop's own her-api JSON, which the worker reads (hhsVariants)."
     }
   ],
   "products": [
@@ -164,6 +174,16 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "150ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/simple-kind-to-skin-refreshing-facial-gel-wash-150ml",
+          "price": 600,
+          "oldPrice": 700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -222,6 +242,26 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "236ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/hydrating-cleanser-236-ml/",
+          "price": 2100,
+          "oldPrice": 3150,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "236ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/cerave-hydrating-cleanser-236ml",
+          "price": 1950,
+          "oldPrice": 2300,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -280,6 +320,26 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "56ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/moisturizing-cream-56-ml-normal-to-dry/",
+          "price": 1200,
+          "oldPrice": 2450,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "56ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/cerave-moisturizing-cream-for-normal-to-dry-skin-56ml",
+          "price": 1200,
+          "oldPrice": 1350,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -328,6 +388,16 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "100ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/cosrx-advanced-snail-96-mucin-power-essence-30ml-mini-19-cosrx-advanced-snail-96-mucin-power-essence-100ml",
+          "price": 1430,
+          "oldPrice": 1650,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -377,6 +447,16 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "50ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/beauty-of-joseonrelief-sun-cream-spf-50-plus-50-ml-rice-and-probiotics/",
+          "price": 1350,
+          "oldPrice": 2250,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -738,6 +818,16 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-23"
+        },
+        {
+          "variant": "80g",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/dot-key-watermelon-cooling-sunscreen-80-g-spf-50-plus/",
+          "price": 760,
+          "oldPrice": 1100,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -787,6 +877,16 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "30ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/the-ordinary-niacinamide-10-zinc-1-30ml",
+          "price": 1180,
+          "oldPrice": 1400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -826,6 +926,16 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "236ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/cetaphil-gentle-skin-cleanser-236-ml-normal-to-dry-and-sensitive-skin/",
+          "price": 2100,
+          "oldPrice": 3100,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -866,6 +976,16 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "50ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/neutrogena-hydro-boost-water-gel-moisturiser-50ml",
+          "price": 1380,
+          "oldPrice": 1650,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -917,6 +1037,16 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "150ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml",
+          "price": 1700,
+          "oldPrice": 2100,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -957,6 +1087,26 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "250ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/anua-heartleaf-77-percent-soothing-toner-250ml/",
+          "price": 3150,
+          "oldPrice": 4200,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "250ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/anua-heartleaf-77-soothing-toner-250ml",
+          "price": 2100,
+          "oldPrice": 2500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -1096,6 +1246,26 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "100g",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/advanced-snail-92-all-in-one-cream-100g/",
+          "price": 1700,
+          "oldPrice": 2500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "100g",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/cosrx-advanced-snail-92-all-in-one-cream-100g",
+          "price": 1550,
+          "oldPrice": 1900,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -1253,6 +1423,26 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "150ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/cosrx-low-ph-good-morning-gel-cleanser-150-ml/",
+          "price": 1100,
+          "oldPrice": 1500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/cosrx-low-ph-good-morning-gel-cleanser-150ml",
+          "price": 980,
+          "oldPrice": 1150,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -1303,6 +1493,26 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "150ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/salicylic-acid-cleanser-150-ml/",
+          "price": 1020,
+          "oldPrice": 1500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/cosrx-salicylic-acid-daily-gentle-cleanser-150ml",
+          "price": 980,
+          "oldPrice": 1150,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -1342,6 +1552,16 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "24pcs",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/cosrx-acne-pimple-master-patch-1-pack-24pcs",
+          "price": 350,
+          "oldPrice": 450,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -1460,6 +1680,16 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "200ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/isntree-green-tea-fresh-toner-200ml",
+          "price": 1550,
+          "oldPrice": 2080,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -1510,6 +1740,16 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "100ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/skin-1004-madagascar-centella-asiatica-100-ampoule-100ml",
+          "price": 1850,
+          "oldPrice": 2300,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -1756,6 +1996,16 @@
           "site": "Shajgoj",
           "url": "https://shop.shajgoj.com/product/beauty-glazed-glow-lip-oil-109-cherry",
           "price": 249,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "4g",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/beauty-glazed-glow-lip-oil-104-love/",
+          "price": 150,
+          "oldPrice": 230,
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-25"
@@ -2023,6 +2273,26 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "20g",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/laneige-lip-sleeping-mask-ex-berry-20g",
+          "price": 1500,
+          "oldPrice": 1700,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "3g",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/laneige-lip-sleeping-mask-berry-3g",
+          "price": 350,
+          "oldPrice": 400,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -2145,6 +2415,26 @@
           "url": "https://glowellabd.com/product/wishcare-ceramide-lip-balm-with-spf50-pa/",
           "price": 500,
           "oldPrice": 600,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "5g",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/wish-care-ceramide-lip-balm-spf-50-natural/",
+          "price": 380,
+          "oldPrice": 660,
+          "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "5g",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/wishcare-ceramide-lip-balm-with-spf-50-pa-5g",
+          "price": 480,
+          "oldPrice": 580,
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-25"
@@ -2537,6 +2827,26 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/medicube-collagen-night-wrapping-mask-75ml/",
+          "price": 2050,
+          "oldPrice": 3100,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "75ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/medicube-collagen-night-wrapping-mask-75ml",
+          "price": 2050,
+          "oldPrice": 2450,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -2678,6 +2988,16 @@
           "url": "https://www.banglashoppers.com/beauty-of-joseon-ground-rice-and-honey-glow-mask-1580ml.html",
           "price": 2650,
           "inStock": null,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "150ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
+          "price": 1950,
+          "oldPrice": 2450,
+          "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-25"
         }
@@ -3209,6 +3529,26 @@
           "inStock": false,
           "condition": "official",
           "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/aloe-soothing-sun-cream-50ml/",
+          "price": 1120,
+          "oldPrice": 1640,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml",
+          "price": 1050,
+          "oldPrice": 1200,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -3402,6 +3742,26 @@
           "url": "https://koreanmartbd.com/product/isntree-hyaluronic-acid-watery-sun-gel-spf50-pa-10ml",
           "price": 504,
           "inStock": false,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/hyaluronic-acid-watery-sun-gel-spf-50/",
+          "price": 1550,
+          "oldPrice": 1950,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/isntree-hyaluronic-acid-watery-sun-gel-50ml",
+          "price": 1400,
+          "oldPrice": 1600,
+          "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-25"
         }
@@ -3647,6 +4007,26 @@
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/skin-1004-hyalu-cica-water-fit-sun-serum-spf-50-50-ml/",
+          "price": 1400,
+          "oldPrice": 2350,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "50ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-50ml",
+          "price": 1380,
+          "oldPrice": 1700,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
         }
       ]
     },
@@ -3802,6 +4182,26 @@
           "site": "Glowella",
           "url": "https://glowellabd.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-10ml-mini/",
           "price": 500,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml",
+          "price": 1500,
+          "oldPrice": 1850,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "10ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/beauty-of-joseon-revive-eye-serum-ginseng-retinal-10ml",
+          "price": 450,
+          "oldPrice": 800,
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-25"
@@ -4059,6 +4459,26 @@
           "site": "Klassy Missy",
           "url": "https://klassy.com.bd/product/the-ordinary-caffeine-solution-5-egcg-eye-serum-30ml",
           "price": 2148,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/the-ordinarycaffeine-solution-5-percent-egcg-serum-30-ml/",
+          "price": 2152,
+          "oldPrice": 2690,
+          "inStock": true,
+          "condition": "official",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "variant": "30ml",
+          "site": "Her Happy Skin",
+          "url": "https://herhappyskin.com/the-ordinary-caffeine-solution-5-egcg-30ml",
+          "price": 1650,
+          "oldPrice": 1800,
           "inStock": true,
           "condition": "official",
           "checkedAt": "2026-10-25"

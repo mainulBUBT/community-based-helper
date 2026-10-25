@@ -1,9 +1,9 @@
 import { StoreBlocked } from "../lib/errors";
 import { decode, stripTags } from "../lib/html";
-import { getText } from "../lib/http";
+import { getJson, getText } from "../lib/http";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import { appleGadgetsVariants, chardikeVariants, dazzleVariants, gadgetAndGearVariants, kryVariants, maczenVariants, perfectoVariants, startechVariants, sumashVariants, wooVariants } from "./parsers";
+import { appleGadgetsVariants, chardikeVariants, dazzleVariants, gadgetAndGearVariants, hhsVariants, kryVariants, maczenVariants, perfectoVariants, startechVariants, sumashVariants, wooVariants } from "./parsers";
 import type { Condition, Listing, Store } from "./types";
 
 const site = (url: string) => new URL(url).host.replace(/^www\./, "");
@@ -61,6 +61,7 @@ const STARTECH_CATEGORIES = [
   "/accessories/headphone",
   "/power-bank",
   "/monitor",
+  "/desktops/brand-pc",
   "/mobile-phone-charger-adapter",
   "/charger-fan",
 ];
@@ -197,6 +198,35 @@ const klassy: Store = {
       for (const [, slug] of html.matchAll(/\/products?\/([A-Za-z0-9-]+)/g)) urls.add(`${KLASSY}/product/${slug}`);
     }
     return [...urls].map(slugListing);
+  },
+};
+
+// Her Happy Skin (Next.js): পাতায় দাম JS-এ আসে; তালিকা আর দাম-স্টক দুটোই সাইট নিজে যে API থেকে
+// পড়ে (her-api) সেখান থেকে — প্রতি পাতায় ২০টা পণ্য, লিংকের পরের পাতা links.next এ
+const HHS = "https://herhappyskin.com";
+
+const herhappyskin: Store = {
+  id: "herhappyskin",
+  name: "Her Happy Skin",
+  origin: HHS,
+  rendered: false,
+  condition: "official",
+  sample: `${HHS}/cosrx-advanced-snail-96-mucin-power-essence-30ml-mini-19-cosrx-advanced-snail-96-mucin-power-essence-100ml`,
+  promoUrl: null,
+  variants: hhsVariants,
+  async discover() {
+    const all: Listing[] = [];
+    for (let page = 1; page <= 40; page++) {
+      const data = (await getJson(`https://her-api.herhappyskin.com/hst-api/products/?name=&page=${page}`)) as
+        | { results?: { name: string; slug: string; price: number; discount_price: number }[]; links?: { next: string | null } }
+        | null;
+      if (!data) break;
+      for (const item of data.results ?? []) {
+        all.push({ title: item.name, url: `${HHS}/${item.slug}`, price: item.discount_price || item.price, oldPrice: item.discount_price ? item.price : null });
+      }
+      if (!data.links?.next) break;
+    }
+    return all;
   },
 };
 
@@ -519,6 +549,17 @@ export const stores: Store[] = [
     condition: "official",
     variants: wooVariants,
   }),
+  sitemapStore({
+    id: "liraimport",
+    name: "Lira Import",
+    origin: "https://liraimportltd.com",
+    sample: "https://liraimportltd.com/product/medicube-collagen-night-wrapping-mask-75ml/",
+    sitemap: "https://liraimportltd.com/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  herhappyskin,
 ];
 
 // তালিকায় না থাকা দোকানের পুরনো দামও বাদ যায় না: JSON-LD/itemprop/og দিয়ে চেষ্টা

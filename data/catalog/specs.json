@@ -16991,5 +16991,4734 @@
     }
    ]
   }
+ ],
+ "https://www.startech.com.bd/viewsonic-va2214-h-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "22 inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD (1920 x 1080)"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.249 mm (H) x 0.241 mm (V)"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare, Hard Coating (3H)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178º horizontal, 178º vertical"
+    },
+    {
+     "label": "Brightness",
+     "value": "250 cd/m² (typ)"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "Static Contrast Ratio: 1,000:1 (typ) Dynamic Contrast Ratio: 50M:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "100Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "Colors: 16.7M Color Space Support: 8 bit (6 bit + FRC)"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "NTSC: 72% size (Typ) sRGB: 104% size (Typ)"
+    },
+    {
+     "label": "Response Time",
+     "value": "4ms (Typical GTG)"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Color Temperature Selection",
+     "value": "32°F to 104°F (0°C to 40°C)"
+    },
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "VGA",
+     "value": "VGA: 1"
+    },
+    {
+     "label": "HDMI",
+     "value": "HDMI 1.4: 1"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5MM Audio Out x 1"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "-5º / 20º"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100 x 100 mm"
+    },
+    {
+     "label": "Security Locker",
+     "value": "Kensington Lock Slot"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Physical (in.): 19.42 x 15.17 x 8.12 Physical Without Stand (in.): 19.42 x 11.42 x 1.97"
+    },
+    {
+     "label": "Weight",
+     "value": "Net (lbs): 6 Net Without Stand (lbs): 5.3 Gross (lbs): 8.4"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Internal Power Supply"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "Consumption (typical): 17W Consumption (max): 21.3W"
+    },
+    {
+     "label": "Voltage",
+     "value": "AC 100-240V"
+    },
+    {
+     "label": "Others",
+     "value": "Eco Mode (Conserve): 13W Eco Mode (optimized): 15W Stand-by: 0.3W"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/viewsonic-va2432a-h-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "24\""
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS Technology"
+    },
+    {
+     "label": "Resolution",
+     "value": "Full HD (1920 x 1080)"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.275 mm (H) x 0.275 mm (V)"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare, Hard Coating (3H)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178º horizontal, 178º vertical"
+    },
+    {
+     "label": "Brightness",
+     "value": "250 cd/m² (typ)"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "Static Contrast Ratio: 1,000:1 (typ) Dynamic Contrast Ratio: 50M:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "Colors: 16.7M Color Space Support: 8 bit (6 bit + Hi-FRC)"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "NTSC: 75% size (Typ) sRGB: 105% size / 99% coverage (Typ)"
+    },
+    {
+     "label": "Response Time",
+     "value": "1ms (MPRT)"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    },
+    {
+     "label": "Others Features",
+     "value": "Backlight Life (Hours): 30000 Hrs (Min)"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "No"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "VGA",
+     "value": "1x VGA"
+    },
+    {
+     "label": "Display Port",
+     "value": "Yes"
+    },
+    {
+     "label": "HDMI",
+     "value": "1x HDMI 1.4"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "1 x 3.5mm Audio Out"
+    },
+    {
+     "label": "Others",
+     "value": "Power in: DC Socket (Center Positive)"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "-3º / 20º"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "75 x 75 mm"
+    },
+    {
+     "label": "Security Locker",
+     "value": "Kensington Lock"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Packaging (in.): 23.6 x 15.6 x 4.4 Physical (in.): 21.3 x 16 x 7.3 Physical Without Stand (in.): 21.3 x 12.7 x 1.4"
+    },
+    {
+     "label": "Weight",
+     "value": "Net (kg): 2.7 Net Without Stand (kg): 2.4 Gross (kg): 3.7"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "External Power Adaptor"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "Eco Mode (Conserve): 15W Eco Mode (optimized): 18W Consumption (typical): 22W Consumption (max): 25W Stand-by: 0.3W"
+    },
+    {
+     "label": "Voltage",
+     "value": "AC 100-240V"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-vz24ehf-eye-care-gaming-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "23.8-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "1920x1080"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.2745mm"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Non-Glare"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "(CR≧10, H/V) : 178°/ 178°"
+    },
+    {
+     "label": "Brightness",
+     "value": "250cd/㎡"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1300:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "100Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "16.7M"
+    },
+    {
+     "label": "Response Time",
+     "value": "1ms MPRT"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Color Temperature Selection",
+     "value": "Yes(4 modes)"
+    },
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    },
+    {
+     "label": "G-Sync Support",
+     "value": "Adaptive-Sync"
+    },
+    {
+     "label": "HDCP",
+     "value": "Yes, 1.4"
+    },
+    {
+     "label": "Others",
+     "value": "Eye Care+ Technology : Yes Trace Free Technology : Yes SPLENDID Technology : Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "HDMI(v1.4) x 1"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "Yes (+23° ~ -5°)"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "75x75mm"
+    },
+    {
+     "label": "Security Locker",
+     "value": "Kensington Lock"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Phys. Dimension (W x H x D) : 54.02 x 39.39 x 21.01 cm (21.27\" x 15.51\" x 8.27\") Phys. Dimension without Stand (W x H x D) : 54.02 x 31.65 x 3.89 cm (21.27\" x 12.46\" x 1.53\")"
+    },
+    {
+     "label": "Weight",
+     "value": "Net Weight : 2.85 kg (6.28 lbs) Net Weight without Stand : 2.45 kg (5.40 lbs)"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "Power Consumption : <19W Power Saving Mode : <0.5W Power Off Mode : <0.3W"
+    },
+    {
+     "label": "Voltage",
+     "value": "100-240V, 50/60Hz"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-vp229hf-gaming-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "21.45 inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD (1920x1080)"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.249 mm"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Non-Glare"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178°/ 178°"
+    },
+    {
+     "label": "Brightness",
+     "value": "250cd/㎡"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "100Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "16.7M"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "(sRGB) : 99%"
+    },
+    {
+     "label": "Response Time",
+     "value": "1ms MPRT"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Color Temperature Selection",
+     "value": "Yes(4 modes)"
+    },
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    },
+    {
+     "label": "HDCP",
+     "value": "Yes, 1.4"
+    },
+    {
+     "label": "Others",
+     "value": "Motion Sync : Yes Eye Care+ Technology : Yes"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "VGA",
+     "value": "VGA x 1"
+    },
+    {
+     "label": "HDMI",
+     "value": "HDMI(v1.4) x 1"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "Yes (+23° ~ -5°)"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100x100mm"
+    },
+    {
+     "label": "Security Locker",
+     "value": "Kensington Lock: Yes"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Phys. Dimension (W x H x D) : 49.36 x 35.76 x 20.44 cm (19.43\" x 14.08\" x 8.05\") Phys. Dimension without Stand (W x H x D) : 49.36 x 29.12 x 4.97 cm (19.43\" x 11.46\" x 1.96\")"
+    },
+    {
+     "label": "Weight",
+     "value": "Net Weight: 2.72 kg (6.00 lbs) Net Weight without Stand: 2.36 kg (5.20 lbs) Gross Weight: 4.20 kg (9.26 lbs)Net Weight : 2.7 kg (5.95 lbs) Net Weight without Stand : 2.3 kg (5.07 lbs) Gross Weight : 3.8 kg (8.38 lbs)"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "<12.79W"
+    },
+    {
+     "label": "Voltage",
+     "value": "100-240V, 50/60Hz"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/philips-22e1n1200a-fhd-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "21.5 inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD (1920 x 1080)"
+    },
+    {
+     "label": "Pixels Per Inch (PPI)",
+     "value": "92.56 PPI"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.2745 x 0.2745 mm"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-glare 3H display"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178º (H)/178º (V)"
+    },
+    {
+     "label": "Brightness",
+     "value": "250 cd/m²"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "100Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "16.7 M"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "Yes"
+    },
+    {
+     "label": "Response Time",
+     "value": "1 ms (GTG)"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    },
+    {
+     "label": "G-Sync Support",
+     "value": "Adaptive Sync"
+    },
+    {
+     "label": "Free Sync Support",
+     "value": "Yes"
+    },
+    {
+     "label": "HDCP",
+     "value": "1.4 (HDMI)"
+    },
+    {
+     "label": "Others",
+     "value": "sRGB Picture enhancement: SmartImage game Plug & Play Compatibility: DDC/CI, Mac OS X,sRGB, Windows 11 / 10"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "Yes"
+    },
+    {
+     "label": "Speaker Details",
+     "value": "2Wx2"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "VGA",
+     "value": "1x VGA"
+    },
+    {
+     "label": "Display Port",
+     "value": "1x Display Port"
+    },
+    {
+     "label": "HDMI",
+     "value": "1x HDMI1.4"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "1x Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "-5/20 degree"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100x100mm"
+    },
+    {
+     "label": "Security Locker",
+     "value": "Kensington lock"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Product with stand(max height): 493x376x220 mm Product without stand (mm): 493x294x45 mm Packaging in mm (WxHxD): 565x368x131 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "Product with stand (kg): 2.61 kg Product without stand (kg): 2.23 kg Product with packaging (kg): 4.39 kg"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "External"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "On mode: 13.3 W (typ.) Standby mode: 0.5 W (typ.) Off mode: 0.3 W (typ.)"
+    },
+    {
+     "label": "Voltage",
+     "value": "100-240VAC, 50-60Hz"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/benq-gw2283-ips-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "21.5 Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "Full HD (1920x1080)"
+    },
+    {
+     "label": "Pixels Per Inch (PPI)",
+     "value": "102"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178°/178°"
+    },
+    {
+     "label": "Brightness",
+     "value": "250 nits"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "16.7 million color"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "72% NTSC"
+    },
+    {
+     "label": "Response Time",
+     "value": "5ms (GtG)"
+    },
+    {
+     "label": "Others Features",
+     "value": "Picture Mode: ECO, Game, Low Blue Light, Movie, Photo, sRGB, Standard, User"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Color Temperature Selection",
+     "value": "Bluish, Normal, Reddish, User Define"
+    },
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    },
+    {
+     "label": "HDCP",
+     "value": "1.4"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "Yes"
+    },
+    {
+     "label": "Speaker Details",
+     "value": "1Wx2"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "VGA",
+     "value": "VGAx 1"
+    },
+    {
+     "label": "HDMI",
+     "value": "HDMI (v1.4) x 2"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "Headphone Jack: Yes Audio Line In : Yes"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "-5˚ - 20˚"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100x100 mm"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Dimensions (HxWxD) (mm): 394.4x489.5x175.1 Dimensions (HxWxD) (inch): 15.5x19.3x6.9 Dimensions (HxWxD) (w/o Base) (mm): 310.9x489.5x55.3 Dimensions (HxWxD) (w/o Base) (inch): 12.2x19.3x2.2"
+    },
+    {
+     "label": "Weight",
+     "value": "Net Weight (kg): 3.7 Net Weight (lb): 8.2 Net Weight (w/o Base) (kg): 2.9 Net Weight (w/o Base) (lb): 6.4"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "<0.5 W"
+    },
+    {
+     "label": "Voltage",
+     "value": "100 - 240V"
+    },
+    {
+     "label": "Others",
+     "value": "Power Supply: Built-in"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/benq-gw2291-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "21.5 inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED backlight"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD (1920x1080)"
+    },
+    {
+     "label": "Pixels Per Inch (PPI)",
+     "value": "102"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Matte"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178°/178°"
+    },
+    {
+     "label": "Brightness",
+     "value": "Brightness (typ.): 250 nits"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1300:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "100 Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "16.7 million color"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "72% NTSC"
+    },
+    {
+     "label": "Response Time",
+     "value": "5ms"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    },
+    {
+     "label": "Others Features",
+     "value": "Certification: Eye Comfort 2.0, EyeSafe 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Color Temperature Selection",
+     "value": "Standard, Game, Care mode, Cinema"
+    },
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    },
+    {
+     "label": "HDCP",
+     "value": "1.4"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "Yes"
+    },
+    {
+     "label": "Speaker Details",
+     "value": "2Wx2"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "VGA",
+     "value": "1 x VGA"
+    },
+    {
+     "label": "HDMI",
+     "value": "1x HDMI (v1.4)"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "-5˚ - 20˚"
+    },
+    {
+     "label": "Height Adjustment",
+     "value": "N/A"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100x100 mm"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Dimensions (HxWxD) (mm) 379.5x489.4x191.4 Dimensions (HxWxD) (inch) 14.9x19.3x7.5 Dimensions (HxWxD) (w/o Base) (mm) 291.5x489.4x53.3 Dimensions (HxWxD) (w/o Base) (inch) 11.5x19.3x2.1"
+    },
+    {
+     "label": "Weight",
+     "value": "Net Weight (kg) 2.56"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "Power Consumption (normal): 15 W Power Consumption (max): 24 W Power Consumption (sleep mode): <0.5 W"
+    },
+    {
+     "label": "Voltage",
+     "value": "100 - 240V"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/dahua-dhi-lm22-a201yfs-fhd-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "21.45\""
+    },
+    {
+     "label": "Display Type",
+     "value": "LED Backlit Display"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD (1920×1080)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178°(H)/178°(V)"
+    },
+    {
+     "label": "Brightness",
+     "value": "250 cd/㎡(max)"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "100Hz (max)"
+    },
+    {
+     "label": "Color Support",
+     "value": "16.7M(8bit)"
+    },
+    {
+     "label": "Response Time",
+     "value": "10 ms (Max)"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "VGA",
+     "value": "VGA×1"
+    },
+    {
+     "label": "HDMI",
+     "value": "HDMI×1"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Vesa Wall Mount",
+     "value": "75x75mm (3.0\"x3.0\")"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "492.7×284.0×41.2mm (without stand)"
+    },
+    {
+     "label": "Weight",
+     "value": "2.05kg (4.51lb)"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "DC 12V"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "22W (Standard) ≤0.5W (Standby)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/dahua-dhi-lm22-a211y-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "21.45\""
+    },
+    {
+     "label": "Display Type",
+     "value": "ELED Backlit Display"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD (1920×1080)"
+    },
+    {
+     "label": "Pixels Per Inch (PPI)",
+     "value": "102.7"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178°(H)/178°(V)"
+    },
+    {
+     "label": "Brightness",
+     "value": "250 cd/㎡(max)"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz (Overclocked)"
+    },
+    {
+     "label": "Color Support",
+     "value": "6 bit + FRC"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "72% NTSC(typ.)"
+    },
+    {
+     "label": "Response Time",
+     "value": "MPRT 1 ms"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Flicker Free",
+     "value": "YES"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "No"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "VGA",
+     "value": "VGA×1"
+    },
+    {
+     "label": "HDMI",
+     "value": "HDMI×1"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Height Adjustment",
+     "value": "N/A"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100 mm × 100 mm"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "491.4 mm × 290.8 mm × 45.2 mm without wall-mount bracket"
+    },
+    {
+     "label": "Weight",
+     "value": "Net Weight 2.3 kg Gross Weight 3.3 kg"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "12 VDC, 2 A"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "15.0 W (basic), 19.2W (typ.), 20.0 W (max) Standby Power Consumption <0.5 W"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/viewsonic-va221a-h-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "22 inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD (1920 x 1080)"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.249 mm (H) x 0.241 mm (V)"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare, Hard Coating (3H)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178º horizontal, 178º vertical"
+    },
+    {
+     "label": "Brightness",
+     "value": "250 cd/m² (typ)"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "Static Contrast Ratio: 1,000:1 (typ) Dynamic Contrast Ratio: 50M:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "Colors: 16.7M Color Space Support: 8 bit (6 bit + FRC)"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "NTSC: 72% size (Typ) sRGB: 104% size (Typ)"
+    },
+    {
+     "label": "Response Time",
+     "value": "1ms (MPRT)"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Color Temperature Selection",
+     "value": "32°F to 104°F (0°C to 40°C)"
+    },
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "VGA",
+     "value": "VGA: 1"
+    },
+    {
+     "label": "HDMI",
+     "value": "HDMI 1.4: 1"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "-5º / 20º"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "75 x 75 mm"
+    },
+    {
+     "label": "Security Locker",
+     "value": "Kensington Lock Slot"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Packaging (in.): 21.7 x 15 x 4.2 Physical (in.): 19.49 x 15.04 x 7.44 Physical Without Stand (in.): 19.49 x 11.3 x 2"
+    },
+    {
+     "label": "Weight",
+     "value": "Net (kg): 2.5 Net Without Stand (kg): 2.1 Gross (kg): 3.3"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "External Power Adaptor"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "Eco Mode (Conserve): 15W Eco Mode (optimized): 18W Consumption (typical): 21W Consumption (max): 23W"
+    },
+    {
+     "label": "Voltage",
+     "value": "AC 100-240V"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/dell-optiplex-7020-core-i3-14th-gen-brand-pc": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "14th Generation Intel Core i3-14100-4C (3.50 up to 4.70GHz, 12MB)"
+    },
+    {
+     "label": "Motherboard",
+     "value": "Intel Q670"
+    },
+    {
+     "label": "RAM",
+     "value": "8GB (1X8G) DDR5 5600MHz Non-ECC, 2 DIMM slots"
+    },
+    {
+     "label": "Graphics Card",
+     "value": "Integrated Intel UHD Graphics 730"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB PCIe NVMe SSD"
+    },
+    {
+     "label": "Audio",
+     "value": "Integrated High Definition Audio Codec Internal Dell Business Audio Speaker"
+    },
+    {
+     "label": "Power Supply",
+     "value": "Standard 180W PSU"
+    },
+    {
+     "label": "Network & Wireless Connectivity",
+     "value": "Integrated Gigabit LAN-On-Motherboard"
+    },
+    {
+     "label": "Operating System",
+     "value": "Free-Dos"
+    },
+    {
+     "label": "Others",
+     "value": "Bays: (3) SATA slots for 3.5-inch/2.5-inch HDD/SSD, and optical Drive I/O Slots: Full-height Gen 3 PCIe x16 slot (2) full-height Gen 3 PCIe x1 slots 2 x M.2"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Keyboard",
+     "value": "Dell KB216 Wired Black Business Keyboard (English)"
+    },
+    {
+     "label": "Mouse",
+     "value": "Dell Optical Mouse-MS116"
+    },
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "External I/O Ports",
+     "value": "Front: 2 USB 2.0 1 USB 3.2 Gen 1 Type-C port 1 USB 3.2 Gen 1 port 1 Universal audio port Rear: 2 USB 2.0 ports with SmartPower On 2 USB 3.2 Gen 1 ports 1 DisplayPort port 1 RJ45 Ethernet port 1 HDMI 1.4b port"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/dell-ect1250-core-i3-brand-pc": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "14th Generation Intel Core i3-14100 (12 MB cache, 4 Cores, 8 threads, up to 4.7 GHz)"
+    },
+    {
+     "label": "Motherboard",
+     "value": "Intel Q670"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB (1 x 8) DDR5, 4800 MT/s, single-channel"
+    },
+    {
+     "label": "Graphics Card",
+     "value": "Intel UHD Graphics 730"
+    },
+    {
+     "label": "Storage",
+     "value": "512 GB PCIe NVMe SSD"
+    },
+    {
+     "label": "Audio",
+     "value": "Realtek ALC3204 High Definition Audio"
+    },
+    {
+     "label": "Power Supply",
+     "value": "180W Bronze Power Supply"
+    },
+    {
+     "label": "Network & Wireless Connectivity",
+     "value": "Wi-Fi 6"
+    },
+    {
+     "label": "Operating System",
+     "value": "Free DOS"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Keyboard",
+     "value": "Dell USB Business Keyboard"
+    },
+    {
+     "label": "Mouse",
+     "value": "Dell USB Optical Mouse"
+    },
+    {
+     "label": "External I/O Ports",
+     "value": "1x DisplayPort 1.4a (HBR2 support) port 1x HDMI 2.1 (TMDS) port 1x RJ45 Ethernet port (1 Gbps) 2x USB 2.0 (480 Mbps) ports 2x USB 2.0 (480 Mbps) with SmartPower On ports 3x USB 3.2 Gen 1 (5 Gbps) ports 1x USB 3.2 Gen 1 Type-C (5 Gbps) port 1x Global Handset Audio Jack 2x full-height PCIe x1 slots 1x full-height PCIe x16 slot M.2 1x M.2 2230 slot for Wi-Fi 6 and Bluetooth combo card 1x M.2 2230/2280 slot for solid-state drive 1x SATA 3.0 slots for 3.5-inch hard-disk drive"
+    }
+   ]
+  },
+  {
+   "group": "Physical Details",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Height: 324.30 mm (12.77 in.) Width: 154 mm (6.06 in.) Depth: 293 mm (11.54 in.)"
+    },
+    {
+     "label": "Weight",
+     "value": "Weight (minimum): 5.45 kg (12.02 lb) Weight (maximum): 6.86 kg (15.12 lb)"
+    },
+    {
+     "label": "Color",
+     "value": "Standard Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/dell-pro-tower-qct1250-core-ultra-5-brand-pc": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "Intel Core Ultra 5 235 (24MB cache, 14 Cores, 14 threads, up to 5.0GHz)"
+    },
+    {
+     "label": "RAM",
+     "value": "1 x 8GB DDR5"
+    },
+    {
+     "label": "Graphics Card",
+     "value": "Intel Integrated Graphics"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB M.2 PCIe NVMe SSD"
+    },
+    {
+     "label": "Power Supply",
+     "value": "180W Built in"
+    },
+    {
+     "label": "Network & Wireless Connectivity",
+     "value": "1 x Ethernet (RJ-45)"
+    },
+    {
+     "label": "Operating System",
+     "value": "Free DOS"
+    },
+    {
+     "label": "Security Management",
+     "value": "Kensington lock"
+    },
+    {
+     "label": "Others",
+     "value": "Intel AI Boost 13 AI TOPS"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Keyboard",
+     "value": "Dell USB Business Keyboard"
+    },
+    {
+     "label": "Mouse",
+     "value": "Dell USB Optical Mouse"
+    },
+    {
+     "label": "External I/O Ports",
+     "value": "Front: 2 x USB 2.0, 1 x USB 3.2 Gen 1, Rear: 2 x USB 2.0 with SmartPower On, 2 x USB 3.2 Gen 1 x USB 3.2 Gen 1 Type-C 1 x HDMI 1 x Displayport (DP) 3 full-height PCIe expansion slots (x1, x1, x16)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Details",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "324.30 x 154.00 x 293.00mm"
+    },
+    {
+     "label": "Weight",
+     "value": "6.78 kg"
+    },
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/hp-280-pro-g9-mt-core-i3-14th-gen-desktop-pc": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "14th Generation Intel Core i3-14100-4C (3.50 up to 4.70GHz, 12MB)"
+    },
+    {
+     "label": "Motherboard",
+     "value": "Intel H670 Chipset"
+    },
+    {
+     "label": "RAM",
+     "value": "8GB DDR5"
+    },
+    {
+     "label": "Graphics Card",
+     "value": "Intel UHD 770 Graphics"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB SSD"
+    },
+    {
+     "label": "Audio",
+     "value": "Realtek ALC3867 codec, combo microphone/headphone jack"
+    },
+    {
+     "label": "Power Supply",
+     "value": "180W"
+    },
+    {
+     "label": "Network & Wireless Connectivity",
+     "value": "1 x RJ-45 Intel 802.11a/b/g/n/ac (2x2) Wi-Fi and Bluetooth 4.2"
+    },
+    {
+     "label": "Operating System",
+     "value": "FreeDos"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Keyboard",
+     "value": "HP USB Keyboard"
+    },
+    {
+     "label": "Mouse",
+     "value": "HP USB Mouse"
+    },
+    {
+     "label": "External I/O Ports",
+     "value": "2 x USB 2.0, 4 x USB 3.0 Type-A 2 x USB 3.0 Type-C 1x HDMI Port 1x VGA/D-Sub Expansion Slots 1 x full-height PCI, 2 x M.2, 1 x PCIe 3 x 1, 1 x PCIe 4 x 16"
+    }
+   ]
+  },
+  {
+   "group": "Physical Details",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "55 x 305 x 337mm"
+    },
+    {
+     "label": "Weight",
+     "value": "10.4 lb; 4.7 kg"
+    },
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/lenovo-ideacentre-08irh9-core-i7-brand-pc": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "Intel Core i7-13620H 10 Cores (6P + 4E) 16 Threads Frequency: P-core up to 4.9GHz, E-core up to 3.6GHz 24MB Intel Smart Cache"
+    },
+    {
+     "label": "Motherboard",
+     "value": "Chipset: Intel B760 Chipset"
+    },
+    {
+     "label": "RAM",
+     "value": "1x 8GB SODIMM DDR5-5200 Memory Slots: Two DDR5 SODIMM slots, Dual-channel capable Expandable Memory: Up to 32GB DDR5-5200"
+    },
+    {
+     "label": "Graphics Card",
+     "value": "Integrated Intel UHD Graphics"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB M.2 2280 PCIe 4.0x4 NVMe SSD Max Storage Support: Up to three drives, 1x 3.5\" HDD + 2x M.2 SSD • 3.5\" HDD bay only for customer self-upgrade • M.2 SSD up to 1TB each"
+    },
+    {
+     "label": "Audio",
+     "value": "Audio Chip: High Definition (HD) Audio, Realtek ALC623-CG codec 24-bit DAC supports 44.1K/48K/96K sample rate, 2-channel DAC supports 16/20/24-bit PCM format for independent two stereo channels or 2.1 audio playback 24-bit ADC supports 44.1K/48K/96K sample rate, 2-channel ADC supports 16/20/24-bit PCM format for independent two stereo channel audio inputs"
+    },
+    {
+     "label": "Power Supply",
+     "value": "260W 90%"
+    },
+    {
+     "label": "Network & Wireless Connectivity",
+     "value": "Wi-Fi 6, 802.11ax 2x2 + BT5.2 Ethernet: Integrated 100/1000M"
+    },
+    {
+     "label": "Operating System",
+     "value": "FreeDOS"
+    },
+    {
+     "label": "Security Management",
+     "value": "Security Chip: Firmware TPM 2.0 integrated in SoC"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Keyboard",
+     "value": "USB Calliope Keyboard, Black, English"
+    },
+    {
+     "label": "Mouse",
+     "value": "USB Calliope Mouse, Black"
+    },
+    {
+     "label": "External I/O Ports",
+     "value": "Front Ports: 1x USB-C (USB 5Gbps / USB 3.2 Gen 1), with 15W charging 2x USB-A (USB 5Gbps / USB 3.2 Gen 1) 1x headphone/microphone combo jack (3.5mm) 1x microphone (3.5mm) Rear Ports: 1x USB-A (USB 5Gbps / USB 3.2 Gen 1) 1x USB-A (USB 5Gbps / USB 3.2 Gen 1), with Smart Power On 2x USB-A (Hi-Speed USB / USB 2.0) 1x HDMI 2.1 TMDS 1x VGA 1x Ethernet (RJ-45) 1x audio-out (3.5mm) 1x power connector"
+    }
+   ]
+  },
+  {
+   "group": "Physical Details",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "89 x 291.4 x 339.5mm (3.5 x 11.5 x 13.4 inches)"
+    },
+    {
+     "label": "Weight",
+     "value": "Around 3.59 kg (7.9 lbs)"
+    },
+    {
+     "label": "Color",
+     "value": "Cloud Grey"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/benq-gw2491-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "23.8 inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED backlight"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD (1920x1080)"
+    },
+    {
+     "label": "Pixels Per Inch (PPI)",
+     "value": "93"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178°/178°"
+    },
+    {
+     "label": "Brightness",
+     "value": "Brightness (typ.): 250 nits"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1300:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "100 Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "16.7 million color"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "99% sRGB"
+    },
+    {
+     "label": "Response Time",
+     "value": "5ms"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    },
+    {
+     "label": "Others Features",
+     "value": "Gamma: 1.8 - 2.6 Certification: Eye Comfort 2.0, EyeSafe 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Color Temperature Selection",
+     "value": "Bluish, Normal, Reddish, User Define"
+    },
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    },
+    {
+     "label": "HDCP",
+     "value": "1.4"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Display Port",
+     "value": "1x DisplayPort (v1.2)"
+    },
+    {
+     "label": "HDMI",
+     "value": "1x HDMI (v1.4)"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "-5˚ - 20˚"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100x100 mm"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Dimensions (HxWxD) (mm) 416x542x182 Dimensions (HxWxD) (inch) 16.4x21.4x7.2 Dimensions (HxWxD) (w/o Base) (mm) 318x542x48 Dimensions (HxWxD) (w/o Base) (inch) 12.5x21.4x1.9"
+    },
+    {
+     "label": "Weight",
+     "value": "Net Weight (kg) 3.06 Net Weight (lb) 6.75 Net Weight (w/o Base) (kg) 2.67 Net Weight (w/o Base) (lb) 5.88"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "Power Consumption (normal): 17 W Power Consumption (max): 22 W Power Consumption (sleep mode): <0.5 W"
+    },
+    {
+     "label": "Voltage",
+     "value": "100 - 240V"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/viewsonic-va2732-mhd-3-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "27\""
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS Technology"
+    },
+    {
+     "label": "Resolution",
+     "value": "1920 X 1080"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.311 mm (H) x 0.311 mm (V)"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178º horizontal, 178º vertical"
+    },
+    {
+     "label": "Brightness",
+     "value": "250 cd/m² (typ)"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "Static Contrast Ratio: 1,300:1 (typ) Dynamic Contrast Ratio: 50M:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "100Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "Colors: 16.7M Color Space Support: 8 bit (6 bit + FRC)"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "NTSC: 72% size (Typ) sRGB: 104%"
+    },
+    {
+     "label": "Response Time",
+     "value": "1ms (MPRT)"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "Dual 2W Speakers"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "VGA",
+     "value": "1 x VGA"
+    },
+    {
+     "label": "Display Port",
+     "value": "1 x Display Port"
+    },
+    {
+     "label": "HDMI",
+     "value": "1 x HDMI 1.4"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5mm Audio Out"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "-3º / 20º"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100 x 100 mm"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "695 x 460 x 145 mm"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "External Power Adaptor"
+    },
+    {
+     "label": "Voltage",
+     "value": "AC 100-240V"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/viewsonic-vx24g30-gaming-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "24 inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "1920 x 1080"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.275 mm (H) x 0.275 mm (V)"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare, Hard Coating (3H)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178º horizontal, 178º vertical"
+    },
+    {
+     "label": "Brightness",
+     "value": "300 cd/m² (typ)"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "Static Contrast Ratio: 1,000:1 (typ) Dynamic Contrast Ratio: 80M:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "240Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "Colors: 16.7M Color Space Support: 8 bit (6 bit + FRC)"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "NTSC: 72% size (Typ) sRGB: 104% size (Typ)"
+    },
+    {
+     "label": "Response Time",
+     "value": "0.8ms MPRT"
+    },
+    {
+     "label": "HDR",
+     "value": "HDR10"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    },
+    {
+     "label": "G-Sync Support",
+     "value": "Adaptive Sync"
+    },
+    {
+     "label": "Free Sync Support",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Display Port",
+     "value": "Yes"
+    },
+    {
+     "label": "HDMI",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "-5º / 20º"
+    },
+    {
+     "label": "Height Adjustment",
+     "value": "N/A"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100 x 100 mm"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Packaging (in.): 23.8 x 15.7 x 4.7 Physical (in.): 21.3 x 16.3 x 7.2 Physical Without Stand (in.): 21.3 x 12.7 x 1.7"
+    },
+    {
+     "label": "Weight",
+     "value": "Net (kg): 3.2 Net Without Stand (kg): 2.8 Gross (kg): 4.2"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "Eco Mode (Conserve): 19W Eco Mode (optimized): 23W Consumption (typical): 26W Consumption (max): 30W"
+    },
+    {
+     "label": "Voltage",
+     "value": "AC 100-240V"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/viewsonic-va24g1-h-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "24\""
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS Technology"
+    },
+    {
+     "label": "Resolution",
+     "value": "Full HD (1920 x 1080)"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.275 mm (H) x 0.275 mm (V)"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare, Hard Coating (3H)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178º horizontal, 178º vertical"
+    },
+    {
+     "label": "Brightness",
+     "value": "400 cd/m² (typ)"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "Static Contrast Ratio: 1,500:1 (typ) Dynamic Contrast Ratio: 50M:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "144Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "Colors: 16.7M Color Space Support: 8 bit (6 bit + Hi-FRC)"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "NTSC: 80% size (Typ) sRGB: 114% size"
+    },
+    {
+     "label": "Response Time",
+     "value": "1ms (MPRT)"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    },
+    {
+     "label": "Others Features",
+     "value": "Backlight Life (Hours): 30000 Hrs (Min) Compatibility: PC Resolution (max): 1920x1080 Mac Resolution (max): 1920x1080 PC Operating System: Windows 10/11 certified; macOS tested Mac® Resolution (min): 1920x1080"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    },
+    {
+     "label": "Others",
+     "value": "Eye ProTech+"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker (Built In)",
+     "value": "No"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "VGA",
+     "value": "1x VGA"
+    },
+    {
+     "label": "Display Port",
+     "value": "Yes"
+    },
+    {
+     "label": "HDMI",
+     "value": "1x HDMI 1.4"
+    },
+    {
+     "label": "Others",
+     "value": "Power in: DC Socket (Center Positive)"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "-5º / 20º"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "100 x 100 mm"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "Packaging (in.): 23.7 x 16.3 x 4.8 Physical (in.): 21.35 x 16.5 x 7.45 Physical Without Stand (in.): 21.35 x 12.69 x 1.8"
+    },
+    {
+     "label": "Weight",
+     "value": "Net (kg): 2.8 Net Without Stand (kg): 2.5 Gross (kg): 4"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "External Power Adaptor"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "Eco Mode (Conserve): 13W Eco Mode (optimized): 17W Consumption (typical): 21W Consumption (max): 24W Stand-by: 0.5W"
+    },
+    {
+     "label": "Voltage",
+     "value": "AC 100-240V"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-tuf-gaming-vg249q5r-24-inch-monitor": [
+  {
+   "group": "Display Features",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "23.8-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "LED"
+    },
+    {
+     "label": "Panel Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "1920x1080"
+    },
+    {
+     "label": "Pixel pitch(MM)",
+     "value": "0.2745mm"
+    },
+    {
+     "label": "Display Surface",
+     "value": "Anti-Glare"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "16:9"
+    },
+    {
+     "label": "Viewing Angle",
+     "value": "178°/ 178°"
+    },
+    {
+     "label": "Brightness",
+     "value": "300cd/㎡"
+    },
+    {
+     "label": "Contrast Ratio",
+     "value": "1000:1"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "200Hz"
+    },
+    {
+     "label": "Color Support",
+     "value": "16.7M"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "Color Space (sRGB): 100%"
+    },
+    {
+     "label": "Response Time",
+     "value": "1ms(GTG), 0.3ms(min.)"
+    },
+    {
+     "label": "HDR",
+     "value": "HDR10"
+    },
+    {
+     "label": "Curvature",
+     "value": "Flat"
+    },
+    {
+     "label": "Others Features",
+     "value": "Display Viewing Area (H x V): 527.04 × 296.46 mm"
+    }
+   ]
+  },
+  {
+   "group": "Video Features",
+   "items": [
+    {
+     "label": "Color Temperature Selection",
+     "value": "Yes(4 modes)"
+    },
+    {
+     "label": "Flicker Free",
+     "value": "Yes"
+    },
+    {
+     "label": "Low Blue Light",
+     "value": "Yes"
+    },
+    {
+     "label": "Free Sync Support",
+     "value": "Yes"
+    },
+    {
+     "label": "HDCP",
+     "value": "Yes, 2.3"
+    },
+    {
+     "label": "Others",
+     "value": "Trace Free Technology: Yes GameVisual: Yes Color Temp. Selection : Yes(4 modes) GamePlus: Yes Extreme Low Motion Blur: Yes VRR Technology: Yes (Adaptive-Sync) GameFast Input technology: Yes Shadow Boost: Yes DisplayWidget: Yes, DisplayWidget Center ASUS Power Sync: Yes A.I. Assistant Technology: AI Visual FSC MIX"
+    }
+   ]
+  },
+  {
+   "group": "Audio Features",
+   "items": [
+    {
+     "label": "Speaker Output",
+     "value": "2Wx2"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Display Port",
+     "value": "DisplayPort 1.4 x 1 (HBR2)"
+    },
+    {
+     "label": "HDMI",
+     "value": "HDMI(v2.0) x2"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "Yes"
+    },
+    {
+     "label": "Others",
+     "value": "Digital Signal Frequency: DP: 240~240 KHz(H) / 48~200 Hz (V) HDMI: 27~240 KHz (H) / 48~200 Hz (V)"
+    }
+   ]
+  },
+  {
+   "group": "Mechanical Design",
+   "items": [
+    {
+     "label": "Tilt",
+     "value": "Yes (+22° ~ -5°)"
+    },
+    {
+     "label": "Vesa Wall Mount",
+     "value": "75x75mm"
+    },
+    {
+     "label": "Security Locker",
+     "value": "Kensington Lock"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Phys. Dimension (W x H x D): 54.0 x 40.7 x 21.3 cm (21.26\" x 16.02\" x 8.39\") Phys. Dimension without Stand (W x H x D): 54.0 x 32.0 x 3.7 cm (21.26\" x 12.60\" x 1.46\") Box Dimension (W x H x D): 60.0 x 40.6 x 11.5 cm (23.62\" x 15.98\" x 4.53\")"
+    },
+    {
+     "label": "Weight",
+     "value": "Net Weight: 3.7 kg (8.16 lbs) Net Weight without Stand: 2.7 kg (5.95 lbs) Gross Weight: 4.6 kg (10.14 lbs)"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "Power Consumption: <18W Power Saving Mode: <0.5W Power Off Mode: <0.3W"
+    },
+    {
+     "label": "Voltage",
+     "value": "Voltage : 100-240V, 50/60Hz"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/samsung-galaxy-tab-a9-lte-tablet": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "TFT"
+    },
+    {
+     "label": "Size",
+     "value": "8.7\" (220.5mm, ~81.1% screen-to-body ratio)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1340 x 800 (WXGA+) 5:3 ratio (~179 ppi density)"
+    },
+    {
+     "label": "Processor",
+     "value": "Chipset: Mediatek Helio G99 (6nm) CPU: Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55) GPU: Mali-G57 MC2"
+    },
+    {
+     "label": "RAM",
+     "value": "4GB"
+    },
+    {
+     "label": "Storage",
+     "value": "64GB"
+    },
+    {
+     "label": "Operating System",
+     "value": "Android 13, One UI 5.1"
+    },
+    {
+     "label": "Audio",
+     "value": "Stereo Speakers Audio Playing Format: MP3, M4A, 3GA, AAC, OGG, OGA, WAV, AMR, AWB, FLAC, MID, MIDI, XMF, MXMF, IMY, RTTTL, RTX, OTA"
+    },
+    {
+     "label": "Others",
+     "value": "MicroSD (Up to 1TB)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Spec",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "211.0 x 124.7 x 8.0mm (HxWxD)"
+    },
+    {
+     "label": "Weight",
+     "value": "333g"
+    },
+    {
+     "label": "SIM",
+     "value": "Nano-SIM"
+    }
+   ]
+  },
+  {
+   "group": "Camera",
+   "items": [
+    {
+     "label": "Rear",
+     "value": "8.0 MP, AF"
+    },
+    {
+     "label": "Front",
+     "value": "2.0 MP"
+    },
+    {
+     "label": "Video",
+     "value": "FHD (1920 x 1080) @30fps"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Li-Po Non-Removable"
+    },
+    {
+     "label": "Capacity",
+     "value": "5,100 mAh"
+    },
+    {
+     "label": "Charging",
+     "value": "15W Fast Charging"
+    }
+   ]
+  },
+  {
+   "group": "Special Features",
+   "items": [
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth v5.3, A2DP, LE Bluetooth Profiles: A2DP, AVRCP, DI, HFP, HID, HOGP, HSP, MAP, OPP, PAN, PBAP"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, Glonass, Beidou, Galileo, QZSS"
+    },
+    {
+     "label": "Sensors",
+     "value": "Accelerometer, Geomagnetic Sensor, Light Sensor, Proximity Sensor"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/teclast-p30t-tablet": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Size",
+     "value": "10.1-inch"
+    },
+    {
+     "label": "Resolution",
+     "value": "HD+ (1280×800) 120Hz"
+    },
+    {
+     "label": "Processor",
+     "value": "Unisoc T7250 Octa-core"
+    },
+    {
+     "label": "RAM",
+     "value": "3GB"
+    },
+    {
+     "label": "Storage",
+     "value": "128GB"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Bluetooth 5.0"
+    },
+    {
+     "label": "Operating System",
+     "value": "Android 16 Operating System Google Widevine DRM L1"
+    },
+    {
+     "label": "Audio",
+     "value": "Built-in Dual-channel Speaker 3.5mm Headphone"
+    },
+    {
+     "label": "Others",
+     "value": "GPU: Mali G57"
+    }
+   ]
+  },
+  {
+   "group": "Physical Spec",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "242mm(L) ×161mm(W) ×7.8mm(H)"
+    },
+    {
+     "label": "Weight",
+     "value": "450g"
+    },
+    {
+     "label": "SIM",
+     "value": "No"
+    }
+   ]
+  },
+  {
+   "group": "Camera",
+   "items": [
+    {
+     "label": "Rear",
+     "value": "5MP+0.3MP Rear"
+    },
+    {
+     "label": "Front",
+     "value": "2MP Front"
+    },
+    {
+     "label": "Video",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Lithium battery"
+    },
+    {
+     "label": "Capacity",
+     "value": "6000mAh"
+    },
+    {
+     "label": "Charging",
+     "value": "Type-C Charging"
+    }
+   ]
+  },
+  {
+   "group": "Special Features",
+   "items": [
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.0"
+    },
+    {
+     "label": "Sensors",
+     "value": "Gravity sensor Hall Sensor"
+    },
+    {
+     "label": "WLAN",
+     "value": "Yes,WIFI 2.4G + WIFI 5G 802.11 a/b/g/n/ac/ax"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/anker-zolo-20w-type-c-charger-adapter": [],
+ "https://www.startech.com.bd/anker-zolo-30w-type-c-charger-adapter": [],
+ "https://www.startech.com.bd/anker-nano-45w-charger-adapter": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Power",
+     "value": "Total Output: 45W Input: 100-240V, 1.2A, 50-60Hz Output: 5.0V⎓3.0A, 15.0W / 9.0V⎓3.0A, 27.0W / 15.0V⎓3.0A, 45.0W / 20.0V⎓2.25A, 45.0W (45.0W Max) PPS: 5.0V-11.0V⎓5.0A (45.0W Max) ；4.5V-21.0V⎓2.25A (45.0W Max) ；5.0V-16.0V⎓3.0A (45.0W Max)"
+    },
+    {
+     "label": "Operating Interface",
+     "value": "Type-C Ports"
+    }
+   ]
+  },
+  {
+   "group": "Physical Description",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Weight",
+     "value": "2.11 oz (60 g)"
+    },
+    {
+     "label": "Dimensions",
+     "value": "1.3 × 1.26 × 1.45 in (33 × 32 × 36.9 mm)"
+    }
+   ]
+  },
+  {
+   "group": "Manufacturing Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "18 Months"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/anker-nano-45w-gan-charger": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Connectivity",
+     "value": "Type-C"
+    },
+    {
+     "label": "Others",
+     "value": "Input: 100-240V~ 50 / 60Hz, 1.5A Max Output: 5V⎓3A / 9V⎓3A / 15V⎓3A / 20V⎓2.25A (45W Max) Technology: GaN (Gallium Nitride) Digital Display"
+    }
+   ]
+  },
+  {
+   "group": "Physical Description",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black, Blue, White, Orange"
+    },
+    {
+     "label": "Weight",
+     "value": "2.65 oz (75 g)"
+    },
+    {
+     "label": "Dimensions",
+     "value": "1.34 × 1.40 × 1.57 in (34 × 35.5 × 40 mm)"
+    }
+   ]
+  },
+  {
+   "group": "Manufacturing Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "18 Months"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/anker-25w-charger-adapter": [],
+ "https://www.startech.com.bd/jisulife-life1-fa26-desk-fan": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Fan Type",
+     "value": "Mini Desk Fan"
+    },
+    {
+     "label": "Number of Blades",
+     "value": "5"
+    },
+    {
+     "label": "Motor Type",
+     "value": "Brushless"
+    },
+    {
+     "label": "Noise Level",
+     "value": "Silent"
+    },
+    {
+     "label": "Others",
+     "value": "180° Rotation"
+    }
+   ]
+  },
+  {
+   "group": "Power Supply",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "4W"
+    },
+    {
+     "label": "Battery",
+     "value": "4500mAh"
+    },
+    {
+     "label": "Battery Duration",
+     "value": "Up to 5-18 hours"
+    },
+    {
+     "label": "Charging Time",
+     "value": "4-6 hours"
+    },
+    {
+     "label": "Charging Interface",
+     "value": "TYPE-C"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Material",
+     "value": "ABS"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/jisulife-fa19-portable-fan": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Fan Type",
+     "value": "Mini Desk Fan"
+    },
+    {
+     "label": "Number of Blades",
+     "value": "7"
+    },
+    {
+     "label": "Motor Type",
+     "value": "Brushless"
+    },
+    {
+     "label": "Noise Level",
+     "value": "Silent"
+    },
+    {
+     "label": "Others",
+     "value": "330° Rotation Cable Length：3.3ft"
+    }
+   ]
+  },
+  {
+   "group": "Additional Information",
+   "items": [
+    {
+     "label": "Light",
+     "value": "Indicator"
+    }
+   ]
+  },
+  {
+   "group": "Power Supply",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "4W"
+    },
+    {
+     "label": "Battery",
+     "value": "4500 mAh"
+    },
+    {
+     "label": "Charging Interface",
+     "value": "TYPE-C"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-solove-f5-desktop-stand-fan": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Power",
+     "value": "Built-in 4000mAh Battery"
+    },
+    {
+     "label": "Connectivity",
+     "value": "Type-C interface, USB charging"
+    },
+    {
+     "label": "Others",
+     "value": "3 Wind Speed"
+    }
+   ]
+  },
+  {
+   "group": "Physical Description",
+   "items": [
+    {
+     "label": "Weight",
+     "value": "522g"
+    },
+    {
+     "label": "Materials",
+     "value": "ABS+PC"
+    }
+   ]
+  },
+  {
+   "group": "Manufacturing Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "No Warranty/ 3 Months Warranty"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-solove-f5-pro-desktop-stand-fan": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Power",
+     "value": "Power (W): 3W Voltage (V): 5V Power Source: USB"
+    },
+    {
+     "label": "Others",
+     "value": "3 Wind Speed"
+    }
+   ]
+  },
+  {
+   "group": "Physical Description",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black Green"
+    }
+   ]
+  },
+  {
+   "group": "Manufacturing Warranty",
+   "items": [
+    {
+     "label": "Warranty",
+     "value": "03-months warranty"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-solove-f5-pro-max-charger-fan": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Fan Type",
+     "value": "Charger Fan"
+    },
+    {
+     "label": "Number of Blades",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "group": "Power Supply",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "3W"
+    },
+    {
+     "label": "Battery",
+     "value": "10,000mAh"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black, Green"
+    },
+    {
+     "label": "Material",
+     "value": "ABS+PC"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-solove-f3-mini-clip-fan": [],
+ "https://www.startech.com.bd/hoco-hx65-portable-table-fan": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Fan Type",
+     "value": "Portable Rechargeable Table Fan"
+    },
+    {
+     "label": "Number of Blades",
+     "value": "7 Blades"
+    },
+    {
+     "label": "Noise Level",
+     "value": "up to 25 dB"
+    },
+    {
+     "label": "Modes",
+     "value": "3 speeds Modes"
+    }
+   ]
+  },
+  {
+   "group": "Power Supply",
+   "items": [
+    {
+     "label": "Battery",
+     "value": "Built-in battery 2000 mAh"
+    },
+    {
+     "label": "Battery Duration",
+     "value": "1.5 to 6 hours"
+    },
+    {
+     "label": "Charging Time",
+     "value": "about 2.5 hours"
+    },
+    {
+     "label": "Charging Interface",
+     "value": "Type-C"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "White"
+    },
+    {
+     "label": "Material",
+     "value": "ABS plastic + Polycarbonate"
+    },
+    {
+     "label": "Dimension",
+     "value": "173*56*209 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "340 g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/hoco-hx66-portable-table-fan": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Fan Type",
+     "value": "Portable Rechargeable Table Fan"
+    },
+    {
+     "label": "Noise Level",
+     "value": "50 dB"
+    },
+    {
+     "label": "Modes",
+     "value": "5 speeds Modes"
+    },
+    {
+     "label": "Others",
+     "value": "Digital display for speed gear and battery level"
+    }
+   ]
+  },
+  {
+   "group": "Power Supply",
+   "items": [
+    {
+     "label": "Battery",
+     "value": "3000mAh"
+    },
+    {
+     "label": "Battery Duration",
+     "value": "2 to 11 hours (depending on speed)"
+    },
+    {
+     "label": "Charging Time",
+     "value": "about 4.5 hours"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "White"
+    },
+    {
+     "label": "Material",
+     "value": "ABS + electronic components"
+    },
+    {
+     "label": "Dimension",
+     "value": "195 × 177 × 92 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "554 g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/wiwu-fs03-table-clip-fan": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Fan Type",
+     "value": "Rechargeable Table Fan"
+    },
+    {
+     "label": "Speed (RPM)",
+     "value": "3-Gear Switch"
+    },
+    {
+     "label": "Others",
+     "value": "Ultra-lightweight build 360 Degree Rotation"
+    }
+   ]
+  },
+  {
+   "group": "Power Supply",
+   "items": [
+    {
+     "label": "Battery",
+     "value": "1200mAh"
+    },
+    {
+     "label": "Battery Duration",
+     "value": "8 Hours"
+    },
+    {
+     "label": "Charging Time",
+     "value": "4-5h"
+    },
+    {
+     "label": "Charging Interface",
+     "value": "Type-C"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "White"
+    },
+    {
+     "label": "Material",
+     "value": "PC+ABS"
+    },
+    {
+     "label": "Weight",
+     "value": "285g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/hp-probook-440-g11-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core 5 Ultra -125U"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "up to 3.6 GHz E-core Max Turbo frequency up to 4.3 GHz P-core Max Turbo frequency"
+    },
+    {
+     "label": "Processor Core",
+     "value": "12"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "14T"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "12MB L3 Cache"
+    },
+    {
+     "label": "NPU",
+     "value": "Intel AI Boost"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "14 Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "WUXGA (1920 x 1200)"
+    },
+    {
+     "label": "Display Features",
+     "value": "Narrow bezel, anti-glare, 300 nits, 45% NTSC"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600MHz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "PCIe NVMe SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "Intel UHD Graphics"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "HP Premium Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "Spill-resistant, Backlit keyboard"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "1080p FHD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "Dual stereo speakers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Dual-array microphones"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "HDMI Port",
+     "value": "1 x HDMI 2.1"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "2x USB Type-A 5Gbps signaling rate (1 charging, 1 power)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "2 USB Type-C 10Gbps signaling rate (USB Power Delivery, DisplayPort 2.1)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x headphone/microphone combo"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x RJ45"
+    },
+    {
+     "label": "WiFi",
+     "value": "Intel Wi-Fi 6E AX211 (2x2)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3 Wireless Card"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    },
+    {
+     "label": "Security Chip",
+     "value": "TPM 2.0 embedded security chip (Common Criteria EAL4+ and FIPS 140-2 Level 2 Certified)"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "FreeDOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "HP Long Life 3-cell Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "56 Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "HP Smart 65 W External AC Power Adapter"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Silver"
+    },
+    {
+     "label": "Dimensions",
+     "value": "31.86 x 22.44 x 1.09 cm (front); 31.86 x 22.43 x 1.7 cm"
+    },
+    {
+     "label": "Weight",
+     "value": "1.39 kg"
+    },
+    {
+     "label": "Body Material",
+     "value": "aluminum"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-redmi-buds-6-play-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Frequency",
+     "value": "20Hz~20KHz"
+    },
+    {
+     "label": "Impedance",
+     "value": "16 Ω"
+    },
+    {
+     "label": "Power Output",
+     "value": "10 mw"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth 5.4"
+    },
+    {
+     "label": "Battery",
+     "value": "Charging case: 600mAh Single Earbud: 57mAh"
+    },
+    {
+     "label": "Duration",
+     "value": "Up to 36 hours total battery life with charging case"
+    },
+    {
+     "label": "Others",
+     "value": "AI noise reduction for clear calls Google Fast pair IPX4 water resistance 5 Built in EQ Compatible with Xiaomi Earbuds app Touch control"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Connector",
+     "value": "Bluetooth v5.4"
+    },
+    {
+     "label": "Drivers",
+     "value": "10mm dynamic driver"
+    },
+    {
+     "label": "Weight",
+     "value": "Single earbud: 3.6g Total weight: 40.0g"
+    },
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/dell-pro-slim-qcs1250-core-i5-brand-pc": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "Intel Core i5-14500 vPro (14 cores, up to 5.0GHz) Speed: 2.6 GHz up to 5.0 GHz Turbo Cache: 24MB cache"
+    },
+    {
+     "label": "Motherboard",
+     "value": "Intel Q670"
+    },
+    {
+     "label": "RAM",
+     "value": "1 x 16 GB, DDR5 4800 MHz and supportability up to 64GB 2 Memory Slots"
+    },
+    {
+     "label": "Graphics Card",
+     "value": "Intel UHD Graphics 770"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB M.2 2230 PCIe NVMe SSD"
+    },
+    {
+     "label": "Audio",
+     "value": "Realtek High Definition Audio Controller"
+    },
+    {
+     "label": "Power Supply",
+     "value": "180W Bronze Power Supply"
+    },
+    {
+     "label": "Network & Wireless Connectivity",
+     "value": "Integrated Gigabit LAN (10/100/1000 Mbps) MediaTek Wi-Fi 6 MT7920, 2x2, 802.11ax, MU-MIMO, Bluetooth wireless card"
+    },
+    {
+     "label": "Operating System",
+     "value": "Free DOS"
+    },
+    {
+     "label": "Security Management",
+     "value": "Trusted Platform Module (Discrete TPM Enabled)"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Keyboard",
+     "value": "Dell USB Business Keyboard"
+    },
+    {
+     "label": "Mouse",
+     "value": "Dell USB Optical Mouse"
+    },
+    {
+     "label": "External I/O Ports",
+     "value": "Expansion Slots 2 full-height Gen3 PCIe x1 slots 1 full-height Gen3 PCIe x16 slot 1 M.2 2230/2280 SSD slot Ports Front 2 USB 2.0 (480 Mbps) ports 1 USB 3.2 Gen 1 port 1 USB 3.2 Gen 1 Type-C port 1 global headset jack Rear: 2 USB 2.0 (480 Mbps) ports 2 USB 3.2 Gen 1 (5 Gbps) ports 1 DisplayPort 1.4a (HBR2) port 1 HDMI 2.1 (TMDS) port 1 RJ-45 Ethernet Port"
+    }
+   ]
+  },
+  {
+   "group": "Physical Details",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Height: 11.95 in. (303.50 mm) Width: 3.74 in. (95 mm) Depth: 11.54 in. (293 mm)"
+    },
+    {
+     "label": "Weight",
+     "value": "Weight (minimum): 8.61 lb (3.90 kg) Weight (maximum): 12.99 lb (5.89 kg)"
+    },
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-expertcenter-p400-aio-p440vak-core-7-all-in-one-pc": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "Intel Core 7 Processor 240H 2.50GHz - 5.20GHz (24MB Cache, 10 Cores, 16 Threads)"
+    },
+    {
+     "label": "RAM",
+     "value": "16GB DDR5 5600MHz SO-DIMM"
+    },
+    {
+     "label": "Graphics Card",
+     "value": "Integrated Intel UHD Graphics"
+    },
+    {
+     "label": "Storage",
+     "value": "1TB M.2 2280 NVME PCIE 4.0 SSD"
+    },
+    {
+     "label": "Monitor",
+     "value": "Non-touch screen, 100Hz, 23.8-inch, IPS FHD (1920 x 1080) 16:9, Anti-glare display, LED Backlit, 250nits, sRGB: 100%, Screen-to-body ratio93 %, Wide View"
+    },
+    {
+     "label": "Audio",
+     "value": "Built-in speakers Built-in array microphone"
+    },
+    {
+     "label": "Camera",
+     "value": "1080p FHD CMOS Webcam with Shutter"
+    },
+    {
+     "label": "Power Supply",
+     "value": "120W Adapter"
+    },
+    {
+     "label": "Network & Wireless Connectivity",
+     "value": "Wi-Fi 7(802.11be) (Triple band) 2*2 + Bluetooth 5.4"
+    },
+    {
+     "label": "Operating System",
+     "value": "Free Dos"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Keyboard",
+     "value": "Wired black keyboard (USB)"
+    },
+    {
+     "label": "Mouse",
+     "value": "Wired optical mouse (USB)"
+    },
+    {
+     "label": "External I/O Ports",
+     "value": "Side I/O Ports 1x USB 2.0 Type-A 1x 3.5mm combo audio jack 1x Kensington lock Rear I/O Ports 3x USB 3.2 Gen 1 Type-A 1x USB 3.2 Gen 1 Type-C 1x HDMI™ out 1.4 1x HDMI™ in 1.4 1x RJ45 Gigabit Ethernet 1x DC-in"
+    }
+   ]
+  },
+  {
+   "group": "Physical Details",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "54.1 x 41.6 x 1.7 ~ 21.0 cm (21.30\" x 16.38\" x 0.67\" ~ 8.27\"), 54.1 x 55.1 x 1.7 ~ 26.0 cm"
+    },
+    {
+     "label": "Weight",
+     "value": "06.90 kg (15.21 lbs)"
+    },
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/hp-probook-460-g11-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core Ultra 5 125H"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "up to 4.5 GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "14"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "18"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "18"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "16 Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "WUXGA (1920 x 1200)"
+    },
+    {
+     "label": "Display Features",
+     "value": "anti-glare, 300 nits, 45% NTSC"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600MHz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "PCIe NVMe SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "Intel Arc Graphics"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "HP Premium Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "Spill-resistant, Backlit keyboard"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "1080p FHD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "Dual stereo speakers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Dual-array microphones"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Audio by Poly Studio"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "HDMI Port",
+     "value": "1 x HDMI 2.1"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "2x USB Type-A 5Gbps signaling rate (1 charging, 1 power)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "2 USB Type-C 20Gbps signaling rate (USB Power Delivery, DisplayPort 1.4)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x headphone/microphone combo"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x RJ45"
+    },
+    {
+     "label": "WiFi",
+     "value": "Intel Wi-Fi 6E AX211 (2x2)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3 Wireless Card"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "FreeDOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "HP Long Life 3-cell Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "56 Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "65 W USB Type-C"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Pike silver"
+    },
+    {
+     "label": "Dimensions",
+     "value": "35.94 x 25.11 x 1.09 cm (front); 35.94 x 25.11 x 1.7 cm (rear)"
+    },
+    {
+     "label": "Weight",
+     "value": "Starting at 1.74 kg"
+    },
+    {
+     "label": "Body Material",
+     "value": "aluminum"
+    },
+    {
+     "label": "Part Number / MPN",
+     "value": "B7PE3PT"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/lenovo-thinkpad-e14-gen-7-laptop-black": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core Ultra 5 225U"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Max Turbo up to 4.8GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "12C (2P + 8E + 2LPE)"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "14T"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "12MB Intel Smart Cache"
+    },
+    {
+     "label": "NPU",
+     "value": "Integrated Intel AI Boost, up to 12 TOPS"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Intel SoC Platform"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "14 Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "WUXGA (1920 x 1200)"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "N/A"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "300nits Anti-glare, 45% NTSC 90% Screen-to-Body Ratio"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Removable",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600MHz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "two DDR5 SODIMM slots, dual-channel capable"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "up to 64GB DDR5-5600"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 2242 PCIe 4.0x4 NVMe Opal 2.0 SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Extra M.2 Slot",
+     "value": "two M.2 slots One M.2 2242 PCIe® 4.0 x4 slot One M.2 2280 PCIe® 4.0 x4 slot"
+    },
+    {
+     "label": "Supported SSD Type",
+     "value": "M.2 2242 PCIe 4.0 x4 slot"
+    },
+    {
+     "label": "Storage Upgrade",
+     "value": "Up to 1TB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "Intel Graphics"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "English"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "720p HD webcam"
+    },
+    {
+     "label": "Speaker",
+     "value": "Stereo speakers, 2W x2"
+    },
+    {
+     "label": "Microphone",
+     "value": "2x, Array"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Dolby Atmos, audio by HARMAN Audio Chip: High Definition (HD) Audio, Senary SN6147 codec"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1, up to 4K/60Hz"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "1x USB-A (USB 5Gbps / USB 3.2 Gen 1) 1x USB-A (USB 10Gbps / USB 3.2 Gen 2), Always On"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB-C (Thunderbolt 4 / USB4 40Gbps), with USB PD 45-65W and DisplayPort 2.1"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x Headphone / microphone combo jack (3.5mm)"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x Ethernet 100/1000M (RJ-45)"
+    },
+    {
+     "label": "WiFi",
+     "value": "Intel Wi-Fi 6E AX211, 802.11ax 2x2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Touch Style, Match-on-Chip, Integrated in Power Button"
+    },
+    {
+     "label": "Security Locker Slot",
+     "value": "Kensington Nano Security Slot™, 2.5 x 6 mm"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Discrete TPM 2.0 Enabled"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "FreeDOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Capacity",
+     "value": "48Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "65W USB-C (3-pin)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimensions",
+     "value": "313 x 220.3 x 10.1/15.25 (front/rear), 20.5 (maximum) mm; 12.32 x 8.67 x 0.40/0.60 (front/rear), 0.81 (maximum) inches"
+    },
+    {
+     "label": "Weight",
+     "value": "Starting at 1.34 kg (2.95 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Aluminium (Top), PC-ABS (Bottom)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/lenovo-thinkpad-e14-gen-6-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core Ultra 5 125U"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "E-Core Max 3.60 GHz, P-Core Max 4.30 GHz with Turbo Boost"
+    },
+    {
+     "label": "Processor Core",
+     "value": "12C"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "14T"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "12MB Cache"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Intel integrated SoC"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "14 Inch"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "WUXGA (1920 x 1200)"
+    },
+    {
+     "label": "Display Features",
+     "value": "anti-glare, 16:10 aspect ratio, 300nits, 45% NTSC, TÜV Low Blue Light certified (Software)"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600MHz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Capacity",
+     "value": "512GB SSD"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "Intel UHD Graphics"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "ThinkPad Trackpoint Keyboard Optional: Backlit with white LED lights Dual-function TrackPoint: Quick Menu: navigate the cursor or double-tap to open TrackPoint Quick Menu Spill-resistant"
+    },
+    {
+     "label": "TouchPad",
+     "value": "TrackPad: 115mm x 56mm / 4.5″ x 2.2″"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "720p HD webcam"
+    },
+    {
+     "label": "Speaker",
+     "value": "2 x 2W stereo speakers"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Audio by Harman, Dolby Atmos"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "HDMI 2.1 (supports resolution up to 4K@60Hz)"
+    },
+    {
+     "label": "USB 2 Port",
+     "value": "1x USB-A (USB 10 Gbps) 1x USB-A (USB 5 Gbps)"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "1x USB C (Thunderbolt 4, 40Gbps, power delivery / DisplayPort 2.1) 1x USB-C (USB 20 Gbps, PD 3.0 / DP 1.4)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB-C 3.2 Gen 2 (support data transfer, Power Delivery 3.0 and DisplayPort™ 1.4) 1x Thunderbolt 4 / USB4® 40Gbps (support data transfer, Power Delivery 3.0 and DisplayPort 1.4)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x Headphone / microphone combo jack (3.5mm)"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x Ethernet (RJ-45)"
+    },
+    {
+     "label": "WiFi",
+     "value": "Intel Wi-Fi 6 AX201 802.11AX (2 x 2)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.1"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Security Locker Slot",
+     "value": "Kensington"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Discrete Trusted Platform Module (dTPM) 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "FreeDOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Integrated"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "47Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "65W USB-C (3-pin) AC adapter"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Graphite Black"
+    },
+    {
+     "label": "Dimensions",
+     "value": "17.99mm x 313mm x 219.3mm / 0.70″ x 12.32″ x 8.63″"
+    },
+    {
+     "label": "Weight",
+     "value": "1.41kg"
+    },
+    {
+     "label": "Body Material",
+     "value": "Aluminum (Top), PC/ABS Plastic (Bottom)"
+    }
+   ]
+  }
  ]
 }

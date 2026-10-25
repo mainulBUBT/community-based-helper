@@ -43,14 +43,14 @@ const MAX_BODY = 3 * 1024 * 1024;
 const siteOf = (host: string) => host.replace(/^www\./, "");
 const sameSite = (from: URL, to: URL) => to.protocol === "https:" || to.protocol === "http:" ? siteOf(to.hostname) === siteOf(from.hostname) || to.hostname.endsWith(`.${siteOf(from.hostname)}`) : false;
 
-async function rawGet(url: URL): Promise<Response> {
+async function rawGet(url: URL, accept = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"): Promise<Response> {
   let current = url;
   for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {
     const target = current;
     await assertPublic(target);
     const res = await limited(target.host, () =>
       fetch(target, {
-        headers: { ...HEADERS, accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" },
+        headers: { ...HEADERS, accept },
         redirect: "manual",
         signal: AbortSignal.timeout(30_000),
       }),
@@ -145,4 +145,19 @@ export async function getText(target: string | URL): Promise<string> {
   if (res.status === 404 || res.status === 410) throw new NotFound(`${url.href} ${res.status}`);
   if (!res.ok) throw new Error(`${url.href} HTTP ${res.status}`);
   return body;
+}
+
+// কিছু API (যেমন Django REST) Accept দেখে HTML দেয়; JSON চাইলে এটা
+export async function getJson(target: string | URL): Promise<unknown> {
+  const url = await assertAllowed(target);
+  const res = await rawGet(url, "application/json");
+  const body = await readCapped(res);
+  checkStatus(url.host, res.status, body);
+  if (res.status === 404 || res.status === 410) throw new NotFound(`${url.href} ${res.status}`);
+  if (!res.ok) throw new Error(`${url.href} HTTP ${res.status}`);
+  try {
+    return JSON.parse(body);
+  } catch {
+    return null;
+  }
 }

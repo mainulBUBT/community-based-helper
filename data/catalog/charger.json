@@ -1,0 +1,444 @@
+{
+  "category": "charger",
+  "sites": [
+    {
+      "name": "Star Tech",
+      "website": "https://www.startech.com.bd",
+      "note": "/mobile-phone-charger-adapter ক্যাটাগরি পেজ; প্রোডাক্ট পেজে MPN (A2699J11 ইত্যাদি) আর স্পেক-টেবিল, specsSource-এর জন্য। struck price-ই officialPrice।"
+    },
+    {
+      "name": "Gadget & Gear",
+      "website": "https://gadgetandgear.com",
+      "note": "Anker-এর অফিসিয়াল রিটেইলার; পেজের JSON-এ modelNo (A2699K21 = 3-pin)। A121D-এর China ভার্সন বিক্রি করে।"
+    },
+    {
+      "name": "Apple Gadgets",
+      "website": "https://www.applegadgetsbd.com",
+      "note": "শিরোনামে মডেল-কোড থাকলে নেওয়া হয়েছে (A2698, A2692); কোডহীন 'Zolo IQ3 PD3.0 20W' পাতা বাদ (A2615 না A2699 বোঝা যায় না)।"
+    },
+    {
+      "name": "Kry International",
+      "website": "https://kryinternational.com",
+      "note": "শিরোনামেই Anker মডেল-কোড (A2699, A2698, A2692, A2656, A121D)।"
+    },
+    {
+      "name": "Motion View",
+      "website": "https://motionview.com.bd",
+      "note": "বর্ণনায় 'Model A2698' ধরনের কোড। Zolo 20W পাতায় বর্ণনা A2615 কিন্তু sku A2699J11 — দ্বিধা, তাই বাদ।"
+    },
+    {
+      "name": "Gadget Breeze",
+      "website": "https://gadgetbreeze.com.bd",
+      "note": "WooCommerce; শিরোনামে কোড (A2699, A2698, A2692, A2656, A121D)। ওয়ারেন্টি অপশন আলাদা দামে থাকলে স্টকে থাকা সবচেয়ে কম দাম।"
+    },
+    {
+      "name": "Diamu",
+      "website": "https://diamu.com.bd",
+      "note": "Zolo 20W পাতা Model A2615 (অন্য মডেল) — বাদ; A121D পাতা শিরোনামে কোড সহ।"
+    }
+  ],
+  "products": [
+    {
+      "brand": "Anker",
+      "name": "Zolo 20W Type-C Charger (A2699)",
+      "category": "charger",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "20W",
+          "attributes": {
+            "wattage": "20W"
+          },
+          "officialPrice": 999
+        }
+      ],
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile-accessories/anker/zolo-20w-type-c/zolo-20w-type-c-1200x630.webp",
+        "https://assets.gadgetandgear.com/upload/media/anker-zolo-20w-type-c-charger41.jpeg",
+        "https://images.kryinternational.com/uploads/anker-zolo-20w-wall-charger.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/anker-zolo-20w-type-c-charger-adapter",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/anker-zolo-20w-type-c-charger-adapter",
+          "price": 920,
+          "oldPrice": 999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "20W"
+        },
+        {
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/anker-zolo-20w-type-c-charger",
+          "price": 1099,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "20W"
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/anker-zolo-20w-wall-charger-iq3-pd3.0",
+          "price": 899,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "20W"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/anker-a2699-zolo-20w-type-c-charger/",
+          "price": 630,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "20W"
+        }
+      ]
+    },
+    {
+      "brand": "Anker",
+      "name": "Zolo 30W Type-C Charger (A2698)",
+      "category": "charger",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "30W",
+          "attributes": {
+            "wattage": "30W"
+          },
+          "officialPrice": 1150
+        }
+      ],
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile-accessories/anker/zolo-30w/zolo-30w-1200x630.webp",
+        "https://assets.gadgetandgear.com/upload/media/anker/anker-zolo-30w-type-c-charger.jpeg",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Anker-A2698-Zolo-Power-Adapter-USB-C---30Wa-6501.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/anker-zolo-30w-type-c-charger-adapter",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/anker-zolo-30w-type-c-charger-adapter",
+          "price": 1090,
+          "oldPrice": 1150,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "30W"
+        },
+        {
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/anker-zolo-30w-type-c-charger",
+          "price": 1199,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "30W"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/anker-a2698-zolo-power-adapter-usb-c-30w",
+          "price": 1099,
+          "oldPrice": 1499,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "30W"
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/anker-zolo-30w-pd-iq-charger",
+          "price": 1099,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "30W"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/anker-zolo-30w-iq-pd-type-c-charger-adapter",
+          "price": 1199,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "30W"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/anker-zolo-30w-usb-c-charger/",
+          "price": 820,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "30W"
+        }
+      ]
+    },
+    {
+      "brand": "Anker",
+      "name": "Nano 45W Type-C Charger (A2692)",
+      "category": "charger",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "45W",
+          "attributes": {
+            "wattage": "45W"
+          },
+          "officialPrice": 2099
+        }
+      ],
+      "colors": [
+        "White"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/charger/anker/nano-45w/nano-45w-02-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Anker-A2692-Nano-USB-C-Power-Adapter---45Wa-3699.png",
+        "https://motionview.s3.amazonaws.com/images/products/profile/177315710478.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/anker-nano-45w-charger-adapter",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/anker-nano-45w-charger-adapter",
+          "price": 1889,
+          "oldPrice": 2099,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "45W"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/anker-a2692-nano-usb-c-power-adapter-45w",
+          "price": 2000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "45W"
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/anker-nano-45w-usb-c-adapter",
+          "price": 2099,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "45W"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/anker-nano-45w-1c-gan-charger",
+          "price": 2199,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "45W"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/anker-nano-45w-gan-type-c-charger/",
+          "price": 1520,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "45W"
+        }
+      ]
+    },
+    {
+      "brand": "Anker",
+      "name": "Nano 45W Smart Display Charger (A121D)",
+      "category": "charger",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "45W",
+          "attributes": {
+            "wattage": "45W"
+          },
+          "officialPrice": 2799
+        }
+      ],
+      "colors": [
+        "White",
+        "Black"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/charger/anker/nano-45w-gan-cn/nano-45w-white-1200x630.webp",
+        "https://assets.gadgetandgear.com/upload/media/anker/anker-nano-45w-smart-display-charger-white.jpeg",
+        "https://images.kryinternational.com/uploads/anker-nano-45w-smart-display-gan-fast-charger-b-webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/anker-nano-45w-gan-charger",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/anker-nano-45w-gan-charger",
+          "price": 2599,
+          "oldPrice": 2799,
+          "inStock": true,
+          "condition": "official",
+          "region": "China",
+          "checkedAt": "2026-10-25",
+          "variant": "45W"
+        },
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/anker-nano-45w-type-c-gan-charger",
+          "price": 3203,
+          "oldPrice": 3499,
+          "inStock": true,
+          "condition": "official",
+          "region": "Global",
+          "checkedAt": "2026-10-25",
+          "variant": "45W"
+        },
+        {
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/anker-nano-45w-smart-display-charger",
+          "price": 2790,
+          "inStock": true,
+          "condition": "official",
+          "region": "China",
+          "checkedAt": "2026-10-25",
+          "variant": "45W"
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/anker-nano-45w-smart-display-gan-fast-charger-a121d",
+          "price": 2699,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "45W"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/anker-nano-45w-gan-charger-with-display-a121d/",
+          "price": 2790,
+          "oldPrice": 2999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "45W"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/anker-nano-45w-charger-with-display-global-version-a121d/",
+          "price": 2950,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-25",
+          "variant": "45W"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/anker-nano-45w-smart-display-charger-180-foldable-global",
+          "price": 3590,
+          "inStock": true,
+          "condition": "official",
+          "region": "Global",
+          "checkedAt": "2026-10-25",
+          "variant": "45W"
+        }
+      ]
+    },
+    {
+      "brand": "Anker",
+      "name": "25W Type-C Compact Charger (A2656)",
+      "category": "charger",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "25W",
+          "attributes": {
+            "wattage": "25W"
+          },
+          "officialPrice": 1150
+        }
+      ],
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/charger/anker/anker-25w/anker-25w-01-1200x630.webp",
+        "https://images.kryinternational.com/uploads/anker-25w-type-c-compact-charger-adapter.webp",
+        "https://gadgetbreeze.com.bd/wp-content/uploads/2025/06/Anker-A2656-25W-PD-Compact-USB-C-Charger.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/anker-25w-charger-adapter",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/anker-25w-charger-adapter",
+          "price": 946,
+          "oldPrice": 1150,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "25W"
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/anker-25w-type-c-compact-charger-adapter-a2656",
+          "price": 1299,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "25W"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/anker-charger-25w-compact",
+          "price": 1299,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "25W"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/anker-a2656-25w-pd-compact-usb-c/",
+          "price": 990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-25",
+          "variant": "25W"
+        }
+      ]
+    }
+  ]
+}

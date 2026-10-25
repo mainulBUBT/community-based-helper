@@ -99,6 +99,18 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
+  "id": "pcbstore.com.bd",
+  "name": "PCB Store",
+  "kind": "website",
+  "website": "https://pcbstore.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
   "id": "motionview.com.bd",
   "name": "Motion View",
   "kind": "website",
@@ -111,10 +123,10 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
-  "id": "binarylogic.com.bd",
-  "name": "Binary Logic",
+  "id": "gadgetbreeze.com.bd",
+  "name": "Gadget Breeze",
   "kind": "website",
-  "website": "https://www.binarylogic.com.bd/",
+  "website": "https://gadgetbreeze.com.bd/",
   "phone": null,
   "whatsapp": null,
   "facebook": null,
@@ -123,10 +135,10 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
-  "id": "pcbstore.com.bd",
-  "name": "PCB Store",
+  "id": "selltech.com.bd",
+  "name": "Sell Tech",
   "kind": "website",
-  "website": "https://pcbstore.com.bd/",
+  "website": "https://www.selltech.com.bd/",
   "phone": null,
   "whatsapp": null,
   "facebook": null,
@@ -147,10 +159,10 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
-  "id": "mcsolution.com.bd",
-  "name": "MC Solution",
+  "id": "binarylogic.com.bd",
+  "name": "Binary Logic",
   "kind": "website",
-  "website": "https://mcsolution.com.bd/",
+  "website": "https://www.binarylogic.com.bd/",
   "phone": null,
   "whatsapp": null,
   "facebook": null,
@@ -159,10 +171,10 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
-  "id": "gadgetbreeze.com.bd",
-  "name": "Gadget Breeze",
+  "id": "mcsolution.com.bd",
+  "name": "MC Solution",
   "kind": "website",
-  "website": "https://gadgetbreeze.com.bd/",
+  "website": "https://mcsolution.com.bd/",
   "phone": null,
   "whatsapp": null,
   "facebook": null,
@@ -423,6 +435,30 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
+  "id": "liraimportltd.com",
+  "name": "Lira Import",
+  "kind": "website",
+  "website": "https://liraimportltd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "herhappyskin.com",
+  "name": "Her Happy Skin",
+  "kind": "website",
+  "website": "https://herhappyskin.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
   "id": "threesbd.com",
   "name": "Three's",
   "kind": "website",
@@ -499,18 +535,6 @@ export const catalogSellers: Seller[] = [
   "name": "SneakersBD Official",
   "kind": "website",
   "website": "https://www.sneakersbdofficial.com/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": true,
-  "active": true
- },
- {
-  "id": "selltech.com.bd",
-  "name": "Sell Tech",
-  "kind": "website",
-  "website": "https://www.selltech.com.bd/",
   "phone": null,
   "whatsapp": null,
   "facebook": null,
@@ -3733,6 +3757,358 @@ export const catalogProducts: Product[] = [
   "specsSource": "https://www.startech.com.bd/ipad-pro-m5-13-inch"
  },
  {
+  "id": "samsung-galaxy-tab-a9-8-7-inch-lte",
+  "slug": "samsung-galaxy-tab-a9-8-7-inch-lte",
+  "name": "Galaxy Tab A9 8.7-inch LTE",
+  "brand": "Samsung",
+  "category": "tablet",
+  "releaseYear": 2023,
+  "popularity": 58,
+  "variants": [
+   {
+    "id": "samsung-galaxy-tab-a9-8-7-inch-lte~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 16999
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/tablet/samsung/galaxy-tab-a9/galaxy-tab-a9-graphite-02-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Display Type",
+      "value": "TFT"
+     },
+     {
+      "label": "Size",
+      "value": "8.7\" (220.5mm, ~81.1% screen-to-body ratio)"
+     },
+     {
+      "label": "Resolution",
+      "value": "1340 x 800 (WXGA+) 5:3 ratio (~179 ppi density)"
+     },
+     {
+      "label": "Processor",
+      "value": "Chipset: Mediatek Helio G99 (6nm) CPU: Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55) GPU: Mali-G57 MC2"
+     },
+     {
+      "label": "RAM",
+      "value": "4GB"
+     },
+     {
+      "label": "Storage",
+      "value": "64GB"
+     },
+     {
+      "label": "Operating System",
+      "value": "Android 13, One UI 5.1"
+     },
+     {
+      "label": "Audio",
+      "value": "Stereo Speakers Audio Playing Format: MP3, M4A, 3GA, AAC, OGG, OGA, WAV, AMR, AWB, FLAC, MID, MIDI, XMF, MXMF, IMY, RTTTL, RTX, OTA"
+     },
+     {
+      "label": "Others",
+      "value": "MicroSD (Up to 1TB)"
+     }
+    ]
+   },
+   {
+    "group": "Physical Spec",
+    "items": [
+     {
+      "label": "Dimensions",
+      "value": "211.0 x 124.7 x 8.0mm (HxWxD)"
+     },
+     {
+      "label": "Weight",
+      "value": "333g"
+     },
+     {
+      "label": "SIM",
+      "value": "Nano-SIM"
+     }
+    ]
+   },
+   {
+    "group": "Camera",
+    "items": [
+     {
+      "label": "Rear",
+      "value": "8.0 MP, AF"
+     },
+     {
+      "label": "Front",
+      "value": "2.0 MP"
+     },
+     {
+      "label": "Video",
+      "value": "FHD (1920 x 1080) @30fps"
+     }
+    ]
+   },
+   {
+    "group": "Battery",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Li-Po Non-Removable"
+     },
+     {
+      "label": "Capacity",
+      "value": "5,100 mAh"
+     },
+     {
+      "label": "Charging",
+      "value": "15W Fast Charging"
+     }
+    ]
+   },
+   {
+    "group": "Special Features",
+    "items": [
+     {
+      "label": "Bluetooth",
+      "value": "Bluetooth v5.3, A2DP, LE Bluetooth Profiles: A2DP, AVRCP, DI, HFP, HID, HOGP, HSP, MAP, OPP, PAN, PBAP"
+     },
+     {
+      "label": "GPS",
+      "value": "GPS, Glonass, Beidou, Galileo, QZSS"
+     },
+     {
+      "label": "Sensors",
+      "value": "Accelerometer, Geomagnetic Sensor, Light Sensor, Proximity Sensor"
+     },
+     {
+      "label": "USB",
+      "value": "USB Type-C 2.0"
+     },
+     {
+      "label": "WLAN",
+      "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/samsung-galaxy-tab-a9-lte-tablet"
+ },
+ {
+  "id": "teclast-p30t-10-1-inch",
+  "slug": "teclast-p30t-10-1-inch",
+  "name": "P30T 10.1-inch",
+  "brand": "Teclast",
+  "category": "tablet",
+  "releaseYear": 2024,
+  "popularity": 58,
+  "variants": [
+   {
+    "id": "teclast-p30t-10-1-inch~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 16500
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/tablet/teclast/p30t-10-1-inch/p30t-10-1-inch-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Display Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Size",
+      "value": "10.1-inch"
+     },
+     {
+      "label": "Resolution",
+      "value": "HD+ (1280×800) 120Hz"
+     },
+     {
+      "label": "Processor",
+      "value": "Unisoc T7250 Octa-core"
+     },
+     {
+      "label": "RAM",
+      "value": "3GB"
+     },
+     {
+      "label": "Storage",
+      "value": "128GB"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth 5.0"
+     },
+     {
+      "label": "Operating System",
+      "value": "Android 16 Operating System Google Widevine DRM L1"
+     },
+     {
+      "label": "Audio",
+      "value": "Built-in Dual-channel Speaker 3.5mm Headphone"
+     },
+     {
+      "label": "Others",
+      "value": "GPU: Mali G57"
+     }
+    ]
+   },
+   {
+    "group": "Physical Spec",
+    "items": [
+     {
+      "label": "Dimensions",
+      "value": "242mm(L) ×161mm(W) ×7.8mm(H)"
+     },
+     {
+      "label": "Weight",
+      "value": "450g"
+     },
+     {
+      "label": "SIM",
+      "value": "No"
+     }
+    ]
+   },
+   {
+    "group": "Camera",
+    "items": [
+     {
+      "label": "Rear",
+      "value": "5MP+0.3MP Rear"
+     },
+     {
+      "label": "Front",
+      "value": "2MP Front"
+     },
+     {
+      "label": "Video",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Battery",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Lithium battery"
+     },
+     {
+      "label": "Capacity",
+      "value": "6000mAh"
+     },
+     {
+      "label": "Charging",
+      "value": "Type-C Charging"
+     }
+    ]
+   },
+   {
+    "group": "Special Features",
+    "items": [
+     {
+      "label": "Bluetooth",
+      "value": "Bluetooth 5.0"
+     },
+     {
+      "label": "Sensors",
+      "value": "Gravity sensor Hall Sensor"
+     },
+     {
+      "label": "WLAN",
+      "value": "Yes,WIFI 2.4G + WIFI 5G 802.11 a/b/g/n/ac/ax"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/teclast-p30t-tablet"
+ },
+ {
+  "id": "xiaomi-pad-7-11-2-inch",
+  "slug": "xiaomi-pad-7-11-2-inch",
+  "name": "Pad 7 11.2-inch",
+  "brand": "Xiaomi",
+  "category": "tablet",
+  "releaseYear": 2024,
+  "popularity": 58,
+  "variants": [
+   {
+    "id": "xiaomi-pad-7-11-2-inch~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 43000
+   }
+  ],
+  "images": [
+   "https://pcbstore.com.bd/storage/products/xiaomi-pad-7-android-tabletmain.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://pcbstore.com.bd/product/xiaomi-pad-7-android-tablet"
+ },
+ {
+  "id": "lenovo-idea-tab-11-inch",
+  "slug": "lenovo-idea-tab-11-inch",
+  "name": "Idea Tab 11-inch",
+  "brand": "Lenovo",
+  "category": "tablet",
+  "releaseYear": 2024,
+  "popularity": 58,
+  "variants": [
+   {
+    "id": "lenovo-idea-tab-11-inch~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 41000
+   }
+  ],
+  "images": [
+   "https://pcbstore.com.bd/storage/products/lenovo-idea-tab-tb336zu-5g-8256gb-11-inch-display-tabletmain.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://pcbstore.com.bd/product/lenovo-idea-tab-tb336zu-5g-8256gb-11-inch-display-tablet"
+ },
+ {
+  "id": "huawei-matepad-11-5-inch",
+  "slug": "huawei-matepad-11-5-inch",
+  "name": "MatePad 11.5-inch",
+  "brand": "Huawei",
+  "category": "tablet",
+  "releaseYear": 2024,
+  "popularity": 58,
+  "variants": [
+   {
+    "id": "huawei-matepad-11-5-inch~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 51000
+   }
+  ],
+  "images": [
+   "https://pcbstore.com.bd/storage/products/huawei-matepad-115-inch-wifi-tabletmain.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://pcbstore.com.bd/product/huawei-matepad-115-inch-wifi-tablet"
+ },
+ {
   "id": "apple-airpods-pro-3",
   "slug": "apple-airpods-pro-3",
   "name": "AirPods Pro 3",
@@ -4455,6 +4831,1937 @@ export const catalogProducts: Product[] = [
    }
   ],
   "specsSource": "https://www.startech.com.bd/anker-soundcore-space-one-headphone"
+ },
+ {
+  "id": "xiaomi-redmi-buds-6-play",
+  "slug": "xiaomi-redmi-buds-6-play",
+  "name": "Redmi Buds 6 Play",
+  "brand": "Xiaomi",
+  "category": "earbuds",
+  "releaseYear": 2024,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "xiaomi-redmi-buds-6-play~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1450
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/earbuds/xiaomi/redmi-buds-6-play/redmi-buds-6-play-black-001-1200x630.webp"
+  ],
+  "colors": [
+   "Black",
+   "White",
+   "Blue"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Frequency",
+      "value": "20Hz~20KHz"
+     },
+     {
+      "label": "Impedance",
+      "value": "16 Ω"
+     },
+     {
+      "label": "Power Output",
+      "value": "10 mw"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Bluetooth 5.4"
+     },
+     {
+      "label": "Battery",
+      "value": "Charging case: 600mAh Single Earbud: 57mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "Up to 36 hours total battery life with charging case"
+     },
+     {
+      "label": "Others",
+      "value": "AI noise reduction for clear calls Google Fast pair IPX4 water resistance 5 Built in EQ Compatible with Xiaomi Earbuds app Touch control"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Connector",
+      "value": "Bluetooth v5.4"
+     },
+     {
+      "label": "Drivers",
+      "value": "10mm dynamic driver"
+     },
+     {
+      "label": "Weight",
+      "value": "Single earbud: 3.6g Total weight: 40.0g"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/xiaomi-redmi-buds-6-play-earbuds"
+ },
+ {
+  "id": "oraimo-freepods-4",
+  "slug": "oraimo-freepods-4",
+  "name": "FreePods 4",
+  "brand": "Oraimo",
+  "category": "earbuds",
+  "releaseYear": 2024,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "oraimo-freepods-4~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 4200
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/584/Oraimo_FreePods_4_Active_2.webp"
+  ],
+  "colors": [
+   "Black"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://www.sumashtech.com/product/oraimo-freepods-4-active-noise-cancellation-earbuds"
+ },
+ {
+  "id": "oneplus-bullets-wireless-z2-neckband",
+  "slug": "oneplus-bullets-wireless-z2-neckband",
+  "name": "Bullets Wireless Z2 Neckband",
+  "brand": "OnePlus",
+  "category": "earbuds",
+  "releaseYear": 2022,
+  "popularity": 66,
+  "variants": [
+   {
+    "id": "oneplus-bullets-wireless-z2-neckband~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2990
+   }
+  ],
+  "images": [
+   "https://motionview.s3.amazonaws.com/images/products/profile/172000000000.OnePlus-Bullets-Wireless-Z2.webp"
+  ],
+  "colors": [
+   "Black",
+   "Blue"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://motionview.com.bd/product/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone"
+ },
+ {
+  "id": "anker-zolo-20w-type-c-charger-a2699",
+  "slug": "anker-zolo-20w-type-c-charger-a2699",
+  "name": "Zolo 20W Type-C Charger (A2699)",
+  "brand": "Anker",
+  "category": "charger",
+  "releaseYear": 2024,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "anker-zolo-20w-type-c-charger-a2699~v1",
+    "label": "20W",
+    "attributes": {
+     "wattage": "20W"
+    },
+    "officialPrice": 999
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/mobile-accessories/anker/zolo-20w-type-c/zolo-20w-type-c-1200x630.webp",
+   "https://assets.gadgetandgear.com/upload/media/anker-zolo-20w-type-c-charger41.jpeg",
+   "https://images.kryinternational.com/uploads/anker-zolo-20w-wall-charger.jpg"
+  ],
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://www.startech.com.bd/anker-zolo-20w-type-c-charger-adapter"
+ },
+ {
+  "id": "anker-zolo-30w-type-c-charger-a2698",
+  "slug": "anker-zolo-30w-type-c-charger-a2698",
+  "name": "Zolo 30W Type-C Charger (A2698)",
+  "brand": "Anker",
+  "category": "charger",
+  "releaseYear": 2024,
+  "popularity": 98,
+  "variants": [
+   {
+    "id": "anker-zolo-30w-type-c-charger-a2698~v1",
+    "label": "30W",
+    "attributes": {
+     "wattage": "30W"
+    },
+    "officialPrice": 1150
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/mobile-accessories/anker/zolo-30w/zolo-30w-1200x630.webp",
+   "https://assets.gadgetandgear.com/upload/media/anker/anker-zolo-30w-type-c-charger.jpeg",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Anker-A2698-Zolo-Power-Adapter-USB-C---30Wa-6501.png"
+  ],
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://www.startech.com.bd/anker-zolo-30w-type-c-charger-adapter"
+ },
+ {
+  "id": "anker-nano-45w-type-c-charger-a2692",
+  "slug": "anker-nano-45w-type-c-charger-a2692",
+  "name": "Nano 45W Type-C Charger (A2692)",
+  "brand": "Anker",
+  "category": "charger",
+  "releaseYear": 2024,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "anker-nano-45w-type-c-charger-a2692~v1",
+    "label": "45W",
+    "attributes": {
+     "wattage": "45W"
+    },
+    "officialPrice": 2099
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/charger/anker/nano-45w/nano-45w-02-1200x630.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Anker-A2692-Nano-USB-C-Power-Adapter---45Wa-3699.png",
+   "https://motionview.s3.amazonaws.com/images/products/profile/177315710478.webp"
+  ],
+  "colors": [
+   "White"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Power",
+      "value": "Total Output: 45W Input: 100-240V, 1.2A, 50-60Hz Output: 5.0V⎓3.0A, 15.0W / 9.0V⎓3.0A, 27.0W / 15.0V⎓3.0A, 45.0W / 20.0V⎓2.25A, 45.0W (45.0W Max) PPS: 5.0V-11.0V⎓5.0A (45.0W Max) ；4.5V-21.0V⎓2.25A (45.0W Max) ；5.0V-16.0V⎓3.0A (45.0W Max)"
+     },
+     {
+      "label": "Operating Interface",
+      "value": "Type-C Ports"
+     }
+    ]
+   },
+   {
+    "group": "Physical Description",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Weight",
+      "value": "2.11 oz (60 g)"
+     },
+     {
+      "label": "Dimensions",
+      "value": "1.3 × 1.26 × 1.45 in (33 × 32 × 36.9 mm)"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturing Warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "18 Months"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/anker-nano-45w-charger-adapter"
+ },
+ {
+  "id": "anker-nano-45w-smart-display-charger-a121d",
+  "slug": "anker-nano-45w-smart-display-charger-a121d",
+  "name": "Nano 45W Smart Display Charger (A121D)",
+  "brand": "Anker",
+  "category": "charger",
+  "releaseYear": 2025,
+  "popularity": 98,
+  "variants": [
+   {
+    "id": "anker-nano-45w-smart-display-charger-a121d~v1",
+    "label": "45W",
+    "attributes": {
+     "wattage": "45W"
+    },
+    "officialPrice": 2799
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/charger/anker/nano-45w-gan-cn/nano-45w-white-1200x630.webp",
+   "https://assets.gadgetandgear.com/upload/media/anker/anker-nano-45w-smart-display-charger-white.jpeg",
+   "https://images.kryinternational.com/uploads/anker-nano-45w-smart-display-gan-fast-charger-b-webp"
+  ],
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "regions": [
+   "China",
+   "Global"
+  ],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Connectivity",
+      "value": "Type-C"
+     },
+     {
+      "label": "Others",
+      "value": "Input: 100-240V~ 50 / 60Hz, 1.5A Max Output: 5V⎓3A / 9V⎓3A / 15V⎓3A / 20V⎓2.25A (45W Max) Technology: GaN (Gallium Nitride) Digital Display"
+     }
+    ]
+   },
+   {
+    "group": "Physical Description",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black, Blue, White, Orange"
+     },
+     {
+      "label": "Weight",
+      "value": "2.65 oz (75 g)"
+     },
+     {
+      "label": "Dimensions",
+      "value": "1.34 × 1.40 × 1.57 in (34 × 35.5 × 40 mm)"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturing Warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "18 Months"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/anker-nano-45w-gan-charger"
+ },
+ {
+  "id": "anker-25w-type-c-compact-charger-a2656",
+  "slug": "anker-25w-type-c-compact-charger-a2656",
+  "name": "25W Type-C Compact Charger (A2656)",
+  "brand": "Anker",
+  "category": "charger",
+  "releaseYear": 2024,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "anker-25w-type-c-compact-charger-a2656~v1",
+    "label": "25W",
+    "attributes": {
+     "wattage": "25W"
+    },
+    "officialPrice": 1150
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/charger/anker/anker-25w/anker-25w-01-1200x630.webp",
+   "https://images.kryinternational.com/uploads/anker-25w-type-c-compact-charger-adapter.webp",
+   "https://gadgetbreeze.com.bd/wp-content/uploads/2025/06/Anker-A2656-25W-PD-Compact-USB-C-Charger.jpg"
+  ],
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://www.startech.com.bd/anker-25w-charger-adapter"
+ },
+ {
+  "id": "dell-optiplex-7020-mt",
+  "slug": "dell-optiplex-7020-mt",
+  "name": "OptiPlex 7020 MT",
+  "brand": "Dell",
+  "category": "desktop",
+  "releaseYear": 2023,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "dell-optiplex-7020-mt~v1",
+    "label": "Core i3-14100 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i3-14100",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 75000
+   },
+   {
+    "id": "dell-optiplex-7020-mt~v2",
+    "label": "Core i5-12500 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i5-12500",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 84500
+   },
+   {
+    "id": "dell-optiplex-7020-mt~v3",
+    "label": "Core i5-13500 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i5-13500",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 85000
+   },
+   {
+    "id": "dell-optiplex-7020-mt~v4",
+    "label": "Core i5-14500 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i5-14500",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 86500
+   },
+   {
+    "id": "dell-optiplex-7020-mt~v5",
+    "label": "Core i7-12700 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i7-12700",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 96000
+   },
+   {
+    "id": "dell-optiplex-7020-mt~v6",
+    "label": "Core i7-14700 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i7-14700",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 115000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/brand-pc/dell/optiplex-7020/optiplex-7020-01-1200x630.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Dell-Optiplex-7020-MT-12th-Gen-Intel-Core-i5-12500-Intel-UHD-770-Graphics-Brand-PC-3289.jpg",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4258/OptiPlex_7020.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Processor",
+      "value": "14th Generation Intel Core i3-14100-4C (3.50 up to 4.70GHz, 12MB)"
+     },
+     {
+      "label": "Motherboard",
+      "value": "Intel Q670"
+     },
+     {
+      "label": "RAM",
+      "value": "8GB (1X8G) DDR5 5600MHz Non-ECC, 2 DIMM slots"
+     },
+     {
+      "label": "Graphics Card",
+      "value": "Integrated Intel UHD Graphics 730"
+     },
+     {
+      "label": "Storage",
+      "value": "512GB PCIe NVMe SSD"
+     },
+     {
+      "label": "Audio",
+      "value": "Integrated High Definition Audio Codec Internal Dell Business Audio Speaker"
+     },
+     {
+      "label": "Power Supply",
+      "value": "Standard 180W PSU"
+     },
+     {
+      "label": "Network & Wireless Connectivity",
+      "value": "Integrated Gigabit LAN-On-Motherboard"
+     },
+     {
+      "label": "Operating System",
+      "value": "Free-Dos"
+     },
+     {
+      "label": "Others",
+      "value": "Bays: (3) SATA slots for 3.5-inch/2.5-inch HDD/SSD, and optical Drive I/O Slots: Full-height Gen 3 PCIe x16 slot (2) full-height Gen 3 PCIe x1 slots 2 x M.2"
+     }
+    ]
+   },
+   {
+    "group": "Input Devices",
+    "items": [
+     {
+      "label": "Keyboard",
+      "value": "Dell KB216 Wired Black Business Keyboard (English)"
+     },
+     {
+      "label": "Mouse",
+      "value": "Dell Optical Mouse-MS116"
+     },
+     {
+      "label": "Optical Drive",
+      "value": "N/A"
+     },
+     {
+      "label": "External I/O Ports",
+      "value": "Front: 2 USB 2.0 1 USB 3.2 Gen 1 Type-C port 1 USB 3.2 Gen 1 port 1 Universal audio port Rear: 2 USB 2.0 ports with SmartPower On 2 USB 3.2 Gen 1 ports 1 DisplayPort port 1 RJ45 Ethernet port 1 HDMI 1.4b port"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/dell-optiplex-7020-core-i3-14th-gen-brand-pc"
+ },
+ {
+  "id": "dell-tower-ect1250",
+  "slug": "dell-tower-ect1250",
+  "name": "Tower ECT1250",
+  "brand": "Dell",
+  "category": "desktop",
+  "releaseYear": 2024,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "dell-tower-ect1250~v1",
+    "label": "Core i3-14100 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i3-14100",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 75000
+   },
+   {
+    "id": "dell-tower-ect1250~v2",
+    "label": "Core i5-14400 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i5-14400",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 74000
+   },
+   {
+    "id": "dell-tower-ect1250~v3",
+    "label": "Core i5-14500 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i5-14500",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 86500
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/brand-pc/dell/ect1250/tower-ect1250-01-1200x630.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Dell-Tower-ECT1250-14th-GEN-Intel-Core-i3--14100-Intel-UHD-Graphics-Brand-PC-b-1509.jpg",
+   "https://www.selltech.com.bd/image/cache/catalog/Dell/Dell-ECT1250-Core-i3-14th-Gen-Tower-Brand-PC-600x315w.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Processor",
+      "value": "14th Generation Intel Core i3-14100 (12 MB cache, 4 Cores, 8 threads, up to 4.7 GHz)"
+     },
+     {
+      "label": "Motherboard",
+      "value": "Intel Q670"
+     },
+     {
+      "label": "RAM",
+      "value": "8 GB (1 x 8) DDR5, 4800 MT/s, single-channel"
+     },
+     {
+      "label": "Graphics Card",
+      "value": "Intel UHD Graphics 730"
+     },
+     {
+      "label": "Storage",
+      "value": "512 GB PCIe NVMe SSD"
+     },
+     {
+      "label": "Audio",
+      "value": "Realtek ALC3204 High Definition Audio"
+     },
+     {
+      "label": "Power Supply",
+      "value": "180W Bronze Power Supply"
+     },
+     {
+      "label": "Network & Wireless Connectivity",
+      "value": "Wi-Fi 6"
+     },
+     {
+      "label": "Operating System",
+      "value": "Free DOS"
+     }
+    ]
+   },
+   {
+    "group": "Input Devices",
+    "items": [
+     {
+      "label": "Keyboard",
+      "value": "Dell USB Business Keyboard"
+     },
+     {
+      "label": "Mouse",
+      "value": "Dell USB Optical Mouse"
+     },
+     {
+      "label": "External I/O Ports",
+      "value": "1x DisplayPort 1.4a (HBR2 support) port 1x HDMI 2.1 (TMDS) port 1x RJ45 Ethernet port (1 Gbps) 2x USB 2.0 (480 Mbps) ports 2x USB 2.0 (480 Mbps) with SmartPower On ports 3x USB 3.2 Gen 1 (5 Gbps) ports 1x USB 3.2 Gen 1 Type-C (5 Gbps) port 1x Global Handset Audio Jack 2x full-height PCIe x1 slots 1x full-height PCIe x16 slot M.2 1x M.2 2230 slot for Wi-Fi 6 and Bluetooth combo card 1x M.2 2230/2280 slot for solid-state drive 1x SATA 3.0 slots for 3.5-inch hard-disk drive"
+     }
+    ]
+   },
+   {
+    "group": "Physical Details",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "Height: 324.30 mm (12.77 in.) Width: 154 mm (6.06 in.) Depth: 293 mm (11.54 in.)"
+     },
+     {
+      "label": "Weight",
+      "value": "Weight (minimum): 5.45 kg (12.02 lb) Weight (maximum): 6.86 kg (15.12 lb)"
+     },
+     {
+      "label": "Color",
+      "value": "Standard Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/dell-ect1250-core-i3-brand-pc"
+ },
+ {
+  "id": "dell-pro-tower-qct1250",
+  "slug": "dell-pro-tower-qct1250",
+  "name": "Pro Tower QCT1250",
+  "brand": "Dell",
+  "category": "desktop",
+  "releaseYear": 2024,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "dell-pro-tower-qct1250~v1",
+    "label": "Core i5-14500 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i5-14500",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 86500
+   },
+   {
+    "id": "dell-pro-tower-qct1250~v2",
+    "label": "Core i7-14700 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i7-14700",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 130000
+   },
+   {
+    "id": "dell-pro-tower-qct1250~v3",
+    "label": "Core Ultra 5 235 8GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 5 235",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 110000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/brand-pc/dell/pro-tower-qct1250/pro-tower-qct1250-01-1200x630.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Dell-Tower-QCT1250-14th-GEN-Intel-Core-i5--14500-Intel-UHD-Graphics-Brand-PC-4289.jpg",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4260/QCT1250.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Processor",
+      "value": "Intel Core Ultra 5 235 (24MB cache, 14 Cores, 14 threads, up to 5.0GHz)"
+     },
+     {
+      "label": "RAM",
+      "value": "1 x 8GB DDR5"
+     },
+     {
+      "label": "Graphics Card",
+      "value": "Intel Integrated Graphics"
+     },
+     {
+      "label": "Storage",
+      "value": "512GB M.2 PCIe NVMe SSD"
+     },
+     {
+      "label": "Power Supply",
+      "value": "180W Built in"
+     },
+     {
+      "label": "Network & Wireless Connectivity",
+      "value": "1 x Ethernet (RJ-45)"
+     },
+     {
+      "label": "Operating System",
+      "value": "Free DOS"
+     },
+     {
+      "label": "Security Management",
+      "value": "Kensington lock"
+     },
+     {
+      "label": "Others",
+      "value": "Intel AI Boost 13 AI TOPS"
+     }
+    ]
+   },
+   {
+    "group": "Input Devices",
+    "items": [
+     {
+      "label": "Keyboard",
+      "value": "Dell USB Business Keyboard"
+     },
+     {
+      "label": "Mouse",
+      "value": "Dell USB Optical Mouse"
+     },
+     {
+      "label": "External I/O Ports",
+      "value": "Front: 2 x USB 2.0, 1 x USB 3.2 Gen 1, Rear: 2 x USB 2.0 with SmartPower On, 2 x USB 3.2 Gen 1 x USB 3.2 Gen 1 Type-C 1 x HDMI 1 x Displayport (DP) 3 full-height PCIe expansion slots (x1, x1, x16)"
+     }
+    ]
+   },
+   {
+    "group": "Physical Details",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "324.30 x 154.00 x 293.00mm"
+     },
+     {
+      "label": "Weight",
+      "value": "6.78 kg"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/dell-pro-tower-qct1250-core-ultra-5-brand-pc"
+ },
+ {
+  "id": "hp-pro-tower-280-g9",
+  "slug": "hp-pro-tower-280-g9",
+  "name": "Pro Tower 280 G9",
+  "brand": "HP",
+  "category": "desktop",
+  "releaseYear": 2022,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "hp-pro-tower-280-g9~v1",
+    "label": "Core i3-12100 4GB / 256GB",
+    "attributes": {
+     "chip": "Core i3-12100",
+     "ram": "4GB",
+     "storage": "256GB"
+    },
+    "officialPrice": 47000
+   },
+   {
+    "id": "hp-pro-tower-280-g9~v2",
+    "label": "Core i3-14100 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i3-14100",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 102000
+   },
+   {
+    "id": "hp-pro-tower-280-g9~v3",
+    "label": "Core i5-14500 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i5-14500",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 117000
+   },
+   {
+    "id": "hp-pro-tower-280-g9~v4",
+    "label": "Core i7-14700 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i7-14700",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 137000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/brand-pc/hp-aio/280-pro-g9/280-pro-g9-01-1200x630.webp",
+   "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/DESKTOP/HP%20Brand%20PC/Pro%20Tower%20280%20G9%20(B7NY9PT)-2-600x600.webp",
+   "https://pcbstore.com.bd/storage/products/hp-pro-tower-280-g9-core-i3-12th-gen-4gb-ram-256gb-ssd-desktop-pc-main.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Processor",
+      "value": "14th Generation Intel Core i3-14100-4C (3.50 up to 4.70GHz, 12MB)"
+     },
+     {
+      "label": "Motherboard",
+      "value": "Intel H670 Chipset"
+     },
+     {
+      "label": "RAM",
+      "value": "8GB DDR5"
+     },
+     {
+      "label": "Graphics Card",
+      "value": "Intel UHD 770 Graphics"
+     },
+     {
+      "label": "Storage",
+      "value": "512GB SSD"
+     },
+     {
+      "label": "Audio",
+      "value": "Realtek ALC3867 codec, combo microphone/headphone jack"
+     },
+     {
+      "label": "Power Supply",
+      "value": "180W"
+     },
+     {
+      "label": "Network & Wireless Connectivity",
+      "value": "1 x RJ-45 Intel 802.11a/b/g/n/ac (2x2) Wi-Fi and Bluetooth 4.2"
+     },
+     {
+      "label": "Operating System",
+      "value": "FreeDos"
+     }
+    ]
+   },
+   {
+    "group": "Input Devices",
+    "items": [
+     {
+      "label": "Keyboard",
+      "value": "HP USB Keyboard"
+     },
+     {
+      "label": "Mouse",
+      "value": "HP USB Mouse"
+     },
+     {
+      "label": "External I/O Ports",
+      "value": "2 x USB 2.0, 4 x USB 3.0 Type-A 2 x USB 3.0 Type-C 1x HDMI Port 1x VGA/D-Sub Expansion Slots 1 x full-height PCI, 2 x M.2, 1 x PCIe 3 x 1, 1 x PCIe 4 x 16"
+     }
+    ]
+   },
+   {
+    "group": "Physical Details",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "55 x 305 x 337mm"
+     },
+     {
+      "label": "Weight",
+      "value": "10.4 lb; 4.7 kg"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/hp-280-pro-g9-mt-core-i3-14th-gen-desktop-pc"
+ },
+ {
+  "id": "lenovo-ideacentre-08irh9",
+  "slug": "lenovo-ideacentre-08irh9",
+  "name": "IdeaCentre 08IRH9",
+  "brand": "Lenovo",
+  "category": "desktop",
+  "releaseYear": 2023,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "lenovo-ideacentre-08irh9~v1",
+    "label": "Core i7-13620H 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i7-13620H",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 97500
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/brand-pc/lenevo/ideacentre-08irh9/ideacentre-08irh9-01-1200x630.webp",
+   "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/DESKTOP/LENOVO/90XW006KLK-2-600x600.webp",
+   "https://pcbstore.com.bd/storage/products/lenovo-ideacentre-08irh9-core-i7-13th-gen-desktop-pc-main.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Processor",
+      "value": "Intel Core i7-13620H 10 Cores (6P + 4E) 16 Threads Frequency: P-core up to 4.9GHz, E-core up to 3.6GHz 24MB Intel Smart Cache"
+     },
+     {
+      "label": "Motherboard",
+      "value": "Chipset: Intel B760 Chipset"
+     },
+     {
+      "label": "RAM",
+      "value": "1x 8GB SODIMM DDR5-5200 Memory Slots: Two DDR5 SODIMM slots, Dual-channel capable Expandable Memory: Up to 32GB DDR5-5200"
+     },
+     {
+      "label": "Graphics Card",
+      "value": "Integrated Intel UHD Graphics"
+     },
+     {
+      "label": "Storage",
+      "value": "512GB M.2 2280 PCIe 4.0x4 NVMe SSD Max Storage Support: Up to three drives, 1x 3.5\" HDD + 2x M.2 SSD • 3.5\" HDD bay only for customer self-upgrade • M.2 SSD up to 1TB each"
+     },
+     {
+      "label": "Audio",
+      "value": "Audio Chip: High Definition (HD) Audio, Realtek ALC623-CG codec 24-bit DAC supports 44.1K/48K/96K sample rate, 2-channel DAC supports 16/20/24-bit PCM format for independent two stereo channels or 2.1 audio playback 24-bit ADC supports 44.1K/48K/96K sample rate, 2-channel ADC supports 16/20/24-bit PCM format for independent two stereo channel audio inputs"
+     },
+     {
+      "label": "Power Supply",
+      "value": "260W 90%"
+     },
+     {
+      "label": "Network & Wireless Connectivity",
+      "value": "Wi-Fi 6, 802.11ax 2x2 + BT5.2 Ethernet: Integrated 100/1000M"
+     },
+     {
+      "label": "Operating System",
+      "value": "FreeDOS"
+     },
+     {
+      "label": "Security Management",
+      "value": "Security Chip: Firmware TPM 2.0 integrated in SoC"
+     }
+    ]
+   },
+   {
+    "group": "Input Devices",
+    "items": [
+     {
+      "label": "Keyboard",
+      "value": "USB Calliope Keyboard, Black, English"
+     },
+     {
+      "label": "Mouse",
+      "value": "USB Calliope Mouse, Black"
+     },
+     {
+      "label": "External I/O Ports",
+      "value": "Front Ports: 1x USB-C (USB 5Gbps / USB 3.2 Gen 1), with 15W charging 2x USB-A (USB 5Gbps / USB 3.2 Gen 1) 1x headphone/microphone combo jack (3.5mm) 1x microphone (3.5mm) Rear Ports: 1x USB-A (USB 5Gbps / USB 3.2 Gen 1) 1x USB-A (USB 5Gbps / USB 3.2 Gen 1), with Smart Power On 2x USB-A (Hi-Speed USB / USB 2.0) 1x HDMI 2.1 TMDS 1x VGA 1x Ethernet (RJ-45) 1x audio-out (3.5mm) 1x power connector"
+     }
+    ]
+   },
+   {
+    "group": "Physical Details",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "89 x 291.4 x 339.5mm (3.5 x 11.5 x 13.4 inches)"
+     },
+     {
+      "label": "Weight",
+      "value": "Around 3.59 kg (7.9 lbs)"
+     },
+     {
+      "label": "Color",
+      "value": "Cloud Grey"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/lenovo-ideacentre-08irh9-core-i7-brand-pc"
+ },
+ {
+  "id": "dell-pro-slim-qcs1250",
+  "slug": "dell-pro-slim-qcs1250",
+  "name": "Pro Slim QCS1250",
+  "brand": "Dell",
+  "category": "desktop",
+  "releaseYear": 2025,
+  "popularity": 84,
+  "variants": [
+   {
+    "id": "dell-pro-slim-qcs1250~v1",
+    "label": "Core i5-14500 8GB / 512GB",
+    "attributes": {
+     "chip": "Core i5-14500",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 116500
+   },
+   {
+    "id": "dell-pro-slim-qcs1250~v2",
+    "label": "Core i5-14500 16GB / 512GB",
+    "attributes": {
+     "chip": "Core i5-14500",
+     "ram": "16GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 132000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/brand-pc/dell/pro-slim-qcs1250/pro-slim-qcs1250-01-1200x630.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Dell-Pro-Slim-QCS1250-Core-i5-14th-Gen-Brand-PC-3405.png",
+   "https://www.selltech.com.bd/image/cache/catalog/Dell/Dell-Pro-Slim-QCS1250-Core-i5-14th-Gen-Brand-PC-500x500.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Processor",
+      "value": "Intel Core i5-14500 vPro (14 cores, up to 5.0GHz) Speed: 2.6 GHz up to 5.0 GHz Turbo Cache: 24MB cache"
+     },
+     {
+      "label": "Motherboard",
+      "value": "Intel Q670"
+     },
+     {
+      "label": "RAM",
+      "value": "1 x 16 GB, DDR5 4800 MHz and supportability up to 64GB 2 Memory Slots"
+     },
+     {
+      "label": "Graphics Card",
+      "value": "Intel UHD Graphics 770"
+     },
+     {
+      "label": "Storage",
+      "value": "512GB M.2 2230 PCIe NVMe SSD"
+     },
+     {
+      "label": "Audio",
+      "value": "Realtek High Definition Audio Controller"
+     },
+     {
+      "label": "Power Supply",
+      "value": "180W Bronze Power Supply"
+     },
+     {
+      "label": "Network & Wireless Connectivity",
+      "value": "Integrated Gigabit LAN (10/100/1000 Mbps) MediaTek Wi-Fi 6 MT7920, 2x2, 802.11ax, MU-MIMO, Bluetooth wireless card"
+     },
+     {
+      "label": "Operating System",
+      "value": "Free DOS"
+     },
+     {
+      "label": "Security Management",
+      "value": "Trusted Platform Module (Discrete TPM Enabled)"
+     }
+    ]
+   },
+   {
+    "group": "Input Devices",
+    "items": [
+     {
+      "label": "Keyboard",
+      "value": "Dell USB Business Keyboard"
+     },
+     {
+      "label": "Mouse",
+      "value": "Dell USB Optical Mouse"
+     },
+     {
+      "label": "External I/O Ports",
+      "value": "Expansion Slots 2 full-height Gen3 PCIe x1 slots 1 full-height Gen3 PCIe x16 slot 1 M.2 2230/2280 SSD slot Ports Front 2 USB 2.0 (480 Mbps) ports 1 USB 3.2 Gen 1 port 1 USB 3.2 Gen 1 Type-C port 1 global headset jack Rear: 2 USB 2.0 (480 Mbps) ports 2 USB 3.2 Gen 1 (5 Gbps) ports 1 DisplayPort 1.4a (HBR2) port 1 HDMI 2.1 (TMDS) port 1 RJ-45 Ethernet Port"
+     }
+    ]
+   },
+   {
+    "group": "Physical Details",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "Height: 11.95 in. (303.50 mm) Width: 3.74 in. (95 mm) Depth: 11.54 in. (293 mm)"
+     },
+     {
+      "label": "Weight",
+      "value": "Weight (minimum): 8.61 lb (3.90 kg) Weight (maximum): 12.99 lb (5.89 kg)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/dell-pro-slim-qcs1250-core-i5-brand-pc"
+ },
+ {
+  "id": "asus-expertcenter-aio-p440vak",
+  "slug": "asus-expertcenter-aio-p440vak",
+  "name": "ExpertCenter AiO P440VAK",
+  "brand": "ASUS",
+  "category": "desktop",
+  "releaseYear": 2025,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "asus-expertcenter-aio-p440vak~v1",
+    "label": "Core 7 240H 16GB / 1TB",
+    "attributes": {
+     "chip": "Core 7 240H",
+     "ram": "16GB",
+     "storage": "1TB"
+    },
+    "officialPrice": 164920
+   },
+   {
+    "id": "asus-expertcenter-aio-p440vak~v2",
+    "label": "Core 5 210H 16GB / 1TB",
+    "attributes": {
+     "chip": "Core 5 210H",
+     "ram": "16GB",
+     "storage": "1TB"
+    },
+    "officialPrice": 121000
+   },
+   {
+    "id": "asus-expertcenter-aio-p440vak~v3",
+    "label": "Core i5-13420H 16GB / 1TB",
+    "attributes": {
+     "chip": "Core i5-13420H",
+     "ram": "16GB",
+     "storage": "1TB"
+    },
+    "officialPrice": 99000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/all-in-one-pc/asus/expertcenter-p400-aio-p470vak/expertcenter-p400-aio-p470vak-05-1200x630.webp",
+   "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/DESKTOP/ASUS/P44VAK-BPCD710-600x600.webp",
+   "https://www.selltech.com.bd/image/cache/catalog/ASUS%20ExpertCenter%20P440VAK%20Core%20i5%2013th%20Gen%2023.8%20inch%20FHD%20All-in-One%20PC-500x500.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Processor",
+      "value": "Intel Core 7 Processor 240H 2.50GHz - 5.20GHz (24MB Cache, 10 Cores, 16 Threads)"
+     },
+     {
+      "label": "RAM",
+      "value": "16GB DDR5 5600MHz SO-DIMM"
+     },
+     {
+      "label": "Graphics Card",
+      "value": "Integrated Intel UHD Graphics"
+     },
+     {
+      "label": "Storage",
+      "value": "1TB M.2 2280 NVME PCIE 4.0 SSD"
+     },
+     {
+      "label": "Monitor",
+      "value": "Non-touch screen, 100Hz, 23.8-inch, IPS FHD (1920 x 1080) 16:9, Anti-glare display, LED Backlit, 250nits, sRGB: 100%, Screen-to-body ratio93 %, Wide View"
+     },
+     {
+      "label": "Audio",
+      "value": "Built-in speakers Built-in array microphone"
+     },
+     {
+      "label": "Camera",
+      "value": "1080p FHD CMOS Webcam with Shutter"
+     },
+     {
+      "label": "Power Supply",
+      "value": "120W Adapter"
+     },
+     {
+      "label": "Network & Wireless Connectivity",
+      "value": "Wi-Fi 7(802.11be) (Triple band) 2*2 + Bluetooth 5.4"
+     },
+     {
+      "label": "Operating System",
+      "value": "Free Dos"
+     }
+    ]
+   },
+   {
+    "group": "Input Devices",
+    "items": [
+     {
+      "label": "Keyboard",
+      "value": "Wired black keyboard (USB)"
+     },
+     {
+      "label": "Mouse",
+      "value": "Wired optical mouse (USB)"
+     },
+     {
+      "label": "External I/O Ports",
+      "value": "Side I/O Ports 1x USB 2.0 Type-A 1x 3.5mm combo audio jack 1x Kensington lock Rear I/O Ports 3x USB 3.2 Gen 1 Type-A 1x USB 3.2 Gen 1 Type-C 1x HDMI™ out 1.4 1x HDMI™ in 1.4 1x RJ45 Gigabit Ethernet 1x DC-in"
+     }
+    ]
+   },
+   {
+    "group": "Physical Details",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "54.1 x 41.6 x 1.7 ~ 21.0 cm (21.30\" x 16.38\" x 0.67\" ~ 8.27\"), 54.1 x 55.1 x 1.7 ~ 26.0 cm"
+     },
+     {
+      "label": "Weight",
+      "value": "06.90 kg (15.21 lbs)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/asus-expertcenter-p400-aio-p440vak-core-7-all-in-one-pc"
+ },
+ {
+  "id": "jisulife-life1-fa26-portable-desk-fan",
+  "slug": "jisulife-life1-fa26-portable-desk-fan",
+  "name": "Life1 FA26 Portable Desk Fan",
+  "brand": "Jisulife",
+  "category": "fan",
+  "releaseYear": 2022,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "jisulife-life1-fa26-portable-desk-fan~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1999
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/gadget/mini-fan/jisulife/life1-fa26/life1-fa26-03-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1772/fa26_white.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/JISULIFE-FA26-Portable-Ultra-Thin-Table-Fan-B-8132.jpg"
+  ],
+  "colors": [
+   "White"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Fan Type",
+      "value": "Mini Desk Fan"
+     },
+     {
+      "label": "Number of Blades",
+      "value": "5"
+     },
+     {
+      "label": "Motor Type",
+      "value": "Brushless"
+     },
+     {
+      "label": "Noise Level",
+      "value": "Silent"
+     },
+     {
+      "label": "Others",
+      "value": "180° Rotation"
+     }
+    ]
+   },
+   {
+    "group": "Power Supply",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "4W"
+     },
+     {
+      "label": "Battery",
+      "value": "4500mAh"
+     },
+     {
+      "label": "Battery Duration",
+      "value": "Up to 5-18 hours"
+     },
+     {
+      "label": "Charging Time",
+      "value": "4-6 hours"
+     },
+     {
+      "label": "Charging Interface",
+      "value": "TYPE-C"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Material",
+      "value": "ABS"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/jisulife-life1-fa26-desk-fan"
+ },
+ {
+  "id": "jisulife-fa19-portable-rechargeable-fan",
+  "slug": "jisulife-fa19-portable-rechargeable-fan",
+  "name": "FA19 Portable Rechargeable Fan",
+  "brand": "Jisulife",
+  "category": "fan",
+  "releaseYear": 2021,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "jisulife-fa19-portable-rechargeable-fan~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2650
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/jisulife/fa19a/fa19a-04-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1932/JISULIFE_FA19_GREEN.webp",
+   "https://diamu.com.bd/wp-content/uploads/2023/06/Jisulife-FA19-USB-Portable-Rechargeable-Fan.jpg"
+  ],
+  "colors": [
+   "White",
+   "Green"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Fan Type",
+      "value": "Mini Desk Fan"
+     },
+     {
+      "label": "Number of Blades",
+      "value": "7"
+     },
+     {
+      "label": "Motor Type",
+      "value": "Brushless"
+     },
+     {
+      "label": "Noise Level",
+      "value": "Silent"
+     },
+     {
+      "label": "Others",
+      "value": "330° Rotation Cable Length：3.3ft"
+     }
+    ]
+   },
+   {
+    "group": "Additional Information",
+    "items": [
+     {
+      "label": "Light",
+      "value": "Indicator"
+     }
+    ]
+   },
+   {
+    "group": "Power Supply",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "4W"
+     },
+     {
+      "label": "Battery",
+      "value": "4500 mAh"
+     },
+     {
+      "label": "Charging Interface",
+      "value": "TYPE-C"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/jisulife-fa19-portable-fan"
+ },
+ {
+  "id": "xiaomi-solove-f5-desktop-stand-fan",
+  "slug": "xiaomi-solove-f5-desktop-stand-fan",
+  "name": "Solove F5 Desktop Stand Fan",
+  "brand": "Xiaomi",
+  "category": "fan",
+  "releaseYear": 2021,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "xiaomi-solove-f5-desktop-stand-fan~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2499
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/xiaomi/solove-f5/solove-f5-white-01-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1022/f5.webp",
+   "https://images.kryinternational.com/uploads/xiaomi-solove-f5-5w-usb-desktop-fan-black.jpg"
+  ],
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Power",
+      "value": "Built-in 4000mAh Battery"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Type-C interface, USB charging"
+     },
+     {
+      "label": "Others",
+      "value": "3 Wind Speed"
+     }
+    ]
+   },
+   {
+    "group": "Physical Description",
+    "items": [
+     {
+      "label": "Weight",
+      "value": "522g"
+     },
+     {
+      "label": "Materials",
+      "value": "ABS+PC"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturing Warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "No Warranty/ 3 Months Warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/xiaomi-solove-f5-desktop-stand-fan"
+ },
+ {
+  "id": "xiaomi-solove-f5-pro-desktop-fan",
+  "slug": "xiaomi-solove-f5-pro-desktop-fan",
+  "name": "Solove F5 Pro Desktop Fan",
+  "brand": "Xiaomi",
+  "category": "fan",
+  "releaseYear": 2023,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "xiaomi-solove-f5-pro-desktop-fan~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3099
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/xiaomi/solove-f5-pro/solove-f5-pro-20-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1935/solove_f5_pro_green.webp",
+   "https://diamu.com.bd/wp-content/uploads/2023/05/Xiaomi-Solove-F5-Pro-Smart-Fan.jpg"
+  ],
+  "colors": [
+   "White",
+   "Green"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Basic Information",
+    "items": [
+     {
+      "label": "Power",
+      "value": "Power (W): 3W Voltage (V): 5V Power Source: USB"
+     },
+     {
+      "label": "Others",
+      "value": "3 Wind Speed"
+     }
+    ]
+   },
+   {
+    "group": "Physical Description",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black Green"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturing Warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "03-months warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/xiaomi-solove-f5-pro-desktop-stand-fan"
+ },
+ {
+  "id": "xiaomi-solove-f5-pro-max-rechargeable-fan",
+  "slug": "xiaomi-solove-f5-pro-max-rechargeable-fan",
+  "name": "Solove F5 Pro Max Rechargeable Fan",
+  "brand": "Xiaomi",
+  "category": "fan",
+  "releaseYear": 2024,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "xiaomi-solove-f5-pro-max-rechargeable-fan~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3699
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/appliance/charger-fan/xiaomi/solove-f5-pro-max/solove-f5-pro-max-01-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1936/F5_pro_max_Black.webp",
+   "https://diamu.com.bd/wp-content/uploads/2024/05/Xiaomi-Solove-F5-Pro-Max-Rechargeable-Fan.jpg"
+  ],
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Fan Type",
+      "value": "Charger Fan"
+     },
+     {
+      "label": "Number of Blades",
+      "value": "3"
+     }
+    ]
+   },
+   {
+    "group": "Power Supply",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "3W"
+     },
+     {
+      "label": "Battery",
+      "value": "10,000mAh"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black, Green"
+     },
+     {
+      "label": "Material",
+      "value": "ABS+PC"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/xiaomi-solove-f5-pro-max-charger-fan"
+ },
+ {
+  "id": "xiaomi-solove-f3-mini-clip-fan",
+  "slug": "xiaomi-solove-f3-mini-clip-fan",
+  "name": "Solove F3 Mini Clip Fan",
+  "brand": "Xiaomi",
+  "category": "fan",
+  "releaseYear": 2021,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "xiaomi-solove-f3-mini-clip-fan~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1450
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/xiaomi/solove-f3/solove-f3-01-1200x630.webp",
+   "https://images.kryinternational.com/uploads/xiaomi-solove-f3-mini-clip-fan.jpg",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Xiaomi-Solove-F3-Mini-Clip-Fan-Blue-4443.jpg"
+  ],
+  "colors": [
+   "White",
+   "Blue",
+   "Pink"
+  ],
+  "regions": [],
+  "specs": [],
+  "specsSource": "https://www.startech.com.bd/xiaomi-solove-f3-mini-clip-fan"
+ },
+ {
+  "id": "hoco-hx65-portable-table-fan",
+  "slug": "hoco-hx65-portable-table-fan",
+  "name": "HX65 Portable Table Fan",
+  "brand": "Hoco",
+  "category": "fan",
+  "releaseYear": 2025,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "hoco-hx65-portable-table-fan~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1270
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/hoco/hx65/hx65-01-1200x630.webp",
+   "https://diamu.com.bd/wp-content/uploads/2025/04/Hoco-HX65-Ultra-Thin-Table-Fan-1.jpg",
+   "https://gadgetbreeze.com.bd/wp-content/uploads/2025/05/Hoco-HX65-Desktop-Fan.jpg"
+  ],
+  "colors": [
+   "White"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Fan Type",
+      "value": "Portable Rechargeable Table Fan"
+     },
+     {
+      "label": "Number of Blades",
+      "value": "7 Blades"
+     },
+     {
+      "label": "Noise Level",
+      "value": "up to 25 dB"
+     },
+     {
+      "label": "Modes",
+      "value": "3 speeds Modes"
+     }
+    ]
+   },
+   {
+    "group": "Power Supply",
+    "items": [
+     {
+      "label": "Battery",
+      "value": "Built-in battery 2000 mAh"
+     },
+     {
+      "label": "Battery Duration",
+      "value": "1.5 to 6 hours"
+     },
+     {
+      "label": "Charging Time",
+      "value": "about 2.5 hours"
+     },
+     {
+      "label": "Charging Interface",
+      "value": "Type-C"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "White"
+     },
+     {
+      "label": "Material",
+      "value": "ABS plastic + Polycarbonate"
+     },
+     {
+      "label": "Dimension",
+      "value": "173*56*209 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "340 g"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/hoco-hx65-portable-table-fan"
+ },
+ {
+  "id": "hoco-hx66-portable-table-fan",
+  "slug": "hoco-hx66-portable-table-fan",
+  "name": "HX66 Portable Table Fan",
+  "brand": "Hoco",
+  "category": "fan",
+  "releaseYear": 2025,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "hoco-hx66-portable-table-fan~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2150
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/hoco/hx66/hx66-01-1200x630.webp",
+   "https://diamu.com.bd/wp-content/uploads/2025/05/Hoco-HX66-Desktop-Circulation-Fan.jpg",
+   "https://gadgetbreeze.com.bd/wp-content/uploads/2025/04/Hoco-HX66-Desktop-Circulation-Fan-01.jpg"
+  ],
+  "colors": [
+   "White"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Fan Type",
+      "value": "Portable Rechargeable Table Fan"
+     },
+     {
+      "label": "Noise Level",
+      "value": "50 dB"
+     },
+     {
+      "label": "Modes",
+      "value": "5 speeds Modes"
+     },
+     {
+      "label": "Others",
+      "value": "Digital display for speed gear and battery level"
+     }
+    ]
+   },
+   {
+    "group": "Power Supply",
+    "items": [
+     {
+      "label": "Battery",
+      "value": "3000mAh"
+     },
+     {
+      "label": "Battery Duration",
+      "value": "2 to 11 hours (depending on speed)"
+     },
+     {
+      "label": "Charging Time",
+      "value": "about 4.5 hours"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "White"
+     },
+     {
+      "label": "Material",
+      "value": "ABS + electronic components"
+     },
+     {
+      "label": "Dimension",
+      "value": "195 × 177 × 92 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "554 g"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/hoco-hx66-portable-table-fan"
+ },
+ {
+  "id": "wiwu-fs03-2-in-1-table-clip-fan",
+  "slug": "wiwu-fs03-2-in-1-table-clip-fan",
+  "name": "FS03 2 in 1 Table Clip Fan",
+  "brand": "WiWU",
+  "category": "fan",
+  "releaseYear": 2023,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "wiwu-fs03-2-in-1-table-clip-fan~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1350
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/gadget/daily-lifestyle/wiwu/fs03/fs03-white-01-1200x630.webp",
+   "https://diamu.com.bd/wp-content/uploads/2023/08/WIWU-FS03-2-in-1-Table-Clip-Fan.jpg",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/WiWU-FS03-2-in-1-TableClip-Fan-a-2488.jpg"
+  ],
+  "colors": [
+   "White",
+   "Green"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Fan Type",
+      "value": "Rechargeable Table Fan"
+     },
+     {
+      "label": "Speed (RPM)",
+      "value": "3-Gear Switch"
+     },
+     {
+      "label": "Others",
+      "value": "Ultra-lightweight build 360 Degree Rotation"
+     }
+    ]
+   },
+   {
+    "group": "Power Supply",
+    "items": [
+     {
+      "label": "Battery",
+      "value": "1200mAh"
+     },
+     {
+      "label": "Battery Duration",
+      "value": "8 Hours"
+     },
+     {
+      "label": "Charging Time",
+      "value": "4-5h"
+     },
+     {
+      "label": "Charging Interface",
+      "value": "Type-C"
+     }
+    ]
+   },
+   {
+    "group": "Physical Information",
+    "items": [
+     {
+      "label": "Color",
+      "value": "White"
+     },
+     {
+      "label": "Material",
+      "value": "PC+ABS"
+     },
+     {
+      "label": "Weight",
+      "value": "285g"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/wiwu-fs03-table-clip-fan"
  },
  {
   "id": "lenovo-loq-15ahp9",
@@ -5883,6 +8190,1240 @@ export const catalogProducts: Product[] = [
    }
   ],
   "specsSource": "https://www.startech.com.bd/hp-250r-g10-core-3-100u-laptop"
+ },
+ {
+  "id": "hp-probook-440-g11",
+  "slug": "hp-probook-440-g11",
+  "name": "ProBook 440 G11",
+  "brand": "HP",
+  "category": "laptop",
+  "releaseYear": 2024,
+  "popularity": 92,
+  "variants": [
+   {
+    "id": "hp-probook-440-g11~v1",
+    "label": "Core Ultra 5 125U 8GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 5 125U",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 118000
+   },
+   {
+    "id": "hp-probook-440-g11~v2",
+    "label": "Core Ultra 5 125U 16GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 5 125U",
+     "ram": "16GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 115000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/probook-440-g11/probook-440-g11-1-1200x630.webp"
+  ],
+  "colors": [
+   "Pike Silver"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Processor",
+    "items": [
+     {
+      "label": "Processor Brand",
+      "value": "Intel"
+     },
+     {
+      "label": "Processor Model",
+      "value": "Core 5 Ultra -125U"
+     },
+     {
+      "label": "Processor Frequency",
+      "value": "up to 3.6 GHz E-core Max Turbo frequency up to 4.3 GHz P-core Max Turbo frequency"
+     },
+     {
+      "label": "Processor Core",
+      "value": "12"
+     },
+     {
+      "label": "Processor Thread",
+      "value": "14T"
+     },
+     {
+      "label": "CPU Cache",
+      "value": "12MB L3 Cache"
+     },
+     {
+      "label": "NPU",
+      "value": "Intel AI Boost"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "14 Inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Display Resolution",
+      "value": "WUXGA (1920 x 1200)"
+     },
+     {
+      "label": "Display Features",
+      "value": "Narrow bezel, anti-glare, 300 nits, 45% NTSC"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "RAM",
+      "value": "8GB"
+     },
+     {
+      "label": "RAM Type",
+      "value": "DDR5"
+     },
+     {
+      "label": "Bus Speed",
+      "value": "5600MHz"
+     },
+     {
+      "label": "Total RAM Slot",
+      "value": "2"
+     }
+    ]
+   },
+   {
+    "group": "Storage",
+    "items": [
+     {
+      "label": "Storage Type",
+      "value": "PCIe NVMe SSD"
+     },
+     {
+      "label": "Storage Capacity",
+      "value": "512GB"
+     }
+    ]
+   },
+   {
+    "group": "Graphics",
+    "items": [
+     {
+      "label": "Graphics Model",
+      "value": "Intel UHD Graphics"
+     },
+     {
+      "label": "Graphics Memory",
+      "value": "Shared"
+     },
+     {
+      "label": "Graphics Type",
+      "value": "Integrated"
+     }
+    ]
+   },
+   {
+    "group": "Keyboard & TouchPad",
+    "items": [
+     {
+      "label": "Keyboard Type",
+      "value": "HP Premium Keyboard"
+     },
+     {
+      "label": "Keyboard Features",
+      "value": "Spill-resistant, Backlit keyboard"
+     },
+     {
+      "label": "TouchPad",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Camera & Audio",
+    "items": [
+     {
+      "label": "WebCam",
+      "value": "1080p FHD camera"
+     },
+     {
+      "label": "Speaker",
+      "value": "Dual stereo speakers"
+     },
+     {
+      "label": "Microphone",
+      "value": "Dual-array microphones"
+     }
+    ]
+   },
+   {
+    "group": "Ports & Slots",
+    "items": [
+     {
+      "label": "HDMI Port",
+      "value": "1 x HDMI 2.1"
+     },
+     {
+      "label": "USB 3 Port",
+      "value": "2x USB Type-A 5Gbps signaling rate (1 charging, 1 power)"
+     },
+     {
+      "label": "USB Type-C / Thunderbolt Port",
+      "value": "2 USB Type-C 10Gbps signaling rate (USB Power Delivery, DisplayPort 2.1)"
+     },
+     {
+      "label": "Headphone & Microphone Port",
+      "value": "1x headphone/microphone combo"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "LAN",
+      "value": "1x RJ45"
+     },
+     {
+      "label": "WiFi",
+      "value": "Intel Wi-Fi 6E AX211 (2x2)"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "Bluetooth 5.3 Wireless Card"
+     }
+    ]
+   },
+   {
+    "group": "Security",
+    "items": [
+     {
+      "label": "Fingerprint Sensor",
+      "value": "Yes"
+     },
+     {
+      "label": "Camera Privacy Shutter",
+      "value": "Yes"
+     },
+     {
+      "label": "Security Chip",
+      "value": "TPM 2.0 embedded security chip (Common Criteria EAL4+ and FIPS 140-2 Level 2 Certified)"
+     }
+    ]
+   },
+   {
+    "group": "Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "FreeDOS"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Battery Type",
+      "value": "HP Long Life 3-cell Li-ion"
+     },
+     {
+      "label": "Battery Capacity",
+      "value": "56 Wh"
+     },
+     {
+      "label": "Adapter Type",
+      "value": "HP Smart 65 W External AC Power Adapter"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Silver"
+     },
+     {
+      "label": "Dimensions",
+      "value": "31.86 x 22.44 x 1.09 cm (front); 31.86 x 22.43 x 1.7 cm"
+     },
+     {
+      "label": "Weight",
+      "value": "1.39 kg"
+     },
+     {
+      "label": "Body Material",
+      "value": "aluminum"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/hp-probook-440-g11-laptop"
+ },
+ {
+  "id": "hp-probook-460-g11",
+  "slug": "hp-probook-460-g11",
+  "name": "ProBook 460 G11",
+  "brand": "HP",
+  "category": "laptop",
+  "releaseYear": 2024,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "hp-probook-460-g11~v1",
+    "label": "Core Ultra 5 125H 8GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 5 125H",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 117000
+   },
+   {
+    "id": "hp-probook-460-g11~v2",
+    "label": "Core Ultra 7 155H 8GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 7 155H",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 142000
+   },
+   {
+    "id": "hp-probook-460-g11~v3",
+    "label": "Core Ultra 5 125U 8GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 5 125U",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 99999
+   },
+   {
+    "id": "hp-probook-460-g11~v4",
+    "label": "Core Ultra 7 155U 16GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 7 155U",
+     "ram": "16GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 152000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/probook-460-g11/hp-probook-460-g11-01-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2148/HP_ProBook_460_16_inch_G11_Notebook.webp"
+  ],
+  "colors": [
+   "Pike Silver"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Processor",
+    "items": [
+     {
+      "label": "Processor Brand",
+      "value": "Intel"
+     },
+     {
+      "label": "Processor Model",
+      "value": "Core Ultra 5 125H"
+     },
+     {
+      "label": "Processor Frequency",
+      "value": "up to 4.5 GHz"
+     },
+     {
+      "label": "Processor Core",
+      "value": "14"
+     },
+     {
+      "label": "Processor Thread",
+      "value": "18"
+     },
+     {
+      "label": "CPU Cache",
+      "value": "18"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "16 Inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Display Resolution",
+      "value": "WUXGA (1920 x 1200)"
+     },
+     {
+      "label": "Display Features",
+      "value": "anti-glare, 300 nits, 45% NTSC"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "RAM",
+      "value": "8GB"
+     },
+     {
+      "label": "RAM Type",
+      "value": "DDR5"
+     },
+     {
+      "label": "Bus Speed",
+      "value": "5600MHz"
+     },
+     {
+      "label": "Total RAM Slot",
+      "value": "2"
+     }
+    ]
+   },
+   {
+    "group": "Storage",
+    "items": [
+     {
+      "label": "Storage Type",
+      "value": "PCIe NVMe SSD"
+     },
+     {
+      "label": "Storage Capacity",
+      "value": "512GB"
+     }
+    ]
+   },
+   {
+    "group": "Graphics",
+    "items": [
+     {
+      "label": "Graphics Model",
+      "value": "Intel Arc Graphics"
+     },
+     {
+      "label": "Graphics Type",
+      "value": "Integrated"
+     }
+    ]
+   },
+   {
+    "group": "Keyboard & TouchPad",
+    "items": [
+     {
+      "label": "Keyboard Type",
+      "value": "HP Premium Keyboard"
+     },
+     {
+      "label": "Keyboard Features",
+      "value": "Spill-resistant, Backlit keyboard"
+     },
+     {
+      "label": "TouchPad",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Camera & Audio",
+    "items": [
+     {
+      "label": "WebCam",
+      "value": "1080p FHD camera"
+     },
+     {
+      "label": "Speaker",
+      "value": "Dual stereo speakers"
+     },
+     {
+      "label": "Microphone",
+      "value": "Dual-array microphones"
+     },
+     {
+      "label": "Audio Features",
+      "value": "Audio by Poly Studio"
+     }
+    ]
+   },
+   {
+    "group": "Ports & Slots",
+    "items": [
+     {
+      "label": "HDMI Port",
+      "value": "1 x HDMI 2.1"
+     },
+     {
+      "label": "USB 3 Port",
+      "value": "2x USB Type-A 5Gbps signaling rate (1 charging, 1 power)"
+     },
+     {
+      "label": "USB Type-C / Thunderbolt Port",
+      "value": "2 USB Type-C 20Gbps signaling rate (USB Power Delivery, DisplayPort 1.4)"
+     },
+     {
+      "label": "Headphone & Microphone Port",
+      "value": "1x headphone/microphone combo"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "LAN",
+      "value": "1x RJ45"
+     },
+     {
+      "label": "WiFi",
+      "value": "Intel Wi-Fi 6E AX211 (2x2)"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "Bluetooth 5.3 Wireless Card"
+     }
+    ]
+   },
+   {
+    "group": "Security",
+    "items": [
+     {
+      "label": "Fingerprint Sensor",
+      "value": "Yes"
+     },
+     {
+      "label": "Camera Privacy Shutter",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "FreeDOS"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Battery Type",
+      "value": "HP Long Life 3-cell Li-ion"
+     },
+     {
+      "label": "Battery Capacity",
+      "value": "56 Wh"
+     },
+     {
+      "label": "Adapter Type",
+      "value": "65 W USB Type-C"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Pike silver"
+     },
+     {
+      "label": "Dimensions",
+      "value": "35.94 x 25.11 x 1.09 cm (front); 35.94 x 25.11 x 1.7 cm (rear)"
+     },
+     {
+      "label": "Weight",
+      "value": "Starting at 1.74 kg"
+     },
+     {
+      "label": "Body Material",
+      "value": "aluminum"
+     },
+     {
+      "label": "Part Number / MPN",
+      "value": "B7PE3PT"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/hp-probook-460-g11-laptop"
+ },
+ {
+  "id": "lenovo-thinkpad-e14-gen-7",
+  "slug": "lenovo-thinkpad-e14-gen-7",
+  "name": "ThinkPad E14 Gen 7",
+  "brand": "Lenovo",
+  "category": "laptop",
+  "releaseYear": 2025,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "lenovo-thinkpad-e14-gen-7~v1",
+    "label": "Core Ultra 5 225U 8GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 5 225U",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 116500
+   },
+   {
+    "id": "lenovo-thinkpad-e14-gen-7~v2",
+    "label": "Core Ultra 5 225U 16GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 5 225U",
+     "ram": "16GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 128500
+   },
+   {
+    "id": "lenovo-thinkpad-e14-gen-7~v3",
+    "label": "Core Ultra 5 225H 16GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 5 225H",
+     "ram": "16GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 139500
+   },
+   {
+    "id": "lenovo-thinkpad-e14-gen-7~v4",
+    "label": "Core Ultra 7 255H 16GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 7 255H",
+     "ram": "16GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 180000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/thinkpad-e14-gen-7/thinkpad-e14-gen-7-01-1200x630.webp"
+  ],
+  "colors": [
+   "Black"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Processor",
+    "items": [
+     {
+      "label": "Processor Brand",
+      "value": "Intel"
+     },
+     {
+      "label": "Processor Model",
+      "value": "Core Ultra 5 225U"
+     },
+     {
+      "label": "Processor Frequency",
+      "value": "Max Turbo up to 4.8GHz"
+     },
+     {
+      "label": "Processor Core",
+      "value": "12C (2P + 8E + 2LPE)"
+     },
+     {
+      "label": "Processor Thread",
+      "value": "14T"
+     },
+     {
+      "label": "CPU Cache",
+      "value": "12MB Intel Smart Cache"
+     },
+     {
+      "label": "NPU",
+      "value": "Integrated Intel AI Boost, up to 12 TOPS"
+     }
+    ]
+   },
+   {
+    "group": "Chipset",
+    "items": [
+     {
+      "label": "Chipset Model",
+      "value": "Intel SoC Platform"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "14 Inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Display Resolution",
+      "value": "WUXGA (1920 x 1200)"
+     },
+     {
+      "label": "Touch Screen",
+      "value": "N/A"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "60Hz"
+     },
+     {
+      "label": "Display Features",
+      "value": "300nits Anti-glare, 45% NTSC 90% Screen-to-Body Ratio"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "RAM",
+      "value": "8GB"
+     },
+     {
+      "label": "RAM Type",
+      "value": "DDR5"
+     },
+     {
+      "label": "Removable",
+      "value": "Yes"
+     },
+     {
+      "label": "Bus Speed",
+      "value": "5600MHz"
+     },
+     {
+      "label": "Total RAM Slot",
+      "value": "two DDR5 SODIMM slots, dual-channel capable"
+     },
+     {
+      "label": "Max RAM Capacity",
+      "value": "up to 64GB DDR5-5600"
+     }
+    ]
+   },
+   {
+    "group": "Storage",
+    "items": [
+     {
+      "label": "Storage Type",
+      "value": "M.2 2242 PCIe 4.0x4 NVMe Opal 2.0 SSD"
+     },
+     {
+      "label": "Storage Capacity",
+      "value": "512GB"
+     },
+     {
+      "label": "Extra M.2 Slot",
+      "value": "two M.2 slots One M.2 2242 PCIe® 4.0 x4 slot One M.2 2280 PCIe® 4.0 x4 slot"
+     },
+     {
+      "label": "Supported SSD Type",
+      "value": "M.2 2242 PCIe 4.0 x4 slot"
+     },
+     {
+      "label": "Storage Upgrade",
+      "value": "Up to 1TB"
+     }
+    ]
+   },
+   {
+    "group": "Graphics",
+    "items": [
+     {
+      "label": "Graphics Model",
+      "value": "Intel Graphics"
+     },
+     {
+      "label": "Graphics Memory",
+      "value": "Shared"
+     },
+     {
+      "label": "Graphics Type",
+      "value": "Integrated"
+     }
+    ]
+   },
+   {
+    "group": "Keyboard & TouchPad",
+    "items": [
+     {
+      "label": "Keyboard Type",
+      "value": "Backlit Keyboard"
+     },
+     {
+      "label": "Keyboard Features",
+      "value": "English"
+     },
+     {
+      "label": "TouchPad",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Camera & Audio",
+    "items": [
+     {
+      "label": "WebCam",
+      "value": "720p HD webcam"
+     },
+     {
+      "label": "Speaker",
+      "value": "Stereo speakers, 2W x2"
+     },
+     {
+      "label": "Microphone",
+      "value": "2x, Array"
+     },
+     {
+      "label": "Audio Features",
+      "value": "Dolby Atmos, audio by HARMAN Audio Chip: High Definition (HD) Audio, Senary SN6147 codec"
+     }
+    ]
+   },
+   {
+    "group": "Ports & Slots",
+    "items": [
+     {
+      "label": "Optical Drive",
+      "value": "N/A"
+     },
+     {
+      "label": "Card Reader",
+      "value": "N/A"
+     },
+     {
+      "label": "HDMI Port",
+      "value": "1x HDMI 2.1, up to 4K/60Hz"
+     },
+     {
+      "label": "USB 3 Port",
+      "value": "1x USB-A (USB 5Gbps / USB 3.2 Gen 1) 1x USB-A (USB 10Gbps / USB 3.2 Gen 2), Always On"
+     },
+     {
+      "label": "USB Type-C / Thunderbolt Port",
+      "value": "1x USB-C (Thunderbolt 4 / USB4 40Gbps), with USB PD 45-65W and DisplayPort 2.1"
+     },
+     {
+      "label": "Headphone & Microphone Port",
+      "value": "1x Headphone / microphone combo jack (3.5mm)"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "LAN",
+      "value": "1x Ethernet 100/1000M (RJ-45)"
+     },
+     {
+      "label": "WiFi",
+      "value": "Intel Wi-Fi 6E AX211, 802.11ax 2x2"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "Bluetooth 5.3"
+     }
+    ]
+   },
+   {
+    "group": "Security",
+    "items": [
+     {
+      "label": "Fingerprint Sensor",
+      "value": "Touch Style, Match-on-Chip, Integrated in Power Button"
+     },
+     {
+      "label": "Security Locker Slot",
+      "value": "Kensington Nano Security Slot™, 2.5 x 6 mm"
+     },
+     {
+      "label": "Camera Privacy Shutter",
+      "value": "Yes"
+     },
+     {
+      "label": "Security Chip",
+      "value": "Discrete TPM 2.0 Enabled"
+     }
+    ]
+   },
+   {
+    "group": "Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "FreeDOS"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Battery Capacity",
+      "value": "48Wh"
+     },
+     {
+      "label": "Adapter Type",
+      "value": "65W USB-C (3-pin)"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimensions",
+      "value": "313 x 220.3 x 10.1/15.25 (front/rear), 20.5 (maximum) mm; 12.32 x 8.67 x 0.40/0.60 (front/rear), 0.81 (maximum) inches"
+     },
+     {
+      "label": "Weight",
+      "value": "Starting at 1.34 kg (2.95 lbs)"
+     },
+     {
+      "label": "Body Material",
+      "value": "Aluminium (Top), PC-ABS (Bottom)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/lenovo-thinkpad-e14-gen-7-laptop-black"
+ },
+ {
+  "id": "lenovo-thinkpad-e14-gen-6",
+  "slug": "lenovo-thinkpad-e14-gen-6",
+  "name": "ThinkPad E14 Gen 6",
+  "brand": "Lenovo",
+  "category": "laptop",
+  "releaseYear": 2024,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "lenovo-thinkpad-e14-gen-6~v1",
+    "label": "Core Ultra 5 125U 8GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 5 125U",
+     "ram": "8GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 107000
+   },
+   {
+    "id": "lenovo-thinkpad-e14-gen-6~v2",
+    "label": "Core Ultra 5 125H 16GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 5 125H",
+     "ram": "16GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 121000
+   },
+   {
+    "id": "lenovo-thinkpad-e14-gen-6~v3",
+    "label": "Core Ultra 7 155H 16GB / 512GB",
+    "attributes": {
+     "chip": "Core Ultra 7 155H",
+     "ram": "16GB",
+     "storage": "512GB"
+    },
+    "officialPrice": 149000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/thinkpad-e14-gen-6/thinkpad-e14-gen-6-01-1200x630.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-ThinkPad-E14-Gen-6-Intel-Core-Ultra-7-155H-Integrated-Intel-Arc-Graphics-14-WUXGA-Laptop-1888.png"
+  ],
+  "colors": [
+   "Black"
+  ],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Processor",
+    "items": [
+     {
+      "label": "Processor Brand",
+      "value": "Intel"
+     },
+     {
+      "label": "Processor Model",
+      "value": "Core Ultra 5 125U"
+     },
+     {
+      "label": "Processor Frequency",
+      "value": "E-Core Max 3.60 GHz, P-Core Max 4.30 GHz with Turbo Boost"
+     },
+     {
+      "label": "Processor Core",
+      "value": "12C"
+     },
+     {
+      "label": "Processor Thread",
+      "value": "14T"
+     },
+     {
+      "label": "CPU Cache",
+      "value": "12MB Cache"
+     }
+    ]
+   },
+   {
+    "group": "Chipset",
+    "items": [
+     {
+      "label": "Chipset Model",
+      "value": "Intel integrated SoC"
+     }
+    ]
+   },
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "14 Inch"
+     },
+     {
+      "label": "Display Resolution",
+      "value": "WUXGA (1920 x 1200)"
+     },
+     {
+      "label": "Display Features",
+      "value": "anti-glare, 16:10 aspect ratio, 300nits, 45% NTSC, TÜV Low Blue Light certified (Software)"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "RAM",
+      "value": "8GB"
+     },
+     {
+      "label": "RAM Type",
+      "value": "DDR5"
+     },
+     {
+      "label": "Bus Speed",
+      "value": "5600MHz"
+     },
+     {
+      "label": "Total RAM Slot",
+      "value": "2"
+     }
+    ]
+   },
+   {
+    "group": "Storage",
+    "items": [
+     {
+      "label": "Storage Capacity",
+      "value": "512GB SSD"
+     }
+    ]
+   },
+   {
+    "group": "Graphics",
+    "items": [
+     {
+      "label": "Graphics Model",
+      "value": "Intel UHD Graphics"
+     },
+     {
+      "label": "Graphics Memory",
+      "value": "Shared"
+     },
+     {
+      "label": "Graphics Type",
+      "value": "Integrated"
+     }
+    ]
+   },
+   {
+    "group": "Keyboard & TouchPad",
+    "items": [
+     {
+      "label": "Keyboard Type",
+      "value": "Backlit Keyboard"
+     },
+     {
+      "label": "Keyboard Features",
+      "value": "ThinkPad Trackpoint Keyboard Optional: Backlit with white LED lights Dual-function TrackPoint: Quick Menu: navigate the cursor or double-tap to open TrackPoint Quick Menu Spill-resistant"
+     },
+     {
+      "label": "TouchPad",
+      "value": "TrackPad: 115mm x 56mm / 4.5″ x 2.2″"
+     }
+    ]
+   },
+   {
+    "group": "Camera & Audio",
+    "items": [
+     {
+      "label": "WebCam",
+      "value": "720p HD webcam"
+     },
+     {
+      "label": "Speaker",
+      "value": "2 x 2W stereo speakers"
+     },
+     {
+      "label": "Audio Features",
+      "value": "Audio by Harman, Dolby Atmos"
+     }
+    ]
+   },
+   {
+    "group": "Ports & Slots",
+    "items": [
+     {
+      "label": "Optical Drive",
+      "value": "N/A"
+     },
+     {
+      "label": "HDMI Port",
+      "value": "HDMI 2.1 (supports resolution up to 4K@60Hz)"
+     },
+     {
+      "label": "USB 2 Port",
+      "value": "1x USB-A (USB 10 Gbps) 1x USB-A (USB 5 Gbps)"
+     },
+     {
+      "label": "USB 3 Port",
+      "value": "1x USB C (Thunderbolt 4, 40Gbps, power delivery / DisplayPort 2.1) 1x USB-C (USB 20 Gbps, PD 3.0 / DP 1.4)"
+     },
+     {
+      "label": "USB Type-C / Thunderbolt Port",
+      "value": "1x USB-C 3.2 Gen 2 (support data transfer, Power Delivery 3.0 and DisplayPort™ 1.4) 1x Thunderbolt 4 / USB4® 40Gbps (support data transfer, Power Delivery 3.0 and DisplayPort 1.4)"
+     },
+     {
+      "label": "Headphone & Microphone Port",
+      "value": "1x Headphone / microphone combo jack (3.5mm)"
+     }
+    ]
+   },
+   {
+    "group": "Network & Connectivity",
+    "items": [
+     {
+      "label": "LAN",
+      "value": "1x Ethernet (RJ-45)"
+     },
+     {
+      "label": "WiFi",
+      "value": "Intel Wi-Fi 6 AX201 802.11AX (2 x 2)"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "Bluetooth 5.1"
+     }
+    ]
+   },
+   {
+    "group": "Security",
+    "items": [
+     {
+      "label": "Fingerprint Sensor",
+      "value": "Yes"
+     },
+     {
+      "label": "Security Locker Slot",
+      "value": "Kensington"
+     },
+     {
+      "label": "Camera Privacy Shutter",
+      "value": "Yes"
+     },
+     {
+      "label": "Security Chip",
+      "value": "Discrete Trusted Platform Module (dTPM) 2.0"
+     }
+    ]
+   },
+   {
+    "group": "Software",
+    "items": [
+     {
+      "label": "Operating System",
+      "value": "FreeDOS"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Battery Type",
+      "value": "Integrated"
+     },
+     {
+      "label": "Battery Capacity",
+      "value": "47Wh"
+     },
+     {
+      "label": "Adapter Type",
+      "value": "65W USB-C (3-pin) AC adapter"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Graphite Black"
+     },
+     {
+      "label": "Dimensions",
+      "value": "17.99mm x 313mm x 219.3mm / 0.70″ x 12.32″ x 8.63″"
+     },
+     {
+      "label": "Weight",
+      "value": "1.41kg"
+     },
+     {
+      "label": "Body Material",
+      "value": "Aluminum (Top), PC/ABS Plastic (Bottom)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/lenovo-thinkpad-e14-gen-6-laptop"
  },
  {
   "id": "apple-macbook-neo",
@@ -15693,6 +19234,2724 @@ export const catalogProducts: Product[] = [
   "specsSource": "https://www.startech.com.bd/lg-24u631a-b-monitor"
  },
  {
+  "id": "viewsonic-va2214-h-22-inch-fhd",
+  "slug": "viewsonic-va2214-h-22-inch-fhd",
+  "name": "VA2214-H 22-inch FHD",
+  "brand": "ViewSonic",
+  "category": "monitor",
+  "releaseYear": 2022,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "viewsonic-va2214-h-22-inch-fhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 10500
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/va2214-h/va2214-h-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "22 inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "FHD (1920 x 1080)"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.249 mm (H) x 0.241 mm (V)"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare, Hard Coating (3H)"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178º horizontal, 178º vertical"
+     },
+     {
+      "label": "Brightness",
+      "value": "250 cd/m² (typ)"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "Static Contrast Ratio: 1,000:1 (typ) Dynamic Contrast Ratio: 50M:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "100Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "Colors: 16.7M Color Space Support: 8 bit (6 bit + FRC)"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "NTSC: 72% size (Typ) sRGB: 104% size (Typ)"
+     },
+     {
+      "label": "Response Time",
+      "value": "4ms (Typical GTG)"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Color Temperature Selection",
+      "value": "32°F to 104°F (0°C to 40°C)"
+     },
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "N/A"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "VGA",
+      "value": "VGA: 1"
+     },
+     {
+      "label": "HDMI",
+      "value": "HDMI 1.4: 1"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "3.5MM Audio Out x 1"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "-5º / 20º"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100 x 100 mm"
+     },
+     {
+      "label": "Security Locker",
+      "value": "Kensington Lock Slot"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Physical (in.): 19.42 x 15.17 x 8.12 Physical Without Stand (in.): 19.42 x 11.42 x 1.97"
+     },
+     {
+      "label": "Weight",
+      "value": "Net (lbs): 6 Net Without Stand (lbs): 5.3 Gross (lbs): 8.4"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Internal Power Supply"
+     },
+     {
+      "label": "Power Consumption",
+      "value": "Consumption (typical): 17W Consumption (max): 21.3W"
+     },
+     {
+      "label": "Voltage",
+      "value": "AC 100-240V"
+     },
+     {
+      "label": "Others",
+      "value": "Eco Mode (Conserve): 13W Eco Mode (optimized): 15W Stand-by: 0.3W"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/viewsonic-va2214-h-monitor"
+ },
+ {
+  "id": "viewsonic-va2432a-h-24-inch-fhd",
+  "slug": "viewsonic-va2432a-h-24-inch-fhd",
+  "name": "VA2432A-H 24-inch FHD",
+  "brand": "ViewSonic",
+  "category": "monitor",
+  "releaseYear": 2022,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "viewsonic-va2432a-h-24-inch-fhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 14200
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/va2432a-h/va2432a-h-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "24\""
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS Technology"
+     },
+     {
+      "label": "Resolution",
+      "value": "Full HD (1920 x 1080)"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.275 mm (H) x 0.275 mm (V)"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare, Hard Coating (3H)"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178º horizontal, 178º vertical"
+     },
+     {
+      "label": "Brightness",
+      "value": "250 cd/m² (typ)"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "Static Contrast Ratio: 1,000:1 (typ) Dynamic Contrast Ratio: 50M:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "120Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "Colors: 16.7M Color Space Support: 8 bit (6 bit + Hi-FRC)"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "NTSC: 75% size (Typ) sRGB: 105% size / 99% coverage (Typ)"
+     },
+     {
+      "label": "Response Time",
+      "value": "1ms (MPRT)"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     },
+     {
+      "label": "Others Features",
+      "value": "Backlight Life (Hours): 30000 Hrs (Min)"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "No"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "VGA",
+      "value": "1x VGA"
+     },
+     {
+      "label": "Display Port",
+      "value": "Yes"
+     },
+     {
+      "label": "HDMI",
+      "value": "1x HDMI 1.4"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "1 x 3.5mm Audio Out"
+     },
+     {
+      "label": "Others",
+      "value": "Power in: DC Socket (Center Positive)"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "-3º / 20º"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "75 x 75 mm"
+     },
+     {
+      "label": "Security Locker",
+      "value": "Kensington Lock"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Packaging (in.): 23.6 x 15.6 x 4.4 Physical (in.): 21.3 x 16 x 7.3 Physical Without Stand (in.): 21.3 x 12.7 x 1.4"
+     },
+     {
+      "label": "Weight",
+      "value": "Net (kg): 2.7 Net Without Stand (kg): 2.4 Gross (kg): 3.7"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Type",
+      "value": "External Power Adaptor"
+     },
+     {
+      "label": "Power Consumption",
+      "value": "Eco Mode (Conserve): 15W Eco Mode (optimized): 18W Consumption (typical): 22W Consumption (max): 25W Stand-by: 0.3W"
+     },
+     {
+      "label": "Voltage",
+      "value": "AC 100-240V"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/viewsonic-va2432a-h-monitor"
+ },
+ {
+  "id": "asus-vz24ehf-23-8-inch-fhd",
+  "slug": "asus-vz24ehf-23-8-inch-fhd",
+  "name": "VZ24EHF 23.8-inch FHD",
+  "brand": "Asus",
+  "category": "monitor",
+  "releaseYear": 2022,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "asus-vz24ehf-23-8-inch-fhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 13000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/asus/vz24ehf/vz24ehf-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "23.8-inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "1920x1080"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.2745mm"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Non-Glare"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "(CR≧10, H/V) : 178°/ 178°"
+     },
+     {
+      "label": "Brightness",
+      "value": "250cd/㎡"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1300:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "100Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "16.7M"
+     },
+     {
+      "label": "Response Time",
+      "value": "1ms MPRT"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Color Temperature Selection",
+      "value": "Yes(4 modes)"
+     },
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     },
+     {
+      "label": "G-Sync Support",
+      "value": "Adaptive-Sync"
+     },
+     {
+      "label": "HDCP",
+      "value": "Yes, 1.4"
+     },
+     {
+      "label": "Others",
+      "value": "Eye Care+ Technology : Yes Trace Free Technology : Yes SPLENDID Technology : Yes"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "N/A"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "HDMI",
+      "value": "HDMI(v1.4) x 1"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "Yes (+23° ~ -5°)"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "75x75mm"
+     },
+     {
+      "label": "Security Locker",
+      "value": "Kensington Lock"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "Phys. Dimension (W x H x D) : 54.02 x 39.39 x 21.01 cm (21.27\" x 15.51\" x 8.27\") Phys. Dimension without Stand (W x H x D) : 54.02 x 31.65 x 3.89 cm (21.27\" x 12.46\" x 1.53\")"
+     },
+     {
+      "label": "Weight",
+      "value": "Net Weight : 2.85 kg (6.28 lbs) Net Weight without Stand : 2.45 kg (5.40 lbs)"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "Power Consumption : <19W Power Saving Mode : <0.5W Power Off Mode : <0.3W"
+     },
+     {
+      "label": "Voltage",
+      "value": "100-240V, 50/60Hz"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/asus-vz24ehf-eye-care-gaming-monitor"
+ },
+ {
+  "id": "asus-vp229hf-21-5-inch-fhd",
+  "slug": "asus-vp229hf-21-5-inch-fhd",
+  "name": "VP229HF 21.5-inch FHD",
+  "brand": "Asus",
+  "category": "monitor",
+  "releaseYear": 2022,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "asus-vp229hf-21-5-inch-fhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 10800
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/asus/vp229hf/vp229hf-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "21.45 inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "FHD (1920x1080)"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.249 mm"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Non-Glare"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178°/ 178°"
+     },
+     {
+      "label": "Brightness",
+      "value": "250cd/㎡"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1000:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "100Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "16.7M"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "(sRGB) : 99%"
+     },
+     {
+      "label": "Response Time",
+      "value": "1ms MPRT"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Color Temperature Selection",
+      "value": "Yes(4 modes)"
+     },
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     },
+     {
+      "label": "HDCP",
+      "value": "Yes, 1.4"
+     },
+     {
+      "label": "Others",
+      "value": "Motion Sync : Yes Eye Care+ Technology : Yes"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "VGA",
+      "value": "VGA x 1"
+     },
+     {
+      "label": "HDMI",
+      "value": "HDMI(v1.4) x 1"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "Yes (+23° ~ -5°)"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100x100mm"
+     },
+     {
+      "label": "Security Locker",
+      "value": "Kensington Lock: Yes"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "Phys. Dimension (W x H x D) : 49.36 x 35.76 x 20.44 cm (19.43\" x 14.08\" x 8.05\") Phys. Dimension without Stand (W x H x D) : 49.36 x 29.12 x 4.97 cm (19.43\" x 11.46\" x 1.96\")"
+     },
+     {
+      "label": "Weight",
+      "value": "Net Weight: 2.72 kg (6.00 lbs) Net Weight without Stand: 2.36 kg (5.20 lbs) Gross Weight: 4.20 kg (9.26 lbs)Net Weight : 2.7 kg (5.95 lbs) Net Weight without Stand : 2.3 kg (5.07 lbs) Gross Weight : 3.8 kg (8.38 lbs)"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "<12.79W"
+     },
+     {
+      "label": "Voltage",
+      "value": "100-240V, 50/60Hz"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/asus-vp229hf-gaming-monitor"
+ },
+ {
+  "id": "philips-22e1n1200a-21-5-inch-fhd",
+  "slug": "philips-22e1n1200a-21-5-inch-fhd",
+  "name": "22E1N1200A 21.5-inch FHD",
+  "brand": "Philips",
+  "category": "monitor",
+  "releaseYear": 2023,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "philips-22e1n1200a-21-5-inch-fhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 13000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/philips/22e1n1200a/22e1n1200a-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "21.5 inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "FHD (1920 x 1080)"
+     },
+     {
+      "label": "Pixels Per Inch (PPI)",
+      "value": "92.56 PPI"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.2745 x 0.2745 mm"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-glare 3H display"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178º (H)/178º (V)"
+     },
+     {
+      "label": "Brightness",
+      "value": "250 cd/m²"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1000:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "100Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "16.7 M"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "Yes"
+     },
+     {
+      "label": "Response Time",
+      "value": "1 ms (GTG)"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     },
+     {
+      "label": "G-Sync Support",
+      "value": "Adaptive Sync"
+     },
+     {
+      "label": "Free Sync Support",
+      "value": "Yes"
+     },
+     {
+      "label": "HDCP",
+      "value": "1.4 (HDMI)"
+     },
+     {
+      "label": "Others",
+      "value": "sRGB Picture enhancement: SmartImage game Plug & Play Compatibility: DDC/CI, Mac OS X,sRGB, Windows 11 / 10"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "Yes"
+     },
+     {
+      "label": "Speaker Details",
+      "value": "2Wx2"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "VGA",
+      "value": "1x VGA"
+     },
+     {
+      "label": "Display Port",
+      "value": "1x Display Port"
+     },
+     {
+      "label": "HDMI",
+      "value": "1x HDMI1.4"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "1x Audio Jack"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "-5/20 degree"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100x100mm"
+     },
+     {
+      "label": "Security Locker",
+      "value": "Kensington lock"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Product with stand(max height): 493x376x220 mm Product without stand (mm): 493x294x45 mm Packaging in mm (WxHxD): 565x368x131 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "Product with stand (kg): 2.61 kg Product without stand (kg): 2.23 kg Product with packaging (kg): 4.39 kg"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Type",
+      "value": "External"
+     },
+     {
+      "label": "Power Consumption",
+      "value": "On mode: 13.3 W (typ.) Standby mode: 0.5 W (typ.) Off mode: 0.3 W (typ.)"
+     },
+     {
+      "label": "Voltage",
+      "value": "100-240VAC, 50-60Hz"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/philips-22e1n1200a-fhd-monitor"
+ },
+ {
+  "id": "benq-gw2283-21-5-inch-fhd",
+  "slug": "benq-gw2283-21-5-inch-fhd",
+  "name": "GW2283 21.5-inch FHD",
+  "brand": "BenQ",
+  "category": "monitor",
+  "releaseYear": 2019,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "benq-gw2283-21-5-inch-fhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 13200
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/benq/gw2283/gw2283-1200x630.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "21.5 Inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "Full HD (1920x1080)"
+     },
+     {
+      "label": "Pixels Per Inch (PPI)",
+      "value": "102"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178°/178°"
+     },
+     {
+      "label": "Brightness",
+      "value": "250 nits"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1000:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "60Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "16.7 million color"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "72% NTSC"
+     },
+     {
+      "label": "Response Time",
+      "value": "5ms (GtG)"
+     },
+     {
+      "label": "Others Features",
+      "value": "Picture Mode: ECO, Game, Low Blue Light, Movie, Photo, sRGB, Standard, User"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Color Temperature Selection",
+      "value": "Bluish, Normal, Reddish, User Define"
+     },
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     },
+     {
+      "label": "HDCP",
+      "value": "1.4"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "Yes"
+     },
+     {
+      "label": "Speaker Details",
+      "value": "1Wx2"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "VGA",
+      "value": "VGAx 1"
+     },
+     {
+      "label": "HDMI",
+      "value": "HDMI (v1.4) x 2"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "Headphone Jack: Yes Audio Line In : Yes"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "-5˚ - 20˚"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100x100 mm"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Dimensions (HxWxD) (mm): 394.4x489.5x175.1 Dimensions (HxWxD) (inch): 15.5x19.3x6.9 Dimensions (HxWxD) (w/o Base) (mm): 310.9x489.5x55.3 Dimensions (HxWxD) (w/o Base) (inch): 12.2x19.3x2.2"
+     },
+     {
+      "label": "Weight",
+      "value": "Net Weight (kg): 3.7 Net Weight (lb): 8.2 Net Weight (w/o Base) (kg): 2.9 Net Weight (w/o Base) (lb): 6.4"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "<0.5 W"
+     },
+     {
+      "label": "Voltage",
+      "value": "100 - 240V"
+     },
+     {
+      "label": "Others",
+      "value": "Power Supply: Built-in"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/benq-gw2283-ips-monitor"
+ },
+ {
+  "id": "benq-gw2291-21-5-inch-fhd",
+  "slug": "benq-gw2291-21-5-inch-fhd",
+  "name": "GW2291 21.5-inch FHD",
+  "brand": "BenQ",
+  "category": "monitor",
+  "releaseYear": 2023,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "benq-gw2291-21-5-inch-fhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 12900
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/benq/gw2291/gw2291-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "21.5 inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED backlight"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "FHD (1920x1080)"
+     },
+     {
+      "label": "Pixels Per Inch (PPI)",
+      "value": "102"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Matte"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178°/178°"
+     },
+     {
+      "label": "Brightness",
+      "value": "Brightness (typ.): 250 nits"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1300:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "100 Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "16.7 million color"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "72% NTSC"
+     },
+     {
+      "label": "Response Time",
+      "value": "5ms"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     },
+     {
+      "label": "Others Features",
+      "value": "Certification: Eye Comfort 2.0, EyeSafe 2.0"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Color Temperature Selection",
+      "value": "Standard, Game, Care mode, Cinema"
+     },
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     },
+     {
+      "label": "HDCP",
+      "value": "1.4"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "Yes"
+     },
+     {
+      "label": "Speaker Details",
+      "value": "2Wx2"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "VGA",
+      "value": "1 x VGA"
+     },
+     {
+      "label": "HDMI",
+      "value": "1x HDMI (v1.4)"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "-5˚ - 20˚"
+     },
+     {
+      "label": "Height Adjustment",
+      "value": "N/A"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100x100 mm"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Dimensions (HxWxD) (mm) 379.5x489.4x191.4 Dimensions (HxWxD) (inch) 14.9x19.3x7.5 Dimensions (HxWxD) (w/o Base) (mm) 291.5x489.4x53.3 Dimensions (HxWxD) (w/o Base) (inch) 11.5x19.3x2.1"
+     },
+     {
+      "label": "Weight",
+      "value": "Net Weight (kg) 2.56"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "Power Consumption (normal): 15 W Power Consumption (max): 24 W Power Consumption (sleep mode): <0.5 W"
+     },
+     {
+      "label": "Voltage",
+      "value": "100 - 240V"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/benq-gw2291-monitor"
+ },
+ {
+  "id": "dahua-dhi-lm22-a201yfs-21-5-inch-fhd",
+  "slug": "dahua-dhi-lm22-a201yfs-21-5-inch-fhd",
+  "name": "DHI-LM22-A201YFS 21.5-inch FHD",
+  "brand": "Dahua",
+  "category": "monitor",
+  "releaseYear": 2024,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "dahua-dhi-lm22-a201yfs-21-5-inch-fhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 10900
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/dahua/dhi-lm22-a201yf/dhi-lm22-a201yf-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "21.45\""
+     },
+     {
+      "label": "Display Type",
+      "value": "LED Backlit Display"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "FHD (1920×1080)"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178°(H)/178°(V)"
+     },
+     {
+      "label": "Brightness",
+      "value": "250 cd/㎡(max)"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1000:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "100Hz (max)"
+     },
+     {
+      "label": "Color Support",
+      "value": "16.7M(8bit)"
+     },
+     {
+      "label": "Response Time",
+      "value": "10 ms (Max)"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "VGA",
+      "value": "VGA×1"
+     },
+     {
+      "label": "HDMI",
+      "value": "HDMI×1"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Vesa Wall Mount",
+      "value": "75x75mm (3.0\"x3.0\")"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "492.7×284.0×41.2mm (without stand)"
+     },
+     {
+      "label": "Weight",
+      "value": "2.05kg (4.51lb)"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Type",
+      "value": "DC 12V"
+     },
+     {
+      "label": "Power Consumption",
+      "value": "22W (Standard) ≤0.5W (Standby)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/dahua-dhi-lm22-a201yfs-fhd-monitor"
+ },
+ {
+  "id": "dahua-dhi-lm22-a211y-21-5-inch-fhd",
+  "slug": "dahua-dhi-lm22-a211y-21-5-inch-fhd",
+  "name": "DHI-LM22-A211Y 21.5-inch FHD",
+  "brand": "Dahua",
+  "category": "monitor",
+  "releaseYear": 2024,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "dahua-dhi-lm22-a211y-21-5-inch-fhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 10800
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/dahua/dhi-lm22-a211y/dhi-lm22-a211y-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "21.45\""
+     },
+     {
+      "label": "Display Type",
+      "value": "ELED Backlit Display"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "FHD (1920×1080)"
+     },
+     {
+      "label": "Pixels Per Inch (PPI)",
+      "value": "102.7"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178°(H)/178°(V)"
+     },
+     {
+      "label": "Brightness",
+      "value": "250 cd/㎡(max)"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1000:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "120Hz (Overclocked)"
+     },
+     {
+      "label": "Color Support",
+      "value": "6 bit + FRC"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "72% NTSC(typ.)"
+     },
+     {
+      "label": "Response Time",
+      "value": "MPRT 1 ms"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Flicker Free",
+      "value": "YES"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "No"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "VGA",
+      "value": "VGA×1"
+     },
+     {
+      "label": "HDMI",
+      "value": "HDMI×1"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Height Adjustment",
+      "value": "N/A"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100 mm × 100 mm"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "491.4 mm × 290.8 mm × 45.2 mm without wall-mount bracket"
+     },
+     {
+      "label": "Weight",
+      "value": "Net Weight 2.3 kg Gross Weight 3.3 kg"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Type",
+      "value": "12 VDC, 2 A"
+     },
+     {
+      "label": "Power Consumption",
+      "value": "15.0 W (basic), 19.2W (typ.), 20.0 W (max) Standby Power Consumption <0.5 W"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/dahua-dhi-lm22-a211y-monitor"
+ },
+ {
+  "id": "viewsonic-va221a-h-22-inch-fhd",
+  "slug": "viewsonic-va221a-h-22-inch-fhd",
+  "name": "VA221A-H 22-inch FHD",
+  "brand": "ViewSonic",
+  "category": "monitor",
+  "releaseYear": 2022,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "viewsonic-va221a-h-22-inch-fhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 11200
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/va221a-h/va221a-h-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "22 inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "FHD (1920 x 1080)"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.249 mm (H) x 0.241 mm (V)"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare, Hard Coating (3H)"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178º horizontal, 178º vertical"
+     },
+     {
+      "label": "Brightness",
+      "value": "250 cd/m² (typ)"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "Static Contrast Ratio: 1,000:1 (typ) Dynamic Contrast Ratio: 50M:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "120Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "Colors: 16.7M Color Space Support: 8 bit (6 bit + FRC)"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "NTSC: 72% size (Typ) sRGB: 104% size (Typ)"
+     },
+     {
+      "label": "Response Time",
+      "value": "1ms (MPRT)"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Color Temperature Selection",
+      "value": "32°F to 104°F (0°C to 40°C)"
+     },
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "N/A"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "VGA",
+      "value": "VGA: 1"
+     },
+     {
+      "label": "HDMI",
+      "value": "HDMI 1.4: 1"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "-5º / 20º"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "75 x 75 mm"
+     },
+     {
+      "label": "Security Locker",
+      "value": "Kensington Lock Slot"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Packaging (in.): 21.7 x 15 x 4.2 Physical (in.): 19.49 x 15.04 x 7.44 Physical Without Stand (in.): 19.49 x 11.3 x 2"
+     },
+     {
+      "label": "Weight",
+      "value": "Net (kg): 2.5 Net Without Stand (kg): 2.1 Gross (kg): 3.3"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Type",
+      "value": "External Power Adaptor"
+     },
+     {
+      "label": "Power Consumption",
+      "value": "Eco Mode (Conserve): 15W Eco Mode (optimized): 18W Consumption (typical): 21W Consumption (max): 23W"
+     },
+     {
+      "label": "Voltage",
+      "value": "AC 100-240V"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/viewsonic-va221a-h-monitor"
+ },
+ {
+  "id": "benq-gw2491-23-8-inch-fhd",
+  "slug": "benq-gw2491-23-8-inch-fhd",
+  "name": "GW2491 23.8-inch FHD",
+  "brand": "BenQ",
+  "category": "monitor",
+  "releaseYear": 2024,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "benq-gw2491-23-8-inch-fhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 15700
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/benq/gw2491/gw2491-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "23.8 inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED backlight"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "FHD (1920x1080)"
+     },
+     {
+      "label": "Pixels Per Inch (PPI)",
+      "value": "93"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178°/178°"
+     },
+     {
+      "label": "Brightness",
+      "value": "Brightness (typ.): 250 nits"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1300:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "100 Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "16.7 million color"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "99% sRGB"
+     },
+     {
+      "label": "Response Time",
+      "value": "5ms"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     },
+     {
+      "label": "Others Features",
+      "value": "Gamma: 1.8 - 2.6 Certification: Eye Comfort 2.0, EyeSafe 2.0"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Color Temperature Selection",
+      "value": "Bluish, Normal, Reddish, User Define"
+     },
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     },
+     {
+      "label": "HDCP",
+      "value": "1.4"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "N/A"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "Display Port",
+      "value": "1x DisplayPort (v1.2)"
+     },
+     {
+      "label": "HDMI",
+      "value": "1x HDMI (v1.4)"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "-5˚ - 20˚"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100x100 mm"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Dimensions (HxWxD) (mm) 416x542x182 Dimensions (HxWxD) (inch) 16.4x21.4x7.2 Dimensions (HxWxD) (w/o Base) (mm) 318x542x48 Dimensions (HxWxD) (w/o Base) (inch) 12.5x21.4x1.9"
+     },
+     {
+      "label": "Weight",
+      "value": "Net Weight (kg) 3.06 Net Weight (lb) 6.75 Net Weight (w/o Base) (kg) 2.67 Net Weight (w/o Base) (lb) 5.88"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "Power Consumption (normal): 17 W Power Consumption (max): 22 W Power Consumption (sleep mode): <0.5 W"
+     },
+     {
+      "label": "Voltage",
+      "value": "100 - 240V"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/benq-gw2491-monitor"
+ },
+ {
+  "id": "viewsonic-va2732-27-inch-fhd",
+  "slug": "viewsonic-va2732-27-inch-fhd",
+  "name": "VA2732 27-inch FHD",
+  "brand": "ViewSonic",
+  "category": "monitor",
+  "releaseYear": 2023,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "viewsonic-va2732-27-inch-fhd~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 23800
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/va2732-mhd-3/va2732-mhd-3-001-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "27\""
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS Technology"
+     },
+     {
+      "label": "Resolution",
+      "value": "1920 X 1080"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.311 mm (H) x 0.311 mm (V)"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178º horizontal, 178º vertical"
+     },
+     {
+      "label": "Brightness",
+      "value": "250 cd/m² (typ)"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "Static Contrast Ratio: 1,300:1 (typ) Dynamic Contrast Ratio: 50M:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "100Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "Colors: 16.7M Color Space Support: 8 bit (6 bit + FRC)"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "NTSC: 72% size (Typ) sRGB: 104%"
+     },
+     {
+      "label": "Response Time",
+      "value": "1ms (MPRT)"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "Dual 2W Speakers"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "VGA",
+      "value": "1 x VGA"
+     },
+     {
+      "label": "Display Port",
+      "value": "1 x Display Port"
+     },
+     {
+      "label": "HDMI",
+      "value": "1 x HDMI 1.4"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "3.5mm Audio Out"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "-3º / 20º"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100 x 100 mm"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "695 x 460 x 145 mm"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Type",
+      "value": "External Power Adaptor"
+     },
+     {
+      "label": "Voltage",
+      "value": "AC 100-240V"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/viewsonic-va2732-mhd-3-monitor"
+ },
+ {
+  "id": "viewsonic-vx24g30-24-inch-fhd-240hz",
+  "slug": "viewsonic-vx24g30-24-inch-fhd-240hz",
+  "name": "VX24G30 24-inch FHD 240Hz",
+  "brand": "ViewSonic",
+  "category": "monitor",
+  "releaseYear": 2024,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "viewsonic-vx24g30-24-inch-fhd-240hz~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 21500
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/vx24g30/vx24g30-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "24 inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "1920 x 1080"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.275 mm (H) x 0.275 mm (V)"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare, Hard Coating (3H)"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178º horizontal, 178º vertical"
+     },
+     {
+      "label": "Brightness",
+      "value": "300 cd/m² (typ)"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "Static Contrast Ratio: 1,000:1 (typ) Dynamic Contrast Ratio: 80M:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "240Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "Colors: 16.7M Color Space Support: 8 bit (6 bit + FRC)"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "NTSC: 72% size (Typ) sRGB: 104% size (Typ)"
+     },
+     {
+      "label": "Response Time",
+      "value": "0.8ms MPRT"
+     },
+     {
+      "label": "HDR",
+      "value": "HDR10"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     },
+     {
+      "label": "G-Sync Support",
+      "value": "Adaptive Sync"
+     },
+     {
+      "label": "Free Sync Support",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "Display Port",
+      "value": "Yes"
+     },
+     {
+      "label": "HDMI",
+      "value": "Yes"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "Yes"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "-5º / 20º"
+     },
+     {
+      "label": "Height Adjustment",
+      "value": "N/A"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100 x 100 mm"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "Packaging (in.): 23.8 x 15.7 x 4.7 Physical (in.): 21.3 x 16.3 x 7.2 Physical Without Stand (in.): 21.3 x 12.7 x 1.7"
+     },
+     {
+      "label": "Weight",
+      "value": "Net (kg): 3.2 Net Without Stand (kg): 2.8 Gross (kg): 4.2"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "Eco Mode (Conserve): 19W Eco Mode (optimized): 23W Consumption (typical): 26W Consumption (max): 30W"
+     },
+     {
+      "label": "Voltage",
+      "value": "AC 100-240V"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/viewsonic-vx24g30-gaming-monitor"
+ },
+ {
+  "id": "viewsonic-va24g1-24-inch-fhd-144hz",
+  "slug": "viewsonic-va24g1-24-inch-fhd-144hz",
+  "name": "VA24G1 24-inch FHD 144Hz",
+  "brand": "ViewSonic",
+  "category": "monitor",
+  "releaseYear": 2023,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "viewsonic-va24g1-24-inch-fhd-144hz~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 14300
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/va24g1-h/va24g1-h-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "24\""
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS Technology"
+     },
+     {
+      "label": "Resolution",
+      "value": "Full HD (1920 x 1080)"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.275 mm (H) x 0.275 mm (V)"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare, Hard Coating (3H)"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178º horizontal, 178º vertical"
+     },
+     {
+      "label": "Brightness",
+      "value": "400 cd/m² (typ)"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "Static Contrast Ratio: 1,500:1 (typ) Dynamic Contrast Ratio: 50M:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "144Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "Colors: 16.7M Color Space Support: 8 bit (6 bit + Hi-FRC)"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "NTSC: 80% size (Typ) sRGB: 114% size"
+     },
+     {
+      "label": "Response Time",
+      "value": "1ms (MPRT)"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     },
+     {
+      "label": "Others Features",
+      "value": "Backlight Life (Hours): 30000 Hrs (Min) Compatibility: PC Resolution (max): 1920x1080 Mac Resolution (max): 1920x1080 PC Operating System: Windows 10/11 certified; macOS tested Mac® Resolution (min): 1920x1080"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     },
+     {
+      "label": "Others",
+      "value": "Eye ProTech+"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker (Built In)",
+      "value": "No"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "VGA",
+      "value": "1x VGA"
+     },
+     {
+      "label": "Display Port",
+      "value": "Yes"
+     },
+     {
+      "label": "HDMI",
+      "value": "1x HDMI 1.4"
+     },
+     {
+      "label": "Others",
+      "value": "Power in: DC Socket (Center Positive)"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "-5º / 20º"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "100 x 100 mm"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     },
+     {
+      "label": "Dimension",
+      "value": "Packaging (in.): 23.7 x 16.3 x 4.8 Physical (in.): 21.35 x 16.5 x 7.45 Physical Without Stand (in.): 21.35 x 12.69 x 1.8"
+     },
+     {
+      "label": "Weight",
+      "value": "Net (kg): 2.8 Net Without Stand (kg): 2.5 Gross (kg): 4"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Type",
+      "value": "External Power Adaptor"
+     },
+     {
+      "label": "Power Consumption",
+      "value": "Eco Mode (Conserve): 13W Eco Mode (optimized): 17W Consumption (typical): 21W Consumption (max): 24W Stand-by: 0.5W"
+     },
+     {
+      "label": "Voltage",
+      "value": "AC 100-240V"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/viewsonic-va24g1-h-monitor"
+ },
+ {
+  "id": "asus-vg249q5r-23-8-inch-fhd-144hz",
+  "slug": "asus-vg249q5r-23-8-inch-fhd-144hz",
+  "name": "VG249Q5R 23.8-inch FHD 144Hz",
+  "brand": "Asus",
+  "category": "monitor",
+  "releaseYear": 2024,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "asus-vg249q5r-23-8-inch-fhd-144hz~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 19000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/monitor/asus/vg249q5r/vg249q5r-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Display Features",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "23.8-inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "LED"
+     },
+     {
+      "label": "Panel Type",
+      "value": "IPS"
+     },
+     {
+      "label": "Resolution",
+      "value": "1920x1080"
+     },
+     {
+      "label": "Pixel pitch(MM)",
+      "value": "0.2745mm"
+     },
+     {
+      "label": "Display Surface",
+      "value": "Anti-Glare"
+     },
+     {
+      "label": "Aspect Ratio",
+      "value": "16:9"
+     },
+     {
+      "label": "Viewing Angle",
+      "value": "178°/ 178°"
+     },
+     {
+      "label": "Brightness",
+      "value": "300cd/㎡"
+     },
+     {
+      "label": "Contrast Ratio",
+      "value": "1000:1"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "200Hz"
+     },
+     {
+      "label": "Color Support",
+      "value": "16.7M"
+     },
+     {
+      "label": "Color Gamut",
+      "value": "Color Space (sRGB): 100%"
+     },
+     {
+      "label": "Response Time",
+      "value": "1ms(GTG), 0.3ms(min.)"
+     },
+     {
+      "label": "HDR",
+      "value": "HDR10"
+     },
+     {
+      "label": "Curvature",
+      "value": "Flat"
+     },
+     {
+      "label": "Others Features",
+      "value": "Display Viewing Area (H x V): 527.04 × 296.46 mm"
+     }
+    ]
+   },
+   {
+    "group": "Video Features",
+    "items": [
+     {
+      "label": "Color Temperature Selection",
+      "value": "Yes(4 modes)"
+     },
+     {
+      "label": "Flicker Free",
+      "value": "Yes"
+     },
+     {
+      "label": "Low Blue Light",
+      "value": "Yes"
+     },
+     {
+      "label": "Free Sync Support",
+      "value": "Yes"
+     },
+     {
+      "label": "HDCP",
+      "value": "Yes, 2.3"
+     },
+     {
+      "label": "Others",
+      "value": "Trace Free Technology: Yes GameVisual: Yes Color Temp. Selection : Yes(4 modes) GamePlus: Yes Extreme Low Motion Blur: Yes VRR Technology: Yes (Adaptive-Sync) GameFast Input technology: Yes Shadow Boost: Yes DisplayWidget: Yes, DisplayWidget Center ASUS Power Sync: Yes A.I. Assistant Technology: AI Visual FSC MIX"
+     }
+    ]
+   },
+   {
+    "group": "Audio Features",
+    "items": [
+     {
+      "label": "Speaker Output",
+      "value": "2Wx2"
+     }
+    ]
+   },
+   {
+    "group": "Connectivity",
+    "items": [
+     {
+      "label": "Display Port",
+      "value": "DisplayPort 1.4 x 1 (HBR2)"
+     },
+     {
+      "label": "HDMI",
+      "value": "HDMI(v2.0) x2"
+     },
+     {
+      "label": "Audio Jack",
+      "value": "Yes"
+     },
+     {
+      "label": "Others",
+      "value": "Digital Signal Frequency: DP: 240~240 KHz(H) / 48~200 Hz (V) HDMI: 27~240 KHz (H) / 48~200 Hz (V)"
+     }
+    ]
+   },
+   {
+    "group": "Mechanical Design",
+    "items": [
+     {
+      "label": "Tilt",
+      "value": "Yes (+22° ~ -5°)"
+     },
+     {
+      "label": "Vesa Wall Mount",
+      "value": "75x75mm"
+     },
+     {
+      "label": "Security Locker",
+      "value": "Kensington Lock"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "Phys. Dimension (W x H x D): 54.0 x 40.7 x 21.3 cm (21.26\" x 16.02\" x 8.39\") Phys. Dimension without Stand (W x H x D): 54.0 x 32.0 x 3.7 cm (21.26\" x 12.60\" x 1.46\") Box Dimension (W x H x D): 60.0 x 40.6 x 11.5 cm (23.62\" x 15.98\" x 4.53\")"
+     },
+     {
+      "label": "Weight",
+      "value": "Net Weight: 3.7 kg (8.16 lbs) Net Weight without Stand: 2.7 kg (5.95 lbs) Gross Weight: 4.6 kg (10.14 lbs)"
+     }
+    ]
+   },
+   {
+    "group": "Power",
+    "items": [
+     {
+      "label": "Power Consumption",
+      "value": "Power Consumption: <18W Power Saving Mode: <0.5W Power Off Mode: <0.3W"
+     },
+     {
+      "label": "Voltage",
+      "value": "Voltage : 100-240V, 50/60Hz"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/asus-tuf-gaming-vg249q5r-24-inch-monitor"
+ },
+ {
   "id": "oraimo-toast-opb-7100q-10000mah-power-bank",
   "slug": "oraimo-toast-opb-7100q-10000mah-power-bank",
   "name": "Toast OPB-7100Q 10000mAh Power Bank",
@@ -16282,7 +22541,7 @@ export const catalogProducts: Product[] = [
   "brand": "Simple",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 92,
+  "popularity": 100,
   "variants": [
    {
     "id": "simple-refreshing-facial-wash-150ml~v1",
@@ -16309,7 +22568,7 @@ export const catalogProducts: Product[] = [
   "brand": "CeraVe",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 92,
+  "popularity": 100,
   "variants": [
    {
     "id": "cerave-hydrating-cleanser-236ml~v1",
@@ -16335,7 +22594,7 @@ export const catalogProducts: Product[] = [
   "brand": "CeraVe",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 92,
+  "popularity": 100,
   "variants": [
    {
     "id": "cerave-moisturizing-cream-56ml~v1",
@@ -16362,7 +22621,7 @@ export const catalogProducts: Product[] = [
   "brand": "COSRX",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 84,
+  "popularity": 92,
   "variants": [
    {
     "id": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
@@ -16389,7 +22648,7 @@ export const catalogProducts: Product[] = [
   "brand": "Beauty of Joseon",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 84,
+  "popularity": 92,
   "variants": [
    {
     "id": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
@@ -16550,7 +22809,7 @@ export const catalogProducts: Product[] = [
   "brand": "Dot & Key",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 92,
+  "popularity": 100,
   "variants": [
    {
     "id": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
@@ -16577,7 +22836,7 @@ export const catalogProducts: Product[] = [
   "brand": "The Ordinary",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 84,
+  "popularity": 92,
   "variants": [
    {
     "id": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
@@ -16603,7 +22862,7 @@ export const catalogProducts: Product[] = [
   "brand": "Cetaphil",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 76,
+  "popularity": 84,
   "variants": [
    {
     "id": "cetaphil-gentle-skin-cleanser-236ml~v1",
@@ -16629,7 +22888,7 @@ export const catalogProducts: Product[] = [
   "brand": "Neutrogena",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 76,
+  "popularity": 84,
   "variants": [
    {
     "id": "neutrogena-hydro-boost-water-gel-50ml~v1",
@@ -16656,7 +22915,7 @@ export const catalogProducts: Product[] = [
   "brand": "Some By Mi",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 84,
+  "popularity": 92,
   "variants": [
    {
     "id": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
@@ -16684,7 +22943,7 @@ export const catalogProducts: Product[] = [
   "brand": "Anua",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 76,
+  "popularity": 92,
   "variants": [
    {
     "id": "anua-heartleaf-77-soothing-toner-250ml~v1",
@@ -16764,7 +23023,7 @@ export const catalogProducts: Product[] = [
   "brand": "COSRX",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 84,
+  "popularity": 100,
   "variants": [
    {
     "id": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
@@ -16869,7 +23128,7 @@ export const catalogProducts: Product[] = [
   "brand": "COSRX",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 76,
+  "popularity": 92,
   "variants": [
    {
     "id": "cosrx-low-ph-good-morning-gel-cleanser-150ml~v1",
@@ -16896,7 +23155,7 @@ export const catalogProducts: Product[] = [
   "brand": "COSRX",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 84,
+  "popularity": 100,
   "variants": [
    {
     "id": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
@@ -16923,7 +23182,7 @@ export const catalogProducts: Product[] = [
   "brand": "COSRX",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 76,
+  "popularity": 84,
   "variants": [
    {
     "id": "cosrx-acne-pimple-master-patch-24pcs~v1",
@@ -17001,7 +23260,7 @@ export const catalogProducts: Product[] = [
   "brand": "SKIN1004",
   "category": "skincare",
   "releaseYear": null,
-  "popularity": 84,
+  "popularity": 92,
   "variants": [
    {
     "id": "skin1004-madagascar-centella-ampoule-100ml~v1",
@@ -24002,6 +30261,76 @@ export const catalogOffers: Offer[] = [
  },
  {
   "id": "o252",
+  "variantId": "samsung-galaxy-tab-a9-8-7-inch-lte~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 15500,
+  "oldPrice": 16999,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/samsung-galaxy-tab-a9-lte-tablet",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o253",
+  "variantId": "teclast-p30t-10-1-inch~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 15000,
+  "oldPrice": 16500,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/teclast-p30t-tablet",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o254",
+  "variantId": "xiaomi-pad-7-11-2-inch~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 43000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/xiaomi-pad-7-android-tablet",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o255",
+  "variantId": "lenovo-idea-tab-11-inch~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 41000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/lenovo-idea-tab-tb336zu-5g-8256gb-11-inch-display-tablet",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o256",
+  "variantId": "huawei-matepad-11-5-inch~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 51000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/huawei-matepad-115-inch-wifi-tablet",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o257",
   "variantId": "apple-airpods-pro-3~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -24015,7 +30344,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o253",
+  "id": "o258",
   "variantId": "apple-airpods-pro-3~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24029,7 +30358,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o254",
+  "id": "o259",
   "variantId": "apple-airpods-pro-3~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -24043,7 +30372,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o255",
+  "id": "o260",
   "variantId": "apple-airpods-pro-3~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -24057,7 +30386,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o256",
+  "id": "o261",
   "variantId": "samsung-galaxy-buds3-pro~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -24071,7 +30400,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o257",
+  "id": "o262",
   "variantId": "samsung-galaxy-buds3-pro~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24085,7 +30414,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o258",
+  "id": "o263",
   "variantId": "samsung-galaxy-buds3-pro~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -24099,7 +30428,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o259",
+  "id": "o264",
   "variantId": "samsung-galaxy-buds3-pro~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -24113,7 +30442,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o260",
+  "id": "o265",
   "variantId": "samsung-galaxy-buds3-pro~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -24127,7 +30456,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o261",
+  "id": "o266",
   "variantId": "sony-wf-1000xm6~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -24141,7 +30470,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o262",
+  "id": "o267",
   "variantId": "sony-wf-1000xm6~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -24155,7 +30484,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o263",
+  "id": "o268",
   "variantId": "sony-wf-1000xm6~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24169,7 +30498,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o264",
+  "id": "o269",
   "variantId": "sony-wf-1000xm6~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -24183,7 +30512,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o265",
+  "id": "o270",
   "variantId": "sony-wf-1000xm6~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -24197,7 +30526,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o266",
+  "id": "o271",
   "variantId": "anker-soundcore-p40i~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "unofficial",
@@ -24211,7 +30540,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o267",
+  "id": "o272",
   "variantId": "anker-soundcore-p40i~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -24225,7 +30554,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o268",
+  "id": "o273",
   "variantId": "anker-soundcore-p40i~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24239,7 +30568,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o269",
+  "id": "o274",
   "variantId": "anker-soundcore-p40i~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -24253,7 +30582,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o270",
+  "id": "o275",
   "variantId": "anker-soundcore-p40i~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -24267,7 +30596,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o271",
+  "id": "o276",
   "variantId": "cmf-by-nothing-buds-2~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -24281,7 +30610,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o272",
+  "id": "o277",
   "variantId": "cmf-by-nothing-buds-2~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -24295,7 +30624,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o273",
+  "id": "o278",
   "variantId": "cmf-by-nothing-buds-2~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -24309,7 +30638,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o274",
+  "id": "o279",
   "variantId": "sony-wh-1000xm6~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -24323,7 +30652,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o275",
+  "id": "o280",
   "variantId": "sony-wh-1000xm6~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -24337,7 +30666,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o276",
+  "id": "o281",
   "variantId": "sony-wh-1000xm6~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24351,7 +30680,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o277",
+  "id": "o282",
   "variantId": "sony-wh-1000xm6~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -24365,7 +30694,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o278",
+  "id": "o283",
   "variantId": "sony-wh-1000xm6~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -24379,7 +30708,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o279",
+  "id": "o284",
   "variantId": "sony-wh-ch720n~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -24393,7 +30722,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o280",
+  "id": "o285",
   "variantId": "sony-wh-ch720n~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -24407,7 +30736,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o281",
+  "id": "o286",
   "variantId": "sony-wh-ch720n~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24421,7 +30750,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o282",
+  "id": "o287",
   "variantId": "sony-wh-ch720n~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -24435,7 +30764,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o283",
+  "id": "o288",
   "variantId": "jbl-tune-770nc~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -24449,7 +30778,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o284",
+  "id": "o289",
   "variantId": "jbl-tune-770nc~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24463,7 +30792,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o285",
+  "id": "o290",
   "variantId": "jbl-tune-770nc~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -24477,7 +30806,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o286",
+  "id": "o291",
   "variantId": "anker-soundcore-space-one~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -24491,7 +30820,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o287",
+  "id": "o292",
   "variantId": "anker-soundcore-space-one~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "unofficial",
@@ -24505,7 +30834,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o288",
+  "id": "o293",
   "variantId": "anker-soundcore-space-one~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -24519,7 +30848,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o289",
+  "id": "o294",
   "variantId": "anker-soundcore-space-one~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -24533,7 +30862,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o290",
+  "id": "o295",
   "variantId": "anker-soundcore-space-one~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -24547,7 +30876,1575 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o291",
+  "id": "o296",
+  "variantId": "xiaomi-redmi-buds-6-play~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1340,
+  "oldPrice": 1450,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/xiaomi-redmi-buds-6-play-earbuds",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o297",
+  "variantId": "xiaomi-redmi-buds-6-play~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1699,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/redmi-buds-6-play-anc-tws-earbuds",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o298",
+  "variantId": "xiaomi-redmi-buds-6-play~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1700,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://diamu.com.bd/product/redmi-buds-6-play-earbuds/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o299",
+  "variantId": "xiaomi-redmi-buds-6-play~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 999,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://motionview.com.bd/product/redmi-buds-6-play-tws-earbuds",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o300",
+  "variantId": "oraimo-freepods-4~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2200,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.applegadgetsbd.com/product/oraimo-freepods-4-anc-true-wireless-earbuds",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o301",
+  "variantId": "oraimo-freepods-4~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/oraimo-freepods-4-active-noise-cancellation-earbuds",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o302",
+  "variantId": "oraimo-freepods-4~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3890,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://diamu.com.bd/product/oraimo-freepods-4-earbuds/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o303",
+  "variantId": "oneplus-bullets-wireless-z2-neckband~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2699,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://motionview.com.bd/product/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o304",
+  "variantId": "oneplus-bullets-wireless-z2-neckband~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2990,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://diamu.com.bd/product/oneplus-bullets-wireless-z2-anc/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o305",
+  "variantId": "anker-zolo-20w-type-c-charger-a2699~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 920,
+  "oldPrice": 999,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/anker-zolo-20w-type-c-charger-adapter",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o306",
+  "variantId": "anker-zolo-20w-type-c-charger-a2699~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 1099,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/anker-zolo-20w-type-c-charger",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o307",
+  "variantId": "anker-zolo-20w-type-c-charger-a2699~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 899,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/anker-zolo-20w-wall-charger-iq3-pd3.0",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o308",
+  "variantId": "anker-zolo-20w-type-c-charger-a2699~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 630,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/anker-a2699-zolo-20w-type-c-charger/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o309",
+  "variantId": "anker-zolo-30w-type-c-charger-a2698~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1090,
+  "oldPrice": 1150,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/anker-zolo-30w-type-c-charger-adapter",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o310",
+  "variantId": "anker-zolo-30w-type-c-charger-a2698~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 1199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/anker-zolo-30w-type-c-charger",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o311",
+  "variantId": "anker-zolo-30w-type-c-charger-a2698~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1099,
+  "oldPrice": 1499,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/anker-a2698-zolo-power-adapter-usb-c-30w",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o312",
+  "variantId": "anker-zolo-30w-type-c-charger-a2698~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1099,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/anker-zolo-30w-pd-iq-charger",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o313",
+  "variantId": "anker-zolo-30w-type-c-charger-a2698~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/anker-zolo-30w-iq-pd-type-c-charger-adapter",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o314",
+  "variantId": "anker-zolo-30w-type-c-charger-a2698~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 820,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/anker-zolo-30w-usb-c-charger/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o315",
+  "variantId": "anker-nano-45w-type-c-charger-a2692~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1889,
+  "oldPrice": 2099,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/anker-nano-45w-charger-adapter",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o316",
+  "variantId": "anker-nano-45w-type-c-charger-a2692~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/anker-a2692-nano-usb-c-power-adapter-45w",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o317",
+  "variantId": "anker-nano-45w-type-c-charger-a2692~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2099,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/anker-nano-45w-usb-c-adapter",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o318",
+  "variantId": "anker-nano-45w-type-c-charger-a2692~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/anker-nano-45w-1c-gan-charger",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o319",
+  "variantId": "anker-nano-45w-type-c-charger-a2692~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1520,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/anker-nano-45w-gan-type-c-charger/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o320",
+  "variantId": "anker-nano-45w-smart-display-charger-a121d~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": "China",
+  "price": 2599,
+  "oldPrice": 2799,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/anker-nano-45w-gan-charger",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o321",
+  "variantId": "anker-nano-45w-smart-display-charger-a121d~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": "China",
+  "price": 2790,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/anker-nano-45w-smart-display-charger",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o322",
+  "variantId": "anker-nano-45w-smart-display-charger-a121d~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2699,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/anker-nano-45w-smart-display-gan-fast-charger-a121d",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o323",
+  "variantId": "anker-nano-45w-smart-display-charger-a121d~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2790,
+  "oldPrice": 2999,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/anker-nano-45w-gan-charger-with-display-a121d/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o324",
+  "variantId": "anker-nano-45w-smart-display-charger-a121d~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": "Global",
+  "price": 2950,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/anker-nano-45w-charger-with-display-global-version-a121d/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o325",
+  "variantId": "anker-nano-45w-smart-display-charger-a121d~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": "Global",
+  "price": 3590,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/anker-nano-45w-smart-display-charger-180-foldable-global",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o326",
+  "variantId": "anker-25w-type-c-compact-charger-a2656~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 946,
+  "oldPrice": 1150,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/anker-25w-charger-adapter",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o327",
+  "variantId": "anker-25w-type-c-compact-charger-a2656~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1299,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/anker-25w-type-c-compact-charger-adapter-a2656",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o328",
+  "variantId": "anker-25w-type-c-compact-charger-a2656~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1299,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://motionview.com.bd/product/anker-charger-25w-compact",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o329",
+  "variantId": "anker-25w-type-c-compact-charger-a2656~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 990,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/anker-a2656-25w-pd-compact-usb-c/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o330",
+  "variantId": "dell-optiplex-7020-mt~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 64000,
+  "oldPrice": 68550,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/dell-optiplex-7020-core-i3-14th-gen-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o331",
+  "variantId": "dell-optiplex-7020-mt~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 75000,
+  "oldPrice": 80000,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/dell-optiplex-7020-core-i3-14th-gen-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o332",
+  "variantId": "dell-optiplex-7020-mt~v2",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 72000,
+  "oldPrice": 77800,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/dell-optiplex-7020-core-i5-12th-gen-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o333",
+  "variantId": "dell-optiplex-7020-mt~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 84500,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/dell-optiplex-7020-core-i5-12th-gen-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o334",
+  "variantId": "dell-optiplex-7020-mt~v2",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 84500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/dell-optiplex-7020-mt-intel-core-i5-12500-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o335",
+  "variantId": "dell-optiplex-7020-mt~v3",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 79999,
+  "oldPrice": 82000,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/dell-tower-optiplex-7020-core-i5-13th-gen-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o336",
+  "variantId": "dell-optiplex-7020-mt~v4",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 86500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/dell-optiplex-7020-mt-intel-core-i5-14500-intel-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o337",
+  "variantId": "dell-optiplex-7020-mt~v5",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 96000,
+  "oldPrice": 103400,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/dell-optiplex-7020-core-i7-12th-gen-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o338",
+  "variantId": "dell-optiplex-7020-mt~v6",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 115000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/dell-optiplex-tower-7020-mt-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o339",
+  "variantId": "dell-optiplex-7020-mt~v6",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 115000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.applegadgetsbd.com/product/dell-optiplex-7020-mt-intel-core-i7-14700-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o340",
+  "variantId": "dell-tower-ect1250~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 60000,
+  "oldPrice": 62700,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/dell-ect1250-core-i3-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o341",
+  "variantId": "dell-tower-ect1250~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 75000,
+  "oldPrice": 80000,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/dell-ect1250-core-i3-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o342",
+  "variantId": "dell-tower-ect1250~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 75000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/dell-tower-ect1250-intel-core-i3-14100-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o343",
+  "variantId": "dell-tower-ect1250~v2",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 74000,
+  "oldPrice": 78000,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/dell-ect1250-core-i5-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o344",
+  "variantId": "dell-tower-ect1250~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 105000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/dell-ect1250-core-i5-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o345",
+  "variantId": "dell-tower-ect1250~v3",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 86500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/dell-tower-ect1250-intel-core-i5-14500-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o346",
+  "variantId": "dell-pro-tower-qct1250~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 86500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/dell-tower-qct1250-intel-core-i5-14500-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o347",
+  "variantId": "dell-pro-tower-qct1250~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 79999,
+  "oldPrice": 85000,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/dell-tower-qct1250-core-i5-14th-gen-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o348",
+  "variantId": "dell-pro-tower-qct1250~v2",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 130000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/dell-tower-qct1250-intel-core-i7-14700-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o349",
+  "variantId": "dell-pro-tower-qct1250~v3",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 110000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/dell-pro-tower-qct1250-core-ultra-5-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o350",
+  "variantId": "hp-pro-tower-280-g9~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 47000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/hp-pro-tower-280-g9-core-i3-12th-gen-4gb-ram-256gb-ssd-desktop-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o351",
+  "variantId": "hp-pro-tower-280-g9~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 102000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/hp-280-pro-g9-mt-core-i3-14th-gen-desktop-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o352",
+  "variantId": "hp-pro-tower-280-g9~v3",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 117000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/hp-280-pro-g9-mt-core-i5-14th-gen-desktop-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o353",
+  "variantId": "hp-pro-tower-280-g9~v3",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 110000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.globalbrand.com.bd/brand-pc/hp-pro-tower-280-g9-b7ny9pt-14th-gen-core-i5-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o354",
+  "variantId": "hp-pro-tower-280-g9~v4",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 137000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/hp-pro-tower-280-g9-core-i7-14th-gen-desktop-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o355",
+  "variantId": "lenovo-ideacentre-08irh9~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 97500,
+  "oldPrice": 98500,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/lenovo-ideacentre-08irh9-core-i7-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o356",
+  "variantId": "lenovo-ideacentre-08irh9~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 97500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/brand-pc/lenovo-ideacentre-08irh9-90xw006klk-13th-gen-core-i7-tower-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o357",
+  "variantId": "lenovo-ideacentre-08irh9~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 90750,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/lenovo-ideacentre-08irh9-core-i7-13th-gen-desktop-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o358",
+  "variantId": "dell-pro-slim-qcs1250~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 112000,
+  "oldPrice": 120000,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/dell-pro-slim-qcs1250-core-i5-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o359",
+  "variantId": "dell-pro-slim-qcs1250~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 91500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/dell-pro-slim-qcs1250-8gb-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o360",
+  "variantId": "dell-pro-slim-qcs1250~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 116500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/dell-pro-slim-qcs1250-brand-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o361",
+  "variantId": "asus-expertcenter-aio-p440vak~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 152000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/asus-expertcenter-p400-aio-p440vak-core-7-all-in-one-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o362",
+  "variantId": "asus-expertcenter-aio-p440vak~v2",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 121000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.globalbrand.com.bd/all-in-one-pc/asus-expertcenter-aio-p440vak-bpcd710-intel-core-5-210h-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o363",
+  "variantId": "asus-expertcenter-aio-p440vak~v3",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 94000,
+  "oldPrice": 99000,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/asus-expertcenter-p440vak-core-i5-aio-pc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o364",
+  "variantId": "jisulife-life1-fa26-portable-desk-fan~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1890,
+  "oldPrice": 1999,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/jisulife-life1-fa26-desk-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o365",
+  "variantId": "jisulife-life1-fa26-portable-desk-fan~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2050,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/jisulife-fa26-portable-ultra-thin-table-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o366",
+  "variantId": "jisulife-life1-fa26-portable-desk-fan~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1799,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/jisulife-fa26-portable-ultra-thin-table-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o367",
+  "variantId": "jisulife-life1-fa26-portable-desk-fan~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1799,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://kryinternational.com/products/jisulife-fa26-rechargeable-ultra-thin-desktop-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o368",
+  "variantId": "jisulife-life1-fa26-portable-desk-fan~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1790,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://diamu.com.bd/product/jisulife-fa26-rechargeable-ultra-thin-desktop-fan/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o369",
+  "variantId": "jisulife-fa19-portable-rechargeable-fan~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2450,
+  "oldPrice": 2650,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/jisulife-fa19-portable-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o370",
+  "variantId": "jisulife-fa19-portable-rechargeable-fan~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2600,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.applegadgetsbd.com/product/jisulife-fa19-usb-portable-desk-fan-4000mah",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o371",
+  "variantId": "jisulife-fa19-portable-rechargeable-fan~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2299,
+  "oldPrice": 2500,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/jisulife-fa19-usb-portable-rechargeable-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o372",
+  "variantId": "jisulife-fa19-portable-rechargeable-fan~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1990,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://diamu.com.bd/product/jisulife-fa19-usb-portable-rechargeable-fan/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o373",
+  "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2199,
+  "oldPrice": 2499,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/xiaomi-solove-f5-desktop-stand-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o374",
+  "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1950,
+  "oldPrice": 2300,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/xiaomi-solove-f5-5w-4000mah-rechargeable-desktop-stand-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o375",
+  "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/xiaomi-solove-f5",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o376",
+  "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2299,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/xiaomi-solove-f5-5w-usb-desktop-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o377",
+  "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2090,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/xiaomi-solove-f5-5w-4000mah-rechargeable-desktop-stand-fan/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o378",
+  "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2799,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://motionview.com.bd/product/xiaomi-solove-desktop-stand-fan-f5-5w-4000mah",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o379",
+  "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2250,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/xiaomi-solove-f5/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o380",
+  "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2727,
+  "oldPrice": 3099,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/xiaomi-solove-f5-pro-desktop-stand-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o381",
+  "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2450,
+  "oldPrice": 3200,
+  "inStock": false,
+  "url": "https://www.applegadgetsbd.com/product/xiaomi-solove-f5-pro-5w-4000mah-rechargeable-desktop-stand-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o382",
+  "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2749,
+  "oldPrice": 3000,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/xiaomi-solove-f5-pro-rechargeable-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o383",
+  "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2949,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/xiaomi-solove-f5-pro-f5p-smart-desktop-extendable-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o384",
+  "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2490,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/xiaomi-solove-f5-pro-smart-fan/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o385",
+  "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3499,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://motionview.com.bd/product/xiaomi-solove-f5p-4000mah-desktop-stand-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o386",
+  "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/xiaomi-solove-f5-pro/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o387",
+  "variantId": "xiaomi-solove-f5-pro-max-rechargeable-fan~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3366,
+  "oldPrice": 3699,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/xiaomi-solove-f5-pro-max-charger-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o388",
+  "variantId": "xiaomi-solove-f5-pro-max-rechargeable-fan~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/xiaomi-solove-f5-pro-max-rechargeable-desktop-stand-fan-10000mah",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o389",
+  "variantId": "xiaomi-solove-f5-pro-max-rechargeable-fan~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3299,
+  "oldPrice": 3500,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/xiaomi-solove-f5-pro-max-rechargeable-desktop-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o390",
+  "variantId": "xiaomi-solove-f5-pro-max-rechargeable-fan~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3590,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/solove-f5-pro-max-fan/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o391",
+  "variantId": "xiaomi-solove-f3-mini-clip-fan~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1450,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/xiaomi-solove-f3-mini-clip-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o392",
+  "variantId": "xiaomi-solove-f3-mini-clip-fan~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1500,
+  "oldPrice": 1550,
+  "inStock": false,
+  "url": "https://www.applegadgetsbd.com/product/xiaomi-solove-f3-mini-clip-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o393",
+  "variantId": "xiaomi-solove-f3-mini-clip-fan~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/xiaomi-solove-f3-rechargeable-mini-clip-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o394",
+  "variantId": "xiaomi-solove-f3-mini-clip-fan~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1490,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/xiaomi-solove-f3-rechargeable-mini-clip-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o395",
+  "variantId": "xiaomi-solove-f3-mini-clip-fan~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1450,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://motionview.com.bd/product/xiaomi-solove-f3-rechargeable-mini-clip-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o396",
+  "variantId": "hoco-hx65-portable-table-fan~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1156,
+  "oldPrice": 1270,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/hoco-hx65-portable-table-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o397",
+  "variantId": "hoco-hx65-portable-table-fan~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1350,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/hoco-hx65-ultra-thin-table-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o398",
+  "variantId": "hoco-hx65-portable-table-fan~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1290,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/hoco-hx65-table-fan/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o399",
+  "variantId": "hoco-hx65-portable-table-fan~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1060,
+  "oldPrice": 1250,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/hoco-hx65-desktop-fan/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o400",
+  "variantId": "hoco-hx66-portable-table-fan~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2150,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/hoco-hx66-portable-table-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o401",
+  "variantId": "hoco-hx66-portable-table-fan~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/hoco-hx66-desktop-circulating-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o402",
+  "variantId": "hoco-hx66-portable-table-fan~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1840,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/hoco-hx66-fan/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o403",
+  "variantId": "hoco-hx66-portable-table-fan~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1970,
+  "oldPrice": 1990,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/hoco-hx66-desktop-circulation-fan/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o404",
+  "variantId": "wiwu-fs03-2-in-1-table-clip-fan~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1215,
+  "oldPrice": 1350,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/wiwu-fs03-table-clip-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o405",
+  "variantId": "wiwu-fs03-2-in-1-table-clip-fan~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1600,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/wiwu-fs03-2-in-1-table-clip-fan",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o406",
+  "variantId": "wiwu-fs03-2-in-1-table-clip-fan~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1440,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/wiwu-fs03-2-in-1-table-clip-fan/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o407",
+  "variantId": "wiwu-fs03-2-in-1-table-clip-fan~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1300,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetbreeze.com.bd/product/wiwu-fs03-2-in-1-table-clip-fan-360-degree-rotation/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o408",
   "variantId": "lenovo-loq-15ahp9~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24561,7 +32458,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o292",
+  "id": "o409",
   "variantId": "lenovo-loq-15ahp9~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -24575,7 +32472,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o293",
+  "id": "o410",
   "variantId": "lenovo-loq-15ahp9~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24589,7 +32486,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o294",
+  "id": "o411",
   "variantId": "lenovo-loq-15ahp9~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -24603,7 +32500,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o295",
+  "id": "o412",
   "variantId": "lenovo-ideapad-slim-3-15abr8~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -24617,7 +32514,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o296",
+  "id": "o413",
   "variantId": "lenovo-ideapad-slim-3-15abr8~v2",
   "sellerId": "binarylogic.com.bd",
   "condition": "official",
@@ -24631,7 +32528,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o297",
+  "id": "o414",
   "variantId": "lenovo-ideapad-slim-3-15abr8~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24645,7 +32542,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o298",
+  "id": "o415",
   "variantId": "lenovo-ideapad-slim-3-14irh10~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24659,7 +32556,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o299",
+  "id": "o416",
   "variantId": "lenovo-ideapad-slim-3-14irh10~v1",
   "sellerId": "binarylogic.com.bd",
   "condition": "official",
@@ -24673,7 +32570,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o300",
+  "id": "o417",
   "variantId": "lenovo-ideapad-slim-3-14irh10~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -24687,7 +32584,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o301",
+  "id": "o418",
   "variantId": "hp-15-fd0180nia~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24701,7 +32598,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o302",
+  "id": "o419",
   "variantId": "hp-15-fd0180nia~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -24715,7 +32612,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o303",
+  "id": "o420",
   "variantId": "dell-pro-15-essential~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -24729,7 +32626,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o304",
+  "id": "o421",
   "variantId": "dell-pro-15-essential~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -24743,7 +32640,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o305",
+  "id": "o422",
   "variantId": "dell-pro-15-essential~v1",
   "sellerId": "binarylogic.com.bd",
   "condition": "official",
@@ -24757,7 +32654,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o306",
+  "id": "o423",
   "variantId": "hp-250r-g10~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -24771,7 +32668,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o307",
+  "id": "o424",
   "variantId": "hp-250r-g10~v1",
   "sellerId": "binarylogic.com.bd",
   "condition": "official",
@@ -24785,7 +32682,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o308",
+  "id": "o425",
   "variantId": "hp-250r-g10~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -24799,7 +32696,315 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o309",
+  "id": "o426",
+  "variantId": "hp-probook-440-g11~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 118000,
+  "oldPrice": 126500,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/hp-probook-440-g11-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o427",
+  "variantId": "hp-probook-440-g11~v2",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 115000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/hp-probook-440-g11-intel-core-ultra-5-125u-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o428",
+  "variantId": "hp-probook-440-g11~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "official",
+  "region": null,
+  "price": 101999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/hp-probook-440-g11-core-ultra-5-iris-xe-graphics-14-fhd-ips-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o429",
+  "variantId": "hp-probook-440-g11~v2",
+  "sellerId": "binarylogic.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 115000,
+  "oldPrice": 116700,
+  "inStock": false,
+  "url": "https://www.binarylogic.com.bd/hp-probook-440-g11-intel-core-ultra-5-125u-16gb-ram",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o430",
+  "variantId": "hp-probook-460-g11~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 117000,
+  "oldPrice": 124900,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/hp-probook-460-g11-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o431",
+  "variantId": "hp-probook-460-g11~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 124800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/hp-probook-460-g11-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o432",
+  "variantId": "hp-probook-460-g11~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 142000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/hp-probook-460-g11-core-ultra-7-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o433",
+  "variantId": "hp-probook-460-g11~v2",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 149000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/hp-probook-460-g11-core-ultra-7-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o434",
+  "variantId": "hp-probook-460-g11~v3",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 99999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/hp-probook-460-g11-intel-core-ultra-5-125u-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o435",
+  "variantId": "hp-probook-460-g11~v3",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 99999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/hp-probook-460-g11-core-ultra-5-16gb-ram-512gb-ssd-16-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o436",
+  "variantId": "hp-probook-460-g11~v4",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 142900,
+  "oldPrice": 152000,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/hp-probook-460-g11-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o437",
+  "variantId": "hp-probook-460-g11~v4",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 124999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/hp-probook-460-g11-core-ultra-7-16gb-ram-512gb-ssd-16-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o438",
+  "variantId": "lenovo-thinkpad-e14-gen-7~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 116500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/lenovo-thinkpad-e14-gen-7-laptop-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o439",
+  "variantId": "lenovo-thinkpad-e14-gen-7~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 116500,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.globalbrand.com.bd/lenovo-thinkpad-e14-gen-7-21sxs0n300-core-ultra-5-225u-8gb-ram-ai-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o440",
+  "variantId": "lenovo-thinkpad-e14-gen-7~v2",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 128500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/lenovo-thinkpad-e14-gen-7-21sxs0mu00-core-ultra-5-225u-16gb-ram-ai-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o441",
+  "variantId": "lenovo-thinkpad-e14-gen-7~v3",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 139500,
+  "oldPrice": 143000,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/lenovo-thinkpad-e14-gen-7-core-ultra-5-225h-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o442",
+  "variantId": "lenovo-thinkpad-e14-gen-7~v4",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 180000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/lenovo-thinkpad-e14-gen-7-core-ultra-7-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o443",
+  "variantId": "lenovo-thinkpad-e14-gen-7~v4",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 162000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/lenovo-thinkpad-e14-gen-7-intel-core-ultra-7-255h-wuxga-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o444",
+  "variantId": "lenovo-thinkpad-e14-gen-6~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 107000,
+  "oldPrice": 115500,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/lenovo-thinkpad-e14-gen-6-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o445",
+  "variantId": "lenovo-thinkpad-e14-gen-6~v2",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 121000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/lenovo-thinkpad-e14-gen-6-intel-core-ultra-wuxga-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o446",
+  "variantId": "lenovo-thinkpad-e14-gen-6~v3",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 149000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/lenovo-thinkpad-e14-gen-6-intel-core-ultra-7-155h-wuxga-laptop",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o447",
+  "variantId": "lenovo-thinkpad-e14-gen-6~v3",
+  "sellerId": "dazzle.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 159990,
+  "oldPrice": 179990,
+  "inStock": true,
+  "url": "https://dazzle.com.bd/product/lenovo-thinkpad-e14-gen-6-intel-core-ultra-7-155h-intel-arc-graphics-14-wuxga-display-laptop-price-in-bangladesh",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o448",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -24813,7 +33018,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o310",
+  "id": "o449",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -24827,7 +33032,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o311",
+  "id": "o450",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24841,7 +33046,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o312",
+  "id": "o451",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -24855,7 +33060,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o313",
+  "id": "o452",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -24869,7 +33074,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o314",
+  "id": "o453",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -24883,7 +33088,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o315",
+  "id": "o454",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -24897,7 +33102,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o316",
+  "id": "o455",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24911,7 +33116,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o317",
+  "id": "o456",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -24925,7 +33130,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o318",
+  "id": "o457",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -24939,7 +33144,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o319",
+  "id": "o458",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -24953,7 +33158,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o320",
+  "id": "o459",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -24967,7 +33172,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o321",
+  "id": "o460",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -24981,7 +33186,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o322",
+  "id": "o461",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -24995,7 +33200,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o323",
+  "id": "o462",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25009,7 +33214,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o324",
+  "id": "o463",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25023,7 +33228,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o325",
+  "id": "o464",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25037,7 +33242,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o326",
+  "id": "o465",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25051,7 +33256,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o327",
+  "id": "o466",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -25065,7 +33270,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o328",
+  "id": "o467",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25079,7 +33284,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o329",
+  "id": "o468",
   "variantId": "apple-macbook-air-13-m5~v3",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25093,7 +33298,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o330",
+  "id": "o469",
   "variantId": "apple-macbook-air-13-m5~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25107,7 +33312,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o331",
+  "id": "o470",
   "variantId": "apple-macbook-air-13-m5~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25121,7 +33326,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o332",
+  "id": "o471",
   "variantId": "apple-macbook-air-13-m5~v3",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25135,7 +33340,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o333",
+  "id": "o472",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25149,7 +33354,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o334",
+  "id": "o473",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25163,7 +33368,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o335",
+  "id": "o474",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25177,7 +33382,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o336",
+  "id": "o475",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -25191,7 +33396,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o337",
+  "id": "o476",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25205,7 +33410,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o338",
+  "id": "o477",
   "variantId": "apple-macbook-air-15-m5~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25219,7 +33424,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o339",
+  "id": "o478",
   "variantId": "apple-macbook-air-15-m5~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25233,7 +33438,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o340",
+  "id": "o479",
   "variantId": "apple-macbook-air-15-m5~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25247,7 +33452,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o341",
+  "id": "o480",
   "variantId": "apple-macbook-air-15-m5~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25261,7 +33466,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o342",
+  "id": "o481",
   "variantId": "apple-macbook-air-15-m5~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25275,7 +33480,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o343",
+  "id": "o482",
   "variantId": "apple-macbook-air-15-m5~v3",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25289,7 +33494,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o344",
+  "id": "o483",
   "variantId": "apple-macbook-pro-14-m5~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25303,7 +33508,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o345",
+  "id": "o484",
   "variantId": "apple-macbook-pro-14-m5~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25317,7 +33522,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o346",
+  "id": "o485",
   "variantId": "apple-macbook-pro-14-m5~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -25331,7 +33536,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o347",
+  "id": "o486",
   "variantId": "apple-macbook-pro-14-m5~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25345,7 +33550,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o348",
+  "id": "o487",
   "variantId": "apple-macbook-pro-14-m5~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25359,7 +33564,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o349",
+  "id": "o488",
   "variantId": "apple-macbook-pro-14-m5~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25373,7 +33578,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o350",
+  "id": "o489",
   "variantId": "apple-macbook-pro-14-m5~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25387,7 +33592,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o351",
+  "id": "o490",
   "variantId": "apple-macbook-pro-14-m5~v3",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25401,7 +33606,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o352",
+  "id": "o491",
   "variantId": "apple-macbook-pro-14-m5~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25415,7 +33620,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o353",
+  "id": "o492",
   "variantId": "apple-macbook-pro-14-m5~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25429,7 +33634,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o354",
+  "id": "o493",
   "variantId": "apple-macbook-pro-14-m5~v3",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25443,7 +33648,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o355",
+  "id": "o494",
   "variantId": "apple-macbook-pro-14-m5-pro~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25457,7 +33662,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o356",
+  "id": "o495",
   "variantId": "apple-macbook-pro-14-m5-pro~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25471,7 +33676,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o357",
+  "id": "o496",
   "variantId": "apple-macbook-pro-14-m5-pro~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25485,7 +33690,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o358",
+  "id": "o497",
   "variantId": "apple-macbook-pro-14-m5-pro~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25499,7 +33704,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o359",
+  "id": "o498",
   "variantId": "apple-macbook-pro-14-m5-pro~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25513,7 +33718,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o360",
+  "id": "o499",
   "variantId": "apple-macbook-pro-14-m5-pro~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25527,7 +33732,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o361",
+  "id": "o500",
   "variantId": "apple-macbook-pro-14-m5-max~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25541,7 +33746,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o362",
+  "id": "o501",
   "variantId": "apple-macbook-pro-14-m5-max~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25555,7 +33760,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o363",
+  "id": "o502",
   "variantId": "apple-macbook-pro-16-m5-pro~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25569,7 +33774,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o364",
+  "id": "o503",
   "variantId": "apple-macbook-pro-16-m5-pro~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25583,7 +33788,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o365",
+  "id": "o504",
   "variantId": "apple-macbook-pro-16-m5-pro~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25597,7 +33802,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o366",
+  "id": "o505",
   "variantId": "apple-macbook-pro-16-m5-pro~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25611,7 +33816,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o367",
+  "id": "o506",
   "variantId": "apple-macbook-pro-16-m5-pro~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25625,7 +33830,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o368",
+  "id": "o507",
   "variantId": "apple-macbook-pro-16-m5-pro~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25639,7 +33844,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o369",
+  "id": "o508",
   "variantId": "apple-macbook-pro-16-m5-max~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25653,7 +33858,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o370",
+  "id": "o509",
   "variantId": "apple-macbook-pro-16-m5-max~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25667,7 +33872,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o371",
+  "id": "o510",
   "variantId": "apple-macbook-pro-16-m5-max~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25681,7 +33886,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o372",
+  "id": "o511",
   "variantId": "apple-macbook-pro-16-m5-max~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25695,7 +33900,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o373",
+  "id": "o512",
   "variantId": "apple-macbook-pro-16-m5-max~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25709,7 +33914,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o374",
+  "id": "o513",
   "variantId": "apple-imac-24-m4~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25723,7 +33928,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o375",
+  "id": "o514",
   "variantId": "apple-imac-24-m4~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25737,7 +33942,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o376",
+  "id": "o515",
   "variantId": "apple-imac-24-m4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25751,7 +33956,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o377",
+  "id": "o516",
   "variantId": "apple-imac-24-m4~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25765,7 +33970,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o378",
+  "id": "o517",
   "variantId": "apple-imac-24-m4~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25779,7 +33984,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o379",
+  "id": "o518",
   "variantId": "apple-imac-24-m4~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25793,7 +33998,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o380",
+  "id": "o519",
   "variantId": "apple-imac-24-m4~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25807,7 +34012,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o381",
+  "id": "o520",
   "variantId": "apple-imac-24-m4~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -25821,7 +34026,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o382",
+  "id": "o521",
   "variantId": "apple-imac-24-m4~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25835,7 +34040,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o383",
+  "id": "o522",
   "variantId": "apple-imac-24-m4~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25849,7 +34054,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o384",
+  "id": "o523",
   "variantId": "apple-imac-24-m4~v3",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -25863,7 +34068,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o385",
+  "id": "o524",
   "variantId": "apple-mac-mini-m6~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25877,7 +34082,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o386",
+  "id": "o525",
   "variantId": "apple-mac-mini-m6~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25891,7 +34096,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o387",
+  "id": "o526",
   "variantId": "apple-mac-mini-m6~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25905,7 +34110,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o388",
+  "id": "o527",
   "variantId": "apple-mac-mini-m6~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25919,7 +34124,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o389",
+  "id": "o528",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -25933,7 +34138,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o390",
+  "id": "o529",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -25947,7 +34152,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o391",
+  "id": "o530",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -25961,7 +34166,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o392",
+  "id": "o531",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -25975,7 +34180,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o393",
+  "id": "o532",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -25989,7 +34194,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o394",
+  "id": "o533",
   "variantId": "apple-mac-mini-m6~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -26003,7 +34208,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o395",
+  "id": "o534",
   "variantId": "apple-mac-mini-m6~v3",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -26017,7 +34222,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o396",
+  "id": "o535",
   "variantId": "apple-mac-mini-m5-pro~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -26031,7 +34236,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o397",
+  "id": "o536",
   "variantId": "apple-mac-mini-m5-pro~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -26045,7 +34250,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o398",
+  "id": "o537",
   "variantId": "apple-mac-mini-m5-pro~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -26059,7 +34264,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o399",
+  "id": "o538",
   "variantId": "apple-mac-studio-m5-max~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -26073,7 +34278,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o400",
+  "id": "o539",
   "variantId": "apple-mac-studio-m5-max~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -26087,7 +34292,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o401",
+  "id": "o540",
   "variantId": "apple-mac-studio-m5-max~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -26101,7 +34306,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o402",
+  "id": "o541",
   "variantId": "apple-mac-studio-m5-max~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -26115,7 +34320,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o403",
+  "id": "o542",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -26129,7 +34334,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o404",
+  "id": "o543",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -26143,7 +34348,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o405",
+  "id": "o544",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -26157,7 +34362,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o406",
+  "id": "o545",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -26171,7 +34376,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o407",
+  "id": "o546",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -26185,7 +34390,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o408",
+  "id": "o547",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -26199,7 +34404,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o409",
+  "id": "o548",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -26213,7 +34418,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o410",
+  "id": "o549",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -26227,7 +34432,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o411",
+  "id": "o550",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -26241,7 +34446,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o412",
+  "id": "o551",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -26255,7 +34460,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o413",
+  "id": "o552",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -26269,7 +34474,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o414",
+  "id": "o553",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -26283,7 +34488,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o415",
+  "id": "o554",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -26297,7 +34502,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o416",
+  "id": "o555",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -26311,7 +34516,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o417",
+  "id": "o556",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -26325,7 +34530,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o418",
+  "id": "o557",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -26339,7 +34544,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o419",
+  "id": "o558",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -26353,7 +34558,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o420",
+  "id": "o559",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -26367,7 +34572,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o421",
+  "id": "o560",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -26381,7 +34586,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o422",
+  "id": "o561",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -26395,7 +34600,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o423",
+  "id": "o562",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -26409,7 +34614,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o424",
+  "id": "o563",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -26423,7 +34628,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o425",
+  "id": "o564",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -26437,7 +34642,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o426",
+  "id": "o565",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -26451,7 +34656,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o427",
+  "id": "o566",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -26465,7 +34670,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o428",
+  "id": "o567",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -26479,7 +34684,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o429",
+  "id": "o568",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -26493,7 +34698,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o430",
+  "id": "o569",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -26507,7 +34712,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o431",
+  "id": "o570",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -26521,7 +34726,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o432",
+  "id": "o571",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -26535,7 +34740,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o433",
+  "id": "o572",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -26549,7 +34754,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o434",
+  "id": "o573",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -26563,7 +34768,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o435",
+  "id": "o574",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -26577,7 +34782,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o436",
+  "id": "o575",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -26591,7 +34796,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o437",
+  "id": "o576",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -26605,7 +34810,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o438",
+  "id": "o577",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -26619,7 +34824,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o439",
+  "id": "o578",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -26633,7 +34838,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o440",
+  "id": "o579",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -26647,7 +34852,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o441",
+  "id": "o580",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -26661,7 +34866,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o442",
+  "id": "o581",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -26675,7 +34880,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o443",
+  "id": "o582",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -26689,7 +34894,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o444",
+  "id": "o583",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -26703,7 +34908,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o445",
+  "id": "o584",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -26717,7 +34922,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o446",
+  "id": "o585",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -26731,7 +34936,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o447",
+  "id": "o586",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -26745,7 +34950,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o448",
+  "id": "o587",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -26759,7 +34964,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o449",
+  "id": "o588",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -26773,7 +34978,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o450",
+  "id": "o589",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -26787,7 +34992,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o451",
+  "id": "o590",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -26801,7 +35006,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o452",
+  "id": "o591",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -26815,7 +35020,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o453",
+  "id": "o592",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -26829,7 +35034,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o454",
+  "id": "o593",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -26843,7 +35048,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o455",
+  "id": "o594",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -26857,7 +35062,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o456",
+  "id": "o595",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -26871,7 +35076,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o457",
+  "id": "o596",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -26885,7 +35090,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o458",
+  "id": "o597",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -26899,7 +35104,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o459",
+  "id": "o598",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -26913,7 +35118,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o460",
+  "id": "o599",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -26927,7 +35132,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o461",
+  "id": "o600",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -26941,7 +35146,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o462",
+  "id": "o601",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -26955,7 +35160,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o463",
+  "id": "o602",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -26969,7 +35174,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o464",
+  "id": "o603",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -26983,7 +35188,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o465",
+  "id": "o604",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -26997,7 +35202,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o466",
+  "id": "o605",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -27011,7 +35216,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o467",
+  "id": "o606",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -27025,7 +35230,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o468",
+  "id": "o607",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -27039,7 +35244,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o469",
+  "id": "o608",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -27053,7 +35258,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o470",
+  "id": "o609",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -27067,7 +35272,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o471",
+  "id": "o610",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -27081,7 +35286,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o472",
+  "id": "o611",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -27095,7 +35300,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o473",
+  "id": "o612",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -27109,7 +35314,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o474",
+  "id": "o613",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -27123,7 +35328,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o475",
+  "id": "o614",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -27137,7 +35342,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o476",
+  "id": "o615",
   "variantId": "xiaomi-redmi-note-17-pro-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -27151,7 +35356,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o477",
+  "id": "o616",
   "variantId": "xiaomi-redmi-note-17-pro-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -27165,7 +35370,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o478",
+  "id": "o617",
   "variantId": "xiaomi-redmi-note-17-pro-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -27179,7 +35384,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o479",
+  "id": "o618",
   "variantId": "xiaomi-redmi-note-17-pro-5g~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -27193,7 +35398,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o480",
+  "id": "o619",
   "variantId": "realme-c100~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -27207,7 +35412,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o481",
+  "id": "o620",
   "variantId": "realme-c100~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -27221,7 +35426,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o482",
+  "id": "o621",
   "variantId": "realme-c100~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27235,7 +35440,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o483",
+  "id": "o622",
   "variantId": "realme-c100~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -27249,7 +35454,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o484",
+  "id": "o623",
   "variantId": "realme-c100~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -27263,7 +35468,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o485",
+  "id": "o624",
   "variantId": "realme-c100~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -27277,7 +35482,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o486",
+  "id": "o625",
   "variantId": "realme-c100~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -27291,7 +35496,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o487",
+  "id": "o626",
   "variantId": "realme-c100~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -27305,7 +35510,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o488",
+  "id": "o627",
   "variantId": "realme-c100~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27319,7 +35524,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o489",
+  "id": "o628",
   "variantId": "realme-c100~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -27333,7 +35538,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o490",
+  "id": "o629",
   "variantId": "realme-c100~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -27347,7 +35552,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o491",
+  "id": "o630",
   "variantId": "realme-c100~v2",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -27361,7 +35566,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o492",
+  "id": "o631",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -27375,7 +35580,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o493",
+  "id": "o632",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -27389,7 +35594,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o494",
+  "id": "o633",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27403,7 +35608,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o495",
+  "id": "o634",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -27417,7 +35622,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o496",
+  "id": "o635",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -27431,7 +35636,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o497",
+  "id": "o636",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -27445,7 +35650,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o498",
+  "id": "o637",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -27459,7 +35664,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o499",
+  "id": "o638",
   "variantId": "oppo-a6~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -27473,7 +35678,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o500",
+  "id": "o639",
   "variantId": "oppo-a6~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -27487,7 +35692,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o501",
+  "id": "o640",
   "variantId": "oppo-a6~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27501,7 +35706,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o502",
+  "id": "o641",
   "variantId": "oppo-a6~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -27515,7 +35720,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o503",
+  "id": "o642",
   "variantId": "oppo-a6~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -27529,7 +35734,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o504",
+  "id": "o643",
   "variantId": "oppo-a6~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -27543,7 +35748,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o505",
+  "id": "o644",
   "variantId": "oppo-a6~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -27557,7 +35762,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o506",
+  "id": "o645",
   "variantId": "oppo-a6~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27571,7 +35776,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o507",
+  "id": "o646",
   "variantId": "oppo-a6~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -27585,7 +35790,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o508",
+  "id": "o647",
   "variantId": "oppo-a6~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -27599,7 +35804,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o509",
+  "id": "o648",
   "variantId": "oppo-reno15-f-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -27613,7 +35818,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o510",
+  "id": "o649",
   "variantId": "oppo-reno15-f-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -27627,7 +35832,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o511",
+  "id": "o650",
   "variantId": "oppo-reno15-f-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -27641,7 +35846,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o512",
+  "id": "o651",
   "variantId": "vivo-y31d~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -27655,7 +35860,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o513",
+  "id": "o652",
   "variantId": "vivo-y31d~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -27669,7 +35874,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o514",
+  "id": "o653",
   "variantId": "vivo-y31d~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27683,7 +35888,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o515",
+  "id": "o654",
   "variantId": "vivo-y31d~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -27697,7 +35902,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o516",
+  "id": "o655",
   "variantId": "vivo-y31d~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -27711,7 +35916,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o517",
+  "id": "o656",
   "variantId": "vivo-y31d~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -27725,7 +35930,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o518",
+  "id": "o657",
   "variantId": "vivo-y31d~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27739,7 +35944,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o519",
+  "id": "o658",
   "variantId": "vivo-y31d~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -27753,7 +35958,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o520",
+  "id": "o659",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -27767,7 +35972,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o521",
+  "id": "o660",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -27781,7 +35986,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o522",
+  "id": "o661",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27795,7 +36000,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o523",
+  "id": "o662",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -27809,7 +36014,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o524",
+  "id": "o663",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -27823,7 +36028,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o525",
+  "id": "o664",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -27837,7 +36042,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o526",
+  "id": "o665",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -27851,7 +36056,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o527",
+  "id": "o666",
   "variantId": "vivo-v70-fe-5g~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -27865,7 +36070,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o528",
+  "id": "o667",
   "variantId": "vivo-v70-fe-5g~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -27879,7 +36084,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o529",
+  "id": "o668",
   "variantId": "vivo-v70-fe-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27893,7 +36098,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o530",
+  "id": "o669",
   "variantId": "oneplus-nord-ce5-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27907,7 +36112,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o531",
+  "id": "o670",
   "variantId": "oneplus-nord-4~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27921,7 +36126,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o532",
+  "id": "o671",
   "variantId": "oneplus-nord-ce4-lite-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27935,7 +36140,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o533",
+  "id": "o672",
   "variantId": "google-pixel-8a~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -27949,7 +36154,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o534",
+  "id": "o673",
   "variantId": "realme-14-pro-5g~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -27963,7 +36168,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o535",
+  "id": "o674",
   "variantId": "realme-14-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27977,7 +36182,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o536",
+  "id": "o675",
   "variantId": "huawei-nova-y74~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -27991,7 +36196,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o537",
+  "id": "o676",
   "variantId": "asus-proart-display-pa279cv-27-inch-4k~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28005,7 +36210,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o538",
+  "id": "o677",
   "variantId": "asus-proart-display-pa279cv-27-inch-4k~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -28019,7 +36224,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o539",
+  "id": "o678",
   "variantId": "asus-proart-display-pa279cv-27-inch-4k~v1",
   "sellerId": "mcsolution.com.bd",
   "condition": "official",
@@ -28033,7 +36238,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o540",
+  "id": "o679",
   "variantId": "lg-34u650a-b-34-inch-ultrawide-wqhd-curved~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28047,7 +36252,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o541",
+  "id": "o680",
   "variantId": "lg-34u650a-b-34-inch-ultrawide-wqhd-curved~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -28061,7 +36266,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o542",
+  "id": "o681",
   "variantId": "lg-34u650a-b-34-inch-ultrawide-wqhd-curved~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -28075,7 +36280,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o543",
+  "id": "o682",
   "variantId": "asus-rog-strix-xg27acmes-27-inch-qhd-255hz~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28089,7 +36294,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o544",
+  "id": "o683",
   "variantId": "asus-rog-strix-xg27acmes-27-inch-qhd-255hz~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -28103,7 +36308,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o545",
+  "id": "o684",
   "variantId": "asus-rog-strix-xg27acmes-27-inch-qhd-255hz~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -28117,7 +36322,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o546",
+  "id": "o685",
   "variantId": "asus-proart-display-pa278qgv-27-inch-qhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28131,7 +36336,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o547",
+  "id": "o686",
   "variantId": "asus-proart-display-pa278qgv-27-inch-qhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -28145,7 +36350,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o548",
+  "id": "o687",
   "variantId": "asus-proart-display-pa278qgv-27-inch-qhd~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -28159,7 +36364,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o549",
+  "id": "o688",
   "variantId": "asus-proart-display-pa248qfv-24-1-inch-wuxga~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28173,7 +36378,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o550",
+  "id": "o689",
   "variantId": "asus-proart-display-pa248qfv-24-1-inch-wuxga~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -28187,7 +36392,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o551",
+  "id": "o690",
   "variantId": "asus-proart-display-pa248qfv-24-1-inch-wuxga~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -28201,7 +36406,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o552",
+  "id": "o691",
   "variantId": "lg-24u631a-b-23-8-inch-qhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28215,7 +36420,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o553",
+  "id": "o692",
   "variantId": "lg-24u631a-b-23-8-inch-qhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -28229,7 +36434,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o554",
+  "id": "o693",
   "variantId": "lg-24u631a-b-23-8-inch-qhd~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -28243,7 +36448,847 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o555",
+  "id": "o694",
+  "variantId": "viewsonic-va2214-h-22-inch-fhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 9999,
+  "oldPrice": 10500,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/viewsonic-va2214-h-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o695",
+  "variantId": "viewsonic-va2214-h-22-inch-fhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 10200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://pcbstore.com.bd/product/viewsonic-va2214-h-22-inch-100hz-ips-fhd-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o696",
+  "variantId": "viewsonic-va2214-h-22-inch-fhd~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 10200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/viewsonic-va2214-h-22-inch-full-hd-100hz-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o697",
+  "variantId": "viewsonic-va2214-h-22-inch-fhd~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 10200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/viewsonic-va2214-h-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o698",
+  "variantId": "viewsonic-va2432a-h-24-inch-fhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 12300,
+  "oldPrice": 14200,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/viewsonic-va2432a-h-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o699",
+  "variantId": "viewsonic-va2432a-h-24-inch-fhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 12300,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/viewsonic-va2432a-h-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o700",
+  "variantId": "viewsonic-va2432a-h-24-inch-fhd~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 12300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/viewsonic-va2432a-h-24-inch-full-hd-120-hz-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o701",
+  "variantId": "viewsonic-va2432a-h-24-inch-fhd~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 12300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/viewsonic-va2432a-h-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o702",
+  "variantId": "asus-vz24ehf-23-8-inch-fhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 11900,
+  "oldPrice": 13000,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/asus-vz24ehf-eye-care-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o703",
+  "variantId": "asus-vz24ehf-23-8-inch-fhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 12800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://pcbstore.com.bd/product/asus-vz24ehf-238-100hz-fhd-eye-care-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o704",
+  "variantId": "asus-vz24ehf-23-8-inch-fhd~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 12300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/asus-vz24ehf-eye-care-24-inch-100hz-full-hd-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o705",
+  "variantId": "asus-vz24ehf-23-8-inch-fhd~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 12800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/asus-vz24ehf-eye-care-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o706",
+  "variantId": "asus-vp229hf-21-5-inch-fhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 10300,
+  "oldPrice": 10800,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/asus-vp229hf-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o707",
+  "variantId": "asus-vp229hf-21-5-inch-fhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 13500,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/asus-vp229hf-22-inch-full-hd-100hz-1ms-eye-care-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o708",
+  "variantId": "asus-vp229hf-21-5-inch-fhd~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 10500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/asus-vp229hf-22-inch-full-hd-100hz-1ms-eye-care-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o709",
+  "variantId": "asus-vp229hf-21-5-inch-fhd~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 12200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/asus-vp229hf-22-inch-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o710",
+  "variantId": "philips-22e1n1200a-21-5-inch-fhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 11900,
+  "oldPrice": 13000,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/philips-22e1n1200a-fhd-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o711",
+  "variantId": "philips-22e1n1200a-21-5-inch-fhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 12100,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/philips-22e1n1200aw-21-5-inch-fhd-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o712",
+  "variantId": "philips-22e1n1200a-21-5-inch-fhd~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 13000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/philips-22e1n1200a-21-5-inch-100hz-ips-full-hd-led-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o713",
+  "variantId": "philips-22e1n1200a-21-5-inch-fhd~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 13000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/philips-22e1n1200a-fhd-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o714",
+  "variantId": "benq-gw2283-21-5-inch-fhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 12000,
+  "oldPrice": 13200,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/benq-gw2283-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o715",
+  "variantId": "benq-gw2283-21-5-inch-fhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 13200,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/benq-gw2283-21-5-inch-fhd-eye-care-stylish-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o716",
+  "variantId": "benq-gw2283-21-5-inch-fhd~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 13199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/benq-gw2283-215-eye-care-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o717",
+  "variantId": "benq-gw2283-21-5-inch-fhd~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 12300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/benq-gw2283-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o718",
+  "variantId": "benq-gw2291-21-5-inch-fhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 11000,
+  "oldPrice": 12900,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/benq-gw2291-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o719",
+  "variantId": "benq-gw2291-21-5-inch-fhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 12800,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/benq-gw2291-215-100hz-fhd-ips-eye-care-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o720",
+  "variantId": "benq-gw2291-21-5-inch-fhd~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 12799,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/benq-gw2291-215-fhd-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o721",
+  "variantId": "benq-gw2291-21-5-inch-fhd~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 12000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/benq-gw2291-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o722",
+  "variantId": "dahua-dhi-lm22-a201yfs-21-5-inch-fhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 9800,
+  "oldPrice": 10900,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/dahua-dhi-lm22-a201yfs-fhd-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o723",
+  "variantId": "dahua-dhi-lm22-a201yfs-21-5-inch-fhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 9990,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/dahua-dhi-lm22-a201yfs-21-45-inch-fhd-100hz-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o724",
+  "variantId": "dahua-dhi-lm22-a201yfs-21-5-inch-fhd~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 10799,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/dahua-dhi-lm22-a201yfs-22-fhd-100hz-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o725",
+  "variantId": "dahua-dhi-lm22-a201yfs-21-5-inch-fhd~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 10000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/dahua-dhi-lm22-a201yfs-fhd-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o726",
+  "variantId": "dahua-dhi-lm22-a211y-21-5-inch-fhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 8900,
+  "oldPrice": 10800,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/dahua-dhi-lm22-a211y-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o727",
+  "variantId": "dahua-dhi-lm22-a211y-21-5-inch-fhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 10800,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/dahua-dhi-lm22-a211y-2145-full-hd-120hz-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o728",
+  "variantId": "dahua-dhi-lm22-a211y-21-5-inch-fhd~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 10999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/dahua-dhi-lm22-a211y-2145-120hz-ips-fhd-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o729",
+  "variantId": "dahua-dhi-lm22-a211y-21-5-inch-fhd~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 9000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/dahua-dhi-lm22-a211y-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o730",
+  "variantId": "viewsonic-va221a-h-22-inch-fhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 11200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/viewsonic-va221a-h-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o731",
+  "variantId": "viewsonic-va221a-h-22-inch-fhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 12500,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/viewsonic-va221a-h-22-120hz-1ms-ips-fhd-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o732",
+  "variantId": "viewsonic-va221a-h-22-inch-fhd~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 12499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/viewsonic-va221a-h-22-fhd-ips-120hz-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o733",
+  "variantId": "viewsonic-va221a-h-22-inch-fhd~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 11500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/viewsonic-va221a-h-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o734",
+  "variantId": "benq-gw2491-23-8-inch-fhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 13500,
+  "oldPrice": 15700,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/benq-gw2491-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o735",
+  "variantId": "benq-gw2491-23-8-inch-fhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 17500,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/benq-gw2491-23-8-inch-100hz-fhd-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o736",
+  "variantId": "benq-gw2491-23-8-inch-fhd~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 15999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/benq-gw2491-238-inch-fhd-ips-100hz-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o737",
+  "variantId": "benq-gw2491-23-8-inch-fhd~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 13500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/benq-gw2491-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o738",
+  "variantId": "viewsonic-va2732-27-inch-fhd~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 21500,
+  "oldPrice": 23800,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/viewsonic-va2732-mhd-3-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o739",
+  "variantId": "viewsonic-va2732-27-inch-fhd~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 22000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/viewsonic-va2732-mhd-3-27-inch-full-hd-100hz-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o740",
+  "variantId": "viewsonic-va2732-27-inch-fhd~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 21900,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/viewsonic-va2732-mhd-3-27-inch-full-hd-100hz-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o741",
+  "variantId": "viewsonic-va2732-27-inch-fhd~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 21500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/viewsonic-va2732-mhd-3-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o742",
+  "variantId": "viewsonic-vx24g30-24-inch-fhd-240hz~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 20000,
+  "oldPrice": 21500,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/viewsonic-vx24g30-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o743",
+  "variantId": "viewsonic-vx24g30-24-inch-fhd-240hz~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 21500,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/viewsonic-vx24g30-24-inch-240hz-ips-fhd-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o744",
+  "variantId": "viewsonic-vx24g30-24-inch-fhd-240hz~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 22000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/viewsonic-vx24g30-24-inch-full-hd-240hz-superclear-ips-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o745",
+  "variantId": "viewsonic-vx24g30-24-inch-fhd-240hz~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 21299,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/viewsonic-vx24g30-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o746",
+  "variantId": "viewsonic-va24g1-24-inch-fhd-144hz~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 13800,
+  "oldPrice": 14300,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/viewsonic-va24g1-h-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o747",
+  "variantId": "viewsonic-va24g1-24-inch-fhd-144hz~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 13800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://pcbstore.com.bd/product/viewsonic-va24g1-h-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o748",
+  "variantId": "viewsonic-va24g1-24-inch-fhd-144hz~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 14300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/viewsonic-va24g1-h-24-inch-full-hd-144hz-ips-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o749",
+  "variantId": "viewsonic-va24g1-24-inch-fhd-144hz~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 13800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/viewsonic-va24g1-h-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o750",
+  "variantId": "asus-vg249q5r-23-8-inch-fhd-144hz~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 20800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/asus-tuf-gaming-vg249q5r-24-inch-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o751",
+  "variantId": "asus-vg249q5r-23-8-inch-fhd-144hz~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 21500,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/asus-tuf-gaming-vg249q5r-24-inch-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o752",
+  "variantId": "asus-vg249q5r-23-8-inch-fhd-144hz~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 21000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/asus-tuf-gaming-series-5-vg249q5r-238-inch-full-hd-gaming-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o753",
+  "variantId": "asus-vg249q5r-23-8-inch-fhd-144hz~v1",
+  "sellerId": "selltech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 20699,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.selltech.com.bd/asus-tuf-gaming-vg249q5r-24-inch-monitor",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o754",
   "variantId": "oraimo-toast-opb-7100q-10000mah-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28257,7 +37302,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o556",
+  "id": "o755",
   "variantId": "oraimo-toast-opb-7100q-10000mah-power-bank~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -28271,7 +37316,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o557",
+  "id": "o756",
   "variantId": "oraimo-toast-opb-7100q-10000mah-power-bank~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -28285,7 +37330,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o558",
+  "id": "o757",
   "variantId": "oraimo-powernova-l11-10000mah-power-bank~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -28299,7 +37344,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o559",
+  "id": "o758",
   "variantId": "oraimo-powernova-l11-10000mah-power-bank~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -28313,7 +37358,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o560",
+  "id": "o759",
   "variantId": "oraimo-powernova-l11-10000mah-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28327,7 +37372,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o561",
+  "id": "o760",
   "variantId": "oraimo-powernova-q21-20000mah-power-bank~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -28341,7 +37386,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o562",
+  "id": "o761",
   "variantId": "oraimo-powernova-q21-20000mah-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28355,7 +37400,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o563",
+  "id": "o762",
   "variantId": "oraimo-powernova-q21-20000mah-power-bank~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -28369,7 +37414,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o564",
+  "id": "o763",
   "variantId": "baseus-extreme-ppjp312-20000mah-power-bank~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -28383,7 +37428,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o565",
+  "id": "o764",
   "variantId": "baseus-extreme-ppjp312-20000mah-power-bank~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -28397,7 +37442,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o566",
+  "id": "o765",
   "variantId": "baseus-extreme-ppjp312-20000mah-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28411,7 +37456,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o567",
+  "id": "o766",
   "variantId": "anker-zolo-a110e-20000mah-power-bank~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -28425,7 +37470,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o568",
+  "id": "o767",
   "variantId": "anker-zolo-a110e-20000mah-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28439,7 +37484,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o569",
+  "id": "o768",
   "variantId": "anker-zolo-a110e-20000mah-power-bank~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -28453,7 +37498,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o570",
+  "id": "o769",
   "variantId": "baseus-adaman-ppadm20s-20000mah-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28467,7 +37512,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o571",
+  "id": "o770",
   "variantId": "baseus-adaman-ppadm20s-20000mah-power-bank~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -28481,7 +37526,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o572",
+  "id": "o771",
   "variantId": "baseus-adaman-ppadm20s-20000mah-power-bank~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -28495,7 +37540,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o573",
+  "id": "o772",
   "variantId": "oraimo-slice-link-pro-10000mah-power-bank~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -28509,7 +37554,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o574",
+  "id": "o773",
   "variantId": "oraimo-slice-link-pro-10000mah-power-bank~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -28523,7 +37568,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o575",
+  "id": "o774",
   "variantId": "oraimo-slice-link-pro-10000mah-power-bank~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -28537,7 +37582,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o576",
+  "id": "o775",
   "variantId": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -28551,7 +37596,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o577",
+  "id": "o776",
   "variantId": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -28565,7 +37610,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o578",
+  "id": "o777",
   "variantId": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -28579,7 +37624,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o579",
+  "id": "o778",
   "variantId": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -28593,7 +37638,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o580",
+  "id": "o779",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -28607,7 +37652,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o581",
+  "id": "o780",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -28621,7 +37666,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o582",
+  "id": "o781",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -28635,7 +37680,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o583",
+  "id": "o782",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -28649,7 +37694,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o584",
+  "id": "o783",
+  "variantId": "simple-refreshing-facial-wash-150ml~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 600,
+  "oldPrice": 700,
+  "inStock": true,
+  "url": "https://herhappyskin.com/simple-kind-to-skin-refreshing-facial-gel-wash-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o784",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -28663,7 +37722,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o585",
+  "id": "o785",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -28677,7 +37736,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o586",
+  "id": "o786",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "chaldal.com",
   "condition": "official",
@@ -28691,7 +37750,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o587",
+  "id": "o787",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -28705,7 +37764,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o588",
+  "id": "o788",
+  "variantId": "cerave-hydrating-cleanser-236ml~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2100,
+  "oldPrice": 3150,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/hydrating-cleanser-236-ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o789",
+  "variantId": "cerave-hydrating-cleanser-236ml~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1950,
+  "oldPrice": 2300,
+  "inStock": true,
+  "url": "https://herhappyskin.com/cerave-hydrating-cleanser-236ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o790",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -28719,7 +37806,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o589",
+  "id": "o791",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -28733,7 +37820,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o590",
+  "id": "o792",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -28747,7 +37834,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o591",
+  "id": "o793",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -28761,7 +37848,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o592",
+  "id": "o794",
+  "variantId": "cerave-moisturizing-cream-56ml~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1200,
+  "oldPrice": 2450,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/moisturizing-cream-56-ml-normal-to-dry/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o795",
+  "variantId": "cerave-moisturizing-cream-56ml~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1200,
+  "oldPrice": 1350,
+  "inStock": true,
+  "url": "https://herhappyskin.com/cerave-moisturizing-cream-for-normal-to-dry-skin-56ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o796",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -28775,7 +37890,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o593",
+  "id": "o797",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -28789,7 +37904,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o594",
+  "id": "o798",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -28803,7 +37918,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o595",
+  "id": "o799",
+  "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1430,
+  "oldPrice": 1650,
+  "inStock": true,
+  "url": "https://herhappyskin.com/cosrx-advanced-snail-96-mucin-power-essence-30ml-mini-19-cosrx-advanced-snail-96-mucin-power-essence-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o800",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -28817,7 +37946,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o596",
+  "id": "o801",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -28831,7 +37960,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o597",
+  "id": "o802",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -28845,7 +37974,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o598",
+  "id": "o803",
+  "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1350,
+  "oldPrice": 2250,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/beauty-of-joseonrelief-sun-cream-spf-50-plus-50-ml-rice-and-probiotics/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o804",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -28859,7 +38002,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o599",
+  "id": "o805",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -28873,7 +38016,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o600",
+  "id": "o806",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -28887,7 +38030,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o601",
+  "id": "o807",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "cosmeticscorner.com.bd",
   "condition": "official",
@@ -28901,7 +38044,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o602",
+  "id": "o808",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -28915,7 +38058,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o603",
+  "id": "o809",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -28929,7 +38072,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o604",
+  "id": "o810",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -28943,7 +38086,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o605",
+  "id": "o811",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -28957,7 +38100,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o606",
+  "id": "o812",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -28971,7 +38114,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o607",
+  "id": "o813",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -28985,7 +38128,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o608",
+  "id": "o814",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -28999,7 +38142,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o609",
+  "id": "o815",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "indianmartbd.com",
   "condition": "official",
@@ -29013,7 +38156,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o610",
+  "id": "o816",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -29027,7 +38170,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o611",
+  "id": "o817",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -29041,7 +38184,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o612",
+  "id": "o818",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -29055,7 +38198,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o613",
+  "id": "o819",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29069,7 +38212,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o614",
+  "id": "o820",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -29083,7 +38226,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o615",
+  "id": "o821",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -29097,7 +38240,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o616",
+  "id": "o822",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -29111,7 +38254,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o617",
+  "id": "o823",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -29125,7 +38268,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o618",
+  "id": "o824",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -29139,7 +38282,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o619",
+  "id": "o825",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -29153,7 +38296,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o620",
+  "id": "o826",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -29167,7 +38310,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o621",
+  "id": "o827",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -29181,7 +38324,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o622",
+  "id": "o828",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -29195,7 +38338,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o623",
+  "id": "o829",
+  "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 760,
+  "oldPrice": 1100,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/dot-key-watermelon-cooling-sunscreen-80-g-spf-50-plus/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o830",
   "variantId": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -29209,7 +38366,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o624",
+  "id": "o831",
   "variantId": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -29223,7 +38380,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o625",
+  "id": "o832",
   "variantId": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -29237,7 +38394,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o626",
+  "id": "o833",
+  "variantId": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1180,
+  "oldPrice": 1400,
+  "inStock": true,
+  "url": "https://herhappyskin.com/the-ordinary-niacinamide-10-zinc-1-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o834",
   "variantId": "cetaphil-gentle-skin-cleanser-236ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29251,7 +38422,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o627",
+  "id": "o835",
   "variantId": "cetaphil-gentle-skin-cleanser-236ml~v1",
   "sellerId": "cosmeticscorner.com.bd",
   "condition": "official",
@@ -29265,7 +38436,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o628",
+  "id": "o836",
+  "variantId": "cetaphil-gentle-skin-cleanser-236ml~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2100,
+  "oldPrice": 3100,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/cetaphil-gentle-skin-cleanser-236-ml-normal-to-dry-and-sensitive-skin/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o837",
   "variantId": "neutrogena-hydro-boost-water-gel-50ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -29279,7 +38464,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o629",
+  "id": "o838",
   "variantId": "neutrogena-hydro-boost-water-gel-50ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -29293,7 +38478,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o630",
+  "id": "o839",
+  "variantId": "neutrogena-hydro-boost-water-gel-50ml~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1380,
+  "oldPrice": 1650,
+  "inStock": false,
+  "url": "https://herhappyskin.com/neutrogena-hydro-boost-water-gel-moisturiser-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o840",
   "variantId": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -29307,7 +38506,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o631",
+  "id": "o841",
   "variantId": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -29321,7 +38520,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o632",
+  "id": "o842",
   "variantId": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -29335,7 +38534,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o633",
+  "id": "o843",
+  "variantId": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1700,
+  "oldPrice": 2100,
+  "inStock": true,
+  "url": "https://herhappyskin.com/some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o844",
   "variantId": "anua-heartleaf-77-soothing-toner-250ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29349,7 +38562,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o634",
+  "id": "o845",
   "variantId": "anua-heartleaf-77-soothing-toner-250ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -29363,7 +38576,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o635",
+  "id": "o846",
+  "variantId": "anua-heartleaf-77-soothing-toner-250ml~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 3150,
+  "oldPrice": 4200,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/anua-heartleaf-77-percent-soothing-toner-250ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o847",
+  "variantId": "anua-heartleaf-77-soothing-toner-250ml~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 2100,
+  "oldPrice": 2500,
+  "inStock": true,
+  "url": "https://herhappyskin.com/anua-heartleaf-77-soothing-toner-250ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o848",
   "variantId": "torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29377,7 +38618,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o636",
+  "id": "o849",
   "variantId": "torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -29391,7 +38632,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o637",
+  "id": "o850",
   "variantId": "isntree-hyaluronic-acid-toner-200ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -29405,7 +38646,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o638",
+  "id": "o851",
   "variantId": "isntree-hyaluronic-acid-toner-200ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -29419,7 +38660,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o639",
+  "id": "o852",
   "variantId": "isntree-hyaluronic-acid-toner-200ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -29433,7 +38674,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o640",
+  "id": "o853",
   "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -29447,7 +38688,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o641",
+  "id": "o854",
   "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -29461,7 +38702,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o642",
+  "id": "o855",
   "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29475,7 +38716,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o643",
+  "id": "o856",
+  "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1700,
+  "oldPrice": 2500,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/advanced-snail-92-all-in-one-cream-100g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o857",
+  "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1550,
+  "oldPrice": 1900,
+  "inStock": true,
+  "url": "https://herhappyskin.com/cosrx-advanced-snail-92-all-in-one-cream-100g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o858",
   "variantId": "klairs-supple-preparation-unscented-toner-180ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29489,7 +38758,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o644",
+  "id": "o859",
   "variantId": "klairs-supple-preparation-unscented-toner-180ml~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -29503,7 +38772,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o645",
+  "id": "o860",
   "variantId": "klairs-supple-preparation-unscented-toner-180ml~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -29517,7 +38786,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o646",
+  "id": "o861",
   "variantId": "skin1004-madagascar-centella-ampoule-50ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29531,7 +38800,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o647",
+  "id": "o862",
   "variantId": "round-lab-birch-juice-moisturizing-cream-80ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29545,7 +38814,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o648",
+  "id": "o863",
   "variantId": "round-lab-birch-juice-moisturizing-cream-80ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -29559,7 +38828,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o649",
+  "id": "o864",
   "variantId": "cosrx-low-ph-good-morning-gel-cleanser-150ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29573,7 +38842,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o650",
+  "id": "o865",
   "variantId": "cosrx-low-ph-good-morning-gel-cleanser-150ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -29587,7 +38856,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o651",
+  "id": "o866",
+  "variantId": "cosrx-low-ph-good-morning-gel-cleanser-150ml~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1100,
+  "oldPrice": 1500,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/cosrx-low-ph-good-morning-gel-cleanser-150-ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o867",
+  "variantId": "cosrx-low-ph-good-morning-gel-cleanser-150ml~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 980,
+  "oldPrice": 1150,
+  "inStock": true,
+  "url": "https://herhappyskin.com/cosrx-low-ph-good-morning-gel-cleanser-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o868",
   "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29601,7 +38898,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o652",
+  "id": "o869",
   "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -29615,7 +38912,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o653",
+  "id": "o870",
   "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -29629,7 +38926,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o654",
+  "id": "o871",
+  "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1020,
+  "oldPrice": 1500,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/salicylic-acid-cleanser-150-ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o872",
+  "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 980,
+  "oldPrice": 1150,
+  "inStock": true,
+  "url": "https://herhappyskin.com/cosrx-salicylic-acid-daily-gentle-cleanser-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o873",
   "variantId": "cosrx-acne-pimple-master-patch-24pcs~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -29643,7 +38968,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o655",
+  "id": "o874",
   "variantId": "cosrx-acne-pimple-master-patch-24pcs~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -29657,7 +38982,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o656",
+  "id": "o875",
+  "variantId": "cosrx-acne-pimple-master-patch-24pcs~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": 450,
+  "inStock": true,
+  "url": "https://herhappyskin.com/cosrx-acne-pimple-master-patch-1-pack-24pcs",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o876",
   "variantId": "round-lab-1025-dokdo-toner-100ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29671,7 +39010,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o657",
+  "id": "o877",
   "variantId": "round-lab-1025-dokdo-toner-100ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -29685,7 +39024,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o658",
+  "id": "o878",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -29699,7 +39038,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o659",
+  "id": "o879",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -29713,7 +39052,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o660",
+  "id": "o880",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -29727,7 +39066,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o661",
+  "id": "o881",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -29741,7 +39080,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o662",
+  "id": "o882",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29755,7 +39094,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o663",
+  "id": "o883",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -29769,7 +39108,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o664",
+  "id": "o884",
+  "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1550,
+  "oldPrice": 2080,
+  "inStock": true,
+  "url": "https://herhappyskin.com/isntree-green-tea-fresh-toner-200ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o885",
   "variantId": "skin1004-madagascar-centella-ampoule-100ml~v1",
   "sellerId": "beautyline.com.bd",
   "condition": "official",
@@ -29783,7 +39136,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o665",
+  "id": "o886",
   "variantId": "skin1004-madagascar-centella-ampoule-100ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -29797,7 +39150,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o666",
+  "id": "o887",
   "variantId": "skin1004-madagascar-centella-ampoule-100ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -29811,7 +39164,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o667",
+  "id": "o888",
+  "variantId": "skin1004-madagascar-centella-ampoule-100ml~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1850,
+  "oldPrice": 2300,
+  "inStock": true,
+  "url": "https://herhappyskin.com/skin-1004-madagascar-centella-asiatica-100-ampoule-100ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o889",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -29825,7 +39192,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o668",
+  "id": "o890",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -29839,7 +39206,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o669",
+  "id": "o891",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -29853,7 +39220,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o670",
+  "id": "o892",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -29867,7 +39234,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o671",
+  "id": "o893",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -29881,7 +39248,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o672",
+  "id": "o894",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -29895,7 +39262,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o673",
+  "id": "o895",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -29909,7 +39276,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o674",
+  "id": "o896",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -29923,7 +39290,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o675",
+  "id": "o897",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -29937,7 +39304,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o676",
+  "id": "o898",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -29951,7 +39318,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o677",
+  "id": "o899",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -29965,7 +39332,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o678",
+  "id": "o900",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -29979,7 +39346,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o679",
+  "id": "o901",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -29993,7 +39360,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o680",
+  "id": "o902",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -30007,7 +39374,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o681",
+  "id": "o903",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -30021,7 +39388,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o682",
+  "id": "o904",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -30035,7 +39402,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o683",
+  "id": "o905",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -30049,7 +39416,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o684",
+  "id": "o906",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -30063,7 +39430,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o685",
+  "id": "o907",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -30077,7 +39444,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o686",
+  "id": "o908",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -30091,7 +39458,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o687",
+  "id": "o909",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -30105,7 +39472,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o688",
+  "id": "o910",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -30119,7 +39486,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o689",
+  "id": "o911",
+  "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 150,
+  "oldPrice": 230,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/beauty-glazed-glow-lip-oil-104-love/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o912",
   "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -30133,7 +39514,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o690",
+  "id": "o913",
   "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -30147,7 +39528,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o691",
+  "id": "o914",
   "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -30161,7 +39542,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o692",
+  "id": "o915",
   "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -30175,7 +39556,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o693",
+  "id": "o916",
   "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -30189,7 +39570,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o694",
+  "id": "o917",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -30203,7 +39584,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o695",
+  "id": "o918",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -30217,7 +39598,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o696",
+  "id": "o919",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -30231,7 +39612,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o697",
+  "id": "o920",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -30245,7 +39626,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o698",
+  "id": "o921",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -30259,7 +39640,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o699",
+  "id": "o922",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -30273,7 +39654,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o700",
+  "id": "o923",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -30287,7 +39668,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o701",
+  "id": "o924",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -30301,7 +39682,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o702",
+  "id": "o925",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -30315,7 +39696,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o703",
+  "id": "o926",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -30329,7 +39710,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o704",
+  "id": "o927",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -30343,7 +39724,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o705",
+  "id": "o928",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -30357,7 +39738,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o706",
+  "id": "o929",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -30371,7 +39752,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o707",
+  "id": "o930",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -30385,7 +39766,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o708",
+  "id": "o931",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -30399,7 +39780,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o709",
+  "id": "o932",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -30413,7 +39794,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o710",
+  "id": "o933",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -30427,7 +39808,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o711",
+  "id": "o934",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -30441,7 +39822,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o712",
+  "id": "o935",
+  "variantId": "laneige-lip-sleeping-mask-berry~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1500,
+  "oldPrice": 1700,
+  "inStock": false,
+  "url": "https://herhappyskin.com/laneige-lip-sleeping-mask-ex-berry-20g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o936",
+  "variantId": "laneige-lip-sleeping-mask-berry~v2",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": 400,
+  "inStock": true,
+  "url": "https://herhappyskin.com/laneige-lip-sleeping-mask-berry-3g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o937",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -30455,7 +39864,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o713",
+  "id": "o938",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -30469,7 +39878,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o714",
+  "id": "o939",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -30483,7 +39892,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o715",
+  "id": "o940",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -30497,7 +39906,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o716",
+  "id": "o941",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -30511,7 +39920,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o717",
+  "id": "o942",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -30525,7 +39934,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o718",
+  "id": "o943",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -30539,7 +39948,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o719",
+  "id": "o944",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -30553,7 +39962,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o720",
+  "id": "o945",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "indianmartbd.com",
   "condition": "official",
@@ -30567,7 +39976,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o721",
+  "id": "o946",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -30581,7 +39990,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o722",
+  "id": "o947",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -30595,7 +40004,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o723",
+  "id": "o948",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 380,
+  "oldPrice": 660,
+  "inStock": false,
+  "url": "https://liraimportltd.com/product/wish-care-ceramide-lip-balm-spf-50-natural/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o949",
+  "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 480,
+  "oldPrice": 580,
+  "inStock": true,
+  "url": "https://herhappyskin.com/wishcare-ceramide-lip-balm-with-spf-50-pa-5g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o950",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -30609,7 +40046,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o724",
+  "id": "o951",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -30623,7 +40060,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o725",
+  "id": "o952",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -30637,7 +40074,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o726",
+  "id": "o953",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -30651,7 +40088,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o727",
+  "id": "o954",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -30665,7 +40102,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o728",
+  "id": "o955",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -30679,7 +40116,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o729",
+  "id": "o956",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -30693,7 +40130,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o730",
+  "id": "o957",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -30707,7 +40144,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o731",
+  "id": "o958",
   "variantId": "laneige-water-sleeping-mask~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -30721,7 +40158,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o732",
+  "id": "o959",
   "variantId": "laneige-water-sleeping-mask~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -30735,7 +40172,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o733",
+  "id": "o960",
   "variantId": "laneige-water-sleeping-mask~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -30749,7 +40186,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o734",
+  "id": "o961",
   "variantId": "laneige-water-sleeping-mask~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -30763,7 +40200,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o735",
+  "id": "o962",
   "variantId": "laneige-water-sleeping-mask~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -30777,7 +40214,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o736",
+  "id": "o963",
   "variantId": "laneige-water-sleeping-mask~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -30791,7 +40228,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o737",
+  "id": "o964",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -30805,7 +40242,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o738",
+  "id": "o965",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -30819,7 +40256,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o739",
+  "id": "o966",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -30833,7 +40270,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o740",
+  "id": "o967",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -30847,7 +40284,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o741",
+  "id": "o968",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -30861,7 +40298,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o742",
+  "id": "o969",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -30875,7 +40312,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o743",
+  "id": "o970",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -30889,7 +40326,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o744",
+  "id": "o971",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -30903,7 +40340,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o745",
+  "id": "o972",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -30917,7 +40354,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o746",
+  "id": "o973",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -30931,7 +40368,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o747",
+  "id": "o974",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -30945,7 +40382,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o748",
+  "id": "o975",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -30959,7 +40396,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o749",
+  "id": "o976",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -30973,7 +40410,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o750",
+  "id": "o977",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -30987,7 +40424,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o751",
+  "id": "o978",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -31001,7 +40438,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o752",
+  "id": "o979",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -31015,7 +40452,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o753",
+  "id": "o980",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -31029,7 +40466,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o754",
+  "id": "o981",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -31043,7 +40480,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o755",
+  "id": "o982",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -31057,7 +40494,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o756",
+  "id": "o983",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -31071,7 +40508,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o757",
+  "id": "o984",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2050,
+  "oldPrice": 3100,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/medicube-collagen-night-wrapping-mask-75ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o985",
+  "variantId": "medicube-collagen-night-wrapping-mask~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 2050,
+  "oldPrice": 2450,
+  "inStock": true,
+  "url": "https://herhappyskin.com/medicube-collagen-night-wrapping-mask-75ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o986",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -31085,7 +40550,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o758",
+  "id": "o987",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -31099,7 +40564,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o759",
+  "id": "o988",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -31113,7 +40578,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o760",
+  "id": "o989",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -31127,7 +40592,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o761",
+  "id": "o990",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -31141,7 +40606,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o762",
+  "id": "o991",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -31155,7 +40620,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o763",
+  "id": "o992",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -31169,7 +40634,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o764",
+  "id": "o993",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -31183,7 +40648,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o765",
+  "id": "o994",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -31197,7 +40662,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o766",
+  "id": "o995",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -31211,7 +40676,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o767",
+  "id": "o996",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -31225,7 +40690,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o768",
+  "id": "o997",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -31239,7 +40704,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o769",
+  "id": "o998",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -31253,7 +40718,21 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o770",
+  "id": "o999",
+  "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1950,
+  "oldPrice": 2450,
+  "inStock": true,
+  "url": "https://herhappyskin.com/beauty-of-joseon-ground-rice-and-honey-glow-mask-150ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o1000",
   "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -31267,7 +40746,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o771",
+  "id": "o1001",
   "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -31281,7 +40760,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o772",
+  "id": "o1002",
   "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -31295,7 +40774,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o773",
+  "id": "o1003",
   "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -31309,7 +40788,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o774",
+  "id": "o1004",
   "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -31323,7 +40802,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o775",
+  "id": "o1005",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -31337,7 +40816,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o776",
+  "id": "o1006",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -31351,7 +40830,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o777",
+  "id": "o1007",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -31365,7 +40844,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o778",
+  "id": "o1008",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -31379,7 +40858,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o779",
+  "id": "o1009",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -31393,7 +40872,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o780",
+  "id": "o1010",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -31407,7 +40886,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o781",
+  "id": "o1011",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -31421,7 +40900,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o782",
+  "id": "o1012",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -31435,7 +40914,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o783",
+  "id": "o1013",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -31449,7 +40928,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o784",
+  "id": "o1014",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -31463,7 +40942,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o785",
+  "id": "o1015",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -31477,7 +40956,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o786",
+  "id": "o1016",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -31491,7 +40970,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o787",
+  "id": "o1017",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -31505,7 +40984,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o788",
+  "id": "o1018",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -31519,7 +40998,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o789",
+  "id": "o1019",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -31533,7 +41012,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o790",
+  "id": "o1020",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -31547,7 +41026,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o791",
+  "id": "o1021",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -31561,7 +41040,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o792",
+  "id": "o1022",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -31575,7 +41054,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o793",
+  "id": "o1023",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -31589,7 +41068,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o794",
+  "id": "o1024",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -31603,7 +41082,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o795",
+  "id": "o1025",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -31617,7 +41096,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o796",
+  "id": "o1026",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -31631,7 +41110,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o797",
+  "id": "o1027",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -31645,7 +41124,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o798",
+  "id": "o1028",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -31659,7 +41138,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o799",
+  "id": "o1029",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -31673,7 +41152,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o800",
+  "id": "o1030",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -31687,7 +41166,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o801",
+  "id": "o1031",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -31701,7 +41180,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o802",
+  "id": "o1032",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -31715,7 +41194,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o803",
+  "id": "o1033",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -31729,7 +41208,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o804",
+  "id": "o1034",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -31743,7 +41222,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o805",
+  "id": "o1035",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -31757,7 +41236,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o806",
+  "id": "o1036",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -31771,7 +41250,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o807",
+  "id": "o1037",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -31785,7 +41264,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o808",
+  "id": "o1038",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -31799,7 +41278,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o809",
+  "id": "o1039",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -31813,7 +41292,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o810",
+  "id": "o1040",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -31827,7 +41306,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o811",
+  "id": "o1041",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -31841,7 +41320,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o812",
+  "id": "o1042",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -31855,7 +41334,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o813",
+  "id": "o1043",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -31869,7 +41348,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o814",
+  "id": "o1044",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -31883,7 +41362,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o815",
+  "id": "o1045",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1120,
+  "oldPrice": 1640,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/aloe-soothing-sun-cream-50ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o1046",
+  "variantId": "cosrx-aloe-soothing-sun-cream~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1050,
+  "oldPrice": 1200,
+  "inStock": true,
+  "url": "https://herhappyskin.com/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o1047",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -31897,7 +41404,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o816",
+  "id": "o1048",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -31911,7 +41418,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o817",
+  "id": "o1049",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -31925,7 +41432,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o818",
+  "id": "o1050",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -31939,7 +41446,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o819",
+  "id": "o1051",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -31953,7 +41460,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o820",
+  "id": "o1052",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -31967,7 +41474,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o821",
+  "id": "o1053",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -31981,7 +41488,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o822",
+  "id": "o1054",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -31995,7 +41502,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o823",
+  "id": "o1055",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -32009,7 +41516,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o824",
+  "id": "o1056",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -32023,7 +41530,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o825",
+  "id": "o1057",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -32037,7 +41544,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o826",
+  "id": "o1058",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -32051,7 +41558,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o827",
+  "id": "o1059",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -32065,7 +41572,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o828",
+  "id": "o1060",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -32079,7 +41586,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o829",
+  "id": "o1061",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v2",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -32093,7 +41600,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o830",
+  "id": "o1062",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v2",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -32107,7 +41614,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o831",
+  "id": "o1063",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v2",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -32121,7 +41628,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o832",
+  "id": "o1064",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v2",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -32135,7 +41642,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o833",
+  "id": "o1065",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1550,
+  "oldPrice": 1950,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/hyaluronic-acid-watery-sun-gel-spf-50/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o1066",
+  "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1400,
+  "oldPrice": 1600,
+  "inStock": true,
+  "url": "https://herhappyskin.com/isntree-hyaluronic-acid-watery-sun-gel-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o1067",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -32149,7 +41684,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o834",
+  "id": "o1068",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -32163,7 +41698,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o835",
+  "id": "o1069",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -32177,7 +41712,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o836",
+  "id": "o1070",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -32191,7 +41726,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o837",
+  "id": "o1071",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -32205,7 +41740,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o838",
+  "id": "o1072",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -32219,7 +41754,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o839",
+  "id": "o1073",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -32233,7 +41768,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o840",
+  "id": "o1074",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -32247,7 +41782,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o841",
+  "id": "o1075",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -32261,7 +41796,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o842",
+  "id": "o1076",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -32275,7 +41810,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o843",
+  "id": "o1077",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -32289,7 +41824,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o844",
+  "id": "o1078",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -32303,7 +41838,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o845",
+  "id": "o1079",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -32317,7 +41852,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o846",
+  "id": "o1080",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -32331,7 +41866,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o847",
+  "id": "o1081",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -32345,7 +41880,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o848",
+  "id": "o1082",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -32359,7 +41894,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o849",
+  "id": "o1083",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -32373,7 +41908,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o850",
+  "id": "o1084",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -32387,7 +41922,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o851",
+  "id": "o1085",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -32401,7 +41936,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o852",
+  "id": "o1086",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -32415,7 +41950,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o853",
+  "id": "o1087",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -32429,7 +41964,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o854",
+  "id": "o1088",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -32443,7 +41978,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o855",
+  "id": "o1089",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1400,
+  "oldPrice": 2350,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/skin-1004-hyalu-cica-water-fit-sun-serum-spf-50-50-ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o1090",
+  "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1380,
+  "oldPrice": 1700,
+  "inStock": true,
+  "url": "https://herhappyskin.com/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-50ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o1091",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -32457,7 +42020,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o856",
+  "id": "o1092",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -32471,7 +42034,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o857",
+  "id": "o1093",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -32485,7 +42048,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o858",
+  "id": "o1094",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -32499,7 +42062,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o859",
+  "id": "o1095",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -32513,7 +42076,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o860",
+  "id": "o1096",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -32527,7 +42090,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o861",
+  "id": "o1097",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -32541,7 +42104,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o862",
+  "id": "o1098",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -32555,7 +42118,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o863",
+  "id": "o1099",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -32569,7 +42132,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o864",
+  "id": "o1100",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -32583,7 +42146,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o865",
+  "id": "o1101",
   "variantId": "beauty-of-joseon-revive-eye-serum~v2",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -32597,7 +42160,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o866",
+  "id": "o1102",
   "variantId": "beauty-of-joseon-revive-eye-serum~v2",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -32611,7 +42174,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o867",
+  "id": "o1103",
   "variantId": "beauty-of-joseon-revive-eye-serum~v2",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -32625,7 +42188,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o868",
+  "id": "o1104",
   "variantId": "beauty-of-joseon-revive-eye-serum~v2",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -32639,7 +42202,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o869",
+  "id": "o1105",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1500,
+  "oldPrice": 1850,
+  "inStock": true,
+  "url": "https://herhappyskin.com/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o1106",
+  "variantId": "beauty-of-joseon-revive-eye-serum~v2",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 450,
+  "oldPrice": 800,
+  "inStock": true,
+  "url": "https://herhappyskin.com/beauty-of-joseon-revive-eye-serum-ginseng-retinal-10ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o1107",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -32653,7 +42244,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o870",
+  "id": "o1108",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -32667,7 +42258,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o871",
+  "id": "o1109",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -32681,7 +42272,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o872",
+  "id": "o1110",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -32695,7 +42286,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o873",
+  "id": "o1111",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -32709,7 +42300,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o874",
+  "id": "o1112",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -32723,7 +42314,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o875",
+  "id": "o1113",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -32737,7 +42328,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o876",
+  "id": "o1114",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -32751,7 +42342,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o877",
+  "id": "o1115",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -32765,7 +42356,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o878",
+  "id": "o1116",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -32779,7 +42370,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o879",
+  "id": "o1117",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -32793,7 +42384,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o880",
+  "id": "o1118",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -32807,7 +42398,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o881",
+  "id": "o1119",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -32821,7 +42412,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o882",
+  "id": "o1120",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -32835,7 +42426,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o883",
+  "id": "o1121",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -32849,7 +42440,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o884",
+  "id": "o1122",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -32863,7 +42454,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o885",
+  "id": "o1123",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -32877,7 +42468,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o886",
+  "id": "o1124",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -32891,7 +42482,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o887",
+  "id": "o1125",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -32905,7 +42496,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o888",
+  "id": "o1126",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -32919,7 +42510,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o889",
+  "id": "o1127",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -32933,7 +42524,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o890",
+  "id": "o1128",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -32947,7 +42538,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o891",
+  "id": "o1129",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -32961,7 +42552,35 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o892",
+  "id": "o1130",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 2152,
+  "oldPrice": 2690,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/the-ordinarycaffeine-solution-5-percent-egcg-serum-30-ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o1131",
+  "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
+  "sellerId": "herhappyskin.com",
+  "condition": "official",
+  "region": null,
+  "price": 1650,
+  "oldPrice": 1800,
+  "inStock": true,
+  "url": "https://herhappyskin.com/the-ordinary-caffeine-solution-5-egcg-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-25T03:00:00.000Z"
+ },
+ {
+  "id": "o1132",
   "variantId": "af-1-air-force-1-1-1-copy-sneakers~v1",
   "sellerId": "threesbd.com",
   "condition": "unofficial",
@@ -32975,7 +42594,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o893",
+  "id": "o1133",
   "variantId": "af-1-air-force-1-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -32989,7 +42608,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o894",
+  "id": "o1134",
   "variantId": "af-1-air-force-1-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -33003,7 +42622,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o895",
+  "id": "o1135",
   "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33017,7 +42636,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o896",
+  "id": "o1136",
   "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -33031,7 +42650,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o897",
+  "id": "o1137",
   "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -33045,7 +42664,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o898",
+  "id": "o1138",
   "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33059,7 +42678,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o899",
+  "id": "o1139",
   "variantId": "samba-samba-og-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33073,7 +42692,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o900",
+  "id": "o1140",
   "variantId": "samba-samba-og-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33087,7 +42706,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o901",
+  "id": "o1141",
   "variantId": "samba-samba-og-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -33101,7 +42720,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o902",
+  "id": "o1142",
   "variantId": "samba-samba-vegan-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33115,7 +42734,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o903",
+  "id": "o1143",
   "variantId": "samba-samba-vegan-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -33129,7 +42748,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o904",
+  "id": "o1144",
   "variantId": "samba-samba-vegan-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -33143,7 +42762,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o905",
+  "id": "o1145",
   "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33157,7 +42776,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o906",
+  "id": "o1146",
   "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -33171,7 +42790,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o907",
+  "id": "o1147",
   "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33185,7 +42804,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o908",
+  "id": "o1148",
   "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -33199,7 +42818,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o909",
+  "id": "o1149",
   "variantId": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33213,7 +42832,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o910",
+  "id": "o1150",
   "variantId": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33227,7 +42846,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o911",
+  "id": "o1151",
   "variantId": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -33241,7 +42860,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o912",
+  "id": "o1152",
   "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33255,7 +42874,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o913",
+  "id": "o1153",
   "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -33269,7 +42888,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o914",
+  "id": "o1154",
   "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33283,7 +42902,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o915",
+  "id": "o1155",
   "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -33297,7 +42916,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o916",
+  "id": "o1156",
   "variantId": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33311,7 +42930,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o917",
+  "id": "o1157",
   "variantId": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -33325,7 +42944,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o918",
+  "id": "o1158",
   "variantId": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -33339,7 +42958,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o919",
+  "id": "o1159",
   "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -33353,7 +42972,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o920",
+  "id": "o1160",
   "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -33367,7 +42986,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o921",
+  "id": "o1161",
   "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33381,7 +43000,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o922",
+  "id": "o1162",
   "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -33395,7 +43014,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o923",
+  "id": "o1163",
   "variantId": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -33409,7 +43028,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o924",
+  "id": "o1164",
   "variantId": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -33423,7 +43042,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o925",
+  "id": "o1165",
   "variantId": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33437,7 +43056,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o926",
+  "id": "o1166",
   "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -33451,7 +43070,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o927",
+  "id": "o1167",
   "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33465,7 +43084,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o928",
+  "id": "o1168",
   "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -33479,7 +43098,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o929",
+  "id": "o1169",
   "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -33493,7 +43112,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o930",
+  "id": "o1170",
   "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33507,7 +43126,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o931",
+  "id": "o1171",
   "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -33521,7 +43140,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o932",
+  "id": "o1172",
   "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -33535,7 +43154,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o933",
+  "id": "o1173",
   "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -33549,7 +43168,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o934",
+  "id": "o1174",
   "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33563,7 +43182,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o935",
+  "id": "o1175",
   "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -33577,7 +43196,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o936",
+  "id": "o1176",
   "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -33591,7 +43210,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o937",
+  "id": "o1177",
   "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -33605,7 +43224,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o938",
+  "id": "o1178",
   "variantId": "new-balance-530-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33619,7 +43238,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o939",
+  "id": "o1179",
   "variantId": "new-balance-530-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -33633,7 +43252,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o940",
+  "id": "o1180",
   "variantId": "new-balance-530-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33647,7 +43266,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o941",
+  "id": "o1181",
   "variantId": "new-balance-530-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -33661,7 +43280,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o942",
+  "id": "o1182",
   "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33675,7 +43294,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o943",
+  "id": "o1183",
   "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -33689,7 +43308,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o944",
+  "id": "o1184",
   "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33703,7 +43322,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o945",
+  "id": "o1185",
   "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -33717,7 +43336,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o946",
+  "id": "o1186",
   "variantId": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33731,7 +43350,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o947",
+  "id": "o1187",
   "variantId": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -33745,7 +43364,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o948",
+  "id": "o1188",
   "variantId": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -33759,7 +43378,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o949",
+  "id": "o1189",
   "variantId": "vans-knu-skool-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33773,7 +43392,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o950",
+  "id": "o1190",
   "variantId": "vans-knu-skool-1-1-copy-sneakers~v1",
   "sellerId": "sneakerzonebd.com",
   "condition": "unofficial",
@@ -33787,7 +43406,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o951",
+  "id": "o1191",
   "variantId": "vans-knu-skool-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -33801,7 +43420,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o952",
+  "id": "o1192",
   "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
   "sellerId": "threesbd.com",
   "condition": "unofficial",
@@ -33815,7 +43434,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o953",
+  "id": "o1193",
   "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
   "sellerId": "dob.com.bd",
   "condition": "unofficial",
@@ -33829,7 +43448,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o954",
+  "id": "o1194",
   "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -33843,7 +43462,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o955",
+  "id": "o1195",
   "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
   "sellerId": "sneakersbdofficial.com",
   "condition": "unofficial",
@@ -33857,7 +43476,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o956",
+  "id": "o1196",
   "variantId": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33871,7 +43490,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o957",
+  "id": "o1197",
   "variantId": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -33885,7 +43504,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o958",
+  "id": "o1198",
   "variantId": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
   "sellerId": "trekntread.com",
   "condition": "unofficial",
@@ -33899,7 +43518,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o959",
+  "id": "o1199",
   "variantId": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
   "sellerId": "threesbd.com",
   "condition": "unofficial",
@@ -33913,7 +43532,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o960",
+  "id": "o1200",
   "variantId": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
   "sellerId": "splayd.com.bd",
   "condition": "unofficial",
@@ -33927,7 +43546,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o961",
+  "id": "o1201",
   "variantId": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
   "sellerId": "ragenbd.com",
   "condition": "unofficial",
@@ -33941,7 +43560,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o962",
+  "id": "o1202",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33955,7 +43574,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o963",
+  "id": "o1203",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33969,7 +43588,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o964",
+  "id": "o1204",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33983,7 +43602,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o965",
+  "id": "o1205",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33997,7 +43616,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o966",
+  "id": "o1206",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34011,7 +43630,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o967",
+  "id": "o1207",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34025,7 +43644,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o968",
+  "id": "o1208",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34039,7 +43658,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o969",
+  "id": "o1209",
   "variantId": "apple-watch-series-11~v3",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -34053,7 +43672,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o970",
+  "id": "o1210",
   "variantId": "apple-watch-series-11~v4",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -34067,7 +43686,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o971",
+  "id": "o1211",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34081,7 +43700,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o972",
+  "id": "o1212",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34095,7 +43714,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o973",
+  "id": "o1213",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34109,7 +43728,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o974",
+  "id": "o1214",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34123,7 +43742,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o975",
+  "id": "o1215",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34137,7 +43756,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o976",
+  "id": "o1216",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34151,7 +43770,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o977",
+  "id": "o1217",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34165,7 +43784,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o978",
+  "id": "o1218",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34179,7 +43798,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o979",
+  "id": "o1219",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -34193,7 +43812,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o980",
+  "id": "o1220",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -34207,7 +43826,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o981",
+  "id": "o1221",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34221,7 +43840,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o982",
+  "id": "o1222",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -34235,7 +43854,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o983",
+  "id": "o1223",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34249,7 +43868,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o984",
+  "id": "o1224",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -34263,7 +43882,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o985",
+  "id": "o1225",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34277,7 +43896,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o986",
+  "id": "o1226",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34291,7 +43910,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o987",
+  "id": "o1227",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "diamu.com.bd",
   "condition": "official",
@@ -34305,7 +43924,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o988",
+  "id": "o1228",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -34319,7 +43938,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o989",
+  "id": "o1229",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34333,7 +43952,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o990",
+  "id": "o1230",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -34347,7 +43966,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o991",
+  "id": "o1231",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34361,7 +43980,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o992",
+  "id": "o1232",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -34375,7 +43994,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o993",
+  "id": "o1233",
   "variantId": "xiaomi-redmi-watch-6-active~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34389,7 +44008,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o994",
+  "id": "o1234",
   "variantId": "xiaomi-redmi-watch-6-active~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -34403,7 +44022,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o995",
+  "id": "o1235",
   "variantId": "amazfit-bip-5-unity-smart-watch~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -34417,7 +44036,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o996",
+  "id": "o1236",
   "variantId": "amazfit-bip-5-unity-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34431,7 +44050,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o997",
+  "id": "o1237",
   "variantId": "amazfit-bip-5-unity-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34445,7 +44064,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o998",
+  "id": "o1238",
   "variantId": "huawei-watch-gt-4-46mm~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -34459,7 +44078,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o999",
+  "id": "o1239",
   "variantId": "huawei-watch-gt-4-46mm~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34473,7 +44092,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1000",
+  "id": "o1240",
   "variantId": "xiaomi-redmi-watch-5~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34487,7 +44106,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1001",
+  "id": "o1241",
   "variantId": "xiaomi-redmi-watch-5~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -34501,7 +44120,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1002",
+  "id": "o1242",
   "variantId": "xiaomi-redmi-watch-5~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34515,7 +44134,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1003",
+  "id": "o1243",
   "variantId": "apple-watch-se-2nd-gen~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34529,7 +44148,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1004",
+  "id": "o1244",
   "variantId": "apple-watch-se-2nd-gen~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34543,7 +44162,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1005",
+  "id": "o1245",
   "variantId": "apple-watch-se-2nd-gen~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -34557,7 +44176,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1006",
+  "id": "o1246",
   "variantId": "huawei-watch-gt-6-46mm~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34571,7 +44190,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1007",
+  "id": "o1247",
   "variantId": "huawei-watch-gt-6-46mm~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34585,7 +44204,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1008",
+  "id": "o1248",
   "variantId": "huawei-watch-gt-6-46mm~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34599,7 +44218,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1009",
+  "id": "o1249",
   "variantId": "xiaomi-watch-s4~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -34613,7 +44232,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1010",
+  "id": "o1250",
   "variantId": "xiaomi-watch-s4~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34627,7 +44246,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1011",
+  "id": "o1251",
   "variantId": "xiaomi-watch-s4~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34641,7 +44260,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1012",
+  "id": "o1252",
   "variantId": "haylou-solar-lite-2~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34655,7 +44274,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1013",
+  "id": "o1253",
   "variantId": "haylou-solar-lite-2~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34669,7 +44288,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1014",
+  "id": "o1254",
   "variantId": "imiki-st2-bluetooth-calling-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34683,7 +44302,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1015",
+  "id": "o1255",
   "variantId": "imiki-st2-bluetooth-calling-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34697,7 +44316,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1016",
+  "id": "o1256",
   "variantId": "kospet-orb-2-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34711,7 +44330,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1017",
+  "id": "o1257",
   "variantId": "kospet-orb-2-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34725,7 +44344,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1018",
+  "id": "o1258",
   "variantId": "imiki-frame-2-pro-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34739,7 +44358,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1019",
+  "id": "o1259",
   "variantId": "imiki-frame-2-pro-smart-watch~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -34753,7 +44372,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1020",
+  "id": "o1260",
   "variantId": "oraimo-watch-5-lite~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34767,7 +44386,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1021",
+  "id": "o1261",
   "variantId": "oraimo-watch-5-lite~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34781,7 +44400,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1022",
+  "id": "o1262",
   "variantId": "kospet-tank-t4c-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34795,7 +44414,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1023",
+  "id": "o1263",
   "variantId": "kospet-tank-t4c-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34809,7 +44428,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1024",
+  "id": "o1264",
   "variantId": "kospet-tank-t4c-smart-watch~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -34823,7 +44442,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1025",
+  "id": "o1265",
   "variantId": "haylou-watch-4-with-gps~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34837,7 +44456,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1026",
+  "id": "o1266",
   "variantId": "haylou-watch-4-with-gps~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34851,7 +44470,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1027",
+  "id": "o1267",
   "variantId": "haylou-watch-4-with-gps~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -34865,7 +44484,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1028",
+  "id": "o1268",
   "variantId": "haylou-watch-4-with-gps~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -34879,7 +44498,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1029",
+  "id": "o1269",
   "variantId": "oraimo-watch-6-osw-807~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34893,7 +44512,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1030",
+  "id": "o1270",
   "variantId": "oraimo-watch-6-osw-807~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34907,7 +44526,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1031",
+  "id": "o1271",
   "variantId": "kospet-orb-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34921,7 +44540,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1032",
+  "id": "o1272",
   "variantId": "kospet-orb-smart-watch~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -34935,7 +44554,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1033",
+  "id": "o1273",
   "variantId": "kospet-orb-smart-watch~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34949,7 +44568,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1034",
+  "id": "o1274",
   "variantId": "kospet-tank-t3-ultra-smart-watch~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -34963,7 +44582,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1035",
+  "id": "o1275",
   "variantId": "kospet-tank-t3-ultra-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34977,7 +44596,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1036",
+  "id": "o1276",
   "variantId": "kospet-tank-t3-ultra-smart-watch~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -34991,7 +44610,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1037",
+  "id": "o1277",
   "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35005,7 +44624,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1038",
+  "id": "o1278",
   "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -35019,7 +44638,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1039",
+  "id": "o1279",
   "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -35033,7 +44652,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1040",
+  "id": "o1280",
   "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -35047,7 +44666,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1041",
+  "id": "o1281",
   "variantId": "oraimo-watch-nova-2r~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35061,7 +44680,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1042",
+  "id": "o1282",
   "variantId": "oraimo-watch-nova-2r~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -35075,7 +44694,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1043",
+  "id": "o1283",
   "variantId": "oraimo-watch-nova-2r~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35089,7 +44708,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1044",
+  "id": "o1284",
   "variantId": "amazfit-bip-6~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35103,7 +44722,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1045",
+  "id": "o1285",
   "variantId": "amazfit-bip-6~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -35117,7 +44736,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1046",
+  "id": "o1286",
   "variantId": "amazfit-bip-6~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -35131,7 +44750,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1047",
+  "id": "o1287",
   "variantId": "amazfit-active-2~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35145,7 +44764,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1048",
+  "id": "o1288",
   "variantId": "amazfit-active-2~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -35159,7 +44778,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1049",
+  "id": "o1289",
   "variantId": "amazfit-active-2~v1",
   "sellerId": "genten.com.bd",
   "condition": "official",
@@ -35173,7 +44792,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1050",
+  "id": "o1290",
   "variantId": "xiaomi-watch-2~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35187,7 +44806,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1051",
+  "id": "o1291",
   "variantId": "xiaomi-watch-2~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -35201,7 +44820,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1052",
+  "id": "o1292",
   "variantId": "xiaomi-watch-2~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -35215,7 +44834,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1053",
+  "id": "o1293",
   "variantId": "xiaomi-watch-2~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -35229,7 +44848,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1054",
+  "id": "o1294",
   "variantId": "huawei-watch-fit-3~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -35243,7 +44862,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1055",
+  "id": "o1295",
   "variantId": "huawei-watch-fit-3~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35257,7 +44876,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1056",
+  "id": "o1296",
   "variantId": "huawei-watch-fit-3~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35271,7 +44890,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1057",
+  "id": "o1297",
   "variantId": "huawei-watch-fit-3~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -35285,7 +44904,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1058",
+  "id": "o1298",
   "variantId": "samsung-galaxy-watch-7-40mm~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35299,7 +44918,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1059",
+  "id": "o1299",
   "variantId": "samsung-galaxy-watch-7-40mm~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -35313,7 +44932,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1060",
+  "id": "o1300",
   "variantId": "samsung-galaxy-watch-7-40mm~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -35327,7 +44946,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1061",
+  "id": "o1301",
   "variantId": "huawei-watch-gt-7-46mm~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -35341,7 +44960,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1062",
+  "id": "o1302",
   "variantId": "huawei-watch-gt-7-46mm~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",

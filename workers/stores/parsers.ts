@@ -1,5 +1,5 @@
 import { decode, stripTags } from "../lib/html";
-import { postForm } from "../lib/http";
+import { getJson, postForm } from "../lib/http";
 import { groupBy } from "../lib/pool";
 import { structuredQuote, toTaka } from "../lib/price";
 import type { ShopVariant } from "./types";
@@ -277,4 +277,17 @@ export function perfectoVariants(html: string, url: string): ShopVariant[] {
   const product = objectsAt(html, /\{"id":\d+,"type":"product","slug":/g).find((p) => p.slug === slug);
   if (!product) return [];
   return variant([], product.calculable_price, product.mrp_price, typeof product.in_stock === "boolean" ? product.in_stock : null);
+}
+
+// Her Happy Skin (Next.js): পাতা JS-এ ফাঁকা, দাম-স্টক সাইট নিজে যে API থেকে পড়ে সেখান থেকেই;
+// নামে সাইজ থাকে ("... 56ml"), সেটাই ভ্যারিয়েন্টের অপশন। API টা Django REST — JSON চাইলে আলাদা Accept লাগে
+export async function hhsVariants(html: string, url: string): Promise<ShopVariant[]> {
+  const slug = new URL(url).pathname.split("/").filter(Boolean).pop();
+  if (!slug) return [];
+  const data = (await getJson(`https://her-api.herhappyskin.com/hst-api/product-details/${slug}/1453456`)) as Json | null;
+  if (!isObject(data)) return [];
+  const sale = toTaka(data.discount_price);
+  const full = toTaka(data.price);
+  const size = /(\d+(?:\.\d+)?\s*(?:ml|g|pcs|oz))\b/i.exec(String(data.name ?? ""));
+  return variant(size ? [["size", size[1].replace(/\s+/g, "").toLowerCase()]] : [], sale && full && sale < full ? sale : full, full, typeof data.stock === "number" ? data.stock > 0 : null);
 }

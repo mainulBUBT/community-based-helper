@@ -3,7 +3,7 @@ export type SellerKind = "website" | "shop" | "group";
 export type Condition = "official" | "unofficial" | "used";
 export type OfferSource = "site" | "seller" | "user" | "admin";
 
-export const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color", "gpu", "cpu", "resolution", "battery", "capacity"] as const;
+export const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color", "gpu", "cpu", "resolution", "battery", "capacity", "wattage"] as const;
 export type Axis = (typeof AXES)[number];
 export type VariantAttributes = Partial<Record<Axis, string>>;
 
