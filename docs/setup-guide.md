@@ -163,6 +163,14 @@
 4. দুটো একসাথে দিন: Supabase এ captcha চালু কিন্তু site key ছাড়া build হলে কেউ লগইন করতে পারবে না; উল্টোটা হলে বক্স দেখাবে কিন্তু যাচাই হবে না।
 5. পরের build এর পরে লগইন আর "পাসওয়ার্ড ভুলে গেছেন" দুটোই একবার চালিয়ে দেখুন।
 
+## ধাপ ৯: দাম কমলে নোটিফিকেশন (Web Push, ফ্রি)
+
+1. লোকালে চালান: `npx web-push generate-vapid-keys`। দুটো key দেখাবে।
+2. Public Key: GitHub → Settings → Secrets and variables → Actions → **Variables** এ `VAPID_PUBLIC_KEY`।
+3. Private Key: একই জায়গায় **Secrets** এ `VAPID_PRIVATE_KEY`। এটা কোথাও কোডে বা `.env.local` এ রাখবেন না।
+4. `npm run db:push` (নতুন `price_alerts` migration), তারপর rebuild। সেভ করা পাতায় "চালু করুন" দেখাবে।
+5. Key পরে বদলালে আগের সবার নোটিফিকেশন বন্ধ হয়ে যাবে, তাই একবার বসিয়ে রেখে দিন।
+
 ## কোন key কোথায় থাকে
 
 | key | কোথায় | গোপন? |
@@ -171,6 +179,8 @@
 | Service / secret key | শুধু GitHub secret | **হ্যাঁ**, কখনো `.env.local` বা কোডে নয় |
 | DB password | `.env.local` | হ্যাঁ |
 | Cloudflare API token | GitHub secret | হ্যাঁ |
+| VAPID public key | GitHub variable, ব্রাউজারে যায় | না |
+| VAPID private key | শুধু GitHub secret | হ্যাঁ |
 | AI key, Telegram token, GitHub token | Supabase `private_settings` (শুধু অ্যাডমিন পড়তে পারে) | হ্যাঁ |
 
 ## খরচ আর সীমা (সব ফ্রি)

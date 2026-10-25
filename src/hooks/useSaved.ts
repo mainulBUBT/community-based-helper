@@ -2,7 +2,9 @@
 
 import { useSyncExternalStore } from "react";
 import { createStore } from "@/lib/create-store";
+import type { Lang } from "@/lib/preferences";
 import { showToast } from "@/lib/toast";
+import { syncAlert } from "@/services/price-alerts";
 
 const STORAGE_KEY = "saved-products";
 const NONE: string[] = [];
@@ -25,7 +27,7 @@ interface ToggleText {
   saveFailed: string;
 }
 
-function toggle(slug: string, text: ToggleText) {
+function toggle(slug: string, text: ToggleText, lang: Lang) {
   const slugs = savedStore.get();
   const saved = slugs.includes(slug);
   const next = saved ? slugs.filter((s) => s !== slug) : [slug, ...slugs];
@@ -37,6 +39,7 @@ function toggle(slug: string, text: ToggleText) {
     return;
   }
   showToast(saved ? text.removed : text.saved);
+  syncAlert(slug, !saved, lang).catch(() => {});
 }
 
 export function useSaved() {

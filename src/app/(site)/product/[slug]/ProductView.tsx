@@ -8,12 +8,14 @@ import { AlternativeCard } from "@/components/product/AlternativeCard";
 import { OffersTable } from "@/components/product/OffersTable";
 import { PriceChart } from "@/components/product/PriceChart";
 import { ProductGallery } from "@/components/product/ProductGallery";
+import { PriceAlertToggle } from "@/components/product/PriceAlertToggle";
 import { SaveButton } from "@/components/product/SaveButton";
 import { SellerLogo } from "@/components/seller/SellerLogo";
 import { VerifiedBadge } from "@/components/seller/VerifiedBadge";
 import { EmptyState } from "@/components/ui/EmptyState";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
+import { useSaved } from "@/hooks/useSaved";
 import { sharePage } from "@/lib/share";
 import type { RegionNote } from "@/types/admin";
 import { AXES, type Axis, type Condition, type OfferView, type ProductDetail, type SpecGroup, type Variant } from "@/types/catalog";
@@ -195,6 +197,7 @@ function SpecsPanel({ specs, source }: { specs: SpecGroup[]; source?: string | n
 export function ProductView({ initial, regionNotes }: { initial: ProductDetail; regionNotes: RegionNote[] }) {
   const { lang, t, num, ago, prefix } = useI18n();
   const { product, offers, history, category, alternatives } = initial;
+  const { slugs, isSaved } = useSaved();
   const { name: categoryName, warranty: hasWarranty } = useCategories();
   const warranty = category ? category.warranty !== false : hasWarranty(product.category);
   const categoryLabel = category ? (lang === "en" ? category.nameEn : category.name) : categoryName(product.category);
@@ -278,6 +281,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
               <SaveButton slug={product.slug} />
             </div>
           </div>
+          {isSaved(product.slug) && <PriceAlertToggle slugs={slugs} compact />}
 
           {highlights.length > 0 && (
             <ul className="grid gap-x-4 gap-y-1 text-[13px] text-ink sm:grid-cols-2">

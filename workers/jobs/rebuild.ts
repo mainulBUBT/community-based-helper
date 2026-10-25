@@ -1,12 +1,13 @@
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { db } from "../lib/db";
+import { sendPriceAlerts } from "../services/price-alerts";
 import { count } from "./summary";
 
 const exec = promisify(execFile);
 
 const buildEnv = { ...process.env };
-for (const secret of ["SUPABASE_SERVICE_KEY", "LLM_API_KEY", "CLOUDFLARE_API_TOKEN"]) delete buildEnv[secret];
+for (const secret of ["SUPABASE_SERVICE_KEY", "LLM_API_KEY", "CLOUDFLARE_API_TOKEN", "VAPID_PRIVATE_KEY"]) delete buildEnv[secret];
 
 async function sh(command: string, args: string[], env: NodeJS.ProcessEnv = process.env) {
   await exec(command, args, { env, maxBuffer: 64 * 1024 * 1024 }).catch((error: { stderr?: string; message: string }) => {
@@ -28,5 +29,6 @@ export async function rebuild(): Promise<string> {
     CLOUDFLARE_API_TOKEN,
     CLOUDFLARE_ACCOUNT_ID,
   });
-  return `${count(products ?? 0, "পণ্যের পেজ")} বানিয়ে deploy হয়েছে`;
+  const alerts = await sendPriceAlerts();
+  return `${count(products ?? 0, "পণ্যের পেজ")} বানিয়ে deploy হয়েছে${alerts ? `, ${alerts}` : ""}`;
 }

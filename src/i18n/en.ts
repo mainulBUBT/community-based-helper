@@ -239,6 +239,15 @@ export const en: Messages = {
     hint: "Tap the bookmark on any product to keep an eye on its price.",
     cta: "Find products",
   },
+  alerts: {
+    off: "Get a notification when a saved product gets cheaper",
+    on: "You'll get a notification when prices drop",
+    blocked: "Notifications are blocked for this site. Allow them in your browser settings to hear about price drops.",
+    install: "To get price-drop notifications on iPhone, tap Share, choose Add to Home Screen, then open the site from there.",
+    turnOn: "Turn on",
+    turnOff: "Turn off",
+    failed: "Couldn't turn on notifications, please try again",
+  },
   report: {
     title: "Seen a lower price?",
     product: "Product",

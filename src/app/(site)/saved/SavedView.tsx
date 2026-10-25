@@ -2,6 +2,7 @@
 
 import { Bookmark } from "lucide-react";
 import Link from "next/link";
+import { PriceAlertToggle } from "@/components/product/PriceAlertToggle";
 import { ProductCard } from "@/components/product/ProductCard";
 import { EmptyState } from "@/components/ui/EmptyState";
 import { ErrorNotice } from "@/components/ui/ErrorNotice";
@@ -32,11 +33,14 @@ export function SavedView() {
           </Link>
         </EmptyState>
       ) : (
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-          {saved.map((summary) => (
-            <ProductCard key={summary.product.id} summary={summary} />
-          ))}
-        </div>
+        <>
+          <PriceAlertToggle slugs={saved.map((s) => s.product.slug)} />
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            {saved.map((summary) => (
+              <ProductCard key={summary.product.id} summary={summary} />
+            ))}
+          </div>
+        </>
       )}
     </div>
   );

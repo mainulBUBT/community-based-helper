@@ -61,3 +61,32 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(networkFirst(request, () => caches.match("/offline/")));
   }
 });
+
+self.addEventListener("push", (event) => {
+  let data = {};
+  try {
+    data = event.data?.json() ?? {};
+  } catch {}
+  if (!data.title) return;
+  event.waitUntil(
+    self.registration.showNotification(data.title, {
+      body: data.body,
+      tag: data.tag,
+      icon: "/icons/icon-192.png",
+      badge: "/icons/icon-192.png",
+      data: { url: data.url },
+    }),
+  );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const path = event.notification.data?.url;
+  const target = new URL(typeof path === "string" && /^\/(?!\/)/.test(path) ? path : "/saved/", location.origin).href;
+  event.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((windows) => {
+      const open = windows.find((w) => w.url === target);
+      return open ? open.focus() : self.clients.openWindow(target);
+    }),
+  );
+});
