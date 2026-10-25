@@ -12,14 +12,14 @@ import { SaveButton } from "@/components/product/SaveButton";
 import { SellerLogo } from "@/components/seller/SellerLogo";
 import { VerifiedBadge } from "@/components/seller/VerifiedBadge";
 import { EmptyState } from "@/components/ui/EmptyState";
-import { useAsync } from "@/hooks/useAsync";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
 import { sharePage } from "@/lib/share";
-import { getProductDetail, getSiteSettings } from "@/services/catalog";
+import type { RegionNote } from "@/types/admin";
 import { AXES, type Axis, type Condition, type OfferView, type ProductDetail, type SpecGroup, type Variant } from "@/types/catalog";
 import { formatTaka, telLink } from "@/utils/format";
-import { hostOf } from "@/utils/url";
+import { primaryRegion } from "@/utils/region";
+import { categoryPath, hostOf } from "@/utils/url";
 import { keySpecs, specHighlights } from "@/utils/specs";
 import { sortAxisValues } from "@/utils/variants";
 
@@ -191,11 +191,11 @@ function SpecsPanel({ specs, source }: { specs: SpecGroup[]; source?: string | n
   );
 }
 
-export function ProductView({ initial }: { initial: ProductDetail }) {
+export function ProductView({ initial, regionNotes }: { initial: ProductDetail; regionNotes: RegionNote[] }) {
   const { lang, t, num, ago, prefix } = useI18n();
-  const { data } = useAsync(() => getProductDetail(initial.product.slug), [initial.product.slug], initial);
-  const { product, offers, history, category, alternatives } = data ?? initial;
-  const { name: categoryName } = useCategories();
+  const { product, offers, history, category, alternatives } = initial;
+  const { name: categoryName, warranty: hasWarranty } = useCategories();
+  const warranty = category ? category.warranty !== false : hasWarranty(product.category);
   const categoryLabel = category ? (lang === "en" ? category.nameEn : category.name) : categoryName(product.category);
   const [variantId, setVariantId] = useState(product.variants[0]?.id);
   const variant = product.variants.find((v) => v.id === variantId) ?? product.variants[0];
@@ -205,20 +205,19 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
   const conditions = CONDITIONS.filter((c) => variantOffers.some((o) => o.condition === c));
   const [chosen, setChosen] = useState<Condition | "all">("all");
   const condition: Condition | "all" = chosen === "all" || conditions.includes(chosen) ? chosen : "all";
-  const { data: settings } = useAsync(getSiteSettings, []);
-  const regions = [...new Set(variantOffers.map((o) => o.region).filter((r): r is string => Boolean(r)))].sort();
+  const regions = [...new Set(variantOffers.map((o) => primaryRegion(o.region)).filter((r): r is string => Boolean(r)))].sort();
   const [regionChoice, setRegion] = useState<string | null>(null);
   const region = regionChoice && regions.includes(regionChoice) ? regionChoice : null;
-  const regionNote = region ? settings?.regionNotes.find((n) => n.region.toLowerCase() === region.toLowerCase()) : undefined;
+  const regionNote = region ? regionNotes.find((n) => primaryRegion(n.region) === region) : undefined;
   const shown = variantOffers
-    .filter((o) => (region ? o.region === region : condition === "all" || o.condition === condition))
+    .filter((o) => (region ? primaryRegion(o.region) === region : condition === "all" || o.condition === condition))
     .sort((a, b) => a.price - b.price || (a.condition === b.condition ? 0 : a.condition === "official" ? -1 : b.condition === "official" ? 1 : 0));
   const best = shown[0];
   const samePriceCount = best ? shown.filter((o) => o.price === best.price).length : 0;
   const fullName = `${product.brand} ${product.name}`;
 
   const official = variant?.officialPrice ?? null;
-  const reference = best ? Math.max(best.oldPrice ?? 0, best.condition === "official" ? (official ?? 0) : 0) : 0;
+  const reference = best ? Math.max(best.oldPrice ?? 0, best.condition === "official" || !warranty ? (official ?? 0) : 0) : 0;
   const off = best && reference > best.price ? Math.round(((reference - best.price) / reference) * 100) : 0;
   const variantLowest = (id: string) => {
     const prices = offers.filter((o) => o.variantId === id && (condition === "all" || o.condition === condition)).map((o) => o.price);
@@ -240,11 +239,11 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
           {t.nav.home}
         </Link>
         <ChevronRight size={13} aria-hidden="true" />
-        <Link href={`${prefix}/search/?category=${product.category}`} className="hover:text-brand">
+        <Link href={categoryPath(prefix, product.category)} className="hover:text-brand">
           {categoryLabel}
         </Link>
         <ChevronRight size={13} aria-hidden="true" />
-        <Link href={`${prefix}/search/?category=${product.category}&brand=${encodeURIComponent(product.brand)}`} className="hover:text-brand">
+        <Link href={`${categoryPath(prefix, product.category)}?brand=${encodeURIComponent(product.brand)}`} className="hover:text-brand">
           {product.brand}
         </Link>
         <ChevronRight size={13} aria-hidden="true" />
@@ -308,7 +307,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
                 <VerifiedBadge verified={best.seller.verified} />
                 {official && official !== reference && (
                   <span className="text-dim">
-                    · {t.product.officialShort} {formatTaka(official, lang)}
+                    · {warranty ? t.product.officialShort : t.product.listPrice} {formatTaka(official, lang)}
                   </span>
                 )}
               </div>
@@ -320,7 +319,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
 
           {variant && product.variants.length > 1 && <VariantPicker variants={product.variants} current={variant} onPick={setVariantId} priceOf={variantLowest} />}
 
-          {conditions.length > 1 && (
+          {warranty && conditions.length > 1 && (
             <fieldset className="flex flex-col">
               <legend className="mb-2 text-sm text-dim">{t.product.condition}</legend>
               <div className="inline-flex w-fit flex-wrap rounded-md border border-line bg-surface-2 p-1">
@@ -357,7 +356,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
                     onClick={() => setRegion(r)}
                     className={`h-9 rounded-full border px-3.5 text-sm font-medium transition-colors ${region === r ? "border-brand bg-brand-soft text-brand-text" : "border-line hover:border-dim"}`}
                   >
-                    {r ?? t.product.allRegions} <span className="text-faint">({num(r ? variantOffers.filter((o) => o.region === r).length : variantOffers.length)})</span>
+                    {r ?? t.product.allRegions} <span className="text-faint">({num(r ? variantOffers.filter((o) => primaryRegion(o.region) === r).length : variantOffers.length)})</span>
                   </button>
                 ))}
               </div>
@@ -376,7 +375,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
             </p>
           )}
 
-          {shown.some((o) => o.condition === "unofficial") && (
+          {warranty && shown.some((o) => o.condition === "unofficial") && (
             <p className="rounded-md border border-gold/30 bg-gold-soft px-3.5 py-2.5 text-[13px] leading-relaxed text-gold-text">{needsNeir ? t.product.unofficialNeir : t.product.unofficialWarning}</p>
           )}
 
@@ -399,7 +398,7 @@ export function ProductView({ initial }: { initial: ProductDetail }) {
 
       {shown.length > 0 && (
         <Panel title={t.product.allPrices} subtitle={product.variants.length > 1 ? variantName : undefined} id="stores">
-          <OffersTable offers={shown} />
+          <OffersTable offers={shown} warranty={warranty} />
         </Panel>
       )}
 

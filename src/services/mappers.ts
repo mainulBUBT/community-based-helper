@@ -1,6 +1,7 @@
 import type { AuditEntry, Job, JobRun, ReviewItem } from "@/types/admin";
 import type { CategoryInfo, Offer, PricePoint, Product, Promo, Seller, SpecGroup, Variant, VariantAttributes } from "@/types/catalog";
 import { safeUrl } from "@/utils/url";
+import { canonicalRegion } from "@/utils/region";
 
 type Row = Record<string, unknown>;
 
@@ -23,6 +24,7 @@ export const toCategory = (row: Row): CategoryInfo => ({
   parent: str(row.parent),
   position: Number(row.position ?? 0),
   active: Boolean(row.active),
+  warranty: row.warranty !== false,
 });
 
 export const toProduct = (row: Row): Product => ({
@@ -38,11 +40,12 @@ export const toProduct = (row: Row): Product => ({
     .map(toVariant),
   images: ((row.images as string[] | undefined) ?? []).map((src) => safeUrl(src)).filter((src): src is string => Boolean(src)),
   colors: (row.colors as string[] | undefined) ?? [],
-  regions: (row.regions as string[] | undefined) ?? [],
+  regions: [...new Set(((row.regions as string[] | undefined) ?? []).map(canonicalRegion).filter((r): r is string => Boolean(r)))],
   description: str(row.description),
   descriptionEn: str(row.description_en),
   specs: Array.isArray(row.specs) ? (row.specs as SpecGroup[]) : [],
   specsSource: safeUrl(row.specs_source),
+  active: row.active !== false,
 });
 
 export const toSeller = (row: Row): Seller => ({
@@ -75,7 +78,7 @@ export const toOffer = (row: Row): Offer => ({
   variantId: String(row.variant_id),
   sellerId: String(row.seller_id),
   condition: row.condition as Offer["condition"],
-  region: str(row.region),
+  region: canonicalRegion(str(row.region)),
   price: Number(row.price),
   oldPrice: (row.old_price as number | null) ?? null,
   inStock: (row.in_stock as boolean | null) ?? null,
@@ -106,6 +109,9 @@ export const toReviewItem = (row: Row): ReviewItem => ({
   kind: row.kind as ReviewItem["kind"],
   payload: row.payload as Record<string, string>,
   createdAt: String(row.created_at),
+  status: row.status as ReviewItem["status"],
+  resolvedAt: str(row.resolved_at),
+  appliedAt: str(row.applied_at),
 });
 
 export const toJob = (row: Row): Job => ({

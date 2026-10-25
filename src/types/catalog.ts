@@ -16,6 +16,8 @@ export interface CategoryInfo {
   parent?: Category | null;
   position: number;
   active: boolean;
+  // false: ব্র্যান্ড ওয়ারেন্টি বলে কিছু নেই (স্কিনকেয়ার, জুতা), তাই অফিসিয়াল/আনঅফিসিয়াল ভাগ দেখানো হয় না
+  warranty?: boolean;
 }
 
 export interface SpecItem {
@@ -52,6 +54,7 @@ export interface Product {
   descriptionEn?: string | null;
   specs?: SpecGroup[];
   specsSource?: string | null;
+  active?: boolean;
 }
 
 export interface Seller {

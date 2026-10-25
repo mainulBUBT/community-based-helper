@@ -1,5 +1,6 @@
 import { findCheaperAlternatives } from "@/utils/alternatives";
 import { byPrice } from "@/utils/catalog";
+import type { SiteSettings } from "@/types/admin";
 import type { Alternative, CategoryInfo, Offer, OfferView, PricePoint, Product, ProductDetail, ProductSummary, Promo, Seller } from "@/types/catalog";
 
 export interface Catalog {
@@ -25,7 +26,9 @@ export function viewOffers(catalog: Catalog, offers: Offer[]): OfferView[] {
 export function summarize(catalog: Catalog, product: Product): ProductSummary {
   const variantIds = new Set(product.variants.map((v) => v.id));
   const offers = catalog.offers.filter((o) => variantIds.has(o.variantId));
-  const official = offers.filter((o) => o.condition === "official");
+  // ওয়ারেন্টি নেই এমন ক্যাটাগরিতে (স্কিনকেয়ার, জুতা) অফিসিয়াল/আনঅফিসিয়াল ভাগ নেই, সব দামই সমান
+  const warranty = catalog.categories.find((c) => c.slug === product.category)?.warranty !== false;
+  const official = warranty ? offers.filter((o) => o.condition === "official") : offers;
   const priced = official.length ? official : offers;
   const best = priced.length ? priced.reduce((a, b) => (b.price < a.price ? b : a)) : null;
   const lowest = best?.price ?? null;
@@ -75,6 +78,13 @@ export interface ComparePick {
   summary: ProductSummary;
   offers: OfferView[];
   variantLabel: string;
+}
+
+export interface HomeData {
+  summaries: ProductSummary[];
+  sellers: Seller[];
+  settings: SiteSettings;
+  comparison: ComparePick | null;
 }
 
 export type CatalogLoader = (fresh?: boolean) => Promise<Catalog>;
@@ -130,7 +140,7 @@ export function pickComparisons(catalog: Catalog, limit = 6): ComparePick[] {
     .slice(0, limit);
 }
 
-// প্রতি লোডে ভিন্ন একটা পণ্য দেখাতে। সার্ভারে চলে, তাই রেন্ডারের পিওরিটি নিয়ম ভাঙে না।
+// প্রতি build এ ভিন্ন একটা পণ্য দেখাতে। শুধু build এর সময় সার্ভারে চলে, ক্লায়েন্ট আবার বাছে না।
 export function pickOneComparison(catalog: Catalog): ComparePick | null {
   const picks = pickComparisons(catalog, 6);
   if (!picks.length) return null;

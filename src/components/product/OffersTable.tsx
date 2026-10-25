@@ -9,7 +9,7 @@ import { useI18n } from "@/hooks/useI18n";
 import type { OfferView } from "@/types/catalog";
 import { formatTaka, telLink } from "@/utils/format";
 
-function OfferRow({ offer, best }: { offer: OfferView; best: boolean }) {
+function OfferRow({ offer, best, warranty }: { offer: OfferView; best: boolean; warranty: boolean }) {
   const { t, ago, lang, prefix } = useI18n();
   const { seller } = offer;
   const link = offer.url ?? seller.website;
@@ -28,10 +28,14 @@ function OfferRow({ offer, best }: { offer: OfferView; best: boolean }) {
             </Link>
             <VerifiedBadge verified={seller.verified} />
           </span>
-          <Badge tone={offer.condition === "official" ? "ok" : offer.condition === "unofficial" ? "gold" : "neutral"}>
-            {t.condition[offer.condition]}
-            {offer.region ? ` (${offer.region})` : ""}
-          </Badge>
+          {warranty ? (
+            <Badge tone={offer.condition === "official" ? "ok" : offer.condition === "unofficial" ? "gold" : "neutral"}>
+              {t.condition[offer.condition]}
+              {offer.region ? ` (${offer.region})` : ""}
+            </Badge>
+          ) : (
+            offer.region && <Badge tone="neutral">{offer.region}</Badge>
+          )}
         </span>
       </div>
 
@@ -76,12 +80,12 @@ function OfferRow({ offer, best }: { offer: OfferView; best: boolean }) {
   );
 }
 
-export function OffersTable({ offers }: { offers: OfferView[] }) {
+export function OffersTable({ offers, warranty = true }: { offers: OfferView[]; warranty?: boolean }) {
   const lowest = offers.length ? Math.min(...offers.map((offer) => offer.price)) : null;
   return (
     <ul className="divide-y divide-line-soft">
       {offers.map((offer) => (
-        <OfferRow key={offer.id} offer={offer} best={offer.price === lowest} />
+        <OfferRow key={offer.id} offer={offer} best={offer.price === lowest} warranty={warranty} />
       ))}
     </ul>
   );

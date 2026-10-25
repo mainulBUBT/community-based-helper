@@ -7,17 +7,17 @@ import { ProductIcon } from "@/components/product/ProductIcon";
 import { SellerContact } from "@/components/seller/SellerContact";
 import { VerifiedBadge } from "@/components/seller/VerifiedBadge";
 import { Badge } from "@/components/ui/Badge";
-import { useAsync } from "@/hooks/useAsync";
+import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
-import { getSellerDetail } from "@/services/catalog";
+import type { getSellerDetail } from "@/services/catalog";
 import { formatTaka } from "@/utils/format";
 
 type Detail = NonNullable<Awaited<ReturnType<typeof getSellerDetail>>>;
 
 export function SellerView({ initial }: { initial: Detail }) {
   const { t, ago, prefix, lang } = useI18n();
-  const { data } = useAsync(() => getSellerDetail(initial.seller.id), [initial.seller.id], initial);
-  const { seller, listings, promos } = data ?? initial;
+  const { warranty } = useCategories();
+  const { seller, listings, promos } = initial;
 
   return (
     <div className="flex flex-col gap-5">
@@ -65,7 +65,7 @@ export function SellerView({ initial }: { initial: Detail }) {
                 <span className="truncate font-semibold">
                   {product.brand} {product.name}
                 </span>
-                <span className="text-[13px] text-dim">{[variant.label, t.condition[offer.condition], ago(offer.checkedAt)].join(", ")}</span>
+                <span className="text-[13px] text-dim">{[variant.label, warranty(product.category) && t.condition[offer.condition], ago(offer.checkedAt)].filter(Boolean).join(", ")}</span>
               </span>
               <span className="font-bold">{formatTaka(offer.price, lang)}</span>
             </Link>

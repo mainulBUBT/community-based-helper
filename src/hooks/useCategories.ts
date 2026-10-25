@@ -1,13 +1,8 @@
 "use client";
 
 import { useCategoryList } from "@/lib/categories";
-import type { Lang } from "@/lib/preferences";
-import type { CategoryInfo } from "@/types/catalog";
+import { categoryFamily, categoryName } from "@/utils/categories";
 import { useI18n } from "./useI18n";
-
-export const categoryName = (category: CategoryInfo | undefined, lang: Lang) => (category ? (lang === "en" ? category.nameEn : category.name) : "");
-
-export const categoryFamily = (categories: CategoryInfo[], slug: string) => [slug, ...categories.filter((c) => c.parent === slug).map((c) => c.slug)];
 
 export function useCategories() {
   const { lang } = useI18n();
@@ -20,5 +15,6 @@ export function useCategories() {
     family: (slug: string) => categoryFamily(categories, slug),
     find,
     name: (slug: string | null | undefined) => categoryName(find(slug), lang) || slug || "",
+    warranty: (slug: string | null | undefined) => find(slug)?.warranty !== false,
   };
 }

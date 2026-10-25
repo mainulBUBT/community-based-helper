@@ -1,4 +1,4 @@
-import type { CategoryInfo, Condition, SellerKind } from "@/types/catalog";
+import type { CategoryInfo } from "@/types/catalog";
 import type { SiteSettings } from "@/types/admin";
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://dordam.app").replace(/\/+$/, "");
@@ -51,17 +51,5 @@ export const DEFAULT_CATEGORIES: CategoryInfo[] = [
   { slug: "audio", name: "অডিও", nameEn: "Audio", icon: "headphones", axes: ["color"], position: 6, active: true },
   { slug: "earbuds", name: "ইয়ারবাড", nameEn: "Earbuds", icon: "headphones", axes: ["color"], parent: "audio", position: 7, active: true },
   { slug: "headphones", name: "হেডফোন", nameEn: "Headphones", icon: "headphones", axes: ["color"], parent: "audio", position: 8, active: true },
-  { slug: "skincare", name: "স্কিনকেয়ার", nameEn: "Skincare", icon: "sparkles", axes: ["capacity"], position: 13, active: true },
+  { slug: "skincare", name: "স্কিনকেয়ার", nameEn: "Skincare", icon: "sparkles", axes: ["capacity"], position: 13, active: true, warranty: false },
 ];
-
-export const CONDITION_LABEL: Record<Condition, string> = {
-  official: "অফিসিয়াল",
-  unofficial: "আনঅফিসিয়াল",
-  used: "ব্যবহৃত",
-};
-
-export const SELLER_KIND_LABEL: Record<SellerKind, string> = {
-  website: "অনলাইন দোকান",
-  shop: "দোকান",
-  group: "ফেসবুক গ্রুপ",
-};

@@ -1,4 +1,4 @@
-import { sampleCategories, sampleProducts } from "@/data/sample";
+import { loadSampleCatalog, sampleCategories } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
 import type { CategoryInfo } from "@/types/catalog";
 import { loadCatalog } from "../catalog-live";
@@ -12,7 +12,15 @@ export async function listAllCategories(): Promise<CategoryInfo[]> {
   return data.map(toCategory);
 }
 
-export async function saveCategory(category: CategoryInfo, isNew: boolean) {
+// নতুন সাব-ক্যাটাগরি মূল ভাগের ওয়ারেন্টি নেয় (স্কিনকেয়ারের নিচে নতুন ভাগেও ওয়ারেন্টি নেই)
+async function inheritWarranty(category: CategoryInfo): Promise<CategoryInfo> {
+  if (category.warranty !== undefined || !category.parent) return category;
+  const parent = (await listAllCategories()).find((c) => c.slug === category.parent);
+  return { ...category, warranty: parent?.warranty !== false };
+}
+
+export async function saveCategory(input: CategoryInfo, isNew: boolean) {
+  const category = isNew ? await inheritWarranty(input) : input;
   if (!supabase) {
     if (isNew) sampleCategories.push(category);
     else Object.assign(sampleCategories.find((c) => c.slug === category.slug)!, category);
@@ -26,6 +34,7 @@ export async function saveCategory(category: CategoryInfo, isNew: boolean) {
       variant_axes: category.axes,
       position: category.position,
       active: category.active,
+      warranty: category.warranty !== false,
     };
     const { error } = isNew ? await supabase.from("categories").insert(row) : await supabase.from("categories").update(row).eq("slug", category.slug);
     if (error) throw error;
@@ -35,7 +44,7 @@ export async function saveCategory(category: CategoryInfo, isNew: boolean) {
 }
 
 export async function countProducts(slug: string) {
-  if (!supabase) return sampleProducts.filter((p) => p.category === slug).length;
+  if (!supabase) return (await loadSampleCatalog()).sampleProducts.filter((p) => p.category === slug).length;
   const { count, error } = await supabase.from("products").select("id", { count: "exact", head: true }).eq("category", slug);
   if (error) throw error;
   return count ?? 0;

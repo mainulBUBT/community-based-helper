@@ -11,7 +11,7 @@ import { ErrorNotice } from "@/components/ui/ErrorNotice";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
-import { useAdminI18n } from "@/hooks/useI18n";
+import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { showToast } from "@/lib/toast";
 import { countChildren, countProducts, deleteCategory, listAllCategories, saveCategory } from "@/services/admin/categories";
 import { AXES, type Axis, type CategoryInfo } from "@/types/catalog";
@@ -159,6 +159,7 @@ export default function CategoriesPage() {
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.axes}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.products}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.active}</th>
+                  <th className="px-3 py-3 font-semibold">{t.admin.categories.warranty}</th>
                   <th className="px-5 py-3" />
                 </tr>
               </thead>
@@ -186,6 +187,16 @@ export default function CategoriesPage() {
                         disabled={busy}
                         onChange={async (active) => {
                           if (await run(() => saveCategory({ ...category, active }, false))) reload();
+                        }}
+                      />
+                    </td>
+                    <td className="px-3 py-3">
+                      <Toggle
+                        label={t.admin.categories.warranty}
+                        checked={category.warranty !== false}
+                        disabled={busy}
+                        onChange={async (warranty) => {
+                          if (await run(() => saveCategory({ ...category, warranty }, false))) reload();
                         }}
                       />
                     </td>
