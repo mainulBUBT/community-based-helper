@@ -2,7 +2,7 @@
 
 import { Clock, Search } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useId, useState, type KeyboardEvent } from "react";
+import { useId, useRef, useState, type KeyboardEvent } from "react";
 import { ProductIcon } from "@/components/product/ProductIcon";
 import { useI18n } from "@/hooks/useI18n";
 import { readRecent, rememberSearch } from "@/lib/recent-searches";
@@ -23,6 +23,7 @@ export function SearchBox({ defaultValue = "", variant = "bar", onSearch }: Sear
   const router = useRouter();
   const { t, lang, prefix } = useI18n();
   const listId = useId();
+  const input = useRef<HTMLInputElement>(null);
   const [text, setText] = useState(defaultValue);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(-1);
@@ -44,9 +45,11 @@ export function SearchBox({ defaultValue = "", variant = "bar", onSearch }: Sear
     if (!catalog.length) listSummaries().then(setCatalog, () => {});
   }
 
+  // মোবাইলে খোঁজার পরে কিবোর্ড নামিয়ে দেওয়া, যাতে ফল দেখা যায়
   function submit(value: string) {
     rememberSearch(value);
     setOpen(false);
+    input.current?.blur();
     if (onSearch) onSearch(value.trim());
     else router.push(`${prefix}/search/${value.trim() ? `?q=${encodeURIComponent(value.trim())}` : ""}`);
   }
@@ -59,6 +62,7 @@ export function SearchBox({ defaultValue = "", variant = "bar", onSearch }: Sear
     }
     rememberSearch(query);
     setOpen(false);
+    input.current?.blur();
     router.push(`${prefix}/product/${option.summary.product.slug}/`);
   }
 
@@ -91,7 +95,9 @@ export function SearchBox({ defaultValue = "", variant = "bar", onSearch }: Sear
       >
         <Search size={18} className="shrink-0 text-dim" aria-hidden="true" />
         <input
+          ref={input}
           type="search"
+          enterKeyHint="search"
           role="combobox"
           aria-label={t.search.label}
           aria-expanded={showList}
