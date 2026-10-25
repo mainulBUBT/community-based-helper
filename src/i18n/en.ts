@@ -53,8 +53,8 @@ export const en: Messages = {
     days: (n) => `${plural(n, "day")} ago`,
   },
   home: {
-    heroTitle: "See every shop's price at a glance",
-    heroEyebrow: "Prices from every shop in Bangladesh, in one place",
+    heroTitle: "See each shop's price at a glance",
+    heroEyebrow: "Prices from trusted shops in Bangladesh, in one place",
     heroSub: "Compare prices, switch shops, and know your real savings before you buy.",
     heroPrimary: "Compare prices",
     heroSecondary: "Today's best deals",
@@ -100,7 +100,7 @@ export const en: Messages = {
     },
   },
   footer: {
-    tagline: "Prices from shops across Bangladesh, side by side",
+    tagline: "Prices from trusted shops in Bangladesh, side by side",
     categories: "Categories",
     explore: "Explore",
     contact: "Contact",
