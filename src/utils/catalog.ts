@@ -67,7 +67,7 @@ export interface DayRange {
 
 // প্রতিদিন প্রতিটা দোকানের তখনকার দাম (শেষ বদলের দাম চলতে থাকে) থেকে সেদিনের সবচেয়ে কম আর বেশি।
 // ইতিহাসে শুধু দাম বদলের দিন থাকে; কোনো দোকানের সময়সীমার ভেতরে বদল না থাকলে তার এখনকার দামই পুরো সময় ধরা হয়
-export function dailyRange(history: PricePoint[], offers: { id: string; price: number }[], days = 30, now = Date.now()): DayRange[] {
+export function dailyRange(history: PricePoint[], offers: { id: string; price: number; inStock?: boolean | null }[], days = 30, now = Date.now()): DayRange[] {
   const start = now - days * 86400000;
   const dayOf = (iso: string) => Math.floor((new Date(iso).getTime() - start) / 86400000);
   const changes = new Map<string, { day: number; price: number }[]>();
@@ -78,15 +78,18 @@ export function dailyRange(history: PricePoint[], offers: { id: string; price: n
   }
   const series = offers.map((offer) => {
     const list = (changes.get(offer.id) ?? []).sort((a, b) => a.day - b.day);
-    return { id: offer.id, list: list.length ? list : [{ day: 0, price: offer.price }] };
+    return { id: offer.id, out: offer.inStock === false, list: list.length ? list : [{ day: 0, price: offer.price }] };
   });
+  // আগের দিনের স্টক জানা নেই, তাই শুধু আজকের দিনে "আপাতত নেই" দোকান বাদ (সব দোকানে না থাকলে বাদ নয়)
+  const skipOut = series.some((s) => !s.out);
   const result: DayRange[] = [];
   for (let day = 0; day <= days; day++) {
     let low = Infinity;
     let high = -Infinity;
     let lowOfferId = "";
     let shops = 0;
-    for (const { id, list } of series) {
+    for (const { id, out, list } of series) {
+      if (day === days && out && skipOut) continue;
       const current = list.filter((c) => c.day <= day).at(-1);
       if (!current) continue;
       shops++;

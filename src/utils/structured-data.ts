@@ -4,7 +4,8 @@ import type { OfferView, Product } from "@/types/catalog";
 const absolute = (path: string) => new URL(path, SITE_URL).href;
 
 export function productData(product: Product, offers: OfferView[], path: string, description: string, alternateName: string | null = null) {
-  const prices = offers.map((o) => o.price);
+  const available = offers.filter((o) => o.inStock !== false);
+  const prices = (available.length ? available : offers).map((o) => o.price);
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -21,6 +22,7 @@ export function productData(product: Product, offers: OfferView[], path: string,
         lowPrice: Math.min(...prices),
         highPrice: Math.max(...prices),
         offerCount: offers.length,
+        availability: available.length ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       },
     }),
   };
