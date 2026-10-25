@@ -1,7 +1,8 @@
 "use client";
 
 import { ArrowDownRight, ArrowUpRight, Minus } from "lucide-react";
-import { useEffect, useRef, useState, type PointerEvent, type ReactNode } from "react";
+import { useState, type PointerEvent, type ReactNode } from "react";
+import { useElementWidth } from "@/hooks/useElementWidth";
 import { useI18n } from "@/hooks/useI18n";
 import type { OfferView, PricePoint } from "@/types/catalog";
 import { dailyRange, type DayRange } from "@/utils/catalog";
@@ -13,19 +14,6 @@ const TOP = 12;
 const BOTTOM = 26;
 const DAY_MS = 86400000;
 const INSET = 8;
-
-function useWidth() {
-  const ref = useRef<HTMLDivElement>(null);
-  const [width, setWidth] = useState(0);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new ResizeObserver(([entry]) => setWidth(Math.round(entry.contentRect.width)));
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-  return { ref, width };
-}
 
 function Tile({ label, value, note }: { label: string; value: ReactNode; note?: string }) {
   return (
@@ -64,7 +52,7 @@ function Change({ from, to }: { from: number; to: number }) {
 
 export function PriceChart({ history, offers }: { history: PricePoint[]; offers: OfferView[] }) {
   const { t, num, lang } = useI18n();
-  const { ref, width } = useWidth();
+  const { ref, width } = useElementWidth();
   const [hover, setHover] = useState<number | null>(null);
   // বিল্ড-টাইম আর দেখার সময় আলাদা হয় বলে now ডেটা থেকে আসে — না হলে SVG/লেবেল hydration মিসম্যাচ করে।
   const [now] = useState(() => Math.max(0, ...history.map((p) => Date.parse(p.seenAt)), ...offers.map((o) => Date.parse(o.checkedAt))));

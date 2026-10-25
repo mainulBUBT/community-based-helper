@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { PageTitle, Panel, StatCard } from "@/components/admin/Panel";
 import { RankTable } from "@/components/admin/RankTable";
+import { Tabs } from "@/components/admin/Tabs";
 import { VisitorChart } from "@/components/admin/VisitorChart";
 import { Chip } from "@/components/ui/Chip";
 import { ListSkeleton } from "@/components/ui/Skeleton";
@@ -13,18 +14,29 @@ import type { Breakdown } from "@/types/admin";
 import { safeUrl } from "@/utils/url";
 
 const RANGES = [7, 30, 90];
+const TABS = ["overview", "content", "searches", "audience", "sources"] as const;
+type Tab = (typeof TABS)[number];
 
 const flag = (code: string) => String.fromCodePoint(...[...code].map((c) => 0x1f1a5 + c.charCodeAt(0)));
+
+const pageLink = (path: string, label = path) =>
+  safeUrl(path, { relative: true }) ? (
+    <a href={path} target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-brand">
+      {label}
+    </a>
+  ) : (
+    <span className="font-semibold text-dim">{label}</span>
+  );
 
 export default function VisitorsPage() {
   const { t, num, lang } = useAdminI18n();
   const [days, setDays] = useState(30);
+  const [tab, setTab] = useState<Tab>("overview");
   const { data, loading } = useAsync(async () => {
     const [stats, pages, insights] = await Promise.all([loadDayStats(days), loadTopPages(days), loadInsights(days)]);
     return { stats, pages, insights };
   }, [days]);
 
-  const totals = data?.stats.reduce((sum, s) => ({ views: sum.views + s.views, visitors: sum.visitors + s.visitors }), { views: 0, visitors: 0 });
   const countryName = (code: string | null) => {
     if (!code) return t.admin.visitors.unknown;
     try {
@@ -33,13 +45,101 @@ export default function VisitorsPage() {
       return code;
     }
   };
+  const deviceName = (d: string | null) => (d ? (t.admin.visitors.device[d as keyof typeof t.admin.visitors.device] ?? d) : t.admin.visitors.unknown);
   const rows = (items: Breakdown[], label: (key: string | null) => string) => items.map((item) => ({ key: item.key ?? "-", label: label(item.key), views: item.views, visitors: item.visitors }));
+  const seeAll = (target: Tab) => (
+    <button type="button" onClick={() => setTab(target)} className="text-sm font-semibold text-brand-text hover:underline">
+      {t.admin.visitors.seeAll}
+    </button>
+  );
+
+  const body = () => {
+    if (loading || !data) return <ListSkeleton />;
+    const { stats, pages, insights } = data;
+    const views = stats.reduce((sum, s) => sum + s.views, 0);
+    const dailyVisitors = stats.reduce((sum, s) => sum + s.visitors, 0);
+    const products = insights.products.map((p) => ({ key: p.slug, label: pageLink(`/product/${p.slug}/`, p.key ?? p.slug), views: p.views, visitors: p.visitors }));
+    const countries = rows(insights.countries, countryName);
+
+    switch (tab) {
+      case "overview":
+        return (
+          <>
+            <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+              <StatCard
+                label={t.admin.visitors.totalViews}
+                value={num(views.toLocaleString("en-IN"))}
+                hint={insights.visitors ? `${t.admin.visitors.perVisitor}: ${num((views / insights.visitors).toFixed(1))}` : undefined}
+              />
+              <StatCard label={t.admin.visitors.uniqueVisitors} value={num(insights.visitors.toLocaleString("en-IN"))} />
+              <StatCard
+                label={t.admin.visitors.returning}
+                value={num(insights.returning.toLocaleString("en-IN"))}
+                hint={insights.visitors ? t.admin.visitors.returningShare(num(Math.round((insights.returning / insights.visitors) * 100))) : t.admin.visitors.returningHint}
+              />
+              <StatCard label={t.admin.visitors.avgVisitors} value={num(Math.round(dailyVisitors / days))} tone="brand" />
+            </div>
+            <Panel title={t.admin.visitors.byDay}>
+              <div className="p-5">
+                <VisitorChart stats={stats} days={days} />
+              </div>
+            </Panel>
+            <div className="grid gap-6 lg:grid-cols-2">
+              <Panel title={t.admin.visitors.products} action={products.length > 5 && seeAll("content")}>
+                <RankTable rows={products} limit={5} />
+              </Panel>
+              <Panel title={t.admin.visitors.countries} action={countries.length > 5 && seeAll("audience")}>
+                <RankTable rows={countries} limit={5} share />
+              </Panel>
+            </div>
+            <details className="rounded-2xl border border-line-soft bg-surface px-5 py-4 text-sm">
+              <summary className="cursor-pointer font-semibold">{t.admin.visitors.howTitle}</summary>
+              <p className="mt-2 text-dim">{t.admin.visitors.howCounted}</p>
+            </details>
+          </>
+        );
+      case "content":
+        return (
+          <div className="grid gap-6 xl:grid-cols-2">
+            <Panel title={t.admin.visitors.products}>
+              <RankTable rows={products} />
+            </Panel>
+            <Panel title={t.admin.visitors.topPages}>
+              <RankTable rows={pages.map((p) => ({ key: p.path, label: pageLink(p.path), views: p.views, visitors: p.visitors }))} />
+            </Panel>
+          </div>
+        );
+      case "searches":
+        return (
+          <Panel title={t.admin.visitors.searches}>
+            <RankTable rows={rows(insights.searches, (q) => q ?? "")} countLabel={t.admin.visitors.colTimes} />
+          </Panel>
+        );
+      case "audience":
+        return (
+          <div className="grid gap-6 lg:grid-cols-2">
+            <Panel title={t.admin.visitors.countries}>
+              <RankTable rows={countries} share />
+            </Panel>
+            <Panel title={t.admin.visitors.devices}>
+              <RankTable rows={rows(insights.devices, deviceName)} share />
+            </Panel>
+          </div>
+        );
+      case "sources":
+        return (
+          <Panel title={t.admin.visitors.referrers}>
+            <p className="border-b border-line-soft px-5 py-3 text-xs text-dim">{t.admin.visitors.referrersHint}</p>
+            <RankTable rows={rows(insights.referrers, (r) => r ?? "")} share />
+          </Panel>
+        );
+    }
+  };
 
   return (
     <>
       <PageTitle
         title={t.admin.visitors.title}
-        subtitle={t.admin.visitors.howCounted}
         action={
           <div className="flex gap-2">
             {RANGES.map((range) => (
@@ -50,82 +150,10 @@ export default function VisitorsPage() {
           </div>
         }
       />
-      {loading || !data || !totals ? (
-        <ListSkeleton />
-      ) : (
-        <div className="flex flex-col gap-6">
-          <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-            <StatCard label={t.admin.visitors.totalViews} value={num(totals.views.toLocaleString("en-IN"))} />
-            <StatCard label={t.admin.visitors.uniqueVisitors} value={num(data.insights.visitors.toLocaleString("en-IN"))} />
-            <StatCard label={t.admin.visitors.returning} value={num(data.insights.returning.toLocaleString("en-IN"))} hint={t.admin.visitors.returningHint} />
-            <StatCard label={t.admin.visitors.avgVisitors} value={num(Math.round(totals.visitors / Math.max(1, data.stats.length)))} tone="brand" />
-          </div>
-          <Panel title={t.admin.visitors.byDay}>
-            <div className="p-5">
-              <VisitorChart stats={data.stats} />
-            </div>
-          </Panel>
-          <div className="grid gap-6 lg:grid-cols-2">
-            <Panel title={t.admin.visitors.products}>
-              <RankTable
-                rows={data.insights.products.map((p) => ({
-                  key: p.slug,
-                  label: (
-                    <a href={`/product/${p.slug}/`} target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-brand">
-                      {p.key}
-                    </a>
-                  ),
-                  views: p.views,
-                  visitors: p.visitors,
-                }))}
-              />
-            </Panel>
-            <Panel title={t.admin.visitors.searches}>
-              <RankTable rows={rows(data.insights.searches, (q) => q ?? "")} countLabel={t.admin.visitors.colTimes} />
-            </Panel>
-            <Panel title={t.admin.visitors.countries}>
-              <RankTable rows={rows(data.insights.countries, countryName)} />
-            </Panel>
-            <Panel title={t.admin.visitors.devices}>
-              <RankTable rows={rows(data.insights.devices, (d) => (d ? t.admin.visitors.device[d as keyof typeof t.admin.visitors.device] ?? d : t.admin.visitors.unknown))} />
-            </Panel>
-            <Panel title={t.admin.visitors.referrers}>
-              <p className="border-b border-line-soft px-5 py-2 text-xs text-dim">{t.admin.visitors.referrersHint}</p>
-              <RankTable rows={rows(data.insights.referrers, (r) => r ?? "")} />
-            </Panel>
-          </div>
-          <Panel title={t.admin.visitors.topPages}>
-            <div className="overflow-x-auto">
-              <table className="w-full min-w-[480px] text-left text-[15px]">
-                <thead className="text-[13px] text-dim">
-                  <tr>
-                    <th className="px-5 py-3 font-semibold">{t.admin.visitors.colPage}</th>
-                    <th className="px-3 py-3 font-semibold">{t.admin.visitors.colViews}</th>
-                    <th className="px-5 py-3 font-semibold">{t.admin.visitors.colVisitors}</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-line-soft">
-                  {data.pages.map((page) => (
-                    <tr key={page.path}>
-                      <td className="px-5 py-3">
-                        {safeUrl(page.path, { relative: true }) ? (
-                          <a href={page.path} target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-brand">
-                            {page.path}
-                          </a>
-                        ) : (
-                          <span className="font-semibold text-dim">{page.path}</span>
-                        )}
-                      </td>
-                      <td className="px-3 py-3">{num(page.views)}</td>
-                      <td className="px-5 py-3">{num(page.visitors)}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </Panel>
-        </div>
-      )}
+      <Tabs tabs={TABS.map((id) => ({ id, label: t.admin.visitors.tabs[id] }))} active={tab} onChange={setTab} label={t.admin.visitors.title} idPrefix="visitors" />
+      <div role="tabpanel" id={`visitors-${tab}`} className="mt-6 flex flex-col gap-6">
+        {body()}
+      </div>
     </>
   );
 }

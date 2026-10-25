@@ -117,7 +117,7 @@ export default function DashboardPage() {
           }
         >
           <div className="p-5">
-            <VisitorChart stats={stats} />
+            <VisitorChart stats={stats} days={14} />
           </div>
         </Panel>
         <Panel

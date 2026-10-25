@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent, type ReactNode } from "react";
 import { Field } from "@/components/admin/Field";
+import { Tabs } from "@/components/admin/Tabs";
 import { PageTitle, Panel, primaryButton } from "@/components/admin/Panel";
 import { AboutPanel } from "@/components/admin/settings/AboutPanel";
 import { BusinessPanel } from "@/components/admin/settings/BusinessPanel";
@@ -114,21 +115,7 @@ function SettingsForm({ initial }: { initial: SiteSettings }) {
       }}
       className="flex flex-col gap-6"
     >
-      <div role="tablist" aria-label={t.admin.settings.title} className="no-scrollbar -mx-1 flex gap-1 overflow-x-auto border-b border-line px-1">
-        {TABS.map((id) => (
-          <button
-            key={id}
-            type="button"
-            role="tab"
-            aria-selected={tab === id}
-            aria-controls={`settings-${id}`}
-            onClick={() => setTab(id)}
-            className={`-mb-px h-11 shrink-0 border-b-2 px-4 text-sm font-semibold whitespace-nowrap transition-colors ${tab === id ? "border-brand text-brand" : "border-transparent text-dim hover:text-ink"}`}
-          >
-            {labels[id]}
-          </button>
-        ))}
-      </div>
+      <Tabs tabs={TABS.map((id) => ({ id, label: labels[id] }))} active={tab} onChange={setTab} label={t.admin.settings.title} idPrefix="settings" />
 
       <TabPanel id="business" active={tab}>
         <BusinessPanel initial={initial} />
