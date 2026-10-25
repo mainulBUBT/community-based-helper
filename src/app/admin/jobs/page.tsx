@@ -159,7 +159,7 @@ function JobsPanel() {
   );
 }
 
-function SettingsForm({ initial }: { initial: PrivateSettings }) {
+function SettingsForm({ initial, onSaved }: { initial: PrivateSettings; onSaved: () => void }) {
   const { t } = useAdminI18n();
   const [busy, setBusy] = useState(false);
   const [testResult, setTestResult] = useState("");
@@ -183,6 +183,7 @@ function SettingsForm({ initial }: { initial: PrivateSettings }) {
     try {
       await savePrivateSettings(read(event.currentTarget), t.admin.jobs.auditSection);
       showToast(t.admin.common.saved);
+      onSaved();
     } catch {
       showToast(t.admin.common.saveFailed);
     } finally {
@@ -291,14 +292,15 @@ function SettingsForm({ initial }: { initial: PrivateSettings }) {
 
 export default function JobsAdminPage() {
   const { t } = useAdminI18n();
-  const { data } = useAsync(loadPrivateSettings, []);
+  const { data, reload } = useAsync(loadPrivateSettings, []);
   return (
     <>
       <PageTitle title={t.admin.jobs.title} />
       <div className="flex flex-col gap-6">
         <FlowPanel />
         <JobsPanel />
-        {data ? <SettingsForm initial={data} /> : <ListSkeleton rows={2} />}
+        {/* সেভের পরে নতুন ঢাকা key দেখাতে ফর্ম আবার বসে, key এর ঘর খালি হয় */}
+        {data ? <SettingsForm key={JSON.stringify(data)} initial={data} onSaved={reload} /> : <ListSkeleton rows={2} />}
       </div>
     </>
   );
