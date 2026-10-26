@@ -6,10 +6,13 @@ import { SellerLogo } from "@/components/seller/SellerLogo";
 import { VerifiedBadge } from "@/components/seller/VerifiedBadge";
 import { Badge } from "@/components/ui/Badge";
 import { useI18n } from "@/hooks/useI18n";
-import type { OfferView } from "@/types/catalog";
+import type { Condition, OfferView } from "@/types/catalog";
+import { conditionLabel } from "@/utils/categories";
 import { formatTaka, telLink } from "@/utils/format";
 
-function OfferRow({ offer, best, warranty }: { offer: OfferView; best: boolean; warranty: boolean }) {
+const TONE: Partial<Record<Condition, "ok" | "gold" | "brand">> = { official: "ok", unofficial: "gold", replica_premium: "brand" };
+
+function OfferRow({ offer, best, warranty, showCondition }: { offer: OfferView; best: boolean; warranty: boolean; showCondition: boolean }) {
   const { t, ago, lang, prefix } = useI18n();
   const { seller } = offer;
   const link = offer.url ?? seller.website;
@@ -28,9 +31,9 @@ function OfferRow({ offer, best, warranty }: { offer: OfferView; best: boolean; 
             </Link>
             <VerifiedBadge verified={seller.verified} />
           </span>
-          {warranty ? (
-            <Badge tone={offer.condition === "official" ? "ok" : offer.condition === "unofficial" ? "gold" : "neutral"}>
-              {t.condition[offer.condition]}
+          {showCondition ? (
+            <Badge tone={TONE[offer.condition] ?? "neutral"}>
+              {conditionLabel(t, offer.condition, warranty)}
               {offer.region ? ` (${offer.region})` : ""}
             </Badge>
           ) : (
@@ -80,12 +83,12 @@ function OfferRow({ offer, best, warranty }: { offer: OfferView; best: boolean; 
   );
 }
 
-export function OffersTable({ offers, warranty = true }: { offers: OfferView[]; warranty?: boolean }) {
+export function OffersTable({ offers, warranty, showCondition }: { offers: OfferView[]; warranty: boolean; showCondition: boolean }) {
   const lowest = offers.length ? Math.min(...offers.map((offer) => offer.price)) : null;
   return (
     <ul className="divide-y divide-line-soft">
       {offers.map((offer) => (
-        <OfferRow key={offer.id} offer={offer} best={offer.price === lowest} warranty={warranty} />
+        <OfferRow key={offer.id} offer={offer} best={offer.price === lowest} warranty={warranty} showCondition={showCondition} />
       ))}
     </ul>
   );

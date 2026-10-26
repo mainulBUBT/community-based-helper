@@ -27,18 +27,23 @@ export async function pageMeta({ lang, path, title: fullTitle, shortTitle, descr
   const isEn = lang === "en";
   const url = isEn ? toEnPath(path) : path;
   const siteName = (isEn && settings.nameEn) || settings.name;
-  const title = fullTitle && shortTitle && `${fullTitle} | ${siteName}`.length > MAX_TITLE ? shortTitle : fullTitle;
+  const fits = (text: string) => `${text} | ${siteName}`.length <= MAX_TITLE;
+  const title = fullTitle && shortTitle && !fits(fullTitle) ? shortTitle : fullTitle;
+  // ছোট শিরোনামও না ধরলে সাইটের নাম বাদ, যাতে পণ্যের নামটা কাটা না পড়ে
+  const dropSiteName = Boolean(title && shortTitle && title === shortTitle && !fits(title));
   const shownTitle = title ?? ((isEn && settings.seoTitleEn) || settings.seoTitle);
+  // শেয়ারের প্রিভিউতেও সাইটের নাম, ব্রাউজারের ট্যাবের মতো
+  const shareTitle = title && !dropSiteName ? `${title} | ${siteName}` : shownTitle;
   const shownDescription = description ?? ((isEn && settings.seoDescriptionEn) || settings.seoDescription);
   const images = [image ? { url: image, alt: shownTitle } : { url: "/icons/icon-512.png", width: 512, height: 512, alt: siteName }];
   return {
-    ...(title ? { title } : { title: { absolute: shownTitle } }),
+    ...(title && !dropSiteName ? { title } : { title: { absolute: shownTitle } }),
     description: shownDescription,
     ...(!index && { robots: { index: false, follow: true } }),
     alternates: { canonical: url, languages: { bn: path, en: toEnPath(path), "x-default": path } },
     openGraph: {
       type: "website",
-      title: shownTitle,
+      title: shareTitle,
       description: shownDescription,
       url,
       siteName,
@@ -46,6 +51,6 @@ export async function pageMeta({ lang, path, title: fullTitle, shortTitle, descr
       alternateLocale: isEn ? "bn_BD" : "en_US",
       images,
     },
-    twitter: { card: image ? "summary_large_image" : "summary", title: shownTitle, description: shownDescription, images: images.map((i) => i.url) },
+    twitter: { card: image ? "summary_large_image" : "summary", title: shareTitle, description: shownDescription, images: images.map((i) => i.url) },
   };
 }

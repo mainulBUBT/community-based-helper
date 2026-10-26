@@ -16,7 +16,8 @@ import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { useListSearch } from "@/hooks/useListSearch";
 import { showToast } from "@/lib/toast";
 import { countChildren, countProducts, deleteCategory, listAllCategories, saveCategory } from "@/services/admin/categories";
-import { AXES, type Axis, type CategoryInfo } from "@/types/catalog";
+import { AXES, CONDITIONS, type Axis, type CategoryInfo, type Condition } from "@/types/catalog";
+import { categoryConditions, conditionLabel } from "@/utils/categories";
 
 async function loadData() {
   const categories = await listAllCategories();
@@ -39,6 +40,7 @@ function CategoryForm({
   const { t } = useAdminI18n();
   const { busy, run } = useAdminAction();
   const [axes, setAxes] = useState<Axis[]>(category.axes);
+  const [conditions, setConditions] = useState<Condition[]>(categoryConditions(category));
   const [parent, setParent] = useState<string>(category.parent ?? "");
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
@@ -58,6 +60,8 @@ function CategoryForm({
       parent: parent || null,
       position: Number(form.get("position")) || 0,
       active: category.active,
+      warranty: category.warranty,
+      conditions: CONDITIONS.filter((c) => conditions.includes(c)),
     };
     if (await run(() => saveCategory(next, isNew), t.admin.common.saved)) onClose(true);
   }
@@ -104,6 +108,27 @@ function CategoryForm({
           })}
         </div>
         <span className="text-xs text-dim">{t.admin.categories.axesHint}</span>
+      </fieldset>
+      <fieldset className="flex flex-col gap-2 md:col-span-3">
+        <legend className="mb-1.5 text-sm font-semibold">{t.admin.categories.conditions}</legend>
+        <div className="flex flex-wrap gap-2">
+          {CONDITIONS.map((condition) => {
+            const on = conditions.includes(condition);
+            return (
+              <label key={condition} className={`flex h-10 cursor-pointer items-center gap-2 rounded-lg border px-3 text-sm ${on ? "border-brand bg-brand-soft font-semibold" : "border-line"}`}>
+                <input
+                  type="checkbox"
+                  checked={on}
+                  disabled={on && conditions.length === 1}
+                  onChange={() => setConditions(on ? conditions.filter((c) => c !== condition) : [...conditions, condition])}
+                  className="size-4 accent-[var(--color-brand)]"
+                />
+                {conditionLabel(t, condition, category.warranty !== false)}
+              </label>
+            );
+          })}
+        </div>
+        <span className="text-xs text-dim">{t.admin.categories.conditionsHint}</span>
       </fieldset>
       <div className="flex gap-2 md:col-span-3">
         <button type="submit" disabled={busy} className={primaryButton}>
@@ -163,9 +188,11 @@ export default function CategoriesPage() {
                   <th className="px-5 py-3 font-semibold">{t.admin.products.colCategory}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.parent}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.axes}</th>
+                  <th className="px-3 py-3 font-semibold">{t.admin.categories.conditions}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.products}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.active}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.warranty}</th>
+                  <th className="px-3 py-3 font-semibold">{t.admin.categories.verifyNote}</th>
                   <th className="px-5 py-3" />
                 </tr>
               </thead>
@@ -185,6 +212,7 @@ export default function CategoriesPage() {
                     </td>
                     <td className="px-3 py-3 text-[13px] text-dim">{parentOf(category.parent) || "—"}</td>
                     <td className="px-3 py-3 text-[13px] text-dim">{category.axes.map((axis) => t.axis[axis]).join(", ") || "—"}</td>
+                    <td className="px-3 py-3 text-[13px] text-dim">{categoryConditions(category).map((c) => conditionLabel(t, c, category.warranty !== false)).join(", ")}</td>
                     <td className="px-3 py-3">{num(products)}</td>
                     <td className="px-3 py-3">
                       <Toggle
@@ -203,6 +231,16 @@ export default function CategoriesPage() {
                         disabled={busy}
                         onChange={async (warranty) => {
                           if (await run(() => saveCategory({ ...category, warranty }, false))) reload();
+                        }}
+                      />
+                    </td>
+                    <td className="px-3 py-3">
+                      <Toggle
+                        label={t.admin.categories.verifyNote}
+                        checked={category.verifyNote === true}
+                        disabled={busy}
+                        onChange={async (verifyNote) => {
+                          if (await run(() => saveCategory({ ...category, verifyNote }, false))) reload();
                         }}
                       />
                     </td>

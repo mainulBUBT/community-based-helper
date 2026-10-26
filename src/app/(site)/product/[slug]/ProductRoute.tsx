@@ -26,7 +26,8 @@ function describe({ product, offers }: ProductDetail, lang: Lang) {
   const name = `${product.brand} ${product.name}`;
   const lowest = offers[0]?.price;
   const shops = new Set(offers.map((o) => o.sellerId)).size;
-  return lowest ? seo.productFrom(name, formatTaka(lowest, lang), lang === "bn" ? toBnDigits(shops) : String(shops)) : seo.productNoPrice(name);
+  const variants = product.variants.length > 1 ? product.variants.map((v) => v.label).join(", ") : "";
+  return lowest ? seo.productFrom(name, formatTaka(lowest, lang), lang === "bn" ? toBnDigits(shops) : String(shops)) : seo.productNoPrice(name, variants);
 }
 
 export async function productMetadata(slug: string, lang: Lang): Promise<Metadata> {

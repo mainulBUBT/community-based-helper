@@ -1,5 +1,6 @@
 import { findCheaperAlternatives } from "@/utils/alternatives";
 import { byPrice, byStock } from "@/utils/catalog";
+import { isReplica } from "@/utils/categories";
 import type { SiteSettings } from "@/types/admin";
 import type { Alternative, CategoryInfo, Offer, OfferView, PricePoint, Product, ProductDetail, ProductSummary, Promo, Seller } from "@/types/catalog";
 
@@ -35,12 +36,14 @@ export function summarize(catalog: Catalog, product: Product): ProductSummary {
   const priced = official.length ? official : pool;
   const best = priced.length ? priced.reduce((a, b) => (b.price < a.price ? b : a)) : null;
   const lowest = best?.price ?? null;
-  const listPrice = best ? product.variants.find((v) => v.id === best.variantId)?.officialPrice : null;
+  // কপির দামের পাশে আসল জুতার নির্ধারিত দাম দেখিয়ে "ছাড়" বলা যায় না
+  const listPrice = best && !isReplica(best.condition) ? product.variants.find((v) => v.id === best.variantId)?.officialPrice : null;
   const reference = Math.max(best?.oldPrice ?? 0, listPrice ?? 0);
   const compareAt = lowest && reference > lowest ? reference : null;
   return {
     product,
     lowest,
+    condition: best?.condition ?? null,
     lowestAny: pool.length ? Math.min(...pool.map((o) => o.price)) : null,
     compareAt,
     inStock: offers.some((o) => o.inStock !== false),

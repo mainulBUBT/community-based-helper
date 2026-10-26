@@ -3,7 +3,8 @@ import { decode, stripTags } from "../lib/html";
 import { getJson, getText } from "../lib/http";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import { appleGadgetsVariants, chardikeVariants, dazzleVariants, gadgetAndGearVariants, hhsVariants, kryVariants, maczenVariants, perfectoVariants, startechVariants, sumashVariants, wooVariants } from "./parsers";
+import { appleGadgetsVariants, chardikeVariants, dazzleVariants, gadgetAndGearVariants, hhsVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, startechVariants, sumashVariants, wooVariants } from "./parsers";
+import { isReplica } from "../../src/utils/categories";
 import type { Condition, Listing, Store } from "./types";
 
 const site = (url: string) => new URL(url).host.replace(/^www\./, "");
@@ -58,12 +59,15 @@ const STARTECH_CATEGORIES = [
   "/apple-mac-studio",
   "/gadget/smart-watch",
   "/earbuds",
+  "/neckband",
   "/accessories/headphone",
   "/power-bank",
   "/monitor",
   "/desktops/brand-pc",
   "/mobile-phone-charger-adapter",
   "/charger-fan",
+  "/networking/router",
+  "/water-purifier",
 ];
 
 function parseStartechListings(html: string): Listing[] {
@@ -144,36 +148,6 @@ const dazzle: Store = {
   },
 };
 
-// Pickaboo: robots.txt এ আটকায়; অনুমতি পেলে সার্চ-পেজ থেকে discover চালু করা যাবে
-const PICKABOO = "https://www.pickaboo.com";
-
-function parsePickabooListings(html: string): Listing[] {
-  const seen = new Set<string>();
-  return [...html.matchAll(/<a[^>]+href="((?:https:\/\/www\.pickaboo\.com)?\/product-detail\/[^"#?]+)"[^>]*>([\s\S]*?)<\/a>/g)].flatMap(([, href, inner]) => {
-    const url = new URL(decode(href), PICKABOO).href;
-    const title = stripTags(inner);
-    if (!title || seen.has(url)) return [];
-    seen.add(url);
-    return [{ title, url, price: null, oldPrice: null }];
-  });
-}
-
-const pickaboo: Store = {
-  id: "pickaboo",
-  name: "Pickaboo",
-  origin: PICKABOO,
-  rendered: false,
-  condition: "official",
-  sample: `${PICKABOO}/product-detail/apple-iphone-17`,
-  promoUrl: null,
-  listsBy: "name",
-  async discover(products) {
-    const lists: Listing[] = [];
-    for (const { name } of products) lists.push(...parsePickabooListings(await getText(`${PICKABOO}/search-result/${encodeURIComponent(name)}`)));
-    return lists;
-  },
-};
-
 // Klassy Missy (Next.js): product sitemap নেই; ক্যাটাগরির তালিকা RSS এ, প্রতিটা ক্যাটাগরির প্রথম পাতায় ৩৬টা পণ্য
 // (বাকিগুলো পাতায় JS দিয়ে আসে, তাই সব পণ্য ধরা পড়ে না)
 const KLASSY = "https://klassy.com.bd";
@@ -230,6 +204,43 @@ const herhappyskin: Store = {
   },
 };
 
+// Othoba (nopCommerce মার্কেটপ্লেস): sitemap ফাঁকা, তাই ক্যাটাগরি পাতা (?pagenumber=) ধরে ঘুরে listing।
+// নতুন ধরনের পণ্য এলে এখানে ওদের ক্যাটাগরির path যোগ করুন
+const OTHOBA = "https://othoba.com";
+const OTHOBA_CATEGORIES = ["/water-purifier", "/pureit-water-purifier"];
+
+function parseOthobaListings(html: string): Listing[] {
+  return [...html.matchAll(/data-productid="\d+">[\s\S]*?<a href="(\/[^"]+)">\s*<img[^>]*alt="([^"]*)"/g)].map(([, path, alt]) => ({
+    title: decode(alt),
+    url: `${OTHOBA}${path}`,
+    price: null,
+    oldPrice: null,
+  }));
+}
+
+const othoba: Store = {
+  id: "othoba",
+  name: "Othoba",
+  origin: OTHOBA,
+  rendered: false,
+  condition: "official",
+  sample: `${OTHOBA}/pureit-marina-rouvmf-6l-water-purifier-7-stage-purification-with-20lhour-high-speed-technology-best-buy-1040783`,
+  promoUrl: null,
+  variants: othobaVariants,
+  async discover() {
+    const all: Listing[] = [];
+    for (const path of OTHOBA_CATEGORIES) {
+      for (let page = 1; page <= 30; page++) {
+        const items = parseOthobaListings(await getText(`${OTHOBA}${path}${page > 1 ? `?pagenumber=${page}` : ""}`));
+        const fresh = items.filter((item) => !all.some((seen) => seen.url === item.url));
+        if (fresh.length === 0) break;
+        all.push(...fresh);
+      }
+    }
+    return all;
+  },
+};
+
 // Trek N Tread: Laravel (Inertia) — সাইটম্যাপ নেই, প্রোডাক্ট পাতার দাম embedded data-page JSON-এ (এনকোডেড &quot;);
 // product.variation_price = মূল দাম, variation_discounted_price = ছাড়ের দাম। ক্যাটালগ পাতা (?page=1..12)-তে সব পণ্য।
 const TREK = "https://trekntread.com";
@@ -239,7 +250,7 @@ const trekntread: Store = {
   name: "Trek N Tread",
   origin: TREK,
   rendered: false,
-  condition: "unofficial",
+  condition: "replica",
   sample: `${TREK}/products/673-adidas-samba-color-white-green-low-neck-grade-oem`,
   promoUrl: null,
   parse(html) {
@@ -270,7 +281,6 @@ const trekntread: Store = {
 
 export const stores: Store[] = [
   startech,
-  pickaboo,
   sitemapStore({
     id: "shajgoj",
     name: "Shajgoj",
@@ -560,6 +570,65 @@ export const stores: Store[] = [
     variants: wooVariants,
   }),
   herhappyskin,
+  othoba,
+  sitemapStore({
+    id: "beautybooth",
+    name: "Beauty Booth",
+    origin: "https://beautybooth.com.bd",
+    sample: "https://beautybooth.com.bd/product/essence-lash-princess-false-lash-effect-mascara-12ml",
+    sitemap: "https://beautybooth.com.bd/sitemap/products.xml",
+    path: "/product/",
+    condition: "official",
+  }),
+  sitemapStore({
+    id: "alzak",
+    name: "ALZAK",
+    origin: "https://alzakbd.com",
+    sample: "https://alzakbd.com/product/essence-lash-princess-false-lash-mascara/",
+    sitemap: "https://alzakbd.com/sitemap_index.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "bdamajan",
+    name: "BD Amajan Shop",
+    origin: "https://bdamajanshop.com",
+    sample: "https://bdamajanshop.com/product/essence-lash-princess-false-lash-effect-mascara/",
+    sitemap: "https://bdamajanshop.com/sitemap_index.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "ukdirect",
+    name: "UK Direct BD",
+    origin: "https://ukdirectbd.com",
+    sample: "https://ukdirectbd.com/product/maybelline-colossal-kohl-kajal-24h-black-bold-smudge-resistant-eyeliner/",
+    sitemap: "https://ukdirectbd.com/sitemap_index.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "skinrevive",
+    name: "Skin Revive BD",
+    origin: "https://skinrevivebd.com",
+    sample: "https://skinrevivebd.com/product/maybelline-colossal-kohl-kajal-24h-black/",
+    sitemap: "https://skinrevivebd.com/sitemap_index.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "mke",
+    name: "MK Electronics",
+    origin: "https://mke.com.bd",
+    sample: "https://mke.com.bd/kent-grand-star-ro-water-purifier",
+    sitemap: "https://mke.com.bd/sitemap-products.xml",
+    path: "/",
+    condition: "official",
+  }),
 ];
 
 // তালিকায় না থাকা দোকানের পুরনো দামও বাদ যায় না: JSON-LD/itemprop/og দিয়ে চেষ্টা
@@ -573,6 +642,8 @@ export function storeFor(url: string): Store {
 }
 
 export function conditionOf(store: Store, text: string): Condition {
+  // কপি জুতার দোকান: শিরোনামে নিজেরাই 1:1 বা Premium লিখলে প্রিমিয়াম কপি, নয়তো সাধারণ কপি
+  if (isReplica(store.condition)) return /1:1|\(1\.1\)|premium/i.test(text) ? "replica_premium" : "replica";
   if (/\b(unofficial|intl|international)\b/i.test(text)) return "unofficial";
   if (/\bofficial\b/i.test(text)) return "official";
   return store.condition;

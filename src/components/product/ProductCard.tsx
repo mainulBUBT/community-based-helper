@@ -6,6 +6,7 @@ import type { ReactNode } from "react";
 import { SaveButton } from "@/components/product/SaveButton";
 import { useI18n } from "@/hooks/useI18n";
 import type { ProductSummary } from "@/types/catalog";
+import { isReplica } from "@/utils/categories";
 import { formatTaka } from "@/utils/format";
 import { ProductIcon } from "./ProductIcon";
 
@@ -20,7 +21,7 @@ interface ProductCardProps {
 
 export function ProductCard({ summary, deal, badge, category, compact, loading = "lazy" }: ProductCardProps) {
   const { t, num, prefix, lang } = useI18n();
-  const { product, lowest, compareAt, inStock, sellerCount } = summary;
+  const { product, lowest, condition, compareAt, inStock, sellerCount } = summary;
   const photo = product.images?.[0];
   const off = lowest && compareAt ? Math.round(((compareAt - lowest) / compareAt) * 100) : 0;
 
@@ -53,7 +54,10 @@ export function ProductCard({ summary, deal, badge, category, compact, loading =
       </div>
 
       <div className="flex flex-1 flex-col border-t border-line-soft p-3">
-        <span className="text-[9.5px] font-bold tracking-widest text-faint uppercase">{product.brand}</span>
+        <span className="flex min-w-0 items-center gap-1.5">
+          <span className="truncate text-[9.5px] font-bold tracking-widest text-faint uppercase">{product.brand}</span>
+          {condition && isReplica(condition) && <span className="shrink-0 rounded-xs bg-surface-2 px-1 text-[10px] font-semibold text-dim">{t.condition.replica}</span>}
+        </span>
         <Link
           href={`${prefix}/product/${product.slug}/`}
           className={`mt-1 line-clamp-2 font-semibold text-ink after:absolute after:inset-0 hover:text-brand ${compact ? "text-[11.5px] leading-[1.42]" : "min-h-[2.5rem] text-sm leading-5"}`}

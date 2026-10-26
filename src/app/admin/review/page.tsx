@@ -3,6 +3,7 @@
 import { ExternalLink, EyeOff, Undo2 } from "lucide-react";
 import Link from "next/link";
 import { useState, type FormEvent, type ReactNode } from "react";
+import { ConditionSelect } from "@/components/admin/ConditionSelect";
 import { Field, Select } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { Badge } from "@/components/ui/Badge";
@@ -264,13 +265,7 @@ function SubmissionCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context;
               <p className="self-center text-xs text-dim">{t.admin.review.newSellerNote}</p>
             </>
           )}
-          <Select label={t.admin.products.condition} name="condition" defaultValue="official">
-            {(Object.entries(t.condition) as [Condition, string][]).map(([id, text]) => (
-              <option key={id} value={id}>
-                {text}
-              </option>
-            ))}
-          </Select>
+          <ConditionSelect category={product?.category} />
           <Field label={t.admin.products.region} name="region" placeholder={t.admin.products.regionPlaceholder} />
           <Field label={t.admin.products.price} name="price" inputMode="numeric" defaultValue={p.price} required />
           <Field label={t.admin.products.url} name="url" type="url" defaultValue={safeUrl(p.link) ?? ""} placeholder="https://" />

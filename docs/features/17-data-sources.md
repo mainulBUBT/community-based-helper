@@ -24,6 +24,12 @@
 | Lira Import | product sitemap | `wooVariants` (এক দাম) | ✅ |
 | Her Happy Skin | নিজের JSON API (`her-api`) | ওই API-ই (`hhsVariants`) | ✅ |
 | Choice Legacy | product sitemap খোলা, কিন্তু পণ্যের পাতায় ~১ অনুরোধ/মিনিট রেট লিমিট | | ⛔ নিয়মে চলে না |
+| MK Electronics | `sitemap-products.xml` | JSON-LD | ✅ |
+| Othoba | ক্যাটাগরি পাতা (`OTHOBA_CATEGORIES`, `?pagenumber=`), কারণ sitemap ফাঁকা | `othobaVariants`: JSON-LD এর `price` মূল দাম, `sale_price` ছাড়ের দাম | ✅ |
+| Beauty Booth | `/sitemap/products.xml` (~৩.৩ MB, তাই `MAX_BODY` ৮ MB) | JSON-LD | ✅ |
+| ALZAK, BD Amajan Shop, UK Direct BD, Skin Revive BD | WooCommerce sitemap | `wooVariants` | ✅ |
+| The Mall BD | | | ⛔ GitHub Actions থেকে robots.txt এ 403 |
+| Rokomari | | | ⛔ GitHub Actions থেকে robots.txt এ 403 |
 | Pickaboo | `/search-result/<নাম>` HTML | | ⛔ worker কে 403 দেয় |
 | Telegram এর দোকান | দোকান নিজে পাঠায় | ⬜ [telegram](15-telegram-bot.md) |
 | ক্রেতা | "দাম জানান" | 🟡 [price reports](05-price-reports.md) |
@@ -245,6 +251,63 @@ Lira Import আর Her Happy Skin যোগ হলো (robots.txt আর Terms �
 - **রিপোর দিক:** watch.json-এর ২১টা ঘড়িতে `specsSource` যোগ হয়েছে; `catalog:specs` → `catalog:build` → ডিবি UPDATE।
 - **এখনো স্পেক-শূন্য ৫২টা:** স্কিনকেয়ার ২৯ আর স্নিকার্স ২০ (এই ক্যাটাগরিতে স্পেক-টেবিলই নেই), MacBook Pro 14 M5 Max (Star Tech-এ শুধু 16″ M5 Max আছে, ভুল সাইজের স্পেক দেওয়া যাবে না), Anker Zolo 25000mAh (Star Tech-এ নেই), realme 14 5G (realme.com-এর পাতা JS-নির্ভর, পার্স হয় না)।
 - **খেয়াল:** ডিবিতে ২৯টা পণ্য (চার্জার ৬, ফ্যান ৬, ইয়ারবাডস ৫, পাওয়ারব্যাংক ৫, মনিটর ৬, iPhone 16, Redmi Watch 6 Lite, WEOFly ২) আছে যাদের `data/catalog/*.json`-এ কোনো এন্ট্রি নেই — সেগুলো আগে সরাসরি ডিবিতে ঢোকানো হয়েছিল। ক্যাটালগ ফাইলই একমাত্র উৎস, তাই এদের পরে একটা ব্যাচ ফাইলে ফেরানো উচিত।
+
+### রাউটার (২৬ অক্টোবর ২০২৬)
+
+নতুন ক্যাটাগরি `router` (migration `20261026110000_router-category.sql`, ভার্সনের ঘর `edition`), ২৫টা পণ্য, ১৬৫টা দাম, নতুন দোকান লাগেনি: Star Tech, Gadget & Gear, Global Brand, Sumash Tech, Apple Gadgets, Diamu, Kry International, PCB Store, Gadget Breeze। Star Tech-এর `/networking/router` ক্যাটাগরি discover-এ যোগ। প্রতিটা পাতা worker parser দিয়ে লাইভ পড়া, `worker:check` ০ মেলেনি, সব ছবি ২০০ image/*, স্পেক Star Tech থেকে।
+
+- সাধারণ (`Standard`): TP-Link Archer C6, C64, C54, C50, C24, C80, AX12, AX53, AX73, BE400; Tenda AC10, TX12 Pro; Mercusys AC10; Cudy WR1200, WR1500, WR3000, WR3600E; ASUS RT-AX52। ২৪টা ৩+ দোকানে, Archer BE400 ২টায়।
+- মেশ, ভার্সন `1 Pack` / `2 Pack` / `3 Pack`: TP-Link Deco M4, E4, X10, X20, X50; Cudy M1300, M3000। প্যাক চেনা হয়েছে শিরোনাম/URL/Star Tech তালিকার নাম থেকে ("(2 Pack)", "Single Pack")।
+- বাদ: Apple Gadgets আর Gadget Breeze-এর মেশ পাতা (১/২/৩ প্যাকের দাম এক পাতায় লেবেল ছাড়া — কোনটা কোন প্যাক নিশ্চিত না), Gadget & Gear-এর প্যাক না-লেখা Deco X50 পাতা, Deco X50-PoE/Outdoor (আলাদা মডেল), Archer AX15 (সব দোকানে স্টক নেই, দামও অসংগত)।
+- `officialPrice`: Star Tech-এর কাটা দাম (প্যাক ধরে)। `releaseYear` খালি — প্রকাশের তারিখ যাচাই করা হয়নি, আন্দাজে বসানো হয়নি।
+
+### দামের ধরন ক্যাটাগরি ধরে, স্নিকার্সে কপি (২৬ অক্টোবর ২০২৬)
+
+- `offer_condition`-এ `replica_premium` আর `replica`; `categories.conditions` (migration `20261026100000_category-conditions.sql`)। ইলেকট্রনিক্সে আগের মতো ওয়ারেন্টি, স্নিকার্সে আসল / প্রিমিয়াম কপি / কপি, স্কিনকেয়ারে শুধু আসল। অ্যাডমিন → ক্যাটাগরিতে বদলানো যায়; দাম বসানোর ফর্মে শুধু ওই ক্যাটাগরির ধরন আসে।
+- কপির দামের পাশে অফিসিয়াল/নির্ধারিত দাম বা "−%" দেখানো হয় না (sanity-র `officialPrice` আসল জুতার দাম নয়)। কার্ড আর তালিকায় "কপি" ব্যাজ।
+- স্নিকার্সের ২০টা পণ্যের নাম থেকে "1:1 Copy Sneakers" সরানো, ব্র্যান্ড ঠিক (AF-1 → Nike, Samba/Campus → Adidas, AJ-1/AJ-4 → Jordan, Nike SB → Nike), Chuck 70 → Chuck 70 High। পুরনো ঠিকানা `public/_redirects`-এ 301। seed-এর id slug থেকে আসে, তাই `20261026100100_sneakers-replica.sql` পুরনো ২০টা পণ্য মোছে (দাম, ইতিহাস, এদের price alert সহ), seed নতুন করে বসায়।
+- প্রতিটা দামের ধরন দোকানের নিজের লেখা থেকে: ১৫টা প্রিমিয়াম কপি (1:1, Premium, Three's-এর "Quality: 1:1 Replica"/"Customised (1:1)", Trek-এর "Grade – 1:1"), ৪৯টা কপি (OEM, OEM Superior, বা কিছু লেখা নেই)। Trek N Tread worker-এ `replica`; discover শিরোনাম দেখে ভাগ করে।
+- ভুল লিংক বাদ: Samba Vegan/Sneaker Zone (এখন Campus 00s Brawn খোলে), NB 530/DOB (NB 471), Adios Pro Evo 1/Splayd (Bad Bunny), Adios Pro 4/Ragen (Y-3 Adios Pro 4 — আলাদা লাইন), Splayd-এর Jordan 1 Low আর Evo SL (৪০৪)। Samba Vegan, Adios Pro Evo 1, Adios Pro 4 এখন ২টা দোকানে।
+- Converse খোঁজা: নতুন মডেলের আলাদা মালিকের ২টা দোকান নেই (Chuck 70 Low আর Run Star Trainer শুধু DOB + Sneaker Zone, একই মালিক)। Errum (errumbd.com) Terms-এ লিখিত অনুমতি ছাড়া দাম সংগ্রহ নিষেধ — বাদ, অনুমতি চাইলে আবার দেখা যাবে। Othoba-র Converse নামহীন "Converse-style", Cosmic Belleza ১,৬৫০ টাকার জুতাকে "authentic" বলে — বাদ।
+
+### নেকব্যান্ড (২৬ অক্টোবর ২০২৬)
+
+২৬টা নতুন পণ্য (ক্যাটাগরি `earbuds`, ভার্সন `Standard`), ১১৭টা দাম, নতুন দোকান লাগেনি — ৮টা পুরনো দোকানেই বড় তালিকা: Star Tech, Sumash Tech, Apple Gadgets, Gadget & Gear, Motion View, Diamu, Kry International, Gadget Breeze। মালিকের শর্ত অন্তত ২ দোকান; ২২টা পণ্য ৩+ দোকানে, ৪টা (Realme Buds Wireless 5 Lite, 3 Neo, Acefast N9, HiFuture FutureMate) ২টায়। প্রতিটা পাতা worker-এর parser দিয়ে লাইভ পড়া (দাম, স্টক, শিরোনামে মডেল), `worker:check` ০ মেলেনি, সব ছবি ২০০ image/*।
+
+- OnePlus Bullets Wireless Z3, Z2 ANC; Oraimo Necklace 5 ANC (OEB-611), Neo (OEB-310), Lite (OEB-311), 4 (OEB-E50D); QCY BassBloom ANC N2, TuneArc N1; Realme Buds Wireless 5 ANC, 5 Lite, 3 Neo; Edifier W280NB Pro; JBL Tune 125BT; Anker Soundcore R500, Life U2i; Baseus Bowie P1x; OPPO Enco M33; Redmi SonicBass; Lenovo HE05X II; Hoco ES70, ES69, ES62 Plus; Foneng BL34, BL40; Acefast N9; HiFuture FutureMate।
+- `officialPrice`: Star Tech-এর কাটা দাম; Star Tech-এ না থাকলে অফিসিয়াল দোকানের (Motion View) বা কাটা দাম।
+- `releaseYear` শুধু যেগুলোর প্রকাশের খবর পাওয়া গেছে (OnePlus, Realme, OPPO, Anker R500, Redmi); Oraimo, QCY, Hoco, Foneng, Acefast, Edifier ইত্যাদির খালি রাখা, আন্দাজে নয়।
+- আগের "OnePlus Bullets Wireless Z2 Neckband"-এর Diamu লিংকটা আসলে Z2 ANC-এর পাতা ছিল (ভুল মডেল) — ক্যাটালগে ঠিক করা, ৭টা দোকানে আসল Z2-এর পাতা। seed insert-only, তাই ডিবিতে পুরনো ভুল অফারটা হাতে মুছতে হবে।
+- বাদ: CMF Neckband Pro, Oraimo Necklace Pro, JBL Live 200BT — সব দোকানে স্টক নেই; Star Tech-এর Realme 3 Neo ছবি ৪০৩।
+- worker: Star Tech discover-এ `/neckband` ক্যাটাগরি।
+
+### পানির ফিল্টার (২৬ অক্টোবর ২০২৬)
+
+নতুন ক্যাটাগরি `water-purifier` (পানির ফিল্টার, আইকন `droplet`, ভার্সনের ঘর নেই, সব `Standard`)। ৭টা পণ্য, ২৩টা দাম, ৫টা দোকান (`data/catalog/water-purifier.json`): Pureit Classic (23L), Marina, Wave, Vital Max, Ultima Mineral, Ultima Pro, আর Kent Grand Star; দাম ৳৪,৯৪৯ থেকে ৳৩৫,০০০। প্রতিটা ৩+ দোকানে, `worker:check` ০ মেলেনি, ২৫টা ছবিই ২০০ image/*।
+
+- নতুন দোকান **MK Electronics** (mke.com.bd) আর **Othoba** (othoba.com)। robots.txt-এ পণ্যের পাতা খোলা, Terms-এ সংগ্রহ নিয়ে নিষেধ নেই। `probe-stores` workflow দিয়ে GitHub Actions থেকে দুটোই খোলে, দাম আর ছবি পড়া যায় (run 40275232438)।
+- **Rokomari বাদ:** লোকাল থেকে খোলে, কিন্তু GitHub Actions থেকে robots.txt-এই 403। তাদের Terms পাতা JS-এ, পড়া যায়নি। এতে Heron, Sanaky, Vision এর মডেলগুলো ২টা দোকানে নামে (Othoba + Rokomari), তাই নেওয়া হয়নি।
+- Othoba মার্কেটপ্লেস: একই মডেল কয়েক বিক্রেতার, আর একটা দোকানে একটাই দাম রাখা যায়। Pureit-এর লিংক RFL Best Buy-এর, Kent-এর SKRP Group-এর। Kent Grand Star পাতার `<title>` বিক্রেতার ভুলে অন্য মডেলের ("Ultra Storage UV 8L"), h1 আর spec (9 litres) ঠিক।
+- `officialPrice`: MRP। MKE-র `mrp_price` আর Othoba-র মূল দাম দুটো মেলে (Classic ৫,৪৯৯ শুধু Othoba)। Star Tech-এর "Regular Price" আসলে EMI দাম, MRP নয়।
+- Star Tech-এর "Pureit Ultima 10 Liter" আর অন্যদের "Ultima Mineral RO+UV+MF 10L" একই মডেল (২৮ L/ঘণ্টা, বর্ণনায় mineral)।
+- নামের প্রযুক্তি আর লিটার বন্ধনীতে (`Marina (RO+UV+MF, 6L)`), কারণ Star Tech-এর শিরোনামে "RO+UV" থাকে না আর "23 Liter" ≠ "23L"; বন্ধনীর অংশ মেলানোয় বাধ্যতামূলক নয়।
+- `releaseYear` শুধু Vital Max (Vital series অক্টোবর ২০২২); বাকিগুলোর প্রকাশের তারিখ পাওয়া যায়নি, খালি।
+- বাদ: Pureit Marvella (Star Tech + MKE, ২টা), Kent-এর বাকি মডেল (Apple Gadgets + MKE বা Othoba, ২টা), Panasonic TK-CS10 (Othoba + Apple Gadgets)।
+- worker: Star Tech discover-এ `/water-purifier`।
+
+### মেকআপ (২৬ অক্টোবর ২০২৬)
+
+নতুন ক্যাটাগরি `makeup` (মেকআপ, আইকন `palette`, ভার্সনের ঘর `capacity`, দামের ধরন শুধু আসল, ওয়ারেন্টি নেই, `verify_note` চালু)। ১৮টা পণ্য, ১৭০টা দাম, ১৯টা দোকান: স্কিনকেয়ারের ১৪টা আর নতুন ৫টা (`data/catalog/makeup.json`)। প্রতিটা ৪–১৪ দোকানে, `worker:check` ০ মেলেনি, সব ছবি ২০০ image/*।
+
+- নতুন দোকান: **Beauty Booth**, **ALZAK**, **BD Amajan Shop**, **UK Direct BD**, **Skin Revive BD**। robots.txt-এ পণ্যের পাতা খোলা; Terms-এ সংগ্রহের নিষেধ নেই (UK Direct-এ সাধারণ "content কপি নয়" লেখা, Klassy-র মতো)। `probe-stores` দিয়ে GitHub Actions থেকে পাঁচটাই খোলে (run 40279963494)। The Mall BD Actions থেকে 403, বাদ। Rupchorcha, Taupe Notch, Authentic Makeup Store-এর Terms-এ bot/scraping নিষেধ; Ogerio, Lavishta bot কে Cloudflare challenge দেয়; NurPlaza robots-এ scraper বন্ধ — সব বাদ।
+- একটু কম দাম, তবে নিয়মের মধ্যে: BD Amajan-এর SuperStay Matte Ink ৭৯০ (অন্যরা ১,১০০–১,৫৫০) আর Pond's BB+ ২২০ (অন্যরা ৩০০–৩৭৫)।
+
+- Essence Lash Princess False Lash (সাধারণ আর Waterproof), I Love Extreme Crazy Volume; Maybelline Colossal Kajal, Lash Sensational Sky High, Baby Lips Color SPF11, SuperStay Matte Ink, SuperStay Vinyl Ink, Fit Me Matte + Poreless; Lakme Eyeconic Kajal; W7 Liquid Eyeliner Pot; Technic Mega Lash (Water Resistant, Volumising); Pond's Bright Miracle BB+; Wet n Wild MegaLast Catsuit, Photo Focus Dewy, Photo Focus Matte; L'Oréal Infallible 32H Fresh Wear।
+- প্রার্থী বের করা: ৪০টা দোকানের listing-এ নামের শব্দ মিলিয়ে, তারপর প্রতিটা পাতা worker-এর parser দিয়ে পড়ে (৩৫৮ পাতা)। শেড রং, তাই আলাদা ভার্সন নয়; প্রতিটা দোকানে একটাই লিংক, স্টকে থাকা সবচেয়ে কম দামের শেড।
+- বাদ রাখা listing: মেয়াদের কাছাকাছি ("Expiry – …"), combo/"Buy one get one", twin pack, tube/powder রূপ, আর অস্বাভাবিক দাম (Klassy Missy-র Lash Princess ১,২৫০, অন্যরা ৫৫০–৭৫০)।
+- উৎস দেশে দাম আলাদা: Fit Me "Made in India" ~১,০০০, "USA" ১,২৫০–২,২৫০। তাই Fit Me-তে শুধু ~১,০০০-এর দোকান (Arogga, Shajgoj, Klassy, Beprincess India); Lira Import, Color World, Perfecto, OHSOGO, Skincare Shop বাদ। Beprincess-এর অফারে region `India`।
+- বাদ মডেল: Instant Age Rewind (৬ml বনাম ৬.৮ml, দেশভেদে আলাদা), Colossal Mascara (অনেক রূপ, মেলানো কঠিন), MAC আর SHEGLAM (নকল বেশি)।
+- `officialPrice`: বাংলাদেশে MRP প্রকাশিত নেই, তাই দোকানগুলোর মূল দামের (কাটা দাম বা দাম) মধ্যমা। `releaseYear` খালি।
 
 ## যা নেওয়া হবে না, আর কেন
 

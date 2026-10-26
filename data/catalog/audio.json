@@ -35,6 +35,16 @@
    "name": "Motion View",
    "website": "https://motionview.com.bd",
    "note": "Official brand-warranty retailer (JBL, CMF); used to fill CMF Buds 2 and JBL Tune 770NC."
+  },
+  {
+   "name": "Kry International",
+   "website": "https://kryinternational.com",
+   "note": "নেকব্যান্ড: OnePlus, Oraimo, QCY, Hoco, Foneng-এর বড় তালিকা; পাতায় In/Out of stock।"
+  },
+  {
+   "name": "Gadget Breeze",
+   "website": "https://gadgetbreeze.com.bd",
+   "note": "WooCommerce; নেকব্যান্ডের বড় তালিকা (Hoco, Acefast, QCY, Oraimo)। একই পণ্যের দুটো পাতা থাকলে একটাই নেওয়া।"
   }
  ],
  "products": [
@@ -824,6 +834,226 @@
   },
   {
    "brand": "OnePlus",
+   "name": "Bullets Wireless Z3",
+   "category": "earbuds",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 2199
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earphone/oneplus/bullets-wireless-z3/bullets-wireless-z3-mambo-midnight-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2377/OnePlus_Bullets_Wireless_Z3_Red.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/OnePlus-Bullets-Wireless-Z3a-9457.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/oneplus-bullets-wireless-z3-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/oneplus-bullets-wireless-z3-neckband",
+     "price": 2050,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-bullets-wireless-z3",
+     "price": 1999,
+     "oldPrice": 2499,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oneplus-bullets-wireless-z3",
+     "price": 1999,
+     "oldPrice": 2499,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/oneplus-bullets-wireless-z3-neckband",
+     "price": 2199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/oneplus-bullets-wireless-z3",
+     "price": 2299,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/oneplus-bullets-wireless-z3-neckbands/",
+     "price": 2290,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-bullets-wireless-z3",
+     "price": 2599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/oneplus-bullets-wireless-z3/",
+     "price": 1900,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "OnePlus",
+   "name": "Bullets Wireless Z2 ANC",
+   "category": "earbuds",
+   "releaseYear": 2023,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 3399
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earphone/oneplus/bullets-z2-anc/oneplus-bullets-wireless-z2-anc-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/528/OnePlus_Bullets_Wireless_Z2_ANC.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/OnePlus-Bullets-Wireless-Z2-ANC-Green-3022.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/oneplus-bullets-wireless-z2-anc-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/oneplus-bullets-wireless-z2-anc-neckband",
+     "price": 3150,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-bullets-wireless-z2-anc",
+     "price": 2999,
+     "oldPrice": 3799,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oneplus-bullets-wireless-z2-anc",
+     "price": 2799,
+     "oldPrice": 3199,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/oneplus-bullets-wireless-z2-anc",
+     "price": 3499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/oneplus-bullets-wireless-z2-anc-bluetooth-neckband",
+     "price": 3499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/oneplus-bullets-wireless-z2-anc/",
+     "price": 2990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-bullets-wireless-z2-anc",
+     "price": 3199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/oneplus-bullets-wireless-z2-anc/",
+     "price": 2780,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "OnePlus",
    "name": "Bullets Wireless Z2 Neckband",
    "category": "earbuds",
    "releaseYear": 2022,
@@ -834,15 +1064,47 @@
      "officialPrice": 2990
     }
    ],
-   "colors": [
-    "Black",
-    "Blue"
-   ],
+   "colors": [],
    "images": [
-    "https://diamu.com.bd/wp-content/uploads/2023/10/OnePlus-Bullets-Wireless-Z2-ANC.jpg"
+    "https://www.startech.com.bd/image/cache/catalog/earphone/oneplus/e305a/bullets-wireless-z2-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/470/OnePlus_Bullets_Wireless_Z2_red.webp",
+    "https://assets.gadgetandgear.com/upload/product/20220629_1656476343_892829.jpeg"
    ],
-   "specsSource": "https://motionview.com.bd/product/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone",
+   "specsSource": "https://www.startech.com.bd/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone",
    "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone",
+     "price": 2190,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone",
+     "price": 2699,
+     "oldPrice": 2899,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/oneplus-bullets-wireless-z2",
+     "price": 2899,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
     {
      "variant": "Standard",
      "site": "Motion View",
@@ -852,18 +1114,1616 @@
      "inStock": false,
      "condition": "official",
      "region": null,
-     "checkedAt": "2026-10-25"
+     "checkedAt": "2026-10-26"
     },
     {
      "variant": "Standard",
      "site": "Diamu",
-     "url": "https://diamu.com.bd/product/oneplus-bullets-wireless-z2-anc/",
-     "price": 2990,
+     "url": "https://diamu.com.bd/product/oneplus-bullets-wireless-z2/",
+     "price": 2490,
      "oldPrice": null,
      "inStock": false,
      "condition": "unofficial",
      "region": null,
-     "checkedAt": "2026-10-25"
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-bullets-wireless-z2",
+     "price": 2399,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/oneplus-bullets-wireless-z2-2/",
+     "price": 2490,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Oraimo",
+   "name": "Necklace 5 ANC (OEB-611)",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 2499
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/oraimo/necklace-5/necklace-5-07-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2545/necklace_5_oraimo.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Oraimo-OEB-611-Necklace-5-ANC-Wireless-Neckband-4847.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/oraimo-necklace-5",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/oraimo-necklace-5",
+     "price": 2290,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oraimo-necklace-5-anc-wireless-neckband",
+     "price": 2299,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oraimo-oeb-611-necklace-5-anc-wireless-neckband",
+     "price": 2299,
+     "oldPrice": 2499,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/oraimo-necklace-5-neckband-oeb-611",
+     "price": 2299,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oraimo-necklace-5-oeb-611-anc-neckband",
+     "price": 2499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/oraimo-necklace-5-noise-cancellation/",
+     "price": 2150,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Oraimo",
+   "name": "Necklace Neo (OEB-310)",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 1124
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/oraimo/necklace-neo/necklace-neo-02-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3806/Oraimo_Necklace_Neo.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Oraimo-Necklace-Neo-Neckband-Bluetooth-Earphone-7036.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/oraimo-necklace-neo",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/oraimo-necklace-neo",
+     "price": 1050,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oraimo-necklace-neo-wireless-neckband-oeb-310",
+     "price": 1150,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oraimo-necklace-neo-neckband-bluetooth-earphone",
+     "price": 1100,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/oraimo-necklace-neo-neckband-oeb-310",
+     "price": 1099,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oraimo-necklace-neo-neckband-oeb-310",
+     "price": 1199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/oraimo-necklace-neo-oeb-310-wireless-neckband/",
+     "price": 1050,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Oraimo",
+   "name": "Necklace Lite (OEB-311)",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 1380
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/oraimo/necklace-lite/necklace-lite-04-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1539/oraimo_necklace_1.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Oraimo-OEB-311-Necklace-Lite-ENC-with-Vibration-Wireless-Neckbandsdfg-5647.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/oraimo-necklace-lite-enc-wireless-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/oraimo-necklace-lite-enc-wireless-neckband",
+     "price": 1290,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oraimo-necklace-lite",
+     "price": 1349,
+     "oldPrice": 1430,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oraimo-oeb-311-necklace-lite-enc-with-vibration-wireless-neckband",
+     "price": 1350,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/oraimo-necklace-lite-enc-wireless-neckband",
+     "price": 1450,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/oraimo-oeb-311-necklace-lite-neckband",
+     "price": 1430,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oraimo-necklace-lite-neckband",
+     "price": 1399,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/oraimo-oeb-311-necklace-lite-neckband/",
+     "price": 1220,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Oraimo",
+   "name": "Necklace 4 (OEB-E50D)",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 2850
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/525/oraimo_necklace_4_OEB-E50D_1.webp",
+    "https://assets.gadgetandgear.com/upload/media/1725340139559967.jpeg",
+    "https://motionview.s3.amazonaws.com/images/products/profile/171973731097.Oraimo%20Necklace%204%20Superior%20BASS%20with%20HAVYBASS%202.0%20Neckband%20(OEB-E50D)%20-%20Black.webp"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oraimo-necklace-4-wireless-neckband",
+     "price": 2799,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/oraimo-necklace-4-wireless-neckband",
+     "price": 3075,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/oraimo-necklace-4-wireless-neckband-oeb-e50d",
+     "price": 2850,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/oraimo-necklace-4-neckband/",
+     "price": 2670,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oraimo-necklace-4-wireless-neckband-oeb-e50d",
+     "price": 2399,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/oraimo-necklace-4/",
+     "price": 2550,
+     "oldPrice": 2750,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "QCY",
+   "name": "BassBloom ANC N2",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 2099
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/qcy/bassbloom-anc-n2/bassbloom-anc-n2-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1988/N2.webp",
+    "https://diamu.com.bd/wp-content/uploads/2025/03/QCY-BassBloom-ANC-N2-25DB-ANC-Neckband.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/qcy-bassbloom-anc-n2",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/qcy-bassbloom-anc-n2",
+     "price": 1950,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/qcy-bassbloom-anc-n2-in-ear-neckband-headphones",
+     "price": 2199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/qcy-bassbloom-neckband/",
+     "price": 2300,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/qcy-bassbloom-n2-neckband",
+     "price": 2299,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/qcy-bassbloom-anc-n2-neckband/",
+     "price": 2190,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "QCY",
+   "name": "TuneArc N1",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 1399
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/qcy/tunearc-n1-c3/tunearc-n1-c3-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1984/N1.webp",
+    "https://diamu.com.bd/wp-content/uploads/2025/03/QCY-TuneArc-N1-C3-In-ear-Neckband-Headphones-price-in-Bangladesh-2.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/qcy-tunearc-n1-c3-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/qcy-tunearc-n1-c3-neckband",
+     "price": 1259,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/qcy-tunearc-n1-c3-in-ear-neckband-headphones",
+     "price": 1399,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/qcy-tunearc-n1-neckband/",
+     "price": 1390,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/qcy-tunearc-n1-neckband",
+     "price": 1449,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/qcy-tunearc-n1-neckband/",
+     "price": 1240,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Realme",
+   "name": "Buds Wireless 5 ANC",
+   "category": "earbuds",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 2799
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/realme/buds-wireless-5/buds-wireless-5-01-1200x630.webp",
+    "https://motionview.s3.amazonaws.com/images/products/profile/177502223467.webp",
+    "https://diamu.com.bd/wp-content/uploads/2025/01/Realme-Buds-Wireless-5-ANC-Neckband.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/realme-buds-wireless-5-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/realme-buds-wireless-5-neckband",
+     "price": 2550,
+     "oldPrice": 2799,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/realme-neckband-buds-wireless-5-anc",
+     "price": 1999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/realme-buds-5-anc-neckband/",
+     "price": 2490,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Realme",
+   "name": "Buds Wireless 5 Lite",
+   "category": "earbuds",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 1990
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/realme/buds-wireless-5-lite/buds-wireless-5-lite-04-1200x630.webp",
+    "https://diamu.com.bd/wp-content/uploads/2025/06/Realme-Buds-Wireless-5-Lite-Price-in-Bangladesh.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/realme-buds-wireless-5-lite",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/realme-buds-wireless-5-lite",
+     "price": 1990,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/realme-buds-wireless-5-lite-neckband/",
+     "price": 1890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Realme",
+   "name": "Buds Wireless 3 Neo",
+   "category": "earbuds",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 1999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://images.kryinternational.com/uploads/realme-buds-wireless-3-neo-black.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/realme-buds-wireless-3-neo-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/realme-buds-wireless-3-neo-neckband",
+     "price": 1850,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/realme-buds-wireless-3-neo-neckband",
+     "price": 2199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Edifier",
+   "name": "W280NB Pro",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 3999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/edifier/w280nb-pro/w280nb-pro-01-1200x630.webp",
+    "https://assets.gadgetandgear.com/upload/media/edifier-w280nb-pro-neckband-1248.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/edifier-w280nb-pro-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/edifier-w280nb-pro-neckband",
+     "price": 3599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/edifier-w280nb-pro-neckband",
+     "price": 4149,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/edifier-w280nb-pro-wireless-noise-cancelling-neckband/",
+     "price": 3600,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "JBL",
+   "name": "Tune 125BT",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 3099
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/jbl/tune-125bt/tune-125bt-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/661/JBL_Tune_125BT_.webp",
+    "https://images.kryinternational.com/uploads/jbl-tune-125bt-w.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/jbl-tune-125bt-wireless-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/jbl-tune-125bt-wireless-neckband",
+     "price": 2850,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/jbl-tune-125bt-neckband",
+     "price": 2999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/jbl-tune-125bt-neckband-in-ear-earphone",
+     "price": 3499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Anker",
+   "name": "Soundcore R500",
+   "category": "earbuds",
+   "releaseYear": 2021,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 2500
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/168/ANKER_SOUNDCORE_R500_A3213Y11_Black_01.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/3524-14073.jpg",
+    "https://diamu.com.bd/wp-content/uploads/2021/10/Anker-Soundcore-R500-Fast-Charging-Neckband.jpg"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/anker-soundcore-r500-bluetooth-neckband-earphone",
+     "price": 2300,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/anker-soundcore-r500-bluetooth-neckband-earphone",
+     "price": 2200,
+     "oldPrice": 2500,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/anker-soundcore-r500-fast-charging-neckband-earphone/",
+     "price": 1940,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Anker",
+   "name": "Soundcore Life U2i",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 1750
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earphone/anker/soundcore-life-u2i/soundcore-life-u2i-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1456/Soundcore_Life_U2i_Upgraded.webp",
+    "https://diamu.com.bd/wp-content/uploads/2023/11/Anker-Soundcore-Life-U2i-Wireless-Neckband.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/anker-soundcore-life-u2i-wireless-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/anker-soundcore-life-u2i-wireless-neckband",
+     "price": 1750,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/anker-soundcore-life-u2i-bluetooth-neckband",
+     "price": 1999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/anker-soundcore-life-u2i-neckband/",
+     "price": 1940,
+     "oldPrice": 2900,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/anker-soundcore-life-u2i-neckband",
+     "price": 2500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Baseus",
+   "name": "Bowie P1x",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 1550
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/baseus/bowie-p1x/bowie-p1x-white-002-1200x630.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Baseus-Bowie-P1x-Half-In-Ear-Neckband-Wireless-Earphones3-3317.jpg",
+    "https://diamu.com.bd/wp-content/uploads/2023/10/BASEUS-Bowie-P1X-Neckband-Wireless-Earphones.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/baseus-bowie-p1x-neckband-earphone",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/baseus-bowie-p1x-neckband-earphone",
+     "price": 1550,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/baseus-bowie-p1x-half-in-ear-neckband-wireless-earphones",
+     "price": 1150,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/baseus-bowie-p1x-neckband/",
+     "price": 1340,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/baseus-bowie-p1x-neckband",
+     "price": 1400,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "OPPO",
+   "name": "Enco M33",
+   "category": "earbuds",
+   "releaseYear": 2023,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 4200
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Oppo-Enco-M33-Neckband-Wireless-Earphonefdh-4876.png",
+    "https://diamu.com.bd/wp-content/uploads/2023/11/OPPO-Enco-M33-Wireless-Neckband-Earphones.jpg"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oppo-enco-m33-neckband-wireless-earphone",
+     "price": 3500,
+     "oldPrice": 4200,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/oppo-enco-m33-wireless-neckband-earphones/",
+     "price": 3050,
+     "oldPrice": 4500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/oppo-enco-m33-45db-active-noise-canceling-neckaband-earphones/",
+     "price": 2790,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Xiaomi",
+   "name": "Redmi SonicBass",
+   "category": "earbuds",
+   "releaseYear": 2020,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 1799
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/xiaomi/redmi-sonicbass/redmi-sonicbass-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/686/Redmi_SonicBass_Wireless_Earphonecz.webp",
+    "https://diamu.com.bd/wp-content/uploads/2022/12/Redmi-SonicBass-Wireless-In-Ear-Earphones-1.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/xiaomi-redmi-sonicbass-wireless-nechband-earphone",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/xiaomi-redmi-sonicbass-wireless-nechband-earphone",
+     "price": 1799,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/redmi-sonicbass-wireless-neckband",
+     "price": 1950,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/redmi-sonicbass-wireless-neckband-earphones/",
+     "price": 1840,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Lenovo",
+   "name": "HE05X II",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 699
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earphone/lenovo/he05x/he05x-1200x630.webp",
+    "https://motionview.s3.amazonaws.com/images/products/profile/165978033878.Lenovo-HE05X-II%20-wireless-Neckband.webp",
+    "https://diamu.com.bd/wp-content/uploads/2023/02/Lenovo-HE05X-II-New-Edition-Wireless-Neckband.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/lenovo-he05x-ii-wireless-neckband-earphone",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/lenovo-he05x-ii-wireless-neckband-earphone",
+     "price": 640,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/lenovo-he05x-ii-new-edition-wireless-in-ear-neckband-earphone",
+     "price": 799,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/lenovo-he05x-ii-new-edition-wireless-neckband/",
+     "price": 690,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Hoco",
+   "name": "ES70",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 820
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/hoco/es70/es70-black-1200x630.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Hoco-ES70-Neckband-Wireless-Earphonea-6954.png",
+    "https://diamu.com.bd/wp-content/uploads/2023/12/Hoco-ES70-Long-Battery-Life-Bluetooth-Neckband.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/hoco-es70-wireless-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/hoco-es70-wireless-neckband",
+     "price": 749,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/hoco-es70-neckband-wireless-earphone",
+     "price": 700,
+     "oldPrice": 900,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/hoco-es70-bluetooth-neckband/",
+     "price": 690,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/hoco-es70-neckband",
+     "price": 1049,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Hoco",
+   "name": "ES69",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 820
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/hoco/es69/es69-black-01-1200x630.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Hoco-ES69-Wireless-Neckband-5400.jpg",
+    "https://diamu.com.bd/wp-content/uploads/2024/02/HOCO-ES69-Wireless-Neckband.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/hoco-es69-bluetooth-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/hoco-es69-bluetooth-neckband",
+     "price": 750,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/hoco-es69-wireless-neckband",
+     "price": 800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/hoco-es69-wireless-neckband/",
+     "price": 840,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/hoco-es69-bluetooth-neckband",
+     "price": 799,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/hoco-es69-bluetooth-neckband/",
+     "price": 720,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Hoco",
+   "name": "ES62 Plus",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 1250
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/hoco/es62-plus/es62-plus-black-04-1200x630.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Hoco-ES62-Plus-Neckband-Wireless-Earphonesa-1639.png",
+    "https://diamu.com.bd/wp-content/uploads/2026/01/Hoco-ES62-Plus-Neckband-Earphones.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/hoco-es62-plus-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/hoco-es62-plus-neckband",
+     "price": 1150,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/hoco-es62-plus-neckband-wireless-earphones",
+     "price": 1200,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/hoco-es62-plus-neckband/",
+     "price": 1090,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/hoco-es62-plus-neckband-earphones/",
+     "price": 1190,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Foneng",
+   "name": "BL34",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 720
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/foneng/bl34/bl34-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3685/BL34_2.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Foneng-BL34-Neckband-Bluetooth-Earphoneaa-5647.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/foneng-bl34-bluetooth-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/foneng-bl34-bluetooth-neckband",
+     "price": 660,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/foneng-bl34-neckband-bluetooth-earphone",
+     "price": 749,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/foneng-bl34-neckband-bluetooth-earphone",
+     "price": 799,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/foneng-bl34-neckband-bluetooth-earphone",
+     "price": 799,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/foneng-bl34-neckband-bluetooth-earphone",
+     "price": 850,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/foneng-bl34-neckband-bluetooth-earphone/",
+     "price": 690,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Foneng",
+   "name": "BL40",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 799
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/foneng/bl40/bl40-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4355/Foneng_BL40.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Foneng-BL40-Neckband-6319.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/foneng-bl40-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/foneng-bl40-neckband",
+     "price": 730,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/foneng-bl40-neckband",
+     "price": 899,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/foneng-bl40-neckband",
+     "price": 950,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/foneng-bl40-neckband",
+     "price": 888,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/foneng-bl40-neckband-headphones/",
+     "price": 870,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Acefast",
+   "name": "N9",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 1080
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/acefast/n9-/n9-03-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/acefast-n9-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/acefast-n9-neckband",
+     "price": 990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/acefast-n9-enc-wireless-neckband-earphones/",
+     "price": 980,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "HiFuture",
+   "name": "FutureMate",
+   "category": "earbuds",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 3499
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/neckband/hifuture/futuremate/futuremate-black-01-1200x630.webp",
+    "https://assets.gadgetandgear.com/upload/product/20230624_1687591127_273100.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/hifuture-futuremate-wireless-neckband",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/hifuture-futuremate-wireless-neckband",
+     "price": 3199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/hifuture-future-mate-neckband",
+     "price": 2499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
     }
    ]
   }

@@ -1,1165 +1,1105 @@
 {
-  "category": "sneakers",
-  "sites": [
+ "category": "sneakers",
+ "sites": [
+  {
+   "name": "Three's",
+   "website": "https://threesbd.com",
+   "note": "শ্যামলী স্কয়ারের স্নিকার্সের দোকান; WooCommerce, robots খোলা। প্রোডাক্ট পেজে নিজেরাই \"1:1 Replica, made in Vietnam\" লেখে — ক্যাটালগের নামে সেটাই রাখা হয়েছে; condition সব unofficial।"
+  },
+  {
+   "name": "Splayd",
+   "website": "https://splayd.com.bd",
+   "note": "Shopify, robots খোলা। টাইটেলে খোলাখুলি \"1:1\" লেখা থাকে; দাম ক্যাটাগরি/সার্চ পেজে, প্রোডাক্ট পেজে যাচাই করা।"
+  },
+  {
+   "name": "Ragen",
+   "website": "https://ragenbd.com",
+   "note": "Shopify, robots খোলা (উত্তরা, লন্ডন প্লাজা)। কিছু টাইটেলে \"(1:1) grade\" বা \"OEM Grade\" লেখা; সার্চ পেজে দাম-স্টক, প্রোডাক্ট পেজে যাচাই করা।"
+  },
+  {
+   "name": "DOB Skateshop",
+   "website": "https://dob.com.bd",
+   "note": "WooCommerce, robots-এ সাধারণ bot-এর জন্য খোলা (crawl-delay 5)। Q&A-তে নিজেরাই বলে \"OEM grade replica imported from China\"; দাম সার্চ পেজে, প্রোডাক্ট পেজে যাচাই করা।"
+  },
+  {
+   "name": "Sneaker Zone",
+   "website": "https://sneakerzonebd.com",
+   "note": "Shopify, DOB Skateshop-এর সহ-প্রতিষ্ঠান — আলাদা সাইট আর দাম হলেও একই মালিকানা, তাই দুটোর দাম একই রকম হলে একটাকেই আসল তুলনা ধরতে হবে।"
+  },
+  {
+   "name": "Trek N Tread",
+   "website": "https://trekntread.com",
+   "note": "লারাভেল (Inertia) সাইট, robots খোলা; টাইটেলে নিজেরাই \"Grade - OEM\"/\"1:1\" লেখা; দাম ক্যাটালগ পাতায় দেখে প্রোডাক্ট পাতায় যাচাই করা (worker-এ আলাদা parser)।"
+  },
+  {
+   "name": "SneakersBD Official",
+   "website": "https://www.sneakersbdofficial.com",
+   "note": "কাস্টম (Laravel) সাইট, robots খোলা; টাইটেলে \"(OEM)\"/\"1:1\" গ্রেড লেখা; প্রোডাক্ট পাতায় product:price:amount মেটা থেকে দাম পড়া যায়।"
+  }
+ ],
+ "products": [
+  {
+   "brand": "Nike",
+   "name": "Air Force 1",
+   "category": "sneakers",
+   "variants": [
     {
-      "name": "Three's",
-      "website": "https://threesbd.com",
-      "note": "শ্যামলী স্কয়ারের স্নিকার্সের দোকান; WooCommerce, robots খোলা। প্রোডাক্ট পেজে নিজেরাই \"1:1 Replica, made in Vietnam\" লেখে — ক্যাটালগের নামে সেটাই রাখা হয়েছে; condition সব unofficial।"
-    },
-    {
-      "name": "Splayd",
-      "website": "https://splayd.com.bd",
-      "note": "Shopify, robots খোলা। টাইটেলে খোলাখুলি \"1:1\" লেখা থাকে; দাম ক্যাটাগরি/সার্চ পেজে, প্রোডাক্ট পেজে যাচাই করা।"
-    },
-    {
-      "name": "Ragen",
-      "website": "https://ragenbd.com",
-      "note": "Shopify, robots খোলা (উত্তরা, লন্ডন প্লাজা)। কিছু টাইটেলে \"(1:1) grade\" বা \"OEM Grade\" লেখা; সার্চ পেজে দাম-স্টক, প্রোডাক্ট পেজে যাচাই করা।"
-    },
-    {
-      "name": "DOB Skateshop",
-      "website": "https://dob.com.bd",
-      "note": "WooCommerce, robots-এ সাধারণ bot-এর জন্য খোলা (crawl-delay 5)। Q&A-তে নিজেরাই বলে \"OEM grade replica imported from China\"; দাম সার্চ পেজে, প্রোডাক্ট পেজে যাচাই করা।"
-    },
-    {
-      "name": "Sneaker Zone",
-      "website": "https://sneakerzonebd.com",
-      "note": "Shopify, DOB Skateshop-এর সহ-প্রতিষ্ঠান — আলাদা সাইট আর দাম হলেও একই মালিকানা, তাই দুটোর দাম একই রকম হলে একটাকেই আসল তুলনা ধরতে হবে।"
-    },
-    {
-      "name": "Trek N Tread",
-      "website": "https://trekntread.com",
-      "note": "লারাভেল (Inertia) সাইট, robots খোলা; টাইটেলে নিজেরাই \"Grade - OEM\"/\"1:1\" লেখা; দাম ক্যাটালগ পাতায় দেখে প্রোডাক্ট পাতায় যাচাই করা (worker-এ আলাদা parser)।"
-    },
-    {
-      "name": "SneakersBD Official",
-      "website": "https://www.sneakersbdofficial.com",
-      "note": "কাস্টম (Laravel) সাইট, robots খোলা; টাইটেলে \"(OEM)\"/\"1:1\" গ্রেড লেখা; প্রোডাক্ট পাতায় product:price:amount মেটা থেকে দাম পড়া যায়।"
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 5200
     }
-  ],
-  "products": [
+   ],
+   "colors": [
+    "White",
+    "Black"
+   ],
+   "images": [
+    "https://threesbd.com/wp-content/uploads/2026/03/Nike-Airforce-1-1.png"
+   ],
+   "offers": [
     {
-      "brand": "AF-1",
-      "name": "Air Force 1 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 5200
-        }
-      ],
-      "colors": [
-        "White",
-        "Black"
-      ],
-      "images": [
-        "https://threesbd.com/wp-content/uploads/2026/03/Nike-Airforce-1-1.png"
-      ],
-      "offers": [
-        {
-          "site": "Three's",
-          "url": "https://threesbd.com/product/nike-airforce-1-black/",
-          "price": 4500,
-          "oldPrice": 5200,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/air-force-1-triple-white",
-          "price": 5000,
-          "oldPrice": 6300,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Splayd",
-          "url": "https://splayd.com.bd/products/af-1-black-summit-white-gum-1-1",
-          "price": 5800,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
+     "site": "Three's",
+     "url": "https://threesbd.com/product/nike-airforce-1-black/",
+     "price": 4500,
+     "oldPrice": 5200,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
     },
     {
-      "brand": "Campus 00s",
-      "name": "Campus 00s 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 5800
-        }
-      ],
-      "colors": [
-        "Black",
-        "White"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2025/01/Frame-38CAMPUS-00S-SHOES-CORE-BLACK-600x600-1.png"
-      ],
-      "offers": [
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/adidas-originals-campus-00s-black/",
-          "price": 4600,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Sneaker Zone",
-          "url": "https://sneakerzonebd.com/products/adidas-campus-00s-black-suede",
-          "price": 4600,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Splayd",
-          "url": "https://splayd.com.bd/products/adidas-campus-00s-black-white",
-          "price": 5800,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/adidas-campus-00s",
-          "price": 3500,
-          "oldPrice": 6500,
-          "inStock": false,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/air-force-1-triple-white",
+     "price": 5000,
+     "oldPrice": 6300,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
     },
     {
-      "brand": "Samba",
-      "name": "Samba OG 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 5500
-        }
-      ],
-      "colors": [
-        "White",
-        "Black"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2024/09/Frame-111SAMBA-OG-SHOES-Core-Black-600x600.png"
-      ],
-      "offers": [
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/adidas-samba-og-shoes-cloud-white-core-black/",
-          "price": 3900,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/adidas-samba-began-white",
-          "price": 5500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Splayd",
-          "url": "https://splayd.com.bd/products/samba-og-night-navy-cream",
-          "price": 5500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "Samba",
-      "name": "Samba Vegan 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 5500
-        }
-      ],
-      "colors": [
-        "White",
-        "Black"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2025/09/56.webp"
-      ],
-      "offers": [
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/adidas-samba-vegan-og/",
-          "price": 3600,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Sneaker Zone",
-          "url": "https://sneakerzonebd.com/products/adidas-samba-vegan-og-copy",
-          "price": 4200,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Splayd",
-          "url": "https://splayd.com.bd/products/samba-og-black-white-gum-1-1",
-          "price": 5950,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "Onitsuka Tiger",
-      "name": "Mexico 66 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 5000
-        }
-      ],
-      "colors": [
-        "Black",
-        "White"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2026/02/o_1icr3p9hc13ag18beqvg159k1sqk1m.jpeg"
-      ],
-      "offers": [
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/onitsuka-tiger-mexico-66-black-white/",
-          "price": 5200,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Sneaker Zone",
-          "url": "https://sneakerzonebd.com/products/onitsuka-tiger-mexico-66-black-white",
-          "price": 5200,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/onitsuka-tiger-mexico-66-black-yellow",
-          "price": 5500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "SneakersBD Official",
-          "url": "https://www.sneakersbdofficial.com/product/show/onitsuka-tiger-mexico-66-black-white-oem-black-1246",
-          "price": 3000,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "Onitsuka Tiger",
-      "name": "Tokuten 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 5000
-        }
-      ],
-      "colors": [
-        "Cream",
-        "Brown"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2026/05/o_1j7h6u7dm1sj91ab018cp4q11jfs6f.jpeg"
-      ],
-      "offers": [
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/onitsuka-tiger-tokuten-birch-iron-navy/",
-          "price": 5200,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/onitsuka-tiger-tokuten-cream-brown",
-          "price": 4500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "SneakersBD Official",
-          "url": "https://www.sneakersbdofficial.com/product/show/onitsuka-tiger-tokuten-shoes-white-burgundy-grey-11-maroon-1234",
-          "price": 5000,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "Converse",
-      "name": "Chuck 70 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 5000
-        }
-      ],
-      "colors": [
-        "Black",
-        "White"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2025/04/website-photos-16.png"
-      ],
-      "offers": [
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/converse-chuck-70-high-top-black/",
-          "price": 2500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Sneaker Zone",
-          "url": "https://sneakerzonebd.com/products/converse-chuck-70-high-top-black",
-          "price": 3900,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/converse-chuck-70-canvas-garnet",
-          "price": 4500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "SneakersBD Official",
-          "url": "https://www.sneakersbdofficial.com/product/show/converse-chuck-taylor-all-star-70-hi-maroon-11-maroon-1202",
-          "price": 5500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "Converse",
-      "name": "Chuck Taylor All Star High 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 2500
-        }
-      ],
-      "colors": [
-        "Yellow",
-        "Black"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2026/07/1-1.png"
-      ],
-      "offers": [
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/converse-all-star-high-top-yellow/",
-          "price": 1800,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Sneaker Zone",
-          "url": "https://sneakerzonebd.com/products/converse-all-star-high-top-yellow",
-          "price": 1800,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Trek N Tread",
-          "url": "https://trekntread.com/products/all-star-converse-chuck-taylor-high-top-black-white",
-          "price": 1650,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "AJ-1",
-      "name": "Jordan 1 Low 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 5000
-        }
-      ],
-      "colors": [
-        "White",
-        "Black"
-      ],
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/0C93A3F9-9AD3-4F7C-956A-65514EB9E819.jpg?v=1777354620"
-      ],
-      "offers": [
-        {
-          "site": "Splayd",
-          "url": "https://splayd.com.bd/products/j-1-low-panda-1-1-new",
-          "price": 5950,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "SneakersBD Official",
-          "url": "https://www.sneakersbdofficial.com/product/show/jordan-1-low-panda-oem-black-white-1016",
-          "price": 3500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/air-jordan-1-retro-low-year-of-the-snake",
-          "price": 6500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Trek N Tread",
-          "url": "https://trekntread.com/products/nike-air-jordan-1-unc-university-north-carolina-blue-white-low-top-mens-sneakers-bd",
-          "price": 2090,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "AJ-1",
-      "name": "Jordan 1 Retro High 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 6000
-        }
-      ],
-      "colors": [
-        "White",
-        "Black"
-      ],
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/E892DE51-F5BD-4D4B-961E-B4223A89D196.jpg?v=1765101071"
-      ],
-      "offers": [
-        {
-          "site": "Splayd",
-          "url": "https://splayd.com.bd/products/jordan-1-high-chicago-lost-found-1-1",
-          "price": 8750,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "SneakersBD Official",
-          "url": "https://www.sneakersbdofficial.com/product/show/jordan-1-retro-high-mocha-oem-dark-mocha-1230",
-          "price": 4000,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/aj1-retro-high-tokyo-bio-oem-grade",
-          "price": 3800,
-          "inStock": false,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "AJ-4",
-      "name": "Jordan 4 Retro 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 6500
-        }
-      ],
-      "colors": [
-        "Black",
-        "Grey"
-      ],
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/F3106833-DA2C-4DA8-A90B-256D1E49C0E7.jpg?v=1757921014"
-      ],
-      "offers": [
-        {
-          "site": "Splayd",
-          "url": "https://splayd.com.bd/products/jordan-4-white-thunder-1-2",
-          "price": 8450,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/aj-4-fear",
-          "price": 6500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Trek N Tread",
-          "url": "https://trekntread.com/products/648-air-jordan-4-color-camo-grey-low-neck-grade-oem-superior",
-          "price": 4790,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "SneakersBD Official",
-          "url": "https://www.sneakersbdofficial.com/product/show/jordan-4-retro-military-black-oem-white-black-1228",
-          "price": 3500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "Nike SB",
-      "name": "Dunk Low 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 5000
-        }
-      ],
-      "colors": [
-        "White",
-        "Green"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2024/10/Untitled-3.png"
-      ],
-      "offers": [
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/nike-sb-dunk-low-verdy-visty/",
-          "price": 4200,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Sneaker Zone",
-          "url": "https://sneakerzonebd.com/products/nike-sb-dunk-low-verdy-visty",
-          "price": 4500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Splayd",
-          "url": "https://splayd.com.bd/products/sb-dunks-otomo-katsuhiro-bear-1-1",
-          "price": 6950,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "SneakersBD Official",
-          "url": "https://www.sneakersbdofficial.com/product/show/nike-sb-dunk-low-jarritos-oem-white-green-orange-1198",
-          "price": 3500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "New Balance",
-      "name": "9060 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 6000
-        }
-      ],
-      "colors": [
-        "Grey",
-        "Black"
-      ],
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/9ACC818F-6C97-4162-8E19-64520172F03D.jpg?v=1777342077"
-      ],
-      "offers": [
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/new-balance-9060-black-cement-dry-lime",
-          "price": 6000,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Splayd",
-          "url": "https://splayd.com.bd/products/nb-9060-grey-jet-black-1-1",
-          "price": 6200,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Trek N Tread",
-          "url": "https://trekntread.com/products/654-new-balance-9060-color-ash-grey-low-neck-grade-oem-superior",
-          "price": 2990,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "SneakersBD Official",
-          "url": "https://www.sneakersbdofficial.com/product/show/new-balance-9060-black-grey-11-black-grey-1063",
-          "price": 6500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "New Balance",
-      "name": "530 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 5500
-        }
-      ],
-      "colors": [
-        "Grey",
-        "White"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2026/09/4_f45a7fe0-6b02-4fe6-a4ac-799ba7e300b5.webp"
-      ],
-      "offers": [
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/new-balance-530-grey/",
-          "price": 4600,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Sneaker Zone",
-          "url": "https://sneakerzonebd.com/products/new-balance-530-grey",
-          "price": 4600,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/new-balance-530",
-          "price": 6600,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Trek N Tread",
-          "url": "https://trekntread.com/products/new-balance-mens-530-white-sky-blue-silver-casual-running-shoes-online-bd",
-          "price": 2990,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "Puma",
-      "name": "Speedcat OG 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 5000
-        }
-      ],
-      "colors": [
-        "Black",
-        "Red"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2025/01/Puma-Speedcat-OG-Sneakers-Unisex-–-Black.png"
-      ],
-      "offers": [
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/puma-speedcat-og-sneakers-unisex-black/",
-          "price": 5000,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Sneaker Zone",
-          "url": "https://sneakerzonebd.com/products/puma-speedcat-og-sneakers-unisex-black",
-          "price": 5000,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/puma-speed-cat-lux-chocolate-gum",
-          "price": 5500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Trek N Tread",
-          "url": "https://trekntread.com/products/471-puma-speed-cat-sneaker-color-red-low-neck-grade-oem-superior",
-          "price": 3590,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "Adidas",
-      "name": "Gazelle Indoor 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 4500
-        }
-      ],
-      "colors": [
-        "White",
-        "Ink"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2026/08/1-7.png"
-      ],
-      "offers": [
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/adidas-gazelle-indoor-white-preloved-ink/",
-          "price": 4300,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Sneaker Zone",
-          "url": "https://sneakerzonebd.com/products/adidas-gazelle-indoor-white-preloved-ink",
-          "price": 4300,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "SneakersBD Official",
-          "url": "https://www.sneakersbdofficial.com/product/show/adidas-gazelle-indoor-dark-grey-white-11-ashgray-1236",
-          "price": 5000,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "Vans",
-      "name": "Knu Skool 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 4300
-        }
-      ],
-      "colors": [
-        "Black",
-        "White"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2026/04/o_1j7rfuitm1pqh85h1qq7sf515pj1m.jpeg"
-      ],
-      "offers": [
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/vans-knu-skool-shoe/",
-          "price": 4300,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Sneaker Zone",
-          "url": "https://sneakerzonebd.com/products/vans-knu-skool-shoe",
-          "price": 4300,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "SneakersBD Official",
-          "url": "https://www.sneakersbdofficial.com/product/show/vans-knu-skool-black-white-oem-black-white-1128",
-          "price": 4000,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "Adidas",
-      "name": "Adizero Evo SL 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 4800
-        }
-      ],
-      "colors": [
-        "White",
-        "Black"
-      ],
-      "images": [
-        "https://dob.com.bd/wp-content/uploads/2026/08/Website-4.png"
-      ],
-      "offers": [
-        {
-          "site": "Three's",
-          "url": "https://threesbd.com/product/adidas-adizero-evo-sl-atr/",
-          "price": 5000,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "DOB Skateshop",
-          "url": "https://dob.com.bd/product/adizero-evo-sl-white-running-shoes/",
-          "price": 4800,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Splayd",
-          "url": "https://splayd.com.bd/products/adizero-evo-sl-mississippi-state",
-          "price": 4950,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "SneakersBD Official",
-          "url": "https://www.sneakersbdofficial.com/product/show/adidas-adizero-evo-sl-black-white-oem-black-white-1062",
-          "price": 3300,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "Adidas",
-      "name": "Adizero Adios Pro Evo 1 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 6000
-        }
-      ],
-      "colors": [
-        "White",
-        "Black"
-      ],
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/6A8E9CB0-B765-4DBF-AA3B-8D168B99BFA3.jpg?v=1763372458"
-      ],
-      "offers": [
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/adizero-adios-pro-evo-1-white-black",
-          "price": 6800,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Splayd",
-          "url": "https://splayd.com.bd/products/adizero-adios-pro-evo-1-white-black",
-          "price": 5950,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Trek N Tread",
-          "url": "https://trekntread.com/products/674-adizero-adios-pro-evo-1-light-blue-grade-11",
-          "price": 4790,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
-    },
-    {
-      "brand": "Adidas",
-      "name": "Adizero Adios Pro 4 1:1 Copy Sneakers",
-      "category": "sneakers",
-      "variants": [
-        {
-          "label": "Standard",
-          "attributes": {},
-          "officialPrice": 5500
-        }
-      ],
-      "colors": [
-        "Black",
-        "White"
-      ],
-      "images": [
-        "https://threesbd.com/wp-content/uploads/2026/09/2-2.png"
-      ],
-      "offers": [
-        {
-          "site": "Three's",
-          "url": "https://threesbd.com/product/adidas-adizero-adios-pro-4/",
-          "price": 5000,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Splayd",
-          "url": "https://splayd.com.bd/products/adizero-adios-pro-4-off-white-scarlet",
-          "price": 5500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        },
-        {
-          "site": "Ragen",
-          "url": "https://ragenbd.com/products/y-3-adios-pro-4-black",
-          "price": 6500,
-          "inStock": true,
-          "condition": "unofficial",
-          "region": null,
-          "checkedAt": "2026-10-24",
-          "variant": "Standard"
-        }
-      ]
+     "site": "Splayd",
+     "url": "https://splayd.com.bd/products/af-1-black-summit-white-gum-1-1",
+     "price": 5800,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
     }
-  ]
+   ]
+  },
+  {
+   "brand": "Adidas",
+   "name": "Campus 00s",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 5800
+    }
+   ],
+   "colors": [
+    "Black",
+    "White"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2025/01/Frame-38CAMPUS-00S-SHOES-CORE-BLACK-600x600-1.png"
+   ],
+   "offers": [
+    {
+     "site": "DOB Skateshop",
+     "url": "https://dob.com.bd/product/adidas-originals-campus-00s-black/",
+     "price": 4600,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sneaker Zone",
+     "url": "https://sneakerzonebd.com/products/adidas-campus-00s-black-suede",
+     "price": 4600,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Splayd",
+     "url": "https://splayd.com.bd/products/adidas-campus-00s-black-white",
+     "price": 5800,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/adidas-campus-00s",
+     "price": 3500,
+     "oldPrice": 6500,
+     "inStock": false,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Adidas",
+   "name": "Samba OG",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 5500
+    }
+   ],
+   "colors": [
+    "White",
+    "Black"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2024/09/Frame-111SAMBA-OG-SHOES-Core-Black-600x600.png"
+   ],
+   "offers": [
+    {
+     "site": "DOB Skateshop",
+     "url": "https://dob.com.bd/product/adidas-samba-og-shoes-cloud-white-core-black/",
+     "price": 3900,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/adidas-samba-began-white",
+     "price": 5500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Splayd",
+     "url": "https://splayd.com.bd/products/samba-og-night-navy-cream",
+     "price": 5500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Adidas",
+   "name": "Samba Vegan",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 5500
+    }
+   ],
+   "colors": [
+    "White",
+    "Black"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2025/09/56.webp"
+   ],
+   "offers": [
+    {
+     "site": "DOB Skateshop",
+     "url": "https://dob.com.bd/product/adidas-samba-vegan-og/",
+     "price": 3600,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Splayd",
+     "url": "https://splayd.com.bd/products/samba-og-black-white-gum-1-1",
+     "price": 5950,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Onitsuka Tiger",
+   "name": "Mexico 66",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 5000
+    }
+   ],
+   "colors": [
+    "Black",
+    "White"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2026/02/o_1icr3p9hc13ag18beqvg159k1sqk1m.jpeg"
+   ],
+   "offers": [
+    {
+     "site": "DOB Skateshop",
+     "url": "https://dob.com.bd/product/onitsuka-tiger-mexico-66-black-white/",
+     "price": 5200,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sneaker Zone",
+     "url": "https://sneakerzonebd.com/products/onitsuka-tiger-mexico-66-black-white",
+     "price": 5200,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/onitsuka-tiger-mexico-66-black-yellow",
+     "price": 5500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "SneakersBD Official",
+     "url": "https://www.sneakersbdofficial.com/product/show/onitsuka-tiger-mexico-66-black-white-oem-black-1246",
+     "price": 3000,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Onitsuka Tiger",
+   "name": "Tokuten",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 5000
+    }
+   ],
+   "colors": [
+    "Cream",
+    "Brown"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2026/05/o_1j7h6u7dm1sj91ab018cp4q11jfs6f.jpeg"
+   ],
+   "offers": [
+    {
+     "site": "DOB Skateshop",
+     "url": "https://dob.com.bd/product/onitsuka-tiger-tokuten-birch-iron-navy/",
+     "price": 5200,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/onitsuka-tiger-tokuten-cream-brown",
+     "price": 4500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "SneakersBD Official",
+     "url": "https://www.sneakersbdofficial.com/product/show/onitsuka-tiger-tokuten-shoes-white-burgundy-grey-11-maroon-1234",
+     "price": 5000,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Converse",
+   "name": "Chuck 70 High",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 5000
+    }
+   ],
+   "colors": [
+    "Black",
+    "White"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2025/04/website-photos-16.png"
+   ],
+   "offers": [
+    {
+     "site": "DOB Skateshop",
+     "url": "https://dob.com.bd/product/converse-chuck-70-high-top-black/",
+     "price": 2500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sneaker Zone",
+     "url": "https://sneakerzonebd.com/products/converse-chuck-70-high-top-black",
+     "price": 3900,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/converse-chuck-70-canvas-garnet",
+     "price": 4500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "SneakersBD Official",
+     "url": "https://www.sneakersbdofficial.com/product/show/converse-chuck-taylor-all-star-70-hi-maroon-11-maroon-1202",
+     "price": 5500,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Converse",
+   "name": "Chuck Taylor All Star High",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 2500
+    }
+   ],
+   "colors": [
+    "Yellow",
+    "Black"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2026/07/1-1.png"
+   ],
+   "offers": [
+    {
+     "site": "DOB Skateshop",
+     "url": "https://dob.com.bd/product/converse-all-star-high-top-yellow/",
+     "price": 1800,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sneaker Zone",
+     "url": "https://sneakerzonebd.com/products/converse-all-star-high-top-yellow",
+     "price": 1800,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Trek N Tread",
+     "url": "https://trekntread.com/products/all-star-converse-chuck-taylor-high-top-black-white",
+     "price": 1650,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Jordan",
+   "name": "Air Jordan 1 Low",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 5000
+    }
+   ],
+   "colors": [
+    "White",
+    "Black"
+   ],
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/0C93A3F9-9AD3-4F7C-956A-65514EB9E819.jpg?v=1777354620"
+   ],
+   "offers": [
+    {
+     "site": "SneakersBD Official",
+     "url": "https://www.sneakersbdofficial.com/product/show/jordan-1-low-panda-oem-black-white-1016",
+     "price": 3500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/air-jordan-1-retro-low-year-of-the-snake",
+     "price": 6500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Trek N Tread",
+     "url": "https://trekntread.com/products/nike-air-jordan-1-unc-university-north-carolina-blue-white-low-top-mens-sneakers-bd",
+     "price": 2090,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Jordan",
+   "name": "Air Jordan 1 Retro High",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 6000
+    }
+   ],
+   "colors": [
+    "White",
+    "Black"
+   ],
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/E892DE51-F5BD-4D4B-961E-B4223A89D196.jpg?v=1765101071"
+   ],
+   "offers": [
+    {
+     "site": "Splayd",
+     "url": "https://splayd.com.bd/products/jordan-1-high-chicago-lost-found-1-1",
+     "price": 8750,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "SneakersBD Official",
+     "url": "https://www.sneakersbdofficial.com/product/show/jordan-1-retro-high-mocha-oem-dark-mocha-1230",
+     "price": 4000,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/aj1-retro-high-tokyo-bio-oem-grade",
+     "price": 3800,
+     "inStock": false,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Jordan",
+   "name": "Air Jordan 4 Retro",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 6500
+    }
+   ],
+   "colors": [
+    "Black",
+    "Grey"
+   ],
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/F3106833-DA2C-4DA8-A90B-256D1E49C0E7.jpg?v=1757921014"
+   ],
+   "offers": [
+    {
+     "site": "Splayd",
+     "url": "https://splayd.com.bd/products/jordan-4-white-thunder-1-2",
+     "price": 8450,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/aj-4-fear",
+     "price": 6500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Trek N Tread",
+     "url": "https://trekntread.com/products/648-air-jordan-4-color-camo-grey-low-neck-grade-oem-superior",
+     "price": 4790,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "SneakersBD Official",
+     "url": "https://www.sneakersbdofficial.com/product/show/jordan-4-retro-military-black-oem-white-black-1228",
+     "price": 3500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Nike",
+   "name": "SB Dunk Low",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 5000
+    }
+   ],
+   "colors": [
+    "White",
+    "Green"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2024/10/Untitled-3.png"
+   ],
+   "offers": [
+    {
+     "site": "DOB Skateshop",
+     "url": "https://dob.com.bd/product/nike-sb-dunk-low-verdy-visty/",
+     "price": 4200,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sneaker Zone",
+     "url": "https://sneakerzonebd.com/products/nike-sb-dunk-low-verdy-visty",
+     "price": 4500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Splayd",
+     "url": "https://splayd.com.bd/products/sb-dunks-otomo-katsuhiro-bear-1-1",
+     "price": 6950,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "SneakersBD Official",
+     "url": "https://www.sneakersbdofficial.com/product/show/nike-sb-dunk-low-jarritos-oem-white-green-orange-1198",
+     "price": 3500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "New Balance",
+   "name": "9060",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 6000
+    }
+   ],
+   "colors": [
+    "Grey",
+    "Black"
+   ],
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/9ACC818F-6C97-4162-8E19-64520172F03D.jpg?v=1777342077"
+   ],
+   "offers": [
+    {
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/new-balance-9060-black-cement-dry-lime",
+     "price": 6000,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Splayd",
+     "url": "https://splayd.com.bd/products/nb-9060-grey-jet-black-1-1",
+     "price": 6200,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Trek N Tread",
+     "url": "https://trekntread.com/products/654-new-balance-9060-color-ash-grey-low-neck-grade-oem-superior",
+     "price": 2990,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "SneakersBD Official",
+     "url": "https://www.sneakersbdofficial.com/product/show/new-balance-9060-black-grey-11-black-grey-1063",
+     "price": 6500,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "New Balance",
+   "name": "530",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 5500
+    }
+   ],
+   "colors": [
+    "Grey",
+    "White"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2026/09/4_f45a7fe0-6b02-4fe6-a4ac-799ba7e300b5.webp"
+   ],
+   "offers": [
+    {
+     "site": "Sneaker Zone",
+     "url": "https://sneakerzonebd.com/products/new-balance-530-grey",
+     "price": 4600,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/new-balance-530",
+     "price": 6600,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Trek N Tread",
+     "url": "https://trekntread.com/products/new-balance-mens-530-white-sky-blue-silver-casual-running-shoes-online-bd",
+     "price": 2990,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Puma",
+   "name": "Speedcat OG",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 5000
+    }
+   ],
+   "colors": [
+    "Black",
+    "Red"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2025/01/Puma-Speedcat-OG-Sneakers-Unisex-–-Black.png"
+   ],
+   "offers": [
+    {
+     "site": "DOB Skateshop",
+     "url": "https://dob.com.bd/product/puma-speedcat-og-sneakers-unisex-black/",
+     "price": 5000,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sneaker Zone",
+     "url": "https://sneakerzonebd.com/products/puma-speedcat-og-sneakers-unisex-black",
+     "price": 5000,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/puma-speed-cat-lux-chocolate-gum",
+     "price": 5500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Trek N Tread",
+     "url": "https://trekntread.com/products/471-puma-speed-cat-sneaker-color-red-low-neck-grade-oem-superior",
+     "price": 3590,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Adidas",
+   "name": "Gazelle Indoor",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 4500
+    }
+   ],
+   "colors": [
+    "White",
+    "Ink"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2026/08/1-7.png"
+   ],
+   "offers": [
+    {
+     "site": "DOB Skateshop",
+     "url": "https://dob.com.bd/product/adidas-gazelle-indoor-white-preloved-ink/",
+     "price": 4300,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sneaker Zone",
+     "url": "https://sneakerzonebd.com/products/adidas-gazelle-indoor-white-preloved-ink",
+     "price": 4300,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "SneakersBD Official",
+     "url": "https://www.sneakersbdofficial.com/product/show/adidas-gazelle-indoor-dark-grey-white-11-ashgray-1236",
+     "price": 5000,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Vans",
+   "name": "Knu Skool",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 4300
+    }
+   ],
+   "colors": [
+    "Black",
+    "White"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2026/04/o_1j7rfuitm1pqh85h1qq7sf515pj1m.jpeg"
+   ],
+   "offers": [
+    {
+     "site": "DOB Skateshop",
+     "url": "https://dob.com.bd/product/vans-knu-skool-shoe/",
+     "price": 4300,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sneaker Zone",
+     "url": "https://sneakerzonebd.com/products/vans-knu-skool-shoe",
+     "price": 4300,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "SneakersBD Official",
+     "url": "https://www.sneakersbdofficial.com/product/show/vans-knu-skool-black-white-oem-black-white-1128",
+     "price": 4000,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Adidas",
+   "name": "Adizero Evo SL",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 4800
+    }
+   ],
+   "colors": [
+    "White",
+    "Black"
+   ],
+   "images": [
+    "https://dob.com.bd/wp-content/uploads/2026/08/Website-4.png"
+   ],
+   "offers": [
+    {
+     "site": "Three's",
+     "url": "https://threesbd.com/product/adidas-adizero-evo-sl-atr/",
+     "price": 5000,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "DOB Skateshop",
+     "url": "https://dob.com.bd/product/adizero-evo-sl-white-running-shoes/",
+     "price": 4800,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "SneakersBD Official",
+     "url": "https://www.sneakersbdofficial.com/product/show/adidas-adizero-evo-sl-black-white-oem-black-white-1062",
+     "price": 3300,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Adidas",
+   "name": "Adizero Adios Pro Evo 1",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 6000
+    }
+   ],
+   "colors": [
+    "White",
+    "Black"
+   ],
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0578/9951/6003/files/6A8E9CB0-B765-4DBF-AA3B-8D168B99BFA3.jpg?v=1763372458"
+   ],
+   "offers": [
+    {
+     "site": "Ragen",
+     "url": "https://ragenbd.com/products/adizero-adios-pro-evo-1-white-black",
+     "price": 6800,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Trek N Tread",
+     "url": "https://trekntread.com/products/674-adizero-adios-pro-evo-1-light-blue-grade-11",
+     "price": 4790,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Adidas",
+   "name": "Adizero Adios Pro 4",
+   "category": "sneakers",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 5500
+    }
+   ],
+   "colors": [
+    "Black",
+    "White"
+   ],
+   "images": [
+    "https://threesbd.com/wp-content/uploads/2026/09/2-2.png"
+   ],
+   "offers": [
+    {
+     "site": "Three's",
+     "url": "https://threesbd.com/product/adidas-adizero-adios-pro-4/",
+     "price": 5000,
+     "inStock": true,
+     "condition": "replica_premium",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    },
+    {
+     "site": "Splayd",
+     "url": "https://splayd.com.bd/products/adizero-adios-pro-4-off-white-scarlet",
+     "price": 5500,
+     "inStock": true,
+     "condition": "replica",
+     "region": null,
+     "checkedAt": "2026-10-24",
+     "variant": "Standard"
+    }
+   ]
+  }
+ ]
 }

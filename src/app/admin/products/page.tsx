@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
+import { ConditionSelect } from "@/components/admin/ConditionSelect";
 import { Field, Select, TextArea } from "@/components/admin/Field";
 import { SearchBox } from "@/components/admin/ListSearch";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
@@ -163,13 +164,7 @@ function ManualPriceForm({ data, onDone }: { data: Awaited<ReturnType<typeof loa
           </option>
         ))}
       </Select>
-      <Select label={t.admin.products.condition} name="condition" defaultValue="official">
-        {(Object.entries(t.condition) as [Condition, string][]).map(([id, label]) => (
-          <option key={id} value={id}>
-            {label}
-          </option>
-        ))}
-      </Select>
+      <ConditionSelect category={product?.category} />
       <Field label={t.admin.products.region} name="region" placeholder={t.admin.products.regionPlaceholder} list="product-regions" key={`region-${productId}`} />
       <datalist id="product-regions">
         {(product?.regions ?? []).map((r) => (

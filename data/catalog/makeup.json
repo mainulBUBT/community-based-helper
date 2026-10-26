@@ -1,0 +1,2259 @@
+{
+  "category": "makeup",
+  "sites": [
+    {
+      "name": "ALZAK",
+      "website": "https://alzakbd.com"
+    },
+    {
+      "name": "Arogga",
+      "website": "https://www.arogga.com"
+    },
+    {
+      "name": "BD Amajan Shop",
+      "website": "https://bdamajanshop.com"
+    },
+    {
+      "name": "Beauty Booth",
+      "website": "https://beautybooth.com.bd"
+    },
+    {
+      "name": "Beprincess BD",
+      "website": "https://beprincessbd.com"
+    },
+    {
+      "name": "Chardike",
+      "website": "https://chardike.com"
+    },
+    {
+      "name": "Color World",
+      "website": "https://colorworld.com.bd"
+    },
+    {
+      "name": "EmartWay Skincare",
+      "website": "https://www.emartwayskincare.com.bd"
+    },
+    {
+      "name": "OHSOGO",
+      "website": "https://www.ohsogo.com"
+    },
+    {
+      "name": "Perfecto",
+      "website": "https://perfectobd.com"
+    },
+    {
+      "name": "Shajgoj",
+      "website": "https://shop.shajgoj.com"
+    },
+    {
+      "name": "Skincare Shop",
+      "website": "https://skincareshop.com.bd"
+    },
+    {
+      "name": "Klassy Missy",
+      "website": "https://klassy.com.bd"
+    },
+    {
+      "name": "Lira Import",
+      "website": "https://liraimportltd.com"
+    },
+    {
+      "name": "Skin Revive BD",
+      "website": "https://skinrevivebd.com"
+    },
+    {
+      "name": "UK Direct BD",
+      "website": "https://ukdirectbd.com"
+    },
+    {
+      "name": "Glowella",
+      "website": "https://glowellabd.com"
+    }
+  ],
+  "products": [
+    {
+      "brand": "Essence",
+      "name": "Lash Princess False Lash Effect Mascara",
+      "variants": [
+        {
+          "label": "12ml",
+          "attributes": {
+            "capacity": "12ml"
+          },
+          "officialPrice": 699
+        }
+      ],
+      "images": [
+        "https://www.ohsogo.com/cdn/shop/files/Essence_Lash_Princess_False_Lash_Effect_Mascara_12ml.jpg?v=1785058117",
+        "https://beprincessbd.com/wp-content/uploads/2022/12/dthdth.jpg",
+        "https://d1puc9h291tp0h.cloudfront.net/uploads/all/TUW9ENQY3oe3utWbWWCBa17MZqrf7irP2Ac4ptFy.png",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNTdcLzU3OTc5LUVzc2VuY2UtTGFzaC1QcmluY2Vzcy1GYWxzZS1MYXNoLUVmZmVjdC1NYXNjYXJhLTEybWwtZDdkNi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+        "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(1323).jpg"
+      ],
+      "offers": [
+        {
+          "variant": "12ml",
+          "site": "ALZAK",
+          "url": "https://alzakbd.com/product/essence-lash-princess-false-lash-mascara/",
+          "price": 650,
+          "oldPrice": 950,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/57979/essence-lash-princess-false-lash-effect-mascara",
+          "price": 550,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/essence-lash-princess-false-lash-effect-mascara/",
+          "price": 650,
+          "oldPrice": 800,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Beauty Booth",
+          "url": "https://beautybooth.com.bd/product/essence-lash-princess-false-lash-effect-mascara-12ml",
+          "price": 750,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/essence-lash-princess-false-lash-effect-mascara/",
+          "price": 550,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/essence-lash-princess-false-lash-effect-mascara-12ml",
+          "price": 620,
+          "oldPrice": 630,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/essence-lash-princess-false-lash-effect-mascara-12ml/",
+          "price": 650,
+          "oldPrice": 850,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/essence-lash-princess-false-lash-effect-mascara",
+          "price": 600,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/essence-lash-princess-false-lash-effect-mascara-12ml",
+          "price": 620,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/essence-lash-princess-false-lash-mascara",
+          "price": 530,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/essence-lash-princess-false-lash-mascara",
+          "price": 749,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/essence-lash-princess-false-lash-effect-mascara-12ml/",
+          "price": 640,
+          "oldPrice": 750,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Essence",
+      "name": "Lash Princess False Lash Effect Waterproof Mascara",
+      "variants": [
+        {
+          "label": "12ml",
+          "attributes": {
+            "capacity": "12ml"
+          },
+          "officialPrice": 650
+        }
+      ],
+      "images": [
+        "https://www.ohsogo.com/cdn/shop/files/Essence_Lash_Princess_Falsh_Lash_Effect_Waterproof_Mascara_12ml.jpg?v=1785059319",
+        "https://d1puc9h291tp0h.cloudfront.net/uploads/all/lfYBSHnJoic6Ds6saPspnaEjsrCycgf6cZBMqSvB.jpg",
+        "https://beprincessbd.com/wp-content/uploads/2022/12/05-1.png",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0VmFyaWFudC1wdl9pbWFnZXNcLzYzNTA1XC82MzUwNS0wN2E2NGFmNTMwYmZjNGYyZDExN2ZiZjBjNzA1NzQ4ZC0xLXNkcWpuaC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+        "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(1325).jpg"
+      ],
+      "offers": [
+        {
+          "variant": "12ml",
+          "site": "ALZAK",
+          "url": "https://alzakbd.com/product/essence-lash-princess-false-lash-effect-mascara-waterproof/",
+          "price": 650,
+          "oldPrice": 950,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/63495/essence-lash-princess-false-lash-effect-waterproof-mascara",
+          "price": 500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/essence-lash-princess-false-lash-effect-waterproof-mascara-12ml/",
+          "price": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Beauty Booth",
+          "url": "https://beautybooth.com.bd/product/essence-lash-princess-false-lash-effect-waterproof-mascara-12ml",
+          "price": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/essence-lash-princess-false-lash-effect-waterproof-mascara/",
+          "price": 550,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/essence-lash-princess-false-lash-effect-mascara-waterproof-12ml",
+          "price": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/essence-lash-princess-false-lash-effect-mascara-waterproof-12ml/",
+          "price": 650,
+          "oldPrice": 850,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/essence-lash-princess-false-lash-effect-mascara-waterproof",
+          "price": 600,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/essence-lash-princess-falsh-lash-effect-waterproof-mascara-12ml",
+          "price": 600,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/essence-lash-princess-false-lash-mascara-waterproof",
+          "price": 530,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/essence-lash-princess-false-lash-effect-mascara-waterproof",
+          "price": 749,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/essence-lash-princess-false-lash-effect-mascara-waterproof-12ml/",
+          "price": 690,
+          "oldPrice": 750,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Essence",
+      "name": "I Love Extreme Crazy Volume Mascara",
+      "variants": [
+        {
+          "label": "12ml",
+          "attributes": {
+            "capacity": "12ml"
+          },
+          "officialPrice": 625
+        }
+      ],
+      "images": [
+        "https://www.ohsogo.com/cdn/shop/files/Essence_I_Love_Extreme_Crazy_Volume_Mascara_12ml.jpg?v=1785052365",
+        "https://d1puc9h291tp0h.cloudfront.net/uploads/all/GNkEzJWapzymW9CI0Uatm6oGsKuTaQCiDQS3LoFL.jpg",
+        "https://cdn.klassy.com.bd/uploads/products/products/Essence-i-love-extreme-crazy-volume-mascara-12ml-01-black-7ce7-products.webp",
+        "https://beprincessbd.com/wp-content/uploads/2022/12/Website-Picture-BP-546-×-546px-2026-03-06T114517.956.png",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNTVcLzU1ODgwLXl5eXl5LWZoanY5My5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19"
+      ],
+      "offers": [
+        {
+          "variant": "12ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/55880/essence-i-love-extreme-crazy-volume-mascara-12ml",
+          "price": 575,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/essence-i-love-extreme-crazy-volume-mascara-12ml/",
+          "price": 650,
+          "oldPrice": 890,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Beauty Booth",
+          "url": "https://beautybooth.com.bd/product/essence-i-love-extreme-crazy-volume-mascara",
+          "price": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/essence-i-love-extreme-crazy-volume-mascara/",
+          "price": 480,
+          "oldPrice": 600,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/essence-i-love-extreme-crazy-volume-mascara-12ml",
+          "price": 550,
+          "oldPrice": 800,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/essence-i-love-extreme-crazy-volume-mascara-12ml/",
+          "price": 590,
+          "oldPrice": 850,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/essence-i-love-extreme-crazy-volume-mascara-12ml",
+          "price": 520,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/essence-i-love-extreme-crazy-volume-mascara-black",
+          "price": 598,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/essence-i-love-extreme-crazy-volume-mascara-12ml",
+          "price": 530,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/essence-i-love-extreme-crazy-volume-mascara",
+          "price": 540,
+          "oldPrice": 600,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/essence-i-love-extreme-crazy-volume-mascara",
+          "price": 699,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/essence-i-love-extreme-crazy-volume-mascara-12ml/",
+          "price": 640,
+          "oldPrice": 750,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Maybelline",
+      "name": "Colossal Kajal",
+      "variants": [
+        {
+          "label": "0.35g",
+          "attributes": {
+            "capacity": "0.35g"
+          },
+          "officialPrice": 450
+        }
+      ],
+      "images": [
+        "https://www.ohsogo.com/cdn/shop/files/Maybelline_The_Colossal_Kajal_Deep_Black_0.35g.jpg?v=1784040088",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Maybelline-Colossal-Kohl-Kajal-24H-Black.jpg",
+        "https://colorworld.com.bd/wp-content/uploads/2026/07/v3Sx8rTwWjZkf5Ad60lqFKZWbnLEvFHuYwzkJjMR.webp",
+        "https://bk.shajgoj.com/storage/2024/12/maybelline-colossal-kohl-kajal-24h-black.jpg",
+        "https://cdn.klassy.com.bd/uploads/assets/products/maybelline-colossal-kohl-kajal-24h-black-qxcpjg.webp"
+      ],
+      "offers": [
+        {
+          "variant": "0.35g",
+          "site": "ALZAK",
+          "url": "https://alzakbd.com/product/maybelline-new-york-colossal-kajal/",
+          "price": 350,
+          "oldPrice": 550,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/56248/maybelline-new-york-the-colossal-deep-black-smudge-proof-waterproof-kajal-with-soothing-aloe-vera-vitamin-c-e",
+          "price": 345,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/maybelline-colossal-kohl-kajal-24h-deep-black-smudge-resistant/",
+          "price": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Beauty Booth",
+          "url": "https://beautybooth.com.bd/product/maybelline-new-york-the-colossal-kajal-black",
+          "price": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/maybelline-colossal-kohl-kajal-24h-black-035g",
+          "price": 390,
+          "oldPrice": 440,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/maybelline-colossal-kohl-kajal-24h-black-0-35gm/",
+          "price": 350,
+          "oldPrice": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/Maybelline-Colossal-Kohl-Kajal-24H-Black-bMplR",
+          "price": 399,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/mabelline-colossal-kajal-deep-black/",
+          "price": 300,
+          "oldPrice": 580,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/maybelline-the-colossal-kajal-deep-black-0-35g",
+          "price": 350,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/maybelline-colossal-kohl-kajal-24h",
+          "price": 350,
+          "oldPrice": 400,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/maybelline-colossal-kohl-kajal-24h-black",
+          "price": 370,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Skin Revive BD",
+          "url": "https://skinrevivebd.com/product/maybelline-colossal-kohl-kajal-24h-black/",
+          "price": 350,
+          "oldPrice": 500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/maybelline-colossal-kohl-kajal-24h-black-0-35gm/",
+          "price": 380,
+          "oldPrice": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "UK Direct BD",
+          "url": "https://ukdirectbd.com/product/maybelline-colossal-kohl-kajal-24h-black-bold-smudge-resistant-eyeliner/",
+          "price": 490,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Maybelline",
+      "name": "Lash Sensational Sky High Mascara",
+      "variants": [
+        {
+          "label": "7.2ml",
+          "attributes": {
+            "capacity": "7.2ml"
+          },
+          "officialPrice": 1674
+        }
+      ],
+      "images": [
+        "https://cdn.klassy.com.bd/uploads/products/maybelline-lash-sensational-sky-high-mascara-7.2ml-01-very-black-0b2b-products.webp",
+        "https://beprincessbd.com/wp-content/uploads/2024/01/85-2.jpg",
+        "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(1422).jpg",
+        "https://skincareshop.com.bd/wp-content/uploads/2026/03/Maybelline-Lash-Sensational-Sky-High-Mascara-7.2ML-6.jpg",
+        "https://bdamajanshop.com/wp-content/uploads/2025/03/normal-XfASSoOjcCRllhD1sciHb40jtshO9C.jpeg"
+      ],
+      "offers": [
+        {
+          "variant": "7.2ml",
+          "site": "ALZAK",
+          "url": "https://alzakbd.com/product/maybelline-lash-sensational-sky-high-mascara-true-brown/",
+          "price": 1450,
+          "oldPrice": 2250,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "7.2ml",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/maybelline-lash-sensational-sky-high-tinted-primer-mascara-soft-black/",
+          "price": 1090,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "7.2ml",
+          "site": "Beauty Booth",
+          "url": "https://beautybooth.com.bd/product/maybelline-new-york-lash-sensational-sky-high-mascara-black-7-2ml",
+          "price": 1250,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "7.2ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/maybelline-lash-sensational-sky-high-mascara-very-black-801/",
+          "price": 1220,
+          "oldPrice": 1550,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "7.2ml",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/maybelline-lash-sensational-sky-high-mascara-01-very-black-7-2ml-JkV4f",
+          "price": 1798,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "7.2ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/maybelline-lash-sensational-sky-high-mascara",
+          "price": 1250,
+          "oldPrice": 1400,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "7.2ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/maybelline-lash-sensational-sky-high-mascara-7-2ml/",
+          "price": 1480,
+          "oldPrice": 1800,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "7.2ml",
+          "site": "UK Direct BD",
+          "url": "https://ukdirectbd.com/product/maybelline-new-york-lash-sensational-sky-high-washable-mascara-6ml/",
+          "price": 1490,
+          "oldPrice": 1850,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Lakme",
+      "name": "Eyeconic Kajal",
+      "variants": [
+        {
+          "label": "0.35g",
+          "attributes": {
+            "capacity": "0.35g"
+          },
+          "officialPrice": 395
+        }
+      ],
+      "images": [
+        "https://www.ohsogo.com/cdn/shop/files/Lakme9To5EyeconicKajal-DeepBlack.jpg?v=1784544424",
+        "https://cdn.klassy.com.bd/uploads/assets/products/lakm-eyeconic-kajal-black-035g-original-dqarfz.webp",
+        "https://colorworld.com.bd/wp-content/uploads/2026/07/3yxdUVgHiePrO7GpkfS8hlD1hGsbIf66trQTK6fX.webp",
+        "https://skincareshop.com.bd/wp-content/uploads/2021/11/Lakme-Eyeconic-Kajal-Deep-Black-9.jpg",
+        "https://bk.shajgoj.com/storage/2018/05/Lakme-Eyeconic-Kajal-Deep-Black2.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "0.35g",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/lakme-eyeconic-kajal-deep-black-0-35gm/",
+          "price": 390,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Beauty Booth",
+          "url": "https://beautybooth.com.bd/product/lakme-eyeconic-kajal-deep-black-035gm",
+          "price": 400,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/lakme-9to5-eyeconic-kajal-deep-black-0-35g/",
+          "price": 390,
+          "oldPrice": 450,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/Lakm-Eyeconic-Kajal-Black-035g-Original-BuXmy",
+          "price": 550,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/lakme-9to5-eyeconic-kajal-deep-black",
+          "price": 340,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/lakme-eyeconic-kajal-deep-black",
+          "price": 375,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/lakme-eyeconic-kajal-deep-black/",
+          "price": 380,
+          "oldPrice": 550,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "0.35g",
+          "site": "UK Direct BD",
+          "url": "https://ukdirectbd.com/product/lakme-eyeconic-kajal-deep-black-0-35gm/",
+          "price": 350,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "W7",
+      "name": "Liquid Eyeliner Pot",
+      "variants": [
+        {
+          "label": "8g",
+          "attributes": {
+            "capacity": "8g"
+          },
+          "officialPrice": 350
+        }
+      ],
+      "images": [
+        "https://d1puc9h291tp0h.cloudfront.net/uploads/all/Sy1XIFA5oAHRP8p3HPCxnc1n68KVqaxifSslMbc9.jpg",
+        "https://www.ohsogo.com/cdn/shop/products/w7lepb-1_1.jpg?v=1696405454",
+        "https://beprincessbd.com/wp-content/uploads/2023/01/21-1.png",
+        "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(1469).jpg",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/w7-Liquid-Eyeliner-Pot-800.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "8g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/55886/w7-liquid-eyeliner-pot",
+          "price": 290,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "8g",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/w7-liquid-eyeliner-pot-8ml/",
+          "price": 240,
+          "oldPrice": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "8g",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/w7-liquid-eyeliner-pot/",
+          "price": 250,
+          "oldPrice": 350,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "8g",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/w7-liquid-eyeliner-pot-8g",
+          "price": 275,
+          "oldPrice": 425,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "8g",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/w7-liquid-eyeliner-pot",
+          "price": 270,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "8g",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/w7-liquid-eyeliner-pot/",
+          "price": 250,
+          "oldPrice": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "8g",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/w7-liquid-eyeliner-pot-black-8g",
+          "price": 290,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "8g",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/w7-liquid-eyeliner-pot",
+          "price": 225,
+          "oldPrice": 350,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "8g",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/w7-liquid-eyeliner-pot",
+          "price": 249,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "8g",
+          "site": "Skin Revive BD",
+          "url": "https://skinrevivebd.com/product/w7-liquid-eyeliner-pot-8ml/",
+          "price": 290,
+          "oldPrice": 390,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "8g",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/w7-liquid-eyeliner-pot-8gm/",
+          "price": 390,
+          "oldPrice": 430,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Technic",
+      "name": "Mega Lash Water Resistant Mascara",
+      "variants": [
+        {
+          "label": "12ml",
+          "attributes": {
+            "capacity": "12ml"
+          },
+          "officialPrice": 465
+        }
+      ],
+      "images": [
+        "https://www.ohsogo.com/cdn/shop/products/technic-mega-lash-waterproof-mascara-black-4955-550x688w.jpg?v=1696405661",
+        "https://beprincessbd.com/wp-content/uploads/2022/12/27-4.png",
+        "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(1496).jpg",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Technic-Mega-Lash-Water-Resistant-Mascara-1.jpg",
+        "https://colorworld.com.bd/wp-content/uploads/2026/07/iH7e2YZPWmTw7btqAAvu9rcS6sP4XnG1xxjzI4bV.webp"
+      ],
+      "offers": [
+        {
+          "variant": "12ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/56623/technic-mega-lash-water-resistant-mascara-black",
+          "price": 337,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/technic-mega-lash-water-resistant-mascara-12ml/",
+          "price": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/technic-megalash-water-resistant-mascara/",
+          "price": 350,
+          "oldPrice": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/technic-mega-lash-water-resistant-mascara-12ml",
+          "price": 349,
+          "oldPrice": 550,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/technic-mega-lash-water-resistant-mascara-12ml/",
+          "price": 399,
+          "oldPrice": 480,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/technic-mega-lash-water-resistant-mascara-black/",
+          "price": 340,
+          "oldPrice": 500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/technic-mega-lash-water-resistant-mascara-12ml",
+          "price": 420,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/technic-mega-lash-water-resistant-mascara-blue-packaging",
+          "price": 320,
+          "oldPrice": 350,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/technic-mega-lash-waterproof-mascara",
+          "price": 550,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "12ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/technic-mega-lash-water-resistant-mascara-12ml/",
+          "price": 450,
+          "oldPrice": 550,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Technic",
+      "name": "Mega Lash Volumising Mascara",
+      "variants": [
+        {
+          "label": "14ml",
+          "attributes": {
+            "capacity": "14ml"
+          },
+          "officialPrice": 439
+        }
+      ],
+      "images": [
+        "https://www.ohsogo.com/cdn/shop/products/technic-mega-lash-volumising-mascara-14ml-4845-550x688w.jpg?v=1696493756",
+        "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(1552).jpg",
+        "https://colorworld.com.bd/wp-content/uploads/2026/07/YLaNGXX7qvMe7FoQPshCilcOWPsPDVoSPu6x95qx.webp",
+        "http://skincareshop.com.bd/wp-content/uploads/2021/11/Technic-Mega-Lash-Volumising-Mascara-14-ml.jpg",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNTZcLzU2NjI4LTI2NTEybWVnYWxhc2hibGFjay1XQ18xMDI0eDEwMjQtMngtejJ0dnp5LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0="
+      ],
+      "offers": [
+        {
+          "variant": "14ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/56628/technic-mega-lash-mega-volumising-mascara-black",
+          "price": 345,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "14ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/technic-mega-lash-volumizing-mascara-black-14ml/",
+          "price": 399,
+          "oldPrice": 480,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "14ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/technic-mega-lash-volumising-mascara-14ml",
+          "price": 399,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "14ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/technic-mega-lash-mega-volumising-mascara-black-packaging",
+          "price": 320,
+          "oldPrice": 350,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "14ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/technic-mega-lash-volumising-mascara",
+          "price": 550,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "14ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/technic-mega-lash-volumising-mascara-14-ml/",
+          "price": 450,
+          "oldPrice": 550,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Pond's",
+      "name": "Bright Miracle BB+ Cream",
+      "variants": [
+        {
+          "label": "18g",
+          "attributes": {
+            "capacity": "18g"
+          },
+          "officialPrice": 400
+        }
+      ],
+      "images": [
+        "https://glowellabd.com/wp-content/uploads/2025/03/4jHsU4VuR1EOj0xnZ4YWHZZw2fbVbzBwaVLQ8Kjg.png",
+        "https://d1puc9h291tp0h.cloudfront.net/uploads/all/0Y9Ox74bjcUh8gVx01ICZbyhQVDemIm3ozNPeA39.webp",
+        "https://cdn.klassy.com.bd/uploads/assets/products/ponds-bb-cream-spf-30-pa-18g-ivory-rvjfaj.webp",
+        "https://www.ohsogo.com/cdn/shop/files/Ponds-BB-Cream-Instant-Spot-Coverage-Light-Make-up-Glow-Ivory.jpg?v=1762238034",
+        "https://beprincessbd.com/wp-content/uploads/2023/01/Website-Picture-BP-546-×-546px-2026-03-05T164854.742.png"
+      ],
+      "offers": [
+        {
+          "variant": "18g",
+          "site": "ALZAK",
+          "url": "https://alzakbd.com/product/ivory-ponds-instant-coverage-glow-bb-cream-18g/",
+          "price": 299,
+          "oldPrice": 450,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "18g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/55884/pond-s-bright-miracle-ivory-light-foundation-bb-cream-with-3-niacinamide-spf-30-pa-18g",
+          "price": 299,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "18g",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/ponds-bb-cream-ivory/",
+          "price": 220,
+          "oldPrice": 490,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "18g",
+          "site": "Beauty Booth",
+          "url": "https://beautybooth.com.bd/product/ponds-bb-cream-with-spf-30-pa-ivory-18-gm",
+          "price": 500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "18g",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/ponds-bright-miracle-light-foundation-cream-bb-cream-with-3-niacinamide-ivory-18g/",
+          "price": 300,
+          "oldPrice": 400,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "18g",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/ponds-bright-miracle-ivory-light-foundation-bb-cream-with-3-niacinamide-spf-30-pa-18g",
+          "price": 310,
+          "oldPrice": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "18g",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/ponds-bright-miracle-light-foundation-bb-cream-with-3-niacinamide-spf-30-pa-ivory-18g",
+          "price": 375,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "18g",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/ponds-bb-cream-instant-spot-coverage-light-make-up-glow-ivory-18g/",
+          "price": 350,
+          "oldPrice": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "18g",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/Ponds-BB-Cream-SPF-30-PA-18g--Ivory-hYNaA",
+          "price": 350,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "18g",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/ponds-ivory-spf30pa-bb-cream-18gm",
+          "price": 299,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "18g",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/ponds-bb-cream-instant-spot-coverage-shade-ivory",
+          "price": 270,
+          "oldPrice": 300,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "18g",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/ponds-bb-cream-instant-spot-coverage-light-make-up-glow-ivory-18gm/",
+          "price": 350,
+          "oldPrice": 400,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "18g",
+          "site": "UK Direct BD",
+          "url": "https://ukdirectbd.com/product/ponds-bb-cream-instant-spot-coverage-light-make-up-glow-ivory/",
+          "price": 400,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Maybelline",
+      "name": "Baby Lips Color Lip Balm SPF11",
+      "variants": [
+        {
+          "label": "4g",
+          "attributes": {
+            "capacity": "4g"
+          },
+          "officialPrice": 450
+        }
+      ],
+      "images": [
+        "https://glowellabd.com/wp-content/uploads/2024/12/TQqazyZzYlj98t6UyUdLK9EWRM4wvEWkFyzkXsdc.png",
+        "https://www.ohsogo.com/cdn/shop/files/e92759db-d23b-4cbd-8e30-de0639a67a85.jpg?v=1790505098",
+        "https://beprincessbd.com/wp-content/uploads/2023/11/06.jpg",
+        "https://cdn.klassy.com.bd/uploads/products/products/XtkV7CExMA68uD09dU2ltsyLb1KrXw1upZ3THirR.webp",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0VmFyaWFudC1wdl9pbWFnZXNcLzUyMTkxXC81MjE5MS01MW5XVEFHLTJrTC0yOTl5dG8uanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ=="
+      ],
+      "offers": [
+        {
+          "variant": "4g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/52191/maybelline-new-york-baby-lips-color-lip-balm-pink-lolita-spf-11",
+          "price": 310,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4g",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/maybelline-baby-lips-color-lip-balm-pink-lolita/",
+          "price": 390,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4g",
+          "site": "Beauty Booth",
+          "url": "https://beautybooth.com.bd/product/maybelline-new-york-baby-lips-color-lip-blam-berry-crush-spf-11-4ml",
+          "price": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4g",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/maybelline-baby-lips-color-lip-balm-pink-lolita/",
+          "price": 350,
+          "oldPrice": 480,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4g",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/maybelline-baby-lips-color-lip-balm-spf11-cherry-kiss-4g/",
+          "price": 390,
+          "oldPrice": 530,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4g",
+          "site": "Glowella",
+          "url": "https://glowellabd.com/product/maybelline-baby-lips-color-lip-balm-pink-lolita/",
+          "price": 300,
+          "oldPrice": 500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4g",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/Maybelline-Baby-Lips-Color-Lip-Balm-Spf11-8s8fv",
+          "price": 410,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4g",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/maybelline-baby-lips-color-lip-balm-spf11-pink-lolita",
+          "price": 325,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4g",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/maybelline-baby-lips-color-spf11-lip-balm-pink-lolita",
+          "price": 385,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4g",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/maybelline-baby-lips-color-24hr-spf11-lip-balm-cherry-kiss-4gm/",
+          "price": 390,
+          "oldPrice": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4g",
+          "site": "UK Direct BD",
+          "url": "https://ukdirectbd.com/product/maybelline-new-york-baby-lips-color-lip-balm-berry-crush-spf-11/",
+          "price": 450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Wet n Wild",
+      "name": "MegaLast Liquid Catsuit Matte Lipstick",
+      "variants": [
+        {
+          "label": "6g",
+          "attributes": {
+            "capacity": "6g"
+          },
+          "officialPrice": 625
+        }
+      ],
+      "images": [
+        "https://d1puc9h291tp0h.cloudfront.net/uploads/all/Cf0etmbyNt64V7y8TpZAwHDQQJR6pNcqPgbgmLkW.jpg",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Wet_n_Wild_MegaLast_Liquid_Catsuit_Matte_Lipstick_Nice_To_Fuchsia_6g.jpg",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNTVcLzU1OTE2LVdldC1uLVdpbGQtTWVnYUxhc3QtTGlxdWlkLUNhdHN1aXQtTWF0dGUtTGlwc3RpY2stTWlzc3ktRmllcmNlLUU5MzBCLTZnLXNscmYuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ==",
+        "https://colorworld.com.bd/wp-content/uploads/2026/07/hL4kQDooFcYcAaW7ihMu3VpzMwhrDvlczxOB0JKt.webp",
+        "https://skincareshop.com.bd/wp-content/uploads/2021/11/Wet-n-Wild-MegaLast-Liquid-Catsuit-Matte-Lipstick-Missy-and-Fierce.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "6g",
+          "site": "ALZAK",
+          "url": "https://alzakbd.com/product/give-me-mocha-wet-n-wild-megalast-liquid-catsuit-matte-lipstick-2/",
+          "price": 399,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "6g",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/55916/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-missy-fierce-e930b",
+          "price": 390,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "6g",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-rebel-rose/",
+          "price": 490,
+          "oldPrice": 580,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "6g",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-nice-to-fuchsia-6g",
+          "price": 400,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "6g",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/wet-n-wild-megalast-liquid-matte-lipstick-925b-give-me-mocha/",
+          "price": 499,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "6g",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/wet-n-wild-megalast-liquid-matte-lipstick-925b-give-me-mocha",
+          "price": 585,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "6g",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-give-me-mocha",
+          "price": 499,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "6g",
+          "site": "Skin Revive BD",
+          "url": "https://skinrevivebd.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-rebel-rose-6gm/",
+          "price": 490,
+          "oldPrice": 600,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "6g",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-missy-and-fierce/",
+          "price": 550,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "6g",
+          "site": "UK Direct BD",
+          "url": "https://ukdirectbd.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-give-me-mocha/",
+          "price": 590,
+          "oldPrice": 650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Wet n Wild",
+      "name": "Photo Focus Dewy Foundation",
+      "variants": [
+        {
+          "label": "28ml",
+          "attributes": {
+            "capacity": "28ml"
+          },
+          "officialPrice": 980
+        }
+      ],
+      "images": [
+        "https://beprincessbd.com/wp-content/uploads/2023/02/c17.png",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Wet_n_Wild_Photo_Focus_Dewy_Foundation_Golden_Beige_28ml.jpg",
+        "https://colorworld.com.bd/wp-content/uploads/2026/07/evPQIj9J4WUzwqwVQ9S7yftz2QSgDktna4UrsXFe.webp",
+        "https://skinrevivebd.com/wp-content/uploads/2025/01/1111528_2_1.webp",
+        "https://ukdirectbd.com/wp-content/uploads/2025/06/16.png"
+      ],
+      "offers": [
+        {
+          "variant": "28ml",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/wet-n-wild-photo-focus-dewy-foundation-golden-beige/",
+          "price": 850,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "28ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/wet-n-wild-photo-focus-foundation-dewy-lumineux/",
+          "price": 820,
+          "oldPrice": 950,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "28ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/wet-n-wild-photo-focus-dewy-foundation-golden-beige-28ml",
+          "price": 775,
+          "oldPrice": 1050,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "28ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/wet-n-wild-photo-focus-dewy-foundation-soft-beige-28ml/",
+          "price": 790,
+          "oldPrice": 980,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "28ml",
+          "site": "Lira Import",
+          "url": "https://liraimportltd.com/product/wet-n-wild-photo-focus-dewy-foundation-desert-beige/",
+          "price": 784,
+          "oldPrice": 980,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "28ml",
+          "site": "Skin Revive BD",
+          "url": "https://skinrevivebd.com/product/wet-n-wild-photo-focus-foundation-dewy-desert-beige28ml/",
+          "price": 780,
+          "oldPrice": 880,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "28ml",
+          "site": "UK Direct BD",
+          "url": "https://ukdirectbd.com/product/wet-n-wild-photo-focus-foundation-dewy-lumineux/",
+          "price": 990,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Wet n Wild",
+      "name": "Photo Focus Matte Foundation",
+      "variants": [
+        {
+          "label": "30ml",
+          "attributes": {
+            "capacity": "30ml"
+          },
+          "officialPrice": 950
+        }
+      ],
+      "images": [
+        "https://www.ohsogo.com/cdn/shop/products/wnw-pff-db_1.jpg?v=1696409895",
+        "https://beprincessbd.com/wp-content/uploads/2023/02/c16.png",
+        "https://bk.shajgoj.com/storage/2026/10/warm-beige-matte-foundation-ad.png",
+        "https://bdamajanshop.com/wp-content/uploads/2022/11/Wet-n-wild-Soft-ivory-1-1.png",
+        "https://ukdirectbd.com/wp-content/uploads/2025/06/15.png"
+      ],
+      "offers": [
+        {
+          "variant": "30ml",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/wet-n-wild-photo-focus-foundation-soft-beige/",
+          "price": 950,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/wet-n-wild-photo-focus-foundation-matte/",
+          "price": 720,
+          "oldPrice": 950,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "OHSOGO",
+          "url": "https://www.ohsogo.com/products/wet-n-wild-photofocus-foundation-30ml-desert-beige",
+          "price": 690,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/wet-n-wild-photo-focus-foundation",
+          "price": 599,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "UK Direct BD",
+          "url": "https://ukdirectbd.com/product/wet-n-wild-photo-focus-matte-foundation-soft-beige/",
+          "price": 890,
+          "oldPrice": 990,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Maybelline",
+      "name": "SuperStay Matte Ink Liquid Lipstick",
+      "variants": [
+        {
+          "label": "5ml",
+          "attributes": {
+            "capacity": "5ml"
+          },
+          "officialPrice": 1350
+        }
+      ],
+      "images": [
+        "https://d1puc9h291tp0h.cloudfront.net/uploads/all/UuTRupvIb6CiENhTm5pVyOd2vXFjgG5kTmaXCLuN.webp",
+        "https://colorworld.com.bd/wp-content/uploads/2026/07/8pXT2JTOqKrQgX7Fm4q68uqMLGJJhEGa5dvrJm8R.webp",
+        "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Maybelline_Superstay_Matte_Ink_Liquid_Lipstick_50_Voyager_5ml01.webp",
+        "https://bk.shajgoj.com/storage/2023/09/Maybelline-New-York-Super-Stay-Matte-Ink-Liquid-Lipstick-40-Believer.jpg",
+        "http://skincareshop.com.bd/wp-content/uploads/2023/03/Maybelline-Superstay-Matte-Ink-Liquid-Lipstick-5ml-325-Shot-Caller-9.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "5ml",
+          "site": "ALZAK",
+          "url": "https://alzakbd.com/product/ruler-80-maybelline-superstay-matte-ink-liquid-lipstick/",
+          "price": 1250,
+          "oldPrice": 2450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "5ml",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/maybelline-superstay-matte-ink-liquid-lipstick-10-dreamer/",
+          "price": 790,
+          "oldPrice": 950,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "5ml",
+          "site": "Beauty Booth",
+          "url": "https://beautybooth.com.bd/product/maybelline-new-york-super-stay-matte-ink-liquid-lipstick-115-founder-5ml",
+          "price": 1100,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "5ml",
+          "site": "Chardike",
+          "url": "https://chardike.com/product/maybelline-superstay-matte-ink-liquid-lipstick-50-voyager-5ml",
+          "price": 1120,
+          "oldPrice": 1150,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "5ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/maybelline-superstay-matte-ink-liquid-lipstick-70-amazonian/",
+          "price": 1350,
+          "oldPrice": 1650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "5ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/maybelline-super-stay-matte-ink-liquid-lipstick-340-exhilarator-5ml",
+          "price": 1148,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "5ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/maybelline-new-york-super-stay-matte-ink-liquid-lipstick-40-believer",
+          "price": 1350,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "5ml",
+          "site": "Skincare Shop",
+          "url": "https://skincareshop.com.bd/product/maybelline-superstay-matte-ink-liquid-lipstick-5ml-325-shot-caller/",
+          "price": 1140,
+          "oldPrice": 1400,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "5ml",
+          "site": "UK Direct BD",
+          "url": "https://ukdirectbd.com/product/maybelline-new-york-super-stay-matte-ink-330-innovator/",
+          "price": 1550,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Maybelline",
+      "name": "SuperStay Vinyl Ink Liquid Lipstick",
+      "variants": [
+        {
+          "label": "4.2ml",
+          "attributes": {
+            "capacity": "4.2ml"
+          },
+          "officialPrice": 1350
+        }
+      ],
+      "images": [
+        "https://d1puc9h291tp0h.cloudfront.net/uploads/all/NLDNHIK3YFPCBZ5QONRTnULjFLedgiu0zF0RxRVw.jpg",
+        "https://beprincessbd.com/wp-content/uploads/2024/03/75.jpg",
+        "https://colorworld.com.bd/wp-content/uploads/2026/07/B1tiJdNQPhzTHRcTjatdwHc6Q6kOnklwfvPUtlAN.webp",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC82MzMzM1wvNjMzMzMtNjFEa2d1by14Z0wtZGJtdjNyLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0=",
+        "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/file_6a70409144d75.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "4.2ml",
+          "site": "ALZAK",
+          "url": "https://alzakbd.com/product/lippy-10-maybelline-super-stay-vinyl-ink-liquid-lipcolor-3/",
+          "price": 1250,
+          "oldPrice": 2450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4.2ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/63333/maybelline-new-york-superstay-vinyl-ink-liquid-lipstick-30-unrivaled",
+          "price": 1150,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4.2ml",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/maybelline-super-stay-vinyl-ink-liquid-lipstick-15-peachy/",
+          "price": 1060,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4.2ml",
+          "site": "Beauty Booth",
+          "url": "https://beautybooth.com.bd/product/maybelline-new-york-superstay-vinyl-ink-lipstick-50-wicked-4-2ml",
+          "price": 1250,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4.2ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/maybelline-super-stay-vinyl-ink-longwear-liquid-lipstick/",
+          "price": 1180,
+          "oldPrice": 1350,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4.2ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/maybelline-superstay-vinyl-ink-liquid-lipstick-15-peachy/",
+          "price": 1650,
+          "oldPrice": 2050,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4.2ml",
+          "site": "EmartWay Skincare",
+          "url": "https://www.emartwayskincare.com.bd/maybelline-super-stay-vinyl-ink-long-wear-liquid-lipstick-68-hypnotic-4-2ml",
+          "price": 1183,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4.2ml",
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/maybelline-super-stay-vinyl-ink-liquid-lipstick",
+          "price": 800,
+          "oldPrice": 1400,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "4.2ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/maybelline-new-york-super-stay-vinyl-ink-liquid-lipstick-130-extra",
+          "price": 1650,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "Maybelline",
+      "name": "Fit Me Matte + Poreless Foundation",
+      "variants": [
+        {
+          "label": "30ml",
+          "attributes": {
+            "capacity": "30ml"
+          },
+          "officialPrice": 1250
+        }
+      ],
+      "images": [
+        "https://bk.shajgoj.com/storage/2026/04/3119-1.jpg",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC83NjcwNlwvNzY3MDYtTWF5YmVsbGluZS1GaXQtTWUtTWF0dGUtUG9yZWxlc3MtMTE1LUl2b3J5LTA0MTU1NDQzMzQzMi1BVjExLXBnb3kxdS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+        "https://cdn.klassy.com.bd/uploads/products/products/Maybelline-Fit-Me-Matte-+-Poreless-Liquid-Foundation-16H-Oil-Control-with-SPF-22,-30ml--ba93-products.webp",
+        "https://beprincessbd.com/wp-content/uploads/2025/02/Website-Picture-BP-546-×-546px-47.png",
+        "https://skinrevivebd.com/wp-content/uploads/2025/01/Maybelline-Fit-Me-Matte-Poreless-Foundation-Natural-Beige-220.jpg"
+      ],
+      "offers": [
+        {
+          "variant": "30ml",
+          "site": "ALZAK",
+          "url": "https://alzakbd.com/product/maybelline-fit-me-matte-poreless-liquid-foundation-true-beige-222/",
+          "price": 1050,
+          "oldPrice": 1250,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/76706/maybelline-new-york-fit-me-matte-poreless-16h-foundation-shade-115",
+          "price": 969,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/maybelline-fit-me-matte-poreless-foundation-warm-nude-128/",
+          "price": 910,
+          "oldPrice": 1250,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "Beauty Booth",
+          "url": "https://beautybooth.com.bd/product/maybelline-fit-me-matte-poreless-foundation-110-porcelain-30ml",
+          "price": 1350,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/maybelline-fit-me-matte-poreless-foundation-made-in-india/",
+          "price": 980,
+          "oldPrice": 1250,
+          "inStock": true,
+          "condition": "official",
+          "region": "India",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/maybelline-fit-me-matte-poreless-liquid-foundation-16h-oil-control-with-spf-22-30ml-7pvfg",
+          "price": 1180,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/maybelline-fit-me-matte-poreless-foundation-soft-tan-228",
+          "price": 1080,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "Skin Revive BD",
+          "url": "https://skinrevivebd.com/product/maybelline-fit-me-matte-poreless-foundation-natural-beige-220/",
+          "price": 1250,
+          "oldPrice": 1500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "UK Direct BD",
+          "url": "https://ukdirectbd.com/product/maybelline-fit-me-matte-poreless-foundation-ivory-115/",
+          "price": 990,
+          "oldPrice": 1190,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "brand": "L'Oréal Paris",
+      "name": "Infallible 32H Fresh Wear Foundation",
+      "variants": [
+        {
+          "label": "30ml",
+          "attributes": {
+            "capacity": "30ml"
+          },
+          "officialPrice": 1887
+        }
+      ],
+      "images": [
+        "https://beprincessbd.com/wp-content/uploads/2024/04/331.jpg",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC84NjA4M1wvODYwODMtTC1Pci1hbC1QYXJpcy1JbmZhbGxpYmxlLUZyZXNoLVdlYXItMzJILUxpcXVpZC1Gb3VuZGF0aW9uLWluLXNoYWRlLTQyMC1UcnVlLUJlaWdlLTMwbWwtNTgxd3o4LndlYnAiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0=",
+        "https://colorworld.com.bd/wp-content/uploads/2026/05/LBnMkAgcB84Hm3DRiMshvc2ff0RHm2w584u36g4x.webp",
+        "https://cms.beautybooth.com.bd/uploads/all/loreal-paris-makeup-infallible-fresh-wear-foundation-020-ivory-9gm.webp"
+      ],
+      "offers": [
+        {
+          "variant": "30ml",
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/86083/loreal-paris-infallible-fresh-wear-32h-liquid-foundation-in-shade-420-true-beige-30ml",
+          "price": 1795,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "Beauty Booth",
+          "url": "https://beautybooth.com.bd/product/l-oreal-paris-makeup-infallible-fresh-wear-foundation-020-ivory-9gm",
+          "price": 1700,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "Beprincess BD",
+          "url": "https://beprincessbd.com/product/loreal-paris-infallible-32-hour-fresh-wear-foundation-30ml/",
+          "price": 1680,
+          "oldPrice": 1980,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "variant": "30ml",
+          "site": "Color World",
+          "url": "https://colorworld.com.bd/product/loreal-paris-infallible-fresh-wear-32h-liquid-foundation-15-neutral/",
+          "price": 1990,
+          "oldPrice": 2450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26"
+        }
+      ]
+    }
+  ]
+}

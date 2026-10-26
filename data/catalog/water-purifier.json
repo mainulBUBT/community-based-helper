@@ -1,0 +1,413 @@
+{
+  "category": "water-purifier",
+  "sites": [
+    {
+      "name": "Star Tech",
+      "website": "https://www.startech.com.bd",
+      "note": "/water-purifier ক্যাটাগরি পেজ; শুধু Pureit। পাতার 'Regular Price' আসলে EMI দাম (cash-এর ~৮% বেশি), MRP নয়।"
+    },
+    {
+      "name": "MK Electronics",
+      "website": "https://mke.com.bd",
+      "note": "sitemap-products.xml; JSON-LD-তে বিক্রির দাম, পাতার data-তে mrp_price। Kent আর Pureit দুটোই। robots.txt-এ /search বন্ধ।"
+    },
+    {
+      "name": "Othoba",
+      "website": "https://othoba.com",
+      "note": "মার্কেটপ্লেস (nopCommerce), একই পণ্য কয়েক বিক্রেতার; Pureit-এর লিংক RFL Best Buy-এর। sitemap ফাঁকা, তাই ক্যাটাগরি পাতা থেকে listing। JSON-LD-এর price মূল দাম, ছাড়ের দাম sale_price-এ। Kent Grand Star পাতার <title>-এ ভুল মডেল (Ultra Storage), h1 আর spec ঠিক।"
+    },
+    {
+      "name": "Apple Gadgets",
+      "website": "https://www.applegadgetsbd.com",
+      "note": "Kent-এর বড় তালিকা, Pureit শুধু Wave।"
+    },
+    {
+      "name": "Diamu",
+      "website": "https://diamu.com.bd",
+      "note": "WooCommerce; Pureit Classic আর Ultima Mineral।"
+    }
+  ],
+  "products": [
+    {
+      "brand": "Pureit",
+      "name": "Classic (23L)",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 5499
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/appliance/water-purifier/pureit/classic/classic-01-01-1200x630.webp",
+        "https://images.othoba.com/images/thumbs/2604102_pureit-classic-blue-23l-water-purifier-4-stage-gravity-based-water-purifier.jpeg",
+        "https://diamu.com.bd/wp-content/uploads/2021/03/Unilever-Pureit-Classic-Water-Purifier.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/pureit-classic-water-purifier",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/pureit-classic-water-purifier",
+          "price": 5400,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "Othoba",
+          "url": "https://othoba.com/pureit-classic-blue-23l-water-purifier-4-stage-gravity-based-water-purifier-best-buy-1040779",
+          "price": 4949,
+          "oldPrice": 5499,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/pureit-classic-23l-water-purifier/",
+          "price": 4990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Pureit",
+      "name": "Marina (RO+UV+MF, 6L)",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 21000
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/appliance/water-purifier/pureit/marina/marina-01-01-1200x630.webp",
+        "https://images.othoba.com/images/thumbs/2677143_pureit-marina-rouvmf-6l-water-purifier-7-stage-purification-with-20lhour-high-speed-technology.webp",
+        "https://mke.com.bd/media/product/P250232/main.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/pureit-marina-water-purifier",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/pureit-marina-water-purifier",
+          "price": 20500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "MK Electronics",
+          "url": "https://mke.com.bd/pureit-marina-6-ltr-ro-uv-mf-water-purifier",
+          "price": 20000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "Othoba",
+          "url": "https://othoba.com/pureit-marina-rouvmf-6l-water-purifier-7-stage-purification-with-20lhour-high-speed-technology-best-buy-1040783",
+          "price": 18900,
+          "oldPrice": 21000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Pureit",
+      "name": "Wave (RO+MF, 6L)",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 16500
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/appliance/water-purifier/pureit/wave/wave-01-01-1200x630.webp",
+        "https://images.othoba.com/images/thumbs/2677120_pureit-wave-romf-6l-water-purifier-6-stage-purification-with-20lhour-high-speed-ro-technology.webp",
+        "https://mke.com.bd/media/product/P250233/main.png?v=bc0ce1b4",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Pureit-Wave-RO+MF-Water-Purifier---6L-3950.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/pureit-wave-water-purifier",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/pureit-wave-water-purifier",
+          "price": 16000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "MK Electronics",
+          "url": "https://mke.com.bd/pureit-wave-6-ltr-ro-mf-water-purifier",
+          "price": 16000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "Othoba",
+          "url": "https://othoba.com/pureit-wave-romf-6l-water-purifier-6-stage-purification-with-20lhour-high-speed-ro-technology-best-buy-1040782",
+          "price": 14850,
+          "oldPrice": 16500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/pureit-wave-ro-mf-water-purifier",
+          "price": 15500,
+          "oldPrice": 16500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Pureit",
+      "name": "Vital Max (RO+UV, 7L)",
+      "releaseYear": 2022,
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 26000
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/appliance/water-purifier/pureit/vital-max/vital-max-01-01-1200x630.webp",
+        "https://images.othoba.com/images/thumbs/2677040_pureit-vital-max-7l-rouv-water-purifier-with-7-stage-purification-mineral-enhancer.webp",
+        "https://mke.com.bd/media/product/P250271/main.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/pureit-vital-max-water-purifier",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/pureit-vital-max-water-purifier",
+          "price": 25000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "MK Electronics",
+          "url": "https://mke.com.bd/pureit-vital-max-water-purifier",
+          "price": 24500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "Othoba",
+          "url": "https://othoba.com/pureit-vital-max-7l-rouv-water-purifier-with-7-stage-purification-mineral-enhancer-best-buy-1040781",
+          "price": 23408,
+          "oldPrice": 26009,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Pureit",
+      "name": "Ultima Mineral (RO+UV+MF, 10L)",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 33000
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/appliance/water-purifier/pureit/ultima/ultima-01-01-1200x630.webp",
+        "https://images.othoba.com/images/thumbs/2676973_pureit-ultima-mineral-rouvmf-10l-water-purifier-7-stage-purification-with-digital-purity-indicator.webp",
+        "https://mke.com.bd/media/product/P250220/main.png",
+        "https://diamu.com.bd/wp-content/uploads/2021/03/Pureit-Mineral-Ultima-ROUVMF-3.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/pureit-ultima-water-purifier",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/pureit-ultima-water-purifier",
+          "price": 32000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "MK Electronics",
+          "url": "https://mke.com.bd/pureit-ultima-mineral-ro-uv-mf-water-purifier",
+          "price": 31000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "Othoba",
+          "url": "https://othoba.com/pureit-ultima-mineral-rouvmf-10l-water-purifier-7-stage-purification-with-digital-purity-indicator-best-buy-1040780",
+          "price": 29700,
+          "oldPrice": 33000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/pureit-mineral-ultima-rouvmf/",
+          "price": 32500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Pureit",
+      "name": "Ultima Pro (RO+MF+Dual UV, 9L)",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 36000
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/appliance/water-purifier/pureit/ultima-pro/ultima-pro-01-01-1200x630.webp",
+        "https://images.othoba.com/images/thumbs/2677144_pureit-ultima-pro-9l-rouvmf-water-purifier-8-stage-purification-with-dual-uv-mineral-enrichment.webp",
+        "https://mke.com.bd/media/product/P250455/main.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/pureit-ultima-pro-water-purifier",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/pureit-ultima-pro-water-purifier",
+          "price": 35000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "MK Electronics",
+          "url": "https://mke.com.bd/pureit-ultima-pro-ro-mf-dual-uv-in-tank-water-purifier",
+          "price": 33500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "Othoba",
+          "url": "https://othoba.com/pureit-ultima-pro-9l-rouvmf-water-purifier-8-stage-purification-with-dual-uv-mineral-enrichment-best-buy-1040784",
+          "price": 32400,
+          "oldPrice": 36000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Kent",
+      "name": "Grand Star (RO+UV+UF, 9L)",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 36200
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://mke.com.bd/media/product/P250243/main.png",
+        "https://images.othoba.com/images/thumbs/1626512_kent-9-liter-grand-star-ro-rouvufalkalinecoppertds-controluv-led-tank-auto-flush-feature-water-purif.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Kent-Grand-Star-Water-Purifier---9L-6236.png"
+      ],
+      "offers": [
+        {
+          "site": "MK Electronics",
+          "url": "https://mke.com.bd/kent-grand-star-ro-water-purifier",
+          "price": 32500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "Othoba",
+          "url": "https://othoba.com/kent-9-liter-grand-star-ro-rouvufalkalinecoppertds-controluv-led-tank-auto-flush-feature-water-purifier",
+          "price": 30000,
+          "oldPrice": 34500,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/kent-grand-star-water-purifier",
+          "price": 30500,
+          "oldPrice": 34900,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-26",
+          "variant": "Standard"
+        }
+      ]
+    }
+  ]
+}

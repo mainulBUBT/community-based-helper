@@ -171,10 +171,118 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
-  "id": "mcsolution.com.bd",
-  "name": "MC Solution",
+  "id": "alzakbd.com",
+  "name": "ALZAK",
   "kind": "website",
-  "website": "https://mcsolution.com.bd/",
+  "website": "https://alzakbd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "arogga.com",
+  "name": "Arogga",
+  "kind": "website",
+  "website": "https://www.arogga.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "bdamajanshop.com",
+  "name": "BD Amajan Shop",
+  "kind": "website",
+  "website": "https://bdamajanshop.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "beautybooth.com.bd",
+  "name": "Beauty Booth",
+  "kind": "website",
+  "website": "https://beautybooth.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "beprincessbd.com",
+  "name": "Beprincess BD",
+  "kind": "website",
+  "website": "https://beprincessbd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "chardike.com",
+  "name": "Chardike",
+  "kind": "website",
+  "website": "https://chardike.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "colorworld.com.bd",
+  "name": "Color World",
+  "kind": "website",
+  "website": "https://colorworld.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "emartwayskincare.com.bd",
+  "name": "EmartWay Skincare",
+  "kind": "website",
+  "website": "https://www.emartwayskincare.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "ohsogo.com",
+  "name": "OHSOGO",
+  "kind": "website",
+  "website": "https://www.ohsogo.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "perfectobd.com",
+  "name": "Perfecto",
+  "kind": "website",
+  "website": "https://perfectobd.com/",
   "phone": null,
   "whatsapp": null,
   "facebook": null,
@@ -195,10 +303,82 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
-  "id": "arogga.com",
-  "name": "Arogga",
+  "id": "skincareshop.com.bd",
+  "name": "Skincare Shop",
   "kind": "website",
-  "website": "https://www.arogga.com/",
+  "website": "https://skincareshop.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "klassy.com.bd",
+  "name": "Klassy Missy",
+  "kind": "website",
+  "website": "https://klassy.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "liraimportltd.com",
+  "name": "Lira Import",
+  "kind": "website",
+  "website": "https://liraimportltd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "skinrevivebd.com",
+  "name": "Skin Revive BD",
+  "kind": "website",
+  "website": "https://skinrevivebd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "ukdirectbd.com",
+  "name": "UK Direct BD",
+  "kind": "website",
+  "website": "https://ukdirectbd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "glowellabd.com",
+  "name": "Glowella",
+  "kind": "website",
+  "website": "https://glowellabd.com/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "mcsolution.com.bd",
+  "name": "MC Solution",
+  "kind": "website",
+  "website": "https://mcsolution.com.bd/",
   "phone": null,
   "whatsapp": null,
   "facebook": null,
@@ -235,18 +415,6 @@ export const catalogSellers: Seller[] = [
   "name": "Chaldal",
   "kind": "website",
   "website": "https://chaldal.com/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": true,
-  "active": true
- },
- {
-  "id": "emartwayskincare.com.bd",
-  "name": "EmartWay Skincare",
-  "kind": "website",
-  "website": "https://www.emartwayskincare.com.bd/",
   "phone": null,
   "whatsapp": null,
   "facebook": null,
@@ -303,18 +471,6 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
-  "id": "skincareshop.com.bd",
-  "name": "Skincare Shop",
-  "kind": "website",
-  "website": "https://skincareshop.com.bd/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": true,
-  "active": true
- },
- {
   "id": "cosmeticscorner.com.bd",
   "name": "Cosmetics Corner",
   "kind": "website",
@@ -339,106 +495,10 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
-  "id": "beprincessbd.com",
-  "name": "Beprincess BD",
-  "kind": "website",
-  "website": "https://beprincessbd.com/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": true,
-  "active": true
- },
- {
-  "id": "colorworld.com.bd",
-  "name": "Color World",
-  "kind": "website",
-  "website": "https://colorworld.com.bd/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": true,
-  "active": true
- },
- {
-  "id": "glowellabd.com",
-  "name": "Glowella",
-  "kind": "website",
-  "website": "https://glowellabd.com/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": true,
-  "active": true
- },
- {
-  "id": "ohsogo.com",
-  "name": "OHSOGO",
-  "kind": "website",
-  "website": "https://www.ohsogo.com/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": true,
-  "active": true
- },
- {
-  "id": "chardike.com",
-  "name": "Chardike",
-  "kind": "website",
-  "website": "https://chardike.com/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": true,
-  "active": true
- },
- {
-  "id": "perfectobd.com",
-  "name": "Perfecto",
-  "kind": "website",
-  "website": "https://perfectobd.com/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": true,
-  "active": true
- },
- {
   "id": "koreanmartbd.com",
   "name": "Korean Mart BD",
   "kind": "website",
   "website": "https://koreanmartbd.com/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": true,
-  "active": true
- },
- {
-  "id": "klassy.com.bd",
-  "name": "Klassy Missy",
-  "kind": "website",
-  "website": "https://klassy.com.bd/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": true,
-  "active": true
- },
- {
-  "id": "liraimportltd.com",
-  "name": "Lira Import",
-  "kind": "website",
-  "website": "https://liraimportltd.com/",
   "phone": null,
   "whatsapp": null,
   "facebook": null,
@@ -547,6 +607,30 @@ export const catalogSellers: Seller[] = [
   "name": "Genten",
   "kind": "website",
   "website": "https://genten.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "mke.com.bd",
+  "name": "MK Electronics",
+  "kind": "website",
+  "website": "https://mke.com.bd/",
+  "phone": null,
+  "whatsapp": null,
+  "facebook": null,
+  "area": null,
+  "verified": true,
+  "active": true
+ },
+ {
+  "id": "othoba.com",
+  "name": "Othoba",
+  "kind": "website",
+  "website": "https://othoba.com/",
   "phone": null,
   "whatsapp": null,
   "facebook": null,
@@ -4942,13 +5026,183 @@ export const catalogProducts: Product[] = [
   "specsSource": "https://www.sumashtech.com/product/oraimo-freepods-4-active-noise-cancellation-earbuds"
  },
  {
+  "id": "oneplus-bullets-wireless-z3",
+  "slug": "oneplus-bullets-wireless-z3",
+  "name": "Bullets Wireless Z3",
+  "brand": "OnePlus",
+  "category": "earbuds",
+  "releaseYear": 2025,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "oneplus-bullets-wireless-z3~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2199
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/earphone/oneplus/bullets-wireless-z3/bullets-wireless-z3-mambo-midnight-01-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2377/OnePlus_Bullets_Wireless_Z3_Red.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/OnePlus-Bullets-Wireless-Z3a-9457.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Frequency",
+      "value": "20Hz - 20,000KHz"
+     },
+     {
+      "label": "Impedance",
+      "value": "32Ω"
+     },
+     {
+      "label": "Sound level/Sensitivity",
+      "value": "102dB"
+     },
+     {
+      "label": "Signal/Noise",
+      "value": "98±3dB"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Bluetooth: Version 5.4 Up to 10 meters"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery Capacity: 220mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "10 minutes for 27 hours (50% volume) Up to 36 hours (50% volume)"
+     },
+     {
+      "label": "Others",
+      "value": "Google Fast Pair Smart Assistance IP55 Water/Sweat Resistance Magnetic control Press, Double press, Triple press, Press and hold Supports AAC and SBC 3D Spatial Audio Sound Master EQ AI Call Noise Cancellation"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Connector",
+      "value": "Type-C Charging Interface"
+     },
+     {
+      "label": "Drivers",
+      "value": "12.4mm"
+     },
+     {
+      "label": "Dimensions",
+      "value": "L41.25cm*W10.7cm*H2.25cm"
+     },
+     {
+      "label": "Weight",
+      "value": "29.2g"
+     },
+     {
+      "label": "Color",
+      "value": "Mambo Midnight, Samba Sunset"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oneplus-bullets-wireless-z3-neckband"
+ },
+ {
+  "id": "oneplus-bullets-wireless-z2-anc",
+  "slug": "oneplus-bullets-wireless-z2-anc",
+  "name": "Bullets Wireless Z2 ANC",
+  "brand": "OnePlus",
+  "category": "earbuds",
+  "releaseYear": 2023,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "oneplus-bullets-wireless-z2-anc~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3399
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/earphone/oneplus/bullets-z2-anc/oneplus-bullets-wireless-z2-anc-01-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/528/OnePlus_Bullets_Wireless_Z2_ANC.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/OnePlus-Bullets-Wireless-Z2-ANC-Green-3022.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Frequency",
+      "value": "20Hz - 20,000KHz"
+     },
+     {
+      "label": "Impedance",
+      "value": "32Ω"
+     },
+     {
+      "label": "Sound level/Sensitivity",
+      "value": "112±3dB"
+     },
+     {
+      "label": "Signal/Noise",
+      "value": "ANC Depth: 45dB"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Bluetooth: Version 5.2"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery Capacity: 220mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "Playback (50% volume) ANC on: 20 hours ANC off: 28 hours Phone call (50% volume) ANC on: 13 hours ANC off: 16 hours"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Connector",
+      "value": "Type-C Charging Interface"
+     },
+     {
+      "label": "Drivers",
+      "value": "1.24cm"
+     },
+     {
+      "label": "Dimensions",
+      "value": "L41.25cm*W10.7cm*H2.25cm"
+     },
+     {
+      "label": "Weight",
+      "value": "29.2g"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oneplus-bullets-wireless-z2-anc-neckband"
+ },
+ {
   "id": "oneplus-bullets-wireless-z2-neckband",
   "slug": "oneplus-bullets-wireless-z2-neckband",
   "name": "Bullets Wireless Z2 Neckband",
   "brand": "OnePlus",
   "category": "earbuds",
   "releaseYear": 2022,
-  "popularity": 66,
+  "popularity": 100,
   "variants": [
    {
     "id": "oneplus-bullets-wireless-z2-neckband~v1",
@@ -4958,15 +5212,1593 @@ export const catalogProducts: Product[] = [
    }
   ],
   "images": [
-   "https://diamu.com.bd/wp-content/uploads/2023/10/OnePlus-Bullets-Wireless-Z2-ANC.jpg"
+   "https://www.startech.com.bd/image/cache/catalog/earphone/oneplus/e305a/bullets-wireless-z2-01-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/470/OnePlus_Bullets_Wireless_Z2_red.webp",
+   "https://assets.gadgetandgear.com/upload/product/20220629_1656476343_892829.jpeg"
   ],
-  "colors": [
-   "Black",
-   "Blue"
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Frequency",
+      "value": "20Hz - 20,000KHz"
+     },
+     {
+      "label": "Impedance",
+      "value": "32Ω"
+     },
+     {
+      "label": "Sound level/Sensitivity",
+      "value": "Driver Sensitivity: 114±3dB@400Hz, 109±1dB@1000Hz"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Wireless"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery Capacity: 220 mAh Battery charge method: USB Type-C Battery Life: Up to 30 Hours (50% volume) Fast Charge: 10 mins for 20 Hours"
+     },
+     {
+      "label": "Others",
+      "value": "Button: Press, Double Press, Triple press, Press and hold Controls: Magnetic control Water/Sweat Resistance: IP55 Fast Pairing: Only supported on OnePlus smartphones Smart Assistance: Yes"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Connector",
+      "value": "Bluetooth version 5.0"
+     },
+     {
+      "label": "Drivers",
+      "value": "12.4mm dynamic driver"
+     },
+     {
+      "label": "Dimensions",
+      "value": "12.43*17.45*1.31 cm"
+     },
+     {
+      "label": "Weight",
+      "value": "26.65g"
+     }
+    ]
+   }
   ],
+  "specsSource": "https://www.startech.com.bd/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone"
+ },
+ {
+  "id": "oraimo-necklace-5-anc-oeb-611",
+  "slug": "oraimo-necklace-5-anc-oeb-611",
+  "name": "Necklace 5 ANC (OEB-611)",
+  "brand": "Oraimo",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 98,
+  "variants": [
+   {
+    "id": "oraimo-necklace-5-anc-oeb-611~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2499
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/oraimo/necklace-5/necklace-5-07-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2545/necklace_5_oraimo.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Oraimo-OEB-611-Necklace-5-ANC-Wireless-Neckband-4847.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Power Output",
+      "value": "Charging Input: Type-C"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Bluetooth 5.4"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "260mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "Playtime: Up to 40 hours (ANC OFF), Up to 28 hours (ANC ON) Charging Time: Approx. 1 hour 10-minute charge, 12-hour use"
+     },
+     {
+      "label": "Others",
+      "value": "Vibration Notification Sound 360 Spatial Audio Active Noise Cancellation Personalized Vibration Alert Sound360 Spatial Audio Surround Sound Redefined Magnetic Auto Switch AI Call Noise Cancellation Dual Device Connection Low Latency Game Mode IPX4 Water Resistance oraimo sound app"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Speed Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oraimo-necklace-5"
+ },
+ {
+  "id": "oraimo-necklace-neo-oeb-310",
+  "slug": "oraimo-necklace-neo-oeb-310",
+  "name": "Necklace Neo (OEB-310)",
+  "brand": "Oraimo",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 98,
+  "variants": [
+   {
+    "id": "oraimo-necklace-neo-oeb-310~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1124
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/oraimo/necklace-neo/necklace-neo-02-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3806/Oraimo_Necklace_Neo.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Oraimo-Necklace-Neo-Neckband-Bluetooth-Earphone-7036.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Connection Type",
+      "value": "Wireless"
+     },
+     {
+      "label": "Microphone",
+      "value": "1-Mic ENC Technology"
+     },
+     {
+      "label": "Battery",
+      "value": "200mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "Up to 30-Hour Long Playtime"
+     },
+     {
+      "label": "Others",
+      "value": "Bluetooth Range: 10m Charging Type-C Sound360 Spatial Audio Personalized Sound Settings Dual-device Connectivity Powerful Deep Bass Immersive Surround Sound Low Latency Gaming Mode Customized Bluetooth Name Magnetic Earbuds"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Connector",
+      "value": "Bluetooth v6.0"
+     },
+     {
+      "label": "Drivers",
+      "value": "10mm customized dynamic drivers"
+     },
+     {
+      "label": "Color",
+      "value": "Gravity Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oraimo-necklace-neo"
+ },
+ {
+  "id": "oraimo-necklace-lite-oeb-311",
+  "slug": "oraimo-necklace-lite-oeb-311",
+  "name": "Necklace Lite (OEB-311)",
+  "brand": "Oraimo",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "oraimo-necklace-lite-oeb-311~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1380
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/oraimo/necklace-lite/necklace-lite-04-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1539/oraimo_necklace_1.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Oraimo-OEB-311-Necklace-Lite-ENC-with-Vibration-Wireless-Neckbandsdfg-5647.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Connection Type",
+      "value": "Bluetooth V5.3"
+     },
+     {
+      "label": "Battery",
+      "value": "220mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "Up to 30 hours Playtime"
+     },
+     {
+      "label": "Others",
+      "value": "HavyBass Algorithm Bluetooth Range: 10m Noise Cancellation in Calls Call Vibration Alerts Dual-device Connectivity oraimo Sound APP Control Low-latency Game Mode IPX4 Waterproof Magnetic Earbuds"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Connector",
+      "value": "Type-C Charging Port"
+     },
+     {
+      "label": "Drivers",
+      "value": "10mm dynamic drivers"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/oraimo-necklace-lite-enc-wireless-neckband"
+ },
+ {
+  "id": "oraimo-necklace-4-oeb-e50d",
+  "slug": "oraimo-necklace-4-oeb-e50d",
+  "name": "Necklace 4 (OEB-E50D)",
+  "brand": "Oraimo",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 98,
+  "variants": [
+   {
+    "id": "oraimo-necklace-4-oeb-e50d~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2850
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/525/oraimo_necklace_4_OEB-E50D_1.webp",
+   "https://assets.gadgetandgear.com/upload/media/1725340139559967.jpeg",
+   "https://motionview.s3.amazonaws.com/images/products/profile/171973731097.Oraimo%20Necklace%204%20Superior%20BASS%20with%20HAVYBASS%202.0%20Neckband%20(OEB-E50D)%20-%20Black.webp"
+  ],
+  "colors": [],
   "regions": [],
   "specs": [],
-  "specsSource": "https://motionview.com.bd/product/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone"
+  "specsSource": null
+ },
+ {
+  "id": "qcy-bassbloom-anc-n2",
+  "slug": "qcy-bassbloom-anc-n2",
+  "name": "BassBloom ANC N2",
+  "brand": "QCY",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "qcy-bassbloom-anc-n2~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2099
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/qcy/bassbloom-anc-n2/bassbloom-anc-n2-01-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1988/N2.webp",
+   "https://diamu.com.bd/wp-content/uploads/2025/03/QCY-BassBloom-ANC-N2-25DB-ANC-Neckband.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Technical Specification",
+    "items": [
+     {
+      "label": "Frequency Range",
+      "value": "20Hz – 20kHz"
+     },
+     {
+      "label": "Sensitivity",
+      "value": "105dB ± 3dB at 1kHz"
+     },
+     {
+      "label": "Input Jack",
+      "value": "USB Type-C"
+     },
+     {
+      "label": "Driver Diameter",
+      "value": "14.2 mm Dynamic Dricer"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth version: V5.3 Bluetooth Coded: SBC/AAC Bluetooth Profiles: HSP/HFP/A2DP/AVRCP Transmission range: 10m"
+     },
+     {
+      "label": "Battery Capacity",
+      "value": "300mAh"
+     },
+     {
+      "label": "Others",
+      "value": "Dual-Mic ENC Call IPX4 Water Resistant Active Noice Cancelling Up To -25dB"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Other Features",
+    "items": [
+     {
+      "label": "System Requirements",
+      "value": "Android/iOS"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/qcy-bassbloom-anc-n2"
+ },
+ {
+  "id": "qcy-tunearc-n1",
+  "slug": "qcy-tunearc-n1",
+  "name": "TuneArc N1",
+  "brand": "QCY",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "qcy-tunearc-n1~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1399
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/qcy/tunearc-n1-c3/tunearc-n1-c3-01-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1984/N1.webp",
+   "https://diamu.com.bd/wp-content/uploads/2025/03/QCY-TuneArc-N1-C3-In-ear-Neckband-Headphones-price-in-Bangladesh-2.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Technical Specification",
+    "items": [
+     {
+      "label": "Input Jack",
+      "value": "USB Type-C"
+     },
+     {
+      "label": "Driver Diameter",
+      "value": "12 mm Dynamic Dricer"
+     },
+     {
+      "label": "Connectivity",
+      "value": "Bluetooth version: V5.3 Bluetooth Coded: SBC/AAC Bluetooth Profiles: HSP/HFP/A2DP/AVRCP Transmission range: 10m"
+     },
+     {
+      "label": "Battery Capacity",
+      "value": "180 mAh"
+     },
+     {
+      "label": "Others",
+      "value": "ENC Call IPX4 Water Resistant Macnetic Driver Connection"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Other Features",
+    "items": [
+     {
+      "label": "System Requirements",
+      "value": "Android/iOS"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/qcy-tunearc-n1-c3-neckband"
+ },
+ {
+  "id": "realme-buds-wireless-5-anc",
+  "slug": "realme-buds-wireless-5-anc",
+  "name": "Buds Wireless 5 ANC",
+  "brand": "Realme",
+  "category": "earbuds",
+  "releaseYear": 2025,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "realme-buds-wireless-5-anc~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2799
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/realme/buds-wireless-5/buds-wireless-5-01-1200x630.webp",
+   "https://motionview.s3.amazonaws.com/images/products/profile/177502223467.webp",
+   "https://diamu.com.bd/wp-content/uploads/2025/01/Realme-Buds-Wireless-5-ANC-Neckband.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Signal/Noise",
+      "value": "50dB Hybrid Noise Cancellation"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Wireless BT v5.4"
+     },
+     {
+      "label": "Microphone",
+      "value": "5 Mics"
+     },
+     {
+      "label": "Duration",
+      "value": "Playback (50% volume): 38 hours of playback with ANC off 20 hours of playback with ANC on"
+     },
+     {
+      "label": "Others",
+      "value": "IP55 Water & Dust Resistance Dynamic Audio: 360° Spatial Audio Effect Three-level Noise Reduction: Audio Effect 50dB Hybrid Noise Cancellation ENC Call Noise Cancellation Audio Codecs: SBC/AAC Connection Range: 10 m"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Drivers",
+      "value": "13.6mm Bass Boost Driver"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/realme-buds-wireless-5-neckband"
+ },
+ {
+  "id": "realme-buds-wireless-5-lite",
+  "slug": "realme-buds-wireless-5-lite",
+  "name": "Buds Wireless 5 Lite",
+  "brand": "Realme",
+  "category": "earbuds",
+  "releaseYear": 2025,
+  "popularity": 66,
+  "variants": [
+   {
+    "id": "realme-buds-wireless-5-lite~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1990
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/realme/buds-wireless-5-lite/buds-wireless-5-lite-04-1200x630.webp",
+   "https://diamu.com.bd/wp-content/uploads/2025/06/Realme-Buds-Wireless-5-Lite-Price-in-Bangladesh.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Connection Type",
+      "value": "Wireless"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "600-cycle Battery"
+     },
+     {
+      "label": "Duration",
+      "value": "Playtime: Music Playback Time Up to 35 Hours (50% volume) Theoretical Talk Time Up to 19 hours Charging time (Wired Charging Time): Up to 2.30H"
+     },
+     {
+      "label": "Others",
+      "value": "Dual-Device Connection 45ms Ultra-low Latency IP55 Water & Dust Resistance"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Connector",
+      "value": "Bluetooth 5.4 Range: ≤10 meters"
+     },
+     {
+      "label": "Drivers",
+      "value": "12.4mm Dynamic Bass Driver"
+     },
+     {
+      "label": "Color",
+      "value": "Void Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/realme-buds-wireless-5-lite"
+ },
+ {
+  "id": "realme-buds-wireless-3-neo",
+  "slug": "realme-buds-wireless-3-neo",
+  "name": "Buds Wireless 3 Neo",
+  "brand": "Realme",
+  "category": "earbuds",
+  "releaseYear": 2024,
+  "popularity": 66,
+  "variants": [
+   {
+    "id": "realme-buds-wireless-3-neo~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1999
+   }
+  ],
+  "images": [
+   "https://images.kryinternational.com/uploads/realme-buds-wireless-3-neo-black.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Connection Type",
+      "value": "Wireless"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "Up to 32 Hours Battery Life"
+     },
+     {
+      "label": "Duration",
+      "value": "Music playback time: 32 hours (50% volume, normal mode is on) Theoretical talk time: 20 hours (normal mode)"
+     },
+     {
+      "label": "Others",
+      "value": "Dual-Drive Connection 45ms Ultra-low Latency Google Fast Pair IP55 Water & Dust Resistance"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Connector",
+      "value": "Bluetooth 5.4 Range: ≤10 meters"
+     },
+     {
+      "label": "Drivers",
+      "value": "13.4mm Dynamic Bass Driver"
+     },
+     {
+      "label": "Color",
+      "value": "Green, Blue, Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/realme-buds-wireless-3-neo-neckband"
+ },
+ {
+  "id": "edifier-w280nb-pro",
+  "slug": "edifier-w280nb-pro",
+  "name": "W280NB Pro",
+  "brand": "Edifier",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "edifier-w280nb-pro~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3999
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/edifier/w280nb-pro/w280nb-pro-01-1200x630.webp",
+   "https://assets.gadgetandgear.com/upload/media/edifier-w280nb-pro-neckband-1248.jpeg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Frequency",
+      "value": "20Hz - 40KHz"
+     },
+     {
+      "label": "Sound level/Sensitivity",
+      "value": "92 ± 3dB(A)"
+     },
+     {
+      "label": "Signal/Noise",
+      "value": "Hybrid ANC with up to -45dB Noise Reduction"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Bluetooth V5.4 Effective Range: about 10m"
+     },
+     {
+      "label": "Microphone",
+      "value": "High-sensitivity microphone with AI noise-cancelling algorithms"
+     },
+     {
+      "label": "Battery",
+      "value": "Input: 5V ⎓ 500mA"
+     },
+     {
+      "label": "Duration",
+      "value": "Playback Time: about 23 hours(ANC OFF) about 14 hours(ANC ON) Charging Time: 1.5 hours (Fast charging: 15mins = 5hrs)"
+     },
+     {
+      "label": "Others",
+      "value": "Audio Coding: SBC, LDAC IP55 dust and splash resistance Supports LDAC"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Drivers",
+      "value": "10mm Dynamic Drivers"
+     },
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/edifier-w280nb-pro-neckband"
+ },
+ {
+  "id": "jbl-tune-125bt",
+  "slug": "jbl-tune-125bt",
+  "name": "Tune 125BT",
+  "brand": "JBL",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "jbl-tune-125bt~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3099
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/jbl/tune-125bt/tune-125bt-01-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/661/JBL_Tune_125BT_.webp",
+   "https://images.kryinternational.com/uploads/jbl-tune-125bt-w.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Frequency",
+      "value": "20Hz–20kHz"
+     },
+     {
+      "label": "Impedance",
+      "value": "16Ω"
+     },
+     {
+      "label": "Sound level/Sensitivity",
+      "value": "96dB SPL/1mw"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Wireless"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "Polymer Li-ion Battery (3.7V, 120mAh)"
+     },
+     {
+      "label": "Duration",
+      "value": "Charging time: <2hr Music play time with BT on: >16hr Talk time with BT on: >16hr"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Drivers",
+      "value": "8.6mm"
+     },
+     {
+      "label": "Weight",
+      "value": "16.2g"
+     },
+     {
+      "label": "Color",
+      "value": "Blue, Black, Red"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/jbl-tune-125bt-wireless-neckband"
+ },
+ {
+  "id": "anker-soundcore-r500",
+  "slug": "anker-soundcore-r500",
+  "name": "Soundcore R500",
+  "brand": "Anker",
+  "category": "earbuds",
+  "releaseYear": 2021,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "anker-soundcore-r500~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2500
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/168/ANKER_SOUNDCORE_R500_A3213Y11_Black_01.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/3524-14073.jpg",
+   "https://diamu.com.bd/wp-content/uploads/2021/10/Anker-Soundcore-R500-Fast-Charging-Neckband.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "anker-soundcore-life-u2i",
+  "slug": "anker-soundcore-life-u2i",
+  "name": "Soundcore Life U2i",
+  "brand": "Anker",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "anker-soundcore-life-u2i~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1750
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/earphone/anker/soundcore-life-u2i/soundcore-life-u2i-01-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1456/Soundcore_Life_U2i_Upgraded.webp",
+   "https://diamu.com.bd/wp-content/uploads/2023/11/Anker-Soundcore-Life-U2i-Wireless-Neckband.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Connection Type",
+      "value": "Wireless"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "Battery Life (hr): 20 Charging Time: 1.5 hours"
+     },
+     {
+      "label": "Duration",
+      "value": "Play Time (hr): 20"
+     },
+     {
+      "label": "Others",
+      "value": "IPX5 rating, Ultra small earbuds, and lightweight"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Drivers",
+      "value": "Headphone Driver Units (mm): 10 Bluetooth Version: 5 Bluetooth Range (m): 10"
+     },
+     {
+      "label": "Weight",
+      "value": "Weight: 28"
+     },
+     {
+      "label": "Color",
+      "value": "Black (A3213D11)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/anker-soundcore-life-u2i-wireless-neckband"
+ },
+ {
+  "id": "baseus-bowie-p1x",
+  "slug": "baseus-bowie-p1x",
+  "name": "Bowie P1x",
+  "brand": "Baseus",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "baseus-bowie-p1x~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1550
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/baseus/bowie-p1x/bowie-p1x-white-002-1200x630.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Baseus-Bowie-P1x-Half-In-Ear-Neckband-Wireless-Earphones3-3317.jpg",
+   "https://diamu.com.bd/wp-content/uploads/2023/10/BASEUS-Bowie-P1X-Neckband-Wireless-Earphones.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Frequency",
+      "value": "20 Hz - 20kHz"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Wireless Version: 5.3"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "170mAh Charge interface: Micro USB"
+     },
+     {
+      "label": "Others",
+      "value": "Playtime: 25 hours (70% of the volume) Material: ABS+PC+silica gel+metal"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Drivers",
+      "value": "10mm PET diaphragm coil"
+     },
+     {
+      "label": "Dimensions",
+      "value": "Cable length: 242 mm"
+     },
+     {
+      "label": "Weight",
+      "value": "Weight: 30.7g"
+     },
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/baseus-bowie-p1x-neckband-earphone"
+ },
+ {
+  "id": "oppo-enco-m33",
+  "slug": "oppo-enco-m33",
+  "name": "Enco M33",
+  "brand": "OPPO",
+  "category": "earbuds",
+  "releaseYear": 2023,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "oppo-enco-m33~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 4200
+   }
+  ],
+  "images": [
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Oppo-Enco-M33-Neckband-Wireless-Earphonefdh-4876.png",
+   "https://diamu.com.bd/wp-content/uploads/2023/11/OPPO-Enco-M33-Wireless-Neckband-Earphones.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "xiaomi-redmi-sonicbass",
+  "slug": "xiaomi-redmi-sonicbass",
+  "name": "Redmi SonicBass",
+  "brand": "Xiaomi",
+  "category": "earbuds",
+  "releaseYear": 2020,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "xiaomi-redmi-sonicbass~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1799
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/xiaomi/redmi-sonicbass/redmi-sonicbass-01-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/686/Redmi_SonicBass_Wireless_Earphonecz.webp",
+   "https://diamu.com.bd/wp-content/uploads/2022/12/Redmi-SonicBass-Wireless-In-Ear-Earphones-1.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Connection Type",
+      "value": "Bluetooth 5.0"
+     },
+     {
+      "label": "Battery",
+      "value": "120 mAh Lithium Polymer Battery"
+     },
+     {
+      "label": "Duration",
+      "value": "Music Playback Time: Up to 12 hours Charging Time: Approx. 2 Hours Standby Time: Approx. 200 Hours"
+     },
+     {
+      "label": "Others",
+      "value": "IPX5 water-resistant level"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Weight",
+      "value": "21.2 g"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/xiaomi-redmi-sonicbass-wireless-nechband-earphone"
+ },
+ {
+  "id": "lenovo-he05x-ii",
+  "slug": "lenovo-he05x-ii",
+  "name": "HE05X II",
+  "brand": "Lenovo",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "lenovo-he05x-ii~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 699
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/earphone/lenovo/he05x/he05x-1200x630.webp",
+   "https://motionview.s3.amazonaws.com/images/products/profile/165978033878.Lenovo-HE05X-II%20-wireless-Neckband.webp",
+   "https://diamu.com.bd/wp-content/uploads/2023/02/Lenovo-HE05X-II-New-Edition-Wireless-Neckband.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Frequency",
+      "value": "20 - 20000Hz"
+     },
+     {
+      "label": "Sound level/Sensitivity",
+      "value": "92dB"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Wireless"
+     },
+     {
+      "label": "Battery",
+      "value": "105mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "Music Time: About 5 Hours Call Time: 6 Hours"
+     },
+     {
+      "label": "Others",
+      "value": "IPX5 Water Resistance"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Connector",
+      "value": "Bluetooth 5"
+     },
+     {
+      "label": "Drivers",
+      "value": "10mm"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/lenovo-he05x-ii-wireless-neckband-earphone"
+ },
+ {
+  "id": "hoco-es70",
+  "slug": "hoco-es70",
+  "name": "ES70",
+  "brand": "Hoco",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "hoco-es70~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 820
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/hoco/es70/es70-black-1200x630.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Hoco-ES70-Neckband-Wireless-Earphonea-6954.png",
+   "https://diamu.com.bd/wp-content/uploads/2023/12/Hoco-ES70-Long-Battery-Life-Bluetooth-Neckband.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Frequency",
+      "value": "20Hz-20KHz"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Bluetooth 5.3 chip: JL7003"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "500mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "Charging time: about 3 hours Talk time: about 80 hours"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Dimensions",
+      "value": "22.1*14.1*3 (cm)"
+     },
+     {
+      "label": "Weight",
+      "value": "43g"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/hoco-es70-wireless-neckband"
+ },
+ {
+  "id": "hoco-es69",
+  "slug": "hoco-es69",
+  "name": "ES69",
+  "brand": "Hoco",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "hoco-es69~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 820
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/hoco/es69/es69-black-01-1200x630.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Hoco-ES69-Wireless-Neckband-5400.jpg",
+   "https://diamu.com.bd/wp-content/uploads/2024/02/HOCO-ES69-Wireless-Neckband.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Frequency",
+      "value": "20-20000Hz"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Bluetooth Version: V5.3 Wireless Distance: 10 Meters"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "200mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "Charging time: about 2 hours Standby: Up to 150 hours; Talk time: Up to 20 hours; Listening time: Up to 20 hours"
+     },
+     {
+      "label": "Others",
+      "value": "Supported Protocols: Headset, Hands-free, A2DP, AVRCP"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Cable length",
+      "value": "85cm"
+     },
+     {
+      "label": "Drivers",
+      "value": "10mm"
+     },
+     {
+      "label": "Weight",
+      "value": "30g"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/hoco-es69-bluetooth-neckband"
+ },
+ {
+  "id": "hoco-es62-plus",
+  "slug": "hoco-es62-plus",
+  "name": "ES62 Plus",
+  "brand": "Hoco",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "hoco-es62-plus~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1250
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/hoco/es62-plus/es62-plus-black-04-1200x630.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Hoco-ES62-Plus-Neckband-Wireless-Earphonesa-1639.png",
+   "https://diamu.com.bd/wp-content/uploads/2026/01/Hoco-ES62-Plus-Neckband-Earphones.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Connection Type",
+      "value": "Bluetooth"
+     },
+     {
+      "label": "Battery",
+      "value": "1200mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "Charging time: 3.5 hours Using time: 150 hours of music time; 150 hours of talk time"
+     },
+     {
+      "label": "Others",
+      "value": "Supports playback via Bluetooth and TF card (≤ 32GB) Supports Chinese and English prompt sounds: double-click the multi-function button when not paired"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Cable length",
+      "value": "95cm"
+     },
+     {
+      "label": "Connector",
+      "value": "Bluetooth 5.4, Chip: JL AC7006"
+     },
+     {
+      "label": "Weight",
+      "value": "83g"
+     },
+     {
+      "label": "Color",
+      "value": "Black, Blue"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/hoco-es62-plus-neckband"
+ },
+ {
+  "id": "foneng-bl34",
+  "slug": "foneng-bl34",
+  "name": "BL34",
+  "brand": "Foneng",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 98,
+  "variants": [
+   {
+    "id": "foneng-bl34~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 720
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/foneng/bl34/bl34-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3685/BL34_2.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Foneng-BL34-Neckband-Bluetooth-Earphoneaa-5647.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Connection Type",
+      "value": "Bluetooth 5.0"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "220mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "Talk Time: Approximately 15 hours Music Playback Time: Approximately 15 hours Standby Time: 280 hours"
+     },
+     {
+      "label": "Others",
+      "value": "HD Quality Call with noise reduction HD Microphone for clear voice transmission Sports-friendly design with secure fit Magnetic absorption for easy wear and connection Intelligent magnetic switch functionality"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/foneng-bl34-bluetooth-neckband"
+ },
+ {
+  "id": "foneng-bl40",
+  "slug": "foneng-bl40",
+  "name": "BL40",
+  "brand": "Foneng",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "foneng-bl40~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 799
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/foneng/bl40/bl40-01-1200x630.webp",
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4355/Foneng_BL40.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Foneng-BL40-Neckband-6319.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Connection Type",
+      "value": "Bluetooth 5.4"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "200mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "Talk Time: Approximately 9 hours Music Playback Time: Approximately 9 hours Standby Time: 280 hours"
+     },
+     {
+      "label": "Others",
+      "value": "HD Quality Call with noise reduction HD Microphone for clear voice transmission Sports-friendly design with secure fit Magnetic absorption for easy wear and connection Intelligent magnetic switch functionality"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/foneng-bl40-neckband"
+ },
+ {
+  "id": "acefast-n9",
+  "slug": "acefast-n9",
+  "name": "N9",
+  "brand": "Acefast",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 66,
+  "variants": [
+   {
+    "id": "acefast-n9~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1080
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/acefast/n9-/n9-03-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Frequency",
+      "value": "50Hz-20kHz"
+     },
+     {
+      "label": "Impedance",
+      "value": "32Ω."
+     },
+     {
+      "label": "Sound level/Sensitivity",
+      "value": "119dB ± 3dB."
+     },
+     {
+      "label": "Signal/Noise",
+      "value": "ENC"
+     },
+     {
+      "label": "Connection Type",
+      "value": "v6.0"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "200mAh"
+     },
+     {
+      "label": "Duration",
+      "value": "Charging time: 2 hours. Music Playback Time: 32 hours (at 50% volume). Talk Time: 25 hours (at 50% volume)."
+     },
+     {
+      "label": "Others",
+      "value": "IPX4 waterproof Transmission distance: 10m Magnetic Design High Quality Sound"
+     }
+    ]
+   },
+   {
+    "group": "Physical Specification",
+    "items": [
+     {
+      "label": "Connector",
+      "value": "Charging Port: Type-C"
+     },
+     {
+      "label": "Drivers",
+      "value": "14.2mm"
+     },
+     {
+      "label": "Dimensions",
+      "value": "180 × 126 × 15mm."
+     },
+     {
+      "label": "Weight",
+      "value": "33g"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/acefast-n9-neckband"
+ },
+ {
+  "id": "hifuture-futuremate",
+  "slug": "hifuture-futuremate",
+  "name": "FutureMate",
+  "brand": "HiFuture",
+  "category": "earbuds",
+  "releaseYear": null,
+  "popularity": 66,
+  "variants": [
+   {
+    "id": "hifuture-futuremate~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3499
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/neckband/hifuture/futuremate/futuremate-black-01-1200x630.webp",
+   "https://assets.gadgetandgear.com/upload/product/20230624_1687591127_273100.jpeg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Main Feature",
+    "items": [
+     {
+      "label": "Power Output",
+      "value": "50MW"
+     },
+     {
+      "label": "Connection Type",
+      "value": "Wireless, Bluetooth Bluetooth Version: Bluetooth 5.3"
+     },
+     {
+      "label": "Microphone",
+      "value": "Yes"
+     },
+     {
+      "label": "Battery",
+      "value": "Li-ion Polymer Battery 100mAh"
+     },
+     {
+      "label": "Others",
+      "value": "Product Type: Open Ear Headset ENC: Yes, 4mics ENC Audio Decode: SBC AAC Charing time: 2 hours Water resistance: IPX5"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/hifuture-futuremate-wireless-neckband"
  },
  {
   "id": "anker-zolo-20w-type-c-charger-a2699",
@@ -11874,6 +13706,547 @@ export const catalogProducts: Product[] = [
    }
   ],
   "specsSource": "https://www.startech.com.bd/apple-mac-studio-m5-max"
+ },
+ {
+  "id": "essence-lash-princess-false-lash-effect-mascara",
+  "slug": "essence-lash-princess-false-lash-effect-mascara",
+  "name": "Lash Princess False Lash Effect Mascara",
+  "brand": "Essence",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "essence-lash-princess-false-lash-effect-mascara~v1",
+    "label": "12ml",
+    "attributes": {
+     "capacity": "12ml"
+    },
+    "officialPrice": 699
+   }
+  ],
+  "images": [
+   "https://www.ohsogo.com/cdn/shop/files/Essence_Lash_Princess_False_Lash_Effect_Mascara_12ml.jpg?v=1785058117",
+   "https://beprincessbd.com/wp-content/uploads/2022/12/dthdth.jpg",
+   "https://d1puc9h291tp0h.cloudfront.net/uploads/all/TUW9ENQY3oe3utWbWWCBa17MZqrf7irP2Ac4ptFy.png",
+   "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNTdcLzU3OTc5LUVzc2VuY2UtTGFzaC1QcmluY2Vzcy1GYWxzZS1MYXNoLUVmZmVjdC1NYXNjYXJhLTEybWwtZDdkNi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+   "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(1323).jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "essence-lash-princess-false-lash-effect-waterproof-mascara",
+  "slug": "essence-lash-princess-false-lash-effect-waterproof-mascara",
+  "name": "Lash Princess False Lash Effect Waterproof Mascara",
+  "brand": "Essence",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+    "label": "12ml",
+    "attributes": {
+     "capacity": "12ml"
+    },
+    "officialPrice": 650
+   }
+  ],
+  "images": [
+   "https://www.ohsogo.com/cdn/shop/files/Essence_Lash_Princess_Falsh_Lash_Effect_Waterproof_Mascara_12ml.jpg?v=1785059319",
+   "https://d1puc9h291tp0h.cloudfront.net/uploads/all/lfYBSHnJoic6Ds6saPspnaEjsrCycgf6cZBMqSvB.jpg",
+   "https://beprincessbd.com/wp-content/uploads/2022/12/05-1.png",
+   "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0VmFyaWFudC1wdl9pbWFnZXNcLzYzNTA1XC82MzUwNS0wN2E2NGFmNTMwYmZjNGYyZDExN2ZiZjBjNzA1NzQ4ZC0xLXNkcWpuaC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+   "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(1325).jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "essence-i-love-extreme-crazy-volume-mascara",
+  "slug": "essence-i-love-extreme-crazy-volume-mascara",
+  "name": "I Love Extreme Crazy Volume Mascara",
+  "brand": "Essence",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "essence-i-love-extreme-crazy-volume-mascara~v1",
+    "label": "12ml",
+    "attributes": {
+     "capacity": "12ml"
+    },
+    "officialPrice": 625
+   }
+  ],
+  "images": [
+   "https://www.ohsogo.com/cdn/shop/files/Essence_I_Love_Extreme_Crazy_Volume_Mascara_12ml.jpg?v=1785052365",
+   "https://d1puc9h291tp0h.cloudfront.net/uploads/all/GNkEzJWapzymW9CI0Uatm6oGsKuTaQCiDQS3LoFL.jpg",
+   "https://cdn.klassy.com.bd/uploads/products/products/Essence-i-love-extreme-crazy-volume-mascara-12ml-01-black-7ce7-products.webp",
+   "https://beprincessbd.com/wp-content/uploads/2022/12/Website-Picture-BP-546-×-546px-2026-03-06T114517.956.png",
+   "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNTVcLzU1ODgwLXl5eXl5LWZoanY5My5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "maybelline-colossal-kajal",
+  "slug": "maybelline-colossal-kajal",
+  "name": "Colossal Kajal",
+  "brand": "Maybelline",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "maybelline-colossal-kajal~v1",
+    "label": "0.35g",
+    "attributes": {
+     "capacity": "0.35g"
+    },
+    "officialPrice": 450
+   }
+  ],
+  "images": [
+   "https://www.ohsogo.com/cdn/shop/files/Maybelline_The_Colossal_Kajal_Deep_Black_0.35g.jpg?v=1784040088",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Maybelline-Colossal-Kohl-Kajal-24H-Black.jpg",
+   "https://colorworld.com.bd/wp-content/uploads/2026/07/v3Sx8rTwWjZkf5Ad60lqFKZWbnLEvFHuYwzkJjMR.webp",
+   "https://bk.shajgoj.com/storage/2024/12/maybelline-colossal-kohl-kajal-24h-black.jpg",
+   "https://cdn.klassy.com.bd/uploads/assets/products/maybelline-colossal-kohl-kajal-24h-black-qxcpjg.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "maybelline-lash-sensational-sky-high-mascara",
+  "slug": "maybelline-lash-sensational-sky-high-mascara",
+  "name": "Lash Sensational Sky High Mascara",
+  "brand": "Maybelline",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "maybelline-lash-sensational-sky-high-mascara~v1",
+    "label": "7.2ml",
+    "attributes": {
+     "capacity": "7.2ml"
+    },
+    "officialPrice": 1674
+   }
+  ],
+  "images": [
+   "https://cdn.klassy.com.bd/uploads/products/maybelline-lash-sensational-sky-high-mascara-7.2ml-01-very-black-0b2b-products.webp",
+   "https://beprincessbd.com/wp-content/uploads/2024/01/85-2.jpg",
+   "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(1422).jpg",
+   "https://skincareshop.com.bd/wp-content/uploads/2026/03/Maybelline-Lash-Sensational-Sky-High-Mascara-7.2ML-6.jpg",
+   "https://bdamajanshop.com/wp-content/uploads/2025/03/normal-XfASSoOjcCRllhD1sciHb40jtshO9C.jpeg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "lakme-eyeconic-kajal",
+  "slug": "lakme-eyeconic-kajal",
+  "name": "Eyeconic Kajal",
+  "brand": "Lakme",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "lakme-eyeconic-kajal~v1",
+    "label": "0.35g",
+    "attributes": {
+     "capacity": "0.35g"
+    },
+    "officialPrice": 395
+   }
+  ],
+  "images": [
+   "https://www.ohsogo.com/cdn/shop/files/Lakme9To5EyeconicKajal-DeepBlack.jpg?v=1784544424",
+   "https://cdn.klassy.com.bd/uploads/assets/products/lakm-eyeconic-kajal-black-035g-original-dqarfz.webp",
+   "https://colorworld.com.bd/wp-content/uploads/2026/07/3yxdUVgHiePrO7GpkfS8hlD1hGsbIf66trQTK6fX.webp",
+   "https://skincareshop.com.bd/wp-content/uploads/2021/11/Lakme-Eyeconic-Kajal-Deep-Black-9.jpg",
+   "https://bk.shajgoj.com/storage/2018/05/Lakme-Eyeconic-Kajal-Deep-Black2.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "w7-liquid-eyeliner-pot",
+  "slug": "w7-liquid-eyeliner-pot",
+  "name": "Liquid Eyeliner Pot",
+  "brand": "W7",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "w7-liquid-eyeliner-pot~v1",
+    "label": "8g",
+    "attributes": {
+     "capacity": "8g"
+    },
+    "officialPrice": 350
+   }
+  ],
+  "images": [
+   "https://d1puc9h291tp0h.cloudfront.net/uploads/all/Sy1XIFA5oAHRP8p3HPCxnc1n68KVqaxifSslMbc9.jpg",
+   "https://www.ohsogo.com/cdn/shop/products/w7lepb-1_1.jpg?v=1696405454",
+   "https://beprincessbd.com/wp-content/uploads/2023/01/21-1.png",
+   "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(1469).jpg",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/w7-Liquid-Eyeliner-Pot-800.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "technic-mega-lash-water-resistant-mascara",
+  "slug": "technic-mega-lash-water-resistant-mascara",
+  "name": "Mega Lash Water Resistant Mascara",
+  "brand": "Technic",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "technic-mega-lash-water-resistant-mascara~v1",
+    "label": "12ml",
+    "attributes": {
+     "capacity": "12ml"
+    },
+    "officialPrice": 465
+   }
+  ],
+  "images": [
+   "https://www.ohsogo.com/cdn/shop/products/technic-mega-lash-waterproof-mascara-black-4955-550x688w.jpg?v=1696405661",
+   "https://beprincessbd.com/wp-content/uploads/2022/12/27-4.png",
+   "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(1496).jpg",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Technic-Mega-Lash-Water-Resistant-Mascara-1.jpg",
+   "https://colorworld.com.bd/wp-content/uploads/2026/07/iH7e2YZPWmTw7btqAAvu9rcS6sP4XnG1xxjzI4bV.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "technic-mega-lash-volumising-mascara",
+  "slug": "technic-mega-lash-volumising-mascara",
+  "name": "Mega Lash Volumising Mascara",
+  "brand": "Technic",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 98,
+  "variants": [
+   {
+    "id": "technic-mega-lash-volumising-mascara~v1",
+    "label": "14ml",
+    "attributes": {
+     "capacity": "14ml"
+    },
+    "officialPrice": 439
+   }
+  ],
+  "images": [
+   "https://www.ohsogo.com/cdn/shop/products/technic-mega-lash-volumising-mascara-14ml-4845-550x688w.jpg?v=1696493756",
+   "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(1552).jpg",
+   "https://colorworld.com.bd/wp-content/uploads/2026/07/YLaNGXX7qvMe7FoQPshCilcOWPsPDVoSPu6x95qx.webp",
+   "http://skincareshop.com.bd/wp-content/uploads/2021/11/Technic-Mega-Lash-Volumising-Mascara-14-ml.jpg",
+   "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNTZcLzU2NjI4LTI2NTEybWVnYWxhc2hibGFjay1XQ18xMDI0eDEwMjQtMngtejJ0dnp5LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0="
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "ponds-bright-miracle-bb-cream",
+  "slug": "ponds-bright-miracle-bb-cream",
+  "name": "Bright Miracle BB+ Cream",
+  "brand": "Pond's",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "ponds-bright-miracle-bb-cream~v1",
+    "label": "18g",
+    "attributes": {
+     "capacity": "18g"
+    },
+    "officialPrice": 400
+   }
+  ],
+  "images": [
+   "https://glowellabd.com/wp-content/uploads/2025/03/4jHsU4VuR1EOj0xnZ4YWHZZw2fbVbzBwaVLQ8Kjg.png",
+   "https://d1puc9h291tp0h.cloudfront.net/uploads/all/0Y9Ox74bjcUh8gVx01ICZbyhQVDemIm3ozNPeA39.webp",
+   "https://cdn.klassy.com.bd/uploads/assets/products/ponds-bb-cream-spf-30-pa-18g-ivory-rvjfaj.webp",
+   "https://www.ohsogo.com/cdn/shop/files/Ponds-BB-Cream-Instant-Spot-Coverage-Light-Make-up-Glow-Ivory.jpg?v=1762238034",
+   "https://beprincessbd.com/wp-content/uploads/2023/01/Website-Picture-BP-546-×-546px-2026-03-05T164854.742.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "maybelline-baby-lips-color-lip-balm-spf11",
+  "slug": "maybelline-baby-lips-color-lip-balm-spf11",
+  "name": "Baby Lips Color Lip Balm SPF11",
+  "brand": "Maybelline",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "maybelline-baby-lips-color-lip-balm-spf11~v1",
+    "label": "4g",
+    "attributes": {
+     "capacity": "4g"
+    },
+    "officialPrice": 450
+   }
+  ],
+  "images": [
+   "https://glowellabd.com/wp-content/uploads/2024/12/TQqazyZzYlj98t6UyUdLK9EWRM4wvEWkFyzkXsdc.png",
+   "https://www.ohsogo.com/cdn/shop/files/e92759db-d23b-4cbd-8e30-de0639a67a85.jpg?v=1790505098",
+   "https://beprincessbd.com/wp-content/uploads/2023/11/06.jpg",
+   "https://cdn.klassy.com.bd/uploads/products/products/XtkV7CExMA68uD09dU2ltsyLb1KrXw1upZ3THirR.webp",
+   "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0VmFyaWFudC1wdl9pbWFnZXNcLzUyMTkxXC81MjE5MS01MW5XVEFHLTJrTC0yOTl5dG8uanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ=="
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick",
+  "slug": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick",
+  "name": "MegaLast Liquid Catsuit Matte Lipstick",
+  "brand": "Wet n Wild",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick~v1",
+    "label": "6g",
+    "attributes": {
+     "capacity": "6g"
+    },
+    "officialPrice": 625
+   }
+  ],
+  "images": [
+   "https://d1puc9h291tp0h.cloudfront.net/uploads/all/Cf0etmbyNt64V7y8TpZAwHDQQJR6pNcqPgbgmLkW.jpg",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Wet_n_Wild_MegaLast_Liquid_Catsuit_Matte_Lipstick_Nice_To_Fuchsia_6g.jpg",
+   "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNTVcLzU1OTE2LVdldC1uLVdpbGQtTWVnYUxhc3QtTGlxdWlkLUNhdHN1aXQtTWF0dGUtTGlwc3RpY2stTWlzc3ktRmllcmNlLUU5MzBCLTZnLXNscmYuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ==",
+   "https://colorworld.com.bd/wp-content/uploads/2026/07/hL4kQDooFcYcAaW7ihMu3VpzMwhrDvlczxOB0JKt.webp",
+   "https://skincareshop.com.bd/wp-content/uploads/2021/11/Wet-n-Wild-MegaLast-Liquid-Catsuit-Matte-Lipstick-Missy-and-Fierce.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "wet-n-wild-photo-focus-dewy-foundation",
+  "slug": "wet-n-wild-photo-focus-dewy-foundation",
+  "name": "Photo Focus Dewy Foundation",
+  "brand": "Wet n Wild",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "wet-n-wild-photo-focus-dewy-foundation~v1",
+    "label": "28ml",
+    "attributes": {
+     "capacity": "28ml"
+    },
+    "officialPrice": 980
+   }
+  ],
+  "images": [
+   "https://beprincessbd.com/wp-content/uploads/2023/02/c17.png",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Wet_n_Wild_Photo_Focus_Dewy_Foundation_Golden_Beige_28ml.jpg",
+   "https://colorworld.com.bd/wp-content/uploads/2026/07/evPQIj9J4WUzwqwVQ9S7yftz2QSgDktna4UrsXFe.webp",
+   "https://skinrevivebd.com/wp-content/uploads/2025/01/1111528_2_1.webp",
+   "https://ukdirectbd.com/wp-content/uploads/2025/06/16.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "wet-n-wild-photo-focus-matte-foundation",
+  "slug": "wet-n-wild-photo-focus-matte-foundation",
+  "name": "Photo Focus Matte Foundation",
+  "brand": "Wet n Wild",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "wet-n-wild-photo-focus-matte-foundation~v1",
+    "label": "30ml",
+    "attributes": {
+     "capacity": "30ml"
+    },
+    "officialPrice": 950
+   }
+  ],
+  "images": [
+   "https://www.ohsogo.com/cdn/shop/products/wnw-pff-db_1.jpg?v=1696409895",
+   "https://beprincessbd.com/wp-content/uploads/2023/02/c16.png",
+   "https://bk.shajgoj.com/storage/2026/10/warm-beige-matte-foundation-ad.png",
+   "https://bdamajanshop.com/wp-content/uploads/2022/11/Wet-n-wild-Soft-ivory-1-1.png",
+   "https://ukdirectbd.com/wp-content/uploads/2025/06/15.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "maybelline-superstay-matte-ink-liquid-lipstick",
+  "slug": "maybelline-superstay-matte-ink-liquid-lipstick",
+  "name": "SuperStay Matte Ink Liquid Lipstick",
+  "brand": "Maybelline",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "maybelline-superstay-matte-ink-liquid-lipstick~v1",
+    "label": "5ml",
+    "attributes": {
+     "capacity": "5ml"
+    },
+    "officialPrice": 1350
+   }
+  ],
+  "images": [
+   "https://d1puc9h291tp0h.cloudfront.net/uploads/all/UuTRupvIb6CiENhTm5pVyOd2vXFjgG5kTmaXCLuN.webp",
+   "https://colorworld.com.bd/wp-content/uploads/2026/07/8pXT2JTOqKrQgX7Fm4q68uqMLGJJhEGa5dvrJm8R.webp",
+   "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Maybelline_Superstay_Matte_Ink_Liquid_Lipstick_50_Voyager_5ml01.webp",
+   "https://bk.shajgoj.com/storage/2023/09/Maybelline-New-York-Super-Stay-Matte-Ink-Liquid-Lipstick-40-Believer.jpg",
+   "http://skincareshop.com.bd/wp-content/uploads/2023/03/Maybelline-Superstay-Matte-Ink-Liquid-Lipstick-5ml-325-Shot-Caller-9.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "maybelline-superstay-vinyl-ink-liquid-lipstick",
+  "slug": "maybelline-superstay-vinyl-ink-liquid-lipstick",
+  "name": "SuperStay Vinyl Ink Liquid Lipstick",
+  "brand": "Maybelline",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "maybelline-superstay-vinyl-ink-liquid-lipstick~v1",
+    "label": "4.2ml",
+    "attributes": {
+     "capacity": "4.2ml"
+    },
+    "officialPrice": 1350
+   }
+  ],
+  "images": [
+   "https://d1puc9h291tp0h.cloudfront.net/uploads/all/NLDNHIK3YFPCBZ5QONRTnULjFLedgiu0zF0RxRVw.jpg",
+   "https://beprincessbd.com/wp-content/uploads/2024/03/75.jpg",
+   "https://colorworld.com.bd/wp-content/uploads/2026/07/B1tiJdNQPhzTHRcTjatdwHc6Q6kOnklwfvPUtlAN.webp",
+   "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC82MzMzM1wvNjMzMzMtNjFEa2d1by14Z0wtZGJtdjNyLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0=",
+   "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/file_6a70409144d75.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "maybelline-fit-me-matte-poreless-foundation",
+  "slug": "maybelline-fit-me-matte-poreless-foundation",
+  "name": "Fit Me Matte + Poreless Foundation",
+  "brand": "Maybelline",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "maybelline-fit-me-matte-poreless-foundation~v1",
+    "label": "30ml",
+    "attributes": {
+     "capacity": "30ml"
+    },
+    "officialPrice": 1250
+   }
+  ],
+  "images": [
+   "https://bk.shajgoj.com/storage/2026/04/3119-1.jpg",
+   "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC83NjcwNlwvNzY3MDYtTWF5YmVsbGluZS1GaXQtTWUtTWF0dGUtUG9yZWxlc3MtMTE1LUl2b3J5LTA0MTU1NDQzMzQzMi1BVjExLXBnb3kxdS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+   "https://cdn.klassy.com.bd/uploads/products/products/Maybelline-Fit-Me-Matte-+-Poreless-Liquid-Foundation-16H-Oil-Control-with-SPF-22,-30ml--ba93-products.webp",
+   "https://beprincessbd.com/wp-content/uploads/2025/02/Website-Picture-BP-546-×-546px-47.png",
+   "https://skinrevivebd.com/wp-content/uploads/2025/01/Maybelline-Fit-Me-Matte-Poreless-Foundation-Natural-Beige-220.jpg"
+  ],
+  "colors": [],
+  "regions": [
+   "India"
+  ],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "lor-al-paris-infallible-32h-fresh-wear-foundation",
+  "slug": "lor-al-paris-infallible-32h-fresh-wear-foundation",
+  "name": "Infallible 32H Fresh Wear Foundation",
+  "brand": "L'Oréal Paris",
+  "category": "makeup",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "lor-al-paris-infallible-32h-fresh-wear-foundation~v1",
+    "label": "30ml",
+    "attributes": {
+     "capacity": "30ml"
+    },
+    "officialPrice": 1887
+   }
+  ],
+  "images": [
+   "https://beprincessbd.com/wp-content/uploads/2024/04/331.jpg",
+   "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC84NjA4M1wvODYwODMtTC1Pci1hbC1QYXJpcy1JbmZhbGxpYmxlLUZyZXNoLVdlYXItMzJILUxpcXVpZC1Gb3VuZGF0aW9uLWluLXNoYWRlLTQyMC1UcnVlLUJlaWdlLTMwbWwtNTgxd3o4LndlYnAiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0=",
+   "https://colorworld.com.bd/wp-content/uploads/2026/05/LBnMkAgcB84Hm3DRiMshvc2ff0RHm2w584u36g4x.webp",
+   "https://cms.beautybooth.com.bd/uploads/all/loreal-paris-makeup-infallible-fresh-wear-foundation-020-ivory-9gm.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
  },
  {
   "id": "samsung-galaxy-a07",
@@ -22535,6 +24908,2545 @@ export const catalogProducts: Product[] = [
   "specsSource": "https://www.startech.com.bd/oraimo-magpower-15-10000mah-wireless-power-bank"
  },
  {
+  "id": "tp-link-archer-c6",
+  "slug": "tp-link-archer-c6",
+  "name": "Archer C6",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 100,
+  "variants": [
+   {
+    "id": "tp-link-archer-c6~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3649
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2050/TP-Link_Archer_C6__AC1200_Dual_Band_Gigabit_Wi-Fi_Router.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/imgi_24_Archer_C6_EU_6.0_overview_01_large_20250919062247p-9335.png",
+   "https://images.kryinternational.com/uploads/archer-c6-ac1200-dual-band-gigabit-wi-fi-router.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "5 GHz: 867 Mbps (802.11ac) 2.4 GHz: 300 Mbps (802.11n)"
+     },
+     {
+      "label": "Antenna",
+      "value": "4× Fixed High-Performance Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "WPS/Wi-Fi Button Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "2.4GHz and 5GHz"
+     },
+     {
+      "label": "Network Standard",
+      "value": "Wi-Fi 5 IEEE 802.11ac/n/a 5 GHz IEEE 802.11n/b/g 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WPA, WPA2, WPA3, WPA/WPA2-Enterprise (802.1x)"
+     },
+     {
+      "label": "Ports",
+      "value": "1× Gigabit WAN Port 4× Gigabit LAN Ports"
+     },
+     {
+      "label": "Others",
+      "value": "Network Security: SPI Firewall Access Control IP & MAC Binding Application Layer Gateway Working Modes: Router Mode, Access Point Mode Protocols: IPv4, IPv6"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "12 V ⎓ 1 A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "8.5 × 4.6 × 1.2 in (215 × 117 × 32 mm)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "01 year warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-archer-c6-ac1200-gigabit-router"
+ },
+ {
+  "id": "tp-link-archer-c64",
+  "slug": "tp-link-archer-c64",
+  "name": "Archer C64",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 98,
+  "variants": [
+   {
+    "id": "tp-link-archer-c64~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3190
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2051/TP-Link_Archer_C64_AC1200_Dual_Band_Gigabit_Wi-Fi_Router.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-C64-AC1200-Dual-Band-Gigabit-Wi-Fi-Router-8957.png",
+   "https://assets.gadgetandgear.com/upload/media/1725082391053939.jpeg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "AC1200 5 GHz: 867 Mbps (802.11ac) 2.4 GHz: 300 Mbps (802.11n)"
+     },
+     {
+      "label": "Antenna",
+      "value": "4× Fixed High-Performance Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "WPS/Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "5 GHz, 2.4 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Dual-Band Allocate devices to different bands for optimal performance MU-MIMO Simultaneously communicates with multiple MU-MIMO clients Airtime Fairness Improves network efficiency by limiting excessive occupation"
+     },
+     {
+      "label": "Network Standard",
+      "value": "Wi-Fi 5 IEEE 802.11ac/n/a 5 GHz IEEE 802.11n/b/g 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WPA/WPA2, WPA-PSK/WPA2-PSK/WPA3-SAE encryptions"
+     },
+     {
+      "label": "Ports",
+      "value": "1× Gigabit WAN Port 4× Gigabit LAN Ports"
+     },
+     {
+      "label": "Others",
+      "value": "Processor: 1.2 GHz CPU"
+     },
+     {
+      "label": "Operating System Support",
+      "value": "Microsoft Windows 8SE/ NT/ 2000/ XP/ Vista/ 7/ 8/ 8.1/ 10, MAC OS, NetWare, UNIX or Linux"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "12V = 1A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "4.7 × 4.7 × 1.1 in (120 × 120 × 27.9 mm)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 year"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-archer-c64-ac1200-wifi-router"
+ },
+ {
+  "id": "tp-link-archer-c54",
+  "slug": "tp-link-archer-c54",
+  "name": "Archer C54",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "tp-link-archer-c54~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2399
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2052/TP-Link_Archer_C54_AC1200_Dual_Band_Wi-Fi_Router.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-C54-AC1200-a-5983.jpg",
+   "https://images.kryinternational.com/uploads/tp-link-archer-c54-ac1200-dual-band-wi-fi-router.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "AC1200 5 GHz: 867 Mbps (802.11ac) 2.4 GHz: 300 Mbps (802.11n)"
+     },
+     {
+      "label": "Antenna",
+      "value": "4× Fixed Antennas (Cover more area with more antennas)"
+     },
+     {
+      "label": "Button",
+      "value": "WPS/Rest Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "5 GHz: 867 Mbps (802.11ac) 2.4 GHz: 300 Mbps (802.11n)"
+     },
+     {
+      "label": "Network Standard",
+      "value": "Wi-Fi 5 IEEE 802.11ac/n/a 5 GHz IEEE 802.11n/b/g 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WEP WPA WPA2 WPA/WPA2-Enterprise (802.1x)"
+     },
+     {
+      "label": "Ports",
+      "value": "1× 10/100 Mbps WAN Port 4× 10/100 Mbps LAN Ports"
+     },
+     {
+      "label": "Others",
+      "value": "Network Security: SPI Firewall Access Control IP & MAC Binding Application Layer Gateway Working Modes: Router Mode, Access Point Mode, Range Extender Mode Protocols: IPv4, IPv6"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "9 V ⎓ 0.85 A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "4.5 × 4.2 × 1.0 in (115 × 106.7 × 24.3 mm)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "01 year warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-archer-c54-ac1200-dual-band-mu-mimo-beamforming-wi-fi-router"
+ },
+ {
+  "id": "tp-link-archer-c50",
+  "slug": "tp-link-archer-c50",
+  "name": "Archer C50",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "tp-link-archer-c50~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2690
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4469/TP-Link_Archer_C50.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-C50-AC1200-Wireless-Dual-Band-Wi-Fi-Router-7722.png",
+   "https://images.kryinternational.com/uploads/tp-link-archer-c50-ac1200-dual-band-wi-fi-router.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "2.4GHz: Up to 300Mbps 5GHz: Up to 867Mbps"
+     },
+     {
+      "label": "Antenna",
+      "value": "4 External Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "Reset Button WPS/Wi-Fi On/Off Button Power On/Off Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "2.4GHz and 5GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "IEEE 802.11n/g/b 2.4GHz IEEE 802.11ac/n/a 5GHz"
+     },
+     {
+      "label": "Interface",
+      "value": "4 10/100Mbps LAN Ports 1 10/100Mbps WAN Port"
+     },
+     {
+      "label": "Network Standard",
+      "value": "5GHz: 11a 54M: -73dBm 11ac VHT20 MCS8: -68dBm 11ac VHT40 MCS9: -64dBm 11ac VHT80 MCS9: -60dBm 2.4GHz: 11g 54M: -76dBm 11n HT20 MCS7: -74dBm 11n HT40 MCS7: -71d"
+     },
+     {
+      "label": "Encryption",
+      "value": "64/128-bit WEP, WPA / WPA2, WPA-PSK/ WPA2-PSK encryption"
+     },
+     {
+      "label": "Ports",
+      "value": "1× 10/100 Mbps WAN Port 4× 10/100 Mbps LAN Ports"
+     },
+     {
+      "label": "Others",
+      "value": "1200 sq ft to 1500 sq ft Maximum Area Open Space Coverage Operating Temperature: 0℃~40 ℃ (32 ℉~104℉) Storage Temperature: -40℃~70 ℃ (-40 ℉~158℉) Operating Humidity: 10%~90% non-condensing Storage Humidity: 5%~90% non-condensing CE, FCC, RoHS 2.4GHz guest network × 1 5GHz guest network × 1 Supports IPv4 and IPv6 DoS, SPI Firewall IP Address Filter/MAC Address Filter/Domain Filter IP and MAC Address Binding Parental Control, Local Management Control, Host List, Access Schedule, Rule Management PPTP, L2TP, IPSec DynDns, Comex, NO-IP Virtual Server, Port Triggering, UPnP, DMZ Server, Client, DHCP Client List, Address Reservation Access Control Local Management Remote Management Dynamic IP/Static IP/PPPoE/ BigPond/ /L2TP(Dual Access) /PPTP(Dual Access)"
+     },
+     {
+      "label": "Operating System Support",
+      "value": "Enable/Disable Wireless Radio, WDS Bridge, WMM, Wireless Statistics Microsoft Windows 98SE, NT, 2000, XP, Vista™ or Windows 7, Windows 8/8.1/10 MAC OS, NetWare, UNIX or Linux"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "CE: <20dBm(2.4GHz) <23dBm(5GHz) FCC: <30dBm External Power Supply-9VDC / 0.85A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "9.1 x 5.7 x 1.5 in. (229.87 x 144.19 x 36.85 mm)"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "01 year warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-archer-c50-wifi-router"
+ },
+ {
+  "id": "tp-link-archer-c24",
+  "slug": "tp-link-archer-c24",
+  "name": "Archer C24",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "tp-link-archer-c24~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2129
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2053/TP-Link_Archer_C24_AC750_Dual_Band_Wi-Fi_Router.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-C24-AC750-Dual-Band-Wi-Fi-Router-2521.png",
+   "https://diamu.com.bd/wp-content/uploads/2023/03/Tp-Link-Archer-C24-AC750-Dual-Band-Wi-Fi-Router.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "5 GHz: 433 Mbps (802.11ac) 2.4 GHz: 300 Mbps (802.11n)"
+     },
+     {
+      "label": "Antenna",
+      "value": "4× Fixed Antennas Multiple antennas form a signal-boosting array to cover more directions and large areas"
+     },
+     {
+      "label": "Button",
+      "value": "WPS/Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "5 GHz, 2.4 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Wi-Fi 5 (AC750)"
+     },
+     {
+      "label": "Interface",
+      "value": "1× 5 GHz Guest Network 1× 2.4 GHz Guest Network"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11ac/n/a 5 GHz IEEE 802.11n/b/g 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WEP WPA WPA2 WPA/WPA2-Enterprise (802.1x)"
+     },
+     {
+      "label": "Ports",
+      "value": "Ethernet Ports 1× 10/100 Mbps WAN Port 4× 10/100 Mbps LAN Ports"
+     },
+     {
+      "label": "Others",
+      "value": "Network Security: SPI Firewall Access Control IP & MAC Binding Application Layer Gateway WiFi Encryption: WEP WPA WPA2 WPA/WPA2-Enterprise (802.1x)"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "Router Mode Access Point Mode Range Extender Mode"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "4.5 × 4.2 × 1.0 in (115 × 106.7 × 24.3 mm)"
+     },
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "01 year warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-archer-c24-ac750-dual-band-wi-fi-router"
+ },
+ {
+  "id": "tp-link-archer-c80",
+  "slug": "tp-link-archer-c80",
+  "name": "Archer C80",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "tp-link-archer-c80~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 4590
+   }
+  ],
+  "images": [
+   "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-C80-AC1900-Dual-Band-Gigabit-WiFi-Router-9879.png",
+   "https://assets.gadgetandgear.com/upload/media/1725077240240100.jpeg",
+   "https://www.startech.com.bd/image/cache/catalog/router/tp-link/archer-c80-ac1900/archer-c80-ac1900-1-1200x630.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "1900 Mbps (WiFi): 5 GHz: 1300 Mbps (802.11ac) 2.4 GHz: 600 Mbps (802.11n)"
+     },
+     {
+      "label": "Antenna",
+      "value": "4× Fixed High-Performance Antennas Note: Multiple antennas form a signal-boosting array to cover more directions and large areas"
+     },
+     {
+      "label": "Button",
+      "value": "WPS/Wi-Fi Button Power On/Off Button Reset Button"
+     },
+     {
+      "label": "Wireless",
+      "value": "Standards - Wi-Fi 5: IEEE 802.11ac/n/a 5 GHz IEEE 802.11n/b/g 2.4 GHz WiFi Speeds - AC1900: 5 GHz: 1300 Mbps (802.11ac) 2.4 GHz: 600 Mbps (802.11n)"
+     },
+     {
+      "label": "Interface",
+      "value": "1 x Gigabit WAN, 4 x Gigabit LAN"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11ac, n, a, b, g (WiFi)"
+     },
+     {
+      "label": "Encryption",
+      "value": "WEP WPA WPA2 WPA/WPA2-Enterprise (802.1x)"
+     },
+     {
+      "label": "Ports",
+      "value": "1× Gigabit WAN Port 4× Gigabit LAN Ports"
+     },
+     {
+      "label": "Others",
+      "value": "Network Security: SPI Firewall Access Control IP & MAC Binding Application Layer Gateway Working Modes: Router Mode, Access Point Mode Processor: 1.2 GHz CPU"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "Adapter 12V - 1.5A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "8.5 × 4.6 × 1.26 in (215 × 117 × 32 mm)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "01 year warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-archer-c80-ac1900-gigabit-mu-mimo-router"
+ },
+ {
+  "id": "tp-link-archer-ax12",
+  "slug": "tp-link-archer-ax12",
+  "name": "Archer AX12",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 98,
+  "variants": [
+   {
+    "id": "tp-link-archer-ax12~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3990
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4633/TP-Link_Archer_AX12.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-AX12-AX1500-Dual-Band-Gigabit-Wi-Fi-6-Router-5363.png",
+   "https://assets.gadgetandgear.com/upload/media/tp-link-archer-ax12-ax1500-router827.jpeg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "5 GHz: 1201 Mbps (802.11ax) 2.4 GHz: 300 Mbps (802.11n)"
+     },
+     {
+      "label": "Antenna",
+      "value": "4× Fixed High-Performance Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "WPS/Wi-Fi Button Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "5 GHz 2.4 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Beamforming High-Power FEM"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11ax/ac/n/a 5 GHz IEEE 802.11ax/n/b/g 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WPA2-PSK WPA2-PSK/WPA-PSK WPA3-Personal WPA3-Personal/WPA2-PSK WPA2-Enterprise WPA/WPA2-Enterprise encryptions"
+     },
+     {
+      "label": "Ports",
+      "value": "1× Gigabit WAN Port 3× Gigabit LAN Ports"
+     },
+     {
+      "label": "Others",
+      "value": "Network Security: SPI Firewall Access Control IP & MAC Binding Application Layer Gateway HomeShield Security Real-Time IoT Protection Malicious Site Blocker Intrusion Prevention System DDoS Attack Prevention Home Network Scanner"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "12 V ⎓ 1 A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "(215 × 117 × 32 mm)"
+     },
+     {
+      "label": "Weight",
+      "value": "670 g"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 year Warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-archer-ax12-ax1500-router"
+ },
+ {
+  "id": "tp-link-archer-ax53",
+  "slug": "tp-link-archer-ax53",
+  "name": "Archer AX53",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "tp-link-archer-ax53~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 6590
+   }
+  ],
+  "images": [
+   "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-AX53-AX3000-Dual-Band-Gigabit-Wi-Fi-6-Router-5937.png",
+   "https://assets.gadgetandgear.com/upload/media/1724749511795729.jpeg",
+   "https://www.startech.com.bd/image/cache/catalog/router/tp-link/Archer-ax53/Archer-ax53-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "5 GHz: 2402 Mbps (802.11ax, HE160) 2.4 GHz: 574 Mbps (802.11ax)"
+     },
+     {
+      "label": "Antenna",
+      "value": "4× Fixed High-Performance Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "Wi-Fi/WPS Button Power On/Off Button LED On/Off Button Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "IEEE 802.11ax/ac/n/a 5 GHz IEEE 802.11ax/n/b/g 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WPA WPA2 WPA3 WPA/WPA2-Enterprise"
+     },
+     {
+      "label": "Ports",
+      "value": "1× Gigabit WAN Port 4× Gigabit LAN Ports"
+     },
+     {
+      "label": "Others",
+      "value": "Network Security: SPI Firewall Access Control IP & MAC Binding Application Layer Gateway HomeShield Security Real-Time IoT Protection Malicious Site Blocker Intrusion Prevention System DDoS Attack Prevention Home Network Scanner Coverage: 2500sft"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "CE: <20dBm (2.4GHz); <23dBm (5.15GHz~5.35GHz); <30dBm (5.47GHz~5.725GHz) FCC: <30dBm (2.4GHz &5.15GHz~5.25GHz&5.725GHz~5.825GHz)"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "10.2 × 5.3 × 1.6 in (260.2 × 135 × 41.6 mm)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 year Warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-Archer-ax53-ax3000-dual-band-gigabit-wi-fi-6-router"
+ },
+ {
+  "id": "tp-link-archer-ax73",
+  "slug": "tp-link-archer-ax73",
+  "name": "Archer AX73",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "tp-link-archer-ax73~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 15990
+   }
+  ],
+  "images": [
+   "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-AX73-AX5400-Dual-Band-Gigabit-Wi-Fi-6-Router-1152.png",
+   "https://assets.gadgetandgear.com/upload/media/tp-link-archer-ax73-dual-band-gigabit-router525.jpeg",
+   "https://diamu.com.bd/wp-content/uploads/2022/02/TP-Link-Archer-Ax73-Ax5400-Dual-Band-6-Stream-Gigabit-Wi-Fi-6-Router-1.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "AX5400 5 GHz: 4804 Mbps (802.11ax, HE160) 2.4 GHz: 574 Mbps (802.11ax)"
+     },
+     {
+      "label": "Antenna",
+      "value": "6× Fixed High-Performance Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "Wi-Fi On/Off Button Power On/Off Button LED On/Off Button WPS Button Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "2.4GHz and 5GHz"
+     },
+     {
+      "label": "Interface",
+      "value": "1× USB 3.0 Port"
+     },
+     {
+      "label": "Network Standard",
+      "value": "Wi-Fi 6 IEEE 802.11ax/ac/n/a 5 GHz IEEE 802.11ax/n/b/g 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WPA WPA2 WPA3 WPA/WPA2-Enterprise (802.1x)"
+     },
+     {
+      "label": "Ports",
+      "value": "1× Gigabit WAN Port 4× Gigabit LAN Ports Static Link Aggregation (LAG) available with 2× LAN ports"
+     },
+     {
+      "label": "Others",
+      "value": "Network Security: SPI Firewall Access Control IP & MAC Binding Application Layer Gateway HomeShield Security: Real-Time IoT Protection Malicious Site Blocker Intrusion Prevention System DDoS Attack Prevention Home Network Scanner"
+     },
+     {
+      "label": "Operating System Support",
+      "value": "Internet Explorer 11+, Firefox 12.0+, Chrome 20.0+, Safari 4.0+, or other JavaScript-enabled browser Cable or DSL Modem (if needed) Subscription with an internet service provider (for internet access)"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "12 V ⎓ 2.5 A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "10.7 × 5.8 × 1.9 in (272.5 × 147.2 × 49.2 mm)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "01 year warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-archer-ax73-ax5400-dual-band-gigabit-router"
+ },
+ {
+  "id": "tp-link-archer-be400",
+  "slug": "tp-link-archer-be400",
+  "name": "Archer BE400",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 66,
+  "variants": [
+   {
+    "id": "tp-link-archer-be400~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 19690
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/router/tp-link/archer-be400/archer-be400-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "BE6500 5 GHz: 5764 Mbps (802.11be) 2.4 GHz: 688 Mbps (802.11be)"
+     },
+     {
+      "label": "Antenna",
+      "value": "6× external antennas along with Beamforming"
+     },
+     {
+      "label": "Button",
+      "value": "Power Button Wi-Fi/LED Button WPS Button Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "Dual Band: 2.4GHz and 5GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Advanced Features: Multi-Link Operation (MLO) 4K-QAM Multi-RUs EasyMesh-Compatible Works with Alexa and Google Assistant IoT Network Wireless Mode: Router Mode Access Point Mode"
+     },
+     {
+      "label": "Network Standard",
+      "value": "Wi-Fi 7"
+     },
+     {
+      "label": "Encryption",
+      "value": "WPA WPA2 WPA3 WPA/WPA2-Enterprise (802.1x)"
+     },
+     {
+      "label": "Ports",
+      "value": "1× 2.5 Gbps WAN 1× 2.5 Gbps LAN 3× 1 Gbps LAN"
+     },
+     {
+      "label": "Others",
+      "value": "HomeShield Parental Controls: Custom Profiles, Professional Content Filter, Library, Family Time, Bedtime, Off Time, Time Rewards, Family Online Time Ranking, Pause the Internet, Weekly and Monthly Reports WAN Type: Dynamic IP, Static IP, PPPoE, PPTP, L2TP Quality of Service: QoS by Device Cloud Service: Auto Firmware Upgrade, TP-Link ID, DDNS NAT Forwarding: Port Forwarding, Port Triggering, DMZ, UPnP IPTV: IGMP Proxy, IGMP Snooping, Bridge, Tag VLAN DHCP: Address Reservation, DHCP Client List, Server DDNS: TP-Link, NO-IP, DynDNS Management Features: Tether App, Webpage"
+     },
+     {
+      "label": "Operating System Support",
+      "value": "System Requirements: Internet Explorer 11+, Firefox 12.0+, Chrome 20.0+, Safari 4.0+, or other JavaScript-enabled browser Cable or DSL Modem (if needed) Subscription with an internet service provider (for internet access)"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "12 V ⎓ 2.5 A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "01 year warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-archer-be400-router"
+ },
+ {
+  "id": "tenda-ac10",
+  "slug": "tenda-ac10",
+  "name": "AC10",
+  "brand": "Tenda",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "tenda-ac10~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3200
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2682/Post_Template_1.webp",
+   "https://diamu.com.bd/wp-content/uploads/2022/02/Tenda-AC10-AC1200-Dual-Band-4-Anteena-1200Mbps-Gigabit-WiFi-Router.jpg",
+   "https://www.startech.com.bd/image/cache/catalog/router/tenda/ac10/ac10-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "5GHz: Up to 867Mbps 2.4GHz: Up to 300Mbps"
+     },
+     {
+      "label": "Antenna",
+      "value": "4*6dbi external antennas"
+     },
+     {
+      "label": "Button",
+      "value": "1*WPS/Reset button"
+     },
+     {
+      "label": "Frequency",
+      "value": "Dual Band (5GHz & 2.4GHz)"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE802.3, IEEE802.3u, IEEE802.3ab"
+     },
+     {
+      "label": "Encryption",
+      "value": "WPA2-PSK Wireless Security: Enable/Disable WPS(WiFi Protected Set-up) fast encryption"
+     },
+     {
+      "label": "Ports",
+      "value": "1*10/100/1000Mbps WAN port 3*10/100/1000Mbps LAN ports"
+     },
+     {
+      "label": "Others",
+      "value": "Internet Connection Type: PPPoE, Dynamic IP, Static IP PPPoE(Russia), PPTP(Russia), L2TP(Russia) Support automatic access detection Supports broadband account automatic transfer Network Protocol: IPv4&IPv6 Operating Mode: Wireless Router Mode AP Mode Universal Repeater mode WISP Mode Parental Control: Client Filter URL Filter Time Limit"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "Input: AC 100-240V~50/60Hz Output: DC 12V⎓1A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "8.66 * 5.57 * 1.93 in (220*141.5*49mm)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 year"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tenda-ac10-ac1200-smart-dual-band-router"
+ },
+ {
+  "id": "tenda-tx12-pro",
+  "slug": "tenda-tx12-pro",
+  "name": "TX12 Pro",
+  "brand": "Tenda",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "tenda-tx12-pro~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 4100
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2679/New_Project.webp",
+   "https://diamu.com.bd/wp-content/uploads/2023/10/Tenda-TX12-Pro-V2.0-AX3000-Dual-Band-Gigabit-Wi-Fi-6-Router.png",
+   "https://diamu.com.bd/wp-content/uploads/2023/10/Tenda-TX12-Pro-V2.0-AX3000-Dual-Band-Gigabit-Wi-Fi-6-Router.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "5 GHz: 2402 Mbps (802.11ax, HE160) 2.4 GHz: 574 Mbps (802.11ax)"
+     },
+     {
+      "label": "Antenna",
+      "value": "5*6dbi external antennas"
+     },
+     {
+      "label": "Button",
+      "value": "1*WPS/Mesh button 1*Reset button"
+     },
+     {
+      "label": "Frequency",
+      "value": "Dual Band (2.4GHz & 5GHz)"
+     },
+     {
+      "label": "Interface",
+      "value": "1× Gigabit WAN Port 3× Gigabit LAN Ports"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE802.3, IEEE802.3u, IEEE802.3ab"
+     },
+     {
+      "label": "Encryption",
+      "value": "WPA2-PSK WPA3-SAE/WPA2-PSK Wireless Security: Enable/Disable WPS(WiFi Protected Set-up) fast encryption"
+     },
+     {
+      "label": "Others",
+      "value": "Internet Connection Type: PPPoE, Dynamic IP, Static IP PPPoE(Russia), PPTP(Russia), L2TP(Russia) Unify,Maxis,Maxis-special,Celcom,Digi Network Protocol: IPv4&IPv6 Operating Mode: Router Mode AP Mode Universal Repeater Mode（Client+AP,WISP） Parental Control: Client Filter URL Filter Time Limit DHCP: DHCP Server DHCP Client List DHCP Static IP Address Reservation and Allocation Virtual Server: Port Forwarding, DMZ Host, UPnP Firewall: ICMP Flood Attack Defense TCP Flood Attack Defense UDP Flood Attack Defense Block Ping From WAN DDNS: DynDNS, no-ip, oray, 88ip VPN: IPSec Transparent Transmission PPTP Transparent Transmission L2TP Transparent Transmission PPTP VPN Server PPTP VPN Client L2TP VPN Client Special Features: Wi-Fi+(Mesh System) Smart diagnosis IPTV IPv6 Smart LED on/off Other Function: Support App and web management Bandwidth Control Guest Network MAC Address Clone Supports black list and white list Unify 2.4 GHz & 5 GHz Static Routing Remote Web Management Backup & Restore configurations Firmware upgrade online"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "(L*W*H)267*166*222 mm"
+     },
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "01 Year"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tenda-tx12-pro-v2-0-dual-band-gigabit-wi-fi-6-router"
+ },
+ {
+  "id": "mercusys-ac10",
+  "slug": "mercusys-ac10",
+  "name": "AC10",
+  "brand": "Mercusys",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "mercusys-ac10~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 1749
+   }
+  ],
+  "images": [
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Mercusys-AC10-AC1200-White-a-3249.jpg",
+   "https://www.startech.com.bd/image/cache/catalog/router/mercusys/ac10/ac10-01-1200x630.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "Up to 300 Mbps on 2.4 GHz, 867 Mbps on 5 GHz"
+     },
+     {
+      "label": "Antenna",
+      "value": "4× 5 dBi Fixed Omni-Directional Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "Reset/WPS Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "2.4 GHz, 5 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Enable/Disable Wireless Radio, WMM"
+     },
+     {
+      "label": "Interface",
+      "value": "1× 10/100 Mbps WAN Port 2× 10/100 Mbps LAN Ports"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11ac/n/a 5 GHz, IEEE 802.11b/g/n 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WEP WPA / WPA2-Personal WPA2 / WPA3-Personal"
+     },
+     {
+      "label": "Others",
+      "value": "DHCP: Server, DHCP Client List NAT Forwarding: Port Forwarding, Port Triggering, UPnP, DMZ Firewall Security: SPI Firewall, IP and MAC Address Binding Guest Network: 2.4 GHz Guest Network, 5 GHz Guest Network"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "9V/0.85A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "4.5 × 3.7 × 1.0 in (114 × 94 × 26 mm)"
+     },
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "01-year warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/mercusys-ac10-ac1200-dual-band-wifi-router"
+ },
+ {
+  "id": "cudy-wr1200",
+  "slug": "cudy-wr1200",
+  "name": "WR1200",
+  "brand": "Cudy",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "cudy-wr1200~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 2440
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2101/Cudy_WR1200_1.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Cudy-WR1200-AC1200-Dual-Band-Wi-Fi-Router-1911.png",
+   "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/Cudy/Cudy-WR1200-AC1200-Gigabit-Dual-Band-Wi-Fi-Router-600x600.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "2.4 GHz: 300 Mbps 5 GHz: 867 Mbps"
+     },
+     {
+      "label": "Antenna",
+      "value": "4× 5dBi Fixed High Gain Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "WPS Button, Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "2.4 GHz, 5 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Transmission Distance: Indoor up to 100m, outdoor up to 300m (it is limited in an environment)"
+     },
+     {
+      "label": "Interface",
+      "value": "LAN 4x 10/100/ Auto MDI/MDIX RJ45 port WAN 1x 10/100/ Auto MDI/MDIX RJ45 port"
+     },
+     {
+      "label": "Network Standard",
+      "value": "2.4GHz: IEEE802.11n, IEEE802.11g, IEEE 802.11b 5.0GHz: 802.11ac, IEEE 802.11n, IEEE 802.11a, IEEE802.3. IEEE802.3u, IEEE802.3ab"
+     },
+     {
+      "label": "Encryption",
+      "value": "64/128-bits WEP, WPA/WPA2"
+     },
+     {
+      "label": "Others",
+      "value": "Modulation: BPSK, QPSK, CCK and OFDM (BPSK/QPSK/16-QAM/ 64-QAM) Receive Sensitivity@PER: 11ac: -68dBm@10% PER; 11a: -68dBm@10% PER; 11n: -70dBm@10% PER 11g: -72dBm@10% PER; 11b: -85dBm@8% PER"
+     },
+     {
+      "label": "Operating System Support",
+      "value": "Microsoft Windows 8 SE/ NT/ 2000/ XP/ Vista/ 7/ 8/ 8.1/ 10, MAC OS, NetWare, UNIX or Linux"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "204.8 x 137. 5 x 38. 3mm"
+     },
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 year"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/cudy-wr1200-ac1200-dual-band-wi-fi-router"
+ },
+ {
+  "id": "cudy-wr1500",
+  "slug": "cudy-wr1500",
+  "name": "WR1500",
+  "brand": "Cudy",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "cudy-wr1500~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 3200
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2695/Cudy_WR1500_AX1500_Dual_Band_Gigabit_Wi-Fi_6_Mesh_Router.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Cudy-WR1500-AX1500-Dual-Band-WiFi-6-Mesh-Router-8992.png",
+   "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/Cudy/WR1500-600x600.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "1201 Mbps (5 GHz), 300 Mbps (2.4 GHz)"
+     },
+     {
+      "label": "Antenna",
+      "value": "4× Fixed Omni-Directional Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "WPS Button, Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "5 GHz, 2.4 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Enable/Disable Wireless Radio, WMM"
+     },
+     {
+      "label": "Interface",
+      "value": "1 × 10/100/1000 Mbps WAN Port 3 × 10/100/1000 Mbps LAN Ports"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11ax/ac/n/a 5 GHz IEEE 802.11n/b/g 2.4 GHz"
+     },
+     {
+      "label": "Others",
+      "value": "OFDMA, Beamforming and MU-MIMO"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "180*107*35 mm (Not Include Antennas) 200*117*35 mm (Include Antennas)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 year"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/cudy-wr1500-ax1500-wi-fi-6-mesh-router"
+ },
+ {
+  "id": "cudy-wr3000",
+  "slug": "cudy-wr3000",
+  "name": "WR3000",
+  "brand": "Cudy",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "cudy-wr3000~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 4900
+   }
+  ],
+  "images": [
+   "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/Cudy/Cudy-WR3000-AX3000-Gigabit-Dual-Band-Wi-Fi-6-Router-600x600.jpg",
+   "https://www.startech.com.bd/image/cache/catalog/router/cudy/wr3000/wr3000-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "2402 Mbps (5 GHz), 574 Mbps (2.4 GHz) Compatible with 802.11a/b/g/n/ac Wi-Fi standards"
+     },
+     {
+      "label": "Antenna",
+      "value": "4 × Fixed Omnidirectional Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "WPS Button, Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "5 GHz, 2.4 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Enable/Disable Wireless Radio, WMM"
+     },
+     {
+      "label": "Interface",
+      "value": "1 × 10/100/1000 Mbps WAN Port 3 × 10/100/1000 Mbps LAN Ports"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11ax/ac/n/a 5 GHz IEEE 802.11ax/n/b/g 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WEP, WPA/WPA2, WPA-PSK/WPA2-PSK, WPA3"
+     },
+     {
+      "label": "Others",
+      "value": "MU-MIMO, Beamforming Converge : Open Area Covers Up to 2500ft"
+     },
+     {
+      "label": "Operating System Support",
+      "value": "Microsoft Windows, macOS, NetWare, UNIX or Linux"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "200 × 117 × 35 mm 7.87 × 4.61 × 1.38 inch (Antennas not included)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 year"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/cudy-wr3000-ax3000-gigabit-wi-fi-6-router"
+ },
+ {
+  "id": "cudy-wr3600e",
+  "slug": "cudy-wr3600e",
+  "name": "WR3600E",
+  "brand": "Cudy",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "cudy-wr3600e~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 7899
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2693/Cudy_WR3600E_BE3600_Dual_Band_Gigabit_Wi-Fi_7_Router.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Cudy-WR3600E-BE3600-Dual%E2%80%91Band-Mesh-Wi%E2%80%91Fi-7-Gigabit-Router-3159.png",
+   "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/Cudy/CUDY%20WR3600E%20BE3600%20Gigabit%20Wi-Fi%207%20Router-600x600.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "5 GHz Wi-Fi Speed: 2882 Mbps 2.4 GHz Wi-Fi Speed: 688 Mbps"
+     },
+     {
+      "label": "Antenna",
+      "value": "4 × Fixed Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "WPS Button, Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "5 GHz, 2.4 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "5 GHz Wi-Fi Speed: 2882 Mbps 2.4 GHz Wi-Fi Speed: 688 Mbps 5 GHz Wi-Fi Streams: 2T2R (2×2 MIMO) 2.4 GHz Wi-Fi Streams: 2T2R (2×2 MIMO) Wi-Fi Antennas: 4× Fixed 5 GHz Antenna Gain Max: 7.8dBi 2.4 GHz Antenna Gain Max: 5.2dBi FEM or PA/LNA: 5 GHz: 2× External 2.4 GHz: 2× External Beamforming: True Range Performance: Max: 220 m (722 ft) Indoor WiFi range varies depending on the layout and wall materials. See Wall Performance spec for placement suggestions. Wall Performance: Two wooden walls with thickness < 10 cm (4'') One concrete wall with thickness < 20 cm (7'') or two concrete walls with thickness < 10 cm (4'')"
+     },
+     {
+      "label": "Interface",
+      "value": "Gigabit RJ45 Ports: 4 Ethernet Notes: 1× WAN port, the rest are LAN ports LED: System Internet 2.4 GHz Wi-Fi 5 GHz Wi-Fi WAN LAN Physical Buttons: WPS Button Reset Button Power Input: DC Jack"
+     },
+     {
+      "label": "Network Standard",
+      "value": "QoS: Per-User Rate Limiting DHCP: Address Reservation DHCP Client List Server IP Versions: IPv4/IPv6 IPv6 Protocols: Relay Dynamic (SLAAC/DHCPv6) Static (Fixed IP) Passthrough 464XLAT MAP-E DS-Lite IPTV/VLAN: Bridge Tag VLAN VoIP VLAN IPTV VLAN TTL Customization: Extend Spoof Custom IGMP: IGMP Proxy IGMP Snooping Forwarding: Port Forwarding Port Triggering UPnP DMZ Firewall: SPI Firewall DoS Protection Block PING Application Layer Gateway: IPSec Passthrough L2TP Passthrough PPTP Passthrough FTP Passthrough TFTP Passthrough H323 Passthrough SIP Passthrough RTSP Passthrough"
+     },
+     {
+      "label": "Others",
+      "value": "CPU: Chipset: BCM6764 CPU Details: 2.0 GHz Quad-Core, ARM Cortex-A7 Memory/Storage: Flash/ROM: 128 MB (1 Gbit) NAND DDR/RAM: 512 MB (4 Gbit) DDR3L 4-Stream Dual-Band Wi-Fi 7 Max Capacity: 512 200 Connected Devices Recommended Max Wi-Fi Channel Width: 160 MHz Wi-Fi Security: WPA/WPA2/WPA3 Guest Network: 2.4 GHz, 5 GHz WPS: True Covers 130 m² (1,400 ft²) Cudy Mesh, VPN Server and Client Cudy App, Cloud Control, VPN Server and Client Reliability: Operating Temperature: 0 ℃ ~ 40 ℃ (32 ℉ ~104 ℉) Storage Temperature: -40 ℃ ~ 70 ℃ (-40 ℉ ~ 158 ℉) Humidity: 10% ~ 90% non-condensing Storage Humidity: 5% ~ 95% non-condensing General: Operation Modes: Wi-Fi Router Access Point Multi-Band Backhaul: True WAN Mode: DHCP Static IP PPPOE PPTP L2TP System: LED Control: Ture Local Control Method: Config Web Page App Control Remote Control Method: Config Page via HTTPS App Control TR069/TR098/TR111/TR181 Firmware Upgrade: Local Update App (Over the Air) Online Update Reliability: Timed Reboot Backup and Restore Diagnostic Tools: Diagnosis Ping Traceroute NSLookup System Log Management All Devices Management: Wi-Fi Time Schedule MAC Filter IP/MAC Binding Per-Devices Management: Internet On/Off VPN On/Off Online Time Schedule Device Rename Content Management: Domain Filter IP Filter"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "Power Methods: DC DC: 12V 1A Power Adapter: Input: 100 ~ 240 V, 50/60 Hz AC Output: 12V 1A DC Max Power Consumption (W): 8.5W"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "209×48×220.4 mm 8.23×1.89×8.68 inches"
+     },
+     {
+      "label": "Weight",
+      "value": "339.8 g (11.99 oz.)"
+     },
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 year"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/cudy-wr3600e-wifi-7-router"
+ },
+ {
+  "id": "asus-rt-ax52",
+  "slug": "asus-rt-ax52",
+  "name": "RT-AX52",
+  "brand": "ASUS",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "asus-rt-ax52~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 6000
+   }
+  ],
+  "images": [
+   "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/ASUS/ASUS-RT-AX52-AX1800-Dual-Band-WiFi-6-Extendable-Router-600x600.jpg",
+   "https://www.startech.com.bd/image/cache/catalog/router/asus/rt-ax52-ax1800/rt-ax52-ax1800-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "802.11a : up to 54 Mbps 802.11b : up to 11 Mbps 802.11g : up to 54 Mbps WiFi 4 (802.11n) : up to 300 Mbps WiFi 5 (802.11ac) : up to 867 Mbps WiFi 6 (802.11ax) (2.4GHz) : up to 574 Mbps WiFi 6 (802.11ax) (5GHz) : up to 1201 Mbps"
+     },
+     {
+      "label": "Antenna",
+      "value": "External antenna x 4"
+     },
+     {
+      "label": "Button",
+      "value": "WPS Button, Reset Button, Power Switch"
+     },
+     {
+      "label": "Frequency",
+      "value": "2.4G Hz / 5 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "UTF-8 SSID WiFi MAC Address Filter Wireless Scheduler Airtime Fairness RADIUS Client Universal Beamforming Explicit Beamforming"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11a IEEE 802.11b IEEE 802.11g WiFi 4 (802.11n) WiFi 5 (802.11ac) WiFi 6 (802.11ax) IPv4 IPv6"
+     },
+     {
+      "label": "Ports",
+      "value": "RJ45 for Gigabits BaseT for WAN x 1, RJ45 for Gigabits BaseT for LAN x 3"
+     },
+     {
+      "label": "Others",
+      "value": "AX technology: Yes Processor: 1.5 GHz tri-core processor Memory: 128 MB Flash; 256 MB DDRIII RAM Operating Mode: Access Point, AiMesh Node, Repeater, Router"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "AC Input : 110V~240V(50~60Hz) DC Output : 12 V with max. 1 A current"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "192 x 126.3 x 47.5 mm (WxDxH)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "2 Years"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/asus-rt-ax52-ax1800-dual-band-aimesh-router"
+ },
+ {
+  "id": "tp-link-deco-m4",
+  "slug": "tp-link-deco-m4",
+  "name": "Deco M4",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 98,
+  "variants": [
+   {
+    "id": "tp-link-deco-m4~v1",
+    "label": "1 Pack",
+    "attributes": {
+     "edition": "1 Pack"
+    },
+    "officialPrice": 4749
+   },
+   {
+    "id": "tp-link-deco-m4~v2",
+    "label": "2 Pack",
+    "attributes": {
+     "edition": "2 Pack"
+    },
+    "officialPrice": 9390
+   },
+   {
+    "id": "tp-link-deco-m4~v3",
+    "label": "3 Pack",
+    "attributes": {
+     "edition": "3 Pack"
+    },
+    "officialPrice": 14049
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2046/TP-Link_Deco_M4_AC1200_Dual-Band_Wi-Fi_Mesh_Router_1-Pack.webp",
+   "https://assets.gadgetandgear.com/upload/media/tp-link-deco-m4-router-new820.jpeg",
+   "https://www.startech.com.bd/image/cache/catalog/networking/router/tp-link/deco-m4/1-pack/1-pack-1-1200x630.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "300 Mbps on 2.4 GHz 867 Mbps on 5 GHz"
+     },
+     {
+      "label": "Antenna",
+      "value": "2 internal dual-band antennas per Deco unit"
+     },
+     {
+      "label": "Button",
+      "value": "1 Reset button on the underside"
+     },
+     {
+      "label": "Frequency",
+      "value": "2.4 GHz and 5 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Yes"
+     },
+     {
+      "label": "Interface",
+      "value": "2 Gigabit Ethernet Ports (WAN/LAN auto-sensing) per Deco unit"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11 ac/n/a 5 GHz, IEEE 802.11 b/g/n 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WPA-PSK/WPA2-PSK"
+     },
+     {
+      "label": "Ports",
+      "value": "1 Deco unit 1 RJ45 Ethernet Cable 1 power adapter"
+     },
+     {
+      "label": "Operating System Support",
+      "value": "iOS 9.0 or later Android 4.3 or later"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "AC adapter input : 100-240V ~ 50/60Hz 0.4A AC adapter output : 12V ⎓ 1.2A External Power Supply : 12 V/1.2 A Transmit Power : FCC: <30 dBm CE: <20 dBm (2.4 GHz) <23 dBm (5 GHz)"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "3.57 x 3.57 x 7.48 inches"
+     },
+     {
+      "label": "Weight",
+      "value": "2.2 pounds"
+     },
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "01 Year warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tplink-deco-m4-router"
+ },
+ {
+  "id": "tp-link-deco-e4",
+  "slug": "tp-link-deco-e4",
+  "name": "Deco E4",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "tp-link-deco-e4~v1",
+    "label": "1 Pack",
+    "attributes": {
+     "edition": "1 Pack"
+    },
+    "officialPrice": 3449
+   },
+   {
+    "id": "tp-link-deco-e4~v2",
+    "label": "2 Pack",
+    "attributes": {
+     "edition": "2 Pack"
+    },
+    "officialPrice": 6790
+   },
+   {
+    "id": "tp-link-deco-e4~v3",
+    "label": "3 Pack",
+    "attributes": {
+     "edition": "3 Pack"
+    },
+    "officialPrice": 10190
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2048/TP-Link_Deco_E4_AC1200_Dual-Band_Wi-Fi_Mesh_Router_1-Pack.webp",
+   "https://assets.gadgetandgear.com/upload/media/1724747314648549.jpeg",
+   "https://diamu.com.bd/wp-content/uploads/2021/03/TP-Link-Deco-E4-Whole-Home-Mesh-2-Pack.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "300 Mbps on 2.4 GHz 867 Mbps on 5 GHz"
+     },
+     {
+      "label": "Antenna",
+      "value": "2 internal dual-band antennas per Deco unit"
+     },
+     {
+      "label": "Button",
+      "value": "1 Reset button on the underside"
+     },
+     {
+      "label": "Frequency",
+      "value": "2.4 GHz and 5 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Yes"
+     },
+     {
+      "label": "Interface",
+      "value": "2 Internal dual-band antennas per Deco unit"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11 ac/n/a 5GHz, 300 Mbps at 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WPA-PSK/WPA2-PSK"
+     },
+     {
+      "label": "Ports",
+      "value": "2 10/100Mbps, WAN/LAN Ports, 1 Power Port"
+     },
+     {
+      "label": "Operating System Support",
+      "value": "iOS 9.0 or later Android 4.3 or later"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "AC adapter input : 100-240V/50-60Hz 0.3A AC adapter output : 12 ⎓ 1A Transmit Power : FCC: <30 dBm CE: <20 dBm (2.4 GHz) <23 dBm (5 GHz)"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "7.5 x 3.6 x 3.6 in (190.5 x 90.7 x 90.7 mm)"
+     },
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "01 Year warranty"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-deco-e4-dual-band-router"
+ },
+ {
+  "id": "tp-link-deco-x10",
+  "slug": "tp-link-deco-x10",
+  "name": "Deco X10",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "tp-link-deco-x10~v1",
+    "label": "1 Pack",
+    "attributes": {
+     "edition": "1 Pack"
+    },
+    "officialPrice": 6090
+   },
+   {
+    "id": "tp-link-deco-x10~v2",
+    "label": "2 Pack",
+    "attributes": {
+     "edition": "2 Pack"
+    },
+    "officialPrice": 11890
+   },
+   {
+    "id": "tp-link-deco-x10~v3",
+    "label": "3 Pack",
+    "attributes": {
+     "edition": "3 Pack"
+    },
+    "officialPrice": 17890
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4466/TP-Link_Deco_X10_ERSDwOm.webp",
+   "https://assets.gadgetandgear.com/upload/media/tp-link-deco-x10-router824.jpeg",
+   "https://www.startech.com.bd/image/cache/catalog/router/tp-link/deco-x10/deco-x10-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "AX1500 5 GHz: 1201 Mbps (802.11ax) 2.4 GHz: 300 Mbps (802.11n)"
+     },
+     {
+      "label": "Antenna",
+      "value": "2× Antennas (Internal)"
+     },
+     {
+      "label": "Button",
+      "value": "1x Reset button"
+     },
+     {
+      "label": "Frequency",
+      "value": "2.4 GHz and 5 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Yes"
+     },
+     {
+      "label": "Interface",
+      "value": "2× Gigabit Ports"
+     },
+     {
+      "label": "Network Standard",
+      "value": "Wi-Fi 6 IEEE 802.11ax/ac/n/a 5 GHz IEEE 802.11n/b/g 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WPA-Personal WPA2-Personal WPA3-Personal"
+     },
+     {
+      "label": "Operating System Support",
+      "value": "Android 5.0 or later iOS 9.0 or later"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "4.33 × 4.33 × 4.49 in (110 × 110 × 114 mm)"
+     },
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 Year"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-deco-x10-wifi-6-mesh-router"
+ },
+ {
+  "id": "tp-link-deco-x20",
+  "slug": "tp-link-deco-x20",
+  "name": "Deco X20",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "tp-link-deco-x20~v1",
+    "label": "1 Pack",
+    "attributes": {
+     "edition": "1 Pack"
+    },
+    "officialPrice": 7849
+   },
+   {
+    "id": "tp-link-deco-x20~v2",
+    "label": "2 Pack",
+    "attributes": {
+     "edition": "2 Pack"
+    },
+    "officialPrice": 15590
+   },
+   {
+    "id": "tp-link-deco-x20~v3",
+    "label": "3 Pack",
+    "attributes": {
+     "edition": "3 Pack"
+    },
+    "officialPrice": 23190
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/networking/router/tp-link/deco-x20-ax1800/deco-x20-ax1800-001-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "5 GHz: 1201 Mbps (802.11ax) 2.4 GHz: 574 Mbps (802.11ax)"
+     },
+     {
+      "label": "Antenna",
+      "value": "4× Internal Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "2.4 GHz, 5 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Router Mode Access Point Mode"
+     },
+     {
+      "label": "Interface",
+      "value": "2× Gigabit Ports (Per Deco Unit)"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11ax/ac/n/a IEEE 802.11ax/n/b/g"
+     },
+     {
+      "label": "Encryption",
+      "value": "WiFi Encryption: WPA WPA2 WPA3 Network Security: SPI Firewall Access Control"
+     },
+     {
+      "label": "Ports",
+      "value": "4× Gigabit Ports"
+     },
+     {
+      "label": "Operating System Support",
+      "value": "Android 4.4 or later iOS 9.0 or later"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "12 V ⎓ 1.2 A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "110 × 110 × 114 mm"
+     },
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 Year"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-deco-x20-ax1800-mesh-router"
+ },
+ {
+  "id": "tp-link-deco-x50",
+  "slug": "tp-link-deco-x50",
+  "name": "Deco X50",
+  "brand": "TP-Link",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "tp-link-deco-x50~v1",
+    "label": "1 Pack",
+    "attributes": {
+     "edition": "1 Pack"
+    },
+    "officialPrice": 9049
+   },
+   {
+    "id": "tp-link-deco-x50~v2",
+    "label": "2 Pack",
+    "attributes": {
+     "edition": "2 Pack"
+    },
+    "officialPrice": 17890
+   },
+   {
+    "id": "tp-link-deco-x50~v3",
+    "label": "3 Pack",
+    "attributes": {
+     "edition": "3 Pack"
+    },
+    "officialPrice": 26690
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4467/TP-Link_Deco_X50.webp",
+   "https://www.startech.com.bd/image/cache/catalog/router/tp-link/deco-x50-/deco-x50-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "5 GHz: 2402 Mbps (802.11ax, HE160) 2.4 GHz: 574 Mbps (802.11ax"
+     },
+     {
+      "label": "Antenna",
+      "value": "2× Antennas (Internal)"
+     },
+     {
+      "label": "Button",
+      "value": "Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "Dual Band (2.4GHz & 5GHz)"
+     },
+     {
+      "label": "Interface",
+      "value": "3× Gigabit Ports"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11ax/ac/n/a 5 GHz IEEE 802.11ax/n/b/g 2.4 GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WPA-Personal WPA2-Personal WPA3-Personal"
+     },
+     {
+      "label": "Others",
+      "value": "TP-Link Mesh Technology AI-Driven Mesh Beamforming 2×2 MU-MIMO OFDMA 4 Streams Working Modes: Router Mode Access Point Mode"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Dimension",
+      "value": "4.33 × 4.33 × 4.49 in (110 × 110 × 114 mm)"
+     },
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 Year"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/tp-link-deco-x50-dual-band-wi-fi-6-mesh-router"
+ },
+ {
+  "id": "cudy-m1300",
+  "slug": "cudy-m1300",
+  "name": "M1300",
+  "brand": "Cudy",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 90,
+  "variants": [
+   {
+    "id": "cudy-m1300~v1",
+    "label": "1 Pack",
+    "attributes": {
+     "edition": "1 Pack"
+    },
+    "officialPrice": 3200
+   },
+   {
+    "id": "cudy-m1300~v2",
+    "label": "2 Pack",
+    "attributes": {
+     "edition": "2 Pack"
+    },
+    "officialPrice": 6060
+   },
+   {
+    "id": "cudy-m1300~v3",
+    "label": "3 Pack",
+    "attributes": {
+     "edition": "3 Pack"
+    },
+    "officialPrice": 9000
+   }
+  ],
+  "images": [
+   "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2042/Cudy_M1300_1-Pack_AC1200_Dual_Band_Gigabit_Wi-Fi_Mesh_Router.webp",
+   "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/Cudy/Cudy-M1300-(1-pack)-AC1200-Dual-Band-Whole-Home-Wi-Fi-Mesh-Gigabit-Router-600x600.jpg",
+   "https://www.startech.com.bd/image/cache/catalog/router/cudy/m1300/m1300-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "867Mbps (5GHz), 300Mbps (2.4GHz) Compatible with 802.11a/b/g/n/ac Wi-Fi standards"
+     },
+     {
+      "label": "Antenna",
+      "value": "2 × Internal Omni-Directional Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "Pair Button, Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "5 GHz, 2.4 GHz"
+     },
+     {
+      "label": "Wireless",
+      "value": "Wireless Modes: Enable/Disable Wireless Radio, WMM"
+     },
+     {
+      "label": "Interface",
+      "value": "1 × 1000/100/10 Mbps WAN Port 1 × 1000/100/10 Mbps LAN Port"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11/ac/n/a 5GHz IEEE 802.11/n/b/g 2.4GHz"
+     },
+     {
+      "label": "Encryption",
+      "value": "WEP, WPA/WPA2, WPA-PSK/WPA2-PSK"
+     },
+     {
+      "label": "Others",
+      "value": "Flash: 128Mbit (16MB) DDR: 1Gbit (128MB)"
+     },
+     {
+      "label": "Operating System Support",
+      "value": "Microsoft Windows 98SE/ NT/ 2000/ XP/ Vista/ 7/ 8/ 8.1/ 10, MAC OS, NetWare, UNIX or Linux"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "12V/1A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 year"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/cudy-m1300-ac1200-gigabit-whole-home-mesh-wifi-router"
+ },
+ {
+  "id": "cudy-m3000",
+  "slug": "cudy-m3000",
+  "name": "M3000",
+  "brand": "Cudy",
+  "category": "router",
+  "releaseYear": null,
+  "popularity": 98,
+  "variants": [
+   {
+    "id": "cudy-m3000~v1",
+    "label": "1 Pack",
+    "attributes": {
+     "edition": "1 Pack"
+    },
+    "officialPrice": 5600
+   },
+   {
+    "id": "cudy-m3000~v2",
+    "label": "2 Pack",
+    "attributes": {
+     "edition": "2 Pack"
+    },
+    "officialPrice": 11000
+   },
+   {
+    "id": "cudy-m3000~v3",
+    "label": "3 Pack",
+    "attributes": {
+     "edition": "3 Pack"
+    },
+    "officialPrice": 16500
+   }
+  ],
+  "images": [
+   "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/Cudy/M3000%201-Pack%20AX3000-600x600.webp",
+   "https://diamu.com.bd/wp-content/uploads/2023/10/CUDY-M3000-1-Pack-AX3000-2.5G-Dual-Band-Wi-Fi-6-Mesh-System-Router.jpg",
+   "https://www.startech.com.bd/image/cache/catalog/router/cudy/m3000/m3000-white-01-1200x630.webp"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "Key Features",
+    "items": [
+     {
+      "label": "Data Rate",
+      "value": "1201 Mbps (5 GHz), 574 Mbps (2.4 GHz) Compatible with 802.11a/b/g/n/ac/ax Wi-Fi standards"
+     },
+     {
+      "label": "Antenna",
+      "value": "5 × Internal Omnidirectional Antennas"
+     },
+     {
+      "label": "Button",
+      "value": "Pair Button, Reset Button"
+     },
+     {
+      "label": "Frequency",
+      "value": "5 GHz, 2.4 GHz"
+     },
+     {
+      "label": "Interface",
+      "value": "1 × 2.5Gbps WAN Port 1 × 10/100/1000Mbps LAN Port"
+     },
+     {
+      "label": "Network Standard",
+      "value": "IEEE 802.11ax/ac/n/a 5GHz IEEE 802.11ax/n/b/g 2.4GHz"
+     },
+     {
+      "label": "Others",
+      "value": "Processor: 1.3GHz Dual Core Cortex-A53 Processor Flash: 1Gbit (128MB) DDR: 2Gbit (256MB)"
+     },
+     {
+      "label": "Operating System Support",
+      "value": "Microsoft Windows 98SE/NT/2000/XP/Vista/7/8/8.1/10, MAC OS, NetWare, UNIX or Linux"
+     }
+    ]
+   },
+   {
+    "group": "Power Source",
+    "items": [
+     {
+      "label": "Power Mode",
+      "value": "12V/1A"
+     }
+    ]
+   },
+   {
+    "group": "Physical Dimension",
+    "items": [
+     {
+      "label": "Color",
+      "value": "White"
+     }
+    ]
+   },
+   {
+    "group": "Manufacturer warranty",
+    "items": [
+     {
+      "label": "Warranty",
+      "value": "1 year"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/cudy-m3000-ax3000-wi-fi-6-mesh-router"
+ },
+ {
   "id": "simple-refreshing-facial-wash-150ml",
   "slug": "simple-refreshing-facial-wash-150ml",
   "name": "Refreshing Facial Wash 150ml",
@@ -23859,16 +28771,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "af-1-air-force-1-1-1-copy-sneakers",
-  "slug": "af-1-air-force-1-1-1-copy-sneakers",
-  "name": "Air Force 1 1:1 Copy Sneakers",
-  "brand": "AF-1",
+  "id": "nike-air-force-1",
+  "slug": "nike-air-force-1",
+  "name": "Air Force 1",
+  "brand": "Nike",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 74,
   "variants": [
    {
-    "id": "af-1-air-force-1-1-1-copy-sneakers~v1",
+    "id": "nike-air-force-1~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 5200
@@ -23886,16 +28798,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "campus-00s-campus-00s-1-1-copy-sneakers",
-  "slug": "campus-00s-campus-00s-1-1-copy-sneakers",
-  "name": "Campus 00s 1:1 Copy Sneakers",
-  "brand": "Campus 00s",
+  "id": "adidas-campus-00s",
+  "slug": "adidas-campus-00s",
+  "name": "Campus 00s",
+  "brand": "Adidas",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 82,
   "variants": [
    {
-    "id": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
+    "id": "adidas-campus-00s~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 5800
@@ -23913,16 +28825,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "samba-samba-og-1-1-copy-sneakers",
-  "slug": "samba-samba-og-1-1-copy-sneakers",
-  "name": "Samba OG 1:1 Copy Sneakers",
-  "brand": "Samba",
+  "id": "adidas-samba-og",
+  "slug": "adidas-samba-og",
+  "name": "Samba OG",
+  "brand": "Adidas",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 74,
   "variants": [
    {
-    "id": "samba-samba-og-1-1-copy-sneakers~v1",
+    "id": "adidas-samba-og~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 5500
@@ -23940,16 +28852,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "samba-samba-vegan-1-1-copy-sneakers",
-  "slug": "samba-samba-vegan-1-1-copy-sneakers",
-  "name": "Samba Vegan 1:1 Copy Sneakers",
-  "brand": "Samba",
+  "id": "adidas-samba-vegan",
+  "slug": "adidas-samba-vegan",
+  "name": "Samba Vegan",
+  "brand": "Adidas",
   "category": "sneakers",
   "releaseYear": null,
-  "popularity": 74,
+  "popularity": 66,
   "variants": [
    {
-    "id": "samba-samba-vegan-1-1-copy-sneakers~v1",
+    "id": "adidas-samba-vegan~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 5500
@@ -23967,16 +28879,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "onitsuka-tiger-mexico-66-1-1-copy-sneakers",
-  "slug": "onitsuka-tiger-mexico-66-1-1-copy-sneakers",
-  "name": "Mexico 66 1:1 Copy Sneakers",
+  "id": "onitsuka-tiger-mexico-66",
+  "slug": "onitsuka-tiger-mexico-66",
+  "name": "Mexico 66",
   "brand": "Onitsuka Tiger",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 82,
   "variants": [
    {
-    "id": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
+    "id": "onitsuka-tiger-mexico-66~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 5000
@@ -23994,16 +28906,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "onitsuka-tiger-tokuten-1-1-copy-sneakers",
-  "slug": "onitsuka-tiger-tokuten-1-1-copy-sneakers",
-  "name": "Tokuten 1:1 Copy Sneakers",
+  "id": "onitsuka-tiger-tokuten",
+  "slug": "onitsuka-tiger-tokuten",
+  "name": "Tokuten",
   "brand": "Onitsuka Tiger",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 74,
   "variants": [
    {
-    "id": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
+    "id": "onitsuka-tiger-tokuten~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 5000
@@ -24021,16 +28933,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "converse-chuck-70-1-1-copy-sneakers",
-  "slug": "converse-chuck-70-1-1-copy-sneakers",
-  "name": "Chuck 70 1:1 Copy Sneakers",
+  "id": "converse-chuck-70-high",
+  "slug": "converse-chuck-70-high",
+  "name": "Chuck 70 High",
   "brand": "Converse",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 82,
   "variants": [
    {
-    "id": "converse-chuck-70-1-1-copy-sneakers~v1",
+    "id": "converse-chuck-70-high~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 5000
@@ -24048,16 +28960,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers",
-  "slug": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers",
-  "name": "Chuck Taylor All Star High 1:1 Copy Sneakers",
+  "id": "converse-chuck-taylor-all-star-high",
+  "slug": "converse-chuck-taylor-all-star-high",
+  "name": "Chuck Taylor All Star High",
   "brand": "Converse",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 74,
   "variants": [
    {
-    "id": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
+    "id": "converse-chuck-taylor-all-star-high~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 2500
@@ -24075,16 +28987,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "aj-1-jordan-1-low-1-1-copy-sneakers",
-  "slug": "aj-1-jordan-1-low-1-1-copy-sneakers",
-  "name": "Jordan 1 Low 1:1 Copy Sneakers",
-  "brand": "AJ-1",
+  "id": "jordan-air-jordan-1-low",
+  "slug": "jordan-air-jordan-1-low",
+  "name": "Air Jordan 1 Low",
+  "brand": "Jordan",
   "category": "sneakers",
   "releaseYear": null,
-  "popularity": 82,
+  "popularity": 74,
   "variants": [
    {
-    "id": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
+    "id": "jordan-air-jordan-1-low~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 5000
@@ -24102,16 +29014,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "aj-1-jordan-1-retro-high-1-1-copy-sneakers",
-  "slug": "aj-1-jordan-1-retro-high-1-1-copy-sneakers",
-  "name": "Jordan 1 Retro High 1:1 Copy Sneakers",
-  "brand": "AJ-1",
+  "id": "jordan-air-jordan-1-retro-high",
+  "slug": "jordan-air-jordan-1-retro-high",
+  "name": "Air Jordan 1 Retro High",
+  "brand": "Jordan",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 74,
   "variants": [
    {
-    "id": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
+    "id": "jordan-air-jordan-1-retro-high~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 6000
@@ -24129,16 +29041,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "aj-4-jordan-4-retro-1-1-copy-sneakers",
-  "slug": "aj-4-jordan-4-retro-1-1-copy-sneakers",
-  "name": "Jordan 4 Retro 1:1 Copy Sneakers",
-  "brand": "AJ-4",
+  "id": "jordan-air-jordan-4-retro",
+  "slug": "jordan-air-jordan-4-retro",
+  "name": "Air Jordan 4 Retro",
+  "brand": "Jordan",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 82,
   "variants": [
    {
-    "id": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
+    "id": "jordan-air-jordan-4-retro~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 6500
@@ -24156,16 +29068,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "nike-sb-dunk-low-1-1-copy-sneakers",
-  "slug": "nike-sb-dunk-low-1-1-copy-sneakers",
-  "name": "Dunk Low 1:1 Copy Sneakers",
-  "brand": "Nike SB",
+  "id": "nike-sb-dunk-low",
+  "slug": "nike-sb-dunk-low",
+  "name": "SB Dunk Low",
+  "brand": "Nike",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 82,
   "variants": [
    {
-    "id": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
+    "id": "nike-sb-dunk-low~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 5000
@@ -24183,16 +29095,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "new-balance-9060-1-1-copy-sneakers",
-  "slug": "new-balance-9060-1-1-copy-sneakers",
-  "name": "9060 1:1 Copy Sneakers",
+  "id": "new-balance-9060",
+  "slug": "new-balance-9060",
+  "name": "9060",
   "brand": "New Balance",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 82,
   "variants": [
    {
-    "id": "new-balance-9060-1-1-copy-sneakers~v1",
+    "id": "new-balance-9060~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 6000
@@ -24210,16 +29122,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "new-balance-530-1-1-copy-sneakers",
-  "slug": "new-balance-530-1-1-copy-sneakers",
-  "name": "530 1:1 Copy Sneakers",
+  "id": "new-balance-530",
+  "slug": "new-balance-530",
+  "name": "530",
   "brand": "New Balance",
   "category": "sneakers",
   "releaseYear": null,
-  "popularity": 82,
+  "popularity": 74,
   "variants": [
    {
-    "id": "new-balance-530-1-1-copy-sneakers~v1",
+    "id": "new-balance-530~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 5500
@@ -24237,16 +29149,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "puma-speedcat-og-1-1-copy-sneakers",
-  "slug": "puma-speedcat-og-1-1-copy-sneakers",
-  "name": "Speedcat OG 1:1 Copy Sneakers",
+  "id": "puma-speedcat-og",
+  "slug": "puma-speedcat-og",
+  "name": "Speedcat OG",
   "brand": "Puma",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 82,
   "variants": [
    {
-    "id": "puma-speedcat-og-1-1-copy-sneakers~v1",
+    "id": "puma-speedcat-og~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 5000
@@ -24264,16 +29176,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "adidas-gazelle-indoor-1-1-copy-sneakers",
-  "slug": "adidas-gazelle-indoor-1-1-copy-sneakers",
-  "name": "Gazelle Indoor 1:1 Copy Sneakers",
+  "id": "adidas-gazelle-indoor",
+  "slug": "adidas-gazelle-indoor",
+  "name": "Gazelle Indoor",
   "brand": "Adidas",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 74,
   "variants": [
    {
-    "id": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
+    "id": "adidas-gazelle-indoor~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 4500
@@ -24291,16 +29203,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "vans-knu-skool-1-1-copy-sneakers",
-  "slug": "vans-knu-skool-1-1-copy-sneakers",
-  "name": "Knu Skool 1:1 Copy Sneakers",
+  "id": "vans-knu-skool",
+  "slug": "vans-knu-skool",
+  "name": "Knu Skool",
   "brand": "Vans",
   "category": "sneakers",
   "releaseYear": null,
   "popularity": 74,
   "variants": [
    {
-    "id": "vans-knu-skool-1-1-copy-sneakers~v1",
+    "id": "vans-knu-skool~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 4300
@@ -24318,16 +29230,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "adidas-adizero-evo-sl-1-1-copy-sneakers",
-  "slug": "adidas-adizero-evo-sl-1-1-copy-sneakers",
-  "name": "Adizero Evo SL 1:1 Copy Sneakers",
+  "id": "adidas-adizero-evo-sl",
+  "slug": "adidas-adizero-evo-sl",
+  "name": "Adizero Evo SL",
   "brand": "Adidas",
   "category": "sneakers",
   "releaseYear": null,
-  "popularity": 82,
+  "popularity": 74,
   "variants": [
    {
-    "id": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
+    "id": "adidas-adizero-evo-sl~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 4800
@@ -24345,16 +29257,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers",
-  "slug": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers",
-  "name": "Adizero Adios Pro Evo 1 1:1 Copy Sneakers",
+  "id": "adidas-adizero-adios-pro-evo-1",
+  "slug": "adidas-adizero-adios-pro-evo-1",
+  "name": "Adizero Adios Pro Evo 1",
   "brand": "Adidas",
   "category": "sneakers",
   "releaseYear": null,
-  "popularity": 74,
+  "popularity": 66,
   "variants": [
    {
-    "id": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
+    "id": "adidas-adizero-adios-pro-evo-1~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 6000
@@ -24372,16 +29284,16 @@ export const catalogProducts: Product[] = [
   "specsSource": null
  },
  {
-  "id": "adidas-adizero-adios-pro-4-1-1-copy-sneakers",
-  "slug": "adidas-adizero-adios-pro-4-1-1-copy-sneakers",
-  "name": "Adizero Adios Pro 4 1:1 Copy Sneakers",
+  "id": "adidas-adizero-adios-pro-4",
+  "slug": "adidas-adizero-adios-pro-4",
+  "name": "Adizero Adios Pro 4",
   "brand": "Adidas",
   "category": "sneakers",
   "releaseYear": null,
-  "popularity": 74,
+  "popularity": 66,
   "variants": [
    {
-    "id": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
+    "id": "adidas-adizero-adios-pro-4~v1",
     "label": "Standard",
     "attributes": {},
     "officialPrice": 5500
@@ -26736,6 +31648,250 @@ export const catalogProducts: Product[] = [
   "images": [
    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4725/46mm.webp",
    "https://assets.gadgetandgear.com/upload/media/huawei/huawei-watch-gt-7-black.jpeg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [],
+  "specsSource": null
+ },
+ {
+  "id": "pureit-classic-23l",
+  "slug": "pureit-classic-23l",
+  "name": "Classic (23L)",
+  "brand": "Pureit",
+  "category": "water-purifier",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "pureit-classic-23l~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 5499
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/appliance/water-purifier/pureit/classic/classic-01-01-1200x630.webp",
+   "https://images.othoba.com/images/thumbs/2604102_pureit-classic-blue-23l-water-purifier-4-stage-gravity-based-water-purifier.jpeg",
+   "https://diamu.com.bd/wp-content/uploads/2021/03/Unilever-Pureit-Classic-Water-Purifier.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Others",
+      "value": "Total Purifier Volume: 23 Litres Purification Capacity: The Germkill Kit has been designed to typically give 1500 liters of water at a temperature of 25°C, in moderate humidity conditions Water Storage Capacity: 9 litres Material of Construction: Food safe, non-toxic, engineering-grade plastics Expiry Period: Two years from the date of manufacturing Germkill Performance Standard: Meets stringent international criteria for microbiologically safe drinking water – e.g., Environmental Protection Agency (EPA), USA"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/pureit-classic-water-purifier"
+ },
+ {
+  "id": "pureit-marina-ro-uv-mf-6l",
+  "slug": "pureit-marina-ro-uv-mf-6l",
+  "name": "Marina (RO+UV+MF, 6L)",
+  "brand": "Pureit",
+  "category": "water-purifier",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "pureit-marina-ro-uv-mf-6l~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 21000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/appliance/water-purifier/pureit/marina/marina-01-01-1200x630.webp",
+   "https://images.othoba.com/images/thumbs/2677143_pureit-marina-rouvmf-6l-water-purifier-7-stage-purification-with-20lhour-high-speed-technology.webp",
+   "https://mke.com.bd/media/product/P250232/main.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Others",
+      "value": "Purified Water Flow Rate: Approximately 20 Litre per hour Purification Capacity: Germkill Kit™ is designed to give approximately 6000L^ of purified water depending on input water pressure, TDS and water temperature Membrane Type: Thin film composite spiral wound Material of Construction: Food safe, non-toxic, engineering-grade plastics Pump Type: Diaphragm pump 24V DC Purification Capacity (CSF Germkill Kit): Removes dissolved salts, hardness, pesticides and heavy metals like lead and mercury. It also removes microbial contaminants like bacteria, virus, protozoa and cysts GermKill Performance Standard: Meets stringent international criteria for microbiologically safe drinking water, such as Environmental Protection Agency (EPA), USA % Recovery: Typically 45% TDS Reduction: 90% (Min) Power Rating: 37 Watts Pressure Rating: 10-30 PSI Operating Voltage: 100–240 V, 50/60 Hz Total Dissolved Solids: Upto 2000 mg/lit (max) Total Hardness: 500 mg/lit (max) Iron in Input Water: 0.3 mg/lit (max) Turbidity of Input Water: 1 NTU (Max)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/pureit-marina-water-purifier"
+ },
+ {
+  "id": "pureit-wave-ro-mf-6l",
+  "slug": "pureit-wave-ro-mf-6l",
+  "name": "Wave (RO+MF, 6L)",
+  "brand": "Pureit",
+  "category": "water-purifier",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "pureit-wave-ro-mf-6l~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 16500
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/appliance/water-purifier/pureit/wave/wave-01-01-1200x630.webp",
+   "https://images.othoba.com/images/thumbs/2677120_pureit-wave-romf-6l-water-purifier-6-stage-purification-with-20lhour-high-speed-ro-technology.webp",
+   "https://mke.com.bd/media/product/P250233/main.png?v=bc0ce1b4",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Pureit-Wave-RO+MF-Water-Purifier---6L-3950.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Others",
+      "value": "Purified Water Flow Rate: Approximately 20 Litre per hour Purification Capacity: Germkill Kit™ is designed to give approximately 6000L^ of purified water depending on input water pressure, TDS and water temperature Membrane Type: Thin film composite spiral wound Material of Construction: Food safe, non-toxic, engineering-grade plastics Pump Type: Diaphragm pump 24V DC Purification Capacity (CSF Germkill Kit): Removes dissolved salts, hardness, pesticides and heavy metals like lead and mercury. It also removes microbial contaminants like bacteria, virus, protozoa and cysts GermKill Performance Standard: Meets stringent international criteria for microbiologically safe drinking water, such as Environmental Protection Agency (EPA), USA % Recovery: Typically 45% TDS Reduction: 90% (Min) Power Rating: 36 Watts Pressure Rating: 10-30 PSI Operating Voltage: 100–240 V, 50/60 Hz Total Dissolved Solids: Upto 2000 mg/lit (max) Total Hardness: 500 mg/lit (max) Iron in Input Water: 0.3 mg/lit (max) Turbidity of Input Water: 1 NTU (Max)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/pureit-wave-water-purifier"
+ },
+ {
+  "id": "pureit-vital-max-ro-uv-7l",
+  "slug": "pureit-vital-max-ro-uv-7l",
+  "name": "Vital Max (RO+UV, 7L)",
+  "brand": "Pureit",
+  "category": "water-purifier",
+  "releaseYear": 2022,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "pureit-vital-max-ro-uv-7l~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 26000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/appliance/water-purifier/pureit/vital-max/vital-max-01-01-1200x630.webp",
+   "https://images.othoba.com/images/thumbs/2677040_pureit-vital-max-7l-rouv-water-purifier-with-7-stage-purification-mineral-enhancer.webp",
+   "https://mke.com.bd/media/product/P250271/main.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Others",
+      "value": "Purified Water Flow Rate: Approximately 24 Litre per hour Purification Capacity: Germkill Kit™ is designed to give approximately 6000L^ of purified water depending on input water pressure, TDS and water temperature Membrane Type: NSF Certified - Thin film composite spiral wound Material of Construction: Food safe, non-toxic, engineering-grade plastics Pump Type: Diaphragm pump 24V DC Purification Capacity (CSF Germkill Kit): Removes dissolved salts, hardness, pesticides and heavy metals like lead and mercury. It also removes microbial contaminants like bacteria, virus, protozoa and cysts GermKill Performance Standard: Meets stringent international criteria for microbiologically safe drinking water-e.g., Environmental Protection Agency (EPA), USA % Recovery: Typically 60% TDS Reduction: 90% (Min) Power Rating: 42 Watts Pressure Rating: Min 10 PSI, Max 30 PSI Operating Voltage: 100–240 V, 50/60 Hz Total Dissolved Solids: Upto 2000 mg/lit (max) Total Hardness: 500 mg/lit (max) Iron in Input Water: 0.3 mg/lit (max) Turbidity of Input Water: 1 NTU (Max)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/pureit-vital-max-water-purifier"
+ },
+ {
+  "id": "pureit-ultima-mineral-ro-uv-mf-10l",
+  "slug": "pureit-ultima-mineral-ro-uv-mf-10l",
+  "name": "Ultima Mineral (RO+UV+MF, 10L)",
+  "brand": "Pureit",
+  "category": "water-purifier",
+  "releaseYear": null,
+  "popularity": 82,
+  "variants": [
+   {
+    "id": "pureit-ultima-mineral-ro-uv-mf-10l~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 33000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/appliance/water-purifier/pureit/ultima/ultima-01-01-1200x630.webp",
+   "https://images.othoba.com/images/thumbs/2676973_pureit-ultima-mineral-rouvmf-10l-water-purifier-7-stage-purification-with-digital-purity-indicator.webp",
+   "https://mke.com.bd/media/product/P250220/main.png",
+   "https://diamu.com.bd/wp-content/uploads/2021/03/Pureit-Mineral-Ultima-ROUVMF-3.jpg"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Others",
+      "value": "Purified Water Flow Rate: Approximately 28 Litre per hour Purification Capacity: Germkill Kit 1 is designed to give approximately 4000L^ of purified water & Germkill Kit 2 is designed to give approximately 8000L^ of purified water depending on input water pressure, TDS and water temperature Membrane Type: Thin film composite spiral wound Material of Construction: Food safe, non-toxic, engineering-grade plastics Pump Type: Diaphragm pump 24V DC Purification Capacity (CSF Germkill Kit): Removes dissolved salts, hardness, pesticides and heavy metals like lead and mercury. It also removes microbial contaminants like bacteria, virus, protozoa and cysts GermKill Performance Standard: Meets stringent international criteria for microbiologically safe drinking water, such as Environmental Protection Agency (EPA), USA % Recovery: Typically 45% TDS Reduction: 90% (Min) Power Rating: 60 Watts Pressure Rating: 10–30 PSI Operating Voltage: 100–240 V, 50/60 Hz Total Dissolved Solids: Upto 2000 mg/lit (max) Total Hardness: 500 mg/lit (max) Iron in Input Water: 0.3 mg/lit (max) Turbidity of Input Water: 1 NTU (Max)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/pureit-ultima-water-purifier"
+ },
+ {
+  "id": "pureit-ultima-pro-ro-mf-dual-uv-9l",
+  "slug": "pureit-ultima-pro-ro-mf-dual-uv-9l",
+  "name": "Ultima Pro (RO+MF+Dual UV, 9L)",
+  "brand": "Pureit",
+  "category": "water-purifier",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "pureit-ultima-pro-ro-mf-dual-uv-9l~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 36000
+   }
+  ],
+  "images": [
+   "https://www.startech.com.bd/image/cache/catalog/appliance/water-purifier/pureit/ultima-pro/ultima-pro-01-01-1200x630.webp",
+   "https://images.othoba.com/images/thumbs/2677144_pureit-ultima-pro-9l-rouvmf-water-purifier-8-stage-purification-with-dual-uv-mineral-enrichment.webp",
+   "https://mke.com.bd/media/product/P250455/main.png"
+  ],
+  "colors": [],
+  "regions": [],
+  "specs": [
+   {
+    "group": "General Information",
+    "items": [
+     {
+      "label": "Others",
+      "value": "Purified Water Flow Rate: Approximately 28 Litre per hour Purification Capacity: Germkill Kit 1 is designed to give approximately 4000L^ of purified water & Germkill Kit 2 is designed to give approximately 8000L^ of purified water depending on input water pressure, TDS and water temperature Membrane Type: Thin film composite spiral wound Material of Construction: Food safe, non-toxic, engineering-grade plastics Pump Type: Diaphragm pump 24V DC Purification Capacity (CSF Germkill Kit): Removes dissolved salts, hardness, pesticides and heavy metals like lead and mercury. It also removes microbial contaminants like bacteria, virus, protozoa and cysts GermKill Performance Standard: Meets stringent international criteria for microbiologically safe drinking water, such as Environmental Protection Agency (EPA), USA % Recovery: Typically 70% TDS Reduction: 90% (Min) Power Rating: 37 Watts Pressure Rating: 10–30 PSI Operating Voltage: 100–240 V, 50/60 Hz Total Dissolved Solids: Upto 2000 mg/lit (max) Total Hardness: 500 mg/lit (max) Iron in Input Water: 0.3 mg/lit (max) Turbidity of Input Water: 1 NTU (Max)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.startech.com.bd/pureit-ultima-pro-water-purifier"
+ },
+ {
+  "id": "kent-grand-star-ro-uv-uf-9l",
+  "slug": "kent-grand-star-ro-uv-uf-9l",
+  "name": "Grand Star (RO+UV+UF, 9L)",
+  "brand": "Kent",
+  "category": "water-purifier",
+  "releaseYear": null,
+  "popularity": 74,
+  "variants": [
+   {
+    "id": "kent-grand-star-ro-uv-uf-9l~v1",
+    "label": "Standard",
+    "attributes": {},
+    "officialPrice": 36200
+   }
+  ],
+  "images": [
+   "https://mke.com.bd/media/product/P250243/main.png",
+   "https://images.othoba.com/images/thumbs/1626512_kent-9-liter-grand-star-ro-rouvufalkalinecoppertds-controluv-led-tank-auto-flush-feature-water-purif.webp",
+   "https://adminapi.applegadgetsbd.com/storage/media/large/Kent-Grand-Star-Water-Purifier---9L-6236.png"
   ],
   "colors": [],
   "regions": [],
@@ -30975,6 +36131,272 @@ export const catalogOffers: Offer[] = [
  },
  {
   "id": "o303",
+  "variantId": "oneplus-bullets-wireless-z3~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2050,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/oneplus-bullets-wireless-z3-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o304",
+  "variantId": "oneplus-bullets-wireless-z3~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1999,
+  "oldPrice": 2499,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/oneplus-bullets-wireless-z3",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o305",
+  "variantId": "oneplus-bullets-wireless-z3~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1999,
+  "oldPrice": 2499,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/oneplus-bullets-wireless-z3",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o306",
+  "variantId": "oneplus-bullets-wireless-z3~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 2199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/oneplus-bullets-wireless-z3-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o307",
+  "variantId": "oneplus-bullets-wireless-z3~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2299,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/oneplus-bullets-wireless-z3",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o308",
+  "variantId": "oneplus-bullets-wireless-z3~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2290,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/oneplus-bullets-wireless-z3-neckbands/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o309",
+  "variantId": "oneplus-bullets-wireless-z3~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2599,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/oneplus-bullets-wireless-z3",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o310",
+  "variantId": "oneplus-bullets-wireless-z3~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1900,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/oneplus-bullets-wireless-z3/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o311",
+  "variantId": "oneplus-bullets-wireless-z2-anc~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3150,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/oneplus-bullets-wireless-z2-anc-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o312",
+  "variantId": "oneplus-bullets-wireless-z2-anc~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2999,
+  "oldPrice": 3799,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/oneplus-bullets-wireless-z2-anc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o313",
+  "variantId": "oneplus-bullets-wireless-z2-anc~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2799,
+  "oldPrice": 3199,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/oneplus-bullets-wireless-z2-anc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o314",
+  "variantId": "oneplus-bullets-wireless-z2-anc~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 3499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/oneplus-bullets-wireless-z2-anc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o315",
+  "variantId": "oneplus-bullets-wireless-z2-anc~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/oneplus-bullets-wireless-z2-anc-bluetooth-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o316",
+  "variantId": "oneplus-bullets-wireless-z2-anc~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2990,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/oneplus-bullets-wireless-z2-anc/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o317",
+  "variantId": "oneplus-bullets-wireless-z2-anc~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/oneplus-bullets-wireless-z2-anc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o318",
+  "variantId": "oneplus-bullets-wireless-z2-anc~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2780,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/oneplus-bullets-wireless-z2-anc/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o319",
+  "variantId": "oneplus-bullets-wireless-z2-neckband~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2190,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o320",
+  "variantId": "oneplus-bullets-wireless-z2-neckband~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2699,
+  "oldPrice": 2899,
+  "inStock": false,
+  "url": "https://www.sumashtech.com/product/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o321",
+  "variantId": "oneplus-bullets-wireless-z2-neckband~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 2899,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetandgear.com/product/oneplus-bullets-wireless-z2",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o322",
   "variantId": "oneplus-bullets-wireless-z2-neckband~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -30985,24 +36407,1396 @@ export const catalogOffers: Offer[] = [
   "url": "https://motionview.com.bd/product/oneplus-bullets-wireless-z2-bluetooth-neckband-earphone",
   "source": "site",
   "published": true,
-  "checkedAt": "2026-10-25T03:00:00.000Z"
+  "checkedAt": "2026-10-26T03:00:00.000Z"
  },
  {
-  "id": "o304",
+  "id": "o323",
   "variantId": "oneplus-bullets-wireless-z2-neckband~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
   "region": null,
-  "price": 2990,
+  "price": 2490,
   "oldPrice": null,
   "inStock": false,
-  "url": "https://diamu.com.bd/product/oneplus-bullets-wireless-z2-anc/",
+  "url": "https://diamu.com.bd/product/oneplus-bullets-wireless-z2/",
   "source": "site",
   "published": true,
-  "checkedAt": "2026-10-25T03:00:00.000Z"
+  "checkedAt": "2026-10-26T03:00:00.000Z"
  },
  {
-  "id": "o305",
+  "id": "o324",
+  "variantId": "oneplus-bullets-wireless-z2-neckband~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2399,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/oneplus-bullets-wireless-z2",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o325",
+  "variantId": "oneplus-bullets-wireless-z2-neckband~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2490,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetbreeze.com.bd/product/oneplus-bullets-wireless-z2-2/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o326",
+  "variantId": "oraimo-necklace-5-anc-oeb-611~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2290,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/oraimo-necklace-5",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o327",
+  "variantId": "oraimo-necklace-5-anc-oeb-611~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2299,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/oraimo-necklace-5-anc-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o328",
+  "variantId": "oraimo-necklace-5-anc-oeb-611~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2299,
+  "oldPrice": 2499,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/oraimo-oeb-611-necklace-5-anc-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o329",
+  "variantId": "oraimo-necklace-5-anc-oeb-611~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2299,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://motionview.com.bd/product/oraimo-necklace-5-neckband-oeb-611",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o330",
+  "variantId": "oraimo-necklace-5-anc-oeb-611~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/oraimo-necklace-5-oeb-611-anc-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o331",
+  "variantId": "oraimo-necklace-5-anc-oeb-611~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2150,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/oraimo-necklace-5-noise-cancellation/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o332",
+  "variantId": "oraimo-necklace-neo-oeb-310~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1050,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/oraimo-necklace-neo",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o333",
+  "variantId": "oraimo-necklace-neo-oeb-310~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1150,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/oraimo-necklace-neo-wireless-neckband-oeb-310",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o334",
+  "variantId": "oraimo-necklace-neo-oeb-310~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1100,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.applegadgetsbd.com/product/oraimo-necklace-neo-neckband-bluetooth-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o335",
+  "variantId": "oraimo-necklace-neo-oeb-310~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1099,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/oraimo-necklace-neo-neckband-oeb-310",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o336",
+  "variantId": "oraimo-necklace-neo-oeb-310~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/oraimo-necklace-neo-neckband-oeb-310",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o337",
+  "variantId": "oraimo-necklace-neo-oeb-310~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1050,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/oraimo-necklace-neo-oeb-310-wireless-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o338",
+  "variantId": "oraimo-necklace-lite-oeb-311~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1290,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/oraimo-necklace-lite-enc-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o339",
+  "variantId": "oraimo-necklace-lite-oeb-311~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1349,
+  "oldPrice": 1430,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/oraimo-necklace-lite",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o340",
+  "variantId": "oraimo-necklace-lite-oeb-311~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1350,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/oraimo-oeb-311-necklace-lite-enc-with-vibration-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o341",
+  "variantId": "oraimo-necklace-lite-oeb-311~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 1450,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetandgear.com/product/oraimo-necklace-lite-enc-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o342",
+  "variantId": "oraimo-necklace-lite-oeb-311~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1430,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/oraimo-oeb-311-necklace-lite-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o343",
+  "variantId": "oraimo-necklace-lite-oeb-311~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1399,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/oraimo-necklace-lite-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o344",
+  "variantId": "oraimo-necklace-lite-oeb-311~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1220,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/oraimo-oeb-311-necklace-lite-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o345",
+  "variantId": "oraimo-necklace-4-oeb-e50d~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2799,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/oraimo-necklace-4-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o346",
+  "variantId": "oraimo-necklace-4-oeb-e50d~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 3075,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetandgear.com/product/oraimo-necklace-4-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o347",
+  "variantId": "oraimo-necklace-4-oeb-e50d~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2850,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://motionview.com.bd/product/oraimo-necklace-4-wireless-neckband-oeb-e50d",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o348",
+  "variantId": "oraimo-necklace-4-oeb-e50d~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2670,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://diamu.com.bd/product/oraimo-necklace-4-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o349",
+  "variantId": "oraimo-necklace-4-oeb-e50d~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2399,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://kryinternational.com/products/oraimo-necklace-4-wireless-neckband-oeb-e50d",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o350",
+  "variantId": "oraimo-necklace-4-oeb-e50d~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2550,
+  "oldPrice": 2750,
+  "inStock": false,
+  "url": "https://gadgetbreeze.com.bd/product/oraimo-necklace-4/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o351",
+  "variantId": "qcy-bassbloom-anc-n2~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1950,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/qcy-bassbloom-anc-n2",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o352",
+  "variantId": "qcy-bassbloom-anc-n2~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/qcy-bassbloom-anc-n2-in-ear-neckband-headphones",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o353",
+  "variantId": "qcy-bassbloom-anc-n2~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/qcy-bassbloom-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o354",
+  "variantId": "qcy-bassbloom-anc-n2~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2299,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/qcy-bassbloom-n2-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o355",
+  "variantId": "qcy-bassbloom-anc-n2~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2190,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/qcy-bassbloom-anc-n2-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o356",
+  "variantId": "qcy-tunearc-n1~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1259,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/qcy-tunearc-n1-c3-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o357",
+  "variantId": "qcy-tunearc-n1~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1399,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/qcy-tunearc-n1-c3-in-ear-neckband-headphones",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o358",
+  "variantId": "qcy-tunearc-n1~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1390,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/qcy-tunearc-n1-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o359",
+  "variantId": "qcy-tunearc-n1~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1449,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://kryinternational.com/products/qcy-tunearc-n1-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o360",
+  "variantId": "qcy-tunearc-n1~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1240,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/qcy-tunearc-n1-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o361",
+  "variantId": "realme-buds-wireless-5-anc~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2550,
+  "oldPrice": 2799,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/realme-buds-wireless-5-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o362",
+  "variantId": "realme-buds-wireless-5-anc~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1999,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://motionview.com.bd/product/realme-neckband-buds-wireless-5-anc",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o363",
+  "variantId": "realme-buds-wireless-5-anc~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2490,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/realme-buds-5-anc-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o364",
+  "variantId": "realme-buds-wireless-5-lite~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1990,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/realme-buds-wireless-5-lite",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o365",
+  "variantId": "realme-buds-wireless-5-lite~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1890,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/realme-buds-wireless-5-lite-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o366",
+  "variantId": "realme-buds-wireless-3-neo~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1850,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/realme-buds-wireless-3-neo-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o367",
+  "variantId": "realme-buds-wireless-3-neo~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/realme-buds-wireless-3-neo-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o368",
+  "variantId": "edifier-w280nb-pro~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3599,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/edifier-w280nb-pro-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o369",
+  "variantId": "edifier-w280nb-pro~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 4149,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/edifier-w280nb-pro-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o370",
+  "variantId": "edifier-w280nb-pro~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3600,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/edifier-w280nb-pro-wireless-noise-cancelling-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o371",
+  "variantId": "jbl-tune-125bt~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2850,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/jbl-tune-125bt-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o372",
+  "variantId": "jbl-tune-125bt~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/jbl-tune-125bt-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o373",
+  "variantId": "jbl-tune-125bt~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/jbl-tune-125bt-neckband-in-ear-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o374",
+  "variantId": "anker-soundcore-r500~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/anker-soundcore-r500-bluetooth-neckband-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o375",
+  "variantId": "anker-soundcore-r500~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2200,
+  "oldPrice": 2500,
+  "inStock": false,
+  "url": "https://www.applegadgetsbd.com/product/anker-soundcore-r500-bluetooth-neckband-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o376",
+  "variantId": "anker-soundcore-r500~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1940,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://diamu.com.bd/product/anker-soundcore-r500-fast-charging-neckband-earphone/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o377",
+  "variantId": "anker-soundcore-life-u2i~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1750,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/anker-soundcore-life-u2i-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o378",
+  "variantId": "anker-soundcore-life-u2i~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/anker-soundcore-life-u2i-bluetooth-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o379",
+  "variantId": "anker-soundcore-life-u2i~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1940,
+  "oldPrice": 2900,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/anker-soundcore-life-u2i-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o380",
+  "variantId": "anker-soundcore-life-u2i~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/anker-soundcore-life-u2i-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o381",
+  "variantId": "baseus-bowie-p1x~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1550,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/baseus-bowie-p1x-neckband-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o382",
+  "variantId": "baseus-bowie-p1x~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1150,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/baseus-bowie-p1x-half-in-ear-neckband-wireless-earphones",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o383",
+  "variantId": "baseus-bowie-p1x~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1340,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/baseus-bowie-p1x-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o384",
+  "variantId": "baseus-bowie-p1x~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1400,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://kryinternational.com/products/baseus-bowie-p1x-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o385",
+  "variantId": "oppo-enco-m33~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3500,
+  "oldPrice": 4200,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/oppo-enco-m33-neckband-wireless-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o386",
+  "variantId": "oppo-enco-m33~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3050,
+  "oldPrice": 4500,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/oppo-enco-m33-wireless-neckband-earphones/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o387",
+  "variantId": "oppo-enco-m33~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2790,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/oppo-enco-m33-45db-active-noise-canceling-neckaband-earphones/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o388",
+  "variantId": "xiaomi-redmi-sonicbass~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1799,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/xiaomi-redmi-sonicbass-wireless-nechband-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o389",
+  "variantId": "xiaomi-redmi-sonicbass~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1950,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/redmi-sonicbass-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o390",
+  "variantId": "xiaomi-redmi-sonicbass~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1840,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://diamu.com.bd/product/redmi-sonicbass-wireless-neckband-earphones/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o391",
+  "variantId": "lenovo-he05x-ii~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 640,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/lenovo-he05x-ii-wireless-neckband-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o392",
+  "variantId": "lenovo-he05x-ii~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 799,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://motionview.com.bd/product/lenovo-he05x-ii-new-edition-wireless-in-ear-neckband-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o393",
+  "variantId": "lenovo-he05x-ii~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 690,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://diamu.com.bd/product/lenovo-he05x-ii-new-edition-wireless-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o394",
+  "variantId": "hoco-es70~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 749,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/hoco-es70-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o395",
+  "variantId": "hoco-es70~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 700,
+  "oldPrice": 900,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/hoco-es70-neckband-wireless-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o396",
+  "variantId": "hoco-es70~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 690,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/hoco-es70-bluetooth-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o397",
+  "variantId": "hoco-es70~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1049,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/hoco-es70-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o398",
+  "variantId": "hoco-es69~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 750,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/hoco-es69-bluetooth-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o399",
+  "variantId": "hoco-es69~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/hoco-es69-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o400",
+  "variantId": "hoco-es69~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 840,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/hoco-es69-wireless-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o401",
+  "variantId": "hoco-es69~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 799,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/hoco-es69-bluetooth-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o402",
+  "variantId": "hoco-es69~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 720,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/hoco-es69-bluetooth-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o403",
+  "variantId": "hoco-es62-plus~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1150,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/hoco-es62-plus-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o404",
+  "variantId": "hoco-es62-plus~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1200,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.applegadgetsbd.com/product/hoco-es62-plus-neckband-wireless-earphones",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o405",
+  "variantId": "hoco-es62-plus~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1090,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/hoco-es62-plus-neckband/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o406",
+  "variantId": "hoco-es62-plus~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1190,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/hoco-es62-plus-neckband-earphones/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o407",
+  "variantId": "foneng-bl34~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 660,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/foneng-bl34-bluetooth-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o408",
+  "variantId": "foneng-bl34~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 749,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/foneng-bl34-neckband-bluetooth-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o409",
+  "variantId": "foneng-bl34~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 799,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.applegadgetsbd.com/product/foneng-bl34-neckband-bluetooth-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o410",
+  "variantId": "foneng-bl34~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 799,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/foneng-bl34-neckband-bluetooth-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o411",
+  "variantId": "foneng-bl34~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 850,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/foneng-bl34-neckband-bluetooth-earphone",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o412",
+  "variantId": "foneng-bl34~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 690,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/foneng-bl34-neckband-bluetooth-earphone/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o413",
+  "variantId": "foneng-bl40~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 730,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/foneng-bl40-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o414",
+  "variantId": "foneng-bl40~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 899,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/foneng-bl40-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o415",
+  "variantId": "foneng-bl40~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 950,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.applegadgetsbd.com/product/foneng-bl40-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o416",
+  "variantId": "foneng-bl40~v1",
+  "sellerId": "motionview.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 888,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://motionview.com.bd/product/foneng-bl40-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o417",
+  "variantId": "foneng-bl40~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 870,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/foneng-bl40-neckband-headphones/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o418",
+  "variantId": "acefast-n9~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 990,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/acefast-n9-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o419",
+  "variantId": "acefast-n9~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 980,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/acefast-n9-enc-wireless-neckband-earphones/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o420",
+  "variantId": "hifuture-futuremate~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/hifuture-futuremate-wireless-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o421",
+  "variantId": "hifuture-futuremate~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 2499,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetandgear.com/product/hifuture-future-mate-neckband",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o422",
   "variantId": "anker-zolo-20w-type-c-charger-a2699~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31016,7 +37810,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o306",
+  "id": "o423",
   "variantId": "anker-zolo-20w-type-c-charger-a2699~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -31030,7 +37824,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o307",
+  "id": "o424",
   "variantId": "anker-zolo-20w-type-c-charger-a2699~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -31044,7 +37838,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o308",
+  "id": "o425",
   "variantId": "anker-zolo-20w-type-c-charger-a2699~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -31058,7 +37852,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o309",
+  "id": "o426",
   "variantId": "anker-zolo-30w-type-c-charger-a2698~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31072,7 +37866,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o310",
+  "id": "o427",
   "variantId": "anker-zolo-30w-type-c-charger-a2698~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -31086,7 +37880,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o311",
+  "id": "o428",
   "variantId": "anker-zolo-30w-type-c-charger-a2698~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31100,7 +37894,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o312",
+  "id": "o429",
   "variantId": "anker-zolo-30w-type-c-charger-a2698~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -31114,7 +37908,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o313",
+  "id": "o430",
   "variantId": "anker-zolo-30w-type-c-charger-a2698~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -31128,7 +37922,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o314",
+  "id": "o431",
   "variantId": "anker-zolo-30w-type-c-charger-a2698~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -31142,7 +37936,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o315",
+  "id": "o432",
   "variantId": "anker-nano-45w-type-c-charger-a2692~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31156,7 +37950,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o316",
+  "id": "o433",
   "variantId": "anker-nano-45w-type-c-charger-a2692~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31170,7 +37964,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o317",
+  "id": "o434",
   "variantId": "anker-nano-45w-type-c-charger-a2692~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -31184,7 +37978,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o318",
+  "id": "o435",
   "variantId": "anker-nano-45w-type-c-charger-a2692~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -31198,7 +37992,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o319",
+  "id": "o436",
   "variantId": "anker-nano-45w-type-c-charger-a2692~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -31212,7 +38006,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o320",
+  "id": "o437",
   "variantId": "anker-nano-45w-smart-display-charger-a121d~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31226,7 +38020,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o321",
+  "id": "o438",
   "variantId": "anker-nano-45w-smart-display-charger-a121d~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -31240,7 +38034,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o322",
+  "id": "o439",
   "variantId": "anker-nano-45w-smart-display-charger-a121d~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -31254,7 +38048,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o323",
+  "id": "o440",
   "variantId": "anker-nano-45w-smart-display-charger-a121d~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -31268,7 +38062,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o324",
+  "id": "o441",
   "variantId": "anker-nano-45w-smart-display-charger-a121d~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -31282,7 +38076,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o325",
+  "id": "o442",
   "variantId": "anker-nano-45w-smart-display-charger-a121d~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -31296,7 +38090,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o326",
+  "id": "o443",
   "variantId": "anker-25w-type-c-compact-charger-a2656~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31310,7 +38104,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o327",
+  "id": "o444",
   "variantId": "anker-25w-type-c-compact-charger-a2656~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -31324,7 +38118,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o328",
+  "id": "o445",
   "variantId": "anker-25w-type-c-compact-charger-a2656~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -31338,7 +38132,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o329",
+  "id": "o446",
   "variantId": "anker-25w-type-c-compact-charger-a2656~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -31352,7 +38146,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o330",
+  "id": "o447",
   "variantId": "dell-optiplex-7020-mt~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -31366,7 +38160,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o331",
+  "id": "o448",
   "variantId": "dell-optiplex-7020-mt~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31380,7 +38174,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o332",
+  "id": "o449",
   "variantId": "dell-optiplex-7020-mt~v2",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -31394,7 +38188,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o333",
+  "id": "o450",
   "variantId": "dell-optiplex-7020-mt~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31408,7 +38202,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o334",
+  "id": "o451",
   "variantId": "dell-optiplex-7020-mt~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31422,7 +38216,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o335",
+  "id": "o452",
   "variantId": "dell-optiplex-7020-mt~v3",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31436,7 +38230,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o336",
+  "id": "o453",
   "variantId": "dell-optiplex-7020-mt~v4",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31450,7 +38244,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o337",
+  "id": "o454",
   "variantId": "dell-optiplex-7020-mt~v5",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -31464,7 +38258,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o338",
+  "id": "o455",
   "variantId": "dell-optiplex-7020-mt~v6",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31478,7 +38272,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o339",
+  "id": "o456",
   "variantId": "dell-optiplex-7020-mt~v6",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31492,7 +38286,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o340",
+  "id": "o457",
   "variantId": "dell-tower-ect1250~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -31506,7 +38300,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o341",
+  "id": "o458",
   "variantId": "dell-tower-ect1250~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31520,7 +38314,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o342",
+  "id": "o459",
   "variantId": "dell-tower-ect1250~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31534,7 +38328,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o343",
+  "id": "o460",
   "variantId": "dell-tower-ect1250~v2",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -31548,7 +38342,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o344",
+  "id": "o461",
   "variantId": "dell-tower-ect1250~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31562,7 +38356,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o345",
+  "id": "o462",
   "variantId": "dell-tower-ect1250~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31576,7 +38370,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o346",
+  "id": "o463",
   "variantId": "dell-pro-tower-qct1250~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31590,7 +38384,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o347",
+  "id": "o464",
   "variantId": "dell-pro-tower-qct1250~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31604,7 +38398,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o348",
+  "id": "o465",
   "variantId": "dell-pro-tower-qct1250~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31618,7 +38412,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o349",
+  "id": "o466",
   "variantId": "dell-pro-tower-qct1250~v3",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31632,7 +38426,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o350",
+  "id": "o467",
   "variantId": "hp-pro-tower-280-g9~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -31646,7 +38440,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o351",
+  "id": "o468",
   "variantId": "hp-pro-tower-280-g9~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31660,7 +38454,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o352",
+  "id": "o469",
   "variantId": "hp-pro-tower-280-g9~v3",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31674,7 +38468,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o353",
+  "id": "o470",
   "variantId": "hp-pro-tower-280-g9~v3",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -31688,7 +38482,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o354",
+  "id": "o471",
   "variantId": "hp-pro-tower-280-g9~v4",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31702,7 +38496,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o355",
+  "id": "o472",
   "variantId": "lenovo-ideacentre-08irh9~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31716,7 +38510,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o356",
+  "id": "o473",
   "variantId": "lenovo-ideacentre-08irh9~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -31730,7 +38524,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o357",
+  "id": "o474",
   "variantId": "lenovo-ideacentre-08irh9~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -31744,7 +38538,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o358",
+  "id": "o475",
   "variantId": "dell-pro-slim-qcs1250~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31758,7 +38552,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o359",
+  "id": "o476",
   "variantId": "dell-pro-slim-qcs1250~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -31772,7 +38566,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o360",
+  "id": "o477",
   "variantId": "dell-pro-slim-qcs1250~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31786,7 +38580,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o361",
+  "id": "o478",
   "variantId": "asus-expertcenter-aio-p440vak~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31800,7 +38594,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o362",
+  "id": "o479",
   "variantId": "asus-expertcenter-aio-p440vak~v2",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -31814,7 +38608,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o363",
+  "id": "o480",
   "variantId": "asus-expertcenter-aio-p440vak~v3",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -31828,7 +38622,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o364",
+  "id": "o481",
   "variantId": "jisulife-life1-fa26-portable-desk-fan~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31842,7 +38636,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o365",
+  "id": "o482",
   "variantId": "jisulife-life1-fa26-portable-desk-fan~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31856,7 +38650,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o366",
+  "id": "o483",
   "variantId": "jisulife-life1-fa26-portable-desk-fan~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31870,7 +38664,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o367",
+  "id": "o484",
   "variantId": "jisulife-life1-fa26-portable-desk-fan~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -31884,7 +38678,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o368",
+  "id": "o485",
   "variantId": "jisulife-life1-fa26-portable-desk-fan~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -31898,7 +38692,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o369",
+  "id": "o486",
   "variantId": "jisulife-fa19-portable-rechargeable-fan~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31912,7 +38706,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o370",
+  "id": "o487",
   "variantId": "jisulife-fa19-portable-rechargeable-fan~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31926,7 +38720,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o371",
+  "id": "o488",
   "variantId": "jisulife-fa19-portable-rechargeable-fan~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31940,7 +38734,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o372",
+  "id": "o489",
   "variantId": "jisulife-fa19-portable-rechargeable-fan~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -31954,7 +38748,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o373",
+  "id": "o490",
   "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -31968,7 +38762,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o374",
+  "id": "o491",
   "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -31982,7 +38776,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o375",
+  "id": "o492",
   "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -31996,7 +38790,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o376",
+  "id": "o493",
   "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -32010,7 +38804,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o377",
+  "id": "o494",
   "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -32024,7 +38818,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o378",
+  "id": "o495",
   "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -32038,7 +38832,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o379",
+  "id": "o496",
   "variantId": "xiaomi-solove-f5-desktop-stand-fan~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -32052,7 +38846,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o380",
+  "id": "o497",
   "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32066,7 +38860,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o381",
+  "id": "o498",
   "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32080,7 +38874,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o382",
+  "id": "o499",
   "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -32094,7 +38888,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o383",
+  "id": "o500",
   "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -32108,7 +38902,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o384",
+  "id": "o501",
   "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -32122,7 +38916,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o385",
+  "id": "o502",
   "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -32136,7 +38930,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o386",
+  "id": "o503",
   "variantId": "xiaomi-solove-f5-pro-desktop-fan~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -32150,7 +38944,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o387",
+  "id": "o504",
   "variantId": "xiaomi-solove-f5-pro-max-rechargeable-fan~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32164,7 +38958,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o388",
+  "id": "o505",
   "variantId": "xiaomi-solove-f5-pro-max-rechargeable-fan~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32178,7 +38972,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o389",
+  "id": "o506",
   "variantId": "xiaomi-solove-f5-pro-max-rechargeable-fan~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -32192,7 +38986,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o390",
+  "id": "o507",
   "variantId": "xiaomi-solove-f5-pro-max-rechargeable-fan~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -32206,7 +39000,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o391",
+  "id": "o508",
   "variantId": "xiaomi-solove-f3-mini-clip-fan~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32220,7 +39014,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o392",
+  "id": "o509",
   "variantId": "xiaomi-solove-f3-mini-clip-fan~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32234,7 +39028,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o393",
+  "id": "o510",
   "variantId": "xiaomi-solove-f3-mini-clip-fan~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -32248,7 +39042,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o394",
+  "id": "o511",
   "variantId": "xiaomi-solove-f3-mini-clip-fan~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -32262,7 +39056,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o395",
+  "id": "o512",
   "variantId": "xiaomi-solove-f3-mini-clip-fan~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -32276,7 +39070,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o396",
+  "id": "o513",
   "variantId": "hoco-hx65-portable-table-fan~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32290,7 +39084,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o397",
+  "id": "o514",
   "variantId": "hoco-hx65-portable-table-fan~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32304,7 +39098,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o398",
+  "id": "o515",
   "variantId": "hoco-hx65-portable-table-fan~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -32318,7 +39112,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o399",
+  "id": "o516",
   "variantId": "hoco-hx65-portable-table-fan~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -32332,7 +39126,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o400",
+  "id": "o517",
   "variantId": "hoco-hx66-portable-table-fan~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32346,7 +39140,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o401",
+  "id": "o518",
   "variantId": "hoco-hx66-portable-table-fan~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32360,7 +39154,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o402",
+  "id": "o519",
   "variantId": "hoco-hx66-portable-table-fan~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -32374,7 +39168,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o403",
+  "id": "o520",
   "variantId": "hoco-hx66-portable-table-fan~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -32388,7 +39182,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o404",
+  "id": "o521",
   "variantId": "wiwu-fs03-2-in-1-table-clip-fan~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32402,7 +39196,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o405",
+  "id": "o522",
   "variantId": "wiwu-fs03-2-in-1-table-clip-fan~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32416,7 +39210,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o406",
+  "id": "o523",
   "variantId": "wiwu-fs03-2-in-1-table-clip-fan~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -32430,7 +39224,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o407",
+  "id": "o524",
   "variantId": "wiwu-fs03-2-in-1-table-clip-fan~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -32444,7 +39238,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o408",
+  "id": "o525",
   "variantId": "lenovo-loq-15ahp9~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32458,7 +39252,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o409",
+  "id": "o526",
   "variantId": "lenovo-loq-15ahp9~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -32472,7 +39266,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o410",
+  "id": "o527",
   "variantId": "lenovo-loq-15ahp9~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32486,7 +39280,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o411",
+  "id": "o528",
   "variantId": "lenovo-loq-15ahp9~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -32500,7 +39294,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o412",
+  "id": "o529",
   "variantId": "lenovo-ideapad-slim-3-15abr8~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32514,7 +39308,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o413",
+  "id": "o530",
   "variantId": "lenovo-ideapad-slim-3-15abr8~v2",
   "sellerId": "binarylogic.com.bd",
   "condition": "official",
@@ -32528,7 +39322,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o414",
+  "id": "o531",
   "variantId": "lenovo-ideapad-slim-3-15abr8~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32542,7 +39336,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o415",
+  "id": "o532",
   "variantId": "lenovo-ideapad-slim-3-14irh10~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32556,7 +39350,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o416",
+  "id": "o533",
   "variantId": "lenovo-ideapad-slim-3-14irh10~v1",
   "sellerId": "binarylogic.com.bd",
   "condition": "official",
@@ -32570,7 +39364,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o417",
+  "id": "o534",
   "variantId": "lenovo-ideapad-slim-3-14irh10~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32584,7 +39378,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o418",
+  "id": "o535",
   "variantId": "hp-15-fd0180nia~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32598,7 +39392,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o419",
+  "id": "o536",
   "variantId": "hp-15-fd0180nia~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -32612,7 +39406,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o420",
+  "id": "o537",
   "variantId": "dell-pro-15-essential~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32626,7 +39420,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o421",
+  "id": "o538",
   "variantId": "dell-pro-15-essential~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -32640,7 +39434,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o422",
+  "id": "o539",
   "variantId": "dell-pro-15-essential~v1",
   "sellerId": "binarylogic.com.bd",
   "condition": "official",
@@ -32654,7 +39448,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o423",
+  "id": "o540",
   "variantId": "hp-250r-g10~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32668,7 +39462,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o424",
+  "id": "o541",
   "variantId": "hp-250r-g10~v1",
   "sellerId": "binarylogic.com.bd",
   "condition": "official",
@@ -32682,7 +39476,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o425",
+  "id": "o542",
   "variantId": "hp-250r-g10~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -32696,7 +39490,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o426",
+  "id": "o543",
   "variantId": "hp-probook-440-g11~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32710,7 +39504,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o427",
+  "id": "o544",
   "variantId": "hp-probook-440-g11~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32724,7 +39518,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o428",
+  "id": "o545",
   "variantId": "hp-probook-440-g11~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -32738,7 +39532,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o429",
+  "id": "o546",
   "variantId": "hp-probook-440-g11~v2",
   "sellerId": "binarylogic.com.bd",
   "condition": "official",
@@ -32752,7 +39546,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o430",
+  "id": "o547",
   "variantId": "hp-probook-460-g11~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32766,7 +39560,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o431",
+  "id": "o548",
   "variantId": "hp-probook-460-g11~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -32780,7 +39574,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o432",
+  "id": "o549",
   "variantId": "hp-probook-460-g11~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32794,7 +39588,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o433",
+  "id": "o550",
   "variantId": "hp-probook-460-g11~v2",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -32808,7 +39602,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o434",
+  "id": "o551",
   "variantId": "hp-probook-460-g11~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32822,7 +39616,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o435",
+  "id": "o552",
   "variantId": "hp-probook-460-g11~v3",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -32836,7 +39630,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o436",
+  "id": "o553",
   "variantId": "hp-probook-460-g11~v4",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32850,7 +39644,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o437",
+  "id": "o554",
   "variantId": "hp-probook-460-g11~v4",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -32864,7 +39658,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o438",
+  "id": "o555",
   "variantId": "lenovo-thinkpad-e14-gen-7~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32878,7 +39672,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o439",
+  "id": "o556",
   "variantId": "lenovo-thinkpad-e14-gen-7~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -32892,7 +39686,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o440",
+  "id": "o557",
   "variantId": "lenovo-thinkpad-e14-gen-7~v2",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -32906,7 +39700,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o441",
+  "id": "o558",
   "variantId": "lenovo-thinkpad-e14-gen-7~v3",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32920,7 +39714,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o442",
+  "id": "o559",
   "variantId": "lenovo-thinkpad-e14-gen-7~v4",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -32934,7 +39728,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o443",
+  "id": "o560",
   "variantId": "lenovo-thinkpad-e14-gen-7~v4",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32948,7 +39742,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o444",
+  "id": "o561",
   "variantId": "lenovo-thinkpad-e14-gen-6~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -32962,7 +39756,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o445",
+  "id": "o562",
   "variantId": "lenovo-thinkpad-e14-gen-6~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32976,7 +39770,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o446",
+  "id": "o563",
   "variantId": "lenovo-thinkpad-e14-gen-6~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -32990,7 +39784,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o447",
+  "id": "o564",
   "variantId": "lenovo-thinkpad-e14-gen-6~v3",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -33004,7 +39798,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o448",
+  "id": "o565",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33018,7 +39812,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o449",
+  "id": "o566",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33032,7 +39826,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o450",
+  "id": "o567",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33046,7 +39840,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o451",
+  "id": "o568",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -33060,7 +39854,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o452",
+  "id": "o569",
   "variantId": "apple-macbook-neo~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33074,7 +39868,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o453",
+  "id": "o570",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33088,7 +39882,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o454",
+  "id": "o571",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33102,7 +39896,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o455",
+  "id": "o572",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33116,7 +39910,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o456",
+  "id": "o573",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -33130,7 +39924,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o457",
+  "id": "o574",
   "variantId": "apple-macbook-neo~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33144,7 +39938,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o458",
+  "id": "o575",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33158,7 +39952,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o459",
+  "id": "o576",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33172,7 +39966,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o460",
+  "id": "o577",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33186,7 +39980,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o461",
+  "id": "o578",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -33200,7 +39994,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o462",
+  "id": "o579",
   "variantId": "apple-macbook-air-13-m5~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33214,7 +40008,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o463",
+  "id": "o580",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33228,7 +40022,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o464",
+  "id": "o581",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33242,7 +40036,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o465",
+  "id": "o582",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33256,7 +40050,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o466",
+  "id": "o583",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -33270,7 +40064,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o467",
+  "id": "o584",
   "variantId": "apple-macbook-air-13-m5~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33284,7 +40078,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o468",
+  "id": "o585",
   "variantId": "apple-macbook-air-13-m5~v3",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33298,7 +40092,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o469",
+  "id": "o586",
   "variantId": "apple-macbook-air-13-m5~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33312,7 +40106,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o470",
+  "id": "o587",
   "variantId": "apple-macbook-air-13-m5~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33326,7 +40120,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o471",
+  "id": "o588",
   "variantId": "apple-macbook-air-13-m5~v3",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33340,7 +40134,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o472",
+  "id": "o589",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33354,7 +40148,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o473",
+  "id": "o590",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33368,7 +40162,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o474",
+  "id": "o591",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33382,7 +40176,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o475",
+  "id": "o592",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -33396,7 +40190,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o476",
+  "id": "o593",
   "variantId": "apple-macbook-air-15-m5~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33410,7 +40204,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o477",
+  "id": "o594",
   "variantId": "apple-macbook-air-15-m5~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33424,7 +40218,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o478",
+  "id": "o595",
   "variantId": "apple-macbook-air-15-m5~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33438,7 +40232,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o479",
+  "id": "o596",
   "variantId": "apple-macbook-air-15-m5~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33452,7 +40246,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o480",
+  "id": "o597",
   "variantId": "apple-macbook-air-15-m5~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33466,7 +40260,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o481",
+  "id": "o598",
   "variantId": "apple-macbook-air-15-m5~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33480,7 +40274,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o482",
+  "id": "o599",
   "variantId": "apple-macbook-air-15-m5~v3",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33494,7 +40288,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o483",
+  "id": "o600",
   "variantId": "apple-macbook-pro-14-m5~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33508,7 +40302,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o484",
+  "id": "o601",
   "variantId": "apple-macbook-pro-14-m5~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33522,7 +40316,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o485",
+  "id": "o602",
   "variantId": "apple-macbook-pro-14-m5~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -33536,7 +40330,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o486",
+  "id": "o603",
   "variantId": "apple-macbook-pro-14-m5~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33550,7 +40344,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o487",
+  "id": "o604",
   "variantId": "apple-macbook-pro-14-m5~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33564,7 +40358,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o488",
+  "id": "o605",
   "variantId": "apple-macbook-pro-14-m5~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33578,7 +40372,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o489",
+  "id": "o606",
   "variantId": "apple-macbook-pro-14-m5~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33592,7 +40386,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o490",
+  "id": "o607",
   "variantId": "apple-macbook-pro-14-m5~v3",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33606,7 +40400,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o491",
+  "id": "o608",
   "variantId": "apple-macbook-pro-14-m5~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33620,7 +40414,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o492",
+  "id": "o609",
   "variantId": "apple-macbook-pro-14-m5~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33634,7 +40428,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o493",
+  "id": "o610",
   "variantId": "apple-macbook-pro-14-m5~v3",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33648,7 +40442,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o494",
+  "id": "o611",
   "variantId": "apple-macbook-pro-14-m5-pro~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33662,7 +40456,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o495",
+  "id": "o612",
   "variantId": "apple-macbook-pro-14-m5-pro~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33676,7 +40470,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o496",
+  "id": "o613",
   "variantId": "apple-macbook-pro-14-m5-pro~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33690,7 +40484,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o497",
+  "id": "o614",
   "variantId": "apple-macbook-pro-14-m5-pro~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33704,7 +40498,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o498",
+  "id": "o615",
   "variantId": "apple-macbook-pro-14-m5-pro~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33718,7 +40512,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o499",
+  "id": "o616",
   "variantId": "apple-macbook-pro-14-m5-pro~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33732,7 +40526,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o500",
+  "id": "o617",
   "variantId": "apple-macbook-pro-14-m5-max~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33746,7 +40540,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o501",
+  "id": "o618",
   "variantId": "apple-macbook-pro-14-m5-max~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33760,7 +40554,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o502",
+  "id": "o619",
   "variantId": "apple-macbook-pro-16-m5-pro~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33774,7 +40568,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o503",
+  "id": "o620",
   "variantId": "apple-macbook-pro-16-m5-pro~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33788,7 +40582,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o504",
+  "id": "o621",
   "variantId": "apple-macbook-pro-16-m5-pro~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33802,7 +40596,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o505",
+  "id": "o622",
   "variantId": "apple-macbook-pro-16-m5-pro~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33816,7 +40610,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o506",
+  "id": "o623",
   "variantId": "apple-macbook-pro-16-m5-pro~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33830,7 +40624,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o507",
+  "id": "o624",
   "variantId": "apple-macbook-pro-16-m5-pro~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33844,7 +40638,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o508",
+  "id": "o625",
   "variantId": "apple-macbook-pro-16-m5-max~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33858,7 +40652,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o509",
+  "id": "o626",
   "variantId": "apple-macbook-pro-16-m5-max~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33872,7 +40666,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o510",
+  "id": "o627",
   "variantId": "apple-macbook-pro-16-m5-max~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33886,7 +40680,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o511",
+  "id": "o628",
   "variantId": "apple-macbook-pro-16-m5-max~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33900,7 +40694,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o512",
+  "id": "o629",
   "variantId": "apple-macbook-pro-16-m5-max~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33914,7 +40708,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o513",
+  "id": "o630",
   "variantId": "apple-imac-24-m4~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33928,7 +40722,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o514",
+  "id": "o631",
   "variantId": "apple-imac-24-m4~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33942,7 +40736,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o515",
+  "id": "o632",
   "variantId": "apple-imac-24-m4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -33956,7 +40750,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o516",
+  "id": "o633",
   "variantId": "apple-imac-24-m4~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -33970,7 +40764,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o517",
+  "id": "o634",
   "variantId": "apple-imac-24-m4~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -33984,7 +40778,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o518",
+  "id": "o635",
   "variantId": "apple-imac-24-m4~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -33998,7 +40792,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o519",
+  "id": "o636",
   "variantId": "apple-imac-24-m4~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34012,7 +40806,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o520",
+  "id": "o637",
   "variantId": "apple-imac-24-m4~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34026,7 +40820,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o521",
+  "id": "o638",
   "variantId": "apple-imac-24-m4~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34040,7 +40834,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o522",
+  "id": "o639",
   "variantId": "apple-imac-24-m4~v3",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34054,7 +40848,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o523",
+  "id": "o640",
   "variantId": "apple-imac-24-m4~v3",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34068,7 +40862,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o524",
+  "id": "o641",
   "variantId": "apple-mac-mini-m6~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -34082,7 +40876,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o525",
+  "id": "o642",
   "variantId": "apple-mac-mini-m6~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34096,7 +40890,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o526",
+  "id": "o643",
   "variantId": "apple-mac-mini-m6~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34110,7 +40904,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o527",
+  "id": "o644",
   "variantId": "apple-mac-mini-m6~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -34124,7 +40918,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o528",
+  "id": "o645",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -34138,7 +40932,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o529",
+  "id": "o646",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34152,7 +40946,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o530",
+  "id": "o647",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34166,7 +40960,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o531",
+  "id": "o648",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34180,7 +40974,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o532",
+  "id": "o649",
   "variantId": "apple-mac-mini-m6~v2",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -34194,7 +40988,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o533",
+  "id": "o650",
   "variantId": "apple-mac-mini-m6~v3",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34208,7 +41002,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o534",
+  "id": "o651",
   "variantId": "apple-mac-mini-m6~v3",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -34222,7 +41016,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o535",
+  "id": "o652",
   "variantId": "apple-mac-mini-m5-pro~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34236,7 +41030,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o536",
+  "id": "o653",
   "variantId": "apple-mac-mini-m5-pro~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34250,7 +41044,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o537",
+  "id": "o654",
   "variantId": "apple-mac-mini-m5-pro~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -34264,7 +41058,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o538",
+  "id": "o655",
   "variantId": "apple-mac-studio-m5-max~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -34278,7 +41072,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o539",
+  "id": "o656",
   "variantId": "apple-mac-studio-m5-max~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34292,7 +41086,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o540",
+  "id": "o657",
   "variantId": "apple-mac-studio-m5-max~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34306,7 +41100,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o541",
+  "id": "o658",
   "variantId": "apple-mac-studio-m5-max~v1",
   "sellerId": "executivemachines.com",
   "condition": "official",
@@ -34320,7 +41114,2387 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o542",
+  "id": "o659",
+  "variantId": "essence-lash-princess-false-lash-effect-mascara~v1",
+  "sellerId": "alzakbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": 950,
+  "inStock": true,
+  "url": "https://alzakbd.com/product/essence-lash-princess-false-lash-mascara/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o660",
+  "variantId": "essence-lash-princess-false-lash-effect-mascara~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 550,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/57979/essence-lash-princess-false-lash-effect-mascara",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o661",
+  "variantId": "essence-lash-princess-false-lash-effect-mascara~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": 800,
+  "inStock": true,
+  "url": "https://bdamajanshop.com/product/essence-lash-princess-false-lash-effect-mascara/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o662",
+  "variantId": "essence-lash-princess-false-lash-effect-mascara~v1",
+  "sellerId": "beautybooth.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 750,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beautybooth.com.bd/product/essence-lash-princess-false-lash-effect-mascara-12ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o663",
+  "variantId": "essence-lash-princess-false-lash-effect-mascara~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 550,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/essence-lash-princess-false-lash-effect-mascara/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o664",
+  "variantId": "essence-lash-princess-false-lash-effect-mascara~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 620,
+  "oldPrice": 630,
+  "inStock": true,
+  "url": "https://chardike.com/product/essence-lash-princess-false-lash-effect-mascara-12ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o665",
+  "variantId": "essence-lash-princess-false-lash-effect-mascara~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": 850,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/essence-lash-princess-false-lash-effect-mascara-12ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o666",
+  "variantId": "essence-lash-princess-false-lash-effect-mascara~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 600,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/essence-lash-princess-false-lash-effect-mascara",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o667",
+  "variantId": "essence-lash-princess-false-lash-effect-mascara~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 620,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/essence-lash-princess-false-lash-effect-mascara-12ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o668",
+  "variantId": "essence-lash-princess-false-lash-effect-mascara~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 530,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/essence-lash-princess-false-lash-mascara",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o669",
+  "variantId": "essence-lash-princess-false-lash-effect-mascara~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 749,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/essence-lash-princess-false-lash-mascara",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o670",
+  "variantId": "essence-lash-princess-false-lash-effect-mascara~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 640,
+  "oldPrice": 750,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/essence-lash-princess-false-lash-effect-mascara-12ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o671",
+  "variantId": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+  "sellerId": "alzakbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": 950,
+  "inStock": true,
+  "url": "https://alzakbd.com/product/essence-lash-princess-false-lash-effect-mascara-waterproof/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o672",
+  "variantId": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/63495/essence-lash-princess-false-lash-effect-waterproof-mascara",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o673",
+  "variantId": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://bdamajanshop.com/product/essence-lash-princess-false-lash-effect-waterproof-mascara-12ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o674",
+  "variantId": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+  "sellerId": "beautybooth.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beautybooth.com.bd/product/essence-lash-princess-false-lash-effect-waterproof-mascara-12ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o675",
+  "variantId": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 550,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/essence-lash-princess-false-lash-effect-waterproof-mascara/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o676",
+  "variantId": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://chardike.com/product/essence-lash-princess-false-lash-effect-mascara-waterproof-12ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o677",
+  "variantId": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": 850,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/essence-lash-princess-false-lash-effect-mascara-waterproof-12ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o678",
+  "variantId": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 600,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.emartwayskincare.com.bd/essence-lash-princess-false-lash-effect-mascara-waterproof",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o679",
+  "variantId": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 600,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/essence-lash-princess-falsh-lash-effect-waterproof-mascara-12ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o680",
+  "variantId": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 530,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/essence-lash-princess-false-lash-mascara-waterproof",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o681",
+  "variantId": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 749,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/essence-lash-princess-false-lash-effect-mascara-waterproof",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o682",
+  "variantId": "essence-lash-princess-false-lash-effect-waterproof-mascara~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 690,
+  "oldPrice": 750,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/essence-lash-princess-false-lash-effect-mascara-waterproof-12ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o683",
+  "variantId": "essence-i-love-extreme-crazy-volume-mascara~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 575,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.arogga.com/product/55880/essence-i-love-extreme-crazy-volume-mascara-12ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o684",
+  "variantId": "essence-i-love-extreme-crazy-volume-mascara~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": 890,
+  "inStock": true,
+  "url": "https://bdamajanshop.com/product/essence-i-love-extreme-crazy-volume-mascara-12ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o685",
+  "variantId": "essence-i-love-extreme-crazy-volume-mascara~v1",
+  "sellerId": "beautybooth.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 650,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beautybooth.com.bd/product/essence-i-love-extreme-crazy-volume-mascara",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o686",
+  "variantId": "essence-i-love-extreme-crazy-volume-mascara~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 480,
+  "oldPrice": 600,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/essence-i-love-extreme-crazy-volume-mascara/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o687",
+  "variantId": "essence-i-love-extreme-crazy-volume-mascara~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 550,
+  "oldPrice": 800,
+  "inStock": true,
+  "url": "https://chardike.com/product/essence-i-love-extreme-crazy-volume-mascara-12ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o688",
+  "variantId": "essence-i-love-extreme-crazy-volume-mascara~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 590,
+  "oldPrice": 850,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/essence-i-love-extreme-crazy-volume-mascara-12ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o689",
+  "variantId": "essence-i-love-extreme-crazy-volume-mascara~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 520,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/essence-i-love-extreme-crazy-volume-mascara-12ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o690",
+  "variantId": "essence-i-love-extreme-crazy-volume-mascara~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 598,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/essence-i-love-extreme-crazy-volume-mascara-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o691",
+  "variantId": "essence-i-love-extreme-crazy-volume-mascara~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 530,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.ohsogo.com/products/essence-i-love-extreme-crazy-volume-mascara-12ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o692",
+  "variantId": "essence-i-love-extreme-crazy-volume-mascara~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 540,
+  "oldPrice": 600,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/essence-i-love-extreme-crazy-volume-mascara",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o693",
+  "variantId": "essence-i-love-extreme-crazy-volume-mascara~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 699,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/essence-i-love-extreme-crazy-volume-mascara",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o694",
+  "variantId": "essence-i-love-extreme-crazy-volume-mascara~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 640,
+  "oldPrice": 750,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/essence-i-love-extreme-crazy-volume-mascara-12ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o695",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "alzakbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": 550,
+  "inStock": true,
+  "url": "https://alzakbd.com/product/maybelline-new-york-colossal-kajal/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o696",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 345,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/56248/maybelline-new-york-the-colossal-deep-black-smudge-proof-waterproof-kajal-with-soothing-aloe-vera-vitamin-c-e",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o697",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 450,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://bdamajanshop.com/product/maybelline-colossal-kohl-kajal-24h-deep-black-smudge-resistant/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o698",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "beautybooth.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 450,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beautybooth.com.bd/product/maybelline-new-york-the-colossal-kajal-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o699",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 390,
+  "oldPrice": 440,
+  "inStock": false,
+  "url": "https://chardike.com/product/maybelline-colossal-kohl-kajal-24h-black-035g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o700",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": 450,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/maybelline-colossal-kohl-kajal-24h-black-0-35gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o701",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 399,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/Maybelline-Colossal-Kohl-Kajal-24H-Black-bMplR",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o702",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 300,
+  "oldPrice": 580,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/mabelline-colossal-kajal-deep-black/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o703",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/maybelline-the-colossal-kajal-deep-black-0-35g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o704",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": 400,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/maybelline-colossal-kohl-kajal-24h",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o705",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 370,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/maybelline-colossal-kohl-kajal-24h-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o706",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "skinrevivebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": 500,
+  "inStock": true,
+  "url": "https://skinrevivebd.com/product/maybelline-colossal-kohl-kajal-24h-black/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o707",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 380,
+  "oldPrice": 450,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/maybelline-colossal-kohl-kajal-24h-black-0-35gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o708",
+  "variantId": "maybelline-colossal-kajal~v1",
+  "sellerId": "ukdirectbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 490,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ukdirectbd.com/product/maybelline-colossal-kohl-kajal-24h-black-bold-smudge-resistant-eyeliner/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o709",
+  "variantId": "maybelline-lash-sensational-sky-high-mascara~v1",
+  "sellerId": "alzakbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1450,
+  "oldPrice": 2250,
+  "inStock": false,
+  "url": "https://alzakbd.com/product/maybelline-lash-sensational-sky-high-mascara-true-brown/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o710",
+  "variantId": "maybelline-lash-sensational-sky-high-mascara~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 1090,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://bdamajanshop.com/product/maybelline-lash-sensational-sky-high-tinted-primer-mascara-soft-black/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o711",
+  "variantId": "maybelline-lash-sensational-sky-high-mascara~v1",
+  "sellerId": "beautybooth.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1250,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beautybooth.com.bd/product/maybelline-new-york-lash-sensational-sky-high-mascara-black-7-2ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o712",
+  "variantId": "maybelline-lash-sensational-sky-high-mascara~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1220,
+  "oldPrice": 1550,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/maybelline-lash-sensational-sky-high-mascara-very-black-801/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o713",
+  "variantId": "maybelline-lash-sensational-sky-high-mascara~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1798,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/maybelline-lash-sensational-sky-high-mascara-01-very-black-7-2ml-JkV4f",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o714",
+  "variantId": "maybelline-lash-sensational-sky-high-mascara~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1250,
+  "oldPrice": 1400,
+  "inStock": false,
+  "url": "https://perfectobd.com/product/maybelline-lash-sensational-sky-high-mascara",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o715",
+  "variantId": "maybelline-lash-sensational-sky-high-mascara~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1480,
+  "oldPrice": 1800,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/maybelline-lash-sensational-sky-high-mascara-7-2ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o716",
+  "variantId": "maybelline-lash-sensational-sky-high-mascara~v1",
+  "sellerId": "ukdirectbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1490,
+  "oldPrice": 1850,
+  "inStock": false,
+  "url": "https://ukdirectbd.com/product/maybelline-new-york-lash-sensational-sky-high-washable-mascara-6ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o717",
+  "variantId": "lakme-eyeconic-kajal~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 390,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://bdamajanshop.com/product/lakme-eyeconic-kajal-deep-black-0-35gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o718",
+  "variantId": "lakme-eyeconic-kajal~v1",
+  "sellerId": "beautybooth.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 400,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beautybooth.com.bd/product/lakme-eyeconic-kajal-deep-black-035gm",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o719",
+  "variantId": "lakme-eyeconic-kajal~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 390,
+  "oldPrice": 450,
+  "inStock": false,
+  "url": "https://colorworld.com.bd/product/lakme-9to5-eyeconic-kajal-deep-black-0-35g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o720",
+  "variantId": "lakme-eyeconic-kajal~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 550,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/Lakm-Eyeconic-Kajal-Black-035g-Original-BuXmy",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o721",
+  "variantId": "lakme-eyeconic-kajal~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 340,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/lakme-9to5-eyeconic-kajal-deep-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o722",
+  "variantId": "lakme-eyeconic-kajal~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 375,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/lakme-eyeconic-kajal-deep-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o723",
+  "variantId": "lakme-eyeconic-kajal~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 380,
+  "oldPrice": 550,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/lakme-eyeconic-kajal-deep-black/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o724",
+  "variantId": "lakme-eyeconic-kajal~v1",
+  "sellerId": "ukdirectbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://ukdirectbd.com/product/lakme-eyeconic-kajal-deep-black-0-35gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o725",
+  "variantId": "w7-liquid-eyeliner-pot~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 290,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/55886/w7-liquid-eyeliner-pot",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o726",
+  "variantId": "w7-liquid-eyeliner-pot~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 240,
+  "oldPrice": 450,
+  "inStock": true,
+  "url": "https://bdamajanshop.com/product/w7-liquid-eyeliner-pot-8ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o727",
+  "variantId": "w7-liquid-eyeliner-pot~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 250,
+  "oldPrice": 350,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/w7-liquid-eyeliner-pot/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o728",
+  "variantId": "w7-liquid-eyeliner-pot~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 275,
+  "oldPrice": 425,
+  "inStock": true,
+  "url": "https://chardike.com/product/w7-liquid-eyeliner-pot-8g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o729",
+  "variantId": "w7-liquid-eyeliner-pot~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 270,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/w7-liquid-eyeliner-pot",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o730",
+  "variantId": "w7-liquid-eyeliner-pot~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 250,
+  "oldPrice": 450,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/w7-liquid-eyeliner-pot/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o731",
+  "variantId": "w7-liquid-eyeliner-pot~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 290,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/w7-liquid-eyeliner-pot-black-8g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o732",
+  "variantId": "w7-liquid-eyeliner-pot~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 225,
+  "oldPrice": 350,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/w7-liquid-eyeliner-pot",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o733",
+  "variantId": "w7-liquid-eyeliner-pot~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 249,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/w7-liquid-eyeliner-pot",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o734",
+  "variantId": "w7-liquid-eyeliner-pot~v1",
+  "sellerId": "skinrevivebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 290,
+  "oldPrice": 390,
+  "inStock": true,
+  "url": "https://skinrevivebd.com/product/w7-liquid-eyeliner-pot-8ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o735",
+  "variantId": "w7-liquid-eyeliner-pot~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 390,
+  "oldPrice": 430,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/w7-liquid-eyeliner-pot-8gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o736",
+  "variantId": "technic-mega-lash-water-resistant-mascara~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 337,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/56623/technic-mega-lash-water-resistant-mascara-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o737",
+  "variantId": "technic-mega-lash-water-resistant-mascara~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 450,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://bdamajanshop.com/product/technic-mega-lash-water-resistant-mascara-12ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o738",
+  "variantId": "technic-mega-lash-water-resistant-mascara~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": 450,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/technic-megalash-water-resistant-mascara/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o739",
+  "variantId": "technic-mega-lash-water-resistant-mascara~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 349,
+  "oldPrice": 550,
+  "inStock": true,
+  "url": "https://chardike.com/product/technic-mega-lash-water-resistant-mascara-12ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o740",
+  "variantId": "technic-mega-lash-water-resistant-mascara~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 399,
+  "oldPrice": 480,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/technic-mega-lash-water-resistant-mascara-12ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o741",
+  "variantId": "technic-mega-lash-water-resistant-mascara~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 340,
+  "oldPrice": 500,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/technic-mega-lash-water-resistant-mascara-black/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o742",
+  "variantId": "technic-mega-lash-water-resistant-mascara~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 420,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.ohsogo.com/products/technic-mega-lash-water-resistant-mascara-12ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o743",
+  "variantId": "technic-mega-lash-water-resistant-mascara~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 320,
+  "oldPrice": 350,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/technic-mega-lash-water-resistant-mascara-blue-packaging",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o744",
+  "variantId": "technic-mega-lash-water-resistant-mascara~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 550,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://shop.shajgoj.com/product/technic-mega-lash-waterproof-mascara",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o745",
+  "variantId": "technic-mega-lash-water-resistant-mascara~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 450,
+  "oldPrice": 550,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/technic-mega-lash-water-resistant-mascara-12ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o746",
+  "variantId": "technic-mega-lash-volumising-mascara~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 345,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/56628/technic-mega-lash-mega-volumising-mascara-black",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o747",
+  "variantId": "technic-mega-lash-volumising-mascara~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 399,
+  "oldPrice": 480,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/technic-mega-lash-volumizing-mascara-black-14ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o748",
+  "variantId": "technic-mega-lash-volumising-mascara~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 399,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/technic-mega-lash-volumising-mascara-14ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o749",
+  "variantId": "technic-mega-lash-volumising-mascara~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 320,
+  "oldPrice": 350,
+  "inStock": false,
+  "url": "https://perfectobd.com/product/technic-mega-lash-mega-volumising-mascara-black-packaging",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o750",
+  "variantId": "technic-mega-lash-volumising-mascara~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 550,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://shop.shajgoj.com/product/technic-mega-lash-volumising-mascara",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o751",
+  "variantId": "technic-mega-lash-volumising-mascara~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 450,
+  "oldPrice": 550,
+  "inStock": false,
+  "url": "https://skincareshop.com.bd/product/technic-mega-lash-volumising-mascara-14-ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o752",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "alzakbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 299,
+  "oldPrice": 450,
+  "inStock": false,
+  "url": "https://alzakbd.com/product/ivory-ponds-instant-coverage-glow-bb-cream-18g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o753",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 299,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/55884/pond-s-bright-miracle-ivory-light-foundation-bb-cream-with-3-niacinamide-spf-30-pa-18g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o754",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 220,
+  "oldPrice": 490,
+  "inStock": true,
+  "url": "https://bdamajanshop.com/product/ponds-bb-cream-ivory/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o755",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "beautybooth.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beautybooth.com.bd/product/ponds-bb-cream-with-spf-30-pa-ivory-18-gm",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o756",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 300,
+  "oldPrice": 400,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/ponds-bright-miracle-light-foundation-cream-bb-cream-with-3-niacinamide-ivory-18g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o757",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 310,
+  "oldPrice": 450,
+  "inStock": true,
+  "url": "https://chardike.com/product/ponds-bright-miracle-ivory-light-foundation-bb-cream-with-3-niacinamide-spf-30-pa-18g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o758",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 375,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/ponds-bright-miracle-light-foundation-bb-cream-with-3-niacinamide-spf-30-pa-ivory-18g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o759",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": 450,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/ponds-bb-cream-instant-spot-coverage-light-make-up-glow-ivory-18g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o760",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/Ponds-BB-Cream-SPF-30-PA-18g--Ivory-hYNaA",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o761",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 299,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.ohsogo.com/products/ponds-ivory-spf30pa-bb-cream-18gm",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o762",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 270,
+  "oldPrice": 300,
+  "inStock": true,
+  "url": "https://perfectobd.com/product/ponds-bb-cream-instant-spot-coverage-shade-ivory",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o763",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": 400,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/ponds-bb-cream-instant-spot-coverage-light-make-up-glow-ivory-18gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o764",
+  "variantId": "ponds-bright-miracle-bb-cream~v1",
+  "sellerId": "ukdirectbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 400,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ukdirectbd.com/product/ponds-bb-cream-instant-spot-coverage-light-make-up-glow-ivory/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o765",
+  "variantId": "maybelline-baby-lips-color-lip-balm-spf11~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 310,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/52191/maybelline-new-york-baby-lips-color-lip-balm-pink-lolita-spf-11",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o766",
+  "variantId": "maybelline-baby-lips-color-lip-balm-spf11~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 390,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://bdamajanshop.com/product/maybelline-baby-lips-color-lip-balm-pink-lolita/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o767",
+  "variantId": "maybelline-baby-lips-color-lip-balm-spf11~v1",
+  "sellerId": "beautybooth.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 450,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beautybooth.com.bd/product/maybelline-new-york-baby-lips-color-lip-blam-berry-crush-spf-11-4ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o768",
+  "variantId": "maybelline-baby-lips-color-lip-balm-spf11~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 350,
+  "oldPrice": 480,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/maybelline-baby-lips-color-lip-balm-pink-lolita/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o769",
+  "variantId": "maybelline-baby-lips-color-lip-balm-spf11~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 390,
+  "oldPrice": 530,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/maybelline-baby-lips-color-lip-balm-spf11-cherry-kiss-4g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o770",
+  "variantId": "maybelline-baby-lips-color-lip-balm-spf11~v1",
+  "sellerId": "glowellabd.com",
+  "condition": "official",
+  "region": null,
+  "price": 300,
+  "oldPrice": 500,
+  "inStock": true,
+  "url": "https://glowellabd.com/product/maybelline-baby-lips-color-lip-balm-pink-lolita/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o771",
+  "variantId": "maybelline-baby-lips-color-lip-balm-spf11~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 410,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/Maybelline-Baby-Lips-Color-Lip-Balm-Spf11-8s8fv",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o772",
+  "variantId": "maybelline-baby-lips-color-lip-balm-spf11~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 325,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/maybelline-baby-lips-color-lip-balm-spf11-pink-lolita",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o773",
+  "variantId": "maybelline-baby-lips-color-lip-balm-spf11~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 385,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/maybelline-baby-lips-color-spf11-lip-balm-pink-lolita",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o774",
+  "variantId": "maybelline-baby-lips-color-lip-balm-spf11~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 390,
+  "oldPrice": 450,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/maybelline-baby-lips-color-24hr-spf11-lip-balm-cherry-kiss-4gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o775",
+  "variantId": "maybelline-baby-lips-color-lip-balm-spf11~v1",
+  "sellerId": "ukdirectbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 450,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ukdirectbd.com/product/maybelline-new-york-baby-lips-color-lip-balm-berry-crush-spf-11/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o776",
+  "variantId": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick~v1",
+  "sellerId": "alzakbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 399,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://alzakbd.com/product/give-me-mocha-wet-n-wild-megalast-liquid-catsuit-matte-lipstick-2/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o777",
+  "variantId": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 390,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/55916/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-missy-fierce-e930b",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o778",
+  "variantId": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 490,
+  "oldPrice": 580,
+  "inStock": true,
+  "url": "https://bdamajanshop.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-rebel-rose/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o779",
+  "variantId": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 400,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://chardike.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-nice-to-fuchsia-6g",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o780",
+  "variantId": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 499,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/wet-n-wild-megalast-liquid-matte-lipstick-925b-give-me-mocha/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o781",
+  "variantId": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 585,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/wet-n-wild-megalast-liquid-matte-lipstick-925b-give-me-mocha",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o782",
+  "variantId": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-give-me-mocha",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o783",
+  "variantId": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick~v1",
+  "sellerId": "skinrevivebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 490,
+  "oldPrice": 600,
+  "inStock": true,
+  "url": "https://skinrevivebd.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-rebel-rose-6gm/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o784",
+  "variantId": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 550,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://skincareshop.com.bd/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-missy-and-fierce/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o785",
+  "variantId": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick~v1",
+  "sellerId": "ukdirectbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 590,
+  "oldPrice": 650,
+  "inStock": true,
+  "url": "https://ukdirectbd.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-give-me-mocha/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o786",
+  "variantId": "wet-n-wild-photo-focus-dewy-foundation~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 850,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://bdamajanshop.com/product/wet-n-wild-photo-focus-dewy-foundation-golden-beige/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o787",
+  "variantId": "wet-n-wild-photo-focus-dewy-foundation~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 820,
+  "oldPrice": 950,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/wet-n-wild-photo-focus-foundation-dewy-lumineux/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o788",
+  "variantId": "wet-n-wild-photo-focus-dewy-foundation~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 775,
+  "oldPrice": 1050,
+  "inStock": false,
+  "url": "https://chardike.com/product/wet-n-wild-photo-focus-dewy-foundation-golden-beige-28ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o789",
+  "variantId": "wet-n-wild-photo-focus-dewy-foundation~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 790,
+  "oldPrice": 980,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/wet-n-wild-photo-focus-dewy-foundation-soft-beige-28ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o790",
+  "variantId": "wet-n-wild-photo-focus-dewy-foundation~v1",
+  "sellerId": "liraimportltd.com",
+  "condition": "official",
+  "region": null,
+  "price": 784,
+  "oldPrice": 980,
+  "inStock": true,
+  "url": "https://liraimportltd.com/product/wet-n-wild-photo-focus-dewy-foundation-desert-beige/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o791",
+  "variantId": "wet-n-wild-photo-focus-dewy-foundation~v1",
+  "sellerId": "skinrevivebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 780,
+  "oldPrice": 880,
+  "inStock": true,
+  "url": "https://skinrevivebd.com/product/wet-n-wild-photo-focus-foundation-dewy-desert-beige28ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o792",
+  "variantId": "wet-n-wild-photo-focus-dewy-foundation~v1",
+  "sellerId": "ukdirectbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 990,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ukdirectbd.com/product/wet-n-wild-photo-focus-foundation-dewy-lumineux/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o793",
+  "variantId": "wet-n-wild-photo-focus-matte-foundation~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 950,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://bdamajanshop.com/product/wet-n-wild-photo-focus-foundation-soft-beige/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o794",
+  "variantId": "wet-n-wild-photo-focus-matte-foundation~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 720,
+  "oldPrice": 950,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/wet-n-wild-photo-focus-foundation-matte/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o795",
+  "variantId": "wet-n-wild-photo-focus-matte-foundation~v1",
+  "sellerId": "ohsogo.com",
+  "condition": "official",
+  "region": null,
+  "price": 690,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.ohsogo.com/products/wet-n-wild-photofocus-foundation-30ml-desert-beige",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o796",
+  "variantId": "wet-n-wild-photo-focus-matte-foundation~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 599,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/wet-n-wild-photo-focus-foundation",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o797",
+  "variantId": "wet-n-wild-photo-focus-matte-foundation~v1",
+  "sellerId": "ukdirectbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 890,
+  "oldPrice": 990,
+  "inStock": true,
+  "url": "https://ukdirectbd.com/product/wet-n-wild-photo-focus-matte-foundation-soft-beige/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o798",
+  "variantId": "maybelline-superstay-matte-ink-liquid-lipstick~v1",
+  "sellerId": "alzakbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1250,
+  "oldPrice": 2450,
+  "inStock": true,
+  "url": "https://alzakbd.com/product/ruler-80-maybelline-superstay-matte-ink-liquid-lipstick/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o799",
+  "variantId": "maybelline-superstay-matte-ink-liquid-lipstick~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 790,
+  "oldPrice": 950,
+  "inStock": true,
+  "url": "https://bdamajanshop.com/product/maybelline-superstay-matte-ink-liquid-lipstick-10-dreamer/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o800",
+  "variantId": "maybelline-superstay-matte-ink-liquid-lipstick~v1",
+  "sellerId": "beautybooth.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1100,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beautybooth.com.bd/product/maybelline-new-york-super-stay-matte-ink-liquid-lipstick-115-founder-5ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o801",
+  "variantId": "maybelline-superstay-matte-ink-liquid-lipstick~v1",
+  "sellerId": "chardike.com",
+  "condition": "official",
+  "region": null,
+  "price": 1120,
+  "oldPrice": 1150,
+  "inStock": false,
+  "url": "https://chardike.com/product/maybelline-superstay-matte-ink-liquid-lipstick-50-voyager-5ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o802",
+  "variantId": "maybelline-superstay-matte-ink-liquid-lipstick~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1350,
+  "oldPrice": 1650,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/maybelline-superstay-matte-ink-liquid-lipstick-70-amazonian/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o803",
+  "variantId": "maybelline-superstay-matte-ink-liquid-lipstick~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1148,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/maybelline-super-stay-matte-ink-liquid-lipstick-340-exhilarator-5ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o804",
+  "variantId": "maybelline-superstay-matte-ink-liquid-lipstick~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1350,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://shop.shajgoj.com/product/maybelline-new-york-super-stay-matte-ink-liquid-lipstick-40-believer",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o805",
+  "variantId": "maybelline-superstay-matte-ink-liquid-lipstick~v1",
+  "sellerId": "skincareshop.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1140,
+  "oldPrice": 1400,
+  "inStock": false,
+  "url": "https://skincareshop.com.bd/product/maybelline-superstay-matte-ink-liquid-lipstick-5ml-325-shot-caller/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o806",
+  "variantId": "maybelline-superstay-matte-ink-liquid-lipstick~v1",
+  "sellerId": "ukdirectbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1550,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://ukdirectbd.com/product/maybelline-new-york-super-stay-matte-ink-330-innovator/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o807",
+  "variantId": "maybelline-superstay-vinyl-ink-liquid-lipstick~v1",
+  "sellerId": "alzakbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1250,
+  "oldPrice": 2450,
+  "inStock": true,
+  "url": "https://alzakbd.com/product/lippy-10-maybelline-super-stay-vinyl-ink-liquid-lipcolor-3/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o808",
+  "variantId": "maybelline-superstay-vinyl-ink-liquid-lipstick~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1150,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.arogga.com/product/63333/maybelline-new-york-superstay-vinyl-ink-liquid-lipstick-30-unrivaled",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o809",
+  "variantId": "maybelline-superstay-vinyl-ink-liquid-lipstick~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 1060,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://bdamajanshop.com/product/maybelline-super-stay-vinyl-ink-liquid-lipstick-15-peachy/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o810",
+  "variantId": "maybelline-superstay-vinyl-ink-liquid-lipstick~v1",
+  "sellerId": "beautybooth.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1250,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beautybooth.com.bd/product/maybelline-new-york-superstay-vinyl-ink-lipstick-50-wicked-4-2ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o811",
+  "variantId": "maybelline-superstay-vinyl-ink-liquid-lipstick~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1180,
+  "oldPrice": 1350,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/maybelline-super-stay-vinyl-ink-longwear-liquid-lipstick/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o812",
+  "variantId": "maybelline-superstay-vinyl-ink-liquid-lipstick~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1650,
+  "oldPrice": 2050,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/maybelline-superstay-vinyl-ink-liquid-lipstick-15-peachy/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o813",
+  "variantId": "maybelline-superstay-vinyl-ink-liquid-lipstick~v1",
+  "sellerId": "emartwayskincare.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1183,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.emartwayskincare.com.bd/maybelline-super-stay-vinyl-ink-long-wear-liquid-lipstick-68-hypnotic-4-2ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o814",
+  "variantId": "maybelline-superstay-vinyl-ink-liquid-lipstick~v1",
+  "sellerId": "perfectobd.com",
+  "condition": "official",
+  "region": null,
+  "price": 800,
+  "oldPrice": 1400,
+  "inStock": false,
+  "url": "https://perfectobd.com/product/maybelline-super-stay-vinyl-ink-liquid-lipstick",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o815",
+  "variantId": "maybelline-superstay-vinyl-ink-liquid-lipstick~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1650,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://shop.shajgoj.com/product/maybelline-new-york-super-stay-vinyl-ink-liquid-lipstick-130-extra",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o816",
+  "variantId": "maybelline-fit-me-matte-poreless-foundation~v1",
+  "sellerId": "alzakbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1050,
+  "oldPrice": 1250,
+  "inStock": false,
+  "url": "https://alzakbd.com/product/maybelline-fit-me-matte-poreless-liquid-foundation-true-beige-222/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o817",
+  "variantId": "maybelline-fit-me-matte-poreless-foundation~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 969,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/76706/maybelline-new-york-fit-me-matte-poreless-16h-foundation-shade-115",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o818",
+  "variantId": "maybelline-fit-me-matte-poreless-foundation~v1",
+  "sellerId": "bdamajanshop.com",
+  "condition": "official",
+  "region": null,
+  "price": 910,
+  "oldPrice": 1250,
+  "inStock": false,
+  "url": "https://bdamajanshop.com/product/maybelline-fit-me-matte-poreless-foundation-warm-nude-128/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o819",
+  "variantId": "maybelline-fit-me-matte-poreless-foundation~v1",
+  "sellerId": "beautybooth.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1350,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beautybooth.com.bd/product/maybelline-fit-me-matte-poreless-foundation-110-porcelain-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o820",
+  "variantId": "maybelline-fit-me-matte-poreless-foundation~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": "India",
+  "price": 980,
+  "oldPrice": 1250,
+  "inStock": true,
+  "url": "https://beprincessbd.com/product/maybelline-fit-me-matte-poreless-foundation-made-in-india/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o821",
+  "variantId": "maybelline-fit-me-matte-poreless-foundation~v1",
+  "sellerId": "klassy.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1180,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://klassy.com.bd/product/maybelline-fit-me-matte-poreless-liquid-foundation-16h-oil-control-with-spf-22-30ml-7pvfg",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o822",
+  "variantId": "maybelline-fit-me-matte-poreless-foundation~v1",
+  "sellerId": "shop.shajgoj.com",
+  "condition": "official",
+  "region": null,
+  "price": 1080,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://shop.shajgoj.com/product/maybelline-fit-me-matte-poreless-foundation-soft-tan-228",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o823",
+  "variantId": "maybelline-fit-me-matte-poreless-foundation~v1",
+  "sellerId": "skinrevivebd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1250,
+  "oldPrice": 1500,
+  "inStock": true,
+  "url": "https://skinrevivebd.com/product/maybelline-fit-me-matte-poreless-foundation-natural-beige-220/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o824",
+  "variantId": "maybelline-fit-me-matte-poreless-foundation~v1",
+  "sellerId": "ukdirectbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 990,
+  "oldPrice": 1190,
+  "inStock": true,
+  "url": "https://ukdirectbd.com/product/maybelline-fit-me-matte-poreless-foundation-ivory-115/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o825",
+  "variantId": "lor-al-paris-infallible-32h-fresh-wear-foundation~v1",
+  "sellerId": "arogga.com",
+  "condition": "official",
+  "region": null,
+  "price": 1795,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.arogga.com/product/86083/loreal-paris-infallible-fresh-wear-32h-liquid-foundation-in-shade-420-true-beige-30ml",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o826",
+  "variantId": "lor-al-paris-infallible-32h-fresh-wear-foundation~v1",
+  "sellerId": "beautybooth.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1700,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://beautybooth.com.bd/product/l-oreal-paris-makeup-infallible-fresh-wear-foundation-020-ivory-9gm",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o827",
+  "variantId": "lor-al-paris-infallible-32h-fresh-wear-foundation~v1",
+  "sellerId": "beprincessbd.com",
+  "condition": "official",
+  "region": null,
+  "price": 1680,
+  "oldPrice": 1980,
+  "inStock": false,
+  "url": "https://beprincessbd.com/product/loreal-paris-infallible-32-hour-fresh-wear-foundation-30ml/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o828",
+  "variantId": "lor-al-paris-infallible-32h-fresh-wear-foundation~v1",
+  "sellerId": "colorworld.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1990,
+  "oldPrice": 2450,
+  "inStock": true,
+  "url": "https://colorworld.com.bd/product/loreal-paris-infallible-fresh-wear-32h-liquid-foundation-15-neutral/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o829",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34334,7 +43508,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o543",
+  "id": "o830",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34348,7 +43522,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o544",
+  "id": "o831",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -34362,7 +43536,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o545",
+  "id": "o832",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -34376,7 +43550,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o546",
+  "id": "o833",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -34390,7 +43564,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o547",
+  "id": "o834",
   "variantId": "samsung-galaxy-a07~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -34404,7 +43578,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o548",
+  "id": "o835",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34418,7 +43592,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o549",
+  "id": "o836",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34432,7 +43606,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o550",
+  "id": "o837",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -34446,7 +43620,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o551",
+  "id": "o838",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -34460,7 +43634,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o552",
+  "id": "o839",
   "variantId": "samsung-galaxy-a07~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -34474,7 +43648,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o553",
+  "id": "o840",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34488,7 +43662,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o554",
+  "id": "o841",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34502,7 +43676,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o555",
+  "id": "o842",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -34516,7 +43690,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o556",
+  "id": "o843",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -34530,7 +43704,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o557",
+  "id": "o844",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -34544,7 +43718,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o558",
+  "id": "o845",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34558,7 +43732,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o559",
+  "id": "o846",
   "variantId": "samsung-galaxy-a17-5g~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -34572,7 +43746,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o560",
+  "id": "o847",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34586,7 +43760,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o561",
+  "id": "o848",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -34600,7 +43774,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o562",
+  "id": "o849",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -34614,7 +43788,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o563",
+  "id": "o850",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -34628,7 +43802,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o564",
+  "id": "o851",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34642,7 +43816,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o565",
+  "id": "o852",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34656,7 +43830,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o566",
+  "id": "o853",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -34670,7 +43844,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o567",
+  "id": "o854",
   "variantId": "samsung-galaxy-a17-5g~v2",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -34684,7 +43858,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o568",
+  "id": "o855",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34698,7 +43872,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o569",
+  "id": "o856",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34712,7 +43886,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o570",
+  "id": "o857",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -34726,7 +43900,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o571",
+  "id": "o858",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -34740,7 +43914,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o572",
+  "id": "o859",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -34754,7 +43928,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o573",
+  "id": "o860",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34768,7 +43942,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o574",
+  "id": "o861",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34782,7 +43956,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o575",
+  "id": "o862",
   "variantId": "samsung-galaxy-a57-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -34796,7 +43970,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o576",
+  "id": "o863",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34810,7 +43984,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o577",
+  "id": "o864",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34824,7 +43998,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o578",
+  "id": "o865",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -34838,7 +44012,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o579",
+  "id": "o866",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -34852,7 +44026,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o580",
+  "id": "o867",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -34866,7 +44040,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o581",
+  "id": "o868",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -34880,7 +44054,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o582",
+  "id": "o869",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -34894,7 +44068,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o583",
+  "id": "o870",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -34908,7 +44082,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o584",
+  "id": "o871",
   "variantId": "samsung-galaxy-a57-5g~v2",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -34922,7 +44096,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o585",
+  "id": "o872",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -34936,7 +44110,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o586",
+  "id": "o873",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -34950,7 +44124,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o587",
+  "id": "o874",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -34964,7 +44138,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o588",
+  "id": "o875",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -34978,7 +44152,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o589",
+  "id": "o876",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -34992,7 +44166,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o590",
+  "id": "o877",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -35006,7 +44180,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o591",
+  "id": "o878",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -35020,7 +44194,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o592",
+  "id": "o879",
   "variantId": "xiaomi-redmi-17~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -35034,7 +44208,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o593",
+  "id": "o880",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35048,7 +44222,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o594",
+  "id": "o881",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35062,7 +44236,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o595",
+  "id": "o882",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -35076,7 +44250,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o596",
+  "id": "o883",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -35090,7 +44264,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o597",
+  "id": "o884",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -35104,7 +44278,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o598",
+  "id": "o885",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -35118,7 +44292,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o599",
+  "id": "o886",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -35132,7 +44306,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o600",
+  "id": "o887",
   "variantId": "xiaomi-redmi-17~v2",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -35146,7 +44320,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o601",
+  "id": "o888",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35160,7 +44334,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o602",
+  "id": "o889",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35174,7 +44348,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o603",
+  "id": "o890",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -35188,7 +44362,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o604",
+  "id": "o891",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -35202,7 +44376,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o605",
+  "id": "o892",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -35216,7 +44390,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o606",
+  "id": "o893",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -35230,7 +44404,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o607",
+  "id": "o894",
   "variantId": "xiaomi-redmi-note-17-4g~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -35244,7 +44418,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o608",
+  "id": "o895",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35258,7 +44432,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o609",
+  "id": "o896",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35272,7 +44446,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o610",
+  "id": "o897",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -35286,7 +44460,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o611",
+  "id": "o898",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -35300,7 +44474,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o612",
+  "id": "o899",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -35314,7 +44488,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o613",
+  "id": "o900",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -35328,7 +44502,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o614",
+  "id": "o901",
   "variantId": "xiaomi-redmi-note-17-4g~v2",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -35342,7 +44516,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o615",
+  "id": "o902",
   "variantId": "xiaomi-redmi-note-17-pro-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35356,7 +44530,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o616",
+  "id": "o903",
   "variantId": "xiaomi-redmi-note-17-pro-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35370,7 +44544,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o617",
+  "id": "o904",
   "variantId": "xiaomi-redmi-note-17-pro-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -35384,7 +44558,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o618",
+  "id": "o905",
   "variantId": "xiaomi-redmi-note-17-pro-5g~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -35398,7 +44572,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o619",
+  "id": "o906",
   "variantId": "realme-c100~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35412,7 +44586,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o620",
+  "id": "o907",
   "variantId": "realme-c100~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35426,7 +44600,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o621",
+  "id": "o908",
   "variantId": "realme-c100~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -35440,7 +44614,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o622",
+  "id": "o909",
   "variantId": "realme-c100~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -35454,7 +44628,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o623",
+  "id": "o910",
   "variantId": "realme-c100~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -35468,7 +44642,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o624",
+  "id": "o911",
   "variantId": "realme-c100~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -35482,7 +44656,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o625",
+  "id": "o912",
   "variantId": "realme-c100~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35496,7 +44670,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o626",
+  "id": "o913",
   "variantId": "realme-c100~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35510,7 +44684,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o627",
+  "id": "o914",
   "variantId": "realme-c100~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -35524,7 +44698,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o628",
+  "id": "o915",
   "variantId": "realme-c100~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -35538,7 +44712,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o629",
+  "id": "o916",
   "variantId": "realme-c100~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -35552,7 +44726,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o630",
+  "id": "o917",
   "variantId": "realme-c100~v2",
   "sellerId": "dazzle.com.bd",
   "condition": "official",
@@ -35566,7 +44740,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o631",
+  "id": "o918",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35580,7 +44754,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o632",
+  "id": "o919",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35594,7 +44768,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o633",
+  "id": "o920",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -35608,7 +44782,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o634",
+  "id": "o921",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -35622,7 +44796,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o635",
+  "id": "o922",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -35636,7 +44810,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o636",
+  "id": "o923",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -35650,7 +44824,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o637",
+  "id": "o924",
   "variantId": "realme-15-pro-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -35664,7 +44838,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o638",
+  "id": "o925",
   "variantId": "oppo-a6~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35678,7 +44852,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o639",
+  "id": "o926",
   "variantId": "oppo-a6~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35692,7 +44866,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o640",
+  "id": "o927",
   "variantId": "oppo-a6~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -35706,7 +44880,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o641",
+  "id": "o928",
   "variantId": "oppo-a6~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -35720,7 +44894,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o642",
+  "id": "o929",
   "variantId": "oppo-a6~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -35734,7 +44908,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o643",
+  "id": "o930",
   "variantId": "oppo-a6~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35748,7 +44922,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o644",
+  "id": "o931",
   "variantId": "oppo-a6~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35762,7 +44936,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o645",
+  "id": "o932",
   "variantId": "oppo-a6~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -35776,7 +44950,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o646",
+  "id": "o933",
   "variantId": "oppo-a6~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -35790,7 +44964,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o647",
+  "id": "o934",
   "variantId": "oppo-a6~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -35804,7 +44978,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o648",
+  "id": "o935",
   "variantId": "oppo-reno15-f-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35818,7 +44992,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o649",
+  "id": "o936",
   "variantId": "oppo-reno15-f-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35832,7 +45006,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o650",
+  "id": "o937",
   "variantId": "oppo-reno15-f-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -35846,7 +45020,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o651",
+  "id": "o938",
   "variantId": "vivo-y31d~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35860,7 +45034,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o652",
+  "id": "o939",
   "variantId": "vivo-y31d~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35874,7 +45048,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o653",
+  "id": "o940",
   "variantId": "vivo-y31d~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -35888,7 +45062,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o654",
+  "id": "o941",
   "variantId": "vivo-y31d~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -35902,7 +45076,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o655",
+  "id": "o942",
   "variantId": "vivo-y31d~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35916,7 +45090,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o656",
+  "id": "o943",
   "variantId": "vivo-y31d~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35930,7 +45104,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o657",
+  "id": "o944",
   "variantId": "vivo-y31d~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -35944,7 +45118,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o658",
+  "id": "o945",
   "variantId": "vivo-y31d~v2",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -35958,7 +45132,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o659",
+  "id": "o946",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -35972,7 +45146,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o660",
+  "id": "o947",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -35986,7 +45160,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o661",
+  "id": "o948",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -36000,7 +45174,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o662",
+  "id": "o949",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "official",
@@ -36014,7 +45188,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o663",
+  "id": "o950",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -36028,7 +45202,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o664",
+  "id": "o951",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "kryinternational.com",
   "condition": "unofficial",
@@ -36042,7 +45216,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o665",
+  "id": "o952",
   "variantId": "vivo-v70-fe-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -36056,7 +45230,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o666",
+  "id": "o953",
   "variantId": "vivo-v70-fe-5g~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36070,7 +45244,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o667",
+  "id": "o954",
   "variantId": "vivo-v70-fe-5g~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -36084,7 +45258,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o668",
+  "id": "o955",
   "variantId": "vivo-v70-fe-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -36098,7 +45272,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o669",
+  "id": "o956",
   "variantId": "oneplus-nord-ce5-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -36112,7 +45286,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o670",
+  "id": "o957",
   "variantId": "oneplus-nord-4~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -36126,7 +45300,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o671",
+  "id": "o958",
   "variantId": "oneplus-nord-ce4-lite-5g~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -36140,7 +45314,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o672",
+  "id": "o959",
   "variantId": "google-pixel-8a~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -36154,7 +45328,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o673",
+  "id": "o960",
   "variantId": "realme-14-pro-5g~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -36168,7 +45342,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o674",
+  "id": "o961",
   "variantId": "realme-14-5g~v2",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -36182,7 +45356,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o675",
+  "id": "o962",
   "variantId": "huawei-nova-y74~v1",
   "sellerId": "sumashtech.com",
   "condition": "official",
@@ -36196,7 +45370,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o676",
+  "id": "o963",
   "variantId": "asus-proart-display-pa279cv-27-inch-4k~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36210,7 +45384,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o677",
+  "id": "o964",
   "variantId": "asus-proart-display-pa279cv-27-inch-4k~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36224,7 +45398,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o678",
+  "id": "o965",
   "variantId": "asus-proart-display-pa279cv-27-inch-4k~v1",
   "sellerId": "mcsolution.com.bd",
   "condition": "official",
@@ -36238,7 +45412,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o679",
+  "id": "o966",
   "variantId": "lg-34u650a-b-34-inch-ultrawide-wqhd-curved~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36252,7 +45426,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o680",
+  "id": "o967",
   "variantId": "lg-34u650a-b-34-inch-ultrawide-wqhd-curved~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36266,7 +45440,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o681",
+  "id": "o968",
   "variantId": "lg-34u650a-b-34-inch-ultrawide-wqhd-curved~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -36280,7 +45454,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o682",
+  "id": "o969",
   "variantId": "asus-rog-strix-xg27acmes-27-inch-qhd-255hz~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36294,7 +45468,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o683",
+  "id": "o970",
   "variantId": "asus-rog-strix-xg27acmes-27-inch-qhd-255hz~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36308,7 +45482,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o684",
+  "id": "o971",
   "variantId": "asus-rog-strix-xg27acmes-27-inch-qhd-255hz~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -36322,7 +45496,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o685",
+  "id": "o972",
   "variantId": "asus-proart-display-pa278qgv-27-inch-qhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36336,7 +45510,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o686",
+  "id": "o973",
   "variantId": "asus-proart-display-pa278qgv-27-inch-qhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36350,7 +45524,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o687",
+  "id": "o974",
   "variantId": "asus-proart-display-pa278qgv-27-inch-qhd~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -36364,7 +45538,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o688",
+  "id": "o975",
   "variantId": "asus-proart-display-pa248qfv-24-1-inch-wuxga~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36378,7 +45552,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o689",
+  "id": "o976",
   "variantId": "asus-proart-display-pa248qfv-24-1-inch-wuxga~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36392,7 +45566,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o690",
+  "id": "o977",
   "variantId": "asus-proart-display-pa248qfv-24-1-inch-wuxga~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -36406,7 +45580,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o691",
+  "id": "o978",
   "variantId": "lg-24u631a-b-23-8-inch-qhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36420,7 +45594,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o692",
+  "id": "o979",
   "variantId": "lg-24u631a-b-23-8-inch-qhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36434,7 +45608,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o693",
+  "id": "o980",
   "variantId": "lg-24u631a-b-23-8-inch-qhd~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -36448,7 +45622,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o694",
+  "id": "o981",
   "variantId": "viewsonic-va2214-h-22-inch-fhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36462,7 +45636,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o695",
+  "id": "o982",
   "variantId": "viewsonic-va2214-h-22-inch-fhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36476,7 +45650,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o696",
+  "id": "o983",
   "variantId": "viewsonic-va2214-h-22-inch-fhd~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -36490,7 +45664,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o697",
+  "id": "o984",
   "variantId": "viewsonic-va2214-h-22-inch-fhd~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -36504,7 +45678,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o698",
+  "id": "o985",
   "variantId": "viewsonic-va2432a-h-24-inch-fhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36518,7 +45692,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o699",
+  "id": "o986",
   "variantId": "viewsonic-va2432a-h-24-inch-fhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36532,7 +45706,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o700",
+  "id": "o987",
   "variantId": "viewsonic-va2432a-h-24-inch-fhd~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -36546,7 +45720,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o701",
+  "id": "o988",
   "variantId": "viewsonic-va2432a-h-24-inch-fhd~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -36560,7 +45734,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o702",
+  "id": "o989",
   "variantId": "asus-vz24ehf-23-8-inch-fhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36574,7 +45748,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o703",
+  "id": "o990",
   "variantId": "asus-vz24ehf-23-8-inch-fhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36588,7 +45762,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o704",
+  "id": "o991",
   "variantId": "asus-vz24ehf-23-8-inch-fhd~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -36602,7 +45776,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o705",
+  "id": "o992",
   "variantId": "asus-vz24ehf-23-8-inch-fhd~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -36616,7 +45790,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o706",
+  "id": "o993",
   "variantId": "asus-vp229hf-21-5-inch-fhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36630,7 +45804,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o707",
+  "id": "o994",
   "variantId": "asus-vp229hf-21-5-inch-fhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36644,7 +45818,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o708",
+  "id": "o995",
   "variantId": "asus-vp229hf-21-5-inch-fhd~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -36658,7 +45832,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o709",
+  "id": "o996",
   "variantId": "asus-vp229hf-21-5-inch-fhd~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -36672,7 +45846,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o710",
+  "id": "o997",
   "variantId": "philips-22e1n1200a-21-5-inch-fhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36686,7 +45860,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o711",
+  "id": "o998",
   "variantId": "philips-22e1n1200a-21-5-inch-fhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36700,7 +45874,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o712",
+  "id": "o999",
   "variantId": "philips-22e1n1200a-21-5-inch-fhd~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -36714,7 +45888,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o713",
+  "id": "o1000",
   "variantId": "philips-22e1n1200a-21-5-inch-fhd~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -36728,7 +45902,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o714",
+  "id": "o1001",
   "variantId": "benq-gw2283-21-5-inch-fhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36742,7 +45916,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o715",
+  "id": "o1002",
   "variantId": "benq-gw2283-21-5-inch-fhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36756,7 +45930,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o716",
+  "id": "o1003",
   "variantId": "benq-gw2283-21-5-inch-fhd~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -36770,7 +45944,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o717",
+  "id": "o1004",
   "variantId": "benq-gw2283-21-5-inch-fhd~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -36784,7 +45958,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o718",
+  "id": "o1005",
   "variantId": "benq-gw2291-21-5-inch-fhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36798,7 +45972,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o719",
+  "id": "o1006",
   "variantId": "benq-gw2291-21-5-inch-fhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36812,7 +45986,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o720",
+  "id": "o1007",
   "variantId": "benq-gw2291-21-5-inch-fhd~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -36826,7 +46000,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o721",
+  "id": "o1008",
   "variantId": "benq-gw2291-21-5-inch-fhd~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -36840,7 +46014,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o722",
+  "id": "o1009",
   "variantId": "dahua-dhi-lm22-a201yfs-21-5-inch-fhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36854,7 +46028,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o723",
+  "id": "o1010",
   "variantId": "dahua-dhi-lm22-a201yfs-21-5-inch-fhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36868,7 +46042,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o724",
+  "id": "o1011",
   "variantId": "dahua-dhi-lm22-a201yfs-21-5-inch-fhd~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -36882,7 +46056,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o725",
+  "id": "o1012",
   "variantId": "dahua-dhi-lm22-a201yfs-21-5-inch-fhd~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -36896,7 +46070,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o726",
+  "id": "o1013",
   "variantId": "dahua-dhi-lm22-a211y-21-5-inch-fhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36910,7 +46084,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o727",
+  "id": "o1014",
   "variantId": "dahua-dhi-lm22-a211y-21-5-inch-fhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36924,7 +46098,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o728",
+  "id": "o1015",
   "variantId": "dahua-dhi-lm22-a211y-21-5-inch-fhd~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -36938,7 +46112,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o729",
+  "id": "o1016",
   "variantId": "dahua-dhi-lm22-a211y-21-5-inch-fhd~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -36952,7 +46126,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o730",
+  "id": "o1017",
   "variantId": "viewsonic-va221a-h-22-inch-fhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -36966,7 +46140,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o731",
+  "id": "o1018",
   "variantId": "viewsonic-va221a-h-22-inch-fhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -36980,7 +46154,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o732",
+  "id": "o1019",
   "variantId": "viewsonic-va221a-h-22-inch-fhd~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -36994,7 +46168,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o733",
+  "id": "o1020",
   "variantId": "viewsonic-va221a-h-22-inch-fhd~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -37008,7 +46182,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o734",
+  "id": "o1021",
   "variantId": "benq-gw2491-23-8-inch-fhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -37022,7 +46196,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o735",
+  "id": "o1022",
   "variantId": "benq-gw2491-23-8-inch-fhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -37036,7 +46210,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o736",
+  "id": "o1023",
   "variantId": "benq-gw2491-23-8-inch-fhd~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -37050,7 +46224,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o737",
+  "id": "o1024",
   "variantId": "benq-gw2491-23-8-inch-fhd~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -37064,7 +46238,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o738",
+  "id": "o1025",
   "variantId": "viewsonic-va2732-27-inch-fhd~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -37078,7 +46252,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o739",
+  "id": "o1026",
   "variantId": "viewsonic-va2732-27-inch-fhd~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -37092,7 +46266,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o740",
+  "id": "o1027",
   "variantId": "viewsonic-va2732-27-inch-fhd~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -37106,7 +46280,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o741",
+  "id": "o1028",
   "variantId": "viewsonic-va2732-27-inch-fhd~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -37120,7 +46294,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o742",
+  "id": "o1029",
   "variantId": "viewsonic-vx24g30-24-inch-fhd-240hz~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -37134,7 +46308,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o743",
+  "id": "o1030",
   "variantId": "viewsonic-vx24g30-24-inch-fhd-240hz~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -37148,7 +46322,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o744",
+  "id": "o1031",
   "variantId": "viewsonic-vx24g30-24-inch-fhd-240hz~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -37162,7 +46336,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o745",
+  "id": "o1032",
   "variantId": "viewsonic-vx24g30-24-inch-fhd-240hz~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -37176,7 +46350,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o746",
+  "id": "o1033",
   "variantId": "viewsonic-va24g1-24-inch-fhd-144hz~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -37190,7 +46364,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o747",
+  "id": "o1034",
   "variantId": "viewsonic-va24g1-24-inch-fhd-144hz~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -37204,7 +46378,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o748",
+  "id": "o1035",
   "variantId": "viewsonic-va24g1-24-inch-fhd-144hz~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -37218,7 +46392,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o749",
+  "id": "o1036",
   "variantId": "viewsonic-va24g1-24-inch-fhd-144hz~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -37232,7 +46406,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o750",
+  "id": "o1037",
   "variantId": "asus-vg249q5r-23-8-inch-fhd-144hz~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -37246,7 +46420,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o751",
+  "id": "o1038",
   "variantId": "asus-vg249q5r-23-8-inch-fhd-144hz~v1",
   "sellerId": "pcbstore.com.bd",
   "condition": "unofficial",
@@ -37260,7 +46434,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o752",
+  "id": "o1039",
   "variantId": "asus-vg249q5r-23-8-inch-fhd-144hz~v1",
   "sellerId": "globalbrand.com.bd",
   "condition": "official",
@@ -37274,7 +46448,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o753",
+  "id": "o1040",
   "variantId": "asus-vg249q5r-23-8-inch-fhd-144hz~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -37288,7 +46462,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o754",
+  "id": "o1041",
   "variantId": "oraimo-toast-opb-7100q-10000mah-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -37302,7 +46476,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o755",
+  "id": "o1042",
   "variantId": "oraimo-toast-opb-7100q-10000mah-power-bank~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -37316,7 +46490,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o756",
+  "id": "o1043",
   "variantId": "oraimo-toast-opb-7100q-10000mah-power-bank~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -37330,7 +46504,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o757",
+  "id": "o1044",
   "variantId": "oraimo-powernova-l11-10000mah-power-bank~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -37344,7 +46518,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o758",
+  "id": "o1045",
   "variantId": "oraimo-powernova-l11-10000mah-power-bank~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -37358,7 +46532,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o759",
+  "id": "o1046",
   "variantId": "oraimo-powernova-l11-10000mah-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -37372,7 +46546,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o760",
+  "id": "o1047",
   "variantId": "oraimo-powernova-q21-20000mah-power-bank~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -37386,7 +46560,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o761",
+  "id": "o1048",
   "variantId": "oraimo-powernova-q21-20000mah-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -37400,7 +46574,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o762",
+  "id": "o1049",
   "variantId": "oraimo-powernova-q21-20000mah-power-bank~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -37414,7 +46588,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o763",
+  "id": "o1050",
   "variantId": "baseus-extreme-ppjp312-20000mah-power-bank~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -37428,7 +46602,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o764",
+  "id": "o1051",
   "variantId": "baseus-extreme-ppjp312-20000mah-power-bank~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -37442,7 +46616,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o765",
+  "id": "o1052",
   "variantId": "baseus-extreme-ppjp312-20000mah-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -37456,7 +46630,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o766",
+  "id": "o1053",
   "variantId": "anker-zolo-a110e-20000mah-power-bank~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -37470,7 +46644,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o767",
+  "id": "o1054",
   "variantId": "anker-zolo-a110e-20000mah-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -37484,7 +46658,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o768",
+  "id": "o1055",
   "variantId": "anker-zolo-a110e-20000mah-power-bank~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -37498,7 +46672,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o769",
+  "id": "o1056",
   "variantId": "baseus-adaman-ppadm20s-20000mah-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -37512,7 +46686,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o770",
+  "id": "o1057",
   "variantId": "baseus-adaman-ppadm20s-20000mah-power-bank~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -37526,7 +46700,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o771",
+  "id": "o1058",
   "variantId": "baseus-adaman-ppadm20s-20000mah-power-bank~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -37540,7 +46714,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o772",
+  "id": "o1059",
   "variantId": "oraimo-slice-link-pro-10000mah-power-bank~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -37554,7 +46728,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o773",
+  "id": "o1060",
   "variantId": "oraimo-slice-link-pro-10000mah-power-bank~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -37568,7 +46742,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o774",
+  "id": "o1061",
   "variantId": "oraimo-slice-link-pro-10000mah-power-bank~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -37582,7 +46756,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o775",
+  "id": "o1062",
   "variantId": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -37596,7 +46770,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o776",
+  "id": "o1063",
   "variantId": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -37610,7 +46784,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o777",
+  "id": "o1064",
   "variantId": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -37624,7 +46798,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o778",
+  "id": "o1065",
   "variantId": "oraimo-magpower-15-10000mah-wireless-power-bank~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -37638,7 +46812,1995 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o779",
+  "id": "o1066",
+  "variantId": "tp-link-archer-c6~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3530,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-archer-c6-ac1200-gigabit-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1067",
+  "variantId": "tp-link-archer-c6~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 3699,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-archer-c6-ac1200-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1068",
+  "variantId": "tp-link-archer-c6~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3449,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tp-link-archer-c6-ac1200-dual-band-mu-mimo-gigabit-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1069",
+  "variantId": "tp-link-archer-c6~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3600,
+  "oldPrice": 3700,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/tp-link-archer-c6-ac1200-dual-band-gigabit-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1070",
+  "variantId": "tp-link-archer-c6~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3690,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/tp-link-archer-c6-ac1200-wireless-mu-mimo-gigabit-router/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1071",
+  "variantId": "tp-link-archer-c6~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/tp-link-archer-c6-ac1200-dual-band-gigabit-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1072",
+  "variantId": "tp-link-archer-c6~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3290,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/tp-link-archer-c6-ac1200-gigabit-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1073",
+  "variantId": "tp-link-archer-c6~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3350,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-c6-ac1200/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1074",
+  "variantId": "tp-link-archer-c64~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3140,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-archer-c64-ac1200-wifi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1075",
+  "variantId": "tp-link-archer-c64~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 3259,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-archer-c64-ac1200-gigabit-wifi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1076",
+  "variantId": "tp-link-archer-c64~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3149,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tp-link-archer-c64-ac1200-dual-band-mu-mimo-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1077",
+  "variantId": "tp-link-archer-c64~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3019,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.applegadgetsbd.com/product/tp-link-archer-c64-ac1200-dual-band-gigabit-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1078",
+  "variantId": "tp-link-archer-c64~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3340,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/tp-link-archer-c64-ac1200-wireless-mu-mimo-wi-fi-router/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1079",
+  "variantId": "tp-link-archer-c64~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3190,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-c64-ac1200-dual-band/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1080",
+  "variantId": "tp-link-archer-c54~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2270,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-archer-c54-ac1200-dual-band-mu-mimo-beamforming-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1081",
+  "variantId": "tp-link-archer-c54~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2250,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tp-link-archer-c54-ac1200-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1082",
+  "variantId": "tp-link-archer-c54~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2150,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/tp-link-archer-c54-ac1200-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1083",
+  "variantId": "tp-link-archer-c54~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2390,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/tp-link-archer-c54/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1084",
+  "variantId": "tp-link-archer-c54~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/tp-link-archer-c54-ac1200-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1085",
+  "variantId": "tp-link-archer-c50~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2570,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-archer-c50-wifi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1086",
+  "variantId": "tp-link-archer-c50~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2349,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tp-link-archer-c50-ac1200-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1087",
+  "variantId": "tp-link-archer-c50~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2500,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.applegadgetsbd.com/product/tp-link-archer-c50-ac1200-wireless-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1088",
+  "variantId": "tp-link-archer-c50~v1",
+  "sellerId": "kryinternational.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://kryinternational.com/products/tp-link-archer-c50-ac1200-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1089",
+  "variantId": "tp-link-archer-c50~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2240,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-c50-ac1200-dual-band/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1090",
+  "variantId": "tp-link-archer-c24~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2020,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-archer-c24-ac750-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1091",
+  "variantId": "tp-link-archer-c24~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2099,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tp-link-archer-c24-ac750-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1092",
+  "variantId": "tp-link-archer-c24~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2250,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.applegadgetsbd.com/product/tp-link-archer-c24-ac750-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1093",
+  "variantId": "tp-link-archer-c24~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1890,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/tp-link-archer-c24-ac750-dual-band-wi-fi-router/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1094",
+  "variantId": "tp-link-archer-c80~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 4270,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-archer-c80-ac1900-gigabit-mu-mimo-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1095",
+  "variantId": "tp-link-archer-c80~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 4299,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-archer-c80-ac1900-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1096",
+  "variantId": "tp-link-archer-c80~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3990,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.applegadgetsbd.com/product/tp-link-archer-c80-ac1900-dual-band-gigabit-wifi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1097",
+  "variantId": "tp-link-archer-c80~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3850,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-c80-ac1900/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1098",
+  "variantId": "tp-link-archer-ax12~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3990,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/tp-link-archer-ax12-ax1500-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1099",
+  "variantId": "tp-link-archer-ax12~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 3799,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetandgear.com/product/tplink-archer-ax12-ax1500-wifi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1100",
+  "variantId": "tp-link-archer-ax12~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3799,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tp-link-archer-ax12-ax1500-dual-band-wi-fi-6-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1101",
+  "variantId": "tp-link-archer-ax12~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4200,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/tp-link-archer-ax12-ax1500-dual-band-gigabit-wi-fi-6-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1102",
+  "variantId": "tp-link-archer-ax12~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3450,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/tp-link-archer-ax12-ax1500-dual-band-wifi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1103",
+  "variantId": "tp-link-archer-ax12~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3400,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-ax12-ax1500-dual-band/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1104",
+  "variantId": "tp-link-archer-ax53~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 6590,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-Archer-ax53-ax3000-dual-band-gigabit-wi-fi-6-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1105",
+  "variantId": "tp-link-archer-ax53~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 6599,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-archer-ax53-dual-band-gigabit-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1106",
+  "variantId": "tp-link-archer-ax53~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5999,
+  "oldPrice": 6600,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/tp-link-archer-ax53-ax3000-dual-band-gigabit-wi-fi-6-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1107",
+  "variantId": "tp-link-archer-ax53~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5790,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-ax53-ax3000-dual-band/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1108",
+  "variantId": "tp-link-archer-ax73~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 15500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-archer-ax73-ax5400-dual-band-gigabit-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1109",
+  "variantId": "tp-link-archer-ax73~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 16999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-archer-ax73-dual-band-gigabit-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1110",
+  "variantId": "tp-link-archer-ax73~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 14900,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.applegadgetsbd.com/product/tp-link-archer-ax73-ax5400-dual-band-gigabit-wi-fi-6-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1111",
+  "variantId": "tp-link-archer-ax73~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 16890,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/tp-link-archer-ax73-ax5400-dual-band-6-stream-gigabit-wi-fi-6-router/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1112",
+  "variantId": "tp-link-archer-be400~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 19690,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/tp-link-archer-be400-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1113",
+  "variantId": "tp-link-archer-be400~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 19800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-be400-be6500-dual/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1114",
+  "variantId": "tenda-ac10~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tenda-ac10-ac1200-smart-dual-band-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1115",
+  "variantId": "tenda-ac10~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tenda-ac10-ac1200-dual-band-gigabit-wifi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1116",
+  "variantId": "tenda-ac10~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3540,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/tenda-ac10-ac1200-dual-band-4-anteena-1200mbps-gigabit-wi-fi-router/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1117",
+  "variantId": "tenda-tx12-pro~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 4000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tenda-tx12-pro-v2-0-dual-band-gigabit-wi-fi-6-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1118",
+  "variantId": "tenda-tx12-pro~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4099,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tenda-tx12-pro-v20-ax3000-dual-band-gigabit-wi-fi-6-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1119",
+  "variantId": "tenda-tx12-pro~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4090,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/tenda-tx12-pro-v2-0-ax3000/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1120",
+  "variantId": "mercusys-ac10~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 1700,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/mercusys-ac10-ac1200-dual-band-wifi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1121",
+  "variantId": "mercusys-ac10~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1900,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.applegadgetsbd.com/product/mercusys-ac10-ac1200-wireless-dual-band-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1122",
+  "variantId": "mercusys-ac10~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 1680,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetbreeze.com.bd/product/mercusys-ac10-ac1200-wireless-dual-band-router/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1123",
+  "variantId": "cudy-wr1200~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2400,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/cudy-wr1200-ac1200-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1124",
+  "variantId": "cudy-wr1200~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 2820,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/cudy-wr1200-ac1200-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1125",
+  "variantId": "cudy-wr1200~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2249,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/cudy-wr1200",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1126",
+  "variantId": "cudy-wr1200~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2250,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.applegadgetsbd.com/product/cudy-wr1200-ac1200-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1127",
+  "variantId": "cudy-wr1200~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2280,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/cudy-wr1200-ac1200-dual-band-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1128",
+  "variantId": "cudy-wr1500~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3100,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/cudy-wr1500-ax1500-wi-fi-6-mesh-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1129",
+  "variantId": "cudy-wr1500~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3290,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.globalbrand.com.bd/cudy-wr1500-1-0-ax1500-dual-band-wi-fi-6-mesh-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1130",
+  "variantId": "cudy-wr1500~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2890,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/cudy-wr1500-ax1500-dual-band-gigabit-wi-fi-6-mesh-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1131",
+  "variantId": "cudy-wr1500~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2999,
+  "oldPrice": 3290,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/cudy-wr1500-ax1500-dual-band-wifi-6-mesh-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1132",
+  "variantId": "cudy-wr1500~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3200,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/cudy-wr1500-ax1500-dual-band-wifi-6-mesh-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1133",
+  "variantId": "cudy-wr3000~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 4750,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/cudy-wr3000-ax3000-gigabit-wi-fi-6-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1134",
+  "variantId": "cudy-wr3000~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 5190,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/cudy-wr3000-ax3000-gigabit-dual-band-wi-fi-6-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1135",
+  "variantId": "cudy-wr3000~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4900,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/cudy-wr3000-ax3000-gigabit-dual-band-wi-fi-6-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1136",
+  "variantId": "cudy-wr3600e~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 7899,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/cudy-wr3600e-wifi-7-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1137",
+  "variantId": "cudy-wr3600e~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 8300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/cudy-wr3600e-be3600-gigabit-wi-fi-7-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1138",
+  "variantId": "cudy-wr3600e~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 7999,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/cudy-wr3600e-be3600-dual-band-gigabit-wi-fi-7-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1139",
+  "variantId": "cudy-wr3600e~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 7800,
+  "oldPrice": null,
+  "inStock": null,
+  "url": "https://www.applegadgetsbd.com/product/cudy-wr3600e-be3600-dualband-mesh-wifi-7-gigabit-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1140",
+  "variantId": "asus-rt-ax52~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 5580,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/asus-rt-ax52-ax1800-dual-band-aimesh-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1141",
+  "variantId": "asus-rt-ax52~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 6500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/asus-rt-ax52-ax1800-dual-band-wifi-6-extendable-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1142",
+  "variantId": "asus-rt-ax52~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 6000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/asus-rt-ax52-ax1800-dual-band-wifi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1143",
+  "variantId": "tp-link-deco-m4~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 4700,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tplink-deco-m4-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1144",
+  "variantId": "tp-link-deco-m4~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 4799,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-deco-m4-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1145",
+  "variantId": "tp-link-deco-m4~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4490,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tp-link-deco-m4-ac1200-dual-band-wi-fi-mesh-router-1-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1146",
+  "variantId": "tp-link-deco-m4~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3500,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/tp-link-deco-m4-ac1200-dual-band-mesh-router-1-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1147",
+  "variantId": "tp-link-deco-m4~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4300,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/tp-link-deco-m4-ac1200-dual-band-mesh/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1148",
+  "variantId": "tp-link-deco-m4~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 9340,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tplink-deco-m4-2-pack-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1149",
+  "variantId": "tp-link-deco-m4~v2",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 9399,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-deco-m4-router-2-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1150",
+  "variantId": "tp-link-deco-m4~v3",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 14000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tplink-deco-m4-3-pack-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1151",
+  "variantId": "tp-link-deco-m4~v3",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 14099,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-deco-m4-router-3-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1152",
+  "variantId": "tp-link-deco-m4~v3",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 11340,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/tp-link-deco-m4-whole-home-mesh-wi-fi-system-ac1200-dual-band-router-3-pack/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1153",
+  "variantId": "tp-link-deco-e4~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3400,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-deco-e4-dual-band-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1154",
+  "variantId": "tp-link-deco-e4~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 3599,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-deco-e4-1-pack-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1155",
+  "variantId": "tp-link-deco-e4~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2950,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tp-link-deco-e4-ac1200-dual-band-wi-fi-mesh-router-1-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1156",
+  "variantId": "tp-link-deco-e4~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2940,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/tp-link-deco-e4-whole-home-mesh-wi-fi-system-single-pack/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1157",
+  "variantId": "tp-link-deco-e4~v1",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 2750,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://gadgetbreeze.com.bd/product/tp-link-deco-e4-ac1200-dual-band/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1158",
+  "variantId": "tp-link-deco-e4~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 6790,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/tplink-deco-e4-2-pack-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1159",
+  "variantId": "tp-link-deco-e4~v2",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5790,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/tp-link-deco-e4-2-pack-whole-home-mesh-wi-fi-system/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1160",
+  "variantId": "tp-link-deco-e4~v3",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 10140,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tplink-deco-e4-3-pack-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1161",
+  "variantId": "tp-link-deco-e4~v3",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 8490,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tp-link-deco-e4-ac1200-dual-band-home-mesh-router-3-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1162",
+  "variantId": "tp-link-deco-x10~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 6050,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-deco-x10-wifi-6-mesh-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1163",
+  "variantId": "tp-link-deco-x10~v1",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 6099,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-deco-x10-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1164",
+  "variantId": "tp-link-deco-x10~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5750,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tp-link-deco-x10-ax1500-dual-band-wi-fi-6-mesh-router-1-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1165",
+  "variantId": "tp-link-deco-x10~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 11840,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-deco-x10-wifi-6-mesh-router-2-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1166",
+  "variantId": "tp-link-deco-x10~v2",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 11899,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-deco-x10-router-2-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1167",
+  "variantId": "tp-link-deco-x10~v2",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 9190,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/tp-link-deco-x10-ax1500-mesh-router-2-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1168",
+  "variantId": "tp-link-deco-x10~v3",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 17800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-deco-x10-wifi-6-mesh-router-3-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1169",
+  "variantId": "tp-link-deco-x10~v3",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 17899,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-deco-x10-router-3-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1170",
+  "variantId": "tp-link-deco-x10~v3",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 13700,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/tp-link-deco-x10-ax1500-mesh-router-3-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1171",
+  "variantId": "tp-link-deco-x20~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 7849,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/tp-link-deco-x20-ax1800-mesh-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1172",
+  "variantId": "tp-link-deco-x20~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 15500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-deco-x20-ax1800-router-2-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1173",
+  "variantId": "tp-link-deco-x20~v2",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 15599,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-deco-x20-ax1800-router-2-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1174",
+  "variantId": "tp-link-deco-x20~v3",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 23190,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/tp-link-deco-x20-ax1800-router-3-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1175",
+  "variantId": "tp-link-deco-x20~v3",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 20599,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-deco-x20-ax1800-mesh-wi-fi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1176",
+  "variantId": "tp-link-deco-x20~v3",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 18940,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/tp-link-deco-x20-ax1800-whole-home-mesh-wi-fi-6-router-3-pack/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1177",
+  "variantId": "tp-link-deco-x50~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 9020,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-deco-x50-dual-band-wi-fi-6-mesh-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1178",
+  "variantId": "tp-link-deco-x50~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 8890,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/tp-link-deco-x50-ax3000-dual-band-wi-fi-6-mesh-router-1-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1179",
+  "variantId": "tp-link-deco-x50~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 17800,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-deco-x50-2-pack-dual-band-wi-fi-6-mesh-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1180",
+  "variantId": "tp-link-deco-x50~v2",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 17899,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-deco-x50-router-2-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1181",
+  "variantId": "tp-link-deco-x50~v3",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 26600,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/tp-link-deco-x50-3-pack-dual-band-wi-fi-6-mesh-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1182",
+  "variantId": "tp-link-deco-x50~v3",
+  "sellerId": "gadgetandgear.com",
+  "condition": "official",
+  "region": null,
+  "price": 27099,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetandgear.com/product/tp-link-deco-x50-router-3-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1183",
+  "variantId": "cudy-m1300~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3100,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/cudy-m1300-ac1200-gigabit-whole-home-mesh-wifi-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1184",
+  "variantId": "cudy-m1300~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 3500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/cudy-m1300-1-pack-ac1200-dual-band-whole-home-wi-fi-mesh-gigabit-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1185",
+  "variantId": "cudy-m1300~v1",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3299,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/cudy-m1300-ac1200-dual-band-gigabit-wi-fi-mesh-router-1-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1186",
+  "variantId": "cudy-m1300~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 3200,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/cudy-m1300-1-pack-ac1200-dual-band-whole-home-wi-fi-mesh-gigabit-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1187",
+  "variantId": "cudy-m1300~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 6060,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.startech.com.bd/cudy-m1300-ac1200-gigabit-whole-home-mesh-wifi-router-2-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1188",
+  "variantId": "cudy-m1300~v2",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 6700,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/cudy-m1300-2-pack-ac1200-dual-band-whole-home-wi-fi-mesh-gigabit-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1189",
+  "variantId": "cudy-m1300~v2",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 6199,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/cudy-m1300-ac1200-dual-band-gigabit-wi-fi-mesh-router-2-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1190",
+  "variantId": "cudy-m1300~v3",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 8330,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/cudy-m1300-ac1200-gigabit-whole-home-mesh-wifi-router-3-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1191",
+  "variantId": "cudy-m1300~v3",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 9900,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/cudy-m1300-3-pack-ac1200-dual-band-whole-home-wi-fi-mesh-gigabit-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1192",
+  "variantId": "cudy-m1300~v3",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 9149,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/cudy-m1300-ac1200-dual-band-gigabit-wi-fi-mesh-router-3-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1193",
+  "variantId": "cudy-m1300~v3",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 9140,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/cudy-m1300-ac1200-dual-band-wi-fi-mesh-gigabit-router-3-pack/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1194",
+  "variantId": "cudy-m3000~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 5500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/cudy-m3000-ax3000-wi-fi-6-mesh-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1195",
+  "variantId": "cudy-m3000~v1",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 5800,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://www.globalbrand.com.bd/cudy-m3000-1-pack-ax3000-2-5g-dual-band-wi-fi-6-mesh-system-router-white",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1196",
+  "variantId": "cudy-m3000~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5390,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://diamu.com.bd/product/cudy-m3000-ax3000-dual-band-wi-fi-6-mesh-router-1-pack/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1197",
+  "variantId": "cudy-m3000~v1",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 5600,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/cudy-m3000-white-1-pack-ax3000-25g-dual-band-wi-fi-6-mesh-system-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1198",
+  "variantId": "cudy-m3000~v2",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 11000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/cudy-m3000-ax3000-wi-fi-6-mesh-router-2-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1199",
+  "variantId": "cudy-m3000~v2",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 11500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/cudy-m3000-2-pack-ax3000-2-5g-dual-band-wi-fi-6-mesh-system-router",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1200",
+  "variantId": "cudy-m3000~v2",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 10949,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/cudy-m3000-ax3000-dual-band-wi-fi-mesh-router-2-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1201",
+  "variantId": "cudy-m3000~v2",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 11000,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/cudy-m3000-10-ax3000-mbps-gigabit-dual-band-black-mesh-wi-fi-6-system-2-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1202",
+  "variantId": "cudy-m3000~v2",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 9870,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/cudy-m3000-2-pack-ax3000-2-5g/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1203",
+  "variantId": "cudy-m3000~v3",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 16500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/cudy-m3000-ax3000-wi-fi-6-mesh-router-3-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1204",
+  "variantId": "cudy-m3000~v3",
+  "sellerId": "globalbrand.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 17000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.globalbrand.com.bd/cudy-m3000-3-pack-ax3000-2-5g-dual-band-wi-fi-6-mesh-system-router-white",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1205",
+  "variantId": "cudy-m3000~v3",
+  "sellerId": "sumashtech.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 16499,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.sumashtech.com/product/cudy-m3000-ax3000-dual-band-wi-fi-mesh-router-3-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1206",
+  "variantId": "cudy-m3000~v3",
+  "sellerId": "pcbstore.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 15300,
+  "oldPrice": null,
+  "inStock": false,
+  "url": "https://pcbstore.com.bd/product/cudy-m3000-ax3000-dual-band-wi-fi-6-mesh-system-router-3-pack",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1207",
+  "variantId": "cudy-m3000~v3",
+  "sellerId": "gadgetbreeze.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 14600,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://gadgetbreeze.com.bd/product/cudy-m3000-3-pack-ax3000-2-5g-dual/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1208",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -37652,7 +48814,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o780",
+  "id": "o1209",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -37666,7 +48828,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o781",
+  "id": "o1210",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -37680,7 +48842,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o782",
+  "id": "o1211",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -37694,7 +48856,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o783",
+  "id": "o1212",
   "variantId": "simple-refreshing-facial-wash-150ml~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -37708,7 +48870,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o784",
+  "id": "o1213",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -37722,7 +48884,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o785",
+  "id": "o1214",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -37736,7 +48898,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o786",
+  "id": "o1215",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "chaldal.com",
   "condition": "official",
@@ -37750,7 +48912,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o787",
+  "id": "o1216",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -37764,7 +48926,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o788",
+  "id": "o1217",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -37778,7 +48940,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o789",
+  "id": "o1218",
   "variantId": "cerave-hydrating-cleanser-236ml~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -37792,7 +48954,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o790",
+  "id": "o1219",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -37806,7 +48968,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o791",
+  "id": "o1220",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -37820,7 +48982,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o792",
+  "id": "o1221",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -37834,7 +48996,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o793",
+  "id": "o1222",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -37848,7 +49010,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o794",
+  "id": "o1223",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -37862,7 +49024,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o795",
+  "id": "o1224",
   "variantId": "cerave-moisturizing-cream-56ml~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -37876,7 +49038,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o796",
+  "id": "o1225",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -37890,7 +49052,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o797",
+  "id": "o1226",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -37904,7 +49066,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o798",
+  "id": "o1227",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -37918,7 +49080,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o799",
+  "id": "o1228",
   "variantId": "cosrx-advanced-snail-96-mucin-power-essence-100ml~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -37932,7 +49094,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o800",
+  "id": "o1229",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -37946,7 +49108,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o801",
+  "id": "o1230",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -37960,7 +49122,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o802",
+  "id": "o1231",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -37974,7 +49136,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o803",
+  "id": "o1232",
   "variantId": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -37988,7 +49150,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o804",
+  "id": "o1233",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38002,7 +49164,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o805",
+  "id": "o1234",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -38016,7 +49178,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o806",
+  "id": "o1235",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -38030,7 +49192,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o807",
+  "id": "o1236",
   "variantId": "streax-vitariche-gloss-hair-serum-115ml~v1",
   "sellerId": "cosmeticscorner.com.bd",
   "condition": "official",
@@ -38044,7 +49206,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o808",
+  "id": "o1237",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38058,7 +49220,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o809",
+  "id": "o1238",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -38072,7 +49234,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o810",
+  "id": "o1239",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -38086,7 +49248,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o811",
+  "id": "o1240",
   "variantId": "livon-hair-serum-100ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -38100,7 +49262,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o812",
+  "id": "o1241",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38114,7 +49276,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o813",
+  "id": "o1242",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -38128,7 +49290,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o814",
+  "id": "o1243",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -38142,7 +49304,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o815",
+  "id": "o1244",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "indianmartbd.com",
   "condition": "official",
@@ -38156,7 +49318,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o816",
+  "id": "o1245",
   "variantId": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -38170,7 +49332,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o817",
+  "id": "o1246",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38184,7 +49346,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o818",
+  "id": "o1247",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -38198,7 +49360,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o819",
+  "id": "o1248",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -38212,7 +49374,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o820",
+  "id": "o1249",
   "variantId": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -38226,7 +49388,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o821",
+  "id": "o1250",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38240,7 +49402,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o822",
+  "id": "o1251",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -38254,7 +49416,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o823",
+  "id": "o1252",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -38268,7 +49430,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o824",
+  "id": "o1253",
   "variantId": "deconstruct-oil-free-moisturizer-50g~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -38282,7 +49444,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o825",
+  "id": "o1254",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38296,7 +49458,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o826",
+  "id": "o1255",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -38310,7 +49472,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o827",
+  "id": "o1256",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -38324,7 +49486,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o828",
+  "id": "o1257",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -38338,7 +49500,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-23T03:00:00.000Z"
  },
  {
-  "id": "o829",
+  "id": "o1258",
   "variantId": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -38352,7 +49514,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o830",
+  "id": "o1259",
   "variantId": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38366,7 +49528,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o831",
+  "id": "o1260",
   "variantId": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -38380,7 +49542,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o832",
+  "id": "o1261",
   "variantId": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -38394,7 +49556,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o833",
+  "id": "o1262",
   "variantId": "the-ordinary-niacinamide-10-zinc-1-30ml~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -38408,7 +49570,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o834",
+  "id": "o1263",
   "variantId": "cetaphil-gentle-skin-cleanser-236ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -38422,7 +49584,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o835",
+  "id": "o1264",
   "variantId": "cetaphil-gentle-skin-cleanser-236ml~v1",
   "sellerId": "cosmeticscorner.com.bd",
   "condition": "official",
@@ -38436,7 +49598,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o836",
+  "id": "o1265",
   "variantId": "cetaphil-gentle-skin-cleanser-236ml~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -38450,7 +49612,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o837",
+  "id": "o1266",
   "variantId": "neutrogena-hydro-boost-water-gel-50ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38464,7 +49626,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o838",
+  "id": "o1267",
   "variantId": "neutrogena-hydro-boost-water-gel-50ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -38478,7 +49640,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o839",
+  "id": "o1268",
   "variantId": "neutrogena-hydro-boost-water-gel-50ml~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -38492,7 +49654,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o840",
+  "id": "o1269",
   "variantId": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -38506,7 +49668,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o841",
+  "id": "o1270",
   "variantId": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -38520,7 +49682,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o842",
+  "id": "o1271",
   "variantId": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38534,7 +49696,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o843",
+  "id": "o1272",
   "variantId": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -38548,7 +49710,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o844",
+  "id": "o1273",
   "variantId": "anua-heartleaf-77-soothing-toner-250ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -38562,7 +49724,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o845",
+  "id": "o1274",
   "variantId": "anua-heartleaf-77-soothing-toner-250ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -38576,7 +49738,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o846",
+  "id": "o1275",
   "variantId": "anua-heartleaf-77-soothing-toner-250ml~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -38590,7 +49752,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o847",
+  "id": "o1276",
   "variantId": "anua-heartleaf-77-soothing-toner-250ml~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -38604,7 +49766,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o848",
+  "id": "o1277",
   "variantId": "torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -38618,7 +49780,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o849",
+  "id": "o1278",
   "variantId": "torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -38632,7 +49794,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o850",
+  "id": "o1279",
   "variantId": "isntree-hyaluronic-acid-toner-200ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -38646,7 +49808,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o851",
+  "id": "o1280",
   "variantId": "isntree-hyaluronic-acid-toner-200ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38660,7 +49822,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o852",
+  "id": "o1281",
   "variantId": "isntree-hyaluronic-acid-toner-200ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -38674,7 +49836,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o853",
+  "id": "o1282",
   "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -38688,7 +49850,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o854",
+  "id": "o1283",
   "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38702,7 +49864,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o855",
+  "id": "o1284",
   "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -38716,7 +49878,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o856",
+  "id": "o1285",
   "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -38730,7 +49892,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o857",
+  "id": "o1286",
   "variantId": "cosrx-advanced-snail-92-all-in-one-cream-100g~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -38744,7 +49906,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o858",
+  "id": "o1287",
   "variantId": "klairs-supple-preparation-unscented-toner-180ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -38758,7 +49920,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o859",
+  "id": "o1288",
   "variantId": "klairs-supple-preparation-unscented-toner-180ml~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -38772,7 +49934,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o860",
+  "id": "o1289",
   "variantId": "klairs-supple-preparation-unscented-toner-180ml~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -38786,7 +49948,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o861",
+  "id": "o1290",
   "variantId": "skin1004-madagascar-centella-ampoule-50ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -38800,7 +49962,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o862",
+  "id": "o1291",
   "variantId": "round-lab-birch-juice-moisturizing-cream-80ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -38814,7 +49976,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o863",
+  "id": "o1292",
   "variantId": "round-lab-birch-juice-moisturizing-cream-80ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -38828,7 +49990,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o864",
+  "id": "o1293",
   "variantId": "cosrx-low-ph-good-morning-gel-cleanser-150ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -38842,7 +50004,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o865",
+  "id": "o1294",
   "variantId": "cosrx-low-ph-good-morning-gel-cleanser-150ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38856,7 +50018,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o866",
+  "id": "o1295",
   "variantId": "cosrx-low-ph-good-morning-gel-cleanser-150ml~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -38870,7 +50032,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o867",
+  "id": "o1296",
   "variantId": "cosrx-low-ph-good-morning-gel-cleanser-150ml~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -38884,7 +50046,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o868",
+  "id": "o1297",
   "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -38898,7 +50060,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o869",
+  "id": "o1298",
   "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -38912,7 +50074,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o870",
+  "id": "o1299",
   "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -38926,7 +50088,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o871",
+  "id": "o1300",
   "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -38940,7 +50102,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o872",
+  "id": "o1301",
   "variantId": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -38954,7 +50116,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o873",
+  "id": "o1302",
   "variantId": "cosrx-acne-pimple-master-patch-24pcs~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -38968,7 +50130,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o874",
+  "id": "o1303",
   "variantId": "cosrx-acne-pimple-master-patch-24pcs~v1",
   "sellerId": "medeasy.health",
   "condition": "official",
@@ -38982,7 +50144,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o875",
+  "id": "o1304",
   "variantId": "cosrx-acne-pimple-master-patch-24pcs~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -38996,7 +50158,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o876",
+  "id": "o1305",
   "variantId": "round-lab-1025-dokdo-toner-100ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -39010,7 +50172,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o877",
+  "id": "o1306",
   "variantId": "round-lab-1025-dokdo-toner-100ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -39024,7 +50186,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o878",
+  "id": "o1307",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -39038,7 +50200,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o879",
+  "id": "o1308",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -39052,7 +50214,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o880",
+  "id": "o1309",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -39066,7 +50228,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o881",
+  "id": "o1310",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -39080,7 +50242,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o882",
+  "id": "o1311",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -39094,7 +50256,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o883",
+  "id": "o1312",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -39108,7 +50270,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o884",
+  "id": "o1313",
   "variantId": "isntree-green-tea-fresh-toner-200ml~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -39122,7 +50284,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o885",
+  "id": "o1314",
   "variantId": "skin1004-madagascar-centella-ampoule-100ml~v1",
   "sellerId": "beautyline.com.bd",
   "condition": "official",
@@ -39136,7 +50298,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o886",
+  "id": "o1315",
   "variantId": "skin1004-madagascar-centella-ampoule-100ml~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -39150,7 +50312,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o887",
+  "id": "o1316",
   "variantId": "skin1004-madagascar-centella-ampoule-100ml~v1",
   "sellerId": "e-mart.com.bd",
   "condition": "official",
@@ -39164,7 +50326,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o888",
+  "id": "o1317",
   "variantId": "skin1004-madagascar-centella-ampoule-100ml~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -39178,7 +50340,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o889",
+  "id": "o1318",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -39192,7 +50354,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o890",
+  "id": "o1319",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -39206,7 +50368,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o891",
+  "id": "o1320",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -39220,7 +50382,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o892",
+  "id": "o1321",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -39234,7 +50396,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o893",
+  "id": "o1322",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -39248,7 +50410,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o894",
+  "id": "o1323",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -39262,7 +50424,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o895",
+  "id": "o1324",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -39276,7 +50438,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o896",
+  "id": "o1325",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -39290,7 +50452,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o897",
+  "id": "o1326",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -39304,7 +50466,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o898",
+  "id": "o1327",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -39318,7 +50480,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o899",
+  "id": "o1328",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -39332,7 +50494,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o900",
+  "id": "o1329",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -39346,7 +50508,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o901",
+  "id": "o1330",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -39360,7 +50522,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o902",
+  "id": "o1331",
   "variantId": "etude-dear-darling-water-tint~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -39374,7 +50536,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o903",
+  "id": "o1332",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -39388,7 +50550,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o904",
+  "id": "o1333",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -39402,7 +50564,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o905",
+  "id": "o1334",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -39416,7 +50578,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o906",
+  "id": "o1335",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -39430,7 +50592,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o907",
+  "id": "o1336",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -39444,7 +50606,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o908",
+  "id": "o1337",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -39458,7 +50620,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o909",
+  "id": "o1338",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -39472,7 +50634,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o910",
+  "id": "o1339",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -39486,7 +50648,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o911",
+  "id": "o1340",
   "variantId": "beauty-glazed-glazed-glow-lip-oil~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -39500,7 +50662,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o912",
+  "id": "o1341",
   "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -39514,7 +50676,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o913",
+  "id": "o1342",
   "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -39528,7 +50690,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o914",
+  "id": "o1343",
   "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -39542,7 +50704,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o915",
+  "id": "o1344",
   "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -39556,7 +50718,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o916",
+  "id": "o1345",
   "variantId": "swiss-beauty-dip-tint-lip-oil~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -39570,7 +50732,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o917",
+  "id": "o1346",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -39584,7 +50746,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o918",
+  "id": "o1347",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -39598,7 +50760,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o919",
+  "id": "o1348",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -39612,7 +50774,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o920",
+  "id": "o1349",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -39626,7 +50788,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o921",
+  "id": "o1350",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -39640,7 +50802,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o922",
+  "id": "o1351",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -39654,7 +50816,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o923",
+  "id": "o1352",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -39668,7 +50830,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o924",
+  "id": "o1353",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -39682,7 +50844,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o925",
+  "id": "o1354",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -39696,7 +50858,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o926",
+  "id": "o1355",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -39710,7 +50872,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o927",
+  "id": "o1356",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -39724,7 +50886,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o928",
+  "id": "o1357",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -39738,7 +50900,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o929",
+  "id": "o1358",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -39752,7 +50914,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o930",
+  "id": "o1359",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -39766,7 +50928,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o931",
+  "id": "o1360",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -39780,7 +50942,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o932",
+  "id": "o1361",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -39794,7 +50956,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o933",
+  "id": "o1362",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -39808,7 +50970,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o934",
+  "id": "o1363",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -39822,7 +50984,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o935",
+  "id": "o1364",
   "variantId": "laneige-lip-sleeping-mask-berry~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -39836,7 +50998,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o936",
+  "id": "o1365",
   "variantId": "laneige-lip-sleeping-mask-berry~v2",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -39850,7 +51012,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o937",
+  "id": "o1366",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -39864,7 +51026,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o938",
+  "id": "o1367",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -39878,7 +51040,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o939",
+  "id": "o1368",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -39892,7 +51054,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o940",
+  "id": "o1369",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -39906,7 +51068,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o941",
+  "id": "o1370",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -39920,7 +51082,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o942",
+  "id": "o1371",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -39934,7 +51096,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o943",
+  "id": "o1372",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -39948,7 +51110,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o944",
+  "id": "o1373",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -39962,7 +51124,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o945",
+  "id": "o1374",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "indianmartbd.com",
   "condition": "official",
@@ -39976,7 +51138,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o946",
+  "id": "o1375",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -39990,7 +51152,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o947",
+  "id": "o1376",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -40004,7 +51166,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o948",
+  "id": "o1377",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -40018,7 +51180,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o949",
+  "id": "o1378",
   "variantId": "wishcare-ceramide-lip-balm-spf-50~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -40032,7 +51194,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o950",
+  "id": "o1379",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -40046,7 +51208,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o951",
+  "id": "o1380",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -40060,7 +51222,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o952",
+  "id": "o1381",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -40074,7 +51236,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o953",
+  "id": "o1382",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -40088,7 +51250,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o954",
+  "id": "o1383",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -40102,7 +51264,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o955",
+  "id": "o1384",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -40116,7 +51278,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o956",
+  "id": "o1385",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -40130,7 +51292,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o957",
+  "id": "o1386",
   "variantId": "cosrx-propolis-lip-sleeping-mask~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -40144,7 +51306,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o958",
+  "id": "o1387",
   "variantId": "laneige-water-sleeping-mask~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -40158,7 +51320,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o959",
+  "id": "o1388",
   "variantId": "laneige-water-sleeping-mask~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -40172,7 +51334,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o960",
+  "id": "o1389",
   "variantId": "laneige-water-sleeping-mask~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -40186,7 +51348,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o961",
+  "id": "o1390",
   "variantId": "laneige-water-sleeping-mask~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -40200,7 +51362,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o962",
+  "id": "o1391",
   "variantId": "laneige-water-sleeping-mask~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -40214,7 +51376,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o963",
+  "id": "o1392",
   "variantId": "laneige-water-sleeping-mask~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -40228,7 +51390,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o964",
+  "id": "o1393",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -40242,7 +51404,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o965",
+  "id": "o1394",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -40256,7 +51418,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o966",
+  "id": "o1395",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -40270,7 +51432,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o967",
+  "id": "o1396",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -40284,7 +51446,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o968",
+  "id": "o1397",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -40298,7 +51460,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o969",
+  "id": "o1398",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -40312,7 +51474,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o970",
+  "id": "o1399",
   "variantId": "laneige-water-sleeping-mask~v2",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -40326,7 +51488,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o971",
+  "id": "o1400",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -40340,7 +51502,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o972",
+  "id": "o1401",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -40354,7 +51516,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o973",
+  "id": "o1402",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -40368,7 +51530,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o974",
+  "id": "o1403",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -40382,7 +51544,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o975",
+  "id": "o1404",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -40396,7 +51558,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o976",
+  "id": "o1405",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -40410,7 +51572,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o977",
+  "id": "o1406",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -40424,7 +51586,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o978",
+  "id": "o1407",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -40438,7 +51600,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o979",
+  "id": "o1408",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -40452,7 +51614,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o980",
+  "id": "o1409",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -40466,7 +51628,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o981",
+  "id": "o1410",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -40480,7 +51642,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o982",
+  "id": "o1411",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -40494,7 +51656,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o983",
+  "id": "o1412",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -40508,7 +51670,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o984",
+  "id": "o1413",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -40522,7 +51684,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o985",
+  "id": "o1414",
   "variantId": "medicube-collagen-night-wrapping-mask~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -40536,7 +51698,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o986",
+  "id": "o1415",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -40550,7 +51712,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o987",
+  "id": "o1416",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -40564,7 +51726,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o988",
+  "id": "o1417",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -40578,7 +51740,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o989",
+  "id": "o1418",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -40592,7 +51754,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o990",
+  "id": "o1419",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -40606,7 +51768,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o991",
+  "id": "o1420",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -40620,7 +51782,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o992",
+  "id": "o1421",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -40634,7 +51796,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o993",
+  "id": "o1422",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -40648,7 +51810,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o994",
+  "id": "o1423",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -40662,7 +51824,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o995",
+  "id": "o1424",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -40676,7 +51838,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o996",
+  "id": "o1425",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -40690,7 +51852,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o997",
+  "id": "o1426",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -40704,7 +51866,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o998",
+  "id": "o1427",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -40718,7 +51880,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o999",
+  "id": "o1428",
   "variantId": "beauty-of-joseon-ground-rice-and-honey-glow-mask~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -40732,7 +51894,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1000",
+  "id": "o1429",
   "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -40746,7 +51908,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1001",
+  "id": "o1430",
   "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -40760,7 +51922,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1002",
+  "id": "o1431",
   "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -40774,7 +51936,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1003",
+  "id": "o1432",
   "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -40788,7 +51950,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1004",
+  "id": "o1433",
   "variantId": "st-ives-fresh-skin-apricot-scrub~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -40802,7 +51964,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1005",
+  "id": "o1434",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -40816,7 +51978,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1006",
+  "id": "o1435",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -40830,7 +51992,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1007",
+  "id": "o1436",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -40844,7 +52006,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1008",
+  "id": "o1437",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -40858,7 +52020,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1009",
+  "id": "o1438",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -40872,7 +52034,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1010",
+  "id": "o1439",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -40886,7 +52048,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1011",
+  "id": "o1440",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -40900,7 +52062,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1012",
+  "id": "o1441",
   "variantId": "cosrx-full-fit-honey-sugar-lip-scrub~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -40914,7 +52076,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1013",
+  "id": "o1442",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -40928,7 +52090,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1014",
+  "id": "o1443",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -40942,7 +52104,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1015",
+  "id": "o1444",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -40956,7 +52118,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1016",
+  "id": "o1445",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -40970,7 +52132,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1017",
+  "id": "o1446",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -40984,7 +52146,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1018",
+  "id": "o1447",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -40998,7 +52160,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1019",
+  "id": "o1448",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -41012,7 +52174,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1020",
+  "id": "o1449",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -41026,7 +52188,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1021",
+  "id": "o1450",
   "variantId": "purito-dermide-cica-barrier-sleeping-pack~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -41040,7 +52202,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1022",
+  "id": "o1451",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -41054,7 +52216,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1023",
+  "id": "o1452",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -41068,7 +52230,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1024",
+  "id": "o1453",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -41082,7 +52244,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1025",
+  "id": "o1454",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -41096,7 +52258,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1026",
+  "id": "o1455",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -41110,7 +52272,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1027",
+  "id": "o1456",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -41124,7 +52286,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1028",
+  "id": "o1457",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -41138,7 +52300,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1029",
+  "id": "o1458",
   "variantId": "anua-heartleaf-pore-clay-pack~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -41152,7 +52314,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1030",
+  "id": "o1459",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -41166,7 +52328,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1031",
+  "id": "o1460",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -41180,7 +52342,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1032",
+  "id": "o1461",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -41194,7 +52356,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1033",
+  "id": "o1462",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -41208,7 +52370,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1034",
+  "id": "o1463",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -41222,7 +52384,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1035",
+  "id": "o1464",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -41236,7 +52398,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1036",
+  "id": "o1465",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -41250,7 +52412,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1037",
+  "id": "o1466",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -41264,7 +52426,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1038",
+  "id": "o1467",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -41278,7 +52440,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1039",
+  "id": "o1468",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -41292,7 +52454,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1040",
+  "id": "o1469",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -41306,7 +52468,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1041",
+  "id": "o1470",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -41320,7 +52482,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1042",
+  "id": "o1471",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -41334,7 +52496,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1043",
+  "id": "o1472",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -41348,7 +52510,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1044",
+  "id": "o1473",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -41362,7 +52524,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1045",
+  "id": "o1474",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -41376,7 +52538,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1046",
+  "id": "o1475",
   "variantId": "cosrx-aloe-soothing-sun-cream~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -41390,7 +52552,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1047",
+  "id": "o1476",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -41404,7 +52566,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1048",
+  "id": "o1477",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -41418,7 +52580,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1049",
+  "id": "o1478",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -41432,7 +52594,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1050",
+  "id": "o1479",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -41446,7 +52608,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1051",
+  "id": "o1480",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -41460,7 +52622,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1052",
+  "id": "o1481",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -41474,7 +52636,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1053",
+  "id": "o1482",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -41488,7 +52650,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1054",
+  "id": "o1483",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -41502,7 +52664,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1055",
+  "id": "o1484",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -41516,7 +52678,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1056",
+  "id": "o1485",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -41530,7 +52692,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1057",
+  "id": "o1486",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -41544,7 +52706,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1058",
+  "id": "o1487",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -41558,7 +52720,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1059",
+  "id": "o1488",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -41572,7 +52734,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1060",
+  "id": "o1489",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -41586,7 +52748,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1061",
+  "id": "o1490",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v2",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -41600,7 +52762,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1062",
+  "id": "o1491",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v2",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -41614,7 +52776,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1063",
+  "id": "o1492",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v2",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -41628,7 +52790,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1064",
+  "id": "o1493",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v2",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -41642,7 +52804,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1065",
+  "id": "o1494",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -41656,7 +52818,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1066",
+  "id": "o1495",
   "variantId": "isntree-hyaluronic-acid-watery-sun-gel~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -41670,7 +52832,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1067",
+  "id": "o1496",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -41684,7 +52846,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1068",
+  "id": "o1497",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -41698,7 +52860,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1069",
+  "id": "o1498",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -41712,7 +52874,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1070",
+  "id": "o1499",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -41726,7 +52888,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1071",
+  "id": "o1500",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -41740,7 +52902,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1072",
+  "id": "o1501",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -41754,7 +52916,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1073",
+  "id": "o1502",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -41768,7 +52930,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1074",
+  "id": "o1503",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -41782,7 +52944,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1075",
+  "id": "o1504",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -41796,7 +52958,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1076",
+  "id": "o1505",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -41810,7 +52972,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1077",
+  "id": "o1506",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -41824,7 +52986,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1078",
+  "id": "o1507",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -41838,7 +53000,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1079",
+  "id": "o1508",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -41852,7 +53014,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1080",
+  "id": "o1509",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -41866,7 +53028,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1081",
+  "id": "o1510",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -41880,7 +53042,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1082",
+  "id": "o1511",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -41894,7 +53056,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1083",
+  "id": "o1512",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v2",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -41908,7 +53070,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1084",
+  "id": "o1513",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -41922,7 +53084,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1085",
+  "id": "o1514",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -41936,7 +53098,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1086",
+  "id": "o1515",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -41950,7 +53112,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1087",
+  "id": "o1516",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -41964,7 +53126,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1088",
+  "id": "o1517",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v3",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -41978,7 +53140,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1089",
+  "id": "o1518",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -41992,7 +53154,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1090",
+  "id": "o1519",
   "variantId": "skin1004-hyalu-cica-water-fit-sun-serum~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -42006,7 +53168,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1091",
+  "id": "o1520",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -42020,7 +53182,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1092",
+  "id": "o1521",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -42034,7 +53196,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1093",
+  "id": "o1522",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -42048,7 +53210,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1094",
+  "id": "o1523",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -42062,7 +53224,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1095",
+  "id": "o1524",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -42076,7 +53238,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1096",
+  "id": "o1525",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -42090,7 +53252,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1097",
+  "id": "o1526",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -42104,7 +53266,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1098",
+  "id": "o1527",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -42118,7 +53280,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1099",
+  "id": "o1528",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -42132,7 +53294,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1100",
+  "id": "o1529",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -42146,7 +53308,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1101",
+  "id": "o1530",
   "variantId": "beauty-of-joseon-revive-eye-serum~v2",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -42160,7 +53322,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1102",
+  "id": "o1531",
   "variantId": "beauty-of-joseon-revive-eye-serum~v2",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -42174,7 +53336,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1103",
+  "id": "o1532",
   "variantId": "beauty-of-joseon-revive-eye-serum~v2",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -42188,7 +53350,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1104",
+  "id": "o1533",
   "variantId": "beauty-of-joseon-revive-eye-serum~v2",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -42202,7 +53364,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1105",
+  "id": "o1534",
   "variantId": "beauty-of-joseon-revive-eye-serum~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -42216,7 +53378,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1106",
+  "id": "o1535",
   "variantId": "beauty-of-joseon-revive-eye-serum~v2",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -42230,7 +53392,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1107",
+  "id": "o1536",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "kcarebd.com",
   "condition": "official",
@@ -42244,7 +53406,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1108",
+  "id": "o1537",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "perfectobd.com",
   "condition": "official",
@@ -42258,7 +53420,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1109",
+  "id": "o1538",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -42272,7 +53434,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1110",
+  "id": "o1539",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "aromyeo.com",
   "condition": "official",
@@ -42286,7 +53448,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1111",
+  "id": "o1540",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -42300,7 +53462,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1112",
+  "id": "o1541",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -42314,7 +53476,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1113",
+  "id": "o1542",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -42328,7 +53490,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1114",
+  "id": "o1543",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -42342,7 +53504,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1115",
+  "id": "o1544",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -42356,7 +53518,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1116",
+  "id": "o1545",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -42370,7 +53532,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1117",
+  "id": "o1546",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -42384,7 +53546,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1118",
+  "id": "o1547",
   "variantId": "cosrx-advanced-snail-peptide-eye-cream~v1",
   "sellerId": "shop.shajgoj.com",
   "condition": "official",
@@ -42398,7 +53560,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1119",
+  "id": "o1548",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "ohsogo.com",
   "condition": "official",
@@ -42412,7 +53574,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1120",
+  "id": "o1549",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "colorworld.com.bd",
   "condition": "official",
@@ -42426,7 +53588,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1121",
+  "id": "o1550",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "banglashoppers.com",
   "condition": "official",
@@ -42440,7 +53602,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1122",
+  "id": "o1551",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "koreanmartbd.com",
   "condition": "official",
@@ -42454,7 +53616,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1123",
+  "id": "o1552",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "glowellabd.com",
   "condition": "official",
@@ -42468,7 +53630,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1124",
+  "id": "o1553",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "emartwayskincare.com.bd",
   "condition": "official",
@@ -42482,7 +53644,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1125",
+  "id": "o1554",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "chardike.com",
   "condition": "official",
@@ -42496,7 +53658,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1126",
+  "id": "o1555",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "arogga.com",
   "condition": "official",
@@ -42510,7 +53672,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1127",
+  "id": "o1556",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "beprincessbd.com",
   "condition": "official",
@@ -42524,7 +53686,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1128",
+  "id": "o1557",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "skincareshop.com.bd",
   "condition": "official",
@@ -42538,7 +53700,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1129",
+  "id": "o1558",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "klassy.com.bd",
   "condition": "official",
@@ -42552,7 +53714,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1130",
+  "id": "o1559",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "liraimportltd.com",
   "condition": "official",
@@ -42566,7 +53728,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1131",
+  "id": "o1560",
   "variantId": "the-ordinary-caffeine-solution-5-egcg~v1",
   "sellerId": "herhappyskin.com",
   "condition": "official",
@@ -42580,10 +53742,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1132",
-  "variantId": "af-1-air-force-1-1-1-copy-sneakers~v1",
+  "id": "o1561",
+  "variantId": "nike-air-force-1~v1",
   "sellerId": "threesbd.com",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 4500,
   "oldPrice": 5200,
@@ -42594,10 +53756,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1133",
-  "variantId": "af-1-air-force-1-1-1-copy-sneakers~v1",
+  "id": "o1562",
+  "variantId": "nike-air-force-1~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 5000,
   "oldPrice": 6300,
@@ -42608,10 +53770,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1134",
-  "variantId": "af-1-air-force-1-1-1-copy-sneakers~v1",
+  "id": "o1563",
+  "variantId": "nike-air-force-1~v1",
   "sellerId": "splayd.com.bd",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 5800,
   "oldPrice": null,
@@ -42622,10 +53784,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1135",
-  "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
+  "id": "o1564",
+  "variantId": "adidas-campus-00s~v1",
   "sellerId": "dob.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4600,
   "oldPrice": null,
@@ -42636,10 +53798,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1136",
-  "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
+  "id": "o1565",
+  "variantId": "adidas-campus-00s~v1",
   "sellerId": "sneakerzonebd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4600,
   "oldPrice": null,
@@ -42650,10 +53812,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1137",
-  "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
+  "id": "o1566",
+  "variantId": "adidas-campus-00s~v1",
   "sellerId": "splayd.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 5800,
   "oldPrice": null,
@@ -42664,10 +53826,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1138",
-  "variantId": "campus-00s-campus-00s-1-1-copy-sneakers~v1",
+  "id": "o1567",
+  "variantId": "adidas-campus-00s~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 3500,
   "oldPrice": 6500,
@@ -42678,10 +53840,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1139",
-  "variantId": "samba-samba-og-1-1-copy-sneakers~v1",
+  "id": "o1568",
+  "variantId": "adidas-samba-og~v1",
   "sellerId": "dob.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 3900,
   "oldPrice": null,
@@ -42692,10 +53854,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1140",
-  "variantId": "samba-samba-og-1-1-copy-sneakers~v1",
+  "id": "o1569",
+  "variantId": "adidas-samba-og~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 5500,
   "oldPrice": null,
@@ -42706,10 +53868,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1141",
-  "variantId": "samba-samba-og-1-1-copy-sneakers~v1",
+  "id": "o1570",
+  "variantId": "adidas-samba-og~v1",
   "sellerId": "splayd.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 5500,
   "oldPrice": null,
@@ -42720,10 +53882,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1142",
-  "variantId": "samba-samba-vegan-1-1-copy-sneakers~v1",
+  "id": "o1571",
+  "variantId": "adidas-samba-vegan~v1",
   "sellerId": "dob.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 3600,
   "oldPrice": null,
@@ -42734,24 +53896,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1143",
-  "variantId": "samba-samba-vegan-1-1-copy-sneakers~v1",
-  "sellerId": "sneakerzonebd.com",
-  "condition": "unofficial",
-  "region": null,
-  "price": 4200,
-  "oldPrice": null,
-  "inStock": true,
-  "url": "https://sneakerzonebd.com/products/adidas-samba-vegan-og-copy",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-24T03:00:00.000Z"
- },
- {
-  "id": "o1144",
-  "variantId": "samba-samba-vegan-1-1-copy-sneakers~v1",
+  "id": "o1572",
+  "variantId": "adidas-samba-vegan~v1",
   "sellerId": "splayd.com.bd",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 5950,
   "oldPrice": null,
@@ -42762,10 +53910,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1145",
-  "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
+  "id": "o1573",
+  "variantId": "onitsuka-tiger-mexico-66~v1",
   "sellerId": "dob.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 5200,
   "oldPrice": null,
@@ -42776,10 +53924,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1146",
-  "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
+  "id": "o1574",
+  "variantId": "onitsuka-tiger-mexico-66~v1",
   "sellerId": "sneakerzonebd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 5200,
   "oldPrice": null,
@@ -42790,10 +53938,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1147",
-  "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
+  "id": "o1575",
+  "variantId": "onitsuka-tiger-mexico-66~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 5500,
   "oldPrice": null,
@@ -42804,10 +53952,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1148",
-  "variantId": "onitsuka-tiger-mexico-66-1-1-copy-sneakers~v1",
+  "id": "o1576",
+  "variantId": "onitsuka-tiger-mexico-66~v1",
   "sellerId": "sneakersbdofficial.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 3000,
   "oldPrice": null,
@@ -42818,10 +53966,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1149",
-  "variantId": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
+  "id": "o1577",
+  "variantId": "onitsuka-tiger-tokuten~v1",
   "sellerId": "dob.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 5200,
   "oldPrice": null,
@@ -42832,10 +53980,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1150",
-  "variantId": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
+  "id": "o1578",
+  "variantId": "onitsuka-tiger-tokuten~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4500,
   "oldPrice": null,
@@ -42846,10 +53994,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1151",
-  "variantId": "onitsuka-tiger-tokuten-1-1-copy-sneakers~v1",
+  "id": "o1579",
+  "variantId": "onitsuka-tiger-tokuten~v1",
   "sellerId": "sneakersbdofficial.com",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 5000,
   "oldPrice": null,
@@ -42860,10 +54008,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1152",
-  "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
+  "id": "o1580",
+  "variantId": "converse-chuck-70-high~v1",
   "sellerId": "dob.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 2500,
   "oldPrice": null,
@@ -42874,10 +54022,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1153",
-  "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
+  "id": "o1581",
+  "variantId": "converse-chuck-70-high~v1",
   "sellerId": "sneakerzonebd.com",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 3900,
   "oldPrice": null,
@@ -42888,10 +54036,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1154",
-  "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
+  "id": "o1582",
+  "variantId": "converse-chuck-70-high~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4500,
   "oldPrice": null,
@@ -42902,10 +54050,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1155",
-  "variantId": "converse-chuck-70-1-1-copy-sneakers~v1",
+  "id": "o1583",
+  "variantId": "converse-chuck-70-high~v1",
   "sellerId": "sneakersbdofficial.com",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 5500,
   "oldPrice": null,
@@ -42916,10 +54064,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1156",
-  "variantId": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
+  "id": "o1584",
+  "variantId": "converse-chuck-taylor-all-star-high~v1",
   "sellerId": "dob.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 1800,
   "oldPrice": null,
@@ -42930,10 +54078,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1157",
-  "variantId": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
+  "id": "o1585",
+  "variantId": "converse-chuck-taylor-all-star-high~v1",
   "sellerId": "sneakerzonebd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 1800,
   "oldPrice": null,
@@ -42944,10 +54092,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1158",
-  "variantId": "converse-chuck-taylor-all-star-high-1-1-copy-sneakers~v1",
+  "id": "o1586",
+  "variantId": "converse-chuck-taylor-all-star-high~v1",
   "sellerId": "trekntread.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 1650,
   "oldPrice": null,
@@ -42958,24 +54106,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1159",
-  "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
-  "sellerId": "splayd.com.bd",
-  "condition": "unofficial",
-  "region": null,
-  "price": 5950,
-  "oldPrice": null,
-  "inStock": true,
-  "url": "https://splayd.com.bd/products/j-1-low-panda-1-1-new",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-24T03:00:00.000Z"
- },
- {
-  "id": "o1160",
-  "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
+  "id": "o1587",
+  "variantId": "jordan-air-jordan-1-low~v1",
   "sellerId": "sneakersbdofficial.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 3500,
   "oldPrice": null,
@@ -42986,10 +54120,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1161",
-  "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
+  "id": "o1588",
+  "variantId": "jordan-air-jordan-1-low~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 6500,
   "oldPrice": null,
@@ -43000,10 +54134,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1162",
-  "variantId": "aj-1-jordan-1-low-1-1-copy-sneakers~v1",
+  "id": "o1589",
+  "variantId": "jordan-air-jordan-1-low~v1",
   "sellerId": "trekntread.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 2090,
   "oldPrice": null,
@@ -43014,10 +54148,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1163",
-  "variantId": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
+  "id": "o1590",
+  "variantId": "jordan-air-jordan-1-retro-high~v1",
   "sellerId": "splayd.com.bd",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 8750,
   "oldPrice": null,
@@ -43028,10 +54162,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1164",
-  "variantId": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
+  "id": "o1591",
+  "variantId": "jordan-air-jordan-1-retro-high~v1",
   "sellerId": "sneakersbdofficial.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4000,
   "oldPrice": null,
@@ -43042,10 +54176,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1165",
-  "variantId": "aj-1-jordan-1-retro-high-1-1-copy-sneakers~v1",
+  "id": "o1592",
+  "variantId": "jordan-air-jordan-1-retro-high~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 3800,
   "oldPrice": null,
@@ -43056,10 +54190,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1166",
-  "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
+  "id": "o1593",
+  "variantId": "jordan-air-jordan-4-retro~v1",
   "sellerId": "splayd.com.bd",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 8450,
   "oldPrice": null,
@@ -43070,10 +54204,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1167",
-  "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
+  "id": "o1594",
+  "variantId": "jordan-air-jordan-4-retro~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 6500,
   "oldPrice": null,
@@ -43084,10 +54218,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1168",
-  "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
+  "id": "o1595",
+  "variantId": "jordan-air-jordan-4-retro~v1",
   "sellerId": "trekntread.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4790,
   "oldPrice": null,
@@ -43098,10 +54232,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1169",
-  "variantId": "aj-4-jordan-4-retro-1-1-copy-sneakers~v1",
+  "id": "o1596",
+  "variantId": "jordan-air-jordan-4-retro~v1",
   "sellerId": "sneakersbdofficial.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 3500,
   "oldPrice": null,
@@ -43112,10 +54246,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1170",
-  "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
+  "id": "o1597",
+  "variantId": "nike-sb-dunk-low~v1",
   "sellerId": "dob.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4200,
   "oldPrice": null,
@@ -43126,10 +54260,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1171",
-  "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
+  "id": "o1598",
+  "variantId": "nike-sb-dunk-low~v1",
   "sellerId": "sneakerzonebd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4500,
   "oldPrice": null,
@@ -43140,10 +54274,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1172",
-  "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
+  "id": "o1599",
+  "variantId": "nike-sb-dunk-low~v1",
   "sellerId": "splayd.com.bd",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 6950,
   "oldPrice": null,
@@ -43154,10 +54288,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1173",
-  "variantId": "nike-sb-dunk-low-1-1-copy-sneakers~v1",
+  "id": "o1600",
+  "variantId": "nike-sb-dunk-low~v1",
   "sellerId": "sneakersbdofficial.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 3500,
   "oldPrice": null,
@@ -43168,10 +54302,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1174",
-  "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
+  "id": "o1601",
+  "variantId": "new-balance-9060~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 6000,
   "oldPrice": null,
@@ -43182,10 +54316,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1175",
-  "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
+  "id": "o1602",
+  "variantId": "new-balance-9060~v1",
   "sellerId": "splayd.com.bd",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 6200,
   "oldPrice": null,
@@ -43196,10 +54330,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1176",
-  "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
+  "id": "o1603",
+  "variantId": "new-balance-9060~v1",
   "sellerId": "trekntread.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 2990,
   "oldPrice": null,
@@ -43210,10 +54344,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1177",
-  "variantId": "new-balance-9060-1-1-copy-sneakers~v1",
+  "id": "o1604",
+  "variantId": "new-balance-9060~v1",
   "sellerId": "sneakersbdofficial.com",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 6500,
   "oldPrice": null,
@@ -43224,24 +54358,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1178",
-  "variantId": "new-balance-530-1-1-copy-sneakers~v1",
-  "sellerId": "dob.com.bd",
-  "condition": "unofficial",
-  "region": null,
-  "price": 4600,
-  "oldPrice": null,
-  "inStock": true,
-  "url": "https://dob.com.bd/product/new-balance-530-grey/",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-24T03:00:00.000Z"
- },
- {
-  "id": "o1179",
-  "variantId": "new-balance-530-1-1-copy-sneakers~v1",
+  "id": "o1605",
+  "variantId": "new-balance-530~v1",
   "sellerId": "sneakerzonebd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4600,
   "oldPrice": null,
@@ -43252,10 +54372,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1180",
-  "variantId": "new-balance-530-1-1-copy-sneakers~v1",
+  "id": "o1606",
+  "variantId": "new-balance-530~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 6600,
   "oldPrice": null,
@@ -43266,10 +54386,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1181",
-  "variantId": "new-balance-530-1-1-copy-sneakers~v1",
+  "id": "o1607",
+  "variantId": "new-balance-530~v1",
   "sellerId": "trekntread.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 2990,
   "oldPrice": null,
@@ -43280,10 +54400,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1182",
-  "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
+  "id": "o1608",
+  "variantId": "puma-speedcat-og~v1",
   "sellerId": "dob.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 5000,
   "oldPrice": null,
@@ -43294,10 +54414,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1183",
-  "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
+  "id": "o1609",
+  "variantId": "puma-speedcat-og~v1",
   "sellerId": "sneakerzonebd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 5000,
   "oldPrice": null,
@@ -43308,10 +54428,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1184",
-  "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
+  "id": "o1610",
+  "variantId": "puma-speedcat-og~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 5500,
   "oldPrice": null,
@@ -43322,10 +54442,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1185",
-  "variantId": "puma-speedcat-og-1-1-copy-sneakers~v1",
+  "id": "o1611",
+  "variantId": "puma-speedcat-og~v1",
   "sellerId": "trekntread.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 3590,
   "oldPrice": null,
@@ -43336,10 +54456,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1186",
-  "variantId": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
+  "id": "o1612",
+  "variantId": "adidas-gazelle-indoor~v1",
   "sellerId": "dob.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4300,
   "oldPrice": null,
@@ -43350,10 +54470,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1187",
-  "variantId": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
+  "id": "o1613",
+  "variantId": "adidas-gazelle-indoor~v1",
   "sellerId": "sneakerzonebd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4300,
   "oldPrice": null,
@@ -43364,10 +54484,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1188",
-  "variantId": "adidas-gazelle-indoor-1-1-copy-sneakers~v1",
+  "id": "o1614",
+  "variantId": "adidas-gazelle-indoor~v1",
   "sellerId": "sneakersbdofficial.com",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 5000,
   "oldPrice": null,
@@ -43378,10 +54498,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1189",
-  "variantId": "vans-knu-skool-1-1-copy-sneakers~v1",
+  "id": "o1615",
+  "variantId": "vans-knu-skool~v1",
   "sellerId": "dob.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4300,
   "oldPrice": null,
@@ -43392,10 +54512,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1190",
-  "variantId": "vans-knu-skool-1-1-copy-sneakers~v1",
+  "id": "o1616",
+  "variantId": "vans-knu-skool~v1",
   "sellerId": "sneakerzonebd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4300,
   "oldPrice": null,
@@ -43406,10 +54526,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1191",
-  "variantId": "vans-knu-skool-1-1-copy-sneakers~v1",
+  "id": "o1617",
+  "variantId": "vans-knu-skool~v1",
   "sellerId": "sneakersbdofficial.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4000,
   "oldPrice": null,
@@ -43420,10 +54540,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1192",
-  "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
+  "id": "o1618",
+  "variantId": "adidas-adizero-evo-sl~v1",
   "sellerId": "threesbd.com",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 5000,
   "oldPrice": null,
@@ -43434,10 +54554,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1193",
-  "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
+  "id": "o1619",
+  "variantId": "adidas-adizero-evo-sl~v1",
   "sellerId": "dob.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 4800,
   "oldPrice": null,
@@ -43448,24 +54568,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1194",
-  "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
-  "sellerId": "splayd.com.bd",
-  "condition": "unofficial",
-  "region": null,
-  "price": 4950,
-  "oldPrice": null,
-  "inStock": true,
-  "url": "https://splayd.com.bd/products/adizero-evo-sl-mississippi-state",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-24T03:00:00.000Z"
- },
- {
-  "id": "o1195",
-  "variantId": "adidas-adizero-evo-sl-1-1-copy-sneakers~v1",
+  "id": "o1620",
+  "variantId": "adidas-adizero-evo-sl~v1",
   "sellerId": "sneakersbdofficial.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 3300,
   "oldPrice": null,
@@ -43476,10 +54582,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1196",
-  "variantId": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
+  "id": "o1621",
+  "variantId": "adidas-adizero-adios-pro-evo-1~v1",
   "sellerId": "ragenbd.com",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 6800,
   "oldPrice": null,
@@ -43490,24 +54596,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1197",
-  "variantId": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
-  "sellerId": "splayd.com.bd",
-  "condition": "unofficial",
-  "region": null,
-  "price": 5950,
-  "oldPrice": null,
-  "inStock": true,
-  "url": "https://splayd.com.bd/products/adizero-adios-pro-evo-1-white-black",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-24T03:00:00.000Z"
- },
- {
-  "id": "o1198",
-  "variantId": "adidas-adizero-adios-pro-evo-1-1-1-copy-sneakers~v1",
+  "id": "o1622",
+  "variantId": "adidas-adizero-adios-pro-evo-1~v1",
   "sellerId": "trekntread.com",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 4790,
   "oldPrice": null,
@@ -43518,10 +54610,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1199",
-  "variantId": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
+  "id": "o1623",
+  "variantId": "adidas-adizero-adios-pro-4~v1",
   "sellerId": "threesbd.com",
-  "condition": "unofficial",
+  "condition": "replica_premium",
   "region": null,
   "price": 5000,
   "oldPrice": null,
@@ -43532,10 +54624,10 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1200",
-  "variantId": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
+  "id": "o1624",
+  "variantId": "adidas-adizero-adios-pro-4~v1",
   "sellerId": "splayd.com.bd",
-  "condition": "unofficial",
+  "condition": "replica",
   "region": null,
   "price": 5500,
   "oldPrice": null,
@@ -43546,21 +54638,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1201",
-  "variantId": "adidas-adizero-adios-pro-4-1-1-copy-sneakers~v1",
-  "sellerId": "ragenbd.com",
-  "condition": "unofficial",
-  "region": null,
-  "price": 6500,
-  "oldPrice": null,
-  "inStock": true,
-  "url": "https://ragenbd.com/products/y-3-adios-pro-4-black",
-  "source": "site",
-  "published": true,
-  "checkedAt": "2026-10-24T03:00:00.000Z"
- },
- {
-  "id": "o1202",
+  "id": "o1625",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "startech.com.bd",
   "condition": "unofficial",
@@ -43574,7 +54652,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1203",
+  "id": "o1626",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -43588,7 +54666,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1204",
+  "id": "o1627",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -43602,7 +54680,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1205",
+  "id": "o1628",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -43616,7 +54694,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1206",
+  "id": "o1629",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -43630,7 +54708,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1207",
+  "id": "o1630",
   "variantId": "apple-watch-series-11~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -43644,7 +54722,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1208",
+  "id": "o1631",
   "variantId": "apple-watch-series-11~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -43658,7 +54736,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1209",
+  "id": "o1632",
   "variantId": "apple-watch-series-11~v3",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -43672,7 +54750,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1210",
+  "id": "o1633",
   "variantId": "apple-watch-series-11~v4",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -43686,7 +54764,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1211",
+  "id": "o1634",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -43700,7 +54778,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1212",
+  "id": "o1635",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -43714,7 +54792,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1213",
+  "id": "o1636",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -43728,7 +54806,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1214",
+  "id": "o1637",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -43742,7 +54820,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1215",
+  "id": "o1638",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -43756,7 +54834,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1216",
+  "id": "o1639",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -43770,7 +54848,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1217",
+  "id": "o1640",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -43784,7 +54862,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1218",
+  "id": "o1641",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -43798,7 +54876,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-25T03:00:00.000Z"
  },
  {
-  "id": "o1219",
+  "id": "o1642",
   "variantId": "samsung-galaxy-watch8~v1",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -43812,7 +54890,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1220",
+  "id": "o1643",
   "variantId": "samsung-galaxy-watch8~v2",
   "sellerId": "diamu.com.bd",
   "condition": "unofficial",
@@ -43826,7 +54904,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1221",
+  "id": "o1644",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -43840,7 +54918,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1222",
+  "id": "o1645",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -43854,7 +54932,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1223",
+  "id": "o1646",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -43868,7 +54946,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1224",
+  "id": "o1647",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -43882,7 +54960,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1225",
+  "id": "o1648",
   "variantId": "amazfit-active-2-premium~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -43896,7 +54974,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1226",
+  "id": "o1649",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -43910,7 +54988,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1227",
+  "id": "o1650",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "diamu.com.bd",
   "condition": "official",
@@ -43924,7 +55002,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1228",
+  "id": "o1651",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -43938,7 +55016,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1229",
+  "id": "o1652",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -43952,7 +55030,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1230",
+  "id": "o1653",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "official",
@@ -43966,7 +55044,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1231",
+  "id": "o1654",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "applegadgetsbd.com",
   "condition": "unofficial",
@@ -43980,7 +55058,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1232",
+  "id": "o1655",
   "variantId": "huawei-watch-fit-4~v1",
   "sellerId": "selltech.com.bd",
   "condition": "official",
@@ -43994,7 +55072,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1233",
+  "id": "o1656",
   "variantId": "xiaomi-redmi-watch-6-active~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44008,7 +55086,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1234",
+  "id": "o1657",
   "variantId": "xiaomi-redmi-watch-6-active~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -44022,7 +55100,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-21T03:00:00.000Z"
  },
  {
-  "id": "o1235",
+  "id": "o1658",
   "variantId": "amazfit-bip-5-unity-smart-watch~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -44036,7 +55114,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1236",
+  "id": "o1659",
   "variantId": "amazfit-bip-5-unity-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44050,7 +55128,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1237",
+  "id": "o1660",
   "variantId": "amazfit-bip-5-unity-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44064,7 +55142,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1238",
+  "id": "o1661",
   "variantId": "huawei-watch-gt-4-46mm~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -44078,7 +55156,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1239",
+  "id": "o1662",
   "variantId": "huawei-watch-gt-4-46mm~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44092,7 +55170,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1240",
+  "id": "o1663",
   "variantId": "xiaomi-redmi-watch-5~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44106,7 +55184,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1241",
+  "id": "o1664",
   "variantId": "xiaomi-redmi-watch-5~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -44120,7 +55198,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1242",
+  "id": "o1665",
   "variantId": "xiaomi-redmi-watch-5~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44134,7 +55212,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1243",
+  "id": "o1666",
   "variantId": "apple-watch-se-2nd-gen~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44148,7 +55226,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1244",
+  "id": "o1667",
   "variantId": "apple-watch-se-2nd-gen~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -44162,7 +55240,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1245",
+  "id": "o1668",
   "variantId": "apple-watch-se-2nd-gen~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -44176,7 +55254,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1246",
+  "id": "o1669",
   "variantId": "huawei-watch-gt-6-46mm~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44190,7 +55268,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1247",
+  "id": "o1670",
   "variantId": "huawei-watch-gt-6-46mm~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -44204,7 +55282,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1248",
+  "id": "o1671",
   "variantId": "huawei-watch-gt-6-46mm~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44218,7 +55296,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1249",
+  "id": "o1672",
   "variantId": "xiaomi-watch-s4~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -44232,7 +55310,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1250",
+  "id": "o1673",
   "variantId": "xiaomi-watch-s4~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44246,7 +55324,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1251",
+  "id": "o1674",
   "variantId": "xiaomi-watch-s4~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44260,7 +55338,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1252",
+  "id": "o1675",
   "variantId": "haylou-solar-lite-2~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44274,7 +55352,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1253",
+  "id": "o1676",
   "variantId": "haylou-solar-lite-2~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44288,7 +55366,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1254",
+  "id": "o1677",
   "variantId": "imiki-st2-bluetooth-calling-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44302,7 +55380,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1255",
+  "id": "o1678",
   "variantId": "imiki-st2-bluetooth-calling-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44316,7 +55394,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1256",
+  "id": "o1679",
   "variantId": "kospet-orb-2-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44330,7 +55408,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1257",
+  "id": "o1680",
   "variantId": "kospet-orb-2-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44344,7 +55422,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1258",
+  "id": "o1681",
   "variantId": "imiki-frame-2-pro-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44358,7 +55436,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1259",
+  "id": "o1682",
   "variantId": "imiki-frame-2-pro-smart-watch~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -44372,7 +55450,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1260",
+  "id": "o1683",
   "variantId": "oraimo-watch-5-lite~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44386,7 +55464,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1261",
+  "id": "o1684",
   "variantId": "oraimo-watch-5-lite~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44400,7 +55478,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1262",
+  "id": "o1685",
   "variantId": "kospet-tank-t4c-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44414,7 +55492,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1263",
+  "id": "o1686",
   "variantId": "kospet-tank-t4c-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44428,7 +55506,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1264",
+  "id": "o1687",
   "variantId": "kospet-tank-t4c-smart-watch~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -44442,7 +55520,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1265",
+  "id": "o1688",
   "variantId": "haylou-watch-4-with-gps~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44456,7 +55534,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1266",
+  "id": "o1689",
   "variantId": "haylou-watch-4-with-gps~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44470,7 +55548,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1267",
+  "id": "o1690",
   "variantId": "haylou-watch-4-with-gps~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -44484,7 +55562,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1268",
+  "id": "o1691",
   "variantId": "haylou-watch-4-with-gps~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -44498,7 +55576,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1269",
+  "id": "o1692",
   "variantId": "oraimo-watch-6-osw-807~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44512,7 +55590,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1270",
+  "id": "o1693",
   "variantId": "oraimo-watch-6-osw-807~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44526,7 +55604,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1271",
+  "id": "o1694",
   "variantId": "kospet-orb-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44540,7 +55618,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1272",
+  "id": "o1695",
   "variantId": "kospet-orb-smart-watch~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -44554,7 +55632,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1273",
+  "id": "o1696",
   "variantId": "kospet-orb-smart-watch~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -44568,7 +55646,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1274",
+  "id": "o1697",
   "variantId": "kospet-tank-t3-ultra-smart-watch~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -44582,7 +55660,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1275",
+  "id": "o1698",
   "variantId": "kospet-tank-t3-ultra-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44596,7 +55674,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1276",
+  "id": "o1699",
   "variantId": "kospet-tank-t3-ultra-smart-watch~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -44610,7 +55688,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1277",
+  "id": "o1700",
   "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44624,7 +55702,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1278",
+  "id": "o1701",
   "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -44638,7 +55716,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1279",
+  "id": "o1702",
   "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44652,7 +55730,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1280",
+  "id": "o1703",
   "variantId": "kieslect-actor-bt-calling-smart-watch~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -44666,7 +55744,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1281",
+  "id": "o1704",
   "variantId": "oraimo-watch-nova-2r~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44680,7 +55758,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1282",
+  "id": "o1705",
   "variantId": "oraimo-watch-nova-2r~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44694,7 +55772,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1283",
+  "id": "o1706",
   "variantId": "oraimo-watch-nova-2r~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -44708,7 +55786,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1284",
+  "id": "o1707",
   "variantId": "amazfit-bip-6~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44722,7 +55800,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1285",
+  "id": "o1708",
   "variantId": "amazfit-bip-6~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -44736,7 +55814,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1286",
+  "id": "o1709",
   "variantId": "amazfit-bip-6~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44750,7 +55828,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1287",
+  "id": "o1710",
   "variantId": "amazfit-active-2~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44764,7 +55842,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1288",
+  "id": "o1711",
   "variantId": "amazfit-active-2~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44778,7 +55856,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1289",
+  "id": "o1712",
   "variantId": "amazfit-active-2~v1",
   "sellerId": "genten.com.bd",
   "condition": "official",
@@ -44792,7 +55870,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1290",
+  "id": "o1713",
   "variantId": "xiaomi-watch-2~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44806,7 +55884,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1291",
+  "id": "o1714",
   "variantId": "xiaomi-watch-2~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -44820,7 +55898,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1292",
+  "id": "o1715",
   "variantId": "xiaomi-watch-2~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44834,7 +55912,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1293",
+  "id": "o1716",
   "variantId": "xiaomi-watch-2~v1",
   "sellerId": "motionview.com.bd",
   "condition": "official",
@@ -44848,7 +55926,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1294",
+  "id": "o1717",
   "variantId": "huawei-watch-fit-3~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -44862,7 +55940,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1295",
+  "id": "o1718",
   "variantId": "huawei-watch-fit-3~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -44876,7 +55954,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1296",
+  "id": "o1719",
   "variantId": "huawei-watch-fit-3~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44890,7 +55968,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1297",
+  "id": "o1720",
   "variantId": "huawei-watch-fit-3~v1",
   "sellerId": "gadgetbreeze.com.bd",
   "condition": "unofficial",
@@ -44904,7 +55982,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1298",
+  "id": "o1721",
   "variantId": "samsung-galaxy-watch-7-40mm~v1",
   "sellerId": "startech.com.bd",
   "condition": "official",
@@ -44918,7 +55996,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1299",
+  "id": "o1722",
   "variantId": "samsung-galaxy-watch-7-40mm~v1",
   "sellerId": "dazzle.com.bd",
   "condition": "unofficial",
@@ -44932,7 +56010,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1300",
+  "id": "o1723",
   "variantId": "samsung-galaxy-watch-7-40mm~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44946,7 +56024,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1301",
+  "id": "o1724",
   "variantId": "huawei-watch-gt-7-46mm~v1",
   "sellerId": "sumashtech.com",
   "condition": "unofficial",
@@ -44960,7 +56038,7 @@ export const catalogOffers: Offer[] = [
   "checkedAt": "2026-10-24T03:00:00.000Z"
  },
  {
-  "id": "o1302",
+  "id": "o1725",
   "variantId": "huawei-watch-gt-7-46mm~v1",
   "sellerId": "gadgetandgear.com",
   "condition": "official",
@@ -44972,5 +56050,327 @@ export const catalogOffers: Offer[] = [
   "source": "site",
   "published": true,
   "checkedAt": "2026-10-24T03:00:00.000Z"
+ },
+ {
+  "id": "o1726",
+  "variantId": "pureit-classic-23l~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 5400,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/pureit-classic-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1727",
+  "variantId": "pureit-classic-23l~v1",
+  "sellerId": "othoba.com",
+  "condition": "official",
+  "region": null,
+  "price": 4949,
+  "oldPrice": 5499,
+  "inStock": true,
+  "url": "https://othoba.com/pureit-classic-blue-23l-water-purifier-4-stage-gravity-based-water-purifier-best-buy-1040779",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1728",
+  "variantId": "pureit-classic-23l~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 4990,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/pureit-classic-23l-water-purifier/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1729",
+  "variantId": "pureit-marina-ro-uv-mf-6l~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 20500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/pureit-marina-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1730",
+  "variantId": "pureit-marina-ro-uv-mf-6l~v1",
+  "sellerId": "mke.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 20000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://mke.com.bd/pureit-marina-6-ltr-ro-uv-mf-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1731",
+  "variantId": "pureit-marina-ro-uv-mf-6l~v1",
+  "sellerId": "othoba.com",
+  "condition": "official",
+  "region": null,
+  "price": 18900,
+  "oldPrice": 21000,
+  "inStock": true,
+  "url": "https://othoba.com/pureit-marina-rouvmf-6l-water-purifier-7-stage-purification-with-20lhour-high-speed-technology-best-buy-1040783",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1732",
+  "variantId": "pureit-wave-ro-mf-6l~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 16000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/pureit-wave-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1733",
+  "variantId": "pureit-wave-ro-mf-6l~v1",
+  "sellerId": "mke.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 16000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://mke.com.bd/pureit-wave-6-ltr-ro-mf-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1734",
+  "variantId": "pureit-wave-ro-mf-6l~v1",
+  "sellerId": "othoba.com",
+  "condition": "official",
+  "region": null,
+  "price": 14850,
+  "oldPrice": 16500,
+  "inStock": true,
+  "url": "https://othoba.com/pureit-wave-romf-6l-water-purifier-6-stage-purification-with-20lhour-high-speed-ro-technology-best-buy-1040782",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1735",
+  "variantId": "pureit-wave-ro-mf-6l~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 15500,
+  "oldPrice": 16500,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/pureit-wave-ro-mf-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1736",
+  "variantId": "pureit-vital-max-ro-uv-7l~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 25000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/pureit-vital-max-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1737",
+  "variantId": "pureit-vital-max-ro-uv-7l~v1",
+  "sellerId": "mke.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 24500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://mke.com.bd/pureit-vital-max-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1738",
+  "variantId": "pureit-vital-max-ro-uv-7l~v1",
+  "sellerId": "othoba.com",
+  "condition": "official",
+  "region": null,
+  "price": 23408,
+  "oldPrice": 26009,
+  "inStock": true,
+  "url": "https://othoba.com/pureit-vital-max-7l-rouv-water-purifier-with-7-stage-purification-mineral-enhancer-best-buy-1040781",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1739",
+  "variantId": "pureit-ultima-mineral-ro-uv-mf-10l~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 32000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/pureit-ultima-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1740",
+  "variantId": "pureit-ultima-mineral-ro-uv-mf-10l~v1",
+  "sellerId": "mke.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 31000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://mke.com.bd/pureit-ultima-mineral-ro-uv-mf-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1741",
+  "variantId": "pureit-ultima-mineral-ro-uv-mf-10l~v1",
+  "sellerId": "othoba.com",
+  "condition": "official",
+  "region": null,
+  "price": 29700,
+  "oldPrice": 33000,
+  "inStock": true,
+  "url": "https://othoba.com/pureit-ultima-mineral-rouvmf-10l-water-purifier-7-stage-purification-with-digital-purity-indicator-best-buy-1040780",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1742",
+  "variantId": "pureit-ultima-mineral-ro-uv-mf-10l~v1",
+  "sellerId": "diamu.com.bd",
+  "condition": "unofficial",
+  "region": null,
+  "price": 32500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://diamu.com.bd/product/pureit-mineral-ultima-rouvmf/",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1743",
+  "variantId": "pureit-ultima-pro-ro-mf-dual-uv-9l~v1",
+  "sellerId": "startech.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 35000,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://www.startech.com.bd/pureit-ultima-pro-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1744",
+  "variantId": "pureit-ultima-pro-ro-mf-dual-uv-9l~v1",
+  "sellerId": "mke.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 33500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://mke.com.bd/pureit-ultima-pro-ro-mf-dual-uv-in-tank-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1745",
+  "variantId": "pureit-ultima-pro-ro-mf-dual-uv-9l~v1",
+  "sellerId": "othoba.com",
+  "condition": "official",
+  "region": null,
+  "price": 32400,
+  "oldPrice": 36000,
+  "inStock": true,
+  "url": "https://othoba.com/pureit-ultima-pro-9l-rouvmf-water-purifier-8-stage-purification-with-dual-uv-mineral-enrichment-best-buy-1040784",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1746",
+  "variantId": "kent-grand-star-ro-uv-uf-9l~v1",
+  "sellerId": "mke.com.bd",
+  "condition": "official",
+  "region": null,
+  "price": 32500,
+  "oldPrice": null,
+  "inStock": true,
+  "url": "https://mke.com.bd/kent-grand-star-ro-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1747",
+  "variantId": "kent-grand-star-ro-uv-uf-9l~v1",
+  "sellerId": "othoba.com",
+  "condition": "official",
+  "region": null,
+  "price": 30000,
+  "oldPrice": 34500,
+  "inStock": true,
+  "url": "https://othoba.com/kent-9-liter-grand-star-ro-rouvufalkalinecoppertds-controluv-led-tank-auto-flush-feature-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
+ },
+ {
+  "id": "o1748",
+  "variantId": "kent-grand-star-ro-uv-uf-9l~v1",
+  "sellerId": "applegadgetsbd.com",
+  "condition": "unofficial",
+  "region": null,
+  "price": 30500,
+  "oldPrice": 34900,
+  "inStock": true,
+  "url": "https://www.applegadgetsbd.com/product/kent-grand-star-water-purifier",
+  "source": "site",
+  "published": true,
+  "checkedAt": "2026-10-26T03:00:00.000Z"
  }
 ];

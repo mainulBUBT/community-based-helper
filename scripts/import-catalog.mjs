@@ -3,12 +3,13 @@
 // Output: src/data/catalog.generated.ts and supabase/seed.sql
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { CONDITIONS } from "../src/types/catalog.ts";
 import { sameProduct } from "../src/utils/catalog.ts";
 import { canonicalRegion } from "../src/utils/region.ts";
 
 const DIR = "data/catalog";
 const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color", "gpu", "cpu", "resolution", "battery", "capacity", "wattage"];
-const DEFAULT_CATEGORY = { mobile: "mobile", watch: "watch", skincare: "skincare", powerbank: "powerbank", sneakers: "sneakers", monitor: "monitor", charger: "charger", fan: "fan" };
+const DEFAULT_CATEGORY = { mobile: "mobile", watch: "watch", skincare: "skincare", powerbank: "powerbank", sneakers: "sneakers", monitor: "monitor", charger: "charger", fan: "fan", "water-purifier": "water-purifier", router: "router", makeup: "makeup" };
 
 const slugify = (text) =>
   text
@@ -61,7 +62,7 @@ for (const file of files) {
       if (!url || !variant || !Number.isInteger(offer.price) || offer.price <= 0) continue;
       const host = hostOf(url);
       if (!sellers.has(host)) sellers.set(host, { name: offer.site, website: `https://${new URL(url).hostname}/`, note: null });
-      const condition = offer.condition === "unofficial" || offer.condition === "used" ? offer.condition : "official";
+      const condition = CONDITIONS.includes(offer.condition) ? offer.condition : "official";
       const key = `${variant.id}|${host}|${condition}`;
       const existing = kept.find((o) => o.key === key);
       if (existing && existing.price <= offer.price) continue;

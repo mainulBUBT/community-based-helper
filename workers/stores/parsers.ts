@@ -291,3 +291,11 @@ export async function hhsVariants(html: string, url: string): Promise<ShopVarian
   const size = /(\d+(?:\.\d+)?\s*(?:ml|g|pcs|oz))\b/i.exec(String(data.name ?? ""));
   return variant(size ? [["size", size[1].replace(/\s+/g, "").toLowerCase()]] : [], sale && full && sale < full ? sale : full, full, typeof data.stock === "number" ? data.stock > 0 : null);
 }
+
+// Othoba (nopCommerce): JSON-LD এর price মূল দাম, ছাড়ের দাম পাশের sale_price এ
+export function othobaVariants(html: string): ShopVariant[] {
+  const quote = structuredQuote(html);
+  if (!quote) return [];
+  const sale = toTaka(/"sale_price"\s*:\s*"([\d.]+)"/.exec(html)?.[1]);
+  return variant([], sale && sale < quote.price ? sale : quote.price, quote.price, quote.inStock);
+}

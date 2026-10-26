@@ -1,6 +1,7 @@
 export type Category = string;
 export type SellerKind = "website" | "shop" | "group";
-export type Condition = "official" | "unofficial" | "used";
+export const CONDITIONS = ["official", "unofficial", "used", "replica_premium", "replica"] as const;
+export type Condition = (typeof CONDITIONS)[number];
 export type OfferSource = "site" | "seller" | "user" | "admin";
 
 export const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color", "gpu", "cpu", "resolution", "battery", "capacity", "wattage"] as const;
@@ -18,6 +19,10 @@ export interface CategoryInfo {
   active: boolean;
   // false: ব্র্যান্ড ওয়ারেন্টি বলে কিছু নেই (স্কিনকেয়ার, জুতা), তাই অফিসিয়াল/আনঅফিসিয়াল ভাগ দেখানো হয় না
   warranty?: boolean;
+  // এই ক্যাটাগরিতে দামের কোন কোন ধরন হয় (ক্রমে); না থাকলে ইলেকট্রনিক্সের official/unofficial/used
+  conditions?: Condition[];
+  // true: নকল বেশি হয় এমন পণ্য (মেকআপ, স্কিনকেয়ার) — পণ্যের পাতায় "কেনার আগে আসল কিনা যাচাই করুন"
+  verifyNote?: boolean;
 }
 
 export interface SpecItem {
@@ -109,6 +114,7 @@ export interface OfferView extends Offer {
 export interface ProductSummary {
   product: Product;
   lowest: number | null;
+  condition: Condition | null;
   lowestAny: number | null;
   compareAt: number | null;
   inStock: boolean;

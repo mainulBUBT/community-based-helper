@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, ChevronDown, ChevronRight, Clock, ExternalLink, Globe, Megaphone, Phone, Share2, Store } from "lucide-react";
+import { Check, ChevronDown, ChevronRight, Clock, ExternalLink, Globe, Megaphone, Phone, Store } from "lucide-react";
 import Link from "next/link";
 import { useState, type ReactNode } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
@@ -13,20 +13,19 @@ import { SaveButton } from "@/components/product/SaveButton";
 import { SellerLogo } from "@/components/seller/SellerLogo";
 import { VerifiedBadge } from "@/components/seller/VerifiedBadge";
 import { EmptyState } from "@/components/ui/EmptyState";
+import { ShareButton } from "@/components/ui/ShareButton";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
 import { useSaved } from "@/hooks/useSaved";
-import { sharePage } from "@/lib/share";
 import type { RegionNote } from "@/types/admin";
 import { AXES, type Axis, type Condition, type OfferView, type ProductDetail, type SpecGroup, type Variant } from "@/types/catalog";
 import { byStock } from "@/utils/catalog";
+import { categoryConditions, conditionLabel, isReplica } from "@/utils/categories";
 import { formatTaka, telLink } from "@/utils/format";
 import { primaryRegion } from "@/utils/region";
 import { brandPath, categoryPath, hostOf } from "@/utils/url";
 import { keySpecs, specHighlights } from "@/utils/specs";
 import { sortAxisValues } from "@/utils/variants";
-
-const CONDITIONS: Condition[] = ["official", "unofficial", "used"];
 
 const imageFor = (images: string[], color?: string) => {
   if (!color) return 0;
@@ -198,15 +197,17 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   const { lang, t, num, ago, prefix } = useI18n();
   const { product, offers, history, category, alternatives } = initial;
   const { slugs, isSaved } = useSaved();
-  const { name: categoryName, warranty: hasWarranty } = useCategories();
-  const warranty = category ? category.warranty !== false : hasWarranty(product.category);
+  const { name: categoryName, find } = useCategories();
+  const info = category ?? find(product.category);
+  const warranty = info?.warranty !== false;
+  const kinds = categoryConditions(info);
   const categoryLabel = category ? (lang === "en" ? category.nameEn : category.name) : categoryName(product.category);
   const [variantId, setVariantId] = useState(product.variants[0]?.id);
   const variant = product.variants.find((v) => v.id === variantId) ?? product.variants[0];
   const cheaper = alternatives[variant?.id ?? ""] ?? [];
 
   const variantOffers = offers.filter((o) => o.variantId === variant?.id);
-  const conditions = CONDITIONS.filter((c) => variantOffers.some((o) => o.condition === c));
+  const conditions = kinds.filter((c) => variantOffers.some((o) => o.condition === c));
   const [chosen, setChosen] = useState<Condition | "all">("all");
   const condition: Condition | "all" = chosen === "all" || conditions.includes(chosen) ? chosen : "all";
   const regions = [...new Set(variantOffers.map((o) => primaryRegion(o.region)).filter((r): r is string => Boolean(r)))].sort();
@@ -221,7 +222,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   const fullName = `${product.brand} ${product.name}`;
 
   const official = variant?.officialPrice ?? null;
-  const reference = best ? Math.max(best.oldPrice ?? 0, best.condition === "official" || !warranty ? (official ?? 0) : 0) : 0;
+  const reference = best ? Math.max(best.oldPrice ?? 0, best.condition === "official" || (!warranty && !isReplica(best.condition)) ? (official ?? 0) : 0) : 0;
   const off = best && reference > best.price ? Math.round(((reference - best.price) / reference) * 100) : 0;
   const variantLowest = (id: string) => {
     const matching = offers.filter((o) => o.variantId === id && (condition === "all" || o.condition === condition));
@@ -270,14 +271,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
               <h1 className="text-[20px] leading-tight font-semibold tracking-tight text-ink md:text-[24px]">{product.name}</h1>
             </div>
             <div className="flex shrink-0 gap-2">
-              <button
-                type="button"
-                aria-label={t.common.share}
-                onClick={() => sharePage(fullName, t.common)}
-                className="flex size-11 items-center justify-center rounded-md border border-line bg-surface text-dim hover:border-dim hover:text-ink"
-              >
-                <Share2 size={18} aria-hidden="true" />
-              </button>
+              <ShareButton title={fullName} className="flex size-11 items-center justify-center rounded-md border border-line bg-surface text-dim hover:border-dim hover:text-ink" />
               <SaveButton slug={product.slug} />
             </div>
           </div>
@@ -314,7 +308,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
                 <span className="font-medium text-ink">{t.product.atStore(best.seller.name)}</span>
                 {best.region && <span className="text-dim">({best.region})</span>}
                 <VerifiedBadge verified={best.seller.verified} />
-                {official && official !== reference && (
+                {official && official !== reference && !isReplica(best.condition) && (
                   <span className="text-dim">
                     · {warranty ? t.product.officialShort : t.product.listPrice} {formatTaka(official, lang)}
                   </span>
@@ -328,9 +322,9 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
 
           {variant && product.variants.length > 1 && <VariantPicker variants={product.variants} current={variant} onPick={setVariantId} priceOf={variantLowest} />}
 
-          {warranty && conditions.length > 1 && (
+          {conditions.length > 1 && (
             <fieldset className="flex flex-col">
-              <legend className="mb-2 text-sm text-dim">{t.product.condition}</legend>
+              <legend className="mb-2 text-sm text-dim">{warranty ? t.product.condition : t.product.kind}</legend>
               <div className="inline-flex w-fit flex-wrap rounded-md border border-line bg-surface-2 p-1">
                 {(["all", ...conditions] as const).map((c) => (
                   <button
@@ -343,7 +337,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
                     }}
                     className={`h-9 rounded px-3.5 text-sm font-medium transition-colors ${!region && c === condition ? "bg-surface text-ink shadow-sm" : "text-dim hover:text-ink"}`}
                   >
-                    {c === "all" ? t.search.all : t.condition[c]} <span className="text-faint">({num(c === "all" ? variantOffers.length : variantOffers.filter((o) => o.condition === c).length)})</span>
+                    {c === "all" ? t.search.all : conditionLabel(t, c, warranty)} <span className="text-faint">({num(c === "all" ? variantOffers.length : variantOffers.filter((o) => o.condition === c).length)})</span>
                   </button>
                 ))}
               </div>
@@ -388,6 +382,8 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
             <p className="rounded-md border border-gold/30 bg-gold-soft px-3.5 py-2.5 text-[13px] leading-relaxed text-gold-text">{needsNeir ? t.product.unofficialNeir : t.product.unofficialWarning}</p>
           )}
 
+          {info?.verifyNote && <p className="rounded-md border border-gold/30 bg-gold-soft px-3.5 py-2.5 text-[13px] leading-relaxed text-gold-text">{t.product.verifyNote}</p>}
+
           {best && (
             <div className="flex flex-col gap-3">
               <div className="hidden gap-3 md:flex">
@@ -408,7 +404,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
 
       {shown.length > 0 && (
         <Panel title={t.product.allPrices} subtitle={product.variants.length > 1 ? variantName : undefined} id="stores">
-          <OffersTable offers={shown} warranty={warranty} />
+          <OffersTable offers={shown} warranty={warranty} showCondition={kinds.length > 1} />
         </Panel>
       )}
 

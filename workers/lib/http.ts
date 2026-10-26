@@ -38,7 +38,8 @@ export function assertPublic(url: URL): Promise<void> {
 const HEADERS = { "user-agent": USER_AGENT, "accept-language": "en-US,en;q=0.9,bn;q=0.8", "accept-encoding": "gzip, deflate, br" };
 
 const MAX_REDIRECTS = 5;
-const MAX_BODY = 3 * 1024 * 1024;
+// বড় দোকানের product sitemap (Beauty Booth ~৩.৩ MB) পুরোটা পড়তে
+const MAX_BODY = 8 * 1024 * 1024;
 
 const siteOf = (host: string) => host.replace(/^www\./, "");
 const sameSite = (from: URL, to: URL) => to.protocol === "https:" || to.protocol === "http:" ? siteOf(to.hostname) === siteOf(from.hostname) || to.hostname.endsWith(`.${siteOf(from.hostname)}`) : false;

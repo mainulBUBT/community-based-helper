@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState, type FormEvent } from "react";
 import { Field } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
+import { Tabs } from "@/components/admin/Tabs";
 import { Toggle } from "@/components/admin/Toggle";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
@@ -16,6 +17,9 @@ import { loadPrivateSettings, providerKey, savePrivateSettings, testLlm } from "
 import type { Job, PrivateSettings } from "@/types/admin";
 
 const AI_JOBS = new Set(["discover", "promos"]);
+
+const TABS = ["jobs", "ai", "telegram"] as const;
+type Tab = (typeof TABS)[number];
 
 const PRESETS = [
   { name: "Gemini", baseUrl: "https://generativelanguage.googleapis.com/v1beta/openai/", model: "gemini-2.5-flash" },
@@ -159,7 +163,8 @@ function JobsPanel() {
   );
 }
 
-function SettingsForm({ initial, onSaved }: { initial: PrivateSettings; onSaved: () => void }) {
+// AI আর Telegram একই ফর্মে, দুই ট্যাবেই মাউন্ট থাকে যাতে ট্যাব বদলালে লেখা না হারায়
+function SettingsForm({ initial, onSaved, tab, onTab }: { initial: PrivateSettings; onSaved: () => void; tab: Tab; onTab: (tab: Tab) => void }) {
   const { t } = useAdminI18n();
   const [busy, setBusy] = useState(false);
   const [testResult, setTestResult] = useState("");
@@ -206,87 +211,107 @@ function SettingsForm({ initial, onSaved }: { initial: PrivateSettings; onSaved:
   }
 
   return (
-    <form onSubmit={onSubmit} className="flex flex-col gap-6">
-      <Panel
-        title={t.admin.jobs.aiTitle}
-        action={<span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${ready ? "bg-ok-soft text-ok" : "bg-gold-soft text-gold-text"}`}>{ready ? t.admin.jobs.aiReady : t.admin.jobs.aiMissing}</span>}
-      >
-        <div className="grid gap-4 border-b border-line-soft bg-surface-2/50 p-5 text-sm md:grid-cols-2">
-          <div className="flex flex-col gap-1.5">
-            <span className="font-semibold">{t.admin.jobs.aiUses}</span>
-            <ul className="list-disc space-y-1 pl-5 text-dim">
-              {t.admin.jobs.aiUseList.map((use) => (
-                <li key={use}>{use}</li>
-              ))}
-            </ul>
+    <form
+      onSubmit={onSubmit}
+      onInvalidCapture={(event) => {
+        const form = event.currentTarget;
+        const owner = (event.target as HTMLElement).closest("[data-tab]")?.getAttribute("data-tab") as Tab | null;
+        if (owner && owner !== tab) {
+          onTab(owner);
+          setTimeout(() => form.reportValidity());
+        }
+      }}
+      hidden={tab === "jobs"}
+      className="flex flex-col gap-6"
+    >
+      <div role="tabpanel" id="jobs-ai" data-tab="ai" hidden={tab !== "ai"}>
+        <Panel
+          title={t.admin.jobs.aiTitle}
+          action={
+            <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${ready ? "bg-ok-soft text-ok" : "bg-gold-soft text-gold-text"}`}>
+              {ready ? t.admin.jobs.aiReady : t.admin.jobs.aiMissing}
+            </span>
+          }
+        >
+          <div className="grid gap-4 border-b border-line-soft bg-surface-2/50 p-5 text-sm md:grid-cols-2">
+            <div className="flex flex-col gap-1.5">
+              <span className="font-semibold">{t.admin.jobs.aiUses}</span>
+              <ul className="list-disc space-y-1 pl-5 text-dim">
+                {t.admin.jobs.aiUseList.map((use) => (
+                  <li key={use}>{use}</li>
+                ))}
+              </ul>
+            </div>
+            <p className="text-dim">{t.admin.jobs.aiWithout}</p>
           </div>
-          <p className="text-dim">{t.admin.jobs.aiWithout}</p>
-        </div>
-        <div className="grid gap-4 p-5 md:grid-cols-2">
-          <div className="flex flex-col gap-2 md:col-span-2">
-            <span className="text-sm font-semibold">{t.admin.jobs.presets}</span>
-            <div className="flex flex-wrap gap-2">
-              {PRESETS.map((preset) => (
+          <div className="grid gap-4 p-5 md:grid-cols-2">
+            <div className="flex flex-col gap-2 md:col-span-2">
+              <span className="text-sm font-semibold">{t.admin.jobs.presets}</span>
+              <div className="flex flex-wrap gap-2">
+                {PRESETS.map((preset) => (
+                  <button
+                    key={preset.name}
+                    type="button"
+                    onClick={() => {
+                      setBaseUrl(preset.baseUrl);
+                      setModel(preset.model);
+                    }}
+                    className={`flex h-9 items-center gap-1.5 rounded-lg border px-3 text-sm font-semibold ${baseUrl === preset.baseUrl ? "border-brand bg-brand-soft" : "border-line hover:border-brand"}`}
+                  >
+                    {preset.name}
+                    {savedKey(preset.baseUrl) && <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />}
+                  </button>
+                ))}
                 <button
-                  key={preset.name}
                   type="button"
                   onClick={() => {
-                    setBaseUrl(preset.baseUrl);
-                    setModel(preset.model);
+                    setBaseUrl("");
+                    setModel("");
                   }}
-                  className={`flex h-9 items-center gap-1.5 rounded-lg border px-3 text-sm font-semibold ${baseUrl === preset.baseUrl ? "border-brand bg-brand-soft" : "border-line hover:border-brand"}`}
+                  className={`h-9 rounded-lg border px-3 text-sm font-semibold ${PRESETS.some((p) => p.baseUrl === baseUrl) ? "border-line hover:border-brand" : "border-brand bg-brand-soft"}`}
                 >
-                  {preset.name}
-                  {savedKey(preset.baseUrl) && <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />}
+                  {t.admin.jobs.customProvider}
                 </button>
-              ))}
-              <button
-                type="button"
-                onClick={() => {
-                  setBaseUrl("");
-                  setModel("");
-                }}
-                className={`h-9 rounded-lg border px-3 text-sm font-semibold ${PRESETS.some((p) => p.baseUrl === baseUrl) ? "border-line hover:border-brand" : "border-brand bg-brand-soft"}`}
-              >
-                {t.admin.jobs.customProvider}
-              </button>
+              </div>
+              <span className="text-xs text-dim">{t.admin.jobs.presetHint}</span>
             </div>
-            <span className="text-xs text-dim">{t.admin.jobs.presetHint}</span>
+            <div className="md:col-span-2">
+              <Field label={t.admin.jobs.baseUrl} name="baseUrl" type="url" value={baseUrl} onChange={(e) => setBaseUrl(e.target.value)} required hint={t.admin.jobs.baseUrlHint} />
+            </div>
+            <Field label={t.admin.jobs.model} name="model" value={model} onChange={(e) => setModel(e.target.value)} required />
+            {/* প্রোভাইডার বদলালে ঘর খালি হয়, আর দেখায় ওই প্রোভাইডারের নিজের সেভ করা key */}
+            <Field
+              key={providerKey(baseUrl)}
+              label={t.admin.jobs.apiKey}
+              name="apiKey"
+              type="password"
+              autoComplete="off"
+              hint={savedKey(baseUrl) ? t.admin.jobs.secretSaved(savedKey(baseUrl)!) : t.admin.jobs.noKeyForProvider}
+            />
+            <div className="flex flex-wrap items-center gap-3 md:col-span-2">
+              <button type="button" onClick={(e) => onTest(e.currentTarget.form)} className={secondaryButton}>
+                {t.admin.jobs.testConnection}
+              </button>
+              {testResult && <p className="text-sm">{testResult}</p>}
+            </div>
           </div>
-          <div className="md:col-span-2">
-            <Field label={t.admin.jobs.baseUrl} name="baseUrl" type="url" value={baseUrl} onChange={(e) => setBaseUrl(e.target.value)} required hint={t.admin.jobs.baseUrlHint} />
+        </Panel>
+      </div>
+      <div role="tabpanel" id="jobs-telegram" data-tab="telegram" hidden={tab !== "telegram"}>
+        <Panel title={t.admin.jobs.telegramTitle}>
+          <p className="border-b border-line-soft px-5 py-3 text-sm text-dim">{t.admin.jobs.telegramHint}</p>
+          <div className="grid gap-4 p-5 md:grid-cols-2">
+            <Field
+              label={t.admin.jobs.botToken}
+              name="telegramBotToken"
+              type="password"
+              autoComplete="off"
+              hint={initial.telegramBotToken ? t.admin.jobs.secretSaved(initial.telegramBotToken) : undefined}
+            />
+            <Field label={t.admin.jobs.chatId} name="alertChatId" defaultValue={initial.alertChatId ?? ""} />
           </div>
-          <Field label={t.admin.jobs.model} name="model" value={model} onChange={(e) => setModel(e.target.value)} required />
-          {/* প্রোভাইডার বদলালে ঘর খালি হয়, আর দেখায় ওই প্রোভাইডারের নিজের সেভ করা key */}
-          <Field
-            key={providerKey(baseUrl)}
-            label={t.admin.jobs.apiKey}
-            name="apiKey"
-            type="password"
-            autoComplete="off"
-            hint={savedKey(baseUrl) ? t.admin.jobs.secretSaved(savedKey(baseUrl)!) : t.admin.jobs.noKeyForProvider}
-          />
-          <div className="flex flex-wrap items-center gap-3 md:col-span-2">
-            <button type="button" onClick={(e) => onTest(e.currentTarget.form)} className={secondaryButton}>
-              {t.admin.jobs.testConnection}
-            </button>
-            {testResult && <p className="text-sm">{testResult}</p>}
-          </div>
-        </div>
-      </Panel>
-      <Panel title={t.admin.jobs.telegramTitle}>
-        <p className="border-b border-line-soft px-5 py-3 text-sm text-dim">{t.admin.jobs.telegramHint}</p>
-        <div className="grid gap-4 p-5 md:grid-cols-2">
-          <Field
-            label={t.admin.jobs.botToken}
-            name="telegramBotToken"
-            type="password"
-            autoComplete="off"
-            hint={initial.telegramBotToken ? t.admin.jobs.secretSaved(initial.telegramBotToken) : undefined}
-          />
-          <Field label={t.admin.jobs.chatId} name="alertChatId" defaultValue={initial.alertChatId ?? ""} />
-        </div>
-      </Panel>
+        </Panel>
+      </div>
       <button type="submit" disabled={busy} className={`${primaryButton} self-start`}>
         {t.admin.common.save}
       </button>
@@ -297,14 +322,18 @@ function SettingsForm({ initial, onSaved }: { initial: PrivateSettings; onSaved:
 export default function JobsAdminPage() {
   const { t } = useAdminI18n();
   const { data, reload } = useAsync(loadPrivateSettings, []);
+  const [tab, setTab] = useState<Tab>("jobs");
   return (
     <>
       <PageTitle title={t.admin.jobs.title} />
       <div className="flex flex-col gap-6">
-        <FlowPanel />
-        <JobsPanel />
+        <Tabs tabs={TABS.map((id) => ({ id, label: t.admin.jobs.tabs[id] }))} active={tab} onChange={setTab} label={t.admin.jobs.title} idPrefix="jobs" />
+        <div role="tabpanel" id="jobs-jobs" hidden={tab !== "jobs"} className="flex flex-col gap-6">
+          <FlowPanel />
+          <JobsPanel />
+        </div>
         {/* সেভের পরে নতুন ঢাকা key দেখাতে ফর্ম আবার বসে, key এর ঘর খালি হয় */}
-        {data ? <SettingsForm key={JSON.stringify(data)} initial={data} onSaved={reload} /> : <ListSkeleton rows={2} />}
+        {data ? <SettingsForm key={JSON.stringify(data)} initial={data} onSaved={reload} tab={tab} onTab={setTab} /> : tab !== "jobs" && <ListSkeleton rows={2} />}
       </div>
     </>
   );

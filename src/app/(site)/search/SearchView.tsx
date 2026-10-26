@@ -11,6 +11,7 @@ import { SearchBox } from "@/components/search/SearchBox";
 import { EmptyState } from "@/components/ui/EmptyState";
 import { Pagination, paginate } from "@/components/ui/Pagination";
 import { ErrorNotice } from "@/components/ui/ErrorNotice";
+import { ShareButton } from "@/components/ui/ShareButton";
 import { Skeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useCategories } from "@/hooks/useCategories";
@@ -148,13 +149,20 @@ export function SearchView({ category, brand, initial }: { category?: string; br
 
   return (
     <div className="flex flex-col gap-4">
-      <nav aria-label="breadcrumb" className="flex items-center gap-1 text-sm text-dim">
-        <Link href={`${prefix}/`} className="hover:text-brand">
-          {t.nav.home}
-        </Link>
-        <ChevronRight size={14} aria-hidden="true" />
-        <span className="text-ink">{categoryTitle}</span>
-      </nav>
+      <div className="flex items-center justify-between gap-3">
+        <nav aria-label="breadcrumb" className="flex min-w-0 items-center gap-1 text-sm text-dim">
+          <Link href={`${prefix}/`} className="hover:text-brand">
+            {t.nav.home}
+          </Link>
+          <ChevronRight size={14} aria-hidden="true" />
+          <span className="truncate text-ink">{categoryTitle}</span>
+        </nav>
+        <ShareButton
+          title={title}
+          label
+          className="flex h-9 shrink-0 items-center gap-1.5 rounded-md border border-line bg-surface px-3 text-sm font-semibold text-dim hover:border-dim hover:text-ink"
+        />
+      </div>
 
       <div className="max-w-2xl">
         <SearchBox key={query} defaultValue={query} onSearch={(q) => update({ q: q || null })} />

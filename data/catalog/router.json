@@ -1,0 +1,2243 @@
+{
+ "category": "router",
+ "sites": [
+  {
+   "name": "Star Tech",
+   "website": "https://www.startech.com.bd",
+   "note": "/networking/router ক্যাটাগরি; মেশের প্রতিটা প্যাক আলাদা পাতা (তালিকার নামে \"(1 Pack)\")। কাটা দাম officialPrice।"
+  },
+  {
+   "name": "Global Brand",
+   "website": "https://www.globalbrand.com.bd",
+   "note": "Cudy আর ASUS-এর অফিসিয়াল পরিবেশক; প্যাক আলাদা পাতা।"
+  },
+  {
+   "name": "Apple Gadgets",
+   "website": "https://www.applegadgetsbd.com",
+   "note": "মেশ রাউটারের ১/২/৩ প্যাক এক পাতায় লেবেলহীন দামে — কোনটা কোন প্যাক নিশ্চিত না বলে মেশে বাদ।"
+  },
+  {
+   "name": "Gadget Breeze",
+   "website": "https://gadgetbreeze.com.bd",
+   "note": "Deco X50-এর পাতায় প্যাক লেবেলহীন — বাদ; বাকিগুলো আলাদা পাতা।"
+  }
+ ],
+ "products": [
+  {
+   "brand": "TP-Link",
+   "name": "Archer C6",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 3649
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2050/TP-Link_Archer_C6__AC1200_Dual_Band_Gigabit_Wi-Fi_Router.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/imgi_24_Archer_C6_EU_6.0_overview_01_large_20250919062247p-9335.png",
+    "https://images.kryinternational.com/uploads/archer-c6-ac1200-dual-band-gigabit-wi-fi-router.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-archer-c6-ac1200-gigabit-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-archer-c6-ac1200-gigabit-router",
+     "price": 3530,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-archer-c6-ac1200-router",
+     "price": 3699,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tp-link-archer-c6-ac1200-dual-band-mu-mimo-gigabit-wi-fi-router",
+     "price": 3449,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/tp-link-archer-c6-ac1200-dual-band-gigabit-wi-fi-router",
+     "price": 3600,
+     "oldPrice": 3700,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/tp-link-archer-c6-ac1200-wireless-mu-mimo-gigabit-router/",
+     "price": 3690,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tp-link-archer-c6-ac1200-dual-band-gigabit-wi-fi-router",
+     "price": 3499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/tp-link-archer-c6-ac1200-gigabit-router",
+     "price": 3290,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-c6-ac1200/",
+     "price": 3350,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Archer C64",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 3190
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2051/TP-Link_Archer_C64_AC1200_Dual_Band_Gigabit_Wi-Fi_Router.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-C64-AC1200-Dual-Band-Gigabit-Wi-Fi-Router-8957.png",
+    "https://assets.gadgetandgear.com/upload/media/1725082391053939.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-archer-c64-ac1200-wifi-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-archer-c64-ac1200-wifi-router",
+     "price": 3140,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-archer-c64-ac1200-gigabit-wifi-router",
+     "price": 3259,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tp-link-archer-c64-ac1200-dual-band-mu-mimo-wi-fi-router",
+     "price": 3149,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/tp-link-archer-c64-ac1200-dual-band-gigabit-wi-fi-router",
+     "price": 3019,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/tp-link-archer-c64-ac1200-wireless-mu-mimo-wi-fi-router/",
+     "price": 3340,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-c64-ac1200-dual-band/",
+     "price": 3190,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Archer C54",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 2399
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2052/TP-Link_Archer_C54_AC1200_Dual_Band_Wi-Fi_Router.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-C54-AC1200-a-5983.jpg",
+    "https://images.kryinternational.com/uploads/tp-link-archer-c54-ac1200-dual-band-wi-fi-router.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-archer-c54-ac1200-dual-band-mu-mimo-beamforming-wi-fi-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-archer-c54-ac1200-dual-band-mu-mimo-beamforming-wi-fi-router",
+     "price": 2270,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tp-link-archer-c54-ac1200-dual-band-wi-fi-router",
+     "price": 2250,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/tp-link-archer-c54-ac1200-dual-band-wi-fi-router",
+     "price": 2150,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/tp-link-archer-c54/",
+     "price": 2390,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tp-link-archer-c54-ac1200-dual-band-wi-fi-router",
+     "price": 2499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Archer C50",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 2690
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4469/TP-Link_Archer_C50.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-C50-AC1200-Wireless-Dual-Band-Wi-Fi-Router-7722.png",
+    "https://images.kryinternational.com/uploads/tp-link-archer-c50-ac1200-dual-band-wi-fi-router.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-archer-c50-wifi-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-archer-c50-wifi-router",
+     "price": 2570,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tp-link-archer-c50-ac1200-dual-band-wi-fi-router",
+     "price": 2349,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/tp-link-archer-c50-ac1200-wireless-dual-band-wi-fi-router",
+     "price": 2500,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tp-link-archer-c50-ac1200-dual-band-wi-fi-router",
+     "price": 2499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-c50-ac1200-dual-band/",
+     "price": 2240,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Archer C24",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 2129
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2053/TP-Link_Archer_C24_AC750_Dual_Band_Wi-Fi_Router.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-C24-AC750-Dual-Band-Wi-Fi-Router-2521.png",
+    "https://diamu.com.bd/wp-content/uploads/2023/03/Tp-Link-Archer-C24-AC750-Dual-Band-Wi-Fi-Router.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-archer-c24-ac750-dual-band-wi-fi-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-archer-c24-ac750-dual-band-wi-fi-router",
+     "price": 2020,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tp-link-archer-c24-ac750-dual-band-wi-fi-router",
+     "price": 2099,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/tp-link-archer-c24-ac750-dual-band-wi-fi-router",
+     "price": 2250,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/tp-link-archer-c24-ac750-dual-band-wi-fi-router/",
+     "price": 1890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Archer C80",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 4590
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-C80-AC1900-Dual-Band-Gigabit-WiFi-Router-9879.png",
+    "https://assets.gadgetandgear.com/upload/media/1725077240240100.jpeg",
+    "https://www.startech.com.bd/image/cache/catalog/router/tp-link/archer-c80-ac1900/archer-c80-ac1900-1-1200x630.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-archer-c80-ac1900-gigabit-mu-mimo-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-archer-c80-ac1900-gigabit-mu-mimo-router",
+     "price": 4270,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-archer-c80-ac1900-router",
+     "price": 4299,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/tp-link-archer-c80-ac1900-dual-band-gigabit-wifi-router",
+     "price": 3990,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-c80-ac1900/",
+     "price": 3850,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Archer AX12",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 3990
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4633/TP-Link_Archer_AX12.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-AX12-AX1500-Dual-Band-Gigabit-Wi-Fi-6-Router-5363.png",
+    "https://assets.gadgetandgear.com/upload/media/tp-link-archer-ax12-ax1500-router827.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-archer-ax12-ax1500-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-archer-ax12-ax1500-router",
+     "price": 3990,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tplink-archer-ax12-ax1500-wifi-router",
+     "price": 3799,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tp-link-archer-ax12-ax1500-dual-band-wi-fi-6-router",
+     "price": 3799,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/tp-link-archer-ax12-ax1500-dual-band-gigabit-wi-fi-6-router",
+     "price": 4200,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/tp-link-archer-ax12-ax1500-dual-band-wifi-router",
+     "price": 3450,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-ax12-ax1500-dual-band/",
+     "price": 3400,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Archer AX53",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 6590
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-AX53-AX3000-Dual-Band-Gigabit-Wi-Fi-6-Router-5937.png",
+    "https://assets.gadgetandgear.com/upload/media/1724749511795729.jpeg",
+    "https://www.startech.com.bd/image/cache/catalog/router/tp-link/Archer-ax53/Archer-ax53-01-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-Archer-ax53-ax3000-dual-band-gigabit-wi-fi-6-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-Archer-ax53-ax3000-dual-band-gigabit-wi-fi-6-router",
+     "price": 6590,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-archer-ax53-dual-band-gigabit-router",
+     "price": 6599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/tp-link-archer-ax53-ax3000-dual-band-gigabit-wi-fi-6-router",
+     "price": 5999,
+     "oldPrice": 6600,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-ax53-ax3000-dual-band/",
+     "price": 5790,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Archer AX73",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 15990
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/TP-Link-Archer-AX73-AX5400-Dual-Band-Gigabit-Wi-Fi-6-Router-1152.png",
+    "https://assets.gadgetandgear.com/upload/media/tp-link-archer-ax73-dual-band-gigabit-router525.jpeg",
+    "https://diamu.com.bd/wp-content/uploads/2022/02/TP-Link-Archer-Ax73-Ax5400-Dual-Band-6-Stream-Gigabit-Wi-Fi-6-Router-1.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-archer-ax73-ax5400-dual-band-gigabit-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-archer-ax73-ax5400-dual-band-gigabit-router",
+     "price": 15500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-archer-ax73-dual-band-gigabit-router",
+     "price": 16999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/tp-link-archer-ax73-ax5400-dual-band-gigabit-wi-fi-6-router",
+     "price": 14900,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/tp-link-archer-ax73-ax5400-dual-band-6-stream-gigabit-wi-fi-6-router/",
+     "price": 16890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Archer BE400",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 19690
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/router/tp-link/archer-be400/archer-be400-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-archer-be400-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-archer-be400-router",
+     "price": 19690,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/tp-link-archer-be400-be6500-dual/",
+     "price": 19800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Tenda",
+   "name": "AC10",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 3200
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2682/Post_Template_1.webp",
+    "https://diamu.com.bd/wp-content/uploads/2022/02/Tenda-AC10-AC1200-Dual-Band-4-Anteena-1200Mbps-Gigabit-WiFi-Router.jpg",
+    "https://www.startech.com.bd/image/cache/catalog/router/tenda/ac10/ac10-01-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/tenda-ac10-ac1200-smart-dual-band-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tenda-ac10-ac1200-smart-dual-band-router",
+     "price": 2800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tenda-ac10-ac1200-dual-band-gigabit-wifi-router",
+     "price": 3199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/tenda-ac10-ac1200-dual-band-4-anteena-1200mbps-gigabit-wi-fi-router/",
+     "price": 3540,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Tenda",
+   "name": "TX12 Pro",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 4100
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2679/New_Project.webp",
+    "https://diamu.com.bd/wp-content/uploads/2023/10/Tenda-TX12-Pro-V2.0-AX3000-Dual-Band-Gigabit-Wi-Fi-6-Router.png",
+    "https://diamu.com.bd/wp-content/uploads/2023/10/Tenda-TX12-Pro-V2.0-AX3000-Dual-Band-Gigabit-Wi-Fi-6-Router.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/tenda-tx12-pro-v2-0-dual-band-gigabit-wi-fi-6-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tenda-tx12-pro-v2-0-dual-band-gigabit-wi-fi-6-router",
+     "price": 4000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tenda-tx12-pro-v20-ax3000-dual-band-gigabit-wi-fi-6-router",
+     "price": 4099,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/tenda-tx12-pro-v2-0-ax3000/",
+     "price": 4090,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Mercusys",
+   "name": "AC10",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 1749
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Mercusys-AC10-AC1200-White-a-3249.jpg",
+    "https://www.startech.com.bd/image/cache/catalog/router/mercusys/ac10/ac10-01-1200x630.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/mercusys-ac10-ac1200-dual-band-wifi-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/mercusys-ac10-ac1200-dual-band-wifi-router",
+     "price": 1700,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/mercusys-ac10-ac1200-wireless-dual-band-router",
+     "price": 1900,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/mercusys-ac10-ac1200-wireless-dual-band-router/",
+     "price": 1680,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Cudy",
+   "name": "WR1200",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 2440
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2101/Cudy_WR1200_1.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Cudy-WR1200-AC1200-Dual-Band-Wi-Fi-Router-1911.png",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/Cudy/Cudy-WR1200-AC1200-Gigabit-Dual-Band-Wi-Fi-Router-600x600.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/cudy-wr1200-ac1200-dual-band-wi-fi-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/cudy-wr1200-ac1200-dual-band-wi-fi-router",
+     "price": 2400,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/cudy-wr1200-ac1200-dual-band-wi-fi-router",
+     "price": 2820,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/cudy-wr1200",
+     "price": 2249,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/cudy-wr1200-ac1200-dual-band-wi-fi-router",
+     "price": 2250,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/cudy-wr1200-ac1200-dual-band-wi-fi-router",
+     "price": 2280,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Cudy",
+   "name": "WR1500",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 3200
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2695/Cudy_WR1500_AX1500_Dual_Band_Gigabit_Wi-Fi_6_Mesh_Router.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Cudy-WR1500-AX1500-Dual-Band-WiFi-6-Mesh-Router-8992.png",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/Cudy/WR1500-600x600.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/cudy-wr1500-ax1500-wi-fi-6-mesh-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/cudy-wr1500-ax1500-wi-fi-6-mesh-router",
+     "price": 3100,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/cudy-wr1500-1-0-ax1500-dual-band-wi-fi-6-mesh-router",
+     "price": 3290,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/cudy-wr1500-ax1500-dual-band-gigabit-wi-fi-6-mesh-router",
+     "price": 2890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/cudy-wr1500-ax1500-dual-band-wifi-6-mesh-router",
+     "price": 2999,
+     "oldPrice": 3290,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/cudy-wr1500-ax1500-dual-band-wifi-6-mesh-router",
+     "price": 3200,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Cudy",
+   "name": "WR3000",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 4900
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/Cudy/Cudy-WR3000-AX3000-Gigabit-Dual-Band-Wi-Fi-6-Router-600x600.jpg",
+    "https://www.startech.com.bd/image/cache/catalog/router/cudy/wr3000/wr3000-01-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/cudy-wr3000-ax3000-gigabit-wi-fi-6-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/cudy-wr3000-ax3000-gigabit-wi-fi-6-router",
+     "price": 4750,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/cudy-wr3000-ax3000-gigabit-dual-band-wi-fi-6-router",
+     "price": 5190,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/cudy-wr3000-ax3000-gigabit-dual-band-wi-fi-6-router",
+     "price": 4900,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Cudy",
+   "name": "WR3600E",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 7899
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2693/Cudy_WR3600E_BE3600_Dual_Band_Gigabit_Wi-Fi_7_Router.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Cudy-WR3600E-BE3600-Dual%E2%80%91Band-Mesh-Wi%E2%80%91Fi-7-Gigabit-Router-3159.png",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/Cudy/CUDY%20WR3600E%20BE3600%20Gigabit%20Wi-Fi%207%20Router-600x600.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/cudy-wr3600e-wifi-7-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/cudy-wr3600e-wifi-7-router",
+     "price": 7899,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/cudy-wr3600e-be3600-gigabit-wi-fi-7-router",
+     "price": 8300,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/cudy-wr3600e-be3600-dual-band-gigabit-wi-fi-7-router",
+     "price": 7999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/cudy-wr3600e-be3600-dualband-mesh-wifi-7-gigabit-router",
+     "price": 7800,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "ASUS",
+   "name": "RT-AX52",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": 6000
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/ASUS/ASUS-RT-AX52-AX1800-Dual-Band-WiFi-6-Extendable-Router-600x600.jpg",
+    "https://www.startech.com.bd/image/cache/catalog/router/asus/rt-ax52-ax1800/rt-ax52-ax1800-01-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/asus-rt-ax52-ax1800-dual-band-aimesh-router",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/asus-rt-ax52-ax1800-dual-band-aimesh-router",
+     "price": 5580,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/asus-rt-ax52-ax1800-dual-band-wifi-6-extendable-router",
+     "price": 6500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/asus-rt-ax52-ax1800-dual-band-wifi-router",
+     "price": 6000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Deco M4",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "1 Pack",
+     "attributes": {
+      "edition": "1 Pack"
+     },
+     "officialPrice": 4749
+    },
+    {
+     "label": "2 Pack",
+     "attributes": {
+      "edition": "2 Pack"
+     },
+     "officialPrice": 9390
+    },
+    {
+     "label": "3 Pack",
+     "attributes": {
+      "edition": "3 Pack"
+     },
+     "officialPrice": 14049
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2046/TP-Link_Deco_M4_AC1200_Dual-Band_Wi-Fi_Mesh_Router_1-Pack.webp",
+    "https://assets.gadgetandgear.com/upload/media/tp-link-deco-m4-router-new820.jpeg",
+    "https://www.startech.com.bd/image/cache/catalog/networking/router/tp-link/deco-m4/1-pack/1-pack-1-1200x630.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/tplink-deco-m4-router",
+   "offers": [
+    {
+     "variant": "1 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tplink-deco-m4-router",
+     "price": 4700,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-deco-m4-router",
+     "price": 4799,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tp-link-deco-m4-ac1200-dual-band-wi-fi-mesh-router-1-pack",
+     "price": 4490,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/tp-link-deco-m4-ac1200-dual-band-mesh-router-1-pack",
+     "price": 3500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/tp-link-deco-m4-ac1200-dual-band-mesh/",
+     "price": 4300,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tplink-deco-m4-2-pack-router",
+     "price": 9340,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-deco-m4-router-2-pack",
+     "price": 9399,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tplink-deco-m4-3-pack-router",
+     "price": 14000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-deco-m4-router-3-pack",
+     "price": 14099,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/tp-link-deco-m4-whole-home-mesh-wi-fi-system-ac1200-dual-band-router-3-pack/",
+     "price": 11340,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Deco E4",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "1 Pack",
+     "attributes": {
+      "edition": "1 Pack"
+     },
+     "officialPrice": 3449
+    },
+    {
+     "label": "2 Pack",
+     "attributes": {
+      "edition": "2 Pack"
+     },
+     "officialPrice": 6790
+    },
+    {
+     "label": "3 Pack",
+     "attributes": {
+      "edition": "3 Pack"
+     },
+     "officialPrice": 10190
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2048/TP-Link_Deco_E4_AC1200_Dual-Band_Wi-Fi_Mesh_Router_1-Pack.webp",
+    "https://assets.gadgetandgear.com/upload/media/1724747314648549.jpeg",
+    "https://diamu.com.bd/wp-content/uploads/2021/03/TP-Link-Deco-E4-Whole-Home-Mesh-2-Pack.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-deco-e4-dual-band-router",
+   "offers": [
+    {
+     "variant": "1 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-deco-e4-dual-band-router",
+     "price": 3400,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-deco-e4-1-pack-router",
+     "price": 3599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tp-link-deco-e4-ac1200-dual-band-wi-fi-mesh-router-1-pack",
+     "price": 2950,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/tp-link-deco-e4-whole-home-mesh-wi-fi-system-single-pack/",
+     "price": 2940,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/tp-link-deco-e4-ac1200-dual-band/",
+     "price": 2750,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tplink-deco-e4-2-pack-router",
+     "price": 6790,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/tp-link-deco-e4-2-pack-whole-home-mesh-wi-fi-system/",
+     "price": 5790,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tplink-deco-e4-3-pack-router",
+     "price": 10140,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tp-link-deco-e4-ac1200-dual-band-home-mesh-router-3-pack",
+     "price": 8490,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Deco X10",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "1 Pack",
+     "attributes": {
+      "edition": "1 Pack"
+     },
+     "officialPrice": 6090
+    },
+    {
+     "label": "2 Pack",
+     "attributes": {
+      "edition": "2 Pack"
+     },
+     "officialPrice": 11890
+    },
+    {
+     "label": "3 Pack",
+     "attributes": {
+      "edition": "3 Pack"
+     },
+     "officialPrice": 17890
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4466/TP-Link_Deco_X10_ERSDwOm.webp",
+    "https://assets.gadgetandgear.com/upload/media/tp-link-deco-x10-router824.jpeg",
+    "https://www.startech.com.bd/image/cache/catalog/router/tp-link/deco-x10/deco-x10-01-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-deco-x10-wifi-6-mesh-router",
+   "offers": [
+    {
+     "variant": "1 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-deco-x10-wifi-6-mesh-router",
+     "price": 6050,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-deco-x10-router",
+     "price": 6099,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tp-link-deco-x10-ax1500-dual-band-wi-fi-6-mesh-router-1-pack",
+     "price": 5750,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-deco-x10-wifi-6-mesh-router-2-pack",
+     "price": 11840,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-deco-x10-router-2-pack",
+     "price": 11899,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/tp-link-deco-x10-ax1500-mesh-router-2-pack",
+     "price": 9190,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-deco-x10-wifi-6-mesh-router-3-pack",
+     "price": 17800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-deco-x10-router-3-pack",
+     "price": 17899,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/tp-link-deco-x10-ax1500-mesh-router-3-pack",
+     "price": 13700,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Deco X20",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "1 Pack",
+     "attributes": {
+      "edition": "1 Pack"
+     },
+     "officialPrice": 7849
+    },
+    {
+     "label": "2 Pack",
+     "attributes": {
+      "edition": "2 Pack"
+     },
+     "officialPrice": 15590
+    },
+    {
+     "label": "3 Pack",
+     "attributes": {
+      "edition": "3 Pack"
+     },
+     "officialPrice": 23190
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/networking/router/tp-link/deco-x20-ax1800/deco-x20-ax1800-001-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-deco-x20-ax1800-mesh-router",
+   "offers": [
+    {
+     "variant": "1 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-deco-x20-ax1800-mesh-router",
+     "price": 7849,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-deco-x20-ax1800-router-2-pack",
+     "price": 15500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-deco-x20-ax1800-router-2-pack",
+     "price": 15599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-deco-x20-ax1800-router-3-pack",
+     "price": 23190,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-deco-x20-ax1800-mesh-wi-fi-router",
+     "price": 20599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/tp-link-deco-x20-ax1800-whole-home-mesh-wi-fi-6-router-3-pack/",
+     "price": 18940,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "TP-Link",
+   "name": "Deco X50",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "1 Pack",
+     "attributes": {
+      "edition": "1 Pack"
+     },
+     "officialPrice": 9049
+    },
+    {
+     "label": "2 Pack",
+     "attributes": {
+      "edition": "2 Pack"
+     },
+     "officialPrice": 17890
+    },
+    {
+     "label": "3 Pack",
+     "attributes": {
+      "edition": "3 Pack"
+     },
+     "officialPrice": 26690
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4467/TP-Link_Deco_X50.webp",
+    "https://www.startech.com.bd/image/cache/catalog/router/tp-link/deco-x50-/deco-x50-01-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/tp-link-deco-x50-dual-band-wi-fi-6-mesh-router",
+   "offers": [
+    {
+     "variant": "1 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-deco-x50-dual-band-wi-fi-6-mesh-router",
+     "price": 9020,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tp-link-deco-x50-ax3000-dual-band-wi-fi-6-mesh-router-1-pack",
+     "price": 8890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-deco-x50-2-pack-dual-band-wi-fi-6-mesh-router",
+     "price": 17800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-deco-x50-router-2-pack",
+     "price": 17899,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tp-link-deco-x50-3-pack-dual-band-wi-fi-6-mesh-router",
+     "price": 26600,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tp-link-deco-x50-router-3-pack",
+     "price": 27099,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Cudy",
+   "name": "M1300",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "1 Pack",
+     "attributes": {
+      "edition": "1 Pack"
+     },
+     "officialPrice": 3200
+    },
+    {
+     "label": "2 Pack",
+     "attributes": {
+      "edition": "2 Pack"
+     },
+     "officialPrice": 6060
+    },
+    {
+     "label": "3 Pack",
+     "attributes": {
+      "edition": "3 Pack"
+     },
+     "officialPrice": 9000
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/2042/Cudy_M1300_1-Pack_AC1200_Dual_Band_Gigabit_Wi-Fi_Mesh_Router.webp",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/Cudy/Cudy-M1300-(1-pack)-AC1200-Dual-Band-Whole-Home-Wi-Fi-Mesh-Gigabit-Router-600x600.jpg",
+    "https://www.startech.com.bd/image/cache/catalog/router/cudy/m1300/m1300-01-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/cudy-m1300-ac1200-gigabit-whole-home-mesh-wifi-router",
+   "offers": [
+    {
+     "variant": "1 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/cudy-m1300-ac1200-gigabit-whole-home-mesh-wifi-router",
+     "price": 3100,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/cudy-m1300-1-pack-ac1200-dual-band-whole-home-wi-fi-mesh-gigabit-router",
+     "price": 3500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/cudy-m1300-ac1200-dual-band-gigabit-wi-fi-mesh-router-1-pack",
+     "price": 3299,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/cudy-m1300-1-pack-ac1200-dual-band-whole-home-wi-fi-mesh-gigabit-router",
+     "price": 3200,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/cudy-m1300-ac1200-gigabit-whole-home-mesh-wifi-router-2-pack",
+     "price": 6060,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/cudy-m1300-2-pack-ac1200-dual-band-whole-home-wi-fi-mesh-gigabit-router",
+     "price": 6700,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/cudy-m1300-ac1200-dual-band-gigabit-wi-fi-mesh-router-2-pack",
+     "price": 6199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/cudy-m1300-ac1200-gigabit-whole-home-mesh-wifi-router-3-pack",
+     "price": 8330,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/cudy-m1300-3-pack-ac1200-dual-band-whole-home-wi-fi-mesh-gigabit-router",
+     "price": 9900,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/cudy-m1300-ac1200-dual-band-gigabit-wi-fi-mesh-router-3-pack",
+     "price": 9149,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/cudy-m1300-ac1200-dual-band-wi-fi-mesh-gigabit-router-3-pack/",
+     "price": 9140,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Cudy",
+   "name": "M3000",
+   "category": "router",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "1 Pack",
+     "attributes": {
+      "edition": "1 Pack"
+     },
+     "officialPrice": 5600
+    },
+    {
+     "label": "2 Pack",
+     "attributes": {
+      "edition": "2 Pack"
+     },
+     "officialPrice": 11000
+    },
+    {
+     "label": "3 Pack",
+     "attributes": {
+      "edition": "3 Pack"
+     },
+     "officialPrice": 16500
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/ROUTER/Cudy/M3000%201-Pack%20AX3000-600x600.webp",
+    "https://diamu.com.bd/wp-content/uploads/2023/10/CUDY-M3000-1-Pack-AX3000-2.5G-Dual-Band-Wi-Fi-6-Mesh-System-Router.jpg",
+    "https://www.startech.com.bd/image/cache/catalog/router/cudy/m3000/m3000-white-01-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/cudy-m3000-ax3000-wi-fi-6-mesh-router",
+   "offers": [
+    {
+     "variant": "1 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/cudy-m3000-ax3000-wi-fi-6-mesh-router",
+     "price": 5500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/cudy-m3000-1-pack-ax3000-2-5g-dual-band-wi-fi-6-mesh-system-router-white",
+     "price": 5800,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/cudy-m3000-ax3000-dual-band-wi-fi-6-mesh-router-1-pack/",
+     "price": 5390,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/cudy-m3000-white-1-pack-ax3000-25g-dual-band-wi-fi-6-mesh-system-router",
+     "price": 5600,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/cudy-m3000-ax3000-wi-fi-6-mesh-router-2-pack",
+     "price": 11000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/cudy-m3000-2-pack-ax3000-2-5g-dual-band-wi-fi-6-mesh-system-router",
+     "price": 11500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/cudy-m3000-ax3000-dual-band-wi-fi-mesh-router-2-pack",
+     "price": 10949,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/cudy-m3000-10-ax3000-mbps-gigabit-dual-band-black-mesh-wi-fi-6-system-2-pack",
+     "price": 11000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/cudy-m3000-2-pack-ax3000-2-5g/",
+     "price": 9870,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/cudy-m3000-ax3000-wi-fi-6-mesh-router-3-pack",
+     "price": 16500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/cudy-m3000-3-pack-ax3000-2-5g-dual-band-wi-fi-6-mesh-system-router-white",
+     "price": 17000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/cudy-m3000-ax3000-dual-band-wi-fi-mesh-router-3-pack",
+     "price": 16499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/cudy-m3000-ax3000-dual-band-wi-fi-6-mesh-system-router-3-pack",
+     "price": 15300,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/cudy-m3000-3-pack-ax3000-2-5g-dual/",
+     "price": 14600,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  }
+ ]
+}

@@ -51,5 +51,5 @@ export const DEFAULT_CATEGORIES: CategoryInfo[] = [
   { slug: "audio", name: "অডিও", nameEn: "Audio", icon: "headphones", axes: ["color"], position: 6, active: true },
   { slug: "earbuds", name: "ইয়ারবাড", nameEn: "Earbuds", icon: "headphones", axes: ["color"], parent: "audio", position: 7, active: true },
   { slug: "headphones", name: "হেডফোন", nameEn: "Headphones", icon: "headphones", axes: ["color"], parent: "audio", position: 8, active: true },
-  { slug: "skincare", name: "স্কিনকেয়ার", nameEn: "Skincare", icon: "sparkles", axes: ["capacity"], position: 13, active: true, warranty: false },
+  { slug: "skincare", name: "স্কিনকেয়ার", nameEn: "Skincare", icon: "sparkles", axes: ["capacity"], position: 13, active: true, warranty: false, conditions: ["official"], verifyNote: true },
 ];

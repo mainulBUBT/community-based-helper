@@ -21,7 +21,7 @@ export async function categoryMetadata(slug: string, lang: Lang): Promise<Metada
   if (!page) return {};
   const { seo } = messages(lang);
   const name = categoryName(page.category, lang);
-  return pageMeta({ lang, path: `/category/${slug}/`, title: seo.categoryTitle(name), description: seo.categoryDescription(name), image: page.summaries[0]?.product.images?.[0] });
+  return pageMeta({ lang, path: `/category/${slug}/`, title: seo.categoryTitle(name), shortTitle: seo.categoryShortTitle(name), description: seo.categoryDescription(name), image: page.summaries[0]?.product.images?.[0] });
 }
 
 // ফিল্টার ব্রাউজারে চালু হওয়ার আগে Suspense এর fallback হিসেবে পণ্যের লিস্ট স্ট্যাটিক HTML এ থাকে

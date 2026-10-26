@@ -148,7 +148,7 @@ export function ProductGallery({ product, start = 0 }: { product: Product; start
               <div key={src} className="flex h-full w-full shrink-0 items-center justify-center overflow-hidden">
                 <img
                   src={src}
-                  alt={i === active ? alt : ""}
+                  alt={i ? `${alt} ${num(i + 1)}` : alt}
                   draggable={false}
                   loading={i === active ? "eager" : "lazy"}
                   fetchPriority={i === start ? "high" : "auto"}

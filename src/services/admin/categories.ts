@@ -1,6 +1,7 @@
 import { loadSampleCatalog, sampleCategories } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
 import type { CategoryInfo } from "@/types/catalog";
+import { categoryConditions } from "@/utils/categories";
 import { loadCatalog } from "../catalog-live";
 import { toCategory } from "../mappers";
 import { logAction } from "./audit";
@@ -35,6 +36,8 @@ export async function saveCategory(input: CategoryInfo, isNew: boolean) {
       position: category.position,
       active: category.active,
       warranty: category.warranty !== false,
+      conditions: categoryConditions(category),
+      verify_note: category.verifyNote === true,
     };
     const { error } = isNew ? await supabase.from("categories").insert(row) : await supabase.from("categories").update(row).eq("slug", category.slug);
     if (error) throw error;

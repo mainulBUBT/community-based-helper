@@ -10,13 +10,14 @@ import { Badge } from "@/components/ui/Badge";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
 import type { getSellerDetail } from "@/services/catalog";
+import { conditionLabel } from "@/utils/categories";
 import { formatTaka } from "@/utils/format";
 
 type Detail = NonNullable<Awaited<ReturnType<typeof getSellerDetail>>>;
 
 export function SellerView({ initial }: { initial: Detail }) {
   const { t, ago, prefix, lang } = useI18n();
-  const { warranty } = useCategories();
+  const { warranty, conditions } = useCategories();
   const { seller, listings, promos } = initial;
 
   return (
@@ -65,7 +66,7 @@ export function SellerView({ initial }: { initial: Detail }) {
                 <span className="truncate font-semibold">
                   {product.brand} {product.name}
                 </span>
-                <span className="text-[13px] text-dim">{[variant.label, warranty(product.category) && t.condition[offer.condition], ago(offer.checkedAt)].filter(Boolean).join(", ")}</span>
+                <span className="text-[13px] text-dim">{[variant.label, conditions(product.category).length > 1 && conditionLabel(t, offer.condition, warranty(product.category)), ago(offer.checkedAt)].filter(Boolean).join(", ")}</span>
               </span>
               <span className="font-bold">{formatTaka(offer.price, lang)}</span>
             </Link>

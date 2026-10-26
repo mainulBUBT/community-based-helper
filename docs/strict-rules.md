@@ -10,7 +10,7 @@
 4. **অফিসিয়াল দাম বাধ্যতামূলক, আর sanity মানতে হবে।** প্রতিটা ভার্সনে `officialPrice` দিতে হবে। যেকোনো অফারের দাম অফিসিয়াল দামের ৪০%-এর কম বা ২৫০%-এর বেশি হলে সেটা বাদ পড়বে — এটা ভুল লিস্টিং (কভার, গ্লাস, ভুল মডেল) বাছাইয়ের ফিল্টার।
 5. **নামের নিয়ম ভাঙা যাবে না।** ব্র্যান্ড আলাদা ঘরে। মডেলে Pro, Max, Plus, Ultra, FE, 5G, সাইজ, চিপ — কিছুই বাদ দেবেন না; এগুলো দিয়েই মডেল চেনা হয়।
 6. **স্পেস আর ছবি আসল হতে হবে।** `specsSource` হিসেবে Star Tech-এর স্পেক-টেবিলের পাতা দিন। ইমেজ দোকানের আসল CDN URL থেকে, সর্বোচ্চ ৫টা; নিজে বানানো বা অন্য পণ্যের ছবি কখনো না।
-7. **condition সত্যি লিখবে।** দোকানের কনফিগ (workers/stores/index.ts) যা বলে সেটাই: Star Tech/Motion View/Gadget & Gear অফিসিয়াল, Apple Gadgets/Gadget Breeze/Sumash/Diamu আনঅফিসিয়াল। সন্দেহ হলে পাতার ওয়ারেন্টি-লেখা দেখে স্থির করবে, মনে মনে নয়।
+7. **condition সত্যি লিখবে।** দোকানের কনফিগ (workers/stores/index.ts) যা বলে সেটাই: Star Tech/Motion View/Gadget & Gear অফিসিয়াল, Apple Gadgets/Gadget Breeze/Sumash/Diamu আনঅফিসিয়াল। সন্দেহ হলে পাতার ওয়ারেন্টি-লেখা দেখে স্থির করবে, মনে মনে নয়। কোন ক্যাটাগরিতে কোন condition চলে তা ক্যাটাগরির `conditions`-এ (ইলেকট্রনিক্স: official/unofficial/used; স্নিকার্স: official = আসল, replica_premium, replica; স্কিনকেয়ার: official)। কপি জুতায় দোকান নিজে "1:1"/"Premium" লিখলে `replica_premium`, "OEM"/"A Grade" বা কিছু না লিখলে `replica`। পণ্যের নামে "Copy"/"1:1" লিখবে না — কপি দামের পাশে আর কার্ডে নিজে থেকে দেখায়।
 9. **একই পণ্য দুবার নয়।** নতুন সাইজ বা ভার্সন (40mm, 44mm, 256GB) আলাদা পণ্য নয়, আগের পণ্যেরই নতুন ভার্সন। অ্যাডমিন এমন পণ্য যোগ করতে দেয় না, আর `npm run catalog:build` "SAME PRODUCT TWICE" দেখালে আগে সেটা এক করবে। একটা পেজ সরালে `public/_redirects` এ পুরনো ঠিকানা থেকে 301 দেবে।
 10. **`releaseYear` দেবে, প্রকাশিত তারিখ দেখে।** প্রথম ঘোষণার বছর, আন্দাজে নয়।
 11. **দেশের নাম নিজে থেকেই এক হয়।** JP, Japan, Japan Version সব "Japan"; International মানে "Global" (`src/utils/region.ts`)। নতুন বানান দেখলে ওই ফাইলের তালিকায় যোগ করবে, ডেটায় হাতে বদলাবে না।
@@ -19,11 +19,12 @@
 ## দোকান (সেলার) যোগের নিয়ম
 
 1. **আগে robots.txt আর Terms of Use।** কোনোটাতেই আটকে থাকলে দোকান বাদ। ব্যতিক্রম চাওয়া যাবে শুধু দোকানের কাছেই — ইমেইল করে অনুমতি বা feed।
+1a. **GitHub Actions থেকেও খুলতে হবে।** লোকালে খোলা যথেষ্ট নয়, worker চলে Actions এর IP থেকে। `workers/probe.ts` এর `URLS`-এ দোকানের sitemap আর ২-৩টা পণ্যের পাতা বসিয়ে `main`-এ push করলে `probe-stores` চলে; কোনো ✗ থাকলে দোকান বাদ।
 2. **bot protection ফাঁকি দেওয়ার কোড কখনো না।** stealth plugin, নকল fingerprint, residential proxy, CAPTCHA-ভাঙা — কিছুই না। দোকান আটকালে দোকান বাদ, এইটুকুই।
 3. **worker নিজের পরিচয় দিয়ে যাবে।** নিজের user-agent ছাড়া ব্রাউজার নকল করা যাবে না।
 4. **পার্সযোগ্য দাম লাগবেই।** JSON-LD, variation JSON বা পরিষ্কার markup না থাকলে (বা JS-rendered হলে) দোকান বাদ।
 5. **workers/stores/index.ts-এই সব entry।** sitemap, parser, condition, sample URL — সব ওখানে; অন্য কোথাও hard-code করা যাবে না।
-6. **এই দোকানগুলো স্থায়ীভাবে বাদ:** Daraz (ToS-এ সংগ্রহ নিষেধ), Ryans (Cloudflare challenge), TechLand (robots আটকে), Pickaboo (403), GadStyle (403), Facebook (নিষেধ)। নতুন করে চেষ্টা করা সময় নষ্ট।
+6. **এই দোকানগুলো স্থায়ীভাবে বাদ:** Daraz (ToS-এ সংগ্রহ নিষেধ), Ryans (Cloudflare challenge), TechLand (robots আটকে), Pickaboo (403), GadStyle (403), Rokomari আর The Mall BD (GitHub Actions থেকে 403), Facebook (নিষেধ)। নতুন করে চেষ্টা করা সময় নষ্ট।
 
 ## পাইপলাইন — ক্রম বদলানো যাবে না
 

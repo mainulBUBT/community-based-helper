@@ -31,7 +31,6 @@ function usable(saved: Saved | null, store: Store, targets: Product[]): saved is
 
 // রাতের run এ দোকানের পুরো তালিকা নতুন করে আনা হয়; মাঝের run (নতুন পণ্য) জমা তালিকা থেকে মেলায়
 export async function storeListings(store: Store, targets: Product[], catalog: Product[], refresh: boolean): Promise<Listing[]> {
-  if (store.listsBy === "name") return store.discover(targets);
   const saved = refresh ? null : await load(store);
   if (usable(saved, store, targets)) return saved.listings;
   const listings = await store.discover(catalog);

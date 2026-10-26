@@ -1,7 +1,7 @@
 "use client";
 
 import { useCategoryList } from "@/lib/categories";
-import { categoryFamily, categoryName } from "@/utils/categories";
+import { categoryConditions, categoryFamily, categoryName } from "@/utils/categories";
 import { useI18n } from "./useI18n";
 
 export function useCategories() {
@@ -16,5 +16,6 @@ export function useCategories() {
     find,
     name: (slug: string | null | undefined) => categoryName(find(slug), lang) || slug || "",
     warranty: (slug: string | null | undefined) => find(slug)?.warranty !== false,
+    conditions: (slug: string | null | undefined) => categoryConditions(find(slug)),
   };
 }
