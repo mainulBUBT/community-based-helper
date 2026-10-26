@@ -344,7 +344,7 @@ export const adminBn = {
     testing: "পরীক্ষা চলছে…",
     testOk: (reply: string) => `কাজ করছে। উত্তর এসেছে: ${reply}`,
     testFailed: (error: string) => `কাজ করছে না: ${error}`,
-    testNeedsKey: "নিরাপত্তার জন্য সেভ করা key আর ব্রাউজারে আসে না। পরীক্ষা করতে key টা আবার লিখুন।",
+    testNeedsKey: "এই প্রোভাইডারের কোনো key সেভ নেই। key লিখে পরীক্ষা করুন।",
     secretSaved: (hint: string) => `সেভ করা আছে (${hint})। খালি রাখলে এটাই থাকবে, বদলাতে নতুনটা লিখুন।`,
     noKeyForProvider: "এই প্রোভাইডারের key এখনো সেভ করা নেই। অন্য প্রোভাইডারের key এখানে ব্যবহার হয় না।",
     keySaved: "key সেভ করা আছে",

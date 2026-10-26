@@ -63,7 +63,14 @@ export async function savePrivateSettings(value: PrivateSettings, section: strin
   await logAction("settings.update", { section });
 }
 
+// key খালি থাকলে সার্ভার ওই প্রোভাইডারের সেভ করা key নেয়; ডেমোতে (Supabase ছাড়া) ব্রাউজার থেকেই
 export async function testLlm({ baseUrl, model, apiKey }: PrivateSettings["llm"]) {
+  if (supabase) {
+    const { data, error } = await supabase.functions.invoke<{ reply?: string; error?: string }>("test-llm", { body: { baseUrl, model, apiKey } });
+    if (error) throw error;
+    if (data?.error) throw new Error(data.error);
+    return data?.reply ?? "";
+  }
   const response = await fetch(`${baseUrl.replace(/\/+$/, "")}/chat/completions`, {
     method: "POST",
     headers: { "content-type": "application/json", authorization: `Bearer ${apiKey ?? ""}` },

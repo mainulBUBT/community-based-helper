@@ -200,7 +200,7 @@ function SettingsForm({ initial, onSaved, tab, onTab }: { initial: PrivateSettin
   async function onTest(form: HTMLFormElement | null) {
     if (!form) return;
     const llm = read(form).llm;
-    if (!llm.apiKey) return setTestResult(t.admin.jobs.testNeedsKey);
+    if (!llm.apiKey && !savedKey(llm.baseUrl)) return setTestResult(t.admin.jobs.testNeedsKey);
     setTestResult(t.admin.jobs.testing);
     try {
       const reply = await testLlm(llm);
