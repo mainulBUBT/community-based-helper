@@ -3,7 +3,7 @@
 import { Check, Loader2, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState, type FormEvent } from "react";
-import { Field } from "@/components/admin/Field";
+import { Field, SecretField } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { Tabs } from "@/components/admin/Tabs";
 import { Toggle } from "@/components/admin/Toggle";
@@ -163,6 +163,9 @@ function JobsPanel() {
   );
 }
 
+// ব্রাউজার/পাসওয়ার্ড ম্যানেজার এই ফর্মকে লগইন ভেবে model এ ইমেইল আর key তে পাসওয়ার্ড বসিয়ে দেয়
+const NO_AUTOFILL = { autoComplete: "off", "data-1p-ignore": true, "data-lpignore": "true", "data-form-type": "other" } as const;
+
 // AI আর Telegram একই ফর্মে, দুই ট্যাবেই মাউন্ট থাকে যাতে ট্যাব বদলালে লেখা না হারায়
 function SettingsForm({ initial, onSaved, tab, onTab }: { initial: PrivateSettings; onSaved: () => void; tab: Tab; onTab: (tab: Tab) => void }) {
   const { t } = useAdminI18n();
@@ -200,7 +203,7 @@ function SettingsForm({ initial, onSaved, tab, onTab }: { initial: PrivateSettin
   async function onTest(form: HTMLFormElement | null) {
     if (!form) return;
     const llm = read(form).llm;
-    if (!llm.apiKey && !savedKey(llm.baseUrl)) return setTestResult(t.admin.jobs.testNeedsKey);
+    if (!llm.apiKey) return setTestResult(t.admin.jobs.testNeedsKey);
     setTestResult(t.admin.jobs.testing);
     try {
       const reply = await testLlm(llm);
@@ -276,17 +279,20 @@ function SettingsForm({ initial, onSaved, tab, onTab }: { initial: PrivateSettin
               <span className="text-xs text-dim">{t.admin.jobs.presetHint}</span>
             </div>
             <div className="md:col-span-2">
-              <Field label={t.admin.jobs.baseUrl} name="baseUrl" type="url" value={baseUrl} onChange={(e) => setBaseUrl(e.target.value)} required hint={t.admin.jobs.baseUrlHint} />
+              <Field label={t.admin.jobs.baseUrl} name="baseUrl" type="url" {...NO_AUTOFILL} value={baseUrl} onChange={(e) => setBaseUrl(e.target.value)} required hint={t.admin.jobs.baseUrlHint} />
             </div>
-            <Field label={t.admin.jobs.model} name="model" value={model} onChange={(e) => setModel(e.target.value)} required />
+            <Field label={t.admin.jobs.model} name="model" {...NO_AUTOFILL} value={model} onChange={(e) => setModel(e.target.value)} required />
             {/* প্রোভাইডার বদলালে ঘর খালি হয়, আর দেখায় ওই প্রোভাইডারের নিজের সেভ করা key */}
-            <Field
+            <SecretField
               key={providerKey(baseUrl)}
               label={t.admin.jobs.apiKey}
               name="apiKey"
-              type="password"
-              autoComplete="off"
-              hint={savedKey(baseUrl) ? t.admin.jobs.secretSaved(savedKey(baseUrl)!) : t.admin.jobs.noKeyForProvider}
+              defaultValue={savedKey(baseUrl) ?? ""}
+              {...NO_AUTOFILL}
+              autoComplete="new-password"
+              show={t.admin.jobs.showKey}
+              hide={t.admin.jobs.hideKey}
+              hint={savedKey(baseUrl) ? t.admin.jobs.keySavedHere : t.admin.jobs.noKeyForProvider}
             />
             <div className="flex flex-wrap items-center gap-3 md:col-span-2">
               <button type="button" onClick={(e) => onTest(e.currentTarget.form)} className={secondaryButton}>
@@ -305,10 +311,11 @@ function SettingsForm({ initial, onSaved, tab, onTab }: { initial: PrivateSettin
               label={t.admin.jobs.botToken}
               name="telegramBotToken"
               type="password"
-              autoComplete="off"
+              {...NO_AUTOFILL}
+              autoComplete="new-password"
               hint={initial.telegramBotToken ? t.admin.jobs.secretSaved(initial.telegramBotToken) : undefined}
             />
-            <Field label={t.admin.jobs.chatId} name="alertChatId" defaultValue={initial.alertChatId ?? ""} />
+            <Field label={t.admin.jobs.chatId} name="alertChatId" {...NO_AUTOFILL} defaultValue={initial.alertChatId ?? ""} />
           </div>
         </Panel>
       </div>

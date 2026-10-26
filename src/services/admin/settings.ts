@@ -31,19 +31,16 @@ export async function saveSiteSettings(value: SiteSettings, section: string) {
   await logAction("settings.update", { section });
 }
 
-// key আর token সার্ভার থেকে শুধু ঢাকা অবস্থায় আসে (যেমন ••••a1b2); সেভে খালি রাখলে আগেরটাই থাকে
+// AI প্রোভাইডারের key পুরোটা আসে (অ্যাডমিনের ঘরে চোখের বোতামে দেখা যায়); Telegram token শুধু ঢাকা (যেমন ••••a1b2), সেভে খালি রাখলে আগেরটাই থাকে
 export async function loadPrivateSettings(): Promise<PrivateSettings> {
-  if (!supabase)
-    return {
-      ...demoPrivate,
-      llm: { ...demoPrivate.llm, apiKey: masked(demoPrivate.llm.apiKey) },
-      telegramBotToken: masked(demoPrivate.telegramBotToken),
-      llmKeys: Object.fromEntries(Object.entries(demoPrivate.llmKeys ?? {}).map(([url, key]) => [url, masked(key)!])),
-    };
-  const { data, error } = await supabase.rpc("private_settings_masked");
-  if (error) throw error;
-  const value = (data ?? {}) as Partial<PrivateSettings>;
-  return { ...DEFAULT_PRIVATE, ...value, llm: { ...DEFAULT_PRIVATE.llm, ...value.llm } };
+  if (!supabase) return { ...demoPrivate, telegramBotToken: masked(demoPrivate.telegramBotToken) };
+  const [settings, keys] = await Promise.all([supabase.rpc("private_settings_masked"), supabase.rpc("llm_keys")]);
+  if (settings.error) throw settings.error;
+  if (keys.error) throw keys.error;
+  const value = (settings.data ?? {}) as Partial<PrivateSettings>;
+  const llmKeys = (keys.data ?? {}) as Record<string, string>;
+  const llm = { ...DEFAULT_PRIVATE.llm, ...value.llm };
+  return { ...DEFAULT_PRIVATE, ...value, llm: { ...llm, apiKey: llmKeys[providerKey(llm.baseUrl)] ?? null }, llmKeys };
 }
 
 export async function savePrivateSettings(value: PrivateSettings, section: string) {
@@ -67,7 +64,8 @@ export async function savePrivateSettings(value: PrivateSettings, section: strin
 export async function testLlm({ baseUrl, model, apiKey }: PrivateSettings["llm"]) {
   if (supabase) {
     const { data, error } = await supabase.functions.invoke<{ reply?: string; error?: string }>("test-llm", { body: { baseUrl, model, apiKey } });
-    if (error) throw error;
+    // ফাংশনের নিজের কারণটা দেখানো, শুধু "non-2xx" নয়
+    if (error) throw new Error((await (error.context as Response | undefined)?.json?.().catch(() => null))?.error ?? error.message);
     if (data?.error) throw new Error(data.error);
     return data?.reply ?? "";
   }
