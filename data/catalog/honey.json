@@ -1,0 +1,1156 @@
+{
+ "category": "honey",
+ "sites": [
+  {
+   "name": "Arogga",
+   "website": "https://www.arogga.com",
+   "note": "product sitemap; JSON-LD-এ দাম। মধু আর খেজুরের বড় তালিকা।"
+  },
+  {
+   "name": "Chaldal",
+   "website": "https://chaldal.com",
+   "note": "পণ্যের লিংক নাম+সাইজ থেকে (chaldal.com/dabur-honey-250-gm); itemprop দাম। পাতা ভারী (~১.৭MB), প্রায়ই timeout — কিছু দাম বাদ পড়েছে।"
+  },
+  {
+   "name": "Othoba",
+   "website": "https://othoba.com",
+   "note": "মার্কেটপ্লেস (অনেক বিক্রেতা); /honey আর /dates ক্যাটাগরি পাতা। একই জাত-ওজনে কয়েকজন বিক্রেতা থাকলে স্টকে থাকা সবচেয়ে কম দামটা। /search? robots-এ বন্ধ।"
+  },
+  {
+   "name": "Rokomari",
+   "website": "https://www.rokomari.com",
+   "note": "product sitemap নেই, /search robots-এ বন্ধ; ক্যাটাগরি পাতা (dates-khejur, organic-food, groceries) থেকে লিংক। JSON-LD-এ দাম।"
+  }
+ ],
+ "products": [
+  {
+   "brand": "Dabur",
+   "name": "Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "50g",
+     "attributes": {
+      "capacity": "50g"
+     },
+     "officialPrice": 72
+    },
+    {
+     "label": "100g",
+     "attributes": {
+      "capacity": "100g"
+     },
+     "officialPrice": 136
+    },
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 280
+    },
+    {
+     "label": "400g",
+     "attributes": {
+      "capacity": "400g"
+     },
+     "officialPrice": 437
+    },
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 545
+    },
+    {
+     "label": "1kg",
+     "attributes": {
+      "capacity": "1kg"
+     },
+     "officialPrice": 965
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjlcLzI5NDQwLWRhYnVyLWhvbmV5LTI1MC1nbS1iYzhiM2suanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ==",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC8zMDY1MFwvMzA2NTAtRGFidXItSG9uZXktNTBnbS1jb3B5LXdlYm9ndi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzBcLzMwNjUxLURhYnVyLUhvbmV5LTQxbnYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "50g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/30650/dabur-honey-50gm",
+     "price": 75,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "50g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/dabur-honey-50-gm",
+     "price": 70,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "100g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/30651/dabur-honey-100gm",
+     "price": 133,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "100g",
+     "site": "Othoba",
+     "url": "https://othoba.com/dabur-honey-100-gm",
+     "price": 140,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/29440/dabur-honey-250g",
+     "price": 280,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/dabur-honey-250-gm",
+     "price": 250,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Othoba",
+     "url": "https://othoba.com/dabur-honey-250-gm",
+     "price": 300,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "400g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/72322/dabur-original-honey-squeezy-400g",
+     "price": 437,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "400g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/dabur-honey-400-gm",
+     "price": 400,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "400g",
+     "site": "Othoba",
+     "url": "https://othoba.com/dabur-honey-squzze-400gm-daily-shopping-725756",
+     "price": 470,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/45216/dabur-honey-500g",
+     "price": 540,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Othoba",
+     "url": "https://othoba.com/dabur-honey-500-gm",
+     "price": 550,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/45217/dabur-honey-1kg",
+     "price": 941,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Othoba",
+     "url": "https://othoba.com/dabur-honey-1kg",
+     "price": 990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Saffola",
+   "name": "Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "100g",
+     "attributes": {
+      "capacity": "100g"
+     },
+     "officialPrice": 119
+    },
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 209
+    },
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 389
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC81MTE0NFwvNTExNDQtMS0xLXdzZzFwYS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0VmFyaWFudC1wdl9pbWFnZXNcLzUxMTQ2XC81MTE0Ni0xLTlxamV4Ny5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0VmFyaWFudC1wdl9pbWFnZXNcLzc1MDM1XC83NTAzNS0xLTFqd3Nrbi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0="
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "100g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/74890/saffola-honey-100g",
+     "price": 98,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "100g",
+     "site": "Othoba",
+     "url": "https://othoba.com/saffola-honey-100gm-206176",
+     "price": 140,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/51144/saffola-honey-250g",
+     "price": 188,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Othoba",
+     "url": "https://othoba.com/saffola-honey-250gm-marico-bangladesh-ltd-665522",
+     "price": 230,
+     "oldPrice": 250,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/51146/saffola-honey-500gm",
+     "price": 349,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/saffola-honey-500-gm",
+     "price": 430,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Hamdard",
+   "name": "Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "100g",
+     "attributes": {
+      "capacity": "100g"
+     },
+     "officialPrice": 119
+    },
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 207
+    },
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 424
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC8zMTU1OVwvMzE1NTktSEFtZGFyZC1Ib25leS0xMDBnbS1jb3B5LXZvODU2bC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNDBcLzQwMzYyLUhhbWRhcmQtSG9uZXktMjUwbWwtcXZiei5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0=",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC84Nzg2OFwvODc4NjgtSGFtZGFyZC1Ib25leS01MDBnbS0zdHF5eGcud2VicCIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ=="
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "100g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/31559/hamdard-honey-100ml",
+     "price": 118,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "100g",
+     "site": "Othoba",
+     "url": "https://othoba.com/hamdard-honey-100-gm-hamdard-laboratory-waqf-bangladesh-1034166",
+     "price": 121,
+     "oldPrice": 130,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/40362/hamdard-honey-250ml",
+     "price": 205,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Othoba",
+     "url": "https://othoba.com/hamdard-honey-250-gm-hamdard-laboratory-waqf-bangladesh-1034165",
+     "price": 210,
+     "oldPrice": 225,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/87868/hamdard-honey-500gm",
+     "price": 428,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Othoba",
+     "url": "https://othoba.com/hamdard-honey-500-gm-hamdard-laboratory-waqf-bangladesh-1034164",
+     "price": 420,
+     "oldPrice": 450,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Al Shifa",
+   "name": "Natural Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "125g",
+     "attributes": {
+      "capacity": "125g"
+     },
+     "officialPrice": 305
+    },
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 736
+    },
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 1134
+    },
+    {
+     "label": "1kg",
+     "attributes": {
+      "capacity": "1kg"
+     },
+     "officialPrice": 2179
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Al_Shifa_Natural_Honey_250_Gm-ALSHIFA-5e9d9-319846.png"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "125g",
+     "site": "Othoba",
+     "url": "https://othoba.com/al-shifa-natural-honey-125-gm-fair-food-lifestyle-ltd-1079620",
+     "price": 305,
+     "oldPrice": 325,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Othoba",
+     "url": "https://othoba.com/al-shifa-natural-honey-250gm-originally-imported-saudi-arabia-royal-mart-706246",
+     "price": 678,
+     "oldPrice": 778,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/319846/al-shifa-natural-honey-250-gm-ashna0250g",
+     "price": 795,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Othoba",
+     "url": "https://othoba.com/al-shifa-natural-honey-500gm-originally-imported-saudi-arabia-royal-mart-706248",
+     "price": 1134,
+     "oldPrice": 1234,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Othoba",
+     "url": "https://othoba.com/al-shifa-natural-honey-1kg-saudi-arabia-royal-mart-706243",
+     "price": 2179,
+     "oldPrice": 2395,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Al Shifa",
+   "name": "Acacia Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "125g",
+     "attributes": {
+      "capacity": "125g"
+     },
+     "officialPrice": 399
+    },
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 1062
+    },
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 2032
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://i.chaldn.com/_mpimage/alshifa-acacia-honey-500-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D123286&q=best&v=1",
+    "https://i.chaldn.com/_mpimage/alshifa-acacia-honey-250-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D123287&q=best&v=1"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "125g",
+     "site": "Othoba",
+     "url": "https://othoba.com/al-shifa-acacia-honey-125gm-fair-food-lifestyle-ltd-1079634",
+     "price": 399,
+     "oldPrice": 425,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/alshifa-acacia-honey-250-gm",
+     "price": 1095,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Othoba",
+     "url": "https://othoba.com/al-shifa-acacia-honey-250gm-fair-food-lifestyle-ltd-1079635",
+     "price": 1029,
+     "oldPrice": 1095,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/alshifa-acacia-honey-500-gm",
+     "price": 2095,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Othoba",
+     "url": "https://othoba.com/al-shifa-acacia-honey-500gm-fair-food-lifestyle-ltd-1079636",
+     "price": 1969,
+     "oldPrice": 2095,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Al Shifa",
+   "name": "Black Forest Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "125g",
+     "attributes": {
+      "capacity": "125g"
+     },
+     "officialPrice": 399
+    },
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 752
+    },
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 2032
+    },
+    {
+     "label": "1kg",
+     "attributes": {
+      "capacity": "1kg"
+     },
+     "officialPrice": 2726
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://i.chaldn.com/_mpimage/alshifa-black-forest-honey-500-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D123291&q=best&v=1"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "125g",
+     "site": "Othoba",
+     "url": "https://othoba.com/al-shifa-black-forest-honey-125gm-fair-food-lifestyle-ltd-1079630",
+     "price": 399,
+     "oldPrice": 425,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Othoba",
+     "url": "https://othoba.com/al-shifa-black-forest-honey-250gm-fair-food-lifestyle-ltd-1079631",
+     "price": 752,
+     "oldPrice": 800,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/alshifa-black-forest-honey-500-gm",
+     "price": 2095,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Othoba",
+     "url": "https://othoba.com/al-shifa-black-forest-honey-500gm-fair-food-lifestyle-ltd-1079632",
+     "price": 1969,
+     "oldPrice": 2095,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Othoba",
+     "url": "https://othoba.com/al-shifa-black-forest-honey-1-kg-fair-food-lifestyle-ltd-1079633",
+     "price": 2726,
+     "oldPrice": 2900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Hosen",
+   "name": "Pure Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "400g",
+     "attributes": {
+      "capacity": "400g"
+     },
+     "officialPrice": 610
+    },
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 742
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://i.chaldn.com/_mpimage/hosen-pure-honey-500-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D129344&q=best&v=1"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "400g",
+     "site": "Othoba",
+     "url": "https://othoba.com/hosen-pure-honey-400gm",
+     "price": 610,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/hosen-pure-honey-500-gm",
+     "price": 789,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Othoba",
+     "url": "https://othoba.com/hosen-pure-honey-500gm",
+     "price": 695,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Karkuma",
+   "name": "Organic Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "400g",
+     "attributes": {
+      "capacity": "400g"
+     },
+     "officialPrice": 682
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNDBcLzQwOTIyLTQwMGdtLTMyMHFjcC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0=",
+    "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Karkuma_Organic_Honey_Organic_Modhu_400_-Karkuma-c8247-270266.png"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "400g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/40922/karkuma-organic-honey-400g",
+     "price": 675,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "400g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/270266/karkuma-organic-honey-organic-modhu-400-gm",
+     "price": 689,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Modern Herbal",
+   "name": "Black Cumin Flower Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "375g",
+     "attributes": {
+      "capacity": "375g"
+     },
+     "officialPrice": 312
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC83NTc2N1wvNzU3NjctQmxhY2stQ3VtaW4tSG9uZXktMzc1Z20tY29weS1tMmZld2kuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ=="
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "375g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/75767/modern-herbal-black-cumin-honey-375g",
+     "price": 308,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "375g",
+     "site": "Othoba",
+     "url": "https://othoba.com/honey-modern-herbal-kalojeera-fuler-modhu-375gm-sunnahealth-681015",
+     "price": 317,
+     "oldPrice": 340,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Farmer's Gold",
+   "name": "Black Seed Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 378
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNjBcLzYwNzM0LUJsYWNrLVNlZWQtRmxvd2VyLUhvbmV5LTI1MGdtLW9ub3IuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ=="
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "250g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/60734/farmer-s-gold-black-seed-flower-honey-250g",
+     "price": 371,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Othoba",
+     "url": "https://othoba.com/farmers-gold-black-seed-honey-250g",
+     "price": 385,
+     "oldPrice": 450,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Ashol",
+   "name": "Sundarban Natural Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 429
+    },
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 840
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC83MTQ0N1wvNzE0NDctV2hhdHNBcHAtSW1hZ2UtMjAyNC0xMC0yOC1hdC0zLW0zd3lscS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC83MTQ0OFwvNzE0NDgtV2hhdHNBcHAtSW1hZ2UtMjAyNC0xMC0yOC1hdC0zLWthOXkzZy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Sundarban_Natural_Honey_250g-Ashol-75d31-210661.png"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "250g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/71448/ashol-sundarban-natural-honey-250gm",
+     "price": 459,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/210661/ashol-sundarban-natural-honey-sundarboner-chaker-modhu-250gm",
+     "price": 399,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/71447/ashol-sundarban-natural-honey-500gm",
+     "price": 902,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/210662",
+     "price": 779,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Ashol",
+   "name": "Blackseed Flower Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 369
+    },
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 637
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC81ODYxMlwvNTg2MTItQXNob2wtSG9uZXktQmxhY2tzZWVkLUZsb3dlci1Ib25leS0yNTBnLWNvcHktdnNqeGhwLndlYnAiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0=",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC83MTQ0M1wvNzE0NDMtV2hhdHNBcHAtSW1hZ2UtMjAyNC0xMC0yOC1hdC0zLTk3cmFpMC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Black_Seed_Honey_250g-Ashol-1d390-210613.png"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "250g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/58612/ashol-honey-blackseed-flower-honey-250g",
+     "price": 350,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/210613/ashol-blackseed-flower-honey-kalojira-fhuler-modhu-250gm",
+     "price": 389,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/71443/ashol-blackseed-flower-honey-500gm",
+     "price": 675,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/210614/ashol-blackseed-flower-honey-kalojira-fhuler-modhu-500gm",
+     "price": 599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Ashol",
+   "name": "Lychee Flower Honey",
+   "category": "honey",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 224
+    },
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 443
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNThcLzU4NjE1LUhvbmV5LUx5Y2hlZS1GbG93ZXItSG9uZXktMjUwZ20tNnpsby5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0=",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC83MTQ0NVwvNzE0NDUtV2hhdHNBcHAtSW1hZ2UtMjAyNC0xMC0yOC1hdC0zLTJ5dWFudC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://rokbucket.rokomari.io/ProductNew20190903/260X372/lychee_Flower_Honey_250g-Ashol-dba56-210640.png"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "250g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/58615/ashol-lychee-flower-honey-250g",
+     "price": 209,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/210640/ashol-lychee-flower-honey-licu-fhuler-modhu-250gm",
+     "price": 239,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/71445/ashol-lychee-flower-honey-500g",
+     "price": 418,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/210641/ashol-lychee-flower-honey-licu-fhuler-modhu-500gm",
+     "price": 469,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  }
+ ]
+}

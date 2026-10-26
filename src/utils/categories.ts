@@ -6,7 +6,7 @@ export const categoryName = (category: CategoryInfo | undefined, lang: Lang) => 
 
 export const categoryFamily = (categories: CategoryInfo[], slug: string) => [slug, ...categories.filter((c) => c.parent === slug).map((c) => c.slug)];
 
-export const DEFAULT_CONDITIONS: Condition[] = ["official", "unofficial", "used"];
+export const DEFAULT_CONDITIONS: Condition[] = ["official", "unofficial"];
 
 export const categoryConditions = (category: CategoryInfo | undefined) => (category?.conditions?.length ? category.conditions : DEFAULT_CONDITIONS);
 

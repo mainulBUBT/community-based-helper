@@ -207,7 +207,7 @@ const herhappyskin: Store = {
 // Othoba (nopCommerce মার্কেটপ্লেস): sitemap ফাঁকা, তাই ক্যাটাগরি পাতা (?pagenumber=) ধরে ঘুরে listing।
 // নতুন ধরনের পণ্য এলে এখানে ওদের ক্যাটাগরির path যোগ করুন
 const OTHOBA = "https://othoba.com";
-const OTHOBA_CATEGORIES = ["/water-purifier", "/pureit-water-purifier"];
+const OTHOBA_CATEGORIES = ["/water-purifier", "/pureit-water-purifier", "/honey", "/dates"];
 
 function parseOthobaListings(html: string): Listing[] {
   return [...html.matchAll(/data-productid="\d+">[\s\S]*?<a href="(\/[^"]+)">\s*<img[^>]*alt="([^"]*)"/g)].map(([, path, alt]) => ({
@@ -628,6 +628,26 @@ export const stores: Store[] = [
     sitemap: "https://mke.com.bd/sitemap-products.xml",
     path: "/",
     condition: "official",
+  }),
+  sitemapStore({
+    id: "arafatelecom",
+    name: "Arafa Telecom",
+    origin: "https://arafatelecom.com",
+    sample: "https://arafatelecom.com/product/motorola-edge-70-pro/",
+    sitemap: "https://arafatelecom.com/sitemap_index.xml",
+    path: "/product/",
+    condition: "unofficial",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "mobilebuzz",
+    name: "Mobile Buzz BD",
+    origin: "https://mobilebuzzbd.com",
+    sample: "https://mobilebuzzbd.com/product/motorola-edge-70-pro/",
+    sitemap: "https://mobilebuzzbd.com/sitemap_index.xml",
+    path: "/product/",
+    condition: "unofficial",
+    variants: wooVariants,
   }),
 ];
 

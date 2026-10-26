@@ -51,6 +51,7 @@ const ALIASES: Record<string, string> = {
   european: "Europe",
   global: "Global",
   international: "Global",
+  int: "Global",
   intl: "Global",
   worldwide: "Global",
 };

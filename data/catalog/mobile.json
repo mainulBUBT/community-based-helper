@@ -40,6 +40,16 @@
    "name": "Mobile Dokan",
    "website": "https://www.mobiledokan.co",
    "note": "Price/spec information site, not a shop. Used only as a reference for official BD MRP and release dates; no offers recorded from it."
+  },
+  {
+   "name": "Arafa Telecom",
+   "website": "https://arafatelecom.com",
+   "note": "WooCommerce; official and unofficial stock on one page, each RAM/storage option says 'official' or 'unofficial'; separate '-official' pages for some phones. JSON-LD price."
+  },
+  {
+   "name": "Mobile Buzz BD",
+   "website": "https://mobilebuzzbd.com",
+   "note": "WooCommerce; per-option price and stock, options sometimes carry official/unofficial/int/indian. A few options hold placeholder prices (Edge 70 12/256 at 10,000), skip those."
   }
  ],
  "products": [
@@ -1882,6 +1892,83 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-23"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-nord-ce5-official",
+     "price": 41999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-nord-ce-5",
+     "price": 37499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/oneplus-nord-ce5",
+     "price": 44999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oneplus-nord-ce5/",
+     "price": 44990,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oneplus-nord-ce5-indian/",
+     "price": 36999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/oneplus-nord-ce5/",
+     "price": 36999,
+     "oldPrice": 45999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/oneplus-nord-ce5/",
+     "price": 41999,
+     "oldPrice": 49999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
     }
    ]
   },
@@ -1925,6 +2012,94 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-23"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-nord-4",
+     "price": 37499,
+     "oldPrice": 50000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-nord-4-official",
+     "price": 54999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-nord-4-official",
+     "price": 54999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-nord-4",
+     "price": 43500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/oneplus-nord-4",
+     "price": 39990,
+     "oldPrice": 45990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/oneplus-nord-4/",
+     "price": 41999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/oneplus-nord-4/",
+     "price": 33500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/oneplus-nord-4/",
+     "price": 52500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
     }
    ]
   },
@@ -1961,6 +2136,39 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-23"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-nord-ce4-lite",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/oneplus-nord-ce4-lite-5g",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/oneplus-nord-ce4-lite-5g",
+     "price": 23999,
+     "oldPrice": 24999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
     }
    ]
   },
@@ -2007,6 +2215,50 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-23"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/pixel-8a",
+     "price": 47999,
+     "oldPrice": 50000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/google-pixel-8a",
+     "price": 47999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/google-pixel-8a-128gb/",
+     "price": 48200,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/google-pixel-8a/",
+     "price": 43999,
+     "oldPrice": 53475,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
     }
    ]
   },
@@ -2051,6 +2303,72 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-23"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/realme-14-pro-plus",
+     "price": 41299,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/realme-14-pro-plus",
+     "price": 44399,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/realme-14-pro-2/",
+     "price": 43500,
+     "oldPrice": 45700,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/realme-14-pro-2/",
+     "price": 43500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/realme-14-pro-plus-5g/",
+     "price": 43500,
+     "oldPrice": 50025,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/realme-14-pro-plus-5g/",
+     "price": 40500,
+     "oldPrice": 46575,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
     }
    ]
   },
@@ -2095,6 +2413,105 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-23"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/realme-14-5g-official",
+     "price": 41999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/realme-14-5g-official",
+     "price": 40599,
+     "oldPrice": 41999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/realme-14-5g",
+     "price": 41999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/realme-14",
+     "price": 41899,
+     "oldPrice": 46899,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/realme-14-official",
+     "price": 39990,
+     "oldPrice": 41990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/realme-14",
+     "price": 39000,
+     "oldPrice": 41999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/realme-14-5g/",
+     "price": 41999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/realme-14-5g/",
+     "price": 34500,
+     "oldPrice": 39999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/realme-14-5g/",
+     "price": 38999,
+     "oldPrice": 42999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
     }
    ]
   },
@@ -2128,7 +2545,107 @@
     "https://www.mobiledokan.com/media/realme-c75-gold-official-image_1.webp"
    ],
    "specsSource": "https://www.mobiledokan.com/mobile/realme-c75",
-   "offers": []
+   "offers": [
+    {
+     "variant": "8GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/realme-c75",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/realme-c75-8gb-256gb",
+     "price": 22999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/realme-c75",
+     "price": 19490,
+     "oldPrice": 24490,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/realme-c75-official",
+     "price": 19990,
+     "oldPrice": 19999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/realme-c75-official",
+     "price": 22990,
+     "oldPrice": 22999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/realme-c75/",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/realme-c75-8-256gb/",
+     "price": 22999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/realme-c75/",
+     "price": 21999,
+     "oldPrice": 23999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/realme-c75/",
+     "price": 19300,
+     "oldPrice": 21500,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
   },
   {
    "brand": "Huawei",
@@ -2163,6 +2680,3914 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-23"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/huawei-nova-y74-official",
+     "price": 29999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/huawei-nova-y74-official",
+     "price": 28499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/huawei-nova-y74",
+     "price": 29999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Honor",
+   "name": "X5c",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": 17999
+    }
+   ],
+   "colors": [
+    "Midnight Black"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x5c/x5c-midnight-black-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x5c/x5c-ocean-cyan-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/honor-x5c",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/honor-x5c",
+     "price": 16500,
+     "oldPrice": 16999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-x5c-official",
+     "price": 17799,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-x5c",
+     "price": 17999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-x5c-official",
+     "price": 17999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Honor",
+   "name": "X5c Plus",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 128GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 20499
+    }
+   ],
+   "colors": [
+    "Ocean Cyan",
+    "Meteor Silver"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x5c-plus/x5c-plus-ocean-cyan-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x5c-plus/x5c-plus-meteor-silver-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/honor-x5c-plus",
+   "offers": [
+    {
+     "variant": "4GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/honor-x5c-plus",
+     "price": 20499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-x5c-plus",
+     "price": 20199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x5c-plus-official",
+     "price": 20499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-x5c-plus",
+     "price": 20499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-x5c-plus-official",
+     "price": 20499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Honor",
+   "name": "X6c",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "6GB / 128GB",
+     "attributes": {
+      "ram": "6GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 21999
+    },
+    {
+     "label": "6GB / 256GB",
+     "attributes": {
+      "ram": "6GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 22999
+    }
+   ],
+   "colors": [
+    "Midnight Black",
+    "Ocean Cyan",
+    "Moonlight White"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x6c/honor-x6c-midnight-black-official-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x6c/honor-x6c-moonlight-white-official-03-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x6c/honor-x6c-ocean-cyan-official-02-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/honor-x6c",
+   "offers": [
+    {
+     "variant": "6GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/honor-x6c",
+     "price": 21999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-x6c-official",
+     "price": 21599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-x6c-official",
+     "price": 22599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x6c",
+     "price": 20499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x6c-official",
+     "price": 21999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x6c-official",
+     "price": 22999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-x6c",
+     "price": 21999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-x6c-6gb-256gb",
+     "price": 22999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-x6c-official",
+     "price": 21999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-x6c-official",
+     "price": 22999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Honor",
+   "name": "X6e",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 128GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 23999
+    }
+   ],
+   "colors": [
+    "Sunrise Gold",
+    "Midnight Black"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x6e/x6e-midnight-black-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x6e/x6e-sunrise-gold-04-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/honor-x6e",
+   "offers": [
+    {
+     "variant": "4GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/honor-x6e",
+     "price": 23000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/honor-x6e-official-price-in-bangladesh",
+     "price": 23990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-x6e",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x6e-official",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-x6e",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-x6e-official",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Honor",
+   "name": "X7d",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 25999
+    },
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 27999
+    }
+   ],
+   "colors": [
+    "Desert Gold",
+    "Velvet Black"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x7d/x7d-ocean-cyan-official-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x7d/honor-x7d-desert-gold-official-03-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/honor-x7d",
+   "offers": [
+    {
+     "variant": "8GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/honor-x7d",
+     "price": 25999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/honor-x7d",
+     "price": 27999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-x7d-official",
+     "price": 25799,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-x7d-official",
+     "price": 27499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x7d",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x7d",
+     "price": 25999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x7d-official",
+     "price": 25999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x7d-official",
+     "price": 27999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-x7d",
+     "price": 27999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-x7d-8gb-128gb",
+     "price": 25999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-x7d-official",
+     "price": 27999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-x7d-official",
+     "price": 25999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Honor",
+   "name": "X7e",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "6GB / 128GB",
+     "attributes": {
+      "ram": "6GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 27999
+    }
+   ],
+   "colors": [
+    "Midnight Black",
+    "Sunrise Orange",
+    "Light Blue"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x7e/honor-x7e-sunrise-orange-official-03-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x7e/honor-x7e-light-blue-official-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x7e/honor-x7e-midnight-black-official-02-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/honor-x7e",
+   "offers": [
+    {
+     "variant": "6GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/honor-x7e",
+     "price": 26700,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/honor-x7e-official-price-in-bangladesh",
+     "price": 27990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x7e-official",
+     "price": 27999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-x7e",
+     "price": 27999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-x7e-official",
+     "price": 27999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Honor",
+   "name": "X8d",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 37999
+    }
+   ],
+   "colors": [
+    "Light Blue",
+    "Velvet Grey",
+    "Velvet Black"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/honor-x8d/honor-x8d-light-blue-official-02-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/honor-x8d/honor-x8d-velvet-black-official-03-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/honor-x8d/honor-x8d-velvet-grey-official-01-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/honor-x8d",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/honor-x8d",
+     "price": 36500,
+     "oldPrice": 37999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-x8d-official",
+     "price": 37299,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x8d",
+     "price": 33999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "INT",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x8d-official",
+     "price": 37999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-x8d",
+     "price": 37999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-x8d",
+     "price": 29499,
+     "oldPrice": 35000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-x8d-official",
+     "price": 37999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Honor",
+   "name": "X9d",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 46999
+    },
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 48999
+    }
+   ],
+   "colors": [
+    "Reddish Brown"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x9d/x9d-midnight-black-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x9d/x9d-reddish-brown-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/x9d/x9d-sunrise-gold-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/honor-x9d",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/honor-x9d",
+     "price": 45500,
+     "oldPrice": 46999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/honor-x9d-official",
+     "price": 46999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x9d-official",
+     "price": 46999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x9d-official",
+     "price": 48999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-x9d",
+     "price": 41499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "INT",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-x9d",
+     "price": 46999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-x9d",
+     "price": 43999,
+     "oldPrice": 48000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-x9d-official",
+     "price": 46999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/honor-x9d/",
+     "price": 42500,
+     "oldPrice": 43500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "int",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-x9d-5g-12gb-512gb",
+     "price": 46999,
+     "oldPrice": 48999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-x9d-5g",
+     "price": 39499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-x9d-5g-official",
+     "price": 42999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/honor-x9d/",
+     "price": 41000,
+     "oldPrice": 42400,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/honor-x9d/",
+     "price": 40000,
+     "oldPrice": 43500,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/honor-x9d-official/",
+     "price": 46999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/honor-x9d/",
+     "price": 45300,
+     "oldPrice": 52999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/honor-x9d/",
+     "price": 41999,
+     "oldPrice": 48500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/honor-x9d/",
+     "price": 43500,
+     "oldPrice": 46000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Honor",
+   "name": "400",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 59999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/honor-400716.jpeg",
+    "https://images.kryinternational.com/uploads/honor-400.jpeg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/honor-400",
+   "offers": [
+    {
+     "variant": "12GB / 512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/honor-400-official-price-in-bangladesh",
+     "price": 54990,
+     "oldPrice": 59999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-400-official",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-400",
+     "price": 48999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "INT",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-400-official",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-400",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-400",
+     "price": 51999,
+     "oldPrice": 58000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-400-official",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Honor",
+   "name": "400 Pro",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 79999
+    }
+   ],
+   "colors": [
+    "Midnight Black",
+    "Lunar Grey",
+    "Tidal Blue"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/honor-400-pro/honor-400-pro-midnight-black-official-03-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/honor-400-pro",
+   "offers": [
+    {
+     "variant": "12GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/honor-400-pro",
+     "price": 78900,
+     "oldPrice": 79999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/honor-400-pro-official-price-in-bangladesh",
+     "price": 74990,
+     "oldPrice": 79999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-400-pro",
+     "price": 65999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "INT",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-400-pro-official",
+     "price": 79999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-400-pro",
+     "price": 79999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-400-pro",
+     "price": 66999,
+     "oldPrice": 72500,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-400-pro-official",
+     "price": 79999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Honor",
+   "name": "600",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 64999
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 69999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://images.kryinternational.com/uploads/honor-600-b.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3883/Honor_600_-_Black.webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/honor-600",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-600",
+     "price": 54999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-600",
+     "price": 57999,
+     "oldPrice": 61000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-600",
+     "price": 57999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "INT",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-600",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "INT",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-600-official",
+     "price": 64999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-600-official",
+     "price": 69999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-600",
+     "price": 67999,
+     "oldPrice": 77999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-600",
+     "price": 62999,
+     "oldPrice": 65000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-600-official",
+     "price": 69999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-600-official",
+     "price": 64999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/honor-600/",
+     "price": 56990,
+     "oldPrice": 58000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "int",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/honor-600/",
+     "price": 59990,
+     "oldPrice": 62000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "int",
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Honor",
+   "name": "600 Pro",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 99999
+    }
+   ],
+   "colors": [
+    "Golden White",
+    "Black",
+    "Orange"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/honor-600-pro/honor-600-pro-orange-official-03-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/honor-600-pro/honor-600-pro-black-official-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/honor/honor-600-pro/honor-600-pro-golden-white-official-02-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/honor-600-pro",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/honor-600-pro",
+     "price": 92500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-600-pro",
+     "price": 81499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-600-pro",
+     "price": 81999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "INT",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-600-pro-official",
+     "price": 99999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-600-pro",
+     "price": 79999,
+     "oldPrice": 82999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-600-pro-official",
+     "price": 99999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Tecno",
+   "name": "Spark Go 3",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": 16999
+    },
+    {
+     "label": "4GB / 128GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 16499
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/spark-go-3/spark-go-3-ink-black-official-02-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/spark-go-3/spark-go-3-titanium-grey-official-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/spark-go-3/spark-go-3-aurora-purple-official-03-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/tecno-spark-go-3",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tecno-spark-go-3",
+     "price": 16200,
+     "oldPrice": 16999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-spark-go-3-official",
+     "price": 16999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-spark-go-3-official",
+     "price": 16499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-spark-go-3",
+     "price": 16999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-spark-go-3-4gb-128gb",
+     "price": 16499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-spark-go-3-official",
+     "price": 16999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-spark-go-3-official",
+     "price": 16499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Tecno",
+   "name": "Spark 50C",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": 21999
+    },
+    {
+     "label": "4GB / 128GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 23999
+    }
+   ],
+   "colors": [
+    "Burgundy Red",
+    "Forge Orange",
+    "Basalt Titanium",
+    "Eclipse Black"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/spark-50c/spark-50c-burgundy-red-official-02-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/spark-50c/spark-50c-forge-orange-official-04-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/spark-50c/spark-50c-basalt-titanium-official-03-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/spark-50c/spark-50c-eclipse-black-official-01-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/tecno-spark-50c",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tecno-spark-50c",
+     "price": 20500,
+     "oldPrice": 21999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-spark-50c-official",
+     "price": 21999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-spark-50c-official",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-spark-50c",
+     "price": 21999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-spark-50c-4gb-128gb",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-spark-50c-official",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-spark-50c-official",
+     "price": 21999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Tecno",
+   "name": "Spark 50",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 128GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 18999
+    },
+    {
+     "label": "6GB / 128GB",
+     "attributes": {
+      "ram": "6GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 21999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/tecno/tecno-spark-50.jpeg",
+    "https://images.kryinternational.com/uploads/tecno-spark-50-black-jpeg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/tecno-spark-50",
+   "offers": [
+    {
+     "variant": "4GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-spark-50-official",
+     "price": 18999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-spark-50-official",
+     "price": 21999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-spark-50",
+     "price": 18999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-spark-50-6gb-128gb",
+     "price": 21999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-spark-50-official",
+     "price": 18999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-spark-50-official",
+     "price": 21999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Tecno",
+   "name": "Spark 50 Pro",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 128GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 24999
+    },
+    {
+     "label": "6GB / 128GB",
+     "attributes": {
+      "ram": "6GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 26999
+    },
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 30999
+    }
+   ],
+   "colors": [
+    "Ink Black",
+    "Titanium Grey",
+    "Midnight Blue"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/spark-50-pro/spark-50-pro-dynamic-orange-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/spark-50-pro/spark-50-pro-ink-black-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/spark-50-pro/spark-50-pro-midnight-blue-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/spark-50-pro/spark-50-pro-titanium-grey-01-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/tecno-spark-50-pro",
+   "offers": [
+    {
+     "variant": "4GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tecno-spark-50-pro",
+     "price": 23800,
+     "oldPrice": 24999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tecno-spark-50-pro",
+     "price": 29300,
+     "oldPrice": 30499,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-spark-50-pro-official",
+     "price": 26999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-spark-50-pro-official",
+     "price": 30999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-spark-50-pro-official",
+     "price": 24999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-spark-50-pro",
+     "price": 26999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-spark-50-pro-4gb-128gb",
+     "price": 24999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-spark-50-pro-8gb-128gb",
+     "price": 30999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-spark-50-pro",
+     "price": 24999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-spark-50-pro",
+     "price": 26999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-spark-50-pro",
+     "price": 30999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Tecno",
+   "name": "Camon 50",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 34999
+    },
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 38999
+    }
+   ],
+   "colors": [
+    "Moonshadow Black",
+    "Malachite Green",
+    "Nebula Titanium",
+    "Fir Green",
+    "Lavender Mist",
+    "Cream Mint"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/camon-50/camon-50-black-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/camon-50/camon-50-green-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/camon-50/camon-50-nebula-01-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/tecno-camon-50",
+   "offers": [
+    {
+     "variant": "8GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tecno-camon-50",
+     "price": 33800,
+     "oldPrice": 34999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tecno-camon-50",
+     "price": 37800,
+     "oldPrice": 38999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-camon-50-official",
+     "price": 34999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-camon-50-official",
+     "price": 38999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-camon-50",
+     "price": 31999,
+     "oldPrice": 34999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-camon-50-8gb-256gb",
+     "price": 36999,
+     "oldPrice": 38999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Tecno",
+   "name": "Pova Curve 2 5G",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 36999
+    },
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 39999
+    }
+   ],
+   "colors": [
+    "Mystic Purple",
+    "Melting Silver",
+    "Storm Titanium"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/pova-curve-2-5g/pova-curve-2-5g-mystic-purple-official-03-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/pova-curve-2-5g/pova-curve-2-5g-storm-titanium-official-01-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/tecno-pova-curve-2-5g",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tecno-pova-curve-2-5g",
+     "price": 38700,
+     "oldPrice": 39899,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tecno-pova-curve-2-5g",
+     "price": 35800,
+     "oldPrice": 36999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-pova-curve-2-official",
+     "price": 36999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-pova-curve-2-official",
+     "price": 39999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-pova-curve-2-5g",
+     "price": 36999,
+     "oldPrice": 39999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-pova-curve-2-official",
+     "price": 36999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-pova-curve-2-official",
+     "price": 39999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Tecno",
+   "name": "Camon Air",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 44999
+    },
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 49999
+    }
+   ],
+   "colors": [
+    "Prism Black",
+    "Jungle Green",
+    "Van Gogh Blue",
+    "Burgundy Red"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/camon-air/camon-air-burgundy-red-official-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/camon-air/camon-air-jungle-green-official-03-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/camon-air/camon-air-prism-black-official-02-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/tecno/camon-air/camon-air-van-gogh-blue-official-04-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/tecno-camon-air",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tecno-camon-air",
+     "price": 48800,
+     "oldPrice": 49999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/tecno-camon-air",
+     "price": 43800,
+     "oldPrice": 44999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-camon-air-official",
+     "price": 44999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-camon-air-official",
+     "price": 49999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-camon-air",
+     "price": 44999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-camon-air-8gb-256gb",
+     "price": 49999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-camon-air-official",
+     "price": 49999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-camon-air-official",
+     "price": 44999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Tecno",
+   "name": "Camon Slim 5G",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 59999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/tecno/tecno-camon-slim-5g-red.jpeg",
+    "https://images.kryinternational.com/uploads/tecno-camon-slim-5g-red.jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/tecno-camon-slim-5g",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/tecno-camon-slim-5g-official",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/tecno-camon-slim-5g",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/tecno-camon-slim-5g",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Infinix",
+   "name": "Smart 20",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": 16999
+    },
+    {
+     "label": "4GB / 128GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 18999
+    }
+   ],
+   "colors": [
+    "Shadow Black",
+    "Polaris Titanium",
+    "Sunlike Orange",
+    "Cloudline Blue"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/infinix/smart-20/smart-20-polaris-titanium-official-02-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/infinix-smart-20",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/infinix-smart-20",
+     "price": 18999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/infinix-smart-20",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/infinix-smart-20-official",
+     "price": 16999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/infinix-smart-20-official",
+     "price": 18999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/infinix-smart-20",
+     "price": 16999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/infinix-smart-20-4gb-128gb",
+     "price": 20999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/infinix-smart-20-official",
+     "price": 18999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/infinix-smart-20-official",
+     "price": 16999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Infinix",
+   "name": "Hot 70",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 128GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 23999
+    },
+    {
+     "label": "6GB / 128GB",
+     "attributes": {
+      "ram": "6GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 24999
+    },
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 25999
+    }
+   ],
+   "colors": [
+    "Night Pulse",
+    "Dive Blue",
+    "Silver Dancer",
+    "Thermo Orange"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/infinix/hot-70/hot-70-thermo-orange-official-01-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/infinix/hot-70/hot-70-dive-blue-official-02-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/infinix/hot-70/hot-70-night-pulse-official-03-500x500.webp",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/infinix/hot-70/hot-70-silver-dancer-official-04-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/infinix-hot-70",
+   "offers": [
+    {
+     "variant": "4GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/infinix-hot-70",
+     "price": 24999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/infinix-hot-70",
+     "price": 30999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/infinix-hot-70-official",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/infinix-hot-70-official",
+     "price": 24999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/infinix-hot-70-official",
+     "price": 25999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/infinix-hot-70",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/infinix-hot-70-6gb-128gb",
+     "price": 24999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/infinix-hot-70-8gb-128gb",
+     "price": 25999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/infinix-hot-70-official",
+     "price": 25999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/infinix-hot-70-official",
+     "price": 23999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/infinix-hot-70-official",
+     "price": 24999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Infinix",
+   "name": "Note Edge",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 30999
+    },
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 34999
+    }
+   ],
+   "colors": [
+    "Shadow Black",
+    "Stellar Blue",
+    "Silk Green"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/infinix/note-edge/note-edge-lunar-titanium-official-01-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/infinix-note-edge",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/infinix-note-edge",
+     "price": 34000,
+     "oldPrice": 34999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/infinix-note-edge",
+     "price": 30000,
+     "oldPrice": 30999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/infinix-note-edge-official",
+     "price": 30999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/infinix-note-edge-official",
+     "price": 34999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/infinix-note-edge",
+     "price": 30999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/infinix-note-edge-official",
+     "price": 34999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/infinix-note-edge-official",
+     "price": 30999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Infinix",
+   "name": "Note 60",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 44999
+    }
+   ],
+   "colors": [
+    "Mist Titanium",
+    "Midnight Black",
+    "Fizz Blue",
+    "Rose Gold",
+    "Mocha Brown"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/infinix/note-60/note-60-midnight-black-official-04-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/infinix-note-60",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/infinix-note-60",
+     "price": 43500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/infinix-note-60-official",
+     "price": 44999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/infinix-note-60",
+     "price": 37999,
+     "oldPrice": 44999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/infinix-note-60-official",
+     "price": 44999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Infinix",
+   "name": "Note 60 Pro",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 49999
+    }
+   ],
+   "colors": [
+    "Mist Titanium",
+    "Deep Ocean Blue",
+    "Solar Orange",
+    "Mocha Brown",
+    "Torino Black",
+    "Frost Silver"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/infinix/note-60-pro/note-60-pro-mist-titanium-official-03-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/infinix-note-60-pro",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/infinix-note-60-pro",
+     "price": 48500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/infinix-note-60-pro-official",
+     "price": 49999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/infinix-note-60-pro",
+     "price": 45999,
+     "oldPrice": 49999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/infinix-note-60-pro-official",
+     "price": 49999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Motorola",
+   "name": "Edge 70 Pro",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Motorola-Edge-70-Pro-5G-4443.png",
+    "https://images.kryinternational.com/uploads/motorola-edge-70-pro-w-webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3928/white_15.webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/motorola-edge-70-pro",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/motorola-edge-70-pro-price-in-bangladesh",
+     "price": 52489,
+     "oldPrice": 66990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/motorola-edge-70-pro-price-in-bangladesh",
+     "price": 48989,
+     "oldPrice": 62990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-edge-70-pro",
+     "price": 49000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-edge-70-pro",
+     "price": 54000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/motorola-edge-70-pro",
+     "price": 48999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/motorola-edge-70-pro",
+     "price": 54999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/motorola-edge-70-pro",
+     "price": 48999,
+     "oldPrice": 53000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/motorola-edge-70-pro",
+     "price": 52999,
+     "oldPrice": 58000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/motorola-edge-70-pro/",
+     "price": 53500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/motorola-edge-70-pro/",
+     "price": 48999,
+     "oldPrice": 49500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/motorola-edge-70-pro/",
+     "price": 50500,
+     "oldPrice": 55999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/motorola-edge-70-pro/",
+     "price": 53500,
+     "oldPrice": 62999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Motorola",
+   "name": "Edge 70 Pro Plus",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Motorola-Edge-70-Pro+sdghn-7244.png",
+    "https://images.kryinternational.com/uploads/motorola-edge-70-pro-plus-r.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4185/70_pro_plus.webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/motorola-edge-70-pro-plus",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-edge-70-pro-plus",
+     "price": 62000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/motorola-edge-70-pro-plus",
+     "price": 64999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/motorola-edge-70-pro-plus",
+     "price": 66999,
+     "oldPrice": 69000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/motorola-edge-70-pro-2/",
+     "price": 62999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/motorola-edge-70-pro-plus/",
+     "price": 64500,
+     "oldPrice": 69999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Motorola",
+   "name": "Edge 70",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Motorola-Edge-70-5G-8067.png",
+    "https://images.kryinternational.com/uploads/motorola-edge-70-green.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3321/Bronzegreen.webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/motorola-edge-70",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-edge-70-5g",
+     "price": 39499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-edge-70-5g",
+     "price": 42799,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/motorola-edge-70",
+     "price": 40499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/motorola-edge-70",
+     "price": 39999,
+     "oldPrice": 46000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/motorola-edge-70/",
+     "price": 41200,
+     "oldPrice": 44500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/motorola-edge-70-5g/",
+     "price": 39500,
+     "oldPrice": 47999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Motorola",
+   "name": "Edge 70 Fusion",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Motorola-Edge-70-Fusion-5G-orient-blue-1907.png",
+    "https://images.kryinternational.com/uploads/motorola-edge-70-fusion-orient-blue-jpg",
+    "https://diamu.com.bd/wp-content/uploads/2026/08/Motorola-EDGE-70-Fusion-5G-Best-Prices-in-BD.jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/motorola-edge-70-fusion",
+   "offers": [
+    {
+     "variant": "8GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-edge-70-fusion",
+     "price": 38000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-edge-70-fusion",
+     "price": 42999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-edge-70-fusion",
+     "price": 44299,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/motorola-edge-70-fusion",
+     "price": 37999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/motorola-edge-70-fusion",
+     "price": 44999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/motorola-edge-70-fusion/",
+     "price": 38500,
+     "oldPrice": 39000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/motorola-edge-70-fusion/",
+     "price": 46000,
+     "oldPrice": 48000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/moto-edge-70-fusion",
+     "price": 40999,
+     "oldPrice": 46999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/moto-edge-70-fusion",
+     "price": 44499,
+     "oldPrice": 49999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/moto-edge-70-fusion",
+     "price": 37999,
+     "oldPrice": 40000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/motorola-edge-70-fusion-price-in-bangladesh",
+     "price": 44990,
+     "oldPrice": 54990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/motorola-edge-70-fusion-price-in-bangladesh",
+     "price": 37489,
+     "oldPrice": 41490,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/motorola-edge-70-fusion-price-in-bangladesh",
+     "price": 40890,
+     "oldPrice": 43290,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/motorola-edge-70-fusion/",
+     "price": 45300,
+     "oldPrice": 48500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/motorola-edge-70-fusion/",
+     "price": 37999,
+     "oldPrice": 38800,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/motorola-edge-70-fusion/",
+     "price": 43900,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/motorola-edge-70-fusion/",
+     "price": 38500,
+     "oldPrice": 45999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/motorola-edge-70-fusion/",
+     "price": 41999,
+     "oldPrice": 48999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/motorola-edge-70-fusion/",
+     "price": 44500,
+     "oldPrice": 50999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Motorola",
+   "name": "Signature",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "16GB / 512GB",
+     "attributes": {
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "16GB / 1TB",
+     "attributes": {
+      "ram": "16GB",
+      "storage": "1TB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Motorola-Signature-5Ga-4536.png",
+    "https://images.kryinternational.com/uploads/motorola-signature-b.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3362/Motorola_Signature_-_PANTONE_Carbon.webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/motorola-signature",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-signature",
+     "price": 71000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-signature",
+     "price": 82500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/motorola-signature",
+     "price": 81999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "16GB / 1TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/motorola-signature",
+     "price": 93999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/motorola-signature",
+     "price": 73499,
+     "oldPrice": 92000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "16GB / 1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/motorola-signature",
+     "price": 99999,
+     "oldPrice": 110000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Motorola",
+   "name": "Moto G67 Power",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Blue-Curacao-7923.jpg",
+    "https://images.kryinternational.com/uploads/motorola-moto-g67-power-b.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3122/Moto_G67_Power_-_PANTONE_Cilantro.webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/motorola-moto-g67-power",
+   "offers": [
+    {
+     "variant": "8GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-moto-g67-power",
+     "price": 29399,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-moto-g67-power",
+     "price": 32500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/motorola-moto-g67-power",
+     "price": 29999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/moto-g67-power",
+     "price": 29499,
+     "oldPrice": 34000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/motorola-moto-g67-power-price-in-bangladesh",
+     "price": 32490,
+     "oldPrice": 47990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/motorola-moto-g67-power-price-in-bangladesh",
+     "price": 29590,
+     "oldPrice": 33990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/motorola-moto-g67-power/",
+     "price": 32500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/motorola-moto-g67-power/",
+     "price": 29999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/motorola-moto-g67-power/",
+     "price": 33500,
+     "oldPrice": 38999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/motorola-moto-g67-power/",
+     "price": 29500,
+     "oldPrice": 35999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Motorola",
+   "name": "Moto G57 Power",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Motorola-Moto-G57-Powera-3707.png",
+    "https://images.kryinternational.com/uploads/motorola-moto-g57-power-pink-lemonade.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3186/Moto_G57_Power_-_PANTONE_Corsair.webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/motorola-moto-g57-power",
+   "offers": [
+    {
+     "variant": "8GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-moto-g57-power",
+     "price": 27199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/motorola-moto-g57-power",
+     "price": 27999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/moto-g57-power",
+     "price": 27499,
+     "oldPrice": 32000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Motorola",
+   "name": "Moto G06 Power",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Motorola-Moto-G06-Poweraaa-4792.png",
+    "https://images.kryinternational.com/uploads/motorola-moto-g06-power-gray.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2887/Moto_G06_Power_-_PANTONE_Laurel_Oak_Br3f6i5.webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/motorola-moto-g06-power",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-moto-g06-power",
+     "price": 16999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/motorola-moto-g06-power",
+     "price": 17499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/moto-g06-power",
+     "price": 17499,
+     "oldPrice": 18000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Motorola",
+   "name": "Moto G86 Power",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Motorola-Moto-G86-Power---5G-5027.png",
+    "https://images.kryinternational.com/uploads/motorola-moto-g86-power-pantone-spellbound.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2540/Moto_G86_Power_-_PANTONE_Cosmic_Sky.webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/motorola-moto-g86-power",
+   "offers": [
+    {
+     "variant": "8GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/motorola-moto-g86-power-5g",
+     "price": 33299,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/motorola-moto-g86-power",
+     "price": 33999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/moto-g86-power",
+     "price": 28499,
+     "oldPrice": 29000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
     }
    ]
   }

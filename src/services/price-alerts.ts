@@ -1,6 +1,6 @@
 import { createStore } from "@/lib/create-store";
 import type { Lang } from "@/lib/preferences";
-import { hasBackend, supabaseFetch } from "@/lib/supabase-rest";
+import { hasBackend } from "@/lib/supabase-rest";
 
 export type AlertState = "unsupported" | "install" | "blocked" | "off" | "on";
 
@@ -46,14 +46,15 @@ async function subscription(create: boolean) {
   return registration.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: keyBytes(VAPID_KEY!) });
 }
 
-async function rpc(name: string, body: Record<string, unknown>) {
-  const response = await supabaseFetch(`/rest/v1/rpc/${name}`, { method: "POST", body: JSON.stringify(body) });
-  if (!response.ok) throw new Error(`${name}: ${response.status}`);
+// সাইটের নিজের Pages Function (functions/api/alerts.ts) দিয়ে DB র watch_prices / unwatch_prices এ যায়
+async function rpc(action: "watch" | "unwatch", body: Record<string, unknown>) {
+  const response = await fetch("/api/alerts", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ action, ...body }) });
+  if (!response.ok) throw new Error(`${action}: ${response.status}`);
 }
 
 function watch(sub: PushSubscription, slugs: string[], lang: Lang) {
   const { endpoint, keys } = sub.toJSON();
-  return rpc("watch_prices", { p_endpoint: endpoint, p_p256dh: keys?.p256dh, p_auth: keys?.auth, p_slugs: slugs.slice(0, 100), p_lang: lang });
+  return rpc("watch", { endpoint, p256dh: keys?.p256dh, auth: keys?.auth, slugs: slugs.slice(0, 100), lang });
 }
 
 export async function enableAlerts(slugs: string[], lang: Lang) {
@@ -72,7 +73,7 @@ export async function enableAlerts(slugs: string[], lang: Lang) {
 export async function disableAlerts() {
   const sub = await subscription(false);
   if (sub) {
-    await rpc("unwatch_prices", { p_endpoint: sub.endpoint });
+    await rpc("unwatch", { endpoint: sub.endpoint });
     await sub.unsubscribe();
   }
   flag(false);
@@ -85,5 +86,5 @@ export async function syncAlert(slug: string, saved: boolean, lang: Lang) {
   const sub = await subscription(false);
   if (!sub) return;
   if (saved) await watch(sub, [slug], lang);
-  else await rpc("unwatch_prices", { p_endpoint: sub.endpoint, p_slugs: [slug] });
+  else await rpc("unwatch", { endpoint: sub.endpoint, slugs: [slug] });
 }

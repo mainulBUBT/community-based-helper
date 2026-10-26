@@ -5,6 +5,7 @@ import {
   Armchair,
   Baby,
   Battery,
+  Bean,
   Bed,
   Bike,
   BookOpen,
@@ -33,6 +34,7 @@ import {
   HardDrive,
   Headphones,
   HeartPulse,
+  Hexagon,
   Keyboard,
   LampDesk,
   Laptop,
@@ -143,6 +145,8 @@ const ICONS: Record<string, LucideIcon> = {
   medal: Medal,
   trophy: Trophy,
   "pen-tool": PenTool,
+  hexagon: Hexagon,
+  bean: Bean,
 };
 
 export const CATEGORY_ICON_NAMES = Object.keys(ICONS);

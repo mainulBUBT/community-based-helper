@@ -40,6 +40,16 @@
    "name": "Dazzle",
    "website": "https://dazzle.com.bd",
    "note": "Unofficial regional variants (JP/MEA, SG/AUS/TH, USA, HK/CH) in page data; only active, non-TBA variants used. MRP shown is inflated. Some variant data looks wrong (17 Pro Max 2TB cheaper than 1TB) and was skipped. iPhone Duo is a 10,000 booking only; no 17e/16e prices."
+  },
+  {
+   "name": "Arafa Telecom",
+   "website": "https://arafatelecom.com",
+   "note": "WooCommerce; official and unofficial stock on one page, each RAM/storage option says 'official' or 'unofficial'; separate '-official' pages for some phones. JSON-LD price."
+  },
+  {
+   "name": "Mobile Buzz BD",
+   "website": "https://mobilebuzzbd.com",
+   "note": "WooCommerce; per-option price and stock, options sometimes carry official/unofficial/int/indian. A few options hold placeholder prices (Edge 70 12/256 at 10,000), skip those."
   }
  ],
  "products": [
@@ -3497,8 +3507,11 @@
    "category": "tablet",
    "variants": [
     {
-     "label": "Standard",
-     "attributes": {},
+     "label": "64GB Wi-Fi + Cellular",
+     "attributes": {
+      "storage": "64GB",
+      "connectivity": "Wi-Fi + Cellular"
+     },
      "officialPrice": 16999
     }
    ],
@@ -3511,7 +3524,7 @@
    "releaseYear": 2023,
    "offers": [
     {
-     "variant": "Standard",
+     "variant": "64GB Wi-Fi + Cellular",
      "site": "Star Tech",
      "url": "https://www.startech.com.bd/samsung-galaxy-tab-a9-lte-tablet",
      "price": 15500,
@@ -3520,6 +3533,61 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "64GB Wi-Fi + Cellular",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-tab-a9-1",
+     "price": 14499,
+     "oldPrice": 23000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "64GB Wi-Fi + Cellular",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/galaxy-tab-a9",
+     "price": 18999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "64GB Wi-Fi + Cellular",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/samsung-galaxy-tab-a9",
+     "price": 16990,
+     "oldPrice": 25990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "64GB Wi-Fi + Cellular",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/samsung-galaxy-tab-a9/",
+     "price": 13999,
+     "oldPrice": 16200,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "64GB Wi-Fi + Cellular",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/galaxy-tab-a9/",
+     "price": 16500,
+     "oldPrice": 18975,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
     }
    ]
   },
@@ -3561,9 +3629,22 @@
    "category": "tablet",
    "variants": [
     {
-     "label": "Standard",
-     "attributes": {},
-     "officialPrice": 43000
+     "label": "8GB / 128GB Wi-Fi",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": 37500
+    },
+    {
+     "label": "8GB / 256GB Wi-Fi",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": 40800
     }
    ],
    "colors": [],
@@ -3575,15 +3656,147 @@
    "releaseYear": 2024,
    "offers": [
     {
-     "variant": "Standard",
-     "site": "PCB Store",
-     "url": "https://pcbstore.com.bd/product/xiaomi-pad-7-android-tablet",
-     "price": 43000,
-     "oldPrice": null,
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/xiaomi-pad-7",
+     "price": 35000,
+     "oldPrice": 37500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/xiaomi-pad-7",
+     "price": 38300,
+     "oldPrice": 40800,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/xiaomi-pad-7",
+     "price": 38499,
+     "oldPrice": 41000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/xiaomi-pad-7",
+     "price": 33999,
+     "oldPrice": 36000,
      "inStock": false,
      "condition": "unofficial",
      "region": null,
-     "checkedAt": "2026-10-25"
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/xiaomi-pad-7",
+     "price": 37999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/xiaomi-pad-7",
+     "price": 38499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/xiaomi-pad-7",
+     "price": 37499,
+     "oldPrice": 39499,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/xiaomi-pad-7",
+     "price": 37499,
+     "oldPrice": 37999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/xiaomi-pad-7/",
+     "price": 37990,
+     "oldPrice": 40000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-pad-7",
+     "price": 36490,
+     "oldPrice": 39990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-pad-7",
+     "price": 37990,
+     "oldPrice": 55490,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/xioami-pad-7/",
+     "price": 37999,
+     "oldPrice": 39999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/xioami-pad-7/",
+     "price": 39500,
+     "oldPrice": 44999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
     }
    ]
   },
@@ -3593,9 +3806,12 @@
    "category": "tablet",
    "variants": [
     {
-     "label": "Standard",
-     "attributes": {},
-     "officialPrice": 41000
+     "label": "256GB Wi-Fi + Cellular",
+     "attributes": {
+      "storage": "256GB",
+      "connectivity": "Wi-Fi + Cellular"
+     },
+     "officialPrice": 38999
     }
    ],
    "colors": [],
@@ -3607,7 +3823,7 @@
    "releaseYear": 2024,
    "offers": [
     {
-     "variant": "Standard",
+     "variant": "256GB Wi-Fi + Cellular",
      "site": "PCB Store",
      "url": "https://pcbstore.com.bd/product/lenovo-idea-tab-tb336zu-5g-8256gb-11-inch-display-tablet",
      "price": 41000,
@@ -3616,6 +3832,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "256GB Wi-Fi + Cellular",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/lenovo-idea-tab",
+     "price": 38999,
+     "oldPrice": 42000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "256GB Wi-Fi + Cellular",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/lenovo-idea-tab-lte",
+     "price": 38999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
     }
    ]
   },
@@ -3625,9 +3863,12 @@
    "category": "tablet",
    "variants": [
     {
-     "label": "Standard",
-     "attributes": {},
-     "officialPrice": 51000
+     "label": "128GB Wi-Fi",
+     "attributes": {
+      "storage": "128GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": 49999
     }
    ],
    "colors": [],
@@ -3639,7 +3880,7 @@
    "releaseYear": 2024,
    "offers": [
     {
-     "variant": "Standard",
+     "variant": "128GB Wi-Fi",
      "site": "PCB Store",
      "url": "https://pcbstore.com.bd/product/huawei-matepad-115-inch-wifi-tablet",
      "price": 51000,
@@ -3648,6 +3889,50 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/huawei-matepad-115",
+     "price": 49999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/huawei-matepad-115-inch",
+     "price": 49999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/huawei-matepad-115inch",
+     "price": 48299,
+     "oldPrice": 49999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "128GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/huawei-matepad-115inch-wifi",
+     "price": 49999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
     }
    ]
   }

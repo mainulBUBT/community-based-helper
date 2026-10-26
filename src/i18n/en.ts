@@ -160,6 +160,7 @@ export const en: Messages = {
     officialPrice: (brand, price) => `${brand} Bangladesh official price ${price}`,
     unofficialWarning: "Same product — shop-warranty units just don't get the brand's own service centres, so they cost less. Ask how long the shop warranty lasts before you buy.",
     verifyNote: "We only compare shop prices; we don't check whether a product is genuine. Ask the shop before you buy, and check the packaging and batch code when it arrives.",
+    qualityNote: "These are prices for the same variety and weight, but quality, size and origin can differ from shop to shop. Ask the shop before you buy.",
     unofficialNeir: "Same product, no brand warranty — that's why it costs less. Check the NEIR registration before you buy.",
     noOffers: "No prices for this version yet",
     byStore: "Prices by shop",

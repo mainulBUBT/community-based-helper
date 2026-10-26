@@ -88,8 +88,9 @@ export function wooVariants(html: string): ShopVariant[] {
   if (!Array.isArray(list)) return wooSimple(html);
   return list.filter(isObject).flatMap((v) => {
     if (v.variation_is_active === false) return [];
+    // "12-256-gb" স্লাগ আসলে RAM/স্টোরেজ ("12/256GB"); শুধু ফাঁকা দিলে 12 কে আর RAM চেনা যায় না
     const attributes = Object.entries(isObject(v.attributes) ? v.attributes : {}).map(
-      ([key, value]) => [key.replace(/^attribute_(pa_)?/, ""), String(value).replace(/-/g, " ")] as [string, string],
+      ([key, value]) => [key.replace(/^attribute_(pa_)?/, ""), String(value).replace(/^(\d+)-(\d+)-?(gb|tb)$/i, "$1/$2$3").replace(/-/g, " ")] as [string, string],
     );
     return variant(attributes, v.display_price, v.display_regular_price, typeof v.is_in_stock === "boolean" ? v.is_in_stock : null);
   });

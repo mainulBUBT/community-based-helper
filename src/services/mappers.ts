@@ -27,6 +27,7 @@ export const toCategory = (row: Row): CategoryInfo => ({
   warranty: row.warranty !== false,
   conditions: row.conditions as CategoryInfo["conditions"],
   verifyNote: row.verify_note === true,
+  qualityNote: row.quality_note === true,
 });
 
 export const toProduct = (row: Row): Product => ({

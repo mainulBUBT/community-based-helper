@@ -9,7 +9,7 @@ import { canonicalRegion } from "../src/utils/region.ts";
 
 const DIR = "data/catalog";
 const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color", "gpu", "cpu", "resolution", "battery", "capacity", "wattage"];
-const DEFAULT_CATEGORY = { mobile: "mobile", watch: "watch", skincare: "skincare", powerbank: "powerbank", sneakers: "sneakers", monitor: "monitor", charger: "charger", fan: "fan", "water-purifier": "water-purifier", router: "router", makeup: "makeup" };
+const DEFAULT_CATEGORY = { mobile: "mobile", watch: "watch", skincare: "skincare", powerbank: "powerbank", sneakers: "sneakers", monitor: "monitor", charger: "charger", fan: "fan", "water-purifier": "water-purifier", router: "router", makeup: "makeup", honey: "honey", dates: "dates" };
 
 const slugify = (text) =>
   text
@@ -115,7 +115,8 @@ export const catalogSellers: Seller[] = ${JSON.stringify(
 
 export const catalogProducts: Product[] = ${JSON.stringify(products, null, 1)};
 
-export const catalogOffers: Offer[] = ${JSON.stringify(
+// এত বড় object literal-এ TypeScript হাল ছেড়ে দেয় (TS2590), তাই দামগুলো JSON স্ট্রিং থেকে
+export const catalogOffers: Offer[] = JSON.parse(${JSON.stringify(JSON.stringify(
   offers.map((o, i) => ({
     id: `o${i + 1}`,
     variantId: o.variantId,
@@ -130,9 +131,7 @@ export const catalogOffers: Offer[] = ${JSON.stringify(
     published: true,
     checkedAt: new Date(`${o.checkedAt}T09:00:00+06:00`).toISOString(),
   })),
-  null,
-  1,
-)};
+))});
 `;
 writeFileSync("src/data/catalog.generated.ts", ts);
 

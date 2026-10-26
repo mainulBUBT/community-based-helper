@@ -38,6 +38,7 @@ export async function saveCategory(input: CategoryInfo, isNew: boolean) {
       warranty: category.warranty !== false,
       conditions: categoryConditions(category),
       verify_note: category.verifyNote === true,
+      quality_note: category.qualityNote === true,
     };
     const { error } = isNew ? await supabase.from("categories").insert(row) : await supabase.from("categories").update(row).eq("slug", category.slug);
     if (error) throw error;

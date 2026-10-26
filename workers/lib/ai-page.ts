@@ -1,5 +1,6 @@
 import type { Page } from "../stores/page";
 import { toTaka } from "./price";
+import { withKeys } from "./llm-keys";
 import { privateSettings } from "./settings";
 import { pageOffers } from "./variants";
 
@@ -22,9 +23,10 @@ async function gemini(url: string): Promise<string> {
   const { llm } = await privateSettings();
   // url_context শুধু Gemini নিজের API তে আছে; OpenAI-compatible ঠিকানা দিলে এই পথ চলবে না
   if (!llm?.apiKey || !llm.model || !/generativelanguage\.googleapis\.com/.test(llm.baseUrl ?? "")) throw new Error("url_context চালাতে Gemini-র নিজের API লাগে");
-  const res = await fetch(`${NATIVE}/models/${llm.model}:generateContent`, {
+  const model = llm.model;
+  const res = await withKeys(llm.apiKey, (key) => fetch(`${NATIVE}/models/${model}:generateContent`, {
     method: "POST",
-    headers: { "content-type": "application/json", "x-goog-api-key": llm.apiKey },
+    headers: { "content-type": "application/json", "x-goog-api-key": key },
     body: JSON.stringify({
       contents: [
         {
@@ -40,7 +42,7 @@ async function gemini(url: string): Promise<string> {
       generationConfig: { temperature: 0 }, // url_context এর সাথে JSON mode চলে না, তাই লেখা থেকে JSON কাটা হয়
     }),
     signal: AbortSignal.timeout(150_000),
-  });
+  }));
   if (!res.ok) throw new Error(`Gemini HTTP ${res.status}`);
   const data = (await res.json()) as { candidates?: { content?: { parts?: { text?: string }[] }; urlContextMetadata?: unknown; url_context_metadata?: unknown }[] };
   const first = data.candidates?.[0];

@@ -3,6 +3,7 @@ import { BlockList, isIP } from "node:net";
 import { USER_AGENT } from "./agent";
 import { Disallowed, NotFound, StoreBlocked } from "./errors";
 import { limited } from "./limiter";
+import { sleep } from "./sleep";
 import { isAllowed, parseRobots } from "./robots";
 
 const robotsCache = new Map<string, Promise<ReturnType<typeof parseRobots>>>();
@@ -53,7 +54,7 @@ async function rawGet(url: URL, accept = "text/html,application/xhtml+xml,applic
       fetch(target, {
         headers: { ...HEADERS, accept },
         redirect: "manual",
-        signal: AbortSignal.timeout(30_000),
+        signal: AbortSignal.timeout(60_000),
       }),
     );
     const location = res.status >= 300 && res.status < 400 ? res.headers.get("location") : null;
@@ -140,7 +141,13 @@ export async function postForm(target: string | URL, form: Record<string, string
 
 export async function getText(target: string | URL): Promise<string> {
   const url = await assertAllowed(target);
-  const res = await rawGet(url);
+  let res = await rawGet(url);
+  // কিছু দোকান (Chaldal) চাপে থাকলে আসল পাতাতেও মাঝে মাঝে 404 দেয়; একবার থেমে আবার দেখা, নইলে দাম ভুল করে "স্টকে নেই" হয়
+  if (res.status === 404) {
+    await res.body?.cancel();
+    await sleep(3000);
+    res = await rawGet(url);
+  }
   const body = await readCapped(res);
   checkStatus(url.host, res.status, body);
   if (res.status === 404 || res.status === 410) throw new NotFound(`${url.href} ${res.status}`);

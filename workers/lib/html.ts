@@ -17,6 +17,12 @@ export function visibleText(html: string): string {
   return stripTags(body.replace(/<(script|style|noscript|svg|template)[\s\S]*?<\/\1>/gi, " "));
 }
 
+// পাতার মূল অংশ: মেগা-মেনু, হেডার আর ফুটার বাদ (নইলে AI কে দেওয়া প্রথম কয়েক হাজার অক্ষর শুধু মেনুতেই শেষ হয়)
+export function mainText(html: string): string {
+  const main = /<main[\s>][\s\S]*?<\/main>/i.exec(html)?.[0];
+  return visibleText(main ?? html.replace(/<(header|nav|footer|aside)[\s>][\s\S]*?<\/\1>/gi, " "));
+}
+
 export function jsonLd(html: string): unknown[] {
   const blocks = [...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
   return blocks.flatMap(([, body]) => {

@@ -61,6 +61,8 @@ function CategoryForm({
       position: Number(form.get("position")) || 0,
       active: category.active,
       warranty: category.warranty,
+      verifyNote: category.verifyNote,
+      qualityNote: category.qualityNote,
       conditions: CONDITIONS.filter((c) => conditions.includes(c)),
     };
     if (await run(() => saveCategory(next, isNew), t.admin.common.saved)) onClose(true);
@@ -193,6 +195,7 @@ export default function CategoriesPage() {
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.active}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.warranty}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.verifyNote}</th>
+                  <th className="px-3 py-3 font-semibold">{t.admin.categories.qualityNote}</th>
                   <th className="px-5 py-3" />
                 </tr>
               </thead>
@@ -241,6 +244,16 @@ export default function CategoriesPage() {
                         disabled={busy}
                         onChange={async (verifyNote) => {
                           if (await run(() => saveCategory({ ...category, verifyNote }, false))) reload();
+                        }}
+                      />
+                    </td>
+                    <td className="px-3 py-3">
+                      <Toggle
+                        label={t.admin.categories.qualityNote}
+                        checked={category.qualityNote === true}
+                        disabled={busy}
+                        onChange={async (qualityNote) => {
+                          if (await run(() => saveCategory({ ...category, qualityNote }, false))) reload();
                         }}
                       />
                     </td>

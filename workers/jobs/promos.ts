@@ -1,6 +1,6 @@
 import { db, must } from "../lib/db";
 import { StoreBlocked, message } from "../lib/errors";
-import { visibleText } from "../lib/html";
+import { mainText } from "../lib/html";
 import { askJson, llmReady } from "../lib/llm";
 import { sellersByStore } from "../services/sellers";
 import { pageHtml } from "../stores/page";
@@ -10,7 +10,7 @@ import { blockedNote, count } from "./summary";
 const PROMO_KINDS = new Set(["discount", "cashback", "emi", "gift", "bundle", "other"]);
 
 const SYSTEM =
-  "You read the offers page of a Bangladeshi gadget shop. Reply with JSON {\"promos\": [{\"kind\": \"discount\"|\"cashback\"|\"emi\"|\"gift\"|\"bundle\"|\"other\", \"text\": short Bangla sentence, \"scope\": what it applies to or null, \"endsOn\": \"YYYY-MM-DD\"|null}]}. Only include offers for phones, laptops, tablets or smartwatches that are clearly current. Empty list if none.";
+  "You read the offers page of a Bangladeshi online shop. Reply with JSON {\"promos\": [{\"kind\": \"discount\"|\"cashback\"|\"emi\"|\"gift\"|\"bundle\"|\"other\", \"text\": short Bangla sentence, \"scope\": what it applies to or null, \"endsOn\": \"YYYY-MM-DD\"|null}]}. Include every offer that is clearly current (any product: gadgets, appliances, food, beauty, etc.); skip ones whose dates have passed. Empty list if none.";
 
 interface Promo {
   kind: string;
@@ -37,7 +37,7 @@ export async function readPromos(): Promise<string> {
     const seller = sellers.get(store.id);
     if (!store.promoUrl || !seller) continue;
     try {
-      const text = visibleText(await pageHtml(store, store.promoUrl)).slice(0, 8000);
+      const text = mainText(await pageHtml(store, store.promoUrl)).slice(0, 8000);
       const { promos = [] } = await askJson<{ promos?: Promo[] }>(SYSTEM, text);
       const existing = (await must(db().from("promos").select("text").eq("seller_id", seller.id))) as { text: string }[];
       const seen = new Set(existing.map((e) => sameText(e.text)));

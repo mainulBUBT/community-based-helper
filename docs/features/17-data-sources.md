@@ -38,7 +38,7 @@
 
 ৫৩টা টেক পণ্য, ১১৫টা ভার্সন, ১০টা দোকান থেকে ৫৪৫টা দাম, সব পাতায় গিয়ে নিজে দেখা (কোনো দাম আন্দাজ করা নয়)। প্রতিটা পণ্য অন্তত ৩টা দোকানে, শুধু MacBook Pro 14" M5 Max আর Redmi Watch 6 Active ২টায় (নতুন বা দামি, আর কেউ দাম দেয়নি)। পরে চার্জার/ফ্যান/মনিটর/পাওয়ার ব্যাংক আর স্কিনকেয়ার যোগ হয়ে ডেটাবেসে এখন ৯৬টা পণ্য, ৯১১টা দাম, ১৩টা ক্যাটাগরি।
 
-- মোবাইল: Samsung, Xiaomi, Vivo, Realme, Oppo (StatCounter বাংলাদেশ, আগস্ট ২০২৬), প্রতিটার ২-৩টা চলতি মডেল; আর Apple: iPhone 18 Pro/Pro Max, iPhone Duo, 17 Pro/Pro Max, Air, 17, 17e, 16।
+- মোবাইল: Samsung, Xiaomi, Vivo, Realme, Oppo (StatCounter বাংলাদেশ, আগস্ট ২০২৬), প্রতিটার ২-৩টা চলতি মডেল; ২৬ অক্টোবর Honor, Tecno, Infinix, Motorola (নিচে আলাদা অংশ); আর Apple: iPhone 18 Pro/Pro Max, iPhone Duo, 17 Pro/Pro Max, Air, 17, 17e, 16।
 - ট্যাবলেট: iPad 11" (A16), iPad mini (A17 Pro), iPad Air 11"/13" M4, iPad Pro 11"/13" M5 (স্টোরেজ আর Wi-Fi/Cellular ধরে ভার্সন)।
 - Mac: MacBook Neo, Air 13"/15" M5, Pro 14"/16" (M5, M5 Pro, M5 Max), iMac M4, Mac mini (M6, M5 Pro), Mac Studio M5 Max।
 - স্মার্টওয়াচ: Apple Watch Series 11, Galaxy Watch8, Amazfit Active 2 Premium, Huawei Watch Fit 4, Redmi Watch 6 Active।
@@ -140,8 +140,10 @@
 | MC Solution | mcsolution.com.bd | ল্যাপটপ, মনিটর | WooCommerce; অফিসিয়াল ওয়ারেন্টির দোকান |
 | PCB Store | pcbstore.com.bd | মনিটর, ডেস্কটপ | গেমিং/PC দোকান (Next.js); পাতার JSON ডেটায় দাম, প্রায়ই Stock out |
 | Sell Tech | selltech.com.bd | ডেস্কটপ | OpenCart; brand PC-তে ভালো দাম, JSON-LD |
+| Arafa Telecom | arafatelecom.com | মোবাইল, ট্যাবলেট | WooCommerce; এক পাতায় official আর unofficial, প্রতিটা অপশনে লেখা থাকে; কিছু ফোনের আলাদা `-official` পাতা |
+| Mobile Buzz BD | mobilebuzzbd.com | মোবাইল, ট্যাবলেট | WooCommerce (যমুনা ফিউচার পার্ক, বসুন্ধরা সিটি); অপশনে কখনো official/int/indian লেখা; কিছু অপশনে বসানো নকল দাম (Edge 70 12/256 = ১০,০০০), সেগুলো বাদ |
 
-বাদ পড়েছে: Pickaboo, GadStyle, Gadget N Music (403 দেয়), Gadget Studio BD (robots.txt এ বন্ধ), Computer Source (timeout)। Mobile Dokan দোকান না, শুধু অফিসিয়াল দাম মেলাতে দেখা হয়েছে।
+বাদ পড়েছে: Pickaboo, GadStyle, Gadget N Music (403 দেয়), Gadget Studio BD (robots.txt এ বন্ধ), Computer Source (timeout), SMS Gadget (Cloudflare challenge), Phone Sell BD (সাইট খোলে না)। Mobile Dokan দোকান না, শুধু অফিসিয়াল দাম মেলাতে দেখা হয়েছে।
 
 ### পাওয়ার ব্যাংক (২৪ অক্টোবর ২০২৬)
 
@@ -252,6 +254,18 @@ Lira Import আর Her Happy Skin যোগ হলো (robots.txt আর Terms �
 - **এখনো স্পেক-শূন্য ৫২টা:** স্কিনকেয়ার ২৯ আর স্নিকার্স ২০ (এই ক্যাটাগরিতে স্পেক-টেবিলই নেই), MacBook Pro 14 M5 Max (Star Tech-এ শুধু 16″ M5 Max আছে, ভুল সাইজের স্পেক দেওয়া যাবে না), Anker Zolo 25000mAh (Star Tech-এ নেই), realme 14 5G (realme.com-এর পাতা JS-নির্ভর, পার্স হয় না)।
 - **খেয়াল:** ডিবিতে ২৯টা পণ্য (চার্জার ৬, ফ্যান ৬, ইয়ারবাডস ৫, পাওয়ারব্যাংক ৫, মনিটর ৬, iPhone 16, Redmi Watch 6 Lite, WEOFly ২) আছে যাদের `data/catalog/*.json`-এ কোনো এন্ট্রি নেই — সেগুলো আগে সরাসরি ডিবিতে ঢোকানো হয়েছিল। ক্যাটালগ ফাইলই একমাত্র উৎস, তাই এদের পরে একটা ব্যাচ ফাইলে ফেরানো উচিত।
 
+### মধু আর খেজুর (২৬ অক্টোবর ২০২৬)
+
+নতুন ক্যাটাগরি `honey` আর `dates` (migration `20261026140000_honey-dates-categories.sql`, ভার্সনের ঘর `capacity` = ওজন, কলাম `quality_note`)। ১৯টা পণ্য (মধু ১৩, খেজুর ৬), ৯৬টা দাম, প্রতিটা ২+ দোকানে। দোকান: Arogga, Chaldal, Othoba, আর নতুন Rokomari। প্রতিটা পাতা worker parser দিয়ে লাইভ পড়া, `worker:check` ০ মেলেনি, সব ছবি ২০০ image/*।
+
+- **মধু, ব্র্যান্ড ধরে:** Dabur, Saffola, Hamdard, Al Shifa (Natural, Acacia, Black Forest), Hosen, Karkuma, Modern Herbal কালোজিরা, Farmer's Gold কালোজিরা, Ashol (সুন্দরবন, কালোজিরা, লিচু)। ক্যাটাগরিতে "আসল যাচাইয়ের নোট" চালু।
+- **খেজুর, জাত আর ওজন ধরে (মালিকের সিদ্ধান্ত):** আজওয়া, মরিয়ম/মাবরুম, সাফাভি/কালমি, সুক্কারি, মেডজুল (ব্র্যান্ডের ঘরে জাত); আর ব্র্যান্ডের Rongdhonu খুরমা। এখানে "মডেল কোড মিলতে হবে" নিয়মের ব্যতিক্রম — দোকানভেদে আমদানিকারক আর মান আলাদা, তাই পণ্যের পাতায় `quality_note` ("দোকানভেদে মান, আকার আর উৎস আলাদা হতে পারে")। Othoba মার্কেটপ্লেসে একই জাত-ওজনে কয়েকজন বিক্রেতা থাকলে স্টকে থাকা সবচেয়ে কম দামটা।
+- `officialPrice`: খাবারে নির্ধারিত দাম নেই, তাই প্রতি ওজনে দোকানগুলোর দামের মাঝামাঝি — শুধু ৪০%-২৫০% sanity-র জন্য।
+- **বাদ:** Shwapno আর Khaas Food (দাম JavaScript দিয়ে আসে), Meena Bazar (পুরো SPA), Ghorer Bazar (Cloudflare challenge, worker-এর পরিচয়ে বাসার PC থেকেও 403), ePharma (JSON-LD-এ MRP, ছাড়ের দাম নয়), Unimart (sitemap-এ পণ্য নেই)। Othoba-র একটা "Saffola 250g" লিংক আসলে Dabur Squeezy-র পাতা, আর Al Shifa-র ml লিস্টিং — বাদ।
+- **খেয়াল:** Chaldal-এর পাতা ভারী (~১.৭MB, ২০-৫০ সেকেন্ড), আর চাপে থাকলে আসল পাতাতেও মাঝে মাঝে 404 দেয়। তাই worker-এ পাতা পড়ার সময়সীমা ৩০ থেকে ৬০ সেকেন্ড, আর 404 পেলে ৩ সেকেন্ড থেমে একবার আবার দেখে — নইলে ভুল করে "স্টকে নেই" হয়ে যেত। এরপর Chaldal-এর ১২টা দামই `worker:check` পাস।
+- **শেষ যাচাই:** মধু, খেজুর, রাউটার, নেকব্যান্ড/অডিওর ৪০৩টা লিংক আলাদা খুলে দেখা (HTTP, redirect, শিরোনামে মডেল/জাত/ওজন/প্যাক); ৮২টা পণ্যের সব ছবি ব্রাউজারে খোলে, পাশাপাশি সাজিয়ে চোখে মিলানো। Tenda TX12 Pro-র একই ছবি দুবার ছিল, Oraimo Necklace 5 আর Realme 5 Lite-এর বিজ্ঞাপনের ছবি প্রথমে ছিল — ঠিক করা।
+- worker: Othoba-র discover-এ `/honey` আর `/dates`।
+
 ### রাউটার (২৬ অক্টোবর ২০২৬)
 
 নতুন ক্যাটাগরি `router` (migration `20261026110000_router-category.sql`, ভার্সনের ঘর `edition`), ২৫টা পণ্য, ১৬৫টা দাম, নতুন দোকান লাগেনি: Star Tech, Gadget & Gear, Global Brand, Sumash Tech, Apple Gadgets, Diamu, Kry International, PCB Store, Gadget Breeze। Star Tech-এর `/networking/router` ক্যাটাগরি discover-এ যোগ। প্রতিটা পাতা worker parser দিয়ে লাইভ পড়া, `worker:check` ০ মেলেনি, সব ছবি ২০০ image/*, স্পেক Star Tech থেকে।
@@ -308,6 +322,37 @@ Lira Import আর Her Happy Skin যোগ হলো (robots.txt আর Terms �
 - উৎস দেশে দাম আলাদা: Fit Me "Made in India" ~১,০০০, "USA" ১,২৫০–২,২৫০। তাই Fit Me-তে শুধু ~১,০০০-এর দোকান (Arogga, Shajgoj, Klassy, Beprincess India); Lira Import, Color World, Perfecto, OHSOGO, Skincare Shop বাদ। Beprincess-এর অফারে region `India`।
 - বাদ মডেল: Instant Age Rewind (৬ml বনাম ৬.৮ml, দেশভেদে আলাদা), Colossal Mascara (অনেক রূপ, মেলানো কঠিন), MAC আর SHEGLAM (নকল বেশি)।
 - `officialPrice`: বাংলাদেশে MRP প্রকাশিত নেই, তাই দোকানগুলোর মূল দামের (কাটা দাম বা দাম) মধ্যমা। `releaseYear` খালি।
+
+### মোবাইল: Honor, Tecno, Infinix, Motorola (২৬ অক্টোবর ২০২৬)
+
+২৫টা নতুন ফোন, ৪১টা ভার্সন, ১৭৯টা দাম, নতুন দোকান লাগেনি: Star Tech, Gadget & Gear, Kry International, Sumash Tech, Apple Gadgets, Dazzle, Diamu। প্রার্থী বের করা হয়েছে Star Tech-এর ব্র্যান্ড পাতা (`/honor-mobile-phone` ইত্যাদি) আর ৮টা দোকানের product sitemap মিলিয়ে; তারপর ২০০টা পাতা worker-এর parser দিয়ে পড়ে দাম, স্টক আর ভার্সন। প্রতিটা ফোন ৩–৬টা দোকানে, `worker:check` ০ মেলেনি, সব ছবি ২০০ image/*।
+
+- Honor: X5c, X5c Plus, X6c, X6e, X7d, X7e, X8d, X9d, 400, 400 Pro, 600, 600 Pro। Tecno: Spark Go 3, Spark 50C, Spark 50, Spark 50 Pro, Camon 50, Pova Curve 2 5G, Camon Air, Camon Slim 5G। Infinix: Smart 20, Hot 70, Note Edge, Note 60, Note 60 Pro।
+- `officialPrice`: অফিসিয়াল চ্যানেলের (Gadget & Gear, Kry/Sumash-এর `-official` পাতা) MRP, MobileDokan-এর "(Official)" দামের সাথে মেলানো। যেখানে আলাদা (Camon 50, Pova Curve 2, Note Edge 8/256), সেখানে দোকানগুলোর MRP নেওয়া। `releaseYear` MobileDokan-এর release date থেকে।
+- Gadget & Gear-এ প্রতিটা RAM/স্টোরেজের আলাদা লিংক, মূল লিংকের ভার্সন পাতার JSON-LD নাম থেকে (যেমন "HONOR X7d (8/256GB)")।
+- condition: লিংক বা শিরোনামে "Official" থাকলে official, নয়তো দোকানের কনফিগ। Kry আর Sumash-এর non-official পাতা (INT/Global) আলাদা আনঅফিসিয়াল অফার।
+- **Star Tech-এর স্টক নিয়ে অমিল (ঠিক করা হয়নি):** X6c, X9d আর Smart 20-এর পাতায় "Status: Out Of Stock", কিন্তু ভার্সনের API (`/product/product/variation`) "In Stock" বলে। ক্যাটালগে পাতার লেখাই রাখা (`inStock: false`); তবে `prices` run API পড়ে, তাই সিঙ্কের পর স্টকে দেখাতে পারে।
+- বাদ রাখা অফার: Star Tech-এর "Tecno CAMON Slim" (দাম আর ভার্সন 5G-র মতো, কিন্তু নেটওয়ার্ক লেখা 2G/3G/4G; MobileDokan-এ "Camon Slim" আলাদা ফোন, তাই মডেল নিশ্চিত না, নিয়ম ২); Star Tech-এর Spark 50C 4/128 (স্টকে নেই, দাম 4/64-এর হুবহু, ভুল মনে হয়); Diamu-র X7d (region লেখা "official bd", condition নিশ্চিত না); Kry-র X5c পাতা (দাম পড়া যায়নি); Diamu-র যেসব পাতায় দাম পড়া যায়নি; Sumash-এর X7d 8/512 (ক্যাটালগে ওই ভার্সন নেই)।
+- বাদ রাখা ভার্সন (অফিসিয়াল দাম নেই, শুধু আনঅফিসিয়াল): Honor 400 12/256 আর 8/256, Honor 600 12/512, 600 Pro 12/512, X9d 8/256।
+- বাদ মডেল: ঘোষণা হয়েছে কিন্তু দাম নেই (Honor 400 Smart 5G, X9e Pro, Tecno Pova 7 5G, Spark Slim, Camon 50 Pro, Infinix Note 60 Ultra, GT 50 Pro); ২টা দোকান (Infinix Hot 70 Pro 5G, Smart 10); সব দোকানে স্টক নেই (Tecno Spark 50 5G)।
+- **Symphony আর Walton বাদ:** আমাদের কোনো দোকানে Symphony-র ফোন নেই। Walton-এর নতুন ফোন (Xanon, NexG, ZenX) শুধু Kry-তে, Diamu-তে পুরনো Primo; ৩ দোকানের শর্ত পূরণ হয় না। ওদের নিজেদের সাইট যোগ করলেও প্রতিটা ফোনে একটাই দোকান হতো।
+- **Motorola (মালিকের সিদ্ধান্তে অফিসিয়াল দাম ছাড়া):** ৯টা ফোন, ১৬টা ভার্সন, ৪১টা দাম — Edge 70 Pro, Edge 70 Pro Plus, Edge 70, Edge 70 Fusion, Signature, Moto G67 Power, G57 Power, G06 Power, G86 Power; প্রতিটা ৩–৪টা দোকানে (Apple Gadgets, Kry, Sumash, Diamu, Dazzle)। সবই আনঅফিসিয়াল (Kry লেখে India); বাংলাদেশে অফিসিয়াল বিক্রি নেই, MobileDokan-ও "(Unofficial)" লেখে, তাই `officialPrice` খালি (কঠোর নিয়ম ৪-এর ব্যতিক্রম)। স্পেক আর `releaseYear` MobileDokan থেকে, ছবি দোকানের CDN থেকে। বাদ: Moto G05, G45, G64, Edge 50 Fusion, Edge 50 Pro (সব দোকানে স্টক নেই, ২০২৪-এর মডেল), আর ২টা দোকানের মডেল (G37/G77 Power, Edge 60 সিরিজ, Razr 60)।
+- "Edge 70 Pro+" নামে slug "motorola-edge-70-pro" হয়ে Edge 70 Pro-র সাথে মিলে যেত (`slugify` "+" ফেলে দেয়), আর `catalog:build` চুপচাপ দ্বিতীয়টা বাদ দিত; তাই নাম "Edge 70 Pro Plus"।
+- region: Diamu `int` লেখে, `src/utils/region.ts`-এ `int` → Global যোগ।
+- `scripts/import-catalog.mjs`: দাম ১,৯০০ ছাড়ানোয় `catalogOffers`-এর object literal-এ TypeScript TS2590 দিচ্ছিল; এখন অ্যারেটা `JSON.parse` দিয়ে লেখা হয়।
+
+### ১টা দোকানের পণ্যে দোকান বাড়ানো (২৬ অক্টোবর ২০২৬)
+
+পুরনো ১৪টা পণ্য আর নতুন ৪টা ভার্সন ১টা দোকানে ছিল। ৫৩টা দোকানের পুরো listing (২ লাখের বেশি লিংক) থেকে মডেল ধরে খুঁজে, প্রতিটা পাতা worker-এর parser দিয়ে পড়ে, `worker:check` পাস করা দামই রাখা।
+
+- **নতুন দোকান:** Arafa Telecom (arafatelecom.com) আর Mobile Buzz BD (mobilebuzzbd.com)। robots.txt-এ পণ্যের পাতা খোলা। Terms-এ শুধু সাধারণ "content কপি/পুনঃপ্রকাশ নয়" লেখা, scraping/bot-এর কথা নেই (UK Direct-এর মতো)। লোকাল `probe` পাস; **GitHub Actions-এর probe বাকি** (main-এ push লাগে)।
+- বাদ রাখা দোকান: Rio International (Terms ঠিক আছে, কিন্তু ভার্সনের দাম নিজেদের JSON-এ, নতুন parser লাগত; Realme 14 Pro+ এমনিতেই ৪ দোকানে পৌঁছেছে), SMS Gadget (Cloudflare challenge), Phone Sell BD (সাইট খোলে না)।
+- worker: `wooVariants` "12-256-gb" ধরনের অপশন-slug-কে এখন "12/256gb" পড়ে (আগে "12 256 gb" হয়ে RAM চেনা যেত না)। শুধু এই ধরনের slug বদলায়, পুরনো দোকানের বাঁধা `variant_key` বদলায় না।
+- এখন ৩+ দোকানে: Galaxy Tab A9 LTE (৬), MatePad 11.5 (৫), Idea Tab (৩), Pad 7 (৭), Nord CE5 (৫), Nord 4 (৪), Nord CE4 Lite (৪), Pixel 8a (৫), Realme 14 Pro+ (৪), Realme 14 5G (৮), Realme C75 (৪), nova Y74 (৪)। নতুন ফোনের X9d 12/512 (৪), Edge 70 Fusion 8/256 (৫), G67 Power 12/256 (৪)।
+- **ট্যাবলেটের ভার্সন:** Tab A9 LTE, MatePad 11.5, Idea Tab আর Pad 7-এ একটাই ভার্সন "Standard" ছিল, অথচ দোকানের পাতায় RAM/স্টোরেজ/Wi-Fi অপশন — worker মেলাতে পারত না। এখন `64GB Wi-Fi + Cellular`, `128GB Wi-Fi`, `256GB Wi-Fi + Cellular`, আর Pad 7-এ `8GB / 128GB Wi-Fi` + `8GB / 256GB Wi-Fi`। ডেটাবেসে পুরনো সারির নাম বদলাতে migration `20261026150000_tablet-variant-labels.sql` (seed-এর আগে চালাতে হবে)। Pad 7-এর PCB Store-এর পুরনো দাম (৳৪৩,০০০, কোন ভার্সন পাতায় লেখা নেই) মুছে ফেলা। অফিসিয়াল দাম: MatePad ৪৯,৯৯৯ আর Idea Tab ৩৮,৯৯৯ (Gadget & Gear), Pad 7 Star Tech-এর regular দাম।
+- বাদ রাখা অফার: Kry-র যেসব লেবেলে দ্বিতীয় সংখ্যায় GB নেই ("8GB / 128") — worker মেলাতে পারে না; Apple Gadgets-এর Tab A9 "LTE" অপশন (একই কারণ); Sumash Pixel 8a 8/256 ৳৮৬,৯৯৯ (অবিশ্বাস্য); PCB-র Nord CE5 ৳২৬,০০০ (অন্যরা ~৪২,০০০); Mobile Buzz-এর nova Y74 8/128 আর Idea Tab (5G না Wi-Fi নিশ্চিত না); যেসব পাতায় ভার্সন লেখা নেই (CustomMacBD, Rio)।
+- **এখনো ৩ দোকানের কম:** Teclast P30T (Star Tech + Diamu, Diamu-র পাতায় চিপ "A532" লেখা, Star Tech-এর পাতায় চিপ নেই, তাই নেওয়া হয়নি), Motorola Edge 70 12/256 (শুধু Apple Gadgets), SKIN1004 Madagascar Centella Ampoule **50ml** (শুধু Emart; বাকি সব দোকানে ৫৫ml — আলাদা সাইজ, তাই মেলানো হয়নি)।
+- ভার্সনে দাম নেই (আগে থেকেই): Nord CE5 12/256, Pixel 8a 8/256, Realme 14 5G 8/256।
 
 ## যা নেওয়া হবে না, আর কেন
 

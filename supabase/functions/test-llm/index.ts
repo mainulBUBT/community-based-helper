@@ -47,17 +47,25 @@ Deno.serve(async (req) => {
   }
   if (!apiKey) return reply(200, { error: "এই প্রোভাইডারের key সেভ নেই" });
 
-  try {
-    const res = await fetch(`${baseUrl}/chat/completions`, {
-      method: "POST",
-      headers: { "content-type": "application/json", authorization: `Bearer ${apiKey}` },
-      body: JSON.stringify({ model, messages: [{ role: "user", content: "Reply with: ok" }] }),
-      signal: AbortSignal.timeout(30_000),
-    });
-    if (!res.ok) return reply(200, { error: `${res.status} ${await res.text()}`.slice(0, 300) });
-    const answer = await res.json();
-    return reply(200, { reply: String(answer?.choices?.[0]?.message?.content ?? "").trim() });
-  } catch (error) {
-    return reply(200, { error: String(error).slice(0, 300) });
-  }
+  // কয়েকটা key (কমা/নতুন লাইনে আলাদা) থাকলে প্রতিটা আলাদা পরীক্ষা, কোনটার কোটা শেষ তা দেখাতে
+  const keys = apiKey.split(/[\s,]+/).filter(Boolean);
+  const results = await Promise.all(
+    keys.map(async (key) => {
+      try {
+        const res = await fetch(`${baseUrl}/chat/completions`, {
+          method: "POST",
+          headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
+          body: JSON.stringify({ model, messages: [{ role: "user", content: "Reply with: ok" }] }),
+          signal: AbortSignal.timeout(30_000),
+        });
+        if (!res.ok) return { ok: false, text: `${res.status} ${await res.text()}`.slice(0, 160) };
+        const answer = await res.json();
+        return { ok: true, text: String(answer?.choices?.[0]?.message?.content ?? "").trim().slice(0, 60) };
+      } catch (error) {
+        return { ok: false, text: String(error).slice(0, 160) };
+      }
+    }),
+  );
+  const lines = keys.length > 1 ? results.map((r, i) => `key ${i + 1} (••••${keys[i].slice(-4)}): ${r.ok ? "✓" : "✗"} ${r.text}`) : [results[0].text];
+  return reply(200, results.some((r) => r.ok) ? { reply: lines.join(" | ") } : { error: lines.join(" | ") });
 });

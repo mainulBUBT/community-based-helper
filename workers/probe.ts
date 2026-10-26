@@ -5,24 +5,14 @@ import { getText } from "./lib/http";
 
 // নতুন দোকান GitHub Actions এর IP থেকে খোলে কি না, দাম আর ছবি পড়া যায় কি না: `node --import tsx workers/probe.ts`
 const URLS = [
-  "https://beautybooth.com.bd/sitemap/products.xml",
-  "https://beautybooth.com.bd/product/essence-lash-princess-false-lash-effect-mascara-12ml",
-  "https://beautybooth.com.bd/product/maybelline-new-york-the-colossal-kajal-black",
-  "https://alzakbd.com/sitemap_index.xml",
-  "https://alzakbd.com/product/essence-lash-princess-false-lash-mascara/",
-  "https://alzakbd.com/product/maybelline-new-york-colossal-kajal/",
-  "https://bdamajanshop.com/sitemap_index.xml",
-  "https://bdamajanshop.com/product/essence-lash-princess-false-lash-effect-mascara/",
-  "https://bdamajanshop.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-give-me-mocha/",
-  "https://themallbd.com/sitemap.xml",
-  "https://themallbd.com/product/essence-lash-princess-false-lash-effect-mascara-12ml",
-  "https://themallbd.com/product/maybelline-new-york-the-colossal-kajal-035g-deep-black",
-  "https://ukdirectbd.com/sitemap_index.xml",
-  "https://ukdirectbd.com/product/maybelline-fit-me-matte-poreless-foundation-natural-beige-220/",
-  "https://ukdirectbd.com/product/maybelline-colossal-kohl-kajal-24h-black-bold-smudge-resistant-eyeliner/",
-  "https://skinrevivebd.com/sitemap_index.xml",
-  "https://skinrevivebd.com/product/maybelline-colossal-kohl-kajal-24h-black/",
-  "https://skinrevivebd.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-give-me-mocha-6gm/",
+  "https://arafatelecom.com/sitemap_index.xml",
+  "https://arafatelecom.com/product/motorola-edge-70-pro/",
+  "https://arafatelecom.com/product/honor-x9d/",
+  "https://arafatelecom.com/product/realme-14-pro-2/",
+  "https://mobilebuzzbd.com/sitemap_index.xml",
+  "https://mobilebuzzbd.com/product/motorola-edge-70-pro/",
+  "https://mobilebuzzbd.com/product/honor-x9d/",
+  "https://mobilebuzzbd.com/product/realme-14-pro-plus-5g/",
 ];
 
 async function imageStatus(url: string | null | undefined): Promise<string> {

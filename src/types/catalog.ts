@@ -23,6 +23,8 @@ export interface CategoryInfo {
   conditions?: Condition[];
   // true: নকল বেশি হয় এমন পণ্য (মেকআপ, স্কিনকেয়ার) — পণ্যের পাতায় "কেনার আগে আসল কিনা যাচাই করুন"
   verifyNote?: boolean;
+  // true: একই নামের পণ্য দোকানভেদে আলাদা মানের (খেজুর জাত ধরে তুলনা) — পণ্যের পাতায় সেই নোট
+  qualityNote?: boolean;
 }
 
 export interface SpecItem {

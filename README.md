@@ -48,10 +48,20 @@ GitHub → Settings → Secrets and variables → Actions এ দিন:
 | `SUPABASE_PUBLISHABLE_KEY` | publishable key, শুধু `rebuild` এর জন্য |
 | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` | ঐচ্ছিক; থাকলে `rebuild` Cloudflare Pages এ deploy করে |
 
-LLM key, Telegram bot token আর alert chat id অ্যাডমিন → সেটিংস থেকে `private_settings` এ রাখা হয়। অ্যাডমিনের "এখনই চালাও" বোতামে সাথে সাথে চালাতে চাইলে SQL Editor এ একটা fine-grained GitHub token (Actions: write) দিন:
+ভিজিট গোনা আর দাম-কমার alert সরাসরি Supabase এ যায় না, সাইটের নিজের `/api/track` আর `/api/alerts` (Cloudflare Pages Functions, `functions/api/`) দিয়ে যায়, যাতে Cloudflare এর DDoS/rate limit সামনে থাকে। Cloudflare → Pages প্রজেক্ট → Settings → Variables and Secrets (Production) এ দিন:
+
+| নাম | কী |
+|---|---|
+| `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY` | উপরের মতোই |
+| `PROXY_KEY` (secret) | `openssl rand -hex 32` এর ফল; একই মান Supabase SQL Editor এ `select vault.create_secret('<মান>', 'proxy_key');` |
+
+Vault এ `proxy_key` বসানোর পর এই header ছাড়া `page_views`/`watch_prices` এ কিছু লেখা যায় না, তাই সরাসরি Supabase এ flood করে DB খরচ করানো যায় না। ঐচ্ছিক: Cloudflare → Security → WAF → Rate limiting rules এ `/api/` পথে IP ধরে সীমা (ফ্রিতে ১টা rule)।
+
+LLM key, Telegram bot token আর alert chat id অ্যাডমিন → সেটিংস থেকে `private_settings` এ রাখা হয়। অ্যাডমিনের "এখনই চালাও" বোতামে সাথে সাথে চালাতে চাইলে SQL Editor এ repo র নাম `private_settings` এ আর একটা fine-grained GitHub token (শুধু এই repo, Actions: write) Supabase Vault এ দিন:
 
 ```sql
-update private_settings set value = value || '{"github": {"repo": "<owner>/<repo>", "token": "<token>"}}';
+update private_settings set value = value || '{"github": {"repo": "<owner>/<repo>"}}';
+select vault.create_secret('<token>', 'github_token');
 ```
 
 না দিলে অনুরোধটা পরের নির্ধারিত run এ চলে। লোকালি পরীক্ষা: `npm run worker:dry` প্রতি দোকানের একটা পণ্যের দাম দেখায়, ডেটাবেস লাগে না।

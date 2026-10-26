@@ -84,11 +84,13 @@ function OfferRow({ offer, best, warranty, showCondition }: { offer: OfferView; 
 }
 
 export function OffersTable({ offers, warranty, showCondition }: { offers: OfferView[]; warranty: boolean; showCondition: boolean }) {
-  const lowest = offers.length ? Math.min(...offers.map((offer) => offer.price)) : null;
+  // "সবচেয়ে কম" শুধু স্টকে থাকা দোকানের মধ্যে
+  const available = offers.filter((offer) => offer.inStock !== false);
+  const lowest = available.length ? Math.min(...available.map((offer) => offer.price)) : null;
   return (
     <ul className="divide-y divide-line-soft">
       {offers.map((offer) => (
-        <OfferRow key={offer.id} offer={offer} best={offer.price === lowest} warranty={warranty} showCondition={showCondition} />
+        <OfferRow key={offer.id} offer={offer} best={available.includes(offer) && offer.price === lowest} warranty={warranty} showCondition={showCondition} />
       ))}
     </ul>
   );

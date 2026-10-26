@@ -1,0 +1,592 @@
+{
+ "category": "dates",
+ "sites": [
+  {
+   "name": "Arogga",
+   "website": "https://www.arogga.com",
+   "note": "product sitemap; JSON-LD-এ দাম। মধু আর খেজুরের বড় তালিকা।"
+  },
+  {
+   "name": "Chaldal",
+   "website": "https://chaldal.com",
+   "note": "পণ্যের লিংক নাম+সাইজ থেকে (chaldal.com/dabur-honey-250-gm); itemprop দাম। পাতা ভারী (~১.৭MB), প্রায়ই timeout — কিছু দাম বাদ পড়েছে।"
+  },
+  {
+   "name": "Othoba",
+   "website": "https://othoba.com",
+   "note": "মার্কেটপ্লেস (অনেক বিক্রেতা); /honey আর /dates ক্যাটাগরি পাতা। একই জাত-ওজনে কয়েকজন বিক্রেতা থাকলে স্টকে থাকা সবচেয়ে কম দামটা। /search? robots-এ বন্ধ।"
+  },
+  {
+   "name": "Rokomari",
+   "website": "https://www.rokomari.com",
+   "note": "product sitemap নেই, /search robots-এ বন্ধ; ক্যাটাগরি পাতা (dates-khejur, organic-food, groceries) থেকে লিংক। JSON-LD-এ দাম।"
+  }
+ ],
+ "products": [
+  {
+   "brand": "Ajwa",
+   "name": "Dates (আজওয়া খেজুর)",
+   "category": "dates",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 671
+    },
+    {
+     "label": "1kg",
+     "attributes": {
+      "capacity": "1kg"
+     },
+     "officialPrice": 1484
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC85MDc2NlwvOTA3NjYtUHJlbWl1bS1TYXVkaS1BandhLURhdGVzLUFqd2EtS2hlanVyLTUwMGctbGF6d2xrLndlYnAiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0=",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC85MDgzNFwvOTA4MzQtUHJlbWl1bS1TYXVkaS1BandhLURhdGVzLUFqd2EtS2hlanVyLTEwMDBnLTZzYmwzNy53ZWJwIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Deshanol_Ajwa_VIP_Dateskhejur___1_Kg-Deshanol-176ec-290845.png"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/90766/premium-saudi-ajwa-dates-ajwa-khejur-500g",
+     "price": 850,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/ajwa-dates-standard-500-gm",
+     "price": 300,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Othoba",
+     "url": "https://othoba.com/ajwa-dates-ajwa-khejur-500gm-panash-food-870727",
+     "price": 671,
+     "oldPrice": 699,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/90834/premium-saudi-ajwa-dates-ajwa-khejur-1000g",
+     "price": 1450,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/ajwa-premium-dates-1-kg",
+     "price": 1740,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Othoba",
+     "url": "https://othoba.com/authentic-al-madinah-ajwa-dates-regular-size-1-kg-ziplock-intact-pack-jk-shop-812176",
+     "price": 978,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/290845/deshanol-ajwa-premium-dates-ajwa-khejur-1-kg",
+     "price": 1518,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Maryam / Mabroom",
+   "name": "Dates (মরিয়ম খেজুর)",
+   "category": "dates",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 605
+    },
+    {
+     "label": "1kg",
+     "attributes": {
+      "capacity": "1kg"
+     },
+     "officialPrice": 1315
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC85MjIxMVwvOTIyMTEtUHJlbWl1bS1TYXVkaS1NYXJ5YW0tRGF0ZXMtTWFyeWFtLUtoZWp1ci01MDBnbS1jb3B5LXJlc3NqMi53ZWJwIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC85MDc2NVwvOTA3NjUtUHJlbWl1bS1TYXVkaS1NYXJ5YW0tRGF0ZXMtTWFyeWFtLUtoZWp1ci0xa2ctc3hqcHo3LndlYnAiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0=",
+    "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Maryam_Premium_Dates_500gm_Al_Madinah-Saad-022da-450504.png"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/92211/premium-saudi-maryam-dates-maryam-khejur-500gm",
+     "price": 605,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Othoba",
+     "url": "https://othoba.com/moriyom-khejur-vip-mabrum-dates-500-gm-simli-mart-1042271",
+     "price": 389,
+     "oldPrice": 400,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/450504/saad-maryam-premium-al-madinah-dates-500gm",
+     "price": 703,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/90765/premium-saudi-maryam-dates-maryam-khejur-1kg",
+     "price": 1330,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/mabroom-dates-premium-1-kg",
+     "price": 1300,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Othoba",
+     "url": "https://othoba.com/premium-mabroommorium-dates-khejur-1kg-simli-mart-1042273",
+     "price": 778,
+     "oldPrice": 900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/450499/saad-maryam-premium-al-madinah-dates-1kg",
+     "price": 1380,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Safawi / Kalmi",
+   "name": "Dates (কালমি খেজুর)",
+   "category": "dates",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 611
+    },
+    {
+     "label": "1kg",
+     "attributes": {
+      "capacity": "1kg"
+     },
+     "officialPrice": 990
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Ashol_Premiun_Safawi_Dates____500gm-Ashol-37a96-271035.png"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "500g",
+     "site": "Othoba",
+     "url": "https://othoba.com/500gm-dates-black-kalmi-safawi-the-sunflower-932683",
+     "price": 729,
+     "oldPrice": 772,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/271035/ashol-premium-safawi-dates-500gm",
+     "price": 494,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Othoba",
+     "url": "https://othoba.com/premium-safawi-kalmi-maryam-dates-1kg-sahil-mart-20-773592",
+     "price": 990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Sukkari",
+   "name": "Dates (সুক্কারি খেজুর)",
+   "category": "dates",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 553
+    },
+    {
+     "label": "1kg",
+     "attributes": {
+      "capacity": "1kg"
+     },
+     "officialPrice": 849
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC85MDc2M1wvOTA3NjMtUHJlbWl1bS1TYXVkaS1BandhLURhdGVzLUFqd2EtS2hlanVyLTEwMDBnLTkxOW95ay53ZWJwIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC85MjIwOVwvOTIyMDktUHJlbWl1bS1TYXVkaS1TdWtrYXJpLUtoZWp1ci1EYXRlcy1TdWtrYXJpLUtoZWp1ci01MDBnbS1jb3B5LWdmZzF4di53ZWJwIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Saad_Sukkari_Premium_Dates_1KG-Saad-41c42-535901.png"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/92209/premium-saudi-sukkari-khejur-dates-sukkari-khejur-500g",
+     "price": 900,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Othoba",
+     "url": "https://othoba.com/premium-quality-sukkari-dates-sukkari-khejur-500gm-naturally-sweet-soft-borobazar-online-shopping-710676",
+     "price": 553,
+     "oldPrice": 600,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/535900/saad-sukkari-premium-dates-500gm",
+     "price": 459,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/90763/premium-saudi-sukkari-khejur-dates-sukkari-khejur-1kg",
+     "price": 900,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Othoba",
+     "url": "https://othoba.com/premium-sukkari-muffatol-dates-1-kg-ziplock-pack-jk-shop-812174",
+     "price": 785,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/535901/saad-sukkari-premium-dates-1kg",
+     "price": 849,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Medjool",
+   "name": "Dates (মেডজুল খেজুর)",
+   "category": "dates",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 866
+    },
+    {
+     "label": "1kg",
+     "attributes": {
+      "capacity": "1kg"
+     },
+     "officialPrice": 1705
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC82MjczMlwvNjI3MzItV2hhdHNBcHAtSW1hZ2UtMjAyNC0wMy0wMi1hdC00LTRqMzR3My5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC85MDc2NFwvOTA3NjQtUGFsbS1IaWxscy1QcmVtaXVtLU1lZGpvb2wtRGF0ZXMtTWVkam9vbC1LaGVqdXItMWtnLWRndHp5MS53ZWJwIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Haramain_Store_Medjool_Large_Egyptian_Da-Haramain_Store_-cd687-539385.png"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/62732/farmer-s-gold-medjool-khejur-dates-500g",
+     "price": 1003,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Othoba",
+     "url": "https://othoba.com/500-gm-medjool-dates-jumbo-high-premium-quality-the-sunflower-932668",
+     "price": 729,
+     "oldPrice": 772,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/90764/palm-hills-premium-medjool-khejur-dates-medjool-khejur-1kg",
+     "price": 1600,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Othoba",
+     "url": "https://othoba.com/premium-medjool-dates-large-size-1kg-box-sahil-mart-715120",
+     "price": 1705,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/539385/haramain-store-medjool-large-egyptian-dates-1-kg",
+     "price": 2199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "brand": "Rongdhonu",
+   "name": "Premium Dry Dates (Khurma)",
+   "category": "dates",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 189
+    },
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 348
+    },
+    {
+     "label": "1kg",
+     "attributes": {
+      "capacity": "1kg"
+     },
+     "officialPrice": 667
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC82MzkyNVwvNjM5MjUtNDAtNHRzaG5nLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ==",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC82MzkyNlwvNjM5MjYtNDEta3p6a20xLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ==",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC82MzkyN1wvNjM5MjctNDItanR5azU0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ=="
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "250g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/63925/rongdhonu-premium-dry-khejur-dates-250g",
+     "price": 188,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/390234/rongdhonu-premium-dry-dates-khurma-khejur-250gm",
+     "price": 190,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/63926/rongdhonu-premium-dry-khejur-dates-500g",
+     "price": 347,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "500g",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/390232/rongdhonu-premium-dry-dates-khurma-khejur-500gm",
+     "price": 350,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/63927/rongdhonu-premium-dry-khejur-dates-1000g",
+     "price": 645,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Rokomari",
+     "url": "https://www.rokomari.com/product/390205/rongdhonu-premium-dry-dates-khurma-khejur-1kg",
+     "price": 690,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-26"
+    }
+   ]
+  }
+ ]
+}

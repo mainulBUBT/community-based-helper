@@ -1,3 +1,4 @@
+import { liveKeys, withKeys } from "./llm-keys";
 import { privateSettings } from "./settings";
 import { sleep } from "./sleep";
 
@@ -9,7 +10,7 @@ let calls = Number(process.env.LLM_CALL_LIMIT ?? 200);
 export async function llmReady(): Promise<boolean> {
   if (calls <= 0) return false;
   const { llm } = await privateSettings();
-  return Boolean(llm?.apiKey && llm.baseUrl && llm.model);
+  return Boolean(liveKeys(llm?.apiKey).length && llm?.baseUrl && llm.model);
 }
 
 export async function askJson<T>(system: string, user: string): Promise<T> {
@@ -18,12 +19,14 @@ export async function askJson<T>(system: string, user: string): Promise<T> {
   if (calls-- <= 0) throw new Error("LLM call limit reached for this run");
   const request = { model: llm.model, messages: [{ role: "system", content: system }, { role: "user", content: user }] };
   const post = (body: object) =>
-    fetch(new URL("chat/completions", llm.baseUrl.endsWith("/") ? llm.baseUrl : `${llm.baseUrl}/`), {
-      method: "POST",
-      headers: { "content-type": "application/json", authorization: `Bearer ${llm.apiKey}` },
-      body: JSON.stringify(body),
-      signal: AbortSignal.timeout(60_000),
-    });
+    withKeys(llm.apiKey, (key) =>
+      fetch(new URL("chat/completions", llm.baseUrl.endsWith("/") ? llm.baseUrl : `${llm.baseUrl}/`), {
+        method: "POST",
+        headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
+        body: JSON.stringify(body),
+        signal: AbortSignal.timeout(60_000),
+      }),
+    );
   // একবার থেমে আবার চেষ্টা: rate limit বা সার্ভারের সাময়িক সমস্যায়
   const send = async (body: object) => {
     const res = await post(body);
