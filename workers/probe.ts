@@ -31,22 +31,26 @@ async function imageStatus(url: string | null | undefined): Promise<string> {
   return res ? `image ${res.status} ${res.headers.get("content-type")}` : "image unreachable";
 }
 
+// GitHub একটা step এ ১০টার বেশি notice দেখায় না, তাই প্রতি দোকানে একটা annotation, লাইনগুলো %0A দিয়ে জোড়া
 async function main() {
-  let failed = 0;
+  const byHost = new Map<string, { failed: boolean; lines: string[] }>();
   for (const url of URLS) {
     const host = new URL(url).host;
+    const entry = byHost.get(host) ?? { failed: false, lines: [] };
+    byHost.set(host, entry);
     try {
       const html = await getText(url);
       const quote = await quoteFrom(html, undefined, false);
       const price = quote ? `price ${quote.price} old ${quote.oldPrice} stock ${quote.inStock} via ${quote.via}` : "no structured price";
       const image = quote ? await imageStatus(quote.image ?? metaContent(html, "og:image")) : "";
-      console.log(`::notice title=OK ${host}::${url} ${html.length}b ${price} ${image}`);
+      entry.lines.push(`OK ${url} ${html.length}b ${price} ${image}`);
     } catch (error) {
-      failed++;
-      console.log(`::error title=FAIL ${host}::${url} ${(error as Error).name}: ${(error as Error).message}`);
+      entry.failed = true;
+      entry.lines.push(`FAIL ${url} ${(error as Error).name}: ${(error as Error).message}`);
     }
   }
-  console.log(`${URLS.length - failed}/${URLS.length} reachable`);
+  for (const [host, { failed, lines }] of byHost) console.log(`::${failed ? "error" : "notice"} title=${failed ? "FAIL" : "OK"} ${host}::${lines.join("%0A")}`);
+  console.log(`${[...byHost.values()].filter((e) => !e.failed).length}/${byHost.size} shops reachable`);
 }
 
 void main();
