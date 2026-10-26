@@ -7,6 +7,7 @@ import { Field, SecretField } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { Tabs } from "@/components/admin/Tabs";
 import { Toggle } from "@/components/admin/Toggle";
+import { ErrorNotice } from "@/components/ui/ErrorNotice";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
@@ -328,7 +329,7 @@ function SettingsForm({ initial, onSaved, tab, onTab }: { initial: PrivateSettin
 
 export default function JobsAdminPage() {
   const { t } = useAdminI18n();
-  const { data, reload } = useAsync(loadPrivateSettings, []);
+  const { data, error, reload } = useAsync(loadPrivateSettings, []);
   const [tab, setTab] = useState<Tab>("jobs");
   return (
     <>
@@ -339,8 +340,12 @@ export default function JobsAdminPage() {
           <FlowPanel />
           <JobsPanel />
         </div>
-        {/* সেভের পরে নতুন ঢাকা key দেখাতে ফর্ম আবার বসে, key এর ঘর খালি হয় */}
-        {data ? <SettingsForm key={JSON.stringify(data)} initial={data} onSaved={reload} tab={tab} onTab={setTab} /> : tab !== "jobs" && <ListSkeleton rows={2} />}
+        {/* সেভের পরে ফর্ম আবার বসে, যাতে সেভ করা মান দেখায় */}
+        {data ? (
+          <SettingsForm key={JSON.stringify(data)} initial={data} onSaved={reload} tab={tab} onTab={setTab} />
+        ) : (
+          tab !== "jobs" && (error ? <ErrorNotice onRetry={reload} /> : <ListSkeleton rows={2} />)
+        )}
       </div>
     </>
   );
