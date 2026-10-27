@@ -44,7 +44,7 @@ export function DealsShelf({
   interval: number;
 }) {
   const { t, num, prefix } = useI18n();
-  const items = useMemo(() => mixProducts(deals).slice(0, 25), [deals]);
+  const items = useMemo(() => mixProducts(deals).slice(0, 20), [deals]);
   const trackRef = useRef<HTMLDivElement>(null);
   const drag = useRef<{ x: number; left: number; moved: boolean } | null>(null);
   const dragged = useRef(false);

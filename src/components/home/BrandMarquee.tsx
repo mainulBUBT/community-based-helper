@@ -19,10 +19,11 @@ function BrandTile({ brand }: { brand: string }) {
 }
 
 export function BrandMarquee({ brands }: { brands: string[] }) {
-  const loop = [...brands, ...brands, ...brands, ...brands];
+  // দুই কপিই যথেষ্ট: -50% সরলে দ্বিতীয় কপি ঠিক প্রথমটার জায়গায় আসে; গতি ব্র্যান্ডের সংখ্যা ধরে একই থাকে
+  const loop = [...brands, ...brands];
   return (
     <div className="brand-marquee-space overflow-hidden">
-      <div className="brand-marquee flex w-max gap-3">
+      <div className="brand-marquee flex w-max gap-3" style={{ animationDuration: `${Math.max(20, brands.length * 0.85)}s` }}>
         {loop.map((brand, i) => (
           <BrandTile key={`${brand}-${i}`} brand={brand} />
         ))}

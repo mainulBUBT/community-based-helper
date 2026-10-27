@@ -27,8 +27,11 @@ export function HomeView({ initial }: { initial: HomeData }) {
   const nonDrops = summaries
     .filter((s) => !s.drop)
     .sort((a, b) => byStock(a, b) || byPopularity(a, b));
-  const carouselItems = [...drops, ...nonDrops].slice(0, 25);
-  const brands = [...new Set(summaries.map((s) => s.product.brand))];
+  const carouselItems = [...drops, ...nonDrops].slice(0, 20);
+  // সব ব্র্যান্ড নয়, যাদের পণ্য বেশি সেই ৩০টা — তালিকা বাড়লেও হোম পাতা ভারী হয় না
+  const brandCount = new Map<string, number>();
+  for (const s of summaries) brandCount.set(s.product.brand, (brandCount.get(s.product.brand) ?? 0) + 1);
+  const brands = [...brandCount].sort((a, b) => b[1] - a[1]).slice(0, 30).map(([brand]) => brand);
   const trusted = [...sellers]
     .sort((a, b) => Number(b.verified) - Number(a.verified))
     .slice(0, 5);
