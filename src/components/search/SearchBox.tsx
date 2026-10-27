@@ -5,11 +5,12 @@ import { useRouter } from "next/navigation";
 import { useId, useRef, useState, type KeyboardEvent } from "react";
 import { ProductIcon } from "@/components/product/ProductIcon";
 import { SearchHint } from "@/components/search/SearchHint";
+import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
 import { readRecent, rememberSearch } from "@/lib/recent-searches";
 import { listSummaries } from "@/services/catalog";
 import type { ProductSummary } from "@/types/catalog";
-import { matchesQuery } from "@/utils/catalog";
+import { rankProducts } from "@/utils/search";
 import { formatTaka } from "@/utils/format";
 
 type Option = { kind: "product"; summary: ProductSummary } | { kind: "recent"; text: string };
@@ -24,6 +25,7 @@ interface SearchBoxProps {
 export function SearchBox({ defaultValue = "", variant = "bar", examples, onSearch }: SearchBoxProps) {
   const router = useRouter();
   const { t, lang, prefix } = useI18n();
+  const { categories } = useCategories();
   const listId = useId();
   const input = useRef<HTMLInputElement>(null);
   const [text, setText] = useState(defaultValue);
@@ -34,10 +36,9 @@ export function SearchBox({ defaultValue = "", variant = "bar", examples, onSear
 
   const query = text.trim();
   const options: Option[] = query
-    ? catalog
-        .filter((s) => matchesQuery(s.product, query))
+    ? rankProducts(catalog, (s) => s.product, query, categories)
         .slice(0, 6)
-        .map((summary) => ({ kind: "product", summary }))
+        .map(({ item }) => ({ kind: "product", summary: item }))
     : recent.map((item) => ({ kind: "recent", text: item }));
   const showList = open && options.length > 0;
 

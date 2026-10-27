@@ -18,7 +18,7 @@ import { byPopularity, byStock } from "@/utils/catalog";
 
 export function HomeView({ initial }: { initial: HomeData }) {
   const { lang, t, prefix } = useI18n();
-  const { summaries, sellers, settings, comparison } = initial;
+  const { summaries, sellers, settings, comparisons } = initial;
 
   const drops = summaries
     .filter((s) => s.drop)
@@ -89,7 +89,7 @@ export function HomeView({ initial }: { initial: HomeData }) {
             ))}
           </div>
         </section>
-        <CompareCard pick={comparison} />
+        <CompareCard picks={comparisons} />
       </div>
 
       <CategoryTiles summaries={summaries} />

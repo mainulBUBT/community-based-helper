@@ -90,7 +90,7 @@ export interface HomeData {
   summaries: ProductSummary[];
   sellers: Seller[];
   settings: SiteSettings;
-  comparison: ComparePick | null;
+  comparisons: ComparePick[];
 }
 
 export type CatalogLoader = (fresh?: boolean) => Promise<Catalog>;
@@ -146,13 +146,6 @@ export function pickComparisons(catalog: Catalog, limit = 6): ComparePick[] {
     .slice(0, limit);
 }
 
-// প্রতি build এ ভিন্ন একটা পণ্য দেখাতে। শুধু build এর সময় সার্ভারে চলে, ক্লায়েন্ট আবার বাছে না।
-export function pickOneComparison(catalog: Catalog): ComparePick | null {
-  const picks = pickComparisons(catalog, 6);
-  if (!picks.length) return null;
-  return picks[Math.floor(Math.random() * picks.length)];
-}
-
 // একই API সব উৎসের জন্য: বেক করা JSON (সাইট) আর লাইভ Supabase (অ্যাডমিন) দুটোই এখান থেকে বানে।
 export function makeService(load: CatalogLoader, loadHistory: HistoryLoader = () => Promise.resolve([])) {
   const listSummaries = (includeHidden = false) =>
@@ -163,7 +156,8 @@ export function makeService(load: CatalogLoader, loadHistory: HistoryLoader = ()
 
   const listCategories = () => load().then((catalog) => catalog.categories);
   const listSellers = () => load().then((catalog) => catalog.sellers);
-  const listComparisons = () => load().then((catalog) => pickOneComparison(catalog));
+  // কয়েকটা পাঠানো হয়, কোনটা দেখাবে সেটা ব্রাউজার প্রতিবার পাতা খুললে বাছে (static পাতায় build এর বাছাই সবার কাছে এক থাকত)
+  const listComparisons = () => load().then((catalog) => pickComparisons(catalog, 12));
 
   const getProductDetail = async (slug: string): Promise<ProductDetail | null> => {
     const catalog = await load();

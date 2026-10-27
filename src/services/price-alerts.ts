@@ -38,18 +38,34 @@ const keyBytes = (base64url: string) => {
   return Uint8Array.from(atob(base64), (c) => c.charCodeAt(0));
 };
 
+// কেন চালু হলো না: "server" মানে সাইটের /api/alerts বন্ধ (Pages এ Supabase সেটিং নেই বা DB সাড়া দিচ্ছে না)
+export class AlertError extends Error {
+  constructor(readonly reason: "server" | "worker" | "failed") {
+    super(reason);
+  }
+}
+
+// পাতা খোলার পরপরই চাপলে service worker তখনো বসেনি; বসা পর্যন্ত একটু অপেক্ষা, তারপরও না পেলে register করে নেওয়া
+async function registration(create: boolean) {
+  const current = await navigator.serviceWorker.getRegistration("/");
+  if (current || !create) return current ?? null;
+  const timeout = new Promise<null>((resolve) => setTimeout(() => resolve(null), 10_000));
+  navigator.serviceWorker.register("/sw.js", { scope: "/", updateViaCache: "none" }).catch(() => {});
+  return Promise.race([navigator.serviceWorker.ready, timeout]);
+}
+
 async function subscription(create: boolean) {
-  const registration = await navigator.serviceWorker.getRegistration("/");
-  if (!registration) return null;
-  const current = await registration.pushManager.getSubscription();
+  const worker = await registration(create);
+  if (!worker) return null;
+  const current = await worker.pushManager.getSubscription();
   if (current || !create) return current;
-  return registration.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: keyBytes(VAPID_KEY!) });
+  return worker.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: keyBytes(VAPID_KEY!) });
 }
 
 // সাইটের নিজের Pages Function (functions/api/alerts.ts) দিয়ে DB র watch_prices / unwatch_prices এ যায়
 async function rpc(action: "watch" | "unwatch", body: Record<string, unknown>) {
   const response = await fetch("/api/alerts", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ action, ...body }) });
-  if (!response.ok) throw new Error(`${action}: ${response.status}`);
+  if (!response.ok) throw new AlertError(response.status === 503 || response.status === 502 ? "server" : "failed");
 }
 
 function watch(sub: PushSubscription, slugs: string[], lang: Lang) {
@@ -64,7 +80,7 @@ export async function enableAlerts(slugs: string[], lang: Lang) {
     return;
   }
   const sub = await subscription(true);
-  if (!sub) throw new Error("no service worker");
+  if (!sub) throw new AlertError("worker");
   await watch(sub, slugs, lang);
   flag(true);
   alertStore.set("on");

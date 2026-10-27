@@ -1,21 +1,4 @@
-import type { OfferView, PricePoint, Product, ProductSummary } from "@/types/catalog";
-
-const ALIASES: Record<string, string> = {
-  আইফোন: "iphone",
-  আইপ্যাড: "ipad",
-  ম্যাকবুক: "macbook",
-  অ্যাপল: "apple",
-  স্যামসাং: "samsung",
-  গ্যালাক্সি: "galaxy",
-  শাওমি: "xiaomi",
-  রেডমি: "redmi",
-  রিয়েলমি: "realme",
-  ঘড়ি: "watch",
-  ওয়াচ: "watch",
-  মোবাইল: "",
-  ফোন: "",
-  দাম: "",
-};
+import type { OfferView, PricePoint, ProductSummary } from "@/types/catalog";
 
 export const byPrice = (a: { price: number }, b: { price: number }) => a.price - b.price;
 
@@ -40,21 +23,6 @@ export function toCard(summary: ProductSummary): ProductSummary {
 
 export function lowestOffer(offers: OfferView[]) {
   return offers.filter((offer) => offer.inStock !== false).sort(byPrice)[0] ?? offers.slice().sort(byPrice)[0] ?? null;
-}
-
-export function queryWords(query: string) {
-  return query
-    .toLowerCase()
-    .split(/\s+/)
-    .map((word) => ALIASES[word] ?? word)
-    .filter(Boolean);
-}
-
-export function matchesQuery(product: Product, query: string) {
-  const words = queryWords(query);
-  const haystack = `${product.brand} ${product.name} ${product.variants.map((v) => v.label).join(" ")}`.toLowerCase().replace(/\s+/g, " ");
-  const compact = haystack.replace(/\s/g, "");
-  return words.every((word) => haystack.includes(word) || compact.includes(word));
 }
 
 export interface DayRange {

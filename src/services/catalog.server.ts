@@ -55,8 +55,8 @@ export const { loadCatalog, listSummaries, listCategories, listSellers, listComp
 );
 
 export async function getHomeData(): Promise<HomeData> {
-  const [summaries, sellers, settings, comparison] = await Promise.all([listSummaries(), listSellers(), getSiteSettings(), listComparisons()]);
-  return { summaries: summaries.map(toCard), sellers, settings, comparison };
+  const [summaries, sellers, settings, comparisons] = await Promise.all([listSummaries(), listSellers(), getSiteSettings(), listComparisons()]);
+  return { summaries: summaries.map(toCard), sellers, settings, comparisons };
 }
 
 // ক্যাটাগরি পেজের স্ট্যাটিক HTML আর প্রথম রেন্ডারের জন্য: ভেতরের ভাগসহ, জনপ্রিয়তা অনুযায়ী

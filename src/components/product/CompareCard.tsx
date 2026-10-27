@@ -2,14 +2,22 @@
 
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { useSyncExternalStore } from "react";
 import { SellerLogo } from "@/components/seller/SellerLogo";
 import { useI18n } from "@/hooks/useI18n";
 import type { ComparePick } from "@/services/catalog-core";
 import { formatTaka } from "@/utils/format";
 import { ProductIcon } from "./ProductIcon";
 
-export function CompareCard({ pick }: { pick: ComparePick | null }) {
+// প্রতিবার পাতা খুললে একবার; পাতার ভেতরে ঘোরাঘুরিতে কার্ড বদলায় না
+const seed = typeof window === "undefined" ? 0 : Math.random();
+const still = () => () => {};
+
+export function CompareCard({ picks }: { picks: ComparePick[] }) {
   const { t, num, lang, prefix } = useI18n();
+  // build এর HTML এ প্রথমটা, ব্রাউজারে hydration এর পরে এলোমেলো একটা
+  const roll = useSyncExternalStore(still, () => seed, () => 0);
+  const pick = picks[Math.floor(roll * picks.length)];
   if (!pick) return null;
   const { product, compareAt } = pick.summary;
   const photo = product.images?.[0];

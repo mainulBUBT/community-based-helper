@@ -21,7 +21,7 @@ import { createProduct, DuplicateProductError } from "@/services/admin/products"
 import { listAllSellers } from "@/services/admin/sellers";
 import { listSummaries } from "@/services/catalog-live";
 import type { Condition, ProductSummary, VariantAttributes } from "@/types/catalog";
-import { matchesQuery } from "@/utils/catalog";
+import { matchesQuery } from "@/utils/search";
 import { formatTaka } from "@/utils/format";
 import { variantLabel } from "@/utils/variants";
 
@@ -196,7 +196,7 @@ export default function ProductsAdminPage() {
   const filtered = data.summaries.filter(
     (summary) =>
       (!category || summary.product.category === category) &&
-      (!query.trim() || matchesQuery(summary.product, query.trim())) &&
+      (!query.trim() || matchesQuery(summary.product, query.trim(), categories)) &&
       (!problemsOnly || issuesOf(summary).some((issue) => issue !== "hidden")),
   );
   const paged = paginate(filtered, page, PAGE_SIZE);

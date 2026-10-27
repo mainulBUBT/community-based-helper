@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useI18n } from "@/hooks/useI18n";
 import { usePriceAlerts } from "@/hooks/usePriceAlerts";
 import { showToast } from "@/lib/toast";
-import { disableAlerts, enableAlerts } from "@/services/price-alerts";
+import { AlertError, disableAlerts, enableAlerts } from "@/services/price-alerts";
 
 export function PriceAlertToggle({ slugs, compact = false }: { slugs: string[]; compact?: boolean }) {
   const { t, lang } = useI18n();
@@ -13,10 +13,11 @@ export function PriceAlertToggle({ slugs, compact = false }: { slugs: string[]; 
   const [busy, setBusy] = useState(false);
   if (state === "unsupported" || (compact && state !== "off")) return null;
 
+  const failure = { server: t.alerts.unavailable, worker: t.alerts.reload, failed: t.alerts.failed };
   const run = (action: () => Promise<void>) => {
     setBusy(true);
     action()
-      .catch(() => showToast(t.alerts.failed))
+      .catch((error) => showToast(failure[error instanceof AlertError ? error.reason : "failed"]))
       .finally(() => setBusy(false));
   };
   const on = state === "on";

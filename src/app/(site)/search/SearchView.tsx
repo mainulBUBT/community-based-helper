@@ -6,6 +6,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
 import { ProductCard } from "@/components/product/ProductCard";
+import { BrandRow } from "@/components/search/BrandRow";
 import { FilterPanel, type Facets, type Filters } from "@/components/search/FilterPanel";
 import { SearchBox } from "@/components/search/SearchBox";
 import { EmptyState } from "@/components/ui/EmptyState";
@@ -19,7 +20,8 @@ import { useI18n } from "@/hooks/useI18n";
 import { trackView } from "@/services/analytics";
 import { listSummaries } from "@/services/catalog";
 import { AXES, type Axis, type ProductSummary } from "@/types/catalog";
-import { byStock, matchesQuery } from "@/utils/catalog";
+import { byStock } from "@/utils/catalog";
+import { rankProducts } from "@/utils/search";
 import { formatTaka } from "@/utils/format";
 import { categoryPath } from "@/utils/url";
 import { sortAxisValues } from "@/utils/variants";
@@ -42,6 +44,13 @@ const COMPARE: Record<Sort, (a: ProductSummary, b: ProductSummary, unofficial: b
 const axisValues = (summaries: ProductSummary[], axis: Axis) =>
   sortAxisValues(axis, [...new Set(summaries.flatMap((s) => s.product.variants.map((v) => v.attributes[axis]).filter((v): v is string => Boolean(v))))]);
 
+// বেশি পণ্য যে ব্র্যান্ডের সে আগে, যাতে ছোট করে দেখালেও দরকারিগুলো চোখে পড়ে
+function byCount(brands: string[]) {
+  const counts = new Map<string, number>();
+  for (const b of brands) counts.set(b, (counts.get(b) ?? 0) + 1);
+  return [...counts.keys()].sort((a, b) => counts.get(b)! - counts.get(a)! || a.localeCompare(b));
+}
+
 function readFilters(params: URLSearchParams, category?: string, brand?: string): Filters {
   return {
     category: category ?? params.get("category"),
@@ -54,12 +63,11 @@ function readFilters(params: URLSearchParams, category?: string, brand?: string)
   };
 }
 
-function matches(s: ProductSummary, f: Filters, query: string, family: Set<string> | null) {
+function matches(s: ProductSummary, f: Filters, family: Set<string> | null) {
   const price = priceOf(s, f.unofficial);
   return (
     (!family || family.has(s.product.category)) &&
     (!f.brands.length || f.brands.includes(s.product.brand)) &&
-    (!query || matchesQuery(s.product, query)) &&
     (!f.inStock || s.inStock) &&
     (f.min === null || (price !== null && price >= f.min)) &&
     (f.max === null || (price !== null && price <= f.max)) &&
@@ -83,7 +91,7 @@ export function SearchView({ category, brand, initial }: { category?: string; br
   const pathname = usePathname();
   const params = useSearchParams();
   const { t, num: n, prefix, lang } = useI18n();
-  const { find, name, family } = useCategories();
+  const { categories, find, name, family } = useCategories();
   const { data, error, loading, reload } = useAsync(() => (initial ? Promise.resolve(initial) : listSummaries()), [], initial ?? null);
   const [drawer, setDrawer] = useState(false);
 
@@ -120,12 +128,20 @@ export function SearchView({ category, brand, initial }: { category?: string; br
   const inCategory = summaries.filter((s) => !familySet || familySet.has(s.product.category));
   const prices = inCategory.map((s) => priceOf(s, filters.unofficial)).filter((p): p is number => p !== null);
   const facets: Facets = {
-    brands: [...new Set(inCategory.map((s) => s.product.brand))].sort(),
+    brands: byCount(inCategory.map((s) => s.product.brand)),
     axes: (find(filters.category)?.axes ?? AXES).map((axis) => ({ axis, values: axisValues(inCategory, axis) })).filter((f) => f.values.length > 1),
     priceFloor: prices.length ? Math.floor(Math.min(...prices) / 1000) * 1000 : 0,
     priceCeil: prices.length ? Math.ceil(Math.max(...prices) / 1000) * 1000 : 0,
   };
-  const results = summaries.filter((s) => matches(s, filters, query, familySet)).sort((a, b) => byStock(a, b) || COMPARE[sort](a, b, filters.unofficial));
+  // খোঁজার শব্দ থাকলে আগে যেটা সবচেয়ে ভালো মেলে; ব্যবহারকারী দাম ধরে সাজালে মিল শুধু বাছাইয়ে লাগে
+  const ranked = rankProducts(summaries, (s) => s.product, query, categories);
+  const relevance = new Map(ranked.map((r) => [r.item, r.score]));
+  const approximate = Boolean(query) && ranked.some((r) => r.partial);
+  const byRelevance = (a: ProductSummary, b: ProductSummary) => (relevance.get(b) ?? 0) - (relevance.get(a) ?? 0);
+  const results = ranked
+    .map((r) => r.item)
+    .filter((s) => matches(s, filters, familySet))
+    .sort((a, b) => (query && sort === "popular" ? byRelevance(a, b) || byStock(a, b) : byStock(a, b)) || COMPARE[sort](a, b, filters.unofficial));
   const paged = paginate(results, Number(params.get("page")) || 1, PAGE_SIZE);
   const goTo = (page: number) => {
     update({ page: page > 1 ? String(page) : null });
@@ -168,27 +184,10 @@ export function SearchView({ category, brand, initial }: { category?: string; br
         <SearchBox key={query} defaultValue={query} onSearch={(q) => update({ q: q || null })} />
       </div>
 
-      {!brand && facets.brands.length > 0 && (
-        <div className="hidden flex-wrap gap-2 md:flex">
-          {[null, ...facets.brands].map((b) => {
-            const selected = b ? filters.brands.length === 1 && filters.brands[0] === b : !filters.brands.length;
-            return (
-              <button
-                key={b ?? "all"}
-                type="button"
-                aria-pressed={selected}
-                onClick={() => update({ brand: b })}
-                className={`h-9 shrink-0 rounded-full border px-4 text-sm font-semibold transition-colors ${selected ? "border-brand bg-brand text-brand-ink" : "border-line bg-surface hover:border-brand"}`}
-              >
-                {b ?? t.search.all}
-              </button>
-            );
-          })}
-        </div>
-      )}
+      {!brand && facets.brands.length > 0 && <BrandRow brands={facets.brands} selected={filters.brands} onSelect={(b) => update({ brand: b })} />}
 
       <div className="grid gap-5 lg:grid-cols-[260px_minmax(0,1fr)]">
-        <aside className="hidden self-start overflow-hidden rounded-lg bg-surface ring-1 ring-line lg:sticky lg:top-32 lg:block">
+        <aside className="hidden self-start overflow-y-auto overscroll-contain rounded-lg bg-surface ring-1 ring-line lg:sticky lg:top-32 lg:block lg:max-h-[calc(100dvh-9rem)]">
           <FilterPanel filters={filters} facets={facets} update={update} />
         </aside>
 
@@ -237,6 +236,8 @@ export function SearchView({ category, brand, initial }: { category?: string; br
               </button>
             </div>
           )}
+
+          {approximate && results.length > 0 && <p className="mb-3 text-sm text-dim">{t.search.approximate(query)}</p>}
 
           {loading ? (
             <GridSkeleton />
