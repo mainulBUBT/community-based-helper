@@ -6,11 +6,17 @@ import { readPromos } from "./jobs/promos";
 import { rebuild } from "./jobs/rebuild";
 import { runJob, type JobId, type JobRun } from "./jobs/run";
 
+import { syncSpecialOffers } from "../scripts/special-stores";
+
 const jobs: Record<JobId, (run: JobRun) => Promise<string>> = {
   prices: refreshPrices,
   discover,
   promos: readPromos,
   rebuild,
+  special_sync: async () => {
+    await syncSpecialOffers();
+    return "Special stores sync completed";
+  },
 };
 
 async function main() {

@@ -16,6 +16,7 @@ const job = (id: string, name: string, schedule: string): Job => ({
 
 export const sampleJobs: Job[] = [
   job("prices", "দাম আনা", "প্রতি ৬ ঘণ্টায়"),
+  job("special_sync", "বিশেষ দোকানের দাম সিঙ্ক", "দিনে দুবার"),
   job("discover", "নতুন পণ্য খোঁজা আর মেলানো", "নতুন পণ্য যোগ হলেই, আর প্রতি রাতে"),
   job("promos", "অফার পড়া", "দিনে একবার"),
   job("rebuild", "সাইট নতুন করে বানানো (SEO)", "প্রতি রাতে"),

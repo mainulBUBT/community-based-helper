@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState, type FormEvent } from "react";
 import { Field, SecretField } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
+import { SpecialSyncPanel } from "@/components/admin/SpecialSyncPanel";
 import { Tabs } from "@/components/admin/Tabs";
 import { Toggle } from "@/components/admin/Toggle";
 import { ErrorNotice } from "@/components/ui/ErrorNotice";
@@ -339,6 +340,7 @@ export default function JobsAdminPage() {
         <div role="tabpanel" id="jobs-jobs" hidden={tab !== "jobs"} className="flex flex-col gap-6">
           <FlowPanel />
           <JobsPanel />
+          <SpecialSyncPanel onJobTriggered={reload} />
         </div>
         {/* সেভের পরে ফর্ম আবার বসে, যাতে সেভ করা মান দেখায় */}
         {data ? (
