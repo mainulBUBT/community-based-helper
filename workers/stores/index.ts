@@ -242,6 +242,42 @@ const othoba: Store = {
   },
 };
 
+// BabyCare (OpenCart): sitemap-এ শুধু ক্যাটাগরি, পণ্য ক্যাটাগরি পাতায় (?page=N)-তে ২৪টা করে;
+// পণ্যের পাতায় JSON-LD নেই, দাম itemprop="price" (ছাড়ের দাম), og এ কাটা (মূল) দাম
+const BABYCARE = "https://www.babycare.com.bd";
+const BABYCARE_CATEGORIES = ["/diapers", "/wipes", "/bathing", "/baby-shampoo", "/lotions-oils", "/baby-oil", "/baby-powder-baby-cream"];
+
+function parseBabycareListings(html: string): Listing[] {
+  return [...html.matchAll(/<div class="product-item"[\s\S]*?itemprop="url" content="([^"]+)"[\s\S]*?itemprop="name"[^>]*>([^<]+)</g)].map(([, url, name]) => ({
+    title: decode(name.trim()),
+    url,
+    price: null,
+    oldPrice: null,
+  }));
+}
+
+const babycare: Store = {
+  id: "babycare",
+  name: "BabyCare",
+  origin: BABYCARE,
+  rendered: false,
+  condition: "official",
+  sample: `${BABYCARE}/huggies-dry-medium-pant-diaper`,
+  promoUrl: null,
+  async discover() {
+    const all: Listing[] = [];
+    for (const path of BABYCARE_CATEGORIES) {
+      for (let page = 1; page <= 15; page++) {
+        const items = parseBabycareListings(await getText(`${BABYCARE}${path}${page > 1 ? `?page=${page}` : ""}`).catch(() => ""));
+        const fresh = items.filter((item) => !all.some((seen) => seen.url === item.url));
+        if (fresh.length === 0) break;
+        all.push(...fresh);
+      }
+    }
+    return all;
+  },
+};
+
 // Trek N Tread: Laravel (Inertia) — সাইটম্যাপ নেই, প্রোডাক্ট পাতার দাম embedded data-page JSON-এ (এনকোডেড &quot;);
 // product.variation_price = মূল দাম, variation_discounted_price = ছাড়ের দাম। ক্যাটালগ পাতা (?page=1..12)-তে সব পণ্য।
 const TREK = "https://trekntread.com";
@@ -662,6 +698,36 @@ export const stores: Store[] = [
     path: "/product/",
     condition: "unofficial",
     variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "sheitech",
+    name: "Shei Tech",
+    origin: "https://sheitech.com.bd",
+    sample: "https://sheitech.com.bd/product/zeblaze-btalk-4-pro-smart-watch/",
+    sitemap: "https://sheitech.com.bd/sitemap_index.xml",
+    path: "/product/",
+    condition: "unofficial",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "zapatos",
+    name: "Zapatos",
+    origin: "https://zapatos.com.bd",
+    sample: "https://zapatos.com.bd/product/hyper-stride/",
+    sitemap: "https://zapatos.com.bd/wp-sitemap.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  babycare,
+  sitemapStore({
+    id: "dolbear",
+    name: "Dolbear",
+    origin: "https://dolbear.com.bd",
+    sample: "https://dolbear.com.bd/product/anker-zolo-20w",
+    sitemap: "https://dolbear.com.bd/sitemap.xml",
+    path: "/product/",
+    condition: "unofficial",
   }),
 ];
 

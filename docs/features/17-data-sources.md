@@ -29,6 +29,11 @@
 | Othoba | ক্যাটাগরি পাতা (`OTHOBA_CATEGORIES`, `?pagenumber=`), কারণ sitemap ফাঁকা | `othobaVariants`: JSON-LD এর `price` মূল দাম, `sale_price` ছাড়ের দাম | ✅ |
 | Beauty Booth | `/sitemap/products.xml` (~৩.৩ MB, তাই `MAX_BODY` ৮ MB) | JSON-LD | ✅ |
 | ALZAK, BD Amajan Shop, UK Direct BD, Skin Revive BD | WooCommerce sitemap | `wooVariants` | ✅ |
+| Shei Tech | product sitemap (`sitemap_index.xml`) | `wooVariants` + JSON-LD | ✅ |
+| Zapatos | `wp-sitemap.xml` (posts-product) | `wooVariants` | ✅ চলে, কিন্তু নিজস্ব ব্র্যান্ডে ক্যাটালগের সাথে ম্যাচ নেই |
+| BabyCare | sitemap-এ পণ্য নেই — ক্যাটাগরি পাতা (`?page=`) ঘুরে | `itemprop="price"` (JSON-LD নেই) | ✅ |
+| Dolbear | `/sitemap/products.xml` | JSON-LD | ✅ |
+| HNS Tech | sitemap নেই | পাতার `#pdpPrice` — `special-stores` (লোকাল) | 🟡 পার্সার তৈরি, অফার হাতে |
 | The Mall BD | | | ⛔ GitHub Actions থেকে robots.txt এ 403 |
 | Rokomari | | | ⛔ GitHub Actions থেকে robots.txt এ 403 |
 | Pickaboo | `/search-result/<নাম>` HTML | | ⛔ worker কে 403 দেয় |
@@ -379,6 +384,24 @@ Samsung-এর S/Z সিরিজ, Pixel আর বড় ব্র্যান
 - **অফিসিয়াল দাম:** official দোকানের দামের মাঝামাঝি; official দোকান না থাকলে `null` (Pixel, Vivo X300, Find X9 ইত্যাদি)।
 - **স্পেক:** Star Tech-এর পাতা থাকলে সেটা, নাহলে Mobile Dokan (`fetch-specs`-এর দুটোই চেনা)। `releaseYear` Mobile Dokan-এর তারিখ মিলিয়ে, চীনে আগে ঘোষণা হলে সেই বছর (Reno15, Magic8 Pro ২০২৫)।
 - **বাদ:** Pixel 11 (শুধু Star Tech), Pixel 10a (ভার্সন-ধরে ২ দোকান হয়নি), Xiaomi 17 আর 17 Ultra (আসলে ১টা দোকান; বাকি মিল ব্যাটারি/জুসার), Nothing Phone 4 (দোকানে নেই)।
+
+### নতুন দোকান: Shei Tech, Zapatos, BabyCare, Dolbear, HNS Tech (২৭ অক্টোবর ২০২৬)
+
+মালিকের চাওয়া ৫টা সাইট robots.txt, Terms আর পাতার দাম-মার্কআপ মিলিয়ে যাচাই। `discover store <id>` লোকালে চালিয়ে ম্যাপ: **Shei Tech ৫৬ দাম, Dolbear ৪৪, BabyCare ১৬, Zapatos ০; HNS Tech-এর পার্সার `scripts/special-stores.ts`-এ, অফার বাকি।** Dolbear-এর ১টা অনিশ্চিত ম্যাচ (TP-Link Deco E4 ৳৫,৯৯৯ → 2 Pack) যাচাই তালিকায়। নমুনা দাম লাইভ পাতায় মিলিয়ে দেখা (Realme 14 5G ৳৪১,৯৯৯, Archer AX53 ৳৫,৪০০)।
+
+| দোকান | সাইট | listing | দাম | কন্ডিশন |
+|---|---|---|---|---|
+| Shei Tech | sheitech.com.bd | WooCommerce, product sitemap ×২ | `wooVariants`, JSON-LD | unofficial |
+| Zapatos | zapatos.com.bd | WooCommerce, `wp-sitemap-posts-product-1.xml` | `wooVariants` | official (নিজেদের ব্র্যান্ড) |
+| BabyCare | babycare.com.bd | OpenCart; sitemap-এ শুধু ক্যাটাগরি — ৭টা ক্যাটাগরি পাতায় `?page=` | `itemprop="price"` (ছাড়ের দাম), og-এ মূল দাম | official |
+| Dolbear | dolbear.com.bd | কাস্টম (Laravel), `/sitemap/products.xml` | JSON-LD | unofficial |
+| HNS Tech | hnstechbd.com | কাস্টম, sitemap/JSON-LD নেই — তাই worker-এ নয় | `#pdpPrice` (`special-stores`-এ `hnstech`) | unofficial |
+
+- Shei Tech: চার্জার, পাওয়ার ব্যাংক, রাউটার, স্মার্টওয়াচ, ইয়ারবাডে ভালো ম্যাচ (Anker Zolo A1695, Archer AX53 ইত্যাদি মডেল-কোডসহ URL)।
+- Dolbear: রাউটার (TP-Link, Tenda), ফোন (OPPO A6, Realme 14 5G), চার্জার, ইয়ারবাড। এক স্টোরেজ এক URL (`oppo-a6-6-128gb`)।
+- BabyCare: ডায়াপার (Savlon Twinkle, NeoCare Premium), ওয়াইপস, লোশন/ক্রিম/শ্যাম্পু; ক্যাটাগরি পাতায় ২৪টা করে পণ্য, `product-item` টাইলের `itemprop="url"` + `name` থেকে listing।
+- Zapatos: নিজেদের ব্র্যান্ডের জুতা (Hyper Stride, Urban Heritage) — ক্যাটালগের ১:১ কপি মডেলের সাথে মেলে না; ওদের মডেল ক্যাটালগে আনা হলে কাজে লাগবে (প্লাম্বিং তৈরি)।
+- HNS Tech: Apple-কেন্দ্রিক (iPhone/Mac/iPad/Watch/AirPods, অনেকগুলো USA ভার্সন)। robots খোলা, দাম HTML-এই থাকে; তবে sitemap নেই বলে `discover` চলে না — ক্যাটালগ পণ্য হাতে মিলিয়ে অফার বসাতে হবে, তারপর `prices`/special sync নিয়মিত আপডেট করবে।
 
 ## যা নেওয়া হবে না, আর কেন
 
