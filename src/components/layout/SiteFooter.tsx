@@ -1,6 +1,6 @@
 "use client";
 
-import { Globe, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
 import { useCategories } from "@/hooks/useCategories";
@@ -10,6 +10,15 @@ import { categoryPath } from "@/utils/url";
 import { BrandMark } from "./BrandMark";
 
 const link = "text-sm text-white/75 hover:text-white";
+
+// lucide-react এ আর brand icon নেই, তাই ফেসবুকের "f" নিজে এঁকেছি
+function FacebookIcon({ size }: { size: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2-.1-2 0-3.4 1.2-3.4 3.5V11H8.5v3H11v7h2.5Z" />
+    </svg>
+  );
+}
 
 export function SiteFooter({ settings }: { settings: SiteSettings }) {
   const { t, num, lang, prefix } = useI18n();
@@ -27,11 +36,13 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
         </div>
         <nav aria-label={t.footer.categories} className="flex flex-col gap-2">
           <span className="mb-1 text-sm font-bold">{t.footer.categories}</span>
-          {categories.map((c) => (
-            <Link key={c.slug} href={categoryPath(prefix, c.slug)} className={link}>
-              {lang === "en" ? c.nameEn : c.name}
-            </Link>
-          ))}
+          <div className="thin-scrollbar grid max-h-60 grid-cols-2 gap-x-6 gap-y-2 overflow-y-auto pr-2">
+            {categories.map((c) => (
+              <Link key={c.slug} href={categoryPath(prefix, c.slug)} className={link}>
+                {lang === "en" ? c.nameEn : c.name}
+              </Link>
+            ))}
+          </div>
         </nav>
         <nav aria-label={t.footer.explore} className="flex flex-col gap-2">
           <span className="mb-1 text-sm font-bold">{t.footer.explore}</span>
@@ -72,7 +83,7 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
             )}
             {settings.facebook && (
               <a href={settings.facebook} target="_blank" rel="noopener" className={`${link} flex items-center gap-2`}>
-                <Globe size={15} aria-hidden="true" />
+                <FacebookIcon size={15} />
                 Facebook
               </a>
             )}

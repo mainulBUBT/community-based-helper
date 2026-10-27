@@ -92,7 +92,7 @@ function Viewer({ images, index, alt, onClose, onStep }: { images: string[]; ind
           <X size={20} aria-hidden="true" />
         </button>
       </div>
-      <div className={`relative flex-1 ${zoomed ? "overflow-auto" : "overflow-hidden"}`} {...(zoomed ? {} : handlers)} onClick={toggleZoom}>
+      <div className={`relative flex-1 ${zoomed ? "cursor-zoom-out overflow-auto" : "cursor-zoom-in overflow-hidden"}`} {...(zoomed ? {} : handlers)} onClick={toggleZoom}>
         {zoomed ? (
           <img src={images[index]} alt={alt} className="max-w-none bg-white" style={{ width: "250%" }} />
         ) : (

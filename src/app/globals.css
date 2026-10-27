@@ -109,6 +109,21 @@
   }
 }
 
+@utility thin-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255 255 255 / 0.3) transparent;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgb(255 255 255 / 0.3);
+    border-radius: 999px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
 @utility eyebrow {
   font-size: 12px;
   font-weight: 600;
@@ -125,6 +140,15 @@
   }
   dialog::backdrop {
     background: rgb(0 0 0 / 0.45);
+  }
+  /* Browsers keep the arrow cursor on buttons; clickable controls get the pointer hand. */
+  button:enabled,
+  input:enabled:where([type="button"], [type="reset"], [type="submit"]),
+  [role="button"]:enabled {
+    cursor: pointer;
+  }
+  label:has(input[type="checkbox"], input[type="radio"]) {
+    cursor: pointer;
   }
 }
 
