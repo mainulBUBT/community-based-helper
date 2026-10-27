@@ -13,12 +13,12 @@ interface Row {
   category: string | null;
   discover_requested_at: string;
   discovered_at: string | null;
-  variants: { id: string; label: string; position: number; official_price: number | null }[];
+  variants: { id: string; label: string; sku: string | null; position: number; official_price: number | null }[];
 }
 
 export async function loadCatalog(): Promise<CatalogEntry[]> {
   const rows = await all<Row>((from, to) =>
-    db().from("products").select("id, name, brand, category, discover_requested_at, discovered_at, variants(id, label, position, official_price)").order("id").range(from, to),
+    db().from("products").select("id, name, brand, category, discover_requested_at, discovered_at, variants(id, label, sku, position, official_price)").order("id").range(from, to),
   );
   return rows.map((p) => ({
     id: p.id,
@@ -26,7 +26,7 @@ export async function loadCatalog(): Promise<CatalogEntry[]> {
     brand: p.brand,
     category: p.category,
     pending: !p.discovered_at || p.discovered_at < p.discover_requested_at,
-    variants: [...p.variants].sort((a, b) => a.position - b.position).map(({ id, label, official_price }) => ({ id, label, officialPrice: official_price })),
+    variants: [...p.variants].sort((a, b) => a.position - b.position).map(({ id, label, sku, official_price }) => ({ id, label, sku, officialPrice: official_price })),
   }));
 }
 

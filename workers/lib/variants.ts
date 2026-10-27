@@ -58,6 +58,7 @@ function distinct(labels: string[]): Set<string> {
 const SPEC = /^(\d+(gb|tb|mm)|cpu\d+|gpu\d+|cellular|wifi|gps|lte|bluetooth|official|unofficial)$/;
 const CONNECTIVITY = ["wifi", "gps", "cellular", "lte", "bluetooth"];
 const OPENED = /\b(just\s+active|activated|used|refurbished|pre-?owned|open\s+box)\b/i;
+export const isOpened = (label: string) => OPENED.test(label);
 
 // ভার্সন চেনায় শুধু স্পেক আর ক্যাটালগের লেবেলের শব্দ; রং, region, সিম, ওয়ারেন্টি এক করে সবচেয়ে কম দাম
 function project(offer: PageOffer, keep: Set<string>): string {
@@ -69,7 +70,7 @@ function project(offer: PageOffer, keep: Set<string>): string {
 
 function fold(offers: PageOffer[], keep: Set<string>): PageOffer[] {
   const best = new Map<string, PageOffer>();
-  for (const offer of offers.filter((o) => !OPENED.test(o.label))) {
+  for (const offer of offers.filter((o) => !isOpened(o.label))) {
     const key = project(offer, keep);
     const prior = best.get(key);
     if (!prior || better(offer, prior)) best.set(key, { ...offer, key });

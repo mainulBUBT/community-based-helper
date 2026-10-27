@@ -1,4 +1,4 @@
-import { liveKeys, withKeys } from "./llm-keys";
+import { liveKeys, splitKeys, withKeys } from "./llm-keys";
 import { privateSettings } from "./settings";
 import { sleep } from "./sleep";
 
@@ -7,11 +7,15 @@ const retryable = (status: number) => status === 429 || status >= 500;
 // এক run এ সর্বোচ্চ এতবার AI ডাকা হয়; দোকান পাতা বদলালেও নিজের সাবস্ক্রিপশনের কোটা এক রাতে শেষ হয় না
 let calls = Number(process.env.LLM_CALL_LIMIT ?? 200);
 
-export async function llmReady(): Promise<boolean> {
-  if (calls <= 0) return false;
+// কেন AI ডাকা যাবে না: "off" সেটিংস নেই, "budget" এই run এর সীমা বা সব key এর আজকের কোটা শেষ; ডাকা গেলে null
+export async function llmBlocker(): Promise<"off" | "budget" | null> {
+  if (calls <= 0) return "budget";
   const { llm } = await privateSettings();
-  return Boolean(liveKeys(llm?.apiKey).length && llm?.baseUrl && llm.model);
+  if (!splitKeys(llm?.apiKey).length || !llm?.baseUrl || !llm.model) return "off";
+  return liveKeys(llm.apiKey).length ? null : "budget";
 }
+
+export const llmReady = async () => (await llmBlocker()) === null;
 
 export async function askJson<T>(system: string, user: string): Promise<T> {
   const { llm } = await privateSettings();

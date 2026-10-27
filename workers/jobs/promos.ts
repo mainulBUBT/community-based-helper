@@ -10,7 +10,9 @@ import { blockedNote, count } from "./summary";
 const PROMO_KINDS = new Set(["discount", "cashback", "emi", "gift", "bundle", "other"]);
 
 const SYSTEM =
-  "You read the offers page of a Bangladeshi online shop. Reply with JSON {\"promos\": [{\"kind\": \"discount\"|\"cashback\"|\"emi\"|\"gift\"|\"bundle\"|\"other\", \"text\": short Bangla sentence, \"scope\": what it applies to or null, \"endsOn\": \"YYYY-MM-DD\"|null}]}. Include every offer that is clearly current (any product: gadgets, appliances, food, beauty, etc.); skip ones whose dates have passed. Empty list if none.";
+  "You read the offers page of a Bangladeshi online shop. Reply with JSON {\"promos\": [{\"kind\": \"discount\"|\"cashback\"|\"emi\"|\"gift\"|\"bundle\"|\"other\", \"text\": short Bangla sentence, \"scope\": what it applies to or null, \"endsOn\": \"YYYY-MM-DD\"|null}]}. Include every offer that is clearly current (any product: gadgets, appliances, food, beauty, etc.); skip ones whose dates have passed. Only offers actually written in the text; never invent or guess. Empty list if none.";
+// এর কম লেখা মানে অফারগুলো পরে JavaScript দিয়ে আসে; তখন AI কে দিলে সে বানিয়ে লেখে
+const MIN_TEXT = 200;
 
 interface Promo {
   kind: string;
@@ -38,6 +40,10 @@ export async function readPromos(): Promise<string> {
     if (!store.promoUrl || !seller) continue;
     try {
       const text = mainText(await pageHtml(store, store.promoUrl)).slice(0, 8000);
+      if (text.length < MIN_TEXT) {
+        notes.push(`${store.name}: অফার পাতায় লেখা নেই (JavaScript দিয়ে আসে)`);
+        continue;
+      }
       const { promos = [] } = await askJson<{ promos?: Promo[] }>(SYSTEM, text);
       const existing = (await must(db().from("promos").select("text").eq("seller_id", seller.id))) as { text: string }[];
       const seen = new Set(existing.map((e) => sameText(e.text)));

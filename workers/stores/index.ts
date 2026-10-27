@@ -3,7 +3,7 @@ import { decode, stripTags } from "../lib/html";
 import { getJson, getText } from "../lib/http";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import { appleGadgetsVariants, chardikeVariants, dazzleVariants, gadgetAndGearVariants, hhsVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, startechVariants, sumashVariants, wooVariants } from "./parsers";
+import { appleGadgetsVariants, chardikeVariants, dazzleVariants, gadgetAndGearVariants, hhsVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, shopifyProduct, startechVariants, sumashVariants, wooVariants } from "./parsers";
 import { isReplica } from "../../src/utils/categories";
 import type { Condition, Listing, Store } from "./types";
 
@@ -31,6 +31,7 @@ function sitemapStore(config: {
   condition: Condition;
   promoUrl?: string;
   variants?: Store["variants"];
+  product?: Store["product"];
 }): Store {
   return {
     ...config,
@@ -409,6 +410,7 @@ export const stores: Store[] = [
     sitemap: "https://istockbd.com/sitemap.xml",
     path: "/products/",
     condition: "unofficial",
+    product: shopifyProduct,
   }),
   sitemapStore({
     id: "pcbstore",
@@ -428,6 +430,7 @@ export const stores: Store[] = [
     sitemap: "https://custommacbd.com/sitemap.xml",
     path: "/products/",
     condition: "unofficial",
+    product: shopifyProduct,
   }),
   sitemapStore({
     id: "globalbrand",
@@ -507,6 +510,7 @@ export const stores: Store[] = [
     sitemap: "https://www.ohsogo.com/sitemap.xml",
     path: "/products/",
     condition: "official",
+    product: shopifyProduct,
   }),
   sitemapStore({
     id: "chardike",

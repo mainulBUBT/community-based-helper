@@ -16,6 +16,8 @@ export function pageHtml(store: Store, url: string): Promise<string> {
 }
 
 export async function readPage(store: Store, url: string, useLlm = true): Promise<Page | null> {
+  const own = store.product ? await store.product(url) : null;
+  if (own?.rows.length) return { offers: pageOffers(own.rows), title: own.title, image: own.image };
   const html = await pageHtml(store, url);
   const image = metaContent(html, "og:image");
   const rows = store.variants ? await store.variants(html, url) : [];

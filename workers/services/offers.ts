@@ -128,16 +128,21 @@ export async function offerSlots(): Promise<Set<string>> {
   return new Set(rows.map((r) => slot(r.variant_id, r.seller_id, r.condition)));
 }
 
-// প্রতি ভ্যারিয়েন্টে এখনো পরিচিত দামগুলো — নতুন দোকানের দাম এর সাথে মিলিয়ে দেখা হয়
-export async function variantPrices(): Promise<Map<string, number[]>> {
-  const rows = await all<{ variant_id: string; price: number }>((from, to) =>
-    db().from("offers").select("variant_id, price").order("id").range(from, to),
+export interface KnownPrice {
+  price: number;
+  condition: string;
+}
+
+// প্রতি ভ্যারিয়েন্টে সাইটে দেখানো দামগুলো — নতুন দোকানের দাম এর সাথে মিলিয়ে দেখা হয়; লুকানো (সন্দেহজনক) দাম বাদ
+export async function variantPrices(): Promise<Map<string, KnownPrice[]>> {
+  const rows = await all<{ variant_id: string; price: number; condition: string }>((from, to) =>
+    db().from("offers").select("variant_id, price, condition").eq("published", true).order("id").range(from, to),
   );
-  const map = new Map<string, number[]>();
-  for (const row of rows) {
-    const list = map.get(row.variant_id);
-    if (list) list.push(row.price);
-    else map.set(row.variant_id, [row.price]);
+  const map = new Map<string, KnownPrice[]>();
+  for (const { variant_id, price, condition } of rows) {
+    const list = map.get(variant_id);
+    if (list) list.push({ price, condition });
+    else map.set(variant_id, [{ price, condition }]);
   }
   return map;
 }

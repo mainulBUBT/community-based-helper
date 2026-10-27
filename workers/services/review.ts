@@ -46,6 +46,16 @@ export async function reviewedUrls(sellerId: string): Promise<Set<string>> {
   return new Set(rows.map((r) => r.payload.url).filter(Boolean));
 }
 
+// AI কে শেখাতে: অ্যাডমিন সম্প্রতি কোন মিল ঠিক আর কোনটা ভুল বলেছেন (প্রত্যাখ্যানের guess টাই ভুল মিল)
+export async function decisionExamples(limit = 20): Promise<string[]> {
+  const rows = await must(
+    db().from("review_queue").select("status, payload").eq("kind", "match").neq("status", "pending").order("resolved_at", { ascending: false }).limit(limit),
+  );
+  return ((rows ?? []) as { status: string; payload: ReviewPayload }[])
+    .filter((r) => r.payload.listing && r.payload.guess)
+    .map((r) => `${JSON.stringify(r.payload.listing.slice(0, 120))} → ${r.payload.guess}: ${r.status === "approved" ? "correct" : "wrong"}`);
+}
+
 export async function approvedUnapplied() {
   const rows = await must(
     db().from("review_queue").select("id, kind, payload").eq("status", "approved").in("kind", ["match", "anomaly"]).is("applied_at", null),

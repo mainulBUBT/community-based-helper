@@ -2,6 +2,7 @@ import type { Page } from "../stores/page";
 import { toTaka } from "./price";
 import { withKeys } from "./llm-keys";
 import { privateSettings } from "./settings";
+import { sleep } from "./sleep";
 import { pageOffers } from "./variants";
 
 // Gemini-এর url_context টুল: পাতাটা Google-এর নিজের সার্ভার থেকে পড়ে দেয়। GitHub-এর datacenter IP যেসব
@@ -10,6 +11,10 @@ import { pageOffers } from "./variants";
 
 const NATIVE = "https://generativelanguage.googleapis.com/v1beta";
 let budget = Number(process.env.AI_READ_LIMIT ?? 120); // এক run এ এতবার AI পড়া, কোটা বাঁচাতে
+let lastError: string | null = null;
+
+// কেন AI দিয়েও পড়া গেল না, run এর বার্তায় দেখাতে
+export const aiReadNote = () => (lastError ? ` (AI: ${lastError})` : "");
 
 interface AiRow {
   label?: string | null;
@@ -24,7 +29,7 @@ async function gemini(url: string): Promise<string> {
   // url_context শুধু Gemini নিজের API তে আছে; OpenAI-compatible ঠিকানা দিলে এই পথ চলবে না
   if (!llm?.apiKey || !llm.model || !/generativelanguage\.googleapis\.com/.test(llm.baseUrl ?? "")) throw new Error("url_context চালাতে Gemini-র নিজের API লাগে");
   const model = llm.model;
-  const res = await withKeys(llm.apiKey, (key) => fetch(`${NATIVE}/models/${model}:generateContent`, {
+  const request = () => withKeys(llm.apiKey, (key) => fetch(`${NATIVE}/models/${model}:generateContent`, {
     method: "POST",
     headers: { "content-type": "application/json", "x-goog-api-key": key },
     body: JSON.stringify({
@@ -43,11 +48,28 @@ async function gemini(url: string): Promise<string> {
     }),
     signal: AbortSignal.timeout(150_000),
   }));
+  let res = await request();
+  // Gemini মাঝে মাঝে ব্যস্ত (503); একটু থেমে আরেকবার
+  if (res.status >= 500) {
+    await sleep(8000 + Math.random() * 4000);
+    res = await request();
+  }
   if (!res.ok) throw new Error(`Gemini HTTP ${res.status}`);
   const data = (await res.json()) as { candidates?: { content?: { parts?: { text?: string }[] }; urlContextMetadata?: unknown; url_context_metadata?: unknown }[] };
   const first = data.candidates?.[0];
   if (process.env.AI_READ_VERBOSE) console.error(`AI fetch: ${JSON.stringify(first?.urlContextMetadata ?? first?.url_context_metadata ?? null)}`);
   return (first?.content?.parts ?? []).map((part) => part.text ?? "").join("").trim();
+}
+
+// উত্তরে ব্যাখ্যার ভেতরেও JSON-এর মতো লেখা থাকতে পারে ("{\"rows\": []} দিতে বলা হয়েছে…"); যেখান থেকে পুরোটা পার্স হয় সেটাই
+function lastJson(text: string): unknown {
+  const end = text.lastIndexOf("}") + 1;
+  for (let start = text.indexOf("{"); start >= 0 && start < end; start = text.indexOf("{", start + 1)) {
+    try {
+      return JSON.parse(text.slice(start, end));
+    } catch {}
+  }
+  throw new Error("AI উত্তরে JSON নেই");
 }
 
 // দোকান GitHub-এর IP কে আটকে দিলে ডাকা হয়। পড়তে না পারলে null — তখন আগের মতো "দোকান আটকে রাখায় বাদ"।
@@ -57,8 +79,7 @@ export async function aiRead(url: string): Promise<Page | null> {
   try {
     const text = await gemini(url);
     if (process.env.AI_READ_VERBOSE) console.error(`AI উত্তর: ${text.slice(0, 300)}`);
-    const json = text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1);
-    const reply = JSON.parse(json) as { title?: string | null; image?: string | null; rows?: AiRow[] };
+    const reply = lastJson(text) as { title?: string | null; image?: string | null; rows?: AiRow[] };
     const rows = (reply.rows ?? [])
       .map((row) => ({
         options: row.label ? [String(row.label).trim()] : [],
@@ -71,7 +92,8 @@ export async function aiRead(url: string): Promise<Page | null> {
     if (!rows.length) return null;
     return { offers: pageOffers(rows), title: reply.title ?? null, image: reply.image ?? null };
   } catch (error) {
-    if (process.env.AI_READ_VERBOSE) console.error(`AI পড়া: ${error instanceof Error ? error.message : String(error)}`);
+    lastError = error instanceof Error ? error.message : String(error);
+    if (process.env.AI_READ_VERBOSE) console.error(`AI পড়া: ${lastError}`);
     return null;
   }
 }

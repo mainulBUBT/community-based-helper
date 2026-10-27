@@ -57,7 +57,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | 9 | অ্যাডমিন প্যানেল | ✅ | [09-admin-panel](features/09-admin-panel.md) |
 | 10 | লগইন | ⛔ | [10-auth](features/10-auth.md) |
 | 11 | ডেটাবেস (Supabase) | ⛔ | [11-database](features/11-database.md) |
-| 12 | দাম আনার worker আর cron | 🟡 | [12-workers-cron](features/12-workers-cron.md) |
+| 12 | দাম আনার worker আর cron | 🟡 মেলানো নির্ভুল করা হয়েছে (২৭ অক্টোবর: মডেল নম্বর, পণ্যের ধরন, Shopify, part number, AI বন্ধে আন্দাজ নয়) | [12-workers-cron](features/12-workers-cron.md) |
 | 13 | AI (OpenAI-compatible LLM) | 🟡 | [13-llm](features/13-llm.md) |
 | 14 | ভিজিটর গোনা আর লগ | 🟡 | [14-analytics-logs](features/14-analytics-logs.md) |
 | 15 | দোকানের জন্য Telegram bot | ⬜ | [15-telegram-bot](features/15-telegram-bot.md) |

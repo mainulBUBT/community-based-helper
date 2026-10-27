@@ -1,5 +1,5 @@
 import { all, db } from "../lib/db";
-import { aiRead } from "../lib/ai-page";
+import { aiRead, aiReadNote } from "../lib/ai-page";
 import { Disallowed, NotFound, StoreBlocked, message } from "../lib/errors";
 import { groupBy, pool } from "../lib/pool";
 import { candidates, single } from "../lib/variants";
@@ -68,7 +68,7 @@ async function applyPage(page: Page, group: OfferRow[], storeName: string, tally
 // প্রতিটা লিংক একবার পড়া হয়, ওই পাতার সব ভার্সনের দাম একসাথে; সবচেয়ে পুরনো যাচাই আগে।
 // অ্যাডমিনের হাতে বসানো দামও, যদি বিক্রেতার ওয়েবসাইট থাকে
 export async function refreshPrices(): Promise<string> {
-  const { applied, failed: notApplied } = await applyApproved();
+  const { applied, failed: notApplied, kept } = await applyApproved();
   const offers = await all<OfferRow>((from, to) =>
     db()
       .from("offers")
@@ -84,6 +84,7 @@ export async function refreshPrices(): Promise<string> {
   const outOfTime = deadline(25);
   const errors: string[] = [];
   const unmatched: string[] = [];
+  const blocked: OfferRow[][] = [];
 
   const pages = [...groupBy(rows, (row) => row.url).values()];
   const perStore = groupBy(pages, (group) => storeFor(group[0].url).id);
@@ -104,20 +105,7 @@ export async function refreshPrices(): Promise<string> {
               await markGone(group.map((row) => row.id));
               tally.checked += group.length;
             } else if (error instanceof StoreBlocked) {
-              // দোকান GitHub-এর IP আটকালে Gemini-র url_context (Google-এর সার্ভার) দিয়ে পড়ার চেষ্টা;
-              // না পড়া গেলে আগের মতো বাদ। পড়া ফলও নিচের একই যাচাই আর সীমার ভেতর দিয়ে যায়।
-              const page = await aiRead(url);
-              if (!page) {
-                tally.blocked += group.length;
-                return;
-              }
-              tally.ai += group.length;
-              try {
-                await applyPage(page, group, store.name, tally, unmatched);
-              } catch (inner) {
-                tally.failed += group.length;
-                errors.push(message(inner));
-              }
+              blocked.push(group);
             } else if (error instanceof Disallowed) {
               tally.blocked += group.length;
             } else {
@@ -131,6 +119,25 @@ export async function refreshPrices(): Promise<string> {
     ),
   );
 
+  // দোকান GitHub-এর IP আটকালে Gemini-র url_context (Google-এর সার্ভার) দিয়ে পড়ার চেষ্টা, বাকি সব শেষে
+  // একটা একটা করে, যাতে AI-র মিনিটের সীমায় না পড়ে। না পড়া গেলে আগের মতো বাদ; সময় ফুরালে পরের বার।
+  // পড়া ফলও একই যাচাই আর সীমার ভেতর দিয়ে যায়।
+  for (const group of blocked) {
+    if (outOfTime()) break;
+    const page = await aiRead(group[0].url);
+    if (!page) {
+      tally.blocked += group.length;
+      continue;
+    }
+    tally.ai += group.length;
+    try {
+      await applyPage(page, group, storeFor(group[0].url).name, tally, unmatched);
+    } catch (error) {
+      tally.failed += group.length;
+      errors.push(message(error));
+    }
+  }
+
   if (rows.length > 0 && tally.checked === 0) throw new Error(`একটা দামও আনা যায়নি${blockedNote()}; ${errors.slice(0, 3).join("; ")}`);
   const skipped = rows.length - tally.checked - tally.unmatched - tally.failed - tally.blocked;
   return [
@@ -139,11 +146,12 @@ export async function refreshPrices(): Promise<string> {
     tally.booking ? `${count(tally.booking, "বুকিং বা কিস্তির অংক মনে হয়েছে — আগের দামই রাখা হয়েছে")}` : "",
     tally.unmatched ? `${count(tally.unmatched, "ভার্সন পাতায় মেলেনি")}: ${unmatched.slice(0, 5).join(", ")}` : "",
     tally.failed ? `${count(tally.failed, "ব্যর্থ")}: ${errors.slice(0, 3).join("; ")}` : "",
-    tally.blocked ? `${count(tally.blocked, "দাম")} দোকান আটকে রাখায় বাদ` : "",
+    tally.blocked ? `${count(tally.blocked, "দাম")} দোকান আটকে রাখায় বাদ${aiReadNote()}` : "",
     tally.ai ? `${count(tally.ai, "দাম")} AI পড়া পাতা থেকে` : "",
     skipped > 0 ? `${count(skipped, "সময়ে কুলায়নি, পরের বার")}` : "",
     applied ? `${count(applied, "অনুমোদিত")} বসানো হয়েছে` : "",
     notApplied.length ? `${count(notApplied.length, "অনুমোদিত")} বসানো যায়নি: ${notApplied.slice(0, 3).join("; ")}` : "",
+    kept.length ? `${count(kept.length, "অনুমোদিত")} বসানো হয়নি, কারণ ওই ভার্সনে দোকানের অন্য লিংকের দাম আগে থেকেই আছে: ${kept.slice(0, 3).join("; ")}` : "",
   ]
     .filter(Boolean)
     .join(", ") + blockedNote();

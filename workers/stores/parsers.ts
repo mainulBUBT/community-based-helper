@@ -1,8 +1,9 @@
+import { StoreBlocked } from "../lib/errors";
 import { decode, stripTags } from "../lib/html";
 import { getJson, postForm } from "../lib/http";
 import { groupBy } from "../lib/pool";
 import { structuredQuote, toTaka } from "../lib/price";
-import type { ShopVariant } from "./types";
+import type { ShopProduct, ShopVariant } from "./types";
 
 type Json = Record<string, unknown>;
 
@@ -299,4 +300,31 @@ export function othobaVariants(html: string): ShopVariant[] {
   if (!quote) return [];
   const sale = toTaka(/"sale_price"\s*:\s*"([\d.]+)"/.exec(html)?.[1]);
   return variant([], sale && sale < quote.price ? sale : quote.price, quote.price, quote.inStock);
+}
+
+// Shopify: পাতার JSON-LD এ শুধু প্রথম ভার্সনের দাম; প্রতিটা ভার্সনের দাম (পয়সায়), স্টক, অপশন, নাম আর ছবি /products/<handle>.js এ।
+// না পেলে null — তখন আগের মতো পাতার JSON-LD। আটকে দিলে সেটা উপরে যায়, যাতে দোকান-আটকানোর নিয়ম চলে
+export async function shopifyProduct(url: string): Promise<ShopProduct | null> {
+  const { origin, pathname } = new URL(url);
+  const handle = /\/products\/([^/?#]+)/.exec(pathname)?.[1];
+  if (!handle) return null;
+  const data = await getJson(`${origin}/products/${handle}.js`).catch((error) => {
+    if (error instanceof StoreBlocked) throw error;
+    return null;
+  });
+  if (!isObject(data) || !Array.isArray(data.variants)) return null;
+  const names = (Array.isArray(data.options) ? data.options : []).map((option) => (isObject(option) ? option.name : option));
+  const taka = (cents: unknown) => (typeof cents === "number" ? cents / 100 : null);
+  const rows = data.variants.filter(isObject).flatMap((v) => {
+    // এক ভার্সনের পণ্যে Shopify নিজে "Default Title" বসায়, ওটা কোনো অপশন নয়
+    const values = [v.option1, v.option2, v.option3].map((value) => (value === "Default Title" ? null : value));
+    return variant(
+      names.map((name, i) => [name, values[i]] as [unknown, unknown]),
+      taka(v.price),
+      taka(v.compare_at_price),
+      typeof v.available === "boolean" ? v.available : null,
+    );
+  });
+  const image = typeof data.featured_image === "string" && data.featured_image ? data.featured_image.replace(/^\/\//, "https://") : null;
+  return { rows, title: typeof data.title === "string" ? data.title : null, image };
 }

@@ -56,24 +56,27 @@ function products(html: string): Record<string, unknown>[] {
   return found;
 }
 
-function fromJsonLd(html: string): Quote | null {
-  for (const product of products(html)) {
-    for (const raw of ([] as unknown[]).concat(product.offers ?? [])) {
-      const offer = raw as Record<string, unknown>;
-      if (!inTaka(offer.priceCurrency)) continue;
-      const price = toTaka(offer.price ?? offer.lowPrice);
-      if (!price) continue;
-      const spec = ([] as unknown[]).concat(offer.priceSpecification ?? []) as Record<string, unknown>[];
-      const oldPrice = toTaka(spec.find((s) => String(s.priceType ?? "").includes("StrikethroughPrice"))?.price);
-      return {
-        price,
-        oldPrice: oldPrice && oldPrice > price ? oldPrice : null,
-        inStock: stock(offer.availability),
-        title: typeof product.name === "string" ? product.name : null,
-        image: imageOf(product.image),
-        via: "json-ld",
-      };
-    }
+// পাতার প্রথম দাম-সহ Product টাই মূল পণ্য; পরেরগুলো সাধারণত পাশের "সম্পর্কিত পণ্য"
+function mainProduct(html: string): Record<string, unknown> | null {
+  return products(html).find((product) => product.offers != null) ?? null;
+}
+
+function fromJsonLd(product: Record<string, unknown>): Quote | null {
+  for (const raw of ([] as unknown[]).concat(product.offers ?? [])) {
+    const offer = raw as Record<string, unknown>;
+    if (!inTaka(offer.priceCurrency)) continue;
+    const price = toTaka(offer.price) ?? toTaka(offer.lowPrice);
+    if (!price) continue;
+    const spec = ([] as unknown[]).concat(offer.priceSpecification ?? []) as Record<string, unknown>[];
+    const oldPrice = toTaka(spec.find((s) => String(s.priceType ?? "").includes("StrikethroughPrice"))?.price);
+    return {
+      price,
+      oldPrice: oldPrice && oldPrice > price ? oldPrice : null,
+      inStock: stock(offer.availability),
+      title: typeof product.name === "string" ? product.name : null,
+      image: imageOf(product.image),
+      via: "json-ld",
+    };
   }
   return null;
 }
@@ -94,8 +97,18 @@ function fromOpenGraph(html: string): Quote | null {
   return { price, oldPrice: null, inStock: stock(metaContent(html, "product:availability")), title: null, via: "og" };
 }
 
+// মূল পণ্য নিজেই স্পষ্ট দাম ০ বললে (Global Brand এর "0.00", দাম ঘোষণা হয়নি) পাতার অন্য অংক পাশের পণ্যের — তখন দাম নেই।
+// দাম খালি বা অন্য মুদ্রায় হলে সেটা "দাম নেই" নয়, পাতার itemprop/og থেকে আগের মতো পড়া হয়
+export function declaresNoPrice(html: string): boolean {
+  const main = mainProduct(html);
+  if (!main || fromJsonLd(main)) return false;
+  const offers = ([] as unknown[]).concat(main.offers ?? []) as Record<string, unknown>[];
+  return offers.some((offer) => [offer.price, offer.lowPrice].some((value) => value !== undefined && value !== null && value !== "" && Number(value) === 0));
+}
+
 export function structuredQuote(html: string): Quote | null {
-  const quote = fromJsonLd(html) ?? fromItemprop(html) ?? fromOpenGraph(html);
+  const main = mainProduct(html);
+  const quote = (main ? fromJsonLd(main) : null) ?? (declaresNoPrice(html) ? null : (fromItemprop(html) ?? fromOpenGraph(html)));
   if (quote && !quote.image) quote.image = metaContent(html, "og:image");
   return quote;
 }

@@ -20,6 +20,13 @@ export interface ShopVariant {
   inStock: boolean | null;
 }
 
+// পাতার HTML ছাড়াই দোকানের নিজের পণ্য-ডেটা থেকে সব ভার্সন, নাম আর ছবি
+export interface ShopProduct {
+  rows: ShopVariant[];
+  title: string | null;
+  image: string | null;
+}
+
 export interface Store {
   id: string;
   name: string;
@@ -31,6 +38,8 @@ export interface Store {
   condition: Condition;
   parse?: (html: string) => Quote | null;
   variants?: (html: string, url: string) => ShopVariant[] | Promise<ShopVariant[]>;
+  // থাকলে আগে এটা (Shopify এর .js); null বা ভার্সন খালি হলে HTML পথে — এতে প্রতি পাতায় দুবার অনুরোধ লাগে না
+  product?: (url: string) => Promise<ShopProduct | null>;
   // listing ব্র্যান্ডের ক্যাটাগরি থেকে এলে "brand"; না দিলে পুরো sitemap
   listsBy?: "brand";
   discover: (products: Pick<CatalogProduct, "name" | "brand">[]) => Promise<Listing[]>;

@@ -38,6 +38,14 @@ async function loadReview() {
   return { items, recent, context: { products: catalog.products, offers: catalog.offers, sellers, anomalyVariant } satisfies Context };
 }
 
+// worker এর পাঠানো পাতার অপশন: "16GB / 512GB: 290000" বা "...: 25000 (out of stock)"
+const OPTION_LINE = /^(.*): (\d+)( \(out of stock\))?$/;
+const pageOptions = (text?: string) =>
+  (text ?? "").split("\n").flatMap((line) => {
+    const m = OPTION_LINE.exec(line);
+    return m ? [{ line, price: m[2], out: Boolean(m[3]) }] : [];
+  });
+
 const productOf = (products: Product[], variantId?: string) => products.find((p) => p.variants.some((v) => v.id === variantId));
 
 // অফিসিয়াল দাম আর এই দোকান বাদে বাকি দোকানের দামের সীমা: পাশে রেখে বোঝা যায় নতুন অংকটা বিশ্বাসযোগ্য কিনা
@@ -92,12 +100,20 @@ function MatchCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context; onDo
   const { t, num, ago } = useAdminI18n();
   const { busy, run } = useAdminAction();
   const p = item.payload;
-  const product = productOf(ctx.products, p.variantId);
-  const [variantId, setVariantId] = useState(p.variantId);
+  // ভার্সন ছাড়া আসা আইটেম (AI বন্ধ ছিল, বা ক্যাটালগে ভার্সন নেই): পণ্য চেনা যায় productId দিয়ে
+  const product = productOf(ctx.products, p.variantId) ?? ctx.products.find((x) => x.id === p.productId);
+  const [variantId, setVariantId] = useState(p.variantId ?? "");
   const label = product?.variants.find((v) => v.id === variantId)?.label ?? "";
+  // "ক্যাটালগে নেই" আইটেমে সবচেয়ে সস্তা অপশনের দাম অন্য ভার্সনে বসে যেত, তাই অ্যাডমিন অপশনটা নিজে বাছেন
+  const options = pageOptions(p.options);
+  const [option, setOption] = useState("");
+  const picked = p.newVariant && option !== "" ? options[Number(option)] : undefined;
+  // দোকানের এই ভার্সনে অন্য লিংকের দাম আগে থেকে থাকলে অনুমোদন সেটা মুছে দিত
+  const taken = ctx.offers.some((o) => o.variantId === variantId && o.sellerId === p.sellerId && o.condition === (p.condition || "official") && o.url !== p.url);
 
   async function decide(approved: boolean) {
     const patch: Record<string, string> = approved && variantId !== p.variantId ? { variantId, guess: `${product?.name ?? ""} ${label}`.trim() } : {};
+    if (approved && picked) Object.assign(patch, { price: picked.price, oldPrice: "", inStock: picked.out ? "false" : "", region: "" });
     if (await run(() => resolveReview(item, approved, patch), approved ? t.admin.review.approved : t.admin.review.rejected)) onDone();
   }
 
@@ -108,17 +124,40 @@ function MatchCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context; onDo
           <span className="text-xs font-semibold text-dim">{t.admin.review.shopSide}</span>
           <p className="font-semibold">{p.listing}</p>
           <p className="text-sm">
-            {p.seller}: <strong>{taka(p.price)}</strong>
+            {p.seller}: <strong>{taka(picked?.price ?? p.price)}</strong>
             {p.oldPrice && <span className="text-dim">, {t.admin.review.oldPrice(taka(p.oldPrice))}</span>}
             {p.inStock === "false" && <span className="text-danger">, {t.admin.review.outOfStock}</span>}
           </p>
+          {p.newVariant && options.length > 0 ? (
+            <Select label={t.admin.review.pickOption} value={option} onChange={(e) => setOption(e.target.value)}>
+              <option value="">{t.admin.review.choose}</option>
+              {options.map((o, i) => (
+                <option key={o.line} value={String(i)}>
+                  {o.line}
+                </option>
+              ))}
+            </Select>
+          ) : p.options && (
+            <div className="text-[13px]">
+              <span className="text-dim">{t.admin.review.pageOptions}</span>
+              <ul className="mt-0.5">
+                {p.options.split("\n").map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+            </div>
+          )}
           <ShopLink url={p.url} />
         </div>
         <div className="flex flex-col gap-2 rounded-lg border border-line-soft p-3">
-          <span className="text-xs font-semibold text-dim">{t.admin.review.ourSide}</span>
+          <span className="flex items-center gap-2 text-xs font-semibold text-dim">
+            {t.admin.review.ourSide}
+            {p.newVariant && <Badge tone="gold">{t.admin.review.newVariant}</Badge>}
+          </span>
           <p className="font-semibold">{product ? `${product.brand} ${product.name}` : p.guess}</p>
           {product && (
             <Select label={t.admin.review.pickVariant} value={variantId} onChange={(e) => setVariantId(e.target.value)}>
+              {!p.variantId && <option value="">{t.admin.review.choose}</option>}
               {product.variants.map((v) => (
                 <option key={v.id} value={v.id}>
                   {v.label}
@@ -127,6 +166,12 @@ function MatchCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context; onDo
             </Select>
           )}
           <PriceContext ctx={ctx} variantId={variantId} sellerId={p.sellerId} />
+          {taken && <p className="text-[13px] font-semibold text-danger">{t.admin.review.taken}</p>}
+          {p.newVariant && product && (
+            <Link href={`/admin/products/edit/?id=${product.id}`} className="w-fit text-sm font-semibold text-brand hover:underline">
+              {t.admin.review.addVariant}
+            </Link>
+          )}
         </div>
       </div>
       <p className="flex flex-wrap items-center gap-2 text-[13px] text-dim">
@@ -135,7 +180,7 @@ function MatchCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context; onDo
         <span className="text-faint">{t.admin.review.arrived(ago(item.createdAt))}</span>
       </p>
       <div className="flex flex-wrap gap-3">
-        <Choice tone="yes" label={t.admin.review.matchYes} hint={t.admin.review.matchYesHint} disabled={busy || !variantId} onClick={() => decide(true)} />
+        <Choice tone="yes" label={t.admin.review.matchYes} hint={t.admin.review.matchYesHint} disabled={busy || !variantId || taken || (Boolean(p.newVariant) && !picked)} onClick={() => decide(true)} />
         <Choice tone="no" label={t.admin.review.matchNo} hint={t.admin.review.matchNoHint} disabled={busy} onClick={() => decide(false)} />
       </div>
     </li>
