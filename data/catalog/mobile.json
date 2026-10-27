@@ -6590,6 +6590,4094 @@
      "checkedAt": "2026-10-26"
     }
    ]
+  },
+  {
+   "brand": "Samsung",
+   "name": "Galaxy S26",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 130299
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-s26/samsung-galaxy-s26-cobalt-violet-official-03-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3500/s26_Cobalt_Violet_-_Card.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3428/s26_white.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/samsung-galaxy-s26",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-s26",
+     "price": 94499,
+     "oldPrice": 125000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-s26-official",
+     "price": 132599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-s26",
+     "price": 94499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-s26-official",
+     "price": 130299,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-s26-official",
+     "price": 130299,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-s26",
+     "price": 89999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Vietnam",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/samsung-galaxy-s26",
+     "price": 132599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/galaxy-s26/",
+     "price": 92000,
+     "oldPrice": 93000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/samsung-galaxy-s26",
+     "price": 130299,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Samsung",
+   "name": "Galaxy S26 Plus",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 175999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3546/Galaxy_S26_Plus_-_Black.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3429/s26_black.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S26+aaa-2169.png"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/samsung-galaxy-s26-plus",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-s26-plus",
+     "price": 117999,
+     "oldPrice": 130000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-s26-plus-official",
+     "price": 175999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-s26-plus",
+     "price": 106999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-s26-plus",
+     "price": 122000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-s26-plus",
+     "price": 99999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Vietnam",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-s26-plus",
+     "price": 107999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Vietnam",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/samsung-galaxy-s26-plus/",
+     "price": 174999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Samsung",
+   "name": "Galaxy S26 Ultra",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 202999
+    },
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 232499
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-s26-ultra/galaxy-s26-ultra-black-official-04-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3387/Galaxy_S26_Ultra_-_White.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3411/Galaxy_S26_Ultra_-_Black.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/samsung-galaxy-s26-ultra",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/samsung-galaxy-s26-ultra",
+     "price": 116499,
+     "oldPrice": 159999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/samsung-galaxy-s26-ultra",
+     "price": 138499,
+     "oldPrice": 200000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/samsung-galaxy-s26-ultra-official",
+     "price": 202999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/samsung-galaxy-s26-ultra-official",
+     "price": 232499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-s26-ultra-official",
+     "price": 203999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-s26-ultra-official",
+     "price": 232499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-s26-ultra-official",
+     "price": 202999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-s26-ultra-official",
+     "price": 232499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-s26-ultra",
+     "price": 117499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Vietnam",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-s26-ultra",
+     "price": 138999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Vietnam",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/samsung-galaxy-s26-ultra-12gb-512gb",
+     "price": 232499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/samsung-galaxy-s26-ultra-unofficial/",
+     "price": 166999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/samsung-galaxy-s26-ultra/",
+     "price": 202999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/samsung-galaxy-s26-ultra/",
+     "price": 132499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/galaxy-s26-ultra/",
+     "price": 115990,
+     "oldPrice": 120000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/galaxy-s26-ultra/",
+     "price": 138000,
+     "oldPrice": 150000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/samsung-galaxy-s26-ultra",
+     "price": 199999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/samsung-galaxy-s26-ultra",
+     "price": 228999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Samsung",
+   "name": "Galaxy S26 FE",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 109999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4545/Galaxy_S26_FE_-_Graphite.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4733/Galaxy_S26_FE_-_Graphite.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Samsung-Galaxy-S26-FE3-8050.png"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/samsung-galaxy-s26-fe",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-s26-fe",
+     "price": 76499,
+     "oldPrice": 85000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-s26-fe-official",
+     "price": 109999,
+     "oldPrice": 115000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-s26-fe",
+     "price": 76499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/samsung-galaxy-s26-fe-price-in-bangladesh",
+     "price": 78990,
+     "oldPrice": 89990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-s26-fe-official",
+     "price": 109999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-s26-fe",
+     "price": 77999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Vietnam",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/samsung-galaxy-s26-fe",
+     "price": 109999,
+     "oldPrice": 121999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/galaxy-s26-fe/",
+     "price": 82500,
+     "oldPrice": 85000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Samsung",
+   "name": "Galaxy Z Fold8",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4296/Galaxy_Z_Fold_8_-_Cream.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-Z-Fold-8-lavender-4296.jpg",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/116228/Samsung-Galaxy-Z-Fold-8-price-in-bangladesh-(4).jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/samsung-galaxy-z-fold8",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-z-fold-8",
+     "price": 171999,
+     "oldPrice": 215000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-z-fold-8",
+     "price": 184999,
+     "oldPrice": 245000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-z-fold8",
+     "price": 169999,
+     "oldPrice": 175000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-z-fold8",
+     "price": 185999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/samsung-galaxy-z-fold-8-price-in-bangladesh",
+     "price": 168990,
+     "oldPrice": 229990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/samsung-galaxy-z-fold-8-price-in-bangladesh",
+     "price": 179990,
+     "oldPrice": 249990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-z-fold-8",
+     "price": 169999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-z-fold-8",
+     "price": 189999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/galaxy-z-fold8/",
+     "price": 179500,
+     "oldPrice": 195000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Samsung",
+   "name": "Galaxy Z Flip8",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4294/Galaxy_Z_Flip_8_-_Graphite.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-Z-Flip8-Graphite-6358.png",
+    "https://images.kryinternational.com/uploads/samsung-galaxy-z-flip-8-g.jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/samsung-galaxy-z-flip8",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-z-flip-8",
+     "price": 105999,
+     "oldPrice": 149999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-z-flip8",
+     "price": 106499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/samsung-galaxy-z-flip-8",
+     "price": 109999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Samsung",
+   "name": "Galaxy A37 5G",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "6GB / 128GB",
+     "attributes": {
+      "ram": "6GB",
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 59000
+    },
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 68999
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-a37/galaxy-a37-awesome-charcoal-official-02-1200x630.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A37-5G-3818.png",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A37-5Ga-7559.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/samsung-galaxy-a37",
+   "offers": [
+    {
+     "variant": "6GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-a37-5g",
+     "price": 36999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-a37-5g",
+     "price": 38999,
+     "oldPrice": 40500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-a37-5g",
+     "price": 43999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-a37-5g",
+     "price": 43499,
+     "oldPrice": 45500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-a37-5g-official",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-a37-5g-official",
+     "price": 68999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/samsung-galaxy-a37-5g-price-in-bangladesh",
+     "price": 35990,
+     "oldPrice": 39490,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/samsung-galaxy-a37-5g-price-in-bangladesh",
+     "price": 38790,
+     "oldPrice": 45990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/samsung-galaxy-a37-5g-price-in-bangladesh",
+     "price": 41990,
+     "oldPrice": 49990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/samsung-galaxy-a37-5g-price-in-bangladesh",
+     "price": 42990,
+     "oldPrice": 49990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/galaxy-a37-5g-8gb-256gb",
+     "price": 68999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/samsung-galaxy-a37-5g/",
+     "price": 40999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/samsung-galaxy-a37-5g/",
+     "price": 44000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/samsung-galaxy-a37",
+     "price": 58000,
+     "oldPrice": 60499,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/samsung-galaxy-a37",
+     "price": 66000,
+     "oldPrice": 68499,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Samsung",
+   "name": "Galaxy A27 5G",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "6GB / 128GB",
+     "attributes": {
+      "ram": "6GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 46500
+    },
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 51850
+    },
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-a27/galaxy-a27-5g-10-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4512/Galaxy_A27_-_Black.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A27-5G-Light-Green-1562.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/samsung-galaxy-a27",
+   "offers": [
+    {
+     "variant": "6GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-a27-5g",
+     "price": 32999,
+     "oldPrice": 35000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-a27-5g",
+     "price": 36499,
+     "oldPrice": 41000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/galaxy-a27-5g",
+     "price": 36999,
+     "oldPrice": 43000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-a27-5g",
+     "price": 36999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-a27-5g-official",
+     "price": 48799,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/galaxy-a27-5g-official",
+     "price": 52999,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/samsung-galaxy-a27-5g-official-price-in-bangladesh",
+     "price": 46390,
+     "oldPrice": 48799,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/samsung-galaxy-a27-5g-official-price-in-bangladesh",
+     "price": 50390,
+     "oldPrice": 52999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/samsung-galaxy-a27-5g-price-in-bangladesh",
+     "price": 32990,
+     "oldPrice": 36990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/galaxy-a27-5g-8gb-128gb",
+     "price": 52999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/samsung-galaxy-a27",
+     "price": 46500,
+     "oldPrice": 48099,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/samsung-galaxy-a27",
+     "price": 50700,
+     "oldPrice": 52299,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Google",
+   "name": "Pixel 11 Pro",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4419/Pixel_11_Pro_-_Fog.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Pixel-11-Pro-obsedian-6119.jpg",
+    "https://images.kryinternational.com/uploads/google-pixel-11-pro-o.png"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/google-pixel-11-pro",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/pixel-11-pro",
+     "price": 134999,
+     "oldPrice": 165000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/pixel-11-pro",
+     "price": 130999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/google-pixel-11-pro",
+     "price": 131999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Canada",
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Google",
+   "name": "Pixel 11 Pro XL",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4420/Pixel_11_Pro_XL_-_Obsidian.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/PIXEL-11PRO-XL-6-3542.png",
+    "https://images.kryinternational.com/uploads/google-pixel-11-pro-xl-ob.png"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/google-pixel-11-pro-xl",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/pixel-11-pro-xl",
+     "price": 134999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/google-pixel-11-pro-xl",
+     "price": 131999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Canada",
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Google",
+   "name": "Pixel 11 Pro Fold",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4421/Pixel_11_Pro_Fold_-_Obsidian.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Pixel-11-Pro-Fold2-9454.png",
+    "https://images.kryinternational.com/uploads/pixel-11-pro-fold-7434.webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/google-pixel-11-pro-fold",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/pixel-11-pro-fold",
+     "price": 199999,
+     "oldPrice": 240000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/pixel-11-pro-fold",
+     "price": 204999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/google-pixel-11-pro-fold",
+     "price": 214999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Canada",
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Xiaomi",
+   "name": "17T",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 79999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": 79990
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/xiaomi/xiaomi-17t/xiaomi-17t-03-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4233/Xiaomi_17T_-_Opal_White.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4117/Xiaomi_17T_-_Violet.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/xiaomi-17t",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/xiaomi-17t",
+     "price": 69999,
+     "oldPrice": 79999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/xiaomi-17t",
+     "price": 69999,
+     "oldPrice": 89999,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/xiaomi-17t-official",
+     "price": 79999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-17t",
+     "price": 53990,
+     "oldPrice": 79990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "INT Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-17t",
+     "price": 62990,
+     "oldPrice": 99990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "INT Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-17t-price-in-bangladesh",
+     "price": 68888,
+     "oldPrice": 84990,
+     "inStock": true,
+     "condition": "official",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-17t-price-in-bangladesh",
+     "price": 79990,
+     "oldPrice": 85000,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/xiaomi-17t",
+     "price": 61999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/xiaomi-17t",
+     "price": 64999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/xiaomi-17t-official",
+     "price": 79999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/xiaomi-17t-official/",
+     "price": 79999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/xiaomi-17t/",
+     "price": 62500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/xiaomi-17t/",
+     "price": 62999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Xiaomi",
+   "name": "17T Pro",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4234/Deep_Blue.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/109822/Xiaomi-17T-Pro-price-in-bangladesh-(3).jpg",
+    "https://images.kryinternational.com/uploads/xiaomi-17t-pro-b.jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/xiaomi-17t-pro",
+   "offers": [
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/xiaomi-17t-pro",
+     "price": 89999,
+     "oldPrice": 95000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-17t-pro-price-in-bangladesh",
+     "price": 74990,
+     "oldPrice": 119990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-17t-pro-price-in-bangladesh",
+     "price": 81990,
+     "oldPrice": 122990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/xiaomi-17t-pro",
+     "price": 81999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/xiaomi-17t-pro",
+     "price": 85999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Xiaomi",
+   "name": "POCO F8 Pro",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/2026-10/xiaomi-poco-f8-pro-price-in-bangladesh-1-9eaeb1d1-b4ee-4a88-8e12-d9138a49a1f1.jpg",
+    "https://images.kryinternational.com/uploads/poco-f8-pro.jpeg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/xiaomi-poco-f8-pro",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-poco-f8-pro-price-in-bangladesh",
+     "price": 65990,
+     "oldPrice": 75990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/poco-f8-pro",
+     "price": 70999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/xiaomi-poco-f8-pro/",
+     "price": 76000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Xiaomi",
+   "name": "POCO X8 Pro",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3630/Poco_X8_Pro_-_Black.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/104379/Xiaomi-Poco-X8-Pro-price-in-bangladesh-(4).jpg",
+    "https://images.kryinternational.com/uploads/poco-x8-pro-webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/xiaomi-poco-x8-pro",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/poco-x8-pro",
+     "price": 43999,
+     "oldPrice": 46000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-poco-x8-pro-price-in-bangladesh",
+     "price": 50790,
+     "oldPrice": 55990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-poco-x8-pro-price-in-bangladesh",
+     "price": 59390,
+     "oldPrice": 63990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/poco-x8-pro",
+     "price": 54999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/poco-x8-pro",
+     "price": 63499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "OnePlus",
+   "name": "15",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 97499
+    },
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "16GB / 512GB",
+     "attributes": {
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 110499
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3100/OnePlus_15_-_Sand_Storm.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3207/OnePlus_15_-_Infinite_Black.webp",
+    "https://images.kryinternational.com/uploads/oneplus-15-b.png"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/oneplus-15",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-15",
+     "price": 79999,
+     "oldPrice": 84000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-15",
+     "price": 89499,
+     "oldPrice": 95000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-15",
+     "price": 109999,
+     "oldPrice": 120000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-15-official",
+     "price": 97999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-15-official",
+     "price": 111999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-15",
+     "price": 95999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-15",
+     "price": 103999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-15",
+     "price": 107999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-15-official-",
+     "price": 96999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-15-official-",
+     "price": 108999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oneplus-15-2/",
+     "price": 79999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oneplus-15-2/",
+     "price": 117000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/oneplus-15/",
+     "price": 104000,
+     "oldPrice": 110000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/oneplus-15/",
+     "price": 107000,
+     "oldPrice": 110000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "OnePlus",
+   "name": "15R",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 67999
+    },
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 73999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3663/OnePlus_15R_-_Mint_Breeze.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3445/OnePlus_15R_-_Charcoal_Black.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/OnePlus-15R---5Ga-3185.png"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/oneplus-15r",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-15r",
+     "price": 80999,
+     "oldPrice": 85000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-15r-official",
+     "price": 67999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-15r-official",
+     "price": 73999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oneplus-15r",
+     "price": 67500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oneplus-15r",
+     "price": 73500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oneplus-15r/",
+     "price": 63999,
+     "oldPrice": 70999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oneplus-15r/",
+     "price": 67490,
+     "oldPrice": 77999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "OnePlus",
+   "name": "Nord 6",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 62999
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 69499
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4235/OnePlus_Nord_6_-_Pitch_Black.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3995/OnePlus_Nord_6_-_Fresh_Mint.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/OnePlus-Nord-6-5Gaa-3170.png"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/oneplus-nord-6",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-nord-6",
+     "price": 57499,
+     "oldPrice": 59000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-nord-6",
+     "price": 62999,
+     "oldPrice": 66000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-nord-6-official",
+     "price": 62999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-nord-6-official",
+     "price": 69499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oneplus-nord-6",
+     "price": 59499,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oneplus-nord-6",
+     "price": 61500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oneplus-nord-6",
+     "price": 63000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-nord-6",
+     "price": 57999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-nord-6",
+     "price": 73999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/oneplus-nord-6/",
+     "price": 57500,
+     "oldPrice": 60000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "OnePlus",
+   "name": "Nord CE6",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "128GB",
+     "attributes": {
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4236/OnePlus_Nord_CE6_-_Fresh_Blue.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/OnePlus-Nord-CE6f-5370.png",
+    "https://images.kryinternational.com/uploads/oneplus-nord-ce6-b.webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/oneplus-nord-ce6",
+   "offers": [
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-nord-ce6",
+     "price": 46999,
+     "oldPrice": 52000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oneplus-nord-ce6",
+     "price": 42999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oneplus-nord-ce6",
+     "price": 48999,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-nord-ce6",
+     "price": 45999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-nord-ce6",
+     "price": 48999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "128GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oneplus-nord-ce6/",
+     "price": 40500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "128GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/oneplus-nord-ce6/",
+     "price": 39500,
+     "oldPrice": 41000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/oneplus-nord-ce6/",
+     "price": 42500,
+     "oldPrice": 45000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Vivo",
+   "name": "X300",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2883/Pure_Black_-_Card.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Vivo-X300---CNd-1534.png",
+    "https://images.kryinternational.com/uploads/vivo-x300.jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/vivo-x300",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-x300",
+     "price": 83999,
+     "oldPrice": 96000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/vivo-x300",
+     "price": 97500,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-x300",
+     "price": 84999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/vivo-x300/",
+     "price": 81000,
+     "oldPrice": 82000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/vivo-x300/",
+     "price": 82500,
+     "oldPrice": 85000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Vivo",
+   "name": "X300 Pro",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "16GB / 512GB",
+     "attributes": {
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3033/Vivo_X300_Pro_-_Dune_Brown.webp",
+    "https://images.kryinternational.com/uploads/vivo-x300-pro.jpg",
+    "https://assets.gadgetandgear.com/upload/media/vivo-x300-pro-1868.jpeg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/vivo-x300-pro",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-x300-pro",
+     "price": 97499,
+     "oldPrice": 100000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-x300-pro",
+     "price": 131999,
+     "oldPrice": 145000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-x300-pro",
+     "price": 99999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-x300-pro",
+     "price": 109999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/vivo-x300-pro/",
+     "price": 94990,
+     "oldPrice": 107990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/vivo-x300-pro/",
+     "price": 108500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/vivo-x300-pro/",
+     "price": 99000,
+     "oldPrice": 102000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/vivo-x300-pro/",
+     "price": 114000,
+     "oldPrice": 115000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Vivo",
+   "name": "X300 Ultra",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "16GB / 512GB",
+     "attributes": {
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3825/Vivo_X300_Ultra_-_Green.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/VIVO-X300-Ultrafg-7760.png",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/105497/vivo-X300-Ultra-price-in-bangladesh-(3).jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/vivo-x300-ultra",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-x300-ultra",
+     "price": 140999,
+     "oldPrice": 143000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-x300-ultra",
+     "price": 145999,
+     "oldPrice": 155000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/vivo-x300-ultra",
+     "price": 130499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/vivo-x300-ultra",
+     "price": 140500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/vivo-x300-ultra",
+     "price": 162999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/vivo-x300-ultra-price-in-bangladesh",
+     "price": 131990,
+     "oldPrice": 149990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-x300-ultra",
+     "price": 133999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-x300-ultra",
+     "price": 139999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-x300-ultra",
+     "price": 145999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/vivo-x300-ultra/",
+     "price": 130000,
+     "oldPrice": 135000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/vivo-x300-ultra/",
+     "price": 140000,
+     "oldPrice": 145000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Vivo",
+   "name": "X300 FE",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4005/Vivo_X300_FE_-_Radiant_White.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Vivo-X300Fe3-4969.png",
+    "https://images.kryinternational.com/uploads/vivo-x300-fe-jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/vivo-x300-fe",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-x300-fe",
+     "price": 82999,
+     "oldPrice": 87000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/vivo-x300-fe",
+     "price": 89000,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/vivo-x300-fe",
+     "price": 93000,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-x300-fe",
+     "price": 87499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-x300-fe",
+     "price": 91499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/vivo-x300-fe/",
+     "price": 87999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/vivo-x300-fe/",
+     "price": 90999,
+     "oldPrice": 94500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Vivo",
+   "name": "V70",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 72999
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 87999
+    },
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 87999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3433/Vivo_V70_-_Sandalwood_Brown_Passion_Red.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3651/Gray.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/vivo-V70---Globalad-6497.png"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/vivo-v70",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-v70",
+     "price": 62999,
+     "oldPrice": 67000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-v70",
+     "price": 66499,
+     "oldPrice": 75000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-v70-official",
+     "price": 72999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-v70-official",
+     "price": 87999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/vivo-v70",
+     "price": 63700,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/vivo-v70",
+     "price": 68500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/vivo-v70",
+     "price": 64500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-v70",
+     "price": 65999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-v70",
+     "price": 69999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-v70-official",
+     "price": 72999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-v70-official",
+     "price": 87999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/vivo-v70-official/",
+     "price": 72999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/vivo-v70-official/",
+     "price": 87999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/vivo-v70/",
+     "price": 62800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/vivo-v70/",
+     "price": 69999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "OPPO",
+   "name": "Find X9",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "16GB / 512GB",
+     "attributes": {
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4447/find_x9_-_black.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/OPPO-Find-X91-9104.png",
+    "https://images.kryinternational.com/uploads/oppo-find-x9.jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/oppo-find-x9",
+   "offers": [
+    {
+     "variant": "16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oppo-find-x9",
+     "price": 99999,
+     "oldPrice": 120000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oppo-find-x9",
+     "price": 112000,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oppo-find-x9",
+     "price": 82999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oppo-find-x9/",
+     "price": 96499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "OPPO",
+   "name": "Find X9 Pro",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "16GB / 512GB",
+     "attributes": {
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3118/findx9pro.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Oppo-Find-X9-Pro-5Gaaa-9611.png",
+    "https://images.kryinternational.com/uploads/oppo-find-x9-pro-red.jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/oppo-find-x9-pro",
+   "offers": [
+    {
+     "variant": "16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oppo-find-x9-pro",
+     "price": 131999,
+     "oldPrice": 140000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oppo-find-x9-pro",
+     "price": 118000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oppo-find-x9-pro/",
+     "price": 142499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "OPPO",
+   "name": "Find X9 Ultra",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3812/Oppo_Find_X9_Ultra_-_Tundra_Umber.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Oppo-Find-X9-Ultra---INT-4839.png",
+    "https://images.kryinternational.com/uploads/oppo-find-x9-ultra-b-jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/oppo-find-x9-ultra",
+   "offers": [
+    {
+     "variant": "12GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oppo-find-x9-ultra",
+     "price": 165999,
+     "oldPrice": 185000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oppo-find-x9-ultra",
+     "price": 166500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oppo-find-x9-ultra",
+     "price": 164999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "OPPO",
+   "name": "Reno15",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": 59999
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3320/Oppo_Reno_15_-_Glacier_White.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Oppo-Reno15-5Ga-4888.png",
+    "https://images.kryinternational.com/uploads/oppo-reno15-blue.jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/oppo-reno15",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oppo-reno-15",
+     "price": 51999,
+     "oldPrice": 62000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oppo-reno-15",
+     "price": 55999,
+     "oldPrice": 65000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oppo-reno15",
+     "price": 49700,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oppo-reno15",
+     "price": 59500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oppo-reno15",
+     "price": 62000,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oppo-reno15",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oppo-reno15",
+     "price": 66499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oppo-reno15-f-official",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oppo-reno15/",
+     "price": 54999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oppo-reno15/",
+     "price": 61999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oppo-reno15/",
+     "price": 66500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "OPPO",
+   "name": "Reno15 Pro",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://images.kryinternational.com/uploads/oppo-reno15-pro-gold-i.jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/oppo-reno15-pro",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oppo-reno15-pro",
+     "price": 68999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oppo-reno15-pro",
+     "price": 70999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oppo-reno15-pro/",
+     "price": 68999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oppo-reno15-pro/",
+     "price": 72000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Realme",
+   "name": "16 Pro",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3322/Realme_16_Pro_-_Orchid_Purple.webp",
+    "https://images.kryinternational.com/uploads/realme-16-pro-pur.jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/realme-16-pro",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/realme-16-pro",
+     "price": 44499,
+     "oldPrice": 48000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/realme-16-pro",
+     "price": 57999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/realme-16-pro/",
+     "price": 51999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Honor",
+   "name": "Magic8 Pro",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": 149999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3190/Honor_Magic_8_Pro_-_Sky_Cyan.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Honor-Magic8-Pro-5G-8312.png",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/116287/Honor-Magic-8-Pro-Official-price-in-bangladesh-(1).jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/honor-magic8-pro",
+   "offers": [
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-magic-8-pro",
+     "price": 115999,
+     "oldPrice": 180000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-magic8-pro",
+     "price": 114000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/honor-magic-8-pro",
+     "price": 120999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-magic-8-pro",
+     "price": 139999,
+     "oldPrice": 159999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/honor-magic8-pro/",
+     "price": 115999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/honor-magic8-pro-official/",
+     "price": 159999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Nothing",
+   "name": "Phone 4a",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3543/Nothing_Phone_4a_-_White.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Nothing-Phone-(4a)as-9980.png",
+    "https://images.kryinternational.com/uploads/nothing-phone-4a-webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/nothing-phone-4a",
+   "offers": [
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/nothing-phone-4a",
+     "price": 47999,
+     "oldPrice": 50000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/nothing-phone-4a",
+     "price": 51499,
+     "oldPrice": 55000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/nothing-phone-4a",
+     "price": 53999,
+     "oldPrice": 60000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/nothing-phone-4a",
+     "price": 46999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/nothing-phone-4a",
+     "price": 50999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/nothing-phone-4a",
+     "price": 53999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/nothing-phone-4a",
+     "price": 48499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/nothing-phone-4a",
+     "price": 52999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/nothing-phone-4a",
+     "price": 54999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/nothing-phone-4a/",
+     "price": 47500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/nothing-phone-4a/",
+     "price": 49500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/nothing-phone-4a/",
+     "price": 52500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/nothing-phone-4a/",
+     "price": 49990,
+     "oldPrice": 51000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/nothing-phone-4a/",
+     "price": 53500,
+     "oldPrice": 55000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/nothing-phone-4a/",
+     "price": 56500,
+     "oldPrice": 60000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Nothing",
+   "name": "Phone 4a Pro",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3545/Nothing_Phone_4a_Pro_-_Silver.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Nothing-Phone-(4a)-Proa-2762.png",
+    "https://images.kryinternational.com/uploads/nothing-phone-4a-pro-webp"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/nothing-phone-4a-pro",
+   "offers": [
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/nothing-phone-4a-pro",
+     "price": 57999,
+     "oldPrice": 61000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/nothing-phone-4a-pro",
+     "price": 64999,
+     "oldPrice": 69000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/nothing-phone-4a-pro",
+     "price": 68499,
+     "oldPrice": 75000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/nothing-phone-4a-pro",
+     "price": 56999,
+     "oldPrice": 58500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/nothing-phone-4a-pro",
+     "price": 64499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/nothing-phone-4a-pro",
+     "price": 68999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/nothing-phone-4a-pro",
+     "price": 57999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/nothing-phone-4a-pro",
+     "price": 65999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/nothing-phone-4a-pro",
+     "price": 69999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/nothing-phone-4a-pro/",
+     "price": 56499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/nothing-phone-4a-pro/",
+     "price": 66999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/nothing-phone-4a-pro/",
+     "price": 69999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/nothing-phone-4a-pro/",
+     "price": 58500,
+     "oldPrice": 60000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/nothing-phone-4a-pro/",
+     "price": 72990,
+     "oldPrice": 75000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Vivo",
+   "name": "V70 Elite",
+   "category": "mobile",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4205/passion_red.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/vivo-V70-Elitea-7849.png",
+    "https://images.kryinternational.com/uploads/vivo-v70-red.jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/vivo-v70-elite",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-v70-elite",
+     "price": 69499,
+     "oldPrice": 72000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/vivo-v70-elite",
+     "price": 66999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/vivo-v70-elite",
+     "price": 74000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-v70-elite",
+     "price": 70999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/vivo-v70-elite",
+     "price": 71999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/vivo-v70-elite/",
+     "price": 70999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/vivo-v70-elite/",
+     "price": 72500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-27"
+    }
+   ],
+   "popular": true
   }
  ]
 }

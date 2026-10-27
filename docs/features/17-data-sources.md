@@ -370,6 +370,16 @@ Lira Import আর Her Happy Skin যোগ হলো (robots.txt আর Terms �
 - **বাদ রাখা:** Johnson's Baby Cream (দোকানভেদে ৩১৭–১,৩৫০ টাকা, দেশভেদে আলাদা মাল), NeoCare-এর MedEasy/BanglaShoppers ডায়াপার (প্যাকে কয়টা মেলে না, দাম উল্টোপাল্টা), Mum Mum ডায়াপার (দোকানভেদে প্যাক আলাদা), শিশু ফর্মুলা আর Cerelac (দুধের বিকল্প নিয়ে ২০১৩-এর আইন; সিদ্ধান্ত বাকি), Fay Cotton Buds (শুধু Arogga), Arogga-র "Imported" Aveeno, বেবি টুথপেস্ট (প্রতি ফ্লেভারে আলাদা পাতা, পরে)।
 - **খেয়াল:** Kodomo Pink Hanabaki-তে Shajgoj-এর দাম Arogga-র প্রায় অর্ধেক (দুটোই স্টকে নেই)। BanglaShoppers স্টক দেয় না (`inStock: null`)।
 
+### নতুন প্রজন্মের ফোন (২৭ অক্টোবর ২০২৬)
+
+Samsung-এর S/Z সিরিজ, Pixel আর বড় ব্র্যান্ডের নতুন ফোন ছিল না। ১৬টা দোকানের পুরো listing (~৬৫,০০০ লিংক) থেকে worker-এর নিজের `findProducts` দিয়ে পাতা বাছা, `readPage` দিয়ে পড়া, `place()` দিয়ে ভার্সনে বসানো — মানে রাতের `discover` যেভাবে মেলায় হুবহু সেভাবে। ৩৪টা ফোন, ৬৬টা ভার্সন, ~২৭০টা দাম; প্রতিটা ভার্সন ২+ দোকানে (Pixel 11 Pro XL আর Reno15 Pro ঠিক ২টায়), `worker:check` ০ মেলেনি, সব ছবি ২০০।
+
+- **Samsung:** Galaxy S26, S26 Plus, S26 Ultra, S26 FE, Z Fold8, Z Flip8, A37 5G, A27 5G। **Google:** Pixel 11 Pro, 11 Pro XL, 11 Pro Fold। **Xiaomi:** 17T, 17T Pro, POCO F8 Pro, POCO X8 Pro। **OnePlus:** 15, 15R, Nord 6, Nord CE6। **Vivo:** X300, X300 Pro, X300 Ultra, X300 FE, V70, V70 Elite। **OPPO:** Find X9, Find X9 Pro, Find X9 Ultra, Reno15, Reno15 Pro। **Nothing:** Phone 4a, Phone 4a Pro। **Realme** 16 Pro, **Honor** Magic8 Pro।
+- **নাম:** "Galaxy S26+" নয়, "Galaxy S26 Plus" — নামে `+` থাকলে worker-এর `place()` কোনো অপশন মেলায় না (দোকানও "Plus" লেখে)। সব ভার্সনে RAM এক হলে লেবেল শুধু স্টোরেজ (`256GB`)।
+- **অফিসিয়াল দাম:** official দোকানের দামের মাঝামাঝি; official দোকান না থাকলে `null` (Pixel, Vivo X300, Find X9 ইত্যাদি)।
+- **স্পেক:** Star Tech-এর পাতা থাকলে সেটা, নাহলে Mobile Dokan (`fetch-specs`-এর দুটোই চেনা)। `releaseYear` Mobile Dokan-এর তারিখ মিলিয়ে, চীনে আগে ঘোষণা হলে সেই বছর (Reno15, Magic8 Pro ২০২৫)।
+- **বাদ:** Pixel 11 (শুধু Star Tech), Pixel 10a (ভার্সন-ধরে ২ দোকান হয়নি), Xiaomi 17 আর 17 Ultra (আসলে ১টা দোকান; বাকি মিল ব্যাটারি/জুসার), Nothing Phone 4 (দোকানে নেই)।
+
 ## যা নেওয়া হবে না, আর কেন
 
 - **Daraz:** Terms of Use এর ২.E ধারায় দাম আর listing সংগ্রহ নিষেধ। affiliate চুক্তিতেও লিখিত অনুমতি ছাড়া দাম দেখানো নিষেধ।
