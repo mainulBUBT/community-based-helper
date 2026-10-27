@@ -22,6 +22,7 @@
 | Chaldal | manual product links | `itemprop="price"` / availability | ✅ |
 | স্কিনকেয়ারের বাকি দোকান | manual product links | JSON-LD (WooCommerce/Next.js) | ✅ |
 | Lira Import | product sitemap | `wooVariants` (এক দাম) | ✅ |
+| eFamas | `product-sitemap.xml` (`/shop/`) | `wooVariants` | ✅ লোকাল; Actions probe বাকি |
 | Her Happy Skin | নিজের JSON API (`her-api`) | ওই API-ই (`hhsVariants`) | ✅ |
 | Choice Legacy | product sitemap খোলা, কিন্তু পণ্যের পাতায় ~১ অনুরোধ/মিনিট রেট লিমিট | | ⛔ নিয়মে চলে না |
 | MK Electronics | `sitemap-products.xml` | JSON-LD | ✅ |
@@ -261,7 +262,7 @@ Lira Import আর Her Happy Skin যোগ হলো (robots.txt আর Terms �
 - **মধু, ব্র্যান্ড ধরে:** Dabur, Saffola, Hamdard, Al Shifa (Natural, Acacia, Black Forest), Hosen, Karkuma, Modern Herbal কালোজিরা, Farmer's Gold কালোজিরা, Ashol (সুন্দরবন, কালোজিরা, লিচু)। ক্যাটাগরিতে "আসল যাচাইয়ের নোট" চালু।
 - **খেজুর, জাত আর ওজন ধরে (মালিকের সিদ্ধান্ত):** আজওয়া, মরিয়ম/মাবরুম, সাফাভি/কালমি, সুক্কারি, মেডজুল (ব্র্যান্ডের ঘরে জাত); আর ব্র্যান্ডের Rongdhonu খুরমা। এখানে "মডেল কোড মিলতে হবে" নিয়মের ব্যতিক্রম — দোকানভেদে আমদানিকারক আর মান আলাদা, তাই পণ্যের পাতায় `quality_note` ("দোকানভেদে মান, আকার আর উৎস আলাদা হতে পারে")। Othoba মার্কেটপ্লেসে একই জাত-ওজনে কয়েকজন বিক্রেতা থাকলে স্টকে থাকা সবচেয়ে কম দামটা।
 - `officialPrice`: খাবারে নির্ধারিত দাম নেই, তাই প্রতি ওজনে দোকানগুলোর দামের মাঝামাঝি — শুধু ৪০%-২৫০% sanity-র জন্য।
-- **বাদ:** Shwapno আর Khaas Food (দাম JavaScript দিয়ে আসে), Meena Bazar (পুরো SPA), Ghorer Bazar (Cloudflare challenge, worker-এর পরিচয়ে বাসার PC থেকেও 403), ePharma (JSON-LD-এ MRP, ছাড়ের দাম নয়), Unimart (sitemap-এ পণ্য নেই)। Othoba-র একটা "Saffola 250g" লিংক আসলে Dabur Squeezy-র পাতা, আর Al Shifa-র ml লিস্টিং — বাদ।
+- **বাদ:** Shwapno (২৭ অক্টোবর আবার দেখা: এখন দাম HTML-এই আছে, কিন্তু `/tac`-এর 11.5 আর 11.6-এ automated system আর scrape নিষেধ, তাই স্থায়ীভাবে বাদ), Naturo সাধারণ worker-এ নয় (`naturobd.com`, robots.txt-এও Vercel Security Checkpoint 429; strict-rules অনুযায়ী special-stores দিয়ে), Khaas Food (দাম JavaScript দিয়ে আসে), Meena Bazar (পুরো SPA), Ghorer Bazar (Cloudflare challenge, worker-এর পরিচয়ে বাসার PC থেকেও 403), ePharma (JSON-LD-এ MRP, ছাড়ের দাম নয়), Unimart (sitemap-এ পণ্য নেই)। Othoba-র একটা "Saffola 250g" লিংক আসলে Dabur Squeezy-র পাতা, আর Al Shifa-র ml লিস্টিং — বাদ।
 - **খেয়াল:** Chaldal-এর পাতা ভারী (~১.৭MB, ২০-৫০ সেকেন্ড), আর চাপে থাকলে আসল পাতাতেও মাঝে মাঝে 404 দেয়। তাই worker-এ পাতা পড়ার সময়সীমা ৩০ থেকে ৬০ সেকেন্ড, আর 404 পেলে ৩ সেকেন্ড থেমে একবার আবার দেখে — নইলে ভুল করে "স্টকে নেই" হয়ে যেত। এরপর Chaldal-এর ১২টা দামই `worker:check` পাস।
 - **শেষ যাচাই:** মধু, খেজুর, রাউটার, নেকব্যান্ড/অডিওর ৪০৩টা লিংক আলাদা খুলে দেখা (HTTP, redirect, শিরোনামে মডেল/জাত/ওজন/প্যাক); ৮২টা পণ্যের সব ছবি ব্রাউজারে খোলে, পাশাপাশি সাজিয়ে চোখে মিলানো। Tenda TX12 Pro-র একই ছবি দুবার ছিল, Oraimo Necklace 5 আর Realme 5 Lite-এর বিজ্ঞাপনের ছবি প্রথমে ছিল — ঠিক করা।
 - worker: Othoba-র discover-এ `/honey` আর `/dates`।
@@ -353,6 +354,21 @@ Lira Import আর Her Happy Skin যোগ হলো (robots.txt আর Terms �
 - বাদ রাখা অফার: Kry-র যেসব লেবেলে দ্বিতীয় সংখ্যায় GB নেই ("8GB / 128") — worker মেলাতে পারে না; Apple Gadgets-এর Tab A9 "LTE" অপশন (একই কারণ); Sumash Pixel 8a 8/256 ৳৮৬,৯৯৯ (অবিশ্বাস্য); PCB-র Nord CE5 ৳২৬,০০০ (অন্যরা ~৪২,০০০); Mobile Buzz-এর nova Y74 8/128 আর Idea Tab (5G না Wi-Fi নিশ্চিত না); যেসব পাতায় ভার্সন লেখা নেই (CustomMacBD, Rio)।
 - **এখনো ৩ দোকানের কম:** Teclast P30T (Star Tech + Diamu, Diamu-র পাতায় চিপ "A532" লেখা, Star Tech-এর পাতায় চিপ নেই, তাই নেওয়া হয়নি), Motorola Edge 70 12/256 (শুধু Apple Gadgets), SKIN1004 Madagascar Centella Ampoule **50ml** (শুধু Emart; বাকি সব দোকানে ৫৫ml — আলাদা সাইজ, তাই মেলানো হয়নি)।
 - ভার্সনে দাম নেই (আগে থেকেই): Nord CE5 12/256, Pixel 8a 8/256, Realme 14 5G 8/256।
+
+### বেবি পণ্য (২৭ অক্টোবর ২০২৬)
+
+নতুন ক্যাটাগরি `baby` (বেবি পণ্য), ভেতরে `diapers` (ভার্সনের ঘর `size` + `capacity` = প্যাকে কয়টা, লেবেল `M 40pcs`) আর `baby-care` (`capacity` = ml/g/pcs)। migration `20261027100000_baby-categories.sql`। ২৭টা পণ্য, ৫৬টা ভার্সন, ২১৮টা দাম, ২০টা দোকান। **প্রতিটা ভার্সন অন্তত ২ দোকানে (মালিকের নিয়ম)**, ৪২টা ৩+ দোকানে; ১ দোকানের ভার্সন রাখা হয়নি (Twinkle XL 22, শুধু Arogga)। প্রতিটা পাতা worker parser দিয়ে লাইভ পড়া, `worker:check` ০ মেলেনি, সব ছবি ২০০ image/*।
+
+- **দোকান:** Arogga, MedEasy, Shajgoj, BanglaShoppers; আগের স্কিনকেয়ারের দোকানের sitemap ঘেঁটে Beauty Booth, Chardike, Glowella, Skincare Shop, UK Direct BD, Cosmetics Corner, EmartWay, Emart, Color World, BD Amajan, Beprincess, IndianMartBD, OHSOGO; ডায়াপারের জন্য নতুন **eFamas** (`efamas.com.bd`, WooCommerce, `workers/stores/index.ts`-এ entry, `probe.ts`-এ লিংক; robots আর Terms ঠিক আছে, **GitHub Actions-এর probe বাকি**), আর Othoba (Twinkle XL 32-এর পাতা সরাসরি)।
+- **নতুন দোকান যাচাই করে বাদ:** Smart Eshop BD (robots.txt-এ AI bot বন্ধ), Motherland BD (পাতা JS-rendered), Asmishop (parser দাম পায় না), Rokomari (Actions থেকে আটকায়, দাম পুরনো হয়ে যেত)।
+- **বাদ রাখা অফার:** OHSOGO-র কয়েক সাইজের পাতা (সব স্টকে নেই, দাম উল্টোপাল্টা, যেমন 200ml তেল ৳১৪৯), Beauty Booth-এর Johnson's 100ml (৳৯৫০, 200ml-এর চেয়ে বেশি), Chardike-এর JfB Wash 200ml (100ml-এর চেয়ে কম), UK Direct আর Color World-এর Johnson's শ্যাম্পু (UK ভার্সন / "Ultra Gentle" আলাদা)।
+- **NeoCare:** Arogga-র 50-প্যাক আসলে Premium লাইন (eFamas-এর Premium MRP ১,২০০/১,৪৫০/১,৬৫০/১,৯৫০-এর ৮৫–৯৫%), তাই পণ্যের নাম "Premium Belt Baby Diaper" (S/M/L/XL 50); New Born 20 আলাদা পণ্য।
+
+- **কোন পণ্য, কেন:** Arogga-র পণ্যের পাতায় অর্ডারের সংখ্যা থাকে (`pvc_ordered_count`)। ~১,৫৫০টা বেবি পণ্যের সংখ্যা এনে বেশি বিক্রির পণ্য বাছা; ১,০০০+ অর্ডারের পণ্যে `popular: true`। বেবি কেয়ার: Aveeno Daily Care Lotion, Sudocrem, Himalaya (lotion, cream, powder, soap), Sebamed Extra Soft Cream, Parachute Just for Baby (lotion, wash, face cream, powder, oil, shampoo), Meril (powder, oil, shampoo, lotion, soap), Johnson's (shampoo, oil with Vitamin E), Kodomo (anti-rash lotion, Pink Hanabaki cream), NeoCare আর Supermom wipes। ডায়াপার: Savlon Twinkle Pant (১০টা সাইজ/প্যাক), NeoCare Premium Belt (S/M/L/XL 50), NeoCare New Born 20।
+- **সাইজ মেলানো:** Shajgoj-এর শিরোনামে সাইজ নেই, পাতার `"size"` ঘরে থাকে; Arogga-র নামে সাইজ না থাকলে পাতার `pu_base_unit_label` দেখে মেলানো।
+- **Chaldal বাদ (মালিকের সিদ্ধান্ত):** পাতা খুব ধীর, `worker:check` ১০ মিনিটেও শেষ হয়নি, sitemap-এর কিছু লিংক 404।
+- **বাদ রাখা:** Johnson's Baby Cream (দোকানভেদে ৩১৭–১,৩৫০ টাকা, দেশভেদে আলাদা মাল), NeoCare-এর MedEasy/BanglaShoppers ডায়াপার (প্যাকে কয়টা মেলে না, দাম উল্টোপাল্টা), Mum Mum ডায়াপার (দোকানভেদে প্যাক আলাদা), শিশু ফর্মুলা আর Cerelac (দুধের বিকল্প নিয়ে ২০১৩-এর আইন; সিদ্ধান্ত বাকি), Fay Cotton Buds (শুধু Arogga), Arogga-র "Imported" Aveeno, বেবি টুথপেস্ট (প্রতি ফ্লেভারে আলাদা পাতা, পরে)।
+- **খেয়াল:** Kodomo Pink Hanabaki-তে Shajgoj-এর দাম Arogga-র প্রায় অর্ধেক (দুটোই স্টকে নেই)। BanglaShoppers স্টক দেয় না (`inStock: null`)।
 
 ## যা নেওয়া হবে না, আর কেন
 

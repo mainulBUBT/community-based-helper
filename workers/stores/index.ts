@@ -621,6 +621,16 @@ export const stores: Store[] = [
     variants: wooVariants,
   }),
   sitemapStore({
+    id: "efamas",
+    name: "eFamas",
+    origin: "https://www.efamas.com.bd",
+    sample: "https://www.efamas.com.bd/shop/diaper-potty/savlon-twinkle/savlon-twinkle-pant-system-baby-diaper-size-xl-12-20kg-44pcs/",
+    sitemap: "https://www.efamas.com.bd/product-sitemap.xml",
+    path: "/shop/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
     id: "mke",
     name: "MK Electronics",
     origin: "https://mke.com.bd",

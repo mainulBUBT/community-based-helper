@@ -13,6 +13,9 @@ const URLS = [
   "https://mobilebuzzbd.com/product/motorola-edge-70-pro/",
   "https://mobilebuzzbd.com/product/honor-x9d/",
   "https://mobilebuzzbd.com/product/realme-14-pro-plus-5g/",
+  "https://www.efamas.com.bd/product-sitemap.xml",
+  "https://www.efamas.com.bd/shop/diaper-potty/savlon-twinkle/savlon-twinkle-pant-system-baby-diaper-size-xl-12-20kg-44pcs/",
+  "https://www.efamas.com.bd/shop/diaper-potty/neocare/neocare-premium-belt-system-baby-diaper-size-l-7-18-kg-50-pcs/",
 ];
 
 async function imageStatus(url: string | null | undefined): Promise<string> {

@@ -9,7 +9,7 @@ import { canonicalRegion } from "../src/utils/region.ts";
 
 const DIR = "data/catalog";
 const AXES = ["chip", "ram", "storage", "size", "connectivity", "edition", "color", "gpu", "cpu", "resolution", "battery", "capacity", "wattage"];
-const DEFAULT_CATEGORY = { mobile: "mobile", watch: "watch", skincare: "skincare", powerbank: "powerbank", sneakers: "sneakers", monitor: "monitor", charger: "charger", fan: "fan", "water-purifier": "water-purifier", router: "router", makeup: "makeup", honey: "honey", dates: "dates" };
+const DEFAULT_CATEGORY = { mobile: "mobile", watch: "watch", skincare: "skincare", powerbank: "powerbank", sneakers: "sneakers", monitor: "monitor", charger: "charger", fan: "fan", "water-purifier": "water-purifier", router: "router", makeup: "makeup", honey: "honey", dates: "dates", baby: "baby-care" };
 
 const slugify = (text) =>
   text

@@ -1,6 +1,6 @@
 # দরদাম: প্রজেক্ট ইনডেক্স
 
-বাংলাদেশের দোকানগুলো থেকে একই পণ্যের দাম পাশাপাশি দেখানোর PWA। নাম **দরদাম** (Dordam), slogan "আগে দাম যাচাই, তারপর স্মার্ট কেনা"। এখন মোবাইল, ল্যাপটপ, ট্যাবলেট, ডেস্কটপ, স্মার্টওয়াচ, অডিও, পাওয়ার ব্যাংক, মনিটর, চার্জার, চার্জার ফ্যান, পানির ফিল্টার, মেকআপ, স্কিনকেয়ার আর স্নিকার্স; পরে অন্য পণ্যও আসবে।
+বাংলাদেশের দোকানগুলো থেকে একই পণ্যের দাম পাশাপাশি দেখানোর PWA। নাম **দরদাম** (Dordam), slogan "আগে দাম যাচাই, তারপর স্মার্ট কেনা"। এখন মোবাইল, ল্যাপটপ, ট্যাবলেট, ডেস্কটপ, স্মার্টওয়াচ, অডিও, পাওয়ার ব্যাংক, মনিটর, চার্জার, চার্জার ফ্যান, পানির ফিল্টার, মেকআপ, স্কিনকেয়ার, স্নিকার্স আর বেবি পণ্য; পরে অন্য পণ্যও আসবে।
 
 এই ফোল্ডার মানুষ আর AI এজেন্ট দুজনের জন্য। কাজ শুরুর আগে এই ফাইল, তারপর যে ফিচারে কাজ করবেন তার ফাইল পড়ুন। কাজ শেষে সেই ফাইলের টাস্ক টিক দিন আর নিচের ট্র্যাকারে স্ট্যাটাস বদলান।
 
@@ -39,6 +39,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 14. ✅ **মেকআপ লাইভে নেওয়া (২৬ অক্টোবর migration আর seed চালানো):** `npm run db:push` (migration `20261026120100_makeup-verify-note.sql`: `makeup` ক্যাটাগরি আর `verify_note` কলাম, কন্ডিশনের migration-এর পরে চলে), তারপর seed (১৮ পণ্য, ১৭০ দাম, নতুন দোকান Beauty Booth, ALZAK, BD Amajan Shop, UK Direct BD, Skin Revive BD), তারপর `rebuild`। দেখুন [data-sources](features/17-data-sources.md)।
 13. ✅ **পানির ফিল্টার লাইভে নেওয়া (২৬ অক্টোবর migration আর seed চালানো):** `npm run db:push` (migration `20261026054934_water-purifier-category.sql`, ক্যাটাগরি আগে লাগে), তারপর `npx supabase db query --linked -f supabase/seed.sql` (৭ পণ্য, ২৩ দাম, নতুন দোকান MK Electronics আর Othoba), তারপর `rebuild`। দেখুন [data-sources](features/17-data-sources.md)।
 15. ⬜ **২৬ অক্টোবরের মোবাইল/ট্যাবলেট কাজ লাইভে নেওয়া, এই ক্রমে** (Honor, Tecno, Infinix, Motorola-র ৩৪ পণ্য; ১টা দোকানের ১২টা পণ্যে নতুন দাম; নতুন দোকান Arafa Telecom আর Mobile Buzz BD): (১) `workers/probe.ts` push করে GitHub Actions-এর `probe-stores` পাস দেখা, (২) `npm run db:push` (migration `20261026150000_tablet-variant-labels.sql`, ট্যাবলেটের "Standard" ভার্সনের নাম বদলায়), (৩) `npx supabase db query --linked -f supabase/seed.sql`, (৪) `rebuild`। Motorola-র অফিসিয়াল দাম খালি (বাংলাদেশে অফিসিয়াল বিক্রি নেই)। দেখুন [data-sources](features/17-data-sources.md)।
+16. ⬜ **২৭ অক্টোবরের বেবি পণ্য লাইভে নেওয়া, এই ক্রমে:** (১) `npm run db:push` (migration `20261027100000_baby-categories.sql`: `baby`, তার ভেতরে `diapers` আর `baby-care`; ক্যাটাগরি seed-এর আগে লাগে), (২) `workers/probe.ts` push করে `probe-stores`-এ নতুন দোকান eFamas পাস দেখা, (৩) `npx supabase db query --linked -f supabase/seed.sql` (২৭ পণ্য, ২১৮ দাম, প্রতিটা ভার্সন ২+ দোকানে), (৪) `rebuild`। দেখুন [data-sources](features/17-data-sources.md)।
 11. ✅ `/about/` পেজ (`/about/` বাংলা, `/en/about/` English), সব লেখা অ্যাডমিন থেকে বদলানো যায়।
 
 ## ফিচার ট্র্যাকার
@@ -67,7 +68,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 ## পুরো প্ল্যান সংক্ষেপে
 
 - **কী:** একই পণ্যের দাম কয়েকটা দোকান থেকে এনে পাশাপাশি দেখানো। যে দোকানের ওয়েবসাইট নেই (মার্কেটের দোকান, ফেসবুক গ্রুপ), তাদের ফোন নম্বর আর "যাচাই করা / যাচাই হয়নি" ব্যাজ দেখানো।
-- **ক্যাটাগরি:** অ্যাডমিন থেকে বানানো যায় (`categories` টেবিল, ভেতরে ভাগও)। এখন মোবাইল, ল্যাপটপ, ট্যাবলেট, ডেস্কটপ, স্মার্টওয়াচ, অডিও (ইয়ারবাড, হেডফোন), পাওয়ার ব্যাংক, মনিটর, চার্জার, চার্জার ফ্যান, পানির ফিল্টার, মেকআপ, স্কিনকেয়ার আর স্নিকার্স। Apple আলাদা ভাগ নয়, ব্র্যান্ড।
+- **ক্যাটাগরি:** অ্যাডমিন থেকে বানানো যায় (`categories` টেবিল, ভেতরে ভাগও)। এখন মোবাইল, ল্যাপটপ, ট্যাবলেট, ডেস্কটপ, স্মার্টওয়াচ, অডিও (ইয়ারবাড, হেডফোন), পাওয়ার ব্যাংক, মনিটর, চার্জার, চার্জার ফ্যান, পানির ফিল্টার, মেকআপ, স্কিনকেয়ার, স্নিকার্স আর বেবি পণ্য (ডায়াপার, বেবি কেয়ার)। Apple আলাদা ভাগ নয়, ব্র্যান্ড।
 - **দোকান:** Star Tech, Gadget & Gear, Apple Gadgets, Sumash Tech, Kry International, Executive Machines, Motion View, Dazzle, Diamu, Gadget Breeze, MacZen BD, Three's, Splayd, Ragen, DOB Skateshop, Sneaker Zone, Trek N Tread, SneakersBD Official, Global Brand, MC Solution, PCB Store, Sell Tech, MK Electronics, Othoba, Beauty Booth, ALZAK, BD Amajan Shop, UK Direct BD, Skin Revive BD; স্কিনকেয়ারে Shajgoj, Arogga, Chaldal, BanglaShoppers, MedEasy, EmartWay, Beauty Line, Emart, Aromyeo, Korean Care, Skincare Shop, Cosmetics Corner, IndianMartBD, Beprincess, Color World, Glowella, OHSOGO, Chardike, Perfecto, Korean Mart BD, Klassy Missy, Lira Import, Her Happy Skin (কোনটা কীসের জন্য: [data-sources](features/17-data-sources.md))। এর বাইরে ক্রেতার পাঠানো দাম আর (পরে) Telegram bot। Pickaboo আর GadStyle আমাদের bot আটকায়, Rokomari আর The Mall BD GitHub Actions থেকে আটকায়, তাই বাদ; Choice Legacy-র পণ্যের পাতায় রেট লিমিট (~১ অনুরোধ/মিনিট), তাই বাদ।
 - **বাদ:** Daraz (তাদের Terms এ দাম সংগ্রহ নিষেধ), Ryans আর TechLand, Facebook scrape। bot protection ফাঁকি দেওয়ার কোড লেখা হবে না, robots.txt মানা হয়।
 - **সব ফ্রি:** Next.js static export, Cloudflare Pages, Supabase ফ্রি tier, GitHub Actions; AI এর জন্য মালিকের নিজের OpenAI-compatible সাবস্ক্রিপশন।
