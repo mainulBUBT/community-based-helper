@@ -16,8 +16,8 @@ import { categoryPath } from "@/utils/url";
 // মেনু পুরো স্ক্রিন জুড়ে না বসে; ভেতরের তালিকা নিজে স্ক্রল করে
 const PANEL_HEIGHT = "max-h-[min(620px,calc(100dvh-7rem))]";
 
-// তালিকার নিচে আরও থাকলে হালকা ছায়া, শেষে পৌঁছালে শেষ সারির ওপর সামান্য পড়ে
-const SCROLL_FADE = "pointer-events-none sticky bottom-0 -mt-6 h-6 shrink-0 bg-gradient-to-t from-surface";
+// তালিকার নিচে আরও থাকলে হালকা ছায়া; শেষে পৌঁছালে এটাই শেষ সারির নিচে ফাঁকা জায়গা
+const SCROLL_FADE = "pointer-events-none sticky bottom-0 h-6 shrink-0 bg-gradient-to-t from-surface";
 
 // ব্র্যান্ড আর তার পণ্যের সংখ্যা, বেশি পণ্য আগে
 function byCount(summaries: ProductSummary[]) {
@@ -132,7 +132,7 @@ export function CategoryMenu() {
               ))}
               <li aria-hidden="true" className={SCROLL_FADE} />
             </ul>
-            <div className={`flex min-w-0 flex-col gap-4 overflow-y-auto overscroll-contain ${PANEL_HEIGHT}`}>
+            <div className={`flex min-w-0 flex-col gap-4 overflow-y-auto overscroll-contain pb-4 ${PANEL_HEIGHT}`}>
               <div className="flex items-center justify-between gap-3">
                 <span className="text-lg font-bold">{label(current)}</span>
                 <Link href={categoryPath(prefix, current.slug)} onClick={close} className="text-sm font-semibold text-brand hover:underline">
