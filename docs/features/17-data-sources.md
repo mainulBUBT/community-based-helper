@@ -387,7 +387,7 @@ Samsung-এর S/Z সিরিজ, Pixel আর বড় ব্র্যান
 
 ### নতুন দোকান: Shei Tech, Zapatos, BabyCare, Dolbear, HNS Tech (২৭ অক্টোবর ২০২৬)
 
-মালিকের চাওয়া ৫টা সাইট robots.txt, Terms আর পাতার দাম-মার্কআপ মিলিয়ে যাচাই। `discover store <id>` লোকালে চালিয়ে ম্যাপ: **Shei Tech ৫৬ দাম, Dolbear ৪৪, BabyCare ১৬, Zapatos ০, HNS Tech ১২।** Dolbear-এর ১টা অনিশ্চিত ম্যাচ (TP-Link Deco E4 ৳৫,৯৯৯ → 2 Pack) যাচাই তালিকায়। নমুনা দাম লাইভ পাতায় মিলিয়ে দেখা (Realme 14 5G ৳৪১,৯৯৯, Archer AX53 ৳৫,৪০০)।
+মালিকের চাওয়া ৫টা সাইট robots.txt, Terms আর পাতার দাম-মার্কআপ মিলিয়ে যাচাই। `discover store <id>` লোকালে চালিয়ে ম্যাপ: **Shei Tech ৫৬ দাম, Dolbear ৪৪, BabyCare ১৬, Zapatos ০, HNS Tech ১২।** Dolbear-এর অনিশ্চিত ম্যাচটা (TP-Link Deco E4 ৳৫,৯৯৯ → 2 Pack) অনুমোদনের পরে অফার হিসেবে বসেছে। নমুনা দাম লাইভ পাতায় মিলিয়ে দেখা (Realme 14 5G ৳৪১,৯৯৯, Archer AX53 ৳৫,৪০০)।
 
 | দোকান | সাইট | listing | দাম | কন্ডিশন |
 |---|---|---|---|---|
