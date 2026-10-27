@@ -6,6 +6,10 @@ export const bn = {
     popular: "জনপ্রিয়",
     seeAll: (name: string) => `সব ${name} দেখুন`,
     allBrands: "সব ব্র্যান্ড",
+    findBrand: "ব্র্যান্ড খুঁজুন",
+    byLetter: "প্রথম অক্ষর ধরে",
+    allLetters: "সব",
+    noBrand: "এই নামে কোনো ব্র্যান্ড নেই",
   },
   common: {
     back: "ফিরে যান",

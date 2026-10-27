@@ -10,6 +10,10 @@ export const en: Messages = {
     popular: "Popular",
     seeAll: (name) => `See all ${name}`,
     allBrands: "All brands",
+    findBrand: "Find a brand",
+    byLetter: "By first letter",
+    allLetters: "All",
+    noBrand: "No brand by that name",
   },
   common: {
     back: "Go back",
