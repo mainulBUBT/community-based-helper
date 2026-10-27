@@ -33,7 +33,7 @@
 | Zapatos | `wp-sitemap.xml` (posts-product) | `wooVariants` | ✅ চলে, কিন্তু নিজস্ব ব্র্যান্ডে ক্যাটালগের সাথে ম্যাচ নেই |
 | BabyCare | sitemap-এ পণ্য নেই — ক্যাটাগরি পাতা (`?page=`) ঘুরে | `itemprop="price"` (JSON-LD নেই) | ✅ |
 | Dolbear | `/sitemap/products.xml` | JSON-LD | ✅ |
-| HNS Tech | sitemap নেই | পাতার `#pdpPrice` — `special-stores` (লোকাল) | 🟡 পার্সার তৈরি, অফার হাতে |
+| HNS Tech | sitemap নেই — `/shop?page=1..6` ঘুরে | `data-variants` JSON (`hnstechVariants`) | ✅ |
 | The Mall BD | | | ⛔ GitHub Actions থেকে robots.txt এ 403 |
 | Rokomari | | | ⛔ GitHub Actions থেকে robots.txt এ 403 |
 | Pickaboo | `/search-result/<নাম>` HTML | | ⛔ worker কে 403 দেয় |
@@ -387,7 +387,7 @@ Samsung-এর S/Z সিরিজ, Pixel আর বড় ব্র্যান
 
 ### নতুন দোকান: Shei Tech, Zapatos, BabyCare, Dolbear, HNS Tech (২৭ অক্টোবর ২০২৬)
 
-মালিকের চাওয়া ৫টা সাইট robots.txt, Terms আর পাতার দাম-মার্কআপ মিলিয়ে যাচাই। `discover store <id>` লোকালে চালিয়ে ম্যাপ: **Shei Tech ৫৬ দাম, Dolbear ৪৪, BabyCare ১৬, Zapatos ০; HNS Tech-এর পার্সার `scripts/special-stores.ts`-এ, অফার বাকি।** Dolbear-এর ১টা অনিশ্চিত ম্যাচ (TP-Link Deco E4 ৳৫,৯৯৯ → 2 Pack) যাচাই তালিকায়। নমুনা দাম লাইভ পাতায় মিলিয়ে দেখা (Realme 14 5G ৳৪১,৯৯৯, Archer AX53 ৳৫,৪০০)।
+মালিকের চাওয়া ৫টা সাইট robots.txt, Terms আর পাতার দাম-মার্কআপ মিলিয়ে যাচাই। `discover store <id>` লোকালে চালিয়ে ম্যাপ: **Shei Tech ৫৬ দাম, Dolbear ৪৪, BabyCare ১৬, Zapatos ০, HNS Tech ১২।** Dolbear-এর ১টা অনিশ্চিত ম্যাচ (TP-Link Deco E4 ৳৫,৯৯৯ → 2 Pack) যাচাই তালিকায়। নমুনা দাম লাইভ পাতায় মিলিয়ে দেখা (Realme 14 5G ৳৪১,৯৯৯, Archer AX53 ৳৫,৪০০)।
 
 | দোকান | সাইট | listing | দাম | কন্ডিশন |
 |---|---|---|---|---|
@@ -395,13 +395,13 @@ Samsung-এর S/Z সিরিজ, Pixel আর বড় ব্র্যান
 | Zapatos | zapatos.com.bd | WooCommerce, `wp-sitemap-posts-product-1.xml` | `wooVariants` | official (নিজেদের ব্র্যান্ড) |
 | BabyCare | babycare.com.bd | OpenCart; sitemap-এ শুধু ক্যাটাগরি — ৭টা ক্যাটাগরি পাতায় `?page=` | `itemprop="price"` (ছাড়ের দাম), og-এ মূল দাম | official |
 | Dolbear | dolbear.com.bd | কাস্টম (Laravel), `/sitemap/products.xml` | JSON-LD | unofficial |
-| HNS Tech | hnstechbd.com | কাস্টম, sitemap/JSON-LD নেই — তাই worker-এ নয় | `#pdpPrice` (`special-stores`-এ `hnstech`) | unofficial |
+| HNS Tech | hnstechbd.com | কাস্টম, sitemap নেই — worker স্টোর `/shop?page=1..6` ঘুরে | `data-variants` JSON (`hnstechVariants`) | unofficial |
 
 - Shei Tech: চার্জার, পাওয়ার ব্যাংক, রাউটার, স্মার্টওয়াচ, ইয়ারবাডে ভালো ম্যাচ (Anker Zolo A1695, Archer AX53 ইত্যাদি মডেল-কোডসহ URL)।
 - Dolbear: রাউটার (TP-Link, Tenda), ফোন (OPPO A6, Realme 14 5G), চার্জার, ইয়ারবাড। এক স্টোরেজ এক URL (`oppo-a6-6-128gb`)।
 - BabyCare: ডায়াপার (Savlon Twinkle, NeoCare Premium), ওয়াইপস, লোশন/ক্রিম/শ্যাম্পু; ক্যাটাগরি পাতায় ২৪টা করে পণ্য, `product-item` টাইলের `itemprop="url"` + `name` থেকে listing।
 - Zapatos: নিজেদের ব্র্যান্ডের জুতা (Hyper Stride, Urban Heritage) — ক্যাটালগের ১:১ কপি মডেলের সাথে মেলে না; ওদের মডেল ক্যাটালগে আনা হলে কাজে লাগবে (প্লাম্বিং তৈরি)।
-- HNS Tech: Apple-কেন্দ্রিক (iPhone/Mac/iPad/Watch/AirPods, অনেকগুলো USA ভার্সন)। robots খোলা, দাম HTML-এই থাকে; তবে sitemap নেই বলে `discover` চলে না — ক্যাটালগ পণ্য হাতে মিলিয়ে অফার বসাতে হবে, তারপর `prices`/special sync নিয়মিত আপডেট করবে।
+- HNS Tech: Apple-কেন্দ্রিক (AirPods, Watch, Mac, iPad; অনেকগুলো USA ভার্সন)। robots খোলা; sitemap/JSON-LD নেই বলে `/shop` পেজিনেশন ঘুরে listing নেয়, পণ্য পাতার `data-variants='[{…}]'` JSON থেকে কনফিগ-ভেদে দাম-স্টক (`hnstechVariants`)। pre-order পাতার দাম ০ (বুকিং ফি আলাদা), তাই সেগুলো নিজে থেকেই বাদ। নমুনা দাম লাইভে মিলিয়ে দেখা (AirPods Pro 3 ৳২৫,৫০০, Galaxy Watch8 ৪০mm ৳২৬,০০০)।
 
 ## যা নেওয়া হবে না, আর কেন
 

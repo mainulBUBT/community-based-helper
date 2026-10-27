@@ -34,7 +34,7 @@
    - **Rokomari** (`rokomari.com`): JSON-LD স্কিমা ও লোকাল রিকোয়েস্টের মাধ্যমে সক্রিয়।
    - **The Mall BD** (`themallbd.com`): মেটা ট্যাগ ও উকমার্স পার্সারের মাধ্যমে সক্রিয়।
    - **Naturo BD** (`naturobd.com`): হেডলেস ব্রাউজার দিয়ে সক্রিয়।
-   - **HNS Tech** (`hnstechbd.com`): sitemap আর JSON-LD নেই; `special-stores`-এ `hnstech` পার্সার (`#pdpPrice`)।
+   - **HNS Tech** (`hnstechbd.com`): worker-এর `hnstech` স্টোর — sitemap নেই বলে `/shop?page=1..6` ঘুরে listing; দাম পাতার `data-variants` JSON-এ (`hnstechVariants`)।
 
    *(মালিকের সিদ্ধান্ত অনুযায়ী বাদ: Daraz — থার্ড-পার্টি সেলারদের অবিশ্বস্ত ভ্যারিয়েন্ট/কপি পণ্যের কারণে; এবং Shwapno — গ্রোসারিকেন্দ্রিক হওয়ায় ক্যাটালগ থেকে বাদ)*
 

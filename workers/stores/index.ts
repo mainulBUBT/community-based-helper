@@ -3,7 +3,7 @@ import { decode, stripTags } from "../lib/html";
 import { getJson, getText } from "../lib/http";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import { appleGadgetsVariants, chardikeVariants, dazzleVariants, gadgetAndGearVariants, hhsVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, shopifyProduct, startechVariants, sumashVariants, wooVariants } from "./parsers";
+import { appleGadgetsVariants, chardikeVariants, dazzleVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, shopifyProduct, startechVariants, sumashVariants, wooVariants } from "./parsers";
 import { isReplica } from "../../src/utils/categories";
 import type { Condition, Listing, Store } from "./types";
 
@@ -272,6 +272,41 @@ const babycare: Store = {
         const fresh = items.filter((item) => !all.some((seen) => seen.url === item.url));
         if (fresh.length === 0) break;
         all.push(...fresh);
+      }
+    }
+    return all;
+  },
+};
+
+// HNS Tech: sitemap নেই; ক্যাটাগরি পাতায় লিংক থাকে না, সব পণ্য /shop?page=1..N-এ।
+// পণ্যের পাতার data-variants JSON-এ সব কনফিগের দাম-স্টক; pre-order পাতার দাম ০ (বুকিং ফি আলাদা), সেগুলো অফার হয় না।
+const HNS = "https://www.hnstechbd.com";
+const HNS_SHOP_PAGES = 6;
+
+function parseHnsListings(html: string): Listing[] {
+  return [...html.matchAll(/href="(?:https:\/\/www\.hnstechbd\.com)?(\/product-details\/([a-z0-9-]+)\/\d+)"/g)].map(([, path, slug]) => ({
+    title: decodeURIComponent(slug).replace(/[-_]+/g, " "),
+    url: `${HNS}${path}`,
+    price: null,
+    oldPrice: null,
+  }));
+}
+
+const hnstech: Store = {
+  id: "hnstech",
+  name: "HNS Tech",
+  origin: HNS,
+  rendered: false,
+  condition: "unofficial",
+  sample: `${HNS}/product-details/macbook-neo-13singaporeusa/87`,
+  promoUrl: null,
+  variants: hnstechVariants,
+  async discover() {
+    const all: Listing[] = [];
+    for (let page = 1; page <= HNS_SHOP_PAGES; page++) {
+      const html = await getText(`${HNS}/shop?page=${page}`).catch(() => "");
+      for (const item of parseHnsListings(html)) {
+        if (!all.some((seen) => seen.url === item.url)) all.push(item);
       }
     }
     return all;
@@ -729,6 +764,7 @@ export const stores: Store[] = [
     path: "/product/",
     condition: "unofficial",
   }),
+  hnstech,
 ];
 
 // তালিকায় না থাকা দোকানের পুরনো দামও বাদ যায় না: JSON-LD/itemprop/og দিয়ে চেষ্টা

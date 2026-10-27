@@ -302,6 +302,21 @@ export function othobaVariants(html: string): ShopVariant[] {
   return variant([], sale && sale < quote.price ? sale : quote.price, quote.price, quote.inStock);
 }
 
+// HNS Tech (কাস্টম Laravel): পাতার data-variants JSON-এ প্রতিটা কনফিগের দাম-স্টক; রং অপশন নয়।
+// Pre-order পাতায় দাম ০ থাকে (বুকিং ফি আলাদা ঘরে), তাই সেগুলো নিজে থেকেই বাদ।
+export function hnstechVariants(html: string): ShopVariant[] {
+  const raw = /data-variants='(\[[^']*\])'/.exec(html)?.[1];
+  const list = raw ? parse(raw) : null;
+  if (!Array.isArray(list)) return [];
+  return list.filter(isObject).flatMap((v) => {
+    const price = toTaka(v.effective_price) ?? toTaka(v.price);
+    if (!price) return [];
+    const full = toTaka(v.price);
+    const options = [v.storage, v.display_size, v.connectivity].map((x) => (x == null ? "" : String(x).trim())).filter(Boolean);
+    return variant([["", options.join(" ")]], price, full && full > price ? full : null, typeof v.quantity === "number" ? v.quantity > 0 : null);
+  });
+}
+
 // Shopify: পাতার JSON-LD এ শুধু প্রথম ভার্সনের দাম; প্রতিটা ভার্সনের দাম (পয়সায়), স্টক, অপশন, নাম আর ছবি /products/<handle>.js এ।
 // না পেলে null — তখন আগের মতো পাতার JSON-LD। আটকে দিলে সেটা উপরে যায়, যাতে দোকান-আটকানোর নিয়ম চলে
 export async function shopifyProduct(url: string): Promise<ShopProduct | null> {

@@ -358,33 +358,6 @@ export const SPECIAL_STORES: Record<string, SpecialStoreConfig> = {
       };
     },
   },
-
-  // HNS Tech: কাস্টম (Laravel) সাইট — sitemap আর JSON-LD নেই, দাম শুধু #pdpPrice এ
-  hnstech: {
-    id: "hnstech",
-    name: "HNS Tech",
-    hosts: ["hnstechbd.com", "www.hnstechbd.com"],
-    sampleUrl: "https://www.hnstechbd.com",
-    strategy: "direct_or_browser",
-    async extract(page) {
-      const data = await page.evaluate(() => {
-        const title = document.querySelector("h1.pdp-hns-title, h1")?.textContent?.trim() || null;
-        const price = document.querySelector("#pdpPrice")?.textContent?.trim() || null;
-        const oldPrice = document.querySelector("#pdpPriceOld:not(.d-none)")?.textContent?.trim() || null;
-        const image = (document.querySelector("img[src*='Content/ImageData']") as HTMLImageElement)?.src || null;
-        return { title, price, oldPrice, image };
-      }).catch(() => null);
-
-      return {
-        title: data?.title || null,
-        price: toTaka(data?.price),
-        oldPrice: toTaka(data?.oldPrice),
-        inStock: data?.price ? true : null,
-        image: data?.image || null,
-        via: "hnstech-dom",
-      };
-    },
-  },
 };
 
 let sharedBrowser: Browser | null = null;
