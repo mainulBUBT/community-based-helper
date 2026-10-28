@@ -94,12 +94,12 @@ function Viewer({ images, index, alt, onClose, onStep }: { images: string[]; ind
       </div>
       <div className={`relative flex-1 ${zoomed ? "cursor-zoom-out overflow-auto" : "cursor-zoom-in overflow-hidden"}`} {...(zoomed ? {} : handlers)} onClick={toggleZoom}>
         {zoomed ? (
-          <img src={images[index]} alt={alt} className="max-w-none bg-white" style={{ width: "250%" }} />
+          <img src={images[index]} alt={alt} referrerPolicy="no-referrer" className="max-w-none bg-white" style={{ width: "250%" }} />
         ) : (
           <div className="flex h-full transition-transform duration-200 ease-out" style={{ transform: `translateX(calc(${-index * 100}% + ${drag}px))`, transitionDuration: drag ? "0ms" : undefined }}>
             {images.map((src) => (
               <div key={src} className="flex h-full w-full shrink-0 items-center justify-center bg-white">
-                <img src={src} alt={alt} draggable={false} className="max-h-full w-full object-contain p-4" />
+                <img src={src} alt={alt} draggable={false} referrerPolicy="no-referrer" className="max-h-full w-full object-contain p-4" />
               </div>
             ))}
           </div>
@@ -150,6 +150,7 @@ export function ProductGallery({ product, start = 0 }: { product: Product; start
                   src={src}
                   alt={i ? `${alt} ${num(i + 1)}` : alt}
                   draggable={false}
+                  referrerPolicy="no-referrer"
                   loading={i === active ? "eager" : "lazy"}
                   fetchPriority={i === start ? "high" : "auto"}
                   style={i === active && lens ? { transform: `scale(${ZOOM})`, transformOrigin: `${lens.x}% ${lens.y}%` } : undefined}
@@ -220,7 +221,7 @@ export function ProductGallery({ product, start = 0 }: { product: Product; start
                   i === active ? "ring-2 ring-brand" : "ring-line hover:ring-brand/60"
                 }`}
               >
-                <img src={src} alt={`${product.brand} ${product.name} ${num(i + 1)}`} loading="lazy" className="size-full object-contain p-1" />
+                <img src={src} alt={`${product.brand} ${product.name} ${num(i + 1)}`} loading="lazy" referrerPolicy="no-referrer" className="size-full object-contain p-1" />
               </button>
             ))}
           </div>

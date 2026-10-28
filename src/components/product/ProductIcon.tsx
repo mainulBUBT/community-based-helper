@@ -27,7 +27,7 @@ const ICON_SIZE = { xs: 18, sm: 22, md: 28, lg: 40, fill: 48 };
 export function ProductIcon({ product, size = "md", plain = false }: { product: Product; size?: keyof typeof BOXES; plain?: boolean }) {
   const src = product.images?.[0];
   if (src) {
-    return <img src={src} alt={`${product.brand} ${product.name}`} loading="lazy" className={`shrink-0 object-contain ${plain ? "" : "rounded-sm bg-surface ring-1 ring-line"} ${BOXES[size]} ${PADS[size]}`} />;
+    return <img src={src} alt={`${product.brand} ${product.name}`} loading="lazy" referrerPolicy="no-referrer" className={`shrink-0 object-contain ${plain ? "" : "rounded-sm bg-surface ring-1 ring-line"} ${BOXES[size]} ${PADS[size]}`} />;
   }
   const Icon = ICONS[iconKind(product)];
   return (

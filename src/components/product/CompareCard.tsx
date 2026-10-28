@@ -44,7 +44,7 @@ export function CompareCard({ picks }: { picks: ComparePick[] }) {
         <div className="flex size-22 shrink-0 items-center justify-center rounded-md border border-line-soft bg-white">
           {photo ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={photo} alt={`${product.brand} ${product.name}`} loading="lazy" className="size-full object-contain p-2" />
+            <img src={photo} alt={`${product.brand} ${product.name}`} loading="lazy" referrerPolicy="no-referrer" className="size-full object-contain p-2" />
           ) : (
             <ProductIcon product={product} size="fill" plain />
           )}

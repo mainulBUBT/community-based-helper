@@ -106,7 +106,7 @@ function DetailsForm({ product, onSaved }: { product: Product; onSaved: () => vo
               {previews.map((src, i) => (
                 <span key={src + i} className={`flex size-20 items-center justify-center overflow-hidden rounded-lg border bg-white p-1.5 ${i === 0 ? "border-brand" : "border-line"}`}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={src} alt="" className="size-full object-contain" />
+                  <img src={src} alt="" referrerPolicy="no-referrer" className="size-full object-contain" />
                 </span>
               ))}
             </div>

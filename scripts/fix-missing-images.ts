@@ -53,6 +53,7 @@ async function imageOk(ctx: BrowserContext, url: string): Promise<boolean> {
   return (await page.evaluate(
     `new Promise((resolve) => {
       const img = new Image();
+      img.referrerPolicy = "no-referrer";
       img.onload = () => resolve(img.naturalWidth > 0);
       img.onerror = () => resolve(false);
       setTimeout(() => resolve(false), 15000);
@@ -64,7 +65,7 @@ async function imageOk(ctx: BrowserContext, url: string): Promise<boolean> {
 let verifyPort: number | null = null;
 let verifyPagePromise: Promise<Page> | null = null;
 
-// খালি লোকাল পাতা — ছবি লোড-টেস্টের উৎস referer হিসেবে সাইটের মতো পরের ডোমেইন লাগে।
+// খালি লোকাল পাতা থেকে ছবি লোড-টেস্ট; সাইটের মতোই referer ছাড়া (img এ no-referrer)।
 async function startVerifyServer(): Promise<number> {
   const server: Server = createServer((_req, res) => {
     res.writeHead(200, { "content-type": "text/html" });
@@ -79,10 +80,6 @@ function verifyPage(ctx: BrowserContext) {
   verifyPagePromise ??= (async () => {
     const port = verifyPort ?? (await startVerifyServer());
     const page = await ctx.newPage();
-    // ছবির অনুরোধে সাইটের আসল referer পাঠানো হয় — CDN ব্লকলিস্ট তাতেই ধরা পড়ে।
-    await page.route(/^https?:\/\//i, (route) =>
-      route.continue({ headers: { ...route.request().headers(), referer: "https://dordam.app/" } }),
-    );
     await page.goto(`http://127.0.0.1:${port}/`, { waitUntil: "domcontentloaded" });
     return page;
   })();
