@@ -5,6 +5,7 @@ import { groupBy, pool } from "../lib/pool";
 import { candidates, single } from "../lib/variants";
 import type { Page } from "../stores/page";
 import { applyApproved } from "../services/apply-approved";
+import { autoReview } from "../services/auto-review";
 import { markGone, refreshOffer, saveProductImage } from "../services/offers";
 import { readPage } from "../stores/page";
 import { storeFor } from "../stores";
@@ -139,6 +140,8 @@ export async function refreshPrices(): Promise<string> {
   }
 
   if (rows.length > 0 && tally.checked === 0) throw new Error(`একটা দামও আনা যায়নি${blockedNote()}; ${errors.slice(0, 3).join("; ")}`);
+  // সবার শেষে, তাই আজকের অনুমোদন বসে পরের run এ; মাঝে অ্যাডমিন ফিরিয়ে নিতে পারেন
+  const reviewed = outOfTime() ? null : await autoReview().catch((error) => ({ approved: 0, rejected: 0, left: 0, errors: [message(error)] }));
   const skipped = rows.length - tally.checked - tally.unmatched - tally.failed - tally.blocked;
   return [
     `${count(tally.checked, "দেখেছে")}, ${count(tally.changed, "দাম বদলেছে")}`,
@@ -152,6 +155,8 @@ export async function refreshPrices(): Promise<string> {
     applied ? `${count(applied, "অনুমোদিত")} বসানো হয়েছে` : "",
     notApplied.length ? `${count(notApplied.length, "অনুমোদিত")} বসানো যায়নি: ${notApplied.slice(0, 3).join("; ")}` : "",
     kept.length ? `${count(kept.length, "অনুমোদিত")} বসানো হয়নি, কারণ ওই ভার্সনে দোকানের অন্য লিংকের দাম আগে থেকেই আছে: ${kept.slice(0, 3).join("; ")}` : "",
+    reviewed && reviewed.approved + reviewed.rejected ? `যাচাই বাকি থেকে AI ${count(reviewed.approved, "অনুমোদন")}, ${count(reviewed.rejected, "বাতিল")} (${count(reviewed.left, "মানুষের জন্য")})` : "",
+    reviewed?.errors.length ? `AI যাচাইয়ে সমস্যা: ${reviewed.errors.slice(0, 2).join("; ")}` : "",
   ]
     .filter(Boolean)
     .join(", ") + blockedNote();

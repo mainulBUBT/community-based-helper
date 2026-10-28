@@ -49,10 +49,12 @@ export async function reviewedUrls(sellerId: string): Promise<Set<string>> {
 // AI কে শেখাতে: অ্যাডমিন সম্প্রতি কোন মিল ঠিক আর কোনটা ভুল বলেছেন (প্রত্যাখ্যানের guess টাই ভুল মিল)
 export async function decisionExamples(limit = 20): Promise<string[]> {
   const rows = await must(
-    db().from("review_queue").select("status, payload").eq("kind", "match").neq("status", "pending").order("resolved_at", { ascending: false }).limit(limit),
+    db().from("review_queue").select("status, payload").eq("kind", "match").neq("status", "pending").order("resolved_at", { ascending: false }).limit(limit * 2),
   );
+  // AI এর নিজের সিদ্ধান্ত থেকে AI শেখে না, শুধু মানুষের
   return ((rows ?? []) as { status: string; payload: ReviewPayload }[])
-    .filter((r) => r.payload.listing && r.payload.guess)
+    .filter((r) => r.payload.listing && r.payload.guess && r.payload.decidedBy !== "ai")
+    .slice(0, limit)
     .map((r) => `${JSON.stringify(r.payload.listing.slice(0, 120))} → ${r.payload.guess}: ${r.status === "approved" ? "correct" : "wrong"}`);
 }
 
