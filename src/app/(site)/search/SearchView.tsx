@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
+import { startNavProgress } from "@/components/layout/NavProgress";
 import { ProductCard } from "@/components/product/ProductCard";
 import { BrandRow } from "@/components/search/BrandRow";
 import { FilterPanel, type Facets, type Filters } from "@/components/search/FilterPanel";
@@ -113,7 +114,9 @@ export function SearchView({ category, brand, initial }: { category?: string; br
       if (category) search.delete("category");
       const suffix = search.size ? `?${search}` : "";
       if (category && "category" in patch && patch.category !== category) {
-        router.push(`${patch.category ? categoryPath(prefix, patch.category) : `${prefix}/search/`}${suffix}`);
+        const href = `${patch.category ? categoryPath(prefix, patch.category) : `${prefix}/search/`}${suffix}`;
+        startNavProgress(href);
+        router.push(href);
       } else {
         router.replace(`${pathname}${suffix}`, { scroll: false });
       }

@@ -12,6 +12,17 @@ const isInternalNavigation = (event: MouseEvent) => {
   return url.pathname !== location.pathname || url.search !== location.search;
 };
 
+const START = "nav-progress:start";
+
+// লিংক ছাড়া কোড থেকে পাতা বদলালে (খোঁজা, পিছনে যাওয়া) বারটা এটা দিয়ে চালু হয়
+export function startNavProgress(href?: string) {
+  if (href) {
+    const url = new URL(href, location.href);
+    if (url.pathname === location.pathname && url.search === location.search) return;
+  }
+  window.dispatchEvent(new Event(START));
+}
+
 export function NavProgress() {
   const pathname = usePathname();
   const params = useSearchParams();
@@ -21,8 +32,13 @@ export function NavProgress() {
     const onClick = (event: MouseEvent) => {
       if (isInternalNavigation(event)) setState("loading");
     };
+    const onStart = () => setState("loading");
     document.addEventListener("click", onClick, true);
-    return () => document.removeEventListener("click", onClick, true);
+    window.addEventListener(START, onStart);
+    return () => {
+      document.removeEventListener("click", onClick, true);
+      window.removeEventListener(START, onStart);
+    };
   }, []);
 
   const location = `${pathname}?${params}`;

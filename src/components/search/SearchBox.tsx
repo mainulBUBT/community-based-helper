@@ -3,6 +3,7 @@
 import { Clock, Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useId, useRef, useState, type KeyboardEvent } from "react";
+import { startNavProgress } from "@/components/layout/NavProgress";
 import { ProductIcon } from "@/components/product/ProductIcon";
 import { SearchHint } from "@/components/search/SearchHint";
 import { useCategories } from "@/hooks/useCategories";
@@ -53,8 +54,10 @@ export function SearchBox({ defaultValue = "", variant = "bar", examples, onSear
     rememberSearch(value);
     setOpen(false);
     input.current?.blur();
-    if (onSearch) onSearch(value.trim());
-    else router.push(`${prefix}/search/${value.trim() ? `?q=${encodeURIComponent(value.trim())}` : ""}`);
+    if (onSearch) return onSearch(value.trim());
+    const href = `${prefix}/search/${value.trim() ? `?q=${encodeURIComponent(value.trim())}` : ""}`;
+    startNavProgress(href);
+    router.push(href);
   }
 
   function choose(option: Option) {
@@ -66,7 +69,9 @@ export function SearchBox({ defaultValue = "", variant = "bar", examples, onSear
     rememberSearch(query);
     setOpen(false);
     input.current?.blur();
-    router.push(`${prefix}/product/${option.summary.product.slug}/`);
+    const href = `${prefix}/product/${option.summary.product.slug}/`;
+    startNavProgress(href);
+    router.push(href);
   }
 
   function onKeyDown(event: KeyboardEvent<HTMLInputElement>) {

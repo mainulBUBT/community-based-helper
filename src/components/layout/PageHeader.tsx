@@ -3,6 +3,7 @@
 import { ChevronLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 import type { ReactNode } from "react";
+import { startNavProgress } from "@/components/layout/NavProgress";
 import { useI18n } from "@/hooks/useI18n";
 
 export function PageHeader({ title, actions }: { title?: string; actions?: ReactNode }) {
@@ -13,7 +14,11 @@ export function PageHeader({ title, actions }: { title?: string; actions?: React
       <button
         type="button"
         aria-label={t.common.back}
-        onClick={() => (history.length > 1 ? router.back() : router.push(`${prefix}/`))}
+        onClick={() => {
+          startNavProgress();
+          if (history.length > 1) router.back();
+          else router.push(`${prefix}/`);
+        }}
         className="-ml-2 flex size-11 items-center justify-center rounded-md hover:bg-surface-2"
       >
         <ChevronLeft size={24} aria-hidden="true" />
