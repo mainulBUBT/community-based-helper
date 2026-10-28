@@ -125,6 +125,20 @@ export function brandTokens(brand: string): string[] {
   return tokens(brand).filter((t) => !BRAND_STOP.has(t));
 }
 
+// যন্ত্রের নামের ঠিক পরের খালি সংখ্যা প্রজন্ম বা মডেল: "iPad mini 5" ≠ iPad mini (A17 Pro), "MatePad 12 X" ≠ MatePad 11.5"।
+// নামে, ভার্সনে (8GB → 8) বা ইঞ্চিতে থাকা সংখ্যা, আর পরে একক (5000 mAh) থাকলে নয়
+const GENERATIONAL = new Set(["mobile", "tablet", "laptop", "watch", "audio", "earbuds", "headphones"]);
+const UNIT = /^(?:mah|hz|db|w|v|nits?|mp|cm|mm|inch|gb|tb)$/;
+
+function otherModel(title: string, ordered: string[], required: string[], product: CatalogProduct): boolean {
+  if (!GENERATIONAL.has(product.category ?? "")) return false;
+  const at = Math.max(...required.map((t) => ordered.indexOf(t))) + 1;
+  const next = ordered[at];
+  if (!next || !/^\d{1,3}$/.test(next) || UNIT.test(ordered[at + 1] ?? "") || inch(title) === Number(next)) return false;
+  const known = [product.name, ...product.variants.map((v) => v.label)].flatMap(tokens).map((t) => t.replace(/(gb|tb|mm)$/, ""));
+  return !known.includes(next);
+}
+
 // ইঞ্চি আর বন্ধনীর চিপ নামের অংশ হলেও দোকানের লিংকে প্রায়ই থাকে না, তাই এগুলো বাধ্যতামূলক নয়, শুধু অমিল হলে বাদ
 function productFits(title: string, ordered: string[], product: CatalogProduct, rivals: Set<string>): boolean {
   const listing = new Set(ordered);
@@ -132,6 +146,7 @@ function productFits(title: string, ordered: string[], product: CatalogProduct, 
   const required = tokens(name);
   if (!required.every((t) => listing.has(t))) return false;
   if (!glued(name).every((parts) => adjacent(ordered, parts))) return false;
+  if (otherModel(title, ordered, required, product)) return false;
   const own = brandTokens(product.brand);
   const hasBrand = own.length > 0 && own.some((t) => listing.has(t));
   // লিস্টিংয়ে অন্য ব্র্যান্ডের নাম থাকলে পাতাটা ওঁদেরই — "Realme Buds 2" এই "Buds 2" নয়
