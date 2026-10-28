@@ -272,6 +272,15 @@ Lira Import আর Her Happy Skin যোগ হলো (robots.txt আর Terms �
 - **শেষ যাচাই:** মধু, খেজুর, রাউটার, নেকব্যান্ড/অডিওর ৪০৩টা লিংক আলাদা খুলে দেখা (HTTP, redirect, শিরোনামে মডেল/জাত/ওজন/প্যাক); ৮২টা পণ্যের সব ছবি ব্রাউজারে খোলে, পাশাপাশি সাজিয়ে চোখে মিলানো। Tenda TX12 Pro-র একই ছবি দুবার ছিল, Oraimo Necklace 5 আর Realme 5 Lite-এর বিজ্ঞাপনের ছবি প্রথমে ছিল — ঠিক করা।
 - worker: Othoba-র discover-এ `/honey` আর `/dates`।
 
+### মধু আর খেজুর, আরও খোঁজা (২৮ অক্টোবর ২০২৬)
+
+মধুতে ৮টা নতুন পণ্য (১৩ → ২১), দাম ৬২ → ৯৬; খেজুরে নতুন জাত নয়, ৩টা জাতে 250g আর একটা দাম যোগ (৩৪ → ৪১)। প্রতিটা নতুন পণ্য ২টা আলাদা দোকানে, ওজন হুবহু মিলিয়ে। `worker:check` মধু আর খেজুরে ০ মেলেনি (Chaldal মাঝে মাঝে 404 দেয়, আবার চালালে ঠিক), সব ছবি ২০০ image/*। কোডে বদল নেই।
+
+- **নতুন মধু:** ACI Pure Multifloral 250g (Arogga, Chaldal), Dabur Sundarbans 500g (Arogga, Chaldal), Ashol Mustard Flower আর Ashol Sundarban Flower 250g/500g (Arogga, Rokomari; Arogga-র শিরোনামে ওজন নেই, ছবির ফাইলনাম আর "Pack Size" থেকে মেলানো), Acure Mixed Flower 250g/500g (Rokomari-র "Acure Honey (Modhu)"-এর পাতায় Honey Type: Mix Flower), Khaas Food Black Seed 250g/500g/1kg (Arogga; 500g Chaldal-এও, স্টকে নেই), Shefa'a Natural Honey 500g (Chaldal, Othoba), American Gourmet Honey 500g স্কুইজ বোতল (Arogga স্টকে নেই, Othoba; কাচের জার আলাদা পণ্য বলে বাদ)।
+- **আগের পণ্যে দাম/ভার্সন:** Dabur 100g আর 500g আর Saffola 100g আর 250g-এ Chaldal; Al Shifa Natural 500g-এ Chaldal ("Natural Floral" নামে, ছবিতে একই বোতল) আর 1kg-এ Rokomari; Al Shifa Black Forest 250g-এ Chaldal; Karkuma 400g-এ MedEasy আর নতুন 300g ভার্সন (Arogga, MedEasy)। খেজুরে আজওয়া, মরিয়ম আর মেডজুলে 250g (Arogga-র Farmer's Gold, Othoba), মেডজুল 1kg-এ Chaldal।
+- **খোঁজা হলো, নেওয়া হলো না:** PRAN Honey (শুধু Othoba-য়), Dabbas, Zahidi, Farida, Sagai, চড়া (তিউনিসিয়া/আলজেরিয়া) খেজুর (শুধু Othoba-র বিক্রেতারা, দ্বিতীয় দোকান নেই), Allah Shafi (Chaldal-এ 500g, Othoba-য় শুধু 1kg), Farmer's Gold লিচু/সরিষা (Arogga-য় ml বা ওজন লেখা নেই), Green Harvest (Arogga 600g, Rokomari 150/300/500g)। Rokomari-তে ক্যাটাগরির দ্বিতীয় পাতা (`?page=`) robots-এ বন্ধ, তাই শুধু প্রথম পাতা থেকে লিংক।
+- **নতুন দোকান যাচাই:** MedEasy আগেই generic ভাবে পড়া হয় (sitemap-এ মধু শুধু Karkuma), তাই শুধু অফার যোগ। বাদ: Sindabad (robots খোলা, sitemap-এ Dabur/Al Shifa/খেজুর আছে, কিন্তু পাতা SPA, HTML-এ দাম নেই), Lazz Pharma (sitemap-এ অনেক মধু, কিন্তু Next.js পাতায় দাম JavaScript দিয়ে আসে; তার ওপর মার্কেটপ্লেস), Daily Shopping (`dailyshoppingbd.com` এখন Othoba-তে redirect), BanglaShoppers (Magento, robots খোলা, কিন্তু মধু/খেজুর বলতে শুধু আমদানি করা Manuka/Tesco, মেলানোর মতো কিছু নেই), e-mart (শুধু স্কিনকেয়ার), Osudpotro (sitemap নেই)।
+
 ### রাউটার (২৬ অক্টোবর ২০২৬)
 
 নতুন ক্যাটাগরি `router` (migration `20261026110000_router-category.sql`, ভার্সনের ঘর `edition`), ২৫টা পণ্য, ১৬৫টা দাম, নতুন দোকান লাগেনি: Star Tech, Gadget & Gear, Global Brand, Sumash Tech, Apple Gadgets, Diamu, Kry International, PCB Store, Gadget Breeze। Star Tech-এর `/networking/router` ক্যাটাগরি discover-এ যোগ। প্রতিটা পাতা worker parser দিয়ে লাইভ পড়া, `worker:check` ০ মেলেনি, সব ছবি ২০০ image/*, স্পেক Star Tech থেকে।
@@ -402,6 +411,31 @@ Samsung-এর S/Z সিরিজ, Pixel আর বড় ব্র্যান
 - BabyCare: ডায়াপার (Savlon Twinkle, NeoCare Premium), ওয়াইপস, লোশন/ক্রিম/শ্যাম্পু; ক্যাটাগরি পাতায় ২৪টা করে পণ্য, `product-item` টাইলের `itemprop="url"` + `name` থেকে listing।
 - Zapatos: নিজেদের ব্র্যান্ডের জুতা (Hyper Stride, Urban Heritage) — ক্যাটালগের ১:১ কপি মডেলের সাথে মেলে না; ওদের মডেল ক্যাটালগে আনা হলে কাজে লাগবে (প্লাম্বিং তৈরি)।
 - HNS Tech: Apple-কেন্দ্রিক (AirPods, Watch, Mac, iPad; অনেকগুলো USA ভার্সন)। robots খোলা; sitemap/JSON-LD নেই বলে `/shop` পেজিনেশন ঘুরে listing নেয়, পণ্য পাতার `data-variants='[{…}]'` JSON থেকে কনফিগ-ভেদে দাম-স্টক (`hnstechVariants`)। pre-order পাতার দাম ০ (বুকিং ফি আলাদা), তাই সেগুলো নিজে থেকেই বাদ। নমুনা দাম লাইভে মিলিয়ে দেখা (AirPods Pro 3 ৳২৫,৫০০, Galaxy Watch8 ৪০mm ৳২৬,০০০)।
+
+### পুরনো কিন্তু চলতি মডেল (২৮ অক্টোবর ২০২৬)
+
+শুধু নতুন প্রজন্ম ছিল; বাজারে যা এখনো বেশি বিকোয় (M1–M4 Mac, S24/S25, iPhone 15/16, পুরনো ট্যাব) ছিল না। ২০টা দোকানের sitemap listing থেকে লিংক বাছা, প্রতিটা পাতা curl আর `worker:check` দিয়ে লাইভ পড়া। ১১৪ পণ্য, ৩২৩ ভার্সন, ১,৪৭৭ দাম, ছয়টা batch ফাইলে; পুরো ক্যাটালগের `worker:check`-এ নতুন দামের একটাও অমিল নেই।
+
+| ফাইল | পণ্য | দাম | কী আছে |
+|---|---|---|---|
+| `mac-air-older.json` | ৭ | ১০৩ | MacBook Air 13" M1, 13"/15" M2, M3, M4 |
+| `mac-pro-older.json` | ১০ | ১০৭ | MacBook Pro 14" M4/M4 Pro/M4 Max, 16" M4 Pro/M4 Max, Mac mini M4/M4 Pro, Mac Studio M4 Max/M3 Ultra, iMac 24" M3 |
+| `iphone-older.json` | ৯ | ১৫৬ | iPhone 16 Plus/Pro/Pro Max/16e, 15/15 Plus/15 Pro/15 Pro Max, 14 |
+| `samsung-more.json` | ২০ | ২৪২ | Galaxy S25/Plus/Ultra/FE/Edge, S24/S24 Ultra/S24 FE, Z Fold7/Flip7/Flip7 FE, A56/A36/A26 5G, A16 4G/5G, A06, M36/M17/M47 5G |
+| `mobile-more.json` | ৩৭ | ৪৭১ | Pixel 9/9 Pro/9 Pro XL/9a, 10/10 Pro/10 Pro XL/10 Pro Fold/10a; Redmi Note 14 আর 15 সিরিজ, Redmi 15/15C, Xiaomi 15/15T/15T Pro, POCO X7 Pro/F7/F7 Pro/M7 5G/M7 Pro 5G; OnePlus 13/13R/13s/Nord 5; Nothing Phone 3/3a/3a Pro, CMF Phone 2 Pro |
+| `tablet-more.json` | ৩১ | ৩৯৮ | iPad (A14), iPad Air M2/M3 11"/13", iPad Pro M4 11"/13", iPad mini (A15); Galaxy Tab S9 FE, S10 FE/FE Plus/Plus/Ultra, S11/S11 Ultra, A9 Plus, A11/A11 Plus; Redmi Pad 2 (9.7"/11")/2 Pro/Pro/SE 11"/SE 8.7", Xiaomi Pad 7 Pro/Pad 6; OnePlus Pad 3/Pad Lite/Pad Go 2; Honor Pad X8a/Pad 10 |
+
+- **নাম:** `+` নয়, `Plus` (Redmi Note 14/15 Pro Plus 5G, Galaxy Tab A9 Plus)। `import-catalog`-এর slug `+` ফেলে দেয়, তাই "Note 14 Pro+ 5G" আর "Note 14 Pro 5G" একই slug পেয়ে দ্বিতীয়টা চুপচাপ বাদ পড়ত।
+- **স্টক:** পুরনো মডেলের অনেক দাম `inStock: false` (Gadget & Gear-এর প্রায় সব iPad/Mac/iPhone 16, M1–M3 Air)। S24/S24 Ultra, Tab S9 FE, Tab A9 Plus, iPad Air 13" M2 শুধু Dazzle-এ স্টকে; POCO M7 Pro 5G ২ দোকানে, দুটোই স্টক আউট।
+- **অফিসিয়াল দাম:** Apple-এ Gadget & Gear-এর পাতার দাম, Samsung/Xiaomi/OnePlus-এ দুই+ official দোকান মিললে, নাহলে `null`। S24 FE-তে Gadget & Gear/Mobile Buzz-এর "official" ৳১,২৪,৯৯৯–১,৩২,১৯৯ ধরা হয়নি: তাহলে ৪০% সীমায় ৳৪৯–৫৭ হাজারের আনঅফিসিয়াল দাম বাদ পড়ত।
+- **Pixel:** `officialPrice` `null`, কিন্তু Star Tech, Gadget & Gear আর Sumash-এর "(Official)" পাতা ১ বছর অফিসিয়াল ওয়ারেন্টি লেখে, তাই সেই দামগুলো `official`।
+- **Star Tech:** পুরনো Mac, iPhone 15/16, S25/Fold7/A36, Pixel 9a/10a-র পাতা "To be announced"; parser তবু SEO বাক্য থেকে পুরনো দাম পায় (উপরে ল্যাপটপ অংশের দুর্বলতা), তাই এসব পাতা অফার হিসেবে নেওয়া হয়নি, শুধু `specsSource`।
+- **বাদ:** iPhone 13 (২ দোকানে স্টক), Galaxy S24 Plus আর A06 5G (কোথাও স্টক নেই), M06/M07/M16/M35/M56 (৩ দোকান হয়নি), Honor Pad X9, MatePad SE 11 (সাইজ অস্পষ্ট), Lenovo Tab M11/Tab Plus/Idea Tab Pro, Realme Pad 2। পাতা ধরে বাদ: ৳১০,০০০ বা ৳০ placeholder, বুকিং ফি, ছোট কনফিগের চেয়ে কম দামের বড় কনফিগ, "LTE" লেখা অপশন (worker "cellular" খোঁজে), কিবোর্ড/পেন বান্ডেল, Apple Gadgets-এর China/refurbished/used অপশন।
+- **নতুন দোকান ক্যাটালগে:** CustomMacBD, iStockBD, MacZen BD, HNS Tech, MC Solution (Mac পাতা "International Warranty", তাই unofficial), PCB Store; সবই আগে থেকে worker-এ ছিল।
+- **২ দোকানেই চলবে (মালিকের সিদ্ধান্ত, একই দিন):** পণ্যে দামসহ ২টা আলাদা দোকান থাকলেই নেওয়া (স্টক আউট দামও গোনা)। তাই আরও ১৯টা: iPhone 13, iPhone 14 Plus; Galaxy S24 Plus, A06 5G, M06 5G, M07, M16 5G, M17e 5G, M35 5G, M56 5G; Pixel 9 Pro Fold, Redmi 15 5G, POCO X7, POCO M7 Plus, OnePlus 13T, Nothing Phone 3a Lite; Honor Pad X9, Lenovo Tab M11, OnePlus Pad Go। মোট ১৩৩ পণ্য, ৩৬২ ভার্সন, ১,৫৮৮ দাম।
+- **তবুও বাদ (২ দোকানও নেই):** iPhone 13 mini (একটাই আসল দাম), Lenovo Idea Tab Pro (শুধু Kry; Dazzle-এরটা পেন-বান্ডেল), Lenovo Tab Plus (কোনো দোকানে নেই), MatePad SE 11 (শুধু Dazzle; Gadget & Gear-এরটা 10.4"), Realme Pad 2 (কোথাও নেই; Pad 2 Lite শুধু Kry)। ওয়েবে এদের দাম শুধু GSMArena BD / Mobile57 / MobileDokan-এর মতো তথ্য-সাইটে, দোকানে নয়। Ryans (Cloudflare challenge) আর TechLand (403) দেখা যায়নি।
+- **`sameProduct` ঠিক করা:** `SIZE_TAIL` "5g"-কে ৫ গ্রাম ধরত, তাই "Galaxy A06" আর "Galaxy A06 5G" (বা "Redmi 15" আর "Redmi 15 5G") একই পণ্য বলে build সতর্ক করত, আর অ্যাডমিনে এমন নামের পণ্য যোগ আটকাত। এখন `2g`–`5g` সাইজ নয়।
+- **খেয়াল:** Arafa Telecom এখন সব পাতায় bot challenge ("One moment, please") দেয়, পুরনো ৬৩টা দাম সিঙ্ক হচ্ছে না; Sell Tech-এর ২৬টাও মিলছে না। এগুলো এই ব্যাচের নয়।
 
 ## যা নেওয়া হবে না, আর কেন
 

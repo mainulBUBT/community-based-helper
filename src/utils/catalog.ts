@@ -4,7 +4,7 @@ export const byPrice = (a: { price: number }, b: { price: number }) => a.price -
 
 // বানান আর ফাঁকা জায়গা বাদে একই নাম, অথবা শুধু শেষে সাইজ বাড়তি ("Galaxy Watch8" আর "Galaxy Watch 8 40mm") মানে একই পণ্য
 const nameKey = (brand: string, name: string) => `${brand} ${name}`.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
-const SIZE_TAIL = /^\d+(?:mm|gb|tb|ml|g|mah|inch|in)$/;
+const SIZE_TAIL = /^(?![2-5]g$)\d+(?:mm|gb|tb|ml|g|mah|inch|in)$/;
 
 export function sameProduct(a: { brand: string; name: string }, b: { brand: string; name: string }) {
   const [x, y] = [nameKey(a.brand, a.name), nameKey(b.brand, b.name)].sort((p, q) => p.length - q.length);

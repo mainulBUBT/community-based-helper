@@ -1,0 +1,2377 @@
+{
+ "category": "apple",
+ "sites": [
+  {
+   "name": "Star Tech",
+   "website": "https://www.startech.com.bd",
+   "note": "iPhones sold with BTRC-approved one-year Apple warranty (official). iPhone 16/16e/16 Plus/16 Pro/16 Pro Max/15/15 Pro pages show 'To be announced' (no offer); iPhone 15 Plus and 15 Pro Max priced. Struck price used as oldPrice. Used as specsSource."
+  },
+  {
+   "name": "Gadget & Gear",
+   "website": "https://gadgetandgear.com",
+   "note": "Apple authorised reseller, official. Cash price = discountedPrice in page data. iPhone 16 Plus/16 Pro/16 Pro Max/16e/14 pages used; all 16-series are Stock Out, iPhone 14 128GB in stock. iPhone 15-series and the iPhone 16 Pro 1TB page are not used as offers because the worker reads an accessory price from them, but their page-data regular prices are used as officialPrice."
+  },
+  {
+   "name": "Apple Gadgets",
+   "website": "https://www.applegadgetsbd.com",
+   "note": "Unofficial imports; per-variant price/status with region options. 'Just Active' (activated) and 'Apple Certified Refurbished' options excluded; 'Inactive'/'Regular' = new. Separate '-0fficial' iPhone 15 Pro page (official, stock out)."
+  },
+  {
+   "name": "Sumash Tech",
+   "website": "https://www.sumashtech.com",
+   "note": "Separate '-official' pages (official) and international pages (region per variant). Official pages carry no discount (price = MRP). iPhone Duo listing only shows a 10,000 booking amount, skipped."
+  },
+  {
+   "name": "Kry International",
+   "website": "https://kryinternational.com",
+   "note": "Unofficial pages with region per variant (USA, JAPAN, AUS, GLOBAL, Hong Kong, Singapore, Canada, UK, IND) plus '-official' pages. iPhone Duo listing is a 20,000 booking price, skipped."
+  },
+  {
+   "name": "Executive Machines",
+   "website": "https://executivemachines.com",
+   "note": "Apple Authorised Reseller, one page per storage, official warranty; widest official coverage incl. iPhone Duo and 2TB models; iPad mini and some iPad configs not listed."
+  },
+  {
+   "name": "Diamu",
+   "website": "https://diamu.com.bd",
+   "note": "WooCommerce, unofficial, per-variant region prices. Only iPhone 16 Plus and 16 Pro Max have prices; 15-series, 16 Pro and 16e pages are out of stock with no price."
+  },
+  {
+   "name": "Dazzle",
+   "website": "https://dazzle.com.bd",
+   "note": "Unofficial regional variants (JP/MEA, SG/AUS/TH, USA, HK/CH) in page data; only active, non-TBA variants used. MRP shown is inflated. Some variant data looks wrong (17 Pro Max 2TB cheaper than 1TB) and was skipped. iPhone Duo is a 10,000 booking only; no 17e/16e prices."
+  },
+  {
+   "name": "Mobile Buzz BD",
+   "website": "https://mobilebuzzbd.com",
+   "note": "WooCommerce; per-option price and stock. Only the iPhone 16e page has storage options (with region); other older-iPhone pages show one price without a storage, so they are skipped (iPhone 15 page shows a 10,000 placeholder)."
+  },
+  {
+   "name": "CustomMacBD",
+   "website": "https://custommacbd.com",
+   "note": "Shopify, unofficial imports 'with Apple International Warranty claim support'; per-variant price with SIM/region options (1 SIM + eSIM by country, USA dual eSIM, HK/CH dual physical SIM). Most older-iPhone options are sold out but keep a listed price. A few sold-out options look stale (iPhone 14 256GB SG cheaper than 128GB, iPhone 16 Plus 512GB cheaper than 256GB) and were skipped."
+  },
+  {
+   "name": "iStockBD",
+   "website": "https://istockbd.com",
+   "note": "Shopify, unofficial new stock; per-storage price (colors same price), region only on some pages (iPhone 14: Global/USA/HK). Out-of-stock options priced 0 skipped (iPhone 15 512GB)."
+  },
+  {
+   "name": "MacZen BD",
+   "website": "https://www.maczenbd.com",
+   "note": "Next.js shop, unofficial; iPhone pages list storage/SIM combinations but only the priced ones (usually base storage) are used."
+  },
+  {
+   "name": "PCB Store",
+   "website": "https://pcbstore.com.bd",
+   "note": "PC/gadget store with a few colour-and-storage-specific iPhone listings (stock out, page price kept); importer channel, treated unofficial."
+  }
+ ],
+ "products": [
+  {
+   "brand": "Apple",
+   "name": "iPhone 16 Plus",
+   "category": "mobile",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "128GB",
+     "attributes": {
+      "storage": "128GB"
+     },
+     "officialPrice": 184999
+    },
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 204999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Black",
+    "White",
+    "Pink",
+    "Teal",
+    "Ultramarine"
+   ],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-16-Plusg-6135.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1052/iphone_16_plus_black.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/48392/iPhone-16-Plus-price-in-Bangladesh-Teal.jpg",
+    "https://cdn.executivemachines.com/wp-content/uploads/2024/10/Iphone-16-Plus.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-16-plus",
+   "offers": [
+    {
+     "variant": "128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-16-plus",
+     "price": 98990,
+     "oldPrice": 137000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-16-plus-price-in-bd",
+     "price": 101000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan/India/UK/Canada",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-16-plus",
+     "price": 102499,
+     "oldPrice": 105499,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-16-plus",
+     "price": 103500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-16-plus/",
+     "price": 104500,
+     "oldPrice": 110000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-16-plus",
+     "price": 104999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16-plus",
+     "price": 107999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-16-plus-128-gb/",
+     "price": 135000,
+     "oldPrice": 184999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-16-plus",
+     "price": 184999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-16-plus",
+     "price": 119990,
+     "oldPrice": 145000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-16-plus",
+     "price": 119999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "UK",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-16-plus-price-in-bd",
+     "price": 121000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16-plus",
+     "price": 121999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-16-plus-256-gb/",
+     "price": 184999,
+     "oldPrice": 204999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-16-plus-256gb",
+     "price": 204999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16-plus",
+     "price": 131900,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-16-plus",
+     "price": 139990,
+     "oldPrice": 159000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia/Singapore/UAE",
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 16 Pro",
+   "category": "mobile",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "128GB",
+     "attributes": {
+      "storage": "128GB"
+     },
+     "officialPrice": 209999
+    },
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 229999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": 274999
+    },
+    {
+     "label": "1TB",
+     "attributes": {
+      "storage": "1TB"
+     },
+     "officialPrice": 319999
+    }
+   ],
+   "colors": [
+    "Black Titanium",
+    "White Titanium",
+    "Natural Titanium",
+    "Desert Titanium"
+   ],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-16-Pro-3710.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1053/iphone_16_pro_Desert_Titanium.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/48284/iPhone-16-Pro-price-in-Bangladesh-Black-Titanium.jpg",
+    "https://assets.gadgetandgear.com/upload/media/iphone-16-pro-128gb-natural-titanium.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-16-pro",
+   "offers": [
+    {
+     "variant": "128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-16-pro",
+     "price": 119499,
+     "oldPrice": 121500,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Hong Kong/China",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-16-pro",
+     "price": 119499,
+     "oldPrice": 150000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-16-pro",
+     "price": 121490,
+     "oldPrice": 159000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Hong Kong/China",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "MacZen BD",
+     "url": "https://www.maczenbd.com/products/iphone/iphone-16-pro",
+     "price": 121500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-16-pro-price-in-bd",
+     "price": 123000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16-pro",
+     "price": 125499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-16-pro",
+     "price": 209999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-16-pro",
+     "price": 127999,
+     "oldPrice": 160000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-16-pro-price-in-bd",
+     "price": 133000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16-pro",
+     "price": 137999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-16-pro",
+     "price": 139990,
+     "oldPrice": 173000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Hong Kong/China",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-16-pro-256gb",
+     "price": 229999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-16-pro",
+     "price": 146999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-16-pro-price-in-bd",
+     "price": 151000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-16-pro",
+     "price": 168990,
+     "oldPrice": 219990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16-pro",
+     "price": 174999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-16-pro-512gb",
+     "price": 274999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-16-pro-price-in-bd",
+     "price": 181000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-16-pro",
+     "price": 188990,
+     "oldPrice": 219990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16-pro",
+     "price": 194000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 16 Pro Max",
+   "category": "mobile",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 249999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": 294999
+    },
+    {
+     "label": "1TB",
+     "attributes": {
+      "storage": "1TB"
+     },
+     "officialPrice": 334999
+    }
+   ],
+   "colors": [
+    "Black Titanium",
+    "White Titanium",
+    "Natural Titanium",
+    "Desert Titanium"
+   ],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iphone-16-pro-max-desert-titanium-9520.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1054/iPhone_16_Pro_Max_-_Desert_Titanium.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/48347/iPhone-16-Pro-Max-price-in-Bangladesh-Natural-Titanium.jpg",
+    "https://cdn.executivemachines.com/wp-content/uploads/2024/10/Iphone-16-Pro-Max-1.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-16-pro-max",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-16-pro-max",
+     "price": 144499,
+     "oldPrice": 145499,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Singapore/UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-16-pro-max",
+     "price": 144499,
+     "oldPrice": 164000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-16-pro-max-price-in-bd",
+     "price": 144500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-16-pro-max",
+     "price": 144990,
+     "oldPrice": 189990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Singapore/UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16-pro-max",
+     "price": 144999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-16-pro-max/",
+     "price": 145999,
+     "oldPrice": 165000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "MacZen BD",
+     "url": "https://www.maczenbd.com/products/iphone/iphone-16-pro-max",
+     "price": 145999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-16-pro-max-price",
+     "price": 145999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Middle East",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/iphone-16-pro-max-desert-titanium-256gb",
+     "price": 160000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-16-pro-max-256-gb/",
+     "price": 173000,
+     "oldPrice": 249999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-16-pro-max",
+     "price": 199999,
+     "oldPrice": 249999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-16-pro-max-official",
+     "price": 249999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-16-pro-max-price-in-bd",
+     "price": 166000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-16-pro-max",
+     "price": 174490,
+     "oldPrice": 289990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16-pro-max",
+     "price": 174999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-16-pro-max",
+     "price": 183000,
+     "oldPrice": 185000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Singapore/UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-16-pro-max/",
+     "price": 184000,
+     "oldPrice": 195000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-16-pro-max-official",
+     "price": 294999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-16-pro-max-512gb",
+     "price": 294999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-16-pro-max-price-in-bd",
+     "price": 187000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-16-pro-max",
+     "price": 199790,
+     "oldPrice": 299990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16-pro-max",
+     "price": 201999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-16-pro-max",
+     "price": 202000,
+     "oldPrice": 210000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Singapore/UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/iphone-16-pro-max/",
+     "price": 203000,
+     "oldPrice": 205000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-16-pro-max-official",
+     "price": 334999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-16-pro-max-1tb",
+     "price": 334999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ],
+   "popular": true
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 16e",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "128GB",
+     "attributes": {
+      "storage": "128GB"
+     },
+     "officialPrice": 109999
+    },
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Black",
+    "White"
+   ],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-16ea-6820.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1794/iPhone_16e_Black.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/48646/iPhone-16e-price-in-Bangladesh-white.jpg",
+    "https://assets.gadgetandgear.com/upload/media/iphone-16e-white803.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-16e",
+   "offers": [
+    {
+     "variant": "128GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/iphone-16e/",
+     "price": 63999,
+     "oldPrice": 79999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-16e",
+     "price": 67499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-16e",
+     "price": 73499,
+     "oldPrice": 78000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-16e",
+     "price": 74490,
+     "oldPrice": 119990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16e-price-in-bd",
+     "price": 74999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-16e",
+     "price": 75000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-16e-price-in-bd",
+     "price": 75500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Japan/UK/India",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-16e",
+     "price": 99999,
+     "oldPrice": 109999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/iphone-16e/",
+     "price": 74999,
+     "oldPrice": 86250,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Singapore",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-16e",
+     "price": 77499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-16e",
+     "price": 77999,
+     "oldPrice": 103000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-16e",
+     "price": 79000,
+     "oldPrice": 85000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Australia",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/iphone-16e",
+     "price": 94990,
+     "oldPrice": 114990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-16e-price-in-bd",
+     "price": 95000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16e-price-in-bd",
+     "price": 96999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/iphone-16e/",
+     "price": 94999,
+     "oldPrice": 96999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-16e-price-in-bd",
+     "price": 104999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-16e-price-in-bd",
+     "price": 120000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Japan/UK/India",
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 15",
+   "category": "mobile",
+   "releaseYear": 2023,
+   "variants": [
+    {
+     "label": "128GB",
+     "attributes": {
+      "storage": "128GB"
+     },
+     "officialPrice": 119999
+    },
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Black",
+    "Blue",
+    "Green",
+    "Yellow",
+    "Pink"
+   ],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iphone-15-black-6777.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/680/iPhone_15_Black_1.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/48494/iPhone-15-price-in-Bangladesh-Black.jpg",
+    "https://cdn.executivemachines.com/wp-content/uploads/2023/10/I-Phone-15-Hero.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-15",
+   "offers": [
+    {
+     "variant": "128GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-15-price-in-bangladesh",
+     "price": 75500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "MacZen BD",
+     "url": "https://www.maczenbd.com/products/iphone/iphone-15",
+     "price": 80999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-15-price-in-bd",
+     "price": 81990,
+     "oldPrice": 103999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-15",
+     "price": 81990,
+     "oldPrice": 130000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-15",
+     "price": 84499,
+     "oldPrice": 87000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-15",
+     "price": 86999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/iphone-15-black-128gb-singapore-variant",
+     "price": 87000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15",
+     "price": 87499,
+     "oldPrice": 90000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Executive Machines",
+     "url": "https://executivemachines.com/product/iphone-15-128-gb/",
+     "price": 100000,
+     "oldPrice": 159999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-15",
+     "price": 84990,
+     "oldPrice": 99990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-15-price-in-bd",
+     "price": 99999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-15-price-in-bangladesh",
+     "price": 104000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India/UK",
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 15 Plus",
+   "category": "mobile",
+   "releaseYear": 2023,
+   "variants": [
+    {
+     "label": "128GB",
+     "attributes": {
+      "storage": "128GB"
+     },
+     "officialPrice": 179999
+    },
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 199999
+    }
+   ],
+   "colors": [
+    "Black",
+    "Blue",
+    "Green",
+    "Yellow",
+    "Pink"
+   ],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iphone-15-plus-green-3702.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/681/iPhone_15_Plus_Blue_International_1_1.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/48589/iPhone-15-Plus-price-in-Bangladesh-blue.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-15-plus",
+   "offers": [
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-plus",
+     "price": 84999,
+     "oldPrice": 114000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-15-plus",
+     "price": 85490,
+     "oldPrice": 119990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-15-plus-price-in-banlgadesh",
+     "price": 85500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India/UK/Canada",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-15-plus",
+     "price": 91499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Europe",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-15-plus",
+     "price": 91999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-15-plus-price-in-bd",
+     "price": 110499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-15-plus",
+     "price": 126500,
+     "oldPrice": 179999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-plus-official",
+     "price": 179999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-15-plus-official",
+     "price": 179999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-15-plus",
+     "price": 98990,
+     "oldPrice": 155000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-plus",
+     "price": 108999,
+     "oldPrice": 111000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-15-plus-price-in-banlgadesh",
+     "price": 119500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India/UK/Canada",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-15-plus-price-in-bd",
+     "price": 125499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-plus-official",
+     "price": 199999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 15 Pro",
+   "category": "mobile",
+   "releaseYear": 2023,
+   "variants": [
+    {
+     "label": "128GB",
+     "attributes": {
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 174999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": 199999
+    },
+    {
+     "label": "1TB",
+     "attributes": {
+      "storage": "1TB"
+     },
+     "officialPrice": 219999
+    }
+   ],
+   "colors": [
+    "Black Titanium",
+    "White Titanium",
+    "Blue Titanium",
+    "Natural Titanium"
+   ],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/682/iphone_15_pro__Natural_Titanium_3__2.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/48614/iPhone-15-Pro-price-in-Bangladesh-Blue-Titanium.jpg",
+    "https://cdn.shopify.com/s/files/1/1706/9177/files/iphone-15-pro-naturaltitanium-Custom-Mac-BD.jpg?v=1695040820"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-15-pro",
+   "offers": [
+    {
+     "variant": "128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-15-pro",
+     "price": 114990,
+     "oldPrice": 160000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-pro",
+     "price": 117999,
+     "oldPrice": 120000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-15-pro-price-in-bangladesh",
+     "price": 123000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "UK/Canada",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-15-pro",
+     "price": 125500,
+     "oldPrice": 140000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Singapore/UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-15-pro-price-in-bd",
+     "price": 127999,
+     "oldPrice": 164999,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-15-pro-0fficial",
+     "price": 175000,
+     "oldPrice": 195000,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-pro-official",
+     "price": 200000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-15-pro",
+     "price": 114499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-15-pro",
+     "price": 126500,
+     "oldPrice": 155000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Singapore/UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-15-pro",
+     "price": 129990,
+     "oldPrice": 171000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-pro",
+     "price": 129999,
+     "oldPrice": 144000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-15-pro-price-in-bangladesh",
+     "price": 136000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "UK/Canada",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-15-pro-price-in-bd",
+     "price": 138999,
+     "oldPrice": 175999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-15-pro-0fficial",
+     "price": 195000,
+     "oldPrice": 220000,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-pro-official",
+     "price": 220000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-15-pro-price-in-bangladesh",
+     "price": 141000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "UAE/Singapore",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-15-pro-price-in-bd",
+     "price": 167499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-15-pro-price-in-bangladesh",
+     "price": 178000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "UAE/Singapore",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-15-pro-price-in-bd",
+     "price": 190999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-15-pro",
+     "price": 209000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Hong Kong",
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 15 Pro Max",
+   "category": "mobile",
+   "releaseYear": 2023,
+   "variants": [
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": 204999
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "1TB",
+     "attributes": {
+      "storage": "1TB"
+     },
+     "officialPrice": 319999
+    }
+   ],
+   "colors": [
+    "Black Titanium",
+    "White Titanium",
+    "Blue Titanium",
+    "Natural Titanium"
+   ],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iphone-15-pro-max-black-titanium-6273.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/683/iphone_15_pro_max_Blue_Titanium_4_1.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/48558/iPhone-15-Pro-Max-price-in-Bangladesh-Natural-Titanium.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/iphone-15-pro-max",
+   "offers": [
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-pro-max",
+     "price": 130999,
+     "oldPrice": 139000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-15-pro-max",
+     "price": 131990,
+     "oldPrice": 199000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-15-pro-max",
+     "price": 135999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-15-pro-max",
+     "price": 140000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-15-pro-max-price-in-bangladesh",
+     "price": 141000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Singapore/UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-15-pro-max-price-in-bd",
+     "price": 143999,
+     "oldPrice": 176999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-pro-max-official",
+     "price": 240000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-15-pro-max",
+     "price": 144990,
+     "oldPrice": 223000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-15-pro-max",
+     "price": 145999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-15-pro-max-price-in-bd",
+     "price": 154499,
+     "oldPrice": 211999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-15-pro-max-price-in-bangladesh",
+     "price": 155000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Singapore/UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-pro-max",
+     "price": 159999,
+     "oldPrice": 168000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-15-pro-max",
+     "price": 202000,
+     "oldPrice": 279999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-15-pro-max-official",
+     "price": 279999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-pro-max-official",
+     "price": 280000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-15-pro-max-price-in-bangladesh",
+     "price": 194000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Singapore/UAE",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-pro-max",
+     "price": 196999,
+     "oldPrice": 200000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/iphone-15-pro-max",
+     "price": 223500,
+     "oldPrice": 301499,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/iphone-15-pro-max-official",
+     "price": 319999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-15-pro-max-official",
+     "price": 320000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 14",
+   "category": "mobile",
+   "releaseYear": 2022,
+   "variants": [
+    {
+     "label": "128GB",
+     "attributes": {
+      "storage": "128GB"
+     },
+     "officialPrice": 104999
+    },
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "512GB",
+     "attributes": {
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Midnight",
+    "Starlight",
+    "Blue",
+    "Purple",
+    "Yellow",
+    "Red"
+   ],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-14-Midnight-4715.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/766/iPhone_14_Purple_International_Warranty.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/48523/iPhone-14-Price-in-Bangladesh-Yellow.jpg"
+   ],
+   "specsSource": "https://www.gsmarena.com/apple_iphone_14-11861.php",
+   "offers": [
+    {
+     "variant": "128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-14",
+     "price": 67500,
+     "oldPrice": 71000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/apple-iphone-14-price-bd",
+     "price": 67999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-14",
+     "price": 67999,
+     "oldPrice": 77000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-14-price-in-bangladesh",
+     "price": 68000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-14",
+     "price": 68990,
+     "oldPrice": 100000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/iphone-14",
+     "price": 94999,
+     "oldPrice": 104999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-14",
+     "price": 99999,
+     "oldPrice": 102000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/apple-iphone-14-price-bd",
+     "price": 100999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/apple-iphone-14-price-bd",
+     "price": 123999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 14 Plus",
+   "category": "mobile",
+   "releaseYear": 2022,
+   "variants": [
+    {
+     "label": "128GB",
+     "attributes": {
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "256GB",
+     "attributes": {
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Midnight",
+    "Starlight",
+    "Blue",
+    "Purple",
+    "Yellow",
+    "Red"
+   ],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/769/iPhone_14_Plus_Purple_International.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/41148/iPhone-14-plus-Price-in-bangladesh-Purple.jpg",
+    "https://cdn.shopify.com/s/files/1/0471/6039/3896/files/iPhone14Plus.jpg?v=1755586446",
+    "https://cdn.shopify.com/s/files/1/1706/9177/products/iphone-14-Plus-purple-Custom-Mac-BD_711e42ee-78c0-4ef7-8504-5b0a383db544.jpg?v=1662618570"
+   ],
+   "specsSource": "https://www.gsmarena.com/apple_iphone_14_plus-11862.php",
+   "offers": [
+    {
+     "variant": "128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-14-plus",
+     "price": 81990,
+     "oldPrice": 90990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-14-plus",
+     "price": 82999,
+     "oldPrice": 85000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-14-plus",
+     "price": 83000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/apple-iphone-14-plus",
+     "price": 93999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/apple-iphone-14-plus",
+     "price": 99999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "256GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-14-plus",
+     "price": 103000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iPhone 13",
+   "category": "mobile",
+   "releaseYear": 2021,
+   "variants": [
+    {
+     "label": "128GB",
+     "attributes": {
+      "storage": "128GB"
+     },
+     "officialPrice": 94999
+    }
+   ],
+   "colors": [
+    "Midnight",
+    "Starlight",
+    "Blue",
+    "Pink",
+    "Green",
+    "Red"
+   ],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/3408-95471.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/180/iPhone_13_Red.webp",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/48546/iPhone-13-price-in-Bangladesh-Blue.jpg",
+    "https://cdn.shopify.com/s/files/1/1706/9177/products/iphone-13-pink-Custom-Mac-BD.jpg?v=1634647421"
+   ],
+   "specsSource": "https://www.gsmarena.com/apple_iphone_13-11103.php",
+   "offers": [
+    {
+     "variant": "128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-iphone-13",
+     "price": 61490,
+     "oldPrice": 89990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/iphone-13-price-bd",
+     "price": 61499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iphone-13",
+     "price": 62500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Singapore",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iphone-13",
+     "price": 62999,
+     "oldPrice": 70000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "128GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-iphone-13-price-in-bangladesh",
+     "price": 63000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  }
+ ]
+}

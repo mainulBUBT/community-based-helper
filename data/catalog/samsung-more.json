@@ -1,0 +1,4419 @@
+{
+  "category": "mobile",
+  "sites": [
+    {
+      "name": "Star Tech",
+      "website": "https://www.startech.com.bd",
+      "note": "Large official-warranty retailer; every phone page has a full spec table, regular vs discounted price, stock status and per-variant prices (variant price loaded by the page's own variation request). Best specsSource. Official stock only; sometimes undercuts official MRP."
+    },
+    {
+      "name": "Gadget & Gear",
+      "website": "https://gadgetandgear.com",
+      "note": "Authorised/official retailer chain; one URL per RAM/storage variant with JSON-LD price and stock, regular price exposed in page data. Prices track official MRP. Official stock only."
+    },
+    {
+      "name": "Sumash Tech",
+      "website": "https://www.sumashtech.com",
+      "note": "Sells both official ('-official' URLs) and unofficial/international stock as separate pages; per-variant price, discount and stock quantity in page data. Good for official vs grey comparison."
+    },
+    {
+      "name": "Kry International",
+      "website": "https://kryinternational.com",
+      "note": "Big official + unofficial catalogue with separate '-official' pages; unofficial variants carry a region code (IND, GLOBAL, Vietnam, Malaysia). Per-variant price and stock in page data. One page returned a transient 502 and succeeded on retry."
+    },
+    {
+      "name": "Apple Gadgets",
+      "website": "https://www.applegadgetsbd.com",
+      "note": "Official ('-official' URLs) and unofficial stock; full per-variant price, compare price and status (in-stock / pre-order / online-order) in page data. Unofficial pages do not state region, so condition there is inferred from the separate official listing and price gap."
+    },
+    {
+      "name": "Dazzle",
+      "website": "https://dazzle.com.bd",
+      "note": "Mostly unofficial/grey imports (variant names state Global/China) plus some official listings; good cheap-end reference. MRP shown is often inflated, so oldPrice there is the site's MRP, not the official price."
+    },
+    {
+      "name": "Diamu",
+      "website": "https://diamu.com.bd",
+      "note": "WooCommerce shop with unofficial stock; per-variant prices in page data. Thin coverage and many current models out of stock (Y31d, Realme 15 Pro, A17 5G were out of stock with no price)."
+    },
+    {
+      "name": "Mobile Buzz BD",
+      "website": "https://mobilebuzzbd.com",
+      "note": "WooCommerce; per-option price and stock, options sometimes carry official/unofficial/int/indian. A few options hold placeholder prices (Edge 70 12/256 at 10,000), skip those."
+    },
+    {
+      "name": "CustomMacBD",
+      "website": "https://custommacbd.com",
+      "note": "Shopify, unofficial imports; per-variant price with Single/Dual SIM options, many options sold out but keep a listed price. S25 Plus options are pre-order only and were skipped."
+    }
+  ],
+  "products": [
+    {
+      "brand": "Samsung",
+      "name": "Galaxy S25 Ultra",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 226999
+        },
+        {
+          "label": "12GB / 512GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "512GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "12GB / 1TB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "1TB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Titanium Silverblue",
+        "Titanium Black",
+        "Titanium Gray",
+        "Titanium Whitesilver"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S25-Ultra-5G-Titanium-Silver-Blue-1865.jpg",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1707/s25_ultra_Titanium_Whitesilver.webp",
+        "https://images.kryinternational.com/uploads/1745664015454-samsung-galaxy-s25-ultra-titanium-black.jpeg",
+        "https://assets.gadgetandgear.com/upload/media/samsung-galaxy-s25-ultra-grey648.jpeg"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-s25-ultra",
+      "offers": [
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s25-ultra",
+          "price": 101999,
+          "oldPrice": 130000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s25-ultra",
+          "price": 112499,
+          "oldPrice": 155000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s25-ultra",
+          "price": 100999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Vietnam",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s25-ultra",
+          "price": 113999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Vietnam",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/samsung-galaxy-s25-ultra",
+          "price": 226999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s25-ultra-5g",
+          "price": 99999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s25-ultra-5g",
+          "price": 113999,
+          "oldPrice": 115999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 1TB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s25-ultra-5g",
+          "price": 145000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s25-ultra-5g",
+          "price": 99990,
+          "oldPrice": 194990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s25-ultra-5g",
+          "price": 112990,
+          "oldPrice": 185990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 1TB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s25-ultra-5g",
+          "price": 149990,
+          "oldPrice": 189990,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/samsung-galaxy-s25-ultra-5g-price-in-bd",
+          "price": 101000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/samsung-galaxy-s25-ultra-5g-price-in-bd",
+          "price": 116000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 1TB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/samsung-galaxy-s25-ultra-5g-price-in-bd",
+          "price": 146000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/galaxy-s25-ultra/",
+          "price": 99000,
+          "oldPrice": 105000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/galaxy-s25-ultra/",
+          "price": 115000,
+          "oldPrice": 120000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ],
+      "popular": true
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy S25 Plus",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 181999
+        },
+        {
+          "label": "12GB / 512GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "512GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Navy",
+        "Icyblue",
+        "Mint",
+        "Silver Shadow"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S25+-5Ga-8345.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1712/s25_navy.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-s25-plus-icyblue.jpg",
+        "https://assets.gadgetandgear.com/upload/media/samsung-galaxy-s25-plus-silver726.jpeg"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-s25-plus",
+      "offers": [
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s25-plus",
+          "price": 91000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s25-plus",
+          "price": 93999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s25-plus-off",
+          "price": 181999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/samsung-galaxy-s25-plus",
+          "price": 181999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s25-plus",
+          "price": 100000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s25-plus",
+          "price": 115000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s25-plus",
+          "price": 98990,
+          "oldPrice": 125990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s25-plus",
+          "price": 103990,
+          "oldPrice": 134490,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s25-plus/",
+          "price": 83999,
+          "oldPrice": 86999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s25-plus/",
+          "price": 90999,
+          "oldPrice": 99999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s25-plus/",
+          "price": 171999,
+          "oldPrice": 199999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ],
+      "popular": true
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy S25",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "12GB / 128GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Navy",
+        "Icyblue",
+        "Mint",
+        "Silver Shadow"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S25-5Gaaaaa-6991.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1710/s25_mint.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-s25-2.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-s25",
+      "offers": [
+        {
+          "variant": "12GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s25",
+          "price": 73499,
+          "oldPrice": 80000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s25",
+          "price": 78999,
+          "oldPrice": 90000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s25",
+          "price": 82999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Vietnam",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s25-5g",
+          "price": 72999,
+          "oldPrice": 82000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s25-5g",
+          "price": 77499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s25-5g",
+          "price": 68990,
+          "oldPrice": 126990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s25-5g",
+          "price": 78990,
+          "oldPrice": 130990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s25-5g/",
+          "price": 70999,
+          "oldPrice": 80999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s25-5g/",
+          "price": 74999,
+          "oldPrice": 85999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 128GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/samsung-galaxy-s25-5g-price-in-bd",
+          "price": 75000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ],
+      "popular": true
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy S25 FE",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 99999
+        }
+      ],
+      "colors": [
+        "Navy",
+        "Icyblue",
+        "Jetblack",
+        "White"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-s25-fe/galaxy-s25-fe-01-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2785/Galaxy_S25_FE_-_Jetblack.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2983/white_25.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S25-FE-5Ga-9257.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-s25-fe",
+      "offers": [
+        {
+          "variant": "8GB / 256GB",
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/samsung-galaxy-s25-fe",
+          "price": 94300,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/samsung-galaxy-s25-fe",
+          "price": 99999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s25-fe-5g",
+          "price": 59999,
+          "oldPrice": 61000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s25-fe-5g",
+          "price": 68499,
+          "oldPrice": 70000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s25-fe-official",
+          "price": 99999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s25-fe",
+          "price": 60999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s25-fe",
+          "price": 67999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Vietnam",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s25-fe-official",
+          "price": 99999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s25-fe-5g",
+          "price": 60999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s25-fe-5g",
+          "price": 67999,
+          "oldPrice": 71000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s25-fe-5g-official",
+          "price": 99999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s25-fe",
+          "price": 61490,
+          "oldPrice": 66990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s25-fe",
+          "price": 67990,
+          "oldPrice": 82990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s25-fe/",
+          "price": 57999,
+          "oldPrice": 67850,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s25-fe/",
+          "price": 67999,
+          "oldPrice": 82225,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s25-fe/",
+          "price": 94999,
+          "oldPrice": 99999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/galaxy-s25-fe/",
+          "price": 61000,
+          "oldPrice": 63000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ],
+      "popular": true
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy S25 Edge",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "12GB / 512GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "512GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Titanium Silver",
+        "Titanium Jetblack",
+        "Titanium Icyblue"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-s25-edge/galaxy-s25-edge-06-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S25-Edge-5G-9445.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1708/Titanium_Silver.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-s25-edge.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-s25-edge",
+      "offers": [
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s25-edge",
+          "price": 76499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Vietnam",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s25-edge",
+          "price": 86500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s25-edge",
+          "price": 96500,
+          "oldPrice": 120000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s25-edge",
+          "price": 79990,
+          "oldPrice": 143990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s25-edge",
+          "price": 120890,
+          "oldPrice": 162990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s25-edge/",
+          "price": 69999,
+          "oldPrice": 95999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s25-edge/",
+          "price": 76999,
+          "oldPrice": 104500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/samsung-galaxy-s25-edge-5g-price-in-bd",
+          "price": 89000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/samsung-galaxy-s25-edge-5g-price-in-bd",
+          "price": 99000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s25-edge",
+          "price": 134999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ],
+      "popular": true
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy S24 Ultra",
+      "category": "mobile",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "12GB / 512GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "512GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Titanium Black",
+        "Titanium Gray",
+        "Titanium Violet",
+        "Titanium Yellow"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Gray-Galaxy-S24-Ultra-5G-5112.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/864/Titanium_Gray_S24_Ultra_1.webp",
+        "https://images.kryinternational.com/uploads/galaxy-s24-ultra-titanium-black.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-s24-ultra",
+      "offers": [
+        {
+          "variant": "12GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s24-ultra",
+          "price": 88990,
+          "oldPrice": 146990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s24-ultra",
+          "price": 108990,
+          "oldPrice": 159990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s24-ultra",
+          "price": 105999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s24-ultra",
+          "price": 113999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s24-ultra-5g",
+          "price": 104500,
+          "oldPrice": 109000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s24-ultra-5g",
+          "price": 112000,
+          "oldPrice": 190000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s24-ultra",
+          "price": 104499,
+          "oldPrice": 115000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s24-ultra",
+          "price": 116999,
+          "oldPrice": 127000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s24-ultra/",
+          "price": 89999,
+          "oldPrice": 113850,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s24-ultra/",
+          "price": 99999,
+          "oldPrice": 124200,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ],
+      "popular": true
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy S24",
+      "category": "mobile",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Onyx Black",
+        "Marble Grey",
+        "Cobalt Violet",
+        "Amber Yellow"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S24-5Ga-6364.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/954/Onyx_Black.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-s24-onyx-black.webp"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/galaxy-s24-5g",
+      "offers": [
+        {
+          "variant": "8GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s24",
+          "price": 60990,
+          "oldPrice": 80990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s24",
+          "price": 67990,
+          "oldPrice": 87990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s24",
+          "price": 57499,
+          "oldPrice": 79999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s24",
+          "price": 62999,
+          "oldPrice": 89999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s24",
+          "price": 57499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s24",
+          "price": 64499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s24-5g",
+          "price": 58000,
+          "oldPrice": 65000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s24/",
+          "price": 58999,
+          "oldPrice": 65999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s24/",
+          "price": 62999,
+          "oldPrice": 72999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy S24 FE",
+      "category": "mobile",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Blue",
+        "Graphite",
+        "Gray",
+        "Mint",
+        "Yellow"
+      ],
+      "images": [
+        "https://images.kryinternational.com/uploads/1745580650674-samsung-galaxy-s24-fe-5g-graphite.jpeg",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1379/galaxy_s24_fe_blue.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S24-FE-5G4-4388.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-s24-fe",
+      "offers": [
+        {
+          "variant": "8GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s24-fe",
+          "price": 49990,
+          "oldPrice": 77999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-s24-fe",
+          "price": 57990,
+          "oldPrice": 79999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s24-fe",
+          "price": 53999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-s24-fe",
+          "price": 64999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/galaxy-s24-fe-5g/",
+          "price": 124999,
+          "oldPrice": 144999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/galaxy-s24-fe-5g/",
+          "price": 48999,
+          "oldPrice": 55775,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/galaxy-s24-fe-5g/",
+          "price": 56999,
+          "oldPrice": 60950,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/samsung-galaxy-s24-fe-5g",
+          "price": 132199,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s24-fe-5g",
+          "price": 52500,
+          "oldPrice": 55000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-s24-fe-5g",
+          "price": 57000,
+          "oldPrice": 62000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/samsung-galaxy-s24-fe",
+          "price": 52499,
+          "oldPrice": 65000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/samsung-galaxy-s24-fe",
+          "price": 56999,
+          "oldPrice": 78000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Z Fold7",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "12GB / 512GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "512GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "16GB / 1TB",
+          "attributes": {
+            "ram": "16GB",
+            "storage": "1TB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Blue Shadow",
+        "Silver Shadow",
+        "Jetblack",
+        "Mint"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-z-fold7/galaxy-z-fold7-blue-shadow-official-03-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2359/Galaxy_Z_Fold_7_Blue_Shadow.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-z-fold7-black.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-Z-Fold7aa-4627.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-z-fold7",
+      "offers": [
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-z-fold7",
+          "price": 149999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Vietnam",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-z-fold7",
+          "price": 174999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Vietnam",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-z-fold-7",
+          "price": 149999,
+          "oldPrice": 169999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-z-fold-7",
+          "price": 176999,
+          "oldPrice": 240000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-z-fold7",
+          "price": 153499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-z-fold7",
+          "price": 171499,
+          "oldPrice": 210000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "16GB / 1TB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-z-fold7",
+          "price": 290000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-z-fold-7",
+          "price": 154990,
+          "oldPrice": 192990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-z-fold-7",
+          "price": 169990,
+          "oldPrice": 212990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-z-fold-7/",
+          "price": 141999,
+          "oldPrice": 193200,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-z-fold-7/",
+          "price": 164999,
+          "oldPrice": 204700,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "16GB / 1TB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-z-fold-7/",
+          "price": 224999,
+          "oldPrice": 239999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/samsung-galaxy-z-fold7-price-in-bd",
+          "price": 157500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/samsung-galaxy-z-fold7-price-in-bd",
+          "price": 173500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ],
+      "popular": true
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Z Flip7",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "12GB / 512GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "512GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Blue Shadow",
+        "Jetblack",
+        "Coralred",
+        "Mint"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-z-flip7/galaxy-z-flip7-blue-shadow-official-04-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2362/Galaxy_Z_Flip_7_Blue_Shadow.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-z-flip7-blue-h.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-Z-Flip7aaaaa-8810.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-z-flip7",
+      "offers": [
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-z-flip7",
+          "price": 96999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-z-flip7",
+          "price": 115999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-z-flip-7",
+          "price": 97999,
+          "oldPrice": 120000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-z-flip-7",
+          "price": 107499,
+          "oldPrice": 125000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-z-flip7",
+          "price": 96499,
+          "oldPrice": 108000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-z-flip7",
+          "price": 108000,
+          "oldPrice": 115000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-z-flip-7/",
+          "price": 79999,
+          "oldPrice": 115000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-z-flip-7/",
+          "price": 103999,
+          "oldPrice": 124200,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/samsung-galaxy-z-flip7-price-in-bd",
+          "price": 99000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ],
+      "popular": true
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Z Flip7 FE",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-Z-Flip7-FE-3309.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2366/Galaxy_Z_Flip_7_FE_White.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-z-flip-7-fe.webp"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/galaxy-z-flip7-fe",
+      "offers": [
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-z-flip-7-fe",
+          "price": 70499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Vietnam",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-z-flip-7-fe",
+          "price": 69999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-z-flip7-fe",
+          "price": 67999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-z-flip-7-fe/",
+          "price": 70999,
+          "oldPrice": 78200,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/samsung-galaxy-z-flip7-fe-price-in-bd",
+          "price": 70000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy A56 5G",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 55999
+        },
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 57999
+        }
+      ],
+      "colors": [
+        "Awesome Graphite",
+        "Awesome Lightgray",
+        "Awesome Olive",
+        "Awesome Pink"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A56-5G---Official-9114.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2279/a56_graphite.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-a56-olive.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-a56",
+      "offers": [
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a56-official",
+          "price": 55999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a56-official",
+          "price": 57999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a56",
+          "price": 49999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a56",
+          "price": 53999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a56-official",
+          "price": 55999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a56-official",
+          "price": 57999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a56",
+          "price": 42499,
+          "oldPrice": 55000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a56",
+          "price": 43499,
+          "oldPrice": 63000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a56",
+          "price": 50999,
+          "oldPrice": 65000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a56-5g-official",
+          "price": 54000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a56-5g-official",
+          "price": 56499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a56-5g",
+          "price": 42000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a56-5g",
+          "price": 49499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a56-5g-official-price-in-bangladesh",
+          "price": 49999,
+          "oldPrice": 59499,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a56-5g-official-price-in-bangladesh",
+          "price": 54999,
+          "oldPrice": 64499,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a56-5g",
+          "price": 41490,
+          "oldPrice": 46990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a56-5g",
+          "price": 43990,
+          "oldPrice": 49990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a56-5g",
+          "price": 47490,
+          "oldPrice": 56990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a56/",
+          "price": 52500,
+          "oldPrice": 68540,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a56/",
+          "price": 54200,
+          "oldPrice": 74175,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a56/",
+          "price": 42500,
+          "oldPrice": 49999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a56/",
+          "price": 46999,
+          "oldPrice": 54999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a56/",
+          "price": 49500,
+          "oldPrice": 59999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/galaxy-a56/",
+          "price": 48000,
+          "oldPrice": 52990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy A36 5G",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 46499
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 48999
+        },
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Awesome Black",
+        "Awesome Lavender",
+        "Awesome White",
+        "Awesome Lime"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/mobile/samsung/galaxy-a36/galaxy-a36-lime-official-02-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2277/a36_black.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-a36-lavender.jpg",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A36-5G---Officialaaa-9053.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-a36",
+      "offers": [
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a36-official",
+          "price": 46499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a36-official",
+          "price": 48999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a36",
+          "price": 33499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Vietnam",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a36",
+          "price": 33999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a36",
+          "price": 38999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": "Vietnam",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a36-official",
+          "price": 46499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a36-official",
+          "price": 48999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a36",
+          "price": 33499,
+          "oldPrice": 35000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a36",
+          "price": 34499,
+          "oldPrice": 38000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a36",
+          "price": 38499,
+          "oldPrice": 40000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a36-5g-official",
+          "price": 44999,
+          "oldPrice": 46000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a36-5g-official",
+          "price": 47499,
+          "oldPrice": 50000,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a36-5g",
+          "price": 33999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a36-5g",
+          "price": 34499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-a36-5g",
+          "price": 46499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-a36-5g-8gb-256gb",
+          "price": 48999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a36",
+          "price": 29192,
+          "oldPrice": 39990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a36",
+          "price": 35990,
+          "oldPrice": 40990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a36",
+          "price": 37790,
+          "oldPrice": 42990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a36",
+          "price": 40790,
+          "oldPrice": 47490,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a36/",
+          "price": 43999,
+          "oldPrice": 49999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a36/",
+          "price": 46500,
+          "oldPrice": 54999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a36/",
+          "price": 33500,
+          "oldPrice": 37999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a36/",
+          "price": 33500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a36/",
+          "price": 38500,
+          "oldPrice": 44999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a36/",
+          "price": 40500,
+          "oldPrice": 47999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy A26 5G",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 39599
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Black",
+        "White",
+        "Mint",
+        "Peach Pink"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2278/a26_mint.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-a26-black.jpg",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A26-5G-black-8588.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-a26",
+      "offers": [
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a26-5g-official",
+          "price": 39599,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a26",
+          "price": 32999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a26-official",
+          "price": 39599,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a26",
+          "price": 29990,
+          "oldPrice": 36990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a26",
+          "price": 30990,
+          "oldPrice": 39992,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a26-5g/",
+          "price": 33800,
+          "oldPrice": 39675,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a26-5g/",
+          "price": 31500,
+          "oldPrice": 34999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a26-5g/",
+          "price": 33500,
+          "oldPrice": 36999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy A16 5G",
+      "category": "mobile",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "4GB / 128GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 23999
+        },
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 26499
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": 30999
+        }
+      ],
+      "colors": [
+        "Blue Black",
+        "Gold",
+        "Light Green"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1795/a16_5g_blue_black.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A16-5G-Blue-Black-3428.jpg",
+        "https://assets.gadgetandgear.com/upload/media/galaxy-a16-5g-6gb-128gb-light-green107.jpeg"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-a16-5g",
+      "offers": [
+        {
+          "variant": "6GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-a16-5g",
+          "price": 23999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-a16-5g-8gb-128gb",
+          "price": 26499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-a16-5g-8gb-256gb",
+          "price": 30999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a16-5g-official",
+          "price": 23999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a16-5g-official",
+          "price": 26499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a16-5g-official",
+          "price": 30999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/samsung-galaxy-a16-5g-official",
+          "price": 23999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/samsung-galaxy-a16-5g-official",
+          "price": 26499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/samsung-galaxy-a16-5g-official",
+          "price": 30999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a16-5g-official",
+          "price": 23500,
+          "oldPrice": 27999,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a16-5g-official",
+          "price": 26000,
+          "oldPrice": 29999,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a16-5g-official",
+          "price": 28500,
+          "oldPrice": 34999,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/galaxy-a16-5g/",
+          "price": 19500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/galaxy-a16-5g/",
+          "price": 20500,
+          "oldPrice": 22425,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/galaxy-a16-5g/",
+          "price": 22500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/galaxy-a16-5g/",
+          "price": 28500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy A16 4G",
+      "category": "mobile",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "4GB / 128GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Black",
+        "Gold",
+        "Light Gray"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A16-4G---Official2-8213.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1585/Galaxy_A16_Black.webp",
+        "https://images.kryinternational.com/uploads/samsung-a16-light-gray.jpg"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/galaxy-a16-4g-official",
+      "offers": [
+        {
+          "variant": "4GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a16",
+          "price": 21490,
+          "oldPrice": 26990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a16",
+          "price": 23490,
+          "oldPrice": 27490,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a16",
+          "price": 24790,
+          "oldPrice": 28140,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a16",
+          "price": 25990,
+          "oldPrice": 29499,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a16-4g",
+          "price": 21499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Vietnam",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a16/",
+          "price": 21500,
+          "oldPrice": 25999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a16/",
+          "price": 21999,
+          "oldPrice": 23999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a16/",
+          "price": 29700,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a16-4g-official",
+          "price": 30699,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/samsung-galaxy-a16-4g",
+          "price": 19499,
+          "oldPrice": 20000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy A06",
+      "category": "mobile",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "4GB / 64GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "64GB"
+          },
+          "officialPrice": 14399
+        },
+        {
+          "label": "4GB / 128GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 16299
+        },
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 18199
+        }
+      ],
+      "colors": [
+        "Black",
+        "Gold",
+        "Light Blue"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2208/samsung_A06_Blue.webp",
+        "https://assets.gadgetandgear.com/upload/media/galaxy-a06-gold176.jpeg",
+        "https://images.kryinternational.com/uploads/galaxy-a06-blue.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/samsung-galaxy-a06",
+      "offers": [
+        {
+          "variant": "4GB / 64GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-a06",
+          "price": 14399,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-a06-4gb-128gb",
+          "price": 16299,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/galaxy-a06-6gb-128gb",
+          "price": 18199,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a06-official",
+          "price": 14399,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a06-official",
+          "price": 16299,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a06-official",
+          "price": 18199,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a06-official",
+          "price": 14399,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a06-official",
+          "price": 15499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a06-official",
+          "price": 18199,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a06-official",
+          "price": 18099,
+          "oldPrice": 19000,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-a06",
+          "price": 16690,
+          "oldPrice": 19990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a06/",
+          "price": 16500,
+          "oldPrice": 19999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a06/",
+          "price": 19999,
+          "oldPrice": 22999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-a06",
+          "price": 16499,
+          "oldPrice": 17000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy M36 5G",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Velvet Black",
+        "Serene Green",
+        "Orange Haze"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2417/Galaxy_M36_-_Velvet_Black.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M36-5G2-2573.png",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-m36.jpg"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/galaxy-m36-5g",
+      "offers": [
+        {
+          "variant": "6GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-m36",
+          "price": 29290,
+          "oldPrice": 30490,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-m36",
+          "price": 30490,
+          "oldPrice": 39990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m36-5g/",
+          "price": 28500,
+          "oldPrice": 31500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m36-5g/",
+          "price": 29999,
+          "oldPrice": 33900,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-m36",
+          "price": 30499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-m36-5g",
+          "price": 29999,
+          "oldPrice": 34999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/samsung-galaxy-m36/",
+          "price": 29000,
+          "oldPrice": 30000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m36-5g",
+          "price": 26499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m36-5g",
+          "price": 29499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy M17 5G",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "4GB / 128GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4521/Galaxy_M17_-_Moonlight_Silver.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M17-5G-6287.png"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/galaxy-m17-5g",
+      "offers": [
+        {
+          "variant": "4GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m17/",
+          "price": 25500,
+          "oldPrice": 29999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m17/",
+          "price": 26500,
+          "oldPrice": 32999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m17/",
+          "price": 27999,
+          "oldPrice": 33999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-m17",
+          "price": 26999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m17-5g",
+          "price": 26999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m17-5g",
+          "price": 26099,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-m17",
+          "price": 26999,
+          "oldPrice": 32000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy M47 5G",
+      "category": "mobile",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4516/Galaxy_M47_-_Blaze_Blue.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M47-5G-2986.png"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/galaxy-m47-5g",
+      "offers": [
+        {
+          "variant": "6GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m47-5g/",
+          "price": 37999,
+          "oldPrice": 45999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m47-5g/",
+          "price": 40999,
+          "oldPrice": 49999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-m47",
+          "price": 36499,
+          "oldPrice": 44000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-m47",
+          "price": 41999,
+          "oldPrice": 48000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m47-5g",
+          "price": 41999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy S24 Plus",
+      "category": "mobile",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "12GB / 256GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "12GB / 512GB",
+          "attributes": {
+            "ram": "12GB",
+            "storage": "512GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Onyx Black",
+        "Marble Grey",
+        "Cobalt Violet",
+        "Amber Yellow"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1117/Onyx_Black.webp",
+        "https://mobilebuzzbd.com/wp-content/uploads/2024/02/Samsung-Galaxy-S24-Plus-Cobalt-Violet.webp"
+      ],
+      "specsSource": "https://www.sumashtech.com/product/galaxy-s24-plus",
+      "offers": [
+        {
+          "variant": "12GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s24-plus/",
+          "price": 73999,
+          "oldPrice": 85100,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-s24-plus/",
+          "price": 84999,
+          "oldPrice": 97750,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-s24-plus",
+          "price": 87999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy A06 5G",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "4GB / 64GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "64GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "4GB / 128GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A06-5G-light-green-1306.jpg",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-a06-5g.jpg"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/galaxy-a06-5g",
+      "offers": [
+        {
+          "variant": "4GB / 64GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a06-5g/",
+          "price": 14999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a06-5g/",
+          "price": 15500,
+          "oldPrice": 18550,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-a06-5g/",
+          "price": 16500,
+          "oldPrice": 19550,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-a06-5g",
+          "price": 16299,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-a06-5g",
+          "price": 17999,
+          "oldPrice": 20000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy M06 5G",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "4GB / 64GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "64GB"
+          },
+          "officialPrice": 20499
+        },
+        {
+          "label": "4GB / 128GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": 27499
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M06-5G-7017.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4181/m06.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-m06-5g.webp"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/galaxy-m06-5g-official",
+      "offers": [
+        {
+          "variant": "4GB / 64GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-m06-5g-official",
+          "price": 20499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-m06-5g-official",
+          "price": 27499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m06-5g-official",
+          "price": 20499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m06-5g-official",
+          "price": 27199,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-m06-official",
+          "price": 19999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-m06-official",
+          "price": 27499,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m06/",
+          "price": 20300,
+          "oldPrice": 24999,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m06/",
+          "price": 15500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m06/",
+          "price": 17500,
+          "oldPrice": 19999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m06/",
+          "price": 20999,
+          "oldPrice": 21999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy M07",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "4GB / 64GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "64GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M07-7467.png",
+        "https://mobilebuzzbd.com/wp-content/uploads/2026/07/Samsung-Galaxy-M07-Black.webp"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/galaxy-m07",
+      "offers": [
+        {
+          "variant": "4GB / 64GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-m07-4g",
+          "price": 17999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "India",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m07/",
+          "price": 17500,
+          "oldPrice": 19999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy M16 5G",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "4GB / 128GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M16-5G-5716.png",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-m16-5g-thunder-black.jpg"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/galaxy-m16-5g",
+      "offers": [
+        {
+          "variant": "4GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m16-5g/",
+          "price": 17500,
+          "oldPrice": 20125,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m16-5g/",
+          "price": 19500,
+          "oldPrice": 22425,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-m16",
+          "price": 19200,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-m16",
+          "price": 23200,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m16-5g",
+          "price": 17500,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m16-5g",
+          "price": 19000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m16-5g",
+          "price": 21700,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy M17e 5G",
+      "category": "mobile",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "4GB / 128GB",
+          "attributes": {
+            "ram": "4GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4698/M17e_1.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-m17e-v.webp"
+      ],
+      "specsSource": "https://www.sumashtech.com/product/galaxy-m17e-5g",
+      "offers": [
+        {
+          "variant": "4GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-m17e-price-in-bangladesh",
+          "price": 21990,
+          "oldPrice": 25990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-m17e-price-in-bangladesh",
+          "price": 24390,
+          "oldPrice": 29990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m17e/",
+          "price": 23999,
+          "oldPrice": 26999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m17e/",
+          "price": 24999,
+          "oldPrice": 28999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-m17e",
+          "price": 22999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-m17e-5g",
+          "price": 21499,
+          "oldPrice": 22499,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-m17e-5g",
+          "price": 23499,
+          "oldPrice": 24499,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy M35 5G",
+      "category": "mobile",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "6GB / 128GB",
+          "attributes": {
+            "ram": "6GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M35-5Gaa-9326.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1413/Galaxy_M35_Light_Blue.webp",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-m35-5g-gr.jpg"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/galaxy-m35-5g",
+      "offers": [
+        {
+          "variant": "6GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-m35-5g",
+          "price": 23490,
+          "oldPrice": 27990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-m35-5g",
+          "price": 24490,
+          "oldPrice": 30990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Dazzle",
+          "url": "https://dazzle.com.bd/product/samsung-galaxy-m35-5g",
+          "price": 27490,
+          "oldPrice": 33990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m35/",
+          "price": 27500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m35/",
+          "price": 24800,
+          "oldPrice": 28520,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m35/",
+          "price": 24999,
+          "oldPrice": 28750,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-m35",
+          "price": 23000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-m35",
+          "price": 26999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m35-5g",
+          "price": 23500,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m35-5g",
+          "price": 25000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m35-5g",
+          "price": 27500,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-m35-5g",
+          "price": 23999,
+          "oldPrice": 28000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/galaxy-m35-5g",
+          "price": 24499,
+          "oldPrice": 30000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy M56 5G",
+      "category": "mobile",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "8GB / 128GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "128GB"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "8GB / 256GB",
+          "attributes": {
+            "ram": "8GB",
+            "storage": "256GB"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-M56-5Ga-6976.png",
+        "https://images.kryinternational.com/uploads/samsung-galaxy-m56.jpg",
+        "https://mobilebuzzbd.com/wp-content/uploads/2025/04/Samsung-Galaxy-M56-Light-Green.jpg"
+      ],
+      "specsSource": "https://www.applegadgetsbd.com/product/galaxy-m56-5g",
+      "offers": [
+        {
+          "variant": "8GB / 128GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m56/",
+          "price": 35500,
+          "oldPrice": 39500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/samsung-galaxy-m56/",
+          "price": 37500,
+          "oldPrice": 41400,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/samsung-galaxy-m56",
+          "price": 35999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m56-5g",
+          "price": 33500,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/galaxy-m56-5g",
+          "price": 36000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    }
+  ]
+}

@@ -30,6 +30,13 @@
    "releaseYear": null,
    "variants": [
     {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 432
+    },
+    {
      "label": "500g",
      "attributes": {
       "capacity": "500g"
@@ -52,6 +59,28 @@
    ],
    "specsSource": null,
    "offers": [
+    {
+     "variant": "250g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/60545/farmer-s-gold-ajwa-khejur-dates-250g",
+     "price": 450,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "250g",
+     "site": "Othoba",
+     "url": "https://othoba.com/premium-ajwa-dates-250gm-trust-basket-725848",
+     "price": 414,
+     "oldPrice": 600,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
     {
      "variant": "500g",
      "site": "Arogga",
@@ -138,6 +167,13 @@
    "releaseYear": null,
    "variants": [
     {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 379
+    },
+    {
      "label": "500g",
      "attributes": {
       "capacity": "500g"
@@ -160,6 +196,28 @@
    ],
    "specsSource": null,
    "offers": [
+    {
+     "variant": "250g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/60539/farmer-s-gold-moriom-khejur-dates-250g",
+     "price": 484,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "250g",
+     "site": "Othoba",
+     "url": "https://othoba.com/mabroom-dates-morium-khejur-250g-trust-basket-725798",
+     "price": 274,
+     "oldPrice": 450,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
     {
      "variant": "500g",
      "site": "Arogga",
@@ -405,6 +463,13 @@
    "releaseYear": null,
    "variants": [
     {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 431
+    },
+    {
      "label": "500g",
      "attributes": {
       "capacity": "500g"
@@ -416,7 +481,7 @@
      "attributes": {
       "capacity": "1kg"
      },
-     "officialPrice": 1705
+     "officialPrice": 1653
     }
    ],
    "colors": [],
@@ -427,6 +492,28 @@
    ],
    "specsSource": null,
    "offers": [
+    {
+     "variant": "250g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/60542/farmer-s-gold-medjool-khejur-dates-250g",
+     "price": 510,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "250g",
+     "site": "Othoba",
+     "url": "https://othoba.com/premium-medjool-dates-250-gm-khidmah-mart-1080580",
+     "price": 351,
+     "oldPrice": 415,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
     {
      "variant": "500g",
      "site": "Arogga",
@@ -481,6 +568,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/medjool-dates-premium-1-kg",
+     "price": 1450,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
     }
    ]
   },

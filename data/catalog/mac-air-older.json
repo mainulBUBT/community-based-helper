@@ -1,0 +1,1600 @@
+{
+  "category": "mac",
+  "sites": [
+    {
+      "name": "Gadget & Gear",
+      "website": "https://gadgetandgear.com",
+      "note": "Apple Authorised Reseller (official); one page per config/colour. Every older Air (M1–M4) page is currently Stock Out but still shows the official price, used as officialPrice."
+    },
+    {
+      "name": "Apple Gadgets",
+      "website": "https://www.applegadgetsbd.com",
+      "note": "Apple-focused importer (unofficial). M1/M2/M3 Air pages are single-config and out of stock; M4 13/15 pages list three configs (in stock / pre-order)."
+    },
+    {
+      "name": "Sumash Tech",
+      "website": "https://www.sumashtech.com",
+      "note": "Unofficial importer with inflated strike-through prices; most older Air configs out of stock. M3 15\" page exposes only the default 8/256GB price."
+    },
+    {
+      "name": "Kry International",
+      "website": "https://kryinternational.com",
+      "note": "Unofficial; per-config prices with region on some options (USA). M2/M3 pages skipped: option prices are inconsistent (bigger configs cheaper)."
+    },
+    {
+      "name": "iStockBD",
+      "website": "https://istockbd.com",
+      "note": "Shopify, unofficial; per-config prices incl. custom 1TB/2TB/32GB builds (only standard configs used)."
+    },
+    {
+      "name": "Mobile Buzz BD",
+      "website": "https://mobilebuzzbd.com",
+      "note": "WooCommerce, unofficial; one M4 page holds both 13\" and 15\" options (size option '13'/'15'); used only for 13\" because new-product matching confuses the sizes."
+    },
+    {
+      "name": "MacZen BD",
+      "website": "https://www.maczenbd.com",
+      "note": "Unofficial Mac importer; M4 13/15 pages list 16/256 and 16/512 only."
+    },
+    {
+      "name": "Diamu",
+      "website": "https://diamu.com.bd",
+      "note": "WooCommerce, unofficial; M4 13/15 pages in stock. Older M1/M2/M3 Air URLs return nothing; the M3 13\"-slug page is titled 15-inch, so skipped."
+    },
+    {
+      "name": "CustomMacBD",
+      "website": "https://custommacbd.com",
+      "note": "Shopify, unofficial (international warranty); options split by warranty claim type / pre-order. M3 pages skipped: option prices are inconsistent."
+    },
+    {
+      "name": "MC Solution",
+      "website": "https://mcsolution.com.bd",
+      "note": "WooCommerce, unofficial imports; one page per config. Several old Air URLs redirect to newer models (skipped)."
+    },
+    {
+      "name": "PCB Store",
+      "website": "https://pcbstore.com.bd",
+      "note": "Gaming/PC store, importer channel (unofficial); single-config Air pages, all stock out."
+    }
+  ],
+  "products": [
+    {
+      "brand": "Apple",
+      "category": "laptop",
+      "name": "MacBook Air 13\" M1",
+      "releaseYear": 2020,
+      "variants": [
+        {
+          "label": "M1 8GB / 256GB",
+          "attributes": {
+            "chip": "M1",
+            "ram": "8GB",
+            "storage": "256GB",
+            "cpu": "8-core",
+            "gpu": "7-core"
+          },
+          "officialPrice": 89999
+        }
+      ],
+      "colors": [
+        "Space Gray",
+        "Silver",
+        "Gold"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Air-M1-13-inch-8256GB-8-Core-CPU-7-Core-GPU-8958.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/48/MacBook_Air_13_2020_M1_8256_Space_Grey.webp",
+        "https://assets.gadgetandgear.com/upload/product/20201125_1606301857_210129.jpeg",
+        "https://cdn.shopify.com/s/files/1/0471/6039/3896/files/MBAM1.jpg?v=1755590430"
+      ],
+      "specsSource": "https://support.apple.com/en-us/111883",
+      "offers": [
+        {
+          "variant": "M1 8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-13inch-m1-chip",
+          "price": 89999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M1 8GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m1",
+          "price": 80500,
+          "oldPrice": 86500,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M1 8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m1-13-2020",
+          "price": 81499,
+          "oldPrice": 100000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": "Global",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M1 8GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/macbook-air-m1-13-inch",
+          "price": 82000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M1 8GB / 256GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/new-apple-macbook-air-with-m1-silicon-chip",
+          "price": 83999,
+          "oldPrice": 103999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M1 8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/macbook-air-m1-8-256gb-13-inch/",
+          "price": 82500,
+          "oldPrice": 95999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M1 8GB / 256GB",
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/macbook-air-m1-13-inch-8-256gb",
+          "price": 97000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "category": "laptop",
+      "name": "MacBook Air 13\" M2",
+      "releaseYear": 2022,
+      "variants": [
+        {
+          "label": "M2 8GB / 256GB",
+          "attributes": {
+            "chip": "M2",
+            "ram": "8GB",
+            "storage": "256GB",
+            "cpu": "8-core",
+            "gpu": "8-core"
+          },
+          "officialPrice": 114999
+        },
+        {
+          "label": "M2 16GB / 256GB",
+          "attributes": {
+            "chip": "M2",
+            "ram": "16GB",
+            "storage": "256GB",
+            "cpu": "8-core",
+            "gpu": "8-core"
+          },
+          "officialPrice": 99999
+        },
+        {
+          "label": "M2 8GB / 512GB",
+          "attributes": {
+            "chip": "M2",
+            "ram": "8GB",
+            "storage": "512GB",
+            "cpu": "8-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 139999
+        }
+      ],
+      "colors": [
+        "Midnight",
+        "Starlight",
+        "Space Gray",
+        "Silver"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/49/MacBook_Air_13.6_2022_M2_Midnight.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Air-M277-1654.png",
+        "https://assets.gadgetandgear.com/upload/media/macbook-air-13-inch-m2-chip-16gb-256gb-starlight102.jpeg",
+        "https://cdn.shopify.com/s/files/1/0471/6039/3896/files/MBAM213.jpg?v=1755590391"
+      ],
+      "specsSource": "https://support.apple.com/en-us/111867",
+      "offers": [
+        {
+          "variant": "M2 8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-m2-chip",
+          "price": 114999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/macbook-air-m2/",
+          "price": 88999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 16GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-13-inch-m2-chip-16gb-256gb",
+          "price": 99999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 16GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m2-13-6-inch-16-256gb-8-cpu-8-gpu",
+          "price": 102000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 16GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m2-136-2022",
+          "price": 94999,
+          "oldPrice": 140000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 16GB / 256GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-m2-chip-2022-model",
+          "price": 94990,
+          "oldPrice": 174999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 16GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/macbook-air-m2/",
+          "price": 94500,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 16GB / 256GB",
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/macbook-air-m2-14-inch-16-256gb",
+          "price": 90000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 8GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-13-m2-chip-8gb-512gb-midnight",
+          "price": 139999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 8GB / 512GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/macbook-air-m2/",
+          "price": 103999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "category": "laptop",
+      "name": "MacBook Air 15\" M2",
+      "releaseYear": 2023,
+      "variants": [
+        {
+          "label": "M2 8GB / 256GB",
+          "attributes": {
+            "chip": "M2",
+            "ram": "8GB",
+            "storage": "256GB",
+            "cpu": "8-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 159999
+        },
+        {
+          "label": "M2 8GB / 512GB",
+          "attributes": {
+            "chip": "M2",
+            "ram": "8GB",
+            "storage": "512GB",
+            "cpu": "8-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Midnight",
+        "Starlight",
+        "Space Gray",
+        "Silver"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/50/MacBook_Air_15_2023_M2_Midnight.webp",
+        "https://assets.gadgetandgear.com/upload/product/20230621_1687326595_716501.jpeg",
+        "https://cdn.shopify.com/s/files/1/0471/6039/3896/files/MBAM215.jpg?v=1755590344",
+        "https://cdn.shopify.com/s/files/1/1706/9177/files/mba15-spacegray-Custom-Mac-BD.jpg?v=1686987219"
+      ],
+      "specsSource": "https://support.apple.com/en-us/111346",
+      "offers": [
+        {
+          "variant": "M2 8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-15-inch-m2-chip",
+          "price": 159999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m2-15-2023",
+          "price": 144999,
+          "oldPrice": 145999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 8GB / 256GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-15-inch-m2-price-in-bd",
+          "price": 138000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 8GB / 256GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/apple-macbook-air-15-inch-m2-price-in-bd",
+          "price": 143000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 8GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m2-15-2023",
+          "price": 157999,
+          "oldPrice": 189999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 8GB / 512GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-15-inch-m2-price-in-bd",
+          "price": 155000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M2 8GB / 512GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/apple-macbook-air-15-inch-512gb-m2-chip-price-in-bd-mqkx3ll",
+          "price": 164000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "category": "laptop",
+      "name": "MacBook Air 13\" M3",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "M3 8GB / 256GB",
+          "attributes": {
+            "chip": "M3",
+            "ram": "8GB",
+            "storage": "256GB",
+            "cpu": "8-core",
+            "gpu": "8-core"
+          },
+          "officialPrice": 134999
+        },
+        {
+          "label": "M3 16GB / 256GB",
+          "attributes": {
+            "chip": "M3",
+            "ram": "16GB",
+            "storage": "256GB",
+            "cpu": "8-core",
+            "gpu": "8-core"
+          },
+          "officialPrice": 129999
+        },
+        {
+          "label": "M3 8GB / 512GB",
+          "attributes": {
+            "chip": "M3",
+            "ram": "8GB",
+            "storage": "512GB",
+            "cpu": "8-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 164999
+        },
+        {
+          "label": "M3 16GB / 512GB",
+          "attributes": {
+            "chip": "M3",
+            "ram": "16GB",
+            "storage": "512GB",
+            "cpu": "8-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 139999
+        },
+        {
+          "label": "M3 24GB / 512GB",
+          "attributes": {
+            "chip": "M3",
+            "ram": "24GB",
+            "storage": "512GB",
+            "cpu": "8-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 149999
+        }
+      ],
+      "colors": [
+        "Midnight",
+        "Starlight",
+        "Space Gray",
+        "Silver"
+      ],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1027/MacBook_Air_M3_Silver.webp",
+        "https://assets.gadgetandgear.com/upload/media/1711619794966545.jpeg",
+        "https://cdn.shopify.com/s/files/1/0471/6039/3896/files/MBAM313.jpg?v=1755590312",
+        "https://mcsolution.com.bd/wp-content/uploads/2024/03/Apple-MacBook-Air-13-M3-2024-price-in-Bangladesh-MC-Solution-BD-1200x1452.webp",
+        "https://pcbstore.com.bd/storage/products/apple-macbook-air-m3-chip-13-inch-16256gb-midnight.webp"
+      ],
+      "specsSource": "https://support.apple.com/en-us/118551",
+      "offers": [
+        {
+          "variant": "M3 8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-13-inch-m3-chip-8gb-256gb-midnight",
+          "price": 134999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m3-136-2024",
+          "price": 116999,
+          "oldPrice": 121000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 8GB / 256GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-m3-price-in-bd",
+          "price": 114999,
+          "oldPrice": 136999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 8GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/macbook-air-m3/",
+          "price": 100999,
+          "oldPrice": 109999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-13-inch-m3-chip-16gb-256gb",
+          "price": 129999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m3-136-2024",
+          "price": 116999,
+          "oldPrice": 131999,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 256GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-m3-price-in-bd",
+          "price": 115990,
+          "oldPrice": 174999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/macbook-air-m3/",
+          "price": 106999,
+          "oldPrice": 134550,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 256GB",
+          "site": "MC Solution",
+          "url": "https://mcsolution.com.bd/macbook-air-13-m3-16-256/",
+          "price": 116500,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 256GB",
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/macbook-air-m3-13-inch-16-256gb-midnight",
+          "price": 119000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 8GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-13-inch-m3-chip-8gb-512gb-space-gray",
+          "price": 164999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 8GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m3-136-2024",
+          "price": 145999,
+          "oldPrice": 151000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 8GB / 512GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-m3-price-in-bd",
+          "price": 148000,
+          "oldPrice": 169999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 8GB / 512GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/macbook-air-m3/",
+          "price": 126999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-13-inch-m3-chip-16gb-512gb-midnight",
+          "price": 139999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m3-136-2024",
+          "price": 145999,
+          "oldPrice": 165000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 512GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-m3-price-in-bd",
+          "price": 144999,
+          "oldPrice": 193999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 512GB",
+          "site": "MC Solution",
+          "url": "https://mcsolution.com.bd/macbook-air-13-m3-16-512/",
+          "price": 152900,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 24GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-13-inch-m3-chip-24gb-512gb",
+          "price": 149999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 24GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m3-136-2024",
+          "price": 181999,
+          "oldPrice": 192000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 24GB / 512GB",
+          "site": "MC Solution",
+          "url": "https://mcsolution.com.bd/macbook-air-13-m3-8-core-10-core-24gb-512gb/",
+          "price": 171900,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "category": "laptop",
+      "name": "MacBook Air 15\" M3",
+      "releaseYear": 2024,
+      "variants": [
+        {
+          "label": "M3 8GB / 256GB",
+          "attributes": {
+            "chip": "M3",
+            "ram": "8GB",
+            "storage": "256GB",
+            "cpu": "8-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 144999
+        },
+        {
+          "label": "M3 8GB / 512GB",
+          "attributes": {
+            "chip": "M3",
+            "ram": "8GB",
+            "storage": "512GB",
+            "cpu": "8-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 154999
+        },
+        {
+          "label": "M3 16GB / 256GB",
+          "attributes": {
+            "chip": "M3",
+            "ram": "16GB",
+            "storage": "256GB",
+            "cpu": "8-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 159999
+        },
+        {
+          "label": "M3 16GB / 512GB",
+          "attributes": {
+            "chip": "M3",
+            "ram": "16GB",
+            "storage": "512GB",
+            "cpu": "8-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 169999
+        },
+        {
+          "label": "M3 24GB / 512GB",
+          "attributes": {
+            "chip": "M3",
+            "ram": "24GB",
+            "storage": "512GB",
+            "cpu": "8-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 194999
+        }
+      ],
+      "colors": [
+        "Midnight",
+        "Starlight",
+        "Space Gray",
+        "Silver"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Air-M3-15-Inch-1718.jpg",
+        "https://assets.gadgetandgear.com/upload/media/macbook-air-m3-inch-chip-16gb-256gb-midnight378.jpeg",
+        "https://cdn.shopify.com/s/files/1/0471/6039/3896/files/MBAM315.jpg?v=1755590282",
+        "https://mcsolution.com.bd/wp-content/uploads/2024/03/Apple-MacBook-Air-15-M3-2024-price-in-Bangladesh-MC-Solution-BD-1200x1452.webp"
+      ],
+      "specsSource": "https://support.apple.com/en-us/118552",
+      "offers": [
+        {
+          "variant": "M3 8GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-m3-chip-15-inch-256gb-silver",
+          "price": 144999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 8GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m3-15-2024",
+          "price": 142999,
+          "oldPrice": 160000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 8GB / 256GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-15-inch-m3-price-in-bd",
+          "price": 142000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 8GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-m3-chip-15-inch-512gb-space-gray",
+          "price": 154999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 8GB / 512GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-15-inch-m3-price-in-bd",
+          "price": 176000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 8GB / 512GB",
+          "site": "MC Solution",
+          "url": "https://mcsolution.com.bd/macbook-air-15-m3-8-512/",
+          "price": 172900,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-m3-chip-15-inch-16gb-256gb-midnight",
+          "price": 159999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 256GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-15-inch-m3-price-in-bd",
+          "price": 147999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-m3-chip-15-inch-16gb-512gb-midnight",
+          "price": 169999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m3-15-inch",
+          "price": 144999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 512GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-15-inch-m3-price-in-bd",
+          "price": 179999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 16GB / 512GB",
+          "site": "MC Solution",
+          "url": "https://mcsolution.com.bd/macbook-air-15-m3-16-512/",
+          "price": 175000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M3 24GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-m3-chip-15-inch-24gb-512gb-midnight",
+          "price": 194999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "category": "laptop",
+      "name": "MacBook Air 13\" M4",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "M4 16GB / 256GB",
+          "attributes": {
+            "chip": "M4",
+            "ram": "16GB",
+            "storage": "256GB",
+            "cpu": "10-core",
+            "gpu": "8-core"
+          },
+          "officialPrice": 137999
+        },
+        {
+          "label": "M4 16GB / 512GB",
+          "attributes": {
+            "chip": "M4",
+            "ram": "16GB",
+            "storage": "512GB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 158999
+        },
+        {
+          "label": "M4 24GB / 512GB",
+          "attributes": {
+            "chip": "M4",
+            "ram": "24GB",
+            "storage": "512GB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 169999
+        }
+      ],
+      "colors": [
+        "Midnight",
+        "Starlight",
+        "Silver",
+        "Sky Blue"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Air-M4-13-Inchaaaa-2702.png",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1831/air_m4_midnight.webp",
+        "https://images.kryinternational.com/uploads/macbook-air-m4-13-6-inch-black.webp",
+        "https://assets.gadgetandgear.com/upload/media/macbook-air-13-inch-m4-chip-16gb-256gb-midnight504.jpeg",
+        "https://cdn.shopify.com/s/files/1/1706/9177/files/mba13-m4-skyblue-Custom-Mac-BD.png?v=1741250504"
+      ],
+      "specsSource": "https://support.apple.com/en-us/122209",
+      "offers": [
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-13-inch-m4-chip-16gb-256gb",
+          "price": 137999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m4-13-inch",
+          "price": 138499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m4-136-2025",
+          "price": 127999,
+          "oldPrice": 160000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/macbook-air-m4-13.6-inch",
+          "price": 151999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "MacZen BD",
+          "url": "https://www.maczenbd.com/products/macbook/13-inch-macbook-air-m4",
+          "price": 139490,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-m4-price-in-bd",
+          "price": 152999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/macbook-air-m4/",
+          "price": 141999,
+          "oldPrice": 169999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/macbook-air-m4-13-inch-2025-price-in-bd",
+          "price": 160000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-13-inch-m4-chip-16gb-512gb-midnight",
+          "price": 158999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m4-13-inch",
+          "price": 167499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m4-136-2025",
+          "price": 141999,
+          "oldPrice": 180000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/macbook-air-m4-13.6-inch",
+          "price": 168999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "USA",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "MacZen BD",
+          "url": "https://www.maczenbd.com/products/macbook/13-inch-macbook-air-m4",
+          "price": 148990,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/macbook-air-m4/",
+          "price": 151999,
+          "oldPrice": 184999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/macbook-air-m4-13inch/",
+          "price": 159990,
+          "oldPrice": 170000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/macbook-air-m4-13-inch-2025-price-in-bd",
+          "price": 164000,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-13-inch-m4-chip-24gb-512gb",
+          "price": 169999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m4-13-inch",
+          "price": 169999,
+          "oldPrice": 179000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m4-136-2025",
+          "price": 168999,
+          "oldPrice": 190000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/macbook-air-m4-13.6-inch",
+          "price": 171999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-m4-price-in-bd",
+          "price": 165999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/macbook-air-m4/",
+          "price": 171999,
+          "oldPrice": 195500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/macbook-air-m4-13inch/",
+          "price": 169990,
+          "oldPrice": 199999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/macbook-air-m4-13-inch-2025-price-in-bd",
+          "price": 190000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "category": "laptop",
+      "name": "MacBook Air 15\" M4",
+      "releaseYear": 2025,
+      "variants": [
+        {
+          "label": "M4 16GB / 256GB",
+          "attributes": {
+            "chip": "M4",
+            "ram": "16GB",
+            "storage": "256GB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 151999
+        },
+        {
+          "label": "M4 16GB / 512GB",
+          "attributes": {
+            "chip": "M4",
+            "ram": "16GB",
+            "storage": "512GB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 174999
+        },
+        {
+          "label": "M4 24GB / 512GB",
+          "attributes": {
+            "chip": "M4",
+            "ram": "24GB",
+            "storage": "512GB",
+            "cpu": "10-core",
+            "gpu": "10-core"
+          },
+          "officialPrice": 179999
+        }
+      ],
+      "colors": [
+        "Midnight",
+        "Starlight",
+        "Silver",
+        "Sky Blue"
+      ],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Macbook-Air-M4-Sky-blue-6065.jpg",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1834/air_m4_midnight.webp",
+        "https://images.kryinternational.com/uploads/macbook-air-m4-15-inch-blue.webp",
+        "https://cdn.shopify.com/s/files/1/1706/9177/files/mba15-m4-skyblue-Custom-Mac-BD.png?v=1741267714",
+        "https://cdn.shopify.com/s/files/1/0471/6039/3896/files/MBAM415.jpg?v=1755590228"
+      ],
+      "specsSource": "https://support.apple.com/en-us/122210",
+      "offers": [
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-15-inch-m4-chip-16gb-256gb-silver",
+          "price": 151999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m4-15-inch",
+          "price": 157999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m4-15-2025",
+          "price": 139999,
+          "oldPrice": 155000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/macbook-air-m4-15-inch",
+          "price": 159999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": "USA",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "MacZen BD",
+          "url": "https://www.maczenbd.com/products/macbook/15-inch-macbook-air-m4",
+          "price": 159990,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-15-inch-m4-price-in-bd",
+          "price": 156999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/macbook-air-m4-15-3-inch/",
+          "price": 157990,
+          "oldPrice": 160000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 256GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/macbook-air-m4-15-inch-2025-price-in-bd",
+          "price": 165000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-15-inch-m4-chip-16gb-512gb-silver",
+          "price": 174999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m4-15-inch",
+          "price": 170999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m4-15-2025",
+          "price": 172499,
+          "oldPrice": 185000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/macbook-air-m4-15-inch",
+          "price": 189999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "MacZen BD",
+          "url": "https://www.maczenbd.com/products/macbook/15-inch-macbook-air-m4",
+          "price": 180000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-15-inch-m4-price-in-bd",
+          "price": 167999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/macbook-air-m4-15-3-inch/",
+          "price": 162990,
+          "oldPrice": 170000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 16GB / 512GB",
+          "site": "CustomMacBD",
+          "url": "https://custommacbd.com/products/macbook-air-m4-15-inch-2025-price-in-bd",
+          "price": 180000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/macbook-air-15-inch-m4-chip-24gb-512gb-silver",
+          "price": 179999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-air-m4-15-inch",
+          "price": 209999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/macbook-air-m4-15-2025",
+          "price": 197999,
+          "oldPrice": 210000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/macbook-air-m4-15-inch",
+          "price": 209999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "M4 24GB / 512GB",
+          "site": "iStockBD",
+          "url": "https://istockbd.com/products/macbook-air-15-inch-m4-price-in-bd",
+          "price": 195999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-28"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1677 @@
+{
+ "category": "mac",
+ "sites": [
+  {
+   "name": "Gadget & Gear",
+   "website": "https://gadgetandgear.com",
+   "note": "Apple Authorised Reseller with official Bangladesh warranty; one page per config; many Pro/iMac configs currently Stock Out."
+  },
+  {
+   "name": "Apple Gadgets",
+   "website": "https://www.applegadgetsbd.com",
+   "note": "Apple-focused importer (unofficial); per-variant prices with Regular vs CN region options (Regular used); often cheapest; many higher configs pre-order only."
+  },
+  {
+   "name": "Sumash Tech",
+   "website": "https://www.sumashtech.com",
+   "note": "Unofficial importer ('1 Year Apple International Warranty'); good on Air/Neo/iMac; shows inflated strike-through prices; most Pro/Max configs are booking-only without a price."
+  },
+  {
+   "name": "CustomMacBD",
+   "website": "https://custommacbd.com",
+   "note": "Shopify Mac importer (unofficial); one page per model with CPU/GPU, RAM and SSD options; many CTO options marked sold out."
+  },
+  {
+   "name": "Kry International",
+   "website": "https://kryinternational.com",
+   "note": "Unofficial; per-RAM/SSD options without chip cores, mapped to Apple's standard config for that RAM/SSD."
+  },
+  {
+   "name": "Mobile Buzz BD",
+   "website": "https://mobilebuzzbd.com",
+   "note": "WooCommerce, unofficial; Mac mini has China vs Regular options (Regular used); a few options hold placeholder prices (Mac mini 24/1TB at 10,000), skipped. Mac Studio M4 Max listed at 281,999 (far below every other store), skipped as suspicious."
+  },
+  {
+   "name": "iStockBD",
+   "website": "https://istockbd.com",
+   "note": "Shopify, unofficial; one MacBook Pro 14\" page carries M4, M4 Pro and M4 Max options (16\" page likewise). Mac Studio page has no prices, skipped."
+  },
+  {
+   "name": "MacZen BD",
+   "website": "https://www.maczenbd.com",
+   "note": "Unofficial Mac importer; per-config prices on the model page."
+  },
+  {
+   "name": "MC Solution",
+   "website": "https://mcsolution.com.bd",
+   "note": "WooCommerce; Macs carry 'Apple International Warranty', so unofficial. Several Mac pages are 'Call for Pre-Order' without price, skipped."
+  },
+  {
+   "name": "Diamu",
+   "website": "https://diamu.com.bd",
+   "note": "WooCommerce, unofficial; per-storage variation prices."
+  }
+ ],
+ "products": [
+  {
+   "brand": "Apple",
+   "name": "MacBook Pro 14\" M4",
+   "category": "laptop",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "M4 16GB / 512GB",
+     "attributes": {
+      "chip": "M4",
+      "ram": "16GB",
+      "storage": "512GB",
+      "cpu": "10-core",
+      "gpu": "10-core"
+     },
+     "officialPrice": 229999
+    },
+    {
+     "label": "M4 16GB / 1TB",
+     "attributes": {
+      "chip": "M4",
+      "ram": "16GB",
+      "storage": "1TB",
+      "cpu": "10-core",
+      "gpu": "10-core"
+     },
+     "officialPrice": 259999
+    },
+    {
+     "label": "M4 24GB / 1TB",
+     "attributes": {
+      "chip": "M4",
+      "ram": "24GB",
+      "storage": "1TB",
+      "cpu": "10-core",
+      "gpu": "10-core"
+     },
+     "officialPrice": 249999
+    }
+   ],
+   "colors": [
+    "Space Black",
+    "Silver"
+   ],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/macbook-pro-14inch-m4-16gb-1tb-space-black.jpeg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1742/MBP_14_Silver_1.webp",
+    "https://images.kryinternational.com/uploads/macbook-pro-m4-14-inch-black.webp"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/macbook-pro-14-m4-2024",
+   "offers": [
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/macbook-pro-14-inch-m4-chip-16gb-512gb",
+     "price": 229999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/macbook-pro-m4-14-inch-16gb512gb-10-core-cpu-10-core-gpu",
+     "price": 185500,
+     "oldPrice": 195000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/macbook-pro-14-m4-2024",
+     "price": 188999,
+     "oldPrice": 230000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/macbook-pro-m4-chip-2024-price-in-bd",
+     "price": 234000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/macbook-pro-m4-14-inch/",
+     "price": 178999,
+     "oldPrice": 210450,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/macbook-pro-14-inch-m4-price-in-bd",
+     "price": 189990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 1TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/macbook-pro-14-inch-m4-chip-16gb-1tb",
+     "price": 259999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 1TB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/macbook-pro-m4-14-inch-16gb1tb-10-core-cpu-10-core-gpu",
+     "price": 247999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/macbook-pro-m4-chip-2024-price-in-bd",
+     "price": 260000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 1TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/macbook-pro-m4-14-inch",
+     "price": 215999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 1TB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/macbook-pro-m4-14-inch/",
+     "price": 192999,
+     "oldPrice": 221950,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 1TB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/macbook-pro-14-inch-m4-price-in-bd",
+     "price": 202990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 24GB / 1TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/macbook-pro-14-inch-m4-chip-24gb-1tb-silver",
+     "price": 249999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 24GB / 1TB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/macbook-pro-m4-14-inch-24gb1tb-10-core-cpu-10-core-gpu",
+     "price": 245000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 24GB / 1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/macbook-pro-m4-chip-2024-price-in-bd",
+     "price": 235000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 24GB / 1TB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/macbook-pro-m4-14-inch/",
+     "price": 219999,
+     "oldPrice": 267950,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 24GB / 1TB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/macbook-pro-14-inch-m4-price-in-bd",
+     "price": 274999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "MacBook Pro 14\" M4 Pro",
+   "category": "laptop",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "attributes": {
+      "chip": "M4 Pro",
+      "ram": "24GB",
+      "storage": "512GB",
+      "cpu": "12-core",
+      "gpu": "16-core"
+     },
+     "officialPrice": 254999
+    },
+    {
+     "label": "M4 Pro 14C CPU/20C GPU 24GB / 1TB",
+     "attributes": {
+      "chip": "M4 Pro",
+      "ram": "24GB",
+      "storage": "1TB",
+      "cpu": "14-core",
+      "gpu": "20-core"
+     },
+     "officialPrice": 314999
+    }
+   ],
+   "colors": [
+    "Space Black",
+    "Silver"
+   ],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/macbook-pro-14inch-m4-pro-24gb-512gb-silver-updated290.jpeg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1571/MBP_14_Silver.webp",
+    "https://images.kryinternational.com/uploads/macbook-pro-m4-pro-14-inch-silver.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Pro-M4-Pro-14-Inch-Black-3770.png"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/macbook-pro-14-m4-pro-2024",
+   "offers": [
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/macbook-pro-14-inch-m4-pro-chip-24gb-512gb-silver",
+     "price": 254999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/macbook-pro-m4-pro-14-inch-24gb512gb-12-core-cpu-16-core-gpu",
+     "price": 249999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/macbook-pro-m4-pro-2024-price-in-bd",
+     "price": 290000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/macbook-pro-m4-pro-14-inch",
+     "price": 249999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/macbook-pro-m4-pro-14-inch/",
+     "price": 251999,
+     "oldPrice": 288650,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/macbook-pro-14-m4-pro-2024",
+     "price": 246999,
+     "oldPrice": 280000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/macbook-pro-14-inch-m4-price-in-bd",
+     "price": 249990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 1TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/macbook-pro-14-inch-m4-pro-chip-24gb-1tb-sliver",
+     "price": 314999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 1TB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/macbook-pro-m4-pro-14-inch-24gb1tb-14-core-cpu-20-core-gpu",
+     "price": 264999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/macbook-pro-m4-pro-2024-price-in-bd",
+     "price": 320000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 1TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/macbook-pro-m4-pro-14-inch",
+     "price": 264999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 1TB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/macbook-pro-m4-pro-14-inch/",
+     "price": 276999,
+     "oldPrice": 332350,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/macbook-pro-14-m4-pro-2024",
+     "price": 289999,
+     "oldPrice": 370000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 1TB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/macbook-pro-14-inch-m4-price-in-bd",
+     "price": 308999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "MacBook Pro 14\" M4 Max",
+   "category": "laptop",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "M4 Max 14C CPU/32C GPU 36GB / 1TB",
+     "attributes": {
+      "chip": "M4 Max",
+      "ram": "36GB",
+      "storage": "1TB",
+      "cpu": "14-core",
+      "gpu": "32-core"
+     },
+     "officialPrice": 419999
+    },
+    {
+     "label": "M4 Max 16C CPU/40C GPU 48GB / 1TB",
+     "attributes": {
+      "chip": "M4 Max",
+      "ram": "48GB",
+      "storage": "1TB",
+      "cpu": "16-core",
+      "gpu": "40-core"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Space Black",
+    "Silver"
+   ],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/macbook_pro_14-inch_m4_max_chip_36gb-1tb_silver.jpeg",
+    "https://images.kryinternational.com/uploads/macbook-pro-m4-max-14-inch-silver.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1744/MBP_14_Space_Black.webp"
+   ],
+   "specsSource": "https://custommacbd.com/products/macbook-pro-m4-max-14-inch-2024-price-in-bd",
+   "offers": [
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 1TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/macbook-pro-14-inch-m4-max-chip",
+     "price": 419999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/macbook-pro-m4-max-14-inch-2024-price-in-bd",
+     "price": 420000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 1TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/macbook-pro-m4-max-14-inch",
+     "price": 385000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 1TB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/macbook-pro-14-inch-m4-price-in-bd",
+     "price": 416999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 16C CPU/40C GPU 48GB / 1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/macbook-pro-m4-max-14-inch-2024-price-in-bd",
+     "price": 560000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 16C CPU/40C GPU 48GB / 1TB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/macbook-pro-14-inch-m4-price-in-bd",
+     "price": 474999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "MacBook Pro 16\" M4 Pro",
+   "category": "laptop",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "M4 Pro 14C CPU/20C GPU 24GB / 512GB",
+     "attributes": {
+      "chip": "M4 Pro",
+      "ram": "24GB",
+      "storage": "512GB",
+      "cpu": "14-core",
+      "gpu": "20-core"
+     },
+     "officialPrice": 339999
+    },
+    {
+     "label": "M4 Pro 14C CPU/20C GPU 48GB / 512GB",
+     "attributes": {
+      "chip": "M4 Pro",
+      "ram": "48GB",
+      "storage": "512GB",
+      "cpu": "14-core",
+      "gpu": "20-core"
+     },
+     "officialPrice": 374999
+    }
+   ],
+   "colors": [
+    "Space Black",
+    "Silver"
+   ],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/macbook-pro-16inch-m4-max-chip-36-1tb-silver.jpeg",
+    "https://images.kryinternational.com/uploads/macbook-pro-m4-pro-16-inch-black.webp",
+    "https://mobilebuzzbd.com/wp-content/uploads/2025/08/MacBook-Pro-M4-Pro-16-inch-Space-Black.webp"
+   ],
+   "specsSource": "https://custommacbd.com/products/macbook-pro-16-inch-m4-pro-2024-price-in-bd",
+   "offers": [
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/macbook-pro-16-inch-m4-pro-chip-24gb-512gb-silver",
+     "price": 339999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/macbook-pro-16-inch-m4-pro-2024-price-in-bd",
+     "price": 305000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/macbook-pro-m4-pro-16-inch",
+     "price": 339999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 512GB",
+     "site": "MacZen BD",
+     "url": "https://www.maczenbd.com/products/macbook/16-inch-macbook-pro-m4-pro",
+     "price": 310000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/macbook-pro-m4-pro-16-inch/",
+     "price": 271999,
+     "oldPrice": 333500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/macbook-pro-16-inch-m4-price-in-bd",
+     "price": 287999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 48GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/macbook-pro-16-inch-m4-pro-chip-48gb-512gb",
+     "price": 374999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 48GB / 512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/macbook-pro-16-inch-m4-pro-2024-price-in-bd",
+     "price": 345000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 48GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/macbook-pro-m4-pro-16-inch/",
+     "price": 319999,
+     "oldPrice": 376050,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 48GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/macbook-pro-16-m4-pro-2024",
+     "price": 342999,
+     "oldPrice": 350000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 48GB / 512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/macbook-pro-16-inch-m4-price-in-bd",
+     "price": 349999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "MacBook Pro 16\" M4 Max",
+   "category": "laptop",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "M4 Max 14C CPU/32C GPU 36GB / 1TB",
+     "attributes": {
+      "chip": "M4 Max",
+      "ram": "36GB",
+      "storage": "1TB",
+      "cpu": "14-core",
+      "gpu": "32-core"
+     },
+     "officialPrice": 449999
+    },
+    {
+     "label": "M4 Max 16C CPU/40C GPU 48GB / 1TB",
+     "attributes": {
+      "chip": "M4 Max",
+      "ram": "48GB",
+      "storage": "1TB",
+      "cpu": "16-core",
+      "gpu": "40-core"
+     },
+     "officialPrice": 544999
+    },
+    {
+     "label": "M4 Max 16C CPU/40C GPU 64GB / 1TB",
+     "attributes": {
+      "chip": "M4 Max",
+      "ram": "64GB",
+      "storage": "1TB",
+      "cpu": "16-core",
+      "gpu": "40-core"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Space Black",
+    "Silver"
+   ],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/macbook-pro-16inch-m4-max-chip-36-1tb-silver.jpeg",
+    "https://mobilebuzzbd.com/wp-content/uploads/2025/08/MacBook-Pro-M4-Max-16-Inch-Space-Black.webp",
+    "https://images.kryinternational.com/uploads/macbook-pro-m4-max-14-inch-black.webp"
+   ],
+   "specsSource": "https://custommacbd.com/products/macbook-pro-16-inch-m4-max-2024-price-in-bd",
+   "offers": [
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 1TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/macbook-pro-16-inch-m4-max-chip-36gb-1tb",
+     "price": 449999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/macbook-pro-16-inch-m4-max-2024-price-in-bd",
+     "price": 440000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 1TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/macbook-pro-m4-max-16-inch",
+     "price": 394000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 1TB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/macbook-pro-m4-max-16-inch-36gb-1tb/",
+     "price": 381999,
+     "oldPrice": 441600,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 1TB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/macbook-pro-16-inch-m4-price-in-bd",
+     "price": 387999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 16C CPU/40C GPU 48GB / 1TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/macbook-pro-16-inch-m4-max-chip-48gb-1tb-sliver",
+     "price": 544999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 16C CPU/40C GPU 48GB / 1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/macbook-pro-16-inch-m4-max-2024-price-in-bd",
+     "price": 490000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 16C CPU/40C GPU 48GB / 1TB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/macbook-pro-m4-max-16-inch",
+     "price": 495000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 16C CPU/40C GPU 48GB / 1TB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/macbook-pro-m4-max-16-inch-48-1tb/",
+     "price": 429999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 16C CPU/40C GPU 48GB / 1TB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/macbook-pro-16-inch-m4-price-in-bd",
+     "price": 478999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 16C CPU/40C GPU 64GB / 1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/macbook-pro-16-inch-m4-max-2024-price-in-bd",
+     "price": 550000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 16C CPU/40C GPU 64GB / 1TB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/macbook-pro-m4-max-16-64-1tb/",
+     "price": 464999,
+     "oldPrice": 534750,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "Mac mini M4",
+   "category": "desktop",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "M4 16GB / 256GB",
+     "attributes": {
+      "chip": "M4",
+      "ram": "16GB",
+      "storage": "256GB",
+      "cpu": "10-core",
+      "gpu": "10-core"
+     },
+     "officialPrice": 106999
+    },
+    {
+     "label": "M4 16GB / 512GB",
+     "attributes": {
+      "chip": "M4",
+      "ram": "16GB",
+      "storage": "512GB",
+      "cpu": "10-core",
+      "gpu": "10-core"
+     },
+     "officialPrice": 124999
+    },
+    {
+     "label": "M4 24GB / 512GB",
+     "attributes": {
+      "chip": "M4",
+      "ram": "24GB",
+      "storage": "512GB",
+      "cpu": "10-core",
+      "gpu": "10-core"
+     },
+     "officialPrice": 169999
+    }
+   ],
+   "colors": [
+    "Silver"
+   ],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/apple-mac-mini-m4-chip-16gb-512gb538.jpeg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1499/Mac_Mini_M4.webp",
+    "https://images.kryinternational.com/uploads/apple-mac-mini-m4.jpg",
+    "https://cdn.shopify.com/s/files/1/1706/9177/files/mac-mini-2024-M4-Custom-Mac-BD.png?v=1730381964"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/mac-mini-m4-2024",
+   "offers": [
+    {
+     "variant": "M4 16GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/apple-mac-mini-m4-chip",
+     "price": 106999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/mac-mini-m4-2024",
+     "price": 103999,
+     "oldPrice": 115000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 256GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/mac-mini-m4-chip-2024-price-in-bd",
+     "price": 100000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/apple-mac-mini-m4",
+     "price": 106999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 256GB",
+     "site": "MacZen BD",
+     "url": "https://www.maczenbd.com/products/mac-mini/mac-mini-m4",
+     "price": 101990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/apple-mac-mini-m4/",
+     "price": 105999,
+     "oldPrice": 119999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/apple-mac-mini-m4-chip-16gb-512gb",
+     "price": 124999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/apple-mac-mini-m4-10-core-cpu-10-core-gpu-16-512gb",
+     "price": 116999,
+     "oldPrice": 122999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/mac-mini-m4-2024",
+     "price": 122999,
+     "oldPrice": 140000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/mac-mini-m4-chip-2024-price-in-bd",
+     "price": 118000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/apple-mac-mini-m4",
+     "price": 122999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "MacZen BD",
+     "url": "https://www.maczenbd.com/products/mac-mini/mac-mini-m4",
+     "price": 118000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/apple-mac-mini-m4/",
+     "price": 118500,
+     "oldPrice": 139999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 24GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/apple-mac-mini-m4-chip-24gb-512gb",
+     "price": 169999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 24GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/apple-mac-mini-m4-10-core-cpu-10-core-gpu-24-512gb",
+     "price": 179999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 24GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/mac-mini-m4-2024",
+     "price": 198999,
+     "oldPrice": 205000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 24GB / 512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/mac-mini-m4-chip-2024-price-in-bd",
+     "price": 185000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 24GB / 512GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/apple-mac-mini-m4",
+     "price": 199999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 24GB / 512GB",
+     "site": "MacZen BD",
+     "url": "https://www.maczenbd.com/products/mac-mini/mac-mini-m4",
+     "price": 178990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 24GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/apple-mac-mini-m4/",
+     "price": 199999,
+     "oldPrice": 229999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "Mac mini M4 Pro",
+   "category": "desktop",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "attributes": {
+      "chip": "M4 Pro",
+      "ram": "24GB",
+      "storage": "512GB",
+      "cpu": "12-core",
+      "gpu": "16-core"
+     },
+     "officialPrice": 219999
+    },
+    {
+     "label": "M4 Pro 12C CPU/16C GPU 24GB / 1TB",
+     "attributes": {
+      "chip": "M4 Pro",
+      "ram": "24GB",
+      "storage": "1TB",
+      "cpu": "12-core",
+      "gpu": "16-core"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Silver"
+   ],
+   "images": [
+    "https://cdn.shopify.com/s/files/1/1706/9177/files/mac-mini-2024-M4-Custom-Mac-BD_5707f0a3-b4f5-4b9c-9989-e7c496e4d969.png?v=1730441426",
+    "https://mcsolution.com.bd/wp-content/uploads/2024/12/Apple-mac-mini-M4-PRO-PRICE-IN-BANGLADESH-MC-SOLUTION-BD.webp"
+   ],
+   "specsSource": "https://custommacbd.com/products/mac-mini-m4-pro-chip-2024-price-in-bd",
+   "offers": [
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/apple-mac-mini-m4-pro-chip-24gb-512gb",
+     "price": 219999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/apple-mac-mini-m4-pro-12-core-cpu-16-core-gpu-24512gb",
+     "price": 239999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/mac-mini-m4-pro-chip-2024-price-in-bd",
+     "price": 230000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 512GB",
+     "site": "MC Solution",
+     "url": "https://mcsolution.com.bd/mac-mini-m4-pro/",
+     "price": 219900,
+     "oldPrice": 236900,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 1TB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/apple-mac-mini-m4-pro-12-core-cpu-16-core-gpu-24gb1tb",
+     "price": 255000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 12C CPU/16C GPU 24GB / 1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/mac-mini-m4-pro-chip-2024-price-in-bd",
+     "price": 250000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "Mac Studio M4 Max",
+   "category": "desktop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "M4 Max 14C CPU/32C GPU 36GB / 512GB",
+     "attributes": {
+      "chip": "M4 Max",
+      "ram": "36GB",
+      "storage": "512GB",
+      "cpu": "14-core",
+      "gpu": "32-core"
+     },
+     "officialPrice": 349999
+    }
+   ],
+   "colors": [
+    "Silver"
+   ],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/apple-mac-studio-m4-max-chip-1556.jpeg",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Mac-Studio-M4-Max-14-Core-CPU-32-Core-GPU---36512GB-6154.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3284/Mac_Studio_2.webp"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/mac-studio-m4-max-2025",
+   "offers": [
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/apple-mac-studio-m4-max-chip",
+     "price": 349999,
+     "oldPrice": 384999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/mac-studio-m4-max-14-core-cpu-32-core-gpu-36512gb",
+     "price": 415999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 512GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/mac-studio-m4-max-2025-price-in-bd",
+     "price": 420000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/mac-studio-m4-max-2025",
+     "price": 419999,
+     "oldPrice": 450000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 512GB",
+     "site": "MC Solution",
+     "url": "https://mcsolution.com.bd/mac-studio-m4-max-mu963/",
+     "price": 419900,
+     "oldPrice": 476964,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "Mac Studio M3 Ultra",
+   "category": "desktop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "M3 Ultra 28C CPU/60C GPU 96GB / 1TB",
+     "attributes": {
+      "chip": "M3 Ultra",
+      "ram": "96GB",
+      "storage": "1TB",
+      "cpu": "28-core",
+      "gpu": "60-core"
+     },
+     "officialPrice": 599999
+    }
+   ],
+   "colors": [
+    "Silver"
+   ],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/apple-mac-studio-m3-ultra-chip38.jpeg",
+    "https://cdn.shopify.com/s/files/1/1706/9177/files/mac-studio-2025-Custom-Mac-BD_6b160dfe-7a3f-4748-a6df-18644be86de2.png?v=1741602993"
+   ],
+   "specsSource": "https://custommacbd.com/products/mac-studio-m3-ultra-2025-price-in-bd",
+   "offers": [
+    {
+     "variant": "M3 Ultra 28C CPU/60C GPU 96GB / 1TB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/apple-mac-studio-m3-ultra-chip",
+     "price": 599999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 Ultra 28C CPU/60C GPU 96GB / 1TB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/mac-studio-m3-ultra-2025-price-in-bd",
+     "price": 600000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 Ultra 28C CPU/60C GPU 96GB / 1TB",
+     "site": "MC Solution",
+     "url": "https://mcsolution.com.bd/mac-studio-m3-ultra-mu973/",
+     "price": 830000,
+     "oldPrice": 846900,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "iMac 24\" M3",
+   "category": "desktop",
+   "releaseYear": 2023,
+   "variants": [
+    {
+     "label": "M3 8C GPU 8GB / 256GB",
+     "attributes": {
+      "chip": "M3",
+      "ram": "8GB",
+      "storage": "256GB",
+      "cpu": "8-core",
+      "gpu": "8-core"
+     },
+     "officialPrice": 189999
+    },
+    {
+     "label": "M3 10C GPU 8GB / 256GB",
+     "attributes": {
+      "chip": "M3",
+      "ram": "8GB",
+      "storage": "256GB",
+      "cpu": "8-core",
+      "gpu": "10-core"
+     },
+     "officialPrice": 194999
+    },
+    {
+     "label": "M3 10C GPU 8GB / 512GB",
+     "attributes": {
+      "chip": "M3",
+      "ram": "8GB",
+      "storage": "512GB",
+      "cpu": "8-core",
+      "gpu": "10-core"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Blue",
+    "Green",
+    "Pink",
+    "Silver",
+    "Yellow",
+    "Orange",
+    "Purple"
+   ],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/4257/imac24m3.webp",
+    "https://assets.gadgetandgear.com/upload/product/20231218_1702876471_627021.jpeg",
+    "https://mobilebuzzbd.com/wp-content/uploads/2025/01/Apple-iMac-24inch-M3-Chip-8CPU-with-10GPU.jpg"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/imac-24-m3-2023",
+   "offers": [
+    {
+     "variant": "M3 8C GPU 8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/imac-m3-24-inch",
+     "price": 189999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 8C GPU 8GB / 256GB",
+     "site": "CustomMacBD",
+     "url": "https://custommacbd.com/products/apple-imac-m3-2023-price-in-bd",
+     "price": 175000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 8C GPU 8GB / 256GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/imac-m3-24-inch-2023-8-core-gpu-price-in-bd",
+     "price": 204999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 10C GPU 8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/apple-imac-24-m3-chip-8gb-256gb-silver-8c-cpu-10c-gpu",
+     "price": 194999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 10C GPU 8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/imac-24-m3-2023",
+     "price": 174999,
+     "oldPrice": 180000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 10C GPU 8GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/apple-imac-24-inch-m3-chip-8c-cpu-10c-gpu/",
+     "price": 171999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 10C GPU 8GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/apple-imac-m3-24-inch-2023/",
+     "price": 228000,
+     "oldPrice": 257990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 10C GPU 8GB / 256GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/imac-m3-24-inch-10-core-gpu-price-in-bd",
+     "price": 228499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 10C GPU 8GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/imac-24-inch-2023-m3-chip-8-core-cpu-10-core-gpu-8512gb",
+     "price": 243500,
+     "oldPrice": 258000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 10C GPU 8GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/imac-24-m3-2023",
+     "price": 224999,
+     "oldPrice": 230000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 10C GPU 8GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/apple-imac-24-inch-m3-chip-8c-cpu-10c-gpu/",
+     "price": 245999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 10C GPU 8GB / 512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/apple-imac-m3-24-inch-2023/",
+     "price": 255000,
+     "oldPrice": 350000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M3 10C GPU 8GB / 512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/imac-m3-24-inch-10-core-gpu-price-in-bd",
+     "price": 240000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    }
+   ]
+  }
+ ]
+}
