@@ -115,30 +115,6 @@ export const en: Messages = {
     reportPrice: "Report a lower price",
     rights: (name, year) => `© ${year} ${name}. Prices vary by shop, so confirm with the seller before you buy.`,
   },
-  faq: {
-    title: "Questions & answers",
-    priceQ: (name) => `What is the price of ${name} in Bangladesh?`,
-    priceA: (price, shop, variant, shops, high) =>
-      `The lowest price right now is ${price}${variant ? ` (${variant})` : ""}, at ${shop}. ${high ? `Across ${shops} shops it ranges from ${price} to ${high}` : `${shops} shops have it`}; prices update several times a day.`,
-    officialQ: (name) => `How much cheaper is unofficial ${name} than official?`,
-    officialA: (official, unofficial, diff, variant) =>
-      `${variant ? `For ${variant}, ` : ""}the lowest with brand warranty (official) is ${official} and with shop warranty (unofficial) ${unofficial}, a difference of ${diff}. Official units are covered at the brand's service centre; for unofficial ones the shop gives the warranty.`,
-    variantsQ: (name) => `How much does each ${name} variant cost?`,
-    variantsA: (rows) => `Current lowest price of each variant: ${rows}.`,
-    historyQ: (name) => `How has the price of ${name} changed this month?`,
-    historyA: (low, date, now) => `The lowest in the past month was ${low} (${date}); the lowest now is ${now}.`,
-    historyAtLow: (now) => `Today's ${now} is the lowest price of the past month.`,
-  },
-  budget: {
-    title: (amount, name) => `Best ${name} Under ${amount}`,
-    crumb: (amount) => `Under ${amount}`,
-    intro: (month, amount, name, count, from) =>
-      `In ${month}, shops in Bangladesh have ${count} ${name} in stock under ${amount}, starting at ${from}. Sorted by what people look for most. Every price is the shop's real price, updated several times a day; tap a card to compare all shops.`,
-    others: "Other budgets",
-    links: "By budget",
-    chip: (amount) => `Under ${amount}`,
-    filters: (name) => `See all ${name} with filters`,
-  },
   search: {
     label: "Search products",
     hintLead: "Looking for, e.g.",
@@ -221,7 +197,7 @@ export const en: Messages = {
     compare: (n) => `Compare ${plural(n, "shop")}`,
     goToStore: "Go to shop",
     sectionsLabel: "On this page",
-    sections: { price: "Price", stores: "All shops", cheaper: "Cheaper", specs: "Specs", history: "Price history", about: "About", faq: "Q&A" },
+    sections: { price: "Price", stores: "All shops", cheaper: "Cheaper", specs: "Specs", history: "Price history", about: "About" },
     promoCount: (n) => (n === "1" ? "1 offer" : `${n} offers`),
     promoTitle: (shop) => `Offers at ${shop}`,
     promoSub: "What the shop gives with this price. Confirm with the shop before buying.",
@@ -333,8 +309,6 @@ export const en: Messages = {
     categoryTitle: (name) => `${name} Price in Bangladesh: Where Is It Cheapest?`,
     categoryShortTitle: (name) => `${name} Price in Bangladesh`,
     categoryDescription: (name) => `Compare ${name} prices from shops across Bangladesh and see where it's cheapest.`,
-    budgetTitles: (amount, name, month) => [`Best ${name} Under ${amount} in Bangladesh (${month})`, `Best ${name} Under ${amount} (${month})`, `Best ${name} Under ${amount}`],
-    budgetDescription: (amount, name, count, from) => `${count} ${name} under ${amount} in Bangladesh, from ${from}. Real shop prices, updated several times a day.`,
     sellerTitle: (name, area) => `${name}${area ? ` (${area})` : ""} Prices & Offers`,
     sellerDescription: (name, kind, area) => `${name} (${kind}${area ? `, ${area}` : ""}): what it sells and at what prices, contact details, and whether we have verified the seller.`,
     sellerListings: (name, count, examples) => `Prices of ${count} products at ${name}${examples ? `, including ${examples}` : ""}. Compare them with other stores.`,

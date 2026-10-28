@@ -113,30 +113,6 @@ export const bn = {
     reportPrice: "কম দাম জানান",
     rights: (name: string, year: string) => `© ${year} ${name}। দাম দোকানভেদে বদলাতে পারে, কেনার আগে দোকানে মিলিয়ে নিন।`,
   },
-  faq: {
-    title: "প্রশ্ন ও উত্তর",
-    priceQ: (name: string) => `বাংলাদেশে ${name} এর দাম কত?`,
-    priceA: (price: string, shop: string, variant: string | null, shops: string, high: string | null) =>
-      `এখন সবচেয়ে কম দাম ${price}${variant ? ` (${variant})` : ""}, ${shop}-এ। ${high ? `${shops}টা দোকানে দাম ${price} থেকে ${high} পর্যন্ত` : `${shops}টা দোকানে পাওয়া যাচ্ছে`}; দাম দিনে কয়েকবার হালনাগাদ হয়।`,
-    officialQ: (name: string) => `${name} অফিসিয়াল আর আনঅফিসিয়ালের দামে পার্থক্য কত?`,
-    officialA: (official: string, unofficial: string, diff: string, variant: string | null) =>
-      `${variant ? `${variant} ভার্সনে ` : ""}ব্র্যান্ড ওয়ারেন্টিসহ (অফিসিয়াল) সবচেয়ে কম ${official}, দোকানের ওয়ারেন্টিতে (আনঅফিসিয়াল) ${unofficial}; পার্থক্য ${diff}। অফিসিয়ালে ব্র্যান্ডের সার্ভিস সেন্টারে ওয়ারেন্টি পাবেন, আনঅফিসিয়ালে ওয়ারেন্টি দেয় দোকান নিজে।`,
-    variantsQ: (name: string) => `${name} এর কোন ভার্সনের দাম কত?`,
-    variantsA: (rows: string) => `প্রতিটা ভার্সনের এখনকার সবচেয়ে কম দাম: ${rows}।`,
-    historyQ: (name: string) => `গত এক মাসে ${name} এর দাম কেমন ছিল?`,
-    historyA: (low: string, date: string, now: string) => `গত এক মাসে সবচেয়ে কম ছিল ${low} (${date}); এখন সবচেয়ে কম ${now}।`,
-    historyAtLow: (now: string) => `এখনকার দাম ${now}-ই গত এক মাসে সবচেয়ে কম।`,
-  },
-  budget: {
-    title: (amount: string, name: string) => `${amount} টাকার মধ্যে সেরা ${name}`,
-    crumb: (amount: string) => `${amount} টাকার মধ্যে`,
-    intro: (month: string, amount: string, name: string, count: string, from: string) =>
-      `${month}-এ বাংলাদেশের দোকানে ${amount} টাকার মধ্যে স্টকে আছে ${count}টা ${name}, দাম ${from} থেকে শুরু। তালিকা লোকে বেশি খোঁজা অনুযায়ী সাজানো। প্রতিটা দাম দোকানের আসল দাম, দিনে কয়েকবার হালনাগাদ হয়; কার্ডে চাপলে সব দোকানের দাম পাশাপাশি দেখবেন।`,
-    others: "অন্য বাজেটে",
-    links: "বাজেট ধরে",
-    chip: (amount: string) => `${amount} টাকার মধ্যে`,
-    filters: (name: string) => `সব ${name} ফিল্টারসহ দেখুন`,
-  },
   search: {
     label: "পণ্য খুঁজুন",
     hintLead: "কী খুঁজছেন? যেমন",
@@ -219,7 +195,7 @@ export const bn = {
     compare: (n: string) => `${n}টা দোকানের দাম দেখুন`,
     goToStore: "দোকানে যান",
     sectionsLabel: "পাতার ভাগ",
-    sections: { price: "দাম", stores: "সব দোকান", cheaper: "আরও সস্তা", specs: "স্পেসিফিকেশন", history: "দামের ইতিহাস", about: "বিবরণ", faq: "প্রশ্ন-উত্তর" },
+    sections: { price: "দাম", stores: "সব দোকান", cheaper: "আরও সস্তা", specs: "স্পেসিফিকেশন", history: "দামের ইতিহাস", about: "বিবরণ" },
     promoCount: (n: string) => `${n}টা অফার`,
     promoTitle: (shop: string) => `${shop}-এর অফার`,
     promoSub: "এই দামের সাথে দোকানে যা পাবেন। কেনার আগে দোকানে মিলিয়ে নিন।",
@@ -338,9 +314,6 @@ export const bn = {
     categoryTitle: (name: string) => `বাংলাদেশে ${withEr(name)} দাম: কোথায় সবচেয়ে কম?`,
     categoryShortTitle: (name: string) => `বাংলাদেশে ${withEr(name)} দাম`,
     categoryDescription: (name: string) => `বাংলাদেশের দোকানগুলোতে ${withEr(name)} দাম পাশাপাশি দেখুন, কোথায় সবচেয়ে কম জেনে নিন।`,
-    budgetTitles: (amount: string, name: string, month: string) => [`${amount} টাকার মধ্যে সেরা ${name}, ${month}`, `${amount} টাকার মধ্যে সেরা ${name}`],
-    budgetDescription: (amount: string, name: string, count: string, from: string) =>
-      `${amount} টাকার মধ্যে বাংলাদেশে ${count}টা ${name}, দাম ${from} থেকে। দোকানের আসল দাম মিলিয়ে, দিনে কয়েকবার হালনাগাদ।`,
     sellerTitle: (name: string, area: string | null) => `${name}${area ? ` (${area})` : ""} এর দাম ও অফার`,
     sellerDescription: (name: string, kind: string, area: string | null) =>
       `${name} (${kind}${area ? `, ${area}` : ""}): কোন পণ্য কত দামে পাওয়া যায়, যোগাযোগের তথ্য, আর বিক্রেতা যাচাই করা কিনা।`,

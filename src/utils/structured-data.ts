@@ -57,11 +57,3 @@ export function websiteData(name: string, prefix: string) {
     { "@context": "https://schema.org", "@type": "Organization", name, url: absolute("/"), logo: absolute("/icons/icon-512.png") },
   ];
 }
-
-export function faqData(items: { q: string; a: string }[]) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: items.map((item) => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })),
-  };
-}

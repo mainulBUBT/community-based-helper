@@ -8,8 +8,7 @@ import type { ProductDetail } from "@/types/catalog";
 import { banglaName } from "@/utils/bangla-name";
 import { categoryName } from "@/utils/categories";
 import { formatTaka, toBnDigits } from "@/utils/format";
-import { productFaq } from "@/utils/product-faq";
-import { breadcrumbData, faqData, productData } from "@/utils/structured-data";
+import { breadcrumbData, productData } from "@/utils/structured-data";
 import { categoryPath } from "@/utils/url";
 import { ProductView } from "./ProductView";
 
@@ -58,8 +57,7 @@ export async function ProductPage({ slug, lang }: { slug: string; lang: Lang }) 
   const detail = await getProductDetail(slug);
   if (!detail) notFound();
   const { regionNotes } = await getSiteSettings();
-  const { product, offers, category, history } = detail;
-  const faq = productFaq(product, offers, history, category?.warranty !== false, messages(lang), lang);
+  const { product, offers, category } = detail;
   const about = (lang === "en" ? product.descriptionEn || product.description : product.description || product.descriptionEn) || describe(detail, lang);
   const prefix = lang === "en" ? "/en" : "";
   const path = `${prefix}/product/${product.slug}/`;
@@ -71,7 +69,7 @@ export async function ProductPage({ slug, lang }: { slug: string; lang: Lang }) 
   return (
     <>
       {/* দাম না থাকলে Product ডেটা Google এর নিয়মে অসম্পূর্ণ, তখন শুধু breadcrumb */}
-      <JsonLd data={offers.length ? [productData(product, offers, path, about, bnName(product, lang)), breadcrumbData(crumbs), ...(faq.length ? [faqData(faq)] : [])] : breadcrumbData(crumbs)} />
+      <JsonLd data={offers.length ? [productData(product, offers, path, about, bnName(product, lang)), breadcrumbData(crumbs)] : breadcrumbData(crumbs)} />
       <ProductView initial={detail} regionNotes={regionNotes} />
     </>
   );

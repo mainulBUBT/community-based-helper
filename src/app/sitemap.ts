@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/config/site";
-import { budgetSlug } from "@/config/budgets";
-import { BRAND_MIN_PRODUCTS, listBrands, listBudgets, loadCatalog } from "@/services/catalog.server";
+import { BRAND_MIN_PRODUCTS, listBrands, loadCatalog } from "@/services/catalog.server";
 import { brandSlug } from "@/utils/url";
 import { categoryFamily } from "@/utils/categories";
 import { toEnPath } from "@/utils/locale-path";
@@ -14,7 +13,7 @@ const latest = (dates: string[]) => (dates.length ? dates.reduce((a, b) => (b > 
 
 // প্রতিটা পেজ দুই ভাষায় আলাদা সারি, দুটোতেই একে অপরের hreflang; lastmod হলো ওই পেজের দাম শেষ কবে যাচাই হয়েছে
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [{ products, sellers, categories, offers }, brands, budgets] = await Promise.all([loadCatalog(), listBrands(), listBudgets()]);
+  const [{ products, sellers, categories, offers }, brands] = await Promise.all([loadCatalog(), listBrands()]);
   const variantProduct = new Map(products.flatMap((p) => p.variants.map((v) => [v.id, p] as const)));
   const checked = new Map<string, string[]>();
   const mark = (key: string, date: string) => checked.set(key, [...(checked.get(key) ?? []), date]);
@@ -35,12 +34,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       "daily",
       0.8,
       latest(categoryFamily(categories, c.slug).flatMap((slug) => checked.get(`c:${slug}`) ?? [])),
-    ]),
-    ...budgets.map((b): [string, Frequency, number, string | undefined] => [
-      `/category/${b.slug}/${budgetSlug(b.budget)}/`,
-      "daily",
-      0.8,
-      latest(categoryFamily(categories, b.slug).flatMap((slug) => checked.get(`c:${slug}`) ?? [])),
     ]),
     ...brands
       .filter((b) => b.count >= BRAND_MIN_PRODUCTS)
