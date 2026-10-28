@@ -117,7 +117,6 @@ export interface ProductSummary {
   product: Product;
   lowest: number | null;
   condition: Condition | null;
-  lowestAny: number | null;
   compareAt: number | null;
   inStock: boolean;
   sellerCount: number;
@@ -141,5 +140,5 @@ export interface ProductDetail {
   offers: OfferView[];
   history: PricePoint[];
   alternatives: Record<string, Alternative[]>;
-  pick: { variantId: string; condition: Condition | null } | null;
+  startVariant: string | null;
 }

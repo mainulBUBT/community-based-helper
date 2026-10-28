@@ -13,7 +13,6 @@ export interface Filters {
   min: number | null;
   max: number | null;
   inStock: boolean;
-  unofficial: boolean;
   attributes: Partial<Record<Axis, string[]>>;
 }
 
@@ -164,7 +163,7 @@ function Budget({ filters, facets, update }: { filters: Filters; facets: Facets;
 
 export function FilterPanel({ filters, facets, update }: { filters: Filters; facets: Facets; update: (patch: Patch) => void }) {
   const { t } = useI18n();
-  const { top, childrenOf, name, warranty } = useCategories();
+  const { top, childrenOf, name } = useCategories();
   const slugs = top.flatMap((c) => [{ slug: c.slug, child: false }, ...childrenOf(c.slug).map((x) => ({ slug: x.slug, child: true }))]);
   const resetAxes = Object.fromEntries(facets.axes.map(({ axis }) => [axis, null]));
   return (
@@ -221,14 +220,6 @@ export function FilterPanel({ filters, facets, update }: { filters: Filters; fac
           {t.search.inStock}
         </Check>
       </Section>
-
-      {(!filters.category || warranty(filters.category)) && (
-        <Section title={t.search.type}>
-          <Check checked={filters.unofficial} onChange={() => update({ unofficial: filters.unofficial ? null : "1" })}>
-            {t.search.unofficialToo}
-          </Check>
-        </Section>
-      )}
 
       {facets.axes.map(({ axis, values }) => {
         const selected = filters.attributes[axis] ?? [];

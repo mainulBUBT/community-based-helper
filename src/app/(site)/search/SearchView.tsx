@@ -30,14 +30,13 @@ const SORTS = ["popular", "cheap", "expensive", "drop"] as const;
 const PAGE_SIZE = 24;
 type Sort = (typeof SORTS)[number];
 
-const priceOf = (s: ProductSummary, unofficial: boolean) => (unofficial ? s.lowestAny : s.lowest);
 const list = (value: string | null) => (value ? value.split(",").filter(Boolean) : []);
 const num = (value: string | null) => (value && Number(value) > 0 ? Number(value) : null);
 
-const COMPARE: Record<Sort, (a: ProductSummary, b: ProductSummary, unofficial: boolean) => number> = {
+const COMPARE: Record<Sort, (a: ProductSummary, b: ProductSummary) => number> = {
   popular: (a, b) => b.product.popularity - a.product.popularity,
-  cheap: (a, b, u) => (priceOf(a, u) ?? Infinity) - (priceOf(b, u) ?? Infinity),
-  expensive: (a, b, u) => (priceOf(b, u) ?? -1) - (priceOf(a, u) ?? -1),
+  cheap: (a, b) => (a.lowest ?? Infinity) - (b.lowest ?? Infinity),
+  expensive: (a, b) => (b.lowest ?? -1) - (a.lowest ?? -1),
   drop: (a, b) => (b.drop ?? 0) - (a.drop ?? 0),
 };
 
@@ -58,13 +57,12 @@ function readFilters(params: URLSearchParams, category?: string, brand?: string)
     min: num(params.get("min")),
     max: num(params.get("max")),
     inStock: params.get("stock") === "1",
-    unofficial: params.get("unofficial") === "1",
     attributes: Object.fromEntries(AXES.map((axis) => [axis, list(params.get(axis))]).filter(([, values]) => values.length)),
   };
 }
 
 function matches(s: ProductSummary, f: Filters, family: Set<string> | null) {
-  const price = priceOf(s, f.unofficial);
+  const price = s.lowest;
   return (
     (!family || family.has(s.product.category)) &&
     (!f.brands.length || f.brands.includes(s.product.brand)) &&
@@ -126,7 +124,7 @@ export function SearchView({ category, brand, initial }: { category?: string; br
   const summaries = data ?? [];
   const familySet = filters.category ? new Set(family(filters.category)) : null;
   const inCategory = summaries.filter((s) => !familySet || familySet.has(s.product.category));
-  const prices = inCategory.map((s) => priceOf(s, filters.unofficial)).filter((p): p is number => p !== null);
+  const prices = inCategory.map((s) => s.lowest).filter((p): p is number => p !== null);
   const facets: Facets = {
     brands: byCount(inCategory.map((s) => s.product.brand)),
     axes: (find(filters.category)?.axes ?? AXES).map((axis) => ({ axis, values: axisValues(inCategory, axis) })).filter((f) => f.values.length > 1),
@@ -141,7 +139,7 @@ export function SearchView({ category, brand, initial }: { category?: string; br
   const results = ranked
     .map((r) => r.item)
     .filter((s) => matches(s, filters, familySet))
-    .sort((a, b) => (query && sort === "popular" ? byRelevance(a, b) || byStock(a, b) : byStock(a, b)) || COMPARE[sort](a, b, filters.unofficial));
+    .sort((a, b) => (query && sort === "popular" ? byRelevance(a, b) || byStock(a, b) : byStock(a, b)) || COMPARE[sort](a, b));
   const paged = paginate(results, Number(params.get("page")) || 1, PAGE_SIZE);
   const goTo = (page: number) => {
     update({ page: page > 1 ? String(page) : null });
@@ -154,12 +152,11 @@ export function SearchView({ category, brand, initial }: { category?: string; br
       ? [{ label: `${formatTaka(filters.min ?? facets.priceFloor, lang)} – ${formatTaka(filters.max ?? facets.priceCeil, lang)}`, patch: { min: null, max: null } }]
       : []),
     ...(filters.inStock ? [{ label: t.search.inStock, patch: { stock: null } }] : []),
-    ...(filters.unofficial ? [{ label: t.search.unofficialToo, patch: { unofficial: null } }] : []),
     ...Object.entries(filters.attributes).flatMap(([axis, values]) =>
       values.map((v) => ({ label: `${t.axis[axis as Axis]}: ${v}`, patch: { [axis]: values.filter((x) => x !== v).join(",") || null } })),
     ),
   ];
-  const clearAll = { brand: null, min: null, max: null, stock: null, unofficial: null, ...Object.fromEntries(AXES.map((axis) => [axis, null])) };
+  const clearAll = { brand: null, min: null, max: null, stock: null, ...Object.fromEntries(AXES.map((axis) => [axis, null])) };
   const categoryTitle = brand ?? (filters.category ? name(filters.category) : t.search.allProducts);
   const title = query ? t.search.resultsFor(query) : categoryTitle;
 

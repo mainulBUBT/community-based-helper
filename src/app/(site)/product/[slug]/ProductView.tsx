@@ -195,20 +195,20 @@ function SpecsPanel({ specs, source }: { specs: SpecGroup[]; source?: string | n
 
 export function ProductView({ initial, regionNotes }: { initial: ProductDetail; regionNotes: RegionNote[] }) {
   const { lang, t, num, ago, prefix } = useI18n();
-  const { product, offers, history, category, alternatives, pick } = initial;
+  const { product, offers, history, category, alternatives, startVariant } = initial;
   const { slugs, isSaved } = useSaved();
   const { name: categoryName, find } = useCategories();
   const info = category ?? find(product.category);
   const warranty = info?.warranty !== false;
   const kinds = categoryConditions(info);
   const categoryLabel = category ? (lang === "en" ? category.nameEn : category.name) : categoryName(product.category);
-  const [variantId, setVariantId] = useState(pick?.variantId ?? product.variants[0]?.id);
+  const [variantId, setVariantId] = useState(startVariant ?? product.variants[0]?.id);
   const variant = product.variants.find((v) => v.id === variantId) ?? product.variants[0];
   const cheaper = alternatives[variant?.id ?? ""] ?? [];
 
   const variantOffers = offers.filter((o) => o.variantId === variant?.id);
   const conditions = kinds.filter((c) => variantOffers.some((o) => o.condition === c));
-  const [chosen, setChosen] = useState<Condition | "all">(pick?.condition ?? "all");
+  const [chosen, setChosen] = useState<Condition | "all">("all");
   const condition: Condition | "all" = chosen === "all" || conditions.includes(chosen) ? chosen : "all";
   const regions = [...new Set(variantOffers.map((o) => primaryRegion(o.region)).filter((r): r is string => Boolean(r)))].sort();
   const [regionChoice, setRegion] = useState<string | null>(null);

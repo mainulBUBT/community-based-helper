@@ -24,32 +24,29 @@ export function viewOffers(catalog: Catalog, offers: Offer[]): OfferView[] {
     .sort((a, b) => byStock(a, b) || byPrice(a, b));
 }
 
+// কার্ডের দাম সব ধরন মিলিয়ে সবচেয়ে কম, স্টকে থাকা দোকান থেকে; কোথাও স্টক না থাকলে তবেই সব দোকান থেকে
 function cardOffer(catalog: Catalog, product: Product) {
   const variantIds = new Set(product.variants.map((v) => v.id));
   const offers = catalog.offers.filter((o) => variantIds.has(o.variantId));
-  // ওয়ারেন্টি নেই এমন ক্যাটাগরিতে (স্কিনকেয়ার, জুতা) অফিসিয়াল/আনঅফিসিয়াল ভাগ নেই, সব দামই সমান
-  const warranty = catalog.categories.find((c) => c.slug === product.category)?.warranty !== false;
-  // কার্ডের দাম স্টকে থাকা দোকান থেকে; কোথাও স্টক না থাকলে তবেই সব দোকান থেকে
   const available = offers.filter((o) => o.inStock !== false);
   const pool = available.length ? available : offers;
-  const official = warranty ? pool.filter((o) => o.condition === "official") : pool;
-  const priced = official.length ? official : pool;
-  const best = priced.length ? priced.reduce((a, b) => (b.price < a.price ? b : a)) : null;
-  return { offers, pool, best, officialOnly: warranty && official.length > 0 };
+  const best = pool.length ? pool.reduce((a, b) => (b.price < a.price ? b : a)) : null;
+  return { offers, best };
 }
 
 export function summarize(catalog: Catalog, product: Product): ProductSummary {
-  const { offers, pool, best } = cardOffer(catalog, product);
+  const { offers, best } = cardOffer(catalog, product);
   const lowest = best?.price ?? null;
-  // কপির দামের পাশে আসল জুতার নির্ধারিত দাম দেখিয়ে "ছাড়" বলা যায় না
-  const listPrice = best && !isReplica(best.condition) ? product.variants.find((v) => v.id === best.variantId)?.officialPrice : null;
+  const warranty = catalog.categories.find((c) => c.slug === product.category)?.warranty !== false;
+  // আনঅফিসিয়াল বা কপির দামের পাশে অফিসিয়াল দাম দেখিয়ে "ছাড়" বলা যায় না
+  const listed = best && (warranty ? best.condition === "official" : !isReplica(best.condition));
+  const listPrice = listed ? product.variants.find((v) => v.id === best.variantId)?.officialPrice : null;
   const reference = Math.max(best?.oldPrice ?? 0, listPrice ?? 0);
   const compareAt = lowest && reference > lowest ? reference : null;
   return {
     product,
     lowest,
     condition: best?.condition ?? null,
-    lowestAny: pool.length ? Math.min(...pool.map((o) => o.price)) : null,
     compareAt,
     inStock: offers.some((o) => o.inStock !== false),
     sellerCount: new Set(offers.map((o) => o.sellerId)).size,
@@ -172,10 +169,9 @@ export function makeService(load: CatalogLoader, loadHistory: HistoryLoader = ()
     const offers = viewOffers(catalog, catalog.offers.filter((o) => variantIds.has(o.variantId)));
     const category = catalog.categories.find((c) => c.slug === product.category) ?? null;
     const alternatives = buildAlternatives(catalog, product, category);
-    // পাতা খোলে কার্ডের দামের ভার্সন আর ধরনে, যাতে কার্ডে যা দেখা গেল ভেতরেও তাই থাকে
-    const { best, officialOnly } = cardOffer(catalog, product);
-    const pick = best ? { variantId: best.variantId, condition: officialOnly ? ("official" as const) : null } : null;
-    return { product, category, offers, history: await loadHistory(offers.map((o) => o.id)), alternatives, pick };
+    // পাতা খোলে কার্ডের দামের ভার্সনে, যাতে কার্ডে যা দেখা গেল ভেতরেও তাই থাকে
+    const startVariant = cardOffer(catalog, product).best?.variantId ?? null;
+    return { product, category, offers, history: await loadHistory(offers.map((o) => o.id)), alternatives, startVariant };
   };
 
   const getSellerDetail = async (id: string) => {

@@ -273,13 +273,12 @@ export default function ProductsAdminPage() {
                   <th className="px-3 py-3 font-semibold">{t.admin.products.colVariants}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.products.colStores}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.products.colLowest}</th>
-                  <th className="px-3 py-3 font-semibold">{t.admin.products.colLowestAny}</th>
                   <th className="px-5 py-3" />
                 </tr>
               </thead>
               <tbody className="divide-y divide-line-soft">
                 {paged.items.map((summary) => {
-                  const { product, lowest, lowestAny, sellerCount } = summary;
+                  const { product, lowest, sellerCount } = summary;
                   const issues = issuesOf(summary);
                   return (
                   <tr key={product.id}>
@@ -301,7 +300,6 @@ export default function ProductsAdminPage() {
                     <td className="px-3 py-3 text-[13px] text-dim">{product.variants.map((v) => v.label).join(", ")}</td>
                     <td className="px-3 py-3">{num(sellerCount)}</td>
                     <td className="px-3 py-3 font-semibold">{lowest ? formatTaka(lowest) : t.admin.products.none}</td>
-                    <td className="px-3 py-3">{lowestAny ? formatTaka(lowestAny) : t.admin.products.none}</td>
                     <td className="px-5 py-3 text-right">
                       <div className="flex items-center justify-end gap-2">
                         <a
