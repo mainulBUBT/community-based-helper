@@ -4,6 +4,7 @@ import {
   Activity,
   Bot,
   Boxes,
+  Gauge,
   ClipboardCheck,
   LayoutDashboard,
   LogOut,
@@ -41,6 +42,7 @@ const NAV: { href: string; key: NavKey; icon: LucideIcon }[] = [
   { href: "/admin/offers/", key: "offers", icon: Tag },
   { href: "/admin/jobs/", key: "jobs", icon: Bot },
   { href: "/admin/visitors/", key: "visitors", icon: Activity },
+  { href: "/admin/limits/", key: "limits", icon: Gauge },
   { href: "/admin/logs/", key: "logs", icon: ScrollText },
   { href: "/admin/settings/", key: "settings", icon: Settings },
 ];

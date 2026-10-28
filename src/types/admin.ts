@@ -86,6 +86,16 @@ export interface PrivateSettings {
   alertChatId: string | null;
 }
 
+export interface UsageStats {
+  dbBytes: number;
+  viewsToday: number;
+  alerts: number;
+  deploysThisMonth: number;
+  lastJobRun: string | null;
+  // শেষ rebuild যা লিখে গেছে; প্রথম rebuild-এর আগে খালি
+  deploy: { files?: number; bytes?: number; largest?: number; lastCommit?: string | null; at?: string };
+}
+
 export interface DayStat {
   day: string;
   views: number;
