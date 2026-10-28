@@ -3,7 +3,7 @@
 import { ChevronRight, SearchX, SlidersHorizontal, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
 import { startNavProgress } from "@/components/layout/NavProgress";
 import { ProductCard } from "@/components/product/ProductCard";
@@ -85,7 +85,7 @@ function GridSkeleton() {
 }
 
 // ক্যাটাগরি পেজে সার্ভার ওই ভাগের পণ্য দিয়ে দেয়, তখন পুরো ক্যাটালগ আর নামাতে হয় না
-export function SearchView({ category, brand, initial }: { category?: string; brand?: string; initial?: ProductSummary[] }) {
+export function SearchView({ category, brand, initial, extra }: { category?: string; brand?: string; initial?: ProductSummary[]; extra?: ReactNode }) {
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
@@ -185,6 +185,7 @@ export function SearchView({ category, brand, initial }: { category?: string; br
       </div>
 
       {!brand && facets.brands.length > 0 && <BrandRow brands={facets.brands} selected={filters.brands} onSelect={(b) => update({ brand: b })} />}
+      {extra}
 
       <div className="grid gap-5 lg:grid-cols-[260px_minmax(0,1fr)]">
         <aside className="hidden self-start overflow-y-auto overscroll-contain rounded-lg bg-surface ring-1 ring-line lg:sticky lg:top-32 lg:block lg:max-h-[calc(100dvh-9rem)]">

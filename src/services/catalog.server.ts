@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import { BUDGET_MIN_PRODUCTS, BUDGETS } from "@/config/budgets";
 import { DEFAULT_SETTINGS } from "@/config/site";
 import type { SiteSettings } from "@/types/admin";
 import { byStock, toCard } from "@/utils/catalog";
@@ -67,6 +68,24 @@ export async function getCategoryPage(slug: string) {
   const family = new Set(categoryFamily(categories, slug));
   const items = summaries.filter((s) => family.has(s.product.category)).sort((a, b) => byStock(a, b) || b.product.popularity - a.product.popularity);
   return { category, summaries: items.map(toCard) };
+}
+
+// বাজেটের পাতা: স্টকে থাকা, দাম বাজেটের মধ্যে; ক্রম ক্যাটাগরি পাতার মতো (লোকে বেশি খোঁজা আগে)
+export async function getBudgetPage(slug: string, budget: number) {
+  const page = await getCategoryPage(slug);
+  if (!page || !BUDGETS[slug]?.includes(budget)) return null;
+  const summaries = page.summaries.filter((s) => s.inStock && s.lowest && s.lowest <= budget);
+  return summaries.length >= BUDGET_MIN_PRODUCTS ? { category: page.category, budget, summaries } : null;
+}
+
+// যে বাজেটে যথেষ্ট পণ্য আছে শুধু সেগুলো; ক্যাটাগরি পাতার লিংক, sitemap আর static পাতা এখান থেকে
+export async function listBudgets(slug?: string) {
+  const pages = await Promise.all(
+    Object.entries(BUDGETS)
+      .filter(([category]) => !slug || category === slug)
+      .flatMap(([category, amounts]) => amounts.map((amount) => getBudgetPage(category, amount))),
+  );
+  return pages.filter((p) => p !== null).map((p) => ({ slug: p.category.slug, budget: p.budget, count: p.summaries.length }));
 }
 
 // ব্র্যান্ড পেজ: সব ব্র্যান্ডের পেজ হয়, তবে ২টার কম পণ্য হলে Google এ তোলা হয় না (পাতলা পেজ)

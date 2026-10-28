@@ -58,3 +58,10 @@ export function banglaName(brand: string, name: string): string | null {
   const words = `${brand} ${name}`.split(/\s+/).map((word) => WORDS[word.toLowerCase()] ?? (/^\d+$/.test(word) ? toBnDigits(word) : word));
   return words.join(" ");
 }
+
+// বাংলা শব্দে "মোবাইলের", "মধুর"; ইংরেজি নাম বা বন্ধনীতে শেষ হলে আলাদা "এর"
+export function withEr(word: string): string {
+  const last = word.trim().slice(-1);
+  if (!/[\u0980-\u09FF]/.test(last)) return `${word} এর`;
+  return /[\u0985-\u0994\u09BE-\u09CC]/.test(last) ? `${word}র` : `${word}ের`;
+}

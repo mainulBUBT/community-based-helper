@@ -8,7 +8,8 @@ import type { ProductDetail } from "@/types/catalog";
 import { banglaName } from "@/utils/bangla-name";
 import { categoryName } from "@/utils/categories";
 import { formatTaka, toBnDigits } from "@/utils/format";
-import { breadcrumbData, productData } from "@/utils/structured-data";
+import { productFaq } from "@/utils/product-faq";
+import { breadcrumbData, faqData, productData } from "@/utils/structured-data";
 import { categoryPath } from "@/utils/url";
 import { ProductView } from "./ProductView";
 
@@ -36,12 +37,18 @@ export async function productMetadata(slug: string, lang: Lang): Promise<Metadat
   const { seo } = messages(lang);
   const { product } = detail;
   const name = `${product.brand} ${product.name}`;
-  const bn = bnName(product, lang);
+  // শিরোনামে ব্র্যান্ড একবারই: "Apple iPhone 17 Pro (আইফোন ১৭ প্রো)"
+  const bnWords = bnName(product, lang)?.split(" ").slice(product.brand.split(/\s+/).length) ?? [];
+  // "গ্যালাক্সি Z Flip8" এর মতো বেশিরভাগ ইংরেজি থাকলে বাংলা নাম বাদ
+  const bnModel = bnWords.filter((w) => /[\u0980-\u09FF]/.test(w)).length * 2 > bnWords.length ? bnWords.join(" ") : null;
+  // দিনে কয়েকবার rebuild হয়, তাই মাস নিজে থেকেই নতুন থাকে
+  const month = new Date().toLocaleDateString(lang === "bn" ? "bn-BD" : "en-GB", { month: "long", year: "numeric" });
+  const [title, ...fallbacks] = seo.productTitles(name, product.name, bnModel, month);
   return pageMeta({
     lang,
     path: `/product/${product.slug}/`,
-    title: bn ? seo.productBnTitle(bn, name) : seo.productTitle(name),
-    shortTitle: seo.productShortTitle(name),
+    title,
+    shortTitle: fallbacks,
     description: describe(detail, lang),
     image: product.images?.[0],
   });
@@ -51,7 +58,8 @@ export async function ProductPage({ slug, lang }: { slug: string; lang: Lang }) 
   const detail = await getProductDetail(slug);
   if (!detail) notFound();
   const { regionNotes } = await getSiteSettings();
-  const { product, offers, category } = detail;
+  const { product, offers, category, history } = detail;
+  const faq = productFaq(product, offers, history, category?.warranty !== false, messages(lang), lang);
   const about = (lang === "en" ? product.descriptionEn || product.description : product.description || product.descriptionEn) || describe(detail, lang);
   const prefix = lang === "en" ? "/en" : "";
   const path = `${prefix}/product/${product.slug}/`;
@@ -63,7 +71,7 @@ export async function ProductPage({ slug, lang }: { slug: string; lang: Lang }) 
   return (
     <>
       {/* দাম না থাকলে Product ডেটা Google এর নিয়মে অসম্পূর্ণ, তখন শুধু breadcrumb */}
-      <JsonLd data={offers.length ? [productData(product, offers, path, about, bnName(product, lang)), breadcrumbData(crumbs)] : breadcrumbData(crumbs)} />
+      <JsonLd data={offers.length ? [productData(product, offers, path, about, bnName(product, lang)), breadcrumbData(crumbs), ...(faq.length ? [faqData(faq)] : [])] : breadcrumbData(crumbs)} />
       <ProductView initial={detail} regionNotes={regionNotes} />
     </>
   );

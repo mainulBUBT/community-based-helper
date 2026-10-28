@@ -26,6 +26,7 @@ import { formatTaka, telLink } from "@/utils/format";
 import { primaryRegion } from "@/utils/region";
 import { brandPath, categoryPath, hostOf } from "@/utils/url";
 import { keySpecs, specHighlights } from "@/utils/specs";
+import { productFaq } from "@/utils/product-faq";
 import { sortAxisValues } from "@/utils/variants";
 
 const imageFor = (images: string[], color?: string) => {
@@ -241,6 +242,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   const needsNeir = product.category === "mobile" || /cellular|lte/i.test(variant?.attributes.connectivity ?? "");
   const lastChecked = shown.reduce((a, o) => (o.checkedAt > a ? o.checkedAt : a), best?.checkedAt ?? "");
   // গত ৩০ দিনে এই ভার্সনের সবচেয়ে কম দাম (বেক করা ইতিহাস ৩১ দিনের); এখনকার দামও ধরা
+  const faq = productFaq(product, offers, history, warranty, t, lang);
   const sections = [
     { id: "price", label: t.product.sections.price },
     ...(shown.length ? [{ id: "stores", label: t.product.sections.stores }] : []),
@@ -248,6 +250,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
     { id: "specs", label: t.product.sections.specs },
     { id: "history", label: t.product.sections.history },
     ...(description ? [{ id: "about", label: t.product.sections.about }] : []),
+    ...(faq.length ? [{ id: "faq", label: t.product.sections.faq }] : []),
   ];
   const monthLow = Math.min(...history.filter((p) => shown.some((o) => o.id === p.offerId)).map((p) => p.price), ...shown.map((o) => o.price));
 
@@ -443,6 +446,19 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
       {description && (
         <Panel title={t.product.about} id="about">
           <p className="px-5 py-4 text-[15px] leading-relaxed whitespace-pre-line text-ink">{description}</p>
+        </Panel>
+      )}
+
+      {faq.length > 0 && (
+        <Panel title={t.faq.title} id="faq">
+          <dl className="divide-y divide-line-soft">
+            {faq.map((item) => (
+              <div key={item.q} className="flex flex-col gap-1 px-5 py-3.5">
+                <dt className="text-[15px] font-semibold text-ink">{item.q}</dt>
+                <dd className="text-sm leading-relaxed text-dim">{item.a}</dd>
+              </div>
+            ))}
+          </dl>
         </Panel>
       )}
 

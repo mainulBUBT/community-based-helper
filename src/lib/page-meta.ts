@@ -12,8 +12,8 @@ interface PageMeta {
   // বাংলা পথ; English পথ এখান থেকেই বানানো হয়
   path: string;
   title?: string;
-  // পুরো শিরোনাম (সাইটের নামসহ) Google এর ~৬৫ অক্ষরের বেশি হলে এটা
-  shortTitle?: string;
+  // পুরো শিরোনাম (সাইটের নামসহ) Google এর ~৬৫ অক্ষরের বেশি হলে এটা; কয়েকটা দিলে প্রথম যেটা ধরে
+  shortTitle?: string | string[];
   description?: string;
   image?: string | null;
   index?: boolean;
@@ -21,16 +21,20 @@ interface PageMeta {
 
 // প্রতিটা পেজের canonical, দুই ভাষার hreflang (x-default বাংলা), Open Graph আর Twitter card এক জায়গা থেকে
 const MAX_TITLE = 65;
+// "কো" কোডে দুই অক্ষর হলেও চোখে একটা; তাই বাংলা শিরোনাম অক্ষর-গুচ্ছ ধরে মাপা
+const graphemes = new Intl.Segmenter("bn", { granularity: "grapheme" });
+const visibleLength = (text: string) => [...graphemes.segment(text)].length;
 
 export async function pageMeta({ lang, path, title: fullTitle, shortTitle, description, image, index = true }: PageMeta): Promise<Metadata> {
   const settings = await getSiteSettings();
   const isEn = lang === "en";
   const url = isEn ? toEnPath(path) : path;
   const siteName = (isEn && settings.nameEn) || settings.name;
-  const fits = (text: string) => `${text} | ${siteName}`.length <= MAX_TITLE;
-  const title = fullTitle && shortTitle && !fits(fullTitle) ? shortTitle : fullTitle;
+  const fits = (text: string) => visibleLength(`${text} | ${siteName}`) <= MAX_TITLE;
+  const fallbacks = [shortTitle ?? []].flat();
+  const title = fullTitle && !fits(fullTitle) ? (fallbacks.find(fits) ?? fallbacks.at(-1) ?? fullTitle) : fullTitle;
   // ছোট শিরোনামও না ধরলে সাইটের নাম বাদ, যাতে পণ্যের নামটা কাটা না পড়ে
-  const dropSiteName = Boolean(title && shortTitle && title === shortTitle && !fits(title));
+  const dropSiteName = Boolean(title && fallbacks.length && !fits(title));
   const shownTitle = title ?? ((isEn && settings.seoTitleEn) || settings.seoTitle);
   // শেয়ারের প্রিভিউতেও সাইটের নাম, ব্রাউজারের ট্যাবের মতো
   const shareTitle = title && !dropSiteName ? `${title} | ${siteName}` : shownTitle;
