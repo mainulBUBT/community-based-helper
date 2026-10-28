@@ -24,7 +24,7 @@ export function viewOffers(catalog: Catalog, offers: Offer[]): OfferView[] {
     .sort((a, b) => byStock(a, b) || byPrice(a, b));
 }
 
-export function summarize(catalog: Catalog, product: Product): ProductSummary {
+function cardOffer(catalog: Catalog, product: Product) {
   const variantIds = new Set(product.variants.map((v) => v.id));
   const offers = catalog.offers.filter((o) => variantIds.has(o.variantId));
   // ওয়ারেন্টি নেই এমন ক্যাটাগরিতে (স্কিনকেয়ার, জুতা) অফিসিয়াল/আনঅফিসিয়াল ভাগ নেই, সব দামই সমান
@@ -35,6 +35,11 @@ export function summarize(catalog: Catalog, product: Product): ProductSummary {
   const official = warranty ? pool.filter((o) => o.condition === "official") : pool;
   const priced = official.length ? official : pool;
   const best = priced.length ? priced.reduce((a, b) => (b.price < a.price ? b : a)) : null;
+  return { offers, pool, best, officialOnly: warranty && official.length > 0 };
+}
+
+export function summarize(catalog: Catalog, product: Product): ProductSummary {
+  const { offers, pool, best } = cardOffer(catalog, product);
   const lowest = best?.price ?? null;
   // কপির দামের পাশে আসল জুতার নির্ধারিত দাম দেখিয়ে "ছাড়" বলা যায় না
   const listPrice = best && !isReplica(best.condition) ? product.variants.find((v) => v.id === best.variantId)?.officialPrice : null;
@@ -167,7 +172,10 @@ export function makeService(load: CatalogLoader, loadHistory: HistoryLoader = ()
     const offers = viewOffers(catalog, catalog.offers.filter((o) => variantIds.has(o.variantId)));
     const category = catalog.categories.find((c) => c.slug === product.category) ?? null;
     const alternatives = buildAlternatives(catalog, product, category);
-    return { product, category, offers, history: await loadHistory(offers.map((o) => o.id)), alternatives };
+    // পাতা খোলে কার্ডের দামের ভার্সন আর ধরনে, যাতে কার্ডে যা দেখা গেল ভেতরেও তাই থাকে
+    const { best, officialOnly } = cardOffer(catalog, product);
+    const pick = best ? { variantId: best.variantId, condition: officialOnly ? ("official" as const) : null } : null;
+    return { product, category, offers, history: await loadHistory(offers.map((o) => o.id)), alternatives, pick };
   };
 
   const getSellerDetail = async (id: string) => {

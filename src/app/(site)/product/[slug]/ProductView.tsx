@@ -195,27 +195,28 @@ function SpecsPanel({ specs, source }: { specs: SpecGroup[]; source?: string | n
 
 export function ProductView({ initial, regionNotes }: { initial: ProductDetail; regionNotes: RegionNote[] }) {
   const { lang, t, num, ago, prefix } = useI18n();
-  const { product, offers, history, category, alternatives } = initial;
+  const { product, offers, history, category, alternatives, pick } = initial;
   const { slugs, isSaved } = useSaved();
   const { name: categoryName, find } = useCategories();
   const info = category ?? find(product.category);
   const warranty = info?.warranty !== false;
   const kinds = categoryConditions(info);
   const categoryLabel = category ? (lang === "en" ? category.nameEn : category.name) : categoryName(product.category);
-  const [variantId, setVariantId] = useState(product.variants[0]?.id);
+  const [variantId, setVariantId] = useState(pick?.variantId ?? product.variants[0]?.id);
   const variant = product.variants.find((v) => v.id === variantId) ?? product.variants[0];
   const cheaper = alternatives[variant?.id ?? ""] ?? [];
 
   const variantOffers = offers.filter((o) => o.variantId === variant?.id);
   const conditions = kinds.filter((c) => variantOffers.some((o) => o.condition === c));
-  const [chosen, setChosen] = useState<Condition | "all">("all");
+  const [chosen, setChosen] = useState<Condition | "all">(pick?.condition ?? "all");
   const condition: Condition | "all" = chosen === "all" || conditions.includes(chosen) ? chosen : "all";
   const regions = [...new Set(variantOffers.map((o) => primaryRegion(o.region)).filter((r): r is string => Boolean(r)))].sort();
   const [regionChoice, setRegion] = useState<string | null>(null);
   const region = regionChoice && regions.includes(regionChoice) ? regionChoice : null;
   const regionNote = region ? regionNotes.find((n) => primaryRegion(n.region) === region) : undefined;
+  const inView = (o: OfferView) => (region ? primaryRegion(o.region) === region : condition === "all" || o.condition === condition);
   const shown = variantOffers
-    .filter((o) => (region ? primaryRegion(o.region) === region : condition === "all" || o.condition === condition))
+    .filter(inView)
     .sort((a, b) => byStock(a, b) || a.price - b.price || (a.condition === b.condition ? 0 : a.condition === "official" ? -1 : b.condition === "official" ? 1 : 0));
   const best = shown[0];
   const samePriceCount = best ? shown.filter((o) => o.price === best.price).length : 0;
@@ -225,7 +226,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   const reference = best ? Math.max(best.oldPrice ?? 0, best.condition === "official" || (!warranty && !isReplica(best.condition)) ? (official ?? 0) : 0) : 0;
   const off = best && reference > best.price ? Math.round(((reference - best.price) / reference) * 100) : 0;
   const variantLowest = (id: string) => {
-    const matching = offers.filter((o) => o.variantId === id && (condition === "all" || o.condition === condition));
+    const matching = offers.filter((o) => o.variantId === id && inView(o));
     const available = matching.filter((o) => o.inStock !== false);
     const prices = (available.length ? available : matching).map((o) => o.price);
     return prices.length ? Math.min(...prices) : null;

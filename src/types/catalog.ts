@@ -141,4 +141,5 @@ export interface ProductDetail {
   offers: OfferView[];
   history: PricePoint[];
   alternatives: Record<string, Alternative[]>;
+  pick: { variantId: string; condition: Condition | null } | null;
 }
