@@ -96,6 +96,14 @@ export interface UsageStats {
   deploy: { files?: number; bytes?: number; largest?: number; lastCommit?: string | null; at?: string };
 }
 
+export interface OnlineVisitor {
+  path: string;
+  product: string | null;
+  country: string | null;
+  device: string | null;
+  seenAt: string;
+}
+
 export interface DayStat {
   day: string;
   views: number;

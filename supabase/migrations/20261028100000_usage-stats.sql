@@ -18,3 +18,20 @@ $$;
 
 revoke execute on function usage_stats() from public, anon;
 grant execute on function usage_stats() to authenticated;
+
+-- এখন সাইটে কে: শেষ ৫ মিনিটে যারা কোনো পাতা খুলেছেন, প্রত্যেকের শেষ পাতা (ভিজিটরের id বাইরে যায় না)
+create function visitors_online() returns table (path text, product text, country text, device text, seen_at timestamptz)
+language sql stable security definer set search_path = '' as $$
+  select path, product, country, device, created_at from (
+    select distinct on (v.visitor) v.path, p.brand || ' ' || p.name as product, v.country, v.device, v.created_at
+    from public.page_views v
+    left join public.products p on p.slug = substring(v.path from '^(?:/en)?/product/([^/?]+)/')
+    where public.is_admin() and v.created_at > now() - interval '5 minutes'
+    order by v.visitor, v.created_at desc
+  ) latest
+  order by created_at desc
+  limit 200;
+$$;
+
+revoke execute on function visitors_online() from public, anon;
+grant execute on function visitors_online() to authenticated;

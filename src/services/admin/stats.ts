@@ -1,6 +1,6 @@
 import { sampleDayStats, samplePageStats } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
-import type { Breakdown, DayStat, PageStat, VisitorInsights } from "@/types/admin";
+import type { Breakdown, DayStat, OnlineVisitor, PageStat, VisitorInsights } from "@/types/admin";
 
 export async function loadDayStats(days = 30): Promise<DayStat[]> {
   if (!supabase) return sampleDayStats;
@@ -21,6 +21,19 @@ export async function loadTopPages(days = 30): Promise<PageStat[]> {
     path: row.path,
     views: Number(row.views),
     visitors: Number(row.visitors),
+  }));
+}
+
+export async function loadOnline(): Promise<OnlineVisitor[]> {
+  if (!supabase) return [];
+  const { data, error } = await supabase.rpc("visitors_online");
+  if (error) throw error;
+  return (data as { path: string; product: string | null; country: string | null; device: string | null; seen_at: string }[]).map((row) => ({
+    path: row.path,
+    product: row.product,
+    country: row.country,
+    device: row.device,
+    seenAt: row.seen_at,
   }));
 }
 

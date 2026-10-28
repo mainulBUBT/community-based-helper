@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { PageTitle, Panel, StatCard } from "@/components/admin/Panel";
 import { RankTable } from "@/components/admin/RankTable";
 import { Tabs } from "@/components/admin/Tabs";
@@ -9,7 +9,7 @@ import { Chip } from "@/components/ui/Chip";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminI18n } from "@/hooks/useAdminI18n";
-import { loadDayStats, loadInsights, loadTopPages } from "@/services/admin/stats";
+import { loadDayStats, loadInsights, loadOnline, loadTopPages } from "@/services/admin/stats";
 import type { Breakdown } from "@/types/admin";
 import { safeUrl } from "@/utils/url";
 
@@ -29,13 +29,20 @@ const pageLink = (path: string, label = path) =>
   );
 
 export default function VisitorsPage() {
-  const { t, num, lang } = useAdminI18n();
+  const { t, num, lang, ago } = useAdminI18n();
   const [days, setDays] = useState(30);
   const [tab, setTab] = useState<Tab>("overview");
   const { data, loading } = useAsync(async () => {
     const [stats, pages, insights] = await Promise.all([loadDayStats(days), loadTopPages(days), loadInsights(days)]);
     return { stats, pages, insights };
   }, [days]);
+  // এখন কে আছেন: প্রতি ৩০ সেকেন্ডে নতুন করে
+  const online = useAsync(loadOnline, []);
+  const { reload: reloadOnline } = online;
+  useEffect(() => {
+    const id = setInterval(reloadOnline, 30_000);
+    return () => clearInterval(id);
+  }, [reloadOnline]);
 
   const countryName = (code: string | null) => {
     if (!code) return t.admin.visitors.unknown;
@@ -150,6 +157,25 @@ export default function VisitorsPage() {
           </div>
         }
       />
+      <div className="mb-6">
+        <Panel title={t.admin.visitors.online(num(online.data?.length ?? 0))}>
+          <p className="border-b border-line-soft px-5 py-3 text-xs text-dim">{t.admin.visitors.onlineHint}</p>
+          {online.data?.length ? (
+            <ul className="max-h-80 divide-y divide-line-soft overflow-y-auto text-sm">
+              {online.data.map((v, i) => (
+                <li key={`${v.seenAt}-${i}`} className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-5 py-2.5">
+                  <span className="min-w-0 truncate">{pageLink(v.path, v.product ?? v.path)}</span>
+                  <span className="shrink-0 text-xs text-dim">
+                    {countryName(v.country)} · {deviceName(v.device)} · {ago(v.seenAt)}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="px-5 py-4 text-sm text-dim">{online.loading ? t.common.loading : t.admin.visitors.onlineEmpty}</p>
+          )}
+        </Panel>
+      </div>
       <Tabs tabs={TABS.map((id) => ({ id, label: t.admin.visitors.tabs[id] }))} active={tab} onChange={setTab} label={t.admin.visitors.title} idPrefix="visitors" />
       <div role="tabpanel" id={`visitors-${tab}`} className="mt-6 flex flex-col gap-6">
         {body()}
