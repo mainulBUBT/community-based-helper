@@ -97,6 +97,7 @@
 
 :root {
   color-scheme: light;
+  background: Canvas;
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
