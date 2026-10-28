@@ -1,16 +1,99 @@
 "use client";
 
-import { ExternalLink, Phone, Tag } from "lucide-react";
+import { CalendarClock, ChevronRight, CreditCard, ExternalLink, Gift, Package, Percent, Phone, Tag, Wallet, X, type LucideIcon } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import { SellerLogo } from "@/components/seller/SellerLogo";
 import { VerifiedBadge } from "@/components/seller/VerifiedBadge";
 import { Badge } from "@/components/ui/Badge";
 import { useI18n } from "@/hooks/useI18n";
-import type { Condition, OfferView } from "@/types/catalog";
+import type { Condition, OfferView, Promo } from "@/types/catalog";
 import { conditionLabel } from "@/utils/categories";
 import { formatTaka, telLink } from "@/utils/format";
 
 const TONE: Partial<Record<Condition, "ok" | "gold" | "brand">> = { official: "ok", unofficial: "gold", replica_premium: "brand" };
+
+// ধরনের নাম worker ইংরেজিতে আর অ্যাডমিন বাংলায় লেখে, তাই দুটোই ধরা
+const KIND_ICONS: [RegExp, LucideIcon][] = [
+  [/gift|উপহার/i, Gift],
+  [/emi|কিস্তি/i, CalendarClock],
+  [/card|কার্ড/i, CreditCard],
+  [/bkash|nagad|cashback/i, Wallet],
+  [/discount|coupon|কুপন/i, Percent],
+  [/bundle/i, Package],
+];
+const kindIcon = (kind: string) => KIND_ICONS.find(([pattern]) => pattern.test(kind))?.[1] ?? Tag;
+
+// মোবাইলে অফারের লেখা সারিতে কেটে যেত; বোতাম চাপলে নিচ থেকে পুরো তালিকা
+function PromoSheet({ promos, offer, link }: { promos: Promo[]; offer: OfferView; link: string | null }) {
+  const { t, num, lang } = useI18n();
+  const dialog = useRef<HTMLDialogElement>(null);
+  const [open, setOpen] = useState(false);
+  const { seller } = offer;
+
+  useEffect(() => {
+    if (open) dialog.current?.showModal();
+    else dialog.current?.close();
+  }, [open]);
+
+  const until = (date: string) => t.product.promoUntil(new Date(date).toLocaleDateString(lang === "bn" ? "bn-BD" : "en-GB", { day: "numeric", month: "long" }));
+
+  return (
+    <>
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        className="inline-flex h-7 w-fit items-center gap-1 rounded-full border border-gold-text/20 bg-gold-soft pr-2 pl-2.5 text-xs font-bold text-gold-text md:hidden"
+      >
+        <Tag size={13} aria-hidden="true" />
+        {t.product.promoCount(num(promos.length))}
+        <ChevronRight size={13} aria-hidden="true" />
+      </button>
+      <dialog
+        ref={dialog}
+        aria-label={t.product.promoTitle(seller.name)}
+        onClose={() => setOpen(false)}
+        onClick={(e) => e.target === e.currentTarget && setOpen(false)}
+        className="mx-0 mt-auto mb-0 max-h-[85dvh] w-full max-w-none rounded-t-2xl bg-surface p-0 text-ink shadow-2xl"
+      >
+        <div className="flex flex-col px-4 pt-2 pb-[calc(1rem+env(safe-area-inset-bottom))]">
+          <span className="mx-auto mb-3 h-1 w-10 rounded-full bg-line" aria-hidden="true" />
+          <div className="flex items-center gap-2.5">
+            <SellerLogo seller={seller} />
+            <h2 className="flex-1 text-base font-bold">{t.product.promoTitle(seller.name)}</h2>
+            <button type="button" aria-label={t.common.close} onClick={() => setOpen(false)} className="flex size-9 items-center justify-center rounded-full bg-surface-2 text-dim">
+              <X size={17} aria-hidden="true" />
+            </button>
+          </div>
+          <p className="mt-1 mb-3 text-[13px] text-dim">{t.product.promoSub}</p>
+          <ul className="divide-y divide-line-soft border-t border-line-soft">
+            {promos.map((promo) => {
+              const Icon = kindIcon(promo.kind);
+              const meta = [t.product.promoKinds[promo.kind], promo.endsOn && until(promo.endsOn)].filter(Boolean).join(" · ");
+              return (
+                <li key={promo.id} className="flex gap-3 py-3">
+                  <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-gold-soft text-gold-text">
+                    <Icon size={18} aria-hidden="true" />
+                  </span>
+                  <span className="flex min-w-0 flex-col gap-0.5">
+                    <span className="text-sm leading-relaxed font-medium">{promo.text}</span>
+                    {meta && <span className="text-xs text-faint">{meta}</span>}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+          {link && (
+            <a href={link} target="_blank" rel="noopener nofollow" className="mt-3 flex h-11 items-center justify-center gap-2 rounded-md bg-cta text-[15px] font-semibold text-cta-ink hover:bg-cta-hover">
+              {t.product.promoGo(seller.name)}
+              <ExternalLink size={16} aria-hidden="true" />
+            </a>
+          )}
+        </div>
+      </dialog>
+    </>
+  );
+}
 
 function OfferRow({ offer, best, warranty, showCondition }: { offer: OfferView; best: boolean; warranty: boolean; showCondition: boolean }) {
   const { t, ago, lang, prefix } = useI18n();
@@ -50,8 +133,9 @@ function OfferRow({ offer, best, warranty, showCondition }: { offer: OfferView; 
           </span>
         </span>
         {!link && seller.phone && <span className="text-[13px] font-semibold text-ink">{seller.phone}</span>}
+        {offer.promos.length > 0 && <PromoSheet promos={offer.promos} offer={offer} link={link} />}
         {offer.promos.map((promo) => (
-          <span key={promo.id} className="flex items-start gap-1 text-[13px] font-medium text-gold-text">
+          <span key={promo.id} className="hidden items-start gap-1 text-[13px] font-medium text-gold-text md:flex">
             <Tag size={13} className="mt-0.5 shrink-0" aria-hidden="true" />
             <span className="line-clamp-1">{promo.text}</span>
           </span>
