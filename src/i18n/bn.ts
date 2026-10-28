@@ -192,6 +192,8 @@ export const bn = {
     rank: (n: string, total: string, label: string) => `${label}: ${total}টার মধ্যে ${n} নম্বর`,
     compare: (n: string) => `${n}টা দোকানের দাম দেখুন`,
     goToStore: "দোকানে যান",
+    sectionsLabel: "পাতার ভাগ",
+    sections: { price: "দাম", stores: "সব দোকান", cheaper: "আরও সস্তা", specs: "স্পেসিফিকেশন", history: "দামের ইতিহাস", about: "বিবরণ" },
     promoCount: (n: string) => `${n}টা অফার`,
     promoTitle: (shop: string) => `${shop}-এর অফার`,
     promoSub: "এই দামের সাথে দোকানে যা পাবেন। কেনার আগে দোকানে মিলিয়ে নিন।",

@@ -10,6 +10,7 @@ import { PriceChart } from "@/components/product/PriceChart";
 import { ProductGallery } from "@/components/product/ProductGallery";
 import { PriceAlertToggle } from "@/components/product/PriceAlertToggle";
 import { SaveButton } from "@/components/product/SaveButton";
+import { SectionNav } from "@/components/product/SectionNav";
 import { SellerLogo } from "@/components/seller/SellerLogo";
 import { VerifiedBadge } from "@/components/seller/VerifiedBadge";
 import { EmptyState } from "@/components/ui/EmptyState";
@@ -240,6 +241,14 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   const needsNeir = product.category === "mobile" || /cellular|lte/i.test(variant?.attributes.connectivity ?? "");
   const lastChecked = shown.reduce((a, o) => (o.checkedAt > a ? o.checkedAt : a), best?.checkedAt ?? "");
   // গত ৩০ দিনে এই ভার্সনের সবচেয়ে কম দাম (বেক করা ইতিহাস ৩১ দিনের); এখনকার দামও ধরা
+  const sections = [
+    { id: "price", label: t.product.sections.price },
+    ...(shown.length ? [{ id: "stores", label: t.product.sections.stores }] : []),
+    ...(cheaper.length ? [{ id: "cheaper", label: t.product.sections.cheaper }] : []),
+    { id: "specs", label: t.product.sections.specs },
+    { id: "history", label: t.product.sections.history },
+    ...(description ? [{ id: "about", label: t.product.sections.about }] : []),
+  ];
   const monthLow = Math.min(...history.filter((p) => shown.some((o) => o.id === p.offerId)).map((p) => p.price), ...shown.map((o) => o.price));
 
   return (
@@ -260,7 +269,9 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
         <span className="truncate text-ink">{product.name}</span>
       </nav>
 
-      <div className="grid grid-cols-[minmax(0,1fr)] gap-4 rounded-lg border border-line bg-surface p-4 md:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] md:gap-7 md:p-6">
+      <SectionNav sections={sections} hero="price" />
+
+      <div id="price" className="grid scroll-mt-32 grid-cols-[minmax(0,1fr)] gap-4 rounded-lg border border-line bg-surface p-4 md:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] md:gap-7 md:p-6">
         <ProductGallery key={variant?.attributes.color} product={product} start={imageFor(product.images ?? [], variant?.attributes.color)} />
 
         <div className="flex flex-col gap-4">
