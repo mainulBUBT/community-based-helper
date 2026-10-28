@@ -5,7 +5,9 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import { DEFAULT_SETTINGS } from "../src/config/site";
+import { summarize } from "../src/services/catalog-core";
 import { toCategory, toOffer, toPricePoint, toProduct, toPromo, toSeller } from "../src/services/mappers";
+import { toCard } from "../src/utils/catalog";
 import { safeUrl } from "../src/utils/url";
 import type { SiteSettings } from "../src/types/admin";
 import type { CategoryInfo, Offer, PricePoint, Product, Promo, Seller } from "../src/types/catalog";
@@ -132,6 +134,9 @@ async function main() {
   for (const [slug, data] of chunks) {
     await writeFile(path.join(OUT, `${slug}.json`), JSON.stringify(data));
   }
+  // খোঁজা, সাজেশন আর সেভ পাতা শুধু কার্ড দেখায়: পুরো ক্যাটালগের বদলে এই হালকা ফাইল (স্পেক, বিবরণ, দামের ইতিহাস ছাড়া)
+  const catalog = { categories: raw.categories, products: raw.products, sellers: raw.sellers, offers: raw.offers, promos: raw.promos };
+  await writeFile(path.join(OUT, "summaries.json"), JSON.stringify(raw.products.map((product) => toCard(summarize(catalog, product)))));
   const offers = raw.offers.length;
   console.log(`${live ? "লাইভ Supabase" : "নমুনা ডেটা"} থেকে বেক হলো: ${raw.products.length} পণ্য, ${offers} দাম, ${chunks.size} ভাগ → public/data/catalog/`);
 }

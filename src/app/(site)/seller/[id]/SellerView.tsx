@@ -9,7 +9,7 @@ import { VerifiedBadge } from "@/components/seller/VerifiedBadge";
 import { Badge } from "@/components/ui/Badge";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
-import type { getSellerDetail } from "@/services/catalog";
+import type { getSellerDetail } from "@/services/catalog.server";
 import { conditionLabel } from "@/utils/categories";
 import { formatTaka } from "@/utils/format";
 

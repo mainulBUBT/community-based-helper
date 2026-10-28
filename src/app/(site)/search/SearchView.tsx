@@ -257,8 +257,8 @@ export function SearchView({ category, brand, initial }: { category?: string; br
           ) : (
             <>
               <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4">
-                {paged.items.map((summary) => (
-                  <ProductCard key={summary.product.id} summary={summary} />
+                {paged.items.map((summary, i) => (
+                  <ProductCard key={summary.product.id} summary={summary} loading={i < 4 ? "eager" : "lazy"} />
                 ))}
               </div>
               <Pagination page={paged.page} pages={paged.pages} onChange={goTo} labels={t.common.pager} format={n} />
