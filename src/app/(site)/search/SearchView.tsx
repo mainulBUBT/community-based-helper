@@ -161,6 +161,7 @@ export function SearchView({ category, brand, initial }: { category?: string; br
   ];
   const clearAll = { brand: null, min: null, max: null, stock: null, ...Object.fromEntries(AXES.map((axis) => [axis, null])) };
   const categoryTitle = brand ?? (filters.category ? name(filters.category) : t.search.allProducts);
+  const parent = brand ? undefined : find(find(filters.category)?.parent);
   const title = query ? t.search.resultsFor(query) : categoryTitle;
 
   return (
@@ -170,6 +171,14 @@ export function SearchView({ category, brand, initial }: { category?: string; br
           <Link href={`${prefix}/`} className="hover:text-brand">
             {t.nav.home}
           </Link>
+          {parent && (
+            <>
+              <ChevronRight size={14} aria-hidden="true" />
+              <Link href={categoryPath(prefix, parent.slug)} className="shrink-0 hover:text-brand">
+                {name(parent.slug)}
+              </Link>
+            </>
+          )}
           <ChevronRight size={14} aria-hidden="true" />
           <span className="truncate text-ink">{categoryTitle}</span>
         </nav>

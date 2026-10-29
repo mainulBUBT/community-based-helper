@@ -31,14 +31,17 @@ export async function CategoryPage({ slug, lang }: { slug: string; lang: Lang })
   const t = messages(lang);
   const prefix = lang === "en" ? "/en" : "";
   const name = categoryName(page.category, lang);
+  // ভাগের পাতায় (চার্জার) মূল ক্যাটাগরিও (এক্সেসরিজ), যাতে Google-এর breadcrumb-এ পুরো পথ আসে
+  const parent = page.parent ? { name: categoryName(page.parent, lang), href: categoryPath(prefix, page.parent.slug) } : undefined;
   const crumbs = [
     { name: t.nav.home, path: `${prefix}/` },
+    ...(parent ? [{ name: parent.name, path: parent.href }] : []),
     { name, path: categoryPath(prefix, slug) },
   ];
   return (
     <>
       <JsonLd data={[breadcrumbData(crumbs), itemListData(page.summaries.slice(0, 24).map((s) => s.product), prefix)]} />
-      <Suspense fallback={<StaticResults t={t} prefix={prefix} title={name} summaries={page.summaries} />}>
+      <Suspense fallback={<StaticResults t={t} prefix={prefix} title={name} parent={parent} summaries={page.summaries} />}>
         <SearchView category={slug} initial={page.summaries} />
       </Suspense>
     </>

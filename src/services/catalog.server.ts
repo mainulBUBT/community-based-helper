@@ -66,7 +66,8 @@ export async function getCategoryPage(slug: string) {
   if (!category) return null;
   const family = new Set(categoryFamily(categories, slug));
   const items = summaries.filter((s) => family.has(s.product.category)).sort((a, b) => byStock(a, b) || b.product.popularity - a.product.popularity);
-  return { category, summaries: items.map(toCard) };
+  const parent = categories.find((c) => c.slug === category.parent) ?? null;
+  return { category, parent, summaries: items.map(toCard) };
 }
 
 // ব্র্যান্ড পেজ: সব ব্র্যান্ডের পেজ হয়, তবে ২টার কম পণ্য হলে Google এ তোলা হয় না (পাতলা পেজ)

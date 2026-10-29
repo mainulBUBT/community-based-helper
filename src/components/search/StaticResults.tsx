@@ -9,11 +9,12 @@ interface StaticResultsProps {
   t: Messages;
   prefix: string;
   title: string;
+  parent?: { name: string; href: string };
   summaries: ProductSummary[];
 }
 
 // ফিল্টার ব্রাউজারে চালু হওয়ার আগের স্ট্যাটিক HTML: শিরোনাম আর প্রথম পাতার পণ্য, যাতে খোঁজার ইঞ্জিন লিস্টটা দেখে
-export function StaticResults({ t, prefix, title, summaries }: StaticResultsProps) {
+export function StaticResults({ t, prefix, title, parent, summaries }: StaticResultsProps) {
   const count = String(summaries.length);
   return (
     <div className="flex flex-col gap-4">
@@ -21,6 +22,14 @@ export function StaticResults({ t, prefix, title, summaries }: StaticResultsProp
         <Link href={`${prefix}/`} className="hover:text-brand">
           {t.nav.home}
         </Link>
+        {parent && (
+          <>
+            <ChevronRight size={14} aria-hidden="true" />
+            <Link href={parent.href} className="hover:text-brand">
+              {parent.name}
+            </Link>
+          </>
+        )}
         <ChevronRight size={14} aria-hidden="true" />
         <span className="text-ink">{title}</span>
       </nav>

@@ -843,6 +843,200 @@
      "checkedAt": "2026-10-26"
     }
    ]
+  },
+  {
+   "brand": "Amber",
+   "name": "Dates (অ্যাম্বার খেজুর)",
+   "category": "dates",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "1kg",
+     "attributes": {
+      "capacity": "1kg"
+     },
+     "officialPrice": 1420
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://erp.haramainstore.com/files/1cf9e0f.webp",
+    "https://i.chaldn.com/_mpimage/amber-dates-premium-1-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D98147&q=best&v=1"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "1kg",
+     "site": "Haramain Store",
+     "url": "https://haramainstore.com/products/amber-premium-dates",
+     "price": 1590,
+     "oldPrice": 2000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "1kg",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/amber-dates-premium-1-kg",
+     "price": 1250,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Mashrook",
+   "name": "Dates (মাশরুক খেজুর)",
+   "category": "dates",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "1kg",
+     "attributes": {
+      "capacity": "1kg"
+     },
+     "officialPrice": 750
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://erp.haramainstore.com/files/3.webp",
+    "https://i.chaldn.com/_mpimage/mashruk-dates-premium-1-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D98154&q=best&v=1"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "1kg",
+     "site": "Haramain Store",
+     "url": "https://haramainstore.com/products/mashrook-premium-dates",
+     "price": 900,
+     "oldPrice": 1000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "1kg",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/mashruk-dates-premium-1-kg",
+     "price": 600,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Dabbas",
+   "name": "Dates (দাব্বাস খেজুর)",
+   "category": "dates",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "400g",
+     "attributes": {
+      "capacity": "400g"
+     },
+     "officialPrice": 290
+    },
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 379
+    },
+    {
+     "label": "1kg",
+     "attributes": {
+      "capacity": "1kg"
+     },
+     "officialPrice": 560
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://i.chaldn.com/_mpimage/crown-dabbas-dates-400-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D128226&q=best&v=1",
+    "https://i.chaldn.com/_mpimage/dabbas-dates-khejur-500-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D184068&q=best&v=1",
+    "https://i.chaldn.com/_mpimage/crown-dabbas-dates-1-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D129412&q=best&v=1"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "400g",
+     "site": "Othoba",
+     "url": "https://othoba.com/dates-dabas-al-dhafaa-400gm-65002",
+     "price": 280,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "400g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/crown-dabbas-dates-400-gm",
+     "price": 299,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "500g",
+     "site": "Othoba",
+     "url": "https://othoba.com/premium-dabbas-dates-dabbas-khejur-500gm-soft-sweet-fresh-quality-borobazar-online-shopping-710682",
+     "price": 459,
+     "oldPrice": 500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "500g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/dabbas-dates-khejur-500-gm",
+     "price": 299,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "1kg",
+     "site": "Othoba",
+     "url": "https://othoba.com/dabbas-dates-premium-1kg-loose",
+     "price": 600,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "1kg",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/crown-dabbas-dates-1-kg",
+     "price": 519,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
   }
  ]
 }
