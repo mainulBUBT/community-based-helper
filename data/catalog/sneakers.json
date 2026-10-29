@@ -459,13 +459,14 @@
     },
     {
      "site": "Trek N Tread",
-     "url": "https://trekntread.com/products/all-star-converse-chuck-taylor-high-top-black-white",
+     "url": "https://trekntread.com/products/all-star-converse-color-black-white-high-neck-grade-oem",
      "price": 1650,
      "inStock": true,
      "condition": "replica",
      "region": null,
-     "checkedAt": "2026-10-24",
-     "variant": "Standard"
+     "checkedAt": "2026-10-29",
+     "variant": "Standard",
+     "oldPrice": null
     }
    ]
   },
@@ -510,13 +511,14 @@
     },
     {
      "site": "Trek N Tread",
-     "url": "https://trekntread.com/products/nike-air-jordan-1-unc-university-north-carolina-blue-white-low-top-mens-sneakers-bd",
-     "price": 2090,
+     "url": "https://trekntread.com/products/air-jordan-1-color-university-blue-low-neck-11-grade",
+     "price": 3990,
      "inStock": true,
-     "condition": "replica",
+     "condition": "replica_premium",
      "region": null,
-     "checkedAt": "2026-10-24",
-     "variant": "Standard"
+     "checkedAt": "2026-10-29",
+     "variant": "Standard",
+     "oldPrice": null
     }
    ]
   },
@@ -612,13 +614,14 @@
     },
     {
      "site": "Trek N Tread",
-     "url": "https://trekntread.com/products/648-air-jordan-4-color-camo-grey-low-neck-grade-oem-superior",
-     "price": 4790,
+     "url": "https://trekntread.com/products/air-jordan-4-color-camo-grey-low-neck-grade-oem-superior",
+     "price": 3690,
      "inStock": true,
      "condition": "replica",
      "region": null,
-     "checkedAt": "2026-10-24",
-     "variant": "Standard"
+     "checkedAt": "2026-10-29",
+     "variant": "Standard",
+     "oldPrice": null
     },
     {
      "site": "SneakersBD Official",
@@ -734,13 +737,14 @@
     },
     {
      "site": "Trek N Tread",
-     "url": "https://trekntread.com/products/654-new-balance-9060-color-ash-grey-low-neck-grade-oem-superior",
+     "url": "https://trekntread.com/products/new-balance-9060-color-ash-grey-low-neck-grade-oem-superior",
      "price": 2990,
      "inStock": true,
      "condition": "replica",
      "region": null,
-     "checkedAt": "2026-10-24",
-     "variant": "Standard"
+     "checkedAt": "2026-10-29",
+     "variant": "Standard",
+     "oldPrice": null
     },
     {
      "site": "SneakersBD Official",
@@ -787,16 +791,6 @@
      "site": "Ragen",
      "url": "https://ragenbd.com/products/new-balance-530",
      "price": 6600,
-     "inStock": true,
-     "condition": "replica",
-     "region": null,
-     "checkedAt": "2026-10-24",
-     "variant": "Standard"
-    },
-    {
-     "site": "Trek N Tread",
-     "url": "https://trekntread.com/products/new-balance-mens-530-white-sky-blue-silver-casual-running-shoes-online-bd",
-     "price": 2990,
      "inStock": true,
      "condition": "replica",
      "region": null,
@@ -856,13 +850,14 @@
     },
     {
      "site": "Trek N Tread",
-     "url": "https://trekntread.com/products/471-puma-speed-cat-sneaker-color-red-low-neck-grade-oem-superior",
+     "url": "https://trekntread.com/products/puma-speed-cat-sneaker-color-red-low-neck-grade-oem-superior",
      "price": 3590,
      "inStock": true,
      "condition": "replica",
      "region": null,
-     "checkedAt": "2026-10-24",
-     "variant": "Standard"
+     "checkedAt": "2026-10-29",
+     "variant": "Standard",
+     "oldPrice": null
     }
    ]
   },
@@ -1050,13 +1045,14 @@
     },
     {
      "site": "Trek N Tread",
-     "url": "https://trekntread.com/products/674-adizero-adios-pro-evo-1-light-blue-grade-11",
+     "url": "https://trekntread.com/products/adizero-adios-pro-evo-1-light-blue-grade-11",
      "price": 4790,
      "inStock": true,
      "condition": "replica_premium",
      "region": null,
-     "checkedAt": "2026-10-24",
-     "variant": "Standard"
+     "checkedAt": "2026-10-29",
+     "variant": "Standard",
+     "oldPrice": null
     }
    ]
   },

@@ -140,7 +140,7 @@
 | Ragen | ragenbd.com | স্নিকার্স | Shopify (উত্তরা); "(1:1) grade"/"OEM" লেখা থাকে |
 | DOB Skateshop | dob.com.bd | স্নিকার্স | WooCommerce, crawl-delay 5 মানতে হবে; Q&A-তে "OEM grade replica" |
 | Sneaker Zone | sneakerzonebd.com | স্নিকার্স | Shopify; DOB-র সহ-প্রতিষ্ঠান (একই মালিকানা) |
-| Trek N Tread | trekntread.com | স্নিকার্স | Laravel/Inertia; দাম পাতার embedded data-তে, worker-এ আলাদা parser |
+| Trek N Tread | trekntread.com | স্নিকার্স | ২৯ অক্টোবর সাইট নতুন: sitemap আর JSON-LD, সাধারণ `sitemapStore` |
 | SneakersBD Official | sneakersbdofficial.com | স্নিকার্স | `product:price:amount` মেটা থেকে দাম পার্স হয় |
 | Global Brand | globalbrand.com.bd | চার্জার, মনিটর, ডেস্কটপ | LG/Asus/Lenovo-র ডিস্ট্রিবিউটর (OpenCart); পাতার JSON-LD-তে দাম |
 | MC Solution | mcsolution.com.bd | ল্যাপটপ, মনিটর | WooCommerce; অফিসিয়াল ওয়ারেন্টির দোকান |
@@ -280,6 +280,29 @@ Lira Import আর Her Happy Skin যোগ হলো (robots.txt আর Terms �
 - **আগের পণ্যে দাম/ভার্সন:** Dabur 100g আর 500g আর Saffola 100g আর 250g-এ Chaldal; Al Shifa Natural 500g-এ Chaldal ("Natural Floral" নামে, ছবিতে একই বোতল) আর 1kg-এ Rokomari; Al Shifa Black Forest 250g-এ Chaldal; Karkuma 400g-এ MedEasy আর নতুন 300g ভার্সন (Arogga, MedEasy)। খেজুরে আজওয়া, মরিয়ম আর মেডজুলে 250g (Arogga-র Farmer's Gold, Othoba), মেডজুল 1kg-এ Chaldal।
 - **খোঁজা হলো, নেওয়া হলো না:** PRAN Honey (শুধু Othoba-য়), Dabbas, Zahidi, Farida, Sagai, চড়া (তিউনিসিয়া/আলজেরিয়া) খেজুর (শুধু Othoba-র বিক্রেতারা, দ্বিতীয় দোকান নেই), Allah Shafi (Chaldal-এ 500g, Othoba-য় শুধু 1kg), Farmer's Gold লিচু/সরিষা (Arogga-য় ml বা ওজন লেখা নেই), Green Harvest (Arogga 600g, Rokomari 150/300/500g)। Rokomari-তে ক্যাটাগরির দ্বিতীয় পাতা (`?page=`) robots-এ বন্ধ, তাই শুধু প্রথম পাতা থেকে লিংক।
 - **নতুন দোকান যাচাই:** MedEasy আগেই generic ভাবে পড়া হয় (sitemap-এ মধু শুধু Karkuma), তাই শুধু অফার যোগ। বাদ: Sindabad (robots খোলা, sitemap-এ Dabur/Al Shifa/খেজুর আছে, কিন্তু পাতা SPA, HTML-এ দাম নেই), Lazz Pharma (sitemap-এ অনেক মধু, কিন্তু Next.js পাতায় দাম JavaScript দিয়ে আসে; তার ওপর মার্কেটপ্লেস), Daily Shopping (`dailyshoppingbd.com` এখন Othoba-তে redirect), BanglaShoppers (Magento, robots খোলা, কিন্তু মধু/খেজুর বলতে শুধু আমদানি করা Manuka/Tesco, মেলানোর মতো কিছু নেই), e-mart (শুধু স্কিনকেয়ার), Osudpotro (sitemap নেই)।
+
+### খেজুরের গুড় (২৯ অক্টোবর ২০২৬)
+
+নতুন ক্যাটাগরি `date-jaggery` (migration `20261029072325_date-jaggery-category.sql`, ভার্সনের ঘর `capacity` = ওজন, মধুর মতো যাচাইয়ের নোট চালু)। মধুর মতো ব্র্যান্ডের প্যাক, কারণ খোলা গুড়ের মান দোকানভেদে আলাদা আর মেলানো যায় না। ৬টা পণ্য, ১২টা দাম, প্রতিটা ঠিক ২টা দোকানে; worker নিজে লাইভ পড়েছে, `worker:check` ০ মেলেনি (Chaldal মাঝে মাঝে 404 দেয়, আবার চালালে ঠিক)। সব ছবি ২০০ image/*।
+
+- Khaas Food পাটালি ৫০০g আর ঝোলা ৫০০g (Khaas Food, Chaldal); Farmer's Gold পাটালি ৫০০g আর ঝোলা ৫০০g (Arogga, Chaldal); Root কিউব ৪০০g আর পাউডার ১৫০g (Arogga, Chaldal)।
+- অফিসিয়াল দাম: Khaas Food নিজের দোকানের দাম, Farmer's Gold গায়ের দাম (২২০), Root-এর ঘোষিত দাম নেই, তাই দুই দোকানের মাঝামাঝি।
+- মৌসুম নভেম্বর থেকে, তাই এখন প্রায় সবই "স্টকে নেই" (Chaldal-এ Request Stock); দাম আসল, স্টক এলে `prices` নিজে বদলাবে।
+- Arogga-র Farmer's Gold পাটালি ৫০০g পাতার বর্ণনায় "Premium Bar" লেখা, কিন্তু শিরোনাম আর গায়ের দাম সাধারণটার; Premium Bar ৫০০g আলাদা পাতা (৭৩৩৪০), নেওয়া হয়নি।
+- **নেওয়া হয়নি (এক দোকানে):** Khaas Food পাটালি ১kg, Farmer's Gold পাটালি ১kg, Choice, Gowala, BPM, Desifarm, Poushali, Chuadangar, Root লিকুইড (Arogga ৫০০g, Chaldal ১ লিটার)। Othoba আর Rokomari-তে গুড় নেই, Market Bangla দোকান হিসেবে নেই।
+
+### খেজুরে নতুন দোকান, আর কয়েকটা ভাঙা লিংক ঠিক (২৯ অক্টোবর ২০২৬)
+
+খেজুরে ১৩টা নতুন দাম (৪১ → ৫৪), নতুন দোকান Haramain Store, Khaas Food, Holy Basket। প্রতিটা দাম worker নিজে লাইভ পড়েছে, অফিসিয়াল দামের ৪০%–২৫০%-এর মধ্যে; `worker:check` খেজুরে ০ মেলেনি (Chaldal-এর একটা লিংক মাঝে মাঝে সাড়া দেয় না)।
+
+- **Haramain Store** (Next.js): আজওয়া, মাবরুম, কালমি, সুক্কারি (মুফাত্তাল), মেডজুল — সব 1kg। প্রতিটা ওজনের দাম পাতার ভেতরের JSON-এ, তাই `embeddedVariants`। কালমি ৫০০g আর ১kg দুটোতেই ১৩৫০ লেখা (দোকানের ভুল), তাই শুধু ১kg — এতে কালমি ১kg-এ দ্বিতীয় দোকান এল।
+- **Khaas Food** (Next.js): আজওয়া আর মরিয়ম, ২৫০g আর ৫০০g এক পাতায়; `embeddedVariants`।
+- **Holy Basket** (WooCommerce): আজওয়া ৫০০g, মরিয়ম ৫০০g আর ১kg, সুক্কারি ১kg। খুরমা ৫০০g ব্র্যান্ড ছাড়া, Rongdhonu-র সাথে মেলে না, তাই নেওয়া হয়নি।
+- **নতুন জাত নেওয়া হয়নি:** অ্যাম্বার আর মাশরুক শুধু Haramain-এ (Othoba-য় অ্যাম্বার শুধু ৪kg বাক্স), সুক্কারি রুতাব শুধু Haramain-এ। ৩kg শুধু Haramain-এ।
+- **বাদ (এবার দেখা):** Market Bangla (পড়া যায়, কিন্তু পণ্যের পাতা রুটে আর দোকানের নিজের ডেটায় ভুল, যেমন "250gm 160tk" পাতায় 70kg ৳44,800), Kintaini (OpenCart, robots/sitemap নেই), Ghorer Bazar আর Cellsii (403), Greenfood (HTML-এ দাম নেই), Chocolate Shop BD (পাতা পুরনো), Daily Shopping (`dailyshopping.com.bd`: React SPA, HTML খালি, sitemap নেই)।
+- **Trek N Tread:** সাইট নতুন করে বানানো, পুরনো সব লিংক "Product Not Found"। এখন sitemap আর JSON-LD, তাই আলাদা parser বাদ দিয়ে `sitemapStore`। ৫টা লিংকে শুধু সংখ্যার prefix বাদ (AJ4 এখন ৩৬৯০), Chuck Taylor High-এর নতুন লিংক, AJ1 Low-এর আগের ২০৯০ টাকার কপি নেই — একই রঙের 1:1 গ্রেড ৩৯৯০, প্রিমিয়াম কপি। New Balance 530 Trek-এ আর নেই (বাকি ২ দোকান আছে)। DB-র লিংক migration `20261029063958_trekntread-new-links.sql`-এ।
+- **Amazfit Active 2 Premium:** Dazzle আর Genten-এর দুটো দাম "Standard" ভার্সনে বসানো ছিল, যেটা এই পণ্যে নেই (seed এগুলো কখনো বসায়নি); Genten-এর পাতা আসলে সাধারণ Active 2-এর। দুটোই মোছা, এতে Genten-এর Active 2 মেলে।
+- **Apple Watch Series 11 @ Star Tech:** পাতায় এখন শুধু 46mm (৪৫৩০০), তাই দামটা 42mm থেকে 46mm-এ।
 
 ### রাউটার (২৬ অক্টোবর ২০২৬)
 

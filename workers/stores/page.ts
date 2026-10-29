@@ -2,7 +2,9 @@ import { render } from "../lib/browser";
 import { quoteFrom } from "../lib/extract";
 import { metaContent, title } from "../lib/html";
 import { getText } from "../lib/http";
+import { structuredQuote } from "../lib/price";
 import { pageOffers, type PageOffer } from "../lib/variants";
+import { embeddedVariants } from "./parsers";
 import type { Store } from "./types";
 
 export interface Page {
@@ -20,7 +22,8 @@ export async function readPage(store: Store, url: string, useLlm = true): Promis
   if (own?.rows.length) return { offers: pageOffers(own.rows), title: own.title, image: own.image };
   const html = await pageHtml(store, url);
   const image = metaContent(html, "og:image");
-  const rows = store.variants ? await store.variants(html, url) : [];
+  // নিজের parser বা JSON-LD না থাকলে পাতার ভেতরের JSON (Next.js ইত্যাদি), AI-এর আগে
+  const rows = store.variants ? await store.variants(html, url) : store.parse || structuredQuote(html) ? [] : embeddedVariants(html, url);
   if (rows.length) return { offers: pageOffers(rows), title: title(html), image };
   const quote = await quoteFrom(html, store.parse, useLlm);
   if (!quote) return null;

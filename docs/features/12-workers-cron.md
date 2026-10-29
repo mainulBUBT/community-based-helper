@@ -169,3 +169,11 @@ Sumash Tech আর Gadget Breeze GitHub এর datacenter IP কে Cloudflare �
 - **ক্রেতার পাঠানো দাম:** সবসময় মানুষ।
 - বন্ধ করতে: GitHub Variable/secret এ `AUTO_REVIEW=off`। AI সেটিংস না থাকলে বা কোটা শেষ হলে match নিজে থেকেই মানুষের জন্য থাকে।
 - হাতে চালানো: `npm run worker -- review` (এখনই সিদ্ধান্ত), `npm run worker -- review dry` (মানুষের শেষ ২৪ ঘণ্টার সিদ্ধান্তে AI কী বলত, কিছু লেখে না)।
+
+## JS সাইট পড়া আর দোকান স্ক্যান (২৯ অক্টোবর ২০২৬)
+
+- `embeddedVariants` (`workers/stores/parsers.ts`): পাতার ভেতরের JSON (Next.js flight data, `__NEXT_DATA__`, inline JSON) থেকে দামের ঘরওয়ালা object খোঁজে। লিংকের slug আর শিরোনামের সাথে নাম মিলিয়ে মূল পণ্য বাছে; ভার্সন তার ভেতরের তালিকা থেকে, নইলে একই slug/মূল নামের object থেকে। পাশের "সম্পর্কিত পণ্য" বাদ। ওজন "500 gm" → "500g"। JSON-LD থাকলে তার দাম ফলের মধ্যে থাকতেই হবে, নইলে কিছু ফেরত দেয় না।
+- `readPage`: দোকানের নিজের parser আর JSON-LD/itemprop/og না থাকলে AI-এর আগে এটা নিজে চলে, তাই আগের দোকানে প্রভাব নেই।
+- `npm run store:scan -- <ডোমেইন> [শব্দ]` (`workers/scan.ts`): robots, sitemap, পণ্যের path, আর Shopify/Woo/JSON-LD/ভেতরের JSON কোনটা কাজ করে দেখে `sitemapStore` এন্ট্রি দেখায়।
+- পরীক্ষা: Haramain (১kg/৩kg, ৫০০g/১kg), Khaas Food (২৫০g/৫০০g), Market Bangla (এক ওজন) ঠিক পড়ে; Techmarvels → `wooVariants`; Daily Shopping → HTML খালি, পড়া যায় না। দোকানের নিজের ভুল ডেটা (Market Bangla-র "250gm 160tk" পাতায় 70kg ৳44,800) যেমন আছে তেমন আসে, অফিসিয়াল দামের ৪০%–২৫০% সীমায় বাদ পড়ে।
+

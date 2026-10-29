@@ -3,7 +3,7 @@ import { decode, stripTags } from "../lib/html";
 import { getJson, getText } from "../lib/http";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import { appleGadgetsVariants, chardikeVariants, dazzleVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, shopifyProduct, startechVariants, sumashVariants, wooVariants } from "./parsers";
+import { appleGadgetsVariants, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, shopifyProduct, startechVariants, sumashVariants, wooVariants } from "./parsers";
 import { isReplica } from "../../src/utils/categories";
 import type { Condition, Listing, Store } from "./types";
 
@@ -313,44 +313,6 @@ const hnstech: Store = {
   },
 };
 
-// Trek N Tread: Laravel (Inertia) — সাইটম্যাপ নেই, প্রোডাক্ট পাতার দাম embedded data-page JSON-এ (এনকোডেড &quot;);
-// product.variation_price = মূল দাম, variation_discounted_price = ছাড়ের দাম। ক্যাটালগ পাতা (?page=1..12)-তে সব পণ্য।
-const TREK = "https://trekntread.com";
-
-const trekntread: Store = {
-  id: "trekntread",
-  name: "Trek N Tread",
-  origin: TREK,
-  rendered: false,
-  condition: "replica",
-  sample: `${TREK}/products/673-adidas-samba-color-white-green-low-neck-grade-oem`,
-  promoUrl: null,
-  parse(html) {
-    const m = /"variation_price":(\d+),"variation_discounted_price":(\d+),"variations"/.exec(html.replace(/&quot;/g, '"'));
-    const full = m ? Number(m[1]) : 0;
-    const sale = m ? Number(m[2]) : 0;
-    const price = sale > 0 ? sale : full > 0 ? full : null;
-    if (!price) return null;
-    return { price, oldPrice: full > sale ? full : null, inStock: true, title: null, via: "trek-data-page" };
-  },
-  async discover() {
-    const all: Listing[] = [];
-    for (let page = 1; page <= 12; page++) {
-      const text = await getText(`${TREK}?page=${page}`).then((html) => html.replace(/&quot;/g, '"')).catch(() => "");
-      for (const m of text.matchAll(/"title":"((?:[^"\\]|\\.)*)","slug":"([a-z0-9-]+)","type":"1"/g)) {
-        let name = m[1];
-        try {
-          name = JSON.parse(`"${m[1]}"`) as string;
-        } catch {
-          // টাইটেল ডিকোড না হলে কাঁচাটাই
-        }
-        all.push({ title: name, url: `${TREK}/products/${m[2]}`, price: null, oldPrice: null });
-      }
-    }
-    return all;
-  },
-};
-
 export const stores: Store[] = [
   startech,
   sitemapStore({
@@ -370,6 +332,37 @@ export const stores: Store[] = [
     sitemap: "https://www.arogga.com/sitemap.xml",
     path: "/product/",
     condition: "official",
+  }),
+  // খেজুর, মধু: Next.js, প্রতিটা ওজনের দাম আর স্টক পাতার ভেতরের JSON-এ (JSON-LD-এ শুধু প্রথম ওজন)
+  sitemapStore({
+    id: "haramain",
+    name: "Haramain Store",
+    origin: "https://haramainstore.com",
+    sample: "https://haramainstore.com/products/ajwa-super-premium-dates",
+    sitemap: "https://haramainstore.com/sitemap.xml",
+    path: "/products/",
+    condition: "official",
+    variants: embeddedVariants,
+  }),
+  sitemapStore({
+    id: "khaasfood",
+    name: "Khaas Food",
+    origin: "https://www.khaasfood.com",
+    sample: "https://www.khaasfood.com/product/ajwa-dates",
+    sitemap: "https://www.khaasfood.com/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+    variants: embeddedVariants,
+  }),
+  sitemapStore({
+    id: "holybasket",
+    name: "Holy Basket",
+    origin: "https://holybasketbd.com",
+    sample: "https://holybasketbd.com/product/ajwa-dates-500gm/",
+    sitemap: "https://holybasketbd.com/sitemap_index.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
   }),
   sitemapStore({
     id: "applegadgets",
@@ -623,7 +616,16 @@ export const stores: Store[] = [
     condition: "official",
   }),
   klassy,
-  trekntread,
+  // Trek N Tread: ২৯ অক্টোবর ২০২৬-এ সাইট নতুন করে বানানো; এখন sitemap আর JSON-LD আছে, লিংক থেকে সংখ্যার prefix বাদ
+  sitemapStore({
+    id: "trekntread",
+    name: "Trek N Tread",
+    origin: "https://trekntread.com",
+    sample: "https://trekntread.com/products/adizero-adios-pro-evo-1-light-blue-grade-11",
+    sitemap: "https://trekntread.com/sitemap.xml",
+    path: "/products/",
+    condition: "replica",
+  }),
   sitemapStore({
     id: "selltech",
     name: "Sell Tech",

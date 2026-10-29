@@ -20,6 +20,21 @@
    "name": "Rokomari",
    "website": "https://www.rokomari.com",
    "note": "product sitemap নেই, /search robots-এ বন্ধ; ক্যাটাগরি পাতা (dates-khejur, organic-food, groceries) থেকে লিংক। JSON-LD-এ দাম।"
+  },
+  {
+   "name": "Haramain Store",
+   "website": "https://haramainstore.com",
+   "note": "খেজুর আর মধুর দোকান, Next.js; sitemap আছে। প্রতিটা ওজনের দাম-স্টক পাতার ভেতরের JSON-এ (embeddedVariants)। কালমি ৫০০g আর ১kg দুটোতেই ১৩৫০ লেখা, ৫০০g নেওয়া হয়নি।"
+  },
+  {
+   "name": "Khaas Food",
+   "website": "https://www.khaasfood.com",
+   "note": "Next.js, sitemap আছে; এক পাতায় ২৫০g আর ৫০০g, দাম পাতার ভেতরের JSON-এ (embeddedVariants)।"
+  },
+  {
+   "name": "Holy Basket",
+   "website": "https://holybasketbd.com",
+   "note": "WooCommerce, product sitemap; প্রতিটা ওজনের আলাদা পাতা। খুরমা ব্র্যান্ড ছাড়া, তাই Rongdhonu-র সাথে মেলানো হয়নি।"
   }
  ],
  "products": [
@@ -157,6 +172,50 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Khaas Food",
+     "url": "https://www.khaasfood.com/product/ajwa-dates",
+     "price": 550,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "500g",
+     "site": "Khaas Food",
+     "url": "https://www.khaasfood.com/product/ajwa-dates",
+     "price": 1050,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "500g",
+     "site": "Holy Basket",
+     "url": "https://holybasketbd.com/product/ajwa-dates-500gm/",
+     "price": 850,
+     "oldPrice": 1090,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "1kg",
+     "site": "Haramain Store",
+     "url": "https://haramainstore.com/products/ajwa-super-premium-dates",
+     "price": 1700,
+     "oldPrice": 2000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
     }
    ]
   },
@@ -294,6 +353,61 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "250g",
+     "site": "Khaas Food",
+     "url": "https://www.khaasfood.com/product/maryam-dates-saudi",
+     "price": 550,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "500g",
+     "site": "Khaas Food",
+     "url": "https://www.khaasfood.com/product/maryam-dates-saudi",
+     "price": 1050,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "500g",
+     "site": "Holy Basket",
+     "url": "https://holybasketbd.com/product/mariyam-dates-500gm/",
+     "price": 750,
+     "oldPrice": 900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "1kg",
+     "site": "Holy Basket",
+     "url": "https://holybasketbd.com/product/mariyam-dates-1kg/",
+     "price": 1200,
+     "oldPrice": 1390,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "1kg",
+     "site": "Haramain Store",
+     "url": "https://haramainstore.com/products/mabroom-large-premium-dates",
+     "price": 1700,
+     "oldPrice": 2000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
     }
    ]
   },
@@ -356,6 +470,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Haramain Store",
+     "url": "https://haramainstore.com/products/kalmi-safawi-dates",
+     "price": 1350,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
     }
    ]
   },
@@ -453,6 +578,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1kg",
+     "site": "Holy Basket",
+     "url": "https://holybasketbd.com/product/sukkari-dates-1kg/",
+     "price": 800,
+     "oldPrice": 950,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "1kg",
+     "site": "Haramain Store",
+     "url": "https://haramainstore.com/products/sukkari-mufattal-large-premium-dates",
+     "price": 1190,
+     "oldPrice": 1400,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
     }
    ]
   },
@@ -579,6 +726,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "1kg",
+     "site": "Haramain Store",
+     "url": "https://haramainstore.com/products/medjool-large-premium-dates-egyptian",
+     "price": 1980,
+     "oldPrice": 2200,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
     }
    ]
   },

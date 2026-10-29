@@ -1,0 +1,291 @@
+{
+ "category": "date-jaggery",
+ "sites": [
+  {
+   "name": "Arogga",
+   "website": "https://www.arogga.com",
+   "note": "product sitemap; JSON-LD-এ দাম। Farmer's Gold, Root, Choice-এর গুড়।"
+  },
+  {
+   "name": "Chaldal",
+   "website": "https://chaldal.com",
+   "note": "sitemap-এ অনেক ব্র্যান্ডের গুড়; লিংকে ওজন (…-500-gm), পাতায় শিরোনামে ওজন নেই। মৌসুমের আগে প্রায় সবই Request Stock।"
+  },
+  {
+   "name": "Khaas Food",
+   "website": "https://www.khaasfood.com",
+   "note": "নিজের ব্র্যান্ড; পাটালি ৫০০g আর ১kg এক পাতায়, দাম পাতার ভেতরের JSON-এ (embeddedVariants)।"
+  }
+ ],
+ "products": [
+  {
+   "brand": "Khaas Food",
+   "name": "Patali Gur (খেজুরের পাটালি গুড়)",
+   "category": "date-jaggery",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 380
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn.khaasfood.com/products/products/2026/10/21/3bcfc6df7fba473c849723f84e56b713-d51393871f9c499895854dc1b74a53ab-New-Project--99-.webp"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "500g",
+     "site": "Khaas Food",
+     "url": "https://www.khaasfood.com/product/khejur-gur-patali",
+     "price": 380,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "500g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/khaas-food-khejur-gur-patali-500-gm-2",
+     "price": 270,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Khaas Food",
+   "name": "Jhola Gur (খেজুরের ঝোলা গুড়)",
+   "category": "date-jaggery",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 425
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn.khaasfood.com/products/products/2026/04/08/e07a90050423444fb11095a1268e2049-WhatsApp-Image-2025-01-23-at-11.50.57-AM.jpeg",
+    "https://i.chaldn.com/_mpimage/khaas-food-khejur-gur-jhola-500-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D129724&q=best&v=1"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "500g",
+     "site": "Khaas Food",
+     "url": "https://www.khaasfood.com/product/khejur-gur-jola",
+     "price": 425,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "500g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/khaas-food-khejur-gur-jhola-500-gm-2",
+     "price": 280,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Farmer's Gold",
+   "name": "Patali Gur (খেজুরের পাটালি গুড়)",
+   "category": "date-jaggery",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 220
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC82MDc2NVwvNjA3NjUtS2hlanVyLVBhdGFsaS1HdXItUHJlbWl1bS1CYXItY29weS1janc0cHouanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ==",
+    "https://i.chaldn.com/_mpimage/farmers-gold-khejurer-patali-gur-500-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D122685&q=best&v=1"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/60765/farmer-s-gold-patali-gur-500g",
+     "price": 194,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "500g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/farmers-gold-khejurer-patali-gur-500-gm",
+     "price": 220,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Farmer's Gold",
+   "name": "Jhola Gur (খেজুরের ঝোলা গুড়)",
+   "category": "date-jaggery",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "500g",
+     "attributes": {
+      "capacity": "500g"
+     },
+     "officialPrice": 220
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvNjBcLzYwNzU5LUtoZWp1ci1KaG9sYS1HdXItNTAwZ20tc2M4Ni5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://i.chaldn.com/_mpimage/farmers-gold-khejurer-jhola-gur-500-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D122686&q=best&v=1"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "500g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/60759/farmer-s-gold-jhola-gur",
+     "price": 194,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "500g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/farmers-gold-khejurer-jhola-gur-500-gm",
+     "price": 220,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Root",
+   "name": "Date Jaggery Cubes (খেজুর গুড়ের কিউব)",
+   "category": "date-jaggery",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "400g",
+     "attributes": {
+      "capacity": "400g"
+     },
+     "officialPrice": 464
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC81Nzc0N1wvNTc3NDctUm9vdC1EYXRlLUphZ2dlcnktQ3ViZXMtNDAwZy1jb3B5LXFxMHQwNi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19",
+    "https://i.chaldn.com/_mpimage/root-khejur-gur-cubes-400-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D186108&q=best&v=1"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "400g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/57747/root-date-jaggery-cubes-400g",
+     "price": 447,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "400g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/root-khejur-gur-cubes-400-gm",
+     "price": 480,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Root",
+   "name": "Date Jaggery Powder (খেজুর গুড়ের পাউডার)",
+   "category": "date-jaggery",
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "150g",
+     "attributes": {
+      "capacity": "150g"
+     },
+     "officialPrice": 131
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC81Nzc0OFwvNTc3NDgtUm9vdC1EYXRlLUphZ2dlcnktUG93ZGVyLTE1MGctY29weS05azRieXouanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ==",
+    "https://i.chaldn.com/_mpimage/my-organic-bd-root-khejur-gur-powder-150-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101631&q=best&v=1"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "150g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/57748/root-date-jaggery-powder-150g",
+     "price": 131,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "150g",
+     "site": "Chaldal",
+     "url": "https://chaldal.com/my-organic-root-khejur-gur-powder-150-gm",
+     "price": 130,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  }
+ ]
+}

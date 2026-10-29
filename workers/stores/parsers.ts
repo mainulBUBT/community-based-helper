@@ -2,6 +2,7 @@ import { StoreBlocked } from "../lib/errors";
 import { decode, stripTags } from "../lib/html";
 import { getJson, postForm } from "../lib/http";
 import { groupBy } from "../lib/pool";
+import { tokens } from "../lib/match";
 import { structuredQuote, toTaka } from "../lib/price";
 import type { ShopProduct, ShopVariant } from "./types";
 
@@ -342,4 +343,100 @@ export async function shopifyProduct(url: string): Promise<ShopProduct | null> {
   });
   const image = typeof data.featured_image === "string" && data.featured_image ? data.featured_image.replace(/^\/\//, "https://") : null;
   return { rows, title: typeof data.title === "string" ? data.title : null, image };
+}
+
+// JS দিয়ে আঁকা দোকান (Next.js, Nuxt ইত্যাদি) দাম পাতার ভেতরের JSON-এ রাখে। দামের ঘরওয়ালা object খুঁজে, পাতার লিংক আর শিরোনামের
+// সাথে যেটার নাম মেলে সেটাই মূল পণ্য; ভার্সন তার ভেতরের তালিকায়, নইলে একই slug বা মূল নামের অন্য object-এ
+const SALE_KEYS = ["salePrice", "sale_price", "discountPrice", "discount_price", "offerPrice", "offer_price", "sellingPrice", "selling_price", "specialPrice", "special_price", "price", "sellPrice", "sell_price"];
+const OLD_KEYS = ["regularPrice", "regular_price", "originalPrice", "original_price", "orig", "mrp", "compareAtPrice", "compare_at_price", "oldPrice", "old_price", "sellPrice", "sell_price", "price"];
+const PRICE_KEY = new RegExp(`"(${SALE_KEYS.join("|")})":\\s*"?\\d`, "g");
+const IN_STOCK = ["inStock", "in_stock", "isInStock", "is_in_stock", "available"];
+const OUT_OF_STOCK = ["isOutOfStock", "is_out_of_stock", "outOfStock", "out_of_stock", "isStockOut", "is_stock_out", "isSoldOut", "soldOut"];
+const MAX_TRIES = 40;
+
+function pricedObjects(text: string): Json[] {
+  const parsed = new Map<number, unknown>();
+  const found = new Map<number, Json>();
+  for (const match of text.matchAll(PRICE_KEY)) {
+    let at = match.index;
+    for (let tries = 0; tries < MAX_TRIES && at > 0; tries++) {
+      at = text.lastIndexOf("{", at - 1);
+      if (at < 0) break;
+      if (!parsed.has(at)) parsed.set(at, jsonAt(text, at));
+      const value = parsed.get(at);
+      if (isObject(value) && match[1] in value) {
+        found.set(at, value);
+        break;
+      }
+    }
+  }
+  return [...found.values()];
+}
+
+// "500 gm", "500gm", "1 KG" → "500g", "1kg", যাতে ক্যাটালগের লেবেলের সাথে মেলে
+const unit = (text: string) =>
+  text.replace(/(\d+(?:\.\d+)?)\s*(gms?|grams?|g)\b/gi, "$1g").replace(/(\d+(?:\.\d+)?)\s*(kgs?|kilograms?)\b/gi, "$1kg").replace(/(\d+(?:\.\d+)?)\s*(ml|ltr|l)\b/gi, (_, n, u) => `${n}${u.toLowerCase() === "ml" ? "ml" : "l"}`);
+
+function optionsOf(row: Json): [unknown, unknown][] {
+  if (isObject(row.attributes)) return Object.entries(row.attributes).map(([name, value]) => [name, unit(String(value ?? ""))]);
+  const named = row.variationName ?? row.variantName ?? row.variation_name ?? row.variant_name;
+  if (typeof named === "string") return [["", unit(named)]];
+  if (row.weight != null && row.weight !== "") return [["", unit(`${row.weight} ${row.weightUnit ?? row.weight_unit ?? ""}`)]];
+  return [];
+}
+
+function amountsOf(row: Json): { price: number | null; oldPrice: number | null } {
+  const list = (keys: string[]) => keys.map((key) => toTaka(row[key])).filter((n): n is number => n !== null);
+  const oldPrice = Math.max(0, ...list(OLD_KEYS)) || null;
+  // কিছু API-তে discountPrice মানে ছাড়ের অংক, দাম নয়; পুরনো দামের ৪০%-এর কম হলে সেটা বাদ
+  const price = list(SALE_KEYS).find((n) => !oldPrice || n >= oldPrice * 0.4) ?? null;
+  return { price, oldPrice };
+}
+
+function stockOf(row: Json): boolean | null {
+  const yes = IN_STOCK.find((key) => typeof row[key] === "boolean");
+  if (yes) return row[yes] as boolean;
+  const no = OUT_OF_STOCK.find((key) => typeof row[key] === "boolean");
+  return no ? !row[no] : null;
+}
+
+const nameOf = (row: Json) => [row.name, row.title, row.productName, row.slug, row.handle].filter((v) => typeof v === "string").join(" ");
+
+function nestedRows(product: Json): Json[] {
+  const lists: Json[][] = [];
+  const walk = (node: unknown, depth: number) => {
+    if (depth > 3) return;
+    if (Array.isArray(node)) {
+      const rows = node.filter((n): n is Json => isObject(n) && SALE_KEYS.some((key) => toTaka(n[key])));
+      if (rows.length) lists.push(rows);
+      else node.forEach((n) => walk(n, depth + 1));
+    } else if (isObject(node)) Object.entries(node).forEach(([key, value]) => !/related|similar|recommend|upsell|cross/i.test(key) && walk(value, depth + 1));
+  };
+  Object.values(product).forEach((value) => walk(value, 0));
+  return lists.sort((a, b) => b.length - a.length)[0] ?? [];
+}
+
+export function embeddedVariants(html: string, url: string): ShopVariant[] {
+  const objects = pricedObjects(unescaped(html)).filter((row) => amountsOf(row).price);
+  const slug = decodeURIComponent(new URL(url).pathname.split("/").filter(Boolean).pop() ?? "").toLowerCase();
+  const page = new Set(tokens(`${slug.replace(/[-_]+/g, " ")} ${/<title[^>]*>([^<]*)/i.exec(html)?.[1] ?? ""}`));
+  const fit = (row: Json) => {
+    if (typeof row.slug === "string" && row.slug.toLowerCase() === slug) return 2;
+    const own = [...new Set(tokens(nameOf(row)))];
+    return own.length ? own.filter((t) => page.has(t)).length / own.length : 0;
+  };
+  const main = objects.map((row) => ({ row, fit: fit(row) })).sort((a, b) => b.fit - a.fit)[0];
+  if (!main || main.fit < 0.6) return [];
+  const nested = nestedRows(main.row);
+  const kin = objects.filter(
+    (row) => (main.row.slug != null && row.slug === main.row.slug) || (main.row.parentName != null && row.parentName === main.row.parentName),
+  );
+  const rows = nested.length ? nested : kin.length ? kin : [main.row];
+  const out = rows.flatMap((row) => {
+    const { price, oldPrice } = amountsOf(row);
+    return variant(optionsOf(row), price, oldPrice, stockOf(row));
+  });
+  // পাতার JSON-LD-এর দাম থাকলে সেটা এর মধ্যে থাকতেই হবে, নইলে ভুল object ধরা হয়েছে
+  const shown = structuredQuote(html)?.price;
+  return shown && !out.some((row) => row.price === shown || row.oldPrice === shown) ? [] : out;
 }

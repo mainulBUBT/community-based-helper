@@ -95,15 +95,15 @@
    "specsSource": "https://www.startech.com.bd/apple-watch-series-11",
    "offers": [
     {
-     "variant": "42mm GPS",
+     "variant": "46mm GPS",
      "site": "Star Tech",
      "url": "https://www.startech.com.bd/apple-watch-series-11",
-     "price": 41300,
-     "oldPrice": 44999,
+     "price": 45300,
+     "oldPrice": null,
      "inStock": true,
      "condition": "unofficial",
      "region": null,
-     "checkedAt": "2026-10-21"
+     "checkedAt": "2026-10-29"
     },
     {
      "variant": "42mm GPS",
@@ -425,26 +425,6 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-21"
-    },
-    {
-     "variant": "Standard",
-     "site": "Dazzle",
-     "url": "https://dazzle.com.bd/product/amazfit-active-2-calling-smart-watch",
-     "price": 13990,
-     "oldPrice": 15990,
-     "inStock": true,
-     "condition": "unofficial",
-     "checkedAt": "2026-10-24"
-    },
-    {
-     "variant": "Standard",
-     "site": "Genten",
-     "url": "https://genten.com.bd/amazfit-active-2-smart-watch",
-     "price": 12999,
-     "oldPrice": null,
-     "inStock": true,
-     "condition": "official",
-     "checkedAt": "2026-10-24"
     }
    ]
   },

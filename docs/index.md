@@ -1,6 +1,6 @@
 # দরদাম: প্রজেক্ট ইনডেক্স
 
-বাংলাদেশের দোকানগুলো থেকে একই পণ্যের দাম পাশাপাশি দেখানোর PWA। নাম **দরদাম** (Dordam), slogan "আগে দাম যাচাই, তারপর স্মার্ট কেনা"। এখন মোবাইল, ল্যাপটপ, ট্যাবলেট, ডেস্কটপ, স্মার্টওয়াচ, অডিও, পাওয়ার ব্যাংক, মনিটর, চার্জার, চার্জার ফ্যান, পানির ফিল্টার, মেকআপ, স্কিনকেয়ার, স্নিকার্স আর বেবি পণ্য; পরে অন্য পণ্যও আসবে।
+বাংলাদেশের দোকানগুলো থেকে একই পণ্যের দাম পাশাপাশি দেখানোর PWA। নাম **দরদাম** (Dordam), slogan "আগে দাম যাচাই, তারপর স্মার্ট কেনা"। এখন মোবাইল, ল্যাপটপ, ট্যাবলেট, ডেস্কটপ, স্মার্টওয়াচ, অডিও, পাওয়ার ব্যাংক, মনিটর, চার্জার, চার্জার ফ্যান, পানির ফিল্টার, মেকআপ, স্কিনকেয়ার, স্নিকার্স, বেবি পণ্য, মধু, খেজুর আর খেজুরের গুড়; পরে অন্য পণ্যও আসবে।
 
 এই ফোল্ডার মানুষ আর AI এজেন্ট দুজনের জন্য। কাজ শুরুর আগে এই ফাইল, তারপর যে ফিচারে কাজ করবেন তার ফাইল পড়ুন। কাজ শেষে সেই ফাইলের টাস্ক টিক দিন আর নিচের ট্র্যাকারে স্ট্যাটাস বদলান।
 
@@ -42,6 +42,8 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 16. ✅ **২৭ অক্টোবরের বেবি পণ্য লাইভে নেওয়া (২৭ অক্টোবর migration, seed, deploy হয়েছে; `probe-stores`-এ eFamas খোলে):** (১) `npm run db:push` (migration `20261027100000_baby-categories.sql`: `baby`, তার ভেতরে `diapers` আর `baby-care`; ক্যাটাগরি seed-এর আগে লাগে), (২) `workers/probe.ts` push করে `probe-stores`-এ নতুন দোকান eFamas পাস দেখা, (৩) `npx supabase db query --linked -f supabase/seed.sql` (২৭ পণ্য, ২১৮ দাম, প্রতিটা ভার্সন ২+ দোকানে), (৪) `rebuild`। দেখুন [data-sources](features/17-data-sources.md)।
 17. ⬜ **২৮ অক্টোবরের অ্যাডমিন "ফ্রি সীমা" পাতা:** git push-এর আগে `npm run db:push` (migration `20261028100000_usage-stats.sql`: `private_settings.usage` কলাম, `usage_stats()` আর ভিজিটর পাতার "এখন সাইটে"-র `visitors_online()`)। না চালালে পাতাটা ভুল দেখাবে আর rebuild ফাইল-গোনা লিখতে পারবে না (deploy তবু হবে)। ফাইল আর শেষ commit-এর সংখ্যা আসে পরের rebuild-এর পরে।
 18. ⬜ **২৮ অক্টোবরের পুরনো-কিন্তু-চলতি মডেল লাইভে নেওয়া:** `npx supabase db query --linked -f supabase/seed.sql`, তারপর `rebuild` (migration লাগে না)। ১৩৩ পণ্য, ৩৬২ ভার্সন, ১,৫৮৮ দাম: MacBook Air M1–M4, MacBook Pro/mini/Studio M4, iMac M3, iPhone 13–16, Samsung S24/S25/Fold7/A/M, Pixel 9/10, Redmi/POCO/OnePlus/Nothing, ৩৪টা ট্যাব। নিয়ম: পণ্যে দামসহ ২টা দোকান থাকলেই চলে। একই seed-এ মধু ১৩ থেকে ২১ পণ্য (৯৬ দাম), খেজুরে নতুন 250g আর আরও দাম (৪১)। দেখুন [data-sources](features/17-data-sources.md)।
+19. ⬜ **২৯ অক্টোবরের খেজুরের নতুন দোকান আর ভাঙা লিংক লাইভে নেওয়া, এই ক্রমে:** (১) `workers/probe.ts` push করে GitHub Actions-এর `probe-stores`-এ Haramain, Khaas Food, Holy Basket আর নতুন Trek N Tread পাস দেখা, (২) `npm run db:push` (migration `20261029063958_trekntread-new-links.sql`: Trek-এর পুরনো লিংক নতুন লিংকে, NB 530-এর Trek দাম মোছা), (৩) `npx supabase db query --linked -f supabase/seed.sql` (খেজুরে ১৩টা দাম আর ৩টা দোকান, Series 11-এর Star Tech 46mm), (৪) `rebuild`। দেখুন [data-sources](features/17-data-sources.md)।
+20. ⬜ **২৯ অক্টোবরের খেজুরের গুড় লাইভে নেওয়া** (১৯ নম্বরের সাথে একসাথে করা যায়): `npm run db:push` (migration `20261029072325_date-jaggery-category.sql`, ক্যাটাগরি seed-এর আগে লাগে), তারপর seed (৬ পণ্য, ১২ দাম), তারপর `rebuild`। দেখুন [data-sources](features/17-data-sources.md)।
 11. ✅ `/about/` পেজ (`/about/` বাংলা, `/en/about/` English), সব লেখা অ্যাডমিন থেকে বদলানো যায়।
 
 ## ফিচার ট্র্যাকার
@@ -70,8 +72,8 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 ## পুরো প্ল্যান সংক্ষেপে
 
 - **কী:** একই পণ্যের দাম কয়েকটা দোকান থেকে এনে পাশাপাশি দেখানো। যে দোকানের ওয়েবসাইট নেই (মার্কেটের দোকান, ফেসবুক গ্রুপ), তাদের ফোন নম্বর আর "যাচাই করা / যাচাই হয়নি" ব্যাজ দেখানো।
-- **ক্যাটাগরি:** অ্যাডমিন থেকে বানানো যায় (`categories` টেবিল, ভেতরে ভাগও)। এখন মোবাইল, ল্যাপটপ, ট্যাবলেট, ডেস্কটপ, স্মার্টওয়াচ, অডিও (ইয়ারবাড, হেডফোন), পাওয়ার ব্যাংক, মনিটর, চার্জার, চার্জার ফ্যান, পানির ফিল্টার, মেকআপ, স্কিনকেয়ার, স্নিকার্স আর বেবি পণ্য (ডায়াপার, বেবি কেয়ার)। Apple আলাদা ভাগ নয়, ব্র্যান্ড।
-- **দোকান:** Star Tech, Gadget & Gear, Apple Gadgets, Sumash Tech, Kry International, Executive Machines, Motion View, Dazzle, Diamu, Gadget Breeze, MacZen BD, Three's, Splayd, Ragen, DOB Skateshop, Sneaker Zone, Trek N Tread, SneakersBD Official, Global Brand, MC Solution, PCB Store, Sell Tech, MK Electronics, Othoba, Beauty Booth, ALZAK, BD Amajan Shop, UK Direct BD, Skin Revive BD, Shei Tech, Dolbear, BabyCare, Zapatos; স্কিনকেয়ারে Shajgoj, Arogga, Chaldal, BanglaShoppers, MedEasy, EmartWay, Beauty Line, Emart, Aromyeo, Korean Care, Skincare Shop, Cosmetics Corner, IndianMartBD, Beprincess, Color World, Glowella, OHSOGO, Chardike, Perfecto, Korean Mart BD, Klassy Missy, Lira Import, Her Happy Skin (কোনটা কীসের জন্য: [data-sources](features/17-data-sources.md))। এর বাইরে ক্রেতার পাঠানো দাম আর (পরে) Telegram bot। Pickaboo আর GadStyle আমাদের bot আটকায়, Rokomari আর The Mall BD GitHub Actions থেকে আটকায়, তাই বাদ; Choice Legacy-র পণ্যের পাতায় রেট লিমিট (~১ অনুরোধ/মিনিট), তাই বাদ।
+- **ক্যাটাগরি:** অ্যাডমিন থেকে বানানো যায় (`categories` টেবিল, ভেতরে ভাগও)। এখন মোবাইল, ল্যাপটপ, ট্যাবলেট, ডেস্কটপ, স্মার্টওয়াচ, অডিও (ইয়ারবাড, হেডফোন), পাওয়ার ব্যাংক, মনিটর, চার্জার, চার্জার ফ্যান, পানির ফিল্টার, মেকআপ, স্কিনকেয়ার, স্নিকার্স, বেবি পণ্য (ডায়াপার, বেবি কেয়ার), মধু, খেজুর আর খেজুরের গুড়। Apple আলাদা ভাগ নয়, ব্র্যান্ড।
+- **দোকান:** Star Tech, Gadget & Gear, Apple Gadgets, Sumash Tech, Kry International, Executive Machines, Motion View, Dazzle, Diamu, Gadget Breeze, MacZen BD, Three's, Splayd, Ragen, DOB Skateshop, Sneaker Zone, Trek N Tread, SneakersBD Official, Global Brand, MC Solution, PCB Store, Sell Tech, MK Electronics, Othoba, Beauty Booth, ALZAK, BD Amajan Shop, UK Direct BD, Skin Revive BD, Shei Tech, Dolbear, BabyCare, Zapatos, Haramain Store, Khaas Food, Holy Basket; স্কিনকেয়ারে Shajgoj, Arogga, Chaldal, BanglaShoppers, MedEasy, EmartWay, Beauty Line, Emart, Aromyeo, Korean Care, Skincare Shop, Cosmetics Corner, IndianMartBD, Beprincess, Color World, Glowella, OHSOGO, Chardike, Perfecto, Korean Mart BD, Klassy Missy, Lira Import, Her Happy Skin (কোনটা কীসের জন্য: [data-sources](features/17-data-sources.md))। এর বাইরে ক্রেতার পাঠানো দাম আর (পরে) Telegram bot। Pickaboo আর GadStyle আমাদের bot আটকায়, Rokomari আর The Mall BD GitHub Actions থেকে আটকায়, তাই বাদ; Choice Legacy-র পণ্যের পাতায় রেট লিমিট (~১ অনুরোধ/মিনিট), তাই বাদ।
 - **বাদ:** Daraz (তাদের Terms এ দাম সংগ্রহ নিষেধ), Ryans আর TechLand, Facebook scrape। bot protection ফাঁকি দেওয়ার কোড লেখা হবে না, robots.txt মানা হয়।
 - **সব ফ্রি:** Next.js static export, Cloudflare Pages, Supabase ফ্রি tier, GitHub Actions; AI এর জন্য মালিকের নিজের OpenAI-compatible সাবস্ক্রিপশন।
 - **আয় (পরে):** Star Tech affiliate (৫%), দোকানের "verified listing"।
@@ -115,6 +117,7 @@ Supabase যুক্ত না থাকলে পুরো অ্যাপ `sr
 | migration চালানো | `npm run db:push` |
 | worker পরীক্ষা (DB ছাড়া) | `npm run worker:dry` |
 | সব দাম সিঙ্ক হয় কি না (DB ছাড়া) | `npm run worker:check` |
+| নতুন দোকান কীভাবে পড়া যায়, তৈরি এন্ট্রিসহ (DB ছাড়া) | `npm run store:scan -- <ডোমেইন> [শব্দ]` |
 | ব্লক হওয়া দোকান AI দিয়ে পড়া যায় কি না (DB ছাড়া, Gemini key লাগে) | `npm run worker:ai-check` |
 | worker চালানো | `npm run worker <job>` |
 | আসল ডেটার স্পেস আনা | `npm run catalog:specs` |

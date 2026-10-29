@@ -5,17 +5,17 @@ import { getText } from "./lib/http";
 
 // নতুন দোকান GitHub Actions এর IP থেকে খোলে কি না, দাম আর ছবি পড়া যায় কি না: `node --import tsx workers/probe.ts`
 const URLS = [
-  "https://arafatelecom.com/sitemap_index.xml",
-  "https://arafatelecom.com/product/motorola-edge-70-pro/",
-  "https://arafatelecom.com/product/honor-x9d/",
-  "https://arafatelecom.com/product/realme-14-pro-2/",
-  "https://mobilebuzzbd.com/sitemap_index.xml",
-  "https://mobilebuzzbd.com/product/motorola-edge-70-pro/",
-  "https://mobilebuzzbd.com/product/honor-x9d/",
-  "https://mobilebuzzbd.com/product/realme-14-pro-plus-5g/",
-  "https://www.efamas.com.bd/product-sitemap.xml",
-  "https://www.efamas.com.bd/shop/diaper-potty/savlon-twinkle/savlon-twinkle-pant-system-baby-diaper-size-xl-12-20kg-44pcs/",
-  "https://www.efamas.com.bd/shop/diaper-potty/neocare/neocare-premium-belt-system-baby-diaper-size-l-7-18-kg-50-pcs/",
+  "https://haramainstore.com/sitemap.xml",
+  "https://haramainstore.com/products/ajwa-super-premium-dates",
+  "https://haramainstore.com/products/medjool-large-premium-dates-egyptian",
+  "https://www.khaasfood.com/sitemap.xml",
+  "https://www.khaasfood.com/product/ajwa-dates",
+  "https://holybasketbd.com/product-sitemap.xml",
+  "https://holybasketbd.com/product/ajwa-dates-500gm/",
+  "https://holybasketbd.com/product/sukkari-dates-1kg/",
+  "https://trekntread.com/sitemap.xml",
+  "https://trekntread.com/products/adizero-adios-pro-evo-1-light-blue-grade-11",
+  "https://trekntread.com/products/air-jordan-1-color-university-blue-low-neck-11-grade",
 ];
 
 async function imageStatus(url: string | null | undefined): Promise<string> {
