@@ -157,7 +157,11 @@ export default function VisitorsPage() {
           </div>
         }
       />
-      <div className="mb-6">
+      <Tabs tabs={TABS.map((id) => ({ id, label: t.admin.visitors.tabs[id] }))} active={tab} onChange={setTab} label={t.admin.visitors.title} idPrefix="visitors" />
+      <div role="tabpanel" id={`visitors-${tab}`} className="mt-6 flex flex-col gap-6">
+        {body()}
+      </div>
+      <div className="mt-6">
         <Panel title={t.admin.visitors.online(num(online.data?.length ?? 0))}>
           <p className="border-b border-line-soft px-5 py-3 text-xs text-dim">{t.admin.visitors.onlineHint}</p>
           {online.data?.length ? (
@@ -175,10 +179,6 @@ export default function VisitorsPage() {
             <p className="px-5 py-4 text-sm text-dim">{online.loading ? t.common.loading : t.admin.visitors.onlineEmpty}</p>
           )}
         </Panel>
-      </div>
-      <Tabs tabs={TABS.map((id) => ({ id, label: t.admin.visitors.tabs[id] }))} active={tab} onChange={setTab} label={t.admin.visitors.title} idPrefix="visitors" />
-      <div role="tabpanel" id={`visitors-${tab}`} className="mt-6 flex flex-col gap-6">
-        {body()}
       </div>
     </>
   );
