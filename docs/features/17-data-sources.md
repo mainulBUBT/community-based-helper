@@ -281,6 +281,15 @@ Lira Import আর Her Happy Skin যোগ হলো (robots.txt আর Terms �
 - **খোঁজা হলো, নেওয়া হলো না:** PRAN Honey (শুধু Othoba-য়), Dabbas, Zahidi, Farida, Sagai, চড়া (তিউনিসিয়া/আলজেরিয়া) খেজুর (শুধু Othoba-র বিক্রেতারা, দ্বিতীয় দোকান নেই), Allah Shafi (Chaldal-এ 500g, Othoba-য় শুধু 1kg), Farmer's Gold লিচু/সরিষা (Arogga-য় ml বা ওজন লেখা নেই), Green Harvest (Arogga 600g, Rokomari 150/300/500g)। Rokomari-তে ক্যাটাগরির দ্বিতীয় পাতা (`?page=`) robots-এ বন্ধ, তাই শুধু প্রথম পাতা থেকে লিংক।
 - **নতুন দোকান যাচাই:** MedEasy আগেই generic ভাবে পড়া হয় (sitemap-এ মধু শুধু Karkuma), তাই শুধু অফার যোগ। বাদ: Sindabad (robots খোলা, sitemap-এ Dabur/Al Shifa/খেজুর আছে, কিন্তু পাতা SPA, HTML-এ দাম নেই), Lazz Pharma (sitemap-এ অনেক মধু, কিন্তু Next.js পাতায় দাম JavaScript দিয়ে আসে; তার ওপর মার্কেটপ্লেস), Daily Shopping (`dailyshoppingbd.com` এখন Othoba-তে redirect), BanglaShoppers (Magento, robots খোলা, কিন্তু মধু/খেজুর বলতে শুধু আমদানি করা Manuka/Tesco, মেলানোর মতো কিছু নেই), e-mart (শুধু স্কিনকেয়ার), Osudpotro (sitemap নেই)।
 
+### ল্যাপটপে ASUS, HP, Dell, MSI (২৯ অক্টোবর ২০২৬)
+
+ল্যাপটপে ২০টা নতুন পণ্য, ২৬টা ভার্সন, ৬৬টা দাম (HP 15-fd0180nia-এর একটা ধরে), প্রতিটা ভার্সন ২+ দোকানে, একই CPU, RAM, SSD আর GPU মিলিয়ে: ASUS ১৪ (TUF A15 FA506NCG, TUF A16 FA607NUG/FA607NUQ/FA608UH, TUF F16 FX608JMR, ROG Strix G16 G614PR/G615LM, SCAR 16 G635LW, Vivobook 15 A1504VA/X1504VA, ExpertBook P1 P1503CVA, Zenbook 14 OLED UM3406GA/UX3405CA, V16 V3607VH), HP ৪ (Victus 15-fa2013dx, 15-fb3093dx, 15-fc0074nia, 15-fd2104tu; সাথে আগের 15-fd0180nia-এ Tech Marvels), Dell ১ (15 DC15250), MSI ১ (Cyborg 15 A13VE)। `worker:check` সবগুলোতে ০ মেলেনি।
+
+- **নতুন দোকান Tech Marvels** (WooCommerce, sitemap; প্রায় ২৭৫টা ল্যাপটপ): বেশিরভাগ মডেল কোড বিদেশি বাজারের (fb3093dx, fa2013dx), তাই `unofficial`। যে পাতায় শুধু RAM-এর অপশন ("8 gb / 16 gb") আর SSD লেখা নেই, সেগুলো worker মেলাতে পারে না, তাই নেওয়া হয়নি — এতে TUF A15 FA506NCQ আর FX608JMR 32GB বাদ পড়েছে।
+- **Star Tech:** `STARTECH_CATEGORIES`-এ `/laptop-notebook` যোগ; আগে শুধু MacBook ছিল, তাই নতুন Windows ল্যাপটপ discover পেত না।
+- অফিসিয়াল দাম: Star Tech-এর দাম (না থাকলে Global Brand, তাও না থাকলে দোকানগুলোর মাঝামাঝি)। Global Brand ASUS-এর পরিবেশক, দাম Star Tech-এর সমান বা কাছাকাছি; Sumash, Apple Gadgets, Tech Marvels-এর দাম প্রায়ই অনেক কম (আনঅফিসিয়াল)।
+- **বাকি:** Acer-এর কোনো মডেল একই কনফিগে ২ দোকানে মেলেনি (Nitro V 15, Predator Helios Neo শুধু Apple Gadgets আর Sumash-এ, Sumash-এর দাম "call for price")। Lenovo আর আরও ASUS/HP মডেল (Global Brand আর Star Tech-এ ৬০টার মতো জোড়া পাওয়া গেছে) পরের ধাপে।
+
 ### খেজুরের গুড় (২৯ অক্টোবর ২০২৬)
 
 নতুন ক্যাটাগরি `date-jaggery` (migration `20261029072325_date-jaggery-category.sql`, ভার্সনের ঘর `capacity` = ওজন, মধুর মতো যাচাইয়ের নোট চালু)। মধুর মতো ব্র্যান্ডের প্যাক, কারণ খোলা গুড়ের মান দোকানভেদে আলাদা আর মেলানো যায় না। ৬টা পণ্য, ১২টা দাম, প্রতিটা ঠিক ২টা দোকানে; worker নিজে লাইভ পড়েছে, `worker:check` ০ মেলেনি (Chaldal মাঝে মাঝে 404 দেয়, আবার চালালে ঠিক)। সব ছবি ২০০ image/*।

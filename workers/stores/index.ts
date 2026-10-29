@@ -55,6 +55,7 @@ const STARTECH_CATEGORIES = [
   "/apple-ipad",
   "/tablet-pc",
   "/apple-macbook",
+  "/laptop-notebook",
   "/apple-imac",
   "/apple-mac-mini",
   "/apple-mac-studio",
@@ -616,6 +617,17 @@ export const stores: Store[] = [
     condition: "official",
   }),
   klassy,
+  // ল্যাপটপ: WooCommerce; বেশিরভাগ মডেল কোড বিদেশি বাজারের (fb3231nw, es1013dx), ওয়ারেন্টি দোকানের — তাই আনঅফিসিয়াল
+  sitemapStore({
+    id: "techmarvels",
+    name: "Tech Marvels",
+    origin: "https://techmarvels.com.bd",
+    sample: "https://techmarvels.com.bd/product/lenovo-thinkpad-e14-gen7-core-ultra-7-255h-business-laptop/",
+    sitemap: "https://techmarvels.com.bd/sitemap_index.xml",
+    path: "/product/",
+    condition: "unofficial",
+    variants: wooVariants,
+  }),
   // Trek N Tread: ২৯ অক্টোবর ২০২৬-এ সাইট নতুন করে বানানো; এখন sitemap আর JSON-LD আছে, লিংক থেকে সংখ্যার prefix বাদ
   sitemapStore({
     id: "trekntread",
