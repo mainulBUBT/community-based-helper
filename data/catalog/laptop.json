@@ -2171,6 +2171,657 @@
      "checkedAt": "2026-10-29"
     }
    ]
+  },
+  {
+   "brand": "Lenovo",
+   "name": "LOQ 15IRX10",
+   "category": "laptop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Core i7-13650HX RTX 5050 16GB / 512GB",
+     "attributes": {
+      "chip": "Core i7-13650HX",
+      "ram": "16GB",
+      "storage": "512GB",
+      "gpu": "RTX 5050"
+     },
+     "officialPrice": 173500
+    },
+    {
+     "label": "Core i7-14700HX RTX 5050 16GB / 512GB",
+     "attributes": {
+      "chip": "Core i7-14700HX",
+      "ram": "16GB",
+      "storage": "512GB",
+      "gpu": "RTX 5050"
+     },
+     "officialPrice": 217000
+    },
+    {
+     "label": "Core i7-14700HX RTX 5060 16GB / 512GB",
+     "attributes": {
+      "chip": "Core i7-14700HX",
+      "ram": "16GB",
+      "storage": "512GB",
+      "gpu": "RTX 5060"
+     },
+     "officialPrice": 225000
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/loq-15irx10/loq-15irx10-011-1200x630.webp",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/LAPTOP/LENOVO/83JE00WPLK-3-600x600.webp",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/LAPTOP/LENOVO/83JE01HWLK-600x600.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/lenovo-loq-15irx10-core-i7-13th-gen-rtx-5050-gaming-laptop",
+   "offers": [
+    {
+     "variant": "Core i7-13650HX RTX 5050 16GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/lenovo-loq-15irx10-core-i7-13th-gen-rtx-5050-gaming-laptop",
+     "price": 173500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core i7-13650HX RTX 5050 16GB / 512GB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/lenovo-loq-15irx10-13th-gen-core-i7-ai-powered-gaming-laptop",
+     "price": 173500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core i7-14700HX RTX 5050 16GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/lenovo-loq-15irx10-core-i7-rtx-5050-laptop",
+     "price": 217000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core i7-14700HX RTX 5050 16GB / 512GB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/lenovo-loq-15irx10-83je01hwlk-intel-core-i7-14700hx-gaming-pc-laptop",
+     "price": 217000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core i7-14700HX RTX 5060 16GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/lenovo-loq-15irx10-core-i7-rtx-5060-laptop",
+     "price": 225000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core i7-14700HX RTX 5060 16GB / 512GB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/lenovo-loq-15irx10-83je01hxlk-intel-core-i7-14700hx-gaming-laptop",
+     "price": 225000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core i7-14700HX RTX 5060 16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/lenovo-loq-15irx10-core-i7-14700hx-rtx-5060",
+     "price": 189999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core i7-14700HX RTX 5060 16GB / 512GB",
+     "site": "Tech Marvels",
+     "url": "https://techmarvels.com.bd/product/lenovo-loq-15irx10-i7-14700hx-rtx5060-16gb-512gb/",
+     "price": 189990,
+     "oldPrice": 195000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Lenovo",
+   "name": "Legion 5 15IAX10",
+   "category": "laptop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Core Ultra 7 255HX RTX 5060 32GB / 512GB",
+     "attributes": {
+      "chip": "Core Ultra 7 255HX",
+      "ram": "32GB",
+      "storage": "512GB",
+      "gpu": "RTX 5060"
+     },
+     "officialPrice": 320000
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/legion-5-15irx10/legion-5-15irx10-07-1200x630.webp",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/LAPTOP/LENOVO/83F0006ELK-2-600x600.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4075/15IAX10.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/lenovo-legion-5-15iax10-oled-gaming-laptop",
+   "offers": [
+    {
+     "variant": "Core Ultra 7 255HX RTX 5060 32GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/lenovo-legion-5-15iax10-oled-gaming-laptop",
+     "price": 320000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core Ultra 7 255HX RTX 5060 32GB / 512GB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/lenovo-legion-5i-15iax10-ai-powered-83f0006elk-intel-core-ultra-7-gaming-pc",
+     "price": 320000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core Ultra 7 255HX RTX 5060 32GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/lenovo-legion-5-15iax10-core-ultra-7-255hx-rtx-5060-151-oled-165hz-gaming-laptop",
+     "price": 254999,
+     "oldPrice": 320000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core Ultra 7 255HX RTX 5060 32GB / 512GB",
+     "site": "Tech Marvels",
+     "url": "https://techmarvels.com.bd/product/lenovo-legion-5-15iax10-2025-core-ultra-7-255hx-rtx-5060-gaming-laptop/",
+     "price": 267990,
+     "oldPrice": 273500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Lenovo",
+   "name": "Legion Pro 5 16IAX10",
+   "category": "laptop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Core Ultra 9 275HX RTX 5060 32GB / 1TB",
+     "attributes": {
+      "chip": "Core Ultra 9 275HX",
+      "ram": "32GB",
+      "storage": "1TB",
+      "gpu": "RTX 5060"
+     },
+     "officialPrice": 320000
+    },
+    {
+     "label": "Core Ultra 7 255HX RTX 5060 32GB / 1TB",
+     "attributes": {
+      "chip": "Core Ultra 7 255HX",
+      "ram": "32GB",
+      "storage": "1TB",
+      "gpu": "RTX 5060"
+     },
+     "officialPrice": 335000
+    },
+    {
+     "label": "Core Ultra 9 275HX RTX 5070 32GB / 1TB",
+     "attributes": {
+      "chip": "Core Ultra 9 275HX",
+      "ram": "32GB",
+      "storage": "1TB",
+      "gpu": "RTX 5070"
+     },
+     "officialPrice": 349999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/legion-pro-5-16iax10/legion-pro-5-16iax10-01-1200x630.webp",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/LAPTOP/LENOVO/83F3005TLK-600x600.webp",
+    "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/legion-pro-5-16iax10-cu7/legion-pro-5-16iax10-05-1200x630.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/lenovo-legion-pro-5-16iax10-laptop",
+   "offers": [
+    {
+     "variant": "Core Ultra 9 275HX RTX 5060 32GB / 1TB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/lenovo-legion-pro-5-16iax10-laptop",
+     "price": 320000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core Ultra 9 275HX RTX 5060 32GB / 1TB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/lenovo-legion-pro-5i-16iax10-83f3005tlk-core-ultra-9-275hx-gaming-laptop",
+     "price": 320000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core Ultra 7 255HX RTX 5060 32GB / 1TB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/lenovo-legion-pro-5-16iax10-core-ultra-7-gaming-laptop",
+     "price": 335000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core Ultra 7 255HX RTX 5060 32GB / 1TB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/lenovo-legion-pro-5i-16iax10-83f3004vlk-intel-core-ultra-7-255hx-gaming-pc",
+     "price": 335000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core Ultra 9 275HX RTX 5070 32GB / 1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/lenovo-legion-pro-5-16iax10-core-ultra-9-275hx-rtx-5070-16-165hz-oled-gaming-laptop",
+     "price": 349999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core Ultra 9 275HX RTX 5070 32GB / 1TB",
+     "site": "Tech Marvels",
+     "url": "https://techmarvels.com.bd/product/lenovo-legion-pro-5-16iax10-core-ultra-9-275hx-rtx5070-oled/",
+     "price": 349990,
+     "oldPrice": 365990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Lenovo",
+   "name": "LOQ 15IRX9",
+   "category": "laptop",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "Core i5-13450HX RTX 4050 16GB / 512GB",
+     "attributes": {
+      "chip": "Core i5-13450HX",
+      "ram": "16GB",
+      "storage": "512GB",
+      "gpu": "RTX 4050"
+     },
+     "officialPrice": 145000
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-LOQ-15IRX9-Core-i5-13th-Gen-RTX-4050-6GB-Graphics-15.6-FHD-Gaming-Laptopd-9363.png",
+    "https://techmarvels.com.bd/wp-content/uploads/2026/06/LOQ-15IRX9-1.webp"
+   ],
+   "specsSource": "https://www.applegadgetsbd.com/product/lenovo-loq-15irx9-core-i5-gaming-laptop",
+   "offers": [
+    {
+     "variant": "Core i5-13450HX RTX 4050 16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/lenovo-loq-15irx9-core-i5-gaming-laptop",
+     "price": 145000,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core i5-13450HX RTX 4050 16GB / 512GB",
+     "site": "Tech Marvels",
+     "url": "https://techmarvels.com.bd/product/lenovo-loq-15irx9-i5-13450hx-rtx4050/",
+     "price": 132990,
+     "oldPrice": 137000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Lenovo",
+   "name": "LOQ 15AHP10",
+   "category": "laptop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Ryzen 5 220 RTX 5050 16GB / 512GB",
+     "attributes": {
+      "chip": "Ryzen 5 220",
+      "ram": "16GB",
+      "storage": "512GB",
+      "gpu": "RTX 5050"
+     },
+     "officialPrice": 162500
+    },
+    {
+     "label": "Ryzen 7 250 RTX 5050 16GB / 512GB",
+     "attributes": {
+      "chip": "Ryzen 7 250",
+      "ram": "16GB",
+      "storage": "512GB",
+      "gpu": "RTX 5050"
+     },
+     "officialPrice": 174999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3577/Lenovo_LOQ_15AHP10_-_White_Backlit.webp",
+    "https://techmarvels.com.bd/wp-content/uploads/2026/02/LOQ-15AHP10-2.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3175/Lenovo_LOQ_15AHP10_-_White_Backlit.webp"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/lenovo-loq-15ahp10-ryzen-5-220-rtx-5050",
+   "offers": [
+    {
+     "variant": "Ryzen 5 220 RTX 5050 16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/lenovo-loq-15ahp10-ryzen-5-220-rtx-5050",
+     "price": 159999,
+     "oldPrice": 165000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Ryzen 5 220 RTX 5050 16GB / 512GB",
+     "site": "Tech Marvels",
+     "url": "https://techmarvels.com.bd/product/lenovo-loq-15ahp10-2025-ryzen-5-220-rtx-5050-gaming-laptop/",
+     "price": 162500,
+     "oldPrice": 167000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Ryzen 7 250 RTX 5050 16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/lenovo-loq-15ahp10-ryzen-7-250-rtx-5050",
+     "price": 174999,
+     "oldPrice": 205000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Ryzen 7 250 RTX 5050 16GB / 512GB",
+     "site": "Tech Marvels",
+     "url": "https://techmarvels.com.bd/product/lenovo-loq-15ahp10-2025-ryzen-7-250-rtx-5050-gaming-laptop/",
+     "price": 169990,
+     "oldPrice": 175500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Lenovo",
+   "name": "Legion 5 15AHP10",
+   "category": "laptop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Ryzen 7 260 RTX 5050 16GB / 512GB",
+     "attributes": {
+      "chip": "Ryzen 7 260",
+      "ram": "16GB",
+      "storage": "512GB",
+      "gpu": "RTX 5050"
+     },
+     "officialPrice": 209999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-Legion-5-15AHP10-AMD-Ryzen-7-260-NVIDIA-GeForce-RTX-5050-With-8GB-Graphic-15.1-WQXGA-OLED-Gaming-Laptop3-6238.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4575/Lenovo_Legion_5_15AHP10.webp",
+    "https://techmarvels.com.bd/wp-content/uploads/2025/12/Lenovo-Legion-5-15AHP10-1.webp"
+   ],
+   "specsSource": "https://www.applegadgetsbd.com/product/lenovo-legion-5-15ahp10-amd-ryzen-7-260-nvidia-geforce-rtx-5050-gaming-laptop",
+   "offers": [
+    {
+     "variant": "Ryzen 7 260 RTX 5050 16GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/lenovo-legion-5-15ahp10-amd-ryzen-7-260-nvidia-geforce-rtx-5050-gaming-laptop",
+     "price": 212900,
+     "oldPrice": null,
+     "inStock": null,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Ryzen 7 260 RTX 5050 16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/lenovo-legion-5-15ahp10-ryzen-7-260-rtx-5050",
+     "price": 209999,
+     "oldPrice": 250000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Ryzen 7 260 RTX 5050 16GB / 512GB",
+     "site": "Tech Marvels",
+     "url": "https://techmarvels.com.bd/product/lenovo-legion-5-15ahp10-2025-ryzen-7-260-rtx5050-gaming-laptop/",
+     "price": 205990,
+     "oldPrice": 209990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "Lenovo",
+   "name": "IdeaPad Slim 3 15IRH10",
+   "category": "laptop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Core i7-13620H 16GB / 512GB",
+     "attributes": {
+      "chip": "Core i7-13620H",
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": 107900
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/LAPTOP/LENOVO/83K100G0LK-2-600x600.webp",
+    "https://techmarvels.com.bd/wp-content/uploads/2025/12/IdeaPad_Slim_3_15IRH10_CT2_06.webp"
+   ],
+   "specsSource": "https://www.globalbrand.com.bd/lenovo-ideapad-slim-3i-15irh10-83k100g0lk-13th-gen-core-i7-laptop",
+   "offers": [
+    {
+     "variant": "Core i7-13620H 16GB / 512GB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/lenovo-ideapad-slim-3i-15irh10-83k100g0lk-13th-gen-core-i7-laptop",
+     "price": 107900,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core i7-13620H 16GB / 512GB",
+     "site": "Tech Marvels",
+     "url": "https://techmarvels.com.bd/product/lenovo-ideapad-slim-3-15irh10-i7-13620h-16gb-512gb/",
+     "price": 103500,
+     "oldPrice": 109000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "ASUS",
+   "name": "TUF Gaming F16 FX608JHI",
+   "category": "laptop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Core i7-14650HX RTX 5050 16GB / 512GB",
+     "attributes": {
+      "chip": "Core i7-14650HX",
+      "ram": "16GB",
+      "storage": "512GB",
+      "gpu": "RTX 5050"
+     },
+     "officialPrice": 245000
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/laptop/asus/tuf-gaming-f16-fx608jhi/tuf-gaming-f16-fx608jhi-08-1200x630.webp",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/LAPTOP/ASUS/FX608JHI-TU351W%20-00-600x600.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/asus-tuf-gaming-f16-fx608jhi-core-i7-14650hx-gaming-laptop",
+   "offers": [
+    {
+     "variant": "Core i7-14650HX RTX 5050 16GB / 512GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/asus-tuf-gaming-f16-fx608jhi-core-i7-14650hx-gaming-laptop",
+     "price": 245000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core i7-14650HX RTX 5050 16GB / 512GB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/asus-tuf-gaming-f16-fx608jhi-tu351w-intel-core-i7-14650hx-fhd-plus-laptop",
+     "price": 245000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "brand": "ASUS",
+   "name": "ROG Zephyrus G14 GA403WP",
+   "category": "laptop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Ryzen AI 9 HX 370 RTX 5070 32GB / 2TB",
+     "attributes": {
+      "chip": "Ryzen AI 9 HX 370",
+      "ram": "32GB",
+      "storage": "2TB",
+      "gpu": "RTX 5070"
+     },
+     "officialPrice": 438000
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/laptop/asus/rog-zephyrus-g14-ga403wp/rog-zephyrus-g14-ga403wp-white-01-1200x630.webp",
+    "https://e4b4vq9ke3.tenbytecdn.com/image/cache/catalog/LAPTOP/ASUS/GA403WP-QS052W-0-600x600.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/asus-rog-zephyrus-g14-ga403wp-ryzen-ai-9-laptop",
+   "offers": [
+    {
+     "variant": "Ryzen AI 9 HX 370 RTX 5070 32GB / 2TB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/asus-rog-zephyrus-g14-ga403wp-ryzen-ai-9-laptop",
+     "price": 438000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Ryzen AI 9 HX 370 RTX 5070 32GB / 2TB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/asus-rog-zephyrus-g14-ga403wp-qs052w-ryzen-ai-9-hx-370-gaming-laptop",
+     "price": 438000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-29"
+    }
+   ]
   }
  ]
 }

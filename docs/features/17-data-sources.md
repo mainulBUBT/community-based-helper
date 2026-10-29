@@ -290,6 +290,14 @@ Lira Import আর Her Happy Skin যোগ হলো (robots.txt আর Terms �
 - অফিসিয়াল দাম: Star Tech-এর দাম (না থাকলে Global Brand, তাও না থাকলে দোকানগুলোর মাঝামাঝি)। Global Brand ASUS-এর পরিবেশক, দাম Star Tech-এর সমান বা কাছাকাছি; Sumash, Apple Gadgets, Tech Marvels-এর দাম প্রায়ই অনেক কম (আনঅফিসিয়াল)।
 - **বাকি:** Acer-এর কোনো মডেল একই কনফিগে ২ দোকানে মেলেনি (Nitro V 15, Predator Helios Neo শুধু Apple Gadgets আর Sumash-এ, Sumash-এর দাম "call for price")। Lenovo আর আরও ASUS/HP মডেল (Global Brand আর Star Tech-এ ৬০টার মতো জোড়া পাওয়া গেছে) পরের ধাপে।
 
+### ল্যাপটপে Lenovo আর আরও ASUS (২৯ অক্টোবর ২০২৬, দ্বিতীয় ধাপ)
+
+৯টা নতুন পণ্য, ১৪টা ভার্সন, ৩৩টা দাম; `worker:check` ০ মেলেনি। Lenovo ৭ (LOQ 15IRX10, LOQ 15IRX9, LOQ 15AHP10, Legion 5 15IAX10, Legion 5 15AHP10, Legion Pro 5 16IAX10, IdeaPad Slim 3 15IRH10), ASUS ২ (TUF F16 FX608JHI, ROG Zephyrus G14 GA403WP)।
+
+- **Lenovo-র কোড এক, লাইন আলাদা:** 15AHP10-এ LOQ, Legion 5 আর IdeaPad Slim 3; 15IRX10-এ LOQ আর Legion 5 — তাই কোডের সাথে লাইনের নামও মেলানো হয়েছে।
+- **Star Tech-এর "To be announced":** স্টক শেষ হলে Star Tech পাতায় দাম দেখায় না (`product-price">To be announced`), কিন্তু `itemprop="price"` আর `og:price`-এ পুরনো দাম রেখে দেয়, আর worker সেটাই পড়ে। কঠোর নিয়ম ৩ অনুযায়ী এগুলো অফার নয়, তাই এই ধাপে নেওয়া হয়নি (LOQ 15IAX9E, Legion 5 15IRX10, IdeaPad 15IRH10-এর i5 ইত্যাদি বাদ)। প্রথম ধাপের ৬টা পণ্যে (FX608JMR, SCAR 16 G635LW, X1504VA, P1503CVA, Dell 15 DC15250, MSI Cyborg 15 A13VE) Star Tech-এর দাম এমন পাতা থেকে; বাদ দিলে প্রতিটা এক দোকানে নামে, মালিকের সিদ্ধান্ত বাকি। Sumash Tech-এর পাতায় "To Be Announced" থাকে নিচের অন্য পণ্যের, মূল পণ্যের নয়।
+- worker নিজে এখনো এই পুরনো দাম পড়ে; ঠিক করলে Star Tech-এর আগের সব স্টক-শেষ দাম প্রতি run-এ "ব্যর্থ" দেখাবে, তাই আলাদা সিদ্ধান্ত।
+
 ### খেজুরের গুড় (২৯ অক্টোবর ২০২৬)
 
 নতুন ক্যাটাগরি `date-jaggery` (migration `20261029072325_date-jaggery-category.sql`, ভার্সনের ঘর `capacity` = ওজন, মধুর মতো যাচাইয়ের নোট চালু)। মধুর মতো ব্র্যান্ডের প্যাক, কারণ খোলা গুড়ের মান দোকানভেদে আলাদা আর মেলানো যায় না। ৬টা পণ্য, ১২টা দাম, প্রতিটা ঠিক ২টা দোকানে; worker নিজে লাইভ পড়েছে, `worker:check` ০ মেলেনি (Chaldal মাঝে মাঝে 404 দেয়, আবার চালালে ঠিক)। সব ছবি ২০০ image/*।
