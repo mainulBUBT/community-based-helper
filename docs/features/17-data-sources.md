@@ -296,7 +296,7 @@ Lira Import আর Her Happy Skin যোগ হলো (robots.txt আর Terms �
 
 - **Lenovo-র কোড এক, লাইন আলাদা:** 15AHP10-এ LOQ, Legion 5 আর IdeaPad Slim 3; 15IRX10-এ LOQ আর Legion 5 — তাই কোডের সাথে লাইনের নামও মেলানো হয়েছে।
 - **Star Tech-এর "To be announced":** স্টক শেষ হলে Star Tech পাতায় দাম দেখায় না (`product-price">To be announced`), কিন্তু `itemprop="price"` আর `og:price`-এ পুরনো দাম রেখে দেয়, আর worker সেটাই পড়ে। কঠোর নিয়ম ৩ অনুযায়ী এগুলো অফার নয়, তাই এই ধাপে নেওয়া হয়নি (LOQ 15IAX9E, Legion 5 15IRX10, IdeaPad 15IRH10-এর i5 ইত্যাদি বাদ)। প্রথম ধাপের ৬টা পণ্যে (FX608JMR, SCAR 16 G635LW, X1504VA, P1503CVA, Dell 15 DC15250, MSI Cyborg 15 A13VE) Star Tech-এর দাম এমন পাতা থেকে ছিল; বাদ দিলে প্রতিটা এক দোকানে নামে, তাই মালিকের সিদ্ধান্তে পুরো পণ্য বাদ (DB থেকে migration `20261029115441_laptops-tba-cleanup.sql`)। প্রথম ধাপে তাই আসলে থাকল ১৪টা পণ্য: ASUS ১০, HP ৪। Sumash Tech-এর পাতায় "To Be Announced" থাকে নিচের অন্য পণ্যের, মূল পণ্যের নয়।
-- worker নিজে এখনো এই পুরনো দাম পড়ে; ঠিক করলে Star Tech-এর আগের সব স্টক-শেষ দাম প্রতি run-এ "ব্যর্থ" দেখাবে, তাই আলাদা সিদ্ধান্ত।
+- worker ঠিক করা হয়েছে: পাতার দামের ঘরে "To be announced" থাকলে `readPage` `NoPrice` (NotFound-এর ভাগ) দেয়, তাই `prices` দামটা "স্টকে নেই" করে (ব্যর্থ নয়), `discover` এমন পাতা থেকে নতুন দাম বসায় না, আর `worker:check` এগুলো আলাদা "দাম নেই" ঘরে গোনে (সিঙ্ক-ভাঙা ধরে না)।
 
 ### খেজুরের গুড় (২৯ অক্টোবর ২০২৬)
 

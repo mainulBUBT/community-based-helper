@@ -106,6 +106,10 @@ export function declaresNoPrice(html: string): boolean {
   return offers.some((offer) => [offer.price, offer.lowPrice].some((value) => value !== undefined && value !== null && value !== "" && Number(value) === 0));
 }
 
+// Star Tech স্টক শেষ হলে দামের ঘরে "To be announced" লেখে, কিন্তু itemprop আর og:price-এ পুরনো দাম রেখে দেয়
+const ANNOUNCED = /class="product-price">\s*(?:to be announced|up ?coming|call for price)\s*</i;
+export const announcesNoPrice = (html: string) => ANNOUNCED.test(html);
+
 export function structuredQuote(html: string): Quote | null {
   const main = mainProduct(html);
   const quote = (main ? fromJsonLd(main) : null) ?? (declaresNoPrice(html) ? null : (fromItemprop(html) ?? fromOpenGraph(html)));

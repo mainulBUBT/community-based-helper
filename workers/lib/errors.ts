@@ -6,6 +6,9 @@ export class StoreBlocked extends Error {
 
 export class NotFound extends Error {}
 
+// পাতা খোলে, কিন্তু দোকান নিজেই দাম দেখায় না ("To be announced"): না-পাওয়ার মতোই, দাম "স্টকে নেই" হয়
+export class NoPrice extends NotFound {}
+
 export class Disallowed extends Error {}
 
 export function message(error: unknown): string {
