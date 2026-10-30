@@ -113,6 +113,7 @@ export const en: Messages = {
     explore: "Explore",
     contact: "Contact",
     reportPrice: "Report a lower price",
+    more: "More",
     rights: (name, year) => `© ${year} ${name}. Prices vary by shop, so confirm with the seller before you buy.`,
   },
   search: {
@@ -298,6 +299,10 @@ export const en: Messages = {
   seo: {
     search: { title: "Find Prices", description: "Search mobile, iPhone, MacBook and smartwatch prices by model." },
     about: { title: "About Us", description: "How this price comparison site works, where the prices come from, how sellers are verified, and how to reach us." },
+    privacy: { title: "Privacy Policy", description: "What data Dordam keeps and why, which data stays on your device only, and where data goes." },
+    terms: { title: "Terms of Use", description: "Where the prices come from, the limits of their accuracy, and the rules for using Dordam." },
+    faq: { title: "Common Questions", description: "Where prices come from, how often they update, what a verified seller means - answers to questions like these." },
+    contact: { title: "Contact", description: "Ask a question, report a wrong price, or request a listing for your shop." },
     sellers: { title: "Trusted Shops & Sellers in Bangladesh", description: "Online stores, market shops and Facebook group sellers in Bangladesh: phone numbers, websites, and which ones we have verified." },
     saved: { title: "Saved", description: "Products you saved to compare later." },
     productTitles: (name, model, _bnModel, month) => [
@@ -325,5 +330,78 @@ export const en: Messages = {
     whatTitle: "What we do",
     contactTitle: "Contact",
     shopsNote: "For shops: our bot, \"DordamBot\", only reads public prices. To remove a listing or fix a mistake, write to us above.",
+  },
+  privacy: {
+    title: "Privacy Policy",
+    sections: [
+      {
+        title: "In short",
+        body: ["Using this site needs no account. We don't ask for your name, email or phone number, and we don't sell data for advertising."],
+      },
+      {
+        title: "What stays on your device",
+        body: ["Saved products and your language and theme choices stay in your browser and never reach our server. Clearing your browser data removes them."],
+      },
+      {
+        title: "What you send us",
+        body: [
+          "The name, phone or link you send through the \"Report a lower price\" form is used only to check and publish the price.",
+          "Notifications about price drops need your browser's permission; you can turn them off any time in the browser settings.",
+        ],
+      },
+      {
+        title: "If this changes",
+        body: ["When this text changes, the new version will be on this page. Questions? Write to us using the details on the contact page."],
+      },
+    ],
+  },
+  terms: {
+    title: "Terms of Use",
+    sections: [
+      {
+        title: "What this site does",
+        body: ["Dordam shows prices from shops across Bangladesh side by side, so you can compare before you buy."],
+      },
+      {
+        title: "Accuracy of prices",
+        body: ["Prices are updated several times a day, but a shop can change them at any moment. Confirm price and stock with the shop before you buy; prices shown here are not the shop's final bill."],
+      },
+      {
+        title: "We don't sell anything",
+        body: ["We don't sell products, take orders or handle payments. The whole deal between you and the shop is yours and theirs."],
+      },
+      {
+        title: "Prices sent by visitors",
+        body: ["Prices sent by visitors are checked before they appear on the site. Wrong or misleading information is removed."],
+      },
+      {
+        title: "How the site may be used",
+        body: ["Use the site for your own shopping and share product links freely. Copying the whole catalogue by machine to show elsewhere is not allowed."],
+      },
+      {
+        title: "Liability and changes",
+        body: [
+          "The site is provided as is; decisions made based on the information here are the reader's own, and we are not responsible for the shops' own websites.",
+          "These terms may change over time; the new version will be on this page.",
+        ],
+      },
+    ],
+  },
+  faq: {
+    title: "Common Questions",
+    intro: "Where prices come from, how they update, how to get a shop listed - answers to questions like these.",
+    items: [
+      { q: "Where do the prices come from?", a: "From the shops' own websites. For shops without a website, we add the prices ourselves and verify them." },
+      { q: "How often are prices updated?", a: "Several times a day, straight from the shops' websites. But prices can change at any moment, so confirm with the shop before you buy." },
+      { q: "What does a \"verified\" seller mean?", a: "We have checked the seller's phone number and address. It is not a guarantee - inspect the product in person before you pay." },
+      { q: "What do I do if a price looks wrong?", a: "Use the \"Report a lower price\" form on the product page, or write to us on the contact page. We check and fix it." },
+      { q: "How do I get notified of a price drop?", a: "Save the product and turn on price notifications in the settings. You'll hear about any price drop on your saved products." },
+      { q: "Does using the site cost anything?", a: "No, browsing and comparing prices is completely free. Buying happens at the shop - we don't sell anything ourselves." },
+      { q: "Can my shop be listed?", a: "Yes. Send your shop's name, address and phone through the contact page and we'll take a look." },
+    ],
+  },
+  contact: {
+    title: "Contact",
+    intro: "Questions, a wrong price, or a request to list your shop - write to us for any of these. For a wrong price, the \"Report a lower price\" form on the product page works too.",
   },
 };

@@ -29,6 +29,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ["/", "hourly", 1, everything],
     ["/sellers/", "weekly", 0.5, everything],
     ["/about/", "monthly", 0.3, undefined],
+    ["/faq/", "monthly", 0.3, undefined],
+    ["/contact/", "monthly", 0.3, undefined],
+    ["/privacy/", "monthly", 0.3, undefined],
+    ["/terms/", "monthly", 0.3, undefined],
     ...categories.map((c): [string, Frequency, number, string | undefined] => [
       `/category/${c.slug}/`,
       "daily",

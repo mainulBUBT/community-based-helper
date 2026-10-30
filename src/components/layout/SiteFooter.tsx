@@ -58,6 +58,12 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
           <Link href={`${prefix}/about/`} className={link}>
             {t.about.title}
           </Link>
+          <Link href={`${prefix}/faq/`} className={link}>
+            {t.faq.title}
+          </Link>
+          <Link href={`${prefix}/contact/`} className={link}>
+            {t.contact.title}
+          </Link>
           <SubmitPriceDialog
             trigger={(open) => (
               <button type="button" onClick={open} className={`${link} text-left`}>
@@ -91,7 +97,17 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
         )}
       </div>
       <div className="border-t border-white/10">
-        <p className="page-container py-4 text-xs text-white/60">{t.footer.rights(siteName, num(new Date().getFullYear()))}</p>
+        <div className="page-container flex flex-wrap items-center justify-between gap-x-6 gap-y-2 py-4">
+          <p className="text-xs text-white/60">{t.footer.rights(siteName, num(new Date().getFullYear()))}</p>
+          <nav aria-label={t.footer.more} className="flex gap-4">
+            <Link href={`${prefix}/privacy/`} className="text-xs text-white/60 hover:text-white">
+              {t.privacy.title}
+            </Link>
+            <Link href={`${prefix}/terms/`} className="text-xs text-white/60 hover:text-white">
+              {t.terms.title}
+            </Link>
+          </nav>
+        </div>
       </div>
     </footer>
   );
