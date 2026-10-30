@@ -47,7 +47,7 @@ export function ProductCard({ summary, deal, badge, category, compact, loading =
         </span>
         {badge && <span className="absolute bottom-2.5 left-2.5 z-10 max-w-[calc(100%-1.25rem)] overflow-hidden">{badge}</span>}
         {photo ? (
-          <img src={photo} alt={`${product.brand} ${product.name}`} loading={loading} referrerPolicy="no-referrer" className="size-full object-contain transition-transform duration-300 group-hover:scale-[1.04]" />
+          <img src={photo} alt={`${product.brand} ${product.name}`} loading={loading} decoding="async" referrerPolicy="no-referrer" className="size-full object-contain transition-transform duration-300 group-hover:scale-[1.04]" />
         ) : (
           <ProductIcon product={product} size="lg" plain />
         )}

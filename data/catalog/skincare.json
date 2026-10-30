@@ -115,6 +115,16 @@
    "name": "Her Happy Skin",
    "website": "https://herhappyskin.com",
    "note": "Skincare shop on a custom Next.js storefront; pages load prices client-side from the shop's own her-api JSON, which the worker reads (hhsVariants)."
+  },
+  {
+   "name": "Aureva",
+   "website": "https://aurevashopbd.com",
+   "note": "Mirpur-based imported K-beauty and dermo-cosmetics shop; Next.js pages keep price in __NEXT_DATA__ (sale_price) with the struck-through list price (max_price)."
+  },
+  {
+   "name": "Korean Skincare BD",
+   "website": "https://koreanskincarebd.com",
+   "note": "Korean skincare import shop; WooCommerce product pages carry a Product JSON-LD Offer with current price, availability and a struck-through regular price."
   }
  ],
  "products": [
@@ -184,6 +194,26 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "150ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/simple-refreshing-facial-wash-gel-150ml",
+     "price": 649,
+     "oldPrice": 850,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "150ml",
+     "site": "Korean Skincare BD",
+     "url": "https://koreanskincarebd.com/product/simple-kind-to-skin-refreshing-facial-gel-wash-150ml/",
+     "price": 650,
+     "oldPrice": 950,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -340,6 +370,16 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "56ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/cerave-moisturizing-cream-for-normal-to-dry-skin-56ml",
+     "price": 1399,
+     "oldPrice": 1750,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -398,6 +438,26 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "100ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/cosrx-advanced-snail-96-mucin-power-essence-100ml",
+     "price": 1599,
+     "oldPrice": 1890,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "100ml",
+     "site": "Korean Skincare BD",
+     "url": "https://koreanskincarebd.com/product/cosrx-advanced-snail-96-mucin-power-essence-100ml/",
+     "price": 1550,
+     "oldPrice": 2350,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -457,6 +517,26 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "50ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/beauty-of-joseon-relief-sun-rice-probiotics-spf50-50ml",
+     "price": 1510,
+     "oldPrice": 1750,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "50ml",
+     "site": "Korean Skincare BD",
+     "url": "https://koreanskincarebd.com/product/beauty-of-joseon-sunscreen-rice-probiotics-spf-50-pa-50ml/",
+     "price": 1650,
+     "oldPrice": 2400,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -887,6 +967,16 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "30ml",
+     "site": "Korean Skincare BD",
+     "url": "https://koreanskincarebd.com/product/the-ordinary-niacinamide/",
+     "price": 1050,
+     "oldPrice": 1800,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -986,6 +1076,16 @@
      "inStock": false,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "50ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/neutrogena-hydro-boost-water-gel-cream-50ml",
+     "price": 1459,
+     "oldPrice": 1750,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -1266,6 +1366,26 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "100g",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/cosrx-advanced-snail-92-all-in-one-cream-100gm",
+     "price": 1499,
+     "oldPrice": 1600,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "100g",
+     "site": "Korean Skincare BD",
+     "url": "https://koreanskincarebd.com/product/cosrx-advanced-snail-92-all-in-one-cream-100g/",
+     "price": 1800,
+     "oldPrice": 2360,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -1443,6 +1563,26 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "150ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/cosrx-low-ph-good-morning-gel-cleanser-150ml",
+     "price": 949,
+     "oldPrice": 1350,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "150ml",
+     "site": "Korean Skincare BD",
+     "url": "https://koreanskincarebd.com/product/cosrx-low-ph-good-morning-gel-150ml/",
+     "price": 1050,
+     "oldPrice": 1500,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -1513,6 +1653,26 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "150ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/cosrx-salicylic-acid-daily-gentle-cleanser-150ml",
+     "price": 1149,
+     "oldPrice": 1500,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "150ml",
+     "site": "Korean Skincare BD",
+     "url": "https://koreanskincarebd.com/product/cosrx-salicylic-acid-daily-gentle-cleanser-150ml/",
+     "price": 1090,
+     "oldPrice": 1450,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -1562,6 +1722,26 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "24pcs",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/cosrx-acne-pimple-master-patch-24-patch",
+     "price": 329,
+     "oldPrice": 555,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "24pcs",
+     "site": "Korean Skincare BD",
+     "url": "https://koreanskincarebd.com/product/cosrx-acne-pimple-master-patch/",
+     "price": 320,
+     "oldPrice": 550,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -3549,6 +3729,26 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "50ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml",
+     "price": 1249,
+     "oldPrice": 1500,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "50ml",
+     "site": "Korean Skincare BD",
+     "url": "https://koreanskincarebd.com/product/cosrx-aloe-soothing-sun-cream-spf50-pa-50ml/",
+     "price": 1250,
+     "oldPrice": 1650,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -4027,6 +4227,16 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "50ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-spf50-pa-50ml",
+     "price": 1429,
+     "oldPrice": 1750,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -4205,6 +4415,36 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "10ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/beauty-of-joseon-revive-eye-serum-10ml",
+     "price": 435,
+     "oldPrice": 590,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "30ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30-ml",
+     "price": 1489,
+     "oldPrice": 1850,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "30ml",
+     "site": "Korean Skincare BD",
+     "url": "https://koreanskincarebd.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-30ml/",
+     "price": 1450,
+     "oldPrice": 1700,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -4338,6 +4578,16 @@
      "inStock": false,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "25ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/cosrx-advanced-snail-peptide-eye-cream-25ml",
+     "price": 1899,
+     "oldPrice": 2250,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   },
@@ -4482,6 +4732,16 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "30ml",
+     "site": "Korean Skincare BD",
+     "url": "https://koreanskincarebd.com/product/the-ordinary-caffeine-solution-5-egcg-serum-30ml/",
+     "price": 1250,
+     "oldPrice": 1900,
+     "inStock": true,
+     "condition": "official",
+     "checkedAt": "2026-10-30"
     }
    ]
   }

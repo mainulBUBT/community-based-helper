@@ -49,6 +49,10 @@ const WORDS: Record<string, string> = {
   neo: "নিও",
   active: "অ্যাকটিভ",
   fit: "ফিট",
+  duo: "ডুও",
+  dual: "ডুয়াল",
+  sim: "সিম",
+  physical: "ফিজিক্যাল",
   series: "সিরিজ",
 };
 

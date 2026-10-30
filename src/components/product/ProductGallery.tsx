@@ -151,6 +151,7 @@ export function ProductGallery({ product, start = 0 }: { product: Product; start
                   alt={i ? `${alt} ${num(i + 1)}` : alt}
                   draggable={false}
                   referrerPolicy="no-referrer"
+                  decoding="async"
                   loading={i === active ? "eager" : "lazy"}
                   fetchPriority={i === start ? "high" : "auto"}
                   style={i === active && lens ? { transform: `scale(${ZOOM})`, transformOrigin: `${lens.x}% ${lens.y}%` } : undefined}

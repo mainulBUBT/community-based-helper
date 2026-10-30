@@ -274,6 +274,20 @@ export function chardikeVariants(html: string): ShopVariant[] {
   return variant([], sale && full && sale < full ? sale : full, full, typeof core.stock === "number" ? core.stock > 0 : null);
 }
 
+// Aureva (Next.js): দাম __NEXT_DATA__ এর props.pageProps.product এ — sale_price বেচার দাম,
+// price/max_price কাটা দাম; নামেই সাইজ লেখা ("… Essence 100ml", patch হলে "24 patch")
+export function aurevaVariants(html: string): ShopVariant[] {
+  const data = parse(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/.exec(html)?.[1] ?? "");
+  const p = isObject(data) && isObject(data.props) && isObject(data.props.pageProps) ? data.props.pageProps.product : null;
+  if (!isObject(p)) return [];
+  const name = String(p.name ?? "");
+  const amount = toTaka(p.sale_price) ?? toTaka(p.price);
+  const full = toTaka(p.price);
+  const size = /(\d+(?:\.\d+)?\s*(?:ml|g|oz))\b/i.exec(name)?.[1] ?? /(\d+)\s*patch/i.exec(name)?.[1]?.concat("pcs");
+  return variant(size ? [["size", size.replace(/\s+/g, "").toLowerCase()]] : [], amount, full,
+    typeof p.in_stock === "number" ? p.in_stock > 0 : null);
+}
+
 // PerfectoBD (Next.js RSC): পাতার পণ্যটা slug দিয়ে চেনা, পাশের পণ্যের দাম নয়
 export function perfectoVariants(html: string, url: string): ShopVariant[] {
   const slug = new URL(url).pathname.split("/").filter(Boolean).pop();

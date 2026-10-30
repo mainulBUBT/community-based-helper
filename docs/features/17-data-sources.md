@@ -24,6 +24,8 @@
 | Lira Import | product sitemap | `wooVariants` (এক দাম) | ✅ |
 | eFamas | `product-sitemap.xml` (`/shop/`) | `wooVariants` | ✅ লোকাল; Actions probe বাকি |
 | Her Happy Skin | নিজের JSON API (`her-api`) | ওই API-ই (`hhsVariants`) | ✅ |
+| Aureva | sitemap (`/products/preview/`, sitemap index ধরে) | `aurevaVariants`: `__NEXT_DATA__` এর `pageProps.product` — `sale_price` বেচা, `price`/`max_price` কাটা, `in_stock` | ✅ |
+| Korean Skincare BD | `sitemap_index.xml` → `product-sitemap.xml` | পাতার Product JSON-LD `Offer` (`price` বেচা, `del` এ কাটা দাম, availability) — parser লাগে না | ✅ |
 | Choice Legacy | product sitemap খোলা, কিন্তু পণ্যের পাতায় ~১ অনুরোধ/মিনিট রেট লিমিট | | ⛔ নিয়মে চলে না |
 | MK Electronics | `sitemap-products.xml` | JSON-LD | ✅ |
 | Othoba | ক্যাটাগরি পাতা (`OTHOBA_CATEGORIES`, `?pagenumber=`), কারণ sitemap ফাঁকা | `othobaVariants`: JSON-LD এর `price` মূল দাম, `sale_price` ছাড়ের দাম | ✅ |
@@ -476,6 +478,24 @@ Samsung-এর S/Z সিরিজ, Pixel আর বড় ব্র্যান
 - **তবুও বাদ (২ দোকানও নেই):** iPhone 13 mini (একটাই আসল দাম), Lenovo Idea Tab Pro (শুধু Kry; Dazzle-এরটা পেন-বান্ডেল), Lenovo Tab Plus (কোনো দোকানে নেই), MatePad SE 11 (শুধু Dazzle; Gadget & Gear-এরটা 10.4"), Realme Pad 2 (কোথাও নেই; Pad 2 Lite শুধু Kry)। ওয়েবে এদের দাম শুধু GSMArena BD / Mobile57 / MobileDokan-এর মতো তথ্য-সাইটে, দোকানে নয়। Ryans (Cloudflare challenge) আর TechLand (403) দেখা যায়নি।
 - **`sameProduct` ঠিক করা:** `SIZE_TAIL` "5g"-কে ৫ গ্রাম ধরত, তাই "Galaxy A06" আর "Galaxy A06 5G" (বা "Redmi 15" আর "Redmi 15 5G") একই পণ্য বলে build সতর্ক করত, আর অ্যাডমিনে এমন নামের পণ্য যোগ আটকাত। এখন `2g`–`5g` সাইজ নয়।
 - **খেয়াল:** Arafa Telecom এখন সব পাতায় bot challenge ("One moment, please") দেয়, পুরনো ৬৩টা দাম সিঙ্ক হচ্ছে না; Sell Tech-এর ২৬টাও মিলছে না। এগুলো এই ব্যাচের নয়।
+
+### নতুন দোকান: Aureva (৩০ অক্টোবর ২০২৬)
+
+স্কিনকেয়ারে **Aureva** (aurevashopbd.com, মিরপুর) যোগ হলো — ১৩ পণ্যে ১৪টা নতুন দাম, `worker:check`-এ ১৪টাই ঠিক (০ মেলেনি)। robots.txt-এ `/products/` খোলা (শুধু checkout/profile/admin বন্ধ), Terms পাতা আছে।
+
+- Next.js — JSON-LD নেই; দাম `__NEXT_DATA__` এর `props.pageProps.product` এ (`sale_price` বেচা, `price`/`max_price` কাটা, `in_stock`, `status: publish`)। parser: `aurevaVariants`; sitemap-এর product পাতা `/products/preview/<slug>`।
+- Neutrogena Hydro Boost একই পণ্য ধরা হয়েছে: ওদের নাম "Water Gel Cream 50ml", Shajgoj-এর লিংকও `neutrogena-hydro-boost-water-gel-cream`, barcode EAN 3574661309736।
+- একই পণ্য কিন্তু সাইজ মেলেনি বলে বাদ: Anua Heartleaf 77 Toner (ওদের 40ml, আমাদের 250ml), CeraVe Hydrating Cleanser (ওদের 87ml, আমাদের 236ml), Dot & Key Watermelon Sunscreen (ওদের 50ml, আমাদের 80g) — নতুন ভার্সনে একা দোকান হলে min-2 নিয়মে পড়ে না।
+- ওদের বাকি ~৮৭ পণ্য (Purito লাইন, The Ordinary-র ৫টা, The Face Shop, Simple-এর আরও) নতুন পণ্য হতো — ২+ দোকান শর্তে আর কেউ না মিললে এখনই নেওয়া হয়নি।
+
+### নতুন দোকানের খোঁজ (৩০ অক্টোবর ২০২৬)
+
+স্কিনকেয়ারে নতুন বিশ্বস্ত দোকানের জন্য ~৫০টা ডোমেইন probe করা হয়েছে (সার্চ ইঞ্জিন সব লিমিটে ছিল, তাই সরাসরি)। ফলাফল:
+
+- **Korean Skincare BD** (koreanskincarebd.com) — ✅ **যোগ হয়েছে (৩০ অক্টোবর, মালিকের অনুমতিতে)**: WooCommerce + Product JSON-LD (parser লাগে না), `product-sitemap.xml`, robots খোলা, ডোমেইন ২ বছরের। ১১ পণ্যে ১১ দাম (Simple Refreshing Wash; COSRX Snail 96 100ml, Snail 92 100g, Low pH 150ml, Salicylic 150ml, Pimple Patch, Aloe Sun Cream; BoJ Relief Sun Rice+Probiotics 50ml আর Revive Eye 30ml; The Ordinary Niacinamide আর Caffeine 30ml), `worker:check` পাস (১১/১১)। দোষ: about/contact/terms পাতার লেখা খালি placeholder (Chardike/Korean Mart-এর মতোই ঘোষণা করে রাখা); Pimple Master Patch পাতায় ২৪-প্যাচ সংখ্যা লেখা নেই — ওরা এক ধরনেরই বেচে, ২৪-pcs ভার্সনে রাখা হয়েছে।
+- **First Model Pharmacy / lazzpharma.com** — বড় ফার্মেসি (১৬,৬১১ পণ্য, sitemap টাটকা), robots-এ সাধারণ crawler খোলা (শুধু AI bot — ClaudeBot/CCBot — বন্ধ)। কিন্তু পণ্যের পাতা JS-এ আঁকা (SPA, "enable JavaScript") — worker পড়তে পারবে না; আর স্কিনকেয়ারে আমাদের মিল মাত্র ১-২ (Simple Refreshing Wash)। ডায়াপার/বেবি ক্যাটাগরির জন্য পরে তাদের API/feed খোঁজা যাবে।
+- **K-Skin BD** (kskinbd.com) — আসল K-beauty আমদানিকারক, দাম পাতায় সার্ভার-রেন্ডারড (৳ regex), কিন্তু sitemap নেই (৪০৪), JSON-LD Product নেই; আমাদের হুবহু মিল ১-২টা (The Ordinary Niacinamide — Canada version, region নোট লাগবে)। পরে ক্যাটাগরি-ঘুরে লিস্টিং বানালে ভাবা যাবে।
+- **বাদ:** glowcarebd.com (নিজেদের ব্র্যান্ড — Bio-Xin নিয়ম), shopnik.com.bd (ব্লগ, পণ্য নেই), priyoshop.com (B2B-তে চলে গেছে), kbeautybangladesh.com (marketplace, sitemap নেই), glowlabbd.com (Shopify products API 401), mediplusbd.com (Django, sitemap নেই), koreancosmeticsbd.com আর kbeautymart.com (parked "lander"), glamate.com (খালি JS shell), kglowbd.com (406 bot block), glamourbd.com (খালি), bagdoom.com (সাধারণ, মিল কম), shajgoj.net (নকল/clone — এড়ানো)।
 
 ## যা নেওয়া হবে না, আর কেন
 

@@ -8,6 +8,8 @@
     "start": "npx serve out",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run lint",
+    "check:all": "npm run catalog:build && npm run typecheck && npm run lint",
     "db:new": "supabase migration new",
     "db:seed": "sh scripts/seed.sh",
     "db:push": "supabase db push",

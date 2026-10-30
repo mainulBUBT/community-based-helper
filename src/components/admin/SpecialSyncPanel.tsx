@@ -248,7 +248,19 @@ export function SpecialSyncPanel({ onJobTriggered }: { onJobTriggered?: () => vo
               >
                 <div className="flex items-center justify-between">
                   <span className="font-semibold text-ink group-hover:text-brand text-sm">{store.name}</span>
-                  <span className="size-2 rounded-full bg-ok" title="সক্রিয়" />
+                  <div className="flex items-center gap-1.5">
+                    <a
+                      href={`https://${store.domain}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-dim hover:text-brand transition"
+                      title="ওয়েবসাইট দেখুন"
+                    >
+                      <ExternalLink size={13} />
+                    </a>
+                    <span className="size-2 rounded-full bg-ok" title="সক্রিয়" />
+                  </div>
                 </div>
                 <span className="text-xs text-dim">{store.domain}</span>
                 <span className="text-[11px] text-dim/70 font-mono mt-0.5">{store.platform}</span>

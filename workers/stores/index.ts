@@ -3,7 +3,7 @@ import { decode, stripTags } from "../lib/html";
 import { getJson, getText } from "../lib/http";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import { appleGadgetsVariants, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, shopifyProduct, startechVariants, sumashVariants, wooVariants } from "./parsers";
+import { appleGadgetsVariants, aurevaVariants, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, shopifyProduct, startechVariants, sumashVariants, wooVariants } from "./parsers";
 import { isReplica } from "../../src/utils/categories";
 import type { Condition, Listing, Store } from "./types";
 
@@ -613,6 +613,27 @@ export const stores: Store[] = [
     origin: "https://koreanmartbd.com",
     sample: "https://koreanmartbd.com/product/aromatica-tea-tree-pore-purifying-gel-cream-5-niacinamide-01-pha-100ml",
     sitemap: "https://koreanmartbd.com/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+  }),
+  // Aureva: স্কিনকেয়ার (মিরপুর); Next.js — JSON-LD নেই, দাম __NEXT_DATA__ এর props.pageProps.product এ
+  sitemapStore({
+    id: "aureva",
+    name: "Aureva",
+    origin: "https://aurevashopbd.com",
+    sample: "https://aurevashopbd.com/products/preview/cosrx-advanced-snail-96-mucin-power-essence-100ml",
+    sitemap: "https://aurevashopbd.com/sitemap.xml",
+    path: "/products/preview/",
+    condition: "official",
+    variants: aurevaVariants,
+  }),
+  // Korean Skincare BD: WooCommerce; দাম পাতার Product JSON-LD Offer এ (regular দাম del এ), wooVariants লাগে না
+  sitemapStore({
+    id: "koreanskincarebd",
+    name: "Korean Skincare BD",
+    origin: "https://koreanskincarebd.com",
+    sample: "https://koreanskincarebd.com/product/cosrx-advanced-snail-96-mucin-power-essence-100ml/",
+    sitemap: "https://koreanskincarebd.com/sitemap_index.xml",
     path: "/product/",
     condition: "official",
   }),

@@ -607,6 +607,42 @@ interface DBOfferRow {
   sellers: { name: string; website: string } | null;
 }
 
+const SPECIAL_SELLER_SEEDS = [
+  { name: "Ryans Computers", website: "https://www.ryans.com/", hosts: ["ryans.com", "ryanscomputers.com"] },
+  { name: "TechLand BD", website: "https://www.techlandbd.com/", hosts: ["techlandbd.com"] },
+  { name: "Pickaboo", website: "https://www.pickaboo.com/", hosts: ["pickaboo.com"] },
+  { name: "GadStyle", website: "https://www.gadstyle.com/", hosts: ["gadstyle.com"] },
+  { name: "Rokomari", website: "https://www.rokomari.com/", hosts: ["rokomari.com"] },
+  { name: "The Mall BD", website: "https://themallbd.com/", hosts: ["themallbd.com"] },
+  { name: "Naturo BD", website: "https://naturobd.com/", hosts: ["naturobd.com"] },
+];
+
+export async function ensureSpecialSellers(sb: SupabaseClient) {
+  const { data: existingSellers, error } = await sb.from("sellers").select("id, name, website");
+  if (error) {
+    console.warn("Could not check existing sellers:", error.message);
+    return;
+  }
+
+  for (const store of SPECIAL_SELLER_SEEDS) {
+    const exists = existingSellers?.some((s: { website: string }) =>
+      s.website && store.hosts.some((h) => s.website.toLowerCase().includes(h))
+    );
+    if (!exists) {
+      const { error: insErr } = await sb.from("sellers").insert({
+        name: store.name,
+        kind: "website",
+        website: store.website,
+        verified: true,
+        active: true,
+      });
+      if (!insErr) {
+        console.log(`➕ Auto-added missing special seller to database: ${store.name}`);
+      }
+    }
+  }
+}
+
 export async function syncSpecialOffers(storeFilter?: string) {
   const sb = getSupabase();
   if (!sb) {
@@ -618,19 +654,29 @@ export async function syncSpecialOffers(storeFilter?: string) {
   console.log(" ⚡ Running Intelligent Special Stores Sync (Database Update Mode)");
   console.log("===============================================================================");
 
-  // 1. Fetch offers
-  const { data: offers, error } = await sb
-    .from("offers")
-    .select(`
-      id, variant_id, seller_id, url, price, condition,
-      variants(label, product_id, products(name, images)),
-      sellers(name, website)
-    `)
-    .not("url", "is", null);
+  // 0. Ensure sellers exist in database
+  await ensureSpecialSellers(sb);
 
-  if (error || !offers) {
-    console.error("Failed to query offers from database:", error);
-    return;
+  // 1. Fetch offers — PostgREST একবারে ১০০০ সারির বেশি দেয় না, তাই পাতা পাতা নিতে হয়
+  const offers: DBOfferRow[] = [];
+  for (let from = 0; ; from += 1000) {
+    const { data, error } = await sb
+      .from("offers")
+      .select(`
+        id, variant_id, seller_id, url, price, condition,
+        variants(label, product_id, products(name, images)),
+        sellers(name, website)
+      `)
+      .not("url", "is", null)
+      .order("id")
+      .range(from, from + 999);
+    if (error) {
+      console.error("Failed to query offers from database:", error);
+      return;
+    }
+    if (!data || data.length === 0) break;
+    offers.push(...(data as unknown as DBOfferRow[]));
+    if (data.length < 1000) break;
   }
 
   // Filter offers matching our special stores or the specified filter
