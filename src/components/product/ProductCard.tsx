@@ -2,7 +2,7 @@
 
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { SaveButton } from "@/components/product/SaveButton";
 import { useI18n } from "@/hooks/useI18n";
 import type { ProductSummary } from "@/types/catalog";
@@ -22,7 +22,10 @@ interface ProductCardProps {
 export function ProductCard({ summary, deal, badge, category, compact, loading = "lazy" }: ProductCardProps) {
   const { t, num, prefix, lang } = useI18n();
   const { product, lowest, condition, compareAt, inStock, sellerCount } = summary;
-  const photo = product.images?.[0];
+  const [imgIndex, setImgIndex] = useState(0);
+  const [failed, setFailed] = useState(false);
+  const images = product.images ?? [];
+  const photo = !failed && images[imgIndex];
   const off = lowest && compareAt ? Math.round(((compareAt - lowest) / compareAt) * 100) : 0;
 
   return (
@@ -47,7 +50,21 @@ export function ProductCard({ summary, deal, badge, category, compact, loading =
         </span>
         {badge && <span className="absolute bottom-2.5 left-2.5 z-10 max-w-[calc(100%-1.25rem)] overflow-hidden">{badge}</span>}
         {photo ? (
-          <img src={photo} alt={`${product.brand} ${product.name}`} loading={loading} decoding="async" referrerPolicy="no-referrer" className="size-full object-contain transition-transform duration-300 group-hover:scale-[1.04]" />
+          <img
+            src={photo}
+            alt={`${product.brand} ${product.name}`}
+            loading={loading}
+            decoding="async"
+            referrerPolicy="no-referrer"
+            onError={() => {
+              if (imgIndex + 1 < images.length) {
+                setImgIndex((prev) => prev + 1);
+              } else {
+                setFailed(true);
+              }
+            }}
+            className="size-full object-contain transition-transform duration-300 group-hover:scale-[1.04]"
+          />
         ) : (
           <ProductIcon product={product} size="lg" plain />
         )}

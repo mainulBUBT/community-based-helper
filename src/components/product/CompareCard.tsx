@@ -2,7 +2,7 @@
 
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { useSyncExternalStore } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { SellerLogo } from "@/components/seller/SellerLogo";
 import { useI18n } from "@/hooks/useI18n";
 import type { ComparePick } from "@/services/catalog-core";
@@ -17,10 +17,11 @@ export function CompareCard({ picks }: { picks: ComparePick[] }) {
   const { t, num, lang, prefix } = useI18n();
   // build এর HTML এ প্রথমটা, ব্রাউজারে hydration এর পরে এলোমেলো একটা
   const roll = useSyncExternalStore(still, () => seed, () => 0);
+  const [failed, setFailed] = useState(false);
   const pick = picks[Math.floor(roll * picks.length)];
   if (!pick) return null;
   const { product, compareAt } = pick.summary;
-  const photo = product.images?.[0];
+  const photo = !failed && product.images?.[0];
   const lowestPrice = Math.min(...pick.offers.map((o) => o.price));
   const highestPrice = Math.max(...pick.offers.map((o) => o.price));
   const saving = compareAt ? compareAt - lowestPrice : 0;
@@ -44,7 +45,14 @@ export function CompareCard({ picks }: { picks: ComparePick[] }) {
         <div className="flex size-22 shrink-0 items-center justify-center rounded-md border border-line-soft bg-white">
           {photo ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={photo} alt={`${product.brand} ${product.name}`} loading="lazy" referrerPolicy="no-referrer" className="size-full object-contain p-2" />
+            <img
+              src={photo}
+              alt={`${product.brand} ${product.name}`}
+              loading="lazy"
+              referrerPolicy="no-referrer"
+              onError={() => setFailed(true)}
+              className="size-full object-contain p-2"
+            />
           ) : (
             <ProductIcon product={product} size="fill" plain />
           )}
