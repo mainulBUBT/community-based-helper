@@ -35,6 +35,24 @@
    "name": "SneakersBD Official",
    "website": "https://www.sneakersbdofficial.com",
    "note": "কাস্টম (Laravel) সাইট, robots খোলা; টাইটেলে \"(OEM)\"/\"1:1\" গ্রেড লেখা; প্রোডাক্ট পাতায় product:price:amount মেটা থেকে দাম পড়া যায়।"
+  },
+  {
+   "name": "Hype Cave",
+   "website": "https://hypecave.store",
+   "verified": false,
+   "note": "Seller registry entry only; product prices and exact model matches still need verification."
+  },
+  {
+   "name": "Prime Nation",
+   "website": "https://primenationbd.com",
+   "verified": false,
+   "note": "Seller registry entry only; product prices and exact model matches still need verification."
+  },
+  {
+   "name": "Hashh Sneaker",
+   "website": "https://hashh.store",
+   "verified": true,
+   "note": "WooCommerce store with a product sitemap and readable variation prices; product pages and variation stock were verified by the store scanner."
   }
  ],
  "products": [

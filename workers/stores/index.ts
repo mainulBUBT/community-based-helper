@@ -6,6 +6,7 @@ import { sitemapUrls } from "../lib/sitemap";
 import { appleGadgetsVariants, aurevaVariants, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, shopifyProduct, startechVariants, sumashVariants, wooVariants } from "./parsers";
 import { isReplica } from "../../src/utils/categories";
 import type { Condition, Listing, Store } from "./types";
+export type { Condition, Listing, Store };
 
 const site = (url: string) => new URL(url).host.replace(/^www\./, "");
 
@@ -785,6 +786,16 @@ export const stores: Store[] = [
     origin: "https://zapatos.com.bd",
     sample: "https://zapatos.com.bd/product/hyper-stride/",
     sitemap: "https://zapatos.com.bd/wp-sitemap.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "hashh",
+    name: "Hashh Sneaker",
+    origin: "https://hashh.store",
+    sample: "https://hashh.store/product/adidas-campus-ash-white/",
+    sitemap: "https://hashh.store/sitemap_index.xml",
     path: "/product/",
     condition: "official",
     variants: wooVariants,

@@ -10678,6 +10678,679 @@
     }
    ],
    "popular": true
+  },
+  {
+   "brand": "ZTE",
+   "name": "nubia A36",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": 14499
+    }
+   ],
+   "colors": [
+    "Nebula Black",
+    "Green"
+   ],
+   "images": [
+    "https://www.applegadgetsbd.com/product/ZTE-nubia-A36---Officialasa-2427.png",
+    "https://www.applegadgetsbd.com/product/ZTE-nubia-A36---Official-1899.png",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/zte/blade-a36/nubia-a36-green-official-02-500x500.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/zte-nubia-a36",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/zte-nubia-a36",
+     "price": 13300,
+     "oldPrice": 14499,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/zte-nubia-a36-official",
+     "price": 12800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "brand": "Xiaomi",
+   "name": "Redmi A7 Pro",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": 17999
+    },
+    {
+     "label": "4GB / 128GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 20999
+    }
+   ],
+   "colors": [
+    "Black",
+    "Blue"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/xiaomi/redmi-a7-pro/redmi-a7-pro-black-official-02-500x500.webp",
+    "https://assets.gadgetandgear.com/upload/media/xiaomi-redmi/redmi-a7-pro-black.jpeg",
+    "https://assets.gadgetandgear.com/upload/media/xiaomi-redmi/redmi-a7-pro-blue.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/redmi-a7-pro",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/redmi-a7-pro",
+     "price": 17999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/redmi-a7-pro",
+     "price": 17999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/redmi-a7-pro-4gb-128gb",
+     "price": 20999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/redmi-a7-pro",
+     "price": 17999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "brand": "Realme",
+   "name": "Note 80",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": 17999
+    }
+   ],
+   "colors": [
+    "Storm Black",
+    "Blue"
+   ],
+   "images": [
+    "https://www.applegadgetsbd.com/product/realme-note-80-official-storm-black-8975.png",
+    "https://www.applegadgetsbd.com/product/realme-note-80-official-glacier-blue-2400.png",
+    "https://assets.gadgetandgear.com/upload/media/realme/realme-note-80-blue.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/realme-note-80",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/realme-note-80-official",
+     "price": 17999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/realme-note-80",
+     "price": 17999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/realme-note-80",
+     "price": 17999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "brand": "OPPO",
+   "name": "A6x",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": 19999
+    }
+   ],
+   "colors": [
+    "Plum Purple",
+    "Ice Blue"
+   ],
+   "images": [
+    "https://www.applegadgetsbd.com/product/Oppo-A6x---Officiall-2215.png",
+    "https://www.applegadgetsbd.com/product/Oppo-A6x---Official-5671.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/oppo-a6x",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oppo-a6x-official",
+     "price": 18799,
+     "oldPrice": 19999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/oppo-a6x",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oppo-a6x-official",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "brand": "OPPO",
+   "name": "A6c",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": 19999
+    }
+   ],
+   "colors": [
+    "Stone Brown",
+    "White"
+   ],
+   "images": [
+    "https://www.applegadgetsbd.com/product/OPPO-A6c---Official-3649.png",
+    "https://www.applegadgetsbd.com/product/OPPO-A6c---Official1-1196.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/oppo-a6c",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oppo-a6c-official",
+     "price": 19799,
+     "oldPrice": 19999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/oppo-a6c",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oppo-a6c-official",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "brand": "Vivo",
+   "name": "Y05",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": 19499
+    }
+   ],
+   "colors": [
+    "Black",
+    "Blue"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/vivo/y05/y05-500x500.webp",
+    "https://assets.gadgetandgear.com/upload/media/Vivo Y05 (4/64GB)/vivo-y05-black.jpeg",
+    "https://assets.gadgetandgear.com/upload/media/Vivo Y05 (4/128GB)/vivo-y05-4gb-128gb-blue.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/vivo-y05",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/vivo-y05",
+     "price": 19100,
+     "oldPrice": 19499,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/vivo-y05",
+     "price": 19499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-y05-official",
+     "price": 19499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "brand": "Realme",
+   "name": "C100i",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": 17999
+    }
+   ],
+   "colors": [
+    "Dawn Purple",
+    "Gray"
+   ],
+   "images": [
+    "https://www.applegadgetsbd.com/product/realme-C100i---Official-6795.png",
+    "https://www.startech.com.bd/image/cache/catalog/mobile/realme/c100i/realme-c100i-dawn-purple-official-01-500x500.webp",
+    "https://assets.gadgetandgear.com/upload/media/realme/realme-c100i-purple.jpeg",
+    "https://assets.gadgetandgear.com/upload/media/realme/realme-c100i-gray.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/realme-c100i",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/realme-c100i-official",
+     "price": 17799,
+     "oldPrice": 17999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/realme-c100i",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/realme-c100i",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/realme-c100i-official",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "brand": "Vivo",
+   "name": "Y05e",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "4GB / 64GB",
+     "attributes": {
+      "ram": "4GB",
+      "storage": "64GB"
+     },
+     "officialPrice": 17499
+    }
+   ],
+   "colors": [
+    "Black Teal"
+   ],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/media/vivo/vivo-y05e-black-teal-1.jpeg"
+   ],
+   "specsSource": "https://www.startech.com.bd/vivo-y05e",
+   "offers": [
+    {
+     "variant": "4GB / 64GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/vivo-y05e",
+     "price": 17499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/vivo-y05e-official",
+     "price": 17499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "brand": "iQOO",
+   "name": "Z10x",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Black",
+    "Titanium"
+   ],
+   "images": [
+    "https://www.applegadgetsbd.com/product/iqoo-z10x-black-6942.png"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/iqoo-z10x",
+   "offers": [
+    {
+     "variant": "8GB / 128GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iqoo-z10x-5g",
+     "price": 27299,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iqoo-z10x",
+     "price": 27999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "brand": "iQOO",
+   "name": "Neo 10",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Orange",
+    "Astral Black"
+   ],
+   "images": [
+    "https://www.applegadgetsbd.com/product/iQOO-Neo-10-5G-Orange-4050.jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/iqoo-neo-10",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iqoo-neo-10-5g",
+     "price": 53000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iqoo-neo-10",
+     "price": 63999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "brand": "iQOO",
+   "name": "Neo 11",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Black",
+    "Blue"
+   ],
+   "images": [
+    "https://www.applegadgetsbd.com/product/iQOO-Neo-11-5G---CNa-8295.png"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/iqoo-neo11",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iqoo-neo-11",
+     "price": 62500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iqoo-neo-11",
+     "price": 63499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "brand": "iQOO",
+   "name": "15",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "White",
+    "Alpha"
+   ],
+   "images": [
+    "https://www.applegadgetsbd.com/product/iQOO-15---Globalafg-4508.png",
+    "https://www.applegadgetsbd.com/product/iQOO-15---Global-Price-in-Bangladesh-2440.png"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/iqoo-15",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/iqoo-15",
+     "price": 99999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/iqoo-15",
+     "price": 105999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-10-31"
+    }
+   ]
   }
  ]
 }

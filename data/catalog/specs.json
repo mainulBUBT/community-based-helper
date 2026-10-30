@@ -71767,5 +71767,7068 @@
     }
    ]
   }
+ ],
+ "https://www.startech.com.bd/asus-tuf-gaming-a15-fa506ncg-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "AMD"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Ryzen 7 7445HS"
+    },
+    {
+     "label": "Generation",
+     "value": "7000 Series"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Up to 4.7GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "6-Cores"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "12-Threads"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "22MB"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "15.6-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "Value IPS-level"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "FHD (1920 x 1080)"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "N/A"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "144Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "16:9, Anti-glare display, sRGB:62.5%, Adobe:47.34%, Adaptive-Sync, Optimus, Anti-glare display"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Removable",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600Mhz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "up to 64GB"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 NVMe PCIe 4.0 SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Extra M.2 Slot",
+     "value": "Yes"
+    },
+    {
+     "label": "Supported SSD Type",
+     "value": "2x M.2 slots (support either SATA or NVMe) M.2 SSD Support List: M.2 512GB G4x4 PCIe SSD M.2 1TB G4x4 PCIe SSD"
+    },
+    {
+     "label": "Storage Upgrade",
+     "value": "M.2 NVMe PCIe 4.0 SSD"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "NVIDIA GeForce RTX 3050 Laptop GPU, Up to 1675MHz at 60W (75W with Dynamic Boost)"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "4GB"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "GDDR6"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Chiclet Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "1-Zone RGB"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "720P HD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "2-speaker system"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in array microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "AI noise-canceling technology DTS Audio Processing Hi-Res certification (for headphones)"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1 TMDS"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "3x USB 3.2 Gen 1 Type-A (data speed up to 5Gbps)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB 3.2 Gen 2 Type-C with support for DisplayPort (data speed up to 10Gbps)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1 x 3.5 mm combo audio jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x RJ45 10/100/1000 Mbps LAN port"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6(802.11ax) (Dual band) 2*2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3 Wireless Card"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Trusted Platform Module (Firmware TPM)"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "3S1P, 3-cell Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "48WHrs"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "ø6.0, 180W AC Adapter, Output: 20V DC, 9A, 180W, Input: 100~240V AC, 50/60Hz universal"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Graphite Black"
+    },
+    {
+     "label": "Dimensions",
+     "value": "35.9 x 25.6 x 2.28 ~ 2.45 cm (14.13\" x 10.08\" x 0.90\" ~ 0.96\")"
+    },
+    {
+     "label": "Weight",
+     "value": "2.30 Kg (5.07 lbs)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-tuf-gaming-a16-fa607nuq-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "AMD"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Ryzen 7 170"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "up to 4.75 GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "8 cores"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "16 Threads"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "20MB"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "16-Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "FHD+ (1920 x 1200, WUXGA)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "144Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "Surface texture of display: Anti-glare(AG) display Adaptive-Sync technology: G-Sync"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB (SO-DIMM)"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "4800"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2x SO-DIMM slots"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "64GB"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "PCIe 4.0 NVMe M.2 SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Supported SSD Type",
+     "value": "M.2 2TB G4X4 PCIe SSD M.2 1TB G4X4 PCIe SSD M.2 512GB G4X4 PCIe SSD"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "NVIDIA GeForce RTX 4050 Laptop GPU Graphic Wattage: 2195MHz at 90W (2145MHz Boost Clock+50MHz OC, 65W+25W Dynamic Boost) Discrete/Optimus: MUX Switch + NVIDIA Advanced Optimus"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "6GB"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "GDDR6"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Chiclet Keyboard 1-Zone RGB With Copilot key"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "720P HD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "2-speaker system"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in array microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "AI noise-canceling technology Dolby Atmos Hi-Res certification (for headphone) Support Microsoft Cortana near field/far field (Microsoft service suspended in spring of 2023.)"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1 FRL"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "2x USB 3.2 Gen 1 Type-A (data speed up to 5Gbps)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB 3.2 Gen 2 Type-C with support for DisplayPort / power delivery / G-SYNC (data speed up to 10Gbps)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x 3.5mm Combo Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x RJ45 LAN port"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6(802.11ax) (Dual band) 2*2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Security Locker Slot",
+     "value": "Kensington Security Slot"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Trusted Platform Module (Firmware TPM) BIOS Administrator Password and User Password Protection"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "4S1P, 4-cell Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "56WHrs"
+    },
+    {
+     "label": "Backup Time (Approx)",
+     "value": "Fast charging: Recharge from 0-50% in 30 minutes"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "ø6.0, 240W AC Adapter, Output: 20V DC, 12A, 240W, Input: 100~240C AC 50/60Hz universal"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Mecha Gray"
+    },
+    {
+     "label": "Dimensions",
+     "value": "35.4 x 25.1 x 2.24 ~ 2.67 cm (13.94\" x 9.88\" x 0.88\" ~ 1.05\")"
+    },
+    {
+     "label": "Weight",
+     "value": "2.20 Kg (4.85 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Top case-material: Aluminum LCD cover-material: Texture plastic Bottom case-material: Texture plastic"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-tuf-gaming-a16-fa608uh-ryzen-7-260-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Model",
+     "value": "AMD Ryzen 7 260"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Up to 5.1 GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "8 Cores"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "16T"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "24 MB"
+    },
+    {
+     "label": "NPU",
+     "value": "AMD XDNA NPU up to 16TOPS"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "16-Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "FHD+"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "165Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "LED Backlit Viewing Angle: 85/85/85/85 Aspect ratio: 16:10 Response Time (G2G): 3ms Glare: Anti-glare display 300nits Peak Brightness Contrast Ratio: 1000:1 NTSC %: 72.00% SRGB %: 100% Adobe %: 75.35% Adaptive-Sync technology: G-Sync"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB (On board)"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2x SO-DIMM slots"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "64GB"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 2280 PCIe 4.0x4"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Extra M.2 Slot",
+     "value": "2x M.2 PCIe"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "NVIDIA GeForce RTX 5050/AMD Radeon 780M Graphics 2142 MHz* at 55W (2092 MHz Boost Clock+50MHz OC, 100W + 15W Dynamic Boost) MUX Switch + NVIDIA Advanced Optimus"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "8GB/Shared"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "GDDR7"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Chiclet Keyboard With Copilot key Aura Sync 1-Zone RGB"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Precious Touchpad, NumberPad"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "1080P FHD IR Camera for Windows Hello"
+    },
+    {
+     "label": "Speaker",
+     "value": "2-speaker system"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in array microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "AI noise-canceling technology Dolby Atmos Hi-Res certification (for headphone) Support Microsoft Cortana near field/far field (Microsoft service suspended in spring of 2023.)"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1 FRL"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "1x USB 2.0 Type-A (data speed up to 480Mbps) 2x USB 3.2 Gen 2 Type-A (data speed up to 10Gbps)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x Type-C USB 4 with support for DisplayPort™ (data speed up to 40Gbps) 1x USB 3.2 Gen 2 Type-C with support for DisplayPort™ / power delivery / G-SYNC (data speed up to 10Gbps)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x 3.5mm Combo Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x RJ45 LAN port"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6E(802.11ax) (Triple band) 2*2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Security Chip",
+     "value": "BIOS Administrator Password and User Password Protection Pluton Security Processor Secured-core PC (Level 3)"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "4-cell Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "90WHrs, 4S1P"
+    },
+    {
+     "label": "Backup Time (Approx)",
+     "value": "Recharge from 0-50% in 30 minutes"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "Rectangle Conn, 240W AC Adapter, Output: 20V DC, 12A, 240W, Input: 100~240C AC 50/60Hz universal"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Jaeger Gray"
+    },
+    {
+     "label": "Dimensions",
+     "value": "35.4 x 26.9 x 1.79 ~ 2.57 cm (13.94\" x 10.59\" x 0.70\" ~ 1.01\")"
+    },
+    {
+     "label": "Weight",
+     "value": "2.20 Kg (4.85 lbs)"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "ENERGY STAR EPEAT Silver"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-rog-strix-g16-g614pr-ryzen-9-rtx-5070-ti-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "AMD"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Ryzen 9 8940HX"
+    },
+    {
+     "label": "Generation",
+     "value": "8000 Series"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "up to 5.3GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "16 cores"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "32 Threads"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "L1 Cache: 1024 KB L2 Cache: 16 MB L3 Cache: 64 MB"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "16-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "2.5K (2560 x 1600, WQXGA)"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "N/A"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "300Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "Aspect Ratio: 16:10 Surface texture of display: Anti-glare(AG) display Adaptive-Sync technology: G-Sync Pantone: Pantone Validated Nebula Display: ROG Nebula Display Support Dolby Vision HDR: Yes Thermal Feature: ROG intelligent cooling Brightness: 500nits Contrast: 1200:1 Color Gamut: DCI-P3 %: 100% Viewing Angle: 170"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "32GB (2 x 16GB)"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Removable",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5200MHz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2x SO-DIMM slots"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "Up to 64GB"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "PCIe 4.0 NVMe M.2 SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "1TB"
+    },
+    {
+     "label": "Extra M.2 Slot",
+     "value": "Yes"
+    },
+    {
+     "label": "Supported SSD Type",
+     "value": "2x PCIe 4.0 NVMe M.2 SSD"
+    },
+    {
+     "label": "Storage Upgrade",
+     "value": "512GB/ 1TB /2TB G4x4 PCIe SSD"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "NVIDIA GeForce RTX 5070 Ti Laptop GPU"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "12GB"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "GDDR7"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Chiclet Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "4-Zone RGB With Copilot key"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "1080P FHD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "2-speaker system with Smart Amplifier Technology"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in array microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Smart Amp Technology Hi-Res certification (for headphone) Dolby Atmos AI noise-canceling technology"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1 FRL"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "2x USB 3.2 Gen 2 Type-A (data speed up to 10Gbps)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x Type-C USB 4 with support for DisplayPort / G-SYNC (data speed up to 40Gbps) 1x Type-C USB 4 with support for DisplayPort / power delivery / G-SYNC (data speed up to 40Gbps)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x 3.5mm Combo Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x RJ45 LAN port"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6E(802.11ax) (Triple band) 2*2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3 Wireless Card (*Bluetooth version may change with OS version different.)"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Trusted Platform Module (Firmware TPM)"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "4-cell Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "90WHrs, 4S1P"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "ø6.0, 280W AC Adapter Input: 100~240C AC 50/60Hz universal Output: 20V DC, 14A, 280W"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Eclipse Gray"
+    },
+    {
+     "label": "Dimensions",
+     "value": "35.4 x 26.4 x 2.26 ~ 3.04 cm (13.94\" x 10.39\" x 0.89\" ~ 1.20\")"
+    },
+    {
+     "label": "Weight",
+     "value": "2.50 Kg (5.51 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Top case material: Aluminum LCD cover material: Texture plastic Bottom case material: Texture plastic"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "Aura Sync Thermal Feature: ROG intelligent cooling"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-rog-strix-g16-g615lm-ultra-9-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core Ultra 9 275HX"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Up to 5.4GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "24C"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "24T"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "36MB"
+    },
+    {
+     "label": "NPU",
+     "value": "Intel AI Boost NPU up to 13TOPS"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Intel HM870 Express Chipsets"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "16-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "FHD+ 16:10 (1920 x 1200, WUXGA)"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "165Hz"
+    },
+    {
+     "label": "Response TIme",
+     "value": "3ms"
+    },
+    {
+     "label": "Display Features",
+     "value": "IPS-Level Panel, 300nits Brightness, Contrast- 1000:1, 100% SRGB"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Removable",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600MHz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "Up to 64GB"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "PCIe 4.0 NVMe M.2 SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "1TB"
+    },
+    {
+     "label": "Extra M.2 Slot",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "NVIDIA GeForce RTX 5060"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "8GB"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "GDDR7"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Chiclet Keyboard 4-Zone RGB With Copilot key"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "1080P FHD IR Camera for Windows Hello"
+    },
+    {
+     "label": "Speaker",
+     "value": "2-speaker system with Smart Amplifier Technology"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in array microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "AI noise-canceling technology Dolby Atmos Hi-Res certification (for headphone) Smart Amp Technology"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1 FRL"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "3x USB 3.2 Gen 1 Type-A"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x Thunderbolt 4 with support for DisplayPort (data speed up to 40Gbps) 1x USB 3.2 Gen 2 Type-C with support for DisplayPort / power delivery / G-SYNC (data speed up to 10Gbps)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x 3.5mm Combo Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x RJ45 LAN port 10/100/1000 Mbps"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 7(802.11be) (Triple band) 2*2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth® 5.4 Wireless Card (*Bluetooth® version may change with OS version differences.)"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Firmware TPM"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "4-cell Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "90WHrs, 4S1P"
+    },
+    {
+     "label": "Backup Time (Approx)",
+     "value": "Recharge from 0-50% in 30 minutes"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "Rectangle Conn, 280W AC Adapter, Output: 20V DC, 14A, 280W, Input: 100-240V AC, 50/60Hz universal"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Volt Green"
+    },
+    {
+     "label": "Dimensions",
+     "value": "35.4 x 26.8 x 2.28 ~ 3.08 cm (13.94\" x 10.55\" x 0.90\" ~ 1.21\")"
+    },
+    {
+     "label": "Weight",
+     "value": "2.65 Kg (5.84 lbs)"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "Security: BIOS Administrator Password and User Password Protection Trusted Platform Module (Firmware TPM)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-vivobook-15-a1504va-core-3-100u-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "CORE 3 100U"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Up to 4.7 GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "6 (Performance-cores-2 Efficient-cores-4)"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "8"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "10MB"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "15.6-Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "FHD"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "FHD (1920 x 1080)"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "Anti-glare display TÜV Rheinland-certified Screen-to-body ratio: 82% 16:9 aspect ratio LED Backlit 45% NTSC color gamut IPS-level Panel 250nits"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "8GB (On Board)"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Removable",
+     "value": "Yes"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "16GB"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 NVMe PCIe 4.0 SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "256GB"
+    },
+    {
+     "label": "Supported SSD Type",
+     "value": "1x M.2 2280 PCIe 4.0x4"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "Intel Graphics"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Chiclet Keyboard"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Yes, Precision touchpad"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "720p HD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Microphone",
+     "value": "Yes, Built-in array microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "SonicMaster"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 1.4"
+    },
+    {
+     "label": "USB 2 Port",
+     "value": "1x USB 2.0 Type-A(data speed up to 480Mbps)"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "2x USB 3.2 Gen 1 Type-A (data speed up to 5Gbps)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB 3.2 Gen 1 Type-C (data speed up to 5Gbps)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x 3.5mm Combo Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "N/A"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6(802.11ax) (Dual band) 1x1"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4 Wireless Card (*Bluetooth version may change with OS version different.)"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Trusted Platform Module (Firmware TPM)"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "3-cell Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "42WHrs, 3S1P"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "ø4.5, 45W AC Adapter, Output: 19V DC, 2.37A, 45W, Input: 100~240V AC 50/60Hz universal"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Quiet Blue"
+    },
+    {
+     "label": "Dimensions",
+     "value": "32.49 x 21.39 x 1.79 ~ 1.79 cm (12.79\" x 8.42\" x 0.70\" ~ 0.70\")"
+    },
+    {
+     "label": "Weight",
+     "value": "Weight (with Battery): 1.40 kg (3.09 lbs) Weight (without Battery): 1.23 kg (2.71 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "LCD cover-material: Plastic Top case-material: Plastic Bottom case-material: Plastic"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "US MIL-STD 810H military-grade standard System diagnosis Battery health charging Fan Profile Splendid Tru2Life Function key lock WiFi SmartConnect Link to MyASUS TaskFirst Live update AI Noise Canceling"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-zenbook-14-oled-um3406ga-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "AMD"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Ryzen AI 5"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Up to 4.50GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "4"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "8"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "12MB"
+    },
+    {
+     "label": "NPU",
+     "value": "AMD XDNA 2 NPU up to 50 TOPS"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "AMD Radeon 840M Graphics"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "14 Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "OLED"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "FHD+ WUXGA OLED Display (1920x1200)"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "N/A"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Response TIme",
+     "value": "0.2ms"
+    },
+    {
+     "label": "Display Features",
+     "value": "LED Backlit Aspect Ratio: 16:10 Brightness: 400 nits Peak Brightness: 600 nits HDR peak brightness Contrast: 1,000,000:1 Color Gamut: 100% DCI-P3 VESA CERTIFIED Display HDR True Black 600 Color depth: 1.07 billion colors Glare: Glossy display Low Blue Light: 70% less harmful blue light TÜV Rheinland-Certified SGS Eye Care Display Screen-to-body ratio: 87%"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB (Onboard)"
+    },
+    {
+     "label": "RAM Type",
+     "value": "LPDDR5X"
+    },
+    {
+     "label": "Removable",
+     "value": "Non-Removable"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 NVMe PCIe 4.0 SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512 GB"
+    },
+    {
+     "label": "Extra M.2 Slot",
+     "value": "N/A"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "AMD Radeon 840M Graphics"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Chiclet Keyboard With Copilot key"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Precision touchpad, support NumberPad"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "FHD camera with IR function"
+    },
+    {
+     "label": "Speaker",
+     "value": "Built-in speaker"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in array microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Smart Amp Technology"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1 TMDS"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "1x USB 3.2 Gen 1 Type-A (data speed up to 5 Gbps)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB 3.2 Gen 2 Type-C with support for display/power delivery (data speed up to 10 Gbps) 1x USB 4.0 Gen 3 Type-C with support for display/power delivery (data speed up to 40 Gbps"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x 3.5mm Combo Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "N/A"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6E (802.11ax) (Triple band) 2x2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4 Wireless Card"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Trusted Platform Module (TPM) 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home - ASUS recommends Windows 11 Pro for business"
+    },
+    {
+     "label": "Other Pre-installed Softwares",
+     "value": "Built-in Apps: ASUS Recovery StoryCube MyASUS ScreenXpert GlideX Antivirus: McAfee 30-day free trial"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "4S1P, 4-cell Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "75WHrs"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "TYPE-C, 65W AC Adapter Output: 20V DC, 3.25A, 65W Input: 100-240V AC 50/60GHz universal"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Jade Black"
+    },
+    {
+     "label": "Dimensions",
+     "value": "31.24 x 22.01 x 1.49 ~ 1.49 cm (12.30\" x 8.67\" x 0.59\" ~ 0.59\")"
+    },
+    {
+     "label": "Weight",
+     "value": "With Battery: 1.20 kg (2.65 lbs) Without Battery: 0.94 kg (2.07 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Aluminum"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "US MIL-STD 810H military-grade standard System diagnosis Battery health charging Fan Profile Splendid Function key lock WiFi SmartConnect Link to MyASUS TaskFirst Live update ASUS OLED Care AI Noise Canceling"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-zenbook-14-oled-ux3405ca-core-ultra-5-225h-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core Ultra 5 Processor 225H"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Up to 4.9 GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "14"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "14"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "18MB"
+    },
+    {
+     "label": "NPU",
+     "value": "Intel AI Boost NPU up to 13TOPS"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "14.0-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "OLED"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "WUXGA (1920 x 1200) OLED 16:10 aspect ratio"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Response TIme",
+     "value": "0.2ms"
+    },
+    {
+     "label": "Display Features",
+     "value": "Brightness-400nits Contrast-1,000,000:1 Color Gamut-100% DCI-P3 color gamut stylus support VESA CERTIFIED Display HDR True Black 500 1.07 billion colors Glossy display 70% less harmful blue light TÜV Rheinland-certified SGS Eye Care Display"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB (Onboard)"
+    },
+    {
+     "label": "RAM Type",
+     "value": "LPDDR5X Supports dual-channel memory."
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 NVMe PCIe 4.0 SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Supported SSD Type",
+     "value": "1x M.2 2280 PCIe 4.0x4"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "Intel Arc Graphics"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Chiclet Keyboard"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Precision touchpad, support NumberPad"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "FHD camera with IR function"
+    },
+    {
+     "label": "Speaker",
+     "value": "Built-in speaker"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in array microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Smart Amp Technology"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1 TMDS"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "1x USB 3.2 Gen 1 Type-A (data speed up to 5 Gbps)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "2x Thunderbolt 4 with support for display / power delivery (data speed up to 40Gbps)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x 3.5mm Combo Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 7(802.11be) (Tri-band)2*2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4 Wireless Card (*Bluetooth version may change with OS version different.)"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Trusted Platform Module (Firmware TPM)"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home - ASUS recommends Windows 11 Pro for business"
+    },
+    {
+     "label": "Other Pre-installed Softwares",
+     "value": "Built-in Apps: ASUS Recovery StoryCube MyASUS ScreenXpert GlideX Antivirus: McAfee 30-day free trial"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "2S2P, 4-cell Li-ion Required charging power: Min: 45W Max: 65W"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "75WHrs"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "Adapter: TYPE-C, 65W AC Adapter, Output: 20V DC, 3.25A, 65W, Input: 100-240V AC 50/60GHz universal"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Ponder Blue"
+    },
+    {
+     "label": "Dimensions",
+     "value": "31.24 x 22.01 x 1.49 ~ 1.49 cm (12.30\" x 8.67\" x 0.59\" ~ 0.59\")"
+    },
+    {
+     "label": "Weight",
+     "value": "Weight (with Battery): 1.28 kg (2.82 lbs) Weight (without Battery): 0.99 kg (2.18 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Aluminum"
+    },
+    {
+     "label": "Part Number / MPN",
+     "value": "UX3405CA-QL236W"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "US MIL-STD 810H military-grade standard System diagnosis Battery health charging Fan Profile Splendid Function key lock WiFi SmartConnect Link to MyASUS TaskFirst Live update ASUS OLED Care AI Noise Canceling Ecolabels & Compliances: EPEAT Gold Energy star 8.0 RoHS REACH"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-v16-v3607vh-core-7-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core 7 240H"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Up to 5.2 GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "10 Cores"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "16 Threads"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "24MB"
+    },
+    {
+     "label": "NPU",
+     "value": "194 AI TOPs"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "16-inch"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "WUXGA (1920 x 1200)"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "N/A"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "144Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "16:10 aspect ratio, LED Backlit, 300nits, 45% NTSC color gamut, Anti-glare display, Non-touch screen, (Screen-to-body ratio) 89%"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB SO-DIMM"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Removable",
+     "value": "Yes"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2x DDR5 SO-DIMM slots"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 NVMe PCIe 4.0 SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Extra M.2 Slot",
+     "value": "Yes"
+    },
+    {
+     "label": "Supported SSD Type",
+     "value": "M.2 NVMe PCIe 4.0 SSD"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "NVIDIA GeForce RTX 5050 Laptop GPU"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "8GB"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "GDDR7"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Chiclet Keyboard with Num-key"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "1.5mm Key-travel"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Precision Touchpad"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "1080p FHD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "Built-in Speaker"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in Microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "SonicMaster"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1 FRL"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "2x USB 3.2 Gen 1 Type-A (data speed up to 5 Gbps)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB 3.2 Gen 1 Type-C with support for display/power delivery (data speed up to 5 Gbps)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x 3.5mm Combo Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "N/A"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6 (802.11ax) (Dual band) 2*2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3 Wireless Card (*Bluetooth version may change with OS version different.)"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Trusted Platform Module (Firmware TPM)"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home"
+    },
+    {
+     "label": "Other Pre-installed Softwares",
+     "value": "Built-in Apps: CapCut MyASUS ScreenXpert GlideX Office: Microsoft 365 Personal 1-year included Adobe Creative Cloud Hard Bundle: One-Month Membership of Adobe Creative Cloud All Apps, Individual. The redemption duration from September 15, 2021 to August 31, 2025."
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "3-cell Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "63WHrs, 3S1P"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "Rectangle Conn, 150W AC Adapter, Output: 20V DC, 7.5A, 150W, Input: 100~240V AC, 50/60Hz universal"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Matte Black"
+    },
+    {
+     "label": "Dimensions",
+     "value": "35.70 x 25.07 x 1.80 ~ 2.20 cm (14.06\" x 9.87\" x 0.71\" ~ 0.87\")"
+    },
+    {
+     "label": "Weight",
+     "value": "With Battery: 1.95 kg (4.30 lbs) Without Battery: 1.75 kg (3.86 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "LCD Cover Material: Plastic Top Case Material: Plastic"
+    },
+    {
+     "label": "Part Number / MPN",
+     "value": "V3607VH-TK132W, V3607VH-RP012W"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "Certification Ecolabels & Compliances: EPEAT Silver Energy Star 8.0 RoHS REACH Military grade: US MIL-STD 810H military-grade standard Special Features System diagnosis Battery health charging Fan Profile Splendid Tru2Life Function key lock WiFi SmartConnect TaskFirst Live update AI Noise Canceling"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/lenovo-loq-15irx10-core-i7-13th-gen-rtx-5050-gaming-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core i7-13650HX"
+    },
+    {
+     "label": "Generation",
+     "value": "13th Gen"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "P-Core up to 4.9GHz E-Core Up to 3.6GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "14C (6P + 8E)"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "20T"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "24MB"
+    },
+    {
+     "label": "NPU",
+     "value": "LA1 AI Chip"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Intel HM770 Chipset"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "15.6 inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "FHD (1920x1080)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "144Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "300nits Anti-glare, 100% sRGB, G-SYNC"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "1x 16GB SODIMM"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Removable",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "4800MHz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "Up to 32GB DDR5-4800 offering"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 2242 PCIe 4.0x4 NVMe SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Extra M.2 Slot",
+     "value": "Yes"
+    },
+    {
+     "label": "Supported SSD Type",
+     "value": "Up to Two M.2 2280 PCIe 4.0 x4 slots M.2 2242 SSD Supported"
+    },
+    {
+     "label": "Storage Upgrade",
+     "value": "Up to 1TB each"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "NVIDIA GeForce RTX 5050 Graphics Boost Clock 2370MHz, TGP 100W, 440 AI TOPS"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "8GB"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "GDDR7"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "White Backlit, English (EU)"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad (PTP), 75 x 120 mm (2.95 x 4.72 inches)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "5.0MP with E-shutter"
+    },
+    {
+     "label": "Speaker",
+     "value": "2W x2"
+    },
+    {
+     "label": "Microphone",
+     "value": "2x, Array Microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Stereo speakers, audio by HARMAN, optimized with Nahimic Audio"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1, up to 8K/60Hz"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "3x USB-A (USB 5Gbps / USB 3.2 Gen 1)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB-C (USB 10Gbps / USB 3.2 Gen 2), with USB PD 65-100W and DisplayPort 1.4"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x Headphone / microphone combo jack (3.5mm)"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x Ethernet 100/1000M (RJ-45)"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi® 6, 802.11ax 2x2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.2"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "E-shutter"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Firmware TPM 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Free DOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Integrated"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "60Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "170W Slim Tip (3-pin)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Luna Grey"
+    },
+    {
+     "label": "Dimensions",
+     "value": "359.86 x 258.7 x 21.9-23.9 mm (14.17 x 10.19 x 0.86-0.94 inches)"
+    },
+    {
+     "label": "Weight",
+     "value": "Starting at 2.4 kg (5.29 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "PC-ABS (Top), PC-ABS (Bottom)"
+    },
+    {
+     "label": "Part Number / MPN",
+     "value": "83JE00WPLK"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "Green Certifications: ErP Lot 3, RoHS compliant Other Certifications: TÜV Rheinland High Gaming Performance TÜV Rheinland Low Blue Light (Hardware Solution)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/lenovo-legion-5-15iax10-oled-gaming-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core Ultra 7 255HX"
+    },
+    {
+     "label": "Generation",
+     "value": "Core Ultra 200 Series"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Max Turbo up to 5.2GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "20C (8P + 12E)"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "20T"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "30MB"
+    },
+    {
+     "label": "NPU",
+     "value": "Integrated Intel AI Boost, up to 13 TOPS"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Intel HM870 Chipset"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "15.1 inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "OLED"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "WQXGA (2560x1600)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "165Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "1000nits (peak) / 500nits (typical) glossy, 100% DCI-P3, Dolby Vision, DisplayHDR True Black 600"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "32GB (2x 16GB)"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600 MHz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "Up to 32GB DDR5-5600 offering"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 2242 PCIe 4.0x4 NVMe SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Extra M.2 Slot",
+     "value": "Yes"
+    },
+    {
+     "label": "Supported SSD Type",
+     "value": "Up to two drives, 2x M.2 SSD"
+    },
+    {
+     "label": "Storage Upgrade",
+     "value": "M.2 2242 SSD up to 1TB each"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "NVIDIA GeForce RTX 5060 Boost Clock 2497MHz, TGP 115W, 572 AI TOPS"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "8GB"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "GDDR7"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "24-Zone RGB Backlit, English (EU)"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad (PTP), 75 x 120 mm (2.95 x 4.72 inches)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "5.0MP with E-shutter"
+    },
+    {
+     "label": "Speaker",
+     "value": "2W x2"
+    },
+    {
+     "label": "Microphone",
+     "value": "2x, Array Microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Stereo speakers, audio by HARMAN, optimized with Nahimic Audio"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1, up to 8K/60Hz"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "2x USB-A (USB 5Gbps / USB 3.2 Gen 1) 1x USB-A (USB 5Gbps / USB 3.2 Gen 1), Always On"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB-C (USB 10Gbps / USB 3.2 Gen 2), with USB PD 65-100W and DisplayPort 2.1 1x USB-C (USB 10Gbps / USB 3.2 Gen 2), with DisplayPort 1.4"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x Headphone / microphone combo jack (3.5mm)"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x Ethernet 100/1000M (RJ-45)"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 7, 802.11be 2x2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "E-shutter"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Firmware TPM 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home Single Language, English"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Integrated"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "80Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "245W Slim Tip (3-pin)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Eclipse Black"
+    },
+    {
+     "label": "Dimensions",
+     "value": "344.9 x 255.35 x 19.95-21.54 mm (13.58 x 10.05 x 0.79-0.85 inches)"
+    },
+    {
+     "label": "Weight",
+     "value": "Starting at 1.9 kg (4.19 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Case Material: Aluminium (Top), PC-ABS (Bottom) Surface Treatment: Aluminium Stamping (Anodized with Sandblasting)"
+    },
+    {
+     "label": "Part Number / MPN",
+     "value": "83F0006ELK"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "Green Certifications: ErP Lot 3, RoHS compliant Other Certifications: TÜV Rheinland High Gaming Performance TÜV Rheinland Low Blue Light (Hardware Solution)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/lenovo-legion-pro-5-16iax10-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core Ultra 9 275HX"
+    },
+    {
+     "label": "Generation",
+     "value": "Intel Core Ultra Processors (Series 2)"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Max Turbo up to 5.4GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "24C (8P + 16E)"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "24T"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "36MB Intel Smart Cache"
+    },
+    {
+     "label": "NPU",
+     "value": "Integrated Intel AI Boost, up to 13 TOPS AI Chip: LA3"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Intel HM870 Chipset"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "16 inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "OLED"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "WQXGA (2560x1600)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "165Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "500nits (typical) / 1100nits (peak) Glossy, 100% DCI-P3, 165Hz, DisplayHDR True Black 1000, Dolby Vision, G-SYNC, Low Blue Light, High Gaming Performance, Flicker Free"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "32GB (2x 16GB)"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Removable",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600MHz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "Two DDR5 SODIMM slots, dual-channel capable"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "Up to 32GB DDR5-5600 offering"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "M.2 2242 PCIe 4.0x4 NVMe SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "1TB"
+    },
+    {
+     "label": "Extra M.2 Slot",
+     "value": "Two M.2 2280 PCIe 4.0 x4 slots"
+    },
+    {
+     "label": "Supported SSD Type",
+     "value": "M.2 2242 SSD up to 1TB M.2 2280 SSD up to 1TB"
+    },
+    {
+     "label": "Storage Upgrade",
+     "value": "Up to two drives, 2x M.2 SSD • M.2 2242 SSD up to 1TB • M.2 2280 SSD up to 1TB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "NVIDIA GeForce RTX 5060, Boost Clock 2497MHz, TGP 115W, 572 AI TOPS"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "8GB"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "GDDR7"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "24-Zone RGB Backlit, English (EU)"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad (PTP), 75 x 120 mm (2.95 x 4.72 inches)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "5.0MP with E-shutter"
+    },
+    {
+     "label": "Speaker",
+     "value": "Stereo speakers, 2W x2, audio by HARMAN, optimized with Nahimic Audio"
+    },
+    {
+     "label": "Microphone",
+     "value": "2x, Array Microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "High Definition (HD) Audio, Realtek ALC3306 codec"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "N/A"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1, up to 8K/60Hz"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "2x USB-A (USB 5Gbps / USB 3.2 Gen 1) 1x USB-A (USB 10Gbps / USB 3.2 Gen 2), Always On"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB-C (USB 10Gbps / USB 3.2 Gen 2), with USB PD 65-100W and DisplayPort 2.1 1x USB-C (Thunderbolt 4 / USB4 40Gbps), with DisplayPort 2.1"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x Headphone / microphone combo jack (3.5mm)"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x Ethernet 100/1000M (RJ-45)"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 7, 802.11be 2x2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "E-shutter"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Firmware TPM 2.0 Enabled"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home Single Language, English"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Capacity",
+     "value": "80Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "245W Slim Tip (3-pin)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Eclipse Black"
+    },
+    {
+     "label": "Dimensions",
+     "value": "364.38 x 268.06 x 21.69-25.95 mm (14.35 x 10.55 x 0.85-1.02 inches)"
+    },
+    {
+     "label": "Weight",
+     "value": "Around 2.43 kg (5.36 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Case Material: Aluminium (Top), PC-ABS (Bottom) Surface Treatment: Anodizing Sandblasting"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "Green Certifications: ENERGY STAR 8.0 ErP Lot 6/26 RoHS compliant Other Certifications: TÜV Rheinland Flicker Free Pantone SkinTone Validated Pantone Validated TÜV Rheinland High Gaming Performance TÜV Rheinland Low Blue Light (Hardware Solution)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-tuf-gaming-f16-fx608jhi-core-i7-14650hx-gaming-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Core i7 14650HX"
+    },
+    {
+     "label": "Generation",
+     "value": "14th Generation"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "up to 5.2 GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "16 cores"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "24 Threads"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "30MB Cache"
+    }
+   ]
+  },
+  {
+   "group": "Chipset",
+   "items": [
+    {
+     "label": "Chipset Model",
+     "value": "Mobile Intel HM770 Express Chipsets"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "16-Inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "WUXGA (1920 x 1200px)"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "N/A"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "144Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "Aspect Ratio: 16:10 Contrast Ratio: 1000:1 Surface texture of display: Anti-glare(AG) display Adaptive-Sync technology: G-Sync"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Removable",
+     "value": "Yes"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2x SO-DIMM slots"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "64GB"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "PCIe 4.0 NVMe M.2 SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Storage Upgrade",
+     "value": "M.2 slots support either SATA or NVMe: 2 M.2 SSD Support List: M.2 512GB PCIe SSD M.2 1TB PCIe SSD M.2 2TB PCIe SSD"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "NVIDIA GeForce RTX 5050 (Up to 115W (100W+15W))"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "8GB"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "GDDR7"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Chiclet Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "1-Zone RGB, With Copilot key"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "1080P FHD Camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "2-speaker system"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in array microphone"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Hi-Res certification (for headphone) AI noise-canceling technology Support Microsoft Cortana near field/far field (Microsoft service suspended in spring of 2023.) Dolby Atmos"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1 FRL"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "3x USB 3.2 Gen 2 Type-A (data speed up to 10Gbps)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB 3.2 Gen 2 Type-C with support for DisplayPort / power delivery (data speed up to 10Gbps)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x 3.5mm Combo Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1x RJ45 LAN port"
+    },
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6E(802.11ax) (Triple band) 2*2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4 Wireless Card"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    },
+    {
+     "label": "Security Chip",
+     "value": "Trusted Platform Module (Firmware TPM)"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "4-cell Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "70WHrs, 4S1P"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "Rectangle Conn 200W AC Adapter Input: 100-240V AC, 50/60Hz universal Output: 20V DC, 10A, 200W"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Jaeger Gray"
+    },
+    {
+     "label": "Dimensions",
+     "value": "35.4 x 26.9 x 1.79 ~ 2.73 cm (13.94\" x 10.59\" x 0.70\" ~ 1.07\")"
+    },
+    {
+     "label": "Weight",
+     "value": "2.20 Kg (4.85 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Top case-material: Aluminum LCD cover-material: Texture plastic Bottom case-material: Texture plastic"
+    },
+    {
+     "label": "Part Number / MPN",
+     "value": "FX608JHI-TU351W"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/asus-rog-zephyrus-g14-ga403wp-ryzen-ai-9-laptop": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "AMD"
+    },
+    {
+     "label": "Processor Model",
+     "value": "Ryzen AI 9 HX 370"
+    },
+    {
+     "label": "Processor Frequency",
+     "value": "Up to 5.1GHz"
+    },
+    {
+     "label": "Processor Core",
+     "value": "12"
+    },
+    {
+     "label": "Processor Thread",
+     "value": "24"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "36MB"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "14-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "OLED"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "3K (2880 x 1800)"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120 Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "Aspect Ratio: 16:10 Surface texture of display: Anti-glare and low-reflection(AGLR) display Adaptive-Sync technology: G-Sync / Adaptive-Sync Pantone Validated Nebula Display: ROG Nebula Display Support Dolby Vision HDR: Yes Thermal Feature: ROG intelligent cooling Brightness: 500nits Contrast: 1000000:1 Color Gamut: DCI-P3%: 100% Viewing Angle: 85/85"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "32GB (on board)"
+    },
+    {
+     "label": "RAM Type",
+     "value": "LPDDR5x"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "7500MHz"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "2"
+    },
+    {
+     "label": "Max RAM Capacity",
+     "value": "32GB"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "PCIe 4.0 NVMe M.2 SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "2TB"
+    },
+    {
+     "label": "Supported SSD Type",
+     "value": "1x M.2 slots (support either SATA or NVMe) M.2 SSD Support List: SSD M.2 2280 G4X4 512GB SSD M.2 2280 G4X4 1TB SSD M.2 2280 G4X4 2TB"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "NVIDIA GeForce RTX 5070 Laptop GPU"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "8GB"
+    },
+    {
+     "label": "Graphics Type",
+     "value": "GDDR7 Turbo mode: 1595MHz at 90W(1545MHz Boost Clock+50MHz OC, 75W+15W Dynamic Boost)"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Chiclet Keyboard 1-Zone RGB With Copilot key With Aura Sync"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "1080P FHD IR Camera for Windows Hello"
+    },
+    {
+     "label": "Speaker",
+     "value": "4-speaker (dual force woofer) system with Smart Amplifier Technology, 2 Tweeters"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in 3-microphone array"
+    },
+    {
+     "label": "Audio Features",
+     "value": "AI noise-canceling technology Dolby Atmos Hi-Res certification (for headphones) Smart Amp Technology"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Optical Drive",
+     "value": "N/A"
+    },
+    {
+     "label": "Card Reader",
+     "value": "1x card reader (microSD) (UHS-II)"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 2.1 FRL"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "2x USB 3.2 Gen 2 Type-A (data speed up to 10Gbps)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x Type-C USB 4 with support for DisplayPort / power delivery (data speed up to 40Gbps) 1x USB 3.2 Gen 2 Type-C with support for DisplayPort / power delivery / G-SYNC (data speed up to 10Gbps)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x 3.5mm Combo Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 7(802.11be) (Triple band) 2*2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "N/A"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Windows 11 Home"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "4-cell Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "73Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "Adapter: Rectangle Conn, 200W AC Adapter, Output: 20V DC, 10A, 200W, Input: 100-240V AC, 50/60Hz universal Fast charging: Recharge from 0-50% in 30 minutes Required charging power: Min: 45W Max: 100W"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Platinum White"
+    },
+    {
+     "label": "Dimensions",
+     "value": "31.1 x 22.0 x 1.59 ~ 1.63 cm (12.24\" x 8.66\" x 0.63\" ~ 0.64\")"
+    },
+    {
+     "label": "Weight",
+     "value": "1.50 Kg (3.31 lbs)"
+    }
+   ]
+  },
+  {
+   "group": "Other Features",
+   "items": [
+    {
+     "label": "Other Features",
+     "value": "Thermal Feature: ROG intelligent cooling Security Feature BIOS Administrator Password and User Password Protection Pluton Security Processor Secured-core PC (Level 3)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/zte-nubia-a36": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.75 inches"
+    },
+    {
+     "label": "Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Resolution",
+     "value": "HD+ (1600*720) pixels"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "90Hz"
+    },
+    {
+     "label": "Protection",
+     "value": "N/A"
+    },
+    {
+     "label": "Features",
+     "value": "110.0 cm2 (~84.8% screen-to-body ratio) 20:9 ratio (~260 ppi density)"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Unisoc T7200 (12 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "(2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)"
+    },
+    {
+     "label": "GPU",
+     "value": "Mali-G57 MP1"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "4GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "64GB"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC (dedicated slot)"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "13 MP, AF, Auxiliary lens"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080p@30fps"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "5MP"
+    },
+    {
+     "label": "Video Recording",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM"
+    },
+    {
+     "label": "Network",
+     "value": "4G, 3G, 2G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.2, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes, GPS, GALILEO, GLONASS"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 15"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "N/A"
+    },
+    {
+     "label": "Sensors",
+     "value": "Accelerometer, proximity, compass"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "5000 mAh"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "10W wired"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "167.6 x 77.4 x 8.3 mm (6.60 x 3.05 x 0.33 in)"
+    },
+    {
+     "label": "Colors",
+     "value": "Black, Green"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/redmi-a7-pro": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.9 inches"
+    },
+    {
+     "label": "Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Resolution",
+     "value": "720 x 1600 pixels"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "800 nits (HBM)"
+    },
+    {
+     "label": "Features",
+     "value": "Pixel Density: ~254 ppi density"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Unisoc T7250 (12 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55"
+    },
+    {
+     "label": "GPU",
+     "value": "Mali-G57 MP1"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "4GB LPDDR4X + 4GB Virtual"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "64GB UFS2.2"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC (dedicated slot)"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "13 MP, f/2.2, (wide), 1/3.06\" Auxiliary lens"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash, HDR"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080p@30fps"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "8 MP, f/2.0, (wide)"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080P 1920x1080 30fps 720P 1280x720 30fps"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Loudspeaker"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.2, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5mm Jack"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 16"
+    },
+    {
+     "label": "Custom UI",
+     "value": "HyperOS 3"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Fingerprint (side-mounted)"
+    },
+    {
+     "label": "Sensors",
+     "value": "Accelerometer, proximity, compass"
+    },
+    {
+     "label": "Other Features",
+     "value": "FM radio"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "6000 mAh, non-removable"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "15W"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "171.6 x 79.5 x 8.2 mm (6.76 x 3.13 x 0.32 in)"
+    },
+    {
+     "label": "Weight",
+     "value": "208 g (7.34 oz)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/realme-note-80": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.7 Inch"
+    },
+    {
+     "label": "Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Resolution",
+     "value": "HD+ (1600x720 pixels)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "90Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "450nits (typ) / 563nits (HBM)"
+    },
+    {
+     "label": "Features",
+     "value": "Screen-to-body Ratio: 90.4%"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Unisoc T7250 (4G; 12nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "2x Cortex-A75 Cores @1.8GHz 6x Cortex-A55 Cores @1.6GHz"
+    },
+    {
+     "label": "GPU",
+     "value": "ARM Mali-G57 MP1"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "4GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "64GB"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC (dedicated slot)"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "8MP"
+    },
+    {
+     "label": "Features",
+     "value": "Wide angle; f/2.0; FOV 78°; 4P lens; AF Supported"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080P video: 30 fps 720P video: 30 fps"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "5MP"
+    },
+    {
+     "label": "Features",
+     "value": "f/2.2; FOV 77°; 3P lens"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080P video: 30 fps"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "2 Nano SIM Card Slots + 1 Micro SD slot"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "2.4/5GHz Wi-Fi Support Wi-Fi 5 (802.11ac), 802.11b/g/a/n"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.2"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GLONASS, Beidou, Galileo"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5mm Jack"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 15"
+    },
+    {
+     "label": "Custom UI",
+     "value": "Realme UI"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Side Fingerprint Sensor"
+    },
+    {
+     "label": "Sensors",
+     "value": "Proximity Sensor Ambient Light Sensor Accelerometer Gyroscope"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP54 Dust & Water Resistance"
+    },
+    {
+     "label": "Other Features",
+     "value": "Military-Grade Shock Resistance"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "6300mAh (typ.); 6235mAh (Rated)"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "15W Fast Charging"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Length: 167.20mm Width: 76.60mm Depth: ≈ 7.94mm"
+    },
+    {
+     "label": "Weight",
+     "value": "197 g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oppo-a6x": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.75 inches"
+    },
+    {
+     "label": "Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Resolution",
+     "value": "HD + (1570 × 720)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "Normal brightness: 800nits (Typical) HBM: 1125nits (Typical)"
+    },
+    {
+     "label": "Features",
+     "value": "Vivid mode: 85% DCI-P3 Natural mode: 100% sRGB"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Qualcomm Snapdragon 685 Mobile Platform"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno 610 @1260MHz"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "4 GB"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "64GB"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "Wide angle: 13MP; f/2.2; FOV 77°; 4P lens; AF supported Monochrome: QVGA; f/3.0; FOV 40°; 1P lens"
+    },
+    {
+     "label": "Features",
+     "value": "LED flash, HDR, panorama"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080P video: 30fps 720P video: 30fps 1080P TIME-LAPSE: 30fps Supports video zoom shooting: up to 10x digital zoom"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "5MP; f/2.2; FOV 77°; 3P lens"
+    },
+    {
+     "label": "Features",
+     "value": "Panorama"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080P video: 30fps 720P video: 30fps 1080P TIME-LAPSE: 30fps"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.0, A2DP, LE, aptX"
+    },
+    {
+     "label": "GPS",
+     "value": "GPS, GALILEO, GLONASS, BDS, QZSS"
+    },
+    {
+     "label": "USB",
+     "value": "Type-C 2.0"
+    },
+    {
+     "label": "OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5mm Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 15"
+    },
+    {
+     "label": "Custom UI",
+     "value": "ColorOS 15"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Yes, Side-Mounted"
+    },
+    {
+     "label": "Sensors",
+     "value": "accelerometer, proximity, compass"
+    },
+    {
+     "label": "Other Features",
+     "value": "Military-Grade Shock Resistance"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "6500 mAh"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "166.61 x 78.51 x 8.61 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "about 210g"
+    },
+    {
+     "label": "Colors",
+     "value": "Plum Purple, Ice Blue"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oppo-a6c": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.75 inches"
+    },
+    {
+     "label": "Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Resolution",
+     "value": "HD + (1570×720)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "Normal brightness: 700 nits(Typical) HBM: 900 nits(Typical)"
+    },
+    {
+     "label": "Features",
+     "value": "Screen to Body Ratio: 90.5% Vivid mode: 86% DCI-P3 Natural mode: 100% sRGB 16.7 million colours(8-bit) Pixel Density: 256 PPI"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "UNISOC T7250"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "GPU",
+     "value": "Mali-G57@850MHz"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "4GB LPDDR4X"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "64GB (UFS 2.2)"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "Wide angle: 13MP; f/2.2; FOV 81°; 4P lens; AF supported"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080P video: 30 fps 720P video: 30 fps 1080P TIME-LAPSE: 30 fps 720P TIME-LAPSE: 30 fps Supports video zoom shooting: up to 10× digital zoom"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "5MP; f/2.2; FOV 77°; 3P lens"
+    },
+    {
+     "label": "Video Recording",
+     "value": "720P video: 30 fps"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 5 (802.11ac) supported 802.11a/b/g/n supported"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.2"
+    },
+    {
+     "label": "GPS",
+     "value": "Beidou, GPS, GLONASS, Galileo, QZSS"
+    },
+    {
+     "label": "USB",
+     "value": "Type-C"
+    },
+    {
+     "label": "OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5mm Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 15"
+    },
+    {
+     "label": "Custom UI",
+     "value": "ColorOS"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Yes, Side-Mounted"
+    },
+    {
+     "label": "Sensors",
+     "value": "accelerometer, proximity, compass"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP64"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "6700 mAh"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "15W Wired"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "Height: about 166.48mm Width: about 78.23mm Thickness: about 8.95mm"
+    },
+    {
+     "label": "Weight",
+     "value": "about 215g"
+    },
+    {
+     "label": "Colors",
+     "value": "Stone Brown, Feather Purple, Feather White"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/vivo-y05": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.74 inches"
+    },
+    {
+     "label": "Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Resolution",
+     "value": "HD+ (1600 × 720 pixels)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "Up to 120Hz"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Unisoc T7225 (12 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55"
+    },
+    {
+     "label": "GPU",
+     "value": "Mali-G52 MP1"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "4GB LPDDR4X"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "64GB/ 128GB eMMC 5.1"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "8 MP f/2.0"
+    },
+    {
+     "label": "Features",
+     "value": "Rear flash"
+    },
+    {
+     "label": "Video Recording",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "5 MP f/2.0"
+    },
+    {
+     "label": "Video Recording",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band 2.4 GHz / 5 GHz"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.2, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5mm Jack"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 16"
+    },
+    {
+     "label": "Custom UI",
+     "value": "OriginOS 6.0"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Side-mounted capacitive fingerprint sensor"
+    },
+    {
+     "label": "Sensors",
+     "value": "Accelerometer Ambient Light Proximity E-compass Motor"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP65 dust and splash resistant"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Li-Ion 6500 mAh, non-removable"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "15W"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "167.40 × 77.10 × 8.39 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "209g"
+    },
+    {
+     "label": "Body Material",
+     "value": "Back Cover Material: Composite plastic sheet"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/realme-c100i": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.8 inches, 113.0 cm2 (~87.4% screen-to-body ratio)"
+    },
+    {
+     "label": "Type",
+     "value": "HD"
+    },
+    {
+     "label": "Resolution",
+     "value": "720 x 1570 pixels"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "Normal brightness: 700 nits(Typical) HBM: 900 nits(Typical)"
+    },
+    {
+     "label": "Protection",
+     "value": "Corning Gorilla Glass"
+    },
+    {
+     "label": "Features",
+     "value": "Colour Gamut: 83%NTSC Color Depth: 16.7 million colors(8-bit) Pixel Density: 254 PPI"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "UniSoc T7250"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa Core"
+    },
+    {
+     "label": "GPU",
+     "value": "Arm Mali-G57@850MHz"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "4 LPDDR4X"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "128GB eMMC5.1"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "8MP f/2.0; FOV 78°; 4P lens; AF Supported"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1080P video: 30 fps(with Retouch on) 720P video: 30 fps 1080P TIME-LAPSE: 30 fps Supports Dual-view video shooting Supports video zoom shooting: up to 10× digital zoom"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "5MP; f/2.2; FOV 77°; 3P lens"
+    },
+    {
+     "label": "Video Recording",
+     "value": "720P video: 30 fps Supports Dual-view video shooting"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Audio Features",
+     "value": "SBC, AAC, LDAC Codec"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Nano-SIM + Nano-USIM"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 5 (802.11ac"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.2"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes"
+    },
+    {
+     "label": "NFC",
+     "value": "N/A"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5mm Audio Jack"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 16"
+    },
+    {
+     "label": "Custom UI",
+     "value": "reame UI"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "IP Rating",
+     "value": "IP64"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "7000mAh(Typical)，6820mAH(Rated)"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "15W"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "166.48 x 78.23 x 8.38(mm)"
+    },
+    {
+     "label": "Weight",
+     "value": "208g"
+    },
+    {
+     "label": "Colors",
+     "value": "Dawn Purple, Dusk Gray"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/vivo-y05e": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "6.74 inches"
+    },
+    {
+     "label": "Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Resolution",
+     "value": "HD+ (1600 × 720 pixels)"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "Up to 90Hz"
+    },
+    {
+     "label": "Brightness",
+     "value": "570 Nits HBM"
+    },
+    {
+     "label": "Features",
+     "value": "260 PPI 1500:1 Contrast Ratio"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Chipset",
+     "value": "Unisoc T7225 (12 nm)"
+    },
+    {
+     "label": "CPU Type",
+     "value": "Octa-core"
+    },
+    {
+     "label": "CPU Speed",
+     "value": "2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55"
+    },
+    {
+     "label": "GPU",
+     "value": "Mali-G57 650Mhz"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "4GB LPDDR4X"
+    },
+    {
+     "label": "Internal Storage",
+     "value": "64GB eMMC 5.1"
+    },
+    {
+     "label": "Card Slot",
+     "value": "microSDXC Support up to 2TB"
+    }
+   ]
+  },
+  {
+   "group": "Rear Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "8 MP f/2.0"
+    },
+    {
+     "label": "Features",
+     "value": "Rear flash"
+    },
+    {
+     "label": "Video Recording",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Front Camera",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "5 MP f/2.2"
+    },
+    {
+     "label": "Video Recording",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Speaker",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "SIM",
+     "value": "Dual SIM (Nano-SIM, dual stand-by)"
+    },
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band 2.4 GHz / 5 GHz"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.2, A2DP, LE"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "USB Type-C 2.0"
+    },
+    {
+     "label": "OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "3.5mm Jack"
+    }
+   ]
+  },
+  {
+   "group": "OS",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android 16"
+    },
+    {
+     "label": "Custom UI",
+     "value": "OriginOS 6.0"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Fingerprint",
+     "value": "Side-mounted capacitive fingerprint sensor"
+    },
+    {
+     "label": "Sensors",
+     "value": "Accelerometer Ambient Light Proximity E-compass"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP64 dust and splash resistant"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Li-Ion 5150 mAh, non-removable"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "15W"
+    }
+   ]
+  },
+  {
+   "group": "Physical specification",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "167.30 × 76.95 × 8.19 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "199g"
+    },
+    {
+     "label": "Body Material",
+     "value": "Composite plastic sheet"
+    },
+    {
+     "label": "Colors",
+     "value": "Crest Teal, Grand Black"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.com/mobile/iqoo-z10x": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "iQOO"
+    },
+    {
+     "label": "Model",
+     "value": "Z10x"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "22 April 2025"
+    },
+    {
+     "label": "Status",
+     "value": "Available"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android"
+    },
+    {
+     "label": "OS Version",
+     "value": "v15"
+    },
+    {
+     "label": "User Interface",
+     "value": "Funtouch 15"
+    },
+    {
+     "label": "Chipset",
+     "value": "Mediatek Dimensity 7300"
+    },
+    {
+     "label": "CPU",
+     "value": "Octa-core (4x2.5 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8 Cores"
+    },
+    {
+     "label": "Architecture",
+     "value": "64 bit"
+    },
+    {
+     "label": "Fabrication",
+     "value": "4 nm"
+    },
+    {
+     "label": "GPU",
+     "value": "Mali-G615 MC2"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.72 inches (17.07 cm)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1080x2408 px (FHD+)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "20:9"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "393 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "86.0%"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "Gorilla Glass"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "Brightness",
+     "value": "1050 nits"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "120 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Dual"
+    },
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, Wide Angle, Primary Camera, 2 MP, f/2.4, Depth Camera"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "Ring-LED flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8150 x 6150 Pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "Digital Zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.8"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Touch to focus"
+    },
+    {
+     "label": "Video Recording",
+     "value": "3840x2160, 1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps, 60 fps"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "8 MP, f/2.05, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.05"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "165.7 mm"
+    },
+    {
+     "label": "Width",
+     "value": "76.3 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "8.1 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "204 grams"
+    },
+    {
+     "label": "Build",
+     "value": "Glass front, plastic back, plastic frame"
+    },
+    {
+     "label": "Colors",
+     "value": "Ultramarine, Titanium"
+    },
+    {
+     "label": "Waterproof",
+     "value": "Splash proof"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Ion (Lithium Ion)"
+    },
+    {
+     "label": "Capacity",
+     "value": "6500 mAh"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "44W wired"
+    },
+    {
+     "label": "Reverse Charging",
+     "value": "Yes"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "128 GB"
+    },
+    {
+     "label": "Storage Type",
+     "value": "UFS 3.1"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "LPDDR4X"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: Nano"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE, 5G"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 6 (802.11 a/b/g/n/ac/ax) 5GHz"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v5.4"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Infrared",
+     "value": "Yes"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "Side-mounted"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Video",
+     "value": "4K, 1080p, gyro-EIS"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "China"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, gyro, proximity, compass"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.com/mobile/iqoo-neo-10": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "iQOO"
+    },
+    {
+     "label": "Model",
+     "value": "Neo 10"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "02 June 2025"
+    },
+    {
+     "label": "Status",
+     "value": "Available"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android"
+    },
+    {
+     "label": "OS Version",
+     "value": "v15"
+    },
+    {
+     "label": "User Interface",
+     "value": "Funtouch 15"
+    },
+    {
+     "label": "Chipset",
+     "value": "Qualcomm SM8735 Snapdragon 8s Gen 4"
+    },
+    {
+     "label": "CPU",
+     "value": "Octa-core (1x3.21 GHz Cortex-X4 & 3x3.0 GHz Cortex-A720 & 2x2.8 GHz Cortex-A720 & 2x2.0 GHz Cortex-A720)"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8 Cores"
+    },
+    {
+     "label": "Architecture",
+     "value": "64 bit"
+    },
+    {
+     "label": "Fabrication",
+     "value": "4 nm"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno 825"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "AMOLED"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.78 inches (17.22 cm)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1260x2800 px (FHD+)"
+    },
+    {
+     "label": "Aspect Ratio",
+     "value": "20:9"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "453 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "89.3%"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "Shield Glass"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "Brightness",
+     "value": "4400 nits"
+    },
+    {
+     "label": "HDR 10 / HDR + support",
+     "value": "HDR"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "144 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Dual"
+    },
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.8, Wide Angle, Primary Camera, 8 MP, f/2.2, Ultra-Wide Angle Camera"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Yes"
+    },
+    {
+     "label": "OIS",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "LED Flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8150 x 6150 Pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "Digital Zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR), SuperMoon"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.8"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Touch to focus"
+    },
+    {
+     "label": "Video Recording",
+     "value": "3840x2160, 1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "60 fps"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "32 MP, f/2.5, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.5"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "163.7 mm"
+    },
+    {
+     "label": "Width",
+     "value": "75.9 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "8.1 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "206 grams"
+    },
+    {
+     "label": "Build",
+     "value": "Glass front, plastic back, plastic frame"
+    },
+    {
+     "label": "Colors",
+     "value": "Inferno Red, Titanium Chrome"
+    },
+    {
+     "label": "Waterproof",
+     "value": "Splash proof"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP65"
+    },
+    {
+     "label": "Ruggedness",
+     "value": "Dust proof"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Ion (Lithium Ion)"
+    },
+    {
+     "label": "Capacity",
+     "value": "7000 mAh"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "120W wired, 100W PD, 100W PPS, 50% in 15 min, 100% in 36 min"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "128 GB"
+    },
+    {
+     "label": "Storage Type",
+     "value": "UFS 3.1"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "8 GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "LPDDR5X"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: Nano"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE, 5G"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 7 (802.11 a/b/g/n/ac/be/ax) 5GHz 6GHz, MIMO"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v5.4"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Infrared",
+     "value": "Yes"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "On-screen"
+    },
+    {
+     "label": "Finger Sensor Type",
+     "value": "Optical"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Video",
+     "value": "4K@30/60fps, 1080p, gyro-EIS, OIS"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "China"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, gyro, proximity, compass"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.com/mobile/iqoo-neo11": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "iQOO"
+    },
+    {
+     "label": "Model",
+     "value": "Neo11"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "30 October 2025"
+    },
+    {
+     "label": "Status",
+     "value": "Available"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android"
+    },
+    {
+     "label": "OS Version",
+     "value": "v16"
+    },
+    {
+     "label": "User Interface",
+     "value": "OriginOS 6"
+    },
+    {
+     "label": "Chipset",
+     "value": "Qualcomm SM8750-AC Snapdragon 8 Elite"
+    },
+    {
+     "label": "CPU",
+     "value": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8 Cores"
+    },
+    {
+     "label": "Architecture",
+     "value": "64 bit"
+    },
+    {
+     "label": "Fabrication",
+     "value": "3 nm"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno 830"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "LTPO AMOLED"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.82 inches (17.32 cm)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1440x3168 px (FHD+)"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "510 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "90.2%"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "Rock Glass"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "HDR 10 / HDR + support",
+     "value": "HDR 10+"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "144 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Dual"
+    },
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.9, Wide Angle, Primary Camera, 8 MP, f/2.2, Ultra-Wide Angle Camera"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Yes"
+    },
+    {
+     "label": "OIS",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "LED Flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8150 x 6150 Pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "Digital Zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.9"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Touch to focus, Slo-motion"
+    },
+    {
+     "label": "Video Recording",
+     "value": "7680x4320, 3840x2160, 1920x1080"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "16 MP, f/2.5, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.5"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "163.4 mm"
+    },
+    {
+     "label": "Width",
+     "value": "76.7 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "8.1 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "216 grams"
+    },
+    {
+     "label": "Build",
+     "value": "Glass front, aluminum alloy frame, fiberglass back"
+    },
+    {
+     "label": "Colors",
+     "value": "Black, White, Orange, Blue"
+    },
+    {
+     "label": "Waterproof",
+     "value": "Water resistant (up to 1.5m for 30 min)"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68/IP69"
+    },
+    {
+     "label": "Ruggedness",
+     "value": "Dust proof"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Ion (Lithium Ion)"
+    },
+    {
+     "label": "Capacity",
+     "value": "7500 mAh"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "100W wired, 44W UFCS, 55W PD3.0/PPS"
+    },
+    {
+     "label": "Reverse Charging",
+     "value": "Yes"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 2.0"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "256 GB"
+    },
+    {
+     "label": "Storage Type",
+     "value": "UFS 4.1"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "12 GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "LPDDR5X Ultra"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: Nano"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE, 5G"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 7 (802.11 a/b/g/n/ac/be/ax) 5GHz 6GHz, MIMO"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v5.4"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Infrared",
+     "value": "Yes"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "On-screen"
+    },
+    {
+     "label": "Finger Sensor Type",
+     "value": "Ultrasonic"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Video",
+     "value": "8K, 4K, 1080p, gyro-EIS"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "China"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, gyro, proximity, compass"
+    }
+   ]
+  }
+ ],
+ "https://www.mobiledokan.com/mobile/iqoo-15": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "iQOO"
+    },
+    {
+     "label": "Model",
+     "value": "15"
+    },
+    {
+     "label": "Device Type",
+     "value": "Smartphone"
+    },
+    {
+     "label": "Release Date",
+     "value": "20 October 2025"
+    },
+    {
+     "label": "Status",
+     "value": "Available"
+    }
+   ]
+  },
+  {
+   "group": "Hardware & Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "Android"
+    },
+    {
+     "label": "OS Version",
+     "value": "v16"
+    },
+    {
+     "label": "User Interface",
+     "value": "OriginOS 6"
+    },
+    {
+     "label": "Chipset",
+     "value": "Qualcomm SM8850-AC Snapdragon 8 Elite Gen 5"
+    },
+    {
+     "label": "CPU",
+     "value": "Octa-core (2x4.6 GHz Oryon V3 Phoenix L + 6x3.62 GHz Oryon V3 Phoenix M)"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8 Cores"
+    },
+    {
+     "label": "Architecture",
+     "value": "64 bit"
+    },
+    {
+     "label": "Fabrication",
+     "value": "3 nm"
+    },
+    {
+     "label": "GPU",
+     "value": "Adreno 840"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Type",
+     "value": "LTPO AMOLED"
+    },
+    {
+     "label": "Screen Size",
+     "value": "6.85 inches (17.4 cm)"
+    },
+    {
+     "label": "Resolution",
+     "value": "1440x3168 px (QHD+)"
+    },
+    {
+     "label": "Pixel Density",
+     "value": "508 ppi"
+    },
+    {
+     "label": "Screen to Body Ratio",
+     "value": "90.7%"
+    },
+    {
+     "label": "Screen Protection",
+     "value": "Gorilla Glass"
+    },
+    {
+     "label": "Bezel-less Display",
+     "value": "Yes with punch-hole display"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "Capacitive Touchscreen, Multi-touch"
+    },
+    {
+     "label": "Brightness",
+     "value": "6000 nits"
+    },
+    {
+     "label": "HDR 10 / HDR + support",
+     "value": "HDR 10+"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "144 Hz"
+    },
+    {
+     "label": "Notch",
+     "value": "Punch-hole"
+    }
+   ]
+  },
+  {
+   "group": "Cameras",
+   "items": [
+    {
+     "label": "Camera Setup",
+     "value": "Triple"
+    },
+    {
+     "label": "Resolution",
+     "value": "50 MP, f/1.9, Wide Angle, Primary Camera, 50 MP, f/2.7, Periscope Telephoto Camera, 50 MP, f/2.1, Ultra-Wide Angle Camera"
+    },
+    {
+     "label": "Autofocus",
+     "value": "Yes"
+    },
+    {
+     "label": "OIS",
+     "value": "Yes"
+    },
+    {
+     "label": "Flash",
+     "value": "Dual-LED flash"
+    },
+    {
+     "label": "Image Resolution",
+     "value": "8150 x 6150 Pixels"
+    },
+    {
+     "label": "Settings",
+     "value": "Exposure compensation, ISO control"
+    },
+    {
+     "label": "Zoom",
+     "value": "Digital Zoom"
+    },
+    {
+     "label": "Shooting Modes",
+     "value": "Continuous Shooting, High Dynamic Range mode (HDR)"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/1.9"
+    },
+    {
+     "label": "Camera Features",
+     "value": "Auto Flash, Face detection, Touch to focus"
+    },
+    {
+     "label": "Video Recording",
+     "value": "7680x4320, 3840x2160, 1920x1080"
+    },
+    {
+     "label": "Video FPS",
+     "value": "30 fps, 60 fps, 240 fps"
+    },
+    {
+     "label": "Camera Setup",
+     "value": "Single"
+    },
+    {
+     "label": "Resolution",
+     "value": "32 MP, f/2.2, Wide Angle, Primary Camera"
+    },
+    {
+     "label": "Video Recording",
+     "value": "1920x1080, 1280x720"
+    },
+    {
+     "label": "Video FPS",
+     "value": "60 fps"
+    },
+    {
+     "label": "Aperture",
+     "value": "f/2.2"
+    }
+   ]
+  },
+  {
+   "group": "Design",
+   "items": [
+    {
+     "label": "Height",
+     "value": "163.7 mm"
+    },
+    {
+     "label": "Width",
+     "value": "76.8 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "8.1 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "220 grams"
+    },
+    {
+     "label": "Colors",
+     "value": "Black, White, Green, Blue, Color changing"
+    },
+    {
+     "label": "Waterproof",
+     "value": "Water resistant (up to 1.5m for 30 min)"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP68/IP69"
+    },
+    {
+     "label": "Ruggedness",
+     "value": "Dust proof"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery type",
+     "value": "Li-Ion (Lithium Ion)"
+    },
+    {
+     "label": "Capacity",
+     "value": "7000 mAh"
+    },
+    {
+     "label": "Wireless Charging",
+     "value": "40W wireless"
+    },
+    {
+     "label": "Quick Charging",
+     "value": "100W wired, PPS"
+    },
+    {
+     "label": "Placement",
+     "value": "Non-removable"
+    },
+    {
+     "label": "USB Type-C",
+     "value": "USB Type-C 3.2"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Internal Storage",
+     "value": "256 GB"
+    },
+    {
+     "label": "Storage Type",
+     "value": "UFS 4.1"
+    },
+    {
+     "label": "USB OTG",
+     "value": "Yes"
+    },
+    {
+     "label": "RAM",
+     "value": "12 GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "LPDDR5X"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Network",
+     "value": "2G, 3G, 4G, 5G"
+    },
+    {
+     "label": "SIM Slot",
+     "value": "Dual SIM, GSM+GSM"
+    },
+    {
+     "label": "SIM Size",
+     "value": "SIM1: Nano, SIM2: Nano"
+    },
+    {
+     "label": "EDGE",
+     "value": "Available"
+    },
+    {
+     "label": "GPRS",
+     "value": "Available"
+    },
+    {
+     "label": "VoLTE",
+     "value": "Yes"
+    },
+    {
+     "label": "Speed",
+     "value": "HSPA, LTE, 5G"
+    },
+    {
+     "label": "WLAN",
+     "value": "Wi-Fi 7 (802.11 a/b/g/n/ac/be/ax) 5GHz 6GHz, MIMO"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "v6.0"
+    },
+    {
+     "label": "GPS",
+     "value": "Yes with A-GPS, Glonass"
+    },
+    {
+     "label": "Infrared",
+     "value": "Yes"
+    },
+    {
+     "label": "Wi-fi Hotspot",
+     "value": "Yes"
+    },
+    {
+     "label": "NFC",
+     "value": "Yes"
+    },
+    {
+     "label": "USB",
+     "value": "Mass storage device, USB charging"
+    }
+   ]
+  },
+  {
+   "group": "Sensors & security",
+   "items": [
+    {
+     "label": "Light Sensor",
+     "value": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope"
+    },
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Yes"
+    },
+    {
+     "label": "Finger Sensor Position",
+     "value": "On-screen"
+    },
+    {
+     "label": "Finger Sensor Type",
+     "value": "Ultrasonic"
+    },
+    {
+     "label": "Face Unlock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Multimedia",
+   "items": [
+    {
+     "label": "Loudspeaker",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack",
+     "value": "USB Type-C"
+    },
+    {
+     "label": "Video",
+     "value": "8K@30fps, 4K@24/30/60fps, 1080p@30/60/120/240fps, gyro-EIS"
+    }
+   ]
+  },
+  {
+   "group": "More",
+   "items": [
+    {
+     "label": "Made By",
+     "value": "China"
+    },
+    {
+     "label": "Features",
+     "value": "Accelerometer, gyro, proximity, compass"
+    }
+   ]
+  }
  ]
 }

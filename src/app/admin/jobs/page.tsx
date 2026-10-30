@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Loader2, Sparkles } from "lucide-react";
+import { Check, Info, Loader2, Sparkles, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState, type FormEvent } from "react";
 import { Field, SecretField } from "@/components/admin/Field";
@@ -86,6 +86,7 @@ function JobsPanel() {
   const { busy, run } = useAdminAction();
   const { data, loading, reload } = useAsync(listJobs, []);
   const [now, setNow] = useState(() => Date.now());
+  const [activeModalJob, setActiveModalJob] = useState<Job | null>(null);
   const active = (data ?? []).some((job) => ["running", "queued"].includes(jobState(job, now)));
 
   useEffect(() => {
@@ -99,69 +100,155 @@ function JobsPanel() {
 
   if (loading || !data) return <ListSkeleton rows={3} />;
   return (
-    <Panel title={t.admin.jobs.regularJobs}>
-      {active && <p className="flex items-center gap-2 border-b border-line-soft bg-brand-soft px-5 py-2.5 text-[13px] text-brand-text">{t.admin.jobs.autoRefresh}</p>}
-      <ul className="divide-y divide-line-soft">
-        {data.map((job) => {
-          const info = t.admin.jobs.info[job.id as keyof typeof t.admin.jobs.info];
-          const state = jobState(job, now);
-          const failed = state === "failed";
-          return (
-            <li key={job.id} className="flex flex-col gap-3 px-5 py-4">
-              <div className="flex flex-wrap items-start gap-4">
-                <Toggle
-                  label={t.admin.jobs.enabledAria(info?.name ?? job.name)}
-                  checked={job.enabled}
-                  disabled={busy}
-                  onChange={async (enabled) => {
-                    if (await run(() => setJobEnabled(job, enabled), enabled ? t.admin.jobs.enabledToast : t.admin.jobs.disabledToast)) reload();
-                  }}
-                />
-                <div className="flex min-w-0 flex-1 flex-col gap-1">
-                  <p className="flex flex-wrap items-center gap-2 font-semibold">
-                    {info?.name ?? job.name}
-                    <JobStatus state={state} />
-                    {AI_JOBS.has(job.id) && (
-                      <span className="flex items-center gap-1 rounded-full bg-brand-soft px-2.5 py-0.5 text-xs font-semibold text-brand-text">
-                        <Sparkles size={12} aria-hidden="true" />
-                        {t.admin.jobs.usesAi}
-                      </span>
-                    )}
+    <>
+      <Panel title={t.admin.jobs.regularJobs}>
+        {active && <p className="flex items-center gap-2 border-b border-line-soft bg-brand-soft px-5 py-2.5 text-[13px] text-brand-text">{t.admin.jobs.autoRefresh}</p>}
+        <ul className="divide-y divide-line-soft">
+          {data.map((job) => {
+            const info = t.admin.jobs.info[job.id as keyof typeof t.admin.jobs.info];
+            const state = jobState(job, now);
+            const failed = state === "failed";
+            return (
+              <li key={job.id} className="flex flex-col gap-3 px-5 py-4 transition hover:bg-surface-2/30">
+                <div className="flex flex-wrap items-start gap-4">
+                  <Toggle
+                    label={t.admin.jobs.enabledAria(info?.name ?? job.name)}
+                    checked={job.enabled}
+                    disabled={busy}
+                    onChange={async (enabled) => {
+                      if (await run(() => setJobEnabled(job, enabled), enabled ? t.admin.jobs.enabledToast : t.admin.jobs.disabledToast)) reload();
+                    }}
+                  />
+                  <div className="flex min-w-0 flex-1 flex-col gap-1.5">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="font-semibold text-ink text-base">{info?.name ?? job.name}</span>
+                      <JobStatus state={state} />
+                      {AI_JOBS.has(job.id) && (
+                        <span className="flex items-center gap-1 rounded-full bg-brand-soft px-2.5 py-0.5 text-xs font-semibold text-brand-text">
+                          <Sparkles size={12} aria-hidden="true" />
+                          {t.admin.jobs.usesAi}
+                        </span>
+                      )}
+                      <button
+                        type="button"
+                        onClick={() => setActiveModalJob(job)}
+                        className="inline-flex items-center gap-1 rounded-md px-1.5 py-0.5 text-xs font-medium text-dim hover:bg-brand-soft hover:text-brand"
+                        title={t.admin.jobs.helpButton}
+                      >
+                        <Info size={14} className="text-dim hover:text-brand" />
+                        <span className="hidden sm:inline">{t.admin.jobs.helpButton}</span>
+                      </button>
+                    </div>
+
+                    {info && <p className="text-sm text-dim leading-relaxed">{info.what}</p>}
+
+                    {/* Organized Status & Last Result Box */}
+                    <div className="mt-1 flex flex-col gap-1.5 rounded-lg border border-line-soft bg-surface-2/40 p-2.5 text-xs">
+                      <div className="flex flex-wrap items-center justify-between gap-2 text-dim">
+                        <span>
+                          <strong>শিডিউল:</strong> {t.admin.jobs.runsOn(job.runner, job.schedule)}
+                        </span>
+                        <span>
+                          {job.lastRunAt ? t.admin.jobs.lastRan(ago(job.lastRunAt)) : t.admin.jobs.neverRan}
+                        </span>
+                      </div>
+                      {job.lastMessage ? (
+                        <div className="flex items-start gap-1.5 border-t border-line-soft/80 pt-1.5 text-ink">
+                          <span className="shrink-0 font-semibold text-dim">{t.admin.jobs.lastResult}:</span>
+                          <span className="font-mono text-[11px] leading-tight text-ink/90">{job.lastMessage}</span>
+                        </div>
+                      ) : (
+                        <div className="border-t border-line-soft/80 pt-1 text-[11px] text-dim/70">
+                          {t.admin.jobs.lastResult}: কোনো সাম্প্রতিক রান হিস্টোরি নেই।
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    disabled={!job.enabled || Boolean(job.runRequestedAt) || busy}
+                    onClick={async () => {
+                      if (await run(() => requestJobRun(job), t.admin.jobs.runQueuedToast)) reload();
+                    }}
+                    className={`${secondaryButton} shrink-0`}
+                  >
+                    {job.runRequestedAt ? t.admin.jobs.runQueued : t.admin.jobs.runNow}
+                  </button>
+                </div>
+
+                {failed && info && (
+                  <p className="rounded-lg border border-sale/20 bg-sale-soft px-3.5 py-2.5 text-[13px] text-ink">
+                    <strong>{t.admin.jobs.whatToDo}: </strong>
+                    {info.ifFails}{" "}
+                    <Link href="/admin/logs/" className="font-semibold text-brand underline-offset-2 hover:underline">
+                      {t.admin.nav.logs}
+                    </Link>
                   </p>
-                  {info && <p className="text-sm">{info.what}</p>}
-                  <p className="text-[13px] text-dim">
-                    {t.admin.jobs.runsOn(job.runner, job.schedule)} {job.lastRunAt ? t.admin.jobs.lastRan(ago(job.lastRunAt)) : t.admin.jobs.neverRan}
-                    {job.lastMessage ? `: ${job.lastMessage}` : ""}
-                  </p>
+                )}
+                {state === "stuck" && (
+                  <p className="rounded-lg border border-gold/30 bg-gold-soft px-3.5 py-2.5 text-[13px] text-ink">{t.admin.jobs.stuckHint}</p>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </Panel>
+
+      {/* Info / Explanation Modal for Non-Tech Users */}
+      {activeModalJob && (() => {
+        const modalInfo = t.admin.jobs.info[activeModalJob.id as keyof typeof t.admin.jobs.info];
+        return (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs" role="dialog" aria-modal="true">
+            <div className="relative w-full max-w-lg rounded-xl border border-line bg-surface p-6 shadow-2xl">
+              <div className="flex items-center justify-between border-b border-line-soft pb-3">
+                <div className="flex items-center gap-2">
+                  <div className="flex size-7 items-center justify-center rounded-full bg-brand-soft text-brand">
+                    <Info size={16} />
+                  </div>
+                  <h3 className="font-bold text-ink text-base">{modalInfo?.name ?? activeModalJob.name}</h3>
                 </div>
                 <button
                   type="button"
-                  disabled={!job.enabled || Boolean(job.runRequestedAt) || busy}
-                  onClick={async () => {
-                    if (await run(() => requestJobRun(job), t.admin.jobs.runQueuedToast)) reload();
-                  }}
-                  className={secondaryButton}
+                  onClick={() => setActiveModalJob(null)}
+                  className="rounded-lg p-1 text-dim hover:bg-surface-2 hover:text-ink"
+                  aria-label={t.admin.jobs.close}
                 >
-                  {job.runRequestedAt ? t.admin.jobs.runQueued : t.admin.jobs.runNow}
+                  <X size={18} />
                 </button>
               </div>
-              {failed && info && (
-                <p className="rounded-lg border border-sale/20 bg-sale-soft px-3.5 py-2.5 text-[13px] text-ink">
-                  <strong>{t.admin.jobs.whatToDo}: </strong>
-                  {info.ifFails}{" "}
-                  <Link href="/admin/logs/" className="font-semibold text-brand underline-offset-2 hover:underline">
-                    {t.admin.nav.logs}
-                  </Link>
-                </p>
-              )}
-              {state === "stuck" && (
-                <p className="rounded-lg border border-gold/30 bg-gold-soft px-3.5 py-2.5 text-[13px] text-ink">{t.admin.jobs.stuckHint}</p>
-              )}
-            </li>
-          );
-        })}
-      </ul>
-    </Panel>
+
+              <div className="mt-4 flex flex-col gap-4 text-sm leading-relaxed">
+                <div>
+                  <h4 className="font-semibold text-ink text-xs uppercase tracking-wider text-dim">এই কাজের মূল দায়িত্ব:</h4>
+                  <p className="mt-1 text-ink">{modalInfo?.what}</p>
+                </div>
+
+                <div className="rounded-lg border border-brand/20 bg-brand-soft/30 p-3">
+                  <h4 className="font-semibold text-brand text-xs uppercase tracking-wider">{t.admin.jobs.whatHappensOnRun}</h4>
+                  <p className="mt-1 text-xs text-ink/90 leading-normal">{modalInfo?.onRun}</p>
+                </div>
+
+                <div className="rounded-lg border border-line-soft bg-surface-2/60 p-3 text-xs text-dim">
+                  <p><strong>রানার ও শিডিউল:</strong> {t.admin.jobs.runsOn(activeModalJob.runner, activeModalJob.schedule)}</p>
+                  <p className="mt-1"><strong>ব্যর্থ হলে করণীয়:</strong> {modalInfo?.ifFails}</p>
+                </div>
+              </div>
+
+              <div className="mt-5 flex justify-end">
+                <button
+                  type="button"
+                  onClick={() => setActiveModalJob(null)}
+                  className={`${primaryButton} text-xs px-4 py-2`}
+                >
+                  {t.admin.jobs.close}
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      })()}
+    </>
   );
 }
 
