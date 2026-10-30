@@ -10,6 +10,8 @@
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm run lint",
     "check:all": "npm run catalog:build && npm run typecheck && npm run lint",
+    "check:local": "sh scripts/local-worker.sh special sync",
+    "check:full": "npm run check:all && npm run check:local",
     "db:new": "supabase migration new",
     "db:seed": "sh scripts/seed.sh",
     "db:push": "supabase db push",
