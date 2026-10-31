@@ -2726,6 +2726,1774 @@
      "checkedAt": "2026-10-26"
     }
    ]
+  },
+  {
+   "brand": "QCY",
+   "name": "T13 ANC 2",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/740/QCY_T13_ANC_2_1.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/QCY-T13-ANC-2-TWS-Earbuds-7891.png",
+    "https://images.kryinternational.com/uploads/qcy-t13-anc-2-earbuds-2.jpg"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/qcy-t13-anc-2",
+   "offers": [
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/qcy-t13-anc-2",
+     "price": 2099,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/qcy-t13-anc-2-tws-earbuds",
+     "price": 1899,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2000
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/qcy-t13-anc-2-earbuds",
+     "price": 1799,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Dolbear",
+     "url": "https://dolbear.com.bd/product/qcy-t13-anc-2",
+     "price": 1900,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/qcy-t13-anc-2-true-wireless-anc-earbuds/",
+     "price": 1899,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/qcy-t13-anc-2-tws-earbuds/",
+     "price": 1700,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 1955
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/qcy-t13-anc-2-advanced-tws-earbuds/",
+     "price": 1800,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2500
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/qcy-t13-anc-2-truly-wireless-anc-earbuds/",
+     "price": 1800,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "QCY",
+   "name": "HT05 MeloBuds ANC",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/739/QCY_HT05_MeloBuds_1.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/QCY-HT05-MeloBuds-ANC-True-Wireless-Earbudss-4141.png",
+    "https://images.kryinternational.com/uploads/qcy-ht05-melobuds.jpg"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/qcy-ht05-melobuds-anc-earbuds",
+   "offers": [
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/qcy-ht05-melobuds-anc-earbuds",
+     "price": 2599,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/qcy-ht05-melobuds-anc-true-wireless-earbuds",
+     "price": 2500,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2800
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/qcy-ht05-melobuds-anc-earbuds",
+     "price": 2499,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Dolbear",
+     "url": "https://dolbear.com.bd/product/qcy-ht05-melobudes-anc",
+     "price": 2600,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/qcy-ht05-melo-buds-anc-true-wireless-earbuds/",
+     "price": 2500,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/qcy-ht05-melobuds-anc-true-wireless-earbud/",
+     "price": 2490,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2890
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/qcy-ht05-melobuds-anc/",
+     "price": 2350,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "QCY",
+   "name": "MeloBuds N20",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earbuds/qcy/melobuds-n20/melobuds-n20-white-02-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3375/n20white.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/QCY-MeloBuds-N20-ANC-TWS-Earbuds-Black-3677.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/qcy-melobuds-n20-earbuds",
+   "offers": [
+    {
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/qcy-melobuds-n20-earbuds",
+     "price": 2250,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/qcy-melobuds-n20-anc-wireless-earbuds",
+     "price": 2449,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2500
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/qcy-melobuds-n20-anc-tws-earbuds",
+     "price": 2299,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2490
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/qcy-melobuds-n20-anc-earbuds",
+     "price": 2299,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Dolbear",
+     "url": "https://dolbear.com.bd/product/qcy-melobuds-n20-anc",
+     "price": 2449,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/qcy-melobuds-n20-earbuds/",
+     "price": 2340,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/qcy-melobuds-n20-anc-earbuds/",
+     "price": 2250,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2600
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/qcy-melobuds-n20-anc-wireless-earbuds/",
+     "price": 2390,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "QCY",
+   "name": "HT15 Buds ANC",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earbuds/qcy/buds-anc-ht15/buds-anc-ht15-featured-image-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2150/QCY_HT15_ANC_Earbuds_Black.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/QCY-HT15-Buds-ANC-TWS-Earbudsrt-3593.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/qcy-buds-anc-ht15-earbuds",
+   "offers": [
+    {
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/qcy-buds-anc-ht15-earbuds",
+     "price": 2100,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/qcy-ht15-anc-earbuds",
+     "price": 2099,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2500
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/qcy-ht15-buds-anc-tws-earbuds",
+     "price": 2150,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2300
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/qcy-ht15-buds-anc-earbuds",
+     "price": 2149,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/qcy-ht15-buds-anc-tws-black",
+     "price": 1750,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/qcy-ht15-earbuds/",
+     "price": 1940,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/qcy-ht15-buds-anc-tws-earbuds/",
+     "price": 2100,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/qcy-ht15-best-anc-wireless-earbuds/",
+     "price": 2150,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2300
+    }
+   ]
+  },
+  {
+   "brand": "Xiaomi",
+   "name": "Redmi Buds 5",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1132/White.webp",
+    "https://motionview.s3.amazonaws.com/images/products/profile/171393659972.Redmi Buds 5.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Redmi-Buds-5-4315.png"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/xiaomi-redmi-buds-5-46db-anc-tws-earbuds",
+   "offers": [
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/xiaomi-redmi-buds-5-46db-anc-tws-earbuds",
+     "price": 4199,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 4900
+    },
+    {
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/redmi-buds-5-anc-bluetooth-earbuds",
+     "price": 4499,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/redmi-buds-5",
+     "price": 3600,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/redmi-buds-5-46db-anc-earbuds",
+     "price": 4999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/redmi-buds-5",
+     "price": 4499,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/xiaomi-redmi-buds-5-46db-anc-earbuds/",
+     "price": 4199,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/redmi-buds-5-anc-earbuds/",
+     "price": 3700,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/redmi-buds-5-hydrid-anc-bluetooth-earbuds/",
+     "price": 4300,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/xiaomi-redmi-buds-5-46db-anc-earbuds-global-version/",
+     "price": 3150,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Xiaomi",
+   "name": "Redmi Buds 6 Active",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1844/Redmi_Buds_6_Active_.webp",
+    "https://motionview.s3.amazonaws.com/images/products/profile/174141406216.Redmi Buds 6 Active TWS Earbuds 1.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Redmi-Buds-6-Active-TWS-Earbuds-Blue-8353.jpg"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/redmi-buds-6-active",
+   "offers": [
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/redmi-buds-6-active",
+     "price": 2249,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/redmi-buds-6-active-tws-earbuds",
+     "price": 1999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/redmi-buds-6-active-tws-earbuds",
+     "price": 2250,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/redmi-buds-6-active-earbuds",
+     "price": 2399,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/xiaomi-redmi-buds-6-active-tws-earbuds",
+     "price": 2249,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/redmi-buds-6-active-tws-earbuds/",
+     "price": 1800,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2070
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/xiaomi-redmi-buds-6-active-tws-earbuds/",
+     "price": 2150,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2400
+    }
+   ]
+  },
+  {
+   "brand": "Xiaomi",
+   "name": "Redmi Buds 6 Lite",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/2045/redmi_buds_6_lite_black.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Redmi-Buds-6-Lite-ANC-TWS-Earbuds-9135.png",
+    "https://images.kryinternational.com/uploads/redmi-buds-6-lite-anc-earbuds.webp"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/redmi-buds-6-lite",
+   "offers": [
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/redmi-buds-6-lite",
+     "price": 2999,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 4000
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/redmi-buds-6-lite-anc-tws-earbuds",
+     "price": 2650,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 3200
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/redmi-buds-6-lite-anc-earbuds",
+     "price": 3099,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/redmi-buds-6-lite-earbuds/",
+     "price": 2490,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/xiaomi-redmi-buds-6-lite-anc-tws-earbuds/",
+     "price": 2590,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2850
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/redmi-buds-6-lite-anc-tws-earbuds/",
+     "price": 2460,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Anker",
+   "name": "Soundcore R50i",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earbuds/anker/soundcore-r50i/soundcore-r50i-03-1200x630.webp",
+    "https://motionview.s3.amazonaws.com/images/products/profile/178462891934.Soundcore-R50i-Gallery-Image-Black.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Anker-Soundcore-R50i-TWS1-4842.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/anker-soundcore-r50i-true-wireless-earbuds",
+   "offers": [
+    {
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/anker-soundcore-r50i-true-wireless-earbuds",
+     "price": 1590,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/soundcore-r50i-tws",
+     "price": 1999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/anker-soundcore-r50i-tws",
+     "price": 1649,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/anker-soundcore-r50i-earbuds",
+     "price": 1799,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/anker-soundcore-r50i-true-wireless-earbuds/",
+     "price": 2450,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2490
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/anker-soundcore-r50i-true-wireless-earbuds/",
+     "price": 2590,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/anker-soundcore-r50i-earbuds/",
+     "price": 1700,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 1955
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/anker-soundcore-r50i-tws-earbuds/",
+     "price": 1750,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2000
+    }
+   ]
+  },
+  {
+   "brand": "Anker",
+   "name": "Soundcore P25i",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1865/p25i_white.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Anker-Soundcore-P25i-TWS-Earbuds-8807.png",
+    "https://images.kryinternational.com/uploads/anker-soundcore-life-p25i-earbuds-black.jpg"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/anker-soundcore-p25i-true-wireless-earbuds",
+   "offers": [
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/anker-soundcore-p25i-true-wireless-earbuds",
+     "price": 2199,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2500
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/anker-soundcore-p25i-tws-earbuds",
+     "price": 2150,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/anker-soundcore-life-p25i-earbuds",
+     "price": 2300,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/anker-soundcore-life-p25i-true-wireless-earbuds",
+     "price": 2199,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/anker-soundcore-p25i-earbuds-black",
+     "price": 1750,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/anker-soundcore-life-p25i-true-wireless-earbuds/",
+     "price": 2090,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/anker-soundcore-p25i-true-wireless-earbuds/",
+     "price": 1950,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2250
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/anker-soundcore-p25i-true-wireless-earbuds/",
+     "price": 1780,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Oraimo",
+   "name": "FreePods Neo",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earbuds/oraimo/freepods-neo/freepods-neo-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1314/Post_Template_54.webp",
+    "https://motionview.s3.amazonaws.com/images/products/profile/178539550772.Oraimo-FreePods-Neo-TWS-Earbuds-OTW-330S-.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/oraimo-freepods-neo-tws-earbuds",
+   "offers": [
+    {
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/oraimo-freepods-neo-tws-earbuds",
+     "price": 1550,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oraimo-freepods-neo-enc-tws",
+     "price": 1799,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/oraimo-freepods-neo-true-wireless-earbuds",
+     "price": 1299,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oraimo-freepods-neo-earbuds",
+     "price": 1699,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/oraimo-freepods-neo-enc-true-wireless-earbuds",
+     "price": 2000,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Dolbear",
+     "url": "https://dolbear.com.bd/product/oraimo-freepods-neo-true-wireless-earbuds-",
+     "price": 1599,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/oraimo-freepods-neo-x-tahsan-true-wireless-earbuds/",
+     "price": 1900,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2500
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/oraimo-otw-330s-freepods-neo-tws-earbuds/",
+     "price": 1990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/oraimo-freepods-neo/",
+     "price": 1400,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 1610
+    }
+   ]
+  },
+  {
+   "brand": "Oraimo",
+   "name": "SpaceBuds Neo+",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earbuds/oraimo/spacebuds-neo-plus/spacebuds-neo-plus-gold-1200x630.webp",
+    "https://motionview.s3.amazonaws.com/images/products/profile/17551832249.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Oraimo-SpaceBuds-Neo+-OTW-323P-TWS-Earbuds-6178.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/oraimo-spacebuds-neo-plus-earbuds",
+   "offers": [
+    {
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/oraimo-spacebuds-neo-plus-earbuds",
+     "price": 2050,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/oraimo-otw-323p-spacebuds-neo",
+     "price": 2149,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oraimo-spacebuds-neo-plus-otw-323p-earbuds",
+     "price": 2050,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oraimo-spacebuds-neo-plus-anc-earbuds",
+     "price": 2299,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/oraimo-spacebuds-neo-plus/",
+     "price": 2200,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2530
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/oraimo-otw-323p-spacebuds-neo-tws/",
+     "price": 2100,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Oraimo",
+   "name": "FreePods Lite (OTW-330)",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1569/Oraimo_FreePods_Lite.webp",
+    "https://motionview.s3.amazonaws.com/images/products/profile/171602428686.Oraimo FreePods Lite OTW-330 TWS.4.webp",
+    "https://images.kryinternational.com/uploads/oraimo-freepods-lite-otw-330-earbuds-3.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/oraimo-freepods-lite-otw-330-true-wireless-earbuds",
+   "offers": [
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oraimo-freepods-lite-otw-330",
+     "price": 1499,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/oraimo-freepods-lite-otw-330-tws-earbuds",
+     "price": 1470,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oraimo-freepods-lite-otw-330-earbuds",
+     "price": 1560,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/oraimo-freepods-lite-enc-true-wireless-earbuds",
+     "price": 1585,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/oraimo-otw-330-freepods-lite-earbuds/",
+     "price": 1540,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/oraimo-freepods-lite/",
+     "price": 1500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 1725
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/oraimo-otw-330-freepods-lite-tws/",
+     "price": 1450,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "OnePlus",
+   "name": "Nord Buds 3r",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earbuds/oneplus/nord-buds-3r/nord-buds-3r-05-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3137/Buds_3r_1.webp",
+    "https://motionview.s3.amazonaws.com/images/products/profile/177246792439.Oneplus-Nord-Buds-3R-01.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/oneplus-nord-buds-3r",
+   "offers": [
+    {
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/oneplus-nord-buds-3r",
+     "price": 2740,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/oneplus-nord-buds-3r",
+     "price": 2999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 3499
+    },
+    {
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/oneplus-nord-buds-3r",
+     "price": 3299,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/oneplus-nord-buds-3r",
+     "price": 2899,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 3200
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/oneplus-nord-buds-3r-tws-earbuds",
+     "price": 2999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/oneplus-nord-buds-3r-earbuds",
+     "price": 3199,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/oneplus-nord-buds-3r/",
+     "price": 2800,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/oneplus-nord-buds-3r-best-tws-earbuds/",
+     "price": 2890,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 3500
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/oneplus-nord-buds-3r-tws-earbuds/",
+     "price": 2599,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "SoundPEATS",
+   "name": "Q3 Pro",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earbuds/soundpeats/q3-pro/q3-pro-black-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3675/SoundPEATS_Q3_Pro.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/SoundPeats-Q3-Pro-ANC-Earbuds-9775.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/soundpeats-q3-pro",
+   "offers": [
+    {
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/soundpeats-q3-pro",
+     "price": 1900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/soundpeats-q3-pro-anc-wireless-earbuds",
+     "price": 1899,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/soundpeats-q3-pro-anc-earbuds",
+     "price": 1950,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/soundpeats-q3-pro-anc-earbuds",
+     "price": 1899,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/soundpeats-q3-pro-anc-tws-earbuds-black",
+     "price": 1990,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/soundpeats-q3-pro-anc-earbuds/",
+     "price": 1900,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2100
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/soundpeats-q3-pro-anc-wireless-earbuds/",
+     "price": 1900,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2250
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/soundpeats-q3-pro-wireless-anc-earbuds/",
+     "price": 1745,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 1789
+    }
+   ]
+  },
+  {
+   "brand": "Haylou",
+   "name": "X1 Neo",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earbuds/xiaomi/haylou-x1-neo/haylou-x1-neo-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/654/Haylou_X1_Neo_TWS.webp",
+    "https://motionview.s3.amazonaws.com/images/products/profile/167853270359.Haylou X1 Neo True Wireless Earbuds.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/xiaomi-haylou-x1-neo-true-wireless-earbuds",
+   "offers": [
+    {
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/xiaomi-haylou-x1-neo-true-wireless-earbuds",
+     "price": 1390,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/haylou-x1-neo-true-wireless-earbuds",
+     "price": 1699,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/haylou-x1-neo-tws",
+     "price": 1550,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/haylou-x1-neo-true-wireless-earbuds",
+     "price": 1500,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/xiaomi-haylou-x1-neo-true-wireless-earbuds/",
+     "price": 1500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 1550
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/haylou-x1-neo-true-wireless-earbuds/",
+     "price": 1340,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/haylou-x1-neo-true-wireless-earbuds/",
+     "price": 1300,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Baseus",
+   "name": "Encok WM01",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earphone/baseus/wm01/wm01-black-01-1200x630.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/361/BASEUS_ENCOK_WM01_1.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/3210-21603.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/baseus-wm01-enock-true-earbuds",
+   "offers": [
+    {
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/baseus-wm01-enock-true-earbuds",
+     "price": 1231,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/baseus-encok-wm01-tws-true-wireless-bluetooth-earphone",
+     "price": 1500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/baseus-encok-wm01-tws-true-wireless-bluetooth-earphones",
+     "price": 1700,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/baseus-bowie-wm01-earbuds",
+     "price": 1399,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "PCB Store",
+     "url": "https://pcbstore.com.bd/product/baseus-wm01-enock-true-bluetooth-earbuds",
+     "price": 1500,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/baseus-wm01-enock-true-bluetooth-earbuds/",
+     "price": 1520,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 1670
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/baseus-encok-wm01/",
+     "price": 1380,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/baseus-bowie-wm01-best-tws-earphones/",
+     "price": 1390,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 1690
+    }
+   ]
+  },
+  {
+   "brand": "CMF by Nothing",
+   "name": "Buds 2a",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3490/CMF_Buds_2A_-_Dark_Grey.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/CMF-by-Nothing-Buds-2a-ANC-TWS-Earbuds-7493.png",
+    "https://images.kryinternational.com/uploads/nothing-cmf-buds-2a-anc-earbuds-or.webp"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/cmf-buds-2a",
+   "offers": [
+    {
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/cmf-buds-2a",
+     "price": 3299,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 3500
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/cmf-by-nothing-buds-2a-anc-tws-earbuds",
+     "price": 2750,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 3800
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/nothing-cmf-buds-2a-earbuds",
+     "price": 2999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/cmf-by-nothing-buds-2a/",
+     "price": 3190,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/cmf-by-nothing-buds-2a-anc-tws-earbuds/",
+     "price": 2890,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 3200
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/cmf-by-nothing-buds-2a-anc-tws-earbuds/",
+     "price": 2570,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    }
+   ]
+  },
+  {
+   "brand": "Realme",
+   "name": "Buds T200",
+   "category": "earbuds",
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earbuds/realme/buds-t200/buds-t200-01-1200x630.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/realme-Buds-T200-ANC-TWS-Earbuds-3-8748.jpg",
+    "https://images.kryinternational.com/uploads/realme-buds-t200-wireless-earbuds-4.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/realme-buds-t200",
+   "offers": [
+    {
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/realme-buds-t200",
+     "price": 2250,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/realme-buds-t200-anc-tws-earbuds",
+     "price": 2550,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/realme-buds-t200-earbuds",
+     "price": 2699,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Dolbear",
+     "url": "https://dolbear.com.bd/product/realme-buds-t200",
+     "price": 2899,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard"
+    },
+    {
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/realme-buds-t200-premium-ldac-earbuds/",
+     "price": 2300,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2500
+    },
+    {
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/realme-buds-t200-tws/",
+     "price": 2130,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-31",
+     "variant": "Standard",
+     "oldPrice": 2150
+    }
+   ]
   }
  ]
 }

@@ -1,0 +1,2605 @@
+{
+  "category": "trimmer",
+  "sites": [],
+  "products": [
+    {
+      "brand": "VGR",
+      "name": "V-937 Professional Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1700
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/vgr/v-937/v-937-03-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/VGR-V-937-Professional-Rechargeable-Hair-Trimmer-5459.png",
+        "https://dolbear.com.bd/public/images/20261026103627image_190x230-353.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/vgr-v-937-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/vgr-v-937-trimmer",
+          "price": 1250,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/vgr-v-937-professional-rechargeable-hair-trimmer",
+          "price": 1299,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1430
+        },
+        {
+          "site": "Dolbear",
+          "url": "https://dolbear.com.bd/product/vgr-v-937-cord-cordless-hair-clipper-and-beard-trimmer",
+          "price": 1299,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/vgr-v-937-professional-rechargeable-hair-trimmer",
+          "price": 1499,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/vgr-v-937-hair-trimmer/",
+          "price": 1690,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/vgr-v-937-professional-rechargeable-hair-trimmer/",
+          "price": 1450,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1650
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/63482/vgr-v-937-cord-cordless-professional-hair-beard-trimmer-for-men",
+          "price": 1699,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/vgr-v937-professional-rechargeable-hair-trimmer/",
+          "price": 1149,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/vgr-v-937-professional-corded-and-cordless-hair-trimmer-runtime500-minutes-yilqa",
+          "price": 1675,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "VGR",
+      "name": "V-932 Pocket Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1700
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/vgr/v-932/v-932-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/VGR-V-932-Professional-Pocket-Hair-Trimmer-7656.png",
+        "https://dolbear.com.bd/public/images/20261026105825image_190x230-32.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/vgr-v-932-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/vgr-v-932-trimmer",
+          "price": 1200,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/vgr-v-932-professional-pocket-hair-trimmer",
+          "price": 1200,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Dolbear",
+          "url": "https://dolbear.com.bd/product/vgr-v-932-professional-pocket-hair-trimmer",
+          "price": 1349,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/vgr-v-932-trimmer/",
+          "price": 1540,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/vgr-v-932-premium-pocket-hair-trimmer/",
+          "price": 1450,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1800
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/64432/vgr-v-932-cord-cordless-professional-hair-beard-trimmer-for-men",
+          "price": 1334,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/vgr-v-932-professional-hair-trimmer/",
+          "price": 1145,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/vgr-v-932-professional-hair-trimmer-zfgeo",
+          "price": 1660,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "VGR",
+      "name": "V-963 Beard and Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3534/VGR_V-963_1.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/VGR-V-963-Hair-Trimmer-6281.png",
+        "https://pcbstore.com.bd/storage/products/vgr-v-963-beard-and-hair-trimmer.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/vgr-v-963-trimmer",
+      "offers": [
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/vgr-v-963-professional-cordless-beard-hair-trimmer",
+          "price": 1249,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/vgr-v-963-hair-trimmer",
+          "price": 1300,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/vgr-v-963-beard-and-hair-trimmer",
+          "price": 1520,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Dolbear",
+          "url": "https://dolbear.com.bd/product/vgr-v-963-cordless-beard-hair-trimmer",
+          "price": 1500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/vgr-v-963-cordless-beard-and-hair-trimmer-for-men/",
+          "price": 1390,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1690
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/67868/vgr-v-963-professional-rechargeable-cordless-beard-hair-trimmer",
+          "price": 1540,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "VGR",
+      "name": "V-185 Professional Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1842
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/vgr/v-185/v-185-01-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/vgr-v-185-professional-trimmer-6901.png",
+        "https://dolbear.com.bd/public/images/20261025135053image_190x230-75.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/vgr-v-185-professional-and-beard-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/vgr-v-185-professional-and-beard-trimmer",
+          "price": 1437,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/vgr-v-185-professional-trimmer",
+          "price": 1600,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Dolbear",
+          "url": "https://dolbear.com.bd/product/vgr-v-185-professional-hair-clipper-and-beard-trimmer",
+          "price": 1490,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/vgr-v185-professional-hair-beard-trimmer/",
+          "price": 1340,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Kemei",
+      "name": "KM-5017 Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1550
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/kemei/km-5017/km-5017-04-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Kemei-KM-5017-Rechargeable-Hair-Trimmer-5186.jpg",
+        "https://pcbstore.com.bd/storage/products/kemei-km-5017-hair-trimmer.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/kemei-km-5017-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/kemei-km-5017-trimmer",
+          "price": 1100,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/kemei-km-5017-rechargeable-hair-trimmer",
+          "price": 1100,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2000
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/kemei-km-5017-hair-trimmer",
+          "price": 1450,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/kemei-km-5017-hair-clipper-beard-trimmer/",
+          "price": 1120,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/kemei-km-5017-trimmer/",
+          "price": 1100,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1399
+        }
+      ]
+    },
+    {
+      "brand": "Kemei",
+      "name": "KM-6330 3-in-1 Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1350
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/kemei/km-6330/km-6330-01-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Kemei-KM-6330-3-In-1-Hair-Trimmer-Grooming-Kitaa-7373.png",
+        "https://diamu.com.bd/wp-content/uploads/2023/11/Kemei-KM-6330-3-in-1-Multifunctional-Trimmer.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/kemei-km-6330-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/kemei-km-6330-trimmer",
+          "price": 940,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/kemei-km-6330-3-in-1-hair-trimmer-grooming-kit",
+          "price": 990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1199
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/kemei-km-6330-multifunctional-trimmer/",
+          "price": 1010,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/kemei-km-6330-3-in-1-hair-clipper-grooming-kit/",
+          "price": 1200,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1499
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/kemei-km-6330-3-in-1-hair-trimmer/",
+          "price": 890,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Enchen",
+      "name": "Boost Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1850
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/gadget/daily-lifestyle/enchen/boost/boost-01-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Xiaomi-ENCHEN-Boost-Hair-Trimmer-a-4865.jpg",
+        "https://images.kryinternational.com/uploads/enchen-boost-trimmer-price-in-bangladesh.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/enchen-boost-hair-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/enchen-boost-hair-trimmer",
+          "price": 1340,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/xiaomi-enchen-boost-hair-trimmer",
+          "price": 1150,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1399
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/xiaomi-enchen-boost-trimmer",
+          "price": 1599,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/xiaomi-mi-boost-electric-trimmer/",
+          "price": 1290,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/xiaomi-enchen-boost-hair-trimmer/",
+          "price": 1450,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1800
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/83541/xiaomi-enchen-boost-hair-trimmer",
+          "price": 1500,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-enchen-boost/",
+          "price": 1160,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1200
+        }
+      ]
+    },
+    {
+      "brand": "Enchen",
+      "name": "Boost 2 Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 2000
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/enchen/boost-2/boost-2-01-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3449/Xiaomi_Enchen_Boost_2_Hair_Trimmer_-_Black.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Xiaomi-ENCHEN-Boost-2-Hair-Trimmerdfh-5520.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/enchen-boost-2-electric-hair-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/enchen-boost-2-electric-hair-trimmer",
+          "price": 1440,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/xiaomi-enchen-boost-2-hair-trimmer",
+          "price": 1399,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/xiaomi-enchen-boost-2-hair-trimmer",
+          "price": 1450,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1820
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/xiaomi-enchen-boost-2-trimmer",
+          "price": 1599,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/xiaomi-enchen-boost-2-usb-electric-hair-trimmer/",
+          "price": 1490,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/xiaomi-enchen-boost-2-hair-trimmer/",
+          "price": 1490,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1600
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-enchen-boost-2-electric-hair-trimmer/",
+          "price": 1310,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1449
+        }
+      ]
+    },
+    {
+      "brand": "Enchen",
+      "name": "Boost 3 Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 3200
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/enchen/boost-3/boost-3-06-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/ENCHEN-Boost-3-Hair-Clipper-Hair-Trimmer-5412.png",
+        "https://diamu.com.bd/wp-content/uploads/2026/05/ENCHEN-Boost-3-Hair-Clipper-Hair.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/enchen-boost-3-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/enchen-boost-3-trimmer",
+          "price": 2688,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/enchen-boost-3-trimmer",
+          "price": 2750,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/enchen-boost-3-hair-clipper/",
+          "price": 2140,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/xiaomi-enchen-boost-3-hair-clipper/",
+          "price": 2650,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2990
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-enchen-boost-3-metal-hair-clipper/",
+          "price": 2490,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Enchen",
+      "name": "Beardo Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 2000
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/enchen/beardo/beardo-03-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Enchen-Beardo-Trimmer-4748.png",
+        "https://sheitech.com.bd/wp-content/uploads/2026/05/Xiaomi-ENCHEN-Beardo-Trimmer.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/enchen-beardo-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/enchen-beardo-trimmer",
+          "price": 1440,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/enchen-beardo-trimmer",
+          "price": 1450,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/xiaomi-enchen-beardo-precise-beard-trimmer/",
+          "price": 1400,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1600
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/enchen-beardo-trimmer/",
+          "price": 1390,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "DIZO",
+      "name": "Trimmer Neo",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1850
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/dizo/trimmer/trimmer-neo/dizo-trimmer-neo-05-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1599/dizo_trimmer.webp",
+        "https://motionview.s3.amazonaws.com/images/products/profile/176288051412.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/dizo-trimmer-neo",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/dizo-trimmer-neo",
+          "price": 1380,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/dizo-trimmer-neo",
+          "price": 1399,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/realme-dizo-trimmer-neo-for-men",
+          "price": 1499,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/dizo-trimmer-neo",
+          "price": 1450,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/dizo-trimmer-neo",
+          "price": 1399,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/dizo-trimmer-neo-precise-trimmer-for-men/",
+          "price": 1400,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1670
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/56937/dizo-trimmer-neo-dt3221-for-men",
+          "price": 1444,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/dizo-trimmer-neo/",
+          "price": 1290,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Beard Trimmer 2C",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 3500
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/xiaomi/trimmer/beard-2c/beard-2c-01-1200x630.webp",
+        "https://motionview.s3.amazonaws.com/images/products/profile/176409038344.webp",
+        "https://assets.gadgetandgear.com/upload/media/1723521024092903.jpeg"
+      ],
+      "specsSource": "https://www.startech.com.bd/xiaomi-beard-trimmer-2c",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/xiaomi-beard-trimmer-2c",
+          "price": 2450,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/xiaomi-beard-trimmer-2c",
+          "price": 2499,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget & Gear",
+          "url": "https://gadgetandgear.com/product/xiaomi-2c-high-precision-beard-trimmer",
+          "price": 2990,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/xiaomi-beard-trimmer-2c",
+          "price": 2250,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2800
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/xiaomi-beard-trimmer-2c",
+          "price": 2499,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/xiaomi-beard-trimmer-2c/",
+          "price": 2499,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2875
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/mi-beard-trimmer-2c/",
+          "price": 2390,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/xiaomi-precision-beard-trimmer-2c/",
+          "price": 2450,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2750
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/70133/mi-by-xiaomi-beard-2c-trimmer-black",
+          "price": 2239,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-mi-beard-trimmer-2c/",
+          "price": 2250,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Grooming Kit Pro",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 6000
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/xiaomi/trimmer/mi-grooming-kit-pro/mi-grooming-kit-pro-01-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1315/Post_Template_55.webp",
+        "https://motionview.s3.amazonaws.com/images/products/profile/173726650442.Xiaomi Grooming Kit Pro Professional Styling Trimmer With Body Grooming 3.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/xiaomi-mi-grooming-kit-pro-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/xiaomi-mi-grooming-kit-pro-trimmer",
+          "price": 4950,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/xiaomi-grooming-kit-pro",
+          "price": 4999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/xiaomi-mi-grooming-kit-pro",
+          "price": 4799,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/xiaomi-grooming-kit-pro-professional-styling-trimmer-with-body-grooming",
+          "price": 5100,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 6000
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/xiaomi-grooming-kit-pro",
+          "price": 5000,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/xiaomi-grooming-kit-pro/",
+          "price": 4499,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 5175
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/xiaomi-mi-grooming-kit-pro/",
+          "price": 4790,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/xiaomi-grooming-kit-pro-trimmer/",
+          "price": 5350,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 5500
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-grooming-kit-pro/",
+          "price": 5100,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 5290
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Hair Clipper 2",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 4500
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/xiaomi/hair-clipper-2/hair-clipper-2-01-1200x630.webp",
+        "https://motionview.s3.amazonaws.com/images/products/profile/17363960370.Xiaomi MIJIA Hair Clipper 2 Professional Hair and Beard Clipper Machine- Grey copy 3.webp",
+        "https://sheitech.com.bd/wp-content/uploads/2025/10/Xiaomi-MIJIA-Hair-Clipper-2-with-Obsidian-Blade.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/xiaomi-hair-clipper-2-hair-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/xiaomi-hair-clipper-2-hair-trimmer",
+          "price": 3600,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/xiaomi-hair-clipper-2",
+          "price": 4599,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/xiaomi-mijia-hair-clipper-2-obsidian-blade/",
+          "price": 3690,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 4000
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-mijia-hair-clipper-2/",
+          "price": 3550,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 3600
+        }
+      ]
+    },
+    {
+      "brand": "Oraimo",
+      "name": "Smart Trimmer 2 (OPC-TR12)",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1926
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/oraimo/smart-trimmer-2/smart-trimmer-2-03-1200x630.webp",
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/513/oraimo_opc_tr12_1.webp",
+        "https://motionview.s3.amazonaws.com/images/products/profile/178746788948.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/oraimo-smart-trimmer-2-opc-tr12",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/oraimo-smart-trimmer-2-opc-tr12",
+          "price": 1740,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/oraimo-smart-trimmer-2",
+          "price": 1899,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/oraimo-opc-tr12-smart-trimmer-2",
+          "price": 1970,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/oraimo-tr12-multifunctional-smart-trimmer-2",
+          "price": 1750,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/oraimo-smart-trimmer-2/",
+          "price": 1999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Philips",
+      "name": "BT1230 Beard Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 2490
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/philips/bt1230-15/bt1230-15-01-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Philips-BT1230-Beard-Trimmer-3424.png",
+        "https://dolbear.com.bd/public/images/20260929130050image_190x230-317.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/philips-bt123018-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/philips-bt123018-trimmer",
+          "price": 1800,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/philips-bt1230-beard-trimmer",
+          "price": 1450,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2600
+        },
+        {
+          "site": "Dolbear",
+          "url": "https://dolbear.com.bd/product/philips-bt1230-beard-trimmer-1000-series",
+          "price": 1500,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/philips-bt1230-15-cordless-trimmer/",
+          "price": 1599,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/55558/philips-bt1230-18-series-1000-rechargeable-beard-trimmer",
+          "price": 1760,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Philips",
+      "name": "BT3101 Beard Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 3200
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/philips/bt3101-15/bt3101-15-03-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Philips-BT310115-Series-3000-Beard-Trimmer-5496.jpg",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC82NDQ0MlwvNjQ0NDItYjFkNDkxMTI3M2M5NDRhYTk5YTVhZTc4MDEwMzAwNWQtN2ZrOWVyLndlYnAiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0="
+      ],
+      "specsSource": "https://www.startech.com.bd/philips-bt3101-15-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/philips-bt3101-15-trimmer",
+          "price": 2100,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/philips-bt310115-series-3000-beard-trimmer",
+          "price": 2000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2350
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/64442/philips-bt-3101-15-series-3000-beard-trimmer-for-men",
+          "price": 1925,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/philips-bt3101-15-beard-trimmer-series/",
+          "price": 2090,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Oraimo",
+      "name": "EasyCut Hair Clipper (OCL-230)",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/3132/Oraimo_EasyCut_Hair_Clipper___OCL-230.webp",
+        "https://motionview.s3.amazonaws.com/images/products/profile/178746682344.webp",
+        "https://mobilebuzzbd.com/wp-content/uploads/2026/10/Oraimo-EasyCut-Super-Powerful-Clipper.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/oraimo-easycut-hair-trimmer",
+      "offers": [
+        {
+          "site": "Sumash Tech",
+          "url": "https://www.sumashtech.com/product/oraimo-easycut-hair-clipper",
+          "price": 1899,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/oraimo-easycut-electric-trimmer-ocl-230",
+          "price": 1910,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/oraimo-easycut-super-powerful-clipper/",
+          "price": 1999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/oraimo-trimmer-easycut-super-powerful-adjustable-hair-clipper-ocl-230/",
+          "price": 1990,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2250
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/oraimo-easycut-ocl-230-hair-clipper/",
+          "price": 1700,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Kemei",
+      "name": "KM-9050 Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Kemei-KM-9050-Rechargeable-Hair-Trimmer--b-5857.jpg",
+        "https://diamu.com.bd/wp-content/uploads/2024/02/Kemei-KM-9050-Beard-Hair-Trimmer.jpg",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC83MDEzNlwvNzAxMzYta20tOTA1MC1udzRjcnIuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ=="
+      ],
+      "specsSource": "https://www.startech.com.bd/kemei-km-9050-trimmer",
+      "offers": [
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/kemei-km-9050-rechargeable-hair-trimmer",
+          "price": 660,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/kemei-km-9050-trimmer/",
+          "price": 720,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/70136/kemei-km-9050-professional-hair-trimmer-for-men",
+          "price": 720,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/kemei-km-9050-beard-amp-hair-trimmer/",
+          "price": 680,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Kemei",
+      "name": "KM-234 Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1450
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/kemei/km-234/km-234-06-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Kemei-KM-234-Hair-and-Beard-Trimmeraaa-5481.png",
+        "https://sheitech.com.bd/wp-content/uploads/2026/02/Kemei-KM-234-Professional-Beard-Hair-Clipper-Trimmer-1.avif"
+      ],
+      "specsSource": "https://www.startech.com.bd/kemei-km-234-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/kemei-km-234-trimmer",
+          "price": 1100,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/kemei-km-234-hair-and-beard-trimmer",
+          "price": 1150,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/kemei-km-234-professional-beard-hair-clipper-trimmer/",
+          "price": 1250,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1550
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/kemei-km-234-professional-beard-hair/",
+          "price": 1090,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Kemei",
+      "name": "KM-600 6-in-1 Grooming Kit",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Kemei-KM-600-Electric-Hair-Clipper-Beard-Trimmer1-1876.jpg",
+        "https://diamu.com.bd/wp-content/uploads/2024/02/Kemei-KM-600-11-in-1-Multigrooming-Set.jpg",
+        "https://sheitech.com.bd/wp-content/uploads/2026/01/Kemei-KM-600-Trimmer.avif"
+      ],
+      "offers": [
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/kemei-km-600-electric-hair-clipper-beard-trimmer",
+          "price": 1900,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/kemei-km-600-multi-grooming-set/",
+          "price": 1970,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/kemei-km-600-trimmer/",
+          "price": 2050,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2350
+        },
+        {
+          "site": "Shajgoj",
+          "url": "https://shop.shajgoj.com/product/km-600-kemei-6-in-1-titanium-hair-trimmer-black",
+          "price": 2250,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "HTC",
+      "name": "AT-530 Beard Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1100
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/htc/at-530/at-530-02-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/HTC-AT-530-Beard-Trimmer-1181.png",
+        "https://diamu.com.bd/wp-content/uploads/2024/05/HTC-AT-530-Beard-Trimmer-.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/htc-at-530-beard-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/htc-at-530-beard-trimmer",
+          "price": 880,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/htc-at-530-beard-trimmer",
+          "price": 650,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/htc-at-530-beard-trimmer/",
+          "price": 550,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/70260/htc-at-530-rechargeable-hair-trimmer",
+          "price": 550,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Enchen",
+      "name": "Beardo 3 Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 2800
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/enchen/beardo-3/beardo-3-04-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Enchen-Beardo-3-Multifunctional-Trimmer-Black-9897.png",
+        "https://sheitech.com.bd/wp-content/uploads/2026/05/Enchen-Beardo-3-Multifunctional-Trimmer.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/enchen-beardo-3-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/enchen-beardo-3-trimmer",
+          "price": 1840,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/enchen-beardo-3-multifunctional-trimmer",
+          "price": 1850,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/enchen-beardo-3-multifunctional-trimmer/",
+          "price": 1850,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2100
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/enchen-beardo-3-multifunctional-rechargeable-trimmer/",
+          "price": 1790,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Enchen",
+      "name": "Sharp 3S Hair Clipper",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 2200
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/enchen/sharp-3s/sharp-3s-06-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/ENCHEN-Sharp-3S-Hair-Clipper-Trimmer-2326.png",
+        "https://sheitech.com.bd/wp-content/uploads/2026/05/Xiaomi-Enchen-Sharp-3S-Rechargeable-Hair-Clipper.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/enchen-sharp-3s-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/enchen-sharp-3s-trimmer",
+          "price": 1650,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/enchen-sharp-3s-hair-clipper-trimmer",
+          "price": 1800,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/xiaomi-enchen-sharp-3s-rechargeable-hair-clipper/",
+          "price": 1750,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2000
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-enchen-sharp-3s-rechargeable-hair-clipper/",
+          "price": 1610,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1620
+        }
+      ]
+    },
+    {
+      "brand": "DIZO",
+      "name": "Trimmer Kit (DT2126)",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 2350
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/dizo/trimmer/trimmer-kit/trimmer-kit-01-1200x630.webp",
+        "https://motionview.s3.amazonaws.com/images/products/profile/174054254634.Realme Dizo Trimmer Kit Pro Trimmer 1.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/DIZO-Trimmer-Kit-7859.png"
+      ],
+      "specsSource": "https://www.startech.com.bd/dizo-trimmer-kit",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/dizo-trimmer-kit",
+          "price": 1980,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Motion View",
+          "url": "https://motionview.com.bd/product/realme-dizo-trimmer-kit",
+          "price": 3599,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/dizo-trimmer-kit",
+          "price": 1999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Kry International",
+          "url": "https://kryinternational.com/products/dizo-trimmer-kit-dt2126",
+          "price": 2299,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/dizo-trimmer-kit-dt2126/",
+          "price": 2100,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2500
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/dizo-trimmer-kit-dt2126-by-realme/",
+          "price": 1850,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1870
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Huanxing EC101 Mini Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 3000
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/xiaomi/huanxing-ec101/huanxing-ec101-01-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Xiaomi-Huanxing-Ec101-a-4700.jpg",
+        "https://sheitech.com.bd/wp-content/uploads/2025/07/Xiaomi-Huanxing-EC101-Multifunctional-Mini-Electric-Hair-Clipper-black-1.avif"
+      ],
+      "specsSource": "https://www.startech.com.bd/xiaomi-huanxing-ec101-hair-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/xiaomi-huanxing-ec101-hair-trimmer",
+          "price": 2100,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/xiaomi-huanxing-ec101-multifunctional-mini-electric-hair-clipper",
+          "price": 2100,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 3000
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/xiaomi-huanxing-ec101-mini-trimmer/",
+          "price": 2000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2150
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/82638/xiaomi-huanxing-ec101-multifunctional-mini-electric-hair-clipper",
+          "price": 2112,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-huanxing-ec101-multifunctional-mini-electric-hair-clipper/",
+          "price": 1850,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1880
+        }
+      ]
+    },
+    {
+      "brand": "Kemei",
+      "name": "KM-3024 4-in-1 Shaver for Women",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1980
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/kemei/km-3024/km-3024-05-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/imgi_24_kemei-km-3024-4-in-1-rechargeable-lady-shavern-1243.png",
+        "https://d2wq6yavto3g7k.cloudfront.net/uploads/all/1(705).jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/kemei-km-3024-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/kemei-km-3024-trimmer",
+          "price": 1030,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/kemei-km-3024-4-in-1-shaver-for-women",
+          "price": 950,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Perfecto",
+          "url": "https://perfectobd.com/product/kemei-4-in-1-rechargeable-shaver-suit-km-3024",
+          "price": 1200,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/kemei-km-3024-4-in-1-shaver-suit-for-women/",
+          "price": 1290,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/kemei-km-3024-trimmer/",
+          "price": 1290,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/64453/kemei-km-3024-4-in-1-rechargeable-shaver-suit-for-women",
+          "price": 1149,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Klassy Missy",
+          "url": "https://klassy.com.bd/product/kemei-km-3024-4-in-1-shaver-suit-qoxoj",
+          "price": 1250,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Kemei",
+      "name": "KM-6637 4-in-1 Shaver for Women",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Kemei-KM-6637-4-In-1-Shaver-for-Womenaaa-7819.png",
+        "https://diamu.com.bd/wp-content/uploads/2023/11/Kemei-KM-6637-Multi-Functional-Shaver.jpg",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC83Njg3NlwvNzY4NzYtMWVjODI4ZTNmOGRkYWVhNTliYzg0OWNhOTE4MGYxMzcta2N1OHNoLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0="
+      ],
+      "offers": [
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/kemei-km-6637-4-in-1-shaver-for-women",
+          "price": 1049,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "BD Amajan Shop",
+          "url": "https://bdamajanshop.com/product/kemei-km-6637-multi-functional-4-in-1-shaver-for-women/",
+          "price": 1390,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1690
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/kemei-km-6637-multi-functional-shaver/",
+          "price": 1290,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/76876/kemei-km-6637-4-in-1-rechargeable-women-body-eyebrow-and-nose-hair-removal-trimmer",
+          "price": 1034,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Huanxing HN3 Nose Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 1850
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/xiaomi/huanxing-hn3/huanxing-hn3-01-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Xiaomi-Huanxing-HN3-Electric-Nose-Trimmera-9552.png",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC81NzQxOVwvNTc0MTktWGlhb21pLU5ld1N0YXItTm9zZS1IYWlyLVRyaW1tZXItV2hpdGUtQk1RMzEwMS03dW1lbWcud2VicCIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ=="
+      ],
+      "specsSource": "https://www.startech.com.bd/xiaomi-huanxing-hn3-nose-trimmer",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/xiaomi-huanxing-hn3-nose-trimmer",
+          "price": 1175,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/xiaomi-huanxing-hn3-electric-nose-trimmer",
+          "price": 1000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/57419/xiaomi-huanxing-hn3-mini-nose-hair-trimmer",
+          "price": 1309,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-huanxing-hn3-nose-trimmer/",
+          "price": 980,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Enchen",
+      "name": "Blackstone Electric Shaver",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 2500
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/gadget/daily-lifestyle/enchen/blackstone/blackstone-01-1200x630.jpg",
+        "https://pcbstore.com.bd/storage/products/enchen-blackstone-mens-electric-shaver-main.webp",
+        "https://diamu.com.bd/wp-content/uploads/2021/08/Enchen-Blackstone-3D-Electric-Shaver-1.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/enchen-blackstone-electric-shaver",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/enchen-blackstone-electric-shaver",
+          "price": 1550,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "PCB Store",
+          "url": "https://pcbstore.com.bd/product/enchen-blackstone-mens-electric-shaver",
+          "price": 1650,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/enchen-blackstone-3d-electric-shaver/",
+          "price": 1440,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/xiaomi-enchen-3d-blackstone-electric-shave/",
+          "price": 1600,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1990
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/55565/xiaomi-enchen-blackstone-electric-shaver-smooth-to-shave",
+          "price": 1700,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-enchen-3d-blackstone-electric-shaver/",
+          "price": 1390,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1410
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Electric Shaver S500",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 4200
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/daily-lifestyle/xiaomi/mi-electric-shaver-s500/mi-electric-shaver-s500-01-1200x630.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Xiaomi-S500-Electric-Shaver-s-6698.png",
+        "https://sheitech.com.bd/wp-content/uploads/2026/01/Xiaomi-Mijia-S500-Electric-Shaver.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/mi-electric-shaver-s500",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/mi-electric-shaver-s500",
+          "price": 3360,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/xiaomi-s500-electric-shaver",
+          "price": 3650,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/xiaomi-mijia-s500-electric-shaver/",
+          "price": 3590,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 4000
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-mijia-s500-electric-shaver/",
+          "price": 3290,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Kemei",
+      "name": "KM-5015 Hair Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/Kemei-KM-5015-Beard-&-Hair-Trimmer-8819.png",
+        "https://diamu.com.bd/wp-content/uploads/2023/11/Kemei-KM-5015-Beard-Trimmer.jpg",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC83MDE3M1wvNzAxNzMtSDhjOWFjNjU4Njg5NDQyNDVhOGExNmFkYTJhN2M2MGM0eS1zZGl3YnIuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJvdXRzaWRlIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6ImFyb2dnYSIsImtleSI6Im1pc2NcL3dtLnBuZyIsImFscGhhIjo5MH19fQ=="
+      ],
+      "specsSource": "https://www.startech.com.bd/kemei-km-5015-trimmer",
+      "offers": [
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/kemei-km-5015-beard-and-hair-trimmer",
+          "price": 1200,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/kemei-km-5015-beard-trimmer/",
+          "price": 1250,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/70173/kemei-km-5015-professional-hair-clipper-for-men",
+          "price": 1199,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "HTC",
+      "name": "AT-538 Beard Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/HTC-AT-538-Beard-Trimmer-2173.png",
+        "https://diamu.com.bd/wp-content/uploads/2023/11/HTC-AT-538-Rechargeable-Hair-and-Beard-Trimmer.jpg",
+        "https://sheitech.com.bd/wp-content/uploads/2026/02/HTC-AT-538-Hair-Beard-Trimmer-For-Men.avif"
+      ],
+      "specsSource": "https://www.startech.com.bd/htc-at-538-beard-trimmer",
+      "offers": [
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/htc-at-538-beard-trimmer",
+          "price": 700,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Diamu",
+          "url": "https://diamu.com.bd/product/htc-at-538-rechargeable-hair-and-beard-trimmer/",
+          "price": 570,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/htc-at-538-hair-beard-trimmer-for-men/",
+          "price": 800,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1050
+        }
+      ]
+    },
+    {
+      "brand": "HTC",
+      "name": "AT-505 Beard Trimmer",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": null
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://adminapi.applegadgetsbd.com/storage/media/large/HTC-AT-505-Beard-Trimmera-9283.png",
+        "https://sheitech.com.bd/wp-content/uploads/2026/02/HTC-AT-505-Hair-Beard-Trimmer.avif",
+        "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC83MDI1OVwvNzAyNTktSFRDLUFULTd1cnVyYS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19"
+      ],
+      "specsSource": "https://www.startech.com.bd/htc-at-505-beard-trimmer",
+      "offers": [
+        {
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/htc-at-505-beard-trimmer",
+          "price": 700,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/htc-at-505-hair-beard-trimmer/",
+          "price": 800,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 1000
+        },
+        {
+          "site": "Arogga",
+          "url": "https://www.arogga.com/product/70259/htc-at-505-rechargeable-hair-trimmer-for-men",
+          "price": 699,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Mijia S100 Electric Shaver",
+      "category": "trimmer",
+      "variants": [
+        {
+          "label": "Standard",
+          "attributes": {},
+          "officialPrice": 3200
+        }
+      ],
+      "colors": [],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/trimmer/xiaomi/mijia-s100/mijia-s100-01-1200x630.webp",
+        "https://sheitech.com.bd/wp-content/uploads/2025/12/Xiaomi-MIJIA-S100-Dual-Blades-Electric-Razor-Shaver.avif",
+        "https://gadgetbreeze.com.bd/wp-content/uploads/2025/05/Xiaomi-MIJIA-S100-Dual-Blades-Electric-Razor-Shaver.jpg"
+      ],
+      "specsSource": "https://www.startech.com.bd/xiaomi-mijia-s100-electric-shaver",
+      "offers": [
+        {
+          "site": "Star Tech",
+          "url": "https://www.startech.com.bd/xiaomi-mijia-s100-electric-shaver",
+          "price": 2240,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        },
+        {
+          "site": "Shei Tech",
+          "url": "https://sheitech.com.bd/product/xiaomi-mijia-s100-dual-blades-electric-razor-shaver/",
+          "price": 2050,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard",
+          "oldPrice": 2390
+        },
+        {
+          "site": "Gadget Breeze",
+          "url": "https://gadgetbreeze.com.bd/product/xiaomi-mijia-s100-dual-blades-electric-razor-shaver/",
+          "price": 2300,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-10-31",
+          "variant": "Standard"
+        }
+      ]
+    }
+  ]
+}

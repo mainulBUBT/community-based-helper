@@ -71,6 +71,7 @@ const STARTECH_CATEGORIES = [
   "/charger-fan",
   "/networking/router",
   "/water-purifier",
+  "/trimmer",
 ];
 
 function parseStartechListings(html: string): Listing[] {

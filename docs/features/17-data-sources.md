@@ -518,6 +518,16 @@ Samsung-এর S/Z সিরিজ, Pixel আর বড় ব্র্যান
 - **MobileDokan:** মোবাইলের একটাই দাম দেখায়, দোকানভিত্তিক নয়।
 - আগে ছিল, এখন বন্ধ: price.com.bd, dam.com.bd।
 
+### ট্রিমার (৩১ অক্টোবর ২০২৬)
+
+নতুন ক্যাটাগরি `trimmer` (migration `20261031120000_trimmer-category.sql`, এক ভার্সন `Standard`, আইকন `scissors`), Star Tech-এর `/trimmer` পাতা `STARTECH_CATEGORIES`-এ। মালিকের শর্ত: বাজেট আর ভালো ট্রিমার, প্রতিটায় অন্তত ৪-৫টা দোকান। ১৭টা পণ্য, ১০৫টা দাম, প্রতিটা ৪–১০টা দোকানে: VGR V-937, V-932, V-963, V-185; Kemei KM-5017, KM-6330; Enchen Boost, Boost 2, Boost 3, Beardo; DIZO Trimmer Neo; Xiaomi Beard Trimmer 2C, Grooming Kit Pro, Hair Clipper 2; Oraimo Smart Trimmer 2; Philips BT1230, BT3101। দাম worker নিজে লাইভ পড়েছে, `worker:check` ০ মেলেনি। বাদ: Sumash Tech-এর V-937/V-932 (দাম নেই), Star Tech-এর V-963 (To be announced)। `releaseYear` খালি, কারণ বছর নিশ্চিত নয়।
+
+একই দিনে আরও ১৪টা (মোট ৩১ পণ্য, ১৭০ দাম; মালিক চাইলেন বাজেট, ছেলে-মেয়ে আর ট্রিমার-জাতীয় জিনিস, আপাতত সব এই ক্যাটাগরিতেই): Oraimo EasyCut; Kemei KM-9050, KM-234, KM-600; HTC AT-530; Enchen Beardo 3, Sharp 3S; DIZO Trimmer Kit; Xiaomi Huanxing EC101; মেয়েদের Kemei KM-3024, KM-6637; নাকের Xiaomi Huanxing HN3; শেভার Enchen Blackstone, Xiaomi S500। পরে মালিক বললেন দাম দেখালে আর বাজেটের হলে ৩ দোকানেও চলবে, তাই যোগ হলো Kemei KM-5015, HTC AT-538, AT-505, Xiaomi Mijia S100 (মোট ৩৫ পণ্য, ১৮২ দাম; Star Tech-এ To be announced বলে এগুলোর স্পেক Star Tech থেকে, দাম অন্য ৩ দোকানের)। Philips MG3710 (৳৩৫০০+) বাজেট নয়, তাই বাদই থাকল। Apple Gadgets-এর "Blackstone C" আলাদা মডেল, তাই Blackstone-এ নেওয়া হয়নি।
+
+### বাজেট TWS ইয়ারবাড (৩১ অক্টোবর ২০২৬)
+
+`data/catalog/audio.json`-এ `earbuds` ক্যাটাগরিতে ১৮টা জনপ্রিয় বাজেট TWS, ১৩৫টা দাম, প্রতিটা ৬–৯ দোকানে (প্রায় ৳১২০০–৩৩০০; Redmi Buds 5 ৳৩১৫০–৪৯৯৯): QCY T13 ANC 2, HT05 MeloBuds ANC, MeloBuds N20, HT15 Buds ANC; Xiaomi Redmi Buds 5, 6 Active, 6 Lite; Anker Soundcore R50i, P25i; Oraimo FreePods Neo, SpaceBuds Neo+, FreePods Lite; OnePlus Nord Buds 3r; SoundPEATS Q3 Pro; Haylou X1 Neo; Baseus Encok WM01; CMF by Nothing Buds 2a; Realme Buds T200। নতুন দোকান Arafa Telecom (আগে থেকেই worker-এ ছিল)। বাদ: Motion View-এর `anker-soundcore-r50i-tws` আর Gadget & Gear-এর R50i পাতা আসলে R50i NC; Gadget Breeze-এর Buds 6 Active পাতায় ৳৪০৯০ দেখায় অথচ JSON-LD-তে ৳১৯৩৯, তাই নেওয়া হয়নি; Star Tech-এ FreePods Lite To be announced। Lenovo LP40 সিরিজ দোকানগুলোর তালিকায় প্রায় নেই।
+
 ## আয়
 
 - Star Tech affiliate: ৫%, bKash এ ৳১,০০০ হলে টাকা।

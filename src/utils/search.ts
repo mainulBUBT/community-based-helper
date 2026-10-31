@@ -110,6 +110,7 @@ const ALIASES: Record<string, string> = {
   ফেসওয়াশ: "face wash",
   powerbank: "power bank",
   earbud: "earbuds",
+  tws: "earbuds",
   headphones: "headphone",
   sneaker: "sneakers",
   smartwatch: "smart watch",

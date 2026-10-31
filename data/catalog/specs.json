@@ -78830,5 +78830,2254 @@
     }
    ]
   }
+ ],
+ "https://www.startech.com.bd/vgr-v-937-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0.5 - 4.5 mm"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Battery Capacity",
+     "value": "2000Mah"
+    },
+    {
+     "label": "Run Time",
+     "value": "Up to 500 Minutes"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "LED Display"
+    },
+    {
+     "label": "Charging Time",
+     "value": "4 hours"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/vgr-v-932-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0.5-1-2-3mm"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "5W"
+    },
+    {
+     "label": "Run Time",
+     "value": "90 Min"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "LED"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C"
+    },
+    {
+     "label": "Charging Time",
+     "value": "2 Hrs"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Weight",
+     "value": "184 g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/vgr-v-963-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Staiinless Steel"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0-3mm"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "0-1-2-3mm"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Battery Capacity",
+     "value": "1500 mAh"
+    },
+    {
+     "label": "Run Time",
+     "value": "200 Min"
+    },
+    {
+     "label": "Charging Port",
+     "value": "USB charging"
+    },
+    {
+     "label": "Charging Time",
+     "value": "3 Hrs"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/vgr-v-185-professional-and-beard-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Professional Hair Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Motor Speed",
+     "value": "Turbo Function Available"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "Multiple Guide Combs (1.5mm, 3mm, 4.5mm, 6mm)"
+    },
+    {
+     "label": "Grip Type",
+     "value": "Ergonomic"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "5V / 1A (USB)"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "5W"
+    },
+    {
+     "label": "Battery Type",
+     "value": "Lithium-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "1500 mAh"
+    },
+    {
+     "label": "Run Time",
+     "value": "220 Minutes"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "LED Digital Display"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Universal USB Type-C"
+    },
+    {
+     "label": "Charging Time",
+     "value": "2.5 Hours"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Professional Design Finish"
+    },
+    {
+     "label": "Material",
+     "value": "ABS / Quality Enclosure"
+    },
+    {
+     "label": "Weight",
+     "value": "300g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/kemei-km-5017-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "3 – 12 mm"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "4 length settings"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "3mm, 6mm, 9mm, 12mm"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Run Time",
+     "value": "45 min"
+    },
+    {
+     "label": "Charging Time",
+     "value": "8 hours"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/kemei-km-6330-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Electric Shaver"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "3 mm / 6 mm / 9 mm / 12 mm"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Run Time",
+     "value": "60 minutes"
+    },
+    {
+     "label": "Charging Time",
+     "value": "8 hours"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/enchen-boost-hair-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel Blade"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0.7 and 21mm"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "3 mm.6 mm.9 mm.12 mm.15mm.18 mm.21mm"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "5V"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "5W"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "600mAh"
+    },
+    {
+     "label": "Run Time",
+     "value": "90 Minutes"
+    },
+    {
+     "label": "Charging Time",
+     "value": "120 Minutes"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Material",
+     "value": "ABS"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/enchen-boost-2-electric-hair-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Hair Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0.7mm (without comb), 3mm-21mm (with adjustable comb)"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "7 level Length Adjustment"
+    },
+    {
+     "label": "Motor Speed",
+     "value": "5500 RPM (ESM Smart Anti-Stuck System)"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "5V/1A"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "5W"
+    },
+    {
+     "label": "Battery Type",
+     "value": "Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "1200mAh/3.7V"
+    },
+    {
+     "label": "Run Time",
+     "value": "200 mins"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C"
+    },
+    {
+     "label": "Charging Time",
+     "value": "2.5h"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/enchen-boost-3-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Hair Clipper/Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Professional Stainless Steel Blade"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "Adjustable Taper Level: 0.8 mm – 2.0 mm"
+    },
+    {
+     "label": "Motor Speed",
+     "value": "6500 RPM"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "Combs Size (1.5, 3, 4.5, 6, 10, 13, 16, 19 mm),"
+    },
+    {
+     "label": "Cleaning",
+     "value": "Cleaning Brush"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "5V / 1A"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "5W"
+    },
+    {
+     "label": "Battery Type",
+     "value": "Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "2000mAh (3.7V)"
+    },
+    {
+     "label": "Run Time",
+     "value": "Up to 180 Minutes"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "Digital LED Display"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C"
+    },
+    {
+     "label": "Charging Time",
+     "value": "Approximately 2.5 – 3 Hours"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Gold"
+    },
+    {
+     "label": "Weight",
+     "value": "~200 g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/enchen-beardo-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Precision Stainless Steel"
+    },
+    {
+     "label": "Motor Speed",
+     "value": "6000 RPM"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "4 Pieces (3mm, 6mm, 9mm, 12mm)"
+    },
+    {
+     "label": "Travel Lock",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "5W"
+    },
+    {
+     "label": "Battery Type",
+     "value": "Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "800 mAh/3.7V"
+    },
+    {
+     "label": "Run Time",
+     "value": "1.5 hours"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "LED Indicator"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C"
+    },
+    {
+     "label": "Charging Time",
+     "value": "1.5 hours"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Dimension",
+     "value": "156 x 40 x 40 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "144 g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/dizo-trimmer-neo": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0.5mm-10mm ,10mm-20mm"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "40 Length Setting Adjustment"
+    },
+    {
+     "label": "Water Resistance",
+     "value": "IPX5 Water"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Run Time",
+     "value": "300 min battery"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "40*34*156mm"
+    },
+    {
+     "label": "Weight",
+     "value": "163.5 grams"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-beard-trimmer-2c": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0.5 to 10 mm (Small comb), 10.5 mm to 20 mm (Large comb)"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "40 Lengths"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "2 beard combs"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Lithium-Ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "800 mAh"
+    },
+    {
+     "label": "Run Time",
+     "value": "90 min"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C charging"
+    },
+    {
+     "label": "Charging Time",
+     "value": "2 hours"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-mi-grooming-kit-pro-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0.5 mm to 10 mm (Small comb) 10.5 mm to 20 mm (Large comb)"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "40 Length Adjustment"
+    },
+    {
+     "label": "Water Resistance",
+     "value": "IPX7"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "5 V⎓1 A"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "3 W"
+    },
+    {
+     "label": "Battery Type",
+     "value": "Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "800mAh"
+    },
+    {
+     "label": "Run Time",
+     "value": "Up to 90 minutes"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "Yes"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C"
+    },
+    {
+     "label": "Charging Time",
+     "value": "About 2 hours"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-hair-clipper-2-hair-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Hair Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Double-coated high-hardness blade"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "19 length settings"
+    },
+    {
+     "label": "Motor Speed",
+     "value": "2 Speed Modes"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "14 levels: Trimming comb 1: 2mm, 4mm, 6mm, 8mm, 10mm, 12mm, 14mm Trimming comb 2: 16mm, 18mm, 20mm, 22mm, 24mm, 26mm, 28mm"
+    },
+    {
+     "label": "Water Resistance",
+     "value": "IPX7 Fully Washable"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Run Time",
+     "value": "Approx. 3 hrs"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "Digital Display"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C"
+    },
+    {
+     "label": "Charging Time",
+     "value": "Approx. 2.5 hrs"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "47 x 48 x 182mm"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-smart-trimmer-2-opc-tr12": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Multifunctional Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Sharp Stainless Steel Blade"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "1mm, 2mm, 3mm"
+    },
+    {
+     "label": "Motor Speed",
+     "value": "7500 RPM"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "3 Premium Combs"
+    },
+    {
+     "label": "Cleaning",
+     "value": "Easy Cleaning"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "DC 5V / 1A"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "5W"
+    },
+    {
+     "label": "Battery Type",
+     "value": "Lithium-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "1200mA"
+    },
+    {
+     "label": "Run Time",
+     "value": "Run Time: Up to 1.5 hours"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "Yes"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C Charging"
+    },
+    {
+     "label": "Charging Time",
+     "value": "Charging Time: 1.5 hours"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Material",
+     "value": "Premium Aluminum Alloy"
+    },
+    {
+     "label": "Weight",
+     "value": "400g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/philips-bt123018-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless steel blades"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "Cutter width: 32: mm"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "5mm beard comb"
+    },
+    {
+     "label": "Grip Type",
+     "value": "Ergonomic grip & handling"
+    },
+    {
+     "label": "Cleaning",
+     "value": "Rinseable attachments"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "5 W"
+    },
+    {
+     "label": "Battery Type",
+     "value": "4x longer battery life"
+    },
+    {
+     "label": "Run Time",
+     "value": "30 minutes"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "Charging indicator"
+    },
+    {
+     "label": "Charging Port",
+     "value": "USB-A"
+    },
+    {
+     "label": "Charging Time",
+     "value": "8 hour full charge"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/philips-bt3101-15-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless steel blades"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "0.5 up to 10 mm 10 integrated length settings"
+    },
+    {
+     "label": "Cleaning",
+     "value": "Rinseable attachments"
+    },
+    {
+     "label": "Others",
+     "value": "Cutter width: 32 mm"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "NiMH"
+    },
+    {
+     "label": "Run Time",
+     "value": "Up to 45 min"
+    },
+    {
+     "label": "Charging Port",
+     "value": "USB-A"
+    },
+    {
+     "label": "Charging Time",
+     "value": "Approximately 8 hours"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-easycut-hair-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0.5 to 2mm"
+    },
+    {
+     "label": "Motor Speed",
+     "value": "7000 RPM"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "3mm, 6mm, 9mm, 13mm"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Run Time",
+     "value": "2.5H"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C"
+    },
+    {
+     "label": "Charging Time",
+     "value": ".5H ( Input:5V⎓1A)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/kemei-km-9050-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0.5 to 12 mm"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "2Watt"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "1x AA 600 mAh battery"
+    },
+    {
+     "label": "Run Time",
+     "value": "40 mins"
+    },
+    {
+     "label": "Charging Time",
+     "value": "8 hours"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/kemei-km-234-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "3 MM, 6MM, 9MM, 12MM"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "5W"
+    },
+    {
+     "label": "Battery Type",
+     "value": "Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "900mAh"
+    },
+    {
+     "label": "Run Time",
+     "value": "120 min"
+    },
+    {
+     "label": "Charging Port",
+     "value": "USB"
+    },
+    {
+     "label": "Charging Time",
+     "value": "2.5 Hours"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/htc-at-530-beard-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel Blade"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "1mm, 3mm, 5mm & 7mm Comb"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "5V"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "2Watt"
+    },
+    {
+     "label": "Run Time",
+     "value": "40-50 mins"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "Yes"
+    },
+    {
+     "label": "Charging Time",
+     "value": "8 hours"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/enchen-beardo-3-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimming & Body Grooming"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel Blades"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0.5-7 mm"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "1-3-5-7 mm"
+    },
+    {
+     "label": "Motor Speed",
+     "value": "8000 RPM"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "4 Combs"
+    },
+    {
+     "label": "Water Resistance",
+     "value": "Washable Head"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "5W"
+    },
+    {
+     "label": "Battery Type",
+     "value": "Li-ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "800 mAh/3.7V"
+    },
+    {
+     "label": "Run Time",
+     "value": "2 hours"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "Built-in battery status indicator"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C"
+    },
+    {
+     "label": "Charging Time",
+     "value": "1.5 hours"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Material",
+     "value": "ABS"
+    },
+    {
+     "label": "Weight",
+     "value": "120 g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/enchen-sharp-3s-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Hair Clipper"
+    },
+    {
+     "label": "Blade",
+     "value": "High-strength Alloy / Stainless Steel"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "20-segment Rotation Adjustment (1mm – 20mm)"
+    },
+    {
+     "label": "Motor Speed",
+     "value": "7300 RPM"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "5W"
+    },
+    {
+     "label": "Battery Type",
+     "value": "Lithium Ion"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "600mAh"
+    },
+    {
+     "label": "Run Time",
+     "value": "Approximately 90 – 120 Minutes"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C"
+    },
+    {
+     "label": "Charging Time",
+     "value": "1.5 – 2 Hours"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Material",
+     "value": "ABS"
+    },
+    {
+     "label": "Dimension",
+     "value": "45 x 180 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "139 g (Net weight) / 400 g (Package weight)"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/dizo-trimmer-kit": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel Blade"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0.5 – 20 mm"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "40 length setting"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "4-in-1 Multi Grooming Kit"
+    },
+    {
+     "label": "Water Resistance",
+     "value": "IPX5 Fully Washable"
+    },
+    {
+     "label": "Others",
+     "value": "Nose, Ear & Eyebrow Trimming"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Run Time",
+     "value": "240 min in full charge"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type C Charge"
+    },
+    {
+     "label": "Charging Time",
+     "value": "10 min Charge = 15 min use"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-huanxing-ec101-hair-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Hair Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Motor Speed",
+     "value": "6200rpm"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "3 Combs 2mm/4mm/6mm"
+    },
+    {
+     "label": "Water Resistance",
+     "value": "IPX7 Waterproof"
+    },
+    {
+     "label": "Others",
+     "value": "Low Noise: 45db"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Battery Capacity",
+     "value": "350 mAh"
+    },
+    {
+     "label": "Run Time",
+     "value": "Approx. 90 mins"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C"
+    },
+    {
+     "label": "Charging Time",
+     "value": "Approx. 3 hrs"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/kemei-km-3024-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Body hair removal, Nose Trimmer, Eyebrow Trimmer, Skin Shaver"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Others",
+     "value": "Cordless: Yes"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Run Time",
+     "value": "120 min"
+    },
+    {
+     "label": "Charging Time",
+     "value": "8 Hours"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Material",
+     "value": "Metal"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-huanxing-hn3-nose-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Nose HairTrimmer"
+    },
+    {
+     "label": "Water Resistance",
+     "value": "IPX5"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "5V⎓1A"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "3.7V⎓3W"
+    },
+    {
+     "label": "Battery Type",
+     "value": "1 x AAA"
+    },
+    {
+     "label": "Charging Time",
+     "value": "Approx. 1.5 hours"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/enchen-blackstone-electric-shaver": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Electric Shaver"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Power Consumption",
+     "value": "5W"
+    },
+    {
+     "label": "Run Time",
+     "value": "90 mins"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "Multi-functional indicator"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C"
+    },
+    {
+     "label": "Charging Time",
+     "value": "90 mins"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black & Grey"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/mi-electric-shaver-s500": [],
+ "https://www.startech.com.bd/kemei-km-5015-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Hair and Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "3 – 12 mm"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "4"
+    },
+    {
+     "label": "Motor Speed",
+     "value": "1800 RPM"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "4 x Auxiliary combs"
+    },
+    {
+     "label": "Others",
+     "value": "Cordless: Yes"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Run Time",
+     "value": "45 min"
+    },
+    {
+     "label": "Charging Time",
+     "value": "8 hours"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Material",
+     "value": "Metal"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/htc-at-538-beard-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel Blade"
+    },
+    {
+     "label": "Length Adjustment",
+     "value": "1mm, 3mm, 5mm, 7mm ( 0.5 Without Clip)"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "5V"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "2Watt"
+    },
+    {
+     "label": "Run Time",
+     "value": "40-50 mins"
+    },
+    {
+     "label": "Battery Indicator",
+     "value": "Yes"
+    },
+    {
+     "label": "Charging Time",
+     "value": "8 hours"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/htc-at-505-beard-trimmer": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Beard & Hair Trimmer"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel Blade"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "1 - 10 mm"
+    },
+    {
+     "label": "Cutting Combs",
+     "value": "4 combs: 1mm, 3mm, 5mm, & 7mm"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Battery Capacity",
+     "value": "900 mAH"
+    },
+    {
+     "label": "Run Time",
+     "value": "Up to 45 Mins"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C Charging"
+    },
+    {
+     "label": "Charging Time",
+     "value": "8 Hours"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Weight",
+     "value": "135 g"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-mijia-s100-electric-shaver": [
+  {
+   "group": "General Information",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Electric Shaver"
+    },
+    {
+     "label": "Blade",
+     "value": "Stainless Steel"
+    },
+    {
+     "label": "Motor Speed",
+     "value": "7200 RPM"
+    },
+    {
+     "label": "Water Resistance",
+     "value": "IPX7 waterproof"
+    }
+   ]
+  },
+  {
+   "group": "Power Information",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "Input: 5V-1A"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "2W"
+    },
+    {
+     "label": "Battery Type",
+     "value": "Lithium-Ion"
+    },
+    {
+     "label": "Run Time",
+     "value": "90 min"
+    },
+    {
+     "label": "Charging Port",
+     "value": "Type-C charging"
+    },
+    {
+     "label": "Charging Time",
+     "value": "About 2 Hours"
+    }
+   ]
+  },
+  {
+   "group": "Physical Information",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black"
+    },
+    {
+     "label": "Material",
+     "value": "ABS"
+    },
+    {
+     "label": "Dimension",
+     "value": "56 × 30 × 87 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "174gm"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/qcy-melobuds-n20-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Frequency",
+     "value": "Up to 2,500 Hz"
+    },
+    {
+     "label": "Signal/Noise",
+     "value": "50dB with Active Noise Cancellation (ANC)."
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth version: 6.0"
+    },
+    {
+     "label": "Microphone",
+     "value": "6 Mic"
+    },
+    {
+     "label": "Battery",
+     "value": "Earbuds: 40 mAh Case: 450mAh"
+    },
+    {
+     "label": "Duration",
+     "value": "Playtime Single: Up to 10H Playtime With Case: Up to 40H"
+    },
+    {
+     "label": "Others",
+     "value": "Noise Reduction Efficiency: 97% Adaptive Modes: Ear canal and environment adaptive modes Touch Control: Yes Ergonomic Fit: Optimized for comfort and sound quality Charging port: Type-c Fast charging: Yes Compatible with: Android and iOS"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Drivers",
+     "value": "13mm Dynamic Drivers"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Dimensions (Case):60.45*48.5*29mm Dimensions (Earbud):33.09*23.94mm"
+    },
+    {
+     "label": "Color",
+     "value": "Black, White"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/qcy-buds-anc-ht15-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Signal/Noise",
+     "value": "45dB Active Noise Cancellation (ANC)"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth v5.4"
+    },
+    {
+     "label": "Microphone",
+     "value": "6 Microphones AI HD Call"
+    },
+    {
+     "label": "Battery",
+     "value": "Charging Case Battery Capacity: 350mAh Earbud Battery Capacity: 32mAh"
+    },
+    {
+     "label": "Duration",
+     "value": "25 hours of ultra-long playtime Total Battery Life (ANC ON/OFF): 18H/25H Single Playback (ANC ON/OFF): 4H/5.5H"
+    },
+    {
+     "label": "Others",
+     "value": "Supported Protocols: HFP/A2DP/AVRCP Preset and Custom EQ Dual Connection Supported 0.068s Low Latency Mode Find My Earbuds Operation Range: 10 meters Compatibility: iOS / Android Charging Port: Type-C Waterproof: IPX4"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Drivers",
+     "value": "Bio Diaphragm"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/anker-soundcore-r50i-true-wireless-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Connection Type",
+     "value": "Wireless"
+    },
+    {
+     "label": "Microphone",
+     "value": "2 Mics"
+    },
+    {
+     "label": "Duration",
+     "value": "10 hours of playtime on a single charge 30 hours total with charging case"
+    },
+    {
+     "label": "Others",
+     "value": "IPX5 Water-Resistant"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Connector",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Drivers",
+     "value": "10mm"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-freepods-neo-tws-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth Version: V5.3 Working Distance up to 10 meters"
+    },
+    {
+     "label": "Microphone",
+     "value": "Yes, 6 total (3 per earbud)"
+    },
+    {
+     "label": "Duration",
+     "value": "Earbuds offer 7 hours of playtime on a single charge, with the charging case providing an additional 43 hours, totaling 50 hours of use. Fast Charging: 10 minutes charge for 120 minutes playback"
+    },
+    {
+     "label": "Others",
+     "value": "Water Resistance: IPX4 (earbuds only)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Connector",
+     "value": "Type-C Charging"
+    },
+    {
+     "label": "Drivers",
+     "value": "12.4mm"
+    },
+    {
+     "label": "Color",
+     "value": "Mysterious Blue Light Gold"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-spacebuds-neo-plus-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth Version: V5.4 Working Distance up to 10 meters"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in 2 noise-reducing Microphones"
+    },
+    {
+     "label": "Duration",
+     "value": "Up to 5 hours, the case provides additional 25 hours (ANC OFF) Up to 4 hours, the case provides additional 20 hours (ANC ON)"
+    },
+    {
+     "label": "Others",
+     "value": "IPX4-rated (water and sweat resistant) Charging Type: Type-C Sound360 Spatial Audio Low-latency Game Mode"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oraimo-freepods-lite-otw-330-true-wireless-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Connection Type",
+     "value": "Wireless"
+    },
+    {
+     "label": "Microphone",
+     "value": "2 mic- ENC technology"
+    },
+    {
+     "label": "Battery",
+     "value": "100mAh"
+    },
+    {
+     "label": "Duration",
+     "value": "40 hrs (Up to 8 hours; Case provides additional 32 hours)"
+    },
+    {
+     "label": "Others",
+     "value": "Charge Input: Type-C Semi-transparent Design Exclusive HavyBass algorithm AniFast Fast Charge Charge 10 minutes, enjoy 120 minutes Intelligent Touch Controls IPX4 water resistant Low Latency Game Mode"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Connector",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Drivers",
+     "value": "10mm driver"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/oneplus-nord-buds-3r": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Frequency",
+     "value": "20 Hz- 20 kHz"
+    },
+    {
+     "label": "Impedance",
+     "value": "32Ω"
+    },
+    {
+     "label": "Sound level/Sensitivity",
+     "value": "112±3dB@1mW/-38±1dB"
+    },
+    {
+     "label": "Signal/Noise",
+     "value": "97dB"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth 5.4 Bluetooth Codec-AAC / SBC Bluetooth Effective Distance-10m Bluetooth Transmission Protocol-BLE/SPP/HFP/A2DP/AVRCP"
+    },
+    {
+     "label": "Microphone",
+     "value": "2 mics per side"
+    },
+    {
+     "label": "Battery",
+     "value": "Battery Capacity Earbuds: 58 mAh Charging Case: 560 mAh Playback (50% volume, AAC) Earbuds: 12 hours Earbuds + Case: 54 hours Talk Time (50% volume) Earbuds: 7 hours Earbuds + Case: 30 hours"
+    },
+    {
+     "label": "Duration",
+     "value": "Fast Charging (50% volume, AAC) Earbuds: 10 minutes charge for 4 hours playback Earbuds + Case: 10 minutes charge for 8 hours playback Charging Time Earbuds: about 60 minutes Earbuds + Case: about 120 minutes Charging Interface Wired: USB Type-C"
+    },
+    {
+     "label": "Others",
+     "value": "Google Fast Pair Dual-Device Connection 2-mic AI Call Noise Cancellation OnePlus 3D Audio Sound Master EQ 47ms Low Latency AI Translation Voice Assistant Shortcut Find My Earbuds Double-Tap for Camera Control Compatibility with HeyMelody App IP55 Dust and Water Resistance"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Drivers",
+     "value": "12.4 mm dynamic driver Titanized vibrating diaphragm"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Earbuds: 31.1*20.3*23.3mm Charging case: 60.2*47.5*24mm"
+    },
+    {
+     "label": "Weight",
+     "value": "Earbuds: 4.5g±0.2g Charging case: 38.6g±2g Total: 47.6g±2g"
+    },
+    {
+     "label": "Color",
+     "value": "Ash Black, Aura Blue"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/soundpeats-q3-pro": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Signal/Noise",
+     "value": "Hybrid ANC (-38dB Max)"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth: V6.0"
+    },
+    {
+     "label": "Microphone",
+     "value": "Dual-Mic AI ENC (Sound+ Call Algorithm)"
+    },
+    {
+     "label": "Duration",
+     "value": "Total Playtime: Up to 50 Hours (with case)"
+    },
+    {
+     "label": "Others",
+     "value": "Waterproof Level: IP55 80ms Low-Latency Game Mode Touch Control SPS Gold Label Certification Rock-Solid Connection Spatial Audio Mode Multi-Mode Smart Sound Custom EQ Settings"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Drivers",
+     "value": "13mm Dynamic Driver"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/xiaomi-haylou-x1-neo-true-wireless-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth 5.3"
+    },
+    {
+     "label": "Battery",
+     "value": "30mAh (Single earbud) 310mAh (Charging case)"
+    },
+    {
+     "label": "Duration",
+     "value": "5 hours of playback"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Drivers",
+     "value": "13mm"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/baseus-wm01-enock-true-earbuds": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Frequency",
+     "value": "20Hz-20KHz"
+    },
+    {
+     "label": "Signal/Noise",
+     "value": "Physical Environment Noise Reduction"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth V.5"
+    },
+    {
+     "label": "Duration",
+     "value": "5 Hours constant music time 25 Hours music time with charging case"
+    },
+    {
+     "label": "Others",
+     "value": "Touch controls Voice assistant PU composite membrane for high quality sound & bass Automatic pairing and connection In-ear comfortable and compact design Battery: 40mAh/0.148Wh （earphones） 300mAh/1.11Wh（charging box）"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Black (NGTW24001) DZ-TM1"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/realme-buds-t200": [
+  {
+   "group": "Main Feature",
+   "items": [
+    {
+     "label": "Frequency",
+     "value": "20-40KHz"
+    },
+    {
+     "label": "Sound level/Sensitivity",
+     "value": "-38+1dB"
+    },
+    {
+     "label": "Signal/Noise",
+     "value": "AI Active Noise Cancellation Noise reduction depth: 32dB"
+    },
+    {
+     "label": "Connection Type",
+     "value": "Bluetooth"
+    },
+    {
+     "label": "Microphone",
+     "value": "Quad Mic"
+    },
+    {
+     "label": "Battery",
+     "value": "Single headset battery capacity: 58mAh Charging box battery capacity: 530mAh Wired charging time (charging box + earphones): 2H| Charging time (the charging box charges the earphones): 1H"
+    },
+    {
+     "label": "Duration",
+     "value": "50H AAC audio, ANC OFF (earbuds+charging case) 35H AAC audio, ANC ON (earbuds+charging case) 20H LDAC audio, ANC ON (earbuds+charging case) 10H AAC audio, ANC OFF (earbuds)"
+    },
+    {
+     "label": "Others",
+     "value": "Ultra Low Latency 3D Spatial Audio Effect IP55 Water & Dust Resistant Noise Cancellation: AI ENC (Environmental Noise Cancellation) for calls Effective Range: Up to 10 meters Dual Device Connection Bluetooth codec: SBC/AAC/LDAC Bluetooth transmission protocol: HFP/A2DP/AVRCP Bluetooth effective distance: s10m Theoretical delay (low-latency mode/game mode) in earbuds side: 45ms"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Connector",
+     "value": "Bluetooth V5.4"
+    },
+    {
+     "label": "Drivers",
+     "value": "12.4mm Dynamic Bass Driver"
+    },
+    {
+     "label": "Weight",
+     "value": "Weight of single earphone: 4.410.2g Charging box weight: 37.8t1g"
+    },
+    {
+     "label": "Color",
+     "value": "Mystic Grey, Snow White"
+    }
+   ]
+  }
  ]
 }
