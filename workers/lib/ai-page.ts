@@ -1,7 +1,7 @@
 import type { Page } from "../stores/page";
 import { toTaka } from "./price";
 import { withKeys } from "./llm-keys";
-import { privateSettings } from "./settings";
+import { modelTarget, privateSettings } from "./settings";
 import { sleep } from "./sleep";
 import { pageOffers } from "./variants";
 
@@ -25,9 +25,10 @@ interface AiRow {
 }
 
 async function gemini(url: string): Promise<string> {
-  const { llm } = await privateSettings();
-  // url_context শুধু Gemini নিজের API তে আছে; OpenAI-compatible ঠিকানা দিলে এই পথ চলবে না
-  if (!llm?.apiKey || !llm.model || !/generativelanguage\.googleapis\.com/.test(llm.baseUrl ?? "")) throw new Error("url_context চালাতে Gemini-র নিজের API লাগে");
+  const { models } = await privateSettings();
+  // url_context শুধু Gemini নিজের API তে আছে; তালিকার প্রথম Gemini সেটআপটা
+  const llm = models.find((m) => m.apiKey && /generativelanguage\.googleapis\.com/.test(m.baseUrl));
+  if (!llm) throw new Error("url_context চালাতে Gemini-র নিজের API লাগে");
   const model = llm.model;
   const request = () => withKeys(llm.apiKey, (key) => fetch(`${NATIVE}/models/${model}:generateContent`, {
     method: "POST",
@@ -47,7 +48,7 @@ async function gemini(url: string): Promise<string> {
       generationConfig: { temperature: 0 }, // url_context এর সাথে JSON mode চলে না, তাই লেখা থেকে JSON কাটা হয়
     }),
     signal: AbortSignal.timeout(150_000),
-  }));
+  }), modelTarget(llm));
   let res = await request();
   // Gemini মাঝে মাঝে ব্যস্ত (503); একটু থেমে আরেকবার
   if (res.status >= 500) {

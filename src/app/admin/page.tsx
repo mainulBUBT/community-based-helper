@@ -10,7 +10,7 @@ import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { listJobs } from "@/services/admin/jobs";
 import { listPendingReview } from "@/services/admin/review";
 import { listAllSellers } from "@/services/admin/sellers";
-import { loadPrivateSettings } from "@/services/admin/settings";
+import { aiReady, loadPrivateSettings } from "@/services/admin/settings";
 import { listSummaries } from "@/services/catalog-live";
 import { loadDayStats } from "@/services/admin/stats";
 
@@ -23,7 +23,7 @@ async function loadDashboard() {
     listSummaries(true),
     loadPrivateSettings().catch(() => null),
   ]);
-  return { review, jobs, sellers, stats, summaries, aiReady: Boolean(settings?.llm.baseUrl && settings.llm.model && settings.llm.apiKey), loadedAt: Date.now() };
+  return { review, jobs, sellers, stats, summaries, aiReady: Boolean(settings && aiReady(settings)), loadedAt: Date.now() };
 }
 
 export default function DashboardPage() {

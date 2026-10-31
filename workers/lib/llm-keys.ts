@@ -13,15 +13,18 @@ let lastCall = 0;
 
 export const splitKeys = (apiKey: string | null | undefined) => (apiKey ?? "").split(/[\s,]+/).filter(Boolean);
 
-export function liveKeys(apiKey: string | null | undefined): string[] {
-  const keys = splitKeys(apiKey).filter((key) => !spent.has(key));
+// key এর কোটা মডেল ধরে (Gemini-তে একই key এর এক মডেল শেষ হলেও অন্যটা চলে), তাই scope = মডেল
+export class QuotaError extends Error {}
+
+export function liveKeys(apiKey: string | null | undefined, scope = ""): string[] {
+  const keys = splitKeys(apiKey).filter((key) => !spent.has(`${scope}|${key}`));
   if (keys.length < 2) return keys;
   const start = turn++ % keys.length;
   return [...keys.slice(start), ...keys.slice(0, start)];
 }
 
-export function markSpent(key: string) {
-  spent.add(key);
+export function markSpent(key: string, scope = "") {
+  spent.add(`${scope}|${key}`);
 }
 
 // Gemini উত্তরে বলে কোন সীমা ("...PerDay...") আর কতক্ষণ পরে ("retryDelay": "23s")
@@ -45,10 +48,10 @@ function serial<T>(task: () => Promise<T>): Promise<T> {
 }
 
 // প্রতিটা key দিয়ে পালা করে চেষ্টা; 429 ছাড়া অন্য উত্তর (ভালো বা খারাপ) ফেরত
-export async function withKeys(apiKey: string | null | undefined, call: (key: string) => Promise<Response>): Promise<Response> {
+export async function withKeys(apiKey: string | null | undefined, call: (key: string) => Promise<Response>, scope = ""): Promise<Response> {
   if (!splitKeys(apiKey).length) throw new Error("LLM key নেই");
-  const keys = liveKeys(apiKey);
-  if (!keys.length) throw new Error("AI-র আজকের কোটা শেষ (সব key এর)");
+  const keys = liveKeys(apiKey, scope);
+  if (!keys.length) throw new QuotaError("AI-র আজকের কোটা শেষ (সব key এর)");
   let last: Response | null = null;
   for (const key of keys) {
     for (let attempt = 0; ; attempt++) {
@@ -56,7 +59,7 @@ export async function withKeys(apiKey: string | null | undefined, call: (key: st
       if (last.status !== 429) return last;
       const { daily, wait } = await limitOf(last);
       if (daily || attempt >= RATE_RETRIES) {
-        markSpent(key);
+        markSpent(key, scope);
         break;
       }
       lastCall = Math.max(lastCall, Date.now() + wait - GAP);

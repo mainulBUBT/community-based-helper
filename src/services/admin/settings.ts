@@ -1,6 +1,6 @@
 import { sampleSettings } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
-import type { PrivateSettings, SiteSettings } from "@/types/admin";
+import type { LlmModel, PrivateSettings, SiteSettings } from "@/types/admin";
 import { getSiteSettings } from "../catalog-live";
 import { logAction } from "./audit";
 
@@ -12,6 +12,13 @@ const DEFAULT_PRIVATE: PrivateSettings = {
 };
 
 export const providerKey = (baseUrl: string) => baseUrl.trim().replace(/\/+$/, "");
+export const modelTarget = (model: Pick<LlmModel, "baseUrl" | "model">) => `${providerKey(model.baseUrl)}|${model.model}`;
+
+// তালিকা না থাকলে (পুরনো সেটিং) আগের একটা মডেলই তালিকা
+export function modelList(settings: PrivateSettings): LlmModel[] {
+  if (settings.llmModels) return settings.llmModels;
+  return settings.llm.baseUrl && settings.llm.model && settings.llm.apiKey ? [{ baseUrl: settings.llm.baseUrl, model: settings.llm.model }] : [];
+}
 
 let demoPrivate: PrivateSettings = DEFAULT_PRIVATE;
 
@@ -77,4 +84,13 @@ export async function testLlm({ baseUrl, model, apiKey }: PrivateSettings["llm"]
   if (!response.ok) throw new Error(`${response.status} ${await response.text()}`.slice(0, 200));
   const body = await response.json();
   return String(body.choices?.[0]?.message?.content ?? "").trim();
+}
+
+export const aiReady = (settings: PrivateSettings) => modelList(settings).some((m) => settings.llmKeys?.[providerKey(m.baseUrl)]);
+
+// সেটআপের তালিকা সাথে সাথে সেভ; নতুন সেটআপের সাথে key দিলে সেটা ওই সার্ভিসের key হয়
+export async function saveLlmModels(settings: PrivateSettings, models: LlmModel[], section: string, added?: PrivateSettings["llm"]) {
+  const first = models[0];
+  const llm = added ?? (first ? { baseUrl: first.baseUrl, model: first.model, apiKey: null } : settings.llm);
+  await savePrivateSettings({ ...settings, llm, llmModels: models, telegramBotToken: null }, section);
 }

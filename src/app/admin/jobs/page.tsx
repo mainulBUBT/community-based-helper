@@ -1,9 +1,10 @@
 "use client";
 
-import { Check, Loader2, Sparkles } from "lucide-react";
+import { Loader2, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState, type FormEvent, type ReactNode } from "react";
-import { Field, SecretField } from "@/components/admin/Field";
+import { AiSetup } from "@/components/admin/AiSetup";
+import { Field } from "@/components/admin/Field";
 import { Disclosure, GuidePanel, StepNumber } from "@/components/admin/Guide";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { Tabs } from "@/components/admin/Tabs";
@@ -13,9 +14,8 @@ import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
 import { useAdminI18n } from "@/hooks/useAdminI18n";
-import { showToast } from "@/lib/toast";
 import { listJobs, requestJobRun, setJobEnabled } from "@/services/admin/jobs";
-import { loadPrivateSettings, providerKey, savePrivateSettings, testLlm } from "@/services/admin/settings";
+import { loadPrivateSettings, savePrivateSettings } from "@/services/admin/settings";
 import type { Job, PrivateSettings } from "@/types/admin";
 
 const AI_JOBS = new Set(["discover", "promos"]);
@@ -23,12 +23,6 @@ const AI_JOBS = new Set(["discover", "promos"]);
 const TABS = ["jobs", "ai", "telegram"] as const;
 type Tab = (typeof TABS)[number];
 
-const PRESETS = [
-  { name: "Gemini", baseUrl: "https://generativelanguage.googleapis.com/v1beta/openai/", model: "gemini-2.5-flash" },
-  { name: "Groq", baseUrl: "https://api.groq.com/openai/v1", model: "llama-3.3-70b-versatile" },
-  { name: "OpenRouter", baseUrl: "https://openrouter.ai/api/v1", model: "meta-llama/llama-3.3-70b-instruct:free" },
-  { name: "Cloudflare", baseUrl: "https://api.cloudflare.com/client/v4/accounts/ACCOUNT_ID/ai/v1", model: "@cf/meta/llama-3.1-8b-instruct" },
-];
 
 const STUCK_AFTER = 2 * 3600000;
 
@@ -207,211 +201,50 @@ function JobsPanel() {
   );
 }
 
-function Step({ n, title, children }: { n: number; title: string; children: ReactNode }) {
-  return (
-    <div className="flex gap-3">
-      <StepNumber n={n} />
-      <div className="flex min-w-0 flex-1 flex-col gap-3">
-        <h3 className="pt-0.5 font-semibold">{title}</h3>
-        {children}
-      </div>
-    </div>
-  );
-}
-
-type TestResult = { tone: "ok" | "fail" | "info"; text: string } | null;
-
-const TEST_TONE = {
-  ok: "border-ok/30 bg-ok-soft text-ink",
-  fail: "border-sale/20 bg-sale-soft text-ink",
-  info: "border-line-soft bg-surface-2 text-dim",
-};
-
-// ব্রাউজার/পাসওয়ার্ড ম্যানেজার এই ফর্মকে লগইন ভেবে model এ ইমেইল আর key তে পাসওয়ার্ড বসিয়ে দেয়
+// ব্রাউজার/পাসওয়ার্ড ম্যানেজার এই ফর্মকে লগইন ভেবে token এ পাসওয়ার্ড বসিয়ে দেয়
 const NO_AUTOFILL = { autoComplete: "off", "data-1p-ignore": true, "data-lpignore": "true", "data-form-type": "other" } as const;
 
-// AI আর Telegram একই ফর্মে, দুই ট্যাবেই মাউন্ট থাকে যাতে ট্যাব বদলালে লেখা না হারায়
-function SettingsForm({ initial, onSaved, tab, onTab }: { initial: PrivateSettings; onSaved: () => void; tab: Tab; onTab: (tab: Tab) => void }) {
+function TelegramForm({ initial, onSaved }: { initial: PrivateSettings; onSaved: () => void }) {
   const { t } = useAdminI18n();
-  const [busy, setBusy] = useState(false);
-  const [testResult, setTestResult] = useState<TestResult>(null);
-  const [baseUrl, setBaseUrl] = useState(initial.llm.baseUrl);
-  const [model, setModel] = useState(initial.llm.model);
-  const ready = Boolean(initial.llm.baseUrl && initial.llm.model && initial.llm.apiKey);
-  const savedKey = (url: string) => initial.llmKeys?.[providerKey(url)] ?? null;
-
-  function read(form: HTMLFormElement): PrivateSettings {
-    const data = new FormData(form);
-    const value = (name: string) => String(data.get(name) ?? "").trim() || null;
-    return {
-      llm: { baseUrl: value("baseUrl") ?? "", model: value("model") ?? "", apiKey: value("apiKey") },
-      telegramBotToken: value("telegramBotToken"),
-      alertChatId: value("alertChatId"),
-    };
-  }
+  const { busy, run } = useAdminAction();
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setBusy(true);
-    try {
-      await savePrivateSettings(read(event.currentTarget), t.admin.jobs.auditSection);
-      showToast(t.admin.common.saved);
-      onSaved();
-    } catch {
-      showToast(t.admin.common.saveFailed);
-    } finally {
-      setBusy(false);
-    }
-  }
-
-  async function onTest(form: HTMLFormElement | null) {
-    if (!form) return;
-    const llm = read(form).llm;
-    if (!llm.apiKey) return setTestResult({ tone: "fail", text: t.admin.jobs.testNeedsKey });
-    setTestResult({ tone: "info", text: t.admin.jobs.testing });
-    try {
-      const reply = await testLlm(llm);
-      setTestResult({ tone: "ok", text: t.admin.jobs.testOk(reply) });
-    } catch (error) {
-      setTestResult({ tone: "fail", text: t.admin.jobs.testFailed((error as Error).message) });
-    }
-  }
-
-  function pickProvider(url: string, presetModel: string) {
-    setBaseUrl(url);
-    setModel(presetModel);
-    setTestResult(null);
+    const data = new FormData(event.currentTarget);
+    const value = (name: string) => String(data.get(name) ?? "").trim() || null;
+    const next = { ...initial, telegramBotToken: value("telegramBotToken"), alertChatId: value("alertChatId") };
+    if (await run(() => savePrivateSettings(next, t.admin.jobs.auditSection), t.admin.common.saved)) onSaved();
   }
 
   return (
-    <form
-      onSubmit={onSubmit}
-      onInvalidCapture={(event) => {
-        const form = event.currentTarget;
-        const owner = (event.target as HTMLElement).closest("[data-tab]")?.getAttribute("data-tab") as Tab | null;
-        if (owner && owner !== tab) {
-          onTab(owner);
-          setTimeout(() => form.reportValidity());
-        }
-      }}
-      hidden={tab === "jobs"}
-      className="flex flex-col gap-6"
-    >
-      <div role="tabpanel" id="jobs-ai" data-tab="ai" hidden={tab !== "ai"}>
-        <Panel
-          title={t.admin.jobs.aiTitle}
-          action={
-            <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${ready ? "bg-ok-soft text-ok" : "bg-gold-soft text-gold-text"}`}>
-              {ready ? t.admin.jobs.aiReady : t.admin.jobs.aiMissing}
-            </span>
-          }
-        >
-          <div className="grid gap-4 border-b border-line-soft bg-surface-2/50 p-5 text-sm md:grid-cols-2">
-            <div className="flex flex-col gap-1.5">
-              <span className="font-semibold">{t.admin.jobs.aiUses}</span>
-              <ul className="list-disc space-y-1 pl-5 text-dim">
-                {t.admin.jobs.aiUseList.map((use) => (
-                  <li key={use}>{use}</li>
-                ))}
-              </ul>
-            </div>
-            <p className="text-dim">{t.admin.jobs.aiWithout}</p>
-          </div>
-          <div className="flex flex-col gap-6 p-5">
-            <Step n={1} title={t.admin.jobs.stepProvider}>
-              <div className="flex flex-wrap gap-2">
-                {PRESETS.map((preset) => (
-                  <button
-                    key={preset.name}
-                    type="button"
-                    aria-pressed={baseUrl === preset.baseUrl}
-                    onClick={() => pickProvider(preset.baseUrl, preset.model)}
-                    className={`flex h-10 items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold ${baseUrl === preset.baseUrl ? "border-brand bg-brand-soft" : "border-line hover:border-brand"}`}
-                  >
-                    {preset.name}
-                    {savedKey(preset.baseUrl) && <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />}
-                  </button>
-                ))}
-                <button
-                  type="button"
-                  aria-pressed={!PRESETS.some((p) => p.baseUrl === baseUrl)}
-                  onClick={() => pickProvider("", "")}
-                  className={`h-10 rounded-xl border px-3 text-sm font-semibold ${PRESETS.some((p) => p.baseUrl === baseUrl) ? "border-line hover:border-brand" : "border-brand bg-brand-soft"}`}
-                >
-                  {t.admin.jobs.customProvider}
-                </button>
-              </div>
-              <span className="text-xs text-dim">{t.admin.jobs.presetHint}</span>
-              <div className="grid gap-4 md:grid-cols-2">
-                <Field label={t.admin.jobs.baseUrl} name="baseUrl" type="url" {...NO_AUTOFILL} value={baseUrl} onChange={(e) => setBaseUrl(e.target.value)} required hint={t.admin.jobs.baseUrlHint} />
-                <Field label={t.admin.jobs.model} name="model" {...NO_AUTOFILL} value={model} onChange={(e) => setModel(e.target.value)} required hint={t.admin.jobs.modelHint} />
-              </div>
-            </Step>
-            <Step n={2} title={t.admin.jobs.stepKey}>
-              {/* প্রোভাইডার বদলালে ঘর খালি হয়, আর দেখায় ওই প্রোভাইডারের নিজের সেভ করা key */}
-              <SecretField
-                key={providerKey(baseUrl)}
-                label={t.admin.jobs.apiKey}
-                name="apiKey"
-                defaultValue={savedKey(baseUrl) ?? ""}
-                {...NO_AUTOFILL}
-                autoComplete="new-password"
-                show={t.admin.jobs.showKey}
-                hide={t.admin.jobs.hideKey}
-                hint={savedKey(baseUrl) ? t.admin.jobs.keySavedHere : t.admin.jobs.noKeyForProvider}
-              />
-            </Step>
-            <Step n={3} title={t.admin.jobs.stepTest}>
-              <div className="flex flex-col gap-1.5">
-                <button type="button" onClick={(e) => onTest(e.currentTarget.form)} disabled={testResult?.tone === "info"} className={`${secondaryButton} w-full sm:w-fit`}>
-                  {t.admin.jobs.testConnection}
-                </button>
-                <span className="text-xs text-dim">{t.admin.jobs.testHint}</span>
-              </div>
-              {testResult && (
-                <p role="status" className={`rounded-xl border px-4 py-3 text-sm break-words ${TEST_TONE[testResult.tone]}`}>
-                  {testResult.text}
-                </p>
-              )}
-            </Step>
-            <Step n={4} title={t.admin.jobs.stepSave}>
-              <p className="text-sm text-dim">{t.admin.jobs.stepSaveHint}</p>
-            </Step>
-          </div>
-        </Panel>
-      </div>
-      <div role="tabpanel" id="jobs-telegram" data-tab="telegram" hidden={tab !== "telegram"}>
-        <Panel title={t.admin.jobs.telegramTitle}>
-          <div className="flex flex-col gap-3 border-b border-line-soft bg-surface-2/50 px-5 py-4 text-sm">
-            <p className="text-dim">{t.admin.jobs.telegramHint}</p>
-            <ol className="flex flex-col gap-3">
-              {t.admin.jobs.telegramSteps.map((step, i) => (
-                <li key={step} className="flex gap-3">
-                  <StepNumber n={i + 1} />
-                  <span className="pt-0.5">{step}</span>
-                </li>
-              ))}
-            </ol>
-          </div>
-          <div className="grid gap-4 p-5 md:grid-cols-2">
-            <Field
-              label={t.admin.jobs.botToken}
-              name="telegramBotToken"
-              type="password"
-              {...NO_AUTOFILL}
-              autoComplete="new-password"
-              hint={initial.telegramBotToken ? t.admin.jobs.secretSaved(initial.telegramBotToken) : undefined}
-            />
-            <Field label={t.admin.jobs.chatId} name="alertChatId" inputMode="numeric" {...NO_AUTOFILL} defaultValue={initial.alertChatId ?? ""} />
-          </div>
-        </Panel>
-      </div>
-      <div className="flex flex-col gap-1.5">
-        <button type="submit" disabled={busy} className={`${primaryButton} w-full sm:w-fit`}>
-          {t.admin.common.save}
-        </button>
-        <span className="text-xs text-dim">{t.admin.jobs.saveHint}</span>
-      </div>
+    <form onSubmit={onSubmit} className="flex flex-col gap-6">
+      <Panel title={t.admin.jobs.telegramTitle}>
+        <div className="flex flex-col gap-3 border-b border-line-soft bg-surface-2/50 px-5 py-4 text-sm">
+          <p className="text-dim">{t.admin.jobs.telegramHint}</p>
+          <ol className="flex flex-col gap-3">
+            {t.admin.jobs.telegramSteps.map((step, i) => (
+              <li key={step} className="flex gap-3">
+                <StepNumber n={i + 1} />
+                <span className="pt-0.5">{step}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+        <div className="grid gap-4 p-5 md:grid-cols-2">
+          <Field
+            label={t.admin.jobs.botToken}
+            name="telegramBotToken"
+            type="password"
+            {...NO_AUTOFILL}
+            autoComplete="new-password"
+            hint={initial.telegramBotToken ? t.admin.jobs.secretSaved(initial.telegramBotToken) : undefined}
+          />
+          <Field label={t.admin.jobs.chatId} name="alertChatId" inputMode="numeric" {...NO_AUTOFILL} defaultValue={initial.alertChatId ?? ""} />
+        </div>
+      </Panel>
+      <button type="submit" disabled={busy} className={`${primaryButton} w-full sm:w-fit`}>
+        {t.admin.common.save}
+      </button>
     </form>
   );
 }
@@ -420,6 +253,8 @@ export default function JobsAdminPage() {
   const { t } = useAdminI18n();
   const { data, error, reload } = useAsync(loadPrivateSettings, []);
   const [tab, setTab] = useState<Tab>("jobs");
+  const settingsView = (view: (settings: PrivateSettings) => ReactNode) =>
+    data ? view(data) : error ? <ErrorNotice onRetry={reload} /> : <ListSkeleton rows={2} />;
   return (
     <>
       <PageTitle title={t.admin.jobs.title} subtitle={t.admin.jobs.subtitle} />
@@ -430,12 +265,13 @@ export default function JobsAdminPage() {
           <JobsPanel />
           <GuidePanel title={t.admin.jobs.flowTitle} steps={t.admin.jobs.flow} />
         </div>
-        {/* সেভের পরে ফর্ম আবার বসে, যাতে সেভ করা মান দেখায় */}
-        {data ? (
-          <SettingsForm key={JSON.stringify(data)} initial={data} onSaved={reload} tab={tab} onTab={setTab} />
-        ) : (
-          tab !== "jobs" && (error ? <ErrorNotice onRetry={reload} /> : <ListSkeleton rows={2} />)
-        )}
+        {/* সেভের পরে আবার বসে, যাতে সেভ করা মান দেখায় */}
+        <div role="tabpanel" id="jobs-ai" hidden={tab !== "ai"}>
+          {settingsView((settings) => <AiSetup key={JSON.stringify(settings)} settings={settings} onSaved={reload} />)}
+        </div>
+        <div role="tabpanel" id="jobs-telegram" hidden={tab !== "telegram"}>
+          {settingsView((settings) => <TelegramForm key={JSON.stringify(settings)} initial={settings} onSaved={reload} />)}
+        </div>
       </div>
     </>
   );

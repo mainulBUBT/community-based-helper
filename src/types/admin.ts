@@ -78,8 +78,15 @@ export interface SiteSettings {
   aboutWhatEn: string;
 }
 
+export interface LlmModel {
+  baseUrl: string;
+  model: string;
+}
+
 export interface PrivateSettings {
   llm: { baseUrl: string; model: string; apiKey: string | null };
+  // পছন্দের ক্রমে; ওপরেরটা আগে চলে, quota শেষ হলে পরেরটা
+  llmModels?: LlmModel[];
   // প্রতিটা প্রোভাইডারের key, Base URL ধরে (ব্রাউজারে শুধু ঢাকা রূপ আসে)
   llmKeys?: Record<string, string>;
   telegramBotToken: string | null;
