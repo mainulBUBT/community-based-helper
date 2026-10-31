@@ -22,6 +22,28 @@ export interface Job {
   lastMessage: string | null;
 }
 
+export interface ManagerStep {
+  call: string;
+  result: string;
+  tone: "ok" | "bad" | "wait";
+}
+
+export interface ManagerMessage {
+  id: number;
+  role: "user" | "manager" | "schedule";
+  text: string;
+  steps: ManagerStep[];
+  at: string;
+}
+
+export interface ManagerStatus {
+  model: string | null;
+  models: number;
+  telegram: boolean;
+  nextReport: string;
+  history: ManagerMessage[];
+}
+
 export interface JobRun {
   id: number;
   jobId: string;

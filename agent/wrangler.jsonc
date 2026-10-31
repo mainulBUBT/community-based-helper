@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "dordam-manager",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "observability": { "enabled": true },
+  "durable_objects": { "bindings": [{ "name": "MANAGER", "class_name": "Manager" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Manager"] }],
+  "vars": { "SITE_ORIGIN": "https://dordam.app" }
+}

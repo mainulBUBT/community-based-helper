@@ -17,24 +17,12 @@ import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { listJobs, requestJobRun, setJobEnabled } from "@/services/admin/jobs";
 import { loadPrivateSettings, savePrivateSettings } from "@/services/admin/settings";
 import type { Job, PrivateSettings } from "@/types/admin";
+import { jobState, type JobState } from "@/utils/job-state";
 
 const AI_JOBS = new Set(["discover", "promos"]);
 
 const TABS = ["jobs", "ai", "telegram"] as const;
 type Tab = (typeof TABS)[number];
-
-
-const STUCK_AFTER = 2 * 3600000;
-
-type JobState = "ok" | "running" | "queued" | "stuck" | "failed" | "paused" | "never";
-
-function jobState(job: Job, now: number): JobState {
-  if (!job.enabled) return "paused";
-  if (job.runRequestedAt && (!job.lastRunAt || job.runRequestedAt > job.lastRunAt)) return "queued";
-  if (job.lastStatus === "running") return job.lastRunAt && now - new Date(job.lastRunAt).getTime() > STUCK_AFTER ? "stuck" : "running";
-  if (!job.lastRunAt) return "never";
-  return job.lastStatus === "failed" ? "failed" : "ok";
-}
 
 const TONE: Record<JobState, string> = {
   ok: "bg-ok-soft text-ok",

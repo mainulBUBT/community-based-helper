@@ -1,6 +1,9 @@
-// এক প্রোভাইডারের কয়েকটা key (কমা, ফাঁকা জায়গা বা নতুন লাইনে আলাদা)। প্রতিবার পালা করে পরেরটা।
+// এক প্রোভাইডারের কয়েকটা key, প্রতিবার পালা করে পরেরটা।
 // 429 দুই রকম: মিনিটের সীমা হলে থেমে আবার একই key; দিনের কোটা শেষ হলে সেই key এই run এ আর নয়।
+import { splitKeys } from "./models";
 import { sleep } from "./sleep";
+
+export { splitKeys };
 
 const spent = new Set<string>();
 let turn = 0;
@@ -11,7 +14,6 @@ const RATE_RETRIES = 3;
 let queue: Promise<unknown> = Promise.resolve();
 let lastCall = 0;
 
-export const splitKeys = (apiKey: string | null | undefined) => (apiKey ?? "").split(/[\s,]+/).filter(Boolean);
 
 // key এর কোটা মডেল ধরে (Gemini-তে একই key এর এক মডেল শেষ হলেও অন্যটা চলে), তাই scope = মডেল
 export class QuotaError extends Error {}

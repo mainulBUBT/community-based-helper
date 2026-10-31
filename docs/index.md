@@ -46,6 +46,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 20. ⬜ **২৯ অক্টোবরের খেজুরের গুড় লাইভে নেওয়া** (১৯ নম্বরের সাথে একসাথে করা যায়): `npm run db:push` (migration `20261029072325_date-jaggery-category.sql` আর `20261029100645_organic-foods-parent.sql`: নতুন মূল ক্যাটাগরি "অর্গানিক খাবার", তার ভাগ মধু, খেজুর, খেজুরের গুড়; আর `20261029101029_accessories-parent.sql`: "এক্সেসরিজ", তার ভাগ চার্জার (পাওয়ার ব্যাংক আর চার্জার ফ্যান আলাদা মূল ক্যাটাগরি); আর `20261029115441_laptops-tba-cleanup.sql`: এক দোকানে নেমে যাওয়া ৬টা ল্যাপটপ মোছে; ক্যাটাগরি seed-এর আগে লাগে), তারপর `npm run db:seed` (গুড়ের ৬ পণ্য, ১২ দাম; খেজুরে অ্যাম্বার, মাশরুক, দাব্বাস; ল্যাপটপে ২৩টা নতুন মডেল), তারপর `rebuild`। দেখুন [data-sources](features/17-data-sources.md)।
 21. ⬜ **৩০ অক্টোবরের Aureva আর Korean Skincare BD লাইভে নেওয়া** (migration লাগে না): `npm run catalog:specs`, তারপর `npm run catalog:build` (sites থেকে sellers-এ দুই দোকানই নিজেই বসবে), তারপর `npx supabase db query --linked -f supabase/seed.sql`, তারপর `rebuild`। স্কিনকেয়ারে Aureva ১৩ পণ্যে ১৪ দাম (check ১৪/১৪) আর Korean Skincare BD ১১ পণ্যে ১১ দাম (check ১১/১১)। দেখুন [data-sources](features/17-data-sources.md)।
 22. ⬜ **৩১ অক্টোবরের কয়েকটা AI সেটআপ:** deploy-এর পরে অ্যাডমিন → অটোমেশন ও AI → AI সেটআপে সেটআপগুলো পছন্দের ক্রমে যোগ করুন (migration লাগে না)। দেখুন [llm](features/13-llm.md)।
+24. ⬜ **৩১ অক্টোবরের AI ম্যানেজার চালু করা:** [ai-manager](features/19-ai-manager.md)-এর "চালু করার ধাপ" (wrangler login, `npm run agent:deploy`, দুটো secret, GitHub-এ `MANAGER_URL`, তারপর `rebuild`)।
 11. ✅ `/about/` পেজ (`/about/` বাংলা, `/en/about/` English), সব লেখা অ্যাডমিন থেকে বদলানো যায়।
 
 ## ফিচার ট্র্যাকার
@@ -70,6 +71,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | 16 | Deploy আর ডোমেইন | 🟡 `dordam.app` চালু, SEO লিংক ঠিক; Auth URL, Search Console বাকি | [16-deploy](features/16-deploy.md) |
 | 17 | ডেটার উৎস আর নিয়ম | ✅ সিদ্ধান্ত | [17-data-sources](features/17-data-sources.md) |
 | 18 | নিরাপত্তা | 🟡 ড্যাশবোর্ড সেটিং বাকি | [18-security](features/18-security.md) |
+| 19 | AI ম্যানেজার (Telegram আর অ্যাডমিনে কথা, সকালের রিপোর্ট) | 🟡 ধাপ ১ বানানো, লাইভে চালু বাকি | [19-ai-manager](features/19-ai-manager.md) |
 
 ## পুরো প্ল্যান সংক্ষেপে
 
