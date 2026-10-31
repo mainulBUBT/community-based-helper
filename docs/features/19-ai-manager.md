@@ -24,7 +24,7 @@
 3. দুটো secret বসান (মান চ্যাটে দেবেন না):
    - `npx wrangler secret put SUPABASE_URL -c agent/wrangler.jsonc`
    - `npx wrangler secret put SUPABASE_SERVICE_KEY -c agent/wrangler.jsonc`
-4. GitHub → Settings → Variables-এ `MANAGER_URL` = ধাপ ২-এর ঠিকানা। তারপর `rebuild` চালান, যাতে অ্যাডমিন পাতা ম্যানেজারকে খুঁজে পায়।
+4. GitHub → Settings → Variables-এ `MANAGER_URL` = ধাপ ২-এর ঠিকানা। তারপর `rebuild` চালান, যাতে অ্যাডমিন পাতা ম্যানেজারকে খুঁজে পায়। ঠিকানা বদলালে `public/_headers`-এর `connect-src`-এও বদলাতে হবে, না হলে ব্রাউজার ডাক আটকে দেয়। এখন সেখানে `dordam-manager.mainulislam3057.workers.dev` আছে।
 5. অ্যাডমিন → AI ম্যানেজার খুলুন। Telegram "যুক্ত" দেখালে bot-কে কিছু লিখে দেখুন।
 
 লোকালে পরীক্ষা: `agent/.dev.vars`-এ `SUPABASE_URL` আর `SUPABASE_SERVICE_KEY` দিয়ে `npm run agent:dev`।
