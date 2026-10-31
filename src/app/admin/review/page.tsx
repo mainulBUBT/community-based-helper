@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState, type FormEvent, type ReactNode } from "react";
 import { ConditionSelect } from "@/components/admin/ConditionSelect";
 import { Field, Select } from "@/components/admin/Field";
+import { GuidePanel } from "@/components/admin/Guide";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { Badge } from "@/components/ui/Badge";
 import { ErrorNotice } from "@/components/ui/ErrorNotice";
@@ -12,13 +13,14 @@ import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminAction } from "@/hooks/useAdminAction";
 import { useAdminI18n } from "@/hooks/useAdminI18n";
+import { showToast } from "@/lib/toast";
 import { offerVariants, saveManualOffer } from "@/services/admin/offers";
 import { canUndo, listPendingReview, listRecentDecisions, resolveReview, undoReview } from "@/services/admin/review";
 import { listAllSellers, saveSeller } from "@/services/admin/sellers";
 import { loadCatalog } from "@/services/catalog-live";
 import type { ReviewItem } from "@/types/admin";
 import type { Condition, Offer, Product, Seller } from "@/types/catalog";
-import { formatTaka } from "@/utils/format";
+import { formatTaka, parseTaka } from "@/utils/format";
 import { safeUrl } from "@/utils/url";
 
 const taka = (value?: string | number | null) => (value ? formatTaka(Number(value)) : "");
@@ -75,13 +77,13 @@ function ShopLink({ url, label }: { url?: string; label?: string }) {
   );
 }
 
-function Choice({ label, hint, tone, disabled, onClick }: { label: string; hint: string; tone: "yes" | "no"; disabled: boolean; onClick: () => void }) {
+function Choice({ label, hint, blocked, tone, disabled, onClick }: { label: string; hint: string; blocked?: string; tone: "yes" | "no"; disabled: boolean; onClick?: () => void }) {
   return (
-    <div className="flex flex-col gap-1">
-      <button type="button" disabled={disabled} onClick={onClick} className={tone === "yes" ? primaryButton : secondaryButton}>
+    <div className="flex w-full flex-col gap-1 sm:w-auto">
+      <button type={onClick ? "button" : "submit"} disabled={disabled} onClick={onClick} className={`${tone === "yes" ? primaryButton : secondaryButton} w-full sm:w-auto`}>
         {label}
       </button>
-      <span className="max-w-64 text-xs text-dim">{hint}</span>
+      <span className={`text-xs sm:max-w-64 ${blocked ? "font-semibold text-gold-text" : "text-dim"}`}>{blocked ?? hint}</span>
     </div>
   );
 }
@@ -101,7 +103,9 @@ function MatchCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context; onDo
   const { busy, run } = useAdminAction();
   const p = item.payload;
   // ভার্সন ছাড়া আসা আইটেম (AI বন্ধ ছিল, বা ক্যাটালগে ভার্সন নেই): পণ্য চেনা যায় productId দিয়ে
-  const product = productOf(ctx.products, p.variantId) ?? ctx.products.find((x) => x.id === p.productId);
+  const guessed = productOf(ctx.products, p.variantId) ?? ctx.products.find((x) => x.id === p.productId);
+  const [productId, setProductId] = useState(guessed?.id ?? "");
+  const product = ctx.products.find((x) => x.id === productId);
   const [variantId, setVariantId] = useState(p.variantId ?? "");
   const label = product?.variants.find((v) => v.id === variantId)?.label ?? "";
   // "ক্যাটালগে নেই" আইটেমে সবচেয়ে সস্তা অপশনের দাম অন্য ভার্সনে বসে যেত, তাই অ্যাডমিন অপশনটা নিজে বাছেন
@@ -110,9 +114,10 @@ function MatchCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context; onDo
   const picked = p.newVariant && option !== "" ? options[Number(option)] : undefined;
   // দোকানের এই ভার্সনে অন্য লিংকের দাম আগে থেকে থাকলে অনুমোদন সেটা মুছে দিত
   const taken = ctx.offers.some((o) => o.variantId === variantId && o.sellerId === p.sellerId && o.condition === (p.condition || "official") && o.url !== p.url);
+  const blocked = !variantId ? t.admin.review.needVariant : p.newVariant && options.length > 0 && !picked ? t.admin.review.needOption : undefined;
 
   async function decide(approved: boolean) {
-    const patch: Record<string, string> = approved && variantId !== p.variantId ? { variantId, guess: `${product?.name ?? ""} ${label}`.trim() } : {};
+    const patch: Record<string, string> = approved && variantId !== p.variantId ? { variantId, productId, guess: `${product?.name ?? ""} ${label}`.trim() } : {};
     if (approved && picked) Object.assign(patch, { price: picked.price, oldPrice: "", inStock: picked.out ? "false" : "", region: "" });
     if (await run(() => resolveReview(item, approved, patch), approved ? t.admin.review.approved : t.admin.review.rejected)) onDone();
   }
@@ -154,10 +159,25 @@ function MatchCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context; onDo
             {t.admin.review.ourSide}
             {p.newVariant && <Badge tone="gold">{t.admin.review.newVariant}</Badge>}
           </span>
-          <p className="font-semibold">{product ? `${product.brand} ${product.name}` : p.guess}</p>
+          {!guessed && p.guess && <p className="font-semibold">{p.guess}</p>}
+          <Select
+            label={t.admin.review.pickProduct}
+            value={productId}
+            onChange={(e) => {
+              setProductId(e.target.value);
+              setVariantId("");
+            }}
+          >
+            <option value="">{t.admin.review.choose}</option>
+            {ctx.products.map((x) => (
+              <option key={x.id} value={x.id}>
+                {x.brand} {x.name}
+              </option>
+            ))}
+          </Select>
           {product && (
             <Select label={t.admin.review.pickVariant} value={variantId} onChange={(e) => setVariantId(e.target.value)}>
-              {!p.variantId && <option value="">{t.admin.review.choose}</option>}
+              {!variantId && <option value="">{t.admin.review.choose}</option>}
               {product.variants.map((v) => (
                 <option key={v.id} value={v.id}>
                   {v.label}
@@ -167,9 +187,13 @@ function MatchCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context; onDo
           )}
           <PriceContext ctx={ctx} variantId={variantId} sellerId={p.sellerId} />
           {taken && <p className="text-[13px] font-semibold text-danger">{t.admin.review.taken}</p>}
-          {p.newVariant && product && (
+          {product ? (
             <Link href={`/admin/products/edit/?id=${product.id}`} className="w-fit text-sm font-semibold text-brand hover:underline">
               {t.admin.review.addVariant}
+            </Link>
+          ) : (
+            <Link href="/admin/products/" className="w-fit text-sm font-semibold text-brand hover:underline">
+              {t.admin.review.createProduct}
             </Link>
           )}
         </div>
@@ -180,7 +204,7 @@ function MatchCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context; onDo
         <span className="text-faint">{t.admin.review.arrived(ago(item.createdAt))}</span>
       </p>
       <div className="flex flex-wrap gap-3">
-        <Choice tone="yes" label={t.admin.review.matchYes} hint={t.admin.review.matchYesHint} disabled={busy || !variantId || taken || (Boolean(p.newVariant) && !picked)} onClick={() => decide(true)} />
+        <Choice tone="yes" label={t.admin.review.matchYes} hint={t.admin.review.matchYesHint} blocked={blocked} disabled={busy || Boolean(blocked) || taken} onClick={() => decide(true)} />
         <Choice tone="no" label={t.admin.review.matchNo} hint={t.admin.review.matchNoHint} disabled={busy} onClick={() => decide(false)} />
       </div>
     </li>
@@ -227,7 +251,8 @@ function guess(payload: Record<string, string>, products: Product[], sellers: Se
     product?.variants.find((v) => Object.values(v.attributes).every((value) => text.includes(lower(value)))) ??
     product?.variants[0];
   const sellerText = lower(payload.seller);
-  const seller = sellers.find((s) => sellerText.includes(lower(s.name)) || lower(s.name).includes(sellerText.split(",")[0].trim()));
+  const sellerName = sellerText.split(",")[0].trim();
+  const seller = sellerName ? sellers.find((s) => sellerText.includes(lower(s.name)) || lower(s.name).includes(sellerName)) : undefined;
   return { productId: product?.id ?? "", variantId: variant?.id ?? "", sellerId: seller?.id ?? NEW_SELLER };
 }
 
@@ -244,9 +269,10 @@ function SubmissionCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context;
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     const text = (name: string) => String(form.get(name) ?? "").trim() || null;
-    const price = Number(String(form.get("price")).replace(/\D/g, ""));
+    const price = parseTaka(String(form.get("price") ?? ""));
     const variantId = text("variant");
-    if (!price || !variantId) return;
+    if (!price) return showToast(t.admin.review.priceInvalid);
+    if (!variantId) return showToast(t.admin.review.needVariant);
     const done = await run(async () => {
       const seller =
         sellerId === NEW_SELLER
@@ -314,16 +340,12 @@ function SubmissionCard({ item, ctx, onDone }: { item: ReviewItem; ctx: Context;
           <Field label={t.admin.products.region} name="region" placeholder={t.admin.products.regionPlaceholder} />
           <Field label={t.admin.products.price} name="price" inputMode="numeric" defaultValue={p.price} required />
           <Field label={t.admin.products.url} name="url" type="url" defaultValue={safeUrl(p.link) ?? ""} placeholder="https://" />
-          <div className="flex flex-wrap gap-2 md:col-span-2">
-            <button type="submit" disabled={busy || !product} className={primaryButton}>
-              {t.admin.review.submissionYes}
-            </button>
-            <button type="button" disabled={busy} onClick={reject} className={secondaryButton}>
-              {t.admin.review.submissionNo}
-            </button>
+          <div className="flex flex-wrap gap-3 md:col-span-2">
+            <Choice tone="yes" label={t.admin.review.submissionYes} hint={t.admin.review.submissionYesHint} disabled={busy || !product} />
+            <Choice tone="no" label={t.admin.review.submissionNo} hint={t.admin.review.submissionNoHint} disabled={busy} onClick={reject} />
             {!product && (
-              <Link href="/admin/products/" className={`${secondaryButton} inline-flex items-center`}>
-                {t.admin.review.noProduct}
+              <Link href="/admin/products/" className="self-start text-sm font-semibold text-brand hover:underline sm:self-center">
+                {t.admin.review.createProduct}
               </Link>
             )}
           </div>
@@ -385,6 +407,7 @@ export default function ReviewPage() {
         }
       />
       <div className="flex flex-col gap-6">
+        <GuidePanel title={t.admin.review.guideTitle} steps={t.admin.review.guide} />
         <Section title={t.admin.review.anomalies(num(anomalies.length))} help={t.admin.review.anomaliesHelp} count={anomalies.length}>
           {anomalies.map((item) => (
             <AnomalyCard key={item.id} item={item} ctx={context} onDone={reload} />

@@ -2,6 +2,8 @@ const BN_DIGITS = "০১২৩৪৫৬৭৮৯";
 
 export const toBnDigits = (value: string | number) => String(value).replace(/\d/g, (d) => BN_DIGITS[Number(d)]);
 
+export const parseTaka = (text: string) => Number(text.replace(/[০-৯]/g, (d) => String(BN_DIGITS.indexOf(d))).replace(/\D/g, ""));
+
 export const formatTaka = (amount: number, lang: "bn" | "en" = "en") =>
   `৳${amount.toLocaleString(lang === "bn" ? "bn-BD" : "en-IN")}`;
 
