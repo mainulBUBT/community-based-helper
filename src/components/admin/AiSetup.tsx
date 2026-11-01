@@ -93,6 +93,9 @@ function AddModel({ settings, models, onSaved }: { settings: PrivateSettings; mo
   const [model, setModel] = useState(PRESETS[0].model);
   const [testResult, setTestResult] = useState<TestResult>(null);
   const savedKey = (url: string) => settings.llmKeys?.[providerKey(url)] ?? null;
+  const isPreset = (url: string) => PRESETS.some((p) => providerKey(p.baseUrl) === providerKey(url));
+  const savedCustom = Object.keys(settings.llmKeys ?? {}).filter((url) => !isPreset(url));
+  const lastModel = (url: string) => models.find((m) => providerKey(m.baseUrl) === providerKey(url))?.model ?? "";
   const typedKey = (form: HTMLFormElement | null) => String(new FormData(form ?? undefined).get("apiKey") ?? "").trim() || null;
 
   function pickProvider(url: string, presetModel: string) {
@@ -137,11 +140,23 @@ function AddModel({ settings, models, onSaved }: { settings: PrivateSettings; mo
               {savedKey(preset.baseUrl) && <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />}
             </button>
           ))}
+          {savedCustom.map((url) => (
+            <button
+              key={url}
+              type="button"
+              aria-pressed={providerKey(baseUrl) === url}
+              onClick={() => pickProvider(url, lastModel(url))}
+              className={`flex h-10 items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold ${providerKey(baseUrl) === url ? "border-brand bg-brand-soft" : "border-line hover:border-brand"}`}
+            >
+              {providerName(url)}
+              <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />
+            </button>
+          ))}
           <button
             type="button"
-            aria-pressed={!PRESETS.some((p) => p.baseUrl === baseUrl)}
+            aria-pressed={!isPreset(baseUrl) && !savedCustom.includes(providerKey(baseUrl))}
             onClick={() => pickProvider("", "")}
-            className={`h-10 rounded-xl border px-3 text-sm font-semibold ${PRESETS.some((p) => p.baseUrl === baseUrl) ? "border-line hover:border-brand" : "border-brand bg-brand-soft"}`}
+            className={`h-10 rounded-xl border px-3 text-sm font-semibold ${isPreset(baseUrl) || savedCustom.includes(providerKey(baseUrl)) ? "border-line hover:border-brand" : "border-brand bg-brand-soft"}`}
           >
             {t.admin.jobs.customProvider}
           </button>
