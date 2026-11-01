@@ -4,56 +4,45 @@ import { AlertCircle, CheckCircle2, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { PageTitle, Panel, StatCard } from "@/components/admin/Panel";
 import { VisitorChart } from "@/components/admin/VisitorChart";
+import { ErrorNotice } from "@/components/ui/ErrorNotice";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
 import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { listJobs } from "@/services/admin/jobs";
-import { listPendingReview } from "@/services/admin/review";
-import { listAllSellers } from "@/services/admin/sellers";
 import { aiReady, loadPrivateSettings } from "@/services/admin/settings";
-import { listSummaries } from "@/services/catalog-live";
-import { loadDayStats } from "@/services/admin/stats";
+import { loadDashboardCounts, loadDayStats } from "@/services/admin/stats";
 
 async function loadDashboard() {
-  const [review, jobs, sellers, stats, summaries, settings] = await Promise.all([
-    listPendingReview(),
-    listJobs(),
-    listAllSellers(),
-    loadDayStats(14),
-    listSummaries(true),
-    loadPrivateSettings().catch(() => null),
-  ]);
-  return { review, jobs, sellers, stats, summaries, aiReady: Boolean(settings && aiReady(settings)), loadedAt: Date.now() };
+  const [counts, jobs, stats, settings] = await Promise.all([loadDashboardCounts(), listJobs(), loadDayStats(14), loadPrivateSettings().catch(() => null)]);
+  return { counts, jobs, stats, aiReady: Boolean(settings && aiReady(settings)), loadedAt: Date.now() };
 }
 
 export default function DashboardPage() {
   const { t, num, ago } = useAdminI18n();
-  const { data, loading } = useAsync(loadDashboard, []);
+  const { data, loading, error, reload } = useAsync(loadDashboard, []);
+  if (error && !data) return <ErrorNotice onRetry={reload} />;
   if (loading || !data) return <ListSkeleton />;
-  const { review, jobs, sellers, stats, summaries, aiReady, loadedAt } = data;
+  const { counts, jobs, stats, aiReady, loadedAt } = data;
   const today = stats.at(-1);
   const failing = jobs.filter((j) => j.lastStatus === "failed");
-  const unverified = sellers.filter((s) => !s.verified).length;
-  const products = summaries.map((s) => s.product);
   const STALE_HOURS = 30;
   const stale = (id: string) => {
     const at = jobs.find((j) => j.id === id)?.lastRunAt;
     return at && loadedAt - new Date(at).getTime() > STALE_HOURS * 3600_000 ? at : null;
   };
-  const oldYear = new Date(loadedAt).getFullYear() - 3;
   // কাজ থেমে থাকা আগে, কারণ তখন বাকি সব সংখ্যাও পুরনো
   const warnings = [
     ...(stale("prices") ? [{ text: t.admin.dashboard.todo.stalePrices(ago(stale("prices")!)), href: "/admin/jobs/" }] : []),
     ...(stale("rebuild") ? [{ text: t.admin.dashboard.todo.staleSite(ago(stale("rebuild")!)), href: "/admin/jobs/" }] : []),
   ];
   const todo = [
-    { count: review.length, text: t.admin.dashboard.todo.review, href: "/admin/review/" },
+    { count: counts.review, text: t.admin.dashboard.todo.review, href: "/admin/review/" },
     { count: failing.length, text: t.admin.dashboard.todo.failing, href: "/admin/jobs/" },
-    { count: summaries.filter((s) => s.sellerCount === 0).length, text: t.admin.dashboard.todo.noPrice, href: "/admin/products/" },
-    { count: products.filter((p) => !p.images?.length).length, text: t.admin.dashboard.todo.noImage, href: "/admin/products/" },
-    { count: products.filter((p) => !p.specs?.length).length, text: t.admin.dashboard.todo.noSpecs, href: "/admin/products/" },
-    { count: unverified, text: t.admin.dashboard.todo.unverified, href: "/admin/sellers/" },
-    { count: products.filter((p) => p.active !== false && p.releaseYear && p.releaseYear <= oldYear).length, text: t.admin.dashboard.todo.oldModels, href: "/admin/products/" },
+    { count: counts.noPrice, text: t.admin.dashboard.todo.noPrice, href: "/admin/products/" },
+    { count: counts.noImage, text: t.admin.dashboard.todo.noImage, href: "/admin/products/" },
+    { count: counts.noSpecs, text: t.admin.dashboard.todo.noSpecs, href: "/admin/products/" },
+    { count: counts.unverified, text: t.admin.dashboard.todo.unverified, href: "/admin/sellers/" },
+    { count: counts.oldModels, text: t.admin.dashboard.todo.oldModels, href: "/admin/products/" },
   ].filter((item) => item.count > 0);
 
   return (
@@ -61,8 +50,8 @@ export default function DashboardPage() {
       <PageTitle title={t.admin.dashboard.title} />
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <StatCard label={t.admin.dashboard.todayVisitors} value={num(today?.visitors ?? 0)} />
-        <StatCard label={t.admin.dashboard.pendingReview} value={num(review.length)} tone="gold" />
-        <StatCard label={t.admin.dashboard.unverifiedSellers} value={num(unverified)} />
+        <StatCard label={t.admin.dashboard.pendingReview} value={num(counts.review)} tone="gold" />
+        <StatCard label={t.admin.dashboard.unverifiedSellers} value={num(counts.unverified)} />
         <StatCard label={t.admin.dashboard.failingJobs} value={num(failing.length)} tone={failing.length ? "brand" : "ink"} />
       </div>
 

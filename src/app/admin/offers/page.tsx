@@ -123,8 +123,8 @@ export default function OffersAdminPage() {
         </div>
         <ul className="divide-y divide-line-soft">
           {list.items.map((promo) => (
-            <li key={promo.id} className="flex items-center gap-3 px-5 py-4">
-              <div className="flex min-w-0 flex-1 flex-col gap-1.5">
+            <li key={promo.id} className="flex flex-wrap items-center justify-end gap-3 px-5 py-4">
+              <div className="flex min-w-0 flex-1 flex-col gap-1.5 max-sm:basis-full">
                 <p className="font-semibold">{promo.text}</p>
                 <p className="text-[13px] text-dim">
                   {[names.get(promo.sellerId), promo.scope, promo.endsOn ? t.admin.offers.until(promo.endsOn) : t.admin.offers.noEndDate].filter(Boolean).join(", ")}

@@ -135,7 +135,7 @@ export default function SellersAdminPage() {
             <SearchBox value={list.query} onChange={list.search} placeholder={t.admin.sellers.search} />
           </div>
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[760px] text-left text-[15px]">
+            <table className="card-table w-full text-left text-[15px] xl:min-w-[760px]">
               <thead className="text-[13px] text-dim">
                 <tr>
                   <th className="px-5 py-3 font-semibold">{t.admin.sellers.colName}</th>
@@ -146,16 +146,16 @@ export default function SellersAdminPage() {
                   <th className="px-5 py-3" />
                 </tr>
               </thead>
-              <tbody className="divide-y divide-line-soft">
+              <tbody className="divide-line-soft xl:divide-y">
                 {list.items.map((seller) => (
                   <tr key={seller.id}>
                     <td className="px-5 py-3">
                       <p className="font-semibold">{seller.name}</p>
                       {seller.area && <p className="text-[13px] text-dim">{seller.area}</p>}
                     </td>
-                    <td className="px-3 py-3 text-dim">{t.sellerKind[seller.kind as keyof Messages["sellerKind"]]}</td>
-                    <td className="px-3 py-3 text-[13px]">{seller.website ? new URL(seller.website).hostname : seller.phone}</td>
-                    <td className="px-3 py-3">
+                    <td data-label={t.admin.sellers.colKind} className="px-3 py-3 text-dim max-xl:text-[13px]">{t.sellerKind[seller.kind as keyof Messages["sellerKind"]]}</td>
+                    <td data-label={t.admin.sellers.colContact} className="px-3 py-3 text-[13px]">{seller.website ? new URL(seller.website).hostname : seller.phone}</td>
+                    <td data-label={t.admin.sellers.colVerified} className="px-3 py-3">
                       <Toggle
                         label={`${seller.name} ${t.admin.sellers.colVerified}`}
                         checked={seller.verified}
@@ -163,7 +163,7 @@ export default function SellersAdminPage() {
                         onChange={(verified) => update(seller, { verified }, verified ? t.admin.sellers.verifiedOn : t.admin.sellers.verifiedOff)}
                       />
                     </td>
-                    <td className="px-3 py-3">
+                    <td data-label={t.admin.sellers.colActive} className="px-3 py-3">
                       <Toggle
                         label={`${seller.name} ${t.admin.sellers.colActive}`}
                         checked={seller.active}
@@ -172,7 +172,7 @@ export default function SellersAdminPage() {
                       />
                     </td>
                     <td className="px-5 py-3 text-right">
-                      <div className="flex justify-end gap-2">
+                      <div className="flex justify-end gap-2 max-xl:*:flex-1">
                         <button type="button" onClick={() => setEditing(seller)} className={secondaryButton}>
                           {t.admin.common.edit}
                         </button>

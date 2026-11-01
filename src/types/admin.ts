@@ -22,6 +22,15 @@ export interface Job {
   lastMessage: string | null;
 }
 
+export interface DashboardCounts {
+  review: number;
+  noPrice: number;
+  noImage: number;
+  noSpecs: number;
+  unverified: number;
+  oldModels: number;
+}
+
 export interface ManagerStep {
   call: string;
   result: string;

@@ -1,6 +1,28 @@
 import { sampleDayStats, samplePageStats } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
-import type { Breakdown, DayStat, OnlineVisitor, PageStat, VisitorInsights } from "@/types/admin";
+import type { Breakdown, DashboardCounts, DayStat, OnlineVisitor, PageStat, VisitorInsights } from "@/types/admin";
+import { listSummaries } from "../catalog-live";
+import { listPendingReview } from "./review";
+import { listAllSellers } from "./sellers";
+
+export async function loadDashboardCounts(): Promise<DashboardCounts> {
+  if (!supabase) {
+    const [review, sellers, summaries] = await Promise.all([listPendingReview(), listAllSellers(), listSummaries(true)]);
+    const products = summaries.map((s) => s.product);
+    const oldYear = new Date().getFullYear() - 3;
+    return {
+      review: review.length,
+      noPrice: summaries.filter((s) => s.sellerCount === 0).length,
+      noImage: products.filter((p) => !p.images?.length).length,
+      noSpecs: products.filter((p) => !p.specs?.length).length,
+      unverified: sellers.filter((s) => !s.verified).length,
+      oldModels: products.filter((p) => p.active !== false && p.releaseYear && p.releaseYear <= oldYear).length,
+    };
+  }
+  const { data, error } = await supabase.rpc("dashboard_counts").single<{ review: number; no_price: number; no_image: number; no_specs: number; unverified: number; old_models: number }>();
+  if (error) throw error;
+  return { review: data.review, noPrice: data.no_price, noImage: data.no_image, noSpecs: data.no_specs, unverified: data.unverified, oldModels: data.old_models };
+}
 
 export async function loadDayStats(days = 30): Promise<DayStat[]> {
   if (!supabase) return sampleDayStats;

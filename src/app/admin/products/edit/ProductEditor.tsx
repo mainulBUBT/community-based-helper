@@ -260,7 +260,7 @@ function OfferRow({ offer, seller, phone, website, onChange }: { offer: Offer; s
               if (next === offer.url) return;
               if (await run(() => updateOffer(offer, { url: next }))) onChange();
             }}
-            className="h-9 w-full min-w-40 max-w-56 rounded-lg border border-line bg-surface px-2 text-[13px] outline-none focus:border-brand"
+            className="h-9 w-full min-w-40 rounded-lg xl:max-w-56 border border-line bg-surface px-2 text-[13px] outline-none focus:border-brand"
           />
           <label className="flex items-center gap-2 text-[13px] text-dim">
             {t.admin.products.region}
@@ -291,7 +291,7 @@ function OfferRow({ offer, seller, phone, website, onChange }: { offer: Offer; s
             ))}
         </div>
       </td>
-      <td className="px-3 py-3">
+      <td data-label={t.admin.editor.colPrice} className="px-3 py-3">
         <label className="sr-only" htmlFor={`price-${offer.id}`}>
           {t.admin.editor.priceAria}
         </label>
@@ -313,7 +313,7 @@ function OfferRow({ offer, seller, phone, website, onChange }: { offer: Offer; s
           className="h-10 w-28 rounded-lg border border-line bg-surface px-2 outline-none focus:border-brand"
         />
       </td>
-      <td className="px-3 py-3">
+      <td data-label={t.admin.editor.colStock} className="px-3 py-3">
         <select
           aria-label={t.admin.editor.stockAria}
           value={offer.inStock === null ? "" : String(offer.inStock)}
@@ -327,7 +327,7 @@ function OfferRow({ offer, seller, phone, website, onChange }: { offer: Offer; s
           <option value="false">{t.admin.editor.stockNo}</option>
         </select>
       </td>
-      <td className="px-3 py-3">
+      <td data-label={t.admin.editor.colPublished} className="px-3 py-3">
         <Toggle
           label={t.admin.editor.publishAria}
           checked={offer.published}
@@ -341,7 +341,7 @@ function OfferRow({ offer, seller, phone, website, onChange }: { offer: Offer; s
         <button
           type="button"
           aria-label={t.admin.editor.deleteOfferAria}
-          className={iconButton}
+          className={`${iconButton} ml-auto`}
           disabled={busy}
           onClick={async () => {
             if (!confirm(t.admin.editor.confirmDeleteOffer)) return;
@@ -444,7 +444,7 @@ export function ProductEditor() {
                 </p>
               ) : (
                 <div className="overflow-x-auto">
-                  <table className="w-full min-w-[600px] text-left text-[15px]">
+                  <table className="card-table w-full text-left text-[15px] xl:min-w-[600px]">
                     <thead className="text-[13px] text-dim">
                       <tr>
                         <th className="px-5 py-3 font-semibold">{t.admin.editor.colSeller}</th>
@@ -454,7 +454,7 @@ export function ProductEditor() {
                         <th className="px-5 py-3" />
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-line-soft">
+                    <tbody className="divide-line-soft xl:divide-y">
                       {rows.map((offer) => {
                         const s = sellers.get(offer.sellerId);
                         return <OfferRow key={offer.id} offer={offer} seller={s?.name ?? ""} phone={s?.phone ?? null} website={s?.website ?? null} onChange={reload} />;

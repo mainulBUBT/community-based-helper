@@ -184,7 +184,7 @@ export default function CategoriesPage() {
             <SearchBox value={list.query} onChange={list.search} placeholder={t.admin.categories.search} />
           </div>
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[640px] text-left text-[15px]">
+            <table className="card-table w-full text-left text-[15px] xl:min-w-[640px]">
               <thead className="text-[13px] text-dim">
                 <tr>
                   <th className="px-5 py-3 font-semibold">{t.admin.products.colCategory}</th>
@@ -199,7 +199,7 @@ export default function CategoriesPage() {
                   <th className="px-5 py-3" />
                 </tr>
               </thead>
-              <tbody className="divide-y divide-line-soft">
+              <tbody className="divide-line-soft xl:divide-y">
                 {list.items.map(({ category, products, children }) => (
                   <tr key={category.slug}>
                     <td className="px-5 py-3">
@@ -213,11 +213,11 @@ export default function CategoriesPage() {
                         </span>
                       </span>
                     </td>
-                    <td className="px-3 py-3 text-[13px] text-dim">{parentOf(category.parent) || "—"}</td>
-                    <td className="px-3 py-3 text-[13px] text-dim">{category.axes.map((axis) => t.axis[axis]).join(", ") || "—"}</td>
-                    <td className="px-3 py-3 text-[13px] text-dim">{categoryConditions(category).map((c) => conditionLabel(t, c, category.warranty !== false)).join(", ")}</td>
-                    <td className="px-3 py-3">{num(products)}</td>
-                    <td className="px-3 py-3">
+                    <td data-label={t.admin.categories.parent} className="px-3 py-3 text-[13px] text-dim">{parentOf(category.parent) || "—"}</td>
+                    <td data-label={t.admin.categories.axes} className="px-3 py-3 text-[13px] text-dim">{category.axes.map((axis) => t.axis[axis]).join(", ") || "—"}</td>
+                    <td data-label={t.admin.categories.conditions} className="px-3 py-3 text-[13px] text-dim">{categoryConditions(category).map((c) => conditionLabel(t, c, category.warranty !== false)).join(", ")}</td>
+                    <td data-label={t.admin.categories.products} className="px-3 py-3">{num(products)}</td>
+                    <td data-label={t.admin.categories.active} className="px-3 py-3">
                       <Toggle
                         label={t.admin.categories.active}
                         checked={category.active}
@@ -227,7 +227,7 @@ export default function CategoriesPage() {
                         }}
                       />
                     </td>
-                    <td className="px-3 py-3">
+                    <td data-label={t.admin.categories.warranty} className="px-3 py-3">
                       <Toggle
                         label={t.admin.categories.warranty}
                         checked={category.warranty !== false}
@@ -237,7 +237,7 @@ export default function CategoriesPage() {
                         }}
                       />
                     </td>
-                    <td className="px-3 py-3">
+                    <td data-label={t.admin.categories.verifyNote} className="px-3 py-3">
                       <Toggle
                         label={t.admin.categories.verifyNote}
                         checked={category.verifyNote === true}
@@ -247,7 +247,7 @@ export default function CategoriesPage() {
                         }}
                       />
                     </td>
-                    <td className="px-3 py-3">
+                    <td data-label={t.admin.categories.qualityNote} className="px-3 py-3">
                       <Toggle
                         label={t.admin.categories.qualityNote}
                         checked={category.qualityNote === true}
@@ -258,7 +258,7 @@ export default function CategoriesPage() {
                       />
                     </td>
                     <td className="px-5 py-3 text-right">
-                      <div className="flex justify-end gap-2">
+                      <div className="flex justify-end gap-2 max-xl:*:flex-1">
                         <button type="button" onClick={() => setEditing({ category, isNew: false })} className={secondaryButton}>
                           {t.admin.common.edit}
                         </button>

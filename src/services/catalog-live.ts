@@ -7,6 +7,19 @@ import { toCategory, toOffer, toPricePoint, toProduct, toPromo, toSeller } from 
 import { loadSampleCatalog, sampleCategories, samplePromos } from "@/data/sample";
 import { safeUrl } from "@/utils/url";
 
+const ROW_LIMIT = 1000;
+
+// Supabase এক ডাকে ১০০০ সারির বেশি দেয় না
+async function allRows<T>(page: (from: number, to: number) => PromiseLike<{ data: T[] | null; error: unknown; count: number | null }>): Promise<T[]> {
+  const first = await page(0, ROW_LIMIT - 1);
+  const pages = Math.ceil((first.count ?? 0) / ROW_LIMIT);
+  const rest = await Promise.all(Array.from({ length: pages - 1 }, (_, i) => page((i + 1) * ROW_LIMIT, (i + 2) * ROW_LIMIT - 1)));
+  return [first, ...rest].flatMap(({ data, error }) => {
+    if (error) throw error;
+    return data ?? [];
+  });
+}
+
 // অ্যাডমিন প্যানেল লাইভ Supabase পড়ে — সাইট build-time বেক করা ডেটায় চলে (catalog.ts)।
 async function fetchCatalog(): Promise<Catalog> {
   if (!supabase) {
@@ -20,20 +33,21 @@ async function fetchCatalog(): Promise<Catalog> {
       promos: samplePromos.filter((p) => p.active),
     };
   }
+  const client = supabase;
   const [categories, products, sellers, offers, promos] = await Promise.all([
-    supabase.from("categories").select("*").order("position"),
-    supabase.from("products").select("*, variants(*)").order("popularity", { ascending: false }),
-    supabase.from("sellers").select("*"),
-    supabase.from("offers").select("*"),
-    supabase.from("promos").select("*"),
+    client.from("categories").select("*").order("position"),
+    allRows((from, to) => client.from("products").select("*, variants(*)", { count: "exact" }).order("popularity", { ascending: false }).order("id").range(from, to)),
+    client.from("sellers").select("*"),
+    allRows((from, to) => client.from("offers").select("*", { count: "exact" }).eq("published", true).order("id").range(from, to)),
+    client.from("promos").select("*"),
   ]);
-  const error = categories.error ?? products.error ?? sellers.error ?? offers.error ?? promos.error;
+  const error = categories.error ?? sellers.error ?? promos.error;
   if (error) throw error;
   return {
     categories: (categories.data ?? []).map(toCategory).filter((c) => c.active),
-    products: (products.data ?? []).map(toProduct),
+    products: products.map(toProduct),
     sellers: (sellers.data ?? []).map(toSeller),
-    offers: (offers.data ?? []).map(toOffer).filter((o) => o.published),
+    offers: offers.map(toOffer),
     promos: (promos.data ?? []).map(toPromo),
   };
 }

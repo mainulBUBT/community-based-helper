@@ -265,7 +265,7 @@ export default function ProductsAdminPage() {
           </div>
           {filtered.length === 0 && <p className="px-5 py-4 text-dim">{t.admin.products.noMatch}</p>}
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[720px] text-left text-[15px]">
+            <table className="card-table w-full text-left text-[15px] xl:min-w-[720px]">
               <thead className="text-[13px] text-dim">
                 <tr>
                   <th className="px-5 py-3 font-semibold">{t.admin.products.colProduct}</th>
@@ -276,7 +276,7 @@ export default function ProductsAdminPage() {
                   <th className="px-5 py-3" />
                 </tr>
               </thead>
-              <tbody className="divide-y divide-line-soft">
+              <tbody className="divide-line-soft xl:divide-y">
                 {paged.items.map((summary) => {
                   const { product, lowest, sellerCount } = summary;
                   const issues = issuesOf(summary);
@@ -296,10 +296,10 @@ export default function ProductsAdminPage() {
                         </span>
                       )}
                     </td>
-                    <td className="px-3 py-3 text-[13px]">{categoryLabel(product.category)}</td>
-                    <td className="px-3 py-3 text-[13px] text-dim">{product.variants.map((v) => v.label).join(", ")}</td>
-                    <td className="px-3 py-3">{num(sellerCount)}</td>
-                    <td className="px-3 py-3 font-semibold">{lowest ? formatTaka(lowest) : t.admin.products.none}</td>
+                    <td data-label={t.admin.products.colCategory} className="px-3 py-3 text-[13px]">{categoryLabel(product.category)}</td>
+                    <td data-label={t.admin.products.colVariants} className="px-3 py-3 text-[13px] text-dim">{product.variants.map((v) => v.label).join(", ")}</td>
+                    <td data-label={t.admin.products.colStores} className="px-3 py-3">{num(sellerCount)}</td>
+                    <td data-label={t.admin.products.colLowest} className="px-3 py-3 font-semibold">{lowest ? formatTaka(lowest) : t.admin.products.none}</td>
                     <td className="px-5 py-3 text-right">
                       <div className="flex items-center justify-end gap-2">
                         <a
@@ -312,7 +312,7 @@ export default function ProductsAdminPage() {
                           <ExternalLink size={16} aria-hidden="true" />
                           <span className="sr-only">{t.admin.editor.viewOnSite}</span>
                         </a>
-                        <Link href={`/admin/products/edit/?id=${product.id}`} className={secondaryButton + " inline-flex items-center"}>
+                        <Link href={`/admin/products/edit/?id=${product.id}`} className={secondaryButton + " inline-flex items-center justify-center max-xl:flex-1"}>
                           {t.admin.common.edit}
                         </Link>
                       </div>
