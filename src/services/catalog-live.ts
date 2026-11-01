@@ -68,6 +68,7 @@ export async function getSiteSettings(): Promise<SiteSettings> {
     ...settings,
     logoUrl: safeUrl(settings.logoUrl),
     facebook: safeUrl(settings.facebook),
+    youtube: safeUrl(settings.youtube),
     announcementLink: safeUrl(settings.announcementLink, { relative: true }),
   };
 }
