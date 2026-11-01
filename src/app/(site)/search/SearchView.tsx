@@ -28,7 +28,7 @@ import { categoryPath } from "@/utils/url";
 import { sortAxisValues } from "@/utils/variants";
 
 const SORTS = ["popular", "cheap", "expensive", "drop"] as const;
-const PAGE_SIZE = 24;
+const PAGE_SIZE = 30;
 type Sort = (typeof SORTS)[number];
 
 const list = (value: string | null) => (value ? value.split(",").filter(Boolean) : []);
@@ -76,8 +76,8 @@ function matches(s: ProductSummary, f: Filters, family: Set<string> | null) {
 
 function GridSkeleton() {
   return (
-    <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4">
-      {Array.from({ length: 8 }, (_, i) => (
+    <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5">
+      {Array.from({ length: 10 }, (_, i) => (
         <Skeleton key={i} className="aspect-[3/5]" />
       ))}
     </div>
@@ -85,7 +85,7 @@ function GridSkeleton() {
 }
 
 // ক্যাটাগরি পেজে সার্ভার ওই ভাগের পণ্য দিয়ে দেয়, তখন পুরো ক্যাটালগ আর নামাতে হয় না
-export function SearchView({ category, brand, initial, extra }: { category?: string; brand?: string; initial?: ProductSummary[]; extra?: ReactNode }) {
+export function SearchView({ category, brand, initial, extra, heading, crumb }: { category?: string; brand?: string; initial?: ProductSummary[]; extra?: ReactNode; heading?: string; crumb?: string }) {
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
@@ -162,7 +162,7 @@ export function SearchView({ category, brand, initial, extra }: { category?: str
   const clearAll = { brand: null, min: null, max: null, stock: null, ...Object.fromEntries(AXES.map((axis) => [axis, null])) };
   const categoryTitle = brand ?? (filters.category ? name(filters.category) : t.search.allProducts);
   const parent = brand ? undefined : find(find(filters.category)?.parent);
-  const title = query ? t.search.resultsFor(query) : categoryTitle;
+  const title = query ? t.search.resultsFor(query) : (heading ?? categoryTitle);
 
   return (
     <div className="flex flex-col gap-4">
@@ -180,7 +180,17 @@ export function SearchView({ category, brand, initial, extra }: { category?: str
             </>
           )}
           <ChevronRight size={14} aria-hidden="true" />
-          <span className="truncate text-ink">{categoryTitle}</span>
+          {crumb && filters.category ? (
+            <>
+              <Link href={categoryPath(prefix, filters.category)} className="shrink-0 hover:text-brand">
+                {categoryTitle}
+              </Link>
+              <ChevronRight size={14} aria-hidden="true" />
+              <span className="truncate text-ink">{crumb}</span>
+            </>
+          ) : (
+            <span className="truncate text-ink">{categoryTitle}</span>
+          )}
         </nav>
         <ShareButton
           title={title}
@@ -266,7 +276,7 @@ export function SearchView({ category, brand, initial, extra }: { category?: str
             </EmptyState>
           ) : (
             <>
-              <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4">
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5">
                 {paged.items.map((summary, i) => (
                   <ProductCard key={summary.product.id} summary={summary} loading={i < 4 ? "eager" : "lazy"} />
                 ))}

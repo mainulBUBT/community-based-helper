@@ -56,7 +56,7 @@ export async function CategoryPage({ slug, lang }: { slug: string; lang: Lang })
   return (
     <>
       <JsonLd data={[breadcrumbData(crumbs), itemListData(page.summaries.slice(0, 24).map((s) => s.product), prefix)]} />
-      <Suspense fallback={<StaticResults t={t} prefix={prefix} title={name} parent={parent} summaries={page.summaries} extra={budgetLinks} />}>
+      <Suspense fallback={<StaticResults t={t} prefix={prefix} title={name} trail={parent ? [parent] : []} summaries={page.summaries} extra={budgetLinks} />}>
         <SearchView category={slug} initial={page.summaries} extra={budgetLinks} />
       </Suspense>
     </>

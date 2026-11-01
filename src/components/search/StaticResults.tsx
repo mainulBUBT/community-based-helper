@@ -10,13 +10,14 @@ interface StaticResultsProps {
   t: Messages;
   prefix: string;
   title: string;
-  parent?: { name: string; href: string };
+  trail?: { name: string; href: string }[];
+  heading?: string;
   summaries: ProductSummary[];
   extra?: ReactNode;
 }
 
 // ফিল্টার ব্রাউজারে চালু হওয়ার আগের স্ট্যাটিক HTML: শিরোনাম আর প্রথম পাতার পণ্য, যাতে খোঁজার ইঞ্জিন লিস্টটা দেখে
-export function StaticResults({ t, prefix, title, parent, summaries, extra }: StaticResultsProps) {
+export function StaticResults({ t, prefix, title, trail = [], heading, summaries, extra }: StaticResultsProps) {
   const count = String(summaries.length);
   return (
     <div className="flex flex-col gap-4">
@@ -24,24 +25,24 @@ export function StaticResults({ t, prefix, title, parent, summaries, extra }: St
         <Link href={`${prefix}/`} className="hover:text-brand">
           {t.nav.home}
         </Link>
-        {parent && (
-          <>
+        {trail.map((c) => (
+          <span key={c.href} className="flex items-center gap-1">
             <ChevronRight size={14} aria-hidden="true" />
-            <Link href={parent.href} className="hover:text-brand">
-              {parent.name}
+            <Link href={c.href} className="hover:text-brand">
+              {c.name}
             </Link>
-          </>
-        )}
+          </span>
+        ))}
         <ChevronRight size={14} aria-hidden="true" />
         <span className="text-ink">{title}</span>
       </nav>
       {extra}
       <div className="flex items-baseline justify-between gap-3 rounded-lg bg-surface px-4 py-3 ring-1 ring-line">
-        <h1 className="truncate text-lg font-bold">{title}</h1>
+        <h1 className="truncate text-lg font-bold">{heading ?? title}</h1>
         <span className="shrink-0 text-xs text-dim">{t.search.count(prefix ? count : toBnDigits(count))}</span>
       </div>
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4">
-        {summaries.slice(0, 24).map((summary) => (
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5">
+        {summaries.slice(0, 30).map((summary) => (
           <ProductCard key={summary.product.id} summary={summary} />
         ))}
       </div>

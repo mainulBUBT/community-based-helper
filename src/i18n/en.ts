@@ -124,7 +124,6 @@ export const en: Messages = {
     others: "Other budgets",
     links: "By budget",
     chip: (amount) => `Under ${amount}`,
-    filters: (name) => `See all ${name} with filters`,
   },
   search: {
     label: "Search products",

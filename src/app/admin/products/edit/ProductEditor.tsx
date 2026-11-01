@@ -46,6 +46,7 @@ function DetailsForm({ product, onSaved }: { product: Product; onSaved: () => vo
   const { busy, run } = useAdminAction();
   const [images, setImages] = useState((product.images ?? []).join("\n"));
   const previews = images.split("\n").map((line) => line.trim()).filter(Boolean);
+  const makeMain = (i: number) => setImages([previews[i], ...previews.filter((_, j) => j !== i)].join("\n"));
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -104,10 +105,19 @@ function DetailsForm({ product, onSaved }: { product: Product; onSaved: () => vo
           {previews.length > 0 && (
             <div className="flex flex-wrap gap-3">
               {previews.map((src, i) => (
-                <span key={src + i} className={`flex size-20 items-center justify-center overflow-hidden rounded-lg border bg-white p-1.5 ${i === 0 ? "border-brand" : "border-line"}`}>
+                <button
+                  key={src + i}
+                  type="button"
+                  disabled={i === 0}
+                  onClick={() => makeMain(i)}
+                  title={i === 0 ? t.admin.editor.mainImage : t.admin.editor.makeMain}
+                  aria-label={i === 0 ? t.admin.editor.mainImage : t.admin.editor.makeMain}
+                  className={`relative flex size-20 items-center justify-center overflow-hidden rounded-lg border bg-white p-1.5 ${i === 0 ? "border-2 border-brand" : "border-line hover:border-brand"}`}
+                >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={src} alt="" referrerPolicy="no-referrer" className="size-full object-contain" />
-                </span>
+                  {i === 0 && <span className="absolute inset-x-0 bottom-0 bg-brand py-0.5 text-center text-[10px] font-bold text-brand-ink">{t.admin.editor.mainImage}</span>}
+                </button>
               ))}
             </div>
           )}

@@ -81,7 +81,7 @@ export async function getBudgetPage(slug: string, budget: number) {
   const summaries = within(budget);
   const below = amounts.filter((a) => a < budget).at(-1);
   if (summaries.length < BUDGET_MIN_PRODUCTS || (below && within(below).length === summaries.length)) return null;
-  return { category: page.category, budget, summaries };
+  return { category: page.category, parent: page.parent, budget, summaries };
 }
 
 // যে বাজেটে যথেষ্ট পণ্য আছে শুধু সেগুলো; ক্যাটাগরি পাতার লিংক, sitemap আর static পাতা এখান থেকে

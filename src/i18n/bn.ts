@@ -122,7 +122,6 @@ export const bn = {
     others: "অন্য বাজেটে",
     links: "বাজেট ধরে",
     chip: (amount: string) => `${amount} টাকার মধ্যে`,
-    filters: (name: string) => `সব ${name} ফিল্টারসহ দেখুন`,
   },
   search: {
     label: "পণ্য খুঁজুন",

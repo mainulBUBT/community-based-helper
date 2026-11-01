@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ProductCard } from "@/components/product/ProductCard";
+import { Suspense } from "react";
+import { SearchView } from "@/app/(site)/search/SearchView";
+import { StaticResults } from "@/components/search/StaticResults";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { budgetFromSlug, budgetSlug } from "@/config/budgets";
 import { messages, pageMeta } from "@/lib/page-meta";
@@ -52,49 +53,40 @@ export async function BudgetPage({ slug, budget, lang }: { slug: string; budget:
   const prefix = lang === "en" ? "/en" : "";
   const name = categoryName(page.category, lang);
   const amount = amountLabel(page.budget, lang);
+  const heading = t.budget.title(amount, name);
+  const crumb = t.budget.crumb(amount);
   const from = Math.min(...page.summaries.map((s) => s.lowest!));
   const others = (await listBudgets(slug)).filter((b) => b.budget !== page.budget);
+  const trail = [
+    ...(page.parent ? [{ name: categoryName(page.parent, lang), href: categoryPath(prefix, page.parent.slug) }] : []),
+    { name, href: categoryPath(prefix, slug) },
+  ];
   const crumbs = [
     { name: t.nav.home, path: `${prefix}/` },
-    { name, path: categoryPath(prefix, slug) },
-    { name: t.budget.crumb(amount), path: `${categoryPath(prefix, slug)}${budget}/` },
+    ...trail.map((c) => ({ name: c.name, path: c.href })),
+    { name: crumb, path: `${categoryPath(prefix, slug)}${budget}/` },
   ];
-  return (
-    <div className="flex flex-col gap-4">
-      <JsonLd data={[breadcrumbData(crumbs), itemListData(page.summaries.map((s) => s.product), prefix)]} />
-      <nav aria-label="breadcrumb" className="flex flex-wrap items-center gap-1 text-sm text-dim">
-        {crumbs.slice(0, -1).map((c) => (
-          <span key={c.path} className="flex items-center gap-1">
-            <Link href={c.path} className="hover:text-brand">
-              {c.name}
+  const intro = (
+    <div className="flex flex-col gap-2 rounded-lg bg-surface px-4 py-3 ring-1 ring-line md:px-5">
+      <p className="text-sm leading-relaxed text-dim">{t.budget.intro(month(lang), amount, name, n(page.summaries.length, lang), formatTaka(from, lang))}</p>
+      {others.length > 0 && (
+        <nav aria-label={t.budget.others} className="flex flex-wrap items-center gap-2">
+          <span className="text-xs font-semibold text-faint">{t.budget.others}:</span>
+          {others.map((b) => (
+            <Link key={b.budget} href={`${categoryPath(prefix, slug)}${budgetSlug(b.budget)}/`} className="rounded-full border border-line px-3 py-1 text-xs font-semibold text-ink hover:border-brand hover:text-brand">
+              {t.budget.chip(amountLabel(b.budget, lang))}
             </Link>
-            <ChevronRight size={14} aria-hidden="true" />
-          </span>
-        ))}
-        <span className="text-ink">{crumbs.at(-1)!.name}</span>
-      </nav>
-      <div className="flex flex-col gap-2 rounded-lg bg-surface px-4 py-4 ring-1 ring-line md:px-5">
-        <h1 className="text-xl font-bold md:text-2xl">{t.budget.title(amount, name)}</h1>
-        <p className="text-sm leading-relaxed text-dim">{t.budget.intro(month(lang), amount, name, n(page.summaries.length, lang), formatTaka(from, lang))}</p>
-        {others.length > 0 && (
-          <div className="mt-1 flex flex-wrap items-center gap-2">
-            <span className="text-xs font-semibold text-faint">{t.budget.others}:</span>
-            {others.map((b) => (
-              <Link key={b.budget} href={`${categoryPath(prefix, slug)}${budgetSlug(b.budget)}/`} className="rounded-full border border-line px-3 py-1 text-xs font-semibold text-ink hover:border-brand hover:text-brand">
-                {t.budget.chip(amountLabel(b.budget, lang))}
-              </Link>
-            ))}
-          </div>
-        )}
-      </div>
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4">
-        {page.summaries.map((summary, i) => (
-          <ProductCard key={summary.product.id} summary={summary} loading={i < 4 ? "eager" : "lazy"} />
-        ))}
-      </div>
-      <Link href={`${categoryPath(prefix, slug)}?max=${page.budget}`} className="self-center rounded-md border border-line bg-surface px-4 py-2.5 text-sm font-semibold text-brand-text hover:border-brand">
-        {t.budget.filters(name)}
-      </Link>
+          ))}
+        </nav>
+      )}
     </div>
+  );
+  return (
+    <>
+      <JsonLd data={[breadcrumbData(crumbs), itemListData(page.summaries.slice(0, 30).map((s) => s.product), prefix)]} />
+      <Suspense fallback={<StaticResults t={t} prefix={prefix} title={crumb} heading={heading} trail={trail} summaries={page.summaries} extra={intro} />}>
+        <SearchView category={slug} initial={page.summaries} heading={heading} crumb={crumb} extra={intro} />
+      </Suspense>
+    </>
   );
 }
