@@ -643,7 +643,7 @@ export const adminEn: AdminMessages = {
   },
   manager: {
     title: "AI manager",
-    subtitle: "Talk to the manager and see what it is doing. For now it only reads and reports; it changes nothing.",
+    subtitle: "Talk to the manager and see what it is doing. It reads and reports, and when you ask it can queue the regular jobs to run now. It does not change prices or products.",
     online: "Online",
     noModel: "No AI setup",
     scheduled: "Schedule · morning report",
@@ -660,7 +660,7 @@ export const adminEn: AdminMessages = {
     model: "AI model",
     modelValue: (count: string) => `${count} setups`,
     database: "Database",
-    databaseValue: "Read only",
+    databaseValue: "Reads, starts jobs",
     telegramHint: "Add the bot token and chat id in Automation & AI → Notifications.",
     telegramRejected: "Telegram doesn't accept this bot token. Copy it again from @BotFather and paste it in Automation & AI → Notifications.",
     workers: "Workers",

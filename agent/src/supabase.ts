@@ -14,6 +14,16 @@ export async function rest<T>(env: ManagerEnv, path: string): Promise<T> {
   return res.json();
 }
 
+export async function patch(env: ManagerEnv, path: string, body: Record<string, unknown>): Promise<void> {
+  const res = await fetch(`${env.SUPABASE_URL}/rest/v1/${path}`, {
+    method: "PATCH",
+    headers: { ...headers(env), "content-type": "application/json" },
+    body: JSON.stringify(body),
+    signal: AbortSignal.timeout(15_000),
+  });
+  if (!res.ok) throw new Error(`Supabase HTTP ${res.status}`);
+}
+
 export async function rpc<T>(env: ManagerEnv, name: string): Promise<T> {
   const res = await fetch(`${env.SUPABASE_URL}/rest/v1/rpc/${name}`, {
     method: "POST",

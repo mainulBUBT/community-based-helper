@@ -1,5 +1,5 @@
 import type { ManagerEnv } from "./env";
-import { privateSettings, rest, rpc } from "./supabase";
+import { patch, privateSettings, rest, rpc } from "./supabase";
 import { sendMessage } from "./telegram";
 
 export type Tone = "ok" | "bad" | "wait";
@@ -54,7 +54,9 @@ const STALE_DAYS = 7;
 // PostgREST filter এর ভেতরে বসে, তাই শুধু অক্ষর, সংখ্যা আর ফাঁকা
 const words = (query: string) => query.replace(/[^\p{L}\p{N}\s.-]/gu, " ").split(/\s+/).filter(Boolean).slice(0, 4);
 
-// সব টুল শুধু পড়ে; send_telegram শুধু মালিকের নিজের chat-এ পাঠায়
+// বাকি সব টুল শুধু পড়ে। লেখে শুধু দুটো: send_telegram মালিকের নিজের chat-এ, আর run_job অ্যাডমিনের "এখনই চালান"-এর মতো কাজ লাইনে দেয়
+const RUNNABLE = ["prices", "discover", "promos", "rebuild"];
+
 export const TOOLS: Record<string, Tool> = {
   jobs_status: {
     description: "সাইটের নিয়মিত কাজগুলোর (দাম আনা, নতুন পণ্য খোঁজা, অফার, সাইট বানানো) অবস্থা: শেষ কখন চলেছে, ফল কী, বন্ধ বা লাইনে আছে কিনা",
@@ -143,6 +145,21 @@ export const TOOLS: Record<string, Tool> = {
         result: `${bn(items.length)}টা দুর্বল পণ্য · ${bn(breaksRule)}টা নিয়ম ভাঙে`,
         tone: breaksRule ? "bad" : items.length ? "wait" : "ok",
       };
+    },
+  },
+  run_job: {
+    description:
+      "একটা নিয়মিত কাজ এখনই চালাতে লাইনে দেওয়া (অ্যাডমিনের \"এখনই চালান\"-এর মতো), শুধু মালিক চাইলে। prices: দাম আনা (শেষে যাচাই বাকি থেকে AI নিজে নিশ্চিতগুলো সিদ্ধান্ত নেয়, প্রতিবার সর্বোচ্চ ৩০টা), discover: নতুন পণ্য খোঁজা, promos: অফার পড়া, rebuild: সাইট বানানো। যাচাই বাকি সরাসরি অনুমোদন বা বাদ করার টুল নেই",
+    parameters: { type: "object", properties: { job: { type: "string", enum: RUNNABLE } }, required: ["job"] },
+    async run(env, args) {
+      const id = String(args.job ?? "");
+      if (!RUNNABLE.includes(id)) return { data: { queued: false }, result: "এই কাজ চালানো যায় না", tone: "bad" };
+      const [job] = await rest<Pick<JobRow, "name" | "run_requested_at" | "last_run_at" | "last_status">[]>(env, `jobs?select=name,run_requested_at,last_run_at,last_status&id=eq.${id}`);
+      if (!job) return { data: { queued: false }, result: "কাজটা পাওয়া যায়নি", tone: "bad" };
+      const waiting = job.run_requested_at && (!job.last_run_at || job.run_requested_at > job.last_run_at);
+      if (job.last_status === "running" || waiting) return { data: { queued: false, reason: "already running or queued" }, result: `${job.name} আগেই চলছে বা লাইনে আছে`, tone: "wait" };
+      await patch(env, `jobs?id=eq.${id}`, { run_requested_at: new Date().toISOString() });
+      return { data: { queued: true }, result: `${job.name} লাইনে দেওয়া হয়েছে`, tone: "ok" };
     },
   },
   send_telegram: {

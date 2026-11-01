@@ -640,7 +640,7 @@ export const adminBn = {
   },
   manager: {
     title: "AI ম্যানেজার",
-    subtitle: "ম্যানেজারের সাথে কথা বলুন, আর দেখুন সে কী করছে। এখন সে শুধু দেখে আর জানায়, কিছু বদলায় না।",
+    subtitle: "ম্যানেজারের সাথে কথা বলুন, আর দেখুন সে কী করছে। সে দেখে আর জানায়, আর আপনি বললে নিয়মিত কাজ এখনই চালাতে লাইনে দিতে পারে। দাম বা পণ্য সে বদলায় না।",
     online: "চালু",
     noModel: "AI সেটআপ নেই",
     scheduled: "সময়সূচি · সকালের রিপোর্ট",
@@ -657,7 +657,7 @@ export const adminBn = {
     model: "AI মডেল",
     modelValue: (count: string) => `${count}টা সেটআপ`,
     database: "ডেটাবেস",
-    databaseValue: "শুধু পড়ে",
+    databaseValue: "পড়ে, কাজ চালায়",
     telegramHint: "অটোমেশন ও AI → নোটিফিকেশনে bot token আর chat id দিন।",
     telegramRejected: "Telegram এই bot token নিচ্ছে না। @BotFather থেকে token আবার কপি করে অটোমেশন ও AI → নোটিফিকেশনে বসান।",
     workers: "কাজের লাইন (workers)",
