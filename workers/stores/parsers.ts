@@ -50,11 +50,11 @@ function objectsAt(html: string, marker: RegExp): Json[] {
   return [...seen.values()];
 }
 
-// পাশের "সম্পর্কিত পণ্য" বাদ: যে পণ্যের ভার্সনে পাতার মূল দাম আছে সেটাই, না পেলে প্রথমটা
+// পাশের "সম্পর্কিত পণ্য" বাদ: যে পণ্যের ভার্সনে পাতার মূল দাম আছে সেটাই। পাতার দাম থাকা সত্ত্বেও কোনো ভার্সনে না মিললে (মূল পণ্য স্টকে নেই বলে তার ভার্সন বাদ) পাশের পণ্যের কেস/গ্লাসের দাম না নিয়ে কিছুই না
 function mainProduct(rows: Json[], productOf: (row: Json) => unknown, priceOf: (row: Json) => number | null, html: string): Json[] {
   const groups = [...groupBy(rows, (row) => String(productOf(row))).values()];
   const shown = structuredQuote(html)?.price;
-  return groups.find((group) => group.some((row) => priceOf(row) === shown)) ?? groups[0] ?? [];
+  return groups.find((group) => group.some((row) => priceOf(row) === shown)) ?? (shown ? [] : groups[0]) ?? [];
 }
 
 function variant(attributes: [unknown, unknown][], price: unknown, oldPrice: unknown, inStock: boolean | null): ShopVariant[] {

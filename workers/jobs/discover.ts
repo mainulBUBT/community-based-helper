@@ -55,6 +55,7 @@ function claim(shop: Shop, spot: Spot): boolean {
   const official = shop.official.get(spot.variant.id);
   if (official && (spot.offer.price < official * PRICE_RANGE[0] || spot.offer.price > official * PRICE_RANGE[1])) {
     shop.tally.odd++;
+    if (process.env.ODD_VERBOSE) console.log(`ODD ${shop.store.id} | ${spot.title} | ${spot.variant.label} | ৳${spot.offer.price} vs official ৳${official} | ${spot.listing.url}`);
     return false;
   }
   const key = slot(spot.variant.id, shop.seller.id, spot.condition);
