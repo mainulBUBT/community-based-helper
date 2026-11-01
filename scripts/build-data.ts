@@ -123,6 +123,7 @@ async function main() {
     ...raw.settings,
     logoUrl: safeUrl(raw.settings.logoUrl),
     facebook: safeUrl(raw.settings.facebook),
+    youtube: safeUrl(raw.settings.youtube),
     announcementLink: safeUrl(raw.settings.announcementLink, { relative: true }),
   };
 

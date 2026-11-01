@@ -4,7 +4,7 @@ import type { Messages } from "@/i18n/bn";
 import type { SiteSettings } from "@/types/admin";
 
 export function ContactView({ settings, t, shopsNote }: { settings: SiteSettings; t: Messages["contact"]; shopsNote: string }) {
-  const hasContacts = Boolean(settings.email || settings.phone || settings.facebook);
+  const hasContacts = Boolean(settings.email || settings.phone || settings.facebook || settings.youtube);
 
   return (
     <div className="flex flex-col gap-4">

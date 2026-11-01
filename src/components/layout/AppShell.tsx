@@ -246,7 +246,7 @@ export function AppShell({
           </div>
         </header>
 
-        <main className="page-container flex-1 pt-5 pb-[calc(6rem+env(safe-area-inset-bottom))] md:pb-0">
+        <main className="page-container flex-1 pt-5 pb-5 md:pb-0">
           {children}
         </main>
         <SiteFooter settings={settings} />

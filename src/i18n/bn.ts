@@ -113,6 +113,7 @@ export const bn = {
     contact: "যোগাযোগ",
     reportPrice: "কম দাম জানান",
     more: "আরও",
+    follow: "আমাদের ফলো করুন",
     rights: (name: string, year: string) => `© ${year} ${name}। দাম দোকানভেদে বদলাতে পারে, কেনার আগে দোকানে মিলিয়ে নিন।`,
   },
   budget: {
@@ -140,6 +141,7 @@ export const bn = {
     sort: { popular: "জনপ্রিয়", cheap: "কম দাম আগে", expensive: "বেশি দাম আগে", drop: "বেশি কমেছে" },
     count: (n: string) => `${n}টা মডেল পাওয়া গেছে`,
     notFound: (q: string) => `"${q}" নামে কিছু পাওয়া যায়নি`,
+    didYouMean: "স্মার্ট সাজেশন:",
     approximate: (q: string) => `"${q}" ঠিকঠাক মেলেনি, কাছাকাছি যা মিলল`,
     emptyCategory: "এই ভাগে এখনো কিছু নেই",
     tellUs: "কোথাও দেখে থাকলে জানান",

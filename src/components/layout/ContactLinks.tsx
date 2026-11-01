@@ -6,6 +6,7 @@ export function ContactLinks({ settings }: { settings: SiteSettings }) {
     settings.email && { href: `mailto:${settings.email}`, icon: Mail, label: settings.email },
     settings.phone && { href: `tel:${settings.phone}`, icon: Phone, label: settings.phone },
     settings.facebook && { href: settings.facebook, icon: Globe, label: "Facebook", external: true },
+    settings.youtube && { href: settings.youtube, icon: Globe, label: "YouTube", external: true },
   ].filter((c): c is { href: string; icon: typeof Mail; label: string; external?: boolean } => Boolean(c));
 
   return (

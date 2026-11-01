@@ -82,6 +82,7 @@ export interface SiteSettings {
   phone: string | null;
   email: string | null;
   facebook: string | null;
+  youtube: string | null;
   logoUrl: string | null;
   seoTitle: string;
   seoDescription: string;

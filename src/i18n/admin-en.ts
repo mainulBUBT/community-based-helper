@@ -581,6 +581,7 @@ export const adminEn: AdminMessages = {
     phone: "Contact phone",
     email: "Email",
     facebook: "Facebook page",
+    youtube: "YouTube channel",
     logoUrl: "Logo link",
     logoHint: "Leave empty to keep the current logo",
     logoAlt: "Logo",

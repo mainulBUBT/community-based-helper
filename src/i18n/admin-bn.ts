@@ -578,6 +578,7 @@ export const adminBn = {
     phone: "যোগাযোগের ফোন",
     email: "ইমেইল",
     facebook: "ফেসবুক পেজ",
+    youtube: "ইউটিউব চ্যানেল",
     logoUrl: "লোগোর লিংক",
     logoHint: "খালি রাখলে এখনকার লোগো থাকবে",
     logoAlt: "লোগো",

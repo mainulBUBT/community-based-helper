@@ -115,6 +115,7 @@ export const en: Messages = {
     contact: "Contact",
     reportPrice: "Report a lower price",
     more: "More",
+    follow: "Follow us",
     rights: (name, year) => `© ${year} ${name}. Prices vary by shop, so confirm with the seller before you buy.`,
   },
   budget: {
@@ -142,6 +143,7 @@ export const en: Messages = {
     sort: { popular: "Popular", cheap: "Lowest price", expensive: "Highest price", drop: "Biggest drop" },
     count: (n) => `${plural(n, "model")} found`,
     notFound: (q) => `Nothing found for "${q}"`,
+    didYouMean: "Smart suggestions:",
     approximate: (q: string) => `No exact match for "${q}", showing the closest`,
     emptyCategory: "Nothing in this category yet",
     tellUs: "Seen it somewhere? Tell us",

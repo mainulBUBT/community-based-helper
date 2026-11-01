@@ -10,7 +10,7 @@ export function AboutView({ settings }: { settings: SiteSettings }) {
   const en = lang === "en";
   const who = (en ? settings.aboutWhoEn : settings.aboutWho) || settings.aboutWho;
   const what = (en ? settings.aboutWhatEn : settings.aboutWhat) || settings.aboutWhat;
-  const hasContacts = Boolean(settings.email || settings.phone || settings.facebook);
+  const hasContacts = Boolean(settings.email || settings.phone || settings.facebook || settings.youtube);
 
   return (
     <div className="flex flex-col gap-4">

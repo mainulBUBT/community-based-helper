@@ -35,3 +35,4 @@ workers/.tmp/
 
 # worker এর দোকান-তালিকা আর discover এর ফল (GitHub cache/artifact এ যায়)
 .cache/
+.playwright-mcp/

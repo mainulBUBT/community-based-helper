@@ -60,6 +60,7 @@ function SettingsForm({ initial }: { initial: SiteSettings }) {
           phone: value("phone"),
           email: value("email"),
           facebook: value("facebook"),
+          youtube: value("youtube"),
           logoUrl: value("logoUrl"),
           seoTitle: value("seoTitle") ?? initial.seoTitle,
           seoDescription: value("seoDescription") ?? initial.seoDescription,

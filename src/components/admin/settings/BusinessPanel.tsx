@@ -64,6 +64,12 @@ export function BusinessPanel({ initial }: { initial: SiteSettings }) {
           type="url"
           defaultValue={initial.facebook ?? ""}
         />
+        <Field
+          label={t.admin.settings.youtube}
+          name="youtube"
+          type="url"
+          defaultValue={initial.youtube ?? ""}
+        />
         <div className="flex items-end gap-3">
           <div className="flex-1">
             <Field
