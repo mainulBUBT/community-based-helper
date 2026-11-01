@@ -18,12 +18,19 @@ export interface ChatMessage {
 export async function chat(models: LlmSettings[], messages: ChatMessage[]): Promise<{ message: ChatMessage; used: number }> {
   for (const [used, llm] of models.entries()) {
     for (const key of splitKeys(llm.apiKey)) {
-      const res = await fetch(new URL("chat/completions", llm.baseUrl.endsWith("/") ? llm.baseUrl : `${llm.baseUrl}/`), {
-        method: "POST",
-        headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
-        body: JSON.stringify({ model: llm.model, messages, tools: toolSpecs }),
-        signal: AbortSignal.timeout(60_000),
-      });
+      const post = () =>
+        fetch(new URL("chat/completions", llm.baseUrl.endsWith("/") ? llm.baseUrl : `${llm.baseUrl}/`), {
+          method: "POST",
+          headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
+          body: JSON.stringify({ model: llm.model, messages, tools: toolSpecs }),
+          signal: AbortSignal.timeout(60_000),
+        });
+      // সার্ভারের সাময়িক সমস্যায় (5xx) একবার থেমে আবার
+      let res = await post();
+      if (res.status >= 500) {
+        await scheduler.wait(2000);
+        res = await post();
+      }
       if (res.status === 429) continue;
       if (!res.ok) throw new Error(`LLM HTTP ${res.status}`);
       const body = (await res.json()) as { choices?: { message?: ChatMessage }[] };

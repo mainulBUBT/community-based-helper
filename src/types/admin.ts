@@ -39,7 +39,7 @@ export interface ManagerMessage {
 export interface ManagerStatus {
   model: string | null;
   models: number;
-  telegram: boolean;
+  telegram: "ok" | "missing" | "rejected";
   nextReport: string;
   history: ManagerMessage[];
 }

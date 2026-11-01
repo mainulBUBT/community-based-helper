@@ -10,7 +10,7 @@ export const webhookSecret = async (env: ManagerEnv) => (await sha256(`telegram|
 
 export const tokenMark = async (token: string, url: string) => `${url}|${(await sha256(token)).slice(0, 16)}`;
 
-async function call(token: string, method: string, body: object): Promise<boolean> {
+async function call(token: string, method: string, body: object): Promise<number> {
   const res = await fetch(`https://api.telegram.org/bot${token}/${method}`, {
     method: "POST",
     headers: { "content-type": "application/json" },
@@ -18,7 +18,7 @@ async function call(token: string, method: string, body: object): Promise<boolea
     signal: AbortSignal.timeout(15_000),
   });
   if (!res.ok) console.error(`telegram ${method} failed: HTTP ${res.status}`);
-  return res.ok;
+  return res.status;
 }
 
 export const sendMessage = (token: string, chatId: string, text: string) =>

@@ -14,6 +14,17 @@ export async function rest<T>(env: ManagerEnv, path: string): Promise<T> {
   return res.json();
 }
 
+export async function rpc<T>(env: ManagerEnv, name: string): Promise<T> {
+  const res = await fetch(`${env.SUPABASE_URL}/rest/v1/rpc/${name}`, {
+    method: "POST",
+    headers: { ...headers(env), "content-type": "application/json" },
+    body: "{}",
+    signal: AbortSignal.timeout(15_000),
+  });
+  if (!res.ok) throw new Error(`Supabase HTTP ${res.status}`);
+  return res.json();
+}
+
 export async function privateSettings(env: ManagerEnv): Promise<StoredSettings> {
   const rows = await rest<{ value: StoredSettings }[]>(env, "private_settings?select=value&limit=1");
   return rows[0]?.value ?? {};

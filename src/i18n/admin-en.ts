@@ -659,6 +659,7 @@ export const adminEn: AdminMessages = {
     database: "Database",
     databaseValue: "Read only",
     telegramHint: "Add the bot token and chat id in Automation & AI → Notifications.",
+    telegramRejected: "Telegram doesn't accept this bot token. Copy it again from @BotFather and paste it in Automation & AI → Notifications.",
     workers: "Workers",
     schedule: "Schedule",
     morningReport: "Morning report",

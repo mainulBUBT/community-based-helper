@@ -200,7 +200,7 @@ function TelegramForm({ initial, onSaved }: { initial: PrivateSettings; onSaved:
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const value = (name: string) => String(data.get(name) ?? "").trim() || null;
-    const next = { ...initial, telegramBotToken: value("telegramBotToken"), alertChatId: value("alertChatId") };
+    const next = { ...initial, telegramBotToken: value("telegramBotToken")?.replace(/\s/g, "") || null, alertChatId: value("alertChatId") };
     if (await run(() => savePrivateSettings(next, t.admin.jobs.auditSection), t.admin.common.saved)) onSaved();
   }
 

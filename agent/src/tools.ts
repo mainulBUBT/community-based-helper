@@ -1,5 +1,5 @@
 import type { ManagerEnv } from "./env";
-import { rest } from "./supabase";
+import { rest, rpc } from "./supabase";
 
 export type Tone = "ok" | "bad" | "wait";
 export interface Step {
@@ -35,6 +35,20 @@ interface ProductRow {
   name: string;
   variants: { label: string; offers: { price: number; in_stock: boolean | null; published: boolean; sellers: { name: string } | null }[] }[];
 }
+
+interface WeakRow {
+  slug: string;
+  name: string;
+  category: string;
+  release_year: number | null;
+  in_stock: number;
+  sellers: number;
+  last_checked: string | null;
+  views: number;
+}
+
+const OLD_YEARS = 3;
+const STALE_DAYS = 7;
 
 // PostgREST filter এর ভেতরে বসে, তাই শুধু অক্ষর, সংখ্যা আর ফাঁকা
 const words = (query: string) => query.replace(/[^\p{L}\p{N}\s.-]/gu, " ").split(/\s+/).filter(Boolean).slice(0, 4);
@@ -101,6 +115,33 @@ export const TOOLS: Record<string, Tool> = {
       }
       const top = [...counts].map(([query, visitors]) => ({ query, visitors: visitors.size })).sort((a, b) => b.visitors - a.visitors).slice(0, 15);
       return { data: { days, top }, result: `${bn(counts.size)}টা আলাদা খোঁজ`, tone: "ok" };
+    },
+  },
+  weak_products: {
+    description:
+      "যে পণ্য সাইটে রাখার মানে কম, কারণসহ: স্টকসহ দাম ২টার কম দোকানে (নিয়ম ভাঙে), দাম ৭ দিনের বেশি যাচাই হয়নি, গত ৩০ দিনে কেউ খোলেনি, ৩ বছরের বেশি পুরনো মডেল। মালিককে লুকানো বা বাদের পরামর্শ দিতে",
+    parameters: noArgs,
+    async run(env) {
+      const rows = await rpc<WeakRow[]>(env, "weak_products");
+      const year = new Date().getFullYear();
+      const stale = Date.now() - STALE_DAYS * 86_400_000;
+      const items = rows.map((r) => ({
+        name: r.name,
+        category: r.category,
+        link: `https://dordam.app/product/${r.slug}/`,
+        reasons: [
+          r.in_stock < 2 && `স্টকসহ দোকান ${bn(r.in_stock)}টা (মোট দামসহ ${bn(r.sellers)}টা)`,
+          r.last_checked && Date.parse(r.last_checked) < stale && "দাম ৭ দিনের বেশি যাচাই হয়নি",
+          r.views === 0 && "৩০ দিনে কেউ খোলেনি",
+          r.release_year && r.release_year <= year - OLD_YEARS && `${bn(r.release_year)} সালের মডেল`,
+        ].filter(Boolean),
+      }));
+      const breaksRule = rows.filter((r) => r.in_stock < 2).length;
+      return {
+        data: { total: items.length, breaksRule, items: items.slice(0, 40) },
+        result: `${bn(items.length)}টা দুর্বল পণ্য · ${bn(breaksRule)}টা নিয়ম ভাঙে`,
+        tone: breaksRule ? "bad" : items.length ? "wait" : "ok",
+      };
     },
   },
 };

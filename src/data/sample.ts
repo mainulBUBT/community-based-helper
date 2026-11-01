@@ -30,7 +30,7 @@ const today = (hour: number) => new Date(new Date().setHours(hour, 0, 0, 0)).toI
 export const sampleManager: ManagerStatus = {
   model: "gpt-4.1-mini",
   models: 2,
-  telegram: true,
+  telegram: "ok",
   nextReport: new Date(Date.now() + 86_400_000).toISOString(),
   history: [
     { id: 1, role: "schedule", text: "সকালের রিপোর্ট", steps: [], at: today(9) },

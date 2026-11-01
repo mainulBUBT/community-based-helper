@@ -90,8 +90,8 @@ function Sidebar({ status, jobs }: { status: ManagerStatus; jobs: Job[] }) {
   return (
     <aside className="flex flex-col gap-3 border-t border-white/10 bg-black/10 p-3 lg:border-t-0">
       <Side title={m.connections}>
-        <Row tone={status.telegram ? "ok" : "bad"} name="Telegram" value={status.telegram ? m.linked : m.notLinked} />
-        {!status.telegram && <p className="text-[12px] text-[#98a2b3]">{m.telegramHint}</p>}
+        <Row tone={status.telegram === "ok" ? "ok" : "bad"} name="Telegram" value={status.telegram === "ok" ? m.linked : m.notLinked} />
+        {status.telegram !== "ok" && <p className="text-[12px] text-[#98a2b3]">{status.telegram === "rejected" ? m.telegramRejected : m.telegramHint}</p>}
         <Row tone={status.models ? "ok" : "bad"} name={m.model} value={status.models ? m.modelValue(num(status.models)) : m.noModel} />
         <Row tone="ok" name={m.database} value={m.databaseValue} />
       </Side>

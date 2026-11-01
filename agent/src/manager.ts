@@ -1,6 +1,7 @@
 import { DurableObject } from "cloudflare:workers";
 import { splitKeys, storedModels, type LlmSettings, type StoredSettings } from "../../workers/lib/models";
 import type { ManagerEnv } from "./env";
+import { SITE } from "./context";
 import { chat, type ChatMessage } from "./llm";
 import { privateSettings } from "./supabase";
 import { sendMessage, setWebhook, tokenMark, webhookSecret } from "./telegram";
@@ -25,15 +26,20 @@ interface TelegramUpdate {
 const REPORT_HOUR_UTC = 3;
 const MAX_ROUNDS = 6;
 const CONTEXT = 10;
+// AI দেখে শেষ ১০টা, অ্যাডমিন পাতা ৪০টা; এর চেয়ে পুরনো কথা শুধু জায়গা নেয়
+const KEEP = 500;
 
 const REPORT =
-  "সকালের রিপোর্ট লেখো: কাজগুলোর অবস্থা (কোনটা ব্যর্থ বা আটকে থাকলে কারণসহ), যাচাই বাকি কয়টা, গতকাল ভিজিটর কী খুঁজেছে। ৬-৮ লাইনে, প্রতিটা লাইনের শুরুতে একটা ইমোজি।";
+  "সকালের রিপোর্ট লেখো: কাজগুলোর অবস্থা (কোনটা ব্যর্থ বা আটকে থাকলে কারণসহ), যাচাই বাকি কয়টা, গতকাল ভিজিটর কী খুঁজেছে, আর রাখার মানে কম এমন পণ্য কয়টা (নিয়ম ভাঙা ২-৩টার নাম কারণসহ)। ৬-৮ লাইনে, প্রতিটা লাইনের শুরুতে একটা ইমোজি।";
 
-const system = () =>
+const system = (state: string) =>
   [
-    "তুমি দরদাম (dordam.app) সাইটের AI ম্যানেজার। সাইটটা বাংলাদেশের দোকানগুলোর দাম পাশাপাশি দেখায়। তুমি মালিকের সাথে কথা বলছ।",
+    "তুমি দরদাম সাইটের AI ম্যানেজার। তুমি মালিকের সাথে কথা বলছ।",
+    SITE,
+    `তোমার নিজের অবস্থা: ${state}`,
     "এখন তুমি শুধু দেখতে আর জানাতে পারো, কিছু বদলাতে পারো না। মালিক কিছু বদলাতে বললে বলো এখনো সেই অনুমতি নেই, আর অ্যাডমিন প্যানেলের কোথায় করবেন বলে দাও।",
-    "তথ্য লাগলে টুল ডাকো। সংখ্যা বা নাম কখনো বানিয়ে বলবে না।",
+    "তুমি সহকারী: শুধু প্রশ্নের উত্তর নয়, টুলের ফলে কোনো সমস্যা বা সুযোগ চোখে পড়লে নিজে থেকে বলো আর কী করা উচিত পরামর্শ দাও। কোনো পণ্য লুকানো বা বাদের সিদ্ধান্ত সবসময় মালিকের।",
+    "তথ্য লাগলে টুল ডাকো। সংখ্যা, নাম বা পাতা কখনো বানিয়ে বলবে না; ওপরের তালিকায় না থাকলে বলো জানো না।",
     "উত্তর ছোট আর সহজ বাংলায়, বাংলাদেশে মানুষ যেভাবে কথা বলে। মালিক ইংরেজিতে লিখলে ইংরেজিতে।",
     `এখন ঢাকার সময়: ${new Date().toLocaleString("bn-BD", { timeZone: "Asia/Dhaka" })}`,
   ].join("\n");
@@ -105,7 +111,7 @@ export class Manager extends DurableObject<ManagerEnv> {
     const settings = await privateSettings(this.env);
     const models = readyModels(settings);
     const { telegramBotToken: token, alertChatId } = settings;
-    const telegram = Boolean(token && alertChatId) && (await this.connectTelegram(token!, `${origin}/telegram`));
+    const telegram = !token || !alertChatId ? "missing" : (await this.connectTelegram(token, `${origin}/telegram`)) ? "ok" : "rejected";
     return {
       model: models[0]?.model ?? null,
       models: models.length,
@@ -119,9 +125,21 @@ export class Manager extends DurableObject<ManagerEnv> {
   private async connectTelegram(token: string, url: string): Promise<boolean> {
     const mark = await tokenMark(token, url);
     if ((await this.ctx.storage.get<string>("webhook")) === mark) return true;
-    if (!(await setWebhook(token, url, await webhookSecret(this.env)))) return false;
+    const status = await setWebhook(token, url, await webhookSecret(this.env));
+    await this.ctx.storage.put("telegram", status === 200 ? "ok" : `HTTP ${status}`);
+    if (status !== 200) return false;
     await this.ctx.storage.put("webhook", mark);
     return true;
+  }
+
+  private async state(settings: StoredSettings): Promise<string> {
+    const models = readyModels(settings).map((m) => m.model);
+    const telegram = !settings.telegramBotToken
+      ? "token দেওয়া নেই"
+      : !settings.alertChatId
+        ? "chat id দেওয়া নেই"
+        : `শেষ সংযোগের চেষ্টা: ${(await this.ctx.storage.get<string>("telegram")) ?? "এখনো হয়নি"}`;
+    return `AI মডেল (ক্রমে): ${models.join(", ") || "নেই"}। Telegram: ${telegram}।`;
   }
 
   private async notify(settings: StoredSettings, text: string) {
@@ -146,7 +164,7 @@ export class Manager extends DurableObject<ManagerEnv> {
     let models = readyModels(settings);
     if (!models.length) throw new Error("কোনো AI সেটআপ নেই। অ্যাডমিন → অটোমেশন ও AI তে যোগ করুন।");
     const messages: ChatMessage[] = [
-      { role: "system", content: system() },
+      { role: "system", content: system(await this.state(settings)) },
       ...past.map((m): ChatMessage => ({ role: m.role === "manager" ? "assistant" : "user", content: m.text })),
       { role: "user", content: text },
     ];
@@ -175,6 +193,7 @@ export class Manager extends DurableObject<ManagerEnv> {
 
   private save(role: Role, text: string, steps: Step[]) {
     this.sql.exec("INSERT INTO messages (role, text, steps, at) VALUES (?, ?, ?, ?)", role, text, JSON.stringify(steps), Date.now());
+    this.sql.exec("DELETE FROM messages WHERE id <= (SELECT MAX(id) FROM messages) - ?", KEEP);
   }
 
   private history(limit: number) {

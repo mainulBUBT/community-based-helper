@@ -656,6 +656,7 @@ export const adminBn = {
     database: "ডেটাবেস",
     databaseValue: "শুধু পড়ে",
     telegramHint: "অটোমেশন ও AI → নোটিফিকেশনে bot token আর chat id দিন।",
+    telegramRejected: "Telegram এই bot token নিচ্ছে না। @BotFather থেকে token আবার কপি করে অটোমেশন ও AI → নোটিফিকেশনে বসান।",
     workers: "কাজের লাইন (workers)",
     schedule: "সময়সূচি",
     morningReport: "সকালের রিপোর্ট",
