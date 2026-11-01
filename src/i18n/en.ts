@@ -116,6 +116,16 @@ export const en: Messages = {
     more: "More",
     rights: (name, year) => `© ${year} ${name}. Prices vary by shop, so confirm with the seller before you buy.`,
   },
+  budget: {
+    title: (amount, name) => `Best ${name} Under ${amount}`,
+    crumb: (amount) => `Under ${amount}`,
+    intro: (month, amount, name, count, from) =>
+      `In ${month}, shops in Bangladesh have ${count} ${name} in stock under ${amount}, starting at ${from}. Sorted by what people look for most. Every price is the shop's real price, updated several times a day; tap a card to compare all shops.`,
+    others: "Other budgets",
+    links: "By budget",
+    chip: (amount) => `Under ${amount}`,
+    filters: (name) => `See all ${name} with filters`,
+  },
   search: {
     label: "Search products",
     hintLead: "Looking for, e.g.",
@@ -320,6 +330,8 @@ export const en: Messages = {
     categoryTitle: (name) => `${name} Price in Bangladesh: Where Is It Cheapest?`,
     categoryShortTitle: (name) => `${name} Price in Bangladesh`,
     categoryDescription: (name) => `Compare ${name} prices from shops across Bangladesh and see where it's cheapest.`,
+    budgetTitles: (amount, name, month) => [`Best ${name} Under ${amount} in Bangladesh (${month})`, `Best ${name} Under ${amount} (${month})`, `Best ${name} Under ${amount}`],
+    budgetDescription: (amount, name, count, from) => `${count} ${name} under ${amount} in Bangladesh, from ${from}. Real shop prices, updated several times a day.`,
     sellerTitle: (name, area) => `${name}${area ? ` (${area})` : ""} Prices & Offers`,
     sellerDescription: (name, kind, area) => `${name} (${kind}${area ? `, ${area}` : ""}): what it sells and at what prices, contact details, and whether we have verified the seller.`,
     sellerListings: (name, count, examples) => `Prices of ${count} products at ${name}${examples ? `, including ${examples}` : ""}. Compare them with other stores.`,

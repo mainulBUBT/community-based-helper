@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import { BUDGET_MIN_PRODUCTS, BUDGETS } from "@/config/budgets";
 import { DEFAULT_SETTINGS } from "@/config/site";
 import type { SiteSettings } from "@/types/admin";
 import { byStock, toCard } from "@/utils/catalog";
@@ -68,6 +69,29 @@ export async function getCategoryPage(slug: string) {
   const items = summaries.filter((s) => family.has(s.product.category)).sort((a, b) => byStock(a, b) || b.product.popularity - a.product.popularity);
   const parent = categories.find((c) => c.slug === category.parent) ?? null;
   return { category, parent, summaries: items.map(toCard) };
+}
+
+// বাজেটের পাতা: স্টকে থাকা, দাম বাজেটের মধ্যে; ক্রম ক্যাটাগরি পাতার মতো (লোকে বেশি খোঁজা আগে)।
+// নিচের বাজেটের সাথে হুবহু এক তালিকা হলে পাতা নয়, Google-এ ডুপ্লিকেট হয়
+export async function getBudgetPage(slug: string, budget: number) {
+  const page = await getCategoryPage(slug);
+  const amounts = BUDGETS[slug] ?? [];
+  if (!page || !amounts.includes(budget)) return null;
+  const within = (max: number) => page.summaries.filter((s) => s.inStock && s.lowest && s.lowest <= max);
+  const summaries = within(budget);
+  const below = amounts.filter((a) => a < budget).at(-1);
+  if (summaries.length < BUDGET_MIN_PRODUCTS || (below && within(below).length === summaries.length)) return null;
+  return { category: page.category, budget, summaries };
+}
+
+// যে বাজেটে যথেষ্ট পণ্য আছে শুধু সেগুলো; ক্যাটাগরি পাতার লিংক, sitemap আর static পাতা এখান থেকে
+export async function listBudgets(slug?: string) {
+  const pages = await Promise.all(
+    Object.entries(BUDGETS)
+      .filter(([category]) => !slug || category === slug)
+      .flatMap(([category, amounts]) => amounts.map((amount) => getBudgetPage(category, amount))),
+  );
+  return pages.filter((p) => p !== null).map((p) => ({ slug: p.category.slug, budget: p.budget, count: p.summaries.length }));
 }
 
 // ব্র্যান্ড পেজ: সব ব্র্যান্ডের পেজ হয়, তবে ২টার কম পণ্য হলে Google এ তোলা হয় না (পাতলা পেজ)

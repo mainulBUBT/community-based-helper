@@ -114,6 +114,16 @@ export const bn = {
     more: "আরও",
     rights: (name: string, year: string) => `© ${year} ${name}। দাম দোকানভেদে বদলাতে পারে, কেনার আগে দোকানে মিলিয়ে নিন।`,
   },
+  budget: {
+    title: (amount: string, name: string) => `${amount} টাকার মধ্যে সেরা ${name}`,
+    crumb: (amount: string) => `${amount} টাকার মধ্যে`,
+    intro: (month: string, amount: string, name: string, count: string, from: string) =>
+      `${month}-এ বাংলাদেশের দোকানে ${amount} টাকার মধ্যে স্টকে আছে ${count}টা ${name}, দাম ${from} থেকে শুরু। তালিকা লোকে বেশি খোঁজা অনুযায়ী সাজানো। প্রতিটা দাম দোকানের আসল দাম, দিনে কয়েকবার হালনাগাদ হয়; কার্ডে চাপলে সব দোকানের দাম পাশাপাশি দেখবেন।`,
+    others: "অন্য বাজেটে",
+    links: "বাজেট ধরে",
+    chip: (amount: string) => `${amount} টাকার মধ্যে`,
+    filters: (name: string) => `সব ${name} ফিল্টারসহ দেখুন`,
+  },
   search: {
     label: "পণ্য খুঁজুন",
     hintLead: "কী খুঁজছেন? যেমন",
@@ -320,6 +330,9 @@ export const bn = {
     categoryTitle: (name: string) => `বাংলাদেশে ${withEr(name)} দাম: কোথায় সবচেয়ে কম?`,
     categoryShortTitle: (name: string) => `বাংলাদেশে ${withEr(name)} দাম`,
     categoryDescription: (name: string) => `বাংলাদেশের দোকানগুলোতে ${withEr(name)} দাম পাশাপাশি দেখুন, কোথায় সবচেয়ে কম জেনে নিন।`,
+    budgetTitles: (amount: string, name: string, month: string) => [`${amount} টাকার মধ্যে সেরা ${name}, ${month}`, `${amount} টাকার মধ্যে সেরা ${name}`],
+    budgetDescription: (amount: string, name: string, count: string, from: string) =>
+      `${amount} টাকার মধ্যে বাংলাদেশে ${count}টা ${name}, দাম ${from} থেকে। দোকানের আসল দাম মিলিয়ে, দিনে কয়েকবার হালনাগাদ।`,
     sellerTitle: (name: string, area: string | null) => `${name}${area ? ` (${area})` : ""} এর দাম ও অফার`,
     sellerDescription: (name: string, kind: string, area: string | null) =>
       `${name} (${kind}${area ? `, ${area}` : ""}): কোন পণ্য কত দামে পাওয়া যায়, যোগাযোগের তথ্য, আর বিক্রেতা যাচাই করা কিনা।`,
