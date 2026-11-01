@@ -1,6 +1,6 @@
 "use client";
 
-import { Clock, Search } from "lucide-react";
+import { Clock, Search, Sparkles } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useId, useRef, useState, type KeyboardEvent } from "react";
 import { startNavProgress } from "@/components/layout/NavProgress";
@@ -11,10 +11,10 @@ import { useI18n } from "@/hooks/useI18n";
 import { readRecent, rememberSearch } from "@/lib/recent-searches";
 import { listSummaries } from "@/services/catalog";
 import type { ProductSummary } from "@/types/catalog";
-import { rankProducts } from "@/utils/search";
+import { rankProducts, suggestQueries } from "@/utils/search";
 import { formatTaka } from "@/utils/format";
 
-type Option = { kind: "product"; summary: ProductSummary } | { kind: "recent"; text: string };
+type Option = { kind: "product"; summary: ProductSummary } | { kind: "recent"; text: string } | { kind: "smart"; text: string };
 
 interface SearchBoxProps {
   defaultValue?: string;
@@ -36,10 +36,18 @@ export function SearchBox({ defaultValue = "", variant = "bar", examples, onSear
   const [recent, setRecent] = useState<string[]>([]);
 
   const query = text.trim();
-  const options: Option[] = query
+  const products: Option[] = query
     ? rankProducts(catalog, (s) => s.product, query, categories)
         .slice(0, 6)
         .map(({ item }) => ({ kind: "product", summary: item }))
+    : [];
+  // কোনো পণ্য না মিললে কাছাকাছি খোঁজার স্মার্ট সাজেশন
+  const options: Option[] = query
+    ? products.length
+      ? products
+      : catalog.length
+        ? suggestQueries(catalog, (s) => s.product, query, categories).map((text) => ({ kind: "smart", text }))
+        : []
     : recent.map((item) => ({ kind: "recent", text: item }));
   const showList = open && options.length > 0;
 
@@ -61,7 +69,7 @@ export function SearchBox({ defaultValue = "", variant = "bar", examples, onSear
   }
 
   function choose(option: Option) {
-    if (option.kind === "recent") {
+    if (option.kind === "recent" || option.kind === "smart") {
       setText(option.text);
       submit(option.text);
       return;
@@ -132,7 +140,7 @@ export function SearchBox({ defaultValue = "", variant = "bar", examples, onSear
       </form>
 
       {showList && (
-        <ul id={listId} role="listbox" aria-label={query ? t.search.suggestions : t.search.recent} className="absolute inset-x-0 top-full z-50 mt-1 overflow-hidden rounded-lg border border-line bg-surface py-1 text-ink shadow-xl">
+        <ul id={listId} role="listbox" aria-label={query ? t.search.didYouMean : t.search.recent} className="absolute inset-x-0 top-full z-50 mt-1 overflow-hidden rounded-lg border border-line bg-surface py-1 text-ink shadow-xl">
           {options.map((option, i) => (
             <li
               key={option.kind === "product" ? option.summary.product.id : option.text}
@@ -150,6 +158,11 @@ export function SearchBox({ defaultValue = "", variant = "bar", examples, onSear
                     {option.summary.product.brand} {option.summary.product.name}
                   </span>
                   {option.summary.lowest && <span className="text-sm font-bold">{formatTaka(option.summary.lowest, lang)}</span>}
+                </>
+              ) : option.kind === "smart" ? (
+                <>
+                  <Sparkles size={16} className="text-brand" aria-hidden="true" />
+                  <span className="flex-1 truncate">{option.text}</span>
                 </>
               ) : (
                 <>

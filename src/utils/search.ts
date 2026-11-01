@@ -108,6 +108,8 @@ const ALIASES: Record<string, string> = {
   সিরাম: "serum",
   সানস্ক্রিন: "sunscreen",
   ফেসওয়াশ: "face wash",
+  এস: "s",
+  এয়ারপড: "airpods",
   powerbank: "power bank",
   earbud: "earbuds",
   tws: "earbuds",
@@ -133,9 +135,43 @@ const clean = (text: string) =>
 
 export const tokenize = (text: string) => (clean(text) ? clean(text).split(" ") : []);
 
+// জোড়া লেখা শব্দ ভাঙা: "ম্যাকমিনি" → ম্যাক + মিনি, "আইফোন১৭প্রো" → আইফোন + 17 + প্রো।
+// বাংলা অংশের প্রতিটা টুকরা হতে হবে চেনা এলিয়াস বা থাম-শব্দ, নাহলে শব্দটা অক্ষত থাকে;
+// ইংরেজি/সংখ্যার টানা অংশ ভাঙা হয় না (মডেল: "17", "airpods"), শুধু চেনা এলিয়াস হলে সেটাই নেয়
+const ALIAS_KEYS = Object.keys(ALIASES).sort((a, b) => b.length - a.length);
+const SEGMENT_KEYS = [...ALIAS_KEYS, ...STOP].sort((a, b) => b.length - a.length);
+const LATIN = /[0-9a-z]/;
+const LATIN_RUN = /^[0-9a-z]+/;
+const segmentCache = new Map<string, string[] | null>();
+
+function segments(word: string): string[] | null {
+  const cached = segmentCache.get(word);
+  if (cached !== undefined) return cached;
+  const parts: string[] = [];
+  for (let at = 0; at < word.length; ) {
+    const pool = LATIN.test(word[at]) ? ALIAS_KEYS : SEGMENT_KEYS;
+    const key = pool.find((k) => word.startsWith(k, at));
+    if (key) {
+      parts.push(key);
+      at += key.length;
+      continue;
+    }
+    const run = LATIN.test(word[at]) ? word.slice(at).match(LATIN_RUN)?.[0] : undefined;
+    // ফেলে যাওয়া এক অক্ষরের ইংরেজি টুকরা ("earbud|s") অর্থহীন শোর করে, শুধু সংখ্যা হলে রাখা যায় ("mac mini 4")
+    if (!run || (run.length < 2 && !/^\d+$/.test(run))) return segmentCache.set(word, null), null;
+    parts.push(run);
+    at += run.length;
+  }
+  segmentCache.set(word, parts);
+  return parts;
+}
+
 export function queryWords(query: string) {
   return tokenize(query)
-    .flatMap((word) => (ALIASES[word] ?? word).split(" "))
+    .flatMap((word) => {
+      if (ALIASES[word]) return ALIASES[word].split(" ");
+      return (segments(word) ?? [word]).flatMap((piece) => (ALIASES[piece] ?? piece).split(" "));
+    })
     .filter((word) => word && !STOP.has(word));
 }
 
@@ -268,4 +304,97 @@ export function rankProducts<T>(items: T[], getProduct: (item: T) => Product, qu
 export function matchesQuery(product: Product, query: string, categories?: CategoryInfo[]) {
   const words = queryWords(query);
   return !words.length || scoreIndexed(indexProduct(null, product, categories), words) > 0;
+}
+
+// খোঁজায় কিছু পেলে না কাছাকাছি খোঁজার শব্দ বানায় ("macbok air" → "macbook air")।
+// প্রতিটা শব্দ একটা করে বদলে দেখে ওই খোঁজায় ফল আছে কিনা; যেগুলোতে আছে সেগুলোই পরামর্শ
+export function suggestQueries<T>(items: T[], getProduct: (item: T) => Product, query: string, categories?: CategoryInfo[], limit = 4): string[] {
+  const raw = tokenize(query);
+  if (!raw.length || !queryWords(query).length) return [];
+  // ক্যাটালগের শব্দ + এলিয়াস + থাম-শব্দ — এদের মধ্যেই কাছাকাছি শব্দ খোঁজা হয়
+  const counts = new Map<string, number>();
+  const bump = (word: string) => counts.set(word, (counts.get(word) ?? 0) + 1);
+  for (const item of items) tokenize(`${getProduct(item).brand} ${getProduct(item).name}`).forEach(bump);
+  Object.entries(ALIASES).forEach(([bn, en]) => {
+    bn.split(" ").forEach(bump);
+    en.split(" ").forEach(bump);
+  });
+  STOP.forEach(bump);
+  const vocab = [...counts.keys()];
+  // শিরোনামে কোন শব্দের পরে কোনটা বেশি আসে ("macbook" → "air", "pro") — পরামর্শ পূরা করতে
+  const followers = new Map<string, Map<string, number>>();
+  const link = (a: string, b: string) => {
+    const inner = followers.get(a) ?? new Map();
+    inner.set(b, (inner.get(b) ?? 0) + 1);
+    followers.set(a, inner);
+  };
+  for (const item of items) {
+    const words = tokenize(`${getProduct(item).brand} ${getProduct(item).name}`);
+    for (let i = 0; i < words.length - 1; i++) link(words[i], words[i + 1]);
+  }
+  // ইংরেজি শব্দের বাংলা এলিয়াস ("air" → "এয়ার") — বাংলা খোঁজার পরামর্শও বাংলায় থাকে
+  const bangla = /\p{Script=Bengali}/u.test(query);
+  const toBangla = new Map<string, string>();
+  for (const [bn, en] of Object.entries(ALIASES)) for (const w of en.split(" ")) if (!toBangla.has(w)) toBangla.set(w, bn);
+
+  const phrases: { phrase: string; score: number }[] = [];
+  const add = (phrase: string) => {
+    const ranked = rankProducts(items, getProduct, phrase, categories);
+    if (ranked.length) phrases.push({ phrase, score: ranked[0].score });
+  };
+  // শব্দভাণ্ডারে নেই এমন প্রতিটা শব্দের বদলে কাছাকাছি শব্দ: বানান ভুল, বা শুরুর অংশ মেলা শব্দ ("galaksi" → "galaxy", "আইপ্যাডপ্রোও" → "আইপ্যাড")
+  const options = raw.map((word) => {
+    if (counts.has(word) || isNumeric(word) || word.length < 3) return [word];
+    const limitNear = tolerance(word);
+    const near: { v: string; d: number }[] = [];
+    for (const v of vocab) {
+      const d = editDistance(word, v, limitNear);
+      if (d >= 1 && d <= limitNear) near.push({ v, d });
+      let common = 0;
+      while (common < word.length && common < v.length && word[common] === v[common]) common++;
+      const diff = Math.abs(word.length - v.length);
+      if (common >= 4 && diff <= word.length / 2 && !near.some((x) => x.v === v)) near.push({ v, d: diff + 1 });
+    }
+    if (!near.length) return [word];
+    near.sort((a, b) => a.d - b.d || (counts.get(b.v) ?? 0) - (counts.get(a.v) ?? 0));
+    return near.slice(0, 2).map((x) => x.v);
+  });
+  // সব ভুল শব্দ একসাথে ঠিক করা চেষ্টা করে ("samsunng galaksi" → "samsung galaxy"); জোড়া বেশি হলে একবারে একটা
+  const total = options.reduce((n, o) => n * o.length, 1);
+  let combos: string[];
+  if (total > 12) {
+    combos = [];
+    for (let i = 0; i < options.length; i++) {
+      for (const o of options[i]) {
+        if (o !== options[i][0]) combos.push(options.map((opts, j) => (j === i ? o : opts[0])).join(" "));
+      }
+    }
+  } else {
+    combos = options.reduce<string[]>((acc, opts) => acc.flatMap((base) => opts.map((o) => (base ? `${base} ${o}` : o))), [""]);
+  }
+  // চিপ আর খোঁজা দুটোই ব্যবহারকারীর ভাষায়: বাংলা খোঁজায় ইংরেজি প্রার্থীও বাংলা এলিয়াসে দেখায়
+  const show = (word: string) => (bangla ? (toBangla.get(word) ?? word) : (ALIASES[word] ?? word));
+  for (const combo of combos) {
+    const phrase = combo.split(" ").map(show).join(" ");
+    add(phrase);
+    // শেষ শব্দের জনপ্রিয় জোড়া ধরে ("macbook" → "macbook air", "macbook pro")
+    const last = phrase.split(" ").at(-1)!;
+    const tail = (ALIASES[last] ?? last).split(" ").at(-1)!;
+    const popular = [...(followers.get(tail) ?? [])]
+      .sort((a, b) => b[1] - a[1])
+      .filter(([w, count]) => count >= 2 && (!bangla || toBangla.has(w)) && !phrase.includes(w))
+      .slice(0, 2);
+    for (const [w] of popular) add(`${phrase} ${show(w)}`);
+  }
+  phrases.sort((a, b) => b.score - a.score);
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const { phrase } of phrases) {
+    const key = phrase.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(phrase);
+    if (out.length >= limit) break;
+  }
+  return out;
 }
