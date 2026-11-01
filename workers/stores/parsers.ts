@@ -332,6 +332,32 @@ export function hnstechVariants(html: string): ShopVariant[] {
   });
 }
 
+// Rio পাতায় window.productVariants এ সব ভার্সনের দাম-স্টক; ফর্মের রেডিওর label এ id→নাম (স্টোরেজ flexRadioStorage<id>, বাকি option_<ধরন>_<id>)।
+// রং বাদ — তার label ফাঁকা (নাম tooltip এ), আর JSON-LD এ ভার্সন-রেঞ্জের সবচেয়ে কম দাম থাকে বলেই এই parser
+export function rioVariants(html: string): ShopVariant[] {
+  const at = html.indexOf("window.productVariants");
+  const open = at < 0 ? -1 : html.indexOf("[", at);
+  const list = open < 0 ? null : jsonAt(html, open);
+  if (!Array.isArray(list)) return [];
+  const label = new Map<string, string>();
+  for (const [, id, text] of html.matchAll(/<label[^>]*for="(option_[a-z]+_\d+|flexRadioStorage\d+)"[^>]*>([\s\S]*?)<\/label>/g)) {
+    label.set(id, stripTags(text));
+  }
+  return list.filter(isObject).flatMap((v) =>
+    variant(
+      [
+        ["Storage", label.get(`flexRadioStorage${v.storage_type_id}`)],
+        ["Sim", label.get(`option_sim_${v.sim_id}`)],
+        ["Size", label.get(`option_size_${v.size_id}`)],
+        ["Unit", label.get(`option_unit_${v.unit_id}`)],
+      ],
+      v.discounted_price ?? v.price,
+      v.price,
+      typeof v.stock === "number" ? v.stock > 0 : null,
+    ),
+  );
+}
+
 // Shopify: পাতার JSON-LD এ শুধু প্রথম ভার্সনের দাম; প্রতিটা ভার্সনের দাম (পয়সায়), স্টক, অপশন, নাম আর ছবি /products/<handle>.js এ।
 // না পেলে null — তখন আগের মতো পাতার JSON-LD। আটকে দিলে সেটা উপরে যায়, যাতে দোকান-আটকানোর নিয়ম চলে
 export async function shopifyProduct(url: string): Promise<ShopProduct | null> {
