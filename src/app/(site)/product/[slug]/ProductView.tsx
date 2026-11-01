@@ -115,7 +115,19 @@ function VariantPicker({ variants, current, onPick, priceOf }: { variants: Varia
     <div className="flex flex-col gap-4">
       {axes.map((axis) => {
         const values = valuesOf(axis);
-        if (values.length < 2) return null;
+        if (values.length === 0) return null;
+        if (values.length === 1) {
+          return (
+            <fieldset key={axis} className="flex flex-col">
+              <legend className="mb-2 text-sm text-dim">
+                {t.axis[axis]}: <span className="font-semibold text-ink">{values[0]}</span>
+              </legend>
+              <div className="flex flex-wrap gap-2">
+                <span className="flex min-h-11 items-center rounded-md border border-line bg-surface-2 px-3.5 text-sm font-semibold text-ink">{values[0]}</span>
+              </div>
+            </fieldset>
+          );
+        }
         return (
           <fieldset key={axis} className="flex flex-col">
             <legend className="mb-2 text-sm text-dim">
