@@ -39,6 +39,12 @@
 | The Mall BD | | | ⛔ GitHub Actions থেকে robots.txt এ 403 |
 | Rokomari | | | ⛔ GitHub Actions থেকে robots.txt এ 403 |
 | Pickaboo | `/search-result/<নাম>` HTML | | ⛔ worker কে 403 দেয় |
+| Shaver Shop | product sitemap (`sitemaps.xml`, `/item/`) | `wooVariants` | ✅ ১ নভেম্বর যোগ |
+| Trimmer Shop BD | WooCommerce sitemap index (`/product/`) | `wooVariants` | ✅ ১ নভেম্বর যোগ |
+| Salextra | ফ্ল্যাট sitemap (`/product/`) | JSON-LD | ✅ ১ নভেম্বর যোগ |
+| UCC | পণ্য sitemap (`sitemaps/product-sitemap.xml`) | JSON-LD | ✅ ১ নভেম্বর যোগ (স্পিকার/SSD ব্যাচে) |
+| Skyland | ফ্ল্যাট sitemap (`sitemap.xml`) | JSON-LD | ✅ ১ নভেম্বর যোগ (স্পিকার/SSD ব্যাচে) |
+
 | Telegram এর দোকান | দোকান নিজে পাঠায় | ⬜ [telegram](15-telegram-bot.md) |
 | ক্রেতা | "দাম জানান" | 🟡 [price reports](05-price-reports.md) |
 
@@ -528,7 +534,34 @@ Samsung-এর S/Z সিরিজ, Pixel আর বড় ব্র্যান
 
 `data/catalog/audio.json`-এ `earbuds` ক্যাটাগরিতে ১৮টা জনপ্রিয় বাজেট TWS, ১৩৫টা দাম, প্রতিটা ৬–৯ দোকানে (প্রায় ৳১২০০–৩৩০০; Redmi Buds 5 ৳৩১৫০–৪৯৯৯): QCY T13 ANC 2, HT05 MeloBuds ANC, MeloBuds N20, HT15 Buds ANC; Xiaomi Redmi Buds 5, 6 Active, 6 Lite; Anker Soundcore R50i, P25i; Oraimo FreePods Neo, SpaceBuds Neo+, FreePods Lite; OnePlus Nord Buds 3r; SoundPEATS Q3 Pro; Haylou X1 Neo; Baseus Encok WM01; CMF by Nothing Buds 2a; Realme Buds T200। নতুন দোকান Arafa Telecom (আগে থেকেই worker-এ ছিল)। বাদ: Motion View-এর `anker-soundcore-r50i-tws` আর Gadget & Gear-এর R50i পাতা আসলে R50i NC; Gadget Breeze-এর Buds 6 Active পাতায় ৳৪০৯০ দেখায় অথচ JSON-LD-তে ৳১৯৩৯, তাই নেওয়া হয়নি; Star Tech-এ FreePods Lite To be announced। Lenovo LP40 সিরিজ দোকানগুলোর তালিকায় প্রায় নেই।
 
+### ব্লুটুথ স্পিকার আর পোর্টেবল SSD (১ নভেম্বর ২০২৬)
+
+দুই নতুন ক্যাটাগরি (`speaker` — অডিওর ভাগে; `ssd` — এক্সেসরিজে), ২৪ পণ্য, ৩০ ভার্সন, ২ নতুন দোকান। স্পিকারে এক মডেলে এক দাম, তাই "Standard" ভার্সন (ট্রিমারের মতোই); SSD ধারণক্ষমতার ভার্সনে। প্রতিটা পণ্য কমপক্ষে ২টা কনফিগার-করা দোকানের sitemap-এ আছে — এক দোকানের পণ্য নেওয়া হয়নি (Samsung T7 শুধু Startech-এ থাকায় বাদ):
+
+- স্পিকার ১৬টা: JBL Go 4/5, Clip 4/5, Flip 6/7, Charge 5/6, Xtreme 4/5, Boombox 3/4; Anker Soundcore Boom 3i, Boom Go 3i; Awei Y385 Mini, Y669 (বাজেট)। JBL-এর দোকান: Gadget & Gear, Apple Gadgets, Sumash Tech, Vertech, Rio International, Motionview, Skyland; Anker: Apple Gadgets, Sumash Tech; Awei: Star Tech, Kry International, Apple Gadgets, Skyland।
+- SSD ৮টা: ADATA SC740/SC730/SC735, Transcend ESD310C (২৫৬GB/৫১২GB/১TB)/ESD310S, Kingston SXS2000, Crucial X8, Corsair EX100U। দোকান: Apple Gadgets, Sumash Tech, Global Brand, Star Tech, UCC, Skyland।
+- নতুন দোকান: UCC (`ucc` — পণ্য sitemap `sitemaps/product-sitemap.xml`, JSON-LD দাম) আর Skyland (`skyland` — ফ্ল্যাট sitemap, JSON-LD দাম); দুটোরই robots.txt `Allow: /`, নমুনা পাতায় দাম নিশ্চিত (UCC ESD310C 1TB ৳২৯,০০০, Skyland Clip 5 ৳৫,৯৫০)। যাচাই করে বাদ: Ultratech (মেডিকেল যন্ত্রের দোকান), Ryans আর TechLand (sitemap 403)।
+
+`supabase/batches/2026-11-01-speaker-ssd.sql` আর ক্যাটাগরি migration `20261101200000_speaker-ssd-categories.sql`; পণ্যগুলো pending অবস্থায় discover এর দাম-খোঁজার অপেক্ষায়।
+
 ## আয়
 
 - Star Tech affiliate: ৫%, bKash এ ৳১,০০০ হলে টাকা।
 - পরে দোকানের কাছ থেকে "verified listing" এর জন্য টাকা।
+
+### ট্রিমার/গ্রুমিং দোকান (১ নভেম্বর ২০২৬)
+
+৬টা প্রস্তাবিত দোকান যাচাই করে ক্যাটালগের সাথে মিলিয়ে দেখা হয়েছে; ৩টা worker-এ যোগ হলো, ১টা আগেই ছিল, ২টা বাদ:
+
+| দোকান | id | আমাদের পণ্য | সিদ্ধান্ত |
+|---|---|---|---|
+| Shaver Shop (`shavershop.com.bd`) | `shavershop` | ১৬/৩৫ ট্রিমার (HTC AT-530/538, Kemei KM-234/3024/5017/600/6637, Philips BT1230/BT3101, Oraimo OCL-230/OPC-TR12, Enchen Sharp 3S, VGR V-185/932/937/963) | ✅ যোগ |
+| Trimmer Shop BD (`trimmershopbd.com.bd`) | `trimmershopbd` | ৯/৩৫ ট্রিমার (Kemei KM-3024/600/6330/6637, Philips BT1230/BT3101, VGR V-932/937/963) | ✅ যোগ |
+| Salextra (`salextra.com.bd`) | `salextra` | ১৪ ট্রিমার + ৮ রাউটার, ৬ পারিফায়ার, ১০ ইয়ারবাড, ৪ চার্জার, ৪ পাওয়ার ব্যাংক, জিসুলাইফ ফ্যান, HP ল্যাপটপ, iPad A16, Vivo ফোন | ✅ যোগ |
+| MK Electronics (`mke.com.bd`) | `mke` | আগেই ছিল; ট্রিমারে Panasonic/Philips-এর যে মডেল ক্যাটালগে নেই | ➖ নতুন কিছু নেই |
+| Horekmal BD (`horekmalbd.com`) | — | মাত্র ৪টা (HTC AT-538, Kemei KM-6330, VGR V-932, Oraimo FreePods Lite OTW-330); কয়েকটা পাতায় 403 | ⬜ কম দাম, পরে দেখা যাবে |
+| Sara Lifestyle (`saralifestyle.com`) | — | ১৭ ট্রিমার (Xiaomi Beard Trimmer 2C/HN3 সহ), ১২ ইয়ারবাড, ২ পাওয়ার ব্যাংক, ৫ Anker চার্জার, JBL Tune 770NC, Vivo ফোন; ১০,৬৯১ আইটেমের feed | ⛔ বাদ — `DordamBot` UA-কে Cloudflare 403 দেয় (robots.txt, feed, পাতাসহ); শুধু ব্রাউজার UA-তে খোলে। নিয়ম ভেঙে ব্রাউজার UA ব্যবহার করা হলো না, তাই ট্র্যাক করা হবে না |
+
+চেক করা হয়েছে: তিনটা দোকানের sitemap, robots.txt আর নমুনা পণ্যের পাতা লাইভ পড়ে (`node --import tsx` দিয়ে `discover` + `readPage`), দাম ঠিক এসেছে (যেমন Shaver Shop Kemei KM-5017 ৳1,299 (আগে ৳1,999), Salextra KM-5017 ৳1,249)।
+
+**Sara Lifestyle বাদ কেন:** ওদের product feed (১০,৬৯১ আইটেম) দারুণ, কিন্তু Cloudflare ডিক্লেয়ার করা `DordamBot` UA-কে robots.txt, feed আর পাতা — সবখানেই 403 দেয়; শুধু ব্রাউজার বা `curl` UA-তে খোলে। "নিজের পরিচয় দেওয়া UA" নিয়ম ভেঙে ব্রাউজার সাজা হবে না, তাই দোকানটা যোগ করা হয়নি। ওরা allowlist-এ `DordamBot` ঢুকিয়ে দিলে বা নিজে থেকে দাম পাঠালে (Telegram bot) তখন যোগ করা যাবে। মিলে যাওয়া পণ্যগুলো (১৭ ট্রিমার — Xiaomi Beard Trimmer 2C, Huanxing HN3 সহ; ১২ ইয়ারবাড; Anker চার্জার) আগে থেকেই যাচাই করা, তাই পরে দরকার হলে দ্রুত যোগ হবে।

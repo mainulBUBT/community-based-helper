@@ -1,6 +1,6 @@
 # দরদাম: প্রজেক্ট ইনডেক্স
 
-বাংলাদেশের দোকানগুলো থেকে একই পণ্যের দাম পাশাপাশি দেখানোর PWA। নাম **দরদাম** (Dordam), slogan "আগে দাম যাচাই, তারপর স্মার্ট কেনা"। এখন মোবাইল, ল্যাপটপ, ট্যাবলেট, ডেস্কটপ, স্মার্টওয়াচ, অডিও, পাওয়ার ব্যাংক, মনিটর, চার্জার, চার্জার ফ্যান, পানির ফিল্টার, মেকআপ, স্কিনকেয়ার, স্নিকার্স, বেবি পণ্য, ট্রিমার, মধু, খেজুর আর খেজুরের গুড়; পরে অন্য পণ্যও আসবে।
+বাংলাদেশের দোকানগুলো থেকে একই পণ্যের দাম পাশাপাশি দেখানোর PWA। নাম **দরদাম** (Dordam), slogan "আগে দাম যাচাই, তারপর স্মার্ট কেনা"। এখন মোবাইল, ল্যাপটপ, ট্যাবলেট, ডেস্কটপ, স্মার্টওয়াচ, অডিও, ব্লুটুথ স্পিকার, পোর্টেবল SSD, পাওয়ার ব্যাংক, মনিটর, চার্জার, চার্জার ফ্যান, পানির ফিল্টার, মেকআপ, স্কিনকেয়ার, স্নিকার্স, বেবি পণ্য, ট্রিমার, মধু, খেজুর আর খেজুরের গুড়; পরে অন্য পণ্যও আসবে।
 
 এই ফোল্ডার মানুষ আর AI এজেন্ট দুজনের জন্য। কাজ শুরুর আগে এই ফাইল, তারপর যে ফিচারে কাজ করবেন তার ফাইল পড়ুন। কাজ শেষে সেই ফাইলের টাস্ক টিক দিন আর নিচের ট্র্যাকারে স্ট্যাটাস বদলান।
 
@@ -48,6 +48,8 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 22. ⬜ **৩১ অক্টোবরের কয়েকটা AI সেটআপ:** deploy-এর পরে অ্যাডমিন → অটোমেশন ও AI → AI সেটআপে সেটআপগুলো পছন্দের ক্রমে যোগ করুন (migration লাগে না)। দেখুন [llm](features/13-llm.md)।
 23. ⬜ **৩১ অক্টোবরের ট্রিমার লাইভে নেওয়া** (migration `20261031120000_trimmer-category.sql` চলেছে, কোড push হয়েছে; বাকি): `npm run db:seed` (পুরো ফাইল এক অনুরোধে 413 দেয়; ৩৫ পণ্য, ১৮২ দাম, বেশিরভাগ ৪+ দোকানে, ৪টা বাজেট মডেল ৩ দোকানে; ছেলে-মেয়ের ট্রিমার, নাকের ট্রিমার আর শেভারসহ; একই seed-এ বাজেটের ১৮টা TWS ইয়ারবাড, ১৩৫ দাম), তারপর `rebuild`। সার্চে "tws" লিখলে এখন ইয়ারবাড আসে। দেখুন [data-sources](features/17-data-sources.md)।
 24. ⬜ **৩১ অক্টোবরের AI ম্যানেজার চালু করা:** [ai-manager](features/19-ai-manager.md)-এর "চালু করার ধাপ" (wrangler login, `npm run agent:deploy`, দুটো secret, GitHub-এ `MANAGER_URL`, তারপর `rebuild`)।
+25. ⬜ **১ নভেম্বরের ৩টা নতুন দোকান লাইভে নেওয়া** (migration লাগে না): `npm run catalog:specs` (প্রয়োজন হলে), তারপর `npx supabase db query --linked -f supabase/seed.sql` (নতুন seller: Shaver Shop, Trimmer Shop BD, Salextra), তারপর `npm run worker -- discover plan` একবার দেখে `discover` চালানো (বা রাতের cron), শেষে `rebuild`। Shaver Shop-এ ১৬টা, Trimmer Shop BD-তে ৯টা, Salextra-তে ৫০+ আমাদের পণ্যের দাম আসবে। Sara Lifestyle বাদ: ওদের Cloudflare `DordamBot` UA-কে সবখানে 403 দেয়। দেখুন [data-sources](features/17-data-sources.md)।
+26. ⬜ **১ নভেম্বরের স্পিকার আর পোর্টেবল SSD লাইভে নেওয়া:** ক্যাটাগরি migration `20261101200000_speaker-ssd-categories.sql` আর ব্যাচ (`supabase/batches/2026-11-01-speaker-ssd.sql`: ২৪ পণ্য, ৩০ ভার্সন, নতুন দোকান UCC আর Skyland) ডিবিতে চলেছে; `discover` চলছে। বাকি: review_queue যাচাই করে `applyApproved`, এক দোকানে নেমে আসা ভার্সন বাদ, `rebuild`। প্রতিটা পণ্য ২+ দোকানে; Samsung T7 বাদ (শুধু Startech)। দেখুন [data-sources](features/17-data-sources.md)।
 11. ✅ `/about/` পেজ (`/about/` বাংলা, `/en/about/` English), সব লেখা অ্যাডমিন থেকে বদলানো যায়।
 
 ## ফিচার ট্র্যাকার
@@ -55,7 +57,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | # | ফিচার | অবস্থা | ফাইল |
 |---|---|---|---|
 | 1 | ডিজাইন সিস্টেম (রং, কম্পোনেন্ট) | ✅ | [01-design-system](features/01-design-system.md) |
-| 2 | ইউজার পেজ (হোম, পণ্য, বিক্রেতা, সেভ) | ✅ ডিল ফিড, "একই ধরনের আরও সস্তা", পণ্যের হিরো কার্ড কমপ্যাক্ট | [02-user-pages](features/02-user-pages.md) |
+| 2 | ইউজার পেজ (হোম, পণ্য, বিক্রেতা, সেভ) | ✅ ডিল ফিড, "একই ধরনের আরও সস্তা", পণ্যের হিরো কার্ড কমপ্যাক্ট, ভার্সনের এক-মানের ঘরও দেখায় | [02-user-pages](features/02-user-pages.md) |
 | 3 | খোঁজা আর ফিল্টার | ✅ | [03-search](features/03-search.md) |
 | 4 | বিক্রেতা, ফোন নম্বর, যাচাই ব্যাজ | ✅ | [04-sellers](features/04-sellers.md) |
 | 5 | ক্রেতার পাঠানো দাম | 🟡 | [05-price-reports](features/05-price-reports.md) |
@@ -70,7 +72,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | 14 | ভিজিটর গোনা আর লগ | 🟡 | [14-analytics-logs](features/14-analytics-logs.md) |
 | 15 | দোকানের জন্য Telegram bot | ⬜ | [15-telegram-bot](features/15-telegram-bot.md) |
 | 16 | Deploy আর ডোমেইন | 🟡 `dordam.app` চালু, SEO লিংক ঠিক; Auth URL, Search Console বাকি | [16-deploy](features/16-deploy.md) |
-| 17 | ডেটার উৎস আর নিয়ম | ✅ সিদ্ধান্ত | [17-data-sources](features/17-data-sources.md) |
+| 17 | ডেটার উৎস আর নিয়ম | ✅ সিদ্ধান্ত (১ নভেম্বর: Shaver Shop, Trimmer Shop BD, Salextra, UCC, Skyland যোগ; স্পিকার + SSD ব্যাচ) | [17-data-sources](features/17-data-sources.md) |
 | 18 | নিরাপত্তা | 🟡 ড্যাশবোর্ড সেটিং বাকি | [18-security](features/18-security.md) |
 | 19 | AI ম্যানেজার (Telegram আর অ্যাডমিনে কথা, সকালের রিপোর্ট) | 🟡 ধাপ ১ বানানো, লাইভে চালু বাকি | [19-ai-manager](features/19-ai-manager.md) |
 

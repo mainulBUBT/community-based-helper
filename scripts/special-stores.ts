@@ -358,8 +358,31 @@ export const SPECIAL_STORES: Record<string, SpecialStoreConfig> = {
       };
     },
   },
+  nexttech: {
+    id: "nexttech",
+    name: "Next Tech BD",
+    hosts: ["nexttech.com.bd", "www.nexttech.com.bd"],
+    sampleUrl: "https://nexttech.com.bd/product/mac-mini-m4-16-256gb-2024/",
+    strategy: "browser_stealth",
+    extract: universalExtract,
+  },
+  computervillage: {
+    id: "computervillage",
+    name: "Computer Village",
+    hosts: ["computervillage.com.bd", "www.computervillage.com.bd"],
+    sampleUrl: "https://www.computervillage.com.bd/hp-15-fd0892tu-laptop",
+    strategy: "browser_stealth",
+    extract: universalExtract,
+  },
+  ghorerbazar: {
+    id: "ghorerbazar",
+    name: "Ghorer Bazar",
+    hosts: ["ghorerbazar.com", "www.ghorerbazar.com"],
+    sampleUrl: "https://ghorerbazar.com/products/sundarban-honey",
+    strategy: "browser_stealth",
+    extract: universalExtract,
+  },
 };
-
 let sharedBrowser: Browser | null = null;
 
 async function getBrowser(): Promise<Browser> {
@@ -615,6 +638,14 @@ const SPECIAL_SELLER_SEEDS = [
   { name: "Rokomari", website: "https://www.rokomari.com/", hosts: ["rokomari.com"] },
   { name: "The Mall BD", website: "https://themallbd.com/", hosts: ["themallbd.com"] },
   { name: "Naturo BD", website: "https://naturobd.com/", hosts: ["naturobd.com"] },
+  { name: "Vertech", website: "https://www.vertech.com.bd/", hosts: ["vertech.com.bd"] },
+  { name: "Rio International", website: "https://riointernational.com.bd/", hosts: ["riointernational.com.bd"] },
+  { name: "ByteBliss", website: "https://bytebliss.com.bd/", hosts: ["bytebliss.com.bd"] },
+  { name: "Next Tech BD", website: "https://www.nexttech.com.bd/", hosts: ["nexttech.com.bd"] },
+  { name: "Computer Village", website: "https://www.computervillage.com.bd/", hosts: ["computervillage.com.bd"] },
+  { name: "PC House", website: "https://www.pchouse.com.bd/", hosts: ["pchouse.com.bd"] },
+  { name: "Sundora", website: "https://sundora.com.bd/", hosts: ["sundora.com.bd"] },
+  { name: "Ghorer Bazar", website: "https://ghorerbazar.com/", hosts: ["ghorerbazar.com"] },
 ];
 
 export async function ensureSpecialSellers(sb: SupabaseClient) {
