@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/Badge";
 import { useI18n } from "@/hooks/useI18n";
 import type { Condition, OfferView, Promo } from "@/types/catalog";
 import { conditionLabel } from "@/utils/categories";
+import { realOldPrice } from "@/utils/catalog";
 import { formatTaka, telLink } from "@/utils/format";
 
 const TONE: Partial<Record<Condition, "ok" | "gold" | "brand">> = { official: "ok", unofficial: "gold", replica_premium: "brand" };
@@ -95,10 +96,11 @@ function PromoSheet({ promos, offer, link }: { promos: Promo[]; offer: OfferView
   );
 }
 
-function OfferRow({ offer, best, warranty, showCondition }: { offer: OfferView; best: boolean; warranty: boolean; showCondition: boolean }) {
+function OfferRow({ offer, official, best, warranty, showCondition }: { offer: OfferView; official: number | null; best: boolean; warranty: boolean; showCondition: boolean }) {
   const { t, ago, lang, prefix } = useI18n();
   const { seller } = offer;
   const link = offer.url ?? seller.website;
+  const oldPrice = realOldPrice(offer.oldPrice, official);
   const stock = offer.inStock === null ? t.stock.unknown : offer.inStock ? t.stock.yes : t.stock.no;
   const stockDot = offer.inStock === null ? "bg-faint" : offer.inStock ? "bg-ok" : "bg-danger";
   const action = `flex h-9 shrink-0 items-center gap-1.5 rounded-md px-3 text-[13px] font-semibold transition-colors md:h-10 md:px-4 md:text-sm ${best ? "bg-cta text-cta-ink hover:bg-cta-hover" : "border border-line text-ink hover:border-dim"}`;
@@ -145,7 +147,7 @@ function OfferRow({ offer, best, warranty, showCondition }: { offer: OfferView; 
       <span className="col-start-2 row-start-1 flex flex-col items-end md:row-span-2 md:self-center">
         {best && <span className="text-[11px] font-semibold text-ok">{t.product.cheapest}</span>}
         <span className="text-[17px] leading-tight font-bold tracking-tight text-ink md:text-lg">{formatTaka(offer.price, lang)}</span>
-        {offer.oldPrice && offer.oldPrice > offer.price && <span className="text-xs text-faint line-through">{formatTaka(offer.oldPrice, lang)}</span>}
+        {oldPrice && oldPrice > offer.price && <span className="text-xs text-faint line-through">{formatTaka(oldPrice, lang)}</span>}
       </span>
 
       <div className="col-start-2 row-start-2 justify-self-end md:col-start-3 md:row-span-2 md:row-start-1 md:self-center">
@@ -167,14 +169,14 @@ function OfferRow({ offer, best, warranty, showCondition }: { offer: OfferView; 
   );
 }
 
-export function OffersTable({ offers, warranty, showCondition }: { offers: OfferView[]; warranty: boolean; showCondition: boolean }) {
+export function OffersTable({ offers, official, warranty, showCondition }: { offers: OfferView[]; official: number | null; warranty: boolean; showCondition: boolean }) {
   // "সবচেয়ে কম" শুধু স্টকে থাকা দোকানের মধ্যে
   const available = offers.filter((offer) => offer.inStock !== false);
   const lowest = available.length ? Math.min(...available.map((offer) => offer.price)) : null;
   return (
     <ul className="divide-y divide-line-soft">
       {offers.map((offer) => (
-        <OfferRow key={offer.id} offer={offer} best={available.includes(offer) && offer.price === lowest} warranty={warranty} showCondition={showCondition} />
+        <OfferRow key={offer.id} offer={offer} official={official} best={available.includes(offer) && offer.price === lowest} warranty={warranty} showCondition={showCondition} />
       ))}
     </ul>
   );

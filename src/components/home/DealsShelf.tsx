@@ -6,28 +6,8 @@ import { ProductCard } from "@/components/product/ProductCard";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { useI18n } from "@/hooks/useI18n";
 import type { ProductSummary } from "@/types/catalog";
+import type { RecentDrop } from "@/utils/catalog";
 import { SectionEyebrow, Shelf } from "./Shelf";
-
-function mixProducts(items: ProductSummary[]): ProductSummary[] {
-  const groups = new Map<string, ProductSummary[]>();
-  for (const it of items) {
-    const key = it.product.category;
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key)!.push(it);
-  }
-  const buckets = [...groups.values()];
-  const out: ProductSummary[] = [];
-  let remaining = items.length;
-  while (remaining > 0) {
-    for (const b of buckets) {
-      if (b.length) {
-        out.push(b.shift()!);
-        remaining--;
-      }
-    }
-  }
-  return out;
-}
 
 // এক কার্ড থেকে পরের কার্ডের দূরত্ব (ফাঁকসহ)
 function cardStep(track: HTMLElement): number {
@@ -40,11 +20,11 @@ export function DealsShelf({
   deals,
   interval,
 }: {
-  deals: ProductSummary[];
+  deals: (RecentDrop & { summary: ProductSummary })[];
   interval: number;
 }) {
-  const { t, num, prefix } = useI18n();
-  const items = useMemo(() => mixProducts(deals).slice(0, 20), [deals]);
+  const { t, num } = useI18n();
+  const items = useMemo(() => deals.slice(0, 20), [deals]);
   const trackRef = useRef<HTMLDivElement>(null);
   const drag = useRef<{ x: number; left: number; moved: boolean } | null>(null);
   const dragged = useRef(false);
@@ -109,8 +89,6 @@ export function DealsShelf({
         <SectionHeader
           title={t.home.drops}
           subtitle={t.home.dropsSub}
-          href={`${prefix}/search/?sort=drop`}
-          linkLabel={t.home.seeAllIn(num(deals.length))}
         />
       </div>
       <div
@@ -136,9 +114,14 @@ export function DealsShelf({
           }}
           onDragStart={(e) => e.preventDefault()}
         >
-          {items.map((summary, i) => (
+          {items.map(({ summary, from, amount, daysAgo }, i) => (
             <div key={summary.product.id} className="w-1/2 shrink-0 snap-start sm:w-1/3 lg:w-1/5">
-              <ProductCard summary={summary} deal={summary.drop} loading={i < 5 ? "eager" : "lazy"} />
+              <ProductCard
+                summary={{ ...summary, compareAt: from }}
+                deal={amount}
+                badge={<span className="rounded-xs bg-surface/95 px-1.5 py-0.5 text-[10px] font-bold text-ink ring-1 ring-line">{t.home.droppedWhen(daysAgo, num(daysAgo))}</span>}
+                loading={i < 5 ? "eager" : "lazy"}
+              />
             </div>
           ))}
         </div>

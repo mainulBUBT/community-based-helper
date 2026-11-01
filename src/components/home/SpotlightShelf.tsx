@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { CategoryIcon } from "@/components/product/CategoryIcon";
 import { ProductIcon } from "@/components/product/ProductIcon";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -13,15 +13,33 @@ import { formatTaka } from "@/utils/format";
 import { categoryPath } from "@/utils/url";
 import { SectionEyebrow } from "./Shelf";
 
+const TURN_KEY = "spotlight-turn";
+let turn: number | null = null;
+
+// প্রতিবার পাতা খুললে একবার এক ধাপ এগোয়: মোবাইল, তারপর ল্যাপটপ…; স্ট্যাটিক HTML আর প্রথমবার প্রথমটা
+function visitTurn() {
+  if (turn === null) {
+    try {
+      turn = Number(localStorage.getItem(TURN_KEY) ?? -1) + 1;
+      localStorage.setItem(TURN_KEY, String(turn));
+    } catch {
+      turn = 0;
+    }
+  }
+  return turn;
+}
+const noSubscribe = () => () => {};
+
 export function SpotlightShelf({ summaries }: { summaries: ProductSummary[] }) {
   const { t, num, lang, prefix } = useI18n();
   const { top, family } = useCategories();
   const withProducts = top.filter((c) =>
     summaries.some((s) => family(c.slug).includes(s.product.category)),
   );
-  const [active, setActive] = useState(withProducts[0]?.slug ?? "");
+  const visit = useSyncExternalStore(noSubscribe, visitTurn, () => 0);
+  const [picked, setActive] = useState<string | null>(null);
   const current =
-    withProducts.find((c) => c.slug === active) ?? withProducts[0];
+    withProducts.find((c) => c.slug === picked) ?? withProducts[visit % Math.max(1, withProducts.length)];
   if (!current) return null;
   const items = summaries.filter((s) =>
     family(current.slug).includes(s.product.category),

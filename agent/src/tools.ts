@@ -1,5 +1,6 @@
 import type { ManagerEnv } from "./env";
-import { rest, rpc } from "./supabase";
+import { privateSettings, rest, rpc } from "./supabase";
+import { sendMessage } from "./telegram";
 
 export type Tone = "ok" | "bad" | "wait";
 export interface Step {
@@ -53,7 +54,7 @@ const STALE_DAYS = 7;
 // PostgREST filter এর ভেতরে বসে, তাই শুধু অক্ষর, সংখ্যা আর ফাঁকা
 const words = (query: string) => query.replace(/[^\p{L}\p{N}\s.-]/gu, " ").split(/\s+/).filter(Boolean).slice(0, 4);
 
-// ধাপ ১: সব টুল শুধু পড়ে
+// সব টুল শুধু পড়ে; send_telegram শুধু মালিকের নিজের chat-এ পাঠায়
 export const TOOLS: Record<string, Tool> = {
   jobs_status: {
     description: "সাইটের নিয়মিত কাজগুলোর (দাম আনা, নতুন পণ্য খোঁজা, অফার, সাইট বানানো) অবস্থা: শেষ কখন চলেছে, ফল কী, বন্ধ বা লাইনে আছে কিনা",
@@ -142,6 +143,17 @@ export const TOOLS: Record<string, Tool> = {
         result: `${bn(items.length)}টা দুর্বল পণ্য · ${bn(breaksRule)}টা নিয়ম ভাঙে`,
         tone: breaksRule ? "bad" : items.length ? "wait" : "ok",
       };
+    },
+  },
+  send_telegram: {
+    description: "মালিকের Telegram-এ মেসেজ পাঠানো। শুধু মালিক চাইলে, যেমন \"রিপোর্টটা Telegram-এ দাও\"",
+    parameters: { type: "object", properties: { text: { type: "string", description: "যা পাঠাবে" } }, required: ["text"] },
+    async run(env, args) {
+      const { telegramBotToken: token, alertChatId: chat } = await privateSettings(env);
+      const text = String(args.text ?? "").trim();
+      if (!token || !chat || !text) return { data: { sent: false }, result: "Telegram সেট করা নেই", tone: "bad" };
+      const status = await sendMessage(token, chat, text);
+      return { data: { sent: status === 200, status }, result: status === 200 ? "Telegram-এ পাঠানো হয়েছে" : `Telegram HTTP ${bn(status)}`, tone: status === 200 ? "ok" : "bad" };
     },
   },
 };

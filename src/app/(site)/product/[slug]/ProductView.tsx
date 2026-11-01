@@ -20,7 +20,7 @@ import { useI18n } from "@/hooks/useI18n";
 import { useSaved } from "@/hooks/useSaved";
 import type { RegionNote } from "@/types/admin";
 import { AXES, type Axis, type Condition, type OfferView, type ProductDetail, type SpecGroup, type Variant } from "@/types/catalog";
-import { byStock } from "@/utils/catalog";
+import { byStock, realOldPrice } from "@/utils/catalog";
 import { categoryConditions, conditionLabel, isReplica } from "@/utils/categories";
 import { formatTaka, telLink } from "@/utils/format";
 import { primaryRegion } from "@/utils/region";
@@ -224,7 +224,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   const fullName = `${product.brand} ${product.name}`;
 
   const official = variant?.officialPrice ?? null;
-  const reference = best ? Math.max(best.oldPrice ?? 0, best.condition === "official" || (!warranty && !isReplica(best.condition)) ? (official ?? 0) : 0) : 0;
+  const reference = best ? Math.max(realOldPrice(best.oldPrice, official) ?? 0, best.condition === "official" || (!warranty && !isReplica(best.condition)) ? (official ?? 0) : 0) : 0;
   const off = best && reference > best.price ? Math.round(((reference - best.price) / reference) * 100) : 0;
   const variantLowest = (id: string) => {
     const matching = offers.filter((o) => o.variantId === id && inView(o));
@@ -249,7 +249,10 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
     { id: "history", label: t.product.sections.history },
     ...(description ? [{ id: "about", label: t.product.sections.about }] : []),
   ];
-  const monthLow = Math.min(...history.filter((p) => shown.some((o) => o.id === p.offerId)).map((p) => p.price), ...shown.map((o) => o.price));
+  // স্টকে না থাকা দোকান বাদ, নইলে সস্তা দোকানের স্টক ফুরালে "আগে কম ছিল" মনে হয়
+  const inStockShown = shown.filter((o) => o.inStock !== false);
+  const chartOffers = inStockShown.length ? inStockShown : shown;
+  const monthLow = Math.min(...history.filter((p) => chartOffers.some((o) => o.id === p.offerId)).map((p) => p.price), ...chartOffers.map((o) => o.price));
 
   return (
     <div className="flex flex-col gap-4 pb-[calc(5rem+env(safe-area-inset-bottom))] md:pb-0">
@@ -417,7 +420,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
 
       {shown.length > 0 && (
         <Panel title={t.product.allPrices} subtitle={product.variants.length > 1 ? variantName : undefined} id="stores">
-          <OffersTable offers={shown} warranty={warranty} showCondition={kinds.length > 1} />
+          <OffersTable offers={shown} official={official} warranty={warranty} showCondition={kinds.length > 1} />
         </Panel>
       )}
 
@@ -435,7 +438,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
         <SpecsPanel specs={specs} source={product.specsSource} />
         <Panel title={t.product.history} id="history">
           <div className="px-5 py-4">
-            <PriceChart history={history.filter((p) => shown.some((o) => o.id === p.offerId))} offers={shown} />
+            <PriceChart history={history.filter((p) => chartOffers.some((o) => o.id === p.offerId))} offers={chartOffers} />
           </div>
         </Panel>
       </div>

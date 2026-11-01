@@ -41,14 +41,25 @@ function Step({ step }: { step: ManagerStep }) {
 }
 
 function Message({ message }: { message: ManagerMessage }) {
-  const { t } = useAdminI18n();
+  const { t, lang } = useAdminI18n();
+  const time = (
+    <time dateTime={message.at} className="text-[11px] text-[#667085]">
+      {new Date(message.at).toLocaleString(lang === "bn" ? "bn-BD" : "en-GB", { day: "numeric", month: "short", hour: "numeric", minute: "2-digit", timeZone: "Asia/Dhaka" })}
+    </time>
+  );
   if (message.role === "schedule")
     return (
       <div className="flex items-center gap-2 self-center rounded-full bg-white/5 px-3 py-1 text-[11px] text-[#98a2b3]">
-        <Clock size={12} aria-hidden="true" /> {t.admin.manager.scheduled}
+        <Clock size={12} aria-hidden="true" /> {t.admin.manager.scheduled} · {time}
       </div>
     );
-  if (message.role === "user") return <div className="max-w-[85%] self-end rounded-2xl rounded-br-md bg-[#0f766e] px-4 py-2.5 text-[14px] whitespace-pre-line">{message.text}</div>;
+  if (message.role === "user")
+    return (
+      <div className="flex max-w-[85%] flex-col items-end gap-1 self-end">
+        <div className="rounded-2xl rounded-br-md bg-[#0f766e] px-4 py-2.5 text-[14px] whitespace-pre-line">{message.text}</div>
+        {time}
+      </div>
+    );
   return (
     <div className="flex gap-2.5">
       <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-live/15 text-sm" aria-hidden="true">
@@ -59,6 +70,7 @@ function Message({ message }: { message: ManagerMessage }) {
           <Step key={i} step={step} />
         ))}
         <p className="whitespace-pre-line">{message.text}</p>
+        {time}
       </div>
     </div>
   );

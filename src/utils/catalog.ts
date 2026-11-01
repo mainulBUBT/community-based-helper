@@ -1,4 +1,4 @@
-import type { OfferView, PricePoint, ProductSummary } from "@/types/catalog";
+import type { Offer, OfferView, PricePoint, ProductSummary } from "@/types/catalog";
 
 export const byPrice = (a: { price: number }, b: { price: number }) => a.price - b.price;
 
@@ -23,6 +23,58 @@ export function toCard(summary: ProductSummary): ProductSummary {
 
 export function lowestOffer(offers: OfferView[]) {
   return offers.filter((offer) => offer.inStock !== false).sort(byPrice)[0] ?? offers.slice().sort(byPrice)[0] ?? null;
+}
+
+// দোকানের লেখা "আগের দাম" অফিসিয়াল দামের চেয়ে বেশি হলে বানানো (Dazzle-এ MacBook Air M3: অফিসিয়াল ৳১,৩৪,৯৯৯, "আগে" ৳১,৮৯,৯৯০)
+export const realOldPrice = (oldPrice: number | null | undefined, official: number | null | undefined) =>
+  oldPrice && (!official || oldPrice <= official) ? oldPrice : null;
+
+export interface RecentDrop {
+  productId: string;
+  from: number;
+  amount: number;
+  daysAgo: number;
+}
+
+const DHAKA_OFFSET = 6 * 3600000;
+// ৳৩৯,৩০০ থেকে ৳৩৯,২৯৯ "দাম কমল" নয়
+const MIN_DROP = 10;
+const MIN_DROP_SHARE = 0.005;
+const dhakaDay = (ms: number) => Math.floor((ms + DHAKA_OFFSET) / 86400000);
+
+// আসল দাম কমা: এখনকার সবচেয়ে কম দামটা কোনো দোকান গত `days` দিনে কমিয়েছে, আর তার ঠিক আগে পণ্যের সবচেয়ে কম দাম এর চেয়ে বেশি ছিল।
+// দোকানের নিজের আগের দামের চেয়ে কমতে হবে, তাই নতুন দোকান যোগ হয়ে সস্তা হওয়া ধরা হয় না; আগের হিসাবে এখন স্টকে না থাকা দোকানও থাকে, যাতে ভুল করে বাড়তি "কমেছে" না দেখায়
+export function recentDrops(summaries: ProductSummary[], offers: Offer[], history: PricePoint[], days = 7, now = Date.now()): RecentDrop[] {
+  const points = new Map<string, PricePoint[]>();
+  for (const point of history) points.set(point.offerId, [...(points.get(point.offerId) ?? []), point]);
+  for (const list of points.values()) list.sort((a, b) => a.seenAt.localeCompare(b.seenAt));
+  // ওই সময়ের ঠিক আগে দোকানের দাম; ইতিহাসের সময়সীমায় কোনো বদল না থাকলে এখনকার দামই তখনকার, আর প্রথম দামের আগে দোকান ছিল না
+  const priceBefore = (offer: Offer, time: number) => {
+    const list = points.get(offer.id);
+    return list ? (list.filter((p) => Date.parse(p.seenAt) < time).at(-1)?.price ?? null) : offer.price;
+  };
+  const byVariant = new Map<string, Offer[]>();
+  for (const offer of offers) byVariant.set(offer.variantId, [...(byVariant.get(offer.variantId) ?? []), offer]);
+  const today = dhakaDay(now);
+  const drops: RecentDrop[] = [];
+  for (const { product, lowest } of summaries) {
+    if (!lowest) continue;
+    const own = product.variants.flatMap((v) => byVariant.get(v.id) ?? []);
+    for (const offer of own.filter((o) => o.inStock !== false && o.price === lowest)) {
+      const [previous, last] = points.get(offer.id)?.slice(-2) ?? [];
+      if (!previous || !last || last.price !== offer.price || last.price >= previous.price) continue;
+      const time = Date.parse(last.seenAt);
+      const daysAgo = today - dhakaDay(time);
+      if (daysAgo >= days) continue;
+      const before = own.map((o) => priceBefore(o, time)).filter((p): p is number => p !== null);
+      const from = before.length ? Math.min(...before) : null;
+      if (from && from - lowest >= MIN_DROP && from - lowest >= from * MIN_DROP_SHARE) {
+        drops.push({ productId: product.id, from, amount: from - lowest, daysAgo });
+        break;
+      }
+    }
+  }
+  return drops.sort((a, b) => a.daysAgo - b.daysAgo || b.amount - a.amount);
 }
 
 export interface DayRange {

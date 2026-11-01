@@ -3,7 +3,7 @@ import path from "node:path";
 import { BUDGET_MIN_PRODUCTS, BUDGETS } from "@/config/budgets";
 import { DEFAULT_SETTINGS } from "@/config/site";
 import type { SiteSettings } from "@/types/admin";
-import { byStock, toCard } from "@/utils/catalog";
+import { byStock, recentDrops, toCard } from "@/utils/catalog";
 import { categoryFamily } from "@/utils/categories";
 import { brandSlug } from "@/utils/url";
 import { safeUrl } from "@/utils/url";
@@ -56,8 +56,9 @@ export const { loadCatalog, listSummaries, listCategories, listSellers, listComp
 );
 
 export async function getHomeData(): Promise<HomeData> {
-  const [summaries, sellers, settings, comparisons] = await Promise.all([listSummaries(), listSellers(), getSiteSettings(), listComparisons()]);
-  return { summaries: summaries.map(toCard), sellers, settings, comparisons };
+  const [summaries, sellers, settings, comparisons, { offers }] = await Promise.all([listSummaries(), listSellers(), getSiteSettings(), listComparisons(), loadCatalog()]);
+  const drops = recentDrops(summaries, offers, await loadHistory(offers.map((o) => o.id)));
+  return { summaries: summaries.map(toCard), sellers, settings, comparisons, drops };
 }
 
 // ক্যাটাগরি পেজের স্ট্যাটিক HTML আর প্রথম রেন্ডারের জন্য: ভেতরের ভাগসহ, জনপ্রিয়তা অনুযায়ী

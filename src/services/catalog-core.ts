@@ -1,5 +1,5 @@
 import { findCheaperAlternatives } from "@/utils/alternatives";
-import { byPrice, byStock } from "@/utils/catalog";
+import { byPrice, byStock, realOldPrice, type RecentDrop } from "@/utils/catalog";
 import { isReplica } from "@/utils/categories";
 import type { SiteSettings } from "@/types/admin";
 import type { Alternative, CategoryInfo, Offer, OfferView, PricePoint, Product, ProductDetail, ProductSummary, Promo, Seller } from "@/types/catalog";
@@ -40,8 +40,9 @@ export function summarize(catalog: Catalog, product: Product): ProductSummary {
   const warranty = catalog.categories.find((c) => c.slug === product.category)?.warranty !== false;
   // আনঅফিসিয়াল বা কপির দামের পাশে অফিসিয়াল দাম দেখিয়ে "ছাড়" বলা যায় না
   const listed = best && (warranty ? best.condition === "official" : !isReplica(best.condition));
-  const listPrice = listed ? product.variants.find((v) => v.id === best.variantId)?.officialPrice : null;
-  const reference = Math.max(best?.oldPrice ?? 0, listPrice ?? 0);
+  const officialPrice = best ? product.variants.find((v) => v.id === best.variantId)?.officialPrice : null;
+  const listPrice = listed ? officialPrice : null;
+  const reference = Math.max(realOldPrice(best?.oldPrice, officialPrice) ?? 0, listPrice ?? 0);
   const compareAt = lowest && reference > lowest ? reference : null;
   return {
     product,
@@ -93,6 +94,7 @@ export interface HomeData {
   sellers: Seller[];
   settings: SiteSettings;
   comparisons: ComparePick[];
+  drops: RecentDrop[];
 }
 
 export type CatalogLoader = (fresh?: boolean) => Promise<Catalog>;

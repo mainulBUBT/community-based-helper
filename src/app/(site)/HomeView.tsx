@@ -14,20 +14,16 @@ import { SellerCard } from "@/components/seller/SellerCard";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { useI18n } from "@/hooks/useI18n";
 import type { HomeData } from "@/services/catalog-core";
-import { byPopularity, byStock } from "@/utils/catalog";
 
 export function HomeView({ initial }: { initial: HomeData }) {
   const { lang, t, prefix } = useI18n();
   const { summaries, sellers, settings, comparisons } = initial;
 
-  const drops = summaries
-    .filter((s) => s.drop)
-    .sort((a, b) => byStock(a, b) || (b.drop ?? 0) - (a.drop ?? 0));
-  // Fill the carousel: drops first, then popular non-drop products
-  const nonDrops = summaries
-    .filter((s) => !s.drop)
-    .sort((a, b) => byStock(a, b) || byPopularity(a, b));
-  const carouselItems = [...drops, ...nonDrops].slice(0, 20);
+  const byId = new Map(summaries.map((s) => [s.product.id, s]));
+  const deals = initial.drops.flatMap((d) => {
+    const summary = byId.get(d.productId);
+    return summary ? [{ ...d, summary }] : [];
+  });
   // সব ব্র্যান্ড নয়, যাদের পণ্য বেশি সেই ৩০টা — তালিকা বাড়লেও হোম পাতা ভারী হয় না
   const brandCount = new Map<string, number>();
   for (const s of summaries) brandCount.set(s.product.brand, (brandCount.get(s.product.brand) ?? 0) + 1);
@@ -98,7 +94,7 @@ export function HomeView({ initial }: { initial: HomeData }) {
       <CategoryTiles summaries={summaries} />
 
       {(settings.showDrops ?? true) && (
-        <DealsShelf deals={carouselItems} interval={settings.dropsInterval ?? 4} />
+        <DealsShelf deals={deals} interval={settings.dropsInterval ?? 4} />
       )}
 
       {(settings.showSpotlight ?? true) && <SpotlightShelf summaries={summaries} />}
