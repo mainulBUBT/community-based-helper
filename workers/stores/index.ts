@@ -3,7 +3,7 @@ import { decode, stripTags } from "../lib/html";
 import { getJson, getText } from "../lib/http";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import { appleGadgetsVariants, aurevaVariants, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, rioVariants, shopifyProduct, startechVariants, sumashVariants, wooVariants } from "./parsers";
+import { appleGadgetsVariants, aurevaVariants, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, rioVariants, shopifyProduct, startechVariants, sumashVariants, themallVariants, wooVariants } from "./parsers";
 import { isReplica } from "../../src/utils/categories";
 import type { Condition, Listing, Store } from "./types";
 export type { Condition, Listing, Store };
@@ -888,6 +888,16 @@ export const stores: Store[] = [
     sitemap: "https://nexttech.com.bd/product-sitemap.xml",
     path: "/product/",
     variants: wooVariants,
+    condition: "official",
+  }),
+  sitemapStore({
+    id: "themallbd",
+    name: "The Mall BD",
+    origin: "https://themallbd.com",
+    sample: "https://themallbd.com/product/ponds-hydra-miracle-hyaluronic-super-light-gel-moisturiser-49g",
+    sitemap: "https://themallbd.com/sitemap.xml",
+    path: "/product/",
+    variants: themallVariants,
     condition: "official",
   }),
   sitemapStore({

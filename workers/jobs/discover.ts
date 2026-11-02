@@ -236,17 +236,17 @@ export async function sellerStores(): Promise<{ store: Store; seller: SellerRef 
   });
 }
 
-// নতুন বা ভার্সন বদলানো পণ্য থাকলে (আর রাতের নির্ধারিত run না হলে) শুধু সেগুলো, নইলে পুরো ক্যাটালগ।
-// নতুন দোকান (এখনো একটাও দাম নেই): হাতে চালালেও পুরো ক্যাটালগ খোঁজা হয়, রাতের run এর অপেক্ষা লাগে না
+// শুধু নতুন বা ভার্সন বদলানো পণ্য কোন দোকানে আছে তা খোঁজা হয়; আগে বসে যাওয়া পণ্যের দাম `prices` job এ ওই লিংকেই হালনাগাদ হয়।
+// নতুন দোকান (এখনো একটাও দাম নেই): পুরো ক্যাটালগ খোঁজা হয়। খোঁজার মতো কিছু না থাকলে দোকানের তালিকা আনাই হয় না
 export async function discoverStore(store: Store, seller: SellerRef): Promise<StoreResult> {
   const result: StoreResult = { store: store.id, added: 0, review: 0, odd: 0, failed: 0, notes: [], finished: true, found: [] };
   const catalog = await loadCatalog();
   if (catalog.length === 0) return result;
-  const nightly = process.env.GITHUB_EVENT_NAME === "schedule";
   const pending = catalog.filter((p) => p.pending);
   const fresh = new Set(pending.map((p) => p.id));
   const { slots, urls: known } = await shopOffers(seller.id);
-  const targets = nightly || pending.length === 0 || known.size === 0 ? catalog : pending;
+  const targets = known.size === 0 ? catalog : pending;
+  if (targets.length === 0) return result;
   const wanted = new Set(targets.map((p) => p.id));
   const reviewed = await reviewedUrls(seller.id);
   const official = new Map(catalog.flatMap((p) => p.variants.map((v) => [v.id, v.officialPrice] as const)));
@@ -255,7 +255,7 @@ export async function discoverStore(store: Store, seller: SellerRef): Promise<St
   const before = new Set(slots);
 
   try {
-    const listings = (await storeListings(store, targets, catalog, nightly)).flatMap((listing) => {
+    const listings = (await storeListings(store, targets, catalog, true)).flatMap((listing) => {
       const products = reviewed.has(listing.url) ? [] : findProducts(listing.title, catalog);
       const done = known.has(listing.url) && products.every((p) => !fresh.has(p.id));
       return products.some((p) => wanted.has(p.id)) && !done ? [{ listing, products }] : [];

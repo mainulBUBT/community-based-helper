@@ -359,6 +359,15 @@ export function rioVariants(html: string): ShopVariant[] {
   );
 }
 
+// The Mall BD: JSON-LD এ দাম "0.00"; আসল দাম পাতার price ব্লকে (কাটা পুরনো দাম, তারপর বর্তমান), স্টক কার্ট বাটনের data-product_stock এ
+export function themallVariants(html: string): ShopVariant[] {
+  const block = /<div class="mt-2 price fs-5">([\s\S]*?)<\/div>/.exec(html)?.[1];
+  if (!block) return [];
+  const prices = [...block.matchAll(/<span[^>]*>([\s\S]*?)<\/span>/g)].map(([, text]) => stripTags(text));
+  const stock = /data-product_stock="(\d+)"/.exec(html)?.[1];
+  return variant([], prices.at(-1), prices.length > 1 ? prices[0] : null, stock === undefined ? null : Number(stock) > 0);
+}
+
 // Shopify: পাতার JSON-LD এ শুধু প্রথম ভার্সনের দাম; প্রতিটা ভার্সনের দাম (পয়সায়), স্টক, অপশন, নাম আর ছবি /products/<handle>.js এ।
 // না পেলে null — তখন আগের মতো পাতার JSON-LD। আটকে দিলে সেটা উপরে যায়, যাতে দোকান-আটকানোর নিয়ম চলে
 export async function shopifyProduct(url: string): Promise<ShopProduct | null> {

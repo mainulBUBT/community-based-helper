@@ -293,36 +293,6 @@ export const SPECIAL_STORES: Record<string, SpecialStoreConfig> = {
     },
   },
 
-  themallbd: {
-    id: "themallbd",
-    name: "The Mall BD",
-    hosts: ["themallbd.com", "www.themallbd.com"],
-    sampleUrl: "https://themallbd.com",
-    strategy: "direct_or_browser",
-    async extract(page, html) {
-      const ogPrice = metaContent(html, "product:price:amount");
-      const ogTitle = metaContent(html, "og:title");
-      const ogImage = metaContent(html, "og:image");
-
-      const dom = await page.evaluate(() => {
-        const title = document.querySelector("h1.product_title, h1")?.textContent?.trim() || null;
-        const price = document.querySelector(".price ins .woocommerce-Price-amount, .price .woocommerce-Price-amount, .price")?.textContent?.trim() || null;
-        const oldPrice = document.querySelector(".price del .woocommerce-Price-amount")?.textContent?.trim() || null;
-        const inStock = !document.querySelector(".out-of-stock");
-        return { title, price, oldPrice, inStock };
-      }).catch(() => null);
-
-      return {
-        title: dom?.title || ogTitle || null,
-        price: toTaka(dom?.price) || toTaka(ogPrice),
-        oldPrice: toTaka(dom?.oldPrice),
-        inStock: dom?.inStock ?? true,
-        image: ogImage || null,
-        via: "themallbd-woo",
-      };
-    },
-  },
-
   naturo: {
     id: "naturo",
     name: "Naturo BD",
@@ -621,7 +591,6 @@ const SPECIAL_SELLER_SEEDS = [
   { name: "Pickaboo", website: "https://www.pickaboo.com/", hosts: ["pickaboo.com"] },
   { name: "GadStyle", website: "https://www.gadstyle.com/", hosts: ["gadstyle.com"] },
   { name: "Rokomari", website: "https://www.rokomari.com/", hosts: ["rokomari.com"] },
-  { name: "The Mall BD", website: "https://themallbd.com/", hosts: ["themallbd.com"] },
   { name: "Naturo BD", website: "https://naturobd.com/", hosts: ["naturobd.com"] },
   { name: "Vertech", website: "https://www.vertech.com.bd/", hosts: ["vertech.com.bd"] },
   { name: "Rio International", website: "https://riointernational.com.bd/", hosts: ["riointernational.com.bd"] },
