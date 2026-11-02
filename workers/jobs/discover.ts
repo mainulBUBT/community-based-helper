@@ -255,7 +255,7 @@ export async function discoverStore(store: Store, seller: SellerRef): Promise<St
   const before = new Set(slots);
 
   try {
-    const listings = (await storeListings(store, targets, catalog, true)).flatMap((listing) => {
+    const listings = (await storeListings(store, targets, catalog, false)).flatMap((listing) => {
       const products = reviewed.has(listing.url) ? [] : findProducts(listing.title, catalog);
       const done = known.has(listing.url) && products.every((p) => !fresh.has(p.id));
       return products.some((p) => wanted.has(p.id)) && !done ? [{ listing, products }] : [];

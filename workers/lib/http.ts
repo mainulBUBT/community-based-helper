@@ -62,6 +62,7 @@ async function rawGet(url: URL, accept = "text/html,application/xhtml+xml,applic
     await res.body?.cancel();
     const next = new URL(location, target);
     if (!sameSite(url, next)) throw new Error(`${url.href} redirects off-site to ${next.host}`);
+    if (next.pathname.replace(/\/$/, "") === "/notfound") throw new NotFound(`${url.href} redirects to ${next.pathname}`);
     current = next;
   }
   throw new Error(`${url.href} redirects too many times`);
