@@ -4,14 +4,20 @@ import { sleep } from "./sleep";
 
 const retryable = (status: number) => status === 429 || status >= 500;
 
+// judge/extract এর মতো ছোট প্রশ্নের উত্তর এতেই আসে; ঝুলে থাকা সেটআপে পুরো run দেরি হয়ে যায়
+const timeoutMs = Number(process.env.LLM_TIMEOUT_MS ?? 20_000);
+
 // এক run এ সর্বোচ্চ এতবার AI ডাকা হয়; দোকান পাতা বদলালেও নিজের সাবস্ক্রিপশনের কোটা এক রাতে শেষ হয় না
 let calls = Number(process.env.LLM_CALL_LIMIT ?? 200);
 
+// এই run এ যেসব সেটআপ সাড়াই দেয়নি বা 5xx দিয়েছে — বাকি run এ আর ডাকা হয় না, সরাসরি পরের সেটআপে যাওয়া যায়
+const broken = new Set<string>();
+
 const configured = (models: LlmSettings[]) => models.filter((m) => m.baseUrl && m.model && splitKeys(m.apiKey).length);
 
-// পছন্দের ক্রমে, এই run এ যেগুলোর quota এখনো শেষ হয়নি; পরের run আবার প্রথমটা থেকে
+// পছন্দের ক্রমে, এই run এ যেগুলোর quota এখনো শেষ হয়নি আর ভেঙে পড়েনি; পরের run আবার প্রথমটা থেকে
 async function readyModels(): Promise<LlmSettings[]> {
-  return configured((await privateSettings()).models).filter((m) => liveKeys(m.apiKey, modelTarget(m)).length);
+  return configured((await privateSettings()).models).filter((m) => !broken.has(modelTarget(m)) && liveKeys(m.apiKey, modelTarget(m)).length);
 }
 
 // কেন AI ডাকা যাবে না: "off" কোনো সেটআপ নেই, "budget" এই run এর সীমা বা সব সেটআপের quota শেষ; ডাকা গেলে null
@@ -33,7 +39,7 @@ async function callModel(llm: LlmSettings, system: string, user: string): Promis
           method: "POST",
           headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
           body: JSON.stringify(body),
-          signal: AbortSignal.timeout(60_000),
+          signal: AbortSignal.timeout(timeoutMs),
         }),
       modelTarget(llm),
     );
@@ -49,7 +55,7 @@ async function callModel(llm: LlmSettings, system: string, user: string): Promis
   return res.status === 400 ? send(request) : res;
 }
 
-// প্রথম সেটআপ দিয়ে; তার quota শেষ হলে (429) তালিকার পরেরটা
+// প্রথম সেটআপ দিয়ে; quota শেষ (429), সাড়া না দেওয়া বা 5xx হলে তালিকার পরেরটা
 export async function askJson<T>(system: string, user: string): Promise<T> {
   const models = await readyModels();
   if (!models.length) throw new Error((await llmBlocker()) === "off" ? "LLM key is not set in private_settings" : "সব AI সেটআপের quota শেষ");
@@ -60,10 +66,15 @@ export async function askJson<T>(system: string, user: string): Promise<T> {
     try {
       res = await callModel(llm, system, user);
     } catch (error) {
-      if (error instanceof QuotaError && !last) continue;
-      throw error;
+      if (last) throw error;
+      if (!(error instanceof QuotaError)) broken.add(modelTarget(llm));
+      continue;
     }
     if (res.status === 429 && !last) continue;
+    if (res.status >= 500 && !last) {
+      broken.add(modelTarget(llm));
+      continue;
+    }
     if (!res.ok) throw new Error(`LLM HTTP ${res.status}`);
     const body = (await res.json()) as { choices?: { message?: { content?: string } }[] };
     const content = body.choices?.[0]?.message?.content ?? "";
