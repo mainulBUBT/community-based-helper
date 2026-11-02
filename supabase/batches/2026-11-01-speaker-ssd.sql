@@ -8,10 +8,16 @@
 -- official_price শুধু যেখানে দোকানের পেজ থেকে নিশ্চিত দাম পড়া গেছে; বাকিগুলো discover এর মিডিয়ান-সীমায় যাচাই হবে।
 -- insert-এর পরে discover_requested_at ডিফল্ট now() থাকায় পণ্যগুলো pending — worker এর discover দাম খোঁজবে।
 
-insert into sellers (name, kind, website, verified) values
-  ('UCC', 'website', 'https://www.ucc.com.bd/', true),
-  ('Skyland', 'website', 'https://www.skyland.com.bd/', true)
-on conflict do nothing;
+insert into sellers (name, kind, website, verified)
+select v.name, 'website', v.website, true
+from (values
+  ('UCC', 'https://www.ucc.com.bd/'),
+  ('Skyland', 'https://www.skyland.com.bd/')
+) as v (name, website)
+where not exists (
+  select 1 from sellers s
+  where regexp_replace(s.website, '^https?://(www\.)?|/.*$', '', 'g') = regexp_replace(v.website, '^https?://(www\.)?|/.*$', '', 'g')
+);
 
 insert into products (slug, name, brand, category, release_year, popularity) values
   ('jbl-go-4', 'Go 4', 'JBL', 'speaker', 2024, 75),

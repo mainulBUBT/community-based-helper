@@ -53,8 +53,8 @@ export const DEFAULT_CATEGORIES: CategoryInfo[] = [
   { slug: "earbuds", name: "ইয়ারবাড", nameEn: "Earbuds", icon: "headphones", axes: ["color"], parent: "audio", position: 7, active: true },
   { slug: "headphones", name: "হেডফোন", nameEn: "Headphones", icon: "headphones", axes: ["color"], parent: "audio", position: 8, active: true },
   { slug: "speaker", name: "ব্লুটুথ স্পিকার", nameEn: "Bluetooth Speakers", icon: "speaker", axes: [], parent: "audio", position: 15, active: true },
-  { slug: "ssd", name: "পোর্টেবল SSD", nameEn: "Portable SSDs", icon: "hard-drive", axes: ["capacity"], parent: "accessories", position: 16, active: true },
   { slug: "accessories", name: "এক্সেসরিজ", nameEn: "Accessories", icon: "usb", axes: ["wattage", "capacity"], position: 9, active: true },
   { slug: "charger", name: "চার্জার", nameEn: "Chargers", icon: "usb", axes: ["wattage"], parent: "accessories", position: 11, active: true },
+  { slug: "ssd", name: "পোর্টেবল SSD", nameEn: "Portable SSDs", icon: "hard-drive", axes: ["capacity"], parent: "accessories", position: 16, active: true },
   { slug: "skincare", name: "স্কিনকেয়ার", nameEn: "Skincare", icon: "sparkles", axes: ["capacity"], position: 13, active: true, warranty: false, conditions: ["official"], verifyNote: true },
 ];

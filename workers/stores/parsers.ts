@@ -332,7 +332,7 @@ export function hnstechVariants(html: string): ShopVariant[] {
   });
 }
 
-// Rio পাতায় window.productVariants এ সব ভার্সনের দাম-স্টক; ফর্মের রেডিওর label এ id→নাম (স্টোরেজ flexRadioStorage<id>, বাকি option_<ধরন>_<id>)।
+// Rio পাতায় window.productVariants এ সব ভার্সনের দাম-স্টক; ফর্মের রেডিওর label এ id→নাম (স্টোরেজ flexRadioStorage<id>, region exampleRegion<id>, বাকি option_<ধরন>_<id>)।
 // রং বাদ — তার label ফাঁকা (নাম tooltip এ), আর JSON-LD এ ভার্সন-রেঞ্জের সবচেয়ে কম দাম থাকে বলেই এই parser
 export function rioVariants(html: string): ShopVariant[] {
   const at = html.indexOf("window.productVariants");
@@ -340,7 +340,7 @@ export function rioVariants(html: string): ShopVariant[] {
   const list = open < 0 ? null : jsonAt(html, open);
   if (!Array.isArray(list)) return [];
   const label = new Map<string, string>();
-  for (const [, id, text] of html.matchAll(/<label[^>]*for="(option_[a-z]+_\d+|flexRadioStorage\d+)"[^>]*>([\s\S]*?)<\/label>/g)) {
+  for (const [, id, text] of html.matchAll(/<label[^>]*for="(option_[a-z]+_\d+|flexRadioStorage\d+|exampleRegion\d+)"[^>]*>([\s\S]*?)<\/label>/g)) {
     label.set(id, stripTags(text));
   }
   return list.filter(isObject).flatMap((v) =>
@@ -350,8 +350,9 @@ export function rioVariants(html: string): ShopVariant[] {
         ["Sim", label.get(`option_sim_${v.sim_id}`)],
         ["Size", label.get(`option_size_${v.size_id}`)],
         ["Unit", label.get(`option_unit_${v.unit_id}`)],
+        ["Region", label.get(`exampleRegion${v.region_id}`)],
       ],
-      v.discounted_price ?? v.price,
+      v.discounted_price || v.price,
       v.price,
       typeof v.stock === "number" ? v.stock > 0 : null,
     ),
