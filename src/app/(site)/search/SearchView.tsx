@@ -22,7 +22,7 @@ import { trackView } from "@/services/analytics";
 import { listSummaries } from "@/services/catalog";
 import { AXES, type Axis, type ProductSummary } from "@/types/catalog";
 import { byStock } from "@/utils/catalog";
-import { rankProducts, suggestQueries } from "@/utils/search";
+import { hasTypo, rankProducts, suggestQueries } from "@/utils/search";
 import { formatTaka } from "@/utils/format";
 import { categoryPath } from "@/utils/url";
 import { sortAxisValues } from "@/utils/variants";
@@ -159,8 +159,9 @@ export function SearchView({ category, brand, initial, extra, heading, crumb }: 
       values.map((v) => ({ label: `${t.axis[axis as Axis]}: ${v}`, patch: { [axis]: values.filter((x) => x !== v).join(",") || null } })),
     ),
   ];
-  // ফিল্টার ছাড়া খোঁজায় কিছুই না মিললে কাছাকাছি খোঁজার শব্দ দেখাই ("macbok" → "macbook")
-  const nearQueries = data && query && !loading && !active.length && results.length === 0 ? suggestQueries(summaries, (s) => s.product, query, categories) : [];
+  // বানান ভুল থাকলে ফল মিললেও কাছাকাছি খোঁজার শব্দ দেখাই ("maxbook" → "macbook"); ফিল্টার থাকলে নয়
+  const typo = Boolean(data && query && !loading && !active.length && hasTypo(summaries, (s) => s.product, query));
+  const nearQueries = typo ? suggestQueries(summaries, (s) => s.product, query, categories) : [];
   const clearAll = { brand: null, min: null, max: null, stock: null, ...Object.fromEntries(AXES.map((axis) => [axis, null])) };
   const categoryTitle = brand ?? (filters.category ? name(filters.category) : t.search.allProducts);
   const parent = brand ? undefined : find(find(filters.category)?.parent);
@@ -260,6 +261,22 @@ export function SearchView({ category, brand, initial, extra, heading, crumb }: 
           )}
 
           {approximate && results.length > 0 && <p className="mb-3 text-sm text-dim">{t.search.approximate(query)}</p>}
+
+          {results.length > 0 && nearQueries.length > 0 && (
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-sm text-dim">{t.search.didYouMean}</span>
+              {nearQueries.slice(0, 3).map((q) => (
+                <button
+                  key={q}
+                  type="button"
+                  onClick={() => update({ q })}
+                  className="flex h-8 items-center rounded-full bg-brand-soft px-3 text-sm font-semibold text-brand-text hover:bg-brand hover:text-brand-ink"
+                >
+                  {q}
+                </button>
+              ))}
+            </div>
+          )}
 
           {loading ? (
             <GridSkeleton />

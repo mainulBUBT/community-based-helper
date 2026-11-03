@@ -11,7 +11,7 @@ import { useI18n } from "@/hooks/useI18n";
 import { readRecent, rememberSearch } from "@/lib/recent-searches";
 import { listSummaries } from "@/services/catalog";
 import type { ProductSummary } from "@/types/catalog";
-import { rankProducts, suggestQueries } from "@/utils/search";
+import { hasTypo, rankProducts, suggestQueries } from "@/utils/search";
 import { formatTaka } from "@/utils/format";
 
 type Option = { kind: "product"; summary: ProductSummary } | { kind: "recent"; text: string } | { kind: "smart"; text: string };
@@ -41,10 +41,17 @@ export function SearchBox({ defaultValue = "", variant = "bar", examples, onSear
         .slice(0, 6)
         .map(({ item }) => ({ kind: "product", summary: item }))
     : [];
-  // কোনো পণ্য না মিললে কাছাকাছি খোঁজার স্মার্ট সাজেশন
+  // বানান ভুল থাকলে পণ্য মিললেও উপরে কাছাকাছি খোঁজার শব্দ ("maxbook" → "macbook")
+  const smart: Option[] =
+    query && products.length && catalog.length && hasTypo(catalog, (s) => s.product, query)
+      ? suggestQueries(catalog, (s) => s.product, query, categories)
+          .slice(0, 2)
+          .map((text) => ({ kind: "smart" as const, text }))
+      : [];
+  // কোনো পণ্য না মিললে শুধুই কাছাকাছি খোঁজার স্মার্ট সাজেশন
   const options: Option[] = query
     ? products.length
-      ? products
+      ? [...smart, ...products]
       : catalog.length
         ? suggestQueries(catalog, (s) => s.product, query, categories).map((text) => ({ kind: "smart", text }))
         : []

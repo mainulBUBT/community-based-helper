@@ -306,6 +306,19 @@ export function matchesQuery(product: Product, query: string, categories?: Categ
   return !words.length || scoreIndexed(indexProduct(null, product, categories), words) > 0;
 }
 
+// খোঁজার কোনো শব্দ ক্যাটালগ বা এলিয়াসের ভান্ডারে নেই — বানান ভুল হতে পারে ("maxbook")।
+// পণ্য মিললেও পরামর্শ দেখানোর সিদ্ধান্ত এটাই দেয়
+export function hasTypo<T>(items: T[], getProduct: (item: T) => Product, query: string): boolean {
+  const words = queryWords(query);
+  if (!tokenize(query).length || !words.length) return false;
+  const counts = new Map<string, number>();
+  const bump = (word: string) => counts.set(word, (counts.get(word) ?? 0) + 1);
+  for (const item of items) tokenize(`${getProduct(item).brand} ${getProduct(item).name}`).forEach(bump);
+  Object.values(ALIASES).forEach((en) => en.split(" ").forEach(bump));
+  STOP.forEach(bump);
+  return words.some((word) => !isNumeric(word) && !counts.has(word));
+}
+
 // খোঁজায় কিছু পেলে না কাছাকাছি খোঁজার শব্দ বানায় ("macbok air" → "macbook air")।
 // প্রতিটা শব্দ একটা করে বদলে দেখে ওই খোঁজায় ফল আছে কিনা; যেগুলোতে আছে সেগুলোই পরামর্শ
 export function suggestQueries<T>(items: T[], getProduct: (item: T) => Product, query: string, categories?: CategoryInfo[], limit = 4): string[] {
@@ -376,6 +389,7 @@ export function suggestQueries<T>(items: T[], getProduct: (item: T) => Product, 
   const show = (word: string) => (bangla ? (toBangla.get(word) ?? word) : (ALIASES[word] ?? word));
   for (const combo of combos) {
     const phrase = combo.split(" ").map(show).join(" ");
+    if (phrase === query.trim().toLowerCase()) continue; // নিজের লেখা শব্দই পরামর্শ হয় না
     add(phrase);
     // শেষ শব্দের জনপ্রিয় জোড়া ধরে ("macbook" → "macbook air", "macbook pro")
     const last = phrase.split(" ").at(-1)!;
