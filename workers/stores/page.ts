@@ -18,10 +18,11 @@ export function pageHtml(store: Store, url: string): Promise<string> {
   return store.rendered ? render(url, store.priceSelector) : getText(url);
 }
 
-export async function readPage(store: Store, url: string, useLlm = true): Promise<Page | null> {
-  const own = store.product ? await store.product(url) : null;
+export async function readPage(store: Store, url: string, useLlm = true, fetched?: string): Promise<Page | null> {
+  // বাইরে থেকে আনা HTML (Jina) হলে দোকানের নিজের fetch চলে না — সেটা তো আটকেই যায়
+  const own = fetched ? null : store.product ? await store.product(url) : null;
   if (own?.rows.length) return { offers: pageOffers(own.rows), title: own.title, image: own.image };
-  const html = await pageHtml(store, url);
+  const html = fetched ?? (await pageHtml(store, url));
   if (announcesNoPrice(html)) throw new NoPrice(`${url}: দোকান দাম দেখায় না (To be announced)`);
   const image = metaContent(html, "og:image");
   // নিজের parser বা JSON-LD না থাকলে পাতার ভেতরের JSON (Next.js ইত্যাদি), AI-এর আগে

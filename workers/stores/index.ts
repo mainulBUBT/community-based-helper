@@ -1,6 +1,7 @@
 import { StoreBlocked } from "../lib/errors";
 import { decode, stripTags } from "../lib/html";
 import { getJson, getText } from "../lib/http";
+import { pace } from "../lib/limiter";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
 import { appleGadgetsVariants, aurevaVariants, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, rioVariants, shopifyProduct, startechVariants, sumashVariants, themallVariants, wooVariants } from "./parsers";
@@ -937,6 +938,9 @@ export const stores: Store[] = [
     condition: "official",
   }),
 ];
+
+// ঘণ্টার সীমা কড়া দোকান: মিনিটে একটা অনুরোধেও এক রানে সীমা শেষ হয়ে যায়, তাই পড়া ঘণ্টা জুড়ে ছড়ানো
+for (const host of ["ohsogo.com", "istockbd.com", "custommacbd.com", "sneakerzonebd.com", "splayd.com.bd", "ragenbd.com"]) pace(host, 60_000);
 
 // তালিকায় না থাকা দোকানের পুরনো দামও বাদ যায় না: JSON-LD/itemprop/og দিয়ে চেষ্টা
 function genericStore(url: string): Store {

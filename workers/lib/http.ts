@@ -9,7 +9,7 @@ import { isAllowed, parseRobots } from "./robots";
 const robotsCache = new Map<string, Promise<ReturnType<typeof parseRobots>>>();
 const blocked = new Map<string, StoreBlocked>();
 
-const CHALLENGE = /cf-chl|challenge-platform|just a moment\.\.\.|attention required! \| cloudflare|cf-error-details/i;
+export const CHALLENGE = /cf-chl|challenge-platform|just a moment\.\.\.|attention required! \| cloudflare|cf-error-details/i;
 
 // worker শুধু খোলা ইন্টারনেটের দোকান পড়ে; লোকাল নেটওয়ার্ক, রাউটার বা cloud metadata এর ঠিকানা নয়
 const PRIVATE = new BlockList();

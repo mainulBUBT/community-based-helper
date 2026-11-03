@@ -1,5 +1,6 @@
 import { all, db } from "../lib/db";
 import { aiRead, aiReadNote } from "../lib/ai-page";
+import { jinaRead } from "../lib/jina";
 import { Disallowed, NotFound, StoreBlocked, message } from "../lib/errors";
 import { groupBy, pool } from "../lib/pool";
 import { candidates, single } from "../lib/variants";
@@ -34,6 +35,7 @@ interface Tally {
   failed: number;
   blocked: number;
   ai: number;
+  jina: number;
   booking: number;
 }
 
@@ -81,7 +83,7 @@ export async function refreshPrices(): Promise<string> {
       .range(from, to),
   );
   const rows = offers.filter((row) => row.source === "site" || row.sellers?.kind === "website");
-  const tally: Tally = { checked: 0, changed: 0, anomaly: 0, unmatched: 0, failed: 0, blocked: 0, ai: 0, booking: 0 };
+  const tally: Tally = { checked: 0, changed: 0, anomaly: 0, unmatched: 0, failed: 0, blocked: 0, ai: 0, jina: 0, booking: 0 };
   const outOfTime = deadline(25);
   const errors: string[] = [];
   const unmatched: string[] = [];
@@ -120,17 +122,21 @@ export async function refreshPrices(): Promise<string> {
     ),
   );
 
-  // দোকান GitHub-এর IP আটকালে Gemini-র url_context (Google-এর সার্ভার) দিয়ে পড়ার চেষ্টা, বাকি সব শেষে
-  // একটা একটা করে, যাতে AI-র মিনিটের সীমায় না পড়ে। না পড়া গেলে আগের মতো বাদ; সময় ফুরালে পরের বার।
-  // পড়া ফলও একই যাচাই আর সীমার ভেতর দিয়ে যায়।
+  // দোকান GitHub-এর IP আটকালে ফলব্যাক, বাকি সব শেষে একটা একটা করে, যাতে প্রতিটার সীমায় না পড়ে:
+  // আগে Jina Reader (ওদের সার্ভারের HTML-এ আমাদের নিজের parser), তারপর Gemini-র url_context
+  // (Google-এর সার্ভার)। না পড়া গেলে আগের মতো বাদ; সময় ফুরালে পরের বার। পড়া ফলও একই যাচাই আর
+  // সীমার ভেতর দিয়ে যায়।
   for (const group of blocked) {
     if (outOfTime()) break;
-    const page = await aiRead(group[0].url);
+    let page = await jinaRead(storeFor(group[0].url), group[0].url);
+    const viaJina = !!page;
+    if (page) tally.jina += group.length;
+    else page = await aiRead(group[0].url);
     if (!page) {
       tally.blocked += group.length;
       continue;
     }
-    tally.ai += group.length;
+    if (!viaJina) tally.ai += group.length;
     try {
       await applyPage(page, group, storeFor(group[0].url).name, tally, unmatched);
     } catch (error) {
@@ -150,6 +156,7 @@ export async function refreshPrices(): Promise<string> {
     tally.unmatched ? `${count(tally.unmatched, "ভার্সন পাতায় মেলেনি")}: ${unmatched.slice(0, 5).join(", ")}` : "",
     tally.failed ? `${count(tally.failed, "ব্যর্থ")}: ${errors.slice(0, 3).join("; ")}` : "",
     tally.blocked ? `${count(tally.blocked, "দাম")} দোকান আটকে রাখায় বাদ${aiReadNote()}` : "",
+    tally.jina ? `${count(tally.jina, "দাম")} Jina-র সার্ভার দিয়ে পড়া পাতা থেকে` : "",
     tally.ai ? `${count(tally.ai, "দাম")} AI পড়া পাতা থেকে` : "",
     skipped > 0 ? `${count(skipped, "সময়ে কুলায়নি, পরের বার")}` : "",
     applied ? `${count(applied, "অনুমোদিত")} বসানো হয়েছে` : "",

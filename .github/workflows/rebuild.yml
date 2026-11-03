@@ -4,7 +4,8 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "47 */6 * * *"
+    # prices (৪ ঘণ্টা পরপর :17) আর discover (:35) শেষ হওয়ার জায়গা রেখে — পরের ঘণ্টার ২৫ মিনিটে
+    - cron: "25 1,5,9,13,17,21 * * *"
   workflow_dispatch:
 
 permissions:

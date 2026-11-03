@@ -2,7 +2,8 @@ name: prices
 
 on:
   schedule:
-    - cron: "17 */6 * * *"
+    # দিনে ৬ বার (UTC-তে ০, ৪, ৮, ১২, ১৬, ২০টার ১৭ মিনিটে = বাংলাদেশে ভোর ৬টা থেকে প্রতি ৪ ঘণ্টায়)
+    - cron: "17 0,4,8,12,16,20 * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,7 +16,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

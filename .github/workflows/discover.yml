@@ -2,7 +2,8 @@ name: discover
 
 on:
   schedule:
-    - cron: "0 20 * * *"
+    # দিনে ৬ বার, prices শুরুর ১৮ মিনিট পরে; খোঁজার মতো নতুন কিছু না থাকলে plan-ই ফেরত আসে
+    - cron: "35 0,4,8,12,16,20 * * *"
   workflow_dispatch:
 
 permissions:

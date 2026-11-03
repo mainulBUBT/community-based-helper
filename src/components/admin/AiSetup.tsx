@@ -16,6 +16,7 @@ const PRESETS = [
   { name: "Groq", baseUrl: "https://api.groq.com/openai/v1", model: "llama-3.3-70b-versatile" },
   { name: "OpenRouter", baseUrl: "https://openrouter.ai/api/v1", model: "meta-llama/llama-3.3-70b-instruct:free" },
   { name: "Cloudflare", baseUrl: "https://api.cloudflare.com/client/v4/accounts/ACCOUNT_ID/ai/v1", model: "@cf/meta/llama-3.1-8b-instruct" },
+  { name: "Z.ai", baseUrl: "https://api.z.ai/api/paas/v4", model: "glm-4.5" },
 ];
 
 // ব্রাউজার/পাসওয়ার্ড ম্যানেজার এই ফর্মকে লগইন ভেবে model এ ইমেইল আর key তে পাসওয়ার্ড বসিয়ে দেয়
@@ -31,7 +32,7 @@ const TEST_TONE = {
 
 const iconButton = "flex size-9 items-center justify-center rounded-lg text-dim hover:bg-surface-2 hover:text-ink disabled:opacity-30";
 
-const providerName = (baseUrl: string) => PRESETS.find((p) => providerKey(p.baseUrl) === providerKey(baseUrl))?.name ?? baseUrl.replace(/^https?:\/\//, "").split("/")[0];
+const providerName = (baseUrl: string) => PRESETS.find((p) => providerKey(p.baseUrl) === providerKey(baseUrl))?.name ?? baseUrl.replace(/^https?:\/\//, "").replace(/\/+$/, "");
 
 function Step({ n, title, children }: { n: number; title: string; children: ReactNode }) {
   return (
