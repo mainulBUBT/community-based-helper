@@ -140,12 +140,24 @@ function otherModel(title: string, ordered: string[], required: string[], produc
 }
 
 // ইঞ্চি আর বন্ধনীর চিপ নামের অংশ হলেও দোকানের লিংকে প্রায়ই থাকে না, তাই এগুলো বাধ্যতামূলক নয়, শুধু অমিল হলে বাদ
+// পণ্যের নাম থেকে প্রয়োজনীয় শব্দ আর জোড়া শব্দ একবারই বের হয়; প্রতিটা লিস্টিংয়ে আবার নয়
+const nameKeys = new WeakMap<CatalogProduct, { required: string[]; glued: string[][] }>();
+
+function nameKey(product: CatalogProduct) {
+  let key = nameKeys.get(product);
+  if (!key) {
+    const name = product.name.replace(INCH, " ").replace(/\([^)]*\)/g, " ");
+    key = { required: tokens(name), glued: glued(name) };
+    nameKeys.set(product, key);
+  }
+  return key;
+}
+
 function productFits(title: string, ordered: string[], product: CatalogProduct, rivals: Set<string>): boolean {
   const listing = new Set(ordered);
-  const name = product.name.replace(INCH, " ").replace(/\([^)]*\)/g, " ");
-  const required = tokens(name);
+  const { required, glued: gluedParts } = nameKey(product);
   if (!required.every((t) => listing.has(t))) return false;
-  if (!glued(name).every((parts) => adjacent(ordered, parts))) return false;
+  if (!gluedParts.every((parts) => adjacent(ordered, parts))) return false;
   if (otherModel(title, ordered, required, product)) return false;
   const own = brandTokens(product.brand);
   const hasBrand = own.length > 0 && own.some((t) => listing.has(t));
@@ -165,15 +177,28 @@ function productFits(title: string, ordered: string[], product: CatalogProduct, 
 const GADGET_CATEGORIES = new Set(["charger", "fan"]);
 
 // লিস্টিংয়ে কোনো ভার্সনের part number থাকলে শুধু সেই পণ্য; অন্য পণ্যের নাম মিললেও নয়
+// প্রতি ব্র্যান্ডের "প্রতিদ্বন্দ্বী ব্র্যান্ডের শব্দ" ক্যাটালগ পিছু একবার; আগে প্রতি লিস্টিংয়ে প্রতি পণ্যে নতুন করে বানানো হতো
+const rivalCache = new WeakMap<object, { size: number; own: Map<string, string[]>; rivals: Map<string, Set<string>> }>();
+
+function rivalsOf<T extends CatalogProduct>(catalog: T[]) {
+  let cached = rivalCache.get(catalog);
+  if (!cached || cached.size !== catalog.length) {
+    const own = new Map(catalog.map((p) => [p.brand, brandTokens(p.brand)]));
+    const all = [...own.values()].flat();
+    const rivals = new Map([...own].map(([brand, tokensOfBrand]) => [brand, new Set(all.filter((t) => !tokensOfBrand.includes(t)))]));
+    cached = { size: catalog.length, own, rivals };
+    rivalCache.set(catalog, cached);
+  }
+  return cached;
+}
+
 export function findProducts<T extends CatalogProduct>(title: string, catalog: T[]): T[] {
   const accessory = isAccessory(title);
   const listing = tokens(title);
-  const brands = new Map(catalog.map((p) => [p.brand, brandTokens(p.brand)]));
+  const { rivals } = rivalsOf(catalog);
   const fit = catalog.filter((p) => {
     if (accessory && !GADGET_CATEGORIES.has(p.category ?? "")) return false;
-    const own = brands.get(p.brand) ?? [];
-    const rivals = new Set([...brands.values()].flat().filter((t) => !own.includes(t)));
-    return productFits(title, listing, p, rivals);
+    return productFits(title, listing, p, rivals.get(p.brand) ?? new Set());
   });
   const coded = catalog.filter((p) => p.variants.some((v) => hasCode(title, v.sku)));
   if (coded.length) return fit.filter((p) => coded.includes(p));
