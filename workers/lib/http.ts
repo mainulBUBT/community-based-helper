@@ -152,6 +152,8 @@ export async function getText(target: string | URL): Promise<string> {
   const body = await readCapped(res);
   checkStatus(url.host, res.status, body);
   if (res.status === 404 || res.status === 410) throw new NotFound(`${url.href} ${res.status}`);
+  // দোকান "আজ আর ডাকবেন না" বললে (503 + Retry-After ১ ঘণ্টার বেশি) সেটা মানা: ব্যর্থতা নয়, দোকানের আটকানো
+  if (res.status === 503 && Number(res.headers.get("retry-after")) >= 3600) throw new Disallowed(`${url.href} HTTP 503, Retry-After ${res.headers.get("retry-after")}s`);
   if (!res.ok) throw new Error(`${url.href} HTTP ${res.status}`);
   return body;
 }
