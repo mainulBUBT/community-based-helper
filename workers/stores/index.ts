@@ -1,7 +1,8 @@
 import { StoreBlocked } from "../lib/errors";
-import { decode, stripTags } from "../lib/html";
+import { decode, stripTags, title } from "../lib/html";
 import { getJson, getText } from "../lib/http";
 import { pace } from "../lib/limiter";
+import { pool } from "../lib/pool";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
 import { appleGadgetsVariants, aurevaVariants, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, rioVariants, shopifyProduct, startechVariants, sumashVariants, themallVariants, wooVariants } from "./parsers";
@@ -314,6 +315,33 @@ const hnstech: Store = {
       }
     }
     return all;
+  },
+};
+
+// ERRUMBD (Next.js): পণ্যের URL এ নাম নেই (/product/<২৪ অক্ষরের আইডি>), তাই নাম প্রতিটা পাতার <title> থেকে ("... | ERRUM" বাদ);
+// প্রতিলিপির দোকান (শিরোনামে "(1:1)")। দাম আর স্টক পাতার JSON-LD তে। প্রথমবার ~১৪০০ পাতা, তারপর জমা তালিকা
+const ERRUM = "https://www.errumbd.com";
+
+const errum: Store = {
+  id: "errumbd",
+  name: "ERRUMBD",
+  origin: ERRUM,
+  rendered: false,
+  condition: "replica",
+  sample: `${ERRUM}/product/6a4e83f15597cfcb67397524`,
+  promoUrl: null,
+  async discover() {
+    const urls = (await sitemapUrls(`${ERRUM}/sitemap.xml`)).filter((url) => /\/product\/[a-f0-9]{24}$/.test(url));
+    const found: Listing[] = [];
+    await pool(urls, 2, async (url) => {
+      const html = await getText(url).catch((error) => {
+        if (error instanceof StoreBlocked) throw error;
+        return "";
+      });
+      const name = title(html)?.replace(/\s*\|\s*ERRUM.*$/i, "").trim();
+      if (name) found.push({ title: name, url, price: null, oldPrice: null });
+    });
+    return found;
   },
 };
 
@@ -659,6 +687,7 @@ export const stores: Store[] = [
     condition: "official",
   }),
   klassy,
+  errum,
   // ল্যাপটপ: WooCommerce; বেশিরভাগ মডেল কোড বিদেশি বাজারের (fb3231nw, es1013dx), ওয়ারেন্টি দোকানের — তাই আনঅফিসিয়াল
   sitemapStore({
     id: "techmarvels",
