@@ -65,7 +65,7 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
           <nav aria-label={t.footer.explore} className="flex flex-col gap-2">
             <span className="mb-1 text-sm font-bold">{t.footer.explore}</span>
             <Link href={`${prefix}/search/?sort=drop`} className={link}>
-              {t.home.drops}
+              {t.nav.drops}
             </Link>
             <Link href={`${prefix}/sellers/`} className={link}>
               {t.nav.sellers}

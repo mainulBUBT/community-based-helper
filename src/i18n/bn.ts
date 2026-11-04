@@ -1,7 +1,7 @@
 import { withEr } from "@/utils/bangla-name";
 
 export const bn = {
-  nav: { home: "হোম", search: "খুঁজুন", sellers: "বিক্রেতা", saved: "সেভ করা", menu: "প্রধান মেনু", categories: "ক্যাটাগরি", brands: "ব্র্যান্ড", drops: "দাম কমেছে" },
+  nav: { home: "হোম", search: "খুঁজুন", sellers: "বিক্রেতা", saved: "সেভ করা", menu: "প্রধান মেনু", categories: "ক্যাটাগরি", brands: "ব্র্যান্ড", drops: "বেশি ছাড়" },
   megaMenu: {
     subcategories: "ভাগ",
     brands: "ব্র্যান্ড",
@@ -61,8 +61,7 @@ export const bn = {
     heroEyebrow: "বিশ্বস্ত সব দোকানের দাম, এক জায়গায়",
     heroSub: "দাম তুলনা করুন, দোকান বদলান, আর কেনার আগেই জেনে নিন আসল সেভিংস কত।",
     heroPrimary: "দাম তুলনা করুন",
-    heroSecondary: "আজকের সেরা ডিল",
-    heroNote: "আমরা কিছু বিক্রি করি না, কেনা হয় সরাসরি দোকান থেকে।",
+    heroSecondary: "বেশি ছাড়ের পণ্য",
     compareEyebrow: "লাইভ তুলনা",
     compareSeeAll: "সব দাম",
     compareFound: (n: string) => `${n}টা দোকানে পাওয়া যায়`,
@@ -72,8 +71,8 @@ export const bn = {
     allCategories: "সব",
     models: (n: string) => `${n}টা মডেল`,
     categoryRowSub: "বাংলাদেশের দোকানের দাম",
-    drops: "সম্প্রতি দাম কমেছে",
-    dropsSub: "যেগুলোর দাম সবচেয়ে বেশি কমেছে, সেগুলো আগে",
+    drops: "গত ৭ দিনে যেগুলোর দাম কমল",
+    dropsSub: "বাজারের সবচেয়ে কম দামটাই কমেছে, বেশি কমাগুলো আগে",
     droppedWhen: (days: number, n: string) => (days === 0 ? "আজ" : days === 1 ? "গতকাল" : `${n} দিন আগে`),
     dropsCount: (n: string) => `${n}টা পণ্যের দাম কমেছে`,
     brands: "ব্র্যান্ড",
@@ -82,7 +81,7 @@ export const bn = {
     reportTitle: "কোথাও কম দামে দেখেছেন?",
     reportSub: "অন্য দোকানে কম দাম দেখে থাকলে জানান, আমরা দামটা হালনাগাদ করব।",
     reportCta: "দাম জানান",
-    dropsEyebrow: "গত ৭ দিন",
+    dropsEyebrow: "দাম কমার খবর",
     slidePrev: "আগের পণ্যগুলো",
     slideNext: "পরের পণ্যগুলো",
     categoryEyebrow: "ক্যাটাগরি ধরে",
@@ -141,7 +140,7 @@ export const bn = {
     between: (a: string, b: string) => `${a} থেকে ${b}`,
     above: (n: string) => `${n} এর বেশি`,
     inStock: "স্টকে আছে",
-    sort: { popular: "জনপ্রিয়", cheap: "কম দাম আগে", expensive: "বেশি দাম আগে", drop: "বেশি কমেছে" },
+    sort: { popular: "জনপ্রিয়", cheap: "কম দাম আগে", expensive: "বেশি দাম আগে", drop: "বেশি ছাড় আগে" },
     count: (n: string) => `${n}টা মডেল পাওয়া গেছে`,
     notFound: (q: string) => `"${q}" নামে কিছু পাওয়া যায়নি`,
     didYouMean: "স্মার্ট সাজেশন:",

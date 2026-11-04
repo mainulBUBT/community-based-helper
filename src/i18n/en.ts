@@ -3,7 +3,7 @@ import type { Messages } from "./bn";
 export const plural = (n: string, word: string) => `${n} ${word}${n === "1" ? "" : "s"}`;
 
 export const en: Messages = {
-  nav: { home: "Home", search: "Search", sellers: "Sellers", saved: "Saved", menu: "Main menu", categories: "Categories", brands: "Brands", drops: "Price drops" },
+  nav: { home: "Home", search: "Search", sellers: "Sellers", saved: "Saved", menu: "Main menu", categories: "Categories", brands: "Brands", drops: "Biggest discounts" },
   megaMenu: {
     subcategories: "Types",
     brands: "Brands",
@@ -63,8 +63,7 @@ export const en: Messages = {
     heroEyebrow: "Prices from trusted shops in Bangladesh, in one place",
     heroSub: "Compare prices, switch shops, and know your real savings before you buy.",
     heroPrimary: "Compare prices",
-    heroSecondary: "Today's best deals",
-    heroNote: "We don't sell anything; you buy directly from the shop.",
+    heroSecondary: "Biggest discounts",
     compareEyebrow: "Live comparison",
     compareSeeAll: "All prices",
     compareFound: (n) => `found at ${plural(n, "shop")}`,
@@ -74,8 +73,8 @@ export const en: Messages = {
     allCategories: "All",
     models: (n) => plural(n, "model"),
     categoryRowSub: "Prices from shops in Bangladesh",
-    drops: "Recent price drops",
-    dropsSub: "Biggest price cuts first",
+    drops: "Price drops in the last 7 days",
+    dropsSub: "The lowest available price fell; biggest cuts first",
     droppedWhen: (days, n) => (days === 0 ? "Today" : days === 1 ? "Yesterday" : `${n} days ago`),
     dropsCount: (n: string) => `${plural(n, "product")} have come down in price`,
     brands: "Brands",
@@ -84,7 +83,7 @@ export const en: Messages = {
     reportTitle: "Seen it cheaper somewhere?",
     reportSub: "Found a lower price at another shop? Tell us and we'll update it.",
     reportCta: "Report a price",
-    dropsEyebrow: "Last 7 days",
+    dropsEyebrow: "Price drops",
     slidePrev: "Previous products",
     slideNext: "Next products",
     categoryEyebrow: "Browse by category",
@@ -143,7 +142,7 @@ export const en: Messages = {
     between: (a, b) => `${a} to ${b}`,
     above: (n) => `Over ${n}`,
     inStock: "In stock",
-    sort: { popular: "Popular", cheap: "Lowest price", expensive: "Highest price", drop: "Biggest drop" },
+    sort: { popular: "Popular", cheap: "Lowest price", expensive: "Highest price", drop: "Biggest discount" },
     count: (n) => `${plural(n, "model")} found`,
     notFound: (q) => `Nothing found for "${q}"`,
     didYouMean: "Smart suggestions:",

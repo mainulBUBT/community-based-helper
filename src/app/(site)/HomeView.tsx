@@ -75,7 +75,6 @@ export function HomeView({ initial }: { initial: HomeData }) {
                 {t.home.heroSecondary}
               </Link>
             </div>
-            <p className="text-xs text-white/70">{t.home.heroNote}</p>
           </div>
           <div className="relative flex flex-wrap gap-2">
             {settings.quickSearches.map((q, i) => (

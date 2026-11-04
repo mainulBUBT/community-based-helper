@@ -141,7 +141,7 @@ function CategoryStrip() {
           href={`${prefix}/search/?sort=drop`}
           className="flex h-8 shrink-0 items-center rounded-md px-3 text-sm font-semibold hover:bg-white/10"
         >
-          {t.home.drops}
+          {t.nav.drops}
         </Link>
         <Link
           href={`${prefix}/sellers/`}
