@@ -175,6 +175,8 @@ function productFits(title: string, ordered: string[], product: CatalogProduct, 
 
 // চার্জার-ফ্যান এখন নিজেরাই ক্যাটাগরি — ওদের লিস্টিং accessory-ফাঁদ নয়
 const GADGET_CATEGORIES = new Set(["charger", "fan"]);
+// এদের লিস্টিংয়ে "for", "skin", "used" সাধারণ শব্দ ("for Oily Skin"); ফোন-কেস ফাঁদ এখানে খাটে না
+const NON_GADGET_CATEGORIES = new Set(["skincare", "makeup", "baby-care", "diapers", "honey", "dates", "date-jaggery"]);
 
 // লিস্টিংয়ে কোনো ভার্সনের part number থাকলে শুধু সেই পণ্য; অন্য পণ্যের নাম মিললেও নয়
 // প্রতি ব্র্যান্ডের "প্রতিদ্বন্দ্বী ব্র্যান্ডের শব্দ" ক্যাটালগ পিছু একবার; আগে প্রতি লিস্টিংয়ে প্রতি পণ্যে নতুন করে বানানো হতো
@@ -197,7 +199,7 @@ export function findProducts<T extends CatalogProduct>(title: string, catalog: T
   const listing = tokens(title);
   const { rivals } = rivalsOf(catalog);
   const fit = catalog.filter((p) => {
-    if (accessory && !GADGET_CATEGORIES.has(p.category ?? "")) return false;
+    if (accessory && !GADGET_CATEGORIES.has(p.category ?? "") && !NON_GADGET_CATEGORIES.has(p.category ?? "")) return false;
     return productFits(title, listing, p, rivals.get(p.brand) ?? new Set());
   });
   const coded = catalog.filter((p) => p.variants.some((v) => hasCode(title, v.sku)));
