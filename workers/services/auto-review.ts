@@ -191,13 +191,17 @@ export async function compareWithHumans(): Promise<string[]> {
   return lines;
 }
 
-export async function autoReview(): Promise<{ approved: number; rejected: number; left: number; errors: string[] }> {
+export async function autoReview(stop: () => boolean = () => false): Promise<{ approved: number; rejected: number; left: number; errors: string[] }> {
   const result = { approved: 0, rejected: 0, left: 0, errors: [] as string[] };
   if (process.env.AUTO_REVIEW === "off") return result;
   const items = (await must(
     db().from("review_queue").select("id, kind, payload").eq("status", "pending").in("kind", ["match", "anomaly"]).order("created_at").limit(MAX_ITEMS),
   )) as Item[];
   for (const item of items) {
+    if (stop()) {
+      result.left++;
+      continue;
+    }
     try {
       const decision = item.kind === "anomaly" ? await decideAnomaly(item) : await decideMatch(item);
       if (!decision) {

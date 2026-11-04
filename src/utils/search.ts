@@ -233,11 +233,13 @@ export interface Indexed<T> {
   nameLength: number;
 }
 
+const categoryTerms = (category: CategoryInfo) => [...tokenize(category.nameEn), ...tokenize(category.name).flatMap((w) => (ALIASES[w] ?? w).split(" "))];
+
 export function indexProduct<T>(item: T, product: Product, categories?: CategoryInfo[]): Indexed<T> {
   const category = categories?.find((c) => c.slug === product.category);
   const parent = category?.parent ? categories?.find((c) => c.slug === category.parent) : undefined;
   const title = tokenize(`${product.brand} ${product.name}`);
-  const categoryWords = [category, parent].filter(Boolean).flatMap((c) => [...tokenize(c!.nameEn), ...tokenize(c!.name).flatMap((w) => (ALIASES[w] ?? w).split(" "))]);
+  const categoryWords = [category, parent].filter(Boolean).flatMap((c) => categoryTerms(c!));
   return {
     item,
     fields: [
@@ -306,17 +308,18 @@ export function matchesQuery(product: Product, query: string, categories?: Categ
   return !words.length || scoreIndexed(indexProduct(null, product, categories), words) > 0;
 }
 
-// খোঁজার কোনো শব্দ ক্যাটালগ বা এলিয়াসের ভান্ডারে নেই — বানান ভুল হতে পারে ("maxbook")।
+// খোঁজার কোনো শব্দ ক্যাটালগ, ক্যাটাগরি বা এলিয়াসের ভান্ডারে নেই — বানান ভুল হতে পারে ("maxbook")।
 // পণ্য মিললেও পরামর্শ দেখানোর সিদ্ধান্ত এটাই দেয়
-export function hasTypo<T>(items: T[], getProduct: (item: T) => Product, query: string): boolean {
+export function hasTypo<T>(items: T[], getProduct: (item: T) => Product, query: string, categories?: CategoryInfo[]): boolean {
   const words = queryWords(query);
   if (!tokenize(query).length || !words.length) return false;
   const counts = new Map<string, number>();
   const bump = (word: string) => counts.set(word, (counts.get(word) ?? 0) + 1);
   for (const item of items) tokenize(`${getProduct(item).brand} ${getProduct(item).name}`).forEach(bump);
+  categories?.flatMap(categoryTerms).forEach(bump);
   Object.values(ALIASES).forEach((en) => en.split(" ").forEach(bump));
   STOP.forEach(bump);
-  return words.some((word) => !isNumeric(word) && !counts.has(word));
+  return tokenize(query).some((raw) => !counts.has(raw) && queryWords(raw).some((word) => !isNumeric(word) && !counts.has(word)));
 }
 
 // খোঁজায় কিছু পেলে না কাছাকাছি খোঁজার শব্দ বানায় ("macbok air" → "macbook air")।

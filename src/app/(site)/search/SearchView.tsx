@@ -160,7 +160,7 @@ export function SearchView({ category, brand, initial, extra, heading, crumb }: 
     ),
   ];
   // বানান ভুল থাকলে ফল মিললেও কাছাকাছি খোঁজার শব্দ দেখাই ("maxbook" → "macbook"); ফিল্টার থাকলে নয়
-  const typo = Boolean(data && query && !loading && !active.length && hasTypo(summaries, (s) => s.product, query));
+  const typo = Boolean(data && query && !loading && !active.length && hasTypo(summaries, (s) => s.product, query, categories));
   const nearQueries = typo ? suggestQueries(summaries, (s) => s.product, query, categories) : [];
   const clearAll = { brand: null, min: null, max: null, stock: null, ...Object.fromEntries(AXES.map((axis) => [axis, null])) };
   const categoryTitle = brand ?? (filters.category ? name(filters.category) : t.search.allProducts);

@@ -43,7 +43,7 @@ export function SearchBox({ defaultValue = "", variant = "bar", examples, onSear
     : [];
   // বানান ভুল থাকলে পণ্য মিললেও উপরে কাছাকাছি খোঁজার শব্দ ("maxbook" → "macbook")
   const smart: Option[] =
-    query && products.length && catalog.length && hasTypo(catalog, (s) => s.product, query)
+    query && products.length && catalog.length && hasTypo(catalog, (s) => s.product, query, categories)
       ? suggestQueries(catalog, (s) => s.product, query, categories)
           .slice(0, 2)
           .map((text) => ({ kind: "smart" as const, text }))

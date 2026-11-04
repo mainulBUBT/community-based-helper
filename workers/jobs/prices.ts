@@ -39,6 +39,12 @@ interface Tally {
   booking: number;
 }
 
+// run শুরু থেকে গোনা, workflow timeout ৪৫ মিনিটের ভেতরে। ধীর দোকান (`pace`) নিজের পুরো তালিকা শেষ করতে পারে না,
+// তাই ধাপ ভাগ করা না থাকলে ফলব্যাক আর AI যাচাই কোনোদিন সময় পায় না
+const DIRECT_MINUTES = 15;
+const FALLBACK_MINUTES = 32;
+const TOTAL_MINUTES = 38;
+
 const label = (row: OfferRow) => `${row.variants?.products?.name ?? ""} ${row.variants?.label ?? ""}`.trim();
 
 // এক পাতার সব ভার্সনের দাম বসানো; অন্তত একটা মিললে তবেই পাতার ছবি নেওয়া
@@ -88,7 +94,9 @@ export async function refreshPrices(): Promise<string> {
     .filter((row) => row.source === "site" || row.sellers?.kind === "website")
     .filter((row) => !only?.length || only.includes(new URL(row.url).host.replace(/^www\./, "")));
   const tally: Tally = { checked: 0, changed: 0, anomaly: 0, unmatched: 0, failed: 0, blocked: 0, ai: 0, jina: 0, booking: 0 };
-  const outOfTime = deadline(25);
+  const directDone = deadline(DIRECT_MINUTES);
+  const fallbackDone = deadline(FALLBACK_MINUTES);
+  const outOfTime = deadline(TOTAL_MINUTES);
   const errors: string[] = [];
   const unmatched: string[] = [];
   const blocked: OfferRow[][] = [];
@@ -121,7 +129,7 @@ export async function refreshPrices(): Promise<string> {
             }
           }
         },
-        outOfTime,
+        directDone,
       ),
     ),
   );
@@ -131,7 +139,7 @@ export async function refreshPrices(): Promise<string> {
   // (Google-এর সার্ভার)। না পড়া গেলে আগের মতো বাদ; সময় ফুরালে পরের বার। পড়া ফলও একই যাচাই আর
   // সীমার ভেতর দিয়ে যায়।
   for (const group of blocked) {
-    if (outOfTime()) break;
+    if (fallbackDone()) break;
     let page = await jinaRead(storeFor(group[0].url), group[0].url);
     const viaJina = !!page;
     if (page) tally.jina += group.length;
@@ -151,7 +159,7 @@ export async function refreshPrices(): Promise<string> {
 
   if (rows.length > 0 && tally.checked === 0) throw new Error(`একটা দামও আনা যায়নি${blockedNote()}; ${errors.slice(0, 3).join("; ")}`);
   // সবার শেষে, তাই আজকের অনুমোদন বসে পরের run এ; মাঝে অ্যাডমিন ফিরিয়ে নিতে পারেন
-  const reviewed = outOfTime() ? null : await autoReview().catch((error) => ({ approved: 0, rejected: 0, left: 0, errors: [message(error)] }));
+  const reviewed = outOfTime() ? null : await autoReview(outOfTime).catch((error) => ({ approved: 0, rejected: 0, left: 0, errors: [message(error)] }));
   const skipped = rows.length - tally.checked - tally.unmatched - tally.failed - tally.blocked;
   return [
     `${count(tally.checked, "দেখেছে")}, ${count(tally.changed, "দাম বদলেছে")}`,
