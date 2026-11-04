@@ -74,7 +74,7 @@ export function recentDrops(summaries: ProductSummary[], offers: Offer[], histor
       }
     }
   }
-  return drops.sort((a, b) => a.daysAgo - b.daysAgo || b.amount - a.amount);
+  return drops.sort((a, b) => b.amount - a.amount);
 }
 
 export interface DayRange {

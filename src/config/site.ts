@@ -18,7 +18,7 @@ export const DEFAULT_SETTINGS: SiteSettings = {
   seoTitleEn: "Dordam – Compare Prices in Bangladesh: Mobiles, Laptops & More",
   seoDescriptionEn: "See the same product's price from trusted shops in Bangladesh side by side — mobiles, laptops, gadgets and more. Check where it's cheapest before you buy.",
   cloudflareAnalyticsToken: null,
-  heroTitle: "কোন দোকানে কত দাম, এক নজরে দেখুন",
+  heroTitle: "বাংলাদেশের কোন দোকানে কত দাম, এক নজরে দেখুন",
   heroTitleEn: "See each shop's price at a glance",
   heroEyebrow: "বিশ্বস্ত সব দোকানের দাম, এক জায়গায়",
   heroEyebrowEn: "Prices from trusted shops in Bangladesh, in one place",

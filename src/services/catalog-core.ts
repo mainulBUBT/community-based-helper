@@ -111,6 +111,7 @@ export function pickComparisons(catalog: Catalog, limit = 6): ComparePick[] {
   // ভ্যারিয়েন্ট অনুযায়ী দোকান আলাদা করি — ভিন্ন ভ্যারিয়েন্টের দাম তুলনা করা ঠিক নয়।
   const byVariant = new Map<string, Map<string, Offer>>();
   for (const offer of catalog.offers) {
+    if (offer.inStock === false) continue;
     if (!sellers.has(offer.sellerId)) continue;
     if (!variantOwner.has(offer.variantId)) continue;
     let perSeller = byVariant.get(offer.variantId);

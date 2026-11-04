@@ -76,7 +76,7 @@ export function CompareCard({ picks }: { picks: ComparePick[] }) {
             <span className="text-xl font-bold tracking-tight">
               {formatTaka(lowestPrice, lang)}
             </span>
-            {compareAt && (
+            {compareAt && saving > 0 && (
               <span className="text-xs text-faint line-through">{formatTaka(compareAt, lang)}</span>
             )}
           </div>
@@ -109,7 +109,7 @@ export function CompareCard({ picks }: { picks: ComparePick[] }) {
         <span className="truncate">
           {t.home.compareFound(num(pick.summary.sellerCount))}
           {highestPrice > lowestPrice && (
-            <span className="ms-1.5 text-faint">{formatTaka(highestPrice - lowestPrice, lang)}</span>
+            <span className="ms-1.5 text-faint">{t.home.compareGap(formatTaka(highestPrice - lowestPrice, lang))}</span>
           )}
         </span>
         <Link
