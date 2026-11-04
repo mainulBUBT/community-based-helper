@@ -2,7 +2,7 @@ import { db, must } from "../lib/db";
 import { message } from "../lib/errors";
 import { alert } from "../lib/telegram";
 
-export type JobId = "prices" | "local_prices" | "local_discover" | "discover" | "promos" | "rebuild" | "special_sync";
+export type JobId = "prices" | "local_prices" | "local_discover" | "discover" | "promos" | "rebuild";
 
 interface JobRow {
   name: string;

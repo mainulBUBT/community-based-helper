@@ -24,94 +24,12 @@
 ## দোকান (সেলার) যোগের নিয়ম
 
 1. **কোনো দোকানই স্থায়ীভাবে বাদ নয় (No store is permanently banned):** কোনো দোকানকে কখনোই "স্থায়ীভাবে বর্জন" করা যাবে না। প্রতিটি গুরুত্বপূর্ণ দোকান আমাদের ক্রেতাদের জন্য মূল্যবান।
-2. **লোকাল রানার ও ব্রাউজার সাপোর্ট:** অনেক বাংলাদেশি রিটেইলারের সাইট বিদেশি ডেটাসেন্টার বা GitHub Actions-এর ক্লাউড আইপি ব্লক করে (403 দেয়), কিন্তু সাধারণ লোকাল আইপিতে পুরোপুরি কার্যকর থাকে। এ ধরনের দোকানকে সাধারণ worker-এ বাদ না দিয়ে লোকাল রানার (`scripts/local-worker.sh`) বা বিশেষ স্ক্রিপ্ট (`scripts/special-stores.ts`) দিয়ে ট্র্যাক করতে হবে।
-3. **ব্রাউজার অটোমেশন ও রেন্ডারিং অনুমোদিত:** ক্লায়েন্ট-সাইড রেন্ডারড (Next.js, Nuxt, React, Shopify) বা নিরাপত্তা প্রটেকশন থাকা সাইটগুলোর জন্য হেডলেস ব্রাউজার (Playwright) ব্যবহার বৈধ। `scripts/special-stores.ts` স্ক্রিপ্ট ব্যবহার করে এসব সাইটের ডাটা নিরাপদে ফেচ করা যাবে।
-4. **বিশেষ ক্যাটাগরির দোকানসমূহ (Special Stores Suite):**
-   যেসব দোকান পূর্বে সাধারণ HTTP worker-এ আটকে গিয়েছিল কিন্তু স্ক্রিপ্ট ও লোকাল রানারের মাধ্যমে সক্রিয়:
-   - **Ryans** (`ryans.com`): স্টিলথ ব্রাউজার ও লোকাল রানারের মাধ্যমে ট্র্যাক হবে।
-   - **TechLand** (`techlandbd.com`): ওপেনকার্ট ডোম পার্সিং ও হেডলেস ব্রাউজার সাপোর্ট।
-   - **Pickaboo** (`pickaboo.com`): লোকাল ব্রাউজার ও রিঅ্যাক্ট স্টেট এক্সট্রাক্টরের মাধ্যমে সক্রিয়।
-   - **GadStyle** (`gadstyle.com`): উকমার্স পার্সার ও ব্রাউজার রানারের মাধ্যমে সক্রিয়।
-   - **Rokomari** (`rokomari.com`): JSON-LD স্কিমা ও লোকাল রিকোয়েস্টের মাধ্যমে সক্রিয়।
-   - **The Mall BD** (`themallbd.com`): মেটা ট্যাগ ও উকমার্স পার্সারের মাধ্যমে সক্রিয়।
-   - **Naturo BD** (`naturobd.com`): হেডলেস ব্রাউজার দিয়ে সক্রিয়।
-   - **HNS Tech** (`hnstechbd.com`): worker-এর `hnstech` স্টোর — sitemap নেই বলে `/shop?page=1..6` ঘুরে listing; দাম পাতার `data-variants` JSON-এ (`hnstechVariants`)।
-
+2. **লোকাল রানার:** GitHub Actions এর সার্ভারের IP আটকানো (403) অনেক দোকান ঘরের IP থেকে সৎ `DordamBot` পরিচয়ে ঠিকই খোলে। এগুলো ম্যাক/PC/ফোনের লোকাল রানার (`scripts/local-runner.sh`) থেকে পড়া হয়: জব `local_prices` (দাম) আর `local_discover` (নতুন পণ্য খোঁজা); দোকানের তালিকা `workers/stores/local.ts`। বিস্তারিত [local-runner.md](local-runner.md)।
+3. **অনুরোধের পরিচয়:** সব অনুরোধ নিজের `DordamBot` পরিচয়ে, robots.txt মেনে, প্রতি হোস্টে ২টার বেশি একসাথে নয়। আটকালে (403, 429, bot challenge) সেই দোকান ওই run-এ বাদ।
+4. **নিষ্ক্রিয় দোকান (স্থায়ী বর্জন নয়, `sellers.active = false`, `active = true` করলেই ফেরে):** যে দোকান সাধারণ worker বা লোকাল রানার কোনোটাতেই পড়া যায় না, বা আমাদের ক্যাটালগে মেলার মতো পণ্য নেই। ৪ নভেম্বর: Ryans, TechLand, Pickaboo, GadStyle, Ghorer Bazar, Naturo BD (সাধারণ অনুরোধে আটকানো); Hype Cave, Prime Nation (Shopify-র বট-নিয়ন্ত্রণে ৪২৯, ওদের UCP পথ বানানো হয়নি); Sundora, Zapatos (ক্যাটালগে মেলা পণ্য ০)। পথ পেলে (দোকানের allowlist বা প্রোডাক্ট ফিড) ফেরানো হবে। Chaldal ঘরের IP থেকেও সংযোগ হয় না।
+   - **HNS Tech** (`hnstechbd.com`): সাধারণ worker-এর `hnstech` স্টোর, sitemap নেই বলে `/shop?page=1..6` ঘুরে listing; দাম পাতার `data-variants` JSON-এ (`hnstechVariants`)।
    *(মালিকের সিদ্ধান্ত অনুযায়ী বাদ: Daraz — থার্ড-পার্টি সেলারদের অবিশ্বস্ত ভ্যারিয়েন্ট/কপি পণ্যের কারণে; এবং Shwapno — গ্রোসারিকেন্দ্রিক হওয়ায় ক্যাটালগ থেকে বাদ)*
-
-   > এই দোকানগুলোর ডেটা দেখতে বা টেস্ট করতে চালান:  
-   > `npm run store:special -- probe` (সব দোকানের কানেক্টিভিটি টেস্ট)  
-   > `npm run store:special -- scrape <URL>` (যেকোনো পণ্যের লাইভ দাম ও তথ্য এক্সট্র্যাক্ট)
-
-### ✋ ব্লক করা দোকান — ম্যানুয়ালি চালানোর পূর্ণ গাইড
-
-**GitHub Actions-এ যেসব দোকান ব্লক করে, সেগুলো লোকাল মেশিন থেকে ম্যানুয়ালি চালাতে হয়।**  
-সব কমান্ড প্রজেক্ট রুট (`community-based-helper/`) থেকে চালাও।
-
-#### ১. সব বিশেষ দোকান একবারে test করো (কোনটা accessible?)
-```bash
-npm run store:special probe
-```
-দেখাবে: HTTP status, browser status, accessible কিনা, কোনো challenge আছে কিনা।
-
-#### ২. শুধু একটা নির্দিষ্ট দোকান test করো
-```bash
-npm run store:special probe ryans
-npm run store:special probe techland
-npm run store:special probe pickaboo
-npm run store:special probe gadstyle
-npm run store:special probe rokomari
-npm run store:special probe themallbd
-npm run store:special probe naturo
-```
-
-#### ৩. যেকোনো পণ্যের পেজ থেকে লাইভ দাম তোলো
-```bash
-# পণ্যের URL সরাসরি দাও
-npm run store:special scrape "https://www.ryans.com/product/..."
-npm run store:special scrape "https://www.techlandbd.com/..."
-npm run store:special scrape "https://rokomari.com/book/..."
-```
-ফলাফল: title, price, oldPrice, inStock, image, platform — সব এক জায়গায়।
-
-#### ৪. নতুন যেকোনো দোকান scan করো (platform auto-detect)
-```bash
-# শুধু domain দাও — বাকি সব নিজে নিজে করবে
-npm run store:special scan "newshop.com.bd"
-npm run store:special scan "https://someshop.com/category/phones"
-```
-কী করবে:
-- ঢুকে platform চিনবে (WooCommerce / Shopify / OpenCart / Next.js / etc.)
-- Homepage থেকে product লিংক খুঁজবে
-- প্রথম পণ্যের দাম তুলে দেখাবে
-- যদি product URL দাও সরাসরি সেটার দাম তুলবে
-
-#### ৫. Database-এর সব বিশেষ দোকানের offer আপডেট করো (Worker-এর মতো)
-```bash
-# সব special store একসাথে sync
-npm run store:special sync
-
-# শুধু একটা দোকান sync
-npm run store:special sync ryans.com
-npm run store:special sync rokomari.com
-```
-কী করবে:
-- DB থেকে সেই দোকানের সব offer নামাবে
-- প্রতিটার লাইভ দাম চেক করবে
-- দাম বদলালে update করবে
-- দাম ৬০%+ বেশি/কম হলে review_queue-এ পাঠাবে (সরাসরি update নয়)
-- পণ্যের ছবি না থাকলে যোগ করবে
-
-#### ৬. Admin UI থেকেও চালানো যায়
-`http://localhost:3100/admin/jobs` → **"Jobs"** ট্যাব → নিচে **"বিশেষ দোকান ও স্মার্ট ডোমেন স্ক্যানার"** প্যানেল:
-- **দোকান কার্ডে click** → domain বসে যাবে
-- **"স্মার্ট স্ক্যান করুন"** → platform detect + sample price
-- **"বিশেষ দোকান সিঙ্ক চালান"** → সব offer update
-
-> ⚠️ `sync` কমান্ড চালাতে `.env.local`-এ `SUPABASE_URL` ও `SUPABASE_SERVICE_KEY` থাকতে হবে।  
-> `probe`, `scrape`, `scan` — এগুলো DB ছাড়াও চলে।
-
-5. **workers/stores/index.ts এ এন্ট্রি:** যেসব দোকান সরাসরি HTTP-তে চলে সেগুলো `sitemapStore` হিসেবে থাকবে; আর যেসব দোকানে বিশেষ মেথড লাগে সেগুলো লোকাল রানার ও `special-stores` অ্যাডাপ্টারের মাধ্যমে ক্যাটালগে সিঙ্ক হবে।
+5. **workers/stores/index.ts এ এন্ট্রি:** যেসব দোকান সরাসরি HTTP-তে চলে সেগুলো `sitemapStore` হিসেবে থাকবে; আর যেসব দোকান শুধু GitHub-এর IP-তে আটকায় সেগুলো কনফিগে থেকে `workers/stores/local.ts`-এর তালিকায় যোগ হয়ে লোকাল রানারে পড়া হবে।
 
 ## ডেটা পাইপলাইন
 
@@ -122,8 +40,8 @@ data/catalog/<ক্যাটাগরি>.json  →  worker:check
 → build:data  →  npm run build
 ```
 
-- বিশেষ দোকানের ডেটা সংগ্রহের জন্য: `npm run store:special -- probe` অথবা `npm run store:special -- scrape <URL>`।
-- ক্লাউড আইপি ব্লকিং থাকলে লোকাল রানার: `sh scripts/local-worker.sh prices`।
+- নতুন দোকান পরীক্ষা: `npm run store:scan -- <ডোমেইন>` (robots, sitemap, পাতা পড়া যায় কি না)।
+- ক্লাউড আইপি ব্লকিং থাকলে লোকাল রানার: `sh scripts/local-runner.sh` (অ্যাডমিন থেকে চালানো যায়)।
 
 ## নীতি ও স্বচ্ছতা
 

@@ -47,7 +47,7 @@
 
 ## নতুন দোকান
 
-0. **আগে স্ক্যান:** `npm run store:scan -- <ডোমেইন> [শব্দ]` (যেমন `npm run store:scan -- haramainstore.com dates`)। robots, sitemap, পণ্যের পাতার path আর কোন পথে দাম আসে (Shopify, WooCommerce, JSON-LD, পাতার ভেতরের JSON) নিজে দেখে, তারপর নিচের ধাপ ২–৩-এর তৈরি এন্ট্রি দেখায়। condition আর নাম মিলিয়ে নিন। "সাধারণ worker-এ পড়া যায় না" এলে HTML খালি (JavaScript দিয়ে আঁকা): দোকানের feed/API চাওয়া, নইলে `scripts/special-stores.ts`।
+0. **আগে স্ক্যান:** `npm run store:scan -- <ডোমেইন> [শব্দ]` (যেমন `npm run store:scan -- haramainstore.com dates`)। robots, sitemap, পণ্যের পাতার path আর কোন পথে দাম আসে (Shopify, WooCommerce, JSON-LD, পাতার ভেতরের JSON) নিজে দেখে, তারপর নিচের ধাপ ২–৩-এর তৈরি এন্ট্রি দেখায়। condition আর নাম মিলিয়ে নিন। "সাধারণ worker-এ পড়া যায় না" এলে HTML খালি (JavaScript দিয়ে আঁকা): দোকানের feed/API চাওয়া। শুধু GitHub-এর IP আটকালে (ম্যাকে খোলে) `workers/stores/local.ts`-এ যোগ করে লোকাল রানারে ([local-runner.md](local-runner.md))।
 1. Terms of Use আর robots.txt দেখুন। 403, bot challenge বা robots এ বন্ধ থাকলে দোকান বাদ; নিয়ম [ডেটার উৎস](features/17-data-sources.md) এ।
 2. `workers/stores/index.ts` এ একটা `sitemapStore({...})` এন্ট্রি: product sitemap, পণ্যের পাতার path, দোকানটা মূলত অফিসিয়াল না আনঅফিসিয়াল।
 3. পাতায় ভার্সনের দাম কোথায় আছে দেখে `variants` parser দিন। WooCommerce হলে `wooVariants`; Shopify হলে `variants` নয়, `product: shopifyProduct` (`/products/<handle>.js` থেকে সব ভার্সন, নাম আর ছবি); অন্য ধরনের জন্য `workers/stores/parsers.ts` এ নতুন। Next.js বা অন্য JS সাইটে দাম আর ওজন/স্টোরেজ পাতার ভেতরের JSON-এ থাকলে `variants: embeddedVariants` (Haramain, Khaas Food)। শুধু একটা দাম থাকলে parser লাগে না, JSON-LD থেকে আসে; JSON-LD-ও না থাকলে worker নিজেই AI-এর আগে `embeddedVariants` চেষ্টা করে।

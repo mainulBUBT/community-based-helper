@@ -14,10 +14,4 @@ elif [ -f ".env.local" ]; then
   set +a
 fi
 
-# বিশেষ দোকানগুলোর স্ক্র্যাপ চালাতে চাইলে: ./scripts/local-worker.sh special
-if [ "${1:-}" = "special" ]; then
-  shift
-  exec ./node_modules/.bin/tsx scripts/special-stores.ts "$@"
-fi
-
 exec ./node_modules/.bin/tsx workers/cli.ts "$@"

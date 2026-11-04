@@ -8,7 +8,6 @@ import { rebuild } from "./jobs/rebuild";
 import { runJob, type JobId, type JobRun } from "./jobs/run";
 import { autoReview, compareWithHumans } from "./services/auto-review";
 
-import { syncSpecialOffers } from "../scripts/special-stores";
 import { LOCAL_HOSTS } from "./stores/local";
 
 const jobs: Record<JobId, (run: JobRun) => Promise<string>> = {
@@ -21,10 +20,6 @@ const jobs: Record<JobId, (run: JobRun) => Promise<string>> = {
   discover,
   promos: readPromos,
   rebuild,
-  special_sync: async () => {
-    await syncSpecialOffers();
-    return "Special stores sync completed";
-  },
 };
 
 async function main() {

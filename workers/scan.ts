@@ -99,7 +99,7 @@ async function main() {
 
   const best = (["shopify", "woo", "embedded", "structured"] as const).find((m) => methods.includes(m));
   if (!best) {
-    console.log("\nসাধারণ worker-এ পড়া যায় না। উপায়: দোকানের feed/API চাওয়া, অথবা scripts/special-stores.ts (ব্রাউজার)।");
+    console.log("\nসাধারণ worker-এ পড়া যায় না। উপায়: দোকানের feed/API চাওয়া, বা (শুধু IP আটকালে) workers/stores/local.ts-এ যোগ করে লোকাল রানারে (docs/local-runner.md)।");
     return;
   }
   const id = start.hostname.replace(/^www\./, "").split(".")[0].replace(/[^a-z0-9]/g, "");
