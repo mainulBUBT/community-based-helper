@@ -252,11 +252,14 @@ export async function discoverStore(store: Store, seller: SellerRef, since?: str
   const reviewed = await reviewedUrls(seller.id);
   const official = new Map(catalog.flatMap((p) => p.variants.map((v) => [v.id, v.officialPrice] as const)));
   const shop: Shop = { store, seller, catalog, asked: new Set(), slots, official, prices: await variantPrices(), tally: result };
-  const outOfTime = deadline(STORE_MINUTES);
+  // সময়-সীমা শুধু পাতা প্রক্রিয়ায়; ধীর দোকানের তালিকা আনা (ERRUMBD ~২৫ মিনিট) এর ভেতরে পড়লে মেলা পণ্য প্রক্রিয়ার সময়ই থাকত না
+  let outOfTime = () => false;
   const before = new Set(slots);
 
   try {
-    const listings = (await storeListings(store, targets, catalog, false)).flatMap((listing) => {
+    const fetched = await storeListings(store, targets, catalog, false);
+    outOfTime = deadline(STORE_MINUTES);
+    const listings = fetched.flatMap((listing) => {
       const products = reviewed.has(listing.url) ? [] : findProducts(listing.title, catalog);
       const done = known.has(listing.url) && products.every((p) => !fresh.has(p.id));
       return products.some((p) => wanted.has(p.id)) && !done ? [{ listing, products }] : [];

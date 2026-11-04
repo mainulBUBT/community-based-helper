@@ -1,3 +1,5 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { StoreBlocked } from "../lib/errors";
 import { decode, stripTags, title } from "../lib/html";
 import { getJson, getText } from "../lib/http";
@@ -332,8 +334,16 @@ const errum: Store = {
   promoUrl: null,
   async discover() {
     const urls = (await sitemapUrls(`${ERRUM}/sitemap.xml`)).filter((url) => /\/product\/[a-f0-9]{24}$/.test(url));
-    const found: Listing[] = [];
-    await pool(urls, 2, async (url) => {
+    // আগের জমা তালিকার নাম আবার পড়া হয় না (শিরোনাম বদলায় না); শুধু নতুন URL পড়া হয়
+    const known = new Map<string, string>();
+    try {
+      const saved = JSON.parse(await readFile(join(".cache/listings", "errumbd.json"), "utf8")) as { listings: Listing[] };
+      for (const l of saved.listings) known.set(l.url, l.title);
+    } catch {
+      // জমা তালিকা নেই: সব পড়া হবে
+    }
+    const found: Listing[] = urls.filter((url) => known.has(url)).map((url) => ({ title: known.get(url)!, url, price: null, oldPrice: null }));
+    await pool(urls.filter((url) => !known.has(url)), 2, async (url) => {
       const html = await getText(url).catch((error) => {
         if (error instanceof StoreBlocked) throw error;
         return "";
