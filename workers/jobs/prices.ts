@@ -82,7 +82,11 @@ export async function refreshPrices(): Promise<string> {
       .order("id")
       .range(from, to),
   );
-  const rows = offers.filter((row) => row.source === "site" || row.sellers?.kind === "website");
+  // local_prices জবে শুধু ঘরের IP থেকে পড়ার দোকান (workers/stores/local.ts); না থাকলে সব
+  const only = process.env.PRICES_ONLY?.split(",").filter(Boolean);
+  const rows = offers
+    .filter((row) => row.source === "site" || row.sellers?.kind === "website")
+    .filter((row) => !only?.length || only.includes(new URL(row.url).host.replace(/^www\./, "")));
   const tally: Tally = { checked: 0, changed: 0, anomaly: 0, unmatched: 0, failed: 0, blocked: 0, ai: 0, jina: 0, booking: 0 };
   const outOfTime = deadline(25);
   const errors: string[] = [];

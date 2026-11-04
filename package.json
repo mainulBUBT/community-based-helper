@@ -20,6 +20,7 @@
     "worker": "node --env-file-if-exists=.env.local --import tsx workers/cli.ts",
     "worker:dry": "node --env-file-if-exists=.env.local --import tsx workers/dry-run.ts",
     "worker:check": "node --env-file-if-exists=.env.local --import tsx workers/check.ts",
+    "local:runner": "node --env-file-if-exists=.env.local --import tsx workers/local-runner.ts",
     "worker:ai-check": "AI_READ_VERBOSE=1 node --env-file-if-exists=.env.local --import tsx workers/ai-check.ts",
     "store:scan": "node --env-file-if-exists=.env.local --import tsx workers/scan.ts",
     "store:special": "node --env-file-if-exists=.env.local --import tsx scripts/special-stores.ts",

@@ -8,9 +8,14 @@ import { runJob, type JobId, type JobRun } from "./jobs/run";
 import { autoReview, compareWithHumans } from "./services/auto-review";
 
 import { syncSpecialOffers } from "../scripts/special-stores";
+import { LOCAL_HOSTS } from "./stores/local";
 
 const jobs: Record<JobId, (run: JobRun) => Promise<string>> = {
   prices: refreshPrices,
+  local_prices: () => {
+    process.env.PRICES_ONLY = LOCAL_HOSTS.join(",");
+    return refreshPrices();
+  },
   discover,
   promos: readPromos,
   rebuild,
