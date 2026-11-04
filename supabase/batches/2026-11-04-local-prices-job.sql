@@ -8,6 +8,10 @@ insert into jobs (id, name, runner, schedule, enabled)
 values ('local_prices', 'আটকানো দোকানের দাম (লোকাল)', 'Local Runner (ম্যাক / PC / ফোন)', 'অ্যাডমিনের অনুরোধে, আর রানার চালু থাকলে প্রতি ৪ ঘণ্টায়', true)
 on conflict (id) do nothing;
 
+insert into jobs (id, name, runner, schedule, enabled)
+values ('local_discover', 'আটকানো দোকানে নতুন পণ্য খোঁজা (লোকাল)', 'Local Runner (ম্যাক / PC / ফোন)', 'নতুন পণ্য এলে, রানার চালু থাকলে', true)
+on conflict (id) do nothing;
+
 -- লোকাল রানারের জব GitHub workflow এ ডাকা যায় না (local_prices.yml নেই); বাকি জবে আচরণ একই
 create or replace function public.dispatch_job()
  returns trigger

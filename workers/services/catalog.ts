@@ -3,6 +3,7 @@ import type { CatalogProduct, CatalogVariant } from "../lib/match";
 
 export interface CatalogEntry extends CatalogProduct {
   pending: boolean;
+  requestedAt: string;
   variants: (CatalogVariant & { officialPrice: number | null })[];
 }
 
@@ -26,6 +27,7 @@ export async function loadCatalog(): Promise<CatalogEntry[]> {
     brand: p.brand,
     category: p.category,
     pending: !p.discovered_at || p.discovered_at < p.discover_requested_at,
+    requestedAt: p.discover_requested_at,
     variants: [...p.variants].sort((a, b) => a.position - b.position).map(({ id, label, sku, official_price }) => ({ id, label, sku, officialPrice: official_price })),
   }));
 }

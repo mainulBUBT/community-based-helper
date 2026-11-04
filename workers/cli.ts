@@ -1,5 +1,6 @@
 import { closeBrowser } from "./lib/browser";
 import { discover } from "./jobs/discover";
+import { localDiscover } from "./jobs/local-discover";
 import { discoverStep } from "./jobs/matrix";
 import { refreshPrices } from "./jobs/prices";
 import { readPromos } from "./jobs/promos";
@@ -12,6 +13,7 @@ import { LOCAL_HOSTS } from "./stores/local";
 
 const jobs: Record<JobId, (run: JobRun) => Promise<string>> = {
   prices: refreshPrices,
+  local_discover: localDiscover,
   local_prices: () => {
     process.env.PRICES_ONLY = LOCAL_HOSTS.join(",");
     return refreshPrices();

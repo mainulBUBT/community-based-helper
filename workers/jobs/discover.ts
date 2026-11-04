@@ -238,14 +238,15 @@ export async function sellerStores(): Promise<{ store: Store; seller: SellerRef 
 
 // শুধু নতুন বা ভার্সন বদলানো পণ্য কোন দোকানে আছে তা খোঁজা হয়; আগে বসে যাওয়া পণ্যের দাম `prices` job এ ওই লিংকেই হালনাগাদ হয়।
 // নতুন দোকান (এখনো একটাও দাম নেই): পুরো ক্যাটালগ খোঁজা হয়। খোঁজার মতো কিছু না থাকলে দোকানের তালিকা আনাই হয় না
-export async function discoverStore(store: Store, seller: SellerRef): Promise<StoreResult> {
+export async function discoverStore(store: Store, seller: SellerRef, since?: string): Promise<StoreResult> {
   const result: StoreResult = { store: store.id, added: 0, review: 0, odd: 0, failed: 0, notes: [], finished: true, found: [] };
   const catalog = await loadCatalog();
   if (catalog.length === 0) return result;
-  const pending = catalog.filter((p) => p.pending);
+  // since দিলে (লোকাল রানার): GitHub এ আটকানো দোকান "খোঁজা হয়েছে" চিহ্নিত পণ্যও এখানে খোঁজা হয়, তাই চিহ্ন নয়, সময় ধরে: since এর পরে যোগ বা বদলানো পণ্য
+  const pending = since ? catalog.filter((p) => p.requestedAt > since) : catalog.filter((p) => p.pending);
   const fresh = new Set(pending.map((p) => p.id));
   const { slots, urls: known } = await shopOffers(seller.id);
-  const targets = known.size === 0 ? catalog : pending;
+  const targets = known.size === 0 && !since ? catalog : pending;
   if (targets.length === 0) return result;
   const wanted = new Set(targets.map((p) => p.id));
   const reviewed = await reviewedUrls(seller.id);
