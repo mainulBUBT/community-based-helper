@@ -575,3 +575,9 @@ robots খোলা, sitemap-এ ১৪,৪৭৫টা লিংক। সা�
 শুধু হোমপেজ ব্রাউজারে (`render`) খুলে দেখা; পণ্যের পাতা, মধু বা স্টক এখনো দেখা হয়নি। Meena Bazar (`meenabazaronline.com`): সাধারণ HTML খালি, sitemap নেই, ব্রাউজারে দাম আসে, লিংক `/product/<নাম>/<id>`, এলাকা বাছতে বলে। Agora (`agorasuperstores.com`): sitemap নেই, ব্রাউজারে হোমেই ৫,৭০০+ লিংক আর দাম। Prince Bazar (`princebazarbd.com`): ব্রাউজারে দাম আসে, ডেলিভারি কয়েকটা এলাকায়। Unimart (`unimart.online`): ব্রাউজারেও প্রায় খালি। Daily Shopping (`dailyshoppingbd.com`): Othoba-তে redirect, আলাদা দোকান নয়। `meenaclick.com`, `lavendersuperstore.com`, `almassuperstore.com`: ঠিকানা খোলে না; `meenabazar.com.bd` HTTP 523।
 
 এলাকা বেছে পরীক্ষা (৫ নভেম্বর): Shwapno-তে ৩টা পাতায় এলাকা ছাড়া আর Dhanmondi 27-এ দাম ও স্টক একই। ৯টা মধুর পাতায় Dhanmondi 27-এ স্টকে শুধু Dabur ৫০০g আর Saffola ২৫০ml (আমাদের Saffola g-এ); বাকি ৭টা Out of stock (Al Shifa, Shefa'a, Hosen, Dabur ২৫০g, ACI, Tropica)। Agora-র হোমের লিংকে মধু বলতে Dabur ২৫০g আর Vitacare, গুড়ে শুধু আখের গুড় আর Root Wellness Mix। Meena Bazar-এ খোঁজা বাক্স দিয়ে ফল আসেনি, হোমের ৫১৬ লিংকে মধু নেই, তাই শেষ কথা নয়।
+
+### নতুন দোকান Agora (৫ নভেম্বর ২০২৬)
+
+robots খোলা, সাধারণ HTML, Chromium লাগে না। sitemap নেই; `/products/<ক্যাটাগরি>` পাতায় সব পণ্য, দাম আর স্টক (`add_to_cart`/`out_of_stock`) একসাথে, তাই প্রতি run-এ ১০টা পাতা, পণ্য-প্রতি অনুরোধ নয়। পণ্যের পাতা (`product-details/...?prod_id=`) ব্যবহার করা যায় না: নামের শুরু এক হলে অন্য পণ্য দেখায় (Meril-এর লিংকে toothpaste)। DB ছাড়া `discover`-এর ধাপ চালিয়ে: ৫,৫১৯ পণ্যে ৩২টা সরাসরি দাম (বেবি ১৮, খেজুর ৮, মধু ৫, স্কিনকেয়ার ১), ১০টা AI বা যাচাইয়ে। গুড়ে কিছু নেই।
+
+একই কাজে মেলানোর দুটো ফাঁক বন্ধ: খাবার-প্রসাধনীতে ব্র্যান্ড না থাকলে আর প্রথম শব্দ ক্যাটালগের নামে না থাকলে অন্য ব্র্যান্ড (Lavino ≠ Himalaya), আর এক-ভার্সনের পণ্যে পাতার শিরোনামের ওজন আলাদা হলে দাম বসে না (Lotion 100ml ≠ 200ml)। এতে শুধু নতুন দাম আটকায়, আগে বসা দাম বদলায় না। আগের ভুল মিল আলাদা করে দেখতে হবে।

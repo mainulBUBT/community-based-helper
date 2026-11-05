@@ -72,6 +72,17 @@ export function chip(text: string): string | null {
   return found ? `${found[1]} ${found[2] ?? ""}`.trim().toLowerCase() : null;
 }
 
+const PACK = /(\d+(?:\.\d+)?)\s*(kg|gm?|gram|ml|ltr|l|pcs?)\b/gi;
+
+const packSizes = (text: string) => [...text.matchAll(PACK)].map(([, n, unit]) => Number(n) * (/^(kg|ltr|l)$/i.test(unit) ? 1000 : 1));
+
+// শিরোনামে ওজন বা পরিমাণ লেখা, কিন্তু ভার্সনের সাথে মেলে না (Lotion 100ml ≠ 200ml); দোকান ভেদে ml আর g অদলবদল হয়, তাই শুধু সংখ্যা
+export function packConflict(title: string, label: string): boolean {
+  const own = packSizes(label);
+  const listed = packSizes(title);
+  return own.length > 0 && listed.length > 0 && !listed.some((n) => own.includes(n));
+}
+
 export function sameSpec(a: string, b: string): boolean {
   return [inch, chip].every((read) => {
     const x = read(a);
@@ -165,6 +176,8 @@ function productFits(title: string, ordered: string[], product: CatalogProduct, 
   if (!hasBrand && own.length > 0 && [...listing].some((t) => rivals.has(t))) return false;
   // ছোট নাম ("Buds 2") কটন-বাডস পর্যন্ত মিলে ফেলে — ব্র্যান্ডের নাম পাতায় থাকতেই হবে
   if (own.length > 0 && required.length <= 2 && !hasBrand) return false;
+  // খাবার-প্রসাধনীতে নামের প্রথম শব্দ সাধারণত ব্র্যান্ড; ক্যাটালগের নামে না থাকলে অন্য ব্র্যান্ডের একই ধরনের পণ্য ("Lavino Neem Face Wash" ≠ Himalaya)
+  if (!hasBrand && own.length > 0 && NON_GADGET_CATEGORIES.has(product.category ?? "") && !tokens(product.name).includes(ordered[0]) && !ordered.join("").includes(tokens(product.brand).join(""))) return false;
   const labels = new Set([product.name, product.brand, ...product.variants.map((v) => v.label)].flatMap(tokens));
   if ([...listing].some((t) => MODIFIERS.has(t) && !labels.has(t))) return false;
   const head = FOR_DEVICE.has(product.category ?? "") ? [] : tokens(title.split(BUNDLE)[0]);

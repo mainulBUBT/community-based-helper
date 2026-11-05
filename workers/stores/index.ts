@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { StoreBlocked } from "../lib/errors";
+import { NotFound, StoreBlocked } from "../lib/errors";
 import { decode, stripTags, title } from "../lib/html";
 import { getJson, getText } from "../lib/http";
 import { pace } from "../lib/limiter";
@@ -213,6 +213,49 @@ const herhappyskin: Store = {
 };
 
 // Othoba (nopCommerce মার্কেটপ্লেস): sitemap ফাঁকা, তাই ক্যাটাগরি পাতা (?pagenumber=) ধরে ঘুরে listing।
+// Agora: sitemap নেই, ক্যাটাগরির এক পাতাতেই সব পণ্য, দাম আর স্টক। পণ্যের পাতা নয়, কারণ নামের শুরু এক হলে সেখানে অন্য পণ্য আসে
+// (meril-baby?prod_id=… সবই toothpaste)। প্রতি run-এ ক্যাটাগরিগুলো একবার। নতুন ধরনের পণ্য এলে এখানে ক্যাটাগরি যোগ করুন
+const AGORA = "https://agorasuperstores.com";
+const AGORA_CATEGORIES = ["baby-food", "baby-needs", "personal-care", "beauty-products", "pharmacy", "grocery-essentials", "quick-food", "confectionary", "baking-needs", "fruits"];
+const AGORA_CARD = /href="(https:\/\/agorasuperstores\.com\/product-details\/[^"]*prod_id=(\d+))"[\s\S]*?<p class="allProduct-subtext[^"]*"[^>]*>\s*([^<]+?)\s*<\/p>[\s\S]*?data-price="([\d.]+)"[\s\S]*?data-i18n="(add_to_cart|out_of_stock)"/g;
+
+interface AgoraCard extends Listing {
+  inStock: boolean;
+}
+
+let agoraCards: Promise<Map<string, AgoraCard>> | null = null;
+
+async function loadAgoraCards() {
+  const cards = new Map<string, AgoraCard>();
+  for (const path of AGORA_CATEGORIES) {
+    for (const [, url, id, name, price, stock] of (await getText(`${AGORA}/products/${path}`)).matchAll(AGORA_CARD)) {
+      const taka = toTaka(price);
+      if (taka) cards.set(id, { title: decode(name), url, price: taka, oldPrice: null, inStock: stock === "add_to_cart" });
+    }
+  }
+  return cards;
+}
+
+const agoraCatalog = () => (agoraCards ??= loadAgoraCards());
+
+const agora: Store = {
+  id: "agora",
+  name: "Agora",
+  origin: AGORA,
+  rendered: false,
+  condition: "official",
+  sample: `${AGORA}/products/baby-food`,
+  promoUrl: null,
+  async product(url) {
+    const card = (await agoraCatalog()).get(new URL(url).searchParams.get("prod_id") ?? "");
+    if (!card?.price) throw new NotFound(`${url}: Agora-র তালিকায় নেই`);
+    return { rows: [{ options: [], region: null, price: card.price, oldPrice: null, inStock: card.inStock }], title: card.title, image: null };
+  },
+  async discover() {
+    return [...(await agoraCatalog()).values()];
+  },
+};
+
 // নতুন ধরনের পণ্য এলে এখানে ওদের ক্যাটাগরির path যোগ করুন
 const OTHOBA = "https://othoba.com";
 const OTHOBA_CATEGORIES = ["/water-purifier", "/pureit-water-purifier", "/honey", "/dates"];
@@ -741,6 +784,7 @@ export const stores: Store[] = [
   }),
   herhappyskin,
   othoba,
+  agora,
   sitemapStore({
     id: "beautybooth",
     name: "Beauty Booth",
