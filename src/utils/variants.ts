@@ -24,7 +24,7 @@ export function parseVariantLabel(label: string, axes: readonly Axis[]): Variant
   if (axes.includes("cpu")) attributes.cpu = label.match(/\d+C\s*CPU|\d+\s*-?\s*core\s*CPU/i)?.[0];
   if (axes.includes("resolution")) attributes.resolution = label.match(/\b(8K|4K|UHD|FHD|QHD|HD)\b/i)?.[0].toUpperCase();
   if (axes.includes("battery")) attributes.battery = label.match(/\d+\s*mAh/i)?.[0].replace(/\s/g, "");
-  if (axes.includes("capacity")) attributes.capacity = label.match(/\d+(?:\.\d+)?\s*(?:L|litre|liter|kg|KG)\b/i)?.[0].replace(/\s/g, "");
+  if (axes.includes("capacity")) attributes.capacity = label.match(/\d+(?:\.\d+)?\s*(?:kg|g|ml|l|litre|liter)\b/i)?.[0].replace(/\s/g, "");
   if (axes.includes("wattage")) attributes.wattage = label.match(/\d+(?:\.\d+)?\s*W\b/i)?.[0].replace(/\s/g, "").toUpperCase();
   return Object.fromEntries(Object.entries(attributes).filter(([, v]) => v)) as VariantAttributes;
 }

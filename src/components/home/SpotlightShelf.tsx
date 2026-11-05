@@ -33,8 +33,8 @@ const noSubscribe = () => () => {};
 export function SpotlightShelf({ summaries }: { summaries: ProductSummary[] }) {
   const { t, num, lang, prefix } = useI18n();
   const { top, has } = useCategories();
-  const withProducts = top.filter((c) =>
-    summaries.some((s) => has(c.slug, s.product)),
+  const withProducts = top.filter(
+    (c) => !c.collection && summaries.some((s) => has(c.slug, s.product)),
   );
   const visit = useSyncExternalStore(noSubscribe, visitTurn, () => 0);
   const [picked, setActive] = useState<string | null>(null);
@@ -50,11 +50,11 @@ export function SpotlightShelf({ summaries }: { summaries: ProductSummary[] }) {
           b.sellerCount * 5 -
           (a.product.popularity + a.sellerCount * 5),
     )
-    .slice(0, 5);
+    .slice(0, 12);
   const label = (c: CategoryInfo) => (lang === "en" ? c.nameEn : c.name);
 
   return (
-    <section className="flex flex-col gap-5 rounded-lg bg-surface p-4 shadow-sm ring-1 ring-line-soft md:p-6">
+    <section className="flex flex-col gap-5 rounded-md bg-surface p-4 shadow-sm ring-1 ring-line-soft md:p-6">
       <div className="flex flex-col gap-3">
         <SectionEyebrow>
           {t.home.spotlightEyebrow(label(current))}
@@ -80,7 +80,7 @@ export function SpotlightShelf({ summaries }: { summaries: ProductSummary[] }) {
           </button>
         ))}
       </div>
-      <ol className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+      <ol className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-6">
         {ranked.map(({ product, lowest, sellerCount }, i) => (
           <li key={product.id}>
             <Link

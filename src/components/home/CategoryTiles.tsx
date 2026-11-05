@@ -1,5 +1,6 @@
 "use client";
 
+import { Snowflake } from "lucide-react";
 import Link from "next/link";
 import { AllCategoriesIcon, CategoryIcon } from "@/components/product/CategoryIcon";
 import { useCategories } from "@/hooks/useCategories";
@@ -17,41 +18,50 @@ export function CategoryTiles({ summaries }: { summaries: ProductSummary[] }) {
       count: summaries.filter((s) => has(c.slug, s.product)).length,
     }));
   return (
-    <nav
-      aria-label={t.home.categoryEyebrow}
-      className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4"
-    >
-      {shown.map(({ c, count }) => (
+    <div className="relative">
+      <nav
+        aria-label={t.home.categoryEyebrow}
+        className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 pb-2"
+      >
+        {shown.map(({ c, count }) => (
+          <Link
+            key={c.slug}
+            href={categoryPath(prefix, c.slug)}
+            className={`relative flex w-24 shrink-0 flex-col items-center gap-1.5 overflow-hidden rounded-md px-2 py-3 text-center shadow-md ring-2 ${c.collection ? "bg-gradient-to-br from-gold-soft to-accent-soft ring-gold/40" : "bg-surface ring-line-soft"}`}
+          >
+            {c.collection && (
+              <Snowflake
+                size={48}
+                aria-hidden="true"
+                className="pointer-events-none absolute -right-2 -bottom-2 z-0 text-gold/20"
+              />
+            )}
+            <span className={`relative z-10 flex size-11 items-center justify-center rounded-full ${c.collection ? "bg-gold text-gold-ink" : "bg-brand-soft text-brand"}`}>
+              <CategoryIcon name={c.icon} size={20} />
+            </span>
+            <span className="relative z-10 text-[13px] leading-tight font-semibold">
+              {lang === "en" ? c.nameEn : c.name}
+            </span>
+            <span className="relative z-10 text-[11px] font-bold text-dim">
+              {t.home.models(num(count))}
+            </span>
+          </Link>
+        ))}
         <Link
-          key={c.slug}
-          href={categoryPath(prefix, c.slug)}
-          className="flex w-24 shrink-0 flex-col items-center gap-1.5 rounded-lg bg-surface px-2 py-3 text-center shadow-sm ring-1 ring-line-soft"
+          href={`${prefix}/search/`}
+          className="flex w-24 shrink-0 flex-col items-center justify-center gap-1.5 rounded-md bg-surface px-2 py-3 text-center shadow-sm ring-1 ring-line-soft"
         >
-          <span className="flex size-11 items-center justify-center rounded-full bg-brand-soft text-brand">
-            <CategoryIcon name={c.icon} size={20} />
+          <span className="flex size-11 items-center justify-center rounded-full bg-surface-2 text-dim">
+            <AllCategoriesIcon size={20} />
           </span>
           <span className="text-[13px] leading-tight font-semibold">
-            {lang === "en" ? c.nameEn : c.name}
+            {t.home.allCategories}
           </span>
           <span className="text-[11px] font-bold text-dim">
-            {t.home.models(num(count))}
+            {t.home.models(num(summaries.length))}
           </span>
         </Link>
-      ))}
-      <Link
-        href={`${prefix}/search/`}
-        className="flex w-24 shrink-0 flex-col items-center justify-center gap-1.5 rounded-lg bg-surface px-2 py-3 text-center shadow-sm ring-1 ring-line-soft"
-      >
-        <span className="flex size-11 items-center justify-center rounded-full bg-surface-2 text-dim">
-          <AllCategoriesIcon size={20} />
-        </span>
-        <span className="text-[13px] leading-tight font-semibold">
-          {t.home.allCategories}
-        </span>
-        <span className="text-[11px] font-bold text-dim">
-          {t.home.models(num(summaries.length))}
-        </span>
-      </Link>
-    </nav>
+      </nav>
+    </div>
   );
 }

@@ -29,7 +29,7 @@ export function ProductCard({ summary, deal, badge, category, compact, loading =
   const off = lowest && compareAt ? Math.round(((compareAt - lowest) / compareAt) * 100) : 0;
 
   return (
-    <article className="group relative flex h-full flex-col overflow-hidden rounded-md border border-line bg-surface transition-[border-color,box-shadow,transform] hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-lift">
+    <article className="group relative flex h-full flex-col overflow-hidden rounded-sm border border-line bg-surface shadow-sm transition-[border-color,box-shadow,transform] hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-lift">
       <div className="relative flex aspect-square items-center justify-center bg-white p-4">
         {deal ? (
           <span className="absolute top-2.5 left-2.5 z-10 rounded-xs bg-gold px-1.5 py-0.5 text-[10px] font-bold text-gold-ink">
@@ -63,7 +63,7 @@ export function ProductCard({ summary, deal, badge, category, compact, loading =
                 setFailed(true);
               }
             }}
-            className="size-full object-contain transition-transform duration-300 group-hover:scale-[1.04]"
+            className="absolute inset-0 size-full object-contain p-4 transition-transform duration-300 group-hover:scale-[1.04]"
           />
         ) : (
           <ProductIcon product={product} size="lg" plain />

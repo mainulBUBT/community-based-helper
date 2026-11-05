@@ -48,7 +48,8 @@ export function summarize(catalog: Catalog, product: Product): ProductSummary {
   return {
     product,
     lowest,
-    size: bestVariant?.attributes.capacity ?? null,
+    // স্ক্র্যাপ করা কিছু ভ্যারিয়েন্টে capacity অ্যাট্রিবিউট থাকে না (যেমন Saffola মধুর 40g); তখন লেবেল থেকেই ওজন পড়ি
+    size: bestVariant?.attributes.capacity ?? bestVariant?.label.match(/\d+(?:\.\d+)?\s*(?:kg|g|ml|l|litre|liter)\b/i)?.[0]?.replace(/\s/g, "") ?? null,
     condition: best?.condition ?? null,
     compareAt,
     inStock: offers.some((o) => o.inStock !== false),
@@ -88,6 +89,8 @@ function buildAlternatives(catalog: Catalog, product: Product, category: Categor
 export interface ComparePick {
   summary: ProductSummary;
   offers: OfferView[];
+  // এই ভ্যারিয়েন্টে স্টকে থাকা দোকানের সংখ্যা — offers কেটে দিলেও (+N দোকানের হিসাবে) সঠিক থাকে
+  sellerTotal: number;
   variantLabel: string;
 }
 
@@ -145,6 +148,7 @@ export function pickComparisons(catalog: Catalog, limit = 6): ComparePick[] {
     .map((group) => ({
       summary: summarize(catalog, group.product),
       offers: group.offers.slice(0, 4),
+      sellerTotal: group.offers.length,
       variantLabel:
         group.product.variants.find((v) => v.id === group.variantId)?.label ?? "",
     }))

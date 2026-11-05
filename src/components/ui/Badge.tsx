@@ -8,9 +8,14 @@ const TONES = {
   solid: "bg-gold text-gold-ink",
 };
 
-export function Badge({ tone = "neutral", title, children }: { tone?: keyof typeof TONES; title?: string; children: ReactNode }) {
+const SIZES = {
+  md: "rounded-md px-2 py-0.5 text-xs font-semibold",
+  sm: "rounded-xs px-1.5 py-0.5 text-[10px] font-bold",
+};
+
+export function Badge({ tone = "neutral", size = "md", title, children }: { tone?: keyof typeof TONES; size?: keyof typeof SIZES; title?: string; children: ReactNode }) {
   return (
-    <span title={title} className={`inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-xs font-semibold ${TONES[tone]}`}>
+    <span title={title} className={`inline-flex items-center gap-1 ${SIZES[size]} ${TONES[tone]}`}>
       {children}
     </span>
   );

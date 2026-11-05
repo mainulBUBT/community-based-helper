@@ -7,6 +7,7 @@ import {
   Megaphone,
   Search,
   Store,
+  TrendingDown,
   type LucideIcon,
 } from "lucide-react";
 import Link from "next/link";
@@ -212,8 +213,9 @@ export function AppShell({
               <BrandMenu />
               <Link
                 href={`${prefix}/search/?sort=drop`}
-                className="flex h-16 items-center border-b-2 border-transparent px-1 text-sm font-semibold text-ink hover:text-brand"
+                className="flex h-16 items-center gap-1 border-b-2 border-transparent px-1 text-sm font-semibold text-danger hover:text-brand"
               >
+                <TrendingDown size={15} strokeWidth={2.5} aria-hidden="true" />
                 {t.nav.drops}
               </Link>
               <Link

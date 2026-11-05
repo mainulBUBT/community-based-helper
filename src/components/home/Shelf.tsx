@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 export function Shelf({ children }: { children: ReactNode }) {
   return (
-    <section className="flex flex-col gap-4 rounded-lg bg-surface p-4 shadow-sm ring-1 ring-line-soft md:p-6">
+    <section className="flex flex-col gap-4 rounded-md bg-surface p-4 shadow-sm ring-1 ring-line-soft md:p-6">
       {children}
     </section>
   );

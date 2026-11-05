@@ -7,7 +7,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { useI18n } from "@/hooks/useI18n";
 import type { ProductSummary } from "@/types/catalog";
 import type { RecentDrop } from "@/utils/catalog";
-import { Shelf } from "./Shelf";
+import { SectionEyebrow, Shelf } from "./Shelf";
 
 // এক কার্ড থেকে পরের কার্ডের দূরত্ব (ফাঁকসহ)
 function cardStep(track: HTMLElement): number {
@@ -84,10 +84,13 @@ export function DealsShelf({
 
   return (
     <Shelf>
-      <SectionHeader
-        title={t.home.drops}
-        subtitle={t.home.dropsSub}
-      />
+      <div className="flex flex-col gap-3">
+        <SectionEyebrow>{t.home.dropsEyebrow}</SectionEyebrow>
+        <SectionHeader
+          title={t.home.drops}
+          subtitle={t.home.dropsSub}
+        />
+      </div>
       <div
         className="relative"
         onMouseEnter={() => setPaused(true)}
@@ -112,7 +115,8 @@ export function DealsShelf({
           onDragStart={(e) => e.preventDefault()}
         >
           {items.map(({ summary, from, amount, daysAgo }, i) => (
-            <div key={summary.product.id} className="w-1/2 shrink-0 snap-start sm:w-1/3 lg:w-1/5">
+            // ভগ্নাংশ width এ gap বাদ পড়ে, তাই শেষ কার্ড কেটে যেত; calc এ গ্যাপ বাদ দিয়ে ঠিক ফিট করি
+            <div key={summary.product.id} className="w-[calc(50%-6px)] shrink-0 snap-start sm:w-[calc(33.333%-8px)] lg:w-[calc(20%-9.6px)] xl:w-[calc(16.667%-10px)]">
               <ProductCard
                 summary={{ ...summary, compareAt: from }}
                 deal={amount}

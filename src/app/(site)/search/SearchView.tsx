@@ -75,7 +75,7 @@ function matches(s: ProductSummary, f: Filters) {
 
 function GridSkeleton() {
   return (
-    <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5">
+    <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-6">
       {Array.from({ length: 10 }, (_, i) => (
         <Skeleton key={i} className="aspect-[3/5]" />
       ))}
@@ -311,7 +311,7 @@ export function SearchView({ category, brand, initial, extra, heading, crumb }: 
             </EmptyState>
           ) : (
             <>
-              <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5">
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-6">
                 {paged.items.map((summary, i) => (
                   <ProductCard key={summary.product.id} summary={summary} loading={i < 4 ? "eager" : "lazy"} />
                 ))}
