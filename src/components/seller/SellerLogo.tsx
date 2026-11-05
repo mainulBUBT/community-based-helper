@@ -5,9 +5,7 @@ import { useState } from "react";
 import type { Seller } from "@/types/catalog";
 
 const LOGO_EXT: Record<string, string> = {
-  "54a6a76b-b888-4e1f-9684-01ded818a73f": "ico",
   "12c25688-4bbe-447b-b6d9-c72fee140af9": "jpg",
-  "eace1aeb-976e-4eba-93ed-07c39d1c88aa": "gif",
 };
 
 export function SellerLogo({ seller, size = 28 }: { seller: Seller; size?: number }) {

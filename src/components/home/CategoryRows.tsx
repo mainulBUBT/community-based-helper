@@ -5,6 +5,7 @@ import { ProductCard } from "@/components/product/ProductCard";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
+import { seasonalStore } from "@/lib/preferences";
 import type { ProductSummary } from "@/types/catalog";
 import { byPopularity, byStock } from "@/utils/catalog";
 import { categoryPath } from "@/utils/url";
@@ -35,9 +36,12 @@ export function CategoryRows({ summaries }: { summaries: ProductSummary[] }) {
   const { t, num, lang, prefix } = useI18n();
   const { top, has } = useCategories();
   const roll = useSyncExternalStore(still, () => seed, () => 0);
+  const seasonal = useSyncExternalStore(seasonalStore.subscribe, seasonalStore.get, () => true);
   return (
     <>
-      {top.map((c) => {
+      {top
+        .filter((c) => seasonal || !c.collection)
+        .map((c) => {
         const items = summaries
           .filter((s) => has(c.slug, s.product))
           .sort((a, b) => byStock(a, b) || byPopularity(a, b));
@@ -49,7 +53,7 @@ export function CategoryRows({ summaries }: { summaries: ProductSummary[] }) {
               href={categoryPath(prefix, c.slug)}
               linkLabel={t.home.seeAllIn(num(items.length))}
             />
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
               {pick(items, roll).map((summary) => (
                 <ProductCard key={summary.product.id} summary={summary} />
               ))}

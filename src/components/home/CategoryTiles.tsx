@@ -2,21 +2,25 @@
 
 import { Snowflake } from "lucide-react";
 import Link from "next/link";
+import { useSyncExternalStore } from "react";
 import { AllCategoriesIcon, CategoryIcon } from "@/components/product/CategoryIcon";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
+import { setSeasonal, seasonalStore } from "@/lib/preferences";
 import type { ProductSummary } from "@/types/catalog";
 import { categoryPath } from "@/utils/url";
 
 export function CategoryTiles({ summaries }: { summaries: ProductSummary[] }) {
   const { t, num, lang, prefix } = useI18n();
   const { top, has } = useCategories();
+  const seasonal = useSyncExternalStore(seasonalStore.subscribe, seasonalStore.get, () => true);
   const shown = top
-    .filter((c) => summaries.some((s) => has(c.slug, s.product)))
+    .filter((c) => (seasonal || !c.collection) && summaries.some((s) => has(c.slug, s.product)))
     .map((c) => ({
       c,
       count: summaries.filter((s) => has(c.slug, s.product)).length,
     }));
+  const hasSeasonal = top.some((c) => c.collection && summaries.some((s) => has(c.slug, s.product)));
   return (
     <div className="relative">
       <nav
@@ -61,6 +65,18 @@ export function CategoryTiles({ summaries }: { summaries: ProductSummary[] }) {
             {t.home.models(num(summaries.length))}
           </span>
         </Link>
+        {hasSeasonal && (
+          <button
+            type="button"
+            onClick={() => setSeasonal(!seasonal)}
+            aria-pressed={seasonal}
+            aria-label={seasonal ? t.home.seasonalHide : t.home.seasonalShow}
+            className={`ml-1 flex h-9 shrink-0 items-center gap-1.5 self-center rounded-full px-3.5 text-[12.5px] font-semibold ring-2 transition-colors ${seasonal ? "bg-gold-soft text-gold-ink ring-gold/40" : "bg-surface text-dim ring-line-soft hover:ring-line"}`}
+          >
+            <Snowflake size={15} aria-hidden="true" />
+            {t.home.seasonal}
+          </button>
+        )}
       </nav>
     </div>
   );
