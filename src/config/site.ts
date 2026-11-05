@@ -35,7 +35,7 @@ export const DEFAULT_SETTINGS: SiteSettings = {
   popupEnabled: false,
   popupImage: "/banners/winter-festival.webp",
   popupLink: "/category/winter/",
-  popupAlt: "শীত উৎসবের সাশ্রয়: খেজুরের গুড়, মধু, লোশন আর লিপ বামের দাম এক জায়গায়",
+  popupAlt: "শীত উৎসবের সাশ্রয়: শীতের দরকারি পণ্যের দাম এক জায়গায়",
   aboutWho: "দরদাম একটা স্বাধীন দাম-তুলনার সাইট। আমরা কোনো দোকান নই, কিছু বিক্রিও করি না, কোনো দোকানের হয়ে কাজও করি না।",
   aboutWhoEn: "Dordam is an independent price comparison site. We're not a shop, we don't sell anything, and we don't work for any shop.",
   aboutWhat: "বাংলাদেশের দোকানগুলো থেকে একই পণ্যের দাম জোগাড় করে পাশাপাশি দেখাই, যাতে কেনার আগে যাচাই করে সবচেয়ে ভালো দামে কিনতে পারেন।",
