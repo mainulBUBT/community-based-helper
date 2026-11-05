@@ -122,6 +122,8 @@ Sumash Tech আর Gadget Breeze GitHub এর datacenter IP কে Cloudflare �
 
 ### ফলব্যাক চেইন: Jina Reader আগে, Gemini পরে (৪ নভেম্বর ২০২৬)
 
+**৫ নভেম্বর থেকে:** `workers/stores/local.ts`-এর ১৮টা দোকান GitHub-এর `prices` আর `discover` থেকে বাদ, শুধু [লোকাল রানারে](../local-runner.md)। এই ফলব্যাক চলে বাকি দোকানগুলোর জন্য, যেগুলো কোনো run-এ আটকে যায়।
+
 GitHub-এর IP আটকানো দোকানের পাতা পড়ার চেইন এখন তিন ধাপ (`workers/lib/jina.ts`, `prices` run এর শেষে):
 
 1. **Jina Reader HTML** (`r.jina.ai`, ফ্রি, key ছাড়াই): ওদের সার্ভার কাঁচা HTML এনে দিলে **আমাদের নিজের parser-ই দাম বের করে** — JSON-LD, ভার্সন-ডেটা, কোনো AI আন্দাজ নেই, তাই বেশি নির্ভুল। Gadget & Gear এভাবে ৪ ভার্সনের আসল দাম আসে।

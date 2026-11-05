@@ -28,7 +28,8 @@ export async function privateSettings(): Promise<PrivateSettings> {
   const value = (row?.value ?? {}) as StoredSettings;
   const models = storedModels(value);
   cached = {
-    models: models.length ? models : envLlm(),
+    // লোকাল জবের AI আসে মালিকের নিজের CLI থেকে (lib/local-ai.ts), API key-এর সেটআপ থেকে নয়
+    models: process.env.LOCAL_JOB ? [] : models.length ? models : envLlm(),
     telegramBotToken: value.telegramBotToken ?? null,
     alertChatId: value.alertChatId ?? null,
   };

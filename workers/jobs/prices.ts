@@ -10,6 +10,7 @@ import { autoReview } from "../services/auto-review";
 import { markGone, refreshOffer, saveProductImage } from "../services/offers";
 import { readPage } from "../stores/page";
 import { storeFor } from "../stores";
+import { isLocalUrl } from "../stores/local";
 import { deadline } from "./budget";
 import { blockedNote, count } from "./summary";
 
@@ -88,11 +89,11 @@ export async function refreshPrices(): Promise<string> {
       .order("id")
       .range(from, to),
   );
-  // local_prices জবে শুধু ঘরের IP থেকে পড়ার দোকান (workers/stores/local.ts); না থাকলে সব
-  const only = process.env.PRICES_ONLY?.split(",").filter(Boolean);
+  // ঘরের IP থেকে পড়ার দোকান (workers/stores/local.ts) শুধু local_prices জবে; prices এদের ছোঁয় না
+  const localRun = Boolean(process.env.LOCAL_JOB);
   const rows = offers
     .filter((row) => row.source === "site" || row.sellers?.kind === "website")
-    .filter((row) => !only?.length || only.includes(new URL(row.url).host.replace(/^www\./, "")));
+    .filter((row) => isLocalUrl(row.url) === localRun);
   const tally: Tally = { checked: 0, changed: 0, anomaly: 0, unmatched: 0, failed: 0, blocked: 0, ai: 0, jina: 0, booking: 0 };
   const directDone = deadline(DIRECT_MINUTES);
   const fallbackDone = deadline(FALLBACK_MINUTES);
@@ -158,7 +159,7 @@ export async function refreshPrices(): Promise<string> {
   }
 
   if (rows.length > 0 && tally.checked === 0) throw new Error(`একটা দামও আনা যায়নি${blockedNote()}; ${errors.slice(0, 3).join("; ")}`);
-  // সবার শেষে, তাই আজকের অনুমোদন বসে পরের run এ; মাঝে অ্যাডমিন ফিরিয়ে নিতে পারেন
+  // সবার শেষে, তাই আজকের অনুমোদন বসে পরের run এ; মাঝে অ্যাডমিন ফিরিয়ে নিতে পারেন। লোকাল run এও চলে: আটকানো দোকানের পাতা মিলিয়ে দেখা GitHub থেকে যায় না
   const reviewed = outOfTime() ? null : await autoReview(outOfTime).catch((error) => ({ approved: 0, rejected: 0, left: 0, errors: [message(error)] }));
   const skipped = rows.length - tally.checked - tally.unmatched - tally.failed - tally.blocked;
   return [

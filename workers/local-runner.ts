@@ -22,7 +22,7 @@ interface JobRow {
 
 async function job(id: string): Promise<JobRow> {
   const { data, error } = await db().from("jobs").select("enabled, run_requested_at, last_run_at, last_status").eq("id", id).single();
-  if (error || !data) throw new Error(error?.message ?? `${id} জব নেই (supabase/batches/2026-11-04-local-prices-job.sql চালাতে হবে)`);
+  if (error || !data) throw new Error(error?.message ?? `${id} job not found (run supabase/batches/2026-11-04-local-prices-job.sql)`);
   return data as JobRow;
 }
 
@@ -36,10 +36,10 @@ async function newProducts(): Promise<number> {
 async function due(id: "local_prices" | "local_discover"): Promise<string | null> {
   const row = await job(id);
   if (row.last_status === "running" && row.last_run_at && Date.now() - Date.parse(row.last_run_at) < 2 * 3600_000) return null;
-  if (row.run_requested_at && (!row.last_run_at || row.run_requested_at > row.last_run_at)) return "অ্যাডমিনের অনুরোধ";
+  if (row.run_requested_at && (!row.last_run_at || row.run_requested_at > row.last_run_at)) return "requested from admin";
   if (!row.enabled) return null;
-  if (id === "local_discover" && (await newProducts()) > 0) return "নতুন পণ্য এসেছে";
-  if (id === "local_prices" && everyHours > 0 && (!row.last_run_at || Date.now() - Date.parse(row.last_run_at) > everyHours * 3600_000)) return `${everyHours} ঘণ্টা পার`;
+  if (id === "local_discover" && (await newProducts()) > 0) return "new products found";
+  if (id === "local_prices" && everyHours > 0 && (!row.last_run_at || Date.now() - Date.parse(row.last_run_at) > everyHours * 3600_000)) return `${everyHours} hours passed`;
   return null;
 }
 
@@ -51,7 +51,7 @@ function run(id: string): Promise<number> {
 }
 
 async function main() {
-  console.log(`লোকাল রানার চালু${everyHours ? `, local_prices প্রতি ${everyHours} ঘণ্টায়` : ""}; অ্যাডমিনের অনুরোধ আর নতুন পণ্যের অপেক্ষায় (Ctrl+C বন্ধ)`);
+  console.log(`Local runner started${everyHours ? `, local_prices every ${everyHours} hours` : ""}; waiting for admin requests and new products (Ctrl+C to stop)`);
   for (;;) {
     for (const id of ["local_discover", "local_prices"] as const) {
       try {

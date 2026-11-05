@@ -1,4 +1,5 @@
 import { liveKeys, QuotaError, splitKeys, withKeys } from "./llm-keys";
+import { askLocalAi, localAiCommand } from "./local-ai";
 import { modelTarget, privateSettings, type LlmSettings } from "./settings";
 import { sleep } from "./sleep";
 
@@ -23,6 +24,7 @@ async function readyModels(): Promise<LlmSettings[]> {
 // কেন AI ডাকা যাবে না: "off" কোনো সেটআপ নেই, "budget" এই run এর সীমা বা সব সেটআপের quota শেষ; ডাকা গেলে null
 export async function llmBlocker(): Promise<"off" | "budget" | null> {
   if (calls <= 0) return "budget";
+  if (process.env.LOCAL_JOB) return localAiCommand() ? null : "off";
   if (!configured((await privateSettings()).models).length) return "off";
   return (await readyModels()).length ? null : "budget";
 }
@@ -55,8 +57,23 @@ async function callModel(llm: LlmSettings, system: string, user: string): Promis
   return res.status === 400 ? send(request) : res;
 }
 
+const parseJson = <T>(content: string) => JSON.parse(content.trim().replace(/^```(?:json)?\s*|\s*```$/g, "")) as T;
+
+// CLI না চললে বা subscription-এর সীমা শেষ হলে বাকি run AI ছাড়াই। কিছু CLI JSON এর আগে-পরে লেখা জোড়ে, তাই শুধু JSON অংশটা
+async function askLocal<T>(system: string, user: string): Promise<T> {
+  calls--;
+  try {
+    const answer = await askLocalAi(system, user);
+    return parseJson<T>(/\{[\s\S]*\}/.exec(answer)?.[0] ?? answer);
+  } catch (error) {
+    if (!(error instanceof SyntaxError)) calls = 0;
+    throw error;
+  }
+}
+
 // প্রথম সেটআপ দিয়ে; quota শেষ (429), সাড়া না দেওয়া বা 5xx হলে তালিকার পরেরটা
 export async function askJson<T>(system: string, user: string): Promise<T> {
+  if (process.env.LOCAL_JOB) return askLocal<T>(system, user);
   const models = await readyModels();
   if (!models.length) throw new Error((await llmBlocker()) === "off" ? "LLM key is not set in private_settings" : "সব AI সেটআপের quota শেষ");
   for (const [i, llm] of models.entries()) {
@@ -78,7 +95,7 @@ export async function askJson<T>(system: string, user: string): Promise<T> {
     if (!res.ok) throw new Error(`LLM HTTP ${res.status}`);
     const body = (await res.json()) as { choices?: { message?: { content?: string } }[] };
     const content = body.choices?.[0]?.message?.content ?? "";
-    return JSON.parse(content.replace(/^```(?:json)?\s*|\s*```$/g, "")) as T;
+    return parseJson<T>(content);
   }
   throw new Error("সব AI সেটআপের quota শেষ");
 }

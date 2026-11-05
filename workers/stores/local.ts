@@ -1,6 +1,6 @@
 // GitHub এর সার্ভার যেসব দোকানের robots.txt বা পাতায় 403 পায় (১১-০৪ এর prices আর discover run), কিন্তু ঘরের IP থেকে সৎ DordamBot পরিচয়েই খোলে।
-// এগুলো `local_prices` জবে ম্যাক/PC/ফোনের রানার থেকে পড়া হয়। Chaldal বাদ: ঘরের IP থেকেও সংযোগ হয় না।
-export const LOCAL_HOSTS = [
+// এগুলো শুধু `local_prices` আর `local_discover` জবে ম্যাক/PC/ফোনের রানার থেকে পড়া হয়; GitHub এর prices আর discover এদের ছোঁয় না। Chaldal বাদ: ঘরের IP থেকেও সংযোগ হয় না।
+const LOCAL_HOSTS = [
   "sumashtech.com",
   "kryinternational.com",
   "mobilebuzzbd.com",
@@ -20,3 +20,5 @@ export const LOCAL_HOSTS = [
   "pchouse.com.bd",
   "themallbd.com",
 ];
+
+export const isLocalUrl = (url: string) => LOCAL_HOSTS.includes(new URL(url).host.replace(/^www\./, ""));

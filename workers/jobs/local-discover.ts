@@ -1,6 +1,5 @@
 import { db } from "../lib/db";
-import { LOCAL_HOSTS } from "../stores/local";
-import { bn } from "../lib/bn";
+import { isLocalUrl } from "../stores/local";
 import { discoverStore, sellerStores, type StoreResult } from "./discover";
 import type { JobRun } from "./run";
 
@@ -15,15 +14,13 @@ export async function lastOkRun(job: string, current: number): Promise<string | 
 
 export const localSince = async (run: JobRun) => (await lastOkRun(run.job, run.id)) ?? new Date(Date.now() - DEFAULT_DAYS * 86_400_000).toISOString();
 
-const host = (url: string) => new URL(url).host.replace(/^www\./, "");
-
 export async function localDiscover(run: JobRun): Promise<string> {
   const since = await localSince(run);
-  const active = (await sellerStores()).filter(({ store }) => LOCAL_HOSTS.includes(host(store.origin)));
+  const active = (await sellerStores()).filter(({ store }) => isLocalUrl(store.origin));
   const results: StoreResult[] = await Promise.all(active.map(({ store, seller }) => discoverStore(store, seller, since)));
   const total = (key: "added" | "review" | "failed") => results.reduce((sum, r) => sum + r[key], 0);
   const notes = results.flatMap((r) => r.notes);
-  const summary = `${bn(active.length)}টা দোকানে ${since.slice(0, 16).replace("T", " ")} এর পরের পণ্য খোঁজা: ${bn(total("added"))}টা নতুন দাম, ${bn(total("review"))}টা যাচাইয়ে, ${bn(total("failed"))}টা ব্যর্থ`;
+  const summary = `Searched ${active.length} stores for products added after ${since.slice(0, 16).replace("T", " ")}: ${total("added")} new prices, ${total("review")} sent to review, ${total("failed")} failed`;
   if (notes.length || results.some((r) => !r.finished)) throw new Error([summary, ...notes].join("; "));
   return summary;
 }

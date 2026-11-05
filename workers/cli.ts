@@ -8,13 +8,14 @@ import { rebuild } from "./jobs/rebuild";
 import { runJob, type JobId, type JobRun } from "./jobs/run";
 import { autoReview, compareWithHumans } from "./services/auto-review";
 
-import { LOCAL_HOSTS } from "./stores/local";
-
 const jobs: Record<JobId, (run: JobRun) => Promise<string>> = {
   prices: refreshPrices,
-  local_discover: localDiscover,
+  local_discover: (run) => {
+    process.env.LOCAL_JOB = "1";
+    return localDiscover(run);
+  },
   local_prices: () => {
-    process.env.PRICES_ONLY = LOCAL_HOSTS.join(",");
+    process.env.LOCAL_JOB = "1";
     return refreshPrices();
   },
   discover,

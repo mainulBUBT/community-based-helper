@@ -3,6 +3,7 @@ import { join } from "node:path";
 import { requireEnv } from "../lib/env";
 import { loadCatalog } from "../services/catalog";
 import { shopOffers } from "../services/shop";
+import { isLocalUrl } from "../stores/local";
 import { discoverStore, sellerStores, summarize, type StoreResult } from "./discover";
 import { finishJob, startJob, type JobRun } from "./run";
 
@@ -18,7 +19,8 @@ async function output(values: Record<string, string>) {
 
 async function plan() {
   const run = await startJob("discover");
-  const sellers = run ? await sellerStores() : [];
+  // ঘরের IP থেকে পড়ার দোকান GitHub এ নয়; এদের খোঁজে local_discover
+  const sellers = run ? (await sellerStores()).filter(({ store }) => !isLocalUrl(store.origin)) : [];
   // নতুন পণ্য না থাকলে শুধু সেই দোকান, যার এখনো একটাও দাম নেই; বাকি দোকানের job চালু করাই হয় না
   const pending = run ? (await loadCatalog()).some((p) => p.pending) : false;
   const active = pending
