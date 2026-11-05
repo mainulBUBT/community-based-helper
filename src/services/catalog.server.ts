@@ -48,6 +48,8 @@ export async function getSiteSettings(): Promise<SiteSettings> {
     facebook: safeUrl(settings.facebook),
     youtube: safeUrl(settings.youtube),
     announcementLink: safeUrl(settings.announcementLink, { relative: true }),
+    popupImage: safeUrl(settings.popupImage, { relative: true }),
+    popupLink: safeUrl(settings.popupLink, { relative: true }),
   };
 }
 

@@ -103,6 +103,10 @@ export interface SiteSettings {
   announcement: string | null;
   announcementEn: string | null;
   announcementLink: string | null;
+  popupEnabled: boolean;
+  popupImage: string | null;
+  popupLink: string | null;
+  popupAlt: string | null;
   regionNotes: RegionNote[];
   aboutWho: string;
   aboutWhoEn: string;

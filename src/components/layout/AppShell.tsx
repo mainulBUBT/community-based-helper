@@ -19,6 +19,7 @@ import {
   LanguageButton,
   ThemeButton,
 } from "@/components/layout/PreferenceButtons";
+import { PromoPopup } from "@/components/layout/PromoPopup";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { CategoryIcon } from "@/components/product/CategoryIcon";
 import { SearchBox } from "@/components/search/SearchBox";
@@ -183,6 +184,7 @@ export function AppShell({
           <NavProgress />
         </Suspense>
         <Announcement settings={settings} />
+        <PromoPopup settings={settings} />
         <header className="sticky top-0 z-40 border-b border-line-soft bg-surface shadow-sm">
           <div className="page-container flex h-16 items-center gap-4 lg:gap-6">
             <Link

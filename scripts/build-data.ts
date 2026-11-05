@@ -125,6 +125,8 @@ async function main() {
     facebook: safeUrl(raw.settings.facebook),
     youtube: safeUrl(raw.settings.youtube),
     announcementLink: safeUrl(raw.settings.announcementLink, { relative: true }),
+    popupImage: safeUrl(raw.settings.popupImage, { relative: true }),
+    popupLink: safeUrl(raw.settings.popupLink, { relative: true }),
   };
 
   await mkdir(OUT, { recursive: true });

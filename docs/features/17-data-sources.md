@@ -569,3 +569,7 @@ Samsung-এর S/Z সিরিজ, Pixel আর বড় ব্র্যান
 ### Shwapno পরীক্ষা (৫ নভেম্বর ২০২৬, এখনো যোগ হয়নি)
 
 robots খোলা, sitemap-এ ১৪,৪৭৫টা লিংক। সাধারণ `getText` আর Jina-তে দাম আসে না, কিন্তু Playwright (`render`) দিয়ে JSON-LD-এ আসে; ৩টা মধুর পাতায় পড়া গেছে (Dabur ৫০০g ৳৪৮৯, Al Shifa Acacia ৫০০g ৳২,০৯৫, Shefa'a ৫০০g ৳৮১০)। ফাঁদ: Al Shifa আর Shefa'a-র পাতায় "Request item" লেখা, অথচ JSON-LD বলে স্টকে আছে, তাই স্টক পাতার লেখা থেকে ধরতে হবে। পাতায় "Select your delivery location"-ও আছে, এলাকা ভেদে দাম বা স্টক বদলায় কি না দেখা হয়নি। GitHub Actions-এর IP থেকে খোলে কি না `probe-stores`-এ দেখতে হবে।
+
+### সুপারশপের সাইট পরীক্ষা (৫ নভেম্বর ২০২৬, কোনোটা যোগ হয়নি)
+
+শুধু হোমপেজ ব্রাউজারে (`render`) খুলে দেখা; পণ্যের পাতা, মধু বা স্টক এখনো দেখা হয়নি। Meena Bazar (`meenabazaronline.com`): সাধারণ HTML খালি, sitemap নেই, ব্রাউজারে দাম আসে, লিংক `/product/<নাম>/<id>`, এলাকা বাছতে বলে। Agora (`agorasuperstores.com`): sitemap নেই, ব্রাউজারে হোমেই ৫,৭০০+ লিংক আর দাম। Prince Bazar (`princebazarbd.com`): ব্রাউজারে দাম আসে, ডেলিভারি কয়েকটা এলাকায়। Unimart (`unimart.online`): ব্রাউজারেও প্রায় খালি। Daily Shopping (`dailyshoppingbd.com`): Othoba-তে redirect, আলাদা দোকান নয়। `meenaclick.com`, `lavendersuperstore.com`, `almassuperstore.com`: ঠিকানা খোলে না; `meenabazar.com.bd` HTTP 523।

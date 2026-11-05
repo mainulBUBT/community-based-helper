@@ -6,6 +6,7 @@ import { IconPicker } from "@/components/admin/IconPicker";
 import { LangTabs } from "@/components/admin/LangTabs";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { ProductPicker } from "@/components/admin/ProductPicker";
+import { PublishButton } from "@/components/admin/PublishButton";
 import { Toggle } from "@/components/admin/Toggle";
 import { CategoryIcon } from "@/components/product/CategoryIcon";
 import { ErrorNotice } from "@/components/ui/ErrorNotice";
@@ -15,13 +16,12 @@ import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { useAsync } from "@/hooks/useAsync";
 import { showToast } from "@/lib/toast";
 import { deleteCategory, listCollections, saveCategory } from "@/services/admin/categories";
-import { listJobs, requestJobRun } from "@/services/admin/jobs";
 import { listSummaries } from "@/services/catalog-live";
 import type { CategoryInfo, Product } from "@/types/catalog";
 
 async function loadData() {
-  const [collections, summaries, jobs] = await Promise.all([listCollections(), listSummaries(true), listJobs()]);
-  return { collections, products: summaries.map((s) => s.product), rebuild: jobs.find((job) => job.id === "rebuild") };
+  const [collections, summaries] = await Promise.all([listCollections(), listSummaries(true)]);
+  return { collections, products: summaries.map((s) => s.product) };
 }
 
 function CollectionForm({ collection, isNew, products, onClose }: { collection: CategoryInfo; isNew: boolean; products: Product[]; onClose: (saved: boolean) => void }) {
@@ -87,7 +87,7 @@ export default function CollectionsPage() {
   if (loading) return <ListSkeleton />;
   if (error || !data) return <ErrorNotice onRetry={reload} />;
 
-  const { collections, products, rebuild } = data;
+  const { collections, products } = data;
   const close = (saved: boolean) => {
     setEditing(null);
     if (saved) reload();
@@ -102,11 +102,7 @@ export default function CollectionsPage() {
         subtitle={text.subtitle}
         action={
           <div className="flex gap-2">
-            {rebuild && (
-              <button type="button" disabled={busy} onClick={() => run(() => requestJobRun(rebuild), t.admin.jobs.runQueuedToast)} className={secondaryButton}>
-                {text.publish}
-              </button>
-            )}
+            <PublishButton />
             <button type="button" onClick={() => setEditing({ collection: blank, isNew: true })} className={primaryButton}>
               {text.new}
             </button>

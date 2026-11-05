@@ -53,6 +53,7 @@ function SettingsForm({ initial }: { initial: SiteSettings }) {
     try {
       await saveSiteSettings(
         {
+          ...initial,
           name: value("name") ?? initial.name,
           nameEn: value("nameEn") ?? initial.nameEn,
           tagline: value("tagline") ?? "",
