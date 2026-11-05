@@ -16,10 +16,10 @@ interface Tool {
 }
 
 const digits = "০১২৩৪৫৬৭৮৯";
-const bn = (value: number) => String(value).replace(/\d/g, (d) => digits[Number(d)]);
+export const bn = (value: number) => String(value).replace(/\d/g, (d) => digits[Number(d)]);
 const noArgs = { type: "object", properties: {} };
 
-interface JobRow {
+export interface JobRow {
   id: string;
   name: string;
   enabled: boolean;
@@ -55,7 +55,20 @@ const STALE_DAYS = 7;
 const words = (query: string) => query.replace(/[^\p{L}\p{N}\s.-]/gu, " ").split(/\s+/).filter(Boolean).slice(0, 4);
 
 // বাকি সব টুল শুধু পড়ে। লেখে শুধু দুটো: send_telegram মালিকের নিজের chat-এ, আর run_job অ্যাডমিনের "এখনই চালান"-এর মতো কাজ লাইনে দেয়
-const RUNNABLE = ["prices", "discover", "promos", "rebuild"];
+export const RUNNABLE = ["prices", "discover", "promos", "rebuild"];
+
+// GitHub সময় শেষে মেরে ফেললে "running" থেকে যায়; workers/jobs/run.ts-ও ২ ঘণ্টা পরে সেটাকে মৃত ধরে
+const STUCK_AFTER = 2 * 3_600_000;
+
+export async function queueJob(env: ManagerEnv, id: string): Promise<{ queued: boolean; name?: string }> {
+  const [job] = await rest<Pick<JobRow, "name" | "run_requested_at" | "last_run_at" | "last_status">[]>(env, `jobs?select=name,run_requested_at,last_run_at,last_status&id=eq.${id}`);
+  if (!job) return { queued: false };
+  const waiting = job.run_requested_at && (!job.last_run_at || job.run_requested_at > job.last_run_at);
+  const running = job.last_status === "running" && job.last_run_at && Date.now() - Date.parse(job.last_run_at) < STUCK_AFTER;
+  if (running || waiting) return { queued: false, name: job.name };
+  await patch(env, `jobs?id=eq.${id}`, { run_requested_at: new Date().toISOString() });
+  return { queued: true, name: job.name };
+}
 
 export const TOOLS: Record<string, Tool> = {
   jobs_status: {
@@ -147,6 +160,16 @@ export const TOOLS: Record<string, Tool> = {
       };
     },
   },
+  my_actions: {
+    description: "গত ৩ দিনে তুমি নিজে কী করেছ: কোন পণ্যে কোন ভার্সন যোগ করেছ (প্রমাণের লিংকসহ), আর কোন আইটেম নিজে মেটাতে না পেরে যাচাই বাকিতে রেখেছ (সকালের রিপোর্টে বলার জন্য)",
+    parameters: noArgs,
+    async run(env) {
+      const since = new Date(Date.now() - 3 * 86_400_000).toISOString();
+      const rows = await rest<{ action: string; detail: unknown; created_at: string }[]>(env, `audit_log?select=action,detail,created_at&action=like.agent.*&created_at=gte.${since}&order=created_at.desc&limit=30`);
+      const added = rows.filter((r) => r.action === "agent.variant").length;
+      return { data: rows, result: `${bn(added)}টা ভার্সন যোগ · ${bn(rows.length - added)}টা অন্য খবর`, tone: "ok" };
+    },
+  },
   run_job: {
     description:
       "একটা নিয়মিত কাজ এখনই চালাতে লাইনে দেওয়া (অ্যাডমিনের \"এখনই চালান\"-এর মতো), শুধু মালিক চাইলে। prices: দাম আনা (শেষে যাচাই বাকি থেকে AI নিজে নিশ্চিতগুলো সিদ্ধান্ত নেয়, প্রতিবার সর্বোচ্চ ৩০টা), discover: নতুন পণ্য খোঁজা, promos: অফার পড়া, rebuild: সাইট বানানো। যাচাই বাকি সরাসরি অনুমোদন বা বাদ করার টুল নেই",
@@ -154,12 +177,10 @@ export const TOOLS: Record<string, Tool> = {
     async run(env, args) {
       const id = String(args.job ?? "");
       if (!RUNNABLE.includes(id)) return { data: { queued: false }, result: "এই কাজ চালানো যায় না", tone: "bad" };
-      const [job] = await rest<Pick<JobRow, "name" | "run_requested_at" | "last_run_at" | "last_status">[]>(env, `jobs?select=name,run_requested_at,last_run_at,last_status&id=eq.${id}`);
-      if (!job) return { data: { queued: false }, result: "কাজটা পাওয়া যায়নি", tone: "bad" };
-      const waiting = job.run_requested_at && (!job.last_run_at || job.run_requested_at > job.last_run_at);
-      if (job.last_status === "running" || waiting) return { data: { queued: false, reason: "already running or queued" }, result: `${job.name} আগেই চলছে বা লাইনে আছে`, tone: "wait" };
-      await patch(env, `jobs?id=eq.${id}`, { run_requested_at: new Date().toISOString() });
-      return { data: { queued: true }, result: `${job.name} লাইনে দেওয়া হয়েছে`, tone: "ok" };
+      const { queued, name } = await queueJob(env, id);
+      if (!name) return { data: { queued: false }, result: "কাজটা পাওয়া যায়নি", tone: "bad" };
+      if (!queued) return { data: { queued: false, reason: "already running or queued" }, result: `${name} আগেই চলছে বা লাইনে আছে`, tone: "wait" };
+      return { data: { queued: true }, result: `${name} লাইনে দেওয়া হয়েছে`, tone: "ok" };
     },
   },
   send_telegram: {

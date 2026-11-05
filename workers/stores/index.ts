@@ -7,7 +7,7 @@ import { pace } from "../lib/limiter";
 import { pool } from "../lib/pool";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import { appleGadgetsVariants, aurevaVariants, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, rioVariants, shopifyProduct, startechVariants, sumashVariants, themallVariants, wooVariants } from "./parsers";
+import { appleGadgetsVariants, aurevaVariants, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, rioVariants, shajgojVariants, shopifyProduct, startechVariants, sumashVariants, themallVariants, wooVariants } from "./parsers";
 import { isReplica } from "../../src/utils/categories";
 import type { Condition, Listing, Store } from "./types";
 export type { Condition, Listing, Store };
@@ -408,6 +408,7 @@ export const stores: Store[] = [
     sitemap: "https://shop.shajgoj.com/sitemap.xml",
     path: "/product/",
     condition: "official",
+    variants: shajgojVariants,
   }),
   sitemapStore({
     id: "arogga",

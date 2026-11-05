@@ -17,6 +17,7 @@ export interface StoredSettings {
   llmKeys?: Record<string, string>;
   telegramBotToken?: string | null;
   alertChatId?: string | null;
+  managerAuto?: boolean;
 }
 
 export const providerKey = (baseUrl: string) => baseUrl.trim().replace(/\/+$/, "");

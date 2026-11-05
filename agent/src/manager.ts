@@ -3,9 +3,10 @@ import { splitKeys, storedModels, type LlmSettings, type StoredSettings } from "
 import type { ManagerEnv } from "./env";
 import { SITE } from "./context";
 import { chat, type ChatMessage } from "./llm";
-import { privateSettings } from "./supabase";
+import { privateSettings, rest } from "./supabase";
 import { sendMessage, setWebhook, tokenMark, webhookSecret } from "./telegram";
-import { TOOLS, type Step } from "./tools";
+import { queueJob, RUNNABLE, TOOLS, type JobRow, type Step } from "./tools";
+import { alertText, blockedHosts, hostsText, isDanger, isQuiet, judge, newHosts, rememberHosts, retryNote, WATCHED, type WatchState } from "./watch";
 
 type Role = "user" | "manager" | "schedule";
 
@@ -28,9 +29,11 @@ const MAX_ROUNDS = 6;
 const CONTEXT = 10;
 // AI দেখে শেষ ১০টা, অ্যাডমিন পাতা ৪০টা; এর চেয়ে পুরনো কথা শুধু জায়গা নেয়
 const KEEP = 500;
+const WATCH_EVERY = 30 * 60_000;
+const RETRY_AFTER_ERROR = 5 * 60_000;
 
 const REPORT =
-  "সকালের রিপোর্ট লেখো: কাজগুলোর অবস্থা (কোনটা ব্যর্থ বা আটকে থাকলে কারণসহ), যাচাই বাকি কয়টা, গতকাল ভিজিটর কী খুঁজেছে, আর রাখার মানে কম এমন পণ্য কয়টা (নিয়ম ভাঙা ২-৩টার নাম কারণসহ)। ৬-৮ লাইনে, প্রতিটা লাইনের শুরুতে একটা ইমোজি।";
+  "সকালের রিপোর্ট লেখো: my_actions দেখে নিজে কী করেছ, কাজগুলোর অবস্থা (কোনটা ব্যর্থ বা আটকে থাকলে কারণসহ), যাচাই বাকি কয়টা, গতকাল ভিজিটর কী খুঁজেছে, আর রাখার মানে কম এমন পণ্য কয়টা (নিয়ম ভাঙা ২-৩টার নাম কারণসহ)। ৬-৮ লাইনে, প্রতিটা লাইনের শুরুতে একটা ইমোজি।";
 
 const system = (state: string) =>
   [
@@ -42,6 +45,8 @@ const system = (state: string) =>
     "মালিক বললে run_job দিয়ে নিয়মিত কাজ (দাম আনা, নতুন পণ্য খোঁজা, অফার, সাইট বানানো) এখনই চালাতে লাইনে দিতে পারো; কাজ শেষ হতে মিনিট লাগে, তাই কী লাইনে দিলে আর ফল পরে jobs_status-এ দেখবেন বলো। যাচাই বাকির কোনোটা তুমি নিজে অনুমোদন বা বাদ করতে পারো না: prices কাজের শেষে বিদ্যমান নিয়মে AI নিশ্চিতগুলো সিদ্ধান্ত নেয় (প্রতিবার সর্বোচ্চ ৩০টা), বাকিগুলো অ্যাডমিন → যাচাই বাকি পাতায় মালিকের জন্য।",
     "এর বাইরে কিছু (দাম, পণ্য বা সেটিং বদল) তুমি পারো না। মালিক চাইলে বলো সেই অনুমতি নেই, আর অ্যাডমিন প্যানেলের কোথায় করবেন বলে দাও।",
     "তুমি সহকারী: শুধু প্রশ্নের উত্তর নয়, টুলের ফলে কোনো সমস্যা বা সুযোগ চোখে পড়লে নিজে থেকে বলো আর কী করা উচিত পরামর্শ দাও। কোনো পণ্য লুকানো বা বাদের সিদ্ধান্ত সবসময় মালিকের।",
+    "পাহারা কোডে চলে, তোমার হাতে নয়: ব্যর্থ বা অনেকক্ষণ না চলা কাজ একবার নিজে আবার চালায়, আর নতুন কোনো দোকান আটকালে নোট রাখে। সেই নোটগুলো কথাবার্তায় দেখবে।",
+    "মালিক \"ম্যানেজার নিজে করবে\" অপশন চালু করলে prices কাজের শেষে কোড নিজেই নতুন ভার্সন যোগ করে: মোবাইলে একই কনফিগ ২+ দোকানে আসল দামে পেলে, দিনে সর্বোচ্চ ৫টা। my_actions-এ তার হিসাব আছে। নতুন দোকান যোগ, লুকানো বা মোছা এখনো এতে নেই। 🚨 মানে সবচেয়ে জরুরি: দাম আনা, পণ্য খোঁজা বা সাইট বানানোর কাজ আবার চালিয়েও ঠিক হয়নি। বাকি খবর Telegram-এ আলাদা করে না পাঠিয়ে সকালের রিপোর্টে বলো।",
     "তথ্য লাগলে টুল ডাকো। সংখ্যা, নাম বা পাতা কখনো বানিয়ে বলবে না; ওপরের তালিকায় না থাকলে বলো জানো না।",
     "উত্তর ছোট আর সহজ বাংলায়, বাংলাদেশে মানুষ যেভাবে কথা বলে। মালিক ইংরেজিতে লিখলে ইংরেজিতে।",
     `এখন ঢাকার সময়: ${new Date().toLocaleString("bn-BD", { timeZone: "Asia/Dhaka" })}`,
@@ -67,7 +72,11 @@ export class Manager extends DurableObject<ManagerEnv> {
       this.sql.exec("CREATE TABLE IF NOT EXISTS inbox (update_id INTEGER PRIMARY KEY, text TEXT NOT NULL)");
       const reportAt = (await ctx.storage.get<number>("reportAt")) ?? nextReport();
       await ctx.storage.put("reportAt", reportAt);
-      if ((await ctx.storage.getAlarm()) === null) await ctx.storage.setAlarm(reportAt);
+      const watchAt = (await ctx.storage.get<number>("watchAt")) ?? Date.now() + WATCH_EVERY;
+      await ctx.storage.put("watchAt", watchAt);
+      const next = Math.min(reportAt, watchAt);
+      const alarm = await ctx.storage.getAlarm();
+      if (alarm === null || alarm > next) await ctx.storage.setAlarm(next);
     });
   }
 
@@ -95,19 +104,77 @@ export class Manager extends DurableObject<ManagerEnv> {
     return new Response(null);
   }
 
+  // alarm বারবার ব্যর্থ হলে Cloudflare সেটা ফেলে দেয়, তখন পাহারাও থেমে যেত; তাই ত্রুটিতেও পরের alarm বসে
   async alarm() {
+    let failed = false;
+    try {
+      await this.work();
+    } catch (error) {
+      failed = true;
+      console.error(`manager alarm failed: ${error instanceof Error ? error.message : String(error)}`);
+    }
+    const reportAt = (await this.ctx.storage.get<number>("reportAt")) ?? nextReport();
+    const watchAt = (await this.ctx.storage.get<number>("watchAt")) ?? Date.now();
+    const next = Math.min(reportAt, watchAt);
+    await this.ctx.storage.setAlarm(failed ? Math.max(next, Date.now() + RETRY_AFTER_ERROR) : next);
+  }
+
+  private async work() {
     const settings = await privateSettings(this.env);
     for (const { update_id, text } of this.sql.exec<{ update_id: number; text: string }>("SELECT update_id, text FROM inbox ORDER BY update_id").toArray()) {
       this.sql.exec("DELETE FROM inbox WHERE update_id = ?", update_id);
       await this.notify(settings, await this.reply(settings, text, "user"));
     }
-    let reportAt = (await this.ctx.storage.get<number>("reportAt")) ?? nextReport();
-    if (Date.now() >= reportAt) {
-      await this.notify(settings, await this.reply(settings, REPORT, "schedule"));
-      reportAt = nextReport();
-      await this.ctx.storage.put("reportAt", reportAt);
+    if (Date.now() >= ((await this.ctx.storage.get<number>("watchAt")) ?? 0)) {
+      await this.ctx.storage.put("watchAt", Date.now() + WATCH_EVERY);
+      await this.watch(settings).catch((error) => console.error(`manager watch failed: ${error instanceof Error ? error.message : String(error)}`));
     }
-    await this.ctx.storage.setAlarm(reportAt);
+    if (Date.now() >= ((await this.ctx.storage.get<number>("reportAt")) ?? nextReport())) {
+      await this.notify(settings, await this.reply(settings, REPORT, "schedule"));
+      await this.ctx.storage.put("reportAt", nextReport());
+    }
+  }
+
+  // পাহারার সিদ্ধান্ত কোডে, AI ডাকা হয় না; তাই AI-এর quota শেষ হলেও চলে
+  private async watch(settings: StoredSettings) {
+    const now = Date.now();
+    const state = (await this.ctx.storage.get<WatchState>("watch")) ?? { jobs: {} };
+    const jobs = await rest<JobRow[]>(this.env, `jobs?select=id,name,enabled,schedule,run_requested_at,last_run_at,last_status,last_message&id=in.(${WATCHED.join(",")})`);
+    const verdicts = jobs.map((job) => ({ job, verdict: judge(job, state.jobs[job.id], now) }));
+    const cloud = verdicts.filter(({ job }) => job.enabled && RUNNABLE.includes(job.id));
+    // রাতে চুপ, শুধু সব কাজ একসাথে বন্ধ হলে ছাড়া
+    const quiet = isQuiet(now) && !(cloud.length > 0 && cloud.every(({ verdict }) => verdict === "alert"));
+    try {
+      for (const { job, verdict } of verdicts) {
+        if (verdict === "fine") delete state.jobs[job.id];
+        if (verdict === "retry") {
+          const { queued } = await queueJob(this.env, job.id);
+          state.jobs[job.id] = { retriedAt: now };
+          if (queued) this.save("manager", retryNote(job), [{ call: `run_job("${job.id}")`, result: "লাইনে দেওয়া হয়েছে", tone: "ok" }]);
+        }
+        if (verdict !== "alert") continue;
+        if (!isDanger(job.id)) this.save("manager", alertText(job, now), []);
+        else if (quiet || !(await this.announce(settings, alertText(job, now)))) continue;
+        state.jobs[job.id] = { ...state.jobs[job.id], alerted: true };
+      }
+      const seen = blockedHosts(jobs.filter((job) => RUNNABLE.includes(job.id)).map((job) => job.last_message));
+      const fresh = newHosts(seen, state.hosts);
+      // একটা দোকান আটকানো বিপদ নয়: চ্যাটে থাকে, সকালের রিপোর্টে যায়
+      if (fresh.length) this.save("manager", hostsText(fresh), []);
+      state.hosts = rememberHosts(seen, state.hosts, now);
+    } finally {
+      await this.ctx.storage.put("watch", state);
+    }
+  }
+
+  // Telegram না পৌঁছালে false, পরের পাহারায় আবার চেষ্টা; Telegram সেট করা না থাকলে শুধু অ্যাডমিনের চ্যাটে
+  private async announce(settings: StoredSettings, text: string): Promise<boolean> {
+    if (settings.telegramBotToken && settings.alertChatId) {
+      const status = await sendMessage(settings.telegramBotToken, settings.alertChatId, text).catch(() => 0);
+      if (status !== 200) return false;
+    }
+    this.save("manager", text, []);
+    return true;
   }
 
   private async status(origin: string) {

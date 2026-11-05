@@ -46,7 +46,6 @@ export function CategoryRows({ summaries }: { summaries: ProductSummary[] }) {
           <Shelf key={c.slug}>
             <SectionHeader
               title={lang === "en" ? c.nameEn : c.name}
-              subtitle={t.home.categoryRowSub}
               href={categoryPath(prefix, c.slug)}
               linkLabel={t.home.seeAllIn(num(items.length))}
             />

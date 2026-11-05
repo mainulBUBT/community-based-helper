@@ -127,6 +127,7 @@ export interface PrivateSettings {
   llmKeys?: Record<string, string>;
   telegramBotToken: string | null;
   alertChatId: string | null;
+  managerAuto?: boolean;
 }
 
 export interface UsageStats {

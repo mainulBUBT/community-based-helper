@@ -77,7 +77,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | 16 | Deploy আর ডোমেইন | 🟡 `dordam.app` চালু, SEO লিংক ঠিক; Auth URL, Search Console বাকি | [16-deploy](features/16-deploy.md) |
 | 17 | ডেটার উৎস আর নিয়ম | ✅ সিদ্ধান্ত (১ নভেম্বর: Shaver Shop, Trimmer Shop BD, Salextra, UCC, Skyland যোগ; স্পিকার + SSD ব্যাচ) | [17-data-sources](features/17-data-sources.md) |
 | 18 | নিরাপত্তা | 🟡 ড্যাশবোর্ড সেটিং বাকি | [18-security](features/18-security.md) |
-| 19 | AI ম্যানেজার (Telegram আর অ্যাডমিনে কথা, সকালের রিপোর্ট) | 🟡 ধাপ ১ বানানো, লাইভে চালু বাকি | [19-ai-manager](features/19-ai-manager.md) |
+| 19 | AI ম্যানেজার (Telegram আর অ্যাডমিনে কথা, সকালের রিপোর্ট, পাহারা) | 🟡 ধাপ ১ আর ২ বানানো (৫ নভেম্বর পাহারাদার, আর "নিজে করবে" অপশনে মোবাইলের নতুন ভার্সন); deploy বাকি | [19-ai-manager](features/19-ai-manager.md) |
 
 ## পুরো প্ল্যান সংক্ষেপে
 

@@ -466,6 +466,13 @@ function nestedRows(product: Json): Json[] {
   return lists.sort((a, b) => b.length - a.length)[0] ?? [];
 }
 
+// Shajgoj: এক পাতায় এক সাইজ, শিরোনামে না থাকলেও পাতায় "Size: 100gm" লেখা থাকে; তাই ভার্সনের জন্য AI-এর অনুমান লাগে না
+export function shajgojVariants(html: string): ShopVariant[] {
+  const size = />Size:\s*([^<]+)</.exec(html)?.[1]?.trim();
+  const quote = structuredQuote(html);
+  return size && quote ? [{ options: [size], region: null, price: quote.price, oldPrice: quote.oldPrice, inStock: quote.inStock }] : [];
+}
+
 export function embeddedVariants(html: string, url: string): ShopVariant[] {
   const objects = pricedObjects(unescaped(html)).filter((row) => amountsOf(row).price);
   const slug = decodeURIComponent(new URL(url).pathname.split("/").filter(Boolean).pop() ?? "").toLowerCase();

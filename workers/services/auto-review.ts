@@ -195,7 +195,8 @@ export async function autoReview(stop: () => boolean = () => false): Promise<{ a
   const result = { approved: 0, rejected: 0, left: 0, errors: [] as string[] };
   if (process.env.AUTO_REVIEW === "off") return result;
   const items = (await must(
-    db().from("review_queue").select("id, kind, payload").eq("status", "pending").in("kind", ["match", "anomaly"]).order("created_at").limit(MAX_ITEMS),
+    // versionWait: নতুন ভার্সন খোঁজা চলছে বা মালিকের জন্য রাখা (services/auto-version.ts), তাই AI এগুলো বাতিল করে না
+    db().from("review_queue").select("id, kind, payload").eq("status", "pending").in("kind", ["match", "anomaly"]).is("payload->>versionWait", null).order("created_at").limit(MAX_ITEMS),
   )) as Item[];
   for (const item of items) {
     if (stop()) {

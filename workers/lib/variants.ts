@@ -81,10 +81,10 @@ function fold(offers: PageOffer[], keep: Set<string>): PageOffer[] {
 const plain = (offer: PageOffer) => !offer.key || offer.key === "~";
 
 function fits(offer: PageOffer, target: VariantTarget, differ: Set<string>, alone: boolean, needsInch: boolean): boolean {
-  if (plain(offer)) return alone;
+  const ownText = `${target.product} ${target.label}`;
+  if (plain(offer)) return alone && sameSpec(offer.label, ownText);
   if (needsInch && inch(offer.label) === null) return false;
   const opt = new Set(words(offer.label));
-  const ownText = `${target.product} ${target.label}`;
   const own = new Set(words(ownText));
   const memory = [...opt].filter((t) => MEMORY.test(t));
   const ownMemory = [...own].filter((t) => MEMORY.test(t));
@@ -128,6 +128,8 @@ export function place(offers: PageOffer[], product: CatalogProduct, titles: stri
   const folded = fold(offers, new Set(siblings.flatMap(words)));
   if (folded.length === 1 && plain(folded[0])) {
     if (needsInch) return [];
+    // পাতায় লেখা সাইজ কোনো ভার্সনের নয় (100gm, ক্যাটালগে 50gm আর 130g): শিরোনাম দেখে আন্দাজ নয়
+    if (!product.variants.some((v) => sameSpec(folded[0].label, `${product.name} ${v.label}`))) return [];
     // titles[0] পাতার শিরোনাম; লিংক থেকে বানানো নামে দশমিক হারায় ("0.35g" হয় "0 35g")
     if (product.variants.length === 1) return packConflict(titles[0], product.variants[0].label) ? [] : [{ variants: product.variants, found: folded }];
     const match = titles.map((title) => matchListing(title, [product])).find(Boolean);

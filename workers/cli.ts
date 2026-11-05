@@ -7,6 +7,7 @@ import { readPromos } from "./jobs/promos";
 import { rebuild } from "./jobs/rebuild";
 import { runJob, type JobId, type JobRun } from "./jobs/run";
 import { autoReview, compareWithHumans } from "./services/auto-review";
+import { autoVersions } from "./services/auto-version";
 
 const jobs: Record<JobId, (run: JobRun) => Promise<string>> = {
   prices: refreshPrices,
@@ -28,6 +29,11 @@ async function main() {
   // হাতে চালানো: যাচাই বাকি থেকে AI এখনই সিদ্ধান্ত নেয় (prices run এর শেষেও এটাই চলে)
   if ((id as string) === "review") {
     console.log(step === "dry" ? (await compareWithHumans()).join("\n") : await autoReview());
+    return;
+  }
+  // কিছু লেখে না: নতুন ভার্সনের ধারা এখন কী করত, বাতিল হওয়া পুরনো আইটেমসহ
+  if ((id as string) === "versions-dry") {
+    await autoVersions(() => false, true, console.log);
     return;
   }
   if (!(id in jobs)) throw new Error(`usage: worker <${Object.keys(jobs).join("|")}>`);

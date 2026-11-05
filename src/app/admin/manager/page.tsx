@@ -3,6 +3,7 @@
 import { ChevronDown, Clock, Loader2, Send } from "lucide-react";
 import { Fragment, useEffect, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
 import { PageTitle, Panel } from "@/components/admin/Panel";
+import { Toggle } from "@/components/admin/Toggle";
 import { ErrorNotice } from "@/components/ui/ErrorNotice";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
@@ -10,6 +11,7 @@ import { useAdminAction } from "@/hooks/useAdminAction";
 import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { listJobs } from "@/services/admin/jobs";
 import { askManager, loadManager, managerDeployed } from "@/services/admin/manager";
+import { loadPrivateSettings, savePrivateSettings } from "@/services/admin/settings";
 import type { Job, ManagerMessage, ManagerStatus, ManagerStep } from "@/types/admin";
 import { jobState, type JobState } from "@/utils/job-state";
 
@@ -115,6 +117,27 @@ function Row({ tone, name, value }: { tone: Dot; name: string; value: string }) 
   );
 }
 
+function AutoMode() {
+  const { t } = useAdminI18n();
+  const m = t.admin.manager;
+  const settings = useAsync(loadPrivateSettings, []);
+  const { busy, run } = useAdminAction();
+  if (!settings.data) return null;
+  const current = settings.data;
+  const change = async (managerAuto: boolean) => {
+    if (await run(() => savePrivateSettings({ ...current, managerAuto, telegramBotToken: null }, m.autoTitle), t.admin.common.saved)) settings.reload();
+  };
+  return (
+    <Side title={m.autoTitle}>
+      <div className="flex items-center justify-between gap-3">
+        <span>{m.autoLabel}</span>
+        <Toggle checked={current.managerAuto === true} onChange={change} label={m.autoLabel} disabled={busy} />
+      </div>
+      <p className="text-[12px] opacity-70">{m.autoHint}</p>
+    </Side>
+  );
+}
+
 function Sidebar({ status, jobs }: { status: ManagerStatus; jobs: Job[] }) {
   const { t, lang, num, ago } = useAdminI18n();
   const m = t.admin.manager;
@@ -130,6 +153,7 @@ function Sidebar({ status, jobs }: { status: ManagerStatus; jobs: Job[] }) {
         <ChevronDown size={16} className={open ? "rotate-180" : ""} aria-hidden="true" />
       </button>
       <div className={`${open ? "grid" : "hidden"} gap-3 px-3 pb-3 md:grid-cols-2 xl:flex xl:flex-col xl:p-3`}>
+        <AutoMode />
         <Side title={m.connections}>
           <Row tone={status.telegram === "ok" ? "ok" : "bad"} name="Telegram" value={status.telegram === "ok" ? m.linked : m.notLinked} />
           {status.telegram !== "ok" && <p className="text-[12px] text-[#98a2b3]">{status.telegram === "rejected" ? m.telegramRejected : m.telegramHint}</p>}

@@ -7,7 +7,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { useI18n } from "@/hooks/useI18n";
 import type { ProductSummary } from "@/types/catalog";
 import type { RecentDrop } from "@/utils/catalog";
-import { SectionEyebrow, Shelf } from "./Shelf";
+import { Shelf } from "./Shelf";
 
 // এক কার্ড থেকে পরের কার্ডের দূরত্ব (ফাঁকসহ)
 function cardStep(track: HTMLElement): number {
@@ -84,13 +84,10 @@ export function DealsShelf({
 
   return (
     <Shelf>
-      <div className="flex flex-col gap-3">
-        <SectionEyebrow>{t.home.dropsEyebrow}</SectionEyebrow>
-        <SectionHeader
-          title={t.home.drops}
-          subtitle={t.home.dropsSub}
-        />
-      </div>
+      <SectionHeader
+        title={t.home.drops}
+        subtitle={t.home.dropsSub}
+      />
       <div
         className="relative"
         onMouseEnter={() => setPaused(true)}

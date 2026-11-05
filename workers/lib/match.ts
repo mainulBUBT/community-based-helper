@@ -55,7 +55,8 @@ export function tokens(text: string): string[] {
     .replace(/(\d+)\s*(?:gb|tb)?\s*\+\s*(\d+)\s*(?:gb|tb)?/g, "$1gb $2gb")
     .replace(/\+/g, " plus ")
     .replace(/(\d+)\s*(?:gb)?\s*\/\s*(\d+)\s*(gb|tb)/g, "$1gb $2$3")
-    .replace(/(\d+)\s*(gb|tb|mm)\b/g, " $1$2 ");
+    .replace(/(\d+)\s*(gb|tb|mm)\b/g, " $1$2 ")
+    .replace(/(\d+)\s*(?:gms?|grams?)\b/g, "$1g");
   return prepared
     .split(/[^a-z0-9]+/)
     .filter(Boolean)
@@ -72,23 +73,46 @@ export function chip(text: string): string | null {
   return found ? `${found[1]} ${found[2] ?? ""}`.trim().toLowerCase() : null;
 }
 
-const PACK = /(\d+(?:\.\d+)?)\s*(kg|gm?|gram|ml|ltr|l|pcs?)\b/gi;
+const AMOUNT = /(\d+(?:\.\d+)?)\s*(kg|gms?|grams?|g|ltr|l|ml)\b/gi;
 
-const packSizes = (text: string) => [...text.matchAll(PACK)].map(([, n, unit]) => Number(n) * (/^(kg|ltr|l)$/i.test(unit) ? 1000 : 1));
+// ওজন আর পরিমাণ এক এককে: "1kg" = "1000g", "50 gm" = "50g"
+function amounts(text: string): { g: number[]; ml: number[] } {
+  const found = { g: [] as number[], ml: [] as number[] };
+  for (const [, value, unit] of text.matchAll(AMOUNT)) {
+    const lower = unit.toLowerCase();
+    if (lower === "ml") found.ml.push(Number(value));
+    else if (lower === "l" || lower === "ltr") found.ml.push(Number(value) * 1000);
+    else found.g.push(Number(value) * (lower === "kg" ? 1000 : 1));
+  }
+  return found;
+}
 
-// শিরোনামে ওজন বা পরিমাণ লেখা, কিন্তু ভার্সনের সাথে মেলে না (Lotion 100ml ≠ 200ml); দোকান ভেদে ml আর g অদলবদল হয়, তাই শুধু সংখ্যা
+// একই পণ্য দেশভেদে একটু আলাদা লেখা হয় (118ml/125ml, 236ml/237ml, 473ml/500ml)
+const AMOUNT_GAP = 0.06;
+const near = (a: number, b: number) => Math.abs(a - b) <= Math.max(a, b) * AMOUNT_GAP;
+
+// দুই দিকেই ওজন বা পরিমাণ লেখা থাকলে মিলতে হবে: "100gm" এর পাতা "50gm" ভার্সনে বসে না
+function sameAmount(a: string, b: string): boolean {
+  const [x, y] = [amounts(a), amounts(b)];
+  return (["g", "ml"] as const).every((unit) => !x[unit].length || !y[unit].length || x[unit].some((value) => y[unit].some((other) => near(value, other))));
+}
+
+// শিরোনামে ওজন বা পরিমাণ লেখা, কিন্তু ভার্সনের সাথে মেলে না (Lotion 100ml ≠ 200ml); দোকান ভেদে ml আর g অদলবদল হয়, তাই এক করে দেখা
 export function packConflict(title: string, label: string): boolean {
-  const own = packSizes(label);
-  const listed = packSizes(title);
-  return own.length > 0 && listed.length > 0 && !listed.some((n) => own.includes(n));
+  const all = (text: string) => Object.values(amounts(text)).flat();
+  const [listed, own] = [all(title), all(label)];
+  return own.length > 0 && listed.length > 0 && !listed.some((value) => own.some((other) => near(value, other)));
 }
 
 export function sameSpec(a: string, b: string): boolean {
-  return [inch, chip].every((read) => {
-    const x = read(a);
-    const y = read(b);
-    return x === null || y === null || x === y;
-  });
+  return (
+    sameAmount(a, b) &&
+    [inch, chip].every((read) => {
+      const x = read(a);
+      const y = read(b);
+      return x === null || y === null || x === y;
+    })
+  );
 }
 
 // "A6" ভেঙে "a 6" হয় যাতে "Watch8" আর "Watch 8" মেলে; কিন্তু ভাঙা অংশ লিস্টিংয়ে পাশাপাশি থাকতে হবে, নইলে "A54 6/128" এ A6 মিলে যায়

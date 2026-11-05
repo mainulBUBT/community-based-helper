@@ -8,6 +8,7 @@ export interface PrivateSettings {
   models: LlmSettings[];
   telegramBotToken: string | null;
   alertChatId: string | null;
+  managerAuto: boolean;
 }
 
 let cached: PrivateSettings | null = null;
@@ -21,7 +22,7 @@ function envLlm(): LlmSettings[] {
 export async function privateSettings(): Promise<PrivateSettings> {
   if (cached) return cached;
   if (!process.env.SUPABASE_URL || !process.env.SUPABASE_SERVICE_KEY) {
-    cached = { models: envLlm(), telegramBotToken: null, alertChatId: null };
+    cached = { models: envLlm(), telegramBotToken: null, alertChatId: null, managerAuto: false };
     return cached;
   }
   const row = await must(db().from("private_settings").select("value").maybeSingle());
@@ -32,6 +33,7 @@ export async function privateSettings(): Promise<PrivateSettings> {
     models: process.env.LOCAL_JOB ? [] : models.length ? models : envLlm(),
     telegramBotToken: value.telegramBotToken ?? null,
     alertChatId: value.alertChatId ?? null,
+    managerAuto: value.managerAuto === true,
   };
   return cached;
 }

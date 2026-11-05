@@ -1,5 +1,6 @@
 import { db, must } from "../lib/db";
 import { message } from "../lib/errors";
+import { privateSettings } from "../lib/settings";
 import { alert } from "../lib/telegram";
 
 export type JobId = "prices" | "local_prices" | "local_discover" | "discover" | "promos" | "rebuild";
@@ -53,7 +54,9 @@ export async function finishJob(run: JobRun, work: () => Promise<string>) {
   const finishedAt = new Date().toISOString();
   await must(db().from("job_runs").update({ status, message: text, finished_at: finishedAt }).eq("id", run.id));
   await must(db().from("jobs").update({ last_status: status, last_message: text }).eq("id", run.job));
-  if (status === "failed") {
+  // অপশন চালু থাকলে GitHub-এর কাজের প্রথম ব্যর্থতা পাহারাদার নিজে আবার চালায়, তাই Telegram-এ শুধু তার জরুরি খবর যায়
+  const { managerAuto } = await privateSettings().catch(() => ({ managerAuto: false }));
+  if (status === "failed" && (!managerAuto || run.job.startsWith("local_"))) {
     const { name } = (await must(db().from("jobs").select("name").eq("id", run.job).single())) as { name: string };
     await alert(`দরদাম: "${name}" ব্যর্থ\n${text}`).catch((error) => console.error(message(error)));
   }
