@@ -83,7 +83,7 @@ async function main() {
   if (!live && process.env.CI) throw new Error("CI তে Supabase এর URL বা PUBLISHABLE_KEY নেই, নমুনা ডেটা দিয়ে লাইভ সাইট বানানো হবে না");
   if (!live) console.warn("⚠️  Supabase যুক্ত নেই — নমুনা ডেটায় বেক হচ্ছে, লাইভ নয়! (.env.local এ NEXT_PUBLIC_SUPABASE_URL আর PUBLISHABLE_KEY দিন)");
   const source = live ? await fromSupabase(createClient(url!, key!, { auth: { persistSession: false } })) : await fromSample();
-  const categories = source.categories.filter((c) => c.active);
+  const categories = source.categories.filter((c) => c.active && c.collection?.length !== 0);
   const shown = new Set(categories.map((c) => c.slug));
   const raw = { ...source, categories, products: source.products.filter((p) => shown.has(p.category)) };
 

@@ -52,6 +52,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 24. ⬜ **৩১ অক্টোবরের AI ম্যানেজার চালু করা:** [ai-manager](features/19-ai-manager.md)-এর "চালু করার ধাপ" (wrangler login, `npm run agent:deploy`, দুটো secret, GitHub-এ `MANAGER_URL`, তারপর `rebuild`)।
 25. ⬜ **১ নভেম্বরের ৩টা নতুন দোকান লাইভে নেওয়া** (migration লাগে না): `npm run catalog:specs` (প্রয়োজন হলে), তারপর `npx supabase db query --linked -f supabase/seed.sql` (নতুন seller: Shaver Shop, Trimmer Shop BD, Salextra), তারপর `npm run worker -- discover plan` একবার দেখে `discover` চালানো (বা রাতের cron), শেষে `rebuild`। Shaver Shop-এ ১৬টা, Trimmer Shop BD-তে ৯টা, Salextra-তে ৫০+ আমাদের পণ্যের দাম আসবে। Sara Lifestyle বাদ: ওদের Cloudflare `DordamBot` UA-কে সবখানে 403 দেয়। দেখুন [data-sources](features/17-data-sources.md)।
 26. ⬜ **১ নভেম্বরের স্পিকার আর পোর্টেবল SSD লাইভে নেওয়া:** ক্যাটাগরি migration `20261101200000_speaker-ssd-categories.sql` আর ব্যাচ (`supabase/batches/2026-11-01-speaker-ssd.sql`: ২৪ পণ্য, ৩০ ভার্সন, নতুন দোকান UCC আর Skyland) ডিবিতে চলেছে; `discover` চলছে। বাকি: review_queue যাচাই করে `applyApproved`, এক দোকানে নেমে আসা ভার্সন বাদ, `rebuild`। প্রতিটা পণ্য ২+ দোকানে; Samsung T7 বাদ (শুধু Startech)। দেখুন [data-sources](features/17-data-sources.md)।
+27. ⬜ **৫ নভেম্বরের মৌসুমি ক্যাটাগরি লাইভে নেওয়া:** (১) `npm run db:push` (migration `20261105100547_collection-categories.sql`: "শীতের পণ্য" ৩৬ পণ্যসহ, বন্ধ অবস্থায়), (২) git push (deploy), (৩) অ্যাডমিন → মৌসুমি ক্যাটাগরিতে চালু করে "সাইটে পাঠান"। উল্টো ক্রমে করলে মাঝের সময়ে অ্যাডমিনে ক্যাটাগরি সেভ হবে না। দেখুন [user-pages](features/02-user-pages.md)।
 11. ✅ `/about/` পেজ (`/about/` বাংলা, `/en/about/` English), সব লেখা অ্যাডমিন থেকে বদলানো যায়।
 
 ## ফিচার ট্র্যাকার
@@ -59,7 +60,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | # | ফিচার | অবস্থা | ফাইল |
 |---|---|---|---|
 | 1 | ডিজাইন সিস্টেম (রং, কম্পোনেন্ট) | ✅ | [01-design-system](features/01-design-system.md) |
-| 2 | ইউজার পেজ (হোম, পণ্য, বিক্রেতা, সেভ) | ✅ ডিল ফিড ("গত ৭ দিনে যেগুলোর দাম কমল", বেশি কমা আগে), তুলনা কার্ডে শুধু স্টকে থাকা দোকান, "একই ধরনের আরও সস্তা", পণ্যের হিরো কার্ড কমপ্যাক্ট, ভার্সনের এক-মানের ঘরও দেখায় | [02-user-pages](features/02-user-pages.md) |
+| 2 | ইউজার পেজ (হোম, পণ্য, বিক্রেতা, সেভ) | ✅ মৌসুমি ক্যাটাগরি "শীতের পণ্য", ডিল ফিড ("গত ৭ দিনে যেগুলোর দাম কমল", বেশি কমা আগে), তুলনা কার্ডে শুধু স্টকে থাকা দোকান, "একই ধরনের আরও সস্তা", পণ্যের হিরো কার্ড কমপ্যাক্ট, ভার্সনের এক-মানের ঘরও দেখায় | [02-user-pages](features/02-user-pages.md) |
 | 3 | খোঁজা আর ফিল্টার | ✅ | [03-search](features/03-search.md) |
 | 4 | বিক্রেতা, ফোন নম্বর, যাচাই ব্যাজ | ✅ | [04-sellers](features/04-sellers.md) |
 | 5 | ক্রেতার পাঠানো দাম | 🟡 | [05-price-reports](features/05-price-reports.md) |

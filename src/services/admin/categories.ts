@@ -6,12 +6,16 @@ import { loadCatalog } from "../catalog-live";
 import { toCategory } from "../mappers";
 import { logAction } from "./audit";
 
-export async function listAllCategories(): Promise<CategoryInfo[]> {
+async function fetchCategories(): Promise<CategoryInfo[]> {
   if (!supabase) return [...sampleCategories].sort((a, b) => a.position - b.position);
   const { data, error } = await supabase.from("categories").select("*").order("position");
   if (error) throw error;
   return data.map(toCategory);
 }
+
+export const listAllCategories = async () => (await fetchCategories()).filter((c) => !c.collection);
+
+export const listCollections = async () => (await fetchCategories()).filter((c) => c.collection);
 
 // নতুন সাব-ক্যাটাগরি মূল ভাগের ওয়ারেন্টি নেয় (স্কিনকেয়ারের নিচে নতুন ভাগেও ওয়ারেন্টি নেই)
 async function inheritWarranty(category: CategoryInfo): Promise<CategoryInfo> {
@@ -39,6 +43,7 @@ export async function saveCategory(input: CategoryInfo, isNew: boolean) {
       conditions: categoryConditions(category),
       verify_note: category.verifyNote === true,
       quality_note: category.qualityNote === true,
+      collection_products: category.collection ?? null,
     };
     const { error } = isNew ? await supabase.from("categories").insert(row) : await supabase.from("categories").update(row).eq("slug", category.slug);
     if (error) throw error;

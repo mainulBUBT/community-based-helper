@@ -9,16 +9,12 @@ import { categoryPath } from "@/utils/url";
 
 export function CategoryTiles({ summaries }: { summaries: ProductSummary[] }) {
   const { t, num, lang, prefix } = useI18n();
-  const { top, family } = useCategories();
+  const { top, has } = useCategories();
   const shown = top
-    .filter((c) =>
-      summaries.some((s) => family(c.slug).includes(s.product.category)),
-    )
+    .filter((c) => summaries.some((s) => has(c.slug, s.product)))
     .map((c) => ({
       c,
-      count: summaries.filter((s) =>
-        family(c.slug).includes(s.product.category),
-      ).length,
+      count: summaries.filter((s) => has(c.slug, s.product)).length,
     }));
   return (
     <nav

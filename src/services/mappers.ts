@@ -28,6 +28,7 @@ export const toCategory = (row: Row): CategoryInfo => ({
   conditions: row.conditions as CategoryInfo["conditions"],
   verifyNote: row.verify_note === true,
   qualityNote: row.quality_note === true,
+  collection: (row.collection_products as string[] | null | undefined) ?? undefined,
 });
 
 export const toProduct = (row: Row): Product => ({

@@ -25,6 +25,8 @@ export interface CategoryInfo {
   verifyNote?: boolean;
   // true: একই নামের পণ্য দোকানভেদে আলাদা মানের (খেজুর জাত ধরে তুলনা) — পণ্যের পাতায় সেই নোট
   qualityNote?: boolean;
+  // মৌসুমি/উৎসবের ক্যাটাগরি: অন্য ক্যাটাগরির পণ্যের slug হাতে বাছা; না থাকলে সাধারণ ক্যাটাগরি
+  collection?: string[];
 }
 
 export interface SpecItem {
@@ -116,6 +118,7 @@ export interface OfferView extends Offer {
 export interface ProductSummary {
   product: Product;
   lowest: number | null;
+  size: string | null;
   condition: Condition | null;
   compareAt: number | null;
   inStock: boolean;

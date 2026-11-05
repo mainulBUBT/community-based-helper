@@ -32,18 +32,16 @@ const noSubscribe = () => () => {};
 
 export function SpotlightShelf({ summaries }: { summaries: ProductSummary[] }) {
   const { t, num, lang, prefix } = useI18n();
-  const { top, family } = useCategories();
+  const { top, has } = useCategories();
   const withProducts = top.filter((c) =>
-    summaries.some((s) => family(c.slug).includes(s.product.category)),
+    summaries.some((s) => has(c.slug, s.product)),
   );
   const visit = useSyncExternalStore(noSubscribe, visitTurn, () => 0);
   const [picked, setActive] = useState<string | null>(null);
   const current =
     withProducts.find((c) => c.slug === picked) ?? withProducts[visit % Math.max(1, withProducts.length)];
   if (!current) return null;
-  const items = summaries.filter((s) =>
-    family(current.slug).includes(s.product.category),
-  );
+  const items = summaries.filter((s) => has(current.slug, s.product));
   const ranked = [...items]
     .sort(
       (a, b) =>

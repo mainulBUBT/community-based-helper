@@ -40,13 +40,15 @@ export function summarize(catalog: Catalog, product: Product): ProductSummary {
   const warranty = catalog.categories.find((c) => c.slug === product.category)?.warranty !== false;
   // আনঅফিসিয়াল বা কপির দামের পাশে অফিসিয়াল দাম দেখিয়ে "ছাড়" বলা যায় না
   const listed = best && (warranty ? best.condition === "official" : !isReplica(best.condition));
-  const officialPrice = best ? product.variants.find((v) => v.id === best.variantId)?.officialPrice : null;
+  const bestVariant = best ? product.variants.find((v) => v.id === best.variantId) : null;
+  const officialPrice = bestVariant?.officialPrice;
   const listPrice = listed ? officialPrice : null;
   const reference = Math.max(realOldPrice(best?.oldPrice, officialPrice) ?? 0, listPrice ?? 0);
   const compareAt = lowest && reference > lowest ? reference : null;
   return {
     product,
     lowest,
+    size: bestVariant?.attributes.capacity ?? null,
     condition: best?.condition ?? null,
     compareAt,
     inStock: offers.some((o) => o.inStock !== false),

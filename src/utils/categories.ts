@@ -1,10 +1,15 @@
 import type { Lang } from "@/lib/preferences";
 import type { Messages } from "@/i18n/bn";
-import type { CategoryInfo, Condition } from "@/types/catalog";
+import type { CategoryInfo, Condition, Product } from "@/types/catalog";
 
 export const categoryName = (category: CategoryInfo | undefined, lang: Lang) => (category ? (lang === "en" ? category.nameEn : category.name) : "");
 
 export const categoryFamily = (categories: CategoryInfo[], slug: string) => [slug, ...categories.filter((c) => c.parent === slug).map((c) => c.slug)];
+
+export function belongsToCategory(categories: CategoryInfo[], slug: string, product: Pick<Product, "category" | "slug">) {
+  const collection = categories.find((c) => c.slug === slug)?.collection;
+  return collection ? collection.includes(product.slug) : categoryFamily(categories, slug).includes(product.category);
+}
 
 export const DEFAULT_CONDITIONS: Condition[] = ["official", "unofficial"];
 

@@ -93,20 +93,19 @@ function Dropdown({ label, children }: { label: string; children: (close: () => 
 
 export function CategoryMenu() {
   const { t, lang, num, prefix } = useI18n();
-  const { top, childrenOf, family } = useCategories();
+  const { top, childrenOf, has } = useCategories();
   const [active, setActive] = useState(top[0]?.slug ?? "");
   const [opened, setOpened] = useState(false);
   const summaries = useSummaries(opened);
   const current = top.find((c) => c.slug === active) ?? top[0];
   if (!current) return null;
 
-  const slugs = new Set(family(current.slug));
-  const inCategory = summaries.filter((s) => slugs.has(s.product.category));
+  const inCategory = summaries.filter((s) => has(current.slug, s.product));
   const brands = byCount(inCategory).slice(0, 16).map(([brand]) => brand);
   const popular = [...inCategory].sort((a, b) => b.product.popularity - a.product.popularity).slice(0, 4);
   const children = childrenOf(current.slug);
   const label = (c: { name: string; nameEn: string }) => (lang === "en" ? c.nameEn : c.name);
-  const count = (slug: string) => summaries.filter((s) => family(slug).includes(s.product.category)).length;
+  const count = (slug: string) => summaries.filter((s) => has(slug, s.product)).length;
 
   return (
     <div onMouseEnter={() => setOpened(true)} onFocus={() => setOpened(true)}>

@@ -4,7 +4,7 @@ import { BUDGET_MIN_PRODUCTS, BUDGETS } from "@/config/budgets";
 import { DEFAULT_SETTINGS } from "@/config/site";
 import type { SiteSettings } from "@/types/admin";
 import { byStock, recentDrops, toCard } from "@/utils/catalog";
-import { categoryFamily } from "@/utils/categories";
+import { belongsToCategory } from "@/utils/categories";
 import { brandSlug } from "@/utils/url";
 import { safeUrl } from "@/utils/url";
 import { makeService, type Catalog, type HomeData } from "./catalog-core";
@@ -67,8 +67,7 @@ export async function getCategoryPage(slug: string) {
   const [categories, summaries] = await Promise.all([listCategories(), listSummaries()]);
   const category = categories.find((c) => c.slug === slug);
   if (!category) return null;
-  const family = new Set(categoryFamily(categories, slug));
-  const items = summaries.filter((s) => family.has(s.product.category)).sort((a, b) => byStock(a, b) || b.product.popularity - a.product.popularity);
+  const items = summaries.filter((s) => belongsToCategory(categories, slug, s.product)).sort((a, b) => byStock(a, b) || b.product.popularity - a.product.popularity);
   const parent = categories.find((c) => c.slug === category.parent) ?? null;
   return { category, parent, summaries: items.map(toCard) };
 }

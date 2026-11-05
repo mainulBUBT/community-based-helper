@@ -21,7 +21,7 @@ interface ProductCardProps {
 
 export function ProductCard({ summary, deal, badge, category, compact, loading = "lazy" }: ProductCardProps) {
   const { t, num, prefix, lang } = useI18n();
-  const { product, lowest, condition, compareAt, inStock, sellerCount } = summary;
+  const { product, lowest, size, condition, compareAt, inStock, sellerCount } = summary;
   const [imgIndex, setImgIndex] = useState(0);
   const [failed, setFailed] = useState(false);
   const images = product.images ?? [];
@@ -85,6 +85,7 @@ export function ProductCard({ summary, deal, badge, category, compact, loading =
           <span className={`font-bold tracking-tight text-ink ${compact ? "text-[13.5px]" : "text-base"}`}>
             {lowest ? formatTaka(lowest, lang) : t.product.noPrice}
           </span>
+          {size && !product.name.includes(size) && <span className="text-[11px] font-semibold text-dim">{size}</span>}
           {compareAt && (
             <span className="text-[11px] text-faint line-through">{formatTaka(compareAt, lang)}</span>
           )}

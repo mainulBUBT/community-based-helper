@@ -62,10 +62,9 @@ function readFilters(params: URLSearchParams, category?: string, brand?: string)
   };
 }
 
-function matches(s: ProductSummary, f: Filters, family: Set<string> | null) {
+function matches(s: ProductSummary, f: Filters) {
   const price = s.lowest;
   return (
-    (!family || family.has(s.product.category)) &&
     (!f.brands.length || f.brands.includes(s.product.brand)) &&
     (!f.inStock || s.inStock) &&
     (f.min === null || (price !== null && price >= f.min)) &&
@@ -90,7 +89,7 @@ export function SearchView({ category, brand, initial, extra, heading, crumb }: 
   const pathname = usePathname();
   const params = useSearchParams();
   const { t, num: n, prefix, lang } = useI18n();
-  const { categories, find, name, family } = useCategories();
+  const { categories, find, name, has } = useCategories();
   const { data, error, loading, reload } = useAsync(() => (initial ? Promise.resolve(initial) : listSummaries()), [], initial ?? null);
   const [drawer, setDrawer] = useState(false);
 
@@ -125,8 +124,8 @@ export function SearchView({ category, brand, initial, extra, heading, crumb }: 
   );
 
   const summaries = data ?? [];
-  const familySet = filters.category ? new Set(family(filters.category)) : null;
-  const inCategory = summaries.filter((s) => !familySet || familySet.has(s.product.category));
+  const belongs = (s: ProductSummary) => !filters.category || has(filters.category, s.product);
+  const inCategory = summaries.filter(belongs);
   const prices = inCategory.map((s) => s.lowest).filter((p): p is number => p !== null);
   const facets: Facets = {
     brands: byCount(inCategory.map((s) => s.product.brand)),
@@ -141,7 +140,7 @@ export function SearchView({ category, brand, initial, extra, heading, crumb }: 
   const byRelevance = (a: ProductSummary, b: ProductSummary) => (relevance.get(b) ?? 0) - (relevance.get(a) ?? 0);
   const results = ranked
     .map((r) => r.item)
-    .filter((s) => matches(s, filters, familySet))
+    .filter((s) => belongs(s) && matches(s, filters))
     .sort((a, b) => (query && sort === "popular" ? byRelevance(a, b) || byStock(a, b) : byStock(a, b)) || COMPARE[sort](a, b));
   const paged = paginate(results, Number(params.get("page")) || 1, PAGE_SIZE);
   const goTo = (page: number) => {

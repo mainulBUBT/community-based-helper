@@ -565,3 +565,7 @@ Samsung-এর S/Z সিরিজ, Pixel আর বড় ব্র্যান
 চেক করা হয়েছে: তিনটা দোকানের sitemap, robots.txt আর নমুনা পণ্যের পাতা লাইভ পড়ে (`node --import tsx` দিয়ে `discover` + `readPage`), দাম ঠিক এসেছে (যেমন Shaver Shop Kemei KM-5017 ৳1,299 (আগে ৳1,999), Salextra KM-5017 ৳1,249)।
 
 **Sara Lifestyle বাদ কেন:** ওদের product feed (১০,৬৯১ আইটেম) দারুণ, কিন্তু Cloudflare ডিক্লেয়ার করা `DordamBot` UA-কে robots.txt, feed আর পাতা — সবখানেই 403 দেয়; শুধু ব্রাউজার বা `curl` UA-তে খোলে। "নিজের পরিচয় দেওয়া UA" নিয়ম ভেঙে ব্রাউজার সাজা হবে না, তাই দোকানটা যোগ করা হয়নি। ওরা allowlist-এ `DordamBot` ঢুকিয়ে দিলে বা নিজে থেকে দাম পাঠালে (Telegram bot) তখন যোগ করা যাবে। মিলে যাওয়া পণ্যগুলো (১৭ ট্রিমার — Xiaomi Beard Trimmer 2C, Huanxing HN3 সহ; ১২ ইয়ারবাড; Anker চার্জার) আগে থেকেই যাচাই করা, তাই পরে দরকার হলে দ্রুত যোগ হবে।
+
+### Shwapno পরীক্ষা (৫ নভেম্বর ২০২৬, এখনো যোগ হয়নি)
+
+robots খোলা, sitemap-এ ১৪,৪৭৫টা লিংক। সাধারণ `getText` আর Jina-তে দাম আসে না, কিন্তু Playwright (`render`) দিয়ে JSON-LD-এ আসে; ৩টা মধুর পাতায় পড়া গেছে (Dabur ৫০০g ৳৪৮৯, Al Shifa Acacia ৫০০g ৳২,০৯৫, Shefa'a ৫০০g ৳৮১০)। ফাঁদ: Al Shifa আর Shefa'a-র পাতায় "Request item" লেখা, অথচ JSON-LD বলে স্টকে আছে, তাই স্টক পাতার লেখা থেকে ধরতে হবে। পাতায় "Select your delivery location"-ও আছে, এলাকা ভেদে দাম বা স্টক বদলায় কি না দেখা হয়নি। GitHub Actions-এর IP থেকে খোলে কি না `probe-stores`-এ দেখতে হবে।

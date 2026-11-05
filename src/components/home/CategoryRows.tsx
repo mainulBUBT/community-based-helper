@@ -33,13 +33,13 @@ function pick(items: ProductSummary[], roll: number) {
 
 export function CategoryRows({ summaries }: { summaries: ProductSummary[] }) {
   const { t, num, lang, prefix } = useI18n();
-  const { top, family } = useCategories();
+  const { top, has } = useCategories();
   const roll = useSyncExternalStore(still, () => seed, () => 0);
   return (
     <>
       {top.map((c) => {
         const items = summaries
-          .filter((s) => family(c.slug).includes(s.product.category))
+          .filter((s) => has(c.slug, s.product))
           .sort((a, b) => byStock(a, b) || byPopularity(a, b));
         if (!items.length) return null;
         return (
