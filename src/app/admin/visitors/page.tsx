@@ -67,6 +67,25 @@ export default function VisitorsPage() {
     const dailyVisitors = stats.reduce((sum, s) => sum + s.visitors, 0);
     const products = insights.products.map((p) => ({ key: p.slug, label: pageLink(`/product/${p.slug}/`, p.key ?? p.slug), views: p.views, visitors: p.visitors }));
     const countries = rows(insights.countries, countryName);
+    const banner = (source: string) => insights.events.find((e) => e.key === source)?.views ?? 0;
+    const popupViews = banner("popup-view");
+    const popupClicks = banner("popup-click");
+    const tileClicks = banner("seasonal-tile");
+    const bannerPanel = (popupViews > 0 || popupClicks > 0 || tileClicks > 0) && (
+      <Panel title={t.admin.visitors.bannerTitle}>
+        <p className="border-b border-line-soft px-5 py-3 text-xs text-dim">{t.admin.visitors.bannerHint}</p>
+        <div className="grid grid-cols-2 gap-3 p-5 lg:grid-cols-4">
+          <StatCard label={t.admin.visitors.bannerViews} value={num(popupViews.toLocaleString("en-IN"))} />
+          <StatCard
+            label={t.admin.visitors.bannerClicks}
+            value={num(popupClicks.toLocaleString("en-IN"))}
+            hint={popupViews > 0 ? t.admin.visitors.bannerCtr(num(Math.round((popupClicks / popupViews) * 100))) : undefined}
+            tone="brand"
+          />
+          <StatCard label={t.admin.visitors.bannerTileClicks} value={num(tileClicks.toLocaleString("en-IN"))} tone="gold" />
+        </div>
+      </Panel>
+    );
 
     switch (tab) {
       case "overview":
@@ -99,6 +118,7 @@ export default function VisitorsPage() {
                 <RankTable rows={countries} limit={5} share />
               </Panel>
             </div>
+            {bannerPanel}
             <details className="rounded-2xl border border-line-soft bg-surface px-5 py-4 text-sm">
               <summary className="cursor-pointer font-semibold">{t.admin.visitors.howTitle}</summary>
               <p className="mt-2 text-dim">{t.admin.visitors.howCounted}</p>

@@ -7,6 +7,7 @@ import { AllCategoriesIcon, CategoryIcon } from "@/components/product/CategoryIc
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
 import { setSeasonal, seasonalStore } from "@/lib/preferences";
+import { trackEvent } from "@/services/analytics";
 import type { ProductSummary } from "@/types/catalog";
 import { categoryPath } from "@/utils/url";
 
@@ -31,6 +32,7 @@ export function CategoryTiles({ summaries }: { summaries: ProductSummary[] }) {
           <Link
             key={c.slug}
             href={categoryPath(prefix, c.slug)}
+            onClick={() => c.collection && trackEvent("seasonal-tile", categoryPath(prefix, c.slug))}
             className={`relative flex w-24 shrink-0 flex-col items-center gap-1.5 overflow-hidden rounded-md px-2 py-3 text-center shadow-md ring-2 ${c.collection ? "bg-gradient-to-br from-gold-soft to-accent-soft ring-gold/40" : "bg-surface ring-line-soft"}`}
           >
             {c.collection && (

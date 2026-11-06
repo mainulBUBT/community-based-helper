@@ -119,10 +119,17 @@ export interface LlmModel {
   model: string;
 }
 
+export interface LlmProvider {
+  name: string;
+  baseUrl: string;
+}
+
 export interface PrivateSettings {
   llm: { baseUrl: string; model: string; apiKey: string | null };
   // পছন্দের ক্রমে; ওপরেরটা আগে চলে, quota শেষ হলে পরেরটা
   llmModels?: LlmModel[];
+  // নিজের যোগ করা OpenAI-compatible প্রোভাইডার (যত খুশি); key আগের মতোই Base URL ধরে
+  llmProviders?: LlmProvider[];
   // প্রতিটা প্রোভাইডারের key, Base URL ধরে (ব্রাউজারে শুধু ঢাকা রূপ আসে)
   llmKeys?: Record<string, string>;
   telegramBotToken: string | null;
@@ -168,6 +175,7 @@ export interface VisitorInsights {
   referrers: Breakdown[];
   products: (Breakdown & { slug: string })[];
   searches: Breakdown[];
+  events: Breakdown[];
 }
 
 export interface PageStat {

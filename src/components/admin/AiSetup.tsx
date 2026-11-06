@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, ChevronDown, ChevronUp, Trash2 } from "lucide-react";
+import { Check, ChevronDown, ChevronUp, Trash2, X } from "lucide-react";
 import { useState, type FormEvent, type ReactNode } from "react";
 import { Field, SecretField } from "@/components/admin/Field";
 import { StepNumber } from "@/components/admin/Guide";
@@ -8,16 +8,8 @@ import { Panel, primaryButton, secondaryButton } from "@/components/admin/Panel"
 import { useAdminAction } from "@/hooks/useAdminAction";
 import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { showToast } from "@/lib/toast";
-import { aiReady, modelList, modelTarget, providerKey, saveLlmModels, testLlm } from "@/services/admin/settings";
-import type { LlmModel, PrivateSettings } from "@/types/admin";
-
-const PRESETS = [
-  { name: "Gemini", baseUrl: "https://generativelanguage.googleapis.com/v1beta/openai/", model: "gemini-2.5-flash" },
-  { name: "Groq", baseUrl: "https://api.groq.com/openai/v1", model: "llama-3.3-70b-versatile" },
-  { name: "OpenRouter", baseUrl: "https://openrouter.ai/api/v1", model: "meta-llama/llama-3.3-70b-instruct:free" },
-  { name: "Cloudflare", baseUrl: "https://api.cloudflare.com/client/v4/accounts/ACCOUNT_ID/ai/v1", model: "@cf/meta/llama-3.1-8b-instruct" },
-  { name: "Z.ai", baseUrl: "https://api.z.ai/api/paas/v4", model: "glm-4.5" },
-];
+import { LLM_PRESETS, aiReady, modelList, modelTarget, providerKey, providerList, providerName, saveLlmModels, testLlm } from "@/services/admin/settings";
+import type { LlmModel, LlmProvider, PrivateSettings } from "@/types/admin";
 
 // ব্রাউজার/পাসওয়ার্ড ম্যানেজার এই ফর্মকে লগইন ভেবে model এ ইমেইল আর key তে পাসওয়ার্ড বসিয়ে দেয়
 const NO_AUTOFILL = { autoComplete: "off", "data-1p-ignore": true, "data-lpignore": "true", "data-form-type": "other" } as const;
@@ -32,7 +24,7 @@ const TEST_TONE = {
 
 const iconButton = "flex size-9 items-center justify-center rounded-lg text-dim hover:bg-surface-2 hover:text-ink disabled:opacity-30";
 
-const providerName = (baseUrl: string) => PRESETS.find((p) => providerKey(p.baseUrl) === providerKey(baseUrl))?.name ?? baseUrl.replace(/^https?:\/\//, "").replace(/\/+$/, "");
+const chip = (active: boolean) => `flex h-10 items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold ${active ? "border-brand bg-brand-soft" : "border-line hover:border-brand"}`;
 
 function Step({ n, title, children }: { n: number; title: string; children: ReactNode }) {
   return (
@@ -68,7 +60,7 @@ function ModelList({ settings, models, onSaved }: { settings: PrivateSettings; m
           <StepNumber n={i + 1} />
           <div className="flex min-w-0 flex-1 flex-col">
             <span className="font-semibold break-words">{m.model}</span>
-            <span className="text-xs text-dim">{providerName(m.baseUrl)}</span>
+            <span className="text-xs text-dim">{providerName(settings, m.baseUrl)}</span>
           </div>
           <div className="flex shrink-0 items-center">
             <button type="button" disabled={busy || i === 0} onClick={() => move(i, -1)} aria-label={t.admin.jobs.moveUp} title={t.admin.jobs.moveUp} className={iconButton}>
@@ -90,16 +82,19 @@ function ModelList({ settings, models, onSaved }: { settings: PrivateSettings; m
 function AddModel({ settings, models, onSaved }: { settings: PrivateSettings; models: LlmModel[]; onSaved: () => void }) {
   const { t } = useAdminI18n();
   const { busy, run } = useAdminAction();
-  const [baseUrl, setBaseUrl] = useState(PRESETS[0].baseUrl);
-  const [model, setModel] = useState(PRESETS[0].model);
+  const providers = providerList(settings);
+  const [sel, setSel] = useState(LLM_PRESETS[0].baseUrl);
+  const [baseUrl, setBaseUrl] = useState(LLM_PRESETS[0].baseUrl);
+  const [name, setName] = useState("");
+  const [model, setModel] = useState(LLM_PRESETS[0].model);
   const [testResult, setTestResult] = useState<TestResult>(null);
+  const isNew = sel === "new";
   const savedKey = (url: string) => settings.llmKeys?.[providerKey(url)] ?? null;
-  const isPreset = (url: string) => PRESETS.some((p) => providerKey(p.baseUrl) === providerKey(url));
-  const savedCustom = Object.keys(settings.llmKeys ?? {}).filter((url) => !isPreset(url));
   const lastModel = (url: string) => models.find((m) => providerKey(m.baseUrl) === providerKey(url))?.model ?? "";
   const typedKey = (form: HTMLFormElement | null) => String(new FormData(form ?? undefined).get("apiKey") ?? "").trim() || null;
 
-  function pickProvider(url: string, presetModel: string) {
+  function pick(key: string, url: string, presetModel: string) {
+    setSel(key);
     setBaseUrl(url);
     setModel(presetModel);
     setTestResult(null);
@@ -110,68 +105,80 @@ function AddModel({ settings, models, onSaved }: { settings: PrivateSettings; mo
     if (!apiKey) return setTestResult({ tone: "fail", text: t.admin.jobs.testNeedsKey });
     setTestResult({ tone: "info", text: t.admin.jobs.testing });
     try {
-      setTestResult({ tone: "ok", text: t.admin.jobs.testOk(await testLlm({ baseUrl, model, apiKey })) });
+      setTestResult({ tone: "ok", text: t.admin.jobs.testOk(await testLlm({ baseUrl: baseUrl.trim(), model: model.trim(), apiKey })) });
     } catch (error) {
       setTestResult({ tone: "fail", text: t.admin.jobs.testFailed((error as Error).message) });
     }
   }
 
+  async function removeProvider(provider: LlmProvider) {
+    const named = (settings.llmProviders ?? []).filter((p) => providerKey(p.baseUrl) !== providerKey(provider.baseUrl));
+    const next = models.filter((m) => providerKey(m.baseUrl) !== providerKey(provider.baseUrl));
+    if (await run(() => saveLlmModels(settings, next, t.admin.jobs.auditSection, undefined, named), t.admin.jobs.providerRemoved)) onSaved();
+  }
+
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const added = { baseUrl: baseUrl.trim(), model: model.trim() };
+    const url = baseUrl.trim();
+    const added = { baseUrl: url, model: model.trim() };
     if (models.some((m) => modelTarget(m) === modelTarget(added))) return showToast(t.admin.jobs.duplicate);
     const apiKey = typedKey(event.currentTarget);
     if (!apiKey) return showToast(t.admin.jobs.testNeedsKey);
-    if (await run(() => saveLlmModels(settings, [...models, added], t.admin.jobs.auditSection, { baseUrl: added.baseUrl, model: added.model, apiKey }), t.admin.jobs.addedToast)) onSaved();
+    if (isNew) {
+      const label = name.trim();
+      if (!label || !url) return showToast(t.admin.jobs.providerNeedsName);
+      if (LLM_PRESETS.some((p) => providerKey(p.baseUrl) === providerKey(url)) || providers.some((p) => providerKey(p.baseUrl) === providerKey(url))) return showToast(t.admin.jobs.providerDuplicate);
+      const named = [...(settings.llmProviders ?? []), { name: label, baseUrl: url }];
+      if (await run(() => saveLlmModels(settings, [...models, added], t.admin.jobs.auditSection, { ...added, apiKey }, named), t.admin.jobs.providerAdded)) onSaved();
+      return;
+    }
+    if (await run(() => saveLlmModels(settings, [...models, added], t.admin.jobs.auditSection, { ...added, apiKey }), t.admin.jobs.addedToast)) onSaved();
   }
 
   return (
     <form onSubmit={onSubmit} className="flex flex-col gap-6">
       <Step n={1} title={t.admin.jobs.stepProvider}>
         <div className="flex flex-wrap gap-2">
-          {PRESETS.map((preset) => (
-            <button
-              key={preset.name}
-              type="button"
-              aria-pressed={baseUrl === preset.baseUrl}
-              onClick={() => pickProvider(preset.baseUrl, preset.model)}
-              className={`flex h-10 items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold ${baseUrl === preset.baseUrl ? "border-brand bg-brand-soft" : "border-line hover:border-brand"}`}
-            >
+          {LLM_PRESETS.map((preset) => (
+            <button key={preset.name} type="button" aria-pressed={!isNew && providerKey(baseUrl) === providerKey(preset.baseUrl)} onClick={() => pick(preset.baseUrl, preset.baseUrl, preset.model)} className={chip(!isNew && providerKey(baseUrl) === providerKey(preset.baseUrl))}>
               {preset.name}
               {savedKey(preset.baseUrl) && <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />}
             </button>
           ))}
-          {savedCustom.map((url) => (
-            <button
-              key={url}
-              type="button"
-              aria-pressed={providerKey(baseUrl) === url}
-              onClick={() => pickProvider(url, lastModel(url))}
-              className={`flex h-10 items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold ${providerKey(baseUrl) === url ? "border-brand bg-brand-soft" : "border-line hover:border-brand"}`}
-            >
-              {providerName(url)}
-              <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />
-            </button>
-          ))}
-          <button
-            type="button"
-            aria-pressed={!isPreset(baseUrl) && !savedCustom.includes(providerKey(baseUrl))}
-            onClick={() => pickProvider("", "")}
-            className={`h-10 rounded-xl border px-3 text-sm font-semibold ${isPreset(baseUrl) || savedCustom.includes(providerKey(baseUrl)) ? "border-line hover:border-brand" : "border-brand bg-brand-soft"}`}
-          >
-            {t.admin.jobs.customProvider}
+          {providers.map((provider) => {
+            const active = !isNew && providerKey(baseUrl) === providerKey(provider.baseUrl);
+            const named = (settings.llmProviders ?? []).some((p) => providerKey(p.baseUrl) === providerKey(provider.baseUrl));
+            return (
+              <span key={provider.baseUrl} className={`flex h-10 items-center overflow-hidden rounded-xl border ${active ? "border-brand bg-brand-soft" : "border-line"}`}>
+                <button type="button" aria-pressed={active} onClick={() => pick(provider.baseUrl, provider.baseUrl, lastModel(provider.baseUrl))} className="flex h-full items-center gap-1.5 pl-3 pr-2 text-sm font-semibold">
+                  {provider.name}
+                  {savedKey(provider.baseUrl) && <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />}
+                </button>
+                {named && (
+                  <button type="button" disabled={busy} onClick={() => removeProvider(provider)} aria-label={t.admin.jobs.removeProvider} title={t.admin.jobs.removeProvider} className="flex h-full w-7 items-center justify-center text-dim hover:bg-sale-soft hover:text-sale">
+                    <X size={13} aria-hidden="true" />
+                  </button>
+                )}
+              </span>
+            );
+          })}
+          <button type="button" aria-pressed={isNew} onClick={() => pick("new", "", "")} className={chip(isNew)}>
+            + {t.admin.jobs.newProvider}
           </button>
         </div>
         <span className="text-xs text-dim">{t.admin.jobs.presetHint}</span>
         <div className="grid gap-4 md:grid-cols-2">
+          {isNew && (
+            <Field label={t.admin.jobs.providerNameLabel} name="providerName" {...NO_AUTOFILL} value={name} onChange={(e) => setName(e.target.value)} required hint={t.admin.jobs.providerNameHint} />
+          )}
           <Field label={t.admin.jobs.baseUrl} name="baseUrl" type="url" {...NO_AUTOFILL} value={baseUrl} onChange={(e) => setBaseUrl(e.target.value)} required hint={t.admin.jobs.baseUrlHint} />
-          <Field label={t.admin.jobs.model} name="model" {...NO_AUTOFILL} value={model} onChange={(e) => setModel(e.target.value)} required hint={t.admin.jobs.modelHint} />
+          <Field label={t.admin.jobs.model} name="model" {...NO_AUTOFILL} value={model} onChange={(e) => setModel(e.target.value)} required hint={isNew ? t.admin.jobs.newModelHint : t.admin.jobs.modelHint} />
         </div>
       </Step>
       <Step n={2} title={t.admin.jobs.stepKey}>
         {/* সার্ভিস বদলালে ঘর খালি হয়, আর দেখায় ওই সার্ভিসের নিজের সেভ করা key */}
         <SecretField
-          key={providerKey(baseUrl)}
+          key={providerKey(baseUrl) || "new"}
           label={t.admin.jobs.apiKey}
           name="apiKey"
           defaultValue={savedKey(baseUrl) ?? ""}
@@ -195,12 +202,12 @@ function AddModel({ settings, models, onSaved }: { settings: PrivateSettings; mo
           </p>
         )}
       </Step>
-      <Step n={4} title={t.admin.jobs.addModel}>
+      <Step n={4} title={isNew ? t.admin.jobs.addProviderTitle : t.admin.jobs.addModel}>
         <div className="flex flex-col gap-1.5">
           <button type="submit" disabled={busy} className={`${primaryButton} w-full sm:w-fit`}>
-            {t.admin.jobs.addModel}
+            {isNew ? t.admin.jobs.addProviderTitle : t.admin.jobs.addModel}
           </button>
-          <span className="text-xs text-dim">{t.admin.jobs.addHint}</span>
+          <span className="text-xs text-dim">{isNew ? t.admin.jobs.addProviderHint : t.admin.jobs.addHint}</span>
         </div>
       </Step>
     </form>

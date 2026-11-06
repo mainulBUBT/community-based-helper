@@ -23,7 +23,7 @@ export function BrandMarquee({ brands }: { brands: string[] }) {
   const loop = [...brands, ...brands];
   return (
     <div className="brand-marquee-space overflow-hidden">
-      <div className="brand-marquee flex w-max gap-3" style={{ animationDuration: `${Math.max(20, brands.length * 0.85)}s` }}>
+      <div className="brand-marquee flex w-max gap-3" style={{ animationDuration: `${Math.max(40, brands.length * 2)}s` }}>
         {loop.map((brand, i) => (
           <BrandTile key={`${brand}-${i}`} brand={brand} />
         ))}

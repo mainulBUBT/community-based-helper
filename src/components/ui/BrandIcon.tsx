@@ -80,6 +80,7 @@ export function BrandIcon({
       width={size}
       height={size}
       loading="lazy"
+      decoding="async"
       onError={() => setFailed(true)}
       className={`object-contain ${className}`}
       style={{ width: size, height: size }}

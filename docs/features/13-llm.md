@@ -4,7 +4,7 @@
 
 ## যা আছে
 
-- যেকোনো OpenAI-compatible API চলে: Gemini, Groq, OpenRouter, Cloudflare Workers AI, Ollama। শুধু Base URL, মডেল আর key বদলালেই হয়।
+- যেকোনো OpenAI-compatible API চলে। আগে থেকেই থাকা ৫টা প্রোভাইডার: Gemini, Groq, OpenRouter, Cloudflare Workers AI, Z.ai (`LLM_PRESETS`, `src/services/admin/settings.ts`) — চাপলেই Base URL আর মডেল বসে যায়। ছাড়া যেকোনো OpenAI-style সার্ভিস (KiloCode, OpenCode, নিজের প্রক্সি) অ্যাডমিনের "নতুন প্রোভাইডার" দিয়ে নাম দিয়ে যত খুশি যোগ করা যায় (`private_settings.llmProviders`), চিপের ✕ দিয়ে মুছলে তার সেটআপও (`llmModels`) মুছে যায়; key আগের মতো Base URL ধরেই (`llmKeys`)। পুরনো ভার্সনে শুধু key জমে যাওয়া নাম-ছাড়া সার্ভিসগুলো ডোমেইন-নামের চিপ হয়ে দেখায় (`providerList`)।
 - অ্যাডমিন → কাজ ও AI পেজে ঠিকানা, মডেল, key, আর "সংযোগ পরীক্ষা করুন" বোতাম (`src/services/admin/settings.ts` এর `testLlm`)। পরীক্ষা চলে Supabase ফাংশন `test-llm` থেকে (শুধু অ্যাডমিন; key ঘর খালি থাকলে ওই প্রোভাইডারের সেভ করা key), তাই CSP বা CORS আটকায় না, যেকোনো OpenAI-compatible ঠিকানা চলে। deploy: `npx supabase functions deploy test-llm`।
 - এক প্রোভাইডারে কয়েকটা key: key এর ঘরে কমা দিয়ে আলাদা করে লিখুন। worker প্রতিবার পালা করে পরের key নেয়, আর কোনো key 429 দিলে দেখে কোন সীমা: মিনিটের সীমা হলে Gemini যতক্ষণ বলে (`retryDelay`, ৫–৯০ সেকেন্ড) থেমে একই key তে আবার (৩ বার পর্যন্ত); দিনের কোটা (`PerDay`) শেষ হলে সেই run এ সেটা বাদ দিয়ে পরেরটায় যায় (`workers/lib/llm-keys.ts`; chat/completions আর Gemini url_context দুটোতেই)। সব AI ডাক একটা একটা করে চলে, মাঝে ৪ সেকেন্ড ফাঁক (`LLM_MIN_GAP_MS`)। ২৭ অক্টোবরের আগে একবার মিনিটের 429 পেলেই একমাত্র key পুরো run এর জন্য বাদ হত, তাই `promos` এ "LLM key নেই, অথবা সব key এর কোটা শেষ" আসত। "সংযোগ পরীক্ষা" প্রতিটা key আলাদা দেখায়।
 - প্রতিটা প্রোভাইডারের key আলাদা সেভ থাকে (Base URL ধরে, `private_settings.llmKeys`)। Gemini থেকে Groq এ গেলে Groq এর নিজের key লাগে, ফিরে এলে Gemini এর আগের key-ই চলে; একটার key বদলালে অন্যগুলো বদলায় না। key আছে এমন প্রোভাইডারের বোতামে ✓। worker সবসময় বাছাই করা প্রোভাইডারের key পায় (`llm.apiKey`)। (`20261025100000_llm-keys-per-provider.sql`)
@@ -15,7 +15,7 @@
 
 ## কয়েকটা AI সেটআপ, quota শেষ হলে পরেরটা (৩১ অক্টোবর)
 
-- অ্যাডমিন → অটোমেশন ও AI → AI সেটআপে কয়েকটা সেটআপ (সার্ভিস + মডেল), পছন্দের ক্রমে (`private_settings.llmModels`)। একই সার্ভিসের কয়েকটা মডেলও রাখা যায়; key আগের মতো সার্ভিস ধরে (`llmKeys`)। যোগ, ওপরে/নিচে আর মুছুন সাথে সাথে সেভ হয়। তালিকা না থাকলে পুরনো `llm`-ই একমাত্র সেটআপ।
+- অ্যাডমিন → অটোমেশন ও AI → AI সেটআপে কয়েকটা সেটআপ (প্রোভাইডার + মডেল), পছন্দের ক্রমে (`private_settings.llmModels`)। একই প্রোভাইডারের কয়েকটা মডেলও রাখা যায়; key আগের মতো প্রোভাইডার ধরে (`llmKeys`)। যোগ, ওপরে/নিচে আর মুছুন সাথে সাথে সেভ হয়। তালিকা না থাকলে পুরনো `llm`-ই একমাত্র সেটআপ।
 - worker (`workers/lib/llm.ts`) প্রথম সেটআপ দিয়ে চলে; তার quota শেষ হলে (429, বা সব key এর দিনের কোটা) তালিকার পরেরটা। শেষ হওয়া সেটআপ ওই run এ আর ডাকা হয় না; পরের run আবার প্রথমটা থেকে শুরু। অন্য ভুলে (key ভুল, সার্ভার ডাউন) আগের মতোই থামে, বদলায় না।
 - key এর দিনের কোটা মডেল ধরে (Gemini-তে একই key এর এক মডেল শেষ হলেও অন্যটা চলে)।
 - Gemini-র url_context পড়া (`lib/ai-page.ts`) তালিকার প্রথম Gemini সেটআপ নেয়।

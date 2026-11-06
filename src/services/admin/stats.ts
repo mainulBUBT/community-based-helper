@@ -64,7 +64,7 @@ type Row = Record<string, unknown>;
 const breakdown = (rows: unknown, key: string): Breakdown[] =>
   ((rows as Row[] | null) ?? []).map((row) => ({ key: (row[key] as string | null) ?? null, views: Number(row.views ?? row.times ?? 0), visitors: Number(row.visitors ?? 0) }));
 
-const EMPTY: VisitorInsights = { visitors: 0, returning: 0, countries: [], devices: [], referrers: [], products: [], searches: [] };
+const EMPTY: VisitorInsights = { visitors: 0, returning: 0, countries: [], devices: [], referrers: [], products: [], searches: [], events: [] };
 
 // শুধু পেজ খুললে হিসাব হয়, সর্বোচ্চ ৯০ দিনের
 export async function loadInsights(days = 30): Promise<VisitorInsights> {
@@ -80,6 +80,7 @@ export async function loadInsights(days = 30): Promise<VisitorInsights> {
     referrers: breakdown(raw.referrers, "referrer"),
     products: ((raw.products as Row[] | null) ?? []).map((row) => ({ key: String(row.name), slug: String(row.slug), views: Number(row.views), visitors: Number(row.visitors) })),
     searches: breakdown(raw.searches, "query").map((s) => ({ ...s, key: s.key ? safeDecode(s.key) : s.key })),
+    events: breakdown(raw.events, "source"),
   };
 }
 

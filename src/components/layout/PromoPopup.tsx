@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useI18n } from "@/hooks/useI18n";
+import { trackEvent } from "@/services/analytics";
 import type { SiteSettings } from "@/types/admin";
 
 const SEEN_KEY = "popup-seen";
@@ -38,7 +39,10 @@ export function PromoPopup({ settings }: { settings: SiteSettings }) {
     }
     const poster = new Image();
     poster.onload = () => {
-      if (firstTime(image)) setOpen(true);
+      if (firstTime(image)) {
+        trackEvent("popup-view", image);
+        setOpen(true);
+      }
     };
     poster.src = image;
     return () => {
@@ -62,7 +66,7 @@ export function PromoPopup({ settings }: { settings: SiteSettings }) {
           <X size={22} aria-hidden="true" />
         </button>
       </div>
-      <Link href={href} prefetch={false} onClick={() => setOpen(false)}>
+      <Link href={href} prefetch={false} onClick={() => { trackEvent("popup-click", href); setOpen(false); }}>
         <img src={image} alt={alt ?? ""} className="block max-h-dvh w-full rounded-2xl object-contain" />
       </Link>
     </dialog>

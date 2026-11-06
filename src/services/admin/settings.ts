@@ -1,8 +1,17 @@
 import { sampleSettings } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
-import type { LlmModel, PrivateSettings, SiteSettings } from "@/types/admin";
+import type { LlmModel, LlmProvider, PrivateSettings, SiteSettings } from "@/types/admin";
 import { getSiteSettings } from "../catalog-live";
 import { logAction } from "./audit";
+
+// আগে থেকেই থাকা প্রোভাইডার; বাকি যেকোনো OpenAI-compatible সার্ভিস অ্যাডমিনে "নতুন প্রোভাইডার" দিয়ে যোগ হয়
+export const LLM_PRESETS = [
+  { name: "Gemini", baseUrl: "https://generativelanguage.googleapis.com/v1beta/openai/", model: "gemini-2.5-flash" },
+  { name: "Groq", baseUrl: "https://api.groq.com/openai/v1", model: "llama-3.3-70b-versatile" },
+  { name: "OpenRouter", baseUrl: "https://openrouter.ai/api/v1", model: "meta-llama/llama-3.3-70b-instruct:free" },
+  { name: "Cloudflare", baseUrl: "https://api.cloudflare.com/client/v4/accounts/ACCOUNT_ID/ai/v1", model: "@cf/meta/llama-3.1-8b-instruct" },
+  { name: "Z.ai", baseUrl: "https://api.z.ai/api/paas/v4", model: "glm-4.5" },
+];
 
 const DEFAULT_PRIVATE: PrivateSettings = {
   llm: { baseUrl: "https://generativelanguage.googleapis.com/v1beta/openai/", model: "gemini-2.5-flash", apiKey: null },
@@ -13,6 +22,22 @@ const DEFAULT_PRIVATE: PrivateSettings = {
 
 export const providerKey = (baseUrl: string) => baseUrl.trim().replace(/\/+$/, "");
 export const modelTarget = (model: Pick<LlmModel, "baseUrl" | "model">) => `${providerKey(model.baseUrl)}|${model.model}`;
+
+const domain = (url: string) => url.replace(/^https?:\/\//, "").replace(/\/+$/, "");
+
+// নাম দেওয়া প্রোভাইডার, সাথে পুরনো ভার্সনে শুধু key জমে যাওয়া নাম-ছাড়া সার্ভিস (ওদের নাম হয় ডোমেইন)
+export function providerList(settings: PrivateSettings): LlmProvider[] {
+  const named = settings.llmProviders ?? [];
+  const legacy = Object.keys(settings.llmKeys ?? {})
+    .filter((url) => url && !LLM_PRESETS.some((p) => providerKey(p.baseUrl) === url) && !named.some((p) => providerKey(p.baseUrl) === url))
+    .map((url) => ({ name: domain(url), baseUrl: url }));
+  return [...named, ...legacy];
+}
+
+export const providerName = (settings: PrivateSettings, baseUrl: string) =>
+  LLM_PRESETS.find((p) => providerKey(p.baseUrl) === providerKey(baseUrl))?.name ??
+  providerList(settings).find((p) => providerKey(p.baseUrl) === providerKey(baseUrl))?.name ??
+  domain(baseUrl);
 
 // তালিকা না থাকলে (পুরনো সেটিং) আগের একটা মডেলই তালিকা
 export function modelList(settings: PrivateSettings): LlmModel[] {
@@ -81,16 +106,22 @@ export async function testLlm({ baseUrl, model, apiKey }: PrivateSettings["llm"]
     headers: { "content-type": "application/json", authorization: `Bearer ${apiKey ?? ""}` },
     body: JSON.stringify({ model, messages: [{ role: "user", content: "Reply with: ok" }] }),
   });
-  if (!response.ok) throw new Error(`${response.status} ${await response.text()}`.slice(0, 200));
-  const body = await response.json();
+  const raw = await response.text();
+  if (!response.ok) throw new Error(`${response.status} ${raw.slice(0, 150)}`);
+  let body: { choices?: { message?: { content?: string } }[] };
+  try {
+    body = JSON.parse(raw);
+  } catch {
+    throw new Error(`non-JSON reply: ${raw.slice(0, 150)}`);
+  }
   return String(body.choices?.[0]?.message?.content ?? "").trim();
 }
 
 export const aiReady = (settings: PrivateSettings) => modelList(settings).some((m) => settings.llmKeys?.[providerKey(m.baseUrl)]);
 
-// সেটআপের তালিকা সাথে সাথে সেভ; নতুন সেটআপের সাথে key দিলে সেটা ওই সার্ভিসের key হয়
-export async function saveLlmModels(settings: PrivateSettings, models: LlmModel[], section: string, added?: PrivateSettings["llm"]) {
+// সেটআপের তালিকা সাথে সাথে সেভ; নতুন সেটআপের সাথে key দিলে সেটা ওই সার্ভিসের key হয়, প্রোভাইডারের তালিকাও এ সাথে বদলায়
+export async function saveLlmModels(settings: PrivateSettings, models: LlmModel[], section: string, added?: PrivateSettings["llm"], providers?: LlmProvider[]) {
   const first = models[0];
   const llm = added ?? (first ? { baseUrl: first.baseUrl, model: first.model, apiKey: null } : settings.llm);
-  await savePrivateSettings({ ...settings, llm, llmModels: models, telegramBotToken: null }, section);
+  await savePrivateSettings({ ...settings, llm, llmModels: models, ...(providers && { llmProviders: providers }), telegramBotToken: null }, section);
 }

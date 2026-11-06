@@ -57,7 +57,7 @@ const trimSlash = (path: string) => path.replace(/\/+$/, "");
 
 const iconButton = "flex size-10 items-center justify-center rounded-xl text-[#d0d5dd] hover:bg-white/10";
 
-function NavList({ onNavigate }: { onNavigate?: () => void }) {
+function NavList({ onNavigate, className }: { onNavigate?: () => void; className?: string }) {
   const { t, num } = useAdminI18n();
   const pathname = trimSlash(usePathname());
   // শুধু সংখ্যা (head count), পেজ বদলালে আর সিদ্ধান্ত দিলে আবার গোনা
@@ -69,7 +69,7 @@ function NavList({ onNavigate }: { onNavigate?: () => void }) {
   }, []);
   const { data: pending } = useAsync(() => countPendingReview().catch(() => 0), [pathname, changes]);
   return (
-    <nav aria-label={t.admin.menuLabel} className="flex flex-col gap-1">
+    <nav aria-label={t.admin.menuLabel} className={`flex flex-col gap-1 ${className ?? ""}`}>
       {NAV.map(({ href, key, icon: Icon }) => {
         const active = trimSlash(href) === "/admin" ? pathname === "/admin" : pathname.startsWith(trimSlash(href));
         return (
@@ -213,8 +213,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
           <BrandMark size={30} />
           <span className="text-lg font-bold">{t.admin.title}</span>
         </div>
-        <NavList />
-        <span className="flex-1" />
+        <NavList className="min-h-0 flex-1 overflow-y-auto" />
         <UserBlock email={admin.email} onSignedOut={reload} />
       </aside>
       <main className="min-w-0 flex-1 p-4 md:p-8">{children}</main>

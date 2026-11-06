@@ -52,7 +52,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 24. ⬜ **৩১ অক্টোবরের AI ম্যানেজার চালু করা:** [ai-manager](features/19-ai-manager.md)-এর "চালু করার ধাপ" (wrangler login, `npm run agent:deploy`, দুটো secret, GitHub-এ `MANAGER_URL`, তারপর `rebuild`)।
 25. ⬜ **১ নভেম্বরের ৩টা নতুন দোকান লাইভে নেওয়া** (migration লাগে না): `npm run catalog:specs` (প্রয়োজন হলে), তারপর `npx supabase db query --linked -f supabase/seed.sql` (নতুন seller: Shaver Shop, Trimmer Shop BD, Salextra), তারপর `npm run worker -- discover plan` একবার দেখে `discover` চালানো (বা রাতের cron), শেষে `rebuild`। Shaver Shop-এ ১৬টা, Trimmer Shop BD-তে ৯টা, Salextra-তে ৫০+ আমাদের পণ্যের দাম আসবে। Sara Lifestyle বাদ: ওদের Cloudflare `DordamBot` UA-কে সবখানে 403 দেয়। দেখুন [data-sources](features/17-data-sources.md)।
 26. ⬜ **১ নভেম্বরের স্পিকার আর পোর্টেবল SSD লাইভে নেওয়া:** ক্যাটাগরি migration `20261101200000_speaker-ssd-categories.sql` আর ব্যাচ (`supabase/batches/2026-11-01-speaker-ssd.sql`: ২৪ পণ্য, ৩০ ভার্সন, নতুন দোকান UCC আর Skyland) ডিবিতে চলেছে; `discover` চলছে। বাকি: review_queue যাচাই করে `applyApproved`, এক দোকানে নেমে আসা ভার্সন বাদ, `rebuild`। প্রতিটা পণ্য ২+ দোকানে; Samsung T7 বাদ (শুধু Startech)। দেখুন [data-sources](features/17-data-sources.md)।
-27. ⬜ **৫ নভেম্বরের মৌসুমি ক্যাটাগরি লাইভে নেওয়া:** (১) `npm run db:push` (migration `20261105100547_collection-categories.sql`: "শীতের পণ্য" ৩৬ পণ্যসহ, বন্ধ অবস্থায়; `20261105121152_agora-seller.sql`: নতুন দোকান Agora), (২) git push (deploy; `probe-stores`-এ Agora পাস দেখা, তারপর `discover` চালানো), (৩) অ্যাডমিন → মৌসুমি ক্যাটাগরিতে চালু করে "সাইটে পাঠান", (৪) শীতের পাতা ঠিক থাকলে অ্যাডমিন → ব্যানারে পপআপ চালু করে আবার "সাইটে পাঠান"। উল্টো ক্রমে করলে মাঝের সময়ে অ্যাডমিনে ক্যাটাগরি সেভ হবে না। দেখুন [user-pages](features/02-user-pages.md)।
+27. ⬜ **৫ নভেম্বরের মৌসুমি ক্যাটাগরি লাইভে নেওয়া:** (১) `npm run db:push` (migration `20261105100547_collection-categories.sql`: "শীতের পণ্য" ৩৬ পণ্যসহ, বন্ধ অবস্থায়; `20261105121152_agora-seller.sql`: নতুন দোকান Agora; `20261106170053_banner-source-stats.sql`: ব্যানার আর মৌসুমি টাইলের দেখা-ক্লিক গোনা — কোড deploy করার আগে এটা চালানো জরুরি, নইলে ব্যানারের ক্লিক জমবে না), (২) git push (deploy; `probe-stores`-এ Agora পাস দেখা, তারপর `discover` চালানো), (৩) অ্যাডমিন → মৌসুমি ক্যাটাগরিতে চালু করে "সাইটে পাঠান", (৪) শীতের পাতা ঠিক থাকলে অ্যাডমিন → ব্যানারে পপআপ চালু করে আবার "সাইটে পাঠান"। উল্টো ক্রমে করলে মাঝের সময়ে অ্যাডমিনে ক্যাটাগরি সেভ হবে না। দেখুন [user-pages](features/02-user-pages.md)।
 11. ✅ `/about/` পেজ (`/about/` বাংলা, `/en/about/` English), সব লেখা অ্যাডমিন থেকে বদলানো যায়।
 
 ## ফিচার ট্র্যাকার
@@ -71,8 +71,8 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | 10 | লগইন | ⛔ | [10-auth](features/10-auth.md) |
 | 11 | ডেটাবেস (Supabase) | ⛔ | [11-database](features/11-database.md) |
 | 12 | দাম আনার worker আর cron | 🟡 দিনে ৬ বার cadence আর ফলব্যাক চেইন (Jina → Gemini) হয়েছে (৪ নভেম্বর); Gemini key অ্যাডমিনে বসানো বাকি | [12-workers-cron](features/12-workers-cron.md) |
-| 13 | AI (OpenAI-compatible LLM) | 🟡 | [13-llm](features/13-llm.md) |
-| 14 | ভিজিটর গোনা আর লগ | 🟡 | [14-analytics-logs](features/14-analytics-logs.md) |
+| 13 | AI (OpenAI-compatible LLM) | 🟡 ৫টা আগে-থাকা প্রোভাইডার (Gemini, Groq, OpenRouter, Cloudflare, Z.ai) + নাম দিয়ে যত খুশি OpenAI-compatible প্রোভাইডার | [13-llm](features/13-llm.md) |
+| 14 | ভিজিটর গোনা আর লগ | 🟡 পপআপ ব্যানার আর মৌসুমি টাইলের দেখা-ক্লিক গোনা হয় (অ্যাডমিন → ভিজিটর; migration push করা বাকি) | [14-analytics-logs](features/14-analytics-logs.md) |
 | 15 | দোকানের জন্য Telegram bot | ⬜ | [15-telegram-bot](features/15-telegram-bot.md) |
 | 16 | Deploy আর ডোমেইন | 🟡 `dordam.app` চালু, SEO লিংক ঠিক; Auth URL, Search Console বাকি | [16-deploy](features/16-deploy.md) |
 | 17 | ডেটার উৎস আর নিয়ম | ✅ সিদ্ধান্ত (১ নভেম্বর: Shaver Shop, Trimmer Shop BD, Salextra, UCC, Skyland যোগ; স্পিকার + SSD ব্যাচ) | [17-data-sources](features/17-data-sources.md) |
