@@ -501,7 +501,7 @@ export const adminEn: AdminMessages = {
     providerNeedsName: "Give the provider both a name and a URL",
     providerDuplicate: "A provider with this URL already exists",
     providerAdded: "Provider added",
-    providerRemoved: "Provider and its setups deleted",
+    providerRemoved: "Provider, its setups and key deleted",
     removeProvider: "Delete provider",
     addProviderTitle: "Add provider",
     addProviderHint: "The provider and its first setup are added together; you can add more models for it later.",

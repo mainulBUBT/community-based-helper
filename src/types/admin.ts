@@ -132,6 +132,8 @@ export interface PrivateSettings {
   llmProviders?: LlmProvider[];
   // প্রতিটা প্রোভাইডারের key, Base URL ধরে (ব্রাউজারে শুধু ঢাকা রূপ আসে)
   llmKeys?: Record<string, string>;
+  // শুধু সেভের সময় পাঠানো হয়: এই Base URL-এর key মুছতে
+  removeLlmKey?: string | null;
   telegramBotToken: string | null;
   alertChatId: string | null;
   managerAuto?: boolean;

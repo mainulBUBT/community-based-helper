@@ -114,7 +114,8 @@ function AddModel({ settings, models, onSaved }: { settings: PrivateSettings; mo
   async function removeProvider(provider: LlmProvider) {
     const named = (settings.llmProviders ?? []).filter((p) => providerKey(p.baseUrl) !== providerKey(provider.baseUrl));
     const next = models.filter((m) => providerKey(m.baseUrl) !== providerKey(provider.baseUrl));
-    if (await run(() => saveLlmModels(settings, next, t.admin.jobs.auditSection, undefined, named), t.admin.jobs.providerRemoved)) onSaved();
+    const key = providerKey(provider.baseUrl);
+    if (await run(() => saveLlmModels(settings, next, t.admin.jobs.auditSection, undefined, named, key), t.admin.jobs.providerRemoved)) onSaved();
   }
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
@@ -147,18 +148,15 @@ function AddModel({ settings, models, onSaved }: { settings: PrivateSettings; mo
           ))}
           {providers.map((provider) => {
             const active = !isNew && providerKey(baseUrl) === providerKey(provider.baseUrl);
-            const named = (settings.llmProviders ?? []).some((p) => providerKey(p.baseUrl) === providerKey(provider.baseUrl));
             return (
               <span key={provider.baseUrl} className={`flex h-10 items-center overflow-hidden rounded-xl border ${active ? "border-brand bg-brand-soft" : "border-line"}`}>
                 <button type="button" aria-pressed={active} onClick={() => pick(provider.baseUrl, provider.baseUrl, lastModel(provider.baseUrl))} className="flex h-full items-center gap-1.5 pl-3 pr-2 text-sm font-semibold">
                   {provider.name}
                   {savedKey(provider.baseUrl) && <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />}
                 </button>
-                {named && (
-                  <button type="button" disabled={busy} onClick={() => removeProvider(provider)} aria-label={t.admin.jobs.removeProvider} title={t.admin.jobs.removeProvider} className="flex h-full w-7 items-center justify-center text-dim hover:bg-sale-soft hover:text-sale">
-                    <X size={13} aria-hidden="true" />
-                  </button>
-                )}
+                <button type="button" disabled={busy} onClick={() => removeProvider(provider)} aria-label={t.admin.jobs.removeProvider} title={t.admin.jobs.removeProvider} className="flex h-full w-7 items-center justify-center text-dim hover:bg-sale-soft hover:text-sale">
+                  <X size={13} aria-hidden="true" />
+                </button>
               </span>
             );
           })}

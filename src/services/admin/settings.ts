@@ -75,10 +75,12 @@ export async function loadPrivateSettings(): Promise<PrivateSettings> {
   return { ...DEFAULT_PRIVATE, ...value, llm: { ...llm, apiKey: llmKeys[providerKey(llm.baseUrl)] ?? null }, llmKeys };
 }
 
-export async function savePrivateSettings(value: PrivateSettings, section: string) {
+export async function savePrivateSettings({ removeLlmKey, ...value }: PrivateSettings, section: string) {
+  const removeKey = removeLlmKey ? providerKey(removeLlmKey) : null;
   if (!supabase) {
     const base = providerKey(value.llm.baseUrl);
     const llmKeys = { ...demoPrivate.llmKeys, ...(value.llm.apiKey && base ? { [base]: value.llm.apiKey } : {}) };
+    if (removeKey) delete llmKeys[removeKey];
     demoPrivate = {
       ...value,
       llm: { ...value.llm, apiKey: llmKeys[base] ?? null },
@@ -86,7 +88,7 @@ export async function savePrivateSettings(value: PrivateSettings, section: strin
       llmKeys,
     };
   } else {
-    const { error } = await supabase.rpc("save_private_settings", { patch: value });
+    const { error } = await supabase.rpc("save_private_settings", { patch: { ...value, ...(removeKey && { removeLlmKey: removeKey }) } });
     if (error) throw error;
   }
   await logAction("settings.update", { section });
@@ -119,9 +121,12 @@ export async function testLlm({ baseUrl, model, apiKey }: PrivateSettings["llm"]
 
 export const aiReady = (settings: PrivateSettings) => modelList(settings).some((m) => settings.llmKeys?.[providerKey(m.baseUrl)]);
 
-// সেটআপের তালিকা সাথে সাথে সেভ; নতুন সেটআপের সাথে key দিলে সেটা ওই সার্ভিসের key হয়, প্রোভাইডারের তালিকাও এ সাথে বদলায়
-export async function saveLlmModels(settings: PrivateSettings, models: LlmModel[], section: string, added?: PrivateSettings["llm"], providers?: LlmProvider[]) {
+// সেটআপের তালিকা সাথে সাথে সেভ; নতুন সেটআপের সাথে key দিলে সেটা ওই সার্ভিসের key হয়, প্রোভাইডারের তালিকাও এ সাথে বদলায়; removeKey দিলে ওই প্রোভাইডারের key-ও মুছে যায়
+export async function saveLlmModels(settings: PrivateSettings, models: LlmModel[], section: string, added?: PrivateSettings["llm"], providers?: LlmProvider[], removeKey?: string) {
   const first = models[0];
   const llm = added ?? (first ? { baseUrl: first.baseUrl, model: first.model, apiKey: null } : settings.llm);
-  await savePrivateSettings({ ...settings, llm, llmModels: models, ...(providers && { llmProviders: providers }), telegramBotToken: null }, section);
+  await savePrivateSettings(
+    { ...settings, llm, llmModels: models, ...(providers && { llmProviders: providers }), ...(removeKey && { removeLlmKey: removeKey }), telegramBotToken: null },
+    section,
+  );
 }

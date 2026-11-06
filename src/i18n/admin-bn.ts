@@ -498,7 +498,7 @@ export const adminBn = {
     providerNeedsName: "প্রোভাইডারের নাম আর লিংক, দুটোই দিন",
     providerDuplicate: "এই লিংকের প্রোভাইডার আগেই আছে",
     providerAdded: "প্রোভাইডার যোগ হয়েছে",
-    providerRemoved: "প্রোভাইডার আর তার সেটআপ মুছে ফেলা হয়েছে",
+    providerRemoved: "প্রোভাইডার, তার সেটআপ আর key মুছে ফেলা হয়েছে",
     removeProvider: "প্রোভাইডার মুছুন",
     addProviderTitle: "প্রোভাইডার যোগ করুন",
     addProviderHint: "প্রোভাইডার আর প্রথম সেটআপ একসাথে যোগ হয়; পরে এই প্রোভাইডারে আরও মডেল যোগ করা যাবে।",
