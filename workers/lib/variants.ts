@@ -89,9 +89,13 @@ function fits(offer: PageOffer, target: VariantTarget, differ: Set<string>, alon
   const memory = [...opt].filter((t) => MEMORY.test(t));
   const ownMemory = [...own].filter((t) => MEMORY.test(t));
   const optRam = memory.some((t) => !isStorage(t));
-  if (ownMemory.some((t) => !opt.has(t) && memory.length && (isStorage(t) || differ.has(t) || optRam))) return false;
+  const ownRam = ownMemory.some((t) => !isStorage(t));
+  // দোকান শুধু RAM দেখালে (Tech Marvels-এর "8 gb"), স্টোরেজ নিজের লেবেলেই আছে; RAM-এর অমিল নিচের differ-চেকে ধরা পড়ে
+  const ramOnly = optRam && !memory.some((t) => isStorage(t)) && ![...opt].some((t) => differ.has(t) && !own.has(t));
+  if (ownMemory.some((t) => !opt.has(t) && memory.length && (isStorage(t) || differ.has(t) || optRam)) && !ramOnly) return false;
   if (memory.some((t) => isStorage(t) && !own.has(t))) return false;
-  if ([...differ].some((t) => opt.has(t) && !own.has(t))) return false;
+  // নিজের লেবেলে RAM না থাকলে অফারের RAM শুধু অতিরিক্ত তথ্য ("12GB / 512GB" = "512GB"); স্টোরেজের অমিল আগেই ধরা পড়ে
+  if ([...differ].some((t) => opt.has(t) && !own.has(t) && !(optRam && !isStorage(t) && !ownRam))) return false;
   if (CONNECTIVITY.some((t) => opt.has(t)) && opt.has("cellular") !== own.has("cellular")) return false;
   if (opt.has("official") && target.condition !== "official") return false;
   if (["unofficial", "intl", "international"].some((t) => opt.has(t)) && target.condition === "official") return false;

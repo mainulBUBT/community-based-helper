@@ -50,11 +50,12 @@ function objectsAt(html: string, marker: RegExp): Json[] {
   return [...seen.values()];
 }
 
-// পাশের "সম্পর্কিত পণ্য" বাদ: যে পণ্যের ভার্সনে পাতার মূল দাম আছে সেটাই। পাতার দাম থাকা সত্ত্বেও কোনো ভার্সনে না মিললে (মূল পণ্য স্টকে নেই বলে তার ভার্সন বাদ) পাশের পণ্যের কেস/গ্লাসের দাম না নিয়ে কিছুই না
+// পাশের "সম্পর্কিত পণ্য" বাদ: যে পণ্যের ভার্সনে পাতার মূল দাম আছে সেটাই। পাতার দাম থাকা সত্ত্বেও কোনো ভার্সনে না মিললে
+// (মূল পণ্য স্টকে নেই বলে তার ভার্সন বাদ) পাশের পণ্যের কেস/গ্লাসের দাম না নিয়ে কিছুই না; একটাই পণ্যের গ্রুপ হলে সেটাই মূলটা
 function mainProduct(rows: Json[], productOf: (row: Json) => unknown, priceOf: (row: Json) => number | null, html: string): Json[] {
   const groups = [...groupBy(rows, (row) => String(productOf(row))).values()];
   const shown = structuredQuote(html)?.price;
-  return groups.find((group) => group.some((row) => priceOf(row) === shown)) ?? (shown ? [] : groups[0]) ?? [];
+  return groups.find((group) => group.some((row) => priceOf(row) === shown)) ?? (shown && groups.length > 1 ? [] : groups[0]) ?? [];
 }
 
 function variant(attributes: [unknown, unknown][], price: unknown, oldPrice: unknown, inStock: boolean | null): ShopVariant[] {
@@ -117,12 +118,25 @@ export function dazzleVariants(html: string): ShopVariant[] {
 
 export function kryVariants(html: string): ShopVariant[] {
   const rows = objectsAt(html, /\{"id":\d+,"productId":\d+,"isDeleted":/g).filter((v) => v.isDeleted === false);
-  const current = (v: Json) => toTaka(v.discountPrice) || toTaka(v.price);
+  // নতুন পাতায় discountPrice কাটা-টাকা ("31499-200=31299"), পুরনো পাতায় কাটার পরের দাম; পাতায় দেখানো দামেই কোন ধাঁচ তা বোঝা যায়
+  const shown = structuredQuote(html)?.price;
+  const priceOf = (v: Json) => toTaka(v.price);
+  const discountOf = (v: Json) => toTaka(v.discountPrice);
+  const final = shown != null && rows.some((v) => discountOf(v) === shown);
+  const subtract = !final && shown != null && rows.some((v) => { const p = priceOf(v); const d = discountOf(v); return p != null && d != null && p - d === shown; });
+  const current = (v: Json) => {
+    const price = priceOf(v);
+    const discount = discountOf(v);
+    if (subtract && price != null && discount != null) return price - discount;
+    if (final && discount != null) return discount;
+    return discount || price;
+  };
   return mainProduct(rows, (v) => v.productId, current, html).flatMap((v) => {
     const ram = v.ram && /^\d+$/.test(String(v.ram)) ? `${v.ram}GB` : v.ram;
+    const rom = v.rom && /^\d+$/.test(String(v.rom)) ? `${v.rom}GB` : v.rom;
     const colors = Array.isArray(v.ProductColor) ? v.ProductColor.filter(isObject) : [];
     const inStock = colors.length ? colors.some((c) => c.inStock === true) : null;
-    const attributes: [unknown, unknown][] = [["ram", ram], ["storage", v.rom], ["size", v.size], ["connectivity", v.connectivity], ["chipset", v.chipset], ["region", v.region]];
+    const attributes: [unknown, unknown][] = [["ram", ram], ["storage", rom], ["size", v.size], ["connectivity", v.connectivity], ["chipset", v.chipset], ["region", v.region]];
     return variant(attributes, current(v), v.price, inStock);
   });
 }
