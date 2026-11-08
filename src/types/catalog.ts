@@ -25,6 +25,8 @@ export interface CategoryInfo {
   verifyNote?: boolean;
   // true: একই নামের পণ্য দোকানভেদে আলাদা মানের (খেজুর জাত ধরে তুলনা) — পণ্যের পাতায় সেই নোট
   qualityNote?: boolean;
+  // false: হোমের টাইল আর শেলফে নয় (মেনু, নিজের পাতা আর sitemap এ থাকে); অ্যাডমিনের মৌসুমি ক্যাটাগরিতে বদলায়
+  showOnHome?: boolean;
   // মৌসুমি/উৎসবের ক্যাটাগরি: অন্য ক্যাটাগরির পণ্যের slug হাতে বাছা; না থাকলে সাধারণ ক্যাটাগরি
   collection?: string[];
 }

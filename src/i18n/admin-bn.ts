@@ -95,6 +95,7 @@ export const adminBn = {
     all: (n: string) => `সব মৌসুমি ক্যাটাগরি (${n})`,
     publish: "সাইটে পাঠান",
     emptyHint: "পণ্য না থাকলে সাইটে দেখাবে না",
+    showOnHome: "হোমে দেখান",
     searchProducts: "পণ্য বা ক্যাটাগরির নাম লিখুন",
     addAll: (n: string) => `সবগুলো যোগ করুন (${n})`,
     selected: (n: string) => `বাছা পণ্য (${n})`,

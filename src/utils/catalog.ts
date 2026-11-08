@@ -6,6 +6,13 @@ export const byPrice = (a: { price: number }, b: { price: number }) => a.price -
 const nameKey = (brand: string, name: string) => `${brand} ${name}`.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
 const SIZE_TAIL = /^(?![2-5]g$)\d+(?:mm|gb|tb|ml|g|mah|inch|in)$/;
 
+// সাইট নামের আগে ব্র্যান্ড নিজেই বসায়; নামেও ব্র্যান্ড থাকলে "Anker Anker ..." হয়ে যায়
+export function withoutBrand(brand: string, name: string) {
+  const prefix = `${brand.trim()} `.toLowerCase();
+  const trimmed = name.trim();
+  return trimmed.toLowerCase().startsWith(prefix) && trimmed.length > prefix.length ? trimmed.slice(prefix.length).trim() : trimmed;
+}
+
 export function sameProduct(a: { brand: string; name: string }, b: { brand: string; name: string }) {
   const [x, y] = [nameKey(a.brand, a.name), nameKey(b.brand, b.name)].sort((p, q) => p.length - q.length);
   return x === y || (y.startsWith(x) && SIZE_TAIL.test(y.slice(x.length)));

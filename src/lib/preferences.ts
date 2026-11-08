@@ -6,9 +6,8 @@ export type ThemeChoice = "light" | "dark";
 const LANG_KEY = "lang";
 const ADMIN_LANG_KEY = "adminLang";
 const THEME_KEY = "theme";
-const SEASONAL_KEY = "seasonal";
 
-export const preferencesInitScript = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="dark")document.documentElement.dataset.theme=t;if(localStorage.getItem("${SEASONAL_KEY}")==="off")document.documentElement.dataset.seasonal="off";var p=location.pathname;if(/^\\/en(\\/|$)/.test(p))document.documentElement.lang="en";else if(localStorage.getItem("${LANG_KEY}")==="en"&&/^\\/($|about|search|sellers|saved|privacy\\/|terms\\/|faq\\/|contact\\/|product\\/|seller\\/|category\\/|brand\\/)/.test(p))location.replace("/en"+(p==="/"?"/":p)+location.search+location.hash)}catch(e){}`;
+export const preferencesInitScript = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="dark")document.documentElement.dataset.theme=t;var p=location.pathname;if(/^\\/en(\\/|$)/.test(p))document.documentElement.lang="en";else if(localStorage.getItem("${LANG_KEY}")==="en"&&/^\\/($|about|search|sellers|saved|privacy\\/|terms\\/|faq\\/|contact\\/|product\\/|seller\\/|category\\/|brand\\/)/.test(p))location.replace("/en"+(p==="/"?"/":p)+location.search+location.hash)}catch(e){}`;
 
 function read<T extends string>(key: string, allowed: readonly T[], fallback: T): T {
   if (typeof window === "undefined") return fallback;
@@ -29,8 +28,6 @@ function persist(key: string, value: string) {
 export const langStore = createStore<Lang>(read(LANG_KEY, ["bn", "en"], "bn"));
 export const adminLangStore = createStore<Lang>(read(ADMIN_LANG_KEY, ["bn", "en"], "en"));
 export const themeStore = createStore<ThemeChoice>(read(THEME_KEY, ["light", "dark"], "light"));
-// হোম পাতায় মৌসুমি ক্যাটাগরি (শীতের পণ্য) দেখাবে কি না — ভিজিটরের পছন্দ
-export const seasonalStore = createStore(read(SEASONAL_KEY, ["on", "off"], "on") === "on");
 
 export function setLang(lang: Lang) {
   langStore.set(lang);
@@ -48,10 +45,4 @@ export function setTheme(theme: ThemeChoice) {
   themeStore.set(theme);
   persist(THEME_KEY, theme);
   document.documentElement.dataset.theme = theme;
-}
-
-export function setSeasonal(show: boolean) {
-  seasonalStore.set(show);
-  persist(SEASONAL_KEY, show ? "on" : "off");
-  document.documentElement.dataset.seasonal = show ? "on" : "off";
 }

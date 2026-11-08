@@ -5,7 +5,6 @@ import { ProductCard } from "@/components/product/ProductCard";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
-import { seasonalStore } from "@/lib/preferences";
 import type { ProductSummary } from "@/types/catalog";
 import { byPopularity, byStock } from "@/utils/catalog";
 import { categoryPath } from "@/utils/url";
@@ -36,18 +35,16 @@ export function CategoryRows({ summaries }: { summaries: ProductSummary[] }) {
   const { t, num, lang, prefix } = useI18n();
   const { top, has } = useCategories();
   const roll = useSyncExternalStore(still, () => seed, () => 0);
-  const seasonal = useSyncExternalStore(seasonalStore.subscribe, seasonalStore.get, () => true);
   return (
     <>
-      {top
-        .filter((c) => seasonal || !c.collection)
-        .map((c) => {
+      {top.map((c) => {
+        if (c.showOnHome === false) return null;
         const items = summaries
           .filter((s) => has(c.slug, s.product))
           .sort((a, b) => byStock(a, b) || byPopularity(a, b));
         if (!items.length) return null;
         return (
-          <Shelf key={c.slug} seasonal={Boolean(c.collection)}>
+          <Shelf key={c.slug}>
             <SectionHeader
               title={lang === "en" ? c.nameEn : c.name}
               href={categoryPath(prefix, c.slug)}

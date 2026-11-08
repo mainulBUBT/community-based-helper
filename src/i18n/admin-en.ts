@@ -98,6 +98,7 @@ export const adminEn: AdminMessages = {
     all: (n) => `All seasonal categories (${n})`,
     publish: "Update site",
     emptyHint: "Hidden on the site until it has products",
+    showOnHome: "Show on home",
     searchProducts: "Type a product or category name",
     addAll: (n) => `Add all (${n})`,
     selected: (n) => `Selected products (${n})`,

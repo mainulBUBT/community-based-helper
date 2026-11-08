@@ -123,6 +123,7 @@ export default function CollectionsPage() {
                   <th className="px-5 py-3 font-semibold">{t.admin.products.colCategory}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.products}</th>
                   <th className="px-3 py-3 font-semibold">{t.admin.categories.active}</th>
+                  <th className="px-3 py-3 font-semibold">{text.showOnHome}</th>
                   <th className="px-5 py-3" />
                 </tr>
               </thead>
@@ -148,6 +149,16 @@ export default function CollectionsPage() {
                         disabled={busy}
                         onChange={async (active) => {
                           if (await run(() => saveCategory({ ...collection, active }, false))) reload();
+                        }}
+                      />
+                    </td>
+                    <td data-label={text.showOnHome} className="px-3 py-3">
+                      <Toggle
+                        label={text.showOnHome}
+                        checked={collection.showOnHome !== false}
+                        disabled={busy}
+                        onChange={async (showOnHome) => {
+                          if (await run(() => saveCategory({ ...collection, showOnHome }, false))) reload();
                         }}
                       />
                     </td>

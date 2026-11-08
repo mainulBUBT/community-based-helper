@@ -100,11 +100,6 @@
   background: Canvas;
 }
 
-/* মৌসুমি লুকানো থাকলে প্রথম আঁকাতেই লুকাই, hydration এর পরে React নিজেই বাদ দেয় */
-:root[data-seasonal="off"] [data-seasonal-item] {
-  display: none;
-}
-
 :root[data-theme="dark"] {
   color-scheme: dark;
 }

@@ -1,7 +1,7 @@
 import { loadSampleCatalog } from "@/data/sample";
 import { supabase } from "@/lib/supabase";
 import type { Product, Variant } from "@/types/catalog";
-import { sameProduct } from "@/utils/catalog";
+import { sameProduct, withoutBrand } from "@/utils/catalog";
 import { slugify } from "@/utils/format";
 import { parseVariantLabel } from "@/utils/variants";
 import { listCategories, loadCatalog } from "../catalog-live";
@@ -37,7 +37,8 @@ export class DuplicateProductError extends Error {
   }
 }
 
-export async function createProduct(input: NewProduct) {
+export async function createProduct(entered: NewProduct) {
+  const input = { ...entered, name: withoutBrand(entered.brand, entered.name) };
   const twin = (await loadCatalog()).products.find((p) => sameProduct(p, input));
   if (twin) throw new DuplicateProductError(`${twin.brand} ${twin.name}`);
   const slug = slugify(`${input.brand} ${input.name}`);
@@ -65,7 +66,8 @@ export async function createProduct(input: NewProduct) {
   return id;
 }
 
-export async function updateProduct(product: Product, fields: ProductFields) {
+export async function updateProduct(product: Product, entered: ProductFields) {
+  const fields = { ...entered, name: withoutBrand(entered.brand, entered.name) };
   if (!supabase) Object.assign((await loadSampleCatalog()).sampleProducts.find((p) => p.id === product.id)!, fields);
   else {
     const { error } = await supabase
