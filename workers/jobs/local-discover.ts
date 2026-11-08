@@ -4,7 +4,9 @@ import { discoverStore, sellerStores, type StoreResult } from "./discover";
 import type { JobRun } from "./run";
 
 // নতুন পণ্য এই ১৮ দোকানেও খোঁজা: GitHub এর discover এদের "blocked" দেখে এগিয়ে যায় কিন্তু পণ্যকে "খোঁজা হয়েছে" ধরে,
-// তাই এখানে চিহ্ন নয়, সময়: এই জবের শেষ সফল run এর পর যোগ বা বদলানো পণ্য। কোনো দোকান না হলে run ব্যর্থ ধরা হয়, পরের বার একই পণ্য আবার।
+// তাই এখানে চিহ্ন নয়, সময়: এই জবের শেষ সফল run এর পর যোগ বা বদলানো পণ্য। কোনো দোকানে ভুল হলে বা সময়ে শেষ না হলে run ব্যর্থ ধরা হয়,
+// পরের বার একই পণ্য আবার। যে দোকান বট আটকে রাখে (ঘরের IP তেও 403) সে শুধু নোটে; নইলে run কখনো সফল হতো না।
+// সব দোকান আটকালে (IP-ই বন্ধ) তবুও ব্যর্থ।
 const DEFAULT_DAYS = 3;
 
 export async function lastOkRun(job: string, current: number): Promise<string | null> {
@@ -21,6 +23,8 @@ export async function localDiscover(run: JobRun): Promise<string> {
   const total = (key: "added" | "review" | "failed") => results.reduce((sum, r) => sum + r[key], 0);
   const notes = results.flatMap((r) => r.notes);
   const summary = `Searched ${active.length} stores for products added after ${since.slice(0, 16).replace("T", " ")}: ${total("added")} new prices, ${total("review")} sent to review, ${total("failed")} failed`;
-  if (notes.length || results.some((r) => !r.finished)) throw new Error([summary, ...notes].join("; "));
-  return summary;
+  const broken = results.some((r) => !r.finished || (r.notes.length > 0 && !r.blocked));
+  const allBlocked = results.length > 0 && results.every((r) => r.blocked);
+  if (broken || allBlocked) throw new Error([summary, ...notes].join("; "));
+  return [summary, ...notes].join("; ");
 }

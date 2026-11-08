@@ -223,6 +223,8 @@ export interface StoreResult extends Tally {
   store: string;
   notes: string[];
   finished: boolean;
+  // দোকান বট আটকে রাখে (403/চ্যালেঞ্জ): বারবার চালালেও বদলায় না
+  blocked: boolean;
   found: string[];
 }
 
@@ -239,7 +241,7 @@ export async function sellerStores(): Promise<{ store: Store; seller: SellerRef 
 // শুধু নতুন বা ভার্সন বদলানো পণ্য কোন দোকানে আছে তা খোঁজা হয়; আগে বসে যাওয়া পণ্যের দাম `prices` job এ ওই লিংকেই হালনাগাদ হয়।
 // নতুন দোকান (এখনো একটাও দাম নেই): পুরো ক্যাটালগ খোঁজা হয়। খোঁজার মতো কিছু না থাকলে দোকানের তালিকা আনাই হয় না
 export async function discoverStore(store: Store, seller: SellerRef, since?: string): Promise<StoreResult> {
-  const result: StoreResult = { store: store.id, added: 0, review: 0, odd: 0, failed: 0, notes: [], finished: true, found: [] };
+  const result: StoreResult = { store: store.id, added: 0, review: 0, odd: 0, failed: 0, notes: [], finished: true, blocked: false, found: [] };
   const catalog = await loadCatalog();
   if (catalog.length === 0) return result;
   // since দিলে (লোকাল রানার): GitHub এ আটকানো দোকান "খোঁজা হয়েছে" চিহ্নিত পণ্যও এখানে খোঁজা হয়, তাই চিহ্ন নয়, সময় ধরে: since এর পরে যোগ বা বদলানো পণ্য
@@ -278,7 +280,8 @@ export async function discoverStore(store: Store, seller: SellerRef, since?: str
       outOfTime,
     );
   } catch (error) {
-    result.notes.push(error instanceof StoreBlocked ? `${store.name}: blocked (${message(error)})` : `${store.name}: ${message(error)}`);
+    result.blocked = error instanceof StoreBlocked;
+    result.notes.push(result.blocked ? `${store.name}: blocked (${message(error)})` : `${store.name}: ${message(error)}`);
   }
   result.found = [...slots].filter((key) => !before.has(key)).map((key) => key.split("|")[0]);
   if (outOfTime()) {
