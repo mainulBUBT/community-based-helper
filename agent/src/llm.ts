@@ -15,6 +15,8 @@ export interface ChatMessage {
 
 // 429 সবসময় কোটা শেষ নয়: মিনিটের সীমা বা একসাথে বেশি ডাকলেও আসে, তাই সেটা থেমে আবার চেষ্টা; দিনের/ব্যালেন্সের সীমা হলে পরের key বা সেটআপে। শেষে আসল কারণ উত্তরে
 const RATE_RETRIES = 2;
+// kimi-k3-এর মতো ভেবে উত্তর দেওয়া মডেলে বড় প্রসঙ্গসহ এক ডাকেই এক মিনিটের বেশি লাগে; alarm এর ১৫ মিনিটের সীমার ভেতরে থাকে
+const CALL_TIMEOUT_MS = 180_000;
 const RATE = /rate|too many|concurren|frequen|busy|retry/i;
 const SPENT = /quota|balance|exhaust|per ?day|daily|insufficient|billing/i;
 
@@ -29,7 +31,7 @@ export async function chat(models: LlmSettings[], messages: ChatMessage[]): Prom
           method: "POST",
           headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
           body: JSON.stringify({ model: llm.model, messages, tools: toolSpecs }),
-          signal: AbortSignal.timeout(60_000),
+          signal: AbortSignal.timeout(CALL_TIMEOUT_MS),
         });
       // সার্ভারের সাময়িক সমস্যায় (5xx) একবার থেমে আবার
       let res = await post();
