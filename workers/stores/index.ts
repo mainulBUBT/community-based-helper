@@ -1,10 +1,7 @@
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
 import { NotFound, StoreBlocked } from "../lib/errors";
-import { decode, stripTags, title } from "../lib/html";
+import { decode, stripTags } from "../lib/html";
 import { getJson, getText } from "../lib/http";
 import { pace } from "../lib/limiter";
-import { pool } from "../lib/pool";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
 import { appleGadgetsVariants, aurevaVariants, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, rioVariants, shajgojVariants, shopifyProduct, startechVariants, sumashVariants, themallVariants, wooVariants } from "./parsers";
@@ -35,15 +32,17 @@ function sitemapStore(config: {
   match?: RegExp; // path এর নিচে ক্যাটাগরি পাতাও থাকলে, শুধু পণ্যের পাতা চেনার নিয়ম
   condition: Condition;
   promoUrl?: string;
+  rendered?: boolean;
   variants?: Store["variants"];
   product?: Store["product"];
 }): Store {
+  const rendered = config.rendered ?? false;
   return {
     ...config,
     promoUrl: config.promoUrl ?? null,
-    rendered: false,
+    rendered,
     async discover() {
-      const urls = await sitemapUrls(config.sitemap);
+      const urls = await sitemapUrls(config.sitemap, 0, new Set(), rendered);
       return urls.flatMap((url) => {
         const { pathname } = new URL(url);
         const product = pathname.startsWith(config.path) && (!config.match || config.match.test(pathname));
@@ -360,41 +359,6 @@ const hnstech: Store = {
       }
     }
     return all;
-  },
-};
-
-// ERRUMBD (Next.js): পণ্যের URL এ নাম নেই (/product/<২৪ অক্ষরের আইডি>), তাই নাম প্রতিটা পাতার <title> থেকে ("... | ERRUM" বাদ);
-// প্রতিলিপির দোকান (শিরোনামে "(1:1)")। দাম আর স্টক পাতার JSON-LD তে। প্রথমবার ~১৪০০ পাতা, তারপর জমা তালিকা
-const ERRUM = "https://www.errumbd.com";
-
-const errum: Store = {
-  id: "errumbd",
-  name: "ERRUMBD",
-  origin: ERRUM,
-  rendered: false,
-  condition: "replica",
-  sample: `${ERRUM}/product/6a4e83f15597cfcb67397524`,
-  promoUrl: null,
-  async discover() {
-    const urls = (await sitemapUrls(`${ERRUM}/sitemap.xml`)).filter((url) => /\/product\/[a-f0-9]{24}$/.test(url));
-    // আগের জমা তালিকার নাম আবার পড়া হয় না (শিরোনাম বদলায় না); শুধু নতুন URL পড়া হয়
-    const known = new Map<string, string>();
-    try {
-      const saved = JSON.parse(await readFile(join(".cache/listings", "errumbd.json"), "utf8")) as { listings: Listing[] };
-      for (const l of saved.listings) known.set(l.url, l.title);
-    } catch {
-      // জমা তালিকা নেই: সব পড়া হবে
-    }
-    const found: Listing[] = urls.filter((url) => known.has(url)).map((url) => ({ title: known.get(url)!, url, price: null, oldPrice: null }));
-    await pool(urls.filter((url) => !known.has(url)), 2, async (url) => {
-      const html = await getText(url).catch((error) => {
-        if (error instanceof StoreBlocked) throw error;
-        return "";
-      });
-      const name = title(html)?.replace(/\s*\|\s*ERRUM.*$/i, "").trim();
-      if (name) found.push({ title: name, url, price: null, oldPrice: null });
-    });
-    return found;
   },
 };
 
@@ -741,7 +705,6 @@ export const stores: Store[] = [
     condition: "official",
   }),
   klassy,
-  errum,
   // ল্যাপটপ: WooCommerce; বেশিরভাগ মডেল কোড বিদেশি বাজারের (fb3231nw, es1013dx), ওয়ারেন্টি দোকানের — তাই আনঅফিসিয়াল
   sitemapStore({
     id: "techmarvels",
@@ -782,6 +745,18 @@ export const stores: Store[] = [
     path: "/product/",
     condition: "official",
     variants: wooVariants,
+    rendered: true,
+  }),
+  sitemapStore({
+    id: "banglashoppers",
+    name: "BanglaShoppers",
+    origin: "https://www.banglashoppers.com",
+    sample: "https://www.banglashoppers.com/simple-refreshing-facial-wash-gel-150ml.html",
+    sitemap: "https://www.banglashoppers.com/sitemap.xml",
+    path: "/",
+    match: /\.html$/,
+    condition: "official",
+    rendered: true,
   }),
   herhappyskin,
   othoba,
@@ -916,16 +891,6 @@ export const stores: Store[] = [
     variants: wooVariants,
   }),
   sitemapStore({
-    id: "zapatos",
-    name: "Zapatos",
-    origin: "https://zapatos.com.bd",
-    sample: "https://zapatos.com.bd/product/hyper-stride/",
-    sitemap: "https://zapatos.com.bd/wp-sitemap.xml",
-    path: "/product/",
-    condition: "official",
-    variants: wooVariants,
-  }),
-  sitemapStore({
     id: "hashh",
     name: "Hashh Sneaker",
     origin: "https://hashh.store",
@@ -1010,15 +975,6 @@ export const stores: Store[] = [
     sample: "https://www.pchouse.com.bd/amd-ryzen-5-2400g-desktop-processor",
     sitemap: "https://www.pchouse.com.bd/sitemap.xml",
     path: "/",
-    condition: "official",
-  }),
-  sitemapStore({
-    id: "sundora",
-    name: "Sundora",
-    origin: "https://sundora.com.bd",
-    sample: "https://sundora.com.bd/products/invictus",
-    sitemap: "https://sundora.com.bd/sitemap.xml",
-    path: "/products/",
     condition: "official",
   }),
 ];

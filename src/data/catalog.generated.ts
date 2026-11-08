@@ -795,30 +795,6 @@ export const catalogSellers: Seller[] = [
   "active": true
  },
  {
-  "id": "hypecave.store",
-  "name": "Hype Cave",
-  "kind": "website",
-  "website": "https://hypecave.store/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": false,
-  "active": true
- },
- {
-  "id": "primenationbd.com",
-  "name": "Prime Nation",
-  "kind": "website",
-  "website": "https://primenationbd.com/",
-  "phone": null,
-  "whatsapp": null,
-  "facebook": null,
-  "area": null,
-  "verified": false,
-  "active": true
- },
- {
   "id": "hnstechbd.com",
   "name": "HNS Tech",
   "kind": "website",

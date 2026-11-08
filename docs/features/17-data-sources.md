@@ -32,7 +32,7 @@
 | Beauty Booth | `/sitemap/products.xml` (~৩.৩ MB, তাই `MAX_BODY` ৮ MB) | JSON-LD | ✅ |
 | ALZAK, BD Amajan Shop, UK Direct BD, Skin Revive BD | WooCommerce sitemap | `wooVariants` | ✅ |
 | Shei Tech | product sitemap (`sitemap_index.xml`) | `wooVariants` + JSON-LD | ✅ |
-| Zapatos | `wp-sitemap.xml` (posts-product) | `wooVariants` | ✅ চলে, কিন্তু নিজস্ব ব্র্যান্ডে ক্যাটালগের সাথে ম্যাচ নেই |
+| Zapatos | — | — | ⛔ ৮ নভেম্বর পুরোপুরি বাদ (নিজস্ব ব্র্যান্ড, ক্যাটালগের সাথে ম্যাচ নেই) |
 | BabyCare | sitemap-এ পণ্য নেই — ক্যাটাগরি পাতা (`?page=`) ঘুরে | `itemprop="price"` (JSON-LD নেই) | ✅ |
 | Dolbear | `/sitemap/products.xml` | JSON-LD | ✅ |
 | HNS Tech | sitemap নেই — `/shop?page=1..6` ঘুরে | `data-variants` JSON (`hnstechVariants`) | ✅ |

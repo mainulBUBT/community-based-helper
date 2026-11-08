@@ -153,7 +153,7 @@ GitHub-এর IP আটকানো দোকানের পাতা পড়
 - [ ] প্রথম `discover` (seed চালালেই নিজে চলবে) এর পরে যাচাই বাকি পেজ দেখা।
 - [ ] Private repo হলে GitHub Actions এর মাসিক ২,০০০ মিনিটের হিসাব রাখা।
 - [x] worker এর user-agent এ `https://dordam.app/about` লিংক আছে (`workers/lib/agent.ts`) — `/about/` পেজ এখন আছে (বাংলা, সাথে `/en/about/`), সেখানে bot এর পরিচয় আর যোগাযোগের তথ্য দেখানো হয়।
-- [ ] Pickaboo আর পরে Ryans/TechLand এর কাছে allowlist বা product feed চাওয়া।
+- [x] ~~Pickaboo আর পরে Ryans/TechLand এর কাছে allowlist বা product feed চাওয়া।~~ ৮ নভেম্বর এই দোকানগুলো পুরোপুরি বাদ।
 
 ## ভুল পণ্যের দাম পরিষ্কার (২৪ অক্টোবর ২০২৬)
 

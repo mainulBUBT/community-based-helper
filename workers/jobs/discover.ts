@@ -254,7 +254,7 @@ export async function discoverStore(store: Store, seller: SellerRef, since?: str
   const reviewed = await reviewedUrls(seller.id);
   const official = new Map(catalog.flatMap((p) => p.variants.map((v) => [v.id, v.officialPrice] as const)));
   const shop: Shop = { store, seller, catalog, asked: new Set(), slots, official, prices: await variantPrices(), tally: result };
-  // সময়-সীমা শুধু পাতা প্রক্রিয়ায়; ধীর দোকানের তালিকা আনা (ERRUMBD ~২৫ মিনিট) এর ভেতরে পড়লে মেলা পণ্য প্রক্রিয়ার সময়ই থাকত না
+  // সময়-সীমা শুধু পাতা প্রক্রিয়ায়; ধীর দোকানের তালিকা আনা (২৫ মিনিটও লাগে) এর ভেতরে পড়লে মেলা পণ্য প্রক্রিয়ার সময়ই থাকত না
   let outOfTime = () => false;
   const before = new Set(slots);
 
