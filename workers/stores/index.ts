@@ -4,7 +4,7 @@ import { getJson, getText } from "../lib/http";
 import { pace } from "../lib/limiter";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import { appleGadgetsVariants, aurevaVariants, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, maczenVariants, othobaVariants, perfectoVariants, rioVariants, shajgojVariants, shopifyProduct, startechVariants, sumashVariants, themallVariants, wooVariants } from "./parsers";
+import { appleGadgetsVariants, aurevaVariants, bartonProduct, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, hkLifestyleVariants, maczenVariants, othobaVariants, perfectoVariants, rioVariants, shajgojVariants, shopifyProduct, startechVariants, sumashVariants, themallVariants, wooVariants } from "./parsers";
 import { isReplica } from "../../src/utils/categories";
 import type { Condition, Listing, Store } from "./types";
 export type { Condition, Listing, Store };
@@ -899,6 +899,38 @@ export const stores: Store[] = [
     path: "/product/",
     condition: "official",
     variants: wooVariants,
+  }),
+  // কপি জুতার দোকান (৮ নভেম্বর যোগ): Dhaka Step নিজেকে "authentic" বলে, কিন্তু Adios Pro 4 ~৳৫,০০০ (আসলের দামের ধারেকাছে নয়);
+  // Barton "imported/premium"; HK Lifestyle পাতায় "OEM"। শিরোনামে 1:1/Premium থাকলে conditionOf প্রিমিয়াম কপি ধরে
+  sitemapStore({
+    id: "dhakastep",
+    name: "Dhaka Step",
+    origin: "https://www.dhakastep.com",
+    sample: "https://www.dhakastep.com/product/adidas-adizero-adios-pro-4-bluewhitelime-burst",
+    sitemap: "https://www.dhakastep.com/sitemap.xml",
+    path: "/product/",
+    condition: "replica",
+  }),
+  // Barton: নিজেদের পোশাকের দোকান, জুতাও বেচে; পণ্যের পাতা /details/, দাম og মেটায় (শিরোনাম-ছবি সাইটজুড়ে একই, তাই bartonProduct)
+  sitemapStore({
+    id: "barton",
+    name: "Barton",
+    origin: "https://bartonbangladesh.com",
+    sample: "https://bartonbangladesh.com/details/adidas-adizero-adios-pro-4-running-shoe",
+    sitemap: "https://bartonbangladesh.com/api/sitemap.xml",
+    path: "/details/",
+    condition: "replica",
+    product: bartonProduct,
+  }),
+  sitemapStore({
+    id: "hklifestyle",
+    name: "HK Lifestyle",
+    origin: "https://hklifestyle.com.bd",
+    sample: "https://hklifestyle.com.bd/product/adidas-adizero-adios-pro-4-ekiden-pack",
+    sitemap: "https://hklifestyle.com.bd/sitemap.xml",
+    path: "/product/",
+    condition: "replica",
+    variants: hkLifestyleVariants,
   }),
   babycare,
   sitemapStore({

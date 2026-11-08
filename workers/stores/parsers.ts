@@ -1,6 +1,6 @@
 import { StoreBlocked } from "../lib/errors";
 import { decode, stripTags } from "../lib/html";
-import { getJson, postForm } from "../lib/http";
+import { getJson, getText, postForm } from "../lib/http";
 import { groupBy } from "../lib/pool";
 import { tokens } from "../lib/match";
 import { structuredQuote, toTaka } from "../lib/price";
@@ -391,6 +391,25 @@ export function themallVariants(html: string): ShopVariant[] {
   const prices = [...block.matchAll(/<span[^>]*>([\s\S]*?)<\/span>/g)].map(([, text]) => stripTags(text));
   const stock = /data-product_stock="(\d+)"/.exec(html)?.[1];
   return variant([], prices.at(-1), prices.length > 1 ? prices[0] : null, stock === undefined ? null : Number(stock) > 0);
+}
+
+// Barton: সব পাতায় একই og:title আর og:image (সাইটের নিজের ছবি), শুধু og দামটা পণ্যের; তাই এখান থেকে দাম-স্টকই,
+// শিরোনাম লিংক থেকে আসে আর ছবি নেওয়া হয় না — নইলে আমাদের পণ্যে Barton-এর সাধারণ ছবি বসত
+export async function bartonProduct(url: string): Promise<ShopProduct | null> {
+  const quote = structuredQuote(await getText(url));
+  return quote ? { rows: variant([], quote.price, quote.oldPrice, quote.inStock), title: null, image: null } : null;
+}
+
+// HK Lifestyle (Laravel): JSON-LD নেই; মূল পণ্যের দাম `product-price` ঘরের `price-value` এ, ছাড় থাকলে আগের দাম `old` এ,
+// স্টক SKU-র পাশের ব্যাজে ("In Stock" / "Out of stock")। পাতার নিচের অন্য পণ্যের কার্ডে এই ঘরগুলো নেই
+export function hkLifestyleVariants(html: string): ShopVariant[] {
+  const block = /<h2 class="product-price">([\s\S]*?)<\/h2>/.exec(html)?.[1];
+  if (!block) return [];
+  const price = /class="price-value">([^<]+)</.exec(block)?.[1];
+  const old = /class="old[^"]*"[^>]*>([\s\S]*?)<\/(?:span|del)>/.exec(block)?.[1];
+  const badge = /class="sku-value"[\s\S]{0,200}?class="badge[^"]*">([^<]+)</.exec(html)?.[1] ?? "";
+  const inStock = /out of stock|stock out|sold out/i.test(badge) ? false : /in stock/i.test(badge) ? true : null;
+  return variant([], price, old ? stripTags(old) : null, inStock);
 }
 
 // Shopify: পাতার JSON-LD এ শুধু প্রথম ভার্সনের দাম; প্রতিটা ভার্সনের দাম (পয়সায়), স্টক, অপশন, নাম আর ছবি /products/<handle>.js এ।

@@ -583,3 +583,16 @@ robots খোলা, সাধারণ HTML, Chromium লাগে না। si
 একই কাজে মেলানোর দুটো ফাঁক বন্ধ: খাবার-প্রসাধনীতে ব্র্যান্ড না থাকলে আর প্রথম শব্দ ক্যাটালগের নামে না থাকলে অন্য ব্র্যান্ড (Lavino ≠ Himalaya), আর এক-ভার্সনের পণ্যে পাতার শিরোনামের ওজন আলাদা হলে দাম বসে না (Lotion 100ml ≠ 200ml)। এতে শুধু নতুন দাম আটকায়, আগে বসা দাম বদলায় না। আগের ভুল মিল আলাদা করে দেখতে হবে।
 
 Shajgoj-এর এক পাতায় এক সাইজ, শিরোনামে না থাকলেও পাতায় "Size: 100gm" লেখা থাকে, তাই `shajgojVariants` সেখান থেকে পড়ে। দুই দিকেই ওজন বা পরিমাণ লেখা থাকলে `sameSpec`-এ মিলতে হয়, ৬% পর্যন্ত তফাত এক ধরা হয় (দেশভেদে ১১৮/১২৫ml)।
+
+### নতুন কপি-জুতার দোকান: Dhaka Step, Barton, HK Lifestyle (৮ নভেম্বর ২০২৬)
+
+মালিকের দেওয়া ৪টা সাইট `store:scan`, robots.txt আর Terms দেখে যাচাই। sitemap-এর পণ্যের লিংক ক্যাটালগের সাথে মিলিয়ে: HK Lifestyle ১২টা পণ্য, Dhaka Step ৮, Shoe Diversity ৮, Barton ৪ (Adios Pro 4 চারটাতেই; Adios Pro Evo 1 HK-তে তৃতীয় দোকান পায়)। migration `20261108072848_sneaker-sellers.sql`।
+
+| দোকান | পণ্যের পাতা | দাম কোথা থেকে | condition |
+|---|---|---|---|
+| Dhaka Step | `/product/`, `sitemap.xml` | JSON-LD (parser লাগে না) | `replica`: নিজেকে "authentic" বলে, কিন্তু Adios Pro 4 ~৳৫,২২০ |
+| Barton | `/details/`, `api/sitemap.xml` | og দাম, `bartonProduct` | `replica`: "imported/premium"; সব পাতায় og:title আর og:image একই, তাই শিরোনাম লিংক থেকে আর ছবি নেওয়া হয় না |
+| HK Lifestyle | `/product/`, `sitemap.xml` | `hkLifestyleVariants` (`product-price` ঘর, SKU-র পাশের স্টক ব্যাজ) | `replica`: পাতায় "OEM" |
+
+- Terms: Dhaka Step আর HK-তে সংগ্রহ নিয়ে কিছু নেই; Barton-এ সাধারণ "লিখিত অনুমতি ছাড়া content কপি/পুনঃপ্রকাশ নয়" (Klassy, UK Direct-এর মতো, মালিকের আগের সিদ্ধান্তে চলে)।
+- **Shoe Diversity বাদ:** Shopify, robots খোলা, কিন্তু পণ্যের পাতা আর `/products/<handle>.js` দুটোতেই বারবার 429 (Shopify-র বট-নিয়ন্ত্রণ, আগের Hype Cave/Prime Nation-এর মতো)। দোকান allowlist দিলে `product: shopifyProduct` দিয়ে যোগ করা যায়।
