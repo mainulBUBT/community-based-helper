@@ -596,3 +596,14 @@ Shajgoj-এর এক পাতায় এক সাইজ, শিরোনা
 
 - Terms: Dhaka Step আর HK-তে সংগ্রহ নিয়ে কিছু নেই; Barton-এ সাধারণ "লিখিত অনুমতি ছাড়া content কপি/পুনঃপ্রকাশ নয়" (Klassy, UK Direct-এর মতো, মালিকের আগের সিদ্ধান্তে চলে)।
 - **Shoe Diversity বাদ:** Shopify, robots খোলা, কিন্তু পণ্যের পাতা আর `/products/<handle>.js` দুটোতেই বারবার 429 (Shopify-র বট-নিয়ন্ত্রণ, আগের Hype Cave/Prime Nation-এর মতো)। দোকান allowlist দিলে `product: shopifyProduct` দিয়ে যোগ করা যায়।
+
+### আগের ৬টা জুতার দোকান discover-এ (৮ নভেম্বর ২০২৬)
+
+Ragen, DOB Skateshop, SneakersBD Official, Sneaker Zone, Splayd, Three's-এর দাম শুরু থেকে হাতে বসানো ছিল। দাম হালনাগাদ হতো `genericStore` দিয়ে, কিন্তু কনফিগ না থাকায় নতুন পণ্য খোঁজা হতো না। এখন সবগুলো `sitemapStore`, condition `replica` (শিরোনামে 1:1/Premium থাকলে `conditionOf` প্রিমিয়াম ধরে)। robots ছয়টাতেই খোলা (DOB আর SneakersBD-র `Disallow: /` শুধু AI-training বটের জন্য)।
+
+| দোকান | পণ্যের পাতা | দাম কোথা থেকে |
+|---|---|---|
+| Three's | `/product/`, `sitemap_index.xml` | `wooVariants` (সাইজ ধরে স্টক) |
+| DOB Skateshop | `/product/`, `sitemap.xml` | `wooVariants` |
+| SneakersBD Official | `/product/show/`, `sitemap.xml` | og `product:price` আর `product:availability` |
+| Ragen, Sneaker Zone, Splayd | `/products/`, `sitemap.xml` | `shopifyProduct`; ঘণ্টার সীমা কড়া, `pace` এ মিনিটে একটা অনুরোধ (`store:scan` একটানা পড়ে বলে 429 দেখায়) |
