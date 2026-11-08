@@ -12,7 +12,7 @@ import { categoryPath } from "@/utils/url";
 import { Shelf } from "./Shelf";
 
 const ROW_SIZE = 8;
-// প্রতিবার পাতা খুললে একবার; build এর HTML এ জনপ্রিয় ৬টা, ব্রাউজারে hydration এর পরে এলোমেলো ৬টা
+// প্রতিবার পাতা খুললে একবার; build এর HTML এ জনপ্রিয় ৮টা, ব্রাউজারে hydration এর পরে এলোমেলো ৮টা
 const seed = typeof window === "undefined" ? 0 : Math.random();
 const still = () => () => {};
 
@@ -47,13 +47,13 @@ export function CategoryRows({ summaries }: { summaries: ProductSummary[] }) {
           .sort((a, b) => byStock(a, b) || byPopularity(a, b));
         if (!items.length) return null;
         return (
-          <Shelf key={c.slug}>
+          <Shelf key={c.slug} seasonal={Boolean(c.collection)}>
             <SectionHeader
               title={lang === "en" ? c.nameEn : c.name}
               href={categoryPath(prefix, c.slug)}
               linkLabel={t.home.seeAllIn(num(items.length))}
             />
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 2xl:grid-cols-8">
               {pick(items, roll).map((summary) => (
                 <ProductCard key={summary.product.id} summary={summary} />
               ))}

@@ -80,7 +80,7 @@ export function SpotlightShelf({ summaries }: { summaries: ProductSummary[] }) {
           </button>
         ))}
       </div>
-      <ol className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+      <ol className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6">
         {ranked.map(({ product, lowest, sellerCount }, i) => (
           <li key={product.id}>
             <Link

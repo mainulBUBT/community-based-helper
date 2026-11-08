@@ -26,6 +26,43 @@ const iconButton = "flex size-9 items-center justify-center rounded-lg text-dim 
 
 const chip = (active: boolean) => `flex h-10 items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold ${active ? "border-brand bg-brand-soft" : "border-line hover:border-brand"}`;
 
+interface ProviderChipProps {
+  name: string;
+  active: boolean;
+  hasKey: boolean;
+  busy: boolean;
+  onPick: () => void;
+  onRemove?: () => void;
+  removeLabel: string;
+}
+
+function ProviderChip({ name, active, hasKey, busy, onPick, onRemove, removeLabel }: ProviderChipProps) {
+  const { t } = useAdminI18n();
+  const label = (
+    <>
+      {name}
+      {hasKey && <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />}
+    </>
+  );
+  if (!onRemove) {
+    return (
+      <button type="button" aria-pressed={active} onClick={onPick} className={chip(active)}>
+        {label}
+      </button>
+    );
+  }
+  return (
+    <span className={`flex h-10 items-center overflow-hidden rounded-xl border ${active ? "border-brand bg-brand-soft" : "border-line"}`}>
+      <button type="button" aria-pressed={active} onClick={onPick} className="flex h-full items-center gap-1.5 pl-3 pr-2 text-sm font-semibold">
+        {label}
+      </button>
+      <button type="button" disabled={busy} onClick={onRemove} aria-label={removeLabel} title={removeLabel} className="flex h-full w-7 items-center justify-center text-dim hover:bg-sale-soft hover:text-sale">
+        <X size={13} aria-hidden="true" />
+      </button>
+    </span>
+  );
+}
+
 function Step({ n, title, children }: { n: number; title: string; children: ReactNode }) {
   return (
     <div className="flex gap-3">
@@ -111,11 +148,14 @@ function AddModel({ settings, models, onSaved }: { settings: PrivateSettings; mo
     }
   }
 
-  async function removeProvider(provider: LlmProvider) {
-    const named = (settings.llmProviders ?? []).filter((p) => providerKey(p.baseUrl) !== providerKey(provider.baseUrl));
-    const next = models.filter((m) => providerKey(m.baseUrl) !== providerKey(provider.baseUrl));
+  // নিজের যোগ করা প্রোভাইডার পুরোটাই মোছে; আগে থেকে থাকা (Gemini ইত্যাদি) থেকে যায়, শুধু তার key আর সেটআপ মোছে
+  async function removeProvider(provider: LlmProvider, preset: boolean) {
+    const text = t.admin.jobs;
+    if (!confirm(preset ? text.confirmRemoveKey(provider.name) : text.confirmRemoveProvider(provider.name))) return;
     const key = providerKey(provider.baseUrl);
-    if (await run(() => saveLlmModels(settings, next, t.admin.jobs.auditSection, undefined, named, key), t.admin.jobs.providerRemoved)) onSaved();
+    const named = (settings.llmProviders ?? []).filter((p) => providerKey(p.baseUrl) !== key);
+    const next = models.filter((m) => providerKey(m.baseUrl) !== key);
+    if (await run(() => saveLlmModels(settings, next, text.auditSection, undefined, named, key), preset ? text.keyRemoved : text.providerRemoved)) onSaved();
   }
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
@@ -141,25 +181,29 @@ function AddModel({ settings, models, onSaved }: { settings: PrivateSettings; mo
       <Step n={1} title={t.admin.jobs.stepProvider}>
         <div className="flex flex-wrap gap-2">
           {LLM_PRESETS.map((preset) => (
-            <button key={preset.name} type="button" aria-pressed={!isNew && providerKey(baseUrl) === providerKey(preset.baseUrl)} onClick={() => pick(preset.baseUrl, preset.baseUrl, preset.model)} className={chip(!isNew && providerKey(baseUrl) === providerKey(preset.baseUrl))}>
-              {preset.name}
-              {savedKey(preset.baseUrl) && <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />}
-            </button>
+            <ProviderChip
+              key={preset.name}
+              name={preset.name}
+              active={!isNew && providerKey(baseUrl) === providerKey(preset.baseUrl)}
+              hasKey={Boolean(savedKey(preset.baseUrl))}
+              busy={busy}
+              onPick={() => pick(preset.baseUrl, preset.baseUrl, preset.model)}
+              onRemove={savedKey(preset.baseUrl) ? () => removeProvider(preset, true) : undefined}
+              removeLabel={t.admin.jobs.removeKey}
+            />
           ))}
-          {providers.map((provider) => {
-            const active = !isNew && providerKey(baseUrl) === providerKey(provider.baseUrl);
-            return (
-              <span key={provider.baseUrl} className={`flex h-10 items-center overflow-hidden rounded-xl border ${active ? "border-brand bg-brand-soft" : "border-line"}`}>
-                <button type="button" aria-pressed={active} onClick={() => pick(provider.baseUrl, provider.baseUrl, lastModel(provider.baseUrl))} className="flex h-full items-center gap-1.5 pl-3 pr-2 text-sm font-semibold">
-                  {provider.name}
-                  {savedKey(provider.baseUrl) && <Check size={14} className="text-ok" aria-label={t.admin.jobs.keySaved} />}
-                </button>
-                <button type="button" disabled={busy} onClick={() => removeProvider(provider)} aria-label={t.admin.jobs.removeProvider} title={t.admin.jobs.removeProvider} className="flex h-full w-7 items-center justify-center text-dim hover:bg-sale-soft hover:text-sale">
-                  <X size={13} aria-hidden="true" />
-                </button>
-              </span>
-            );
-          })}
+          {providers.map((provider) => (
+            <ProviderChip
+              key={provider.baseUrl}
+              name={provider.name}
+              active={!isNew && providerKey(baseUrl) === providerKey(provider.baseUrl)}
+              hasKey={Boolean(savedKey(provider.baseUrl))}
+              busy={busy}
+              onPick={() => pick(provider.baseUrl, provider.baseUrl, lastModel(provider.baseUrl))}
+              onRemove={() => removeProvider(provider, false)}
+              removeLabel={t.admin.jobs.removeProvider}
+            />
+          ))}
           <button type="button" aria-pressed={isNew} onClick={() => pick("new", "", "")} className={chip(isNew)}>
             + {t.admin.jobs.newProvider}
           </button>

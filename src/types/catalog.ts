@@ -77,6 +77,8 @@ export interface Seller {
   area: string | null;
   verified: boolean;
   active: boolean;
+  // build এ public/sellers এ ফাইল থাকলে তার পথ; অ্যাডমিনের লাইভ ডেটায় থাকে না
+  logo?: string | null;
 }
 
 export interface Offer {

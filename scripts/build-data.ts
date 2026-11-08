@@ -1,7 +1,7 @@
 // build এর আগে Supabase থেকে পুরো ক্যাটালগ এনে public/data/catalog/ এ বেক করে।
 // সাইট তখন ভিজিটরের ডেটা CDN থেকে দেয়, Supabase এ egress হয় না।
 // Supabase যুক্ত না থাকলে নমুনা ডেটা বেক হয় (ডেমো মোড)।
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import { DEFAULT_SETTINGS } from "../src/config/site";
@@ -13,6 +13,7 @@ import type { SiteSettings } from "../src/types/admin";
 import type { CategoryInfo, Offer, PricePoint, Product, Promo, Seller } from "../src/types/catalog";
 
 const OUT = path.join(process.cwd(), "public", "data", "catalog");
+const LOGOS = path.join(process.cwd(), "public", "sellers");
 const SINCE = new Date(Date.now() - 31 * 86400000).toISOString();
 
 // Supabase একবারে ১০০০ সারির বেশি দেয় না
@@ -85,7 +86,10 @@ async function main() {
   const source = live ? await fromSupabase(createClient(url!, key!, { auth: { persistSession: false } })) : await fromSample();
   const categories = source.categories.filter((c) => c.active && c.collection?.length !== 0);
   const shown = new Set(categories.map((c) => c.slug));
-  const raw = { ...source, categories, products: source.products.filter((p) => shown.has(p.category)) };
+  // যে দোকানের নিজের লোগো ফাইল আছে শুধু তারই পথ; বাকিদের জন্য ব্রাউজার আর ফাঁকা ফাইল খুঁজতে যায় না
+  const logos = new Map((await readdir(LOGOS).catch(() => [] as string[])).map((file) => [path.parse(file).name, `/sellers/${file}`]));
+  const sellers = source.sellers.map((seller) => ({ ...seller, logo: logos.get(seller.id) ?? null }));
+  const raw = { ...source, categories, sellers, products: source.products.filter((p) => shown.has(p.category)) };
 
   // ভ্যারিয়েন্ট আর অফারকে পণ্যের ভাগ অনুযায়ী ফাইলে ভাগ করা — বড় ক্যাটালগে এক ফাইল হালকা থাকে
   const variantCategory = new Map<string, string>();

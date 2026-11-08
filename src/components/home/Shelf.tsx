@@ -1,8 +1,9 @@
 import type { ReactNode } from "react";
 
-export function Shelf({ children }: { children: ReactNode }) {
+// seasonal: ভিজিটর মৌসুমি লুকিয়ে রাখলে hydration এর আগেই CSS দিয়ে লুকানো থাকে
+export function Shelf({ children, seasonal }: { children: ReactNode; seasonal?: boolean }) {
   return (
-    <section className="flex flex-col gap-4 rounded-md bg-surface p-4 shadow-sm ring-1 ring-line-soft md:p-6">
+    <section data-seasonal-item={seasonal ? "" : undefined} className="flex flex-col gap-4 rounded-md bg-surface p-4 shadow-sm ring-1 ring-line-soft md:p-6">
       {children}
     </section>
   );

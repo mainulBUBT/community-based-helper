@@ -8,7 +8,7 @@ const ADMIN_LANG_KEY = "adminLang";
 const THEME_KEY = "theme";
 const SEASONAL_KEY = "seasonal";
 
-export const preferencesInitScript = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="dark")document.documentElement.dataset.theme=t;var p=location.pathname;if(/^\\/en(\\/|$)/.test(p))document.documentElement.lang="en";else if(localStorage.getItem("${LANG_KEY}")==="en"&&/^\\/($|about|search|sellers|saved|privacy\\/|terms\\/|faq\\/|contact\\/|product\\/|seller\\/|category\\/|brand\\/)/.test(p))location.replace("/en"+(p==="/"?"/":p)+location.search+location.hash)}catch(e){}`;
+export const preferencesInitScript = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="dark")document.documentElement.dataset.theme=t;if(localStorage.getItem("${SEASONAL_KEY}")==="off")document.documentElement.dataset.seasonal="off";var p=location.pathname;if(/^\\/en(\\/|$)/.test(p))document.documentElement.lang="en";else if(localStorage.getItem("${LANG_KEY}")==="en"&&/^\\/($|about|search|sellers|saved|privacy\\/|terms\\/|faq\\/|contact\\/|product\\/|seller\\/|category\\/|brand\\/)/.test(p))location.replace("/en"+(p==="/"?"/":p)+location.search+location.hash)}catch(e){}`;
 
 function read<T extends string>(key: string, allowed: readonly T[], fallback: T): T {
   if (typeof window === "undefined") return fallback;
@@ -53,4 +53,5 @@ export function setTheme(theme: ThemeChoice) {
 export function setSeasonal(show: boolean) {
   seasonalStore.set(show);
   persist(SEASONAL_KEY, show ? "on" : "off");
+  document.documentElement.dataset.seasonal = show ? "on" : "off";
 }

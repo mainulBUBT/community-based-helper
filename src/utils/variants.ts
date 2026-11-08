@@ -1,6 +1,10 @@
 import { AXES, type Axis, type VariantAttributes } from "@/types/catalog";
 
 const SIZE_PATTERN = /\d+(?:\.\d+)?\s*(GB|TB)\b/gi;
+// ওজন/আয়তন; বড় হাতের "5G"/"4G" নেটওয়ার্ক, ওজন নয় (ছোট হাতের "5g" ওজনই)
+const CAPACITY_PATTERN = /(?<![\d.])(?![2-5]G\b)\d+(?:\.\d+)?\s*(?:[kK][gG]|[gG]|[mM][lL]|[lL]|[lL](?:itre|iter|ITRE|ITER))\b/;
+
+export const capacityIn = (label: string) => label.match(CAPACITY_PATTERN)?.[0].replace(/\s/g, "");
 
 export const sizeInGb = (size: string) => parseFloat(size) * (/TB/i.test(size) ? 1024 : 1);
 
@@ -24,7 +28,7 @@ export function parseVariantLabel(label: string, axes: readonly Axis[]): Variant
   if (axes.includes("cpu")) attributes.cpu = label.match(/\d+C\s*CPU|\d+\s*-?\s*core\s*CPU/i)?.[0];
   if (axes.includes("resolution")) attributes.resolution = label.match(/\b(8K|4K|UHD|FHD|QHD|HD)\b/i)?.[0].toUpperCase();
   if (axes.includes("battery")) attributes.battery = label.match(/\d+\s*mAh/i)?.[0].replace(/\s/g, "");
-  if (axes.includes("capacity")) attributes.capacity = label.match(/\d+(?:\.\d+)?\s*(?:kg|g|ml|l|litre|liter)\b/i)?.[0].replace(/\s/g, "");
+  if (axes.includes("capacity")) attributes.capacity = capacityIn(label);
   if (axes.includes("wattage")) attributes.wattage = label.match(/\d+(?:\.\d+)?\s*W\b/i)?.[0].replace(/\s/g, "").toUpperCase();
   return Object.fromEntries(Object.entries(attributes).filter(([, v]) => v)) as VariantAttributes;
 }

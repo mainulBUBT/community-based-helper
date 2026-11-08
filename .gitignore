@@ -36,3 +36,6 @@ workers/.tmp/
 # worker এর দোকান-তালিকা আর discover এর ফল (GitHub cache/artifact এ যায়)
 .cache/
 .playwright-mcp/
+
+# QA স্ক্রিনশট (রুটে); repo তে নয়
+/*.png

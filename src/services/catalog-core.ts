@@ -1,6 +1,7 @@
 import { findCheaperAlternatives } from "@/utils/alternatives";
 import { byPrice, byStock, realOldPrice, type RecentDrop } from "@/utils/catalog";
 import { isReplica } from "@/utils/categories";
+import { capacityIn } from "@/utils/variants";
 import type { SiteSettings } from "@/types/admin";
 import type { Alternative, CategoryInfo, Offer, OfferView, PricePoint, Product, ProductDetail, ProductSummary, Promo, Seller } from "@/types/catalog";
 
@@ -49,7 +50,7 @@ export function summarize(catalog: Catalog, product: Product): ProductSummary {
     product,
     lowest,
     // স্ক্র্যাপ করা কিছু ভ্যারিয়েন্টে capacity অ্যাট্রিবিউট থাকে না (যেমন Saffola মধুর 40g); তখন লেবেল থেকেই ওজন পড়ি
-    size: bestVariant?.attributes.capacity ?? bestVariant?.label.match(/\d+(?:\.\d+)?\s*(?:kg|g|ml|l|litre|liter)\b/i)?.[0]?.replace(/\s/g, "") ?? null,
+    size: bestVariant?.attributes.capacity ?? (bestVariant && capacityIn(bestVariant.label)) ?? null,
     condition: best?.condition ?? null,
     compareAt,
     inStock: offers.some((o) => o.inStock !== false),
@@ -153,7 +154,7 @@ export function pickComparisons(catalog: Catalog, limit = 6): ComparePick[] {
         group.product.variants.find((v) => v.id === group.variantId)?.label ?? "",
     }))
     .filter((pick) => pick.offers.length > 1 && pick.summary.lowest)
-    .sort((a, b) => b.offers.length - a.offers.length)
+    .sort((a, b) => b.sellerTotal - a.sellerTotal)
     .slice(0, limit);
 }
 

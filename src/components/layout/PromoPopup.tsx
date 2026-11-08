@@ -40,7 +40,7 @@ export function PromoPopup({ settings }: { settings: SiteSettings }) {
     const poster = new Image();
     poster.onload = () => {
       if (firstTime(image)) {
-        trackEvent("popup-view", image);
+        trackEvent("popup-view", pathname);
         setOpen(true);
       }
     };
@@ -66,7 +66,7 @@ export function PromoPopup({ settings }: { settings: SiteSettings }) {
           <X size={22} aria-hidden="true" />
         </button>
       </div>
-      <Link href={href} prefetch={false} onClick={() => { trackEvent("popup-click", href); setOpen(false); }}>
+      <Link href={href} prefetch={false} onClick={() => { trackEvent("popup-click", pathname); setOpen(false); }}>
         <img src={image} alt={alt ?? ""} className="block max-h-dvh w-full rounded-2xl object-contain" />
       </Link>
     </dialog>

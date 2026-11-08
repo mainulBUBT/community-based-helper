@@ -51,11 +51,20 @@ function objectsAt(html: string, marker: RegExp): Json[] {
 }
 
 // পাশের "সম্পর্কিত পণ্য" বাদ: যে পণ্যের ভার্সনে পাতার মূল দাম আছে সেটাই। পাতার দাম থাকা সত্ত্বেও কোনো ভার্সনে না মিললে
-// (মূল পণ্য স্টকে নেই বলে তার ভার্সন বাদ) পাশের পণ্যের কেস/গ্লাসের দাম না নিয়ে কিছুই না; একটাই পণ্যের গ্রুপ হলে সেটাই মূলটা
+// (মূল পণ্য স্টকে নেই বলে তার ভার্সন বাদ) পাশের পণ্যের কেস/গ্লাসের দাম না নিয়ে কিছুই না। একটাই গ্রুপ হলে সেটা নিই
+// শুধু যদি পাতার দাম তার দামের কাছাকাছি থাকে; একা পড়ে থাকা পাশের কেসের দাম ফোনের দাম থেকে অনেক দূরে
+const NEAR_SHOWN = 0.2;
+
 function mainProduct(rows: Json[], productOf: (row: Json) => unknown, priceOf: (row: Json) => number | null, html: string): Json[] {
   const groups = [...groupBy(rows, (row) => String(productOf(row))).values()];
   const shown = structuredQuote(html)?.price;
-  return groups.find((group) => group.some((row) => priceOf(row) === shown)) ?? (shown && groups.length > 1 ? [] : groups[0]) ?? [];
+  const exact = groups.find((group) => group.some((row) => priceOf(row) === shown));
+  if (exact) return exact;
+  if (!shown) return groups[0] ?? [];
+  if (groups.length !== 1) return [];
+  const prices = groups[0].map(priceOf).filter((price): price is number => price != null && price > 0);
+  const near = prices.length > 0 && shown >= Math.min(...prices) * (1 - NEAR_SHOWN) && shown <= Math.max(...prices) * (1 + NEAR_SHOWN);
+  return near ? groups[0] : [];
 }
 
 function variant(attributes: [unknown, unknown][], price: unknown, oldPrice: unknown, inStock: boolean | null): ShopVariant[] {
@@ -128,7 +137,9 @@ export function kryVariants(html: string): ShopVariant[] {
     const price = priceOf(v);
     const discount = discountOf(v);
     if (subtract && price != null && discount != null) return price - discount;
-    if (final && discount != null) return discount;
+    if (final && discount) return discount;
+    // পাতার দাম না পেলে: মূল দামের অর্ধেকের কম হলে discountPrice কাটা-টাকা, নইলে কাটার পরের দাম
+    if (!final && !subtract && price && discount) return discount < price / 2 ? price - discount : discount;
     return discount || price;
   };
   return mainProduct(rows, (v) => v.productId, current, html).flatMap((v) => {
