@@ -46,6 +46,7 @@ export const toProduct = (row: Row): Product => ({
   images: ((row.images as string[] | undefined) ?? []).map((src) => safeUrl(src)).filter((src): src is string => Boolean(src)),
   colors: (row.colors as string[] | undefined) ?? [],
   regions: [...new Set(((row.regions as string[] | undefined) ?? []).map(canonicalRegion).filter((r): r is string => Boolean(r)))],
+  tags: (row.tags as string[] | undefined) ?? [],
   description: str(row.description),
   descriptionEn: str(row.description_en),
   specs: Array.isArray(row.specs) ? (row.specs as SpecGroup[]) : [],

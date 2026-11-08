@@ -4,6 +4,7 @@ import { Check, ChevronDown, ChevronRight, Clock, ExternalLink, Globe, Megaphone
 import Link from "next/link";
 import { useState, type ReactNode } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
+import { PageBanner } from "@/components/layout/PageBanner";
 import { AlternativeCard } from "@/components/product/AlternativeCard";
 import { OffersTable } from "@/components/product/OffersTable";
 import { PriceChart } from "@/components/product/PriceChart";
@@ -429,6 +430,8 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
           )}
         </div>
       </div>
+
+      <PageBanner page="product" />
 
       {shown.length > 0 && (
         <Panel title={t.product.allPrices} subtitle={product.variants.length > 1 ? variantName : undefined} id="stores">

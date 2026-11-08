@@ -50,6 +50,9 @@ export async function getSiteSettings(): Promise<SiteSettings> {
     announcementLink: safeUrl(settings.announcementLink, { relative: true }),
     popupImage: safeUrl(settings.popupImage, { relative: true }),
     popupLink: safeUrl(settings.popupLink, { relative: true }),
+    bannerImage: safeUrl(settings.bannerImage, { relative: true }),
+    bannerImageMobile: safeUrl(settings.bannerImageMobile, { relative: true }),
+    bannerLink: safeUrl(settings.bannerLink, { relative: true }),
   };
 }
 

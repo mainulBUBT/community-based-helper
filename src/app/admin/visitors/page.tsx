@@ -71,7 +71,8 @@ export default function VisitorsPage() {
     const popupViews = banner("popup-view");
     const popupClicks = banner("popup-click");
     const tileClicks = banner("seasonal-tile");
-    const bannerPanel = (popupViews > 0 || popupClicks > 0 || tileClicks > 0) && (
+    const inlineClicks = banner("banner-click");
+    const bannerPanel = (popupViews > 0 || popupClicks > 0 || tileClicks > 0 || inlineClicks > 0) && (
       <Panel title={t.admin.visitors.bannerTitle}>
         <p className="border-b border-line-soft px-5 py-3 text-xs text-dim">{t.admin.visitors.bannerHint}</p>
         <div className="grid grid-cols-2 gap-3 p-5 lg:grid-cols-4">
@@ -83,6 +84,7 @@ export default function VisitorsPage() {
             tone="brand"
           />
           <StatCard label={t.admin.visitors.bannerTileClicks} value={num(tileClicks.toLocaleString("en-IN"))} tone="gold" />
+          <StatCard label={t.admin.visitors.bannerInlineClicks} value={num(inlineClicks.toLocaleString("en-IN"))} />
         </div>
       </Panel>
     );

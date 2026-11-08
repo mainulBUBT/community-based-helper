@@ -74,6 +74,9 @@ export interface RegionNote {
   noteEn: string;
 }
 
+export const BANNER_PAGES = ["home", "category", "product"] as const;
+export type BannerPage = (typeof BANNER_PAGES)[number];
+
 export interface SiteSettings {
   name: string;
   nameEn: string;
@@ -107,6 +110,12 @@ export interface SiteSettings {
   popupImage: string | null;
   popupLink: string | null;
   popupAlt: string | null;
+  bannerEnabled: boolean;
+  bannerImage: string | null;
+  bannerImageMobile: string | null;
+  bannerLink: string | null;
+  bannerAlt: string | null;
+  bannerPages: BannerPage[];
   regionNotes: RegionNote[];
   aboutWho: string;
   aboutWhoEn: string;

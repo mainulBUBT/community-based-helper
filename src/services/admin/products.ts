@@ -17,7 +17,7 @@ export interface NewProduct {
 }
 
 export type ProductFields = Pick<Product, "brand" | "name" | "category" | "releaseYear" | "popularity"> &
-  Required<Pick<Product, "images" | "colors" | "regions" | "description" | "descriptionEn" | "specs" | "specsSource" | "active">>;
+  Required<Pick<Product, "images" | "colors" | "regions" | "tags" | "description" | "descriptionEn" | "specs" | "specsSource" | "active">>;
 
 export async function getProduct(id: string): Promise<Product | null> {
   if (!supabase) return (await loadSampleCatalog()).sampleProducts.find((p) => p.id === id) ?? null;
@@ -81,6 +81,7 @@ export async function updateProduct(product: Product, entered: ProductFields) {
         images: fields.images,
         colors: fields.colors,
         regions: fields.regions,
+        tags: fields.tags,
         description: fields.description,
         description_en: fields.descriptionEn,
         specs: fields.specs,

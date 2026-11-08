@@ -4744,6 +4744,2727 @@
      "checkedAt": "2026-10-30"
     }
    ]
+  },
+  {
+   "brand": "CeraVe",
+   "name": "Moisturising Lotion",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "88ml",
+     "attributes": {
+      "capacity": "88ml"
+     },
+     "officialPrice": 1100
+    },
+    {
+     "label": "236ml",
+     "attributes": {
+      "capacity": "236ml"
+     },
+     "officialPrice": 2100
+    },
+    {
+     "label": "473ml",
+     "attributes": {
+      "capacity": "473ml"
+     },
+     "officialPrice": 3200
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC84NzU1MlwvODc1NTItQ2VyYXZlLU1vaXN0dXJpemluZy1Mb3Rpb24tZm9yLURyeS10by1WZXJ5LURyeS1Ta2luLTg4bWwtTWFkZS1pbi1GcmFuY2UtajNlcGlnLndlYnAiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0Ijoib3V0c2lkZSJ9LCJvdmVybGF5V2l0aCI6eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtaXNjXC93bS5wbmciLCJhbHBoYSI6OTB9fX0=",
+    "https://indianmartbd.com/wp-content/uploads/2025/06/CeraVe-Moisturizing-Lotion-For-Dry-Skin-88ml-Formulated-With-3-Essential-Ceramides-And-Hyaluronic-Acid-Non-Comedogenic-Oil-Free-And-Fragrance-Free-Body-Lotion.jpg",
+    "https://cms.beautybooth.com.bd/uploads/all/cerave-moisturising-lotion-for-dry-to-very-dry-skin-236ml-1_81.webp"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "88ml",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/cerave-moisturising-lotion-for-dry-to-very-dry-skin-88ml/",
+     "price": 950,
+     "oldPrice": 1050,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "88ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/87552/cerave-moisturizing-lotion-for-dry-to-very-dry-skin-88ml-made-in-france",
+     "price": 1040,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "88ml",
+     "site": "IndianMartBD",
+     "url": "https://indianmartbd.com/product/cerave-moisturizing-lotion-88ml-bd/",
+     "price": 1100,
+     "oldPrice": 1400,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "88ml",
+     "site": "Klassy Missy",
+     "url": "https://klassy.com.bd/product/CeraVe-Moisturising-Lotion-For-Dry-To-Very-Dry-Skin-88ml-DjFdf",
+     "price": 1295,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "88ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cerave-moisturising-lotion-for-dry-to-very-dry-skin-88ml/",
+     "price": 1400,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Her Happy Skin",
+     "url": "https://herhappyskin.com/cerave-daily-moisturizing-lotion-for-dry-to-very-dry-skin-236ml",
+     "price": 1950,
+     "oldPrice": 2300,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cerave-moisturising-lotion-for-dry-to-very-dry-skin-236ml/",
+     "price": 1990,
+     "oldPrice": 2250,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cerave-moisturising-lotion-236ml/",
+     "price": 1990,
+     "oldPrice": 2290,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "IndianMartBD",
+     "url": "https://indianmartbd.com/product/cerave-moisturizing-lotion-236ml-bd-2/",
+     "price": 2000,
+     "oldPrice": 2300,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/cerave-moisturising-lotion-for-dry-to-very-dry-skin-236ml/",
+     "price": 2050,
+     "oldPrice": 2500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/cerave-moisturizing-lotion-for-dry-to-very-dry-skin-236ml/",
+     "price": 2100,
+     "oldPrice": 2300,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/47187/cerave-moisturising-lotion-for-dry-to-very-dry-skin-236ml",
+     "price": 2150,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/cerave-moisturising-lotion-for-dry-to-very-dry-skin-236ml/",
+     "price": 2250,
+     "oldPrice": 2850,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/cerave-moisturising-lotion-for-dry-to-very-dry-skin-236ml",
+     "price": 2250,
+     "oldPrice": 3050,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Korean Mart BD",
+     "url": "https://koreanmartbd.com/product/cerave-moisturising-lotion-236ml-for-dry-to-very-dry",
+     "price": 2261,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Klassy Missy",
+     "url": "https://klassy.com.bd/product/CeraVe-Moisturising-Lotion-For-Dry-To-Very-Dry-Skin-236ml-HA2op",
+     "price": 2290,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/cerave-moisturising-lotion-for-dry-to-very-dry-skin-236ml",
+     "price": 2600,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/cerave-moisturising-lotion-for-dry-to-very-dry-skin-473ml",
+     "price": 2920,
+     "oldPrice": 3850,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "Klassy Missy",
+     "url": "https://klassy.com.bd/product/cerave-daily-moisturizing-lotion-for-dry-to-very-dry-skin-473ml",
+     "price": 2990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/cerave-moisturising-lotion-for-dry-to-very-dry-skin-473ml",
+     "price": 2999,
+     "oldPrice": 3550,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/cerave-moisturising-lotion-dry-to-very-dry-473ml/",
+     "price": 3200,
+     "oldPrice": 3500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/42364/cerave-moisturising-lotion-for-dry-to-very-dry-skin-473ml",
+     "price": 3200,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cerave-moisturising-lotion-473ml/",
+     "price": 3290,
+     "oldPrice": 3690,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "IndianMartBD",
+     "url": "https://indianmartbd.com/product/cerave-moisturizing-lotion-473ml-bd/",
+     "price": 3550,
+     "oldPrice": 3950,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "brand": "Nivea",
+   "name": "Soft",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "50ml",
+     "attributes": {
+      "capacity": "50ml"
+     },
+     "officialPrice": 349
+    },
+    {
+     "label": "100ml",
+     "attributes": {
+      "capacity": "100ml"
+     },
+     "officialPrice": 460
+    },
+    {
+     "label": "200ml",
+     "attributes": {
+      "capacity": "200ml"
+     },
+     "officialPrice": 810
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://skinrevivebd.com/wp-content/uploads/2025/11/Nivea_Soft_Light_Moisturising_Cream_100m-Nivea-b6d01-375405.jpg",
+    "https://bdamajanshop.com/wp-content/uploads/2021/10/normal-TOGagrIjMun5IQv2vLhGoAGYYwP68j.webp",
+    "https://d1puc9h291tp0h.cloudfront.net/uploads/all/HARkojEVe8sI9tbymuJG5iZ8WmpvJd5VV4lscNIF.webp"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "50ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/nivea-soft-jar-moisturising-cream-50ml/",
+     "price": 250,
+     "oldPrice": 310,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "BD Amajan Shop",
+     "url": "https://bdamajanshop.com/product/nivea-soft-cream-50ml/",
+     "price": 290,
+     "oldPrice": 690,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/nivea-soft-jar-moisturising-cream-50ml/",
+     "price": 290,
+     "oldPrice": 350,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/nivea-soft-refreshingly-soft-moisturising-cream-50ml/",
+     "price": 300,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "Her Happy Skin",
+     "url": "https://herhappyskin.com/nivea-soft-light-moisturiser-cream-100ml",
+     "price": 300,
+     "oldPrice": 550,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/nivea-soft-jar-moisturising-cream-50ml-egypt",
+     "price": 320,
+     "oldPrice": 420,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/48827/nivea-soft-moisturizing-cream-50ml-jar",
+     "price": 349,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/nivea-soft-refreshingly-moisturizing-cream-50ml",
+     "price": 349,
+     "oldPrice": 400,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/nivea-soft-moisturising-cream-50ml/",
+     "price": 350,
+     "oldPrice": 380,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/nivea-soft-cream-50ml-2/",
+     "price": 350,
+     "oldPrice": 380,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/nivea-soft-moisturizing-cream-50ml",
+     "price": 360,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "Lira Import",
+     "url": "https://liraimportltd.com/product/nivea-soft-moisturiser-50-ml/",
+     "price": 360,
+     "oldPrice": 450,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "ALZAK",
+     "url": "https://alzakbd.com/product/nivea-soft-moisturising-cream-50ml/",
+     "price": 420,
+     "oldPrice": 600,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/nivea-soft-jar-moisturising-cream-100ml",
+     "price": 425,
+     "oldPrice": 610,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/48828/nivea-soft-moisturizing-cream-100ml-jar",
+     "price": 435,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/nivea-soft-jar-moisturizing-cream-100ml",
+     "price": 450,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/nivea-soft-jar-moisturising-cream-100ml/",
+     "price": 450,
+     "oldPrice": 500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Lira Import",
+     "url": "https://liraimportltd.com/product/nivea-soft-moisturizer-100-ml/",
+     "price": 460,
+     "oldPrice": 750,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/nivea-soft-light-moisturising-cream-100ml-india/",
+     "price": 475,
+     "oldPrice": 500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "IndianMartBD",
+     "url": "https://indianmartbd.com/product/nivea-soft-moisturizer-cream-100ml-bd/",
+     "price": 500,
+     "oldPrice": 650,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/nivea-soft-refreshingly-moisturizing-cream-100ml",
+     "price": 549,
+     "oldPrice": 600,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/nivea-soft-refreshingly-soft-moisturising-cream-100ml/",
+     "price": 600,
+     "oldPrice": 700,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/nivea-soft-cream-moisturizer-100ml/",
+     "price": 650,
+     "oldPrice": 790,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "IndianMartBD",
+     "url": "https://indianmartbd.com/product/nivea-soft-moisturizer-200ml-bd/",
+     "price": 650,
+     "oldPrice": 1100,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/nivea-soft-jar-moisturizing-cream-200ml",
+     "price": 720,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/nivea-soft-light-moisturising-200ml/",
+     "price": 750,
+     "oldPrice": 1000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/nivea-soft-jar-moisturising-cream-200ml/",
+     "price": 750,
+     "oldPrice": 800,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/nivea-soft-refreshingly-soft-moisturising-cream-200ml/",
+     "price": 800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/49413/nivea-soft-refreshingly-soft-moisturizing-cream-200ml",
+     "price": 810,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/nivea-soft-moisturising-cream-200ml-uae/",
+     "price": 830,
+     "oldPrice": 975,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Skin Revive BD",
+     "url": "https://skinrevivebd.com/product/nivea-soft-light-moisturising-cream-200ml/",
+     "price": 850,
+     "oldPrice": 1000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/nivea-soft-refreshingly-moisturising-care-cream-200ml",
+     "price": 888,
+     "oldPrice": 1050,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "BD Amajan Shop",
+     "url": "https://bdamajanshop.com/product/nivea-soft-cream-200ml/",
+     "price": 890,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "ALZAK",
+     "url": "https://alzakbd.com/product/nivea-soft-moisturising-cream-200ml/",
+     "price": 950,
+     "oldPrice": 1450,
+     "inStock": null,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/nivea-soft-cream-moisturizer-200-ml/",
+     "price": 1050,
+     "oldPrice": 1490,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "brand": "Nivea",
+   "name": "Nourishing Body Lotion",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "400ml",
+     "attributes": {
+      "capacity": "400ml"
+     },
+     "officialPrice": 1360
+    },
+    {
+     "label": "625ml",
+     "attributes": {
+      "capacity": "625ml"
+     },
+     "officialPrice": 1699
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://beprincessbd.com/wp-content/uploads/2025/12/09.jpg",
+    "http://skincareshop.com.bd/wp-content/uploads/2022/09/Nivea-Nourishing-Body-Lotion-400ml-2.jpg",
+    "https://cdn2.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJQcm9kdWN0LXBfaW1hZ2VzXC81MzAyM1wvNTMwMjMtTml2ZWEtUmljaC1Ob3VyaXNoaW5nLUJvZHktTG90aW9uLTcyaC1JbnRlbnNlLWNhcmUtV2l0aC1wdXJlLUh5YWx1cm9uLUFsbW9uZC1PaWwtVml0YW1pbi1FLWZvci1EcnktdG8tVmVyeS1EcnktU2tpbi1NYWRlLWluLVNwYWluLTQwMG1sLTZqbDRuNC53ZWJwIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6Im91dHNpZGUifSwib3ZlcmxheVdpdGgiOnsiYnVja2V0IjoiYXJvZ2dhIiwia2V5IjoibWlzY1wvd20ucG5nIiwiYWxwaGEiOjkwfX19"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "400ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/nivea-nourishing-body-lotion-400ml/",
+     "price": 1080,
+     "oldPrice": 1400,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/53023/nivea-rich-nourishing-body-lotion-72h-intense-care-with-pure-hyaluron-almond-oil-vitamin-e-for-dry-to-very-dry-skin-made-in-spain-400ml",
+     "price": 1150,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Lira Import",
+     "url": "https://liraimportltd.com/product/nivea-rich-nourishing-body-lotion-dry-to-very-dry-skin-400ml/",
+     "price": 1360,
+     "oldPrice": 2080,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/nivea-rich-nourishing-72h-intense-moisture-body-lotion-400ml-made-in-spain/",
+     "price": 1380,
+     "oldPrice": 1450,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/nivea-rich-nourishing-complete-72h-moisture-body-lotion-for-dry-to-very-dry-skin-400ml",
+     "price": 1399,
+     "oldPrice": 1650,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/nivea-rich-nourishing-body-lotion-for-dry-to-very-dry-skin-400ml/",
+     "price": 1450,
+     "oldPrice": 1650,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "625ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/nivea-rich-nourishing-body-lotion-dry-to-very-dry-skin-625ml",
+     "price": 1699,
+     "oldPrice": 2150,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "625ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/85210/nivea-rich-nourishing-body-lotion-for-dry-skin-625ml-made-in-spain",
+     "price": 2050,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "brand": "Vaseline",
+   "name": "Intensive Care Cocoa Radiant Lotion",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "200ml",
+     "attributes": {
+      "capacity": "200ml"
+     },
+     "officialPrice": 750
+    },
+    {
+     "label": "400ml",
+     "attributes": {
+      "capacity": "400ml"
+     },
+     "officialPrice": 1250
+    },
+    {
+     "label": "600ml",
+     "attributes": {
+      "capacity": "600ml"
+     },
+     "officialPrice": 1953
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://bdamajanshop.com/wp-content/uploads/2020/12/normal-BMDRS2nM52KpLhirhhFdiZlDaJx6ps.webp",
+    "https://cms.beautybooth.com.bd/uploads/all/vaseline-intensive-care-cocoa-radiant-body-lotion-400ml_26.webp",
+    "https://d1puc9h291tp0h.cloudfront.net/uploads/all/aH63fORb8yEm6xaRcEhw0W7ZMAkMxe3LPPuVPFVl.webp"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "200ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/51036/vaseline-intensive-care-cocoa-radiant-lotion-200ml",
+     "price": 605,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Klassy Missy",
+     "url": "https://klassy.com.bd/product/Vaseliner-Intensive-Caretm-Cocoa-Radiant-Lotion-200ml-462147d",
+     "price": 668,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/vaseline-intensive-care-cocoa-radiant-body-lotion-200ml",
+     "price": 699,
+     "oldPrice": 1100,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/vaseline-intensive-care-cocoa-radiant-48h-moisture-body-lotion-200ml",
+     "price": 719,
+     "oldPrice": 890,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/vaseline-intensive-care-cocoa-radiant-body-lotion-200ml/",
+     "price": 750,
+     "oldPrice": 900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/vaseline-intensive-care-cocoa-radiant-lotion-200ml/",
+     "price": 750,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/vaseline-intensive-care-cocoa-radiant-body-lotion-200ml",
+     "price": 765,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/vaseline-intensive-care-cocoa-radiant-lotion-200ml/",
+     "price": 780,
+     "oldPrice": 850,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "BD Amajan Shop",
+     "url": "https://bdamajanshop.com/product/vaseline-intensive-care-cocoa-radiant-lotion-200ml/",
+     "price": 790,
+     "oldPrice": 1390,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/vaseline-intensive-care-cocoa-radiant-lotion-200ml/",
+     "price": 850,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/vaseline-intensive-care-cocoa-radiant-lotion-400ml/",
+     "price": 1090,
+     "oldPrice": 1300,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/vaseline-intensive-care-cocoa-radiant-body-lotion-400ml",
+     "price": 1250,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/vaseline-intensive-care-cocoa-radiant-body-lotion-400ml/",
+     "price": 1250,
+     "oldPrice": 1550,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/vaseline-intensive-care-cocoa-radiant-lotion-400-ml/",
+     "price": 1300,
+     "oldPrice": 1400,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/vaseline-intensive-care-cocoa-radiant-lotion-400ml",
+     "price": 1305,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/vaseline-intensive-care-cocoa-radiant-body-lotion-400ml/",
+     "price": 1690,
+     "oldPrice": 1890,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "600ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/vaseline-intensive-care-cocoa-radiant-lotion-with-pure-cocoa-butter-600ml",
+     "price": 1849,
+     "oldPrice": 1950,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "600ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/vaseline-intensive-care-cocoa-radiant-body-lotion-600ml",
+     "price": 1953,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "600ml",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/vaseline-intensive-care-cocoa-radiant-body-lotion-600ml/",
+     "price": 2049,
+     "oldPrice": 2150,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "600ml",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/vaseline-intensive-care-cocoa-radiant-body-lotion-600ml",
+     "price": 2500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "brand": "Vaseline",
+   "name": "Lip Therapy Original",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "20g",
+     "attributes": {
+      "capacity": "20g"
+     },
+     "officialPrice": 255
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://cms.beautybooth.com.bd/uploads/all/vaseline-lip-therapy-original-20gm_63.webp",
+    "https://alzakbd.com/wp-content/uploads/2026/06/1000398610.jpg",
+    "https://cdn.klassy.com.bd/uploads/products/products/5eYV3Mu0CZMR22B40w6DzERgKaFPfYWgg5wmcZF0.webp"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "20g",
+     "site": "ALZAK",
+     "url": "https://alzakbd.com/product/vaseline-lip-therapy-original-lip-balm-tin-20g/",
+     "price": 199,
+     "oldPrice": 350,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/vaseline-lip-therapy-original-20g/",
+     "price": 250,
+     "oldPrice": 320,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/vaseline-lip-therapy-original-20gm/",
+     "price": 250,
+     "oldPrice": 350,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/vaseline-lip-therapy-original-tin-20g/",
+     "price": 250,
+     "oldPrice": 350,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/36247/vaseline-lip-therapy-original-20g",
+     "price": 255,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/vaseline-lip-therapy-lip-balm-original-20g/",
+     "price": 265,
+     "oldPrice": 375,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/vaseline-lip-therapy-petroleum-jelly-original-20g",
+     "price": 270,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "Klassy Missy",
+     "url": "https://klassy.com.bd/product/Vaseline-Lip-Therapy-Original-20g-toAHO",
+     "price": 275,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/vaseline-lip-therapy-lip-balm-20g-original",
+     "price": 299,
+     "oldPrice": 380,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "brand": "Vaseline",
+   "name": "Lip Therapy Rosy Lips",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "20g",
+     "attributes": {
+      "capacity": "20g"
+     },
+     "officialPrice": 269
+    },
+    {
+     "label": "7g",
+     "attributes": {
+      "capacity": "7g"
+     },
+     "officialPrice": 450
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://skinrevivebd.com/wp-content/uploads/2025/11/vaseline-lip-therapy-rosy-lips-2118-1.jpg",
+    "https://cms.beautybooth.com.bd/uploads/all/vaseline-lip-therapy-rosy-lips-flavor-7g_51.webp",
+    "https://alzakbd.com/wp-content/uploads/2021/08/1628126692186.png"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "20g",
+     "site": "ALZAK",
+     "url": "https://alzakbd.com/product/vaseline-lip-therapy-rosy-lips-20-g/",
+     "price": 199,
+     "oldPrice": 350,
+     "inStock": null,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/vaseline-lip-therapy-rosy-lips-20g",
+     "price": 199,
+     "oldPrice": 285,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/vaseline-lip-therapy-rosy-lips-20gm/",
+     "price": 240,
+     "oldPrice": 280,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "Klassy Missy",
+     "url": "https://klassy.com.bd/product/Vaseline-Lip-Therapy-Rosy-Lips-20g-573e1ad",
+     "price": 245,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/35222/vaseline-lip-therapy-rosy-lips-20g",
+     "price": 269,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/vaseline-lip-therapy-lip-balm-rosy-lips-20g/",
+     "price": 275,
+     "oldPrice": 375,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "BD Amajan Shop",
+     "url": "https://bdamajanshop.com/product/vaseline-lip-therapy-tin-rosy-lips-20g/",
+     "price": 290,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/vaseline-lip-therapy-lip-balm-20g-rosy-lips",
+     "price": 299,
+     "oldPrice": 380,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "Skin Revive BD",
+     "url": "https://skinrevivebd.com/product/vaseline-lip-therapy-rosy-lips-20gm/",
+     "price": 350,
+     "oldPrice": 400,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/vaseline-lip-therapy-rosy-lips-20gm/",
+     "price": 350,
+     "oldPrice": 450,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "7g",
+     "site": "Klassy Missy",
+     "url": "https://klassy.com.bd/product/Vaseline-Lip-Therapy-Rosy-Lips-7g-RuqUr",
+     "price": 450,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "7g",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/vaseline-lip-therapy-rosy-lips-lip-balm-7g/",
+     "price": 450,
+     "oldPrice": 500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "brand": "Vaseline",
+   "name": "Original Petroleum Jelly",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "50ml",
+     "attributes": {
+      "capacity": "50ml"
+     },
+     "officialPrice": 250
+    },
+    {
+     "label": "100ml",
+     "attributes": {
+      "capacity": "100ml"
+     },
+     "officialPrice": 380
+    },
+    {
+     "label": "250ml",
+     "attributes": {
+      "capacity": "250ml"
+     },
+     "officialPrice": 945
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://bk.shajgoj.com/storage/2024/12/vaseline-petroleum-jelly-50ml-1.jpg",
+    "https://cms.beautybooth.com.bd/uploads/all/vaseline-original-petroleum-jelly-50ml_75.webp",
+    "https://d1puc9h291tp0h.cloudfront.net/uploads/all/Z4BOwYev0ud7oTLggPRZEyCBLJwDVdF8BP4U7yIH.webp"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "50ml",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/vaseline-blueseal-pure-petroleum-jelly-original-50ml/",
+     "price": 220,
+     "oldPrice": 300,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/vaseline-original-petroleum-jelly-50ml",
+     "price": 250,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/vaseline-original-petroleum-jelly-50ml",
+     "price": 270,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/vaseline-blueseal-pure-petroleum-jelly-original-50ml",
+     "price": 299,
+     "oldPrice": 350,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/vaseline-blueseal-pure-petroleum-jelly-original-100ml/",
+     "price": 350,
+     "oldPrice": 450,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/vaseline-blue-seal-original-petroleum-jelly-100ml",
+     "price": 369,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/58765/vaseline-blueseal-petroleum-jelly-original-100ml",
+     "price": 370,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Her Happy Skin",
+     "url": "https://herhappyskin.com/vaseline-blue-seal-pure-petroleum-jelly-original-100ml",
+     "price": 380,
+     "oldPrice": 450,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Klassy Missy",
+     "url": "https://klassy.com.bd/product/Vaseliner-Blue-Seal-Original-Petroleum-Jelly-100ml-1787e4c3",
+     "price": 398,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/vaseline-blueseal-pure-petroleum-jelly-original-100ml",
+     "price": 444,
+     "oldPrice": 550,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/vaseline-blueseal-pure-petroleum-jelly-original-100ml",
+     "price": 480,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "250ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/vaseline-blueseal-pure-petroleum-jelly-original-250ml/",
+     "price": 800,
+     "oldPrice": 950,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "250ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/vaseline-original-petroleum-jelly-250ml",
+     "price": 945,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "250ml",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/vaseline-blue-seal-pure-petroleum-jelly-original-250ml/",
+     "price": 990,
+     "oldPrice": 1250,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "250ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/vaseline-original-petroleum-jelly-250ml/",
+     "price": 990,
+     "oldPrice": 1190,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "brand": "Cetaphil",
+   "name": "Moisturizing Cream",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "50g",
+     "attributes": {
+      "capacity": "50g"
+     },
+     "officialPrice": 980
+    },
+    {
+     "label": "80g",
+     "attributes": {
+      "capacity": "80g"
+     },
+     "officialPrice": 1280
+    },
+    {
+     "label": "85g",
+     "attributes": {
+      "capacity": "85g"
+     },
+     "officialPrice": 1250
+    },
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 2100
+    },
+    {
+     "label": "453g",
+     "attributes": {
+      "capacity": "453g"
+     },
+     "officialPrice": 3650
+    },
+    {
+     "label": "550g",
+     "attributes": {
+      "capacity": "550g"
+     },
+     "officialPrice": 3400
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://koreanmartbd.com/storage/uploads/2026/07/Cetaphil Moisturizing Cream Dry to Very Dry, Sensitive Skin - 50g.png",
+    "https://koreanmartbd.com/storage/uploads/2026/07/Cetaphil Moisturising Cream Dry to Very Dry, Sensitive Skin - 453g (Korean version).webp",
+    "https://indianmartbd.com/wp-content/uploads/2025/04/Cetaphil-Moisturising-Cream-for-Face-Body-Dry-to-Normal-skin-80-gm-1.jpg"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "50g",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/cetaphil-moisturizing-cream-for-dry-to-very-dry-sensitive-skin-50g/",
+     "price": 980,
+     "oldPrice": 1250,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50g",
+     "site": "Korean Mart BD",
+     "url": "https://koreanmartbd.com/product/cetaphil-moisturizing-cream-dry-to-very-dry-sensitive-skin-50g-korean-version",
+     "price": 1379,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "80g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/47196/cetaphil-moisturising-cream-for-dry-to-normal-sensitive-skin-80g",
+     "price": 1149,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "80g",
+     "site": "IndianMartBD",
+     "url": "https://indianmartbd.com/product/cetaphil-moisturizing-cream-80gm-bangladesh-2/",
+     "price": 1150,
+     "oldPrice": 1500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "80g",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/cetaphil-moisturizing-cream-dry-to-normal-sensitive-skin-80g/",
+     "price": 1150,
+     "oldPrice": 1300,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "80g",
+     "site": "Her Happy Skin",
+     "url": "https://herhappyskin.com/cetaphil-moisturizing-cream-dry-to-normal-sensitive-skin-80g",
+     "price": 1220,
+     "oldPrice": 1450,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "80g",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cetaphil-moisturising-cream-dry-to-normal-sensitive-skin-80g",
+     "price": 1238,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "80g",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-moisturising-cream-80gm/",
+     "price": 1280,
+     "oldPrice": 1450,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "80g",
+     "site": "BD Amajan Shop",
+     "url": "https://bdamajanshop.com/product/cetaphil-moisturising-cream-dry-to-normal-sensitive-skin-80g/",
+     "price": 1290,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "80g",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-moisturising-cream-dry-to-normal-sensitive-skin-80g-2/",
+     "price": 1290,
+     "oldPrice": 1690,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "80g",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/cetaphil-moisturizing-cream-dry-to-normal-sensitive-skin-80g/",
+     "price": 1350,
+     "oldPrice": 1880,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "80g",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/cetaphil-moisturizing-cream-80gm",
+     "price": 1400,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "80g",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/cetaphil-moisturising-cream-dry-to-normal-sensitive-skin-80g",
+     "price": 1450,
+     "oldPrice": 1930,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "85g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/73358/cetaphil-moisturizing-cream-with-glycerine-vitamin-b3-b5-85g",
+     "price": 1145,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "85g",
+     "site": "BD Amajan Shop",
+     "url": "https://bdamajanshop.com/product/cetaphil-moisturizing-cream-85g/",
+     "price": 1150,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "85g",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/cetaphil-intensive-moisturizing-cream-85g",
+     "price": 1175,
+     "oldPrice": 1250,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "85g",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/cetaphil-moisturizing-cream-creme-hydratante-85gm",
+     "price": 1250,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "85g",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/cetaphil-moisturizing-cream-for-dry-to-very-dry-85g/",
+     "price": 1250,
+     "oldPrice": 1500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "85g",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cetaphil-moisturizing-cream-for-dry-to-very-dry-skin-85g",
+     "price": 1305,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "85g",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-moisturizing-cream-dry-to-very-dry-skin-85gm/",
+     "price": 1380,
+     "oldPrice": 1700,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "85g",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-moisturizing-cream-for-dry-to-very-dry-skin-85g/",
+     "price": 1590,
+     "oldPrice": 1690,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "85g",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/cetaphil-moisturizing-cream-for-dry-to-very-dry-skin-85g",
+     "price": 1600,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "250g",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/cetaphil-moisturizing-cream-for-very-dry-and-sensitive-skin-250g",
+     "price": 1750,
+     "oldPrice": 1800,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "250g",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-moisturizing-cream-250gm/",
+     "price": 2100,
+     "oldPrice": 2300,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "250g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/52743/cetaphil-moisturising-cream-for-dry-to-normal-sensitive-skin-250gm",
+     "price": 2200,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "250g",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-moisturizing-cream-dry-to-very-dry-250g/",
+     "price": 2690,
+     "oldPrice": 2990,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "453g",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/cetaphil-moisturizing-cream-very-dry-to-dry-sensitive-skin-453gm/",
+     "price": 3250,
+     "oldPrice": 3850,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "453g",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-moisturising-cream-ultimate-453gm/",
+     "price": 3280,
+     "oldPrice": 3500,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "453g",
+     "site": "Korean Mart BD",
+     "url": "https://koreanmartbd.com/product/cetaphil-moisturising-cream-dry-to-very-dry-sensitive-skin-453g-korean-version",
+     "price": 3635,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "453g",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/cetaphil-moisturizing-cream-for-very-dry-to-normal-skin-453g",
+     "price": 3650,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "453g",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cetaphil-moisturizing-cream-very-dry-to-normal-skin-453g",
+     "price": 3690,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "453g",
+     "site": "ALZAK",
+     "url": "https://alzakbd.com/product/cetaphil-moisturizing-cream-very-dry-to-dry-sensitive-skin-453g/",
+     "price": 3850,
+     "oldPrice": 5850,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "453g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/97315/cetaphil-moisturizing-cream-very-dry-to-normal-skin-453g",
+     "price": 4590,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "550g",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cetaphil-moisturising-cream-550g",
+     "price": 3240,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "550g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/94028/cetaphil-moisturizing-cream-for-dry-to-very-dry-sensitive-skin-48h-intense-hydration-550g",
+     "price": 3250,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "550g",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-moisturising-cream-550gm/",
+     "price": 3400,
+     "oldPrice": 3900,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "550g",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-moisturising-cream-sensitive-skin-550gm/",
+     "price": 3590,
+     "oldPrice": 4190,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "550g",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/cetaphil-moisturizing-cream-for-very-dry-to-dry-sensitive-skin-550gm",
+     "price": 3700,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "550g",
+     "site": "Lira Import",
+     "url": "https://liraimportltd.com/product/cetaphil-moisturizing-cream-550g-dry-to-very-dry-skin/",
+     "price": 4280,
+     "oldPrice": 5360,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "brand": "Cetaphil",
+   "name": "Moisturizing Lotion",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "59ml",
+     "attributes": {
+      "capacity": "59ml"
+     },
+     "officialPrice": 690
+    },
+    {
+     "label": "100ml",
+     "attributes": {
+      "capacity": "100ml"
+     },
+     "officialPrice": 1150
+    },
+    {
+     "label": "236ml",
+     "attributes": {
+      "capacity": "236ml"
+     },
+     "officialPrice": 1890
+    },
+    {
+     "label": "237ml",
+     "attributes": {
+      "capacity": "237ml"
+     },
+     "officialPrice": 1999
+    },
+    {
+     "label": "473ml",
+     "attributes": {
+      "capacity": "473ml"
+     },
+     "officialPrice": 3015
+    },
+    {
+     "label": "591ml",
+     "attributes": {
+      "capacity": "591ml"
+     },
+     "officialPrice": 3350
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://indianmartbd.com/wp-content/uploads/2025/04/Cetaphil-Moisturizing-Lotion-for-Dry-to-Normal-Sensitive-Skin-100-ml-Moisturizer-with-Niacinamide-Panthenol-Non-greasy-Won-t-Clog-Pores-Dermatologist-Recommended-Paraben-Sulphate-Free.jpg",
+    "https://bdamajanshop.com/wp-content/uploads/2025/03/normal-7XEdi5CltJVJH2bBu0Bg8AY8akmHoJ.webp",
+    "https://alzakbd.com/wp-content/uploads/2023/09/1000023447.jpg"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "59ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-moisturizing-lotion-normal-to-dry-skin-59ml/",
+     "price": 550,
+     "oldPrice": 990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "59ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cetaphil-moisturizing-lotion-dry-to-normal-sensitive-skin-59ml",
+     "price": 675,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "59ml",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/cetaphil-moisturizing-lotion-normal-to-dry-skin-59ml/",
+     "price": 680,
+     "oldPrice": 750,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "59ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-moisturizing-lotion-for-normal-to-dry-skin-59ml/",
+     "price": 680,
+     "oldPrice": 1100,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "59ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/83402/cetaphil-moisturizing-lotion-for-normal-to-dry-skin-glycerin-vitamins-b3-b5-59ml",
+     "price": 680,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "59ml",
+     "site": "BD Amajan Shop",
+     "url": "https://bdamajanshop.com/product/cetaphil-moisturizing-lotion-dry-to-normal-sensitive-skin-59ml/",
+     "price": 690,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "59ml",
+     "site": "ALZAK",
+     "url": "https://alzakbd.com/product/cetaphil-moisturizing-lotion-dry-to-normal-sensitive-skin-59ml/",
+     "price": 700,
+     "oldPrice": 1250,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "59ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/cetaphil-moisturizing-lotion-59ml/",
+     "price": 700,
+     "oldPrice": 900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "59ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/cetaphil-moisturizing-lotion-normal-to-dry-skin-59ml",
+     "price": 749,
+     "oldPrice": 950,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "59ml",
+     "site": "Klassy Missy",
+     "url": "https://klassy.com.bd/product/Cetaphil-moisturizing-Lotion-59ml-3Ob6U",
+     "price": 750,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "59ml",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/cetaphil-moisturizing-lotion-for-normal-to-dry-skin-59ml",
+     "price": 950,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cetaphil-moisturising-lotion-normal-to-combination--sensitive-skin-100ml",
+     "price": 1035,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "IndianMartBD",
+     "url": "https://indianmartbd.com/product/cetaphil-moisturizing-lotion-100ml-bangladesh/",
+     "price": 1100,
+     "oldPrice": 1300,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "ALZAK",
+     "url": "https://alzakbd.com/product/cetaphil-moisturising-lotion-100ml/",
+     "price": 1100,
+     "oldPrice": 1550,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/cetaphil-moisturising-lotion-normal-to-combination-sensitive-skin-100ml/",
+     "price": 1150,
+     "oldPrice": 1450,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/cetaphil-moisturizing-lotion-100ml/",
+     "price": 1150,
+     "oldPrice": 1250,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/51271/cetaphil-moisturising-lotion-for-normal-to-combination-sensitive-skin-100ml",
+     "price": 1150,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/cetaphil-moisturizing-lotion-for-normal-to-combination-sensitive-skin-100ml",
+     "price": 1250,
+     "oldPrice": 1900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "BD Amajan Shop",
+     "url": "https://bdamajanshop.com/product/cetaphil-moisturising-lotion-100ml/",
+     "price": 1370,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-moisturizing-lotion-100ml/",
+     "price": 1390,
+     "oldPrice": 1790,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/cetaphil-moisturising-lotion-dry-sensitive-skin-236ml",
+     "price": 1720,
+     "oldPrice": 2000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/cetaphil-moisturising-lotion-normal-to-dry-sensitive-skin-236ml/",
+     "price": 1750,
+     "oldPrice": 2050,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cetaphil-moisturising-lotion-nomal-to-dry-sensitive-skin-236ml",
+     "price": 1800,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-moisturizing-lotion-for-normal-to-dry-sensitive-skin-236ml/",
+     "price": 1880,
+     "oldPrice": 2200,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "BD Amajan Shop",
+     "url": "https://bdamajanshop.com/product/cetaphil-moisturising-lotion-normal-to-dry-sensitive-skin-236ml/",
+     "price": 1890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-moisturising-lotion-236ml/",
+     "price": 1890,
+     "oldPrice": 2190,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/cetaphil-moisturizing-lotion-for-normal-to-dry-236ml/",
+     "price": 1900,
+     "oldPrice": 2200,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "ALZAK",
+     "url": "https://alzakbd.com/product/cetaphil-moisturising-lotion-for-body-236ml/",
+     "price": 2050,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/cetaphil-moisturizing-lotion-for-normal-to-drysensitive-skin-236ml",
+     "price": 2050,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/cetaphil-moisturising-lotion-normal-to-dry-sensitive-skin-236ml",
+     "price": 2099,
+     "oldPrice": 2300,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/55981/cetaphil-moisturising-lotion-for-normal-to-dry-sensitive-skin-236ml",
+     "price": 2112,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Lira Import",
+     "url": "https://liraimportltd.com/product/cetaphil-moisturizing-lotion-236-ml-normal-to-drysensitive-skin/",
+     "price": 2320,
+     "oldPrice": 2900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-moisturising-lotion-237ml/",
+     "price": 1689,
+     "oldPrice": 1800,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "ALZAK",
+     "url": "https://alzakbd.com/product/cetaphil-moisturizing-lotion-237ml/",
+     "price": 1850,
+     "oldPrice": 2450,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/cetaphil-moisturizing-lotion-dry-to-normal-sensitive-skin-237ml/",
+     "price": 1850,
+     "oldPrice": 2050,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/94799/cetaphil-moisturizing-lotion-for-normal-to-dry-skin-237ml",
+     "price": 1999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cetaphil-moisturizing-lotion--dry-to-normalsensitive-skin-237ml",
+     "price": 2025,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-moisturizing-lotion-normal-to-dry-skin-237ml/",
+     "price": 2180,
+     "oldPrice": 2400,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/cetaphil-moisturizing-lotion-dry-to-normal-sensitive-skin-237ml",
+     "price": 2200,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "Lira Import",
+     "url": "https://liraimportltd.com/product/cetaphil-moisturizing-lotion-237ml/",
+     "price": 2800,
+     "oldPrice": 3500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "ALZAK",
+     "url": "https://alzakbd.com/product/cetaphil-moisturising-lotion-for-body-dry-sensitive-skin-473ml/",
+     "price": 2450,
+     "oldPrice": 3050,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/73475/cetaphil-moisturizing-lotion-for-normal-to-dry-skin-with-glycerin-vitamins-b3-b5-473ml",
+     "price": 2790,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-moisturizing-lotion-473ml/",
+     "price": 2990,
+     "oldPrice": 3290,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cetaphil-moisturising-lotion-473ml",
+     "price": 3015,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/cetaphil-moisturizing-lotion-for-normal-to-dry-skin-473ml/",
+     "price": 3150,
+     "oldPrice": 3350,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-moisturizing-lotion-normal-to-dry-skin-473ml/",
+     "price": 3480,
+     "oldPrice": 3800,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/cetaphil-moisturizing-lotion-for-normal-to-dry-skin-473ml",
+     "price": 3550,
+     "oldPrice": 3750,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "591ml",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/cetaphil-moisturizing-lotion-for-all-skin-types-fragrance-free-591ml",
+     "price": 2750,
+     "oldPrice": 2890,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "591ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cetaphil-moisturising-lotion-591ml-dry-to-normal--sensitive-skin",
+     "price": 3015,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "591ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-moisturizing-lotion-for-normal-to-dry-skin-591ml/",
+     "price": 3350,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "591ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/73781/cetaphil-moisturizing-lotion-for-normal-to-dry-skin-with-glycerin-vitamin-b3-b5-591ml",
+     "price": 3560,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "591ml",
+     "site": "ALZAK",
+     "url": "https://alzakbd.com/product/cetaphil-moisturizing-lotion-591ml/",
+     "price": 3850,
+     "oldPrice": 6250,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "591ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-moisturizing-lotion-normal-to-dry-skin-591ml/",
+     "price": 3980,
+     "oldPrice": 4200,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
   }
  ]
 }

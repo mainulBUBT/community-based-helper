@@ -9,6 +9,7 @@ import { CategoryTiles } from "@/components/home/CategoryTiles";
 import { DealsShelf } from "@/components/home/DealsShelf";
 import { Shelf } from "@/components/home/Shelf";
 import { SpotlightShelf } from "@/components/home/SpotlightShelf";
+import { PageBanner } from "@/components/layout/PageBanner";
 import { CompareCard } from "@/components/product/CompareCard";
 import { SellerCard } from "@/components/seller/SellerCard";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -90,6 +91,8 @@ export function HomeView({ initial }: { initial: HomeData }) {
         </section>
         <CompareCard picks={comparisons} />
       </div>
+
+      <PageBanner page="home" />
 
       <CategoryTiles summaries={summaries} />
 

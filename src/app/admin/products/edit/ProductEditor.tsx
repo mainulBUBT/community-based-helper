@@ -63,6 +63,7 @@ function DetailsForm({ product, onSaved }: { product: Product; onSaved: () => vo
           images: previews,
           colors: splitList(form.get("colors"), /,/),
           regions: [...new Set(splitList(form.get("regions"), /,/).map(canonicalRegion).filter((r): r is string => Boolean(r)))],
+          tags: [...new Set(splitList(form.get("tags"), /,/))],
           description: text("description"),
           descriptionEn: text("descriptionEn"),
           specs: textToSpecs(String(form.get("specs") ?? "")),
@@ -89,6 +90,9 @@ function DetailsForm({ product, onSaved }: { product: Product; onSaved: () => vo
           </Select>
           <Field label={t.admin.products.year} name="year" type="number" defaultValue={product.releaseYear ?? ""} />
           <Field label={t.admin.editor.popularity} name="popularity" type="number" min={0} max={100} defaultValue={product.popularity} hint={t.admin.editor.popularityHint} />
+          <div className="md:col-span-3">
+            <Field label={t.admin.editor.tags} name="tags" defaultValue={(product.tags ?? []).join(", ")} hint={t.admin.editor.tagsHint} />
+          </div>
           <label className="flex items-start gap-3 text-sm md:col-span-3">
             <input type="checkbox" name="active" defaultChecked={product.active !== false} className="mt-0.5 size-4 accent-[var(--color-brand)]" />
             <span className="flex flex-col gap-0.5">

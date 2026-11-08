@@ -244,6 +244,7 @@ export function indexProduct<T>(item: T, product: Product, categories?: Category
     item,
     fields: [
       { words: title, weight: 1 },
+      { words: [...new Set((product.tags ?? []).flatMap(queryWords))], weight: 1 },
       { words: [...new Set(product.variants.flatMap((v) => tokenize(v.label)))], weight: 0.5 },
       { words: [...new Set(categoryWords)], weight: 0.6 },
     ],
@@ -315,7 +316,10 @@ export function hasTypo<T>(items: T[], getProduct: (item: T) => Product, query: 
   if (!tokenize(query).length || !words.length) return false;
   const counts = new Map<string, number>();
   const bump = (word: string) => counts.set(word, (counts.get(word) ?? 0) + 1);
-  for (const item of items) tokenize(`${getProduct(item).brand} ${getProduct(item).name}`).forEach(bump);
+  for (const item of items) {
+    const product = getProduct(item);
+    [...tokenize(`${product.brand} ${product.name}`), ...(product.tags ?? []).flatMap(queryWords)].forEach(bump);
+  }
   categories?.flatMap(categoryTerms).forEach(bump);
   Object.values(ALIASES).forEach((en) => en.split(" ").forEach(bump));
   STOP.forEach(bump);

@@ -31,6 +31,7 @@ import { useInstallPrompt } from "@/hooks/useInstallPrompt";
 import type { Messages } from "@/i18n/bn";
 import { trackView } from "@/services/analytics";
 import type { SiteSettings } from "@/types/admin";
+import { BannerProvider } from "@/lib/banner";
 import { CategoriesProvider } from "@/lib/categories";
 import type { CategoryInfo } from "@/types/catalog";
 import { categoryPath } from "@/utils/url";
@@ -180,101 +181,103 @@ export function AppShell({
 
   return (
     <CategoriesProvider categories={categories}>
-      <div className="flex min-h-dvh flex-col">
-        <Suspense>
-          <NavProgress />
-        </Suspense>
-        <Announcement settings={settings} />
-        <PromoPopup settings={settings} />
-        <header className="sticky top-0 z-40 border-b border-line-soft bg-surface shadow-sm">
-          <div className="page-container flex h-16 items-center gap-4 lg:gap-6">
-            <Link
-              href={`${prefix}/`}
-              className="flex shrink-0 items-center gap-2 text-xl font-bold tracking-tight text-ink"
-            >
-              <BrandMark size={32} />
-              {siteName}
-            </Link>
-            <div className="hidden w-[clamp(240px,30vw,500px)] shrink-0 md:block">
-              {showSearch && <SearchBox examples={settings.quickSearches} />}
-            </div>
-            <span className="flex-1" />
-            <nav
-              aria-label={t.nav.menu}
-              className="hidden items-center gap-5 xl:flex"
-            >
+      <BannerProvider banner={settings}>
+        <div className="flex min-h-dvh flex-col">
+          <Suspense>
+            <NavProgress />
+          </Suspense>
+          <Announcement settings={settings} />
+          <PromoPopup settings={settings} />
+          <header className="sticky top-0 z-40 border-b border-line-soft bg-surface shadow-sm">
+            <div className="page-container flex h-16 items-center gap-4 lg:gap-6">
               <Link
                 href={`${prefix}/`}
-                className={`flex h-16 items-center border-b-2 px-1 text-sm font-semibold ${current === "/" ? "border-brand text-brand" : "border-transparent text-ink hover:text-brand"}`}
+                className="flex shrink-0 items-center gap-2 text-xl font-bold tracking-tight text-ink"
               >
-                {t.nav.home}
+                <BrandMark size={32} />
+                {siteName}
               </Link>
-              <CategoryMenu />
-              <BrandMenu />
-              <Link
-                href={`${prefix}/search/?sort=drop`}
-                className="flex h-16 items-center gap-1 border-b-2 border-transparent px-1 text-sm font-semibold text-danger hover:text-brand"
+              <div className="hidden w-[clamp(240px,30vw,500px)] shrink-0 md:block">
+                {showSearch && <SearchBox examples={settings.quickSearches} />}
+              </div>
+              <span className="flex-1" />
+              <nav
+                aria-label={t.nav.menu}
+                className="hidden items-center gap-5 xl:flex"
               >
-                <TrendingDown size={15} strokeWidth={2.5} aria-hidden="true" />
-                {t.nav.drops}
-              </Link>
-              <Link
-                href={`${prefix}/sellers/`}
-                className={`flex h-16 items-center border-b-2 px-1 text-sm font-semibold ${current.startsWith("/seller") ? "border-brand text-brand" : "border-transparent text-ink hover:text-brand"}`}
-              >
-                {t.nav.sellers}
-              </Link>
-            </nav>
-            <div className="flex items-center gap-2">
-              <InstallButton />
-              <Link
-                href={`${prefix}/saved/`}
-                aria-label={t.nav.saved}
-                className="hidden size-10 items-center justify-center rounded-lg border border-line text-ink hover:border-brand md:flex"
-              >
-                <Bookmark size={18} aria-hidden="true" />
-              </Link>
-              <LanguageButton />
-              <ThemeButton />
+                <Link
+                  href={`${prefix}/`}
+                  className={`flex h-16 items-center border-b-2 px-1 text-sm font-semibold ${current === "/" ? "border-brand text-brand" : "border-transparent text-ink hover:text-brand"}`}
+                >
+                  {t.nav.home}
+                </Link>
+                <CategoryMenu />
+                <BrandMenu />
+                <Link
+                  href={`${prefix}/search/?sort=drop`}
+                  className="flex h-16 items-center gap-1 border-b-2 border-transparent px-1 text-sm font-semibold text-danger hover:text-brand"
+                >
+                  <TrendingDown size={15} strokeWidth={2.5} aria-hidden="true" />
+                  {t.nav.drops}
+                </Link>
+                <Link
+                  href={`${prefix}/sellers/`}
+                  className={`flex h-16 items-center border-b-2 px-1 text-sm font-semibold ${current.startsWith("/seller") ? "border-brand text-brand" : "border-transparent text-ink hover:text-brand"}`}
+                >
+                  {t.nav.sellers}
+                </Link>
+              </nav>
+              <div className="flex items-center gap-2">
+                <InstallButton />
+                <Link
+                  href={`${prefix}/saved/`}
+                  aria-label={t.nav.saved}
+                  className="hidden size-10 items-center justify-center rounded-lg border border-line text-ink hover:border-brand md:flex"
+                >
+                  <Bookmark size={18} aria-hidden="true" />
+                </Link>
+                <LanguageButton />
+                <ThemeButton />
+              </div>
             </div>
-          </div>
-          {showSearch && (
-            <div className="px-4 pb-3 md:hidden">
-              <SearchBox examples={settings.quickSearches} />
+            {showSearch && (
+              <div className="px-4 pb-3 md:hidden">
+                <SearchBox examples={settings.quickSearches} />
+              </div>
+            )}
+            <div className="hidden md:block xl:hidden">
+              <Suspense fallback={<div className="h-11 bg-bar" />}>
+                <CategoryStrip />
+              </Suspense>
             </div>
-          )}
-          <div className="hidden md:block xl:hidden">
-            <Suspense fallback={<div className="h-11 bg-bar" />}>
-              <CategoryStrip />
-            </Suspense>
-          </div>
-        </header>
+          </header>
 
-        <main className="page-container flex-1 pt-5 pb-5 md:pb-0">
-          {children}
-        </main>
-        <SiteFooter settings={settings} />
+          <main className="page-container flex-1 pt-5 pb-5 md:pb-0">
+            {children}
+          </main>
+          <SiteFooter settings={settings} />
 
-        <nav
-          aria-label={t.nav.menu}
-          className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 border-t border-line bg-surface pb-[env(safe-area-inset-bottom)] md:hidden"
-        >
-          {NAV.map(({ href, key, icon: Icon }) => {
-            const active = isActive(href);
-            return (
-              <Link
-                key={href}
-                href={`${prefix}${href}`}
-                aria-current={active ? "page" : undefined}
-                className={`flex h-16 flex-col items-center justify-center gap-1 text-[11px] font-semibold ${active ? "text-brand" : "text-dim"}`}
-              >
-                <Icon size={21} aria-hidden="true" />
-                {t.nav[key]}
-              </Link>
-            );
-          })}
-        </nav>
-      </div>
+          <nav
+            aria-label={t.nav.menu}
+            className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 border-t border-line bg-surface pb-[env(safe-area-inset-bottom)] md:hidden"
+          >
+            {NAV.map(({ href, key, icon: Icon }) => {
+              const active = isActive(href);
+              return (
+                <Link
+                  key={href}
+                  href={`${prefix}${href}`}
+                  aria-current={active ? "page" : undefined}
+                  className={`flex h-16 flex-col items-center justify-center gap-1 text-[11px] font-semibold ${active ? "text-brand" : "text-dim"}`}
+                >
+                  <Icon size={21} aria-hidden="true" />
+                  {t.nav[key]}
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
+      </BannerProvider>
     </CategoriesProvider>
   );
 }

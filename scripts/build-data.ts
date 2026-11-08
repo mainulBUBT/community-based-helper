@@ -131,6 +131,9 @@ async function main() {
     announcementLink: safeUrl(raw.settings.announcementLink, { relative: true }),
     popupImage: safeUrl(raw.settings.popupImage, { relative: true }),
     popupLink: safeUrl(raw.settings.popupLink, { relative: true }),
+    bannerImage: safeUrl(raw.settings.bannerImage, { relative: true }),
+    bannerImageMobile: safeUrl(raw.settings.bannerImageMobile, { relative: true }),
+    bannerLink: safeUrl(raw.settings.bannerLink, { relative: true }),
   };
 
   await mkdir(OUT, { recursive: true });

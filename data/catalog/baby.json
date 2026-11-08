@@ -3322,6 +3322,709 @@
      "checkedAt": "2026-10-27"
     }
    ]
+  },
+  {
+   "brand": "CeraVe",
+   "name": "Baby Moisturizing Lotion",
+   "category": "baby-care",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "237ml",
+     "attributes": {
+      "capacity": "237ml"
+     },
+     "officialPrice": 2340
+    },
+    {
+     "label": "473ml",
+     "attributes": {
+      "capacity": "473ml"
+     },
+     "officialPrice": 3480
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.babycare.com.bd/image/cache/catalog/grooming-and-care/baby-lotion/cerave/237ml/237ml-01-1200x630.webp",
+    "https://api.aurevashopbd.com/storage/2487/aureva.png",
+    "https://www.babycare.com.bd/image/cache/catalog/aveeno/cerave-baby-moisturizing-lotion-473ml-02-1200x630.png"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "237ml",
+     "site": "BabyCare",
+     "url": "https://www.babycare.com.bd/cerave-baby-moisturizing-lotion-237ml",
+     "price": 2190,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/cerave-baby-moisturizing-lotion-237ml",
+     "price": 2300,
+     "oldPrice": 3700,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/cerave-baby-moisturizing-lotion-237ml/",
+     "price": 2300,
+     "oldPrice": 2700,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cerave-baby-moisturizing-lotion--237ml",
+     "price": 2340,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cerave-baby-moisturizing-lotion-237ml-gentle-baby-skin-care-with-hyaluronic-acid/",
+     "price": 2390,
+     "oldPrice": 2600,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/52732/cerave-baby-moisturizing-lotion-with-3-essential-ceramides-vitamin-e-237ml",
+     "price": 2400,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/cerave-baby-moisturizing-lotion-237ml/",
+     "price": 2980,
+     "oldPrice": 3380,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "BabyCare",
+     "url": "https://www.babycare.com.bd/cerave-baby-moisturizing-lotion-473ml",
+     "price": 3100,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cerave-baby-moisturising-lotion-473ml",
+     "price": 3402,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cerave-baby-moisturizing-lotion-473ml/",
+     "price": 3480,
+     "oldPrice": 3700,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cerave-baby-moisturizing-lotion-473-ml/",
+     "price": 3490,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "Aureva",
+     "url": "https://aurevashopbd.com/products/preview/cerave-baby-moisturizing-lotion-473ml",
+     "price": 3649,
+     "oldPrice": 4190,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "473ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/85295/cerave-baby-moisturizing-lotion-with-3-essential-ceramides-vitamin-e-473ml-made-in-usa",
+     "price": 3650,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "brand": "Cetaphil",
+   "name": "Baby Daily Lotion",
+   "category": "baby-care",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "399ml",
+     "attributes": {
+      "capacity": "399ml"
+     },
+     "officialPrice": 2450
+    },
+    {
+     "label": "400ml",
+     "attributes": {
+      "capacity": "400ml"
+     },
+     "officialPrice": 2280
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://alzakbd.com/wp-content/uploads/2021/07/1626953316165.png",
+    "https://cms.beautybooth.com.bd/uploads/all/cetaphil-baby-daily-lotion-for-sensitive-skin-399ml.webp",
+    "https://chardike-bucket.s3.amazonaws.com/media/product/main_image/Cetaphil-Baby-Daily-Lotion-With-Organic-Calendula-399ml.jpg"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "399ml",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/cetaphil-baby-daily-lotion-with-organic-calendula-399ml",
+     "price": 1750,
+     "oldPrice": 1820,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "399ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/47198/cetaphil-baby-daily-lotion-with-natural-calendula-for-baby-s-sensitive-skin-399ml",
+     "price": 2250,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "399ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-baby-daily-lotion-399ml/",
+     "price": 2290,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "399ml",
+     "site": "ALZAK",
+     "url": "https://alzakbd.com/product/cetaphil-baby-daily-lotion-with-organic-calendula-399ml/",
+     "price": 2450,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "399ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-baby-daily-lotion-babys-sensitive-skin-399ml/",
+     "price": 2480,
+     "oldPrice": 2800,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "399ml",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/cetaphil-baby-daily-lotion-for-sensitive-skin-399ml",
+     "price": 2699,
+     "oldPrice": 2950,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "399ml",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/cetaphil-baby-daily-lotion-for-sensitive-skin-399ml",
+     "price": 2700,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/50995/cetaphil-baby-daily-nourishing-lotion-400ml",
+     "price": 1850,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/cetaphil-baby-daily-lotion-400-ml/",
+     "price": 2200,
+     "oldPrice": 2500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-baby-daily-lotion-400ml/",
+     "price": 2280,
+     "oldPrice": 2400,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/cetaphil-baby-daily-lotion-for-babys-delicate-skin-400ml",
+     "price": 2450,
+     "oldPrice": 3500,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-baby-daily-lotion-quotidienne-for-sensitive-skin-400ml/",
+     "price": 2650,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "brand": "Johnson's",
+   "name": "Baby Lotion",
+   "category": "baby-care",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "100ml",
+     "attributes": {
+      "capacity": "100ml"
+     },
+     "officialPrice": 265
+    },
+    {
+     "label": "200ml",
+     "attributes": {
+      "capacity": "200ml"
+     },
+     "officialPrice": 480
+    },
+    {
+     "label": "300ml",
+     "attributes": {
+      "capacity": "300ml"
+     },
+     "officialPrice": 790
+    },
+    {
+     "label": "500ml",
+     "attributes": {
+      "capacity": "500ml"
+     },
+     "officialPrice": 1550
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.efamas.com.bd/wp-content/uploads/2025/07/Johnsons_Baby_Lotion_100_ml-Johnsons-8a114-461056.png",
+    "https://www.efamas.com.bd/wp-content/uploads/2025/07/Johnsons_Baby_Lotion_200_ml_For_Baby_Sof-Johnsons-86c0f-461068.png",
+    "https://www.babycare.com.bd/image/cache/catalog/Babycare/Baby/johnsons-baby-body-lotion-500ml_regular_633bff7405508-1200x630.jpg"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "100ml",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/johnsons-baby-lotion-pink-100ml",
+     "price": 265,
+     "oldPrice": 276,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "eFamas",
+     "url": "https://www.efamas.com.bd/shop/baby-skin-care/johnson/johnsons-baby-lotion-100-ml/",
+     "price": 270,
+     "oldPrice": 336,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "eFamas",
+     "url": "https://www.efamas.com.bd/shop/baby-skin-care/johnson/johnsons-baby-lotion-200-ml-for-baby-soft-skin-all-day-long/",
+     "price": 450,
+     "oldPrice": 540,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/johnson-johnson-baby-lotion-200ml/",
+     "price": 480,
+     "oldPrice": 550,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "200ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/49117/johnson-s-baby-lotion-for-baby-soft-skin-200ml",
+     "price": 600,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "300ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/87056/johnson-s-baby-lotion-pure-gentle-daily-care-300ml",
+     "price": 710,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "300ml",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/johnsons-baby-lotion-300ml/",
+     "price": 750,
+     "oldPrice": 780,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "300ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/johnsons-baby-lotion-300ml/",
+     "price": 790,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "300ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/johnsons-baby-lotion-pure-gentle-daily-care-300ml",
+     "price": 819,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "300ml",
+     "site": "Her Happy Skin",
+     "url": "https://herhappyskin.com/johnsons-baby-lotion-300ml",
+     "price": 1050,
+     "oldPrice": 1400,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "500ml",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/johnsons-baby-lotion-500ml/",
+     "price": 1150,
+     "oldPrice": 1350,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "500ml",
+     "site": "eFamas",
+     "url": "https://www.efamas.com.bd/shop/baby-skin-care/johnson/johnsons-baby-lotion-500ml/",
+     "price": 1450,
+     "oldPrice": 2000,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "500ml",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/johnsons-baby-lotion-500ml/",
+     "price": 1500,
+     "oldPrice": 1700,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "500ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/johnsons-baby-lotion-500ml/",
+     "price": 1550,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "500ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/johnsons-baby-lotion-500ml",
+     "price": 1575,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "500ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/49125/johnson-s-baby-lotion-500ml",
+     "price": 1600,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "500ml",
+     "site": "BabyCare",
+     "url": "https://www.babycare.com.bd/johnsons-baby-lotion-pump-500ml",
+     "price": 1700,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "500ml",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/johnsons-baby-lotion-500ml",
+     "price": 1700,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "brand": "Johnson's",
+   "name": "Baby Cream",
+   "category": "baby-care",
+   "popular": true,
+   "releaseYear": null,
+   "variants": [
+    {
+     "label": "50g",
+     "attributes": {
+      "capacity": "50g"
+     },
+     "officialPrice": 220
+    },
+    {
+     "label": "100g",
+     "attributes": {
+      "capacity": "100g"
+     },
+     "officialPrice": 750
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://www.efamas.com.bd/wp-content/uploads/2025/07/Johnsons_Baby_Cream_50gm-Johnson__Johnsons-6ba6e-249204.jpg",
+    "https://www.efamas.com.bd/wp-content/uploads/2025/07/Johnsons_Baby_Cream_Pink_100_gm_Made_in_-Johnsons-41807-461051.png",
+    "https://cms.beautybooth.com.bd/uploads/all/K86szpFjQwynKHrNU3on183cg6p6JHvdJyJU6CXy.jpg"
+   ],
+   "specsSource": null,
+   "offers": [
+    {
+     "variant": "50g",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/johnsons-baby-cream-baby-soft-skin-50g",
+     "price": 220,
+     "oldPrice": 450,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/49096/johnson-s-baby-cream-50g",
+     "price": 347,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100g",
+     "site": "The Mall BD",
+     "url": "https://themallbd.com/product/johnsons-baby-cream-100g",
+     "price": 699,
+     "oldPrice": 780,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100g",
+     "site": "Glowella",
+     "url": "https://glowellabd.com/product/johnsons-baby-cream-pot-100g/",
+     "price": 700,
+     "oldPrice": 900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100g",
+     "site": "Her Happy Skin",
+     "url": "https://herhappyskin.com/johnsons-baby-cream-100g",
+     "price": 750,
+     "oldPrice": 1100,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100g",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/johnsons-baby-cream-with-chamomile-extract-100gm",
+     "price": 800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/53407/johnson-s-baby-cream-intense-moisturization-for-24-hours-made-in-thailand-100g",
+     "price": 820,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100g",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/johnsons-baby-cream-100g/",
+     "price": 890,
+     "oldPrice": 990,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-08"
+    }
+   ]
   }
  ]
 }

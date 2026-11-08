@@ -24,8 +24,8 @@ export const byPopularity = (a: ProductSummary, b: ProductSummary) => b.product.
 export const byStock = (a: { inStock: boolean | null }, b: { inStock: boolean | null }) => Number(b.inStock !== false) - Number(a.inStock !== false);
 
 export function toCard(summary: ProductSummary): ProductSummary {
-  const { id, slug, name, brand, category, releaseYear, popularity, variants, images } = summary.product;
-  return { ...summary, product: { id, slug, name, brand, category, releaseYear, popularity, variants, images: images?.slice(0, 1) } };
+  const { id, slug, name, brand, category, releaseYear, popularity, variants, images, tags } = summary.product;
+  return { ...summary, product: { id, slug, name, brand, category, releaseYear, popularity, variants, images: images?.slice(0, 1), ...(tags?.length ? { tags } : {}) } };
 }
 
 export function lowestOffer(offers: OfferView[]) {

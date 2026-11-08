@@ -6,6 +6,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
 import { startNavProgress } from "@/components/layout/NavProgress";
+import { PageBanner } from "@/components/layout/PageBanner";
 import { ProductCard } from "@/components/product/ProductCard";
 import { BrandRow } from "@/components/search/BrandRow";
 import { FilterPanel, type Facets, type Filters } from "@/components/search/FilterPanel";
@@ -244,6 +245,8 @@ export function SearchView({ category, brand, initial, extra, heading, crumb }: 
               </select>
             </label>
           </div>
+
+          {category && <PageBanner page="category" />}
 
           {active.length > 0 && (
             <div className="flex flex-wrap items-center gap-2">

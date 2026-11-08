@@ -56,7 +56,8 @@ export function tokens(text: string): string[] {
     .replace(/\+/g, " plus ")
     .replace(/(\d+)\s*(?:gb)?\s*\/\s*(\d+)\s*(gb|tb)/g, "$1gb $2$3")
     .replace(/(\d+)\s*(gb|tb|mm)\b/g, " $1$2 ")
-    .replace(/(\d+)\s*(?:gms?|grams?)\b/g, "$1g");
+    .replace(/(\d+)\s*(?:gms?|grams?)\b/g, "$1g")
+    .replace(/\bmoisturis/g, "moisturiz");
   return prepared
     .split(/[^a-z0-9]+/)
     .filter(Boolean)
