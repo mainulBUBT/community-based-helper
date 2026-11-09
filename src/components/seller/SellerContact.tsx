@@ -1,44 +1,54 @@
 "use client";
 
-import { ExternalLink, MessageCircle, Phone } from "lucide-react";
+import { MapPin, MessageCircle, Phone, type LucideIcon } from "lucide-react";
+import type { ReactNode } from "react";
 import { useI18n } from "@/hooks/useI18n";
 import type { Seller } from "@/types/catalog";
-import { telLink, whatsappLink } from "@/utils/format";
+import { splitList, telLink, whatsappLink } from "@/utils/format";
 
-const button = "flex h-11 flex-1 items-center justify-center gap-2 rounded-lg text-[15px] font-semibold";
+const link = "font-semibold tracking-wide text-brand hover:underline";
 
-export function SellerContact({ seller, url }: { seller: Seller; url?: string | null }) {
-  const { t } = useI18n();
-  const link = url ?? seller.website;
-  if (link) {
-    return (
-      <a href={link} target="_blank" rel="noopener nofollow" className={`${button} border border-brand text-brand hover:bg-brand-soft`}>
-        {t.seller.visit(seller.name)}
-        <ExternalLink size={16} aria-hidden="true" />
-      </a>
-    );
-  }
+function Line({ icon: Icon, children }: { icon: LucideIcon; children: ReactNode }) {
   return (
-    <div className="flex flex-col gap-2">
-      {seller.phone && (
-        <p className="text-sm">
-          {t.seller.phone}: <span className="font-bold tracking-wide">{seller.phone}</span>
-        </p>
+    <li className="flex items-start gap-2">
+      <Icon size={15} className="mt-0.5 shrink-0 text-dim" aria-hidden="true" />
+      <span className="flex flex-wrap gap-x-3 gap-y-1">{children}</span>
+    </li>
+  );
+}
+
+export function SellerContact({ seller }: { seller: Seller }) {
+  const { t } = useI18n();
+  const phones = splitList(seller.phone);
+  const whatsapps = splitList(seller.whatsapp);
+  const areas = splitList(seller.area);
+  if (!phones.length && !whatsapps.length && !areas.length) return null;
+
+  return (
+    <ul className="flex flex-col gap-2 border-t border-line-soft pt-3 text-sm">
+      {phones.length > 0 && (
+        <Line icon={Phone}>
+          {phones.map((phone) => (
+            <a key={phone} href={telLink(phone)} aria-label={`${t.seller.call} ${phone}`} className={link}>
+              {phone}
+            </a>
+          ))}
+        </Line>
       )}
-      <div className="flex gap-2">
-        {seller.phone && (
-          <a href={telLink(seller.phone)} className={`${button} bg-brand text-brand-ink hover:bg-brand-hover`}>
-            <Phone size={17} aria-hidden="true" />
-            {t.seller.call}
-          </a>
-        )}
-        {seller.whatsapp && (
-          <a href={whatsappLink(seller.whatsapp)} target="_blank" rel="noopener" className={`${button} border border-line hover:border-brand`}>
-            <MessageCircle size={17} aria-hidden="true" />
-            WhatsApp
-          </a>
-        )}
-      </div>
-    </div>
+      {whatsapps.length > 0 && (
+        <Line icon={MessageCircle}>
+          {whatsapps.map((number) => (
+            <a key={number} href={whatsappLink(number)} target="_blank" rel="noopener" aria-label={`WhatsApp ${number}`} className={link}>
+              {number}
+            </a>
+          ))}
+        </Line>
+      )}
+      {areas.length > 0 && (
+        <Line icon={MapPin}>
+          <span className="text-ink">{areas.join(", ")}</span>
+        </Line>
+      )}
+    </ul>
   );
 }

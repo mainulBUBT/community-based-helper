@@ -67,6 +67,20 @@ export async function getHomeData(): Promise<HomeData> {
   return { summaries: summaries.map(toCard), sellers, settings, comparisons, drops };
 }
 
+export async function getSellersPage() {
+  const { sellers, products, offers } = await loadCatalog();
+  const productOf = new Map(products.flatMap((p) => p.variants.map((v) => [v.id, p.id] as const)));
+  const bySeller = new Map<string, Set<string>>();
+  for (const offer of offers) {
+    const product = productOf.get(offer.variantId);
+    if (!product) continue;
+    const set = bySeller.get(offer.sellerId) ?? new Set<string>();
+    bySeller.set(offer.sellerId, set.add(product));
+  }
+  const counts: Record<string, number> = Object.fromEntries([...bySeller].map(([id, set]) => [id, set.size]));
+  return { sellers, counts };
+}
+
 // ক্যাটাগরি পেজের স্ট্যাটিক HTML আর প্রথম রেন্ডারের জন্য: ভেতরের ভাগসহ, জনপ্রিয়তা অনুযায়ী
 export async function getCategoryPage(slug: string) {
   const [categories, summaries] = await Promise.all([listCategories(), listSummaries()]);

@@ -18,9 +18,11 @@ export function timeAgo(iso: string, now = Date.now()) {
   return `${toBnDigits(days)} দিন আগে`;
 }
 
-export const telLink = (phone: string) => `tel:${phone.replace(/[^\d+]/g, "")}`;
+export const splitList = (value: string | null) => (value ?? "").split(/[,;\n]+/).map((item) => item.trim()).filter(Boolean);
 
-export const whatsappLink = (phone: string) => `https://wa.me/${phone.replace(/\D/g, "").replace(/^0/, "880")}`;
+export const telLink = (phone: string) => `tel:${(splitList(phone)[0] ?? "").replace(/[^\d+]/g, "")}`;
+
+export const whatsappLink = (phone: string) => `https://wa.me/${(splitList(phone)[0] ?? "").replace(/\D/g, "").replace(/^0/, "880")}`;
 
 export const slugify = (text: string) =>
   text

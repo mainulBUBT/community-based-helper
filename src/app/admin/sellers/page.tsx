@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Field, Select } from "@/components/admin/Field";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
-import { ListFooter, SearchBox } from "@/components/admin/ListSearch";
+import { FilterSelect, ListFooter, SearchBox, StatusFilter } from "@/components/admin/ListSearch";
 import { Toggle } from "@/components/admin/Toggle";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
@@ -72,7 +72,7 @@ function SellerForm({ seller, onClose }: { seller: Seller; onClose: (saved: bool
         defaultValue={seller.phone ?? ""}
         hint={kind === "website" ? t.admin.sellers.phoneHintOptional : t.admin.sellers.phoneHintRequired}
       />
-      <Field label="WhatsApp" name="whatsapp" type="tel" defaultValue={seller.whatsapp ?? ""} />
+      <Field label="WhatsApp" name="whatsapp" type="tel" defaultValue={seller.whatsapp ?? ""} hint={t.admin.sellers.phoneHintOptional} />
       <Field label={t.admin.sellers.facebook} name="facebook" type="url" defaultValue={seller.facebook ?? ""} />
       <Field label={t.admin.sellers.area} name="area" defaultValue={seller.area ?? ""} placeholder={t.admin.sellers.areaPlaceholder} />
       <label className="flex items-center gap-3 self-end pb-2 text-sm font-semibold">
@@ -96,7 +96,14 @@ export default function SellersAdminPage() {
   const { busy, run } = useAdminAction();
   const { data, loading, reload } = useAsync(listAllSellers, []);
   const [editing, setEditing] = useState<Seller | null>(null);
-  const list = useListSearch(data ?? [], (s) => [s.name, s.area, s.phone, s.whatsapp, s.website, s.facebook, t.sellerKind[s.kind as keyof Messages["sellerKind"]]]);
+  const [kindFilter, setKindFilter] = useState("");
+  const [verifiedFilter, setVerifiedFilter] = useState("");
+  const [activeFilter, setActiveFilter] = useState("");
+  const list = useListSearch(
+    data ?? [],
+    (s) => [s.name, s.area, s.phone, s.whatsapp, s.website, s.facebook, t.sellerKind[s.kind as keyof Messages["sellerKind"]]],
+    (s) => (!kindFilter || s.kind === kindFilter) && (!verifiedFilter || String(s.verified) === verifiedFilter) && (!activeFilter || String(s.active) === activeFilter),
+  );
 
   async function update(seller: Seller, patch: Partial<Seller>, message: string) {
     if (await run(() => saveSeller({ ...seller, ...patch }), message)) reload();
@@ -131,8 +138,25 @@ export default function SellersAdminPage() {
         <ListSkeleton />
       ) : (
         <Panel>
-          <div className="flex border-b border-line-soft p-4">
+          <div className="flex flex-wrap gap-3 border-b border-line-soft p-4">
             <SearchBox value={list.query} onChange={list.search} placeholder={t.admin.sellers.search} />
+            <FilterSelect
+              label={t.admin.sellers.colKind}
+              value={kindFilter}
+              onChange={list.filterBy(setKindFilter)}
+              options={[{ value: "", label: t.admin.sellers.allKinds }, ...(Object.entries(t.sellerKind) as [SellerKind, string][]).map(([value, label]) => ({ value, label }))]}
+            />
+            <FilterSelect
+              label={t.admin.sellers.colVerified}
+              value={verifiedFilter}
+              onChange={list.filterBy(setVerifiedFilter)}
+              options={[
+                { value: "", label: t.admin.sellers.anyVerified },
+                { value: "true", label: t.admin.sellers.onlyVerified },
+                { value: "false", label: t.admin.sellers.onlyUnverified },
+              ]}
+            />
+            <StatusFilter label={t.admin.sellers.colActive} value={activeFilter} onChange={list.filterBy(setActiveFilter)} />
           </div>
           <div className="overflow-x-auto">
             <table className="card-table w-full text-left text-[15px] xl:min-w-[760px]">

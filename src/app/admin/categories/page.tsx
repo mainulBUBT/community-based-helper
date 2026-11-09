@@ -5,7 +5,7 @@ import { Field, Select } from "@/components/admin/Field";
 import { IconPicker } from "@/components/admin/IconPicker";
 import { LangTabs } from "@/components/admin/LangTabs";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
-import { ListFooter, SearchBox } from "@/components/admin/ListSearch";
+import { FilterSelect, ListFooter, SearchBox, StatusFilter } from "@/components/admin/ListSearch";
 import { Toggle } from "@/components/admin/Toggle";
 import { CategoryIcon } from "@/components/product/CategoryIcon";
 import { ErrorNotice } from "@/components/ui/ErrorNotice";
@@ -144,12 +144,22 @@ function CategoryForm({
   );
 }
 
+const TOP_LEVEL = "__top";
+
 export default function CategoriesPage() {
   const { t, lang, num } = useAdminI18n();
   const { busy, run } = useAdminAction();
   const { data, error, loading, reload } = useAsync(loadData, []);
   const [editing, setEditing] = useState<{ category: CategoryInfo; isNew: boolean } | null>(null);
-  const list = useListSearch(data ?? [], ({ category }) => [category.name, category.nameEn, category.slug, category.parent]);
+  const [levelFilter, setLevelFilter] = useState("");
+  const [activeFilter, setActiveFilter] = useState("");
+  const list = useListSearch(
+    data ?? [],
+    ({ category }) => [category.name, category.nameEn, category.slug, category.parent],
+    ({ category }) =>
+      (!levelFilter || (levelFilter === TOP_LEVEL ? !category.parent : category.parent === levelFilter || category.slug === levelFilter)) &&
+      (!activeFilter || String(category.active) === activeFilter),
+  );
 
   if (loading) return <ListSkeleton />;
   if (error || !data) return <ErrorNotice onRetry={reload} />;
@@ -180,8 +190,19 @@ export default function CategoriesPage() {
           </Panel>
         )}
         <Panel title={t.admin.categories.all(num(data.length))}>
-          <div className="flex border-b border-line-soft p-4">
+          <div className="flex flex-wrap gap-3 border-b border-line-soft p-4">
             <SearchBox value={list.query} onChange={list.search} placeholder={t.admin.categories.search} />
+            <FilterSelect
+              label={t.admin.categories.parent}
+              value={levelFilter}
+              onChange={list.filterBy(setLevelFilter)}
+              options={[
+                { value: "", label: t.admin.categories.anyLevel },
+                { value: TOP_LEVEL, label: t.admin.categories.topLevelOnly },
+                ...topLevel.filter((c) => data.some(({ category }) => category.parent === c.slug)).map((c) => ({ value: c.slug, label: t.admin.categories.within(lang === "en" ? c.nameEn : c.name) })),
+              ]}
+            />
+            <StatusFilter label={t.admin.categories.active} value={activeFilter} onChange={list.filterBy(setActiveFilter)} />
           </div>
           <div className="overflow-x-auto">
             <table className="card-table w-full text-left text-[15px] xl:min-w-[640px]">

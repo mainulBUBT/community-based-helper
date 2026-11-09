@@ -15,6 +15,7 @@ import { SectionNav } from "@/components/product/SectionNav";
 import { SellerLogo } from "@/components/seller/SellerLogo";
 import { VerifiedBadge } from "@/components/seller/VerifiedBadge";
 import { EmptyState } from "@/components/ui/EmptyState";
+import { Panel } from "@/components/ui/Panel";
 import { ShareButton } from "@/components/ui/ShareButton";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
@@ -53,18 +54,6 @@ function BuyButton({ offer, className = "" }: { offer: OfferView; className?: st
       <Phone size={16} aria-hidden="true" />
       {t.seller.call}
     </a>
-  );
-}
-
-function Panel({ title, subtitle, id, children }: { title: string; subtitle?: string; id?: string; children: ReactNode }) {
-  return (
-    <section id={id} className="flex scroll-mt-32 flex-col overflow-hidden rounded-lg border border-line bg-surface">
-      <div className="flex flex-col gap-0.5 border-b border-line-soft px-4 py-3.5 md:px-5 md:py-4">
-        <h2 className="text-base font-semibold">{title}</h2>
-        {subtitle && <span className="text-[13px] text-dim">{subtitle}</span>}
-      </div>
-      {children}
-    </section>
   );
 }
 

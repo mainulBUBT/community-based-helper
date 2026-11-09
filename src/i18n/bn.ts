@@ -257,8 +257,6 @@ export const bn = {
   seller: {
     verified: "যাচাই করা বিক্রেতা",
     unverified: "যাচাই হয়নি",
-    visit: (name: string) => `${name}-এ গিয়ে দেখুন`,
-    phone: "ফোন",
     call: "কল করুন",
     facebook: "ফেসবুকে দেখুন",
     unverifiedWarning: "এই বিক্রেতাকে আমরা এখনো যাচাই করিনি। টাকা দেওয়ার আগে পণ্য হাতে নিয়ে দেখে নিন।",
@@ -268,6 +266,8 @@ export const bn = {
     title: "বিক্রেতা",
     filterVerified: "যাচাই করা",
     search: "দোকানের নাম, এলাকা বা ফোন",
+    summary: (total: string, verified: string) => (total === verified ? `${total}টা দোকান, সবগুলোই যাচাই করা` : `${total}টা দোকান, এর মধ্যে ${verified}টা যাচাই করা`),
+    products: (n: string) => `${n}টা পণ্য`,
   },
   saved: {
     title: "সেভ করা",

@@ -259,8 +259,6 @@ export const en: Messages = {
   seller: {
     verified: "Verified seller",
     unverified: "Not verified",
-    visit: (name) => `View on ${name}`,
-    phone: "Phone",
     call: "Call",
     facebook: "View on Facebook",
     unverifiedWarning: "We haven't verified this seller yet. Check the product in person before you pay.",
@@ -270,6 +268,8 @@ export const en: Messages = {
     title: "Sellers",
     filterVerified: "Verified",
     search: "Shop name, area or phone",
+    summary: (total, verified) => `${plural(total, "shop")}, ${total === verified ? "all" : verified} verified`,
+    products: (n) => plural(n, "product"),
   },
   saved: {
     title: "Saved",

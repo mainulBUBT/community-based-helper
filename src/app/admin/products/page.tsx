@@ -6,20 +6,20 @@ import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { ConditionSelect } from "@/components/admin/ConditionSelect";
 import { Field, Select, TextArea } from "@/components/admin/Field";
-import { SearchBox } from "@/components/admin/ListSearch";
+import { FilterSelect, SearchBox } from "@/components/admin/ListSearch";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { Badge } from "@/components/ui/Badge";
 import { Pagination, paginate } from "@/components/ui/Pagination";
 import { ListSkeleton } from "@/components/ui/Skeleton";
 import { useAsync } from "@/hooks/useAsync";
-import { categoryName } from "@/utils/categories";
+import { belongsToCategory, categoryName } from "@/utils/categories";
 import { useAdminCategories } from "@/hooks/useAdminCategories";
 import { useAdminI18n } from "@/hooks/useAdminI18n";
 import { showToast } from "@/lib/toast";
 import { saveManualOffer } from "@/services/admin/offers";
 import { createProduct, DuplicateProductError } from "@/services/admin/products";
 import { listAllSellers } from "@/services/admin/sellers";
-import { listSummaries } from "@/services/catalog-live";
+import { listSummaries, loadCatalog } from "@/services/catalog-live";
 import type { Condition, ProductSummary, VariantAttributes } from "@/types/catalog";
 import { matchesQuery } from "@/utils/search";
 import { formatTaka } from "@/utils/format";
@@ -28,7 +28,9 @@ import { variantLabel } from "@/utils/variants";
 const PAGE_SIZE = 20;
 const OLD_AFTER_YEARS = 3;
 
-type Issue = "hidden" | "noPrice" | "noImage" | "noYear" | "noStock" | "old";
+const ISSUES = ["hidden", "noPrice", "noImage", "noYear", "noStock", "old"] as const;
+type Issue = (typeof ISSUES)[number];
+const PROBLEMS = "problems";
 
 // পণ্যের কী কী কাজ বাকি: দাম, ছবি, বছর, স্টক, বা অনেক পুরনো মডেল
 function issuesOf({ product, sellerCount, inStock }: ProductSummary): Issue[] {
@@ -45,8 +47,14 @@ function issuesOf({ product, sellerCount, inStock }: ProductSummary): Issue[] {
 }
 
 async function loadData() {
-  const [summaries, sellers] = await Promise.all([listSummaries(true), listAllSellers()]);
-  return { summaries, sellers };
+  const [summaries, sellers, catalog] = await Promise.all([listSummaries(true), listAllSellers(), loadCatalog()]);
+  const productOf = new Map(catalog.products.flatMap((p) => p.variants.map((v) => [v.id, p.id] as const)));
+  const sellersOf = new Map<string, Set<string>>();
+  for (const offer of catalog.offers) {
+    const product = productOf.get(offer.variantId);
+    if (product) sellersOf.set(product, (sellersOf.get(product) ?? new Set()).add(offer.sellerId));
+  }
+  return { summaries, sellers, sellersOf };
 }
 
 function parseVariants(text: string) {
@@ -189,16 +197,30 @@ export default function ProductsAdminPage() {
   const [adding, setAdding] = useState(false);
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("");
-  const [problemsOnly, setProblemsOnly] = useState(false);
+  const [brand, setBrand] = useState("");
+  const [seller, setSeller] = useState("");
+  const [status, setStatus] = useState("");
   const [page, setPage] = useState(1);
   if (loading || !data) return <ListSkeleton />;
 
+  const filterBy = (set: (value: string) => void) => (value: string) => {
+    set(value);
+    setPage(1);
+  };
+  const matchesStatus = (summary: ProductSummary) => {
+    const issues = issuesOf(summary);
+    return !status || (status === PROBLEMS ? issues.some((issue) => issue !== "hidden") : issues.includes(status as Issue));
+  };
   const filtered = data.summaries.filter(
     (summary) =>
-      (!category || summary.product.category === category) &&
-      (!query.trim() || matchesQuery(summary.product, query.trim(), categories)) &&
-      (!problemsOnly || issuesOf(summary).some((issue) => issue !== "hidden")),
+      (!category || belongsToCategory(categories, category, summary.product)) &&
+      (!brand || summary.product.brand === brand) &&
+      (!seller || data.sellersOf.get(summary.product.id)?.has(seller)) &&
+      matchesStatus(summary) &&
+      (!query.trim() || matchesQuery(summary.product, query.trim(), categories)),
   );
+  const brands = [...new Set(data.summaries.map((s) => s.product.brand))].sort((a, b) => a.localeCompare(b));
+  const sellersWithPrices = data.sellers.filter((s) => [...data.sellersOf.values()].some((set) => set.has(s.id))).sort((a, b) => a.name.localeCompare(b.name));
   const paged = paginate(filtered, page, PAGE_SIZE);
   const categoryLabel = (slug: string) => {
     const c = categories.find((x) => x.slug === slug);
@@ -234,34 +256,29 @@ export default function ProductsAdminPage() {
               }}
               placeholder={t.admin.products.searchPlaceholder}
             />
-            <select
+            <FilterSelect
+              label={t.admin.products.colCategory}
               value={category}
-              onChange={(e) => {
-                setCategory(e.target.value);
-                setPage(1);
-              }}
-              aria-label={t.admin.products.colCategory}
-              className="h-10 rounded-lg border border-line bg-surface px-2 text-sm"
-            >
-              <option value="">{t.admin.products.allCategories}</option>
-              {categories.map((c) => (
-                <option key={c.slug} value={c.slug}>
-                  {categoryName(c, lang)}
-                </option>
-              ))}
-            </select>
-            <select
-              value={problemsOnly ? "problems" : ""}
-              onChange={(e) => {
-                setProblemsOnly(e.target.value === "problems");
-                setPage(1);
-              }}
-              aria-label={t.admin.products.problemsOnly}
-              className="h-10 rounded-lg border border-line bg-surface px-2 text-sm"
-            >
-              <option value="">{t.admin.products.allProducts}</option>
-              <option value="problems">{t.admin.products.problemsOnly}</option>
-            </select>
+              onChange={filterBy(setCategory)}
+              options={[{ value: "", label: t.admin.products.allCategories }, ...categories.map((c) => ({ value: c.slug, label: categoryName(c, lang) }))]}
+            />
+            <FilterSelect label={t.admin.products.allBrands} value={brand} onChange={filterBy(setBrand)} options={[{ value: "", label: t.admin.products.allBrands }, ...brands.map((b) => ({ value: b, label: b }))]} />
+            <FilterSelect
+              label={t.admin.products.colStores}
+              value={seller}
+              onChange={filterBy(setSeller)}
+              options={[{ value: "", label: t.admin.products.allSellers }, ...sellersWithPrices.map((s) => ({ value: s.id, label: s.name }))]}
+            />
+            <FilterSelect
+              label={t.admin.products.problemsOnly}
+              value={status}
+              onChange={filterBy(setStatus)}
+              options={[
+                { value: "", label: t.admin.products.allProducts },
+                { value: PROBLEMS, label: t.admin.products.problemsOnly },
+                ...ISSUES.map((issue) => ({ value: issue, label: t.admin.products.flags[issue] })),
+              ]}
+            />
           </div>
           {filtered.length === 0 && <p className="px-5 py-4 text-dim">{t.admin.products.noMatch}</p>}
           <div className="overflow-x-auto">
