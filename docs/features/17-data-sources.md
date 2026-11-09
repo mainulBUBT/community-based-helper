@@ -44,6 +44,9 @@
 | Salextra | ফ্ল্যাট sitemap (`/product/`) | JSON-LD | ✅ ১ নভেম্বর যোগ |
 | UCC | পণ্য sitemap (`sitemaps/product-sitemap.xml`) | JSON-LD | ✅ ১ নভেম্বর যোগ (স্পিকার/SSD ব্যাচে) |
 | Skyland | ফ্ল্যাট sitemap (`sitemap.xml`) | JSON-LD | ✅ ১ নভেম্বর যোগ (স্পিকার/SSD ব্যাচে) |
+| PC House | ফ্ল্যাট sitemap | `pchouseVariants`: og দাম কাটা দাম, ক্যাশ দাম `final_price` এ (৯ নভেম্বরের আগে কাটা দাম পড়া হতো) | ✅ |
+| iStockBD, CustomMacBD | Shopify sitemap | `shopifyProduct` | 🟡 ৯ নভেম্বর: `DordamBot` পরিচয়ে প্রথম অনুরোধেই 429 (সাধারণ অনুরোধে 200), তাই এদের দাম হালনাগাদ আটকে আছে; allowlist চাওয়া বাকি |
+| Computer Village | product sitemap | OpenCart (product page, `price-normal` span + `"price":N` ইকোমার্স ডেটা) | ✅ ৯ নভেম্বর: GitHub Actions-এ 503 (cloudflare ভ্যারিয়েন্স), ঘরের IP থেকে 200 — local runner দিয়ে পড়া হয়; ম্যাক-প্রো পাতায় ৩টা অফার যোগ |
 
 | Telegram এর দোকান | দোকান নিজে পাঠায় | ⬜ [telegram](15-telegram-bot.md) |
 | ক্রেতা | "দাম জানান" | 🟡 [price reports](05-price-reports.md) |
@@ -467,7 +470,7 @@ Samsung-এর S/Z সিরিজ, Pixel আর বড় ব্র্যান
 | ফাইল | পণ্য | দাম | কী আছে |
 |---|---|---|---|
 | `mac-air-older.json` | ৭ | ১০৩ | MacBook Air 13" M1, 13"/15" M2, M3, M4 |
-| `mac-pro-older.json` | ১০ | ১০৭ | MacBook Pro 14" M4/M4 Pro/M4 Max, 16" M4 Pro/M4 Max, Mac mini M4/M4 Pro, Mac Studio M4 Max/M3 Ultra, iMac 24" M3 |
+| `mac-pro-older.json` | ১১ | ১১০ | MacBook Pro 14" M4/M4 Pro/M4 Max, 16" M4 Pro/M4 Max, Mac mini M4/M4 Pro, Mac Studio M4 Max/M3 Ultra, iMac 24" M3 — ৯ নভেম্বর Computer Village-এর ৩টা অফার যোগ (M4 16/512 ৳২০৪,৫০০ SO, M4 Pro 24/512 ৳৩২০,০০০, M4 Max 36/1TB ৳৪১৫,০০০) |
 | `iphone-older.json` | ৯ | ১৫৬ | iPhone 16 Plus/Pro/Pro Max/16e, 15/15 Plus/15 Pro/15 Pro Max, 14 |
 | `samsung-more.json` | ২০ | ২৪২ | Galaxy S25/Plus/Ultra/FE/Edge, S24/S24 Ultra/S24 FE, Z Fold7/Flip7/Flip7 FE, A56/A36/A26 5G, A16 4G/5G, A06, M36/M17/M47 5G |
 | `mobile-more.json` | ৩৭ | ৪৭১ | Pixel 9/9 Pro/9 Pro XL/9a, 10/10 Pro/10 Pro XL/10 Pro Fold/10a; Redmi Note 14 আর 15 সিরিজ, Redmi 15/15C, Xiaomi 15/15T/15T Pro, POCO X7 Pro/F7/F7 Pro/M7 5G/M7 Pro 5G; OnePlus 13/13R/13s/Nord 5; Nothing Phone 3/3a/3a Pro, CMF Phone 2 Pro |
@@ -607,3 +610,11 @@ Ragen, DOB Skateshop, SneakersBD Official, Sneaker Zone, Splayd, Three's-এর 
 | DOB Skateshop | `/product/`, `sitemap.xml` | `wooVariants` |
 | SneakersBD Official | `/product/show/`, `sitemap.xml` | og `product:price` আর `product:availability` |
 | Ragen, Sneaker Zone, Splayd | `/products/`, `sitemap.xml` | `shopifyProduct`; ঘণ্টার সীমা কড়া, `pace` এ মিনিটে একটা অনুরোধ (`store:scan` একটানা পড়ে বলে 429 দেখায়) |
+
+### সাইটে খোঁজা কিন্তু না-থাকা পণ্য (৯ নভেম্বর ২০২৬)
+
+গত ৩০ দিনের সাইট-সার্চ (`page_views`-এর `q=`) থেকে যা খোঁজা হয়েছে কিন্তু ক্যাটালগে ছিল না। ফাইল `data/catalog/search-demand.json`: ১২টা পণ্য, ২৩টা ভার্সন, ১১২টা দাম। প্রতিটা ভার্সন অন্তত ২ দোকানে, দামের ফারাক ১.৮ গুণের কম, `worker:check` ০ মেলেনি।
+
+- MacBook Pro 14" M1 Pro, 16" M1 Pro, 14" M2 Pro; Mac mini M2, Mac mini M2 Pro; Redmi 13, Redmi Turbo 4 Pro, Pixel 8 Pro, Xiaomi Pad 8, Huawei Watch Fit 5, HP 255R G10, Anker Soundcore Motion+।
+- DB-তে শুধু এই ১২টার সারি চালানো হয়েছে (পুরো `seed.sql` নয়)।
+- বাদ: iPhone 13 Pro/Pro Max (একই পণ্যে ৳৬৬k আর ৳১.৪ লাখ, পাতায় নতুন না ব্যবহৃত লেখা নেই), 16" M1 Pro 512GB আর 16" M2 Pro (১ দোকান), Kry-র iPhone 13 Pro (Pre-Owned)। DJI, DeepCool, Golden Rose, EliteBook, OmniBook খোঁজ অস্পষ্ট (শত শত মডেল), তাই নেওয়া হয়নি।

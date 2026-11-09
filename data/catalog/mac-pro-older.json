@@ -50,6 +50,11 @@
    "name": "Diamu",
    "website": "https://diamu.com.bd",
    "note": "WooCommerce, unofficial; per-storage variation prices."
+  },
+  {
+   "name": "Computer Village",
+   "website": "https://www.computervillage.com.bd",
+   "note": "OpenCart; worker কনফিগে official; per-config prices on the model page. GitHub Actions-এ 503 দেয় (cloudflare ভ্যারিয়েন্স); ঘরের IP থেকে 200 — local runner দিয়ে পড়া হয়।"
   }
  ],
  "products": [
@@ -281,6 +286,17 @@
      "checkedAt": "2026-10-28"
     },
     {
+     "variant": "M4 16GB / 512GB",
+     "site": "iStockBD",
+     "url": "https://istockbd.com/products/macbook-pro-14-inch-m4-price-in-bd",
+     "price": 189990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-10-28"
+    },
+    {
      "variant": "M4 24GB / 1TB",
      "site": "iStockBD",
      "url": "https://istockbd.com/products/macbook-pro-14-inch-m4-price-in-bd",
@@ -290,6 +306,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "Computer Village",
+     "url": "https://www.computervillage.com.bd/apple-macbook-pro-14-m4-16gb-ram-512gb-ssd",
+     "price": 204500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
     }
    ]
   },
@@ -575,6 +602,17 @@
      "checkedAt": "2026-10-28"
     },
     {
+     "variant": "M4 Max 14C CPU/32C GPU 36GB / 1TB",
+     "site": "Computer Village",
+     "url": "https://www.computervillage.com.bd/apple-macbook-pro-14-m4-max-36gb-ram-1tb-ssd",
+     "price": 415000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
      "variant": "M4 Max 16C CPU/40C GPU 48GB / 1TB",
      "site": "CustomMacBD",
      "url": "https://custommacbd.com/products/macbook-pro-m4-max-14-inch-2024-price-in-bd",
@@ -703,6 +741,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 Pro 14C CPU/20C GPU 24GB / 512GB",
+     "site": "Computer Village",
+     "url": "https://www.computervillage.com.bd/apple-macbook-pro-16-m4-pro-24gb-ram-512gb-ssd",
+     "price": 320000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
     },
     {
      "variant": "M4 Pro 14C CPU/20C GPU 48GB / 512GB",

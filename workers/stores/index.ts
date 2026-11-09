@@ -4,7 +4,7 @@ import { getJson, getText } from "../lib/http";
 import { pace } from "../lib/limiter";
 import { toTaka } from "../lib/price";
 import { sitemapUrls } from "../lib/sitemap";
-import { appleGadgetsVariants, aurevaVariants, bartonProduct, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechVariants, kryVariants, hkLifestyleVariants, maczenVariants, othobaVariants, perfectoVariants, rioVariants, shajgojVariants, shopifyProduct, startechVariants, sumashVariants, themallVariants, wooVariants } from "./parsers";
+import { appleGadgetsVariants, aurevaVariants, bartonProduct, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechProduct, hnstechVariants, kryVariants, hkLifestyleVariants, maczenVariants, othobaVariants, pchouseVariants, perfectoVariants, rioVariants, shajgojVariants, shopifyProduct, startechVariants, sumashVariants, themallVariants, wooVariants } from "./parsers";
 import { isReplica } from "../../src/utils/categories";
 import type { Condition, Listing, Store } from "./types";
 export type { Condition, Listing, Store };
@@ -349,6 +349,7 @@ const hnstech: Store = {
   condition: "unofficial",
   sample: `${HNS}/product-details/macbook-neo-13singaporeusa/87`,
   promoUrl: null,
+  product: hnstechProduct,
   variants: hnstechVariants,
   async discover() {
     const all: Listing[] = [];
@@ -1069,6 +1070,7 @@ export const stores: Store[] = [
     sitemap: "https://www.pchouse.com.bd/sitemap.xml",
     path: "/",
     condition: "official",
+    variants: pchouseVariants,
   }),
 ];
 

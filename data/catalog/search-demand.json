@@ -1,0 +1,1783 @@
+{
+ "category": "search-demand",
+ "sites": [
+  {
+   "name": "Apple Gadgets",
+   "website": "https://www.applegadgetsbd.com"
+  },
+  {
+   "name": "Arafa Telecom",
+   "website": "https://arafatelecom.com"
+  },
+  {
+   "name": "Dazzle",
+   "website": "https://dazzle.com.bd"
+  },
+  {
+   "name": "Diamu",
+   "website": "https://diamu.com.bd"
+  },
+  {
+   "name": "Gadget & Gear",
+   "website": "https://gadgetandgear.com"
+  },
+  {
+   "name": "Gadget Breeze",
+   "website": "https://gadgetbreeze.com.bd"
+  },
+  {
+   "name": "Global Brand",
+   "website": "https://www.globalbrand.com.bd"
+  },
+  {
+   "name": "HNS Tech",
+   "website": "https://www.hnstechbd.com"
+  },
+  {
+   "name": "Kry International",
+   "website": "https://kryinternational.com"
+  },
+  {
+   "name": "MC Solution",
+   "website": "https://mcsolution.com.bd"
+  },
+  {
+   "name": "Mobile Buzz BD",
+   "website": "https://mobilebuzzbd.com"
+  },
+  {
+   "name": "PC House",
+   "website": "https://www.pchouse.com.bd"
+  },
+  {
+   "name": "Rio International",
+   "website": "https://riointernational.com.bd"
+  },
+  {
+   "name": "Star Tech",
+   "website": "https://www.startech.com.bd"
+  },
+  {
+   "name": "Sumash Tech",
+   "website": "https://www.sumashtech.com"
+  },
+  {
+   "name": "Tech Marvels",
+   "website": "https://techmarvels.com.bd"
+  },
+  {
+   "name": "Vertech",
+   "website": "https://www.vertech.com.bd"
+  }
+ ],
+ "products": [
+  {
+   "brand": "Apple",
+   "name": "MacBook Pro 14\" M1 Pro",
+   "category": "laptop",
+   "releaseYear": 2021,
+   "variants": [
+    {
+     "label": "M1 Pro 8C CPU/14C GPU 16GB / 512GB",
+     "attributes": {
+      "chip": "M1 Pro",
+      "ram": "16GB",
+      "storage": "512GB",
+      "cpu": "8-core",
+      "gpu": "14-core"
+     },
+     "officialPrice": 249999
+    },
+    {
+     "label": "M1 Pro 10C CPU/16C GPU 16GB / 1TB",
+     "attributes": {
+      "chip": "M1 Pro",
+      "ram": "16GB",
+      "storage": "1TB",
+      "cpu": "10-core",
+      "gpu": "16-core"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Space Gray",
+    "Silver"
+   ],
+   "images": [
+    "https://assets.gadgetandgear.com/upload/product/20211110_1636549088_550946.png",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/53/MacBook_M1_Pro_14_8_Core_Silverr.webp"
+   ],
+   "specsSource": "https://gadgetandgear.com/product/macbook-pro-14inch-m1-pro-2021",
+   "offers": [
+    {
+     "variant": "M1 Pro 8C CPU/14C GPU 16GB / 512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/apple-macbook-pro-m1-pro-14-inch-8-core-cpu-and-14-core-gpu",
+     "price": 200490,
+     "oldPrice": 223990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M1 Pro 8C CPU/14C GPU 16GB / 512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/apple-macbook-pro-2021-m1-pro-14-inch-512gb-8%e2%80%91core-cpu-14%e2%80%91core-gpu/",
+     "price": 203000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M1 Pro 8C CPU/14C GPU 16GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/macbook-pro-14inch-m1-pro-2021",
+     "price": 249999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M1 Pro 8C CPU/14C GPU 16GB / 512GB",
+     "site": "Global Brand",
+     "url": "https://www.globalbrand.com.bd/apple-macbook-pro-14-inch-space-gray-m1-pro-chip-16gb-ram-512gb-ssd",
+     "price": 250000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M1 Pro 8C CPU/14C GPU 16GB / 512GB",
+     "site": "PC House",
+     "url": "https://www.pchouse.com.bd/apple-macbook-pro-14.2-inch-liquid-retina-xdr-display-m1-pro-chip-16gb-ram-512gb-ssd-(silver-2021)",
+     "price": 222000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M1 Pro 8C CPU/14C GPU 16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/macbook-m1-pro-14-8core",
+     "price": 200999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M1 Pro 10C CPU/16C GPU 16GB / 1TB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/apple-macbook-pro-m1-pro-2021-14-inch-1tb-10%e2%80%91core-cpu-16%e2%80%91core-gpu/",
+     "price": 238360,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M1 Pro 10C CPU/16C GPU 16GB / 1TB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/macbook-m1-pro-14-10core",
+     "price": 235999,
+     "oldPrice": 289999,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "MacBook Pro 16\" M1 Pro",
+   "category": "laptop",
+   "releaseYear": 2021,
+   "variants": [
+    {
+     "label": "M1 Pro 10C CPU/16C GPU 16GB / 1TB",
+     "attributes": {
+      "chip": "M1 Pro",
+      "ram": "16GB",
+      "storage": "1TB",
+      "cpu": "10-core",
+      "gpu": "16-core"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Space Gray",
+    "Silver"
+   ],
+   "images": [
+    "https://www.pchouse.com.bd/image/cache/catalog/laptop/Apple/16-Inch/macbook-pro-16-inch-01-500x500.jpg"
+   ],
+   "specsSource": "https://arafatelecom.com/product/apple-macbook-pro-16-inch-m1-pro-chip-16gb-ram-1tb-ssd-mk193-space-gray-2021/",
+   "offers": [
+    {
+     "variant": "M1 Pro 10C CPU/16C GPU 16GB / 1TB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/apple-macbook-pro-16-inch-m1-pro-chip-16gb-ram-1tb-ssd-mk193-space-gray-2021/",
+     "price": 219999,
+     "oldPrice": 221999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M1 Pro 10C CPU/16C GPU 16GB / 1TB",
+     "site": "PC House",
+     "url": "https://www.pchouse.com.bd/apple-macbook-pro-16-inch-m1-pro-chip,-16gb-ram,-1tb-ssd-space-gray-2021",
+     "price": 279000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "MacBook Pro 14\" M2 Pro",
+   "category": "laptop",
+   "releaseYear": 2023,
+   "variants": [
+    {
+     "label": "M2 Pro 10C CPU/16C GPU 16GB / 512GB",
+     "attributes": {
+      "chip": "M2 Pro",
+      "ram": "16GB",
+      "storage": "512GB",
+      "cpu": "10-core",
+      "gpu": "16-core"
+     },
+     "officialPrice": 239999
+    }
+   ],
+   "colors": [
+    "Space Gray",
+    "Silver"
+   ],
+   "images": [
+    "https://diamu.com.bd/wp-content/uploads/2023/07/Apple-MacBook-Pro-M2-Pro-2023-14-inch-10-Core-CPU-16-Core-GPU.jpg",
+    "https://assets.gadgetandgear.com/upload/product/20230301_1677672030_368827.jpeg"
+   ],
+   "specsSource": "https://gadgetandgear.com/product/macbook-pro-14-inch-m2-pro-chip",
+   "offers": [
+    {
+     "variant": "M2 Pro 10C CPU/16C GPU 16GB / 512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/apple-macbook-pro-14-inch-m2-pro-16gb-ram-512gb-ssd-silver-mphh3ll-a/",
+     "price": 222999,
+     "oldPrice": 224999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 Pro 10C CPU/16C GPU 16GB / 512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/apple-macbook-pro-m2-pro-2023-14-inch-10-core-cpu-16-core-gpu/",
+     "price": 241390,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 Pro 10C CPU/16C GPU 16GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/macbook-pro-14-inch-m2-pro-chip",
+     "price": 239999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "Mac mini M2",
+   "category": "desktop",
+   "releaseYear": 2023,
+   "variants": [
+    {
+     "label": "M2 8GB / 256GB",
+     "attributes": {
+      "chip": "M2",
+      "ram": "8GB",
+      "storage": "256GB",
+      "cpu": "8-core",
+      "gpu": "10-core"
+     },
+     "officialPrice": 84999
+    },
+    {
+     "label": "M2 8GB / 512GB",
+     "attributes": {
+      "chip": "M2",
+      "ram": "8GB",
+      "storage": "512GB",
+      "cpu": "8-core",
+      "gpu": "10-core"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "M2 16GB / 512GB",
+     "attributes": {
+      "chip": "M2",
+      "ram": "16GB",
+      "storage": "512GB",
+      "cpu": "8-core",
+      "gpu": "10-core"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Silver"
+   ],
+   "images": [
+    "https://mobilebuzzbd.com/wp-content/uploads/2023/07/Mac-Mini-M2.jpg",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Mac-mini-M2---8256GB-a-9921.jpg"
+   ],
+   "specsSource": "https://gadgetandgear.com/product/mac-mini-m2-chip",
+   "offers": [
+    {
+     "variant": "M2 8GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/apple-mac-mini-m2-8-core-cpu-10-core-gpu-8256gb",
+     "price": 66999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 8GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/apple-mac-mini-m2-8gb-256gb/",
+     "price": 63500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 8GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/mac-mini-m2-chip",
+     "price": 84999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 8GB / 256GB",
+     "site": "MC Solution",
+     "url": "https://mcsolution.com.bd/apple-mac-mini-m2-mmfj3ll-a/",
+     "price": 75900,
+     "oldPrice": 85500,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 8GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/apple-mac-mini-m2/",
+     "price": 64999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 8GB / 256GB",
+     "site": "PC House",
+     "url": "https://www.pchouse.com.bd/apple-mac-mini-m2-chip-with-8-core-processor-10-core-gpu-8gb-memory-256gb-storage",
+     "price": 84000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 8GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/mac-mini-m2-2023",
+     "price": 67999,
+     "oldPrice": 80000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 8GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/apple-mac-mini-m2-8-core-cpu-and-10-core-gpu-8512gb",
+     "price": 72499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 8GB / 512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/apple-mac-mini-m2-8-core-cpu-and-10-core-gpu-8-512gb/",
+     "price": 95500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 8GB / 512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/apple-mac-mini-m2-8gb-512gb/",
+     "price": 68500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 8GB / 512GB",
+     "site": "MC Solution",
+     "url": "https://mcsolution.com.bd/mac-mini-m2-mmfk3ll-a/",
+     "price": 109900,
+     "oldPrice": 122000,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 8GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/apple-mac-mini-m2/",
+     "price": 80999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 8GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/mac-mini-m2-2023",
+     "price": 89999,
+     "oldPrice": 100000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 16GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/apple-mac-mini-m2/",
+     "price": 114999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 16GB / 512GB",
+     "site": "PC House",
+     "url": "https://www.pchouse.com.bd/apple-mac-mini-m2-chip-with-8-core-processor-10-core-gpu-16gb-memory-512gb-storage",
+     "price": 145000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "brand": "Apple",
+   "name": "Mac mini M2 Pro",
+   "category": "desktop",
+   "releaseYear": 2023,
+   "variants": [
+    {
+     "label": "M2 Pro 10C CPU/16C GPU 16GB / 512GB",
+     "attributes": {
+      "chip": "M2 Pro",
+      "ram": "16GB",
+      "storage": "512GB",
+      "cpu": "10-core",
+      "gpu": "16-core"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Silver"
+   ],
+   "images": [
+    "https://mobilebuzzbd.com/wp-content/uploads/2025/01/Apple-Mac-mini-M2-Pro-10-Core-CPU-16-Core-GPU.jpg",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1471/Mac_Mini_M2_Pro.webp"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/mac-mini-m2-pro-2023",
+   "offers": [
+    {
+     "variant": "M2 Pro 10C CPU/16C GPU 16GB / 512GB",
+     "site": "MC Solution",
+     "url": "https://mcsolution.com.bd/mac-mini-m2-pro-mnh73zp-a/",
+     "price": 177000,
+     "oldPrice": 199900,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 Pro 10C CPU/16C GPU 16GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/apple-mac-mini-m2-pro-10-core-cpu-16-core-gpu/",
+     "price": 170999,
+     "oldPrice": 196650,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "M2 Pro 10C CPU/16C GPU 16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/mac-mini-m2-pro-2023",
+     "price": 166999,
+     "oldPrice": 200000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "brand": "Xiaomi",
+   "name": "Redmi 13",
+   "category": "mobile",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "6GB / 128GB",
+     "attributes": {
+      "ram": "6GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 16999
+    },
+    {
+     "label": "8GB / 128GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB"
+     },
+     "officialPrice": 17999
+    },
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Midnight Black",
+    "Ocean Blue",
+    "Pearl Pink",
+    "Sandy Gold"
+   ],
+   "images": [
+    "https://app-area.riointernational.com.bd/productImages/6sW4z1734256835.png"
+   ],
+   "specsSource": "https://gadgetandgear.com/product/redmi-13",
+   "offers": [
+    {
+     "variant": "6GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/redmi-13",
+     "price": 13577,
+     "oldPrice": 19000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/redmi-13",
+     "price": 15477,
+     "oldPrice": 21477,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-redmi-13-official",
+     "price": 16990,
+     "oldPrice": 16999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-redmi-13-official",
+     "price": 17990,
+     "oldPrice": 17999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/xiaomi-redmi-13-official/",
+     "price": 16999,
+     "oldPrice": 17999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/xiaomi-redmi-13-official/",
+     "price": 18999,
+     "oldPrice": 19999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/redmi-13",
+     "price": 17999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/redmi-13/",
+     "price": 14500,
+     "oldPrice": 17250,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/redmi-13/",
+     "price": 17500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/redmi-13/",
+     "price": 15500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Rio International",
+     "url": "https://riointernational.com.bd/product/redmi-13-official",
+     "price": 16499,
+     "oldPrice": 18999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Rio International",
+     "url": "https://riointernational.com.bd/product/redmi-13-official",
+     "price": 18499,
+     "oldPrice": 19999,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/redmi-13-official",
+     "price": 16999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/redmi-13-official",
+     "price": 17999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/redmi-13-official/",
+     "price": 16300,
+     "oldPrice": 23575,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/redmi-13-official/",
+     "price": 23500,
+     "oldPrice": 27025,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "brand": "Xiaomi",
+   "name": "Redmi Turbo 4 Pro",
+   "category": "mobile",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "16GB / 256GB",
+     "attributes": {
+      "ram": "16GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "16GB / 512GB",
+     "attributes": {
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Black",
+    "White",
+    "Green"
+   ],
+   "images": [
+    "https://images.kryinternational.com/uploads/redmi-turbo-4-pro-black.jpg",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Redmi-Turbo-4-Pro-5G---CN-4530.png"
+   ],
+   "specsSource": "https://kryinternational.com/products/redmi-turbo-4-pro",
+   "offers": [
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/redmi-turbo-4-pro",
+     "price": 48999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/redmi-turbo-4-pro",
+     "price": 51999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/xiaomi-redmi-turbo-4-pro-unofficial/",
+     "price": 46500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "16GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/xiaomi-redmi-turbo-4-pro-unofficial/",
+     "price": 47000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/xiaomi-redmi-turbo-4-pro-unofficial/",
+     "price": 50500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/redmi-turbo-4-pro-price-in-bangladesh",
+     "price": 52990,
+     "oldPrice": 56990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/redmi-turbo-4-pro-price-in-bangladesh",
+     "price": 55990,
+     "oldPrice": 58990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "16GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/redmi-turbo-4-pro-price-in-bangladesh",
+     "price": 59990,
+     "oldPrice": 67990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/redmi-turbo-4-pro/",
+     "price": 48500,
+     "oldPrice": 50000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/redmi-turbo-4-pro/",
+     "price": 50500,
+     "oldPrice": 51500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/redmi-turbo-4-pro",
+     "price": 51499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/xiaomi-redmi-turbo-4-pro/",
+     "price": 50500,
+     "oldPrice": 53999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/xiaomi-redmi-turbo-4-pro/",
+     "price": 51500,
+     "oldPrice": 55999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/xiaomi-redmi-turbo-4-pro/",
+     "price": 58999,
+     "oldPrice": 69999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Rio International",
+     "url": "https://riointernational.com.bd/product/redmi-turbo-4-pro-5g",
+     "price": 42999,
+     "oldPrice": 44999,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "CHN",
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Rio International",
+     "url": "https://riointernational.com.bd/product/redmi-turbo-4-pro-5g",
+     "price": 45499,
+     "oldPrice": 47499,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "CHN",
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "16GB / 512GB",
+     "site": "Rio International",
+     "url": "https://riointernational.com.bd/product/redmi-turbo-4-pro-5g",
+     "price": 49499,
+     "oldPrice": 50999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "CHN",
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/redmi-turbo-4-pro",
+     "price": 47999,
+     "oldPrice": 49000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "brand": "Google",
+   "name": "Pixel 8 Pro",
+   "category": "mobile",
+   "releaseYear": 2023,
+   "variants": [
+    {
+     "label": "12GB / 128GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "128GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Obsidian",
+    "Porcelain",
+    "Bay"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/mobile/google/pixel-8-pro/pixel-8-pro-porcelain-official-01-1200x630.webp",
+    "https://images.kryinternational.com/uploads/google-pixel-8-pro-ob.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/google-pixel-8-pro",
+   "offers": [
+    {
+     "variant": "12GB / 128GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/google-pixel-8-pro-12-128gb-official/",
+     "price": 76999,
+     "oldPrice": 79999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 128GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/google-pixel-8-pro-12-128gb/",
+     "price": 71500,
+     "oldPrice": 77000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 128GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/google-pixel-8-pro",
+     "price": 59990,
+     "oldPrice": 83990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/google-pixel-8-pro",
+     "price": 75990,
+     "oldPrice": 83990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/google-pixel-8-pro",
+     "price": 65499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 128GB",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/google-pixel-8-pro-official",
+     "price": 79999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 128GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/pixel-8-pro/",
+     "price": 61999,
+     "oldPrice": 71300,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/pixel-8-pro/",
+     "price": 72999,
+     "oldPrice": 83950,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 128GB",
+     "site": "Rio International",
+     "url": "https://riointernational.com.bd/product/google-pixel-8-pro-5g",
+     "price": 60999,
+     "oldPrice": 68999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Rio International",
+     "url": "https://riointernational.com.bd/product/google-pixel-8-pro-5g",
+     "price": 81999,
+     "oldPrice": 83000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "USA",
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 128GB",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/google-pixel-8-pro",
+     "price": 74999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/pixel-8-pro",
+     "price": 64999,
+     "oldPrice": 99999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/pixel-8-pro",
+     "price": 76499,
+     "oldPrice": 118999,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 128GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/pixel-8-pro-official",
+     "price": 70999,
+     "oldPrice": 74999,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "12GB / 128GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/google-pixel-8-pro",
+     "price": 74999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "brand": "Xiaomi",
+   "name": "Pad 8 11.2-inch",
+   "category": "tablet",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "8GB / 128GB Wi-Fi",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "128GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "8GB / 256GB Wi-Fi",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB",
+      "connectivity": "Wi-Fi"
+     },
+     "officialPrice": 59999
+    }
+   ],
+   "colors": [
+    "Gray",
+    "Blue",
+    "Green"
+   ],
+   "images": [
+    "https://diamu.com.bd/wp-content/uploads/2026/05/Xiaomi-Pad-8.jpg",
+    "https://www.vertech.com.bd/oem-images/product-84.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/xiaomi-pad-8",
+   "offers": [
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/xiaomi-pad-8",
+     "price": 42999,
+     "oldPrice": 43999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/xiaomi-pad-8",
+     "price": 51999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/xiaomi-pad-8-official",
+     "price": 58499,
+     "oldPrice": 59999,
+     "inStock": null,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-pad-8-price-in-bangladesh",
+     "price": 42990,
+     "oldPrice": 44990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-pad-8-price-in-bangladesh",
+     "price": 48499,
+     "oldPrice": 50990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/xiaomi-pad-8-official-price-in-bangladesh",
+     "price": 55990,
+     "oldPrice": 59990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/xiaomi-pad-8/",
+     "price": 48000,
+     "oldPrice": 49990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/xiaomi-pad-8",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/xiaomi-pad-8/",
+     "price": 45900,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "HNS Tech",
+     "url": "https://www.hnstechbd.com/product-details/xiaomi-pad-8/70",
+     "price": 50000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/xiaomi-pad-8",
+     "price": 42999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/xiaomi-pad-8",
+     "price": 51999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/xiaomi-pad-8-official",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/xiaomi-pad-8/",
+     "price": 42999,
+     "oldPrice": 55500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/xiaomi-pad-8/",
+     "price": 48999,
+     "oldPrice": 54999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/xiaomi-pad-8",
+     "price": 44800,
+     "oldPrice": 47500,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/xiaomi-pad-8",
+     "price": 42999,
+     "oldPrice": 50000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/xiaomi-pad-8",
+     "price": 48499,
+     "oldPrice": 56000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 256GB Wi-Fi",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/xiaomi-pad-8-official",
+     "price": 59999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "8GB / 128GB Wi-Fi",
+     "site": "Vertech",
+     "url": "https://www.vertech.com.bd/products/xiaomi-pad-8-84",
+     "price": 42999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "brand": "Huawei",
+   "name": "Watch Fit 5",
+   "category": "watch",
+   "releaseYear": 2026,
+   "variants": [
+    {
+     "label": "1.82\" Bluetooth",
+     "attributes": {
+      "size": "1.82\"",
+      "connectivity": "Bluetooth"
+     },
+     "officialPrice": 19999
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://diamu.com.bd/wp-content/uploads/2026/06/Huawei-Watch-Fit-5.jpg",
+    "https://assets.gadgetandgear.com/upload/media/huawei/huawei-watch-fit-5-black-2.jpeg",
+    "https://gadgetbreeze.com.bd/wp-content/uploads/2026/06/huawei-watch-fit-5-smartwatch.jpg"
+   ],
+   "specsSource": "https://www.startech.com.bd/huawei-watch-fit-5",
+   "offers": [
+    {
+     "variant": "1.82\" Bluetooth",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/huawei-watch-fit-5/",
+     "price": 19500,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "1.82\" Bluetooth",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/huawei-watch-fit-5",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "1.82\" Bluetooth",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/huawei-watch-fit-5-smartwatch/",
+     "price": 17450,
+     "oldPrice": 18490,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "1.82\" Bluetooth",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/huawei-watch-fit-5",
+     "price": 17499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "1.82\" Bluetooth",
+     "site": "Mobile Buzz BD",
+     "url": "https://mobilebuzzbd.com/product/huawei-watch-fit-5/",
+     "price": 18999,
+     "oldPrice": 20125,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "1.82\" Bluetooth",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/huawei-watch-fit-5",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "brand": "HP",
+   "name": "255R G10",
+   "category": "laptop",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Ryzen 5 7535U 8GB / 512GB",
+     "attributes": {
+      "cpu": "Ryzen 5 7535U",
+      "ram": "8GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "Ryzen 5 7535U 16GB / 512GB",
+     "attributes": {
+      "cpu": "Ryzen 5 7535U",
+      "ram": "16GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [],
+   "images": [
+    "https://techmarvels.com.bd/wp-content/uploads/2026/07/HP-255R-G10-1.webp"
+   ],
+   "specsSource": "https://www.sumashtech.com/product/hp-255r-g10-ryzen-5-7535u-8gb",
+   "offers": [
+    {
+     "variant": "Ryzen 5 7535U 8GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/hp-255r-g10-ryzen-5-7535u-8gb",
+     "price": 73999,
+     "oldPrice": 75999,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "Ryzen 5 7535U 8GB / 512GB",
+     "site": "Tech Marvels",
+     "url": "https://techmarvels.com.bd/product/hp-255r-g10-ryzen-5-7535u-8gb-512gb/",
+     "price": 74500,
+     "oldPrice": 78500,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "Ryzen 5 7535U 16GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/hp-255r-g10-ryzen-5-7535u-16gb-dark-ash-silver",
+     "price": 78999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "Ryzen 5 7535U 16GB / 512GB",
+     "site": "Tech Marvels",
+     "url": "https://techmarvels.com.bd/product/hp-255r-g10-ryzen-5-7535u-8gb-512gb/",
+     "price": 85990,
+     "oldPrice": 92000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "Ryzen 5 7535U 16GB / 512GB",
+     "site": "Vertech",
+     "url": "https://www.vertech.com.bd/products/hp-255r-g10-ryzen-5-7535u-16gb-ct9l8at-178",
+     "price": 75900,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "brand": "Anker",
+   "name": "Soundcore Motion+",
+   "category": "speaker",
+   "releaseYear": 2019,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Black"
+   ],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/3254-19746.jpg",
+    "https://assets.gadgetandgear.com/upload/media/172302314091728.jpeg",
+    "https://gadgetbreeze.com.bd/wp-content/uploads/2023/01/Anker-Soundcore-Motion-Plus-30W-Bluetooth-Speaker_Main.jpg"
+   ],
+   "specsSource": "https://gadgetandgear.com/product/anker-soundcore-motion-plus-bluetooth-speaker",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/anker-soundcore-motion-plus",
+     "price": 10500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/anker-soundcore-motion-plus-bluetooth-speaker",
+     "price": 11990,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/anker-soundcore-motion-plus-30w/",
+     "price": 9799,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "Standard",
+     "site": "Kry International",
+     "url": "https://kryinternational.com/products/anker-soundcore-motion-plus-speaker",
+     "price": 11999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "Standard",
+     "site": "PC House",
+     "url": "https://www.pchouse.com.bd/anker-soundcore-motion-plus-bluetooth-speaker",
+     "price": 13200,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    }
+   ]
+  }
+ ]
+}

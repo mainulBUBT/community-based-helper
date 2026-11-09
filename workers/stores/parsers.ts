@@ -342,19 +342,40 @@ export function othobaVariants(html: string): ShopVariant[] {
   return variant([], sale && sale < quote.price ? sale : quote.price, quote.price, quote.inStock);
 }
 
+// PC House (OpenCart): og দাম মূল দাম, ক্যাশ দাম পেমেন্ট অপশনের final_price এ
+export function pchouseVariants(html: string): ShopVariant[] {
+  const quote = structuredQuote(html);
+  if (!quote) return [];
+  const cash = toTaka(/class="price final_price">([^<]+)/.exec(html)?.[1]);
+  return variant([], cash && cash < quote.price ? cash : quote.price, quote.price, quote.inStock);
+}
+
 // HNS Tech (কাস্টম Laravel): পাতার data-variants JSON-এ প্রতিটা কনফিগের দাম-স্টক; রং অপশন নয়।
 // Pre-order পাতায় দাম ০ থাকে (বুকিং ফি আলাদা ঘরে), তাই সেগুলো নিজে থেকেই বাদ।
-export function hnstechVariants(html: string): ShopVariant[] {
+function hnstechRows(html: string): Json[] {
   const raw = /data-variants='(\[[^']*\])'/.exec(html)?.[1];
   const list = raw ? parse(raw) : null;
-  if (!Array.isArray(list)) return [];
-  return list.filter(isObject).flatMap((v) => {
+  return Array.isArray(list) ? list.filter(isObject) : [];
+}
+
+export function hnstechVariants(html: string): ShopVariant[] {
+  return hnstechRows(html).flatMap((v) => {
     const price = toTaka(v.effective_price) ?? toTaka(v.price);
     if (!price) return [];
     const full = toTaka(v.price);
     const options = [v.storage, v.display_size, v.connectivity].map((x) => (x == null ? "" : String(x).trim())).filter(Boolean);
     return variant([["", options.join(" ")]], price, full && full > price ? full : null, typeof v.quantity === "number" ? v.quantity > 0 : null);
   });
+}
+
+// HNS Tech এর সব পাতায় og:image দোকানের লোগো আর শিরোনাম দোকানের নাম, তাই ছবি ভার্সনের JSON থেকে আর নাম h1 থেকে
+export async function hnstechProduct(url: string): Promise<ShopProduct | null> {
+  const html = await getText(url);
+  const rows = hnstechVariants(html);
+  if (!rows.length) return null;
+  const image = hnstechRows(html).map((v) => v.image).find((src): src is string => typeof src === "string" && src.startsWith("https://")) ?? null;
+  const heading = /<h1[^>]*>([\s\S]*?)<\/h1>/.exec(html)?.[1];
+  return { rows, title: heading ? stripTags(heading) : null, image };
 }
 
 // Rio পাতায় window.productVariants এ সব ভার্সনের দাম-স্টক; ফর্মের রেডিওর label এ id→নাম (স্টোরেজ flexRadioStorage<id>, region exampleRegion<id>, বাকি option_<ধরন>_<id>)।

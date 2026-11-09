@@ -5586,6 +5586,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "625ml",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/nivea-rich-nourishing-body-lotion-72h-intense-care/",
+     "price": 1550,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
     }
    ]
   },
@@ -5989,6 +6000,13 @@
       "capacity": "7g"
      },
      "officialPrice": 450
+    },
+    {
+     "label": "4.8g",
+     "attributes": {
+      "capacity": "4.8g"
+     },
+     "officialPrice": 335
     }
    ],
    "colors": [],
@@ -6130,6 +6148,94 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "4.8g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/70994/vaseline-48h-lip-therapy-stick-rosy-lips",
+     "price": 190,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "4.8g",
+     "site": "Perfecto",
+     "url": "https://perfectobd.com/product/vaseline-lip-therapy-rosy-lips-stick",
+     "price": 220,
+     "oldPrice": 225,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "4.8g",
+     "site": "Klassy Missy",
+     "url": "https://klassy.com.bd/product/Vaseline-Lip-Therapy-Stick-Rosy-Lips-48g-WxjQQ",
+     "price": 220,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "4.8g",
+     "site": "Beprincess BD",
+     "url": "https://beprincessbd.com/product/vaseline-lip-balm-rosy-lips-4-8g/",
+     "price": 320,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "4.8g",
+     "site": "Color World",
+     "url": "https://colorworld.com.bd/product/vaseline-lip-care-rosy-stick-4-8g/",
+     "price": 350,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "4.8g",
+     "site": "Her Happy Skin",
+     "url": "https://herhappyskin.com/vaseline-lip-care-stick-rosy-lips",
+     "price": 350,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "4.8g",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/vaseline-48h-lip-therapy-stick-rosy-lips/",
+     "price": 350,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "4.8g",
+     "site": "Shajgoj",
+     "url": "https://shop.shajgoj.com/product/vaseline-lip-therapy-rosy-lips-stick",
+     "price": 450,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
     }
    ]
   },
@@ -6383,6 +6489,13 @@
       "capacity": "550g"
      },
      "officialPrice": 3400
+    },
+    {
+     "label": "566g",
+     "attributes": {
+      "capacity": "566g"
+     },
+     "officialPrice": 3590
     }
    ],
    "colors": [],
@@ -6821,6 +6934,61 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "566g",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/cetaphil-moisturizing-cream-566ml-a67e",
+     "price": 2650,
+     "oldPrice": 2850,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "566g",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/47192/cetaphil-moisturizing-cream-for-dry-to-very-dry-sensitive-skin-566g-made-in-canada",
+     "price": 3520,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "566g",
+     "site": "UK Direct BD",
+     "url": "https://ukdirectbd.com/product/cetaphil-moisturising-cream-566g/",
+     "price": 3590,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "566g",
+     "site": "Skincare Shop",
+     "url": "https://skincareshop.com.bd/product/cetaphil-moisturising-cream-very-dry-to-dry-sensitive-skin-566gm/",
+     "price": 3700,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "566g",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cetaphil-moisturising-cream-dry-to-very-dry-skin-566g",
+     "price": 3870,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
     }
    ]
   },
@@ -6871,6 +7039,13 @@
       "capacity": "591ml"
      },
      "officialPrice": 3350
+    },
+    {
+     "label": "118ml",
+     "attributes": {
+      "capacity": "118ml"
+     },
+     "officialPrice": 1230
     }
    ],
    "colors": [],
@@ -7463,6 +7638,72 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "118ml",
+     "site": "Arogga",
+     "url": "https://www.arogga.com/product/97156/cetaphil-moisturising-lotion-for-normal-to-combination-sensitive-skin-118ml",
+     "price": 935,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "118ml",
+     "site": "Chardike",
+     "url": "https://chardike.com/product/cetaphil-moisturizing-lotion-body-and-face-118ml",
+     "price": 1000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "118ml",
+     "site": "Beauty Booth",
+     "url": "https://beautybooth.com.bd/product/cetaphil-moisturizing-lotion-dry-to-normal-sensitive-skin-118ml",
+     "price": 1200,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "118ml",
+     "site": "EmartWay Skincare",
+     "url": "https://www.emartwayskincare.com.bd/cetaphil-moisturizing-lotion-normal-to-dry-skin-118ml",
+     "price": 1260,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "118ml",
+     "site": "Perfecto",
+     "url": "https://perfectobd.com/product/cetaphil-moisturizing-lotion-normal-to-dry-skin-1",
+     "price": 1450,
+     "oldPrice": 1900,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "118ml",
+     "site": "Lira Import",
+     "url": "https://liraimportltd.com/product/cetaphil-moisturizing-lotion-normal-to-dry-118-ml/",
+     "price": 1550,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-09"
     }
    ]
   }

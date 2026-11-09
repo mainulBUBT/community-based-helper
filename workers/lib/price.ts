@@ -1,4 +1,4 @@
-import { jsonLd, metaContent } from "./html";
+import { decode, jsonLd, metaContent } from "./html";
 
 export interface Quote {
   price: number;
@@ -73,7 +73,7 @@ function fromJsonLd(product: Record<string, unknown>): Quote | null {
       price,
       oldPrice: oldPrice && oldPrice > price ? oldPrice : null,
       inStock: stock(offer.availability),
-      title: typeof product.name === "string" ? product.name : null,
+      title: typeof product.name === "string" ? decode(product.name) : null,
       image: imageOf(product.image),
       via: "json-ld",
     };
