@@ -3,6 +3,7 @@ import { discover } from "./jobs/discover";
 import { localDiscover } from "./jobs/local-discover";
 import { discoverStep } from "./jobs/matrix";
 import { refreshPrices } from "./jobs/prices";
+import { readDeliveryPolicies } from "./jobs/delivery-policy";
 import { readPromos } from "./jobs/promos";
 import { rebuild } from "./jobs/rebuild";
 import { runJob, type JobId, type JobRun } from "./jobs/run";
@@ -20,7 +21,7 @@ const jobs: Record<JobId, (run: JobRun) => Promise<string>> = {
     return refreshPrices();
   },
   discover,
-  promos: readPromos,
+  promos: async () => [await readPromos(), await readDeliveryPolicies()].filter(Boolean).join(" · "),
   rebuild,
 };
 

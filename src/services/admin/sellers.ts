@@ -12,7 +12,7 @@ export async function listAllSellers(): Promise<Seller[]> {
   return data.map(toSeller);
 }
 
-export async function saveSeller(seller: Seller) {
+export async function saveSeller(seller: Seller, deliveryChanged = false) {
   const isNew = !seller.id;
   let id = seller.id;
   if (!supabase) {
@@ -25,7 +25,7 @@ export async function saveSeller(seller: Seller) {
       if (i >= 0) sampleSellers.splice(i, 1, seller);
     }
   } else {
-    const row = fromSeller(seller);
+    const row = { ...fromSeller(seller), ...(deliveryChanged && { delivery: seller.delivery && { ...seller.delivery, source: "admin", checkedAt: new Date().toISOString() } }) };
     if (isNew) {
       const { data, error } = await supabase.from("sellers").insert(row).select("id").single();
       if (error) throw error;

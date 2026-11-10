@@ -1,4 +1,5 @@
 import { decode, jsonLd, metaContent } from "./html";
+import type { SellerDelivery } from "../../src/types/catalog";
 
 export interface Quote {
   price: number;
@@ -6,6 +7,7 @@ export interface Quote {
   inStock: boolean | null;
   title: string | null;
   image?: string | null;
+  delivery?: Partial<SellerDelivery> | null;
   via: string;
 }
 
@@ -109,6 +111,57 @@ export function declaresNoPrice(html: string): boolean {
 // Star Tech স্টক শেষ হলে দামের ঘরে "To be announced" লেখে, কিন্তু itemprop আর og:price-এ পুরনো দাম রেখে দেয়
 const ANNOUNCED = /class="[^"]*\bproduct-price\b[^"]*">\s*(?:to be announced|up ?coming|call for price)\s*</i;
 export const announcesNoPrice = (html: string) => ANNOUNCED.test(html);
+
+type Delivery = Pick<SellerDelivery, "dhaka" | "outside" | "minDays" | "maxDays">;
+
+const MAX_FEE = 1000;
+const DIVISIONS = /chitt?agong|chattogram|sylhet|rajshahi|barisal|barishal|khulna|rangpur|mymensingh/i;
+
+const words = (value: unknown): string => (Array.isArray(value) ? value.map(words).join(" ") : typeof value === "string" ? value : "");
+
+function fee(rate: unknown): number | null {
+  const money = rate as Record<string, unknown> | null;
+  if (!money || !inTaka(money.currency)) return null;
+  const n = Number(money.value);
+  return Number.isFinite(n) && n >= 0 && n <= MAX_FEE ? Math.round(n) : null;
+}
+
+// AI-এর বলা চার্জ: ৳০ (প্রায়ই বানানো) আর অস্বাভাবিক বড় অঙ্ক বাদ
+export const aiFee = (value: unknown) => {
+  const n = toTaka(value);
+  return n && n <= MAX_FEE ? n : null;
+};
+
+export function aiDelivery(dhaka: unknown, outside: unknown): Partial<SellerDelivery> | null {
+  const found = { dhaka: aiFee(dhaka), outside: aiFee(outside) };
+  return found.dhaka || found.outside ? found : null;
+}
+
+// SEO plugin অনেক সময় নিজে থেকে ৳০ বসায়, তাই ০ শুধু তখনই ধরা যখন ঢাকা আর বাইরে আলাদা লেখা
+export function structuredDelivery(html: string): Delivery | null {
+  const offers = ([] as unknown[]).concat(mainProduct(html)?.offers ?? []) as Record<string, unknown>[];
+  const details = offers.flatMap((offer) => ([] as unknown[]).concat(offer.shippingDetails ?? [])) as Record<string, unknown>[];
+  const found: Delivery = { dhaka: null, outside: null, minDays: null, maxDays: null };
+  for (const detail of details) {
+    const amount = fee(detail.shippingRate);
+    if (amount == null) continue;
+    const place = detail.shippingDestination as Record<string, unknown> | undefined;
+    const area = [detail.shippingLabel, place?.addressRegion, place?.addressLocality, place?.name].map(words).join(" ");
+    const transit = (detail.deliveryTime as Record<string, Record<string, unknown>> | undefined)?.transitTime;
+    if (/outside|বাইরে/i.test(area)) found.outside = amount;
+    else if (/dhaka|ঢাকা/i.test(area) && !DIVISIONS.test(area)) found.dhaka = amount;
+    else {
+      found.dhaka ??= amount;
+      found.outside ??= amount;
+    }
+    found.minDays ??= Number.isInteger(transit?.minValue) ? Number(transit?.minValue) : null;
+    found.maxDays ??= Number.isInteger(transit?.maxValue) ? Number(transit?.maxValue) : null;
+  }
+  if (found.dhaka == null && found.outside == null) return null;
+  const split = found.dhaka != null && found.outside != null && found.dhaka !== found.outside;
+  if (!split && !found.dhaka && !found.outside) return null;
+  return found;
+}
 
 export function structuredQuote(html: string): Quote | null {
   const main = mainProduct(html);

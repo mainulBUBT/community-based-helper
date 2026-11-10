@@ -9,6 +9,7 @@ import { applyApproved } from "../services/apply-approved";
 import { autoReview } from "../services/auto-review";
 import { autoVersions } from "../services/auto-version";
 import { markGone, refreshOffer, saveProductImage } from "../services/offers";
+import { saveDelivery } from "../services/sellers";
 import { readPage } from "../stores/page";
 import { storeFor } from "../stores";
 import { isLocalUrl } from "../stores/local";
@@ -74,6 +75,7 @@ async function applyPage(page: Page, group: OfferRow[], storeName: string, tally
     if (result === "booking") tally.booking++;
   }
   if (matched) await saveProductImage(matched.variant_id, page.image);
+  if (matched && page.delivery) await saveDelivery(matched.seller_id, page.delivery.found, page.delivery.source);
 }
 
 // প্রতিটা লিংক একবার পড়া হয়, ওই পাতার সব ভার্সনের দাম একসাথে; সবচেয়ে পুরনো যাচাই আগে।

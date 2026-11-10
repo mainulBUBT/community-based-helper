@@ -13,11 +13,30 @@ import { useListSearch } from "@/hooks/useListSearch";
 import type { Messages } from "@/i18n/bn";
 import { showToast } from "@/lib/toast";
 import { deleteSeller, listAllSellers, saveSeller } from "@/services/admin/sellers";
-import type { Seller, SellerKind } from "@/types/catalog";
+import type { Seller, SellerDelivery, SellerKind } from "@/types/catalog";
 
 const EMPTY: Seller = { id: "", name: "", kind: "shop", website: null, phone: null, whatsapp: null, facebook: null, area: null, verified: false, active: true };
 
 const orNull = (value: FormDataEntryValue | null) => String(value ?? "").trim() || null;
+const amount = (value: FormDataEntryValue | null) => {
+  const n = Number(String(value ?? "").trim());
+  return String(value ?? "").trim() && Number.isInteger(n) && n >= 0 ? n : null;
+};
+const DELIVERY_KEYS = ["dhaka", "outside", "minDays", "maxDays", "cod", "returnDays"] as const;
+const sameDelivery = (a: SellerDelivery | null | undefined, b: SellerDelivery | null) => DELIVERY_KEYS.every((key) => (a?.[key] ?? null) === (b?.[key] ?? null));
+
+function readDelivery(form: FormData): SellerDelivery | null {
+  const cod = form.get("cod");
+  const delivery: SellerDelivery = {
+    dhaka: amount(form.get("dhaka")),
+    outside: amount(form.get("outside")),
+    minDays: amount(form.get("minDays")),
+    maxDays: amount(form.get("maxDays")),
+    cod: cod === "yes" ? true : cod === "no" ? false : null,
+    returnDays: amount(form.get("returnDays")),
+  };
+  return DELIVERY_KEYS.some((key) => delivery[key] != null) ? delivery : null;
+}
 
 function SellerForm({ seller, onClose }: { seller: Seller; onClose: (saved: boolean) => void }) {
   const { t } = useAdminI18n();
@@ -38,13 +57,15 @@ function SellerForm({ seller, onClose }: { seller: Seller; onClose: (saved: bool
       area: orNull(form.get("area")),
       verified: form.get("verified") === "on",
     };
+    const delivery = readDelivery(form);
+    const deliveryChanged = !sameDelivery(seller.delivery, delivery);
     if (!next.website && !next.phone) {
       showToast(t.admin.sellers.needWebsiteOrPhone);
       return;
     }
     setBusy(true);
     try {
-      await saveSeller(next);
+      await saveSeller(deliveryChanged ? { ...next, delivery } : next, deliveryChanged);
       showToast(t.admin.common.saved);
       onClose(true);
     } catch {
@@ -79,6 +100,20 @@ function SellerForm({ seller, onClose }: { seller: Seller; onClose: (saved: bool
         <input type="checkbox" name="verified" defaultChecked={seller.verified} className="size-5 accent-[var(--color-brand)]" />
         {t.admin.sellers.verified}
       </label>
+      <fieldset className="grid gap-4 border-t border-line-soft pt-4 md:col-span-2 md:grid-cols-3">
+        <legend className="pt-4 text-sm font-semibold">{t.admin.sellers.delivery}</legend>
+        <p className="text-[13px] text-dim md:col-span-3">{t.admin.sellers.deliveryHint}</p>
+        <Field label={t.admin.sellers.deliveryDhaka} name="dhaka" type="number" min={0} defaultValue={seller.delivery?.dhaka ?? ""} />
+        <Field label={t.admin.sellers.deliveryOutside} name="outside" type="number" min={0} defaultValue={seller.delivery?.outside ?? ""} />
+        <Select label={t.admin.sellers.cod} name="cod" defaultValue={seller.delivery?.cod == null ? "" : seller.delivery.cod ? "yes" : "no"}>
+          <option value="">{t.admin.sellers.codUnknown}</option>
+          <option value="yes">{t.admin.sellers.codYes}</option>
+          <option value="no">{t.admin.sellers.codNo}</option>
+        </Select>
+        <Field label={t.admin.sellers.deliveryMinDays} name="minDays" type="number" min={0} defaultValue={seller.delivery?.minDays ?? ""} />
+        <Field label={t.admin.sellers.deliveryMaxDays} name="maxDays" type="number" min={0} defaultValue={seller.delivery?.maxDays ?? ""} />
+        <Field label={t.admin.sellers.returnDays} name="returnDays" type="number" min={0} defaultValue={seller.delivery?.returnDays ?? ""} />
+      </fieldset>
       <div className="flex gap-2 md:col-span-2">
         <button type="submit" disabled={busy} className={primaryButton}>
           {t.admin.common.save}

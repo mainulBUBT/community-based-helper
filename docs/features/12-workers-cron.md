@@ -192,3 +192,12 @@ GitHub-এর IP আটকানো দোকানের পাতা পড়
 - `npm run store:scan -- <ডোমেইন> [শব্দ]` (`workers/scan.ts`): robots, sitemap, পণ্যের path, আর Shopify/Woo/JSON-LD/ভেতরের JSON কোনটা কাজ করে দেখে `sitemapStore` এন্ট্রি দেখায়।
 - পরীক্ষা: Haramain (১kg/৩kg, ৫০০g/১kg), Khaas Food (২৫০g/৫০০g), Market Bangla (এক ওজন) ঠিক পড়ে; Techmarvels → `wooVariants`; Daily Shopping → HTML খালি, পড়া যায় না। দোকানের নিজের ভুল ডেটা (Market Bangla-র "250gm 160tk" পাতায় 70kg ৳44,800) যেমন আছে তেমন আসে, অফিসিয়াল দামের ৪০%–২৫০% সীমায় বাদ পড়ে।
 
+## দোকানের ডেলিভারি চার্জ (১০ নভেম্বর ২০২৬)
+
+`sellers.delivery` (jsonb): `dhaka`, `outside`, `minDays`, `maxDays`, `cod`, `returnDays`, সাথে `source` (`page` | `ai` | `admin`), `checkedAt` আর AI-এর `draft`।
+
+- **পণ্যের পাতা, প্রতি prices run:** JSON-LD `shippingDetails` থেকে (`structuredDelivery`, `workers/lib/price.ts`)। এটা সবচেয়ে ভরসার, AI-এর পড়াকে ছাপিয়ে যায়। SEO plugin-এর বানানো ৳০ এড়াতে ০ শুধু তখনই ধরা যখন ঢাকা আর বাইরে আলাদা লেখা। ১০ নভেম্বরের পরীক্ষায় ১২৪টার মধ্যে ১৩টা দোকান দেয়।
+- **AI দিয়ে পড়া পণ্যের পাতা:** দামের একই AI উত্তরে `deliveryDhaka`/`deliveryOutside` (বাড়তি অনুরোধ নেই)।
+- **পলিসি পাতা, promos job-এর সাথে দিনে একবার, প্রতি run-এ ২৫টা দোকান:** `workers/jobs/delivery-policy.ts`। হোমপেজের ডেলিভারি/শিপিং লিংক বা চেনা ঠিকানা, তারপর AI। প্রতিটা দোকান সপ্তাহে একবার; খসড়া থাকলে পরের দিন। Gadget & Gear, Sumash, Dazzle, Chardike-এর পাতা পাওয়া যায়নি (JavaScript)।
+- **নিয়ম (`saveDelivery`, `workers/services/sellers.ts`):** AI-এর নতুন অঙ্ক আগে খসড়া, পরের বার একই এলে সাইটে; AI-এর ৳০ বা ৳১,০০০-এর বেশি বাদ; অ্যাডমিনে হাতে বসানো (`source: admin`) worker আর বদলায় না, অ্যাডমিন খালি করলে আবার worker।
+
