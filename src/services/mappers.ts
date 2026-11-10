@@ -1,5 +1,5 @@
 import type { AuditEntry, Job, JobRun, ReviewItem } from "@/types/admin";
-import type { CategoryInfo, Offer, PricePoint, Product, Promo, Seller, SpecGroup, Variant, VariantAttributes } from "@/types/catalog";
+import type { CategoryInfo, Offer, PricePoint, Product, Promo, Seller, SellerDelivery, SpecGroup, Variant, VariantAttributes } from "@/types/catalog";
 import { safeUrl } from "@/utils/url";
 import { canonicalRegion } from "@/utils/region";
 
@@ -65,6 +65,7 @@ export const toSeller = (row: Row): Seller => ({
   area: str(row.area),
   verified: Boolean(row.verified),
   active: Boolean(row.active),
+  delivery: (row.delivery as SellerDelivery | null | undefined) ?? null,
 });
 
 export const fromSeller = (seller: Omit<Seller, "id">) => ({

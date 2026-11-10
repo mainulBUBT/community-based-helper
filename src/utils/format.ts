@@ -7,6 +7,11 @@ export const parseTaka = (text: string) => Number(text.replace(/[০-৯]/g, (d)
 export const formatTaka = (amount: number, lang: "bn" | "en" = "en") =>
   `৳${amount.toLocaleString(lang === "bn" ? "bn-BD" : "en-IN")}`;
 
+export const dayRange = (min: number | null, max: number | null) => {
+  const days = [...new Set([min, max].filter((day): day is number => day != null))];
+  return days.length ? days.join("–") : null;
+};
+
 export function timeAgo(iso: string, now = Date.now()) {
   const minutes = Math.max(0, Math.round((now - new Date(iso).getTime()) / 60000));
   if (minutes < 1) return "এইমাত্র";

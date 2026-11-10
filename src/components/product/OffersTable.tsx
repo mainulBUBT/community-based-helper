@@ -1,15 +1,15 @@
 "use client";
 
-import { CalendarClock, ChevronRight, CreditCard, ExternalLink, Gift, Package, Percent, Phone, Tag, Wallet, X, type LucideIcon } from "lucide-react";
+import { Banknote, CalendarClock, ChevronRight, CreditCard, ExternalLink, Gift, Package, Percent, Phone, Tag, Truck, Wallet, X, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { SellerLogo } from "@/components/seller/SellerLogo";
 import { VerifiedBadge } from "@/components/seller/VerifiedBadge";
 import { Badge } from "@/components/ui/Badge";
 import { useI18n } from "@/hooks/useI18n";
-import type { Condition, OfferView, Promo } from "@/types/catalog";
+import type { Condition, OfferView, PricePoint, Promo } from "@/types/catalog";
 import { conditionLabel } from "@/utils/categories";
-import { realOldPrice } from "@/utils/catalog";
+import { neverCharged, realOldPrice } from "@/utils/catalog";
 import { formatTaka, telLink } from "@/utils/format";
 
 const TONE: Partial<Record<Condition, "ok" | "gold" | "brand">> = { official: "ok", unofficial: "gold", replica_premium: "brand" };
@@ -96,11 +96,19 @@ function PromoSheet({ promos, offer, link }: { promos: Promo[]; offer: OfferView
   );
 }
 
-function OfferRow({ offer, official, best, warranty, showCondition }: { offer: OfferView; official: number | null; best: boolean; warranty: boolean; showCondition: boolean }) {
+function OfferRow({ offer, official, best, warranty, showCondition, inflated }: { offer: OfferView; official: number | null; best: boolean; warranty: boolean; showCondition: boolean; inflated: boolean }) {
   const { t, ago, lang, prefix } = useI18n();
   const { seller } = offer;
   const link = offer.url ?? seller.website;
-  const oldPrice = realOldPrice(offer.oldPrice, official);
+  const oldPrice = inflated ? null : realOldPrice(offer.oldPrice, official);
+  const delivery = seller.delivery;
+  const fee = (amount: number) => (amount ? `+${formatTaka(amount, lang)}` : t.product.deliveryFree);
+  const deliveryParts = (
+    delivery?.dhaka != null && delivery.dhaka === delivery.outside
+      ? [t.product.deliveryEverywhere(fee(delivery.dhaka))]
+      : [delivery?.dhaka != null && t.product.deliveryDhaka(fee(delivery.dhaka)), delivery?.outside != null && t.product.deliveryOutside(fee(delivery.outside))]
+  ).filter((part): part is string => Boolean(part));
+
   const stock = offer.inStock === null ? t.stock.unknown : offer.inStock ? t.stock.yes : t.stock.no;
   const stockDot = offer.inStock === null ? "bg-faint" : offer.inStock ? "bg-ok" : "bg-danger";
   const action = `flex h-9 shrink-0 items-center gap-1.5 rounded-md px-3 text-[13px] font-semibold transition-colors md:h-10 md:px-4 md:text-sm ${best ? "bg-cta text-cta-ink hover:bg-cta-hover" : "border border-line text-ink hover:border-dim"}`;
@@ -128,12 +136,32 @@ function OfferRow({ offer, official, best, warranty, showCondition }: { offer: O
       </div>
 
       <div className="col-start-1 row-start-2 flex min-w-0 flex-col gap-1 pl-10">
-        <span className="flex items-center gap-1.5 text-[13px] text-dim">
-          <span className={`size-1.5 shrink-0 rounded-full ${stockDot}`} aria-hidden="true" />
+        <span className="flex items-center gap-1.5 text-xs text-dim">
+          <span className="flex size-3.5 shrink-0 items-center justify-center" aria-hidden="true">
+            <span className={`size-1.5 rounded-full ${stockDot}`} />
+          </span>
           <span className="truncate">
             {stock}, {ago(offer.checkedAt)}
           </span>
         </span>
+        {deliveryParts.length > 0 && (
+          <span className="flex items-start gap-1.5 text-xs text-dim">
+            <Truck size={14} className="mt-px shrink-0 text-faint" aria-hidden="true" />
+            <span className="flex flex-wrap gap-x-3">
+              {deliveryParts.map((part) => (
+                <span key={part} className="whitespace-nowrap">
+                  {part}
+                </span>
+              ))}
+            </span>
+          </span>
+        )}
+        {delivery?.cod && (
+          <span className="flex items-center gap-1.5 text-xs text-dim">
+            <Banknote size={14} className="shrink-0 text-faint" aria-hidden="true" />
+            {t.product.cod}
+          </span>
+        )}
         {!link && seller.phone && <span className="text-[13px] font-semibold text-ink">{seller.phone}</span>}
         {offer.promos.length > 0 && <PromoSheet promos={offer.promos} offer={offer} link={link} />}
         {offer.promos.map((promo) => (
@@ -169,14 +197,30 @@ function OfferRow({ offer, official, best, warranty, showCondition }: { offer: O
   );
 }
 
-export function OffersTable({ offers, official, warranty, showCondition }: { offers: OfferView[]; official: number | null; warranty: boolean; showCondition: boolean }) {
+interface OffersTableProps {
+  offers: OfferView[];
+  official: number | null;
+  warranty: boolean;
+  showCondition: boolean;
+  history: PricePoint[];
+}
+
+export function OffersTable({ offers, official, warranty, showCondition, history }: OffersTableProps) {
   // "সবচেয়ে কম" শুধু স্টকে থাকা দোকানের মধ্যে
   const available = offers.filter((offer) => offer.inStock !== false);
   const lowest = available.length ? Math.min(...available.map((offer) => offer.price)) : null;
   return (
     <ul className="divide-y divide-line-soft">
       {offers.map((offer) => (
-        <OfferRow key={offer.id} offer={offer} official={official} best={available.includes(offer) && offer.price === lowest} warranty={warranty} showCondition={showCondition} />
+        <OfferRow
+          key={offer.id}
+          offer={offer}
+          official={official}
+          best={available.includes(offer) && offer.price === lowest}
+          warranty={warranty}
+          showCondition={showCondition}
+          inflated={neverCharged(offer, history)}
+        />
       ))}
     </ul>
   );

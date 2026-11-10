@@ -1,18 +1,24 @@
 "use client";
 
-import { ChevronRight, ExternalLink, Tag } from "lucide-react";
+import { ChevronRight, ExternalLink, Search, SearchX, Tag } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 import { ProductIcon } from "@/components/product/ProductIcon";
 import { SellerContact } from "@/components/seller/SellerContact";
+import { SellerDeliveryInfo } from "@/components/seller/SellerDeliveryInfo";
 import { SellerLogo } from "@/components/seller/SellerLogo";
 import { VerifiedBadge } from "@/components/seller/VerifiedBadge";
+import { Chip } from "@/components/ui/Chip";
+import { EmptyState } from "@/components/ui/EmptyState";
 import { Panel } from "@/components/ui/Panel";
+import { ShareButton } from "@/components/ui/ShareButton";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
 import type { getSellerDetail } from "@/services/catalog.server";
 import type { Condition } from "@/types/catalog";
 import { conditionLabel } from "@/utils/categories";
 import { formatTaka } from "@/utils/format";
+import { matchesQuery } from "@/utils/search";
 
 type Detail = NonNullable<Awaited<ReturnType<typeof getSellerDetail>>>;
 type Listing = Detail["listings"][number];
@@ -23,9 +29,14 @@ const byProduct = (listings: Listing[]) => [
 
 export function SellerView({ initial }: { initial: Detail }) {
   const { t, num, ago, prefix, lang } = useI18n();
-  const { warranty, conditions } = useCategories();
+  const { warranty, conditions, categories, name: categoryName } = useCategories();
   const { seller, listings, promos } = initial;
   const groups = byProduct(listings);
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState<string | null>(null);
+  const counts = groups.reduce((map, items) => map.set(items[0].product.category, (map.get(items[0].product.category) ?? 0) + 1), new Map<string, number>());
+  const kinds = [...counts].sort((a, b) => b[1] - a[1]).map(([slug]) => slug);
+  const shown = groups.filter(([{ product }]) => (!category || product.category === category) && matchesQuery(product, query, categories));
   const latest = listings.reduce<string | null>((max, { offer }) => (!max || offer.checkedAt > max ? offer.checkedAt : max), null);
   const meta = [t.sellerKind[seller.kind], groups.length ? t.seller.products(num(groups.length)) : null].filter(Boolean).join(" · ");
 
@@ -54,6 +65,9 @@ export function SellerView({ initial }: { initial: Detail }) {
               </h1>
               <p className="text-sm text-dim">{meta}</p>
             </div>
+            <div className="ml-auto shrink-0 self-start">
+              <ShareButton title={seller.name} className="flex size-11 items-center justify-center rounded-md border border-line bg-surface text-dim hover:border-dim hover:text-ink" />
+            </div>
           </div>
           {(seller.website || seller.facebook) && (
             <div className="grid gap-2 md:w-72 md:shrink-0">
@@ -81,6 +95,8 @@ export function SellerView({ initial }: { initial: Detail }) {
 
       {!seller.verified && <p className="rounded-md bg-gold-soft px-3 py-2 text-[13px] font-semibold text-gold-text">{t.seller.unverifiedWarning}</p>}
 
+      {seller.delivery && <SellerDeliveryInfo delivery={seller.delivery} />}
+
       {promos.length > 0 && (
         <Panel title={t.seller.promos}>
           <div className="flex flex-col gap-2 p-4 md:p-5">
@@ -96,8 +112,34 @@ export function SellerView({ initial }: { initial: Detail }) {
 
       {groups.length > 0 && (
         <Panel title={t.seller.listings} subtitle={[t.seller.products(num(groups.length)), latest && t.product.updated(ago(latest))].filter(Boolean).join(" · ")}>
-          <div className="-mb-px grid lg:grid-cols-2">
-            {groups.map((items) => {
+          <div className="flex flex-col gap-3 border-b border-line-soft p-4 md:flex-row md:items-center md:px-5">
+            <label className="flex h-11 items-center gap-2 rounded-lg border border-line bg-surface px-3 focus-within:border-brand md:w-80 md:shrink-0">
+              <Search size={18} className="shrink-0 text-dim" aria-hidden="true" />
+              <input
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder={t.seller.searchProducts}
+                aria-label={t.seller.searchProducts}
+                className="h-full min-w-0 flex-1 bg-transparent text-base text-ink outline-none"
+              />
+            </label>
+            {kinds.length > 1 && (
+              <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 md:mx-0 md:px-0">
+                <Chip selected={!category} onClick={() => setCategory(null)}>
+                  {t.search.all} <span className="font-normal text-faint">({num(groups.length)})</span>
+                </Chip>
+                {kinds.map((slug) => (
+                  <Chip key={slug} selected={category === slug} onClick={() => setCategory(slug)}>
+                    {categoryName(slug)} <span className="font-normal text-faint">({num(counts.get(slug) ?? 0)})</span>
+                  </Chip>
+                ))}
+              </div>
+            )}
+          </div>
+          {!shown.length && <EmptyState icon={SearchX} title={query.trim() ? t.search.notFound(query.trim()) : t.search.emptyCategory} />}
+          <div className="-mb-px grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[repeat(2,minmax(0,1fr))]">
+            {shown.map((items) => {
               const { product } = items[0];
               const condition = (c: Condition) => (conditions(product.category).length > 1 ? conditionLabel(t, c, warranty(product.category)) : null);
               const shared = items.every(({ offer }) => offer.condition === items[0].offer.condition) ? condition(items[0].offer.condition) : null;
@@ -111,7 +153,7 @@ export function SellerView({ initial }: { initial: Detail }) {
                   <span className="flex min-w-0 flex-1 flex-col gap-1.5">
                     <span className="flex min-w-0 flex-col">
                       <span className="text-xs text-dim">{[product.brand, shared].filter(Boolean).join(" · ")}</span>
-                      <span className="truncate text-[15px] font-semibold group-hover:text-brand">{product.name}</span>
+                      <span className="line-clamp-2 text-[15px] font-semibold group-hover:text-brand">{product.name}</span>
                     </span>
                     <span className="flex flex-wrap gap-1.5">
                       {items.map(({ offer, variant }) => {

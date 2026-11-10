@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, ChevronDown, ChevronRight, Clock, ExternalLink, Globe, Megaphone, Phone, Store } from "lucide-react";
+import { Check, ChevronDown, ChevronRight, Clock, ExternalLink, Globe, Megaphone, Phone, Store, TrendingDown } from "lucide-react";
 import Link from "next/link";
 import { useState, type ReactNode } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
@@ -22,7 +22,7 @@ import { useI18n } from "@/hooks/useI18n";
 import { useSaved } from "@/hooks/useSaved";
 import type { RegionNote } from "@/types/admin";
 import { AXES, type Axis, type Condition, type OfferView, type ProductDetail, type SpecGroup, type Variant } from "@/types/catalog";
-import { byStock, realOldPrice } from "@/utils/catalog";
+import { byStock, neverCharged, realOldPrice } from "@/utils/catalog";
 import { categoryConditions, conditionLabel, isReplica } from "@/utils/categories";
 import { formatTaka, telLink } from "@/utils/format";
 import { primaryRegion } from "@/utils/region";
@@ -226,7 +226,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   const fullName = `${product.brand} ${product.name}`;
 
   const official = variant?.officialPrice ?? null;
-  const reference = best ? Math.max(realOldPrice(best.oldPrice, official) ?? 0, best.condition === "official" || (!warranty && !isReplica(best.condition)) ? (official ?? 0) : 0) : 0;
+  const reference = best ? Math.max(realOldPrice(neverCharged(best, history) ? null : best.oldPrice, official) ?? 0, best.condition === "official" || (!warranty && !isReplica(best.condition)) ? (official ?? 0) : 0) : 0;
   const off = best && reference > best.price ? Math.round(((reference - best.price) / reference) * 100) : 0;
   const variantLowest = (id: string) => {
     const matching = offers.filter((o) => o.variantId === id && inView(o));
@@ -254,7 +254,11 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   // স্টকে না থাকা দোকান বাদ, নইলে সস্তা দোকানের স্টক ফুরালে "আগে কম ছিল" মনে হয়
   const inStockShown = shown.filter((o) => o.inStock !== false);
   const chartOffers = inStockShown.length ? inStockShown : shown;
-  const monthLow = Math.min(...history.filter((p) => chartOffers.some((o) => o.id === p.offerId)).map((p) => p.price), ...chartOffers.map((o) => o.price));
+  const chartHistory = history.filter((p) => chartOffers.some((o) => o.id === p.offerId));
+  const monthLow = Math.min(...chartHistory.map((p) => p.price), ...chartOffers.map((o) => o.price));
+  const seen = chartHistory.map((p) => Date.parse(p.seenAt));
+  const historyDays = seen.length ? (Math.max(...seen) - Math.min(...seen)) / 86400000 : 0;
+  const atMonthLow = best != null && best.inStock !== false && historyDays >= 14 && best.price <= Math.min(...chartHistory.map((p) => p.price));
 
   return (
     <div className="flex flex-col gap-4 pb-[calc(5rem+env(safe-area-inset-bottom))] md:pb-0">
@@ -414,7 +418,13 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
                 <Clock size={14} aria-hidden="true" />
                 {t.product.updated(ago(lastChecked))}
               </span>
-              {Number.isFinite(monthLow) && <span className="text-[13px] text-dim">{t.product.monthLow(formatTaka(monthLow, lang))}</span>}
+              {atMonthLow && (
+                <span className="flex items-center gap-1.5 text-[13px] font-medium text-ok">
+                  <TrendingDown size={14} aria-hidden="true" />
+                  {t.product.monthLowest}
+                </span>
+              )}
+              {Number.isFinite(monthLow) && !atMonthLow && <span className="text-[13px] text-dim">{t.product.monthLow(formatTaka(monthLow, lang))}</span>}
             </div>
           )}
         </div>
@@ -424,7 +434,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
 
       {shown.length > 0 && (
         <Panel title={t.product.allPrices} subtitle={product.variants.length > 1 ? variantName : undefined} id="stores">
-          <OffersTable offers={shown} official={official} warranty={warranty} showCondition={kinds.length > 1} />
+          <OffersTable offers={shown} official={official} warranty={warranty} showCondition={kinds.length > 1} history={history} />
         </Panel>
       )}
 
@@ -442,7 +452,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
         <SpecsPanel specs={specs} source={product.specsSource} />
         <Panel title={t.product.history} id="history">
           <div className="px-5 py-4">
-            <PriceChart history={history.filter((p) => chartOffers.some((o) => o.id === p.offerId))} offers={chartOffers} />
+            <PriceChart history={chartHistory} offers={chartOffers} />
           </div>
         </Panel>
       </div>

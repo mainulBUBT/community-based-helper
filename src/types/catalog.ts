@@ -69,6 +69,15 @@ export interface Product {
   active?: boolean;
 }
 
+export interface SellerDelivery {
+  dhaka: number | null;
+  outside: number | null;
+  minDays: number | null;
+  maxDays: number | null;
+  cod: boolean | null;
+  returnDays: number | null;
+}
+
 export interface Seller {
   id: string;
   name: string;
@@ -82,6 +91,7 @@ export interface Seller {
   active: boolean;
   // build এ public/sellers এ ফাইল থাকলে তার পথ; অ্যাডমিনের লাইভ ডেটায় থাকে না
   logo?: string | null;
+  delivery?: SellerDelivery | null;
 }
 
 export interface Offer {

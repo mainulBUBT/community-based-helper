@@ -237,6 +237,13 @@ export const bn = {
     lowestLabel: "সবচেয়ে কম দাম",
     updated: (time: string) => `দাম আপডেট ${time}`,
     monthLow: (price: string) => `গত ৩০ দিনে সবচেয়ে কম ছিল ${price}`,
+    monthLowest: "এখনকার দাম গত ৩০ দিনে সবচেয়ে কম",
+    deliveryDhaka: (fee: string) => `ঢাকায় ডেলিভারি ${fee}`,
+    deliveryOutside: (fee: string) => `বাইরে ${fee}`,
+    deliveryEverywhere: (fee: string) => `সারা দেশে ডেলিভারি ${fee}`,
+    deliveryFree: "ফ্রি",
+    deliveryDays: (range: string) => `${range} দিনে`,
+    cod: "ক্যাশ অন ডেলিভারি",
     atStore: (name: string) => `${name}-এ`,
     checkedAt: (time: string) => `দাম মিলিয়ে দেখা ${time}`,
     highlights: "এক নজরে",
@@ -268,6 +275,15 @@ export const bn = {
     search: "দোকানের নাম, এলাকা বা ফোন",
     summary: (total: string, verified: string) => (total === verified ? `${total}টা দোকান, সবগুলোই যাচাই করা` : `${total}টা দোকান, এর মধ্যে ${verified}টা যাচাই করা`),
     products: (n: string) => `${n}টা পণ্য`,
+    searchProducts: "এই দোকানে পণ্য খুঁজুন",
+    deliveryTitle: "ডেলিভারি আর ফেরত",
+    deliveryDhaka: "ঢাকার ভেতরে",
+    deliveryOutside: "ঢাকার বাইরে",
+    cod: "ক্যাশ অন ডেলিভারি",
+    yes: "আছে",
+    no: "নেই",
+    returns: "ফেরত বা বদল",
+    returnDays: (n: string) => `${n} দিনের মধ্যে`,
   },
   saved: {
     title: "সেভ করা",
@@ -338,7 +354,12 @@ export const bn = {
     budgetTitles: (amount: string, name: string, month: string) => [`${amount} টাকার মধ্যে সেরা ${name}, ${month}`, `${amount} টাকার মধ্যে সেরা ${name}`],
     budgetDescription: (amount: string, name: string, count: string, from: string) =>
       `${amount} টাকার মধ্যে বাংলাদেশে ${count}টা ${name}, দাম ${from} থেকে। দোকানের আসল দাম মিলিয়ে, দিনে কয়েকবার হালনাগাদ।`,
-    sellerTitle: (name: string, area: string | null) => `${name}${area ? ` (${area})` : ""} এর দাম ও অফার`,
+    sellerTitles: (name: string, kinds: string | null, month: string) => [
+      ...(kinds ? [`${name} এ ${withEr(kinds)} দাম, ${month}`] : []),
+      `${name} এর দাম ও অফার, ${month}`,
+      `${name} এর দাম ও অফার`,
+    ],
+    and: " ও ",
     sellerDescription: (name: string, kind: string, area: string | null) =>
       `${name} (${kind}${area ? `, ${area}` : ""}): কোন পণ্য কত দামে পাওয়া যায়, যোগাযোগের তথ্য, আর বিক্রেতা যাচাই করা কিনা।`,
     sellerListings: (name: string, count: string, examples: string) =>

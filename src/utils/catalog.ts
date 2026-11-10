@@ -2,6 +2,18 @@ import type { Offer, OfferView, PricePoint, ProductSummary } from "@/types/catal
 
 export const byPrice = (a: { price: number }, b: { price: number }) => a.price - b.price;
 
+const DAY = 86400000;
+
+// "আগের দাম" এই দোকানে গত মাসে একবারও নেয়নি; অন্তত ২ সপ্তাহের ইতিহাস না থাকলে বলা যায় না
+export function neverCharged(offer: Offer, history: PricePoint[]) {
+  if (!offer.oldPrice || offer.oldPrice <= offer.price) return false;
+  const points = history.filter((point) => point.offerId === offer.id);
+  if (points.length < 2) return false;
+  const times = points.map((point) => Date.parse(point.seenAt));
+  if (Math.max(...times) - Math.min(...times) < 14 * DAY) return false;
+  return Math.max(...points.map((point) => point.price)) < offer.oldPrice;
+}
+
 // বানান আর ফাঁকা জায়গা বাদে একই নাম, অথবা শুধু শেষে সাইজ বাড়তি ("Galaxy Watch8" আর "Galaxy Watch 8 40mm") মানে একই পণ্য
 const nameKey = (brand: string, name: string) => `${brand} ${name}`.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
 const SIZE_TAIL = /^(?![2-5]g$)\d+(?:mm|gb|tb|ml|g|mah|inch|in)$/;
