@@ -717,16 +717,6 @@
         },
         {
           "variant": "7.2ml",
-          "site": "BD Amajan Shop",
-          "url": "https://bdamajanshop.com/product/maybelline-lash-sensational-sky-high-tinted-primer-mascara-soft-black/",
-          "price": 1090,
-          "inStock": true,
-          "condition": "official",
-          "region": null,
-          "checkedAt": "2026-10-26"
-        },
-        {
-          "variant": "7.2ml",
           "site": "Beauty Booth",
           "url": "https://beautybooth.com.bd/product/maybelline-new-york-lash-sensational-sky-high-mascara-black-7-2ml",
           "price": 1250,
@@ -2216,16 +2206,6 @@
           "site": "Arogga",
           "url": "https://www.arogga.com/product/86083/loreal-paris-infallible-fresh-wear-32h-liquid-foundation-in-shade-420-true-beige-30ml",
           "price": 1795,
-          "inStock": true,
-          "condition": "official",
-          "region": null,
-          "checkedAt": "2026-10-26"
-        },
-        {
-          "variant": "30ml",
-          "site": "Beauty Booth",
-          "url": "https://beautybooth.com.bd/product/l-oreal-paris-makeup-infallible-fresh-wear-foundation-020-ivory-9gm",
-          "price": 1700,
           "inStock": true,
           "condition": "official",
           "region": null,
