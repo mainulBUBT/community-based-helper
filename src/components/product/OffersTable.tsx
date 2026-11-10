@@ -96,6 +96,22 @@ function PromoSheet({ promos, offer, link }: { promos: Promo[]; offer: OfferView
   );
 }
 
+function InfoLine({ icon: Icon, parts }: { icon: LucideIcon; parts: string[] }) {
+  if (!parts.length) return null;
+  return (
+    <span className="flex items-start gap-1.5 text-xs text-dim">
+      <Icon size={14} className="mt-px shrink-0 text-faint" aria-hidden="true" />
+      <span className="flex flex-wrap gap-x-3">
+        {parts.map((part) => (
+          <span key={part} className="whitespace-nowrap">
+            {part}
+          </span>
+        ))}
+      </span>
+    </span>
+  );
+}
+
 function OfferRow({ offer, official, best, warranty, showCondition, inflated }: { offer: OfferView; official: number | null; best: boolean; warranty: boolean; showCondition: boolean; inflated: boolean }) {
   const { t, ago, lang, prefix } = useI18n();
   const { seller } = offer;
@@ -144,24 +160,8 @@ function OfferRow({ offer, official, best, warranty, showCondition, inflated }: 
             {stock}, {ago(offer.checkedAt)}
           </span>
         </span>
-        {deliveryParts.length > 0 && (
-          <span className="flex items-start gap-1.5 text-xs text-dim">
-            <Truck size={14} className="mt-px shrink-0 text-faint" aria-hidden="true" />
-            <span className="flex flex-wrap gap-x-3">
-              {deliveryParts.map((part) => (
-                <span key={part} className="whitespace-nowrap">
-                  {part}
-                </span>
-              ))}
-            </span>
-          </span>
-        )}
-        {delivery?.cod && (
-          <span className="flex items-center gap-1.5 text-xs text-dim">
-            <Banknote size={14} className="shrink-0 text-faint" aria-hidden="true" />
-            {t.product.cod}
-          </span>
-        )}
+        <InfoLine icon={Truck} parts={deliveryParts} />
+        {delivery?.cod && <InfoLine icon={Banknote} parts={[t.product.cod]} />}
         {!link && seller.phone && <span className="text-[13px] font-semibold text-ink">{seller.phone}</span>}
         {offer.promos.length > 0 && <PromoSheet promos={offer.promos} offer={offer} link={link} />}
         {offer.promos.map((promo) => (
