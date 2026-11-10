@@ -61,7 +61,6 @@ const MIN_DROP = 10;
 const MIN_DROP_SHARE = 0.005;
 const dhakaDay = (ms: number) => Math.floor((ms + DHAKA_OFFSET) / 86400000);
 
-
 // আসল দাম কমা: এখনকার সবচেয়ে কম দামটা কোনো দোকান গত `days` দিনে কমিয়েছে, আর তার ঠিক আগে পণ্যের সবচেয়ে কম দাম এর চেয়ে বেশি ছিল।
 // দোকানের নিজের আগের দামের চেয়ে কমতে হবে, তাই নতুন দোকান যোগ হয়ে সস্তা হওয়া ধরা হয় না; আগের হিসাবে এখন স্টকে না থাকা দোকানও থাকে, যাতে ভুল করে বাড়তি "কমেছে" না দেখায়
 export function recentDrops(summaries: ProductSummary[], offers: Offer[], history: PricePoint[], days = 7, now = Date.now()): RecentDrop[] {
