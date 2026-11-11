@@ -20,6 +20,25 @@ function slugListing(url: string): Listing {
   return { title: slugTitle(url), url, price: null, oldPrice: null };
 }
 
+// sitemap ছাড়া দোকান: প্রতিটা ক্যাটাগরির পাতা একে একে, নতুন পণ্য না এলে থামে
+async function categoryListings(
+  origin: string,
+  paths: string[],
+  parse: (html: string) => Listing[],
+  { pages = 30, param = "page", fetchPage = getText }: { pages?: number; param?: string; fetchPage?: (url: string) => Promise<string> } = {},
+): Promise<Listing[]> {
+  const all: Listing[] = [];
+  for (const path of paths) {
+    for (let page = 1; page <= pages; page++) {
+      const items = parse(await fetchPage(`${origin}${path}${page > 1 ? `?${param}=${page}` : ""}`));
+      const fresh = items.filter((item) => !all.some((seen) => seen.url === item.url));
+      if (fresh.length === 0) break;
+      all.push(...fresh);
+    }
+  }
+  return all;
+}
+
 // সাধারণ দোকান: product sitemap থেকে listing, ভার্সনের দাম parser থেকে, না থাকলে JSON-LD/itemprop/og।
 // নতুন দোকান যোগ করতে নিচের তালিকায় একটা এন্ট্রি লাগে।
 function sitemapStore(config: {
@@ -97,18 +116,7 @@ const startech: Store = {
   sample: `${STARTECH}/iphone-18-pro`,
   promoUrl: `${STARTECH}/information/offer`,
   variants: startechVariants,
-  async discover() {
-    const all: Listing[] = [];
-    for (const path of STARTECH_CATEGORIES) {
-      for (let page = 1; page <= 30; page++) {
-        const items = parseStartechListings(await getText(`${STARTECH}${path}${page > 1 ? `?page=${page}` : ""}`));
-        const fresh = items.filter((item) => !all.some((seen) => seen.url === item.url));
-        if (fresh.length === 0) break;
-        all.push(...fresh);
-      }
-    }
-    return all;
-  },
+  discover: () => categoryListings(STARTECH, STARTECH_CATEGORIES, parseStartechListings),
 };
 
 // Dazzle: product sitemap এ শুধু সাম্প্রতিক পণ্য, তাই ক্যাটালগের ব্র্যান্ডের সাব-ক্যাটাগরি (যেমন phones/iphone) থেকেও
@@ -255,17 +263,55 @@ const agora: Store = {
   },
 };
 
-// নতুন ধরনের পণ্য এলে এখানে ওদের ক্যাটাগরির path যোগ করুন
+// Othoba: sitemap ফাঁকা; আগে ক্যাটাগরি পাতা পড়া হতো, কিন্তু সাইটের ক্যাটাগরি পাতা এখন ব্রাউজারেও ফাঁকা
+// (পণ্য আসে Typesense সার্চ API দিয়ে: search.othoba.com)। তাই Typesense সার্চ এন্ডপয়েন্ট থেকে পণ্যের তালিকা পড়া হয়।
 const OTHOBA = "https://othoba.com";
-const OTHOBA_CATEGORIES = ["/water-purifier", "/pureit-water-purifier", "/honey", "/dates"];
+const OTHOBA_TYPESENSE = "https://search.othoba.com";
+const OTHOBA_API_KEY = "ekdHAQFqamb1XVMxKGLouPGTcwT9Wzgz";
+const OTHOBA_CATEGORIES = [
+  "water-dispensers-purifiers-2",
+  "water-purifiers-filters-accessories-5",
+  "honey-6",
+  "honey-7",
+  "nuts-dry-fruits-2",
+];
 
-function parseOthobaListings(html: string): Listing[] {
-  return [...html.matchAll(/data-productid="\d+">[\s\S]*?<a href="(\/[^"]+)">\s*<img[^>]*alt="([^"]*)"/g)].map(([, path, alt]) => ({
-    title: decode(alt),
-    url: `${OTHOBA}${path}`,
-    price: null,
-    oldPrice: null,
-  }));
+interface OthobaTypesenseResponse {
+  hits?: {
+    document?: {
+      Name?: string;
+      SeName?: string;
+      Price?: number;
+      OldPrice?: number;
+    };
+  }[];
+}
+
+async function discoverOthoba(): Promise<Listing[]> {
+  const all = new Map<string, Listing>();
+  for (const cat of OTHOBA_CATEGORIES) {
+    for (let page = 1; page <= 10; page++) {
+      const url = `${OTHOBA_TYPESENSE}/collections/Products/documents/search?q=*&filter_by=CategorySeName:[${cat}]&per_page=150&page=${page}`;
+      const data = (await getJson(url, { "x-typesense-api-key": OTHOBA_API_KEY }).catch(() => null)) as OthobaTypesenseResponse | null;
+      const hits = data?.hits ?? [];
+      if (!hits.length) break;
+      for (const h of hits) {
+        const doc = h.document;
+        if (!doc?.SeName) continue;
+        const productUrl = `${OTHOBA}/${doc.SeName}`;
+        if (!all.has(productUrl)) {
+          all.set(productUrl, {
+            title: doc.Name ? decode(doc.Name.trim()) : slugTitle(productUrl),
+            url: productUrl,
+            price: doc.Price || null,
+            oldPrice: doc.OldPrice && doc.Price && doc.OldPrice > doc.Price ? doc.OldPrice : null,
+          });
+        }
+      }
+      if (hits.length < 150) break;
+    }
+  }
+  return [...all.values()];
 }
 
 const othoba: Store = {
@@ -277,18 +323,32 @@ const othoba: Store = {
   sample: `${OTHOBA}/pureit-marina-rouvmf-6l-water-purifier-7-stage-purification-with-20lhour-high-speed-technology-best-buy-1040783`,
   promoUrl: null,
   variants: othobaVariants,
-  async discover() {
-    const all: Listing[] = [];
-    for (const path of OTHOBA_CATEGORIES) {
-      for (let page = 1; page <= 30; page++) {
-        const items = parseOthobaListings(await getText(`${OTHOBA}${path}${page > 1 ? `?pagenumber=${page}` : ""}`));
-        const fresh = items.filter((item) => !all.some((seen) => seen.url === item.url));
-        if (fresh.length === 0) break;
-        all.push(...fresh);
-      }
-    }
-    return all;
-  },
+  discover: discoverOthoba,
+};
+
+// PQS: sitemap প্রায় ৬MB, ৬০ সেকেন্ডে নামে না; ক্যাটাগরি পাতায় (?page=N) ৪৮টা করে।
+// ফোনের পাতায় দাম নেই ("Call for price"), তাই ফোনের ক্যাটাগরি বাদ
+const PQS = "https://www.pqs.com.bd";
+const PQS_CATEGORIES = ["/all-laptop", "/brand-pc", "/mini-pc", "/all-in-one-pc", "/monitor", "/router", "/earphone", "/headphone", "/speaker", "/smart-watch", "/power-bank", "/portable-ssd", "/tablet"];
+
+function parsePqsListings(html: string): Listing[] {
+  return [...html.matchAll(/<h4 class="name"><a href="([^"]+)">([^<]+)<\/a>/g)].map(([, url, name]) => ({
+    title: decode(name.trim()),
+    url,
+    price: null,
+    oldPrice: null,
+  }));
+}
+
+const pqs: Store = {
+  id: "pqs",
+  name: "PQS",
+  origin: PQS,
+  rendered: false,
+  condition: "official",
+  sample: `${PQS}/tp-link-archer-ax12-ax1500-router`,
+  promoUrl: null,
+  discover: () => categoryListings(PQS, PQS_CATEGORIES, parsePqsListings),
 };
 
 // BabyCare (OpenCart): sitemap-এ শুধু ক্যাটাগরি, পণ্য ক্যাটাগরি পাতায় (?page=N)-তে ২৪টা করে;
@@ -313,18 +373,8 @@ const babycare: Store = {
   condition: "official",
   sample: `${BABYCARE}/huggies-dry-medium-pant-diaper`,
   promoUrl: null,
-  async discover() {
-    const all: Listing[] = [];
-    for (const path of BABYCARE_CATEGORIES) {
-      for (let page = 1; page <= 15; page++) {
-        const items = parseBabycareListings(await getText(`${BABYCARE}${path}${page > 1 ? `?page=${page}` : ""}`).catch(() => ""));
-        const fresh = items.filter((item) => !all.some((seen) => seen.url === item.url));
-        if (fresh.length === 0) break;
-        all.push(...fresh);
-      }
-    }
-    return all;
-  },
+  discover: () =>
+    categoryListings(BABYCARE, BABYCARE_CATEGORIES, parseBabycareListings, { pages: 15, fetchPage: (url) => getText(url).catch(() => "") }),
 };
 
 // HNS Tech: sitemap নেই; ক্যাটাগরি পাতায় লিংক থাকে না, সব পণ্য /shop?page=1..N-এ।
@@ -761,6 +811,7 @@ export const stores: Store[] = [
   }),
   herhappyskin,
   othoba,
+  pqs,
   agora,
   sitemapStore({
     id: "beautybooth",
@@ -1071,6 +1122,52 @@ export const stores: Store[] = [
     path: "/",
     condition: "official",
     variants: pchouseVariants,
+  }),
+  sitemapStore({
+    id: "umrelo",
+    name: "Umrelo",
+    origin: "https://umrelo.com.bd",
+    sample: "https://umrelo.com.bd/product/tp-link-deco-x20-ax1800-whole-home-mesh-wi-fi-6-system/",
+    sitemap: "https://umrelo.com.bd/sitemap_index.xml",
+    path: "/product/",
+    condition: "official",
+    variants: wooVariants,
+  }),
+  sitemapStore({
+    id: "electronicsbangladesh",
+    name: "Electronics Bangladesh",
+    origin: "https://electronicsbangladesh.com",
+    sample: "https://electronicsbangladesh.com/product/samsung-galaxy-a56-5g",
+    sitemap: "https://electronicsbangladesh.com/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+  }),
+  sitemapStore({
+    id: "smartdeal",
+    name: "Smart Deal",
+    origin: "https://smartdeal.com.bd",
+    sample: "https://smartdeal.com.bd/product/jbl-clip-4-white-portable-bluetooth-speaker",
+    sitemap: "https://smartdeal.com.bd/sitemap.xml",
+    path: "/product/",
+    condition: "official",
+  }),
+  sitemapStore({
+    id: "computervision",
+    name: "Computer Vision",
+    origin: "https://computervision.com.bd",
+    sample: "https://computervision.com.bd/tp-link-archer-ax12-ax1500-wifi-router",
+    sitemap: "https://computervision.com.bd/sitemap.xml",
+    path: "/",
+    condition: "official",
+  }),
+  sitemapStore({
+    id: "onix",
+    name: "Onix Computer",
+    origin: "https://www.onixbd.com",
+    sample: "https://www.onixbd.com/kingston-sxs2000-1tb-portable-ssd",
+    sitemap: "https://www.onixbd.com/sitemap.xml",
+    path: "/",
+    condition: "official",
   }),
 ];
 

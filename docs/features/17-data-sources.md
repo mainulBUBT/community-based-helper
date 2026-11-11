@@ -28,7 +28,7 @@
 | Korean Skincare BD | `sitemap_index.xml` → `product-sitemap.xml` | পাতার Product JSON-LD `Offer` (`price` বেচা, `del` এ কাটা দাম, availability) — parser লাগে না | ✅ |
 | Choice Legacy | product sitemap খোলা, কিন্তু পণ্যের পাতায় ~১ অনুরোধ/মিনিট রেট লিমিট | | ⛔ নিয়মে চলে না |
 | MK Electronics | `sitemap-products.xml` | JSON-LD | ✅ |
-| Othoba | ক্যাটাগরি পাতা (`OTHOBA_CATEGORIES`, `?pagenumber=`), কারণ sitemap ফাঁকা | `othobaVariants`: JSON-LD এর `price` মূল দাম, `sale_price` ছাড়ের দাম | ✅ |
+| Othoba | Typesense Search API (`search.othoba.com`, সাইটের সার্চ ক্লায়েন্ট কি দিয়ে), কারণ sitemap ফাঁকা এবং ক্যাটাগরি পাতা এখন ক্লায়েন্ট-সাইড | `othobaVariants`: JSON-LD এর `price` মূল দাম, `sale_price` ছাড়ের দাম | ✅ |
 | Beauty Booth | `/sitemap/products.xml` (~৩.৩ MB, তাই `MAX_BODY` ৮ MB) | JSON-LD | ✅ |
 | ALZAK, BD Amajan Shop, UK Direct BD, Skin Revive BD | WooCommerce sitemap | `wooVariants` | ✅ |
 | Shei Tech | product sitemap (`sitemap_index.xml`) | `wooVariants` + JSON-LD | ✅ |
@@ -47,6 +47,15 @@
 | PC House | ফ্ল্যাট sitemap | `pchouseVariants`: og দাম কাটা দাম, ক্যাশ দাম `final_price` এ (৯ নভেম্বরের আগে কাটা দাম পড়া হতো) | ✅ |
 | iStockBD, CustomMacBD | Shopify sitemap | `shopifyProduct` | 🟡 ৯ নভেম্বর: `DordamBot` পরিচয়ে প্রথম অনুরোধেই 429 (সাধারণ অনুরোধে 200), তাই এদের দাম হালনাগাদ আটকে আছে; allowlist চাওয়া বাকি |
 | Computer Village | product sitemap | OpenCart (product page, `price-normal` span + `"price":N` ইকোমার্স ডেটা) | ✅ ৯ নভেম্বর: GitHub Actions-এ 503 (cloudflare ভ্যারিয়েন্স), ঘরের IP থেকে 200 — local runner দিয়ে পড়া হয়; ম্যাক-প্রো পাতায় ৩টা অফার যোগ |
+| PQS | ক্যাটাগরি পাতা (`PQS_CATEGORIES`, `?page=`), কারণ ~৬ MB sitemap ৬০ সেকেন্ডে নামে না; ফোন বাদ ("Call for price") | `itemprop="price"` + availability | ✅ ১১ নভেম্বর যোগ |
+| Umrelo | WooCommerce `sitemap_index.xml` (`/product/`) | `wooVariants` | ✅ ১১ নভেম্বর যোগ |
+| Electronics Bangladesh | `sitemap.xml` (`/product/`), অফিসিয়াল ফোন | `itemprop="price"` + availability | ✅ ১১ নভেম্বর যোগ |
+| Smart Deal | `sitemap.xml` (`/product/`, সব ধরনের পণ্য) | JSON-LD | ✅ ১১ নভেম্বর যোগ |
+| Computer Vision | ফ্ল্যাট `sitemap.xml` | `itemprop="price"` + availability | ✅ ১১ নভেম্বর যোগ |
+| Onix Computer | ফ্ল্যাট `sitemap.xml` | JSON-LD | ✅ ১১ নভেম্বর যোগ |
+| Goriber Gadget, Gadget Monkey, Tech Den, Tech Valley | sitemap/Woo খোলা | | ⛔ ১১ নভেম্বর বাদ: আমাদের পণ্যে দাম বেশিরভাগ বেশি |
+| SMS Gadget, Ryans, Techland | | | ⛔ Cloudflare challenge / 403 |
+| Gadget Bodda | sitemap নেই, পণ্য JS দিয়ে আসে | | ⛔ সাধারণ worker-এ পড়া যায় না |
 
 | Telegram এর দোকান | দোকান নিজে পাঠায় | ⬜ [telegram](15-telegram-bot.md) |
 | ক্রেতা | "দাম জানান" | 🟡 [price reports](05-price-reports.md) |
