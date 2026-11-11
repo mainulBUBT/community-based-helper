@@ -657,3 +657,7 @@ mobile, tablet, earbuds, speaker, ssd, desktop-এর ৮০টা স্পে�
 ৩১টা পণ্যে স্পেক (`supabase/batches/2026-11-11-specs-baby.sql`), স্কিনকেয়ারের মতো **Details** (Type, Suitable For, Key Ingredients, Use, Free From/Origin) আর থাকলে **Ingredients**। উৎস: ২৫টা Shajgoj; বাকি babycare.com.bd, eFamas, Arogga, Johnson's Baby Cream johnsonsbaby.in। ডায়াপারে ওজনের সীমা লেখা হয়নি — সাইজ-ভার্সনে বদলায়।
 
 - **বাকি ১টা:** Kodomo Anti-Rash Moisturizing Baby Lotion — BanglaShoppers বট-চেক দেখায়, আর ওয়েবে এই লোশনের নির্ভরযোগ্য পাতা মেলেনি।
+
+### স্নিকার্সের স্পেক (১১ নভেম্বর ২০২৬)
+
+২৫টা কপি স্নিকার্সে শুধু ডিজাইনের স্পেক (`supabase/batches/2026-11-11-specs-sneakers.sql`, মালিকের সিদ্ধান্ত): Type, Cut, Closure, Design (মডেলের ইতিহাস/বছর, শুধু নিশ্চিত হলে), আর Note "Copy (replica); materials and finish differ by shop"। আসল জুতার উপাদান লেখা হয়নি — কপিতে দোকানভেদে আলাদা। উৎস-লিংক নেই (`specs_source` আগের মতো), তাই এগুলো শুধু ডিবিতে, ক্যাটালগ ফাইলে নয়।
