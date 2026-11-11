@@ -1,11 +1,11 @@
 "use client";
 
-import { Loader2, Sparkles } from "lucide-react";
+import { BadgePercent, Clock, Loader2, Play, RefreshCw, Search, Sparkles, Tag, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState, type FormEvent, type ReactNode } from "react";
 import { AiSetup } from "@/components/admin/AiSetup";
 import { Field } from "@/components/admin/Field";
-import { Disclosure, GuidePanel, StepNumber } from "@/components/admin/Guide";
+import { Disclosure, StepNumber } from "@/components/admin/Guide";
 import { PageTitle, Panel, primaryButton, secondaryButton } from "@/components/admin/Panel";
 import { Tabs } from "@/components/admin/Tabs";
 import { Toggle } from "@/components/admin/Toggle";
@@ -34,7 +34,16 @@ const TONE: Record<JobState, string> = {
   never: "bg-surface-2 text-dim",
 };
 
-const STATES = Object.keys(TONE) as JobState[];
+const JOBS: { id: string; icon: LucideIcon }[] = [
+  { id: "prices", icon: Tag },
+  { id: "discover", icon: Search },
+  { id: "rebuild", icon: RefreshCw },
+  { id: "promos", icon: BadgePercent },
+];
+const rank = (job: Job) => {
+  const i = JOBS.findIndex((j) => j.id === job.id);
+  return i < 0 ? JOBS.length : i;
+};
 
 function JobStatus({ state }: { state: JobState }) {
   const { t } = useAdminI18n();
@@ -46,122 +55,103 @@ function JobStatus({ state }: { state: JobState }) {
   );
 }
 
-function StatusLegend() {
-  const { t } = useAdminI18n();
-  return (
-    <div className="border-b border-line-soft px-5 py-3">
-      <Disclosure summary={t.admin.jobs.statusLegend}>
-        <ul className="mt-3 grid gap-2 sm:grid-cols-2">
-          {STATES.map((state) => (
-            <li key={state} className="flex flex-col gap-1 text-[13px] sm:flex-row sm:items-center sm:gap-2">
-              <JobStatus state={state} />
-              <span className="text-dim">{t.admin.jobs.statusHelp[state]}</span>
-            </li>
-          ))}
-        </ul>
-      </Disclosure>
-    </div>
-  );
-}
-
-function JobRow({ job, now, onChanged }: { job: Job; now: number; onChanged: () => void }) {
+function JobCard({ job, now, onChanged }: { job: Job; now: number; onChanged: () => void }) {
   const { t, ago } = useAdminI18n();
   const { busy, run } = useAdminAction();
   const info = t.admin.jobs.info[job.id as keyof typeof t.admin.jobs.info];
   const name = info?.name ?? job.name;
+  const Icon = JOBS.find((j) => j.id === job.id)?.icon ?? Clock;
   const state = jobState(job, now);
   const queued = state === "queued";
-  const runHint = !job.enabled ? t.admin.jobs.runPausedHint : queued ? t.admin.jobs.runQueuedHint : null;
+  const failed = state === "failed";
 
   return (
-    <li className="flex flex-col gap-3 px-4 py-4 sm:px-5">
-      <div className="flex flex-wrap items-center gap-2">
-        <h3 className="text-base font-semibold">{name}</h3>
-        <JobStatus state={state} />
-        {AI_JOBS.has(job.id) && (
-          <span className="flex items-center gap-1 rounded-full bg-brand-soft px-2.5 py-0.5 text-xs font-semibold text-brand-text">
-            <Sparkles size={12} aria-hidden="true" />
-            {t.admin.jobs.usesAi}
+    <li className={`flex flex-col rounded-2xl border bg-surface ${failed ? "border-sale/40" : "border-line-soft"}`}>
+      <div className="flex flex-1 flex-col gap-3 p-4 sm:p-5">
+        <div className="flex items-start gap-3">
+          <span className={`flex size-11 shrink-0 items-center justify-center rounded-xl ${failed ? "bg-sale-soft text-sale" : "bg-brand-soft text-brand"}`}>
+            <Icon size={20} aria-hidden="true" />
           </span>
+          <div className="flex min-w-0 flex-1 flex-col gap-1.5">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <h3 className="text-base font-semibold">{name}</h3>
+              <JobStatus state={state} />
+            </div>
+            {info && <p className="text-sm text-dim">{info.what}</p>}
+          </div>
+        </div>
+
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-[13px] text-dim">
+          <span className="flex items-center gap-1.5">
+            <Clock size={13} aria-hidden="true" className="shrink-0" />
+            {info?.when ?? job.schedule}
+          </span>
+          {job.lastRunAt && <span>{t.admin.jobs.lastRun(ago(job.lastRunAt))}</span>}
+          {AI_JOBS.has(job.id) && (
+            <span className="flex items-center gap-1 rounded-full bg-brand-soft px-2 py-0.5 text-xs font-semibold text-brand-text">
+              <Sparkles size={12} aria-hidden="true" />
+              {t.admin.jobs.usesAi}
+            </span>
+          )}
+        </div>
+
+        {failed && (
+          <div className="flex flex-col gap-1 rounded-xl bg-sale-soft px-3.5 py-3 text-[13px] text-ink">
+            {job.lastMessage && <p className="break-words">{job.lastMessage}</p>}
+            {info && (
+              <p>
+                <strong>{t.admin.jobs.whatToDo}: </strong>
+                {info.ifFails}{" "}
+                <Link href="/admin/logs/" className="font-semibold text-brand hover:underline">
+                  {t.admin.nav.logs}
+                </Link>
+              </p>
+            )}
+          </div>
         )}
+        {!failed && job.lastMessage && (
+          <Disclosure summary={t.admin.jobs.lastResult}>
+            <div className="mt-2 flex flex-col gap-1.5 rounded-xl bg-surface-2/60 px-3.5 py-3 text-[13px]">
+              <p className="break-words">{job.lastMessage}</p>
+              <Link href="/admin/logs/" className="w-fit font-semibold text-brand hover:underline">
+                {t.admin.jobs.allRuns}
+              </Link>
+            </div>
+          </Disclosure>
+        )}
+        {state === "stuck" && <p className="rounded-xl bg-gold-soft px-3.5 py-3 text-[13px] text-ink">{t.admin.jobs.stuckHint}</p>}
       </div>
-      {info && <p className="text-sm text-dim">{info.what}</p>}
 
-      <dl className="grid grid-cols-2 gap-x-4 gap-y-2 rounded-xl bg-surface-2/50 px-3 py-2.5 text-[13px] sm:px-4">
-        <div>
-          <dt className="text-dim">{t.admin.jobs.schedule}</dt>
-          <dd className="font-semibold">{job.schedule}</dd>
-        </div>
-        <div>
-          <dt className="text-dim">{t.admin.jobs.lastRun}</dt>
-          <dd className="font-semibold">{job.lastRunAt ? ago(job.lastRunAt) : t.admin.jobs.neverRan}</dd>
-        </div>
-        {job.lastMessage && (
-          <div className="col-span-2">
-            <dt className="text-dim">{t.admin.jobs.lastResult}</dt>
-            <dd className="break-words">{job.lastMessage}</dd>
-          </div>
-        )}
-      </dl>
-
-      {state === "failed" && info && (
-        <p className="rounded-xl border border-sale/20 bg-sale-soft px-4 py-3 text-[13px] text-ink">
-          <strong>{t.admin.jobs.whatToDo}: </strong>
-          {info.ifFails}{" "}
-          <Link href="/admin/logs/" className="font-semibold text-brand hover:underline">
-            {t.admin.nav.logs}
-          </Link>
-        </p>
-      )}
-      {state === "stuck" && <p className="rounded-xl border border-gold/30 bg-gold-soft px-4 py-3 text-[13px] text-ink">{t.admin.jobs.stuckHint}</p>}
-
-      <div className="flex flex-col gap-1.5 border-t border-line-soft pt-3">
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2.5">
-            <Toggle
-              label={t.admin.jobs.enabledAria(name)}
-              checked={job.enabled}
-              disabled={busy}
-              onChange={async (enabled) => {
-                if (await run(() => setJobEnabled(job, enabled), enabled ? t.admin.jobs.enabledToast : t.admin.jobs.disabledToast)) onChanged();
-              }}
-            />
-            <span className="text-sm font-semibold">{t.admin.jobs.autoLabel}</span>
-          </div>
-          <button
-            type="button"
-            disabled={!job.enabled || queued || busy}
-            onClick={async () => {
-              if (await run(() => requestJobRun(job), t.admin.jobs.runQueuedToast)) onChanged();
+      <div className="flex items-center justify-between gap-3 border-t border-line-soft px-4 py-3 sm:px-5">
+        <label className="flex items-center gap-2.5 text-sm font-semibold">
+          <Toggle
+            label={t.admin.jobs.enabledAria(name)}
+            checked={job.enabled}
+            disabled={busy}
+            onChange={async (enabled) => {
+              if (await run(() => setJobEnabled(job, enabled), enabled ? t.admin.jobs.enabledToast : t.admin.jobs.disabledToast)) onChanged();
             }}
-            className={`${secondaryButton} shrink-0`}
-          >
-            {queued ? t.admin.jobs.runQueued : t.admin.jobs.runNow}
-          </button>
-        </div>
-        {runHint && <span className="text-xs text-dim">{runHint}</span>}
+          />
+          {t.admin.jobs.autoLabel}
+        </label>
+        <button
+          type="button"
+          disabled={!job.enabled || queued || busy}
+          title={job.enabled ? undefined : t.admin.jobs.runPausedHint}
+          onClick={async () => {
+            if (await run(() => requestJobRun(job), t.admin.jobs.runQueuedToast)) onChanged();
+          }}
+          className={`${secondaryButton} flex shrink-0 items-center gap-1.5`}
+        >
+          <Play size={14} aria-hidden="true" />
+          {queued ? t.admin.jobs.runQueued : t.admin.jobs.runNow}
+        </button>
       </div>
-
-      {info && (
-        <Disclosure summary={t.admin.jobs.details}>
-          <dl className="mt-2 flex flex-col gap-2 text-[13px]">
-            <div>
-              <dt className="font-semibold">{t.admin.jobs.onRunLabel}</dt>
-              <dd className="text-dim">{info.onRun}</dd>
-            </div>
-            <div>
-              <dt className="font-semibold">{t.admin.jobs.ifFailsLabel}</dt>
-              <dd className="text-dim">{info.ifFails}</dd>
-            </div>
-          </dl>
-        </Disclosure>
-      )}
     </li>
   );
 }
 
 function JobsPanel() {
-  const { t } = useAdminI18n();
   const { data, loading, reload } = useAsync(listJobs, []);
   const [now, setNow] = useState(() => Date.now());
   const active = (data ?? []).some((job) => ["running", "queued"].includes(jobState(job, now)));
@@ -177,15 +167,11 @@ function JobsPanel() {
 
   if (loading || !data) return <ListSkeleton rows={3} />;
   return (
-    <Panel title={t.admin.jobs.regularJobs}>
-      {active && <p className="border-b border-line-soft bg-brand-soft px-5 py-2.5 text-[13px] text-brand-text">{t.admin.jobs.autoRefresh}</p>}
-      <StatusLegend />
-      <ul className="divide-y divide-line-soft">
-        {data.map((job) => (
-          <JobRow key={job.id} job={job} now={now} onChanged={reload} />
-        ))}
-      </ul>
-    </Panel>
+    <ul className="grid gap-4 md:grid-cols-2">
+      {[...data].sort((a, b) => rank(a) - rank(b)).map((job) => (
+        <JobCard key={job.id} job={job} now={now} onChanged={reload} />
+      ))}
+    </ul>
   );
 }
 
@@ -247,11 +233,9 @@ export default function JobsAdminPage() {
     <>
       <PageTitle title={t.admin.jobs.title} subtitle={t.admin.jobs.subtitle} />
       <div className="flex flex-col gap-6">
-        <GuidePanel title={t.admin.jobs.guideTitle} steps={t.admin.jobs.guide} />
         <Tabs tabs={TABS.map((id) => ({ id, label: t.admin.jobs.tabs[id] }))} active={tab} onChange={setTab} label={t.admin.jobs.title} idPrefix="jobs" />
-        <div role="tabpanel" id="jobs-jobs" hidden={tab !== "jobs"} className="flex flex-col gap-6">
+        <div role="tabpanel" id="jobs-jobs" hidden={tab !== "jobs"}>
           <JobsPanel />
-          <GuidePanel title={t.admin.jobs.flowTitle} steps={t.admin.jobs.flow} />
         </div>
         {/* সেভের পরে আবার বসে, যাতে সেভ করা মান দেখায় */}
         <div role="tabpanel" id="jobs-ai" hidden={tab !== "ai"}>
