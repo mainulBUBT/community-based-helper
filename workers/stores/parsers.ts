@@ -235,7 +235,14 @@ export function sumashVariants(html: string): ShopVariant[] {
       names.set(option.id, [String(group.name), String(option.value).replace(/_[0-9a-f]{6}$/i, "")]);
     }
   }
-  return ([] as unknown[]).concat(hydrate(data, product.variants) ?? []).filter(isObject).flatMap((v) => {
+  const rows = ([] as unknown[]).concat(hydrate(data, product.variants) ?? []).filter(isObject);
+  // অপশনহীন এক-দামের পণ্যে variants খালি পড়ে; তখন পণ্যের নিজের দাম/স্টক নইলে স্টক বদল কখনো ধরা পড়ে না
+  if (rows.length === 0) {
+    if (hydrate(data, product.status) !== 1) return [];
+    const stock = hydrate(data, product.stock);
+    return variant([], hydrate(data, product.discount_price) ?? hydrate(data, product.price), hydrate(data, product.price), typeof stock === "number" ? stock > 0 : null);
+  }
+  return rows.flatMap((v) => {
     if (v.status !== 1) return [];
     const ids = Array.isArray(v.option_value_id_list) ? v.option_value_id_list : [];
     const attributes = ids.flatMap((id) => (names.has(id) ? [names.get(id)!] : []));
@@ -382,9 +389,14 @@ export async function hnstechProduct(url: string): Promise<ShopProduct | null> {
 // রং বাদ — তার label ফাঁকা (নাম tooltip এ), আর JSON-LD এ ভার্সন-রেঞ্জের সবচেয়ে কম দাম থাকে বলেই এই parser
 export function rioVariants(html: string): ShopVariant[] {
   const at = html.indexOf("window.productVariants");
-  const open = at < 0 ? -1 : html.indexOf("[", at);
-  const list = open < 0 ? null : jsonAt(html, open);
-  if (!Array.isArray(list)) return [];
+  const list = at >= 0 && /^window\.productVariants\s*=\s*\[/.test(html.slice(at)) ? jsonAt(html, html.indexOf("[", at)) : null;
+  // অপশনহীন এক-দামের পণ্যে productVariants null; তখন দাম JSON-LD থেকে আর স্টক কার্ট-ঘরের Stock Out বাটন থেকে
+  if (!Array.isArray(list)) {
+    const section = /id="product_details_add_to_cart_section">([\s\S]*?)<\/div>/.exec(html)?.[1];
+    const quote = structuredQuote(html);
+    if (!section || !quote) return [];
+    return variant([], quote.price, quote.oldPrice, /stock_out_btn/.test(section) ? false : /cart_qty|add_to_cart|order/i.test(section) ? true : null);
+  }
   const label = new Map<string, string>();
   for (const [, id, text] of html.matchAll(/<label[^>]*for="(option_[a-z]+_\d+|flexRadioStorage\d+|exampleRegion\d+)"[^>]*>([\s\S]*?)<\/label>/g)) {
     label.set(id, stripTags(text));
