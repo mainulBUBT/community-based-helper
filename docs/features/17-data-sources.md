@@ -661,3 +661,10 @@ mobile, tablet, earbuds, speaker, ssd, desktop-এর ৮০টা স্পে�
 ### স্নিকার্সের স্পেক (১১ নভেম্বর ২০২৬)
 
 ২৫টা কপি স্নিকার্সে শুধু ডিজাইনের স্পেক (`supabase/batches/2026-11-11-specs-sneakers.sql`, মালিকের সিদ্ধান্ত): Type, Cut, Closure, Design (মডেলের ইতিহাস/বছর, শুধু নিশ্চিত হলে), আর Note "Copy (replica); materials and finish differ by shop"। আসল জুতার উপাদান লেখা হয়নি — কপিতে দোকানভেদে আলাদা। উৎস-লিংক নেই (`specs_source` আগের মতো), তাই এগুলো শুধু ডিবিতে, ক্যাটালগ ফাইলে নয়।
+
+### মধু, খেজুর আর গুড়ের স্পেক (১১ নভেম্বর ২০২৬)
+
+৩৪টা পণ্যে **Details** স্পেক (`supabase/batches/2026-11-11-specs-food.sql`): মধুতে Honey Type/Origin, খেজুরে Variety/Origin/Form, গুড়ে Type/Made From/Free From। উৎস: Rokomari (Highlights), Othoba (Specification), Chaldal, Khaas Food, Haramain; পাতা পাতলা হলে ব্র্যান্ড/ডিস্ট্রিবিউটরের পাতা (Dabur, Marico, Organic Nutrition, ePharma)।
+
+- **ইচ্ছা করে বাদ:** Medjool-এর দেশ (দোকানভেদে মিশর ইত্যাদি), Dabur Sundarbans আর Karkuma-র দেশ (উৎসগুলো একমত নয়)। ক্যাটালগ ফাইলগুলো (honey/dates/date-jaggery) round-trip ফরম্যাটে নেই, তাই এগুলো শুধু ডিবিতে।
+- **বাকি ২টা:** Hosen Pure Honey আর Dabbas Dates — ওজন ছাড়া কোথাও কোনো তথ্য নেই।
