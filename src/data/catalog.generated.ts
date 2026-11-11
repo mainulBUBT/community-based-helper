@@ -32103,8 +32103,39 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Mascara"
+     },
+     {
+      "label": "Brush",
+      "value": "Conical fiber brush"
+     },
+     {
+      "label": "Effect",
+      "value": "False-lash look: volume and length without clumps"
+     },
+     {
+      "label": "Wear",
+      "value": "All day, no flaking"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "AQUA (WATER), CERA ALBA (BEESWAX), PARAFFIN, GLYCERYL STEARATE, ORYZA SATIVA (RICE) BRAN WAX, BUTYLENE GLYCOL, PALMITIC ACID, ACACIA SENEGAL GUM , POLYBUTENE, COPERNICIA CERIFERA (CARNAUBA) WAX, AMINOMETHYL PROPANOL, STEARIC ACID, VP/EICOSENE COPOLYMER, TOCOPHEROL, HYDROXYETHYLCELLULOSE, DIMETHICONE, POLYESTER-4, ETHYLHEXYLGLYCERIN, SODIUM NITRATE, PHENOXYETHANOL, POTASSIUM SORBATE, CI 77499 (IRON OXIDES)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/essence-lash-princess-false-lash-mascara"
  },
  {
   "id": "essence-lash-princess-false-lash-effect-waterproof-mascara",
@@ -32133,8 +32164,39 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Waterproof mascara"
+     },
+     {
+      "label": "Brush",
+      "value": "Conical fiber brush"
+     },
+     {
+      "label": "Effect",
+      "value": "Dramatic volume and sculpted length"
+     },
+     {
+      "label": "Other",
+      "value": "Ophthalmologically tested"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "ISODODECANE, CERA ALBA (BEESWAX), AQUA (WATER), NYLON-12, EUPHORBIA CERIFERA (CANDELILLA) WAX, TRIMETHYLSILOXYSILICATE, VP/HEXADECENE COPOLYMER, PROPYLENE GLYCOL, COPERNICIA CERIFERA (CARNAUBA) WAX, RICINUS COMMUNIS (CASTOR) SEED OIL, TOCOPHERYL ACETATE, BISABOLOL, TOCOPHEROL, ETHYLHEXYLGLYCERIN, POLYESTER-4, POTASSIUM HYDROXIDE, PHENOXYETHANOL, POTASSIUM SORBATE, FARNESOL, CI 77499 (IRON OXIDES)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/essence-lash-princess-false-lash-effect-mascara-waterproof"
  },
  {
   "id": "essence-i-love-extreme-crazy-volume-mascara",
@@ -32163,8 +32225,39 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Mascara"
+     },
+     {
+      "label": "Brush",
+      "value": "Elastomer brush"
+     },
+     {
+      "label": "Effect",
+      "value": "Intense, defined volume"
+     },
+     {
+      "label": "Other",
+      "value": "Ophthalmologically tested"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "AQUA (WATER), CARNAUBA (COPERNICIA CERIFERA) WAX, CERA ALBA (BEESWAX), BUTYLENE GLYCOL, STEARIC ACID, VP/EICOSENE COPOLYMER, PALMITIC ACID, POLYBUTENE, GLYCERYL STEARATE, ACACIA SENEGAL GUM, CANDELILLA (EUPHORBIA CERIFERA) WAX, PVP, CAPRYLYL GLYCOL, POLYVINYL ALCOHOL, AMINOMETHYL PROPANOL, SODIUM DEHYDROACETATE, PHENOXYETHANOL, CI 77499 (IRON OXIDES)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/essence-i-love-extreme-crazy-volume-mascara"
  },
  {
   "id": "maybelline-colossal-kajal",
@@ -32193,8 +32286,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Kajal pencil"
+     },
+     {
+      "label": "Wear",
+      "value": "Up to 24 hours"
+     },
+     {
+      "label": "Other",
+      "value": "Waterproof, smudge-free; with Aloe Vera and Vitamin C"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/maybelline-colossal-kohl-kajal-24h-black"
  },
  {
   "id": "maybelline-lash-sensational-sky-high-mascara",
@@ -32223,8 +32334,34 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Mascara"
+     },
+     {
+      "label": "Brush",
+      "value": "Flex Tower brush"
+     },
+     {
+      "label": "Effect",
+      "value": "Full volume and length"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Bamboo extract, fibers"
+     },
+     {
+      "label": "Other",
+      "value": "Ophthalmologist tested; suitable for sensitive eyes and contact lens wearers"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/maybelline-new-york-lash-sensational-sky-high-waterproof-mascara-2"
  },
  {
   "id": "lakme-eyeconic-kajal",
@@ -32253,8 +32390,30 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Kajal"
+     },
+     {
+      "label": "Wear",
+      "value": "Up to 22 hours"
+     },
+     {
+      "label": "Other",
+      "value": "Smudge-proof, waterproof"
+     },
+     {
+      "label": "Origin",
+      "value": "India"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/lakme-eyeconic-kajal-deep-black"
  },
  {
   "id": "w7-liquid-eyeliner-pot",
@@ -32283,8 +32442,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Liquid eyeliner pot"
+     },
+     {
+      "label": "Applicator",
+      "value": "Brush included (dip-in)"
+     },
+     {
+      "label": "Color",
+      "value": "Black"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/w7-liquid-eyeliner-pot"
  },
  {
   "id": "technic-mega-lash-water-resistant-mascara",
@@ -32313,8 +32490,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Water-resistant mascara"
+     },
+     {
+      "label": "Effect",
+      "value": "Lift, load and magnify lashes"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/technic-mega-lash-waterproof-mascara"
  },
  {
   "id": "technic-mega-lash-volumising-mascara",
@@ -32343,8 +32534,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Mascara"
+     },
+     {
+      "label": "Effect",
+      "value": "Lift and volume, ultra-black"
+     },
+     {
+      "label": "Other",
+      "value": "Suitable for vegetarians"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/technic-mega-lash-volumising-mascara"
  },
  {
   "id": "ponds-bright-miracle-bb-cream",
@@ -32373,8 +32582,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "BB cream (vitamin cream + light foundation)"
+     },
+     {
+      "label": "Use",
+      "value": "Instant spot coverage, light make-up glow"
+     },
+     {
+      "label": "Skin Type",
+      "value": "All skin types"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://skincareshop.com.bd/product/ponds-bb-cream-instant-spot-coverage-light-make-up-glow-ivory-18gm/"
  },
  {
   "id": "maybelline-baby-lips-color-lip-balm-spf11",
@@ -32403,8 +32630,30 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Tinted lip balm"
+     },
+     {
+      "label": "Moisture",
+      "value": "Up to 8 hours"
+     },
+     {
+      "label": "Other",
+      "value": "Retractable stick"
+     },
+     {
+      "label": "Origin",
+      "value": "India"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/maybelline-baby-lips-color-spf11-lip-balm-pink-lolita"
  },
  {
   "id": "wet-n-wild-megalast-liquid-catsuit-matte-lipstick",
@@ -32433,8 +32682,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Liquid lipstick"
+     },
+     {
+      "label": "Finish",
+      "value": "Ultra-matte, highly pigmented"
+     },
+     {
+      "label": "Other",
+      "value": "Lightweight, does not dry lips"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/wet-n-wild-megalast-liquid-catsuit-matte-lipstick-give-me-mocha"
  },
  {
   "id": "wet-n-wild-photo-focus-dewy-foundation",
@@ -32463,8 +32730,34 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Liquid foundation"
+     },
+     {
+      "label": "Skin Type",
+      "value": "Normal to dry"
+     },
+     {
+      "label": "Coverage",
+      "value": "Medium to full, buildable"
+     },
+     {
+      "label": "Finish",
+      "value": "Dewy"
+     },
+     {
+      "label": "Other",
+      "value": "Cruelty-free, gluten-free, talc-free"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/wet-n-wild-photo-focus-dewy-foundation-golden-beige"
  },
  {
   "id": "wet-n-wild-photo-focus-matte-foundation",
@@ -32493,8 +32786,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Liquid foundation"
+     },
+     {
+      "label": "Finish",
+      "value": "Matte, light-diffusing"
+     },
+     {
+      "label": "Other",
+      "value": "Tested under 7 photo lighting conditions; helps prevent white cast"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/wet-n-wild-photo-focus-foundation"
  },
  {
   "id": "maybelline-superstay-matte-ink-liquid-lipstick",
@@ -32523,8 +32834,30 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Liquid lipstick"
+     },
+     {
+      "label": "Finish",
+      "value": "Matte, no-transfer"
+     },
+     {
+      "label": "Wear",
+      "value": "Up to 16 hours"
+     },
+     {
+      "label": "Applicator",
+      "value": "Arrow applicator"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/maybelline-new-york-super-stay-matte-ink-liquid-lipstick-40-believer"
  },
  {
   "id": "maybelline-superstay-vinyl-ink-liquid-lipstick",
@@ -32553,8 +32886,30 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Liquid lipstick"
+     },
+     {
+      "label": "Finish",
+      "value": "Vinyl shine, smudge and transfer resistant"
+     },
+     {
+      "label": "Wear",
+      "value": "Up to 16 hours"
+     },
+     {
+      "label": "Origin",
+      "value": "China"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/maybelline-new-york-super-stay-vinyl-ink-liquid-lipstick-130-extra"
  },
  {
   "id": "maybelline-fit-me-matte-poreless-foundation",
@@ -32585,8 +32940,30 @@ export const catalogProducts: Product[] = [
   "regions": [
    "India"
   ],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Liquid foundation"
+     },
+     {
+      "label": "Skin Type",
+      "value": "Normal to oily"
+     },
+     {
+      "label": "Finish",
+      "value": "Matte, pore-blurring"
+     },
+     {
+      "label": "Other",
+      "value": "Dermatologist and allergy tested"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/maybelline-fit-me-matte-poreless-foundation-soft-tan-228"
  },
  {
   "id": "lor-al-paris-infallible-32h-fresh-wear-foundation",
@@ -32614,8 +32991,38 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Liquid foundation"
+     },
+     {
+      "label": "Coverage",
+      "value": "Medium to full, buildable"
+     },
+     {
+      "label": "Finish",
+      "value": "Natural"
+     },
+     {
+      "label": "Wear",
+      "value": "Up to 32 hours; transfer, sweat and humidity resistant"
+     },
+     {
+      "label": "SPF",
+      "value": "SPF 25"
+     },
+     {
+      "label": "Other",
+      "value": "Non-comedogenic"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.arogga.com/product/86083/loreal-paris-infallible-fresh-wear-32h-liquid-foundation-in-shade-420-true-beige-30ml"
  },
  {
   "id": "google-pixel-9",

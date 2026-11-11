@@ -668,3 +668,7 @@ mobile, tablet, earbuds, speaker, ssd, desktop-এর ৮০টা স্পে�
 
 - **ইচ্ছা করে বাদ:** Medjool-এর দেশ (দোকানভেদে মিশর ইত্যাদি), Dabur Sundarbans আর Karkuma-র দেশ (উৎসগুলো একমত নয়)। ক্যাটালগ ফাইলগুলো (honey/dates/date-jaggery) round-trip ফরম্যাটে নেই, তাই এগুলো শুধু ডিবিতে।
 - **বাকি ২টা:** Hosen Pure Honey আর Dabbas Dates — ওজন ছাড়া কোথাও কোনো তথ্য নেই।
+
+### মেকআপের স্পেক (১১ নভেম্বর ২০২৬)
+
+১৮টা মেকআপ পণ্যে **Details** স্পেক (`supabase/batches/2026-11-11-specs-makeup.sql`): Type, Finish, Coverage, Wear, Skin Type, Brush/Applicator, Origin — যা পাতায় লেখা। উৎস: ১৬টা Shajgoj, L'Oréal Arogga, Pond's Skincare Shop। উপাদানের তালিকা শুধু ৩টা Essence মাস্কারায়; লিপস্টিক/ফাউন্ডেশনের পাতাগুলো নির্দিষ্ট শেডের, শেডভেদে রঙের উপাদান বদলায়, তাই বাদ। Maybelline Baby Lips-এর পাতায় "SPF 20" লেখা কিন্তু পণ্য SPF11 — SPF লেখা হয়নি।
