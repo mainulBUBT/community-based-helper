@@ -618,3 +618,21 @@ Ragen, DOB Skateshop, SneakersBD Official, Sneaker Zone, Splayd, Three's-এর 
 - MacBook Pro 14" M1 Pro, 16" M1 Pro, 14" M2 Pro; Mac mini M2, Mac mini M2 Pro; Redmi 13, Redmi Turbo 4 Pro, Pixel 8 Pro, Xiaomi Pad 8, Huawei Watch Fit 5, HP 255R G10, Anker Soundcore Motion+।
 - DB-তে শুধু এই ১২টার সারি চালানো হয়েছে (পুরো `seed.sql` নয়)।
 - বাদ: iPhone 13 Pro/Pro Max (একই পণ্যে ৳৬৬k আর ৳১.৪ লাখ, পাতায় নতুন না ব্যবহৃত লেখা নেই), 16" M1 Pro 512GB আর 16" M2 Pro (১ দোকান), Kry-র iPhone 13 Pro (Pre-Owned)। DJI, DeepCool, Golden Rose, EliteBook, OmniBook খোঁজ অস্পষ্ট (শত শত মডেল), তাই নেওয়া হয়নি।
+
+### ছোট ক্যাটাগরির স্পেক (১১ নভেম্বর ২০২৬)
+
+charger ৩, watch ৩, trimmer ৩, powerbank, fan, water-purifier ১টা করে — ১২টা স্পেকহীন পণ্যে স্পেক (`supabase/batches/2026-11-11-specs-small-categories.sql`, শুধু খালি স্পেকে বসে)।
+
+- **উৎস:** Star Tech-এর টেবিল (Watch8 Classic); টেবিল নেই এমন Star Tech পাতার Key Features আর বিবরণ থেকে হাতে (Zolo 20W/30W, A2656, Solove F3, S500); Apple Gadgets (KM-600 — Diamu-র সাথে মেলানো, Kumi GT3 Fit, Kent Grand Star); Diamu (KM-6637); Gadget & Gear (GT 7, শুধু 46mm-এর মান); Kry (Zolo 25000mAh)।
+- **ইচ্ছা করে বাদ:** Watch8 Classic-এর ব্যাটারি mAh (Star Tech-এ 40/44mm-এর ভুল সংখ্যা), Zolo 25000-এর পোর্ট সংখ্যা (দোকানের লেখা অনিশ্চিত)।
+- **খেয়াল:** Apple Gadgets-এর `kemei-km-6637-4-in-1-shaver-for-women` লিংক আসলে **KM-1916**-এর পাতা খোলে — ওই অফার KM-6637-এর নয়, যাচাই করে সরানো দরকার।
+- Watch8 Classic, Kumi GT3 Fit, Zolo 25000 ক্যাটালগ ফাইলে নেই (সরাসরি ডিবিতে), তাই এদের স্পেক শুধু ব্যাচে।
+
+### ল্যাপটপের স্পেক (১১ নভেম্বর ২০২৬)
+
+৩৯টা স্পেকহীন ল্যাপটপে স্পেক (`supabase/batches/2026-11-11-specs-laptops.sql`, শুধু খালি স্পেকে বসে)।
+
+- ১৪টার Star Tech টেবিল আগেই `specs.json`-এ ছিল, ডিবিতে ওঠেনি (seed insert-only)। বাকিগুলো Sumash Tech, Global Brand, Apple Gadgets, Gadget & Gear, Arafa Telecom থেকে।
+- Apple support আর CustomMac সৎ UA-তে 429 দেয়, তাই ১০টা Mac-এর `specsSource` Sumash / Gadget & Gear / Star Tech-এ বদলানো; 13" M3 শুধু Apple-এর পাতা থেকে হাতে।
+- যে পণ্যের ভার্সনে চিপ, RAM, স্টোরেজ বা GPU আলাদা, সেখানে ওই ঘরগুলো স্পেক থেকে বাদ — পাতা একটা ভার্সনের, আর ভার্সন বাছাইয়ে এগুলো এমনিতেই দেখায়।
+- দোকানের ভুল লেখা বাদ: MacBook Pro 16" M1 Pro-তে "VGA: Yes", 14" M1 Pro-তে "Mattel"/"Sliver", M5 Max-এ হেডফোন জ্যাককে মাইক্রোফোন বলা।

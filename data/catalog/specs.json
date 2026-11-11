@@ -19979,8 +19979,96 @@
    ]
   }
  ],
- "https://www.startech.com.bd/anker-zolo-20w-type-c-charger-adapter": [],
- "https://www.startech.com.bd/anker-zolo-30w-type-c-charger-adapter": [],
+ "https://www.startech.com.bd/anker-zolo-20w-type-c-charger-adapter": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "MPN",
+     "value": "A2699J11"
+    },
+    {
+     "label": "Port",
+     "value": "1 × USB-C"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Output",
+     "value": "20W max — 5V⎓3A (15W), 9V⎓2.22A (20W)"
+    },
+    {
+     "label": "Input",
+     "value": "100-240V~ 0.5A 50-60Hz"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "USB-C PD, Anker IQ"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Safety",
+     "value": "MultiProtect: temperature control, overvoltage and short-circuit protection"
+    },
+    {
+     "label": "Compatibility",
+     "value": "iPhone, Samsung, Google Pixel and other USB-C devices"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/anker-zolo-30w-type-c-charger-adapter": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "MPN",
+     "value": "A2698J11 / A2698J21"
+    },
+    {
+     "label": "Port",
+     "value": "1 × USB-C"
+    },
+    {
+     "label": "Technology",
+     "value": "GaN II"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Output",
+     "value": "30W max — 5V⎓3A, 9V⎓3A, 15V⎓2A, 20V⎓1.5A"
+    },
+    {
+     "label": "Input",
+     "value": "100-240V~ 0.5A 50-60Hz"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "USB-C PD 3.0, Anker IQ"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Compatibility",
+     "value": "iPhone, Samsung, Xiaomi, iPad and other USB-C devices"
+    }
+   ]
+  }
+ ],
  "https://www.startech.com.bd/anker-nano-45w-charger-adapter": [
   {
    "group": "Basic Information",
@@ -20063,7 +20151,51 @@
    ]
   }
  ],
- "https://www.startech.com.bd/anker-25w-charger-adapter": [],
+ "https://www.startech.com.bd/anker-25w-charger-adapter": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "MPN",
+     "value": "A2656J11"
+    },
+    {
+     "label": "Port",
+     "value": "1 × USB-C"
+    },
+    {
+     "label": "Plug",
+     "value": "Foldable"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Output",
+     "value": "25W"
+    },
+    {
+     "label": "Fast Charging",
+     "value": "USB-C Power Delivery (PD), Samsung Super Fast Charging"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "Safety",
+     "value": "MultiProtect: overvoltage, overheating and current protection"
+    },
+    {
+     "label": "Compatibility",
+     "value": "Samsung Galaxy, iPhone, iPad, AirPods and other USB-C devices"
+    }
+   ]
+  }
+ ],
  "https://www.startech.com.bd/jisulife-life1-fa26-desk-fan": [
   {
    "group": "General Information",
@@ -20293,7 +20425,76 @@
    ]
   }
  ],
- "https://www.startech.com.bd/xiaomi-solove-f3-mini-clip-fan": [],
+ "https://www.startech.com.bd/xiaomi-solove-f3-mini-clip-fan": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "Solove F3"
+    },
+    {
+     "label": "Type",
+     "value": "Rechargeable mini clip fan"
+    },
+    {
+     "label": "Mount",
+     "value": "Clip-on or standing"
+    },
+    {
+     "label": "Blades",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "group": "Performance",
+   "items": [
+    {
+     "label": "Speed Modes",
+     "value": "3 (Low, Medium, High)"
+    },
+    {
+     "label": "Adjustment",
+     "value": "360°"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery Capacity",
+     "value": "2000mAh built-in"
+    },
+    {
+     "label": "Run Time",
+     "value": "2-6 hours, depending on speed"
+    },
+    {
+     "label": "Charging",
+     "value": "USB Type-C"
+    }
+   ]
+  },
+  {
+   "group": "Physical",
+   "items": [
+    {
+     "label": "Material",
+     "value": "ABS plastic"
+    },
+    {
+     "label": "Front Net",
+     "value": "Removable and washable"
+    },
+    {
+     "label": "Weight",
+     "value": "290g"
+    }
+   ]
+  }
+ ],
  "https://www.startech.com.bd/hoco-hx65-portable-table-fan": [
   {
    "group": "General Information",
@@ -80397,7 +80598,55 @@
    ]
   }
  ],
- "https://www.startech.com.bd/mi-electric-shaver-s500": [],
+ "https://www.startech.com.bd/mi-electric-shaver-s500": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "Mi Electric Shaver S500"
+    },
+    {
+     "label": "Shaving Heads",
+     "value": "3 floating heads, 360°"
+    },
+    {
+     "label": "Blades",
+     "value": "Twin-track foils, twin blades (JFE & Sandvik steel)"
+    },
+    {
+     "label": "Display",
+     "value": "LED digital: battery, shaving time, lock status, cleaning reminder"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Run Time",
+     "value": "60 minutes"
+    },
+    {
+     "label": "Charging",
+     "value": "USB Type-C"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "IP Rating",
+     "value": "IPX7"
+    },
+    {
+     "label": "Others",
+     "value": "Travel lock, removable washable heads"
+    }
+   ]
+  }
+ ],
  "https://www.startech.com.bd/kemei-km-5015-trimmer": [
   {
    "group": "General Information",
@@ -81460,6 +81709,4963 @@
     {
      "label": "Weight",
      "value": "Approximately 27 g (without the strap)"
+    }
+   ]
+  }
+ ],
+ "https://www.applegadgetsbd.com/product/kemei-km-600-electric-hair-clipper-beard-trimmer": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "KM-600"
+    },
+    {
+     "label": "Type",
+     "value": "Corded & cordless"
+    },
+    {
+     "label": "Trimming Range",
+     "value": "0.5-12 mm"
+    },
+    {
+     "label": "Length Settings",
+     "value": "12"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery",
+     "value": "Rechargeable"
+    },
+    {
+     "label": "Charging Time",
+     "value": "About 2 hours"
+    },
+    {
+     "label": "Run Time",
+     "value": "Up to 120 minutes"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "110-240V"
+    }
+   ]
+  },
+  {
+   "group": "Physical",
+   "items": [
+    {
+     "label": "Material",
+     "value": "Plastic & metal body, stainless steel blade"
+    },
+    {
+     "label": "Others",
+     "value": "Water resistant, washable head"
+    }
+   ]
+  }
+ ],
+ "https://diamu.com.bd/product/kemei-km-6637-multi-functional-shaver/": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "KM-6637"
+    },
+    {
+     "label": "Suitable For",
+     "value": "Body, nose, ear & eyebrow, bikini area"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Ni-Cd"
+    },
+    {
+     "label": "Charging Time",
+     "value": "12 hours"
+    },
+    {
+     "label": "Run Time",
+     "value": "45 minutes"
+    },
+    {
+     "label": "Charging Indicator",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Voltage",
+     "value": "110-240V"
+    }
+   ]
+  }
+ ],
+ "https://gadgetandgear.com/product/huawei-watch-gt-7": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Display",
+     "value": "1.47\" AMOLED, 466 × 466, 317 PPI"
+    },
+    {
+     "label": "Battery",
+     "value": "Up to 21 days (light use), 12 days (typical), 7 days (AOD), 51 hours (trail running)"
+    },
+    {
+     "label": "Charging",
+     "value": "5V-10V DC / 2A max"
+    },
+    {
+     "label": "Operating System",
+     "value": "Works with Android 9.0+ and iOS 13.0+"
+    },
+    {
+     "label": "Buttons",
+     "value": "Rotating crown and side button"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Bluetooth",
+     "value": "BT 6.0, BR + BLE (2.4 GHz)"
+    },
+    {
+     "label": "GPS",
+     "value": "Dual-band L1 + L5"
+    }
+   ]
+  },
+  {
+   "group": "Features",
+   "items": [
+    {
+     "label": "IP Rating",
+     "value": "5 ATM, IP69"
+    },
+    {
+     "label": "Sensors",
+     "value": "Accelerometer, gyroscope, magnetometer, optical heart rate, barometer, temperature, ambient light"
+    }
+   ]
+  },
+  {
+   "group": "Physical",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "46 × 46 × 10.95 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "About 51.3g (without strap)"
+    },
+    {
+     "label": "Material",
+     "value": "Stainless steel case"
+    }
+   ]
+  }
+ ],
+ "https://www.applegadgetsbd.com/product/kent-grand-star-water-purifier": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Filtration",
+     "value": "RO + UV + UF + TDS controller + Alkaline + Copper + UV LED"
+    },
+    {
+     "label": "Storage",
+     "value": "9 L"
+    },
+    {
+     "label": "Purification Rate",
+     "value": "20 L/hour"
+    },
+    {
+     "label": "Water Source",
+     "value": "Brackish, tap or municipal water"
+    },
+    {
+     "label": "Others",
+     "value": "Zero water wastage technology"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Input",
+     "value": "Single phase 100-250V AC, 50-60Hz"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "60W"
+    }
+   ]
+  },
+  {
+   "group": "Physical",
+   "items": [
+    {
+     "label": "Material",
+     "value": "Food-grade ABS plastic"
+    },
+    {
+     "label": "Mounting",
+     "value": "Wall mounting"
+    },
+    {
+     "label": "Dimension",
+     "value": "400 × 230 × 540 mm (L × W × H)"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/macbook-air-m1-13-2020": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "MacBook Air M1 13\""
+    },
+    {
+     "label": "Colors",
+     "value": "Gold, Silver, Space Gray"
+    },
+    {
+     "label": "Processor",
+     "value": "Apple M1"
+    },
+    {
+     "label": "Release Year",
+     "value": "2020"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "2560 x 1600"
+    },
+    {
+     "label": "Screen Size",
+     "value": "13.3 inches"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Display Support",
+     "value": "Simultaneously supports full native resolution on the built-in display at millions of colors and: One external display with up to 6K resolution at 60Hz Thunderbolt 3 digital video output Native DisplayPort output over USB-C VGA, HDMI, DVI, and Thunderbolt 2 output supported using adapters (sold separately)"
+    },
+    {
+     "label": "Peak Brightness",
+     "value": "400 nits"
+    },
+    {
+     "label": "Display Features",
+     "value": "Wide color (P3) True Tone technology"
+    },
+    {
+     "label": "Display Technology",
+     "value": "Retina LED-backlit display with IPS technology"
+    }
+   ]
+  },
+  {
+   "group": "Chip",
+   "items": [
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine"
+    },
+    {
+     "label": "RAM",
+     "value": "8GB unified memory Configurable to 16GB"
+    },
+    {
+     "label": "Model",
+     "value": "Apple M1"
+    },
+    {
+     "label": "Storage",
+     "value": "256GB SSD Configurable to 512GB SSD, 1TB, or 2TB"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8-core CPU with 4 perform­ance cores and 4 efficiency cores"
+    },
+    {
+     "label": "GPU Cores",
+     "value": "7-core GPU"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "802.11ax Wi-Fi 6 wireless networking IEEE 802.11a/b/g/n/ac compatible"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.0"
+    }
+   ]
+  },
+  {
+   "group": "Ports",
+   "items": [
+    {
+     "label": "Headphone",
+     "value": "1 x 3.5 mm headphone jack"
+    },
+    {
+     "label": "USB-C/Thunderbolt",
+     "value": "Two Thunderbolt / USB 4 ports with support for: Charging DisplayPort Thunderbolt 3 (up to 40Gb/s) USB 4 (up to 40Gb/s) USB 3.1 Gen 2 (up to 10Gb/s)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "Camera",
+     "value": "720p FaceTime HD camera Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "Stereo speakers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Three-mic array with directional beamforming"
+    },
+    {
+     "label": "Audio Technology",
+     "value": "Wide stereo sound Support for Dolby Atmos playback"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Touch ID",
+     "value": "Touch ID sensor"
+    },
+    {
+     "label": "Trackpad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    },
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard with: 78 (U.S.) or 79 (ISO) keys including 12 function keys and 4 arrow keys in an inverted-T arrangement Ambient light sensor"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Charging",
+     "value": "30W USB-C Power Adapter"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Up to 15 hours wireless web Up to 18 hours Apple TV app movie playback"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "Built-in 49.9‑watt‑hour lithium‑polymer battery"
+    }
+   ]
+  },
+  {
+   "group": "Build and Design",
+   "items": [
+    {
+     "label": "Colors",
+     "value": "Gold, Silver, Space Gray"
+    },
+    {
+     "label": "Weight",
+     "value": "1.29 kg"
+    },
+    {
+     "label": "Material",
+     "value": "Aluminum"
+    },
+    {
+     "label": "Dimensions",
+     "value": "11.97 x 8.36 x 0.16–0.63 inches"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/macbook-air-m2-136-2022": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "MacBook Air M2 13.6’’"
+    },
+    {
+     "label": "Colors",
+     "value": "Midnight, Starlight, Space Gray, Silver"
+    },
+    {
+     "label": "Processor",
+     "value": "Apple M2"
+    },
+    {
+     "label": "Release Year",
+     "value": "2022"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS Upgradeable to macOS 15 Sequoia"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "2560 x 1664"
+    },
+    {
+     "label": "Screen Size",
+     "value": "13.6 inches"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Display Support",
+     "value": "Simultaneously supports full native resolution on the built-in display at 1 billion colors and: One external display with up to 6K resolution at 60Hz"
+    },
+    {
+     "label": "Peak Brightness",
+     "value": "500 nits"
+    },
+    {
+     "label": "Display Features",
+     "value": "Support for 1 billion colors Wide color (P3) True Tone technology"
+    },
+    {
+     "label": "Display Technology",
+     "value": "Liquid Retina LED-backlit display with IPS technology"
+    }
+   ]
+  },
+  {
+   "group": "Chip",
+   "items": [
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine"
+    },
+    {
+     "label": "Model",
+     "value": "Apple M2"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8-core CPU with 4 performance cores and 4 efficiency cores"
+    },
+    {
+     "label": "Media Engine",
+     "value": "Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW Video decode engine Video encode engine ProRes encode and decode engine"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 6 (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Ports",
+   "items": [
+    {
+     "label": "Headphone",
+     "value": "1 x 3.5 mm headphone jack"
+    },
+    {
+     "label": "USB-C/Thunderbolt",
+     "value": "Two Thunderbolt / USB 4 ports with support for: Charging DisplayPort Thunderbolt 3 (up to 40Gb/s) USB 4 (up to 40Gb/s)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "Camera",
+     "value": "1080p FaceTime HD camera Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "Four-speaker sound system"
+    },
+    {
+     "label": "Microphone",
+     "value": "Three-mic array with directional beamforming Voice Isolation and Wide Spectrum microphone modes"
+    },
+    {
+     "label": "Audio Technology",
+     "value": "Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using AirPods 3, AirPods 4, AirPods Pro, AirPods Pro 2, and AirPods Max"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Touch ID",
+     "value": "Touch ID"
+    },
+    {
+     "label": "Trackpad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    },
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard with: 78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted-T arrangement"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Charging",
+     "value": "MagSafe 3 charging port 30W USB-C Power Adapter"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Up to 18 hours Apple TV app movie playback Up to 15 hours wireless web"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "52.6-watt‑hour lithium‑polymer battery"
+    }
+   ]
+  },
+  {
+   "group": "Build and Design",
+   "items": [
+    {
+     "label": "Colors",
+     "value": "Midnight, Starlight, Space Gray, Silver"
+    },
+    {
+     "label": "Weight",
+     "value": "1.24 kg"
+    },
+    {
+     "label": "Material",
+     "value": "Aluminum"
+    },
+    {
+     "label": "Dimensions",
+     "value": "11.97 x 8.46 x 0.44 inches"
+    }
+   ]
+  }
+ ],
+ "https://support.apple.com/en-us/118551": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "Apple M3, 8-core CPU (4 performance + 4 efficiency), 16-core Neural Engine"
+    },
+    {
+     "label": "Memory Bandwidth",
+     "value": "100GB/s"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    },
+    {
+     "label": "Colors",
+     "value": "Silver, Starlight, Space Gray, Midnight"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "13.6-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "Liquid Retina, LED-backlit with IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "2560 × 1664, 224 ppi"
+    },
+    {
+     "label": "Brightness",
+     "value": "500 nits"
+    },
+    {
+     "label": "Color",
+     "value": "1 billion colors, Wide color (P3), True Tone"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Battery Capacity",
+     "value": "52.6Wh lithium-polymer"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Up to 18 hours movie playback, up to 15 hours wireless web"
+    },
+    {
+     "label": "Charging",
+     "value": "MagSafe 3, fast-charge capable with 70W USB-C adapter"
+    }
+   ]
+  },
+  {
+   "group": "Ports",
+   "items": [
+    {
+     "label": "Thunderbolt",
+     "value": "2 × Thunderbolt / USB 4 (up to 40Gb/s)"
+    },
+    {
+     "label": "Headphone",
+     "value": "3.5 mm headphone jack"
+    },
+    {
+     "label": "External Display",
+     "value": "One up to 6K at 60Hz; a second up to 5K at 60Hz with the lid closed"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 6E (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "5.3"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "Webcam",
+     "value": "1080p FaceTime HD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "Four-speaker sound system, Spatial Audio with Dolby Atmos"
+    },
+    {
+     "label": "Microphone",
+     "value": "Three-mic array with directional beamforming"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & Touchpad",
+   "items": [
+    {
+     "label": "Keyboard",
+     "value": "Backlit Magic Keyboard with Touch ID"
+    },
+    {
+     "label": "Trackpad",
+     "value": "Force Touch trackpad"
+    }
+   ]
+  },
+  {
+   "group": "Physical",
+   "items": [
+    {
+     "label": "Dimension",
+     "value": "30.41 × 21.5 × 1.13 cm"
+    },
+    {
+     "label": "Weight",
+     "value": "1.24 kg"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/macbook-air-m4-136-2025": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "MacBook Air M4 13.6\""
+    },
+    {
+     "label": "Colors",
+     "value": "Midnight, Sky Blue, Starlight, Silver"
+    },
+    {
+     "label": "Processor",
+     "value": "Apple M4"
+    },
+    {
+     "label": "Release Year",
+     "value": "2025"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS Upgradeable to macOS 15 Sequoia"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "2560 x 1664"
+    },
+    {
+     "label": "Screen Size",
+     "value": "13.6 inches"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Display Support",
+     "value": "Simultaneously supports full native resolution on the built-in display at 1 billion colors and: Up to two external displays with up to 6K resolution at 60Hz Thunderbolt 4 digital video output Support for native DisplayPort 1.4 output over USB-C"
+    },
+    {
+     "label": "Peak Brightness",
+     "value": "500 nits"
+    },
+    {
+     "label": "Display Features",
+     "value": "Support for 1 billion colors Wide color (P3) True Tone technology"
+    },
+    {
+     "label": "Display Technology",
+     "value": "Liquid Retina Display"
+    }
+   ]
+  },
+  {
+   "group": "Chip",
+   "items": [
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine"
+    },
+    {
+     "label": "Model",
+     "value": "Apple M4"
+    },
+    {
+     "label": "Features",
+     "value": "Hardware-accelerated ray tracing 120GB/s memory bandwidth"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "10 core"
+    },
+    {
+     "label": "Media Engine",
+     "value": "Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW Video decode engine Video encode engine ProRes encode and decode engine AV1 decode"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 6E (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Ports",
+   "items": [
+    {
+     "label": "Headphone",
+     "value": "1 x 3.5 mm headphone jack"
+    },
+    {
+     "label": "USB-C/Thunderbolt",
+     "value": "Two Thunderbolt 4 (USB-C) ports with support for: Charging DisplayPort Thunderbolt 4 (up to 40Gb/s) USB 4 (up to 40Gb/s)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "Camera",
+     "value": "12MP Center Stage camera with support for Desk View 1080p HD video recording"
+    },
+    {
+     "label": "Speaker",
+     "value": "Four-speaker sound system"
+    },
+    {
+     "label": "Microphone",
+     "value": "Three-mic array with directional beamforming"
+    },
+    {
+     "label": "Audio Technology",
+     "value": "Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using supported models of AirPods, AirPods Pro, and AirPods Max Voice Isolation and Wide Spectrum microphone modes Enhanced voice clarity in audio and video calls 3.5 mm headphone jack with advanced support for high‑impedance headphones"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Touch ID",
+     "value": "Touch ID"
+    },
+    {
+     "label": "Trackpad",
+     "value": "Force Touch trackpad for precise cursor control and pressure‑sensing capabilities; enables Force clicks, accelerators, pressure‑sensitive drawing, and Multi‑Touch gestures"
+    },
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard with: 78 (U.S.) or 79 (ISO) keys including 12 full‑height function keys and 4 arrow keys in an inverted‑T arrangement"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Charging",
+     "value": "MagSafe 3 charging port 30W USB-C Power Adapter (included with M4 with 8‑core GPU) 35W Dual USB-C Port Compact Power Adapter (included with M4 with 10‑core GPU; configurable with M4 with 8‑core GPU)"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Up to 18 hours video streaming Up to 15 hours wireless web"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "53.8‑watt‑hour lithium‑polymer battery"
+    }
+   ]
+  },
+  {
+   "group": "Build and Design",
+   "items": [
+    {
+     "label": "Colors",
+     "value": "Midnight, Sky Blue, Starlight, Silver"
+    },
+    {
+     "label": "Weight",
+     "value": "1.24 kg"
+    },
+    {
+     "label": "Material",
+     "value": "100% recycled aluminum in the enclosure and trackpad gel plate 100% recycled cobalt in the battery and magnets of the MagSafe connector 100% recycled copper in multiple printed circuit boards and the thermal sheet 100% recycled glass in the trackpad glass and 15% recycled glass in the display panel 100% recycled gold wire in all cameras 100% recycled gold in the plating of all Apple-designed printed circuit boards and all connectors Over 95% recycled lithium in the battery 100% recycled rare earth elements in all magnets 90% recycled steel in the battery tray, keyboard feature plate, and trackpad beam plate 100% recycled tin in the solder of multiple printed circuit boards At least 50% recycled plastic in five components 100% fiber-based packaging14 50% recycled content in fiber-based packaging"
+    },
+    {
+     "label": "Dimensions",
+     "value": "11.97 x 8.46 x 0.44 inches"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/macbook-air-m2-15-2023": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "MacBook Air M2 15\""
+    },
+    {
+     "label": "Colors",
+     "value": "Silver, Starlight, Space Gray, Midnight"
+    },
+    {
+     "label": "Processor",
+     "value": "Apple M2"
+    },
+    {
+     "label": "Release Year",
+     "value": "2023"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS Upgradeable to macOS 15 Sequoia"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "2880 x 1864"
+    },
+    {
+     "label": "Screen Size",
+     "value": "15.3 inches"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Display Support",
+     "value": "Simultaneously supports full native resolution on the built-in display at 1 billion colors and: One external display with up to 6K resolution at 60Hz Thunderbolt 3 digital video output Native DisplayPort output over USB‑C VGA, HDMI, DVI, and Thunderbolt 2 output supported using adapters (sold separately)"
+    },
+    {
+     "label": "Peak Brightness",
+     "value": "500 nits"
+    },
+    {
+     "label": "Display Features",
+     "value": "Support for 1 billion colors Wide color (P3) True Tone technology"
+    },
+    {
+     "label": "Display Technology",
+     "value": "Liquid Retina LED-backlit display with IPS technology"
+    }
+   ]
+  },
+  {
+   "group": "Chip",
+   "items": [
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine"
+    },
+    {
+     "label": "RAM",
+     "value": "8GB unified memory Configurable to 24GB"
+    },
+    {
+     "label": "Model",
+     "value": "Apple M2"
+    },
+    {
+     "label": "Features",
+     "value": "100GB/s memory bandwidth"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8-core CPU with 4 performance cores and 4 efficiency cores"
+    },
+    {
+     "label": "GPU Cores",
+     "value": "10-core GPU"
+    },
+    {
+     "label": "Media Engine",
+     "value": "Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW Video decode engine Video encode engine ProRes encode and decode engine"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 6 (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Ports",
+   "items": [
+    {
+     "label": "Headphone",
+     "value": "1 x 3.5 mm headphone jack"
+    },
+    {
+     "label": "USB-C/Thunderbolt",
+     "value": "Two Thunderbolt / USB 4 ports with support for: Charging DisplayPort Thunderbolt 3 (up to 40Gb/s) USB 4 (up to 40Gb/s) USB 3.1 Gen 2 (up to 10Gb/s)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "Camera",
+     "value": "1080p FaceTime HD camera Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "Six-speaker sound system with force-cancelling woofers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Three-mic array with directional beamforming"
+    },
+    {
+     "label": "Audio Technology",
+     "value": "Wide stereo sound Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using AirPods (3rd generation), AirPods Pro, and AirPods Max"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Touch ID",
+     "value": "Touch ID"
+    },
+    {
+     "label": "Trackpad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    },
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard with: 78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted-T arrangement"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Charging",
+     "value": "MagSafe 3 charging port 35W Dual USB-C Port Compact Power Adapter"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Up to 18 hours Apple TV app movie playback Up to 15 hours wireless web"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "66.5-watt‑hour lithium‑polymer battery"
+    }
+   ]
+  },
+  {
+   "group": "Build and Design",
+   "items": [
+    {
+     "label": "Colors",
+     "value": "Silver, Starlight, Space Gray, Midnight"
+    },
+    {
+     "label": "Weight",
+     "value": "1.51 kg"
+    },
+    {
+     "label": "Material",
+     "value": "100% recycled aluminum in the enclosure 100% recycled cobalt in the magnets of the MagSafe connector — a first for Apple 100% recycled rare earth elements in all magnets, representing 99% of the rare earth elements in the device 100% recycled tin in the solder of multiple printed circuit boards 100% recycled gold in the plating of multiple printed circuit boards 90% recycled steel in the battery tray 35% or more recycled plastic in multiple components"
+    },
+    {
+     "label": "Dimensions",
+     "value": "13.40 x 9.35 x 0.45 inches"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/macbook-air-m3-15-2024": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "MacBook Air M3 15\""
+    },
+    {
+     "label": "Colors",
+     "value": "Silver, Starlight, Space Gray, Midnight"
+    },
+    {
+     "label": "Processor",
+     "value": "Apple M3"
+    },
+    {
+     "label": "Release Year",
+     "value": "2024"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS Upgradeable to macOS 15 Sequoia"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "2880 x 1864"
+    },
+    {
+     "label": "Screen Size",
+     "value": "15.3 inches"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Display Support",
+     "value": "Simultaneously supports full native resolution on the built-in display at 1 billion colors and: One external display with up to 6K resolution at 60Hz Close the MacBook Air lid to use a second external display with up to 5K resolution at 60Hz"
+    },
+    {
+     "label": "Peak Brightness",
+     "value": "500 nits"
+    },
+    {
+     "label": "Display Features",
+     "value": "Support for 1 billion colors Wide color (P3) True Tone technology"
+    },
+    {
+     "label": "Display Technology",
+     "value": "Liquid Retina LED-backlit display with IPS technology"
+    }
+   ]
+  },
+  {
+   "group": "Chip",
+   "items": [
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine"
+    },
+    {
+     "label": "Model",
+     "value": "Apple M3"
+    },
+    {
+     "label": "Features",
+     "value": "100GB/s memory bandwidth"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "8-core CPU with 4 performance cores and 4 efficiency cores"
+    },
+    {
+     "label": "GPU Cores",
+     "value": "10-core GPU"
+    },
+    {
+     "label": "Media Engine",
+     "value": "Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW Video decode engine Video encode engine ProRes encode and decode engine AV1 decode engine"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 6E (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Ports",
+   "items": [
+    {
+     "label": "Headphone",
+     "value": "1 x 3.5 mm headphone jack"
+    },
+    {
+     "label": "USB-C/Thunderbolt",
+     "value": "Two Thunderbolt / USB 4 ports with support for: Charging DisplayPort Thunderbolt 3 (up to 40Gb/s) USB 4 (up to 40Gb/s)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "Camera",
+     "value": "1080p FaceTime HD camera Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "Six-speaker sound system with force-cancelling woofers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Three-mic array with directional beamforming Voice Isolation and Wide Spectrum microphone modes Enhanced voice clarity in audio and video calls"
+    },
+    {
+     "label": "Audio Technology",
+     "value": "Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using AirPods (3rd generation), AirPods Pro, and AirPods Max"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Touch ID",
+     "value": "Touch ID"
+    },
+    {
+     "label": "Trackpad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    },
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard with: 78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted-T arrangement"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Charging",
+     "value": "MagSafe 3 port 35W Dual USB-C Port Compact Power Adapter"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Up to 18 hours Apple TV app movie playback Up to 15 hours wireless web"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "66.5-watt‑hour lithium‑polymer battery"
+    }
+   ]
+  },
+  {
+   "group": "Build and Design",
+   "items": [
+    {
+     "label": "Colors",
+     "value": "Silver, Starlight, Space Gray, Midnight"
+    },
+    {
+     "label": "Weight",
+     "value": "1.51 kg"
+    },
+    {
+     "label": "Material",
+     "value": "Made with 50% recycled content, including: 100% recycled aluminum in the enclosure 100% recycled tin in the solder and gold in the plating of multiple printed circuit boards 100% recycled rare earth elements in all magnets, representing 99% of the rare earth elements in the device 100% recycled cobalt in the battery9 and magnets of the MagSafe connector 100% recycled copper in the main logic board — an Apple first 90% recycled steel in the battery tray, keyboard feature plate, and trackpad beam plate 35% or more recycled plastic in multiple components"
+    },
+    {
+     "label": "Dimensions",
+     "value": "13.40 x 9.35 x 0.45 inches"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/macbook-air-m4-15-2025": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "MacBook Air M4 15\""
+    },
+    {
+     "label": "Colors",
+     "value": "Midnight, Sky Blue, Starlight, Silver"
+    },
+    {
+     "label": "Processor",
+     "value": "Apple M4"
+    },
+    {
+     "label": "Release Year",
+     "value": "2025"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS Upgradeable to macOS 15 Sequoia"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "2880 x 1864"
+    },
+    {
+     "label": "Screen Size",
+     "value": "15.3 inches"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Display Support",
+     "value": "Simultaneously supports full native resolution on the built-in display at 1 billion colors and: Up to two external displays with up to 6K resolution at 60Hz Thunderbolt 4 digital video output Support for native DisplayPort 1.4 output over USB-C"
+    },
+    {
+     "label": "Peak Brightness",
+     "value": "500 nits"
+    },
+    {
+     "label": "Display Features",
+     "value": "Support for 1 billion colors Wide color (P3) True Tone technology"
+    },
+    {
+     "label": "Display Technology",
+     "value": "Liquid Retina Display"
+    }
+   ]
+  },
+  {
+   "group": "Chip",
+   "items": [
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine"
+    },
+    {
+     "label": "Model",
+     "value": "Apple M4"
+    },
+    {
+     "label": "Features",
+     "value": "Hardware-accelerated ray tracing 120GB/s memory bandwidth"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "10‑core"
+    },
+    {
+     "label": "GPU Cores",
+     "value": "10‑core"
+    },
+    {
+     "label": "Media Engine",
+     "value": "Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW Video decode engine Video encode engine ProRes encode and decode engine AV1 decode"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 6E (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Ports",
+   "items": [
+    {
+     "label": "Headphone",
+     "value": "1 x 3.5 mm headphone jack"
+    },
+    {
+     "label": "USB-C/Thunderbolt",
+     "value": "Two Thunderbolt 4 (USB-C) ports with support for: Charging DisplayPort Thunderbolt 4 (up to 40Gb/s) USB 4 (up to 40Gb/s)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "Camera",
+     "value": "12MP Center Stage camera with support for Desk View 1080p HD video recording Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "Six-speaker sound system with force-cancelling woofers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Three-mic array with directional beamforming"
+    },
+    {
+     "label": "Audio Technology",
+     "value": "Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using supported models of AirPods, AirPods Pro, and AirPods Max Voice Isolation and Wide Spectrum microphone modes Enhanced voice clarity in audio and video calls 3.5 mm headphone jack with advanced support for high‑impedance headphones"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Touch ID",
+     "value": "Touch ID"
+    },
+    {
+     "label": "Trackpad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi‑Touch gestures"
+    },
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard with: 78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted‑T arrangement"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Charging",
+     "value": "35W Dual USB-C Port Compact Power Adapter"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Up to 18 hours video streaming Up to 15 hours wireless web"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "66.5‑watt‑hour lithium‑polymer battery"
+    }
+   ]
+  },
+  {
+   "group": "Build and Design",
+   "items": [
+    {
+     "label": "Colors",
+     "value": "Midnight, Sky Blue, Starlight, Silver"
+    },
+    {
+     "label": "Weight",
+     "value": "1.51 kg"
+    },
+    {
+     "label": "Material",
+     "value": "100% recycled aluminum in the enclosure and trackpad gel plate 100% recycled cobalt in the battery and magnets of the MagSafe connector 100% recycled copper in multiple printed circuit boards and the thermal sheet 100% recycled glass in the trackpad glass and 15% recycled glass in the display panel 100% recycled gold wire in all cameras 100% recycled gold in the plating of all Apple-designed printed circuit boards and multiple connectors Over 95% recycled lithium in the battery 100% recycled rare earth elements in all magnets 90% recycled steel in the battery tray, keyboard feature plate, and trackpad beam plate 100% recycled tin in the solder of multiple printed circuit boards At least 50% recycled plastic in five components 100% fiber-based packaging 50% recycled content in fiber-based packaging"
+    },
+    {
+     "label": "Dimensions",
+     "value": "13.40 x 9.35 x 0.45 inches"
+    }
+   ]
+  }
+ ],
+ "https://gadgetandgear.com/product/macbook-pro-14inch-m1-pro-2021": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "14.2-inch (diagonal)"
+    },
+    {
+     "label": "Type",
+     "value": "Liquid Retina XDR display"
+    },
+    {
+     "label": "Resolution",
+     "value": "3024-by-1964 native resolution at 254 pixels per inch"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "47.95Hz, 48.00Hz, 50.00Hz, 59.94Hz, 60.00Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "Up to 1,000 nits sustained brightness, Up to 1,600 nits peak brightness, 1 million:1 contrast ratio"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB RAM"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Type",
+     "value": "SSD"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & Touchpad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "78 (ANSI) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted-T arrangement Ambient light sensor Force Touch trackpad"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "Webcam",
+     "value": "1080p FaceTime HD camera"
+    },
+    {
+     "label": "Audio Features",
+     "value": "High-fidelity six-speaker sound system force-cancelling woofers Wide stereo sound Spatial audio Studio-quality three-mic array high signal-to-noise ratio directional beamforming"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "SDXC card slot"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "Yes"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "Thunderbolt 4 (up to 40Gb/s) USB 4 (up to 40Gb/s) MagSafe 3 port"
+    },
+    {
+     "label": "Microphone Port",
+     "value": "3.5 mm headphone jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wireless 802.11ax Wi-Fi 6 wireless networking IEEE 802.11a/b/g/n/ac compatible"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.0 wireless technology"
+    }
+   ]
+  },
+  {
+   "group": "Battery & Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "70-watt-hour lithium-polymer battery"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "67W USB-C Power Adapter"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "Height: 0.61 inch (1.55 cm) Width: 12.31 inches (31.26 cm) Depth: 8.71 inches (22.12 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "3.5 pounds (1.6 kg)"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/macbook-pro-14-m4-2024": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "MacBook Pro 14\" M4"
+    },
+    {
+     "label": "Colors",
+     "value": "Space Black, Silver"
+    },
+    {
+     "label": "Processor",
+     "value": "Apple M4"
+    },
+    {
+     "label": "Release Year",
+     "value": "2024"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS Upgradeable to macOS 15 Sequoia"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "3024 x 1964"
+    },
+    {
+     "label": "Screen Size",
+     "value": "14.2 inches"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology for adaptive refresh rates up to 120Hz Fixed refresh rates: 47.95Hz, 48.00Hz, 50.00Hz, 59.94Hz, 60.00Hz"
+    },
+    {
+     "label": "Display Support",
+     "value": "Simultaneously supports full native resolution on the built-in display at 1 billion colors and: Up to two external displays with up to 6K resolution at 60Hz over Thunderbolt, or one external display with up to 6K resolution at 60Hz over Thunderbolt and one external display with up to 4K resolution at 144Hz over HDMI One external display supported at 8K resolution at 60Hz or one external display at 4K resolution at 240Hz over HDMI Thunderbolt 4 digital video output Support for native DisplayPort 1.4 output over USB-C Thunderbolt 5 digital video output Support for native DisplayPort 2.1 output over USB-C HDMI digital video output Support for one display with up to 8K resolution at 60Hz or 4K resolution at 240Hz"
+    },
+    {
+     "label": "Peak Brightness",
+     "value": "XDR brightness: 1000 nits sustained full-screen, 1600 nits peak3 (HDR content only) SDR brightness: up to 1000 nits (outdoor)"
+    },
+    {
+     "label": "Display Features",
+     "value": "Configurable with Nano-texture display 1,000,000:1 contrast ratio 1 billion colors Wide color (P3) True Tone technology"
+    },
+    {
+     "label": "Display Technology",
+     "value": "Liquid Retina XDR display"
+    }
+   ]
+  },
+  {
+   "group": "Chip",
+   "items": [
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine"
+    },
+    {
+     "label": "Model",
+     "value": "Apple M4"
+    },
+    {
+     "label": "Features",
+     "value": "Hardware-accelerated ray tracing 120GB/s memory bandwidth"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "10-core CPU with 4 performance cores and 6 efficiency cores"
+    },
+    {
+     "label": "GPU Cores",
+     "value": "10-core GPU"
+    },
+    {
+     "label": "Media Engine",
+     "value": "Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW Video decode engine Video encode engine ProRes encode and decode engine AV1 decode"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 6E (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Ports",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "1 x HDMI port"
+    },
+    {
+     "label": "SD Card",
+     "value": "1 x SDXC card slot"
+    },
+    {
+     "label": "Headphone",
+     "value": "1 x 3.5 mm headphone jack"
+    },
+    {
+     "label": "USB-C/Thunderbolt",
+     "value": "Three Thunderbolt 4 (USB-C) ports with support for: Charging DisplayPort Thunderbolt 4 (up to 40Gb/s) USB 4 (up to 40Gb/s)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "Camera",
+     "value": "12MP Center Stage camera with support for Desk View 1080p HD video recording Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "High-fidelity six-speaker sound system with force-cancelling woofers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Studio-quality three-mic array with high signal-to-noise ratio and directional beamforming"
+    },
+    {
+     "label": "Audio Technology",
+     "value": "Wide stereo sound Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using AirPods 3, AirPods 4, AirPods Pro, AirPods Pro 2, and AirPods Max 3.5 mm headphone jack with advanced support for high-impedance headphones HDMI port supports multichannel audio output"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Touch ID",
+     "value": "Touch ID"
+    },
+    {
+     "label": "Trackpad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    },
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard with: 78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted‑T arrangement"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Charging",
+     "value": "MagSafe 3 port 70W USB-C Power Adapter"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Up to 24 hours video streaming Up to 16 hours wireless web"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "72.4-watt-hour lithium-polymer battery"
+    }
+   ]
+  },
+  {
+   "group": "Build and Design",
+   "items": [
+    {
+     "label": "Colors",
+     "value": "Space Black, Silver"
+    },
+    {
+     "label": "Weight",
+     "value": "1.55 kg"
+    },
+    {
+     "label": "Material",
+     "value": "100% recycled aluminum in the enclosure 100% recycled rare earth elements in all magnets 100% recycled tin in the solder of multiple printed circuit boards 100% recycled copper in multiple printed circuit boards and a thermal module component 100% recycled gold in the plating of multiple printed circuit boards 90% recycled steel in the keyboard feature plate 35% or more recycled plastic in 15 components"
+    },
+    {
+     "label": "Dimensions",
+     "value": "12.31 x 8.71 x 0.61 inches"
+    }
+   ]
+  }
+ ],
+ "https://gadgetandgear.com/product/macbook-pro-14-inch-m4-max-chip": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "14.2-inch"
+    },
+    {
+     "label": "Type",
+     "value": "Liquid Retina XDR display"
+    },
+    {
+     "label": "Resolution",
+     "value": "3024-by-1964 native resolution at 254 pixels per inch"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology for adaptive refresh rates up to 120Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "1 billion colors Wide color (P3) True Tone technology"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Type",
+     "value": "SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "1TB"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & Touchpad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted‑T arrangement"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "Touch ID Ambient light sensor"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "Webcam",
+     "value": "12MP Center Stage camera with support for Desk View 1080p HD video recording Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers"
+    },
+    {
+     "label": "Headphone Jack",
+     "value": "3.5 mm headphone jack with advanced support for high-impedance headphones"
+    },
+    {
+     "label": "Audio Features",
+     "value": "High-fidelity six-speaker sound system with force-cancelling woofers Wide stereo sound"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6E (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Battery & Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "72.4-watt-hour lithium-polymer battery"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "96W USB-C Power Adapter USB-C to MagSafe 3 Cable Fast-charge capable with 96W USB-C Power Adapter"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "Height: 0.61 inch (1.55 cm) Width: 12.31 inches (31.26 cm) Depth: 8.71 inches (22.12 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "3.6 pounds (1.62 kg)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Metal"
+    },
+    {
+     "label": "Color",
+     "value": "Silver"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/macbook-pro-14-m4-pro-2024": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "MacBook Pro 14\" M4 Pro"
+    },
+    {
+     "label": "Colors",
+     "value": "Space Black, Silver"
+    },
+    {
+     "label": "Release Year",
+     "value": "2024"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS Upgradeable to macOS 15 Sequoia"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "3024 x 1964"
+    },
+    {
+     "label": "Screen Size",
+     "value": "14.2 inches"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology for adaptive refresh rates up to 120Hz Fixed refresh rates: 47.95Hz, 48.00Hz, 50.00Hz, 59.94Hz, 60.00Hz"
+    },
+    {
+     "label": "Display Support",
+     "value": "Simultaneously supports full native resolution on the built-in display at 1 billion colors and: Up to two external displays with up to 6K resolution at 60Hz over Thunderbolt, or one external display with up to 6K resolution at 60Hz over Thunderbolt and one external display with up to 4K resolution at 144Hz over HDMI One external display supported at 8K resolution at 60Hz or one external display at 4K resolution at 240Hz over HDMI"
+    },
+    {
+     "label": "Peak Brightness",
+     "value": "XDR brightness: 1000 nits sustained full-screen, 1600 nits peak3 (HDR content only) SDR brightness: up to 1000 nits (outdoor)"
+    },
+    {
+     "label": "Display Features",
+     "value": "1,000,000:1 contrast ratio 1 billion colors Wide color (P3) True Tone technology Configurable with Nano-texture display"
+    },
+    {
+     "label": "Display Technology",
+     "value": "Liquid Retina XDR display"
+    }
+   ]
+  },
+  {
+   "group": "Chip",
+   "items": [
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine"
+    },
+    {
+     "label": "RAM",
+     "value": "24GB unified memory Configurable to 48GB"
+    },
+    {
+     "label": "Model",
+     "value": "Apple M4 Pro"
+    },
+    {
+     "label": "Features",
+     "value": "Hardware-accelerated ray tracing 273GB/s memory bandwidth"
+    },
+    {
+     "label": "Media Engine",
+     "value": "Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW Video decode engine Video encode engine ProRes encode and decode engine AV1 decode"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 6E (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Ports",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "1 x HDMI port"
+    },
+    {
+     "label": "SD Card",
+     "value": "1 x SDXC card slot"
+    },
+    {
+     "label": "Headphone",
+     "value": "1 x 3.5 mm headphone jack"
+    },
+    {
+     "label": "USB-C/Thunderbolt",
+     "value": "Three Thunderbolt 5 (USB-C) ports with support for: Charging DisplayPort Thunderbolt 5 (up to 120Gb/s) USB 4 (up to 120Gb/s)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "Camera",
+     "value": "12MP Center Stage camera with support for Desk View 1080p HD video recording Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "High-fidelity six-speaker sound system with force-cancelling woofers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Studio-quality three-mic array with high signal-to-noise ratio and directional beamforming"
+    },
+    {
+     "label": "Audio Technology",
+     "value": "Wide stereo sound Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using AirPods 3, AirPods 4, AirPods Pro, AirPods Pro 2, and AirPods Max 3.5 mm headphone jack with advanced support for high-impedance headphones HDMI port supports multichannel audio output"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Touch ID",
+     "value": "Touch ID"
+    },
+    {
+     "label": "Trackpad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    },
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard with 78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted‑T arrangement"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Charging",
+     "value": "70W USB-C Power Adapter (included with M4 Pro with 12-core CPU) 96W USB-C Power Adapter (included with M4 Pro with 14-core CPU, configurable with M4 Pro with 12-core CPU)"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Up to 22 hours video streaming Up to 14 hours wireless web"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "72.4-watt-hour lithium-polymer battery"
+    }
+   ]
+  },
+  {
+   "group": "Build and Design",
+   "items": [
+    {
+     "label": "Colors",
+     "value": "Space Black, Silver"
+    },
+    {
+     "label": "Weight",
+     "value": "1.60 kg"
+    },
+    {
+     "label": "Material",
+     "value": "100% recycled aluminum in the enclosure 100% recycled rare earth elements in all magnets 100% recycled tin in the solder of multiple printed circuit boards 100% recycled copper in multiple printed circuit boards and a thermal module component 100% recycled gold in the plating of multiple printed circuit boards 90% recycled steel in the keyboard feature plate 35% or more recycled plastic in 15 components"
+    },
+    {
+     "label": "Dimensions",
+     "value": "12.31 x 8.71 x 0.61 inches"
+    }
+   ]
+  }
+ ],
+ "https://arafatelecom.com/product/apple-macbook-pro-16-inch-m1-pro-chip-16gb-ram-1tb-ssd-mk193-space-gray-2021/": [
+  {
+   "group": "Basic Information",
+   "items": [
+    {
+     "label": "Processor",
+     "value": "Apple M1 Pro Chip (10-core CPU with 8 performance cores and 2 efficiency cores 16-core GPU, 16-core Neural Engine, 200GB/s memory bandwidth)"
+    },
+    {
+     "label": "Display",
+     "value": "16.2-inch (diagonal) Liquid Retina XDR display; 3456-by-2234 native resolution at 254 pixels per inch Up to 1000 nits sustained (full-screen) brightness, 1600 nits peak brightness 1,000,000:1 contrast ratio 1 billion colors Wide color (P3) True Tone technology"
+    },
+    {
+     "label": "Memory",
+     "value": "16GB RAM"
+    },
+    {
+     "label": "Storage",
+     "value": "1TB SSD"
+    },
+    {
+     "label": "Graphics",
+     "value": "16-core GPU"
+    },
+    {
+     "label": "Chipset",
+     "value": "M1 Pro"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    },
+    {
+     "label": "Battery",
+     "value": "100-watt-hour lithium-polymer battery USB-C to MagSafe 3 Cable"
+    },
+    {
+     "label": "Adapter",
+     "value": "140W USB-C Power Adapter"
+    },
+    {
+     "label": "Audio",
+     "value": "High-fidelity six-speaker sound system force-cancelling woofers Wide stereo sound Spatial audio Studio-quality three-mic array high signal-to-noise ratio directional beamforming 3.5 mm headphone jack"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Keyboard",
+     "value": "Backlit Magic Keyboard with: 78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted-T arrangement Touch ID Ambient light sensor Force Touch trackpad"
+    },
+    {
+     "label": "WebCam",
+     "value": "1080p FaceTime HD camera (Advanced image signal processor with computational video)"
+    }
+   ]
+  },
+  {
+   "group": "Network & Wireless Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "802.11ax Wi-Fi 6 wireless networking IEEE 802.11a/b/g/n/ac compatible"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.0 wireless technology"
+    }
+   ]
+  },
+  {
+   "group": "Ports, Connectors & Slots",
+   "items": [
+    {
+     "label": "USB (s)",
+     "value": "Three Thunderbolt 4 (USB-C) ports with support USB 4 (up to 40Gb/s)"
+    },
+    {
+     "label": "HDMI",
+     "value": "Yes"
+    },
+    {
+     "label": "Audio Jack Combo",
+     "value": "1 x 3.5 mm headphone jack"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Dimensions (W x D x H)",
+     "value": "Width: 14.01 inches (35.57 cm) x Depth: 9.77 inches (24.81 cm) x Height 0.66 inch (1.68 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "4.7 pounds (2.1 kg)"
+    },
+    {
+     "label": "Color(s)",
+     "value": "Space Grey"
+    }
+   ]
+  }
+ ],
+ "https://www.startech.com.bd/apple-macbook-pro-m4-max-16-inch-48gb": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "16.2-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "Liquid Retina XDR Display"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "3456×2234"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology for adaptive refresh rates up to 120Hz Fixed refresh rates: 47.95Hz, 48.00Hz, 50.00Hz, 59.94Hz, 60.00Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "XDR (Extreme Dynamic Range) 1,000,000:1 contrast ratio XDR brightness: 1000 nits sustained full-screen, 1600 nits peak2 (HDR content only) SDR brightness: up to 1000 nits (outdoor) Color 1 billion colors Wide color (P3) True Tone technology"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM Type",
+     "value": "Unified memory"
+    },
+    {
+     "label": "Removable",
+     "value": "Non-Removable"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "1TB"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "78 (U.S.) keys including 12 full-height function keys and 4 arrow keys in an inverted‑T arrangement Touch ID Ambient light sensor"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "12MP Center Stage camera with support for Desk View 1080p HD video recording Advanced image signal processor with computational video 1080p FaceTime HD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "High-fidelity six-speaker sound system with force-cancelling woofers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Studio-quality three-mic array with high signal-to-noise ratio and directional beamforming 3.5 mm headphone jack with advanced support for high-impedance headphones"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Wide stereo sound Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using AirPods (3rd generation), AirPods 4, AirPods Pro, AirPods Pro 2, and AirPods Max"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "1x SDXC card slot"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "3 x Thunderbolt 5 (up to 120Gb/s) / USB 4 ports (up to 40Gb/s)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "3.5 mm headphone jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6E (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Touch ID"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Lithium‑polymer"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "100 Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "140W USB-C Power Adapter (MagSafe 3)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Space Black, Silver"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Height: 0.66 inch (1.68 cm) Width: 14.01 inches (35.57 cm) Depth: 9.77 inches (24.81 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "4.7 pounds (2.15 kg)"
+    },
+    {
+     "label": "Part Number / MPN",
+     "value": "MX313, MC7X4ZP/A"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/macbook-pro-16-m4-pro-2024": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Model",
+     "value": "MacBook Pro 16\" M4 Pro"
+    },
+    {
+     "label": "Colors",
+     "value": "Space Black, Silver"
+    },
+    {
+     "label": "Processor",
+     "value": "Apple M4 Pro"
+    },
+    {
+     "label": "Release Year",
+     "value": "2024"
+    },
+    {
+     "label": "Operating System",
+     "value": "macOS Upgradeable to macOS 15 Sequoia"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Resolution",
+     "value": "3456 x 2234"
+    },
+    {
+     "label": "Screen Size",
+     "value": "16.2 inches"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology for adaptive refresh rates up to 120Hz Fixed refresh rates: 47.95Hz, 48.00Hz, 50.00Hz, 59.94Hz, 60.00Hz"
+    },
+    {
+     "label": "Display Support",
+     "value": "Simultaneously supports full native resolution on the built-in display at 1 billion colors and: Up to two external displays with up to 6K resolution at 60Hz over Thunderbolt, or one external display with up to 6K resolution at 60Hz over Thunderbolt and one external display with up to 4K resolution at 144Hz over HDMI One external display supported at 8K resolution at 60Hz or one external display at 4K resolution at 240Hz over HDMI Thunderbolt 5 digital video output Support for native DisplayPort 2.1 output over USB‑C HDMI digital video output Support for one display with up to 8K resolution at 60Hz or 4K resolution at 240Hz"
+    },
+    {
+     "label": "Peak Brightness",
+     "value": "XDR brightness: 1000 nits sustained full-screen, 1600 nits peak3 (HDR content only) SDR brightness: up to 1000 nits (outdoor)"
+    },
+    {
+     "label": "Display Features",
+     "value": "1,000,000:1 contrast ratio 1 billion colors Wide color (P3) True Tone technology Configurable with Nano-texture display"
+    },
+    {
+     "label": "Display Technology",
+     "value": "Liquid Retina XDR display"
+    }
+   ]
+  },
+  {
+   "group": "Chip",
+   "items": [
+    {
+     "label": "NPU",
+     "value": "16-core Neural Engine"
+    },
+    {
+     "label": "Model",
+     "value": "Apple M4 Pro"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB SSD Configurable to 1TB, 2TB, or 4TB"
+    },
+    {
+     "label": "Features",
+     "value": "Hardware-accelerated ray tracing 273GB/s memory bandwidth"
+    },
+    {
+     "label": "CPU Cores",
+     "value": "14-core CPU with 10 performance cores and 4 efficiency"
+    },
+    {
+     "label": "GPU Cores",
+     "value": "20-core GPU"
+    },
+    {
+     "label": "Media Engine",
+     "value": "Hardware-accelerated H.264, HEVC, ProRes, and ProRes RAW Video decode engine Video encode engine ProRes encode and decode engine AV1 decode"
+    }
+   ]
+  },
+  {
+   "group": "Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 6E (802.11ax)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Ports",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "1 x HDMI port"
+    },
+    {
+     "label": "SD Card",
+     "value": "1 x SDXC card slot"
+    },
+    {
+     "label": "Headphone",
+     "value": "1 x 3.5 mm headphone jack"
+    },
+    {
+     "label": "USB-C/Thunderbolt",
+     "value": "Three Thunderbolt 5 (USB-C) ports with support for: Charging DisplayPort Thunderbolt 5 (up to 120Gb/s) USB 4 (up to 120Gb/s)"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "Camera",
+     "value": "12MP Center Stage camera with support for Desk View 1080p HD video recording Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "High-fidelity six-speaker sound system with force-cancelling woofers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Studio-quality three-mic array with high signal-to-noise ratio and directional beamforming"
+    },
+    {
+     "label": "Audio Technology",
+     "value": "Wide stereo sound Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using AirPods 3, AirPods 4, AirPods Pro, AirPods Pro 2, and AirPods Max 3.5 mm headphone jack with advanced support for high-impedance headphones HDMI port supports multichannel audio output"
+    }
+   ]
+  },
+  {
+   "group": "Input Devices",
+   "items": [
+    {
+     "label": "Touch ID",
+     "value": "Touch ID"
+    },
+    {
+     "label": "Trackpad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    },
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard with 78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted‑T arrangement"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Charging",
+     "value": "140W USB-C Power Adapter"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Up to 24 hours video streaming Up to 17 hours wireless web"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "100-watt-hour lithium-polymer battery"
+    }
+   ]
+  },
+  {
+   "group": "Build and Design",
+   "items": [
+    {
+     "label": "Colors",
+     "value": "Space Black, Silver"
+    },
+    {
+     "label": "Weight",
+     "value": "2.14 kg"
+    },
+    {
+     "label": "Material",
+     "value": "100% recycled aluminum in the enclosure 100% recycled rare earth elements in all magnets 100% recycled tin in the solder of multiple printed circuit boards 100% recycled copper in multiple printed circuit boards and a thermal module component 100% recycled gold in the plating of multiple printed circuit boards 90% recycled steel in the keyboard feature plate 35% or more recycled plastic in 15 components"
+    },
+    {
+     "label": "Dimensions",
+     "value": "14.01 x 9.77 x 0.66 inches"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/asus-tuf-a16-fa607nug-wh73": [
+  {
+   "group": "Main Features",
+   "items": [
+    {
+     "label": "OS",
+     "value": "Windows 11 Home"
+    },
+    {
+     "label": "Model",
+     "value": "Asus TUF Gaming A16 FA607NUG-WH73 | Mech Gray"
+    },
+    {
+     "label": "Memory",
+     "value": "16GB DDR5 RAM"
+    },
+    {
+     "label": "Weight",
+     "value": "2.20 Kg"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB M.2 NVMe SSD"
+    },
+    {
+     "label": "Dimension",
+     "value": "13.94 x 9.88 x 0.88~1.05 inches"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Core",
+     "value": "6"
+    },
+    {
+     "label": "Brand",
+     "value": "AMD"
+    },
+    {
+     "label": "Cache",
+     "value": "22MB"
+    },
+    {
+     "label": "Model",
+     "value": "Ryzen 7 7445HS"
+    },
+    {
+     "label": "Thread",
+     "value": "12"
+    },
+    {
+     "label": "Frequency",
+     "value": "3.2 GHz (Up to 4.7 GHz)"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Type",
+     "value": "M.2 NVMe PCIe Gen4 SSD"
+    },
+    {
+     "label": "Upgrade",
+     "value": "Yes"
+    },
+    {
+     "label": "Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Extra Slot",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Ram",
+     "value": "16GB"
+    },
+    {
+     "label": "Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Upgrade",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600MHz"
+    },
+    {
+     "label": "Maximum Ram",
+     "value": "64GB"
+    },
+    {
+     "label": "Total Ram Slot",
+     "value": "2 x DDR5 SO-DIMM slots"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "16 inches"
+    },
+    {
+     "label": "Type",
+     "value": "Value IPS-level"
+    },
+    {
+     "label": "Resolution",
+     "value": "1920 x 1200"
+    },
+    {
+     "label": "Display Features",
+     "value": "Anti-glare display Adobe:75.35% G-SYNC MUX Switch + NVIDIA Advanced Optimus"
+    },
+    {
+     "label": "Max Refresh Rate",
+     "value": "144Hz"
+    }
+   ]
+  },
+  {
+   "group": "Graphics Card",
+   "items": [
+    {
+     "label": "Model",
+     "value": "NVIDIA GeForce RTX 4050 6GB"
+    },
+    {
+     "label": "Features",
+     "value": "194 AI TOPs 2420 MHz at 140W (2370MHz Boost Clock+ 50MHz OC, 115W+25W Dynamic Boost)"
+    },
+    {
+     "label": "Memory Type",
+     "value": "Dedicated GDDR6"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard and TouchPad",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Backlit Chiclet Keyboard"
+    },
+    {
+     "label": "Features",
+     "value": "1-Zone RGB, Copilot key"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Precision Touchpad"
+    }
+   ]
+  },
+  {
+   "group": "Camera and Audio",
+   "items": [
+    {
+     "label": "Webcam",
+     "value": "720P HD camera"
+    },
+    {
+     "label": "Speaker",
+     "value": "2-speaker system"
+    },
+    {
+     "label": "Microphone",
+     "value": "Built-in array microphone"
+    },
+    {
+     "label": "Special Features",
+     "value": "Dolby Atmos AI noise-canceling technology Hi-Res certification (for headphone)"
+    }
+   ]
+  },
+  {
+   "group": "Ports and Slots",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "1 x HDMI 2.1 FRL"
+    },
+    {
+     "label": "USB Port",
+     "value": "2 x USB 3.2 Gen 1 Type-A (data speed up to 5Gbps)"
+    },
+    {
+     "label": "PD Charging",
+     "value": "Yes"
+    },
+    {
+     "label": "Display Port",
+     "value": "Yes"
+    },
+    {
+     "label": "Headphone Microphone",
+     "value": "1 x 3.5mm Combo Audio Jack"
+    },
+    {
+     "label": "USB Type-C/Thunderbolt",
+     "value": "1 x USB 3.2 Gen 2 Type-C (data speed up to 10Gbps) 1 x Type-C USB 4 (data speed up to 40Gbps)"
+    }
+   ]
+  },
+  {
+   "group": "Network and Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1 x RJ45"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 6(802.11ax) (Dual band) 2*2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "4S1P, 4-cell Li-ion"
+    },
+    {
+     "label": "Adapter",
+     "value": "240W AC Adapter, Output: 20V DC, 12A, 240W, Input: 100~240C AC 50/60Hz universal"
+    },
+    {
+     "label": "Capacity",
+     "value": "56WHrs"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/hp-laptop-15-fc0074nia": [
+  {
+   "group": "Main Features",
+   "items": [
+    {
+     "label": "OS",
+     "value": "Windows 11 Pro"
+    },
+    {
+     "label": "Model",
+     "value": "HP Laptop 15-fc0074nia | Natural Silver"
+    },
+    {
+     "label": "Memory",
+     "value": "8GB DDR4 RAM"
+    },
+    {
+     "label": "Weight",
+     "value": "1.59 kg"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB M.2 NVMe SSD"
+    },
+    {
+     "label": "Dimension",
+     "value": "14.17 x 9.29 x 0.73 inches"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Core",
+     "value": "8"
+    },
+    {
+     "label": "Brand",
+     "value": "AMD"
+    },
+    {
+     "label": "Cache",
+     "value": "16MB"
+    },
+    {
+     "label": "Model",
+     "value": "Ryzen 7 7730U"
+    },
+    {
+     "label": "Thread",
+     "value": "16"
+    },
+    {
+     "label": "Frequency",
+     "value": "Up to 4.5 GHz max boost clock"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Type",
+     "value": "PCIe NVMe M.2 SSD"
+    },
+    {
+     "label": "Capacity",
+     "value": "512GB"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Ram",
+     "value": "8GB (1 x 8GB)"
+    },
+    {
+     "label": "Type",
+     "value": "DDR4"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "3200 MT/s"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "15.6 inches"
+    },
+    {
+     "label": "Display Features",
+     "value": "micro-edge Anti-glare 250 nits 45% NTSC"
+    }
+   ]
+  },
+  {
+   "group": "Graphics Card",
+   "items": [
+    {
+     "label": "Model",
+     "value": "AMD Radeon Graphics"
+    },
+    {
+     "label": "Memory Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard and TouchPad",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Backlit, soft gray keyboard with numeric keypad"
+    },
+    {
+     "label": "TouchPad",
+     "value": "HP Imagepad; Precision Touchpad support"
+    }
+   ]
+  },
+  {
+   "group": "Camera and Audio",
+   "items": [
+    {
+     "label": "Webcam",
+     "value": "HP True Vision 720p HD camera with temporal noise reduction"
+    },
+    {
+     "label": "Speaker",
+     "value": "Dual speakers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Integrated dual array digital microphones"
+    },
+    {
+     "label": "Special Features",
+     "value": "Mic mute key Camera privacy shutter"
+    }
+   ]
+  },
+  {
+   "group": "Ports and Slots",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "1 x HDMI 1.4b"
+    },
+    {
+     "label": "USB Port",
+     "value": "2 x USB Type-A 5Gbps signaling rate"
+    },
+    {
+     "label": "Headphone Microphone",
+     "value": "1 x headphone/microphone combo"
+    },
+    {
+     "label": "USB Type-C/Thunderbolt",
+     "value": "1 x USB Type-C® 5Gbps signaling rate (supports data transfer only and does not support charging or external monitors)"
+    }
+   ]
+  },
+  {
+   "group": "Network and Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Realtek Wi-Fi 6 (2x2)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "3-cell, Li-ion polymer"
+    },
+    {
+     "label": "Adapter",
+     "value": "45W Smart AC power adapter"
+    },
+    {
+     "label": "Capacity",
+     "value": "41 Wh"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/hp-laptop-ai-15-fd2104tu": [
+  {
+   "group": "Main Features",
+   "items": [
+    {
+     "label": "OS",
+     "value": "Windows 11 Pro"
+    },
+    {
+     "label": "Model",
+     "value": "HP Laptop AI 15-fd2104TU | Natural Silver"
+    },
+    {
+     "label": "Memory",
+     "value": "8GB DDR5 RAM"
+    },
+    {
+     "label": "Weight",
+     "value": "1.65 kg"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB M.2 NVMe SSD"
+    },
+    {
+     "label": "Dimension",
+     "value": "14.17 x 9.29 x 0.73 inches"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Core",
+     "value": "12"
+    },
+    {
+     "label": "Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Cache",
+     "value": "12MB"
+    },
+    {
+     "label": "Model",
+     "value": "Core Ultra 5 225U"
+    },
+    {
+     "label": "Thread",
+     "value": "14"
+    },
+    {
+     "label": "Frequency",
+     "value": "Up to 4.8 GHz with Intel Turbo Boost Technology"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Type",
+     "value": "M.2 NVMe PCIe SSD"
+    },
+    {
+     "label": "Capacity",
+     "value": "512GB"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Ram",
+     "value": "8GB (1 x 8GB)"
+    },
+    {
+     "label": "Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Upgrade",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600 MT/s"
+    },
+    {
+     "label": "Total Ram Slot",
+     "value": "2 x DDR5 slots"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "15.6 inches"
+    },
+    {
+     "label": "Type",
+     "value": "LED"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD (1920 x 1080)"
+    },
+    {
+     "label": "Display Features",
+     "value": "Micro-edge Anti-glare 250 nits 62.5% sRGB"
+    },
+    {
+     "label": "Max Refresh Rate",
+     "value": "60Hz"
+    }
+   ]
+  },
+  {
+   "group": "Graphics Card",
+   "items": [
+    {
+     "label": "Model",
+     "value": "Intel Graphics"
+    },
+    {
+     "label": "Memory Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard and TouchPad",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Backlit, soft gray keyboard with numeric keypad"
+    },
+    {
+     "label": "TouchPad",
+     "value": "HP Imagepad, Precision Touchpad support"
+    }
+   ]
+  },
+  {
+   "group": "Camera and Audio",
+   "items": [
+    {
+     "label": "Webcam",
+     "value": "HP True Vision 720p HD camera with temporal noise reduction"
+    },
+    {
+     "label": "Speaker",
+     "value": "Dual speakers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Integrated dual array digital microphones"
+    }
+   ]
+  },
+  {
+   "group": "Ports and Slots",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "1 x HDMI 1.4b"
+    },
+    {
+     "label": "USB Port",
+     "value": "2 x USB Type-A 5Gbps signaling rate"
+    },
+    {
+     "label": "PD Charging",
+     "value": "Yes"
+    },
+    {
+     "label": "Display Port",
+     "value": "DisplayPort 1.4b"
+    },
+    {
+     "label": "Headphone Microphone",
+     "value": "1 x 3.5mm headphone/microphone combo"
+    },
+    {
+     "label": "USB Type-C/Thunderbolt",
+     "value": "1 x USB Type-C 10Gbps signaling rate (USB Power Delivery, DisplayPort 1.4b, HP Sleep and Charge)"
+    }
+   ]
+  },
+  {
+   "group": "Network and Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Realtek Wi-Fi 6 (2x2)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "3-cell, Li-ion polymer"
+    },
+    {
+     "label": "Adapter",
+     "value": "45W AC power adapter"
+    },
+    {
+     "label": "Capacity",
+     "value": "41 Wh"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/hp-255r-g10-ryzen-5-7535u-8gb": [
+  {
+   "group": "Main Features",
+   "items": [
+    {
+     "label": "OS",
+     "value": "Windows 11 Pro"
+    },
+    {
+     "label": "Model",
+     "value": "HP 255R 15.6 inch G10 Notebook | Turbo Silver"
+    },
+    {
+     "label": "Weight",
+     "value": "Starting at 1.66 kg"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB M.2 NVMe SSD"
+    },
+    {
+     "label": "Dimension",
+     "value": "14.17 × 9.29 × 0.46~0.62 inches"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Core",
+     "value": "6"
+    },
+    {
+     "label": "Brand",
+     "value": "AMD"
+    },
+    {
+     "label": "Cache",
+     "value": "16MB"
+    },
+    {
+     "label": "Model",
+     "value": "Ryzen 5 7535U"
+    },
+    {
+     "label": "Thread",
+     "value": "12"
+    },
+    {
+     "label": "Frequency",
+     "value": "2.9 GHz (Up to 4.5 GHz)"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Type",
+     "value": "PCIe Gen4 M.2 NVMe SSD"
+    },
+    {
+     "label": "Upgrade",
+     "value": "Yes"
+    },
+    {
+     "label": "Capacity",
+     "value": "512GB"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Upgrade",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600 MT/s"
+    },
+    {
+     "label": "Total Ram Slot",
+     "value": "2 SODIMM slots"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "15.6 inches"
+    },
+    {
+     "label": "Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "1920 x 1080"
+    },
+    {
+     "label": "Display Features",
+     "value": "Narrow bezel 300 nits 45% NTSC"
+    },
+    {
+     "label": "Max Refresh Rate",
+     "value": "60 Hz"
+    }
+   ]
+  },
+  {
+   "group": "Graphics Card",
+   "items": [
+    {
+     "label": "Model",
+     "value": "AMD Radeon 660M"
+    },
+    {
+     "label": "Memory Type",
+     "value": "Integrated"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard and TouchPad",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Full-size, flint opaque keyboard with numeric keypad"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Touchpad with multi-touch gesture support"
+    }
+   ]
+  },
+  {
+   "group": "Camera and Audio",
+   "items": [
+    {
+     "label": "Webcam",
+     "value": "720p HD camera with privacy shutter"
+    },
+    {
+     "label": "Speaker",
+     "value": "Dual stereo speakers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Dual stereo speakersual array microphones"
+    }
+   ]
+  },
+  {
+   "group": "Ports and Slots",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "1 x HDMI 1.4b"
+    },
+    {
+     "label": "USB Port",
+     "value": "2 x USB Type-A 5Gbps signaling rate"
+    },
+    {
+     "label": "PD Charging",
+     "value": "Yes"
+    },
+    {
+     "label": "Display Port",
+     "value": "DisplayPort 1.4"
+    },
+    {
+     "label": "Headphone Microphone",
+     "value": "1 x stereo headphone/microphone combo jack"
+    },
+    {
+     "label": "USB Type-C/Thunderbolt",
+     "value": "1 x USB Type-C 10Gbps signaling rate (HP Sleep and Charge)"
+    }
+   ]
+  },
+  {
+   "group": "Network and Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Realtek Wi-Fi 6 RTL8852BE-VT 802.11a/b/g/n/ax (2x2)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "HP Long Life 3-cell, Li-ion polymer"
+    },
+    {
+     "label": "Adapter",
+     "value": "HP Smart 45W External AC power adapter"
+    },
+    {
+     "label": "Capacity",
+     "value": "41 Wh"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/hp-victus-15-fa2013dx": [
+  {
+   "group": "Main Features",
+   "items": [
+    {
+     "label": "OS",
+     "value": "Windows 11"
+    },
+    {
+     "label": "Model",
+     "value": "HP Victus 15-fa2013dx (B95WHUA) | Mica Silver"
+    },
+    {
+     "label": "Memory",
+     "value": "8GB DDR4-3200MT/s"
+    },
+    {
+     "label": "Weight",
+     "value": "2.29 kg"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB M.2 NVMe PCIe Gen4 SSD"
+    },
+    {
+     "label": "Dimension",
+     "value": "14.09 x 10.04 x 0.93 inches"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Core",
+     "value": "8"
+    },
+    {
+     "label": "Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Cache",
+     "value": "12MB"
+    },
+    {
+     "label": "Model",
+     "value": "Core i5-13420H"
+    },
+    {
+     "label": "Thread",
+     "value": "12"
+    },
+    {
+     "label": "Frequency",
+     "value": "2.1 GHz (Up to 4.6 GHz)"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Type",
+     "value": "M.2 NVMe PCIe Gen4 SSD"
+    },
+    {
+     "label": "Upgrade",
+     "value": "Yes"
+    },
+    {
+     "label": "Capacity",
+     "value": "512GB"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Ram",
+     "value": "8GB"
+    },
+    {
+     "label": "Type",
+     "value": "DDR4"
+    },
+    {
+     "label": "Upgrade",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "3200MT/s"
+    },
+    {
+     "label": "Maximum Ram",
+     "value": "32GB"
+    },
+    {
+     "label": "Total Ram Slot",
+     "value": "2 x DDR4 slots"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "15.6 inches"
+    },
+    {
+     "label": "Type",
+     "value": "IPS LED"
+    },
+    {
+     "label": "Resolution",
+     "value": "1920 x 1080"
+    },
+    {
+     "label": "Display Features",
+     "value": "Micro-edge Anti-glare 300 nits 62.5% sRGB"
+    },
+    {
+     "label": "Max Refresh Rate",
+     "value": "144Hz"
+    }
+   ]
+  },
+  {
+   "group": "Graphics Card",
+   "items": [
+    {
+     "label": "Model",
+     "value": "NVIDIA GeForce RTX 3050 6GB"
+    },
+    {
+     "label": "Memory Type",
+     "value": "Dedicated GDDR6"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard and TouchPad",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Full-size backlit moonstone grey keyboard with numeric keypad"
+    },
+    {
+     "label": "TouchPad",
+     "value": "HP Imagepad"
+    }
+   ]
+  },
+  {
+   "group": "Camera and Audio",
+   "items": [
+    {
+     "label": "Webcam",
+     "value": "HP Wide Vision 720p HD camera with temporal noise reduction"
+    },
+    {
+     "label": "Speaker",
+     "value": "HD Audio with stereo speakers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Integrated dual array digital microphones"
+    },
+    {
+     "label": "Special Features",
+     "value": "AI Noise Reduction DTS: X Ultra"
+    }
+   ]
+  },
+  {
+   "group": "Ports and Slots",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "1 x HDMI 2.1"
+    },
+    {
+     "label": "USB Port",
+     "value": "1 x USB Type-A 5Gbps signaling rate (HP Sleep and Charge) 1 x USB Type-A 5Gbps signaling rate"
+    },
+    {
+     "label": "PD Charging",
+     "value": "Yes"
+    },
+    {
+     "label": "Display Port",
+     "value": "DisplayPort 1.4a"
+    },
+    {
+     "label": "Headphone Microphone",
+     "value": "1 x Headphone/microphone combo"
+    },
+    {
+     "label": "USB Type-C/Thunderbolt",
+     "value": "1 x USB Type-C 5Gbps signaling rate"
+    }
+   ]
+  },
+  {
+   "group": "Network and Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1 x RJ-45"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 6 (2x2)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "3-cell, Li-ion polymer battery"
+    },
+    {
+     "label": "Adapter",
+     "value": "120W AC power adapter"
+    },
+    {
+     "label": "Capacity",
+     "value": "52.5 Wh"
+    },
+    {
+     "label": "Battery Life",
+     "value": "Up to 4 hours and 30 minutes (mixed usage) Up to 8 hours (video playback) Up to 4 hours and 45 minutes (wireless streaming)"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/hp-victus-15-fb3093dx": [
+  {
+   "group": "Main Features",
+   "items": [
+    {
+     "label": "OS",
+     "value": "Windows 11"
+    },
+    {
+     "label": "Model",
+     "value": "HP Victus Gaming 15-fb3093dx (BM4X8UA) | Mica Silver"
+    },
+    {
+     "label": "Memory",
+     "value": "16GB DDR5 RAM"
+    },
+    {
+     "label": "Weight",
+     "value": "2.29 kg"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB M.2 NVMe SSD"
+    },
+    {
+     "label": "Dimension",
+     "value": "14.09 x 10.04 x 0.93 inches"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Core",
+     "value": "6"
+    },
+    {
+     "label": "Brand",
+     "value": "AMD"
+    },
+    {
+     "label": "Cache",
+     "value": "16MB"
+    },
+    {
+     "label": "Model",
+     "value": "Ryzen 7 7445HS"
+    },
+    {
+     "label": "Thread",
+     "value": "12"
+    },
+    {
+     "label": "Frequency",
+     "value": "3.5 GHz (up to 4.7 GHz)"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Type",
+     "value": "M.2 NVMe PCIe Gen 4 SSD"
+    },
+    {
+     "label": "Upgrade",
+     "value": "Yes"
+    },
+    {
+     "label": "Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Extra Slot",
+     "value": "No"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Ram",
+     "value": "16GB (2 x 8GB)"
+    },
+    {
+     "label": "Type",
+     "value": "DDR5"
+    },
+    {
+     "label": "Upgrade",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600 MT/s"
+    },
+    {
+     "label": "Maximum Ram",
+     "value": "32GB"
+    },
+    {
+     "label": "Total Ram Slot",
+     "value": "2 x DDR5 slots"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "15.6 inches"
+    },
+    {
+     "label": "Type",
+     "value": "IPS LCD"
+    },
+    {
+     "label": "Resolution",
+     "value": "1920 x 1080"
+    },
+    {
+     "label": "Display Features",
+     "value": "Micro-edge Anti-glare 300 nits 62.5% sRGB"
+    },
+    {
+     "label": "Max Refresh Rate",
+     "value": "144Hz"
+    }
+   ]
+  },
+  {
+   "group": "Graphics Card",
+   "items": [
+    {
+     "label": "Model",
+     "value": "NVIDIA GeForce RTX 4050 6GB"
+    },
+    {
+     "label": "Memory Type",
+     "value": "Dedicated GDDR6"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard and TouchPad",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Full-size, backlit, moonstone grey keyboard"
+    },
+    {
+     "label": "Features",
+     "value": "Numeric Keypad"
+    },
+    {
+     "label": "TouchPad",
+     "value": "HP Imagepad; Precision Touchpad support"
+    }
+   ]
+  },
+  {
+   "group": "Camera and Audio",
+   "items": [
+    {
+     "label": "Webcam",
+     "value": "HP Wide Vision 720p HD camera with temporal noise reduction"
+    },
+    {
+     "label": "Microphone",
+     "value": "Integrated dual array digital microphones"
+    }
+   ]
+  },
+  {
+   "group": "Ports and Slots",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "1 x HDMI 2.1"
+    },
+    {
+     "label": "USB Port",
+     "value": "1 x USB Type-A 5Gbps signaling rate 1 x USB Type-A 5Gbps signaling rate"
+    },
+    {
+     "label": "PD Charging",
+     "value": "Yes"
+    },
+    {
+     "label": "Display Port",
+     "value": "DisplayPort 1.4a"
+    },
+    {
+     "label": "Headphone Microphone",
+     "value": "1 x headphone/microphone combo"
+    },
+    {
+     "label": "USB Type-C/Thunderbolt",
+     "value": "1 x USB Type-C 5Gbps signaling rate"
+    }
+   ]
+  },
+  {
+   "group": "Network and Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1 x RJ-45"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Realtek Wi-Fi 6 (2x2)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.4"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "4-cell, Li-ion polymer"
+    },
+    {
+     "label": "Adapter",
+     "value": "120W AC power adapter"
+    },
+    {
+     "label": "Capacity",
+     "value": "70Wh"
+    }
+   ]
+  }
+ ],
+ "https://www.globalbrand.com.bd/lenovo-ideapad-slim-3i-15irh10-83k100g0lk-13th-gen-core-i7-laptop": [
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "15.3-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "WUXGA (1920x1200)"
+    },
+    {
+     "label": "Display Features",
+     "value": "Anti-glare"
+    },
+    {
+     "label": "Brightness",
+     "value": "300nits"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "60Hz"
+    },
+    {
+     "label": "Color Gamut",
+     "value": "45% NTSC"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM Type",
+     "value": "DDR5-4800"
+    },
+    {
+     "label": "Upgradeable",
+     "value": "Yes"
+    },
+    {
+     "label": "Total RAM Slot",
+     "value": "One Memory Soldered to Systemboard One DDR5 SO-DIMM slot, Dual-Channel Capable"
+    },
+    {
+     "label": "Max Memory",
+     "value": "Up to 24GB (8GB soldered + 16GB SO-DIMM) DDR5-4800 offering"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Storage Type",
+     "value": "M.2 2242 PCIe 4.0x4 NVMe SSD"
+    },
+    {
+     "label": "Extra M.2 Slot",
+     "value": "Yes"
+    },
+    {
+     "label": "Storage Upgrade",
+     "value": "Yes"
+    },
+    {
+     "label": "Storage Support",
+     "value": "Max Storage Support: Up to two drives, 2x M.2 SSD M.2 2242 SSD up to 1TB Storage Slot: Two M.2 2242 PCIe 4.0 x4 slots"
+    }
+   ]
+  },
+  {
+   "group": "Integrated Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "Integrated Intel UHD Graphics"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit, English (EU)"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Buttonless Mylar surface multi-touch touchpad Supports Precision TouchPad (PTP) 75 x 120 mm (2.95 x 4.72 inches)"
+    },
+    {
+     "label": "NumberPad",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "FHD 1080p + IR with Privacy Shutter"
+    },
+    {
+     "label": "Speaker",
+     "value": "Stereo speakers 2W x2, Optimized with Dolby Audio"
+    },
+    {
+     "label": "Microphone",
+     "value": "2x, Array"
+    },
+    {
+     "label": "Audio Features",
+     "value": "High Definition (HD) Audio"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "1x SD card reader"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI 1.4"
+    },
+    {
+     "label": "USB 3 Port",
+     "value": "2x USB-A (USB 5Gbps / USB 3.2 Gen 1)"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "1x Headphone/microphone combo jack (3.5mm)"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "1x USB-C (USB 5Gbps / USB 3.2 Gen 1), with USB PD 3.0 and DisplayPort 1.2"
+    },
+    {
+     "label": "Power connector",
+     "value": "1x Power Connector"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6, 802.11ax 2x2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "BT5.2"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Security Chip",
+     "value": "Firmware TPM 2.0 Enabled"
+    },
+    {
+     "label": "Camera Privacy Shutter",
+     "value": "Yes"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Capacity",
+     "value": "50Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "65W Round Tip (3-pin)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Luna Grey"
+    },
+    {
+     "label": "Dimensions",
+     "value": "343.4 x 239.5 x 16.9-17.9 mm (13.52 x 9.51 x 0.67-0.70 inches)"
+    },
+    {
+     "label": "Weight",
+     "value": "Starting at 1.59 kg (3.51 lbs)"
+    },
+    {
+     "label": "Body Material",
+     "value": "Surface Treatment: Aluminium Stamping Anodized (Top), Texture (Bottom) Case Material: Aluminium (Top), PC-ABS (Bottom)"
+    }
+   ]
+  },
+  {
+   "group": "Additional",
+   "items": [
+    {
+     "label": "Certification",
+     "value": "Green Certifications: ErP Lot 6/26 RoHS compliant Other Certifications: TÜV Rheinland Low Blue Light (Software Solution) Mil-Spec Test: MIL-STD-810H military test passed (21 test items)"
+    }
+   ]
+  }
+ ],
+ "https://www.applegadgetsbd.com/product/lenovo-legion-5-15ahp10-amd-ryzen-7-260-nvidia-geforce-rtx-5050-gaming-laptop": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "Lenovo"
+    },
+    {
+     "label": "Model",
+     "value": "Legion 5 15AHP10 83M00059LK"
+    },
+    {
+     "label": "Camera",
+     "value": "5.0MP webcam with E-shutter"
+    },
+    {
+     "label": "Audio",
+     "value": "Stereo speakers, 2 × 2W, HARMAN audio, Nahimic Audio optimization, dual-array microphones"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "AMD"
+    },
+    {
+     "label": "Model",
+     "value": "Ryzen 7 260"
+    },
+    {
+     "label": "Frequency",
+     "value": "3.8GHz, up to 5.1GHz"
+    },
+    {
+     "label": "Cores",
+     "value": "8"
+    },
+    {
+     "label": "Threads",
+     "value": "16"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "16MB L3 cache"
+    },
+    {
+     "label": "NPU",
+     "value": "Integrated AMD Ryzen AI, up to 16 TOPS"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & Touchpad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "24-zone RGB backlit English (EU) keyboard"
+    },
+    {
+     "label": "Touchpad",
+     "value": "Buttonless Mylar multi-touch touchpad with Precision TouchPad support"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 7 (802.11be 2×2)"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "5.4"
+    }
+   ]
+  },
+  {
+   "group": "Body",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "13.58 × 10.05 × 0.79–0.85 inches"
+    },
+    {
+     "label": "Weight",
+     "value": "Starting at 1.9kg"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Model",
+     "value": "NVIDIA GeForce RTX 5050"
+    },
+    {
+     "label": "Memory",
+     "value": "8GB GDDR7"
+    },
+    {
+     "label": "Type",
+     "value": "Dedicated"
+    },
+    {
+     "label": "Features",
+     "value": "2662MHz boost clock, 115W TGP, DLSS 4, DirectX 12 Ultimate"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "15.1 inches"
+    },
+    {
+     "label": "Type",
+     "value": "OLED"
+    },
+    {
+     "label": "Resolution",
+     "value": "WQXGA (2560 × 1600)"
+    },
+    {
+     "label": "Features",
+     "value": "165Hz refresh rate, 100% DCI-P3, 1000-nit peak brightness, 500-nit typical brightness, Dolby Vision, DisplayHDR True Black 600"
+    }
+   ]
+  },
+  {
+   "group": "Ports",
+   "items": [
+    {
+     "label": "USB",
+     "value": "3 × USB-A (USB 5Gbps), 1 × USB-C (USB 10Gbps), 1 × USB-C (USB4 40Gbps)"
+    },
+    {
+     "label": "HDMI",
+     "value": "1 × HDMI 2.1, up to 8K/60Hz"
+    },
+    {
+     "label": "Ethernet",
+     "value": "1 × RJ-45"
+    },
+    {
+     "label": "Headphone Jack",
+     "value": "1 × 3.5mm headphone/microphone combo"
+    },
+    {
+     "label": "Power",
+     "value": "USB-C Power Delivery, 95–100W"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Rechargeable Li-ion battery"
+    },
+    {
+     "label": "Capacity",
+     "value": "80Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "245W Slim Tip, 3-pin"
+    },
+    {
+     "label": "Charging",
+     "value": "Supports Super Rapid Charge"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Type",
+     "value": "M.2 PCIe 4.0 NVMe SSD"
+    },
+    {
+     "label": "Expansion",
+     "value": "Supports up to two M.2 SSDs"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "16GB (1 × 16GB)"
+    },
+    {
+     "label": "Type",
+     "value": "DDR5 SODIMM"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600 MT/s"
+    },
+    {
+     "label": "Slots",
+     "value": "2"
+    },
+    {
+     "label": "Maximum Capacity",
+     "value": "32GB"
+    }
+   ]
+  },
+  {
+   "group": "Other Features / Info",
+   "items": [
+    {
+     "label": "Body Material",
+     "value": "Aluminium top, PC-ABS with 15% talc bottom"
+    },
+    {
+     "label": "AI Chip",
+     "value": "LA1"
+    }
+   ]
+  }
+ ],
+ "https://www.sumashtech.com/product/lenovo-loq-15ahp10-ryzen-5-220-rtx-5050": [
+  {
+   "group": "Main Features",
+   "items": [
+    {
+     "label": "OS",
+     "value": "Windows 11 Home"
+    },
+    {
+     "label": "Model",
+     "value": "Lenovo LOQ 15AHP10 83JG000JUS | Luna Grey"
+    },
+    {
+     "label": "Memory",
+     "value": "16GB DDR5 RAM"
+    },
+    {
+     "label": "Weight",
+     "value": "Starting at 2.4 kg"
+    },
+    {
+     "label": "Storage",
+     "value": "512GB M.2 NVMe SSD"
+    },
+    {
+     "label": "Dimension",
+     "value": "14.17 x 10.19 x 0.86-0.94 inches"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Type",
+     "value": "M.2 NVMe PCIe 4.0 SSD"
+    },
+    {
+     "label": "Upgrade",
+     "value": "Up to two drives, 2 x M.2 SSD M.2 2242 SSD up to 1TB each"
+    },
+    {
+     "label": "Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Extra Slot",
+     "value": "1 x M.2 2280 PCIe 4.0 x2 slot"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Ram",
+     "value": "16GB (1 x 16GB)"
+    },
+    {
+     "label": "Type",
+     "value": "SODIMM DDR5"
+    },
+    {
+     "label": "Upgrade",
+     "value": "Yes"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "5600 MT/s"
+    },
+    {
+     "label": "Maximum Ram",
+     "value": "32GB"
+    },
+    {
+     "label": "Total Ram Slot",
+     "value": "2 x DDR5 SODIMM slots, dual-channel capable"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "15.6 inches"
+    },
+    {
+     "label": "Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "1920 x 1080"
+    },
+    {
+     "label": "Display Features",
+     "value": "300nits Anti-glare 100% sRGB G-SYNC"
+    },
+    {
+     "label": "Max Refresh Rate",
+     "value": "144Hz"
+    }
+   ]
+  },
+  {
+   "group": "Graphics Card",
+   "items": [
+    {
+     "label": "Model",
+     "value": "NVIDIA GeForce RTX 5050 8GB"
+    },
+    {
+     "label": "Features",
+     "value": "Boost Clock 2662MHz TGP 100W 440 AI TOPS DLSS 4 DirectX 12 Ultimate"
+    },
+    {
+     "label": "Memory Type",
+     "value": "Dedicated GDDR7"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard and TouchPad",
+   "items": [
+    {
+     "label": "Type",
+     "value": "White Backlit, English"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad (PTP), (2.95 x 4.72 inches)"
+    }
+   ]
+  },
+  {
+   "group": "Camera and Audio",
+   "items": [
+    {
+     "label": "Webcam",
+     "value": "HD 720p with E-shutter"
+    },
+    {
+     "label": "Speaker",
+     "value": "Stereo speakers, 2W x2, optimized with Nahimic Audio"
+    },
+    {
+     "label": "Microphone",
+     "value": "2x, Array"
+    }
+   ]
+  },
+  {
+   "group": "Ports and Slots",
+   "items": [
+    {
+     "label": "HDMI",
+     "value": "1 x HDMI 2.1, up to 8K/60Hz"
+    },
+    {
+     "label": "USB Port",
+     "value": "3 x USB-A (USB 5Gbps/USB 3.2 Gen 1)"
+    },
+    {
+     "label": "PD Charging",
+     "value": "PD 65-100W"
+    },
+    {
+     "label": "Display Port",
+     "value": "DisplayPort 1.4"
+    },
+    {
+     "label": "Headphone Microphone",
+     "value": "1 x Headphone/microphone combo jack (3.5mm)"
+    },
+    {
+     "label": "USB Type-C/Thunderbolt",
+     "value": "1 x USB-C (USB 10Gbps/USB 3.2 Gen 2)"
+    }
+   ]
+  },
+  {
+   "group": "Network and Connectivity",
+   "items": [
+    {
+     "label": "LAN",
+     "value": "1 x RJ-45"
+    },
+    {
+     "label": "Wi-Fi",
+     "value": "Wi-Fi 6, 802.11ax 2x2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 5.3"
+    }
+   ]
+  },
+  {
+   "group": "Battery",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Rechargeable Li-ion Battery"
+    },
+    {
+     "label": "Adapter",
+     "value": "170W Slim Tip (3-pin), supports Rapid Charge Pro (charge up to 50% in 30min)"
+    },
+    {
+     "label": "Capacity",
+     "value": "60Wh"
+    },
+    {
+     "label": "Battery Life",
+     "value": "MobileMark 30@250nits: 4.4 hours Local video (1080p) playback@150nits: 10.4 hours"
+    }
+   ]
+  }
+ ],
+ "https://www.applegadgetsbd.com/product/lenovo-loq-15irx9-core-i5-gaming-laptop": [
+  {
+   "group": "General",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "Lenovo"
+    },
+    {
+     "label": "Model",
+     "value": "LOQ 15IRX9"
+    },
+    {
+     "label": "Camera",
+     "value": "HD 720p Webcam"
+    }
+   ]
+  },
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Brand",
+     "value": "Intel"
+    },
+    {
+     "label": "Model",
+     "value": "Core i5-13450HX"
+    },
+    {
+     "label": "Frequency",
+     "value": "P-core 2.4GHz up to 4.6GHz, E-core 1.8GHz up to 3.4GHz"
+    },
+    {
+     "label": "Cores",
+     "value": "10 Cores (6P + 4E)"
+    },
+    {
+     "label": "Threads",
+     "value": "16T"
+    },
+    {
+     "label": "CPU Cache",
+     "value": "20MB"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & Touchpad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "4-Zone RGB Backlit, English (EU)"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Yes, Buttonless Mylar Multi-touch"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 6, 802.11ax 2x2"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "5.2"
+    }
+   ]
+  },
+  {
+   "group": "Body",
+   "items": [
+    {
+     "label": "Dimensions",
+     "value": "359.86 × 258.7 × 21.9–23.9 mm"
+    },
+    {
+     "label": "Weight",
+     "value": "Starting at 2.38kg"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Model",
+     "value": "NVIDIA GeForce RTX 4050"
+    },
+    {
+     "label": "Memory",
+     "value": "6GB GDDR6"
+    },
+    {
+     "label": "Type",
+     "value": "Dedicated"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Size",
+     "value": "15.6-inch"
+    },
+    {
+     "label": "Type",
+     "value": "IPS"
+    },
+    {
+     "label": "Resolution",
+     "value": "FHD (1920×1080)"
+    },
+    {
+     "label": "Features",
+     "value": "144Hz, 300nits, Anti-glare, 100% sRGB, G-SYNC"
+    }
+   ]
+  },
+  {
+   "group": "Ports",
+   "items": [
+    {
+     "label": "USB",
+     "value": "3x USB-A 5Gbps, 1x USB-C 10Gbps"
+    },
+    {
+     "label": "HDMI",
+     "value": "1x HDMI 2.1"
+    },
+    {
+     "label": "Ethernet",
+     "value": "1x RJ-45"
+    },
+    {
+     "label": "Headphone Jack",
+     "value": "1x headphone/microphone combo"
+    },
+    {
+     "label": "Power",
+     "value": "Lenovo PD 140W via USB-C"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Type",
+     "value": "Integrated Battery"
+    },
+    {
+     "label": "Capacity",
+     "value": "60Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "170W Slim Tip 3-pin"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "512GB"
+    },
+    {
+     "label": "Type",
+     "value": "M.2 2242 PCIe 4.0x4 NVMe SSD"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "Capacity",
+     "value": "16GB"
+    },
+    {
+     "label": "Type",
+     "value": "DDR5 SO-DIMM"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "4800MHz"
+    }
+   ]
+  },
+  {
+   "group": "Audio",
+   "items": [
+    {
+     "label": "Audio",
+     "value": "2W × 2 Stereo Speakers"
+    },
+    {
+     "label": "Audio",
+     "value": "2x Array Microphone"
+    },
+    {
+     "label": "Audio",
+     "value": "Nahimic Gaming Audio"
+    }
+   ]
+  },
+  {
+   "group": "Other Features / Info",
+   "items": [
+    {
+     "label": "Body Material",
+     "value": "PC-ABS"
+    },
+    {
+     "label": "Military Grade Certified",
+     "value": "MIL-STD-810H Military Test Passed"
     }
    ]
   }
