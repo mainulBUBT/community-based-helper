@@ -636,3 +636,10 @@ charger ৩, watch ৩, trimmer ৩, powerbank, fan, water-purifier ১টা �
 - Apple support আর CustomMac সৎ UA-তে 429 দেয়, তাই ১০টা Mac-এর `specsSource` Sumash / Gadget & Gear / Star Tech-এ বদলানো; 13" M3 শুধু Apple-এর পাতা থেকে হাতে।
 - যে পণ্যের ভার্সনে চিপ, RAM, স্টোরেজ বা GPU আলাদা, সেখানে ওই ঘরগুলো স্পেক থেকে বাদ — পাতা একটা ভার্সনের, আর ভার্সন বাছাইয়ে এগুলো এমনিতেই দেখায়।
 - দোকানের ভুল লেখা বাদ: MacBook Pro 16" M1 Pro-তে "VGA: Yes", 14" M1 Pro-তে "Mattel"/"Sliver", M5 Max-এ হেডফোন জ্যাককে মাইক্রোফোন বলা।
+
+### ইলেকট্রনিক্সের স্পেক (১১ নভেম্বর ২০২৬)
+
+mobile, tablet, earbuds, speaker, ssd, desktop-এর ৮০টা স্পেকহীন পণ্যের ৭২টায় স্পেক (`supabase/batches/2026-11-11-specs-electronics.sql`)। উৎস: পণ্যের নিজের অফার পাতা — Star Tech, Sumash Tech, Gadget & Gear, Apple Gadgets; Oppo Enco M33 Diamu থেকে, Crucial X8 Star Tech-এর বিবরণ থেকে হাতে। Sumash-এর স্ক্রিন মাপের "cm² (screen-to-body)" অংশ কাটা (iPad Air 11-এ ভুল সংখ্যা ছিল)।
+
+- **বাকি ৮টা:** Corsair EX100U, Kingston SXS2000, Transcend ESD310C/ESD310S, Lenovo Tab M11 (পড়ার মতো দোকানের পাতা নেই); JBL Clip 4 (G&G-তে টেবিল নেই, Diamu-র পাতা Clip 4 **Eco**-র); Anker P25i (পাতায় ৪টা তথ্য, তাও ভুল ঘরে); Redmi Pad SE 8.7".
+- **ভুল অফার:** Apple Gadgets-এর `redmi-pad-se` লিংক (Redmi Pad SE 8.7"-এর অফার) আসলে 11" মডেলের পাতা — স্পেক 11.0", Snapdragon 680।
