@@ -8206,8 +8206,48 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": "https://www.sumashtech.com/product/anker-soundcore-p25i-true-wireless-earbuds"
+  "specs": [
+   {
+    "group": "General",
+    "items": [
+     {
+      "label": "Driver",
+      "value": "10mm dynamic"
+     },
+     {
+      "label": "Bluetooth",
+      "value": "5.3"
+     },
+     {
+      "label": "App",
+      "value": "soundcore app with custom EQ"
+     }
+    ]
+   },
+   {
+    "group": "Battery",
+    "items": [
+     {
+      "label": "Playtime",
+      "value": "Up to 10 hours (30 hours with case)"
+     },
+     {
+      "label": "Fast Charging",
+      "value": "10 min charge = 2 hours playback"
+     }
+    ]
+   },
+   {
+    "group": "Features",
+    "items": [
+     {
+      "label": "IP Rating",
+      "value": "IPX5 (earbuds)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.bestbuy.com/site/6545163.p"
  },
  {
   "id": "oraimo-freepods-neo",
@@ -106670,8 +106710,82 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": "https://mobilebuzzbd.com/product/redmi-pad-se-8-7/"
+  "specs": [
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "8.7-inch"
+     },
+     {
+      "label": "Resolution",
+      "value": "1340 × 800"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "Up to 90Hz"
+     },
+     {
+      "label": "Brightness",
+      "value": "500 nits (typ), 600 nits outdoor mode"
+     }
+    ]
+   },
+   {
+    "group": "Platform",
+    "items": [
+     {
+      "label": "Chipset",
+      "value": "MediaTek Helio G85 (12nm), octa-core"
+     },
+     {
+      "label": "GPU",
+      "value": "Mali-G52 MC2"
+     },
+     {
+      "label": "OS",
+      "value": "Xiaomi HyperOS (Android 14)"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "Card Slot",
+      "value": "microSD, up to 2TB"
+     }
+    ]
+   },
+   {
+    "group": "Camera",
+    "items": [
+     {
+      "label": "Rear Camera",
+      "value": "8MP"
+     },
+     {
+      "label": "Front Camera",
+      "value": "5MP"
+     }
+    ]
+   },
+   {
+    "group": "Battery",
+    "items": [
+     {
+      "label": "Battery Capacity",
+      "value": "6650mAh"
+     },
+     {
+      "label": "Charging",
+      "value": "18W fast charging, USB Type-C"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.mi.com/global/product/redmi-pad-se-8-7-inch/specs/"
  },
  {
   "id": "xiaomi-pad-7-pro-11-2-inch",
@@ -109969,8 +110083,73 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": "https://kryinternational.com/products/lenovo-tab-m11"
+  "specs": [
+   {
+    "group": "Display",
+    "items": [
+     {
+      "label": "Display Size",
+      "value": "11-inch"
+     },
+     {
+      "label": "Display Type",
+      "value": "IPS, touch"
+     },
+     {
+      "label": "Resolution",
+      "value": "WUXGA 1920 × 1200"
+     },
+     {
+      "label": "Refresh Rate",
+      "value": "90Hz"
+     },
+     {
+      "label": "Brightness",
+      "value": "400 nits"
+     }
+    ]
+   },
+   {
+    "group": "Platform",
+    "items": [
+     {
+      "label": "Chipset",
+      "value": "MediaTek Helio G88, octa-core (2× A75 2.0GHz + 6× A55 1.8GHz)"
+     },
+     {
+      "label": "GPU",
+      "value": "Arm Mali-G52 MC2"
+     }
+    ]
+   },
+   {
+    "group": "Memory",
+    "items": [
+     {
+      "label": "RAM",
+      "value": "8GB"
+     },
+     {
+      "label": "Storage",
+      "value": "128GB"
+     }
+    ]
+   },
+   {
+    "group": "Battery",
+    "items": [
+     {
+      "label": "Battery Capacity",
+      "value": "7040mAh"
+     },
+     {
+      "label": "Battery Life",
+      "value": "Up to 10 hours video playback"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://psref.lenovo.com/syspool/Sys/PDF/Lenovo_Tablets/Tab_M11/Tab_M11_Spec.pdf"
  },
  {
   "id": "oneplus-pad-go-11-35-inch",

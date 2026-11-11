@@ -641,5 +641,5 @@ charger ৩, watch ৩, trimmer ৩, powerbank, fan, water-purifier ১টা �
 
 mobile, tablet, earbuds, speaker, ssd, desktop-এর ৮০টা স্পেকহীন পণ্যের ৭২টায় স্পেক (`supabase/batches/2026-11-11-specs-electronics.sql`)। উৎস: পণ্যের নিজের অফার পাতা — Star Tech, Sumash Tech, Gadget & Gear, Apple Gadgets; Oppo Enco M33 Diamu থেকে, Crucial X8 Star Tech-এর বিবরণ থেকে হাতে। Sumash-এর স্ক্রিন মাপের "cm² (screen-to-body)" অংশ কাটা (iPad Air 11-এ ভুল সংখ্যা ছিল)।
 
-- **বাকি ৮টা:** Corsair EX100U, Kingston SXS2000, Transcend ESD310C/ESD310S, Lenovo Tab M11 (পড়ার মতো দোকানের পাতা নেই); JBL Clip 4 (G&G-তে টেবিল নেই, Diamu-র পাতা Clip 4 **Eco**-র); Anker P25i (পাতায় ৪টা তথ্য, তাও ভুল ঘরে); Redmi Pad SE 8.7".
+- **বাকি ৮টা (পরে ওয়েব থেকে ভরা, `2026-11-11-specs-electronics-web.sql`):** প্রস্তুতকারকের পাতা/ডেটাশিট — Corsair, Kingston datasheet, Transcend ESD310 datasheet, Lenovo PSREF, JBL support, mi.com; Anker P25i-র অফিসিয়াল পাতা না পাওয়ায় Best Buy, শুধু যা একাধিক জায়গায় মেলে। আগে বাদ পড়ার কারণ: Corsair EX100U, Kingston SXS2000, Transcend ESD310C/ESD310S, Lenovo Tab M11 (পড়ার মতো দোকানের পাতা নেই); JBL Clip 4 (G&G-তে টেবিল নেই, Diamu-র পাতা Clip 4 **Eco**-র); Anker P25i (পাতায় ৪টা তথ্য, তাও ভুল ঘরে); Redmi Pad SE 8.7".
 - **ভুল অফার:** Apple Gadgets-এর `redmi-pad-se` লিংক (Redmi Pad SE 8.7"-এর অফার) আসলে 11" মডেলের পাতা — স্পেক 11.0", Snapdragon 680।
