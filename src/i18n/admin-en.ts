@@ -356,7 +356,6 @@ export const adminEn: AdminMessages = {
     noOffers: "No prices yet.",
     setManually: "Set a price by hand",
     colSeller: "Seller",
-    colCondition: "Condition",
     colPrice: "Price",
     colStock: "Stock",
     colPublished: "On site",

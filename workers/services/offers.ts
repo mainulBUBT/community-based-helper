@@ -116,11 +116,6 @@ export async function markGone(offerIds: string[]) {
   await must(db().from("offers").update({ in_stock: false, checked_at: new Date().toISOString() }).in("id", offerIds));
 }
 
-export async function knownOfferUrls(): Promise<Set<string>> {
-  const rows = await all<{ url: string }>((from, to) => db().from("offers").select("url").not("url", "is", null).order("id").range(from, to));
-  return new Set(rows.map((r) => r.url));
-}
-
 export async function offerSlots(): Promise<Set<string>> {
   const rows = await all<{ variant_id: string; seller_id: string; condition: string }>((from, to) =>
     db().from("offers").select("variant_id, seller_id, condition").order("id").range(from, to),

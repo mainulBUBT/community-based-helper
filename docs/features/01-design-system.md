@@ -16,7 +16,7 @@
 
 - `src/app/globals.css`: সব রঙের টোকেন (`--color-brand`, `--color-gold`, `--color-surface` …)
 - `src/components/ui/*`: Badge, Chip, SectionHeader, EmptyState, Skeleton, Toaster, ErrorNotice, Notices
-- `src/components/layout/*`: AppShell, SiteFooter, BrandMark, PageHeader, PreferenceButtons
+- `src/components/layout/*`: AppShell, SiteFooter, BrandMark, PreferenceButtons
 - `public/icons/*`: অ্যাপ আইকন (svg আর png)
 
 ## নিয়ম

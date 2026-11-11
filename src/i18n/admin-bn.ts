@@ -353,7 +353,6 @@ export const adminBn = {
     noOffers: "এখনো কোনো দাম নেই।",
     setManually: "হাতে দাম বসান",
     colSeller: "বিক্রেতা",
-    colCondition: "কেমন",
     colPrice: "দাম",
     colStock: "স্টক",
     colPublished: "সাইটে",
