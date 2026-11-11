@@ -643,3 +643,11 @@ mobile, tablet, earbuds, speaker, ssd, desktop-এর ৮০টা স্পে�
 
 - **বাকি ৮টা (পরে ওয়েব থেকে ভরা, `2026-11-11-specs-electronics-web.sql`):** প্রস্তুতকারকের পাতা/ডেটাশিট — Corsair, Kingston datasheet, Transcend ESD310 datasheet, Lenovo PSREF, JBL support, mi.com; Anker P25i-র অফিসিয়াল পাতা না পাওয়ায় Best Buy, শুধু যা একাধিক জায়গায় মেলে। আগে বাদ পড়ার কারণ: Corsair EX100U, Kingston SXS2000, Transcend ESD310C/ESD310S, Lenovo Tab M11 (পড়ার মতো দোকানের পাতা নেই); JBL Clip 4 (G&G-তে টেবিল নেই, Diamu-র পাতা Clip 4 **Eco**-র); Anker P25i (পাতায় ৪টা তথ্য, তাও ভুল ঘরে); Redmi Pad SE 8.7".
 - **ভুল অফার:** Apple Gadgets-এর `redmi-pad-se` লিংক (Redmi Pad SE 8.7"-এর অফার) আসলে 11" মডেলের পাতা — স্পেক 11.0", Snapdragon 680।
+
+### স্কিনকেয়ারের স্পেক (১১ নভেম্বর ২০২৬)
+
+৭৫টা স্কিনকেয়ার পণ্যে স্পেক (`supabase/batches/2026-11-11-specs-skincare.sql`)। স্কিনকেয়ারে স্পেক-টেবিল নেই, তাই দুটো ভাগ: **Details** (Skin Type, Key Ingredients, Use, আর পাতায় লেখা থাকলে Free From / Origin) আর **Ingredients** (পাতার পুরো INCI তালিকা হুবহু, ৪৮টায়)।
+
+- **উৎস:** ৫৮টা Shajgoj (বিবরণ + উপাদানের ট্যাব), বাকিগুলো Skincare Shop, Beauty Booth, KCare; Garnier Neem Face Wash garnier.in থেকে।
+- **নিয়ম:** Skin Type কেবল পাতায় স্পষ্ট লেখা থাকলে; উপাদানের তালিকা কেবল যখন সেটা আসল কমা-দেওয়া তালিকা (গদ্য বা "Key Ingredients" লেখা হলে বাদ)।
+- **খেয়াল:** Beauty Booth-এর SKIN1004 Centella Ampoule 50ml পাতার উপাদান-তালিকা একটা সানস্ক্রিনের — তাই 50ml-এ 100ml-এর (একই ফর্মুলা) Skincare Shop পাতা। ডিবিতে The Ordinary Niacinamide 10% + Zinc 1% দুবার আছে (`-30ml` আর `-serum-30ml`)।

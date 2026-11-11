@@ -101659,8 +101659,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "All skin types, sensitive"
+     },
+     {
+      "label": "Use",
+      "value": "Soap-free gel face wash"
+     },
+     {
+      "label": "Free From",
+      "value": "Artificial perfume, colour"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Aqua, Cocamidopropyl Betaine, Propylene glycol, Hydroxypropyl methyl cellulose, Panthenol, Sodium Chloride, Phenoxyethanol, Sodium Benzoate, Disodium EDTA, Sodium Hydroxide, Hydroxypropyl Cyclodextrin, Pantolactone, Tocopheryl Acetate, Glycerin, Iodopropynyl Butylcarbamate, Citric Acid"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/simple-kind-to-skin-refreshing-facial-wash-gel-150-ml-poland"
  },
  {
   "id": "cerave-hydrating-cleanser-236ml",
@@ -101685,8 +101712,39 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Normal to dry, sensitive"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "3 essential ceramides, Hyaluronic Acid"
+     },
+     {
+      "label": "Use",
+      "value": "Non-foaming lotion cleanser for face and body; cleans without stripping the barrier"
+     },
+     {
+      "label": "Free From",
+      "value": "Fragrance"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Aqua/Water, Glycerin, Cetearyl Alcohol, Phenoxyethanol, Stearyl Alcohol, Cetyl Alcohol, Peg-40 Stearate, Behentrimonium Methosulfate, Glyceryl Stearate, Polysorbate 20, Ethylhexylglycerin, Potassium Phosphate, Disodium Edta, Dipotassium Phosphate, Sodium Lauroyl Lactylate, Ceramide NP, Ceramide AP, Phytosphingosine, Cholesterol, Sodium Hyaluronate, Xanthan Gum, Carbomer, Tocopherol, Ceramide EOP"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cerave-hydrating-cleanser-for-normal-to-dry-skin"
  },
  {
   "id": "cerave-moisturizing-cream-56ml",
@@ -101712,8 +101770,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Dry to very dry"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "3 essential ceramides, Hyaluronic Acid"
+     },
+     {
+      "label": "Use",
+      "value": "Rich cream that locks in moisture and restores the skin barrier"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETYL ALCOHOL, CETEARETH-20, PETROLATUM, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, DIMETHICONE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, ETHYLHEXYLGLYCERIN"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cerave-moisturizing-cream-for-normal-to-dry-skin-2"
  },
  {
   "id": "cosrx-advanced-snail-96-mucin-power-essence-100ml",
@@ -101739,8 +101824,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "96% Snail Secretion Filtrate"
+     },
+     {
+      "label": "Use",
+      "value": "Lightweight essence for hydration and glow; soothes after breakouts"
+     },
+     {
+      "label": "Other",
+      "value": "Cruelty-free"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Snail Secretion Filtrate, Betaine, Butylene Glycol, 1,2-Hexanediol, Sodium Polyacrylate, Phenoxyethanol, Sodium Hyaluronate, Allantoin, Ethyl Hexanediol, Carbomer, Panthenol, Arginine"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cosrx-advanced-snail-96-mucin-power-essence"
  },
  {
   "id": "beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml",
@@ -101765,8 +101877,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "All skin types"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Rice extract, Probiotics"
+     },
+     {
+      "label": "Use",
+      "value": "SPF50+ PA++++ lightweight sunscreen; no white cast"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://kcarebd.com/products/beauty-of-joseon-relief-sun-rice-probiotics-spf50-pa-50ml/"
  },
  {
   "id": "streax-vitariche-gloss-hair-serum-115ml",
@@ -101792,8 +101922,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "All hair types"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Macadamia Oil, Vitamin E"
+     },
+     {
+      "label": "Use",
+      "value": "Frizz-free, glossy hair serum"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/streax-vitariche-gloss-hair-serum-100ml"
  },
  {
   "id": "livon-hair-serum-100ml",
@@ -101819,8 +101967,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "All hair types"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Moroccan Argan Oil"
+     },
+     {
+      "label": "Use",
+      "value": "Anti-frizz hair serum for gloss and smoothness"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/livon-anti-frizz-serum-100ml"
  },
  {
   "id": "dot-key-10-vitamin-c-e-5-niacinamide-serum-30ml",
@@ -101846,8 +102012,43 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "All skin types"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "10% Vitamin C, Vitamin E, 5% Niacinamide, Blood Orange"
+     },
+     {
+      "label": "Use",
+      "value": "Brightens dull skin and fades dark spots"
+     },
+     {
+      "label": "Free From",
+      "value": "Fragrance"
+     },
+     {
+      "label": "Origin",
+      "value": "India"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Aqua, Ethyl Ascorbic Acid, Niacinamide, Propanediol, Butylene Glycol, Diethylene Glycol Monoethyl Ether, Citric Acid, Benzyl Alcohol (and) Ethylhexylglycerin (and) Tocopherol, Citrus Sinensis (Blood Orange) Fruit Extract, Glycerin (and) Terminalia Ferdinandiana Fruit Extract, Curcurbita Pepo (Pumpkin) Extract, Tocopheryl Acetate, Xanthan Gum, Ferulic acid, Disodium EDTA, Allantoin, Sodium Hyaluronate, Alpha Arbutin, Laminaria Digitata Extract Hydrogenated Lecithin, Cetyl-PG Hydroxyethyl Palmitamide, Ceramide 1, 2,3,4,6II, Cholesterol, 1,2-Hexanediol"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/dot-key-10-vitamin-ce-5-niacinamide-serum"
  },
  {
   "id": "the-derma-co-10-niacinamide-face-serum-for-acne-marks-30ml",
@@ -101873,8 +102074,39 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "All skin types"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "10% Niacinamide"
+     },
+     {
+      "label": "Use",
+      "value": "Reduces acne marks and controls oil"
+     },
+     {
+      "label": "Origin",
+      "value": "India"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Purified Water, Niacinamide, Propyiene Glycol, Glycerin, Zinc PCA, Diethylene Glycol Monoethyl Ether, Phenoxyethanol, Hydroxyethyl Cellulose, Xanthan Gum, Citric Acid, Perfume, Diazolidinly Urea, Ethylhexylglycerin, Sodium Gluconate, Iodopropynyl Butylcarbamate"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/the-derma-co-10-niacinamide-face-serum-for-acne-marks"
  },
  {
   "id": "deconstruct-oil-free-moisturizer-50g",
@@ -101900,8 +102132,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Oily, acne-prone, sensitive"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "3% NMF Complex"
+     },
+     {
+      "label": "Use",
+      "value": "Oil-free, non-comedogenic moisturizer; up to 72-hour hydration"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Aqua, Calendula Officinalis (Flower) Extract, Glycerin, Diheptyl Succinate, Aloe barbadensis (Aloe Vera) Extract, Triethanolamine, Phenoxyethanol, Betaine, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Sodium Pyrrolidone Carboxylate, Sodium PCA, Panthenol, Sodium Gluconate, Ethylhexylglycerin, Sodium lactate, PCA, Capryloyl Glycerin/Sebacic Acid Copolymer, Serine, Alanine, Glycine, Glutamic Acid, Lysine HCl, Threonine, Arginine, Proline"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/deconstruct-oil-free-moisturizer-non-comedogenic-3-nmf-complex-02-panthenol"
  },
  {
   "id": "dot-key-watermelon-cooling-sunscreen-spf50-pa-80g",
@@ -101927,8 +102186,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Watermelon, Hyaluronic Acid"
+     },
+     {
+      "label": "Use",
+      "value": "SPF 50+ PA++++ cooling gel sunscreen; no white cast"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/dot-key-watermelon-cooling-sunscreen-spf-50-pa"
  },
  {
   "id": "the-ordinary-niacinamide-10-zinc-1-30ml",
@@ -101953,8 +102226,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "10% Niacinamide, 1% Zinc PCA"
+     },
+     {
+      "label": "Use",
+      "value": "Reduces blemishes and balances sebum"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Aqua (Water), Niacinamide, Pentylene Glycol, Zinc PCA, Dimethyl Isosorbide, Tamarindus Indica Seed Gum, Xanthan gum, Isoceteth-20, Ethoxydiglycol, Phenoxyethanol, Chlorphenesin"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/the-ordinary-niacinamide-10-zinc1"
  },
  {
   "id": "cetaphil-gentle-skin-cleanser-236ml",
@@ -101979,8 +102275,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Dry to normal, sensitive"
+     },
+     {
+      "label": "Use",
+      "value": "Non-foaming micellar cleanser; use with or without water"
+     },
+     {
+      "label": "Free From",
+      "value": "Fragrance; non-comedogenic"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://skincareshop.com.bd/product/cetaphil-gentle-skin-cleanser-236ml-normal-to-dry-sensitive-skin/"
  },
  {
   "id": "neutrogena-hydro-boost-water-gel-50ml",
@@ -102006,8 +102320,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Sensitive"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Hyaluronic Gel Matrix"
+     },
+     {
+      "label": "Use",
+      "value": "Oil-free water-gel moisturiser"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Aqua, Glycerin, Dimethicone, Cetearyl Olivate, Sorbitan Olivate, Alanine, Glycine, Threonine, Lysine Hydrochloride, Serine, Arginine, Proline, Allantoin, Maltose, Ethylhexylglycerin, Caprylyl Glycol, Dimethiconol, Pentylene Glycol, Sodium Hyaluronate, Fructose, Betaine, PCA, Sodium PCA, Urea, Glucose, Trehalose, Sodium Lactate, Glutamic Acid, Synthetic Beeswax, Dimethicone Crosspolymer, Polyacrylate Crosspolymer-6, Sodium Chloride, t-Butyl Alcohol, Citric Acid, Sodium Hydroxide, Tocopherol, Parfum, CI 42090. [PR-0003850]"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/neutrogena-hydro-boost-water-gel-cream"
  },
  {
   "id": "some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml",
@@ -102034,8 +102375,39 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Sensitive, dry, oily"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "AHA, BHA, PHA"
+     },
+     {
+      "label": "Use",
+      "value": "Low-pH exfoliating toner"
+     },
+     {
+      "label": "Origin",
+      "value": "Korea"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, butylene glycol, dipropylene glycol, glycerin, niacinamide, melaleuca alternifolia (tea tree) leaf extract, polyglyceryl-4 caprate, carica papaya (papaya) fruit extract, lens esculenta (lentil) seed extract, hamamelis virginiana (witch hazel) extract, nelumbo nucifera flower extract, swiftlet nest extract, sodium hyaluronate, fructan, allantoin, adenosine, hydroxyethyl urea, xylitol, salicylic acid, lactobionic acid, citric acid, sodium citrate, 1,2-hexanediol, pentylene glycol, caprylyl glycol, benzyl glycol, ethylhexylglycerin, ethyl hexanediol, raspberry ketone, phenoxyethanol, mentha piperita (peppermint) oil"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/some-by-mi-aha-bha-pha-30-days-miracle-toner"
  },
  {
   "id": "anua-heartleaf-77-soothing-toner-250ml",
@@ -102061,8 +102433,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Sensitive"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "77% Heartleaf (Houttuynia Cordata)"
+     },
+     {
+      "label": "Use",
+      "value": "Soothing, mildly acidic toner"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Houttuynia Cordata Extract(77%), Purified Water, 1,2-Hexandiol, Glycerin, Betaine, Panthenol, Saccharum Officinarum (Sugarcane) Extract, Portulaca Oleracea Extract, Butylene Glycol, Vitex Agnus-Castus Extract, Chamomilla Recutita (Matricaria) Flower Extract, Arctium Lappa Root Extract, Phellinus Linteus Extract, Vitis Vinifera (Grape) Fruit Extract, Apple Fruit Extract, Centella Asiatica Extract, Isopentyldiol, Methylpropanediol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tromethamine, Disodium EDTA"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://skincareshop.com.bd/product/anua-heartleaf-77-soothing-toner-250ml/"
  },
  {
   "id": "torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml",
@@ -102087,8 +102486,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "5D-Complex Hyaluronic Acid, Panthenol, Allantoin, Madecassoside"
+     },
+     {
+      "label": "Use",
+      "value": "Lightweight hydrating serum"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://skincareshop.com.bd/product/torriden-dive-in-low-molecule-hyaluronic-acid-serum-50ml/"
  },
  {
   "id": "isntree-hyaluronic-acid-toner-200ml",
@@ -102114,8 +102527,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "3 types of Hyaluronic Acid"
+     },
+     {
+      "label": "Use",
+      "value": "Hydrating toner that absorbs fast with no stickiness"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Propanediol, 1,2-Hexanediol, Sodium Hyaluronate, Trehalose, Sodium PCA, Glycerin, Hyaluronic Acid, Aloe Barbadensis Leaf Extract, Althaea Rosea Root Extract, Betula Alba Juice, Portulaca Oleracea Extract, Hydrolyzed Sodium Hyaluronate, Beta-Glucan, Panthenol, Pentylene Glycol, Caprylyl Glycol, Butylene Glycol"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/isntree-hyaluronic-acid-toner"
  },
  {
   "id": "cosrx-advanced-snail-92-all-in-one-cream-100g",
@@ -102141,8 +102577,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "92% Snail Secretion Filtrate"
+     },
+     {
+      "label": "Use",
+      "value": "Moisturizer that hydrates without oiliness and improves elasticity"
+     },
+     {
+      "label": "Other",
+      "value": "Cruelty-free"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Snail Secretion Filtrate, Betaine, Caprylic/Capric Triglyceride, Cetearyl Olivate, Sorbitan Olivate, Sodium Hyaluronate, Cetearyl Alcohol, Stearic acid, Arginine, Dimethicone, Carbomer, Panthenol, Allantoin, Sodium Polyacrylate, Xanthan Gum, Ethyl Hexanediol, Adenosine, Phenoxyethanol"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cosrx-advanced-snail-92-all-in-one-cream"
  },
  {
   "id": "klairs-supple-preparation-unscented-toner-180ml",
@@ -102167,8 +102630,30 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "All skin types"
+     },
+     {
+      "label": "Use",
+      "value": "Fragrance-free version of the Supple Preparation toner"
+     },
+     {
+      "label": "Free From",
+      "value": "Essential oils, fragrance"
+     },
+     {
+      "label": "Origin",
+      "value": "Korea"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://kcarebd.com/products/klairs-supple-preparation-unscented-toner-180ml/"
  },
  {
   "id": "skin1004-madagascar-centella-ampoule-50ml",
@@ -102193,8 +102678,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Centella Asiatica"
+     },
+     {
+      "label": "Use",
+      "value": "Soothing ampoule that calms and hydrates"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Glycerin, Butylene Glycol, Centella Asiatica Extract, 1,2-hexanediol, Cellulose Gum, Ethylhexylglycerin"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://skincareshop.com.bd/product/skin1004-madagascar-centella-ampoule-100ml/"
  },
  {
   "id": "round-lab-birch-juice-moisturizing-cream-80ml",
@@ -102219,8 +102727,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "All skin types"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Birch juice, Hyaluronic Acid"
+     },
+     {
+      "label": "Use",
+      "value": "Moisturizing cream"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Aqua, Glycerin, Isononyl Isononanoate, Isododecane, 1,2-Hexanediol, Pentylene Glycol, Polydecene, Pentaerythrityl Tetraethylhexanoate, Ammonium Acryloyldimethyltaurate/VP Copolymer, Polyglyceryl-3 Methylglucose Distearate, Jojoba Esters, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tromethamine, Glyceryl Acrylate/Acrylic Acid Copolymer, Betula Platyphylla Japonica Juice, Ethylhexylglycerin, Agar, Acacia Senegal Gum, Disodium EDTA, Hydrolyzed Hibiscus Esculentus Extract, Panthenol, Moringa Oleifera Seed Extract, Dipotassium Glycyrrhizate, Lupinus Albus Seed Extract, Melia Azadirachta Leaf Extract, Glyceryl Glucoside, Melia Azadirachta Flower Extract, Glyceryl Caprylate, Coccinia Indica Fruit Extract, Aloe Barbadensis Flower Extract, Solanum Melongena Fruit Extract, Butylene Glycol, Ocimum Sanctum Leaf Extract, Curcuma Longa Root Extract, Corallina Officinalis Extract, Tocopherol, Sodium Hyaluronate, Hyaluronic Acid, Ascorbic Acid"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://beautybooth.com.bd/product/round-lab-birch-juice-moisturizing-cream-80ml"
  },
  {
   "id": "cosrx-low-ph-good-morning-gel-cleanser-150ml",
@@ -102246,8 +102781,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Tea tree oil, BHA"
+     },
+     {
+      "label": "Use",
+      "value": "Mildly acidic (pH 5.0-6.0) gel cleanser for morning use"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Polysorbate 20, Styrax Japonicus Branch/Fruit/Leaf Extract, Butylene Glycol, Saccharomyces Ferment, Cryptomeria Japonica Leaf Extract, Nelumbo Nucifera Leaf Extract, Pinus Palustris Leaf Extract, Ulmus Davidiana Root Extract, Oenothera Biennis (Evening Primrose) Flower Extract, Pueraria Lobata Root Extract, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Allantoin, Caprylyl Glycol, Ethylhexylglycerin, Betaine Salicylate, Citric Acid, Ethyl Hexanediol, 1,2-Hexanediol, Trisodium Ethylenediamine Disuccinate, Sodium Benzoate, Disodium EDTA"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cosrx-low-ph-good-morning-gel-cleanser"
  },
  {
   "id": "cosrx-salicylic-acid-daily-gentle-cleanser-150ml",
@@ -102273,8 +102831,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Salicylic Acid (BHA)"
+     },
+     {
+      "label": "Use",
+      "value": "Creamy foam cleanser that unclogs pores and fights blackheads and whiteheads"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Glycerin, Myristic Acid, Stearic Acid, Potassium Hydroxide, Lauric Acid, Butylene Glycol, Glycol Distearate, Polysorbate 80, Sodium Methyl Cocoyl Taurate, Salicylic Acid, Cocamidopropyl Betaine, PEG-60 Hydrogenated Castor Oil, Fragrance, Sodium Chloride, Melaleuca Alternigolia (Tea Tree) Leaf Oil, Caprylyl Glycol, Ethylhexylglycerin, Salix Alba (Willow) Bark Water, Saccharomyces Ferment, Cryptomeria Japonica Leaf Extract, Nelumbo Nucifera Leaf Extract, Pinus Palustris Leaf Extract, Ulmus Davidiana Root Extract, Oenothera Biennis (Evening Primrose) Flower Extract, Pueraria Lobata Root Extract,1,2-Hexanediol, Ethyl Hexanediol, Citric Acid, Disodium EDTA"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cosrx-salicylic-acid-daily-gentle-cleanser"
  },
  {
   "id": "cosrx-acne-pimple-master-patch-24pcs",
@@ -102299,8 +102880,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Hydrocolloid"
+     },
+     {
+      "label": "Use",
+      "value": "Overnight pimple patches; 24 patches in 3 sizes"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://skincareshop.com.bd/product/cosrx-acne-pimple-master-patch/"
  },
  {
   "id": "round-lab-1025-dokdo-toner-100ml",
@@ -102325,8 +102920,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Dokdo deep sea water, Panthenol, Allantoin, Betaine"
+     },
+     {
+      "label": "Use",
+      "value": "Gentle exfoliating and moisturizing toner"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Butylene Glycol, Glycerin, Pentylene Glycol, Propanediol, Chondrus Crispus Extract, Saccharum Officinarum (Sugar Cane) Extract, Sea Water, 1,2-Hexanediol, Protease, Betaine, Panthenol, Ethylhexylglycerin, Allantoin, Xanthan Gum, Disodium EDTA"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/round-lab-1025-dokdo-toner-100ml"
  },
  {
   "id": "isntree-green-tea-fresh-toner-200ml",
@@ -102351,8 +102969,39 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Oily, combination"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "80% Jeju Green Tea, Centella Asiatica, Hyaluronic Acid"
+     },
+     {
+      "label": "Use",
+      "value": "Controls excess oil and balances skin"
+     },
+     {
+      "label": "Free From",
+      "value": "Parabens, alcohol, silicone, fragrance"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Camellia Sinensis Leaf Extract,Water,Ginkgo Biloba Leaf Extract,Centella Asiatica Extract,Salix Alba (Willow) Bark Extract,Vaccinium Angustifolium (Blueberry) Fruit Extract,Pinus Palustris Leaf Extract,Ulmus Davidiana Root Extract,Oenothera Biennis (Evening Primrose) Flower Extract,Pueraria Lobata Root Extract,Hydrolyzed Hyaluronic Acid,Ammonium Acryloyldimethyltaurate/VP Copolymer,Allantoin,Dipotassium Glycyrrhizate,Beta-Glucan,Disodium EDTA,Hydroxyacetophenone"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/isntree-green-tea-fresh-toner"
  },
  {
   "id": "skin1004-madagascar-centella-ampoule-100ml",
@@ -102378,8 +103027,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Centella Asiatica"
+     },
+     {
+      "label": "Use",
+      "value": "Soothing ampoule that calms and hydrates"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Glycerin, Butylene Glycol, Centella Asiatica Extract, 1,2-hexanediol, Cellulose Gum, Ethylhexylglycerin"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://skincareshop.com.bd/product/skin1004-madagascar-centella-ampoule-100ml/"
  },
  {
   "id": "etude-dear-darling-water-tint",
@@ -102406,8 +103078,27 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Use",
+      "value": "Water-based tint for lips and cheeks with a glossy finish"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Butylene Glycol, Trehalose, 1,2-Hexanediol, Pentylene Glycol, PEG-60 Hydrogenated Castor Oil, Sunset Yellow FCF, Fast Acid Magenta, Glyceryl Caprylate, Fragrance, Eosine YS, Alizarine Cyanine Green F, Glycerin, Brilliant Blue FCF, Propanediol, Punica Granatum Fruit Juice, Rubus Idaeus (Raspberry) Juice, Vitis Vinifera (Grape) Juice"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/etude-house-dear-darling-water-tint-07-lush-prune-ade-lip-tint"
  },
  {
   "id": "beauty-glazed-glazed-glow-lip-oil",
@@ -102433,8 +103124,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Vitamin E, Jojoba Oil, Shea Butter"
+     },
+     {
+      "label": "Use",
+      "value": "Glossy, hydrating lip oil"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://beautybooth.com.bd/product/beauty-glazed-glow-lip-oil-101-meet"
  },
  {
   "id": "swiss-beauty-dip-tint-lip-oil",
@@ -102460,8 +103165,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Vitamin E"
+     },
+     {
+      "label": "Use",
+      "value": "pH-reactive tinted lip oil"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/swiss-beauty-dip-tint-lip-oil-01-strawberry"
  },
  {
   "id": "laneige-lip-sleeping-mask-berry",
@@ -102496,8 +103215,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Berry Mix Complex, Vitamin C, Hyaluronic Acid"
+     },
+     {
+      "label": "Use",
+      "value": "Overnight lip mask that reduces flakiness"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/laneige-lip-sleeping-mask-berry"
  },
  {
   "id": "wishcare-ceramide-lip-balm-spf-50",
@@ -102524,8 +103257,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "All skin types"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Ceramides"
+     },
+     {
+      "label": "Use",
+      "value": "SPF 50 PA+++ lip balm for chapped lips"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Castor Seed Oil, Candelilla Wax, Coconut Oil, Shea Butter, Tinosorb M, Tinosorb S, Cocoa Butter, Almond Oil, Carrot Seed Oil,Read, Niacinamide, Kojic Acid, Carnauba Wax, Ceramide NP, Ceramide AP, Dicaprylyl Carbonate, Ceramide EOP, Cetearyl Olivate, Sorbitan Olivate, Zinc Oxide, Titanium Dioxide, Caprylyl Methicone, Vitamin E, OA Omega Plus,Licorice extract,"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/wishcare-ceramide-lip-balm-with-spf-50-pa-natural"
  },
  {
   "id": "cosrx-propolis-lip-sleeping-mask",
@@ -102552,8 +103312,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Honey extract (Honey-6 Complex)"
+     },
+     {
+      "label": "Use",
+      "value": "Overnight lip mask for plump, hydrated lips"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://skincareshop.com.bd/product/cosrx-lip-sleep-propolis-lip-sleeping-mask-20gm/"
  },
  {
   "id": "laneige-water-sleeping-mask",
@@ -102588,8 +103362,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Hydro Ionized Mineral Water, Apricot, Evening Primrose"
+     },
+     {
+      "label": "Use",
+      "value": "Overnight mask for moisture and glow"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "WATER, BUTYLENE GLYCOL, CYCLOPENTASILOXANE, GLYCERIN, CYCLOHEXASILOXANE, TREHALOSE, SODIUM HYALURONATE, OENOTHERA BIENNIS (EVENING PRIMROSE) ROOT EXTRACT, PRUNUS ARMENIACA (APRICOT) FRUIT EXTRACT, BETA-GLUCAN, CHENOPODIUM QUINOA SEED EXTRACT, ASCORBYL GLUCOSIDE, MAGNESIUM SULFATE, ZINC SULFATE, MANGANESE SULFATE, CALCIUM CHLORIDE, POTASSIUM ALGINATE, AMMONIUM ACRYLOYLDIMETHYLTAURATE / VP COPOLYMER, POLYSORBATE 20, DIMETHICONE, DIMETHICONOL, DIMETHICONE / VINYL DIMETHICONE CROSSPOLYMER, PROPANEDIOL, ETHYLHEXYLGLYCERIN, STEARYL BEHENATE, POLYGLYCERYL-3 METHYLGLUCOSE DISTEARATE, HYDROXYPROPYL BISPALMITAMIDE MEA, INULIN LAURYL CARBAMATE, ALCOHOL, 1,2-HEXANEDIOL, CAPRYLYL GLYCOL, CARBOMER, TROMETHAMINE, DISODIUM EDTA, PHENOXYETHANOL, FRAGRANCE, BLUE 1 (CI 42090)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/laneige-water-sleeping-mask-2"
  },
  {
   "id": "medicube-collagen-night-wrapping-mask",
@@ -102616,8 +103413,39 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Sensitive"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Collagen"
+     },
+     {
+      "label": "Use",
+      "value": "Overnight peel-off mask for elasticity and hydration"
+     },
+     {
+      "label": "Free From",
+      "value": "Artificial colors, fragrance"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Polyvinyl Alcohol, Glycerin, Agave Americana Stem Extract, Niacinamide, Sodium Hyaluronate, 1,2-Hexanediol, Caprylyl Glycol, Polyglyceryl-10 Laurate, Chlorella Vulgaris Extract, Glucose, Butylene Glycol, Ethylhexylglycerin, Fructooligosaccharides, Fructose, Adenosine, Xanthan Gum, Cynanchum Atratum Extract, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Althaea Rosea Flower Extract, Ceramide NP, Tocopherol, Pancratium Maritimum Extract, Collagen Extract, Sodium Stearoyl Glutamate"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/medicube-collagen-night-wrapping-mask"
  },
  {
   "id": "beauty-of-joseon-ground-rice-and-honey-glow-mask",
@@ -102644,8 +103472,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Rice hull powder, 5% Honey, Makgeolli lees, Clay"
+     },
+     {
+      "label": "Use",
+      "value": "Wash-off mask that hydrates, brightens and gently exfoliates"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Kaolin, Honey, Glycerin, Propanediol, Dipropylene Glycol, Oryza Sativa (Rice) Hull Powder, Isononyl Isononanoate, 1,2-Hexanediol, Cetyl Alcohol, Caprylic/Capric Triglyceride, Polyglyceryl-3 Methylglucose Distearate, Glyceryl Stearate, Butylene Glycol, Oryza Sativa (Rice) Bran, Oryza Sativa (Rice) Lees Extract, Oryza Sativa (Rice) Extract, Honey Extract, Bentonite, Palmitic Acid, Stearic Acid, Behenyl Alcohol, Cellulose, Zea Mays (Corn) Starch, Xanthan Gum, Hydroxyacetophenone, Potassium Cetyl Phosphate, Ethylhexylglycerin, Polyacrylate-13, Hydrogenated Polyisobutene, Sodium Phytate, Polyglyceryl-10 Laurate, Ethylhexyl Palmitate, Sorbitan Isostearate, Menthyl Lactate"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/beauty-of-joseon-ground-rice-and-honey-glow-mask"
  },
  {
   "id": "st-ives-fresh-skin-apricot-scrub",
@@ -102672,8 +103523,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Apricot, Walnut shell powder"
+     },
+     {
+      "label": "Use",
+      "value": "Face scrub; use 3-4 times a week"
+     },
+     {
+      "label": "Origin",
+      "value": "USA"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water (Aqua, Eau), Juglans Regia (Walnut) Shell Powder, Glyceryl Stearate, Glycerin, Sodium Lauryl Sulfoacetate, Zea Mays (Corn) Kernel Meal, Cocamidopropyl Betaine, Cetearyl Alcohol, Cetyl Alcohol, PEG-100 Stearate, Cetyl Acetate, Titanium Dioxide (CI 77891), Polysorbate 60, Ceteareth-20, Acetylated Lanolin Alcohol, Triethanolamine, Carbomer, Fragrance (Parfum), PPG-2 Methyl Ether, Phenethyl Alcohol, Limonene, Linalool, Methylisothiazolinone, Prunus Armeniaca (Apricot) Fruit Extract"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/st-ives-fresh-skin-apricot-scrub"
  },
  {
   "id": "cosrx-full-fit-honey-sugar-lip-scrub",
@@ -102700,8 +103578,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Sugar crystals, Honey extract"
+     },
+     {
+      "label": "Use",
+      "value": "Lip scrub that exfoliates and moisturizes"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://skincareshop.com.bd/product/cosrx-full-fit-honey-sugar-lip-scrub-20gm/"
  },
  {
   "id": "purito-dermide-cica-barrier-sleeping-pack",
@@ -102728,8 +103620,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Centella Asiatica, Hyaluronic Acid, Ceramide"
+     },
+     {
+      "label": "Use",
+      "value": "Overnight pack that strengthens the skin barrier"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://skincareshop.com.bd/product/purito-dermide-cica-barrier-sleeping-pack-80ml/"
  },
  {
   "id": "anua-heartleaf-pore-clay-pack",
@@ -102756,8 +103662,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Kaolin, Bentonite, Heartleaf (Houttuynia Cordata), Cica, Hyaluronic Acid, Ceramide NP"
+     },
+     {
+      "label": "Use",
+      "value": "Deep-cleans and refines pores, absorbs excess oil, soothes redness"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Kaolin (20%), Houttuynia Cordata Extract (10.1%), Glycerin, Propanediol, Butylene Glycol, Bentonite (35,000ppm), Hexylene Glycol, Zea Mays (Corn) Starch, 1,2-Hexanediol, Glyceryl Glucoside, Betaine, Decyl Glucoside, Centella Asiatica Extract, Ficus Carica (Fig) Fruit Extract, Laminaria Japonica Extract, Eclipta Prostrata Leaf Extract, Sodium Hyaluronate, Hydrogenated Lecithin, Soluble Collagen, Potassium Cetyl Phosphate, Calamine, Houttuynia Cordata Powder (3,060ppm), Xanthan Gum, Dipropylene Glycol, Chlorella Vulgaris Powder, Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Polyisobutene, Triethoxycaprylylsilane, Allantoin, Sorbitan Oleate, Caprylyl/Capryl Glucoside, Fructooligosaccharides, Protease, Beta-Glucan, Panthenol, Hydrolyzed Hyaluronic Acid, Ceramide NP, Quercetin(100ppb), Palmitoyl Tripeptide-5, Fragrance, Hydroxyacetophenone, Ethylhexylglycerin, Pentylene Glycol, Iron Oxide Yellow"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/anua-heartleaf-pore-clay-pack-100ml"
  },
  {
   "id": "cosrx-aloe-soothing-sun-cream",
@@ -102784,8 +103713,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Aloe Arborescens Leaf Extract"
+     },
+     {
+      "label": "Use",
+      "value": "SPF50+ PA+++ sunscreen with a light, moisturizing texture and no white cast"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Ethylhexyl Methoxycinnamate, Glycerin, Propylene Glycol, Cyclopentasiloxane, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Phenylbenzimidazole Sulfonic Acid, Dicaprylyl Carbonate, Isoamyl p-Methoxycinnamate, Potassium Cetyl Phosphate, Alcohol, Dimethicone, Glyceryl Stearate, Butylene Glycol, Titanium Dioxide, C14-22 Alcohols, Polymethyl Methacrylate, Cetearyl Alcohol, PEG-100 Stearate, Triethanolamine, Silica, Sodium Hydroxide, C12-20 Alkyl Glucoside, Dimethicone/Vinyl Dimethicone Crosspolymer, Aluminum Hydroxide, Stearic Acid, Fragrance, Caprylyl Glycol, Phenoxyethanol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Aloe Arborescens Leaf Extract, Dipotassium Glycyrrhizate, Carbomer, Xanthan Gum, Tocopheryl Acetate, Disodium EDTA"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cosrx-aloe-soothing-sun-cream-spf50-pa"
  },
  {
   "id": "isntree-hyaluronic-acid-watery-sun-gel",
@@ -102820,8 +103772,39 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "All skin types"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "8 types of Hyaluronic Acid, Centella Asiatica"
+     },
+     {
+      "label": "Use",
+      "value": "SPF50+ PA++++ moisturizing sun gel; no white cast"
+     },
+     {
+      "label": "Free From",
+      "value": "Fragrance"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Butylene Glycol, Ethylhexyl Salicylate, Homosalate, Dibutyl Adipate, Niacinamide, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Cyclopentasiloxane, Methylene Bis-Benzotriazolyl Tetramethylbutylphenol, Polysilicone-15, Diethylamino Hydroxybenzoyl Hexyl Benzoate, 1,2-Hexanediol, Pentylene Glycol, Pinus Pinaster Bark Extract, Ceramide NP, Centella Asiatica Extract, Glycerin, Portulaca Oleracea Extract, Houttuynia Cordata Extract, Olea Europaea (Olive) Fruit Oil, Ficus Carica (Fig) Fruit Extract, Sodium Hyaluronate, Ceteth-10, Hydrogenated Lecithin, Decyl Glucoside, Propanediol, Tocopherol, Astaxanthin, Hyaluronic Acid, Sodium Hyaluronate Crosspolymer, Ascorbyl Propyl Hyaluronate, Hydrolyzed Hyaluronic Acid, Hydroxypropyltrimonium Hyaluronate, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Sodium Acetylated Hyaluronate, Hydrolyzed Sodium Hyaluronate, Adenosine, Xanthan Gum, Cetyl PEG/PPG-10/1 Dimethicone, Tromethamine, Carbomer, Propylene Glycol, Ethylhexylglycerin"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/isntree-hyaluronic-acid-spf50-pa-watery-sun-gel"
  },
  {
   "id": "skin1004-hyalu-cica-water-fit-sun-serum",
@@ -102864,8 +103847,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Centella Asiatica, Hyaluronic Acid"
+     },
+     {
+      "label": "Use",
+      "value": "Lightweight sun serum"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Dibutyl Adipate, Propanediol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Polymethylsilsesquioxane, Ethylhexyl Triazone, Methylene Bis-Benzotriazolyl Tetramethylbutylphenol, Niacinamide, Coco-Caprylate/Caprate, Caprylyl Methicone, Diethylhexyl Butamido Triazone, Glycerin, 1,2-Hexanediol, Butylene Glycol, Centella Asiatica Extract(9800ppm), Betula Platyphylla Japonica Bark Extract, Ginkgo Biloba Leaf Extract, Camellia Sinensis Leaf Extract, Triticum Vulgare (Wheat) Sprout Extract, Medicago Sativa (Alfalfa) Extract, Brassica Oleracea Italica (Broccoli) Sprout Extract, Eruca Sativa Leaf Extract, Camellia Japonica Leaf Extract, Sodium Hyaluronate(10ppm), Behenyl Alcohol, Poly C10-30 Alkyl Acrylate, Polyglyceryl-3 Methylglucose Distearate, Decyl Glucoside, Tromethamine, Carbomer, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Sodium Stearoyl Glutamate, Polyacrylate Crosspolymer-6, Adenosine, Xanthan Gum, T-Butyl Alcohol, Tocopherol, Hydrolyzed Hyaluronic Acid(1ppm), Inositol, Hyaluronic Acid(0.01ppm), Pentylene Glycol, Ethylhexylglycerin"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/skin1004-centella-hyalu-cica-water-fit-sun-serum"
  },
  {
   "id": "beauty-of-joseon-revive-eye-serum",
@@ -102900,8 +103906,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Ginseng root extract, Retinal"
+     },
+     {
+      "label": "Use",
+      "value": "Eye serum for wrinkles around the eyes"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/beauty-of-joseon-revive-eye-serum-ginseng-retinal-3"
  },
  {
   "id": "cosrx-advanced-snail-peptide-eye-cream",
@@ -102928,8 +103948,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Snail Secretion Filtrate, Niacinamide, Peptides, Hyaluronic Acid"
+     },
+     {
+      "label": "Use",
+      "value": "Eye cream for dark circles, puffiness and fine lines"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Snail Secretion Filtrate, Butylene Glycol, Glycerin, Helianthus Annuus (Sunflower) Seed Oil, 1,2-Hexanediol, Niacinamide, Water, Palmitic Acid, Arginine, Carbomer, Stearic Acid, Betaine, Cetearyl Olivate, Sorbitan Olivate, Sodium Polyacrylate, Allantoin, Tocopheryl Acetate, Panthenol, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Sodium Hyaluronate, Adenosine, Xanthan Gum, Myristic Acid, Copper Tripeptide-1, Acetyl Hexapeptide-8, Palmitoyl Pentapeptide-4, Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cosrx-advanced-snail-peptide-eye-cream"
  },
  {
   "id": "the-ordinary-caffeine-solution-5-egcg",
@@ -102956,8 +103999,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "5% Caffeine, EGCG (green tea)"
+     },
+     {
+      "label": "Use",
+      "value": "Reduces the look of puffiness and dark circles around the eyes"
+     },
+     {
+      "label": "Origin",
+      "value": "Canada"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://skincareshop.com.bd/product/the-ordinary-caffeine-solution-5-egcg-30ml/"
  },
  {
   "id": "cerave-moisturising-lotion",
@@ -103000,8 +104061,39 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Dry to very dry"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "3 essential ceramides, Hyaluronic Acid"
+     },
+     {
+      "label": "Use",
+      "value": "Lightweight, non-greasy moisturiser that restores the skin barrier"
+     },
+     {
+      "label": "Free From",
+      "value": "Fragrance"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Aqua/Water, Glycerin, Caprylic/Capric Triglyceride, Cetearyl Alcohol, Cetyl Alcohol, Dimethicone, Phenoxyethanol, Polysorbate 20, Ceteareth-20, Behentrimonium Methosulfate, Polyglyceryl-3 Diisostearate, Sodium Lauroyl Lactylate, Ethylhexylglycerin, Potassium Phosphate, Disodium Edta, Dipotassium Phosphate, Ceramide Np, Ceramide Ap, Phytosphingosine, Cholesterol, Xanthan, Gum, Carbomer, Sodium Hyaluronate, Tocopherol, Ceramide Eop (Code F.I.L. D213778/1)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cerave-moisturising-lotion-2"
  },
  {
   "id": "nivea-soft",
@@ -103044,8 +104136,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Jojoba Oil, Vitamin E"
+     },
+     {
+      "label": "Use",
+      "value": "Light moisturising cream for face, body and hands"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Myristyl Alcohol, Glycerin, Mineral Oil, Butylene Glycol, Alcohol Denat., Stearic Acid, Petrolatum, Myristyl Myristate, Glyceryl Stearate, Hydrogenated Coco-glycerides, Dimethicone, Simmondsia Chinensis (Jojoba) Seed Oil, Tocopheryl Acetate, Polyglyceryl-2 Caprate, Phenoxyethanol, Lanolin Alcohol, Fragrance, Carbomer, Sodium Hydroxide, Methylparaben, Ethylparaben, Propylparaben, Butylparaben, Isobutylparaben"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/nivea-soft-jar-moisturising-cream-3"
  },
  {
   "id": "nivea-nourishing-body-lotion",
@@ -103080,8 +104195,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Very dry"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Deep Moisture Serum, Almond Oil"
+     },
+     {
+      "label": "Use",
+      "value": "48-hour moisture body lotion"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/nivea-rich-nourishing-body-lotion"
  },
  {
   "id": "vaseline-intensive-care-cocoa-radiant-lotion",
@@ -103124,8 +104257,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Very dry"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Cocoa butter, Vaseline Jelly"
+     },
+     {
+      "label": "Use",
+      "value": "Body lotion with up to 48-hour moisture"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/vaseline-intensive-care-cocoa-radiant-48h-moisture-body-lotion"
  },
  {
   "id": "vaseline-lip-therapy-original",
@@ -103152,8 +104303,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Petroleum jelly"
+     },
+     {
+      "label": "Use",
+      "value": "Softens and soothes dry lips"
+     },
+     {
+      "label": "Origin",
+      "value": "Poland"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Petrolatum (100%)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/vaseline-lip-therapy-original-2"
  },
  {
   "id": "vaseline-lip-therapy-rosy-lips",
@@ -103196,8 +104374,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Petroleum jelly"
+     },
+     {
+      "label": "Use",
+      "value": "Lip balm tin for dry lips"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/vaseline-lip-therapy-rosy-lips"
  },
  {
   "id": "vaseline-original-petroleum-jelly",
@@ -103240,8 +104432,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Triple-purified petroleum jelly"
+     },
+     {
+      "label": "Use",
+      "value": "Moisturizer for dry skin, hands, feet, elbows"
+     },
+     {
+      "label": "Other",
+      "value": "Hypoallergenic, non-comedogenic"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Petrolatum"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/vaseline-blue-seal-petroleum-jelly-original"
  },
  {
   "id": "cetaphil-moisturizing-cream",
@@ -103316,8 +104535,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Dry to very dry, sensitive"
+     },
+     {
+      "label": "Use",
+      "value": "48-hour hydration for face and body; restores the skin barrier"
+     },
+     {
+      "label": "Free From",
+      "value": "Fragrance"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Purified Water, Polyglycerylmethacrylate (and) Propylene Glycol, Petrolatum, Dicaprylyl Ether, PEG-5 Glyceryl Stearate, Glycerin, Dimethicone and Dimethiconol, Cetyl Alcohol, Sweet Almond Oil, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tocopheryl Acetate, Phenoxyethanol, Benzyl Alcohol, Disodium EDTA, Sodium Hydroxide, Lactic Acid"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cetaphil-moisturizing-cream"
  },
  {
   "id": "cetaphil-moisturizing-lotion",
@@ -103392,8 +104638,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Skin Type",
+      "value": "Normal to dry, sensitive"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Niacinamide, Avocado Oil, Panthenol, Vitamin E"
+     },
+     {
+      "label": "Use",
+      "value": "Lightweight, non-greasy lotion for daily use"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cetaphil-moisturizing-lotion-for-all-skin-types"
  },
  {
   "id": "nike-air-force-1",
