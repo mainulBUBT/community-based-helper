@@ -47,3 +47,6 @@
 # AJ-1 ব্র্যান্ড এখন Jordan নামে
 /brand/aj-1/ /brand/jordan/ 301
 /en/brand/aj-1/ /en/brand/jordan/ 301
+# The Ordinary Niacinamide ডুপ্লিকেট পণ্য একটায় মেলানো
+/product/the-ordinary-niacinamide-10-zinc-1-serum-30ml/ /product/the-ordinary-niacinamide-10-zinc-1-30ml/ 301
+/en/product/the-ordinary-niacinamide-10-zinc-1-serum-30ml/ /en/product/the-ordinary-niacinamide-10-zinc-1-30ml/ 301

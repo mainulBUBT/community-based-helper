@@ -672,3 +672,7 @@ mobile, tablet, earbuds, speaker, ssd, desktop-এর ৮০টা স্পে�
 ### মেকআপের স্পেক (১১ নভেম্বর ২০২৬)
 
 ১৮টা মেকআপ পণ্যে **Details** স্পেক (`supabase/batches/2026-11-11-specs-makeup.sql`): Type, Finish, Coverage, Wear, Skin Type, Brush/Applicator, Origin — যা পাতায় লেখা। উৎস: ১৬টা Shajgoj, L'Oréal Arogga, Pond's Skincare Shop। উপাদানের তালিকা শুধু ৩টা Essence মাস্কারায়; লিপস্টিক/ফাউন্ডেশনের পাতাগুলো নির্দিষ্ট শেডের, শেডভেদে রঙের উপাদান বদলায়, তাই বাদ। Maybelline Baby Lips-এর পাতায় "SPF 20" লেখা কিন্তু পণ্য SPF11 — SPF লেখা হয়নি।
+
+### ভুল অফার আর ডুপ্লিকেট (১১ নভেম্বর ২০২৬)
+
+`supabase/batches/2026-11-11-wrong-offers-niacinamide-dup.sql`: Apple Gadgets-এর Kemei KM-6637 লিংক (পাতা KM-1916-এর) আর Redmi Pad SE 8.7"-এর দুটো লিংক (পাতা 11"-এর) সরানো, প্রত্যাখ্যাত যাচাই বসানো যাতে discover আবার না বসায়; ক্যাটালগ থেকেও সরানো। ডুপ্লিকেট `the-ordinary-niacinamide-10-zinc-1-serum-30ml` মোছা (ক্যাটালগে ছিল না; দোকানগুলো `-30ml`-এ আছে), পুরনো ঠিকানা `_redirects`-এ 301।
