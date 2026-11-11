@@ -651,3 +651,9 @@ mobile, tablet, earbuds, speaker, ssd, desktop-এর ৮০টা স্পে�
 - **উৎস:** ৫৮টা Shajgoj (বিবরণ + উপাদানের ট্যাব), বাকিগুলো Skincare Shop, Beauty Booth, KCare; Garnier Neem Face Wash garnier.in থেকে।
 - **নিয়ম:** Skin Type কেবল পাতায় স্পষ্ট লেখা থাকলে; উপাদানের তালিকা কেবল যখন সেটা আসল কমা-দেওয়া তালিকা (গদ্য বা "Key Ingredients" লেখা হলে বাদ)।
 - **খেয়াল:** Beauty Booth-এর SKIN1004 Centella Ampoule 50ml পাতার উপাদান-তালিকা একটা সানস্ক্রিনের — তাই 50ml-এ 100ml-এর (একই ফর্মুলা) Skincare Shop পাতা। ডিবিতে The Ordinary Niacinamide 10% + Zinc 1% দুবার আছে (`-30ml` আর `-serum-30ml`)।
+
+### বেবি-কেয়ার আর ডায়াপারের স্পেক (১১ নভেম্বর ২০২৬)
+
+৩১টা পণ্যে স্পেক (`supabase/batches/2026-11-11-specs-baby.sql`), স্কিনকেয়ারের মতো **Details** (Type, Suitable For, Key Ingredients, Use, Free From/Origin) আর থাকলে **Ingredients**। উৎস: ২৫টা Shajgoj; বাকি babycare.com.bd, eFamas, Arogga, Johnson's Baby Cream johnsonsbaby.in। ডায়াপারে ওজনের সীমা লেখা হয়নি — সাইজ-ভার্সনে বদলায়।
+
+- **বাকি ১টা:** Kodomo Anti-Rash Moisturizing Baby Lotion — BanglaShoppers বট-চেক দেখায়, আর ওয়েবে এই লোশনের নির্ভরযোগ্য পাতা মেলেনি।

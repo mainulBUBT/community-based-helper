@@ -8908,8 +8908,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Suitable For",
+      "value": "Very dry baby skin, face and body"
+     },
+     {
+      "label": "Use",
+      "value": "24-hour moisture, non-greasy, fast absorbing"
+     },
+     {
+      "label": "Other",
+      "value": "Paediatrician tested, soft fragrance"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Aqua, Glycerin, Distearyldimonium Chloride, Petrolatum, Isopropyl Palmitate, Cetyl Alcohol, Dimethicone, Avena Sativa (Oat) Kernel Flour, Allantoin, Sodium Chloride, Tocopherol, Benzyl Alcohol. [PR3664]"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/aveeno-baby-daily-care-baby-moisturising-lotion"
  },
  {
   "id": "neocare-baby-wipes",
@@ -8944,8 +8971,18 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Use",
+      "value": "Soft, mild wipes for diaper changes, hands and face"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.babycare.com.bd/neocare-baby-wipes-120-pcs"
  },
  {
   "id": "sudocrem-antiseptic-healing-cream",
@@ -8972,8 +9009,18 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Use",
+      "value": "Soothes sore skin and treats nappy rash; also for cuts and grazes"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/sudocrem-antiseptic-healing-cream"
  },
  {
   "id": "himalaya-baby-lotion",
@@ -9008,8 +9055,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Olive Oil (Vitamin E)"
+     },
+     {
+      "label": "Use",
+      "value": "Moisturizes, protects and softens skin; prevents chafing"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/himalaya-baby-lotion-3"
  },
  {
   "id": "himalaya-baby-cream",
@@ -9044,8 +9105,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Olive Oil, Ashvagandha"
+     },
+     {
+      "label": "Use",
+      "value": "Soft herbal cream that keeps baby skin moisturized"
+     },
+     {
+      "label": "Free From",
+      "value": "Mineral oil, animal fat"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/himalaya-baby-cream"
  },
  {
   "id": "himalaya-baby-powder",
@@ -9072,8 +9151,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Herbal actives"
+     },
+     {
+      "label": "Use",
+      "value": "Keeps skin cool and dry; helps with sweating and odor"
+     },
+     {
+      "label": "Free From",
+      "value": "Parabens, phthalates, synthetic colors"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/himalaya-baby-powder"
  },
  {
   "id": "himalaya-gentle-baby-soap",
@@ -9100,8 +9197,30 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Suitable For",
+      "value": "Normal baby skin"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Olive Oil, Almond Oil"
+     },
+     {
+      "label": "Use",
+      "value": "Gentle daily cleansing soap"
+     },
+     {
+      "label": "Free From",
+      "value": "Parabens, animal fats, synthetic colors"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/himalaya-gentle-baby-soap"
  },
  {
   "id": "sebamed-baby-cream-extra-soft",
@@ -9144,8 +9263,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Suitable For",
+      "value": "From one month onwards"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Panthenol, Allantoin, Chamomile"
+     },
+     {
+      "label": "Use",
+      "value": "Protective cream against dryness and irritation; 42% lipids"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/sebamed-baby-extra-soft-cream"
  },
  {
   "id": "supermom-premium-mild-baby-wipes",
@@ -9180,8 +9317,30 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Baby lotion"
+     },
+     {
+      "label": "Use",
+      "value": "pH-balanced mild baby wipes"
+     },
+     {
+      "label": "Free From",
+      "value": "Alcohol, soap, parabens"
+     },
+     {
+      "label": "Origin",
+      "value": "Bangladesh"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/supermom-mild-baby-wipes-120-pcs"
  },
  {
   "id": "parachute-just-for-baby-lotion",
@@ -9216,8 +9375,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Suitable For",
+      "value": "Newborn, sensitive skin"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Almond Milk, Olive Oil"
+     },
+     {
+      "label": "Use",
+      "value": "24-hour moisture lock; dermatologically and allergy tested"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/just-for-baby-baby-lotion"
  },
  {
   "id": "parachute-just-for-baby-wash",
@@ -9252,8 +9429,18 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Use",
+      "value": "No-tears body and hair wash; allergy tested, pH balanced"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/just-for-baby-baby-wash"
  },
  {
   "id": "parachute-just-for-baby-face-cream",
@@ -9280,8 +9467,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Olive Oil, Almond Milk"
+     },
+     {
+      "label": "Use",
+      "value": "Moisturizing face cream; allergy tested"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Aqua, Cocos nucifera oil, Elaeis guineensis butter, Glycerine, Cetyl alcohol, Glyceryl Stearate (and) PEG-100 Stearate, Olive oil, Almond milk, Phenoxyethanol and ethylhexyl glycerin, Carbomer, Perfume, Tapioca Starch, Sodium Hydroxide, Butylated Hydroxy Toluene, Disodium EDTA"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/parachute-just-for-baby-face-cream"
  },
  {
   "id": "parachute-just-for-baby-powder",
@@ -9316,8 +9526,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Sterilized Talc, Almond Oil, Neem extract, Vitamin E"
+     },
+     {
+      "label": "Use",
+      "value": "Protects from excess moisture; allergy tested"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/parachute-just-for-baby-baby-powder"
  },
  {
   "id": "parachute-just-for-baby-oil",
@@ -9352,8 +9576,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Olive Oil, Almond Oil, Vitamin E"
+     },
+     {
+      "label": "Use",
+      "value": "Everyday massage oil that locks in moisture"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/just-for-baby-baby-oil"
  },
  {
   "id": "parachute-just-for-baby-shampoo",
@@ -9388,8 +9626,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Olive Oil, Almond Milk"
+     },
+     {
+      "label": "Use",
+      "value": "No-tears baby shampoo"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Aqua , Cocamidopropyl Betain, Sodium Cocoyl Isothinate , Glycerin, PEG-150 Distearate, Almond Milk, Olive oil, Disodium EDTA, Phenoxyethanol, Ethylhexylglycerin, Perfume"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/parachute-just-for-baby-baby-shampoo"
  },
  {
   "id": "meril-baby-powder",
@@ -9416,8 +9677,18 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Use",
+      "value": "Triple-action powder against rash, irritation and prickly heat"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/meril-baby-powder-100-gm"
  },
  {
   "id": "meril-baby-oil",
@@ -9444,8 +9715,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "First-crushed olive oil"
+     },
+     {
+      "label": "Use",
+      "value": "Massage oil for baby skin"
+     },
+     {
+      "label": "Free From",
+      "value": "Paraffin"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/meril-baby-oil-100-ml"
  },
  {
   "id": "meril-baby-shampoo",
@@ -9480,8 +9769,18 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Use",
+      "value": "Light, low-alkali shampoo for baby hair and scalp"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/meril-baby-shampoo"
  },
  {
   "id": "meril-baby-lotion",
@@ -9508,8 +9807,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Use",
+      "value": "Mild baby lotion with a sweet fragrance"
+     },
+     {
+      "label": "Origin",
+      "value": "Bangladesh (Square)"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/meril-baby-lotion-2"
  },
  {
   "id": "meril-baby-cream-soap-bar",
@@ -9536,8 +9849,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Lotion, Honey"
+     },
+     {
+      "label": "Use",
+      "value": "Baby soap, 5 times milder than regular soap"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/meril-baby-cream-soap-bar-75-gm"
  },
  {
   "id": "johnsons-baby-shampoo",
@@ -9572,8 +9899,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Use",
+      "value": "Mildest formula, as gentle to eyes as pure water"
+     },
+     {
+      "label": "Free From",
+      "value": "Parabens, sulphates, dyes"
+     },
+     {
+      "label": "Origin",
+      "value": "Indonesia"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/johnsons-baby-shampoo-4"
  },
  {
   "id": "johnsons-baby-oil-with-vitamin-e",
@@ -9616,8 +9961,26 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Suitable For",
+      "value": "Newborns"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Mineral oil, Vitamin E"
+     },
+     {
+      "label": "Use",
+      "value": "Non-sticky massage oil"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/johnsons-baby-oil-with-vitamin-e"
  },
  {
   "id": "kodomo-anti-rash-moisturizing-baby-lotion",
@@ -9680,8 +10043,30 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Suitable For",
+      "value": "Newborns, sensitive skin"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Tsubaki oil, Vitamin E, Sakura leaf extract"
+     },
+     {
+      "label": "Use",
+      "value": "Hypoallergenic baby cream that nourishes and moisturizes"
+     },
+     {
+      "label": "Free From",
+      "value": "Parabens, phthalates, alcohol, dyes, mineral oil, steroid"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/kodomo-baby-cream-pink-hanabaki"
  },
  {
   "id": "savlon-twinkle-baby-pant-diaper",
@@ -9790,8 +10175,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Pant"
+     },
+     {
+      "label": "Use",
+      "value": "Pant-style diaper with absorbent core, elastic waist and soft leg cuffs"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.babycare.com.bd/savlon-twinkle-baby-pant-diaper-l-48pcs"
  },
  {
   "id": "neocare-premium-belt-baby-diaper",
@@ -9846,8 +10245,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Belt"
+     },
+     {
+      "label": "Use",
+      "value": "Belt system diaper with breathable back sheet"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.efamas.com.bd/shop/diaper-potty/neocare/neocare-premium-belt-system-baby-diaper-size-l-7-18-kg-50-pcs/"
  },
  {
   "id": "neocare-new-born-baby-diaper",
@@ -9874,8 +10287,30 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Type",
+      "value": "Newborn"
+     },
+     {
+      "label": "Suitable For",
+      "value": "Newborn (0-4 kg)"
+     },
+     {
+      "label": "Use",
+      "value": "Umbilical cord cut-out, wetness indicator, leak-proof"
+     },
+     {
+      "label": "Origin",
+      "value": "Bangladesh"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.arogga.com/product/32365/neocare-baby-diaper-new-born-20-s-pack"
  },
  {
   "id": "cerave-baby-moisturizing-lotion",
@@ -9910,8 +10345,35 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Ceramides, Niacinamide, Vitamin E"
+     },
+     {
+      "label": "Use",
+      "value": "Baby lotion that supports the skin barrier"
+     },
+     {
+      "label": "Free From",
+      "value": "Fragrance, parabens"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "AQUA / WATER / EAU, CETEARYL ALCOHOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETYL ALCOHOL, PHENOXYETHANOL, NIACINAMIDE, DIMETHICONE, ALLANTOIN, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, ZINC CITRATE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM PCA, ARGININE PCA, SODIUM HYALURONATE, CHOLESTEROL, DIPOTASSIUM PHOSPHATE, DISODIUM EDTA, TOCOPHERYL ACETATE, TOCOPHEROL, LAURIC ACID, PHYTOSPHINGOSINE, XANTHAN GUM, POLYGLYCERYL-3 DIISOSTEARATE, POLYSORBATE 60, ETHYLHEXYLGLYCERIN"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cerave-baby-moisturizing-lotion"
  },
  {
   "id": "cetaphil-baby-daily-lotion",
@@ -9946,8 +10408,34 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Suitable For",
+      "value": "Delicate, dry, sensitive baby skin"
+     },
+     {
+      "label": "Key Ingredients",
+      "value": "Organic Calendula, Sweet Almond Oil, Sunflower Oil"
+     },
+     {
+      "label": "Use",
+      "value": "Daily lotion that soothes and moisturizes"
+     },
+     {
+      "label": "Free From",
+      "value": "Parabens, colorants, mineral oil"
+     },
+     {
+      "label": "Other",
+      "value": "Hypoallergenic, dermatologist tested"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/cetaphil-baby-daily-lotion-with-organic-calendula"
  },
  {
   "id": "johnsons-baby-lotion",
@@ -9998,8 +10486,31 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Key Ingredients",
+      "value": "Coconut oil extract"
+     },
+     {
+      "label": "Use",
+      "value": "Moisturizes for up to 24 hours; clinically proven mild"
+     }
+    ]
+   },
+   {
+    "group": "Ingredients",
+    "items": [
+     {
+      "label": "Full Ingredients",
+      "value": "Water, Glycerin, Isopropyl Palmitate, Stearic Acid, Glyceryl Stearate, Cetyl Alcohol, Cetearyl Alcohol, Dimethicone, Mineral Oil, Phenoxyethanol, Polysorbate 20, Sodium Hydroxide, Magnesium Aluminum Silicate, Carbomer, p- Anisic Acid, Fragrance, Xanthan Gum, Ethylhexyglycerin, Pentaerythrityl Tetro- di- t- butyl Hydroxyhydrocinnamate, CI 17200"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://shop.shajgoj.com/product/johnson-johnson-baby-lotion-2"
  },
  {
   "id": "johnsons-baby-cream",
@@ -10034,8 +10545,22 @@ export const catalogProducts: Product[] = [
   ],
   "colors": [],
   "regions": [],
-  "specs": [],
-  "specsSource": null
+  "specs": [
+   {
+    "group": "Details",
+    "items": [
+     {
+      "label": "Use",
+      "value": "Baby cream with 24-hour moisture lock"
+     },
+     {
+      "label": "Free From",
+      "value": "Parabens, phthalates, dyes"
+     }
+    ]
+   }
+  ],
+  "specsSource": "https://www.johnsonsbaby.in/baby-products/johnsons-baby-cream"
  },
  {
   "id": "anker-zolo-20w-type-c-charger-a2699",
