@@ -1050,7 +1050,7 @@ export const stores: Store[] = [
     id: "dolbear",
     name: "Dolbear",
     origin: "https://dolbear.com.bd",
-    sample: "https://dolbear.com.bd/product/anker-zolo-20w",
+    sample: "https://dolbear.com.bd/products/anker-zolo-20w",
     sitemap: "https://dolbear.com.bd/sitemap.xml",
     path: "/product/",
     condition: "unofficial",

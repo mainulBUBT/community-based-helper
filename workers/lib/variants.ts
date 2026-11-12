@@ -21,7 +21,7 @@ export interface VariantTarget {
 }
 
 const MEMORY = /^\d+(gb|tb)$/;
-const CORES = /(\d+)\s*-?\s*c(?:ore)?s?\s*(cpu|gpu)\b/gi;
+const CORES = /(\d+)\s*[-‑–]?\s*c(?:ore)?s?\s*(cpu|gpu)\b/gi;
 
 // "10 Core CPU 8 Core GPU", "10C CPU/8C GPU" আর "8-core GPU" একই ভাবে: cpu10, gpu8
 function words(text: string): string[] {

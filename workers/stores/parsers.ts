@@ -170,7 +170,8 @@ export function maczenVariants(html: string): ShopVariant[] {
   if (Array.isArray(combos) && combos.length) {
     return combos.filter(isObject).flatMap((row) => {
       const region = row.country ?? (row.sim === "eSim" ? "USA" : null);
-      return priced(row, row.price, [["ram", row.ram], ["storage", row.storage], ["size", row.size], ["region", region]]);
+      const connectivity = /wi-?fi|cellular|gps/i.test(String(row.sim ?? "")) ? row.sim : null;
+      return priced(row, row.price, [["ram", row.ram], ["storage", row.storage], ["size", row.size], ["connectivity", connectivity], ["region", region]]);
     });
   }
   const spec = at("specPriceMap");

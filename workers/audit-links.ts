@@ -1,23 +1,21 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { appendFileSync, existsSync, readFileSync } from "node:fs";
 import { message, NoPrice } from "./lib/errors";
 import { matchListing, packConflict, tokens } from "./lib/match";
 import { groupBy, pool } from "./lib/pool";
-import { place } from "./lib/variants";
+import { candidates, place, type PageOffer } from "./lib/variants";
 import { readPage, type Page } from "./stores/page";
 import { slugTitle, storeFor } from "./stores";
 
-// সাইট-দোকান ভার্সন-অমিল যাচাই (ডিবি ছাড়া): ডাম্প ফাইলের প্রতিটা অফারের পাতা পড়ে দেখা
-// পাতাটা আসলে আমাদের কোন পণ্য/ভার্সনের — কিছু লেখে না, শুধু রিপোর্ট দেয়।
-// ডাম্প: `npx supabase db query --linked "select ... catalog, offers"` আউটপুট (site-shop কুয়েরি)।
-// ব্যবহার: node --import tsx workers/audit-links.ts /tmp/dordam-site-shop.json [--slug-only] [--only=<domain>] [--limit=N]
+// সাইট-দোকান ভার্সন-অমিল যাচাই (ডিবি ছাড়া, কিছু লেখে না)।
+// এক লিংকে JS দিয়ে ভার্সন বদলানো পাতায় (rule 12a) শিরোনাম নয়, পাতার payload আর অফারের বাঁধা অপশন (variant_key) দেখা হয়।
+// প্রতিটা পাতার ফল সাথে সাথে --out ফাইলে যায়; আবার চালালে আগে পড়া পাতা বাদ দিয়ে বাকিটা পড়ে।
+// ব্যবহার: node --import tsx workers/audit-links.ts <dump.json> --out=<file.jsonl> [--slug-only] [--only=<domain>] [--limit=N]
 
 interface CatalogRow {
   product_id: string;
-  product_slug: string;
   product_name: string;
   brand: string;
   category: string | null;
-  active: boolean;
   variant_id: string;
   variant_label: string;
   sku: string | null;
@@ -28,14 +26,12 @@ interface OfferRow {
   url: string;
   price: number;
   condition: string;
+  variant_key: string | null;
   variant_id: string;
   variant_label: string;
   product_id: string;
   product_slug: string;
   product_name: string;
-  brand: string;
-  category: string | null;
-  active: boolean;
   seller: string;
 }
 
@@ -47,19 +43,43 @@ interface Product {
   variants: { id: string; label: string; sku: string | null }[];
 }
 
-type Kind = "other" | "variant" | "none" | "ok";
+type Kind = "other" | "variant" | "bound" | "missing" | "shared" | "rebind" | "none" | "ok";
 
 interface Finding {
   kind: Kind;
+  offer_id: string;
   seller: string;
   url: string;
   product_slug: string;
   variant: string;
+  price: number;
+  key: string | null;
   title: string | null;
+  toggle: boolean;
   matched: string | null;
-  matchedVariant: string | null;
-  score: number;
+  pageOption: string | null;
+  pagePrice: number | null;
 }
+
+interface PageRecord {
+  url: string;
+  store: string;
+  status: "read" | "noPrice" | "failed";
+  error?: string;
+  findings: Finding[];
+}
+
+const LABEL: Record<Kind, string> = {
+  other: "অন্য পণ্য",
+  variant: "ভার্সন অমিল",
+  bound: "ভুল অপশনে বাঁধা",
+  missing: "বাঁধা অপশন নেই",
+  shared: "এক অপশনে দুই ভার্সন",
+  rebind: "পরের রানে নিজে ঠিক হবে",
+  none: "মেলেনি",
+  ok: "ঠিক",
+};
+const RANK: Record<Kind, number> = { other: 0, bound: 1, shared: 2, variant: 3, missing: 4, none: 5, rebind: 6, ok: 7 };
 
 function load(path: string) {
   const raw = JSON.parse(readFileSync(path, "utf8")) as { rows: { catalog: CatalogRow[]; offers: OfferRow[] }[] };
@@ -73,42 +93,96 @@ function load(path: string) {
   return { products: [...products.values()], offers };
 }
 
-// ভার্সনের payload পড়ে দেখা: একই লিংকে JS দিয়ে ভার্সন বদলানো দোকানে (rule 12a) আমাদের ভার্সনের দাম payload-এ থাকে
-function payloadHas(page: Page, url: string, product: Product, variantId: string, condition: string): boolean {
-  const titles = [page.title ?? "", slugTitle(url)];
-  return place(page.offers, product, titles, condition).some((spot) => spot.variants.some((v) => v.id === variantId));
-}
+const hasOptions = (page: Page) => page.offers.some((o) => o.label);
 
-function overlap(text: string, product: Product, label: string): number {
-  const own = [...new Set([...tokens(product.name), ...tokens(label)])];
-  const listed = new Set(tokens(text));
-  return own.filter((t) => listed.has(t)).length / own.length;
-}
-
-function judge(page: Page | null, url: string, row: OfferRow, products: Product[], productsById: Map<string, Product>): Finding {
-  const product = productsById.get(row.product_id)!;
-  const base = { seller: row.seller, url, product_slug: row.product_slug, variant: row.variant_label, title: page?.title ?? null, matched: null, matchedVariant: null, score: 1 };
+function otherProduct(page: Page | null, url: string, row: OfferRow, products: Product[]): string | null {
   const slug = slugTitle(url);
-  const texts = [page?.title ?? "", slug].filter(Boolean).join(" ");
-  const productMatch = page?.title ? matchListing(page.title, products) : null;
+  const titleMatch = page?.title ? matchListing(page.title, products) : null;
   const slugMatch = matchListing(slug, products);
-  const match = productMatch ?? slugMatch;
-  if (match && match.product.id !== row.product_id) {
-    // শিরোনাম অন্য পণ্যের, স্লাগ আমাদের পণ্যের নামও ধারণ করছে না — তবেই নিশ্চিত অমিল
-    const oursInSlug = tokens(product.name).every((t) => new Set(tokens(slug)).has(t));
-    if (!oursInSlug || slugMatch?.product.id === match.product.id) {
-      const matchedVariant = match.kind === "sure" ? match.variant.label : null;
-      return { ...base, kind: "other", matched: `${match.product.name}`, matchedVariant, score: 0 };
-    }
+  const match = titleMatch ?? slugMatch;
+  if (!match || match.product.id === row.product_id) return null;
+  const slugTokens = new Set(tokens(slug));
+  const oursInSlug = tokens(row.product_name).every((t) => slugTokens.has(t));
+  if (oursInSlug && slugMatch?.product.id !== match.product.id) return null;
+  return match.kind === "sure" ? `${match.product.name} ${match.variant.label}` : match.product.name;
+}
+
+// এক লিংকে অনেক ভার্সন: বাঁধা অপশনটা পাতায় আছে কি না, আর সেটা সত্যিই আমাদের ভার্সনের স্পেকে মেলে কি না
+function judgeToggle(page: Page, row: OfferRow, product: Product, alone: boolean): Pick<Finding, "kind" | "pageOption" | "pagePrice"> {
+  const target = { product: product.name, label: row.variant_label, siblings: product.variants.map((v) => v.label), condition: row.condition, price: row.price };
+  const show = (o: PageOffer | undefined) => ({ pageOption: o?.label || o?.key || null, pagePrice: o?.price ?? null });
+  if (row.variant_key) {
+    const [bound] = candidates(page.offers, { ...target, key: row.variant_key }, alone);
+    if (!bound || bound.key !== row.variant_key) return { kind: bound ? "rebind" : "missing", ...show(bound) };
+    const fits = candidates([bound], { ...target, key: null }, alone).length > 0;
+    return { kind: fits ? "ok" : "bound", ...show(bound) };
   }
-  if (match && match.product.id === row.product_id) {
-    const fitsOurs = match.kind === "sure" ? match.variant.id === row.variant_id : match.variants.some((v) => v.id === row.variant_id);
-    if (fitsOurs && !packConflict(page?.title ?? slug, row.variant_label)) return { ...base, kind: "ok" };
-    if (page && payloadHas(page, url, product, row.variant_id, row.condition)) return { ...base, kind: "ok" };
-    const claimed = match.kind === "sure" ? match.variant.label : match.variants.map((v) => v.label).join(" | ");
-    return { ...base, kind: "variant", matched: row.product_name, matchedVariant: claimed, score: overlap(texts, product, row.variant_label) };
+  const [found] = candidates(page.offers, { ...target, key: null }, alone);
+  return { kind: found ? "ok" : "variant", ...show(found) };
+}
+
+// ভার্সন-প্রতি আলাদা পাতা: শিরোনাম (না পেলে লিংক) থেকে সাইজ/ভার্সন
+function judgePlain(page: Page | null, url: string, row: OfferRow, product: Product, products: Product[]): Kind {
+  const text = page?.title ?? slugTitle(url);
+  const match = matchListing(text, products) ?? matchListing(slugTitle(url), products);
+  if (!match || match.product.id !== row.product_id) return "none";
+  const fitsOurs = match.kind === "sure" ? match.variant.id === row.variant_id : match.variants.some((v) => v.id === row.variant_id);
+  if (fitsOurs && !packConflict(text, row.variant_label)) return "ok";
+  if (page && place(page.offers, product, [page.title ?? "", slugTitle(url)], row.condition).some((s) => s.variants.some((v) => v.id === row.variant_id))) return "ok";
+  return "variant";
+}
+
+function judgeGroup(page: Page | null, url: string, group: OfferRow[], products: Product[], productsById: Map<string, Product>): Finding[] {
+  const toggle = !!page && hasOptions(page);
+  const findings = group.map((row): Finding => {
+    const product = productsById.get(row.product_id)!;
+    const base = { offer_id: row.offer_id, seller: row.seller, url, product_slug: row.product_slug, variant: row.variant_label, price: row.price, key: row.variant_key, title: page?.title ?? null, toggle, matched: null, pageOption: null, pagePrice: null };
+    const other = otherProduct(page, url, row, products);
+    if (other) return { ...base, kind: "other", matched: other };
+    if (toggle) return { ...base, ...judgeToggle(page, row, product, group.length === 1) };
+    return { ...base, kind: judgePlain(page, url, row, product, products), pagePrice: page?.offers[0]?.price ?? null };
+  });
+  const keyCount = groupBy(
+    group.filter((r) => r.variant_key),
+    (r) => `${r.product_id} ${r.variant_key}`,
+  );
+  for (const f of findings) {
+    const row = group.find((r) => r.offer_id === f.offer_id)!;
+    const shared = row.variant_key && (keyCount.get(`${row.product_id} ${row.variant_key}`)?.length ?? 0) > 1;
+    if (shared && f.kind === "ok") f.kind = "shared";
   }
-  return { ...base, kind: "none", matched: null, matchedVariant: null, score: overlap(texts, product, row.variant_label) };
+  return findings;
+}
+
+function readDone(path: string): Map<string, PageRecord> {
+  const done = new Map<string, PageRecord>();
+  if (!existsSync(path)) return done;
+  for (const line of readFileSync(path, "utf8").split("\n")) {
+    if (!line.trim()) continue;
+    const record = JSON.parse(line) as PageRecord;
+    if (record.status !== "failed") done.set(record.url, record);
+  }
+  return done;
+}
+
+function report(records: PageRecord[], total: number) {
+  const tally = new Map<string, Record<Kind | "noPrice" | "failed", number>>();
+  const empty = () => ({ other: 0, variant: 0, bound: 0, missing: 0, shared: 0, rebind: 0, none: 0, ok: 0, noPrice: 0, failed: 0 });
+  for (const r of records) {
+    const t = tally.get(r.store) ?? empty();
+    if (r.status === "read") for (const f of r.findings) t[f.kind]++;
+    else t[r.status]++;
+    tally.set(r.store, t);
+  }
+  const sum = (k: keyof ReturnType<typeof empty>) => [...tally.values()].reduce((n, t) => n + t[k], 0);
+  const kinds = Object.keys(LABEL) as Kind[];
+  console.log(`পাতা ${records.length}/${total} — ${kinds.map((k) => `${LABEL[k]} ${sum(k)}`).join(", ")}, দাম নেই ${sum("noPrice")} পাতা, ব্যর্থ ${sum("failed")} পাতা`);
+  const bad = (t: ReturnType<typeof empty>) => t.other + t.variant + t.bound + t.missing + t.shared + t.none;
+  console.log(`\n${"দোকান".padEnd(22)}${kinds.map((k) => k.padStart(8)).join("")}  noPrice  failed`);
+  for (const [name, t] of [...tally].filter(([, t]) => bad(t) || t.failed).sort((a, b) => bad(b[1]) - bad(a[1])))
+    console.log(`${name.padEnd(22)}${kinds.map((k) => String(t[k]).padStart(8)).join("")}${String(t.noPrice).padStart(9)}${String(t.failed).padStart(8)}`);
+  const suspects = records.flatMap((r) => r.findings).filter((f) => f.kind !== "ok");
+  console.log(`\nসন্দেহজনক অফার ${suspects.length}টা`);
 }
 
 async function main() {
@@ -128,15 +202,20 @@ async function main() {
   const productsById = new Map(products.map((p) => [p.id, p]));
   const rows = offers.filter((o) => !only || o.url.includes(only));
   const groups = [...groupBy(rows, (r) => r.url).entries()].slice(0, limitArg ? Number(limitArg) : undefined);
-  const findings: Finding[] = [];
-  const failed: string[] = [];
-  const tally = new Map<string, Record<Kind | "noPrice", number>>();
-  const total = groups.length;
-  let done = 0;
+  const done = slugOnly ? new Map<string, PageRecord>() : readDone(outPath);
+  const records = [...done.values()].filter((r) => groups.some(([url]) => url === r.url));
+  const todo = groups.filter(([url]) => !done.has(url));
+  console.error(`আগে পড়া ${groups.length - todo.length}, বাকি ${todo.length} পাতা`);
+  let count = 0;
 
-  const perStore = groupBy(groups, ([url]) => storeFor(url).id);
+  const save = (record: PageRecord) => {
+    records.push(record);
+    if (!slugOnly) appendFileSync(outPath, `${JSON.stringify(record)}\n`);
+    if (++count % 100 === 0) console.error(`${count}/${todo.length} পাতা`);
+  };
+
   await Promise.all(
-    [...perStore.values()].map((list) =>
+    [...groupBy(todo, ([url]) => storeFor(url).id).values()].map((list) =>
       pool(list, 2, async ([url, group]) => {
         const store = storeFor(url);
         let page: Page | null = null;
@@ -144,45 +223,18 @@ async function main() {
           try {
             page = await readPage(store, url, false);
           } catch (error) {
-            if (error instanceof NoPrice) {
-              // দাম ঘোষণা নেই এমন পাতায় অমিল খোঁজার দরকার নেই
-              const t = tally.get(store.name) ?? { other: 0, variant: 0, none: 0, ok: 0, noPrice: 0 };
-              t.noPrice += group.length;
-              tally.set(store.name, t);
-              for (const o of group) findings.push({ kind: "ok", seller: o.seller, url, product_slug: o.product_slug, variant: o.variant_label, title: null, matched: null, matchedVariant: null, score: 1 });
-              done++;
-              return;
-            }
-            failed.push(`! ${store.name} ${url}: ${message(error)}`);
-            done++;
+            save({ url, store: store.name, status: error instanceof NoPrice ? "noPrice" : "failed", error: message(error), findings: [] });
             return;
           }
         }
-        for (const row of group) {
-          const f = judge(page, url, row, products, productsById);
-          findings.push(f);
-          const key = store.name;
-          const t = tally.get(key) ?? { other: 0, variant: 0, none: 0, ok: 0, noPrice: 0 };
-          t[f.kind]++;
-          tally.set(key, t);
-        }
-        done++;
-        if (done % 100 === 0) console.error(`${done}/${total} পাতা`);
+        save({ url, store: store.name, status: "read", findings: judgeGroup(page, url, group, products, productsById) });
       }),
     ),
   );
 
-  const rank: Record<Kind, number> = { other: 0, variant: 1, none: 2, ok: 3 };
-  const suspects = findings.filter((f) => f.kind !== "ok").sort((a, b) => rank[a.kind] - rank[b.kind] || a.score - b.score);
-  writeFileSync(outPath, suspects.map((f) => JSON.stringify(f)).join("\n"));
-
-  const sum = (k: Kind | "noPrice") => [...tally.values()].reduce((n, t) => n + (t[k] ?? 0), 0);
-  console.log(`পাতা ${total}, অফার ${rows.length} — অন্য পণ্য ${sum("other")}, ভার্সন অমিল ${sum("variant")}, মেলেনি ${sum("none")}, দাম নেই ${sum("noPrice")}, ঠিক ${sum("ok")}, ব্যর্থ ${failed.length}`);
-  console.log("\nদোকান                অন্য  ভার্সন  মেলেনি   ঠিক  দাম নেই");
-  for (const [name, t] of [...tally].sort((a, b) => b[1].other + b[1].variant + b[1].none - (a[1].other + a[1].variant + a[1].none)))
-    console.log(`${name.padEnd(20)} ${String(t.other).padStart(4)} ${String(t.variant).padStart(7)} ${String(t.none).padStart(7)} ${String(t.ok).padStart(6)} ${String(t.noPrice).padStart(8)}`);
-  console.log(`\nসন্দেহজনক ${suspects.length}টা → ${outPath}`);
-  if (failed.length) console.log(`\nপড়া যায়নি:\n${failed.slice(0, 40).join("\n")}`);
+  report(records, groups.length);
+  const suspects = records.flatMap((r) => r.findings).filter((f) => f.kind !== "ok").sort((a, b) => RANK[a.kind] - RANK[b.kind]);
+  if (slugOnly) for (const f of suspects.slice(0, 60)) console.log(`${LABEL[f.kind]} | ${f.seller} | ${f.product_slug} ${f.variant} | ${f.url}`);
 }
 
 void main();
