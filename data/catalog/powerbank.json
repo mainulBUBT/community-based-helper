@@ -140,6 +140,39 @@
           "region": null,
           "checkedAt": "2026-10-24",
           "variant": "10000mAh"
+        },
+        {
+          "variant": "10000mAh",
+          "site": "Umrelo",
+          "url": "https://umrelo.com.bd/product/oraimo-powernova-l11-10000mah-22-5w-power-bank/",
+          "price": 2190,
+          "oldPrice": 2490,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "10000mAh",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/oraimo-powernova-l11-10000mah-225w-power-bank-display-blue",
+          "price": 2150,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "10000mAh",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/oraimo-powernova-l11-10000mah-225w-power-bank-display-black",
+          "price": 2285,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -197,6 +230,28 @@
           "region": null,
           "checkedAt": "2026-10-24",
           "variant": "20000mAh"
+        },
+        {
+          "variant": "20000mAh",
+          "site": "Umrelo",
+          "url": "https://umrelo.com.bd/product/oraimo-powernova-q21-20000mah-22-5w-power-bank-with-digital-display-opb-7200q/",
+          "price": 1990,
+          "oldPrice": 2490,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "20000mAh",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/oraimo-powernova-q21-20000mah-225w-fast-charging-power-bank",
+          "price": 2240,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -314,6 +369,17 @@
           "region": null,
           "checkedAt": "2026-10-24",
           "variant": "20000mAh"
+        },
+        {
+          "variant": "20000mAh",
+          "site": "Umrelo",
+          "url": "https://umrelo.com.bd/product/anker-zolo-a110e-20000mah-22-5w-power-bank/",
+          "price": 3490,
+          "oldPrice": 4490,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -428,6 +494,17 @@
           "condition": "official",
           "region": null,
           "checkedAt": "2026-10-24"
+        },
+        {
+          "variant": "10000mAh",
+          "site": "Umrelo",
+          "url": "https://umrelo.com.bd/product/oraimo-slice-link-pro-10000mah-22-5w-power-bank/",
+          "price": 1790,
+          "oldPrice": 1990,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },

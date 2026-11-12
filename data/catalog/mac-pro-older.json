@@ -1265,6 +1265,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-28"
+    },
+    {
+     "variant": "M4 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/apple-mac-mini-late-2024-m4-chip-16gb-ram-512gb-ssd-mini-pc",
+     "price": 175450,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },

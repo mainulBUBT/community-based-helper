@@ -179,6 +179,39 @@
           "condition": "official",
           "region": null,
           "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "A18 Pro 8GB / 256GB",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/apple-macbook-neo-a18-pro-8gb-256gb-ssd-13-inch-early-2026",
+          "price": 103145,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "A18 Pro 8GB / 256GB",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/apple-macbook-neo-a18-pro-8gb-256gb-ssd-13-inch-early-2026-2",
+          "price": 103145,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "A18 Pro 8GB / 512GB",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/apple-macbook-neo-a18-pro-8gb-512gb-ssd-13-inch-early-2026",
+          "price": 119090,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -564,6 +597,17 @@
           "condition": "official",
           "region": null,
           "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 16GB / 1TB",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/apple-macbook-air-early-2026-m5-16gb-ram-1tb-ssd-inch-silver",
+          "price": 269020,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -845,6 +889,17 @@
           "condition": "official",
           "region": null,
           "checkedAt": "2026-10-21"
+        },
+        {
+          "variant": "M5 Pro 18C CPU/20C GPU 24GB / 2TB",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/apple-macbook-pro-early-2026-m5-pro-24gb-2tb-142-space-black",
+          "price": 471045,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },

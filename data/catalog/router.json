@@ -130,6 +130,72 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-archer-c6-ac1200-router",
+     "price": 3559,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tplink-archer-c6-ac1200-1200mbps-mu-mimo-gigabit-router-3",
+     "price": 3490,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/badgetp-link-archer-c6-v4-supports-80211-ac-standard-simultaneous-24ghz-400-mbps-mu-mimo-dual-wifi-router",
+     "price": 3500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-c6-gigabit-dual-band-wi-fi-router",
+     "price": 4150,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/archer-c6-ac1200-wireless-mu-mimo-gigabit-router-3018",
+     "price": 3882,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-c6-v60-ac1200-mbps-gigabit-dual-band-5-router",
+     "price": 3665,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -218,6 +284,39 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-archer-c64-ac1200-wifi-router",
+     "price": 3079,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-c64-ac1200-1200mbps-dual-band-wireless-mu-mimo-gigabit-wifi-router",
+     "price": 3150,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-c64-ac1200-dual-band-gigabit-wi-fi-router",
+     "price": 3350,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -295,6 +394,50 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-archer-c54-ac1200-dual-band-mu-mimo-beamforming-wi-fi-router",
+     "price": 2150,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-c54-ac1200-dual-band-4-antenna-mu-mimo-beamforming-wi-fi-router-2",
+     "price": 2400,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-c54-ac1200-dual-band-wi-fi-router-with-4-antennas",
+     "price": 2537,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-c54-ethernet-dual-band-ac1200-mbps-fi-router",
+     "price": 2285,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -372,6 +515,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tplink-archer-c50-ac1200-dual-band-wifi-router",
+     "price": 2349,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-c50-ac1200-mbps-ethernet-dual-band-fi-router",
+     "price": 2715,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -438,6 +603,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-c24-ac750-dual-band-wifi-router",
+     "price": 2150,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-c24-ac750-mbps-dual-band-wi-fi-router",
+     "price": 2125,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -504,6 +691,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-archer-c80-ac1900-gigabit-mu-mimo-router",
+     "price": 5890,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-c80-ac1900-wireless-gigabit-dual-band-mu-mimo-wi-fi-router",
+     "price": 4680,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -592,6 +801,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-ax12-ax1500-1500mbps-wifi-6-router",
+     "price": 4520,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -658,6 +878,39 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-archer-ax53-ax3000-wi-fi-6-router",
+     "price": 6590,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-ax53-ax3000-dual-band-gigabit-wi-fi-6-router",
+     "price": 7240,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-ax53-v1-ax3000-mbps-gigabit-dual-6-router",
+     "price": 6800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -724,6 +977,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-archer-ax73-ax5400-dual-band-gigabit-router",
+     "price": 14800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-archer-ax73-wireless-ethernet-dual-band-ax5400-gigabit-router",
+     "price": 16270,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -821,6 +1096,39 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tenda-ac10-ac1200-smart-dual-band-router",
+     "price": 2599,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tenda-ac10-ac1200-1200mbps-dual-band-4-antenna-gigabit-wifi-router",
+     "price": 3240,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tenda-ac10-ac1200-mbps-gigabit-dual-band-wi-fi-router",
+     "price": 2870,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -875,6 +1183,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tenda-tx12-pro-v20-ax3000-mbps-gigabit-dual-band-wi-fi-6-white-router",
+     "price": 4300,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -929,6 +1248,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/mercusys-ac10-ac1200-wifi-router",
+     "price": 1850,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/mercusys-ac10-ac1200-1200mbps-4-antenna-dual-band-wifi-router",
+     "price": 1850,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1006,6 +1347,50 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/cudy-wr1200-ac1200-dual-band-wi-fi-router",
+     "price": 2200,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/cudy-wr1200-ac1200-dual-band-wifi-router",
+     "price": 2250,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cudy-wr1200-ac1200-dual-band-ac1200-wifi-router",
+     "price": 2500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cudy-wr1200-ac1200-mbps-ethernet-dual-band-wi-fi-5-router",
+     "price": 2550,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1137,6 +1522,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cudy-wr3000-ax3000-gigabit-dual-band-smart-wi-fi-6-router",
+     "price": 4940,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cudy-wr3000-ax3000-mbps-gigabit-dual-band-wi-fi-6-router",
+     "price": 5045,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1203,6 +1610,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cudy-wr3600e-be3600-mbps-gigabit-dual-band-wi-fi-7-network-router",
+     "price": 8400,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1257,6 +1675,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-rt-ax52-ax1800-1800mbps-dual-band-gigabit-wi-fi-6-aimesh-router",
+     "price": 7330,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-rt-ax52-ax1800-mbps-gigabit-dual-band-wi-fi-6-router",
+     "price": 6380,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1405,6 +1845,72 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-deco-m4-3-pack-ac1200-dual-band-router",
+     "price": 10829,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tplink-deco-m4-2-pack-router",
+     "price": 9449,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tplink-deco-m4-router",
+     "price": 4790,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-m4-3-pack-whole-home-mesh-wi-fi-system-ac1200-dual-band-router",
+     "price": 14160,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-m4-2-pack-whole-home-mesh-wi-fi-system-ac1200-dual-band-router",
+     "price": 9480,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-m4-ac1200-mbps-gigabit-dual-band-wi-fi-1-pack",
+     "price": 4950,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1542,6 +2048,72 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tplink-deco-e4-3-pack-router",
+     "price": 7800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tplink-deco-e4-2-pack-router",
+     "price": 6090,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-deco-e4-ac1200-whole-home-mesh",
+     "price": 3330,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-e4-3-pack-ac1200-whole-home-mesh-wi-fi-system-dual-band-router-white",
+     "price": 9080,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-e4-ac1200-whole-home-mesh-wi-fi-system-1-pack",
+     "price": 3615,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-e4-ac1200-mbps-ethernet-dual-band-wi-fi-3-pack",
+     "price": 10525,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1679,6 +2251,138 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/tp-link-deco-x10-ax1500-whole-home-mesh-wi-fi-6-system/",
+     "price": 5490,
+     "oldPrice": 6390,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/tp-link-deco-x10-ax1500-whole-home-mesh-wi-fi-6-system/",
+     "price": 11300,
+     "oldPrice": 12400,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/tp-link-deco-x10-ax1500-whole-home-mesh-wi-fi-6-system/",
+     "price": 16900,
+     "oldPrice": 17990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-deco-x10-wifi-6-mesh-router-3-pack",
+     "price": 13500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-deco-x10-wifi-6-mesh-router",
+     "price": 4690,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-deco-x10-wifi-6-mesh-router-2-pack",
+     "price": 9190,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-x10-ax1500-dual-band-wifi-6-mesh-router-1-pack-2",
+     "price": 5320,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-x10-ax1500-dual-band-wifi-6-mesh-router-2-pack",
+     "price": 10380,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-x10-ax1500-dual-band-wifi-6-mesh-router-3-pack",
+     "price": 15310,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-x10-ax1500-gigabit-mesh-wi-fi-6-system-1-pack",
+     "price": 6275,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-x10-ax1500-gigabit-dual-band-mesh-wi-fi-2-pack",
+     "price": 12230,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-x10-ax1500-gigabit-dual-band-mesh-wi-fi-3-pack",
+     "price": 18610,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1781,6 +2485,138 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/tp-link-deco-x20-ax1800-whole-home-mesh-wi-fi-6-system/",
+     "price": 6900,
+     "oldPrice": 7990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/tp-link-deco-x20-ax1800-whole-home-mesh-wi-fi-6-system/",
+     "price": 13600,
+     "oldPrice": 16990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/tp-link-deco-x20-ax1800-whole-home-mesh-wi-fi-6-system/",
+     "price": 20400,
+     "oldPrice": 24990,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-deco-x20-wireless-router-3-pack",
+     "price": 16400,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-deco-x20-ax1800-mesh-wi-fi-6-router",
+     "price": 16990,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-deco-x20-ax1800-wi-fi-6-router",
+     "price": 15750,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-deco-x20-ax1800-router-3-pack",
+     "price": 22790,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-deco-x20-ax1800-router-2-pack",
+     "price": 15690,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/tp-link-deco-voice-x20-1-pack-ax1800-mesh-wi-fi-router",
+     "price": 6550,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-x20-ax1800-whole-home-mesh-wi-fi-6-router-3-pack",
+     "price": 23530,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-x20-ax1800-gigabit-mesh-wi-fi-6-system-1-pack",
+     "price": 8085,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-x20-ax1800-gigabit-dual-band-mesh-wi-fi-2-pack",
+     "price": 16375,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1884,6 +2720,50 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/tp-link-deco-x50-ax3000-whole-home-mesh-wi-fi-6-system/",
+     "price": 7490,
+     "oldPrice": 8490,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/tp-link-deco-x50-ax3000-whole-home-mesh-wi-fi-6-system/",
+     "price": 14490,
+     "oldPrice": 16490,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/tp-link-deco-x50-ax3000-whole-home-mesh-wi-fi-6-system/",
+     "price": 22200,
+     "oldPrice": 24990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tp-link-deco-x50-ax3000-mbps-gigabit-dual-band-wi-fi-6-system-network-router-2-pack",
+     "price": 11890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2043,6 +2923,72 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/cudy-m1300-ac1200-whole-home-mesh-wifi-gigabit-router",
+     "price": 5800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cudy-m1300-ac1200-1200mbps-gigabit-whole-home-mesh-wifi-router-3-pack",
+     "price": 8730,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "2 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cudy-m1300-ac1200-1200mbps-gigabit-whole-home-mesh-wifi-router-2-pack",
+     "price": 5950,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cudy-m1300-ac1200-1200mbps-gigabit-whole-home-mesh-wifi-router-1-pack",
+     "price": 3120,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cudy-m1300-ac1200-mbps-gigabit-dual-band-mesh-wi-fi-5-1-pack",
+     "price": 3350,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cudy-m1300-ac1200-mbps-gigabit-dual-band-mesh-wi-fi-5-3-pack",
+     "price": 9465,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2235,6 +3181,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "3 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cudy-m3000-ax3000-25g-dual-band-wi-fi-6-mesh-router-3-pack",
+     "price": 14830,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "1 Pack",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cudy-m3000-ax3000-25g-dual-band-wi-fi-6-mesh-router-1-pack",
+     "price": 5180,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   }

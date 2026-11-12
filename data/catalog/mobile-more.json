@@ -3383,6 +3383,17 @@
           "condition": "official",
           "region": null,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/redmi-note-15-5g",
+          "price": 35899,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -3954,6 +3965,17 @@
           "condition": "unofficial",
           "region": "Global",
           "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "12GB / 512GB",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/redmi-note-15-pro-plus-5g",
+          "price": 58199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },

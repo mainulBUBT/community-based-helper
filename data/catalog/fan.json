@@ -274,6 +274,17 @@
           "region": null,
           "checkedAt": "2026-10-25",
           "variant": "Standard"
+        },
+        {
+          "variant": "Standard",
+          "site": "Onix Computer",
+          "url": "https://www.onixbd.com/xiaomi-solove-desktop-stand-fan-f5-5w-4000mah",
+          "price": 2020,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -372,6 +383,28 @@
           "region": null,
           "checkedAt": "2026-10-25",
           "variant": "Standard"
+        },
+        {
+          "variant": "Standard",
+          "site": "Umrelo",
+          "url": "https://umrelo.com.bd/product/xiaomi-solove-f5p-portable-desktop-fan-f5-pro/",
+          "price": 2590,
+          "oldPrice": 2690,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/xiaomi-solove-f5-pro-4000mah-extendable-desktop-fan-white",
+          "price": 2550,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -439,6 +472,17 @@
           "region": null,
           "checkedAt": "2026-10-25",
           "variant": "Standard"
+        },
+        {
+          "variant": "Standard",
+          "site": "Umrelo",
+          "url": "https://umrelo.com.bd/product/xiaomi-solove-f5-pro-max-10000mah-rechargeable-desktop-stand-fan/",
+          "price": 3400,
+          "oldPrice": 4200,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },

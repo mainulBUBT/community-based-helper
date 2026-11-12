@@ -200,6 +200,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Ryzen 5 5625U 16GB / 512GB",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/lenovo-ideapad-slim-3-15abr8-amd-ryzen-5-5625u-16gb-ram-512gb-ssd-156-inch-fhd-display-laptop",
+     "price": 84000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Ryzen 7 5825U 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/lenovo-ideapad-slim-3-15abr8-ryzen-7-5825u-16gb-ssd-laptop",
+     "price": 94640,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -269,6 +291,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Core i5-13420H 16GB / 1TB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/lenovo-ideapad-slim-3-14irh10-core-i5-13420h-16gb-ssd-laptop-3",
+     "price": 111110,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core i5-13420H 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/lenovo-ideapad-slim-3-14irh10-core-i7-13620h-16gb-ssd-laptop",
+     "price": 113240,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -387,6 +431,61 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Core 3 100U 8GB / 512GB",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/dell-pro-15-essential-pv15250-core-i5-13th-gen-156-fhd-laptop",
+     "price": 85511,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core 3 100U 8GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/dell-pro-15-essential-pv15255-ryzen-5-7520u-8gb-ssd-laptop",
+     "price": 82410,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core 3 100U 8GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/dell-pro-15-essential-pv15250-core-i5-1334u-8gb-ssd-laptop",
+     "price": 98890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core 3 100U 8GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/dell-pro-15-essential-pv15250-core-i5-1334u-8gb-ssd-laptop-2",
+     "price": 91975,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core 3 100U 8GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/dell-pro-15-essential-pv15250-core-3-100u-8gb-ram-ssd-laptop",
+     "price": 92510,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -455,6 +554,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Core 3 100U 8GB / 512GB",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/hp-250r-g10-core-3-100u-8gb-ram-512gb-ssd-15-6-inch-fhd-laptop",
+     "price": 99900,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core 3 100U 8GB / 512GB",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/hp-250r-g10-core-5-120u-8gb-ram-512gb-ssd-15-6-inch-fhd-laptop",
+     "price": 109900,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -671,6 +792,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 125H 8GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/hp-probook-460-g11-core-ultra-5-125h-8gb-ram-inch-laptop",
+     "price": 130790,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -785,6 +917,39 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 225U 8GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/lenovo-thinkpad-e14-gen-7-core-ultra-5-225u-8gb-ssd-laptop",
+     "price": 121745,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core Ultra 5 225U 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/lenovo-thinkpad-e14-gen-7-core-ultra-5-225u-16gb-ssd-laptop",
+     "price": 135045,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core Ultra 7 255H 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/lenovo-thinkpad-e14-gen-7-core-ultra-7-255h-16gb-ssd-laptop",
+     "price": 183955,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -996,6 +1161,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Ryzen 7 7445HS RTX 3050 8GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-tuf-gaming-a15-fa506ncg-ryzen-7-7445hs-rtx-512gb-laptop",
+     "price": 135045,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Ryzen 7 8845HS RTX 3050 8GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-tuf-gaming-a15-fa506ncg-ryzen-7-8845hs-rtx-512gb-laptop",
+     "price": 152055,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1138,6 +1325,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Ryzen 7 170 RTX 4050 16GB / 512GB",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/asus-tuf-gaming-a16-fa607nuq-amd-ryzen-7-170-gaming-laptop",
+     "price": 169000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Ryzen 7 170 RTX 4050 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-tuf-gaming-a16-fa607nuq-ryzen-7-170-rtx-512gb-laptop",
+     "price": 203095,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1198,6 +1407,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Ryzen 7 260 RTX 5050 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-tuf-gaming-a16-fa608uh-ryzen-7-260-16gb-5050-laptop",
+     "price": 230740,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1294,6 +1514,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core Ultra 9 275HX RTX 5060 16GB / 1TB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-rog-strix-g16-g615lm-ultra-9-275hx-16gb-1tb-5060-laptop",
+     "price": 338130,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1404,6 +1635,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core 7 150U 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-vivobook-15-a1504va-core-7-150u-16gb-ram-ssd-laptop",
+     "price": 131850,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core 7 150U 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-vivobook-15-a1504va-core-7-150u-16gb-512gb-inch-laptop",
+     "price": 129725,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1463,6 +1716,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Ryzen AI 5 430 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-zenbook-14-um3406ga-ryzen-ai-5-430-16gb-oled-laptop",
+     "price": 194590,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1553,6 +1817,50 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core Ultra 5 225H 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-zenbook-14-oled-ux3405ca-core-ultra-5-225h-ssd-laptop",
+     "price": 187140,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core Ultra 7 255H 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-zenbook-14-ux3405ca-core-ultra-7-255h-16gb-oled-laptop",
+     "price": 222235,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core Ultra 5 225H 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-zenbook-14-oled-ux3405ca-core-ultra-5-225h-512gb-laptop",
+     "price": 185015,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core Ultra 7 255H 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-zenbook-14-oled-ux3405ca-core-ultra-7-255h-512gb-laptop",
+     "price": 223295,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1986,6 +2294,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core i7-13650HX RTX 5050 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/lenovo-loq-15irx10-core-i7-13650hx-rtx-5050-gaming-laptop",
+     "price": 183415,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2406,6 +2725,39 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Core i7-13620H 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/lenovo-ideapad-slim-3-15irh10-core-i5-13420h-16gb-ssd-laptop-2",
+     "price": 111110,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core i7-13620H 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/lenovo-ideapad-slim-3-15irh10-core-i7-13620h-16gb-ssd-laptop",
+     "price": 113240,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core i7-13620H 16GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/lenovo-ideapad-slim-3-15irh10-core-i5-13420h-16gb-ssd-laptop-3",
+     "price": 103145,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2502,6 +2854,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-29"
+    },
+    {
+     "variant": "Ryzen AI 9 HX 370 RTX 5070 32GB / 2TB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-rog-zephyrus-g14-ga403wp-ryzen-ai-9-hx-370-oled-laptop",
+     "price": 463600,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   }

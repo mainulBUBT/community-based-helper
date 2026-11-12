@@ -805,6 +805,17 @@
           "condition": "unofficial",
           "region": null,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/samsung-galaxy-s25-fe",
+          "price": 74750,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ],
       "popular": true
@@ -2146,6 +2157,28 @@
           "condition": "unofficial",
           "region": null,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/samsung-galaxy-a56-5g",
+          "price": 62699,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "12GB / 256GB",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/samsung-galaxy-a56-5g-12gb-256gb",
+          "price": 59999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -3868,6 +3901,17 @@
           "condition": "unofficial",
           "region": "Global",
           "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 64GB",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/samsung-galaxy-m06-5g",
+          "price": 21199,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },

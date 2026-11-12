@@ -628,6 +628,17 @@
      "region": null,
      "checkedAt": "2026-10-24",
      "variant": "Standard"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/air-jordan-4-retro-aes-206",
+     "price": 3190,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },

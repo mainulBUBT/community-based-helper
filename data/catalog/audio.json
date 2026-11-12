@@ -355,6 +355,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/anker-soundcore-p40i-smart-anc-true-wireless-earbuds/",
+     "price": 3990,
+     "oldPrice": 5990,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-p40i-anc-true-wireless-earbuds-2",
+     "price": 3950,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -414,6 +436,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/cmf-buds-2/",
+     "price": 2990,
+     "oldPrice": 4990,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nothing-cmf-buds-2-orange-tws-bluetooth-earbuds",
+     "price": 4780,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -567,6 +611,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/sony-wh-ch720n-white-wireless-noise-cancelling-ear-headphone",
+     "price": 12760,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -626,6 +681,39 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/jbl-tune-770nc-black-wireless-over-ear-headphone",
+     "price": 9575,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/jbl-tune-770nc-wireless-over-ear-anc-headphone",
+     "price": 8950,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/jbl-tune-770nc-anc-wireless-over-ear-headphone-blue",
+     "price": 9575,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -706,6 +794,50 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/anker-soundcore-space-one-active-noise-cancelling-headphones/",
+     "price": 7490,
+     "oldPrice": 8990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-space-one-anc-headphones-black",
+     "price": 7600,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-space-one-anc-bluetooth-over-headphone-black",
+     "price": 8290,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-space-one-anc-bluetooth-over-ear-sky-blue",
+     "price": 8290,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -774,6 +906,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/redmi-buds-6-play-true-wireless-earbuds/",
+     "price": 1490,
+     "oldPrice": 1990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/xiaomi-redmi-buds-6-play-tws-bluetooth-earphone-black",
+     "price": 1650,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -939,6 +1093,50 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/oneplus-bullets-wireless-z3-3d-spatial-audio-wireless-neckband-headphones/",
+     "price": 1990,
+     "oldPrice": 2990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oneplus-bullets-wireless-z3-bluetooth-neckband-black",
+     "price": 3180,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oneplus-bullets-wireless-z3-neckband-earphone-sunset-red",
+     "price": 1910,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oneplus-bullets-wireless-z3-neckband-earphone-midnight-black",
+     "price": 2125,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1049,6 +1247,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oneplus-bullets-wireless-z2-anc-black",
+     "price": 3550,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oneplus-bullets-wireless-z2-anc-neckband-booming-black",
+     "price": 2950,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1236,6 +1456,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/oraimo-necklace-5-anc-wireless-neckband-oeb-611/",
+     "price": 2150,
+     "oldPrice": 2690,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1324,6 +1555,61 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/oraimo-necklace-neo-wireless-neckband-headphone/",
+     "price": 850,
+     "oldPrice": 1290,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-necklace-neo-mysterious-blue-neckband-earphone",
+     "price": 1245,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-necklace-neo-cosmic-orange-neckband-earphone",
+     "price": 1245,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-necklace-neo-gravity-black-neckband-earphone",
+     "price": 1245,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-necklace-neo-digital-lavender-neckband-earphone",
+     "price": 1245,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1423,6 +1709,50 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/oraimo-oeb-311-necklace-lite-enc-wireless-headphone-with-vibration-reminder/",
+     "price": 1150,
+     "oldPrice": 1550,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-necklace-lite-black-bluetooth-neckband-earphone",
+     "price": 1520,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-necklace-lite-light-gold-bluetooth-neckband-earphone",
+     "price": 1520,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-necklace-lite-sage-green-bluetooth-neckband-earphone",
+     "price": 1520,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1588,6 +1918,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/qcy-bassbloom-anc-n2/",
+     "price": 1930,
+     "oldPrice": 2450,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1665,6 +2006,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/qcy-tunearc-n1-neckband-sports-headphones/",
+     "price": 1250,
+     "oldPrice": 1750,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/qcy-tunearc-n1-c3-in-ear-neckband-headphones",
+     "price": 1450,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1720,6 +2083,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/realme-buds-wireless-5-anc-bluetooth-neckband/",
+     "price": 2490,
+     "oldPrice": 2990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/realme-buds-wireless-5-anc-neckband-earphone-black",
+     "price": 3150,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1763,6 +2148,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/realme-buds-wireless-5-lite-bluetooth-neckband/",
+     "price": 1690,
+     "oldPrice": 2490,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1805,6 +2201,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/realme-buds-wireless-3-neo-wireless-headphones/",
+     "price": 1890,
+     "oldPrice": 2490,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1859,6 +2266,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/edifier-w280nb-pro-anc-black-in-ear-bluetooth-neckband",
+     "price": 3880,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1914,6 +2332,39 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/jbl-tune-125bt-wireless-in-ear-headphones",
+     "price": 2417,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/jbl-tune-125bt-wireless-in-ear-neckband-earphone-black",
+     "price": 3030,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/jbl-tune-125bt-wireless-in-ear-neckband-earphone-white",
+     "price": 3030,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2035,6 +2486,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/anker-soundcore-life-u2i-wireless-neckband-headphones-upgraded-version/",
+     "price": 1690,
+     "oldPrice": 1990,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2101,6 +2563,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/baseus-bowie-p1x-neckband-3",
+     "price": 1690,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/baseus-bowie-p1x-neckband-black-color",
+     "price": 1610,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2331,6 +2815,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/hoco-es70-neckband-bluetooth-headphones/",
+     "price": 690,
+     "oldPrice": 890,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/hoco-es70-long-battery-backup-bluetooth-neckband-black-color",
+     "price": 1020,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2408,6 +2914,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/hoco-es69-neckband-black",
+     "price": 980,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2639,6 +3156,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/foneng-bl40-neckband-headphones/",
+     "price": 890,
+     "oldPrice": 1150,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2724,6 +3252,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/hifuture-futuremate-open-ear-bluetooth-earphone-black",
+     "price": 1800,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2828,6 +3367,39 @@
      "region": null,
      "checkedAt": "2026-10-31",
      "variant": "Standard"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/qcy-t13-anc-2-true-wireless-earbuds/",
+     "price": 1690,
+     "oldPrice": 1990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/qcy-t13-anc-2-truly-wireless-earbuds-black-color",
+     "price": 2000,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/qcy-t13-anc-2-truly-wireless-earbuds-white-color",
+     "price": 1960,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2921,6 +3493,28 @@
      "region": null,
      "checkedAt": "2026-10-31",
      "variant": "Standard"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/qcy-ht05-melobuds-anc-true-wireless-earbuds/",
+     "price": 2490,
+     "oldPrice": 2990,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/qcy-ht05-melobuds-anc-true-wireless-earbuds-3",
+     "price": 2550,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3025,6 +3619,17 @@
      "region": null,
      "checkedAt": "2026-10-31",
      "variant": "Standard"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/qcy-melobuds-n20-anc-wireless-earbuds/",
+     "price": 2150,
+     "oldPrice": 2690,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3129,6 +3734,39 @@
      "checkedAt": "2026-10-31",
      "variant": "Standard",
      "oldPrice": 2300
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/qcy-buds-anc-ht15-true-wireless-earbuds-45db-noise-cancellation/",
+     "price": 1950,
+     "oldPrice": 2490,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/qcy-ht15-buds-anc-tws-earbuds-blue",
+     "price": 2180,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/qcy-ht15-buds-anc-tws-earbuds-black",
+     "price": 2180,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3522,6 +4160,138 @@
      "checkedAt": "2026-10-31",
      "variant": "Standard",
      "oldPrice": 2000
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/anker-soundcore-r50i-nc-42db-anc-true-wireless-earbuds/",
+     "price": 2450,
+     "oldPrice": 3390,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/anker-soundcore-r50i-true-wireless-earbuds/",
+     "price": 1580,
+     "oldPrice": 2490,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-r50i-true-wireless-earbuds",
+     "price": 1950,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-r50i-nc-earbuds-white",
+     "price": 3050,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-r50i-nc-earbuds-black",
+     "price": 3050,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-r50i-white-bluetooth-earbuds",
+     "price": 1625,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-r50i-blue-bluetooth-earbuds",
+     "price": 1625,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-r50i-black-bluetooth-earbuds",
+     "price": 1625,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-r50i-nc-anc-white-bluetooth-earbuds",
+     "price": 2605,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-r50i-nc-anc-green-bluetooth-earbuds",
+     "price": 2605,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-r50i-nc-anc-black-bluetooth-earbuds",
+     "price": 2605,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anker-soundcore-r50i-nc-anc-blue-bluetooth-earbuds",
+     "price": 2605,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3738,6 +4508,28 @@
      "checkedAt": "2026-10-31",
      "variant": "Standard",
      "oldPrice": 1610
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/oraimo-freepods-neo/",
+     "price": 1650,
+     "oldPrice": 1990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-freepods-neo-light-gold-tws-bluetooth-earbuds",
+     "price": 1440,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3912,6 +4704,17 @@
      "region": null,
      "checkedAt": "2026-10-31",
      "variant": "Standard"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-freepods-lite-otw-330-true-wireless-earbuds",
+     "price": 1420,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4026,6 +4829,39 @@
      "region": null,
      "checkedAt": "2026-10-31",
      "variant": "Standard"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/oneplus-nord-buds-3r/",
+     "price": 2580,
+     "oldPrice": 3490,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oneplus-nord-buds-3r-aura-blue-bluetooth-earbuds",
+     "price": 2990,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oneplus-nord-buds-3r-ash-black-bluetooth-earbuds",
+     "price": 3175,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4130,6 +4966,17 @@
      "checkedAt": "2026-10-31",
      "variant": "Standard",
      "oldPrice": 1789
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/soundpeats-q3-pro/",
+     "price": 1890,
+     "oldPrice": 2490,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4325,6 +5172,17 @@
      "checkedAt": "2026-10-31",
      "variant": "Standard",
      "oldPrice": 1690
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/baseus-encok-wm01-bluetooth-53-tws-earbuds-black",
+     "price": 1540,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4409,6 +5267,28 @@
      "region": null,
      "checkedAt": "2026-10-31",
      "variant": "Standard"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/cmf-buds-2a/",
+     "price": 2650,
+     "oldPrice": 3290,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nothing-cmf-buds-2a-dark-gray-tws-bluetooth-earbuds",
+     "price": 3195,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4492,6 +5372,28 @@
      "checkedAt": "2026-10-31",
      "variant": "Standard",
      "oldPrice": 2150
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/realme-buds-t200-anc-snowy-white-bluetooth-earbuds",
+     "price": 2390,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/realme-buds-t200-anc-mystic-gray-bluetooth-earbuds",
+     "price": 2250,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   }

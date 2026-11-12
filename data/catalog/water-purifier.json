@@ -76,6 +76,28 @@
           "region": null,
           "checkedAt": "2026-10-26",
           "variant": "Standard"
+        },
+        {
+          "variant": "Standard",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/pureit-classic-water-purifier",
+          "price": 5499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/pureit-classic-23l",
+          "price": 4999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -127,6 +149,39 @@
           "region": null,
           "checkedAt": "2026-10-26",
           "variant": "Standard"
+        },
+        {
+          "variant": "Standard",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/pureit-marina-ro-uv-mf-water-purifier",
+          "price": 20490,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/pureit-marina-rouvmf",
+          "price": 20450,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/pureit-marina-rouvmf-6l-white-blue-water-purifier",
+          "price": 22335,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -190,6 +245,39 @@
           "region": null,
           "checkedAt": "2026-10-26",
           "variant": "Standard"
+        },
+        {
+          "variant": "Standard",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/pureit-wave-ro-mf-minerals-water-purifier",
+          "price": 15900,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/pureit-wave-romf",
+          "price": 16450,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/pureit-wave-romf-6l-navy-blue-water-purifier",
+          "price": 17540,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -242,6 +330,39 @@
           "region": null,
           "checkedAt": "2026-10-26",
           "variant": "Standard"
+        },
+        {
+          "variant": "Standard",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/pureit-vital-max-water-purifier",
+          "price": 25490,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/pureit-vital-max",
+          "price": 24500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/pureit-vital-max-rouv-7l-white-water-purifier",
+          "price": 27645,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -355,6 +476,39 @@
           "region": null,
           "checkedAt": "2026-10-26",
           "variant": "Standard"
+        },
+        {
+          "variant": "Standard",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/pureit-ultima-pro-water-purifier",
+          "price": 34990,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/pureit-ultima-pro",
+          "price": 34500,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/pureit-ultima-pro-romfdual-uv-9l-dark-navy-water-purifier",
+          "price": 38280,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -407,6 +561,50 @@
           "region": null,
           "checkedAt": "2026-10-26",
           "variant": "Standard"
+        },
+        {
+          "variant": "Standard",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/kent-grand-star-with-alkaline-copper-water-purifier",
+          "price": 29900,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/kent-grand-star-white-alkaline-and-copper-water-purifier",
+          "price": 30900,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/kent-grand-star-water-purifier-black-k-3282-wp",
+          "price": 32200,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "Standard",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/kent-grand-star-smart-ro-water-purifier-white-k-3001-wp",
+          "price": 30950,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     }

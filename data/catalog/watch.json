@@ -425,6 +425,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "Square",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/amazfit-active-2-square-premium-smart-watch/",
+     "price": 14490,
+     "oldPrice": 16990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Square",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/amazfit-active-2-square-premium-amoled-gps-smart-watch",
+     "price": 17015,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -579,6 +601,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "1.85\" Bluetooth",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/xiaomi-redmi-watch-6-active/",
+     "price": 6490,
+     "oldPrice": 7990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -628,6 +661,17 @@
      "inStock": false,
      "condition": "official",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/amazfit-bip-5-unity-1-91-bluetooth-calling-smart-watch/",
+     "price": 5190,
+     "oldPrice": 6490,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/amazfit-bip-5-unity-bluetooth-calling-smart-watch"
@@ -868,6 +912,17 @@
      "inStock": false,
      "condition": "official",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/xiaomi-watch-s4-bt-calling-smart-watch-black",
+     "price": 17200,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/xiaomi-watch-s4"
@@ -907,6 +962,39 @@
      "inStock": false,
      "condition": "unofficial",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/haylou-solar-lite-2-amoled-calling-smart-watch/",
+     "price": 2950,
+     "oldPrice": 3990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/haylou-solar-lite-2-silver-bluetooth-calling-smart-watch",
+     "price": 3725,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/haylou-solar-lite-2-black-bluetooth-calling-smart-watch",
+     "price": 3725,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/haylou-solar-lite-2"
@@ -947,6 +1035,28 @@
      "inStock": true,
      "condition": "unofficial",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/imiki-st2-1-96-bluetooth-calling-smart-watch/",
+     "price": 2380,
+     "oldPrice": 2990,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/imilab-imiki-st2-blue-bluetooth-calling-smart-watch",
+     "price": 2490,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/imilab-imiki-st2-bluetooth-calling-smart-watch"
@@ -986,6 +1096,39 @@
      "inStock": true,
      "condition": "unofficial",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/kospet-orb-2-calling-smart-watch/",
+     "price": 6900,
+     "oldPrice": 8990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/kospet-orb-2-silver-amoled-bluetooth-calling-smart-watch",
+     "price": 7450,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/kospet-orb-2-black-amoled-bluetooth-calling-smart-watch",
+     "price": 8505,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/kospet-orb-2"
@@ -1025,6 +1168,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/imiki-frame-2-pro-gps-smart-watch/",
+     "price": 5490,
+     "oldPrice": 6990,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/imilab-imiki-frame-2-pro-smart-watch"
@@ -1064,6 +1218,39 @@
      "inStock": false,
      "condition": "unofficial",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/oraimo-watch-5-lite-calling-smart-watch-osw-804/",
+     "price": 1650,
+     "oldPrice": 1990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-watch-5-lite-osw-804-black-bluetooth-calling-smart-watch",
+     "price": 1745,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-watch-5-lite-rose-gold-bluetooth-calling-smart-watch-2",
+     "price": 1745,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/oraimo-watch-5-lite-smart-watch"
@@ -1113,6 +1300,39 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/kospet-tank-t4c-smart-watch/",
+     "price": 10490,
+     "oldPrice": 12990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/kospet-tank-t4c-black-amoled-gps-bluetooth-smart-watch",
+     "price": 12105,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/kospet-tank-t4c-silver-amoled-gps-bluetooth-smart-watch",
+     "price": 12105,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/kospet-tank-t4c"
@@ -1172,6 +1392,17 @@
      "inStock": true,
      "condition": "unofficial",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/haylou-watch-4-smart-watch-with-gps/",
+     "price": 3350,
+     "oldPrice": 3990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/haylou-watch-4"
@@ -1212,6 +1443,50 @@
      "inStock": true,
      "condition": "unofficial",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/oraimo-watch-6-moco-x-free-fire-edition-smart-watch-osw-809/",
+     "price": 1790,
+     "oldPrice": 2490,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/oraimo-watch-6-smart-watch-osw-807/",
+     "price": 2490,
+     "oldPrice": 2990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/oraimo-watch-6-nano-bluetooth-calling-smart-watch-osw-807n/",
+     "price": 3350,
+     "oldPrice": 3990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-watch-6-chrome-black-bluetooth-calling-smart-watch-osw-807",
+     "price": 2735,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/oraimo-watch-6"
@@ -1262,6 +1537,28 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/kospet-orb-amoled-bluetooth-calling-smart-watch/",
+     "price": 4790,
+     "oldPrice": 5490,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/kospet-orb-gray-amoled-bluetooth-calling-smart-watch",
+     "price": 5635,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/kospet-orb-smartwatch"
@@ -1312,6 +1609,39 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/kospet-tank-t3-ultra-2-special-edition-smart-watch/",
+     "price": 10490,
+     "oldPrice": 12990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/kospet-tank-t3-ultra-2-smart-watch/",
+     "price": 9800,
+     "oldPrice": 11490,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/kospet-tank-t3-ultra-calling-with-gps-smart-watch/",
+     "price": 8380,
+     "oldPrice": 10490,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/kospet-tank-t3-ultra-bluetooth-calling-smartwatch"
@@ -1422,6 +1752,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/oraimo-watch-nova-2r-osw-834-143-inch-chrome-smartwatch",
+     "price": 5225,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/oraimo-watch-nova-2r"
@@ -1472,6 +1813,17 @@
      "inStock": false,
      "condition": "unofficial",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/amazfit-bip-6-smart-watch-with-gps/",
+     "price": 8990,
+     "oldPrice": 10990,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/amazfit-bip-6-smart-watch"
@@ -1522,6 +1874,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Umrelo",
+     "url": "https://umrelo.com.bd/product/amazfit-active-2-round-smart-watch/",
+     "price": 11490,
+     "oldPrice": 13990,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/amazfit-active-2"
@@ -1582,6 +1945,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "Standard",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/xiaomi-amazfit-gts-2-smart-watch",
+     "price": 13300,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "specsSource": "https://www.startech.com.bd/xiaomi-watch-2-amoled-bluetooth-calling-smartwatch"

@@ -215,6 +215,28 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "150ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/simple-kind-to-skin-refreshing-facial-wash-gel-150ml",
+     "price": 620,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "150ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/simple-refreshing-facial-wash-150ml-3",
+     "price": 715,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -294,6 +316,28 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "236ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cerave-hydrating-foaming-oil-cleanser-236ml-11",
+     "price": 2065,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "236ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cerave-hydrating-cleanser-236ml-01",
+     "price": 1890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -383,6 +427,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "56ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cerave-moisturizing-cream-for-normal-to-dry-skin-56ml",
+     "price": 1135,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -601,6 +656,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-23"
+    },
+    {
+     "variant": "115ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/streax-vitariche-gloss-hair-serum-115ml",
+     "price": 470,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1039,6 +1105,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "236ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-gentle-skin-cleanser-normal-to-dry-and-sensitive-skin-236ml-11",
+     "price": 1855,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1100,6 +1177,28 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "50ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/neutrogena-hydro-boost-water-gel-50ml",
+     "price": 1250,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "50ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/neutrogena-hydro-boost-water-aqua-gel-for-normal-to-combination-skin-50ml",
+     "price": 1180,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1162,6 +1261,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "150ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml",
+     "price": 1685,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1405,6 +1515,28 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "100g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cosrx-advanced-snail-92-all-in-one-cream-100g",
+     "price": 1785,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "100g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cosrx-advanced-snail-92-all-in-one-cream-tube-100g",
+     "price": 1625,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1485,6 +1617,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "50ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/skin-1004-madagascar-centella-tone-brightening-capsule-ampoule-50ml",
+     "price": 1250,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1525,6 +1668,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-24"
+    },
+    {
+     "variant": "80ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/round-lab-birch-juice-moisturizing-cream-80ml",
+     "price": 2145,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1606,6 +1760,28 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "150ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cosrx-low-ph-good-morning-gel-cleanser-150ml",
+     "price": 985,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "150ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cosrx-low-ph-good-morning-gel-cleanser-150ml-01",
+     "price": 1170,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1697,6 +1873,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "150ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cosrx-salicylic-acid-daily-gentle-cleanser-new-150ml",
+     "price": 975,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1897,6 +2084,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "200ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/isntree-green-tea-fresh-toner-200ml",
+     "price": 1460,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1958,6 +2156,28 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "100ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/skin1004-madagascar-centella-poremizing-fresh-ampoule-100ml",
+     "price": 1950,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "100ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/skin-1004-madagascar-centella-ampoule-100ml",
+     "price": 2080,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2112,6 +2332,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "9g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/etude-dear-darling-water-tint-01",
+     "price": 550,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2219,6 +2450,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "4g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/beauty-glazed-glow-lip-oil-4g-meet-101",
+     "price": 290,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2288,6 +2530,28 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "3ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/swiss-beauty-dip-tint-lip-oil-03-peach",
+     "price": 290,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "3ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/swiss-beauty-dip-tint-lip-oil-01-strawberry",
+     "price": 355,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2651,6 +2915,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "5g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/wishcare-ceramide-tinted-lip-balm-spf50-5g",
+     "price": 485,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2748,6 +3023,17 @@
      "inStock": false,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "20g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cosrx-full-fit-propolis-lip-sleeping-mask-20g",
+     "price": 1625,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3588,6 +3874,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "100ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/anua-heartleaf-pore-clay-pack-100ml",
+     "price": 1430,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3791,6 +4088,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "50ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cosrx-aloe-soothing-sun-cream-spf-50-pa-50ml",
+     "price": 1040,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4281,6 +4589,28 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "50ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/skin-1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-spf-50-pa-50ml",
+     "price": 1690,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "15ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/skin-1004-madagascar-centella-hyalu-cica-water-fit-sun-serum-15ml",
+     "price": 650,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4490,6 +4820,28 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "30ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/beauty-of-joseon-ginseng-retinal-revive-eye-serum-30ml",
+     "price": 1300,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "10ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/beauty-of-joseon-ginseng-retinal-revive-eye-serum-10ml",
+     "price": 520,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4789,6 +5141,17 @@
      "inStock": true,
      "condition": "official",
      "checkedAt": "2026-10-30"
+    },
+    {
+     "variant": "30ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/the-ordinary-caffeine-solution-5-plus-egcg-30ml-3",
+     "price": 975,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -5091,6 +5454,39 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "236ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cerave-intensive-moisturising-lotion-236ml",
+     "price": 1945,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "236ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cerave-moisturising-lotion-236ml",
+     "price": 1950,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "473ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cerave-intensive-moisturizing-lotion-for-dry-to-very-dry-skin-473ml",
+     "price": 4160,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -5514,6 +5910,105 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "100ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nivea-soft-jar-moisturising-cream-100ml",
+     "price": 590,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "50ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nivea-soft-jar-moisturising-cream-50ml",
+     "price": 320,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "50ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nivea-refreshingly-soft-moisturizing-face-body-hands-cream-50ml",
+     "price": 455,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "50ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nivea-refreshingly-soft-moisturizing-cream-50ml",
+     "price": 290,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "200ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nivea-refreshingly-soft-moisturzing-cream-vegan-formula-200ml",
+     "price": 780,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "200ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nivea-soft-daily-uv-refreshingly-soft-moisturizing-cream-200ml",
+     "price": 745,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "100ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nivea-refreshingly-soft-moisturizing-cream-100ml",
+     "price": 455,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "100ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nivea-soft-cream-100ml-1",
+     "price": 470,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "200ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nivea-soft-smarty-college-edition-200ml",
+     "price": 755,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -5644,6 +6139,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "400ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nivea-body-milk-nourishing-5-in-1-lotion-dry-to-very-dry-skin-400ml",
+     "price": 765,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "625ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/nivea-intense-moisture-rich-nourishing-body-lotion-625ml",
+     "price": 1595,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -5902,6 +6419,50 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vaseline-intensive-care-cocoa-radiant-non-greasy-body-lotion-400ml",
+     "price": 2340,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "200ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vaseline-intensive-care-cocoa-radiant-body-lotion-200ml",
+     "price": 650,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "600ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vaseline-intensive-care-cocoa-radiant-body-lotion-600ml",
+     "price": 1830,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "400ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vaseline-intensive-care-cocoa-radiant-body-lotion-400ml",
+     "price": 1145,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -6025,6 +6586,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "20g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vaseline-lip-therapy-original",
+     "price": 290,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -6283,6 +6855,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "4.8g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vaseline-lip-therapy-rosy-lips-with-petroleum-jelly-4-8g",
+     "price": 330,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "20g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vaseline-lip-therapy-rosy-lips-4",
+     "price": 230,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -6486,6 +7080,39 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "50ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vaseline-blueseal-pure-petroleum-jelly-original-50ml",
+     "price": 235,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "250ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vaseline-blueseal-original-petroleum-jelly-250ml",
+     "price": 710,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "250ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vaseline-original-healing-petroleum-jelly-250ml",
+     "price": 970,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -7025,6 +7652,61 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "80g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-moisturising-cream-dry-to-normal-sensitive-skin-80g",
+     "price": 1060,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "453g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-moisturizing-cream-dry-to-very-dry-skin-453g",
+     "price": 3305,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "453g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-moisturizing-cream-very-dry-to-dry-snnsitive-skin-453g-1",
+     "price": 3380,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "453g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-moisturizing-cream-ultimate-with-prebiotic-aloe-453g",
+     "price": 3250,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "566g",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-moisturizing-cream-ultimate-antioxident-566g",
+     "price": 3445,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -7740,6 +8422,83 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-09"
+    },
+    {
+     "variant": "100ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-moisturising-lotion-100ml",
+     "price": 1085,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "473ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-moisturizing-lotion-473ml",
+     "price": 3380,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "237ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-moisturizing-lotion-237ml",
+     "price": 1855,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "591ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-moisturizing-lotion-normal-to-dry-skin-591ml",
+     "price": 3445,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "118ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-moisturizing-lotion-118ml",
+     "price": 1240,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "118ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-moisturising-lotion-118ml",
+     "price": 1070,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "237ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-moisturizing-lotion-237ml-1",
+     "price": 1890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   }

@@ -320,6 +320,28 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i3-14100 8GB / 512GB",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/dell-ect1250-intel-core-i3-14100-tower-pc",
+     "price": 78000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core i5-14400 8GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/dell-ect1250-intel-core-i5-14400-8gb-ram-512gb-ssd-tower-pc",
+     "price": 111650,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -407,6 +429,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core Ultra 5 235 8GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/dell-pro-tower-qct1250-core-ultra-5-235-8gb-ram-tower-pc",
+     "price": 114835,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -515,6 +548,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i3-14100 8GB / 512GB",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/hp-pro-tower-280-g9-tower-pc",
+     "price": 88000,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -573,6 +617,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core i7-13620H 8GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/lenovo-ideacentre-tower-08irh9-intel-core-i7-512gb-ssd",
+     "price": 103145,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -717,6 +772,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-25"
+    },
+    {
+     "variant": "Core 5 210H 16GB / 1TB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-expertcenter-p400-p440vak-core-5-210h-16gb-1tb-inch-aio",
+     "price": 127595,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Core 7 240H 16GB / 1TB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/asus-expertcenter-p400-p440vak-core-7-240h-16gb-1tb-inch-aio",
+     "price": 161620,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   }

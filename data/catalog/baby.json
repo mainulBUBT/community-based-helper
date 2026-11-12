@@ -238,6 +238,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "150ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/aveeno-baby-daily-care-baby-moisturising-lotion-150ml",
+     "price": 1160,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "150ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/aveeno-daily-care-baby-moisturizing-lotion-150ml",
+     "price": 940,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1119,6 +1141,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "200ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/sebamed-baby-extra-soft-cream-200ml",
+     "price": 1475,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2664,6 +2697,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "180ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/kodomo-anti-rash-moisturizing-baby-lotion-0-baby-200ml",
+     "price": 920,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3495,6 +3539,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "237ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cerave-baby-moisturizing-lotion-237ml",
+     "price": 1945,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "473ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cerave-baby-moisturizing-lotion-473ml-11",
+     "price": 3045,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3659,6 +3725,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "400ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/cetaphil-baby-delicate-skin-daily-lotion-400ml",
+     "price": 1830,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3903,6 +3980,83 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-11-08"
+    },
+    {
+     "variant": "500ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/johnson-s-baby-lotion-500ml-thai",
+     "price": 1535,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "200ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/johnson-s-baby-lotion-200ml",
+     "price": 470,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "500ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/johnson-s-baby-lotion-500ml-3",
+     "price": 1250,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "500ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/johnson-s-pure-gentle-daily-care-baby-lotion-500ml",
+     "price": 1240,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "100ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/johnson-s-baby-lotion-100ml",
+     "price": 325,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "500ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/sainsbury-s-little-ones-baby-lotion-500ml",
+     "price": 1300,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "500ml",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/johnson-s-baby-fragrance-free-lotion-with-aloe-vitamin-b5-500ml",
+     "price": 1560,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },

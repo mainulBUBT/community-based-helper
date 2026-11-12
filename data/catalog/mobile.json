@@ -207,6 +207,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/samsung-galaxy-a07-6gb-128gb",
+     "price": 27899,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/samsung-galaxy-a07",
+     "price": 19999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -408,6 +430,61 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/samsung-galaxy-a17-5g-8gb-256gb",
+     "price": 38599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/samsung-galaxy-a17-5g",
+     "price": 38399,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a17-5g-6gb-ram-128gb-rom-black-smartphone",
+     "price": 42530,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a17-5g-6gb-ram-128gb-rom-gray-smartphone",
+     "price": 42530,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a17-5g-6gb-ram-128gb-rom-blue-smartphone",
+     "price": 42530,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -632,6 +709,61 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/samsung-galaxy-a57-5g-12gb-256gb",
+     "price": 83199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/samsung-galaxy-a57-5g-8gb-256gb",
+     "price": 75099,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a57-5g-8gb-ram-256gb-rom-gray-smartphone",
+     "price": 85065,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a57-5g-12gb-ram-256gb-rom-navy-smartphone",
+     "price": 93785,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a57-5g-8gb-ram-256gb-rom-navy-smartphone",
+     "price": 85065,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1106,6 +1238,17 @@
      "condition": "unofficial",
      "region": "Global",
      "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/redmi-note-17-pro-5g",
+     "price": 52799,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -1704,6 +1847,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-21"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/vivo-y31d-8gb-256gb",
+     "price": 34999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2169,6 +2323,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/oneplus-nord-ce-4-lite-5g",
+     "price": 23199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2782,6 +2947,39 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/honor-x5c",
+     "price": 15999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/honor-x5c-4gb-ram-64gb-rom-ocean-cyan-smartphone",
+     "price": 19140,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/honor-x5c-4gb-ram-64gb-rom-midnight-black-smartphone",
+     "price": 19140,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -2863,6 +3061,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/honor-x5c-plus",
+     "price": 19899,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/honor-x5c-plus-4gb-ram-128gb-rom-ocean-cyan-smartphone",
+     "price": 18499,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3009,6 +3229,39 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/honor-x6c-6gb-256gb",
+     "price": 22499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/honor-x6c",
+     "price": 21550,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/honor-x6c-6gb128gb-smartphone",
+     "price": 14999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3101,6 +3354,39 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/honor-x6e",
+     "price": 22999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/honor-x6e-4gb-ram-128gb-rom-sunrise-gold-smartphone-dual-sim",
+     "price": 25520,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/honor-x6e-4gb-ram-128gb-rom-midnight-black-dual-sim",
+     "price": 25520,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3267,6 +3553,39 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/honor-x7d",
+     "price": 27399,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/honor-x7d-8gb-128gb",
+     "price": 24999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/honor-x7d-smartphone",
+     "price": 22999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3350,6 +3669,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/honor-x7e-6-128-gb",
+     "price": 24999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3455,6 +3785,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/honor-x8d",
+     "price": 36890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/honor-x8d-8gb-ram-256gb-rom-light-blue-physical-sim",
+     "price": 40405,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -3787,6 +4139,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Onix Computer",
+     "url": "https://www.onixbd.com/honor-400-12-256-gb-smartphone",
+     "price": 56999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4053,6 +4416,28 @@
      "condition": "unofficial",
      "region": "int",
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/honor-600",
+     "price": 62790,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/honor-600-12gb-256gb",
+     "price": 67690,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4256,6 +4641,61 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-spark-go-3-4-64gb",
+     "price": 14999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-spark-go-3",
+     "price": 15699,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tecno-spark-go-3-4gb-ram-64gb-rom-titanium-grey-smartphone",
+     "price": 18070,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tecno-spark-go-3-4gb-ram-64gb-rom-ink-black-smartphone",
+     "price": 19140,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tecno-spark-go-3-4gb-ram-64gb-rom-galaxy-blue-smartphone",
+     "price": 19140,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4371,6 +4811,50 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-spark-50c",
+     "price": 21399,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-spark-50c-4-128gb",
+     "price": 23299,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tecno-spark-50c-4gb-ram-128gb-rom-eclipse-black-dual-sim",
+     "price": 25520,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tecno-spark-50c-4gb-ram-128gb-rom-basalt-titanium-smartphone",
+     "price": 25520,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4468,6 +4952,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-spark-50",
+     "price": 18499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-spark-50-6gb-128gb",
+     "price": 28499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4634,6 +5140,83 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-spark-50-pro-6gb-128gb",
+     "price": 25599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-spark-50-pro-8gb-128gb",
+     "price": 29399,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-spark-50-pro",
+     "price": 21999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tecno-spark-50-pro-4gb-ram-128gb-rom-grey-smartphone",
+     "price": 26580,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tecno-spark-50-pro-8gb-ram-128gb-rom-grey-smartphone",
+     "price": 32955,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tecno-spark-50-pro-4gb-ram-128gb-rom-ink-black-smartphone",
+     "price": 26580,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tecno-spark-50-pro-8gb-ram-128gb-rom-ink-black-smartphone",
+     "price": 32955,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4739,6 +5322,50 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-camon-50-8gb-256gb",
+     "price": 37399,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-camon-50",
+     "price": 33599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tecno-camon-50-8gb-ram-128gb-rom-nebula-titanium-smartphone",
+     "price": 34999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/tecno-camon-50-8gb-ram-128gb-rom-moonshadow-black-smartphone",
+     "price": 37210,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4851,6 +5478,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-pova-curve-2-5g-8gb-256gb",
+     "price": 35999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-pova-curve-2-5g",
+     "price": 34099,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -4977,6 +5626,28 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-camon-air-8-256gb",
+     "price": 48499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-camon-air",
+     "price": 43599,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -5033,6 +5704,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-26"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/tecno-camon-slim-5g",
+     "price": 58199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -6711,6 +7393,17 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-s26-exynos-12gb-ram-256gb-violet-smartphone",
+     "price": 140995,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "popular": true
@@ -7052,6 +7745,39 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-s26-ultra-12gb-ram-256gb-rom-black-smartphone",
+     "price": 215845,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-s26-ultra-12gb-ram-512gb-rom-blue-smartphone",
+     "price": 247215,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-s26-ultra-12gb-ram-512gb-rom-black-smartphone",
+     "price": 247215,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "popular": true
@@ -7569,6 +8295,61 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/samsung-galaxy-a37-5g-8gb-256gb",
+     "price": 65099,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a37-5g-8gb-ram-128gb-rom-lavender-smartphone",
+     "price": 64325,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a37-5g-8gb-ram-128gb-rom-graygreen-smartphone",
+     "price": 64325,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a37-5g-8gb-ram-128gb-rom-charcoal-smartphone",
+     "price": 64325,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a37-5g-8gb-ram-256gb-rom-charcoal-smartphone",
+     "price": 73365,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "popular": true
@@ -7743,6 +8524,83 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/samsung-galaxy-a27-5g-8gb-128gb",
+     "price": 50799,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/samsung-galaxy-a27-5g",
+     "price": 46799,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a27-5g-6gb-ram-128gb-rom-green-smartphone",
+     "price": 51890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a27-5g-8gb-ram-128gb-rom-black-dual-sim",
+     "price": 56350,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a27-5g-6gb-ram-128gb-rom-black-dual-sim",
+     "price": 51890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "6GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a27-5g-6gb-ram-128gb-rom-pink-smartphone",
+     "price": 51890,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 128GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/samsung-galaxy-a27-5g-8gb-ram-128gb-rom-green-smartphone",
+     "price": 56350,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "popular": true
@@ -8083,6 +8941,17 @@
      "condition": "unofficial",
      "region": null,
      "checkedAt": "2026-10-27"
+    },
+    {
+     "variant": "256GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/xiaomi-17t",
+     "price": 75199,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ],
    "popular": true
@@ -11042,6 +11911,94 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/vivo-y05-4gb-128gb",
+     "price": 20099,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/vivo-y05",
+     "price": 16999,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vivo-y05-4gb-ram-64gb-rom-haze-blue-smartphone-physical-sim",
+     "price": 20735,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vivo-y05-4gb-ram-128gb-rom-haze-blue-smartphone-physical-sim",
+     "price": 23395,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vivo-y05-4gb-ram-64gb-rom-voyage-black-smartphone-dual-physical-sim",
+     "price": 20735,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vivo-y05-4gb-ram-128gb-rom-voyage-black-smartphone-dual-sim",
+     "price": 23395,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vivo-y05-4gb-ram-128gb-rom-summit-platinum-dual-sim",
+     "price": 23395,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vivo-y05-4gb-ram-64gb-rom-summit-platinum-dual-sim",
+     "price": 20735,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },
@@ -11160,6 +12117,39 @@
      "condition": "official",
      "region": null,
      "checkedAt": "2026-10-31"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Electronics Bangladesh",
+     "url": "https://electronicsbangladesh.com/product/vivo-y05e",
+     "price": 16299,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vivo-y05e-4gb-ram-64gb-rom-crest-teal-physical-sim",
+     "price": 18610,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "4GB / 64GB",
+     "site": "Smart Deal",
+     "url": "https://smartdeal.com.bd/product/vivo-y05e-4gb-ram-64gb-rom-grand-black-physical-sim",
+     "price": 18610,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
     }
    ]
   },

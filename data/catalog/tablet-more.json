@@ -1797,6 +1797,39 @@
           "condition": "unofficial",
           "region": null,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 128GB Wi-Fi",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/samsung-galaxy-tab-s10-fe-wi-fi-8gb-ram-128gb-gray-tablet",
+          "price": 55290,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "8GB / 128GB Wi-Fi",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/samsung-galaxy-tab-s10-fe-wi-fi-8gb-ram-128gb-silver-tablet",
+          "price": 57420,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "8GB / 128GB Wi-Fi",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/samsung-galaxy-tab-s10-fe-wi-fi-8gb-ram-128gb-blue-tablet",
+          "price": 57420,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -4415,6 +4448,72 @@
           "condition": "unofficial",
           "region": null,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 64GB Wi-Fi",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/samsung-galaxy-tab-a11-wifi",
+          "price": 18899,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "4GB / 64GB Wi-Fi",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/samsung-galaxy-tab-a11-wi-fi-4gb-ram-64gb-rom-87-gray-tablet",
+          "price": 21799,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "8GB / 128GB Wi-Fi + Cellular",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/samsung-galaxy-tab-a11-lte-8gb-ram-128gb-rom-silver-tablet",
+          "price": 24799,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "8GB / 128GB Wi-Fi + Cellular",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/samsung-galaxy-tab-a11-lte-8gb-ram-128gb-rom-87-gray-tablet",
+          "price": 28175,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "4GB / 64GB Wi-Fi",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/samsung-galaxy-tab-a11-wi-fi-4gb-ram-64gb-rom-silver-tablet",
+          "price": 21799,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "4GB / 64GB Wi-Fi",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/samsung-galaxy-tab-a11-wi-fi-4gb-ram-64gb-rom-87-gray-tablet-2",
+          "price": 21799,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -5150,6 +5249,17 @@
           "condition": "official",
           "region": null,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "4GB / 128GB Wi-Fi",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/xiaomi-redmi-pad-2-wi-fi-4gb-ram-128gb-rom-97-tablet-silver",
+          "price": 21999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -5318,6 +5428,28 @@
           "condition": "official",
           "region": null,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "16GB / 512GB Wi-Fi",
+          "site": "Umrelo",
+          "url": "https://umrelo.com.bd/product/oneplus-pad-3-16gb-512-gb/",
+          "price": 69990,
+          "oldPrice": 79990,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
+        },
+        {
+          "variant": "12GB / 256GB Wi-Fi",
+          "site": "Umrelo",
+          "url": "https://umrelo.com.bd/product/oneplus-pad-3-12-gb-256-gb/",
+          "price": 66990,
+          "oldPrice": 73990,
+          "inStock": false,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -5493,6 +5625,17 @@
           "condition": "unofficial",
           "region": null,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "6GB / 128GB Wi-Fi",
+          "site": "Smart Deal",
+          "url": "https://smartdeal.com.bd/product/oneplus-pad-lite-wi-fi-6gb-ram-128gb-rom-11-inch-blue-tablet",
+          "price": 25520,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -5898,6 +6041,17 @@
           "condition": "unofficial",
           "region": null,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "variant": "8GB / 256GB Wi-Fi",
+          "site": "Electronics Bangladesh",
+          "url": "https://electronicsbangladesh.com/product/honor-pad-10",
+          "price": 36190,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "official",
+          "region": null,
+          "checkedAt": "2026-11-12"
         }
       ]
     },
