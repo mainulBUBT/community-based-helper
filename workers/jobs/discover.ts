@@ -4,12 +4,12 @@ import { judge } from "../lib/judge";
 import { findProducts, MULTI_MODEL, sameSpec, type CatalogProduct, type CatalogVariant } from "../lib/match";
 import { pool } from "../lib/pool";
 import { isOpened, place, single, type PageOffer } from "../lib/variants";
-import { loadCatalog, markDiscovered, type CatalogEntry } from "../services/catalog";
+import { loadCatalog, markDiscovered, requestedAfter, type CatalogEntry } from "../services/catalog";
 import { offerSlots, saveProductImage, slot, upsertOffer, variantPrices, type KnownPrice } from "../services/offers";
 import { decisionExamples, enqueue, reviewedUrls } from "../services/review";
-import { sellersByStore, type SellerRef } from "../services/sellers";
+import { markStoreDiscovered, sellersByStore, type SellerRef } from "../services/sellers";
 import { shopOffers } from "../services/shop";
-import { storeListings } from "../stores/listings";
+import { handledListings, saveHandled, storeListings } from "../stores/listings";
 import { readPage } from "../stores/page";
 import { conditionOf, stores } from "../stores";
 import type { Listing, Store } from "../stores/types";
@@ -238,14 +238,16 @@ export async function sellerStores(): Promise<{ store: Store; seller: SellerRef 
   });
 }
 
-// শুধু নতুন বা ভার্সন বদলানো পণ্য কোন দোকানে আছে তা খোঁজা হয়; আগে বসে যাওয়া পণ্যের দাম `prices` job এ ওই লিংকেই হালনাগাদ হয়।
-// নতুন দোকান (এখনো একটাও দাম নেই): পুরো ক্যাটালগ খোঁজা হয়। খোঁজার মতো কিছু না থাকলে দোকানের তালিকা আনাই হয় না
+// শুধু এই দোকানের শেষ খোঁজার পরে যোগ বা ভার্সন বদলানো পণ্য খোঁজা হয়; আগে বসে যাওয়া পণ্যের দাম `prices` job এ ওই লিংকেই হালনাগাদ হয়।
+// নতুন দোকান (এখনো একটাও দাম নেই): পুরো ক্যাটালগ খোঁজা হয়। খোঁজার মতো কিছু না থাকলে দোকানের তালিকা আনাই হয় না।
+// সময়ে শেষ না হলে পরের run আগের পড়া পাতা বাদ দিয়ে এগোয়; শেষ হলে তবেই দোকানের চিহ্ন
 export async function discoverStore(store: Store, seller: SellerRef, since?: string): Promise<StoreResult> {
+  const startedAt = new Date().toISOString();
   const result: StoreResult = { store: store.id, added: 0, review: 0, odd: 0, failed: 0, notes: [], finished: true, blocked: false, found: [] };
   const catalog = await loadCatalog();
   if (catalog.length === 0) return result;
   // since দিলে (লোকাল রানার): GitHub এ আটকানো দোকান "খোঁজা হয়েছে" চিহ্নিত পণ্যও এখানে খোঁজা হয়, তাই চিহ্ন নয়, সময় ধরে: since এর পরে যোগ বা বদলানো পণ্য
-  const pending = since ? catalog.filter((p) => p.requestedAt > since) : catalog.filter((p) => p.pending);
+  const pending = since ? catalog.filter((p) => p.requestedAt > since) : catalog.filter((p) => requestedAfter(p, seller.discoveredAt));
   const fresh = new Set(pending.map((p) => p.id));
   const { slots, urls: known } = await shopOffers(seller.id);
   const targets = known.size === 0 && !since ? catalog : pending;
@@ -256,7 +258,13 @@ export async function discoverStore(store: Store, seller: SellerRef, since?: str
   const shop: Shop = { store, seller, catalog, asked: new Set(), slots, official, prices: await variantPrices(), tally: result };
   // সময়-সীমা শুধু পাতা প্রক্রিয়ায়; ধীর দোকানের তালিকা আনা (২৫ মিনিটও লাগে) এর ভেতরে পড়লে মেলা পণ্য প্রক্রিয়ার সময়ই থাকত না
   let outOfTime = () => false;
+  let failed = false;
   const before = new Set(slots);
+  const handled = since ? new Map<string, string>() : await handledListings(store);
+  const read = (url: string, products: CatalogEntry[]) => {
+    const at = handled.get(url);
+    return !!at && products.filter((p) => wanted.has(p.id)).every((p) => Date.parse(p.requestedAt) < Date.parse(at));
+  };
 
   try {
     const fetched = await storeListings(store, targets, catalog, false);
@@ -264,7 +272,7 @@ export async function discoverStore(store: Store, seller: SellerRef, since?: str
     const listings = fetched.flatMap((listing) => {
       const products = reviewed.has(listing.url) ? [] : findProducts(listing.title, catalog);
       const done = known.has(listing.url) && products.every((p) => !fresh.has(p.id));
-      return products.some((p) => wanted.has(p.id)) && !done ? [{ listing, products }] : [];
+      return products.some((p) => wanted.has(p.id)) && !done && !read(listing.url, products) ? [{ listing, products }] : [];
     });
     await pool(
       listings,
@@ -272,6 +280,9 @@ export async function discoverStore(store: Store, seller: SellerRef, since?: str
       async ({ listing, products }) => {
         try {
           await handle(shop, listing, products, (p) => wanted.has(p.id));
+          if (since) return;
+          handled.set(listing.url, startedAt);
+          await saveHandled(store, handled);
         } catch (error) {
           if (error instanceof StoreBlocked) throw error;
           if (!(error instanceof NotFound) && !(error instanceof Disallowed)) result.failed++;
@@ -281,6 +292,7 @@ export async function discoverStore(store: Store, seller: SellerRef, since?: str
     );
   } catch (error) {
     result.blocked = error instanceof StoreBlocked;
+    failed = !result.blocked;
     result.notes.push(result.blocked ? `${store.name}: blocked (${message(error)})` : `${store.name}: ${message(error)}`);
   }
   result.found = [...slots].filter((key) => !before.has(key)).map((key) => key.split("|")[0]);
@@ -288,10 +300,13 @@ export async function discoverStore(store: Store, seller: SellerRef, since?: str
     result.finished = false;
     result.notes.push(`${store.name}: ${bn(STORE_MINUTES)} মিনিটে শেষ হয়নি, বাকিটা পরের বার`);
   }
+  // আটকানো দোকানও শেষ ধরা হয়: বারবার চালালে বদলায় না
+  if (!since && result.finished && !failed) await markStoreDiscovered(seller.id, startedAt);
   return result;
 }
 
-// সব দোকানের ফল এক বার্তায়; কোনো দোকান সময়ে শেষ না হলে বা ফল না এলে নতুন পণ্য পরের run এ আবার খোঁজা হয়
+// সব দোকানের ফল এক বার্তায়। পণ্যের চিহ্ন অ্যাডমিন আর search_done এর জন্য; কোন দোকান আবার চলবে তা দোকানের নিজের চিহ্ন ঠিক করে।
+// শুধু সময়ে শেষ না হওয়া দোকানের নোট ব্যর্থতা নয়
 export async function summarize(results: StoreResult[], startedAt: string, expected: number): Promise<string> {
   const catalog = await loadCatalog();
   if (catalog.length === 0) return "ক্যাটালগে কোনো পণ্য নেই";
@@ -299,10 +314,10 @@ export async function summarize(results: StoreResult[], startedAt: string, expec
   const notes = results.flatMap((r) => r.notes);
   const sellers = await sellersByStore(stores);
   notes.push(...stores.filter((s) => !sellers.has(s.id)).map((s) => `${s.name}: বিক্রেতা তালিকায় নেই`));
-  if (total("added") + total("review") === 0 && results.length > 0 && results.every((r) => r.notes.length > 0)) throw new Error(notes.join("; "));
+  if (total("added") + total("review") === 0 && results.length > 0 && results.every((r) => r.finished && r.notes.length > 0)) throw new Error(notes.join("; "));
 
   const pending = catalog.filter((p) => p.pending);
-  if (results.length === expected && results.every((r) => r.finished)) await markDiscovered(pending.map((p) => p.id), startedAt);
+  if (results.length === expected) await markDiscovered(pending.map((p) => p.id), startedAt);
   const offered = new Set([...[...(await offerSlots())].map((key) => key.split("|")[0]), ...results.flatMap((r) => r.found)]);
   const missing = pending.filter((p) => !p.variants.some((v) => offered.has(v.id))).map((p) => p.name);
   const parts = [count(total("added"), "নতুন দাম"), `${bn(total("review"))}টা যাচাইয়ে`];

@@ -7,16 +7,22 @@ const bare = (url: string) => new URL(url).host.replace(/^www\./, "");
 export interface SellerRef {
   id: string;
   name: string;
+  discoveredAt: string | null;
 }
 
 export async function sellersByStore(stores: Store[]): Promise<Map<string, SellerRef>> {
-  const rows = await must(db().from("sellers").select("id, name, website").eq("active", true).not("website", "is", null));
+  const rows = await must(db().from("sellers").select("id, name, website, discovered_at").eq("active", true).not("website", "is", null));
   const map = new Map<string, SellerRef>();
   for (const store of stores) {
-    const row = (rows as { id: string; name: string; website: string }[]).find((r) => bare(r.website) === bare(store.origin));
-    if (row) map.set(store.id, { id: row.id, name: row.name });
+    const row = (rows as { id: string; name: string; website: string; discovered_at: string | null }[]).find((r) => bare(r.website) === bare(store.origin));
+    if (row) map.set(store.id, { id: row.id, name: row.name, discoveredAt: row.discovered_at });
   }
   return map;
+}
+
+// দোকানের run শুরুর সময়; এর পরে চাওয়া পণ্যই পরের বার এই দোকানে খোঁজা হয়
+export async function markStoreDiscovered(sellerId: string, startedAt: string) {
+  await must(db().from("sellers").update({ discovered_at: startedAt }).eq("id", sellerId));
 }
 
 export type DeliverySource = "page" | "ai";

@@ -1,8 +1,7 @@
 import { appendFile, mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { requireEnv } from "../lib/env";
-import { loadCatalog } from "../services/catalog";
-import { shopOffers } from "../services/shop";
+import { loadCatalog, requestedAfter } from "../services/catalog";
 import { isLocalUrl } from "../stores/local";
 import { discoverStore, sellerStores, summarize, type StoreResult } from "./discover";
 import { finishJob, startJob, type JobRun } from "./run";
@@ -21,11 +20,10 @@ async function plan() {
   const run = await startJob("discover");
   // ঘরের IP থেকে পড়ার দোকান GitHub এ নয়; এদের খোঁজে local_discover
   const sellers = run ? (await sellerStores()).filter(({ store }) => !isLocalUrl(store.origin)) : [];
-  // নতুন পণ্য না থাকলে শুধু সেই দোকান, যার এখনো একটাও দাম নেই; বাকি দোকানের job চালু করাই হয় না
-  const pending = run ? (await loadCatalog()).some((p) => p.pending) : false;
-  const active = pending
-    ? sellers
-    : (await Promise.all(sellers.map(async (pair) => ((await shopOffers(pair.seller.id)).urls.size === 0 ? pair : null)))).filter((pair) => pair !== null);
+  // শুধু সেই দোকান, যার শেষ খোঁজার পরে কোনো পণ্য চাওয়া হয়েছে; নতুন দোকান কখনো খোঁজা হয়নি বলে নিজেই আসে।
+  // আটকানো দোকানও শেষ ধরা হয়, তাই একটাও দাম না পেলেও প্রতি run এ আসে না
+  const catalog = run ? await loadCatalog() : [];
+  const active = sellers.filter(({ seller }) => catalog.some((p) => requestedAfter(p, seller.discoveredAt)));
   await output({ run: run ? JSON.stringify(run) : "", stores: JSON.stringify(active.map(({ store }) => store.id)) });
 }
 

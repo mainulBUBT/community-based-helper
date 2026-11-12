@@ -32,6 +32,9 @@ export async function loadCatalog(): Promise<CatalogEntry[]> {
   }));
 }
 
+// দোকানের শেষ খোঁজা (`sellers.discovered_at`) এর পরে চাওয়া পণ্য; কখনো না খুঁজে থাকলে সব
+export const requestedAfter = (product: CatalogEntry, at: string | null) => !at || Date.parse(product.requestedAt) > Date.parse(at);
+
 // run শুরুর সময় বসে, তাই run চলাকালীন যোগ হওয়া ভার্সন পরের বারও খোঁজা হয়
 export async function markDiscovered(productIds: string[], startedAt: string) {
   for (let i = 0; i < productIds.length; i += 200) {
