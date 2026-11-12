@@ -12341,6 +12341,212 @@
      "checkedAt": "2026-10-31"
     }
    ]
+  },
+  {
+   "brand": "Honor",
+   "name": "200 5G",
+   "releaseYear": 2024,
+   "variants": [
+    {
+     "label": "8GB / 256GB",
+     "attributes": {
+      "ram": "8GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 256GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "12GB / 512GB",
+     "attributes": {
+      "ram": "12GB",
+      "storage": "512GB"
+     },
+     "officialPrice": null
+    },
+    {
+     "label": "16GB / 256GB",
+     "attributes": {
+      "ram": "16GB",
+      "storage": "256GB"
+     },
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Black",
+    "Moonlight White",
+    "Emerald Green",
+    "Coral Pink"
+   ],
+   "images": [
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Honor-200-5G-6089.png",
+    "https://dazzle.sgp1.cdn.digitaloceanspaces.com/72517/Honor-200-5G-Moonlight-White-price-in-Bangladesh-(3).jpg"
+   ],
+   "specsSource": "https://www.mobiledokan.com/mobile/honor-200",
+   "offers": [
+    {
+     "variant": "8GB / 256GB",
+     "site": "Rio International",
+     "url": "https://riointernational.com.bd/product/honor-200-5g",
+     "price": 31499,
+     "oldPrice": 40000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "8GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/honor-200-5g",
+     "price": 32990,
+     "oldPrice": 45000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "India",
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Rio International",
+     "url": "https://riointernational.com.bd/product/honor-200-5g",
+     "price": 34999,
+     "oldPrice": 38000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Arafa Telecom",
+     "url": "https://arafatelecom.com/product/honor-200-12-256g-global/",
+     "price": 34990,
+     "oldPrice": 39999,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/honor-200-5g",
+     "price": 39490,
+     "oldPrice": 41488,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-200-5g",
+     "price": 42500,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "Global",
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 256GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-200-5g-12gb-256gb",
+     "price": 37999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/honor-200-5g",
+     "price": 40990,
+     "oldPrice": 45990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/honor-200",
+     "price": 41499,
+     "oldPrice": 44000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Rio International",
+     "url": "https://riointernational.com.bd/product/honor-200-5g",
+     "price": 42000,
+     "oldPrice": 48000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/honor-200-5g",
+     "price": 45499,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "12GB / 512GB",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/honor-200",
+     "price": 40999,
+     "oldPrice": null,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "16GB / 256GB",
+     "site": "Dazzle",
+     "url": "https://dazzle.com.bd/product/honor-200-5g",
+     "price": 32990,
+     "oldPrice": 39990,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "16GB / 256GB",
+     "site": "Rio International",
+     "url": "https://riointernational.com.bd/product/honor-200-5g",
+     "price": 32999,
+     "oldPrice": 45000,
+     "inStock": false,
+     "condition": "unofficial",
+     "region": "China",
+     "checkedAt": "2026-11-12"
+    }
+   ]
   }
  ]
 }

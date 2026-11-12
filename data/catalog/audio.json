@@ -5396,6 +5396,232 @@
      "checkedAt": "2026-11-12"
     }
    ]
+  },
+  {
+   "brand": "Anker",
+   "name": "Soundcore R60i NC",
+   "category": "earbuds",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Black",
+    "White",
+    "Blue"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earbuds/anker/soundcore-r60i-nc/soundcore-r60i-nc-01-1200x630.webp",
+    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/3350/Anker_Soundcore_R60i_-_Black.webp"
+   ],
+   "specsSource": "https://www.startech.com.bd/anker-soundcore-r60i-nc",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Diamu",
+     "url": "https://diamu.com.bd/product/anker-soundcore-r60i-earbuds/",
+     "price": 2940,
+     "oldPrice": 3200,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Skyland",
+     "url": "https://www.skyland.com.bd/anker-soundcore-r60i-nc-earbuds",
+     "price": 2950,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/anker-soundcore-r60i-nc",
+     "price": 2999,
+     "oldPrice": 3599,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Sumash Tech",
+     "url": "https://www.sumashtech.com/product/anker-soundcore-r60i-nc-earbuds",
+     "price": 2999,
+     "oldPrice": 3990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/anker-soundcore-r60i-nc-tws-earbuds",
+     "price": 2999,
+     "oldPrice": 3450,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Dolbear",
+     "url": "https://dolbear.com.bd/products/soundcore-r60i",
+     "price": 3149,
+     "oldPrice": 3990,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/anker-soundcore-r60i-nc-earbuds/",
+     "price": 3190,
+     "oldPrice": 3690,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Salextra",
+     "url": "https://www.salextra.com.bd/product/anker-soundcore-r60i-nc-tws-earbuds",
+     "price": 3349,
+     "oldPrice": 4490,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget & Gear",
+     "url": "https://gadgetandgear.com/product/anker-soundcore-r60i-nc-earbuds",
+     "price": 3449,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Motion View",
+     "url": "https://motionview.com.bd/product/anker-soundcore-r60i-anc-tws",
+     "price": 3999,
+     "oldPrice": 4499,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    }
+   ]
+  },
+  {
+   "brand": "QCY",
+   "name": "MeloBuds N20 Pro",
+   "category": "earbuds",
+   "releaseYear": 2025,
+   "variants": [
+    {
+     "label": "Standard",
+     "attributes": {},
+     "officialPrice": null
+    }
+   ],
+   "colors": [
+    "Black",
+    "White",
+    "Purple"
+   ],
+   "images": [
+    "https://www.startech.com.bd/image/cache/catalog/earbuds/qcy/melobuds-n20/melobuds-n20-white-02-1200x630.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/QCY-MeloBuds-N20-Pro-Earbuds-9271.png"
+   ],
+   "specsSource": "https://www.startech.com.bd/qcy-melobuds-n20-pro",
+   "offers": [
+    {
+     "variant": "Standard",
+     "site": "Rio International",
+     "url": "https://riointernational.com.bd/product/qcy-melobuds-n20-pro-earbuds",
+     "price": 2450,
+     "oldPrice": 2899,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Star Tech",
+     "url": "https://www.startech.com.bd/qcy-melobuds-n20-pro",
+     "price": 2580,
+     "oldPrice": 2899,
+     "inStock": true,
+     "condition": "official",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Salextra",
+     "url": "https://www.salextra.com.bd/product/qcy-melobuds-n20-pro-earbuds-50db-hybrid-anc-ht20s",
+     "price": 2649,
+     "oldPrice": 2850,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Apple Gadgets",
+     "url": "https://www.applegadgetsbd.com/product/qcy-melobuds-n20-pro-earbuds",
+     "price": 2699,
+     "oldPrice": 2850,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Gadget Breeze",
+     "url": "https://gadgetbreeze.com.bd/product/qcy-melobuds-n20-pro-earbuds/",
+     "price": 2749,
+     "oldPrice": null,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    },
+    {
+     "variant": "Standard",
+     "site": "Shei Tech",
+     "url": "https://sheitech.com.bd/product/qcy-melobuds-n20-pro-hybrid-anc-earbuds/",
+     "price": 2750,
+     "oldPrice": 3000,
+     "inStock": true,
+     "condition": "unofficial",
+     "region": null,
+     "checkedAt": "2026-11-12"
+    }
+   ]
   }
  ]
 }
