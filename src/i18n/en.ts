@@ -318,7 +318,13 @@ export const en: Messages = {
     contact: { title: "Contact", description: "Ask a question, report a wrong price, or request a listing for your shop." },
     sellers: { title: "Trusted Shops & Sellers in Bangladesh", description: "Online stores, market shops and Facebook group sellers in Bangladesh: phone numbers, websites, and which ones we have verified." },
     saved: { title: "Saved", description: "Products you saved to compare later." },
-    productTitles: (name, model, _bnModel, month) => [
+    productTitles: (name, model, _bnModel, month, price) => [
+      ...(price
+        ? [
+            `${name} Price in Bangladesh: From ${price} (${month})`,
+            `${name} Price in Bangladesh: From ${price}`,
+          ]
+        : []),
       `${name} Price in Bangladesh (${month}) - Compare Shop Deals`,
       `${name} Price in Bangladesh (${month})`,
       `${model} Price in Bangladesh (${month})`,

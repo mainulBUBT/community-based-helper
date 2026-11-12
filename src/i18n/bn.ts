@@ -317,7 +317,13 @@ export const bn = {
     sellers: { title: "বাংলাদেশের বিশ্বস্ত দোকান ও বিক্রেতা", description: "বাংলাদেশের অনলাইন দোকান, মার্কেটের দোকান আর ফেসবুক গ্রুপের বিক্রেতা: ফোন নম্বর, ওয়েবসাইট, আর কারা যাচাই করা।" },
     saved: { title: "সেভ করা", description: "পরে মিলিয়ে দেখার জন্য সেভ করা পণ্য।" },
     // প্রথম যেটা Google এর জায়গায় ধরে সেটাই; মাস ও আকর্ষক কথা থাকলে খোঁজার ফলে লোকে বেশি চাপে
-    productTitles: (name: string, model: string, bnModel: string | null, month: string) => [
+    productTitles: (name: string, model: string, bnModel: string | null, month: string, price: string | null) => [
+      ...(price
+        ? [
+            `${name} এর দাম বাংলাদেশে ${price} থেকে, ${month}`,
+            `${name} এর দাম ${price} থেকে, ${month}`,
+          ]
+        : []),
       ...(bnModel ? [`${name} (${bnModel}) এর দাম বাংলাদেশে, ${month} (সব দোকানের অফার)`] : []),
       `${name} এর দাম বাংলাদেশে, ${month} (সব দোকানের সেরা অফার)`,
       `${name} এর দাম বাংলাদেশে, ${month}`,

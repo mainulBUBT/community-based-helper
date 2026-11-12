@@ -42,7 +42,8 @@ export async function productMetadata(slug: string, lang: Lang): Promise<Metadat
   const bnModel = bnWords.filter((w) => /[\u0980-\u09FF]/.test(w)).length * 2 > bnWords.length ? bnWords.join(" ") : null;
   // দিনে কয়েকবার rebuild হয়, তাই মাস নিজে থেকেই নতুন থাকে
   const month = new Date().toLocaleDateString(lang === "bn" ? "bn-BD" : "en-GB", { month: "long", year: "numeric" });
-  const [title, ...fallbacks] = seo.productTitles(name, product.name, bnModel, month);
+  const lowest = detail.offers[0]?.price;
+  const [title, ...fallbacks] = seo.productTitles(name, product.name, bnModel, month, lowest ? formatTaka(lowest, lang) : null);
   return pageMeta({
     lang,
     path: `/product/${product.slug}/`,
