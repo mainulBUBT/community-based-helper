@@ -3,6 +3,7 @@ import { aiRead, aiReadNote } from "../lib/ai-page";
 import { jinaRead } from "../lib/jina";
 import { Disallowed, NotFound, StoreBlocked, message } from "../lib/errors";
 import { groupBy, pool } from "../lib/pool";
+import { sleep } from "../lib/sleep";
 import { candidates, single } from "../lib/variants";
 import type { Page } from "../stores/page";
 import { applyApproved } from "../services/apply-approved";
@@ -43,10 +44,11 @@ interface Tally {
 }
 
 // run শুরু থেকে গোনা, workflow timeout ৪৫ মিনিটের ভেতরে। ধীর দোকান (`pace`) নিজের পুরো তালিকা শেষ করতে পারে না,
-// তাই ধাপ ভাগ করা না থাকলে ফলব্যাক আর AI যাচাই কোনোদিন সময় পায় না
+// তাই ধাপ ভাগ করা না থাকলে ফলব্যাক আর AI যাচাই কোনোদিন সময় পায় না। ফলব্যাক সরাসরি পড়ার সাথেই চলে
 const DIRECT_MINUTES = 15;
-const FALLBACK_MINUTES = 32;
-const TOTAL_MINUTES = 38;
+const FALLBACK_MINUTES = 22;
+const TOTAL_MINUTES = 28;
+const QUEUE_WAIT_MS = 1000;
 
 const label = (row: OfferRow) => `${row.variants?.products?.name ?? ""} ${row.variants?.label ?? ""}`.trim();
 
@@ -107,7 +109,8 @@ export async function refreshPrices(): Promise<string> {
 
   const pages = [...groupBy(rows, (row) => row.url).values()];
   const perStore = groupBy(pages, (group) => storeFor(group[0].url).id);
-  await Promise.all(
+  let directOver = false;
+  const direct = Promise.all(
     [...perStore.values()].map((groups) =>
       pool(
         groups,
@@ -136,21 +139,33 @@ export async function refreshPrices(): Promise<string> {
         directDone,
       ),
     ),
-  );
+  ).finally(() => {
+    directOver = true;
+  });
 
-  // দোকান GitHub-এর IP আটকালে ফলব্যাক, বাকি সব শেষে একটা একটা করে, যাতে প্রতিটার সীমায় না পড়ে:
+  // দোকান GitHub-এর IP আটকালে ফলব্যাক, সরাসরি পড়ার পাশাপাশি সারি থেকে একটা একটা করে, যাতে প্রতিটার সীমায় না পড়ে:
   // আগে Jina Reader (ওদের সার্ভারের HTML-এ আমাদের নিজের parser), তারপর Gemini-র url_context
   // (Google-এর সার্ভার)। না পড়া গেলে আগের মতো বাদ; সময় ফুরালে পরের বার। পড়া ফলও একই যাচাই আর
   // সীমার ভেতর দিয়ে যায়।
-  for (const group of blocked) {
-    if (fallbackDone()) break;
+  const fallback = async () => {
+    while (!fallbackDone()) {
+      const group = blocked.shift();
+      if (!group) {
+        if (directOver) return;
+        await sleep(QUEUE_WAIT_MS);
+        continue;
+      }
+      await readBlocked(group);
+    }
+  };
+  const readBlocked = async (group: OfferRow[]) => {
     let page = await jinaRead(storeFor(group[0].url), group[0].url);
     const viaJina = !!page;
     if (page) tally.jina += group.length;
     else page = await aiRead(group[0].url);
     if (!page) {
       tally.blocked += group.length;
-      continue;
+      return;
     }
     if (!viaJina) tally.ai += group.length;
     try {
@@ -159,7 +174,8 @@ export async function refreshPrices(): Promise<string> {
       tally.failed += group.length;
       errors.push(message(error));
     }
-  }
+  };
+  await Promise.all([direct, fallback()]);
 
   if (rows.length > 0 && tally.checked === 0) throw new Error(`একটা দামও আনা যায়নি${blockedNote()}; ${errors.slice(0, 3).join("; ")}`);
   // AI যাচাইয়ের আগে, নইলে নতুন কনফিগ "ক্যাটালগে নেই" বলে বাতিল হয়ে যেত
