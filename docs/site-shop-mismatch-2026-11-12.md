@@ -1,6 +1,6 @@
 # সাইট-দোকান ভার্সন-অমিল যাচাই (১২ নভেম্বর ২০২৬)
 
-**সারসংক্ষেপ:** ৮,৫৫৬ published অফার (৬,৯৬৮ লিংক) পড়া হলো; ৬,৬৩৫ লিংক পড়া গেছে, ৩৩৩টা রেট-লিমিট বা ভাঙা লিংকে আটকেছে। সন্দেহের ১০৩টা পাতা আবার খুলে পুরো payload (সব অপশন আর দাম) মিলিয়ে দেখা হয়েছে। আসল ভুল প্রায় **১০০ অফার** (নিচে ভাগ করে), আর **৬৫ জোড়া** দ্বৈত অফার। Dolbear সাইট বদলেছে, তাই **৬৬টা লিংক** ভাঙা। ঠিক করার ব্যাচ: [2026-11-12-site-shop-mismatch.sql](../supabase/batches/2026-11-12-site-shop-mismatch.sql) — ভুল ৯৪ অফার মোছা, Reno15 F-এর ২টা সঠিক পণ্যে সরানো, Redmi Pad 2 Pro Cellular-এর দাম ঠিক, দ্বৈত অফারের ২৯টা বাড়তি কপি মোছা, Dolbear-এর ৬১ লিংক নতুন ঠিকানায় আর ৫টা স্টক নেই। পাতায় official/unofficial আলাদা অপশন ও আলাদা দাম থাকলে (Mobile Buzz) দুটোই রাখা হয়েছে। CeraVe, Laneige, Cetaphil-এর দ্বৈত ভার্সন আর Niacinamide মালিকের সিদ্ধান্তে বাকি।
+**সারসংক্ষেপ:** ৮,৫৫৬ published অফার (৬,৯৬৮ লিংক) পড়া হলো; ৬,৬৩৫ লিংক পড়া গেছে, ৩৩৩টা রেট-লিমিট বা ভাঙা লিংকে আটকেছে। সন্দেহের ১০৩টা পাতা আবার খুলে পুরো payload (সব অপশন আর দাম) মিলিয়ে দেখা হয়েছে। আসল ভুল প্রায় **১০০ অফার** (নিচে ভাগ করে), আর **৬৫ জোড়া** দ্বৈত অফার। Dolbear সাইট বদলেছে, তাই **৬৬টা লিংক** ভাঙা। ঠিক করার ব্যাচ: [2026-11-12-site-shop-mismatch.sql](../supabase/batches/2026-11-12-site-shop-mismatch.sql) — ভুল ৯৮ অফার মোছা (Nord CE4 → Nord 4 আর Redmi Note 17 → Redmi 17-এর ৪টা সহ), Reno15 F-এর ২টা সঠিক পণ্যে সরানো, Redmi Pad 2 Pro Cellular-এর দাম ঠিক, দ্বৈত অফারের ২৯টা বাড়তি কপি মোছা, Dolbear-এর ৬১ লিংক নতুন ঠিকানায় আর ৫টা স্টক নেই। পাতায় official/unofficial আলাদা অপশন ও আলাদা দাম থাকলে (Mobile Buzz) দুটোই রাখা হয়েছে। CeraVe, Laneige, Cetaphil-এর দ্বৈত ভার্সন আর Niacinamide মালিকের সিদ্ধান্তে বাকি।
 
 ইতিমধ্যে কোডে ঠিক হয়েছে (কমিট বাকি):
 - **MacZen parser:** `combinationPrices`-এর `sim` (WiFi / Wi-Fi + Cellular / GPS / GPS+Cellular) বাদ পড়ত, তাই Cellular ভার্সনে Wi-Fi-র দাম বসত। এখন আলাদা অপশন ([parsers.ts](../workers/stores/parsers.ts))।
@@ -80,10 +80,14 @@
 
 CustomMacBD ৯২, OHSOGO ৬৫, iStockBD ৩৬, Ragen ১৪, Splayd ১০, Sneaker Zone ৮ (সবই 429); Computer Village ২৮ (ভাঙা লিংক বা 500)। ধীরে আলাদা করে চালাতে হবে।
 
-## matcher-এ পরে ঠিক করার
+## matcher ঠিক হলো
 
-- "Nord CE5" → Nord 5, "Reno15 F/FS" → Reno15: discover এভাবেই ভুল পণ্যে লিংক বসিয়েছে।
-- ট্যাবলেটের "5g/4g" অপশন Cellular হিসেবে ধরা হয় না।
+- "ce", "f", "fs", "note" এখন মডেল-পার্থক্যের শব্দ: "Nord CE5/CE4" আর Nord 5/4-এ, "Reno15 F/FS" Reno15-এ, "Redmi Note 17" Redmi 17-এ মেলে না। ৬,৪৮৬ পাতার শিরোনামে আগে-পরে মিলিয়ে ১৫টা মিল বদলেছে, সবই আগে ভুল ছিল।
+- ট্যাবলেটের "4g/5g" অপশন Cellular ধরা হয়নি: Arafa Wi-Fi মডেলকেও "4g" লেখে, তাই নিয়ম বানালে ভুল হবে; Redmi Pad 2 Pro-র অফার ব্যাচে হাতে বাঁধা।
+
+## ব্যাচের পরে ১ দোকানে নামা ভার্সন (নিয়ম ১৩, মালিকের সিদ্ধান্ত)
+
+Watch Series 11 46mm GPS + Cellular, Honor Magic8 Pro 12/256, ProBook 440 G11 Ultra 7 8/512, ProBook 460 G11 Ultra 5 125U 8/512, Tab S10 FE 12/256 Cellular, Tab S10 Ultra 12/512 Wi-Fi, Sebamed Clear Face Foam 50ml।
 
 ## আবার চালানো
 

@@ -16,7 +16,8 @@ export type Match =
   | { kind: "sure"; product: CatalogProduct; variant: CatalogVariant }
   | { kind: "ambiguous"; product: CatalogProduct; variants: CatalogVariant[] };
 
-const MODIFIERS = new Set(["pro", "max", "plus", "ultra", "mini", "lite", "fe", "fold", "flip", "edge", "air", "neo", "se", "prime", "power", "turbo", "4g", "5g"]);
+// "Nord CE5" ≠ Nord 5, "Reno15 F" ≠ Reno15, "Redmi Note 15" ≠ Redmi 15
+const MODIFIERS = new Set(["pro", "max", "plus", "ultra", "mini", "lite", "fe", "fold", "flip", "edge", "air", "neo", "se", "prime", "power", "turbo", "4g", "5g", "ce", "f", "fs", "note"]);
 // পণ্যের ধরন বোঝানো শব্দ: লিস্টিংয়ে থাকলে পণ্যটা এই ক্যাটাগরির হতে হবে ("Nord Buds 4" ইয়ারবাড, Nord 4 ফোন নয়)।
 // "monitor", "speaker" নেই: ঘড়ির "Heart Rate Monitor", পিসির "with Monitor", ফোনের "Dual Speaker" এ সঠিক পণ্য বাদ পড়ত
 const AUDIO = ["audio", "earbuds", "headphones"];

@@ -154,6 +154,42 @@ delete from offers where id = 'a12b6d92-30a8-4e72-9c66-e11edbd160a2' and url = '
 delete from offers where id = '885295a7-643a-4650-b818-04be49eb4969' and url = 'https://kryinternational.com/products/oppo-reno15-f-official';
 -- Arafa Telecom | oneplus-nord-5 8GB / 256GB | ৳36999 | পাতা Nord CE5 (একই লিংকে CE5-এ অফার আছে)
 delete from offers where id = 'f4bb801c-c668-4480-91cc-6be29690f753' and url = 'https://arafatelecom.com/product/oneplus-nord-ce5-indian/';
+-- Dazzle | oneplus-nord-4 8GB / 128GB | ৳30990 | পাতা Nord CE4, Nord 4 নয়
+insert into review_queue (kind, status, payload, resolved_at, applied_at)
+select 'match', 'rejected',
+  jsonb_build_object('listing', 'oneplus-nord-ce4', 'seller', s.name, 'price', o.price::text, 'url', o.url,
+    'guess', 'Nord 4 8GB / 128GB', 'reason', 'পাতা Nord CE4, Nord 4 নয়', 'sellerId', o.seller_id, 'variantId', o.variant_id, 'condition', o.condition),
+  now(), now()
+from offers o join sellers s on s.id = o.seller_id
+where o.id = '741d0a37-ad9e-4d1d-9655-e9892a436270' and o.url = 'https://dazzle.com.bd/product/oneplus-nord-ce4';
+delete from offers where id = '741d0a37-ad9e-4d1d-9655-e9892a436270' and url = 'https://dazzle.com.bd/product/oneplus-nord-ce4';
+-- Arafa Telecom | oneplus-nord-4 8GB / 128GB | ৳29800 | পাতা Nord CE4, Nord 4 নয়
+insert into review_queue (kind, status, payload, resolved_at, applied_at)
+select 'match', 'rejected',
+  jsonb_build_object('listing', 'oneplus-nord-ce4', 'seller', s.name, 'price', o.price::text, 'url', o.url,
+    'guess', 'Nord 4 8GB / 128GB', 'reason', 'পাতা Nord CE4, Nord 4 নয়', 'sellerId', o.seller_id, 'variantId', o.variant_id, 'condition', o.condition),
+  now(), now()
+from offers o join sellers s on s.id = o.seller_id
+where o.id = '4f784e88-a2e8-4f31-b692-994318b31c74' and o.url = 'https://arafatelecom.com/product/oneplus-nord-ce4/';
+delete from offers where id = '4f784e88-a2e8-4f31-b692-994318b31c74' and url = 'https://arafatelecom.com/product/oneplus-nord-ce4/';
+-- Sumash Tech | oneplus-nord-4 8GB / 128GB | ৳33999 | পাতা Nord CE4, Nord 4 নয়
+insert into review_queue (kind, status, payload, resolved_at, applied_at)
+select 'match', 'rejected',
+  jsonb_build_object('listing', 'oneplus-nord-ce4', 'seller', s.name, 'price', o.price::text, 'url', o.url,
+    'guess', 'Nord 4 8GB / 128GB', 'reason', 'পাতা Nord CE4, Nord 4 নয়', 'sellerId', o.seller_id, 'variantId', o.variant_id, 'condition', o.condition),
+  now(), now()
+from offers o join sellers s on s.id = o.seller_id
+where o.id = '3154ae03-43d7-48b2-9811-d767494a9a81' and o.url = 'https://www.sumashtech.com/product/oneplus-nord-ce4';
+delete from offers where id = '3154ae03-43d7-48b2-9811-d767494a9a81' and url = 'https://www.sumashtech.com/product/oneplus-nord-ce4';
+-- Mobile Buzz BD | xiaomi-redmi-17 6GB / 128GB | ৳26500 | পাতা Redmi Note 17, Redmi 17 নয়
+insert into review_queue (kind, status, payload, resolved_at, applied_at)
+select 'match', 'rejected',
+  jsonb_build_object('listing', 'xiaomi-redmi-note-17', 'seller', s.name, 'price', o.price::text, 'url', o.url,
+    'guess', 'Redmi 17 6GB / 128GB', 'reason', 'পাতা Redmi Note 17, Redmi 17 নয়', 'sellerId', o.seller_id, 'variantId', o.variant_id, 'condition', o.condition),
+  now(), now()
+from offers o join sellers s on s.id = o.seller_id
+where o.id = '2f39ef7e-c058-4105-9e90-b6ff01b307c2' and o.url = 'https://mobilebuzzbd.com/product/xiaomi-redmi-note-17/';
+delete from offers where id = '2f39ef7e-c058-4105-9e90-b6ff01b307c2' and url = 'https://mobilebuzzbd.com/product/xiaomi-redmi-note-17/';
 
 -- ৩. Wi-Fi/Cellular বা GPS/Cellular: পাতায় এই কানেক্টিভিটির অপশন বা দাম নেই
 -- Arafa Telecom | apple-ipad-11-inch-a16 256GB Wi-Fi + Cellular | ৳54000 | পাতায় Cellular অপশন নেই
