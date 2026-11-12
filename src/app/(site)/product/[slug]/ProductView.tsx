@@ -1,8 +1,8 @@
 "use client";
 
-import { Check, ChevronDown, ChevronRight, Clock, ExternalLink, Globe, Megaphone, Phone, Store, TrendingDown } from "lucide-react";
+import { AlertTriangle, Check, ChevronDown, ChevronRight, Clock, ExternalLink, Globe, Megaphone, Phone, Store, TrendingDown } from "lucide-react";
 import Link from "next/link";
-import { useState, type ReactNode } from "react";
+import { useState, useSyncExternalStore, type ReactNode } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
 import { PageBanner } from "@/components/layout/PageBanner";
 import { AlternativeCard } from "@/components/product/AlternativeCard";
@@ -35,6 +35,10 @@ const imageFor = (images: string[], color?: string) => {
   const slug = color.toLowerCase().replace(/\s+/g, "-");
   return Math.max(0, images.findIndex((src) => src.toLowerCase().includes(slug)));
 };
+
+// লিংকের ?v= ভার্সন — বেক করা HTML এ নেই, ব্রাউজারে hydration এর পরে একবারই পড়ে
+const neverChanges = () => () => {};
+const readUrlVariant = () => (typeof window === "undefined" ? null : new URLSearchParams(window.location.search).get("v"));
 
 function BuyButton({ offer, className = "" }: { offer: OfferView; className?: string }) {
   const { t } = useI18n();
@@ -205,11 +209,29 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   const warranty = info?.warranty !== false;
   const kinds = categoryConditions(info);
   const categoryLabel = category ? (lang === "en" ? category.nameEn : category.name) : categoryName(product.category);
-  const [variantId, setVariantId] = useState(startVariant ?? product.variants[0]?.id);
+  const [pickedId, setPickedId] = useState<string | null>(null);
+  // লিংকে ?v= ভার্সন পাঠালে (যেমন হোমের তুলনা কার্ড) সেই ভার্সনেই পাতা খোলে; ভুল/পুরনো id হলে আগেরটাতেই থাকে
+  const urlVariant = useSyncExternalStore(neverChanges, readUrlVariant, () => null);
+  const variantId =
+    pickedId ??
+    (urlVariant && product.variants.some((x) => x.id === urlVariant) ? urlVariant : startVariant ?? product.variants[0]?.id);
   const variant = product.variants.find((v) => v.id === variantId) ?? product.variants[0];
   const cheaper = alternatives[variant?.id ?? ""] ?? [];
 
   const variantOffers = offers.filter((o) => o.variantId === variant?.id);
+  // একই শপ-লিংক একাধিক ভার্সনে থাকলে দোকানের পাতা নিজের ডিফল্ট (সাধারণত বেস) ভার্সনে খোলে — সতর্কবার্তা দেখাতে হয়
+  const sharedLinks = new Set(
+    [...offers.reduce((map, o) => {
+      const link = o.url ?? o.seller.website;
+      if (link) map.set(link, (map.get(link) ?? new Set<string>()).add(o.variantId));
+      return map;
+    }, new Map<string, Set<string>>())].filter(([, variantIds]) => variantIds.size > 1).map(([link]) => link)
+  );
+  // পাতা যেই ভার্সনে খোলে (সবচেয়ে কম দামের, দোকানগুলোও সাধারণত ওটাতেই ডিফল্ট) সেই সারিতে সতর্কবার্তা লাগে না; বাকিদের শপে কোন ভার্সন বাছতে হবে তা বলা হয়
+  const variantHint =
+    variant && variant.id !== (startVariant ?? product.variants[0]?.id)
+      ? (variant.attributes.storage ?? variant.attributes.capacity ?? variant.attributes.size ?? variant.label)
+      : null;
   const conditions = kinds.filter((c) => variantOffers.some((o) => o.condition === c));
   const [chosen, setChosen] = useState<Condition | "all">("all");
   const condition: Condition | "all" = chosen === "all" || conditions.includes(chosen) ? chosen : "all";
@@ -341,7 +363,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
             <EmptyState icon={Store} title={t.product.noOffers} />
           )}
 
-          {variant && product.variants.length > 1 && <VariantPicker variants={product.variants} current={variant} onPick={setVariantId} priceOf={variantLowest} />}
+          {variant && product.variants.length > 1 && <VariantPicker variants={product.variants} current={variant} onPick={setPickedId} priceOf={variantLowest} />}
 
           {conditions.length > 1 && (
             <fieldset className="flex flex-col">
@@ -414,6 +436,12 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
                   {t.product.compare(num(shown.length))}
                 </a>
               </div>
+              {variantHint && sharedLinks.has(best.url ?? best.seller.website ?? "") && (
+                <span className="flex items-start gap-1.5 text-[13px] font-medium text-gold-text">
+                  <AlertTriangle size={14} className="mt-0.5 shrink-0" aria-hidden="true" />
+                  {t.product.checkVariant(variantHint)}
+                </span>
+              )}
               <span className="flex items-center gap-1.5 text-[13px] text-dim">
                 <Clock size={14} aria-hidden="true" />
                 {t.product.updated(ago(lastChecked))}
@@ -434,7 +462,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
 
       {shown.length > 0 && (
         <Panel title={t.product.allPrices} subtitle={product.variants.length > 1 ? variantName : undefined} id="stores">
-          <OffersTable offers={shown} official={official} warranty={warranty} showCondition={kinds.length > 1} history={history} />
+          <OffersTable offers={shown} official={official} warranty={warranty} showCondition={kinds.length > 1} history={history} sharedLinks={sharedLinks} variantHint={variantHint} />
         </Panel>
       )}
 

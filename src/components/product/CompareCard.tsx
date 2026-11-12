@@ -25,7 +25,8 @@ export function CompareCard({ picks }: { picks: ComparePick[] }) {
   if (!pick) return null;
   const { product, compareAt } = pick.summary;
   const photo = !failed && product.images?.[0];
-  const link = `${prefix}/product/${product.slug}/`;
+  // কার্ডে যেই ভার্সন দেখাই লিংকেও সেটাই পাঠাই — পণ্যের পাতা ওই ভার্সনেই খোলে
+  const link = `${prefix}/product/${product.slug}/?v=${pick.variantId}`;
   const shops = pick.offers.slice(0, SHOWN_SHOPS);
   // "সবচেয়ে কম" শুধু স্টকে থাকা দোকানের মধ্যে; কোথাও স্টক না থাকলে তবেই সব দোকান থেকে (পণ্যের পাতার মতোই)
   const available = shops.filter((offer) => offer.inStock !== false);

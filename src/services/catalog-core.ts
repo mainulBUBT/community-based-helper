@@ -92,6 +92,7 @@ export interface ComparePick {
   offers: OfferView[];
   // এই ভ্যারিয়েন্টে স্টকে থাকা দোকানের সংখ্যা — offers কেটে দিলেও (+N দোকানের হিসাবে) সঠিক থাকে
   sellerTotal: number;
+  variantId: string;
   variantLabel: string;
 }
 
@@ -150,6 +151,7 @@ export function pickComparisons(catalog: Catalog, limit = 6): ComparePick[] {
       summary: summarize(catalog, group.product),
       offers: group.offers.slice(0, 4),
       sellerTotal: group.offers.length,
+      variantId: group.variantId,
       variantLabel:
         group.product.variants.find((v) => v.id === group.variantId)?.label ?? "",
     }))

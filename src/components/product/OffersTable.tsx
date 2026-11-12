@@ -1,6 +1,6 @@
 "use client";
 
-import { Banknote, CalendarClock, ChevronRight, CreditCard, ExternalLink, Gift, Package, Percent, Phone, Tag, Truck, Wallet, X, type LucideIcon } from "lucide-react";
+import { AlertTriangle, Banknote, CalendarClock, ChevronRight, CreditCard, ExternalLink, Gift, Package, Percent, Phone, Tag, Truck, Wallet, X, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { SellerLogo } from "@/components/seller/SellerLogo";
@@ -112,7 +112,7 @@ function InfoLine({ icon: Icon, parts }: { icon: LucideIcon; parts: string[] }) 
   );
 }
 
-function OfferRow({ offer, official, best, warranty, showCondition, inflated }: { offer: OfferView; official: number | null; best: boolean; warranty: boolean; showCondition: boolean; inflated: boolean }) {
+function OfferRow({ offer, official, best, warranty, showCondition, inflated, sharedLink, variantHint }: { offer: OfferView; official: number | null; best: boolean; warranty: boolean; showCondition: boolean; inflated: boolean; sharedLink: boolean; variantHint: string | null }) {
   const { t, ago, lang, prefix } = useI18n();
   const { seller } = offer;
   const link = offer.url ?? seller.website;
@@ -162,6 +162,12 @@ function OfferRow({ offer, official, best, warranty, showCondition, inflated }: 
         </span>
         <InfoLine icon={Truck} parts={deliveryParts} />
         {delivery?.cod && <InfoLine icon={Banknote} parts={[t.product.cod]} />}
+        {sharedLink && variantHint && (
+          <span className="flex items-start gap-1.5 text-xs font-medium text-gold-text">
+            <AlertTriangle size={13} className="mt-0.5 shrink-0" aria-hidden="true" />
+            {t.product.checkVariant(variantHint)}
+          </span>
+        )}
         {!link && seller.phone && <span className="text-[13px] font-semibold text-ink">{seller.phone}</span>}
         {offer.promos.length > 0 && <PromoSheet promos={offer.promos} offer={offer} link={link} />}
         {offer.promos.map((promo) => (
@@ -203,9 +209,13 @@ interface OffersTableProps {
   warranty: boolean;
   showCondition: boolean;
   history: PricePoint[];
+  // এই লিংকগুলো একই পণ্যের একাধিক ভার্সনে ব্যবহৃত — শপ পাতা ভুল ভার্সনে খুলতে পারে
+  sharedLinks: Set<string>;
+  // শপে যে ভার্সন বাছতে হবে (বেস ভার্সনে null — ওই লিংক ঠিক খোলে)
+  variantHint: string | null;
 }
 
-export function OffersTable({ offers, official, warranty, showCondition, history }: OffersTableProps) {
+export function OffersTable({ offers, official, warranty, showCondition, history, sharedLinks, variantHint }: OffersTableProps) {
   // "সবচেয়ে কম" শুধু স্টকে থাকা দোকানের মধ্যে
   const available = offers.filter((offer) => offer.inStock !== false);
   const lowest = available.length ? Math.min(...available.map((offer) => offer.price)) : null;
@@ -220,6 +230,8 @@ export function OffersTable({ offers, official, warranty, showCondition, history
           warranty={warranty}
           showCondition={showCondition}
           inflated={neverCharged(offer, history)}
+          sharedLink={sharedLinks.has(offer.url ?? offer.seller.website ?? "")}
+          variantHint={variantHint}
         />
       ))}
     </ul>

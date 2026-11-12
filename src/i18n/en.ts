@@ -196,6 +196,7 @@ export const en: Messages = {
     rank: (n, total, label) => `Rank ${n} of ${total} in ${label}`,
     compare: (n) => `Compare ${plural(n, "shop")}`,
     goToStore: "Go to shop",
+    checkVariant: (label: string) => `Shop may open another variant — pick ${label} there`,
     sectionsLabel: "On this page",
     sections: { price: "Price", stores: "All shops", cheaper: "Cheaper", specs: "Specs", history: "Price history", about: "About" },
     promoCount: (n) => (n === "1" ? "1 offer" : `${n} offers`),

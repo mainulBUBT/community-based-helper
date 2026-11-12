@@ -194,6 +194,7 @@ export const bn = {
     rank: (n: string, total: string, label: string) => `${label}: ${total}টার মধ্যে ${n} নম্বর`,
     compare: (n: string) => `${n}টা দোকানের দাম দেখুন`,
     goToStore: "দোকানে যান",
+    checkVariant: (label: string) => `শপে অন্য ভার্সন খুলতে পারে — গিয়ে ${label} বেছে নিন`,
     sectionsLabel: "পাতার ভাগ",
     sections: { price: "দাম", stores: "সব দোকান", cheaper: "আরও সস্তা", specs: "স্পেসিফিকেশন", history: "দামের ইতিহাস", about: "বিবরণ" },
     promoCount: (n: string) => `${n}টা অফার`,
