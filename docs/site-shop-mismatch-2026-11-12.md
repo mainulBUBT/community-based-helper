@@ -85,9 +85,13 @@ CustomMacBD ৯২, OHSOGO ৬৫, iStockBD ৩৬, Ragen ১৪, Splayd ১০,
 - "ce", "f", "fs", "note" এখন মডেল-পার্থক্যের শব্দ: "Nord CE5/CE4" আর Nord 5/4-এ, "Reno15 F/FS" Reno15-এ, "Redmi Note 17" Redmi 17-এ মেলে না। ৬,৪৮৬ পাতার শিরোনামে আগে-পরে মিলিয়ে ১৫টা মিল বদলেছে, সবই আগে ভুল ছিল।
 - ট্যাবলেটের "4g/5g" অপশন Cellular ধরা হয়নি: Arafa Wi-Fi মডেলকেও "4g" লেখে, তাই নিয়ম বানালে ভুল হবে; Redmi Pad 2 Pro-র অফার ব্যাচে হাতে বাঁধা।
 
-## ব্যাচের পরে ১ দোকানে নামা ভার্সন (নিয়ম ১৩, মালিকের সিদ্ধান্ত)
+## ব্যাচের পরে ১ দোকানে নামা ভার্সন (মালিকের সিদ্ধান্ত)
 
-Watch Series 11 46mm GPS + Cellular, Honor Magic8 Pro 12/256, ProBook 440 G11 Ultra 7 8/512, ProBook 460 G11 Ultra 5 125U 8/512, Tab S10 FE 12/256 Cellular, Tab S10 Ultra 12/512 Wi-Fi, Sebamed Clear Face Foam 50ml।
+- **Watch Series 11 46mm GPS + Cellular:** পাতায় Cellular অপশন না থাকলেও একই পণ্য ধরা — Star Tech, HNS, Gadget Breeze রাখা; MacZen স্টক নেই; Sumash, Rio, Skyland, Gadget & Gear যোগ।
+- **Tab S10 FE 12/256 Cellular:** Arafa-র অফার রাখা (Mobile Buzz সহ ২ দোকান)।
+- **ProBook 440 G11 Ultra 7 8/512:** Apple Gadgets, PQS, PC House, Computer Vision যোগ। **Tab S10 Ultra 12/512 Wi-Fi:** PC House যোগ।
+- **বাদ:** Magic8 Pro 12/256 (শুধু Dazzle), Sebamed 50ml (শুধু IndianMart)।
+- **ProBook 460 G11 Ultra 5 125U 8/512:** অন্য কোনো দোকানে নেই, শুধু Apple Gadgets — সিদ্ধান্ত বাকি। Skyland-এর "Ultra 5 125U 16GB" (দাম To be announced) পাতা 155U 16GB ভার্সনে বসানো ছিল, মোছা হচ্ছে।
 
 ## আবার চালানো
 

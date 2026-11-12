@@ -190,14 +190,21 @@ select 'match', 'rejected',
 from offers o join sellers s on s.id = o.seller_id
 where o.id = '2f39ef7e-c058-4105-9e90-b6ff01b307c2' and o.url = 'https://mobilebuzzbd.com/product/xiaomi-redmi-note-17/';
 delete from offers where id = '2f39ef7e-c058-4105-9e90-b6ff01b307c2' and url = 'https://mobilebuzzbd.com/product/xiaomi-redmi-note-17/';
+-- Skyland | hp-probook-460-g11 Core Ultra 7 155U 16GB / 512GB | ৳110999 | পাতা Ultra 5 125U 16GB, দাম To be announced
+insert into review_queue (kind, status, payload, resolved_at, applied_at)
+select 'match', 'rejected',
+  jsonb_build_object('listing', 'hp-probook-460-g11-core-ultra-5-125u-16gb-ram-512gb-ssd-16-wuxga-laptop', 'seller', s.name, 'price', o.price::text, 'url', o.url,
+    'guess', 'ProBook 460 G11 Core Ultra 7 155U 16GB / 512GB', 'reason', 'পাতা Ultra 5 125U 16GB, দাম To be announced', 'sellerId', o.seller_id, 'variantId', o.variant_id, 'condition', o.condition),
+  now(), now()
+from offers o join sellers s on s.id = o.seller_id
+where o.id = 'aa204788-2be3-4e91-aadf-587bfbc38b1c' and o.url = 'https://www.skyland.com.bd/hp-probook-460-g11-core-ultra-5-125u-16gb-ram-512gb-ssd-16-wuxga-laptop';
+delete from offers where id = 'aa204788-2be3-4e91-aadf-587bfbc38b1c' and url = 'https://www.skyland.com.bd/hp-probook-460-g11-core-ultra-5-125u-16gb-ram-512gb-ssd-16-wuxga-laptop';
 
 -- ৩. Wi-Fi/Cellular বা GPS/Cellular: পাতায় এই কানেক্টিভিটির অপশন বা দাম নেই
 -- Arafa Telecom | apple-ipad-11-inch-a16 256GB Wi-Fi + Cellular | ৳54000 | পাতায় Cellular অপশন নেই
 delete from offers where id = '7145bf0b-5fd4-472a-948b-9c42092a3508' and url = 'https://arafatelecom.com/product/apple-ipad-11th-gen-2025/';
 -- Arafa Telecom | honor-pad-x9-11-5-inch 4GB / 128GB Wi-Fi + Cellular | ৳22490 | পাতায় লেখা no cellular connectivity
 delete from offers where id = 'd6859d54-8b67-4dee-be74-84fb206686b6' and url = 'https://arafatelecom.com/product/honor-pad-x9/';
--- Arafa Telecom | samsung-galaxy-tab-s10-fe 12GB / 256GB Wi-Fi + Cellular | ৳78490 | পাতায় Cellular অপশন নেই
-delete from offers where id = '79d0be64-2e4c-4d76-99f8-7ba38a7c9e0a' and url = 'https://arafatelecom.com/product/samsung-galaxy-tab-s10-fe/';
 -- Arafa Telecom | xiaomi-redmi-pad-2-9-7-inch 4GB / 128GB Wi-Fi + Cellular | ৳20500 | পাতায় Cellular অপশন নেই
 delete from offers where id = 'a511cf33-7204-4512-89b0-c2479f1201c0' and url = 'https://arafatelecom.com/product/xiaomi-redmi-pad-2-unofficial/';
 -- Arafa Telecom | xiaomi-redmi-pad-pro-12-1-inch 8GB / 256GB Wi-Fi + Cellular | ৳29400 | পাতায় Cellular অপশন নেই
@@ -228,16 +235,10 @@ delete from offers where id = '43a3d436-39e7-4927-91f6-a57bd8be2610' and url = '
 delete from offers where id = '149ac6af-e901-45f2-8d7b-77d1ac41356c' and url = 'https://www.startech.com.bd/ipad-pro-m5-13-inch';
 -- Star Tech | apple-ipad-pro-13-inch-m5 256GB Wi-Fi + Cellular | ৳172000 | পাতা Wi-Fi মডেলের
 delete from offers where id = 'ca781d3e-a5e2-4bcf-957d-061f1814cee5' and url = 'https://www.startech.com.bd/ipad-pro-m5-13-inch';
--- Star Tech | apple-watch-series-11 46mm GPS + Cellular | ৳45300 | পাতায় Cellular অপশন নেই
-delete from offers where id = 'eacf47b3-e546-479c-a9b3-bb66029ab713' and url = 'https://www.startech.com.bd/apple-watch-series-11';
 -- HNS Tech | apple-watch-series-11 42mm GPS + Cellular | ৳45000 | পাতায় Cellular অপশন নেই
 delete from offers where id = 'baa77721-c59e-4bc6-8947-4f4a5ddae9f9' and url = 'https://www.hnstechbd.com/product-details/apple-watch-series-11/92';
--- HNS Tech | apple-watch-series-11 46mm GPS + Cellular | ৳49000 | পাতায় Cellular অপশন নেই
-delete from offers where id = '1bdbd97d-12c9-4fcb-a37e-fddbafd75db2' and url = 'https://www.hnstechbd.com/product-details/apple-watch-series-11/92';
 -- Gadget Breeze | apple-watch-series-11 42mm GPS + Cellular | ৳42500 | পাতায় Cellular অপশন নেই
 delete from offers where id = '7b8a4f5f-c3fa-43d1-928f-71626677a740' and url = 'https://gadgetbreeze.com.bd/product/apple-watch-series-11/';
--- Gadget Breeze | apple-watch-series-11 46mm GPS + Cellular | ৳46500 | পাতায় Cellular অপশন নেই
-delete from offers where id = 'e2206ff8-87e3-451a-91ab-fa7f555d1f8b' and url = 'https://gadgetbreeze.com.bd/product/apple-watch-series-11/';
 -- Gadget Breeze | samsung-galaxy-tab-a11 8GB / 128GB Wi-Fi + Cellular | ৳19300 | পাতার Cellular দাম 4/64-এর
 delete from offers where id = 'a12a0186-3b96-4eda-ab5d-67576aa70a53' and url = 'https://gadgetbreeze.com.bd/product/samsung-galaxy-tab-a11/';
 -- MacZen BD | apple-ipad-11-inch-a16 256GB Wi-Fi + Cellular | ৳70000 | পাতায় এই ভার্সন Call for price
@@ -252,8 +253,6 @@ delete from offers where id = '70802601-8deb-4981-a02e-4c9e8428d1b3' and url = '
 delete from offers where id = '88ff0271-c4ca-4e46-9419-eddfe831f59c' and url = 'https://www.maczenbd.com/products/ipad/ipad-mini-7';
 -- MacZen BD | apple-ipad-pro-11-inch-m5 256GB Wi-Fi + Cellular | ৳141990 | পাতায় 11 ইঞ্চি Cellular নেই
 delete from offers where id = '20cf72b4-5c09-4302-b6df-9fdef4e20534' and url = 'https://www.maczenbd.com/products/ipad/ipad-pro-m5-2025';
--- MacZen BD | apple-watch-series-11 46mm GPS + Cellular | ৳45499 | পাতায় এই ভার্সন stock-out, দাম নেই
-delete from offers where id = '484f4118-8711-429c-873b-f0bee57d150d' and url = 'https://www.maczenbd.com/products/apple-watch/apple-watch-series-11';
 
 -- ৪. পাতায় আর নেই এমন ভার্সন (দাম অন্য ভার্সনের)
 -- Apple Gadgets | apple-iphone-duo 256GB | ৳329999 | পাতার অপশনে এই ভার্সন নেই
@@ -507,5 +506,22 @@ update offers set in_stock = false where id = '68ce8268-58d2-4a19-8784-6081522ee
 update offers set in_stock = false where id = 'b5a06f84-1db1-400b-88b8-c85671076add' and url = 'https://dolbear.com.bd/product/vgr-v-932-professional-pocket-hair-trimmer';
 update offers set in_stock = false where id = '169f17dd-ad3d-4c3e-b548-928dda9e5c57' and url = 'https://dolbear.com.bd/product/vgr-v-937-cord-cordless-hair-clipper-and-beard-trimmer';
 update offers set in_stock = false where id = '018b3fdc-31ee-4361-988a-7ba9309ddafa' and url = 'https://dolbear.com.bd/product/vgr-v-963-cordless-beard-hair-trimmer';
+-- ৯. Watch Series 11 46mm GPS + Cellular: মালিকের সিদ্ধান্ত, পাতায় Cellular অপশন না থাকলেও একই পণ্য ধরে রাখা ও যোগ
+update offers set in_stock = false where id = '484f4118-8711-429c-873b-f0bee57d150d' and url = 'https://www.maczenbd.com/products/apple-watch/apple-watch-series-11';  -- MacZen: পাতায় GPS+Cellular stock-out
+insert into offers (variant_id, seller_id, condition, region, price, old_price, in_stock, url, source, checked_at) select 'c6a81bfd-f817-d3a9-ddd4-a63e2357c633', s.id, 'unofficial', null, 46999, null, true, 'https://www.sumashtech.com/product/apple-watch-series-11', 'site', '2026-11-12 12:00+06' from sellers s where s.website ilike '%sumashtech.com%' limit 1 on conflict (variant_id, seller_id, condition) do nothing;
+insert into offers (variant_id, seller_id, condition, region, price, old_price, in_stock, url, source, checked_at) select 'c6a81bfd-f817-d3a9-ddd4-a63e2357c633', s.id, 'official', null, 45499, null, true, 'https://riointernational.com.bd/product/apple-watch-series-11', 'site', '2026-11-12 12:00+06' from sellers s where s.website ilike '%riointernational.com.bd%' limit 1 on conflict (variant_id, seller_id, condition) do nothing;
+insert into offers (variant_id, seller_id, condition, region, price, old_price, in_stock, url, source, checked_at) select 'c6a81bfd-f817-d3a9-ddd4-a63e2357c633', s.id, 'official', null, 41300, null, true, 'https://www.skyland.com.bd/apple-watch-series-11', 'site', '2026-11-12 12:00+06' from sellers s where s.website ilike '%skyland.com.bd%' limit 1 on conflict (variant_id, seller_id, condition) do nothing;
+insert into offers (variant_id, seller_id, condition, region, price, old_price, in_stock, url, source, checked_at) select 'c6a81bfd-f817-d3a9-ddd4-a63e2357c633', s.id, 'official', null, 50999, null, true, 'https://gadgetandgear.com/product/apple-watch-series-11', 'site', '2026-11-12 12:00+06' from sellers s where s.website ilike '%gadgetandgear.com%' limit 1 on conflict (variant_id, seller_id, condition) do nothing;
+-- ProBook 440 G11 Ultra 7 155U 8GB/512GB: পাতায় 8GB DDR5, 512GB মিলিয়ে
+insert into offers (variant_id, seller_id, condition, region, price, old_price, in_stock, url, source, checked_at) select '1372dd3e-419b-4fdb-8efb-a8315eb59318', s.id, 'unofficial', null, 117900, null, true, 'https://www.applegadgetsbd.com/product/hp-probook-440-g11-intel-core-ultra-7-155u-laptop', 'site', '2026-11-12 12:00+06' from sellers s where s.website ilike '%applegadgetsbd.com%' limit 1 on conflict (variant_id, seller_id, condition) do nothing;
+insert into offers (variant_id, seller_id, condition, region, price, old_price, in_stock, url, source, checked_at) select '1372dd3e-419b-4fdb-8efb-a8315eb59318', s.id, 'official', null, 136999, null, true, 'https://www.pqs.com.bd/hp-probook-440-g11-core-ultra-7-14-fhd-laptop', 'site', '2026-11-12 12:00+06' from sellers s where s.website ilike '%pqs.com.bd%' limit 1 on conflict (variant_id, seller_id, condition) do nothing;
+insert into offers (variant_id, seller_id, condition, region, price, old_price, in_stock, url, source, checked_at) select '1372dd3e-419b-4fdb-8efb-a8315eb59318', s.id, 'official', null, 138000, null, true, 'https://www.pchouse.com.bd/hp-probook-440-g11-core-ultra-7-14-inch-laptop', 'site', '2026-11-12 12:00+06' from sellers s where s.website ilike '%pchouse.com.bd%' limit 1 on conflict (variant_id, seller_id, condition) do nothing;
+insert into offers (variant_id, seller_id, condition, region, price, old_price, in_stock, url, source, checked_at) select '1372dd3e-419b-4fdb-8efb-a8315eb59318', s.id, 'official', null, 139800, null, true, 'https://computervision.com.bd/hp-probook-440-g11-core-ultra-7-laptop', 'site', '2026-11-12 12:00+06' from sellers s where s.website ilike '%computervision.com.bd%' limit 1 on conflict (variant_id, seller_id, condition) do nothing;
+-- Tab S10 Ultra 12GB/512GB Wi-Fi: পাতায় RAM 12GB, Storage 512GB (এখন স্টক নেই)
+insert into offers (variant_id, seller_id, condition, region, price, old_price, in_stock, url, source, checked_at) select '32576ca5-b703-acaa-bd95-056ac72da243', s.id, 'official', null, 157000, null, false, 'https://www.pchouse.com.bd/samsung-galaxy-tab-s10-ultra-wi-fi-14.6-inch-tablet', 'site', '2026-11-12 12:00+06' from sellers s where s.website ilike '%pchouse.com.bd%' limit 1 on conflict (variant_id, seller_id, condition) do nothing;
+
+-- ১০. ১ দোকানে নামা ভার্সন, মালিকের সিদ্ধান্তে বাদ (seed.sql-এ নেই, worker-জোড়া; অফার cascade-এ যায়)
+delete from variants where id = '21f5255f-8347-467d-af08-f0bb543eebac' and label = '12GB / 256GB';  -- Honor Magic8 Pro, শুধু Dazzle
+delete from variants where id = '56ac2c99-e11c-4753-91da-2e6c876ada01' and label = '50ml';  -- Sebamed Clear Face Foam, শুধু IndianMart
 
 commit;
