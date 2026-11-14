@@ -2,7 +2,7 @@ import { message } from "./lib/errors";
 import { metaContent, visibleText } from "./lib/html";
 import { getText } from "./lib/http";
 import { structuredQuote } from "./lib/price";
-import { sitemapUrls } from "./lib/sitemap";
+import { findSitemap, productPaths } from "./lib/sitemap";
 import { embeddedVariants, shopifyProduct, wooVariants } from "./stores/parsers";
 import type { ShopVariant } from "./stores/types";
 
@@ -10,34 +10,11 @@ import type { ShopVariant } from "./stores/types";
 // robots, sitemap, পণ্যের পাতার path, আর কোন পথে দাম আসে (Shopify, WooCommerce, JSON-LD, পাতার ভেতরের JSON) দেখে
 // workers/stores/index.ts-এর জন্য তৈরি এন্ট্রি দেখায়। DB লাগে না।
 const SAMPLES = 3;
-const PRODUCT_PATH = /^\/(products?|items?|shop|p)\/$/;
 
 type Method = "shopify" | "woo" | "embedded" | "structured";
 const PARSER: Record<Method, string | null> = { shopify: "product: shopifyProduct", woo: "variants: wooVariants", embedded: "variants: embeddedVariants", structured: null };
 
 const show = (rows: ShopVariant[]) => rows.map((r) => `${r.options.join(" / ") || "—"}=${r.price}${r.oldPrice ? `(${r.oldPrice})` : ""}${r.inStock === false ? " স্টকে নেই" : ""}`).join(", ");
-
-async function sitemapOf(origin: string): Promise<{ sitemap: string; urls: string[] } | null> {
-  const robots = await getText(`${origin}/robots.txt`).catch(() => "");
-  const listed = [...robots.matchAll(/^sitemap:\s*(\S+)/gim)].map(([, url]) => url);
-  for (const sitemap of [...listed, `${origin}/sitemap_index.xml`, `${origin}/sitemap.xml`, `${origin}/product-sitemap.xml`]) {
-    const urls = await sitemapUrls(sitemap).catch(() => []);
-    if (urls.length) return { sitemap, urls };
-  }
-  return null;
-}
-
-function productPath(urls: string[], origin: string): { path: string; count: number }[] {
-  const counts = new Map<string, number>();
-  for (const url of urls) {
-    const { pathname, origin: own } = new URL(url);
-    if (own.replace("://www.", "://") !== origin.replace("://www.", "://")) continue;
-    const parts = pathname.split("/").filter(Boolean);
-    const path = parts.length > 1 ? `/${parts[0]}/` : "/";
-    counts.set(path, (counts.get(path) ?? 0) + 1);
-  }
-  return [...counts].map(([path, count]) => ({ path, count })).sort((a, b) => Number(PRODUCT_PATH.test(b.path)) - Number(PRODUCT_PATH.test(a.path)) || b.count - a.count);
-}
 
 async function readWith(url: string): Promise<{ method: Method | null; rows: ShopVariant[]; notes: string[] }> {
   const notes: string[] = [];
@@ -75,8 +52,8 @@ async function main() {
   console.log(`দোকান: ${name} (${origin}), robots.txt-এ খোলা`);
   if (visibleText(home).length < 300) console.log("হোমপেজের HTML প্রায় খালি: JavaScript দিয়ে আঁকা সাইট, দাম সম্ভবত পরে আসে");
 
-  const map = await sitemapOf(origin);
-  const paths = map ? productPath(map.urls, origin) : [];
+  const map = await findSitemap(origin);
+  const paths = map ? productPaths(map.urls, origin) : [];
   console.log(map ? `sitemap: ${map.sitemap} (${map.urls.length}টা লিংক)` : "sitemap নেই: listing-এর জন্য ক্যাটাগরি পাতা ঘোরার কোড লাগবে");
   if (paths.length) console.log(`path: ${paths.slice(0, 5).map((p) => `${p.path} ${p.count}`).join(", ")}`);
 

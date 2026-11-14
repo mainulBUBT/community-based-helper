@@ -44,6 +44,7 @@ const KINDS = new Map<string, string[]>(
 );
 const ACCESSORIES = /\b(for|case|cover|protector|glass|film|charger|adapter|cable|strap|skin|holder|stand|pouch|sleeve|lens|tempered|magsafe|airtag|keyboard|mouse|pencil|dock|hub|shockproof|bumper|airbag|privacy|holster|wallet|refurbished|used)\b/;
 const INCH = /(\d{1,2}(?:\.\d{1,2})?)\s*(?:["”]|''|-?\s*inch)/i;
+const SPEED = /\b(\d{3,5})\s*mhz\b/i;
 const CHIP = /\b(m\d|a1\d)(?:[\s-]+(pro|max|ultra))?\b/i;
 export const SIZE = /^\d+(gb|tb|mm)$/;
 const COLORS = new Set(["black", "white", "blue", "green", "red", "purple", "pink", "gold", "silver", "graphite", "sage", "tan", "orange", "yellow", "gray", "grey", "midnight", "starlight", "titanium", "cream", "lavender", "mint", "cyan"]);
@@ -68,6 +69,12 @@ export function tokens(text: string): string[] {
 export function inch(text: string): number | null {
   const size = INCH.exec(text)?.[1];
   return size ? Math.floor(Number(size)) : null;
+}
+
+// RAM-এর স্পিড: "16GB 6000MHz" ≠ 5600MHz
+export function speed(text: string): number | null {
+  const found = SPEED.exec(text)?.[1];
+  return found ? Number(found) : null;
 }
 
 export function chip(text: string): string | null {
@@ -106,10 +113,16 @@ export function packConflict(title: string, label: string): boolean {
   return own.length > 0 && listed.length > 0 && !listed.some((value) => own.some((other) => near(value, other)));
 }
 
+// দুই দিকেই GB/TB/mm লেখা থাকলে অন্তত একটা মিলতে হবে: "8GB" পাতা "16GB" এর একমাত্র ভার্সনে বসে না
+export function sizeConflict(title: string, label: string): boolean {
+  const [listed, own] = [sizes(tokens(title)), sizes(tokens(label))];
+  return own.length > 0 && listed.length > 0 && !listed.some((s) => own.includes(s));
+}
+
 export function sameSpec(a: string, b: string): boolean {
   return (
     sameAmount(a, b) &&
-    [inch, chip].every((read) => {
+    [inch, chip, speed].every((read) => {
       const x = read(a);
       const y = read(b);
       return x === null || y === null || x === y;
@@ -156,7 +169,8 @@ export function hasCode(text: string, sku?: string | null): boolean {
   return words.some((_, i) => words.slice(i).join("").startsWith(code));
 }
 
-const BRAND_STOP = new Set(["by", "and", "the", "&", "co"]);
+// "G.Skill" এর "g" অন্য ব্র্যান্ডের প্রতিদ্বন্দ্বী-শব্দ হলে "Moto G85" এর মতো লিস্টিং বাদ পড়ত
+const BRAND_STOP = new Set(["by", "and", "the", "&", "co", "g"]);
 
 export function brandTokens(brand: string): string[] {
   return tokens(brand).filter((t) => !BRAND_STOP.has(t));
@@ -206,6 +220,8 @@ function productFits(title: string, ordered: string[], product: CatalogProduct, 
   if (!hasBrand && own.length > 0 && NON_GADGET_CATEGORIES.has(product.category ?? "") && !tokens(product.name).includes(ordered[0]) && !ordered.join("").includes(tokens(product.brand).join(""))) return false;
   const labels = new Set([product.name, product.brand, ...product.variants.map((v) => v.label)].flatMap(tokens));
   if ([...listing].some((t) => MODIFIERS.has(t) && !labels.has(t))) return false;
+  // RAM-এ RGB আর সাধারণ মডেল আলাদা পণ্য, দামও আলাদা ("Fury Beast RGB" ≠ Fury Beast)
+  if (product.category === "ram" && listing.has("rgb") !== labels.has("rgb")) return false;
   const head = FOR_DEVICE.has(product.category ?? "") ? [] : tokens(title.split(BUNDLE)[0]);
   if (head.some((t) => KINDS.has(t) && !labels.has(t) && !KINDS.get(t)!.includes(product.category ?? ""))) return false;
   if (MULTI_MODEL.test(title) && !MULTI_MODEL.test(product.name)) return false;
@@ -278,7 +294,11 @@ export function matchListing(title: string, catalog: CatalogProduct[]): Match | 
   const coded = product.variants.filter((v) => hasCode(title, v.sku));
   if (coded.length === 1) return { kind: "sure", product, variant: coded[0] };
   const listing = new Set(tokens(title));
-  const verdicts = product.variants.map((v) => ({ v, fit: variantFits(listing, v) }));
+  const fast = speed(title);
+  const verdicts = product.variants.map((v) => {
+    const own = speed(v.label);
+    return { v, fit: fast !== null && own !== null && own !== fast ? ("no" as const) : variantFits(listing, v) };
+  });
   // "128GB Wi-Fi" আর "128GB Wi-Fi + Cellular" দুটোই মিললে বেশি নির্দিষ্টটা
   const fits = verdicts.filter((x) => x.fit === "yes");
   const most = Math.max(...fits.map((x) => tokens(x.v.label).length));

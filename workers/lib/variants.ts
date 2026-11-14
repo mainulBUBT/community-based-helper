@@ -1,6 +1,6 @@
 import { canonicalRegion } from "../../src/utils/region";
 import type { ShopVariant } from "../stores/types";
-import { chip, inch, matchListing, packConflict, sameSpec, tokens, type CatalogProduct, type CatalogVariant } from "./match";
+import { chip, inch, matchListing, packConflict, sameSpec, sizeConflict, tokens, type CatalogProduct, type CatalogVariant } from "./match";
 
 export interface PageOffer {
   key: string;
@@ -135,7 +135,11 @@ export function place(offers: PageOffer[], product: CatalogProduct, titles: stri
     // পাতায় লেখা সাইজ কোনো ভার্সনের নয় (100gm, ক্যাটালগে 50gm আর 130g): শিরোনাম দেখে আন্দাজ নয়
     if (!product.variants.some((v) => sameSpec(folded[0].label, `${product.name} ${v.label}`))) return [];
     // titles[0] পাতার শিরোনাম; লিংক থেকে বানানো নামে দশমিক হারায় ("0.35g" হয় "0 35g")
-    if (product.variants.length === 1) return packConflict(titles[0], product.variants[0].label) ? [] : [{ variants: product.variants, found: folded }];
+    if (product.variants.length === 1) {
+      const label = product.variants[0].label;
+      const conflict = packConflict(titles[0], label) || sizeConflict(titles[0], label) || !sameSpec(titles[0], `${product.name} ${label}`);
+      return conflict ? [] : [{ variants: product.variants, found: folded }];
+    }
     const match = titles.map((title) => matchListing(title, [product])).find(Boolean);
     return match ? [{ variants: match.kind === "sure" ? [match.variant] : match.variants, found: folded }] : [];
   }

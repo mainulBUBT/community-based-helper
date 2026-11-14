@@ -10,14 +10,47 @@ export interface SellerRef {
   discoveredAt: string | null;
 }
 
+export interface NewSeller {
+  name: string;
+  website: string;
+  verified?: boolean;
+}
+
+type SellerRow = { id: string; name: string; website: string; discovered_at: string | null };
+const ref = (row: SellerRow): SellerRef => ({ id: row.id, name: row.name, discoveredAt: row.discovered_at });
+
+async function activeSellers(): Promise<SellerRow[]> {
+  return (await must(db().from("sellers").select("id, name, website, discovered_at").eq("active", true).not("website", "is", null))) as SellerRow[];
+}
+
 export async function sellersByStore(stores: Store[]): Promise<Map<string, SellerRef>> {
-  const rows = await must(db().from("sellers").select("id, name, website, discovered_at").eq("active", true).not("website", "is", null));
+  const rows = await activeSellers();
   const map = new Map<string, SellerRef>();
   for (const store of stores) {
-    const row = (rows as { id: string; name: string; website: string; discovered_at: string | null }[]).find((r) => bare(r.website) === bare(store.origin));
-    if (row) map.set(store.id, { id: row.id, name: row.name, discoveredAt: row.discovered_at });
+    const row = rows.find((r) => bare(r.website) === bare(store.origin));
+    if (row) map.set(store.id, ref(row));
   }
   return map;
+}
+
+// কনফিগ থাকা দোকান নিজের কনফিগে; বাকি সক্রিয় বিক্রেতা (অ্যাডমিনে শুধু ওয়েবসাইট দিয়ে যোগ করা) সাধারণ দোকান হয়ে
+export async function storesWithSellers(stores: Store[], generic: (website: string, name: string) => Store): Promise<{ store: Store; seller: SellerRef }[]> {
+  const pairs = new Map<string, { store: Store; seller: SellerRef }>();
+  for (const row of await activeSellers()) {
+    const store = stores.find((s) => bare(s.origin) === bare(row.website)) ?? generic(row.website, row.name);
+    if (!pairs.has(store.id)) pairs.set(store.id, { store, seller: ref(row) });
+  }
+  return [...pairs.values()];
+}
+
+// নেই এমন ডোমেইনের বিক্রেতা বানায়; নিষ্ক্রিয় করা সারি থাকলে ছোঁয় না
+export async function ensureSellers(list: NewSeller[]): Promise<number> {
+  const rows = (await must(db().from("sellers").select("website").not("website", "is", null))) as { website: string }[];
+  const known = new Set(rows.map((r) => bare(r.website)));
+  const missing = [...new Map(list.filter((s) => !known.has(bare(s.website))).map((s) => [bare(s.website), s])).values()];
+  if (missing.length === 0) return 0;
+  await must(db().from("sellers").insert(missing.map((s) => ({ name: s.name, kind: "website", website: s.website, verified: s.verified ?? true }))));
+  return missing.length;
 }
 
 // দোকানের run শুরুর সময়; এর পরে চাওয়া পণ্যই পরের বার এই দোকানে খোঁজা হয়

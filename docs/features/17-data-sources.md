@@ -6,7 +6,7 @@
 
 | দোকান | listing কোথা থেকে | ভার্সনের দাম কোথা থেকে | অবস্থা |
 |---|---|---|---|
-| Star Tech | ক্যাটাগরি পাতা (ফোন, iPad, ট্যাবলেট, Mac, iMac, Mac mini/Studio, ঘড়ি, ইয়ারবাড, হেডফোন) | `/product/product/variation` (ব্রাউজার যেভাবে চায়) | ✅ |
+| Star Tech | ক্যাটাগরি পাতা (ফোন, iPad, ট্যাবলেট, Mac, iMac, Mac mini/Studio, ঘড়ি, ইয়ারবাড, হেডফোন; ১৪ নভেম্বর থেকে ডেস্কটপ আর ল্যাপটপ RAM) | `/product/product/variation` (ব্রাউজার যেভাবে চায়) | ✅ |
 | Apple Gadgets | product sitemap | Next.js payload | ✅ |
 | Gadget & Gear | sitemap | Next.js payload (Playwright লাগে না) | ✅ |
 | Sumash Tech | product sitemap | Nuxt payload | ✅ |

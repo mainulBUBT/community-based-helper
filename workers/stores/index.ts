@@ -3,7 +3,7 @@ import { decode, stripTags } from "../lib/html";
 import { getJson, getText } from "../lib/http";
 import { pace } from "../lib/limiter";
 import { toTaka } from "../lib/price";
-import { sitemapUrls } from "../lib/sitemap";
+import { findSitemap, productPaths, sitemapUrls } from "../lib/sitemap";
 import { appleGadgetsVariants, aurevaVariants, bartonProduct, chardikeVariants, dazzleVariants, embeddedVariants, gadgetAndGearVariants, hhsVariants, hnstechProduct, hnstechVariants, kryVariants, hkLifestyleVariants, maczenVariants, othobaVariants, pchouseVariants, perfectoVariants, rioVariants, shajgojVariants, shopifyProduct, startechVariants, sumashVariants, themallVariants, wooVariants } from "./parsers";
 import { isReplica } from "../../src/utils/categories";
 import type { Condition, Listing, Store } from "./types";
@@ -94,6 +94,8 @@ const STARTECH_CATEGORIES = [
   "/networking/router",
   "/water-purifier",
   "/trimmer",
+  "/component/ram",
+  "/component/laptop-ram",
 ];
 
 function parseStartechListings(html: string): Listing[] {
@@ -1173,10 +1175,29 @@ export const stores: Store[] = [
 // ঘণ্টার সীমা কড়া দোকান: মিনিটে একটা অনুরোধেও এক রানে সীমা শেষ হয়ে যায়, তাই পড়া ঘণ্টা জুড়ে ছড়ানো
 for (const host of ["ohsogo.com", "istockbd.com", "custommacbd.com", "sneakerzonebd.com", "splayd.com.bd", "ragenbd.com"]) pace(host, 60_000);
 
-// তালিকায় না থাকা দোকানের পুরনো দামও বাদ যায় না: JSON-LD/itemprop/og দিয়ে চেষ্টা
-function genericStore(url: string): Store {
+// তালিকায় না থাকা দোকান (অ্যাডমিনে শুধু ওয়েবসাইট দিয়ে যোগ করা): দাম Shopify/Woo/JSON-LD দিয়ে, পণ্যের তালিকা নিজে খোঁজা sitemap থেকে
+export function genericStore(url: string, name = site(url)): Store {
   const { origin } = new URL(url);
-  return { id: site(url), name: site(url), origin, rendered: false, condition: "official", sample: url, promoUrl: null, variants: wooVariants, discover: async () => [] };
+  return {
+    id: site(url),
+    name,
+    origin,
+    rendered: false,
+    condition: "official",
+    sample: url,
+    promoUrl: null,
+    variants: wooVariants,
+    product: shopifyProduct,
+    async discover() {
+      const map = await findSitemap(origin);
+      const path = map && productPaths(map.urls, origin)[0]?.path;
+      if (!map || !path) throw new StoreBlocked(site(url), "sitemap পাওয়া যায়নি, workers/stores/index.ts-এ কনফিগ লাগবে");
+      return map.urls.flatMap((u) => {
+        const { pathname } = new URL(u);
+        return site(u) === site(origin) && pathname.startsWith(path) && pathname !== path ? [slugListing(`${origin}${pathname}`)] : [];
+      });
+    },
+  };
 }
 
 export function storeFor(url: string): Store {

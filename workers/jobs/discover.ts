@@ -7,11 +7,11 @@ import { isOpened, place, single, type PageOffer } from "../lib/variants";
 import { loadCatalog, markDiscovered, requestedAfter, type CatalogEntry } from "../services/catalog";
 import { offerSlots, saveProductImage, slot, upsertOffer, variantPrices, type KnownPrice } from "../services/offers";
 import { decisionExamples, enqueue, reviewedUrls } from "../services/review";
-import { markStoreDiscovered, sellersByStore, type SellerRef } from "../services/sellers";
+import { ensureSellers, markStoreDiscovered, sellersByStore, storesWithSellers, type SellerRef } from "../services/sellers";
 import { shopOffers } from "../services/shop";
 import { handledListings, saveHandled, storeListings } from "../stores/listings";
 import { readPage } from "../stores/page";
-import { conditionOf, stores } from "../stores";
+import { conditionOf, genericStore, stores } from "../stores";
 import type { Listing, Store } from "../stores/types";
 import { deadline } from "./budget";
 import type { JobRun } from "./run";
@@ -230,12 +230,10 @@ export interface StoreResult extends Tally {
 
 const STORE_MINUTES = 30;
 
+// worker-এ কনফিগ করা দোকানের বিক্রেতা না থাকলে আগে বানানো হয়
 export async function sellerStores(): Promise<{ store: Store; seller: SellerRef }[]> {
-  const sellers = await sellersByStore(stores);
-  return stores.flatMap((store) => {
-    const seller = sellers.get(store.id);
-    return seller ? [{ store, seller }] : [];
-  });
+  await ensureSellers(stores.map((s) => ({ name: s.name, website: `${s.origin}/` })));
+  return storesWithSellers(stores, genericStore);
 }
 
 // শুধু এই দোকানের শেষ খোঁজার পরে যোগ বা ভার্সন বদলানো পণ্য খোঁজা হয়; আগে বসে যাওয়া পণ্যের দাম `prices` job এ ওই লিংকেই হালনাগাদ হয়।

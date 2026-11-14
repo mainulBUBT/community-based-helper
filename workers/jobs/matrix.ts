@@ -2,6 +2,8 @@ import { appendFile, mkdir, readdir, readFile, writeFile } from "node:fs/promise
 import { join } from "node:path";
 import { requireEnv } from "../lib/env";
 import { loadCatalog, requestedAfter } from "../services/catalog";
+import { syncCatalog } from "../services/catalog-sync";
+import { message } from "../lib/errors";
 import { isLocalUrl } from "../stores/local";
 import { discoverStore, sellerStores, summarize, type StoreResult } from "./discover";
 import { finishJob, startJob, type JobRun } from "./run";
@@ -17,6 +19,9 @@ async function output(values: Record<string, string>) {
 }
 
 async function plan() {
+  // push-এর rebuild-এর আগে চালানো হলেও catalog JSON-এর নতুন পণ্য আগে DB-তে, যাতে এই run-এই খোঁজা হয়
+  const synced = await syncCatalog().catch((error) => `ক্যাটালগ সিঙ্ক হয়নি: ${message(error)}`);
+  if (synced) console.log(synced);
   const run = await startJob("discover");
   // ঘরের IP থেকে পড়ার দোকান GitHub এ নয়; এদের খোঁজে local_discover
   const sellers = run ? (await sellerStores()).filter(({ store }) => !isLocalUrl(store.origin)) : [];

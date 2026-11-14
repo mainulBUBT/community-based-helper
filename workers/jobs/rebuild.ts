@@ -4,6 +4,7 @@ import path from "node:path";
 import { promisify } from "node:util";
 import { db, must } from "../lib/db";
 import { message } from "../lib/errors";
+import { syncCatalog } from "../services/catalog-sync";
 import { sendPriceAlerts } from "../services/price-alerts";
 import { count } from "./summary";
 
@@ -32,11 +33,13 @@ export async function rebuild(): Promise<string> {
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY) {
     throw new Error("NEXT_PUBLIC_SUPABASE_URL বা PUBLISHABLE_KEY নেই, নমুনা ডেটার সাইট deploy হবে না");
   }
+  const synced = await syncCatalog().catch((error) => `ক্যাটালগ সিঙ্ক হয়নি: ${message(error)}`);
   const { count: products, error } = await db().from("products").select("id", { count: "exact", head: true });
   if (error) throw error;
   await sh("npm", ["run", "build"], buildEnv);
   await recordUsage().catch((error) => console.error(`usage: ${message(error)}`));
-  if (!process.env.CLOUDFLARE_API_TOKEN) return `${count(products ?? 0, "পণ্যের পেজ")} বানানো হয়েছে, deploy করা হয়নি (Cloudflare token নেই)`;
+  const note = synced ? `; ${synced}` : "";
+  if (!process.env.CLOUDFLARE_API_TOKEN) return `${count(products ?? 0, "পণ্যের পেজ")} বানানো হয়েছে, deploy করা হয়নি (Cloudflare token নেই)${note}`;
   const { PATH, HOME, CI, NODE_ENV, CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID } = process.env;
   await sh("npx", ["wrangler", "pages", "deploy", "out", `--project-name=${process.env.CLOUDFLARE_PAGES_PROJECT || "dordam"}`, "--branch=main"], {
     PATH,
@@ -47,5 +50,5 @@ export async function rebuild(): Promise<string> {
     CLOUDFLARE_ACCOUNT_ID,
   });
   const alerts = await sendPriceAlerts();
-  return `${count(products ?? 0, "পণ্যের পেজ")} বানিয়ে deploy হয়েছে${alerts ? `, ${alerts}` : ""}`;
+  return `${count(products ?? 0, "পণ্যের পেজ")} বানিয়ে deploy হয়েছে${alerts ? `, ${alerts}` : ""}${note}`;
 }
