@@ -45,13 +45,6 @@
    "releaseYear": null,
    "variants": [
     {
-     "label": "250g",
-     "attributes": {
-      "capacity": "250g"
-     },
-     "officialPrice": 432
-    },
-    {
      "label": "500g",
      "attributes": {
       "capacity": "500g"
@@ -64,6 +57,13 @@
       "capacity": "1kg"
      },
      "officialPrice": 1484
+    },
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 432
     }
    ],
    "colors": [],
@@ -226,13 +226,6 @@
    "releaseYear": null,
    "variants": [
     {
-     "label": "250g",
-     "attributes": {
-      "capacity": "250g"
-     },
-     "officialPrice": 379
-    },
-    {
      "label": "500g",
      "attributes": {
       "capacity": "500g"
@@ -245,6 +238,13 @@
       "capacity": "1kg"
      },
      "officialPrice": 1315
+    },
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 379
     }
    ],
    "colors": [],
@@ -610,13 +610,6 @@
    "releaseYear": null,
    "variants": [
     {
-     "label": "250g",
-     "attributes": {
-      "capacity": "250g"
-     },
-     "officialPrice": 431
-    },
-    {
      "label": "500g",
      "attributes": {
       "capacity": "500g"
@@ -629,6 +622,13 @@
       "capacity": "1kg"
      },
      "officialPrice": 1653
+    },
+    {
+     "label": "250g",
+     "attributes": {
+      "capacity": "250g"
+     },
+     "officialPrice": 431
     }
    ],
    "colors": [],

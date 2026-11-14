@@ -105,6 +105,26 @@ for (const file of files) {
   }
 }
 
+// ভার্সনের id তালিকার ক্রম থেকে (~v1, ~v2), আর DB/seed সেই id ধরে রাখে। তালিকার মাঝে নতুন ভার্সন ঢোকালে id সরে যায়,
+// seed তখন এক সাইজের দাম অন্য সাইজে বসায় আর একই লেবেলের দ্বিতীয় ভার্সন বানায়। নতুন ভার্সন সবসময় তালিকার শেষে।
+const previousLabels = (() => {
+  try {
+    const old = readFileSync("src/data/catalog.generated.ts", "utf8");
+    return new Map([...old.matchAll(/"id": "([^"]+~v\d+)",\s*"label": "([^"]*)"/g)].map((m) => [m[1], m[2]]));
+  } catch {
+    return new Map();
+  }
+})();
+const shifted = products.flatMap((p) =>
+  p.variants.flatMap((v) => {
+    const before = previousLabels.get(v.id);
+    return before !== undefined && before !== v.label && p.variants.some((other) => other.label === before) ? [`${v.id}: "${before}" → "${v.label}"`] : [];
+  }),
+);
+if (shifted.length && process.env.CATALOG_ALLOW_REORDER !== "1") {
+  throw new Error(`ভার্সনের ক্রম বদলেছে, DB-র id ভুল সাইজে চলে যাবে। নতুন ভার্সন তালিকার শেষে যোগ করুন:\n${shifted.join("\n")}`);
+}
+
 const sellerList = [...sellers.entries()].map(([host, s]) => ({ id: host, ...s }));
 const usedHosts = new Set(offers.map((o) => o.host));
 const activeSellers = sellerList.filter((s) => usedHosts.has(s.id) || s.verified === false);

@@ -28,7 +28,7 @@ import { formatTaka, telLink } from "@/utils/format";
 import { primaryRegion } from "@/utils/region";
 import { brandPath, categoryPath, hostOf } from "@/utils/url";
 import { keySpecs, specHighlights } from "@/utils/specs";
-import { sortAxisValues } from "@/utils/variants";
+import { sortAxisValues, variantLabel } from "@/utils/variants";
 
 const imageFor = (images: string[], color?: string) => {
   if (!color) return 0;
@@ -230,7 +230,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
   // পাতা যেই ভার্সনে খোলে (সবচেয়ে কম দামের, দোকানগুলোও সাধারণত ওটাতেই ডিফল্ট) সেই সারিতে সতর্কবার্তা লাগে না; বাকিদের শপে কোন ভার্সন বাছতে হবে তা বলা হয়
   const variantHint =
     variant && variant.id !== (startVariant ?? product.variants[0]?.id)
-      ? (variant.attributes.storage ?? variant.attributes.capacity ?? variant.attributes.size ?? variant.label)
+      ? variant.label
       : null;
   const conditions = kinds.filter((c) => variantOffers.some((o) => o.condition === c));
   const [chosen, setChosen] = useState<Condition | "all">("all");
@@ -323,9 +323,9 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
           {highlights.length > 0 && (
             <ul className="grid gap-x-4 gap-y-1 text-[13px] text-ink sm:grid-cols-2">
               {highlights.map((h) => (
-                <li key={h.key} className="flex min-w-0 items-center gap-2">
-                  <Check size={15} className="shrink-0 text-ok" aria-hidden="true" />
-                  <span className="truncate" title={h.value}>
+                <li key={h.key} className="flex min-w-0 items-start gap-2">
+                  <Check size={15} className="mt-0.5 shrink-0 text-ok" aria-hidden="true" />
+                  <span className="min-w-0 break-words">
                     <span className="text-dim">{t.keySpec[h.key]}: </span>
                     {h.value}
                   </span>
@@ -363,7 +363,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
             <EmptyState icon={Store} title={t.product.noOffers} />
           )}
 
-          {variant && product.variants.length > 1 && <VariantPicker variants={product.variants} current={variant} onPick={setPickedId} priceOf={variantLowest} />}
+          {variant && (product.variants.length > 1 || variantLabel(variant.attributes)) && <VariantPicker variants={product.variants} current={variant} onPick={setPickedId} priceOf={variantLowest} />}
 
           {conditions.length > 1 && (
             <fieldset className="flex flex-col">

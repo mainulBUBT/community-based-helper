@@ -886,18 +886,18 @@
    "releaseYear": null,
    "variants": [
     {
-     "label": "300g",
-     "attributes": {
-      "capacity": "300g"
-     },
-     "officialPrice": 515
-    },
-    {
      "label": "400g",
      "attributes": {
       "capacity": "400g"
      },
      "officialPrice": 675
+    },
+    {
+     "label": "300g",
+     "attributes": {
+      "capacity": "300g"
+     },
+     "officialPrice": 515
     }
    ],
    "colors": [],

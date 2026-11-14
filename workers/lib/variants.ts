@@ -149,6 +149,16 @@ export function place(offers: PageOffer[], product: CatalogProduct, titles: stri
   });
 }
 
+// পাতা একই মাপে (স্টোরেজ/RAM/সাইজ) ভার্সনের তালিকা দেখায়, কিন্তু এই ভার্সনটা তাতে নেই: দোকান আর বেচে না।
+// আগের দামের হুবহু অপশন থাকলে ধরা হয় দোকানের লেবেলই ভুল, তাই "নেই" নয়
+export function missingFrom(offers: PageOffer[], target: VariantTarget): boolean {
+  const differ = distinct(target.siblings);
+  const own = words(target.label).filter((t) => differ.has(t));
+  if (own.length === 0 || offers.some((o) => o.price === target.price)) return false;
+  const optionWords = offers.map((o) => new Set(words(o.label)));
+  return optionWords.some((opt) => [...opt].some((t) => differ.has(t))) && !optionWords.some((opt) => own.every((t) => opt.has(t)));
+}
+
 export function single(found: PageOffer[]): PageOffer | null {
   if (found.length === 1) return found[0];
   return found.length > 1 && found.every((o) => o.price === found[0].price) ? found[0] : null;

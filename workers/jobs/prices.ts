@@ -4,7 +4,7 @@ import { jinaRead } from "../lib/jina";
 import { Disallowed, NotFound, StoreBlocked, message } from "../lib/errors";
 import { groupBy, pool } from "../lib/pool";
 import { sleep } from "../lib/sleep";
-import { candidates, single } from "../lib/variants";
+import { candidates, missingFrom, single } from "../lib/variants";
 import type { Page } from "../stores/page";
 import { applyApproved } from "../services/apply-approved";
 import { autoReview } from "../services/auto-review";
@@ -41,6 +41,7 @@ interface Tally {
   ai: number;
   jina: number;
   booking: number;
+  gone: number;
 }
 
 // run শুরু থেকে গোনা, workflow timeout ৪৫ মিনিটের ভেতরে। ধীর দোকান (`pace`) নিজের পুরো তালিকা শেষ করতে পারে না,
@@ -48,6 +49,8 @@ interface Tally {
 // GitHub এর job ৪৫ মিনিটে মারা যায়; ঘরের runner এ সেই সীমা নেই, তাই ধীর দোকান (browser, ধীর সাইট) একবারেই শেষ হয়
 const MINUTES = { github: { direct: 15, fallback: 22, total: 28 }, local: { direct: 30, fallback: 37, total: 43 } };
 const QUEUE_WAIT_MS = 1000;
+// এর কম পাতা পড়া গেলে দাম-ছাড়া পাতাকে "স্টকে নেই" নয়, parser ভাঙা ধরা হয়
+const STORE_READS_TRUSTED = 3;
 
 const label = (row: OfferRow) => `${row.variants?.products?.name ?? ""} ${row.variants?.label ?? ""}`.trim();
 
@@ -55,11 +58,16 @@ const label = (row: OfferRow) => `${row.variants?.products?.name ?? ""} ${row.va
 async function applyPage(page: Page, group: OfferRow[], storeName: string, tally: Tally, unmatched: string[]) {
   const url = group[0].url;
   let matched: OfferRow | null = null;
+  const gone: string[] = [];
   for (const row of group) {
     const siblings = row.variants?.products?.variants.map((v) => v.label) ?? [];
     const target = { product: row.variants?.products?.name ?? "", label: row.variants?.label ?? "", siblings, condition: row.condition, price: row.price, key: row.variant_key };
     const found = single(candidates(page.offers, target, group.length === 1));
     const sellerName = row.sellers?.name ?? storeName;
+    if (!found && missingFrom(page.offers, target)) {
+      gone.push(row.id);
+      continue;
+    }
     if (!found) {
       tally.unmatched++;
       unmatched.push(`${label(row)} (${sellerName})`);
@@ -74,6 +82,10 @@ async function applyPage(page: Page, group: OfferRow[], storeName: string, tally
     if (result === "changed") tally.changed++;
     if (result === "anomaly") tally.anomaly++;
     if (result === "booking") tally.booking++;
+  }
+  if (gone.length) {
+    await markGone(gone);
+    tally.gone += gone.length;
   }
   if (matched) await saveProductImage(matched.variant_id, page.image);
   if (matched && page.delivery) await saveDelivery(matched.seller_id, page.delivery.found, page.delivery.source);
@@ -98,7 +110,7 @@ export async function refreshPrices(): Promise<string> {
   const rows = offers
     .filter((row) => row.source === "site" || row.sellers?.kind === "website")
     .filter((row) => isLocalUrl(row.url) === localRun);
-  const tally: Tally = { checked: 0, changed: 0, anomaly: 0, unmatched: 0, failed: 0, blocked: 0, ai: 0, jina: 0, booking: 0 };
+  const tally: Tally = { checked: 0, changed: 0, anomaly: 0, unmatched: 0, failed: 0, blocked: 0, ai: 0, jina: 0, booking: 0, gone: 0 };
   const minutes = localRun ? MINUTES.local : MINUTES.github;
   const directDone = deadline(minutes.direct);
   const fallbackDone = deadline(minutes.fallback);
@@ -106,6 +118,8 @@ export async function refreshPrices(): Promise<string> {
   const errors: string[] = [];
   const unmatched: string[] = [];
   const blocked: OfferRow[][] = [];
+  const noPrice: OfferRow[][] = [];
+  const storeReads = new Map<string, number>();
 
   const pages = [...groupBy(rows, (row) => row.url).values()];
   const perStore = groupBy(pages, (group) => storeFor(group[0].url).id);
@@ -120,7 +134,11 @@ export async function refreshPrices(): Promise<string> {
           const store = storeFor(url);
           try {
             const page = await readPage(store, url);
-            if (!page) throw new Error(`${url}: দাম পাওয়া যায়নি`);
+            if (!page) {
+              noPrice.push(group);
+              return;
+            }
+            storeReads.set(store.id, (storeReads.get(store.id) ?? 0) + 1);
             await applyPage(page, group, store.name, tally, unmatched);
           } catch (error) {
             if (error instanceof NotFound) {
@@ -186,16 +204,28 @@ export async function refreshPrices(): Promise<string> {
   };
   await Promise.all([direct, fallback()]);
 
+  // একই run-এ দোকানের অন্য পাতা ঠিকঠাক পড়া গেলে দাম-ছাড়া পাতা মানে স্টক শেষ/প্রি-অর্ডার/আসন্ন
+  for (const group of noPrice) {
+    if ((storeReads.get(storeFor(group[0].url).id) ?? 0) >= STORE_READS_TRUSTED) {
+      await markGone(group.map((row) => row.id));
+      tally.gone += group.length;
+    } else {
+      tally.failed += group.length;
+      errors.push(`${group[0].url}: দাম পাওয়া যায়নি`);
+    }
+  }
+
   if (rows.length > 0 && tally.checked === 0) throw new Error(`একটা দামও আনা যায়নি${blockedNote()}; ${errors.slice(0, 3).join("; ")}`);
   // AI যাচাইয়ের আগে, নইলে নতুন কনফিগ "ক্যাটালগে নেই" বলে বাতিল হয়ে যেত
   const versions = outOfTime() ? null : await autoVersions(outOfTime).catch((error) => message(error));
   // সবার শেষে, তাই আজকের অনুমোদন বসে পরের run এ; মাঝে অ্যাডমিন ফিরিয়ে নিতে পারেন। লোকাল run এও চলে: আটকানো দোকানের পাতা মিলিয়ে দেখা GitHub থেকে যায় না
   const reviewed = outOfTime() ? null : await autoReview(outOfTime).catch((error) => ({ approved: 0, rejected: 0, left: 0, errors: [message(error)] }));
-  const skipped = rows.length - tally.checked - tally.unmatched - tally.failed - tally.blocked;
+  const skipped = rows.length - tally.checked - tally.unmatched - tally.failed - tally.blocked - tally.gone;
   return [
     `${count(tally.checked, "দেখেছে")}, ${count(tally.changed, "দাম বদলেছে")}`,
     tally.anomaly ? `${count(tally.anomaly, "সন্দেহজনক")} যাচাইয়ে` : "",
     tally.booking ? `${count(tally.booking, "বুকিং বা কিস্তির অংক মনে হয়েছে — আগের দামই রাখা হয়েছে")}` : "",
+    tally.gone ? `${count(tally.gone, "দাম")} দোকানে আর নেই (ভার্সন বাদ বা পাতায় দাম নেই), স্টকে নেই করা হয়েছে` : "",
     tally.unmatched ? `${count(tally.unmatched, "ভার্সন পাতায় মেলেনি")}: ${unmatched.slice(0, 5).join(", ")}` : "",
     tally.failed ? `${count(tally.failed, "ব্যর্থ")}: ${errors.slice(0, 3).join("; ")}` : "",
     tally.blocked ? `${count(tally.blocked, "দাম")} দোকান আটকে রাখায় বাদ${aiReadNote()}` : "",

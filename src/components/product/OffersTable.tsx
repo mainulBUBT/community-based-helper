@@ -173,7 +173,7 @@ function OfferRow({ offer, official, best, warranty, showCondition, inflated, sh
         {offer.promos.map((promo) => (
           <span key={promo.id} className="hidden items-start gap-1 text-[13px] font-medium text-gold-text md:flex">
             <Tag size={13} className="mt-0.5 shrink-0" aria-hidden="true" />
-            <span className="line-clamp-1">{promo.text}</span>
+            <span className="min-w-0 break-words">{promo.text}</span>
           </span>
         ))}
       </div>
