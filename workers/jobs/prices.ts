@@ -45,9 +45,8 @@ interface Tally {
 
 // run শুরু থেকে গোনা, workflow timeout ৪৫ মিনিটের ভেতরে। ধীর দোকান (`pace`) নিজের পুরো তালিকা শেষ করতে পারে না,
 // তাই ধাপ ভাগ করা না থাকলে ফলব্যাক আর AI যাচাই কোনোদিন সময় পায় না। ফলব্যাক সরাসরি পড়ার সাথেই চলে
-const DIRECT_MINUTES = 15;
-const FALLBACK_MINUTES = 22;
-const TOTAL_MINUTES = 28;
+// GitHub এর job ৪৫ মিনিটে মারা যায়; ঘরের runner এ সেই সীমা নেই, তাই ধীর দোকান (browser, ধীর সাইট) একবারেই শেষ হয়
+const MINUTES = { github: { direct: 15, fallback: 22, total: 28 }, local: { direct: 30, fallback: 37, total: 43 } };
 const QUEUE_WAIT_MS = 1000;
 
 const label = (row: OfferRow) => `${row.variants?.products?.name ?? ""} ${row.variants?.label ?? ""}`.trim();
@@ -100,9 +99,10 @@ export async function refreshPrices(): Promise<string> {
     .filter((row) => row.source === "site" || row.sellers?.kind === "website")
     .filter((row) => isLocalUrl(row.url) === localRun);
   const tally: Tally = { checked: 0, changed: 0, anomaly: 0, unmatched: 0, failed: 0, blocked: 0, ai: 0, jina: 0, booking: 0 };
-  const directDone = deadline(DIRECT_MINUTES);
-  const fallbackDone = deadline(FALLBACK_MINUTES);
-  const outOfTime = deadline(TOTAL_MINUTES);
+  const minutes = localRun ? MINUTES.local : MINUTES.github;
+  const directDone = deadline(minutes.direct);
+  const fallbackDone = deadline(minutes.fallback);
+  const outOfTime = deadline(minutes.total);
   const errors: string[] = [];
   const unmatched: string[] = [];
   const blocked: OfferRow[][] = [];

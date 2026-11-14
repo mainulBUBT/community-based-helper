@@ -14,3 +14,8 @@ update review_queue set status = 'approved', resolved_at = now() where id = '366
 -- Computer Vision "TEAM T-FORCE DELTA RGB 32GB 6000MHz DDR5" ৳14900, স্টক নেই: পণ্য আর ভার্সন ঠিক (32GB 6000MHz); একই কারণে স্টক-নেই হিসেবে।
 update review_queue set status = 'approved', resolved_at = now() where id = '4d19f569-3c13-45fa-abc2-a58b76f6a716' and status = 'pending' and applied_at is null;
 commit;
+
+-- পরে আসা ১টা: PC House "TEAM T-FORCE DELTA RGB 32GB (16GBx2) 7200MHz DDR5" ৳26400, স্টক নেই: 7200MHz, ক্যাটালগের ভার্সন 32GB 6000MHz।
+begin;
+update review_queue set status = 'rejected', resolved_at = now() where id = '891bf6bf-8dfc-4b5a-ae2b-8d759a0c72c8' and status = 'pending';
+commit;
