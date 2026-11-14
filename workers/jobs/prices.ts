@@ -131,8 +131,13 @@ export async function refreshPrices(): Promise<string> {
             } else if (error instanceof Disallowed) {
               tally.blocked += group.length;
             } else {
-              tally.failed += group.length;
-              errors.push(message(error));
+              // কানেকশন টাইমআউট বা নেটওয়ার্ক ড্রপ (যেমন Chaldal) হলে সরাসরি Jina ফলব্যাকে পাঠানো, যাতে দাম মিস না হয়
+              if (/timeout|aborted|fetch failed|econnreset|etimedout/i.test(message(error))) {
+                blocked.push(group);
+              } else {
+                tally.failed += group.length;
+                errors.push(message(error));
+              }
             }
           }
         },
