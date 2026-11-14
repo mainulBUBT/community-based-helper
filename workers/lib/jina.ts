@@ -8,9 +8,9 @@ import type { Store } from "../stores/types";
 // কোনো AI আন্দাজ লাগে না। দোকান সেটাতে challenge দিলে (Rokomari) দ্বিতীয়বার markdown মোডে —
 // ওই পথে Jina-র নিজের পড়ার পাইপলাইন পাস করে, লেখা থেকে দাম LLM পড়ে আর সাধারণ যাচাইয়ে যায়।
 // দুই মোডেই পাতা না এলে (Sumash, Gadget Breeze) সেই দোকান ওই run-এ বাদ, Gemini-র url_context-এ যায়।
-// key ছাড়া ফ্রি রেট ~২০ ডাক/মিনিট, তাই ডাকের ফাঁক ৩ সেকেন্ড; 429 এলে বাকি run আর Jina ডাকা হয় না।
-
-pace("r.jina.ai", 3000);
+// key থাকলে Jina-র সীমা অনেক বেশি (200 req/min); key ছাড়া ফ্রি রেট ~২০ ডাক/মিনিট।
+const JINA_KEY = process.env.JINA_API_KEY;
+pace("r.jina.ai", JINA_KEY ? 400 : 1500, JINA_KEY ? 5 : 3);
 
 const preferred = new Map<string, "html" | "md">();
 const dead = new Set<string>();
@@ -19,9 +19,12 @@ let quotaOut = false;
 const isChallenge = (body: string) => (CHALLENGE.test(body.slice(0, 5000)) && body.length < 50_000) || body.length < 500;
 
 async function jinaGet(url: string, rawHtml: boolean): Promise<string | null> {
+  const headers: Record<string, string> = { "x-no-cache": "true" };
+  if (rawHtml) headers["x-return-format"] = "html";
+  if (JINA_KEY) headers["authorization"] = `Bearer ${JINA_KEY}`;
   const res = await limited("r.jina.ai", () =>
     fetch(`https://r.jina.ai/${url}`, {
-      headers: { "x-no-cache": "true", ...(rawHtml ? { "x-return-format": "html" } : {}) },
+      headers,
       signal: AbortSignal.timeout(45_000),
     }),
   );

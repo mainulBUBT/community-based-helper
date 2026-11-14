@@ -1185,6 +1185,9 @@ export const stores: Store[] = [
 // ঘণ্টার সীমা কড়া দোকান: মিনিটে একটা অনুরোধেও এক রানে সীমা শেষ হয়ে যায়, তাই পড়া ঘণ্টা জুড়ে ছড়ানো
 for (const host of ["ohsogo.com", "istockbd.com", "custommacbd.com", "sneakerzonebd.com", "splayd.com.bd", "ragenbd.com"]) pace(host, 60_000);
 
+// Computer Village: Cloudflare 503 চ্যালেঞ্জ এড়াতে ৪ সেকেন্ড বিরতি
+pace("computervillage.com.bd", 4000);
+
 // তালিকায় না থাকা দোকান (অ্যাডমিনে শুধু ওয়েবসাইট দিয়ে যোগ করা): দাম Shopify/Woo/JSON-LD দিয়ে, পণ্যের তালিকা নিজে খোঁজা sitemap থেকে
 export function genericStore(url: string, name = site(url)): Store {
   const { origin } = new URL(url);

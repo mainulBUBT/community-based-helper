@@ -143,20 +143,24 @@ export async function refreshPrices(): Promise<string> {
     directOver = true;
   });
 
-  // দোকান GitHub-এর IP আটকালে ফলব্যাক, সরাসরি পড়ার পাশাপাশি সারি থেকে একটা একটা করে, যাতে প্রতিটার সীমায় না পড়ে:
+  // দোকান GitHub-এর IP আটকালে ফলব্যাক, সরাসরি পড়ার পাশাপাশি সারি থেকে সমান্তরালে, যাতে সময় বাঁচে:
   // আগে Jina Reader (ওদের সার্ভারের HTML-এ আমাদের নিজের parser), তারপর Gemini-র url_context
   // (Google-এর সার্ভার)। না পড়া গেলে আগের মতো বাদ; সময় ফুরালে পরের বার। পড়া ফলও একই যাচাই আর
   // সীমার ভেতর দিয়ে যায়।
+  const FALLBACK_CONCURRENCY = process.env.JINA_API_KEY ? 4 : 2;
   const fallback = async () => {
-    while (!fallbackDone()) {
-      const group = blocked.shift();
-      if (!group) {
-        if (directOver) return;
-        await sleep(QUEUE_WAIT_MS);
-        continue;
+    const worker = async () => {
+      while (!fallbackDone()) {
+        const group = blocked.shift();
+        if (!group) {
+          if (directOver) return;
+          await sleep(QUEUE_WAIT_MS);
+          continue;
+        }
+        await readBlocked(group);
       }
-      await readBlocked(group);
-    }
+    };
+    await Promise.all(Array.from({ length: FALLBACK_CONCURRENCY }, () => worker()));
   };
   const readBlocked = async (group: OfferRow[]) => {
     let page = await jinaRead(storeFor(group[0].url), group[0].url);

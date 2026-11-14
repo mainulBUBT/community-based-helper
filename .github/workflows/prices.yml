@@ -28,5 +28,6 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
           # "off" দিলে যাচাই বাকি থেকে AI নিজে সিদ্ধান্ত নেয় না
           AUTO_REVIEW: ${{ vars.AUTO_REVIEW }}

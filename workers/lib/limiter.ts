@@ -13,9 +13,11 @@ interface HostState {
 
 const site = (host: string) => host.replace(/^www\./, "");
 const gaps = new Map<string, number>();
+const limits = new Map<string, number>();
 
-export function pace(host: string, gapMs: number) {
+export function pace(host: string, gapMs: number, maxConcurrent?: number) {
   gaps.set(site(host), gapMs);
+  if (maxConcurrent) limits.set(site(host), maxConcurrent);
 }
 
 const hosts = new Map<string, HostState>();
@@ -29,7 +31,8 @@ function state(host: string): HostState {
 
 async function acquire(host: string) {
   const s = state(host);
-  if (s.active < MAX_CONCURRENT) s.active++;
+  const max = limits.get(site(host)) ?? MAX_CONCURRENT;
+  if (s.active < max) s.active++;
   else await new Promise<void>((resolve) => s.waiting.push(resolve));
   const wait = s.nextStart - Date.now();
   s.nextStart = Math.max(Date.now(), s.nextStart) + (gaps.get(site(host)) ?? GAP_MS);
