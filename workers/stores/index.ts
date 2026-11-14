@@ -459,11 +459,10 @@ export const stores: Store[] = [
     id: "holybasket",
     name: "Holy Basket",
     origin: "https://holybasketbd.com",
-    sample: "https://holybasketbd.com/product/ajwa-dates-500gm/",
-    sitemap: "https://holybasketbd.com/sitemap_index.xml",
+    sample: "https://holybasketbd.com/product/ajwa-dates-500gm",
+    sitemap: "https://holybasketbd.com/sitemap.xml",
     path: "/product/",
     condition: "official",
-    variants: wooVariants,
   }),
   sitemapStore({
     id: "applegadgets",
