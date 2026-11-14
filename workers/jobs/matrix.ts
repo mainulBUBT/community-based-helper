@@ -4,9 +4,9 @@ import { requireEnv } from "../lib/env";
 import { loadCatalog, requestedAfter } from "../services/catalog";
 import { syncCatalog } from "../services/catalog-sync";
 import { message } from "../lib/errors";
-import { isLocalUrl } from "../stores/local";
+import { discoversLocally } from "../stores/local";
 import { discoverStore, sellerStores, summarize, type StoreResult } from "./discover";
-import { finishJob, startJob, type JobRun } from "./run";
+import { finishJob, previousMessage, startJob, type JobRun } from "./run";
 
 // GitHub এ discover তিন ধাপে: plan (কোন দোকানগুলো) → প্রতি দোকানে আলাদা job → finish (এক বার্তা)।
 // দোকানের তালিকা stores/index.ts আর sellers টেবিল থেকে, তাই নতুন দোকান যোগ করলে নিজে থেকেই job পায়
@@ -24,7 +24,7 @@ async function plan() {
   if (synced) console.log(synced);
   const run = await startJob("discover");
   // ঘরের IP থেকে পড়ার দোকান GitHub এ নয়; এদের খোঁজে local_discover
-  const sellers = run ? (await sellerStores()).filter(({ store }) => !isLocalUrl(store.origin)) : [];
+  const sellers = run ? (await sellerStores()).filter(({ store }) => !discoversLocally(store.origin)) : [];
   // শুধু সেই দোকান, যার শেষ খোঁজার পরে কোনো পণ্য চাওয়া হয়েছে; নতুন দোকান কখনো খোঁজা হয়নি বলে নিজেই আসে।
   // আটকানো দোকানও শেষ ধরা হয়, তাই একটাও দাম না পেলেও প্রতি run এ আসে না
   const catalog = run ? await loadCatalog() : [];
@@ -46,7 +46,16 @@ async function finish() {
   const expected = (JSON.parse(requireEnv("DISCOVER_STORES")) as string[]).length;
   const files = (await readdir(RESULTS).catch(() => [] as string[])).filter((file) => file.endsWith(".json"));
   const results = await Promise.all(files.map(async (file) => JSON.parse(await readFile(join(RESULTS, file), "utf8")) as StoreResult));
-  await finishJob(run, () => summarize(results, run.startedAt, expected));
+  const previous = await previousMessage(run);
+  await finishJob(run, async () => {
+    try {
+      return await summarize(results, run.startedAt, expected);
+    } catch (error) {
+      // আগের run এর হুবহু একই ভুল: সতর্কবার্তা একবারই যায়, প্রতি run এ লাল নয়; দোকান ঠিক হলে পরের run এ নিজেই খোঁজে
+      if (message(error) === previous) return message(error);
+      throw error;
+    }
+  });
 }
 
 export async function discoverStep(step: string, arg?: string) {

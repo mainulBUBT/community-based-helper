@@ -21,4 +21,11 @@ const LOCAL_HOSTS = [
   "themallbd.com",
 ];
 
-export const isLocalUrl = (url: string) => LOCAL_HOSTS.includes(new URL(url).host.replace(/^www\./, ""));
+// GitHub এর IP তে 403, তবে দাম Jina দিয়ে GitHub থেকেই আসে; শুধু নতুন পণ্য খোঁজা (পুরো তালিকা) ঘরের IP থেকে
+const LOCAL_DISCOVER_HOSTS = ["electronicsbangladesh.com", "glowellabd.com", "onixbd.com", "salextra.com.bd", "skyland.com.bd", "umrelo.com.bd"];
+
+const host = (url: string) => new URL(url).host.replace(/^www\./, "");
+
+export const isLocalUrl = (url: string) => LOCAL_HOSTS.includes(host(url));
+
+export const discoversLocally = (url: string) => isLocalUrl(url) || LOCAL_DISCOVER_HOSTS.includes(host(url));

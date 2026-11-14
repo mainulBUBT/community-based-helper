@@ -35,6 +35,7 @@
 | Zapatos | — | — | ⛔ ৮ নভেম্বর পুরোপুরি বাদ (নিজস্ব ব্র্যান্ড, ক্যাটালগের সাথে ম্যাচ নেই) |
 | BabyCare | sitemap-এ পণ্য নেই — ক্যাটাগরি পাতা (`?page=`) ঘুরে | `itemprop="price"` (JSON-LD নেই) | ✅ |
 | Dolbear | `/sitemap/products.xml` | JSON-LD | ✅ |
+| Gadget BD | WooCommerce sitemap (`sitemap_index.xml`, ~১১৩০ পণ্য) | `wooVariants` | ✅ ১৪ নভেম্বর যোগ; GitHub-এ খোলে কিনা প্রথম run-এ দেখা |
 | HNS Tech | sitemap নেই — `/shop?page=1..6` ঘুরে | `data-variants` JSON (`hnstechVariants`) | ✅ |
 | The Mall BD | | | ⛔ GitHub Actions থেকে robots.txt এ 403 |
 | Rokomari | | | ⛔ GitHub Actions থেকে robots.txt এ 403 |
@@ -147,6 +148,7 @@
 | Star Tech | startech.com.bd | সব | অফিসিয়াল স্টক, পুরো স্পেসিফিকেশন টেবিল, নিয়মিত আর ছাড়ের দাম, স্টক |
 | Gadget & Gear | gadgetandgear.com | সব | অফিসিয়াল/অনুমোদিত, প্রতিটা ভার্সনের আলাদা পাতা; Mac এ Apple Authorised |
 | Apple Gadgets | applegadgetsbd.com | সব | অফিসিয়াল আর আনঅফিসিয়াল দুই রকম; প্রায়ই সবচেয়ে কম দাম |
+| Gadget BD | gadgetbd.com | মোবাইল, ট্যাবলেট, ল্যাপটপ, ঘড়ি | আনঅফিসিয়াল ধরা (region বা অফিসিয়াল ওয়ারেন্টির কথা নেই); রং-ভেদে দাম আলাদা |
 | Sumash Tech | sumashtech.com | সব | অফিসিয়াল আর ইন্টারন্যাশনাল আলাদা পাতায়; কাটা দাম অনেক সময় ফোলানো |
 | Kry International | kryinternational.com | মোবাইল | আনঅফিসিয়াল ভার্সনে দেশের কোড (India, Global…) |
 | Dazzle | dazzle.com.bd | মোবাইল, ঘড়ি, অডিও | বেশিরভাগ আনঅফিসিয়াল, কম দামের রেফারেন্স; MRP ফোলানো |

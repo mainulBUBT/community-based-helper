@@ -1,9 +1,9 @@
 import { db } from "../lib/db";
-import { isLocalUrl } from "../stores/local";
+import { discoversLocally } from "../stores/local";
 import { discoverStore, sellerStores, type StoreResult } from "./discover";
 import type { JobRun } from "./run";
 
-// নতুন পণ্য এই ১৮ দোকানেও খোঁজা: GitHub এর discover এদের "blocked" দেখে এগিয়ে যায় কিন্তু পণ্যকে "খোঁজা হয়েছে" ধরে,
+// নতুন পণ্য ঘরের IP এর দোকানগুলোতেও খোঁজা: GitHub এর discover এদের "blocked" দেখে এগিয়ে যায় কিন্তু পণ্যকে "খোঁজা হয়েছে" ধরে,
 // তাই এখানে চিহ্ন নয়, সময়: এই জবের শেষ সফল run এর পর যোগ বা বদলানো পণ্য। কোনো দোকানে ভুল হলে বা সময়ে শেষ না হলে run ব্যর্থ ধরা হয়,
 // পরের বার একই পণ্য আবার। যে দোকান বট আটকে রাখে (ঘরের IP তেও 403) সে শুধু নোটে; নইলে run কখনো সফল হতো না।
 // সব দোকান আটকালে (IP-ই বন্ধ) তবুও ব্যর্থ।
@@ -18,7 +18,7 @@ export const localSince = async (run: JobRun) => (await lastOkRun(run.job, run.i
 
 export async function localDiscover(run: JobRun): Promise<string> {
   const since = await localSince(run);
-  const active = (await sellerStores()).filter(({ store }) => isLocalUrl(store.origin));
+  const active = (await sellerStores()).filter(({ store }) => discoversLocally(store.origin));
   const results: StoreResult[] = await Promise.all(active.map(({ store, seller }) => discoverStore(store, seller, since)));
   const total = (key: "added" | "review" | "failed") => results.reduce((sum, r) => sum + r[key], 0);
   const notes = results.flatMap((r) => r.notes);

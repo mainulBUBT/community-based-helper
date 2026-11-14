@@ -39,6 +39,11 @@ export async function startJob(id: JobId): Promise<JobRun | null> {
   return { id: run.id, job: id, startedAt };
 }
 
+export async function previousMessage(run: JobRun): Promise<string | null> {
+  const { data } = await db().from("job_runs").select("message").eq("job_id", run.job).neq("status", "running").lt("id", run.id).order("id", { ascending: false }).limit(1);
+  return data?.[0]?.message ?? null;
+}
+
 export async function finishJob(run: JobRun, work: () => Promise<string>) {
   let status = "ok";
   let text: string;
