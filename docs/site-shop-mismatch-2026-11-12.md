@@ -104,6 +104,15 @@ CustomMacBD ৯২, OHSOGO ৬৫, iStockBD ৩৬, Ragen ১৪, Splayd ১০,
 - **বাদ:** Magic8 Pro 12/256 (শুধু Dazzle), Sebamed 50ml (শুধু IndianMart)।
 - **ProBook 460 G11 Ultra 5 125U 8/512:** অন্য কোনো দোকানে নেই, শুধু Apple Gadgets — সিদ্ধান্ত বাকি। Skyland-এর "Ultra 5 125U 16GB" (দাম To be announced) পাতা 155U 16GB ভার্সনে বসানো ছিল, মোছা হচ্ছে।
 
+## ১৫ নভেম্বরের ফলো-আপ: "তিনবার মেলেনি" চারটা ভার্সন
+
+পাতা হাতে খুলে যাচাই, তারপর ব্যাচ [2026-11-15-site-shop-4-versions.sql](../supabase/batches/2026-11-15-site-shop-4-versions.sql) চালানো হয়েছে।
+
+- **Mobile Buzz BD | Spark 50C 4/128:** unofficial ৳১০,০০০ আর নেই। পাতায় ৪/১২৮ এখন official ৳২২,৯৯৯ (old ৳২৯,৯৯৯); অফারটা official-এ বাঁধা হলো।
+- **Gadget & Gear | 200 5G 12/256:** ভার্সন আছে, দাম ৳৩৭,৯৯৯ মেলে, শুধু স্টক নেই। একই লিংকে official + unofficial দুটো অফার ছিল, বাড়তি unofficial কপি বাদ — নইলে `applyPage`-এ `alone` false হয়ে দুটোই "মেলেনি" হতো।
+- **Sumash Tech | Pixel 9 Pro 16/128:** `pixel-9-pro-official` পাতায় "12/128GB" লেখা (দোকানের টাইপো; আসল ফোন ১৬GB RAM), দাম ৳১,০৪,৯৯৯ ঠিক। ডেটা বদলানো হয়নি — আগের মতোই ভুল সংকেত। 16/128 ভার্সনটা unofficial পাতায় আছে, স্টক নেই।
+- **Kry International | Phone 3a 8/256:** পাতায় এখন শুধু 12GB / 256GB ৳৪৮,৯৯৯ (ক্যাটালগে এই ভার্সন নেই)। ৮/২৫৬ আর ৮/১২৮ দুটোই বাদ, `review_queue`-তে rejected।
+
 ## আবার চালানো
 
 ```sh
