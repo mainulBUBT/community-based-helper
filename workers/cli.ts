@@ -5,10 +5,14 @@ import { discoverStep } from "./jobs/matrix";
 import { refreshPrices } from "./jobs/prices";
 import { readDeliveryPolicies } from "./jobs/delivery-policy";
 import { readPromos } from "./jobs/promos";
+import { deadline } from "./jobs/budget";
 import { rebuild } from "./jobs/rebuild";
 import { runJob, type JobId, type JobRun } from "./jobs/run";
 import { autoReview, compareWithHumans } from "./services/auto-review";
 import { autoVersions } from "./services/auto-version";
+
+// workflow-এর ২০ মিনিটের আগেই থামা, নইলে GitHub মেরে ফেলে আর কাজটা "চলছে" দেখায়
+const PROMOS_MINUTES = 15;
 
 const jobs: Record<JobId, (run: JobRun) => Promise<string>> = {
   prices: refreshPrices,
@@ -21,7 +25,10 @@ const jobs: Record<JobId, (run: JobRun) => Promise<string>> = {
     return refreshPrices();
   },
   discover,
-  promos: async () => [await readPromos(), await readDeliveryPolicies()].filter(Boolean).join(" · "),
+  promos: async () => {
+    const outOfTime = deadline(PROMOS_MINUTES);
+    return [await readPromos(outOfTime), await readDeliveryPolicies(outOfTime)].filter(Boolean).join(" · ");
+  },
   rebuild,
 };
 

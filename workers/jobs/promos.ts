@@ -55,7 +55,7 @@ function endsOn(value: string | null, today: string): string | null {
   return value >= today && value <= limit ? value : null;
 }
 
-export async function readPromos(): Promise<string> {
+export async function readPromos(outOfTime: () => boolean = () => false): Promise<string> {
   if (!(await llmReady())) throw new Error("LLM key দেওয়া নেই, অফার পড়া যায়নি");
   const today = new Date().toISOString().slice(0, 10);
   await must(db().from("promos").delete().lt("ends_on", today));
@@ -68,6 +68,10 @@ export async function readPromos(): Promise<string> {
   for (const store of stores) {
     const seller = sellers.get(store.id);
     if (!store.promoUrl || !seller) continue;
+    if (outOfTime()) {
+      notes.push("সময় শেষ, বাকি দোকান পরের run-এ");
+      break;
+    }
     try {
       const text = mainText(await pageHtml(store, store.promoUrl)).slice(0, 8000);
       if (text.length < MIN_TEXT) {

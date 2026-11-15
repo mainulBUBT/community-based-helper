@@ -47,7 +47,7 @@ export async function policyText(store: (typeof stores)[number]): Promise<string
 const days = (value: unknown, max: number) => (Number.isInteger(value) && Number(value) >= 0 && Number(value) <= max ? Number(value) : null);
 
 // পণ্যের পাতায় গোছানো চার্জ না থাকলে দোকানের ডেলিভারি পলিসি পাতা থেকে; সপ্তাহে একবার, খসড়া থাকলে পরের দিনই মিলিয়ে দেখা
-export async function readDeliveryPolicies(): Promise<string> {
+export async function readDeliveryPolicies(outOfTime: () => boolean = () => false): Promise<string> {
   if (!(await llmReady())) return "";
   const sellers = await sellersByStore(stores);
   const due = [];
@@ -62,6 +62,10 @@ export async function readDeliveryPolicies(): Promise<string> {
   let read = 0;
   const notes: string[] = [];
   for (const { store, seller } of due.slice(0, PER_RUN)) {
+    if (outOfTime()) {
+      notes.unshift("সময় শেষ, বাকি দোকান পরের run-এ");
+      break;
+    }
     try {
       const text = await policyText(store);
       if (text.length < MIN_TEXT) {
