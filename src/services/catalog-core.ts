@@ -26,9 +26,9 @@ export function viewOffers(catalog: Catalog, offers: Offer[]): OfferView[] {
 }
 
 // কার্ডের দাম সব ধরন মিলিয়ে সবচেয়ে কম, স্টকে থাকা দোকান থেকে; কোথাও স্টক না থাকলে তবেই সব দোকান থেকে
-function cardOffer(catalog: Catalog, product: Product) {
+export function cardOffer(allOffers: Offer[], product: Product) {
   const variantIds = new Set(product.variants.map((v) => v.id));
-  const offers = catalog.offers.filter((o) => variantIds.has(o.variantId));
+  const offers = allOffers.filter((o) => variantIds.has(o.variantId));
   const available = offers.filter((o) => o.inStock !== false);
   const pool = available.length ? available : offers;
   const best = pool.length ? pool.reduce((a, b) => (b.price < a.price ? b : a)) : null;
@@ -36,7 +36,7 @@ function cardOffer(catalog: Catalog, product: Product) {
 }
 
 export function summarize(catalog: Catalog, product: Product): ProductSummary {
-  const { offers, best } = cardOffer(catalog, product);
+  const { offers, best } = cardOffer(catalog.offers, product);
   const lowest = best?.price ?? null;
   const warranty = catalog.categories.find((c) => c.slug === product.category)?.warranty !== false;
   // আনঅফিসিয়াল বা কপির দামের পাশে অফিসিয়াল দাম দেখিয়ে "ছাড়" বলা যায় না
@@ -182,7 +182,7 @@ export function makeService(load: CatalogLoader, loadHistory: HistoryLoader = ()
     const category = catalog.categories.find((c) => c.slug === product.category) ?? null;
     const alternatives = buildAlternatives(catalog, product, category);
     // পাতা খোলে কার্ডের দামের ভার্সনে, যাতে কার্ডে যা দেখা গেল ভেতরেও তাই থাকে
-    const startVariant = cardOffer(catalog, product).best?.variantId ?? null;
+    const startVariant = cardOffer(catalog.offers, product).best?.variantId ?? null;
     return { product, category, offers, history: await loadHistory(offers.map((o) => o.id)), alternatives, startVariant };
   };
 

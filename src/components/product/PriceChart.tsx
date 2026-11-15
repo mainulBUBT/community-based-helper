@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowDownRight, ArrowUpRight, Minus } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, CircleCheck, Clock, Minus } from "lucide-react";
 import { useState, type PointerEvent, type ReactNode } from "react";
 import { useElementWidth } from "@/hooks/useElementWidth";
 import { useI18n } from "@/hooks/useI18n";
@@ -22,6 +22,39 @@ function Tile({ label, value, note }: { label: string; value: ReactNode; note?: 
       <span className="text-base leading-tight font-bold tracking-tight text-ink md:text-lg">{value}</span>
       {note && <span className="text-xs break-words text-dim">{note}</span>}
     </div>
+  );
+}
+
+const VERDICT_MIN_DAYS = 14;
+const WAIT_GAP = 0.02;
+
+type Verdict = "buy" | "wait" | "steady";
+
+// এক দিনের জন্য আসা দাম (প্রায়ই পার্সারের ভুল) বাদ: অন্তত পরপর দুই দিন টিকলে তবেই সেটা মাসের কম দাম
+function verdictOf(history: PricePoint[], points: DayRange[], now: number): { verdict: Verdict; gap: number } | null {
+  const oldest = Math.min(...history.map((p) => Date.parse(p.seenAt)));
+  if (!Number.isFinite(oldest) || now - oldest < VERDICT_MIN_DAYS * DAY_MS || points.length < 2) return null;
+  const last = points[points.length - 1].low;
+  const low = Math.min(...points.slice(0, -1).map((p, i) => Math.max(p.low, points[i + 1].low)));
+  if (last <= low && points.some((p) => p.low > last)) return { verdict: "buy", gap: 0 };
+  return (last - low) / last >= WAIT_GAP ? { verdict: "wait", gap: last - low } : { verdict: "steady", gap: 0 };
+}
+
+const VERDICT_STYLE = {
+  buy: { icon: CircleCheck, className: "bg-ok-soft text-ok" },
+  wait: { icon: Clock, className: "bg-gold-soft text-gold-text" },
+  steady: { icon: Minus, className: "bg-surface-2/60 text-dim" },
+} as const;
+
+function VerdictLine({ verdict, gap }: { verdict: Verdict; gap: number }) {
+  const { t, lang } = useI18n();
+  const { icon: Icon, className } = VERDICT_STYLE[verdict];
+  const text = verdict === "buy" ? t.product.verdictBuy : verdict === "wait" ? t.product.verdictWait(formatTaka(gap, lang)) : t.product.verdictSteady;
+  return (
+    <p className={`flex items-start gap-2 rounded-md px-3 py-2.5 text-[13px] leading-snug font-semibold ${className}`}>
+      <Icon size={16} className="mt-px shrink-0" aria-hidden="true" />
+      {text}
+    </p>
   );
 }
 
@@ -92,6 +125,7 @@ export function PriceChart({ history, offers }: { history: PricePoint[]; offers:
   };
   // ভাসমান বক্সের বদলে চার্টের উপরে এক লাইন: কিছু ঢাকে না, আর hover না থাকলে আজকের দাম
   const shown = active ?? last;
+  const verdict = verdictOf(history, points, now);
 
   return (
     <figure className="flex flex-col gap-4">
@@ -100,6 +134,8 @@ export function PriceChart({ history, offers }: { history: PricePoint[]; offers:
         <Tile label={t.product.chartMonthLow} value={formatTaka(lowest.low, lang)} note={lowest.day === last.day ? t.product.chartBestNow : dayLabel(lowest.day)} />
         <Tile label={t.product.chartChange} value={<Change from={first.low} to={last.low} />} note={change.diff ? `${num(change.percent)}%` : undefined} />
       </div>
+
+      {verdict && <VerdictLine verdict={verdict.verdict} gap={verdict.gap} />}
 
       <div className="flex flex-col gap-1">
         <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-[13px]">

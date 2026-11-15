@@ -27,6 +27,7 @@ import { SearchBox } from "@/components/search/SearchBox";
 import { BrandIcon } from "@/components/ui/BrandIcon";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
+import { useHeaderHeight } from "@/hooks/useHeaderHeight";
 import { useInstallPrompt } from "@/hooks/useInstallPrompt";
 import type { Messages } from "@/i18n/bn";
 import { trackView } from "@/services/analytics";
@@ -177,6 +178,8 @@ export function AppShell({
       : current.startsWith(trimSlash(href));
   const showSearch = !/^\/(search|category)(\/|$)/.test(current);
 
+  const headerRef = useHeaderHeight<HTMLElement>();
+
   useEffect(() => trackView(pathname), [pathname]);
 
   return (
@@ -188,7 +191,7 @@ export function AppShell({
           </Suspense>
           <Announcement settings={settings} />
           <PromoPopup settings={settings} />
-          <header className="sticky top-0 z-40 border-b border-line-soft bg-surface shadow-sm">
+          <header ref={headerRef} className="sticky top-0 z-40 border-b border-line-soft bg-surface shadow-sm">
             <div className="page-container flex h-16 items-center gap-4 lg:gap-6">
               <Link
                 href={`${prefix}/`}

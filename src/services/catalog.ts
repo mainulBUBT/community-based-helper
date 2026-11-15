@@ -37,6 +37,36 @@ export function listSummaries(): Promise<ProductSummary[]> {
   return summariesP;
 }
 
+let manifestP: Promise<BakedManifest> | null = null;
+
+export function loadManifest(): Promise<BakedManifest> {
+  manifestP ??= fetch(`${BASE}/manifest.json`)
+    .then((response) => {
+      if (!response.ok) throw new Error(`manifest.json: ${response.status}`);
+      return response.json() as Promise<BakedManifest>;
+    })
+    .catch((error) => {
+      manifestP = null;
+      throw error;
+    });
+  return manifestP;
+}
+
+const chunks = new Map<string, Promise<BakedChunk>>();
+
+export function loadChunk(category: string): Promise<BakedChunk> {
+  let chunk = chunks.get(category);
+  if (!chunk) {
+    chunk = fetch(`${BASE}/${category}.json`).then((response) => {
+      if (!response.ok) throw new Error(`${category}.json: ${response.status}`);
+      return response.json() as Promise<BakedChunk>;
+    });
+    chunk.catch(() => chunks.delete(category));
+    chunks.set(category, chunk);
+  }
+  return chunk;
+}
+
 export type SubmitError = "limit" | "captcha" | "failed";
 
 // জমা হয় Edge Function দিয়ে: সেখানে Turnstile যাচাই, ঘরগুলো ছাঁকা, তারপর IP ধরে সীমা (supabase/functions/submit-price)

@@ -1,6 +1,6 @@
 "use client";
 
-import { AlertTriangle, Check, ChevronDown, ChevronRight, Clock, ExternalLink, Globe, Megaphone, Phone, Store, TrendingDown } from "lucide-react";
+import { AlertTriangle, Check, ChevronDown, ChevronRight, Clock, Columns2, ExternalLink, Globe, Megaphone, Phone, Store, TrendingDown } from "lucide-react";
 import Link from "next/link";
 import { useState, useSyncExternalStore, type ReactNode } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
@@ -19,6 +19,7 @@ import { Panel } from "@/components/ui/Panel";
 import { ShareButton } from "@/components/ui/ShareButton";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
+import { useRecentlyViewed, useRecordView } from "@/hooks/useRecentlyViewed";
 import { useSaved } from "@/hooks/useSaved";
 import type { RegionNote } from "@/types/admin";
 import { AXES, type Axis, type Condition, type OfferView, type ProductDetail, type SpecGroup, type Variant } from "@/types/catalog";
@@ -200,10 +201,17 @@ function SpecsPanel({ specs, source }: { specs: SpecGroup[]; source?: string | n
   );
 }
 
+const MIN_COMPARE_SPECS = 4;
+
 export function ProductView({ initial, regionNotes }: { initial: ProductDetail; regionNotes: RegionNote[] }) {
   const { lang, t, num, ago, prefix } = useI18n();
   const { product, offers, history, category, alternatives, startVariant } = initial;
   const { slugs, isSaved } = useSaved();
+  useRecordView({ slug: product.slug, name: product.name, category: product.category });
+  const comparable = (product.specs ?? []).flatMap((g) => g.items).length >= MIN_COMPARE_SPECS;
+  const compareWith = useRecentlyViewed()
+    .filter((v) => v.category === product.category && v.slug !== product.slug)
+    .slice(0, 1);
   const { name: categoryName, find } = useCategories();
   const info = category ?? find(product.category);
   const warranty = info?.warranty !== false;
@@ -361,6 +369,28 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
             </div>
           ) : (
             <EmptyState icon={Store} title={t.product.noOffers} />
+          )}
+
+          {comparable && (
+            <div className="flex flex-wrap gap-2">
+              {compareWith.map((v) => (
+                <Link
+                  key={v.slug}
+                  href={`${prefix}/compare/?p=${encodeURIComponent(product.slug)},${encodeURIComponent(v.slug)}`}
+                  className="inline-flex h-9 min-w-0 items-center gap-1.5 rounded-md border border-brand/30 bg-brand-soft px-3 text-sm font-semibold text-brand-text hover:border-brand"
+                >
+                  <Columns2 size={16} className="shrink-0" aria-hidden="true" />
+                  <span className="truncate">{t.product.compareWithName(v.name)}</span>
+                </Link>
+              ))}
+              <Link
+                href={`${prefix}/compare/?p=${encodeURIComponent(product.slug)}`}
+                className="inline-flex h-9 items-center gap-1.5 rounded-md border border-line bg-surface px-3 text-sm font-semibold text-dim hover:border-dim hover:text-ink"
+              >
+                {!compareWith.length && <Columns2 size={16} aria-hidden="true" />}
+                {compareWith.length ? t.product.compareOther : t.product.compareWith}
+              </Link>
+            </div>
           )}
 
           {variant && (product.variants.length > 1 || variantLabel(variant.attributes)) && <VariantPicker variants={product.variants} current={variant} onPick={setPickedId} priceOf={variantLowest} />}

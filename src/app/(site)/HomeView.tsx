@@ -7,6 +7,7 @@ import { BrandMarquee } from "@/components/home/BrandMarquee";
 import { CategoryRows } from "@/components/home/CategoryRows";
 import { CategoryTiles } from "@/components/home/CategoryTiles";
 import { DealsShelf } from "@/components/home/DealsShelf";
+import { RecentShelf } from "@/components/home/RecentShelf";
 import { Shelf } from "@/components/home/Shelf";
 import { SpotlightShelf } from "@/components/home/SpotlightShelf";
 import { PageBanner } from "@/components/layout/PageBanner";
@@ -95,6 +96,8 @@ export function HomeView({ initial }: { initial: HomeData }) {
       <PageBanner page="home" />
 
       <CategoryTiles summaries={summaries} />
+
+      <RecentShelf summaries={summaries} />
 
       {(settings.showDrops ?? true) && (
         <DealsShelf deals={deals} interval={settings.dropsInterval ?? 4} />
