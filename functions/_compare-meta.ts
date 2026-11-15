@@ -6,6 +6,7 @@ import { compareShare } from "../src/utils/compare-share";
 
 interface Card {
   slug: string;
+  brand: string;
   name: string;
   category: string;
   lowest: number | null;
@@ -45,8 +46,8 @@ async function asset<T>(ctx: Context, path: string): Promise<T> {
 
 // একই isolate-এ পরের অনুরোধগুলো আর JSON পার্স করে না
 function loadCards(ctx: Context) {
-  cards ??= asset<{ product: { slug: string; name: string; category: string; images?: string[] }; lowest: number | null }[]>(ctx, "/data/catalog/summaries.json")
-    .then((list) => new Map(list.map(({ product, lowest }) => [product.slug, { slug: product.slug, name: product.name, category: product.category, lowest, image: product.images?.[0] ?? null }])))
+  cards ??= asset<{ product: { slug: string; brand: string; name: string; category: string; images?: string[] }; lowest: number | null }[]>(ctx, "/data/catalog/summaries.json")
+    .then((list) => new Map(list.map(({ product, lowest }) => [product.slug, { slug: product.slug, brand: product.brand, name: product.name, category: product.category, lowest, image: product.images?.[0] ?? null }])))
     .catch((error) => {
       cards = null;
       throw error;

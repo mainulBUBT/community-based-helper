@@ -604,7 +604,7 @@ export function CompareView() {
       : { summary, detail, choice: null, price: summary.lowest, label: summary.size, condition: summary.condition, inStock: summary.inStock, sellerCount: summary.sellerCount };
   });
   const rows = useRows(views, current);
-  const share = items.length ? compareShare(t, lang, views.map((v) => ({ name: v.summary.product.name, lowest: v.price }))) : null;
+  const share = items.length ? compareShare(t, lang, views.map((v) => ({ brand: v.summary.product.brand, name: v.summary.product.name, lowest: v.price }))) : null;
   const shareTitle = share?.title;
   const shareDescription = items.length > 1 ? share?.description : null;
 

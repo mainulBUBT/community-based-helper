@@ -6,8 +6,7 @@ import { useI18n } from "@/hooks/useI18n";
 import { useRecentlyViewed } from "@/hooks/useRecentlyViewed";
 import type { ProductSummary } from "@/types/catalog";
 import { Shelf } from "./Shelf";
-
-const DESKTOP_LIMIT = 6;
+import { SlideItem, SlideTrack } from "./SlideTrack";
 
 export function RecentShelf({ summaries }: { summaries: ProductSummary[] }) {
   const { t } = useI18n();
@@ -19,13 +18,13 @@ export function RecentShelf({ summaries }: { summaries: ProductSummary[] }) {
   return (
     <Shelf>
       <SectionHeader title={t.home.recent} subtitle={t.home.recentSub} />
-      <div className="no-scrollbar flex snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain lg:grid lg:grid-cols-6 lg:overflow-visible">
-        {items.map((summary, i) => (
-          <div key={summary.product.id} className={`w-[calc(50%-6px)] shrink-0 snap-start sm:w-[calc(33.333%-8px)] lg:w-auto ${i >= DESKTOP_LIMIT ? "lg:hidden" : ""}`}>
+      <SlideTrack>
+        {items.map((summary) => (
+          <SlideItem key={summary.product.id}>
             <ProductCard summary={summary} />
-          </div>
+          </SlideItem>
         ))}
-      </div>
+      </SlideTrack>
     </Shelf>
   );
 }

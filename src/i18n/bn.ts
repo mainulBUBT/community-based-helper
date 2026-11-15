@@ -315,7 +315,7 @@ export const bn = {
     noDiff: "সব পণ্যের স্পেক একই",
     groups: { price: "দাম", performance: "ডিসপ্লে ও পারফরম্যান্স", camera: "ক্যামেরা", battery: "ব্যাটারি ও চার্জিং", build: "নেটওয়ার্ক ও গড়ন", more: "অন্যান্য স্পেক" },
     specs: "মূল স্পেসিফিকেশন",
-    shareTitle: (names: string[]) => (names.length > 1 ? `${names.slice(0, -1).join(", ")} নাকি ${names.at(-1)}? দাম ও স্পেকের তুলনা` : `${names[0]}-এর সাথে তুলনা`),
+    shareTitle: (names: string[]) => (names.length > 1 ? `${names.join(" vs ")}: দাম ও স্পেকের তুলনা` : `${names[0]}-এর সাথে তুলনা`),
     sharePrice: (name: string, price: string) => `${name} এখন ${price} থেকে`,
     shareDescription: (prices: string) => `${prices}। কোনটা কিসে এগিয়ে আর কোন দোকানে সবচেয়ে কম দাম, বাংলাদেশের দোকানের দাম মিলিয়ে পাশাপাশি দেখুন।`,
     empty: "তুলনার জন্য কোনো পণ্য বাছা হয়নি",
