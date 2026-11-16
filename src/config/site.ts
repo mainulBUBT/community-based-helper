@@ -3,6 +3,26 @@ import type { SiteSettings } from "@/types/admin";
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://dordam.app").replace(/\/+$/, "");
 
+export const COMPARE_CATEGORIES = new Set([
+  "mobile",
+  "laptop",
+  "tablet",
+  "desktop",
+  "monitor",
+  "watch",
+  "earbuds",
+  "headphones",
+  "speaker",
+  "powerbank",
+  "charger",
+  "ssd",
+  "ram",
+  "router",
+  "fan",
+  "trimmer",
+  "water-purifier",
+]);
+
 export const DEFAULT_SETTINGS: SiteSettings = {
   name: "দরদাম",
   nameEn: "Dordam",

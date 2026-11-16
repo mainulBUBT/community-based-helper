@@ -2253,6 +2253,7 @@
    "name": "iPhone 16",
    "category": "mobile",
    "releaseYear": 2024,
+   "specsSource": "https://www.startech.com.bd/iphone-16",
    "variants": [
     {
      "label": "128GB",
@@ -2281,7 +2282,6 @@
     "https://assets.gadgetandgear.com/upload/media/iphone-16-128gb-black.jpeg",
     "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/color/1050/iphone_16_Black.webp"
    ],
-   "specsSource": null,
    "offers": [
     {
      "variant": "128GB",

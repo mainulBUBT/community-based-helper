@@ -25,6 +25,7 @@ import type { RegionNote } from "@/types/admin";
 import { AXES, type Axis, type Condition, type OfferView, type ProductDetail, type SpecGroup, type Variant } from "@/types/catalog";
 import { byStock, neverCharged, realOldPrice } from "@/utils/catalog";
 import { categoryConditions, conditionLabel, isReplica } from "@/utils/categories";
+import { isComparable } from "@/utils/compare";
 import { formatTaka, telLink } from "@/utils/format";
 import { primaryRegion } from "@/utils/region";
 import { brandPath, categoryPath, hostOf } from "@/utils/url";
@@ -201,14 +202,12 @@ function SpecsPanel({ specs, source }: { specs: SpecGroup[]; source?: string | n
   );
 }
 
-const MIN_COMPARE_SPECS = 4;
-
 export function ProductView({ initial, regionNotes }: { initial: ProductDetail; regionNotes: RegionNote[] }) {
   const { lang, t, num, ago, prefix } = useI18n();
   const { product, offers, history, category, alternatives, startVariant } = initial;
   const { slugs, isSaved } = useSaved();
   useRecordView({ slug: product.slug, name: product.name, category: product.category });
-  const comparable = (product.specs ?? []).flatMap((g) => g.items).length >= MIN_COMPARE_SPECS;
+  const comparable = isComparable(product);
   const compareWith = useRecentlyViewed()
     .filter((v) => v.category === product.category && v.slug !== product.slug)
     .slice(0, 1);

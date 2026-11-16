@@ -44,16 +44,16 @@ const GROUPS: { id: Group; icon: LucideIcon; keys: KeySpec[] }[] = [
 ];
 
 const KEY_ALIASES: Record<KeySpec, RegExp> = {
-  display: /display|screen|refresh rate/i,
-  chip: /chipset|processor|cpu/i,
+  display: /display|screen|refresh rate|^size$/i,
+  chip: /chipset|processor|cpu|^chip$/i,
   graphics: /graphics|gpu/i,
-  rearCamera: /camera/i,
-  frontCamera: /camera/i,
-  battery: /battery/i,
-  charging: /charging/i,
+  rearCamera: /camera|^resolution$|^rear$/i,
+  frontCamera: /camera|^resolution$|^front$|webcam/i,
+  battery: /battery|^capacity$/i,
+  charging: /charging|adapter|^output$/i,
   os: /operating system|^os$/i,
-  network: /^network/i,
-  water: /ip rating|water/i,
+  network: /^network|^connection type$|^connectivity$|^wifi$|^bluetooth$/i,
+  water: /ip ?rating|ip\d|water|rugged/i,
   weight: /^weight$/i,
 };
 
@@ -245,7 +245,7 @@ function Picker({ items, summaries, searchRef, onPick, onClose }: { items: Produ
   const [query, setQuery] = useState("");
   const taken = new Set(items.map((s) => s.product.slug));
   const category = items[0]?.product.category;
-  const pool = summaries.filter((s) => (!category || s.product.category === category) && !taken.has(s.product.slug));
+  const pool = summaries.filter((s) => s.product.comparable && (!category || s.product.category === category) && !taken.has(s.product.slug));
   const prices = items.flatMap((s) => (s.lowest !== null ? [s.lowest] : []));
   const target = prices.length ? prices.reduce((sum, p) => sum + p, 0) / prices.length : null;
   const distance = (s: ProductSummary) => (target === null ? 0 : s.lowest === null ? Infinity : Math.abs(s.lowest - target));

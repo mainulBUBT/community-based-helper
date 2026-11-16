@@ -19,10 +19,17 @@ const LOCAL_HOSTS = [
   "computervillage.com.bd",
   "pchouse.com.bd",
   "themallbd.com",
+  // ১৬ নভেম্বর: এদের দাম GitHub এর Jina দিয়েও আসছিল না (GitHub এ robots.txt/পাতায় 403, "বন্ধ" তালিকায়), ঘরের IP থেকেই পড়া যায়
+  "umrelo.com.bd",
+  "electronicsbangladesh.com",
+  "salextra.com.bd",
+  "skyland.com.bd",
+  "smartdeal.com.bd",
+  "glowellabd.com",
 ];
 
 // GitHub এর IP তে 403, তবে দাম Jina দিয়ে GitHub থেকেই আসে; শুধু নতুন পণ্য খোঁজা (পুরো তালিকা) ঘরের IP থেকে
-const LOCAL_DISCOVER_HOSTS = ["electronicsbangladesh.com", "glowellabd.com", "onixbd.com", "salextra.com.bd", "skyland.com.bd", "umrelo.com.bd"];
+const LOCAL_DISCOVER_HOSTS = ["onixbd.com"];
 
 const host = (url: string) => new URL(url).host.replace(/^www\./, "");
 

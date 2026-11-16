@@ -908,6 +908,7 @@
       "name": "MacBook Pro 14\" M5 Max",
       "category": "laptop",
       "releaseYear": 2026,
+      "specsSource": "https://www.startech.com.bd/apple-macbook-pro-m5-max",
       "variants": [
         {
           "label": "M5 Max 18C CPU/32C GPU 36GB / 2TB",
@@ -921,15 +922,10 @@
           "officialPrice": null
         }
       ],
-      "colors": [
-        "Space Black",
-        "Silver"
-      ],
       "images": [
-        "https://assets.gadgetandgear.com/upload/media/apple/macbook-pro-m5-pro-chip-14-inch-1.jpeg",
-        "https://assets.gadgetandgear.com/upload/media/apple/macbook-pro-m5-pro-chip-14-inch-2.jpeg"
+        "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/4410/MacBook_Pro_14-inch_M5.webp",
+        "https://adminapi.applegadgetsbd.com/storage/media/large/6524-40332.jpg"
       ],
-      "specsSource": null,
       "offers": [
         {
           "variant": "M5 Max 18C CPU/32C GPU 36GB / 2TB",

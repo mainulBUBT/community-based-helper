@@ -1761,6 +1761,7 @@
    "name": "Necklace 4 (OEB-E50D)",
    "category": "earbuds",
    "releaseYear": null,
+   "specsSource": "https://diamu.com.bd/product/oraimo-necklace-4-neckband/",
    "variants": [
     {
      "label": "Standard",
@@ -1770,11 +1771,9 @@
    ],
    "colors": [],
    "images": [
-    "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/525/oraimo_necklace_4_OEB-E50D_1.webp",
-    "https://assets.gadgetandgear.com/upload/media/1725340139559967.jpeg",
-    "https://motionview.s3.amazonaws.com/images/products/profile/171973731097.Oraimo%20Necklace%204%20Superior%20BASS%20with%20HAVYBASS%202.0%20Neckband%20(OEB-E50D)%20-%20Black.webp"
+    "https://motionview.s3.amazonaws.com/images/products/profile/171973731097.Oraimo%20Necklace%204%20Superior%20BASS%20with%20HAVYBASS%202.0%20Neckband%20(OEB-E50D)%20-%20Black.webp",
+    "https://adminapi.applegadgetsbd.com/storage/media/large/Oraimo-Necklace-4-Black-9819.png"
    ],
-   "specsSource": null,
    "offers": [
     {
      "variant": "Standard",
@@ -2373,6 +2372,7 @@
    "name": "Soundcore R500",
    "category": "earbuds",
    "releaseYear": 2021,
+   "specsSource": "https://diamu.com.bd/product/anker-soundcore-r500-fast-charging-neckband-earphone/",
    "variants": [
     {
      "label": "Standard",
@@ -2383,10 +2383,8 @@
    "colors": [],
    "images": [
     "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/168/ANKER_SOUNDCORE_R500_A3213Y11_Black_01.webp",
-    "https://adminapi.applegadgetsbd.com/storage/media/large/3524-14073.jpg",
-    "https://diamu.com.bd/wp-content/uploads/2021/10/Anker-Soundcore-R500-Fast-Charging-Neckband.jpg"
+    "https://adminapi.applegadgetsbd.com/storage/media/large/anker-soundcore-r500-fast-charging-neckband-6138.png"
    ],
-   "specsSource": null,
    "offers": [
     {
      "variant": "Standard",
@@ -2593,6 +2591,7 @@
    "name": "Enco M33",
    "category": "earbuds",
    "releaseYear": 2023,
+   "specsSource": "https://diamu.com.bd/product/oppo-enco-m33-wireless-neckband-earphones/",
    "variants": [
     {
      "label": "Standard",
@@ -2602,10 +2601,8 @@
    ],
    "colors": [],
    "images": [
-    "https://adminapi.applegadgetsbd.com/storage/media/large/Oppo-Enco-M33-Neckband-Wireless-Earphonefdh-4876.png",
-    "https://diamu.com.bd/wp-content/uploads/2023/11/OPPO-Enco-M33-Wireless-Neckband-Earphones.jpg"
+    "https://adminapi.applegadgetsbd.com/storage/media/large/OPPO-Enco-M33-Neckband-Wireless-Earphone-8067.png"
    ],
-   "specsSource": null,
    "offers": [
     {
      "variant": "Standard",

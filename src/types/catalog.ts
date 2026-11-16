@@ -62,6 +62,7 @@ export interface Product {
   colors?: string[];
   regions?: string[];
   tags?: string[];
+  comparable?: boolean;
   description?: string | null;
   descriptionEn?: string | null;
   specs?: SpecGroup[];

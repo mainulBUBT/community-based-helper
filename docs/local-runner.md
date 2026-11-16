@@ -4,12 +4,12 @@
 
 GitHub Actions এর সার্ভারের IP কিছু দোকান আটকায় (Cloudflare এর ডেটাসেন্টার-নিয়ম)। একই দোকান ঘরের IP থেকে, আমাদের সৎ `DordamBot` পরিচয়ে, ঠিকই খোলে। তাই এই দোকানগুলোর দাম আসে `local_prices` জবে, যা নিজের মেশিনে চলে আর অ্যাডমিন থেকে চালানো যায়।
 
-- **কোন দোকান:** `workers/stores/local.ts` এর `LOCAL_HOSTS` (১৮টা, ~২,৭০০ অফার)। Chaldal বাদ: ঘরের IP থেকেও সংযোগ হয় না।
-- **শুধু খোঁজা এখান থেকে (১৪ নভেম্বর):** `LOCAL_DISCOVER_HOSTS`-এর ৬টা দোকান (Electronics Bangladesh, Glowella, Onix, Salextra, Skyland, Umrelo) GitHub-এ 403 দেয়, কিন্তু দাম GitHub-এর `prices` Jina দিয়ে পড়ে। শুধু নতুন পণ্য খোঁজা `local_discover`-এ।
+- **কোন দোকান:** `workers/stores/local.ts` এর `LOCAL_HOSTS` (২৪টা, ~৩,৪০০ অফার)। Chaldal বাদ: ঘরের IP থেকেও সংযোগ হয় না।
+- **শুধু খোঁজা এখান থেকে (১৪ নভেম্বর; ১৬ নভেম্বরে বদল):** আগে `LOCAL_DISCOVER_HOSTS`-এর ৬টা দোকানের (Electronics Bangladesh, Glowella, Salextra, Skyland, Umrelo, Onix) দাম GitHub-এর `prices` Jina দিয়ে পড়ত। ১৬ নভেম্বরে GitHub-এর run-এ এদের সবাই robots.txt/পাতায় 403 খেয়ে "বন্ধ" হয়ে যাচ্ছিল, তাই Electronics Bangladesh, Glowella, Salextra, Skyland, Umrelo (আর Smart Deal)-এর দাম এখন `LOCAL_HOSTS`-এ, লোকাল জবেই; শুধু Onix এখনো GitHub-এর Jina দিয়ে।
 - **শুধু এখান থেকেই (৫ নভেম্বর, মালিকের সিদ্ধান্ত):** GitHub এর `prices` আর `discover` এই দোকানগুলোতে আর যায় না। তাই রানার বন্ধ থাকলে এদের দাম হালনাগাদ হয় না আর নতুন পণ্য খোঁজা হয় না।
 - **কেন `local_discover` আলাদা:** GitHub এর `discover` এই দোকানগুলো ছাড়াই পণ্যকে "খোঁজা হয়েছে" চিহ্নিত করে; তাই লোকাল জব চিহ্ন নয়, নিজের শেষ সফল run এর পর যোগ হওয়া পণ্য ধরে। কোনো দোকান না হলে run ব্যর্থ, পরের বার একই পণ্য আবার।
 - **কাজ:** `prices` এর একই কোড, শুধু ওই হোস্টের অফার (`LOCAL_JOB` env)। কোনো stealth নেই, নিজের পরিচয়, robots.txt মানা, আগের গতিসীমা। AI যাচাইও এখানে চলে, কারণ যাচাইয়ের সময় দোকানের পাতা খুলতে হয়, আর এই দোকানগুলোর পাতা GitHub থেকে খোলে না।
-- **AI:** মেশিনে লগইন করা নিজের যেকোনো AI CLI, API key-এর সেটআপ নয়। `worker.env`-এ `LOCAL_AI_COMMAND`-এ command দিন; প্রশ্ন stdin-এ যায়, উত্তর stdout-এ আসে (`workers/lib/local-ai.ts`, একবারে একটা ডাক, run-এ সর্বোচ্চ ২০০টা)। না দিলে, CLI না চললে বা সীমা শেষ হলে বাকি run AI ছাড়াই চলে।
+- **AI:** যাচাইয়ের ছোট প্রশ্ন মেশিনে লগইন করা নিজের AI CLI থেকে: `worker.env`-এ `LOCAL_AI_COMMAND`-এ command দিন; প্রশ্ন stdin-এ যায়, উত্তর stdout-এ আসে (`workers/lib/local-ai.ts`, একবারে একটা ডাক, run-এ সর্বোচ্চ ২০০টা)। পাতা পড়ার শেষ ফলব্যাক (Gemini `url_context`) অ্যাডমিনের AI সেটআপ থেকে — GitHub-এর run-এর মতোই (১৬ নভেম্বর থেকে লোকালেও চালু)। কোনোটাই না থাকলে বাকি run AI ছাড়াই চলে।
   - **নিরাপত্তা:** দোকানের লেখা এতে ঢোকে। Command repo-র বাইরে চলে আর service key পায় না, কিন্তু টুল বন্ধ রাখা command-এর দায়িত্ব। টুল খোলা থাকলে দোকানের পাতার লেখা AI-কে দিয়ে মেশিনে কিছু করাতে পারে, `worker.env`-ও পড়াতে পারে।
   - **Claude:** `LOCAL_AI_COMMAND='claude -p --model haiku --tools "" --no-session-persistence --strict-mcp-config --setting-sources "" --system-prompt "Follow the task in the input. Reply with JSON only."'` (`claude` PATH-এ না থাকলে পুরো পথ)
   - **অন্য CLI:** আগে দেখে নিন stdin থেকে পড়ে কি না আর টুল বন্ধ করা যায় কি না।

@@ -15,7 +15,7 @@
 
 - প্রতিটা run `jobs.enabled` দেখে, অ্যাডমিন বন্ধ রাখলে চলে না। ফল `job_runs` আর `jobs.last_*` এ লেখে।
 - দাম আনার ক্রম: দোকানের ভার্সন parser (`workers/stores/parsers.ts`) → JSON-LD/itemprop/og দাম → ছাঁটা লেখা থেকে LLM। কোনো দোকানে Playwright লাগে না।
-- ভার্সন মেলানো (`workers/lib/variants.ts`): রং, region, সিম, ওয়ারেন্টি এক করে স্টকে থাকা সবচেয়ে কম দাম; স্টোরেজ, RAM, mm, ইঞ্চি, চিপ, GPU কোর, Cellular মিলতে হয়। প্রথমবার আগের দামের সাথে হুবহু মেলা অপশনে বাঁধা হয় (`offers.variant_key`)।
+- ভার্সন মেলানো (`workers/lib/variants.ts`): রং, region, সিম, ওয়ারেন্টি এক করে স্টকে থাকা সবচেয়ে কম দাম; স্টোরেজ, RAM, mm, ইঞ্চি, চিপ, GPU কোর, Cellular মিলতে হয়। প্রথমবার আগের দামের সাথে হুবহু মেলা অপশনে বাঁধা হয় (`offers.variant_key`)। এক রামের পণ্যে দোকানের ভুল RAM লেখা (Sumash-এর Pixel 9 Pro "12/128GB") আগের দামের হুবহু অপশন হলে ওদের লেবেলই ভাঙা ধরা হয়, স্টোরেজ মিললেই চলে (১৬ নভেম্বর)।
 - নতুন পণ্য বা ভার্সন যোগ হলে DB trigger `jobs.run_requested_at` বসায়, আগের trigger GitHub workflow চালায়। পণ্যের `discover_requested_at > discovered_at` মানে খোঁজা বাকি।
 - নিয়ম আর ধাপ: [পণ্য আর দোকান যোগের নিয়ম](../adding-products.md)।
 - নিয়ম: নিজের পরিচয় দেওয়া user-agent, robots.txt মানা, প্রতি দোকানে একবারে একটাই request, শুরুর মাঝে অন্তত ২ সেকেন্ড (৩ নভেম্বর: আগে ২টা একসাথে ১ সেকেন্ড বিরতিতে ছোট দোকান 429 দিচ্ছিল)। OHSOGO, iStockBD, CustomMacBD, Sneaker Zone, Splayd, Ragen-এর ঘণ্টার সীমা আরও কড়া — এক এক করে গেলেও সব পাতা এক রানে সীমা শেষ হয়, তাই এদের বিরতি ৬০ সেকেন্ড (`pace`), পড়া কয়েক রান জুড়ে ছড়ায়। 403 বা bot challenge পেলে সেই দোকান ওই run এ বাদ। কোনো stealth নেই।

@@ -1,4 +1,12 @@
+import { COMPARE_CATEGORIES } from "@/config/site";
+import type { Product } from "@/types/catalog";
 import type { KeySpec } from "@/utils/specs";
+
+const MIN_COMPARE_SPECS = 4;
+
+export const isComparable = (product: Product) =>
+  product.comparable ??
+  (COMPARE_CATEGORIES.has(product.category) && (product.specs ?? []).flatMap((g) => g.items).length >= MIN_COMPARE_SPECS);
 
 type Better = "higher" | "lower";
 type Pick = "first" | "max";

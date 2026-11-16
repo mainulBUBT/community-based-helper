@@ -1,4 +1,5 @@
 import type { Offer, OfferView, PricePoint, ProductSummary } from "@/types/catalog";
+import { isComparable } from "@/utils/compare";
 
 export const byPrice = (a: { price: number }, b: { price: number }) => a.price - b.price;
 
@@ -37,7 +38,7 @@ export const byStock = (a: { inStock: boolean | null }, b: { inStock: boolean | 
 
 export function toCard(summary: ProductSummary): ProductSummary {
   const { id, slug, name, brand, category, releaseYear, popularity, variants, images, tags } = summary.product;
-  return { ...summary, product: { id, slug, name, brand, category, releaseYear, popularity, variants, images: images?.slice(0, 1), ...(tags?.length ? { tags } : {}) } };
+  return { ...summary, product: { id, slug, name, brand, category, releaseYear, popularity, variants, images: images?.slice(0, 1), ...(tags?.length ? { tags } : {}), ...(isComparable(summary.product) ? { comparable: true } : {}) } };
 }
 
 export function lowestOffer(offers: OfferView[]) {

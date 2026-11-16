@@ -535,6 +535,7 @@
    "name": "Mac mini M2 Pro",
    "category": "desktop",
    "releaseYear": 2023,
+   "specsSource": "https://mcsolution.com.bd/mac-mini-m2-pro-mnh73zp-a/",
    "variants": [
     {
      "label": "M2 Pro 10C CPU/16C GPU 16GB / 512GB",
@@ -548,14 +549,10 @@
      "officialPrice": null
     }
    ],
-   "colors": [
-    "Silver"
-   ],
+   "colors": [],
    "images": [
-    "https://mobilebuzzbd.com/wp-content/uploads/2025/01/Apple-Mac-mini-M2-Pro-10-Core-CPU-16-Core-GPU.jpg",
     "https://sumashtech.sgp1.cdn.digitaloceanspaces.com/product-image/1471/Mac_Mini_M2_Pro.webp"
    ],
-   "specsSource": "https://www.sumashtech.com/product/mac-mini-m2-pro-2023",
    "offers": [
     {
      "variant": "M2 Pro 10C CPU/16C GPU 16GB / 512GB",

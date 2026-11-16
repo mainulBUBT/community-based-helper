@@ -92,7 +92,10 @@ function fits(offer: PageOffer, target: VariantTarget, differ: Set<string>, alon
   const ownRam = ownMemory.some((t) => !isStorage(t));
   // দোকান শুধু RAM দেখালে (Tech Marvels-এর "8 gb"), স্টোরেজ নিজের লেবেলেই আছে; RAM-এর অমিল নিচের differ-চেকে ধরা পড়ে
   const ramOnly = optRam && !memory.some((t) => isStorage(t)) && ![...opt].some((t) => differ.has(t) && !own.has(t));
-  if (ownMemory.some((t) => !opt.has(t) && memory.length && (isStorage(t) || differ.has(t) || optRam)) && !ramOnly) return false;
+  // দোকানের লেখা RAM ভুল (Sumash-এর Pixel 9 Pro "12/128GB"): পণ্যটা বাজারে এক RAM-ই (RAM আমাদের ভার্সন আলাদা করে না),
+  // দোকান অন্য RAM লিখলেও আগের দামের হুবহু অপশন থাকলে ওদের লেবেলই ভাঙা — স্টোরেজ মিললেই চলে
+  const ramTypo = offer.price === target.price && optRam && ownRam && ownMemory.filter((t) => !isStorage(t)).every((t) => !differ.has(t)) && memory.filter((t) => !isStorage(t)).every((t) => !own.has(t));
+  if (ownMemory.some((t) => !opt.has(t) && memory.length && (isStorage(t) || differ.has(t) || optRam)) && !ramOnly && !ramTypo) return false;
   if (memory.some((t) => isStorage(t) && !own.has(t))) return false;
   // নিজের লেবেলে RAM না থাকলে অফারের RAM শুধু অতিরিক্ত তথ্য ("12GB / 512GB" = "512GB"); স্টোরেজের অমিল আগেই ধরা পড়ে
   if ([...differ].some((t) => opt.has(t) && !own.has(t) && !(optRam && !isStorage(t) && !ownRam))) return false;
