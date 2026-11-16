@@ -1,7 +1,7 @@
 import { withEr } from "@/utils/bangla-name";
 
 export const bn = {
-  nav: { home: "হোম", search: "খুঁজুন", sellers: "বিক্রেতা", saved: "সেভ করা", menu: "প্রধান মেনু", categories: "ক্যাটাগরি", brands: "ব্র্যান্ড", drops: "বেশি ছাড়" },
+  nav: { home: "হোম", search: "খুঁজুন", compare: "তুলনা", sellers: "বিক্রেতা", saved: "সেভ করা", menu: "প্রধান মেনু", categories: "ক্যাটাগরি", brands: "ব্র্যান্ড", drops: "বেশি ছাড়" },
   megaMenu: {
     subcategories: "ভাগ",
     brands: "ব্র্যান্ড",
@@ -286,7 +286,6 @@ export const bn = {
     noMatch: (q: string) => `"${q}" নামে এই ক্যাটাগরিতে কিছু পাইনি`,
     noOthers: "এই ক্যাটাগরিতে তুলনার মতো আর কোনো পণ্য নেই",
     remove: (name: string) => `${name} তুলনা থেকে সরান`,
-    gone: "লিংকের পণ্যগুলো এখন আর পাওয়া যাচ্ছে না",
     dropped: (n: string) => `লিংকের ${n}টা পণ্য পাওয়া যায়নি বা অন্য ক্যাটাগরির, তাই বাদ রাখা হয়েছে`,
     addMore: (max: string) => `আরেকটা পণ্য যোগ করুন (সর্বোচ্চ ${max}টা)`,
     noPrice: "দাম পাইনি",
@@ -318,8 +317,6 @@ export const bn = {
     shareTitle: (names: string[]) => (names.length > 1 ? `${names.join(" vs ")}: দাম ও স্পেকের তুলনা` : `${names[0]}-এর সাথে তুলনা`),
     sharePrice: (name: string, price: string) => `${name} এখন ${price} থেকে`,
     shareDescription: (prices: string) => `${prices}। কোনটা কিসে এগিয়ে আর কোন দোকানে সবচেয়ে কম দাম, বাংলাদেশের দোকানের দাম মিলিয়ে পাশাপাশি দেখুন।`,
-    empty: "তুলনার জন্য কোনো পণ্য বাছা হয়নি",
-    emptyCta: "পণ্য খুঁজুন",
   },
   saved: {
     title: "সেভ করা",

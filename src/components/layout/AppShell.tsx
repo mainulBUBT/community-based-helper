@@ -3,6 +3,7 @@
 import {
   Bookmark,
   Download,
+  GitCompareArrows,
   House,
   Megaphone,
   Search,
@@ -24,6 +25,7 @@ import { PromoPopup } from "@/components/layout/PromoPopup";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { CategoryIcon } from "@/components/product/CategoryIcon";
 import { SearchBox } from "@/components/search/SearchBox";
+import { AppSplash } from "./AppSplash";
 import { BrandIcon } from "@/components/ui/BrandIcon";
 import { useCategories } from "@/hooks/useCategories";
 import { useI18n } from "@/hooks/useI18n";
@@ -40,6 +42,7 @@ import { categoryPath } from "@/utils/url";
 const NAV: { href: string; key: keyof Messages["nav"]; icon: LucideIcon }[] = [
   { href: "/", key: "home", icon: House },
   { href: "/search/", key: "search", icon: Search },
+  { href: "/compare/", key: "compare", icon: GitCompareArrows },
   { href: "/sellers/", key: "sellers", icon: Store },
   { href: "/saved/", key: "saved", icon: Bookmark },
 ];
@@ -189,6 +192,7 @@ export function AppShell({
           <Suspense>
             <NavProgress />
           </Suspense>
+          <AppSplash name={settings.name} />
           <Announcement settings={settings} />
           <PromoPopup settings={settings} />
           <header ref={headerRef} className="sticky top-0 z-40 border-b border-line-soft bg-surface shadow-sm">
@@ -262,10 +266,25 @@ export function AppShell({
 
           <nav
             aria-label={t.nav.menu}
-            className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 border-t border-line bg-surface pb-[env(safe-area-inset-bottom)] md:hidden"
+            className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-5 border-t border-line bg-surface pb-[env(safe-area-inset-bottom)] md:hidden"
           >
             {NAV.map(({ href, key, icon: Icon }) => {
               const active = isActive(href);
+              if (key === "compare") {
+                return (
+                  <Link
+                    key={href}
+                    href={`${prefix}${href}`}
+                    aria-current={active ? "page" : undefined}
+                    className="flex h-16 flex-col items-center justify-end gap-1 pb-2 text-[11px] font-bold text-brand"
+                  >
+                    <span className="-mt-7 flex size-13 items-center justify-center rounded-full border-4 border-surface bg-brand text-brand-ink shadow-lg">
+                      <Icon size={24} strokeWidth={2.2} aria-hidden="true" />
+                    </span>
+                    {t.nav[key]}
+                  </Link>
+                );
+              }
               return (
                 <Link
                   key={href}

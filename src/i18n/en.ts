@@ -3,7 +3,7 @@ import type { Messages } from "./bn";
 export const plural = (n: string, word: string) => `${n} ${word}${n === "1" ? "" : "s"}`;
 
 export const en: Messages = {
-  nav: { home: "Home", search: "Search", sellers: "Sellers", saved: "Saved", menu: "Main menu", categories: "Categories", brands: "Brands", drops: "Biggest discounts" },
+  nav: { home: "Home", search: "Search", compare: "Compare", sellers: "Sellers", saved: "Saved", menu: "Main menu", categories: "Categories", brands: "Brands", drops: "Biggest discounts" },
   megaMenu: {
     subcategories: "Types",
     brands: "Brands",
@@ -288,7 +288,6 @@ export const en: Messages = {
     noMatch: (q) => `Nothing called "${q}" in this category`,
     noOthers: "No other products in this category to compare",
     remove: (name) => `Remove ${name} from comparison`,
-    gone: "The products in this link are no longer available",
     dropped: (n) => `${plural(n, "product")} in the link couldn't be found or belong to another category, so they were left out`,
     addMore: (max) => `Add another product (up to ${max})`,
     noPrice: "No price yet",
@@ -320,8 +319,6 @@ export const en: Messages = {
     shareTitle: (names) => (names.length > 1 ? `${names.join(" vs ")}: Price in Bangladesh & Specs` : `Compare ${names[0]}`),
     sharePrice: (name, price) => `${name} from ${price}`,
     shareDescription: (prices) => `${prices}. See where each one wins and which Bangladeshi shop has the lowest price, side by side.`,
-    empty: "No product picked to compare",
-    emptyCta: "Find products",
   },
   saved: {
     title: "Saved",

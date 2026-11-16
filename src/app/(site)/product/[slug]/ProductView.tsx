@@ -1,6 +1,6 @@
 "use client";
 
-import { AlertTriangle, Check, ChevronDown, ChevronRight, Clock, Columns2, ExternalLink, Globe, Megaphone, Phone, Store, TrendingDown } from "lucide-react";
+import { AlertTriangle, Check, ChevronDown, ChevronRight, Clock, GitCompareArrows, ExternalLink, Globe, Megaphone, Phone, Store, TrendingDown } from "lucide-react";
 import Link from "next/link";
 import { useState, useSyncExternalStore, type ReactNode } from "react";
 import { SubmitPriceDialog } from "@/components/forms/SubmitPriceDialog";
@@ -379,7 +379,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
                   href={`${prefix}/compare/?p=${encodeURIComponent(product.slug)},${encodeURIComponent(v.slug)}`}
                   className="inline-flex h-9 min-w-0 items-center gap-1.5 rounded-md border border-brand/30 bg-brand-soft px-3 text-sm font-semibold text-brand-text hover:border-brand"
                 >
-                  <Columns2 size={16} className="shrink-0" aria-hidden="true" />
+                  <GitCompareArrows size={16} className="shrink-0" aria-hidden="true" />
                   <span className="truncate">{t.product.compareWithName(v.name)}</span>
                 </Link>
               ))}
@@ -387,7 +387,7 @@ export function ProductView({ initial, regionNotes }: { initial: ProductDetail; 
                 href={`${prefix}/compare/?p=${encodeURIComponent(product.slug)}`}
                 className="inline-flex h-9 items-center gap-1.5 rounded-md border border-line bg-surface px-3 text-sm font-semibold text-dim hover:border-dim hover:text-ink"
               >
-                {!compareWith.length && <Columns2 size={16} aria-hidden="true" />}
+                {!compareWith.length && <GitCompareArrows size={16} aria-hidden="true" />}
                 {compareWith.length ? t.product.compareOther : t.product.compareWith}
               </Link>
             </div>

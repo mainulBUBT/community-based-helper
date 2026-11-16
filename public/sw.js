@@ -1,4 +1,4 @@
-const STATIC = "dordam-static-v3";
+const STATIC = "dordam-static-v4";
 const PAGES = "dordam-pages-v3";
 const LIMITS = { [STATIC]: 200, [PAGES]: 80 };
 const SHELL = ["/", "/search/", "/saved/", "/offline/"];

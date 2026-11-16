@@ -20,7 +20,7 @@ export async function siteMetadata(lang: Lang): Promise<Metadata> {
     title: { default: title, template: `%s | ${name}` },
     description,
     applicationName: name,
-    appleWebApp: { capable: true, title: name, statusBarStyle: "default" },
+    appleWebApp: { capable: true, title: settings.nameEn || settings.name, statusBarStyle: "default" },
     openGraph: { type: "website", siteName: name, locale: en ? "en_US" : "bn_BD", title, description, images: [{ url: "/icons/icon-512.png", width: 512, height: 512, alt: name }] },
     twitter: { card: "summary", title, description, images: ["/icons/icon-512.png"] },
     icons: { icon: "/icons/icon.svg", apple: "/icons/icon-192.png" },

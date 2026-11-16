@@ -64,7 +64,7 @@ export function HomeView({ initial }: { initial: HomeData }) {
             </p>
             <div className="mt-1 flex flex-wrap items-center gap-2.5">
               <Link
-                href={`${prefix}/search/`}
+                href={`${prefix}/compare/`}
                 className="inline-flex h-11 shrink-0 items-center gap-2 rounded-md bg-white px-4 text-[13.5px] font-bold text-brand shadow-[0_10px_24px_-14px_rgb(0_0_0/0.55)] transition-transform hover:-translate-y-px md:h-[46px] md:px-5 md:text-[14.5px]"
               >
                 {t.home.heroPrimary}

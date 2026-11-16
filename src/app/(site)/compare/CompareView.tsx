@@ -1,11 +1,10 @@
 "use client";
 
-import { BatteryCharging, Camera, Check, Columns2, Cpu, Info, ListChecks, Plus, Search, Shield, Store, Tag, X, type LucideIcon } from "lucide-react";
+import { BatteryCharging, Camera, Check, Cpu, Info, ListChecks, Plus, Search, Shield, Store, Tag, X, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState, type RefObject } from "react";
 import { ProductIcon } from "@/components/product/ProductIcon";
-import { EmptyState } from "@/components/ui/EmptyState";
 import { ErrorNotice } from "@/components/ui/ErrorNotice";
 import { ShareButton } from "@/components/ui/ShareButton";
 import { ListSkeleton } from "@/components/ui/Skeleton";
@@ -240,13 +239,19 @@ function sharedRows(details: Detail[], shownKeys: KeySpec[]): Row[] {
     }));
 }
 
-function Picker({ items, summaries, onPick, onClose }: { items: ProductSummary[]; summaries: ProductSummary[]; onPick: (slug: string) => void; onClose?: () => void }) {
+function Picker({ items, summaries, searchRef, onPick, onClose }: { items: ProductSummary[]; summaries: ProductSummary[]; searchRef: RefObject<HTMLInputElement | null>; onPick: (slug: string) => void; onClose?: () => void }) {
   const { t, lang } = useI18n();
   const { categories } = useCategories();
   const [query, setQuery] = useState("");
   const taken = new Set(items.map((s) => s.product.slug));
-  const pool = summaries.filter((s) => s.product.category === items[0].product.category && !taken.has(s.product.slug));
-  const matches = query.trim() ? rankProducts(pool, (s) => s.product, query, categories).map((r) => r.item) : [...pool].sort((a, b) => b.product.popularity - a.product.popularity);
+  const category = items[0]?.product.category;
+  const pool = summaries.filter((s) => (!category || s.product.category === category) && !taken.has(s.product.slug));
+  const prices = items.flatMap((s) => (s.lowest !== null ? [s.lowest] : []));
+  const target = prices.length ? prices.reduce((sum, p) => sum + p, 0) / prices.length : null;
+  const distance = (s: ProductSummary) => (target === null ? 0 : s.lowest === null ? Infinity : Math.abs(s.lowest - target));
+  const matches = query.trim()
+    ? rankProducts(pool, (s) => s.product, query, categories).map((r) => r.item)
+    : [...pool].sort((a, b) => distance(a) - distance(b) || b.product.popularity - a.product.popularity);
 
   return (
     <section className="flex flex-col gap-3 rounded-lg bg-surface p-4 ring-1 ring-line">
@@ -258,9 +263,9 @@ function Picker({ items, summaries, onPick, onClose }: { items: ProductSummary[]
           </button>
         )}
       </div>
-      <label className="flex h-11 items-center gap-2 rounded-md border border-line px-3 focus-within:border-brand">
+      <label className="flex h-11 items-center gap-2 rounded-md border border-line px-3 transition-shadow focus-within:border-brand focus-within:ring-4 focus-within:ring-brand/25">
         <Search size={16} className="shrink-0 text-dim" aria-hidden="true" />
-        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder={t.compare.pickHint} aria-label={t.compare.pickHint} className="w-full min-w-0 bg-transparent text-sm outline-none" />
+        <input ref={searchRef} autoFocus={Boolean(onClose)} value={query} onChange={(e) => setQuery(e.target.value)} placeholder={t.compare.pickHint} aria-label={t.compare.pickHint} className="w-full min-w-0 bg-transparent text-sm outline-none" />
       </label>
       {!query.trim() && matches.length > 0 && <span className="text-xs font-semibold text-dim">{t.compare.popular}</span>}
       {matches.length === 0 ? (
@@ -579,11 +584,12 @@ function Table({ items, prices, labels, rows, loading, failed, onRetry }: { item
 }
 
 export function CompareView() {
-  const { t, num, lang, prefix } = useI18n();
+  const { t, num, lang } = useI18n();
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
   const [picking, setPicking] = useState(false);
+  const pickerSearch = useRef<HTMLInputElement>(null);
   const requested = [...new Set((params.get("p") ?? "").split(",").filter(Boolean))];
   const { data, error, loading, reload } = useAsync(listSummaries, []);
   const found = requested.flatMap((slug) => data?.find((s) => s.product.slug === slug) ?? []);
@@ -643,17 +649,10 @@ export function CompareView() {
 
   if (loading) return <ListSkeleton rows={3} />;
   if (error && !data) return <ErrorNotice onRetry={reload} />;
-  if (!items.length || !data) {
-    return (
-      <EmptyState icon={Columns2} title={requested.length ? t.compare.gone : t.compare.empty}>
-        <Link href={`${prefix}/search/`} className="mt-1 flex h-11 items-center rounded-md bg-brand px-5 font-bold text-brand-ink">
-          {t.compare.emptyCta}
-        </Link>
-      </EmptyState>
-    );
-  }
+  if (!data) return <ListSkeleton rows={3} />;
 
   const canAdd = items.length < MAX_ITEMS;
+  const openSlots = Math.max(0, 2 - items.length);
   const many = items.length > 2;
 
   return (
@@ -691,14 +690,18 @@ export function CompareView() {
               />
             </div>
           ))}
-          {items.length === 1 && (
-            <div className="min-w-0 px-3 md:px-5">
-              <div className="flex aspect-square w-full flex-col items-center justify-center gap-2 rounded-md border-2 border-dashed border-line text-center text-sm font-semibold text-dim md:mx-auto md:max-w-56 lg:mx-0 lg:aspect-auto lg:h-40 lg:max-w-none">
+          {Array.from({ length: openSlots }, (_, i) => (
+            <div key={i} className="min-w-0 px-3 md:px-5">
+              <button
+                type="button"
+                onClick={() => pickerSearch.current?.focus()}
+                className="flex aspect-square w-full flex-col items-center justify-center gap-2 rounded-md border-2 border-dashed border-line text-center text-sm font-semibold text-dim hover:border-brand hover:text-brand md:mx-auto md:max-w-56 lg:mx-0 lg:aspect-auto lg:h-40 lg:max-w-none"
+              >
                 <Plus size={22} aria-hidden="true" />
                 {t.compare.pickSlot}
-              </div>
+              </button>
             </div>
-          )}
+          ))}
         </div>
         {canAdd && items.length > 1 && !picking && (
           <button
@@ -711,7 +714,7 @@ export function CompareView() {
           </button>
         )}
       </section>
-      {canAdd && (items.length === 1 || picking) && <Picker items={items} summaries={data} onPick={add} onClose={items.length > 1 ? () => setPicking(false) : undefined} />}
+      {canAdd && (openSlots > 0 || picking) && <Picker items={items} summaries={data} searchRef={pickerSearch} onPick={add} onClose={items.length > 1 ? () => setPicking(false) : undefined} />}
       {items.length > 1 && current && <Edge items={items} rows={rows} />}
       {items.length > 1 && <Table items={items} prices={views.map((v) => v.price)} labels={views.map((v) => (v.detail && v.detail.choices.length > 1 ? v.label : null))} rows={rows} loading={details.loading} failed={Boolean(details.error) && !current} onRetry={details.reload} />}
     </div>

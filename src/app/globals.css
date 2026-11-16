@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant standalone (@media (display-mode: standalone));
+
 @theme {
   --color-page: light-dark(#f6f7f9, #0f1115);
   --color-surface: light-dark(#ffffff, #171a20);
@@ -10,6 +12,7 @@
   --color-dim: light-dark(#5b6170, #a3a8b4);
   --color-faint: light-dark(#8b909b, #737884);
   --color-brand: light-dark(#0f766e, #4fd1c5);
+  --color-splash: #0f766e;
   --color-brand-hover: light-dark(#0b5e57, #81e6d9);
   --color-brand-ink: light-dark(#ffffff, #042f2c);
   --color-brand-soft: light-dark(#e6f4f1, #0f2a28);
@@ -64,6 +67,8 @@
   --animate-marquee: marquee 60s linear infinite;
   --animate-ticker-in: ticker-in 450ms ease-out both;
   --animate-ticker-out: ticker-out 450ms ease-in both;
+  --animate-splash-out: splash-out 300ms ease-in 1200ms forwards;
+  --animate-splash-name: splash-name 400ms ease-out 150ms both;
 
   @keyframes toast-in {
     from {
@@ -91,6 +96,18 @@
     to {
       translate: 0 -100%;
       opacity: 0;
+    }
+  }
+  @keyframes splash-out {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @keyframes splash-name {
+    from {
+      opacity: 0;
+      translate: 0 6px;
     }
   }
 }
