@@ -11,6 +11,8 @@ import type { SiteSettings } from "@/types/admin";
 
 const SEEN_KEY = "popup-seen";
 const noSlash = (path: string) => path.replace(/\/+$/, "");
+// AppSplash-এর অ্যানিমেশন (globals.css: 1200ms দেরি + 300ms fade) শেষ হওয়ার পর পপআপ
+const SPLASH_MS = 1500;
 
 // এই ভিজিটে একবার; একই পোস্টার আবার দেখায় না, নতুন পোস্টার দেখায়
 function firstTime(image: string) {
@@ -38,15 +40,19 @@ export function PromoPopup({ settings }: { settings: SiteSettings }) {
       return;
     }
     const poster = new Image();
+    let timer: ReturnType<typeof setTimeout> | undefined;
     poster.onload = () => {
-      if (firstTime(image)) {
+      if (!firstTime(image)) return;
+      const wait = matchMedia("(display-mode: standalone)").matches ? SPLASH_MS : 0;
+      timer = setTimeout(() => {
         trackEvent("popup-view", pathname);
         setOpen(true);
-      }
+      }, wait);
     };
     poster.src = image;
     return () => {
       poster.onload = null;
+      clearTimeout(timer);
     };
   }, [popupEnabled, image, href, pathname]);
 
