@@ -156,6 +156,14 @@ function CategoryStrip() {
         >
           {t.nav.sellers}
         </Link>
+        <Link
+          href={`${prefix}/compare/`}
+          aria-current={current?.startsWith("/compare") ? "page" : undefined}
+          className={`flex h-8 shrink-0 items-center gap-1.5 rounded-md px-3 text-sm font-semibold ${current?.startsWith("/compare") ? "bg-white/20" : "hover:bg-white/10"}`}
+        >
+          <GitCompareArrows size={16} aria-hidden="true" />
+          {t.nav.compare}
+        </Link>
       </div>
     </nav>
   );
@@ -232,6 +240,13 @@ export function AppShell({
                   className={`flex h-16 items-center border-b-2 px-1 text-sm font-semibold ${current.startsWith("/seller") ? "border-brand text-brand" : "border-transparent text-ink hover:text-brand"}`}
                 >
                   {t.nav.sellers}
+                </Link>
+                <Link
+                  href={`${prefix}/compare/`}
+                  className={`flex h-16 items-center gap-1 border-b-2 px-1 text-sm font-semibold ${current.startsWith("/compare") ? "border-brand text-brand" : "border-transparent text-ink hover:text-brand"}`}
+                >
+                  <GitCompareArrows size={15} strokeWidth={2.5} aria-hidden="true" />
+                  {t.nav.compare}
                 </Link>
               </nav>
               <div className="flex items-center gap-2">
