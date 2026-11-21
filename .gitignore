@@ -39,3 +39,7 @@ workers/.tmp/
 
 # QA স্ক্রিনশট (রুটে); repo তে নয়
 /*.png
+
+# Local design assets
+design/
+posters/
