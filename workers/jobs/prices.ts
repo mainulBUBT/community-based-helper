@@ -47,7 +47,7 @@ interface Tally {
 // run শুরু থেকে গোনা, workflow timeout ৪৫ মিনিটের ভেতরে। ধীর দোকান (`pace`) নিজের পুরো তালিকা শেষ করতে পারে না,
 // তাই ধাপ ভাগ করা না থাকলে ফলব্যাক আর AI যাচাই কোনোদিন সময় পায় না। ফলব্যাক সরাসরি পড়ার সাথেই চলে
 // GitHub এর job ৪৫ মিনিটে মারা যায়; ঘরের runner এ সেই সীমা নেই, তাই ধীর দোকান (browser, ধীর সাইট) একবারেই শেষ হয়
-const MINUTES = { github: { direct: 15, fallback: 22, total: 28 }, local: { direct: 30, fallback: 37, total: 43 } };
+const MINUTES = { github: { direct: 15, fallback: 22, total: 28 }, local: { direct: 60, fallback: 70, total: 80 } };
 const QUEUE_WAIT_MS = 1000;
 // এর কম পাতা পড়া গেলে দাম-ছাড়া পাতাকে "স্টকে নেই" নয়, parser ভাঙা ধরা হয়
 const STORE_READS_TRUSTED = 3;
