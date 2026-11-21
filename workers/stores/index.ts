@@ -944,6 +944,17 @@ export const stores: Store[] = [
     match: /^\/[^/]+$/,
     condition: "official",
   }),
+  // পণ্যের পাতা রুটে, ব্লগ-পাতাও; শিরোনাম আর JSON-LD দাম মিলিয়েই বাছা হয়
+  sitemapStore({
+    id: "bytebliss",
+    name: "ByteBliss",
+    origin: "https://bytebliss.com.bd",
+    sample: "https://bytebliss.com.bd/macbook-pro-m6-14-inch-16gb-1tb-spaceblack-2195",
+    sitemap: "https://bytebliss.com.bd/sitemap.xml",
+    path: "/",
+    match: /^\/[^/]+$/,
+    condition: "unofficial",
+  }),
   sitemapStore({
     id: "cosmeticscorner",
     name: "Cosmetics Corner",

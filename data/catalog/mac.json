@@ -25,6 +25,11 @@
       "name": "Executive Machines",
       "website": "https://executivemachines.com",
       "note": "Apple Authorised Reseller & service provider (official); widest official config coverage incl. M5 Max and Mac Studio; usually highest prices."
+    },
+    {
+      "name": "ByteBliss",
+      "website": "https://bytebliss.com.bd",
+      "note": "Apple importer (unofficial); per-config product pages, one price each read from JSON-LD. Sitemap mixes blog posts with products at root — matcher relies on page title + JSON-LD price."
     }
   ],
   "products": [
@@ -781,6 +786,157 @@
           "condition": "official",
           "region": null,
           "checkedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "brand": "Apple",
+      "name": "MacBook Pro 14\" M6",
+      "category": "laptop",
+      "releaseYear": 2026,
+      "variants": [
+        {
+          "label": "M6 16GB / 1TB",
+          "attributes": {
+            "chip": "M6",
+            "ram": "16GB",
+            "storage": "1TB",
+            "cpu": "12-core",
+            "gpu": "12-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M6 24GB / 1TB",
+          "attributes": {
+            "chip": "M6",
+            "ram": "24GB",
+            "storage": "1TB",
+            "cpu": "12-core",
+            "gpu": "12-core"
+          },
+          "officialPrice": null
+        },
+        {
+          "label": "M6 32GB / 1TB",
+          "attributes": {
+            "chip": "M6",
+            "ram": "32GB",
+            "storage": "1TB",
+            "cpu": "12-core",
+            "gpu": "12-core"
+          },
+          "officialPrice": null
+        }
+      ],
+      "colors": [
+        "Space Black",
+        "Silver"
+      ],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro-m6/macbook-pro-m6-space-black-01-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro-m6/macbook-pro-m6-silver-01-500x500.webp"
+      ],
+      "specsSource": "https://www.startech.com.bd/macbook-pro-m6",
+      "offers": [
+        {
+          "variant": "M6 16GB / 1TB",
+          "site": "MacZen BD",
+          "url": "https://www.maczenbd.com/products/macbook/14-inch-macbook-pro-m6",
+          "price": 268000,
+          "oldPrice": 274000,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-11-21"
+        },
+        {
+          "variant": "M6 24GB / 1TB",
+          "site": "MacZen BD",
+          "url": "https://www.maczenbd.com/products/macbook/14-inch-macbook-pro-m6",
+          "price": 295000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-11-21"
+        },
+        {
+          "variant": "M6 32GB / 1TB",
+          "site": "MacZen BD",
+          "url": "https://www.maczenbd.com/products/macbook/14-inch-macbook-pro-m6",
+          "price": 335000,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-11-21"
+        },
+        {
+          "variant": "M6 16GB / 1TB",
+          "site": "ByteBliss",
+          "url": "https://bytebliss.com.bd/macbook-pro-m6-14-inch-16gb-1tb-spaceblack-2195",
+          "price": 274999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-11-21"
+        },
+        {
+          "variant": "M6 24GB / 1TB",
+          "site": "ByteBliss",
+          "url": "https://bytebliss.com.bd/macbook-pro-m6-14-inch-24gb-1tb-spaceblack-2195-2196",
+          "price": 294999,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-11-21"
+        },
+        {
+          "variant": "M6 16GB / 1TB",
+          "site": "Apple Gadgets",
+          "url": "https://www.applegadgetsbd.com/product/macbook-pro-m6-14-inch-12-core-cpu-12-core-gpu",
+          "price": 274999,
+          "oldPrice": null,
+          "inStock": false,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-11-21"
+        },
+        {
+          "variant": "M6 16GB / 1TB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/macbook-pro-m6/",
+          "price": 284999,
+          "oldPrice": 304999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-11-21"
+        },
+        {
+          "variant": "M6 24GB / 1TB",
+          "site": "Mobile Buzz BD",
+          "url": "https://mobilebuzzbd.com/product/macbook-pro-m6/",
+          "price": 304999,
+          "oldPrice": 349999,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-11-21"
+        },
+        {
+          "variant": "M6 16GB / 1TB",
+          "site": "MC Solution",
+          "url": "https://mcsolution.com.bd/apple-macbook-pro-m6-14-12-12/",
+          "price": 332499,
+          "oldPrice": null,
+          "inStock": true,
+          "condition": "unofficial",
+          "region": null,
+          "checkedAt": "2026-11-21"
         }
       ]
     },

@@ -52,6 +52,7 @@
 | Umrelo | WooCommerce `sitemap_index.xml` (`/product/`) | `wooVariants` | ✅ ১১ নভেম্বর যোগ |
 | Electronics Bangladesh | `sitemap.xml` (`/product/`), অফিসিয়াল ফোন | `itemprop="price"` + availability | ✅ ১১ নভেম্বর যোগ |
 | Smart Deal | `sitemap.xml` (`/product/`, সব ধরনের পণ্য) | JSON-LD | ✅ ১১ নভেম্বর যোগ |
+| ByteBliss | ফ্ল্যাট sitemap (`/`) — ব্লগ-পাতাও আছে, শিরোনাম আর JSON-LD দামেই বাছা | JSON-LD (parser লাগে না) | ✅ ২১ নভেম্বর যোগ (MacBook Pro M6 ব্যাচে) |
 | Computer Vision | ফ্ল্যাট `sitemap.xml` | `itemprop="price"` + availability | ✅ ১১ নভেম্বর যোগ |
 | Onix Computer | ফ্ল্যাট `sitemap.xml` | JSON-LD | ✅ ১১ নভেম্বর যোগ |
 | Goriber Gadget, Gadget Monkey, Tech Den, Tech Valley | sitemap/Woo খোলা | | ⛔ ১১ নভেম্বর বাদ: আমাদের পণ্যে দাম বেশিরভাগ বেশি |
@@ -695,3 +696,19 @@ mobile, tablet, earbuds, speaker, ssd, desktop-এর ৮০টা স্পে�
 - **ভার্সনের ক্রম:** id তালিকার ক্রমে (`~v1`, `~v2`)। ২৮ অক্টোবর খেজুরে 250g শুরুতে বসায় id সরে যায়; seed 500g-এর দাম 1kg-তে বসাত আর দ্বিতীয় "1kg" ভার্সন বানাত (Karkuma মধুতে "400g")। JSON-এর ক্রম DB-র সাথে মেলানো, বাড়তি ভার্সন এখন JSON-এর 250g/300g। `catalog:build` এখন ক্রম বদলালে থামে; নতুন ভার্সন সবসময় তালিকার শেষে (ইচ্ছা করে হলে `CATALOG_ALLOW_REORDER=1`, সাথে DB ঠিক করার batch)।
 - **`prices`:** পাতা একই মাপে (স্টোরেজ/RAM/ওজন) অপশন দেখায় কিন্তু আমাদের ভার্সন তাতে নেই, অথবা পাতায় দামই নেই অথচ একই run-এ ওই দোকানের অন্তত ৩টা পাতা পড়া গেছে: দামটা "স্টকে নেই" (আগে পুরনো দাম চলতেই থাকত)। পাতায় আগের দামের হুবহু অপশন থাকলে দোকানের লেবেল ভুল ধরে কিছু বদলায় না।
 - **বাকি:** Computer Village এখন HTTP 503 + Retry-After ২৪ ঘণ্টা দিচ্ছে (Jina-ও পড়তে পারে না); Chaldal-এর পাতা ২০-৭৪ সেকেন্ড, timeout-এ Jina ফলব্যাক (`8d8bb9e`)।
+
+### MacBook Pro 14" M6 (২১ নভেম্বর ২০২৬)
+
+নতুন লঞ্চ (৬ নভেম্বর, $1,999 থেকে)। ৩ ভার্সন — M6 16/24/32GB, সব 1TB; প্রতিটা 12-core CPU/GPU, Space Black আর Silver। স্পেক উৎস Star Tech-এর M6 পাতা। দোকান ৫টা, ৯ দাম — প্রতিটা পাতা খুলে যাচাই:
+
+| দোকান | 16GB / 1TB | 24GB / 1TB | 32GB / 1TB | পাতার ধরন |
+|---|---|---|---|---|
+| MacZen BD | ৳২,৬৮,০০০ (কাটা ৳২,৭৪,০০০) | ৳২,৯৫,০০০ | ৳৩,৩৫,০০০ | `specPriceMap`, InStock |
+| ByteBliss | ৳২,৭৪,৯৯৯ | ৳২,৯৪,৯৯৯ | — | প্রতি কনফিগ আলাদা পাতা, JSON-LD |
+| Apple Gadgets | ৳২,৭৪,৯৯৯ (pre order) | — | — | এক পাতায় সব, ডিফল্টের দামই পড়ে |
+| Mobile Buzz BD | ৳২,৮৪,৯৯৯ (কাটা ৳৩,০৪,৯৯৯) | ৳৩,০৪,৯৯৯ (কাটা ৳৩,৪৯,৯৯৯) | — | `wooVariations` JSON |
+| MC Solution | ৳৩,৩২,৪৯৯ | — | — | দাম-রেঞ্জের সবচেয়ে কমটা (ভ্যারিয়েশন AJAX বন্ধ) |
+
+- **নতুন দোকান ByteBliss** (`bytebliss.com.bd`): robots খোলা, JSON-LD দাম; Genten/Binary Logic-র মতো `path: "/"` + `match: /^\/[^/]+$/` এন্ট্রি। `store:scan` দিয়ে যাচাই, `worker:check`-এ ২/২ ঠিক।
+- **যোগ হয়নি:** Star Tech (পাতা "To be announced", দাম নেই), Sumash/Gadget & Gear/Executive Machines (এখনো তালিকায় নেই), CustomMacBD (দাম ৳০), Gadget BD (পাতাই বলছে স্পেক অনিশ্চিত, "Midnight" রঙ আর 512GB যা M6 14"-এ নেই), iStockBD ("approximate price" লেখা প্লেসহোল্ডার পাতা, স্টক আউট, সাথে সাথে রেট লিমিটও খেয়েছে)।
+- 32GB ভার্সন ১ দোকানে — চলতি বছরের লঞ্চের ১–২ বিশ্বস্ত দোকান ছাড় (strict-rules ধাপ ৩); worker বাকি দোকান সময়ের সাথে জুড়বে।

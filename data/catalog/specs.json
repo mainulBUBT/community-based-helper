@@ -97506,5 +97506,228 @@
     }
    ]
   }
+ ],
+ "https://www.startech.com.bd/macbook-pro-m6": [
+  {
+   "group": "Processor",
+   "items": [
+    {
+     "label": "Processor Brand",
+     "value": "Apple"
+    },
+    {
+     "label": "Processor Model",
+     "value": "M6 chip"
+    },
+    {
+     "label": "Processor Core",
+     "value": "12-core CPU with: 2 super cores, 4 performance cores, 6 efficiency cores"
+    },
+    {
+     "label": "NPU",
+     "value": "Dual 16-core Neural Engine Neural Accelerators Hardware-accelerated ray tracing"
+    }
+   ]
+  },
+  {
+   "group": "Display",
+   "items": [
+    {
+     "label": "Display Size",
+     "value": "14.2-inch"
+    },
+    {
+     "label": "Display Type",
+     "value": "Liquid Retina XDR Display"
+    },
+    {
+     "label": "Display Resolution",
+     "value": "3024×1964"
+    },
+    {
+     "label": "Touch Screen",
+     "value": "No"
+    },
+    {
+     "label": "Refresh Rate",
+     "value": "ProMotion technology with adaptive refresh rates up to 120Hz Fixed refresh rates: 47.95Hz, 48.00Hz, 50.00Hz, 59.94Hz, 60.00Hz"
+    },
+    {
+     "label": "Display Features",
+     "value": "XDR (Extreme Dynamic Range) 1,000,000:1 contrast ratio XDR brightness: up to 1000 nits sustained full-screen,3 1600 nits peak (HDR content only) SDR brightness: up to 1000 nits (outdoor) 1 nit minimum brightness Color 1 billion colors Wide color (P3) True Tone technology"
+    }
+   ]
+  },
+  {
+   "group": "Memory",
+   "items": [
+    {
+     "label": "RAM",
+     "value": "16GB"
+    },
+    {
+     "label": "RAM Type",
+     "value": "Unified memory"
+    },
+    {
+     "label": "Removable",
+     "value": "Non-Removable"
+    },
+    {
+     "label": "Bus Speed",
+     "value": "Up to 153GB/s memory bandwidth (16GB Variant)"
+    }
+   ]
+  },
+  {
+   "group": "Storage",
+   "items": [
+    {
+     "label": "Storage Type",
+     "value": "SSD"
+    },
+    {
+     "label": "Storage Capacity",
+     "value": "1TB SSD"
+    }
+   ]
+  },
+  {
+   "group": "Graphics",
+   "items": [
+    {
+     "label": "Graphics Model",
+     "value": "12-core GPU"
+    },
+    {
+     "label": "Graphics Memory",
+     "value": "Shared"
+    }
+   ]
+  },
+  {
+   "group": "Keyboard & TouchPad",
+   "items": [
+    {
+     "label": "Keyboard Type",
+     "value": "Backlit Magic Keyboard"
+    },
+    {
+     "label": "Keyboard Features",
+     "value": "78 (U.S.) or 79 (ISO) keys including 12 full-height function keys and 4 arrow keys in an inverted‑T arrangement Touch ID Ambient light sensor"
+    },
+    {
+     "label": "TouchPad",
+     "value": "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing, and Multi-Touch gestures"
+    }
+   ]
+  },
+  {
+   "group": "Camera & Audio",
+   "items": [
+    {
+     "label": "WebCam",
+     "value": "12MP Center Stage camera with support for Desk View 1080p HD video recording Advanced image signal processor with computational video"
+    },
+    {
+     "label": "Speaker",
+     "value": "High-fidelity six-speaker sound system with force-cancelling woofers"
+    },
+    {
+     "label": "Microphone",
+     "value": "Studio-quality three-mic array with high signal-to-noise ratio and directional beamforming 3.5 mm headphone jack with advanced support for high-impedance headphones"
+    },
+    {
+     "label": "Audio Features",
+     "value": "Wide stereo sound Support for Spatial Audio when playing music or video with Dolby Atmos on built-in speakers Spatial Audio with dynamic head tracking when using AirPods (3rd generation), AirPods 4, AirPods Pro, AirPods Pro 2, and AirPods Max"
+    }
+   ]
+  },
+  {
+   "group": "Ports & Slots",
+   "items": [
+    {
+     "label": "Card Reader",
+     "value": "1x SDXC card slot"
+    },
+    {
+     "label": "HDMI Port",
+     "value": "1x HDMI"
+    },
+    {
+     "label": "USB Type-C / Thunderbolt Port",
+     "value": "3 x Thunderbolt 4/USB-4 (Type-C) ports"
+    },
+    {
+     "label": "Headphone & Microphone Port",
+     "value": "3.5 mm headphone jack"
+    }
+   ]
+  },
+  {
+   "group": "Network & Connectivity",
+   "items": [
+    {
+     "label": "WiFi",
+     "value": "Wi-Fi 7"
+    },
+    {
+     "label": "Bluetooth",
+     "value": "Bluetooth 6"
+    }
+   ]
+  },
+  {
+   "group": "Security",
+   "items": [
+    {
+     "label": "Fingerprint Sensor",
+     "value": "Touch ID"
+    }
+   ]
+  },
+  {
+   "group": "Software",
+   "items": [
+    {
+     "label": "Operating System",
+     "value": "macOS"
+    }
+   ]
+  },
+  {
+   "group": "Power",
+   "items": [
+    {
+     "label": "Battery Type",
+     "value": "Lithium‑polymer"
+    },
+    {
+     "label": "Battery Capacity",
+     "value": "72.4 Wh"
+    },
+    {
+     "label": "Adapter Type",
+     "value": "60W USB-C Power Adapter (MagSafe 3)"
+    }
+   ]
+  },
+  {
+   "group": "Physical Specification",
+   "items": [
+    {
+     "label": "Color",
+     "value": "Space Black, Silver"
+    },
+    {
+     "label": "Dimensions",
+     "value": "Height: 0.61 inch (1.55 cm) Width: 12.31 inches (31.26 cm) Depth: 8.71 inches (22.12 cm)"
+    },
+    {
+     "label": "Weight",
+     "value": "3.4 pounds (1.55 kg)"
+    }
+   ]
+  }
  ]
 }
