@@ -75,7 +75,7 @@ Supabase, Cloudflare আর ডোমেইনে চালু করার প�
 | 9 | অ্যাডমিন প্যানেল | ✅ | [09-admin-panel](features/09-admin-panel.md) |
 | 10 | লগইন | ⛔ | [10-auth](features/10-auth.md) |
 | 11 | ডেটাবেস (Supabase) | ⛔ | [11-database](features/11-database.md) |
-| 12 | দাম আনার worker আর cron | 🟡 দিনে ৬ বার cadence আর ফলব্যাক চেইন (Jina → Gemini) হয়েছে (৪ নভেম্বর); discover দোকান-প্রতি অগ্রগতি আর prices-এ ফলব্যাক একসাথে (১২ নভেম্বর, migration push বাকি); Gemini key অ্যাডমিনে বসানো বাকি | [12-workers-cron](features/12-workers-cron.md) |
+| 12 | দাম আনার worker আর cron | 🟡 দিনে ৬ বার cadence আর ফলব্যাক চেইন (Jina → Gemini) হয়েছে (৪ নভেম্বর); discover দোকান-প্রতি অগ্রগতি আর prices-এ ফলব্যাক একসাথে (১২ নভেম্বর, migration push বাকি); ম্যাচারে ব্র্যান্ডহীন লিস্টিং ফেরা + ইঞ্চি/কোর-জোড়া চেনা (২৪ নভেম্বর); Gemini key অ্যাডমিনে বসানো বাকি | [12-workers-cron](features/12-workers-cron.md) |
 | 13 | AI (OpenAI-compatible LLM) | 🟡 ৫টা আগে-থাকা প্রোভাইডার (Gemini, Groq, OpenRouter, Cloudflare, Z.ai) + নাম দিয়ে যত খুশি OpenAI-compatible প্রোভাইডার | [13-llm](features/13-llm.md) |
 | 14 | ভিজিটর গোনা আর লগ | 🟡 পপআপ ব্যানার আর মৌসুমি টাইলের দেখা-ক্লিক গোনা হয় (অ্যাডমিন → ভিজিটর; migration push করা বাকি) | [14-analytics-logs](features/14-analytics-logs.md) |
 | 15 | দোকানের জন্য Telegram bot | ⬜ | [15-telegram-bot](features/15-telegram-bot.md) |

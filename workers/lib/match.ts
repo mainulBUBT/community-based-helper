@@ -42,7 +42,7 @@ const KINDS = new Map<string, string[]>(
     router: ["router"],
   }),
 );
-const ACCESSORIES = /\b(for|case|cover|protector|glass|film|charger|adapter|cable|strap|skin|holder|stand|pouch|sleeve|lens|tempered|magsafe|airtag|keyboard|mouse|pencil|dock|hub|shockproof|bumper|airbag|privacy|holster|wallet|refurbished|used)\b/;
+const ACCESSORIES = /\b(for|case|cover|protector|glass|film|charger|adapter|cable|strap|skin|holder|stand|pouch|sleeve|lens|tempered|magsafe|airtag|keyboard|mouse|pencil|dock|hub|shockproof|bumper|airbag|privacy|holster|wallet|refurbished|used|replacement|silicone|eartips)\b/;
 const INCH = /(\d{1,2}(?:\.\d{1,2})?)\s*(?:["”]|''|-?\s*inch)/i;
 const SPEED = /\b(\d{3,5})\s*mhz\b/i;
 const CHIP = /\b(m\d|a1\d)(?:[\s-]+(pro|max|ultra))?\b/i;
@@ -184,10 +184,25 @@ const UNIT = /^(?:mah|hz|db|w|v|nits?|mp|cm|mm|inch|gb|tb)$/;
 function otherModel(title: string, ordered: string[], required: string[], product: CatalogProduct): boolean {
   if (!GENERATIONAL.has(product.category ?? "")) return false;
   const at = Math.max(...required.map((t) => ordered.indexOf(t))) + 1;
-  const next = ordered[at];
-  if (!next || !/^\d{1,3}$/.test(next) || UNIT.test(ordered[at + 1] ?? "") || inch(title) === Number(next)) return false;
-  const known = [product.name, ...product.variants.map((v) => v.label)].flatMap(tokens).map((t) => t.replace(/(gb|tb|mm)$/, ""));
-  return !known.includes(next);
+  const bare = (t: string | undefined) => t !== undefined && /^\d{1,3}$/.test(t);
+  const unknown = (n: string) => ![product.name, ...product.variants.map((v) => v.label)].flatMap(tokens).map((t) => t.replace(/(gb|tb|mm)$/, "")).includes(n);
+  // নামের পরের সংখ্যা: জোড়া ইঞ্চি বা কোর-গণনা ("6 1 inch", "m5 10 core cpu", "m6 14 12 12", "14 15 16 24") — প্রজন্ম নয়
+  for (let i = at; bare(ordered[i]); ) {
+    if (!bare(ordered[i + 1])) {
+      if (i > at) return false;
+      const tail = ordered[i + 1] ?? "";
+      if (UNIT.test(tail) || /^(core|c|cpu|gpu)$/.test(tail) || inch(title) === Number(ordered[i])) return false;
+      return unknown(ordered[i]);
+    }
+    const tail = ordered[i + 2] ?? "";
+    if (bare(tail)) {
+      i += 2;
+      continue;
+    }
+    if (!tail || UNIT.test(tail) || SIZE.test(tail)) return false;
+    return unknown(ordered[i]);
+  }
+  return false;
 }
 
 // ইঞ্চি আর বন্ধনীর চিপ নামের অংশ হলেও দোকানের লিংকে প্রায়ই থাকে না, তাই এগুলো বাধ্যতামূলক নয়, শুধু অমিল হলে বাদ
@@ -209,9 +224,11 @@ function productFits(title: string, ordered: string[], product: CatalogProduct, 
   const { required, glued: gluedParts } = nameKey(product);
   if (!required.every((t) => listing.has(t))) return false;
   if (!gluedParts.every((parts) => adjacent(ordered, parts))) return false;
-  if (otherModel(title, ordered, required, product)) return false;
   const own = brandTokens(product.brand);
   const hasBrand = own.length > 0 && own.some((t) => listing.has(t));
+  // ব্র্যান্ডহীন লিস্টিংয়ে নামের শুরুর দুই শব্দ একই ক্রমে থাকতে হয়: "smart watch" শেষে থাকা "kfi w6 lite" Redmi Watch 6 Lite এ বসত
+  if (!hasBrand && required.length >= 2 && ordered.indexOf(required[1]) < ordered.indexOf(required[0])) return false;
+  if (otherModel(title, ordered, required, product)) return false;
   // লিস্টিংয়ে অন্য ব্র্যান্ডের নাম থাকলে পাতাটা ওঁদেরই — "Realme Buds 2" এই "Buds 2" নয়
   if (!hasBrand && own.length > 0 && [...listing].some((t) => rivals.has(t))) return false;
   // ছোট নাম ("Buds 2") কটন-বাডস পর্যন্ত মিলে ফেলে — ব্র্যান্ডের নাম পাতায় থাকতেই হবে
@@ -235,6 +252,9 @@ const NON_GADGET_CATEGORIES = new Set(["skincare", "makeup", "baby-care", "diape
 
 // লিস্টিংয়ে কোনো ভার্সনের part number থাকলে শুধু সেই পণ্য; অন্য পণ্যের নাম মিললেও নয়
 // প্রতি ব্র্যান্ডের "প্রতিদ্বন্দ্বী ব্র্যান্ডের শব্দ" ক্যাটালগ পিছু একবার; আগে প্রতি লিস্টিংয়ে প্রতি পণ্যে নতুন করে বানানো হতো
+// প্রতিদ্বন্দ্বীর শব্দ নামের আসল অংশ হতে হবে: "Shefa'a" ভেঙে আসা "a" বা "Huawei Nova 15 Max"-এর "15" ব্র্যান্ড-ছাড়া "galaxy a15 5g" লিস্টিং বাদ করত
+const RIVAL_WORD = /^(?=.*[a-z])[a-z0-9]{2,}$/;
+
 const rivalCache = new WeakMap<object, { size: number; own: Map<string, string[]>; rivals: Map<string, Set<string>> }>();
 
 function rivalsOf<T extends CatalogProduct>(catalog: T[]) {
@@ -242,7 +262,7 @@ function rivalsOf<T extends CatalogProduct>(catalog: T[]) {
   if (!cached || cached.size !== catalog.length) {
     const own = new Map(catalog.map((p) => [p.brand, brandTokens(p.brand)]));
     const all = [...own.values()].flat();
-    const rivals = new Map([...own].map(([brand, tokensOfBrand]) => [brand, new Set(all.filter((t) => !tokensOfBrand.includes(t)))]));
+    const rivals = new Map([...own].map(([brand, tokensOfBrand]) => [brand, new Set(all.filter((t) => !tokensOfBrand.includes(t) && RIVAL_WORD.test(t)))]));
     cached = { size: catalog.length, own, rivals };
     rivalCache.set(catalog, cached);
   }
@@ -252,6 +272,7 @@ function rivalsOf<T extends CatalogProduct>(catalog: T[]) {
 export function findProducts<T extends CatalogProduct>(title: string, catalog: T[]): T[] {
   const accessory = isAccessory(title);
   const listing = tokens(title);
+  const listingSet = new Set(listing);
   const { rivals } = rivalsOf(catalog);
   const fit = catalog.filter((p) => {
     if (accessory && !GADGET_CATEGORIES.has(p.category ?? "") && !NON_GADGET_CATEGORIES.has(p.category ?? "")) return false;
@@ -260,7 +281,11 @@ export function findProducts<T extends CatalogProduct>(title: string, catalog: T
   const coded = catalog.filter((p) => p.variants.some((v) => hasCode(title, v.sku)));
   if (coded.length) return fit.filter((p) => coded.includes(p));
   const best = Math.max(...fit.map((p) => tokens(p.name).length));
-  return fit.filter((p) => tokens(p.name).length === best);
+  const picked = fit.filter((p) => tokens(p.name).length === best);
+  // সমান দৈর্ঘ্যে শিরোনামের সাথে বেশি শব্দ মেলা পণ্যটা ("macbook air 15 m5" এ 15", 13" নয় — নাম ভেঙে ইঞ্চি কাটা যায়)
+  const overlap = (p: T) => tokens(p.name).filter((t) => listingSet.has(t)).length;
+  const top = Math.max(...picked.map(overlap));
+  return picked.filter((p) => overlap(p) === top);
 }
 
 function sizes(list: Iterable<string>) {
