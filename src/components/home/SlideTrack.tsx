@@ -86,7 +86,8 @@ export function SlideTrack({ children, interval }: { children: ReactNode; interv
     >
       <div
         ref={trackRef}
-        className={`no-scrollbar flex gap-3 overflow-x-auto overscroll-x-contain ${dragging ? "cursor-grabbing snap-none select-none" : "snap-x snap-mandatory md:cursor-grab"}`}
+        // py-2 -my-2: overflow ট্র্যাক হোভারের উঠানো ২px আর ছায়া কেটে দেয়, তাই ভেতরে ফাঁকা জায়গা
+        className={`no-scrollbar -my-2 flex gap-3 overflow-x-auto overscroll-x-contain py-2 ${dragging ? "cursor-grabbing snap-none select-none" : "snap-x snap-mandatory md:cursor-grab"}`}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
