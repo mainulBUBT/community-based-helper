@@ -10,6 +10,7 @@ export interface Step {
 }
 
 interface Tool {
+  access: "read" | "owner" | "auto";
   description: string;
   parameters: Record<string, unknown>;
   run: (env: ManagerEnv, args: Record<string, unknown>) => Promise<{ data: unknown; result: string; tone: Tone }>;
@@ -18,6 +19,48 @@ interface Tool {
 const digits = "০১২৩৪৫৬৭৮৯";
 export const bn = (value: number) => String(value).replace(/\d/g, (d) => digits[Number(d)]);
 const noArgs = { type: "object", properties: {} };
+
+function record(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function textArg(args: Record<string, unknown>, key: string, maxLength: number): string {
+  const value = args[key];
+  if (typeof value !== "string" || !value.trim() || value.trim().length > maxLength) throw new Error(`${key} is required and must be at most ${maxLength} characters`);
+  return value.trim();
+}
+
+function onlyKeys(args: Record<string, unknown>, allowed: string[]): void {
+  const unexpected = Object.keys(args).find((key) => !allowed.includes(key));
+  if (unexpected) throw new Error(`Unexpected argument: ${unexpected}`);
+}
+
+function productVariants(value: unknown): { label: string; attributes: Record<string, string> }[] {
+  if (!Array.isArray(value) || value.length < 1 || value.length > 20) throw new Error("Provide between 1 and 20 variants");
+  return value.map((item) => {
+    if (!record(item) || Object.keys(item).some((key) => key !== "label" && key !== "attributes")) throw new Error("Variant fields must be limited to label and attributes");
+    const label = typeof item.label === "string" ? item.label.trim() : "";
+    if (!label || label.length > 100) throw new Error("Variant label is required and must be at most 100 characters");
+    const raw = item.attributes ?? {};
+    if (!record(raw)) throw new Error("Variant attributes must be an object");
+    const attributes: Record<string, string> = {};
+    for (const [key, entry] of Object.entries(raw)) {
+      if (typeof entry !== "string") throw new Error("Variant attributes must be strings");
+      attributes[key] = entry;
+    }
+    return { label, attributes };
+  });
+}
+
+function evidenceUrls(value: unknown): string[] {
+  if (!Array.isArray(value) || value.length < 2 || value.length > 6) throw new Error("Provide 2 to 6 seller product-page URLs");
+  return value.map((entry) => {
+    if (typeof entry !== "string") throw new Error("Evidence URLs must be strings");
+    const url = new URL(entry);
+    if (!["http:", "https:"].includes(url.protocol)) throw new Error("Evidence URLs must use HTTP or HTTPS");
+    return url.toString();
+  });
+}
 
 export interface JobRow {
   id: string;
@@ -48,13 +91,25 @@ interface WeakRow {
   views: number;
 }
 
+interface AddedProductRow {
+  product_id: string;
+  slug: string;
+  variants_created: number;
+}
+
+interface PublishedProductRow {
+  product_id: string;
+  slug: string;
+  name: string;
+}
+
 const OLD_YEARS = 3;
 const STALE_DAYS = 7;
 
 // PostgREST filter এর ভেতরে বসে, তাই শুধু অক্ষর, সংখ্যা আর ফাঁকা
 const words = (query: string) => query.replace(/[^\p{L}\p{N}\s.-]/gu, " ").split(/\s+/).filter(Boolean).slice(0, 4);
 
-// বাকি সব টুল শুধু পড়ে। লেখে শুধু দুটো: send_telegram মালিকের নিজের chat-এ, আর run_job অ্যাডমিনের "এখনই চালান"-এর মতো কাজ লাইনে দেয়
+// Scheduled reports get read-only tools; product mutations use bounded database RPCs.
 export const RUNNABLE = ["prices", "discover", "promos", "rebuild"];
 
 // GitHub সময় শেষে মেরে ফেললে "running" থেকে যায়; workers/jobs/run.ts-ও ২ ঘণ্টা পরে সেটাকে মৃত ধরে
@@ -72,6 +127,7 @@ export async function queueJob(env: ManagerEnv, id: string): Promise<{ queued: b
 
 export const TOOLS: Record<string, Tool> = {
   jobs_status: {
+    access: "read",
     description: "সাইটের নিয়মিত কাজগুলোর (দাম আনা, নতুন পণ্য খোঁজা, অফার, সাইট বানানো) অবস্থা: শেষ কখন চলেছে, ফল কী, বন্ধ বা লাইনে আছে কিনা",
     parameters: noArgs,
     async run(env) {
@@ -81,6 +137,7 @@ export const TOOLS: Record<string, Tool> = {
     },
   },
   review_queue: {
+    access: "read",
     description: "যাচাই বাকির তালিকা: কোন ধরনের কয়টা (match, anomaly, submission), আর সবচেয়ে পুরনো কয়েকটা",
     parameters: noArgs,
     async run(env) {
@@ -91,6 +148,7 @@ export const TOOLS: Record<string, Tool> = {
     },
   },
   find_price: {
+    access: "read",
     description: "কোনো পণ্যের দাম খোঁজা: কোন দোকানে কত, সবচেয়ে সস্তা কোনটা",
     parameters: { type: "object", properties: { query: { type: "string", description: "পণ্যের নাম, যেমন Samsung A57" } }, required: ["query"] },
     async run(env, args) {
@@ -113,6 +171,7 @@ export const TOOLS: Record<string, Tool> = {
     },
   },
   visitor_searches: {
+    access: "read",
     description: "ভিজিটররা সাইটে কী খুঁজেছে (বেশি থেকে কম)",
     parameters: { type: "object", properties: { days: { type: "number", description: "কত দিনের, ১ থেকে ৩০" } } },
     async run(env, args) {
@@ -134,6 +193,7 @@ export const TOOLS: Record<string, Tool> = {
     },
   },
   weak_products: {
+    access: "read",
     description:
       "যে পণ্য সাইটে রাখার মানে কম, কারণসহ: স্টকসহ দাম ২টার কম দোকানে (নিয়ম ভাঙে), দাম ৭ দিনের বেশি যাচাই হয়নি, গত ৩০ দিনে কেউ খোলেনি, ৩ বছরের বেশি পুরনো মডেল। মালিককে লুকানো বা বাদের পরামর্শ দিতে",
     parameters: noArgs,
@@ -161,6 +221,7 @@ export const TOOLS: Record<string, Tool> = {
     },
   },
   my_actions: {
+    access: "read",
     description: "গত ৩ দিনে তুমি নিজে কী করেছ: কোন পণ্যে কোন ভার্সন যোগ করেছ (প্রমাণের লিংকসহ), আর কোন আইটেম নিজে মেটাতে না পেরে যাচাই বাকিতে রেখেছ (সকালের রিপোর্টে বলার জন্য)",
     parameters: noArgs,
     async run(env) {
@@ -170,7 +231,82 @@ export const TOOLS: Record<string, Tool> = {
       return { data: rows, result: `${bn(added)}টা ভার্সন যোগ · ${bn(rows.length - added)}টা অন্য খবর`, tone: "ok" };
     },
   },
+  add_hidden_product: {
+    access: "owner",
+    description:
+      "মালিক স্পষ্টভাবে নতুন পণ্য যোগ করতে বললে লুকানো পণ্য ও তার variants যোগ করা। brand, name, active category, প্রমাণিত variant label/attributes, কারণ, এবং অন্তত ২টি আলাদা active seller-এর product-page URL লাগবে। কোনো দাম বা SKU লেখে না; সফল হলে discover job queue হয়। তথ্য বা প্রমাণ অসম্পূর্ণ হলে আগে মালিককে জিজ্ঞেস করো।",
+    parameters: {
+      type: "object",
+      properties: {
+        brand: { type: "string", maxLength: 80 },
+        name: { type: "string", maxLength: 120 },
+        category: { type: "string" },
+        release_year: { type: "integer" },
+        variants: {
+          type: "array",
+          minItems: 1,
+          maxItems: 20,
+          items: {
+            type: "object",
+            properties: {
+              label: { type: "string", maxLength: 100 },
+              attributes: { type: "object", additionalProperties: { type: "string" } },
+            },
+            required: ["label", "attributes"],
+            additionalProperties: false,
+          },
+        },
+        reason: { type: "string", maxLength: 400 },
+        evidence_urls: { type: "array", minItems: 2, maxItems: 6, items: { type: "string", format: "uri" } },
+      },
+      required: ["brand", "name", "category", "variants", "reason", "evidence_urls"],
+      additionalProperties: false,
+    },
+    async run(env, args) {
+      onlyKeys(args, ["brand", "name", "category", "release_year", "variants", "reason", "evidence_urls"]);
+      let releaseYear: number | null = null;
+      if (args.release_year !== undefined && args.release_year !== null) {
+        if (typeof args.release_year !== "number") throw new Error("release_year must be an integer");
+        releaseYear = args.release_year;
+      }
+      if (releaseYear !== null && (!Number.isInteger(releaseYear) || releaseYear < 1990 || releaseYear > new Date().getFullYear() + 1)) {
+        throw new Error("release_year is outside the allowed range");
+      }
+      const rows = await rpc<AddedProductRow[]>(env, "agent_add_hidden_product", {
+        p_brand: textArg(args, "brand", 80),
+        p_name: textArg(args, "name", 120),
+        p_category: textArg(args, "category", 80),
+        p_release_year: releaseYear,
+        p_variants: productVariants(args.variants),
+        p_reason: textArg(args, "reason", 400),
+        p_evidence_urls: evidenceUrls(args.evidence_urls),
+      });
+      const product = rows[0];
+      if (!product) throw new Error("Product creation returned no result");
+      return {
+        data: product,
+        result: `পণ্য ${product.slug} লুকিয়ে যোগ হয়েছে; discover লাইনে দেওয়া হয়েছে`,
+        tone: "ok",
+      };
+    },
+  },
+  publish_ready_candidates: {
+    access: "auto",
+    description:
+      "শুধু Manager-এর নিজের hidden candidate, যেগুলো database-এর সব hard gate পাস করেছে সেগুলো চালু করা: প্রতিটি variant-এ ২+ active seller-এর আসল বর্তমান দাম, price ratio সর্বোচ্চ ১.৮, ছবি আছে, discover শেষ, pending review নেই, duplicate নেই, active category আছে; ঢাকার দিনে সর্বোচ্চ ৫টি। অন্য product বদলায় না।",
+    parameters: noArgs,
+    async run(env, args) {
+      onlyKeys(args, []);
+      const rows = await rpc<PublishedProductRow[]>(env, "agent_publish_ready_candidates");
+      return {
+        data: { published: rows },
+        result: rows.length ? `${bn(rows.length)}টা যাচাই-পাস পণ্য চালু: ${rows.map((row) => row.name).join(", ")}` : "এখন চালু করার মতো যাচাই-পাস পণ্য নেই",
+        tone: rows.length ? "ok" : "wait",
+      };
+    },
+  },
   run_job: {
+    access: "owner",
     description:
       "একটা নিয়মিত কাজ এখনই চালাতে লাইনে দেওয়া (অ্যাডমিনের \"এখনই চালান\"-এর মতো), শুধু মালিক চাইলে। prices: দাম আনা (শেষে যাচাই বাকি থেকে AI নিজে নিশ্চিতগুলো সিদ্ধান্ত নেয়, প্রতিবার সর্বোচ্চ ৩০টা), discover: নতুন পণ্য খোঁজা, promos: অফার পড়া, rebuild: সাইট বানানো। যাচাই বাকি সরাসরি অনুমোদন বা বাদ করার টুল নেই",
     parameters: { type: "object", properties: { job: { type: "string", enum: RUNNABLE } }, required: ["job"] },
@@ -184,6 +320,7 @@ export const TOOLS: Record<string, Tool> = {
     },
   },
   send_telegram: {
+    access: "owner",
     description: "মালিকের Telegram-এ মেসেজ পাঠানো। শুধু মালিক চাইলে, যেমন \"রিপোর্টটা Telegram-এ দাও\"",
     parameters: { type: "object", properties: { text: { type: "string", description: "যা পাঠাবে" } }, required: ["text"] },
     async run(env, args) {
@@ -196,7 +333,10 @@ export const TOOLS: Record<string, Tool> = {
   },
 };
 
-export const toolSpecs = Object.entries(TOOLS).map(([name, tool]) => ({
-  type: "function",
-  function: { name, description: tool.description, parameters: tool.parameters },
-}));
+export const toolSpecs = (ownerActions = true) =>
+  Object.entries(TOOLS)
+    .filter(([, tool]) => ownerActions || tool.access === "read")
+    .map(([name, tool]) => ({
+      type: "function",
+      function: { name, description: tool.description, parameters: tool.parameters },
+    }));

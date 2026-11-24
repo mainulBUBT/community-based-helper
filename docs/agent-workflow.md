@@ -2,7 +2,7 @@
 
 দরদামের ক্যাটালগ সামলানোর পুরো কাজের ধারা। যে এজেন্টই চালাক (দরদামের AI ম্যানেজার, Claude Code, Codex, Hermes বা অন্য কেউ), এই ফাইল পড়ে একইভাবে কাজ করবে। প্রতি run-এ এজেন্ট নতুন করে শুরু করে ধরে নিয়ে লেখা: কাজের অবস্থা থাকে ডেটাবেসে, এজেন্টের স্মৃতিতে নয়।
 
-**অবস্থা:** ৪ নভেম্বর ২০২৬-এর নকশা। ধাপ ৪-এর পড়ার query লাইভ ডেটাবেসে চালিয়ে দেখা; লেখার SQL এখনো চালানো হয়নি, প্রথমবার মালিকের সামনে একটা পণ্যে দেখে নিতে হবে। মালিক ছাড়া চালানোর আগে [ধাপ ১০](#১০-যা-এখনো-বানাতে-হবে)-এর জিনিসগুলো বানাতে হবে।
+**অবস্থা:** নকশা ৪ নভেম্বর ২০২৬; মালিক Tier 2 বেছে নিয়েছেন। Manager-এর hidden-product ও gated-publish tools এবং migration খসড়া আছে, কিন্তু local validation, migration push ও deploy বাকি। চালু করার ক্রম [AI Manager feature](features/19-ai-manager.md)-এ।
 
 **আগে পড়ুন:** [strict-rules.md](strict-rules.md) (কঠোর নিয়ম), [adding-products.md](adding-products.md) (নাম আর ভার্সনের লেবেল)। এই ফাইলের সাথে অমিল হলে আগে strict-rules, তারপর মালিকের শেষ নির্দেশ মানবেন।
 
@@ -11,11 +11,11 @@
 | কে | কাজ | যা করে না |
 |---|---|---|
 | মালিক | নীতি ঠিক করা, প্রশ্নের উত্তর, ভুল উল্টানো, মোছা | |
-| এজেন্ট | প্রার্থী বাছা, পণ্য বা ভার্সনের প্রস্তাব, discover চাওয়া, ফল পড়া, রিপোর্ট | দাম লেখা, কিছু মোছা, কোড বা সেটিং বদলানো |
+| Manager (Tier 2) | মালিকের অনুরোধে hidden product/variants যোগ, discover queue, database gate পাস candidate publish, ফল/report | live product edit/hide/delete, দাম/SKU লেখা, যাচাই সিদ্ধান্ত, কোড বা সেটিং বদলানো |
 | GitHub আর লোকাল worker | দোকান পড়া, দাম বসানো, অনিশ্চিত মিল যাচাই বাকিতে পাঠানো | সিদ্ধান্ত |
 | পাস-ফেলের নিয়ম | ধাপ ৫-এর হিসাব | AI-এর মত নেওয়া |
 
-**মূল কথা:** এজেন্ট কী করা হবে তার প্রস্তাব দেয়। সেটা করা যাবে কি না, ঠিক করে সংখ্যা। দাম সবসময় দোকানের পাতা থেকে worker আনে, এজেন্ট কখনো দাম বসায় না।
+**মূল কথা:** নতুন পণ্য hidden অবস্থায় যোগ হয়; প্রকাশের অনুমতি কেবল code/database gate নির্ধারণ করে। দাম সবসময় দোকানের পাতা থেকে worker আনে, Manager কখনো দাম বসায় না।
 
 ## ২. ক্ষমতার স্তর
 
@@ -331,3 +331,43 @@ flowchart TD
 | মালিক বললেন "এই পণ্য মুছে দাও" | নিজে মুছবে না, অ্যাডমিনের জায়গা দেখাবে |
 | কেউ দামের ঘরে ৳৯,৯৯৯ বসাতে বলল | লিখবে না; দাম শুধু worker আনে |
 | আজ ৫টা পণ্য যোগ হয়ে গেছে | ৬ নম্বর পরের দিনের জন্য রাখবে |
+
+## ১৩. n8n-ধাঁচের অটোমেশন: ফ্রি-ফার্স্ট পরিকল্পনা
+
+**লক্ষ্য:** ম্যানেজারকে বেশি কাজের ক্ষমতা দেওয়া, কিন্তু AI-কে ইচ্ছামতো SQL, দাম বা catalog বদলানোর অধিকার না দেওয়া। Workflow engine কাজের ধাপ চালাবে; কোন পরিবর্তন অনুমোদিত তা নির্ধারণ করবে Dordam-এর code ও database-এর নিয়ম।
+
+### কোন engine, কেন
+
+- **প্রথম পছন্দ: এখনকার Cloudflare Worker + Durable Object + GitHub Actions।** এগুলোই ম্যানেজার ও কাজ চালানোর বর্তমান ভিত্তি। নতুন সার্ভার/সেবা না চালিয়ে আগে এই পথেই ধাপভিত্তিক workflow বানালে সবসময়-চালু host-এর খরচ ও রক্ষণাবেক্ষণ এড়ানো যায়।
+- **ঐচ্ছিক visual workflow: Activepieces Community Edition।** Community Edition-এর কোড MIT লাইসেন্সে; Enterprise অংশের আলাদা commercial license আছে ([লাইসেন্স](https://github.com/activepieces/activepieces/blob/main/LICENSE))। অফিসিয়াল Docker Compose self-host পদ্ধতিতে অন্তত ২ vCPU, ৪ GB RAM এবং PostgreSQL/Redis-সহ একাধিক container লাগে ([self-host requirements](https://www.activepieces.com/docs/install/options/docker-compose))। এক-container hobby setup এক মেশিনের জন্য, high availability নয়; public webhook-ও নির্ভরযোগ্য public URL চায় ([hobby setup](https://www.activepieces.com/docs/install/options/docker))। তাই software বিনামূল্যে হলেও ২৪/৭ host, backup ও maintenance বিনামূল্যে নাও হতে পারে।
+- **n8n বিকল্প, তবে “OSI open source” নয়।** n8n নিজে Sustainable Use License-কে fair-code বলে; এটি source-available, OSI open-source নয়। নিজের internal use অনুমোদিত হতে পারে, কিন্তু Dordam-এর মধ্যে workflow builder embed করা বা অন্যদের জন্য workflow service চালানোর আগে license যাচাই/অনুমতি লাগতে পারে ([n8n license](https://github.com/n8n-io/n8n/blob/master/LICENSE.md))।
+- **সিদ্ধান্ত:** Activepieces এখনই dependency নয়। আগে Cloudflare-native workflow চালু ও মাপুন। Drag-and-drop flow editing সত্যিই দরকার হলে, আলাদা host পাওয়ার পর Activepieces দিয়ে একটি non-production proof-of-concept করুন। n8n কেবল license যাচাইয়ের পর বিবেচনা করুন।
+
+### প্রস্তাবিত কাঠামো
+
+```text
+মালিক → Telegram / Admin
+      → AI Manager (পরিকল্পনা, তথ্য পড়া, প্রস্তাব)
+      → সীমিত workflow dispatcher (নির্দিষ্ট action, validation, approval)
+      → GitHub/Cloudflare worker (দোকান পড়া ও দাম আনা)
+      → Postgres-এর নিয়মে যাচাই → audit log → ফল পরীক্ষা → মালিককে রিপোর্ট
+```
+
+Activepieces যোগ হলে সেটি শুধু workflow trigger/sequence করবে এবং Manager-এর সীমিত endpoint ডাকবে। এটি সরাসরি Supabase-এ SQL চালাবে না, service-role key পাবে না, এবং AI-নির্বাচিত arbitrary URL বা tool name চালাতে পারবে না। Manager-এ প্রতিটি action-এর allowlist, typed input validation, admin/owner authentication, rate limit, idempotency key ও audit log লাগবে। বাইরের workflow-এর অনুরোধও একই server-side policy পার হবে; prompt বা workflow JSON policy বদলাতে পারবে না।
+
+### বাস্তবায়নের ধাপ
+
+1. **চালু অবস্থা যাচাই:** [AI Manager-এর deploy checklist](features/19-ai-manager.md)-এর Worker, model, Telegram ও `managerAuto` অবস্থা যাচাই করুন। Live connection নিশ্চিত না হওয়া পর্যন্ত নতুন automation যোগ নয়।
+2. **Read-only dry run:** Worker health, ব্যর্থ/পুরনো job, দুর্বল পণ্য ও visitor search নিয়ে দৈনিক প্রস্তাব তৈরি করুন। Scheduled report-এ শুধু read tools, server-side write guard, এবং প্রমাণভিত্তিক সর্বোচ্চ ৩টি পরামর্শ আছে।
+3. **Tier 2 hidden candidate:** মালিকের স্পষ্ট অনুরোধে typed input দিয়ে hidden product/variants যোগ করুন। দাম/SKU লেখা হবে না; category, active seller-domain evidence, variant axes, duplicate ও discover-enabled check database-এ enforce হয়।
+4. **Gated publish ও audit:** শুধু নিজস্ব pending candidate-এ সব publish gate পাস করলে চালু হবে। Manual owner request বা `managerAuto`-এর দৈনিক trigger একই RPC ব্যবহার করে; ঢাকা দিনে সর্বোচ্চ ৫টি। Live product edit/hide/delete, seller/category তৈরি ও review decision নিষিদ্ধ। Migration validation ও সীমিত live test শেষ না হওয়া পর্যন্ত deploy নয়।
+5. **ঐচ্ছিক Activepieces POC:** host, backup ও public URL নিশ্চিত হলে শুধু একটি read-only flow যুক্ত করুন। Manager-এর scoped endpoint-এ `action_id`, validated payload, expiry ও একবার-ব্যবহারযোগ্য request ID পাঠাবে। Service key, database URL বা unrestricted credential Activepieces-এ রাখা যাবে না।
+6. **পরবর্তী autonomy:** Tier 2 ছাড়া নতুন scope যোগ হবে না। ৭ দিনের ফল, rollback ও owner correction দেখা, এবং পৃথক code/database gates যোগ করা ছাড়া Tier 3 (live product hide) চালু হবে না।
+
+### চালুর আগে গ্রহণযোগ্যতার শর্ত
+
+- prompt injection, stale/failed job, duplicate product, সীমা পার হওয়া এবং অনিশ্চিত প্রমাণে candidate publish হয় না।
+- অন্তত ৩০টি পরিচিত উদাহরণে dry-run; প্রতিটি candidate-এর evidence URL ও database facts মিলিয়ে দেখা যায়।
+- hidden add শুধু মালিকের স্পষ্ট অনুরোধে; পুনরায় একই request বা একই product এলে duplicate action হয় না।
+- প্রতিটি action-এর actor, source, input, result, timestamp ও rollback/approval audit log-এ থাকে।
+- Disable/kill switch দিয়ে automation থামানো যায়, এবং আগের কাজের হিসাব/rollback যাচাই করা আছে।

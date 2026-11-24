@@ -5,7 +5,7 @@ import { SITE } from "./context";
 import { chat, type ChatMessage } from "./llm";
 import { privateSettings, rest } from "./supabase";
 import { sendMessage, setWebhook, tokenMark, webhookSecret } from "./telegram";
-import { queueJob, RUNNABLE, TOOLS, type JobRow, type Step } from "./tools";
+import { queueJob, RUNNABLE, TOOLS, toolSpecs, type JobRow, type Step } from "./tools";
 import { alertText, blockedHosts, hostsText, isDanger, isQuiet, judge, newHosts, rememberHosts, retryNote, WATCHED, type WatchState } from "./watch";
 
 type Role = "user" | "manager" | "schedule";
@@ -32,8 +32,13 @@ const KEEP = 500;
 const WATCH_EVERY = 30 * 60_000;
 const RETRY_AFTER_ERROR = 5 * 60_000;
 
-const REPORT =
-  "সকালের রিপোর্ট লেখো: my_actions দেখে নিজে কী করেছ, কাজগুলোর অবস্থা (কোনটা ব্যর্থ বা আটকে থাকলে কারণসহ), যাচাই বাকি কয়টা, গতকাল ভিজিটর কী খুঁজেছে, আর রাখার মানে কম এমন পণ্য কয়টা (নিয়ম ভাঙা ২-৩টার নাম কারণসহ)। ৬-৮ লাইনে, প্রতিটা লাইনের শুরুতে একটা ইমোজি।";
+const REPORT = [
+  "এটা শুধু পড়ার dry-run: কোনো কাজ চালাবে না, কোনো তথ্য বদলাবে না। jobs_status, my_actions, review_queue, visitor_searches, weak_products—প্রতিটি টুল একবার করে পড়ো।",
+  "রিপোর্টে বলো: গত ৩ দিনে নিজের কাজ, ব্যর্থ/আটকে/পুরনো job, যাচাই বাকি, বেশি খোঁজা বিষয়, আর নিয়ম ভাঙা দুর্বল পণ্য।",
+  "এরপর আজকের জন্য সর্বোচ্চ ৩টি অগ্রাধিকারভিত্তিক পরামর্শ দাও। প্রতিটিতে কারণ ও tool থেকে পাওয়া প্রমাণ/লিংক দাও; প্রমাণ না থাকলে স্পষ্ট বলো।",
+  "কোনো সংখ্যা, নাম, লিংক বা সাফল্য বানাবে না। কোনো tool ব্যর্থ হলে সেটা রিপোর্ট করবে, অনুমান করবে না। সব পরিবর্তন মালিকের অনুমোদনের অপেক্ষায় আছে—এটা স্পষ্ট করো।",
+  "সহজ বাংলায় ৬-১০ লাইনে লেখো, প্রতিটি লাইনের শুরুতে একটি ইমোজি।",
+].join("\n");
 
 const system = (state: string) =>
   [
@@ -42,11 +47,12 @@ const system = (state: string) =>
     `তোমার নিজের অবস্থা: ${state}`,
     "কাজের বার্তা (last_message) শেষ রানের সময়ের (last_run_at); এরপর সেটিং বদলালে সেটা পুরনো, তাই নিজের অবস্থার সাথে না মিললে সময়সহ বলো। যেমন শেষ রানে AI quota শেষ ছিল কিন্তু এখন অন্য AI সেটআপ আছে।",
     "মালিক বললে send_telegram দিয়ে তাঁর Telegram-এ পাঠাতে পারো। সকালের রিপোর্ট এমনিতেই Telegram-এ যায়।",
-    "মালিক বললে run_job দিয়ে নিয়মিত কাজ (দাম আনা, নতুন পণ্য খোঁজা, অফার, সাইট বানানো) এখনই চালাতে লাইনে দিতে পারো; কাজ শেষ হতে মিনিট লাগে, তাই কী লাইনে দিলে আর ফল পরে jobs_status-এ দেখবেন বলো। যাচাই বাকির কোনোটা তুমি নিজে অনুমোদন বা বাদ করতে পারো না: prices কাজের শেষে বিদ্যমান নিয়মে AI নিশ্চিতগুলো সিদ্ধান্ত নেয় (প্রতিবার সর্বোচ্চ ৩০টা), বাকিগুলো অ্যাডমিন → যাচাই বাকি পাতায় মালিকের জন্য।",
-    "এর বাইরে কিছু (দাম, পণ্য বা সেটিং বদল) তুমি পারো না। মালিক চাইলে বলো সেই অনুমতি নেই, আর অ্যাডমিন প্যানেলের কোথায় করবেন বলে দাও।",
+    "মালিক স্পষ্টভাবে নতুন পণ্য যোগ করতে বললে add_hidden_product দিয়ে শুধু লুকানো পণ্য আর variant যোগ করতে পারো। অন্তত ২টি আলাদা active seller-এর আসল product-page URL, active category, আর যাচাই করা variant তথ্য চাই; দাম/SKU লিখবে না, তৈরি হলে discover লাইনে যায়। প্রমাণ বা তথ্য না থাকলে আগে জিজ্ঞেস করো।",
+    "publish_ready_candidates শুধু নিজের লুকানো candidate-এ চলে। database-এর সব hard gate পাস করা পণ্যই চালু হয়; মালিক চাইলে এখন চালাতে বলবেন, আর \"ম্যানেজার নিজে করবে\" চালু থাকলে প্রতিদিনের রিপোর্টের আগে কোড একবার চালায়। কোনো gate বাদ দেওয়া যায় না।",
+    "দাম সরাসরি লেখা, live product hide/edit/delete, review approve/reject, seller/category তৈরি, settings/credential/admin/code বদলানো নিষিদ্ধ। যাচাই বাকির কোনোটা তুমি নিজে অনুমোদন বা বাদ করতে পারো না: prices কাজের শেষে বিদ্যমান নিয়মে AI নিশ্চিতগুলো সিদ্ধান্ত নেয় (প্রতিবার সর্বোচ্চ ৩০টা), বাকিগুলো অ্যাডমিন → যাচাই বাকি পাতায় মালিকের জন্য।",
     "তুমি সহকারী: শুধু প্রশ্নের উত্তর নয়, টুলের ফলে কোনো সমস্যা বা সুযোগ চোখে পড়লে নিজে থেকে বলো আর কী করা উচিত পরামর্শ দাও। কোনো পণ্য লুকানো বা বাদের সিদ্ধান্ত সবসময় মালিকের।",
     "পাহারা কোডে চলে, তোমার হাতে নয়: ব্যর্থ বা অনেকক্ষণ না চলা কাজ একবার নিজে আবার চালায়, আর নতুন কোনো দোকান আটকালে নোট রাখে। সেই নোটগুলো কথাবার্তায় দেখবে।",
-    "মালিক \"ম্যানেজার নিজে করবে\" অপশন চালু করলে prices কাজের শেষে কোড নিজেই নতুন ভার্সন যোগ করে: মোবাইলে একই কনফিগ ২+ দোকানে আসল দামে পেলে, দিনে সর্বোচ্চ ৫টা। my_actions-এ তার হিসাব আছে। নতুন দোকান যোগ, লুকানো বা মোছা এখনো এতে নেই। 🚨 মানে সবচেয়ে জরুরি: দাম আনা, পণ্য খোঁজা বা সাইট বানানোর কাজ আবার চালিয়েও ঠিক হয়নি। বাকি খবর Telegram-এ আলাদা করে না পাঠিয়ে সকালের রিপোর্টে বলো।",
+    "মালিক \"ম্যানেজার নিজে করবে\" অপশন চালু করলে prices কাজের শেষে মোবাইলের নতুন ভার্সন যোগ হয় (২+ দোকানে একই কনফিগ ও আসল দাম, দিনে সর্বোচ্চ ৫টা), আর প্রতিদিনের রিপোর্টের আগে নিজের hidden candidate-গুলোর মধ্যে database-এর সব publish gate পাস করা সর্বোচ্চ ৫টা চালু হয়। নতুন পণ্য শুধু মালিকের স্পষ্ট অনুরোধে লুকিয়ে যোগ হয়; নতুন দোকান, existing product hide/edit/delete হয় না। my_actions-এ কাজের হিসাব আছে। 🚨 মানে সবচেয়ে জরুরি: দাম আনা, পণ্য খোঁজা বা সাইট বানানোর কাজ আবার চালিয়েও ঠিক হয়নি। বাকি খবর Telegram-এ আলাদা করে না পাঠিয়ে সকালের রিপোর্টে বলো।",
     "তথ্য লাগলে টুল ডাকো। সংখ্যা, নাম বা পাতা কখনো বানিয়ে বলবে না; ওপরের তালিকায় না থাকলে বলো জানো না।",
     "উত্তর ছোট আর সহজ বাংলায়, বাংলাদেশে মানুষ যেভাবে কথা বলে। মালিক ইংরেজিতে লিখলে ইংরেজিতে।",
     `এখন ঢাকার সময়: ${new Date().toLocaleString("bn-BD", { timeZone: "Asia/Dhaka" })}`,
@@ -130,6 +136,19 @@ export class Manager extends DurableObject<ManagerEnv> {
       await this.watch(settings).catch((error) => console.error(`manager watch failed: ${error instanceof Error ? error.message : String(error)}`));
     }
     if (Date.now() >= ((await this.ctx.storage.get<number>("reportAt")) ?? nextReport())) {
+      if (settings.managerAuto) {
+        try {
+          const result = await TOOLS.publish_ready_candidates.run(this.env, {});
+          if (result.tone === "ok") {
+            this.save("manager", result.result, [{ call: "publish_ready_candidates()", result: result.result, tone: "ok" }]);
+          }
+        } catch (error) {
+          console.error(`manager auto-publish failed: ${error instanceof Error ? error.message : String(error)}`);
+          this.save("manager", "স্বয়ংক্রিয় প্রকাশ যাচাই করা যায়নি; কোনো সফল প্রকাশ ধরে নিও না।", [
+            { call: "publish_ready_candidates()", result: "চালানো যায়নি; সকালের রিপোর্টে উল্লেখ করো", tone: "bad" },
+          ]);
+        }
+      }
       await this.notify(settings, await this.reply(settings, REPORT, "schedule"));
       await this.ctx.storage.put("reportAt", nextReport());
     }
@@ -220,7 +239,7 @@ export class Manager extends DurableObject<ManagerEnv> {
     const past = this.history(CONTEXT);
     this.save(role, text, []);
     try {
-      const { reply, steps } = await this.answer(settings, past, text);
+      const { reply, steps } = await this.answer(settings, past, text, role);
       this.save("manager", reply, steps);
       return reply;
     } catch (error) {
@@ -230,29 +249,52 @@ export class Manager extends DurableObject<ManagerEnv> {
     }
   }
 
-  private async answer(settings: StoredSettings, past: ReturnType<Manager["history"]>, text: string): Promise<{ reply: string; steps: Step[] }> {
+  private async answer(
+    settings: StoredSettings,
+    past: ReturnType<Manager["history"]>,
+    text: string,
+    role: Role,
+  ): Promise<{ reply: string; steps: Step[] }> {
     let models = readyModels(settings);
     if (!models.length) throw new Error("কোনো AI সেটআপ নেই। অ্যাডমিন → অটোমেশন ও AI তে যোগ করুন।");
+    const readOnly = role !== "user";
+    const instructions = system(await this.state(settings));
     const messages: ChatMessage[] = [
-      { role: "system", content: system(await this.state(settings)) },
+      {
+        role: "system",
+        content: readOnly ? `${instructions}\nনির্ধারিত রিপোর্টে শুধু পড়ার টুল ব্যবহার করো; কোনো কাজ চালিও না বা মেসেজ পাঠিও না।` : instructions,
+      },
       ...past.map((m): ChatMessage => ({ role: m.role === "manager" ? "assistant" : "user", content: m.text })),
       { role: "user", content: text },
     ];
     const steps: Step[] = [];
     for (let round = 0; round < MAX_ROUNDS; round++) {
-      const { message, used } = await chat(models, messages);
+      const { message, used } = await chat(models, messages, toolSpecs(!readOnly));
       models = models.slice(used);
       messages.push(message);
       if (!message.tool_calls?.length) return { reply: message.content?.trim() || "…", steps };
       for (const call of message.tool_calls) {
         const tool = TOOLS[call.function.name];
         let args: Record<string, unknown> = {};
+        let invalidArgs = false;
         try {
-          args = JSON.parse(call.function.arguments || "{}");
-        } catch {}
-        const out = tool
-          ? await tool.run(this.env, args).catch((error) => ({ data: { error: String(error) }, result: "পড়া যায়নি", tone: "bad" as const }))
-          : { data: { error: "unknown tool" }, result: "অজানা টুল", tone: "bad" as const };
+          const parsed: unknown = JSON.parse(call.function.arguments || "{}");
+          if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) throw new Error("arguments must be a JSON object");
+          args = parsed as Record<string, unknown>;
+        } catch {
+          invalidArgs = true;
+        }
+        const out = invalidArgs
+          ? { data: { error: "invalid tool arguments" }, result: "টুলের arguments ঠিক JSON object নয়", tone: "bad" as const }
+          : tool && (!readOnly || tool.access === "read")
+          ? await tool.run(this.env, args).catch((error) => ({
+              data: { error: String(error) },
+              result: tool.access === "read" ? "পড়া যায়নি" : "কাজটি ব্যর্থ হয়েছে",
+              tone: "bad" as const,
+            }))
+          : tool
+            ? { data: { error: "tool is not allowed in scheduled reports" }, result: "নির্ধারিত রিপোর্টে এই কাজের অনুমতি নেই", tone: "bad" as const }
+            : { data: { error: "unknown tool" }, result: "অজানা টুল", tone: "bad" as const };
         const shown = Object.values(args).map((v) => JSON.stringify(v)).join(", ");
         steps.push({ call: `${call.function.name}(${shown})`, result: out.result, tone: out.tone });
         messages.push({ role: "tool", tool_call_id: call.id, content: JSON.stringify(out.data).slice(0, 8000) });

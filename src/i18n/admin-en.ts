@@ -722,7 +722,7 @@ export const adminEn: AdminMessages = {
     morningReport: "Morning report",
     autoTitle: "Act on its own",
     autoLabel: "Manager acts on its own",
-    autoHint: "Adds a new phone version by itself when 2+ shops show a real price, up to 5 a day. Telegram only gets the most urgent problems. Everything else goes in the morning report.",
+    autoHint: "Adds phone versions when 2+ shops show real prices. Before the daily morning report, it also publishes only its hidden products that pass every database gate, up to 5 per day. Turn this off to stop automatic actions; the owner can still request a gated publish in chat.",
     notDeployedTitle: "The manager is not running yet",
     notDeployedBody: "Once the manager is set up on Cloudflare, you can talk to it here.",
   },

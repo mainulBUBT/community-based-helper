@@ -24,14 +24,14 @@ export async function patch(env: ManagerEnv, path: string, body: Record<string, 
   if (!res.ok) throw new Error(`Supabase HTTP ${res.status}`);
 }
 
-export async function rpc<T>(env: ManagerEnv, name: string): Promise<T> {
+export async function rpc<T>(env: ManagerEnv, name: string, args: Record<string, unknown> = {}): Promise<T> {
   const res = await fetch(`${env.SUPABASE_URL}/rest/v1/rpc/${name}`, {
     method: "POST",
     headers: { ...headers(env), "content-type": "application/json" },
-    body: "{}",
+    body: JSON.stringify(args),
     signal: AbortSignal.timeout(15_000),
   });
-  if (!res.ok) throw new Error(`Supabase HTTP ${res.status}`);
+  if (!res.ok) throw new Error(`Supabase RPC ${name} HTTP ${res.status}: ${(await res.text()).replace(/\s+/g, " ").slice(0, 240)}`);
   return res.json();
 }
 

@@ -9,7 +9,7 @@
   - Telegram: সাইটের alert-এর একই bot। শুধু অ্যাডমিনের "নোটিফিকেশন"-এ দেওয়া chat id থেকে আসা মেসেজের উত্তর দেয়।
   - অ্যাডমিন → AI ম্যানেজার পাতা: একই কথাবার্তা, প্রতিটা টুল-ডাক আর তার ফল দেখা যায়। পাশে সংযোগ, workers আর সময়সূচি।
 - **সকালের রিপোর্ট:** প্রতিদিন সকাল ৯টায় (ঢাকা) Telegram-এ। সময় ঠিক রাখে Durable Object-এর alarm, তাই অ্যাকাউন্টের cron খরচ হয় না।
-- **টুল:** পড়ার: `jobs_status`, `review_queue`, `find_price`, `visitor_searches`, `weak_products`। লেখার মাত্র দুটো: `send_telegram` আর `run_job`। দাম, পণ্য বা যাচাই বাকির সিদ্ধান্ত বদলানোর টুল নেই।
+- **টুল:** পড়ার: `jobs_status`, `review_queue`, `find_price`, `visitor_searches`, `weak_products`, `my_actions`। মালিকের অনুরোধে লেখার: `send_telegram`, `run_job`, `add_hidden_product`, `publish_ready_candidates`। নির্ধারিত সকালের রিপোর্টে মডেলকে শুধু পড়ার টুল দেওয়া হয়; server-side guard-ও লেখার টুল চালানো আটকায়।
   - `weak_products` (১ নভেম্বর, DB ফাংশন `weak_products()`, শুধু service key): রাখার মানে কম এমন পণ্য কারণসহ — স্টকসহ দাম ২টার কম দোকানে (নিয়ম ভাঙে), দাম ৭ দিনের বেশি যাচাই হয়নি, ৩০ দিনে কেউ খোলেনি, ৩ বছরের পুরনো মডেল। সকালের রিপোর্টে কয়টা আর নিয়ম-ভাঙা ২-৩টার নাম। লুকানো বা বাদের সিদ্ধান্ত মালিকের।
   - ম্যানেজার সহকারীর মতো: টুলের ফলে সমস্যা দেখলে নিজে থেকে বলে আর পরামর্শ দেয়।
 - `run_job` (১ নভেম্বর): মালিক বললে `prices`, `discover`, `promos` বা `rebuild` লাইনে দেয়, অ্যাডমিনের "এখনই চালান"-এর মতোই (`jobs.run_requested_at` বসে, ডেটাবেস নিজেই GitHub workflow চালায়)। চলছে বা লাইনে থাকলে আবার দেয় না। যাচাই বাকি সে সরাসরি অনুমোদন করে না, কারণ সেখানে দোকানের লেখা আর ভিজিটরের পাঠানো লেখা ঢোকে (prompt injection-এর পথ); `prices`-এর শেষে বিদ্যমান নিয়মের AI যাচাই (প্রতিবার ৩০টা) চলে। নতুন লেখা টুল যোগ করার আগে একই কথা ভাবতে হবে।
@@ -22,7 +22,7 @@
 - **নিরাপত্তা:**
   - অ্যাডমিন পাতা থেকে ডাকলে Supabase লগইন token যাচাই হয়, আর ব্যবহারকারী `admins`-এ আছেন কিনা দেখা হয়।
   - Telegram-এর webhook একটা গোপন header (service key থেকে বানানো) ছাড়া কিছু নেয় না।
-  - Worker-এ service key থাকে (Cloudflare secret)। কোড পড়ে, আর লেখে শুধু `jobs.run_requested_at` আর Telegram-এ; আরও লেখার টুল যোগ করার আগে আলাদা সীমিত অ্যাকাউন্ট লাগবে।
+  - Worker-এ service key থাকে (Cloudflare secret)। product write শুধু নির্দিষ্ট `SECURITY DEFINER` RPC দিয়ে; RPC-গুলো কেবল service role-এ চালানো যায়, দাম/SKU বা বিদ্যমান পণ্য বদলায় না।
 - **Telegram যুক্ত হওয়া:** অ্যাডমিনে AI ম্যানেজার পাতা খুললে ম্যানেজার নিজেই Telegram-কে নিজের ঠিকানা জানিয়ে দেয় (`setWebhook`)। token বদলালে পরের বার পাতা খুললে আবার জানায়।
 
 ## ধাপ ২: পাহারাদার (৫ নভেম্বর)
@@ -60,7 +60,13 @@
 
 **পরীক্ষা (৫ নভেম্বর, শুধু পড়া):** ১৪টা জনপ্রিয় মোবাইলের ৬৯টা পাতায় ২১৫টা অপশনের ১৭৭টা পড়া গেছে, ভুল নতুন ভার্সন ০। বাকি ৩৮টা অনিশ্চিত, তাই বাদ। নিজে দেখতে: `sh scripts/local-worker.sh versions-dry` (কিছু লেখে না)।
 
-**এখনো নেই:** ট্যাবলেট, ল্যাপটপ আর অন্য ক্যাটাগরি; নেট থেকে নতুন দোকান যোগ; নতুন পণ্য যোগ; লুকানো। ম্যানেজারের চ্যাট-AI-কে লেখার টুল দেওয়া হয়নি, সব কাজ worker-এর কোডে।
+## Tier 2: লুকানো পণ্য ও যাচাই-পাস প্রকাশ
+
+কোডে যোগ করা হয়েছে; **migration এখনো চালানো হয়নি, Worker deploy হয়নি, তাই live-এ চালু নয়।** ডিফল্টে `managerAuto` বন্ধ। মালিকের স্পষ্ট অনুরোধে `add_hidden_product` শুধু নতুন hidden product/variants যোগ করে, দাম/SKU নয়। Active category, ২–৬টি URL যেগুলোর host আলাদা active seller-এর সাথে মেলে, duplicate check, variant-axis validation, discover চালু থাকা এবং audit log database-এ enforce হয়; সফল হলে discover job queue হয়।
+
+`publish_ready_candidates` শুধু ম্যানেজারের নিজের candidate-এ কাজ করে। চালু করার আগে DB নিশ্চিত করে: discover সম্পূর্ণ, active category, ছবি, প্রতিটি variant-এ ২+ active seller-এর current published offer এবং category-তে অনুমোদিত condition, সর্বোচ্চ ১.৮ price ratio, pending/unapplied match review নেই, duplicate নেই; ঢাকা দিনে সর্বোচ্চ ৫টি। মালিক চ্যাটে স্পষ্ট বললে একই gate চালানো যায়; `managerAuto` চালু থাকলে প্রতিদিন সকালের রিপোর্টের আগে কোড একবার চালায়। কোনো gate বাদ যায় না।
+
+**নিষিদ্ধ:** সরাসরি দাম লেখা, live product hide/edit/delete, review approve/reject, seller/category তৈরি, settings/credential/admin/code বদল। URL-এর host active seller-এর হলেও সেটি সঠিক পণ্যের পাতা কিনা মডেল একা নিশ্চিত করতে পারে না; সন্দেহ বা অসম্পূর্ণ প্রমাণ হলে মালিককে জিজ্ঞেস করবে।
 
 ## চালু করার ধাপ (একবার)
 
@@ -82,5 +88,8 @@
 - [ ] ধাপ ২ লাইভে চালু (`npm run agent:deploy`)
 - [x] "ম্যানেজার নিজে করবে" অপশন আর মোবাইলের নতুন ভার্সন বানানো
 - [ ] অপশন লাইভে: git push (worker আর অ্যাডমিন পাতা), `npm run agent:deploy`, তারপর সুইচ চালু
+- [ ] Tier 2 migration ও Manager tools: local validation শেষে `npm run db:push`, deploy, তারপর সীমিত live test
 - [ ] নেট থেকে নতুন দোকান এনে map করা (মালিকের সিদ্ধান্ত বাকি)
 - [ ] ধাপ ৩–৫: প্রস্তাব দেখুন
+- [x] নির্ধারিত সকালের রিপোর্টে read-only tools, server-side write guard, এবং প্রমাণভিত্তিক সর্বোচ্চ ৩টি পরামর্শের dry-run prompt।
+- [ ] n8n-ধাঁচের workflow orchestration এখনো যুক্ত করা হয়নি। ফ্রি-ফার্স্ট Cloudflare-native পরিকল্পনা এবং Activepieces-এর ঐচ্ছিক POC-এর ধাপ [agent-workflow.md](../agent-workflow.md)-এর ১৩ নম্বর অংশে।
