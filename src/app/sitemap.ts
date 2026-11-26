@@ -49,7 +49,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...brands
       .filter((b) => b.count >= BRAND_MIN_PRODUCTS)
       .map((b): [string, Frequency, number, string | undefined] => [`/brand/${b.slug}/`, "daily", 0.7, latest(checked.get(`b:${b.slug}`) ?? [])]),
-    ...products.map((p): [string, Frequency, number, string | undefined] => [`/product/${p.slug}/`, "daily", 0.9, latest(checked.get(`p:${p.slug}`) ?? [])]),
+    ...products
+      .filter((p) => checked.has(`p:${p.slug}`))
+      .map((p): [string, Frequency, number, string | undefined] => [`/product/${p.slug}/`, "daily", 0.9, latest(checked.get(`p:${p.slug}`) ?? [])]),
     ...sellers.map((s): [string, Frequency, number, string | undefined] => [`/seller/${s.id}/`, "weekly", 0.5, latest(checked.get(`s:${s.id}`) ?? [])]),
   ];
   return pages.flatMap(([path, changeFrequency, priority, lastModified]) => {

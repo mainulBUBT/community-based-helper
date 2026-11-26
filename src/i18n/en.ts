@@ -375,6 +375,8 @@ export const en: Messages = {
         ? [
             `${name} Price in Bangladesh: From ${price} (${month})`,
             `${name} Price in Bangladesh: From ${price}`,
+            `${model} Price in Bangladesh: From ${price} (${month})`,
+            `${model} Price in Bangladesh: From ${price}`,
           ]
         : []),
       `${name} Price in Bangladesh (${month}) - Compare Shop Deals`,

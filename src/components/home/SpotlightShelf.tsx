@@ -85,7 +85,7 @@ export function SpotlightShelf({ summaries }: { summaries: ProductSummary[] }) {
           <li key={product.id}>
             <Link
               href={`${prefix}/product/${product.slug}/`}
-              className="group flex h-full flex-col gap-3 rounded-lg border border-line-soft p-3 transition-colors hover:border-brand"
+              className="group flex h-full flex-col gap-3 rounded-sm border border-line bg-surface p-3 shadow-sm transition-[border-color,box-shadow,transform] hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-lift"
             >
               <div className="flex items-start justify-between">
                 <span

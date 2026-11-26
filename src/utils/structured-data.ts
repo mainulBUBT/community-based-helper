@@ -1,11 +1,15 @@
 import { SITE_URL } from "@/config/site";
-import type { OfferView, Product } from "@/types/catalog";
+import type { OfferView, Product, Seller } from "@/types/catalog";
 
 const absolute = (path: string) => new URL(path, SITE_URL).href;
 
+const validUntil = () => new Date(Date.now() + 14 * 86_400_000).toISOString().slice(0, 10);
+
 export function productData(product: Product, offers: OfferView[], path: string, description: string, alternateName: string | null = null) {
   const available = offers.filter((o) => o.inStock !== false);
-  const prices = (available.length ? available : offers).map((o) => o.price);
+  const shown = available.length ? available : offers;
+  const prices = shown.map((o) => o.price);
+  const priceValidUntil = validUntil();
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -23,6 +27,15 @@ export function productData(product: Product, offers: OfferView[], path: string,
         highPrice: Math.max(...prices),
         offerCount: offers.length,
         availability: available.length ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+        offers: shown.slice(0, 20).map((o) => ({
+          "@type": "Offer",
+          price: o.price,
+          priceCurrency: "BDT",
+          availability: o.inStock === false ? "https://schema.org/OutOfStock" : "https://schema.org/InStock",
+          priceValidUntil,
+          url: o.url || absolute(path),
+          seller: { "@type": "Organization", name: o.seller.name },
+        })),
       },
     }),
   };
@@ -56,4 +69,29 @@ export function websiteData(name: string, prefix: string) {
     },
     { "@context": "https://schema.org", "@type": "Organization", name, url: absolute("/"), logo: absolute("/icons/icon-512.png") },
   ];
+}
+
+export function faqData(items: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
+  };
+}
+
+export function sellerData(seller: Seller, path: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    name: seller.name,
+    url: absolute(path),
+    ...(seller.logo && { image: absolute(seller.logo) }),
+    ...(seller.website && { sameAs: seller.website }),
+    ...(seller.phone && { telephone: seller.phone }),
+    ...(seller.area && { address: { "@type": "PostalAddress", addressLocality: seller.area, addressCountry: "BD" } }),
+  };
 }

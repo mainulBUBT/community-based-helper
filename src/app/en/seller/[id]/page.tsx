@@ -14,5 +14,5 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Page({ params }: Props) {
-  return <SellerPage id={(await params).id} />;
+  return <SellerPage id={(await params).id} lang="en" />;
 }

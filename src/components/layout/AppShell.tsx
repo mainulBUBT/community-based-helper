@@ -204,7 +204,7 @@ export function AppShell({
           <Announcement settings={settings} />
           <PromoPopup settings={settings} />
           <header ref={headerRef} className="sticky top-0 z-40 border-b border-line-soft bg-surface shadow-sm">
-            <div className="page-container flex h-16 items-center gap-4 lg:gap-6">
+            <div className="page-container flex h-16 items-center gap-3 lg:gap-4 2xl:gap-6">
               <Link
                 href={`${prefix}/`}
                 className="flex shrink-0 items-center gap-2 text-xl font-bold tracking-tight text-ink"
@@ -212,13 +212,13 @@ export function AppShell({
                 <BrandMark size={32} />
                 {siteName}
               </Link>
-              <div className="hidden w-[clamp(240px,30vw,500px)] shrink-0 md:block">
+              <div className="hidden w-[clamp(200px,22vw,420px)] min-w-0 shrink md:block">
                 {showSearch && <SearchBox examples={settings.quickSearches} />}
               </div>
               <span className="flex-1" />
               <nav
                 aria-label={t.nav.menu}
-                className="hidden items-center gap-5 xl:flex"
+                className="hidden items-center gap-3.5 whitespace-nowrap xl:flex 2xl:gap-5"
               >
                 <Link
                   href={`${prefix}/`}
@@ -249,7 +249,7 @@ export function AppShell({
                   {t.nav.compare}
                 </Link>
               </nav>
-              <div className="flex items-center gap-2">
+              <div className="flex shrink-0 items-center gap-2">
                 <InstallButton />
                 <Link
                   href={`${prefix}/saved/`}

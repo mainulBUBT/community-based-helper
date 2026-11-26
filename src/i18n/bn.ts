@@ -374,6 +374,8 @@ export const bn = {
         ? [
             `${name} এর দাম বাংলাদেশে ${price} থেকে, ${month}`,
             `${name} এর দাম ${price} থেকে, ${month}`,
+            `${model} এর দাম বাংলাদেশে ${price} থেকে, ${month}`,
+            `${model} এর দাম ${price} থেকে`,
           ]
         : []),
       ...(bnModel ? [`${name} (${bnModel}) এর দাম বাংলাদেশে, ${month} (সব দোকানের অফার)`] : []),

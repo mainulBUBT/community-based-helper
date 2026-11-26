@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL -o /tmp/aureva_simple.html -w \"%{http_code} %{url_effective}\\\\n\" \"https://aurevashopbd.com/products/preview/simple-refreshing-facial-wash-gel-150ml\" --max-time 40 -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/125 Safari/537.36\")",
+      "Bash(python3 -I -)",
+      "Bash(curl -s -o /tmp/aureva_nonpreview.html -w \"%{http_code}\\\\n\" \"https://aurevashopbd.com/products/simple-refreshing-facial-wash-gel-150ml\" --max-time 30 -A \"Mozilla/5.0\")",
+      "Bash(curl -s --max-time 20 \"https://dordam.app/data/catalog/simple-refreshing-facial-wash-150ml.json\")",
+      "Bash(python3 -I -c \"import json,sys; d=json.load\\(sys.stdin\\); [print\\(o['sellerId'], o['price'], o.get\\('oldPrice'\\), o['inStock'], o.get\\('published'\\), o['url']\\) for o in d.get\\('offers',[]\\)]\")"
+    ]
+  }
+}

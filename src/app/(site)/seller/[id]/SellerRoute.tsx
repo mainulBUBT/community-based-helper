@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/ui/JsonLd";
 import { messages, pageMeta } from "@/lib/page-meta";
 import type { Lang } from "@/lib/preferences";
 import { getSellerDetail, listCategories, loadCatalog } from "@/services/catalog.server";
 import { categoryName } from "@/utils/categories";
 import { toBnDigits } from "@/utils/format";
+import { breadcrumbData, sellerData } from "@/utils/structured-data";
 import { SellerView } from "./SellerView";
 
 export async function sellerParams() {
@@ -38,11 +40,25 @@ export async function sellerMetadata(id: string, lang: Lang): Promise<Metadata> 
     title,
     shortTitle,
     description,
+    image: seller.logo ?? listings[0]?.product.images?.[0],
   });
 }
 
-export async function SellerPage({ id }: { id: string }) {
+export async function SellerPage({ id, lang = "bn" }: { id: string; lang?: Lang }) {
   const detail = await getSellerDetail(id);
   if (!detail) notFound();
-  return <SellerView initial={detail} />;
+  const t = messages(lang);
+  const prefix = lang === "en" ? "/en" : "";
+  const path = `${prefix}/seller/${detail.seller.id}/`;
+  const crumbs = [
+    { name: t.nav.home, path: `${prefix}/` },
+    { name: t.nav.sellers, path: `${prefix}/sellers/` },
+    { name: detail.seller.name, path },
+  ];
+  return (
+    <>
+      <JsonLd data={[sellerData(detail.seller, path), breadcrumbData(crumbs)]} />
+      <SellerView initial={detail} />
+    </>
+  );
 }
