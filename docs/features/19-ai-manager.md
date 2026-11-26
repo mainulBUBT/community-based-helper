@@ -85,10 +85,10 @@
 - [x] ধাপ ১: Telegram আর অ্যাডমিন পাতায় কথা, সকালের রিপোর্ট, শুধু-পড়ার টুল
 - [ ] লাইভে চালু (উপরের ধাপগুলো)
 - [x] ধাপ ২: পাহারাদার বানানো (ব্যর্থ কাজ আবার চালানো, কাজ অনেকক্ষণ না চললে খোঁজ, দোকান আটকালে জানানো)
-- [ ] ধাপ ২ লাইভে চালু (`npm run agent:deploy`)
+- [x] ধাপ ২ লাইভে চালু (`npm run agent:deploy`, Nov 26)
 - [x] "ম্যানেজার নিজে করবে" অপশন আর মোবাইলের নতুন ভার্সন বানানো
-- [ ] অপশন লাইভে: git push (worker আর অ্যাডমিন পাতা), `npm run agent:deploy`, তারপর সুইচ চালু
-- [ ] Tier 2 migration ও Manager tools: local validation শেষে `npm run db:push`, deploy, তারপর সীমিত live test
+- [ ] অপশন লাইভে: git push ✅, `npm run agent:deploy` ✅ (Nov 26), তারপর সুইচ চালু (মালিকের সিদ্ধান্ত)
+- [ ] Tier 2 migration ও Manager tools: ~~local validation~~ ✅, ~~`npm run db:push`~~ ✅ (Nov 26), ~~deploy~~ ✅ (Nov 26), তারপর সীমিত live test
 - [ ] নেট থেকে নতুন দোকান এনে map করা (মালিকের সিদ্ধান্ত বাকি)
 - [ ] ধাপ ৩–৫: প্রস্তাব দেখুন
 - [x] নির্ধারিত সকালের রিপোর্টে read-only tools, server-side write guard, এবং প্রমাণভিত্তিক সর্বোচ্চ ৩টি পরামর্শের dry-run prompt।
